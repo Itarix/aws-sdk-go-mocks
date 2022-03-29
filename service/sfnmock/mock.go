@@ -1067,6 +1067,56 @@ func (mr *MockSFNAPIMockRecorder) StartExecutionWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartExecutionWithContext", reflect.TypeOf((*MockSFNAPI)(nil).StartExecutionWithContext), varargs...)
 }
 
+// StartSyncExecution mocks base method
+func (m *MockSFNAPI) StartSyncExecution(arg0 *sfn.StartSyncExecutionInput) (*sfn.StartSyncExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSyncExecution", arg0)
+	ret0, _ := ret[0].(*sfn.StartSyncExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSyncExecution indicates an expected call of StartSyncExecution
+func (mr *MockSFNAPIMockRecorder) StartSyncExecution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSyncExecution", reflect.TypeOf((*MockSFNAPI)(nil).StartSyncExecution), arg0)
+}
+
+// StartSyncExecutionRequest mocks base method
+func (m *MockSFNAPI) StartSyncExecutionRequest(arg0 *sfn.StartSyncExecutionInput) (*request.Request, *sfn.StartSyncExecutionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSyncExecutionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sfn.StartSyncExecutionOutput)
+	return ret0, ret1
+}
+
+// StartSyncExecutionRequest indicates an expected call of StartSyncExecutionRequest
+func (mr *MockSFNAPIMockRecorder) StartSyncExecutionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSyncExecutionRequest", reflect.TypeOf((*MockSFNAPI)(nil).StartSyncExecutionRequest), arg0)
+}
+
+// StartSyncExecutionWithContext mocks base method
+func (m *MockSFNAPI) StartSyncExecutionWithContext(arg0 context.Context, arg1 *sfn.StartSyncExecutionInput, arg2 ...request.Option) (*sfn.StartSyncExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartSyncExecutionWithContext", varargs...)
+	ret0, _ := ret[0].(*sfn.StartSyncExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSyncExecutionWithContext indicates an expected call of StartSyncExecutionWithContext
+func (mr *MockSFNAPIMockRecorder) StartSyncExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSyncExecutionWithContext", reflect.TypeOf((*MockSFNAPI)(nil).StartSyncExecutionWithContext), varargs...)
+}
+
 // StopExecution mocks base method
 func (m *MockSFNAPI) StopExecution(arg0 *sfn.StopExecutionInput) (*sfn.StopExecutionOutput, error) {
 	m.ctrl.T.Helper()

@@ -1235,6 +1235,56 @@ func (mr *MockIoTSiteWiseAPIMockRecorder) DescribeDashboardWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDashboardWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DescribeDashboardWithContext), varargs...)
 }
 
+// DescribeDefaultEncryptionConfiguration mocks base method
+func (m *MockIoTSiteWiseAPI) DescribeDefaultEncryptionConfiguration(arg0 *iotsitewise.DescribeDefaultEncryptionConfigurationInput) (*iotsitewise.DescribeDefaultEncryptionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDefaultEncryptionConfiguration", arg0)
+	ret0, _ := ret[0].(*iotsitewise.DescribeDefaultEncryptionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDefaultEncryptionConfiguration indicates an expected call of DescribeDefaultEncryptionConfiguration
+func (mr *MockIoTSiteWiseAPIMockRecorder) DescribeDefaultEncryptionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDefaultEncryptionConfiguration", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DescribeDefaultEncryptionConfiguration), arg0)
+}
+
+// DescribeDefaultEncryptionConfigurationRequest mocks base method
+func (m *MockIoTSiteWiseAPI) DescribeDefaultEncryptionConfigurationRequest(arg0 *iotsitewise.DescribeDefaultEncryptionConfigurationInput) (*request.Request, *iotsitewise.DescribeDefaultEncryptionConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDefaultEncryptionConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.DescribeDefaultEncryptionConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeDefaultEncryptionConfigurationRequest indicates an expected call of DescribeDefaultEncryptionConfigurationRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) DescribeDefaultEncryptionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDefaultEncryptionConfigurationRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DescribeDefaultEncryptionConfigurationRequest), arg0)
+}
+
+// DescribeDefaultEncryptionConfigurationWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) DescribeDefaultEncryptionConfigurationWithContext(arg0 context.Context, arg1 *iotsitewise.DescribeDefaultEncryptionConfigurationInput, arg2 ...request.Option) (*iotsitewise.DescribeDefaultEncryptionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDefaultEncryptionConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.DescribeDefaultEncryptionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDefaultEncryptionConfigurationWithContext indicates an expected call of DescribeDefaultEncryptionConfigurationWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) DescribeDefaultEncryptionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDefaultEncryptionConfigurationWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DescribeDefaultEncryptionConfigurationWithContext), varargs...)
+}
+
 // DescribeGateway mocks base method
 func (m *MockIoTSiteWiseAPI) DescribeGateway(arg0 *iotsitewise.DescribeGatewayInput) (*iotsitewise.DescribeGatewayOutput, error) {
 	m.ctrl.T.Helper()
@@ -2546,6 +2596,56 @@ func (mr *MockIoTSiteWiseAPIMockRecorder) ListTagsForResourceWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// PutDefaultEncryptionConfiguration mocks base method
+func (m *MockIoTSiteWiseAPI) PutDefaultEncryptionConfiguration(arg0 *iotsitewise.PutDefaultEncryptionConfigurationInput) (*iotsitewise.PutDefaultEncryptionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutDefaultEncryptionConfiguration", arg0)
+	ret0, _ := ret[0].(*iotsitewise.PutDefaultEncryptionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutDefaultEncryptionConfiguration indicates an expected call of PutDefaultEncryptionConfiguration
+func (mr *MockIoTSiteWiseAPIMockRecorder) PutDefaultEncryptionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDefaultEncryptionConfiguration", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).PutDefaultEncryptionConfiguration), arg0)
+}
+
+// PutDefaultEncryptionConfigurationRequest mocks base method
+func (m *MockIoTSiteWiseAPI) PutDefaultEncryptionConfigurationRequest(arg0 *iotsitewise.PutDefaultEncryptionConfigurationInput) (*request.Request, *iotsitewise.PutDefaultEncryptionConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutDefaultEncryptionConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.PutDefaultEncryptionConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutDefaultEncryptionConfigurationRequest indicates an expected call of PutDefaultEncryptionConfigurationRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) PutDefaultEncryptionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDefaultEncryptionConfigurationRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).PutDefaultEncryptionConfigurationRequest), arg0)
+}
+
+// PutDefaultEncryptionConfigurationWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) PutDefaultEncryptionConfigurationWithContext(arg0 context.Context, arg1 *iotsitewise.PutDefaultEncryptionConfigurationInput, arg2 ...request.Option) (*iotsitewise.PutDefaultEncryptionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutDefaultEncryptionConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.PutDefaultEncryptionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutDefaultEncryptionConfigurationWithContext indicates an expected call of PutDefaultEncryptionConfigurationWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) PutDefaultEncryptionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDefaultEncryptionConfigurationWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).PutDefaultEncryptionConfigurationWithContext), varargs...)
 }
 
 // PutLoggingOptions mocks base method

@@ -1001,6 +1001,56 @@ func (mr *MockCodeBuildAPIMockRecorder) DescribeTestCasesWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTestCasesWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).DescribeTestCasesWithContext), varargs...)
 }
 
+// GetReportGroupTrend mocks base method
+func (m *MockCodeBuildAPI) GetReportGroupTrend(arg0 *codebuild.GetReportGroupTrendInput) (*codebuild.GetReportGroupTrendOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetReportGroupTrend", arg0)
+	ret0, _ := ret[0].(*codebuild.GetReportGroupTrendOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetReportGroupTrend indicates an expected call of GetReportGroupTrend
+func (mr *MockCodeBuildAPIMockRecorder) GetReportGroupTrend(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetReportGroupTrend", reflect.TypeOf((*MockCodeBuildAPI)(nil).GetReportGroupTrend), arg0)
+}
+
+// GetReportGroupTrendRequest mocks base method
+func (m *MockCodeBuildAPI) GetReportGroupTrendRequest(arg0 *codebuild.GetReportGroupTrendInput) (*request.Request, *codebuild.GetReportGroupTrendOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetReportGroupTrendRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.GetReportGroupTrendOutput)
+	return ret0, ret1
+}
+
+// GetReportGroupTrendRequest indicates an expected call of GetReportGroupTrendRequest
+func (mr *MockCodeBuildAPIMockRecorder) GetReportGroupTrendRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetReportGroupTrendRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).GetReportGroupTrendRequest), arg0)
+}
+
+// GetReportGroupTrendWithContext mocks base method
+func (m *MockCodeBuildAPI) GetReportGroupTrendWithContext(arg0 context.Context, arg1 *codebuild.GetReportGroupTrendInput, arg2 ...request.Option) (*codebuild.GetReportGroupTrendOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetReportGroupTrendWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.GetReportGroupTrendOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetReportGroupTrendWithContext indicates an expected call of GetReportGroupTrendWithContext
+func (mr *MockCodeBuildAPIMockRecorder) GetReportGroupTrendWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetReportGroupTrendWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).GetReportGroupTrendWithContext), varargs...)
+}
+
 // GetResourcePolicy mocks base method
 func (m *MockCodeBuildAPI) GetResourcePolicy(arg0 *codebuild.GetResourcePolicyInput) (*codebuild.GetResourcePolicyOutput, error) {
 	m.ctrl.T.Helper()
