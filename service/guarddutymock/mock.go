@@ -885,6 +885,56 @@ func (mr *MockGuardDutyAPIMockRecorder) DeleteThreatIntelSetWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteThreatIntelSetWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteThreatIntelSetWithContext), varargs...)
 }
 
+// DescribeOrganizationConfiguration mocks base method
+func (m *MockGuardDutyAPI) DescribeOrganizationConfiguration(arg0 *guardduty.DescribeOrganizationConfigurationInput) (*guardduty.DescribeOrganizationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationConfiguration", arg0)
+	ret0, _ := ret[0].(*guardduty.DescribeOrganizationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationConfiguration indicates an expected call of DescribeOrganizationConfiguration
+func (mr *MockGuardDutyAPIMockRecorder) DescribeOrganizationConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfiguration", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribeOrganizationConfiguration), arg0)
+}
+
+// DescribeOrganizationConfigurationRequest mocks base method
+func (m *MockGuardDutyAPI) DescribeOrganizationConfigurationRequest(arg0 *guardduty.DescribeOrganizationConfigurationInput) (*request.Request, *guardduty.DescribeOrganizationConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.DescribeOrganizationConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeOrganizationConfigurationRequest indicates an expected call of DescribeOrganizationConfigurationRequest
+func (mr *MockGuardDutyAPIMockRecorder) DescribeOrganizationConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfigurationRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribeOrganizationConfigurationRequest), arg0)
+}
+
+// DescribeOrganizationConfigurationWithContext mocks base method
+func (m *MockGuardDutyAPI) DescribeOrganizationConfigurationWithContext(arg0 context.Context, arg1 *guardduty.DescribeOrganizationConfigurationInput, arg2 ...request.Option) (*guardduty.DescribeOrganizationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeOrganizationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.DescribeOrganizationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationConfigurationWithContext indicates an expected call of DescribeOrganizationConfigurationWithContext
+func (mr *MockGuardDutyAPIMockRecorder) DescribeOrganizationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfigurationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribeOrganizationConfigurationWithContext), varargs...)
+}
+
 // DescribePublishingDestination mocks base method
 func (m *MockGuardDutyAPI) DescribePublishingDestination(arg0 *guardduty.DescribePublishingDestinationInput) (*guardduty.DescribePublishingDestinationOutput, error) {
 	m.ctrl.T.Helper()
@@ -933,6 +983,56 @@ func (mr *MockGuardDutyAPIMockRecorder) DescribePublishingDestinationWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePublishingDestinationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribePublishingDestinationWithContext), varargs...)
+}
+
+// DisableOrganizationAdminAccount mocks base method
+func (m *MockGuardDutyAPI) DisableOrganizationAdminAccount(arg0 *guardduty.DisableOrganizationAdminAccountInput) (*guardduty.DisableOrganizationAdminAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableOrganizationAdminAccount", arg0)
+	ret0, _ := ret[0].(*guardduty.DisableOrganizationAdminAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableOrganizationAdminAccount indicates an expected call of DisableOrganizationAdminAccount
+func (mr *MockGuardDutyAPIMockRecorder) DisableOrganizationAdminAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableOrganizationAdminAccount", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisableOrganizationAdminAccount), arg0)
+}
+
+// DisableOrganizationAdminAccountRequest mocks base method
+func (m *MockGuardDutyAPI) DisableOrganizationAdminAccountRequest(arg0 *guardduty.DisableOrganizationAdminAccountInput) (*request.Request, *guardduty.DisableOrganizationAdminAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableOrganizationAdminAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.DisableOrganizationAdminAccountOutput)
+	return ret0, ret1
+}
+
+// DisableOrganizationAdminAccountRequest indicates an expected call of DisableOrganizationAdminAccountRequest
+func (mr *MockGuardDutyAPIMockRecorder) DisableOrganizationAdminAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableOrganizationAdminAccountRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisableOrganizationAdminAccountRequest), arg0)
+}
+
+// DisableOrganizationAdminAccountWithContext mocks base method
+func (m *MockGuardDutyAPI) DisableOrganizationAdminAccountWithContext(arg0 context.Context, arg1 *guardduty.DisableOrganizationAdminAccountInput, arg2 ...request.Option) (*guardduty.DisableOrganizationAdminAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisableOrganizationAdminAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.DisableOrganizationAdminAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableOrganizationAdminAccountWithContext indicates an expected call of DisableOrganizationAdminAccountWithContext
+func (mr *MockGuardDutyAPIMockRecorder) DisableOrganizationAdminAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableOrganizationAdminAccountWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisableOrganizationAdminAccountWithContext), varargs...)
 }
 
 // DisassociateFromMasterAccount mocks base method
@@ -1033,6 +1133,56 @@ func (mr *MockGuardDutyAPIMockRecorder) DisassociateMembersWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisassociateMembersWithContext), varargs...)
+}
+
+// EnableOrganizationAdminAccount mocks base method
+func (m *MockGuardDutyAPI) EnableOrganizationAdminAccount(arg0 *guardduty.EnableOrganizationAdminAccountInput) (*guardduty.EnableOrganizationAdminAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableOrganizationAdminAccount", arg0)
+	ret0, _ := ret[0].(*guardduty.EnableOrganizationAdminAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableOrganizationAdminAccount indicates an expected call of EnableOrganizationAdminAccount
+func (mr *MockGuardDutyAPIMockRecorder) EnableOrganizationAdminAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableOrganizationAdminAccount", reflect.TypeOf((*MockGuardDutyAPI)(nil).EnableOrganizationAdminAccount), arg0)
+}
+
+// EnableOrganizationAdminAccountRequest mocks base method
+func (m *MockGuardDutyAPI) EnableOrganizationAdminAccountRequest(arg0 *guardduty.EnableOrganizationAdminAccountInput) (*request.Request, *guardduty.EnableOrganizationAdminAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableOrganizationAdminAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.EnableOrganizationAdminAccountOutput)
+	return ret0, ret1
+}
+
+// EnableOrganizationAdminAccountRequest indicates an expected call of EnableOrganizationAdminAccountRequest
+func (mr *MockGuardDutyAPIMockRecorder) EnableOrganizationAdminAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableOrganizationAdminAccountRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).EnableOrganizationAdminAccountRequest), arg0)
+}
+
+// EnableOrganizationAdminAccountWithContext mocks base method
+func (m *MockGuardDutyAPI) EnableOrganizationAdminAccountWithContext(arg0 context.Context, arg1 *guardduty.EnableOrganizationAdminAccountInput, arg2 ...request.Option) (*guardduty.EnableOrganizationAdminAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "EnableOrganizationAdminAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.EnableOrganizationAdminAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableOrganizationAdminAccountWithContext indicates an expected call of EnableOrganizationAdminAccountWithContext
+func (mr *MockGuardDutyAPIMockRecorder) EnableOrganizationAdminAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableOrganizationAdminAccountWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).EnableOrganizationAdminAccountWithContext), varargs...)
 }
 
 // GetDetector mocks base method
@@ -2033,6 +2183,89 @@ func (mr *MockGuardDutyAPIMockRecorder) ListMembersWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListMembersWithContext), varargs...)
 }
 
+// ListOrganizationAdminAccounts mocks base method
+func (m *MockGuardDutyAPI) ListOrganizationAdminAccounts(arg0 *guardduty.ListOrganizationAdminAccountsInput) (*guardduty.ListOrganizationAdminAccountsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrganizationAdminAccounts", arg0)
+	ret0, _ := ret[0].(*guardduty.ListOrganizationAdminAccountsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOrganizationAdminAccounts indicates an expected call of ListOrganizationAdminAccounts
+func (mr *MockGuardDutyAPIMockRecorder) ListOrganizationAdminAccounts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccounts", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListOrganizationAdminAccounts), arg0)
+}
+
+// ListOrganizationAdminAccountsPages mocks base method
+func (m *MockGuardDutyAPI) ListOrganizationAdminAccountsPages(arg0 *guardduty.ListOrganizationAdminAccountsInput, arg1 func(*guardduty.ListOrganizationAdminAccountsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrganizationAdminAccountsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOrganizationAdminAccountsPages indicates an expected call of ListOrganizationAdminAccountsPages
+func (mr *MockGuardDutyAPIMockRecorder) ListOrganizationAdminAccountsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccountsPages", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListOrganizationAdminAccountsPages), arg0, arg1)
+}
+
+// ListOrganizationAdminAccountsPagesWithContext mocks base method
+func (m *MockGuardDutyAPI) ListOrganizationAdminAccountsPagesWithContext(arg0 context.Context, arg1 *guardduty.ListOrganizationAdminAccountsInput, arg2 func(*guardduty.ListOrganizationAdminAccountsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOrganizationAdminAccountsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOrganizationAdminAccountsPagesWithContext indicates an expected call of ListOrganizationAdminAccountsPagesWithContext
+func (mr *MockGuardDutyAPIMockRecorder) ListOrganizationAdminAccountsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccountsPagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListOrganizationAdminAccountsPagesWithContext), varargs...)
+}
+
+// ListOrganizationAdminAccountsRequest mocks base method
+func (m *MockGuardDutyAPI) ListOrganizationAdminAccountsRequest(arg0 *guardduty.ListOrganizationAdminAccountsInput) (*request.Request, *guardduty.ListOrganizationAdminAccountsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrganizationAdminAccountsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.ListOrganizationAdminAccountsOutput)
+	return ret0, ret1
+}
+
+// ListOrganizationAdminAccountsRequest indicates an expected call of ListOrganizationAdminAccountsRequest
+func (mr *MockGuardDutyAPIMockRecorder) ListOrganizationAdminAccountsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccountsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListOrganizationAdminAccountsRequest), arg0)
+}
+
+// ListOrganizationAdminAccountsWithContext mocks base method
+func (m *MockGuardDutyAPI) ListOrganizationAdminAccountsWithContext(arg0 context.Context, arg1 *guardduty.ListOrganizationAdminAccountsInput, arg2 ...request.Option) (*guardduty.ListOrganizationAdminAccountsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOrganizationAdminAccountsWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.ListOrganizationAdminAccountsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOrganizationAdminAccountsWithContext indicates an expected call of ListOrganizationAdminAccountsWithContext
+func (mr *MockGuardDutyAPIMockRecorder) ListOrganizationAdminAccountsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccountsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListOrganizationAdminAccountsWithContext), varargs...)
+}
+
 // ListPublishingDestinations mocks base method
 func (m *MockGuardDutyAPI) ListPublishingDestinations(arg0 *guardduty.ListPublishingDestinationsInput) (*guardduty.ListPublishingDestinationsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2697,6 +2930,56 @@ func (mr *MockGuardDutyAPIMockRecorder) UpdateIPSetWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIPSetWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateIPSetWithContext), varargs...)
+}
+
+// UpdateOrganizationConfiguration mocks base method
+func (m *MockGuardDutyAPI) UpdateOrganizationConfiguration(arg0 *guardduty.UpdateOrganizationConfigurationInput) (*guardduty.UpdateOrganizationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateOrganizationConfiguration", arg0)
+	ret0, _ := ret[0].(*guardduty.UpdateOrganizationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateOrganizationConfiguration indicates an expected call of UpdateOrganizationConfiguration
+func (mr *MockGuardDutyAPIMockRecorder) UpdateOrganizationConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOrganizationConfiguration", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateOrganizationConfiguration), arg0)
+}
+
+// UpdateOrganizationConfigurationRequest mocks base method
+func (m *MockGuardDutyAPI) UpdateOrganizationConfigurationRequest(arg0 *guardduty.UpdateOrganizationConfigurationInput) (*request.Request, *guardduty.UpdateOrganizationConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateOrganizationConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.UpdateOrganizationConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateOrganizationConfigurationRequest indicates an expected call of UpdateOrganizationConfigurationRequest
+func (mr *MockGuardDutyAPIMockRecorder) UpdateOrganizationConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOrganizationConfigurationRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateOrganizationConfigurationRequest), arg0)
+}
+
+// UpdateOrganizationConfigurationWithContext mocks base method
+func (m *MockGuardDutyAPI) UpdateOrganizationConfigurationWithContext(arg0 context.Context, arg1 *guardduty.UpdateOrganizationConfigurationInput, arg2 ...request.Option) (*guardduty.UpdateOrganizationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateOrganizationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.UpdateOrganizationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateOrganizationConfigurationWithContext indicates an expected call of UpdateOrganizationConfigurationWithContext
+func (mr *MockGuardDutyAPIMockRecorder) UpdateOrganizationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOrganizationConfigurationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateOrganizationConfigurationWithContext), varargs...)
 }
 
 // UpdatePublishingDestination mocks base method

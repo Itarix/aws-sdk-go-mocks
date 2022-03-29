@@ -35,6 +35,106 @@ func (m *MockRoute53DomainsAPI) EXPECT() *MockRoute53DomainsAPIMockRecorder {
 	return m.recorder
 }
 
+// AcceptDomainTransferFromAnotherAwsAccount mocks base method
+func (m *MockRoute53DomainsAPI) AcceptDomainTransferFromAnotherAwsAccount(arg0 *route53domains.AcceptDomainTransferFromAnotherAwsAccountInput) (*route53domains.AcceptDomainTransferFromAnotherAwsAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AcceptDomainTransferFromAnotherAwsAccount", arg0)
+	ret0, _ := ret[0].(*route53domains.AcceptDomainTransferFromAnotherAwsAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AcceptDomainTransferFromAnotherAwsAccount indicates an expected call of AcceptDomainTransferFromAnotherAwsAccount
+func (mr *MockRoute53DomainsAPIMockRecorder) AcceptDomainTransferFromAnotherAwsAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptDomainTransferFromAnotherAwsAccount", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).AcceptDomainTransferFromAnotherAwsAccount), arg0)
+}
+
+// AcceptDomainTransferFromAnotherAwsAccountRequest mocks base method
+func (m *MockRoute53DomainsAPI) AcceptDomainTransferFromAnotherAwsAccountRequest(arg0 *route53domains.AcceptDomainTransferFromAnotherAwsAccountInput) (*request.Request, *route53domains.AcceptDomainTransferFromAnotherAwsAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AcceptDomainTransferFromAnotherAwsAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53domains.AcceptDomainTransferFromAnotherAwsAccountOutput)
+	return ret0, ret1
+}
+
+// AcceptDomainTransferFromAnotherAwsAccountRequest indicates an expected call of AcceptDomainTransferFromAnotherAwsAccountRequest
+func (mr *MockRoute53DomainsAPIMockRecorder) AcceptDomainTransferFromAnotherAwsAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptDomainTransferFromAnotherAwsAccountRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).AcceptDomainTransferFromAnotherAwsAccountRequest), arg0)
+}
+
+// AcceptDomainTransferFromAnotherAwsAccountWithContext mocks base method
+func (m *MockRoute53DomainsAPI) AcceptDomainTransferFromAnotherAwsAccountWithContext(arg0 context.Context, arg1 *route53domains.AcceptDomainTransferFromAnotherAwsAccountInput, arg2 ...request.Option) (*route53domains.AcceptDomainTransferFromAnotherAwsAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AcceptDomainTransferFromAnotherAwsAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*route53domains.AcceptDomainTransferFromAnotherAwsAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AcceptDomainTransferFromAnotherAwsAccountWithContext indicates an expected call of AcceptDomainTransferFromAnotherAwsAccountWithContext
+func (mr *MockRoute53DomainsAPIMockRecorder) AcceptDomainTransferFromAnotherAwsAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptDomainTransferFromAnotherAwsAccountWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).AcceptDomainTransferFromAnotherAwsAccountWithContext), varargs...)
+}
+
+// CancelDomainTransferToAnotherAwsAccount mocks base method
+func (m *MockRoute53DomainsAPI) CancelDomainTransferToAnotherAwsAccount(arg0 *route53domains.CancelDomainTransferToAnotherAwsAccountInput) (*route53domains.CancelDomainTransferToAnotherAwsAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelDomainTransferToAnotherAwsAccount", arg0)
+	ret0, _ := ret[0].(*route53domains.CancelDomainTransferToAnotherAwsAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelDomainTransferToAnotherAwsAccount indicates an expected call of CancelDomainTransferToAnotherAwsAccount
+func (mr *MockRoute53DomainsAPIMockRecorder) CancelDomainTransferToAnotherAwsAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDomainTransferToAnotherAwsAccount", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).CancelDomainTransferToAnotherAwsAccount), arg0)
+}
+
+// CancelDomainTransferToAnotherAwsAccountRequest mocks base method
+func (m *MockRoute53DomainsAPI) CancelDomainTransferToAnotherAwsAccountRequest(arg0 *route53domains.CancelDomainTransferToAnotherAwsAccountInput) (*request.Request, *route53domains.CancelDomainTransferToAnotherAwsAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelDomainTransferToAnotherAwsAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53domains.CancelDomainTransferToAnotherAwsAccountOutput)
+	return ret0, ret1
+}
+
+// CancelDomainTransferToAnotherAwsAccountRequest indicates an expected call of CancelDomainTransferToAnotherAwsAccountRequest
+func (mr *MockRoute53DomainsAPIMockRecorder) CancelDomainTransferToAnotherAwsAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDomainTransferToAnotherAwsAccountRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).CancelDomainTransferToAnotherAwsAccountRequest), arg0)
+}
+
+// CancelDomainTransferToAnotherAwsAccountWithContext mocks base method
+func (m *MockRoute53DomainsAPI) CancelDomainTransferToAnotherAwsAccountWithContext(arg0 context.Context, arg1 *route53domains.CancelDomainTransferToAnotherAwsAccountInput, arg2 ...request.Option) (*route53domains.CancelDomainTransferToAnotherAwsAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelDomainTransferToAnotherAwsAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*route53domains.CancelDomainTransferToAnotherAwsAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelDomainTransferToAnotherAwsAccountWithContext indicates an expected call of CancelDomainTransferToAnotherAwsAccountWithContext
+func (mr *MockRoute53DomainsAPIMockRecorder) CancelDomainTransferToAnotherAwsAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDomainTransferToAnotherAwsAccountWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).CancelDomainTransferToAnotherAwsAccountWithContext), varargs...)
+}
+
 // CheckDomainAvailability mocks base method
 func (m *MockRoute53DomainsAPI) CheckDomainAvailability(arg0 *route53domains.CheckDomainAvailabilityInput) (*route53domains.CheckDomainAvailabilityOutput, error) {
 	m.ctrl.T.Helper()
@@ -851,6 +951,56 @@ func (mr *MockRoute53DomainsAPIMockRecorder) RegisterDomainWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterDomainWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RegisterDomainWithContext), varargs...)
 }
 
+// RejectDomainTransferFromAnotherAwsAccount mocks base method
+func (m *MockRoute53DomainsAPI) RejectDomainTransferFromAnotherAwsAccount(arg0 *route53domains.RejectDomainTransferFromAnotherAwsAccountInput) (*route53domains.RejectDomainTransferFromAnotherAwsAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RejectDomainTransferFromAnotherAwsAccount", arg0)
+	ret0, _ := ret[0].(*route53domains.RejectDomainTransferFromAnotherAwsAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RejectDomainTransferFromAnotherAwsAccount indicates an expected call of RejectDomainTransferFromAnotherAwsAccount
+func (mr *MockRoute53DomainsAPIMockRecorder) RejectDomainTransferFromAnotherAwsAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectDomainTransferFromAnotherAwsAccount", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RejectDomainTransferFromAnotherAwsAccount), arg0)
+}
+
+// RejectDomainTransferFromAnotherAwsAccountRequest mocks base method
+func (m *MockRoute53DomainsAPI) RejectDomainTransferFromAnotherAwsAccountRequest(arg0 *route53domains.RejectDomainTransferFromAnotherAwsAccountInput) (*request.Request, *route53domains.RejectDomainTransferFromAnotherAwsAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RejectDomainTransferFromAnotherAwsAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53domains.RejectDomainTransferFromAnotherAwsAccountOutput)
+	return ret0, ret1
+}
+
+// RejectDomainTransferFromAnotherAwsAccountRequest indicates an expected call of RejectDomainTransferFromAnotherAwsAccountRequest
+func (mr *MockRoute53DomainsAPIMockRecorder) RejectDomainTransferFromAnotherAwsAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectDomainTransferFromAnotherAwsAccountRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RejectDomainTransferFromAnotherAwsAccountRequest), arg0)
+}
+
+// RejectDomainTransferFromAnotherAwsAccountWithContext mocks base method
+func (m *MockRoute53DomainsAPI) RejectDomainTransferFromAnotherAwsAccountWithContext(arg0 context.Context, arg1 *route53domains.RejectDomainTransferFromAnotherAwsAccountInput, arg2 ...request.Option) (*route53domains.RejectDomainTransferFromAnotherAwsAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RejectDomainTransferFromAnotherAwsAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*route53domains.RejectDomainTransferFromAnotherAwsAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RejectDomainTransferFromAnotherAwsAccountWithContext indicates an expected call of RejectDomainTransferFromAnotherAwsAccountWithContext
+func (mr *MockRoute53DomainsAPIMockRecorder) RejectDomainTransferFromAnotherAwsAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectDomainTransferFromAnotherAwsAccountWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).RejectDomainTransferFromAnotherAwsAccountWithContext), varargs...)
+}
+
 // RenewDomain mocks base method
 func (m *MockRoute53DomainsAPI) RenewDomain(arg0 *route53domains.RenewDomainInput) (*route53domains.RenewDomainOutput, error) {
 	m.ctrl.T.Helper()
@@ -1029,6 +1179,56 @@ func (m *MockRoute53DomainsAPI) TransferDomainRequest(arg0 *route53domains.Trans
 func (mr *MockRoute53DomainsAPIMockRecorder) TransferDomainRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferDomainRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).TransferDomainRequest), arg0)
+}
+
+// TransferDomainToAnotherAwsAccount mocks base method
+func (m *MockRoute53DomainsAPI) TransferDomainToAnotherAwsAccount(arg0 *route53domains.TransferDomainToAnotherAwsAccountInput) (*route53domains.TransferDomainToAnotherAwsAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TransferDomainToAnotherAwsAccount", arg0)
+	ret0, _ := ret[0].(*route53domains.TransferDomainToAnotherAwsAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TransferDomainToAnotherAwsAccount indicates an expected call of TransferDomainToAnotherAwsAccount
+func (mr *MockRoute53DomainsAPIMockRecorder) TransferDomainToAnotherAwsAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferDomainToAnotherAwsAccount", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).TransferDomainToAnotherAwsAccount), arg0)
+}
+
+// TransferDomainToAnotherAwsAccountRequest mocks base method
+func (m *MockRoute53DomainsAPI) TransferDomainToAnotherAwsAccountRequest(arg0 *route53domains.TransferDomainToAnotherAwsAccountInput) (*request.Request, *route53domains.TransferDomainToAnotherAwsAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TransferDomainToAnotherAwsAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53domains.TransferDomainToAnotherAwsAccountOutput)
+	return ret0, ret1
+}
+
+// TransferDomainToAnotherAwsAccountRequest indicates an expected call of TransferDomainToAnotherAwsAccountRequest
+func (mr *MockRoute53DomainsAPIMockRecorder) TransferDomainToAnotherAwsAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferDomainToAnotherAwsAccountRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).TransferDomainToAnotherAwsAccountRequest), arg0)
+}
+
+// TransferDomainToAnotherAwsAccountWithContext mocks base method
+func (m *MockRoute53DomainsAPI) TransferDomainToAnotherAwsAccountWithContext(arg0 context.Context, arg1 *route53domains.TransferDomainToAnotherAwsAccountInput, arg2 ...request.Option) (*route53domains.TransferDomainToAnotherAwsAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TransferDomainToAnotherAwsAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*route53domains.TransferDomainToAnotherAwsAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TransferDomainToAnotherAwsAccountWithContext indicates an expected call of TransferDomainToAnotherAwsAccountWithContext
+func (mr *MockRoute53DomainsAPIMockRecorder) TransferDomainToAnotherAwsAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferDomainToAnotherAwsAccountWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).TransferDomainToAnotherAwsAccountWithContext), varargs...)
 }
 
 // TransferDomainWithContext mocks base method

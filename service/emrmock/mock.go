@@ -635,6 +635,56 @@ func (mr *MockEMRAPIMockRecorder) GetBlockPublicAccessConfigurationWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBlockPublicAccessConfigurationWithContext", reflect.TypeOf((*MockEMRAPI)(nil).GetBlockPublicAccessConfigurationWithContext), varargs...)
 }
 
+// GetManagedScalingPolicy mocks base method
+func (m *MockEMRAPI) GetManagedScalingPolicy(arg0 *emr.GetManagedScalingPolicyInput) (*emr.GetManagedScalingPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetManagedScalingPolicy", arg0)
+	ret0, _ := ret[0].(*emr.GetManagedScalingPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetManagedScalingPolicy indicates an expected call of GetManagedScalingPolicy
+func (mr *MockEMRAPIMockRecorder) GetManagedScalingPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetManagedScalingPolicy", reflect.TypeOf((*MockEMRAPI)(nil).GetManagedScalingPolicy), arg0)
+}
+
+// GetManagedScalingPolicyRequest mocks base method
+func (m *MockEMRAPI) GetManagedScalingPolicyRequest(arg0 *emr.GetManagedScalingPolicyInput) (*request.Request, *emr.GetManagedScalingPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetManagedScalingPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.GetManagedScalingPolicyOutput)
+	return ret0, ret1
+}
+
+// GetManagedScalingPolicyRequest indicates an expected call of GetManagedScalingPolicyRequest
+func (mr *MockEMRAPIMockRecorder) GetManagedScalingPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetManagedScalingPolicyRequest", reflect.TypeOf((*MockEMRAPI)(nil).GetManagedScalingPolicyRequest), arg0)
+}
+
+// GetManagedScalingPolicyWithContext mocks base method
+func (m *MockEMRAPI) GetManagedScalingPolicyWithContext(arg0 context.Context, arg1 *emr.GetManagedScalingPolicyInput, arg2 ...request.Option) (*emr.GetManagedScalingPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetManagedScalingPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.GetManagedScalingPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetManagedScalingPolicyWithContext indicates an expected call of GetManagedScalingPolicyWithContext
+func (mr *MockEMRAPIMockRecorder) GetManagedScalingPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetManagedScalingPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).GetManagedScalingPolicyWithContext), varargs...)
+}
+
 // ListBootstrapActions mocks base method
 func (m *MockEMRAPI) ListBootstrapActions(arg0 *emr.ListBootstrapActionsInput) (*emr.ListBootstrapActionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1466,6 +1516,56 @@ func (mr *MockEMRAPIMockRecorder) PutBlockPublicAccessConfigurationWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBlockPublicAccessConfigurationWithContext", reflect.TypeOf((*MockEMRAPI)(nil).PutBlockPublicAccessConfigurationWithContext), varargs...)
 }
 
+// PutManagedScalingPolicy mocks base method
+func (m *MockEMRAPI) PutManagedScalingPolicy(arg0 *emr.PutManagedScalingPolicyInput) (*emr.PutManagedScalingPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutManagedScalingPolicy", arg0)
+	ret0, _ := ret[0].(*emr.PutManagedScalingPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutManagedScalingPolicy indicates an expected call of PutManagedScalingPolicy
+func (mr *MockEMRAPIMockRecorder) PutManagedScalingPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutManagedScalingPolicy", reflect.TypeOf((*MockEMRAPI)(nil).PutManagedScalingPolicy), arg0)
+}
+
+// PutManagedScalingPolicyRequest mocks base method
+func (m *MockEMRAPI) PutManagedScalingPolicyRequest(arg0 *emr.PutManagedScalingPolicyInput) (*request.Request, *emr.PutManagedScalingPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutManagedScalingPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.PutManagedScalingPolicyOutput)
+	return ret0, ret1
+}
+
+// PutManagedScalingPolicyRequest indicates an expected call of PutManagedScalingPolicyRequest
+func (mr *MockEMRAPIMockRecorder) PutManagedScalingPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutManagedScalingPolicyRequest", reflect.TypeOf((*MockEMRAPI)(nil).PutManagedScalingPolicyRequest), arg0)
+}
+
+// PutManagedScalingPolicyWithContext mocks base method
+func (m *MockEMRAPI) PutManagedScalingPolicyWithContext(arg0 context.Context, arg1 *emr.PutManagedScalingPolicyInput, arg2 ...request.Option) (*emr.PutManagedScalingPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutManagedScalingPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.PutManagedScalingPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutManagedScalingPolicyWithContext indicates an expected call of PutManagedScalingPolicyWithContext
+func (mr *MockEMRAPIMockRecorder) PutManagedScalingPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutManagedScalingPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).PutManagedScalingPolicyWithContext), varargs...)
+}
+
 // RemoveAutoScalingPolicy mocks base method
 func (m *MockEMRAPI) RemoveAutoScalingPolicy(arg0 *emr.RemoveAutoScalingPolicyInput) (*emr.RemoveAutoScalingPolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -1514,6 +1614,56 @@ func (mr *MockEMRAPIMockRecorder) RemoveAutoScalingPolicyWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveAutoScalingPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).RemoveAutoScalingPolicyWithContext), varargs...)
+}
+
+// RemoveManagedScalingPolicy mocks base method
+func (m *MockEMRAPI) RemoveManagedScalingPolicy(arg0 *emr.RemoveManagedScalingPolicyInput) (*emr.RemoveManagedScalingPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveManagedScalingPolicy", arg0)
+	ret0, _ := ret[0].(*emr.RemoveManagedScalingPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveManagedScalingPolicy indicates an expected call of RemoveManagedScalingPolicy
+func (mr *MockEMRAPIMockRecorder) RemoveManagedScalingPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveManagedScalingPolicy", reflect.TypeOf((*MockEMRAPI)(nil).RemoveManagedScalingPolicy), arg0)
+}
+
+// RemoveManagedScalingPolicyRequest mocks base method
+func (m *MockEMRAPI) RemoveManagedScalingPolicyRequest(arg0 *emr.RemoveManagedScalingPolicyInput) (*request.Request, *emr.RemoveManagedScalingPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveManagedScalingPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.RemoveManagedScalingPolicyOutput)
+	return ret0, ret1
+}
+
+// RemoveManagedScalingPolicyRequest indicates an expected call of RemoveManagedScalingPolicyRequest
+func (mr *MockEMRAPIMockRecorder) RemoveManagedScalingPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveManagedScalingPolicyRequest", reflect.TypeOf((*MockEMRAPI)(nil).RemoveManagedScalingPolicyRequest), arg0)
+}
+
+// RemoveManagedScalingPolicyWithContext mocks base method
+func (m *MockEMRAPI) RemoveManagedScalingPolicyWithContext(arg0 context.Context, arg1 *emr.RemoveManagedScalingPolicyInput, arg2 ...request.Option) (*emr.RemoveManagedScalingPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveManagedScalingPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.RemoveManagedScalingPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveManagedScalingPolicyWithContext indicates an expected call of RemoveManagedScalingPolicyWithContext
+func (mr *MockEMRAPIMockRecorder) RemoveManagedScalingPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveManagedScalingPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).RemoveManagedScalingPolicyWithContext), varargs...)
 }
 
 // RemoveTags mocks base method
