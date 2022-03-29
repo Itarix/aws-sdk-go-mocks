@@ -585,6 +585,56 @@ func (mr *MockMediaLiveAPIMockRecorder) CreateMultiplexWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMultiplexWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreateMultiplexWithContext), varargs...)
 }
 
+// CreatePartnerInput mocks base method
+func (m *MockMediaLiveAPI) CreatePartnerInput(arg0 *medialive.CreatePartnerInputInput) (*medialive.CreatePartnerInputOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePartnerInput", arg0)
+	ret0, _ := ret[0].(*medialive.CreatePartnerInputOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePartnerInput indicates an expected call of CreatePartnerInput
+func (mr *MockMediaLiveAPIMockRecorder) CreatePartnerInput(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePartnerInput", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreatePartnerInput), arg0)
+}
+
+// CreatePartnerInputRequest mocks base method
+func (m *MockMediaLiveAPI) CreatePartnerInputRequest(arg0 *medialive.CreatePartnerInputInput) (*request.Request, *medialive.CreatePartnerInputOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePartnerInputRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.CreatePartnerInputOutput)
+	return ret0, ret1
+}
+
+// CreatePartnerInputRequest indicates an expected call of CreatePartnerInputRequest
+func (mr *MockMediaLiveAPIMockRecorder) CreatePartnerInputRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePartnerInputRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreatePartnerInputRequest), arg0)
+}
+
+// CreatePartnerInputWithContext mocks base method
+func (m *MockMediaLiveAPI) CreatePartnerInputWithContext(arg0 context.Context, arg1 *medialive.CreatePartnerInputInput, arg2 ...request.Option) (*medialive.CreatePartnerInputOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreatePartnerInputWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.CreatePartnerInputOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePartnerInputWithContext indicates an expected call of CreatePartnerInputWithContext
+func (mr *MockMediaLiveAPIMockRecorder) CreatePartnerInputWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePartnerInputWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).CreatePartnerInputWithContext), varargs...)
+}
+
 // CreateTags mocks base method
 func (m *MockMediaLiveAPI) CreateTags(arg0 *medialive.CreateTagsInput) (*medialive.CreateTagsOutput, error) {
 	m.ctrl.T.Helper()

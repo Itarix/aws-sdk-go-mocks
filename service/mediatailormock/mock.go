@@ -150,6 +150,39 @@ func (mr *MockMediaTailorAPIMockRecorder) ListPlaybackConfigurations(arg0 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlaybackConfigurations", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListPlaybackConfigurations), arg0)
 }
 
+// ListPlaybackConfigurationsPages mocks base method
+func (m *MockMediaTailorAPI) ListPlaybackConfigurationsPages(arg0 *mediatailor.ListPlaybackConfigurationsInput, arg1 func(*mediatailor.ListPlaybackConfigurationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPlaybackConfigurationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPlaybackConfigurationsPages indicates an expected call of ListPlaybackConfigurationsPages
+func (mr *MockMediaTailorAPIMockRecorder) ListPlaybackConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlaybackConfigurationsPages", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListPlaybackConfigurationsPages), arg0, arg1)
+}
+
+// ListPlaybackConfigurationsPagesWithContext mocks base method
+func (m *MockMediaTailorAPI) ListPlaybackConfigurationsPagesWithContext(arg0 context.Context, arg1 *mediatailor.ListPlaybackConfigurationsInput, arg2 func(*mediatailor.ListPlaybackConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPlaybackConfigurationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPlaybackConfigurationsPagesWithContext indicates an expected call of ListPlaybackConfigurationsPagesWithContext
+func (mr *MockMediaTailorAPIMockRecorder) ListPlaybackConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlaybackConfigurationsPagesWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListPlaybackConfigurationsPagesWithContext), varargs...)
+}
+
 // ListPlaybackConfigurationsRequest mocks base method
 func (m *MockMediaTailorAPI) ListPlaybackConfigurationsRequest(arg0 *mediatailor.ListPlaybackConfigurationsInput) (*request.Request, *mediatailor.ListPlaybackConfigurationsOutput) {
 	m.ctrl.T.Helper()
