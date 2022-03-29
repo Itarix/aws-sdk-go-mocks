@@ -1435,6 +1435,56 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteVpcLinkWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcLinkWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteVpcLinkWithContext), varargs...)
 }
 
+// ExportApi mocks base method
+func (m *MockApiGatewayV2API) ExportApi(arg0 *apigatewayv2.ExportApiInput) (*apigatewayv2.ExportApiOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportApi", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.ExportApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportApi indicates an expected call of ExportApi
+func (mr *MockApiGatewayV2APIMockRecorder) ExportApi(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportApi", reflect.TypeOf((*MockApiGatewayV2API)(nil).ExportApi), arg0)
+}
+
+// ExportApiRequest mocks base method
+func (m *MockApiGatewayV2API) ExportApiRequest(arg0 *apigatewayv2.ExportApiInput) (*request.Request, *apigatewayv2.ExportApiOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportApiRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.ExportApiOutput)
+	return ret0, ret1
+}
+
+// ExportApiRequest indicates an expected call of ExportApiRequest
+func (mr *MockApiGatewayV2APIMockRecorder) ExportApiRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportApiRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).ExportApiRequest), arg0)
+}
+
+// ExportApiWithContext mocks base method
+func (m *MockApiGatewayV2API) ExportApiWithContext(arg0 context.Context, arg1 *apigatewayv2.ExportApiInput, arg2 ...request.Option) (*apigatewayv2.ExportApiOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExportApiWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.ExportApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportApiWithContext indicates an expected call of ExportApiWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) ExportApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportApiWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).ExportApiWithContext), varargs...)
+}
+
 // GetApi mocks base method
 func (m *MockApiGatewayV2API) GetApi(arg0 *apigatewayv2.GetApiInput) (*apigatewayv2.GetApiOutput, error) {
 	m.ctrl.T.Helper()

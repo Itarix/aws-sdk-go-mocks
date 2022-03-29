@@ -834,3 +834,53 @@ func (mr *MockIoTEventsAPIMockRecorder) UpdateInputWithContext(arg0, arg1 interf
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInputWithContext", reflect.TypeOf((*MockIoTEventsAPI)(nil).UpdateInputWithContext), varargs...)
 }
+
+// VerifyResourcesExistForTagris mocks base method
+func (m *MockIoTEventsAPI) VerifyResourcesExistForTagris(arg0 *iotevents.VerifyResourcesExistForTagrisInput) (*iotevents.VerifyResourcesExistForTagrisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "VerifyResourcesExistForTagris", arg0)
+	ret0, _ := ret[0].(*iotevents.VerifyResourcesExistForTagrisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// VerifyResourcesExistForTagris indicates an expected call of VerifyResourcesExistForTagris
+func (mr *MockIoTEventsAPIMockRecorder) VerifyResourcesExistForTagris(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "VerifyResourcesExistForTagris", reflect.TypeOf((*MockIoTEventsAPI)(nil).VerifyResourcesExistForTagris), arg0)
+}
+
+// VerifyResourcesExistForTagrisRequest mocks base method
+func (m *MockIoTEventsAPI) VerifyResourcesExistForTagrisRequest(arg0 *iotevents.VerifyResourcesExistForTagrisInput) (*request.Request, *iotevents.VerifyResourcesExistForTagrisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "VerifyResourcesExistForTagrisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotevents.VerifyResourcesExistForTagrisOutput)
+	return ret0, ret1
+}
+
+// VerifyResourcesExistForTagrisRequest indicates an expected call of VerifyResourcesExistForTagrisRequest
+func (mr *MockIoTEventsAPIMockRecorder) VerifyResourcesExistForTagrisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "VerifyResourcesExistForTagrisRequest", reflect.TypeOf((*MockIoTEventsAPI)(nil).VerifyResourcesExistForTagrisRequest), arg0)
+}
+
+// VerifyResourcesExistForTagrisWithContext mocks base method
+func (m *MockIoTEventsAPI) VerifyResourcesExistForTagrisWithContext(arg0 context.Context, arg1 *iotevents.VerifyResourcesExistForTagrisInput, arg2 ...request.Option) (*iotevents.VerifyResourcesExistForTagrisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "VerifyResourcesExistForTagrisWithContext", varargs...)
+	ret0, _ := ret[0].(*iotevents.VerifyResourcesExistForTagrisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// VerifyResourcesExistForTagrisWithContext indicates an expected call of VerifyResourcesExistForTagrisWithContext
+func (mr *MockIoTEventsAPIMockRecorder) VerifyResourcesExistForTagrisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "VerifyResourcesExistForTagrisWithContext", reflect.TypeOf((*MockIoTEventsAPI)(nil).VerifyResourcesExistForTagrisWithContext), varargs...)
+}
