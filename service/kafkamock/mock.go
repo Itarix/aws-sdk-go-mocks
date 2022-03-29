@@ -35,6 +35,106 @@ func (m *MockKafkaAPI) EXPECT() *MockKafkaAPIMockRecorder {
 	return m.recorder
 }
 
+// BatchAssociateScramSecret mocks base method
+func (m *MockKafkaAPI) BatchAssociateScramSecret(arg0 *kafka.BatchAssociateScramSecretInput) (*kafka.BatchAssociateScramSecretOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchAssociateScramSecret", arg0)
+	ret0, _ := ret[0].(*kafka.BatchAssociateScramSecretOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchAssociateScramSecret indicates an expected call of BatchAssociateScramSecret
+func (mr *MockKafkaAPIMockRecorder) BatchAssociateScramSecret(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateScramSecret", reflect.TypeOf((*MockKafkaAPI)(nil).BatchAssociateScramSecret), arg0)
+}
+
+// BatchAssociateScramSecretRequest mocks base method
+func (m *MockKafkaAPI) BatchAssociateScramSecretRequest(arg0 *kafka.BatchAssociateScramSecretInput) (*request.Request, *kafka.BatchAssociateScramSecretOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchAssociateScramSecretRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.BatchAssociateScramSecretOutput)
+	return ret0, ret1
+}
+
+// BatchAssociateScramSecretRequest indicates an expected call of BatchAssociateScramSecretRequest
+func (mr *MockKafkaAPIMockRecorder) BatchAssociateScramSecretRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateScramSecretRequest", reflect.TypeOf((*MockKafkaAPI)(nil).BatchAssociateScramSecretRequest), arg0)
+}
+
+// BatchAssociateScramSecretWithContext mocks base method
+func (m *MockKafkaAPI) BatchAssociateScramSecretWithContext(arg0 context.Context, arg1 *kafka.BatchAssociateScramSecretInput, arg2 ...request.Option) (*kafka.BatchAssociateScramSecretOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchAssociateScramSecretWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.BatchAssociateScramSecretOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchAssociateScramSecretWithContext indicates an expected call of BatchAssociateScramSecretWithContext
+func (mr *MockKafkaAPIMockRecorder) BatchAssociateScramSecretWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateScramSecretWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).BatchAssociateScramSecretWithContext), varargs...)
+}
+
+// BatchDisassociateScramSecret mocks base method
+func (m *MockKafkaAPI) BatchDisassociateScramSecret(arg0 *kafka.BatchDisassociateScramSecretInput) (*kafka.BatchDisassociateScramSecretOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDisassociateScramSecret", arg0)
+	ret0, _ := ret[0].(*kafka.BatchDisassociateScramSecretOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDisassociateScramSecret indicates an expected call of BatchDisassociateScramSecret
+func (mr *MockKafkaAPIMockRecorder) BatchDisassociateScramSecret(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateScramSecret", reflect.TypeOf((*MockKafkaAPI)(nil).BatchDisassociateScramSecret), arg0)
+}
+
+// BatchDisassociateScramSecretRequest mocks base method
+func (m *MockKafkaAPI) BatchDisassociateScramSecretRequest(arg0 *kafka.BatchDisassociateScramSecretInput) (*request.Request, *kafka.BatchDisassociateScramSecretOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDisassociateScramSecretRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.BatchDisassociateScramSecretOutput)
+	return ret0, ret1
+}
+
+// BatchDisassociateScramSecretRequest indicates an expected call of BatchDisassociateScramSecretRequest
+func (mr *MockKafkaAPIMockRecorder) BatchDisassociateScramSecretRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateScramSecretRequest", reflect.TypeOf((*MockKafkaAPI)(nil).BatchDisassociateScramSecretRequest), arg0)
+}
+
+// BatchDisassociateScramSecretWithContext mocks base method
+func (m *MockKafkaAPI) BatchDisassociateScramSecretWithContext(arg0 context.Context, arg1 *kafka.BatchDisassociateScramSecretInput, arg2 ...request.Option) (*kafka.BatchDisassociateScramSecretOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDisassociateScramSecretWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.BatchDisassociateScramSecretOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDisassociateScramSecretWithContext indicates an expected call of BatchDisassociateScramSecretWithContext
+func (mr *MockKafkaAPIMockRecorder) BatchDisassociateScramSecretWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateScramSecretWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).BatchDisassociateScramSecretWithContext), varargs...)
+}
+
 // CreateCluster mocks base method
 func (m *MockKafkaAPI) CreateCluster(arg0 *kafka.CreateClusterInput) (*kafka.CreateClusterOutput, error) {
 	m.ctrl.T.Helper()
@@ -1031,6 +1131,89 @@ func (mr *MockKafkaAPIMockRecorder) ListNodesWithContext(arg0, arg1 interface{},
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNodesWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListNodesWithContext), varargs...)
+}
+
+// ListScramSecrets mocks base method
+func (m *MockKafkaAPI) ListScramSecrets(arg0 *kafka.ListScramSecretsInput) (*kafka.ListScramSecretsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListScramSecrets", arg0)
+	ret0, _ := ret[0].(*kafka.ListScramSecretsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListScramSecrets indicates an expected call of ListScramSecrets
+func (mr *MockKafkaAPIMockRecorder) ListScramSecrets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScramSecrets", reflect.TypeOf((*MockKafkaAPI)(nil).ListScramSecrets), arg0)
+}
+
+// ListScramSecretsPages mocks base method
+func (m *MockKafkaAPI) ListScramSecretsPages(arg0 *kafka.ListScramSecretsInput, arg1 func(*kafka.ListScramSecretsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListScramSecretsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListScramSecretsPages indicates an expected call of ListScramSecretsPages
+func (mr *MockKafkaAPIMockRecorder) ListScramSecretsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScramSecretsPages", reflect.TypeOf((*MockKafkaAPI)(nil).ListScramSecretsPages), arg0, arg1)
+}
+
+// ListScramSecretsPagesWithContext mocks base method
+func (m *MockKafkaAPI) ListScramSecretsPagesWithContext(arg0 context.Context, arg1 *kafka.ListScramSecretsInput, arg2 func(*kafka.ListScramSecretsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListScramSecretsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListScramSecretsPagesWithContext indicates an expected call of ListScramSecretsPagesWithContext
+func (mr *MockKafkaAPIMockRecorder) ListScramSecretsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScramSecretsPagesWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListScramSecretsPagesWithContext), varargs...)
+}
+
+// ListScramSecretsRequest mocks base method
+func (m *MockKafkaAPI) ListScramSecretsRequest(arg0 *kafka.ListScramSecretsInput) (*request.Request, *kafka.ListScramSecretsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListScramSecretsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.ListScramSecretsOutput)
+	return ret0, ret1
+}
+
+// ListScramSecretsRequest indicates an expected call of ListScramSecretsRequest
+func (mr *MockKafkaAPIMockRecorder) ListScramSecretsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScramSecretsRequest", reflect.TypeOf((*MockKafkaAPI)(nil).ListScramSecretsRequest), arg0)
+}
+
+// ListScramSecretsWithContext mocks base method
+func (m *MockKafkaAPI) ListScramSecretsWithContext(arg0 context.Context, arg1 *kafka.ListScramSecretsInput, arg2 ...request.Option) (*kafka.ListScramSecretsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListScramSecretsWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.ListScramSecretsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListScramSecretsWithContext indicates an expected call of ListScramSecretsWithContext
+func (mr *MockKafkaAPIMockRecorder) ListScramSecretsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScramSecretsWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListScramSecretsWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
