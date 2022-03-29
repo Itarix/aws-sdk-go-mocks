@@ -85,6 +85,56 @@ func (mr *MockCodeGuruReviewerAPIMockRecorder) AssociateRepositoryWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateRepositoryWithContext", reflect.TypeOf((*MockCodeGuruReviewerAPI)(nil).AssociateRepositoryWithContext), varargs...)
 }
 
+// CreateCodeReview mocks base method
+func (m *MockCodeGuruReviewerAPI) CreateCodeReview(arg0 *codegurureviewer.CreateCodeReviewInput) (*codegurureviewer.CreateCodeReviewOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCodeReview", arg0)
+	ret0, _ := ret[0].(*codegurureviewer.CreateCodeReviewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCodeReview indicates an expected call of CreateCodeReview
+func (mr *MockCodeGuruReviewerAPIMockRecorder) CreateCodeReview(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCodeReview", reflect.TypeOf((*MockCodeGuruReviewerAPI)(nil).CreateCodeReview), arg0)
+}
+
+// CreateCodeReviewRequest mocks base method
+func (m *MockCodeGuruReviewerAPI) CreateCodeReviewRequest(arg0 *codegurureviewer.CreateCodeReviewInput) (*request.Request, *codegurureviewer.CreateCodeReviewOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCodeReviewRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codegurureviewer.CreateCodeReviewOutput)
+	return ret0, ret1
+}
+
+// CreateCodeReviewRequest indicates an expected call of CreateCodeReviewRequest
+func (mr *MockCodeGuruReviewerAPIMockRecorder) CreateCodeReviewRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCodeReviewRequest", reflect.TypeOf((*MockCodeGuruReviewerAPI)(nil).CreateCodeReviewRequest), arg0)
+}
+
+// CreateCodeReviewWithContext mocks base method
+func (m *MockCodeGuruReviewerAPI) CreateCodeReviewWithContext(arg0 context.Context, arg1 *codegurureviewer.CreateCodeReviewInput, arg2 ...request.Option) (*codegurureviewer.CreateCodeReviewOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCodeReviewWithContext", varargs...)
+	ret0, _ := ret[0].(*codegurureviewer.CreateCodeReviewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCodeReviewWithContext indicates an expected call of CreateCodeReviewWithContext
+func (mr *MockCodeGuruReviewerAPIMockRecorder) CreateCodeReviewWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCodeReviewWithContext", reflect.TypeOf((*MockCodeGuruReviewerAPI)(nil).CreateCodeReviewWithContext), varargs...)
+}
+
 // DescribeCodeReview mocks base method
 func (m *MockCodeGuruReviewerAPI) DescribeCodeReview(arg0 *codegurureviewer.DescribeCodeReviewInput) (*codegurureviewer.DescribeCodeReviewOutput, error) {
 	m.ctrl.T.Helper()
