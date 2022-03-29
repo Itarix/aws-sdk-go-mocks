@@ -35,6 +35,189 @@ func (m *MockElasticInferenceAPI) EXPECT() *MockElasticInferenceAPIMockRecorder 
 	return m.recorder
 }
 
+// DescribeAcceleratorOfferings mocks base method
+func (m *MockElasticInferenceAPI) DescribeAcceleratorOfferings(arg0 *elasticinference.DescribeAcceleratorOfferingsInput) (*elasticinference.DescribeAcceleratorOfferingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAcceleratorOfferings", arg0)
+	ret0, _ := ret[0].(*elasticinference.DescribeAcceleratorOfferingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAcceleratorOfferings indicates an expected call of DescribeAcceleratorOfferings
+func (mr *MockElasticInferenceAPIMockRecorder) DescribeAcceleratorOfferings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAcceleratorOfferings", reflect.TypeOf((*MockElasticInferenceAPI)(nil).DescribeAcceleratorOfferings), arg0)
+}
+
+// DescribeAcceleratorOfferingsRequest mocks base method
+func (m *MockElasticInferenceAPI) DescribeAcceleratorOfferingsRequest(arg0 *elasticinference.DescribeAcceleratorOfferingsInput) (*request.Request, *elasticinference.DescribeAcceleratorOfferingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAcceleratorOfferingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticinference.DescribeAcceleratorOfferingsOutput)
+	return ret0, ret1
+}
+
+// DescribeAcceleratorOfferingsRequest indicates an expected call of DescribeAcceleratorOfferingsRequest
+func (mr *MockElasticInferenceAPIMockRecorder) DescribeAcceleratorOfferingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAcceleratorOfferingsRequest", reflect.TypeOf((*MockElasticInferenceAPI)(nil).DescribeAcceleratorOfferingsRequest), arg0)
+}
+
+// DescribeAcceleratorOfferingsWithContext mocks base method
+func (m *MockElasticInferenceAPI) DescribeAcceleratorOfferingsWithContext(arg0 context.Context, arg1 *elasticinference.DescribeAcceleratorOfferingsInput, arg2 ...request.Option) (*elasticinference.DescribeAcceleratorOfferingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAcceleratorOfferingsWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticinference.DescribeAcceleratorOfferingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAcceleratorOfferingsWithContext indicates an expected call of DescribeAcceleratorOfferingsWithContext
+func (mr *MockElasticInferenceAPIMockRecorder) DescribeAcceleratorOfferingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAcceleratorOfferingsWithContext", reflect.TypeOf((*MockElasticInferenceAPI)(nil).DescribeAcceleratorOfferingsWithContext), varargs...)
+}
+
+// DescribeAcceleratorTypes mocks base method
+func (m *MockElasticInferenceAPI) DescribeAcceleratorTypes(arg0 *elasticinference.DescribeAcceleratorTypesInput) (*elasticinference.DescribeAcceleratorTypesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAcceleratorTypes", arg0)
+	ret0, _ := ret[0].(*elasticinference.DescribeAcceleratorTypesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAcceleratorTypes indicates an expected call of DescribeAcceleratorTypes
+func (mr *MockElasticInferenceAPIMockRecorder) DescribeAcceleratorTypes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAcceleratorTypes", reflect.TypeOf((*MockElasticInferenceAPI)(nil).DescribeAcceleratorTypes), arg0)
+}
+
+// DescribeAcceleratorTypesRequest mocks base method
+func (m *MockElasticInferenceAPI) DescribeAcceleratorTypesRequest(arg0 *elasticinference.DescribeAcceleratorTypesInput) (*request.Request, *elasticinference.DescribeAcceleratorTypesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAcceleratorTypesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticinference.DescribeAcceleratorTypesOutput)
+	return ret0, ret1
+}
+
+// DescribeAcceleratorTypesRequest indicates an expected call of DescribeAcceleratorTypesRequest
+func (mr *MockElasticInferenceAPIMockRecorder) DescribeAcceleratorTypesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAcceleratorTypesRequest", reflect.TypeOf((*MockElasticInferenceAPI)(nil).DescribeAcceleratorTypesRequest), arg0)
+}
+
+// DescribeAcceleratorTypesWithContext mocks base method
+func (m *MockElasticInferenceAPI) DescribeAcceleratorTypesWithContext(arg0 context.Context, arg1 *elasticinference.DescribeAcceleratorTypesInput, arg2 ...request.Option) (*elasticinference.DescribeAcceleratorTypesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAcceleratorTypesWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticinference.DescribeAcceleratorTypesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAcceleratorTypesWithContext indicates an expected call of DescribeAcceleratorTypesWithContext
+func (mr *MockElasticInferenceAPIMockRecorder) DescribeAcceleratorTypesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAcceleratorTypesWithContext", reflect.TypeOf((*MockElasticInferenceAPI)(nil).DescribeAcceleratorTypesWithContext), varargs...)
+}
+
+// DescribeAccelerators mocks base method
+func (m *MockElasticInferenceAPI) DescribeAccelerators(arg0 *elasticinference.DescribeAcceleratorsInput) (*elasticinference.DescribeAcceleratorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccelerators", arg0)
+	ret0, _ := ret[0].(*elasticinference.DescribeAcceleratorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccelerators indicates an expected call of DescribeAccelerators
+func (mr *MockElasticInferenceAPIMockRecorder) DescribeAccelerators(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccelerators", reflect.TypeOf((*MockElasticInferenceAPI)(nil).DescribeAccelerators), arg0)
+}
+
+// DescribeAcceleratorsPages mocks base method
+func (m *MockElasticInferenceAPI) DescribeAcceleratorsPages(arg0 *elasticinference.DescribeAcceleratorsInput, arg1 func(*elasticinference.DescribeAcceleratorsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAcceleratorsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeAcceleratorsPages indicates an expected call of DescribeAcceleratorsPages
+func (mr *MockElasticInferenceAPIMockRecorder) DescribeAcceleratorsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAcceleratorsPages", reflect.TypeOf((*MockElasticInferenceAPI)(nil).DescribeAcceleratorsPages), arg0, arg1)
+}
+
+// DescribeAcceleratorsPagesWithContext mocks base method
+func (m *MockElasticInferenceAPI) DescribeAcceleratorsPagesWithContext(arg0 context.Context, arg1 *elasticinference.DescribeAcceleratorsInput, arg2 func(*elasticinference.DescribeAcceleratorsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAcceleratorsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeAcceleratorsPagesWithContext indicates an expected call of DescribeAcceleratorsPagesWithContext
+func (mr *MockElasticInferenceAPIMockRecorder) DescribeAcceleratorsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAcceleratorsPagesWithContext", reflect.TypeOf((*MockElasticInferenceAPI)(nil).DescribeAcceleratorsPagesWithContext), varargs...)
+}
+
+// DescribeAcceleratorsRequest mocks base method
+func (m *MockElasticInferenceAPI) DescribeAcceleratorsRequest(arg0 *elasticinference.DescribeAcceleratorsInput) (*request.Request, *elasticinference.DescribeAcceleratorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAcceleratorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticinference.DescribeAcceleratorsOutput)
+	return ret0, ret1
+}
+
+// DescribeAcceleratorsRequest indicates an expected call of DescribeAcceleratorsRequest
+func (mr *MockElasticInferenceAPIMockRecorder) DescribeAcceleratorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAcceleratorsRequest", reflect.TypeOf((*MockElasticInferenceAPI)(nil).DescribeAcceleratorsRequest), arg0)
+}
+
+// DescribeAcceleratorsWithContext mocks base method
+func (m *MockElasticInferenceAPI) DescribeAcceleratorsWithContext(arg0 context.Context, arg1 *elasticinference.DescribeAcceleratorsInput, arg2 ...request.Option) (*elasticinference.DescribeAcceleratorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAcceleratorsWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticinference.DescribeAcceleratorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAcceleratorsWithContext indicates an expected call of DescribeAcceleratorsWithContext
+func (mr *MockElasticInferenceAPIMockRecorder) DescribeAcceleratorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAcceleratorsWithContext", reflect.TypeOf((*MockElasticInferenceAPI)(nil).DescribeAcceleratorsWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockElasticInferenceAPI) ListTagsForResource(arg0 *elasticinference.ListTagsForResourceInput) (*elasticinference.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
