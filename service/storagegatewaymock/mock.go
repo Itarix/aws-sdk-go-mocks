@@ -785,6 +785,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) CreateStorediSCSIVolumeWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStorediSCSIVolumeWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateStorediSCSIVolumeWithContext), varargs...)
 }
 
+// CreateTapePool mocks base method
+func (m *MockStorageGatewayAPI) CreateTapePool(arg0 *storagegateway.CreateTapePoolInput) (*storagegateway.CreateTapePoolOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTapePool", arg0)
+	ret0, _ := ret[0].(*storagegateway.CreateTapePoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTapePool indicates an expected call of CreateTapePool
+func (mr *MockStorageGatewayAPIMockRecorder) CreateTapePool(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTapePool", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateTapePool), arg0)
+}
+
+// CreateTapePoolRequest mocks base method
+func (m *MockStorageGatewayAPI) CreateTapePoolRequest(arg0 *storagegateway.CreateTapePoolInput) (*request.Request, *storagegateway.CreateTapePoolOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTapePoolRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.CreateTapePoolOutput)
+	return ret0, ret1
+}
+
+// CreateTapePoolRequest indicates an expected call of CreateTapePoolRequest
+func (mr *MockStorageGatewayAPIMockRecorder) CreateTapePoolRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTapePoolRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateTapePoolRequest), arg0)
+}
+
+// CreateTapePoolWithContext mocks base method
+func (m *MockStorageGatewayAPI) CreateTapePoolWithContext(arg0 context.Context, arg1 *storagegateway.CreateTapePoolInput, arg2 ...request.Option) (*storagegateway.CreateTapePoolOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateTapePoolWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.CreateTapePoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTapePoolWithContext indicates an expected call of CreateTapePoolWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) CreateTapePoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTapePoolWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateTapePoolWithContext), varargs...)
+}
+
 // CreateTapeWithBarcode mocks base method
 func (m *MockStorageGatewayAPI) CreateTapeWithBarcode(arg0 *storagegateway.CreateTapeWithBarcodeInput) (*storagegateway.CreateTapeWithBarcodeOutput, error) {
 	m.ctrl.T.Helper()
@@ -1248,6 +1298,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) DeleteTapeArchiveWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTapeArchiveWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteTapeArchiveWithContext), varargs...)
+}
+
+// DeleteTapePool mocks base method
+func (m *MockStorageGatewayAPI) DeleteTapePool(arg0 *storagegateway.DeleteTapePoolInput) (*storagegateway.DeleteTapePoolOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTapePool", arg0)
+	ret0, _ := ret[0].(*storagegateway.DeleteTapePoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTapePool indicates an expected call of DeleteTapePool
+func (mr *MockStorageGatewayAPIMockRecorder) DeleteTapePool(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTapePool", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteTapePool), arg0)
+}
+
+// DeleteTapePoolRequest mocks base method
+func (m *MockStorageGatewayAPI) DeleteTapePoolRequest(arg0 *storagegateway.DeleteTapePoolInput) (*request.Request, *storagegateway.DeleteTapePoolOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTapePoolRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.DeleteTapePoolOutput)
+	return ret0, ret1
+}
+
+// DeleteTapePoolRequest indicates an expected call of DeleteTapePoolRequest
+func (mr *MockStorageGatewayAPIMockRecorder) DeleteTapePoolRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTapePoolRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteTapePoolRequest), arg0)
+}
+
+// DeleteTapePoolWithContext mocks base method
+func (m *MockStorageGatewayAPI) DeleteTapePoolWithContext(arg0 context.Context, arg1 *storagegateway.DeleteTapePoolInput, arg2 ...request.Option) (*storagegateway.DeleteTapePoolOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteTapePoolWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.DeleteTapePoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTapePoolWithContext indicates an expected call of DeleteTapePoolWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) DeleteTapePoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTapePoolWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteTapePoolWithContext), varargs...)
 }
 
 // DeleteTapeRequest mocks base method
@@ -2864,6 +2964,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) ListTagsForResourceWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// ListTapePools mocks base method
+func (m *MockStorageGatewayAPI) ListTapePools(arg0 *storagegateway.ListTapePoolsInput) (*storagegateway.ListTapePoolsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTapePools", arg0)
+	ret0, _ := ret[0].(*storagegateway.ListTapePoolsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTapePools indicates an expected call of ListTapePools
+func (mr *MockStorageGatewayAPIMockRecorder) ListTapePools(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapePools", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapePools), arg0)
+}
+
+// ListTapePoolsRequest mocks base method
+func (m *MockStorageGatewayAPI) ListTapePoolsRequest(arg0 *storagegateway.ListTapePoolsInput) (*request.Request, *storagegateway.ListTapePoolsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTapePoolsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.ListTapePoolsOutput)
+	return ret0, ret1
+}
+
+// ListTapePoolsRequest indicates an expected call of ListTapePoolsRequest
+func (mr *MockStorageGatewayAPIMockRecorder) ListTapePoolsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapePoolsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapePoolsRequest), arg0)
+}
+
+// ListTapePoolsWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListTapePoolsWithContext(arg0 context.Context, arg1 *storagegateway.ListTapePoolsInput, arg2 ...request.Option) (*storagegateway.ListTapePoolsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTapePoolsWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.ListTapePoolsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTapePoolsWithContext indicates an expected call of ListTapePoolsWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) ListTapePoolsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapePoolsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapePoolsWithContext), varargs...)
 }
 
 // ListTapes mocks base method

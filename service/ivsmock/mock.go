@@ -285,6 +285,56 @@ func (mr *MockIVSAPIMockRecorder) DeleteChannelWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelWithContext", reflect.TypeOf((*MockIVSAPI)(nil).DeleteChannelWithContext), varargs...)
 }
 
+// DeletePlaybackKeyPair mocks base method
+func (m *MockIVSAPI) DeletePlaybackKeyPair(arg0 *ivs.DeletePlaybackKeyPairInput) (*ivs.DeletePlaybackKeyPairOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePlaybackKeyPair", arg0)
+	ret0, _ := ret[0].(*ivs.DeletePlaybackKeyPairOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePlaybackKeyPair indicates an expected call of DeletePlaybackKeyPair
+func (mr *MockIVSAPIMockRecorder) DeletePlaybackKeyPair(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePlaybackKeyPair", reflect.TypeOf((*MockIVSAPI)(nil).DeletePlaybackKeyPair), arg0)
+}
+
+// DeletePlaybackKeyPairRequest mocks base method
+func (m *MockIVSAPI) DeletePlaybackKeyPairRequest(arg0 *ivs.DeletePlaybackKeyPairInput) (*request.Request, *ivs.DeletePlaybackKeyPairOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePlaybackKeyPairRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivs.DeletePlaybackKeyPairOutput)
+	return ret0, ret1
+}
+
+// DeletePlaybackKeyPairRequest indicates an expected call of DeletePlaybackKeyPairRequest
+func (mr *MockIVSAPIMockRecorder) DeletePlaybackKeyPairRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePlaybackKeyPairRequest", reflect.TypeOf((*MockIVSAPI)(nil).DeletePlaybackKeyPairRequest), arg0)
+}
+
+// DeletePlaybackKeyPairWithContext mocks base method
+func (m *MockIVSAPI) DeletePlaybackKeyPairWithContext(arg0 context.Context, arg1 *ivs.DeletePlaybackKeyPairInput, arg2 ...request.Option) (*ivs.DeletePlaybackKeyPairOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePlaybackKeyPairWithContext", varargs...)
+	ret0, _ := ret[0].(*ivs.DeletePlaybackKeyPairOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePlaybackKeyPairWithContext indicates an expected call of DeletePlaybackKeyPairWithContext
+func (mr *MockIVSAPIMockRecorder) DeletePlaybackKeyPairWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePlaybackKeyPairWithContext", reflect.TypeOf((*MockIVSAPI)(nil).DeletePlaybackKeyPairWithContext), varargs...)
+}
+
 // DeleteStreamKey mocks base method
 func (m *MockIVSAPI) DeleteStreamKey(arg0 *ivs.DeleteStreamKeyInput) (*ivs.DeleteStreamKeyOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +433,56 @@ func (mr *MockIVSAPIMockRecorder) GetChannelWithContext(arg0, arg1 interface{}, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelWithContext", reflect.TypeOf((*MockIVSAPI)(nil).GetChannelWithContext), varargs...)
+}
+
+// GetPlaybackKeyPair mocks base method
+func (m *MockIVSAPI) GetPlaybackKeyPair(arg0 *ivs.GetPlaybackKeyPairInput) (*ivs.GetPlaybackKeyPairOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPlaybackKeyPair", arg0)
+	ret0, _ := ret[0].(*ivs.GetPlaybackKeyPairOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPlaybackKeyPair indicates an expected call of GetPlaybackKeyPair
+func (mr *MockIVSAPIMockRecorder) GetPlaybackKeyPair(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPlaybackKeyPair", reflect.TypeOf((*MockIVSAPI)(nil).GetPlaybackKeyPair), arg0)
+}
+
+// GetPlaybackKeyPairRequest mocks base method
+func (m *MockIVSAPI) GetPlaybackKeyPairRequest(arg0 *ivs.GetPlaybackKeyPairInput) (*request.Request, *ivs.GetPlaybackKeyPairOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPlaybackKeyPairRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivs.GetPlaybackKeyPairOutput)
+	return ret0, ret1
+}
+
+// GetPlaybackKeyPairRequest indicates an expected call of GetPlaybackKeyPairRequest
+func (mr *MockIVSAPIMockRecorder) GetPlaybackKeyPairRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPlaybackKeyPairRequest", reflect.TypeOf((*MockIVSAPI)(nil).GetPlaybackKeyPairRequest), arg0)
+}
+
+// GetPlaybackKeyPairWithContext mocks base method
+func (m *MockIVSAPI) GetPlaybackKeyPairWithContext(arg0 context.Context, arg1 *ivs.GetPlaybackKeyPairInput, arg2 ...request.Option) (*ivs.GetPlaybackKeyPairOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPlaybackKeyPairWithContext", varargs...)
+	ret0, _ := ret[0].(*ivs.GetPlaybackKeyPairOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPlaybackKeyPairWithContext indicates an expected call of GetPlaybackKeyPairWithContext
+func (mr *MockIVSAPIMockRecorder) GetPlaybackKeyPairWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPlaybackKeyPairWithContext", reflect.TypeOf((*MockIVSAPI)(nil).GetPlaybackKeyPairWithContext), varargs...)
 }
 
 // GetStream mocks base method
@@ -485,6 +585,56 @@ func (mr *MockIVSAPIMockRecorder) GetStreamWithContext(arg0, arg1 interface{}, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStreamWithContext", reflect.TypeOf((*MockIVSAPI)(nil).GetStreamWithContext), varargs...)
 }
 
+// ImportPlaybackKeyPair mocks base method
+func (m *MockIVSAPI) ImportPlaybackKeyPair(arg0 *ivs.ImportPlaybackKeyPairInput) (*ivs.ImportPlaybackKeyPairOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportPlaybackKeyPair", arg0)
+	ret0, _ := ret[0].(*ivs.ImportPlaybackKeyPairOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportPlaybackKeyPair indicates an expected call of ImportPlaybackKeyPair
+func (mr *MockIVSAPIMockRecorder) ImportPlaybackKeyPair(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportPlaybackKeyPair", reflect.TypeOf((*MockIVSAPI)(nil).ImportPlaybackKeyPair), arg0)
+}
+
+// ImportPlaybackKeyPairRequest mocks base method
+func (m *MockIVSAPI) ImportPlaybackKeyPairRequest(arg0 *ivs.ImportPlaybackKeyPairInput) (*request.Request, *ivs.ImportPlaybackKeyPairOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportPlaybackKeyPairRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivs.ImportPlaybackKeyPairOutput)
+	return ret0, ret1
+}
+
+// ImportPlaybackKeyPairRequest indicates an expected call of ImportPlaybackKeyPairRequest
+func (mr *MockIVSAPIMockRecorder) ImportPlaybackKeyPairRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportPlaybackKeyPairRequest", reflect.TypeOf((*MockIVSAPI)(nil).ImportPlaybackKeyPairRequest), arg0)
+}
+
+// ImportPlaybackKeyPairWithContext mocks base method
+func (m *MockIVSAPI) ImportPlaybackKeyPairWithContext(arg0 context.Context, arg1 *ivs.ImportPlaybackKeyPairInput, arg2 ...request.Option) (*ivs.ImportPlaybackKeyPairOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportPlaybackKeyPairWithContext", varargs...)
+	ret0, _ := ret[0].(*ivs.ImportPlaybackKeyPairOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportPlaybackKeyPairWithContext indicates an expected call of ImportPlaybackKeyPairWithContext
+func (mr *MockIVSAPIMockRecorder) ImportPlaybackKeyPairWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportPlaybackKeyPairWithContext", reflect.TypeOf((*MockIVSAPI)(nil).ImportPlaybackKeyPairWithContext), varargs...)
+}
+
 // ListChannels mocks base method
 func (m *MockIVSAPI) ListChannels(arg0 *ivs.ListChannelsInput) (*ivs.ListChannelsOutput, error) {
 	m.ctrl.T.Helper()
@@ -566,6 +716,89 @@ func (mr *MockIVSAPIMockRecorder) ListChannelsWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsWithContext", reflect.TypeOf((*MockIVSAPI)(nil).ListChannelsWithContext), varargs...)
+}
+
+// ListPlaybackKeyPairs mocks base method
+func (m *MockIVSAPI) ListPlaybackKeyPairs(arg0 *ivs.ListPlaybackKeyPairsInput) (*ivs.ListPlaybackKeyPairsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPlaybackKeyPairs", arg0)
+	ret0, _ := ret[0].(*ivs.ListPlaybackKeyPairsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPlaybackKeyPairs indicates an expected call of ListPlaybackKeyPairs
+func (mr *MockIVSAPIMockRecorder) ListPlaybackKeyPairs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlaybackKeyPairs", reflect.TypeOf((*MockIVSAPI)(nil).ListPlaybackKeyPairs), arg0)
+}
+
+// ListPlaybackKeyPairsPages mocks base method
+func (m *MockIVSAPI) ListPlaybackKeyPairsPages(arg0 *ivs.ListPlaybackKeyPairsInput, arg1 func(*ivs.ListPlaybackKeyPairsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPlaybackKeyPairsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPlaybackKeyPairsPages indicates an expected call of ListPlaybackKeyPairsPages
+func (mr *MockIVSAPIMockRecorder) ListPlaybackKeyPairsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlaybackKeyPairsPages", reflect.TypeOf((*MockIVSAPI)(nil).ListPlaybackKeyPairsPages), arg0, arg1)
+}
+
+// ListPlaybackKeyPairsPagesWithContext mocks base method
+func (m *MockIVSAPI) ListPlaybackKeyPairsPagesWithContext(arg0 context.Context, arg1 *ivs.ListPlaybackKeyPairsInput, arg2 func(*ivs.ListPlaybackKeyPairsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPlaybackKeyPairsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPlaybackKeyPairsPagesWithContext indicates an expected call of ListPlaybackKeyPairsPagesWithContext
+func (mr *MockIVSAPIMockRecorder) ListPlaybackKeyPairsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlaybackKeyPairsPagesWithContext", reflect.TypeOf((*MockIVSAPI)(nil).ListPlaybackKeyPairsPagesWithContext), varargs...)
+}
+
+// ListPlaybackKeyPairsRequest mocks base method
+func (m *MockIVSAPI) ListPlaybackKeyPairsRequest(arg0 *ivs.ListPlaybackKeyPairsInput) (*request.Request, *ivs.ListPlaybackKeyPairsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPlaybackKeyPairsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivs.ListPlaybackKeyPairsOutput)
+	return ret0, ret1
+}
+
+// ListPlaybackKeyPairsRequest indicates an expected call of ListPlaybackKeyPairsRequest
+func (mr *MockIVSAPIMockRecorder) ListPlaybackKeyPairsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlaybackKeyPairsRequest", reflect.TypeOf((*MockIVSAPI)(nil).ListPlaybackKeyPairsRequest), arg0)
+}
+
+// ListPlaybackKeyPairsWithContext mocks base method
+func (m *MockIVSAPI) ListPlaybackKeyPairsWithContext(arg0 context.Context, arg1 *ivs.ListPlaybackKeyPairsInput, arg2 ...request.Option) (*ivs.ListPlaybackKeyPairsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPlaybackKeyPairsWithContext", varargs...)
+	ret0, _ := ret[0].(*ivs.ListPlaybackKeyPairsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPlaybackKeyPairsWithContext indicates an expected call of ListPlaybackKeyPairsWithContext
+func (mr *MockIVSAPIMockRecorder) ListPlaybackKeyPairsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlaybackKeyPairsWithContext", reflect.TypeOf((*MockIVSAPI)(nil).ListPlaybackKeyPairsWithContext), varargs...)
 }
 
 // ListStreamKeys mocks base method
