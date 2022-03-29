@@ -3880,6 +3880,89 @@ func (mr *MockGlueAPIMockRecorder) GetPartition(arg0 interface{}) *gomock.Call {
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPartition", reflect.TypeOf((*MockGlueAPI)(nil).GetPartition), arg0)
 }
 
+// GetPartitionIndexes mocks base method
+func (m *MockGlueAPI) GetPartitionIndexes(arg0 *glue.GetPartitionIndexesInput) (*glue.GetPartitionIndexesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPartitionIndexes", arg0)
+	ret0, _ := ret[0].(*glue.GetPartitionIndexesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPartitionIndexes indicates an expected call of GetPartitionIndexes
+func (mr *MockGlueAPIMockRecorder) GetPartitionIndexes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPartitionIndexes", reflect.TypeOf((*MockGlueAPI)(nil).GetPartitionIndexes), arg0)
+}
+
+// GetPartitionIndexesPages mocks base method
+func (m *MockGlueAPI) GetPartitionIndexesPages(arg0 *glue.GetPartitionIndexesInput, arg1 func(*glue.GetPartitionIndexesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPartitionIndexesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetPartitionIndexesPages indicates an expected call of GetPartitionIndexesPages
+func (mr *MockGlueAPIMockRecorder) GetPartitionIndexesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPartitionIndexesPages", reflect.TypeOf((*MockGlueAPI)(nil).GetPartitionIndexesPages), arg0, arg1)
+}
+
+// GetPartitionIndexesPagesWithContext mocks base method
+func (m *MockGlueAPI) GetPartitionIndexesPagesWithContext(arg0 context.Context, arg1 *glue.GetPartitionIndexesInput, arg2 func(*glue.GetPartitionIndexesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPartitionIndexesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetPartitionIndexesPagesWithContext indicates an expected call of GetPartitionIndexesPagesWithContext
+func (mr *MockGlueAPIMockRecorder) GetPartitionIndexesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPartitionIndexesPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetPartitionIndexesPagesWithContext), varargs...)
+}
+
+// GetPartitionIndexesRequest mocks base method
+func (m *MockGlueAPI) GetPartitionIndexesRequest(arg0 *glue.GetPartitionIndexesInput) (*request.Request, *glue.GetPartitionIndexesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPartitionIndexesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetPartitionIndexesOutput)
+	return ret0, ret1
+}
+
+// GetPartitionIndexesRequest indicates an expected call of GetPartitionIndexesRequest
+func (mr *MockGlueAPIMockRecorder) GetPartitionIndexesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPartitionIndexesRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetPartitionIndexesRequest), arg0)
+}
+
+// GetPartitionIndexesWithContext mocks base method
+func (m *MockGlueAPI) GetPartitionIndexesWithContext(arg0 context.Context, arg1 *glue.GetPartitionIndexesInput, arg2 ...request.Option) (*glue.GetPartitionIndexesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPartitionIndexesWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetPartitionIndexesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPartitionIndexesWithContext indicates an expected call of GetPartitionIndexesWithContext
+func (mr *MockGlueAPIMockRecorder) GetPartitionIndexesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPartitionIndexesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetPartitionIndexesWithContext), varargs...)
+}
+
 // GetPartitionRequest mocks base method
 func (m *MockGlueAPI) GetPartitionRequest(arg0 *glue.GetPartitionInput) (*request.Request, *glue.GetPartitionOutput) {
 	m.ctrl.T.Helper()
