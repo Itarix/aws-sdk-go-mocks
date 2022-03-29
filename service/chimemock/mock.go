@@ -835,6 +835,56 @@ func (mr *MockChimeAPIMockRecorder) CreatePhoneNumberOrderWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePhoneNumberOrderWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreatePhoneNumberOrderWithContext), varargs...)
 }
 
+// CreateProxySession mocks base method
+func (m *MockChimeAPI) CreateProxySession(arg0 *chime.CreateProxySessionInput) (*chime.CreateProxySessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProxySession", arg0)
+	ret0, _ := ret[0].(*chime.CreateProxySessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProxySession indicates an expected call of CreateProxySession
+func (mr *MockChimeAPIMockRecorder) CreateProxySession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProxySession", reflect.TypeOf((*MockChimeAPI)(nil).CreateProxySession), arg0)
+}
+
+// CreateProxySessionRequest mocks base method
+func (m *MockChimeAPI) CreateProxySessionRequest(arg0 *chime.CreateProxySessionInput) (*request.Request, *chime.CreateProxySessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProxySessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateProxySessionOutput)
+	return ret0, ret1
+}
+
+// CreateProxySessionRequest indicates an expected call of CreateProxySessionRequest
+func (mr *MockChimeAPIMockRecorder) CreateProxySessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProxySessionRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateProxySessionRequest), arg0)
+}
+
+// CreateProxySessionWithContext mocks base method
+func (m *MockChimeAPI) CreateProxySessionWithContext(arg0 context.Context, arg1 *chime.CreateProxySessionInput, arg2 ...request.Option) (*chime.CreateProxySessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateProxySessionWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateProxySessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProxySessionWithContext indicates an expected call of CreateProxySessionWithContext
+func (mr *MockChimeAPIMockRecorder) CreateProxySessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProxySessionWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateProxySessionWithContext), varargs...)
+}
+
 // CreateRoom mocks base method
 func (m *MockChimeAPI) CreateRoom(arg0 *chime.CreateRoomInput) (*chime.CreateRoomOutput, error) {
 	m.ctrl.T.Helper()
@@ -1335,6 +1385,56 @@ func (mr *MockChimeAPIMockRecorder) DeletePhoneNumberWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePhoneNumberWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeletePhoneNumberWithContext), varargs...)
 }
 
+// DeleteProxySession mocks base method
+func (m *MockChimeAPI) DeleteProxySession(arg0 *chime.DeleteProxySessionInput) (*chime.DeleteProxySessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProxySession", arg0)
+	ret0, _ := ret[0].(*chime.DeleteProxySessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProxySession indicates an expected call of DeleteProxySession
+func (mr *MockChimeAPIMockRecorder) DeleteProxySession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProxySession", reflect.TypeOf((*MockChimeAPI)(nil).DeleteProxySession), arg0)
+}
+
+// DeleteProxySessionRequest mocks base method
+func (m *MockChimeAPI) DeleteProxySessionRequest(arg0 *chime.DeleteProxySessionInput) (*request.Request, *chime.DeleteProxySessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProxySessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteProxySessionOutput)
+	return ret0, ret1
+}
+
+// DeleteProxySessionRequest indicates an expected call of DeleteProxySessionRequest
+func (mr *MockChimeAPIMockRecorder) DeleteProxySessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProxySessionRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteProxySessionRequest), arg0)
+}
+
+// DeleteProxySessionWithContext mocks base method
+func (m *MockChimeAPI) DeleteProxySessionWithContext(arg0 context.Context, arg1 *chime.DeleteProxySessionInput, arg2 ...request.Option) (*chime.DeleteProxySessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteProxySessionWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteProxySessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProxySessionWithContext indicates an expected call of DeleteProxySessionWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteProxySessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProxySessionWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteProxySessionWithContext), varargs...)
+}
+
 // DeleteRoom mocks base method
 func (m *MockChimeAPI) DeleteRoom(arg0 *chime.DeleteRoomInput) (*chime.DeleteRoomOutput, error) {
 	m.ctrl.T.Helper()
@@ -1548,6 +1648,56 @@ func (mr *MockChimeAPIMockRecorder) DeleteVoiceConnectorOriginationWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVoiceConnectorOriginationWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteVoiceConnectorOriginationWithContext), varargs...)
+}
+
+// DeleteVoiceConnectorProxy mocks base method
+func (m *MockChimeAPI) DeleteVoiceConnectorProxy(arg0 *chime.DeleteVoiceConnectorProxyInput) (*chime.DeleteVoiceConnectorProxyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVoiceConnectorProxy", arg0)
+	ret0, _ := ret[0].(*chime.DeleteVoiceConnectorProxyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVoiceConnectorProxy indicates an expected call of DeleteVoiceConnectorProxy
+func (mr *MockChimeAPIMockRecorder) DeleteVoiceConnectorProxy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVoiceConnectorProxy", reflect.TypeOf((*MockChimeAPI)(nil).DeleteVoiceConnectorProxy), arg0)
+}
+
+// DeleteVoiceConnectorProxyRequest mocks base method
+func (m *MockChimeAPI) DeleteVoiceConnectorProxyRequest(arg0 *chime.DeleteVoiceConnectorProxyInput) (*request.Request, *chime.DeleteVoiceConnectorProxyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVoiceConnectorProxyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteVoiceConnectorProxyOutput)
+	return ret0, ret1
+}
+
+// DeleteVoiceConnectorProxyRequest indicates an expected call of DeleteVoiceConnectorProxyRequest
+func (mr *MockChimeAPIMockRecorder) DeleteVoiceConnectorProxyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVoiceConnectorProxyRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteVoiceConnectorProxyRequest), arg0)
+}
+
+// DeleteVoiceConnectorProxyWithContext mocks base method
+func (m *MockChimeAPI) DeleteVoiceConnectorProxyWithContext(arg0 context.Context, arg1 *chime.DeleteVoiceConnectorProxyInput, arg2 ...request.Option) (*chime.DeleteVoiceConnectorProxyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteVoiceConnectorProxyWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteVoiceConnectorProxyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVoiceConnectorProxyWithContext indicates an expected call of DeleteVoiceConnectorProxyWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteVoiceConnectorProxyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVoiceConnectorProxyWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteVoiceConnectorProxyWithContext), varargs...)
 }
 
 // DeleteVoiceConnectorRequest mocks base method
@@ -2435,6 +2585,56 @@ func (mr *MockChimeAPIMockRecorder) GetPhoneNumberWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPhoneNumberWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetPhoneNumberWithContext), varargs...)
 }
 
+// GetProxySession mocks base method
+func (m *MockChimeAPI) GetProxySession(arg0 *chime.GetProxySessionInput) (*chime.GetProxySessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetProxySession", arg0)
+	ret0, _ := ret[0].(*chime.GetProxySessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetProxySession indicates an expected call of GetProxySession
+func (mr *MockChimeAPIMockRecorder) GetProxySession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProxySession", reflect.TypeOf((*MockChimeAPI)(nil).GetProxySession), arg0)
+}
+
+// GetProxySessionRequest mocks base method
+func (m *MockChimeAPI) GetProxySessionRequest(arg0 *chime.GetProxySessionInput) (*request.Request, *chime.GetProxySessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetProxySessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.GetProxySessionOutput)
+	return ret0, ret1
+}
+
+// GetProxySessionRequest indicates an expected call of GetProxySessionRequest
+func (mr *MockChimeAPIMockRecorder) GetProxySessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProxySessionRequest", reflect.TypeOf((*MockChimeAPI)(nil).GetProxySessionRequest), arg0)
+}
+
+// GetProxySessionWithContext mocks base method
+func (m *MockChimeAPI) GetProxySessionWithContext(arg0 context.Context, arg1 *chime.GetProxySessionInput, arg2 ...request.Option) (*chime.GetProxySessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetProxySessionWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.GetProxySessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetProxySessionWithContext indicates an expected call of GetProxySessionWithContext
+func (mr *MockChimeAPIMockRecorder) GetProxySessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProxySessionWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetProxySessionWithContext), varargs...)
+}
+
 // GetRoom mocks base method
 func (m *MockChimeAPI) GetRoom(arg0 *chime.GetRoomInput) (*chime.GetRoomOutput, error) {
 	m.ctrl.T.Helper()
@@ -2748,6 +2948,56 @@ func (mr *MockChimeAPIMockRecorder) GetVoiceConnectorOriginationWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceConnectorOriginationWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetVoiceConnectorOriginationWithContext), varargs...)
+}
+
+// GetVoiceConnectorProxy mocks base method
+func (m *MockChimeAPI) GetVoiceConnectorProxy(arg0 *chime.GetVoiceConnectorProxyInput) (*chime.GetVoiceConnectorProxyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVoiceConnectorProxy", arg0)
+	ret0, _ := ret[0].(*chime.GetVoiceConnectorProxyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVoiceConnectorProxy indicates an expected call of GetVoiceConnectorProxy
+func (mr *MockChimeAPIMockRecorder) GetVoiceConnectorProxy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceConnectorProxy", reflect.TypeOf((*MockChimeAPI)(nil).GetVoiceConnectorProxy), arg0)
+}
+
+// GetVoiceConnectorProxyRequest mocks base method
+func (m *MockChimeAPI) GetVoiceConnectorProxyRequest(arg0 *chime.GetVoiceConnectorProxyInput) (*request.Request, *chime.GetVoiceConnectorProxyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVoiceConnectorProxyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.GetVoiceConnectorProxyOutput)
+	return ret0, ret1
+}
+
+// GetVoiceConnectorProxyRequest indicates an expected call of GetVoiceConnectorProxyRequest
+func (mr *MockChimeAPIMockRecorder) GetVoiceConnectorProxyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceConnectorProxyRequest", reflect.TypeOf((*MockChimeAPI)(nil).GetVoiceConnectorProxyRequest), arg0)
+}
+
+// GetVoiceConnectorProxyWithContext mocks base method
+func (m *MockChimeAPI) GetVoiceConnectorProxyWithContext(arg0 context.Context, arg1 *chime.GetVoiceConnectorProxyInput, arg2 ...request.Option) (*chime.GetVoiceConnectorProxyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetVoiceConnectorProxyWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.GetVoiceConnectorProxyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVoiceConnectorProxyWithContext indicates an expected call of GetVoiceConnectorProxyWithContext
+func (mr *MockChimeAPIMockRecorder) GetVoiceConnectorProxyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceConnectorProxyWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetVoiceConnectorProxyWithContext), varargs...)
 }
 
 // GetVoiceConnectorRequest mocks base method
@@ -3483,6 +3733,89 @@ func (mr *MockChimeAPIMockRecorder) ListPhoneNumbersWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPhoneNumbersWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListPhoneNumbersWithContext), varargs...)
 }
 
+// ListProxySessions mocks base method
+func (m *MockChimeAPI) ListProxySessions(arg0 *chime.ListProxySessionsInput) (*chime.ListProxySessionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProxySessions", arg0)
+	ret0, _ := ret[0].(*chime.ListProxySessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProxySessions indicates an expected call of ListProxySessions
+func (mr *MockChimeAPIMockRecorder) ListProxySessions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProxySessions", reflect.TypeOf((*MockChimeAPI)(nil).ListProxySessions), arg0)
+}
+
+// ListProxySessionsPages mocks base method
+func (m *MockChimeAPI) ListProxySessionsPages(arg0 *chime.ListProxySessionsInput, arg1 func(*chime.ListProxySessionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProxySessionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProxySessionsPages indicates an expected call of ListProxySessionsPages
+func (mr *MockChimeAPIMockRecorder) ListProxySessionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProxySessionsPages", reflect.TypeOf((*MockChimeAPI)(nil).ListProxySessionsPages), arg0, arg1)
+}
+
+// ListProxySessionsPagesWithContext mocks base method
+func (m *MockChimeAPI) ListProxySessionsPagesWithContext(arg0 context.Context, arg1 *chime.ListProxySessionsInput, arg2 func(*chime.ListProxySessionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProxySessionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProxySessionsPagesWithContext indicates an expected call of ListProxySessionsPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListProxySessionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProxySessionsPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListProxySessionsPagesWithContext), varargs...)
+}
+
+// ListProxySessionsRequest mocks base method
+func (m *MockChimeAPI) ListProxySessionsRequest(arg0 *chime.ListProxySessionsInput) (*request.Request, *chime.ListProxySessionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProxySessionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListProxySessionsOutput)
+	return ret0, ret1
+}
+
+// ListProxySessionsRequest indicates an expected call of ListProxySessionsRequest
+func (mr *MockChimeAPIMockRecorder) ListProxySessionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProxySessionsRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListProxySessionsRequest), arg0)
+}
+
+// ListProxySessionsWithContext mocks base method
+func (m *MockChimeAPI) ListProxySessionsWithContext(arg0 context.Context, arg1 *chime.ListProxySessionsInput, arg2 ...request.Option) (*chime.ListProxySessionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProxySessionsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListProxySessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProxySessionsWithContext indicates an expected call of ListProxySessionsWithContext
+func (mr *MockChimeAPIMockRecorder) ListProxySessionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProxySessionsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListProxySessionsWithContext), varargs...)
+}
+
 // ListRoomMemberships mocks base method
 func (m *MockChimeAPI) ListRoomMemberships(arg0 *chime.ListRoomMembershipsInput) (*chime.ListRoomMembershipsOutput, error) {
 	m.ctrl.T.Helper()
@@ -4148,6 +4481,56 @@ func (mr *MockChimeAPIMockRecorder) PutVoiceConnectorOriginationWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutVoiceConnectorOriginationWithContext", reflect.TypeOf((*MockChimeAPI)(nil).PutVoiceConnectorOriginationWithContext), varargs...)
 }
 
+// PutVoiceConnectorProxy mocks base method
+func (m *MockChimeAPI) PutVoiceConnectorProxy(arg0 *chime.PutVoiceConnectorProxyInput) (*chime.PutVoiceConnectorProxyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutVoiceConnectorProxy", arg0)
+	ret0, _ := ret[0].(*chime.PutVoiceConnectorProxyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutVoiceConnectorProxy indicates an expected call of PutVoiceConnectorProxy
+func (mr *MockChimeAPIMockRecorder) PutVoiceConnectorProxy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutVoiceConnectorProxy", reflect.TypeOf((*MockChimeAPI)(nil).PutVoiceConnectorProxy), arg0)
+}
+
+// PutVoiceConnectorProxyRequest mocks base method
+func (m *MockChimeAPI) PutVoiceConnectorProxyRequest(arg0 *chime.PutVoiceConnectorProxyInput) (*request.Request, *chime.PutVoiceConnectorProxyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutVoiceConnectorProxyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.PutVoiceConnectorProxyOutput)
+	return ret0, ret1
+}
+
+// PutVoiceConnectorProxyRequest indicates an expected call of PutVoiceConnectorProxyRequest
+func (mr *MockChimeAPIMockRecorder) PutVoiceConnectorProxyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutVoiceConnectorProxyRequest", reflect.TypeOf((*MockChimeAPI)(nil).PutVoiceConnectorProxyRequest), arg0)
+}
+
+// PutVoiceConnectorProxyWithContext mocks base method
+func (m *MockChimeAPI) PutVoiceConnectorProxyWithContext(arg0 context.Context, arg1 *chime.PutVoiceConnectorProxyInput, arg2 ...request.Option) (*chime.PutVoiceConnectorProxyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutVoiceConnectorProxyWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.PutVoiceConnectorProxyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutVoiceConnectorProxyWithContext indicates an expected call of PutVoiceConnectorProxyWithContext
+func (mr *MockChimeAPIMockRecorder) PutVoiceConnectorProxyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutVoiceConnectorProxyWithContext", reflect.TypeOf((*MockChimeAPI)(nil).PutVoiceConnectorProxyWithContext), varargs...)
+}
+
 // PutVoiceConnectorStreamingConfiguration mocks base method
 func (m *MockChimeAPI) PutVoiceConnectorStreamingConfiguration(arg0 *chime.PutVoiceConnectorStreamingConfigurationInput) (*chime.PutVoiceConnectorStreamingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -4796,6 +5179,56 @@ func (mr *MockChimeAPIMockRecorder) UpdatePhoneNumberWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePhoneNumberWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdatePhoneNumberWithContext), varargs...)
+}
+
+// UpdateProxySession mocks base method
+func (m *MockChimeAPI) UpdateProxySession(arg0 *chime.UpdateProxySessionInput) (*chime.UpdateProxySessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProxySession", arg0)
+	ret0, _ := ret[0].(*chime.UpdateProxySessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProxySession indicates an expected call of UpdateProxySession
+func (mr *MockChimeAPIMockRecorder) UpdateProxySession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProxySession", reflect.TypeOf((*MockChimeAPI)(nil).UpdateProxySession), arg0)
+}
+
+// UpdateProxySessionRequest mocks base method
+func (m *MockChimeAPI) UpdateProxySessionRequest(arg0 *chime.UpdateProxySessionInput) (*request.Request, *chime.UpdateProxySessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProxySessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.UpdateProxySessionOutput)
+	return ret0, ret1
+}
+
+// UpdateProxySessionRequest indicates an expected call of UpdateProxySessionRequest
+func (mr *MockChimeAPIMockRecorder) UpdateProxySessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProxySessionRequest", reflect.TypeOf((*MockChimeAPI)(nil).UpdateProxySessionRequest), arg0)
+}
+
+// UpdateProxySessionWithContext mocks base method
+func (m *MockChimeAPI) UpdateProxySessionWithContext(arg0 context.Context, arg1 *chime.UpdateProxySessionInput, arg2 ...request.Option) (*chime.UpdateProxySessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateProxySessionWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.UpdateProxySessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProxySessionWithContext indicates an expected call of UpdateProxySessionWithContext
+func (mr *MockChimeAPIMockRecorder) UpdateProxySessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProxySessionWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdateProxySessionWithContext), varargs...)
 }
 
 // UpdateRoom mocks base method

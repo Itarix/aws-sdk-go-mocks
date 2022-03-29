@@ -1518,6 +1518,89 @@ func (mr *MockElasticBeanstalkAPIMockRecorder) ListAvailableSolutionStacksWithCo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableSolutionStacksWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListAvailableSolutionStacksWithContext), varargs...)
 }
 
+// ListPlatformBranches mocks base method
+func (m *MockElasticBeanstalkAPI) ListPlatformBranches(arg0 *elasticbeanstalk.ListPlatformBranchesInput) (*elasticbeanstalk.ListPlatformBranchesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPlatformBranches", arg0)
+	ret0, _ := ret[0].(*elasticbeanstalk.ListPlatformBranchesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPlatformBranches indicates an expected call of ListPlatformBranches
+func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformBranches(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformBranches", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformBranches), arg0)
+}
+
+// ListPlatformBranchesPages mocks base method
+func (m *MockElasticBeanstalkAPI) ListPlatformBranchesPages(arg0 *elasticbeanstalk.ListPlatformBranchesInput, arg1 func(*elasticbeanstalk.ListPlatformBranchesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPlatformBranchesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPlatformBranchesPages indicates an expected call of ListPlatformBranchesPages
+func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformBranchesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformBranchesPages", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformBranchesPages), arg0, arg1)
+}
+
+// ListPlatformBranchesPagesWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) ListPlatformBranchesPagesWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ListPlatformBranchesInput, arg2 func(*elasticbeanstalk.ListPlatformBranchesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPlatformBranchesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPlatformBranchesPagesWithContext indicates an expected call of ListPlatformBranchesPagesWithContext
+func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformBranchesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformBranchesPagesWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformBranchesPagesWithContext), varargs...)
+}
+
+// ListPlatformBranchesRequest mocks base method
+func (m *MockElasticBeanstalkAPI) ListPlatformBranchesRequest(arg0 *elasticbeanstalk.ListPlatformBranchesInput) (*request.Request, *elasticbeanstalk.ListPlatformBranchesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPlatformBranchesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticbeanstalk.ListPlatformBranchesOutput)
+	return ret0, ret1
+}
+
+// ListPlatformBranchesRequest indicates an expected call of ListPlatformBranchesRequest
+func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformBranchesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformBranchesRequest", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformBranchesRequest), arg0)
+}
+
+// ListPlatformBranchesWithContext mocks base method
+func (m *MockElasticBeanstalkAPI) ListPlatformBranchesWithContext(arg0 context.Context, arg1 *elasticbeanstalk.ListPlatformBranchesInput, arg2 ...request.Option) (*elasticbeanstalk.ListPlatformBranchesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPlatformBranchesWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticbeanstalk.ListPlatformBranchesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPlatformBranchesWithContext indicates an expected call of ListPlatformBranchesWithContext
+func (mr *MockElasticBeanstalkAPIMockRecorder) ListPlatformBranchesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlatformBranchesWithContext", reflect.TypeOf((*MockElasticBeanstalkAPI)(nil).ListPlatformBranchesWithContext), varargs...)
+}
+
 // ListPlatformVersions mocks base method
 func (m *MockElasticBeanstalkAPI) ListPlatformVersions(arg0 *elasticbeanstalk.ListPlatformVersionsInput) (*elasticbeanstalk.ListPlatformVersionsOutput, error) {
 	m.ctrl.T.Helper()
