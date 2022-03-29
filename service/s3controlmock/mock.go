@@ -585,6 +585,106 @@ func (mr *MockS3ControlAPIMockRecorder) DeletePublicAccessBlockWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePublicAccessBlockWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).DeletePublicAccessBlockWithContext), varargs...)
 }
 
+// DeleteStorageLensConfiguration mocks base method
+func (m *MockS3ControlAPI) DeleteStorageLensConfiguration(arg0 *s3control.DeleteStorageLensConfigurationInput) (*s3control.DeleteStorageLensConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStorageLensConfiguration", arg0)
+	ret0, _ := ret[0].(*s3control.DeleteStorageLensConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStorageLensConfiguration indicates an expected call of DeleteStorageLensConfiguration
+func (mr *MockS3ControlAPIMockRecorder) DeleteStorageLensConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStorageLensConfiguration", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteStorageLensConfiguration), arg0)
+}
+
+// DeleteStorageLensConfigurationRequest mocks base method
+func (m *MockS3ControlAPI) DeleteStorageLensConfigurationRequest(arg0 *s3control.DeleteStorageLensConfigurationInput) (*request.Request, *s3control.DeleteStorageLensConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStorageLensConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.DeleteStorageLensConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteStorageLensConfigurationRequest indicates an expected call of DeleteStorageLensConfigurationRequest
+func (mr *MockS3ControlAPIMockRecorder) DeleteStorageLensConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStorageLensConfigurationRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteStorageLensConfigurationRequest), arg0)
+}
+
+// DeleteStorageLensConfigurationTagging mocks base method
+func (m *MockS3ControlAPI) DeleteStorageLensConfigurationTagging(arg0 *s3control.DeleteStorageLensConfigurationTaggingInput) (*s3control.DeleteStorageLensConfigurationTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStorageLensConfigurationTagging", arg0)
+	ret0, _ := ret[0].(*s3control.DeleteStorageLensConfigurationTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStorageLensConfigurationTagging indicates an expected call of DeleteStorageLensConfigurationTagging
+func (mr *MockS3ControlAPIMockRecorder) DeleteStorageLensConfigurationTagging(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStorageLensConfigurationTagging", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteStorageLensConfigurationTagging), arg0)
+}
+
+// DeleteStorageLensConfigurationTaggingRequest mocks base method
+func (m *MockS3ControlAPI) DeleteStorageLensConfigurationTaggingRequest(arg0 *s3control.DeleteStorageLensConfigurationTaggingInput) (*request.Request, *s3control.DeleteStorageLensConfigurationTaggingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStorageLensConfigurationTaggingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.DeleteStorageLensConfigurationTaggingOutput)
+	return ret0, ret1
+}
+
+// DeleteStorageLensConfigurationTaggingRequest indicates an expected call of DeleteStorageLensConfigurationTaggingRequest
+func (mr *MockS3ControlAPIMockRecorder) DeleteStorageLensConfigurationTaggingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStorageLensConfigurationTaggingRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteStorageLensConfigurationTaggingRequest), arg0)
+}
+
+// DeleteStorageLensConfigurationTaggingWithContext mocks base method
+func (m *MockS3ControlAPI) DeleteStorageLensConfigurationTaggingWithContext(arg0 context.Context, arg1 *s3control.DeleteStorageLensConfigurationTaggingInput, arg2 ...request.Option) (*s3control.DeleteStorageLensConfigurationTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteStorageLensConfigurationTaggingWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.DeleteStorageLensConfigurationTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStorageLensConfigurationTaggingWithContext indicates an expected call of DeleteStorageLensConfigurationTaggingWithContext
+func (mr *MockS3ControlAPIMockRecorder) DeleteStorageLensConfigurationTaggingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStorageLensConfigurationTaggingWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteStorageLensConfigurationTaggingWithContext), varargs...)
+}
+
+// DeleteStorageLensConfigurationWithContext mocks base method
+func (m *MockS3ControlAPI) DeleteStorageLensConfigurationWithContext(arg0 context.Context, arg1 *s3control.DeleteStorageLensConfigurationInput, arg2 ...request.Option) (*s3control.DeleteStorageLensConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteStorageLensConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.DeleteStorageLensConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStorageLensConfigurationWithContext indicates an expected call of DeleteStorageLensConfigurationWithContext
+func (mr *MockS3ControlAPIMockRecorder) DeleteStorageLensConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStorageLensConfigurationWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteStorageLensConfigurationWithContext), varargs...)
+}
+
 // DescribeJob mocks base method
 func (m *MockS3ControlAPI) DescribeJob(arg0 *s3control.DescribeJobInput) (*s3control.DescribeJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -1085,6 +1185,106 @@ func (mr *MockS3ControlAPIMockRecorder) GetPublicAccessBlockWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPublicAccessBlockWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetPublicAccessBlockWithContext), varargs...)
 }
 
+// GetStorageLensConfiguration mocks base method
+func (m *MockS3ControlAPI) GetStorageLensConfiguration(arg0 *s3control.GetStorageLensConfigurationInput) (*s3control.GetStorageLensConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStorageLensConfiguration", arg0)
+	ret0, _ := ret[0].(*s3control.GetStorageLensConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStorageLensConfiguration indicates an expected call of GetStorageLensConfiguration
+func (mr *MockS3ControlAPIMockRecorder) GetStorageLensConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStorageLensConfiguration", reflect.TypeOf((*MockS3ControlAPI)(nil).GetStorageLensConfiguration), arg0)
+}
+
+// GetStorageLensConfigurationRequest mocks base method
+func (m *MockS3ControlAPI) GetStorageLensConfigurationRequest(arg0 *s3control.GetStorageLensConfigurationInput) (*request.Request, *s3control.GetStorageLensConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStorageLensConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.GetStorageLensConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetStorageLensConfigurationRequest indicates an expected call of GetStorageLensConfigurationRequest
+func (mr *MockS3ControlAPIMockRecorder) GetStorageLensConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStorageLensConfigurationRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).GetStorageLensConfigurationRequest), arg0)
+}
+
+// GetStorageLensConfigurationTagging mocks base method
+func (m *MockS3ControlAPI) GetStorageLensConfigurationTagging(arg0 *s3control.GetStorageLensConfigurationTaggingInput) (*s3control.GetStorageLensConfigurationTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStorageLensConfigurationTagging", arg0)
+	ret0, _ := ret[0].(*s3control.GetStorageLensConfigurationTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStorageLensConfigurationTagging indicates an expected call of GetStorageLensConfigurationTagging
+func (mr *MockS3ControlAPIMockRecorder) GetStorageLensConfigurationTagging(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStorageLensConfigurationTagging", reflect.TypeOf((*MockS3ControlAPI)(nil).GetStorageLensConfigurationTagging), arg0)
+}
+
+// GetStorageLensConfigurationTaggingRequest mocks base method
+func (m *MockS3ControlAPI) GetStorageLensConfigurationTaggingRequest(arg0 *s3control.GetStorageLensConfigurationTaggingInput) (*request.Request, *s3control.GetStorageLensConfigurationTaggingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStorageLensConfigurationTaggingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.GetStorageLensConfigurationTaggingOutput)
+	return ret0, ret1
+}
+
+// GetStorageLensConfigurationTaggingRequest indicates an expected call of GetStorageLensConfigurationTaggingRequest
+func (mr *MockS3ControlAPIMockRecorder) GetStorageLensConfigurationTaggingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStorageLensConfigurationTaggingRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).GetStorageLensConfigurationTaggingRequest), arg0)
+}
+
+// GetStorageLensConfigurationTaggingWithContext mocks base method
+func (m *MockS3ControlAPI) GetStorageLensConfigurationTaggingWithContext(arg0 context.Context, arg1 *s3control.GetStorageLensConfigurationTaggingInput, arg2 ...request.Option) (*s3control.GetStorageLensConfigurationTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetStorageLensConfigurationTaggingWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.GetStorageLensConfigurationTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStorageLensConfigurationTaggingWithContext indicates an expected call of GetStorageLensConfigurationTaggingWithContext
+func (mr *MockS3ControlAPIMockRecorder) GetStorageLensConfigurationTaggingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStorageLensConfigurationTaggingWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetStorageLensConfigurationTaggingWithContext), varargs...)
+}
+
+// GetStorageLensConfigurationWithContext mocks base method
+func (m *MockS3ControlAPI) GetStorageLensConfigurationWithContext(arg0 context.Context, arg1 *s3control.GetStorageLensConfigurationInput, arg2 ...request.Option) (*s3control.GetStorageLensConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetStorageLensConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.GetStorageLensConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStorageLensConfigurationWithContext indicates an expected call of GetStorageLensConfigurationWithContext
+func (mr *MockS3ControlAPIMockRecorder) GetStorageLensConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStorageLensConfigurationWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetStorageLensConfigurationWithContext), varargs...)
+}
+
 // ListAccessPoints mocks base method
 func (m *MockS3ControlAPI) ListAccessPoints(arg0 *s3control.ListAccessPointsInput) (*s3control.ListAccessPointsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1332,6 +1532,56 @@ func (mr *MockS3ControlAPIMockRecorder) ListRegionalBucketsWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegionalBucketsWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).ListRegionalBucketsWithContext), varargs...)
+}
+
+// ListStorageLensConfigurations mocks base method
+func (m *MockS3ControlAPI) ListStorageLensConfigurations(arg0 *s3control.ListStorageLensConfigurationsInput) (*s3control.ListStorageLensConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStorageLensConfigurations", arg0)
+	ret0, _ := ret[0].(*s3control.ListStorageLensConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStorageLensConfigurations indicates an expected call of ListStorageLensConfigurations
+func (mr *MockS3ControlAPIMockRecorder) ListStorageLensConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStorageLensConfigurations", reflect.TypeOf((*MockS3ControlAPI)(nil).ListStorageLensConfigurations), arg0)
+}
+
+// ListStorageLensConfigurationsRequest mocks base method
+func (m *MockS3ControlAPI) ListStorageLensConfigurationsRequest(arg0 *s3control.ListStorageLensConfigurationsInput) (*request.Request, *s3control.ListStorageLensConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStorageLensConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.ListStorageLensConfigurationsOutput)
+	return ret0, ret1
+}
+
+// ListStorageLensConfigurationsRequest indicates an expected call of ListStorageLensConfigurationsRequest
+func (mr *MockS3ControlAPIMockRecorder) ListStorageLensConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStorageLensConfigurationsRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).ListStorageLensConfigurationsRequest), arg0)
+}
+
+// ListStorageLensConfigurationsWithContext mocks base method
+func (m *MockS3ControlAPI) ListStorageLensConfigurationsWithContext(arg0 context.Context, arg1 *s3control.ListStorageLensConfigurationsInput, arg2 ...request.Option) (*s3control.ListStorageLensConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStorageLensConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.ListStorageLensConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStorageLensConfigurationsWithContext indicates an expected call of ListStorageLensConfigurationsWithContext
+func (mr *MockS3ControlAPIMockRecorder) ListStorageLensConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStorageLensConfigurationsWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).ListStorageLensConfigurationsWithContext), varargs...)
 }
 
 // PutAccessPointPolicy mocks base method
@@ -1632,6 +1882,106 @@ func (mr *MockS3ControlAPIMockRecorder) PutPublicAccessBlockWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPublicAccessBlockWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).PutPublicAccessBlockWithContext), varargs...)
+}
+
+// PutStorageLensConfiguration mocks base method
+func (m *MockS3ControlAPI) PutStorageLensConfiguration(arg0 *s3control.PutStorageLensConfigurationInput) (*s3control.PutStorageLensConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutStorageLensConfiguration", arg0)
+	ret0, _ := ret[0].(*s3control.PutStorageLensConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutStorageLensConfiguration indicates an expected call of PutStorageLensConfiguration
+func (mr *MockS3ControlAPIMockRecorder) PutStorageLensConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutStorageLensConfiguration", reflect.TypeOf((*MockS3ControlAPI)(nil).PutStorageLensConfiguration), arg0)
+}
+
+// PutStorageLensConfigurationRequest mocks base method
+func (m *MockS3ControlAPI) PutStorageLensConfigurationRequest(arg0 *s3control.PutStorageLensConfigurationInput) (*request.Request, *s3control.PutStorageLensConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutStorageLensConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.PutStorageLensConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutStorageLensConfigurationRequest indicates an expected call of PutStorageLensConfigurationRequest
+func (mr *MockS3ControlAPIMockRecorder) PutStorageLensConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutStorageLensConfigurationRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).PutStorageLensConfigurationRequest), arg0)
+}
+
+// PutStorageLensConfigurationTagging mocks base method
+func (m *MockS3ControlAPI) PutStorageLensConfigurationTagging(arg0 *s3control.PutStorageLensConfigurationTaggingInput) (*s3control.PutStorageLensConfigurationTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutStorageLensConfigurationTagging", arg0)
+	ret0, _ := ret[0].(*s3control.PutStorageLensConfigurationTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutStorageLensConfigurationTagging indicates an expected call of PutStorageLensConfigurationTagging
+func (mr *MockS3ControlAPIMockRecorder) PutStorageLensConfigurationTagging(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutStorageLensConfigurationTagging", reflect.TypeOf((*MockS3ControlAPI)(nil).PutStorageLensConfigurationTagging), arg0)
+}
+
+// PutStorageLensConfigurationTaggingRequest mocks base method
+func (m *MockS3ControlAPI) PutStorageLensConfigurationTaggingRequest(arg0 *s3control.PutStorageLensConfigurationTaggingInput) (*request.Request, *s3control.PutStorageLensConfigurationTaggingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutStorageLensConfigurationTaggingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.PutStorageLensConfigurationTaggingOutput)
+	return ret0, ret1
+}
+
+// PutStorageLensConfigurationTaggingRequest indicates an expected call of PutStorageLensConfigurationTaggingRequest
+func (mr *MockS3ControlAPIMockRecorder) PutStorageLensConfigurationTaggingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutStorageLensConfigurationTaggingRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).PutStorageLensConfigurationTaggingRequest), arg0)
+}
+
+// PutStorageLensConfigurationTaggingWithContext mocks base method
+func (m *MockS3ControlAPI) PutStorageLensConfigurationTaggingWithContext(arg0 context.Context, arg1 *s3control.PutStorageLensConfigurationTaggingInput, arg2 ...request.Option) (*s3control.PutStorageLensConfigurationTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutStorageLensConfigurationTaggingWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.PutStorageLensConfigurationTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutStorageLensConfigurationTaggingWithContext indicates an expected call of PutStorageLensConfigurationTaggingWithContext
+func (mr *MockS3ControlAPIMockRecorder) PutStorageLensConfigurationTaggingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutStorageLensConfigurationTaggingWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).PutStorageLensConfigurationTaggingWithContext), varargs...)
+}
+
+// PutStorageLensConfigurationWithContext mocks base method
+func (m *MockS3ControlAPI) PutStorageLensConfigurationWithContext(arg0 context.Context, arg1 *s3control.PutStorageLensConfigurationInput, arg2 ...request.Option) (*s3control.PutStorageLensConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutStorageLensConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.PutStorageLensConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutStorageLensConfigurationWithContext indicates an expected call of PutStorageLensConfigurationWithContext
+func (mr *MockS3ControlAPIMockRecorder) PutStorageLensConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutStorageLensConfigurationWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).PutStorageLensConfigurationWithContext), varargs...)
 }
 
 // UpdateJobPriority mocks base method

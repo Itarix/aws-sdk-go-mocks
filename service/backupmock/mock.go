@@ -635,6 +635,56 @@ func (mr *MockBackupAPIMockRecorder) DescribeCopyJobWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCopyJobWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DescribeCopyJobWithContext), varargs...)
 }
 
+// DescribeGlobalSettings mocks base method
+func (m *MockBackupAPI) DescribeGlobalSettings(arg0 *backup.DescribeGlobalSettingsInput) (*backup.DescribeGlobalSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGlobalSettings", arg0)
+	ret0, _ := ret[0].(*backup.DescribeGlobalSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGlobalSettings indicates an expected call of DescribeGlobalSettings
+func (mr *MockBackupAPIMockRecorder) DescribeGlobalSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalSettings", reflect.TypeOf((*MockBackupAPI)(nil).DescribeGlobalSettings), arg0)
+}
+
+// DescribeGlobalSettingsRequest mocks base method
+func (m *MockBackupAPI) DescribeGlobalSettingsRequest(arg0 *backup.DescribeGlobalSettingsInput) (*request.Request, *backup.DescribeGlobalSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGlobalSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.DescribeGlobalSettingsOutput)
+	return ret0, ret1
+}
+
+// DescribeGlobalSettingsRequest indicates an expected call of DescribeGlobalSettingsRequest
+func (mr *MockBackupAPIMockRecorder) DescribeGlobalSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalSettingsRequest", reflect.TypeOf((*MockBackupAPI)(nil).DescribeGlobalSettingsRequest), arg0)
+}
+
+// DescribeGlobalSettingsWithContext mocks base method
+func (m *MockBackupAPI) DescribeGlobalSettingsWithContext(arg0 context.Context, arg1 *backup.DescribeGlobalSettingsInput, arg2 ...request.Option) (*backup.DescribeGlobalSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGlobalSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.DescribeGlobalSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGlobalSettingsWithContext indicates an expected call of DescribeGlobalSettingsWithContext
+func (mr *MockBackupAPIMockRecorder) DescribeGlobalSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalSettingsWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DescribeGlobalSettingsWithContext), varargs...)
+}
+
 // DescribeProtectedResource mocks base method
 func (m *MockBackupAPI) DescribeProtectedResource(arg0 *backup.DescribeProtectedResourceInput) (*backup.DescribeProtectedResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -2729,6 +2779,56 @@ func (mr *MockBackupAPIMockRecorder) UpdateBackupPlanWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBackupPlanWithContext", reflect.TypeOf((*MockBackupAPI)(nil).UpdateBackupPlanWithContext), varargs...)
+}
+
+// UpdateGlobalSettings mocks base method
+func (m *MockBackupAPI) UpdateGlobalSettings(arg0 *backup.UpdateGlobalSettingsInput) (*backup.UpdateGlobalSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGlobalSettings", arg0)
+	ret0, _ := ret[0].(*backup.UpdateGlobalSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGlobalSettings indicates an expected call of UpdateGlobalSettings
+func (mr *MockBackupAPIMockRecorder) UpdateGlobalSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGlobalSettings", reflect.TypeOf((*MockBackupAPI)(nil).UpdateGlobalSettings), arg0)
+}
+
+// UpdateGlobalSettingsRequest mocks base method
+func (m *MockBackupAPI) UpdateGlobalSettingsRequest(arg0 *backup.UpdateGlobalSettingsInput) (*request.Request, *backup.UpdateGlobalSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGlobalSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.UpdateGlobalSettingsOutput)
+	return ret0, ret1
+}
+
+// UpdateGlobalSettingsRequest indicates an expected call of UpdateGlobalSettingsRequest
+func (mr *MockBackupAPIMockRecorder) UpdateGlobalSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGlobalSettingsRequest", reflect.TypeOf((*MockBackupAPI)(nil).UpdateGlobalSettingsRequest), arg0)
+}
+
+// UpdateGlobalSettingsWithContext mocks base method
+func (m *MockBackupAPI) UpdateGlobalSettingsWithContext(arg0 context.Context, arg1 *backup.UpdateGlobalSettingsInput, arg2 ...request.Option) (*backup.UpdateGlobalSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateGlobalSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.UpdateGlobalSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGlobalSettingsWithContext indicates an expected call of UpdateGlobalSettingsWithContext
+func (mr *MockBackupAPIMockRecorder) UpdateGlobalSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGlobalSettingsWithContext", reflect.TypeOf((*MockBackupAPI)(nil).UpdateGlobalSettingsWithContext), varargs...)
 }
 
 // UpdateRecoveryPointLifecycle mocks base method
