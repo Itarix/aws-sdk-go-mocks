@@ -285,6 +285,56 @@ func (mr *MockWorkMailAPIMockRecorder) CreateGroupWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGroupWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).CreateGroupWithContext), varargs...)
 }
 
+// CreateOrganization mocks base method
+func (m *MockWorkMailAPI) CreateOrganization(arg0 *workmail.CreateOrganizationInput) (*workmail.CreateOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateOrganization", arg0)
+	ret0, _ := ret[0].(*workmail.CreateOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateOrganization indicates an expected call of CreateOrganization
+func (mr *MockWorkMailAPIMockRecorder) CreateOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateOrganization", reflect.TypeOf((*MockWorkMailAPI)(nil).CreateOrganization), arg0)
+}
+
+// CreateOrganizationRequest mocks base method
+func (m *MockWorkMailAPI) CreateOrganizationRequest(arg0 *workmail.CreateOrganizationInput) (*request.Request, *workmail.CreateOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.CreateOrganizationOutput)
+	return ret0, ret1
+}
+
+// CreateOrganizationRequest indicates an expected call of CreateOrganizationRequest
+func (mr *MockWorkMailAPIMockRecorder) CreateOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateOrganizationRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).CreateOrganizationRequest), arg0)
+}
+
+// CreateOrganizationWithContext mocks base method
+func (m *MockWorkMailAPI) CreateOrganizationWithContext(arg0 context.Context, arg1 *workmail.CreateOrganizationInput, arg2 ...request.Option) (*workmail.CreateOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.CreateOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateOrganizationWithContext indicates an expected call of CreateOrganizationWithContext
+func (mr *MockWorkMailAPIMockRecorder) CreateOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateOrganizationWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).CreateOrganizationWithContext), varargs...)
+}
+
 // CreateResource mocks base method
 func (m *MockWorkMailAPI) CreateResource(arg0 *workmail.CreateResourceInput) (*workmail.CreateResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +633,56 @@ func (mr *MockWorkMailAPIMockRecorder) DeleteMailboxPermissionsWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMailboxPermissionsWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteMailboxPermissionsWithContext), varargs...)
+}
+
+// DeleteOrganization mocks base method
+func (m *MockWorkMailAPI) DeleteOrganization(arg0 *workmail.DeleteOrganizationInput) (*workmail.DeleteOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteOrganization", arg0)
+	ret0, _ := ret[0].(*workmail.DeleteOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteOrganization indicates an expected call of DeleteOrganization
+func (mr *MockWorkMailAPIMockRecorder) DeleteOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOrganization", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteOrganization), arg0)
+}
+
+// DeleteOrganizationRequest mocks base method
+func (m *MockWorkMailAPI) DeleteOrganizationRequest(arg0 *workmail.DeleteOrganizationInput) (*request.Request, *workmail.DeleteOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.DeleteOrganizationOutput)
+	return ret0, ret1
+}
+
+// DeleteOrganizationRequest indicates an expected call of DeleteOrganizationRequest
+func (mr *MockWorkMailAPIMockRecorder) DeleteOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOrganizationRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteOrganizationRequest), arg0)
+}
+
+// DeleteOrganizationWithContext mocks base method
+func (m *MockWorkMailAPI) DeleteOrganizationWithContext(arg0 context.Context, arg1 *workmail.DeleteOrganizationInput, arg2 ...request.Option) (*workmail.DeleteOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.DeleteOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteOrganizationWithContext indicates an expected call of DeleteOrganizationWithContext
+func (mr *MockWorkMailAPIMockRecorder) DeleteOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOrganizationWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteOrganizationWithContext), varargs...)
 }
 
 // DeleteResource mocks base method

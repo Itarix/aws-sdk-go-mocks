@@ -1001,6 +1001,56 @@ func (mr *MockRekognitionAPIMockRecorder) DetectModerationLabelsWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectModerationLabelsWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DetectModerationLabelsWithContext), varargs...)
 }
 
+// DetectProtectiveEquipment mocks base method
+func (m *MockRekognitionAPI) DetectProtectiveEquipment(arg0 *rekognition.DetectProtectiveEquipmentInput) (*rekognition.DetectProtectiveEquipmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetectProtectiveEquipment", arg0)
+	ret0, _ := ret[0].(*rekognition.DetectProtectiveEquipmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetectProtectiveEquipment indicates an expected call of DetectProtectiveEquipment
+func (mr *MockRekognitionAPIMockRecorder) DetectProtectiveEquipment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectProtectiveEquipment", reflect.TypeOf((*MockRekognitionAPI)(nil).DetectProtectiveEquipment), arg0)
+}
+
+// DetectProtectiveEquipmentRequest mocks base method
+func (m *MockRekognitionAPI) DetectProtectiveEquipmentRequest(arg0 *rekognition.DetectProtectiveEquipmentInput) (*request.Request, *rekognition.DetectProtectiveEquipmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetectProtectiveEquipmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.DetectProtectiveEquipmentOutput)
+	return ret0, ret1
+}
+
+// DetectProtectiveEquipmentRequest indicates an expected call of DetectProtectiveEquipmentRequest
+func (mr *MockRekognitionAPIMockRecorder) DetectProtectiveEquipmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectProtectiveEquipmentRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).DetectProtectiveEquipmentRequest), arg0)
+}
+
+// DetectProtectiveEquipmentWithContext mocks base method
+func (m *MockRekognitionAPI) DetectProtectiveEquipmentWithContext(arg0 context.Context, arg1 *rekognition.DetectProtectiveEquipmentInput, arg2 ...request.Option) (*rekognition.DetectProtectiveEquipmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DetectProtectiveEquipmentWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.DetectProtectiveEquipmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetectProtectiveEquipmentWithContext indicates an expected call of DetectProtectiveEquipmentWithContext
+func (mr *MockRekognitionAPIMockRecorder) DetectProtectiveEquipmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectProtectiveEquipmentWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DetectProtectiveEquipmentWithContext), varargs...)
+}
+
 // DetectText mocks base method
 func (m *MockRekognitionAPI) DetectText(arg0 *rekognition.DetectTextInput) (*rekognition.DetectTextOutput, error) {
 	m.ctrl.T.Helper()

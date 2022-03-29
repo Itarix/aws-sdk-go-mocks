@@ -35,6 +35,56 @@ func (m *MockAccessAnalyzerAPI) EXPECT() *MockAccessAnalyzerAPIMockRecorder {
 	return m.recorder
 }
 
+// ApplyArchiveRule mocks base method
+func (m *MockAccessAnalyzerAPI) ApplyArchiveRule(arg0 *accessanalyzer.ApplyArchiveRuleInput) (*accessanalyzer.ApplyArchiveRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ApplyArchiveRule", arg0)
+	ret0, _ := ret[0].(*accessanalyzer.ApplyArchiveRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ApplyArchiveRule indicates an expected call of ApplyArchiveRule
+func (mr *MockAccessAnalyzerAPIMockRecorder) ApplyArchiveRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ApplyArchiveRule", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ApplyArchiveRule), arg0)
+}
+
+// ApplyArchiveRuleRequest mocks base method
+func (m *MockAccessAnalyzerAPI) ApplyArchiveRuleRequest(arg0 *accessanalyzer.ApplyArchiveRuleInput) (*request.Request, *accessanalyzer.ApplyArchiveRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ApplyArchiveRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*accessanalyzer.ApplyArchiveRuleOutput)
+	return ret0, ret1
+}
+
+// ApplyArchiveRuleRequest indicates an expected call of ApplyArchiveRuleRequest
+func (mr *MockAccessAnalyzerAPIMockRecorder) ApplyArchiveRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ApplyArchiveRuleRequest", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ApplyArchiveRuleRequest), arg0)
+}
+
+// ApplyArchiveRuleWithContext mocks base method
+func (m *MockAccessAnalyzerAPI) ApplyArchiveRuleWithContext(arg0 context.Context, arg1 *accessanalyzer.ApplyArchiveRuleInput, arg2 ...request.Option) (*accessanalyzer.ApplyArchiveRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ApplyArchiveRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*accessanalyzer.ApplyArchiveRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ApplyArchiveRuleWithContext indicates an expected call of ApplyArchiveRuleWithContext
+func (mr *MockAccessAnalyzerAPIMockRecorder) ApplyArchiveRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ApplyArchiveRuleWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ApplyArchiveRuleWithContext), varargs...)
+}
+
 // CreateAnalyzer mocks base method
 func (m *MockAccessAnalyzerAPI) CreateAnalyzer(arg0 *accessanalyzer.CreateAnalyzerInput) (*accessanalyzer.CreateAnalyzerOutput, error) {
 	m.ctrl.T.Helper()
