@@ -1618,6 +1618,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeTrustsWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTrustsWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeTrustsWithContext), varargs...)
 }
 
+// DisableClientAuthentication mocks base method
+func (m *MockDirectoryServiceAPI) DisableClientAuthentication(arg0 *directoryservice.DisableClientAuthenticationInput) (*directoryservice.DisableClientAuthenticationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableClientAuthentication", arg0)
+	ret0, _ := ret[0].(*directoryservice.DisableClientAuthenticationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableClientAuthentication indicates an expected call of DisableClientAuthentication
+func (mr *MockDirectoryServiceAPIMockRecorder) DisableClientAuthentication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableClientAuthentication", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DisableClientAuthentication), arg0)
+}
+
+// DisableClientAuthenticationRequest mocks base method
+func (m *MockDirectoryServiceAPI) DisableClientAuthenticationRequest(arg0 *directoryservice.DisableClientAuthenticationInput) (*request.Request, *directoryservice.DisableClientAuthenticationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableClientAuthenticationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.DisableClientAuthenticationOutput)
+	return ret0, ret1
+}
+
+// DisableClientAuthenticationRequest indicates an expected call of DisableClientAuthenticationRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) DisableClientAuthenticationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableClientAuthenticationRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DisableClientAuthenticationRequest), arg0)
+}
+
+// DisableClientAuthenticationWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DisableClientAuthenticationWithContext(arg0 context.Context, arg1 *directoryservice.DisableClientAuthenticationInput, arg2 ...request.Option) (*directoryservice.DisableClientAuthenticationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisableClientAuthenticationWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.DisableClientAuthenticationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableClientAuthenticationWithContext indicates an expected call of DisableClientAuthenticationWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DisableClientAuthenticationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableClientAuthenticationWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DisableClientAuthenticationWithContext), varargs...)
+}
+
 // DisableLDAPS mocks base method
 func (m *MockDirectoryServiceAPI) DisableLDAPS(arg0 *directoryservice.DisableLDAPSInput) (*directoryservice.DisableLDAPSOutput, error) {
 	m.ctrl.T.Helper()
@@ -1766,6 +1816,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DisableSsoWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableSsoWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DisableSsoWithContext), varargs...)
+}
+
+// EnableClientAuthentication mocks base method
+func (m *MockDirectoryServiceAPI) EnableClientAuthentication(arg0 *directoryservice.EnableClientAuthenticationInput) (*directoryservice.EnableClientAuthenticationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableClientAuthentication", arg0)
+	ret0, _ := ret[0].(*directoryservice.EnableClientAuthenticationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableClientAuthentication indicates an expected call of EnableClientAuthentication
+func (mr *MockDirectoryServiceAPIMockRecorder) EnableClientAuthentication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableClientAuthentication", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).EnableClientAuthentication), arg0)
+}
+
+// EnableClientAuthenticationRequest mocks base method
+func (m *MockDirectoryServiceAPI) EnableClientAuthenticationRequest(arg0 *directoryservice.EnableClientAuthenticationInput) (*request.Request, *directoryservice.EnableClientAuthenticationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableClientAuthenticationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.EnableClientAuthenticationOutput)
+	return ret0, ret1
+}
+
+// EnableClientAuthenticationRequest indicates an expected call of EnableClientAuthenticationRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) EnableClientAuthenticationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableClientAuthenticationRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).EnableClientAuthenticationRequest), arg0)
+}
+
+// EnableClientAuthenticationWithContext mocks base method
+func (m *MockDirectoryServiceAPI) EnableClientAuthenticationWithContext(arg0 context.Context, arg1 *directoryservice.EnableClientAuthenticationInput, arg2 ...request.Option) (*directoryservice.EnableClientAuthenticationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "EnableClientAuthenticationWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.EnableClientAuthenticationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableClientAuthenticationWithContext indicates an expected call of EnableClientAuthenticationWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) EnableClientAuthenticationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableClientAuthenticationWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).EnableClientAuthenticationWithContext), varargs...)
 }
 
 // EnableLDAPS mocks base method
