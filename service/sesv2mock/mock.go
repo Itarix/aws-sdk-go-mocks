@@ -3581,6 +3581,56 @@ func (mr *MockSESV2APIMockRecorder) PutDeliverabilityDashboardOptionWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDeliverabilityDashboardOptionWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutDeliverabilityDashboardOptionWithContext), varargs...)
 }
 
+// PutEmailIdentityConfigurationSetAttributes mocks base method
+func (m *MockSESV2API) PutEmailIdentityConfigurationSetAttributes(arg0 *sesv2.PutEmailIdentityConfigurationSetAttributesInput) (*sesv2.PutEmailIdentityConfigurationSetAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutEmailIdentityConfigurationSetAttributes", arg0)
+	ret0, _ := ret[0].(*sesv2.PutEmailIdentityConfigurationSetAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutEmailIdentityConfigurationSetAttributes indicates an expected call of PutEmailIdentityConfigurationSetAttributes
+func (mr *MockSESV2APIMockRecorder) PutEmailIdentityConfigurationSetAttributes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEmailIdentityConfigurationSetAttributes", reflect.TypeOf((*MockSESV2API)(nil).PutEmailIdentityConfigurationSetAttributes), arg0)
+}
+
+// PutEmailIdentityConfigurationSetAttributesRequest mocks base method
+func (m *MockSESV2API) PutEmailIdentityConfigurationSetAttributesRequest(arg0 *sesv2.PutEmailIdentityConfigurationSetAttributesInput) (*request.Request, *sesv2.PutEmailIdentityConfigurationSetAttributesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutEmailIdentityConfigurationSetAttributesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.PutEmailIdentityConfigurationSetAttributesOutput)
+	return ret0, ret1
+}
+
+// PutEmailIdentityConfigurationSetAttributesRequest indicates an expected call of PutEmailIdentityConfigurationSetAttributesRequest
+func (mr *MockSESV2APIMockRecorder) PutEmailIdentityConfigurationSetAttributesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEmailIdentityConfigurationSetAttributesRequest", reflect.TypeOf((*MockSESV2API)(nil).PutEmailIdentityConfigurationSetAttributesRequest), arg0)
+}
+
+// PutEmailIdentityConfigurationSetAttributesWithContext mocks base method
+func (m *MockSESV2API) PutEmailIdentityConfigurationSetAttributesWithContext(arg0 context.Context, arg1 *sesv2.PutEmailIdentityConfigurationSetAttributesInput, arg2 ...request.Option) (*sesv2.PutEmailIdentityConfigurationSetAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutEmailIdentityConfigurationSetAttributesWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.PutEmailIdentityConfigurationSetAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutEmailIdentityConfigurationSetAttributesWithContext indicates an expected call of PutEmailIdentityConfigurationSetAttributesWithContext
+func (mr *MockSESV2APIMockRecorder) PutEmailIdentityConfigurationSetAttributesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEmailIdentityConfigurationSetAttributesWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutEmailIdentityConfigurationSetAttributesWithContext), varargs...)
+}
+
 // PutEmailIdentityDkimAttributes mocks base method
 func (m *MockSESV2API) PutEmailIdentityDkimAttributes(arg0 *sesv2.PutEmailIdentityDkimAttributesInput) (*sesv2.PutEmailIdentityDkimAttributesOutput, error) {
 	m.ctrl.T.Helper()
