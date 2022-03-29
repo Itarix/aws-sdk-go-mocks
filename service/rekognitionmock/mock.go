@@ -385,6 +385,106 @@ func (mr *MockRekognitionAPIMockRecorder) DeleteFacesWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFacesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteFacesWithContext), varargs...)
 }
 
+// DeleteProject mocks base method
+func (m *MockRekognitionAPI) DeleteProject(arg0 *rekognition.DeleteProjectInput) (*rekognition.DeleteProjectOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProject", arg0)
+	ret0, _ := ret[0].(*rekognition.DeleteProjectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProject indicates an expected call of DeleteProject
+func (mr *MockRekognitionAPIMockRecorder) DeleteProject(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProject", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteProject), arg0)
+}
+
+// DeleteProjectRequest mocks base method
+func (m *MockRekognitionAPI) DeleteProjectRequest(arg0 *rekognition.DeleteProjectInput) (*request.Request, *rekognition.DeleteProjectOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProjectRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.DeleteProjectOutput)
+	return ret0, ret1
+}
+
+// DeleteProjectRequest indicates an expected call of DeleteProjectRequest
+func (mr *MockRekognitionAPIMockRecorder) DeleteProjectRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteProjectRequest), arg0)
+}
+
+// DeleteProjectVersion mocks base method
+func (m *MockRekognitionAPI) DeleteProjectVersion(arg0 *rekognition.DeleteProjectVersionInput) (*rekognition.DeleteProjectVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProjectVersion", arg0)
+	ret0, _ := ret[0].(*rekognition.DeleteProjectVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProjectVersion indicates an expected call of DeleteProjectVersion
+func (mr *MockRekognitionAPIMockRecorder) DeleteProjectVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectVersion", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteProjectVersion), arg0)
+}
+
+// DeleteProjectVersionRequest mocks base method
+func (m *MockRekognitionAPI) DeleteProjectVersionRequest(arg0 *rekognition.DeleteProjectVersionInput) (*request.Request, *rekognition.DeleteProjectVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProjectVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.DeleteProjectVersionOutput)
+	return ret0, ret1
+}
+
+// DeleteProjectVersionRequest indicates an expected call of DeleteProjectVersionRequest
+func (mr *MockRekognitionAPIMockRecorder) DeleteProjectVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectVersionRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteProjectVersionRequest), arg0)
+}
+
+// DeleteProjectVersionWithContext mocks base method
+func (m *MockRekognitionAPI) DeleteProjectVersionWithContext(arg0 context.Context, arg1 *rekognition.DeleteProjectVersionInput, arg2 ...request.Option) (*rekognition.DeleteProjectVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteProjectVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.DeleteProjectVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProjectVersionWithContext indicates an expected call of DeleteProjectVersionWithContext
+func (mr *MockRekognitionAPIMockRecorder) DeleteProjectVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectVersionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteProjectVersionWithContext), varargs...)
+}
+
+// DeleteProjectWithContext mocks base method
+func (m *MockRekognitionAPI) DeleteProjectWithContext(arg0 context.Context, arg1 *rekognition.DeleteProjectInput, arg2 ...request.Option) (*rekognition.DeleteProjectOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteProjectWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.DeleteProjectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProjectWithContext indicates an expected call of DeleteProjectWithContext
+func (mr *MockRekognitionAPIMockRecorder) DeleteProjectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteProjectWithContext), varargs...)
+}
+
 // DeleteStreamProcessor mocks base method
 func (m *MockRekognitionAPI) DeleteStreamProcessor(arg0 *rekognition.DeleteStreamProcessorInput) (*rekognition.DeleteStreamProcessorOutput, error) {
 	m.ctrl.T.Helper()

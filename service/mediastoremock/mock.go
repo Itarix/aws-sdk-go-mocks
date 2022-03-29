@@ -285,6 +285,56 @@ func (mr *MockMediaStoreAPIMockRecorder) DeleteLifecyclePolicyWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLifecyclePolicyWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).DeleteLifecyclePolicyWithContext), varargs...)
 }
 
+// DeleteMetricPolicy mocks base method
+func (m *MockMediaStoreAPI) DeleteMetricPolicy(arg0 *mediastore.DeleteMetricPolicyInput) (*mediastore.DeleteMetricPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMetricPolicy", arg0)
+	ret0, _ := ret[0].(*mediastore.DeleteMetricPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMetricPolicy indicates an expected call of DeleteMetricPolicy
+func (mr *MockMediaStoreAPIMockRecorder) DeleteMetricPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMetricPolicy", reflect.TypeOf((*MockMediaStoreAPI)(nil).DeleteMetricPolicy), arg0)
+}
+
+// DeleteMetricPolicyRequest mocks base method
+func (m *MockMediaStoreAPI) DeleteMetricPolicyRequest(arg0 *mediastore.DeleteMetricPolicyInput) (*request.Request, *mediastore.DeleteMetricPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMetricPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediastore.DeleteMetricPolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteMetricPolicyRequest indicates an expected call of DeleteMetricPolicyRequest
+func (mr *MockMediaStoreAPIMockRecorder) DeleteMetricPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMetricPolicyRequest", reflect.TypeOf((*MockMediaStoreAPI)(nil).DeleteMetricPolicyRequest), arg0)
+}
+
+// DeleteMetricPolicyWithContext mocks base method
+func (m *MockMediaStoreAPI) DeleteMetricPolicyWithContext(arg0 context.Context, arg1 *mediastore.DeleteMetricPolicyInput, arg2 ...request.Option) (*mediastore.DeleteMetricPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteMetricPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*mediastore.DeleteMetricPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMetricPolicyWithContext indicates an expected call of DeleteMetricPolicyWithContext
+func (mr *MockMediaStoreAPIMockRecorder) DeleteMetricPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMetricPolicyWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).DeleteMetricPolicyWithContext), varargs...)
+}
+
 // DescribeContainer mocks base method
 func (m *MockMediaStoreAPI) DescribeContainer(arg0 *mediastore.DescribeContainerInput) (*mediastore.DescribeContainerOutput, error) {
 	m.ctrl.T.Helper()
@@ -483,6 +533,56 @@ func (mr *MockMediaStoreAPIMockRecorder) GetLifecyclePolicyWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLifecyclePolicyWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).GetLifecyclePolicyWithContext), varargs...)
+}
+
+// GetMetricPolicy mocks base method
+func (m *MockMediaStoreAPI) GetMetricPolicy(arg0 *mediastore.GetMetricPolicyInput) (*mediastore.GetMetricPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMetricPolicy", arg0)
+	ret0, _ := ret[0].(*mediastore.GetMetricPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMetricPolicy indicates an expected call of GetMetricPolicy
+func (mr *MockMediaStoreAPIMockRecorder) GetMetricPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricPolicy", reflect.TypeOf((*MockMediaStoreAPI)(nil).GetMetricPolicy), arg0)
+}
+
+// GetMetricPolicyRequest mocks base method
+func (m *MockMediaStoreAPI) GetMetricPolicyRequest(arg0 *mediastore.GetMetricPolicyInput) (*request.Request, *mediastore.GetMetricPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMetricPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediastore.GetMetricPolicyOutput)
+	return ret0, ret1
+}
+
+// GetMetricPolicyRequest indicates an expected call of GetMetricPolicyRequest
+func (mr *MockMediaStoreAPIMockRecorder) GetMetricPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricPolicyRequest", reflect.TypeOf((*MockMediaStoreAPI)(nil).GetMetricPolicyRequest), arg0)
+}
+
+// GetMetricPolicyWithContext mocks base method
+func (m *MockMediaStoreAPI) GetMetricPolicyWithContext(arg0 context.Context, arg1 *mediastore.GetMetricPolicyInput, arg2 ...request.Option) (*mediastore.GetMetricPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMetricPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*mediastore.GetMetricPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMetricPolicyWithContext indicates an expected call of GetMetricPolicyWithContext
+func (mr *MockMediaStoreAPIMockRecorder) GetMetricPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricPolicyWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).GetMetricPolicyWithContext), varargs...)
 }
 
 // ListContainers mocks base method
@@ -766,6 +866,56 @@ func (mr *MockMediaStoreAPIMockRecorder) PutLifecyclePolicyWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLifecyclePolicyWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).PutLifecyclePolicyWithContext), varargs...)
+}
+
+// PutMetricPolicy mocks base method
+func (m *MockMediaStoreAPI) PutMetricPolicy(arg0 *mediastore.PutMetricPolicyInput) (*mediastore.PutMetricPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutMetricPolicy", arg0)
+	ret0, _ := ret[0].(*mediastore.PutMetricPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutMetricPolicy indicates an expected call of PutMetricPolicy
+func (mr *MockMediaStoreAPIMockRecorder) PutMetricPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMetricPolicy", reflect.TypeOf((*MockMediaStoreAPI)(nil).PutMetricPolicy), arg0)
+}
+
+// PutMetricPolicyRequest mocks base method
+func (m *MockMediaStoreAPI) PutMetricPolicyRequest(arg0 *mediastore.PutMetricPolicyInput) (*request.Request, *mediastore.PutMetricPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutMetricPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediastore.PutMetricPolicyOutput)
+	return ret0, ret1
+}
+
+// PutMetricPolicyRequest indicates an expected call of PutMetricPolicyRequest
+func (mr *MockMediaStoreAPIMockRecorder) PutMetricPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMetricPolicyRequest", reflect.TypeOf((*MockMediaStoreAPI)(nil).PutMetricPolicyRequest), arg0)
+}
+
+// PutMetricPolicyWithContext mocks base method
+func (m *MockMediaStoreAPI) PutMetricPolicyWithContext(arg0 context.Context, arg1 *mediastore.PutMetricPolicyInput, arg2 ...request.Option) (*mediastore.PutMetricPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutMetricPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*mediastore.PutMetricPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutMetricPolicyWithContext indicates an expected call of PutMetricPolicyWithContext
+func (mr *MockMediaStoreAPIMockRecorder) PutMetricPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMetricPolicyWithContext", reflect.TypeOf((*MockMediaStoreAPI)(nil).PutMetricPolicyWithContext), varargs...)
 }
 
 // StartAccessLogging mocks base method

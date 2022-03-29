@@ -335,6 +335,56 @@ func (mr *MockWAFV2APIMockRecorder) CreateWebACLWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWebACLWithContext", reflect.TypeOf((*MockWAFV2API)(nil).CreateWebACLWithContext), varargs...)
 }
 
+// DeleteFirewallManagerRuleGroups mocks base method
+func (m *MockWAFV2API) DeleteFirewallManagerRuleGroups(arg0 *wafv2.DeleteFirewallManagerRuleGroupsInput) (*wafv2.DeleteFirewallManagerRuleGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFirewallManagerRuleGroups", arg0)
+	ret0, _ := ret[0].(*wafv2.DeleteFirewallManagerRuleGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFirewallManagerRuleGroups indicates an expected call of DeleteFirewallManagerRuleGroups
+func (mr *MockWAFV2APIMockRecorder) DeleteFirewallManagerRuleGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFirewallManagerRuleGroups", reflect.TypeOf((*MockWAFV2API)(nil).DeleteFirewallManagerRuleGroups), arg0)
+}
+
+// DeleteFirewallManagerRuleGroupsRequest mocks base method
+func (m *MockWAFV2API) DeleteFirewallManagerRuleGroupsRequest(arg0 *wafv2.DeleteFirewallManagerRuleGroupsInput) (*request.Request, *wafv2.DeleteFirewallManagerRuleGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFirewallManagerRuleGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wafv2.DeleteFirewallManagerRuleGroupsOutput)
+	return ret0, ret1
+}
+
+// DeleteFirewallManagerRuleGroupsRequest indicates an expected call of DeleteFirewallManagerRuleGroupsRequest
+func (mr *MockWAFV2APIMockRecorder) DeleteFirewallManagerRuleGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFirewallManagerRuleGroupsRequest", reflect.TypeOf((*MockWAFV2API)(nil).DeleteFirewallManagerRuleGroupsRequest), arg0)
+}
+
+// DeleteFirewallManagerRuleGroupsWithContext mocks base method
+func (m *MockWAFV2API) DeleteFirewallManagerRuleGroupsWithContext(arg0 context.Context, arg1 *wafv2.DeleteFirewallManagerRuleGroupsInput, arg2 ...request.Option) (*wafv2.DeleteFirewallManagerRuleGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFirewallManagerRuleGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*wafv2.DeleteFirewallManagerRuleGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFirewallManagerRuleGroupsWithContext indicates an expected call of DeleteFirewallManagerRuleGroupsWithContext
+func (mr *MockWAFV2APIMockRecorder) DeleteFirewallManagerRuleGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFirewallManagerRuleGroupsWithContext", reflect.TypeOf((*MockWAFV2API)(nil).DeleteFirewallManagerRuleGroupsWithContext), varargs...)
+}
+
 // DeleteIPSet mocks base method
 func (m *MockWAFV2API) DeleteIPSet(arg0 *wafv2.DeleteIPSetInput) (*wafv2.DeleteIPSetOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +483,56 @@ func (mr *MockWAFV2APIMockRecorder) DeleteLoggingConfigurationWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLoggingConfigurationWithContext", reflect.TypeOf((*MockWAFV2API)(nil).DeleteLoggingConfigurationWithContext), varargs...)
+}
+
+// DeletePermissionPolicy mocks base method
+func (m *MockWAFV2API) DeletePermissionPolicy(arg0 *wafv2.DeletePermissionPolicyInput) (*wafv2.DeletePermissionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePermissionPolicy", arg0)
+	ret0, _ := ret[0].(*wafv2.DeletePermissionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePermissionPolicy indicates an expected call of DeletePermissionPolicy
+func (mr *MockWAFV2APIMockRecorder) DeletePermissionPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePermissionPolicy", reflect.TypeOf((*MockWAFV2API)(nil).DeletePermissionPolicy), arg0)
+}
+
+// DeletePermissionPolicyRequest mocks base method
+func (m *MockWAFV2API) DeletePermissionPolicyRequest(arg0 *wafv2.DeletePermissionPolicyInput) (*request.Request, *wafv2.DeletePermissionPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePermissionPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wafv2.DeletePermissionPolicyOutput)
+	return ret0, ret1
+}
+
+// DeletePermissionPolicyRequest indicates an expected call of DeletePermissionPolicyRequest
+func (mr *MockWAFV2APIMockRecorder) DeletePermissionPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePermissionPolicyRequest", reflect.TypeOf((*MockWAFV2API)(nil).DeletePermissionPolicyRequest), arg0)
+}
+
+// DeletePermissionPolicyWithContext mocks base method
+func (m *MockWAFV2API) DeletePermissionPolicyWithContext(arg0 context.Context, arg1 *wafv2.DeletePermissionPolicyInput, arg2 ...request.Option) (*wafv2.DeletePermissionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePermissionPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*wafv2.DeletePermissionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePermissionPolicyWithContext indicates an expected call of DeletePermissionPolicyWithContext
+func (mr *MockWAFV2APIMockRecorder) DeletePermissionPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePermissionPolicyWithContext", reflect.TypeOf((*MockWAFV2API)(nil).DeletePermissionPolicyWithContext), varargs...)
 }
 
 // DeleteRegexPatternSet mocks base method
@@ -783,6 +883,56 @@ func (mr *MockWAFV2APIMockRecorder) GetLoggingConfigurationWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoggingConfigurationWithContext", reflect.TypeOf((*MockWAFV2API)(nil).GetLoggingConfigurationWithContext), varargs...)
+}
+
+// GetPermissionPolicy mocks base method
+func (m *MockWAFV2API) GetPermissionPolicy(arg0 *wafv2.GetPermissionPolicyInput) (*wafv2.GetPermissionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPermissionPolicy", arg0)
+	ret0, _ := ret[0].(*wafv2.GetPermissionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPermissionPolicy indicates an expected call of GetPermissionPolicy
+func (mr *MockWAFV2APIMockRecorder) GetPermissionPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPermissionPolicy", reflect.TypeOf((*MockWAFV2API)(nil).GetPermissionPolicy), arg0)
+}
+
+// GetPermissionPolicyRequest mocks base method
+func (m *MockWAFV2API) GetPermissionPolicyRequest(arg0 *wafv2.GetPermissionPolicyInput) (*request.Request, *wafv2.GetPermissionPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPermissionPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wafv2.GetPermissionPolicyOutput)
+	return ret0, ret1
+}
+
+// GetPermissionPolicyRequest indicates an expected call of GetPermissionPolicyRequest
+func (mr *MockWAFV2APIMockRecorder) GetPermissionPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPermissionPolicyRequest", reflect.TypeOf((*MockWAFV2API)(nil).GetPermissionPolicyRequest), arg0)
+}
+
+// GetPermissionPolicyWithContext mocks base method
+func (m *MockWAFV2API) GetPermissionPolicyWithContext(arg0 context.Context, arg1 *wafv2.GetPermissionPolicyInput, arg2 ...request.Option) (*wafv2.GetPermissionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPermissionPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*wafv2.GetPermissionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPermissionPolicyWithContext indicates an expected call of GetPermissionPolicyWithContext
+func (mr *MockWAFV2APIMockRecorder) GetPermissionPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPermissionPolicyWithContext", reflect.TypeOf((*MockWAFV2API)(nil).GetPermissionPolicyWithContext), varargs...)
 }
 
 // GetRateBasedStatementManagedKeys mocks base method
@@ -1533,6 +1683,56 @@ func (mr *MockWAFV2APIMockRecorder) PutLoggingConfigurationWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLoggingConfigurationWithContext", reflect.TypeOf((*MockWAFV2API)(nil).PutLoggingConfigurationWithContext), varargs...)
+}
+
+// PutPermissionPolicy mocks base method
+func (m *MockWAFV2API) PutPermissionPolicy(arg0 *wafv2.PutPermissionPolicyInput) (*wafv2.PutPermissionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPermissionPolicy", arg0)
+	ret0, _ := ret[0].(*wafv2.PutPermissionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPermissionPolicy indicates an expected call of PutPermissionPolicy
+func (mr *MockWAFV2APIMockRecorder) PutPermissionPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPermissionPolicy", reflect.TypeOf((*MockWAFV2API)(nil).PutPermissionPolicy), arg0)
+}
+
+// PutPermissionPolicyRequest mocks base method
+func (m *MockWAFV2API) PutPermissionPolicyRequest(arg0 *wafv2.PutPermissionPolicyInput) (*request.Request, *wafv2.PutPermissionPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPermissionPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wafv2.PutPermissionPolicyOutput)
+	return ret0, ret1
+}
+
+// PutPermissionPolicyRequest indicates an expected call of PutPermissionPolicyRequest
+func (mr *MockWAFV2APIMockRecorder) PutPermissionPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPermissionPolicyRequest", reflect.TypeOf((*MockWAFV2API)(nil).PutPermissionPolicyRequest), arg0)
+}
+
+// PutPermissionPolicyWithContext mocks base method
+func (m *MockWAFV2API) PutPermissionPolicyWithContext(arg0 context.Context, arg1 *wafv2.PutPermissionPolicyInput, arg2 ...request.Option) (*wafv2.PutPermissionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutPermissionPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*wafv2.PutPermissionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPermissionPolicyWithContext indicates an expected call of PutPermissionPolicyWithContext
+func (mr *MockWAFV2APIMockRecorder) PutPermissionPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPermissionPolicyWithContext", reflect.TypeOf((*MockWAFV2API)(nil).PutPermissionPolicyWithContext), varargs...)
 }
 
 // TagResource mocks base method
