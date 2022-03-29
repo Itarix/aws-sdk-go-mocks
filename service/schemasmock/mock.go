@@ -635,6 +635,56 @@ func (mr *MockSchemasAPIMockRecorder) DescribeSchemaWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSchemaWithContext", reflect.TypeOf((*MockSchemasAPI)(nil).DescribeSchemaWithContext), varargs...)
 }
 
+// ExportSchema mocks base method
+func (m *MockSchemasAPI) ExportSchema(arg0 *schemas.ExportSchemaInput) (*schemas.ExportSchemaOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportSchema", arg0)
+	ret0, _ := ret[0].(*schemas.ExportSchemaOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportSchema indicates an expected call of ExportSchema
+func (mr *MockSchemasAPIMockRecorder) ExportSchema(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportSchema", reflect.TypeOf((*MockSchemasAPI)(nil).ExportSchema), arg0)
+}
+
+// ExportSchemaRequest mocks base method
+func (m *MockSchemasAPI) ExportSchemaRequest(arg0 *schemas.ExportSchemaInput) (*request.Request, *schemas.ExportSchemaOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportSchemaRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*schemas.ExportSchemaOutput)
+	return ret0, ret1
+}
+
+// ExportSchemaRequest indicates an expected call of ExportSchemaRequest
+func (mr *MockSchemasAPIMockRecorder) ExportSchemaRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportSchemaRequest", reflect.TypeOf((*MockSchemasAPI)(nil).ExportSchemaRequest), arg0)
+}
+
+// ExportSchemaWithContext mocks base method
+func (m *MockSchemasAPI) ExportSchemaWithContext(arg0 context.Context, arg1 *schemas.ExportSchemaInput, arg2 ...request.Option) (*schemas.ExportSchemaOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExportSchemaWithContext", varargs...)
+	ret0, _ := ret[0].(*schemas.ExportSchemaOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportSchemaWithContext indicates an expected call of ExportSchemaWithContext
+func (mr *MockSchemasAPIMockRecorder) ExportSchemaWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportSchemaWithContext", reflect.TypeOf((*MockSchemasAPI)(nil).ExportSchemaWithContext), varargs...)
+}
+
 // GetCodeBindingSource mocks base method
 func (m *MockSchemasAPI) GetCodeBindingSource(arg0 *schemas.GetCodeBindingSourceInput) (*schemas.GetCodeBindingSourceOutput, error) {
 	m.ctrl.T.Helper()
