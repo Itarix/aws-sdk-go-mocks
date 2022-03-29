@@ -185,6 +185,56 @@ func (mr *MockHealthLakeAPIMockRecorder) DescribeFHIRDatastoreWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFHIRDatastoreWithContext", reflect.TypeOf((*MockHealthLakeAPI)(nil).DescribeFHIRDatastoreWithContext), varargs...)
 }
 
+// DescribeFHIRExportJob mocks base method
+func (m *MockHealthLakeAPI) DescribeFHIRExportJob(arg0 *healthlake.DescribeFHIRExportJobInput) (*healthlake.DescribeFHIRExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFHIRExportJob", arg0)
+	ret0, _ := ret[0].(*healthlake.DescribeFHIRExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFHIRExportJob indicates an expected call of DescribeFHIRExportJob
+func (mr *MockHealthLakeAPIMockRecorder) DescribeFHIRExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFHIRExportJob", reflect.TypeOf((*MockHealthLakeAPI)(nil).DescribeFHIRExportJob), arg0)
+}
+
+// DescribeFHIRExportJobRequest mocks base method
+func (m *MockHealthLakeAPI) DescribeFHIRExportJobRequest(arg0 *healthlake.DescribeFHIRExportJobInput) (*request.Request, *healthlake.DescribeFHIRExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFHIRExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*healthlake.DescribeFHIRExportJobOutput)
+	return ret0, ret1
+}
+
+// DescribeFHIRExportJobRequest indicates an expected call of DescribeFHIRExportJobRequest
+func (mr *MockHealthLakeAPIMockRecorder) DescribeFHIRExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFHIRExportJobRequest", reflect.TypeOf((*MockHealthLakeAPI)(nil).DescribeFHIRExportJobRequest), arg0)
+}
+
+// DescribeFHIRExportJobWithContext mocks base method
+func (m *MockHealthLakeAPI) DescribeFHIRExportJobWithContext(arg0 context.Context, arg1 *healthlake.DescribeFHIRExportJobInput, arg2 ...request.Option) (*healthlake.DescribeFHIRExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFHIRExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*healthlake.DescribeFHIRExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFHIRExportJobWithContext indicates an expected call of DescribeFHIRExportJobWithContext
+func (mr *MockHealthLakeAPIMockRecorder) DescribeFHIRExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFHIRExportJobWithContext", reflect.TypeOf((*MockHealthLakeAPI)(nil).DescribeFHIRExportJobWithContext), varargs...)
+}
+
 // DescribeFHIRImportJob mocks base method
 func (m *MockHealthLakeAPI) DescribeFHIRImportJob(arg0 *healthlake.DescribeFHIRImportJobInput) (*healthlake.DescribeFHIRImportJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -316,6 +366,56 @@ func (mr *MockHealthLakeAPIMockRecorder) ListFHIRDatastoresWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFHIRDatastoresWithContext", reflect.TypeOf((*MockHealthLakeAPI)(nil).ListFHIRDatastoresWithContext), varargs...)
+}
+
+// StartFHIRExportJob mocks base method
+func (m *MockHealthLakeAPI) StartFHIRExportJob(arg0 *healthlake.StartFHIRExportJobInput) (*healthlake.StartFHIRExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartFHIRExportJob", arg0)
+	ret0, _ := ret[0].(*healthlake.StartFHIRExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartFHIRExportJob indicates an expected call of StartFHIRExportJob
+func (mr *MockHealthLakeAPIMockRecorder) StartFHIRExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartFHIRExportJob", reflect.TypeOf((*MockHealthLakeAPI)(nil).StartFHIRExportJob), arg0)
+}
+
+// StartFHIRExportJobRequest mocks base method
+func (m *MockHealthLakeAPI) StartFHIRExportJobRequest(arg0 *healthlake.StartFHIRExportJobInput) (*request.Request, *healthlake.StartFHIRExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartFHIRExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*healthlake.StartFHIRExportJobOutput)
+	return ret0, ret1
+}
+
+// StartFHIRExportJobRequest indicates an expected call of StartFHIRExportJobRequest
+func (mr *MockHealthLakeAPIMockRecorder) StartFHIRExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartFHIRExportJobRequest", reflect.TypeOf((*MockHealthLakeAPI)(nil).StartFHIRExportJobRequest), arg0)
+}
+
+// StartFHIRExportJobWithContext mocks base method
+func (m *MockHealthLakeAPI) StartFHIRExportJobWithContext(arg0 context.Context, arg1 *healthlake.StartFHIRExportJobInput, arg2 ...request.Option) (*healthlake.StartFHIRExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartFHIRExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*healthlake.StartFHIRExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartFHIRExportJobWithContext indicates an expected call of StartFHIRExportJobWithContext
+func (mr *MockHealthLakeAPIMockRecorder) StartFHIRExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartFHIRExportJobWithContext", reflect.TypeOf((*MockHealthLakeAPI)(nil).StartFHIRExportJobWithContext), varargs...)
 }
 
 // StartFHIRImportJob mocks base method
