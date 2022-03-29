@@ -535,6 +535,56 @@ func (mr *MockCodePipelineAPIMockRecorder) EnableStageTransitionWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableStageTransitionWithContext", reflect.TypeOf((*MockCodePipelineAPI)(nil).EnableStageTransitionWithContext), varargs...)
 }
 
+// GetActionType mocks base method
+func (m *MockCodePipelineAPI) GetActionType(arg0 *codepipeline.GetActionTypeInput) (*codepipeline.GetActionTypeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetActionType", arg0)
+	ret0, _ := ret[0].(*codepipeline.GetActionTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetActionType indicates an expected call of GetActionType
+func (mr *MockCodePipelineAPIMockRecorder) GetActionType(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetActionType", reflect.TypeOf((*MockCodePipelineAPI)(nil).GetActionType), arg0)
+}
+
+// GetActionTypeRequest mocks base method
+func (m *MockCodePipelineAPI) GetActionTypeRequest(arg0 *codepipeline.GetActionTypeInput) (*request.Request, *codepipeline.GetActionTypeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetActionTypeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codepipeline.GetActionTypeOutput)
+	return ret0, ret1
+}
+
+// GetActionTypeRequest indicates an expected call of GetActionTypeRequest
+func (mr *MockCodePipelineAPIMockRecorder) GetActionTypeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetActionTypeRequest", reflect.TypeOf((*MockCodePipelineAPI)(nil).GetActionTypeRequest), arg0)
+}
+
+// GetActionTypeWithContext mocks base method
+func (m *MockCodePipelineAPI) GetActionTypeWithContext(arg0 context.Context, arg1 *codepipeline.GetActionTypeInput, arg2 ...request.Option) (*codepipeline.GetActionTypeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetActionTypeWithContext", varargs...)
+	ret0, _ := ret[0].(*codepipeline.GetActionTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetActionTypeWithContext indicates an expected call of GetActionTypeWithContext
+func (mr *MockCodePipelineAPIMockRecorder) GetActionTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetActionTypeWithContext", reflect.TypeOf((*MockCodePipelineAPI)(nil).GetActionTypeWithContext), varargs...)
+}
+
 // GetJobDetails mocks base method
 func (m *MockCodePipelineAPI) GetJobDetails(arg0 *codepipeline.GetJobDetailsInput) (*codepipeline.GetJobDetailsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2031,6 +2081,56 @@ func (mr *MockCodePipelineAPIMockRecorder) UntagResourceWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockCodePipelineAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateActionType mocks base method
+func (m *MockCodePipelineAPI) UpdateActionType(arg0 *codepipeline.UpdateActionTypeInput) (*codepipeline.UpdateActionTypeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateActionType", arg0)
+	ret0, _ := ret[0].(*codepipeline.UpdateActionTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateActionType indicates an expected call of UpdateActionType
+func (mr *MockCodePipelineAPIMockRecorder) UpdateActionType(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateActionType", reflect.TypeOf((*MockCodePipelineAPI)(nil).UpdateActionType), arg0)
+}
+
+// UpdateActionTypeRequest mocks base method
+func (m *MockCodePipelineAPI) UpdateActionTypeRequest(arg0 *codepipeline.UpdateActionTypeInput) (*request.Request, *codepipeline.UpdateActionTypeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateActionTypeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codepipeline.UpdateActionTypeOutput)
+	return ret0, ret1
+}
+
+// UpdateActionTypeRequest indicates an expected call of UpdateActionTypeRequest
+func (mr *MockCodePipelineAPIMockRecorder) UpdateActionTypeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateActionTypeRequest", reflect.TypeOf((*MockCodePipelineAPI)(nil).UpdateActionTypeRequest), arg0)
+}
+
+// UpdateActionTypeWithContext mocks base method
+func (m *MockCodePipelineAPI) UpdateActionTypeWithContext(arg0 context.Context, arg1 *codepipeline.UpdateActionTypeInput, arg2 ...request.Option) (*codepipeline.UpdateActionTypeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateActionTypeWithContext", varargs...)
+	ret0, _ := ret[0].(*codepipeline.UpdateActionTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateActionTypeWithContext indicates an expected call of UpdateActionTypeWithContext
+func (mr *MockCodePipelineAPIMockRecorder) UpdateActionTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateActionTypeWithContext", reflect.TypeOf((*MockCodePipelineAPI)(nil).UpdateActionTypeWithContext), varargs...)
 }
 
 // UpdatePipeline mocks base method

@@ -968,6 +968,56 @@ func (mr *MockMacie2APIMockRecorder) DisableOrganizationAdminAccountWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableOrganizationAdminAccountWithContext", reflect.TypeOf((*MockMacie2API)(nil).DisableOrganizationAdminAccountWithContext), varargs...)
 }
 
+// DisassociateFromAdministratorAccount mocks base method
+func (m *MockMacie2API) DisassociateFromAdministratorAccount(arg0 *macie2.DisassociateFromAdministratorAccountInput) (*macie2.DisassociateFromAdministratorAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFromAdministratorAccount", arg0)
+	ret0, _ := ret[0].(*macie2.DisassociateFromAdministratorAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFromAdministratorAccount indicates an expected call of DisassociateFromAdministratorAccount
+func (mr *MockMacie2APIMockRecorder) DisassociateFromAdministratorAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFromAdministratorAccount", reflect.TypeOf((*MockMacie2API)(nil).DisassociateFromAdministratorAccount), arg0)
+}
+
+// DisassociateFromAdministratorAccountRequest mocks base method
+func (m *MockMacie2API) DisassociateFromAdministratorAccountRequest(arg0 *macie2.DisassociateFromAdministratorAccountInput) (*request.Request, *macie2.DisassociateFromAdministratorAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFromAdministratorAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*macie2.DisassociateFromAdministratorAccountOutput)
+	return ret0, ret1
+}
+
+// DisassociateFromAdministratorAccountRequest indicates an expected call of DisassociateFromAdministratorAccountRequest
+func (mr *MockMacie2APIMockRecorder) DisassociateFromAdministratorAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFromAdministratorAccountRequest", reflect.TypeOf((*MockMacie2API)(nil).DisassociateFromAdministratorAccountRequest), arg0)
+}
+
+// DisassociateFromAdministratorAccountWithContext mocks base method
+func (m *MockMacie2API) DisassociateFromAdministratorAccountWithContext(arg0 context.Context, arg1 *macie2.DisassociateFromAdministratorAccountInput, arg2 ...request.Option) (*macie2.DisassociateFromAdministratorAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateFromAdministratorAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*macie2.DisassociateFromAdministratorAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFromAdministratorAccountWithContext indicates an expected call of DisassociateFromAdministratorAccountWithContext
+func (mr *MockMacie2APIMockRecorder) DisassociateFromAdministratorAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFromAdministratorAccountWithContext", reflect.TypeOf((*MockMacie2API)(nil).DisassociateFromAdministratorAccountWithContext), varargs...)
+}
+
 // DisassociateFromMasterAccount mocks base method
 func (m *MockMacie2API) DisassociateFromMasterAccount(arg0 *macie2.DisassociateFromMasterAccountInput) (*macie2.DisassociateFromMasterAccountOutput, error) {
 	m.ctrl.T.Helper()
@@ -1166,6 +1216,56 @@ func (mr *MockMacie2APIMockRecorder) EnableOrganizationAdminAccountWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableOrganizationAdminAccountWithContext", reflect.TypeOf((*MockMacie2API)(nil).EnableOrganizationAdminAccountWithContext), varargs...)
+}
+
+// GetAdministratorAccount mocks base method
+func (m *MockMacie2API) GetAdministratorAccount(arg0 *macie2.GetAdministratorAccountInput) (*macie2.GetAdministratorAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAdministratorAccount", arg0)
+	ret0, _ := ret[0].(*macie2.GetAdministratorAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAdministratorAccount indicates an expected call of GetAdministratorAccount
+func (mr *MockMacie2APIMockRecorder) GetAdministratorAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdministratorAccount", reflect.TypeOf((*MockMacie2API)(nil).GetAdministratorAccount), arg0)
+}
+
+// GetAdministratorAccountRequest mocks base method
+func (m *MockMacie2API) GetAdministratorAccountRequest(arg0 *macie2.GetAdministratorAccountInput) (*request.Request, *macie2.GetAdministratorAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAdministratorAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*macie2.GetAdministratorAccountOutput)
+	return ret0, ret1
+}
+
+// GetAdministratorAccountRequest indicates an expected call of GetAdministratorAccountRequest
+func (mr *MockMacie2APIMockRecorder) GetAdministratorAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdministratorAccountRequest", reflect.TypeOf((*MockMacie2API)(nil).GetAdministratorAccountRequest), arg0)
+}
+
+// GetAdministratorAccountWithContext mocks base method
+func (m *MockMacie2API) GetAdministratorAccountWithContext(arg0 context.Context, arg1 *macie2.GetAdministratorAccountInput, arg2 ...request.Option) (*macie2.GetAdministratorAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAdministratorAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*macie2.GetAdministratorAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAdministratorAccountWithContext indicates an expected call of GetAdministratorAccountWithContext
+func (mr *MockMacie2APIMockRecorder) GetAdministratorAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdministratorAccountWithContext", reflect.TypeOf((*MockMacie2API)(nil).GetAdministratorAccountWithContext), varargs...)
 }
 
 // GetBucketStatistics mocks base method
