@@ -3830,6 +3830,39 @@ func (mr *MockQuickSightAPIMockRecorder) ListThemeVersions(arg0 interface{}) *go
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThemeVersions", reflect.TypeOf((*MockQuickSightAPI)(nil).ListThemeVersions), arg0)
 }
 
+// ListThemeVersionsPages mocks base method
+func (m *MockQuickSightAPI) ListThemeVersionsPages(arg0 *quicksight.ListThemeVersionsInput, arg1 func(*quicksight.ListThemeVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListThemeVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListThemeVersionsPages indicates an expected call of ListThemeVersionsPages
+func (mr *MockQuickSightAPIMockRecorder) ListThemeVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThemeVersionsPages", reflect.TypeOf((*MockQuickSightAPI)(nil).ListThemeVersionsPages), arg0, arg1)
+}
+
+// ListThemeVersionsPagesWithContext mocks base method
+func (m *MockQuickSightAPI) ListThemeVersionsPagesWithContext(arg0 context.Context, arg1 *quicksight.ListThemeVersionsInput, arg2 func(*quicksight.ListThemeVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListThemeVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListThemeVersionsPagesWithContext indicates an expected call of ListThemeVersionsPagesWithContext
+func (mr *MockQuickSightAPIMockRecorder) ListThemeVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThemeVersionsPagesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).ListThemeVersionsPagesWithContext), varargs...)
+}
+
 // ListThemeVersionsRequest mocks base method
 func (m *MockQuickSightAPI) ListThemeVersionsRequest(arg0 *quicksight.ListThemeVersionsInput) (*request.Request, *quicksight.ListThemeVersionsOutput) {
 	m.ctrl.T.Helper()
@@ -3878,6 +3911,39 @@ func (m *MockQuickSightAPI) ListThemes(arg0 *quicksight.ListThemesInput) (*quick
 func (mr *MockQuickSightAPIMockRecorder) ListThemes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThemes", reflect.TypeOf((*MockQuickSightAPI)(nil).ListThemes), arg0)
+}
+
+// ListThemesPages mocks base method
+func (m *MockQuickSightAPI) ListThemesPages(arg0 *quicksight.ListThemesInput, arg1 func(*quicksight.ListThemesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListThemesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListThemesPages indicates an expected call of ListThemesPages
+func (mr *MockQuickSightAPIMockRecorder) ListThemesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThemesPages", reflect.TypeOf((*MockQuickSightAPI)(nil).ListThemesPages), arg0, arg1)
+}
+
+// ListThemesPagesWithContext mocks base method
+func (m *MockQuickSightAPI) ListThemesPagesWithContext(arg0 context.Context, arg1 *quicksight.ListThemesInput, arg2 func(*quicksight.ListThemesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListThemesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListThemesPagesWithContext indicates an expected call of ListThemesPagesWithContext
+func (mr *MockQuickSightAPIMockRecorder) ListThemesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThemesPagesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).ListThemesPagesWithContext), varargs...)
 }
 
 // ListThemesRequest mocks base method
