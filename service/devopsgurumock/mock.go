@@ -235,6 +235,56 @@ func (mr *MockDevOpsGuruAPIMockRecorder) DescribeAnomalyWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnomalyWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeAnomalyWithContext), varargs...)
 }
 
+// DescribeFeedback mocks base method
+func (m *MockDevOpsGuruAPI) DescribeFeedback(arg0 *devopsguru.DescribeFeedbackInput) (*devopsguru.DescribeFeedbackOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFeedback", arg0)
+	ret0, _ := ret[0].(*devopsguru.DescribeFeedbackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFeedback indicates an expected call of DescribeFeedback
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeFeedback(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFeedback", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeFeedback), arg0)
+}
+
+// DescribeFeedbackRequest mocks base method
+func (m *MockDevOpsGuruAPI) DescribeFeedbackRequest(arg0 *devopsguru.DescribeFeedbackInput) (*request.Request, *devopsguru.DescribeFeedbackOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFeedbackRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devopsguru.DescribeFeedbackOutput)
+	return ret0, ret1
+}
+
+// DescribeFeedbackRequest indicates an expected call of DescribeFeedbackRequest
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeFeedbackRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFeedbackRequest", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeFeedbackRequest), arg0)
+}
+
+// DescribeFeedbackWithContext mocks base method
+func (m *MockDevOpsGuruAPI) DescribeFeedbackWithContext(arg0 context.Context, arg1 *devopsguru.DescribeFeedbackInput, arg2 ...request.Option) (*devopsguru.DescribeFeedbackOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFeedbackWithContext", varargs...)
+	ret0, _ := ret[0].(*devopsguru.DescribeFeedbackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFeedbackWithContext indicates an expected call of DescribeFeedbackWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeFeedbackWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFeedbackWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeFeedbackWithContext), varargs...)
+}
+
 // DescribeInsight mocks base method
 func (m *MockDevOpsGuruAPI) DescribeInsight(arg0 *devopsguru.DescribeInsightInput) (*devopsguru.DescribeInsightOutput, error) {
 	m.ctrl.T.Helper()
