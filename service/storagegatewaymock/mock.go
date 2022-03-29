@@ -1515,6 +1515,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeBandwidthRateLimitRequest(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBandwidthRateLimitRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeBandwidthRateLimitRequest), arg0)
 }
 
+// DescribeBandwidthRateLimitSchedule mocks base method
+func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimitSchedule(arg0 *storagegateway.DescribeBandwidthRateLimitScheduleInput) (*storagegateway.DescribeBandwidthRateLimitScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBandwidthRateLimitSchedule", arg0)
+	ret0, _ := ret[0].(*storagegateway.DescribeBandwidthRateLimitScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBandwidthRateLimitSchedule indicates an expected call of DescribeBandwidthRateLimitSchedule
+func (mr *MockStorageGatewayAPIMockRecorder) DescribeBandwidthRateLimitSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBandwidthRateLimitSchedule", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeBandwidthRateLimitSchedule), arg0)
+}
+
+// DescribeBandwidthRateLimitScheduleRequest mocks base method
+func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimitScheduleRequest(arg0 *storagegateway.DescribeBandwidthRateLimitScheduleInput) (*request.Request, *storagegateway.DescribeBandwidthRateLimitScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBandwidthRateLimitScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.DescribeBandwidthRateLimitScheduleOutput)
+	return ret0, ret1
+}
+
+// DescribeBandwidthRateLimitScheduleRequest indicates an expected call of DescribeBandwidthRateLimitScheduleRequest
+func (mr *MockStorageGatewayAPIMockRecorder) DescribeBandwidthRateLimitScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBandwidthRateLimitScheduleRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeBandwidthRateLimitScheduleRequest), arg0)
+}
+
+// DescribeBandwidthRateLimitScheduleWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimitScheduleWithContext(arg0 context.Context, arg1 *storagegateway.DescribeBandwidthRateLimitScheduleInput, arg2 ...request.Option) (*storagegateway.DescribeBandwidthRateLimitScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeBandwidthRateLimitScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.DescribeBandwidthRateLimitScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBandwidthRateLimitScheduleWithContext indicates an expected call of DescribeBandwidthRateLimitScheduleWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) DescribeBandwidthRateLimitScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBandwidthRateLimitScheduleWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeBandwidthRateLimitScheduleWithContext), varargs...)
+}
+
 // DescribeBandwidthRateLimitWithContext mocks base method
 func (m *MockStorageGatewayAPI) DescribeBandwidthRateLimitWithContext(arg0 context.Context, arg1 *storagegateway.DescribeBandwidthRateLimitInput, arg2 ...request.Option) (*storagegateway.DescribeBandwidthRateLimitOutput, error) {
 	m.ctrl.T.Helper()
@@ -2981,6 +3031,39 @@ func (mr *MockStorageGatewayAPIMockRecorder) ListTapePools(arg0 interface{}) *go
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapePools", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapePools), arg0)
 }
 
+// ListTapePoolsPages mocks base method
+func (m *MockStorageGatewayAPI) ListTapePoolsPages(arg0 *storagegateway.ListTapePoolsInput, arg1 func(*storagegateway.ListTapePoolsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTapePoolsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTapePoolsPages indicates an expected call of ListTapePoolsPages
+func (mr *MockStorageGatewayAPIMockRecorder) ListTapePoolsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapePoolsPages", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapePoolsPages), arg0, arg1)
+}
+
+// ListTapePoolsPagesWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListTapePoolsPagesWithContext(arg0 context.Context, arg1 *storagegateway.ListTapePoolsInput, arg2 func(*storagegateway.ListTapePoolsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTapePoolsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTapePoolsPagesWithContext indicates an expected call of ListTapePoolsPagesWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) ListTapePoolsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTapePoolsPagesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListTapePoolsPagesWithContext), varargs...)
+}
+
 // ListTapePoolsRequest mocks base method
 func (m *MockStorageGatewayAPI) ListTapePoolsRequest(arg0 *storagegateway.ListTapePoolsInput) (*request.Request, *storagegateway.ListTapePoolsOutput) {
 	m.ctrl.T.Helper()
@@ -3910,6 +3993,56 @@ func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimitRequest(arg0 *storagegat
 func (mr *MockStorageGatewayAPIMockRecorder) UpdateBandwidthRateLimitRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBandwidthRateLimitRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateBandwidthRateLimitRequest), arg0)
+}
+
+// UpdateBandwidthRateLimitSchedule mocks base method
+func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimitSchedule(arg0 *storagegateway.UpdateBandwidthRateLimitScheduleInput) (*storagegateway.UpdateBandwidthRateLimitScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBandwidthRateLimitSchedule", arg0)
+	ret0, _ := ret[0].(*storagegateway.UpdateBandwidthRateLimitScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBandwidthRateLimitSchedule indicates an expected call of UpdateBandwidthRateLimitSchedule
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateBandwidthRateLimitSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBandwidthRateLimitSchedule", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateBandwidthRateLimitSchedule), arg0)
+}
+
+// UpdateBandwidthRateLimitScheduleRequest mocks base method
+func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimitScheduleRequest(arg0 *storagegateway.UpdateBandwidthRateLimitScheduleInput) (*request.Request, *storagegateway.UpdateBandwidthRateLimitScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBandwidthRateLimitScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.UpdateBandwidthRateLimitScheduleOutput)
+	return ret0, ret1
+}
+
+// UpdateBandwidthRateLimitScheduleRequest indicates an expected call of UpdateBandwidthRateLimitScheduleRequest
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateBandwidthRateLimitScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBandwidthRateLimitScheduleRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateBandwidthRateLimitScheduleRequest), arg0)
+}
+
+// UpdateBandwidthRateLimitScheduleWithContext mocks base method
+func (m *MockStorageGatewayAPI) UpdateBandwidthRateLimitScheduleWithContext(arg0 context.Context, arg1 *storagegateway.UpdateBandwidthRateLimitScheduleInput, arg2 ...request.Option) (*storagegateway.UpdateBandwidthRateLimitScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateBandwidthRateLimitScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.UpdateBandwidthRateLimitScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBandwidthRateLimitScheduleWithContext indicates an expected call of UpdateBandwidthRateLimitScheduleWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateBandwidthRateLimitScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBandwidthRateLimitScheduleWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateBandwidthRateLimitScheduleWithContext), varargs...)
 }
 
 // UpdateBandwidthRateLimitWithContext mocks base method

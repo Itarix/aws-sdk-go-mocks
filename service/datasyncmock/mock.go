@@ -1715,6 +1715,56 @@ func (mr *MockDataSyncAPIMockRecorder) UpdateTask(arg0 interface{}) *gomock.Call
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTask", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateTask), arg0)
 }
 
+// UpdateTaskExecution mocks base method
+func (m *MockDataSyncAPI) UpdateTaskExecution(arg0 *datasync.UpdateTaskExecutionInput) (*datasync.UpdateTaskExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTaskExecution", arg0)
+	ret0, _ := ret[0].(*datasync.UpdateTaskExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTaskExecution indicates an expected call of UpdateTaskExecution
+func (mr *MockDataSyncAPIMockRecorder) UpdateTaskExecution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTaskExecution", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateTaskExecution), arg0)
+}
+
+// UpdateTaskExecutionRequest mocks base method
+func (m *MockDataSyncAPI) UpdateTaskExecutionRequest(arg0 *datasync.UpdateTaskExecutionInput) (*request.Request, *datasync.UpdateTaskExecutionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTaskExecutionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.UpdateTaskExecutionOutput)
+	return ret0, ret1
+}
+
+// UpdateTaskExecutionRequest indicates an expected call of UpdateTaskExecutionRequest
+func (mr *MockDataSyncAPIMockRecorder) UpdateTaskExecutionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTaskExecutionRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateTaskExecutionRequest), arg0)
+}
+
+// UpdateTaskExecutionWithContext mocks base method
+func (m *MockDataSyncAPI) UpdateTaskExecutionWithContext(arg0 context.Context, arg1 *datasync.UpdateTaskExecutionInput, arg2 ...request.Option) (*datasync.UpdateTaskExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateTaskExecutionWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.UpdateTaskExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTaskExecutionWithContext indicates an expected call of UpdateTaskExecutionWithContext
+func (mr *MockDataSyncAPIMockRecorder) UpdateTaskExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTaskExecutionWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateTaskExecutionWithContext), varargs...)
+}
+
 // UpdateTaskRequest mocks base method
 func (m *MockDataSyncAPI) UpdateTaskRequest(arg0 *datasync.UpdateTaskInput) (*request.Request, *datasync.UpdateTaskOutput) {
 	m.ctrl.T.Helper()

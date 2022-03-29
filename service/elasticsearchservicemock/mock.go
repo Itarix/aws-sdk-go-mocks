@@ -1350,6 +1350,89 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) GetCompatibleElasticsearchVer
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCompatibleElasticsearchVersionsWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetCompatibleElasticsearchVersionsWithContext), varargs...)
 }
 
+// GetPackageVersionHistory mocks base method
+func (m *MockElasticsearchServiceAPI) GetPackageVersionHistory(arg0 *elasticsearchservice.GetPackageVersionHistoryInput) (*elasticsearchservice.GetPackageVersionHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPackageVersionHistory", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.GetPackageVersionHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPackageVersionHistory indicates an expected call of GetPackageVersionHistory
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetPackageVersionHistory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPackageVersionHistory", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetPackageVersionHistory), arg0)
+}
+
+// GetPackageVersionHistoryPages mocks base method
+func (m *MockElasticsearchServiceAPI) GetPackageVersionHistoryPages(arg0 *elasticsearchservice.GetPackageVersionHistoryInput, arg1 func(*elasticsearchservice.GetPackageVersionHistoryOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPackageVersionHistoryPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetPackageVersionHistoryPages indicates an expected call of GetPackageVersionHistoryPages
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetPackageVersionHistoryPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPackageVersionHistoryPages", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetPackageVersionHistoryPages), arg0, arg1)
+}
+
+// GetPackageVersionHistoryPagesWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) GetPackageVersionHistoryPagesWithContext(arg0 context.Context, arg1 *elasticsearchservice.GetPackageVersionHistoryInput, arg2 func(*elasticsearchservice.GetPackageVersionHistoryOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPackageVersionHistoryPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetPackageVersionHistoryPagesWithContext indicates an expected call of GetPackageVersionHistoryPagesWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetPackageVersionHistoryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPackageVersionHistoryPagesWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetPackageVersionHistoryPagesWithContext), varargs...)
+}
+
+// GetPackageVersionHistoryRequest mocks base method
+func (m *MockElasticsearchServiceAPI) GetPackageVersionHistoryRequest(arg0 *elasticsearchservice.GetPackageVersionHistoryInput) (*request.Request, *elasticsearchservice.GetPackageVersionHistoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPackageVersionHistoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.GetPackageVersionHistoryOutput)
+	return ret0, ret1
+}
+
+// GetPackageVersionHistoryRequest indicates an expected call of GetPackageVersionHistoryRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetPackageVersionHistoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPackageVersionHistoryRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetPackageVersionHistoryRequest), arg0)
+}
+
+// GetPackageVersionHistoryWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) GetPackageVersionHistoryWithContext(arg0 context.Context, arg1 *elasticsearchservice.GetPackageVersionHistoryInput, arg2 ...request.Option) (*elasticsearchservice.GetPackageVersionHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPackageVersionHistoryWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.GetPackageVersionHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPackageVersionHistoryWithContext indicates an expected call of GetPackageVersionHistoryWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) GetPackageVersionHistoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPackageVersionHistoryWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).GetPackageVersionHistoryWithContext), varargs...)
+}
+
 // GetUpgradeHistory mocks base method
 func (m *MockElasticsearchServiceAPI) GetUpgradeHistory(arg0 *elasticsearchservice.GetUpgradeHistoryInput) (*elasticsearchservice.GetUpgradeHistoryOutput, error) {
 	m.ctrl.T.Helper()
@@ -2163,6 +2246,56 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) UpdateElasticsearchDomainConf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateElasticsearchDomainConfigWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).UpdateElasticsearchDomainConfigWithContext), varargs...)
+}
+
+// UpdatePackage mocks base method
+func (m *MockElasticsearchServiceAPI) UpdatePackage(arg0 *elasticsearchservice.UpdatePackageInput) (*elasticsearchservice.UpdatePackageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePackage", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.UpdatePackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePackage indicates an expected call of UpdatePackage
+func (mr *MockElasticsearchServiceAPIMockRecorder) UpdatePackage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePackage", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).UpdatePackage), arg0)
+}
+
+// UpdatePackageRequest mocks base method
+func (m *MockElasticsearchServiceAPI) UpdatePackageRequest(arg0 *elasticsearchservice.UpdatePackageInput) (*request.Request, *elasticsearchservice.UpdatePackageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePackageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.UpdatePackageOutput)
+	return ret0, ret1
+}
+
+// UpdatePackageRequest indicates an expected call of UpdatePackageRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) UpdatePackageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePackageRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).UpdatePackageRequest), arg0)
+}
+
+// UpdatePackageWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) UpdatePackageWithContext(arg0 context.Context, arg1 *elasticsearchservice.UpdatePackageInput, arg2 ...request.Option) (*elasticsearchservice.UpdatePackageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdatePackageWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.UpdatePackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePackageWithContext indicates an expected call of UpdatePackageWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) UpdatePackageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePackageWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).UpdatePackageWithContext), varargs...)
 }
 
 // UpgradeElasticsearchDomain mocks base method

@@ -35,6 +35,56 @@ func (m *MockFSxAPI) EXPECT() *MockFSxAPIMockRecorder {
 	return m.recorder
 }
 
+// AssociateFileSystemAliases mocks base method
+func (m *MockFSxAPI) AssociateFileSystemAliases(arg0 *fsx.AssociateFileSystemAliasesInput) (*fsx.AssociateFileSystemAliasesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateFileSystemAliases", arg0)
+	ret0, _ := ret[0].(*fsx.AssociateFileSystemAliasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateFileSystemAliases indicates an expected call of AssociateFileSystemAliases
+func (mr *MockFSxAPIMockRecorder) AssociateFileSystemAliases(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFileSystemAliases", reflect.TypeOf((*MockFSxAPI)(nil).AssociateFileSystemAliases), arg0)
+}
+
+// AssociateFileSystemAliasesRequest mocks base method
+func (m *MockFSxAPI) AssociateFileSystemAliasesRequest(arg0 *fsx.AssociateFileSystemAliasesInput) (*request.Request, *fsx.AssociateFileSystemAliasesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateFileSystemAliasesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.AssociateFileSystemAliasesOutput)
+	return ret0, ret1
+}
+
+// AssociateFileSystemAliasesRequest indicates an expected call of AssociateFileSystemAliasesRequest
+func (mr *MockFSxAPIMockRecorder) AssociateFileSystemAliasesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFileSystemAliasesRequest", reflect.TypeOf((*MockFSxAPI)(nil).AssociateFileSystemAliasesRequest), arg0)
+}
+
+// AssociateFileSystemAliasesWithContext mocks base method
+func (m *MockFSxAPI) AssociateFileSystemAliasesWithContext(arg0 context.Context, arg1 *fsx.AssociateFileSystemAliasesInput, arg2 ...request.Option) (*fsx.AssociateFileSystemAliasesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateFileSystemAliasesWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.AssociateFileSystemAliasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateFileSystemAliasesWithContext indicates an expected call of AssociateFileSystemAliasesWithContext
+func (mr *MockFSxAPIMockRecorder) AssociateFileSystemAliasesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFileSystemAliasesWithContext", reflect.TypeOf((*MockFSxAPI)(nil).AssociateFileSystemAliasesWithContext), varargs...)
+}
+
 // CancelDataRepositoryTask mocks base method
 func (m *MockFSxAPI) CancelDataRepositoryTask(arg0 *fsx.CancelDataRepositoryTaskInput) (*fsx.CancelDataRepositoryTaskOutput, error) {
 	m.ctrl.T.Helper()
@@ -551,6 +601,89 @@ func (mr *MockFSxAPIMockRecorder) DescribeDataRepositoryTasksWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataRepositoryTasksWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DescribeDataRepositoryTasksWithContext), varargs...)
 }
 
+// DescribeFileSystemAliases mocks base method
+func (m *MockFSxAPI) DescribeFileSystemAliases(arg0 *fsx.DescribeFileSystemAliasesInput) (*fsx.DescribeFileSystemAliasesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFileSystemAliases", arg0)
+	ret0, _ := ret[0].(*fsx.DescribeFileSystemAliasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFileSystemAliases indicates an expected call of DescribeFileSystemAliases
+func (mr *MockFSxAPIMockRecorder) DescribeFileSystemAliases(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemAliases", reflect.TypeOf((*MockFSxAPI)(nil).DescribeFileSystemAliases), arg0)
+}
+
+// DescribeFileSystemAliasesPages mocks base method
+func (m *MockFSxAPI) DescribeFileSystemAliasesPages(arg0 *fsx.DescribeFileSystemAliasesInput, arg1 func(*fsx.DescribeFileSystemAliasesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFileSystemAliasesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFileSystemAliasesPages indicates an expected call of DescribeFileSystemAliasesPages
+func (mr *MockFSxAPIMockRecorder) DescribeFileSystemAliasesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemAliasesPages", reflect.TypeOf((*MockFSxAPI)(nil).DescribeFileSystemAliasesPages), arg0, arg1)
+}
+
+// DescribeFileSystemAliasesPagesWithContext mocks base method
+func (m *MockFSxAPI) DescribeFileSystemAliasesPagesWithContext(arg0 context.Context, arg1 *fsx.DescribeFileSystemAliasesInput, arg2 func(*fsx.DescribeFileSystemAliasesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFileSystemAliasesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFileSystemAliasesPagesWithContext indicates an expected call of DescribeFileSystemAliasesPagesWithContext
+func (mr *MockFSxAPIMockRecorder) DescribeFileSystemAliasesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemAliasesPagesWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DescribeFileSystemAliasesPagesWithContext), varargs...)
+}
+
+// DescribeFileSystemAliasesRequest mocks base method
+func (m *MockFSxAPI) DescribeFileSystemAliasesRequest(arg0 *fsx.DescribeFileSystemAliasesInput) (*request.Request, *fsx.DescribeFileSystemAliasesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFileSystemAliasesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.DescribeFileSystemAliasesOutput)
+	return ret0, ret1
+}
+
+// DescribeFileSystemAliasesRequest indicates an expected call of DescribeFileSystemAliasesRequest
+func (mr *MockFSxAPIMockRecorder) DescribeFileSystemAliasesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemAliasesRequest", reflect.TypeOf((*MockFSxAPI)(nil).DescribeFileSystemAliasesRequest), arg0)
+}
+
+// DescribeFileSystemAliasesWithContext mocks base method
+func (m *MockFSxAPI) DescribeFileSystemAliasesWithContext(arg0 context.Context, arg1 *fsx.DescribeFileSystemAliasesInput, arg2 ...request.Option) (*fsx.DescribeFileSystemAliasesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFileSystemAliasesWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.DescribeFileSystemAliasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFileSystemAliasesWithContext indicates an expected call of DescribeFileSystemAliasesWithContext
+func (mr *MockFSxAPIMockRecorder) DescribeFileSystemAliasesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemAliasesWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DescribeFileSystemAliasesWithContext), varargs...)
+}
+
 // DescribeFileSystems mocks base method
 func (m *MockFSxAPI) DescribeFileSystems(arg0 *fsx.DescribeFileSystemsInput) (*fsx.DescribeFileSystemsOutput, error) {
 	m.ctrl.T.Helper()
@@ -632,6 +765,56 @@ func (mr *MockFSxAPIMockRecorder) DescribeFileSystemsWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemsWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DescribeFileSystemsWithContext), varargs...)
+}
+
+// DisassociateFileSystemAliases mocks base method
+func (m *MockFSxAPI) DisassociateFileSystemAliases(arg0 *fsx.DisassociateFileSystemAliasesInput) (*fsx.DisassociateFileSystemAliasesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFileSystemAliases", arg0)
+	ret0, _ := ret[0].(*fsx.DisassociateFileSystemAliasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFileSystemAliases indicates an expected call of DisassociateFileSystemAliases
+func (mr *MockFSxAPIMockRecorder) DisassociateFileSystemAliases(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFileSystemAliases", reflect.TypeOf((*MockFSxAPI)(nil).DisassociateFileSystemAliases), arg0)
+}
+
+// DisassociateFileSystemAliasesRequest mocks base method
+func (m *MockFSxAPI) DisassociateFileSystemAliasesRequest(arg0 *fsx.DisassociateFileSystemAliasesInput) (*request.Request, *fsx.DisassociateFileSystemAliasesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFileSystemAliasesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.DisassociateFileSystemAliasesOutput)
+	return ret0, ret1
+}
+
+// DisassociateFileSystemAliasesRequest indicates an expected call of DisassociateFileSystemAliasesRequest
+func (mr *MockFSxAPIMockRecorder) DisassociateFileSystemAliasesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFileSystemAliasesRequest", reflect.TypeOf((*MockFSxAPI)(nil).DisassociateFileSystemAliasesRequest), arg0)
+}
+
+// DisassociateFileSystemAliasesWithContext mocks base method
+func (m *MockFSxAPI) DisassociateFileSystemAliasesWithContext(arg0 context.Context, arg1 *fsx.DisassociateFileSystemAliasesInput, arg2 ...request.Option) (*fsx.DisassociateFileSystemAliasesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateFileSystemAliasesWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.DisassociateFileSystemAliasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFileSystemAliasesWithContext indicates an expected call of DisassociateFileSystemAliasesWithContext
+func (mr *MockFSxAPIMockRecorder) DisassociateFileSystemAliasesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFileSystemAliasesWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DisassociateFileSystemAliasesWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
