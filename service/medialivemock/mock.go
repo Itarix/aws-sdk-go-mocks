@@ -35,6 +35,156 @@ func (m *MockMediaLiveAPI) EXPECT() *MockMediaLiveAPIMockRecorder {
 	return m.recorder
 }
 
+// BatchDelete mocks base method
+func (m *MockMediaLiveAPI) BatchDelete(arg0 *medialive.BatchDeleteInput) (*medialive.BatchDeleteOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDelete", arg0)
+	ret0, _ := ret[0].(*medialive.BatchDeleteOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDelete indicates an expected call of BatchDelete
+func (mr *MockMediaLiveAPIMockRecorder) BatchDelete(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDelete", reflect.TypeOf((*MockMediaLiveAPI)(nil).BatchDelete), arg0)
+}
+
+// BatchDeleteRequest mocks base method
+func (m *MockMediaLiveAPI) BatchDeleteRequest(arg0 *medialive.BatchDeleteInput) (*request.Request, *medialive.BatchDeleteOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.BatchDeleteOutput)
+	return ret0, ret1
+}
+
+// BatchDeleteRequest indicates an expected call of BatchDeleteRequest
+func (mr *MockMediaLiveAPIMockRecorder) BatchDeleteRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).BatchDeleteRequest), arg0)
+}
+
+// BatchDeleteWithContext mocks base method
+func (m *MockMediaLiveAPI) BatchDeleteWithContext(arg0 context.Context, arg1 *medialive.BatchDeleteInput, arg2 ...request.Option) (*medialive.BatchDeleteOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDeleteWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.BatchDeleteOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteWithContext indicates an expected call of BatchDeleteWithContext
+func (mr *MockMediaLiveAPIMockRecorder) BatchDeleteWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).BatchDeleteWithContext), varargs...)
+}
+
+// BatchStart mocks base method
+func (m *MockMediaLiveAPI) BatchStart(arg0 *medialive.BatchStartInput) (*medialive.BatchStartOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchStart", arg0)
+	ret0, _ := ret[0].(*medialive.BatchStartOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchStart indicates an expected call of BatchStart
+func (mr *MockMediaLiveAPIMockRecorder) BatchStart(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchStart", reflect.TypeOf((*MockMediaLiveAPI)(nil).BatchStart), arg0)
+}
+
+// BatchStartRequest mocks base method
+func (m *MockMediaLiveAPI) BatchStartRequest(arg0 *medialive.BatchStartInput) (*request.Request, *medialive.BatchStartOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchStartRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.BatchStartOutput)
+	return ret0, ret1
+}
+
+// BatchStartRequest indicates an expected call of BatchStartRequest
+func (mr *MockMediaLiveAPIMockRecorder) BatchStartRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchStartRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).BatchStartRequest), arg0)
+}
+
+// BatchStartWithContext mocks base method
+func (m *MockMediaLiveAPI) BatchStartWithContext(arg0 context.Context, arg1 *medialive.BatchStartInput, arg2 ...request.Option) (*medialive.BatchStartOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchStartWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.BatchStartOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchStartWithContext indicates an expected call of BatchStartWithContext
+func (mr *MockMediaLiveAPIMockRecorder) BatchStartWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchStartWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).BatchStartWithContext), varargs...)
+}
+
+// BatchStop mocks base method
+func (m *MockMediaLiveAPI) BatchStop(arg0 *medialive.BatchStopInput) (*medialive.BatchStopOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchStop", arg0)
+	ret0, _ := ret[0].(*medialive.BatchStopOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchStop indicates an expected call of BatchStop
+func (mr *MockMediaLiveAPIMockRecorder) BatchStop(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchStop", reflect.TypeOf((*MockMediaLiveAPI)(nil).BatchStop), arg0)
+}
+
+// BatchStopRequest mocks base method
+func (m *MockMediaLiveAPI) BatchStopRequest(arg0 *medialive.BatchStopInput) (*request.Request, *medialive.BatchStopOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchStopRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.BatchStopOutput)
+	return ret0, ret1
+}
+
+// BatchStopRequest indicates an expected call of BatchStopRequest
+func (mr *MockMediaLiveAPIMockRecorder) BatchStopRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchStopRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).BatchStopRequest), arg0)
+}
+
+// BatchStopWithContext mocks base method
+func (m *MockMediaLiveAPI) BatchStopWithContext(arg0 context.Context, arg1 *medialive.BatchStopInput, arg2 ...request.Option) (*medialive.BatchStopOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchStopWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.BatchStopOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchStopWithContext indicates an expected call of BatchStopWithContext
+func (mr *MockMediaLiveAPIMockRecorder) BatchStopWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchStopWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).BatchStopWithContext), varargs...)
+}
+
 // BatchUpdateSchedule mocks base method
 func (m *MockMediaLiveAPI) BatchUpdateSchedule(arg0 *medialive.BatchUpdateScheduleInput) (*medialive.BatchUpdateScheduleOutput, error) {
 	m.ctrl.T.Helper()
