@@ -3,7 +3,7 @@ module github.com/Itarix/aws-sdk-go-mocks
 go 1.15
 
 require (
-	github.com/aws/aws-sdk-go v1.35.16
+	github.com/aws/aws-sdk-go v1.35.17
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/golang/mock v1.4.4
 	github.com/pmezard/go-difflib v1.0.0 // indirect
