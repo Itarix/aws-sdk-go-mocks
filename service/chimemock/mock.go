@@ -750,6 +750,56 @@ func (mr *MockChimeAPIMockRecorder) CreateMeeting(arg0 interface{}) *gomock.Call
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMeeting", reflect.TypeOf((*MockChimeAPI)(nil).CreateMeeting), arg0)
 }
 
+// CreateMeetingDialOut mocks base method
+func (m *MockChimeAPI) CreateMeetingDialOut(arg0 *chime.CreateMeetingDialOutInput) (*chime.CreateMeetingDialOutOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMeetingDialOut", arg0)
+	ret0, _ := ret[0].(*chime.CreateMeetingDialOutOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMeetingDialOut indicates an expected call of CreateMeetingDialOut
+func (mr *MockChimeAPIMockRecorder) CreateMeetingDialOut(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMeetingDialOut", reflect.TypeOf((*MockChimeAPI)(nil).CreateMeetingDialOut), arg0)
+}
+
+// CreateMeetingDialOutRequest mocks base method
+func (m *MockChimeAPI) CreateMeetingDialOutRequest(arg0 *chime.CreateMeetingDialOutInput) (*request.Request, *chime.CreateMeetingDialOutOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMeetingDialOutRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateMeetingDialOutOutput)
+	return ret0, ret1
+}
+
+// CreateMeetingDialOutRequest indicates an expected call of CreateMeetingDialOutRequest
+func (mr *MockChimeAPIMockRecorder) CreateMeetingDialOutRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMeetingDialOutRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateMeetingDialOutRequest), arg0)
+}
+
+// CreateMeetingDialOutWithContext mocks base method
+func (m *MockChimeAPI) CreateMeetingDialOutWithContext(arg0 context.Context, arg1 *chime.CreateMeetingDialOutInput, arg2 ...request.Option) (*chime.CreateMeetingDialOutOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateMeetingDialOutWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateMeetingDialOutOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMeetingDialOutWithContext indicates an expected call of CreateMeetingDialOutWithContext
+func (mr *MockChimeAPIMockRecorder) CreateMeetingDialOutWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMeetingDialOutWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateMeetingDialOutWithContext), varargs...)
+}
+
 // CreateMeetingRequest mocks base method
 func (m *MockChimeAPI) CreateMeetingRequest(arg0 *chime.CreateMeetingInput) (*request.Request, *chime.CreateMeetingOutput) {
 	m.ctrl.T.Helper()
@@ -1033,6 +1083,156 @@ func (mr *MockChimeAPIMockRecorder) CreateRoomWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoomWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateRoomWithContext), varargs...)
+}
+
+// CreateSipMediaApplication mocks base method
+func (m *MockChimeAPI) CreateSipMediaApplication(arg0 *chime.CreateSipMediaApplicationInput) (*chime.CreateSipMediaApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSipMediaApplication", arg0)
+	ret0, _ := ret[0].(*chime.CreateSipMediaApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSipMediaApplication indicates an expected call of CreateSipMediaApplication
+func (mr *MockChimeAPIMockRecorder) CreateSipMediaApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSipMediaApplication", reflect.TypeOf((*MockChimeAPI)(nil).CreateSipMediaApplication), arg0)
+}
+
+// CreateSipMediaApplicationCall mocks base method
+func (m *MockChimeAPI) CreateSipMediaApplicationCall(arg0 *chime.CreateSipMediaApplicationCallInput) (*chime.CreateSipMediaApplicationCallOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSipMediaApplicationCall", arg0)
+	ret0, _ := ret[0].(*chime.CreateSipMediaApplicationCallOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSipMediaApplicationCall indicates an expected call of CreateSipMediaApplicationCall
+func (mr *MockChimeAPIMockRecorder) CreateSipMediaApplicationCall(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSipMediaApplicationCall", reflect.TypeOf((*MockChimeAPI)(nil).CreateSipMediaApplicationCall), arg0)
+}
+
+// CreateSipMediaApplicationCallRequest mocks base method
+func (m *MockChimeAPI) CreateSipMediaApplicationCallRequest(arg0 *chime.CreateSipMediaApplicationCallInput) (*request.Request, *chime.CreateSipMediaApplicationCallOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSipMediaApplicationCallRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateSipMediaApplicationCallOutput)
+	return ret0, ret1
+}
+
+// CreateSipMediaApplicationCallRequest indicates an expected call of CreateSipMediaApplicationCallRequest
+func (mr *MockChimeAPIMockRecorder) CreateSipMediaApplicationCallRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSipMediaApplicationCallRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateSipMediaApplicationCallRequest), arg0)
+}
+
+// CreateSipMediaApplicationCallWithContext mocks base method
+func (m *MockChimeAPI) CreateSipMediaApplicationCallWithContext(arg0 context.Context, arg1 *chime.CreateSipMediaApplicationCallInput, arg2 ...request.Option) (*chime.CreateSipMediaApplicationCallOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSipMediaApplicationCallWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateSipMediaApplicationCallOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSipMediaApplicationCallWithContext indicates an expected call of CreateSipMediaApplicationCallWithContext
+func (mr *MockChimeAPIMockRecorder) CreateSipMediaApplicationCallWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSipMediaApplicationCallWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateSipMediaApplicationCallWithContext), varargs...)
+}
+
+// CreateSipMediaApplicationRequest mocks base method
+func (m *MockChimeAPI) CreateSipMediaApplicationRequest(arg0 *chime.CreateSipMediaApplicationInput) (*request.Request, *chime.CreateSipMediaApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSipMediaApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateSipMediaApplicationOutput)
+	return ret0, ret1
+}
+
+// CreateSipMediaApplicationRequest indicates an expected call of CreateSipMediaApplicationRequest
+func (mr *MockChimeAPIMockRecorder) CreateSipMediaApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSipMediaApplicationRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateSipMediaApplicationRequest), arg0)
+}
+
+// CreateSipMediaApplicationWithContext mocks base method
+func (m *MockChimeAPI) CreateSipMediaApplicationWithContext(arg0 context.Context, arg1 *chime.CreateSipMediaApplicationInput, arg2 ...request.Option) (*chime.CreateSipMediaApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSipMediaApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateSipMediaApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSipMediaApplicationWithContext indicates an expected call of CreateSipMediaApplicationWithContext
+func (mr *MockChimeAPIMockRecorder) CreateSipMediaApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSipMediaApplicationWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateSipMediaApplicationWithContext), varargs...)
+}
+
+// CreateSipRule mocks base method
+func (m *MockChimeAPI) CreateSipRule(arg0 *chime.CreateSipRuleInput) (*chime.CreateSipRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSipRule", arg0)
+	ret0, _ := ret[0].(*chime.CreateSipRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSipRule indicates an expected call of CreateSipRule
+func (mr *MockChimeAPIMockRecorder) CreateSipRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSipRule", reflect.TypeOf((*MockChimeAPI)(nil).CreateSipRule), arg0)
+}
+
+// CreateSipRuleRequest mocks base method
+func (m *MockChimeAPI) CreateSipRuleRequest(arg0 *chime.CreateSipRuleInput) (*request.Request, *chime.CreateSipRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSipRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateSipRuleOutput)
+	return ret0, ret1
+}
+
+// CreateSipRuleRequest indicates an expected call of CreateSipRuleRequest
+func (mr *MockChimeAPIMockRecorder) CreateSipRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSipRuleRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateSipRuleRequest), arg0)
+}
+
+// CreateSipRuleWithContext mocks base method
+func (m *MockChimeAPI) CreateSipRuleWithContext(arg0 context.Context, arg1 *chime.CreateSipRuleInput, arg2 ...request.Option) (*chime.CreateSipRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSipRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateSipRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSipRuleWithContext indicates an expected call of CreateSipRuleWithContext
+func (mr *MockChimeAPIMockRecorder) CreateSipRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSipRuleWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateSipRuleWithContext), varargs...)
 }
 
 // CreateUser mocks base method
@@ -1583,6 +1783,106 @@ func (mr *MockChimeAPIMockRecorder) DeleteRoomWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoomWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteRoomWithContext), varargs...)
+}
+
+// DeleteSipMediaApplication mocks base method
+func (m *MockChimeAPI) DeleteSipMediaApplication(arg0 *chime.DeleteSipMediaApplicationInput) (*chime.DeleteSipMediaApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSipMediaApplication", arg0)
+	ret0, _ := ret[0].(*chime.DeleteSipMediaApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSipMediaApplication indicates an expected call of DeleteSipMediaApplication
+func (mr *MockChimeAPIMockRecorder) DeleteSipMediaApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSipMediaApplication", reflect.TypeOf((*MockChimeAPI)(nil).DeleteSipMediaApplication), arg0)
+}
+
+// DeleteSipMediaApplicationRequest mocks base method
+func (m *MockChimeAPI) DeleteSipMediaApplicationRequest(arg0 *chime.DeleteSipMediaApplicationInput) (*request.Request, *chime.DeleteSipMediaApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSipMediaApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteSipMediaApplicationOutput)
+	return ret0, ret1
+}
+
+// DeleteSipMediaApplicationRequest indicates an expected call of DeleteSipMediaApplicationRequest
+func (mr *MockChimeAPIMockRecorder) DeleteSipMediaApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSipMediaApplicationRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteSipMediaApplicationRequest), arg0)
+}
+
+// DeleteSipMediaApplicationWithContext mocks base method
+func (m *MockChimeAPI) DeleteSipMediaApplicationWithContext(arg0 context.Context, arg1 *chime.DeleteSipMediaApplicationInput, arg2 ...request.Option) (*chime.DeleteSipMediaApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSipMediaApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteSipMediaApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSipMediaApplicationWithContext indicates an expected call of DeleteSipMediaApplicationWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteSipMediaApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSipMediaApplicationWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteSipMediaApplicationWithContext), varargs...)
+}
+
+// DeleteSipRule mocks base method
+func (m *MockChimeAPI) DeleteSipRule(arg0 *chime.DeleteSipRuleInput) (*chime.DeleteSipRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSipRule", arg0)
+	ret0, _ := ret[0].(*chime.DeleteSipRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSipRule indicates an expected call of DeleteSipRule
+func (mr *MockChimeAPIMockRecorder) DeleteSipRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSipRule", reflect.TypeOf((*MockChimeAPI)(nil).DeleteSipRule), arg0)
+}
+
+// DeleteSipRuleRequest mocks base method
+func (m *MockChimeAPI) DeleteSipRuleRequest(arg0 *chime.DeleteSipRuleInput) (*request.Request, *chime.DeleteSipRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSipRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteSipRuleOutput)
+	return ret0, ret1
+}
+
+// DeleteSipRuleRequest indicates an expected call of DeleteSipRuleRequest
+func (mr *MockChimeAPIMockRecorder) DeleteSipRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSipRuleRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteSipRuleRequest), arg0)
+}
+
+// DeleteSipRuleWithContext mocks base method
+func (m *MockChimeAPI) DeleteSipRuleWithContext(arg0 context.Context, arg1 *chime.DeleteSipRuleInput, arg2 ...request.Option) (*chime.DeleteSipRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSipRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteSipRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSipRuleWithContext indicates an expected call of DeleteSipRuleWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteSipRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSipRuleWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteSipRuleWithContext), varargs...)
 }
 
 // DeleteVoiceConnector mocks base method
@@ -2833,6 +3133,156 @@ func (mr *MockChimeAPIMockRecorder) GetRoomWithContext(arg0, arg1 interface{}, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRoomWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetRoomWithContext), varargs...)
+}
+
+// GetSipMediaApplication mocks base method
+func (m *MockChimeAPI) GetSipMediaApplication(arg0 *chime.GetSipMediaApplicationInput) (*chime.GetSipMediaApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSipMediaApplication", arg0)
+	ret0, _ := ret[0].(*chime.GetSipMediaApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSipMediaApplication indicates an expected call of GetSipMediaApplication
+func (mr *MockChimeAPIMockRecorder) GetSipMediaApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSipMediaApplication", reflect.TypeOf((*MockChimeAPI)(nil).GetSipMediaApplication), arg0)
+}
+
+// GetSipMediaApplicationLoggingConfiguration mocks base method
+func (m *MockChimeAPI) GetSipMediaApplicationLoggingConfiguration(arg0 *chime.GetSipMediaApplicationLoggingConfigurationInput) (*chime.GetSipMediaApplicationLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSipMediaApplicationLoggingConfiguration", arg0)
+	ret0, _ := ret[0].(*chime.GetSipMediaApplicationLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSipMediaApplicationLoggingConfiguration indicates an expected call of GetSipMediaApplicationLoggingConfiguration
+func (mr *MockChimeAPIMockRecorder) GetSipMediaApplicationLoggingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSipMediaApplicationLoggingConfiguration", reflect.TypeOf((*MockChimeAPI)(nil).GetSipMediaApplicationLoggingConfiguration), arg0)
+}
+
+// GetSipMediaApplicationLoggingConfigurationRequest mocks base method
+func (m *MockChimeAPI) GetSipMediaApplicationLoggingConfigurationRequest(arg0 *chime.GetSipMediaApplicationLoggingConfigurationInput) (*request.Request, *chime.GetSipMediaApplicationLoggingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSipMediaApplicationLoggingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.GetSipMediaApplicationLoggingConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetSipMediaApplicationLoggingConfigurationRequest indicates an expected call of GetSipMediaApplicationLoggingConfigurationRequest
+func (mr *MockChimeAPIMockRecorder) GetSipMediaApplicationLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSipMediaApplicationLoggingConfigurationRequest", reflect.TypeOf((*MockChimeAPI)(nil).GetSipMediaApplicationLoggingConfigurationRequest), arg0)
+}
+
+// GetSipMediaApplicationLoggingConfigurationWithContext mocks base method
+func (m *MockChimeAPI) GetSipMediaApplicationLoggingConfigurationWithContext(arg0 context.Context, arg1 *chime.GetSipMediaApplicationLoggingConfigurationInput, arg2 ...request.Option) (*chime.GetSipMediaApplicationLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSipMediaApplicationLoggingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.GetSipMediaApplicationLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSipMediaApplicationLoggingConfigurationWithContext indicates an expected call of GetSipMediaApplicationLoggingConfigurationWithContext
+func (mr *MockChimeAPIMockRecorder) GetSipMediaApplicationLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSipMediaApplicationLoggingConfigurationWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetSipMediaApplicationLoggingConfigurationWithContext), varargs...)
+}
+
+// GetSipMediaApplicationRequest mocks base method
+func (m *MockChimeAPI) GetSipMediaApplicationRequest(arg0 *chime.GetSipMediaApplicationInput) (*request.Request, *chime.GetSipMediaApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSipMediaApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.GetSipMediaApplicationOutput)
+	return ret0, ret1
+}
+
+// GetSipMediaApplicationRequest indicates an expected call of GetSipMediaApplicationRequest
+func (mr *MockChimeAPIMockRecorder) GetSipMediaApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSipMediaApplicationRequest", reflect.TypeOf((*MockChimeAPI)(nil).GetSipMediaApplicationRequest), arg0)
+}
+
+// GetSipMediaApplicationWithContext mocks base method
+func (m *MockChimeAPI) GetSipMediaApplicationWithContext(arg0 context.Context, arg1 *chime.GetSipMediaApplicationInput, arg2 ...request.Option) (*chime.GetSipMediaApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSipMediaApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.GetSipMediaApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSipMediaApplicationWithContext indicates an expected call of GetSipMediaApplicationWithContext
+func (mr *MockChimeAPIMockRecorder) GetSipMediaApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSipMediaApplicationWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetSipMediaApplicationWithContext), varargs...)
+}
+
+// GetSipRule mocks base method
+func (m *MockChimeAPI) GetSipRule(arg0 *chime.GetSipRuleInput) (*chime.GetSipRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSipRule", arg0)
+	ret0, _ := ret[0].(*chime.GetSipRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSipRule indicates an expected call of GetSipRule
+func (mr *MockChimeAPIMockRecorder) GetSipRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSipRule", reflect.TypeOf((*MockChimeAPI)(nil).GetSipRule), arg0)
+}
+
+// GetSipRuleRequest mocks base method
+func (m *MockChimeAPI) GetSipRuleRequest(arg0 *chime.GetSipRuleInput) (*request.Request, *chime.GetSipRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSipRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.GetSipRuleOutput)
+	return ret0, ret1
+}
+
+// GetSipRuleRequest indicates an expected call of GetSipRuleRequest
+func (mr *MockChimeAPIMockRecorder) GetSipRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSipRuleRequest", reflect.TypeOf((*MockChimeAPI)(nil).GetSipRuleRequest), arg0)
+}
+
+// GetSipRuleWithContext mocks base method
+func (m *MockChimeAPI) GetSipRuleWithContext(arg0 context.Context, arg1 *chime.GetSipRuleInput, arg2 ...request.Option) (*chime.GetSipRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSipRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.GetSipRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSipRuleWithContext indicates an expected call of GetSipRuleWithContext
+func (mr *MockChimeAPIMockRecorder) GetSipRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSipRuleWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetSipRuleWithContext), varargs...)
 }
 
 // GetUser mocks base method
@@ -4282,6 +4732,106 @@ func (mr *MockChimeAPIMockRecorder) ListRoomsWithContext(arg0, arg1 interface{},
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoomsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListRoomsWithContext), varargs...)
 }
 
+// ListSipMediaApplications mocks base method
+func (m *MockChimeAPI) ListSipMediaApplications(arg0 *chime.ListSipMediaApplicationsInput) (*chime.ListSipMediaApplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSipMediaApplications", arg0)
+	ret0, _ := ret[0].(*chime.ListSipMediaApplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSipMediaApplications indicates an expected call of ListSipMediaApplications
+func (mr *MockChimeAPIMockRecorder) ListSipMediaApplications(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSipMediaApplications", reflect.TypeOf((*MockChimeAPI)(nil).ListSipMediaApplications), arg0)
+}
+
+// ListSipMediaApplicationsRequest mocks base method
+func (m *MockChimeAPI) ListSipMediaApplicationsRequest(arg0 *chime.ListSipMediaApplicationsInput) (*request.Request, *chime.ListSipMediaApplicationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSipMediaApplicationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListSipMediaApplicationsOutput)
+	return ret0, ret1
+}
+
+// ListSipMediaApplicationsRequest indicates an expected call of ListSipMediaApplicationsRequest
+func (mr *MockChimeAPIMockRecorder) ListSipMediaApplicationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSipMediaApplicationsRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListSipMediaApplicationsRequest), arg0)
+}
+
+// ListSipMediaApplicationsWithContext mocks base method
+func (m *MockChimeAPI) ListSipMediaApplicationsWithContext(arg0 context.Context, arg1 *chime.ListSipMediaApplicationsInput, arg2 ...request.Option) (*chime.ListSipMediaApplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSipMediaApplicationsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListSipMediaApplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSipMediaApplicationsWithContext indicates an expected call of ListSipMediaApplicationsWithContext
+func (mr *MockChimeAPIMockRecorder) ListSipMediaApplicationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSipMediaApplicationsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListSipMediaApplicationsWithContext), varargs...)
+}
+
+// ListSipRules mocks base method
+func (m *MockChimeAPI) ListSipRules(arg0 *chime.ListSipRulesInput) (*chime.ListSipRulesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSipRules", arg0)
+	ret0, _ := ret[0].(*chime.ListSipRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSipRules indicates an expected call of ListSipRules
+func (mr *MockChimeAPIMockRecorder) ListSipRules(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSipRules", reflect.TypeOf((*MockChimeAPI)(nil).ListSipRules), arg0)
+}
+
+// ListSipRulesRequest mocks base method
+func (m *MockChimeAPI) ListSipRulesRequest(arg0 *chime.ListSipRulesInput) (*request.Request, *chime.ListSipRulesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSipRulesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListSipRulesOutput)
+	return ret0, ret1
+}
+
+// ListSipRulesRequest indicates an expected call of ListSipRulesRequest
+func (mr *MockChimeAPIMockRecorder) ListSipRulesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSipRulesRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListSipRulesRequest), arg0)
+}
+
+// ListSipRulesWithContext mocks base method
+func (m *MockChimeAPI) ListSipRulesWithContext(arg0 context.Context, arg1 *chime.ListSipRulesInput, arg2 ...request.Option) (*chime.ListSipRulesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSipRulesWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListSipRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSipRulesWithContext indicates an expected call of ListSipRulesWithContext
+func (mr *MockChimeAPIMockRecorder) ListSipRulesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSipRulesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListSipRulesWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockChimeAPI) ListTagsForResource(arg0 *chime.ListTagsForResourceInput) (*chime.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -4779,6 +5329,56 @@ func (mr *MockChimeAPIMockRecorder) PutRetentionSettingsWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRetentionSettingsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).PutRetentionSettingsWithContext), varargs...)
+}
+
+// PutSipMediaApplicationLoggingConfiguration mocks base method
+func (m *MockChimeAPI) PutSipMediaApplicationLoggingConfiguration(arg0 *chime.PutSipMediaApplicationLoggingConfigurationInput) (*chime.PutSipMediaApplicationLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutSipMediaApplicationLoggingConfiguration", arg0)
+	ret0, _ := ret[0].(*chime.PutSipMediaApplicationLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutSipMediaApplicationLoggingConfiguration indicates an expected call of PutSipMediaApplicationLoggingConfiguration
+func (mr *MockChimeAPIMockRecorder) PutSipMediaApplicationLoggingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSipMediaApplicationLoggingConfiguration", reflect.TypeOf((*MockChimeAPI)(nil).PutSipMediaApplicationLoggingConfiguration), arg0)
+}
+
+// PutSipMediaApplicationLoggingConfigurationRequest mocks base method
+func (m *MockChimeAPI) PutSipMediaApplicationLoggingConfigurationRequest(arg0 *chime.PutSipMediaApplicationLoggingConfigurationInput) (*request.Request, *chime.PutSipMediaApplicationLoggingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutSipMediaApplicationLoggingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.PutSipMediaApplicationLoggingConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutSipMediaApplicationLoggingConfigurationRequest indicates an expected call of PutSipMediaApplicationLoggingConfigurationRequest
+func (mr *MockChimeAPIMockRecorder) PutSipMediaApplicationLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSipMediaApplicationLoggingConfigurationRequest", reflect.TypeOf((*MockChimeAPI)(nil).PutSipMediaApplicationLoggingConfigurationRequest), arg0)
+}
+
+// PutSipMediaApplicationLoggingConfigurationWithContext mocks base method
+func (m *MockChimeAPI) PutSipMediaApplicationLoggingConfigurationWithContext(arg0 context.Context, arg1 *chime.PutSipMediaApplicationLoggingConfigurationInput, arg2 ...request.Option) (*chime.PutSipMediaApplicationLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutSipMediaApplicationLoggingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.PutSipMediaApplicationLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutSipMediaApplicationLoggingConfigurationWithContext indicates an expected call of PutSipMediaApplicationLoggingConfigurationWithContext
+func (mr *MockChimeAPIMockRecorder) PutSipMediaApplicationLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSipMediaApplicationLoggingConfigurationWithContext", reflect.TypeOf((*MockChimeAPI)(nil).PutSipMediaApplicationLoggingConfigurationWithContext), varargs...)
 }
 
 // PutVoiceConnectorEmergencyCallingConfiguration mocks base method
@@ -6179,6 +6779,106 @@ func (mr *MockChimeAPIMockRecorder) UpdateRoomWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoomWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdateRoomWithContext), varargs...)
+}
+
+// UpdateSipMediaApplication mocks base method
+func (m *MockChimeAPI) UpdateSipMediaApplication(arg0 *chime.UpdateSipMediaApplicationInput) (*chime.UpdateSipMediaApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSipMediaApplication", arg0)
+	ret0, _ := ret[0].(*chime.UpdateSipMediaApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSipMediaApplication indicates an expected call of UpdateSipMediaApplication
+func (mr *MockChimeAPIMockRecorder) UpdateSipMediaApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSipMediaApplication", reflect.TypeOf((*MockChimeAPI)(nil).UpdateSipMediaApplication), arg0)
+}
+
+// UpdateSipMediaApplicationRequest mocks base method
+func (m *MockChimeAPI) UpdateSipMediaApplicationRequest(arg0 *chime.UpdateSipMediaApplicationInput) (*request.Request, *chime.UpdateSipMediaApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSipMediaApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.UpdateSipMediaApplicationOutput)
+	return ret0, ret1
+}
+
+// UpdateSipMediaApplicationRequest indicates an expected call of UpdateSipMediaApplicationRequest
+func (mr *MockChimeAPIMockRecorder) UpdateSipMediaApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSipMediaApplicationRequest", reflect.TypeOf((*MockChimeAPI)(nil).UpdateSipMediaApplicationRequest), arg0)
+}
+
+// UpdateSipMediaApplicationWithContext mocks base method
+func (m *MockChimeAPI) UpdateSipMediaApplicationWithContext(arg0 context.Context, arg1 *chime.UpdateSipMediaApplicationInput, arg2 ...request.Option) (*chime.UpdateSipMediaApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSipMediaApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.UpdateSipMediaApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSipMediaApplicationWithContext indicates an expected call of UpdateSipMediaApplicationWithContext
+func (mr *MockChimeAPIMockRecorder) UpdateSipMediaApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSipMediaApplicationWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdateSipMediaApplicationWithContext), varargs...)
+}
+
+// UpdateSipRule mocks base method
+func (m *MockChimeAPI) UpdateSipRule(arg0 *chime.UpdateSipRuleInput) (*chime.UpdateSipRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSipRule", arg0)
+	ret0, _ := ret[0].(*chime.UpdateSipRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSipRule indicates an expected call of UpdateSipRule
+func (mr *MockChimeAPIMockRecorder) UpdateSipRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSipRule", reflect.TypeOf((*MockChimeAPI)(nil).UpdateSipRule), arg0)
+}
+
+// UpdateSipRuleRequest mocks base method
+func (m *MockChimeAPI) UpdateSipRuleRequest(arg0 *chime.UpdateSipRuleInput) (*request.Request, *chime.UpdateSipRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSipRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.UpdateSipRuleOutput)
+	return ret0, ret1
+}
+
+// UpdateSipRuleRequest indicates an expected call of UpdateSipRuleRequest
+func (mr *MockChimeAPIMockRecorder) UpdateSipRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSipRuleRequest", reflect.TypeOf((*MockChimeAPI)(nil).UpdateSipRuleRequest), arg0)
+}
+
+// UpdateSipRuleWithContext mocks base method
+func (m *MockChimeAPI) UpdateSipRuleWithContext(arg0 context.Context, arg1 *chime.UpdateSipRuleInput, arg2 ...request.Option) (*chime.UpdateSipRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSipRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.UpdateSipRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSipRuleWithContext indicates an expected call of UpdateSipRuleWithContext
+func (mr *MockChimeAPIMockRecorder) UpdateSipRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSipRuleWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdateSipRuleWithContext), varargs...)
 }
 
 // UpdateUser mocks base method

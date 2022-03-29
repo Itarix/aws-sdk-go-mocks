@@ -200,6 +200,56 @@ func (mr *MockConnectAPIMockRecorder) CreateUser(arg0 interface{}) *gomock.Call 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUser", reflect.TypeOf((*MockConnectAPI)(nil).CreateUser), arg0)
 }
 
+// CreateUserHierarchyGroup mocks base method
+func (m *MockConnectAPI) CreateUserHierarchyGroup(arg0 *connect.CreateUserHierarchyGroupInput) (*connect.CreateUserHierarchyGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUserHierarchyGroup", arg0)
+	ret0, _ := ret[0].(*connect.CreateUserHierarchyGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUserHierarchyGroup indicates an expected call of CreateUserHierarchyGroup
+func (mr *MockConnectAPIMockRecorder) CreateUserHierarchyGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserHierarchyGroup", reflect.TypeOf((*MockConnectAPI)(nil).CreateUserHierarchyGroup), arg0)
+}
+
+// CreateUserHierarchyGroupRequest mocks base method
+func (m *MockConnectAPI) CreateUserHierarchyGroupRequest(arg0 *connect.CreateUserHierarchyGroupInput) (*request.Request, *connect.CreateUserHierarchyGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUserHierarchyGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.CreateUserHierarchyGroupOutput)
+	return ret0, ret1
+}
+
+// CreateUserHierarchyGroupRequest indicates an expected call of CreateUserHierarchyGroupRequest
+func (mr *MockConnectAPIMockRecorder) CreateUserHierarchyGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserHierarchyGroupRequest", reflect.TypeOf((*MockConnectAPI)(nil).CreateUserHierarchyGroupRequest), arg0)
+}
+
+// CreateUserHierarchyGroupWithContext mocks base method
+func (m *MockConnectAPI) CreateUserHierarchyGroupWithContext(arg0 context.Context, arg1 *connect.CreateUserHierarchyGroupInput, arg2 ...request.Option) (*connect.CreateUserHierarchyGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateUserHierarchyGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.CreateUserHierarchyGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUserHierarchyGroupWithContext indicates an expected call of CreateUserHierarchyGroupWithContext
+func (mr *MockConnectAPIMockRecorder) CreateUserHierarchyGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserHierarchyGroupWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateUserHierarchyGroupWithContext), varargs...)
+}
+
 // CreateUserRequest mocks base method
 func (m *MockConnectAPI) CreateUserRequest(arg0 *connect.CreateUserInput) (*request.Request, *connect.CreateUserOutput) {
 	m.ctrl.T.Helper()
@@ -248,6 +298,56 @@ func (m *MockConnectAPI) DeleteUser(arg0 *connect.DeleteUserInput) (*connect.Del
 func (mr *MockConnectAPIMockRecorder) DeleteUser(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUser", reflect.TypeOf((*MockConnectAPI)(nil).DeleteUser), arg0)
+}
+
+// DeleteUserHierarchyGroup mocks base method
+func (m *MockConnectAPI) DeleteUserHierarchyGroup(arg0 *connect.DeleteUserHierarchyGroupInput) (*connect.DeleteUserHierarchyGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteUserHierarchyGroup", arg0)
+	ret0, _ := ret[0].(*connect.DeleteUserHierarchyGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteUserHierarchyGroup indicates an expected call of DeleteUserHierarchyGroup
+func (mr *MockConnectAPIMockRecorder) DeleteUserHierarchyGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserHierarchyGroup", reflect.TypeOf((*MockConnectAPI)(nil).DeleteUserHierarchyGroup), arg0)
+}
+
+// DeleteUserHierarchyGroupRequest mocks base method
+func (m *MockConnectAPI) DeleteUserHierarchyGroupRequest(arg0 *connect.DeleteUserHierarchyGroupInput) (*request.Request, *connect.DeleteUserHierarchyGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteUserHierarchyGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DeleteUserHierarchyGroupOutput)
+	return ret0, ret1
+}
+
+// DeleteUserHierarchyGroupRequest indicates an expected call of DeleteUserHierarchyGroupRequest
+func (mr *MockConnectAPIMockRecorder) DeleteUserHierarchyGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserHierarchyGroupRequest", reflect.TypeOf((*MockConnectAPI)(nil).DeleteUserHierarchyGroupRequest), arg0)
+}
+
+// DeleteUserHierarchyGroupWithContext mocks base method
+func (m *MockConnectAPI) DeleteUserHierarchyGroupWithContext(arg0 context.Context, arg1 *connect.DeleteUserHierarchyGroupInput, arg2 ...request.Option) (*connect.DeleteUserHierarchyGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteUserHierarchyGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DeleteUserHierarchyGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteUserHierarchyGroupWithContext indicates an expected call of DeleteUserHierarchyGroupWithContext
+func (mr *MockConnectAPIMockRecorder) DeleteUserHierarchyGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserHierarchyGroupWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteUserHierarchyGroupWithContext), varargs...)
 }
 
 // DeleteUserRequest mocks base method
@@ -2546,6 +2646,56 @@ func (mr *MockConnectAPIMockRecorder) UpdateUserHierarchy(arg0 interface{}) *gom
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserHierarchy", reflect.TypeOf((*MockConnectAPI)(nil).UpdateUserHierarchy), arg0)
 }
 
+// UpdateUserHierarchyGroupName mocks base method
+func (m *MockConnectAPI) UpdateUserHierarchyGroupName(arg0 *connect.UpdateUserHierarchyGroupNameInput) (*connect.UpdateUserHierarchyGroupNameOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateUserHierarchyGroupName", arg0)
+	ret0, _ := ret[0].(*connect.UpdateUserHierarchyGroupNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateUserHierarchyGroupName indicates an expected call of UpdateUserHierarchyGroupName
+func (mr *MockConnectAPIMockRecorder) UpdateUserHierarchyGroupName(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserHierarchyGroupName", reflect.TypeOf((*MockConnectAPI)(nil).UpdateUserHierarchyGroupName), arg0)
+}
+
+// UpdateUserHierarchyGroupNameRequest mocks base method
+func (m *MockConnectAPI) UpdateUserHierarchyGroupNameRequest(arg0 *connect.UpdateUserHierarchyGroupNameInput) (*request.Request, *connect.UpdateUserHierarchyGroupNameOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateUserHierarchyGroupNameRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateUserHierarchyGroupNameOutput)
+	return ret0, ret1
+}
+
+// UpdateUserHierarchyGroupNameRequest indicates an expected call of UpdateUserHierarchyGroupNameRequest
+func (mr *MockConnectAPIMockRecorder) UpdateUserHierarchyGroupNameRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserHierarchyGroupNameRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateUserHierarchyGroupNameRequest), arg0)
+}
+
+// UpdateUserHierarchyGroupNameWithContext mocks base method
+func (m *MockConnectAPI) UpdateUserHierarchyGroupNameWithContext(arg0 context.Context, arg1 *connect.UpdateUserHierarchyGroupNameInput, arg2 ...request.Option) (*connect.UpdateUserHierarchyGroupNameOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateUserHierarchyGroupNameWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateUserHierarchyGroupNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateUserHierarchyGroupNameWithContext indicates an expected call of UpdateUserHierarchyGroupNameWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateUserHierarchyGroupNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserHierarchyGroupNameWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateUserHierarchyGroupNameWithContext), varargs...)
+}
+
 // UpdateUserHierarchyRequest mocks base method
 func (m *MockConnectAPI) UpdateUserHierarchyRequest(arg0 *connect.UpdateUserHierarchyInput) (*request.Request, *connect.UpdateUserHierarchyOutput) {
 	m.ctrl.T.Helper()
@@ -2559,6 +2709,56 @@ func (m *MockConnectAPI) UpdateUserHierarchyRequest(arg0 *connect.UpdateUserHier
 func (mr *MockConnectAPIMockRecorder) UpdateUserHierarchyRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserHierarchyRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateUserHierarchyRequest), arg0)
+}
+
+// UpdateUserHierarchyStructure mocks base method
+func (m *MockConnectAPI) UpdateUserHierarchyStructure(arg0 *connect.UpdateUserHierarchyStructureInput) (*connect.UpdateUserHierarchyStructureOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateUserHierarchyStructure", arg0)
+	ret0, _ := ret[0].(*connect.UpdateUserHierarchyStructureOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateUserHierarchyStructure indicates an expected call of UpdateUserHierarchyStructure
+func (mr *MockConnectAPIMockRecorder) UpdateUserHierarchyStructure(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserHierarchyStructure", reflect.TypeOf((*MockConnectAPI)(nil).UpdateUserHierarchyStructure), arg0)
+}
+
+// UpdateUserHierarchyStructureRequest mocks base method
+func (m *MockConnectAPI) UpdateUserHierarchyStructureRequest(arg0 *connect.UpdateUserHierarchyStructureInput) (*request.Request, *connect.UpdateUserHierarchyStructureOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateUserHierarchyStructureRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateUserHierarchyStructureOutput)
+	return ret0, ret1
+}
+
+// UpdateUserHierarchyStructureRequest indicates an expected call of UpdateUserHierarchyStructureRequest
+func (mr *MockConnectAPIMockRecorder) UpdateUserHierarchyStructureRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserHierarchyStructureRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateUserHierarchyStructureRequest), arg0)
+}
+
+// UpdateUserHierarchyStructureWithContext mocks base method
+func (m *MockConnectAPI) UpdateUserHierarchyStructureWithContext(arg0 context.Context, arg1 *connect.UpdateUserHierarchyStructureInput, arg2 ...request.Option) (*connect.UpdateUserHierarchyStructureOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateUserHierarchyStructureWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateUserHierarchyStructureOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateUserHierarchyStructureWithContext indicates an expected call of UpdateUserHierarchyStructureWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateUserHierarchyStructureWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserHierarchyStructureWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateUserHierarchyStructureWithContext), varargs...)
 }
 
 // UpdateUserHierarchyWithContext mocks base method
