@@ -85,6 +85,56 @@ func (mr *MockGameLiftAPIMockRecorder) AcceptMatchWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptMatchWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).AcceptMatchWithContext), varargs...)
 }
 
+// ClaimGameServer mocks base method
+func (m *MockGameLiftAPI) ClaimGameServer(arg0 *gamelift.ClaimGameServerInput) (*gamelift.ClaimGameServerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ClaimGameServer", arg0)
+	ret0, _ := ret[0].(*gamelift.ClaimGameServerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ClaimGameServer indicates an expected call of ClaimGameServer
+func (mr *MockGameLiftAPIMockRecorder) ClaimGameServer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClaimGameServer", reflect.TypeOf((*MockGameLiftAPI)(nil).ClaimGameServer), arg0)
+}
+
+// ClaimGameServerRequest mocks base method
+func (m *MockGameLiftAPI) ClaimGameServerRequest(arg0 *gamelift.ClaimGameServerInput) (*request.Request, *gamelift.ClaimGameServerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ClaimGameServerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.ClaimGameServerOutput)
+	return ret0, ret1
+}
+
+// ClaimGameServerRequest indicates an expected call of ClaimGameServerRequest
+func (mr *MockGameLiftAPIMockRecorder) ClaimGameServerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClaimGameServerRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).ClaimGameServerRequest), arg0)
+}
+
+// ClaimGameServerWithContext mocks base method
+func (m *MockGameLiftAPI) ClaimGameServerWithContext(arg0 context.Context, arg1 *gamelift.ClaimGameServerInput, arg2 ...request.Option) (*gamelift.ClaimGameServerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ClaimGameServerWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.ClaimGameServerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ClaimGameServerWithContext indicates an expected call of ClaimGameServerWithContext
+func (mr *MockGameLiftAPIMockRecorder) ClaimGameServerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClaimGameServerWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).ClaimGameServerWithContext), varargs...)
+}
+
 // CreateAlias mocks base method
 func (m *MockGameLiftAPI) CreateAlias(arg0 *gamelift.CreateAliasInput) (*gamelift.CreateAliasOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,56 @@ func (mr *MockGameLiftAPIMockRecorder) CreateFleetWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFleetWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).CreateFleetWithContext), varargs...)
+}
+
+// CreateGameServerGroup mocks base method
+func (m *MockGameLiftAPI) CreateGameServerGroup(arg0 *gamelift.CreateGameServerGroupInput) (*gamelift.CreateGameServerGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateGameServerGroup", arg0)
+	ret0, _ := ret[0].(*gamelift.CreateGameServerGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateGameServerGroup indicates an expected call of CreateGameServerGroup
+func (mr *MockGameLiftAPIMockRecorder) CreateGameServerGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGameServerGroup", reflect.TypeOf((*MockGameLiftAPI)(nil).CreateGameServerGroup), arg0)
+}
+
+// CreateGameServerGroupRequest mocks base method
+func (m *MockGameLiftAPI) CreateGameServerGroupRequest(arg0 *gamelift.CreateGameServerGroupInput) (*request.Request, *gamelift.CreateGameServerGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateGameServerGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.CreateGameServerGroupOutput)
+	return ret0, ret1
+}
+
+// CreateGameServerGroupRequest indicates an expected call of CreateGameServerGroupRequest
+func (mr *MockGameLiftAPIMockRecorder) CreateGameServerGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGameServerGroupRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).CreateGameServerGroupRequest), arg0)
+}
+
+// CreateGameServerGroupWithContext mocks base method
+func (m *MockGameLiftAPI) CreateGameServerGroupWithContext(arg0 context.Context, arg1 *gamelift.CreateGameServerGroupInput, arg2 ...request.Option) (*gamelift.CreateGameServerGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateGameServerGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.CreateGameServerGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateGameServerGroupWithContext indicates an expected call of CreateGameServerGroupWithContext
+func (mr *MockGameLiftAPIMockRecorder) CreateGameServerGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGameServerGroupWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).CreateGameServerGroupWithContext), varargs...)
 }
 
 // CreateGameSession mocks base method
@@ -835,6 +935,56 @@ func (mr *MockGameLiftAPIMockRecorder) DeleteFleetWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFleetWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DeleteFleetWithContext), varargs...)
 }
 
+// DeleteGameServerGroup mocks base method
+func (m *MockGameLiftAPI) DeleteGameServerGroup(arg0 *gamelift.DeleteGameServerGroupInput) (*gamelift.DeleteGameServerGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteGameServerGroup", arg0)
+	ret0, _ := ret[0].(*gamelift.DeleteGameServerGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteGameServerGroup indicates an expected call of DeleteGameServerGroup
+func (mr *MockGameLiftAPIMockRecorder) DeleteGameServerGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGameServerGroup", reflect.TypeOf((*MockGameLiftAPI)(nil).DeleteGameServerGroup), arg0)
+}
+
+// DeleteGameServerGroupRequest mocks base method
+func (m *MockGameLiftAPI) DeleteGameServerGroupRequest(arg0 *gamelift.DeleteGameServerGroupInput) (*request.Request, *gamelift.DeleteGameServerGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteGameServerGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.DeleteGameServerGroupOutput)
+	return ret0, ret1
+}
+
+// DeleteGameServerGroupRequest indicates an expected call of DeleteGameServerGroupRequest
+func (mr *MockGameLiftAPIMockRecorder) DeleteGameServerGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGameServerGroupRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).DeleteGameServerGroupRequest), arg0)
+}
+
+// DeleteGameServerGroupWithContext mocks base method
+func (m *MockGameLiftAPI) DeleteGameServerGroupWithContext(arg0 context.Context, arg1 *gamelift.DeleteGameServerGroupInput, arg2 ...request.Option) (*gamelift.DeleteGameServerGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteGameServerGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.DeleteGameServerGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteGameServerGroupWithContext indicates an expected call of DeleteGameServerGroupWithContext
+func (mr *MockGameLiftAPIMockRecorder) DeleteGameServerGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGameServerGroupWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DeleteGameServerGroupWithContext), varargs...)
+}
+
 // DeleteGameSessionQueue mocks base method
 func (m *MockGameLiftAPI) DeleteGameSessionQueue(arg0 *gamelift.DeleteGameSessionQueueInput) (*gamelift.DeleteGameSessionQueueOutput, error) {
 	m.ctrl.T.Helper()
@@ -1183,6 +1333,56 @@ func (mr *MockGameLiftAPIMockRecorder) DeleteVpcPeeringConnectionWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcPeeringConnectionWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DeleteVpcPeeringConnectionWithContext), varargs...)
+}
+
+// DeregisterGameServer mocks base method
+func (m *MockGameLiftAPI) DeregisterGameServer(arg0 *gamelift.DeregisterGameServerInput) (*gamelift.DeregisterGameServerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterGameServer", arg0)
+	ret0, _ := ret[0].(*gamelift.DeregisterGameServerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterGameServer indicates an expected call of DeregisterGameServer
+func (mr *MockGameLiftAPIMockRecorder) DeregisterGameServer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterGameServer", reflect.TypeOf((*MockGameLiftAPI)(nil).DeregisterGameServer), arg0)
+}
+
+// DeregisterGameServerRequest mocks base method
+func (m *MockGameLiftAPI) DeregisterGameServerRequest(arg0 *gamelift.DeregisterGameServerInput) (*request.Request, *gamelift.DeregisterGameServerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterGameServerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.DeregisterGameServerOutput)
+	return ret0, ret1
+}
+
+// DeregisterGameServerRequest indicates an expected call of DeregisterGameServerRequest
+func (mr *MockGameLiftAPIMockRecorder) DeregisterGameServerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterGameServerRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).DeregisterGameServerRequest), arg0)
+}
+
+// DeregisterGameServerWithContext mocks base method
+func (m *MockGameLiftAPI) DeregisterGameServerWithContext(arg0 context.Context, arg1 *gamelift.DeregisterGameServerInput, arg2 ...request.Option) (*gamelift.DeregisterGameServerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeregisterGameServerWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.DeregisterGameServerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterGameServerWithContext indicates an expected call of DeregisterGameServerWithContext
+func (mr *MockGameLiftAPIMockRecorder) DeregisterGameServerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterGameServerWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DeregisterGameServerWithContext), varargs...)
 }
 
 // DescribeAlias mocks base method
@@ -1583,6 +1783,106 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeFleetUtilizationWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetUtilizationWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetUtilizationWithContext), varargs...)
+}
+
+// DescribeGameServer mocks base method
+func (m *MockGameLiftAPI) DescribeGameServer(arg0 *gamelift.DescribeGameServerInput) (*gamelift.DescribeGameServerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGameServer", arg0)
+	ret0, _ := ret[0].(*gamelift.DescribeGameServerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGameServer indicates an expected call of DescribeGameServer
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameServer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameServer", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameServer), arg0)
+}
+
+// DescribeGameServerGroup mocks base method
+func (m *MockGameLiftAPI) DescribeGameServerGroup(arg0 *gamelift.DescribeGameServerGroupInput) (*gamelift.DescribeGameServerGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGameServerGroup", arg0)
+	ret0, _ := ret[0].(*gamelift.DescribeGameServerGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGameServerGroup indicates an expected call of DescribeGameServerGroup
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameServerGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameServerGroup", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameServerGroup), arg0)
+}
+
+// DescribeGameServerGroupRequest mocks base method
+func (m *MockGameLiftAPI) DescribeGameServerGroupRequest(arg0 *gamelift.DescribeGameServerGroupInput) (*request.Request, *gamelift.DescribeGameServerGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGameServerGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.DescribeGameServerGroupOutput)
+	return ret0, ret1
+}
+
+// DescribeGameServerGroupRequest indicates an expected call of DescribeGameServerGroupRequest
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameServerGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameServerGroupRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameServerGroupRequest), arg0)
+}
+
+// DescribeGameServerGroupWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeGameServerGroupWithContext(arg0 context.Context, arg1 *gamelift.DescribeGameServerGroupInput, arg2 ...request.Option) (*gamelift.DescribeGameServerGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGameServerGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.DescribeGameServerGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGameServerGroupWithContext indicates an expected call of DescribeGameServerGroupWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameServerGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameServerGroupWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameServerGroupWithContext), varargs...)
+}
+
+// DescribeGameServerRequest mocks base method
+func (m *MockGameLiftAPI) DescribeGameServerRequest(arg0 *gamelift.DescribeGameServerInput) (*request.Request, *gamelift.DescribeGameServerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGameServerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.DescribeGameServerOutput)
+	return ret0, ret1
+}
+
+// DescribeGameServerRequest indicates an expected call of DescribeGameServerRequest
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameServerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameServerRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameServerRequest), arg0)
+}
+
+// DescribeGameServerWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeGameServerWithContext(arg0 context.Context, arg1 *gamelift.DescribeGameServerInput, arg2 ...request.Option) (*gamelift.DescribeGameServerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGameServerWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.DescribeGameServerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGameServerWithContext indicates an expected call of DescribeGameServerWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeGameServerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGameServerWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeGameServerWithContext), varargs...)
 }
 
 // DescribeGameSessionDetails mocks base method
@@ -2535,6 +2835,106 @@ func (mr *MockGameLiftAPIMockRecorder) ListFleetsWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFleetsWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).ListFleetsWithContext), varargs...)
 }
 
+// ListGameServerGroups mocks base method
+func (m *MockGameLiftAPI) ListGameServerGroups(arg0 *gamelift.ListGameServerGroupsInput) (*gamelift.ListGameServerGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGameServerGroups", arg0)
+	ret0, _ := ret[0].(*gamelift.ListGameServerGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListGameServerGroups indicates an expected call of ListGameServerGroups
+func (mr *MockGameLiftAPIMockRecorder) ListGameServerGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGameServerGroups", reflect.TypeOf((*MockGameLiftAPI)(nil).ListGameServerGroups), arg0)
+}
+
+// ListGameServerGroupsRequest mocks base method
+func (m *MockGameLiftAPI) ListGameServerGroupsRequest(arg0 *gamelift.ListGameServerGroupsInput) (*request.Request, *gamelift.ListGameServerGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGameServerGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.ListGameServerGroupsOutput)
+	return ret0, ret1
+}
+
+// ListGameServerGroupsRequest indicates an expected call of ListGameServerGroupsRequest
+func (mr *MockGameLiftAPIMockRecorder) ListGameServerGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGameServerGroupsRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).ListGameServerGroupsRequest), arg0)
+}
+
+// ListGameServerGroupsWithContext mocks base method
+func (m *MockGameLiftAPI) ListGameServerGroupsWithContext(arg0 context.Context, arg1 *gamelift.ListGameServerGroupsInput, arg2 ...request.Option) (*gamelift.ListGameServerGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGameServerGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.ListGameServerGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListGameServerGroupsWithContext indicates an expected call of ListGameServerGroupsWithContext
+func (mr *MockGameLiftAPIMockRecorder) ListGameServerGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGameServerGroupsWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).ListGameServerGroupsWithContext), varargs...)
+}
+
+// ListGameServers mocks base method
+func (m *MockGameLiftAPI) ListGameServers(arg0 *gamelift.ListGameServersInput) (*gamelift.ListGameServersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGameServers", arg0)
+	ret0, _ := ret[0].(*gamelift.ListGameServersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListGameServers indicates an expected call of ListGameServers
+func (mr *MockGameLiftAPIMockRecorder) ListGameServers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGameServers", reflect.TypeOf((*MockGameLiftAPI)(nil).ListGameServers), arg0)
+}
+
+// ListGameServersRequest mocks base method
+func (m *MockGameLiftAPI) ListGameServersRequest(arg0 *gamelift.ListGameServersInput) (*request.Request, *gamelift.ListGameServersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGameServersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.ListGameServersOutput)
+	return ret0, ret1
+}
+
+// ListGameServersRequest indicates an expected call of ListGameServersRequest
+func (mr *MockGameLiftAPIMockRecorder) ListGameServersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGameServersRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).ListGameServersRequest), arg0)
+}
+
+// ListGameServersWithContext mocks base method
+func (m *MockGameLiftAPI) ListGameServersWithContext(arg0 context.Context, arg1 *gamelift.ListGameServersInput, arg2 ...request.Option) (*gamelift.ListGameServersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGameServersWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.ListGameServersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListGameServersWithContext indicates an expected call of ListGameServersWithContext
+func (mr *MockGameLiftAPIMockRecorder) ListGameServersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGameServersWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).ListGameServersWithContext), varargs...)
+}
+
 // ListScripts mocks base method
 func (m *MockGameLiftAPI) ListScripts(arg0 *gamelift.ListScriptsInput) (*gamelift.ListScriptsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2685,6 +3085,56 @@ func (mr *MockGameLiftAPIMockRecorder) PutScalingPolicyWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutScalingPolicyWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).PutScalingPolicyWithContext), varargs...)
 }
 
+// RegisterGameServer mocks base method
+func (m *MockGameLiftAPI) RegisterGameServer(arg0 *gamelift.RegisterGameServerInput) (*gamelift.RegisterGameServerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterGameServer", arg0)
+	ret0, _ := ret[0].(*gamelift.RegisterGameServerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterGameServer indicates an expected call of RegisterGameServer
+func (mr *MockGameLiftAPIMockRecorder) RegisterGameServer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterGameServer", reflect.TypeOf((*MockGameLiftAPI)(nil).RegisterGameServer), arg0)
+}
+
+// RegisterGameServerRequest mocks base method
+func (m *MockGameLiftAPI) RegisterGameServerRequest(arg0 *gamelift.RegisterGameServerInput) (*request.Request, *gamelift.RegisterGameServerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterGameServerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.RegisterGameServerOutput)
+	return ret0, ret1
+}
+
+// RegisterGameServerRequest indicates an expected call of RegisterGameServerRequest
+func (mr *MockGameLiftAPIMockRecorder) RegisterGameServerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterGameServerRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).RegisterGameServerRequest), arg0)
+}
+
+// RegisterGameServerWithContext mocks base method
+func (m *MockGameLiftAPI) RegisterGameServerWithContext(arg0 context.Context, arg1 *gamelift.RegisterGameServerInput, arg2 ...request.Option) (*gamelift.RegisterGameServerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RegisterGameServerWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.RegisterGameServerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterGameServerWithContext indicates an expected call of RegisterGameServerWithContext
+func (mr *MockGameLiftAPIMockRecorder) RegisterGameServerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterGameServerWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).RegisterGameServerWithContext), varargs...)
+}
+
 // RequestUploadCredentials mocks base method
 func (m *MockGameLiftAPI) RequestUploadCredentials(arg0 *gamelift.RequestUploadCredentialsInput) (*gamelift.RequestUploadCredentialsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2783,6 +3233,56 @@ func (mr *MockGameLiftAPIMockRecorder) ResolveAliasWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResolveAliasWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).ResolveAliasWithContext), varargs...)
+}
+
+// ResumeGameServerGroup mocks base method
+func (m *MockGameLiftAPI) ResumeGameServerGroup(arg0 *gamelift.ResumeGameServerGroupInput) (*gamelift.ResumeGameServerGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResumeGameServerGroup", arg0)
+	ret0, _ := ret[0].(*gamelift.ResumeGameServerGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResumeGameServerGroup indicates an expected call of ResumeGameServerGroup
+func (mr *MockGameLiftAPIMockRecorder) ResumeGameServerGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeGameServerGroup", reflect.TypeOf((*MockGameLiftAPI)(nil).ResumeGameServerGroup), arg0)
+}
+
+// ResumeGameServerGroupRequest mocks base method
+func (m *MockGameLiftAPI) ResumeGameServerGroupRequest(arg0 *gamelift.ResumeGameServerGroupInput) (*request.Request, *gamelift.ResumeGameServerGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResumeGameServerGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.ResumeGameServerGroupOutput)
+	return ret0, ret1
+}
+
+// ResumeGameServerGroupRequest indicates an expected call of ResumeGameServerGroupRequest
+func (mr *MockGameLiftAPIMockRecorder) ResumeGameServerGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeGameServerGroupRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).ResumeGameServerGroupRequest), arg0)
+}
+
+// ResumeGameServerGroupWithContext mocks base method
+func (m *MockGameLiftAPI) ResumeGameServerGroupWithContext(arg0 context.Context, arg1 *gamelift.ResumeGameServerGroupInput, arg2 ...request.Option) (*gamelift.ResumeGameServerGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ResumeGameServerGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.ResumeGameServerGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResumeGameServerGroupWithContext indicates an expected call of ResumeGameServerGroupWithContext
+func (mr *MockGameLiftAPIMockRecorder) ResumeGameServerGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeGameServerGroupWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).ResumeGameServerGroupWithContext), varargs...)
 }
 
 // SearchGameSessions mocks base method
@@ -3185,6 +3685,56 @@ func (mr *MockGameLiftAPIMockRecorder) StopMatchmakingWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopMatchmakingWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).StopMatchmakingWithContext), varargs...)
 }
 
+// SuspendGameServerGroup mocks base method
+func (m *MockGameLiftAPI) SuspendGameServerGroup(arg0 *gamelift.SuspendGameServerGroupInput) (*gamelift.SuspendGameServerGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SuspendGameServerGroup", arg0)
+	ret0, _ := ret[0].(*gamelift.SuspendGameServerGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SuspendGameServerGroup indicates an expected call of SuspendGameServerGroup
+func (mr *MockGameLiftAPIMockRecorder) SuspendGameServerGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SuspendGameServerGroup", reflect.TypeOf((*MockGameLiftAPI)(nil).SuspendGameServerGroup), arg0)
+}
+
+// SuspendGameServerGroupRequest mocks base method
+func (m *MockGameLiftAPI) SuspendGameServerGroupRequest(arg0 *gamelift.SuspendGameServerGroupInput) (*request.Request, *gamelift.SuspendGameServerGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SuspendGameServerGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.SuspendGameServerGroupOutput)
+	return ret0, ret1
+}
+
+// SuspendGameServerGroupRequest indicates an expected call of SuspendGameServerGroupRequest
+func (mr *MockGameLiftAPIMockRecorder) SuspendGameServerGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SuspendGameServerGroupRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).SuspendGameServerGroupRequest), arg0)
+}
+
+// SuspendGameServerGroupWithContext mocks base method
+func (m *MockGameLiftAPI) SuspendGameServerGroupWithContext(arg0 context.Context, arg1 *gamelift.SuspendGameServerGroupInput, arg2 ...request.Option) (*gamelift.SuspendGameServerGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SuspendGameServerGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.SuspendGameServerGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SuspendGameServerGroupWithContext indicates an expected call of SuspendGameServerGroupWithContext
+func (mr *MockGameLiftAPIMockRecorder) SuspendGameServerGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SuspendGameServerGroupWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).SuspendGameServerGroupWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockGameLiftAPI) TagResource(arg0 *gamelift.TagResourceInput) (*gamelift.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -3533,6 +4083,106 @@ func (mr *MockGameLiftAPIMockRecorder) UpdateFleetPortSettingsWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFleetPortSettingsWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).UpdateFleetPortSettingsWithContext), varargs...)
+}
+
+// UpdateGameServer mocks base method
+func (m *MockGameLiftAPI) UpdateGameServer(arg0 *gamelift.UpdateGameServerInput) (*gamelift.UpdateGameServerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGameServer", arg0)
+	ret0, _ := ret[0].(*gamelift.UpdateGameServerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGameServer indicates an expected call of UpdateGameServer
+func (mr *MockGameLiftAPIMockRecorder) UpdateGameServer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGameServer", reflect.TypeOf((*MockGameLiftAPI)(nil).UpdateGameServer), arg0)
+}
+
+// UpdateGameServerGroup mocks base method
+func (m *MockGameLiftAPI) UpdateGameServerGroup(arg0 *gamelift.UpdateGameServerGroupInput) (*gamelift.UpdateGameServerGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGameServerGroup", arg0)
+	ret0, _ := ret[0].(*gamelift.UpdateGameServerGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGameServerGroup indicates an expected call of UpdateGameServerGroup
+func (mr *MockGameLiftAPIMockRecorder) UpdateGameServerGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGameServerGroup", reflect.TypeOf((*MockGameLiftAPI)(nil).UpdateGameServerGroup), arg0)
+}
+
+// UpdateGameServerGroupRequest mocks base method
+func (m *MockGameLiftAPI) UpdateGameServerGroupRequest(arg0 *gamelift.UpdateGameServerGroupInput) (*request.Request, *gamelift.UpdateGameServerGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGameServerGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.UpdateGameServerGroupOutput)
+	return ret0, ret1
+}
+
+// UpdateGameServerGroupRequest indicates an expected call of UpdateGameServerGroupRequest
+func (mr *MockGameLiftAPIMockRecorder) UpdateGameServerGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGameServerGroupRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).UpdateGameServerGroupRequest), arg0)
+}
+
+// UpdateGameServerGroupWithContext mocks base method
+func (m *MockGameLiftAPI) UpdateGameServerGroupWithContext(arg0 context.Context, arg1 *gamelift.UpdateGameServerGroupInput, arg2 ...request.Option) (*gamelift.UpdateGameServerGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateGameServerGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.UpdateGameServerGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGameServerGroupWithContext indicates an expected call of UpdateGameServerGroupWithContext
+func (mr *MockGameLiftAPIMockRecorder) UpdateGameServerGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGameServerGroupWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).UpdateGameServerGroupWithContext), varargs...)
+}
+
+// UpdateGameServerRequest mocks base method
+func (m *MockGameLiftAPI) UpdateGameServerRequest(arg0 *gamelift.UpdateGameServerInput) (*request.Request, *gamelift.UpdateGameServerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGameServerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.UpdateGameServerOutput)
+	return ret0, ret1
+}
+
+// UpdateGameServerRequest indicates an expected call of UpdateGameServerRequest
+func (mr *MockGameLiftAPIMockRecorder) UpdateGameServerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGameServerRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).UpdateGameServerRequest), arg0)
+}
+
+// UpdateGameServerWithContext mocks base method
+func (m *MockGameLiftAPI) UpdateGameServerWithContext(arg0 context.Context, arg1 *gamelift.UpdateGameServerInput, arg2 ...request.Option) (*gamelift.UpdateGameServerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateGameServerWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.UpdateGameServerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGameServerWithContext indicates an expected call of UpdateGameServerWithContext
+func (mr *MockGameLiftAPIMockRecorder) UpdateGameServerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGameServerWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).UpdateGameServerWithContext), varargs...)
 }
 
 // UpdateGameSession mocks base method
