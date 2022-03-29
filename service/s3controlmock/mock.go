@@ -85,6 +85,56 @@ func (mr *MockS3ControlAPIMockRecorder) CreateAccessPointWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessPointWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).CreateAccessPointWithContext), varargs...)
 }
 
+// CreateBucket mocks base method
+func (m *MockS3ControlAPI) CreateBucket(arg0 *s3control.CreateBucketInput) (*s3control.CreateBucketOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBucket", arg0)
+	ret0, _ := ret[0].(*s3control.CreateBucketOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBucket indicates an expected call of CreateBucket
+func (mr *MockS3ControlAPIMockRecorder) CreateBucket(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBucket", reflect.TypeOf((*MockS3ControlAPI)(nil).CreateBucket), arg0)
+}
+
+// CreateBucketRequest mocks base method
+func (m *MockS3ControlAPI) CreateBucketRequest(arg0 *s3control.CreateBucketInput) (*request.Request, *s3control.CreateBucketOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBucketRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.CreateBucketOutput)
+	return ret0, ret1
+}
+
+// CreateBucketRequest indicates an expected call of CreateBucketRequest
+func (mr *MockS3ControlAPIMockRecorder) CreateBucketRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBucketRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).CreateBucketRequest), arg0)
+}
+
+// CreateBucketWithContext mocks base method
+func (m *MockS3ControlAPI) CreateBucketWithContext(arg0 context.Context, arg1 *s3control.CreateBucketInput, arg2 ...request.Option) (*s3control.CreateBucketOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateBucketWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.CreateBucketOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBucketWithContext indicates an expected call of CreateBucketWithContext
+func (mr *MockS3ControlAPIMockRecorder) CreateBucketWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBucketWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).CreateBucketWithContext), varargs...)
+}
+
 // CreateJob mocks base method
 func (m *MockS3ControlAPI) CreateJob(arg0 *s3control.CreateJobInput) (*s3control.CreateJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,206 @@ func (mr *MockS3ControlAPIMockRecorder) DeleteAccessPointWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessPointWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteAccessPointWithContext), varargs...)
+}
+
+// DeleteBucket mocks base method
+func (m *MockS3ControlAPI) DeleteBucket(arg0 *s3control.DeleteBucketInput) (*s3control.DeleteBucketOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBucket", arg0)
+	ret0, _ := ret[0].(*s3control.DeleteBucketOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBucket indicates an expected call of DeleteBucket
+func (mr *MockS3ControlAPIMockRecorder) DeleteBucket(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBucket", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteBucket), arg0)
+}
+
+// DeleteBucketLifecycleConfiguration mocks base method
+func (m *MockS3ControlAPI) DeleteBucketLifecycleConfiguration(arg0 *s3control.DeleteBucketLifecycleConfigurationInput) (*s3control.DeleteBucketLifecycleConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBucketLifecycleConfiguration", arg0)
+	ret0, _ := ret[0].(*s3control.DeleteBucketLifecycleConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBucketLifecycleConfiguration indicates an expected call of DeleteBucketLifecycleConfiguration
+func (mr *MockS3ControlAPIMockRecorder) DeleteBucketLifecycleConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBucketLifecycleConfiguration", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteBucketLifecycleConfiguration), arg0)
+}
+
+// DeleteBucketLifecycleConfigurationRequest mocks base method
+func (m *MockS3ControlAPI) DeleteBucketLifecycleConfigurationRequest(arg0 *s3control.DeleteBucketLifecycleConfigurationInput) (*request.Request, *s3control.DeleteBucketLifecycleConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBucketLifecycleConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.DeleteBucketLifecycleConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteBucketLifecycleConfigurationRequest indicates an expected call of DeleteBucketLifecycleConfigurationRequest
+func (mr *MockS3ControlAPIMockRecorder) DeleteBucketLifecycleConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBucketLifecycleConfigurationRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteBucketLifecycleConfigurationRequest), arg0)
+}
+
+// DeleteBucketLifecycleConfigurationWithContext mocks base method
+func (m *MockS3ControlAPI) DeleteBucketLifecycleConfigurationWithContext(arg0 context.Context, arg1 *s3control.DeleteBucketLifecycleConfigurationInput, arg2 ...request.Option) (*s3control.DeleteBucketLifecycleConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteBucketLifecycleConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.DeleteBucketLifecycleConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBucketLifecycleConfigurationWithContext indicates an expected call of DeleteBucketLifecycleConfigurationWithContext
+func (mr *MockS3ControlAPIMockRecorder) DeleteBucketLifecycleConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBucketLifecycleConfigurationWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteBucketLifecycleConfigurationWithContext), varargs...)
+}
+
+// DeleteBucketPolicy mocks base method
+func (m *MockS3ControlAPI) DeleteBucketPolicy(arg0 *s3control.DeleteBucketPolicyInput) (*s3control.DeleteBucketPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBucketPolicy", arg0)
+	ret0, _ := ret[0].(*s3control.DeleteBucketPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBucketPolicy indicates an expected call of DeleteBucketPolicy
+func (mr *MockS3ControlAPIMockRecorder) DeleteBucketPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBucketPolicy", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteBucketPolicy), arg0)
+}
+
+// DeleteBucketPolicyRequest mocks base method
+func (m *MockS3ControlAPI) DeleteBucketPolicyRequest(arg0 *s3control.DeleteBucketPolicyInput) (*request.Request, *s3control.DeleteBucketPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBucketPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.DeleteBucketPolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteBucketPolicyRequest indicates an expected call of DeleteBucketPolicyRequest
+func (mr *MockS3ControlAPIMockRecorder) DeleteBucketPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBucketPolicyRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteBucketPolicyRequest), arg0)
+}
+
+// DeleteBucketPolicyWithContext mocks base method
+func (m *MockS3ControlAPI) DeleteBucketPolicyWithContext(arg0 context.Context, arg1 *s3control.DeleteBucketPolicyInput, arg2 ...request.Option) (*s3control.DeleteBucketPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteBucketPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.DeleteBucketPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBucketPolicyWithContext indicates an expected call of DeleteBucketPolicyWithContext
+func (mr *MockS3ControlAPIMockRecorder) DeleteBucketPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBucketPolicyWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteBucketPolicyWithContext), varargs...)
+}
+
+// DeleteBucketRequest mocks base method
+func (m *MockS3ControlAPI) DeleteBucketRequest(arg0 *s3control.DeleteBucketInput) (*request.Request, *s3control.DeleteBucketOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBucketRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.DeleteBucketOutput)
+	return ret0, ret1
+}
+
+// DeleteBucketRequest indicates an expected call of DeleteBucketRequest
+func (mr *MockS3ControlAPIMockRecorder) DeleteBucketRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBucketRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteBucketRequest), arg0)
+}
+
+// DeleteBucketTagging mocks base method
+func (m *MockS3ControlAPI) DeleteBucketTagging(arg0 *s3control.DeleteBucketTaggingInput) (*s3control.DeleteBucketTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBucketTagging", arg0)
+	ret0, _ := ret[0].(*s3control.DeleteBucketTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBucketTagging indicates an expected call of DeleteBucketTagging
+func (mr *MockS3ControlAPIMockRecorder) DeleteBucketTagging(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBucketTagging", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteBucketTagging), arg0)
+}
+
+// DeleteBucketTaggingRequest mocks base method
+func (m *MockS3ControlAPI) DeleteBucketTaggingRequest(arg0 *s3control.DeleteBucketTaggingInput) (*request.Request, *s3control.DeleteBucketTaggingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBucketTaggingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.DeleteBucketTaggingOutput)
+	return ret0, ret1
+}
+
+// DeleteBucketTaggingRequest indicates an expected call of DeleteBucketTaggingRequest
+func (mr *MockS3ControlAPIMockRecorder) DeleteBucketTaggingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBucketTaggingRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteBucketTaggingRequest), arg0)
+}
+
+// DeleteBucketTaggingWithContext mocks base method
+func (m *MockS3ControlAPI) DeleteBucketTaggingWithContext(arg0 context.Context, arg1 *s3control.DeleteBucketTaggingInput, arg2 ...request.Option) (*s3control.DeleteBucketTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteBucketTaggingWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.DeleteBucketTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBucketTaggingWithContext indicates an expected call of DeleteBucketTaggingWithContext
+func (mr *MockS3ControlAPIMockRecorder) DeleteBucketTaggingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBucketTaggingWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteBucketTaggingWithContext), varargs...)
+}
+
+// DeleteBucketWithContext mocks base method
+func (m *MockS3ControlAPI) DeleteBucketWithContext(arg0 context.Context, arg1 *s3control.DeleteBucketInput, arg2 ...request.Option) (*s3control.DeleteBucketOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteBucketWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.DeleteBucketOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBucketWithContext indicates an expected call of DeleteBucketWithContext
+func (mr *MockS3ControlAPIMockRecorder) DeleteBucketWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBucketWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteBucketWithContext), varargs...)
 }
 
 // DeleteJobTagging mocks base method
@@ -535,6 +785,206 @@ func (mr *MockS3ControlAPIMockRecorder) GetAccessPointWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessPointWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetAccessPointWithContext), varargs...)
 }
 
+// GetBucket mocks base method
+func (m *MockS3ControlAPI) GetBucket(arg0 *s3control.GetBucketInput) (*s3control.GetBucketOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBucket", arg0)
+	ret0, _ := ret[0].(*s3control.GetBucketOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBucket indicates an expected call of GetBucket
+func (mr *MockS3ControlAPIMockRecorder) GetBucket(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucket", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucket), arg0)
+}
+
+// GetBucketLifecycleConfiguration mocks base method
+func (m *MockS3ControlAPI) GetBucketLifecycleConfiguration(arg0 *s3control.GetBucketLifecycleConfigurationInput) (*s3control.GetBucketLifecycleConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBucketLifecycleConfiguration", arg0)
+	ret0, _ := ret[0].(*s3control.GetBucketLifecycleConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBucketLifecycleConfiguration indicates an expected call of GetBucketLifecycleConfiguration
+func (mr *MockS3ControlAPIMockRecorder) GetBucketLifecycleConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketLifecycleConfiguration", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketLifecycleConfiguration), arg0)
+}
+
+// GetBucketLifecycleConfigurationRequest mocks base method
+func (m *MockS3ControlAPI) GetBucketLifecycleConfigurationRequest(arg0 *s3control.GetBucketLifecycleConfigurationInput) (*request.Request, *s3control.GetBucketLifecycleConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBucketLifecycleConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.GetBucketLifecycleConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetBucketLifecycleConfigurationRequest indicates an expected call of GetBucketLifecycleConfigurationRequest
+func (mr *MockS3ControlAPIMockRecorder) GetBucketLifecycleConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketLifecycleConfigurationRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketLifecycleConfigurationRequest), arg0)
+}
+
+// GetBucketLifecycleConfigurationWithContext mocks base method
+func (m *MockS3ControlAPI) GetBucketLifecycleConfigurationWithContext(arg0 context.Context, arg1 *s3control.GetBucketLifecycleConfigurationInput, arg2 ...request.Option) (*s3control.GetBucketLifecycleConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetBucketLifecycleConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.GetBucketLifecycleConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBucketLifecycleConfigurationWithContext indicates an expected call of GetBucketLifecycleConfigurationWithContext
+func (mr *MockS3ControlAPIMockRecorder) GetBucketLifecycleConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketLifecycleConfigurationWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketLifecycleConfigurationWithContext), varargs...)
+}
+
+// GetBucketPolicy mocks base method
+func (m *MockS3ControlAPI) GetBucketPolicy(arg0 *s3control.GetBucketPolicyInput) (*s3control.GetBucketPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBucketPolicy", arg0)
+	ret0, _ := ret[0].(*s3control.GetBucketPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBucketPolicy indicates an expected call of GetBucketPolicy
+func (mr *MockS3ControlAPIMockRecorder) GetBucketPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketPolicy", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketPolicy), arg0)
+}
+
+// GetBucketPolicyRequest mocks base method
+func (m *MockS3ControlAPI) GetBucketPolicyRequest(arg0 *s3control.GetBucketPolicyInput) (*request.Request, *s3control.GetBucketPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBucketPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.GetBucketPolicyOutput)
+	return ret0, ret1
+}
+
+// GetBucketPolicyRequest indicates an expected call of GetBucketPolicyRequest
+func (mr *MockS3ControlAPIMockRecorder) GetBucketPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketPolicyRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketPolicyRequest), arg0)
+}
+
+// GetBucketPolicyWithContext mocks base method
+func (m *MockS3ControlAPI) GetBucketPolicyWithContext(arg0 context.Context, arg1 *s3control.GetBucketPolicyInput, arg2 ...request.Option) (*s3control.GetBucketPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetBucketPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.GetBucketPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBucketPolicyWithContext indicates an expected call of GetBucketPolicyWithContext
+func (mr *MockS3ControlAPIMockRecorder) GetBucketPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketPolicyWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketPolicyWithContext), varargs...)
+}
+
+// GetBucketRequest mocks base method
+func (m *MockS3ControlAPI) GetBucketRequest(arg0 *s3control.GetBucketInput) (*request.Request, *s3control.GetBucketOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBucketRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.GetBucketOutput)
+	return ret0, ret1
+}
+
+// GetBucketRequest indicates an expected call of GetBucketRequest
+func (mr *MockS3ControlAPIMockRecorder) GetBucketRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketRequest), arg0)
+}
+
+// GetBucketTagging mocks base method
+func (m *MockS3ControlAPI) GetBucketTagging(arg0 *s3control.GetBucketTaggingInput) (*s3control.GetBucketTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBucketTagging", arg0)
+	ret0, _ := ret[0].(*s3control.GetBucketTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBucketTagging indicates an expected call of GetBucketTagging
+func (mr *MockS3ControlAPIMockRecorder) GetBucketTagging(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketTagging", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketTagging), arg0)
+}
+
+// GetBucketTaggingRequest mocks base method
+func (m *MockS3ControlAPI) GetBucketTaggingRequest(arg0 *s3control.GetBucketTaggingInput) (*request.Request, *s3control.GetBucketTaggingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBucketTaggingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.GetBucketTaggingOutput)
+	return ret0, ret1
+}
+
+// GetBucketTaggingRequest indicates an expected call of GetBucketTaggingRequest
+func (mr *MockS3ControlAPIMockRecorder) GetBucketTaggingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketTaggingRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketTaggingRequest), arg0)
+}
+
+// GetBucketTaggingWithContext mocks base method
+func (m *MockS3ControlAPI) GetBucketTaggingWithContext(arg0 context.Context, arg1 *s3control.GetBucketTaggingInput, arg2 ...request.Option) (*s3control.GetBucketTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetBucketTaggingWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.GetBucketTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBucketTaggingWithContext indicates an expected call of GetBucketTaggingWithContext
+func (mr *MockS3ControlAPIMockRecorder) GetBucketTaggingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketTaggingWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketTaggingWithContext), varargs...)
+}
+
+// GetBucketWithContext mocks base method
+func (m *MockS3ControlAPI) GetBucketWithContext(arg0 context.Context, arg1 *s3control.GetBucketInput, arg2 ...request.Option) (*s3control.GetBucketOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetBucketWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.GetBucketOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBucketWithContext indicates an expected call of GetBucketWithContext
+func (mr *MockS3ControlAPIMockRecorder) GetBucketWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketWithContext), varargs...)
+}
+
 // GetJobTagging mocks base method
 func (m *MockS3ControlAPI) GetJobTagging(arg0 *s3control.GetJobTaggingInput) (*s3control.GetJobTaggingOutput, error) {
 	m.ctrl.T.Helper()
@@ -801,6 +1251,89 @@ func (mr *MockS3ControlAPIMockRecorder) ListJobsWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).ListJobsWithContext), varargs...)
 }
 
+// ListRegionalBuckets mocks base method
+func (m *MockS3ControlAPI) ListRegionalBuckets(arg0 *s3control.ListRegionalBucketsInput) (*s3control.ListRegionalBucketsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRegionalBuckets", arg0)
+	ret0, _ := ret[0].(*s3control.ListRegionalBucketsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRegionalBuckets indicates an expected call of ListRegionalBuckets
+func (mr *MockS3ControlAPIMockRecorder) ListRegionalBuckets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegionalBuckets", reflect.TypeOf((*MockS3ControlAPI)(nil).ListRegionalBuckets), arg0)
+}
+
+// ListRegionalBucketsPages mocks base method
+func (m *MockS3ControlAPI) ListRegionalBucketsPages(arg0 *s3control.ListRegionalBucketsInput, arg1 func(*s3control.ListRegionalBucketsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRegionalBucketsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRegionalBucketsPages indicates an expected call of ListRegionalBucketsPages
+func (mr *MockS3ControlAPIMockRecorder) ListRegionalBucketsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegionalBucketsPages", reflect.TypeOf((*MockS3ControlAPI)(nil).ListRegionalBucketsPages), arg0, arg1)
+}
+
+// ListRegionalBucketsPagesWithContext mocks base method
+func (m *MockS3ControlAPI) ListRegionalBucketsPagesWithContext(arg0 context.Context, arg1 *s3control.ListRegionalBucketsInput, arg2 func(*s3control.ListRegionalBucketsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRegionalBucketsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRegionalBucketsPagesWithContext indicates an expected call of ListRegionalBucketsPagesWithContext
+func (mr *MockS3ControlAPIMockRecorder) ListRegionalBucketsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegionalBucketsPagesWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).ListRegionalBucketsPagesWithContext), varargs...)
+}
+
+// ListRegionalBucketsRequest mocks base method
+func (m *MockS3ControlAPI) ListRegionalBucketsRequest(arg0 *s3control.ListRegionalBucketsInput) (*request.Request, *s3control.ListRegionalBucketsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRegionalBucketsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.ListRegionalBucketsOutput)
+	return ret0, ret1
+}
+
+// ListRegionalBucketsRequest indicates an expected call of ListRegionalBucketsRequest
+func (mr *MockS3ControlAPIMockRecorder) ListRegionalBucketsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegionalBucketsRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).ListRegionalBucketsRequest), arg0)
+}
+
+// ListRegionalBucketsWithContext mocks base method
+func (m *MockS3ControlAPI) ListRegionalBucketsWithContext(arg0 context.Context, arg1 *s3control.ListRegionalBucketsInput, arg2 ...request.Option) (*s3control.ListRegionalBucketsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRegionalBucketsWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.ListRegionalBucketsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRegionalBucketsWithContext indicates an expected call of ListRegionalBucketsWithContext
+func (mr *MockS3ControlAPIMockRecorder) ListRegionalBucketsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegionalBucketsWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).ListRegionalBucketsWithContext), varargs...)
+}
+
 // PutAccessPointPolicy mocks base method
 func (m *MockS3ControlAPI) PutAccessPointPolicy(arg0 *s3control.PutAccessPointPolicyInput) (*s3control.PutAccessPointPolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -849,6 +1382,156 @@ func (mr *MockS3ControlAPIMockRecorder) PutAccessPointPolicyWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccessPointPolicyWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).PutAccessPointPolicyWithContext), varargs...)
+}
+
+// PutBucketLifecycleConfiguration mocks base method
+func (m *MockS3ControlAPI) PutBucketLifecycleConfiguration(arg0 *s3control.PutBucketLifecycleConfigurationInput) (*s3control.PutBucketLifecycleConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutBucketLifecycleConfiguration", arg0)
+	ret0, _ := ret[0].(*s3control.PutBucketLifecycleConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutBucketLifecycleConfiguration indicates an expected call of PutBucketLifecycleConfiguration
+func (mr *MockS3ControlAPIMockRecorder) PutBucketLifecycleConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBucketLifecycleConfiguration", reflect.TypeOf((*MockS3ControlAPI)(nil).PutBucketLifecycleConfiguration), arg0)
+}
+
+// PutBucketLifecycleConfigurationRequest mocks base method
+func (m *MockS3ControlAPI) PutBucketLifecycleConfigurationRequest(arg0 *s3control.PutBucketLifecycleConfigurationInput) (*request.Request, *s3control.PutBucketLifecycleConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutBucketLifecycleConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.PutBucketLifecycleConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutBucketLifecycleConfigurationRequest indicates an expected call of PutBucketLifecycleConfigurationRequest
+func (mr *MockS3ControlAPIMockRecorder) PutBucketLifecycleConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBucketLifecycleConfigurationRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).PutBucketLifecycleConfigurationRequest), arg0)
+}
+
+// PutBucketLifecycleConfigurationWithContext mocks base method
+func (m *MockS3ControlAPI) PutBucketLifecycleConfigurationWithContext(arg0 context.Context, arg1 *s3control.PutBucketLifecycleConfigurationInput, arg2 ...request.Option) (*s3control.PutBucketLifecycleConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutBucketLifecycleConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.PutBucketLifecycleConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutBucketLifecycleConfigurationWithContext indicates an expected call of PutBucketLifecycleConfigurationWithContext
+func (mr *MockS3ControlAPIMockRecorder) PutBucketLifecycleConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBucketLifecycleConfigurationWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).PutBucketLifecycleConfigurationWithContext), varargs...)
+}
+
+// PutBucketPolicy mocks base method
+func (m *MockS3ControlAPI) PutBucketPolicy(arg0 *s3control.PutBucketPolicyInput) (*s3control.PutBucketPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutBucketPolicy", arg0)
+	ret0, _ := ret[0].(*s3control.PutBucketPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutBucketPolicy indicates an expected call of PutBucketPolicy
+func (mr *MockS3ControlAPIMockRecorder) PutBucketPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBucketPolicy", reflect.TypeOf((*MockS3ControlAPI)(nil).PutBucketPolicy), arg0)
+}
+
+// PutBucketPolicyRequest mocks base method
+func (m *MockS3ControlAPI) PutBucketPolicyRequest(arg0 *s3control.PutBucketPolicyInput) (*request.Request, *s3control.PutBucketPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutBucketPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.PutBucketPolicyOutput)
+	return ret0, ret1
+}
+
+// PutBucketPolicyRequest indicates an expected call of PutBucketPolicyRequest
+func (mr *MockS3ControlAPIMockRecorder) PutBucketPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBucketPolicyRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).PutBucketPolicyRequest), arg0)
+}
+
+// PutBucketPolicyWithContext mocks base method
+func (m *MockS3ControlAPI) PutBucketPolicyWithContext(arg0 context.Context, arg1 *s3control.PutBucketPolicyInput, arg2 ...request.Option) (*s3control.PutBucketPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutBucketPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.PutBucketPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutBucketPolicyWithContext indicates an expected call of PutBucketPolicyWithContext
+func (mr *MockS3ControlAPIMockRecorder) PutBucketPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBucketPolicyWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).PutBucketPolicyWithContext), varargs...)
+}
+
+// PutBucketTagging mocks base method
+func (m *MockS3ControlAPI) PutBucketTagging(arg0 *s3control.PutBucketTaggingInput) (*s3control.PutBucketTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutBucketTagging", arg0)
+	ret0, _ := ret[0].(*s3control.PutBucketTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutBucketTagging indicates an expected call of PutBucketTagging
+func (mr *MockS3ControlAPIMockRecorder) PutBucketTagging(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBucketTagging", reflect.TypeOf((*MockS3ControlAPI)(nil).PutBucketTagging), arg0)
+}
+
+// PutBucketTaggingRequest mocks base method
+func (m *MockS3ControlAPI) PutBucketTaggingRequest(arg0 *s3control.PutBucketTaggingInput) (*request.Request, *s3control.PutBucketTaggingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutBucketTaggingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.PutBucketTaggingOutput)
+	return ret0, ret1
+}
+
+// PutBucketTaggingRequest indicates an expected call of PutBucketTaggingRequest
+func (mr *MockS3ControlAPIMockRecorder) PutBucketTaggingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBucketTaggingRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).PutBucketTaggingRequest), arg0)
+}
+
+// PutBucketTaggingWithContext mocks base method
+func (m *MockS3ControlAPI) PutBucketTaggingWithContext(arg0 context.Context, arg1 *s3control.PutBucketTaggingInput, arg2 ...request.Option) (*s3control.PutBucketTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutBucketTaggingWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.PutBucketTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutBucketTaggingWithContext indicates an expected call of PutBucketTaggingWithContext
+func (mr *MockS3ControlAPIMockRecorder) PutBucketTaggingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBucketTaggingWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).PutBucketTaggingWithContext), varargs...)
 }
 
 // PutJobTagging mocks base method

@@ -335,6 +335,106 @@ func (mr *MockMediaConnectAPIMockRecorder) DescribeFlowWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFlowWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeFlowWithContext), varargs...)
 }
 
+// DescribeOffering mocks base method
+func (m *MockMediaConnectAPI) DescribeOffering(arg0 *mediaconnect.DescribeOfferingInput) (*mediaconnect.DescribeOfferingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOffering", arg0)
+	ret0, _ := ret[0].(*mediaconnect.DescribeOfferingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOffering indicates an expected call of DescribeOffering
+func (mr *MockMediaConnectAPIMockRecorder) DescribeOffering(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOffering", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeOffering), arg0)
+}
+
+// DescribeOfferingRequest mocks base method
+func (m *MockMediaConnectAPI) DescribeOfferingRequest(arg0 *mediaconnect.DescribeOfferingInput) (*request.Request, *mediaconnect.DescribeOfferingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOfferingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.DescribeOfferingOutput)
+	return ret0, ret1
+}
+
+// DescribeOfferingRequest indicates an expected call of DescribeOfferingRequest
+func (mr *MockMediaConnectAPIMockRecorder) DescribeOfferingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOfferingRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeOfferingRequest), arg0)
+}
+
+// DescribeOfferingWithContext mocks base method
+func (m *MockMediaConnectAPI) DescribeOfferingWithContext(arg0 context.Context, arg1 *mediaconnect.DescribeOfferingInput, arg2 ...request.Option) (*mediaconnect.DescribeOfferingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeOfferingWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.DescribeOfferingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOfferingWithContext indicates an expected call of DescribeOfferingWithContext
+func (mr *MockMediaConnectAPIMockRecorder) DescribeOfferingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOfferingWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeOfferingWithContext), varargs...)
+}
+
+// DescribeReservation mocks base method
+func (m *MockMediaConnectAPI) DescribeReservation(arg0 *mediaconnect.DescribeReservationInput) (*mediaconnect.DescribeReservationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReservation", arg0)
+	ret0, _ := ret[0].(*mediaconnect.DescribeReservationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReservation indicates an expected call of DescribeReservation
+func (mr *MockMediaConnectAPIMockRecorder) DescribeReservation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservation", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeReservation), arg0)
+}
+
+// DescribeReservationRequest mocks base method
+func (m *MockMediaConnectAPI) DescribeReservationRequest(arg0 *mediaconnect.DescribeReservationInput) (*request.Request, *mediaconnect.DescribeReservationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReservationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.DescribeReservationOutput)
+	return ret0, ret1
+}
+
+// DescribeReservationRequest indicates an expected call of DescribeReservationRequest
+func (mr *MockMediaConnectAPIMockRecorder) DescribeReservationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservationRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeReservationRequest), arg0)
+}
+
+// DescribeReservationWithContext mocks base method
+func (m *MockMediaConnectAPI) DescribeReservationWithContext(arg0 context.Context, arg1 *mediaconnect.DescribeReservationInput, arg2 ...request.Option) (*mediaconnect.DescribeReservationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReservationWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.DescribeReservationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReservationWithContext indicates an expected call of DescribeReservationWithContext
+func (mr *MockMediaConnectAPIMockRecorder) DescribeReservationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservationWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeReservationWithContext), varargs...)
+}
+
 // GrantFlowEntitlements mocks base method
 func (m *MockMediaConnectAPI) GrantFlowEntitlements(arg0 *mediaconnect.GrantFlowEntitlementsInput) (*mediaconnect.GrantFlowEntitlementsOutput, error) {
 	m.ctrl.T.Helper()
@@ -551,6 +651,172 @@ func (mr *MockMediaConnectAPIMockRecorder) ListFlowsWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowsWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListFlowsWithContext), varargs...)
 }
 
+// ListOfferings mocks base method
+func (m *MockMediaConnectAPI) ListOfferings(arg0 *mediaconnect.ListOfferingsInput) (*mediaconnect.ListOfferingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOfferings", arg0)
+	ret0, _ := ret[0].(*mediaconnect.ListOfferingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOfferings indicates an expected call of ListOfferings
+func (mr *MockMediaConnectAPIMockRecorder) ListOfferings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferings", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListOfferings), arg0)
+}
+
+// ListOfferingsPages mocks base method
+func (m *MockMediaConnectAPI) ListOfferingsPages(arg0 *mediaconnect.ListOfferingsInput, arg1 func(*mediaconnect.ListOfferingsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOfferingsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOfferingsPages indicates an expected call of ListOfferingsPages
+func (mr *MockMediaConnectAPIMockRecorder) ListOfferingsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingsPages", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListOfferingsPages), arg0, arg1)
+}
+
+// ListOfferingsPagesWithContext mocks base method
+func (m *MockMediaConnectAPI) ListOfferingsPagesWithContext(arg0 context.Context, arg1 *mediaconnect.ListOfferingsInput, arg2 func(*mediaconnect.ListOfferingsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOfferingsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOfferingsPagesWithContext indicates an expected call of ListOfferingsPagesWithContext
+func (mr *MockMediaConnectAPIMockRecorder) ListOfferingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingsPagesWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListOfferingsPagesWithContext), varargs...)
+}
+
+// ListOfferingsRequest mocks base method
+func (m *MockMediaConnectAPI) ListOfferingsRequest(arg0 *mediaconnect.ListOfferingsInput) (*request.Request, *mediaconnect.ListOfferingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOfferingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.ListOfferingsOutput)
+	return ret0, ret1
+}
+
+// ListOfferingsRequest indicates an expected call of ListOfferingsRequest
+func (mr *MockMediaConnectAPIMockRecorder) ListOfferingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingsRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListOfferingsRequest), arg0)
+}
+
+// ListOfferingsWithContext mocks base method
+func (m *MockMediaConnectAPI) ListOfferingsWithContext(arg0 context.Context, arg1 *mediaconnect.ListOfferingsInput, arg2 ...request.Option) (*mediaconnect.ListOfferingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOfferingsWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.ListOfferingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOfferingsWithContext indicates an expected call of ListOfferingsWithContext
+func (mr *MockMediaConnectAPIMockRecorder) ListOfferingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOfferingsWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListOfferingsWithContext), varargs...)
+}
+
+// ListReservations mocks base method
+func (m *MockMediaConnectAPI) ListReservations(arg0 *mediaconnect.ListReservationsInput) (*mediaconnect.ListReservationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReservations", arg0)
+	ret0, _ := ret[0].(*mediaconnect.ListReservationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReservations indicates an expected call of ListReservations
+func (mr *MockMediaConnectAPIMockRecorder) ListReservations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReservations", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListReservations), arg0)
+}
+
+// ListReservationsPages mocks base method
+func (m *MockMediaConnectAPI) ListReservationsPages(arg0 *mediaconnect.ListReservationsInput, arg1 func(*mediaconnect.ListReservationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReservationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListReservationsPages indicates an expected call of ListReservationsPages
+func (mr *MockMediaConnectAPIMockRecorder) ListReservationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReservationsPages", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListReservationsPages), arg0, arg1)
+}
+
+// ListReservationsPagesWithContext mocks base method
+func (m *MockMediaConnectAPI) ListReservationsPagesWithContext(arg0 context.Context, arg1 *mediaconnect.ListReservationsInput, arg2 func(*mediaconnect.ListReservationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReservationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListReservationsPagesWithContext indicates an expected call of ListReservationsPagesWithContext
+func (mr *MockMediaConnectAPIMockRecorder) ListReservationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReservationsPagesWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListReservationsPagesWithContext), varargs...)
+}
+
+// ListReservationsRequest mocks base method
+func (m *MockMediaConnectAPI) ListReservationsRequest(arg0 *mediaconnect.ListReservationsInput) (*request.Request, *mediaconnect.ListReservationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReservationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.ListReservationsOutput)
+	return ret0, ret1
+}
+
+// ListReservationsRequest indicates an expected call of ListReservationsRequest
+func (mr *MockMediaConnectAPIMockRecorder) ListReservationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReservationsRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListReservationsRequest), arg0)
+}
+
+// ListReservationsWithContext mocks base method
+func (m *MockMediaConnectAPI) ListReservationsWithContext(arg0 context.Context, arg1 *mediaconnect.ListReservationsInput, arg2 ...request.Option) (*mediaconnect.ListReservationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReservationsWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.ListReservationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReservationsWithContext indicates an expected call of ListReservationsWithContext
+func (mr *MockMediaConnectAPIMockRecorder) ListReservationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReservationsWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListReservationsWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockMediaConnectAPI) ListTagsForResource(arg0 *mediaconnect.ListTagsForResourceInput) (*mediaconnect.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -599,6 +865,56 @@ func (mr *MockMediaConnectAPIMockRecorder) ListTagsForResourceWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// PurchaseOffering mocks base method
+func (m *MockMediaConnectAPI) PurchaseOffering(arg0 *mediaconnect.PurchaseOfferingInput) (*mediaconnect.PurchaseOfferingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PurchaseOffering", arg0)
+	ret0, _ := ret[0].(*mediaconnect.PurchaseOfferingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PurchaseOffering indicates an expected call of PurchaseOffering
+func (mr *MockMediaConnectAPIMockRecorder) PurchaseOffering(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseOffering", reflect.TypeOf((*MockMediaConnectAPI)(nil).PurchaseOffering), arg0)
+}
+
+// PurchaseOfferingRequest mocks base method
+func (m *MockMediaConnectAPI) PurchaseOfferingRequest(arg0 *mediaconnect.PurchaseOfferingInput) (*request.Request, *mediaconnect.PurchaseOfferingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PurchaseOfferingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.PurchaseOfferingOutput)
+	return ret0, ret1
+}
+
+// PurchaseOfferingRequest indicates an expected call of PurchaseOfferingRequest
+func (mr *MockMediaConnectAPIMockRecorder) PurchaseOfferingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseOfferingRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).PurchaseOfferingRequest), arg0)
+}
+
+// PurchaseOfferingWithContext mocks base method
+func (m *MockMediaConnectAPI) PurchaseOfferingWithContext(arg0 context.Context, arg1 *mediaconnect.PurchaseOfferingInput, arg2 ...request.Option) (*mediaconnect.PurchaseOfferingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PurchaseOfferingWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.PurchaseOfferingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PurchaseOfferingWithContext indicates an expected call of PurchaseOfferingWithContext
+func (mr *MockMediaConnectAPIMockRecorder) PurchaseOfferingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseOfferingWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).PurchaseOfferingWithContext), varargs...)
 }
 
 // RemoveFlowOutput mocks base method
