@@ -4212,6 +4212,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBFileShareRequest(arg0 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBFileShareRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBFileShareRequest), arg0)
 }
 
+// UpdateSMBFileShareVisibility mocks base method
+func (m *MockStorageGatewayAPI) UpdateSMBFileShareVisibility(arg0 *storagegateway.UpdateSMBFileShareVisibilityInput) (*storagegateway.UpdateSMBFileShareVisibilityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSMBFileShareVisibility", arg0)
+	ret0, _ := ret[0].(*storagegateway.UpdateSMBFileShareVisibilityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSMBFileShareVisibility indicates an expected call of UpdateSMBFileShareVisibility
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBFileShareVisibility(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBFileShareVisibility", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBFileShareVisibility), arg0)
+}
+
+// UpdateSMBFileShareVisibilityRequest mocks base method
+func (m *MockStorageGatewayAPI) UpdateSMBFileShareVisibilityRequest(arg0 *storagegateway.UpdateSMBFileShareVisibilityInput) (*request.Request, *storagegateway.UpdateSMBFileShareVisibilityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSMBFileShareVisibilityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.UpdateSMBFileShareVisibilityOutput)
+	return ret0, ret1
+}
+
+// UpdateSMBFileShareVisibilityRequest indicates an expected call of UpdateSMBFileShareVisibilityRequest
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBFileShareVisibilityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBFileShareVisibilityRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBFileShareVisibilityRequest), arg0)
+}
+
+// UpdateSMBFileShareVisibilityWithContext mocks base method
+func (m *MockStorageGatewayAPI) UpdateSMBFileShareVisibilityWithContext(arg0 context.Context, arg1 *storagegateway.UpdateSMBFileShareVisibilityInput, arg2 ...request.Option) (*storagegateway.UpdateSMBFileShareVisibilityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSMBFileShareVisibilityWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.UpdateSMBFileShareVisibilityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSMBFileShareVisibilityWithContext indicates an expected call of UpdateSMBFileShareVisibilityWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBFileShareVisibilityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBFileShareVisibilityWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBFileShareVisibilityWithContext), varargs...)
+}
+
 // UpdateSMBFileShareWithContext mocks base method
 func (m *MockStorageGatewayAPI) UpdateSMBFileShareWithContext(arg0 context.Context, arg1 *storagegateway.UpdateSMBFileShareInput, arg2 ...request.Option) (*storagegateway.UpdateSMBFileShareOutput, error) {
 	m.ctrl.T.Helper()

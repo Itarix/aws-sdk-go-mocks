@@ -135,6 +135,106 @@ func (mr *MockSESV2APIMockRecorder) CreateConfigurationSetWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfigurationSetWithContext", reflect.TypeOf((*MockSESV2API)(nil).CreateConfigurationSetWithContext), varargs...)
 }
 
+// CreateContact mocks base method
+func (m *MockSESV2API) CreateContact(arg0 *sesv2.CreateContactInput) (*sesv2.CreateContactOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContact", arg0)
+	ret0, _ := ret[0].(*sesv2.CreateContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContact indicates an expected call of CreateContact
+func (mr *MockSESV2APIMockRecorder) CreateContact(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContact", reflect.TypeOf((*MockSESV2API)(nil).CreateContact), arg0)
+}
+
+// CreateContactList mocks base method
+func (m *MockSESV2API) CreateContactList(arg0 *sesv2.CreateContactListInput) (*sesv2.CreateContactListOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContactList", arg0)
+	ret0, _ := ret[0].(*sesv2.CreateContactListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContactList indicates an expected call of CreateContactList
+func (mr *MockSESV2APIMockRecorder) CreateContactList(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactList", reflect.TypeOf((*MockSESV2API)(nil).CreateContactList), arg0)
+}
+
+// CreateContactListRequest mocks base method
+func (m *MockSESV2API) CreateContactListRequest(arg0 *sesv2.CreateContactListInput) (*request.Request, *sesv2.CreateContactListOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContactListRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.CreateContactListOutput)
+	return ret0, ret1
+}
+
+// CreateContactListRequest indicates an expected call of CreateContactListRequest
+func (mr *MockSESV2APIMockRecorder) CreateContactListRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactListRequest", reflect.TypeOf((*MockSESV2API)(nil).CreateContactListRequest), arg0)
+}
+
+// CreateContactListWithContext mocks base method
+func (m *MockSESV2API) CreateContactListWithContext(arg0 context.Context, arg1 *sesv2.CreateContactListInput, arg2 ...request.Option) (*sesv2.CreateContactListOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateContactListWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.CreateContactListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContactListWithContext indicates an expected call of CreateContactListWithContext
+func (mr *MockSESV2APIMockRecorder) CreateContactListWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactListWithContext", reflect.TypeOf((*MockSESV2API)(nil).CreateContactListWithContext), varargs...)
+}
+
+// CreateContactRequest mocks base method
+func (m *MockSESV2API) CreateContactRequest(arg0 *sesv2.CreateContactInput) (*request.Request, *sesv2.CreateContactOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContactRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.CreateContactOutput)
+	return ret0, ret1
+}
+
+// CreateContactRequest indicates an expected call of CreateContactRequest
+func (mr *MockSESV2APIMockRecorder) CreateContactRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactRequest", reflect.TypeOf((*MockSESV2API)(nil).CreateContactRequest), arg0)
+}
+
+// CreateContactWithContext mocks base method
+func (m *MockSESV2API) CreateContactWithContext(arg0 context.Context, arg1 *sesv2.CreateContactInput, arg2 ...request.Option) (*sesv2.CreateContactOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateContactWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.CreateContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContactWithContext indicates an expected call of CreateContactWithContext
+func (mr *MockSESV2APIMockRecorder) CreateContactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactWithContext", reflect.TypeOf((*MockSESV2API)(nil).CreateContactWithContext), varargs...)
+}
+
 // CreateCustomVerificationEmailTemplate mocks base method
 func (m *MockSESV2API) CreateCustomVerificationEmailTemplate(arg0 *sesv2.CreateCustomVerificationEmailTemplateInput) (*sesv2.CreateCustomVerificationEmailTemplateOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +683,106 @@ func (mr *MockSESV2APIMockRecorder) DeleteConfigurationSetWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConfigurationSetWithContext", reflect.TypeOf((*MockSESV2API)(nil).DeleteConfigurationSetWithContext), varargs...)
+}
+
+// DeleteContact mocks base method
+func (m *MockSESV2API) DeleteContact(arg0 *sesv2.DeleteContactInput) (*sesv2.DeleteContactOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteContact", arg0)
+	ret0, _ := ret[0].(*sesv2.DeleteContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteContact indicates an expected call of DeleteContact
+func (mr *MockSESV2APIMockRecorder) DeleteContact(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContact", reflect.TypeOf((*MockSESV2API)(nil).DeleteContact), arg0)
+}
+
+// DeleteContactList mocks base method
+func (m *MockSESV2API) DeleteContactList(arg0 *sesv2.DeleteContactListInput) (*sesv2.DeleteContactListOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteContactList", arg0)
+	ret0, _ := ret[0].(*sesv2.DeleteContactListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteContactList indicates an expected call of DeleteContactList
+func (mr *MockSESV2APIMockRecorder) DeleteContactList(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactList", reflect.TypeOf((*MockSESV2API)(nil).DeleteContactList), arg0)
+}
+
+// DeleteContactListRequest mocks base method
+func (m *MockSESV2API) DeleteContactListRequest(arg0 *sesv2.DeleteContactListInput) (*request.Request, *sesv2.DeleteContactListOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteContactListRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.DeleteContactListOutput)
+	return ret0, ret1
+}
+
+// DeleteContactListRequest indicates an expected call of DeleteContactListRequest
+func (mr *MockSESV2APIMockRecorder) DeleteContactListRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactListRequest", reflect.TypeOf((*MockSESV2API)(nil).DeleteContactListRequest), arg0)
+}
+
+// DeleteContactListWithContext mocks base method
+func (m *MockSESV2API) DeleteContactListWithContext(arg0 context.Context, arg1 *sesv2.DeleteContactListInput, arg2 ...request.Option) (*sesv2.DeleteContactListOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteContactListWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.DeleteContactListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteContactListWithContext indicates an expected call of DeleteContactListWithContext
+func (mr *MockSESV2APIMockRecorder) DeleteContactListWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactListWithContext", reflect.TypeOf((*MockSESV2API)(nil).DeleteContactListWithContext), varargs...)
+}
+
+// DeleteContactRequest mocks base method
+func (m *MockSESV2API) DeleteContactRequest(arg0 *sesv2.DeleteContactInput) (*request.Request, *sesv2.DeleteContactOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteContactRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.DeleteContactOutput)
+	return ret0, ret1
+}
+
+// DeleteContactRequest indicates an expected call of DeleteContactRequest
+func (mr *MockSESV2APIMockRecorder) DeleteContactRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactRequest", reflect.TypeOf((*MockSESV2API)(nil).DeleteContactRequest), arg0)
+}
+
+// DeleteContactWithContext mocks base method
+func (m *MockSESV2API) DeleteContactWithContext(arg0 context.Context, arg1 *sesv2.DeleteContactInput, arg2 ...request.Option) (*sesv2.DeleteContactOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteContactWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.DeleteContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteContactWithContext indicates an expected call of DeleteContactWithContext
+func (mr *MockSESV2APIMockRecorder) DeleteContactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactWithContext", reflect.TypeOf((*MockSESV2API)(nil).DeleteContactWithContext), varargs...)
 }
 
 // DeleteCustomVerificationEmailTemplate mocks base method
@@ -1083,6 +1283,106 @@ func (mr *MockSESV2APIMockRecorder) GetConfigurationSetWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfigurationSetWithContext", reflect.TypeOf((*MockSESV2API)(nil).GetConfigurationSetWithContext), varargs...)
+}
+
+// GetContact mocks base method
+func (m *MockSESV2API) GetContact(arg0 *sesv2.GetContactInput) (*sesv2.GetContactOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContact", arg0)
+	ret0, _ := ret[0].(*sesv2.GetContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContact indicates an expected call of GetContact
+func (mr *MockSESV2APIMockRecorder) GetContact(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContact", reflect.TypeOf((*MockSESV2API)(nil).GetContact), arg0)
+}
+
+// GetContactList mocks base method
+func (m *MockSESV2API) GetContactList(arg0 *sesv2.GetContactListInput) (*sesv2.GetContactListOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContactList", arg0)
+	ret0, _ := ret[0].(*sesv2.GetContactListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContactList indicates an expected call of GetContactList
+func (mr *MockSESV2APIMockRecorder) GetContactList(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactList", reflect.TypeOf((*MockSESV2API)(nil).GetContactList), arg0)
+}
+
+// GetContactListRequest mocks base method
+func (m *MockSESV2API) GetContactListRequest(arg0 *sesv2.GetContactListInput) (*request.Request, *sesv2.GetContactListOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContactListRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.GetContactListOutput)
+	return ret0, ret1
+}
+
+// GetContactListRequest indicates an expected call of GetContactListRequest
+func (mr *MockSESV2APIMockRecorder) GetContactListRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactListRequest", reflect.TypeOf((*MockSESV2API)(nil).GetContactListRequest), arg0)
+}
+
+// GetContactListWithContext mocks base method
+func (m *MockSESV2API) GetContactListWithContext(arg0 context.Context, arg1 *sesv2.GetContactListInput, arg2 ...request.Option) (*sesv2.GetContactListOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetContactListWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.GetContactListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContactListWithContext indicates an expected call of GetContactListWithContext
+func (mr *MockSESV2APIMockRecorder) GetContactListWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactListWithContext", reflect.TypeOf((*MockSESV2API)(nil).GetContactListWithContext), varargs...)
+}
+
+// GetContactRequest mocks base method
+func (m *MockSESV2API) GetContactRequest(arg0 *sesv2.GetContactInput) (*request.Request, *sesv2.GetContactOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContactRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.GetContactOutput)
+	return ret0, ret1
+}
+
+// GetContactRequest indicates an expected call of GetContactRequest
+func (mr *MockSESV2APIMockRecorder) GetContactRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactRequest", reflect.TypeOf((*MockSESV2API)(nil).GetContactRequest), arg0)
+}
+
+// GetContactWithContext mocks base method
+func (m *MockSESV2API) GetContactWithContext(arg0 context.Context, arg1 *sesv2.GetContactInput, arg2 ...request.Option) (*sesv2.GetContactOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetContactWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.GetContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContactWithContext indicates an expected call of GetContactWithContext
+func (mr *MockSESV2APIMockRecorder) GetContactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactWithContext", reflect.TypeOf((*MockSESV2API)(nil).GetContactWithContext), varargs...)
 }
 
 // GetCustomVerificationEmailTemplate mocks base method
@@ -1799,6 +2099,172 @@ func (mr *MockSESV2APIMockRecorder) ListConfigurationSetsWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationSetsWithContext", reflect.TypeOf((*MockSESV2API)(nil).ListConfigurationSetsWithContext), varargs...)
+}
+
+// ListContactLists mocks base method
+func (m *MockSESV2API) ListContactLists(arg0 *sesv2.ListContactListsInput) (*sesv2.ListContactListsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContactLists", arg0)
+	ret0, _ := ret[0].(*sesv2.ListContactListsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListContactLists indicates an expected call of ListContactLists
+func (mr *MockSESV2APIMockRecorder) ListContactLists(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContactLists", reflect.TypeOf((*MockSESV2API)(nil).ListContactLists), arg0)
+}
+
+// ListContactListsPages mocks base method
+func (m *MockSESV2API) ListContactListsPages(arg0 *sesv2.ListContactListsInput, arg1 func(*sesv2.ListContactListsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContactListsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListContactListsPages indicates an expected call of ListContactListsPages
+func (mr *MockSESV2APIMockRecorder) ListContactListsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContactListsPages", reflect.TypeOf((*MockSESV2API)(nil).ListContactListsPages), arg0, arg1)
+}
+
+// ListContactListsPagesWithContext mocks base method
+func (m *MockSESV2API) ListContactListsPagesWithContext(arg0 context.Context, arg1 *sesv2.ListContactListsInput, arg2 func(*sesv2.ListContactListsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListContactListsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListContactListsPagesWithContext indicates an expected call of ListContactListsPagesWithContext
+func (mr *MockSESV2APIMockRecorder) ListContactListsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContactListsPagesWithContext", reflect.TypeOf((*MockSESV2API)(nil).ListContactListsPagesWithContext), varargs...)
+}
+
+// ListContactListsRequest mocks base method
+func (m *MockSESV2API) ListContactListsRequest(arg0 *sesv2.ListContactListsInput) (*request.Request, *sesv2.ListContactListsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContactListsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.ListContactListsOutput)
+	return ret0, ret1
+}
+
+// ListContactListsRequest indicates an expected call of ListContactListsRequest
+func (mr *MockSESV2APIMockRecorder) ListContactListsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContactListsRequest", reflect.TypeOf((*MockSESV2API)(nil).ListContactListsRequest), arg0)
+}
+
+// ListContactListsWithContext mocks base method
+func (m *MockSESV2API) ListContactListsWithContext(arg0 context.Context, arg1 *sesv2.ListContactListsInput, arg2 ...request.Option) (*sesv2.ListContactListsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListContactListsWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.ListContactListsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListContactListsWithContext indicates an expected call of ListContactListsWithContext
+func (mr *MockSESV2APIMockRecorder) ListContactListsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContactListsWithContext", reflect.TypeOf((*MockSESV2API)(nil).ListContactListsWithContext), varargs...)
+}
+
+// ListContacts mocks base method
+func (m *MockSESV2API) ListContacts(arg0 *sesv2.ListContactsInput) (*sesv2.ListContactsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContacts", arg0)
+	ret0, _ := ret[0].(*sesv2.ListContactsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListContacts indicates an expected call of ListContacts
+func (mr *MockSESV2APIMockRecorder) ListContacts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContacts", reflect.TypeOf((*MockSESV2API)(nil).ListContacts), arg0)
+}
+
+// ListContactsPages mocks base method
+func (m *MockSESV2API) ListContactsPages(arg0 *sesv2.ListContactsInput, arg1 func(*sesv2.ListContactsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContactsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListContactsPages indicates an expected call of ListContactsPages
+func (mr *MockSESV2APIMockRecorder) ListContactsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContactsPages", reflect.TypeOf((*MockSESV2API)(nil).ListContactsPages), arg0, arg1)
+}
+
+// ListContactsPagesWithContext mocks base method
+func (m *MockSESV2API) ListContactsPagesWithContext(arg0 context.Context, arg1 *sesv2.ListContactsInput, arg2 func(*sesv2.ListContactsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListContactsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListContactsPagesWithContext indicates an expected call of ListContactsPagesWithContext
+func (mr *MockSESV2APIMockRecorder) ListContactsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContactsPagesWithContext", reflect.TypeOf((*MockSESV2API)(nil).ListContactsPagesWithContext), varargs...)
+}
+
+// ListContactsRequest mocks base method
+func (m *MockSESV2API) ListContactsRequest(arg0 *sesv2.ListContactsInput) (*request.Request, *sesv2.ListContactsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContactsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.ListContactsOutput)
+	return ret0, ret1
+}
+
+// ListContactsRequest indicates an expected call of ListContactsRequest
+func (mr *MockSESV2APIMockRecorder) ListContactsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContactsRequest", reflect.TypeOf((*MockSESV2API)(nil).ListContactsRequest), arg0)
+}
+
+// ListContactsWithContext mocks base method
+func (m *MockSESV2API) ListContactsWithContext(arg0 context.Context, arg1 *sesv2.ListContactsInput, arg2 ...request.Option) (*sesv2.ListContactsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListContactsWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.ListContactsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListContactsWithContext indicates an expected call of ListContactsWithContext
+func (mr *MockSESV2APIMockRecorder) ListContactsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContactsWithContext", reflect.TypeOf((*MockSESV2API)(nil).ListContactsWithContext), varargs...)
 }
 
 // ListCustomVerificationEmailTemplates mocks base method
@@ -3713,6 +4179,106 @@ func (mr *MockSESV2APIMockRecorder) UpdateConfigurationSetEventDestinationWithCo
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfigurationSetEventDestinationWithContext", reflect.TypeOf((*MockSESV2API)(nil).UpdateConfigurationSetEventDestinationWithContext), varargs...)
+}
+
+// UpdateContact mocks base method
+func (m *MockSESV2API) UpdateContact(arg0 *sesv2.UpdateContactInput) (*sesv2.UpdateContactOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContact", arg0)
+	ret0, _ := ret[0].(*sesv2.UpdateContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContact indicates an expected call of UpdateContact
+func (mr *MockSESV2APIMockRecorder) UpdateContact(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContact", reflect.TypeOf((*MockSESV2API)(nil).UpdateContact), arg0)
+}
+
+// UpdateContactList mocks base method
+func (m *MockSESV2API) UpdateContactList(arg0 *sesv2.UpdateContactListInput) (*sesv2.UpdateContactListOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContactList", arg0)
+	ret0, _ := ret[0].(*sesv2.UpdateContactListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContactList indicates an expected call of UpdateContactList
+func (mr *MockSESV2APIMockRecorder) UpdateContactList(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactList", reflect.TypeOf((*MockSESV2API)(nil).UpdateContactList), arg0)
+}
+
+// UpdateContactListRequest mocks base method
+func (m *MockSESV2API) UpdateContactListRequest(arg0 *sesv2.UpdateContactListInput) (*request.Request, *sesv2.UpdateContactListOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContactListRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.UpdateContactListOutput)
+	return ret0, ret1
+}
+
+// UpdateContactListRequest indicates an expected call of UpdateContactListRequest
+func (mr *MockSESV2APIMockRecorder) UpdateContactListRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactListRequest", reflect.TypeOf((*MockSESV2API)(nil).UpdateContactListRequest), arg0)
+}
+
+// UpdateContactListWithContext mocks base method
+func (m *MockSESV2API) UpdateContactListWithContext(arg0 context.Context, arg1 *sesv2.UpdateContactListInput, arg2 ...request.Option) (*sesv2.UpdateContactListOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateContactListWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.UpdateContactListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContactListWithContext indicates an expected call of UpdateContactListWithContext
+func (mr *MockSESV2APIMockRecorder) UpdateContactListWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactListWithContext", reflect.TypeOf((*MockSESV2API)(nil).UpdateContactListWithContext), varargs...)
+}
+
+// UpdateContactRequest mocks base method
+func (m *MockSESV2API) UpdateContactRequest(arg0 *sesv2.UpdateContactInput) (*request.Request, *sesv2.UpdateContactOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContactRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.UpdateContactOutput)
+	return ret0, ret1
+}
+
+// UpdateContactRequest indicates an expected call of UpdateContactRequest
+func (mr *MockSESV2APIMockRecorder) UpdateContactRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactRequest", reflect.TypeOf((*MockSESV2API)(nil).UpdateContactRequest), arg0)
+}
+
+// UpdateContactWithContext mocks base method
+func (m *MockSESV2API) UpdateContactWithContext(arg0 context.Context, arg1 *sesv2.UpdateContactInput, arg2 ...request.Option) (*sesv2.UpdateContactOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateContactWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.UpdateContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContactWithContext indicates an expected call of UpdateContactWithContext
+func (mr *MockSESV2APIMockRecorder) UpdateContactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactWithContext", reflect.TypeOf((*MockSESV2API)(nil).UpdateContactWithContext), varargs...)
 }
 
 // UpdateCustomVerificationEmailTemplate mocks base method
