@@ -635,6 +635,56 @@ func (mr *MockOrganizationsAPIMockRecorder) DeletePolicyWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePolicyWithContext", reflect.TypeOf((*MockOrganizationsAPI)(nil).DeletePolicyWithContext), varargs...)
 }
 
+// DeregisterDelegatedAdministrator mocks base method
+func (m *MockOrganizationsAPI) DeregisterDelegatedAdministrator(arg0 *organizations.DeregisterDelegatedAdministratorInput) (*organizations.DeregisterDelegatedAdministratorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterDelegatedAdministrator", arg0)
+	ret0, _ := ret[0].(*organizations.DeregisterDelegatedAdministratorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterDelegatedAdministrator indicates an expected call of DeregisterDelegatedAdministrator
+func (mr *MockOrganizationsAPIMockRecorder) DeregisterDelegatedAdministrator(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterDelegatedAdministrator", reflect.TypeOf((*MockOrganizationsAPI)(nil).DeregisterDelegatedAdministrator), arg0)
+}
+
+// DeregisterDelegatedAdministratorRequest mocks base method
+func (m *MockOrganizationsAPI) DeregisterDelegatedAdministratorRequest(arg0 *organizations.DeregisterDelegatedAdministratorInput) (*request.Request, *organizations.DeregisterDelegatedAdministratorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterDelegatedAdministratorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*organizations.DeregisterDelegatedAdministratorOutput)
+	return ret0, ret1
+}
+
+// DeregisterDelegatedAdministratorRequest indicates an expected call of DeregisterDelegatedAdministratorRequest
+func (mr *MockOrganizationsAPIMockRecorder) DeregisterDelegatedAdministratorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterDelegatedAdministratorRequest", reflect.TypeOf((*MockOrganizationsAPI)(nil).DeregisterDelegatedAdministratorRequest), arg0)
+}
+
+// DeregisterDelegatedAdministratorWithContext mocks base method
+func (m *MockOrganizationsAPI) DeregisterDelegatedAdministratorWithContext(arg0 context.Context, arg1 *organizations.DeregisterDelegatedAdministratorInput, arg2 ...request.Option) (*organizations.DeregisterDelegatedAdministratorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeregisterDelegatedAdministratorWithContext", varargs...)
+	ret0, _ := ret[0].(*organizations.DeregisterDelegatedAdministratorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterDelegatedAdministratorWithContext indicates an expected call of DeregisterDelegatedAdministratorWithContext
+func (mr *MockOrganizationsAPIMockRecorder) DeregisterDelegatedAdministratorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterDelegatedAdministratorWithContext", reflect.TypeOf((*MockOrganizationsAPI)(nil).DeregisterDelegatedAdministratorWithContext), varargs...)
+}
+
 // DescribeAccount mocks base method
 func (m *MockOrganizationsAPI) DescribeAccount(arg0 *organizations.DescribeAccountInput) (*organizations.DescribeAccountOutput, error) {
 	m.ctrl.T.Helper()
@@ -1800,6 +1850,172 @@ func (mr *MockOrganizationsAPIMockRecorder) ListCreateAccountStatusWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCreateAccountStatusWithContext", reflect.TypeOf((*MockOrganizationsAPI)(nil).ListCreateAccountStatusWithContext), varargs...)
 }
 
+// ListDelegatedAdministrators mocks base method
+func (m *MockOrganizationsAPI) ListDelegatedAdministrators(arg0 *organizations.ListDelegatedAdministratorsInput) (*organizations.ListDelegatedAdministratorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDelegatedAdministrators", arg0)
+	ret0, _ := ret[0].(*organizations.ListDelegatedAdministratorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDelegatedAdministrators indicates an expected call of ListDelegatedAdministrators
+func (mr *MockOrganizationsAPIMockRecorder) ListDelegatedAdministrators(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDelegatedAdministrators", reflect.TypeOf((*MockOrganizationsAPI)(nil).ListDelegatedAdministrators), arg0)
+}
+
+// ListDelegatedAdministratorsPages mocks base method
+func (m *MockOrganizationsAPI) ListDelegatedAdministratorsPages(arg0 *organizations.ListDelegatedAdministratorsInput, arg1 func(*organizations.ListDelegatedAdministratorsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDelegatedAdministratorsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDelegatedAdministratorsPages indicates an expected call of ListDelegatedAdministratorsPages
+func (mr *MockOrganizationsAPIMockRecorder) ListDelegatedAdministratorsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDelegatedAdministratorsPages", reflect.TypeOf((*MockOrganizationsAPI)(nil).ListDelegatedAdministratorsPages), arg0, arg1)
+}
+
+// ListDelegatedAdministratorsPagesWithContext mocks base method
+func (m *MockOrganizationsAPI) ListDelegatedAdministratorsPagesWithContext(arg0 context.Context, arg1 *organizations.ListDelegatedAdministratorsInput, arg2 func(*organizations.ListDelegatedAdministratorsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDelegatedAdministratorsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDelegatedAdministratorsPagesWithContext indicates an expected call of ListDelegatedAdministratorsPagesWithContext
+func (mr *MockOrganizationsAPIMockRecorder) ListDelegatedAdministratorsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDelegatedAdministratorsPagesWithContext", reflect.TypeOf((*MockOrganizationsAPI)(nil).ListDelegatedAdministratorsPagesWithContext), varargs...)
+}
+
+// ListDelegatedAdministratorsRequest mocks base method
+func (m *MockOrganizationsAPI) ListDelegatedAdministratorsRequest(arg0 *organizations.ListDelegatedAdministratorsInput) (*request.Request, *organizations.ListDelegatedAdministratorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDelegatedAdministratorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*organizations.ListDelegatedAdministratorsOutput)
+	return ret0, ret1
+}
+
+// ListDelegatedAdministratorsRequest indicates an expected call of ListDelegatedAdministratorsRequest
+func (mr *MockOrganizationsAPIMockRecorder) ListDelegatedAdministratorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDelegatedAdministratorsRequest", reflect.TypeOf((*MockOrganizationsAPI)(nil).ListDelegatedAdministratorsRequest), arg0)
+}
+
+// ListDelegatedAdministratorsWithContext mocks base method
+func (m *MockOrganizationsAPI) ListDelegatedAdministratorsWithContext(arg0 context.Context, arg1 *organizations.ListDelegatedAdministratorsInput, arg2 ...request.Option) (*organizations.ListDelegatedAdministratorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDelegatedAdministratorsWithContext", varargs...)
+	ret0, _ := ret[0].(*organizations.ListDelegatedAdministratorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDelegatedAdministratorsWithContext indicates an expected call of ListDelegatedAdministratorsWithContext
+func (mr *MockOrganizationsAPIMockRecorder) ListDelegatedAdministratorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDelegatedAdministratorsWithContext", reflect.TypeOf((*MockOrganizationsAPI)(nil).ListDelegatedAdministratorsWithContext), varargs...)
+}
+
+// ListDelegatedServicesForAccount mocks base method
+func (m *MockOrganizationsAPI) ListDelegatedServicesForAccount(arg0 *organizations.ListDelegatedServicesForAccountInput) (*organizations.ListDelegatedServicesForAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDelegatedServicesForAccount", arg0)
+	ret0, _ := ret[0].(*organizations.ListDelegatedServicesForAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDelegatedServicesForAccount indicates an expected call of ListDelegatedServicesForAccount
+func (mr *MockOrganizationsAPIMockRecorder) ListDelegatedServicesForAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDelegatedServicesForAccount", reflect.TypeOf((*MockOrganizationsAPI)(nil).ListDelegatedServicesForAccount), arg0)
+}
+
+// ListDelegatedServicesForAccountPages mocks base method
+func (m *MockOrganizationsAPI) ListDelegatedServicesForAccountPages(arg0 *organizations.ListDelegatedServicesForAccountInput, arg1 func(*organizations.ListDelegatedServicesForAccountOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDelegatedServicesForAccountPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDelegatedServicesForAccountPages indicates an expected call of ListDelegatedServicesForAccountPages
+func (mr *MockOrganizationsAPIMockRecorder) ListDelegatedServicesForAccountPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDelegatedServicesForAccountPages", reflect.TypeOf((*MockOrganizationsAPI)(nil).ListDelegatedServicesForAccountPages), arg0, arg1)
+}
+
+// ListDelegatedServicesForAccountPagesWithContext mocks base method
+func (m *MockOrganizationsAPI) ListDelegatedServicesForAccountPagesWithContext(arg0 context.Context, arg1 *organizations.ListDelegatedServicesForAccountInput, arg2 func(*organizations.ListDelegatedServicesForAccountOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDelegatedServicesForAccountPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDelegatedServicesForAccountPagesWithContext indicates an expected call of ListDelegatedServicesForAccountPagesWithContext
+func (mr *MockOrganizationsAPIMockRecorder) ListDelegatedServicesForAccountPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDelegatedServicesForAccountPagesWithContext", reflect.TypeOf((*MockOrganizationsAPI)(nil).ListDelegatedServicesForAccountPagesWithContext), varargs...)
+}
+
+// ListDelegatedServicesForAccountRequest mocks base method
+func (m *MockOrganizationsAPI) ListDelegatedServicesForAccountRequest(arg0 *organizations.ListDelegatedServicesForAccountInput) (*request.Request, *organizations.ListDelegatedServicesForAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDelegatedServicesForAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*organizations.ListDelegatedServicesForAccountOutput)
+	return ret0, ret1
+}
+
+// ListDelegatedServicesForAccountRequest indicates an expected call of ListDelegatedServicesForAccountRequest
+func (mr *MockOrganizationsAPIMockRecorder) ListDelegatedServicesForAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDelegatedServicesForAccountRequest", reflect.TypeOf((*MockOrganizationsAPI)(nil).ListDelegatedServicesForAccountRequest), arg0)
+}
+
+// ListDelegatedServicesForAccountWithContext mocks base method
+func (m *MockOrganizationsAPI) ListDelegatedServicesForAccountWithContext(arg0 context.Context, arg1 *organizations.ListDelegatedServicesForAccountInput, arg2 ...request.Option) (*organizations.ListDelegatedServicesForAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDelegatedServicesForAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*organizations.ListDelegatedServicesForAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDelegatedServicesForAccountWithContext indicates an expected call of ListDelegatedServicesForAccountWithContext
+func (mr *MockOrganizationsAPIMockRecorder) ListDelegatedServicesForAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDelegatedServicesForAccountWithContext", reflect.TypeOf((*MockOrganizationsAPI)(nil).ListDelegatedServicesForAccountWithContext), varargs...)
+}
+
 // ListHandshakesForAccount mocks base method
 func (m *MockOrganizationsAPI) ListHandshakesForAccount(arg0 *organizations.ListHandshakesForAccountInput) (*organizations.ListHandshakesForAccountOutput, error) {
 	m.ctrl.T.Helper()
@@ -2595,6 +2811,56 @@ func (mr *MockOrganizationsAPIMockRecorder) MoveAccountWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MoveAccountWithContext", reflect.TypeOf((*MockOrganizationsAPI)(nil).MoveAccountWithContext), varargs...)
+}
+
+// RegisterDelegatedAdministrator mocks base method
+func (m *MockOrganizationsAPI) RegisterDelegatedAdministrator(arg0 *organizations.RegisterDelegatedAdministratorInput) (*organizations.RegisterDelegatedAdministratorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterDelegatedAdministrator", arg0)
+	ret0, _ := ret[0].(*organizations.RegisterDelegatedAdministratorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterDelegatedAdministrator indicates an expected call of RegisterDelegatedAdministrator
+func (mr *MockOrganizationsAPIMockRecorder) RegisterDelegatedAdministrator(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterDelegatedAdministrator", reflect.TypeOf((*MockOrganizationsAPI)(nil).RegisterDelegatedAdministrator), arg0)
+}
+
+// RegisterDelegatedAdministratorRequest mocks base method
+func (m *MockOrganizationsAPI) RegisterDelegatedAdministratorRequest(arg0 *organizations.RegisterDelegatedAdministratorInput) (*request.Request, *organizations.RegisterDelegatedAdministratorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterDelegatedAdministratorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*organizations.RegisterDelegatedAdministratorOutput)
+	return ret0, ret1
+}
+
+// RegisterDelegatedAdministratorRequest indicates an expected call of RegisterDelegatedAdministratorRequest
+func (mr *MockOrganizationsAPIMockRecorder) RegisterDelegatedAdministratorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterDelegatedAdministratorRequest", reflect.TypeOf((*MockOrganizationsAPI)(nil).RegisterDelegatedAdministratorRequest), arg0)
+}
+
+// RegisterDelegatedAdministratorWithContext mocks base method
+func (m *MockOrganizationsAPI) RegisterDelegatedAdministratorWithContext(arg0 context.Context, arg1 *organizations.RegisterDelegatedAdministratorInput, arg2 ...request.Option) (*organizations.RegisterDelegatedAdministratorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RegisterDelegatedAdministratorWithContext", varargs...)
+	ret0, _ := ret[0].(*organizations.RegisterDelegatedAdministratorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterDelegatedAdministratorWithContext indicates an expected call of RegisterDelegatedAdministratorWithContext
+func (mr *MockOrganizationsAPIMockRecorder) RegisterDelegatedAdministratorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterDelegatedAdministratorWithContext", reflect.TypeOf((*MockOrganizationsAPI)(nil).RegisterDelegatedAdministratorWithContext), varargs...)
 }
 
 // RemoveAccountFromOrganization mocks base method
