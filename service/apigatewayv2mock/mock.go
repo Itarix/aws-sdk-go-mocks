@@ -585,6 +585,106 @@ func (mr *MockApiGatewayV2APIMockRecorder) CreateStageWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStageWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).CreateStageWithContext), varargs...)
 }
 
+// CreateVpcLink mocks base method
+func (m *MockApiGatewayV2API) CreateVpcLink(arg0 *apigatewayv2.CreateVpcLinkInput) (*apigatewayv2.CreateVpcLinkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVpcLink", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.CreateVpcLinkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVpcLink indicates an expected call of CreateVpcLink
+func (mr *MockApiGatewayV2APIMockRecorder) CreateVpcLink(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcLink", reflect.TypeOf((*MockApiGatewayV2API)(nil).CreateVpcLink), arg0)
+}
+
+// CreateVpcLinkRequest mocks base method
+func (m *MockApiGatewayV2API) CreateVpcLinkRequest(arg0 *apigatewayv2.CreateVpcLinkInput) (*request.Request, *apigatewayv2.CreateVpcLinkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVpcLinkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.CreateVpcLinkOutput)
+	return ret0, ret1
+}
+
+// CreateVpcLinkRequest indicates an expected call of CreateVpcLinkRequest
+func (mr *MockApiGatewayV2APIMockRecorder) CreateVpcLinkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcLinkRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).CreateVpcLinkRequest), arg0)
+}
+
+// CreateVpcLinkWithContext mocks base method
+func (m *MockApiGatewayV2API) CreateVpcLinkWithContext(arg0 context.Context, arg1 *apigatewayv2.CreateVpcLinkInput, arg2 ...request.Option) (*apigatewayv2.CreateVpcLinkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateVpcLinkWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.CreateVpcLinkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVpcLinkWithContext indicates an expected call of CreateVpcLinkWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) CreateVpcLinkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcLinkWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).CreateVpcLinkWithContext), varargs...)
+}
+
+// DeleteAccessLogSettings mocks base method
+func (m *MockApiGatewayV2API) DeleteAccessLogSettings(arg0 *apigatewayv2.DeleteAccessLogSettingsInput) (*apigatewayv2.DeleteAccessLogSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccessLogSettings", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.DeleteAccessLogSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccessLogSettings indicates an expected call of DeleteAccessLogSettings
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteAccessLogSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessLogSettings", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteAccessLogSettings), arg0)
+}
+
+// DeleteAccessLogSettingsRequest mocks base method
+func (m *MockApiGatewayV2API) DeleteAccessLogSettingsRequest(arg0 *apigatewayv2.DeleteAccessLogSettingsInput) (*request.Request, *apigatewayv2.DeleteAccessLogSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccessLogSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.DeleteAccessLogSettingsOutput)
+	return ret0, ret1
+}
+
+// DeleteAccessLogSettingsRequest indicates an expected call of DeleteAccessLogSettingsRequest
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteAccessLogSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessLogSettingsRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteAccessLogSettingsRequest), arg0)
+}
+
+// DeleteAccessLogSettingsWithContext mocks base method
+func (m *MockApiGatewayV2API) DeleteAccessLogSettingsWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteAccessLogSettingsInput, arg2 ...request.Option) (*apigatewayv2.DeleteAccessLogSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAccessLogSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.DeleteAccessLogSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccessLogSettingsWithContext indicates an expected call of DeleteAccessLogSettingsWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteAccessLogSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessLogSettingsWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteAccessLogSettingsWithContext), varargs...)
+}
+
 // DeleteApi mocks base method
 func (m *MockApiGatewayV2API) DeleteApi(arg0 *apigatewayv2.DeleteApiInput) (*apigatewayv2.DeleteApiOutput, error) {
 	m.ctrl.T.Helper()
@@ -1065,6 +1165,56 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteRouteRequest(arg0 interface{}) 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRouteRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteRouteRequest), arg0)
 }
 
+// DeleteRouteRequestParameter mocks base method
+func (m *MockApiGatewayV2API) DeleteRouteRequestParameter(arg0 *apigatewayv2.DeleteRouteRequestParameterInput) (*apigatewayv2.DeleteRouteRequestParameterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRouteRequestParameter", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.DeleteRouteRequestParameterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRouteRequestParameter indicates an expected call of DeleteRouteRequestParameter
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteRouteRequestParameter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRouteRequestParameter", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteRouteRequestParameter), arg0)
+}
+
+// DeleteRouteRequestParameterRequest mocks base method
+func (m *MockApiGatewayV2API) DeleteRouteRequestParameterRequest(arg0 *apigatewayv2.DeleteRouteRequestParameterInput) (*request.Request, *apigatewayv2.DeleteRouteRequestParameterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRouteRequestParameterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.DeleteRouteRequestParameterOutput)
+	return ret0, ret1
+}
+
+// DeleteRouteRequestParameterRequest indicates an expected call of DeleteRouteRequestParameterRequest
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteRouteRequestParameterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRouteRequestParameterRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteRouteRequestParameterRequest), arg0)
+}
+
+// DeleteRouteRequestParameterWithContext mocks base method
+func (m *MockApiGatewayV2API) DeleteRouteRequestParameterWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteRouteRequestParameterInput, arg2 ...request.Option) (*apigatewayv2.DeleteRouteRequestParameterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRouteRequestParameterWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.DeleteRouteRequestParameterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRouteRequestParameterWithContext indicates an expected call of DeleteRouteRequestParameterWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteRouteRequestParameterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRouteRequestParameterWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteRouteRequestParameterWithContext), varargs...)
+}
+
 // DeleteRouteResponse mocks base method
 func (m *MockApiGatewayV2API) DeleteRouteResponse(arg0 *apigatewayv2.DeleteRouteResponseInput) (*apigatewayv2.DeleteRouteResponseOutput, error) {
 	m.ctrl.T.Helper()
@@ -1233,6 +1383,56 @@ func (mr *MockApiGatewayV2APIMockRecorder) DeleteStageWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStageWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteStageWithContext), varargs...)
+}
+
+// DeleteVpcLink mocks base method
+func (m *MockApiGatewayV2API) DeleteVpcLink(arg0 *apigatewayv2.DeleteVpcLinkInput) (*apigatewayv2.DeleteVpcLinkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVpcLink", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.DeleteVpcLinkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVpcLink indicates an expected call of DeleteVpcLink
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteVpcLink(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcLink", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteVpcLink), arg0)
+}
+
+// DeleteVpcLinkRequest mocks base method
+func (m *MockApiGatewayV2API) DeleteVpcLinkRequest(arg0 *apigatewayv2.DeleteVpcLinkInput) (*request.Request, *apigatewayv2.DeleteVpcLinkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVpcLinkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.DeleteVpcLinkOutput)
+	return ret0, ret1
+}
+
+// DeleteVpcLinkRequest indicates an expected call of DeleteVpcLinkRequest
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteVpcLinkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcLinkRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteVpcLinkRequest), arg0)
+}
+
+// DeleteVpcLinkWithContext mocks base method
+func (m *MockApiGatewayV2API) DeleteVpcLinkWithContext(arg0 context.Context, arg1 *apigatewayv2.DeleteVpcLinkInput, arg2 ...request.Option) (*apigatewayv2.DeleteVpcLinkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteVpcLinkWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.DeleteVpcLinkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVpcLinkWithContext indicates an expected call of DeleteVpcLinkWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) DeleteVpcLinkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcLinkWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).DeleteVpcLinkWithContext), varargs...)
 }
 
 // GetApi mocks base method
@@ -2435,6 +2635,106 @@ func (mr *MockApiGatewayV2APIMockRecorder) GetTagsWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTagsWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).GetTagsWithContext), varargs...)
 }
 
+// GetVpcLink mocks base method
+func (m *MockApiGatewayV2API) GetVpcLink(arg0 *apigatewayv2.GetVpcLinkInput) (*apigatewayv2.GetVpcLinkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVpcLink", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.GetVpcLinkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVpcLink indicates an expected call of GetVpcLink
+func (mr *MockApiGatewayV2APIMockRecorder) GetVpcLink(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcLink", reflect.TypeOf((*MockApiGatewayV2API)(nil).GetVpcLink), arg0)
+}
+
+// GetVpcLinkRequest mocks base method
+func (m *MockApiGatewayV2API) GetVpcLinkRequest(arg0 *apigatewayv2.GetVpcLinkInput) (*request.Request, *apigatewayv2.GetVpcLinkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVpcLinkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.GetVpcLinkOutput)
+	return ret0, ret1
+}
+
+// GetVpcLinkRequest indicates an expected call of GetVpcLinkRequest
+func (mr *MockApiGatewayV2APIMockRecorder) GetVpcLinkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcLinkRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).GetVpcLinkRequest), arg0)
+}
+
+// GetVpcLinkWithContext mocks base method
+func (m *MockApiGatewayV2API) GetVpcLinkWithContext(arg0 context.Context, arg1 *apigatewayv2.GetVpcLinkInput, arg2 ...request.Option) (*apigatewayv2.GetVpcLinkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetVpcLinkWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.GetVpcLinkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVpcLinkWithContext indicates an expected call of GetVpcLinkWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) GetVpcLinkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcLinkWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).GetVpcLinkWithContext), varargs...)
+}
+
+// GetVpcLinks mocks base method
+func (m *MockApiGatewayV2API) GetVpcLinks(arg0 *apigatewayv2.GetVpcLinksInput) (*apigatewayv2.GetVpcLinksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVpcLinks", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.GetVpcLinksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVpcLinks indicates an expected call of GetVpcLinks
+func (mr *MockApiGatewayV2APIMockRecorder) GetVpcLinks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcLinks", reflect.TypeOf((*MockApiGatewayV2API)(nil).GetVpcLinks), arg0)
+}
+
+// GetVpcLinksRequest mocks base method
+func (m *MockApiGatewayV2API) GetVpcLinksRequest(arg0 *apigatewayv2.GetVpcLinksInput) (*request.Request, *apigatewayv2.GetVpcLinksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVpcLinksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.GetVpcLinksOutput)
+	return ret0, ret1
+}
+
+// GetVpcLinksRequest indicates an expected call of GetVpcLinksRequest
+func (mr *MockApiGatewayV2APIMockRecorder) GetVpcLinksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcLinksRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).GetVpcLinksRequest), arg0)
+}
+
+// GetVpcLinksWithContext mocks base method
+func (m *MockApiGatewayV2API) GetVpcLinksWithContext(arg0 context.Context, arg1 *apigatewayv2.GetVpcLinksInput, arg2 ...request.Option) (*apigatewayv2.GetVpcLinksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetVpcLinksWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.GetVpcLinksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVpcLinksWithContext indicates an expected call of GetVpcLinksWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) GetVpcLinksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcLinksWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).GetVpcLinksWithContext), varargs...)
+}
+
 // ImportApi mocks base method
 func (m *MockApiGatewayV2API) ImportApi(arg0 *apigatewayv2.ImportApiInput) (*apigatewayv2.ImportApiOutput, error) {
 	m.ctrl.T.Helper()
@@ -3183,4 +3483,54 @@ func (mr *MockApiGatewayV2APIMockRecorder) UpdateStageWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStageWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).UpdateStageWithContext), varargs...)
+}
+
+// UpdateVpcLink mocks base method
+func (m *MockApiGatewayV2API) UpdateVpcLink(arg0 *apigatewayv2.UpdateVpcLinkInput) (*apigatewayv2.UpdateVpcLinkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVpcLink", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.UpdateVpcLinkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVpcLink indicates an expected call of UpdateVpcLink
+func (mr *MockApiGatewayV2APIMockRecorder) UpdateVpcLink(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVpcLink", reflect.TypeOf((*MockApiGatewayV2API)(nil).UpdateVpcLink), arg0)
+}
+
+// UpdateVpcLinkRequest mocks base method
+func (m *MockApiGatewayV2API) UpdateVpcLinkRequest(arg0 *apigatewayv2.UpdateVpcLinkInput) (*request.Request, *apigatewayv2.UpdateVpcLinkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVpcLinkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.UpdateVpcLinkOutput)
+	return ret0, ret1
+}
+
+// UpdateVpcLinkRequest indicates an expected call of UpdateVpcLinkRequest
+func (mr *MockApiGatewayV2APIMockRecorder) UpdateVpcLinkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVpcLinkRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).UpdateVpcLinkRequest), arg0)
+}
+
+// UpdateVpcLinkWithContext mocks base method
+func (m *MockApiGatewayV2API) UpdateVpcLinkWithContext(arg0 context.Context, arg1 *apigatewayv2.UpdateVpcLinkInput, arg2 ...request.Option) (*apigatewayv2.UpdateVpcLinkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateVpcLinkWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.UpdateVpcLinkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVpcLinkWithContext indicates an expected call of UpdateVpcLinkWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) UpdateVpcLinkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVpcLinkWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).UpdateVpcLinkWithContext), varargs...)
 }
