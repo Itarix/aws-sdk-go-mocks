@@ -1516,6 +1516,56 @@ func (mr *MockKafkaAPIMockRecorder) UpdateBrokerStorageWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBrokerStorageWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateBrokerStorageWithContext), varargs...)
 }
 
+// UpdateBrokerType mocks base method
+func (m *MockKafkaAPI) UpdateBrokerType(arg0 *kafka.UpdateBrokerTypeInput) (*kafka.UpdateBrokerTypeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBrokerType", arg0)
+	ret0, _ := ret[0].(*kafka.UpdateBrokerTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBrokerType indicates an expected call of UpdateBrokerType
+func (mr *MockKafkaAPIMockRecorder) UpdateBrokerType(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBrokerType", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateBrokerType), arg0)
+}
+
+// UpdateBrokerTypeRequest mocks base method
+func (m *MockKafkaAPI) UpdateBrokerTypeRequest(arg0 *kafka.UpdateBrokerTypeInput) (*request.Request, *kafka.UpdateBrokerTypeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBrokerTypeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.UpdateBrokerTypeOutput)
+	return ret0, ret1
+}
+
+// UpdateBrokerTypeRequest indicates an expected call of UpdateBrokerTypeRequest
+func (mr *MockKafkaAPIMockRecorder) UpdateBrokerTypeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBrokerTypeRequest", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateBrokerTypeRequest), arg0)
+}
+
+// UpdateBrokerTypeWithContext mocks base method
+func (m *MockKafkaAPI) UpdateBrokerTypeWithContext(arg0 context.Context, arg1 *kafka.UpdateBrokerTypeInput, arg2 ...request.Option) (*kafka.UpdateBrokerTypeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateBrokerTypeWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.UpdateBrokerTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBrokerTypeWithContext indicates an expected call of UpdateBrokerTypeWithContext
+func (mr *MockKafkaAPIMockRecorder) UpdateBrokerTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBrokerTypeWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateBrokerTypeWithContext), varargs...)
+}
+
 // UpdateClusterConfiguration mocks base method
 func (m *MockKafkaAPI) UpdateClusterConfiguration(arg0 *kafka.UpdateClusterConfigurationInput) (*kafka.UpdateClusterConfigurationOutput, error) {
 	m.ctrl.T.Helper()
