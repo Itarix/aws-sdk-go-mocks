@@ -535,6 +535,56 @@ func (mr *MockCognitoIdentityAPIMockRecorder) GetOpenIdTokenWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOpenIdTokenWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetOpenIdTokenWithContext), varargs...)
 }
 
+// GetPrincipalTagAttributeMap mocks base method
+func (m *MockCognitoIdentityAPI) GetPrincipalTagAttributeMap(arg0 *cognitoidentity.GetPrincipalTagAttributeMapInput) (*cognitoidentity.GetPrincipalTagAttributeMapOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPrincipalTagAttributeMap", arg0)
+	ret0, _ := ret[0].(*cognitoidentity.GetPrincipalTagAttributeMapOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPrincipalTagAttributeMap indicates an expected call of GetPrincipalTagAttributeMap
+func (mr *MockCognitoIdentityAPIMockRecorder) GetPrincipalTagAttributeMap(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPrincipalTagAttributeMap", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetPrincipalTagAttributeMap), arg0)
+}
+
+// GetPrincipalTagAttributeMapRequest mocks base method
+func (m *MockCognitoIdentityAPI) GetPrincipalTagAttributeMapRequest(arg0 *cognitoidentity.GetPrincipalTagAttributeMapInput) (*request.Request, *cognitoidentity.GetPrincipalTagAttributeMapOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPrincipalTagAttributeMapRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cognitoidentity.GetPrincipalTagAttributeMapOutput)
+	return ret0, ret1
+}
+
+// GetPrincipalTagAttributeMapRequest indicates an expected call of GetPrincipalTagAttributeMapRequest
+func (mr *MockCognitoIdentityAPIMockRecorder) GetPrincipalTagAttributeMapRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPrincipalTagAttributeMapRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetPrincipalTagAttributeMapRequest), arg0)
+}
+
+// GetPrincipalTagAttributeMapWithContext mocks base method
+func (m *MockCognitoIdentityAPI) GetPrincipalTagAttributeMapWithContext(arg0 context.Context, arg1 *cognitoidentity.GetPrincipalTagAttributeMapInput, arg2 ...request.Option) (*cognitoidentity.GetPrincipalTagAttributeMapOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPrincipalTagAttributeMapWithContext", varargs...)
+	ret0, _ := ret[0].(*cognitoidentity.GetPrincipalTagAttributeMapOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPrincipalTagAttributeMapWithContext indicates an expected call of GetPrincipalTagAttributeMapWithContext
+func (mr *MockCognitoIdentityAPIMockRecorder) GetPrincipalTagAttributeMapWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPrincipalTagAttributeMapWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).GetPrincipalTagAttributeMapWithContext), varargs...)
+}
+
 // ListIdentities mocks base method
 func (m *MockCognitoIdentityAPI) ListIdentities(arg0 *cognitoidentity.ListIdentitiesInput) (*cognitoidentity.ListIdentitiesOutput, error) {
 	m.ctrl.T.Helper()
@@ -866,6 +916,56 @@ func (mr *MockCognitoIdentityAPIMockRecorder) SetIdentityPoolRolesWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetIdentityPoolRolesWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).SetIdentityPoolRolesWithContext), varargs...)
+}
+
+// SetPrincipalTagAttributeMap mocks base method
+func (m *MockCognitoIdentityAPI) SetPrincipalTagAttributeMap(arg0 *cognitoidentity.SetPrincipalTagAttributeMapInput) (*cognitoidentity.SetPrincipalTagAttributeMapOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SetPrincipalTagAttributeMap", arg0)
+	ret0, _ := ret[0].(*cognitoidentity.SetPrincipalTagAttributeMapOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SetPrincipalTagAttributeMap indicates an expected call of SetPrincipalTagAttributeMap
+func (mr *MockCognitoIdentityAPIMockRecorder) SetPrincipalTagAttributeMap(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetPrincipalTagAttributeMap", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).SetPrincipalTagAttributeMap), arg0)
+}
+
+// SetPrincipalTagAttributeMapRequest mocks base method
+func (m *MockCognitoIdentityAPI) SetPrincipalTagAttributeMapRequest(arg0 *cognitoidentity.SetPrincipalTagAttributeMapInput) (*request.Request, *cognitoidentity.SetPrincipalTagAttributeMapOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SetPrincipalTagAttributeMapRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cognitoidentity.SetPrincipalTagAttributeMapOutput)
+	return ret0, ret1
+}
+
+// SetPrincipalTagAttributeMapRequest indicates an expected call of SetPrincipalTagAttributeMapRequest
+func (mr *MockCognitoIdentityAPIMockRecorder) SetPrincipalTagAttributeMapRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetPrincipalTagAttributeMapRequest", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).SetPrincipalTagAttributeMapRequest), arg0)
+}
+
+// SetPrincipalTagAttributeMapWithContext mocks base method
+func (m *MockCognitoIdentityAPI) SetPrincipalTagAttributeMapWithContext(arg0 context.Context, arg1 *cognitoidentity.SetPrincipalTagAttributeMapInput, arg2 ...request.Option) (*cognitoidentity.SetPrincipalTagAttributeMapOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SetPrincipalTagAttributeMapWithContext", varargs...)
+	ret0, _ := ret[0].(*cognitoidentity.SetPrincipalTagAttributeMapOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SetPrincipalTagAttributeMapWithContext indicates an expected call of SetPrincipalTagAttributeMapWithContext
+func (mr *MockCognitoIdentityAPIMockRecorder) SetPrincipalTagAttributeMapWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetPrincipalTagAttributeMapWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).SetPrincipalTagAttributeMapWithContext), varargs...)
 }
 
 // TagResource mocks base method
