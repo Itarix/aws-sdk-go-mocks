@@ -35,6 +35,56 @@ func (m *MockMediaLiveAPI) EXPECT() *MockMediaLiveAPIMockRecorder {
 	return m.recorder
 }
 
+// AcceptInputDeviceTransfer mocks base method
+func (m *MockMediaLiveAPI) AcceptInputDeviceTransfer(arg0 *medialive.AcceptInputDeviceTransferInput) (*medialive.AcceptInputDeviceTransferOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AcceptInputDeviceTransfer", arg0)
+	ret0, _ := ret[0].(*medialive.AcceptInputDeviceTransferOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AcceptInputDeviceTransfer indicates an expected call of AcceptInputDeviceTransfer
+func (mr *MockMediaLiveAPIMockRecorder) AcceptInputDeviceTransfer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptInputDeviceTransfer", reflect.TypeOf((*MockMediaLiveAPI)(nil).AcceptInputDeviceTransfer), arg0)
+}
+
+// AcceptInputDeviceTransferRequest mocks base method
+func (m *MockMediaLiveAPI) AcceptInputDeviceTransferRequest(arg0 *medialive.AcceptInputDeviceTransferInput) (*request.Request, *medialive.AcceptInputDeviceTransferOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AcceptInputDeviceTransferRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.AcceptInputDeviceTransferOutput)
+	return ret0, ret1
+}
+
+// AcceptInputDeviceTransferRequest indicates an expected call of AcceptInputDeviceTransferRequest
+func (mr *MockMediaLiveAPIMockRecorder) AcceptInputDeviceTransferRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptInputDeviceTransferRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).AcceptInputDeviceTransferRequest), arg0)
+}
+
+// AcceptInputDeviceTransferWithContext mocks base method
+func (m *MockMediaLiveAPI) AcceptInputDeviceTransferWithContext(arg0 context.Context, arg1 *medialive.AcceptInputDeviceTransferInput, arg2 ...request.Option) (*medialive.AcceptInputDeviceTransferOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AcceptInputDeviceTransferWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.AcceptInputDeviceTransferOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AcceptInputDeviceTransferWithContext indicates an expected call of AcceptInputDeviceTransferWithContext
+func (mr *MockMediaLiveAPIMockRecorder) AcceptInputDeviceTransferWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptInputDeviceTransferWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).AcceptInputDeviceTransferWithContext), varargs...)
+}
+
 // BatchDelete mocks base method
 func (m *MockMediaLiveAPI) BatchDelete(arg0 *medialive.BatchDeleteInput) (*medialive.BatchDeleteOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,56 @@ func (mr *MockMediaLiveAPIMockRecorder) BatchUpdateScheduleWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateScheduleWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).BatchUpdateScheduleWithContext), varargs...)
+}
+
+// CancelInputDeviceTransfer mocks base method
+func (m *MockMediaLiveAPI) CancelInputDeviceTransfer(arg0 *medialive.CancelInputDeviceTransferInput) (*medialive.CancelInputDeviceTransferOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelInputDeviceTransfer", arg0)
+	ret0, _ := ret[0].(*medialive.CancelInputDeviceTransferOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelInputDeviceTransfer indicates an expected call of CancelInputDeviceTransfer
+func (mr *MockMediaLiveAPIMockRecorder) CancelInputDeviceTransfer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelInputDeviceTransfer", reflect.TypeOf((*MockMediaLiveAPI)(nil).CancelInputDeviceTransfer), arg0)
+}
+
+// CancelInputDeviceTransferRequest mocks base method
+func (m *MockMediaLiveAPI) CancelInputDeviceTransferRequest(arg0 *medialive.CancelInputDeviceTransferInput) (*request.Request, *medialive.CancelInputDeviceTransferOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelInputDeviceTransferRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.CancelInputDeviceTransferOutput)
+	return ret0, ret1
+}
+
+// CancelInputDeviceTransferRequest indicates an expected call of CancelInputDeviceTransferRequest
+func (mr *MockMediaLiveAPIMockRecorder) CancelInputDeviceTransferRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelInputDeviceTransferRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).CancelInputDeviceTransferRequest), arg0)
+}
+
+// CancelInputDeviceTransferWithContext mocks base method
+func (m *MockMediaLiveAPI) CancelInputDeviceTransferWithContext(arg0 context.Context, arg1 *medialive.CancelInputDeviceTransferInput, arg2 ...request.Option) (*medialive.CancelInputDeviceTransferOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelInputDeviceTransferWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.CancelInputDeviceTransferOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelInputDeviceTransferWithContext indicates an expected call of CancelInputDeviceTransferWithContext
+func (mr *MockMediaLiveAPIMockRecorder) CancelInputDeviceTransferWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelInputDeviceTransferWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).CancelInputDeviceTransferWithContext), varargs...)
 }
 
 // CreateChannel mocks base method
@@ -1551,6 +1651,89 @@ func (mr *MockMediaLiveAPIMockRecorder) ListChannelsWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListChannelsWithContext), varargs...)
 }
 
+// ListInputDeviceTransfers mocks base method
+func (m *MockMediaLiveAPI) ListInputDeviceTransfers(arg0 *medialive.ListInputDeviceTransfersInput) (*medialive.ListInputDeviceTransfersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInputDeviceTransfers", arg0)
+	ret0, _ := ret[0].(*medialive.ListInputDeviceTransfersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListInputDeviceTransfers indicates an expected call of ListInputDeviceTransfers
+func (mr *MockMediaLiveAPIMockRecorder) ListInputDeviceTransfers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInputDeviceTransfers", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListInputDeviceTransfers), arg0)
+}
+
+// ListInputDeviceTransfersPages mocks base method
+func (m *MockMediaLiveAPI) ListInputDeviceTransfersPages(arg0 *medialive.ListInputDeviceTransfersInput, arg1 func(*medialive.ListInputDeviceTransfersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInputDeviceTransfersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListInputDeviceTransfersPages indicates an expected call of ListInputDeviceTransfersPages
+func (mr *MockMediaLiveAPIMockRecorder) ListInputDeviceTransfersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInputDeviceTransfersPages", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListInputDeviceTransfersPages), arg0, arg1)
+}
+
+// ListInputDeviceTransfersPagesWithContext mocks base method
+func (m *MockMediaLiveAPI) ListInputDeviceTransfersPagesWithContext(arg0 context.Context, arg1 *medialive.ListInputDeviceTransfersInput, arg2 func(*medialive.ListInputDeviceTransfersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListInputDeviceTransfersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListInputDeviceTransfersPagesWithContext indicates an expected call of ListInputDeviceTransfersPagesWithContext
+func (mr *MockMediaLiveAPIMockRecorder) ListInputDeviceTransfersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInputDeviceTransfersPagesWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListInputDeviceTransfersPagesWithContext), varargs...)
+}
+
+// ListInputDeviceTransfersRequest mocks base method
+func (m *MockMediaLiveAPI) ListInputDeviceTransfersRequest(arg0 *medialive.ListInputDeviceTransfersInput) (*request.Request, *medialive.ListInputDeviceTransfersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInputDeviceTransfersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.ListInputDeviceTransfersOutput)
+	return ret0, ret1
+}
+
+// ListInputDeviceTransfersRequest indicates an expected call of ListInputDeviceTransfersRequest
+func (mr *MockMediaLiveAPIMockRecorder) ListInputDeviceTransfersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInputDeviceTransfersRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListInputDeviceTransfersRequest), arg0)
+}
+
+// ListInputDeviceTransfersWithContext mocks base method
+func (m *MockMediaLiveAPI) ListInputDeviceTransfersWithContext(arg0 context.Context, arg1 *medialive.ListInputDeviceTransfersInput, arg2 ...request.Option) (*medialive.ListInputDeviceTransfersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListInputDeviceTransfersWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.ListInputDeviceTransfersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListInputDeviceTransfersWithContext indicates an expected call of ListInputDeviceTransfersWithContext
+func (mr *MockMediaLiveAPIMockRecorder) ListInputDeviceTransfersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInputDeviceTransfersWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).ListInputDeviceTransfersWithContext), varargs...)
+}
+
 // ListInputDevices mocks base method
 func (m *MockMediaLiveAPI) ListInputDevices(arg0 *medialive.ListInputDevicesInput) (*medialive.ListInputDevicesOutput, error) {
 	m.ctrl.T.Helper()
@@ -2232,6 +2415,56 @@ func (mr *MockMediaLiveAPIMockRecorder) PurchaseOfferingWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseOfferingWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).PurchaseOfferingWithContext), varargs...)
 }
 
+// RejectInputDeviceTransfer mocks base method
+func (m *MockMediaLiveAPI) RejectInputDeviceTransfer(arg0 *medialive.RejectInputDeviceTransferInput) (*medialive.RejectInputDeviceTransferOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RejectInputDeviceTransfer", arg0)
+	ret0, _ := ret[0].(*medialive.RejectInputDeviceTransferOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RejectInputDeviceTransfer indicates an expected call of RejectInputDeviceTransfer
+func (mr *MockMediaLiveAPIMockRecorder) RejectInputDeviceTransfer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectInputDeviceTransfer", reflect.TypeOf((*MockMediaLiveAPI)(nil).RejectInputDeviceTransfer), arg0)
+}
+
+// RejectInputDeviceTransferRequest mocks base method
+func (m *MockMediaLiveAPI) RejectInputDeviceTransferRequest(arg0 *medialive.RejectInputDeviceTransferInput) (*request.Request, *medialive.RejectInputDeviceTransferOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RejectInputDeviceTransferRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.RejectInputDeviceTransferOutput)
+	return ret0, ret1
+}
+
+// RejectInputDeviceTransferRequest indicates an expected call of RejectInputDeviceTransferRequest
+func (mr *MockMediaLiveAPIMockRecorder) RejectInputDeviceTransferRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectInputDeviceTransferRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).RejectInputDeviceTransferRequest), arg0)
+}
+
+// RejectInputDeviceTransferWithContext mocks base method
+func (m *MockMediaLiveAPI) RejectInputDeviceTransferWithContext(arg0 context.Context, arg1 *medialive.RejectInputDeviceTransferInput, arg2 ...request.Option) (*medialive.RejectInputDeviceTransferOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RejectInputDeviceTransferWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.RejectInputDeviceTransferOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RejectInputDeviceTransferWithContext indicates an expected call of RejectInputDeviceTransferWithContext
+func (mr *MockMediaLiveAPIMockRecorder) RejectInputDeviceTransferWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectInputDeviceTransferWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).RejectInputDeviceTransferWithContext), varargs...)
+}
+
 // StartChannel mocks base method
 func (m *MockMediaLiveAPI) StartChannel(arg0 *medialive.StartChannelInput) (*medialive.StartChannelOutput, error) {
 	m.ctrl.T.Helper()
@@ -2430,6 +2663,56 @@ func (mr *MockMediaLiveAPIMockRecorder) StopMultiplexWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopMultiplexWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).StopMultiplexWithContext), varargs...)
+}
+
+// TransferInputDevice mocks base method
+func (m *MockMediaLiveAPI) TransferInputDevice(arg0 *medialive.TransferInputDeviceInput) (*medialive.TransferInputDeviceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TransferInputDevice", arg0)
+	ret0, _ := ret[0].(*medialive.TransferInputDeviceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TransferInputDevice indicates an expected call of TransferInputDevice
+func (mr *MockMediaLiveAPIMockRecorder) TransferInputDevice(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferInputDevice", reflect.TypeOf((*MockMediaLiveAPI)(nil).TransferInputDevice), arg0)
+}
+
+// TransferInputDeviceRequest mocks base method
+func (m *MockMediaLiveAPI) TransferInputDeviceRequest(arg0 *medialive.TransferInputDeviceInput) (*request.Request, *medialive.TransferInputDeviceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TransferInputDeviceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.TransferInputDeviceOutput)
+	return ret0, ret1
+}
+
+// TransferInputDeviceRequest indicates an expected call of TransferInputDeviceRequest
+func (mr *MockMediaLiveAPIMockRecorder) TransferInputDeviceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferInputDeviceRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).TransferInputDeviceRequest), arg0)
+}
+
+// TransferInputDeviceWithContext mocks base method
+func (m *MockMediaLiveAPI) TransferInputDeviceWithContext(arg0 context.Context, arg1 *medialive.TransferInputDeviceInput, arg2 ...request.Option) (*medialive.TransferInputDeviceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TransferInputDeviceWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.TransferInputDeviceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TransferInputDeviceWithContext indicates an expected call of TransferInputDeviceWithContext
+func (mr *MockMediaLiveAPIMockRecorder) TransferInputDeviceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferInputDeviceWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).TransferInputDeviceWithContext), varargs...)
 }
 
 // UpdateChannel mocks base method
