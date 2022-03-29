@@ -734,6 +734,56 @@ func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) PutApplicationPoli
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutApplicationPolicyWithContext", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).PutApplicationPolicyWithContext), varargs...)
 }
 
+// UnshareApplication mocks base method
+func (m *MockServerlessApplicationRepositoryAPI) UnshareApplication(arg0 *serverlessapplicationrepository.UnshareApplicationInput) (*serverlessapplicationrepository.UnshareApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UnshareApplication", arg0)
+	ret0, _ := ret[0].(*serverlessapplicationrepository.UnshareApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UnshareApplication indicates an expected call of UnshareApplication
+func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) UnshareApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnshareApplication", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).UnshareApplication), arg0)
+}
+
+// UnshareApplicationRequest mocks base method
+func (m *MockServerlessApplicationRepositoryAPI) UnshareApplicationRequest(arg0 *serverlessapplicationrepository.UnshareApplicationInput) (*request.Request, *serverlessapplicationrepository.UnshareApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UnshareApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*serverlessapplicationrepository.UnshareApplicationOutput)
+	return ret0, ret1
+}
+
+// UnshareApplicationRequest indicates an expected call of UnshareApplicationRequest
+func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) UnshareApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnshareApplicationRequest", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).UnshareApplicationRequest), arg0)
+}
+
+// UnshareApplicationWithContext mocks base method
+func (m *MockServerlessApplicationRepositoryAPI) UnshareApplicationWithContext(arg0 context.Context, arg1 *serverlessapplicationrepository.UnshareApplicationInput, arg2 ...request.Option) (*serverlessapplicationrepository.UnshareApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UnshareApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*serverlessapplicationrepository.UnshareApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UnshareApplicationWithContext indicates an expected call of UnshareApplicationWithContext
+func (mr *MockServerlessApplicationRepositoryAPIMockRecorder) UnshareApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnshareApplicationWithContext", reflect.TypeOf((*MockServerlessApplicationRepositoryAPI)(nil).UnshareApplicationWithContext), varargs...)
+}
+
 // UpdateApplication mocks base method
 func (m *MockServerlessApplicationRepositoryAPI) UpdateApplication(arg0 *serverlessapplicationrepository.UpdateApplicationRequest) (*serverlessapplicationrepository.UpdateApplicationOutput, error) {
 	m.ctrl.T.Helper()
