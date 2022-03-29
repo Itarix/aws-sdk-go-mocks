@@ -985,6 +985,56 @@ func (mr *MockComprehendAPIMockRecorder) DescribeKeyPhrasesDetectionJobWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeKeyPhrasesDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeKeyPhrasesDetectionJobWithContext), varargs...)
 }
 
+// DescribePiiEntitiesDetectionJob mocks base method
+func (m *MockComprehendAPI) DescribePiiEntitiesDetectionJob(arg0 *comprehend.DescribePiiEntitiesDetectionJobInput) (*comprehend.DescribePiiEntitiesDetectionJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePiiEntitiesDetectionJob", arg0)
+	ret0, _ := ret[0].(*comprehend.DescribePiiEntitiesDetectionJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePiiEntitiesDetectionJob indicates an expected call of DescribePiiEntitiesDetectionJob
+func (mr *MockComprehendAPIMockRecorder) DescribePiiEntitiesDetectionJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePiiEntitiesDetectionJob", reflect.TypeOf((*MockComprehendAPI)(nil).DescribePiiEntitiesDetectionJob), arg0)
+}
+
+// DescribePiiEntitiesDetectionJobRequest mocks base method
+func (m *MockComprehendAPI) DescribePiiEntitiesDetectionJobRequest(arg0 *comprehend.DescribePiiEntitiesDetectionJobInput) (*request.Request, *comprehend.DescribePiiEntitiesDetectionJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePiiEntitiesDetectionJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DescribePiiEntitiesDetectionJobOutput)
+	return ret0, ret1
+}
+
+// DescribePiiEntitiesDetectionJobRequest indicates an expected call of DescribePiiEntitiesDetectionJobRequest
+func (mr *MockComprehendAPIMockRecorder) DescribePiiEntitiesDetectionJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePiiEntitiesDetectionJobRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DescribePiiEntitiesDetectionJobRequest), arg0)
+}
+
+// DescribePiiEntitiesDetectionJobWithContext mocks base method
+func (m *MockComprehendAPI) DescribePiiEntitiesDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.DescribePiiEntitiesDetectionJobInput, arg2 ...request.Option) (*comprehend.DescribePiiEntitiesDetectionJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribePiiEntitiesDetectionJobWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DescribePiiEntitiesDetectionJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePiiEntitiesDetectionJobWithContext indicates an expected call of DescribePiiEntitiesDetectionJobWithContext
+func (mr *MockComprehendAPIMockRecorder) DescribePiiEntitiesDetectionJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePiiEntitiesDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DescribePiiEntitiesDetectionJobWithContext), varargs...)
+}
+
 // DescribeSentimentDetectionJob mocks base method
 func (m *MockComprehendAPI) DescribeSentimentDetectionJob(arg0 *comprehend.DescribeSentimentDetectionJobInput) (*comprehend.DescribeSentimentDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -1233,6 +1283,56 @@ func (mr *MockComprehendAPIMockRecorder) DetectKeyPhrasesWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectKeyPhrasesWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DetectKeyPhrasesWithContext), varargs...)
+}
+
+// DetectPiiEntities mocks base method
+func (m *MockComprehendAPI) DetectPiiEntities(arg0 *comprehend.DetectPiiEntitiesInput) (*comprehend.DetectPiiEntitiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetectPiiEntities", arg0)
+	ret0, _ := ret[0].(*comprehend.DetectPiiEntitiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetectPiiEntities indicates an expected call of DetectPiiEntities
+func (mr *MockComprehendAPIMockRecorder) DetectPiiEntities(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectPiiEntities", reflect.TypeOf((*MockComprehendAPI)(nil).DetectPiiEntities), arg0)
+}
+
+// DetectPiiEntitiesRequest mocks base method
+func (m *MockComprehendAPI) DetectPiiEntitiesRequest(arg0 *comprehend.DetectPiiEntitiesInput) (*request.Request, *comprehend.DetectPiiEntitiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetectPiiEntitiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DetectPiiEntitiesOutput)
+	return ret0, ret1
+}
+
+// DetectPiiEntitiesRequest indicates an expected call of DetectPiiEntitiesRequest
+func (mr *MockComprehendAPIMockRecorder) DetectPiiEntitiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectPiiEntitiesRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DetectPiiEntitiesRequest), arg0)
+}
+
+// DetectPiiEntitiesWithContext mocks base method
+func (m *MockComprehendAPI) DetectPiiEntitiesWithContext(arg0 context.Context, arg1 *comprehend.DetectPiiEntitiesInput, arg2 ...request.Option) (*comprehend.DetectPiiEntitiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DetectPiiEntitiesWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DetectPiiEntitiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetectPiiEntitiesWithContext indicates an expected call of DetectPiiEntitiesWithContext
+func (mr *MockComprehendAPIMockRecorder) DetectPiiEntitiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectPiiEntitiesWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DetectPiiEntitiesWithContext), varargs...)
 }
 
 // DetectSentiment mocks base method
@@ -1883,6 +1983,56 @@ func (mr *MockComprehendAPIMockRecorder) ListKeyPhrasesDetectionJobsWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKeyPhrasesDetectionJobsWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListKeyPhrasesDetectionJobsWithContext), varargs...)
 }
 
+// ListPiiEntitiesDetectionJobs mocks base method
+func (m *MockComprehendAPI) ListPiiEntitiesDetectionJobs(arg0 *comprehend.ListPiiEntitiesDetectionJobsInput) (*comprehend.ListPiiEntitiesDetectionJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPiiEntitiesDetectionJobs", arg0)
+	ret0, _ := ret[0].(*comprehend.ListPiiEntitiesDetectionJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPiiEntitiesDetectionJobs indicates an expected call of ListPiiEntitiesDetectionJobs
+func (mr *MockComprehendAPIMockRecorder) ListPiiEntitiesDetectionJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPiiEntitiesDetectionJobs", reflect.TypeOf((*MockComprehendAPI)(nil).ListPiiEntitiesDetectionJobs), arg0)
+}
+
+// ListPiiEntitiesDetectionJobsRequest mocks base method
+func (m *MockComprehendAPI) ListPiiEntitiesDetectionJobsRequest(arg0 *comprehend.ListPiiEntitiesDetectionJobsInput) (*request.Request, *comprehend.ListPiiEntitiesDetectionJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPiiEntitiesDetectionJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.ListPiiEntitiesDetectionJobsOutput)
+	return ret0, ret1
+}
+
+// ListPiiEntitiesDetectionJobsRequest indicates an expected call of ListPiiEntitiesDetectionJobsRequest
+func (mr *MockComprehendAPIMockRecorder) ListPiiEntitiesDetectionJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPiiEntitiesDetectionJobsRequest", reflect.TypeOf((*MockComprehendAPI)(nil).ListPiiEntitiesDetectionJobsRequest), arg0)
+}
+
+// ListPiiEntitiesDetectionJobsWithContext mocks base method
+func (m *MockComprehendAPI) ListPiiEntitiesDetectionJobsWithContext(arg0 context.Context, arg1 *comprehend.ListPiiEntitiesDetectionJobsInput, arg2 ...request.Option) (*comprehend.ListPiiEntitiesDetectionJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPiiEntitiesDetectionJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.ListPiiEntitiesDetectionJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPiiEntitiesDetectionJobsWithContext indicates an expected call of ListPiiEntitiesDetectionJobsWithContext
+func (mr *MockComprehendAPIMockRecorder) ListPiiEntitiesDetectionJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPiiEntitiesDetectionJobsWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListPiiEntitiesDetectionJobsWithContext), varargs...)
+}
+
 // ListSentimentDetectionJobs mocks base method
 func (m *MockComprehendAPI) ListSentimentDetectionJobs(arg0 *comprehend.ListSentimentDetectionJobsInput) (*comprehend.ListSentimentDetectionJobsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2299,6 +2449,56 @@ func (mr *MockComprehendAPIMockRecorder) StartKeyPhrasesDetectionJobWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartKeyPhrasesDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).StartKeyPhrasesDetectionJobWithContext), varargs...)
 }
 
+// StartPiiEntitiesDetectionJob mocks base method
+func (m *MockComprehendAPI) StartPiiEntitiesDetectionJob(arg0 *comprehend.StartPiiEntitiesDetectionJobInput) (*comprehend.StartPiiEntitiesDetectionJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartPiiEntitiesDetectionJob", arg0)
+	ret0, _ := ret[0].(*comprehend.StartPiiEntitiesDetectionJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartPiiEntitiesDetectionJob indicates an expected call of StartPiiEntitiesDetectionJob
+func (mr *MockComprehendAPIMockRecorder) StartPiiEntitiesDetectionJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartPiiEntitiesDetectionJob", reflect.TypeOf((*MockComprehendAPI)(nil).StartPiiEntitiesDetectionJob), arg0)
+}
+
+// StartPiiEntitiesDetectionJobRequest mocks base method
+func (m *MockComprehendAPI) StartPiiEntitiesDetectionJobRequest(arg0 *comprehend.StartPiiEntitiesDetectionJobInput) (*request.Request, *comprehend.StartPiiEntitiesDetectionJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartPiiEntitiesDetectionJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.StartPiiEntitiesDetectionJobOutput)
+	return ret0, ret1
+}
+
+// StartPiiEntitiesDetectionJobRequest indicates an expected call of StartPiiEntitiesDetectionJobRequest
+func (mr *MockComprehendAPIMockRecorder) StartPiiEntitiesDetectionJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartPiiEntitiesDetectionJobRequest", reflect.TypeOf((*MockComprehendAPI)(nil).StartPiiEntitiesDetectionJobRequest), arg0)
+}
+
+// StartPiiEntitiesDetectionJobWithContext mocks base method
+func (m *MockComprehendAPI) StartPiiEntitiesDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.StartPiiEntitiesDetectionJobInput, arg2 ...request.Option) (*comprehend.StartPiiEntitiesDetectionJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartPiiEntitiesDetectionJobWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.StartPiiEntitiesDetectionJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartPiiEntitiesDetectionJobWithContext indicates an expected call of StartPiiEntitiesDetectionJobWithContext
+func (mr *MockComprehendAPIMockRecorder) StartPiiEntitiesDetectionJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartPiiEntitiesDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).StartPiiEntitiesDetectionJobWithContext), varargs...)
+}
+
 // StartSentimentDetectionJob mocks base method
 func (m *MockComprehendAPI) StartSentimentDetectionJob(arg0 *comprehend.StartSentimentDetectionJobInput) (*comprehend.StartSentimentDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -2547,6 +2747,56 @@ func (mr *MockComprehendAPIMockRecorder) StopKeyPhrasesDetectionJobWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopKeyPhrasesDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).StopKeyPhrasesDetectionJobWithContext), varargs...)
+}
+
+// StopPiiEntitiesDetectionJob mocks base method
+func (m *MockComprehendAPI) StopPiiEntitiesDetectionJob(arg0 *comprehend.StopPiiEntitiesDetectionJobInput) (*comprehend.StopPiiEntitiesDetectionJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopPiiEntitiesDetectionJob", arg0)
+	ret0, _ := ret[0].(*comprehend.StopPiiEntitiesDetectionJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopPiiEntitiesDetectionJob indicates an expected call of StopPiiEntitiesDetectionJob
+func (mr *MockComprehendAPIMockRecorder) StopPiiEntitiesDetectionJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopPiiEntitiesDetectionJob", reflect.TypeOf((*MockComprehendAPI)(nil).StopPiiEntitiesDetectionJob), arg0)
+}
+
+// StopPiiEntitiesDetectionJobRequest mocks base method
+func (m *MockComprehendAPI) StopPiiEntitiesDetectionJobRequest(arg0 *comprehend.StopPiiEntitiesDetectionJobInput) (*request.Request, *comprehend.StopPiiEntitiesDetectionJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopPiiEntitiesDetectionJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.StopPiiEntitiesDetectionJobOutput)
+	return ret0, ret1
+}
+
+// StopPiiEntitiesDetectionJobRequest indicates an expected call of StopPiiEntitiesDetectionJobRequest
+func (mr *MockComprehendAPIMockRecorder) StopPiiEntitiesDetectionJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopPiiEntitiesDetectionJobRequest", reflect.TypeOf((*MockComprehendAPI)(nil).StopPiiEntitiesDetectionJobRequest), arg0)
+}
+
+// StopPiiEntitiesDetectionJobWithContext mocks base method
+func (m *MockComprehendAPI) StopPiiEntitiesDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.StopPiiEntitiesDetectionJobInput, arg2 ...request.Option) (*comprehend.StopPiiEntitiesDetectionJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopPiiEntitiesDetectionJobWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.StopPiiEntitiesDetectionJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopPiiEntitiesDetectionJobWithContext indicates an expected call of StopPiiEntitiesDetectionJobWithContext
+func (mr *MockComprehendAPIMockRecorder) StopPiiEntitiesDetectionJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopPiiEntitiesDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).StopPiiEntitiesDetectionJobWithContext), varargs...)
 }
 
 // StopSentimentDetectionJob mocks base method
