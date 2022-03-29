@@ -400,6 +400,56 @@ func (mr *MockNeptuneAPIMockRecorder) CreateDBCluster(arg0 interface{}) *gomock.
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDBCluster", reflect.TypeOf((*MockNeptuneAPI)(nil).CreateDBCluster), arg0)
 }
 
+// CreateDBClusterEndpoint mocks base method
+func (m *MockNeptuneAPI) CreateDBClusterEndpoint(arg0 *neptune.CreateDBClusterEndpointInput) (*neptune.CreateDBClusterEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDBClusterEndpoint", arg0)
+	ret0, _ := ret[0].(*neptune.CreateDBClusterEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDBClusterEndpoint indicates an expected call of CreateDBClusterEndpoint
+func (mr *MockNeptuneAPIMockRecorder) CreateDBClusterEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDBClusterEndpoint", reflect.TypeOf((*MockNeptuneAPI)(nil).CreateDBClusterEndpoint), arg0)
+}
+
+// CreateDBClusterEndpointRequest mocks base method
+func (m *MockNeptuneAPI) CreateDBClusterEndpointRequest(arg0 *neptune.CreateDBClusterEndpointInput) (*request.Request, *neptune.CreateDBClusterEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDBClusterEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*neptune.CreateDBClusterEndpointOutput)
+	return ret0, ret1
+}
+
+// CreateDBClusterEndpointRequest indicates an expected call of CreateDBClusterEndpointRequest
+func (mr *MockNeptuneAPIMockRecorder) CreateDBClusterEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDBClusterEndpointRequest", reflect.TypeOf((*MockNeptuneAPI)(nil).CreateDBClusterEndpointRequest), arg0)
+}
+
+// CreateDBClusterEndpointWithContext mocks base method
+func (m *MockNeptuneAPI) CreateDBClusterEndpointWithContext(arg0 context.Context, arg1 *neptune.CreateDBClusterEndpointInput, arg2 ...request.Option) (*neptune.CreateDBClusterEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDBClusterEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*neptune.CreateDBClusterEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDBClusterEndpointWithContext indicates an expected call of CreateDBClusterEndpointWithContext
+func (mr *MockNeptuneAPIMockRecorder) CreateDBClusterEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDBClusterEndpointWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).CreateDBClusterEndpointWithContext), varargs...)
+}
+
 // CreateDBClusterParameterGroup mocks base method
 func (m *MockNeptuneAPI) CreateDBClusterParameterGroup(arg0 *neptune.CreateDBClusterParameterGroupInput) (*neptune.CreateDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -750,6 +800,56 @@ func (mr *MockNeptuneAPIMockRecorder) DeleteDBCluster(arg0 interface{}) *gomock.
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDBCluster", reflect.TypeOf((*MockNeptuneAPI)(nil).DeleteDBCluster), arg0)
 }
 
+// DeleteDBClusterEndpoint mocks base method
+func (m *MockNeptuneAPI) DeleteDBClusterEndpoint(arg0 *neptune.DeleteDBClusterEndpointInput) (*neptune.DeleteDBClusterEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDBClusterEndpoint", arg0)
+	ret0, _ := ret[0].(*neptune.DeleteDBClusterEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDBClusterEndpoint indicates an expected call of DeleteDBClusterEndpoint
+func (mr *MockNeptuneAPIMockRecorder) DeleteDBClusterEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDBClusterEndpoint", reflect.TypeOf((*MockNeptuneAPI)(nil).DeleteDBClusterEndpoint), arg0)
+}
+
+// DeleteDBClusterEndpointRequest mocks base method
+func (m *MockNeptuneAPI) DeleteDBClusterEndpointRequest(arg0 *neptune.DeleteDBClusterEndpointInput) (*request.Request, *neptune.DeleteDBClusterEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDBClusterEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*neptune.DeleteDBClusterEndpointOutput)
+	return ret0, ret1
+}
+
+// DeleteDBClusterEndpointRequest indicates an expected call of DeleteDBClusterEndpointRequest
+func (mr *MockNeptuneAPIMockRecorder) DeleteDBClusterEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDBClusterEndpointRequest", reflect.TypeOf((*MockNeptuneAPI)(nil).DeleteDBClusterEndpointRequest), arg0)
+}
+
+// DeleteDBClusterEndpointWithContext mocks base method
+func (m *MockNeptuneAPI) DeleteDBClusterEndpointWithContext(arg0 context.Context, arg1 *neptune.DeleteDBClusterEndpointInput, arg2 ...request.Option) (*neptune.DeleteDBClusterEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDBClusterEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*neptune.DeleteDBClusterEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDBClusterEndpointWithContext indicates an expected call of DeleteDBClusterEndpointWithContext
+func (mr *MockNeptuneAPIMockRecorder) DeleteDBClusterEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDBClusterEndpointWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).DeleteDBClusterEndpointWithContext), varargs...)
+}
+
 // DeleteDBClusterParameterGroup mocks base method
 func (m *MockNeptuneAPI) DeleteDBClusterParameterGroup(arg0 *neptune.DeleteDBClusterParameterGroupInput) (*neptune.DeleteDBClusterParameterGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -1083,6 +1183,89 @@ func (mr *MockNeptuneAPIMockRecorder) DeleteEventSubscriptionWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventSubscriptionWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).DeleteEventSubscriptionWithContext), varargs...)
+}
+
+// DescribeDBClusterEndpoints mocks base method
+func (m *MockNeptuneAPI) DescribeDBClusterEndpoints(arg0 *neptune.DescribeDBClusterEndpointsInput) (*neptune.DescribeDBClusterEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDBClusterEndpoints", arg0)
+	ret0, _ := ret[0].(*neptune.DescribeDBClusterEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDBClusterEndpoints indicates an expected call of DescribeDBClusterEndpoints
+func (mr *MockNeptuneAPIMockRecorder) DescribeDBClusterEndpoints(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterEndpoints", reflect.TypeOf((*MockNeptuneAPI)(nil).DescribeDBClusterEndpoints), arg0)
+}
+
+// DescribeDBClusterEndpointsPages mocks base method
+func (m *MockNeptuneAPI) DescribeDBClusterEndpointsPages(arg0 *neptune.DescribeDBClusterEndpointsInput, arg1 func(*neptune.DescribeDBClusterEndpointsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDBClusterEndpointsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDBClusterEndpointsPages indicates an expected call of DescribeDBClusterEndpointsPages
+func (mr *MockNeptuneAPIMockRecorder) DescribeDBClusterEndpointsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterEndpointsPages", reflect.TypeOf((*MockNeptuneAPI)(nil).DescribeDBClusterEndpointsPages), arg0, arg1)
+}
+
+// DescribeDBClusterEndpointsPagesWithContext mocks base method
+func (m *MockNeptuneAPI) DescribeDBClusterEndpointsPagesWithContext(arg0 context.Context, arg1 *neptune.DescribeDBClusterEndpointsInput, arg2 func(*neptune.DescribeDBClusterEndpointsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDBClusterEndpointsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDBClusterEndpointsPagesWithContext indicates an expected call of DescribeDBClusterEndpointsPagesWithContext
+func (mr *MockNeptuneAPIMockRecorder) DescribeDBClusterEndpointsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterEndpointsPagesWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).DescribeDBClusterEndpointsPagesWithContext), varargs...)
+}
+
+// DescribeDBClusterEndpointsRequest mocks base method
+func (m *MockNeptuneAPI) DescribeDBClusterEndpointsRequest(arg0 *neptune.DescribeDBClusterEndpointsInput) (*request.Request, *neptune.DescribeDBClusterEndpointsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDBClusterEndpointsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*neptune.DescribeDBClusterEndpointsOutput)
+	return ret0, ret1
+}
+
+// DescribeDBClusterEndpointsRequest indicates an expected call of DescribeDBClusterEndpointsRequest
+func (mr *MockNeptuneAPIMockRecorder) DescribeDBClusterEndpointsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterEndpointsRequest", reflect.TypeOf((*MockNeptuneAPI)(nil).DescribeDBClusterEndpointsRequest), arg0)
+}
+
+// DescribeDBClusterEndpointsWithContext mocks base method
+func (m *MockNeptuneAPI) DescribeDBClusterEndpointsWithContext(arg0 context.Context, arg1 *neptune.DescribeDBClusterEndpointsInput, arg2 ...request.Option) (*neptune.DescribeDBClusterEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDBClusterEndpointsWithContext", varargs...)
+	ret0, _ := ret[0].(*neptune.DescribeDBClusterEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDBClusterEndpointsWithContext indicates an expected call of DescribeDBClusterEndpointsWithContext
+func (mr *MockNeptuneAPIMockRecorder) DescribeDBClusterEndpointsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterEndpointsWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).DescribeDBClusterEndpointsWithContext), varargs...)
 }
 
 // DescribeDBClusterParameterGroups mocks base method
@@ -2395,6 +2578,56 @@ func (m *MockNeptuneAPI) ModifyDBCluster(arg0 *neptune.ModifyDBClusterInput) (*n
 func (mr *MockNeptuneAPIMockRecorder) ModifyDBCluster(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyDBCluster", reflect.TypeOf((*MockNeptuneAPI)(nil).ModifyDBCluster), arg0)
+}
+
+// ModifyDBClusterEndpoint mocks base method
+func (m *MockNeptuneAPI) ModifyDBClusterEndpoint(arg0 *neptune.ModifyDBClusterEndpointInput) (*neptune.ModifyDBClusterEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyDBClusterEndpoint", arg0)
+	ret0, _ := ret[0].(*neptune.ModifyDBClusterEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyDBClusterEndpoint indicates an expected call of ModifyDBClusterEndpoint
+func (mr *MockNeptuneAPIMockRecorder) ModifyDBClusterEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyDBClusterEndpoint", reflect.TypeOf((*MockNeptuneAPI)(nil).ModifyDBClusterEndpoint), arg0)
+}
+
+// ModifyDBClusterEndpointRequest mocks base method
+func (m *MockNeptuneAPI) ModifyDBClusterEndpointRequest(arg0 *neptune.ModifyDBClusterEndpointInput) (*request.Request, *neptune.ModifyDBClusterEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyDBClusterEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*neptune.ModifyDBClusterEndpointOutput)
+	return ret0, ret1
+}
+
+// ModifyDBClusterEndpointRequest indicates an expected call of ModifyDBClusterEndpointRequest
+func (mr *MockNeptuneAPIMockRecorder) ModifyDBClusterEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyDBClusterEndpointRequest", reflect.TypeOf((*MockNeptuneAPI)(nil).ModifyDBClusterEndpointRequest), arg0)
+}
+
+// ModifyDBClusterEndpointWithContext mocks base method
+func (m *MockNeptuneAPI) ModifyDBClusterEndpointWithContext(arg0 context.Context, arg1 *neptune.ModifyDBClusterEndpointInput, arg2 ...request.Option) (*neptune.ModifyDBClusterEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyDBClusterEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*neptune.ModifyDBClusterEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyDBClusterEndpointWithContext indicates an expected call of ModifyDBClusterEndpointWithContext
+func (mr *MockNeptuneAPIMockRecorder) ModifyDBClusterEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyDBClusterEndpointWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).ModifyDBClusterEndpointWithContext), varargs...)
 }
 
 // ModifyDBClusterParameterGroup mocks base method
