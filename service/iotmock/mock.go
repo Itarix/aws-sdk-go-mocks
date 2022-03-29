@@ -9021,6 +9021,39 @@ func (mr *MockIoTAPIMockRecorder) ListThingPrincipals(arg0 interface{}) *gomock.
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThingPrincipals", reflect.TypeOf((*MockIoTAPI)(nil).ListThingPrincipals), arg0)
 }
 
+// ListThingPrincipalsPages mocks base method
+func (m *MockIoTAPI) ListThingPrincipalsPages(arg0 *iot.ListThingPrincipalsInput, arg1 func(*iot.ListThingPrincipalsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListThingPrincipalsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListThingPrincipalsPages indicates an expected call of ListThingPrincipalsPages
+func (mr *MockIoTAPIMockRecorder) ListThingPrincipalsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThingPrincipalsPages", reflect.TypeOf((*MockIoTAPI)(nil).ListThingPrincipalsPages), arg0, arg1)
+}
+
+// ListThingPrincipalsPagesWithContext mocks base method
+func (m *MockIoTAPI) ListThingPrincipalsPagesWithContext(arg0 context.Context, arg1 *iot.ListThingPrincipalsInput, arg2 func(*iot.ListThingPrincipalsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListThingPrincipalsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListThingPrincipalsPagesWithContext indicates an expected call of ListThingPrincipalsPagesWithContext
+func (mr *MockIoTAPIMockRecorder) ListThingPrincipalsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThingPrincipalsPagesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListThingPrincipalsPagesWithContext), varargs...)
+}
+
 // ListThingPrincipalsRequest mocks base method
 func (m *MockIoTAPI) ListThingPrincipalsRequest(arg0 *iot.ListThingPrincipalsInput) (*request.Request, *iot.ListThingPrincipalsOutput) {
 	m.ctrl.T.Helper()

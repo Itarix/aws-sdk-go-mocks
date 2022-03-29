@@ -501,6 +501,272 @@ func (mr *MockXRayAPIMockRecorder) GetGroupsWithContext(arg0, arg1 interface{}, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGroupsWithContext", reflect.TypeOf((*MockXRayAPI)(nil).GetGroupsWithContext), varargs...)
 }
 
+// GetInsight mocks base method
+func (m *MockXRayAPI) GetInsight(arg0 *xray.GetInsightInput) (*xray.GetInsightOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsight", arg0)
+	ret0, _ := ret[0].(*xray.GetInsightOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInsight indicates an expected call of GetInsight
+func (mr *MockXRayAPIMockRecorder) GetInsight(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsight", reflect.TypeOf((*MockXRayAPI)(nil).GetInsight), arg0)
+}
+
+// GetInsightEvents mocks base method
+func (m *MockXRayAPI) GetInsightEvents(arg0 *xray.GetInsightEventsInput) (*xray.GetInsightEventsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsightEvents", arg0)
+	ret0, _ := ret[0].(*xray.GetInsightEventsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInsightEvents indicates an expected call of GetInsightEvents
+func (mr *MockXRayAPIMockRecorder) GetInsightEvents(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightEvents", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightEvents), arg0)
+}
+
+// GetInsightEventsPages mocks base method
+func (m *MockXRayAPI) GetInsightEventsPages(arg0 *xray.GetInsightEventsInput, arg1 func(*xray.GetInsightEventsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsightEventsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetInsightEventsPages indicates an expected call of GetInsightEventsPages
+func (mr *MockXRayAPIMockRecorder) GetInsightEventsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightEventsPages", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightEventsPages), arg0, arg1)
+}
+
+// GetInsightEventsPagesWithContext mocks base method
+func (m *MockXRayAPI) GetInsightEventsPagesWithContext(arg0 context.Context, arg1 *xray.GetInsightEventsInput, arg2 func(*xray.GetInsightEventsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetInsightEventsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetInsightEventsPagesWithContext indicates an expected call of GetInsightEventsPagesWithContext
+func (mr *MockXRayAPIMockRecorder) GetInsightEventsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightEventsPagesWithContext", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightEventsPagesWithContext), varargs...)
+}
+
+// GetInsightEventsRequest mocks base method
+func (m *MockXRayAPI) GetInsightEventsRequest(arg0 *xray.GetInsightEventsInput) (*request.Request, *xray.GetInsightEventsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsightEventsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*xray.GetInsightEventsOutput)
+	return ret0, ret1
+}
+
+// GetInsightEventsRequest indicates an expected call of GetInsightEventsRequest
+func (mr *MockXRayAPIMockRecorder) GetInsightEventsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightEventsRequest", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightEventsRequest), arg0)
+}
+
+// GetInsightEventsWithContext mocks base method
+func (m *MockXRayAPI) GetInsightEventsWithContext(arg0 context.Context, arg1 *xray.GetInsightEventsInput, arg2 ...request.Option) (*xray.GetInsightEventsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetInsightEventsWithContext", varargs...)
+	ret0, _ := ret[0].(*xray.GetInsightEventsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInsightEventsWithContext indicates an expected call of GetInsightEventsWithContext
+func (mr *MockXRayAPIMockRecorder) GetInsightEventsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightEventsWithContext", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightEventsWithContext), varargs...)
+}
+
+// GetInsightImpactGraph mocks base method
+func (m *MockXRayAPI) GetInsightImpactGraph(arg0 *xray.GetInsightImpactGraphInput) (*xray.GetInsightImpactGraphOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsightImpactGraph", arg0)
+	ret0, _ := ret[0].(*xray.GetInsightImpactGraphOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInsightImpactGraph indicates an expected call of GetInsightImpactGraph
+func (mr *MockXRayAPIMockRecorder) GetInsightImpactGraph(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightImpactGraph", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightImpactGraph), arg0)
+}
+
+// GetInsightImpactGraphRequest mocks base method
+func (m *MockXRayAPI) GetInsightImpactGraphRequest(arg0 *xray.GetInsightImpactGraphInput) (*request.Request, *xray.GetInsightImpactGraphOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsightImpactGraphRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*xray.GetInsightImpactGraphOutput)
+	return ret0, ret1
+}
+
+// GetInsightImpactGraphRequest indicates an expected call of GetInsightImpactGraphRequest
+func (mr *MockXRayAPIMockRecorder) GetInsightImpactGraphRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightImpactGraphRequest", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightImpactGraphRequest), arg0)
+}
+
+// GetInsightImpactGraphWithContext mocks base method
+func (m *MockXRayAPI) GetInsightImpactGraphWithContext(arg0 context.Context, arg1 *xray.GetInsightImpactGraphInput, arg2 ...request.Option) (*xray.GetInsightImpactGraphOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetInsightImpactGraphWithContext", varargs...)
+	ret0, _ := ret[0].(*xray.GetInsightImpactGraphOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInsightImpactGraphWithContext indicates an expected call of GetInsightImpactGraphWithContext
+func (mr *MockXRayAPIMockRecorder) GetInsightImpactGraphWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightImpactGraphWithContext", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightImpactGraphWithContext), varargs...)
+}
+
+// GetInsightRequest mocks base method
+func (m *MockXRayAPI) GetInsightRequest(arg0 *xray.GetInsightInput) (*request.Request, *xray.GetInsightOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsightRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*xray.GetInsightOutput)
+	return ret0, ret1
+}
+
+// GetInsightRequest indicates an expected call of GetInsightRequest
+func (mr *MockXRayAPIMockRecorder) GetInsightRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightRequest", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightRequest), arg0)
+}
+
+// GetInsightSummaries mocks base method
+func (m *MockXRayAPI) GetInsightSummaries(arg0 *xray.GetInsightSummariesInput) (*xray.GetInsightSummariesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsightSummaries", arg0)
+	ret0, _ := ret[0].(*xray.GetInsightSummariesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInsightSummaries indicates an expected call of GetInsightSummaries
+func (mr *MockXRayAPIMockRecorder) GetInsightSummaries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightSummaries", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightSummaries), arg0)
+}
+
+// GetInsightSummariesPages mocks base method
+func (m *MockXRayAPI) GetInsightSummariesPages(arg0 *xray.GetInsightSummariesInput, arg1 func(*xray.GetInsightSummariesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsightSummariesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetInsightSummariesPages indicates an expected call of GetInsightSummariesPages
+func (mr *MockXRayAPIMockRecorder) GetInsightSummariesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightSummariesPages", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightSummariesPages), arg0, arg1)
+}
+
+// GetInsightSummariesPagesWithContext mocks base method
+func (m *MockXRayAPI) GetInsightSummariesPagesWithContext(arg0 context.Context, arg1 *xray.GetInsightSummariesInput, arg2 func(*xray.GetInsightSummariesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetInsightSummariesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetInsightSummariesPagesWithContext indicates an expected call of GetInsightSummariesPagesWithContext
+func (mr *MockXRayAPIMockRecorder) GetInsightSummariesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightSummariesPagesWithContext", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightSummariesPagesWithContext), varargs...)
+}
+
+// GetInsightSummariesRequest mocks base method
+func (m *MockXRayAPI) GetInsightSummariesRequest(arg0 *xray.GetInsightSummariesInput) (*request.Request, *xray.GetInsightSummariesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsightSummariesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*xray.GetInsightSummariesOutput)
+	return ret0, ret1
+}
+
+// GetInsightSummariesRequest indicates an expected call of GetInsightSummariesRequest
+func (mr *MockXRayAPIMockRecorder) GetInsightSummariesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightSummariesRequest", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightSummariesRequest), arg0)
+}
+
+// GetInsightSummariesWithContext mocks base method
+func (m *MockXRayAPI) GetInsightSummariesWithContext(arg0 context.Context, arg1 *xray.GetInsightSummariesInput, arg2 ...request.Option) (*xray.GetInsightSummariesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetInsightSummariesWithContext", varargs...)
+	ret0, _ := ret[0].(*xray.GetInsightSummariesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInsightSummariesWithContext indicates an expected call of GetInsightSummariesWithContext
+func (mr *MockXRayAPIMockRecorder) GetInsightSummariesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightSummariesWithContext", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightSummariesWithContext), varargs...)
+}
+
+// GetInsightWithContext mocks base method
+func (m *MockXRayAPI) GetInsightWithContext(arg0 context.Context, arg1 *xray.GetInsightInput, arg2 ...request.Option) (*xray.GetInsightOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetInsightWithContext", varargs...)
+	ret0, _ := ret[0].(*xray.GetInsightOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInsightWithContext indicates an expected call of GetInsightWithContext
+func (mr *MockXRayAPIMockRecorder) GetInsightWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightWithContext", reflect.TypeOf((*MockXRayAPI)(nil).GetInsightWithContext), varargs...)
+}
+
 // GetSamplingRules mocks base method
 func (m *MockXRayAPI) GetSamplingRules(arg0 *xray.GetSamplingRulesInput) (*xray.GetSamplingRulesOutput, error) {
 	m.ctrl.T.Helper()
