@@ -551,6 +551,56 @@ func (mr *MockResourceGroupsAPIMockRecorder) ListGroupsWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsWithContext", reflect.TypeOf((*MockResourceGroupsAPI)(nil).ListGroupsWithContext), varargs...)
 }
 
+// PutGroupConfiguration mocks base method
+func (m *MockResourceGroupsAPI) PutGroupConfiguration(arg0 *resourcegroups.PutGroupConfigurationInput) (*resourcegroups.PutGroupConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutGroupConfiguration", arg0)
+	ret0, _ := ret[0].(*resourcegroups.PutGroupConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutGroupConfiguration indicates an expected call of PutGroupConfiguration
+func (mr *MockResourceGroupsAPIMockRecorder) PutGroupConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutGroupConfiguration", reflect.TypeOf((*MockResourceGroupsAPI)(nil).PutGroupConfiguration), arg0)
+}
+
+// PutGroupConfigurationRequest mocks base method
+func (m *MockResourceGroupsAPI) PutGroupConfigurationRequest(arg0 *resourcegroups.PutGroupConfigurationInput) (*request.Request, *resourcegroups.PutGroupConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutGroupConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resourcegroups.PutGroupConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutGroupConfigurationRequest indicates an expected call of PutGroupConfigurationRequest
+func (mr *MockResourceGroupsAPIMockRecorder) PutGroupConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutGroupConfigurationRequest", reflect.TypeOf((*MockResourceGroupsAPI)(nil).PutGroupConfigurationRequest), arg0)
+}
+
+// PutGroupConfigurationWithContext mocks base method
+func (m *MockResourceGroupsAPI) PutGroupConfigurationWithContext(arg0 context.Context, arg1 *resourcegroups.PutGroupConfigurationInput, arg2 ...request.Option) (*resourcegroups.PutGroupConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutGroupConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*resourcegroups.PutGroupConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutGroupConfigurationWithContext indicates an expected call of PutGroupConfigurationWithContext
+func (mr *MockResourceGroupsAPIMockRecorder) PutGroupConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutGroupConfigurationWithContext", reflect.TypeOf((*MockResourceGroupsAPI)(nil).PutGroupConfigurationWithContext), varargs...)
+}
+
 // SearchResources mocks base method
 func (m *MockResourceGroupsAPI) SearchResources(arg0 *resourcegroups.SearchResourcesInput) (*resourcegroups.SearchResourcesOutput, error) {
 	m.ctrl.T.Helper()

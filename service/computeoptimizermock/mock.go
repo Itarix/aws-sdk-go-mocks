@@ -435,6 +435,56 @@ func (mr *MockComputeOptimizerAPIMockRecorder) GetEnrollmentStatusWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnrollmentStatusWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetEnrollmentStatusWithContext), varargs...)
 }
 
+// GetLambdaFunctionRecommendations mocks base method
+func (m *MockComputeOptimizerAPI) GetLambdaFunctionRecommendations(arg0 *computeoptimizer.GetLambdaFunctionRecommendationsInput) (*computeoptimizer.GetLambdaFunctionRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLambdaFunctionRecommendations", arg0)
+	ret0, _ := ret[0].(*computeoptimizer.GetLambdaFunctionRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLambdaFunctionRecommendations indicates an expected call of GetLambdaFunctionRecommendations
+func (mr *MockComputeOptimizerAPIMockRecorder) GetLambdaFunctionRecommendations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLambdaFunctionRecommendations", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetLambdaFunctionRecommendations), arg0)
+}
+
+// GetLambdaFunctionRecommendationsRequest mocks base method
+func (m *MockComputeOptimizerAPI) GetLambdaFunctionRecommendationsRequest(arg0 *computeoptimizer.GetLambdaFunctionRecommendationsInput) (*request.Request, *computeoptimizer.GetLambdaFunctionRecommendationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLambdaFunctionRecommendationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*computeoptimizer.GetLambdaFunctionRecommendationsOutput)
+	return ret0, ret1
+}
+
+// GetLambdaFunctionRecommendationsRequest indicates an expected call of GetLambdaFunctionRecommendationsRequest
+func (mr *MockComputeOptimizerAPIMockRecorder) GetLambdaFunctionRecommendationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLambdaFunctionRecommendationsRequest", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetLambdaFunctionRecommendationsRequest), arg0)
+}
+
+// GetLambdaFunctionRecommendationsWithContext mocks base method
+func (m *MockComputeOptimizerAPI) GetLambdaFunctionRecommendationsWithContext(arg0 context.Context, arg1 *computeoptimizer.GetLambdaFunctionRecommendationsInput, arg2 ...request.Option) (*computeoptimizer.GetLambdaFunctionRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLambdaFunctionRecommendationsWithContext", varargs...)
+	ret0, _ := ret[0].(*computeoptimizer.GetLambdaFunctionRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLambdaFunctionRecommendationsWithContext indicates an expected call of GetLambdaFunctionRecommendationsWithContext
+func (mr *MockComputeOptimizerAPIMockRecorder) GetLambdaFunctionRecommendationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLambdaFunctionRecommendationsWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetLambdaFunctionRecommendationsWithContext), varargs...)
+}
+
 // GetRecommendationSummaries mocks base method
 func (m *MockComputeOptimizerAPI) GetRecommendationSummaries(arg0 *computeoptimizer.GetRecommendationSummariesInput) (*computeoptimizer.GetRecommendationSummariesOutput, error) {
 	m.ctrl.T.Helper()
