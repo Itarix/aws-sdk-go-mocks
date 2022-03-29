@@ -18224,6 +18224,56 @@ func (mr *MockEC2APIMockRecorder) ImportVolumeWithContext(arg0, arg1 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportVolumeWithContext", reflect.TypeOf((*MockEC2API)(nil).ImportVolumeWithContext), varargs...)
 }
 
+// ModifyAvailabilityZoneGroup mocks base method
+func (m *MockEC2API) ModifyAvailabilityZoneGroup(arg0 *ec2.ModifyAvailabilityZoneGroupInput) (*ec2.ModifyAvailabilityZoneGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyAvailabilityZoneGroup", arg0)
+	ret0, _ := ret[0].(*ec2.ModifyAvailabilityZoneGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyAvailabilityZoneGroup indicates an expected call of ModifyAvailabilityZoneGroup
+func (mr *MockEC2APIMockRecorder) ModifyAvailabilityZoneGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyAvailabilityZoneGroup", reflect.TypeOf((*MockEC2API)(nil).ModifyAvailabilityZoneGroup), arg0)
+}
+
+// ModifyAvailabilityZoneGroupRequest mocks base method
+func (m *MockEC2API) ModifyAvailabilityZoneGroupRequest(arg0 *ec2.ModifyAvailabilityZoneGroupInput) (*request.Request, *ec2.ModifyAvailabilityZoneGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyAvailabilityZoneGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.ModifyAvailabilityZoneGroupOutput)
+	return ret0, ret1
+}
+
+// ModifyAvailabilityZoneGroupRequest indicates an expected call of ModifyAvailabilityZoneGroupRequest
+func (mr *MockEC2APIMockRecorder) ModifyAvailabilityZoneGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyAvailabilityZoneGroupRequest", reflect.TypeOf((*MockEC2API)(nil).ModifyAvailabilityZoneGroupRequest), arg0)
+}
+
+// ModifyAvailabilityZoneGroupWithContext mocks base method
+func (m *MockEC2API) ModifyAvailabilityZoneGroupWithContext(arg0 context.Context, arg1 *ec2.ModifyAvailabilityZoneGroupInput, arg2 ...request.Option) (*ec2.ModifyAvailabilityZoneGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyAvailabilityZoneGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.ModifyAvailabilityZoneGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyAvailabilityZoneGroupWithContext indicates an expected call of ModifyAvailabilityZoneGroupWithContext
+func (mr *MockEC2APIMockRecorder) ModifyAvailabilityZoneGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyAvailabilityZoneGroupWithContext", reflect.TypeOf((*MockEC2API)(nil).ModifyAvailabilityZoneGroupWithContext), varargs...)
+}
+
 // ModifyCapacityReservation mocks base method
 func (m *MockEC2API) ModifyCapacityReservation(arg0 *ec2.ModifyCapacityReservationInput) (*ec2.ModifyCapacityReservationOutput, error) {
 	m.ctrl.T.Helper()
