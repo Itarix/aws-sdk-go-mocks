@@ -600,6 +600,39 @@ func (mr *MockCognitoIdentityAPIMockRecorder) ListIdentityPools(arg0 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdentityPools", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).ListIdentityPools), arg0)
 }
 
+// ListIdentityPoolsPages mocks base method
+func (m *MockCognitoIdentityAPI) ListIdentityPoolsPages(arg0 *cognitoidentity.ListIdentityPoolsInput, arg1 func(*cognitoidentity.ListIdentityPoolsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIdentityPoolsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIdentityPoolsPages indicates an expected call of ListIdentityPoolsPages
+func (mr *MockCognitoIdentityAPIMockRecorder) ListIdentityPoolsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdentityPoolsPages", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).ListIdentityPoolsPages), arg0, arg1)
+}
+
+// ListIdentityPoolsPagesWithContext mocks base method
+func (m *MockCognitoIdentityAPI) ListIdentityPoolsPagesWithContext(arg0 context.Context, arg1 *cognitoidentity.ListIdentityPoolsInput, arg2 func(*cognitoidentity.ListIdentityPoolsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIdentityPoolsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIdentityPoolsPagesWithContext indicates an expected call of ListIdentityPoolsPagesWithContext
+func (mr *MockCognitoIdentityAPIMockRecorder) ListIdentityPoolsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdentityPoolsPagesWithContext", reflect.TypeOf((*MockCognitoIdentityAPI)(nil).ListIdentityPoolsPagesWithContext), varargs...)
+}
+
 // ListIdentityPoolsRequest mocks base method
 func (m *MockCognitoIdentityAPI) ListIdentityPoolsRequest(arg0 *cognitoidentity.ListIdentityPoolsInput) (*request.Request, *cognitoidentity.ListIdentityPoolsOutput) {
 	m.ctrl.T.Helper()

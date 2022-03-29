@@ -634,6 +634,106 @@ func (mr *MockCloudHSMV2APIMockRecorder) ListTagsWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsWithContext", reflect.TypeOf((*MockCloudHSMV2API)(nil).ListTagsWithContext), varargs...)
 }
 
+// ModifyBackupAttributes mocks base method
+func (m *MockCloudHSMV2API) ModifyBackupAttributes(arg0 *cloudhsmv2.ModifyBackupAttributesInput) (*cloudhsmv2.ModifyBackupAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyBackupAttributes", arg0)
+	ret0, _ := ret[0].(*cloudhsmv2.ModifyBackupAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyBackupAttributes indicates an expected call of ModifyBackupAttributes
+func (mr *MockCloudHSMV2APIMockRecorder) ModifyBackupAttributes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyBackupAttributes", reflect.TypeOf((*MockCloudHSMV2API)(nil).ModifyBackupAttributes), arg0)
+}
+
+// ModifyBackupAttributesRequest mocks base method
+func (m *MockCloudHSMV2API) ModifyBackupAttributesRequest(arg0 *cloudhsmv2.ModifyBackupAttributesInput) (*request.Request, *cloudhsmv2.ModifyBackupAttributesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyBackupAttributesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudhsmv2.ModifyBackupAttributesOutput)
+	return ret0, ret1
+}
+
+// ModifyBackupAttributesRequest indicates an expected call of ModifyBackupAttributesRequest
+func (mr *MockCloudHSMV2APIMockRecorder) ModifyBackupAttributesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyBackupAttributesRequest", reflect.TypeOf((*MockCloudHSMV2API)(nil).ModifyBackupAttributesRequest), arg0)
+}
+
+// ModifyBackupAttributesWithContext mocks base method
+func (m *MockCloudHSMV2API) ModifyBackupAttributesWithContext(arg0 context.Context, arg1 *cloudhsmv2.ModifyBackupAttributesInput, arg2 ...request.Option) (*cloudhsmv2.ModifyBackupAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyBackupAttributesWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudhsmv2.ModifyBackupAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyBackupAttributesWithContext indicates an expected call of ModifyBackupAttributesWithContext
+func (mr *MockCloudHSMV2APIMockRecorder) ModifyBackupAttributesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyBackupAttributesWithContext", reflect.TypeOf((*MockCloudHSMV2API)(nil).ModifyBackupAttributesWithContext), varargs...)
+}
+
+// ModifyCluster mocks base method
+func (m *MockCloudHSMV2API) ModifyCluster(arg0 *cloudhsmv2.ModifyClusterInput) (*cloudhsmv2.ModifyClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyCluster", arg0)
+	ret0, _ := ret[0].(*cloudhsmv2.ModifyClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyCluster indicates an expected call of ModifyCluster
+func (mr *MockCloudHSMV2APIMockRecorder) ModifyCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCluster", reflect.TypeOf((*MockCloudHSMV2API)(nil).ModifyCluster), arg0)
+}
+
+// ModifyClusterRequest mocks base method
+func (m *MockCloudHSMV2API) ModifyClusterRequest(arg0 *cloudhsmv2.ModifyClusterInput) (*request.Request, *cloudhsmv2.ModifyClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudhsmv2.ModifyClusterOutput)
+	return ret0, ret1
+}
+
+// ModifyClusterRequest indicates an expected call of ModifyClusterRequest
+func (mr *MockCloudHSMV2APIMockRecorder) ModifyClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterRequest", reflect.TypeOf((*MockCloudHSMV2API)(nil).ModifyClusterRequest), arg0)
+}
+
+// ModifyClusterWithContext mocks base method
+func (m *MockCloudHSMV2API) ModifyClusterWithContext(arg0 context.Context, arg1 *cloudhsmv2.ModifyClusterInput, arg2 ...request.Option) (*cloudhsmv2.ModifyClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudhsmv2.ModifyClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyClusterWithContext indicates an expected call of ModifyClusterWithContext
+func (mr *MockCloudHSMV2APIMockRecorder) ModifyClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterWithContext", reflect.TypeOf((*MockCloudHSMV2API)(nil).ModifyClusterWithContext), varargs...)
+}
+
 // RestoreBackup mocks base method
 func (m *MockCloudHSMV2API) RestoreBackup(arg0 *cloudhsmv2.RestoreBackupInput) (*cloudhsmv2.RestoreBackupOutput, error) {
 	m.ctrl.T.Helper()

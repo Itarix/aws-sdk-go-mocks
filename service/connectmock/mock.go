@@ -35,6 +35,206 @@ func (m *MockConnectAPI) EXPECT() *MockConnectAPIMockRecorder {
 	return m.recorder
 }
 
+// AssociateApprovedOrigin mocks base method
+func (m *MockConnectAPI) AssociateApprovedOrigin(arg0 *connect.AssociateApprovedOriginInput) (*connect.AssociateApprovedOriginOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateApprovedOrigin", arg0)
+	ret0, _ := ret[0].(*connect.AssociateApprovedOriginOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateApprovedOrigin indicates an expected call of AssociateApprovedOrigin
+func (mr *MockConnectAPIMockRecorder) AssociateApprovedOrigin(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApprovedOrigin", reflect.TypeOf((*MockConnectAPI)(nil).AssociateApprovedOrigin), arg0)
+}
+
+// AssociateApprovedOriginRequest mocks base method
+func (m *MockConnectAPI) AssociateApprovedOriginRequest(arg0 *connect.AssociateApprovedOriginInput) (*request.Request, *connect.AssociateApprovedOriginOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateApprovedOriginRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.AssociateApprovedOriginOutput)
+	return ret0, ret1
+}
+
+// AssociateApprovedOriginRequest indicates an expected call of AssociateApprovedOriginRequest
+func (mr *MockConnectAPIMockRecorder) AssociateApprovedOriginRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApprovedOriginRequest", reflect.TypeOf((*MockConnectAPI)(nil).AssociateApprovedOriginRequest), arg0)
+}
+
+// AssociateApprovedOriginWithContext mocks base method
+func (m *MockConnectAPI) AssociateApprovedOriginWithContext(arg0 context.Context, arg1 *connect.AssociateApprovedOriginInput, arg2 ...request.Option) (*connect.AssociateApprovedOriginOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateApprovedOriginWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.AssociateApprovedOriginOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateApprovedOriginWithContext indicates an expected call of AssociateApprovedOriginWithContext
+func (mr *MockConnectAPIMockRecorder) AssociateApprovedOriginWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApprovedOriginWithContext", reflect.TypeOf((*MockConnectAPI)(nil).AssociateApprovedOriginWithContext), varargs...)
+}
+
+// AssociateInstanceStorageConfig mocks base method
+func (m *MockConnectAPI) AssociateInstanceStorageConfig(arg0 *connect.AssociateInstanceStorageConfigInput) (*connect.AssociateInstanceStorageConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateInstanceStorageConfig", arg0)
+	ret0, _ := ret[0].(*connect.AssociateInstanceStorageConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateInstanceStorageConfig indicates an expected call of AssociateInstanceStorageConfig
+func (mr *MockConnectAPIMockRecorder) AssociateInstanceStorageConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateInstanceStorageConfig", reflect.TypeOf((*MockConnectAPI)(nil).AssociateInstanceStorageConfig), arg0)
+}
+
+// AssociateInstanceStorageConfigRequest mocks base method
+func (m *MockConnectAPI) AssociateInstanceStorageConfigRequest(arg0 *connect.AssociateInstanceStorageConfigInput) (*request.Request, *connect.AssociateInstanceStorageConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateInstanceStorageConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.AssociateInstanceStorageConfigOutput)
+	return ret0, ret1
+}
+
+// AssociateInstanceStorageConfigRequest indicates an expected call of AssociateInstanceStorageConfigRequest
+func (mr *MockConnectAPIMockRecorder) AssociateInstanceStorageConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateInstanceStorageConfigRequest", reflect.TypeOf((*MockConnectAPI)(nil).AssociateInstanceStorageConfigRequest), arg0)
+}
+
+// AssociateInstanceStorageConfigWithContext mocks base method
+func (m *MockConnectAPI) AssociateInstanceStorageConfigWithContext(arg0 context.Context, arg1 *connect.AssociateInstanceStorageConfigInput, arg2 ...request.Option) (*connect.AssociateInstanceStorageConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateInstanceStorageConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.AssociateInstanceStorageConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateInstanceStorageConfigWithContext indicates an expected call of AssociateInstanceStorageConfigWithContext
+func (mr *MockConnectAPIMockRecorder) AssociateInstanceStorageConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateInstanceStorageConfigWithContext", reflect.TypeOf((*MockConnectAPI)(nil).AssociateInstanceStorageConfigWithContext), varargs...)
+}
+
+// AssociateLambdaFunction mocks base method
+func (m *MockConnectAPI) AssociateLambdaFunction(arg0 *connect.AssociateLambdaFunctionInput) (*connect.AssociateLambdaFunctionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateLambdaFunction", arg0)
+	ret0, _ := ret[0].(*connect.AssociateLambdaFunctionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateLambdaFunction indicates an expected call of AssociateLambdaFunction
+func (mr *MockConnectAPIMockRecorder) AssociateLambdaFunction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateLambdaFunction", reflect.TypeOf((*MockConnectAPI)(nil).AssociateLambdaFunction), arg0)
+}
+
+// AssociateLambdaFunctionRequest mocks base method
+func (m *MockConnectAPI) AssociateLambdaFunctionRequest(arg0 *connect.AssociateLambdaFunctionInput) (*request.Request, *connect.AssociateLambdaFunctionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateLambdaFunctionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.AssociateLambdaFunctionOutput)
+	return ret0, ret1
+}
+
+// AssociateLambdaFunctionRequest indicates an expected call of AssociateLambdaFunctionRequest
+func (mr *MockConnectAPIMockRecorder) AssociateLambdaFunctionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateLambdaFunctionRequest", reflect.TypeOf((*MockConnectAPI)(nil).AssociateLambdaFunctionRequest), arg0)
+}
+
+// AssociateLambdaFunctionWithContext mocks base method
+func (m *MockConnectAPI) AssociateLambdaFunctionWithContext(arg0 context.Context, arg1 *connect.AssociateLambdaFunctionInput, arg2 ...request.Option) (*connect.AssociateLambdaFunctionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateLambdaFunctionWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.AssociateLambdaFunctionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateLambdaFunctionWithContext indicates an expected call of AssociateLambdaFunctionWithContext
+func (mr *MockConnectAPIMockRecorder) AssociateLambdaFunctionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateLambdaFunctionWithContext", reflect.TypeOf((*MockConnectAPI)(nil).AssociateLambdaFunctionWithContext), varargs...)
+}
+
+// AssociateLexBot mocks base method
+func (m *MockConnectAPI) AssociateLexBot(arg0 *connect.AssociateLexBotInput) (*connect.AssociateLexBotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateLexBot", arg0)
+	ret0, _ := ret[0].(*connect.AssociateLexBotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateLexBot indicates an expected call of AssociateLexBot
+func (mr *MockConnectAPIMockRecorder) AssociateLexBot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateLexBot", reflect.TypeOf((*MockConnectAPI)(nil).AssociateLexBot), arg0)
+}
+
+// AssociateLexBotRequest mocks base method
+func (m *MockConnectAPI) AssociateLexBotRequest(arg0 *connect.AssociateLexBotInput) (*request.Request, *connect.AssociateLexBotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateLexBotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.AssociateLexBotOutput)
+	return ret0, ret1
+}
+
+// AssociateLexBotRequest indicates an expected call of AssociateLexBotRequest
+func (mr *MockConnectAPIMockRecorder) AssociateLexBotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateLexBotRequest", reflect.TypeOf((*MockConnectAPI)(nil).AssociateLexBotRequest), arg0)
+}
+
+// AssociateLexBotWithContext mocks base method
+func (m *MockConnectAPI) AssociateLexBotWithContext(arg0 context.Context, arg1 *connect.AssociateLexBotInput, arg2 ...request.Option) (*connect.AssociateLexBotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateLexBotWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.AssociateLexBotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateLexBotWithContext indicates an expected call of AssociateLexBotWithContext
+func (mr *MockConnectAPIMockRecorder) AssociateLexBotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateLexBotWithContext", reflect.TypeOf((*MockConnectAPI)(nil).AssociateLexBotWithContext), varargs...)
+}
+
 // AssociateRoutingProfileQueues mocks base method
 func (m *MockConnectAPI) AssociateRoutingProfileQueues(arg0 *connect.AssociateRoutingProfileQueuesInput) (*connect.AssociateRoutingProfileQueuesOutput, error) {
 	m.ctrl.T.Helper()
@@ -85,6 +285,56 @@ func (mr *MockConnectAPIMockRecorder) AssociateRoutingProfileQueuesWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateRoutingProfileQueuesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).AssociateRoutingProfileQueuesWithContext), varargs...)
 }
 
+// AssociateSecurityKey mocks base method
+func (m *MockConnectAPI) AssociateSecurityKey(arg0 *connect.AssociateSecurityKeyInput) (*connect.AssociateSecurityKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateSecurityKey", arg0)
+	ret0, _ := ret[0].(*connect.AssociateSecurityKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateSecurityKey indicates an expected call of AssociateSecurityKey
+func (mr *MockConnectAPIMockRecorder) AssociateSecurityKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSecurityKey", reflect.TypeOf((*MockConnectAPI)(nil).AssociateSecurityKey), arg0)
+}
+
+// AssociateSecurityKeyRequest mocks base method
+func (m *MockConnectAPI) AssociateSecurityKeyRequest(arg0 *connect.AssociateSecurityKeyInput) (*request.Request, *connect.AssociateSecurityKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateSecurityKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.AssociateSecurityKeyOutput)
+	return ret0, ret1
+}
+
+// AssociateSecurityKeyRequest indicates an expected call of AssociateSecurityKeyRequest
+func (mr *MockConnectAPIMockRecorder) AssociateSecurityKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSecurityKeyRequest", reflect.TypeOf((*MockConnectAPI)(nil).AssociateSecurityKeyRequest), arg0)
+}
+
+// AssociateSecurityKeyWithContext mocks base method
+func (m *MockConnectAPI) AssociateSecurityKeyWithContext(arg0 context.Context, arg1 *connect.AssociateSecurityKeyInput, arg2 ...request.Option) (*connect.AssociateSecurityKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateSecurityKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.AssociateSecurityKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateSecurityKeyWithContext indicates an expected call of AssociateSecurityKeyWithContext
+func (mr *MockConnectAPIMockRecorder) AssociateSecurityKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSecurityKeyWithContext", reflect.TypeOf((*MockConnectAPI)(nil).AssociateSecurityKeyWithContext), varargs...)
+}
+
 // CreateContactFlow mocks base method
 func (m *MockConnectAPI) CreateContactFlow(arg0 *connect.CreateContactFlowInput) (*connect.CreateContactFlowOutput, error) {
 	m.ctrl.T.Helper()
@@ -133,6 +383,56 @@ func (mr *MockConnectAPIMockRecorder) CreateContactFlowWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactFlowWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateContactFlowWithContext), varargs...)
+}
+
+// CreateInstance mocks base method
+func (m *MockConnectAPI) CreateInstance(arg0 *connect.CreateInstanceInput) (*connect.CreateInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateInstance", arg0)
+	ret0, _ := ret[0].(*connect.CreateInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateInstance indicates an expected call of CreateInstance
+func (mr *MockConnectAPIMockRecorder) CreateInstance(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateInstance", reflect.TypeOf((*MockConnectAPI)(nil).CreateInstance), arg0)
+}
+
+// CreateInstanceRequest mocks base method
+func (m *MockConnectAPI) CreateInstanceRequest(arg0 *connect.CreateInstanceInput) (*request.Request, *connect.CreateInstanceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateInstanceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.CreateInstanceOutput)
+	return ret0, ret1
+}
+
+// CreateInstanceRequest indicates an expected call of CreateInstanceRequest
+func (mr *MockConnectAPIMockRecorder) CreateInstanceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateInstanceRequest", reflect.TypeOf((*MockConnectAPI)(nil).CreateInstanceRequest), arg0)
+}
+
+// CreateInstanceWithContext mocks base method
+func (m *MockConnectAPI) CreateInstanceWithContext(arg0 context.Context, arg1 *connect.CreateInstanceInput, arg2 ...request.Option) (*connect.CreateInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateInstanceWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.CreateInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateInstanceWithContext indicates an expected call of CreateInstanceWithContext
+func (mr *MockConnectAPIMockRecorder) CreateInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateInstanceWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateInstanceWithContext), varargs...)
 }
 
 // CreateRoutingProfile mocks base method
@@ -285,6 +585,56 @@ func (mr *MockConnectAPIMockRecorder) CreateUserWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateUserWithContext), varargs...)
 }
 
+// DeleteInstance mocks base method
+func (m *MockConnectAPI) DeleteInstance(arg0 *connect.DeleteInstanceInput) (*connect.DeleteInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteInstance", arg0)
+	ret0, _ := ret[0].(*connect.DeleteInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteInstance indicates an expected call of DeleteInstance
+func (mr *MockConnectAPIMockRecorder) DeleteInstance(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInstance", reflect.TypeOf((*MockConnectAPI)(nil).DeleteInstance), arg0)
+}
+
+// DeleteInstanceRequest mocks base method
+func (m *MockConnectAPI) DeleteInstanceRequest(arg0 *connect.DeleteInstanceInput) (*request.Request, *connect.DeleteInstanceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteInstanceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DeleteInstanceOutput)
+	return ret0, ret1
+}
+
+// DeleteInstanceRequest indicates an expected call of DeleteInstanceRequest
+func (mr *MockConnectAPIMockRecorder) DeleteInstanceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInstanceRequest", reflect.TypeOf((*MockConnectAPI)(nil).DeleteInstanceRequest), arg0)
+}
+
+// DeleteInstanceWithContext mocks base method
+func (m *MockConnectAPI) DeleteInstanceWithContext(arg0 context.Context, arg1 *connect.DeleteInstanceInput, arg2 ...request.Option) (*connect.DeleteInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteInstanceWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DeleteInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteInstanceWithContext indicates an expected call of DeleteInstanceWithContext
+func (mr *MockConnectAPIMockRecorder) DeleteInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInstanceWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteInstanceWithContext), varargs...)
+}
+
 // DeleteUser mocks base method
 func (m *MockConnectAPI) DeleteUser(arg0 *connect.DeleteUserInput) (*connect.DeleteUserOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +783,156 @@ func (mr *MockConnectAPIMockRecorder) DescribeContactFlowWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContactFlowWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeContactFlowWithContext), varargs...)
+}
+
+// DescribeInstance mocks base method
+func (m *MockConnectAPI) DescribeInstance(arg0 *connect.DescribeInstanceInput) (*connect.DescribeInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInstance", arg0)
+	ret0, _ := ret[0].(*connect.DescribeInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInstance indicates an expected call of DescribeInstance
+func (mr *MockConnectAPIMockRecorder) DescribeInstance(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstance", reflect.TypeOf((*MockConnectAPI)(nil).DescribeInstance), arg0)
+}
+
+// DescribeInstanceAttribute mocks base method
+func (m *MockConnectAPI) DescribeInstanceAttribute(arg0 *connect.DescribeInstanceAttributeInput) (*connect.DescribeInstanceAttributeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInstanceAttribute", arg0)
+	ret0, _ := ret[0].(*connect.DescribeInstanceAttributeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInstanceAttribute indicates an expected call of DescribeInstanceAttribute
+func (mr *MockConnectAPIMockRecorder) DescribeInstanceAttribute(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceAttribute", reflect.TypeOf((*MockConnectAPI)(nil).DescribeInstanceAttribute), arg0)
+}
+
+// DescribeInstanceAttributeRequest mocks base method
+func (m *MockConnectAPI) DescribeInstanceAttributeRequest(arg0 *connect.DescribeInstanceAttributeInput) (*request.Request, *connect.DescribeInstanceAttributeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInstanceAttributeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DescribeInstanceAttributeOutput)
+	return ret0, ret1
+}
+
+// DescribeInstanceAttributeRequest indicates an expected call of DescribeInstanceAttributeRequest
+func (mr *MockConnectAPIMockRecorder) DescribeInstanceAttributeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceAttributeRequest", reflect.TypeOf((*MockConnectAPI)(nil).DescribeInstanceAttributeRequest), arg0)
+}
+
+// DescribeInstanceAttributeWithContext mocks base method
+func (m *MockConnectAPI) DescribeInstanceAttributeWithContext(arg0 context.Context, arg1 *connect.DescribeInstanceAttributeInput, arg2 ...request.Option) (*connect.DescribeInstanceAttributeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeInstanceAttributeWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DescribeInstanceAttributeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInstanceAttributeWithContext indicates an expected call of DescribeInstanceAttributeWithContext
+func (mr *MockConnectAPIMockRecorder) DescribeInstanceAttributeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceAttributeWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeInstanceAttributeWithContext), varargs...)
+}
+
+// DescribeInstanceRequest mocks base method
+func (m *MockConnectAPI) DescribeInstanceRequest(arg0 *connect.DescribeInstanceInput) (*request.Request, *connect.DescribeInstanceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInstanceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DescribeInstanceOutput)
+	return ret0, ret1
+}
+
+// DescribeInstanceRequest indicates an expected call of DescribeInstanceRequest
+func (mr *MockConnectAPIMockRecorder) DescribeInstanceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceRequest", reflect.TypeOf((*MockConnectAPI)(nil).DescribeInstanceRequest), arg0)
+}
+
+// DescribeInstanceStorageConfig mocks base method
+func (m *MockConnectAPI) DescribeInstanceStorageConfig(arg0 *connect.DescribeInstanceStorageConfigInput) (*connect.DescribeInstanceStorageConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInstanceStorageConfig", arg0)
+	ret0, _ := ret[0].(*connect.DescribeInstanceStorageConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInstanceStorageConfig indicates an expected call of DescribeInstanceStorageConfig
+func (mr *MockConnectAPIMockRecorder) DescribeInstanceStorageConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceStorageConfig", reflect.TypeOf((*MockConnectAPI)(nil).DescribeInstanceStorageConfig), arg0)
+}
+
+// DescribeInstanceStorageConfigRequest mocks base method
+func (m *MockConnectAPI) DescribeInstanceStorageConfigRequest(arg0 *connect.DescribeInstanceStorageConfigInput) (*request.Request, *connect.DescribeInstanceStorageConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInstanceStorageConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DescribeInstanceStorageConfigOutput)
+	return ret0, ret1
+}
+
+// DescribeInstanceStorageConfigRequest indicates an expected call of DescribeInstanceStorageConfigRequest
+func (mr *MockConnectAPIMockRecorder) DescribeInstanceStorageConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceStorageConfigRequest", reflect.TypeOf((*MockConnectAPI)(nil).DescribeInstanceStorageConfigRequest), arg0)
+}
+
+// DescribeInstanceStorageConfigWithContext mocks base method
+func (m *MockConnectAPI) DescribeInstanceStorageConfigWithContext(arg0 context.Context, arg1 *connect.DescribeInstanceStorageConfigInput, arg2 ...request.Option) (*connect.DescribeInstanceStorageConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeInstanceStorageConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DescribeInstanceStorageConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInstanceStorageConfigWithContext indicates an expected call of DescribeInstanceStorageConfigWithContext
+func (mr *MockConnectAPIMockRecorder) DescribeInstanceStorageConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceStorageConfigWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeInstanceStorageConfigWithContext), varargs...)
+}
+
+// DescribeInstanceWithContext mocks base method
+func (m *MockConnectAPI) DescribeInstanceWithContext(arg0 context.Context, arg1 *connect.DescribeInstanceInput, arg2 ...request.Option) (*connect.DescribeInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeInstanceWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DescribeInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInstanceWithContext indicates an expected call of DescribeInstanceWithContext
+func (mr *MockConnectAPIMockRecorder) DescribeInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeInstanceWithContext), varargs...)
 }
 
 // DescribeRoutingProfile mocks base method
@@ -635,6 +1135,206 @@ func (mr *MockConnectAPIMockRecorder) DescribeUserWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeUserWithContext), varargs...)
 }
 
+// DisassociateApprovedOrigin mocks base method
+func (m *MockConnectAPI) DisassociateApprovedOrigin(arg0 *connect.DisassociateApprovedOriginInput) (*connect.DisassociateApprovedOriginOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateApprovedOrigin", arg0)
+	ret0, _ := ret[0].(*connect.DisassociateApprovedOriginOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateApprovedOrigin indicates an expected call of DisassociateApprovedOrigin
+func (mr *MockConnectAPIMockRecorder) DisassociateApprovedOrigin(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApprovedOrigin", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateApprovedOrigin), arg0)
+}
+
+// DisassociateApprovedOriginRequest mocks base method
+func (m *MockConnectAPI) DisassociateApprovedOriginRequest(arg0 *connect.DisassociateApprovedOriginInput) (*request.Request, *connect.DisassociateApprovedOriginOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateApprovedOriginRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DisassociateApprovedOriginOutput)
+	return ret0, ret1
+}
+
+// DisassociateApprovedOriginRequest indicates an expected call of DisassociateApprovedOriginRequest
+func (mr *MockConnectAPIMockRecorder) DisassociateApprovedOriginRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApprovedOriginRequest", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateApprovedOriginRequest), arg0)
+}
+
+// DisassociateApprovedOriginWithContext mocks base method
+func (m *MockConnectAPI) DisassociateApprovedOriginWithContext(arg0 context.Context, arg1 *connect.DisassociateApprovedOriginInput, arg2 ...request.Option) (*connect.DisassociateApprovedOriginOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateApprovedOriginWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DisassociateApprovedOriginOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateApprovedOriginWithContext indicates an expected call of DisassociateApprovedOriginWithContext
+func (mr *MockConnectAPIMockRecorder) DisassociateApprovedOriginWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApprovedOriginWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateApprovedOriginWithContext), varargs...)
+}
+
+// DisassociateInstanceStorageConfig mocks base method
+func (m *MockConnectAPI) DisassociateInstanceStorageConfig(arg0 *connect.DisassociateInstanceStorageConfigInput) (*connect.DisassociateInstanceStorageConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateInstanceStorageConfig", arg0)
+	ret0, _ := ret[0].(*connect.DisassociateInstanceStorageConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateInstanceStorageConfig indicates an expected call of DisassociateInstanceStorageConfig
+func (mr *MockConnectAPIMockRecorder) DisassociateInstanceStorageConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateInstanceStorageConfig", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateInstanceStorageConfig), arg0)
+}
+
+// DisassociateInstanceStorageConfigRequest mocks base method
+func (m *MockConnectAPI) DisassociateInstanceStorageConfigRequest(arg0 *connect.DisassociateInstanceStorageConfigInput) (*request.Request, *connect.DisassociateInstanceStorageConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateInstanceStorageConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DisassociateInstanceStorageConfigOutput)
+	return ret0, ret1
+}
+
+// DisassociateInstanceStorageConfigRequest indicates an expected call of DisassociateInstanceStorageConfigRequest
+func (mr *MockConnectAPIMockRecorder) DisassociateInstanceStorageConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateInstanceStorageConfigRequest", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateInstanceStorageConfigRequest), arg0)
+}
+
+// DisassociateInstanceStorageConfigWithContext mocks base method
+func (m *MockConnectAPI) DisassociateInstanceStorageConfigWithContext(arg0 context.Context, arg1 *connect.DisassociateInstanceStorageConfigInput, arg2 ...request.Option) (*connect.DisassociateInstanceStorageConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateInstanceStorageConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DisassociateInstanceStorageConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateInstanceStorageConfigWithContext indicates an expected call of DisassociateInstanceStorageConfigWithContext
+func (mr *MockConnectAPIMockRecorder) DisassociateInstanceStorageConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateInstanceStorageConfigWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateInstanceStorageConfigWithContext), varargs...)
+}
+
+// DisassociateLambdaFunction mocks base method
+func (m *MockConnectAPI) DisassociateLambdaFunction(arg0 *connect.DisassociateLambdaFunctionInput) (*connect.DisassociateLambdaFunctionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateLambdaFunction", arg0)
+	ret0, _ := ret[0].(*connect.DisassociateLambdaFunctionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateLambdaFunction indicates an expected call of DisassociateLambdaFunction
+func (mr *MockConnectAPIMockRecorder) DisassociateLambdaFunction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateLambdaFunction", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateLambdaFunction), arg0)
+}
+
+// DisassociateLambdaFunctionRequest mocks base method
+func (m *MockConnectAPI) DisassociateLambdaFunctionRequest(arg0 *connect.DisassociateLambdaFunctionInput) (*request.Request, *connect.DisassociateLambdaFunctionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateLambdaFunctionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DisassociateLambdaFunctionOutput)
+	return ret0, ret1
+}
+
+// DisassociateLambdaFunctionRequest indicates an expected call of DisassociateLambdaFunctionRequest
+func (mr *MockConnectAPIMockRecorder) DisassociateLambdaFunctionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateLambdaFunctionRequest", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateLambdaFunctionRequest), arg0)
+}
+
+// DisassociateLambdaFunctionWithContext mocks base method
+func (m *MockConnectAPI) DisassociateLambdaFunctionWithContext(arg0 context.Context, arg1 *connect.DisassociateLambdaFunctionInput, arg2 ...request.Option) (*connect.DisassociateLambdaFunctionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateLambdaFunctionWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DisassociateLambdaFunctionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateLambdaFunctionWithContext indicates an expected call of DisassociateLambdaFunctionWithContext
+func (mr *MockConnectAPIMockRecorder) DisassociateLambdaFunctionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateLambdaFunctionWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateLambdaFunctionWithContext), varargs...)
+}
+
+// DisassociateLexBot mocks base method
+func (m *MockConnectAPI) DisassociateLexBot(arg0 *connect.DisassociateLexBotInput) (*connect.DisassociateLexBotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateLexBot", arg0)
+	ret0, _ := ret[0].(*connect.DisassociateLexBotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateLexBot indicates an expected call of DisassociateLexBot
+func (mr *MockConnectAPIMockRecorder) DisassociateLexBot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateLexBot", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateLexBot), arg0)
+}
+
+// DisassociateLexBotRequest mocks base method
+func (m *MockConnectAPI) DisassociateLexBotRequest(arg0 *connect.DisassociateLexBotInput) (*request.Request, *connect.DisassociateLexBotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateLexBotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DisassociateLexBotOutput)
+	return ret0, ret1
+}
+
+// DisassociateLexBotRequest indicates an expected call of DisassociateLexBotRequest
+func (mr *MockConnectAPIMockRecorder) DisassociateLexBotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateLexBotRequest", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateLexBotRequest), arg0)
+}
+
+// DisassociateLexBotWithContext mocks base method
+func (m *MockConnectAPI) DisassociateLexBotWithContext(arg0 context.Context, arg1 *connect.DisassociateLexBotInput, arg2 ...request.Option) (*connect.DisassociateLexBotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateLexBotWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DisassociateLexBotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateLexBotWithContext indicates an expected call of DisassociateLexBotWithContext
+func (mr *MockConnectAPIMockRecorder) DisassociateLexBotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateLexBotWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateLexBotWithContext), varargs...)
+}
+
 // DisassociateRoutingProfileQueues mocks base method
 func (m *MockConnectAPI) DisassociateRoutingProfileQueues(arg0 *connect.DisassociateRoutingProfileQueuesInput) (*connect.DisassociateRoutingProfileQueuesOutput, error) {
 	m.ctrl.T.Helper()
@@ -683,6 +1383,56 @@ func (mr *MockConnectAPIMockRecorder) DisassociateRoutingProfileQueuesWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateRoutingProfileQueuesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateRoutingProfileQueuesWithContext), varargs...)
+}
+
+// DisassociateSecurityKey mocks base method
+func (m *MockConnectAPI) DisassociateSecurityKey(arg0 *connect.DisassociateSecurityKeyInput) (*connect.DisassociateSecurityKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateSecurityKey", arg0)
+	ret0, _ := ret[0].(*connect.DisassociateSecurityKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateSecurityKey indicates an expected call of DisassociateSecurityKey
+func (mr *MockConnectAPIMockRecorder) DisassociateSecurityKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSecurityKey", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateSecurityKey), arg0)
+}
+
+// DisassociateSecurityKeyRequest mocks base method
+func (m *MockConnectAPI) DisassociateSecurityKeyRequest(arg0 *connect.DisassociateSecurityKeyInput) (*request.Request, *connect.DisassociateSecurityKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateSecurityKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DisassociateSecurityKeyOutput)
+	return ret0, ret1
+}
+
+// DisassociateSecurityKeyRequest indicates an expected call of DisassociateSecurityKeyRequest
+func (mr *MockConnectAPIMockRecorder) DisassociateSecurityKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSecurityKeyRequest", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateSecurityKeyRequest), arg0)
+}
+
+// DisassociateSecurityKeyWithContext mocks base method
+func (m *MockConnectAPI) DisassociateSecurityKeyWithContext(arg0 context.Context, arg1 *connect.DisassociateSecurityKeyInput, arg2 ...request.Option) (*connect.DisassociateSecurityKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateSecurityKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DisassociateSecurityKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateSecurityKeyWithContext indicates an expected call of DisassociateSecurityKeyWithContext
+func (mr *MockConnectAPIMockRecorder) DisassociateSecurityKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSecurityKeyWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateSecurityKeyWithContext), varargs...)
 }
 
 // GetContactAttributes mocks base method
@@ -951,6 +1701,89 @@ func (mr *MockConnectAPIMockRecorder) GetMetricDataWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricDataWithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetMetricDataWithContext), varargs...)
 }
 
+// ListApprovedOrigins mocks base method
+func (m *MockConnectAPI) ListApprovedOrigins(arg0 *connect.ListApprovedOriginsInput) (*connect.ListApprovedOriginsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApprovedOrigins", arg0)
+	ret0, _ := ret[0].(*connect.ListApprovedOriginsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApprovedOrigins indicates an expected call of ListApprovedOrigins
+func (mr *MockConnectAPIMockRecorder) ListApprovedOrigins(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApprovedOrigins", reflect.TypeOf((*MockConnectAPI)(nil).ListApprovedOrigins), arg0)
+}
+
+// ListApprovedOriginsPages mocks base method
+func (m *MockConnectAPI) ListApprovedOriginsPages(arg0 *connect.ListApprovedOriginsInput, arg1 func(*connect.ListApprovedOriginsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApprovedOriginsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApprovedOriginsPages indicates an expected call of ListApprovedOriginsPages
+func (mr *MockConnectAPIMockRecorder) ListApprovedOriginsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApprovedOriginsPages", reflect.TypeOf((*MockConnectAPI)(nil).ListApprovedOriginsPages), arg0, arg1)
+}
+
+// ListApprovedOriginsPagesWithContext mocks base method
+func (m *MockConnectAPI) ListApprovedOriginsPagesWithContext(arg0 context.Context, arg1 *connect.ListApprovedOriginsInput, arg2 func(*connect.ListApprovedOriginsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApprovedOriginsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApprovedOriginsPagesWithContext indicates an expected call of ListApprovedOriginsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListApprovedOriginsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApprovedOriginsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListApprovedOriginsPagesWithContext), varargs...)
+}
+
+// ListApprovedOriginsRequest mocks base method
+func (m *MockConnectAPI) ListApprovedOriginsRequest(arg0 *connect.ListApprovedOriginsInput) (*request.Request, *connect.ListApprovedOriginsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApprovedOriginsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListApprovedOriginsOutput)
+	return ret0, ret1
+}
+
+// ListApprovedOriginsRequest indicates an expected call of ListApprovedOriginsRequest
+func (mr *MockConnectAPIMockRecorder) ListApprovedOriginsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApprovedOriginsRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListApprovedOriginsRequest), arg0)
+}
+
+// ListApprovedOriginsWithContext mocks base method
+func (m *MockConnectAPI) ListApprovedOriginsWithContext(arg0 context.Context, arg1 *connect.ListApprovedOriginsInput, arg2 ...request.Option) (*connect.ListApprovedOriginsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApprovedOriginsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListApprovedOriginsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApprovedOriginsWithContext indicates an expected call of ListApprovedOriginsWithContext
+func (mr *MockConnectAPIMockRecorder) ListApprovedOriginsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApprovedOriginsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListApprovedOriginsWithContext), varargs...)
+}
+
 // ListContactFlows mocks base method
 func (m *MockConnectAPI) ListContactFlows(arg0 *connect.ListContactFlowsInput) (*connect.ListContactFlowsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1115,6 +1948,421 @@ func (mr *MockConnectAPIMockRecorder) ListHoursOfOperationsWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHoursOfOperationsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListHoursOfOperationsWithContext), varargs...)
+}
+
+// ListInstanceAttributes mocks base method
+func (m *MockConnectAPI) ListInstanceAttributes(arg0 *connect.ListInstanceAttributesInput) (*connect.ListInstanceAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInstanceAttributes", arg0)
+	ret0, _ := ret[0].(*connect.ListInstanceAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListInstanceAttributes indicates an expected call of ListInstanceAttributes
+func (mr *MockConnectAPIMockRecorder) ListInstanceAttributes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceAttributes", reflect.TypeOf((*MockConnectAPI)(nil).ListInstanceAttributes), arg0)
+}
+
+// ListInstanceAttributesPages mocks base method
+func (m *MockConnectAPI) ListInstanceAttributesPages(arg0 *connect.ListInstanceAttributesInput, arg1 func(*connect.ListInstanceAttributesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInstanceAttributesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListInstanceAttributesPages indicates an expected call of ListInstanceAttributesPages
+func (mr *MockConnectAPIMockRecorder) ListInstanceAttributesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceAttributesPages", reflect.TypeOf((*MockConnectAPI)(nil).ListInstanceAttributesPages), arg0, arg1)
+}
+
+// ListInstanceAttributesPagesWithContext mocks base method
+func (m *MockConnectAPI) ListInstanceAttributesPagesWithContext(arg0 context.Context, arg1 *connect.ListInstanceAttributesInput, arg2 func(*connect.ListInstanceAttributesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListInstanceAttributesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListInstanceAttributesPagesWithContext indicates an expected call of ListInstanceAttributesPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListInstanceAttributesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceAttributesPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListInstanceAttributesPagesWithContext), varargs...)
+}
+
+// ListInstanceAttributesRequest mocks base method
+func (m *MockConnectAPI) ListInstanceAttributesRequest(arg0 *connect.ListInstanceAttributesInput) (*request.Request, *connect.ListInstanceAttributesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInstanceAttributesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListInstanceAttributesOutput)
+	return ret0, ret1
+}
+
+// ListInstanceAttributesRequest indicates an expected call of ListInstanceAttributesRequest
+func (mr *MockConnectAPIMockRecorder) ListInstanceAttributesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceAttributesRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListInstanceAttributesRequest), arg0)
+}
+
+// ListInstanceAttributesWithContext mocks base method
+func (m *MockConnectAPI) ListInstanceAttributesWithContext(arg0 context.Context, arg1 *connect.ListInstanceAttributesInput, arg2 ...request.Option) (*connect.ListInstanceAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListInstanceAttributesWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListInstanceAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListInstanceAttributesWithContext indicates an expected call of ListInstanceAttributesWithContext
+func (mr *MockConnectAPIMockRecorder) ListInstanceAttributesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceAttributesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListInstanceAttributesWithContext), varargs...)
+}
+
+// ListInstanceStorageConfigs mocks base method
+func (m *MockConnectAPI) ListInstanceStorageConfigs(arg0 *connect.ListInstanceStorageConfigsInput) (*connect.ListInstanceStorageConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInstanceStorageConfigs", arg0)
+	ret0, _ := ret[0].(*connect.ListInstanceStorageConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListInstanceStorageConfigs indicates an expected call of ListInstanceStorageConfigs
+func (mr *MockConnectAPIMockRecorder) ListInstanceStorageConfigs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceStorageConfigs", reflect.TypeOf((*MockConnectAPI)(nil).ListInstanceStorageConfigs), arg0)
+}
+
+// ListInstanceStorageConfigsPages mocks base method
+func (m *MockConnectAPI) ListInstanceStorageConfigsPages(arg0 *connect.ListInstanceStorageConfigsInput, arg1 func(*connect.ListInstanceStorageConfigsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInstanceStorageConfigsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListInstanceStorageConfigsPages indicates an expected call of ListInstanceStorageConfigsPages
+func (mr *MockConnectAPIMockRecorder) ListInstanceStorageConfigsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceStorageConfigsPages", reflect.TypeOf((*MockConnectAPI)(nil).ListInstanceStorageConfigsPages), arg0, arg1)
+}
+
+// ListInstanceStorageConfigsPagesWithContext mocks base method
+func (m *MockConnectAPI) ListInstanceStorageConfigsPagesWithContext(arg0 context.Context, arg1 *connect.ListInstanceStorageConfigsInput, arg2 func(*connect.ListInstanceStorageConfigsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListInstanceStorageConfigsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListInstanceStorageConfigsPagesWithContext indicates an expected call of ListInstanceStorageConfigsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListInstanceStorageConfigsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceStorageConfigsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListInstanceStorageConfigsPagesWithContext), varargs...)
+}
+
+// ListInstanceStorageConfigsRequest mocks base method
+func (m *MockConnectAPI) ListInstanceStorageConfigsRequest(arg0 *connect.ListInstanceStorageConfigsInput) (*request.Request, *connect.ListInstanceStorageConfigsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInstanceStorageConfigsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListInstanceStorageConfigsOutput)
+	return ret0, ret1
+}
+
+// ListInstanceStorageConfigsRequest indicates an expected call of ListInstanceStorageConfigsRequest
+func (mr *MockConnectAPIMockRecorder) ListInstanceStorageConfigsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceStorageConfigsRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListInstanceStorageConfigsRequest), arg0)
+}
+
+// ListInstanceStorageConfigsWithContext mocks base method
+func (m *MockConnectAPI) ListInstanceStorageConfigsWithContext(arg0 context.Context, arg1 *connect.ListInstanceStorageConfigsInput, arg2 ...request.Option) (*connect.ListInstanceStorageConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListInstanceStorageConfigsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListInstanceStorageConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListInstanceStorageConfigsWithContext indicates an expected call of ListInstanceStorageConfigsWithContext
+func (mr *MockConnectAPIMockRecorder) ListInstanceStorageConfigsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstanceStorageConfigsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListInstanceStorageConfigsWithContext), varargs...)
+}
+
+// ListInstances mocks base method
+func (m *MockConnectAPI) ListInstances(arg0 *connect.ListInstancesInput) (*connect.ListInstancesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInstances", arg0)
+	ret0, _ := ret[0].(*connect.ListInstancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListInstances indicates an expected call of ListInstances
+func (mr *MockConnectAPIMockRecorder) ListInstances(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstances", reflect.TypeOf((*MockConnectAPI)(nil).ListInstances), arg0)
+}
+
+// ListInstancesPages mocks base method
+func (m *MockConnectAPI) ListInstancesPages(arg0 *connect.ListInstancesInput, arg1 func(*connect.ListInstancesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInstancesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListInstancesPages indicates an expected call of ListInstancesPages
+func (mr *MockConnectAPIMockRecorder) ListInstancesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstancesPages", reflect.TypeOf((*MockConnectAPI)(nil).ListInstancesPages), arg0, arg1)
+}
+
+// ListInstancesPagesWithContext mocks base method
+func (m *MockConnectAPI) ListInstancesPagesWithContext(arg0 context.Context, arg1 *connect.ListInstancesInput, arg2 func(*connect.ListInstancesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListInstancesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListInstancesPagesWithContext indicates an expected call of ListInstancesPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListInstancesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstancesPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListInstancesPagesWithContext), varargs...)
+}
+
+// ListInstancesRequest mocks base method
+func (m *MockConnectAPI) ListInstancesRequest(arg0 *connect.ListInstancesInput) (*request.Request, *connect.ListInstancesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInstancesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListInstancesOutput)
+	return ret0, ret1
+}
+
+// ListInstancesRequest indicates an expected call of ListInstancesRequest
+func (mr *MockConnectAPIMockRecorder) ListInstancesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstancesRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListInstancesRequest), arg0)
+}
+
+// ListInstancesWithContext mocks base method
+func (m *MockConnectAPI) ListInstancesWithContext(arg0 context.Context, arg1 *connect.ListInstancesInput, arg2 ...request.Option) (*connect.ListInstancesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListInstancesWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListInstancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListInstancesWithContext indicates an expected call of ListInstancesWithContext
+func (mr *MockConnectAPIMockRecorder) ListInstancesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstancesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListInstancesWithContext), varargs...)
+}
+
+// ListLambdaFunctions mocks base method
+func (m *MockConnectAPI) ListLambdaFunctions(arg0 *connect.ListLambdaFunctionsInput) (*connect.ListLambdaFunctionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLambdaFunctions", arg0)
+	ret0, _ := ret[0].(*connect.ListLambdaFunctionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLambdaFunctions indicates an expected call of ListLambdaFunctions
+func (mr *MockConnectAPIMockRecorder) ListLambdaFunctions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLambdaFunctions", reflect.TypeOf((*MockConnectAPI)(nil).ListLambdaFunctions), arg0)
+}
+
+// ListLambdaFunctionsPages mocks base method
+func (m *MockConnectAPI) ListLambdaFunctionsPages(arg0 *connect.ListLambdaFunctionsInput, arg1 func(*connect.ListLambdaFunctionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLambdaFunctionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLambdaFunctionsPages indicates an expected call of ListLambdaFunctionsPages
+func (mr *MockConnectAPIMockRecorder) ListLambdaFunctionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLambdaFunctionsPages", reflect.TypeOf((*MockConnectAPI)(nil).ListLambdaFunctionsPages), arg0, arg1)
+}
+
+// ListLambdaFunctionsPagesWithContext mocks base method
+func (m *MockConnectAPI) ListLambdaFunctionsPagesWithContext(arg0 context.Context, arg1 *connect.ListLambdaFunctionsInput, arg2 func(*connect.ListLambdaFunctionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLambdaFunctionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLambdaFunctionsPagesWithContext indicates an expected call of ListLambdaFunctionsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListLambdaFunctionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLambdaFunctionsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListLambdaFunctionsPagesWithContext), varargs...)
+}
+
+// ListLambdaFunctionsRequest mocks base method
+func (m *MockConnectAPI) ListLambdaFunctionsRequest(arg0 *connect.ListLambdaFunctionsInput) (*request.Request, *connect.ListLambdaFunctionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLambdaFunctionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListLambdaFunctionsOutput)
+	return ret0, ret1
+}
+
+// ListLambdaFunctionsRequest indicates an expected call of ListLambdaFunctionsRequest
+func (mr *MockConnectAPIMockRecorder) ListLambdaFunctionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLambdaFunctionsRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListLambdaFunctionsRequest), arg0)
+}
+
+// ListLambdaFunctionsWithContext mocks base method
+func (m *MockConnectAPI) ListLambdaFunctionsWithContext(arg0 context.Context, arg1 *connect.ListLambdaFunctionsInput, arg2 ...request.Option) (*connect.ListLambdaFunctionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLambdaFunctionsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListLambdaFunctionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLambdaFunctionsWithContext indicates an expected call of ListLambdaFunctionsWithContext
+func (mr *MockConnectAPIMockRecorder) ListLambdaFunctionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLambdaFunctionsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListLambdaFunctionsWithContext), varargs...)
+}
+
+// ListLexBots mocks base method
+func (m *MockConnectAPI) ListLexBots(arg0 *connect.ListLexBotsInput) (*connect.ListLexBotsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLexBots", arg0)
+	ret0, _ := ret[0].(*connect.ListLexBotsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLexBots indicates an expected call of ListLexBots
+func (mr *MockConnectAPIMockRecorder) ListLexBots(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLexBots", reflect.TypeOf((*MockConnectAPI)(nil).ListLexBots), arg0)
+}
+
+// ListLexBotsPages mocks base method
+func (m *MockConnectAPI) ListLexBotsPages(arg0 *connect.ListLexBotsInput, arg1 func(*connect.ListLexBotsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLexBotsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLexBotsPages indicates an expected call of ListLexBotsPages
+func (mr *MockConnectAPIMockRecorder) ListLexBotsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLexBotsPages", reflect.TypeOf((*MockConnectAPI)(nil).ListLexBotsPages), arg0, arg1)
+}
+
+// ListLexBotsPagesWithContext mocks base method
+func (m *MockConnectAPI) ListLexBotsPagesWithContext(arg0 context.Context, arg1 *connect.ListLexBotsInput, arg2 func(*connect.ListLexBotsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLexBotsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLexBotsPagesWithContext indicates an expected call of ListLexBotsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListLexBotsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLexBotsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListLexBotsPagesWithContext), varargs...)
+}
+
+// ListLexBotsRequest mocks base method
+func (m *MockConnectAPI) ListLexBotsRequest(arg0 *connect.ListLexBotsInput) (*request.Request, *connect.ListLexBotsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLexBotsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListLexBotsOutput)
+	return ret0, ret1
+}
+
+// ListLexBotsRequest indicates an expected call of ListLexBotsRequest
+func (mr *MockConnectAPIMockRecorder) ListLexBotsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLexBotsRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListLexBotsRequest), arg0)
+}
+
+// ListLexBotsWithContext mocks base method
+func (m *MockConnectAPI) ListLexBotsWithContext(arg0 context.Context, arg1 *connect.ListLexBotsInput, arg2 ...request.Option) (*connect.ListLexBotsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLexBotsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListLexBotsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLexBotsWithContext indicates an expected call of ListLexBotsWithContext
+func (mr *MockConnectAPIMockRecorder) ListLexBotsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLexBotsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListLexBotsWithContext), varargs...)
 }
 
 // ListPhoneNumbers mocks base method
@@ -1530,6 +2778,89 @@ func (mr *MockConnectAPIMockRecorder) ListRoutingProfilesWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoutingProfilesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListRoutingProfilesWithContext), varargs...)
+}
+
+// ListSecurityKeys mocks base method
+func (m *MockConnectAPI) ListSecurityKeys(arg0 *connect.ListSecurityKeysInput) (*connect.ListSecurityKeysOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSecurityKeys", arg0)
+	ret0, _ := ret[0].(*connect.ListSecurityKeysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSecurityKeys indicates an expected call of ListSecurityKeys
+func (mr *MockConnectAPIMockRecorder) ListSecurityKeys(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityKeys", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityKeys), arg0)
+}
+
+// ListSecurityKeysPages mocks base method
+func (m *MockConnectAPI) ListSecurityKeysPages(arg0 *connect.ListSecurityKeysInput, arg1 func(*connect.ListSecurityKeysOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSecurityKeysPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSecurityKeysPages indicates an expected call of ListSecurityKeysPages
+func (mr *MockConnectAPIMockRecorder) ListSecurityKeysPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityKeysPages", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityKeysPages), arg0, arg1)
+}
+
+// ListSecurityKeysPagesWithContext mocks base method
+func (m *MockConnectAPI) ListSecurityKeysPagesWithContext(arg0 context.Context, arg1 *connect.ListSecurityKeysInput, arg2 func(*connect.ListSecurityKeysOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSecurityKeysPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSecurityKeysPagesWithContext indicates an expected call of ListSecurityKeysPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListSecurityKeysPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityKeysPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityKeysPagesWithContext), varargs...)
+}
+
+// ListSecurityKeysRequest mocks base method
+func (m *MockConnectAPI) ListSecurityKeysRequest(arg0 *connect.ListSecurityKeysInput) (*request.Request, *connect.ListSecurityKeysOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSecurityKeysRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListSecurityKeysOutput)
+	return ret0, ret1
+}
+
+// ListSecurityKeysRequest indicates an expected call of ListSecurityKeysRequest
+func (mr *MockConnectAPIMockRecorder) ListSecurityKeysRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityKeysRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityKeysRequest), arg0)
+}
+
+// ListSecurityKeysWithContext mocks base method
+func (m *MockConnectAPI) ListSecurityKeysWithContext(arg0 context.Context, arg1 *connect.ListSecurityKeysInput, arg2 ...request.Option) (*connect.ListSecurityKeysOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSecurityKeysWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListSecurityKeysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSecurityKeysWithContext indicates an expected call of ListSecurityKeysWithContext
+func (mr *MockConnectAPIMockRecorder) ListSecurityKeysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityKeysWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityKeysWithContext), varargs...)
 }
 
 // ListSecurityProfiles mocks base method
@@ -2429,6 +3760,106 @@ func (mr *MockConnectAPIMockRecorder) UpdateContactFlowNameWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactFlowNameWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactFlowNameWithContext), varargs...)
+}
+
+// UpdateInstanceAttribute mocks base method
+func (m *MockConnectAPI) UpdateInstanceAttribute(arg0 *connect.UpdateInstanceAttributeInput) (*connect.UpdateInstanceAttributeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateInstanceAttribute", arg0)
+	ret0, _ := ret[0].(*connect.UpdateInstanceAttributeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateInstanceAttribute indicates an expected call of UpdateInstanceAttribute
+func (mr *MockConnectAPIMockRecorder) UpdateInstanceAttribute(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceAttribute", reflect.TypeOf((*MockConnectAPI)(nil).UpdateInstanceAttribute), arg0)
+}
+
+// UpdateInstanceAttributeRequest mocks base method
+func (m *MockConnectAPI) UpdateInstanceAttributeRequest(arg0 *connect.UpdateInstanceAttributeInput) (*request.Request, *connect.UpdateInstanceAttributeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateInstanceAttributeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateInstanceAttributeOutput)
+	return ret0, ret1
+}
+
+// UpdateInstanceAttributeRequest indicates an expected call of UpdateInstanceAttributeRequest
+func (mr *MockConnectAPIMockRecorder) UpdateInstanceAttributeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceAttributeRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateInstanceAttributeRequest), arg0)
+}
+
+// UpdateInstanceAttributeWithContext mocks base method
+func (m *MockConnectAPI) UpdateInstanceAttributeWithContext(arg0 context.Context, arg1 *connect.UpdateInstanceAttributeInput, arg2 ...request.Option) (*connect.UpdateInstanceAttributeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateInstanceAttributeWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateInstanceAttributeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateInstanceAttributeWithContext indicates an expected call of UpdateInstanceAttributeWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateInstanceAttributeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceAttributeWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateInstanceAttributeWithContext), varargs...)
+}
+
+// UpdateInstanceStorageConfig mocks base method
+func (m *MockConnectAPI) UpdateInstanceStorageConfig(arg0 *connect.UpdateInstanceStorageConfigInput) (*connect.UpdateInstanceStorageConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateInstanceStorageConfig", arg0)
+	ret0, _ := ret[0].(*connect.UpdateInstanceStorageConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateInstanceStorageConfig indicates an expected call of UpdateInstanceStorageConfig
+func (mr *MockConnectAPIMockRecorder) UpdateInstanceStorageConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceStorageConfig", reflect.TypeOf((*MockConnectAPI)(nil).UpdateInstanceStorageConfig), arg0)
+}
+
+// UpdateInstanceStorageConfigRequest mocks base method
+func (m *MockConnectAPI) UpdateInstanceStorageConfigRequest(arg0 *connect.UpdateInstanceStorageConfigInput) (*request.Request, *connect.UpdateInstanceStorageConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateInstanceStorageConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateInstanceStorageConfigOutput)
+	return ret0, ret1
+}
+
+// UpdateInstanceStorageConfigRequest indicates an expected call of UpdateInstanceStorageConfigRequest
+func (mr *MockConnectAPIMockRecorder) UpdateInstanceStorageConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceStorageConfigRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateInstanceStorageConfigRequest), arg0)
+}
+
+// UpdateInstanceStorageConfigWithContext mocks base method
+func (m *MockConnectAPI) UpdateInstanceStorageConfigWithContext(arg0 context.Context, arg1 *connect.UpdateInstanceStorageConfigInput, arg2 ...request.Option) (*connect.UpdateInstanceStorageConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateInstanceStorageConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateInstanceStorageConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateInstanceStorageConfigWithContext indicates an expected call of UpdateInstanceStorageConfigWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateInstanceStorageConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceStorageConfigWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateInstanceStorageConfigWithContext), varargs...)
 }
 
 // UpdateRoutingProfileConcurrency mocks base method

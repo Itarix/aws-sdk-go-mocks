@@ -635,6 +635,156 @@ func (mr *MockChimeAPIMockRecorder) CreateAccountWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccountWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateAccountWithContext), varargs...)
 }
 
+// CreateAppInstance mocks base method
+func (m *MockChimeAPI) CreateAppInstance(arg0 *chime.CreateAppInstanceInput) (*chime.CreateAppInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppInstance", arg0)
+	ret0, _ := ret[0].(*chime.CreateAppInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppInstance indicates an expected call of CreateAppInstance
+func (mr *MockChimeAPIMockRecorder) CreateAppInstance(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppInstance", reflect.TypeOf((*MockChimeAPI)(nil).CreateAppInstance), arg0)
+}
+
+// CreateAppInstanceAdmin mocks base method
+func (m *MockChimeAPI) CreateAppInstanceAdmin(arg0 *chime.CreateAppInstanceAdminInput) (*chime.CreateAppInstanceAdminOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppInstanceAdmin", arg0)
+	ret0, _ := ret[0].(*chime.CreateAppInstanceAdminOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppInstanceAdmin indicates an expected call of CreateAppInstanceAdmin
+func (mr *MockChimeAPIMockRecorder) CreateAppInstanceAdmin(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppInstanceAdmin", reflect.TypeOf((*MockChimeAPI)(nil).CreateAppInstanceAdmin), arg0)
+}
+
+// CreateAppInstanceAdminRequest mocks base method
+func (m *MockChimeAPI) CreateAppInstanceAdminRequest(arg0 *chime.CreateAppInstanceAdminInput) (*request.Request, *chime.CreateAppInstanceAdminOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppInstanceAdminRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateAppInstanceAdminOutput)
+	return ret0, ret1
+}
+
+// CreateAppInstanceAdminRequest indicates an expected call of CreateAppInstanceAdminRequest
+func (mr *MockChimeAPIMockRecorder) CreateAppInstanceAdminRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppInstanceAdminRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateAppInstanceAdminRequest), arg0)
+}
+
+// CreateAppInstanceAdminWithContext mocks base method
+func (m *MockChimeAPI) CreateAppInstanceAdminWithContext(arg0 context.Context, arg1 *chime.CreateAppInstanceAdminInput, arg2 ...request.Option) (*chime.CreateAppInstanceAdminOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAppInstanceAdminWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateAppInstanceAdminOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppInstanceAdminWithContext indicates an expected call of CreateAppInstanceAdminWithContext
+func (mr *MockChimeAPIMockRecorder) CreateAppInstanceAdminWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppInstanceAdminWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateAppInstanceAdminWithContext), varargs...)
+}
+
+// CreateAppInstanceRequest mocks base method
+func (m *MockChimeAPI) CreateAppInstanceRequest(arg0 *chime.CreateAppInstanceInput) (*request.Request, *chime.CreateAppInstanceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppInstanceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateAppInstanceOutput)
+	return ret0, ret1
+}
+
+// CreateAppInstanceRequest indicates an expected call of CreateAppInstanceRequest
+func (mr *MockChimeAPIMockRecorder) CreateAppInstanceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppInstanceRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateAppInstanceRequest), arg0)
+}
+
+// CreateAppInstanceUser mocks base method
+func (m *MockChimeAPI) CreateAppInstanceUser(arg0 *chime.CreateAppInstanceUserInput) (*chime.CreateAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppInstanceUser", arg0)
+	ret0, _ := ret[0].(*chime.CreateAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppInstanceUser indicates an expected call of CreateAppInstanceUser
+func (mr *MockChimeAPIMockRecorder) CreateAppInstanceUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppInstanceUser", reflect.TypeOf((*MockChimeAPI)(nil).CreateAppInstanceUser), arg0)
+}
+
+// CreateAppInstanceUserRequest mocks base method
+func (m *MockChimeAPI) CreateAppInstanceUserRequest(arg0 *chime.CreateAppInstanceUserInput) (*request.Request, *chime.CreateAppInstanceUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppInstanceUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateAppInstanceUserOutput)
+	return ret0, ret1
+}
+
+// CreateAppInstanceUserRequest indicates an expected call of CreateAppInstanceUserRequest
+func (mr *MockChimeAPIMockRecorder) CreateAppInstanceUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppInstanceUserRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateAppInstanceUserRequest), arg0)
+}
+
+// CreateAppInstanceUserWithContext mocks base method
+func (m *MockChimeAPI) CreateAppInstanceUserWithContext(arg0 context.Context, arg1 *chime.CreateAppInstanceUserInput, arg2 ...request.Option) (*chime.CreateAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAppInstanceUserWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppInstanceUserWithContext indicates an expected call of CreateAppInstanceUserWithContext
+func (mr *MockChimeAPIMockRecorder) CreateAppInstanceUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppInstanceUserWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateAppInstanceUserWithContext), varargs...)
+}
+
+// CreateAppInstanceWithContext mocks base method
+func (m *MockChimeAPI) CreateAppInstanceWithContext(arg0 context.Context, arg1 *chime.CreateAppInstanceInput, arg2 ...request.Option) (*chime.CreateAppInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAppInstanceWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateAppInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppInstanceWithContext indicates an expected call of CreateAppInstanceWithContext
+func (mr *MockChimeAPIMockRecorder) CreateAppInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppInstanceWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateAppInstanceWithContext), varargs...)
+}
+
 // CreateAttendee mocks base method
 func (m *MockChimeAPI) CreateAttendee(arg0 *chime.CreateAttendeeInput) (*chime.CreateAttendeeOutput, error) {
 	m.ctrl.T.Helper()
@@ -733,6 +883,206 @@ func (mr *MockChimeAPIMockRecorder) CreateBotWithContext(arg0, arg1 interface{},
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBotWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateBotWithContext), varargs...)
+}
+
+// CreateChannel mocks base method
+func (m *MockChimeAPI) CreateChannel(arg0 *chime.CreateChannelInput) (*chime.CreateChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateChannel", arg0)
+	ret0, _ := ret[0].(*chime.CreateChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateChannel indicates an expected call of CreateChannel
+func (mr *MockChimeAPIMockRecorder) CreateChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannel", reflect.TypeOf((*MockChimeAPI)(nil).CreateChannel), arg0)
+}
+
+// CreateChannelBan mocks base method
+func (m *MockChimeAPI) CreateChannelBan(arg0 *chime.CreateChannelBanInput) (*chime.CreateChannelBanOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateChannelBan", arg0)
+	ret0, _ := ret[0].(*chime.CreateChannelBanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateChannelBan indicates an expected call of CreateChannelBan
+func (mr *MockChimeAPIMockRecorder) CreateChannelBan(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelBan", reflect.TypeOf((*MockChimeAPI)(nil).CreateChannelBan), arg0)
+}
+
+// CreateChannelBanRequest mocks base method
+func (m *MockChimeAPI) CreateChannelBanRequest(arg0 *chime.CreateChannelBanInput) (*request.Request, *chime.CreateChannelBanOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateChannelBanRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateChannelBanOutput)
+	return ret0, ret1
+}
+
+// CreateChannelBanRequest indicates an expected call of CreateChannelBanRequest
+func (mr *MockChimeAPIMockRecorder) CreateChannelBanRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelBanRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateChannelBanRequest), arg0)
+}
+
+// CreateChannelBanWithContext mocks base method
+func (m *MockChimeAPI) CreateChannelBanWithContext(arg0 context.Context, arg1 *chime.CreateChannelBanInput, arg2 ...request.Option) (*chime.CreateChannelBanOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateChannelBanWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateChannelBanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateChannelBanWithContext indicates an expected call of CreateChannelBanWithContext
+func (mr *MockChimeAPIMockRecorder) CreateChannelBanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelBanWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateChannelBanWithContext), varargs...)
+}
+
+// CreateChannelMembership mocks base method
+func (m *MockChimeAPI) CreateChannelMembership(arg0 *chime.CreateChannelMembershipInput) (*chime.CreateChannelMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateChannelMembership", arg0)
+	ret0, _ := ret[0].(*chime.CreateChannelMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateChannelMembership indicates an expected call of CreateChannelMembership
+func (mr *MockChimeAPIMockRecorder) CreateChannelMembership(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelMembership", reflect.TypeOf((*MockChimeAPI)(nil).CreateChannelMembership), arg0)
+}
+
+// CreateChannelMembershipRequest mocks base method
+func (m *MockChimeAPI) CreateChannelMembershipRequest(arg0 *chime.CreateChannelMembershipInput) (*request.Request, *chime.CreateChannelMembershipOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateChannelMembershipRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateChannelMembershipOutput)
+	return ret0, ret1
+}
+
+// CreateChannelMembershipRequest indicates an expected call of CreateChannelMembershipRequest
+func (mr *MockChimeAPIMockRecorder) CreateChannelMembershipRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelMembershipRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateChannelMembershipRequest), arg0)
+}
+
+// CreateChannelMembershipWithContext mocks base method
+func (m *MockChimeAPI) CreateChannelMembershipWithContext(arg0 context.Context, arg1 *chime.CreateChannelMembershipInput, arg2 ...request.Option) (*chime.CreateChannelMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateChannelMembershipWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateChannelMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateChannelMembershipWithContext indicates an expected call of CreateChannelMembershipWithContext
+func (mr *MockChimeAPIMockRecorder) CreateChannelMembershipWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelMembershipWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateChannelMembershipWithContext), varargs...)
+}
+
+// CreateChannelModerator mocks base method
+func (m *MockChimeAPI) CreateChannelModerator(arg0 *chime.CreateChannelModeratorInput) (*chime.CreateChannelModeratorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateChannelModerator", arg0)
+	ret0, _ := ret[0].(*chime.CreateChannelModeratorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateChannelModerator indicates an expected call of CreateChannelModerator
+func (mr *MockChimeAPIMockRecorder) CreateChannelModerator(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelModerator", reflect.TypeOf((*MockChimeAPI)(nil).CreateChannelModerator), arg0)
+}
+
+// CreateChannelModeratorRequest mocks base method
+func (m *MockChimeAPI) CreateChannelModeratorRequest(arg0 *chime.CreateChannelModeratorInput) (*request.Request, *chime.CreateChannelModeratorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateChannelModeratorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateChannelModeratorOutput)
+	return ret0, ret1
+}
+
+// CreateChannelModeratorRequest indicates an expected call of CreateChannelModeratorRequest
+func (mr *MockChimeAPIMockRecorder) CreateChannelModeratorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelModeratorRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateChannelModeratorRequest), arg0)
+}
+
+// CreateChannelModeratorWithContext mocks base method
+func (m *MockChimeAPI) CreateChannelModeratorWithContext(arg0 context.Context, arg1 *chime.CreateChannelModeratorInput, arg2 ...request.Option) (*chime.CreateChannelModeratorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateChannelModeratorWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateChannelModeratorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateChannelModeratorWithContext indicates an expected call of CreateChannelModeratorWithContext
+func (mr *MockChimeAPIMockRecorder) CreateChannelModeratorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelModeratorWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateChannelModeratorWithContext), varargs...)
+}
+
+// CreateChannelRequest mocks base method
+func (m *MockChimeAPI) CreateChannelRequest(arg0 *chime.CreateChannelInput) (*request.Request, *chime.CreateChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.CreateChannelOutput)
+	return ret0, ret1
+}
+
+// CreateChannelRequest indicates an expected call of CreateChannelRequest
+func (mr *MockChimeAPIMockRecorder) CreateChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelRequest", reflect.TypeOf((*MockChimeAPI)(nil).CreateChannelRequest), arg0)
+}
+
+// CreateChannelWithContext mocks base method
+func (m *MockChimeAPI) CreateChannelWithContext(arg0 context.Context, arg1 *chime.CreateChannelInput, arg2 ...request.Option) (*chime.CreateChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.CreateChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateChannelWithContext indicates an expected call of CreateChannelWithContext
+func (mr *MockChimeAPIMockRecorder) CreateChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelWithContext", reflect.TypeOf((*MockChimeAPI)(nil).CreateChannelWithContext), varargs...)
 }
 
 // CreateMeeting mocks base method
@@ -1435,6 +1785,206 @@ func (mr *MockChimeAPIMockRecorder) DeleteAccountWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccountWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteAccountWithContext), varargs...)
 }
 
+// DeleteAppInstance mocks base method
+func (m *MockChimeAPI) DeleteAppInstance(arg0 *chime.DeleteAppInstanceInput) (*chime.DeleteAppInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppInstance", arg0)
+	ret0, _ := ret[0].(*chime.DeleteAppInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppInstance indicates an expected call of DeleteAppInstance
+func (mr *MockChimeAPIMockRecorder) DeleteAppInstance(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstance", reflect.TypeOf((*MockChimeAPI)(nil).DeleteAppInstance), arg0)
+}
+
+// DeleteAppInstanceAdmin mocks base method
+func (m *MockChimeAPI) DeleteAppInstanceAdmin(arg0 *chime.DeleteAppInstanceAdminInput) (*chime.DeleteAppInstanceAdminOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppInstanceAdmin", arg0)
+	ret0, _ := ret[0].(*chime.DeleteAppInstanceAdminOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppInstanceAdmin indicates an expected call of DeleteAppInstanceAdmin
+func (mr *MockChimeAPIMockRecorder) DeleteAppInstanceAdmin(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceAdmin", reflect.TypeOf((*MockChimeAPI)(nil).DeleteAppInstanceAdmin), arg0)
+}
+
+// DeleteAppInstanceAdminRequest mocks base method
+func (m *MockChimeAPI) DeleteAppInstanceAdminRequest(arg0 *chime.DeleteAppInstanceAdminInput) (*request.Request, *chime.DeleteAppInstanceAdminOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppInstanceAdminRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteAppInstanceAdminOutput)
+	return ret0, ret1
+}
+
+// DeleteAppInstanceAdminRequest indicates an expected call of DeleteAppInstanceAdminRequest
+func (mr *MockChimeAPIMockRecorder) DeleteAppInstanceAdminRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceAdminRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteAppInstanceAdminRequest), arg0)
+}
+
+// DeleteAppInstanceAdminWithContext mocks base method
+func (m *MockChimeAPI) DeleteAppInstanceAdminWithContext(arg0 context.Context, arg1 *chime.DeleteAppInstanceAdminInput, arg2 ...request.Option) (*chime.DeleteAppInstanceAdminOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAppInstanceAdminWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteAppInstanceAdminOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppInstanceAdminWithContext indicates an expected call of DeleteAppInstanceAdminWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteAppInstanceAdminWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceAdminWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteAppInstanceAdminWithContext), varargs...)
+}
+
+// DeleteAppInstanceRequest mocks base method
+func (m *MockChimeAPI) DeleteAppInstanceRequest(arg0 *chime.DeleteAppInstanceInput) (*request.Request, *chime.DeleteAppInstanceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppInstanceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteAppInstanceOutput)
+	return ret0, ret1
+}
+
+// DeleteAppInstanceRequest indicates an expected call of DeleteAppInstanceRequest
+func (mr *MockChimeAPIMockRecorder) DeleteAppInstanceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteAppInstanceRequest), arg0)
+}
+
+// DeleteAppInstanceStreamingConfigurations mocks base method
+func (m *MockChimeAPI) DeleteAppInstanceStreamingConfigurations(arg0 *chime.DeleteAppInstanceStreamingConfigurationsInput) (*chime.DeleteAppInstanceStreamingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppInstanceStreamingConfigurations", arg0)
+	ret0, _ := ret[0].(*chime.DeleteAppInstanceStreamingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppInstanceStreamingConfigurations indicates an expected call of DeleteAppInstanceStreamingConfigurations
+func (mr *MockChimeAPIMockRecorder) DeleteAppInstanceStreamingConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceStreamingConfigurations", reflect.TypeOf((*MockChimeAPI)(nil).DeleteAppInstanceStreamingConfigurations), arg0)
+}
+
+// DeleteAppInstanceStreamingConfigurationsRequest mocks base method
+func (m *MockChimeAPI) DeleteAppInstanceStreamingConfigurationsRequest(arg0 *chime.DeleteAppInstanceStreamingConfigurationsInput) (*request.Request, *chime.DeleteAppInstanceStreamingConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppInstanceStreamingConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteAppInstanceStreamingConfigurationsOutput)
+	return ret0, ret1
+}
+
+// DeleteAppInstanceStreamingConfigurationsRequest indicates an expected call of DeleteAppInstanceStreamingConfigurationsRequest
+func (mr *MockChimeAPIMockRecorder) DeleteAppInstanceStreamingConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceStreamingConfigurationsRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteAppInstanceStreamingConfigurationsRequest), arg0)
+}
+
+// DeleteAppInstanceStreamingConfigurationsWithContext mocks base method
+func (m *MockChimeAPI) DeleteAppInstanceStreamingConfigurationsWithContext(arg0 context.Context, arg1 *chime.DeleteAppInstanceStreamingConfigurationsInput, arg2 ...request.Option) (*chime.DeleteAppInstanceStreamingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAppInstanceStreamingConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteAppInstanceStreamingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppInstanceStreamingConfigurationsWithContext indicates an expected call of DeleteAppInstanceStreamingConfigurationsWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteAppInstanceStreamingConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceStreamingConfigurationsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteAppInstanceStreamingConfigurationsWithContext), varargs...)
+}
+
+// DeleteAppInstanceUser mocks base method
+func (m *MockChimeAPI) DeleteAppInstanceUser(arg0 *chime.DeleteAppInstanceUserInput) (*chime.DeleteAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppInstanceUser", arg0)
+	ret0, _ := ret[0].(*chime.DeleteAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppInstanceUser indicates an expected call of DeleteAppInstanceUser
+func (mr *MockChimeAPIMockRecorder) DeleteAppInstanceUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceUser", reflect.TypeOf((*MockChimeAPI)(nil).DeleteAppInstanceUser), arg0)
+}
+
+// DeleteAppInstanceUserRequest mocks base method
+func (m *MockChimeAPI) DeleteAppInstanceUserRequest(arg0 *chime.DeleteAppInstanceUserInput) (*request.Request, *chime.DeleteAppInstanceUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppInstanceUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteAppInstanceUserOutput)
+	return ret0, ret1
+}
+
+// DeleteAppInstanceUserRequest indicates an expected call of DeleteAppInstanceUserRequest
+func (mr *MockChimeAPIMockRecorder) DeleteAppInstanceUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceUserRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteAppInstanceUserRequest), arg0)
+}
+
+// DeleteAppInstanceUserWithContext mocks base method
+func (m *MockChimeAPI) DeleteAppInstanceUserWithContext(arg0 context.Context, arg1 *chime.DeleteAppInstanceUserInput, arg2 ...request.Option) (*chime.DeleteAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAppInstanceUserWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppInstanceUserWithContext indicates an expected call of DeleteAppInstanceUserWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteAppInstanceUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceUserWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteAppInstanceUserWithContext), varargs...)
+}
+
+// DeleteAppInstanceWithContext mocks base method
+func (m *MockChimeAPI) DeleteAppInstanceWithContext(arg0 context.Context, arg1 *chime.DeleteAppInstanceInput, arg2 ...request.Option) (*chime.DeleteAppInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAppInstanceWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteAppInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppInstanceWithContext indicates an expected call of DeleteAppInstanceWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteAppInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteAppInstanceWithContext), varargs...)
+}
+
 // DeleteAttendee mocks base method
 func (m *MockChimeAPI) DeleteAttendee(arg0 *chime.DeleteAttendeeInput) (*chime.DeleteAttendeeOutput, error) {
 	m.ctrl.T.Helper()
@@ -1483,6 +2033,256 @@ func (mr *MockChimeAPIMockRecorder) DeleteAttendeeWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAttendeeWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteAttendeeWithContext), varargs...)
+}
+
+// DeleteChannel mocks base method
+func (m *MockChimeAPI) DeleteChannel(arg0 *chime.DeleteChannelInput) (*chime.DeleteChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannel", arg0)
+	ret0, _ := ret[0].(*chime.DeleteChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannel indicates an expected call of DeleteChannel
+func (mr *MockChimeAPIMockRecorder) DeleteChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannel", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannel), arg0)
+}
+
+// DeleteChannelBan mocks base method
+func (m *MockChimeAPI) DeleteChannelBan(arg0 *chime.DeleteChannelBanInput) (*chime.DeleteChannelBanOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelBan", arg0)
+	ret0, _ := ret[0].(*chime.DeleteChannelBanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelBan indicates an expected call of DeleteChannelBan
+func (mr *MockChimeAPIMockRecorder) DeleteChannelBan(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelBan", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannelBan), arg0)
+}
+
+// DeleteChannelBanRequest mocks base method
+func (m *MockChimeAPI) DeleteChannelBanRequest(arg0 *chime.DeleteChannelBanInput) (*request.Request, *chime.DeleteChannelBanOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelBanRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteChannelBanOutput)
+	return ret0, ret1
+}
+
+// DeleteChannelBanRequest indicates an expected call of DeleteChannelBanRequest
+func (mr *MockChimeAPIMockRecorder) DeleteChannelBanRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelBanRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannelBanRequest), arg0)
+}
+
+// DeleteChannelBanWithContext mocks base method
+func (m *MockChimeAPI) DeleteChannelBanWithContext(arg0 context.Context, arg1 *chime.DeleteChannelBanInput, arg2 ...request.Option) (*chime.DeleteChannelBanOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteChannelBanWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteChannelBanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelBanWithContext indicates an expected call of DeleteChannelBanWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteChannelBanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelBanWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannelBanWithContext), varargs...)
+}
+
+// DeleteChannelMembership mocks base method
+func (m *MockChimeAPI) DeleteChannelMembership(arg0 *chime.DeleteChannelMembershipInput) (*chime.DeleteChannelMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelMembership", arg0)
+	ret0, _ := ret[0].(*chime.DeleteChannelMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelMembership indicates an expected call of DeleteChannelMembership
+func (mr *MockChimeAPIMockRecorder) DeleteChannelMembership(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelMembership", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannelMembership), arg0)
+}
+
+// DeleteChannelMembershipRequest mocks base method
+func (m *MockChimeAPI) DeleteChannelMembershipRequest(arg0 *chime.DeleteChannelMembershipInput) (*request.Request, *chime.DeleteChannelMembershipOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelMembershipRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteChannelMembershipOutput)
+	return ret0, ret1
+}
+
+// DeleteChannelMembershipRequest indicates an expected call of DeleteChannelMembershipRequest
+func (mr *MockChimeAPIMockRecorder) DeleteChannelMembershipRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelMembershipRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannelMembershipRequest), arg0)
+}
+
+// DeleteChannelMembershipWithContext mocks base method
+func (m *MockChimeAPI) DeleteChannelMembershipWithContext(arg0 context.Context, arg1 *chime.DeleteChannelMembershipInput, arg2 ...request.Option) (*chime.DeleteChannelMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteChannelMembershipWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteChannelMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelMembershipWithContext indicates an expected call of DeleteChannelMembershipWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteChannelMembershipWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelMembershipWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannelMembershipWithContext), varargs...)
+}
+
+// DeleteChannelMessage mocks base method
+func (m *MockChimeAPI) DeleteChannelMessage(arg0 *chime.DeleteChannelMessageInput) (*chime.DeleteChannelMessageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelMessage", arg0)
+	ret0, _ := ret[0].(*chime.DeleteChannelMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelMessage indicates an expected call of DeleteChannelMessage
+func (mr *MockChimeAPIMockRecorder) DeleteChannelMessage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelMessage", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannelMessage), arg0)
+}
+
+// DeleteChannelMessageRequest mocks base method
+func (m *MockChimeAPI) DeleteChannelMessageRequest(arg0 *chime.DeleteChannelMessageInput) (*request.Request, *chime.DeleteChannelMessageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelMessageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteChannelMessageOutput)
+	return ret0, ret1
+}
+
+// DeleteChannelMessageRequest indicates an expected call of DeleteChannelMessageRequest
+func (mr *MockChimeAPIMockRecorder) DeleteChannelMessageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelMessageRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannelMessageRequest), arg0)
+}
+
+// DeleteChannelMessageWithContext mocks base method
+func (m *MockChimeAPI) DeleteChannelMessageWithContext(arg0 context.Context, arg1 *chime.DeleteChannelMessageInput, arg2 ...request.Option) (*chime.DeleteChannelMessageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteChannelMessageWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteChannelMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelMessageWithContext indicates an expected call of DeleteChannelMessageWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteChannelMessageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelMessageWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannelMessageWithContext), varargs...)
+}
+
+// DeleteChannelModerator mocks base method
+func (m *MockChimeAPI) DeleteChannelModerator(arg0 *chime.DeleteChannelModeratorInput) (*chime.DeleteChannelModeratorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelModerator", arg0)
+	ret0, _ := ret[0].(*chime.DeleteChannelModeratorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelModerator indicates an expected call of DeleteChannelModerator
+func (mr *MockChimeAPIMockRecorder) DeleteChannelModerator(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelModerator", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannelModerator), arg0)
+}
+
+// DeleteChannelModeratorRequest mocks base method
+func (m *MockChimeAPI) DeleteChannelModeratorRequest(arg0 *chime.DeleteChannelModeratorInput) (*request.Request, *chime.DeleteChannelModeratorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelModeratorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteChannelModeratorOutput)
+	return ret0, ret1
+}
+
+// DeleteChannelModeratorRequest indicates an expected call of DeleteChannelModeratorRequest
+func (mr *MockChimeAPIMockRecorder) DeleteChannelModeratorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelModeratorRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannelModeratorRequest), arg0)
+}
+
+// DeleteChannelModeratorWithContext mocks base method
+func (m *MockChimeAPI) DeleteChannelModeratorWithContext(arg0 context.Context, arg1 *chime.DeleteChannelModeratorInput, arg2 ...request.Option) (*chime.DeleteChannelModeratorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteChannelModeratorWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteChannelModeratorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelModeratorWithContext indicates an expected call of DeleteChannelModeratorWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteChannelModeratorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelModeratorWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannelModeratorWithContext), varargs...)
+}
+
+// DeleteChannelRequest mocks base method
+func (m *MockChimeAPI) DeleteChannelRequest(arg0 *chime.DeleteChannelInput) (*request.Request, *chime.DeleteChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DeleteChannelOutput)
+	return ret0, ret1
+}
+
+// DeleteChannelRequest indicates an expected call of DeleteChannelRequest
+func (mr *MockChimeAPIMockRecorder) DeleteChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelRequest", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannelRequest), arg0)
+}
+
+// DeleteChannelWithContext mocks base method
+func (m *MockChimeAPI) DeleteChannelWithContext(arg0 context.Context, arg1 *chime.DeleteChannelInput, arg2 ...request.Option) (*chime.DeleteChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DeleteChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelWithContext indicates an expected call of DeleteChannelWithContext
+func (mr *MockChimeAPIMockRecorder) DeleteChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteChannelWithContext), varargs...)
 }
 
 // DeleteEventsConfiguration mocks base method
@@ -2285,6 +3085,456 @@ func (mr *MockChimeAPIMockRecorder) DeleteVoiceConnectorWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVoiceConnectorWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DeleteVoiceConnectorWithContext), varargs...)
 }
 
+// DescribeAppInstance mocks base method
+func (m *MockChimeAPI) DescribeAppInstance(arg0 *chime.DescribeAppInstanceInput) (*chime.DescribeAppInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppInstance", arg0)
+	ret0, _ := ret[0].(*chime.DescribeAppInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppInstance indicates an expected call of DescribeAppInstance
+func (mr *MockChimeAPIMockRecorder) DescribeAppInstance(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppInstance", reflect.TypeOf((*MockChimeAPI)(nil).DescribeAppInstance), arg0)
+}
+
+// DescribeAppInstanceAdmin mocks base method
+func (m *MockChimeAPI) DescribeAppInstanceAdmin(arg0 *chime.DescribeAppInstanceAdminInput) (*chime.DescribeAppInstanceAdminOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppInstanceAdmin", arg0)
+	ret0, _ := ret[0].(*chime.DescribeAppInstanceAdminOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppInstanceAdmin indicates an expected call of DescribeAppInstanceAdmin
+func (mr *MockChimeAPIMockRecorder) DescribeAppInstanceAdmin(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppInstanceAdmin", reflect.TypeOf((*MockChimeAPI)(nil).DescribeAppInstanceAdmin), arg0)
+}
+
+// DescribeAppInstanceAdminRequest mocks base method
+func (m *MockChimeAPI) DescribeAppInstanceAdminRequest(arg0 *chime.DescribeAppInstanceAdminInput) (*request.Request, *chime.DescribeAppInstanceAdminOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppInstanceAdminRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DescribeAppInstanceAdminOutput)
+	return ret0, ret1
+}
+
+// DescribeAppInstanceAdminRequest indicates an expected call of DescribeAppInstanceAdminRequest
+func (mr *MockChimeAPIMockRecorder) DescribeAppInstanceAdminRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppInstanceAdminRequest", reflect.TypeOf((*MockChimeAPI)(nil).DescribeAppInstanceAdminRequest), arg0)
+}
+
+// DescribeAppInstanceAdminWithContext mocks base method
+func (m *MockChimeAPI) DescribeAppInstanceAdminWithContext(arg0 context.Context, arg1 *chime.DescribeAppInstanceAdminInput, arg2 ...request.Option) (*chime.DescribeAppInstanceAdminOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAppInstanceAdminWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DescribeAppInstanceAdminOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppInstanceAdminWithContext indicates an expected call of DescribeAppInstanceAdminWithContext
+func (mr *MockChimeAPIMockRecorder) DescribeAppInstanceAdminWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppInstanceAdminWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DescribeAppInstanceAdminWithContext), varargs...)
+}
+
+// DescribeAppInstanceRequest mocks base method
+func (m *MockChimeAPI) DescribeAppInstanceRequest(arg0 *chime.DescribeAppInstanceInput) (*request.Request, *chime.DescribeAppInstanceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppInstanceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DescribeAppInstanceOutput)
+	return ret0, ret1
+}
+
+// DescribeAppInstanceRequest indicates an expected call of DescribeAppInstanceRequest
+func (mr *MockChimeAPIMockRecorder) DescribeAppInstanceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppInstanceRequest", reflect.TypeOf((*MockChimeAPI)(nil).DescribeAppInstanceRequest), arg0)
+}
+
+// DescribeAppInstanceUser mocks base method
+func (m *MockChimeAPI) DescribeAppInstanceUser(arg0 *chime.DescribeAppInstanceUserInput) (*chime.DescribeAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppInstanceUser", arg0)
+	ret0, _ := ret[0].(*chime.DescribeAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppInstanceUser indicates an expected call of DescribeAppInstanceUser
+func (mr *MockChimeAPIMockRecorder) DescribeAppInstanceUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppInstanceUser", reflect.TypeOf((*MockChimeAPI)(nil).DescribeAppInstanceUser), arg0)
+}
+
+// DescribeAppInstanceUserRequest mocks base method
+func (m *MockChimeAPI) DescribeAppInstanceUserRequest(arg0 *chime.DescribeAppInstanceUserInput) (*request.Request, *chime.DescribeAppInstanceUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppInstanceUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DescribeAppInstanceUserOutput)
+	return ret0, ret1
+}
+
+// DescribeAppInstanceUserRequest indicates an expected call of DescribeAppInstanceUserRequest
+func (mr *MockChimeAPIMockRecorder) DescribeAppInstanceUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppInstanceUserRequest", reflect.TypeOf((*MockChimeAPI)(nil).DescribeAppInstanceUserRequest), arg0)
+}
+
+// DescribeAppInstanceUserWithContext mocks base method
+func (m *MockChimeAPI) DescribeAppInstanceUserWithContext(arg0 context.Context, arg1 *chime.DescribeAppInstanceUserInput, arg2 ...request.Option) (*chime.DescribeAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAppInstanceUserWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DescribeAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppInstanceUserWithContext indicates an expected call of DescribeAppInstanceUserWithContext
+func (mr *MockChimeAPIMockRecorder) DescribeAppInstanceUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppInstanceUserWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DescribeAppInstanceUserWithContext), varargs...)
+}
+
+// DescribeAppInstanceWithContext mocks base method
+func (m *MockChimeAPI) DescribeAppInstanceWithContext(arg0 context.Context, arg1 *chime.DescribeAppInstanceInput, arg2 ...request.Option) (*chime.DescribeAppInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAppInstanceWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DescribeAppInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppInstanceWithContext indicates an expected call of DescribeAppInstanceWithContext
+func (mr *MockChimeAPIMockRecorder) DescribeAppInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppInstanceWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DescribeAppInstanceWithContext), varargs...)
+}
+
+// DescribeChannel mocks base method
+func (m *MockChimeAPI) DescribeChannel(arg0 *chime.DescribeChannelInput) (*chime.DescribeChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannel", arg0)
+	ret0, _ := ret[0].(*chime.DescribeChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannel indicates an expected call of DescribeChannel
+func (mr *MockChimeAPIMockRecorder) DescribeChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannel", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannel), arg0)
+}
+
+// DescribeChannelBan mocks base method
+func (m *MockChimeAPI) DescribeChannelBan(arg0 *chime.DescribeChannelBanInput) (*chime.DescribeChannelBanOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannelBan", arg0)
+	ret0, _ := ret[0].(*chime.DescribeChannelBanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannelBan indicates an expected call of DescribeChannelBan
+func (mr *MockChimeAPIMockRecorder) DescribeChannelBan(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelBan", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelBan), arg0)
+}
+
+// DescribeChannelBanRequest mocks base method
+func (m *MockChimeAPI) DescribeChannelBanRequest(arg0 *chime.DescribeChannelBanInput) (*request.Request, *chime.DescribeChannelBanOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannelBanRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DescribeChannelBanOutput)
+	return ret0, ret1
+}
+
+// DescribeChannelBanRequest indicates an expected call of DescribeChannelBanRequest
+func (mr *MockChimeAPIMockRecorder) DescribeChannelBanRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelBanRequest", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelBanRequest), arg0)
+}
+
+// DescribeChannelBanWithContext mocks base method
+func (m *MockChimeAPI) DescribeChannelBanWithContext(arg0 context.Context, arg1 *chime.DescribeChannelBanInput, arg2 ...request.Option) (*chime.DescribeChannelBanOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeChannelBanWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DescribeChannelBanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannelBanWithContext indicates an expected call of DescribeChannelBanWithContext
+func (mr *MockChimeAPIMockRecorder) DescribeChannelBanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelBanWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelBanWithContext), varargs...)
+}
+
+// DescribeChannelMembership mocks base method
+func (m *MockChimeAPI) DescribeChannelMembership(arg0 *chime.DescribeChannelMembershipInput) (*chime.DescribeChannelMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannelMembership", arg0)
+	ret0, _ := ret[0].(*chime.DescribeChannelMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannelMembership indicates an expected call of DescribeChannelMembership
+func (mr *MockChimeAPIMockRecorder) DescribeChannelMembership(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelMembership", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelMembership), arg0)
+}
+
+// DescribeChannelMembershipForAppInstanceUser mocks base method
+func (m *MockChimeAPI) DescribeChannelMembershipForAppInstanceUser(arg0 *chime.DescribeChannelMembershipForAppInstanceUserInput) (*chime.DescribeChannelMembershipForAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannelMembershipForAppInstanceUser", arg0)
+	ret0, _ := ret[0].(*chime.DescribeChannelMembershipForAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannelMembershipForAppInstanceUser indicates an expected call of DescribeChannelMembershipForAppInstanceUser
+func (mr *MockChimeAPIMockRecorder) DescribeChannelMembershipForAppInstanceUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelMembershipForAppInstanceUser", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelMembershipForAppInstanceUser), arg0)
+}
+
+// DescribeChannelMembershipForAppInstanceUserRequest mocks base method
+func (m *MockChimeAPI) DescribeChannelMembershipForAppInstanceUserRequest(arg0 *chime.DescribeChannelMembershipForAppInstanceUserInput) (*request.Request, *chime.DescribeChannelMembershipForAppInstanceUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannelMembershipForAppInstanceUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DescribeChannelMembershipForAppInstanceUserOutput)
+	return ret0, ret1
+}
+
+// DescribeChannelMembershipForAppInstanceUserRequest indicates an expected call of DescribeChannelMembershipForAppInstanceUserRequest
+func (mr *MockChimeAPIMockRecorder) DescribeChannelMembershipForAppInstanceUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelMembershipForAppInstanceUserRequest", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelMembershipForAppInstanceUserRequest), arg0)
+}
+
+// DescribeChannelMembershipForAppInstanceUserWithContext mocks base method
+func (m *MockChimeAPI) DescribeChannelMembershipForAppInstanceUserWithContext(arg0 context.Context, arg1 *chime.DescribeChannelMembershipForAppInstanceUserInput, arg2 ...request.Option) (*chime.DescribeChannelMembershipForAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeChannelMembershipForAppInstanceUserWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DescribeChannelMembershipForAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannelMembershipForAppInstanceUserWithContext indicates an expected call of DescribeChannelMembershipForAppInstanceUserWithContext
+func (mr *MockChimeAPIMockRecorder) DescribeChannelMembershipForAppInstanceUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelMembershipForAppInstanceUserWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelMembershipForAppInstanceUserWithContext), varargs...)
+}
+
+// DescribeChannelMembershipRequest mocks base method
+func (m *MockChimeAPI) DescribeChannelMembershipRequest(arg0 *chime.DescribeChannelMembershipInput) (*request.Request, *chime.DescribeChannelMembershipOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannelMembershipRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DescribeChannelMembershipOutput)
+	return ret0, ret1
+}
+
+// DescribeChannelMembershipRequest indicates an expected call of DescribeChannelMembershipRequest
+func (mr *MockChimeAPIMockRecorder) DescribeChannelMembershipRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelMembershipRequest", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelMembershipRequest), arg0)
+}
+
+// DescribeChannelMembershipWithContext mocks base method
+func (m *MockChimeAPI) DescribeChannelMembershipWithContext(arg0 context.Context, arg1 *chime.DescribeChannelMembershipInput, arg2 ...request.Option) (*chime.DescribeChannelMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeChannelMembershipWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DescribeChannelMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannelMembershipWithContext indicates an expected call of DescribeChannelMembershipWithContext
+func (mr *MockChimeAPIMockRecorder) DescribeChannelMembershipWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelMembershipWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelMembershipWithContext), varargs...)
+}
+
+// DescribeChannelModeratedByAppInstanceUser mocks base method
+func (m *MockChimeAPI) DescribeChannelModeratedByAppInstanceUser(arg0 *chime.DescribeChannelModeratedByAppInstanceUserInput) (*chime.DescribeChannelModeratedByAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannelModeratedByAppInstanceUser", arg0)
+	ret0, _ := ret[0].(*chime.DescribeChannelModeratedByAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannelModeratedByAppInstanceUser indicates an expected call of DescribeChannelModeratedByAppInstanceUser
+func (mr *MockChimeAPIMockRecorder) DescribeChannelModeratedByAppInstanceUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelModeratedByAppInstanceUser", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelModeratedByAppInstanceUser), arg0)
+}
+
+// DescribeChannelModeratedByAppInstanceUserRequest mocks base method
+func (m *MockChimeAPI) DescribeChannelModeratedByAppInstanceUserRequest(arg0 *chime.DescribeChannelModeratedByAppInstanceUserInput) (*request.Request, *chime.DescribeChannelModeratedByAppInstanceUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannelModeratedByAppInstanceUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DescribeChannelModeratedByAppInstanceUserOutput)
+	return ret0, ret1
+}
+
+// DescribeChannelModeratedByAppInstanceUserRequest indicates an expected call of DescribeChannelModeratedByAppInstanceUserRequest
+func (mr *MockChimeAPIMockRecorder) DescribeChannelModeratedByAppInstanceUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelModeratedByAppInstanceUserRequest", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelModeratedByAppInstanceUserRequest), arg0)
+}
+
+// DescribeChannelModeratedByAppInstanceUserWithContext mocks base method
+func (m *MockChimeAPI) DescribeChannelModeratedByAppInstanceUserWithContext(arg0 context.Context, arg1 *chime.DescribeChannelModeratedByAppInstanceUserInput, arg2 ...request.Option) (*chime.DescribeChannelModeratedByAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeChannelModeratedByAppInstanceUserWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DescribeChannelModeratedByAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannelModeratedByAppInstanceUserWithContext indicates an expected call of DescribeChannelModeratedByAppInstanceUserWithContext
+func (mr *MockChimeAPIMockRecorder) DescribeChannelModeratedByAppInstanceUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelModeratedByAppInstanceUserWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelModeratedByAppInstanceUserWithContext), varargs...)
+}
+
+// DescribeChannelModerator mocks base method
+func (m *MockChimeAPI) DescribeChannelModerator(arg0 *chime.DescribeChannelModeratorInput) (*chime.DescribeChannelModeratorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannelModerator", arg0)
+	ret0, _ := ret[0].(*chime.DescribeChannelModeratorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannelModerator indicates an expected call of DescribeChannelModerator
+func (mr *MockChimeAPIMockRecorder) DescribeChannelModerator(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelModerator", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelModerator), arg0)
+}
+
+// DescribeChannelModeratorRequest mocks base method
+func (m *MockChimeAPI) DescribeChannelModeratorRequest(arg0 *chime.DescribeChannelModeratorInput) (*request.Request, *chime.DescribeChannelModeratorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannelModeratorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DescribeChannelModeratorOutput)
+	return ret0, ret1
+}
+
+// DescribeChannelModeratorRequest indicates an expected call of DescribeChannelModeratorRequest
+func (mr *MockChimeAPIMockRecorder) DescribeChannelModeratorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelModeratorRequest", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelModeratorRequest), arg0)
+}
+
+// DescribeChannelModeratorWithContext mocks base method
+func (m *MockChimeAPI) DescribeChannelModeratorWithContext(arg0 context.Context, arg1 *chime.DescribeChannelModeratorInput, arg2 ...request.Option) (*chime.DescribeChannelModeratorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeChannelModeratorWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DescribeChannelModeratorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannelModeratorWithContext indicates an expected call of DescribeChannelModeratorWithContext
+func (mr *MockChimeAPIMockRecorder) DescribeChannelModeratorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelModeratorWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelModeratorWithContext), varargs...)
+}
+
+// DescribeChannelRequest mocks base method
+func (m *MockChimeAPI) DescribeChannelRequest(arg0 *chime.DescribeChannelInput) (*request.Request, *chime.DescribeChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.DescribeChannelOutput)
+	return ret0, ret1
+}
+
+// DescribeChannelRequest indicates an expected call of DescribeChannelRequest
+func (mr *MockChimeAPIMockRecorder) DescribeChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelRequest", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelRequest), arg0)
+}
+
+// DescribeChannelWithContext mocks base method
+func (m *MockChimeAPI) DescribeChannelWithContext(arg0 context.Context, arg1 *chime.DescribeChannelInput, arg2 ...request.Option) (*chime.DescribeChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.DescribeChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannelWithContext indicates an expected call of DescribeChannelWithContext
+func (mr *MockChimeAPIMockRecorder) DescribeChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelWithContext", reflect.TypeOf((*MockChimeAPI)(nil).DescribeChannelWithContext), varargs...)
+}
+
 // DisassociatePhoneNumberFromUser mocks base method
 func (m *MockChimeAPI) DisassociatePhoneNumberFromUser(arg0 *chime.DisassociatePhoneNumberFromUserInput) (*chime.DisassociatePhoneNumberFromUserOutput, error) {
 	m.ctrl.T.Helper()
@@ -2585,6 +3835,106 @@ func (mr *MockChimeAPIMockRecorder) GetAccountWithContext(arg0, arg1 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccountWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetAccountWithContext), varargs...)
 }
 
+// GetAppInstanceRetentionSettings mocks base method
+func (m *MockChimeAPI) GetAppInstanceRetentionSettings(arg0 *chime.GetAppInstanceRetentionSettingsInput) (*chime.GetAppInstanceRetentionSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAppInstanceRetentionSettings", arg0)
+	ret0, _ := ret[0].(*chime.GetAppInstanceRetentionSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAppInstanceRetentionSettings indicates an expected call of GetAppInstanceRetentionSettings
+func (mr *MockChimeAPIMockRecorder) GetAppInstanceRetentionSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppInstanceRetentionSettings", reflect.TypeOf((*MockChimeAPI)(nil).GetAppInstanceRetentionSettings), arg0)
+}
+
+// GetAppInstanceRetentionSettingsRequest mocks base method
+func (m *MockChimeAPI) GetAppInstanceRetentionSettingsRequest(arg0 *chime.GetAppInstanceRetentionSettingsInput) (*request.Request, *chime.GetAppInstanceRetentionSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAppInstanceRetentionSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.GetAppInstanceRetentionSettingsOutput)
+	return ret0, ret1
+}
+
+// GetAppInstanceRetentionSettingsRequest indicates an expected call of GetAppInstanceRetentionSettingsRequest
+func (mr *MockChimeAPIMockRecorder) GetAppInstanceRetentionSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppInstanceRetentionSettingsRequest", reflect.TypeOf((*MockChimeAPI)(nil).GetAppInstanceRetentionSettingsRequest), arg0)
+}
+
+// GetAppInstanceRetentionSettingsWithContext mocks base method
+func (m *MockChimeAPI) GetAppInstanceRetentionSettingsWithContext(arg0 context.Context, arg1 *chime.GetAppInstanceRetentionSettingsInput, arg2 ...request.Option) (*chime.GetAppInstanceRetentionSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAppInstanceRetentionSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.GetAppInstanceRetentionSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAppInstanceRetentionSettingsWithContext indicates an expected call of GetAppInstanceRetentionSettingsWithContext
+func (mr *MockChimeAPIMockRecorder) GetAppInstanceRetentionSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppInstanceRetentionSettingsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetAppInstanceRetentionSettingsWithContext), varargs...)
+}
+
+// GetAppInstanceStreamingConfigurations mocks base method
+func (m *MockChimeAPI) GetAppInstanceStreamingConfigurations(arg0 *chime.GetAppInstanceStreamingConfigurationsInput) (*chime.GetAppInstanceStreamingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAppInstanceStreamingConfigurations", arg0)
+	ret0, _ := ret[0].(*chime.GetAppInstanceStreamingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAppInstanceStreamingConfigurations indicates an expected call of GetAppInstanceStreamingConfigurations
+func (mr *MockChimeAPIMockRecorder) GetAppInstanceStreamingConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppInstanceStreamingConfigurations", reflect.TypeOf((*MockChimeAPI)(nil).GetAppInstanceStreamingConfigurations), arg0)
+}
+
+// GetAppInstanceStreamingConfigurationsRequest mocks base method
+func (m *MockChimeAPI) GetAppInstanceStreamingConfigurationsRequest(arg0 *chime.GetAppInstanceStreamingConfigurationsInput) (*request.Request, *chime.GetAppInstanceStreamingConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAppInstanceStreamingConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.GetAppInstanceStreamingConfigurationsOutput)
+	return ret0, ret1
+}
+
+// GetAppInstanceStreamingConfigurationsRequest indicates an expected call of GetAppInstanceStreamingConfigurationsRequest
+func (mr *MockChimeAPIMockRecorder) GetAppInstanceStreamingConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppInstanceStreamingConfigurationsRequest", reflect.TypeOf((*MockChimeAPI)(nil).GetAppInstanceStreamingConfigurationsRequest), arg0)
+}
+
+// GetAppInstanceStreamingConfigurationsWithContext mocks base method
+func (m *MockChimeAPI) GetAppInstanceStreamingConfigurationsWithContext(arg0 context.Context, arg1 *chime.GetAppInstanceStreamingConfigurationsInput, arg2 ...request.Option) (*chime.GetAppInstanceStreamingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAppInstanceStreamingConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.GetAppInstanceStreamingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAppInstanceStreamingConfigurationsWithContext indicates an expected call of GetAppInstanceStreamingConfigurationsWithContext
+func (mr *MockChimeAPIMockRecorder) GetAppInstanceStreamingConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAppInstanceStreamingConfigurationsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetAppInstanceStreamingConfigurationsWithContext), varargs...)
+}
+
 // GetAttendee mocks base method
 func (m *MockChimeAPI) GetAttendee(arg0 *chime.GetAttendeeInput) (*chime.GetAttendeeOutput, error) {
 	m.ctrl.T.Helper()
@@ -2683,6 +4033,56 @@ func (mr *MockChimeAPIMockRecorder) GetBotWithContext(arg0, arg1 interface{}, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBotWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetBotWithContext), varargs...)
+}
+
+// GetChannelMessage mocks base method
+func (m *MockChimeAPI) GetChannelMessage(arg0 *chime.GetChannelMessageInput) (*chime.GetChannelMessageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetChannelMessage", arg0)
+	ret0, _ := ret[0].(*chime.GetChannelMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetChannelMessage indicates an expected call of GetChannelMessage
+func (mr *MockChimeAPIMockRecorder) GetChannelMessage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelMessage", reflect.TypeOf((*MockChimeAPI)(nil).GetChannelMessage), arg0)
+}
+
+// GetChannelMessageRequest mocks base method
+func (m *MockChimeAPI) GetChannelMessageRequest(arg0 *chime.GetChannelMessageInput) (*request.Request, *chime.GetChannelMessageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetChannelMessageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.GetChannelMessageOutput)
+	return ret0, ret1
+}
+
+// GetChannelMessageRequest indicates an expected call of GetChannelMessageRequest
+func (mr *MockChimeAPIMockRecorder) GetChannelMessageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelMessageRequest", reflect.TypeOf((*MockChimeAPI)(nil).GetChannelMessageRequest), arg0)
+}
+
+// GetChannelMessageWithContext mocks base method
+func (m *MockChimeAPI) GetChannelMessageWithContext(arg0 context.Context, arg1 *chime.GetChannelMessageInput, arg2 ...request.Option) (*chime.GetChannelMessageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetChannelMessageWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.GetChannelMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetChannelMessageWithContext indicates an expected call of GetChannelMessageWithContext
+func (mr *MockChimeAPIMockRecorder) GetChannelMessageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelMessageWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetChannelMessageWithContext), varargs...)
 }
 
 // GetEventsConfiguration mocks base method
@@ -2833,6 +4233,56 @@ func (mr *MockChimeAPIMockRecorder) GetMeetingWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMeetingWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetMeetingWithContext), varargs...)
+}
+
+// GetMessagingSessionEndpoint mocks base method
+func (m *MockChimeAPI) GetMessagingSessionEndpoint(arg0 *chime.GetMessagingSessionEndpointInput) (*chime.GetMessagingSessionEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMessagingSessionEndpoint", arg0)
+	ret0, _ := ret[0].(*chime.GetMessagingSessionEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMessagingSessionEndpoint indicates an expected call of GetMessagingSessionEndpoint
+func (mr *MockChimeAPIMockRecorder) GetMessagingSessionEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMessagingSessionEndpoint", reflect.TypeOf((*MockChimeAPI)(nil).GetMessagingSessionEndpoint), arg0)
+}
+
+// GetMessagingSessionEndpointRequest mocks base method
+func (m *MockChimeAPI) GetMessagingSessionEndpointRequest(arg0 *chime.GetMessagingSessionEndpointInput) (*request.Request, *chime.GetMessagingSessionEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMessagingSessionEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.GetMessagingSessionEndpointOutput)
+	return ret0, ret1
+}
+
+// GetMessagingSessionEndpointRequest indicates an expected call of GetMessagingSessionEndpointRequest
+func (mr *MockChimeAPIMockRecorder) GetMessagingSessionEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMessagingSessionEndpointRequest", reflect.TypeOf((*MockChimeAPI)(nil).GetMessagingSessionEndpointRequest), arg0)
+}
+
+// GetMessagingSessionEndpointWithContext mocks base method
+func (m *MockChimeAPI) GetMessagingSessionEndpointWithContext(arg0 context.Context, arg1 *chime.GetMessagingSessionEndpointInput, arg2 ...request.Option) (*chime.GetMessagingSessionEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMessagingSessionEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.GetMessagingSessionEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMessagingSessionEndpointWithContext indicates an expected call of GetMessagingSessionEndpointWithContext
+func (mr *MockChimeAPIMockRecorder) GetMessagingSessionEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMessagingSessionEndpointWithContext", reflect.TypeOf((*MockChimeAPI)(nil).GetMessagingSessionEndpointWithContext), varargs...)
 }
 
 // GetPhoneNumber mocks base method
@@ -3968,6 +5418,255 @@ func (mr *MockChimeAPIMockRecorder) ListAccountsWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccountsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListAccountsWithContext), varargs...)
 }
 
+// ListAppInstanceAdmins mocks base method
+func (m *MockChimeAPI) ListAppInstanceAdmins(arg0 *chime.ListAppInstanceAdminsInput) (*chime.ListAppInstanceAdminsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInstanceAdmins", arg0)
+	ret0, _ := ret[0].(*chime.ListAppInstanceAdminsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppInstanceAdmins indicates an expected call of ListAppInstanceAdmins
+func (mr *MockChimeAPIMockRecorder) ListAppInstanceAdmins(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceAdmins", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstanceAdmins), arg0)
+}
+
+// ListAppInstanceAdminsPages mocks base method
+func (m *MockChimeAPI) ListAppInstanceAdminsPages(arg0 *chime.ListAppInstanceAdminsInput, arg1 func(*chime.ListAppInstanceAdminsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInstanceAdminsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppInstanceAdminsPages indicates an expected call of ListAppInstanceAdminsPages
+func (mr *MockChimeAPIMockRecorder) ListAppInstanceAdminsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceAdminsPages", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstanceAdminsPages), arg0, arg1)
+}
+
+// ListAppInstanceAdminsPagesWithContext mocks base method
+func (m *MockChimeAPI) ListAppInstanceAdminsPagesWithContext(arg0 context.Context, arg1 *chime.ListAppInstanceAdminsInput, arg2 func(*chime.ListAppInstanceAdminsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppInstanceAdminsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppInstanceAdminsPagesWithContext indicates an expected call of ListAppInstanceAdminsPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListAppInstanceAdminsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceAdminsPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstanceAdminsPagesWithContext), varargs...)
+}
+
+// ListAppInstanceAdminsRequest mocks base method
+func (m *MockChimeAPI) ListAppInstanceAdminsRequest(arg0 *chime.ListAppInstanceAdminsInput) (*request.Request, *chime.ListAppInstanceAdminsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInstanceAdminsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListAppInstanceAdminsOutput)
+	return ret0, ret1
+}
+
+// ListAppInstanceAdminsRequest indicates an expected call of ListAppInstanceAdminsRequest
+func (mr *MockChimeAPIMockRecorder) ListAppInstanceAdminsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceAdminsRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstanceAdminsRequest), arg0)
+}
+
+// ListAppInstanceAdminsWithContext mocks base method
+func (m *MockChimeAPI) ListAppInstanceAdminsWithContext(arg0 context.Context, arg1 *chime.ListAppInstanceAdminsInput, arg2 ...request.Option) (*chime.ListAppInstanceAdminsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppInstanceAdminsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListAppInstanceAdminsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppInstanceAdminsWithContext indicates an expected call of ListAppInstanceAdminsWithContext
+func (mr *MockChimeAPIMockRecorder) ListAppInstanceAdminsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceAdminsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstanceAdminsWithContext), varargs...)
+}
+
+// ListAppInstanceUsers mocks base method
+func (m *MockChimeAPI) ListAppInstanceUsers(arg0 *chime.ListAppInstanceUsersInput) (*chime.ListAppInstanceUsersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInstanceUsers", arg0)
+	ret0, _ := ret[0].(*chime.ListAppInstanceUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppInstanceUsers indicates an expected call of ListAppInstanceUsers
+func (mr *MockChimeAPIMockRecorder) ListAppInstanceUsers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceUsers", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstanceUsers), arg0)
+}
+
+// ListAppInstanceUsersPages mocks base method
+func (m *MockChimeAPI) ListAppInstanceUsersPages(arg0 *chime.ListAppInstanceUsersInput, arg1 func(*chime.ListAppInstanceUsersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInstanceUsersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppInstanceUsersPages indicates an expected call of ListAppInstanceUsersPages
+func (mr *MockChimeAPIMockRecorder) ListAppInstanceUsersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceUsersPages", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstanceUsersPages), arg0, arg1)
+}
+
+// ListAppInstanceUsersPagesWithContext mocks base method
+func (m *MockChimeAPI) ListAppInstanceUsersPagesWithContext(arg0 context.Context, arg1 *chime.ListAppInstanceUsersInput, arg2 func(*chime.ListAppInstanceUsersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppInstanceUsersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppInstanceUsersPagesWithContext indicates an expected call of ListAppInstanceUsersPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListAppInstanceUsersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceUsersPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstanceUsersPagesWithContext), varargs...)
+}
+
+// ListAppInstanceUsersRequest mocks base method
+func (m *MockChimeAPI) ListAppInstanceUsersRequest(arg0 *chime.ListAppInstanceUsersInput) (*request.Request, *chime.ListAppInstanceUsersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInstanceUsersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListAppInstanceUsersOutput)
+	return ret0, ret1
+}
+
+// ListAppInstanceUsersRequest indicates an expected call of ListAppInstanceUsersRequest
+func (mr *MockChimeAPIMockRecorder) ListAppInstanceUsersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceUsersRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstanceUsersRequest), arg0)
+}
+
+// ListAppInstanceUsersWithContext mocks base method
+func (m *MockChimeAPI) ListAppInstanceUsersWithContext(arg0 context.Context, arg1 *chime.ListAppInstanceUsersInput, arg2 ...request.Option) (*chime.ListAppInstanceUsersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppInstanceUsersWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListAppInstanceUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppInstanceUsersWithContext indicates an expected call of ListAppInstanceUsersWithContext
+func (mr *MockChimeAPIMockRecorder) ListAppInstanceUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceUsersWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstanceUsersWithContext), varargs...)
+}
+
+// ListAppInstances mocks base method
+func (m *MockChimeAPI) ListAppInstances(arg0 *chime.ListAppInstancesInput) (*chime.ListAppInstancesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInstances", arg0)
+	ret0, _ := ret[0].(*chime.ListAppInstancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppInstances indicates an expected call of ListAppInstances
+func (mr *MockChimeAPIMockRecorder) ListAppInstances(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstances", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstances), arg0)
+}
+
+// ListAppInstancesPages mocks base method
+func (m *MockChimeAPI) ListAppInstancesPages(arg0 *chime.ListAppInstancesInput, arg1 func(*chime.ListAppInstancesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInstancesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppInstancesPages indicates an expected call of ListAppInstancesPages
+func (mr *MockChimeAPIMockRecorder) ListAppInstancesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstancesPages", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstancesPages), arg0, arg1)
+}
+
+// ListAppInstancesPagesWithContext mocks base method
+func (m *MockChimeAPI) ListAppInstancesPagesWithContext(arg0 context.Context, arg1 *chime.ListAppInstancesInput, arg2 func(*chime.ListAppInstancesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppInstancesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppInstancesPagesWithContext indicates an expected call of ListAppInstancesPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListAppInstancesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstancesPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstancesPagesWithContext), varargs...)
+}
+
+// ListAppInstancesRequest mocks base method
+func (m *MockChimeAPI) ListAppInstancesRequest(arg0 *chime.ListAppInstancesInput) (*request.Request, *chime.ListAppInstancesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInstancesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListAppInstancesOutput)
+	return ret0, ret1
+}
+
+// ListAppInstancesRequest indicates an expected call of ListAppInstancesRequest
+func (mr *MockChimeAPIMockRecorder) ListAppInstancesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstancesRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstancesRequest), arg0)
+}
+
+// ListAppInstancesWithContext mocks base method
+func (m *MockChimeAPI) ListAppInstancesWithContext(arg0 context.Context, arg1 *chime.ListAppInstancesInput, arg2 ...request.Option) (*chime.ListAppInstancesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppInstancesWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListAppInstancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppInstancesWithContext indicates an expected call of ListAppInstancesWithContext
+func (mr *MockChimeAPIMockRecorder) ListAppInstancesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstancesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListAppInstancesWithContext), varargs...)
+}
+
 // ListAttendeeTags mocks base method
 func (m *MockChimeAPI) ListAttendeeTags(arg0 *chime.ListAttendeeTagsInput) (*chime.ListAttendeeTagsOutput, error) {
 	m.ctrl.T.Helper()
@@ -4182,6 +5881,587 @@ func (mr *MockChimeAPIMockRecorder) ListBotsWithContext(arg0, arg1 interface{}, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBotsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListBotsWithContext), varargs...)
+}
+
+// ListChannelBans mocks base method
+func (m *MockChimeAPI) ListChannelBans(arg0 *chime.ListChannelBansInput) (*chime.ListChannelBansOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelBans", arg0)
+	ret0, _ := ret[0].(*chime.ListChannelBansOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelBans indicates an expected call of ListChannelBans
+func (mr *MockChimeAPIMockRecorder) ListChannelBans(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelBans", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelBans), arg0)
+}
+
+// ListChannelBansPages mocks base method
+func (m *MockChimeAPI) ListChannelBansPages(arg0 *chime.ListChannelBansInput, arg1 func(*chime.ListChannelBansOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelBansPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelBansPages indicates an expected call of ListChannelBansPages
+func (mr *MockChimeAPIMockRecorder) ListChannelBansPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelBansPages", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelBansPages), arg0, arg1)
+}
+
+// ListChannelBansPagesWithContext mocks base method
+func (m *MockChimeAPI) ListChannelBansPagesWithContext(arg0 context.Context, arg1 *chime.ListChannelBansInput, arg2 func(*chime.ListChannelBansOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelBansPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelBansPagesWithContext indicates an expected call of ListChannelBansPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListChannelBansPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelBansPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelBansPagesWithContext), varargs...)
+}
+
+// ListChannelBansRequest mocks base method
+func (m *MockChimeAPI) ListChannelBansRequest(arg0 *chime.ListChannelBansInput) (*request.Request, *chime.ListChannelBansOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelBansRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListChannelBansOutput)
+	return ret0, ret1
+}
+
+// ListChannelBansRequest indicates an expected call of ListChannelBansRequest
+func (mr *MockChimeAPIMockRecorder) ListChannelBansRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelBansRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelBansRequest), arg0)
+}
+
+// ListChannelBansWithContext mocks base method
+func (m *MockChimeAPI) ListChannelBansWithContext(arg0 context.Context, arg1 *chime.ListChannelBansInput, arg2 ...request.Option) (*chime.ListChannelBansOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelBansWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListChannelBansOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelBansWithContext indicates an expected call of ListChannelBansWithContext
+func (mr *MockChimeAPIMockRecorder) ListChannelBansWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelBansWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelBansWithContext), varargs...)
+}
+
+// ListChannelMemberships mocks base method
+func (m *MockChimeAPI) ListChannelMemberships(arg0 *chime.ListChannelMembershipsInput) (*chime.ListChannelMembershipsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelMemberships", arg0)
+	ret0, _ := ret[0].(*chime.ListChannelMembershipsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelMemberships indicates an expected call of ListChannelMemberships
+func (mr *MockChimeAPIMockRecorder) ListChannelMemberships(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMemberships", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMemberships), arg0)
+}
+
+// ListChannelMembershipsForAppInstanceUser mocks base method
+func (m *MockChimeAPI) ListChannelMembershipsForAppInstanceUser(arg0 *chime.ListChannelMembershipsForAppInstanceUserInput) (*chime.ListChannelMembershipsForAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelMembershipsForAppInstanceUser", arg0)
+	ret0, _ := ret[0].(*chime.ListChannelMembershipsForAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelMembershipsForAppInstanceUser indicates an expected call of ListChannelMembershipsForAppInstanceUser
+func (mr *MockChimeAPIMockRecorder) ListChannelMembershipsForAppInstanceUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMembershipsForAppInstanceUser", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMembershipsForAppInstanceUser), arg0)
+}
+
+// ListChannelMembershipsForAppInstanceUserPages mocks base method
+func (m *MockChimeAPI) ListChannelMembershipsForAppInstanceUserPages(arg0 *chime.ListChannelMembershipsForAppInstanceUserInput, arg1 func(*chime.ListChannelMembershipsForAppInstanceUserOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelMembershipsForAppInstanceUserPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelMembershipsForAppInstanceUserPages indicates an expected call of ListChannelMembershipsForAppInstanceUserPages
+func (mr *MockChimeAPIMockRecorder) ListChannelMembershipsForAppInstanceUserPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMembershipsForAppInstanceUserPages", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMembershipsForAppInstanceUserPages), arg0, arg1)
+}
+
+// ListChannelMembershipsForAppInstanceUserPagesWithContext mocks base method
+func (m *MockChimeAPI) ListChannelMembershipsForAppInstanceUserPagesWithContext(arg0 context.Context, arg1 *chime.ListChannelMembershipsForAppInstanceUserInput, arg2 func(*chime.ListChannelMembershipsForAppInstanceUserOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelMembershipsForAppInstanceUserPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelMembershipsForAppInstanceUserPagesWithContext indicates an expected call of ListChannelMembershipsForAppInstanceUserPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListChannelMembershipsForAppInstanceUserPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMembershipsForAppInstanceUserPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMembershipsForAppInstanceUserPagesWithContext), varargs...)
+}
+
+// ListChannelMembershipsForAppInstanceUserRequest mocks base method
+func (m *MockChimeAPI) ListChannelMembershipsForAppInstanceUserRequest(arg0 *chime.ListChannelMembershipsForAppInstanceUserInput) (*request.Request, *chime.ListChannelMembershipsForAppInstanceUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelMembershipsForAppInstanceUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListChannelMembershipsForAppInstanceUserOutput)
+	return ret0, ret1
+}
+
+// ListChannelMembershipsForAppInstanceUserRequest indicates an expected call of ListChannelMembershipsForAppInstanceUserRequest
+func (mr *MockChimeAPIMockRecorder) ListChannelMembershipsForAppInstanceUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMembershipsForAppInstanceUserRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMembershipsForAppInstanceUserRequest), arg0)
+}
+
+// ListChannelMembershipsForAppInstanceUserWithContext mocks base method
+func (m *MockChimeAPI) ListChannelMembershipsForAppInstanceUserWithContext(arg0 context.Context, arg1 *chime.ListChannelMembershipsForAppInstanceUserInput, arg2 ...request.Option) (*chime.ListChannelMembershipsForAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelMembershipsForAppInstanceUserWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListChannelMembershipsForAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelMembershipsForAppInstanceUserWithContext indicates an expected call of ListChannelMembershipsForAppInstanceUserWithContext
+func (mr *MockChimeAPIMockRecorder) ListChannelMembershipsForAppInstanceUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMembershipsForAppInstanceUserWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMembershipsForAppInstanceUserWithContext), varargs...)
+}
+
+// ListChannelMembershipsPages mocks base method
+func (m *MockChimeAPI) ListChannelMembershipsPages(arg0 *chime.ListChannelMembershipsInput, arg1 func(*chime.ListChannelMembershipsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelMembershipsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelMembershipsPages indicates an expected call of ListChannelMembershipsPages
+func (mr *MockChimeAPIMockRecorder) ListChannelMembershipsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMembershipsPages", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMembershipsPages), arg0, arg1)
+}
+
+// ListChannelMembershipsPagesWithContext mocks base method
+func (m *MockChimeAPI) ListChannelMembershipsPagesWithContext(arg0 context.Context, arg1 *chime.ListChannelMembershipsInput, arg2 func(*chime.ListChannelMembershipsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelMembershipsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelMembershipsPagesWithContext indicates an expected call of ListChannelMembershipsPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListChannelMembershipsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMembershipsPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMembershipsPagesWithContext), varargs...)
+}
+
+// ListChannelMembershipsRequest mocks base method
+func (m *MockChimeAPI) ListChannelMembershipsRequest(arg0 *chime.ListChannelMembershipsInput) (*request.Request, *chime.ListChannelMembershipsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelMembershipsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListChannelMembershipsOutput)
+	return ret0, ret1
+}
+
+// ListChannelMembershipsRequest indicates an expected call of ListChannelMembershipsRequest
+func (mr *MockChimeAPIMockRecorder) ListChannelMembershipsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMembershipsRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMembershipsRequest), arg0)
+}
+
+// ListChannelMembershipsWithContext mocks base method
+func (m *MockChimeAPI) ListChannelMembershipsWithContext(arg0 context.Context, arg1 *chime.ListChannelMembershipsInput, arg2 ...request.Option) (*chime.ListChannelMembershipsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelMembershipsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListChannelMembershipsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelMembershipsWithContext indicates an expected call of ListChannelMembershipsWithContext
+func (mr *MockChimeAPIMockRecorder) ListChannelMembershipsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMembershipsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMembershipsWithContext), varargs...)
+}
+
+// ListChannelMessages mocks base method
+func (m *MockChimeAPI) ListChannelMessages(arg0 *chime.ListChannelMessagesInput) (*chime.ListChannelMessagesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelMessages", arg0)
+	ret0, _ := ret[0].(*chime.ListChannelMessagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelMessages indicates an expected call of ListChannelMessages
+func (mr *MockChimeAPIMockRecorder) ListChannelMessages(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMessages", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMessages), arg0)
+}
+
+// ListChannelMessagesPages mocks base method
+func (m *MockChimeAPI) ListChannelMessagesPages(arg0 *chime.ListChannelMessagesInput, arg1 func(*chime.ListChannelMessagesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelMessagesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelMessagesPages indicates an expected call of ListChannelMessagesPages
+func (mr *MockChimeAPIMockRecorder) ListChannelMessagesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMessagesPages", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMessagesPages), arg0, arg1)
+}
+
+// ListChannelMessagesPagesWithContext mocks base method
+func (m *MockChimeAPI) ListChannelMessagesPagesWithContext(arg0 context.Context, arg1 *chime.ListChannelMessagesInput, arg2 func(*chime.ListChannelMessagesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelMessagesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelMessagesPagesWithContext indicates an expected call of ListChannelMessagesPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListChannelMessagesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMessagesPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMessagesPagesWithContext), varargs...)
+}
+
+// ListChannelMessagesRequest mocks base method
+func (m *MockChimeAPI) ListChannelMessagesRequest(arg0 *chime.ListChannelMessagesInput) (*request.Request, *chime.ListChannelMessagesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelMessagesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListChannelMessagesOutput)
+	return ret0, ret1
+}
+
+// ListChannelMessagesRequest indicates an expected call of ListChannelMessagesRequest
+func (mr *MockChimeAPIMockRecorder) ListChannelMessagesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMessagesRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMessagesRequest), arg0)
+}
+
+// ListChannelMessagesWithContext mocks base method
+func (m *MockChimeAPI) ListChannelMessagesWithContext(arg0 context.Context, arg1 *chime.ListChannelMessagesInput, arg2 ...request.Option) (*chime.ListChannelMessagesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelMessagesWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListChannelMessagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelMessagesWithContext indicates an expected call of ListChannelMessagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListChannelMessagesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelMessagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelMessagesWithContext), varargs...)
+}
+
+// ListChannelModerators mocks base method
+func (m *MockChimeAPI) ListChannelModerators(arg0 *chime.ListChannelModeratorsInput) (*chime.ListChannelModeratorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelModerators", arg0)
+	ret0, _ := ret[0].(*chime.ListChannelModeratorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelModerators indicates an expected call of ListChannelModerators
+func (mr *MockChimeAPIMockRecorder) ListChannelModerators(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelModerators", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelModerators), arg0)
+}
+
+// ListChannelModeratorsPages mocks base method
+func (m *MockChimeAPI) ListChannelModeratorsPages(arg0 *chime.ListChannelModeratorsInput, arg1 func(*chime.ListChannelModeratorsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelModeratorsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelModeratorsPages indicates an expected call of ListChannelModeratorsPages
+func (mr *MockChimeAPIMockRecorder) ListChannelModeratorsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelModeratorsPages", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelModeratorsPages), arg0, arg1)
+}
+
+// ListChannelModeratorsPagesWithContext mocks base method
+func (m *MockChimeAPI) ListChannelModeratorsPagesWithContext(arg0 context.Context, arg1 *chime.ListChannelModeratorsInput, arg2 func(*chime.ListChannelModeratorsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelModeratorsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelModeratorsPagesWithContext indicates an expected call of ListChannelModeratorsPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListChannelModeratorsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelModeratorsPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelModeratorsPagesWithContext), varargs...)
+}
+
+// ListChannelModeratorsRequest mocks base method
+func (m *MockChimeAPI) ListChannelModeratorsRequest(arg0 *chime.ListChannelModeratorsInput) (*request.Request, *chime.ListChannelModeratorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelModeratorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListChannelModeratorsOutput)
+	return ret0, ret1
+}
+
+// ListChannelModeratorsRequest indicates an expected call of ListChannelModeratorsRequest
+func (mr *MockChimeAPIMockRecorder) ListChannelModeratorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelModeratorsRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelModeratorsRequest), arg0)
+}
+
+// ListChannelModeratorsWithContext mocks base method
+func (m *MockChimeAPI) ListChannelModeratorsWithContext(arg0 context.Context, arg1 *chime.ListChannelModeratorsInput, arg2 ...request.Option) (*chime.ListChannelModeratorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelModeratorsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListChannelModeratorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelModeratorsWithContext indicates an expected call of ListChannelModeratorsWithContext
+func (mr *MockChimeAPIMockRecorder) ListChannelModeratorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelModeratorsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelModeratorsWithContext), varargs...)
+}
+
+// ListChannels mocks base method
+func (m *MockChimeAPI) ListChannels(arg0 *chime.ListChannelsInput) (*chime.ListChannelsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannels", arg0)
+	ret0, _ := ret[0].(*chime.ListChannelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannels indicates an expected call of ListChannels
+func (mr *MockChimeAPIMockRecorder) ListChannels(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannels", reflect.TypeOf((*MockChimeAPI)(nil).ListChannels), arg0)
+}
+
+// ListChannelsModeratedByAppInstanceUser mocks base method
+func (m *MockChimeAPI) ListChannelsModeratedByAppInstanceUser(arg0 *chime.ListChannelsModeratedByAppInstanceUserInput) (*chime.ListChannelsModeratedByAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelsModeratedByAppInstanceUser", arg0)
+	ret0, _ := ret[0].(*chime.ListChannelsModeratedByAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelsModeratedByAppInstanceUser indicates an expected call of ListChannelsModeratedByAppInstanceUser
+func (mr *MockChimeAPIMockRecorder) ListChannelsModeratedByAppInstanceUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsModeratedByAppInstanceUser", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelsModeratedByAppInstanceUser), arg0)
+}
+
+// ListChannelsModeratedByAppInstanceUserPages mocks base method
+func (m *MockChimeAPI) ListChannelsModeratedByAppInstanceUserPages(arg0 *chime.ListChannelsModeratedByAppInstanceUserInput, arg1 func(*chime.ListChannelsModeratedByAppInstanceUserOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelsModeratedByAppInstanceUserPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelsModeratedByAppInstanceUserPages indicates an expected call of ListChannelsModeratedByAppInstanceUserPages
+func (mr *MockChimeAPIMockRecorder) ListChannelsModeratedByAppInstanceUserPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsModeratedByAppInstanceUserPages", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelsModeratedByAppInstanceUserPages), arg0, arg1)
+}
+
+// ListChannelsModeratedByAppInstanceUserPagesWithContext mocks base method
+func (m *MockChimeAPI) ListChannelsModeratedByAppInstanceUserPagesWithContext(arg0 context.Context, arg1 *chime.ListChannelsModeratedByAppInstanceUserInput, arg2 func(*chime.ListChannelsModeratedByAppInstanceUserOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelsModeratedByAppInstanceUserPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelsModeratedByAppInstanceUserPagesWithContext indicates an expected call of ListChannelsModeratedByAppInstanceUserPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListChannelsModeratedByAppInstanceUserPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsModeratedByAppInstanceUserPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelsModeratedByAppInstanceUserPagesWithContext), varargs...)
+}
+
+// ListChannelsModeratedByAppInstanceUserRequest mocks base method
+func (m *MockChimeAPI) ListChannelsModeratedByAppInstanceUserRequest(arg0 *chime.ListChannelsModeratedByAppInstanceUserInput) (*request.Request, *chime.ListChannelsModeratedByAppInstanceUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelsModeratedByAppInstanceUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListChannelsModeratedByAppInstanceUserOutput)
+	return ret0, ret1
+}
+
+// ListChannelsModeratedByAppInstanceUserRequest indicates an expected call of ListChannelsModeratedByAppInstanceUserRequest
+func (mr *MockChimeAPIMockRecorder) ListChannelsModeratedByAppInstanceUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsModeratedByAppInstanceUserRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelsModeratedByAppInstanceUserRequest), arg0)
+}
+
+// ListChannelsModeratedByAppInstanceUserWithContext mocks base method
+func (m *MockChimeAPI) ListChannelsModeratedByAppInstanceUserWithContext(arg0 context.Context, arg1 *chime.ListChannelsModeratedByAppInstanceUserInput, arg2 ...request.Option) (*chime.ListChannelsModeratedByAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelsModeratedByAppInstanceUserWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListChannelsModeratedByAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelsModeratedByAppInstanceUserWithContext indicates an expected call of ListChannelsModeratedByAppInstanceUserWithContext
+func (mr *MockChimeAPIMockRecorder) ListChannelsModeratedByAppInstanceUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsModeratedByAppInstanceUserWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelsModeratedByAppInstanceUserWithContext), varargs...)
+}
+
+// ListChannelsPages mocks base method
+func (m *MockChimeAPI) ListChannelsPages(arg0 *chime.ListChannelsInput, arg1 func(*chime.ListChannelsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelsPages indicates an expected call of ListChannelsPages
+func (mr *MockChimeAPIMockRecorder) ListChannelsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsPages", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelsPages), arg0, arg1)
+}
+
+// ListChannelsPagesWithContext mocks base method
+func (m *MockChimeAPI) ListChannelsPagesWithContext(arg0 context.Context, arg1 *chime.ListChannelsInput, arg2 func(*chime.ListChannelsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelsPagesWithContext indicates an expected call of ListChannelsPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListChannelsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelsPagesWithContext), varargs...)
+}
+
+// ListChannelsRequest mocks base method
+func (m *MockChimeAPI) ListChannelsRequest(arg0 *chime.ListChannelsInput) (*request.Request, *chime.ListChannelsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListChannelsOutput)
+	return ret0, ret1
+}
+
+// ListChannelsRequest indicates an expected call of ListChannelsRequest
+func (mr *MockChimeAPIMockRecorder) ListChannelsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelsRequest), arg0)
+}
+
+// ListChannelsWithContext mocks base method
+func (m *MockChimeAPI) ListChannelsWithContext(arg0 context.Context, arg1 *chime.ListChannelsInput, arg2 ...request.Option) (*chime.ListChannelsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListChannelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelsWithContext indicates an expected call of ListChannelsWithContext
+func (mr *MockChimeAPIMockRecorder) ListChannelsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListChannelsWithContext), varargs...)
 }
 
 // ListMeetingTags mocks base method
@@ -4747,6 +7027,39 @@ func (mr *MockChimeAPIMockRecorder) ListSipMediaApplications(arg0 interface{}) *
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSipMediaApplications", reflect.TypeOf((*MockChimeAPI)(nil).ListSipMediaApplications), arg0)
 }
 
+// ListSipMediaApplicationsPages mocks base method
+func (m *MockChimeAPI) ListSipMediaApplicationsPages(arg0 *chime.ListSipMediaApplicationsInput, arg1 func(*chime.ListSipMediaApplicationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSipMediaApplicationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSipMediaApplicationsPages indicates an expected call of ListSipMediaApplicationsPages
+func (mr *MockChimeAPIMockRecorder) ListSipMediaApplicationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSipMediaApplicationsPages", reflect.TypeOf((*MockChimeAPI)(nil).ListSipMediaApplicationsPages), arg0, arg1)
+}
+
+// ListSipMediaApplicationsPagesWithContext mocks base method
+func (m *MockChimeAPI) ListSipMediaApplicationsPagesWithContext(arg0 context.Context, arg1 *chime.ListSipMediaApplicationsInput, arg2 func(*chime.ListSipMediaApplicationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSipMediaApplicationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSipMediaApplicationsPagesWithContext indicates an expected call of ListSipMediaApplicationsPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListSipMediaApplicationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSipMediaApplicationsPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListSipMediaApplicationsPagesWithContext), varargs...)
+}
+
 // ListSipMediaApplicationsRequest mocks base method
 func (m *MockChimeAPI) ListSipMediaApplicationsRequest(arg0 *chime.ListSipMediaApplicationsInput) (*request.Request, *chime.ListSipMediaApplicationsOutput) {
 	m.ctrl.T.Helper()
@@ -4795,6 +7108,39 @@ func (m *MockChimeAPI) ListSipRules(arg0 *chime.ListSipRulesInput) (*chime.ListS
 func (mr *MockChimeAPIMockRecorder) ListSipRules(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSipRules", reflect.TypeOf((*MockChimeAPI)(nil).ListSipRules), arg0)
+}
+
+// ListSipRulesPages mocks base method
+func (m *MockChimeAPI) ListSipRulesPages(arg0 *chime.ListSipRulesInput, arg1 func(*chime.ListSipRulesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSipRulesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSipRulesPages indicates an expected call of ListSipRulesPages
+func (mr *MockChimeAPIMockRecorder) ListSipRulesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSipRulesPages", reflect.TypeOf((*MockChimeAPI)(nil).ListSipRulesPages), arg0, arg1)
+}
+
+// ListSipRulesPagesWithContext mocks base method
+func (m *MockChimeAPI) ListSipRulesPagesWithContext(arg0 context.Context, arg1 *chime.ListSipRulesInput, arg2 func(*chime.ListSipRulesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSipRulesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSipRulesPagesWithContext indicates an expected call of ListSipRulesPagesWithContext
+func (mr *MockChimeAPIMockRecorder) ListSipRulesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSipRulesPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListSipRulesPagesWithContext), varargs...)
 }
 
 // ListSipRulesRequest mocks base method
@@ -5229,6 +7575,106 @@ func (mr *MockChimeAPIMockRecorder) LogoutUserWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "LogoutUserWithContext", reflect.TypeOf((*MockChimeAPI)(nil).LogoutUserWithContext), varargs...)
+}
+
+// PutAppInstanceRetentionSettings mocks base method
+func (m *MockChimeAPI) PutAppInstanceRetentionSettings(arg0 *chime.PutAppInstanceRetentionSettingsInput) (*chime.PutAppInstanceRetentionSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAppInstanceRetentionSettings", arg0)
+	ret0, _ := ret[0].(*chime.PutAppInstanceRetentionSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAppInstanceRetentionSettings indicates an expected call of PutAppInstanceRetentionSettings
+func (mr *MockChimeAPIMockRecorder) PutAppInstanceRetentionSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppInstanceRetentionSettings", reflect.TypeOf((*MockChimeAPI)(nil).PutAppInstanceRetentionSettings), arg0)
+}
+
+// PutAppInstanceRetentionSettingsRequest mocks base method
+func (m *MockChimeAPI) PutAppInstanceRetentionSettingsRequest(arg0 *chime.PutAppInstanceRetentionSettingsInput) (*request.Request, *chime.PutAppInstanceRetentionSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAppInstanceRetentionSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.PutAppInstanceRetentionSettingsOutput)
+	return ret0, ret1
+}
+
+// PutAppInstanceRetentionSettingsRequest indicates an expected call of PutAppInstanceRetentionSettingsRequest
+func (mr *MockChimeAPIMockRecorder) PutAppInstanceRetentionSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppInstanceRetentionSettingsRequest", reflect.TypeOf((*MockChimeAPI)(nil).PutAppInstanceRetentionSettingsRequest), arg0)
+}
+
+// PutAppInstanceRetentionSettingsWithContext mocks base method
+func (m *MockChimeAPI) PutAppInstanceRetentionSettingsWithContext(arg0 context.Context, arg1 *chime.PutAppInstanceRetentionSettingsInput, arg2 ...request.Option) (*chime.PutAppInstanceRetentionSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAppInstanceRetentionSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.PutAppInstanceRetentionSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAppInstanceRetentionSettingsWithContext indicates an expected call of PutAppInstanceRetentionSettingsWithContext
+func (mr *MockChimeAPIMockRecorder) PutAppInstanceRetentionSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppInstanceRetentionSettingsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).PutAppInstanceRetentionSettingsWithContext), varargs...)
+}
+
+// PutAppInstanceStreamingConfigurations mocks base method
+func (m *MockChimeAPI) PutAppInstanceStreamingConfigurations(arg0 *chime.PutAppInstanceStreamingConfigurationsInput) (*chime.PutAppInstanceStreamingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAppInstanceStreamingConfigurations", arg0)
+	ret0, _ := ret[0].(*chime.PutAppInstanceStreamingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAppInstanceStreamingConfigurations indicates an expected call of PutAppInstanceStreamingConfigurations
+func (mr *MockChimeAPIMockRecorder) PutAppInstanceStreamingConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppInstanceStreamingConfigurations", reflect.TypeOf((*MockChimeAPI)(nil).PutAppInstanceStreamingConfigurations), arg0)
+}
+
+// PutAppInstanceStreamingConfigurationsRequest mocks base method
+func (m *MockChimeAPI) PutAppInstanceStreamingConfigurationsRequest(arg0 *chime.PutAppInstanceStreamingConfigurationsInput) (*request.Request, *chime.PutAppInstanceStreamingConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAppInstanceStreamingConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.PutAppInstanceStreamingConfigurationsOutput)
+	return ret0, ret1
+}
+
+// PutAppInstanceStreamingConfigurationsRequest indicates an expected call of PutAppInstanceStreamingConfigurationsRequest
+func (mr *MockChimeAPIMockRecorder) PutAppInstanceStreamingConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppInstanceStreamingConfigurationsRequest", reflect.TypeOf((*MockChimeAPI)(nil).PutAppInstanceStreamingConfigurationsRequest), arg0)
+}
+
+// PutAppInstanceStreamingConfigurationsWithContext mocks base method
+func (m *MockChimeAPI) PutAppInstanceStreamingConfigurationsWithContext(arg0 context.Context, arg1 *chime.PutAppInstanceStreamingConfigurationsInput, arg2 ...request.Option) (*chime.PutAppInstanceStreamingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAppInstanceStreamingConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.PutAppInstanceStreamingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAppInstanceStreamingConfigurationsWithContext indicates an expected call of PutAppInstanceStreamingConfigurationsWithContext
+func (mr *MockChimeAPIMockRecorder) PutAppInstanceStreamingConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppInstanceStreamingConfigurationsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).PutAppInstanceStreamingConfigurationsWithContext), varargs...)
 }
 
 // PutEventsConfiguration mocks base method
@@ -5731,6 +8177,56 @@ func (mr *MockChimeAPIMockRecorder) PutVoiceConnectorTerminationWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutVoiceConnectorTerminationWithContext", reflect.TypeOf((*MockChimeAPI)(nil).PutVoiceConnectorTerminationWithContext), varargs...)
 }
 
+// RedactChannelMessage mocks base method
+func (m *MockChimeAPI) RedactChannelMessage(arg0 *chime.RedactChannelMessageInput) (*chime.RedactChannelMessageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RedactChannelMessage", arg0)
+	ret0, _ := ret[0].(*chime.RedactChannelMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RedactChannelMessage indicates an expected call of RedactChannelMessage
+func (mr *MockChimeAPIMockRecorder) RedactChannelMessage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RedactChannelMessage", reflect.TypeOf((*MockChimeAPI)(nil).RedactChannelMessage), arg0)
+}
+
+// RedactChannelMessageRequest mocks base method
+func (m *MockChimeAPI) RedactChannelMessageRequest(arg0 *chime.RedactChannelMessageInput) (*request.Request, *chime.RedactChannelMessageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RedactChannelMessageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.RedactChannelMessageOutput)
+	return ret0, ret1
+}
+
+// RedactChannelMessageRequest indicates an expected call of RedactChannelMessageRequest
+func (mr *MockChimeAPIMockRecorder) RedactChannelMessageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RedactChannelMessageRequest", reflect.TypeOf((*MockChimeAPI)(nil).RedactChannelMessageRequest), arg0)
+}
+
+// RedactChannelMessageWithContext mocks base method
+func (m *MockChimeAPI) RedactChannelMessageWithContext(arg0 context.Context, arg1 *chime.RedactChannelMessageInput, arg2 ...request.Option) (*chime.RedactChannelMessageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RedactChannelMessageWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.RedactChannelMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RedactChannelMessageWithContext indicates an expected call of RedactChannelMessageWithContext
+func (mr *MockChimeAPIMockRecorder) RedactChannelMessageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RedactChannelMessageWithContext", reflect.TypeOf((*MockChimeAPI)(nil).RedactChannelMessageWithContext), varargs...)
+}
+
 // RedactConversationMessage mocks base method
 func (m *MockChimeAPI) RedactConversationMessage(arg0 *chime.RedactConversationMessageInput) (*chime.RedactConversationMessageOutput, error) {
 	m.ctrl.T.Helper()
@@ -6029,6 +8525,56 @@ func (mr *MockChimeAPIMockRecorder) SearchAvailablePhoneNumbersWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAvailablePhoneNumbersWithContext", reflect.TypeOf((*MockChimeAPI)(nil).SearchAvailablePhoneNumbersWithContext), varargs...)
+}
+
+// SendChannelMessage mocks base method
+func (m *MockChimeAPI) SendChannelMessage(arg0 *chime.SendChannelMessageInput) (*chime.SendChannelMessageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendChannelMessage", arg0)
+	ret0, _ := ret[0].(*chime.SendChannelMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendChannelMessage indicates an expected call of SendChannelMessage
+func (mr *MockChimeAPIMockRecorder) SendChannelMessage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendChannelMessage", reflect.TypeOf((*MockChimeAPI)(nil).SendChannelMessage), arg0)
+}
+
+// SendChannelMessageRequest mocks base method
+func (m *MockChimeAPI) SendChannelMessageRequest(arg0 *chime.SendChannelMessageInput) (*request.Request, *chime.SendChannelMessageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendChannelMessageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.SendChannelMessageOutput)
+	return ret0, ret1
+}
+
+// SendChannelMessageRequest indicates an expected call of SendChannelMessageRequest
+func (mr *MockChimeAPIMockRecorder) SendChannelMessageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendChannelMessageRequest", reflect.TypeOf((*MockChimeAPI)(nil).SendChannelMessageRequest), arg0)
+}
+
+// SendChannelMessageWithContext mocks base method
+func (m *MockChimeAPI) SendChannelMessageWithContext(arg0 context.Context, arg1 *chime.SendChannelMessageInput, arg2 ...request.Option) (*chime.SendChannelMessageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SendChannelMessageWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.SendChannelMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendChannelMessageWithContext indicates an expected call of SendChannelMessageWithContext
+func (mr *MockChimeAPIMockRecorder) SendChannelMessageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendChannelMessageWithContext", reflect.TypeOf((*MockChimeAPI)(nil).SendChannelMessageWithContext), varargs...)
 }
 
 // TagAttendee mocks base method
@@ -6431,6 +8977,106 @@ func (mr *MockChimeAPIMockRecorder) UpdateAccountWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccountWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdateAccountWithContext), varargs...)
 }
 
+// UpdateAppInstance mocks base method
+func (m *MockChimeAPI) UpdateAppInstance(arg0 *chime.UpdateAppInstanceInput) (*chime.UpdateAppInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAppInstance", arg0)
+	ret0, _ := ret[0].(*chime.UpdateAppInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAppInstance indicates an expected call of UpdateAppInstance
+func (mr *MockChimeAPIMockRecorder) UpdateAppInstance(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppInstance", reflect.TypeOf((*MockChimeAPI)(nil).UpdateAppInstance), arg0)
+}
+
+// UpdateAppInstanceRequest mocks base method
+func (m *MockChimeAPI) UpdateAppInstanceRequest(arg0 *chime.UpdateAppInstanceInput) (*request.Request, *chime.UpdateAppInstanceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAppInstanceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.UpdateAppInstanceOutput)
+	return ret0, ret1
+}
+
+// UpdateAppInstanceRequest indicates an expected call of UpdateAppInstanceRequest
+func (mr *MockChimeAPIMockRecorder) UpdateAppInstanceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppInstanceRequest", reflect.TypeOf((*MockChimeAPI)(nil).UpdateAppInstanceRequest), arg0)
+}
+
+// UpdateAppInstanceUser mocks base method
+func (m *MockChimeAPI) UpdateAppInstanceUser(arg0 *chime.UpdateAppInstanceUserInput) (*chime.UpdateAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAppInstanceUser", arg0)
+	ret0, _ := ret[0].(*chime.UpdateAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAppInstanceUser indicates an expected call of UpdateAppInstanceUser
+func (mr *MockChimeAPIMockRecorder) UpdateAppInstanceUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppInstanceUser", reflect.TypeOf((*MockChimeAPI)(nil).UpdateAppInstanceUser), arg0)
+}
+
+// UpdateAppInstanceUserRequest mocks base method
+func (m *MockChimeAPI) UpdateAppInstanceUserRequest(arg0 *chime.UpdateAppInstanceUserInput) (*request.Request, *chime.UpdateAppInstanceUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAppInstanceUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.UpdateAppInstanceUserOutput)
+	return ret0, ret1
+}
+
+// UpdateAppInstanceUserRequest indicates an expected call of UpdateAppInstanceUserRequest
+func (mr *MockChimeAPIMockRecorder) UpdateAppInstanceUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppInstanceUserRequest", reflect.TypeOf((*MockChimeAPI)(nil).UpdateAppInstanceUserRequest), arg0)
+}
+
+// UpdateAppInstanceUserWithContext mocks base method
+func (m *MockChimeAPI) UpdateAppInstanceUserWithContext(arg0 context.Context, arg1 *chime.UpdateAppInstanceUserInput, arg2 ...request.Option) (*chime.UpdateAppInstanceUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAppInstanceUserWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.UpdateAppInstanceUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAppInstanceUserWithContext indicates an expected call of UpdateAppInstanceUserWithContext
+func (mr *MockChimeAPIMockRecorder) UpdateAppInstanceUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppInstanceUserWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdateAppInstanceUserWithContext), varargs...)
+}
+
+// UpdateAppInstanceWithContext mocks base method
+func (m *MockChimeAPI) UpdateAppInstanceWithContext(arg0 context.Context, arg1 *chime.UpdateAppInstanceInput, arg2 ...request.Option) (*chime.UpdateAppInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAppInstanceWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.UpdateAppInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAppInstanceWithContext indicates an expected call of UpdateAppInstanceWithContext
+func (mr *MockChimeAPIMockRecorder) UpdateAppInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppInstanceWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdateAppInstanceWithContext), varargs...)
+}
+
 // UpdateBot mocks base method
 func (m *MockChimeAPI) UpdateBot(arg0 *chime.UpdateBotInput) (*chime.UpdateBotOutput, error) {
 	m.ctrl.T.Helper()
@@ -6479,6 +9125,156 @@ func (mr *MockChimeAPIMockRecorder) UpdateBotWithContext(arg0, arg1 interface{},
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBotWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdateBotWithContext), varargs...)
+}
+
+// UpdateChannel mocks base method
+func (m *MockChimeAPI) UpdateChannel(arg0 *chime.UpdateChannelInput) (*chime.UpdateChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateChannel", arg0)
+	ret0, _ := ret[0].(*chime.UpdateChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateChannel indicates an expected call of UpdateChannel
+func (mr *MockChimeAPIMockRecorder) UpdateChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannel", reflect.TypeOf((*MockChimeAPI)(nil).UpdateChannel), arg0)
+}
+
+// UpdateChannelMessage mocks base method
+func (m *MockChimeAPI) UpdateChannelMessage(arg0 *chime.UpdateChannelMessageInput) (*chime.UpdateChannelMessageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateChannelMessage", arg0)
+	ret0, _ := ret[0].(*chime.UpdateChannelMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateChannelMessage indicates an expected call of UpdateChannelMessage
+func (mr *MockChimeAPIMockRecorder) UpdateChannelMessage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelMessage", reflect.TypeOf((*MockChimeAPI)(nil).UpdateChannelMessage), arg0)
+}
+
+// UpdateChannelMessageRequest mocks base method
+func (m *MockChimeAPI) UpdateChannelMessageRequest(arg0 *chime.UpdateChannelMessageInput) (*request.Request, *chime.UpdateChannelMessageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateChannelMessageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.UpdateChannelMessageOutput)
+	return ret0, ret1
+}
+
+// UpdateChannelMessageRequest indicates an expected call of UpdateChannelMessageRequest
+func (mr *MockChimeAPIMockRecorder) UpdateChannelMessageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelMessageRequest", reflect.TypeOf((*MockChimeAPI)(nil).UpdateChannelMessageRequest), arg0)
+}
+
+// UpdateChannelMessageWithContext mocks base method
+func (m *MockChimeAPI) UpdateChannelMessageWithContext(arg0 context.Context, arg1 *chime.UpdateChannelMessageInput, arg2 ...request.Option) (*chime.UpdateChannelMessageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateChannelMessageWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.UpdateChannelMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateChannelMessageWithContext indicates an expected call of UpdateChannelMessageWithContext
+func (mr *MockChimeAPIMockRecorder) UpdateChannelMessageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelMessageWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdateChannelMessageWithContext), varargs...)
+}
+
+// UpdateChannelReadMarker mocks base method
+func (m *MockChimeAPI) UpdateChannelReadMarker(arg0 *chime.UpdateChannelReadMarkerInput) (*chime.UpdateChannelReadMarkerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateChannelReadMarker", arg0)
+	ret0, _ := ret[0].(*chime.UpdateChannelReadMarkerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateChannelReadMarker indicates an expected call of UpdateChannelReadMarker
+func (mr *MockChimeAPIMockRecorder) UpdateChannelReadMarker(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelReadMarker", reflect.TypeOf((*MockChimeAPI)(nil).UpdateChannelReadMarker), arg0)
+}
+
+// UpdateChannelReadMarkerRequest mocks base method
+func (m *MockChimeAPI) UpdateChannelReadMarkerRequest(arg0 *chime.UpdateChannelReadMarkerInput) (*request.Request, *chime.UpdateChannelReadMarkerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateChannelReadMarkerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.UpdateChannelReadMarkerOutput)
+	return ret0, ret1
+}
+
+// UpdateChannelReadMarkerRequest indicates an expected call of UpdateChannelReadMarkerRequest
+func (mr *MockChimeAPIMockRecorder) UpdateChannelReadMarkerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelReadMarkerRequest", reflect.TypeOf((*MockChimeAPI)(nil).UpdateChannelReadMarkerRequest), arg0)
+}
+
+// UpdateChannelReadMarkerWithContext mocks base method
+func (m *MockChimeAPI) UpdateChannelReadMarkerWithContext(arg0 context.Context, arg1 *chime.UpdateChannelReadMarkerInput, arg2 ...request.Option) (*chime.UpdateChannelReadMarkerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateChannelReadMarkerWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.UpdateChannelReadMarkerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateChannelReadMarkerWithContext indicates an expected call of UpdateChannelReadMarkerWithContext
+func (mr *MockChimeAPIMockRecorder) UpdateChannelReadMarkerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelReadMarkerWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdateChannelReadMarkerWithContext), varargs...)
+}
+
+// UpdateChannelRequest mocks base method
+func (m *MockChimeAPI) UpdateChannelRequest(arg0 *chime.UpdateChannelInput) (*request.Request, *chime.UpdateChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.UpdateChannelOutput)
+	return ret0, ret1
+}
+
+// UpdateChannelRequest indicates an expected call of UpdateChannelRequest
+func (mr *MockChimeAPIMockRecorder) UpdateChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelRequest", reflect.TypeOf((*MockChimeAPI)(nil).UpdateChannelRequest), arg0)
+}
+
+// UpdateChannelWithContext mocks base method
+func (m *MockChimeAPI) UpdateChannelWithContext(arg0 context.Context, arg1 *chime.UpdateChannelInput, arg2 ...request.Option) (*chime.UpdateChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.UpdateChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateChannelWithContext indicates an expected call of UpdateChannelWithContext
+func (mr *MockChimeAPIMockRecorder) UpdateChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdateChannelWithContext), varargs...)
 }
 
 // UpdateGlobalSettings mocks base method
