@@ -1083,6 +1083,56 @@ func (mr *MockRAMAPIMockRecorder) ListResourceSharePermissionsWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceSharePermissionsWithContext", reflect.TypeOf((*MockRAMAPI)(nil).ListResourceSharePermissionsWithContext), varargs...)
 }
 
+// ListResourceTypes mocks base method
+func (m *MockRAMAPI) ListResourceTypes(arg0 *ram.ListResourceTypesInput) (*ram.ListResourceTypesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourceTypes", arg0)
+	ret0, _ := ret[0].(*ram.ListResourceTypesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourceTypes indicates an expected call of ListResourceTypes
+func (mr *MockRAMAPIMockRecorder) ListResourceTypes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceTypes", reflect.TypeOf((*MockRAMAPI)(nil).ListResourceTypes), arg0)
+}
+
+// ListResourceTypesRequest mocks base method
+func (m *MockRAMAPI) ListResourceTypesRequest(arg0 *ram.ListResourceTypesInput) (*request.Request, *ram.ListResourceTypesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourceTypesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ram.ListResourceTypesOutput)
+	return ret0, ret1
+}
+
+// ListResourceTypesRequest indicates an expected call of ListResourceTypesRequest
+func (mr *MockRAMAPIMockRecorder) ListResourceTypesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceTypesRequest", reflect.TypeOf((*MockRAMAPI)(nil).ListResourceTypesRequest), arg0)
+}
+
+// ListResourceTypesWithContext mocks base method
+func (m *MockRAMAPI) ListResourceTypesWithContext(arg0 context.Context, arg1 *ram.ListResourceTypesInput, arg2 ...request.Option) (*ram.ListResourceTypesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResourceTypesWithContext", varargs...)
+	ret0, _ := ret[0].(*ram.ListResourceTypesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourceTypesWithContext indicates an expected call of ListResourceTypesWithContext
+func (mr *MockRAMAPIMockRecorder) ListResourceTypesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceTypesWithContext", reflect.TypeOf((*MockRAMAPI)(nil).ListResourceTypesWithContext), varargs...)
+}
+
 // ListResources mocks base method
 func (m *MockRAMAPI) ListResources(arg0 *ram.ListResourcesInput) (*ram.ListResourcesOutput, error) {
 	m.ctrl.T.Helper()

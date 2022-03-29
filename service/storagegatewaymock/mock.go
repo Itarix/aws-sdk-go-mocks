@@ -885,6 +885,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) CreateTapesWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTapesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).CreateTapesWithContext), varargs...)
 }
 
+// DeleteAutomaticTapeCreationPolicy mocks base method
+func (m *MockStorageGatewayAPI) DeleteAutomaticTapeCreationPolicy(arg0 *storagegateway.DeleteAutomaticTapeCreationPolicyInput) (*storagegateway.DeleteAutomaticTapeCreationPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAutomaticTapeCreationPolicy", arg0)
+	ret0, _ := ret[0].(*storagegateway.DeleteAutomaticTapeCreationPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAutomaticTapeCreationPolicy indicates an expected call of DeleteAutomaticTapeCreationPolicy
+func (mr *MockStorageGatewayAPIMockRecorder) DeleteAutomaticTapeCreationPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAutomaticTapeCreationPolicy", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteAutomaticTapeCreationPolicy), arg0)
+}
+
+// DeleteAutomaticTapeCreationPolicyRequest mocks base method
+func (m *MockStorageGatewayAPI) DeleteAutomaticTapeCreationPolicyRequest(arg0 *storagegateway.DeleteAutomaticTapeCreationPolicyInput) (*request.Request, *storagegateway.DeleteAutomaticTapeCreationPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAutomaticTapeCreationPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.DeleteAutomaticTapeCreationPolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteAutomaticTapeCreationPolicyRequest indicates an expected call of DeleteAutomaticTapeCreationPolicyRequest
+func (mr *MockStorageGatewayAPIMockRecorder) DeleteAutomaticTapeCreationPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAutomaticTapeCreationPolicyRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteAutomaticTapeCreationPolicyRequest), arg0)
+}
+
+// DeleteAutomaticTapeCreationPolicyWithContext mocks base method
+func (m *MockStorageGatewayAPI) DeleteAutomaticTapeCreationPolicyWithContext(arg0 context.Context, arg1 *storagegateway.DeleteAutomaticTapeCreationPolicyInput, arg2 ...request.Option) (*storagegateway.DeleteAutomaticTapeCreationPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAutomaticTapeCreationPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.DeleteAutomaticTapeCreationPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAutomaticTapeCreationPolicyWithContext indicates an expected call of DeleteAutomaticTapeCreationPolicyWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) DeleteAutomaticTapeCreationPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAutomaticTapeCreationPolicyWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DeleteAutomaticTapeCreationPolicyWithContext), varargs...)
+}
+
 // DeleteBandwidthRateLimit mocks base method
 func (m *MockStorageGatewayAPI) DeleteBandwidthRateLimit(arg0 *storagegateway.DeleteBandwidthRateLimitInput) (*storagegateway.DeleteBandwidthRateLimitOutput, error) {
 	m.ctrl.T.Helper()
@@ -2467,6 +2517,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) JoinDomainWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "JoinDomainWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).JoinDomainWithContext), varargs...)
 }
 
+// ListAutomaticTapeCreationPolicies mocks base method
+func (m *MockStorageGatewayAPI) ListAutomaticTapeCreationPolicies(arg0 *storagegateway.ListAutomaticTapeCreationPoliciesInput) (*storagegateway.ListAutomaticTapeCreationPoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAutomaticTapeCreationPolicies", arg0)
+	ret0, _ := ret[0].(*storagegateway.ListAutomaticTapeCreationPoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAutomaticTapeCreationPolicies indicates an expected call of ListAutomaticTapeCreationPolicies
+func (mr *MockStorageGatewayAPIMockRecorder) ListAutomaticTapeCreationPolicies(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAutomaticTapeCreationPolicies", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListAutomaticTapeCreationPolicies), arg0)
+}
+
+// ListAutomaticTapeCreationPoliciesRequest mocks base method
+func (m *MockStorageGatewayAPI) ListAutomaticTapeCreationPoliciesRequest(arg0 *storagegateway.ListAutomaticTapeCreationPoliciesInput) (*request.Request, *storagegateway.ListAutomaticTapeCreationPoliciesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAutomaticTapeCreationPoliciesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.ListAutomaticTapeCreationPoliciesOutput)
+	return ret0, ret1
+}
+
+// ListAutomaticTapeCreationPoliciesRequest indicates an expected call of ListAutomaticTapeCreationPoliciesRequest
+func (mr *MockStorageGatewayAPIMockRecorder) ListAutomaticTapeCreationPoliciesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAutomaticTapeCreationPoliciesRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListAutomaticTapeCreationPoliciesRequest), arg0)
+}
+
+// ListAutomaticTapeCreationPoliciesWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListAutomaticTapeCreationPoliciesWithContext(arg0 context.Context, arg1 *storagegateway.ListAutomaticTapeCreationPoliciesInput, arg2 ...request.Option) (*storagegateway.ListAutomaticTapeCreationPoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAutomaticTapeCreationPoliciesWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.ListAutomaticTapeCreationPoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAutomaticTapeCreationPoliciesWithContext indicates an expected call of ListAutomaticTapeCreationPoliciesWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) ListAutomaticTapeCreationPoliciesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAutomaticTapeCreationPoliciesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListAutomaticTapeCreationPoliciesWithContext), varargs...)
+}
+
 // ListFileShares mocks base method
 func (m *MockStorageGatewayAPI) ListFileShares(arg0 *storagegateway.ListFileSharesInput) (*storagegateway.ListFileSharesOutput, error) {
 	m.ctrl.T.Helper()
@@ -3580,6 +3680,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) StartGatewayWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartGatewayWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).StartGatewayWithContext), varargs...)
+}
+
+// UpdateAutomaticTapeCreationPolicy mocks base method
+func (m *MockStorageGatewayAPI) UpdateAutomaticTapeCreationPolicy(arg0 *storagegateway.UpdateAutomaticTapeCreationPolicyInput) (*storagegateway.UpdateAutomaticTapeCreationPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAutomaticTapeCreationPolicy", arg0)
+	ret0, _ := ret[0].(*storagegateway.UpdateAutomaticTapeCreationPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAutomaticTapeCreationPolicy indicates an expected call of UpdateAutomaticTapeCreationPolicy
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateAutomaticTapeCreationPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAutomaticTapeCreationPolicy", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateAutomaticTapeCreationPolicy), arg0)
+}
+
+// UpdateAutomaticTapeCreationPolicyRequest mocks base method
+func (m *MockStorageGatewayAPI) UpdateAutomaticTapeCreationPolicyRequest(arg0 *storagegateway.UpdateAutomaticTapeCreationPolicyInput) (*request.Request, *storagegateway.UpdateAutomaticTapeCreationPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAutomaticTapeCreationPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.UpdateAutomaticTapeCreationPolicyOutput)
+	return ret0, ret1
+}
+
+// UpdateAutomaticTapeCreationPolicyRequest indicates an expected call of UpdateAutomaticTapeCreationPolicyRequest
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateAutomaticTapeCreationPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAutomaticTapeCreationPolicyRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateAutomaticTapeCreationPolicyRequest), arg0)
+}
+
+// UpdateAutomaticTapeCreationPolicyWithContext mocks base method
+func (m *MockStorageGatewayAPI) UpdateAutomaticTapeCreationPolicyWithContext(arg0 context.Context, arg1 *storagegateway.UpdateAutomaticTapeCreationPolicyInput, arg2 ...request.Option) (*storagegateway.UpdateAutomaticTapeCreationPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAutomaticTapeCreationPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.UpdateAutomaticTapeCreationPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAutomaticTapeCreationPolicyWithContext indicates an expected call of UpdateAutomaticTapeCreationPolicyWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateAutomaticTapeCreationPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAutomaticTapeCreationPolicyWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateAutomaticTapeCreationPolicyWithContext), varargs...)
 }
 
 // UpdateBandwidthRateLimit mocks base method
