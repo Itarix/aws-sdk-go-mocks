@@ -750,6 +750,39 @@ func (mr *MockDocDBAPIMockRecorder) DescribeCertificates(arg0 interface{}) *gomo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCertificates", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeCertificates), arg0)
 }
 
+// DescribeCertificatesPages mocks base method
+func (m *MockDocDBAPI) DescribeCertificatesPages(arg0 *docdb.DescribeCertificatesInput, arg1 func(*docdb.DescribeCertificatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCertificatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeCertificatesPages indicates an expected call of DescribeCertificatesPages
+func (mr *MockDocDBAPIMockRecorder) DescribeCertificatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCertificatesPages", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeCertificatesPages), arg0, arg1)
+}
+
+// DescribeCertificatesPagesWithContext mocks base method
+func (m *MockDocDBAPI) DescribeCertificatesPagesWithContext(arg0 context.Context, arg1 *docdb.DescribeCertificatesInput, arg2 func(*docdb.DescribeCertificatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCertificatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeCertificatesPagesWithContext indicates an expected call of DescribeCertificatesPagesWithContext
+func (mr *MockDocDBAPIMockRecorder) DescribeCertificatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCertificatesPagesWithContext", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeCertificatesPagesWithContext), varargs...)
+}
+
 // DescribeCertificatesRequest mocks base method
 func (m *MockDocDBAPI) DescribeCertificatesRequest(arg0 *docdb.DescribeCertificatesInput) (*request.Request, *docdb.DescribeCertificatesOutput) {
 	m.ctrl.T.Helper()
@@ -800,6 +833,39 @@ func (mr *MockDocDBAPIMockRecorder) DescribeDBClusterParameterGroups(arg0 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterParameterGroups", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeDBClusterParameterGroups), arg0)
 }
 
+// DescribeDBClusterParameterGroupsPages mocks base method
+func (m *MockDocDBAPI) DescribeDBClusterParameterGroupsPages(arg0 *docdb.DescribeDBClusterParameterGroupsInput, arg1 func(*docdb.DescribeDBClusterParameterGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDBClusterParameterGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDBClusterParameterGroupsPages indicates an expected call of DescribeDBClusterParameterGroupsPages
+func (mr *MockDocDBAPIMockRecorder) DescribeDBClusterParameterGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterParameterGroupsPages", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeDBClusterParameterGroupsPages), arg0, arg1)
+}
+
+// DescribeDBClusterParameterGroupsPagesWithContext mocks base method
+func (m *MockDocDBAPI) DescribeDBClusterParameterGroupsPagesWithContext(arg0 context.Context, arg1 *docdb.DescribeDBClusterParameterGroupsInput, arg2 func(*docdb.DescribeDBClusterParameterGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDBClusterParameterGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDBClusterParameterGroupsPagesWithContext indicates an expected call of DescribeDBClusterParameterGroupsPagesWithContext
+func (mr *MockDocDBAPIMockRecorder) DescribeDBClusterParameterGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterParameterGroupsPagesWithContext", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeDBClusterParameterGroupsPagesWithContext), varargs...)
+}
+
 // DescribeDBClusterParameterGroupsRequest mocks base method
 func (m *MockDocDBAPI) DescribeDBClusterParameterGroupsRequest(arg0 *docdb.DescribeDBClusterParameterGroupsInput) (*request.Request, *docdb.DescribeDBClusterParameterGroupsOutput) {
 	m.ctrl.T.Helper()
@@ -848,6 +914,39 @@ func (m *MockDocDBAPI) DescribeDBClusterParameters(arg0 *docdb.DescribeDBCluster
 func (mr *MockDocDBAPIMockRecorder) DescribeDBClusterParameters(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterParameters", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeDBClusterParameters), arg0)
+}
+
+// DescribeDBClusterParametersPages mocks base method
+func (m *MockDocDBAPI) DescribeDBClusterParametersPages(arg0 *docdb.DescribeDBClusterParametersInput, arg1 func(*docdb.DescribeDBClusterParametersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDBClusterParametersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDBClusterParametersPages indicates an expected call of DescribeDBClusterParametersPages
+func (mr *MockDocDBAPIMockRecorder) DescribeDBClusterParametersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterParametersPages", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeDBClusterParametersPages), arg0, arg1)
+}
+
+// DescribeDBClusterParametersPagesWithContext mocks base method
+func (m *MockDocDBAPI) DescribeDBClusterParametersPagesWithContext(arg0 context.Context, arg1 *docdb.DescribeDBClusterParametersInput, arg2 func(*docdb.DescribeDBClusterParametersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDBClusterParametersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDBClusterParametersPagesWithContext indicates an expected call of DescribeDBClusterParametersPagesWithContext
+func (mr *MockDocDBAPIMockRecorder) DescribeDBClusterParametersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterParametersPagesWithContext", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeDBClusterParametersPagesWithContext), varargs...)
 }
 
 // DescribeDBClusterParametersRequest mocks base method
@@ -948,6 +1047,39 @@ func (m *MockDocDBAPI) DescribeDBClusterSnapshots(arg0 *docdb.DescribeDBClusterS
 func (mr *MockDocDBAPIMockRecorder) DescribeDBClusterSnapshots(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterSnapshots", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeDBClusterSnapshots), arg0)
+}
+
+// DescribeDBClusterSnapshotsPages mocks base method
+func (m *MockDocDBAPI) DescribeDBClusterSnapshotsPages(arg0 *docdb.DescribeDBClusterSnapshotsInput, arg1 func(*docdb.DescribeDBClusterSnapshotsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDBClusterSnapshotsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDBClusterSnapshotsPages indicates an expected call of DescribeDBClusterSnapshotsPages
+func (mr *MockDocDBAPIMockRecorder) DescribeDBClusterSnapshotsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterSnapshotsPages", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeDBClusterSnapshotsPages), arg0, arg1)
+}
+
+// DescribeDBClusterSnapshotsPagesWithContext mocks base method
+func (m *MockDocDBAPI) DescribeDBClusterSnapshotsPagesWithContext(arg0 context.Context, arg1 *docdb.DescribeDBClusterSnapshotsInput, arg2 func(*docdb.DescribeDBClusterSnapshotsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDBClusterSnapshotsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDBClusterSnapshotsPagesWithContext indicates an expected call of DescribeDBClusterSnapshotsPagesWithContext
+func (mr *MockDocDBAPIMockRecorder) DescribeDBClusterSnapshotsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDBClusterSnapshotsPagesWithContext", reflect.TypeOf((*MockDocDBAPI)(nil).DescribeDBClusterSnapshotsPagesWithContext), varargs...)
 }
 
 // DescribeDBClusterSnapshotsRequest mocks base method
@@ -1596,6 +1728,39 @@ func (m *MockDocDBAPI) DescribePendingMaintenanceActions(arg0 *docdb.DescribePen
 func (mr *MockDocDBAPIMockRecorder) DescribePendingMaintenanceActions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePendingMaintenanceActions", reflect.TypeOf((*MockDocDBAPI)(nil).DescribePendingMaintenanceActions), arg0)
+}
+
+// DescribePendingMaintenanceActionsPages mocks base method
+func (m *MockDocDBAPI) DescribePendingMaintenanceActionsPages(arg0 *docdb.DescribePendingMaintenanceActionsInput, arg1 func(*docdb.DescribePendingMaintenanceActionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePendingMaintenanceActionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribePendingMaintenanceActionsPages indicates an expected call of DescribePendingMaintenanceActionsPages
+func (mr *MockDocDBAPIMockRecorder) DescribePendingMaintenanceActionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePendingMaintenanceActionsPages", reflect.TypeOf((*MockDocDBAPI)(nil).DescribePendingMaintenanceActionsPages), arg0, arg1)
+}
+
+// DescribePendingMaintenanceActionsPagesWithContext mocks base method
+func (m *MockDocDBAPI) DescribePendingMaintenanceActionsPagesWithContext(arg0 context.Context, arg1 *docdb.DescribePendingMaintenanceActionsInput, arg2 func(*docdb.DescribePendingMaintenanceActionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribePendingMaintenanceActionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribePendingMaintenanceActionsPagesWithContext indicates an expected call of DescribePendingMaintenanceActionsPagesWithContext
+func (mr *MockDocDBAPIMockRecorder) DescribePendingMaintenanceActionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePendingMaintenanceActionsPagesWithContext", reflect.TypeOf((*MockDocDBAPI)(nil).DescribePendingMaintenanceActionsPagesWithContext), varargs...)
 }
 
 // DescribePendingMaintenanceActionsRequest mocks base method
