@@ -35,6 +35,56 @@ func (m *MockWorkSpacesAPI) EXPECT() *MockWorkSpacesAPIMockRecorder {
 	return m.recorder
 }
 
+// AssociateConnectionAlias mocks base method
+func (m *MockWorkSpacesAPI) AssociateConnectionAlias(arg0 *workspaces.AssociateConnectionAliasInput) (*workspaces.AssociateConnectionAliasOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateConnectionAlias", arg0)
+	ret0, _ := ret[0].(*workspaces.AssociateConnectionAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateConnectionAlias indicates an expected call of AssociateConnectionAlias
+func (mr *MockWorkSpacesAPIMockRecorder) AssociateConnectionAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateConnectionAlias", reflect.TypeOf((*MockWorkSpacesAPI)(nil).AssociateConnectionAlias), arg0)
+}
+
+// AssociateConnectionAliasRequest mocks base method
+func (m *MockWorkSpacesAPI) AssociateConnectionAliasRequest(arg0 *workspaces.AssociateConnectionAliasInput) (*request.Request, *workspaces.AssociateConnectionAliasOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateConnectionAliasRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.AssociateConnectionAliasOutput)
+	return ret0, ret1
+}
+
+// AssociateConnectionAliasRequest indicates an expected call of AssociateConnectionAliasRequest
+func (mr *MockWorkSpacesAPIMockRecorder) AssociateConnectionAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateConnectionAliasRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).AssociateConnectionAliasRequest), arg0)
+}
+
+// AssociateConnectionAliasWithContext mocks base method
+func (m *MockWorkSpacesAPI) AssociateConnectionAliasWithContext(arg0 context.Context, arg1 *workspaces.AssociateConnectionAliasInput, arg2 ...request.Option) (*workspaces.AssociateConnectionAliasOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateConnectionAliasWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.AssociateConnectionAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateConnectionAliasWithContext indicates an expected call of AssociateConnectionAliasWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) AssociateConnectionAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateConnectionAliasWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).AssociateConnectionAliasWithContext), varargs...)
+}
+
 // AssociateIpGroups mocks base method
 func (m *MockWorkSpacesAPI) AssociateIpGroups(arg0 *workspaces.AssociateIpGroupsInput) (*workspaces.AssociateIpGroupsOutput, error) {
 	m.ctrl.T.Helper()
@@ -185,6 +235,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) CopyWorkspaceImageWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopyWorkspaceImageWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CopyWorkspaceImageWithContext), varargs...)
 }
 
+// CreateConnectionAlias mocks base method
+func (m *MockWorkSpacesAPI) CreateConnectionAlias(arg0 *workspaces.CreateConnectionAliasInput) (*workspaces.CreateConnectionAliasOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectionAlias", arg0)
+	ret0, _ := ret[0].(*workspaces.CreateConnectionAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectionAlias indicates an expected call of CreateConnectionAlias
+func (mr *MockWorkSpacesAPIMockRecorder) CreateConnectionAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectionAlias", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateConnectionAlias), arg0)
+}
+
+// CreateConnectionAliasRequest mocks base method
+func (m *MockWorkSpacesAPI) CreateConnectionAliasRequest(arg0 *workspaces.CreateConnectionAliasInput) (*request.Request, *workspaces.CreateConnectionAliasOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectionAliasRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.CreateConnectionAliasOutput)
+	return ret0, ret1
+}
+
+// CreateConnectionAliasRequest indicates an expected call of CreateConnectionAliasRequest
+func (mr *MockWorkSpacesAPIMockRecorder) CreateConnectionAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectionAliasRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateConnectionAliasRequest), arg0)
+}
+
+// CreateConnectionAliasWithContext mocks base method
+func (m *MockWorkSpacesAPI) CreateConnectionAliasWithContext(arg0 context.Context, arg1 *workspaces.CreateConnectionAliasInput, arg2 ...request.Option) (*workspaces.CreateConnectionAliasOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateConnectionAliasWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.CreateConnectionAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectionAliasWithContext indicates an expected call of CreateConnectionAliasWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) CreateConnectionAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectionAliasWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateConnectionAliasWithContext), varargs...)
+}
+
 // CreateIpGroup mocks base method
 func (m *MockWorkSpacesAPI) CreateIpGroup(arg0 *workspaces.CreateIpGroupInput) (*workspaces.CreateIpGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +433,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) CreateWorkspacesWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkspacesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateWorkspacesWithContext), varargs...)
+}
+
+// DeleteConnectionAlias mocks base method
+func (m *MockWorkSpacesAPI) DeleteConnectionAlias(arg0 *workspaces.DeleteConnectionAliasInput) (*workspaces.DeleteConnectionAliasOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnectionAlias", arg0)
+	ret0, _ := ret[0].(*workspaces.DeleteConnectionAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnectionAlias indicates an expected call of DeleteConnectionAlias
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteConnectionAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectionAlias", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteConnectionAlias), arg0)
+}
+
+// DeleteConnectionAliasRequest mocks base method
+func (m *MockWorkSpacesAPI) DeleteConnectionAliasRequest(arg0 *workspaces.DeleteConnectionAliasInput) (*request.Request, *workspaces.DeleteConnectionAliasOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnectionAliasRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DeleteConnectionAliasOutput)
+	return ret0, ret1
+}
+
+// DeleteConnectionAliasRequest indicates an expected call of DeleteConnectionAliasRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteConnectionAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectionAliasRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteConnectionAliasRequest), arg0)
+}
+
+// DeleteConnectionAliasWithContext mocks base method
+func (m *MockWorkSpacesAPI) DeleteConnectionAliasWithContext(arg0 context.Context, arg1 *workspaces.DeleteConnectionAliasInput, arg2 ...request.Option) (*workspaces.DeleteConnectionAliasOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteConnectionAliasWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DeleteConnectionAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnectionAliasWithContext indicates an expected call of DeleteConnectionAliasWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteConnectionAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectionAliasWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteConnectionAliasWithContext), varargs...)
 }
 
 // DeleteIpGroup mocks base method
@@ -683,6 +833,106 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeClientPropertiesWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClientPropertiesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeClientPropertiesWithContext), varargs...)
+}
+
+// DescribeConnectionAliasPermissions mocks base method
+func (m *MockWorkSpacesAPI) DescribeConnectionAliasPermissions(arg0 *workspaces.DescribeConnectionAliasPermissionsInput) (*workspaces.DescribeConnectionAliasPermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeConnectionAliasPermissions", arg0)
+	ret0, _ := ret[0].(*workspaces.DescribeConnectionAliasPermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeConnectionAliasPermissions indicates an expected call of DescribeConnectionAliasPermissions
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeConnectionAliasPermissions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnectionAliasPermissions", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeConnectionAliasPermissions), arg0)
+}
+
+// DescribeConnectionAliasPermissionsRequest mocks base method
+func (m *MockWorkSpacesAPI) DescribeConnectionAliasPermissionsRequest(arg0 *workspaces.DescribeConnectionAliasPermissionsInput) (*request.Request, *workspaces.DescribeConnectionAliasPermissionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeConnectionAliasPermissionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DescribeConnectionAliasPermissionsOutput)
+	return ret0, ret1
+}
+
+// DescribeConnectionAliasPermissionsRequest indicates an expected call of DescribeConnectionAliasPermissionsRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeConnectionAliasPermissionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnectionAliasPermissionsRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeConnectionAliasPermissionsRequest), arg0)
+}
+
+// DescribeConnectionAliasPermissionsWithContext mocks base method
+func (m *MockWorkSpacesAPI) DescribeConnectionAliasPermissionsWithContext(arg0 context.Context, arg1 *workspaces.DescribeConnectionAliasPermissionsInput, arg2 ...request.Option) (*workspaces.DescribeConnectionAliasPermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeConnectionAliasPermissionsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DescribeConnectionAliasPermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeConnectionAliasPermissionsWithContext indicates an expected call of DescribeConnectionAliasPermissionsWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeConnectionAliasPermissionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnectionAliasPermissionsWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeConnectionAliasPermissionsWithContext), varargs...)
+}
+
+// DescribeConnectionAliases mocks base method
+func (m *MockWorkSpacesAPI) DescribeConnectionAliases(arg0 *workspaces.DescribeConnectionAliasesInput) (*workspaces.DescribeConnectionAliasesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeConnectionAliases", arg0)
+	ret0, _ := ret[0].(*workspaces.DescribeConnectionAliasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeConnectionAliases indicates an expected call of DescribeConnectionAliases
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeConnectionAliases(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnectionAliases", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeConnectionAliases), arg0)
+}
+
+// DescribeConnectionAliasesRequest mocks base method
+func (m *MockWorkSpacesAPI) DescribeConnectionAliasesRequest(arg0 *workspaces.DescribeConnectionAliasesInput) (*request.Request, *workspaces.DescribeConnectionAliasesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeConnectionAliasesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DescribeConnectionAliasesOutput)
+	return ret0, ret1
+}
+
+// DescribeConnectionAliasesRequest indicates an expected call of DescribeConnectionAliasesRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeConnectionAliasesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnectionAliasesRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeConnectionAliasesRequest), arg0)
+}
+
+// DescribeConnectionAliasesWithContext mocks base method
+func (m *MockWorkSpacesAPI) DescribeConnectionAliasesWithContext(arg0 context.Context, arg1 *workspaces.DescribeConnectionAliasesInput, arg2 ...request.Option) (*workspaces.DescribeConnectionAliasesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeConnectionAliasesWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DescribeConnectionAliasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeConnectionAliasesWithContext indicates an expected call of DescribeConnectionAliasesWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeConnectionAliasesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnectionAliasesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeConnectionAliasesWithContext), varargs...)
 }
 
 // DescribeIpGroups mocks base method
@@ -1232,6 +1482,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspacesWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspacesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspacesWithContext), varargs...)
+}
+
+// DisassociateConnectionAlias mocks base method
+func (m *MockWorkSpacesAPI) DisassociateConnectionAlias(arg0 *workspaces.DisassociateConnectionAliasInput) (*workspaces.DisassociateConnectionAliasOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateConnectionAlias", arg0)
+	ret0, _ := ret[0].(*workspaces.DisassociateConnectionAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateConnectionAlias indicates an expected call of DisassociateConnectionAlias
+func (mr *MockWorkSpacesAPIMockRecorder) DisassociateConnectionAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateConnectionAlias", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DisassociateConnectionAlias), arg0)
+}
+
+// DisassociateConnectionAliasRequest mocks base method
+func (m *MockWorkSpacesAPI) DisassociateConnectionAliasRequest(arg0 *workspaces.DisassociateConnectionAliasInput) (*request.Request, *workspaces.DisassociateConnectionAliasOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateConnectionAliasRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DisassociateConnectionAliasOutput)
+	return ret0, ret1
+}
+
+// DisassociateConnectionAliasRequest indicates an expected call of DisassociateConnectionAliasRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DisassociateConnectionAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateConnectionAliasRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DisassociateConnectionAliasRequest), arg0)
+}
+
+// DisassociateConnectionAliasWithContext mocks base method
+func (m *MockWorkSpacesAPI) DisassociateConnectionAliasWithContext(arg0 context.Context, arg1 *workspaces.DisassociateConnectionAliasInput, arg2 ...request.Option) (*workspaces.DisassociateConnectionAliasOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateConnectionAliasWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DisassociateConnectionAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateConnectionAliasWithContext indicates an expected call of DisassociateConnectionAliasWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DisassociateConnectionAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateConnectionAliasWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DisassociateConnectionAliasWithContext), varargs...)
 }
 
 // DisassociateIpGroups mocks base method
@@ -2182,6 +2482,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) TerminateWorkspacesWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateWorkspacesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).TerminateWorkspacesWithContext), varargs...)
+}
+
+// UpdateConnectionAliasPermission mocks base method
+func (m *MockWorkSpacesAPI) UpdateConnectionAliasPermission(arg0 *workspaces.UpdateConnectionAliasPermissionInput) (*workspaces.UpdateConnectionAliasPermissionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectionAliasPermission", arg0)
+	ret0, _ := ret[0].(*workspaces.UpdateConnectionAliasPermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectionAliasPermission indicates an expected call of UpdateConnectionAliasPermission
+func (mr *MockWorkSpacesAPIMockRecorder) UpdateConnectionAliasPermission(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectionAliasPermission", reflect.TypeOf((*MockWorkSpacesAPI)(nil).UpdateConnectionAliasPermission), arg0)
+}
+
+// UpdateConnectionAliasPermissionRequest mocks base method
+func (m *MockWorkSpacesAPI) UpdateConnectionAliasPermissionRequest(arg0 *workspaces.UpdateConnectionAliasPermissionInput) (*request.Request, *workspaces.UpdateConnectionAliasPermissionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectionAliasPermissionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.UpdateConnectionAliasPermissionOutput)
+	return ret0, ret1
+}
+
+// UpdateConnectionAliasPermissionRequest indicates an expected call of UpdateConnectionAliasPermissionRequest
+func (mr *MockWorkSpacesAPIMockRecorder) UpdateConnectionAliasPermissionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectionAliasPermissionRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).UpdateConnectionAliasPermissionRequest), arg0)
+}
+
+// UpdateConnectionAliasPermissionWithContext mocks base method
+func (m *MockWorkSpacesAPI) UpdateConnectionAliasPermissionWithContext(arg0 context.Context, arg1 *workspaces.UpdateConnectionAliasPermissionInput, arg2 ...request.Option) (*workspaces.UpdateConnectionAliasPermissionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateConnectionAliasPermissionWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.UpdateConnectionAliasPermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectionAliasPermissionWithContext indicates an expected call of UpdateConnectionAliasPermissionWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) UpdateConnectionAliasPermissionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectionAliasPermissionWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).UpdateConnectionAliasPermissionWithContext), varargs...)
 }
 
 // UpdateRulesOfIpGroup mocks base method
