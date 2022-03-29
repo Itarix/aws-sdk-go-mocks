@@ -250,6 +250,56 @@ func (mr *MockShieldAPIMockRecorder) CreateProtection(arg0 interface{}) *gomock.
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProtection", reflect.TypeOf((*MockShieldAPI)(nil).CreateProtection), arg0)
 }
 
+// CreateProtectionGroup mocks base method
+func (m *MockShieldAPI) CreateProtectionGroup(arg0 *shield.CreateProtectionGroupInput) (*shield.CreateProtectionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProtectionGroup", arg0)
+	ret0, _ := ret[0].(*shield.CreateProtectionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProtectionGroup indicates an expected call of CreateProtectionGroup
+func (mr *MockShieldAPIMockRecorder) CreateProtectionGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProtectionGroup", reflect.TypeOf((*MockShieldAPI)(nil).CreateProtectionGroup), arg0)
+}
+
+// CreateProtectionGroupRequest mocks base method
+func (m *MockShieldAPI) CreateProtectionGroupRequest(arg0 *shield.CreateProtectionGroupInput) (*request.Request, *shield.CreateProtectionGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProtectionGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*shield.CreateProtectionGroupOutput)
+	return ret0, ret1
+}
+
+// CreateProtectionGroupRequest indicates an expected call of CreateProtectionGroupRequest
+func (mr *MockShieldAPIMockRecorder) CreateProtectionGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProtectionGroupRequest", reflect.TypeOf((*MockShieldAPI)(nil).CreateProtectionGroupRequest), arg0)
+}
+
+// CreateProtectionGroupWithContext mocks base method
+func (m *MockShieldAPI) CreateProtectionGroupWithContext(arg0 context.Context, arg1 *shield.CreateProtectionGroupInput, arg2 ...request.Option) (*shield.CreateProtectionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateProtectionGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*shield.CreateProtectionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProtectionGroupWithContext indicates an expected call of CreateProtectionGroupWithContext
+func (mr *MockShieldAPIMockRecorder) CreateProtectionGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProtectionGroupWithContext", reflect.TypeOf((*MockShieldAPI)(nil).CreateProtectionGroupWithContext), varargs...)
+}
+
 // CreateProtectionRequest mocks base method
 func (m *MockShieldAPI) CreateProtectionRequest(arg0 *shield.CreateProtectionInput) (*request.Request, *shield.CreateProtectionOutput) {
 	m.ctrl.T.Helper()
@@ -348,6 +398,56 @@ func (m *MockShieldAPI) DeleteProtection(arg0 *shield.DeleteProtectionInput) (*s
 func (mr *MockShieldAPIMockRecorder) DeleteProtection(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProtection", reflect.TypeOf((*MockShieldAPI)(nil).DeleteProtection), arg0)
+}
+
+// DeleteProtectionGroup mocks base method
+func (m *MockShieldAPI) DeleteProtectionGroup(arg0 *shield.DeleteProtectionGroupInput) (*shield.DeleteProtectionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProtectionGroup", arg0)
+	ret0, _ := ret[0].(*shield.DeleteProtectionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProtectionGroup indicates an expected call of DeleteProtectionGroup
+func (mr *MockShieldAPIMockRecorder) DeleteProtectionGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProtectionGroup", reflect.TypeOf((*MockShieldAPI)(nil).DeleteProtectionGroup), arg0)
+}
+
+// DeleteProtectionGroupRequest mocks base method
+func (m *MockShieldAPI) DeleteProtectionGroupRequest(arg0 *shield.DeleteProtectionGroupInput) (*request.Request, *shield.DeleteProtectionGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProtectionGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*shield.DeleteProtectionGroupOutput)
+	return ret0, ret1
+}
+
+// DeleteProtectionGroupRequest indicates an expected call of DeleteProtectionGroupRequest
+func (mr *MockShieldAPIMockRecorder) DeleteProtectionGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProtectionGroupRequest", reflect.TypeOf((*MockShieldAPI)(nil).DeleteProtectionGroupRequest), arg0)
+}
+
+// DeleteProtectionGroupWithContext mocks base method
+func (m *MockShieldAPI) DeleteProtectionGroupWithContext(arg0 context.Context, arg1 *shield.DeleteProtectionGroupInput, arg2 ...request.Option) (*shield.DeleteProtectionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteProtectionGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*shield.DeleteProtectionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProtectionGroupWithContext indicates an expected call of DeleteProtectionGroupWithContext
+func (mr *MockShieldAPIMockRecorder) DeleteProtectionGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProtectionGroupWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DeleteProtectionGroupWithContext), varargs...)
 }
 
 // DeleteProtectionRequest mocks base method
@@ -463,6 +563,56 @@ func (m *MockShieldAPI) DescribeAttackRequest(arg0 *shield.DescribeAttackInput) 
 func (mr *MockShieldAPIMockRecorder) DescribeAttackRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAttackRequest", reflect.TypeOf((*MockShieldAPI)(nil).DescribeAttackRequest), arg0)
+}
+
+// DescribeAttackStatistics mocks base method
+func (m *MockShieldAPI) DescribeAttackStatistics(arg0 *shield.DescribeAttackStatisticsInput) (*shield.DescribeAttackStatisticsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAttackStatistics", arg0)
+	ret0, _ := ret[0].(*shield.DescribeAttackStatisticsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAttackStatistics indicates an expected call of DescribeAttackStatistics
+func (mr *MockShieldAPIMockRecorder) DescribeAttackStatistics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAttackStatistics", reflect.TypeOf((*MockShieldAPI)(nil).DescribeAttackStatistics), arg0)
+}
+
+// DescribeAttackStatisticsRequest mocks base method
+func (m *MockShieldAPI) DescribeAttackStatisticsRequest(arg0 *shield.DescribeAttackStatisticsInput) (*request.Request, *shield.DescribeAttackStatisticsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAttackStatisticsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*shield.DescribeAttackStatisticsOutput)
+	return ret0, ret1
+}
+
+// DescribeAttackStatisticsRequest indicates an expected call of DescribeAttackStatisticsRequest
+func (mr *MockShieldAPIMockRecorder) DescribeAttackStatisticsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAttackStatisticsRequest", reflect.TypeOf((*MockShieldAPI)(nil).DescribeAttackStatisticsRequest), arg0)
+}
+
+// DescribeAttackStatisticsWithContext mocks base method
+func (m *MockShieldAPI) DescribeAttackStatisticsWithContext(arg0 context.Context, arg1 *shield.DescribeAttackStatisticsInput, arg2 ...request.Option) (*shield.DescribeAttackStatisticsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAttackStatisticsWithContext", varargs...)
+	ret0, _ := ret[0].(*shield.DescribeAttackStatisticsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAttackStatisticsWithContext indicates an expected call of DescribeAttackStatisticsWithContext
+func (mr *MockShieldAPIMockRecorder) DescribeAttackStatisticsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAttackStatisticsWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DescribeAttackStatisticsWithContext), varargs...)
 }
 
 // DescribeAttackWithContext mocks base method
@@ -598,6 +748,56 @@ func (m *MockShieldAPI) DescribeProtection(arg0 *shield.DescribeProtectionInput)
 func (mr *MockShieldAPIMockRecorder) DescribeProtection(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProtection", reflect.TypeOf((*MockShieldAPI)(nil).DescribeProtection), arg0)
+}
+
+// DescribeProtectionGroup mocks base method
+func (m *MockShieldAPI) DescribeProtectionGroup(arg0 *shield.DescribeProtectionGroupInput) (*shield.DescribeProtectionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProtectionGroup", arg0)
+	ret0, _ := ret[0].(*shield.DescribeProtectionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeProtectionGroup indicates an expected call of DescribeProtectionGroup
+func (mr *MockShieldAPIMockRecorder) DescribeProtectionGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProtectionGroup", reflect.TypeOf((*MockShieldAPI)(nil).DescribeProtectionGroup), arg0)
+}
+
+// DescribeProtectionGroupRequest mocks base method
+func (m *MockShieldAPI) DescribeProtectionGroupRequest(arg0 *shield.DescribeProtectionGroupInput) (*request.Request, *shield.DescribeProtectionGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProtectionGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*shield.DescribeProtectionGroupOutput)
+	return ret0, ret1
+}
+
+// DescribeProtectionGroupRequest indicates an expected call of DescribeProtectionGroupRequest
+func (mr *MockShieldAPIMockRecorder) DescribeProtectionGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProtectionGroupRequest", reflect.TypeOf((*MockShieldAPI)(nil).DescribeProtectionGroupRequest), arg0)
+}
+
+// DescribeProtectionGroupWithContext mocks base method
+func (m *MockShieldAPI) DescribeProtectionGroupWithContext(arg0 context.Context, arg1 *shield.DescribeProtectionGroupInput, arg2 ...request.Option) (*shield.DescribeProtectionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeProtectionGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*shield.DescribeProtectionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeProtectionGroupWithContext indicates an expected call of DescribeProtectionGroupWithContext
+func (mr *MockShieldAPIMockRecorder) DescribeProtectionGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProtectionGroupWithContext", reflect.TypeOf((*MockShieldAPI)(nil).DescribeProtectionGroupWithContext), varargs...)
 }
 
 // DescribeProtectionRequest mocks base method
@@ -1068,6 +1268,89 @@ func (mr *MockShieldAPIMockRecorder) ListAttacksWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttacksWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListAttacksWithContext), varargs...)
 }
 
+// ListProtectionGroups mocks base method
+func (m *MockShieldAPI) ListProtectionGroups(arg0 *shield.ListProtectionGroupsInput) (*shield.ListProtectionGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProtectionGroups", arg0)
+	ret0, _ := ret[0].(*shield.ListProtectionGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProtectionGroups indicates an expected call of ListProtectionGroups
+func (mr *MockShieldAPIMockRecorder) ListProtectionGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionGroups", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionGroups), arg0)
+}
+
+// ListProtectionGroupsPages mocks base method
+func (m *MockShieldAPI) ListProtectionGroupsPages(arg0 *shield.ListProtectionGroupsInput, arg1 func(*shield.ListProtectionGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProtectionGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProtectionGroupsPages indicates an expected call of ListProtectionGroupsPages
+func (mr *MockShieldAPIMockRecorder) ListProtectionGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionGroupsPages", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionGroupsPages), arg0, arg1)
+}
+
+// ListProtectionGroupsPagesWithContext mocks base method
+func (m *MockShieldAPI) ListProtectionGroupsPagesWithContext(arg0 context.Context, arg1 *shield.ListProtectionGroupsInput, arg2 func(*shield.ListProtectionGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProtectionGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProtectionGroupsPagesWithContext indicates an expected call of ListProtectionGroupsPagesWithContext
+func (mr *MockShieldAPIMockRecorder) ListProtectionGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionGroupsPagesWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionGroupsPagesWithContext), varargs...)
+}
+
+// ListProtectionGroupsRequest mocks base method
+func (m *MockShieldAPI) ListProtectionGroupsRequest(arg0 *shield.ListProtectionGroupsInput) (*request.Request, *shield.ListProtectionGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProtectionGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*shield.ListProtectionGroupsOutput)
+	return ret0, ret1
+}
+
+// ListProtectionGroupsRequest indicates an expected call of ListProtectionGroupsRequest
+func (mr *MockShieldAPIMockRecorder) ListProtectionGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionGroupsRequest", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionGroupsRequest), arg0)
+}
+
+// ListProtectionGroupsWithContext mocks base method
+func (m *MockShieldAPI) ListProtectionGroupsWithContext(arg0 context.Context, arg1 *shield.ListProtectionGroupsInput, arg2 ...request.Option) (*shield.ListProtectionGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProtectionGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*shield.ListProtectionGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProtectionGroupsWithContext indicates an expected call of ListProtectionGroupsWithContext
+func (mr *MockShieldAPIMockRecorder) ListProtectionGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionGroupsWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionGroupsWithContext), varargs...)
+}
+
 // ListProtections mocks base method
 func (m *MockShieldAPI) ListProtections(arg0 *shield.ListProtectionsInput) (*shield.ListProtectionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1151,6 +1434,89 @@ func (mr *MockShieldAPIMockRecorder) ListProtectionsWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectionsWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListProtectionsWithContext), varargs...)
 }
 
+// ListResourcesInProtectionGroup mocks base method
+func (m *MockShieldAPI) ListResourcesInProtectionGroup(arg0 *shield.ListResourcesInProtectionGroupInput) (*shield.ListResourcesInProtectionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourcesInProtectionGroup", arg0)
+	ret0, _ := ret[0].(*shield.ListResourcesInProtectionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourcesInProtectionGroup indicates an expected call of ListResourcesInProtectionGroup
+func (mr *MockShieldAPIMockRecorder) ListResourcesInProtectionGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesInProtectionGroup", reflect.TypeOf((*MockShieldAPI)(nil).ListResourcesInProtectionGroup), arg0)
+}
+
+// ListResourcesInProtectionGroupPages mocks base method
+func (m *MockShieldAPI) ListResourcesInProtectionGroupPages(arg0 *shield.ListResourcesInProtectionGroupInput, arg1 func(*shield.ListResourcesInProtectionGroupOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourcesInProtectionGroupPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResourcesInProtectionGroupPages indicates an expected call of ListResourcesInProtectionGroupPages
+func (mr *MockShieldAPIMockRecorder) ListResourcesInProtectionGroupPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesInProtectionGroupPages", reflect.TypeOf((*MockShieldAPI)(nil).ListResourcesInProtectionGroupPages), arg0, arg1)
+}
+
+// ListResourcesInProtectionGroupPagesWithContext mocks base method
+func (m *MockShieldAPI) ListResourcesInProtectionGroupPagesWithContext(arg0 context.Context, arg1 *shield.ListResourcesInProtectionGroupInput, arg2 func(*shield.ListResourcesInProtectionGroupOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResourcesInProtectionGroupPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResourcesInProtectionGroupPagesWithContext indicates an expected call of ListResourcesInProtectionGroupPagesWithContext
+func (mr *MockShieldAPIMockRecorder) ListResourcesInProtectionGroupPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesInProtectionGroupPagesWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListResourcesInProtectionGroupPagesWithContext), varargs...)
+}
+
+// ListResourcesInProtectionGroupRequest mocks base method
+func (m *MockShieldAPI) ListResourcesInProtectionGroupRequest(arg0 *shield.ListResourcesInProtectionGroupInput) (*request.Request, *shield.ListResourcesInProtectionGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourcesInProtectionGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*shield.ListResourcesInProtectionGroupOutput)
+	return ret0, ret1
+}
+
+// ListResourcesInProtectionGroupRequest indicates an expected call of ListResourcesInProtectionGroupRequest
+func (mr *MockShieldAPIMockRecorder) ListResourcesInProtectionGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesInProtectionGroupRequest", reflect.TypeOf((*MockShieldAPI)(nil).ListResourcesInProtectionGroupRequest), arg0)
+}
+
+// ListResourcesInProtectionGroupWithContext mocks base method
+func (m *MockShieldAPI) ListResourcesInProtectionGroupWithContext(arg0 context.Context, arg1 *shield.ListResourcesInProtectionGroupInput, arg2 ...request.Option) (*shield.ListResourcesInProtectionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResourcesInProtectionGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*shield.ListResourcesInProtectionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourcesInProtectionGroupWithContext indicates an expected call of ListResourcesInProtectionGroupWithContext
+func (mr *MockShieldAPIMockRecorder) ListResourcesInProtectionGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesInProtectionGroupWithContext", reflect.TypeOf((*MockShieldAPI)(nil).ListResourcesInProtectionGroupWithContext), varargs...)
+}
+
 // UpdateEmergencyContactSettings mocks base method
 func (m *MockShieldAPI) UpdateEmergencyContactSettings(arg0 *shield.UpdateEmergencyContactSettingsInput) (*shield.UpdateEmergencyContactSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1199,6 +1565,56 @@ func (mr *MockShieldAPIMockRecorder) UpdateEmergencyContactSettingsWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEmergencyContactSettingsWithContext", reflect.TypeOf((*MockShieldAPI)(nil).UpdateEmergencyContactSettingsWithContext), varargs...)
+}
+
+// UpdateProtectionGroup mocks base method
+func (m *MockShieldAPI) UpdateProtectionGroup(arg0 *shield.UpdateProtectionGroupInput) (*shield.UpdateProtectionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProtectionGroup", arg0)
+	ret0, _ := ret[0].(*shield.UpdateProtectionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProtectionGroup indicates an expected call of UpdateProtectionGroup
+func (mr *MockShieldAPIMockRecorder) UpdateProtectionGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProtectionGroup", reflect.TypeOf((*MockShieldAPI)(nil).UpdateProtectionGroup), arg0)
+}
+
+// UpdateProtectionGroupRequest mocks base method
+func (m *MockShieldAPI) UpdateProtectionGroupRequest(arg0 *shield.UpdateProtectionGroupInput) (*request.Request, *shield.UpdateProtectionGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProtectionGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*shield.UpdateProtectionGroupOutput)
+	return ret0, ret1
+}
+
+// UpdateProtectionGroupRequest indicates an expected call of UpdateProtectionGroupRequest
+func (mr *MockShieldAPIMockRecorder) UpdateProtectionGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProtectionGroupRequest", reflect.TypeOf((*MockShieldAPI)(nil).UpdateProtectionGroupRequest), arg0)
+}
+
+// UpdateProtectionGroupWithContext mocks base method
+func (m *MockShieldAPI) UpdateProtectionGroupWithContext(arg0 context.Context, arg1 *shield.UpdateProtectionGroupInput, arg2 ...request.Option) (*shield.UpdateProtectionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateProtectionGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*shield.UpdateProtectionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProtectionGroupWithContext indicates an expected call of UpdateProtectionGroupWithContext
+func (mr *MockShieldAPIMockRecorder) UpdateProtectionGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProtectionGroupWithContext", reflect.TypeOf((*MockShieldAPI)(nil).UpdateProtectionGroupWithContext), varargs...)
 }
 
 // UpdateSubscription mocks base method
