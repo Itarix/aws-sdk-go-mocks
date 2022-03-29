@@ -535,6 +535,56 @@ func (mr *MockCloudFrontAPIMockRecorder) CreatePublicKeyWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePublicKeyWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreatePublicKeyWithContext), varargs...)
 }
 
+// CreateRealtimeLogConfig mocks base method
+func (m *MockCloudFrontAPI) CreateRealtimeLogConfig(arg0 *cloudfront.CreateRealtimeLogConfigInput) (*cloudfront.CreateRealtimeLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRealtimeLogConfig", arg0)
+	ret0, _ := ret[0].(*cloudfront.CreateRealtimeLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRealtimeLogConfig indicates an expected call of CreateRealtimeLogConfig
+func (mr *MockCloudFrontAPIMockRecorder) CreateRealtimeLogConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRealtimeLogConfig", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateRealtimeLogConfig), arg0)
+}
+
+// CreateRealtimeLogConfigRequest mocks base method
+func (m *MockCloudFrontAPI) CreateRealtimeLogConfigRequest(arg0 *cloudfront.CreateRealtimeLogConfigInput) (*request.Request, *cloudfront.CreateRealtimeLogConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRealtimeLogConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.CreateRealtimeLogConfigOutput)
+	return ret0, ret1
+}
+
+// CreateRealtimeLogConfigRequest indicates an expected call of CreateRealtimeLogConfigRequest
+func (mr *MockCloudFrontAPIMockRecorder) CreateRealtimeLogConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRealtimeLogConfigRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateRealtimeLogConfigRequest), arg0)
+}
+
+// CreateRealtimeLogConfigWithContext mocks base method
+func (m *MockCloudFrontAPI) CreateRealtimeLogConfigWithContext(arg0 context.Context, arg1 *cloudfront.CreateRealtimeLogConfigInput, arg2 ...request.Option) (*cloudfront.CreateRealtimeLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRealtimeLogConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.CreateRealtimeLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRealtimeLogConfigWithContext indicates an expected call of CreateRealtimeLogConfigWithContext
+func (mr *MockCloudFrontAPIMockRecorder) CreateRealtimeLogConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRealtimeLogConfigWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateRealtimeLogConfigWithContext), varargs...)
+}
+
 // CreateStreamingDistribution mocks base method
 func (m *MockCloudFrontAPI) CreateStreamingDistribution(arg0 *cloudfront.CreateStreamingDistributionInput) (*cloudfront.CreateStreamingDistributionOutput, error) {
 	m.ctrl.T.Helper()
@@ -1033,6 +1083,56 @@ func (mr *MockCloudFrontAPIMockRecorder) DeletePublicKeyWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePublicKeyWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeletePublicKeyWithContext), varargs...)
+}
+
+// DeleteRealtimeLogConfig mocks base method
+func (m *MockCloudFrontAPI) DeleteRealtimeLogConfig(arg0 *cloudfront.DeleteRealtimeLogConfigInput) (*cloudfront.DeleteRealtimeLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRealtimeLogConfig", arg0)
+	ret0, _ := ret[0].(*cloudfront.DeleteRealtimeLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRealtimeLogConfig indicates an expected call of DeleteRealtimeLogConfig
+func (mr *MockCloudFrontAPIMockRecorder) DeleteRealtimeLogConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRealtimeLogConfig", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteRealtimeLogConfig), arg0)
+}
+
+// DeleteRealtimeLogConfigRequest mocks base method
+func (m *MockCloudFrontAPI) DeleteRealtimeLogConfigRequest(arg0 *cloudfront.DeleteRealtimeLogConfigInput) (*request.Request, *cloudfront.DeleteRealtimeLogConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRealtimeLogConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.DeleteRealtimeLogConfigOutput)
+	return ret0, ret1
+}
+
+// DeleteRealtimeLogConfigRequest indicates an expected call of DeleteRealtimeLogConfigRequest
+func (mr *MockCloudFrontAPIMockRecorder) DeleteRealtimeLogConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRealtimeLogConfigRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteRealtimeLogConfigRequest), arg0)
+}
+
+// DeleteRealtimeLogConfigWithContext mocks base method
+func (m *MockCloudFrontAPI) DeleteRealtimeLogConfigWithContext(arg0 context.Context, arg1 *cloudfront.DeleteRealtimeLogConfigInput, arg2 ...request.Option) (*cloudfront.DeleteRealtimeLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRealtimeLogConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.DeleteRealtimeLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRealtimeLogConfigWithContext indicates an expected call of DeleteRealtimeLogConfigWithContext
+func (mr *MockCloudFrontAPIMockRecorder) DeleteRealtimeLogConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRealtimeLogConfigWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteRealtimeLogConfigWithContext), varargs...)
 }
 
 // DeleteStreamingDistribution mocks base method
@@ -1885,6 +1985,56 @@ func (mr *MockCloudFrontAPIMockRecorder) GetPublicKeyWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPublicKeyWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetPublicKeyWithContext), varargs...)
 }
 
+// GetRealtimeLogConfig mocks base method
+func (m *MockCloudFrontAPI) GetRealtimeLogConfig(arg0 *cloudfront.GetRealtimeLogConfigInput) (*cloudfront.GetRealtimeLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRealtimeLogConfig", arg0)
+	ret0, _ := ret[0].(*cloudfront.GetRealtimeLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRealtimeLogConfig indicates an expected call of GetRealtimeLogConfig
+func (mr *MockCloudFrontAPIMockRecorder) GetRealtimeLogConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRealtimeLogConfig", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetRealtimeLogConfig), arg0)
+}
+
+// GetRealtimeLogConfigRequest mocks base method
+func (m *MockCloudFrontAPI) GetRealtimeLogConfigRequest(arg0 *cloudfront.GetRealtimeLogConfigInput) (*request.Request, *cloudfront.GetRealtimeLogConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRealtimeLogConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.GetRealtimeLogConfigOutput)
+	return ret0, ret1
+}
+
+// GetRealtimeLogConfigRequest indicates an expected call of GetRealtimeLogConfigRequest
+func (mr *MockCloudFrontAPIMockRecorder) GetRealtimeLogConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRealtimeLogConfigRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetRealtimeLogConfigRequest), arg0)
+}
+
+// GetRealtimeLogConfigWithContext mocks base method
+func (m *MockCloudFrontAPI) GetRealtimeLogConfigWithContext(arg0 context.Context, arg1 *cloudfront.GetRealtimeLogConfigInput, arg2 ...request.Option) (*cloudfront.GetRealtimeLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRealtimeLogConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.GetRealtimeLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRealtimeLogConfigWithContext indicates an expected call of GetRealtimeLogConfigWithContext
+func (mr *MockCloudFrontAPIMockRecorder) GetRealtimeLogConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRealtimeLogConfigWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetRealtimeLogConfigWithContext), varargs...)
+}
+
 // GetStreamingDistribution mocks base method
 func (m *MockCloudFrontAPI) GetStreamingDistribution(arg0 *cloudfront.GetStreamingDistributionInput) (*cloudfront.GetStreamingDistributionOutput, error) {
 	m.ctrl.T.Helper()
@@ -2231,6 +2381,56 @@ func (mr *MockCloudFrontAPIMockRecorder) ListDistributionsByOriginRequestPolicyI
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDistributionsByOriginRequestPolicyIdWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListDistributionsByOriginRequestPolicyIdWithContext), varargs...)
+}
+
+// ListDistributionsByRealtimeLogConfig mocks base method
+func (m *MockCloudFrontAPI) ListDistributionsByRealtimeLogConfig(arg0 *cloudfront.ListDistributionsByRealtimeLogConfigInput) (*cloudfront.ListDistributionsByRealtimeLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDistributionsByRealtimeLogConfig", arg0)
+	ret0, _ := ret[0].(*cloudfront.ListDistributionsByRealtimeLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDistributionsByRealtimeLogConfig indicates an expected call of ListDistributionsByRealtimeLogConfig
+func (mr *MockCloudFrontAPIMockRecorder) ListDistributionsByRealtimeLogConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDistributionsByRealtimeLogConfig", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListDistributionsByRealtimeLogConfig), arg0)
+}
+
+// ListDistributionsByRealtimeLogConfigRequest mocks base method
+func (m *MockCloudFrontAPI) ListDistributionsByRealtimeLogConfigRequest(arg0 *cloudfront.ListDistributionsByRealtimeLogConfigInput) (*request.Request, *cloudfront.ListDistributionsByRealtimeLogConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDistributionsByRealtimeLogConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.ListDistributionsByRealtimeLogConfigOutput)
+	return ret0, ret1
+}
+
+// ListDistributionsByRealtimeLogConfigRequest indicates an expected call of ListDistributionsByRealtimeLogConfigRequest
+func (mr *MockCloudFrontAPIMockRecorder) ListDistributionsByRealtimeLogConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDistributionsByRealtimeLogConfigRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListDistributionsByRealtimeLogConfigRequest), arg0)
+}
+
+// ListDistributionsByRealtimeLogConfigWithContext mocks base method
+func (m *MockCloudFrontAPI) ListDistributionsByRealtimeLogConfigWithContext(arg0 context.Context, arg1 *cloudfront.ListDistributionsByRealtimeLogConfigInput, arg2 ...request.Option) (*cloudfront.ListDistributionsByRealtimeLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDistributionsByRealtimeLogConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.ListDistributionsByRealtimeLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDistributionsByRealtimeLogConfigWithContext indicates an expected call of ListDistributionsByRealtimeLogConfigWithContext
+func (mr *MockCloudFrontAPIMockRecorder) ListDistributionsByRealtimeLogConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDistributionsByRealtimeLogConfigWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListDistributionsByRealtimeLogConfigWithContext), varargs...)
 }
 
 // ListDistributionsByWebACLId mocks base method
@@ -2632,6 +2832,56 @@ func (mr *MockCloudFrontAPIMockRecorder) ListPublicKeysWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublicKeysWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListPublicKeysWithContext), varargs...)
+}
+
+// ListRealtimeLogConfigs mocks base method
+func (m *MockCloudFrontAPI) ListRealtimeLogConfigs(arg0 *cloudfront.ListRealtimeLogConfigsInput) (*cloudfront.ListRealtimeLogConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRealtimeLogConfigs", arg0)
+	ret0, _ := ret[0].(*cloudfront.ListRealtimeLogConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRealtimeLogConfigs indicates an expected call of ListRealtimeLogConfigs
+func (mr *MockCloudFrontAPIMockRecorder) ListRealtimeLogConfigs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRealtimeLogConfigs", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListRealtimeLogConfigs), arg0)
+}
+
+// ListRealtimeLogConfigsRequest mocks base method
+func (m *MockCloudFrontAPI) ListRealtimeLogConfigsRequest(arg0 *cloudfront.ListRealtimeLogConfigsInput) (*request.Request, *cloudfront.ListRealtimeLogConfigsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRealtimeLogConfigsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.ListRealtimeLogConfigsOutput)
+	return ret0, ret1
+}
+
+// ListRealtimeLogConfigsRequest indicates an expected call of ListRealtimeLogConfigsRequest
+func (mr *MockCloudFrontAPIMockRecorder) ListRealtimeLogConfigsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRealtimeLogConfigsRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListRealtimeLogConfigsRequest), arg0)
+}
+
+// ListRealtimeLogConfigsWithContext mocks base method
+func (m *MockCloudFrontAPI) ListRealtimeLogConfigsWithContext(arg0 context.Context, arg1 *cloudfront.ListRealtimeLogConfigsInput, arg2 ...request.Option) (*cloudfront.ListRealtimeLogConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRealtimeLogConfigsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.ListRealtimeLogConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRealtimeLogConfigsWithContext indicates an expected call of ListRealtimeLogConfigsWithContext
+func (mr *MockCloudFrontAPIMockRecorder) ListRealtimeLogConfigsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRealtimeLogConfigsWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListRealtimeLogConfigsWithContext), varargs...)
 }
 
 // ListStreamingDistributions mocks base method
@@ -3215,6 +3465,56 @@ func (mr *MockCloudFrontAPIMockRecorder) UpdatePublicKeyWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePublicKeyWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdatePublicKeyWithContext), varargs...)
+}
+
+// UpdateRealtimeLogConfig mocks base method
+func (m *MockCloudFrontAPI) UpdateRealtimeLogConfig(arg0 *cloudfront.UpdateRealtimeLogConfigInput) (*cloudfront.UpdateRealtimeLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRealtimeLogConfig", arg0)
+	ret0, _ := ret[0].(*cloudfront.UpdateRealtimeLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRealtimeLogConfig indicates an expected call of UpdateRealtimeLogConfig
+func (mr *MockCloudFrontAPIMockRecorder) UpdateRealtimeLogConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRealtimeLogConfig", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateRealtimeLogConfig), arg0)
+}
+
+// UpdateRealtimeLogConfigRequest mocks base method
+func (m *MockCloudFrontAPI) UpdateRealtimeLogConfigRequest(arg0 *cloudfront.UpdateRealtimeLogConfigInput) (*request.Request, *cloudfront.UpdateRealtimeLogConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRealtimeLogConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.UpdateRealtimeLogConfigOutput)
+	return ret0, ret1
+}
+
+// UpdateRealtimeLogConfigRequest indicates an expected call of UpdateRealtimeLogConfigRequest
+func (mr *MockCloudFrontAPIMockRecorder) UpdateRealtimeLogConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRealtimeLogConfigRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateRealtimeLogConfigRequest), arg0)
+}
+
+// UpdateRealtimeLogConfigWithContext mocks base method
+func (m *MockCloudFrontAPI) UpdateRealtimeLogConfigWithContext(arg0 context.Context, arg1 *cloudfront.UpdateRealtimeLogConfigInput, arg2 ...request.Option) (*cloudfront.UpdateRealtimeLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRealtimeLogConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.UpdateRealtimeLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRealtimeLogConfigWithContext indicates an expected call of UpdateRealtimeLogConfigWithContext
+func (mr *MockCloudFrontAPIMockRecorder) UpdateRealtimeLogConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRealtimeLogConfigWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateRealtimeLogConfigWithContext), varargs...)
 }
 
 // UpdateStreamingDistribution mocks base method
