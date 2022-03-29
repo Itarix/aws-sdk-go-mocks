@@ -235,6 +235,56 @@ func (mr *MockComputeOptimizerAPIMockRecorder) GetAutoScalingGroupRecommendation
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutoScalingGroupRecommendationsWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetAutoScalingGroupRecommendationsWithContext), varargs...)
 }
 
+// GetEBSVolumeRecommendations mocks base method
+func (m *MockComputeOptimizerAPI) GetEBSVolumeRecommendations(arg0 *computeoptimizer.GetEBSVolumeRecommendationsInput) (*computeoptimizer.GetEBSVolumeRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEBSVolumeRecommendations", arg0)
+	ret0, _ := ret[0].(*computeoptimizer.GetEBSVolumeRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEBSVolumeRecommendations indicates an expected call of GetEBSVolumeRecommendations
+func (mr *MockComputeOptimizerAPIMockRecorder) GetEBSVolumeRecommendations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEBSVolumeRecommendations", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetEBSVolumeRecommendations), arg0)
+}
+
+// GetEBSVolumeRecommendationsRequest mocks base method
+func (m *MockComputeOptimizerAPI) GetEBSVolumeRecommendationsRequest(arg0 *computeoptimizer.GetEBSVolumeRecommendationsInput) (*request.Request, *computeoptimizer.GetEBSVolumeRecommendationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEBSVolumeRecommendationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*computeoptimizer.GetEBSVolumeRecommendationsOutput)
+	return ret0, ret1
+}
+
+// GetEBSVolumeRecommendationsRequest indicates an expected call of GetEBSVolumeRecommendationsRequest
+func (mr *MockComputeOptimizerAPIMockRecorder) GetEBSVolumeRecommendationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEBSVolumeRecommendationsRequest", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetEBSVolumeRecommendationsRequest), arg0)
+}
+
+// GetEBSVolumeRecommendationsWithContext mocks base method
+func (m *MockComputeOptimizerAPI) GetEBSVolumeRecommendationsWithContext(arg0 context.Context, arg1 *computeoptimizer.GetEBSVolumeRecommendationsInput, arg2 ...request.Option) (*computeoptimizer.GetEBSVolumeRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetEBSVolumeRecommendationsWithContext", varargs...)
+	ret0, _ := ret[0].(*computeoptimizer.GetEBSVolumeRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEBSVolumeRecommendationsWithContext indicates an expected call of GetEBSVolumeRecommendationsWithContext
+func (mr *MockComputeOptimizerAPIMockRecorder) GetEBSVolumeRecommendationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEBSVolumeRecommendationsWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetEBSVolumeRecommendationsWithContext), varargs...)
+}
+
 // GetEC2InstanceRecommendations mocks base method
 func (m *MockComputeOptimizerAPI) GetEC2InstanceRecommendations(arg0 *computeoptimizer.GetEC2InstanceRecommendationsInput) (*computeoptimizer.GetEC2InstanceRecommendationsOutput, error) {
 	m.ctrl.T.Helper()
