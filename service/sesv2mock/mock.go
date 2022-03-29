@@ -435,6 +435,56 @@ func (mr *MockSESV2APIMockRecorder) CreateEmailTemplateWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEmailTemplateWithContext", reflect.TypeOf((*MockSESV2API)(nil).CreateEmailTemplateWithContext), varargs...)
 }
 
+// CreateImportJob mocks base method
+func (m *MockSESV2API) CreateImportJob(arg0 *sesv2.CreateImportJobInput) (*sesv2.CreateImportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateImportJob", arg0)
+	ret0, _ := ret[0].(*sesv2.CreateImportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateImportJob indicates an expected call of CreateImportJob
+func (mr *MockSESV2APIMockRecorder) CreateImportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateImportJob", reflect.TypeOf((*MockSESV2API)(nil).CreateImportJob), arg0)
+}
+
+// CreateImportJobRequest mocks base method
+func (m *MockSESV2API) CreateImportJobRequest(arg0 *sesv2.CreateImportJobInput) (*request.Request, *sesv2.CreateImportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateImportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.CreateImportJobOutput)
+	return ret0, ret1
+}
+
+// CreateImportJobRequest indicates an expected call of CreateImportJobRequest
+func (mr *MockSESV2APIMockRecorder) CreateImportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateImportJobRequest", reflect.TypeOf((*MockSESV2API)(nil).CreateImportJobRequest), arg0)
+}
+
+// CreateImportJobWithContext mocks base method
+func (m *MockSESV2API) CreateImportJobWithContext(arg0 context.Context, arg1 *sesv2.CreateImportJobInput, arg2 ...request.Option) (*sesv2.CreateImportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateImportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.CreateImportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateImportJobWithContext indicates an expected call of CreateImportJobWithContext
+func (mr *MockSESV2APIMockRecorder) CreateImportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateImportJobWithContext", reflect.TypeOf((*MockSESV2API)(nil).CreateImportJobWithContext), varargs...)
+}
+
 // DeleteConfigurationSet mocks base method
 func (m *MockSESV2API) DeleteConfigurationSet(arg0 *sesv2.DeleteConfigurationSetInput) (*sesv2.DeleteConfigurationSetOutput, error) {
 	m.ctrl.T.Helper()
@@ -1568,6 +1618,56 @@ func (mr *MockSESV2APIMockRecorder) GetEmailTemplateWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEmailTemplateWithContext", reflect.TypeOf((*MockSESV2API)(nil).GetEmailTemplateWithContext), varargs...)
 }
 
+// GetImportJob mocks base method
+func (m *MockSESV2API) GetImportJob(arg0 *sesv2.GetImportJobInput) (*sesv2.GetImportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetImportJob", arg0)
+	ret0, _ := ret[0].(*sesv2.GetImportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetImportJob indicates an expected call of GetImportJob
+func (mr *MockSESV2APIMockRecorder) GetImportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImportJob", reflect.TypeOf((*MockSESV2API)(nil).GetImportJob), arg0)
+}
+
+// GetImportJobRequest mocks base method
+func (m *MockSESV2API) GetImportJobRequest(arg0 *sesv2.GetImportJobInput) (*request.Request, *sesv2.GetImportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetImportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.GetImportJobOutput)
+	return ret0, ret1
+}
+
+// GetImportJobRequest indicates an expected call of GetImportJobRequest
+func (mr *MockSESV2APIMockRecorder) GetImportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImportJobRequest", reflect.TypeOf((*MockSESV2API)(nil).GetImportJobRequest), arg0)
+}
+
+// GetImportJobWithContext mocks base method
+func (m *MockSESV2API) GetImportJobWithContext(arg0 context.Context, arg1 *sesv2.GetImportJobInput, arg2 ...request.Option) (*sesv2.GetImportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetImportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.GetImportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetImportJobWithContext indicates an expected call of GetImportJobWithContext
+func (mr *MockSESV2APIMockRecorder) GetImportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImportJobWithContext", reflect.TypeOf((*MockSESV2API)(nil).GetImportJobWithContext), varargs...)
+}
+
 // GetSuppressedDestination mocks base method
 func (m *MockSESV2API) GetSuppressedDestination(arg0 *sesv2.GetSuppressedDestinationInput) (*sesv2.GetSuppressedDestinationOutput, error) {
 	m.ctrl.T.Helper()
@@ -2197,6 +2297,89 @@ func (mr *MockSESV2APIMockRecorder) ListEmailTemplatesWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEmailTemplatesWithContext", reflect.TypeOf((*MockSESV2API)(nil).ListEmailTemplatesWithContext), varargs...)
+}
+
+// ListImportJobs mocks base method
+func (m *MockSESV2API) ListImportJobs(arg0 *sesv2.ListImportJobsInput) (*sesv2.ListImportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListImportJobs", arg0)
+	ret0, _ := ret[0].(*sesv2.ListImportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListImportJobs indicates an expected call of ListImportJobs
+func (mr *MockSESV2APIMockRecorder) ListImportJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportJobs", reflect.TypeOf((*MockSESV2API)(nil).ListImportJobs), arg0)
+}
+
+// ListImportJobsPages mocks base method
+func (m *MockSESV2API) ListImportJobsPages(arg0 *sesv2.ListImportJobsInput, arg1 func(*sesv2.ListImportJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListImportJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListImportJobsPages indicates an expected call of ListImportJobsPages
+func (mr *MockSESV2APIMockRecorder) ListImportJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportJobsPages", reflect.TypeOf((*MockSESV2API)(nil).ListImportJobsPages), arg0, arg1)
+}
+
+// ListImportJobsPagesWithContext mocks base method
+func (m *MockSESV2API) ListImportJobsPagesWithContext(arg0 context.Context, arg1 *sesv2.ListImportJobsInput, arg2 func(*sesv2.ListImportJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListImportJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListImportJobsPagesWithContext indicates an expected call of ListImportJobsPagesWithContext
+func (mr *MockSESV2APIMockRecorder) ListImportJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportJobsPagesWithContext", reflect.TypeOf((*MockSESV2API)(nil).ListImportJobsPagesWithContext), varargs...)
+}
+
+// ListImportJobsRequest mocks base method
+func (m *MockSESV2API) ListImportJobsRequest(arg0 *sesv2.ListImportJobsInput) (*request.Request, *sesv2.ListImportJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListImportJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.ListImportJobsOutput)
+	return ret0, ret1
+}
+
+// ListImportJobsRequest indicates an expected call of ListImportJobsRequest
+func (mr *MockSESV2APIMockRecorder) ListImportJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportJobsRequest", reflect.TypeOf((*MockSESV2API)(nil).ListImportJobsRequest), arg0)
+}
+
+// ListImportJobsWithContext mocks base method
+func (m *MockSESV2API) ListImportJobsWithContext(arg0 context.Context, arg1 *sesv2.ListImportJobsInput, arg2 ...request.Option) (*sesv2.ListImportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListImportJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.ListImportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListImportJobsWithContext indicates an expected call of ListImportJobsWithContext
+func (mr *MockSESV2APIMockRecorder) ListImportJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportJobsWithContext", reflect.TypeOf((*MockSESV2API)(nil).ListImportJobsWithContext), varargs...)
 }
 
 // ListSuppressedDestinations mocks base method
