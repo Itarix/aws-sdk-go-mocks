@@ -85,6 +85,56 @@ func (mr *MockSavingsPlansAPIMockRecorder) CreateSavingsPlanWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSavingsPlanWithContext", reflect.TypeOf((*MockSavingsPlansAPI)(nil).CreateSavingsPlanWithContext), varargs...)
 }
 
+// DeleteQueuedSavingsPlan mocks base method
+func (m *MockSavingsPlansAPI) DeleteQueuedSavingsPlan(arg0 *savingsplans.DeleteQueuedSavingsPlanInput) (*savingsplans.DeleteQueuedSavingsPlanOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteQueuedSavingsPlan", arg0)
+	ret0, _ := ret[0].(*savingsplans.DeleteQueuedSavingsPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteQueuedSavingsPlan indicates an expected call of DeleteQueuedSavingsPlan
+func (mr *MockSavingsPlansAPIMockRecorder) DeleteQueuedSavingsPlan(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQueuedSavingsPlan", reflect.TypeOf((*MockSavingsPlansAPI)(nil).DeleteQueuedSavingsPlan), arg0)
+}
+
+// DeleteQueuedSavingsPlanRequest mocks base method
+func (m *MockSavingsPlansAPI) DeleteQueuedSavingsPlanRequest(arg0 *savingsplans.DeleteQueuedSavingsPlanInput) (*request.Request, *savingsplans.DeleteQueuedSavingsPlanOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteQueuedSavingsPlanRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*savingsplans.DeleteQueuedSavingsPlanOutput)
+	return ret0, ret1
+}
+
+// DeleteQueuedSavingsPlanRequest indicates an expected call of DeleteQueuedSavingsPlanRequest
+func (mr *MockSavingsPlansAPIMockRecorder) DeleteQueuedSavingsPlanRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQueuedSavingsPlanRequest", reflect.TypeOf((*MockSavingsPlansAPI)(nil).DeleteQueuedSavingsPlanRequest), arg0)
+}
+
+// DeleteQueuedSavingsPlanWithContext mocks base method
+func (m *MockSavingsPlansAPI) DeleteQueuedSavingsPlanWithContext(arg0 context.Context, arg1 *savingsplans.DeleteQueuedSavingsPlanInput, arg2 ...request.Option) (*savingsplans.DeleteQueuedSavingsPlanOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteQueuedSavingsPlanWithContext", varargs...)
+	ret0, _ := ret[0].(*savingsplans.DeleteQueuedSavingsPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteQueuedSavingsPlanWithContext indicates an expected call of DeleteQueuedSavingsPlanWithContext
+func (mr *MockSavingsPlansAPIMockRecorder) DeleteQueuedSavingsPlanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQueuedSavingsPlanWithContext", reflect.TypeOf((*MockSavingsPlansAPI)(nil).DeleteQueuedSavingsPlanWithContext), varargs...)
+}
+
 // DescribeSavingsPlanRates mocks base method
 func (m *MockSavingsPlansAPI) DescribeSavingsPlanRates(arg0 *savingsplans.DescribeSavingsPlanRatesInput) (*savingsplans.DescribeSavingsPlanRatesOutput, error) {
 	m.ctrl.T.Helper()
