@@ -2535,6 +2535,89 @@ func (mr *MockServiceCatalogAPIMockRecorder) GetAWSOrganizationsAccessStatusWith
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAWSOrganizationsAccessStatusWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).GetAWSOrganizationsAccessStatusWithContext), varargs...)
 }
 
+// GetProvisionedProductOutputs mocks base method
+func (m *MockServiceCatalogAPI) GetProvisionedProductOutputs(arg0 *servicecatalog.GetProvisionedProductOutputsInput) (*servicecatalog.GetProvisionedProductOutputsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetProvisionedProductOutputs", arg0)
+	ret0, _ := ret[0].(*servicecatalog.GetProvisionedProductOutputsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetProvisionedProductOutputs indicates an expected call of GetProvisionedProductOutputs
+func (mr *MockServiceCatalogAPIMockRecorder) GetProvisionedProductOutputs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProvisionedProductOutputs", reflect.TypeOf((*MockServiceCatalogAPI)(nil).GetProvisionedProductOutputs), arg0)
+}
+
+// GetProvisionedProductOutputsPages mocks base method
+func (m *MockServiceCatalogAPI) GetProvisionedProductOutputsPages(arg0 *servicecatalog.GetProvisionedProductOutputsInput, arg1 func(*servicecatalog.GetProvisionedProductOutputsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetProvisionedProductOutputsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetProvisionedProductOutputsPages indicates an expected call of GetProvisionedProductOutputsPages
+func (mr *MockServiceCatalogAPIMockRecorder) GetProvisionedProductOutputsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProvisionedProductOutputsPages", reflect.TypeOf((*MockServiceCatalogAPI)(nil).GetProvisionedProductOutputsPages), arg0, arg1)
+}
+
+// GetProvisionedProductOutputsPagesWithContext mocks base method
+func (m *MockServiceCatalogAPI) GetProvisionedProductOutputsPagesWithContext(arg0 context.Context, arg1 *servicecatalog.GetProvisionedProductOutputsInput, arg2 func(*servicecatalog.GetProvisionedProductOutputsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetProvisionedProductOutputsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetProvisionedProductOutputsPagesWithContext indicates an expected call of GetProvisionedProductOutputsPagesWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) GetProvisionedProductOutputsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProvisionedProductOutputsPagesWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).GetProvisionedProductOutputsPagesWithContext), varargs...)
+}
+
+// GetProvisionedProductOutputsRequest mocks base method
+func (m *MockServiceCatalogAPI) GetProvisionedProductOutputsRequest(arg0 *servicecatalog.GetProvisionedProductOutputsInput) (*request.Request, *servicecatalog.GetProvisionedProductOutputsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetProvisionedProductOutputsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.GetProvisionedProductOutputsOutput)
+	return ret0, ret1
+}
+
+// GetProvisionedProductOutputsRequest indicates an expected call of GetProvisionedProductOutputsRequest
+func (mr *MockServiceCatalogAPIMockRecorder) GetProvisionedProductOutputsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProvisionedProductOutputsRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).GetProvisionedProductOutputsRequest), arg0)
+}
+
+// GetProvisionedProductOutputsWithContext mocks base method
+func (m *MockServiceCatalogAPI) GetProvisionedProductOutputsWithContext(arg0 context.Context, arg1 *servicecatalog.GetProvisionedProductOutputsInput, arg2 ...request.Option) (*servicecatalog.GetProvisionedProductOutputsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetProvisionedProductOutputsWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.GetProvisionedProductOutputsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetProvisionedProductOutputsWithContext indicates an expected call of GetProvisionedProductOutputsWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) GetProvisionedProductOutputsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProvisionedProductOutputsWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).GetProvisionedProductOutputsWithContext), varargs...)
+}
+
 // ListAcceptedPortfolioShares mocks base method
 func (m *MockServiceCatalogAPI) ListAcceptedPortfolioShares(arg0 *servicecatalog.ListAcceptedPortfolioSharesInput) (*servicecatalog.ListAcceptedPortfolioSharesOutput, error) {
 	m.ctrl.T.Helper()
