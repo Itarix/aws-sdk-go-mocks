@@ -6335,6 +6335,56 @@ func (mr *MockLightsailAPIMockRecorder) SendContactMethodVerificationWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendContactMethodVerificationWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).SendContactMethodVerificationWithContext), varargs...)
 }
 
+// SetIpAddressType mocks base method
+func (m *MockLightsailAPI) SetIpAddressType(arg0 *lightsail.SetIpAddressTypeInput) (*lightsail.SetIpAddressTypeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SetIpAddressType", arg0)
+	ret0, _ := ret[0].(*lightsail.SetIpAddressTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SetIpAddressType indicates an expected call of SetIpAddressType
+func (mr *MockLightsailAPIMockRecorder) SetIpAddressType(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetIpAddressType", reflect.TypeOf((*MockLightsailAPI)(nil).SetIpAddressType), arg0)
+}
+
+// SetIpAddressTypeRequest mocks base method
+func (m *MockLightsailAPI) SetIpAddressTypeRequest(arg0 *lightsail.SetIpAddressTypeInput) (*request.Request, *lightsail.SetIpAddressTypeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SetIpAddressTypeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.SetIpAddressTypeOutput)
+	return ret0, ret1
+}
+
+// SetIpAddressTypeRequest indicates an expected call of SetIpAddressTypeRequest
+func (mr *MockLightsailAPIMockRecorder) SetIpAddressTypeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetIpAddressTypeRequest", reflect.TypeOf((*MockLightsailAPI)(nil).SetIpAddressTypeRequest), arg0)
+}
+
+// SetIpAddressTypeWithContext mocks base method
+func (m *MockLightsailAPI) SetIpAddressTypeWithContext(arg0 context.Context, arg1 *lightsail.SetIpAddressTypeInput, arg2 ...request.Option) (*lightsail.SetIpAddressTypeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SetIpAddressTypeWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.SetIpAddressTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SetIpAddressTypeWithContext indicates an expected call of SetIpAddressTypeWithContext
+func (mr *MockLightsailAPIMockRecorder) SetIpAddressTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetIpAddressTypeWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).SetIpAddressTypeWithContext), varargs...)
+}
+
 // StartInstance mocks base method
 func (m *MockLightsailAPI) StartInstance(arg0 *lightsail.StartInstanceInput) (*lightsail.StartInstanceOutput, error) {
 	m.ctrl.T.Helper()
