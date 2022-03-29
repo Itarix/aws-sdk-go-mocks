@@ -585,6 +585,156 @@ func (mr *MockLightsailAPIMockRecorder) CreateContactMethodWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactMethodWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).CreateContactMethodWithContext), varargs...)
 }
 
+// CreateContainerService mocks base method
+func (m *MockLightsailAPI) CreateContainerService(arg0 *lightsail.CreateContainerServiceInput) (*lightsail.CreateContainerServiceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContainerService", arg0)
+	ret0, _ := ret[0].(*lightsail.CreateContainerServiceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContainerService indicates an expected call of CreateContainerService
+func (mr *MockLightsailAPIMockRecorder) CreateContainerService(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContainerService", reflect.TypeOf((*MockLightsailAPI)(nil).CreateContainerService), arg0)
+}
+
+// CreateContainerServiceDeployment mocks base method
+func (m *MockLightsailAPI) CreateContainerServiceDeployment(arg0 *lightsail.CreateContainerServiceDeploymentInput) (*lightsail.CreateContainerServiceDeploymentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContainerServiceDeployment", arg0)
+	ret0, _ := ret[0].(*lightsail.CreateContainerServiceDeploymentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContainerServiceDeployment indicates an expected call of CreateContainerServiceDeployment
+func (mr *MockLightsailAPIMockRecorder) CreateContainerServiceDeployment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContainerServiceDeployment", reflect.TypeOf((*MockLightsailAPI)(nil).CreateContainerServiceDeployment), arg0)
+}
+
+// CreateContainerServiceDeploymentRequest mocks base method
+func (m *MockLightsailAPI) CreateContainerServiceDeploymentRequest(arg0 *lightsail.CreateContainerServiceDeploymentInput) (*request.Request, *lightsail.CreateContainerServiceDeploymentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContainerServiceDeploymentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.CreateContainerServiceDeploymentOutput)
+	return ret0, ret1
+}
+
+// CreateContainerServiceDeploymentRequest indicates an expected call of CreateContainerServiceDeploymentRequest
+func (mr *MockLightsailAPIMockRecorder) CreateContainerServiceDeploymentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContainerServiceDeploymentRequest", reflect.TypeOf((*MockLightsailAPI)(nil).CreateContainerServiceDeploymentRequest), arg0)
+}
+
+// CreateContainerServiceDeploymentWithContext mocks base method
+func (m *MockLightsailAPI) CreateContainerServiceDeploymentWithContext(arg0 context.Context, arg1 *lightsail.CreateContainerServiceDeploymentInput, arg2 ...request.Option) (*lightsail.CreateContainerServiceDeploymentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateContainerServiceDeploymentWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.CreateContainerServiceDeploymentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContainerServiceDeploymentWithContext indicates an expected call of CreateContainerServiceDeploymentWithContext
+func (mr *MockLightsailAPIMockRecorder) CreateContainerServiceDeploymentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContainerServiceDeploymentWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).CreateContainerServiceDeploymentWithContext), varargs...)
+}
+
+// CreateContainerServiceRegistryLogin mocks base method
+func (m *MockLightsailAPI) CreateContainerServiceRegistryLogin(arg0 *lightsail.CreateContainerServiceRegistryLoginInput) (*lightsail.CreateContainerServiceRegistryLoginOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContainerServiceRegistryLogin", arg0)
+	ret0, _ := ret[0].(*lightsail.CreateContainerServiceRegistryLoginOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContainerServiceRegistryLogin indicates an expected call of CreateContainerServiceRegistryLogin
+func (mr *MockLightsailAPIMockRecorder) CreateContainerServiceRegistryLogin(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContainerServiceRegistryLogin", reflect.TypeOf((*MockLightsailAPI)(nil).CreateContainerServiceRegistryLogin), arg0)
+}
+
+// CreateContainerServiceRegistryLoginRequest mocks base method
+func (m *MockLightsailAPI) CreateContainerServiceRegistryLoginRequest(arg0 *lightsail.CreateContainerServiceRegistryLoginInput) (*request.Request, *lightsail.CreateContainerServiceRegistryLoginOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContainerServiceRegistryLoginRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.CreateContainerServiceRegistryLoginOutput)
+	return ret0, ret1
+}
+
+// CreateContainerServiceRegistryLoginRequest indicates an expected call of CreateContainerServiceRegistryLoginRequest
+func (mr *MockLightsailAPIMockRecorder) CreateContainerServiceRegistryLoginRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContainerServiceRegistryLoginRequest", reflect.TypeOf((*MockLightsailAPI)(nil).CreateContainerServiceRegistryLoginRequest), arg0)
+}
+
+// CreateContainerServiceRegistryLoginWithContext mocks base method
+func (m *MockLightsailAPI) CreateContainerServiceRegistryLoginWithContext(arg0 context.Context, arg1 *lightsail.CreateContainerServiceRegistryLoginInput, arg2 ...request.Option) (*lightsail.CreateContainerServiceRegistryLoginOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateContainerServiceRegistryLoginWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.CreateContainerServiceRegistryLoginOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContainerServiceRegistryLoginWithContext indicates an expected call of CreateContainerServiceRegistryLoginWithContext
+func (mr *MockLightsailAPIMockRecorder) CreateContainerServiceRegistryLoginWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContainerServiceRegistryLoginWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).CreateContainerServiceRegistryLoginWithContext), varargs...)
+}
+
+// CreateContainerServiceRequest mocks base method
+func (m *MockLightsailAPI) CreateContainerServiceRequest(arg0 *lightsail.CreateContainerServiceInput) (*request.Request, *lightsail.CreateContainerServiceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContainerServiceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.CreateContainerServiceOutput)
+	return ret0, ret1
+}
+
+// CreateContainerServiceRequest indicates an expected call of CreateContainerServiceRequest
+func (mr *MockLightsailAPIMockRecorder) CreateContainerServiceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContainerServiceRequest", reflect.TypeOf((*MockLightsailAPI)(nil).CreateContainerServiceRequest), arg0)
+}
+
+// CreateContainerServiceWithContext mocks base method
+func (m *MockLightsailAPI) CreateContainerServiceWithContext(arg0 context.Context, arg1 *lightsail.CreateContainerServiceInput, arg2 ...request.Option) (*lightsail.CreateContainerServiceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateContainerServiceWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.CreateContainerServiceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContainerServiceWithContext indicates an expected call of CreateContainerServiceWithContext
+func (mr *MockLightsailAPIMockRecorder) CreateContainerServiceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContainerServiceWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).CreateContainerServiceWithContext), varargs...)
+}
+
 // CreateDisk mocks base method
 func (m *MockLightsailAPI) CreateDisk(arg0 *lightsail.CreateDiskInput) (*lightsail.CreateDiskOutput, error) {
 	m.ctrl.T.Helper()
@@ -1533,6 +1683,106 @@ func (mr *MockLightsailAPIMockRecorder) DeleteContactMethodWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactMethodWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteContactMethodWithContext), varargs...)
+}
+
+// DeleteContainerImage mocks base method
+func (m *MockLightsailAPI) DeleteContainerImage(arg0 *lightsail.DeleteContainerImageInput) (*lightsail.DeleteContainerImageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteContainerImage", arg0)
+	ret0, _ := ret[0].(*lightsail.DeleteContainerImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteContainerImage indicates an expected call of DeleteContainerImage
+func (mr *MockLightsailAPIMockRecorder) DeleteContainerImage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContainerImage", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteContainerImage), arg0)
+}
+
+// DeleteContainerImageRequest mocks base method
+func (m *MockLightsailAPI) DeleteContainerImageRequest(arg0 *lightsail.DeleteContainerImageInput) (*request.Request, *lightsail.DeleteContainerImageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteContainerImageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.DeleteContainerImageOutput)
+	return ret0, ret1
+}
+
+// DeleteContainerImageRequest indicates an expected call of DeleteContainerImageRequest
+func (mr *MockLightsailAPIMockRecorder) DeleteContainerImageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContainerImageRequest", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteContainerImageRequest), arg0)
+}
+
+// DeleteContainerImageWithContext mocks base method
+func (m *MockLightsailAPI) DeleteContainerImageWithContext(arg0 context.Context, arg1 *lightsail.DeleteContainerImageInput, arg2 ...request.Option) (*lightsail.DeleteContainerImageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteContainerImageWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.DeleteContainerImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteContainerImageWithContext indicates an expected call of DeleteContainerImageWithContext
+func (mr *MockLightsailAPIMockRecorder) DeleteContainerImageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContainerImageWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteContainerImageWithContext), varargs...)
+}
+
+// DeleteContainerService mocks base method
+func (m *MockLightsailAPI) DeleteContainerService(arg0 *lightsail.DeleteContainerServiceInput) (*lightsail.DeleteContainerServiceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteContainerService", arg0)
+	ret0, _ := ret[0].(*lightsail.DeleteContainerServiceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteContainerService indicates an expected call of DeleteContainerService
+func (mr *MockLightsailAPIMockRecorder) DeleteContainerService(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContainerService", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteContainerService), arg0)
+}
+
+// DeleteContainerServiceRequest mocks base method
+func (m *MockLightsailAPI) DeleteContainerServiceRequest(arg0 *lightsail.DeleteContainerServiceInput) (*request.Request, *lightsail.DeleteContainerServiceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteContainerServiceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.DeleteContainerServiceOutput)
+	return ret0, ret1
+}
+
+// DeleteContainerServiceRequest indicates an expected call of DeleteContainerServiceRequest
+func (mr *MockLightsailAPIMockRecorder) DeleteContainerServiceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContainerServiceRequest", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteContainerServiceRequest), arg0)
+}
+
+// DeleteContainerServiceWithContext mocks base method
+func (m *MockLightsailAPI) DeleteContainerServiceWithContext(arg0 context.Context, arg1 *lightsail.DeleteContainerServiceInput, arg2 ...request.Option) (*lightsail.DeleteContainerServiceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteContainerServiceWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.DeleteContainerServiceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteContainerServiceWithContext indicates an expected call of DeleteContainerServiceWithContext
+func (mr *MockLightsailAPIMockRecorder) DeleteContainerServiceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContainerServiceWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).DeleteContainerServiceWithContext), varargs...)
 }
 
 // DeleteDisk mocks base method
@@ -2983,6 +3233,356 @@ func (mr *MockLightsailAPIMockRecorder) GetContactMethodsWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactMethodsWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetContactMethodsWithContext), varargs...)
+}
+
+// GetContainerAPIMetadata mocks base method
+func (m *MockLightsailAPI) GetContainerAPIMetadata(arg0 *lightsail.GetContainerAPIMetadataInput) (*lightsail.GetContainerAPIMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContainerAPIMetadata", arg0)
+	ret0, _ := ret[0].(*lightsail.GetContainerAPIMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContainerAPIMetadata indicates an expected call of GetContainerAPIMetadata
+func (mr *MockLightsailAPIMockRecorder) GetContainerAPIMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerAPIMetadata", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerAPIMetadata), arg0)
+}
+
+// GetContainerAPIMetadataRequest mocks base method
+func (m *MockLightsailAPI) GetContainerAPIMetadataRequest(arg0 *lightsail.GetContainerAPIMetadataInput) (*request.Request, *lightsail.GetContainerAPIMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContainerAPIMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.GetContainerAPIMetadataOutput)
+	return ret0, ret1
+}
+
+// GetContainerAPIMetadataRequest indicates an expected call of GetContainerAPIMetadataRequest
+func (mr *MockLightsailAPIMockRecorder) GetContainerAPIMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerAPIMetadataRequest", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerAPIMetadataRequest), arg0)
+}
+
+// GetContainerAPIMetadataWithContext mocks base method
+func (m *MockLightsailAPI) GetContainerAPIMetadataWithContext(arg0 context.Context, arg1 *lightsail.GetContainerAPIMetadataInput, arg2 ...request.Option) (*lightsail.GetContainerAPIMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetContainerAPIMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.GetContainerAPIMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContainerAPIMetadataWithContext indicates an expected call of GetContainerAPIMetadataWithContext
+func (mr *MockLightsailAPIMockRecorder) GetContainerAPIMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerAPIMetadataWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerAPIMetadataWithContext), varargs...)
+}
+
+// GetContainerImages mocks base method
+func (m *MockLightsailAPI) GetContainerImages(arg0 *lightsail.GetContainerImagesInput) (*lightsail.GetContainerImagesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContainerImages", arg0)
+	ret0, _ := ret[0].(*lightsail.GetContainerImagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContainerImages indicates an expected call of GetContainerImages
+func (mr *MockLightsailAPIMockRecorder) GetContainerImages(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerImages", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerImages), arg0)
+}
+
+// GetContainerImagesRequest mocks base method
+func (m *MockLightsailAPI) GetContainerImagesRequest(arg0 *lightsail.GetContainerImagesInput) (*request.Request, *lightsail.GetContainerImagesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContainerImagesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.GetContainerImagesOutput)
+	return ret0, ret1
+}
+
+// GetContainerImagesRequest indicates an expected call of GetContainerImagesRequest
+func (mr *MockLightsailAPIMockRecorder) GetContainerImagesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerImagesRequest", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerImagesRequest), arg0)
+}
+
+// GetContainerImagesWithContext mocks base method
+func (m *MockLightsailAPI) GetContainerImagesWithContext(arg0 context.Context, arg1 *lightsail.GetContainerImagesInput, arg2 ...request.Option) (*lightsail.GetContainerImagesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetContainerImagesWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.GetContainerImagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContainerImagesWithContext indicates an expected call of GetContainerImagesWithContext
+func (mr *MockLightsailAPIMockRecorder) GetContainerImagesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerImagesWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerImagesWithContext), varargs...)
+}
+
+// GetContainerLog mocks base method
+func (m *MockLightsailAPI) GetContainerLog(arg0 *lightsail.GetContainerLogInput) (*lightsail.GetContainerLogOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContainerLog", arg0)
+	ret0, _ := ret[0].(*lightsail.GetContainerLogOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContainerLog indicates an expected call of GetContainerLog
+func (mr *MockLightsailAPIMockRecorder) GetContainerLog(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerLog", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerLog), arg0)
+}
+
+// GetContainerLogRequest mocks base method
+func (m *MockLightsailAPI) GetContainerLogRequest(arg0 *lightsail.GetContainerLogInput) (*request.Request, *lightsail.GetContainerLogOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContainerLogRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.GetContainerLogOutput)
+	return ret0, ret1
+}
+
+// GetContainerLogRequest indicates an expected call of GetContainerLogRequest
+func (mr *MockLightsailAPIMockRecorder) GetContainerLogRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerLogRequest", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerLogRequest), arg0)
+}
+
+// GetContainerLogWithContext mocks base method
+func (m *MockLightsailAPI) GetContainerLogWithContext(arg0 context.Context, arg1 *lightsail.GetContainerLogInput, arg2 ...request.Option) (*lightsail.GetContainerLogOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetContainerLogWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.GetContainerLogOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContainerLogWithContext indicates an expected call of GetContainerLogWithContext
+func (mr *MockLightsailAPIMockRecorder) GetContainerLogWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerLogWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerLogWithContext), varargs...)
+}
+
+// GetContainerServiceDeployments mocks base method
+func (m *MockLightsailAPI) GetContainerServiceDeployments(arg0 *lightsail.GetContainerServiceDeploymentsInput) (*lightsail.GetContainerServiceDeploymentsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContainerServiceDeployments", arg0)
+	ret0, _ := ret[0].(*lightsail.GetContainerServiceDeploymentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContainerServiceDeployments indicates an expected call of GetContainerServiceDeployments
+func (mr *MockLightsailAPIMockRecorder) GetContainerServiceDeployments(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerServiceDeployments", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerServiceDeployments), arg0)
+}
+
+// GetContainerServiceDeploymentsRequest mocks base method
+func (m *MockLightsailAPI) GetContainerServiceDeploymentsRequest(arg0 *lightsail.GetContainerServiceDeploymentsInput) (*request.Request, *lightsail.GetContainerServiceDeploymentsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContainerServiceDeploymentsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.GetContainerServiceDeploymentsOutput)
+	return ret0, ret1
+}
+
+// GetContainerServiceDeploymentsRequest indicates an expected call of GetContainerServiceDeploymentsRequest
+func (mr *MockLightsailAPIMockRecorder) GetContainerServiceDeploymentsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerServiceDeploymentsRequest", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerServiceDeploymentsRequest), arg0)
+}
+
+// GetContainerServiceDeploymentsWithContext mocks base method
+func (m *MockLightsailAPI) GetContainerServiceDeploymentsWithContext(arg0 context.Context, arg1 *lightsail.GetContainerServiceDeploymentsInput, arg2 ...request.Option) (*lightsail.GetContainerServiceDeploymentsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetContainerServiceDeploymentsWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.GetContainerServiceDeploymentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContainerServiceDeploymentsWithContext indicates an expected call of GetContainerServiceDeploymentsWithContext
+func (mr *MockLightsailAPIMockRecorder) GetContainerServiceDeploymentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerServiceDeploymentsWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerServiceDeploymentsWithContext), varargs...)
+}
+
+// GetContainerServiceMetricData mocks base method
+func (m *MockLightsailAPI) GetContainerServiceMetricData(arg0 *lightsail.GetContainerServiceMetricDataInput) (*lightsail.GetContainerServiceMetricDataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContainerServiceMetricData", arg0)
+	ret0, _ := ret[0].(*lightsail.GetContainerServiceMetricDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContainerServiceMetricData indicates an expected call of GetContainerServiceMetricData
+func (mr *MockLightsailAPIMockRecorder) GetContainerServiceMetricData(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerServiceMetricData", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerServiceMetricData), arg0)
+}
+
+// GetContainerServiceMetricDataRequest mocks base method
+func (m *MockLightsailAPI) GetContainerServiceMetricDataRequest(arg0 *lightsail.GetContainerServiceMetricDataInput) (*request.Request, *lightsail.GetContainerServiceMetricDataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContainerServiceMetricDataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.GetContainerServiceMetricDataOutput)
+	return ret0, ret1
+}
+
+// GetContainerServiceMetricDataRequest indicates an expected call of GetContainerServiceMetricDataRequest
+func (mr *MockLightsailAPIMockRecorder) GetContainerServiceMetricDataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerServiceMetricDataRequest", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerServiceMetricDataRequest), arg0)
+}
+
+// GetContainerServiceMetricDataWithContext mocks base method
+func (m *MockLightsailAPI) GetContainerServiceMetricDataWithContext(arg0 context.Context, arg1 *lightsail.GetContainerServiceMetricDataInput, arg2 ...request.Option) (*lightsail.GetContainerServiceMetricDataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetContainerServiceMetricDataWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.GetContainerServiceMetricDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContainerServiceMetricDataWithContext indicates an expected call of GetContainerServiceMetricDataWithContext
+func (mr *MockLightsailAPIMockRecorder) GetContainerServiceMetricDataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerServiceMetricDataWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerServiceMetricDataWithContext), varargs...)
+}
+
+// GetContainerServicePowers mocks base method
+func (m *MockLightsailAPI) GetContainerServicePowers(arg0 *lightsail.GetContainerServicePowersInput) (*lightsail.GetContainerServicePowersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContainerServicePowers", arg0)
+	ret0, _ := ret[0].(*lightsail.GetContainerServicePowersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContainerServicePowers indicates an expected call of GetContainerServicePowers
+func (mr *MockLightsailAPIMockRecorder) GetContainerServicePowers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerServicePowers", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerServicePowers), arg0)
+}
+
+// GetContainerServicePowersRequest mocks base method
+func (m *MockLightsailAPI) GetContainerServicePowersRequest(arg0 *lightsail.GetContainerServicePowersInput) (*request.Request, *lightsail.GetContainerServicePowersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContainerServicePowersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.GetContainerServicePowersOutput)
+	return ret0, ret1
+}
+
+// GetContainerServicePowersRequest indicates an expected call of GetContainerServicePowersRequest
+func (mr *MockLightsailAPIMockRecorder) GetContainerServicePowersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerServicePowersRequest", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerServicePowersRequest), arg0)
+}
+
+// GetContainerServicePowersWithContext mocks base method
+func (m *MockLightsailAPI) GetContainerServicePowersWithContext(arg0 context.Context, arg1 *lightsail.GetContainerServicePowersInput, arg2 ...request.Option) (*lightsail.GetContainerServicePowersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetContainerServicePowersWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.GetContainerServicePowersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContainerServicePowersWithContext indicates an expected call of GetContainerServicePowersWithContext
+func (mr *MockLightsailAPIMockRecorder) GetContainerServicePowersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerServicePowersWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerServicePowersWithContext), varargs...)
+}
+
+// GetContainerServices mocks base method
+func (m *MockLightsailAPI) GetContainerServices(arg0 *lightsail.GetContainerServicesInput) (*lightsail.GetContainerServicesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContainerServices", arg0)
+	ret0, _ := ret[0].(*lightsail.GetContainerServicesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContainerServices indicates an expected call of GetContainerServices
+func (mr *MockLightsailAPIMockRecorder) GetContainerServices(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerServices", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerServices), arg0)
+}
+
+// GetContainerServicesRequest mocks base method
+func (m *MockLightsailAPI) GetContainerServicesRequest(arg0 *lightsail.GetContainerServicesInput) (*request.Request, *lightsail.GetContainerServicesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContainerServicesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.GetContainerServicesOutput)
+	return ret0, ret1
+}
+
+// GetContainerServicesRequest indicates an expected call of GetContainerServicesRequest
+func (mr *MockLightsailAPIMockRecorder) GetContainerServicesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerServicesRequest", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerServicesRequest), arg0)
+}
+
+// GetContainerServicesWithContext mocks base method
+func (m *MockLightsailAPI) GetContainerServicesWithContext(arg0 context.Context, arg1 *lightsail.GetContainerServicesInput, arg2 ...request.Option) (*lightsail.GetContainerServicesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetContainerServicesWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.GetContainerServicesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContainerServicesWithContext indicates an expected call of GetContainerServicesWithContext
+func (mr *MockLightsailAPIMockRecorder) GetContainerServicesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerServicesWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerServicesWithContext), varargs...)
 }
 
 // GetDisk mocks base method
@@ -5535,6 +6135,56 @@ func (mr *MockLightsailAPIMockRecorder) RebootRelationalDatabaseWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebootRelationalDatabaseWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).RebootRelationalDatabaseWithContext), varargs...)
 }
 
+// RegisterContainerImage mocks base method
+func (m *MockLightsailAPI) RegisterContainerImage(arg0 *lightsail.RegisterContainerImageInput) (*lightsail.RegisterContainerImageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterContainerImage", arg0)
+	ret0, _ := ret[0].(*lightsail.RegisterContainerImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterContainerImage indicates an expected call of RegisterContainerImage
+func (mr *MockLightsailAPIMockRecorder) RegisterContainerImage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterContainerImage", reflect.TypeOf((*MockLightsailAPI)(nil).RegisterContainerImage), arg0)
+}
+
+// RegisterContainerImageRequest mocks base method
+func (m *MockLightsailAPI) RegisterContainerImageRequest(arg0 *lightsail.RegisterContainerImageInput) (*request.Request, *lightsail.RegisterContainerImageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterContainerImageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.RegisterContainerImageOutput)
+	return ret0, ret1
+}
+
+// RegisterContainerImageRequest indicates an expected call of RegisterContainerImageRequest
+func (mr *MockLightsailAPIMockRecorder) RegisterContainerImageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterContainerImageRequest", reflect.TypeOf((*MockLightsailAPI)(nil).RegisterContainerImageRequest), arg0)
+}
+
+// RegisterContainerImageWithContext mocks base method
+func (m *MockLightsailAPI) RegisterContainerImageWithContext(arg0 context.Context, arg1 *lightsail.RegisterContainerImageInput, arg2 ...request.Option) (*lightsail.RegisterContainerImageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RegisterContainerImageWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.RegisterContainerImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterContainerImageWithContext indicates an expected call of RegisterContainerImageWithContext
+func (mr *MockLightsailAPIMockRecorder) RegisterContainerImageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterContainerImageWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).RegisterContainerImageWithContext), varargs...)
+}
+
 // ReleaseStaticIp mocks base method
 func (m *MockLightsailAPI) ReleaseStaticIp(arg0 *lightsail.ReleaseStaticIpInput) (*lightsail.ReleaseStaticIpOutput, error) {
 	m.ctrl.T.Helper()
@@ -6083,6 +6733,56 @@ func (mr *MockLightsailAPIMockRecorder) UntagResourceWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateContainerService mocks base method
+func (m *MockLightsailAPI) UpdateContainerService(arg0 *lightsail.UpdateContainerServiceInput) (*lightsail.UpdateContainerServiceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContainerService", arg0)
+	ret0, _ := ret[0].(*lightsail.UpdateContainerServiceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContainerService indicates an expected call of UpdateContainerService
+func (mr *MockLightsailAPIMockRecorder) UpdateContainerService(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContainerService", reflect.TypeOf((*MockLightsailAPI)(nil).UpdateContainerService), arg0)
+}
+
+// UpdateContainerServiceRequest mocks base method
+func (m *MockLightsailAPI) UpdateContainerServiceRequest(arg0 *lightsail.UpdateContainerServiceInput) (*request.Request, *lightsail.UpdateContainerServiceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContainerServiceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.UpdateContainerServiceOutput)
+	return ret0, ret1
+}
+
+// UpdateContainerServiceRequest indicates an expected call of UpdateContainerServiceRequest
+func (mr *MockLightsailAPIMockRecorder) UpdateContainerServiceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContainerServiceRequest", reflect.TypeOf((*MockLightsailAPI)(nil).UpdateContainerServiceRequest), arg0)
+}
+
+// UpdateContainerServiceWithContext mocks base method
+func (m *MockLightsailAPI) UpdateContainerServiceWithContext(arg0 context.Context, arg1 *lightsail.UpdateContainerServiceInput, arg2 ...request.Option) (*lightsail.UpdateContainerServiceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateContainerServiceWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.UpdateContainerServiceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContainerServiceWithContext indicates an expected call of UpdateContainerServiceWithContext
+func (mr *MockLightsailAPIMockRecorder) UpdateContainerServiceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContainerServiceWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).UpdateContainerServiceWithContext), varargs...)
 }
 
 // UpdateDistribution mocks base method
