@@ -1383,6 +1383,39 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) ListByoipCidrs(arg0 interface{})
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListByoipCidrs", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).ListByoipCidrs), arg0)
 }
 
+// ListByoipCidrsPages mocks base method
+func (m *MockGlobalAcceleratorAPI) ListByoipCidrsPages(arg0 *globalaccelerator.ListByoipCidrsInput, arg1 func(*globalaccelerator.ListByoipCidrsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListByoipCidrsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListByoipCidrsPages indicates an expected call of ListByoipCidrsPages
+func (mr *MockGlobalAcceleratorAPIMockRecorder) ListByoipCidrsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListByoipCidrsPages", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).ListByoipCidrsPages), arg0, arg1)
+}
+
+// ListByoipCidrsPagesWithContext mocks base method
+func (m *MockGlobalAcceleratorAPI) ListByoipCidrsPagesWithContext(arg0 context.Context, arg1 *globalaccelerator.ListByoipCidrsInput, arg2 func(*globalaccelerator.ListByoipCidrsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListByoipCidrsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListByoipCidrsPagesWithContext indicates an expected call of ListByoipCidrsPagesWithContext
+func (mr *MockGlobalAcceleratorAPIMockRecorder) ListByoipCidrsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListByoipCidrsPagesWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).ListByoipCidrsPagesWithContext), varargs...)
+}
+
 // ListByoipCidrsRequest mocks base method
 func (m *MockGlobalAcceleratorAPI) ListByoipCidrsRequest(arg0 *globalaccelerator.ListByoipCidrsInput) (*request.Request, *globalaccelerator.ListByoipCidrsOutput) {
 	m.ctrl.T.Helper()
