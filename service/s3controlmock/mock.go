@@ -235,6 +235,56 @@ func (mr *MockS3ControlAPIMockRecorder) DeleteAccessPointWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessPointWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteAccessPointWithContext), varargs...)
 }
 
+// DeleteJobTagging mocks base method
+func (m *MockS3ControlAPI) DeleteJobTagging(arg0 *s3control.DeleteJobTaggingInput) (*s3control.DeleteJobTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteJobTagging", arg0)
+	ret0, _ := ret[0].(*s3control.DeleteJobTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteJobTagging indicates an expected call of DeleteJobTagging
+func (mr *MockS3ControlAPIMockRecorder) DeleteJobTagging(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobTagging", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteJobTagging), arg0)
+}
+
+// DeleteJobTaggingRequest mocks base method
+func (m *MockS3ControlAPI) DeleteJobTaggingRequest(arg0 *s3control.DeleteJobTaggingInput) (*request.Request, *s3control.DeleteJobTaggingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteJobTaggingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.DeleteJobTaggingOutput)
+	return ret0, ret1
+}
+
+// DeleteJobTaggingRequest indicates an expected call of DeleteJobTaggingRequest
+func (mr *MockS3ControlAPIMockRecorder) DeleteJobTaggingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobTaggingRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteJobTaggingRequest), arg0)
+}
+
+// DeleteJobTaggingWithContext mocks base method
+func (m *MockS3ControlAPI) DeleteJobTaggingWithContext(arg0 context.Context, arg1 *s3control.DeleteJobTaggingInput, arg2 ...request.Option) (*s3control.DeleteJobTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteJobTaggingWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.DeleteJobTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteJobTaggingWithContext indicates an expected call of DeleteJobTaggingWithContext
+func (mr *MockS3ControlAPIMockRecorder) DeleteJobTaggingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobTaggingWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).DeleteJobTaggingWithContext), varargs...)
+}
+
 // DeletePublicAccessBlock mocks base method
 func (m *MockS3ControlAPI) DeletePublicAccessBlock(arg0 *s3control.DeletePublicAccessBlockInput) (*s3control.DeletePublicAccessBlockOutput, error) {
 	m.ctrl.T.Helper()
@@ -483,6 +533,56 @@ func (mr *MockS3ControlAPIMockRecorder) GetAccessPointWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessPointWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetAccessPointWithContext), varargs...)
+}
+
+// GetJobTagging mocks base method
+func (m *MockS3ControlAPI) GetJobTagging(arg0 *s3control.GetJobTaggingInput) (*s3control.GetJobTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJobTagging", arg0)
+	ret0, _ := ret[0].(*s3control.GetJobTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJobTagging indicates an expected call of GetJobTagging
+func (mr *MockS3ControlAPIMockRecorder) GetJobTagging(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobTagging", reflect.TypeOf((*MockS3ControlAPI)(nil).GetJobTagging), arg0)
+}
+
+// GetJobTaggingRequest mocks base method
+func (m *MockS3ControlAPI) GetJobTaggingRequest(arg0 *s3control.GetJobTaggingInput) (*request.Request, *s3control.GetJobTaggingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJobTaggingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.GetJobTaggingOutput)
+	return ret0, ret1
+}
+
+// GetJobTaggingRequest indicates an expected call of GetJobTaggingRequest
+func (mr *MockS3ControlAPIMockRecorder) GetJobTaggingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobTaggingRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).GetJobTaggingRequest), arg0)
+}
+
+// GetJobTaggingWithContext mocks base method
+func (m *MockS3ControlAPI) GetJobTaggingWithContext(arg0 context.Context, arg1 *s3control.GetJobTaggingInput, arg2 ...request.Option) (*s3control.GetJobTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetJobTaggingWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.GetJobTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJobTaggingWithContext indicates an expected call of GetJobTaggingWithContext
+func (mr *MockS3ControlAPIMockRecorder) GetJobTaggingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobTaggingWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetJobTaggingWithContext), varargs...)
 }
 
 // GetPublicAccessBlock mocks base method
@@ -749,6 +849,56 @@ func (mr *MockS3ControlAPIMockRecorder) PutAccessPointPolicyWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccessPointPolicyWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).PutAccessPointPolicyWithContext), varargs...)
+}
+
+// PutJobTagging mocks base method
+func (m *MockS3ControlAPI) PutJobTagging(arg0 *s3control.PutJobTaggingInput) (*s3control.PutJobTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutJobTagging", arg0)
+	ret0, _ := ret[0].(*s3control.PutJobTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutJobTagging indicates an expected call of PutJobTagging
+func (mr *MockS3ControlAPIMockRecorder) PutJobTagging(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutJobTagging", reflect.TypeOf((*MockS3ControlAPI)(nil).PutJobTagging), arg0)
+}
+
+// PutJobTaggingRequest mocks base method
+func (m *MockS3ControlAPI) PutJobTaggingRequest(arg0 *s3control.PutJobTaggingInput) (*request.Request, *s3control.PutJobTaggingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutJobTaggingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.PutJobTaggingOutput)
+	return ret0, ret1
+}
+
+// PutJobTaggingRequest indicates an expected call of PutJobTaggingRequest
+func (mr *MockS3ControlAPIMockRecorder) PutJobTaggingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutJobTaggingRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).PutJobTaggingRequest), arg0)
+}
+
+// PutJobTaggingWithContext mocks base method
+func (m *MockS3ControlAPI) PutJobTaggingWithContext(arg0 context.Context, arg1 *s3control.PutJobTaggingInput, arg2 ...request.Option) (*s3control.PutJobTaggingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutJobTaggingWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.PutJobTaggingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutJobTaggingWithContext indicates an expected call of PutJobTaggingWithContext
+func (mr *MockS3ControlAPIMockRecorder) PutJobTaggingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutJobTaggingWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).PutJobTaggingWithContext), varargs...)
 }
 
 // PutPublicAccessBlock mocks base method
