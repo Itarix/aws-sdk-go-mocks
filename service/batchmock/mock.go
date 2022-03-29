@@ -717,6 +717,56 @@ func (mr *MockBatchAPIMockRecorder) ListJobsWithContext(arg0, arg1 interface{}, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsWithContext", reflect.TypeOf((*MockBatchAPI)(nil).ListJobsWithContext), varargs...)
 }
 
+// ListTagsForResource mocks base method
+func (m *MockBatchAPI) ListTagsForResource(arg0 *batch.ListTagsForResourceInput) (*batch.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*batch.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockBatchAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockBatchAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockBatchAPI) ListTagsForResourceRequest(arg0 *batch.ListTagsForResourceInput) (*request.Request, *batch.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*batch.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockBatchAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockBatchAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockBatchAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *batch.ListTagsForResourceInput, arg2 ...request.Option) (*batch.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*batch.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockBatchAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockBatchAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
 // RegisterJobDefinition mocks base method
 func (m *MockBatchAPI) RegisterJobDefinition(arg0 *batch.RegisterJobDefinitionInput) (*batch.RegisterJobDefinitionOutput, error) {
 	m.ctrl.T.Helper()
@@ -817,6 +867,56 @@ func (mr *MockBatchAPIMockRecorder) SubmitJobWithContext(arg0, arg1 interface{},
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SubmitJobWithContext", reflect.TypeOf((*MockBatchAPI)(nil).SubmitJobWithContext), varargs...)
 }
 
+// TagResource mocks base method
+func (m *MockBatchAPI) TagResource(arg0 *batch.TagResourceInput) (*batch.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*batch.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockBatchAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockBatchAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockBatchAPI) TagResourceRequest(arg0 *batch.TagResourceInput) (*request.Request, *batch.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*batch.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockBatchAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockBatchAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockBatchAPI) TagResourceWithContext(arg0 context.Context, arg1 *batch.TagResourceInput, arg2 ...request.Option) (*batch.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*batch.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockBatchAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockBatchAPI)(nil).TagResourceWithContext), varargs...)
+}
+
 // TerminateJob mocks base method
 func (m *MockBatchAPI) TerminateJob(arg0 *batch.TerminateJobInput) (*batch.TerminateJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -865,6 +965,56 @@ func (mr *MockBatchAPIMockRecorder) TerminateJobWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateJobWithContext", reflect.TypeOf((*MockBatchAPI)(nil).TerminateJobWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockBatchAPI) UntagResource(arg0 *batch.UntagResourceInput) (*batch.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*batch.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockBatchAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockBatchAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockBatchAPI) UntagResourceRequest(arg0 *batch.UntagResourceInput) (*request.Request, *batch.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*batch.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockBatchAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockBatchAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockBatchAPI) UntagResourceWithContext(arg0 context.Context, arg1 *batch.UntagResourceInput, arg2 ...request.Option) (*batch.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*batch.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockBatchAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockBatchAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
 // UpdateComputeEnvironment mocks base method
