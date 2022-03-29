@@ -635,6 +635,56 @@ func (mr *MockRoute53ResolverAPIMockRecorder) DisassociateResolverRuleWithContex
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateResolverRuleWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DisassociateResolverRuleWithContext), varargs...)
 }
 
+// GetResolverDnssecConfig mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverDnssecConfig(arg0 *route53resolver.GetResolverDnssecConfigInput) (*route53resolver.GetResolverDnssecConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResolverDnssecConfig", arg0)
+	ret0, _ := ret[0].(*route53resolver.GetResolverDnssecConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResolverDnssecConfig indicates an expected call of GetResolverDnssecConfig
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverDnssecConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverDnssecConfig", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverDnssecConfig), arg0)
+}
+
+// GetResolverDnssecConfigRequest mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverDnssecConfigRequest(arg0 *route53resolver.GetResolverDnssecConfigInput) (*request.Request, *route53resolver.GetResolverDnssecConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResolverDnssecConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.GetResolverDnssecConfigOutput)
+	return ret0, ret1
+}
+
+// GetResolverDnssecConfigRequest indicates an expected call of GetResolverDnssecConfigRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverDnssecConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverDnssecConfigRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverDnssecConfigRequest), arg0)
+}
+
+// GetResolverDnssecConfigWithContext mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverDnssecConfigWithContext(arg0 context.Context, arg1 *route53resolver.GetResolverDnssecConfigInput, arg2 ...request.Option) (*route53resolver.GetResolverDnssecConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResolverDnssecConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.GetResolverDnssecConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResolverDnssecConfigWithContext indicates an expected call of GetResolverDnssecConfigWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverDnssecConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverDnssecConfigWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverDnssecConfigWithContext), varargs...)
+}
+
 // GetResolverEndpoint mocks base method
 func (m *MockRoute53ResolverAPI) GetResolverEndpoint(arg0 *route53resolver.GetResolverEndpointInput) (*route53resolver.GetResolverEndpointOutput, error) {
 	m.ctrl.T.Helper()
@@ -983,6 +1033,89 @@ func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverRuleWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverRuleWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverRuleWithContext), varargs...)
+}
+
+// ListResolverDnssecConfigs mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverDnssecConfigs(arg0 *route53resolver.ListResolverDnssecConfigsInput) (*route53resolver.ListResolverDnssecConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResolverDnssecConfigs", arg0)
+	ret0, _ := ret[0].(*route53resolver.ListResolverDnssecConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResolverDnssecConfigs indicates an expected call of ListResolverDnssecConfigs
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverDnssecConfigs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverDnssecConfigs", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverDnssecConfigs), arg0)
+}
+
+// ListResolverDnssecConfigsPages mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverDnssecConfigsPages(arg0 *route53resolver.ListResolverDnssecConfigsInput, arg1 func(*route53resolver.ListResolverDnssecConfigsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResolverDnssecConfigsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResolverDnssecConfigsPages indicates an expected call of ListResolverDnssecConfigsPages
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverDnssecConfigsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverDnssecConfigsPages", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverDnssecConfigsPages), arg0, arg1)
+}
+
+// ListResolverDnssecConfigsPagesWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverDnssecConfigsPagesWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverDnssecConfigsInput, arg2 func(*route53resolver.ListResolverDnssecConfigsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResolverDnssecConfigsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResolverDnssecConfigsPagesWithContext indicates an expected call of ListResolverDnssecConfigsPagesWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverDnssecConfigsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverDnssecConfigsPagesWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverDnssecConfigsPagesWithContext), varargs...)
+}
+
+// ListResolverDnssecConfigsRequest mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverDnssecConfigsRequest(arg0 *route53resolver.ListResolverDnssecConfigsInput) (*request.Request, *route53resolver.ListResolverDnssecConfigsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResolverDnssecConfigsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.ListResolverDnssecConfigsOutput)
+	return ret0, ret1
+}
+
+// ListResolverDnssecConfigsRequest indicates an expected call of ListResolverDnssecConfigsRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverDnssecConfigsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverDnssecConfigsRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverDnssecConfigsRequest), arg0)
+}
+
+// ListResolverDnssecConfigsWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverDnssecConfigsWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverDnssecConfigsInput, arg2 ...request.Option) (*route53resolver.ListResolverDnssecConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResolverDnssecConfigsWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.ListResolverDnssecConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResolverDnssecConfigsWithContext indicates an expected call of ListResolverDnssecConfigsWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverDnssecConfigsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverDnssecConfigsWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverDnssecConfigsWithContext), varargs...)
 }
 
 // ListResolverEndpointIpAddresses mocks base method
@@ -1764,6 +1897,56 @@ func (mr *MockRoute53ResolverAPIMockRecorder) UntagResourceWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateResolverDnssecConfig mocks base method
+func (m *MockRoute53ResolverAPI) UpdateResolverDnssecConfig(arg0 *route53resolver.UpdateResolverDnssecConfigInput) (*route53resolver.UpdateResolverDnssecConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateResolverDnssecConfig", arg0)
+	ret0, _ := ret[0].(*route53resolver.UpdateResolverDnssecConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateResolverDnssecConfig indicates an expected call of UpdateResolverDnssecConfig
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateResolverDnssecConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResolverDnssecConfig", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateResolverDnssecConfig), arg0)
+}
+
+// UpdateResolverDnssecConfigRequest mocks base method
+func (m *MockRoute53ResolverAPI) UpdateResolverDnssecConfigRequest(arg0 *route53resolver.UpdateResolverDnssecConfigInput) (*request.Request, *route53resolver.UpdateResolverDnssecConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateResolverDnssecConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.UpdateResolverDnssecConfigOutput)
+	return ret0, ret1
+}
+
+// UpdateResolverDnssecConfigRequest indicates an expected call of UpdateResolverDnssecConfigRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateResolverDnssecConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResolverDnssecConfigRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateResolverDnssecConfigRequest), arg0)
+}
+
+// UpdateResolverDnssecConfigWithContext mocks base method
+func (m *MockRoute53ResolverAPI) UpdateResolverDnssecConfigWithContext(arg0 context.Context, arg1 *route53resolver.UpdateResolverDnssecConfigInput, arg2 ...request.Option) (*route53resolver.UpdateResolverDnssecConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateResolverDnssecConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.UpdateResolverDnssecConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateResolverDnssecConfigWithContext indicates an expected call of UpdateResolverDnssecConfigWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateResolverDnssecConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResolverDnssecConfigWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateResolverDnssecConfigWithContext), varargs...)
 }
 
 // UpdateResolverEndpoint mocks base method

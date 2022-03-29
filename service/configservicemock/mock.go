@@ -3384,6 +3384,56 @@ func (mr *MockConfigServiceAPIMockRecorder) PutEvaluationsWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEvaluationsWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutEvaluationsWithContext), varargs...)
 }
 
+// PutExternalEvaluation mocks base method
+func (m *MockConfigServiceAPI) PutExternalEvaluation(arg0 *configservice.PutExternalEvaluationInput) (*configservice.PutExternalEvaluationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutExternalEvaluation", arg0)
+	ret0, _ := ret[0].(*configservice.PutExternalEvaluationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutExternalEvaluation indicates an expected call of PutExternalEvaluation
+func (mr *MockConfigServiceAPIMockRecorder) PutExternalEvaluation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutExternalEvaluation", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutExternalEvaluation), arg0)
+}
+
+// PutExternalEvaluationRequest mocks base method
+func (m *MockConfigServiceAPI) PutExternalEvaluationRequest(arg0 *configservice.PutExternalEvaluationInput) (*request.Request, *configservice.PutExternalEvaluationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutExternalEvaluationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.PutExternalEvaluationOutput)
+	return ret0, ret1
+}
+
+// PutExternalEvaluationRequest indicates an expected call of PutExternalEvaluationRequest
+func (mr *MockConfigServiceAPIMockRecorder) PutExternalEvaluationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutExternalEvaluationRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutExternalEvaluationRequest), arg0)
+}
+
+// PutExternalEvaluationWithContext mocks base method
+func (m *MockConfigServiceAPI) PutExternalEvaluationWithContext(arg0 context.Context, arg1 *configservice.PutExternalEvaluationInput, arg2 ...request.Option) (*configservice.PutExternalEvaluationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutExternalEvaluationWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.PutExternalEvaluationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutExternalEvaluationWithContext indicates an expected call of PutExternalEvaluationWithContext
+func (mr *MockConfigServiceAPIMockRecorder) PutExternalEvaluationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutExternalEvaluationWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).PutExternalEvaluationWithContext), varargs...)
+}
+
 // PutOrganizationConfigRule mocks base method
 func (m *MockConfigServiceAPI) PutOrganizationConfigRule(arg0 *configservice.PutOrganizationConfigRuleInput) (*configservice.PutOrganizationConfigRuleOutput, error) {
 	m.ctrl.T.Helper()

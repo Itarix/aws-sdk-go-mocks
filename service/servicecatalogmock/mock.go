@@ -1465,6 +1465,89 @@ func (mr *MockServiceCatalogAPIMockRecorder) DescribePortfolioShareStatusWithCon
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePortfolioShareStatusWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribePortfolioShareStatusWithContext), varargs...)
 }
 
+// DescribePortfolioShares mocks base method
+func (m *MockServiceCatalogAPI) DescribePortfolioShares(arg0 *servicecatalog.DescribePortfolioSharesInput) (*servicecatalog.DescribePortfolioSharesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePortfolioShares", arg0)
+	ret0, _ := ret[0].(*servicecatalog.DescribePortfolioSharesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePortfolioShares indicates an expected call of DescribePortfolioShares
+func (mr *MockServiceCatalogAPIMockRecorder) DescribePortfolioShares(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePortfolioShares", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribePortfolioShares), arg0)
+}
+
+// DescribePortfolioSharesPages mocks base method
+func (m *MockServiceCatalogAPI) DescribePortfolioSharesPages(arg0 *servicecatalog.DescribePortfolioSharesInput, arg1 func(*servicecatalog.DescribePortfolioSharesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePortfolioSharesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribePortfolioSharesPages indicates an expected call of DescribePortfolioSharesPages
+func (mr *MockServiceCatalogAPIMockRecorder) DescribePortfolioSharesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePortfolioSharesPages", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribePortfolioSharesPages), arg0, arg1)
+}
+
+// DescribePortfolioSharesPagesWithContext mocks base method
+func (m *MockServiceCatalogAPI) DescribePortfolioSharesPagesWithContext(arg0 context.Context, arg1 *servicecatalog.DescribePortfolioSharesInput, arg2 func(*servicecatalog.DescribePortfolioSharesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribePortfolioSharesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribePortfolioSharesPagesWithContext indicates an expected call of DescribePortfolioSharesPagesWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) DescribePortfolioSharesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePortfolioSharesPagesWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribePortfolioSharesPagesWithContext), varargs...)
+}
+
+// DescribePortfolioSharesRequest mocks base method
+func (m *MockServiceCatalogAPI) DescribePortfolioSharesRequest(arg0 *servicecatalog.DescribePortfolioSharesInput) (*request.Request, *servicecatalog.DescribePortfolioSharesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePortfolioSharesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.DescribePortfolioSharesOutput)
+	return ret0, ret1
+}
+
+// DescribePortfolioSharesRequest indicates an expected call of DescribePortfolioSharesRequest
+func (mr *MockServiceCatalogAPIMockRecorder) DescribePortfolioSharesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePortfolioSharesRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribePortfolioSharesRequest), arg0)
+}
+
+// DescribePortfolioSharesWithContext mocks base method
+func (m *MockServiceCatalogAPI) DescribePortfolioSharesWithContext(arg0 context.Context, arg1 *servicecatalog.DescribePortfolioSharesInput, arg2 ...request.Option) (*servicecatalog.DescribePortfolioSharesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribePortfolioSharesWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.DescribePortfolioSharesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePortfolioSharesWithContext indicates an expected call of DescribePortfolioSharesWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) DescribePortfolioSharesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePortfolioSharesWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).DescribePortfolioSharesWithContext), varargs...)
+}
+
 // DescribePortfolioWithContext mocks base method
 func (m *MockServiceCatalogAPI) DescribePortfolioWithContext(arg0 context.Context, arg1 *servicecatalog.DescribePortfolioInput, arg2 ...request.Option) (*servicecatalog.DescribePortfolioOutput, error) {
 	m.ctrl.T.Helper()
@@ -4557,6 +4640,56 @@ func (m *MockServiceCatalogAPI) UpdatePortfolioRequest(arg0 *servicecatalog.Upda
 func (mr *MockServiceCatalogAPIMockRecorder) UpdatePortfolioRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePortfolioRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).UpdatePortfolioRequest), arg0)
+}
+
+// UpdatePortfolioShare mocks base method
+func (m *MockServiceCatalogAPI) UpdatePortfolioShare(arg0 *servicecatalog.UpdatePortfolioShareInput) (*servicecatalog.UpdatePortfolioShareOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePortfolioShare", arg0)
+	ret0, _ := ret[0].(*servicecatalog.UpdatePortfolioShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePortfolioShare indicates an expected call of UpdatePortfolioShare
+func (mr *MockServiceCatalogAPIMockRecorder) UpdatePortfolioShare(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePortfolioShare", reflect.TypeOf((*MockServiceCatalogAPI)(nil).UpdatePortfolioShare), arg0)
+}
+
+// UpdatePortfolioShareRequest mocks base method
+func (m *MockServiceCatalogAPI) UpdatePortfolioShareRequest(arg0 *servicecatalog.UpdatePortfolioShareInput) (*request.Request, *servicecatalog.UpdatePortfolioShareOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePortfolioShareRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.UpdatePortfolioShareOutput)
+	return ret0, ret1
+}
+
+// UpdatePortfolioShareRequest indicates an expected call of UpdatePortfolioShareRequest
+func (mr *MockServiceCatalogAPIMockRecorder) UpdatePortfolioShareRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePortfolioShareRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).UpdatePortfolioShareRequest), arg0)
+}
+
+// UpdatePortfolioShareWithContext mocks base method
+func (m *MockServiceCatalogAPI) UpdatePortfolioShareWithContext(arg0 context.Context, arg1 *servicecatalog.UpdatePortfolioShareInput, arg2 ...request.Option) (*servicecatalog.UpdatePortfolioShareOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdatePortfolioShareWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.UpdatePortfolioShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePortfolioShareWithContext indicates an expected call of UpdatePortfolioShareWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) UpdatePortfolioShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePortfolioShareWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).UpdatePortfolioShareWithContext), varargs...)
 }
 
 // UpdatePortfolioWithContext mocks base method
