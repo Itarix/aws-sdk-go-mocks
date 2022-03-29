@@ -485,6 +485,56 @@ func (mr *MockEMRAPIMockRecorder) DescribeJobFlowsWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobFlowsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DescribeJobFlowsWithContext), varargs...)
 }
 
+// DescribeNotebookExecution mocks base method
+func (m *MockEMRAPI) DescribeNotebookExecution(arg0 *emr.DescribeNotebookExecutionInput) (*emr.DescribeNotebookExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeNotebookExecution", arg0)
+	ret0, _ := ret[0].(*emr.DescribeNotebookExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeNotebookExecution indicates an expected call of DescribeNotebookExecution
+func (mr *MockEMRAPIMockRecorder) DescribeNotebookExecution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNotebookExecution", reflect.TypeOf((*MockEMRAPI)(nil).DescribeNotebookExecution), arg0)
+}
+
+// DescribeNotebookExecutionRequest mocks base method
+func (m *MockEMRAPI) DescribeNotebookExecutionRequest(arg0 *emr.DescribeNotebookExecutionInput) (*request.Request, *emr.DescribeNotebookExecutionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeNotebookExecutionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.DescribeNotebookExecutionOutput)
+	return ret0, ret1
+}
+
+// DescribeNotebookExecutionRequest indicates an expected call of DescribeNotebookExecutionRequest
+func (mr *MockEMRAPIMockRecorder) DescribeNotebookExecutionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNotebookExecutionRequest", reflect.TypeOf((*MockEMRAPI)(nil).DescribeNotebookExecutionRequest), arg0)
+}
+
+// DescribeNotebookExecutionWithContext mocks base method
+func (m *MockEMRAPI) DescribeNotebookExecutionWithContext(arg0 context.Context, arg1 *emr.DescribeNotebookExecutionInput, arg2 ...request.Option) (*emr.DescribeNotebookExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeNotebookExecutionWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.DescribeNotebookExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeNotebookExecutionWithContext indicates an expected call of DescribeNotebookExecutionWithContext
+func (mr *MockEMRAPIMockRecorder) DescribeNotebookExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNotebookExecutionWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DescribeNotebookExecutionWithContext), varargs...)
+}
+
 // DescribeSecurityConfiguration mocks base method
 func (m *MockEMRAPI) DescribeSecurityConfiguration(arg0 *emr.DescribeSecurityConfigurationInput) (*emr.DescribeSecurityConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -1098,6 +1148,89 @@ func (mr *MockEMRAPIMockRecorder) ListInstancesWithContext(arg0, arg1 interface{
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInstancesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListInstancesWithContext), varargs...)
+}
+
+// ListNotebookExecutions mocks base method
+func (m *MockEMRAPI) ListNotebookExecutions(arg0 *emr.ListNotebookExecutionsInput) (*emr.ListNotebookExecutionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListNotebookExecutions", arg0)
+	ret0, _ := ret[0].(*emr.ListNotebookExecutionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListNotebookExecutions indicates an expected call of ListNotebookExecutions
+func (mr *MockEMRAPIMockRecorder) ListNotebookExecutions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookExecutions", reflect.TypeOf((*MockEMRAPI)(nil).ListNotebookExecutions), arg0)
+}
+
+// ListNotebookExecutionsPages mocks base method
+func (m *MockEMRAPI) ListNotebookExecutionsPages(arg0 *emr.ListNotebookExecutionsInput, arg1 func(*emr.ListNotebookExecutionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListNotebookExecutionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListNotebookExecutionsPages indicates an expected call of ListNotebookExecutionsPages
+func (mr *MockEMRAPIMockRecorder) ListNotebookExecutionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookExecutionsPages", reflect.TypeOf((*MockEMRAPI)(nil).ListNotebookExecutionsPages), arg0, arg1)
+}
+
+// ListNotebookExecutionsPagesWithContext mocks base method
+func (m *MockEMRAPI) ListNotebookExecutionsPagesWithContext(arg0 context.Context, arg1 *emr.ListNotebookExecutionsInput, arg2 func(*emr.ListNotebookExecutionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListNotebookExecutionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListNotebookExecutionsPagesWithContext indicates an expected call of ListNotebookExecutionsPagesWithContext
+func (mr *MockEMRAPIMockRecorder) ListNotebookExecutionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookExecutionsPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListNotebookExecutionsPagesWithContext), varargs...)
+}
+
+// ListNotebookExecutionsRequest mocks base method
+func (m *MockEMRAPI) ListNotebookExecutionsRequest(arg0 *emr.ListNotebookExecutionsInput) (*request.Request, *emr.ListNotebookExecutionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListNotebookExecutionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.ListNotebookExecutionsOutput)
+	return ret0, ret1
+}
+
+// ListNotebookExecutionsRequest indicates an expected call of ListNotebookExecutionsRequest
+func (mr *MockEMRAPIMockRecorder) ListNotebookExecutionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookExecutionsRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListNotebookExecutionsRequest), arg0)
+}
+
+// ListNotebookExecutionsWithContext mocks base method
+func (m *MockEMRAPI) ListNotebookExecutionsWithContext(arg0 context.Context, arg1 *emr.ListNotebookExecutionsInput, arg2 ...request.Option) (*emr.ListNotebookExecutionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListNotebookExecutionsWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.ListNotebookExecutionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListNotebookExecutionsWithContext indicates an expected call of ListNotebookExecutionsWithContext
+func (mr *MockEMRAPIMockRecorder) ListNotebookExecutionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookExecutionsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListNotebookExecutionsWithContext), varargs...)
 }
 
 // ListSecurityConfigurations mocks base method
@@ -1864,6 +1997,106 @@ func (mr *MockEMRAPIMockRecorder) SetVisibleToAllUsersWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetVisibleToAllUsersWithContext", reflect.TypeOf((*MockEMRAPI)(nil).SetVisibleToAllUsersWithContext), varargs...)
+}
+
+// StartNotebookExecution mocks base method
+func (m *MockEMRAPI) StartNotebookExecution(arg0 *emr.StartNotebookExecutionInput) (*emr.StartNotebookExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartNotebookExecution", arg0)
+	ret0, _ := ret[0].(*emr.StartNotebookExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartNotebookExecution indicates an expected call of StartNotebookExecution
+func (mr *MockEMRAPIMockRecorder) StartNotebookExecution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartNotebookExecution", reflect.TypeOf((*MockEMRAPI)(nil).StartNotebookExecution), arg0)
+}
+
+// StartNotebookExecutionRequest mocks base method
+func (m *MockEMRAPI) StartNotebookExecutionRequest(arg0 *emr.StartNotebookExecutionInput) (*request.Request, *emr.StartNotebookExecutionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartNotebookExecutionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.StartNotebookExecutionOutput)
+	return ret0, ret1
+}
+
+// StartNotebookExecutionRequest indicates an expected call of StartNotebookExecutionRequest
+func (mr *MockEMRAPIMockRecorder) StartNotebookExecutionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartNotebookExecutionRequest", reflect.TypeOf((*MockEMRAPI)(nil).StartNotebookExecutionRequest), arg0)
+}
+
+// StartNotebookExecutionWithContext mocks base method
+func (m *MockEMRAPI) StartNotebookExecutionWithContext(arg0 context.Context, arg1 *emr.StartNotebookExecutionInput, arg2 ...request.Option) (*emr.StartNotebookExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartNotebookExecutionWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.StartNotebookExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartNotebookExecutionWithContext indicates an expected call of StartNotebookExecutionWithContext
+func (mr *MockEMRAPIMockRecorder) StartNotebookExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartNotebookExecutionWithContext", reflect.TypeOf((*MockEMRAPI)(nil).StartNotebookExecutionWithContext), varargs...)
+}
+
+// StopNotebookExecution mocks base method
+func (m *MockEMRAPI) StopNotebookExecution(arg0 *emr.StopNotebookExecutionInput) (*emr.StopNotebookExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopNotebookExecution", arg0)
+	ret0, _ := ret[0].(*emr.StopNotebookExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopNotebookExecution indicates an expected call of StopNotebookExecution
+func (mr *MockEMRAPIMockRecorder) StopNotebookExecution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopNotebookExecution", reflect.TypeOf((*MockEMRAPI)(nil).StopNotebookExecution), arg0)
+}
+
+// StopNotebookExecutionRequest mocks base method
+func (m *MockEMRAPI) StopNotebookExecutionRequest(arg0 *emr.StopNotebookExecutionInput) (*request.Request, *emr.StopNotebookExecutionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopNotebookExecutionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.StopNotebookExecutionOutput)
+	return ret0, ret1
+}
+
+// StopNotebookExecutionRequest indicates an expected call of StopNotebookExecutionRequest
+func (mr *MockEMRAPIMockRecorder) StopNotebookExecutionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopNotebookExecutionRequest", reflect.TypeOf((*MockEMRAPI)(nil).StopNotebookExecutionRequest), arg0)
+}
+
+// StopNotebookExecutionWithContext mocks base method
+func (m *MockEMRAPI) StopNotebookExecutionWithContext(arg0 context.Context, arg1 *emr.StopNotebookExecutionInput, arg2 ...request.Option) (*emr.StopNotebookExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopNotebookExecutionWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.StopNotebookExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopNotebookExecutionWithContext indicates an expected call of StopNotebookExecutionWithContext
+func (mr *MockEMRAPIMockRecorder) StopNotebookExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopNotebookExecutionWithContext", reflect.TypeOf((*MockEMRAPI)(nil).StopNotebookExecutionWithContext), varargs...)
 }
 
 // TerminateJobFlows mocks base method

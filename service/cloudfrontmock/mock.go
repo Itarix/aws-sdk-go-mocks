@@ -385,6 +385,56 @@ func (mr *MockCloudFrontAPIMockRecorder) CreateInvalidationWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateInvalidationWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateInvalidationWithContext), varargs...)
 }
 
+// CreateMonitoringSubscription mocks base method
+func (m *MockCloudFrontAPI) CreateMonitoringSubscription(arg0 *cloudfront.CreateMonitoringSubscriptionInput) (*cloudfront.CreateMonitoringSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMonitoringSubscription", arg0)
+	ret0, _ := ret[0].(*cloudfront.CreateMonitoringSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMonitoringSubscription indicates an expected call of CreateMonitoringSubscription
+func (mr *MockCloudFrontAPIMockRecorder) CreateMonitoringSubscription(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMonitoringSubscription", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateMonitoringSubscription), arg0)
+}
+
+// CreateMonitoringSubscriptionRequest mocks base method
+func (m *MockCloudFrontAPI) CreateMonitoringSubscriptionRequest(arg0 *cloudfront.CreateMonitoringSubscriptionInput) (*request.Request, *cloudfront.CreateMonitoringSubscriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMonitoringSubscriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.CreateMonitoringSubscriptionOutput)
+	return ret0, ret1
+}
+
+// CreateMonitoringSubscriptionRequest indicates an expected call of CreateMonitoringSubscriptionRequest
+func (mr *MockCloudFrontAPIMockRecorder) CreateMonitoringSubscriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMonitoringSubscriptionRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateMonitoringSubscriptionRequest), arg0)
+}
+
+// CreateMonitoringSubscriptionWithContext mocks base method
+func (m *MockCloudFrontAPI) CreateMonitoringSubscriptionWithContext(arg0 context.Context, arg1 *cloudfront.CreateMonitoringSubscriptionInput, arg2 ...request.Option) (*cloudfront.CreateMonitoringSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateMonitoringSubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.CreateMonitoringSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMonitoringSubscriptionWithContext indicates an expected call of CreateMonitoringSubscriptionWithContext
+func (mr *MockCloudFrontAPIMockRecorder) CreateMonitoringSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMonitoringSubscriptionWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateMonitoringSubscriptionWithContext), varargs...)
+}
+
 // CreateOriginRequestPolicy mocks base method
 func (m *MockCloudFrontAPI) CreateOriginRequestPolicy(arg0 *cloudfront.CreateOriginRequestPolicyInput) (*cloudfront.CreateOriginRequestPolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -833,6 +883,56 @@ func (mr *MockCloudFrontAPIMockRecorder) DeleteFieldLevelEncryptionProfileWithCo
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFieldLevelEncryptionProfileWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteFieldLevelEncryptionProfileWithContext), varargs...)
+}
+
+// DeleteMonitoringSubscription mocks base method
+func (m *MockCloudFrontAPI) DeleteMonitoringSubscription(arg0 *cloudfront.DeleteMonitoringSubscriptionInput) (*cloudfront.DeleteMonitoringSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMonitoringSubscription", arg0)
+	ret0, _ := ret[0].(*cloudfront.DeleteMonitoringSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMonitoringSubscription indicates an expected call of DeleteMonitoringSubscription
+func (mr *MockCloudFrontAPIMockRecorder) DeleteMonitoringSubscription(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMonitoringSubscription", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteMonitoringSubscription), arg0)
+}
+
+// DeleteMonitoringSubscriptionRequest mocks base method
+func (m *MockCloudFrontAPI) DeleteMonitoringSubscriptionRequest(arg0 *cloudfront.DeleteMonitoringSubscriptionInput) (*request.Request, *cloudfront.DeleteMonitoringSubscriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMonitoringSubscriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.DeleteMonitoringSubscriptionOutput)
+	return ret0, ret1
+}
+
+// DeleteMonitoringSubscriptionRequest indicates an expected call of DeleteMonitoringSubscriptionRequest
+func (mr *MockCloudFrontAPIMockRecorder) DeleteMonitoringSubscriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMonitoringSubscriptionRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteMonitoringSubscriptionRequest), arg0)
+}
+
+// DeleteMonitoringSubscriptionWithContext mocks base method
+func (m *MockCloudFrontAPI) DeleteMonitoringSubscriptionWithContext(arg0 context.Context, arg1 *cloudfront.DeleteMonitoringSubscriptionInput, arg2 ...request.Option) (*cloudfront.DeleteMonitoringSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteMonitoringSubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.DeleteMonitoringSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMonitoringSubscriptionWithContext indicates an expected call of DeleteMonitoringSubscriptionWithContext
+func (mr *MockCloudFrontAPIMockRecorder) DeleteMonitoringSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMonitoringSubscriptionWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteMonitoringSubscriptionWithContext), varargs...)
 }
 
 // DeleteOriginRequestPolicy mocks base method
@@ -1533,6 +1633,56 @@ func (mr *MockCloudFrontAPIMockRecorder) GetInvalidationWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInvalidationWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetInvalidationWithContext), varargs...)
+}
+
+// GetMonitoringSubscription mocks base method
+func (m *MockCloudFrontAPI) GetMonitoringSubscription(arg0 *cloudfront.GetMonitoringSubscriptionInput) (*cloudfront.GetMonitoringSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMonitoringSubscription", arg0)
+	ret0, _ := ret[0].(*cloudfront.GetMonitoringSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMonitoringSubscription indicates an expected call of GetMonitoringSubscription
+func (mr *MockCloudFrontAPIMockRecorder) GetMonitoringSubscription(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMonitoringSubscription", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetMonitoringSubscription), arg0)
+}
+
+// GetMonitoringSubscriptionRequest mocks base method
+func (m *MockCloudFrontAPI) GetMonitoringSubscriptionRequest(arg0 *cloudfront.GetMonitoringSubscriptionInput) (*request.Request, *cloudfront.GetMonitoringSubscriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMonitoringSubscriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.GetMonitoringSubscriptionOutput)
+	return ret0, ret1
+}
+
+// GetMonitoringSubscriptionRequest indicates an expected call of GetMonitoringSubscriptionRequest
+func (mr *MockCloudFrontAPIMockRecorder) GetMonitoringSubscriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMonitoringSubscriptionRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetMonitoringSubscriptionRequest), arg0)
+}
+
+// GetMonitoringSubscriptionWithContext mocks base method
+func (m *MockCloudFrontAPI) GetMonitoringSubscriptionWithContext(arg0 context.Context, arg1 *cloudfront.GetMonitoringSubscriptionInput, arg2 ...request.Option) (*cloudfront.GetMonitoringSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMonitoringSubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.GetMonitoringSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMonitoringSubscriptionWithContext indicates an expected call of GetMonitoringSubscriptionWithContext
+func (mr *MockCloudFrontAPIMockRecorder) GetMonitoringSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMonitoringSubscriptionWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetMonitoringSubscriptionWithContext), varargs...)
 }
 
 // GetOriginRequestPolicy mocks base method
