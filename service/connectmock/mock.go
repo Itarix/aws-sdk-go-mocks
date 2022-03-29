@@ -35,6 +35,156 @@ func (m *MockConnectAPI) EXPECT() *MockConnectAPIMockRecorder {
 	return m.recorder
 }
 
+// AssociateRoutingProfileQueues mocks base method
+func (m *MockConnectAPI) AssociateRoutingProfileQueues(arg0 *connect.AssociateRoutingProfileQueuesInput) (*connect.AssociateRoutingProfileQueuesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateRoutingProfileQueues", arg0)
+	ret0, _ := ret[0].(*connect.AssociateRoutingProfileQueuesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateRoutingProfileQueues indicates an expected call of AssociateRoutingProfileQueues
+func (mr *MockConnectAPIMockRecorder) AssociateRoutingProfileQueues(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateRoutingProfileQueues", reflect.TypeOf((*MockConnectAPI)(nil).AssociateRoutingProfileQueues), arg0)
+}
+
+// AssociateRoutingProfileQueuesRequest mocks base method
+func (m *MockConnectAPI) AssociateRoutingProfileQueuesRequest(arg0 *connect.AssociateRoutingProfileQueuesInput) (*request.Request, *connect.AssociateRoutingProfileQueuesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateRoutingProfileQueuesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.AssociateRoutingProfileQueuesOutput)
+	return ret0, ret1
+}
+
+// AssociateRoutingProfileQueuesRequest indicates an expected call of AssociateRoutingProfileQueuesRequest
+func (mr *MockConnectAPIMockRecorder) AssociateRoutingProfileQueuesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateRoutingProfileQueuesRequest", reflect.TypeOf((*MockConnectAPI)(nil).AssociateRoutingProfileQueuesRequest), arg0)
+}
+
+// AssociateRoutingProfileQueuesWithContext mocks base method
+func (m *MockConnectAPI) AssociateRoutingProfileQueuesWithContext(arg0 context.Context, arg1 *connect.AssociateRoutingProfileQueuesInput, arg2 ...request.Option) (*connect.AssociateRoutingProfileQueuesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateRoutingProfileQueuesWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.AssociateRoutingProfileQueuesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateRoutingProfileQueuesWithContext indicates an expected call of AssociateRoutingProfileQueuesWithContext
+func (mr *MockConnectAPIMockRecorder) AssociateRoutingProfileQueuesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateRoutingProfileQueuesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).AssociateRoutingProfileQueuesWithContext), varargs...)
+}
+
+// CreateContactFlow mocks base method
+func (m *MockConnectAPI) CreateContactFlow(arg0 *connect.CreateContactFlowInput) (*connect.CreateContactFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContactFlow", arg0)
+	ret0, _ := ret[0].(*connect.CreateContactFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContactFlow indicates an expected call of CreateContactFlow
+func (mr *MockConnectAPIMockRecorder) CreateContactFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactFlow", reflect.TypeOf((*MockConnectAPI)(nil).CreateContactFlow), arg0)
+}
+
+// CreateContactFlowRequest mocks base method
+func (m *MockConnectAPI) CreateContactFlowRequest(arg0 *connect.CreateContactFlowInput) (*request.Request, *connect.CreateContactFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContactFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.CreateContactFlowOutput)
+	return ret0, ret1
+}
+
+// CreateContactFlowRequest indicates an expected call of CreateContactFlowRequest
+func (mr *MockConnectAPIMockRecorder) CreateContactFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactFlowRequest", reflect.TypeOf((*MockConnectAPI)(nil).CreateContactFlowRequest), arg0)
+}
+
+// CreateContactFlowWithContext mocks base method
+func (m *MockConnectAPI) CreateContactFlowWithContext(arg0 context.Context, arg1 *connect.CreateContactFlowInput, arg2 ...request.Option) (*connect.CreateContactFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateContactFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.CreateContactFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContactFlowWithContext indicates an expected call of CreateContactFlowWithContext
+func (mr *MockConnectAPIMockRecorder) CreateContactFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactFlowWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateContactFlowWithContext), varargs...)
+}
+
+// CreateRoutingProfile mocks base method
+func (m *MockConnectAPI) CreateRoutingProfile(arg0 *connect.CreateRoutingProfileInput) (*connect.CreateRoutingProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRoutingProfile", arg0)
+	ret0, _ := ret[0].(*connect.CreateRoutingProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRoutingProfile indicates an expected call of CreateRoutingProfile
+func (mr *MockConnectAPIMockRecorder) CreateRoutingProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoutingProfile", reflect.TypeOf((*MockConnectAPI)(nil).CreateRoutingProfile), arg0)
+}
+
+// CreateRoutingProfileRequest mocks base method
+func (m *MockConnectAPI) CreateRoutingProfileRequest(arg0 *connect.CreateRoutingProfileInput) (*request.Request, *connect.CreateRoutingProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRoutingProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.CreateRoutingProfileOutput)
+	return ret0, ret1
+}
+
+// CreateRoutingProfileRequest indicates an expected call of CreateRoutingProfileRequest
+func (mr *MockConnectAPIMockRecorder) CreateRoutingProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoutingProfileRequest", reflect.TypeOf((*MockConnectAPI)(nil).CreateRoutingProfileRequest), arg0)
+}
+
+// CreateRoutingProfileWithContext mocks base method
+func (m *MockConnectAPI) CreateRoutingProfileWithContext(arg0 context.Context, arg1 *connect.CreateRoutingProfileInput, arg2 ...request.Option) (*connect.CreateRoutingProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRoutingProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.CreateRoutingProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRoutingProfileWithContext indicates an expected call of CreateRoutingProfileWithContext
+func (mr *MockConnectAPIMockRecorder) CreateRoutingProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoutingProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateRoutingProfileWithContext), varargs...)
+}
+
 // CreateUser mocks base method
 func (m *MockConnectAPI) CreateUser(arg0 *connect.CreateUserInput) (*connect.CreateUserOutput, error) {
 	m.ctrl.T.Helper()
@@ -133,6 +283,106 @@ func (mr *MockConnectAPIMockRecorder) DeleteUserWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteUserWithContext), varargs...)
+}
+
+// DescribeContactFlow mocks base method
+func (m *MockConnectAPI) DescribeContactFlow(arg0 *connect.DescribeContactFlowInput) (*connect.DescribeContactFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeContactFlow", arg0)
+	ret0, _ := ret[0].(*connect.DescribeContactFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeContactFlow indicates an expected call of DescribeContactFlow
+func (mr *MockConnectAPIMockRecorder) DescribeContactFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContactFlow", reflect.TypeOf((*MockConnectAPI)(nil).DescribeContactFlow), arg0)
+}
+
+// DescribeContactFlowRequest mocks base method
+func (m *MockConnectAPI) DescribeContactFlowRequest(arg0 *connect.DescribeContactFlowInput) (*request.Request, *connect.DescribeContactFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeContactFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DescribeContactFlowOutput)
+	return ret0, ret1
+}
+
+// DescribeContactFlowRequest indicates an expected call of DescribeContactFlowRequest
+func (mr *MockConnectAPIMockRecorder) DescribeContactFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContactFlowRequest", reflect.TypeOf((*MockConnectAPI)(nil).DescribeContactFlowRequest), arg0)
+}
+
+// DescribeContactFlowWithContext mocks base method
+func (m *MockConnectAPI) DescribeContactFlowWithContext(arg0 context.Context, arg1 *connect.DescribeContactFlowInput, arg2 ...request.Option) (*connect.DescribeContactFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeContactFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DescribeContactFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeContactFlowWithContext indicates an expected call of DescribeContactFlowWithContext
+func (mr *MockConnectAPIMockRecorder) DescribeContactFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContactFlowWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeContactFlowWithContext), varargs...)
+}
+
+// DescribeRoutingProfile mocks base method
+func (m *MockConnectAPI) DescribeRoutingProfile(arg0 *connect.DescribeRoutingProfileInput) (*connect.DescribeRoutingProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRoutingProfile", arg0)
+	ret0, _ := ret[0].(*connect.DescribeRoutingProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRoutingProfile indicates an expected call of DescribeRoutingProfile
+func (mr *MockConnectAPIMockRecorder) DescribeRoutingProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRoutingProfile", reflect.TypeOf((*MockConnectAPI)(nil).DescribeRoutingProfile), arg0)
+}
+
+// DescribeRoutingProfileRequest mocks base method
+func (m *MockConnectAPI) DescribeRoutingProfileRequest(arg0 *connect.DescribeRoutingProfileInput) (*request.Request, *connect.DescribeRoutingProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRoutingProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DescribeRoutingProfileOutput)
+	return ret0, ret1
+}
+
+// DescribeRoutingProfileRequest indicates an expected call of DescribeRoutingProfileRequest
+func (mr *MockConnectAPIMockRecorder) DescribeRoutingProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRoutingProfileRequest", reflect.TypeOf((*MockConnectAPI)(nil).DescribeRoutingProfileRequest), arg0)
+}
+
+// DescribeRoutingProfileWithContext mocks base method
+func (m *MockConnectAPI) DescribeRoutingProfileWithContext(arg0 context.Context, arg1 *connect.DescribeRoutingProfileInput, arg2 ...request.Option) (*connect.DescribeRoutingProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeRoutingProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DescribeRoutingProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRoutingProfileWithContext indicates an expected call of DescribeRoutingProfileWithContext
+func (mr *MockConnectAPIMockRecorder) DescribeRoutingProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRoutingProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeRoutingProfileWithContext), varargs...)
 }
 
 // DescribeUser mocks base method
@@ -283,6 +533,56 @@ func (mr *MockConnectAPIMockRecorder) DescribeUserWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeUserWithContext), varargs...)
+}
+
+// DisassociateRoutingProfileQueues mocks base method
+func (m *MockConnectAPI) DisassociateRoutingProfileQueues(arg0 *connect.DisassociateRoutingProfileQueuesInput) (*connect.DisassociateRoutingProfileQueuesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateRoutingProfileQueues", arg0)
+	ret0, _ := ret[0].(*connect.DisassociateRoutingProfileQueuesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateRoutingProfileQueues indicates an expected call of DisassociateRoutingProfileQueues
+func (mr *MockConnectAPIMockRecorder) DisassociateRoutingProfileQueues(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateRoutingProfileQueues", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateRoutingProfileQueues), arg0)
+}
+
+// DisassociateRoutingProfileQueuesRequest mocks base method
+func (m *MockConnectAPI) DisassociateRoutingProfileQueuesRequest(arg0 *connect.DisassociateRoutingProfileQueuesInput) (*request.Request, *connect.DisassociateRoutingProfileQueuesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateRoutingProfileQueuesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DisassociateRoutingProfileQueuesOutput)
+	return ret0, ret1
+}
+
+// DisassociateRoutingProfileQueuesRequest indicates an expected call of DisassociateRoutingProfileQueuesRequest
+func (mr *MockConnectAPIMockRecorder) DisassociateRoutingProfileQueuesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateRoutingProfileQueuesRequest", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateRoutingProfileQueuesRequest), arg0)
+}
+
+// DisassociateRoutingProfileQueuesWithContext mocks base method
+func (m *MockConnectAPI) DisassociateRoutingProfileQueuesWithContext(arg0 context.Context, arg1 *connect.DisassociateRoutingProfileQueuesInput, arg2 ...request.Option) (*connect.DisassociateRoutingProfileQueuesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateRoutingProfileQueuesWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DisassociateRoutingProfileQueuesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateRoutingProfileQueuesWithContext indicates an expected call of DisassociateRoutingProfileQueuesWithContext
+func (mr *MockConnectAPIMockRecorder) DisassociateRoutingProfileQueuesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateRoutingProfileQueuesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateRoutingProfileQueuesWithContext), varargs...)
 }
 
 // GetContactAttributes mocks base method
@@ -800,6 +1100,89 @@ func (mr *MockConnectAPIMockRecorder) ListPhoneNumbersWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPhoneNumbersWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListPhoneNumbersWithContext), varargs...)
 }
 
+// ListPrompts mocks base method
+func (m *MockConnectAPI) ListPrompts(arg0 *connect.ListPromptsInput) (*connect.ListPromptsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPrompts", arg0)
+	ret0, _ := ret[0].(*connect.ListPromptsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPrompts indicates an expected call of ListPrompts
+func (mr *MockConnectAPIMockRecorder) ListPrompts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPrompts", reflect.TypeOf((*MockConnectAPI)(nil).ListPrompts), arg0)
+}
+
+// ListPromptsPages mocks base method
+func (m *MockConnectAPI) ListPromptsPages(arg0 *connect.ListPromptsInput, arg1 func(*connect.ListPromptsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPromptsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPromptsPages indicates an expected call of ListPromptsPages
+func (mr *MockConnectAPIMockRecorder) ListPromptsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPromptsPages", reflect.TypeOf((*MockConnectAPI)(nil).ListPromptsPages), arg0, arg1)
+}
+
+// ListPromptsPagesWithContext mocks base method
+func (m *MockConnectAPI) ListPromptsPagesWithContext(arg0 context.Context, arg1 *connect.ListPromptsInput, arg2 func(*connect.ListPromptsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPromptsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPromptsPagesWithContext indicates an expected call of ListPromptsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListPromptsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPromptsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListPromptsPagesWithContext), varargs...)
+}
+
+// ListPromptsRequest mocks base method
+func (m *MockConnectAPI) ListPromptsRequest(arg0 *connect.ListPromptsInput) (*request.Request, *connect.ListPromptsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPromptsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListPromptsOutput)
+	return ret0, ret1
+}
+
+// ListPromptsRequest indicates an expected call of ListPromptsRequest
+func (mr *MockConnectAPIMockRecorder) ListPromptsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPromptsRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListPromptsRequest), arg0)
+}
+
+// ListPromptsWithContext mocks base method
+func (m *MockConnectAPI) ListPromptsWithContext(arg0 context.Context, arg1 *connect.ListPromptsInput, arg2 ...request.Option) (*connect.ListPromptsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPromptsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListPromptsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPromptsWithContext indicates an expected call of ListPromptsWithContext
+func (mr *MockConnectAPIMockRecorder) ListPromptsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPromptsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListPromptsWithContext), varargs...)
+}
+
 // ListQueues mocks base method
 func (m *MockConnectAPI) ListQueues(arg0 *connect.ListQueuesInput) (*connect.ListQueuesOutput, error) {
 	m.ctrl.T.Helper()
@@ -881,6 +1264,89 @@ func (mr *MockConnectAPIMockRecorder) ListQueuesWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueuesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListQueuesWithContext), varargs...)
+}
+
+// ListRoutingProfileQueues mocks base method
+func (m *MockConnectAPI) ListRoutingProfileQueues(arg0 *connect.ListRoutingProfileQueuesInput) (*connect.ListRoutingProfileQueuesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRoutingProfileQueues", arg0)
+	ret0, _ := ret[0].(*connect.ListRoutingProfileQueuesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRoutingProfileQueues indicates an expected call of ListRoutingProfileQueues
+func (mr *MockConnectAPIMockRecorder) ListRoutingProfileQueues(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoutingProfileQueues", reflect.TypeOf((*MockConnectAPI)(nil).ListRoutingProfileQueues), arg0)
+}
+
+// ListRoutingProfileQueuesPages mocks base method
+func (m *MockConnectAPI) ListRoutingProfileQueuesPages(arg0 *connect.ListRoutingProfileQueuesInput, arg1 func(*connect.ListRoutingProfileQueuesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRoutingProfileQueuesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRoutingProfileQueuesPages indicates an expected call of ListRoutingProfileQueuesPages
+func (mr *MockConnectAPIMockRecorder) ListRoutingProfileQueuesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoutingProfileQueuesPages", reflect.TypeOf((*MockConnectAPI)(nil).ListRoutingProfileQueuesPages), arg0, arg1)
+}
+
+// ListRoutingProfileQueuesPagesWithContext mocks base method
+func (m *MockConnectAPI) ListRoutingProfileQueuesPagesWithContext(arg0 context.Context, arg1 *connect.ListRoutingProfileQueuesInput, arg2 func(*connect.ListRoutingProfileQueuesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRoutingProfileQueuesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRoutingProfileQueuesPagesWithContext indicates an expected call of ListRoutingProfileQueuesPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListRoutingProfileQueuesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoutingProfileQueuesPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListRoutingProfileQueuesPagesWithContext), varargs...)
+}
+
+// ListRoutingProfileQueuesRequest mocks base method
+func (m *MockConnectAPI) ListRoutingProfileQueuesRequest(arg0 *connect.ListRoutingProfileQueuesInput) (*request.Request, *connect.ListRoutingProfileQueuesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRoutingProfileQueuesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListRoutingProfileQueuesOutput)
+	return ret0, ret1
+}
+
+// ListRoutingProfileQueuesRequest indicates an expected call of ListRoutingProfileQueuesRequest
+func (mr *MockConnectAPIMockRecorder) ListRoutingProfileQueuesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoutingProfileQueuesRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListRoutingProfileQueuesRequest), arg0)
+}
+
+// ListRoutingProfileQueuesWithContext mocks base method
+func (m *MockConnectAPI) ListRoutingProfileQueuesWithContext(arg0 context.Context, arg1 *connect.ListRoutingProfileQueuesInput, arg2 ...request.Option) (*connect.ListRoutingProfileQueuesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRoutingProfileQueuesWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListRoutingProfileQueuesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRoutingProfileQueuesWithContext indicates an expected call of ListRoutingProfileQueuesWithContext
+func (mr *MockConnectAPIMockRecorder) ListRoutingProfileQueuesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoutingProfileQueuesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListRoutingProfileQueuesWithContext), varargs...)
 }
 
 // ListRoutingProfiles mocks base method
@@ -1763,6 +2229,306 @@ func (mr *MockConnectAPIMockRecorder) UpdateContactAttributesWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactAttributesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactAttributesWithContext), varargs...)
+}
+
+// UpdateContactFlowContent mocks base method
+func (m *MockConnectAPI) UpdateContactFlowContent(arg0 *connect.UpdateContactFlowContentInput) (*connect.UpdateContactFlowContentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContactFlowContent", arg0)
+	ret0, _ := ret[0].(*connect.UpdateContactFlowContentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContactFlowContent indicates an expected call of UpdateContactFlowContent
+func (mr *MockConnectAPIMockRecorder) UpdateContactFlowContent(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactFlowContent", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactFlowContent), arg0)
+}
+
+// UpdateContactFlowContentRequest mocks base method
+func (m *MockConnectAPI) UpdateContactFlowContentRequest(arg0 *connect.UpdateContactFlowContentInput) (*request.Request, *connect.UpdateContactFlowContentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContactFlowContentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateContactFlowContentOutput)
+	return ret0, ret1
+}
+
+// UpdateContactFlowContentRequest indicates an expected call of UpdateContactFlowContentRequest
+func (mr *MockConnectAPIMockRecorder) UpdateContactFlowContentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactFlowContentRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactFlowContentRequest), arg0)
+}
+
+// UpdateContactFlowContentWithContext mocks base method
+func (m *MockConnectAPI) UpdateContactFlowContentWithContext(arg0 context.Context, arg1 *connect.UpdateContactFlowContentInput, arg2 ...request.Option) (*connect.UpdateContactFlowContentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateContactFlowContentWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateContactFlowContentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContactFlowContentWithContext indicates an expected call of UpdateContactFlowContentWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateContactFlowContentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactFlowContentWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactFlowContentWithContext), varargs...)
+}
+
+// UpdateContactFlowName mocks base method
+func (m *MockConnectAPI) UpdateContactFlowName(arg0 *connect.UpdateContactFlowNameInput) (*connect.UpdateContactFlowNameOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContactFlowName", arg0)
+	ret0, _ := ret[0].(*connect.UpdateContactFlowNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContactFlowName indicates an expected call of UpdateContactFlowName
+func (mr *MockConnectAPIMockRecorder) UpdateContactFlowName(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactFlowName", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactFlowName), arg0)
+}
+
+// UpdateContactFlowNameRequest mocks base method
+func (m *MockConnectAPI) UpdateContactFlowNameRequest(arg0 *connect.UpdateContactFlowNameInput) (*request.Request, *connect.UpdateContactFlowNameOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContactFlowNameRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateContactFlowNameOutput)
+	return ret0, ret1
+}
+
+// UpdateContactFlowNameRequest indicates an expected call of UpdateContactFlowNameRequest
+func (mr *MockConnectAPIMockRecorder) UpdateContactFlowNameRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactFlowNameRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactFlowNameRequest), arg0)
+}
+
+// UpdateContactFlowNameWithContext mocks base method
+func (m *MockConnectAPI) UpdateContactFlowNameWithContext(arg0 context.Context, arg1 *connect.UpdateContactFlowNameInput, arg2 ...request.Option) (*connect.UpdateContactFlowNameOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateContactFlowNameWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateContactFlowNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContactFlowNameWithContext indicates an expected call of UpdateContactFlowNameWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateContactFlowNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactFlowNameWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactFlowNameWithContext), varargs...)
+}
+
+// UpdateRoutingProfileConcurrency mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileConcurrency(arg0 *connect.UpdateRoutingProfileConcurrencyInput) (*connect.UpdateRoutingProfileConcurrencyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileConcurrency", arg0)
+	ret0, _ := ret[0].(*connect.UpdateRoutingProfileConcurrencyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileConcurrency indicates an expected call of UpdateRoutingProfileConcurrency
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileConcurrency(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileConcurrency", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileConcurrency), arg0)
+}
+
+// UpdateRoutingProfileConcurrencyRequest mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileConcurrencyRequest(arg0 *connect.UpdateRoutingProfileConcurrencyInput) (*request.Request, *connect.UpdateRoutingProfileConcurrencyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileConcurrencyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateRoutingProfileConcurrencyOutput)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileConcurrencyRequest indicates an expected call of UpdateRoutingProfileConcurrencyRequest
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileConcurrencyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileConcurrencyRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileConcurrencyRequest), arg0)
+}
+
+// UpdateRoutingProfileConcurrencyWithContext mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileConcurrencyWithContext(arg0 context.Context, arg1 *connect.UpdateRoutingProfileConcurrencyInput, arg2 ...request.Option) (*connect.UpdateRoutingProfileConcurrencyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileConcurrencyWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateRoutingProfileConcurrencyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileConcurrencyWithContext indicates an expected call of UpdateRoutingProfileConcurrencyWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileConcurrencyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileConcurrencyWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileConcurrencyWithContext), varargs...)
+}
+
+// UpdateRoutingProfileDefaultOutboundQueue mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileDefaultOutboundQueue(arg0 *connect.UpdateRoutingProfileDefaultOutboundQueueInput) (*connect.UpdateRoutingProfileDefaultOutboundQueueOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileDefaultOutboundQueue", arg0)
+	ret0, _ := ret[0].(*connect.UpdateRoutingProfileDefaultOutboundQueueOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileDefaultOutboundQueue indicates an expected call of UpdateRoutingProfileDefaultOutboundQueue
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileDefaultOutboundQueue(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileDefaultOutboundQueue", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileDefaultOutboundQueue), arg0)
+}
+
+// UpdateRoutingProfileDefaultOutboundQueueRequest mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileDefaultOutboundQueueRequest(arg0 *connect.UpdateRoutingProfileDefaultOutboundQueueInput) (*request.Request, *connect.UpdateRoutingProfileDefaultOutboundQueueOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileDefaultOutboundQueueRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateRoutingProfileDefaultOutboundQueueOutput)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileDefaultOutboundQueueRequest indicates an expected call of UpdateRoutingProfileDefaultOutboundQueueRequest
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileDefaultOutboundQueueRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileDefaultOutboundQueueRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileDefaultOutboundQueueRequest), arg0)
+}
+
+// UpdateRoutingProfileDefaultOutboundQueueWithContext mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileDefaultOutboundQueueWithContext(arg0 context.Context, arg1 *connect.UpdateRoutingProfileDefaultOutboundQueueInput, arg2 ...request.Option) (*connect.UpdateRoutingProfileDefaultOutboundQueueOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileDefaultOutboundQueueWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateRoutingProfileDefaultOutboundQueueOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileDefaultOutboundQueueWithContext indicates an expected call of UpdateRoutingProfileDefaultOutboundQueueWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileDefaultOutboundQueueWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileDefaultOutboundQueueWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileDefaultOutboundQueueWithContext), varargs...)
+}
+
+// UpdateRoutingProfileName mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileName(arg0 *connect.UpdateRoutingProfileNameInput) (*connect.UpdateRoutingProfileNameOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileName", arg0)
+	ret0, _ := ret[0].(*connect.UpdateRoutingProfileNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileName indicates an expected call of UpdateRoutingProfileName
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileName(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileName", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileName), arg0)
+}
+
+// UpdateRoutingProfileNameRequest mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileNameRequest(arg0 *connect.UpdateRoutingProfileNameInput) (*request.Request, *connect.UpdateRoutingProfileNameOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileNameRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateRoutingProfileNameOutput)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileNameRequest indicates an expected call of UpdateRoutingProfileNameRequest
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileNameRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileNameRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileNameRequest), arg0)
+}
+
+// UpdateRoutingProfileNameWithContext mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileNameWithContext(arg0 context.Context, arg1 *connect.UpdateRoutingProfileNameInput, arg2 ...request.Option) (*connect.UpdateRoutingProfileNameOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileNameWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateRoutingProfileNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileNameWithContext indicates an expected call of UpdateRoutingProfileNameWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileNameWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileNameWithContext), varargs...)
+}
+
+// UpdateRoutingProfileQueues mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileQueues(arg0 *connect.UpdateRoutingProfileQueuesInput) (*connect.UpdateRoutingProfileQueuesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileQueues", arg0)
+	ret0, _ := ret[0].(*connect.UpdateRoutingProfileQueuesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileQueues indicates an expected call of UpdateRoutingProfileQueues
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileQueues(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileQueues", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileQueues), arg0)
+}
+
+// UpdateRoutingProfileQueuesRequest mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileQueuesRequest(arg0 *connect.UpdateRoutingProfileQueuesInput) (*request.Request, *connect.UpdateRoutingProfileQueuesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileQueuesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateRoutingProfileQueuesOutput)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileQueuesRequest indicates an expected call of UpdateRoutingProfileQueuesRequest
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileQueuesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileQueuesRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileQueuesRequest), arg0)
+}
+
+// UpdateRoutingProfileQueuesWithContext mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileQueuesWithContext(arg0 context.Context, arg1 *connect.UpdateRoutingProfileQueuesInput, arg2 ...request.Option) (*connect.UpdateRoutingProfileQueuesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileQueuesWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateRoutingProfileQueuesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileQueuesWithContext indicates an expected call of UpdateRoutingProfileQueuesWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileQueuesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileQueuesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileQueuesWithContext), varargs...)
 }
 
 // UpdateUserHierarchy mocks base method

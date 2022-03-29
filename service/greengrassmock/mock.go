@@ -2735,6 +2735,56 @@ func (mr *MockGreengrassAPIMockRecorder) GetSubscriptionDefinitionWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSubscriptionDefinitionWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).GetSubscriptionDefinitionWithContext), varargs...)
 }
 
+// GetThingRuntimeConfiguration mocks base method
+func (m *MockGreengrassAPI) GetThingRuntimeConfiguration(arg0 *greengrass.GetThingRuntimeConfigurationInput) (*greengrass.GetThingRuntimeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetThingRuntimeConfiguration", arg0)
+	ret0, _ := ret[0].(*greengrass.GetThingRuntimeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetThingRuntimeConfiguration indicates an expected call of GetThingRuntimeConfiguration
+func (mr *MockGreengrassAPIMockRecorder) GetThingRuntimeConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetThingRuntimeConfiguration", reflect.TypeOf((*MockGreengrassAPI)(nil).GetThingRuntimeConfiguration), arg0)
+}
+
+// GetThingRuntimeConfigurationRequest mocks base method
+func (m *MockGreengrassAPI) GetThingRuntimeConfigurationRequest(arg0 *greengrass.GetThingRuntimeConfigurationInput) (*request.Request, *greengrass.GetThingRuntimeConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetThingRuntimeConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.GetThingRuntimeConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetThingRuntimeConfigurationRequest indicates an expected call of GetThingRuntimeConfigurationRequest
+func (mr *MockGreengrassAPIMockRecorder) GetThingRuntimeConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetThingRuntimeConfigurationRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).GetThingRuntimeConfigurationRequest), arg0)
+}
+
+// GetThingRuntimeConfigurationWithContext mocks base method
+func (m *MockGreengrassAPI) GetThingRuntimeConfigurationWithContext(arg0 context.Context, arg1 *greengrass.GetThingRuntimeConfigurationInput, arg2 ...request.Option) (*greengrass.GetThingRuntimeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetThingRuntimeConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.GetThingRuntimeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetThingRuntimeConfigurationWithContext indicates an expected call of GetThingRuntimeConfigurationWithContext
+func (mr *MockGreengrassAPIMockRecorder) GetThingRuntimeConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetThingRuntimeConfigurationWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).GetThingRuntimeConfigurationWithContext), varargs...)
+}
+
 // ListBulkDeploymentDetailedReports mocks base method
 func (m *MockGreengrassAPI) ListBulkDeploymentDetailedReports(arg0 *greengrass.ListBulkDeploymentDetailedReportsInput) (*greengrass.ListBulkDeploymentDetailedReportsOutput, error) {
 	m.ctrl.T.Helper()
@@ -4533,4 +4583,54 @@ func (mr *MockGreengrassAPIMockRecorder) UpdateSubscriptionDefinitionWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubscriptionDefinitionWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).UpdateSubscriptionDefinitionWithContext), varargs...)
+}
+
+// UpdateThingRuntimeConfiguration mocks base method
+func (m *MockGreengrassAPI) UpdateThingRuntimeConfiguration(arg0 *greengrass.UpdateThingRuntimeConfigurationInput) (*greengrass.UpdateThingRuntimeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateThingRuntimeConfiguration", arg0)
+	ret0, _ := ret[0].(*greengrass.UpdateThingRuntimeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateThingRuntimeConfiguration indicates an expected call of UpdateThingRuntimeConfiguration
+func (mr *MockGreengrassAPIMockRecorder) UpdateThingRuntimeConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateThingRuntimeConfiguration", reflect.TypeOf((*MockGreengrassAPI)(nil).UpdateThingRuntimeConfiguration), arg0)
+}
+
+// UpdateThingRuntimeConfigurationRequest mocks base method
+func (m *MockGreengrassAPI) UpdateThingRuntimeConfigurationRequest(arg0 *greengrass.UpdateThingRuntimeConfigurationInput) (*request.Request, *greengrass.UpdateThingRuntimeConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateThingRuntimeConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrass.UpdateThingRuntimeConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateThingRuntimeConfigurationRequest indicates an expected call of UpdateThingRuntimeConfigurationRequest
+func (mr *MockGreengrassAPIMockRecorder) UpdateThingRuntimeConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateThingRuntimeConfigurationRequest", reflect.TypeOf((*MockGreengrassAPI)(nil).UpdateThingRuntimeConfigurationRequest), arg0)
+}
+
+// UpdateThingRuntimeConfigurationWithContext mocks base method
+func (m *MockGreengrassAPI) UpdateThingRuntimeConfigurationWithContext(arg0 context.Context, arg1 *greengrass.UpdateThingRuntimeConfigurationInput, arg2 ...request.Option) (*greengrass.UpdateThingRuntimeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateThingRuntimeConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrass.UpdateThingRuntimeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateThingRuntimeConfigurationWithContext indicates an expected call of UpdateThingRuntimeConfigurationWithContext
+func (mr *MockGreengrassAPIMockRecorder) UpdateThingRuntimeConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateThingRuntimeConfigurationWithContext", reflect.TypeOf((*MockGreengrassAPI)(nil).UpdateThingRuntimeConfigurationWithContext), varargs...)
 }
