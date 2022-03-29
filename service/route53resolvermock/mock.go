@@ -85,6 +85,56 @@ func (mr *MockRoute53ResolverAPIMockRecorder) AssociateResolverEndpointIpAddress
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateResolverEndpointIpAddressWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).AssociateResolverEndpointIpAddressWithContext), varargs...)
 }
 
+// AssociateResolverQueryLogConfig mocks base method
+func (m *MockRoute53ResolverAPI) AssociateResolverQueryLogConfig(arg0 *route53resolver.AssociateResolverQueryLogConfigInput) (*route53resolver.AssociateResolverQueryLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateResolverQueryLogConfig", arg0)
+	ret0, _ := ret[0].(*route53resolver.AssociateResolverQueryLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateResolverQueryLogConfig indicates an expected call of AssociateResolverQueryLogConfig
+func (mr *MockRoute53ResolverAPIMockRecorder) AssociateResolverQueryLogConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateResolverQueryLogConfig", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).AssociateResolverQueryLogConfig), arg0)
+}
+
+// AssociateResolverQueryLogConfigRequest mocks base method
+func (m *MockRoute53ResolverAPI) AssociateResolverQueryLogConfigRequest(arg0 *route53resolver.AssociateResolverQueryLogConfigInput) (*request.Request, *route53resolver.AssociateResolverQueryLogConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateResolverQueryLogConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.AssociateResolverQueryLogConfigOutput)
+	return ret0, ret1
+}
+
+// AssociateResolverQueryLogConfigRequest indicates an expected call of AssociateResolverQueryLogConfigRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) AssociateResolverQueryLogConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateResolverQueryLogConfigRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).AssociateResolverQueryLogConfigRequest), arg0)
+}
+
+// AssociateResolverQueryLogConfigWithContext mocks base method
+func (m *MockRoute53ResolverAPI) AssociateResolverQueryLogConfigWithContext(arg0 context.Context, arg1 *route53resolver.AssociateResolverQueryLogConfigInput, arg2 ...request.Option) (*route53resolver.AssociateResolverQueryLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateResolverQueryLogConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.AssociateResolverQueryLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateResolverQueryLogConfigWithContext indicates an expected call of AssociateResolverQueryLogConfigWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) AssociateResolverQueryLogConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateResolverQueryLogConfigWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).AssociateResolverQueryLogConfigWithContext), varargs...)
+}
+
 // AssociateResolverRule mocks base method
 func (m *MockRoute53ResolverAPI) AssociateResolverRule(arg0 *route53resolver.AssociateResolverRuleInput) (*route53resolver.AssociateResolverRuleOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +233,56 @@ func (mr *MockRoute53ResolverAPIMockRecorder) CreateResolverEndpointWithContext(
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateResolverEndpointWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).CreateResolverEndpointWithContext), varargs...)
+}
+
+// CreateResolverQueryLogConfig mocks base method
+func (m *MockRoute53ResolverAPI) CreateResolverQueryLogConfig(arg0 *route53resolver.CreateResolverQueryLogConfigInput) (*route53resolver.CreateResolverQueryLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateResolverQueryLogConfig", arg0)
+	ret0, _ := ret[0].(*route53resolver.CreateResolverQueryLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateResolverQueryLogConfig indicates an expected call of CreateResolverQueryLogConfig
+func (mr *MockRoute53ResolverAPIMockRecorder) CreateResolverQueryLogConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateResolverQueryLogConfig", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).CreateResolverQueryLogConfig), arg0)
+}
+
+// CreateResolverQueryLogConfigRequest mocks base method
+func (m *MockRoute53ResolverAPI) CreateResolverQueryLogConfigRequest(arg0 *route53resolver.CreateResolverQueryLogConfigInput) (*request.Request, *route53resolver.CreateResolverQueryLogConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateResolverQueryLogConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.CreateResolverQueryLogConfigOutput)
+	return ret0, ret1
+}
+
+// CreateResolverQueryLogConfigRequest indicates an expected call of CreateResolverQueryLogConfigRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) CreateResolverQueryLogConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateResolverQueryLogConfigRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).CreateResolverQueryLogConfigRequest), arg0)
+}
+
+// CreateResolverQueryLogConfigWithContext mocks base method
+func (m *MockRoute53ResolverAPI) CreateResolverQueryLogConfigWithContext(arg0 context.Context, arg1 *route53resolver.CreateResolverQueryLogConfigInput, arg2 ...request.Option) (*route53resolver.CreateResolverQueryLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateResolverQueryLogConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.CreateResolverQueryLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateResolverQueryLogConfigWithContext indicates an expected call of CreateResolverQueryLogConfigWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) CreateResolverQueryLogConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateResolverQueryLogConfigWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).CreateResolverQueryLogConfigWithContext), varargs...)
 }
 
 // CreateResolverRule mocks base method
@@ -285,6 +385,56 @@ func (mr *MockRoute53ResolverAPIMockRecorder) DeleteResolverEndpointWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResolverEndpointWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DeleteResolverEndpointWithContext), varargs...)
 }
 
+// DeleteResolverQueryLogConfig mocks base method
+func (m *MockRoute53ResolverAPI) DeleteResolverQueryLogConfig(arg0 *route53resolver.DeleteResolverQueryLogConfigInput) (*route53resolver.DeleteResolverQueryLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResolverQueryLogConfig", arg0)
+	ret0, _ := ret[0].(*route53resolver.DeleteResolverQueryLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResolverQueryLogConfig indicates an expected call of DeleteResolverQueryLogConfig
+func (mr *MockRoute53ResolverAPIMockRecorder) DeleteResolverQueryLogConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResolverQueryLogConfig", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DeleteResolverQueryLogConfig), arg0)
+}
+
+// DeleteResolverQueryLogConfigRequest mocks base method
+func (m *MockRoute53ResolverAPI) DeleteResolverQueryLogConfigRequest(arg0 *route53resolver.DeleteResolverQueryLogConfigInput) (*request.Request, *route53resolver.DeleteResolverQueryLogConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResolverQueryLogConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.DeleteResolverQueryLogConfigOutput)
+	return ret0, ret1
+}
+
+// DeleteResolverQueryLogConfigRequest indicates an expected call of DeleteResolverQueryLogConfigRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) DeleteResolverQueryLogConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResolverQueryLogConfigRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DeleteResolverQueryLogConfigRequest), arg0)
+}
+
+// DeleteResolverQueryLogConfigWithContext mocks base method
+func (m *MockRoute53ResolverAPI) DeleteResolverQueryLogConfigWithContext(arg0 context.Context, arg1 *route53resolver.DeleteResolverQueryLogConfigInput, arg2 ...request.Option) (*route53resolver.DeleteResolverQueryLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteResolverQueryLogConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.DeleteResolverQueryLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResolverQueryLogConfigWithContext indicates an expected call of DeleteResolverQueryLogConfigWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) DeleteResolverQueryLogConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResolverQueryLogConfigWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DeleteResolverQueryLogConfigWithContext), varargs...)
+}
+
 // DeleteResolverRule mocks base method
 func (m *MockRoute53ResolverAPI) DeleteResolverRule(arg0 *route53resolver.DeleteResolverRuleInput) (*route53resolver.DeleteResolverRuleOutput, error) {
 	m.ctrl.T.Helper()
@@ -385,6 +535,56 @@ func (mr *MockRoute53ResolverAPIMockRecorder) DisassociateResolverEndpointIpAddr
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateResolverEndpointIpAddressWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DisassociateResolverEndpointIpAddressWithContext), varargs...)
 }
 
+// DisassociateResolverQueryLogConfig mocks base method
+func (m *MockRoute53ResolverAPI) DisassociateResolverQueryLogConfig(arg0 *route53resolver.DisassociateResolverQueryLogConfigInput) (*route53resolver.DisassociateResolverQueryLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateResolverQueryLogConfig", arg0)
+	ret0, _ := ret[0].(*route53resolver.DisassociateResolverQueryLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateResolverQueryLogConfig indicates an expected call of DisassociateResolverQueryLogConfig
+func (mr *MockRoute53ResolverAPIMockRecorder) DisassociateResolverQueryLogConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateResolverQueryLogConfig", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DisassociateResolverQueryLogConfig), arg0)
+}
+
+// DisassociateResolverQueryLogConfigRequest mocks base method
+func (m *MockRoute53ResolverAPI) DisassociateResolverQueryLogConfigRequest(arg0 *route53resolver.DisassociateResolverQueryLogConfigInput) (*request.Request, *route53resolver.DisassociateResolverQueryLogConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateResolverQueryLogConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.DisassociateResolverQueryLogConfigOutput)
+	return ret0, ret1
+}
+
+// DisassociateResolverQueryLogConfigRequest indicates an expected call of DisassociateResolverQueryLogConfigRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) DisassociateResolverQueryLogConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateResolverQueryLogConfigRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DisassociateResolverQueryLogConfigRequest), arg0)
+}
+
+// DisassociateResolverQueryLogConfigWithContext mocks base method
+func (m *MockRoute53ResolverAPI) DisassociateResolverQueryLogConfigWithContext(arg0 context.Context, arg1 *route53resolver.DisassociateResolverQueryLogConfigInput, arg2 ...request.Option) (*route53resolver.DisassociateResolverQueryLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateResolverQueryLogConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.DisassociateResolverQueryLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateResolverQueryLogConfigWithContext indicates an expected call of DisassociateResolverQueryLogConfigWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) DisassociateResolverQueryLogConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateResolverQueryLogConfigWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DisassociateResolverQueryLogConfigWithContext), varargs...)
+}
+
 // DisassociateResolverRule mocks base method
 func (m *MockRoute53ResolverAPI) DisassociateResolverRule(arg0 *route53resolver.DisassociateResolverRuleInput) (*route53resolver.DisassociateResolverRuleOutput, error) {
 	m.ctrl.T.Helper()
@@ -483,6 +683,156 @@ func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverEndpointWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverEndpointWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverEndpointWithContext), varargs...)
+}
+
+// GetResolverQueryLogConfig mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverQueryLogConfig(arg0 *route53resolver.GetResolverQueryLogConfigInput) (*route53resolver.GetResolverQueryLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResolverQueryLogConfig", arg0)
+	ret0, _ := ret[0].(*route53resolver.GetResolverQueryLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResolverQueryLogConfig indicates an expected call of GetResolverQueryLogConfig
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverQueryLogConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverQueryLogConfig", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverQueryLogConfig), arg0)
+}
+
+// GetResolverQueryLogConfigAssociation mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverQueryLogConfigAssociation(arg0 *route53resolver.GetResolverQueryLogConfigAssociationInput) (*route53resolver.GetResolverQueryLogConfigAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResolverQueryLogConfigAssociation", arg0)
+	ret0, _ := ret[0].(*route53resolver.GetResolverQueryLogConfigAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResolverQueryLogConfigAssociation indicates an expected call of GetResolverQueryLogConfigAssociation
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverQueryLogConfigAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverQueryLogConfigAssociation", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverQueryLogConfigAssociation), arg0)
+}
+
+// GetResolverQueryLogConfigAssociationRequest mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverQueryLogConfigAssociationRequest(arg0 *route53resolver.GetResolverQueryLogConfigAssociationInput) (*request.Request, *route53resolver.GetResolverQueryLogConfigAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResolverQueryLogConfigAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.GetResolverQueryLogConfigAssociationOutput)
+	return ret0, ret1
+}
+
+// GetResolverQueryLogConfigAssociationRequest indicates an expected call of GetResolverQueryLogConfigAssociationRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverQueryLogConfigAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverQueryLogConfigAssociationRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverQueryLogConfigAssociationRequest), arg0)
+}
+
+// GetResolverQueryLogConfigAssociationWithContext mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverQueryLogConfigAssociationWithContext(arg0 context.Context, arg1 *route53resolver.GetResolverQueryLogConfigAssociationInput, arg2 ...request.Option) (*route53resolver.GetResolverQueryLogConfigAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResolverQueryLogConfigAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.GetResolverQueryLogConfigAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResolverQueryLogConfigAssociationWithContext indicates an expected call of GetResolverQueryLogConfigAssociationWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverQueryLogConfigAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverQueryLogConfigAssociationWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverQueryLogConfigAssociationWithContext), varargs...)
+}
+
+// GetResolverQueryLogConfigPolicy mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverQueryLogConfigPolicy(arg0 *route53resolver.GetResolverQueryLogConfigPolicyInput) (*route53resolver.GetResolverQueryLogConfigPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResolverQueryLogConfigPolicy", arg0)
+	ret0, _ := ret[0].(*route53resolver.GetResolverQueryLogConfigPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResolverQueryLogConfigPolicy indicates an expected call of GetResolverQueryLogConfigPolicy
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverQueryLogConfigPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverQueryLogConfigPolicy", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverQueryLogConfigPolicy), arg0)
+}
+
+// GetResolverQueryLogConfigPolicyRequest mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverQueryLogConfigPolicyRequest(arg0 *route53resolver.GetResolverQueryLogConfigPolicyInput) (*request.Request, *route53resolver.GetResolverQueryLogConfigPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResolverQueryLogConfigPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.GetResolverQueryLogConfigPolicyOutput)
+	return ret0, ret1
+}
+
+// GetResolverQueryLogConfigPolicyRequest indicates an expected call of GetResolverQueryLogConfigPolicyRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverQueryLogConfigPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverQueryLogConfigPolicyRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverQueryLogConfigPolicyRequest), arg0)
+}
+
+// GetResolverQueryLogConfigPolicyWithContext mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverQueryLogConfigPolicyWithContext(arg0 context.Context, arg1 *route53resolver.GetResolverQueryLogConfigPolicyInput, arg2 ...request.Option) (*route53resolver.GetResolverQueryLogConfigPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResolverQueryLogConfigPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.GetResolverQueryLogConfigPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResolverQueryLogConfigPolicyWithContext indicates an expected call of GetResolverQueryLogConfigPolicyWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverQueryLogConfigPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverQueryLogConfigPolicyWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverQueryLogConfigPolicyWithContext), varargs...)
+}
+
+// GetResolverQueryLogConfigRequest mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverQueryLogConfigRequest(arg0 *route53resolver.GetResolverQueryLogConfigInput) (*request.Request, *route53resolver.GetResolverQueryLogConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResolverQueryLogConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.GetResolverQueryLogConfigOutput)
+	return ret0, ret1
+}
+
+// GetResolverQueryLogConfigRequest indicates an expected call of GetResolverQueryLogConfigRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverQueryLogConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverQueryLogConfigRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverQueryLogConfigRequest), arg0)
+}
+
+// GetResolverQueryLogConfigWithContext mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverQueryLogConfigWithContext(arg0 context.Context, arg1 *route53resolver.GetResolverQueryLogConfigInput, arg2 ...request.Option) (*route53resolver.GetResolverQueryLogConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResolverQueryLogConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.GetResolverQueryLogConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResolverQueryLogConfigWithContext indicates an expected call of GetResolverQueryLogConfigWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverQueryLogConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverQueryLogConfigWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverQueryLogConfigWithContext), varargs...)
 }
 
 // GetResolverRule mocks base method
@@ -801,6 +1151,172 @@ func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverEndpointsWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverEndpointsWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverEndpointsWithContext), varargs...)
 }
 
+// ListResolverQueryLogConfigAssociations mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverQueryLogConfigAssociations(arg0 *route53resolver.ListResolverQueryLogConfigAssociationsInput) (*route53resolver.ListResolverQueryLogConfigAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResolverQueryLogConfigAssociations", arg0)
+	ret0, _ := ret[0].(*route53resolver.ListResolverQueryLogConfigAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResolverQueryLogConfigAssociations indicates an expected call of ListResolverQueryLogConfigAssociations
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverQueryLogConfigAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverQueryLogConfigAssociations", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverQueryLogConfigAssociations), arg0)
+}
+
+// ListResolverQueryLogConfigAssociationsPages mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverQueryLogConfigAssociationsPages(arg0 *route53resolver.ListResolverQueryLogConfigAssociationsInput, arg1 func(*route53resolver.ListResolverQueryLogConfigAssociationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResolverQueryLogConfigAssociationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResolverQueryLogConfigAssociationsPages indicates an expected call of ListResolverQueryLogConfigAssociationsPages
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverQueryLogConfigAssociationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverQueryLogConfigAssociationsPages", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverQueryLogConfigAssociationsPages), arg0, arg1)
+}
+
+// ListResolverQueryLogConfigAssociationsPagesWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverQueryLogConfigAssociationsPagesWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverQueryLogConfigAssociationsInput, arg2 func(*route53resolver.ListResolverQueryLogConfigAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResolverQueryLogConfigAssociationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResolverQueryLogConfigAssociationsPagesWithContext indicates an expected call of ListResolverQueryLogConfigAssociationsPagesWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverQueryLogConfigAssociationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverQueryLogConfigAssociationsPagesWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverQueryLogConfigAssociationsPagesWithContext), varargs...)
+}
+
+// ListResolverQueryLogConfigAssociationsRequest mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverQueryLogConfigAssociationsRequest(arg0 *route53resolver.ListResolverQueryLogConfigAssociationsInput) (*request.Request, *route53resolver.ListResolverQueryLogConfigAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResolverQueryLogConfigAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.ListResolverQueryLogConfigAssociationsOutput)
+	return ret0, ret1
+}
+
+// ListResolverQueryLogConfigAssociationsRequest indicates an expected call of ListResolverQueryLogConfigAssociationsRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverQueryLogConfigAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverQueryLogConfigAssociationsRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverQueryLogConfigAssociationsRequest), arg0)
+}
+
+// ListResolverQueryLogConfigAssociationsWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverQueryLogConfigAssociationsWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverQueryLogConfigAssociationsInput, arg2 ...request.Option) (*route53resolver.ListResolverQueryLogConfigAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResolverQueryLogConfigAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.ListResolverQueryLogConfigAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResolverQueryLogConfigAssociationsWithContext indicates an expected call of ListResolverQueryLogConfigAssociationsWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverQueryLogConfigAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverQueryLogConfigAssociationsWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverQueryLogConfigAssociationsWithContext), varargs...)
+}
+
+// ListResolverQueryLogConfigs mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverQueryLogConfigs(arg0 *route53resolver.ListResolverQueryLogConfigsInput) (*route53resolver.ListResolverQueryLogConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResolverQueryLogConfigs", arg0)
+	ret0, _ := ret[0].(*route53resolver.ListResolverQueryLogConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResolverQueryLogConfigs indicates an expected call of ListResolverQueryLogConfigs
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverQueryLogConfigs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverQueryLogConfigs", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverQueryLogConfigs), arg0)
+}
+
+// ListResolverQueryLogConfigsPages mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverQueryLogConfigsPages(arg0 *route53resolver.ListResolverQueryLogConfigsInput, arg1 func(*route53resolver.ListResolverQueryLogConfigsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResolverQueryLogConfigsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResolverQueryLogConfigsPages indicates an expected call of ListResolverQueryLogConfigsPages
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverQueryLogConfigsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverQueryLogConfigsPages", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverQueryLogConfigsPages), arg0, arg1)
+}
+
+// ListResolverQueryLogConfigsPagesWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverQueryLogConfigsPagesWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverQueryLogConfigsInput, arg2 func(*route53resolver.ListResolverQueryLogConfigsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResolverQueryLogConfigsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResolverQueryLogConfigsPagesWithContext indicates an expected call of ListResolverQueryLogConfigsPagesWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverQueryLogConfigsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverQueryLogConfigsPagesWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverQueryLogConfigsPagesWithContext), varargs...)
+}
+
+// ListResolverQueryLogConfigsRequest mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverQueryLogConfigsRequest(arg0 *route53resolver.ListResolverQueryLogConfigsInput) (*request.Request, *route53resolver.ListResolverQueryLogConfigsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResolverQueryLogConfigsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.ListResolverQueryLogConfigsOutput)
+	return ret0, ret1
+}
+
+// ListResolverQueryLogConfigsRequest indicates an expected call of ListResolverQueryLogConfigsRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverQueryLogConfigsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverQueryLogConfigsRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverQueryLogConfigsRequest), arg0)
+}
+
+// ListResolverQueryLogConfigsWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverQueryLogConfigsWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverQueryLogConfigsInput, arg2 ...request.Option) (*route53resolver.ListResolverQueryLogConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResolverQueryLogConfigsWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.ListResolverQueryLogConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResolverQueryLogConfigsWithContext indicates an expected call of ListResolverQueryLogConfigsWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverQueryLogConfigsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverQueryLogConfigsWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverQueryLogConfigsWithContext), varargs...)
+}
+
 // ListResolverRuleAssociations mocks base method
 func (m *MockRoute53ResolverAPI) ListResolverRuleAssociations(arg0 *route53resolver.ListResolverRuleAssociationsInput) (*route53resolver.ListResolverRuleAssociationsOutput, error) {
 	m.ctrl.T.Helper()
@@ -982,6 +1498,39 @@ func (mr *MockRoute53ResolverAPIMockRecorder) ListTagsForResource(arg0 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListTagsForResource), arg0)
 }
 
+// ListTagsForResourcePages mocks base method
+func (m *MockRoute53ResolverAPI) ListTagsForResourcePages(arg0 *route53resolver.ListTagsForResourceInput, arg1 func(*route53resolver.ListTagsForResourceOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourcePages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTagsForResourcePages indicates an expected call of ListTagsForResourcePages
+func (mr *MockRoute53ResolverAPIMockRecorder) ListTagsForResourcePages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePages", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListTagsForResourcePages), arg0, arg1)
+}
+
+// ListTagsForResourcePagesWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListTagsForResourcePagesWithContext(arg0 context.Context, arg1 *route53resolver.ListTagsForResourceInput, arg2 func(*route53resolver.ListTagsForResourceOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourcePagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTagsForResourcePagesWithContext indicates an expected call of ListTagsForResourcePagesWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListTagsForResourcePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePagesWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListTagsForResourcePagesWithContext), varargs...)
+}
+
 // ListTagsForResourceRequest mocks base method
 func (m *MockRoute53ResolverAPI) ListTagsForResourceRequest(arg0 *route53resolver.ListTagsForResourceInput) (*request.Request, *route53resolver.ListTagsForResourceOutput) {
 	m.ctrl.T.Helper()
@@ -1015,6 +1564,56 @@ func (mr *MockRoute53ResolverAPIMockRecorder) ListTagsForResourceWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// PutResolverQueryLogConfigPolicy mocks base method
+func (m *MockRoute53ResolverAPI) PutResolverQueryLogConfigPolicy(arg0 *route53resolver.PutResolverQueryLogConfigPolicyInput) (*route53resolver.PutResolverQueryLogConfigPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResolverQueryLogConfigPolicy", arg0)
+	ret0, _ := ret[0].(*route53resolver.PutResolverQueryLogConfigPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResolverQueryLogConfigPolicy indicates an expected call of PutResolverQueryLogConfigPolicy
+func (mr *MockRoute53ResolverAPIMockRecorder) PutResolverQueryLogConfigPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResolverQueryLogConfigPolicy", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).PutResolverQueryLogConfigPolicy), arg0)
+}
+
+// PutResolverQueryLogConfigPolicyRequest mocks base method
+func (m *MockRoute53ResolverAPI) PutResolverQueryLogConfigPolicyRequest(arg0 *route53resolver.PutResolverQueryLogConfigPolicyInput) (*request.Request, *route53resolver.PutResolverQueryLogConfigPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResolverQueryLogConfigPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.PutResolverQueryLogConfigPolicyOutput)
+	return ret0, ret1
+}
+
+// PutResolverQueryLogConfigPolicyRequest indicates an expected call of PutResolverQueryLogConfigPolicyRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) PutResolverQueryLogConfigPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResolverQueryLogConfigPolicyRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).PutResolverQueryLogConfigPolicyRequest), arg0)
+}
+
+// PutResolverQueryLogConfigPolicyWithContext mocks base method
+func (m *MockRoute53ResolverAPI) PutResolverQueryLogConfigPolicyWithContext(arg0 context.Context, arg1 *route53resolver.PutResolverQueryLogConfigPolicyInput, arg2 ...request.Option) (*route53resolver.PutResolverQueryLogConfigPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutResolverQueryLogConfigPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.PutResolverQueryLogConfigPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResolverQueryLogConfigPolicyWithContext indicates an expected call of PutResolverQueryLogConfigPolicyWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) PutResolverQueryLogConfigPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResolverQueryLogConfigPolicyWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).PutResolverQueryLogConfigPolicyWithContext), varargs...)
 }
 
 // PutResolverRulePolicy mocks base method
