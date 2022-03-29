@@ -4446,6 +4446,56 @@ func (mr *MockRedshiftAPIMockRecorder) ModifySnapshotScheduleWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySnapshotScheduleWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifySnapshotScheduleWithContext), varargs...)
 }
 
+// PauseCluster mocks base method
+func (m *MockRedshiftAPI) PauseCluster(arg0 *redshift.PauseClusterInput) (*redshift.PauseClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PauseCluster", arg0)
+	ret0, _ := ret[0].(*redshift.PauseClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PauseCluster indicates an expected call of PauseCluster
+func (mr *MockRedshiftAPIMockRecorder) PauseCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PauseCluster", reflect.TypeOf((*MockRedshiftAPI)(nil).PauseCluster), arg0)
+}
+
+// PauseClusterRequest mocks base method
+func (m *MockRedshiftAPI) PauseClusterRequest(arg0 *redshift.PauseClusterInput) (*request.Request, *redshift.PauseClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PauseClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.PauseClusterOutput)
+	return ret0, ret1
+}
+
+// PauseClusterRequest indicates an expected call of PauseClusterRequest
+func (mr *MockRedshiftAPIMockRecorder) PauseClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PauseClusterRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).PauseClusterRequest), arg0)
+}
+
+// PauseClusterWithContext mocks base method
+func (m *MockRedshiftAPI) PauseClusterWithContext(arg0 context.Context, arg1 *redshift.PauseClusterInput, arg2 ...request.Option) (*redshift.PauseClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PauseClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.PauseClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PauseClusterWithContext indicates an expected call of PauseClusterWithContext
+func (mr *MockRedshiftAPIMockRecorder) PauseClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PauseClusterWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).PauseClusterWithContext), varargs...)
+}
+
 // PurchaseReservedNodeOffering mocks base method
 func (m *MockRedshiftAPI) PurchaseReservedNodeOffering(arg0 *redshift.PurchaseReservedNodeOfferingInput) (*redshift.PurchaseReservedNodeOfferingOutput, error) {
 	m.ctrl.T.Helper()
@@ -4744,6 +4794,56 @@ func (mr *MockRedshiftAPIMockRecorder) RestoreTableFromClusterSnapshotWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreTableFromClusterSnapshotWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).RestoreTableFromClusterSnapshotWithContext), varargs...)
+}
+
+// ResumeCluster mocks base method
+func (m *MockRedshiftAPI) ResumeCluster(arg0 *redshift.ResumeClusterInput) (*redshift.ResumeClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResumeCluster", arg0)
+	ret0, _ := ret[0].(*redshift.ResumeClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResumeCluster indicates an expected call of ResumeCluster
+func (mr *MockRedshiftAPIMockRecorder) ResumeCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeCluster", reflect.TypeOf((*MockRedshiftAPI)(nil).ResumeCluster), arg0)
+}
+
+// ResumeClusterRequest mocks base method
+func (m *MockRedshiftAPI) ResumeClusterRequest(arg0 *redshift.ResumeClusterInput) (*request.Request, *redshift.ResumeClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResumeClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.ResumeClusterOutput)
+	return ret0, ret1
+}
+
+// ResumeClusterRequest indicates an expected call of ResumeClusterRequest
+func (mr *MockRedshiftAPIMockRecorder) ResumeClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeClusterRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).ResumeClusterRequest), arg0)
+}
+
+// ResumeClusterWithContext mocks base method
+func (m *MockRedshiftAPI) ResumeClusterWithContext(arg0 context.Context, arg1 *redshift.ResumeClusterInput, arg2 ...request.Option) (*redshift.ResumeClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ResumeClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.ResumeClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResumeClusterWithContext indicates an expected call of ResumeClusterWithContext
+func (mr *MockRedshiftAPIMockRecorder) ResumeClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeClusterWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ResumeClusterWithContext), varargs...)
 }
 
 // RevokeClusterSecurityGroupIngress mocks base method
