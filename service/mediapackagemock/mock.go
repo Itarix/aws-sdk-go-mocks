@@ -35,6 +35,56 @@ func (m *MockMediaPackageAPI) EXPECT() *MockMediaPackageAPIMockRecorder {
 	return m.recorder
 }
 
+// ConfigureLogs mocks base method
+func (m *MockMediaPackageAPI) ConfigureLogs(arg0 *mediapackage.ConfigureLogsInput) (*mediapackage.ConfigureLogsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ConfigureLogs", arg0)
+	ret0, _ := ret[0].(*mediapackage.ConfigureLogsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ConfigureLogs indicates an expected call of ConfigureLogs
+func (mr *MockMediaPackageAPIMockRecorder) ConfigureLogs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ConfigureLogs", reflect.TypeOf((*MockMediaPackageAPI)(nil).ConfigureLogs), arg0)
+}
+
+// ConfigureLogsRequest mocks base method
+func (m *MockMediaPackageAPI) ConfigureLogsRequest(arg0 *mediapackage.ConfigureLogsInput) (*request.Request, *mediapackage.ConfigureLogsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ConfigureLogsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediapackage.ConfigureLogsOutput)
+	return ret0, ret1
+}
+
+// ConfigureLogsRequest indicates an expected call of ConfigureLogsRequest
+func (mr *MockMediaPackageAPIMockRecorder) ConfigureLogsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ConfigureLogsRequest", reflect.TypeOf((*MockMediaPackageAPI)(nil).ConfigureLogsRequest), arg0)
+}
+
+// ConfigureLogsWithContext mocks base method
+func (m *MockMediaPackageAPI) ConfigureLogsWithContext(arg0 context.Context, arg1 *mediapackage.ConfigureLogsInput, arg2 ...request.Option) (*mediapackage.ConfigureLogsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ConfigureLogsWithContext", varargs...)
+	ret0, _ := ret[0].(*mediapackage.ConfigureLogsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ConfigureLogsWithContext indicates an expected call of ConfigureLogsWithContext
+func (mr *MockMediaPackageAPIMockRecorder) ConfigureLogsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ConfigureLogsWithContext", reflect.TypeOf((*MockMediaPackageAPI)(nil).ConfigureLogsWithContext), varargs...)
+}
+
 // CreateChannel mocks base method
 func (m *MockMediaPackageAPI) CreateChannel(arg0 *mediapackage.CreateChannelInput) (*mediapackage.CreateChannelOutput, error) {
 	m.ctrl.T.Helper()
