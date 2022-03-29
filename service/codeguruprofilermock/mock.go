@@ -235,6 +235,56 @@ func (mr *MockCodeGuruProfilerAPIMockRecorder) DescribeProfilingGroupWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProfilingGroupWithContext", reflect.TypeOf((*MockCodeGuruProfilerAPI)(nil).DescribeProfilingGroupWithContext), varargs...)
 }
 
+// GetPolicy mocks base method
+func (m *MockCodeGuruProfilerAPI) GetPolicy(arg0 *codeguruprofiler.GetPolicyInput) (*codeguruprofiler.GetPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPolicy", arg0)
+	ret0, _ := ret[0].(*codeguruprofiler.GetPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPolicy indicates an expected call of GetPolicy
+func (mr *MockCodeGuruProfilerAPIMockRecorder) GetPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicy", reflect.TypeOf((*MockCodeGuruProfilerAPI)(nil).GetPolicy), arg0)
+}
+
+// GetPolicyRequest mocks base method
+func (m *MockCodeGuruProfilerAPI) GetPolicyRequest(arg0 *codeguruprofiler.GetPolicyInput) (*request.Request, *codeguruprofiler.GetPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codeguruprofiler.GetPolicyOutput)
+	return ret0, ret1
+}
+
+// GetPolicyRequest indicates an expected call of GetPolicyRequest
+func (mr *MockCodeGuruProfilerAPIMockRecorder) GetPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicyRequest", reflect.TypeOf((*MockCodeGuruProfilerAPI)(nil).GetPolicyRequest), arg0)
+}
+
+// GetPolicyWithContext mocks base method
+func (m *MockCodeGuruProfilerAPI) GetPolicyWithContext(arg0 context.Context, arg1 *codeguruprofiler.GetPolicyInput, arg2 ...request.Option) (*codeguruprofiler.GetPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*codeguruprofiler.GetPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPolicyWithContext indicates an expected call of GetPolicyWithContext
+func (mr *MockCodeGuruProfilerAPIMockRecorder) GetPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicyWithContext", reflect.TypeOf((*MockCodeGuruProfilerAPI)(nil).GetPolicyWithContext), varargs...)
+}
+
 // GetProfile mocks base method
 func (m *MockCodeGuruProfilerAPI) GetProfile(arg0 *codeguruprofiler.GetProfileInput) (*codeguruprofiler.GetProfileOutput, error) {
 	m.ctrl.T.Helper()
@@ -499,6 +549,106 @@ func (mr *MockCodeGuruProfilerAPIMockRecorder) PostAgentProfileWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PostAgentProfileWithContext", reflect.TypeOf((*MockCodeGuruProfilerAPI)(nil).PostAgentProfileWithContext), varargs...)
+}
+
+// PutPermission mocks base method
+func (m *MockCodeGuruProfilerAPI) PutPermission(arg0 *codeguruprofiler.PutPermissionInput) (*codeguruprofiler.PutPermissionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPermission", arg0)
+	ret0, _ := ret[0].(*codeguruprofiler.PutPermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPermission indicates an expected call of PutPermission
+func (mr *MockCodeGuruProfilerAPIMockRecorder) PutPermission(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPermission", reflect.TypeOf((*MockCodeGuruProfilerAPI)(nil).PutPermission), arg0)
+}
+
+// PutPermissionRequest mocks base method
+func (m *MockCodeGuruProfilerAPI) PutPermissionRequest(arg0 *codeguruprofiler.PutPermissionInput) (*request.Request, *codeguruprofiler.PutPermissionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPermissionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codeguruprofiler.PutPermissionOutput)
+	return ret0, ret1
+}
+
+// PutPermissionRequest indicates an expected call of PutPermissionRequest
+func (mr *MockCodeGuruProfilerAPIMockRecorder) PutPermissionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPermissionRequest", reflect.TypeOf((*MockCodeGuruProfilerAPI)(nil).PutPermissionRequest), arg0)
+}
+
+// PutPermissionWithContext mocks base method
+func (m *MockCodeGuruProfilerAPI) PutPermissionWithContext(arg0 context.Context, arg1 *codeguruprofiler.PutPermissionInput, arg2 ...request.Option) (*codeguruprofiler.PutPermissionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutPermissionWithContext", varargs...)
+	ret0, _ := ret[0].(*codeguruprofiler.PutPermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPermissionWithContext indicates an expected call of PutPermissionWithContext
+func (mr *MockCodeGuruProfilerAPIMockRecorder) PutPermissionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPermissionWithContext", reflect.TypeOf((*MockCodeGuruProfilerAPI)(nil).PutPermissionWithContext), varargs...)
+}
+
+// RemovePermission mocks base method
+func (m *MockCodeGuruProfilerAPI) RemovePermission(arg0 *codeguruprofiler.RemovePermissionInput) (*codeguruprofiler.RemovePermissionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemovePermission", arg0)
+	ret0, _ := ret[0].(*codeguruprofiler.RemovePermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemovePermission indicates an expected call of RemovePermission
+func (mr *MockCodeGuruProfilerAPIMockRecorder) RemovePermission(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemovePermission", reflect.TypeOf((*MockCodeGuruProfilerAPI)(nil).RemovePermission), arg0)
+}
+
+// RemovePermissionRequest mocks base method
+func (m *MockCodeGuruProfilerAPI) RemovePermissionRequest(arg0 *codeguruprofiler.RemovePermissionInput) (*request.Request, *codeguruprofiler.RemovePermissionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemovePermissionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codeguruprofiler.RemovePermissionOutput)
+	return ret0, ret1
+}
+
+// RemovePermissionRequest indicates an expected call of RemovePermissionRequest
+func (mr *MockCodeGuruProfilerAPIMockRecorder) RemovePermissionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemovePermissionRequest", reflect.TypeOf((*MockCodeGuruProfilerAPI)(nil).RemovePermissionRequest), arg0)
+}
+
+// RemovePermissionWithContext mocks base method
+func (m *MockCodeGuruProfilerAPI) RemovePermissionWithContext(arg0 context.Context, arg1 *codeguruprofiler.RemovePermissionInput, arg2 ...request.Option) (*codeguruprofiler.RemovePermissionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemovePermissionWithContext", varargs...)
+	ret0, _ := ret[0].(*codeguruprofiler.RemovePermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemovePermissionWithContext indicates an expected call of RemovePermissionWithContext
+func (mr *MockCodeGuruProfilerAPIMockRecorder) RemovePermissionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemovePermissionWithContext", reflect.TypeOf((*MockCodeGuruProfilerAPI)(nil).RemovePermissionWithContext), varargs...)
 }
 
 // UpdateProfilingGroup mocks base method

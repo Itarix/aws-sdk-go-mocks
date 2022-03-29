@@ -3318,6 +3318,56 @@ func (mr *MockChimeAPIMockRecorder) ListAccountsWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccountsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListAccountsWithContext), varargs...)
 }
 
+// ListAttendeeTags mocks base method
+func (m *MockChimeAPI) ListAttendeeTags(arg0 *chime.ListAttendeeTagsInput) (*chime.ListAttendeeTagsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAttendeeTags", arg0)
+	ret0, _ := ret[0].(*chime.ListAttendeeTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAttendeeTags indicates an expected call of ListAttendeeTags
+func (mr *MockChimeAPIMockRecorder) ListAttendeeTags(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttendeeTags", reflect.TypeOf((*MockChimeAPI)(nil).ListAttendeeTags), arg0)
+}
+
+// ListAttendeeTagsRequest mocks base method
+func (m *MockChimeAPI) ListAttendeeTagsRequest(arg0 *chime.ListAttendeeTagsInput) (*request.Request, *chime.ListAttendeeTagsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAttendeeTagsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListAttendeeTagsOutput)
+	return ret0, ret1
+}
+
+// ListAttendeeTagsRequest indicates an expected call of ListAttendeeTagsRequest
+func (mr *MockChimeAPIMockRecorder) ListAttendeeTagsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttendeeTagsRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListAttendeeTagsRequest), arg0)
+}
+
+// ListAttendeeTagsWithContext mocks base method
+func (m *MockChimeAPI) ListAttendeeTagsWithContext(arg0 context.Context, arg1 *chime.ListAttendeeTagsInput, arg2 ...request.Option) (*chime.ListAttendeeTagsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAttendeeTagsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListAttendeeTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAttendeeTagsWithContext indicates an expected call of ListAttendeeTagsWithContext
+func (mr *MockChimeAPIMockRecorder) ListAttendeeTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttendeeTagsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListAttendeeTagsWithContext), varargs...)
+}
+
 // ListAttendees mocks base method
 func (m *MockChimeAPI) ListAttendees(arg0 *chime.ListAttendeesInput) (*chime.ListAttendeesOutput, error) {
 	m.ctrl.T.Helper()
@@ -3482,6 +3532,56 @@ func (mr *MockChimeAPIMockRecorder) ListBotsWithContext(arg0, arg1 interface{}, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBotsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListBotsWithContext), varargs...)
+}
+
+// ListMeetingTags mocks base method
+func (m *MockChimeAPI) ListMeetingTags(arg0 *chime.ListMeetingTagsInput) (*chime.ListMeetingTagsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMeetingTags", arg0)
+	ret0, _ := ret[0].(*chime.ListMeetingTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMeetingTags indicates an expected call of ListMeetingTags
+func (mr *MockChimeAPIMockRecorder) ListMeetingTags(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMeetingTags", reflect.TypeOf((*MockChimeAPI)(nil).ListMeetingTags), arg0)
+}
+
+// ListMeetingTagsRequest mocks base method
+func (m *MockChimeAPI) ListMeetingTagsRequest(arg0 *chime.ListMeetingTagsInput) (*request.Request, *chime.ListMeetingTagsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMeetingTagsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListMeetingTagsOutput)
+	return ret0, ret1
+}
+
+// ListMeetingTagsRequest indicates an expected call of ListMeetingTagsRequest
+func (mr *MockChimeAPIMockRecorder) ListMeetingTagsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMeetingTagsRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListMeetingTagsRequest), arg0)
+}
+
+// ListMeetingTagsWithContext mocks base method
+func (m *MockChimeAPI) ListMeetingTagsWithContext(arg0 context.Context, arg1 *chime.ListMeetingTagsInput, arg2 ...request.Option) (*chime.ListMeetingTagsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMeetingTagsWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListMeetingTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMeetingTagsWithContext indicates an expected call of ListMeetingTagsWithContext
+func (mr *MockChimeAPIMockRecorder) ListMeetingTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMeetingTagsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListMeetingTagsWithContext), varargs...)
 }
 
 // ListMeetings mocks base method
@@ -3980,6 +4080,56 @@ func (mr *MockChimeAPIMockRecorder) ListRoomsWithContext(arg0, arg1 interface{},
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoomsWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListRoomsWithContext), varargs...)
+}
+
+// ListTagsForResource mocks base method
+func (m *MockChimeAPI) ListTagsForResource(arg0 *chime.ListTagsForResourceInput) (*chime.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*chime.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockChimeAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockChimeAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockChimeAPI) ListTagsForResourceRequest(arg0 *chime.ListTagsForResourceInput) (*request.Request, *chime.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockChimeAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockChimeAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *chime.ListTagsForResourceInput, arg2 ...request.Option) (*chime.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockChimeAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
 // ListUsers mocks base method
@@ -4879,6 +5029,306 @@ func (mr *MockChimeAPIMockRecorder) SearchAvailablePhoneNumbersWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAvailablePhoneNumbersWithContext", reflect.TypeOf((*MockChimeAPI)(nil).SearchAvailablePhoneNumbersWithContext), varargs...)
+}
+
+// TagAttendee mocks base method
+func (m *MockChimeAPI) TagAttendee(arg0 *chime.TagAttendeeInput) (*chime.TagAttendeeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagAttendee", arg0)
+	ret0, _ := ret[0].(*chime.TagAttendeeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagAttendee indicates an expected call of TagAttendee
+func (mr *MockChimeAPIMockRecorder) TagAttendee(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagAttendee", reflect.TypeOf((*MockChimeAPI)(nil).TagAttendee), arg0)
+}
+
+// TagAttendeeRequest mocks base method
+func (m *MockChimeAPI) TagAttendeeRequest(arg0 *chime.TagAttendeeInput) (*request.Request, *chime.TagAttendeeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagAttendeeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.TagAttendeeOutput)
+	return ret0, ret1
+}
+
+// TagAttendeeRequest indicates an expected call of TagAttendeeRequest
+func (mr *MockChimeAPIMockRecorder) TagAttendeeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagAttendeeRequest", reflect.TypeOf((*MockChimeAPI)(nil).TagAttendeeRequest), arg0)
+}
+
+// TagAttendeeWithContext mocks base method
+func (m *MockChimeAPI) TagAttendeeWithContext(arg0 context.Context, arg1 *chime.TagAttendeeInput, arg2 ...request.Option) (*chime.TagAttendeeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagAttendeeWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.TagAttendeeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagAttendeeWithContext indicates an expected call of TagAttendeeWithContext
+func (mr *MockChimeAPIMockRecorder) TagAttendeeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagAttendeeWithContext", reflect.TypeOf((*MockChimeAPI)(nil).TagAttendeeWithContext), varargs...)
+}
+
+// TagMeeting mocks base method
+func (m *MockChimeAPI) TagMeeting(arg0 *chime.TagMeetingInput) (*chime.TagMeetingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagMeeting", arg0)
+	ret0, _ := ret[0].(*chime.TagMeetingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagMeeting indicates an expected call of TagMeeting
+func (mr *MockChimeAPIMockRecorder) TagMeeting(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagMeeting", reflect.TypeOf((*MockChimeAPI)(nil).TagMeeting), arg0)
+}
+
+// TagMeetingRequest mocks base method
+func (m *MockChimeAPI) TagMeetingRequest(arg0 *chime.TagMeetingInput) (*request.Request, *chime.TagMeetingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagMeetingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.TagMeetingOutput)
+	return ret0, ret1
+}
+
+// TagMeetingRequest indicates an expected call of TagMeetingRequest
+func (mr *MockChimeAPIMockRecorder) TagMeetingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagMeetingRequest", reflect.TypeOf((*MockChimeAPI)(nil).TagMeetingRequest), arg0)
+}
+
+// TagMeetingWithContext mocks base method
+func (m *MockChimeAPI) TagMeetingWithContext(arg0 context.Context, arg1 *chime.TagMeetingInput, arg2 ...request.Option) (*chime.TagMeetingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagMeetingWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.TagMeetingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagMeetingWithContext indicates an expected call of TagMeetingWithContext
+func (mr *MockChimeAPIMockRecorder) TagMeetingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagMeetingWithContext", reflect.TypeOf((*MockChimeAPI)(nil).TagMeetingWithContext), varargs...)
+}
+
+// TagResource mocks base method
+func (m *MockChimeAPI) TagResource(arg0 *chime.TagResourceInput) (*chime.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*chime.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockChimeAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockChimeAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockChimeAPI) TagResourceRequest(arg0 *chime.TagResourceInput) (*request.Request, *chime.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockChimeAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockChimeAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockChimeAPI) TagResourceWithContext(arg0 context.Context, arg1 *chime.TagResourceInput, arg2 ...request.Option) (*chime.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockChimeAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockChimeAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// UntagAttendee mocks base method
+func (m *MockChimeAPI) UntagAttendee(arg0 *chime.UntagAttendeeInput) (*chime.UntagAttendeeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagAttendee", arg0)
+	ret0, _ := ret[0].(*chime.UntagAttendeeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagAttendee indicates an expected call of UntagAttendee
+func (mr *MockChimeAPIMockRecorder) UntagAttendee(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagAttendee", reflect.TypeOf((*MockChimeAPI)(nil).UntagAttendee), arg0)
+}
+
+// UntagAttendeeRequest mocks base method
+func (m *MockChimeAPI) UntagAttendeeRequest(arg0 *chime.UntagAttendeeInput) (*request.Request, *chime.UntagAttendeeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagAttendeeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.UntagAttendeeOutput)
+	return ret0, ret1
+}
+
+// UntagAttendeeRequest indicates an expected call of UntagAttendeeRequest
+func (mr *MockChimeAPIMockRecorder) UntagAttendeeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagAttendeeRequest", reflect.TypeOf((*MockChimeAPI)(nil).UntagAttendeeRequest), arg0)
+}
+
+// UntagAttendeeWithContext mocks base method
+func (m *MockChimeAPI) UntagAttendeeWithContext(arg0 context.Context, arg1 *chime.UntagAttendeeInput, arg2 ...request.Option) (*chime.UntagAttendeeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagAttendeeWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.UntagAttendeeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagAttendeeWithContext indicates an expected call of UntagAttendeeWithContext
+func (mr *MockChimeAPIMockRecorder) UntagAttendeeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagAttendeeWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UntagAttendeeWithContext), varargs...)
+}
+
+// UntagMeeting mocks base method
+func (m *MockChimeAPI) UntagMeeting(arg0 *chime.UntagMeetingInput) (*chime.UntagMeetingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagMeeting", arg0)
+	ret0, _ := ret[0].(*chime.UntagMeetingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagMeeting indicates an expected call of UntagMeeting
+func (mr *MockChimeAPIMockRecorder) UntagMeeting(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagMeeting", reflect.TypeOf((*MockChimeAPI)(nil).UntagMeeting), arg0)
+}
+
+// UntagMeetingRequest mocks base method
+func (m *MockChimeAPI) UntagMeetingRequest(arg0 *chime.UntagMeetingInput) (*request.Request, *chime.UntagMeetingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagMeetingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.UntagMeetingOutput)
+	return ret0, ret1
+}
+
+// UntagMeetingRequest indicates an expected call of UntagMeetingRequest
+func (mr *MockChimeAPIMockRecorder) UntagMeetingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagMeetingRequest", reflect.TypeOf((*MockChimeAPI)(nil).UntagMeetingRequest), arg0)
+}
+
+// UntagMeetingWithContext mocks base method
+func (m *MockChimeAPI) UntagMeetingWithContext(arg0 context.Context, arg1 *chime.UntagMeetingInput, arg2 ...request.Option) (*chime.UntagMeetingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagMeetingWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.UntagMeetingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagMeetingWithContext indicates an expected call of UntagMeetingWithContext
+func (mr *MockChimeAPIMockRecorder) UntagMeetingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagMeetingWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UntagMeetingWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockChimeAPI) UntagResource(arg0 *chime.UntagResourceInput) (*chime.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*chime.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockChimeAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockChimeAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockChimeAPI) UntagResourceRequest(arg0 *chime.UntagResourceInput) (*request.Request, *chime.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockChimeAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockChimeAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockChimeAPI) UntagResourceWithContext(arg0 context.Context, arg1 *chime.UntagResourceInput, arg2 ...request.Option) (*chime.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockChimeAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
 // UpdateAccount mocks base method
