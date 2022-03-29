@@ -1150,6 +1150,56 @@ func (mr *MockGlueAPIMockRecorder) CreatePartition(arg0 interface{}) *gomock.Cal
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePartition", reflect.TypeOf((*MockGlueAPI)(nil).CreatePartition), arg0)
 }
 
+// CreatePartitionIndex mocks base method
+func (m *MockGlueAPI) CreatePartitionIndex(arg0 *glue.CreatePartitionIndexInput) (*glue.CreatePartitionIndexOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePartitionIndex", arg0)
+	ret0, _ := ret[0].(*glue.CreatePartitionIndexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePartitionIndex indicates an expected call of CreatePartitionIndex
+func (mr *MockGlueAPIMockRecorder) CreatePartitionIndex(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePartitionIndex", reflect.TypeOf((*MockGlueAPI)(nil).CreatePartitionIndex), arg0)
+}
+
+// CreatePartitionIndexRequest mocks base method
+func (m *MockGlueAPI) CreatePartitionIndexRequest(arg0 *glue.CreatePartitionIndexInput) (*request.Request, *glue.CreatePartitionIndexOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePartitionIndexRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.CreatePartitionIndexOutput)
+	return ret0, ret1
+}
+
+// CreatePartitionIndexRequest indicates an expected call of CreatePartitionIndexRequest
+func (mr *MockGlueAPIMockRecorder) CreatePartitionIndexRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePartitionIndexRequest", reflect.TypeOf((*MockGlueAPI)(nil).CreatePartitionIndexRequest), arg0)
+}
+
+// CreatePartitionIndexWithContext mocks base method
+func (m *MockGlueAPI) CreatePartitionIndexWithContext(arg0 context.Context, arg1 *glue.CreatePartitionIndexInput, arg2 ...request.Option) (*glue.CreatePartitionIndexOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreatePartitionIndexWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.CreatePartitionIndexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePartitionIndexWithContext indicates an expected call of CreatePartitionIndexWithContext
+func (mr *MockGlueAPIMockRecorder) CreatePartitionIndexWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePartitionIndexWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreatePartitionIndexWithContext), varargs...)
+}
+
 // CreatePartitionRequest mocks base method
 func (m *MockGlueAPI) CreatePartitionRequest(arg0 *glue.CreatePartitionInput) (*request.Request, *glue.CreatePartitionOutput) {
 	m.ctrl.T.Helper()
@@ -2048,6 +2098,56 @@ func (m *MockGlueAPI) DeletePartition(arg0 *glue.DeletePartitionInput) (*glue.De
 func (mr *MockGlueAPIMockRecorder) DeletePartition(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePartition", reflect.TypeOf((*MockGlueAPI)(nil).DeletePartition), arg0)
+}
+
+// DeletePartitionIndex mocks base method
+func (m *MockGlueAPI) DeletePartitionIndex(arg0 *glue.DeletePartitionIndexInput) (*glue.DeletePartitionIndexOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePartitionIndex", arg0)
+	ret0, _ := ret[0].(*glue.DeletePartitionIndexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePartitionIndex indicates an expected call of DeletePartitionIndex
+func (mr *MockGlueAPIMockRecorder) DeletePartitionIndex(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePartitionIndex", reflect.TypeOf((*MockGlueAPI)(nil).DeletePartitionIndex), arg0)
+}
+
+// DeletePartitionIndexRequest mocks base method
+func (m *MockGlueAPI) DeletePartitionIndexRequest(arg0 *glue.DeletePartitionIndexInput) (*request.Request, *glue.DeletePartitionIndexOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePartitionIndexRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.DeletePartitionIndexOutput)
+	return ret0, ret1
+}
+
+// DeletePartitionIndexRequest indicates an expected call of DeletePartitionIndexRequest
+func (mr *MockGlueAPIMockRecorder) DeletePartitionIndexRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePartitionIndexRequest", reflect.TypeOf((*MockGlueAPI)(nil).DeletePartitionIndexRequest), arg0)
+}
+
+// DeletePartitionIndexWithContext mocks base method
+func (m *MockGlueAPI) DeletePartitionIndexWithContext(arg0 context.Context, arg1 *glue.DeletePartitionIndexInput, arg2 ...request.Option) (*glue.DeletePartitionIndexOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePartitionIndexWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.DeletePartitionIndexOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePartitionIndexWithContext indicates an expected call of DeletePartitionIndexWithContext
+func (mr *MockGlueAPIMockRecorder) DeletePartitionIndexWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePartitionIndexWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeletePartitionIndexWithContext), varargs...)
 }
 
 // DeletePartitionRequest mocks base method

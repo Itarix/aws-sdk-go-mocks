@@ -135,6 +135,56 @@ func (mr *MockSSOAdminAPIMockRecorder) CreateAccountAssignmentWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccountAssignmentWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).CreateAccountAssignmentWithContext), varargs...)
 }
 
+// CreateInstanceAccessControlAttributeConfiguration mocks base method
+func (m *MockSSOAdminAPI) CreateInstanceAccessControlAttributeConfiguration(arg0 *ssoadmin.CreateInstanceAccessControlAttributeConfigurationInput) (*ssoadmin.CreateInstanceAccessControlAttributeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateInstanceAccessControlAttributeConfiguration", arg0)
+	ret0, _ := ret[0].(*ssoadmin.CreateInstanceAccessControlAttributeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateInstanceAccessControlAttributeConfiguration indicates an expected call of CreateInstanceAccessControlAttributeConfiguration
+func (mr *MockSSOAdminAPIMockRecorder) CreateInstanceAccessControlAttributeConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateInstanceAccessControlAttributeConfiguration", reflect.TypeOf((*MockSSOAdminAPI)(nil).CreateInstanceAccessControlAttributeConfiguration), arg0)
+}
+
+// CreateInstanceAccessControlAttributeConfigurationRequest mocks base method
+func (m *MockSSOAdminAPI) CreateInstanceAccessControlAttributeConfigurationRequest(arg0 *ssoadmin.CreateInstanceAccessControlAttributeConfigurationInput) (*request.Request, *ssoadmin.CreateInstanceAccessControlAttributeConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateInstanceAccessControlAttributeConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssoadmin.CreateInstanceAccessControlAttributeConfigurationOutput)
+	return ret0, ret1
+}
+
+// CreateInstanceAccessControlAttributeConfigurationRequest indicates an expected call of CreateInstanceAccessControlAttributeConfigurationRequest
+func (mr *MockSSOAdminAPIMockRecorder) CreateInstanceAccessControlAttributeConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateInstanceAccessControlAttributeConfigurationRequest", reflect.TypeOf((*MockSSOAdminAPI)(nil).CreateInstanceAccessControlAttributeConfigurationRequest), arg0)
+}
+
+// CreateInstanceAccessControlAttributeConfigurationWithContext mocks base method
+func (m *MockSSOAdminAPI) CreateInstanceAccessControlAttributeConfigurationWithContext(arg0 context.Context, arg1 *ssoadmin.CreateInstanceAccessControlAttributeConfigurationInput, arg2 ...request.Option) (*ssoadmin.CreateInstanceAccessControlAttributeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateInstanceAccessControlAttributeConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*ssoadmin.CreateInstanceAccessControlAttributeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateInstanceAccessControlAttributeConfigurationWithContext indicates an expected call of CreateInstanceAccessControlAttributeConfigurationWithContext
+func (mr *MockSSOAdminAPIMockRecorder) CreateInstanceAccessControlAttributeConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateInstanceAccessControlAttributeConfigurationWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).CreateInstanceAccessControlAttributeConfigurationWithContext), varargs...)
+}
+
 // CreatePermissionSet mocks base method
 func (m *MockSSOAdminAPI) CreatePermissionSet(arg0 *ssoadmin.CreatePermissionSetInput) (*ssoadmin.CreatePermissionSetOutput, error) {
 	m.ctrl.T.Helper()
@@ -285,6 +335,56 @@ func (mr *MockSSOAdminAPIMockRecorder) DeleteInlinePolicyFromPermissionSetWithCo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInlinePolicyFromPermissionSetWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).DeleteInlinePolicyFromPermissionSetWithContext), varargs...)
 }
 
+// DeleteInstanceAccessControlAttributeConfiguration mocks base method
+func (m *MockSSOAdminAPI) DeleteInstanceAccessControlAttributeConfiguration(arg0 *ssoadmin.DeleteInstanceAccessControlAttributeConfigurationInput) (*ssoadmin.DeleteInstanceAccessControlAttributeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteInstanceAccessControlAttributeConfiguration", arg0)
+	ret0, _ := ret[0].(*ssoadmin.DeleteInstanceAccessControlAttributeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteInstanceAccessControlAttributeConfiguration indicates an expected call of DeleteInstanceAccessControlAttributeConfiguration
+func (mr *MockSSOAdminAPIMockRecorder) DeleteInstanceAccessControlAttributeConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInstanceAccessControlAttributeConfiguration", reflect.TypeOf((*MockSSOAdminAPI)(nil).DeleteInstanceAccessControlAttributeConfiguration), arg0)
+}
+
+// DeleteInstanceAccessControlAttributeConfigurationRequest mocks base method
+func (m *MockSSOAdminAPI) DeleteInstanceAccessControlAttributeConfigurationRequest(arg0 *ssoadmin.DeleteInstanceAccessControlAttributeConfigurationInput) (*request.Request, *ssoadmin.DeleteInstanceAccessControlAttributeConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteInstanceAccessControlAttributeConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssoadmin.DeleteInstanceAccessControlAttributeConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteInstanceAccessControlAttributeConfigurationRequest indicates an expected call of DeleteInstanceAccessControlAttributeConfigurationRequest
+func (mr *MockSSOAdminAPIMockRecorder) DeleteInstanceAccessControlAttributeConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInstanceAccessControlAttributeConfigurationRequest", reflect.TypeOf((*MockSSOAdminAPI)(nil).DeleteInstanceAccessControlAttributeConfigurationRequest), arg0)
+}
+
+// DeleteInstanceAccessControlAttributeConfigurationWithContext mocks base method
+func (m *MockSSOAdminAPI) DeleteInstanceAccessControlAttributeConfigurationWithContext(arg0 context.Context, arg1 *ssoadmin.DeleteInstanceAccessControlAttributeConfigurationInput, arg2 ...request.Option) (*ssoadmin.DeleteInstanceAccessControlAttributeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteInstanceAccessControlAttributeConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*ssoadmin.DeleteInstanceAccessControlAttributeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteInstanceAccessControlAttributeConfigurationWithContext indicates an expected call of DeleteInstanceAccessControlAttributeConfigurationWithContext
+func (mr *MockSSOAdminAPIMockRecorder) DeleteInstanceAccessControlAttributeConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInstanceAccessControlAttributeConfigurationWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).DeleteInstanceAccessControlAttributeConfigurationWithContext), varargs...)
+}
+
 // DeletePermissionSet mocks base method
 func (m *MockSSOAdminAPI) DeletePermissionSet(arg0 *ssoadmin.DeletePermissionSetInput) (*ssoadmin.DeletePermissionSetOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +533,56 @@ func (mr *MockSSOAdminAPIMockRecorder) DescribeAccountAssignmentDeletionStatusWi
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountAssignmentDeletionStatusWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).DescribeAccountAssignmentDeletionStatusWithContext), varargs...)
+}
+
+// DescribeInstanceAccessControlAttributeConfiguration mocks base method
+func (m *MockSSOAdminAPI) DescribeInstanceAccessControlAttributeConfiguration(arg0 *ssoadmin.DescribeInstanceAccessControlAttributeConfigurationInput) (*ssoadmin.DescribeInstanceAccessControlAttributeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInstanceAccessControlAttributeConfiguration", arg0)
+	ret0, _ := ret[0].(*ssoadmin.DescribeInstanceAccessControlAttributeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInstanceAccessControlAttributeConfiguration indicates an expected call of DescribeInstanceAccessControlAttributeConfiguration
+func (mr *MockSSOAdminAPIMockRecorder) DescribeInstanceAccessControlAttributeConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceAccessControlAttributeConfiguration", reflect.TypeOf((*MockSSOAdminAPI)(nil).DescribeInstanceAccessControlAttributeConfiguration), arg0)
+}
+
+// DescribeInstanceAccessControlAttributeConfigurationRequest mocks base method
+func (m *MockSSOAdminAPI) DescribeInstanceAccessControlAttributeConfigurationRequest(arg0 *ssoadmin.DescribeInstanceAccessControlAttributeConfigurationInput) (*request.Request, *ssoadmin.DescribeInstanceAccessControlAttributeConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInstanceAccessControlAttributeConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssoadmin.DescribeInstanceAccessControlAttributeConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeInstanceAccessControlAttributeConfigurationRequest indicates an expected call of DescribeInstanceAccessControlAttributeConfigurationRequest
+func (mr *MockSSOAdminAPIMockRecorder) DescribeInstanceAccessControlAttributeConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceAccessControlAttributeConfigurationRequest", reflect.TypeOf((*MockSSOAdminAPI)(nil).DescribeInstanceAccessControlAttributeConfigurationRequest), arg0)
+}
+
+// DescribeInstanceAccessControlAttributeConfigurationWithContext mocks base method
+func (m *MockSSOAdminAPI) DescribeInstanceAccessControlAttributeConfigurationWithContext(arg0 context.Context, arg1 *ssoadmin.DescribeInstanceAccessControlAttributeConfigurationInput, arg2 ...request.Option) (*ssoadmin.DescribeInstanceAccessControlAttributeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeInstanceAccessControlAttributeConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*ssoadmin.DescribeInstanceAccessControlAttributeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInstanceAccessControlAttributeConfigurationWithContext indicates an expected call of DescribeInstanceAccessControlAttributeConfigurationWithContext
+func (mr *MockSSOAdminAPIMockRecorder) DescribeInstanceAccessControlAttributeConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceAccessControlAttributeConfigurationWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).DescribeInstanceAccessControlAttributeConfigurationWithContext), varargs...)
 }
 
 // DescribePermissionSet mocks base method
@@ -1663,6 +1813,56 @@ func (mr *MockSSOAdminAPIMockRecorder) UntagResourceWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateInstanceAccessControlAttributeConfiguration mocks base method
+func (m *MockSSOAdminAPI) UpdateInstanceAccessControlAttributeConfiguration(arg0 *ssoadmin.UpdateInstanceAccessControlAttributeConfigurationInput) (*ssoadmin.UpdateInstanceAccessControlAttributeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateInstanceAccessControlAttributeConfiguration", arg0)
+	ret0, _ := ret[0].(*ssoadmin.UpdateInstanceAccessControlAttributeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateInstanceAccessControlAttributeConfiguration indicates an expected call of UpdateInstanceAccessControlAttributeConfiguration
+func (mr *MockSSOAdminAPIMockRecorder) UpdateInstanceAccessControlAttributeConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceAccessControlAttributeConfiguration", reflect.TypeOf((*MockSSOAdminAPI)(nil).UpdateInstanceAccessControlAttributeConfiguration), arg0)
+}
+
+// UpdateInstanceAccessControlAttributeConfigurationRequest mocks base method
+func (m *MockSSOAdminAPI) UpdateInstanceAccessControlAttributeConfigurationRequest(arg0 *ssoadmin.UpdateInstanceAccessControlAttributeConfigurationInput) (*request.Request, *ssoadmin.UpdateInstanceAccessControlAttributeConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateInstanceAccessControlAttributeConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssoadmin.UpdateInstanceAccessControlAttributeConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateInstanceAccessControlAttributeConfigurationRequest indicates an expected call of UpdateInstanceAccessControlAttributeConfigurationRequest
+func (mr *MockSSOAdminAPIMockRecorder) UpdateInstanceAccessControlAttributeConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceAccessControlAttributeConfigurationRequest", reflect.TypeOf((*MockSSOAdminAPI)(nil).UpdateInstanceAccessControlAttributeConfigurationRequest), arg0)
+}
+
+// UpdateInstanceAccessControlAttributeConfigurationWithContext mocks base method
+func (m *MockSSOAdminAPI) UpdateInstanceAccessControlAttributeConfigurationWithContext(arg0 context.Context, arg1 *ssoadmin.UpdateInstanceAccessControlAttributeConfigurationInput, arg2 ...request.Option) (*ssoadmin.UpdateInstanceAccessControlAttributeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateInstanceAccessControlAttributeConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*ssoadmin.UpdateInstanceAccessControlAttributeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateInstanceAccessControlAttributeConfigurationWithContext indicates an expected call of UpdateInstanceAccessControlAttributeConfigurationWithContext
+func (mr *MockSSOAdminAPIMockRecorder) UpdateInstanceAccessControlAttributeConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceAccessControlAttributeConfigurationWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).UpdateInstanceAccessControlAttributeConfigurationWithContext), varargs...)
 }
 
 // UpdatePermissionSet mocks base method

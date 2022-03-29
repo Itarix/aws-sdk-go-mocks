@@ -335,6 +335,106 @@ func (mr *MockEMRAPIMockRecorder) CreateSecurityConfigurationWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityConfigurationWithContext", reflect.TypeOf((*MockEMRAPI)(nil).CreateSecurityConfigurationWithContext), varargs...)
 }
 
+// CreateStudio mocks base method
+func (m *MockEMRAPI) CreateStudio(arg0 *emr.CreateStudioInput) (*emr.CreateStudioOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateStudio", arg0)
+	ret0, _ := ret[0].(*emr.CreateStudioOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateStudio indicates an expected call of CreateStudio
+func (mr *MockEMRAPIMockRecorder) CreateStudio(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudio", reflect.TypeOf((*MockEMRAPI)(nil).CreateStudio), arg0)
+}
+
+// CreateStudioRequest mocks base method
+func (m *MockEMRAPI) CreateStudioRequest(arg0 *emr.CreateStudioInput) (*request.Request, *emr.CreateStudioOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateStudioRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.CreateStudioOutput)
+	return ret0, ret1
+}
+
+// CreateStudioRequest indicates an expected call of CreateStudioRequest
+func (mr *MockEMRAPIMockRecorder) CreateStudioRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudioRequest", reflect.TypeOf((*MockEMRAPI)(nil).CreateStudioRequest), arg0)
+}
+
+// CreateStudioSessionMapping mocks base method
+func (m *MockEMRAPI) CreateStudioSessionMapping(arg0 *emr.CreateStudioSessionMappingInput) (*emr.CreateStudioSessionMappingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateStudioSessionMapping", arg0)
+	ret0, _ := ret[0].(*emr.CreateStudioSessionMappingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateStudioSessionMapping indicates an expected call of CreateStudioSessionMapping
+func (mr *MockEMRAPIMockRecorder) CreateStudioSessionMapping(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudioSessionMapping", reflect.TypeOf((*MockEMRAPI)(nil).CreateStudioSessionMapping), arg0)
+}
+
+// CreateStudioSessionMappingRequest mocks base method
+func (m *MockEMRAPI) CreateStudioSessionMappingRequest(arg0 *emr.CreateStudioSessionMappingInput) (*request.Request, *emr.CreateStudioSessionMappingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateStudioSessionMappingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.CreateStudioSessionMappingOutput)
+	return ret0, ret1
+}
+
+// CreateStudioSessionMappingRequest indicates an expected call of CreateStudioSessionMappingRequest
+func (mr *MockEMRAPIMockRecorder) CreateStudioSessionMappingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudioSessionMappingRequest", reflect.TypeOf((*MockEMRAPI)(nil).CreateStudioSessionMappingRequest), arg0)
+}
+
+// CreateStudioSessionMappingWithContext mocks base method
+func (m *MockEMRAPI) CreateStudioSessionMappingWithContext(arg0 context.Context, arg1 *emr.CreateStudioSessionMappingInput, arg2 ...request.Option) (*emr.CreateStudioSessionMappingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateStudioSessionMappingWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.CreateStudioSessionMappingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateStudioSessionMappingWithContext indicates an expected call of CreateStudioSessionMappingWithContext
+func (mr *MockEMRAPIMockRecorder) CreateStudioSessionMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudioSessionMappingWithContext", reflect.TypeOf((*MockEMRAPI)(nil).CreateStudioSessionMappingWithContext), varargs...)
+}
+
+// CreateStudioWithContext mocks base method
+func (m *MockEMRAPI) CreateStudioWithContext(arg0 context.Context, arg1 *emr.CreateStudioInput, arg2 ...request.Option) (*emr.CreateStudioOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateStudioWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.CreateStudioOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateStudioWithContext indicates an expected call of CreateStudioWithContext
+func (mr *MockEMRAPIMockRecorder) CreateStudioWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudioWithContext", reflect.TypeOf((*MockEMRAPI)(nil).CreateStudioWithContext), varargs...)
+}
+
 // DeleteSecurityConfiguration mocks base method
 func (m *MockEMRAPI) DeleteSecurityConfiguration(arg0 *emr.DeleteSecurityConfigurationInput) (*emr.DeleteSecurityConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +483,106 @@ func (mr *MockEMRAPIMockRecorder) DeleteSecurityConfigurationWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityConfigurationWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DeleteSecurityConfigurationWithContext), varargs...)
+}
+
+// DeleteStudio mocks base method
+func (m *MockEMRAPI) DeleteStudio(arg0 *emr.DeleteStudioInput) (*emr.DeleteStudioOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStudio", arg0)
+	ret0, _ := ret[0].(*emr.DeleteStudioOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStudio indicates an expected call of DeleteStudio
+func (mr *MockEMRAPIMockRecorder) DeleteStudio(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudio", reflect.TypeOf((*MockEMRAPI)(nil).DeleteStudio), arg0)
+}
+
+// DeleteStudioRequest mocks base method
+func (m *MockEMRAPI) DeleteStudioRequest(arg0 *emr.DeleteStudioInput) (*request.Request, *emr.DeleteStudioOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStudioRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.DeleteStudioOutput)
+	return ret0, ret1
+}
+
+// DeleteStudioRequest indicates an expected call of DeleteStudioRequest
+func (mr *MockEMRAPIMockRecorder) DeleteStudioRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudioRequest", reflect.TypeOf((*MockEMRAPI)(nil).DeleteStudioRequest), arg0)
+}
+
+// DeleteStudioSessionMapping mocks base method
+func (m *MockEMRAPI) DeleteStudioSessionMapping(arg0 *emr.DeleteStudioSessionMappingInput) (*emr.DeleteStudioSessionMappingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStudioSessionMapping", arg0)
+	ret0, _ := ret[0].(*emr.DeleteStudioSessionMappingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStudioSessionMapping indicates an expected call of DeleteStudioSessionMapping
+func (mr *MockEMRAPIMockRecorder) DeleteStudioSessionMapping(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudioSessionMapping", reflect.TypeOf((*MockEMRAPI)(nil).DeleteStudioSessionMapping), arg0)
+}
+
+// DeleteStudioSessionMappingRequest mocks base method
+func (m *MockEMRAPI) DeleteStudioSessionMappingRequest(arg0 *emr.DeleteStudioSessionMappingInput) (*request.Request, *emr.DeleteStudioSessionMappingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStudioSessionMappingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.DeleteStudioSessionMappingOutput)
+	return ret0, ret1
+}
+
+// DeleteStudioSessionMappingRequest indicates an expected call of DeleteStudioSessionMappingRequest
+func (mr *MockEMRAPIMockRecorder) DeleteStudioSessionMappingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudioSessionMappingRequest", reflect.TypeOf((*MockEMRAPI)(nil).DeleteStudioSessionMappingRequest), arg0)
+}
+
+// DeleteStudioSessionMappingWithContext mocks base method
+func (m *MockEMRAPI) DeleteStudioSessionMappingWithContext(arg0 context.Context, arg1 *emr.DeleteStudioSessionMappingInput, arg2 ...request.Option) (*emr.DeleteStudioSessionMappingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteStudioSessionMappingWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.DeleteStudioSessionMappingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStudioSessionMappingWithContext indicates an expected call of DeleteStudioSessionMappingWithContext
+func (mr *MockEMRAPIMockRecorder) DeleteStudioSessionMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudioSessionMappingWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DeleteStudioSessionMappingWithContext), varargs...)
+}
+
+// DeleteStudioWithContext mocks base method
+func (m *MockEMRAPI) DeleteStudioWithContext(arg0 context.Context, arg1 *emr.DeleteStudioInput, arg2 ...request.Option) (*emr.DeleteStudioOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteStudioWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.DeleteStudioOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStudioWithContext indicates an expected call of DeleteStudioWithContext
+func (mr *MockEMRAPIMockRecorder) DeleteStudioWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudioWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DeleteStudioWithContext), varargs...)
 }
 
 // DescribeCluster mocks base method
@@ -635,6 +835,56 @@ func (mr *MockEMRAPIMockRecorder) DescribeStepWithContext(arg0, arg1 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStepWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DescribeStepWithContext), varargs...)
 }
 
+// DescribeStudio mocks base method
+func (m *MockEMRAPI) DescribeStudio(arg0 *emr.DescribeStudioInput) (*emr.DescribeStudioOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStudio", arg0)
+	ret0, _ := ret[0].(*emr.DescribeStudioOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStudio indicates an expected call of DescribeStudio
+func (mr *MockEMRAPIMockRecorder) DescribeStudio(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStudio", reflect.TypeOf((*MockEMRAPI)(nil).DescribeStudio), arg0)
+}
+
+// DescribeStudioRequest mocks base method
+func (m *MockEMRAPI) DescribeStudioRequest(arg0 *emr.DescribeStudioInput) (*request.Request, *emr.DescribeStudioOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStudioRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.DescribeStudioOutput)
+	return ret0, ret1
+}
+
+// DescribeStudioRequest indicates an expected call of DescribeStudioRequest
+func (mr *MockEMRAPIMockRecorder) DescribeStudioRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStudioRequest", reflect.TypeOf((*MockEMRAPI)(nil).DescribeStudioRequest), arg0)
+}
+
+// DescribeStudioWithContext mocks base method
+func (m *MockEMRAPI) DescribeStudioWithContext(arg0 context.Context, arg1 *emr.DescribeStudioInput, arg2 ...request.Option) (*emr.DescribeStudioOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeStudioWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.DescribeStudioOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStudioWithContext indicates an expected call of DescribeStudioWithContext
+func (mr *MockEMRAPIMockRecorder) DescribeStudioWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStudioWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DescribeStudioWithContext), varargs...)
+}
+
 // GetBlockPublicAccessConfiguration mocks base method
 func (m *MockEMRAPI) GetBlockPublicAccessConfiguration(arg0 *emr.GetBlockPublicAccessConfigurationInput) (*emr.GetBlockPublicAccessConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -733,6 +983,56 @@ func (mr *MockEMRAPIMockRecorder) GetManagedScalingPolicyWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetManagedScalingPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).GetManagedScalingPolicyWithContext), varargs...)
+}
+
+// GetStudioSessionMapping mocks base method
+func (m *MockEMRAPI) GetStudioSessionMapping(arg0 *emr.GetStudioSessionMappingInput) (*emr.GetStudioSessionMappingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStudioSessionMapping", arg0)
+	ret0, _ := ret[0].(*emr.GetStudioSessionMappingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStudioSessionMapping indicates an expected call of GetStudioSessionMapping
+func (mr *MockEMRAPIMockRecorder) GetStudioSessionMapping(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStudioSessionMapping", reflect.TypeOf((*MockEMRAPI)(nil).GetStudioSessionMapping), arg0)
+}
+
+// GetStudioSessionMappingRequest mocks base method
+func (m *MockEMRAPI) GetStudioSessionMappingRequest(arg0 *emr.GetStudioSessionMappingInput) (*request.Request, *emr.GetStudioSessionMappingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStudioSessionMappingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.GetStudioSessionMappingOutput)
+	return ret0, ret1
+}
+
+// GetStudioSessionMappingRequest indicates an expected call of GetStudioSessionMappingRequest
+func (mr *MockEMRAPIMockRecorder) GetStudioSessionMappingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStudioSessionMappingRequest", reflect.TypeOf((*MockEMRAPI)(nil).GetStudioSessionMappingRequest), arg0)
+}
+
+// GetStudioSessionMappingWithContext mocks base method
+func (m *MockEMRAPI) GetStudioSessionMappingWithContext(arg0 context.Context, arg1 *emr.GetStudioSessionMappingInput, arg2 ...request.Option) (*emr.GetStudioSessionMappingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetStudioSessionMappingWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.GetStudioSessionMappingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStudioSessionMappingWithContext indicates an expected call of GetStudioSessionMappingWithContext
+func (mr *MockEMRAPIMockRecorder) GetStudioSessionMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStudioSessionMappingWithContext", reflect.TypeOf((*MockEMRAPI)(nil).GetStudioSessionMappingWithContext), varargs...)
 }
 
 // ListBootstrapActions mocks base method
@@ -1397,6 +1697,172 @@ func (mr *MockEMRAPIMockRecorder) ListStepsWithContext(arg0, arg1 interface{}, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStepsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListStepsWithContext), varargs...)
+}
+
+// ListStudioSessionMappings mocks base method
+func (m *MockEMRAPI) ListStudioSessionMappings(arg0 *emr.ListStudioSessionMappingsInput) (*emr.ListStudioSessionMappingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStudioSessionMappings", arg0)
+	ret0, _ := ret[0].(*emr.ListStudioSessionMappingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStudioSessionMappings indicates an expected call of ListStudioSessionMappings
+func (mr *MockEMRAPIMockRecorder) ListStudioSessionMappings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioSessionMappings", reflect.TypeOf((*MockEMRAPI)(nil).ListStudioSessionMappings), arg0)
+}
+
+// ListStudioSessionMappingsPages mocks base method
+func (m *MockEMRAPI) ListStudioSessionMappingsPages(arg0 *emr.ListStudioSessionMappingsInput, arg1 func(*emr.ListStudioSessionMappingsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStudioSessionMappingsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStudioSessionMappingsPages indicates an expected call of ListStudioSessionMappingsPages
+func (mr *MockEMRAPIMockRecorder) ListStudioSessionMappingsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioSessionMappingsPages", reflect.TypeOf((*MockEMRAPI)(nil).ListStudioSessionMappingsPages), arg0, arg1)
+}
+
+// ListStudioSessionMappingsPagesWithContext mocks base method
+func (m *MockEMRAPI) ListStudioSessionMappingsPagesWithContext(arg0 context.Context, arg1 *emr.ListStudioSessionMappingsInput, arg2 func(*emr.ListStudioSessionMappingsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStudioSessionMappingsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStudioSessionMappingsPagesWithContext indicates an expected call of ListStudioSessionMappingsPagesWithContext
+func (mr *MockEMRAPIMockRecorder) ListStudioSessionMappingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioSessionMappingsPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListStudioSessionMappingsPagesWithContext), varargs...)
+}
+
+// ListStudioSessionMappingsRequest mocks base method
+func (m *MockEMRAPI) ListStudioSessionMappingsRequest(arg0 *emr.ListStudioSessionMappingsInput) (*request.Request, *emr.ListStudioSessionMappingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStudioSessionMappingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.ListStudioSessionMappingsOutput)
+	return ret0, ret1
+}
+
+// ListStudioSessionMappingsRequest indicates an expected call of ListStudioSessionMappingsRequest
+func (mr *MockEMRAPIMockRecorder) ListStudioSessionMappingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioSessionMappingsRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListStudioSessionMappingsRequest), arg0)
+}
+
+// ListStudioSessionMappingsWithContext mocks base method
+func (m *MockEMRAPI) ListStudioSessionMappingsWithContext(arg0 context.Context, arg1 *emr.ListStudioSessionMappingsInput, arg2 ...request.Option) (*emr.ListStudioSessionMappingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStudioSessionMappingsWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.ListStudioSessionMappingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStudioSessionMappingsWithContext indicates an expected call of ListStudioSessionMappingsWithContext
+func (mr *MockEMRAPIMockRecorder) ListStudioSessionMappingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioSessionMappingsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListStudioSessionMappingsWithContext), varargs...)
+}
+
+// ListStudios mocks base method
+func (m *MockEMRAPI) ListStudios(arg0 *emr.ListStudiosInput) (*emr.ListStudiosOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStudios", arg0)
+	ret0, _ := ret[0].(*emr.ListStudiosOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStudios indicates an expected call of ListStudios
+func (mr *MockEMRAPIMockRecorder) ListStudios(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudios", reflect.TypeOf((*MockEMRAPI)(nil).ListStudios), arg0)
+}
+
+// ListStudiosPages mocks base method
+func (m *MockEMRAPI) ListStudiosPages(arg0 *emr.ListStudiosInput, arg1 func(*emr.ListStudiosOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStudiosPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStudiosPages indicates an expected call of ListStudiosPages
+func (mr *MockEMRAPIMockRecorder) ListStudiosPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudiosPages", reflect.TypeOf((*MockEMRAPI)(nil).ListStudiosPages), arg0, arg1)
+}
+
+// ListStudiosPagesWithContext mocks base method
+func (m *MockEMRAPI) ListStudiosPagesWithContext(arg0 context.Context, arg1 *emr.ListStudiosInput, arg2 func(*emr.ListStudiosOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStudiosPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStudiosPagesWithContext indicates an expected call of ListStudiosPagesWithContext
+func (mr *MockEMRAPIMockRecorder) ListStudiosPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudiosPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListStudiosPagesWithContext), varargs...)
+}
+
+// ListStudiosRequest mocks base method
+func (m *MockEMRAPI) ListStudiosRequest(arg0 *emr.ListStudiosInput) (*request.Request, *emr.ListStudiosOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStudiosRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.ListStudiosOutput)
+	return ret0, ret1
+}
+
+// ListStudiosRequest indicates an expected call of ListStudiosRequest
+func (mr *MockEMRAPIMockRecorder) ListStudiosRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudiosRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListStudiosRequest), arg0)
+}
+
+// ListStudiosWithContext mocks base method
+func (m *MockEMRAPI) ListStudiosWithContext(arg0 context.Context, arg1 *emr.ListStudiosInput, arg2 ...request.Option) (*emr.ListStudiosOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStudiosWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.ListStudiosOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStudiosWithContext indicates an expected call of ListStudiosWithContext
+func (mr *MockEMRAPIMockRecorder) ListStudiosWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudiosWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListStudiosWithContext), varargs...)
 }
 
 // ModifyCluster mocks base method
@@ -2147,6 +2613,56 @@ func (mr *MockEMRAPIMockRecorder) TerminateJobFlowsWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateJobFlowsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).TerminateJobFlowsWithContext), varargs...)
+}
+
+// UpdateStudioSessionMapping mocks base method
+func (m *MockEMRAPI) UpdateStudioSessionMapping(arg0 *emr.UpdateStudioSessionMappingInput) (*emr.UpdateStudioSessionMappingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStudioSessionMapping", arg0)
+	ret0, _ := ret[0].(*emr.UpdateStudioSessionMappingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStudioSessionMapping indicates an expected call of UpdateStudioSessionMapping
+func (mr *MockEMRAPIMockRecorder) UpdateStudioSessionMapping(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStudioSessionMapping", reflect.TypeOf((*MockEMRAPI)(nil).UpdateStudioSessionMapping), arg0)
+}
+
+// UpdateStudioSessionMappingRequest mocks base method
+func (m *MockEMRAPI) UpdateStudioSessionMappingRequest(arg0 *emr.UpdateStudioSessionMappingInput) (*request.Request, *emr.UpdateStudioSessionMappingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStudioSessionMappingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.UpdateStudioSessionMappingOutput)
+	return ret0, ret1
+}
+
+// UpdateStudioSessionMappingRequest indicates an expected call of UpdateStudioSessionMappingRequest
+func (mr *MockEMRAPIMockRecorder) UpdateStudioSessionMappingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStudioSessionMappingRequest", reflect.TypeOf((*MockEMRAPI)(nil).UpdateStudioSessionMappingRequest), arg0)
+}
+
+// UpdateStudioSessionMappingWithContext mocks base method
+func (m *MockEMRAPI) UpdateStudioSessionMappingWithContext(arg0 context.Context, arg1 *emr.UpdateStudioSessionMappingInput, arg2 ...request.Option) (*emr.UpdateStudioSessionMappingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateStudioSessionMappingWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.UpdateStudioSessionMappingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStudioSessionMappingWithContext indicates an expected call of UpdateStudioSessionMappingWithContext
+func (mr *MockEMRAPIMockRecorder) UpdateStudioSessionMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStudioSessionMappingWithContext", reflect.TypeOf((*MockEMRAPI)(nil).UpdateStudioSessionMappingWithContext), varargs...)
 }
 
 // WaitUntilClusterRunning mocks base method

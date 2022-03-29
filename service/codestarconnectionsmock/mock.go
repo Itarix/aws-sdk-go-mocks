@@ -650,3 +650,53 @@ func (mr *MockCodeStarConnectionsAPIMockRecorder) UntagResourceWithContext(arg0,
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockCodeStarConnectionsAPI)(nil).UntagResourceWithContext), varargs...)
 }
+
+// UpdateHost mocks base method
+func (m *MockCodeStarConnectionsAPI) UpdateHost(arg0 *codestarconnections.UpdateHostInput) (*codestarconnections.UpdateHostOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateHost", arg0)
+	ret0, _ := ret[0].(*codestarconnections.UpdateHostOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateHost indicates an expected call of UpdateHost
+func (mr *MockCodeStarConnectionsAPIMockRecorder) UpdateHost(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateHost", reflect.TypeOf((*MockCodeStarConnectionsAPI)(nil).UpdateHost), arg0)
+}
+
+// UpdateHostRequest mocks base method
+func (m *MockCodeStarConnectionsAPI) UpdateHostRequest(arg0 *codestarconnections.UpdateHostInput) (*request.Request, *codestarconnections.UpdateHostOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateHostRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codestarconnections.UpdateHostOutput)
+	return ret0, ret1
+}
+
+// UpdateHostRequest indicates an expected call of UpdateHostRequest
+func (mr *MockCodeStarConnectionsAPIMockRecorder) UpdateHostRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateHostRequest", reflect.TypeOf((*MockCodeStarConnectionsAPI)(nil).UpdateHostRequest), arg0)
+}
+
+// UpdateHostWithContext mocks base method
+func (m *MockCodeStarConnectionsAPI) UpdateHostWithContext(arg0 context.Context, arg1 *codestarconnections.UpdateHostInput, arg2 ...request.Option) (*codestarconnections.UpdateHostOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateHostWithContext", varargs...)
+	ret0, _ := ret[0].(*codestarconnections.UpdateHostOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateHostWithContext indicates an expected call of UpdateHostWithContext
+func (mr *MockCodeStarConnectionsAPIMockRecorder) UpdateHostWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateHostWithContext", reflect.TypeOf((*MockCodeStarConnectionsAPI)(nil).UpdateHostWithContext), varargs...)
+}

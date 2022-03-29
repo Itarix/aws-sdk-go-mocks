@@ -35,6 +35,56 @@ func (m *MockSignerAPI) EXPECT() *MockSignerAPIMockRecorder {
 	return m.recorder
 }
 
+// AddProfilePermission mocks base method
+func (m *MockSignerAPI) AddProfilePermission(arg0 *signer.AddProfilePermissionInput) (*signer.AddProfilePermissionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddProfilePermission", arg0)
+	ret0, _ := ret[0].(*signer.AddProfilePermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddProfilePermission indicates an expected call of AddProfilePermission
+func (mr *MockSignerAPIMockRecorder) AddProfilePermission(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddProfilePermission", reflect.TypeOf((*MockSignerAPI)(nil).AddProfilePermission), arg0)
+}
+
+// AddProfilePermissionRequest mocks base method
+func (m *MockSignerAPI) AddProfilePermissionRequest(arg0 *signer.AddProfilePermissionInput) (*request.Request, *signer.AddProfilePermissionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddProfilePermissionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*signer.AddProfilePermissionOutput)
+	return ret0, ret1
+}
+
+// AddProfilePermissionRequest indicates an expected call of AddProfilePermissionRequest
+func (mr *MockSignerAPIMockRecorder) AddProfilePermissionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddProfilePermissionRequest", reflect.TypeOf((*MockSignerAPI)(nil).AddProfilePermissionRequest), arg0)
+}
+
+// AddProfilePermissionWithContext mocks base method
+func (m *MockSignerAPI) AddProfilePermissionWithContext(arg0 context.Context, arg1 *signer.AddProfilePermissionInput, arg2 ...request.Option) (*signer.AddProfilePermissionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AddProfilePermissionWithContext", varargs...)
+	ret0, _ := ret[0].(*signer.AddProfilePermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddProfilePermissionWithContext indicates an expected call of AddProfilePermissionWithContext
+func (mr *MockSignerAPIMockRecorder) AddProfilePermissionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddProfilePermissionWithContext", reflect.TypeOf((*MockSignerAPI)(nil).AddProfilePermissionWithContext), varargs...)
+}
+
 // CancelSigningProfile mocks base method
 func (m *MockSignerAPI) CancelSigningProfile(arg0 *signer.CancelSigningProfileInput) (*signer.CancelSigningProfileOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,56 @@ func (mr *MockSignerAPIMockRecorder) GetSigningProfileWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSigningProfileWithContext", reflect.TypeOf((*MockSignerAPI)(nil).GetSigningProfileWithContext), varargs...)
+}
+
+// ListProfilePermissions mocks base method
+func (m *MockSignerAPI) ListProfilePermissions(arg0 *signer.ListProfilePermissionsInput) (*signer.ListProfilePermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProfilePermissions", arg0)
+	ret0, _ := ret[0].(*signer.ListProfilePermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProfilePermissions indicates an expected call of ListProfilePermissions
+func (mr *MockSignerAPIMockRecorder) ListProfilePermissions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfilePermissions", reflect.TypeOf((*MockSignerAPI)(nil).ListProfilePermissions), arg0)
+}
+
+// ListProfilePermissionsRequest mocks base method
+func (m *MockSignerAPI) ListProfilePermissionsRequest(arg0 *signer.ListProfilePermissionsInput) (*request.Request, *signer.ListProfilePermissionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProfilePermissionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*signer.ListProfilePermissionsOutput)
+	return ret0, ret1
+}
+
+// ListProfilePermissionsRequest indicates an expected call of ListProfilePermissionsRequest
+func (mr *MockSignerAPIMockRecorder) ListProfilePermissionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfilePermissionsRequest", reflect.TypeOf((*MockSignerAPI)(nil).ListProfilePermissionsRequest), arg0)
+}
+
+// ListProfilePermissionsWithContext mocks base method
+func (m *MockSignerAPI) ListProfilePermissionsWithContext(arg0 context.Context, arg1 *signer.ListProfilePermissionsInput, arg2 ...request.Option) (*signer.ListProfilePermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProfilePermissionsWithContext", varargs...)
+	ret0, _ := ret[0].(*signer.ListProfilePermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProfilePermissionsWithContext indicates an expected call of ListProfilePermissionsWithContext
+func (mr *MockSignerAPIMockRecorder) ListProfilePermissionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfilePermissionsWithContext", reflect.TypeOf((*MockSignerAPI)(nil).ListProfilePermissionsWithContext), varargs...)
 }
 
 // ListSigningJobs mocks base method
@@ -582,6 +682,156 @@ func (mr *MockSignerAPIMockRecorder) PutSigningProfileWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSigningProfileWithContext", reflect.TypeOf((*MockSignerAPI)(nil).PutSigningProfileWithContext), varargs...)
+}
+
+// RemoveProfilePermission mocks base method
+func (m *MockSignerAPI) RemoveProfilePermission(arg0 *signer.RemoveProfilePermissionInput) (*signer.RemoveProfilePermissionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveProfilePermission", arg0)
+	ret0, _ := ret[0].(*signer.RemoveProfilePermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveProfilePermission indicates an expected call of RemoveProfilePermission
+func (mr *MockSignerAPIMockRecorder) RemoveProfilePermission(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveProfilePermission", reflect.TypeOf((*MockSignerAPI)(nil).RemoveProfilePermission), arg0)
+}
+
+// RemoveProfilePermissionRequest mocks base method
+func (m *MockSignerAPI) RemoveProfilePermissionRequest(arg0 *signer.RemoveProfilePermissionInput) (*request.Request, *signer.RemoveProfilePermissionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveProfilePermissionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*signer.RemoveProfilePermissionOutput)
+	return ret0, ret1
+}
+
+// RemoveProfilePermissionRequest indicates an expected call of RemoveProfilePermissionRequest
+func (mr *MockSignerAPIMockRecorder) RemoveProfilePermissionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveProfilePermissionRequest", reflect.TypeOf((*MockSignerAPI)(nil).RemoveProfilePermissionRequest), arg0)
+}
+
+// RemoveProfilePermissionWithContext mocks base method
+func (m *MockSignerAPI) RemoveProfilePermissionWithContext(arg0 context.Context, arg1 *signer.RemoveProfilePermissionInput, arg2 ...request.Option) (*signer.RemoveProfilePermissionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveProfilePermissionWithContext", varargs...)
+	ret0, _ := ret[0].(*signer.RemoveProfilePermissionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveProfilePermissionWithContext indicates an expected call of RemoveProfilePermissionWithContext
+func (mr *MockSignerAPIMockRecorder) RemoveProfilePermissionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveProfilePermissionWithContext", reflect.TypeOf((*MockSignerAPI)(nil).RemoveProfilePermissionWithContext), varargs...)
+}
+
+// RevokeSignature mocks base method
+func (m *MockSignerAPI) RevokeSignature(arg0 *signer.RevokeSignatureInput) (*signer.RevokeSignatureOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RevokeSignature", arg0)
+	ret0, _ := ret[0].(*signer.RevokeSignatureOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RevokeSignature indicates an expected call of RevokeSignature
+func (mr *MockSignerAPIMockRecorder) RevokeSignature(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeSignature", reflect.TypeOf((*MockSignerAPI)(nil).RevokeSignature), arg0)
+}
+
+// RevokeSignatureRequest mocks base method
+func (m *MockSignerAPI) RevokeSignatureRequest(arg0 *signer.RevokeSignatureInput) (*request.Request, *signer.RevokeSignatureOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RevokeSignatureRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*signer.RevokeSignatureOutput)
+	return ret0, ret1
+}
+
+// RevokeSignatureRequest indicates an expected call of RevokeSignatureRequest
+func (mr *MockSignerAPIMockRecorder) RevokeSignatureRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeSignatureRequest", reflect.TypeOf((*MockSignerAPI)(nil).RevokeSignatureRequest), arg0)
+}
+
+// RevokeSignatureWithContext mocks base method
+func (m *MockSignerAPI) RevokeSignatureWithContext(arg0 context.Context, arg1 *signer.RevokeSignatureInput, arg2 ...request.Option) (*signer.RevokeSignatureOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RevokeSignatureWithContext", varargs...)
+	ret0, _ := ret[0].(*signer.RevokeSignatureOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RevokeSignatureWithContext indicates an expected call of RevokeSignatureWithContext
+func (mr *MockSignerAPIMockRecorder) RevokeSignatureWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeSignatureWithContext", reflect.TypeOf((*MockSignerAPI)(nil).RevokeSignatureWithContext), varargs...)
+}
+
+// RevokeSigningProfile mocks base method
+func (m *MockSignerAPI) RevokeSigningProfile(arg0 *signer.RevokeSigningProfileInput) (*signer.RevokeSigningProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RevokeSigningProfile", arg0)
+	ret0, _ := ret[0].(*signer.RevokeSigningProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RevokeSigningProfile indicates an expected call of RevokeSigningProfile
+func (mr *MockSignerAPIMockRecorder) RevokeSigningProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeSigningProfile", reflect.TypeOf((*MockSignerAPI)(nil).RevokeSigningProfile), arg0)
+}
+
+// RevokeSigningProfileRequest mocks base method
+func (m *MockSignerAPI) RevokeSigningProfileRequest(arg0 *signer.RevokeSigningProfileInput) (*request.Request, *signer.RevokeSigningProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RevokeSigningProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*signer.RevokeSigningProfileOutput)
+	return ret0, ret1
+}
+
+// RevokeSigningProfileRequest indicates an expected call of RevokeSigningProfileRequest
+func (mr *MockSignerAPIMockRecorder) RevokeSigningProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeSigningProfileRequest", reflect.TypeOf((*MockSignerAPI)(nil).RevokeSigningProfileRequest), arg0)
+}
+
+// RevokeSigningProfileWithContext mocks base method
+func (m *MockSignerAPI) RevokeSigningProfileWithContext(arg0 context.Context, arg1 *signer.RevokeSigningProfileInput, arg2 ...request.Option) (*signer.RevokeSigningProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RevokeSigningProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*signer.RevokeSigningProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RevokeSigningProfileWithContext indicates an expected call of RevokeSigningProfileWithContext
+func (mr *MockSignerAPIMockRecorder) RevokeSigningProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeSigningProfileWithContext", reflect.TypeOf((*MockSignerAPI)(nil).RevokeSigningProfileWithContext), varargs...)
 }
 
 // StartSigningJob mocks base method

@@ -185,6 +185,56 @@ func (mr *MockLambdaAPIMockRecorder) CreateAliasWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAliasWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).CreateAliasWithContext), varargs...)
 }
 
+// CreateCodeSigningConfig mocks base method
+func (m *MockLambdaAPI) CreateCodeSigningConfig(arg0 *lambda.CreateCodeSigningConfigInput) (*lambda.CreateCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCodeSigningConfig", arg0)
+	ret0, _ := ret[0].(*lambda.CreateCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCodeSigningConfig indicates an expected call of CreateCodeSigningConfig
+func (mr *MockLambdaAPIMockRecorder) CreateCodeSigningConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCodeSigningConfig", reflect.TypeOf((*MockLambdaAPI)(nil).CreateCodeSigningConfig), arg0)
+}
+
+// CreateCodeSigningConfigRequest mocks base method
+func (m *MockLambdaAPI) CreateCodeSigningConfigRequest(arg0 *lambda.CreateCodeSigningConfigInput) (*request.Request, *lambda.CreateCodeSigningConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCodeSigningConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.CreateCodeSigningConfigOutput)
+	return ret0, ret1
+}
+
+// CreateCodeSigningConfigRequest indicates an expected call of CreateCodeSigningConfigRequest
+func (mr *MockLambdaAPIMockRecorder) CreateCodeSigningConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCodeSigningConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).CreateCodeSigningConfigRequest), arg0)
+}
+
+// CreateCodeSigningConfigWithContext mocks base method
+func (m *MockLambdaAPI) CreateCodeSigningConfigWithContext(arg0 context.Context, arg1 *lambda.CreateCodeSigningConfigInput, arg2 ...request.Option) (*lambda.CreateCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCodeSigningConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.CreateCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCodeSigningConfigWithContext indicates an expected call of CreateCodeSigningConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) CreateCodeSigningConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCodeSigningConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).CreateCodeSigningConfigWithContext), varargs...)
+}
+
 // CreateEventSourceMapping mocks base method
 func (m *MockLambdaAPI) CreateEventSourceMapping(arg0 *lambda.CreateEventSourceMappingInput) (*lambda.EventSourceMappingConfiguration, error) {
 	m.ctrl.T.Helper()
@@ -335,6 +385,56 @@ func (mr *MockLambdaAPIMockRecorder) DeleteAliasWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAliasWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteAliasWithContext), varargs...)
 }
 
+// DeleteCodeSigningConfig mocks base method
+func (m *MockLambdaAPI) DeleteCodeSigningConfig(arg0 *lambda.DeleteCodeSigningConfigInput) (*lambda.DeleteCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCodeSigningConfig", arg0)
+	ret0, _ := ret[0].(*lambda.DeleteCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCodeSigningConfig indicates an expected call of DeleteCodeSigningConfig
+func (mr *MockLambdaAPIMockRecorder) DeleteCodeSigningConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCodeSigningConfig", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteCodeSigningConfig), arg0)
+}
+
+// DeleteCodeSigningConfigRequest mocks base method
+func (m *MockLambdaAPI) DeleteCodeSigningConfigRequest(arg0 *lambda.DeleteCodeSigningConfigInput) (*request.Request, *lambda.DeleteCodeSigningConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCodeSigningConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.DeleteCodeSigningConfigOutput)
+	return ret0, ret1
+}
+
+// DeleteCodeSigningConfigRequest indicates an expected call of DeleteCodeSigningConfigRequest
+func (mr *MockLambdaAPIMockRecorder) DeleteCodeSigningConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCodeSigningConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteCodeSigningConfigRequest), arg0)
+}
+
+// DeleteCodeSigningConfigWithContext mocks base method
+func (m *MockLambdaAPI) DeleteCodeSigningConfigWithContext(arg0 context.Context, arg1 *lambda.DeleteCodeSigningConfigInput, arg2 ...request.Option) (*lambda.DeleteCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCodeSigningConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.DeleteCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCodeSigningConfigWithContext indicates an expected call of DeleteCodeSigningConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) DeleteCodeSigningConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCodeSigningConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteCodeSigningConfigWithContext), varargs...)
+}
+
 // DeleteEventSourceMapping mocks base method
 func (m *MockLambdaAPI) DeleteEventSourceMapping(arg0 *lambda.DeleteEventSourceMappingInput) (*lambda.EventSourceMappingConfiguration, error) {
 	m.ctrl.T.Helper()
@@ -398,6 +498,56 @@ func (m *MockLambdaAPI) DeleteFunction(arg0 *lambda.DeleteFunctionInput) (*lambd
 func (mr *MockLambdaAPIMockRecorder) DeleteFunction(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunction", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunction), arg0)
+}
+
+// DeleteFunctionCodeSigningConfig mocks base method
+func (m *MockLambdaAPI) DeleteFunctionCodeSigningConfig(arg0 *lambda.DeleteFunctionCodeSigningConfigInput) (*lambda.DeleteFunctionCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFunctionCodeSigningConfig", arg0)
+	ret0, _ := ret[0].(*lambda.DeleteFunctionCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFunctionCodeSigningConfig indicates an expected call of DeleteFunctionCodeSigningConfig
+func (mr *MockLambdaAPIMockRecorder) DeleteFunctionCodeSigningConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionCodeSigningConfig", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunctionCodeSigningConfig), arg0)
+}
+
+// DeleteFunctionCodeSigningConfigRequest mocks base method
+func (m *MockLambdaAPI) DeleteFunctionCodeSigningConfigRequest(arg0 *lambda.DeleteFunctionCodeSigningConfigInput) (*request.Request, *lambda.DeleteFunctionCodeSigningConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFunctionCodeSigningConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.DeleteFunctionCodeSigningConfigOutput)
+	return ret0, ret1
+}
+
+// DeleteFunctionCodeSigningConfigRequest indicates an expected call of DeleteFunctionCodeSigningConfigRequest
+func (mr *MockLambdaAPIMockRecorder) DeleteFunctionCodeSigningConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionCodeSigningConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunctionCodeSigningConfigRequest), arg0)
+}
+
+// DeleteFunctionCodeSigningConfigWithContext mocks base method
+func (m *MockLambdaAPI) DeleteFunctionCodeSigningConfigWithContext(arg0 context.Context, arg1 *lambda.DeleteFunctionCodeSigningConfigInput, arg2 ...request.Option) (*lambda.DeleteFunctionCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFunctionCodeSigningConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.DeleteFunctionCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFunctionCodeSigningConfigWithContext indicates an expected call of DeleteFunctionCodeSigningConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) DeleteFunctionCodeSigningConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFunctionCodeSigningConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).DeleteFunctionCodeSigningConfigWithContext), varargs...)
 }
 
 // DeleteFunctionConcurrency mocks base method
@@ -735,6 +885,56 @@ func (mr *MockLambdaAPIMockRecorder) GetAliasWithContext(arg0, arg1 interface{},
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAliasWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetAliasWithContext), varargs...)
 }
 
+// GetCodeSigningConfig mocks base method
+func (m *MockLambdaAPI) GetCodeSigningConfig(arg0 *lambda.GetCodeSigningConfigInput) (*lambda.GetCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCodeSigningConfig", arg0)
+	ret0, _ := ret[0].(*lambda.GetCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCodeSigningConfig indicates an expected call of GetCodeSigningConfig
+func (mr *MockLambdaAPIMockRecorder) GetCodeSigningConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCodeSigningConfig", reflect.TypeOf((*MockLambdaAPI)(nil).GetCodeSigningConfig), arg0)
+}
+
+// GetCodeSigningConfigRequest mocks base method
+func (m *MockLambdaAPI) GetCodeSigningConfigRequest(arg0 *lambda.GetCodeSigningConfigInput) (*request.Request, *lambda.GetCodeSigningConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCodeSigningConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.GetCodeSigningConfigOutput)
+	return ret0, ret1
+}
+
+// GetCodeSigningConfigRequest indicates an expected call of GetCodeSigningConfigRequest
+func (mr *MockLambdaAPIMockRecorder) GetCodeSigningConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCodeSigningConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).GetCodeSigningConfigRequest), arg0)
+}
+
+// GetCodeSigningConfigWithContext mocks base method
+func (m *MockLambdaAPI) GetCodeSigningConfigWithContext(arg0 context.Context, arg1 *lambda.GetCodeSigningConfigInput, arg2 ...request.Option) (*lambda.GetCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCodeSigningConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.GetCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCodeSigningConfigWithContext indicates an expected call of GetCodeSigningConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) GetCodeSigningConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCodeSigningConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetCodeSigningConfigWithContext), varargs...)
+}
+
 // GetEventSourceMapping mocks base method
 func (m *MockLambdaAPI) GetEventSourceMapping(arg0 *lambda.GetEventSourceMappingInput) (*lambda.EventSourceMappingConfiguration, error) {
 	m.ctrl.T.Helper()
@@ -798,6 +998,56 @@ func (m *MockLambdaAPI) GetFunction(arg0 *lambda.GetFunctionInput) (*lambda.GetF
 func (mr *MockLambdaAPIMockRecorder) GetFunction(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunction", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunction), arg0)
+}
+
+// GetFunctionCodeSigningConfig mocks base method
+func (m *MockLambdaAPI) GetFunctionCodeSigningConfig(arg0 *lambda.GetFunctionCodeSigningConfigInput) (*lambda.GetFunctionCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFunctionCodeSigningConfig", arg0)
+	ret0, _ := ret[0].(*lambda.GetFunctionCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFunctionCodeSigningConfig indicates an expected call of GetFunctionCodeSigningConfig
+func (mr *MockLambdaAPIMockRecorder) GetFunctionCodeSigningConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionCodeSigningConfig", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionCodeSigningConfig), arg0)
+}
+
+// GetFunctionCodeSigningConfigRequest mocks base method
+func (m *MockLambdaAPI) GetFunctionCodeSigningConfigRequest(arg0 *lambda.GetFunctionCodeSigningConfigInput) (*request.Request, *lambda.GetFunctionCodeSigningConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFunctionCodeSigningConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.GetFunctionCodeSigningConfigOutput)
+	return ret0, ret1
+}
+
+// GetFunctionCodeSigningConfigRequest indicates an expected call of GetFunctionCodeSigningConfigRequest
+func (mr *MockLambdaAPIMockRecorder) GetFunctionCodeSigningConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionCodeSigningConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionCodeSigningConfigRequest), arg0)
+}
+
+// GetFunctionCodeSigningConfigWithContext mocks base method
+func (m *MockLambdaAPI) GetFunctionCodeSigningConfigWithContext(arg0 context.Context, arg1 *lambda.GetFunctionCodeSigningConfigInput, arg2 ...request.Option) (*lambda.GetFunctionCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFunctionCodeSigningConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.GetFunctionCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFunctionCodeSigningConfigWithContext indicates an expected call of GetFunctionCodeSigningConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) GetFunctionCodeSigningConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFunctionCodeSigningConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).GetFunctionCodeSigningConfigWithContext), varargs...)
 }
 
 // GetFunctionConcurrency mocks base method
@@ -1418,6 +1668,89 @@ func (mr *MockLambdaAPIMockRecorder) ListAliasesWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAliasesWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListAliasesWithContext), varargs...)
 }
 
+// ListCodeSigningConfigs mocks base method
+func (m *MockLambdaAPI) ListCodeSigningConfigs(arg0 *lambda.ListCodeSigningConfigsInput) (*lambda.ListCodeSigningConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCodeSigningConfigs", arg0)
+	ret0, _ := ret[0].(*lambda.ListCodeSigningConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCodeSigningConfigs indicates an expected call of ListCodeSigningConfigs
+func (mr *MockLambdaAPIMockRecorder) ListCodeSigningConfigs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCodeSigningConfigs", reflect.TypeOf((*MockLambdaAPI)(nil).ListCodeSigningConfigs), arg0)
+}
+
+// ListCodeSigningConfigsPages mocks base method
+func (m *MockLambdaAPI) ListCodeSigningConfigsPages(arg0 *lambda.ListCodeSigningConfigsInput, arg1 func(*lambda.ListCodeSigningConfigsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCodeSigningConfigsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCodeSigningConfigsPages indicates an expected call of ListCodeSigningConfigsPages
+func (mr *MockLambdaAPIMockRecorder) ListCodeSigningConfigsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCodeSigningConfigsPages", reflect.TypeOf((*MockLambdaAPI)(nil).ListCodeSigningConfigsPages), arg0, arg1)
+}
+
+// ListCodeSigningConfigsPagesWithContext mocks base method
+func (m *MockLambdaAPI) ListCodeSigningConfigsPagesWithContext(arg0 context.Context, arg1 *lambda.ListCodeSigningConfigsInput, arg2 func(*lambda.ListCodeSigningConfigsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCodeSigningConfigsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCodeSigningConfigsPagesWithContext indicates an expected call of ListCodeSigningConfigsPagesWithContext
+func (mr *MockLambdaAPIMockRecorder) ListCodeSigningConfigsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCodeSigningConfigsPagesWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListCodeSigningConfigsPagesWithContext), varargs...)
+}
+
+// ListCodeSigningConfigsRequest mocks base method
+func (m *MockLambdaAPI) ListCodeSigningConfigsRequest(arg0 *lambda.ListCodeSigningConfigsInput) (*request.Request, *lambda.ListCodeSigningConfigsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCodeSigningConfigsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.ListCodeSigningConfigsOutput)
+	return ret0, ret1
+}
+
+// ListCodeSigningConfigsRequest indicates an expected call of ListCodeSigningConfigsRequest
+func (mr *MockLambdaAPIMockRecorder) ListCodeSigningConfigsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCodeSigningConfigsRequest", reflect.TypeOf((*MockLambdaAPI)(nil).ListCodeSigningConfigsRequest), arg0)
+}
+
+// ListCodeSigningConfigsWithContext mocks base method
+func (m *MockLambdaAPI) ListCodeSigningConfigsWithContext(arg0 context.Context, arg1 *lambda.ListCodeSigningConfigsInput, arg2 ...request.Option) (*lambda.ListCodeSigningConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCodeSigningConfigsWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.ListCodeSigningConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCodeSigningConfigsWithContext indicates an expected call of ListCodeSigningConfigsWithContext
+func (mr *MockLambdaAPIMockRecorder) ListCodeSigningConfigsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCodeSigningConfigsWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListCodeSigningConfigsWithContext), varargs...)
+}
+
 // ListEventSourceMappings mocks base method
 func (m *MockLambdaAPI) ListEventSourceMappings(arg0 *lambda.ListEventSourceMappingsInput) (*lambda.ListEventSourceMappingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1597,6 +1930,89 @@ func (m *MockLambdaAPI) ListFunctions(arg0 *lambda.ListFunctionsInput) (*lambda.
 func (mr *MockLambdaAPIMockRecorder) ListFunctions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctions", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctions), arg0)
+}
+
+// ListFunctionsByCodeSigningConfig mocks base method
+func (m *MockLambdaAPI) ListFunctionsByCodeSigningConfig(arg0 *lambda.ListFunctionsByCodeSigningConfigInput) (*lambda.ListFunctionsByCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFunctionsByCodeSigningConfig", arg0)
+	ret0, _ := ret[0].(*lambda.ListFunctionsByCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFunctionsByCodeSigningConfig indicates an expected call of ListFunctionsByCodeSigningConfig
+func (mr *MockLambdaAPIMockRecorder) ListFunctionsByCodeSigningConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionsByCodeSigningConfig", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionsByCodeSigningConfig), arg0)
+}
+
+// ListFunctionsByCodeSigningConfigPages mocks base method
+func (m *MockLambdaAPI) ListFunctionsByCodeSigningConfigPages(arg0 *lambda.ListFunctionsByCodeSigningConfigInput, arg1 func(*lambda.ListFunctionsByCodeSigningConfigOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFunctionsByCodeSigningConfigPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFunctionsByCodeSigningConfigPages indicates an expected call of ListFunctionsByCodeSigningConfigPages
+func (mr *MockLambdaAPIMockRecorder) ListFunctionsByCodeSigningConfigPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionsByCodeSigningConfigPages", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionsByCodeSigningConfigPages), arg0, arg1)
+}
+
+// ListFunctionsByCodeSigningConfigPagesWithContext mocks base method
+func (m *MockLambdaAPI) ListFunctionsByCodeSigningConfigPagesWithContext(arg0 context.Context, arg1 *lambda.ListFunctionsByCodeSigningConfigInput, arg2 func(*lambda.ListFunctionsByCodeSigningConfigOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFunctionsByCodeSigningConfigPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFunctionsByCodeSigningConfigPagesWithContext indicates an expected call of ListFunctionsByCodeSigningConfigPagesWithContext
+func (mr *MockLambdaAPIMockRecorder) ListFunctionsByCodeSigningConfigPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionsByCodeSigningConfigPagesWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionsByCodeSigningConfigPagesWithContext), varargs...)
+}
+
+// ListFunctionsByCodeSigningConfigRequest mocks base method
+func (m *MockLambdaAPI) ListFunctionsByCodeSigningConfigRequest(arg0 *lambda.ListFunctionsByCodeSigningConfigInput) (*request.Request, *lambda.ListFunctionsByCodeSigningConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFunctionsByCodeSigningConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.ListFunctionsByCodeSigningConfigOutput)
+	return ret0, ret1
+}
+
+// ListFunctionsByCodeSigningConfigRequest indicates an expected call of ListFunctionsByCodeSigningConfigRequest
+func (mr *MockLambdaAPIMockRecorder) ListFunctionsByCodeSigningConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionsByCodeSigningConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionsByCodeSigningConfigRequest), arg0)
+}
+
+// ListFunctionsByCodeSigningConfigWithContext mocks base method
+func (m *MockLambdaAPI) ListFunctionsByCodeSigningConfigWithContext(arg0 context.Context, arg1 *lambda.ListFunctionsByCodeSigningConfigInput, arg2 ...request.Option) (*lambda.ListFunctionsByCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFunctionsByCodeSigningConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.ListFunctionsByCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFunctionsByCodeSigningConfigWithContext indicates an expected call of ListFunctionsByCodeSigningConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) ListFunctionsByCodeSigningConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionsByCodeSigningConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).ListFunctionsByCodeSigningConfigWithContext), varargs...)
 }
 
 // ListFunctionsPages mocks base method
@@ -2149,6 +2565,56 @@ func (mr *MockLambdaAPIMockRecorder) PublishVersionWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishVersionWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).PublishVersionWithContext), varargs...)
 }
 
+// PutFunctionCodeSigningConfig mocks base method
+func (m *MockLambdaAPI) PutFunctionCodeSigningConfig(arg0 *lambda.PutFunctionCodeSigningConfigInput) (*lambda.PutFunctionCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutFunctionCodeSigningConfig", arg0)
+	ret0, _ := ret[0].(*lambda.PutFunctionCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutFunctionCodeSigningConfig indicates an expected call of PutFunctionCodeSigningConfig
+func (mr *MockLambdaAPIMockRecorder) PutFunctionCodeSigningConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFunctionCodeSigningConfig", reflect.TypeOf((*MockLambdaAPI)(nil).PutFunctionCodeSigningConfig), arg0)
+}
+
+// PutFunctionCodeSigningConfigRequest mocks base method
+func (m *MockLambdaAPI) PutFunctionCodeSigningConfigRequest(arg0 *lambda.PutFunctionCodeSigningConfigInput) (*request.Request, *lambda.PutFunctionCodeSigningConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutFunctionCodeSigningConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.PutFunctionCodeSigningConfigOutput)
+	return ret0, ret1
+}
+
+// PutFunctionCodeSigningConfigRequest indicates an expected call of PutFunctionCodeSigningConfigRequest
+func (mr *MockLambdaAPIMockRecorder) PutFunctionCodeSigningConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFunctionCodeSigningConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).PutFunctionCodeSigningConfigRequest), arg0)
+}
+
+// PutFunctionCodeSigningConfigWithContext mocks base method
+func (m *MockLambdaAPI) PutFunctionCodeSigningConfigWithContext(arg0 context.Context, arg1 *lambda.PutFunctionCodeSigningConfigInput, arg2 ...request.Option) (*lambda.PutFunctionCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutFunctionCodeSigningConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.PutFunctionCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutFunctionCodeSigningConfigWithContext indicates an expected call of PutFunctionCodeSigningConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) PutFunctionCodeSigningConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFunctionCodeSigningConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).PutFunctionCodeSigningConfigWithContext), varargs...)
+}
+
 // PutFunctionConcurrency mocks base method
 func (m *MockLambdaAPI) PutFunctionConcurrency(arg0 *lambda.PutFunctionConcurrencyInput) (*lambda.PutFunctionConcurrencyOutput, error) {
 	m.ctrl.T.Helper()
@@ -2547,6 +3013,56 @@ func (mr *MockLambdaAPIMockRecorder) UpdateAliasWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAliasWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateAliasWithContext), varargs...)
+}
+
+// UpdateCodeSigningConfig mocks base method
+func (m *MockLambdaAPI) UpdateCodeSigningConfig(arg0 *lambda.UpdateCodeSigningConfigInput) (*lambda.UpdateCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCodeSigningConfig", arg0)
+	ret0, _ := ret[0].(*lambda.UpdateCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCodeSigningConfig indicates an expected call of UpdateCodeSigningConfig
+func (mr *MockLambdaAPIMockRecorder) UpdateCodeSigningConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCodeSigningConfig", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateCodeSigningConfig), arg0)
+}
+
+// UpdateCodeSigningConfigRequest mocks base method
+func (m *MockLambdaAPI) UpdateCodeSigningConfigRequest(arg0 *lambda.UpdateCodeSigningConfigInput) (*request.Request, *lambda.UpdateCodeSigningConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCodeSigningConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lambda.UpdateCodeSigningConfigOutput)
+	return ret0, ret1
+}
+
+// UpdateCodeSigningConfigRequest indicates an expected call of UpdateCodeSigningConfigRequest
+func (mr *MockLambdaAPIMockRecorder) UpdateCodeSigningConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCodeSigningConfigRequest", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateCodeSigningConfigRequest), arg0)
+}
+
+// UpdateCodeSigningConfigWithContext mocks base method
+func (m *MockLambdaAPI) UpdateCodeSigningConfigWithContext(arg0 context.Context, arg1 *lambda.UpdateCodeSigningConfigInput, arg2 ...request.Option) (*lambda.UpdateCodeSigningConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateCodeSigningConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lambda.UpdateCodeSigningConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCodeSigningConfigWithContext indicates an expected call of UpdateCodeSigningConfigWithContext
+func (mr *MockLambdaAPIMockRecorder) UpdateCodeSigningConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCodeSigningConfigWithContext", reflect.TypeOf((*MockLambdaAPI)(nil).UpdateCodeSigningConfigWithContext), varargs...)
 }
 
 // UpdateEventSourceMapping mocks base method

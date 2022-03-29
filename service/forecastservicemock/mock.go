@@ -300,6 +300,56 @@ func (mr *MockForecastServiceAPIMockRecorder) CreatePredictor(arg0 interface{}) 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePredictor", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreatePredictor), arg0)
 }
 
+// CreatePredictorBacktestExportJob mocks base method
+func (m *MockForecastServiceAPI) CreatePredictorBacktestExportJob(arg0 *forecastservice.CreatePredictorBacktestExportJobInput) (*forecastservice.CreatePredictorBacktestExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePredictorBacktestExportJob", arg0)
+	ret0, _ := ret[0].(*forecastservice.CreatePredictorBacktestExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePredictorBacktestExportJob indicates an expected call of CreatePredictorBacktestExportJob
+func (mr *MockForecastServiceAPIMockRecorder) CreatePredictorBacktestExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePredictorBacktestExportJob", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreatePredictorBacktestExportJob), arg0)
+}
+
+// CreatePredictorBacktestExportJobRequest mocks base method
+func (m *MockForecastServiceAPI) CreatePredictorBacktestExportJobRequest(arg0 *forecastservice.CreatePredictorBacktestExportJobInput) (*request.Request, *forecastservice.CreatePredictorBacktestExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePredictorBacktestExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.CreatePredictorBacktestExportJobOutput)
+	return ret0, ret1
+}
+
+// CreatePredictorBacktestExportJobRequest indicates an expected call of CreatePredictorBacktestExportJobRequest
+func (mr *MockForecastServiceAPIMockRecorder) CreatePredictorBacktestExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePredictorBacktestExportJobRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreatePredictorBacktestExportJobRequest), arg0)
+}
+
+// CreatePredictorBacktestExportJobWithContext mocks base method
+func (m *MockForecastServiceAPI) CreatePredictorBacktestExportJobWithContext(arg0 context.Context, arg1 *forecastservice.CreatePredictorBacktestExportJobInput, arg2 ...request.Option) (*forecastservice.CreatePredictorBacktestExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreatePredictorBacktestExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.CreatePredictorBacktestExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePredictorBacktestExportJobWithContext indicates an expected call of CreatePredictorBacktestExportJobWithContext
+func (mr *MockForecastServiceAPIMockRecorder) CreatePredictorBacktestExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePredictorBacktestExportJobWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreatePredictorBacktestExportJobWithContext), varargs...)
+}
+
 // CreatePredictorRequest mocks base method
 func (m *MockForecastServiceAPI) CreatePredictorRequest(arg0 *forecastservice.CreatePredictorInput) (*request.Request, *forecastservice.CreatePredictorOutput) {
 	m.ctrl.T.Helper()
@@ -600,6 +650,56 @@ func (mr *MockForecastServiceAPIMockRecorder) DeletePredictor(arg0 interface{}) 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePredictor", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeletePredictor), arg0)
 }
 
+// DeletePredictorBacktestExportJob mocks base method
+func (m *MockForecastServiceAPI) DeletePredictorBacktestExportJob(arg0 *forecastservice.DeletePredictorBacktestExportJobInput) (*forecastservice.DeletePredictorBacktestExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePredictorBacktestExportJob", arg0)
+	ret0, _ := ret[0].(*forecastservice.DeletePredictorBacktestExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePredictorBacktestExportJob indicates an expected call of DeletePredictorBacktestExportJob
+func (mr *MockForecastServiceAPIMockRecorder) DeletePredictorBacktestExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePredictorBacktestExportJob", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeletePredictorBacktestExportJob), arg0)
+}
+
+// DeletePredictorBacktestExportJobRequest mocks base method
+func (m *MockForecastServiceAPI) DeletePredictorBacktestExportJobRequest(arg0 *forecastservice.DeletePredictorBacktestExportJobInput) (*request.Request, *forecastservice.DeletePredictorBacktestExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePredictorBacktestExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DeletePredictorBacktestExportJobOutput)
+	return ret0, ret1
+}
+
+// DeletePredictorBacktestExportJobRequest indicates an expected call of DeletePredictorBacktestExportJobRequest
+func (mr *MockForecastServiceAPIMockRecorder) DeletePredictorBacktestExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePredictorBacktestExportJobRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeletePredictorBacktestExportJobRequest), arg0)
+}
+
+// DeletePredictorBacktestExportJobWithContext mocks base method
+func (m *MockForecastServiceAPI) DeletePredictorBacktestExportJobWithContext(arg0 context.Context, arg1 *forecastservice.DeletePredictorBacktestExportJobInput, arg2 ...request.Option) (*forecastservice.DeletePredictorBacktestExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePredictorBacktestExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DeletePredictorBacktestExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePredictorBacktestExportJobWithContext indicates an expected call of DeletePredictorBacktestExportJobWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DeletePredictorBacktestExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePredictorBacktestExportJobWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeletePredictorBacktestExportJobWithContext), varargs...)
+}
+
 // DeletePredictorRequest mocks base method
 func (m *MockForecastServiceAPI) DeletePredictorRequest(arg0 *forecastservice.DeletePredictorInput) (*request.Request, *forecastservice.DeletePredictorOutput) {
 	m.ctrl.T.Helper()
@@ -898,6 +998,56 @@ func (m *MockForecastServiceAPI) DescribePredictor(arg0 *forecastservice.Describ
 func (mr *MockForecastServiceAPIMockRecorder) DescribePredictor(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePredictor", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribePredictor), arg0)
+}
+
+// DescribePredictorBacktestExportJob mocks base method
+func (m *MockForecastServiceAPI) DescribePredictorBacktestExportJob(arg0 *forecastservice.DescribePredictorBacktestExportJobInput) (*forecastservice.DescribePredictorBacktestExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePredictorBacktestExportJob", arg0)
+	ret0, _ := ret[0].(*forecastservice.DescribePredictorBacktestExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePredictorBacktestExportJob indicates an expected call of DescribePredictorBacktestExportJob
+func (mr *MockForecastServiceAPIMockRecorder) DescribePredictorBacktestExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePredictorBacktestExportJob", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribePredictorBacktestExportJob), arg0)
+}
+
+// DescribePredictorBacktestExportJobRequest mocks base method
+func (m *MockForecastServiceAPI) DescribePredictorBacktestExportJobRequest(arg0 *forecastservice.DescribePredictorBacktestExportJobInput) (*request.Request, *forecastservice.DescribePredictorBacktestExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePredictorBacktestExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DescribePredictorBacktestExportJobOutput)
+	return ret0, ret1
+}
+
+// DescribePredictorBacktestExportJobRequest indicates an expected call of DescribePredictorBacktestExportJobRequest
+func (mr *MockForecastServiceAPIMockRecorder) DescribePredictorBacktestExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePredictorBacktestExportJobRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribePredictorBacktestExportJobRequest), arg0)
+}
+
+// DescribePredictorBacktestExportJobWithContext mocks base method
+func (m *MockForecastServiceAPI) DescribePredictorBacktestExportJobWithContext(arg0 context.Context, arg1 *forecastservice.DescribePredictorBacktestExportJobInput, arg2 ...request.Option) (*forecastservice.DescribePredictorBacktestExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribePredictorBacktestExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DescribePredictorBacktestExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePredictorBacktestExportJobWithContext indicates an expected call of DescribePredictorBacktestExportJobWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DescribePredictorBacktestExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePredictorBacktestExportJobWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribePredictorBacktestExportJobWithContext), varargs...)
 }
 
 // DescribePredictorRequest mocks base method
@@ -1398,6 +1548,89 @@ func (mr *MockForecastServiceAPIMockRecorder) ListForecastsWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListForecastsWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListForecastsWithContext), varargs...)
+}
+
+// ListPredictorBacktestExportJobs mocks base method
+func (m *MockForecastServiceAPI) ListPredictorBacktestExportJobs(arg0 *forecastservice.ListPredictorBacktestExportJobsInput) (*forecastservice.ListPredictorBacktestExportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPredictorBacktestExportJobs", arg0)
+	ret0, _ := ret[0].(*forecastservice.ListPredictorBacktestExportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPredictorBacktestExportJobs indicates an expected call of ListPredictorBacktestExportJobs
+func (mr *MockForecastServiceAPIMockRecorder) ListPredictorBacktestExportJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPredictorBacktestExportJobs", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListPredictorBacktestExportJobs), arg0)
+}
+
+// ListPredictorBacktestExportJobsPages mocks base method
+func (m *MockForecastServiceAPI) ListPredictorBacktestExportJobsPages(arg0 *forecastservice.ListPredictorBacktestExportJobsInput, arg1 func(*forecastservice.ListPredictorBacktestExportJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPredictorBacktestExportJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPredictorBacktestExportJobsPages indicates an expected call of ListPredictorBacktestExportJobsPages
+func (mr *MockForecastServiceAPIMockRecorder) ListPredictorBacktestExportJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPredictorBacktestExportJobsPages", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListPredictorBacktestExportJobsPages), arg0, arg1)
+}
+
+// ListPredictorBacktestExportJobsPagesWithContext mocks base method
+func (m *MockForecastServiceAPI) ListPredictorBacktestExportJobsPagesWithContext(arg0 context.Context, arg1 *forecastservice.ListPredictorBacktestExportJobsInput, arg2 func(*forecastservice.ListPredictorBacktestExportJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPredictorBacktestExportJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPredictorBacktestExportJobsPagesWithContext indicates an expected call of ListPredictorBacktestExportJobsPagesWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListPredictorBacktestExportJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPredictorBacktestExportJobsPagesWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListPredictorBacktestExportJobsPagesWithContext), varargs...)
+}
+
+// ListPredictorBacktestExportJobsRequest mocks base method
+func (m *MockForecastServiceAPI) ListPredictorBacktestExportJobsRequest(arg0 *forecastservice.ListPredictorBacktestExportJobsInput) (*request.Request, *forecastservice.ListPredictorBacktestExportJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPredictorBacktestExportJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.ListPredictorBacktestExportJobsOutput)
+	return ret0, ret1
+}
+
+// ListPredictorBacktestExportJobsRequest indicates an expected call of ListPredictorBacktestExportJobsRequest
+func (mr *MockForecastServiceAPIMockRecorder) ListPredictorBacktestExportJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPredictorBacktestExportJobsRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListPredictorBacktestExportJobsRequest), arg0)
+}
+
+// ListPredictorBacktestExportJobsWithContext mocks base method
+func (m *MockForecastServiceAPI) ListPredictorBacktestExportJobsWithContext(arg0 context.Context, arg1 *forecastservice.ListPredictorBacktestExportJobsInput, arg2 ...request.Option) (*forecastservice.ListPredictorBacktestExportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPredictorBacktestExportJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.ListPredictorBacktestExportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPredictorBacktestExportJobsWithContext indicates an expected call of ListPredictorBacktestExportJobsWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListPredictorBacktestExportJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPredictorBacktestExportJobsWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListPredictorBacktestExportJobsWithContext), varargs...)
 }
 
 // ListPredictors mocks base method
