@@ -2618,6 +2618,56 @@ func (mr *MockServiceCatalogAPIMockRecorder) GetProvisionedProductOutputsWithCon
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProvisionedProductOutputsWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).GetProvisionedProductOutputsWithContext), varargs...)
 }
 
+// ImportAsProvisionedProduct mocks base method
+func (m *MockServiceCatalogAPI) ImportAsProvisionedProduct(arg0 *servicecatalog.ImportAsProvisionedProductInput) (*servicecatalog.ImportAsProvisionedProductOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportAsProvisionedProduct", arg0)
+	ret0, _ := ret[0].(*servicecatalog.ImportAsProvisionedProductOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportAsProvisionedProduct indicates an expected call of ImportAsProvisionedProduct
+func (mr *MockServiceCatalogAPIMockRecorder) ImportAsProvisionedProduct(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportAsProvisionedProduct", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ImportAsProvisionedProduct), arg0)
+}
+
+// ImportAsProvisionedProductRequest mocks base method
+func (m *MockServiceCatalogAPI) ImportAsProvisionedProductRequest(arg0 *servicecatalog.ImportAsProvisionedProductInput) (*request.Request, *servicecatalog.ImportAsProvisionedProductOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportAsProvisionedProductRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.ImportAsProvisionedProductOutput)
+	return ret0, ret1
+}
+
+// ImportAsProvisionedProductRequest indicates an expected call of ImportAsProvisionedProductRequest
+func (mr *MockServiceCatalogAPIMockRecorder) ImportAsProvisionedProductRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportAsProvisionedProductRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ImportAsProvisionedProductRequest), arg0)
+}
+
+// ImportAsProvisionedProductWithContext mocks base method
+func (m *MockServiceCatalogAPI) ImportAsProvisionedProductWithContext(arg0 context.Context, arg1 *servicecatalog.ImportAsProvisionedProductInput, arg2 ...request.Option) (*servicecatalog.ImportAsProvisionedProductOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportAsProvisionedProductWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.ImportAsProvisionedProductOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportAsProvisionedProductWithContext indicates an expected call of ImportAsProvisionedProductWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) ImportAsProvisionedProductWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportAsProvisionedProductWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ImportAsProvisionedProductWithContext), varargs...)
+}
+
 // ListAcceptedPortfolioShares mocks base method
 func (m *MockServiceCatalogAPI) ListAcceptedPortfolioShares(arg0 *servicecatalog.ListAcceptedPortfolioSharesInput) (*servicecatalog.ListAcceptedPortfolioSharesOutput, error) {
 	m.ctrl.T.Helper()

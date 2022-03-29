@@ -2829,6 +2829,56 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ModifyReplicationTaskWith
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyReplicationTaskWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).ModifyReplicationTaskWithContext), varargs...)
 }
 
+// MoveReplicationTask mocks base method
+func (m *MockDatabaseMigrationServiceAPI) MoveReplicationTask(arg0 *databasemigrationservice.MoveReplicationTaskInput) (*databasemigrationservice.MoveReplicationTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "MoveReplicationTask", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.MoveReplicationTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// MoveReplicationTask indicates an expected call of MoveReplicationTask
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) MoveReplicationTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MoveReplicationTask", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).MoveReplicationTask), arg0)
+}
+
+// MoveReplicationTaskRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) MoveReplicationTaskRequest(arg0 *databasemigrationservice.MoveReplicationTaskInput) (*request.Request, *databasemigrationservice.MoveReplicationTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "MoveReplicationTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.MoveReplicationTaskOutput)
+	return ret0, ret1
+}
+
+// MoveReplicationTaskRequest indicates an expected call of MoveReplicationTaskRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) MoveReplicationTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MoveReplicationTaskRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).MoveReplicationTaskRequest), arg0)
+}
+
+// MoveReplicationTaskWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) MoveReplicationTaskWithContext(arg0 context.Context, arg1 *databasemigrationservice.MoveReplicationTaskInput, arg2 ...request.Option) (*databasemigrationservice.MoveReplicationTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "MoveReplicationTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.MoveReplicationTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// MoveReplicationTaskWithContext indicates an expected call of MoveReplicationTaskWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) MoveReplicationTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MoveReplicationTaskWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).MoveReplicationTaskWithContext), varargs...)
+}
+
 // RebootReplicationInstance mocks base method
 func (m *MockDatabaseMigrationServiceAPI) RebootReplicationInstance(arg0 *databasemigrationservice.RebootReplicationInstanceInput) (*databasemigrationservice.RebootReplicationInstanceOutput, error) {
 	m.ctrl.T.Helper()
