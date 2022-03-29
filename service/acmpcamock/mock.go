@@ -285,6 +285,56 @@ func (mr *MockACMPCAAPIMockRecorder) DeletePermissionWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePermissionWithContext", reflect.TypeOf((*MockACMPCAAPI)(nil).DeletePermissionWithContext), varargs...)
 }
 
+// DeletePolicy mocks base method
+func (m *MockACMPCAAPI) DeletePolicy(arg0 *acmpca.DeletePolicyInput) (*acmpca.DeletePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePolicy", arg0)
+	ret0, _ := ret[0].(*acmpca.DeletePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePolicy indicates an expected call of DeletePolicy
+func (mr *MockACMPCAAPIMockRecorder) DeletePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePolicy", reflect.TypeOf((*MockACMPCAAPI)(nil).DeletePolicy), arg0)
+}
+
+// DeletePolicyRequest mocks base method
+func (m *MockACMPCAAPI) DeletePolicyRequest(arg0 *acmpca.DeletePolicyInput) (*request.Request, *acmpca.DeletePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*acmpca.DeletePolicyOutput)
+	return ret0, ret1
+}
+
+// DeletePolicyRequest indicates an expected call of DeletePolicyRequest
+func (mr *MockACMPCAAPIMockRecorder) DeletePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePolicyRequest", reflect.TypeOf((*MockACMPCAAPI)(nil).DeletePolicyRequest), arg0)
+}
+
+// DeletePolicyWithContext mocks base method
+func (m *MockACMPCAAPI) DeletePolicyWithContext(arg0 context.Context, arg1 *acmpca.DeletePolicyInput, arg2 ...request.Option) (*acmpca.DeletePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*acmpca.DeletePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePolicyWithContext indicates an expected call of DeletePolicyWithContext
+func (mr *MockACMPCAAPIMockRecorder) DeletePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePolicyWithContext", reflect.TypeOf((*MockACMPCAAPI)(nil).DeletePolicyWithContext), varargs...)
+}
+
 // DescribeCertificateAuthority mocks base method
 func (m *MockACMPCAAPI) DescribeCertificateAuthority(arg0 *acmpca.DescribeCertificateAuthorityInput) (*acmpca.DescribeCertificateAuthorityOutput, error) {
 	m.ctrl.T.Helper()
@@ -533,6 +583,56 @@ func (mr *MockACMPCAAPIMockRecorder) GetCertificateWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCertificateWithContext", reflect.TypeOf((*MockACMPCAAPI)(nil).GetCertificateWithContext), varargs...)
+}
+
+// GetPolicy mocks base method
+func (m *MockACMPCAAPI) GetPolicy(arg0 *acmpca.GetPolicyInput) (*acmpca.GetPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPolicy", arg0)
+	ret0, _ := ret[0].(*acmpca.GetPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPolicy indicates an expected call of GetPolicy
+func (mr *MockACMPCAAPIMockRecorder) GetPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicy", reflect.TypeOf((*MockACMPCAAPI)(nil).GetPolicy), arg0)
+}
+
+// GetPolicyRequest mocks base method
+func (m *MockACMPCAAPI) GetPolicyRequest(arg0 *acmpca.GetPolicyInput) (*request.Request, *acmpca.GetPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*acmpca.GetPolicyOutput)
+	return ret0, ret1
+}
+
+// GetPolicyRequest indicates an expected call of GetPolicyRequest
+func (mr *MockACMPCAAPIMockRecorder) GetPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicyRequest", reflect.TypeOf((*MockACMPCAAPI)(nil).GetPolicyRequest), arg0)
+}
+
+// GetPolicyWithContext mocks base method
+func (m *MockACMPCAAPI) GetPolicyWithContext(arg0 context.Context, arg1 *acmpca.GetPolicyInput, arg2 ...request.Option) (*acmpca.GetPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*acmpca.GetPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPolicyWithContext indicates an expected call of GetPolicyWithContext
+func (mr *MockACMPCAAPIMockRecorder) GetPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicyWithContext", reflect.TypeOf((*MockACMPCAAPI)(nil).GetPolicyWithContext), varargs...)
 }
 
 // ImportCertificateAuthorityCertificate mocks base method
@@ -882,6 +982,56 @@ func (mr *MockACMPCAAPIMockRecorder) ListTagsWithContext(arg0, arg1 interface{},
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsWithContext", reflect.TypeOf((*MockACMPCAAPI)(nil).ListTagsWithContext), varargs...)
+}
+
+// PutPolicy mocks base method
+func (m *MockACMPCAAPI) PutPolicy(arg0 *acmpca.PutPolicyInput) (*acmpca.PutPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPolicy", arg0)
+	ret0, _ := ret[0].(*acmpca.PutPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPolicy indicates an expected call of PutPolicy
+func (mr *MockACMPCAAPIMockRecorder) PutPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPolicy", reflect.TypeOf((*MockACMPCAAPI)(nil).PutPolicy), arg0)
+}
+
+// PutPolicyRequest mocks base method
+func (m *MockACMPCAAPI) PutPolicyRequest(arg0 *acmpca.PutPolicyInput) (*request.Request, *acmpca.PutPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*acmpca.PutPolicyOutput)
+	return ret0, ret1
+}
+
+// PutPolicyRequest indicates an expected call of PutPolicyRequest
+func (mr *MockACMPCAAPIMockRecorder) PutPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPolicyRequest", reflect.TypeOf((*MockACMPCAAPI)(nil).PutPolicyRequest), arg0)
+}
+
+// PutPolicyWithContext mocks base method
+func (m *MockACMPCAAPI) PutPolicyWithContext(arg0 context.Context, arg1 *acmpca.PutPolicyInput, arg2 ...request.Option) (*acmpca.PutPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*acmpca.PutPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPolicyWithContext indicates an expected call of PutPolicyWithContext
+func (mr *MockACMPCAAPIMockRecorder) PutPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPolicyWithContext", reflect.TypeOf((*MockACMPCAAPI)(nil).PutPolicyWithContext), varargs...)
 }
 
 // RestoreCertificateAuthority mocks base method

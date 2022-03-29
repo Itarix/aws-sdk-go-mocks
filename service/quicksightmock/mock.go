@@ -135,6 +135,56 @@ func (mr *MockQuickSightAPIMockRecorder) CreateAccountCustomizationWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccountCustomizationWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).CreateAccountCustomizationWithContext), varargs...)
 }
 
+// CreateAnalysis mocks base method
+func (m *MockQuickSightAPI) CreateAnalysis(arg0 *quicksight.CreateAnalysisInput) (*quicksight.CreateAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAnalysis", arg0)
+	ret0, _ := ret[0].(*quicksight.CreateAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAnalysis indicates an expected call of CreateAnalysis
+func (mr *MockQuickSightAPIMockRecorder) CreateAnalysis(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnalysis", reflect.TypeOf((*MockQuickSightAPI)(nil).CreateAnalysis), arg0)
+}
+
+// CreateAnalysisRequest mocks base method
+func (m *MockQuickSightAPI) CreateAnalysisRequest(arg0 *quicksight.CreateAnalysisInput) (*request.Request, *quicksight.CreateAnalysisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAnalysisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.CreateAnalysisOutput)
+	return ret0, ret1
+}
+
+// CreateAnalysisRequest indicates an expected call of CreateAnalysisRequest
+func (mr *MockQuickSightAPIMockRecorder) CreateAnalysisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnalysisRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).CreateAnalysisRequest), arg0)
+}
+
+// CreateAnalysisWithContext mocks base method
+func (m *MockQuickSightAPI) CreateAnalysisWithContext(arg0 context.Context, arg1 *quicksight.CreateAnalysisInput, arg2 ...request.Option) (*quicksight.CreateAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAnalysisWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.CreateAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAnalysisWithContext indicates an expected call of CreateAnalysisWithContext
+func (mr *MockQuickSightAPIMockRecorder) CreateAnalysisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnalysisWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).CreateAnalysisWithContext), varargs...)
+}
+
 // CreateDashboard mocks base method
 func (m *MockQuickSightAPI) CreateDashboard(arg0 *quicksight.CreateDashboardInput) (*quicksight.CreateDashboardOutput, error) {
 	m.ctrl.T.Helper()
@@ -783,6 +833,56 @@ func (mr *MockQuickSightAPIMockRecorder) DeleteAccountCustomizationWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccountCustomizationWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DeleteAccountCustomizationWithContext), varargs...)
+}
+
+// DeleteAnalysis mocks base method
+func (m *MockQuickSightAPI) DeleteAnalysis(arg0 *quicksight.DeleteAnalysisInput) (*quicksight.DeleteAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAnalysis", arg0)
+	ret0, _ := ret[0].(*quicksight.DeleteAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAnalysis indicates an expected call of DeleteAnalysis
+func (mr *MockQuickSightAPIMockRecorder) DeleteAnalysis(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnalysis", reflect.TypeOf((*MockQuickSightAPI)(nil).DeleteAnalysis), arg0)
+}
+
+// DeleteAnalysisRequest mocks base method
+func (m *MockQuickSightAPI) DeleteAnalysisRequest(arg0 *quicksight.DeleteAnalysisInput) (*request.Request, *quicksight.DeleteAnalysisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAnalysisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.DeleteAnalysisOutput)
+	return ret0, ret1
+}
+
+// DeleteAnalysisRequest indicates an expected call of DeleteAnalysisRequest
+func (mr *MockQuickSightAPIMockRecorder) DeleteAnalysisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnalysisRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).DeleteAnalysisRequest), arg0)
+}
+
+// DeleteAnalysisWithContext mocks base method
+func (m *MockQuickSightAPI) DeleteAnalysisWithContext(arg0 context.Context, arg1 *quicksight.DeleteAnalysisInput, arg2 ...request.Option) (*quicksight.DeleteAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAnalysisWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.DeleteAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAnalysisWithContext indicates an expected call of DeleteAnalysisWithContext
+func (mr *MockQuickSightAPIMockRecorder) DeleteAnalysisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnalysisWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DeleteAnalysisWithContext), varargs...)
 }
 
 // DeleteDashboard mocks base method
@@ -1533,6 +1633,106 @@ func (mr *MockQuickSightAPIMockRecorder) DescribeAccountSettingsWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountSettingsWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAccountSettingsWithContext), varargs...)
+}
+
+// DescribeAnalysis mocks base method
+func (m *MockQuickSightAPI) DescribeAnalysis(arg0 *quicksight.DescribeAnalysisInput) (*quicksight.DescribeAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAnalysis", arg0)
+	ret0, _ := ret[0].(*quicksight.DescribeAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAnalysis indicates an expected call of DescribeAnalysis
+func (mr *MockQuickSightAPIMockRecorder) DescribeAnalysis(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnalysis", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAnalysis), arg0)
+}
+
+// DescribeAnalysisPermissions mocks base method
+func (m *MockQuickSightAPI) DescribeAnalysisPermissions(arg0 *quicksight.DescribeAnalysisPermissionsInput) (*quicksight.DescribeAnalysisPermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAnalysisPermissions", arg0)
+	ret0, _ := ret[0].(*quicksight.DescribeAnalysisPermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAnalysisPermissions indicates an expected call of DescribeAnalysisPermissions
+func (mr *MockQuickSightAPIMockRecorder) DescribeAnalysisPermissions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnalysisPermissions", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAnalysisPermissions), arg0)
+}
+
+// DescribeAnalysisPermissionsRequest mocks base method
+func (m *MockQuickSightAPI) DescribeAnalysisPermissionsRequest(arg0 *quicksight.DescribeAnalysisPermissionsInput) (*request.Request, *quicksight.DescribeAnalysisPermissionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAnalysisPermissionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.DescribeAnalysisPermissionsOutput)
+	return ret0, ret1
+}
+
+// DescribeAnalysisPermissionsRequest indicates an expected call of DescribeAnalysisPermissionsRequest
+func (mr *MockQuickSightAPIMockRecorder) DescribeAnalysisPermissionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnalysisPermissionsRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAnalysisPermissionsRequest), arg0)
+}
+
+// DescribeAnalysisPermissionsWithContext mocks base method
+func (m *MockQuickSightAPI) DescribeAnalysisPermissionsWithContext(arg0 context.Context, arg1 *quicksight.DescribeAnalysisPermissionsInput, arg2 ...request.Option) (*quicksight.DescribeAnalysisPermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAnalysisPermissionsWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.DescribeAnalysisPermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAnalysisPermissionsWithContext indicates an expected call of DescribeAnalysisPermissionsWithContext
+func (mr *MockQuickSightAPIMockRecorder) DescribeAnalysisPermissionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnalysisPermissionsWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAnalysisPermissionsWithContext), varargs...)
+}
+
+// DescribeAnalysisRequest mocks base method
+func (m *MockQuickSightAPI) DescribeAnalysisRequest(arg0 *quicksight.DescribeAnalysisInput) (*request.Request, *quicksight.DescribeAnalysisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAnalysisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.DescribeAnalysisOutput)
+	return ret0, ret1
+}
+
+// DescribeAnalysisRequest indicates an expected call of DescribeAnalysisRequest
+func (mr *MockQuickSightAPIMockRecorder) DescribeAnalysisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnalysisRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAnalysisRequest), arg0)
+}
+
+// DescribeAnalysisWithContext mocks base method
+func (m *MockQuickSightAPI) DescribeAnalysisWithContext(arg0 context.Context, arg1 *quicksight.DescribeAnalysisInput, arg2 ...request.Option) (*quicksight.DescribeAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAnalysisWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.DescribeAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAnalysisWithContext indicates an expected call of DescribeAnalysisWithContext
+func (mr *MockQuickSightAPIMockRecorder) DescribeAnalysisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnalysisWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAnalysisWithContext), varargs...)
 }
 
 // DescribeDashboard mocks base method
@@ -2483,6 +2683,89 @@ func (mr *MockQuickSightAPIMockRecorder) GetSessionEmbedUrlWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSessionEmbedUrlWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).GetSessionEmbedUrlWithContext), varargs...)
+}
+
+// ListAnalyses mocks base method
+func (m *MockQuickSightAPI) ListAnalyses(arg0 *quicksight.ListAnalysesInput) (*quicksight.ListAnalysesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnalyses", arg0)
+	ret0, _ := ret[0].(*quicksight.ListAnalysesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAnalyses indicates an expected call of ListAnalyses
+func (mr *MockQuickSightAPIMockRecorder) ListAnalyses(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalyses", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAnalyses), arg0)
+}
+
+// ListAnalysesPages mocks base method
+func (m *MockQuickSightAPI) ListAnalysesPages(arg0 *quicksight.ListAnalysesInput, arg1 func(*quicksight.ListAnalysesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnalysesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAnalysesPages indicates an expected call of ListAnalysesPages
+func (mr *MockQuickSightAPIMockRecorder) ListAnalysesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalysesPages", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAnalysesPages), arg0, arg1)
+}
+
+// ListAnalysesPagesWithContext mocks base method
+func (m *MockQuickSightAPI) ListAnalysesPagesWithContext(arg0 context.Context, arg1 *quicksight.ListAnalysesInput, arg2 func(*quicksight.ListAnalysesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAnalysesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAnalysesPagesWithContext indicates an expected call of ListAnalysesPagesWithContext
+func (mr *MockQuickSightAPIMockRecorder) ListAnalysesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalysesPagesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAnalysesPagesWithContext), varargs...)
+}
+
+// ListAnalysesRequest mocks base method
+func (m *MockQuickSightAPI) ListAnalysesRequest(arg0 *quicksight.ListAnalysesInput) (*request.Request, *quicksight.ListAnalysesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnalysesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.ListAnalysesOutput)
+	return ret0, ret1
+}
+
+// ListAnalysesRequest indicates an expected call of ListAnalysesRequest
+func (mr *MockQuickSightAPIMockRecorder) ListAnalysesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalysesRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAnalysesRequest), arg0)
+}
+
+// ListAnalysesWithContext mocks base method
+func (m *MockQuickSightAPI) ListAnalysesWithContext(arg0 context.Context, arg1 *quicksight.ListAnalysesInput, arg2 ...request.Option) (*quicksight.ListAnalysesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAnalysesWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.ListAnalysesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAnalysesWithContext indicates an expected call of ListAnalysesWithContext
+func (mr *MockQuickSightAPIMockRecorder) ListAnalysesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalysesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAnalysesWithContext), varargs...)
 }
 
 // ListDashboardVersions mocks base method
@@ -3782,6 +4065,139 @@ func (mr *MockQuickSightAPIMockRecorder) RegisterUserWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterUserWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).RegisterUserWithContext), varargs...)
 }
 
+// RestoreAnalysis mocks base method
+func (m *MockQuickSightAPI) RestoreAnalysis(arg0 *quicksight.RestoreAnalysisInput) (*quicksight.RestoreAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreAnalysis", arg0)
+	ret0, _ := ret[0].(*quicksight.RestoreAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreAnalysis indicates an expected call of RestoreAnalysis
+func (mr *MockQuickSightAPIMockRecorder) RestoreAnalysis(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreAnalysis", reflect.TypeOf((*MockQuickSightAPI)(nil).RestoreAnalysis), arg0)
+}
+
+// RestoreAnalysisRequest mocks base method
+func (m *MockQuickSightAPI) RestoreAnalysisRequest(arg0 *quicksight.RestoreAnalysisInput) (*request.Request, *quicksight.RestoreAnalysisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreAnalysisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.RestoreAnalysisOutput)
+	return ret0, ret1
+}
+
+// RestoreAnalysisRequest indicates an expected call of RestoreAnalysisRequest
+func (mr *MockQuickSightAPIMockRecorder) RestoreAnalysisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreAnalysisRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).RestoreAnalysisRequest), arg0)
+}
+
+// RestoreAnalysisWithContext mocks base method
+func (m *MockQuickSightAPI) RestoreAnalysisWithContext(arg0 context.Context, arg1 *quicksight.RestoreAnalysisInput, arg2 ...request.Option) (*quicksight.RestoreAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RestoreAnalysisWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.RestoreAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreAnalysisWithContext indicates an expected call of RestoreAnalysisWithContext
+func (mr *MockQuickSightAPIMockRecorder) RestoreAnalysisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreAnalysisWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).RestoreAnalysisWithContext), varargs...)
+}
+
+// SearchAnalyses mocks base method
+func (m *MockQuickSightAPI) SearchAnalyses(arg0 *quicksight.SearchAnalysesInput) (*quicksight.SearchAnalysesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchAnalyses", arg0)
+	ret0, _ := ret[0].(*quicksight.SearchAnalysesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchAnalyses indicates an expected call of SearchAnalyses
+func (mr *MockQuickSightAPIMockRecorder) SearchAnalyses(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAnalyses", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchAnalyses), arg0)
+}
+
+// SearchAnalysesPages mocks base method
+func (m *MockQuickSightAPI) SearchAnalysesPages(arg0 *quicksight.SearchAnalysesInput, arg1 func(*quicksight.SearchAnalysesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchAnalysesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchAnalysesPages indicates an expected call of SearchAnalysesPages
+func (mr *MockQuickSightAPIMockRecorder) SearchAnalysesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAnalysesPages", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchAnalysesPages), arg0, arg1)
+}
+
+// SearchAnalysesPagesWithContext mocks base method
+func (m *MockQuickSightAPI) SearchAnalysesPagesWithContext(arg0 context.Context, arg1 *quicksight.SearchAnalysesInput, arg2 func(*quicksight.SearchAnalysesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchAnalysesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchAnalysesPagesWithContext indicates an expected call of SearchAnalysesPagesWithContext
+func (mr *MockQuickSightAPIMockRecorder) SearchAnalysesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAnalysesPagesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchAnalysesPagesWithContext), varargs...)
+}
+
+// SearchAnalysesRequest mocks base method
+func (m *MockQuickSightAPI) SearchAnalysesRequest(arg0 *quicksight.SearchAnalysesInput) (*request.Request, *quicksight.SearchAnalysesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchAnalysesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.SearchAnalysesOutput)
+	return ret0, ret1
+}
+
+// SearchAnalysesRequest indicates an expected call of SearchAnalysesRequest
+func (mr *MockQuickSightAPIMockRecorder) SearchAnalysesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAnalysesRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchAnalysesRequest), arg0)
+}
+
+// SearchAnalysesWithContext mocks base method
+func (m *MockQuickSightAPI) SearchAnalysesWithContext(arg0 context.Context, arg1 *quicksight.SearchAnalysesInput, arg2 ...request.Option) (*quicksight.SearchAnalysesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchAnalysesWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.SearchAnalysesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchAnalysesWithContext indicates an expected call of SearchAnalysesWithContext
+func (mr *MockQuickSightAPIMockRecorder) SearchAnalysesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAnalysesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchAnalysesWithContext), varargs...)
+}
+
 // SearchDashboards mocks base method
 func (m *MockQuickSightAPI) SearchDashboards(arg0 *quicksight.SearchDashboardsInput) (*quicksight.SearchDashboardsOutput, error) {
 	m.ctrl.T.Helper()
@@ -4063,6 +4479,106 @@ func (mr *MockQuickSightAPIMockRecorder) UpdateAccountSettingsWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccountSettingsWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdateAccountSettingsWithContext), varargs...)
+}
+
+// UpdateAnalysis mocks base method
+func (m *MockQuickSightAPI) UpdateAnalysis(arg0 *quicksight.UpdateAnalysisInput) (*quicksight.UpdateAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAnalysis", arg0)
+	ret0, _ := ret[0].(*quicksight.UpdateAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAnalysis indicates an expected call of UpdateAnalysis
+func (mr *MockQuickSightAPIMockRecorder) UpdateAnalysis(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnalysis", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdateAnalysis), arg0)
+}
+
+// UpdateAnalysisPermissions mocks base method
+func (m *MockQuickSightAPI) UpdateAnalysisPermissions(arg0 *quicksight.UpdateAnalysisPermissionsInput) (*quicksight.UpdateAnalysisPermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAnalysisPermissions", arg0)
+	ret0, _ := ret[0].(*quicksight.UpdateAnalysisPermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAnalysisPermissions indicates an expected call of UpdateAnalysisPermissions
+func (mr *MockQuickSightAPIMockRecorder) UpdateAnalysisPermissions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnalysisPermissions", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdateAnalysisPermissions), arg0)
+}
+
+// UpdateAnalysisPermissionsRequest mocks base method
+func (m *MockQuickSightAPI) UpdateAnalysisPermissionsRequest(arg0 *quicksight.UpdateAnalysisPermissionsInput) (*request.Request, *quicksight.UpdateAnalysisPermissionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAnalysisPermissionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.UpdateAnalysisPermissionsOutput)
+	return ret0, ret1
+}
+
+// UpdateAnalysisPermissionsRequest indicates an expected call of UpdateAnalysisPermissionsRequest
+func (mr *MockQuickSightAPIMockRecorder) UpdateAnalysisPermissionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnalysisPermissionsRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdateAnalysisPermissionsRequest), arg0)
+}
+
+// UpdateAnalysisPermissionsWithContext mocks base method
+func (m *MockQuickSightAPI) UpdateAnalysisPermissionsWithContext(arg0 context.Context, arg1 *quicksight.UpdateAnalysisPermissionsInput, arg2 ...request.Option) (*quicksight.UpdateAnalysisPermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAnalysisPermissionsWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.UpdateAnalysisPermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAnalysisPermissionsWithContext indicates an expected call of UpdateAnalysisPermissionsWithContext
+func (mr *MockQuickSightAPIMockRecorder) UpdateAnalysisPermissionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnalysisPermissionsWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdateAnalysisPermissionsWithContext), varargs...)
+}
+
+// UpdateAnalysisRequest mocks base method
+func (m *MockQuickSightAPI) UpdateAnalysisRequest(arg0 *quicksight.UpdateAnalysisInput) (*request.Request, *quicksight.UpdateAnalysisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAnalysisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.UpdateAnalysisOutput)
+	return ret0, ret1
+}
+
+// UpdateAnalysisRequest indicates an expected call of UpdateAnalysisRequest
+func (mr *MockQuickSightAPIMockRecorder) UpdateAnalysisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnalysisRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdateAnalysisRequest), arg0)
+}
+
+// UpdateAnalysisWithContext mocks base method
+func (m *MockQuickSightAPI) UpdateAnalysisWithContext(arg0 context.Context, arg1 *quicksight.UpdateAnalysisInput, arg2 ...request.Option) (*quicksight.UpdateAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAnalysisWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.UpdateAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAnalysisWithContext indicates an expected call of UpdateAnalysisWithContext
+func (mr *MockQuickSightAPIMockRecorder) UpdateAnalysisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnalysisWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdateAnalysisWithContext), varargs...)
 }
 
 // UpdateDashboard mocks base method

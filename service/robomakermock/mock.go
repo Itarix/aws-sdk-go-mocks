@@ -35,6 +35,56 @@ func (m *MockRoboMakerAPI) EXPECT() *MockRoboMakerAPIMockRecorder {
 	return m.recorder
 }
 
+// BatchDeleteWorlds mocks base method
+func (m *MockRoboMakerAPI) BatchDeleteWorlds(arg0 *robomaker.BatchDeleteWorldsInput) (*robomaker.BatchDeleteWorldsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteWorlds", arg0)
+	ret0, _ := ret[0].(*robomaker.BatchDeleteWorldsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteWorlds indicates an expected call of BatchDeleteWorlds
+func (mr *MockRoboMakerAPIMockRecorder) BatchDeleteWorlds(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteWorlds", reflect.TypeOf((*MockRoboMakerAPI)(nil).BatchDeleteWorlds), arg0)
+}
+
+// BatchDeleteWorldsRequest mocks base method
+func (m *MockRoboMakerAPI) BatchDeleteWorldsRequest(arg0 *robomaker.BatchDeleteWorldsInput) (*request.Request, *robomaker.BatchDeleteWorldsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteWorldsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.BatchDeleteWorldsOutput)
+	return ret0, ret1
+}
+
+// BatchDeleteWorldsRequest indicates an expected call of BatchDeleteWorldsRequest
+func (mr *MockRoboMakerAPIMockRecorder) BatchDeleteWorldsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteWorldsRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).BatchDeleteWorldsRequest), arg0)
+}
+
+// BatchDeleteWorldsWithContext mocks base method
+func (m *MockRoboMakerAPI) BatchDeleteWorldsWithContext(arg0 context.Context, arg1 *robomaker.BatchDeleteWorldsInput, arg2 ...request.Option) (*robomaker.BatchDeleteWorldsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDeleteWorldsWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.BatchDeleteWorldsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteWorldsWithContext indicates an expected call of BatchDeleteWorldsWithContext
+func (mr *MockRoboMakerAPIMockRecorder) BatchDeleteWorldsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteWorldsWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).BatchDeleteWorldsWithContext), varargs...)
+}
+
 // BatchDescribeSimulationJob mocks base method
 func (m *MockRoboMakerAPI) BatchDescribeSimulationJob(arg0 *robomaker.BatchDescribeSimulationJobInput) (*robomaker.BatchDescribeSimulationJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,106 @@ func (mr *MockRoboMakerAPIMockRecorder) CancelSimulationJobWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelSimulationJobWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).CancelSimulationJobWithContext), varargs...)
+}
+
+// CancelWorldExportJob mocks base method
+func (m *MockRoboMakerAPI) CancelWorldExportJob(arg0 *robomaker.CancelWorldExportJobInput) (*robomaker.CancelWorldExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelWorldExportJob", arg0)
+	ret0, _ := ret[0].(*robomaker.CancelWorldExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelWorldExportJob indicates an expected call of CancelWorldExportJob
+func (mr *MockRoboMakerAPIMockRecorder) CancelWorldExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelWorldExportJob", reflect.TypeOf((*MockRoboMakerAPI)(nil).CancelWorldExportJob), arg0)
+}
+
+// CancelWorldExportJobRequest mocks base method
+func (m *MockRoboMakerAPI) CancelWorldExportJobRequest(arg0 *robomaker.CancelWorldExportJobInput) (*request.Request, *robomaker.CancelWorldExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelWorldExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.CancelWorldExportJobOutput)
+	return ret0, ret1
+}
+
+// CancelWorldExportJobRequest indicates an expected call of CancelWorldExportJobRequest
+func (mr *MockRoboMakerAPIMockRecorder) CancelWorldExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelWorldExportJobRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).CancelWorldExportJobRequest), arg0)
+}
+
+// CancelWorldExportJobWithContext mocks base method
+func (m *MockRoboMakerAPI) CancelWorldExportJobWithContext(arg0 context.Context, arg1 *robomaker.CancelWorldExportJobInput, arg2 ...request.Option) (*robomaker.CancelWorldExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelWorldExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.CancelWorldExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelWorldExportJobWithContext indicates an expected call of CancelWorldExportJobWithContext
+func (mr *MockRoboMakerAPIMockRecorder) CancelWorldExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelWorldExportJobWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).CancelWorldExportJobWithContext), varargs...)
+}
+
+// CancelWorldGenerationJob mocks base method
+func (m *MockRoboMakerAPI) CancelWorldGenerationJob(arg0 *robomaker.CancelWorldGenerationJobInput) (*robomaker.CancelWorldGenerationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelWorldGenerationJob", arg0)
+	ret0, _ := ret[0].(*robomaker.CancelWorldGenerationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelWorldGenerationJob indicates an expected call of CancelWorldGenerationJob
+func (mr *MockRoboMakerAPIMockRecorder) CancelWorldGenerationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelWorldGenerationJob", reflect.TypeOf((*MockRoboMakerAPI)(nil).CancelWorldGenerationJob), arg0)
+}
+
+// CancelWorldGenerationJobRequest mocks base method
+func (m *MockRoboMakerAPI) CancelWorldGenerationJobRequest(arg0 *robomaker.CancelWorldGenerationJobInput) (*request.Request, *robomaker.CancelWorldGenerationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelWorldGenerationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.CancelWorldGenerationJobOutput)
+	return ret0, ret1
+}
+
+// CancelWorldGenerationJobRequest indicates an expected call of CancelWorldGenerationJobRequest
+func (mr *MockRoboMakerAPIMockRecorder) CancelWorldGenerationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelWorldGenerationJobRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).CancelWorldGenerationJobRequest), arg0)
+}
+
+// CancelWorldGenerationJobWithContext mocks base method
+func (m *MockRoboMakerAPI) CancelWorldGenerationJobWithContext(arg0 context.Context, arg1 *robomaker.CancelWorldGenerationJobInput, arg2 ...request.Option) (*robomaker.CancelWorldGenerationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelWorldGenerationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.CancelWorldGenerationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelWorldGenerationJobWithContext indicates an expected call of CancelWorldGenerationJobWithContext
+func (mr *MockRoboMakerAPIMockRecorder) CancelWorldGenerationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelWorldGenerationJobWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).CancelWorldGenerationJobWithContext), varargs...)
 }
 
 // CreateDeploymentJob mocks base method
@@ -635,6 +785,156 @@ func (mr *MockRoboMakerAPIMockRecorder) CreateSimulationJobWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSimulationJobWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).CreateSimulationJobWithContext), varargs...)
 }
 
+// CreateWorldExportJob mocks base method
+func (m *MockRoboMakerAPI) CreateWorldExportJob(arg0 *robomaker.CreateWorldExportJobInput) (*robomaker.CreateWorldExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorldExportJob", arg0)
+	ret0, _ := ret[0].(*robomaker.CreateWorldExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorldExportJob indicates an expected call of CreateWorldExportJob
+func (mr *MockRoboMakerAPIMockRecorder) CreateWorldExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorldExportJob", reflect.TypeOf((*MockRoboMakerAPI)(nil).CreateWorldExportJob), arg0)
+}
+
+// CreateWorldExportJobRequest mocks base method
+func (m *MockRoboMakerAPI) CreateWorldExportJobRequest(arg0 *robomaker.CreateWorldExportJobInput) (*request.Request, *robomaker.CreateWorldExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorldExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.CreateWorldExportJobOutput)
+	return ret0, ret1
+}
+
+// CreateWorldExportJobRequest indicates an expected call of CreateWorldExportJobRequest
+func (mr *MockRoboMakerAPIMockRecorder) CreateWorldExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorldExportJobRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).CreateWorldExportJobRequest), arg0)
+}
+
+// CreateWorldExportJobWithContext mocks base method
+func (m *MockRoboMakerAPI) CreateWorldExportJobWithContext(arg0 context.Context, arg1 *robomaker.CreateWorldExportJobInput, arg2 ...request.Option) (*robomaker.CreateWorldExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWorldExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.CreateWorldExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorldExportJobWithContext indicates an expected call of CreateWorldExportJobWithContext
+func (mr *MockRoboMakerAPIMockRecorder) CreateWorldExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorldExportJobWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).CreateWorldExportJobWithContext), varargs...)
+}
+
+// CreateWorldGenerationJob mocks base method
+func (m *MockRoboMakerAPI) CreateWorldGenerationJob(arg0 *robomaker.CreateWorldGenerationJobInput) (*robomaker.CreateWorldGenerationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorldGenerationJob", arg0)
+	ret0, _ := ret[0].(*robomaker.CreateWorldGenerationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorldGenerationJob indicates an expected call of CreateWorldGenerationJob
+func (mr *MockRoboMakerAPIMockRecorder) CreateWorldGenerationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorldGenerationJob", reflect.TypeOf((*MockRoboMakerAPI)(nil).CreateWorldGenerationJob), arg0)
+}
+
+// CreateWorldGenerationJobRequest mocks base method
+func (m *MockRoboMakerAPI) CreateWorldGenerationJobRequest(arg0 *robomaker.CreateWorldGenerationJobInput) (*request.Request, *robomaker.CreateWorldGenerationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorldGenerationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.CreateWorldGenerationJobOutput)
+	return ret0, ret1
+}
+
+// CreateWorldGenerationJobRequest indicates an expected call of CreateWorldGenerationJobRequest
+func (mr *MockRoboMakerAPIMockRecorder) CreateWorldGenerationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorldGenerationJobRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).CreateWorldGenerationJobRequest), arg0)
+}
+
+// CreateWorldGenerationJobWithContext mocks base method
+func (m *MockRoboMakerAPI) CreateWorldGenerationJobWithContext(arg0 context.Context, arg1 *robomaker.CreateWorldGenerationJobInput, arg2 ...request.Option) (*robomaker.CreateWorldGenerationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWorldGenerationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.CreateWorldGenerationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorldGenerationJobWithContext indicates an expected call of CreateWorldGenerationJobWithContext
+func (mr *MockRoboMakerAPIMockRecorder) CreateWorldGenerationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorldGenerationJobWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).CreateWorldGenerationJobWithContext), varargs...)
+}
+
+// CreateWorldTemplate mocks base method
+func (m *MockRoboMakerAPI) CreateWorldTemplate(arg0 *robomaker.CreateWorldTemplateInput) (*robomaker.CreateWorldTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorldTemplate", arg0)
+	ret0, _ := ret[0].(*robomaker.CreateWorldTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorldTemplate indicates an expected call of CreateWorldTemplate
+func (mr *MockRoboMakerAPIMockRecorder) CreateWorldTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorldTemplate", reflect.TypeOf((*MockRoboMakerAPI)(nil).CreateWorldTemplate), arg0)
+}
+
+// CreateWorldTemplateRequest mocks base method
+func (m *MockRoboMakerAPI) CreateWorldTemplateRequest(arg0 *robomaker.CreateWorldTemplateInput) (*request.Request, *robomaker.CreateWorldTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorldTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.CreateWorldTemplateOutput)
+	return ret0, ret1
+}
+
+// CreateWorldTemplateRequest indicates an expected call of CreateWorldTemplateRequest
+func (mr *MockRoboMakerAPIMockRecorder) CreateWorldTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorldTemplateRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).CreateWorldTemplateRequest), arg0)
+}
+
+// CreateWorldTemplateWithContext mocks base method
+func (m *MockRoboMakerAPI) CreateWorldTemplateWithContext(arg0 context.Context, arg1 *robomaker.CreateWorldTemplateInput, arg2 ...request.Option) (*robomaker.CreateWorldTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWorldTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.CreateWorldTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorldTemplateWithContext indicates an expected call of CreateWorldTemplateWithContext
+func (mr *MockRoboMakerAPIMockRecorder) CreateWorldTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorldTemplateWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).CreateWorldTemplateWithContext), varargs...)
+}
+
 // DeleteFleet mocks base method
 func (m *MockRoboMakerAPI) DeleteFleet(arg0 *robomaker.DeleteFleetInput) (*robomaker.DeleteFleetOutput, error) {
 	m.ctrl.T.Helper()
@@ -833,6 +1133,56 @@ func (mr *MockRoboMakerAPIMockRecorder) DeleteSimulationApplicationWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSimulationApplicationWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).DeleteSimulationApplicationWithContext), varargs...)
+}
+
+// DeleteWorldTemplate mocks base method
+func (m *MockRoboMakerAPI) DeleteWorldTemplate(arg0 *robomaker.DeleteWorldTemplateInput) (*robomaker.DeleteWorldTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorldTemplate", arg0)
+	ret0, _ := ret[0].(*robomaker.DeleteWorldTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorldTemplate indicates an expected call of DeleteWorldTemplate
+func (mr *MockRoboMakerAPIMockRecorder) DeleteWorldTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorldTemplate", reflect.TypeOf((*MockRoboMakerAPI)(nil).DeleteWorldTemplate), arg0)
+}
+
+// DeleteWorldTemplateRequest mocks base method
+func (m *MockRoboMakerAPI) DeleteWorldTemplateRequest(arg0 *robomaker.DeleteWorldTemplateInput) (*request.Request, *robomaker.DeleteWorldTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorldTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.DeleteWorldTemplateOutput)
+	return ret0, ret1
+}
+
+// DeleteWorldTemplateRequest indicates an expected call of DeleteWorldTemplateRequest
+func (mr *MockRoboMakerAPIMockRecorder) DeleteWorldTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorldTemplateRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).DeleteWorldTemplateRequest), arg0)
+}
+
+// DeleteWorldTemplateWithContext mocks base method
+func (m *MockRoboMakerAPI) DeleteWorldTemplateWithContext(arg0 context.Context, arg1 *robomaker.DeleteWorldTemplateInput, arg2 ...request.Option) (*robomaker.DeleteWorldTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteWorldTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.DeleteWorldTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorldTemplateWithContext indicates an expected call of DeleteWorldTemplateWithContext
+func (mr *MockRoboMakerAPIMockRecorder) DeleteWorldTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorldTemplateWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).DeleteWorldTemplateWithContext), varargs...)
 }
 
 // DeregisterRobot mocks base method
@@ -1233,6 +1583,256 @@ func (mr *MockRoboMakerAPIMockRecorder) DescribeSimulationJobWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSimulationJobWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeSimulationJobWithContext), varargs...)
+}
+
+// DescribeWorld mocks base method
+func (m *MockRoboMakerAPI) DescribeWorld(arg0 *robomaker.DescribeWorldInput) (*robomaker.DescribeWorldOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorld", arg0)
+	ret0, _ := ret[0].(*robomaker.DescribeWorldOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorld indicates an expected call of DescribeWorld
+func (mr *MockRoboMakerAPIMockRecorder) DescribeWorld(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorld", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeWorld), arg0)
+}
+
+// DescribeWorldExportJob mocks base method
+func (m *MockRoboMakerAPI) DescribeWorldExportJob(arg0 *robomaker.DescribeWorldExportJobInput) (*robomaker.DescribeWorldExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorldExportJob", arg0)
+	ret0, _ := ret[0].(*robomaker.DescribeWorldExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorldExportJob indicates an expected call of DescribeWorldExportJob
+func (mr *MockRoboMakerAPIMockRecorder) DescribeWorldExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorldExportJob", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeWorldExportJob), arg0)
+}
+
+// DescribeWorldExportJobRequest mocks base method
+func (m *MockRoboMakerAPI) DescribeWorldExportJobRequest(arg0 *robomaker.DescribeWorldExportJobInput) (*request.Request, *robomaker.DescribeWorldExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorldExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.DescribeWorldExportJobOutput)
+	return ret0, ret1
+}
+
+// DescribeWorldExportJobRequest indicates an expected call of DescribeWorldExportJobRequest
+func (mr *MockRoboMakerAPIMockRecorder) DescribeWorldExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorldExportJobRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeWorldExportJobRequest), arg0)
+}
+
+// DescribeWorldExportJobWithContext mocks base method
+func (m *MockRoboMakerAPI) DescribeWorldExportJobWithContext(arg0 context.Context, arg1 *robomaker.DescribeWorldExportJobInput, arg2 ...request.Option) (*robomaker.DescribeWorldExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWorldExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.DescribeWorldExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorldExportJobWithContext indicates an expected call of DescribeWorldExportJobWithContext
+func (mr *MockRoboMakerAPIMockRecorder) DescribeWorldExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorldExportJobWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeWorldExportJobWithContext), varargs...)
+}
+
+// DescribeWorldGenerationJob mocks base method
+func (m *MockRoboMakerAPI) DescribeWorldGenerationJob(arg0 *robomaker.DescribeWorldGenerationJobInput) (*robomaker.DescribeWorldGenerationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorldGenerationJob", arg0)
+	ret0, _ := ret[0].(*robomaker.DescribeWorldGenerationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorldGenerationJob indicates an expected call of DescribeWorldGenerationJob
+func (mr *MockRoboMakerAPIMockRecorder) DescribeWorldGenerationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorldGenerationJob", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeWorldGenerationJob), arg0)
+}
+
+// DescribeWorldGenerationJobRequest mocks base method
+func (m *MockRoboMakerAPI) DescribeWorldGenerationJobRequest(arg0 *robomaker.DescribeWorldGenerationJobInput) (*request.Request, *robomaker.DescribeWorldGenerationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorldGenerationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.DescribeWorldGenerationJobOutput)
+	return ret0, ret1
+}
+
+// DescribeWorldGenerationJobRequest indicates an expected call of DescribeWorldGenerationJobRequest
+func (mr *MockRoboMakerAPIMockRecorder) DescribeWorldGenerationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorldGenerationJobRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeWorldGenerationJobRequest), arg0)
+}
+
+// DescribeWorldGenerationJobWithContext mocks base method
+func (m *MockRoboMakerAPI) DescribeWorldGenerationJobWithContext(arg0 context.Context, arg1 *robomaker.DescribeWorldGenerationJobInput, arg2 ...request.Option) (*robomaker.DescribeWorldGenerationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWorldGenerationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.DescribeWorldGenerationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorldGenerationJobWithContext indicates an expected call of DescribeWorldGenerationJobWithContext
+func (mr *MockRoboMakerAPIMockRecorder) DescribeWorldGenerationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorldGenerationJobWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeWorldGenerationJobWithContext), varargs...)
+}
+
+// DescribeWorldRequest mocks base method
+func (m *MockRoboMakerAPI) DescribeWorldRequest(arg0 *robomaker.DescribeWorldInput) (*request.Request, *robomaker.DescribeWorldOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorldRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.DescribeWorldOutput)
+	return ret0, ret1
+}
+
+// DescribeWorldRequest indicates an expected call of DescribeWorldRequest
+func (mr *MockRoboMakerAPIMockRecorder) DescribeWorldRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorldRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeWorldRequest), arg0)
+}
+
+// DescribeWorldTemplate mocks base method
+func (m *MockRoboMakerAPI) DescribeWorldTemplate(arg0 *robomaker.DescribeWorldTemplateInput) (*robomaker.DescribeWorldTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorldTemplate", arg0)
+	ret0, _ := ret[0].(*robomaker.DescribeWorldTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorldTemplate indicates an expected call of DescribeWorldTemplate
+func (mr *MockRoboMakerAPIMockRecorder) DescribeWorldTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorldTemplate", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeWorldTemplate), arg0)
+}
+
+// DescribeWorldTemplateRequest mocks base method
+func (m *MockRoboMakerAPI) DescribeWorldTemplateRequest(arg0 *robomaker.DescribeWorldTemplateInput) (*request.Request, *robomaker.DescribeWorldTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorldTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.DescribeWorldTemplateOutput)
+	return ret0, ret1
+}
+
+// DescribeWorldTemplateRequest indicates an expected call of DescribeWorldTemplateRequest
+func (mr *MockRoboMakerAPIMockRecorder) DescribeWorldTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorldTemplateRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeWorldTemplateRequest), arg0)
+}
+
+// DescribeWorldTemplateWithContext mocks base method
+func (m *MockRoboMakerAPI) DescribeWorldTemplateWithContext(arg0 context.Context, arg1 *robomaker.DescribeWorldTemplateInput, arg2 ...request.Option) (*robomaker.DescribeWorldTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWorldTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.DescribeWorldTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorldTemplateWithContext indicates an expected call of DescribeWorldTemplateWithContext
+func (mr *MockRoboMakerAPIMockRecorder) DescribeWorldTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorldTemplateWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeWorldTemplateWithContext), varargs...)
+}
+
+// DescribeWorldWithContext mocks base method
+func (m *MockRoboMakerAPI) DescribeWorldWithContext(arg0 context.Context, arg1 *robomaker.DescribeWorldInput, arg2 ...request.Option) (*robomaker.DescribeWorldOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWorldWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.DescribeWorldOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorldWithContext indicates an expected call of DescribeWorldWithContext
+func (mr *MockRoboMakerAPIMockRecorder) DescribeWorldWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorldWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).DescribeWorldWithContext), varargs...)
+}
+
+// GetWorldTemplateBody mocks base method
+func (m *MockRoboMakerAPI) GetWorldTemplateBody(arg0 *robomaker.GetWorldTemplateBodyInput) (*robomaker.GetWorldTemplateBodyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorldTemplateBody", arg0)
+	ret0, _ := ret[0].(*robomaker.GetWorldTemplateBodyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorldTemplateBody indicates an expected call of GetWorldTemplateBody
+func (mr *MockRoboMakerAPIMockRecorder) GetWorldTemplateBody(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorldTemplateBody", reflect.TypeOf((*MockRoboMakerAPI)(nil).GetWorldTemplateBody), arg0)
+}
+
+// GetWorldTemplateBodyRequest mocks base method
+func (m *MockRoboMakerAPI) GetWorldTemplateBodyRequest(arg0 *robomaker.GetWorldTemplateBodyInput) (*request.Request, *robomaker.GetWorldTemplateBodyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorldTemplateBodyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.GetWorldTemplateBodyOutput)
+	return ret0, ret1
+}
+
+// GetWorldTemplateBodyRequest indicates an expected call of GetWorldTemplateBodyRequest
+func (mr *MockRoboMakerAPIMockRecorder) GetWorldTemplateBodyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorldTemplateBodyRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).GetWorldTemplateBodyRequest), arg0)
+}
+
+// GetWorldTemplateBodyWithContext mocks base method
+func (m *MockRoboMakerAPI) GetWorldTemplateBodyWithContext(arg0 context.Context, arg1 *robomaker.GetWorldTemplateBodyInput, arg2 ...request.Option) (*robomaker.GetWorldTemplateBodyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetWorldTemplateBodyWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.GetWorldTemplateBodyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorldTemplateBodyWithContext indicates an expected call of GetWorldTemplateBodyWithContext
+func (mr *MockRoboMakerAPIMockRecorder) GetWorldTemplateBodyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorldTemplateBodyWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).GetWorldTemplateBodyWithContext), varargs...)
 }
 
 // ListDeploymentJobs mocks base method
@@ -1866,6 +2466,338 @@ func (mr *MockRoboMakerAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ListWorldExportJobs mocks base method
+func (m *MockRoboMakerAPI) ListWorldExportJobs(arg0 *robomaker.ListWorldExportJobsInput) (*robomaker.ListWorldExportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorldExportJobs", arg0)
+	ret0, _ := ret[0].(*robomaker.ListWorldExportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorldExportJobs indicates an expected call of ListWorldExportJobs
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldExportJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldExportJobs", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldExportJobs), arg0)
+}
+
+// ListWorldExportJobsPages mocks base method
+func (m *MockRoboMakerAPI) ListWorldExportJobsPages(arg0 *robomaker.ListWorldExportJobsInput, arg1 func(*robomaker.ListWorldExportJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorldExportJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorldExportJobsPages indicates an expected call of ListWorldExportJobsPages
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldExportJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldExportJobsPages", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldExportJobsPages), arg0, arg1)
+}
+
+// ListWorldExportJobsPagesWithContext mocks base method
+func (m *MockRoboMakerAPI) ListWorldExportJobsPagesWithContext(arg0 context.Context, arg1 *robomaker.ListWorldExportJobsInput, arg2 func(*robomaker.ListWorldExportJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorldExportJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorldExportJobsPagesWithContext indicates an expected call of ListWorldExportJobsPagesWithContext
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldExportJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldExportJobsPagesWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldExportJobsPagesWithContext), varargs...)
+}
+
+// ListWorldExportJobsRequest mocks base method
+func (m *MockRoboMakerAPI) ListWorldExportJobsRequest(arg0 *robomaker.ListWorldExportJobsInput) (*request.Request, *robomaker.ListWorldExportJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorldExportJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.ListWorldExportJobsOutput)
+	return ret0, ret1
+}
+
+// ListWorldExportJobsRequest indicates an expected call of ListWorldExportJobsRequest
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldExportJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldExportJobsRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldExportJobsRequest), arg0)
+}
+
+// ListWorldExportJobsWithContext mocks base method
+func (m *MockRoboMakerAPI) ListWorldExportJobsWithContext(arg0 context.Context, arg1 *robomaker.ListWorldExportJobsInput, arg2 ...request.Option) (*robomaker.ListWorldExportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorldExportJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.ListWorldExportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorldExportJobsWithContext indicates an expected call of ListWorldExportJobsWithContext
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldExportJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldExportJobsWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldExportJobsWithContext), varargs...)
+}
+
+// ListWorldGenerationJobs mocks base method
+func (m *MockRoboMakerAPI) ListWorldGenerationJobs(arg0 *robomaker.ListWorldGenerationJobsInput) (*robomaker.ListWorldGenerationJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorldGenerationJobs", arg0)
+	ret0, _ := ret[0].(*robomaker.ListWorldGenerationJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorldGenerationJobs indicates an expected call of ListWorldGenerationJobs
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldGenerationJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldGenerationJobs", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldGenerationJobs), arg0)
+}
+
+// ListWorldGenerationJobsPages mocks base method
+func (m *MockRoboMakerAPI) ListWorldGenerationJobsPages(arg0 *robomaker.ListWorldGenerationJobsInput, arg1 func(*robomaker.ListWorldGenerationJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorldGenerationJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorldGenerationJobsPages indicates an expected call of ListWorldGenerationJobsPages
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldGenerationJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldGenerationJobsPages", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldGenerationJobsPages), arg0, arg1)
+}
+
+// ListWorldGenerationJobsPagesWithContext mocks base method
+func (m *MockRoboMakerAPI) ListWorldGenerationJobsPagesWithContext(arg0 context.Context, arg1 *robomaker.ListWorldGenerationJobsInput, arg2 func(*robomaker.ListWorldGenerationJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorldGenerationJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorldGenerationJobsPagesWithContext indicates an expected call of ListWorldGenerationJobsPagesWithContext
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldGenerationJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldGenerationJobsPagesWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldGenerationJobsPagesWithContext), varargs...)
+}
+
+// ListWorldGenerationJobsRequest mocks base method
+func (m *MockRoboMakerAPI) ListWorldGenerationJobsRequest(arg0 *robomaker.ListWorldGenerationJobsInput) (*request.Request, *robomaker.ListWorldGenerationJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorldGenerationJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.ListWorldGenerationJobsOutput)
+	return ret0, ret1
+}
+
+// ListWorldGenerationJobsRequest indicates an expected call of ListWorldGenerationJobsRequest
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldGenerationJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldGenerationJobsRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldGenerationJobsRequest), arg0)
+}
+
+// ListWorldGenerationJobsWithContext mocks base method
+func (m *MockRoboMakerAPI) ListWorldGenerationJobsWithContext(arg0 context.Context, arg1 *robomaker.ListWorldGenerationJobsInput, arg2 ...request.Option) (*robomaker.ListWorldGenerationJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorldGenerationJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.ListWorldGenerationJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorldGenerationJobsWithContext indicates an expected call of ListWorldGenerationJobsWithContext
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldGenerationJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldGenerationJobsWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldGenerationJobsWithContext), varargs...)
+}
+
+// ListWorldTemplates mocks base method
+func (m *MockRoboMakerAPI) ListWorldTemplates(arg0 *robomaker.ListWorldTemplatesInput) (*robomaker.ListWorldTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorldTemplates", arg0)
+	ret0, _ := ret[0].(*robomaker.ListWorldTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorldTemplates indicates an expected call of ListWorldTemplates
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldTemplates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldTemplates", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldTemplates), arg0)
+}
+
+// ListWorldTemplatesPages mocks base method
+func (m *MockRoboMakerAPI) ListWorldTemplatesPages(arg0 *robomaker.ListWorldTemplatesInput, arg1 func(*robomaker.ListWorldTemplatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorldTemplatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorldTemplatesPages indicates an expected call of ListWorldTemplatesPages
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldTemplatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldTemplatesPages", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldTemplatesPages), arg0, arg1)
+}
+
+// ListWorldTemplatesPagesWithContext mocks base method
+func (m *MockRoboMakerAPI) ListWorldTemplatesPagesWithContext(arg0 context.Context, arg1 *robomaker.ListWorldTemplatesInput, arg2 func(*robomaker.ListWorldTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorldTemplatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorldTemplatesPagesWithContext indicates an expected call of ListWorldTemplatesPagesWithContext
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldTemplatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldTemplatesPagesWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldTemplatesPagesWithContext), varargs...)
+}
+
+// ListWorldTemplatesRequest mocks base method
+func (m *MockRoboMakerAPI) ListWorldTemplatesRequest(arg0 *robomaker.ListWorldTemplatesInput) (*request.Request, *robomaker.ListWorldTemplatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorldTemplatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.ListWorldTemplatesOutput)
+	return ret0, ret1
+}
+
+// ListWorldTemplatesRequest indicates an expected call of ListWorldTemplatesRequest
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldTemplatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldTemplatesRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldTemplatesRequest), arg0)
+}
+
+// ListWorldTemplatesWithContext mocks base method
+func (m *MockRoboMakerAPI) ListWorldTemplatesWithContext(arg0 context.Context, arg1 *robomaker.ListWorldTemplatesInput, arg2 ...request.Option) (*robomaker.ListWorldTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorldTemplatesWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.ListWorldTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorldTemplatesWithContext indicates an expected call of ListWorldTemplatesWithContext
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldTemplatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldTemplatesWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldTemplatesWithContext), varargs...)
+}
+
+// ListWorlds mocks base method
+func (m *MockRoboMakerAPI) ListWorlds(arg0 *robomaker.ListWorldsInput) (*robomaker.ListWorldsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorlds", arg0)
+	ret0, _ := ret[0].(*robomaker.ListWorldsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorlds indicates an expected call of ListWorlds
+func (mr *MockRoboMakerAPIMockRecorder) ListWorlds(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorlds", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorlds), arg0)
+}
+
+// ListWorldsPages mocks base method
+func (m *MockRoboMakerAPI) ListWorldsPages(arg0 *robomaker.ListWorldsInput, arg1 func(*robomaker.ListWorldsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorldsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorldsPages indicates an expected call of ListWorldsPages
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldsPages", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldsPages), arg0, arg1)
+}
+
+// ListWorldsPagesWithContext mocks base method
+func (m *MockRoboMakerAPI) ListWorldsPagesWithContext(arg0 context.Context, arg1 *robomaker.ListWorldsInput, arg2 func(*robomaker.ListWorldsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorldsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorldsPagesWithContext indicates an expected call of ListWorldsPagesWithContext
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldsPagesWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldsPagesWithContext), varargs...)
+}
+
+// ListWorldsRequest mocks base method
+func (m *MockRoboMakerAPI) ListWorldsRequest(arg0 *robomaker.ListWorldsInput) (*request.Request, *robomaker.ListWorldsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorldsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.ListWorldsOutput)
+	return ret0, ret1
+}
+
+// ListWorldsRequest indicates an expected call of ListWorldsRequest
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldsRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldsRequest), arg0)
+}
+
+// ListWorldsWithContext mocks base method
+func (m *MockRoboMakerAPI) ListWorldsWithContext(arg0 context.Context, arg1 *robomaker.ListWorldsInput, arg2 ...request.Option) (*robomaker.ListWorldsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorldsWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.ListWorldsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorldsWithContext indicates an expected call of ListWorldsWithContext
+func (mr *MockRoboMakerAPIMockRecorder) ListWorldsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorldsWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).ListWorldsWithContext), varargs...)
+}
+
 // RegisterRobot mocks base method
 func (m *MockRoboMakerAPI) RegisterRobot(arg0 *robomaker.RegisterRobotInput) (*robomaker.RegisterRobotOutput, error) {
 	m.ctrl.T.Helper()
@@ -2264,4 +3196,54 @@ func (mr *MockRoboMakerAPIMockRecorder) UpdateSimulationApplicationWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSimulationApplicationWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).UpdateSimulationApplicationWithContext), varargs...)
+}
+
+// UpdateWorldTemplate mocks base method
+func (m *MockRoboMakerAPI) UpdateWorldTemplate(arg0 *robomaker.UpdateWorldTemplateInput) (*robomaker.UpdateWorldTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorldTemplate", arg0)
+	ret0, _ := ret[0].(*robomaker.UpdateWorldTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorldTemplate indicates an expected call of UpdateWorldTemplate
+func (mr *MockRoboMakerAPIMockRecorder) UpdateWorldTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorldTemplate", reflect.TypeOf((*MockRoboMakerAPI)(nil).UpdateWorldTemplate), arg0)
+}
+
+// UpdateWorldTemplateRequest mocks base method
+func (m *MockRoboMakerAPI) UpdateWorldTemplateRequest(arg0 *robomaker.UpdateWorldTemplateInput) (*request.Request, *robomaker.UpdateWorldTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorldTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*robomaker.UpdateWorldTemplateOutput)
+	return ret0, ret1
+}
+
+// UpdateWorldTemplateRequest indicates an expected call of UpdateWorldTemplateRequest
+func (mr *MockRoboMakerAPIMockRecorder) UpdateWorldTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorldTemplateRequest", reflect.TypeOf((*MockRoboMakerAPI)(nil).UpdateWorldTemplateRequest), arg0)
+}
+
+// UpdateWorldTemplateWithContext mocks base method
+func (m *MockRoboMakerAPI) UpdateWorldTemplateWithContext(arg0 context.Context, arg1 *robomaker.UpdateWorldTemplateInput, arg2 ...request.Option) (*robomaker.UpdateWorldTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateWorldTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*robomaker.UpdateWorldTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorldTemplateWithContext indicates an expected call of UpdateWorldTemplateWithContext
+func (mr *MockRoboMakerAPIMockRecorder) UpdateWorldTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorldTemplateWithContext", reflect.TypeOf((*MockRoboMakerAPI)(nil).UpdateWorldTemplateWithContext), varargs...)
 }
