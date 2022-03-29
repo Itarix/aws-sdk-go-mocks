@@ -485,6 +485,56 @@ func (mr *MockConnectAPIMockRecorder) CreateIntegrationAssociationWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIntegrationAssociationWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateIntegrationAssociationWithContext), varargs...)
 }
 
+// CreateQuickConnect mocks base method
+func (m *MockConnectAPI) CreateQuickConnect(arg0 *connect.CreateQuickConnectInput) (*connect.CreateQuickConnectOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateQuickConnect", arg0)
+	ret0, _ := ret[0].(*connect.CreateQuickConnectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateQuickConnect indicates an expected call of CreateQuickConnect
+func (mr *MockConnectAPIMockRecorder) CreateQuickConnect(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateQuickConnect", reflect.TypeOf((*MockConnectAPI)(nil).CreateQuickConnect), arg0)
+}
+
+// CreateQuickConnectRequest mocks base method
+func (m *MockConnectAPI) CreateQuickConnectRequest(arg0 *connect.CreateQuickConnectInput) (*request.Request, *connect.CreateQuickConnectOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateQuickConnectRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.CreateQuickConnectOutput)
+	return ret0, ret1
+}
+
+// CreateQuickConnectRequest indicates an expected call of CreateQuickConnectRequest
+func (mr *MockConnectAPIMockRecorder) CreateQuickConnectRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateQuickConnectRequest", reflect.TypeOf((*MockConnectAPI)(nil).CreateQuickConnectRequest), arg0)
+}
+
+// CreateQuickConnectWithContext mocks base method
+func (m *MockConnectAPI) CreateQuickConnectWithContext(arg0 context.Context, arg1 *connect.CreateQuickConnectInput, arg2 ...request.Option) (*connect.CreateQuickConnectOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateQuickConnectWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.CreateQuickConnectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateQuickConnectWithContext indicates an expected call of CreateQuickConnectWithContext
+func (mr *MockConnectAPIMockRecorder) CreateQuickConnectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateQuickConnectWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateQuickConnectWithContext), varargs...)
+}
+
 // CreateRoutingProfile mocks base method
 func (m *MockConnectAPI) CreateRoutingProfile(arg0 *connect.CreateRoutingProfileInput) (*connect.CreateRoutingProfileOutput, error) {
 	m.ctrl.T.Helper()
@@ -783,6 +833,56 @@ func (mr *MockConnectAPIMockRecorder) DeleteIntegrationAssociationWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIntegrationAssociationWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteIntegrationAssociationWithContext), varargs...)
+}
+
+// DeleteQuickConnect mocks base method
+func (m *MockConnectAPI) DeleteQuickConnect(arg0 *connect.DeleteQuickConnectInput) (*connect.DeleteQuickConnectOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteQuickConnect", arg0)
+	ret0, _ := ret[0].(*connect.DeleteQuickConnectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteQuickConnect indicates an expected call of DeleteQuickConnect
+func (mr *MockConnectAPIMockRecorder) DeleteQuickConnect(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQuickConnect", reflect.TypeOf((*MockConnectAPI)(nil).DeleteQuickConnect), arg0)
+}
+
+// DeleteQuickConnectRequest mocks base method
+func (m *MockConnectAPI) DeleteQuickConnectRequest(arg0 *connect.DeleteQuickConnectInput) (*request.Request, *connect.DeleteQuickConnectOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteQuickConnectRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DeleteQuickConnectOutput)
+	return ret0, ret1
+}
+
+// DeleteQuickConnectRequest indicates an expected call of DeleteQuickConnectRequest
+func (mr *MockConnectAPIMockRecorder) DeleteQuickConnectRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQuickConnectRequest", reflect.TypeOf((*MockConnectAPI)(nil).DeleteQuickConnectRequest), arg0)
+}
+
+// DeleteQuickConnectWithContext mocks base method
+func (m *MockConnectAPI) DeleteQuickConnectWithContext(arg0 context.Context, arg1 *connect.DeleteQuickConnectInput, arg2 ...request.Option) (*connect.DeleteQuickConnectOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteQuickConnectWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DeleteQuickConnectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteQuickConnectWithContext indicates an expected call of DeleteQuickConnectWithContext
+func (mr *MockConnectAPIMockRecorder) DeleteQuickConnectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQuickConnectWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteQuickConnectWithContext), varargs...)
 }
 
 // DeleteUseCase mocks base method
@@ -1133,6 +1233,56 @@ func (mr *MockConnectAPIMockRecorder) DescribeInstanceWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeInstanceWithContext), varargs...)
+}
+
+// DescribeQuickConnect mocks base method
+func (m *MockConnectAPI) DescribeQuickConnect(arg0 *connect.DescribeQuickConnectInput) (*connect.DescribeQuickConnectOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeQuickConnect", arg0)
+	ret0, _ := ret[0].(*connect.DescribeQuickConnectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeQuickConnect indicates an expected call of DescribeQuickConnect
+func (mr *MockConnectAPIMockRecorder) DescribeQuickConnect(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeQuickConnect", reflect.TypeOf((*MockConnectAPI)(nil).DescribeQuickConnect), arg0)
+}
+
+// DescribeQuickConnectRequest mocks base method
+func (m *MockConnectAPI) DescribeQuickConnectRequest(arg0 *connect.DescribeQuickConnectInput) (*request.Request, *connect.DescribeQuickConnectOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeQuickConnectRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DescribeQuickConnectOutput)
+	return ret0, ret1
+}
+
+// DescribeQuickConnectRequest indicates an expected call of DescribeQuickConnectRequest
+func (mr *MockConnectAPIMockRecorder) DescribeQuickConnectRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeQuickConnectRequest", reflect.TypeOf((*MockConnectAPI)(nil).DescribeQuickConnectRequest), arg0)
+}
+
+// DescribeQuickConnectWithContext mocks base method
+func (m *MockConnectAPI) DescribeQuickConnectWithContext(arg0 context.Context, arg1 *connect.DescribeQuickConnectInput, arg2 ...request.Option) (*connect.DescribeQuickConnectOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeQuickConnectWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DescribeQuickConnectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeQuickConnectWithContext indicates an expected call of DescribeQuickConnectWithContext
+func (mr *MockConnectAPIMockRecorder) DescribeQuickConnectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeQuickConnectWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeQuickConnectWithContext), varargs...)
 }
 
 // DescribeRoutingProfile mocks base method
@@ -2897,6 +3047,89 @@ func (mr *MockConnectAPIMockRecorder) ListQueuesWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueuesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListQueuesWithContext), varargs...)
 }
 
+// ListQuickConnects mocks base method
+func (m *MockConnectAPI) ListQuickConnects(arg0 *connect.ListQuickConnectsInput) (*connect.ListQuickConnectsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListQuickConnects", arg0)
+	ret0, _ := ret[0].(*connect.ListQuickConnectsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListQuickConnects indicates an expected call of ListQuickConnects
+func (mr *MockConnectAPIMockRecorder) ListQuickConnects(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQuickConnects", reflect.TypeOf((*MockConnectAPI)(nil).ListQuickConnects), arg0)
+}
+
+// ListQuickConnectsPages mocks base method
+func (m *MockConnectAPI) ListQuickConnectsPages(arg0 *connect.ListQuickConnectsInput, arg1 func(*connect.ListQuickConnectsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListQuickConnectsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListQuickConnectsPages indicates an expected call of ListQuickConnectsPages
+func (mr *MockConnectAPIMockRecorder) ListQuickConnectsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQuickConnectsPages", reflect.TypeOf((*MockConnectAPI)(nil).ListQuickConnectsPages), arg0, arg1)
+}
+
+// ListQuickConnectsPagesWithContext mocks base method
+func (m *MockConnectAPI) ListQuickConnectsPagesWithContext(arg0 context.Context, arg1 *connect.ListQuickConnectsInput, arg2 func(*connect.ListQuickConnectsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListQuickConnectsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListQuickConnectsPagesWithContext indicates an expected call of ListQuickConnectsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListQuickConnectsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQuickConnectsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListQuickConnectsPagesWithContext), varargs...)
+}
+
+// ListQuickConnectsRequest mocks base method
+func (m *MockConnectAPI) ListQuickConnectsRequest(arg0 *connect.ListQuickConnectsInput) (*request.Request, *connect.ListQuickConnectsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListQuickConnectsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListQuickConnectsOutput)
+	return ret0, ret1
+}
+
+// ListQuickConnectsRequest indicates an expected call of ListQuickConnectsRequest
+func (mr *MockConnectAPIMockRecorder) ListQuickConnectsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQuickConnectsRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListQuickConnectsRequest), arg0)
+}
+
+// ListQuickConnectsWithContext mocks base method
+func (m *MockConnectAPI) ListQuickConnectsWithContext(arg0 context.Context, arg1 *connect.ListQuickConnectsInput, arg2 ...request.Option) (*connect.ListQuickConnectsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListQuickConnectsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListQuickConnectsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListQuickConnectsWithContext indicates an expected call of ListQuickConnectsWithContext
+func (mr *MockConnectAPIMockRecorder) ListQuickConnectsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQuickConnectsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListQuickConnectsWithContext), varargs...)
+}
+
 // ListRoutingProfileQueues mocks base method
 func (m *MockConnectAPI) ListRoutingProfileQueues(arg0 *connect.ListRoutingProfileQueuesInput) (*connect.ListRoutingProfileQueuesOutput, error) {
 	m.ctrl.T.Helper()
@@ -4276,6 +4509,106 @@ func (mr *MockConnectAPIMockRecorder) UpdateInstanceStorageConfigWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceStorageConfigWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateInstanceStorageConfigWithContext), varargs...)
+}
+
+// UpdateQuickConnectConfig mocks base method
+func (m *MockConnectAPI) UpdateQuickConnectConfig(arg0 *connect.UpdateQuickConnectConfigInput) (*connect.UpdateQuickConnectConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateQuickConnectConfig", arg0)
+	ret0, _ := ret[0].(*connect.UpdateQuickConnectConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateQuickConnectConfig indicates an expected call of UpdateQuickConnectConfig
+func (mr *MockConnectAPIMockRecorder) UpdateQuickConnectConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateQuickConnectConfig", reflect.TypeOf((*MockConnectAPI)(nil).UpdateQuickConnectConfig), arg0)
+}
+
+// UpdateQuickConnectConfigRequest mocks base method
+func (m *MockConnectAPI) UpdateQuickConnectConfigRequest(arg0 *connect.UpdateQuickConnectConfigInput) (*request.Request, *connect.UpdateQuickConnectConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateQuickConnectConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateQuickConnectConfigOutput)
+	return ret0, ret1
+}
+
+// UpdateQuickConnectConfigRequest indicates an expected call of UpdateQuickConnectConfigRequest
+func (mr *MockConnectAPIMockRecorder) UpdateQuickConnectConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateQuickConnectConfigRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateQuickConnectConfigRequest), arg0)
+}
+
+// UpdateQuickConnectConfigWithContext mocks base method
+func (m *MockConnectAPI) UpdateQuickConnectConfigWithContext(arg0 context.Context, arg1 *connect.UpdateQuickConnectConfigInput, arg2 ...request.Option) (*connect.UpdateQuickConnectConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateQuickConnectConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateQuickConnectConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateQuickConnectConfigWithContext indicates an expected call of UpdateQuickConnectConfigWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateQuickConnectConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateQuickConnectConfigWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateQuickConnectConfigWithContext), varargs...)
+}
+
+// UpdateQuickConnectName mocks base method
+func (m *MockConnectAPI) UpdateQuickConnectName(arg0 *connect.UpdateQuickConnectNameInput) (*connect.UpdateQuickConnectNameOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateQuickConnectName", arg0)
+	ret0, _ := ret[0].(*connect.UpdateQuickConnectNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateQuickConnectName indicates an expected call of UpdateQuickConnectName
+func (mr *MockConnectAPIMockRecorder) UpdateQuickConnectName(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateQuickConnectName", reflect.TypeOf((*MockConnectAPI)(nil).UpdateQuickConnectName), arg0)
+}
+
+// UpdateQuickConnectNameRequest mocks base method
+func (m *MockConnectAPI) UpdateQuickConnectNameRequest(arg0 *connect.UpdateQuickConnectNameInput) (*request.Request, *connect.UpdateQuickConnectNameOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateQuickConnectNameRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateQuickConnectNameOutput)
+	return ret0, ret1
+}
+
+// UpdateQuickConnectNameRequest indicates an expected call of UpdateQuickConnectNameRequest
+func (mr *MockConnectAPIMockRecorder) UpdateQuickConnectNameRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateQuickConnectNameRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateQuickConnectNameRequest), arg0)
+}
+
+// UpdateQuickConnectNameWithContext mocks base method
+func (m *MockConnectAPI) UpdateQuickConnectNameWithContext(arg0 context.Context, arg1 *connect.UpdateQuickConnectNameInput, arg2 ...request.Option) (*connect.UpdateQuickConnectNameOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateQuickConnectNameWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateQuickConnectNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateQuickConnectNameWithContext indicates an expected call of UpdateQuickConnectNameWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateQuickConnectNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateQuickConnectNameWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateQuickConnectNameWithContext), varargs...)
 }
 
 // UpdateRoutingProfileConcurrency mocks base method
