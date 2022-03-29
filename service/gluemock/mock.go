@@ -735,6 +735,56 @@ func (mr *MockGlueAPIMockRecorder) CancelMLTaskRunWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelMLTaskRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CancelMLTaskRunWithContext), varargs...)
 }
 
+// CheckSchemaVersionValidity mocks base method
+func (m *MockGlueAPI) CheckSchemaVersionValidity(arg0 *glue.CheckSchemaVersionValidityInput) (*glue.CheckSchemaVersionValidityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CheckSchemaVersionValidity", arg0)
+	ret0, _ := ret[0].(*glue.CheckSchemaVersionValidityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CheckSchemaVersionValidity indicates an expected call of CheckSchemaVersionValidity
+func (mr *MockGlueAPIMockRecorder) CheckSchemaVersionValidity(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CheckSchemaVersionValidity", reflect.TypeOf((*MockGlueAPI)(nil).CheckSchemaVersionValidity), arg0)
+}
+
+// CheckSchemaVersionValidityRequest mocks base method
+func (m *MockGlueAPI) CheckSchemaVersionValidityRequest(arg0 *glue.CheckSchemaVersionValidityInput) (*request.Request, *glue.CheckSchemaVersionValidityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CheckSchemaVersionValidityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.CheckSchemaVersionValidityOutput)
+	return ret0, ret1
+}
+
+// CheckSchemaVersionValidityRequest indicates an expected call of CheckSchemaVersionValidityRequest
+func (mr *MockGlueAPIMockRecorder) CheckSchemaVersionValidityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CheckSchemaVersionValidityRequest", reflect.TypeOf((*MockGlueAPI)(nil).CheckSchemaVersionValidityRequest), arg0)
+}
+
+// CheckSchemaVersionValidityWithContext mocks base method
+func (m *MockGlueAPI) CheckSchemaVersionValidityWithContext(arg0 context.Context, arg1 *glue.CheckSchemaVersionValidityInput, arg2 ...request.Option) (*glue.CheckSchemaVersionValidityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CheckSchemaVersionValidityWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.CheckSchemaVersionValidityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CheckSchemaVersionValidityWithContext indicates an expected call of CheckSchemaVersionValidityWithContext
+func (mr *MockGlueAPIMockRecorder) CheckSchemaVersionValidityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CheckSchemaVersionValidityWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CheckSchemaVersionValidityWithContext), varargs...)
+}
+
 // CreateClassifier mocks base method
 func (m *MockGlueAPI) CreateClassifier(arg0 *glue.CreateClassifierInput) (*glue.CreateClassifierOutput, error) {
 	m.ctrl.T.Helper()
@@ -1133,6 +1183,106 @@ func (mr *MockGlueAPIMockRecorder) CreatePartitionWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePartitionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreatePartitionWithContext), varargs...)
+}
+
+// CreateRegistry mocks base method
+func (m *MockGlueAPI) CreateRegistry(arg0 *glue.CreateRegistryInput) (*glue.CreateRegistryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRegistry", arg0)
+	ret0, _ := ret[0].(*glue.CreateRegistryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRegistry indicates an expected call of CreateRegistry
+func (mr *MockGlueAPIMockRecorder) CreateRegistry(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRegistry", reflect.TypeOf((*MockGlueAPI)(nil).CreateRegistry), arg0)
+}
+
+// CreateRegistryRequest mocks base method
+func (m *MockGlueAPI) CreateRegistryRequest(arg0 *glue.CreateRegistryInput) (*request.Request, *glue.CreateRegistryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRegistryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.CreateRegistryOutput)
+	return ret0, ret1
+}
+
+// CreateRegistryRequest indicates an expected call of CreateRegistryRequest
+func (mr *MockGlueAPIMockRecorder) CreateRegistryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRegistryRequest", reflect.TypeOf((*MockGlueAPI)(nil).CreateRegistryRequest), arg0)
+}
+
+// CreateRegistryWithContext mocks base method
+func (m *MockGlueAPI) CreateRegistryWithContext(arg0 context.Context, arg1 *glue.CreateRegistryInput, arg2 ...request.Option) (*glue.CreateRegistryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRegistryWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.CreateRegistryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRegistryWithContext indicates an expected call of CreateRegistryWithContext
+func (mr *MockGlueAPIMockRecorder) CreateRegistryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRegistryWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreateRegistryWithContext), varargs...)
+}
+
+// CreateSchema mocks base method
+func (m *MockGlueAPI) CreateSchema(arg0 *glue.CreateSchemaInput) (*glue.CreateSchemaOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSchema", arg0)
+	ret0, _ := ret[0].(*glue.CreateSchemaOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSchema indicates an expected call of CreateSchema
+func (mr *MockGlueAPIMockRecorder) CreateSchema(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSchema", reflect.TypeOf((*MockGlueAPI)(nil).CreateSchema), arg0)
+}
+
+// CreateSchemaRequest mocks base method
+func (m *MockGlueAPI) CreateSchemaRequest(arg0 *glue.CreateSchemaInput) (*request.Request, *glue.CreateSchemaOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSchemaRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.CreateSchemaOutput)
+	return ret0, ret1
+}
+
+// CreateSchemaRequest indicates an expected call of CreateSchemaRequest
+func (mr *MockGlueAPIMockRecorder) CreateSchemaRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSchemaRequest", reflect.TypeOf((*MockGlueAPI)(nil).CreateSchemaRequest), arg0)
+}
+
+// CreateSchemaWithContext mocks base method
+func (m *MockGlueAPI) CreateSchemaWithContext(arg0 context.Context, arg1 *glue.CreateSchemaInput, arg2 ...request.Option) (*glue.CreateSchemaOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSchemaWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.CreateSchemaOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSchemaWithContext indicates an expected call of CreateSchemaWithContext
+func (mr *MockGlueAPIMockRecorder) CreateSchemaWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSchemaWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreateSchemaWithContext), varargs...)
 }
 
 // CreateScript mocks base method
@@ -1935,6 +2085,56 @@ func (mr *MockGlueAPIMockRecorder) DeletePartitionWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePartitionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeletePartitionWithContext), varargs...)
 }
 
+// DeleteRegistry mocks base method
+func (m *MockGlueAPI) DeleteRegistry(arg0 *glue.DeleteRegistryInput) (*glue.DeleteRegistryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRegistry", arg0)
+	ret0, _ := ret[0].(*glue.DeleteRegistryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRegistry indicates an expected call of DeleteRegistry
+func (mr *MockGlueAPIMockRecorder) DeleteRegistry(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRegistry", reflect.TypeOf((*MockGlueAPI)(nil).DeleteRegistry), arg0)
+}
+
+// DeleteRegistryRequest mocks base method
+func (m *MockGlueAPI) DeleteRegistryRequest(arg0 *glue.DeleteRegistryInput) (*request.Request, *glue.DeleteRegistryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRegistryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.DeleteRegistryOutput)
+	return ret0, ret1
+}
+
+// DeleteRegistryRequest indicates an expected call of DeleteRegistryRequest
+func (mr *MockGlueAPIMockRecorder) DeleteRegistryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRegistryRequest", reflect.TypeOf((*MockGlueAPI)(nil).DeleteRegistryRequest), arg0)
+}
+
+// DeleteRegistryWithContext mocks base method
+func (m *MockGlueAPI) DeleteRegistryWithContext(arg0 context.Context, arg1 *glue.DeleteRegistryInput, arg2 ...request.Option) (*glue.DeleteRegistryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRegistryWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.DeleteRegistryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRegistryWithContext indicates an expected call of DeleteRegistryWithContext
+func (mr *MockGlueAPIMockRecorder) DeleteRegistryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRegistryWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteRegistryWithContext), varargs...)
+}
+
 // DeleteResourcePolicy mocks base method
 func (m *MockGlueAPI) DeleteResourcePolicy(arg0 *glue.DeleteResourcePolicyInput) (*glue.DeleteResourcePolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -1983,6 +2183,106 @@ func (mr *MockGlueAPIMockRecorder) DeleteResourcePolicyWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteResourcePolicyWithContext), varargs...)
+}
+
+// DeleteSchema mocks base method
+func (m *MockGlueAPI) DeleteSchema(arg0 *glue.DeleteSchemaInput) (*glue.DeleteSchemaOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSchema", arg0)
+	ret0, _ := ret[0].(*glue.DeleteSchemaOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSchema indicates an expected call of DeleteSchema
+func (mr *MockGlueAPIMockRecorder) DeleteSchema(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSchema", reflect.TypeOf((*MockGlueAPI)(nil).DeleteSchema), arg0)
+}
+
+// DeleteSchemaRequest mocks base method
+func (m *MockGlueAPI) DeleteSchemaRequest(arg0 *glue.DeleteSchemaInput) (*request.Request, *glue.DeleteSchemaOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSchemaRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.DeleteSchemaOutput)
+	return ret0, ret1
+}
+
+// DeleteSchemaRequest indicates an expected call of DeleteSchemaRequest
+func (mr *MockGlueAPIMockRecorder) DeleteSchemaRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSchemaRequest", reflect.TypeOf((*MockGlueAPI)(nil).DeleteSchemaRequest), arg0)
+}
+
+// DeleteSchemaVersions mocks base method
+func (m *MockGlueAPI) DeleteSchemaVersions(arg0 *glue.DeleteSchemaVersionsInput) (*glue.DeleteSchemaVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSchemaVersions", arg0)
+	ret0, _ := ret[0].(*glue.DeleteSchemaVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSchemaVersions indicates an expected call of DeleteSchemaVersions
+func (mr *MockGlueAPIMockRecorder) DeleteSchemaVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSchemaVersions", reflect.TypeOf((*MockGlueAPI)(nil).DeleteSchemaVersions), arg0)
+}
+
+// DeleteSchemaVersionsRequest mocks base method
+func (m *MockGlueAPI) DeleteSchemaVersionsRequest(arg0 *glue.DeleteSchemaVersionsInput) (*request.Request, *glue.DeleteSchemaVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSchemaVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.DeleteSchemaVersionsOutput)
+	return ret0, ret1
+}
+
+// DeleteSchemaVersionsRequest indicates an expected call of DeleteSchemaVersionsRequest
+func (mr *MockGlueAPIMockRecorder) DeleteSchemaVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSchemaVersionsRequest", reflect.TypeOf((*MockGlueAPI)(nil).DeleteSchemaVersionsRequest), arg0)
+}
+
+// DeleteSchemaVersionsWithContext mocks base method
+func (m *MockGlueAPI) DeleteSchemaVersionsWithContext(arg0 context.Context, arg1 *glue.DeleteSchemaVersionsInput, arg2 ...request.Option) (*glue.DeleteSchemaVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSchemaVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.DeleteSchemaVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSchemaVersionsWithContext indicates an expected call of DeleteSchemaVersionsWithContext
+func (mr *MockGlueAPIMockRecorder) DeleteSchemaVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSchemaVersionsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteSchemaVersionsWithContext), varargs...)
+}
+
+// DeleteSchemaWithContext mocks base method
+func (m *MockGlueAPI) DeleteSchemaWithContext(arg0 context.Context, arg1 *glue.DeleteSchemaInput, arg2 ...request.Option) (*glue.DeleteSchemaOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSchemaWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.DeleteSchemaOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSchemaWithContext indicates an expected call of DeleteSchemaWithContext
+func (mr *MockGlueAPIMockRecorder) DeleteSchemaWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSchemaWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteSchemaWithContext), varargs...)
 }
 
 // DeleteSecurityConfiguration mocks base method
@@ -4181,6 +4481,56 @@ func (mr *MockGlueAPIMockRecorder) GetPlanWithContext(arg0, arg1 interface{}, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPlanWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetPlanWithContext), varargs...)
 }
 
+// GetRegistry mocks base method
+func (m *MockGlueAPI) GetRegistry(arg0 *glue.GetRegistryInput) (*glue.GetRegistryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRegistry", arg0)
+	ret0, _ := ret[0].(*glue.GetRegistryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRegistry indicates an expected call of GetRegistry
+func (mr *MockGlueAPIMockRecorder) GetRegistry(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegistry", reflect.TypeOf((*MockGlueAPI)(nil).GetRegistry), arg0)
+}
+
+// GetRegistryRequest mocks base method
+func (m *MockGlueAPI) GetRegistryRequest(arg0 *glue.GetRegistryInput) (*request.Request, *glue.GetRegistryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRegistryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetRegistryOutput)
+	return ret0, ret1
+}
+
+// GetRegistryRequest indicates an expected call of GetRegistryRequest
+func (mr *MockGlueAPIMockRecorder) GetRegistryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegistryRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetRegistryRequest), arg0)
+}
+
+// GetRegistryWithContext mocks base method
+func (m *MockGlueAPI) GetRegistryWithContext(arg0 context.Context, arg1 *glue.GetRegistryInput, arg2 ...request.Option) (*glue.GetRegistryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRegistryWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetRegistryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRegistryWithContext indicates an expected call of GetRegistryWithContext
+func (mr *MockGlueAPIMockRecorder) GetRegistryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegistryWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetRegistryWithContext), varargs...)
+}
+
 // GetResourcePolicies mocks base method
 func (m *MockGlueAPI) GetResourcePolicies(arg0 *glue.GetResourcePoliciesInput) (*glue.GetResourcePoliciesOutput, error) {
 	m.ctrl.T.Helper()
@@ -4194,6 +4544,39 @@ func (m *MockGlueAPI) GetResourcePolicies(arg0 *glue.GetResourcePoliciesInput) (
 func (mr *MockGlueAPIMockRecorder) GetResourcePolicies(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicies", reflect.TypeOf((*MockGlueAPI)(nil).GetResourcePolicies), arg0)
+}
+
+// GetResourcePoliciesPages mocks base method
+func (m *MockGlueAPI) GetResourcePoliciesPages(arg0 *glue.GetResourcePoliciesInput, arg1 func(*glue.GetResourcePoliciesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcePoliciesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetResourcePoliciesPages indicates an expected call of GetResourcePoliciesPages
+func (mr *MockGlueAPIMockRecorder) GetResourcePoliciesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePoliciesPages", reflect.TypeOf((*MockGlueAPI)(nil).GetResourcePoliciesPages), arg0, arg1)
+}
+
+// GetResourcePoliciesPagesWithContext mocks base method
+func (m *MockGlueAPI) GetResourcePoliciesPagesWithContext(arg0 context.Context, arg1 *glue.GetResourcePoliciesInput, arg2 func(*glue.GetResourcePoliciesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResourcePoliciesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetResourcePoliciesPagesWithContext indicates an expected call of GetResourcePoliciesPagesWithContext
+func (mr *MockGlueAPIMockRecorder) GetResourcePoliciesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePoliciesPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetResourcePoliciesPagesWithContext), varargs...)
 }
 
 // GetResourcePoliciesRequest mocks base method
@@ -4279,6 +4662,206 @@ func (mr *MockGlueAPIMockRecorder) GetResourcePolicyWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicyWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetResourcePolicyWithContext), varargs...)
+}
+
+// GetSchema mocks base method
+func (m *MockGlueAPI) GetSchema(arg0 *glue.GetSchemaInput) (*glue.GetSchemaOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSchema", arg0)
+	ret0, _ := ret[0].(*glue.GetSchemaOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSchema indicates an expected call of GetSchema
+func (mr *MockGlueAPIMockRecorder) GetSchema(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchema", reflect.TypeOf((*MockGlueAPI)(nil).GetSchema), arg0)
+}
+
+// GetSchemaByDefinition mocks base method
+func (m *MockGlueAPI) GetSchemaByDefinition(arg0 *glue.GetSchemaByDefinitionInput) (*glue.GetSchemaByDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSchemaByDefinition", arg0)
+	ret0, _ := ret[0].(*glue.GetSchemaByDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSchemaByDefinition indicates an expected call of GetSchemaByDefinition
+func (mr *MockGlueAPIMockRecorder) GetSchemaByDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaByDefinition", reflect.TypeOf((*MockGlueAPI)(nil).GetSchemaByDefinition), arg0)
+}
+
+// GetSchemaByDefinitionRequest mocks base method
+func (m *MockGlueAPI) GetSchemaByDefinitionRequest(arg0 *glue.GetSchemaByDefinitionInput) (*request.Request, *glue.GetSchemaByDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSchemaByDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetSchemaByDefinitionOutput)
+	return ret0, ret1
+}
+
+// GetSchemaByDefinitionRequest indicates an expected call of GetSchemaByDefinitionRequest
+func (mr *MockGlueAPIMockRecorder) GetSchemaByDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaByDefinitionRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetSchemaByDefinitionRequest), arg0)
+}
+
+// GetSchemaByDefinitionWithContext mocks base method
+func (m *MockGlueAPI) GetSchemaByDefinitionWithContext(arg0 context.Context, arg1 *glue.GetSchemaByDefinitionInput, arg2 ...request.Option) (*glue.GetSchemaByDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSchemaByDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetSchemaByDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSchemaByDefinitionWithContext indicates an expected call of GetSchemaByDefinitionWithContext
+func (mr *MockGlueAPIMockRecorder) GetSchemaByDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaByDefinitionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetSchemaByDefinitionWithContext), varargs...)
+}
+
+// GetSchemaRequest mocks base method
+func (m *MockGlueAPI) GetSchemaRequest(arg0 *glue.GetSchemaInput) (*request.Request, *glue.GetSchemaOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSchemaRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetSchemaOutput)
+	return ret0, ret1
+}
+
+// GetSchemaRequest indicates an expected call of GetSchemaRequest
+func (mr *MockGlueAPIMockRecorder) GetSchemaRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetSchemaRequest), arg0)
+}
+
+// GetSchemaVersion mocks base method
+func (m *MockGlueAPI) GetSchemaVersion(arg0 *glue.GetSchemaVersionInput) (*glue.GetSchemaVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSchemaVersion", arg0)
+	ret0, _ := ret[0].(*glue.GetSchemaVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSchemaVersion indicates an expected call of GetSchemaVersion
+func (mr *MockGlueAPIMockRecorder) GetSchemaVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaVersion", reflect.TypeOf((*MockGlueAPI)(nil).GetSchemaVersion), arg0)
+}
+
+// GetSchemaVersionRequest mocks base method
+func (m *MockGlueAPI) GetSchemaVersionRequest(arg0 *glue.GetSchemaVersionInput) (*request.Request, *glue.GetSchemaVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSchemaVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetSchemaVersionOutput)
+	return ret0, ret1
+}
+
+// GetSchemaVersionRequest indicates an expected call of GetSchemaVersionRequest
+func (mr *MockGlueAPIMockRecorder) GetSchemaVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaVersionRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetSchemaVersionRequest), arg0)
+}
+
+// GetSchemaVersionWithContext mocks base method
+func (m *MockGlueAPI) GetSchemaVersionWithContext(arg0 context.Context, arg1 *glue.GetSchemaVersionInput, arg2 ...request.Option) (*glue.GetSchemaVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSchemaVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetSchemaVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSchemaVersionWithContext indicates an expected call of GetSchemaVersionWithContext
+func (mr *MockGlueAPIMockRecorder) GetSchemaVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaVersionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetSchemaVersionWithContext), varargs...)
+}
+
+// GetSchemaVersionsDiff mocks base method
+func (m *MockGlueAPI) GetSchemaVersionsDiff(arg0 *glue.GetSchemaVersionsDiffInput) (*glue.GetSchemaVersionsDiffOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSchemaVersionsDiff", arg0)
+	ret0, _ := ret[0].(*glue.GetSchemaVersionsDiffOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSchemaVersionsDiff indicates an expected call of GetSchemaVersionsDiff
+func (mr *MockGlueAPIMockRecorder) GetSchemaVersionsDiff(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaVersionsDiff", reflect.TypeOf((*MockGlueAPI)(nil).GetSchemaVersionsDiff), arg0)
+}
+
+// GetSchemaVersionsDiffRequest mocks base method
+func (m *MockGlueAPI) GetSchemaVersionsDiffRequest(arg0 *glue.GetSchemaVersionsDiffInput) (*request.Request, *glue.GetSchemaVersionsDiffOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSchemaVersionsDiffRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetSchemaVersionsDiffOutput)
+	return ret0, ret1
+}
+
+// GetSchemaVersionsDiffRequest indicates an expected call of GetSchemaVersionsDiffRequest
+func (mr *MockGlueAPIMockRecorder) GetSchemaVersionsDiffRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaVersionsDiffRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetSchemaVersionsDiffRequest), arg0)
+}
+
+// GetSchemaVersionsDiffWithContext mocks base method
+func (m *MockGlueAPI) GetSchemaVersionsDiffWithContext(arg0 context.Context, arg1 *glue.GetSchemaVersionsDiffInput, arg2 ...request.Option) (*glue.GetSchemaVersionsDiffOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSchemaVersionsDiffWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetSchemaVersionsDiffOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSchemaVersionsDiffWithContext indicates an expected call of GetSchemaVersionsDiffWithContext
+func (mr *MockGlueAPIMockRecorder) GetSchemaVersionsDiffWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaVersionsDiffWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetSchemaVersionsDiffWithContext), varargs...)
+}
+
+// GetSchemaWithContext mocks base method
+func (m *MockGlueAPI) GetSchemaWithContext(arg0 context.Context, arg1 *glue.GetSchemaInput, arg2 ...request.Option) (*glue.GetSchemaOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSchemaWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetSchemaOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSchemaWithContext indicates an expected call of GetSchemaWithContext
+func (mr *MockGlueAPIMockRecorder) GetSchemaWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetSchemaWithContext), varargs...)
 }
 
 // GetSecurityConfiguration mocks base method
@@ -5611,6 +6194,255 @@ func (mr *MockGlueAPIMockRecorder) ListMLTransformsWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMLTransformsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListMLTransformsWithContext), varargs...)
 }
 
+// ListRegistries mocks base method
+func (m *MockGlueAPI) ListRegistries(arg0 *glue.ListRegistriesInput) (*glue.ListRegistriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRegistries", arg0)
+	ret0, _ := ret[0].(*glue.ListRegistriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRegistries indicates an expected call of ListRegistries
+func (mr *MockGlueAPIMockRecorder) ListRegistries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegistries", reflect.TypeOf((*MockGlueAPI)(nil).ListRegistries), arg0)
+}
+
+// ListRegistriesPages mocks base method
+func (m *MockGlueAPI) ListRegistriesPages(arg0 *glue.ListRegistriesInput, arg1 func(*glue.ListRegistriesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRegistriesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRegistriesPages indicates an expected call of ListRegistriesPages
+func (mr *MockGlueAPIMockRecorder) ListRegistriesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegistriesPages", reflect.TypeOf((*MockGlueAPI)(nil).ListRegistriesPages), arg0, arg1)
+}
+
+// ListRegistriesPagesWithContext mocks base method
+func (m *MockGlueAPI) ListRegistriesPagesWithContext(arg0 context.Context, arg1 *glue.ListRegistriesInput, arg2 func(*glue.ListRegistriesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRegistriesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRegistriesPagesWithContext indicates an expected call of ListRegistriesPagesWithContext
+func (mr *MockGlueAPIMockRecorder) ListRegistriesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegistriesPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListRegistriesPagesWithContext), varargs...)
+}
+
+// ListRegistriesRequest mocks base method
+func (m *MockGlueAPI) ListRegistriesRequest(arg0 *glue.ListRegistriesInput) (*request.Request, *glue.ListRegistriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRegistriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.ListRegistriesOutput)
+	return ret0, ret1
+}
+
+// ListRegistriesRequest indicates an expected call of ListRegistriesRequest
+func (mr *MockGlueAPIMockRecorder) ListRegistriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegistriesRequest", reflect.TypeOf((*MockGlueAPI)(nil).ListRegistriesRequest), arg0)
+}
+
+// ListRegistriesWithContext mocks base method
+func (m *MockGlueAPI) ListRegistriesWithContext(arg0 context.Context, arg1 *glue.ListRegistriesInput, arg2 ...request.Option) (*glue.ListRegistriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRegistriesWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.ListRegistriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRegistriesWithContext indicates an expected call of ListRegistriesWithContext
+func (mr *MockGlueAPIMockRecorder) ListRegistriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegistriesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListRegistriesWithContext), varargs...)
+}
+
+// ListSchemaVersions mocks base method
+func (m *MockGlueAPI) ListSchemaVersions(arg0 *glue.ListSchemaVersionsInput) (*glue.ListSchemaVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSchemaVersions", arg0)
+	ret0, _ := ret[0].(*glue.ListSchemaVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSchemaVersions indicates an expected call of ListSchemaVersions
+func (mr *MockGlueAPIMockRecorder) ListSchemaVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchemaVersions", reflect.TypeOf((*MockGlueAPI)(nil).ListSchemaVersions), arg0)
+}
+
+// ListSchemaVersionsPages mocks base method
+func (m *MockGlueAPI) ListSchemaVersionsPages(arg0 *glue.ListSchemaVersionsInput, arg1 func(*glue.ListSchemaVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSchemaVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSchemaVersionsPages indicates an expected call of ListSchemaVersionsPages
+func (mr *MockGlueAPIMockRecorder) ListSchemaVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchemaVersionsPages", reflect.TypeOf((*MockGlueAPI)(nil).ListSchemaVersionsPages), arg0, arg1)
+}
+
+// ListSchemaVersionsPagesWithContext mocks base method
+func (m *MockGlueAPI) ListSchemaVersionsPagesWithContext(arg0 context.Context, arg1 *glue.ListSchemaVersionsInput, arg2 func(*glue.ListSchemaVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSchemaVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSchemaVersionsPagesWithContext indicates an expected call of ListSchemaVersionsPagesWithContext
+func (mr *MockGlueAPIMockRecorder) ListSchemaVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchemaVersionsPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListSchemaVersionsPagesWithContext), varargs...)
+}
+
+// ListSchemaVersionsRequest mocks base method
+func (m *MockGlueAPI) ListSchemaVersionsRequest(arg0 *glue.ListSchemaVersionsInput) (*request.Request, *glue.ListSchemaVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSchemaVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.ListSchemaVersionsOutput)
+	return ret0, ret1
+}
+
+// ListSchemaVersionsRequest indicates an expected call of ListSchemaVersionsRequest
+func (mr *MockGlueAPIMockRecorder) ListSchemaVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchemaVersionsRequest", reflect.TypeOf((*MockGlueAPI)(nil).ListSchemaVersionsRequest), arg0)
+}
+
+// ListSchemaVersionsWithContext mocks base method
+func (m *MockGlueAPI) ListSchemaVersionsWithContext(arg0 context.Context, arg1 *glue.ListSchemaVersionsInput, arg2 ...request.Option) (*glue.ListSchemaVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSchemaVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.ListSchemaVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSchemaVersionsWithContext indicates an expected call of ListSchemaVersionsWithContext
+func (mr *MockGlueAPIMockRecorder) ListSchemaVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchemaVersionsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListSchemaVersionsWithContext), varargs...)
+}
+
+// ListSchemas mocks base method
+func (m *MockGlueAPI) ListSchemas(arg0 *glue.ListSchemasInput) (*glue.ListSchemasOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSchemas", arg0)
+	ret0, _ := ret[0].(*glue.ListSchemasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSchemas indicates an expected call of ListSchemas
+func (mr *MockGlueAPIMockRecorder) ListSchemas(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchemas", reflect.TypeOf((*MockGlueAPI)(nil).ListSchemas), arg0)
+}
+
+// ListSchemasPages mocks base method
+func (m *MockGlueAPI) ListSchemasPages(arg0 *glue.ListSchemasInput, arg1 func(*glue.ListSchemasOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSchemasPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSchemasPages indicates an expected call of ListSchemasPages
+func (mr *MockGlueAPIMockRecorder) ListSchemasPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchemasPages", reflect.TypeOf((*MockGlueAPI)(nil).ListSchemasPages), arg0, arg1)
+}
+
+// ListSchemasPagesWithContext mocks base method
+func (m *MockGlueAPI) ListSchemasPagesWithContext(arg0 context.Context, arg1 *glue.ListSchemasInput, arg2 func(*glue.ListSchemasOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSchemasPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSchemasPagesWithContext indicates an expected call of ListSchemasPagesWithContext
+func (mr *MockGlueAPIMockRecorder) ListSchemasPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchemasPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListSchemasPagesWithContext), varargs...)
+}
+
+// ListSchemasRequest mocks base method
+func (m *MockGlueAPI) ListSchemasRequest(arg0 *glue.ListSchemasInput) (*request.Request, *glue.ListSchemasOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSchemasRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.ListSchemasOutput)
+	return ret0, ret1
+}
+
+// ListSchemasRequest indicates an expected call of ListSchemasRequest
+func (mr *MockGlueAPIMockRecorder) ListSchemasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchemasRequest", reflect.TypeOf((*MockGlueAPI)(nil).ListSchemasRequest), arg0)
+}
+
+// ListSchemasWithContext mocks base method
+func (m *MockGlueAPI) ListSchemasWithContext(arg0 context.Context, arg1 *glue.ListSchemasInput, arg2 ...request.Option) (*glue.ListSchemasOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSchemasWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.ListSchemasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSchemasWithContext indicates an expected call of ListSchemasWithContext
+func (mr *MockGlueAPIMockRecorder) ListSchemasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchemasWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListSchemasWithContext), varargs...)
+}
+
 // ListTriggers mocks base method
 func (m *MockGlueAPI) ListTriggers(arg0 *glue.ListTriggersInput) (*glue.ListTriggersOutput, error) {
 	m.ctrl.T.Helper()
@@ -5877,6 +6709,56 @@ func (mr *MockGlueAPIMockRecorder) PutResourcePolicyWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyWithContext", reflect.TypeOf((*MockGlueAPI)(nil).PutResourcePolicyWithContext), varargs...)
 }
 
+// PutSchemaVersionMetadata mocks base method
+func (m *MockGlueAPI) PutSchemaVersionMetadata(arg0 *glue.PutSchemaVersionMetadataInput) (*glue.PutSchemaVersionMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutSchemaVersionMetadata", arg0)
+	ret0, _ := ret[0].(*glue.PutSchemaVersionMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutSchemaVersionMetadata indicates an expected call of PutSchemaVersionMetadata
+func (mr *MockGlueAPIMockRecorder) PutSchemaVersionMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSchemaVersionMetadata", reflect.TypeOf((*MockGlueAPI)(nil).PutSchemaVersionMetadata), arg0)
+}
+
+// PutSchemaVersionMetadataRequest mocks base method
+func (m *MockGlueAPI) PutSchemaVersionMetadataRequest(arg0 *glue.PutSchemaVersionMetadataInput) (*request.Request, *glue.PutSchemaVersionMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutSchemaVersionMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.PutSchemaVersionMetadataOutput)
+	return ret0, ret1
+}
+
+// PutSchemaVersionMetadataRequest indicates an expected call of PutSchemaVersionMetadataRequest
+func (mr *MockGlueAPIMockRecorder) PutSchemaVersionMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSchemaVersionMetadataRequest", reflect.TypeOf((*MockGlueAPI)(nil).PutSchemaVersionMetadataRequest), arg0)
+}
+
+// PutSchemaVersionMetadataWithContext mocks base method
+func (m *MockGlueAPI) PutSchemaVersionMetadataWithContext(arg0 context.Context, arg1 *glue.PutSchemaVersionMetadataInput, arg2 ...request.Option) (*glue.PutSchemaVersionMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutSchemaVersionMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.PutSchemaVersionMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutSchemaVersionMetadataWithContext indicates an expected call of PutSchemaVersionMetadataWithContext
+func (mr *MockGlueAPIMockRecorder) PutSchemaVersionMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSchemaVersionMetadataWithContext", reflect.TypeOf((*MockGlueAPI)(nil).PutSchemaVersionMetadataWithContext), varargs...)
+}
+
 // PutWorkflowRunProperties mocks base method
 func (m *MockGlueAPI) PutWorkflowRunProperties(arg0 *glue.PutWorkflowRunPropertiesInput) (*glue.PutWorkflowRunPropertiesOutput, error) {
 	m.ctrl.T.Helper()
@@ -5925,6 +6807,156 @@ func (mr *MockGlueAPIMockRecorder) PutWorkflowRunPropertiesWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutWorkflowRunPropertiesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).PutWorkflowRunPropertiesWithContext), varargs...)
+}
+
+// QuerySchemaVersionMetadata mocks base method
+func (m *MockGlueAPI) QuerySchemaVersionMetadata(arg0 *glue.QuerySchemaVersionMetadataInput) (*glue.QuerySchemaVersionMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "QuerySchemaVersionMetadata", arg0)
+	ret0, _ := ret[0].(*glue.QuerySchemaVersionMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// QuerySchemaVersionMetadata indicates an expected call of QuerySchemaVersionMetadata
+func (mr *MockGlueAPIMockRecorder) QuerySchemaVersionMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "QuerySchemaVersionMetadata", reflect.TypeOf((*MockGlueAPI)(nil).QuerySchemaVersionMetadata), arg0)
+}
+
+// QuerySchemaVersionMetadataRequest mocks base method
+func (m *MockGlueAPI) QuerySchemaVersionMetadataRequest(arg0 *glue.QuerySchemaVersionMetadataInput) (*request.Request, *glue.QuerySchemaVersionMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "QuerySchemaVersionMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.QuerySchemaVersionMetadataOutput)
+	return ret0, ret1
+}
+
+// QuerySchemaVersionMetadataRequest indicates an expected call of QuerySchemaVersionMetadataRequest
+func (mr *MockGlueAPIMockRecorder) QuerySchemaVersionMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "QuerySchemaVersionMetadataRequest", reflect.TypeOf((*MockGlueAPI)(nil).QuerySchemaVersionMetadataRequest), arg0)
+}
+
+// QuerySchemaVersionMetadataWithContext mocks base method
+func (m *MockGlueAPI) QuerySchemaVersionMetadataWithContext(arg0 context.Context, arg1 *glue.QuerySchemaVersionMetadataInput, arg2 ...request.Option) (*glue.QuerySchemaVersionMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "QuerySchemaVersionMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.QuerySchemaVersionMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// QuerySchemaVersionMetadataWithContext indicates an expected call of QuerySchemaVersionMetadataWithContext
+func (mr *MockGlueAPIMockRecorder) QuerySchemaVersionMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "QuerySchemaVersionMetadataWithContext", reflect.TypeOf((*MockGlueAPI)(nil).QuerySchemaVersionMetadataWithContext), varargs...)
+}
+
+// RegisterSchemaVersion mocks base method
+func (m *MockGlueAPI) RegisterSchemaVersion(arg0 *glue.RegisterSchemaVersionInput) (*glue.RegisterSchemaVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterSchemaVersion", arg0)
+	ret0, _ := ret[0].(*glue.RegisterSchemaVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterSchemaVersion indicates an expected call of RegisterSchemaVersion
+func (mr *MockGlueAPIMockRecorder) RegisterSchemaVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterSchemaVersion", reflect.TypeOf((*MockGlueAPI)(nil).RegisterSchemaVersion), arg0)
+}
+
+// RegisterSchemaVersionRequest mocks base method
+func (m *MockGlueAPI) RegisterSchemaVersionRequest(arg0 *glue.RegisterSchemaVersionInput) (*request.Request, *glue.RegisterSchemaVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterSchemaVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.RegisterSchemaVersionOutput)
+	return ret0, ret1
+}
+
+// RegisterSchemaVersionRequest indicates an expected call of RegisterSchemaVersionRequest
+func (mr *MockGlueAPIMockRecorder) RegisterSchemaVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterSchemaVersionRequest", reflect.TypeOf((*MockGlueAPI)(nil).RegisterSchemaVersionRequest), arg0)
+}
+
+// RegisterSchemaVersionWithContext mocks base method
+func (m *MockGlueAPI) RegisterSchemaVersionWithContext(arg0 context.Context, arg1 *glue.RegisterSchemaVersionInput, arg2 ...request.Option) (*glue.RegisterSchemaVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RegisterSchemaVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.RegisterSchemaVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterSchemaVersionWithContext indicates an expected call of RegisterSchemaVersionWithContext
+func (mr *MockGlueAPIMockRecorder) RegisterSchemaVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterSchemaVersionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).RegisterSchemaVersionWithContext), varargs...)
+}
+
+// RemoveSchemaVersionMetadata mocks base method
+func (m *MockGlueAPI) RemoveSchemaVersionMetadata(arg0 *glue.RemoveSchemaVersionMetadataInput) (*glue.RemoveSchemaVersionMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveSchemaVersionMetadata", arg0)
+	ret0, _ := ret[0].(*glue.RemoveSchemaVersionMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveSchemaVersionMetadata indicates an expected call of RemoveSchemaVersionMetadata
+func (mr *MockGlueAPIMockRecorder) RemoveSchemaVersionMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveSchemaVersionMetadata", reflect.TypeOf((*MockGlueAPI)(nil).RemoveSchemaVersionMetadata), arg0)
+}
+
+// RemoveSchemaVersionMetadataRequest mocks base method
+func (m *MockGlueAPI) RemoveSchemaVersionMetadataRequest(arg0 *glue.RemoveSchemaVersionMetadataInput) (*request.Request, *glue.RemoveSchemaVersionMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveSchemaVersionMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.RemoveSchemaVersionMetadataOutput)
+	return ret0, ret1
+}
+
+// RemoveSchemaVersionMetadataRequest indicates an expected call of RemoveSchemaVersionMetadataRequest
+func (mr *MockGlueAPIMockRecorder) RemoveSchemaVersionMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveSchemaVersionMetadataRequest", reflect.TypeOf((*MockGlueAPI)(nil).RemoveSchemaVersionMetadataRequest), arg0)
+}
+
+// RemoveSchemaVersionMetadataWithContext mocks base method
+func (m *MockGlueAPI) RemoveSchemaVersionMetadataWithContext(arg0 context.Context, arg1 *glue.RemoveSchemaVersionMetadataInput, arg2 ...request.Option) (*glue.RemoveSchemaVersionMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveSchemaVersionMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.RemoveSchemaVersionMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveSchemaVersionMetadataWithContext indicates an expected call of RemoveSchemaVersionMetadataWithContext
+func (mr *MockGlueAPIMockRecorder) RemoveSchemaVersionMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveSchemaVersionMetadataWithContext", reflect.TypeOf((*MockGlueAPI)(nil).RemoveSchemaVersionMetadataWithContext), varargs...)
 }
 
 // ResetJobBookmark mocks base method
@@ -7408,6 +8440,106 @@ func (mr *MockGlueAPIMockRecorder) UpdatePartitionWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePartitionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).UpdatePartitionWithContext), varargs...)
+}
+
+// UpdateRegistry mocks base method
+func (m *MockGlueAPI) UpdateRegistry(arg0 *glue.UpdateRegistryInput) (*glue.UpdateRegistryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRegistry", arg0)
+	ret0, _ := ret[0].(*glue.UpdateRegistryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRegistry indicates an expected call of UpdateRegistry
+func (mr *MockGlueAPIMockRecorder) UpdateRegistry(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRegistry", reflect.TypeOf((*MockGlueAPI)(nil).UpdateRegistry), arg0)
+}
+
+// UpdateRegistryRequest mocks base method
+func (m *MockGlueAPI) UpdateRegistryRequest(arg0 *glue.UpdateRegistryInput) (*request.Request, *glue.UpdateRegistryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRegistryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.UpdateRegistryOutput)
+	return ret0, ret1
+}
+
+// UpdateRegistryRequest indicates an expected call of UpdateRegistryRequest
+func (mr *MockGlueAPIMockRecorder) UpdateRegistryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRegistryRequest", reflect.TypeOf((*MockGlueAPI)(nil).UpdateRegistryRequest), arg0)
+}
+
+// UpdateRegistryWithContext mocks base method
+func (m *MockGlueAPI) UpdateRegistryWithContext(arg0 context.Context, arg1 *glue.UpdateRegistryInput, arg2 ...request.Option) (*glue.UpdateRegistryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRegistryWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.UpdateRegistryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRegistryWithContext indicates an expected call of UpdateRegistryWithContext
+func (mr *MockGlueAPIMockRecorder) UpdateRegistryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRegistryWithContext", reflect.TypeOf((*MockGlueAPI)(nil).UpdateRegistryWithContext), varargs...)
+}
+
+// UpdateSchema mocks base method
+func (m *MockGlueAPI) UpdateSchema(arg0 *glue.UpdateSchemaInput) (*glue.UpdateSchemaOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSchema", arg0)
+	ret0, _ := ret[0].(*glue.UpdateSchemaOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSchema indicates an expected call of UpdateSchema
+func (mr *MockGlueAPIMockRecorder) UpdateSchema(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSchema", reflect.TypeOf((*MockGlueAPI)(nil).UpdateSchema), arg0)
+}
+
+// UpdateSchemaRequest mocks base method
+func (m *MockGlueAPI) UpdateSchemaRequest(arg0 *glue.UpdateSchemaInput) (*request.Request, *glue.UpdateSchemaOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSchemaRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.UpdateSchemaOutput)
+	return ret0, ret1
+}
+
+// UpdateSchemaRequest indicates an expected call of UpdateSchemaRequest
+func (mr *MockGlueAPIMockRecorder) UpdateSchemaRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSchemaRequest", reflect.TypeOf((*MockGlueAPI)(nil).UpdateSchemaRequest), arg0)
+}
+
+// UpdateSchemaWithContext mocks base method
+func (m *MockGlueAPI) UpdateSchemaWithContext(arg0 context.Context, arg1 *glue.UpdateSchemaInput, arg2 ...request.Option) (*glue.UpdateSchemaOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSchemaWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.UpdateSchemaOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSchemaWithContext indicates an expected call of UpdateSchemaWithContext
+func (mr *MockGlueAPIMockRecorder) UpdateSchemaWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSchemaWithContext", reflect.TypeOf((*MockGlueAPI)(nil).UpdateSchemaWithContext), varargs...)
 }
 
 // UpdateTable mocks base method

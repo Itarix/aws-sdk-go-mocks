@@ -135,6 +135,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) AddIpRoutesWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddIpRoutesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).AddIpRoutesWithContext), varargs...)
 }
 
+// AddRegion mocks base method
+func (m *MockDirectoryServiceAPI) AddRegion(arg0 *directoryservice.AddRegionInput) (*directoryservice.AddRegionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddRegion", arg0)
+	ret0, _ := ret[0].(*directoryservice.AddRegionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddRegion indicates an expected call of AddRegion
+func (mr *MockDirectoryServiceAPIMockRecorder) AddRegion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddRegion", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).AddRegion), arg0)
+}
+
+// AddRegionRequest mocks base method
+func (m *MockDirectoryServiceAPI) AddRegionRequest(arg0 *directoryservice.AddRegionInput) (*request.Request, *directoryservice.AddRegionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddRegionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.AddRegionOutput)
+	return ret0, ret1
+}
+
+// AddRegionRequest indicates an expected call of AddRegionRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) AddRegionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddRegionRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).AddRegionRequest), arg0)
+}
+
+// AddRegionWithContext mocks base method
+func (m *MockDirectoryServiceAPI) AddRegionWithContext(arg0 context.Context, arg1 *directoryservice.AddRegionInput, arg2 ...request.Option) (*directoryservice.AddRegionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AddRegionWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.AddRegionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddRegionWithContext indicates an expected call of AddRegionWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) AddRegionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddRegionWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).AddRegionWithContext), varargs...)
+}
+
 // AddTagsToResource mocks base method
 func (m *MockDirectoryServiceAPI) AddTagsToResource(arg0 *directoryservice.AddTagsToResourceInput) (*directoryservice.AddTagsToResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1368,6 +1418,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeLDAPSSettingsWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLDAPSSettingsWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeLDAPSSettingsWithContext), varargs...)
 }
 
+// DescribeRegions mocks base method
+func (m *MockDirectoryServiceAPI) DescribeRegions(arg0 *directoryservice.DescribeRegionsInput) (*directoryservice.DescribeRegionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRegions", arg0)
+	ret0, _ := ret[0].(*directoryservice.DescribeRegionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRegions indicates an expected call of DescribeRegions
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeRegions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRegions", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeRegions), arg0)
+}
+
+// DescribeRegionsRequest mocks base method
+func (m *MockDirectoryServiceAPI) DescribeRegionsRequest(arg0 *directoryservice.DescribeRegionsInput) (*request.Request, *directoryservice.DescribeRegionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRegionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.DescribeRegionsOutput)
+	return ret0, ret1
+}
+
+// DescribeRegionsRequest indicates an expected call of DescribeRegionsRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeRegionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRegionsRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeRegionsRequest), arg0)
+}
+
+// DescribeRegionsWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeRegionsWithContext(arg0 context.Context, arg1 *directoryservice.DescribeRegionsInput, arg2 ...request.Option) (*directoryservice.DescribeRegionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeRegionsWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.DescribeRegionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRegionsWithContext indicates an expected call of DescribeRegionsWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeRegionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRegionsWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeRegionsWithContext), varargs...)
+}
+
 // DescribeSharedDirectories mocks base method
 func (m *MockDirectoryServiceAPI) DescribeSharedDirectories(arg0 *directoryservice.DescribeSharedDirectoriesInput) (*directoryservice.DescribeSharedDirectoriesOutput, error) {
 	m.ctrl.T.Helper()
@@ -2366,6 +2466,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) RemoveIpRoutesWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveIpRoutesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).RemoveIpRoutesWithContext), varargs...)
+}
+
+// RemoveRegion mocks base method
+func (m *MockDirectoryServiceAPI) RemoveRegion(arg0 *directoryservice.RemoveRegionInput) (*directoryservice.RemoveRegionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveRegion", arg0)
+	ret0, _ := ret[0].(*directoryservice.RemoveRegionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveRegion indicates an expected call of RemoveRegion
+func (mr *MockDirectoryServiceAPIMockRecorder) RemoveRegion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveRegion", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).RemoveRegion), arg0)
+}
+
+// RemoveRegionRequest mocks base method
+func (m *MockDirectoryServiceAPI) RemoveRegionRequest(arg0 *directoryservice.RemoveRegionInput) (*request.Request, *directoryservice.RemoveRegionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveRegionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.RemoveRegionOutput)
+	return ret0, ret1
+}
+
+// RemoveRegionRequest indicates an expected call of RemoveRegionRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) RemoveRegionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveRegionRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).RemoveRegionRequest), arg0)
+}
+
+// RemoveRegionWithContext mocks base method
+func (m *MockDirectoryServiceAPI) RemoveRegionWithContext(arg0 context.Context, arg1 *directoryservice.RemoveRegionInput, arg2 ...request.Option) (*directoryservice.RemoveRegionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveRegionWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.RemoveRegionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveRegionWithContext indicates an expected call of RemoveRegionWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) RemoveRegionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveRegionWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).RemoveRegionWithContext), varargs...)
 }
 
 // RemoveTagsFromResource mocks base method

@@ -1750,6 +1750,39 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClusterDbRevisions(arg0 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterDbRevisions", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeClusterDbRevisions), arg0)
 }
 
+// DescribeClusterDbRevisionsPages mocks base method
+func (m *MockRedshiftAPI) DescribeClusterDbRevisionsPages(arg0 *redshift.DescribeClusterDbRevisionsInput, arg1 func(*redshift.DescribeClusterDbRevisionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeClusterDbRevisionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeClusterDbRevisionsPages indicates an expected call of DescribeClusterDbRevisionsPages
+func (mr *MockRedshiftAPIMockRecorder) DescribeClusterDbRevisionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterDbRevisionsPages", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeClusterDbRevisionsPages), arg0, arg1)
+}
+
+// DescribeClusterDbRevisionsPagesWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeClusterDbRevisionsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterDbRevisionsInput, arg2 func(*redshift.DescribeClusterDbRevisionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeClusterDbRevisionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeClusterDbRevisionsPagesWithContext indicates an expected call of DescribeClusterDbRevisionsPagesWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeClusterDbRevisionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterDbRevisionsPagesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeClusterDbRevisionsPagesWithContext), varargs...)
+}
+
 // DescribeClusterDbRevisionsRequest mocks base method
 func (m *MockRedshiftAPI) DescribeClusterDbRevisionsRequest(arg0 *redshift.DescribeClusterDbRevisionsInput) (*request.Request, *redshift.DescribeClusterDbRevisionsOutput) {
 	m.ctrl.T.Helper()
@@ -2213,6 +2246,39 @@ func (m *MockRedshiftAPI) DescribeClusterTracks(arg0 *redshift.DescribeClusterTr
 func (mr *MockRedshiftAPIMockRecorder) DescribeClusterTracks(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterTracks", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeClusterTracks), arg0)
+}
+
+// DescribeClusterTracksPages mocks base method
+func (m *MockRedshiftAPI) DescribeClusterTracksPages(arg0 *redshift.DescribeClusterTracksInput, arg1 func(*redshift.DescribeClusterTracksOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeClusterTracksPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeClusterTracksPages indicates an expected call of DescribeClusterTracksPages
+func (mr *MockRedshiftAPIMockRecorder) DescribeClusterTracksPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterTracksPages", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeClusterTracksPages), arg0, arg1)
+}
+
+// DescribeClusterTracksPagesWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeClusterTracksPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeClusterTracksInput, arg2 func(*redshift.DescribeClusterTracksOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeClusterTracksPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeClusterTracksPagesWithContext indicates an expected call of DescribeClusterTracksPagesWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeClusterTracksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterTracksPagesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeClusterTracksPagesWithContext), varargs...)
 }
 
 // DescribeClusterTracksRequest mocks base method
@@ -3411,6 +3477,39 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeSnapshotCopyGrants(arg0 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotCopyGrants", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeSnapshotCopyGrants), arg0)
 }
 
+// DescribeSnapshotCopyGrantsPages mocks base method
+func (m *MockRedshiftAPI) DescribeSnapshotCopyGrantsPages(arg0 *redshift.DescribeSnapshotCopyGrantsInput, arg1 func(*redshift.DescribeSnapshotCopyGrantsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSnapshotCopyGrantsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSnapshotCopyGrantsPages indicates an expected call of DescribeSnapshotCopyGrantsPages
+func (mr *MockRedshiftAPIMockRecorder) DescribeSnapshotCopyGrantsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotCopyGrantsPages", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeSnapshotCopyGrantsPages), arg0, arg1)
+}
+
+// DescribeSnapshotCopyGrantsPagesWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeSnapshotCopyGrantsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeSnapshotCopyGrantsInput, arg2 func(*redshift.DescribeSnapshotCopyGrantsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSnapshotCopyGrantsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSnapshotCopyGrantsPagesWithContext indicates an expected call of DescribeSnapshotCopyGrantsPagesWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeSnapshotCopyGrantsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotCopyGrantsPagesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeSnapshotCopyGrantsPagesWithContext), varargs...)
+}
+
 // DescribeSnapshotCopyGrantsRequest mocks base method
 func (m *MockRedshiftAPI) DescribeSnapshotCopyGrantsRequest(arg0 *redshift.DescribeSnapshotCopyGrantsInput) (*request.Request, *redshift.DescribeSnapshotCopyGrantsOutput) {
 	m.ctrl.T.Helper()
@@ -3459,6 +3558,39 @@ func (m *MockRedshiftAPI) DescribeSnapshotSchedules(arg0 *redshift.DescribeSnaps
 func (mr *MockRedshiftAPIMockRecorder) DescribeSnapshotSchedules(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotSchedules", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeSnapshotSchedules), arg0)
+}
+
+// DescribeSnapshotSchedulesPages mocks base method
+func (m *MockRedshiftAPI) DescribeSnapshotSchedulesPages(arg0 *redshift.DescribeSnapshotSchedulesInput, arg1 func(*redshift.DescribeSnapshotSchedulesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSnapshotSchedulesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSnapshotSchedulesPages indicates an expected call of DescribeSnapshotSchedulesPages
+func (mr *MockRedshiftAPIMockRecorder) DescribeSnapshotSchedulesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotSchedulesPages", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeSnapshotSchedulesPages), arg0, arg1)
+}
+
+// DescribeSnapshotSchedulesPagesWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeSnapshotSchedulesPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeSnapshotSchedulesInput, arg2 func(*redshift.DescribeSnapshotSchedulesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSnapshotSchedulesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSnapshotSchedulesPagesWithContext indicates an expected call of DescribeSnapshotSchedulesPagesWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeSnapshotSchedulesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotSchedulesPagesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeSnapshotSchedulesPagesWithContext), varargs...)
 }
 
 // DescribeSnapshotSchedulesRequest mocks base method
@@ -3561,6 +3693,39 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeTableRestoreStatus(arg0 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTableRestoreStatus", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeTableRestoreStatus), arg0)
 }
 
+// DescribeTableRestoreStatusPages mocks base method
+func (m *MockRedshiftAPI) DescribeTableRestoreStatusPages(arg0 *redshift.DescribeTableRestoreStatusInput, arg1 func(*redshift.DescribeTableRestoreStatusOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTableRestoreStatusPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeTableRestoreStatusPages indicates an expected call of DescribeTableRestoreStatusPages
+func (mr *MockRedshiftAPIMockRecorder) DescribeTableRestoreStatusPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTableRestoreStatusPages", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeTableRestoreStatusPages), arg0, arg1)
+}
+
+// DescribeTableRestoreStatusPagesWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeTableRestoreStatusPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeTableRestoreStatusInput, arg2 func(*redshift.DescribeTableRestoreStatusOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeTableRestoreStatusPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeTableRestoreStatusPagesWithContext indicates an expected call of DescribeTableRestoreStatusPagesWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeTableRestoreStatusPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTableRestoreStatusPagesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeTableRestoreStatusPagesWithContext), varargs...)
+}
+
 // DescribeTableRestoreStatusRequest mocks base method
 func (m *MockRedshiftAPI) DescribeTableRestoreStatusRequest(arg0 *redshift.DescribeTableRestoreStatusInput) (*request.Request, *redshift.DescribeTableRestoreStatusOutput) {
 	m.ctrl.T.Helper()
@@ -3609,6 +3774,39 @@ func (m *MockRedshiftAPI) DescribeTags(arg0 *redshift.DescribeTagsInput) (*redsh
 func (mr *MockRedshiftAPIMockRecorder) DescribeTags(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTags", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeTags), arg0)
+}
+
+// DescribeTagsPages mocks base method
+func (m *MockRedshiftAPI) DescribeTagsPages(arg0 *redshift.DescribeTagsInput, arg1 func(*redshift.DescribeTagsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTagsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeTagsPages indicates an expected call of DescribeTagsPages
+func (mr *MockRedshiftAPIMockRecorder) DescribeTagsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTagsPages", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeTagsPages), arg0, arg1)
+}
+
+// DescribeTagsPagesWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeTagsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeTagsInput, arg2 func(*redshift.DescribeTagsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeTagsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeTagsPagesWithContext indicates an expected call of DescribeTagsPagesWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeTagsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTagsPagesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeTagsPagesWithContext), varargs...)
 }
 
 // DescribeTagsRequest mocks base method
@@ -3992,6 +4190,39 @@ func (m *MockRedshiftAPI) GetReservedNodeExchangeOfferings(arg0 *redshift.GetRes
 func (mr *MockRedshiftAPIMockRecorder) GetReservedNodeExchangeOfferings(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetReservedNodeExchangeOfferings", reflect.TypeOf((*MockRedshiftAPI)(nil).GetReservedNodeExchangeOfferings), arg0)
+}
+
+// GetReservedNodeExchangeOfferingsPages mocks base method
+func (m *MockRedshiftAPI) GetReservedNodeExchangeOfferingsPages(arg0 *redshift.GetReservedNodeExchangeOfferingsInput, arg1 func(*redshift.GetReservedNodeExchangeOfferingsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetReservedNodeExchangeOfferingsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetReservedNodeExchangeOfferingsPages indicates an expected call of GetReservedNodeExchangeOfferingsPages
+func (mr *MockRedshiftAPIMockRecorder) GetReservedNodeExchangeOfferingsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetReservedNodeExchangeOfferingsPages", reflect.TypeOf((*MockRedshiftAPI)(nil).GetReservedNodeExchangeOfferingsPages), arg0, arg1)
+}
+
+// GetReservedNodeExchangeOfferingsPagesWithContext mocks base method
+func (m *MockRedshiftAPI) GetReservedNodeExchangeOfferingsPagesWithContext(arg0 context.Context, arg1 *redshift.GetReservedNodeExchangeOfferingsInput, arg2 func(*redshift.GetReservedNodeExchangeOfferingsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetReservedNodeExchangeOfferingsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetReservedNodeExchangeOfferingsPagesWithContext indicates an expected call of GetReservedNodeExchangeOfferingsPagesWithContext
+func (mr *MockRedshiftAPIMockRecorder) GetReservedNodeExchangeOfferingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetReservedNodeExchangeOfferingsPagesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).GetReservedNodeExchangeOfferingsPagesWithContext), varargs...)
 }
 
 // GetReservedNodeExchangeOfferingsRequest mocks base method

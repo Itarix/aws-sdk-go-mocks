@@ -350,6 +350,56 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) CreateApplication(arg0 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplication", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).CreateApplication), arg0)
 }
 
+// CreateApplicationPresignedUrl mocks base method
+func (m *MockKinesisAnalyticsV2API) CreateApplicationPresignedUrl(arg0 *kinesisanalyticsv2.CreateApplicationPresignedUrlInput) (*kinesisanalyticsv2.CreateApplicationPresignedUrlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateApplicationPresignedUrl", arg0)
+	ret0, _ := ret[0].(*kinesisanalyticsv2.CreateApplicationPresignedUrlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateApplicationPresignedUrl indicates an expected call of CreateApplicationPresignedUrl
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) CreateApplicationPresignedUrl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationPresignedUrl", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).CreateApplicationPresignedUrl), arg0)
+}
+
+// CreateApplicationPresignedUrlRequest mocks base method
+func (m *MockKinesisAnalyticsV2API) CreateApplicationPresignedUrlRequest(arg0 *kinesisanalyticsv2.CreateApplicationPresignedUrlInput) (*request.Request, *kinesisanalyticsv2.CreateApplicationPresignedUrlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateApplicationPresignedUrlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisanalyticsv2.CreateApplicationPresignedUrlOutput)
+	return ret0, ret1
+}
+
+// CreateApplicationPresignedUrlRequest indicates an expected call of CreateApplicationPresignedUrlRequest
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) CreateApplicationPresignedUrlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationPresignedUrlRequest", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).CreateApplicationPresignedUrlRequest), arg0)
+}
+
+// CreateApplicationPresignedUrlWithContext mocks base method
+func (m *MockKinesisAnalyticsV2API) CreateApplicationPresignedUrlWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.CreateApplicationPresignedUrlInput, arg2 ...request.Option) (*kinesisanalyticsv2.CreateApplicationPresignedUrlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateApplicationPresignedUrlWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisanalyticsv2.CreateApplicationPresignedUrlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateApplicationPresignedUrlWithContext indicates an expected call of CreateApplicationPresignedUrlWithContext
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) CreateApplicationPresignedUrlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationPresignedUrlWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).CreateApplicationPresignedUrlWithContext), varargs...)
+}
+
 // CreateApplicationRequest mocks base method
 func (m *MockKinesisAnalyticsV2API) CreateApplicationRequest(arg0 *kinesisanalyticsv2.CreateApplicationInput) (*request.Request, *kinesisanalyticsv2.CreateApplicationOutput) {
 	m.ctrl.T.Helper()
