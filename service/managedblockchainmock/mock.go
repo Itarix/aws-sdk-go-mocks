@@ -1083,6 +1083,106 @@ func (mr *MockManagedBlockchainAPIMockRecorder) RejectInvitationWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectInvitationWithContext", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).RejectInvitationWithContext), varargs...)
 }
 
+// UpdateMember mocks base method
+func (m *MockManagedBlockchainAPI) UpdateMember(arg0 *managedblockchain.UpdateMemberInput) (*managedblockchain.UpdateMemberOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMember", arg0)
+	ret0, _ := ret[0].(*managedblockchain.UpdateMemberOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMember indicates an expected call of UpdateMember
+func (mr *MockManagedBlockchainAPIMockRecorder) UpdateMember(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMember", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).UpdateMember), arg0)
+}
+
+// UpdateMemberRequest mocks base method
+func (m *MockManagedBlockchainAPI) UpdateMemberRequest(arg0 *managedblockchain.UpdateMemberInput) (*request.Request, *managedblockchain.UpdateMemberOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMemberRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*managedblockchain.UpdateMemberOutput)
+	return ret0, ret1
+}
+
+// UpdateMemberRequest indicates an expected call of UpdateMemberRequest
+func (mr *MockManagedBlockchainAPIMockRecorder) UpdateMemberRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMemberRequest", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).UpdateMemberRequest), arg0)
+}
+
+// UpdateMemberWithContext mocks base method
+func (m *MockManagedBlockchainAPI) UpdateMemberWithContext(arg0 context.Context, arg1 *managedblockchain.UpdateMemberInput, arg2 ...request.Option) (*managedblockchain.UpdateMemberOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateMemberWithContext", varargs...)
+	ret0, _ := ret[0].(*managedblockchain.UpdateMemberOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMemberWithContext indicates an expected call of UpdateMemberWithContext
+func (mr *MockManagedBlockchainAPIMockRecorder) UpdateMemberWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMemberWithContext", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).UpdateMemberWithContext), varargs...)
+}
+
+// UpdateNode mocks base method
+func (m *MockManagedBlockchainAPI) UpdateNode(arg0 *managedblockchain.UpdateNodeInput) (*managedblockchain.UpdateNodeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateNode", arg0)
+	ret0, _ := ret[0].(*managedblockchain.UpdateNodeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateNode indicates an expected call of UpdateNode
+func (mr *MockManagedBlockchainAPIMockRecorder) UpdateNode(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNode", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).UpdateNode), arg0)
+}
+
+// UpdateNodeRequest mocks base method
+func (m *MockManagedBlockchainAPI) UpdateNodeRequest(arg0 *managedblockchain.UpdateNodeInput) (*request.Request, *managedblockchain.UpdateNodeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateNodeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*managedblockchain.UpdateNodeOutput)
+	return ret0, ret1
+}
+
+// UpdateNodeRequest indicates an expected call of UpdateNodeRequest
+func (mr *MockManagedBlockchainAPIMockRecorder) UpdateNodeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNodeRequest", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).UpdateNodeRequest), arg0)
+}
+
+// UpdateNodeWithContext mocks base method
+func (m *MockManagedBlockchainAPI) UpdateNodeWithContext(arg0 context.Context, arg1 *managedblockchain.UpdateNodeInput, arg2 ...request.Option) (*managedblockchain.UpdateNodeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateNodeWithContext", varargs...)
+	ret0, _ := ret[0].(*managedblockchain.UpdateNodeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateNodeWithContext indicates an expected call of UpdateNodeWithContext
+func (mr *MockManagedBlockchainAPIMockRecorder) UpdateNodeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNodeWithContext", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).UpdateNodeWithContext), varargs...)
+}
+
 // VoteOnProposal mocks base method
 func (m *MockManagedBlockchainAPI) VoteOnProposal(arg0 *managedblockchain.VoteOnProposalInput) (*managedblockchain.VoteOnProposalOutput, error) {
 	m.ctrl.T.Helper()

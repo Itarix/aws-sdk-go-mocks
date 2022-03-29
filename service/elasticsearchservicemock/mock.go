@@ -85,6 +85,56 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) AddTagsWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddTagsWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).AddTagsWithContext), varargs...)
 }
 
+// AssociatePackage mocks base method
+func (m *MockElasticsearchServiceAPI) AssociatePackage(arg0 *elasticsearchservice.AssociatePackageInput) (*elasticsearchservice.AssociatePackageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociatePackage", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.AssociatePackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociatePackage indicates an expected call of AssociatePackage
+func (mr *MockElasticsearchServiceAPIMockRecorder) AssociatePackage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociatePackage", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).AssociatePackage), arg0)
+}
+
+// AssociatePackageRequest mocks base method
+func (m *MockElasticsearchServiceAPI) AssociatePackageRequest(arg0 *elasticsearchservice.AssociatePackageInput) (*request.Request, *elasticsearchservice.AssociatePackageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociatePackageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.AssociatePackageOutput)
+	return ret0, ret1
+}
+
+// AssociatePackageRequest indicates an expected call of AssociatePackageRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) AssociatePackageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociatePackageRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).AssociatePackageRequest), arg0)
+}
+
+// AssociatePackageWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) AssociatePackageWithContext(arg0 context.Context, arg1 *elasticsearchservice.AssociatePackageInput, arg2 ...request.Option) (*elasticsearchservice.AssociatePackageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociatePackageWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.AssociatePackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociatePackageWithContext indicates an expected call of AssociatePackageWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) AssociatePackageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociatePackageWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).AssociatePackageWithContext), varargs...)
+}
+
 // CancelElasticsearchServiceSoftwareUpdate mocks base method
 func (m *MockElasticsearchServiceAPI) CancelElasticsearchServiceSoftwareUpdate(arg0 *elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateInput) (*elasticsearchservice.CancelElasticsearchServiceSoftwareUpdateOutput, error) {
 	m.ctrl.T.Helper()
@@ -185,6 +235,56 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) CreateElasticsearchDomainWith
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateElasticsearchDomainWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).CreateElasticsearchDomainWithContext), varargs...)
 }
 
+// CreatePackage mocks base method
+func (m *MockElasticsearchServiceAPI) CreatePackage(arg0 *elasticsearchservice.CreatePackageInput) (*elasticsearchservice.CreatePackageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePackage", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.CreatePackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePackage indicates an expected call of CreatePackage
+func (mr *MockElasticsearchServiceAPIMockRecorder) CreatePackage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePackage", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).CreatePackage), arg0)
+}
+
+// CreatePackageRequest mocks base method
+func (m *MockElasticsearchServiceAPI) CreatePackageRequest(arg0 *elasticsearchservice.CreatePackageInput) (*request.Request, *elasticsearchservice.CreatePackageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePackageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.CreatePackageOutput)
+	return ret0, ret1
+}
+
+// CreatePackageRequest indicates an expected call of CreatePackageRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) CreatePackageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePackageRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).CreatePackageRequest), arg0)
+}
+
+// CreatePackageWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) CreatePackageWithContext(arg0 context.Context, arg1 *elasticsearchservice.CreatePackageInput, arg2 ...request.Option) (*elasticsearchservice.CreatePackageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreatePackageWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.CreatePackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePackageWithContext indicates an expected call of CreatePackageWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) CreatePackageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePackageWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).CreatePackageWithContext), varargs...)
+}
+
 // DeleteElasticsearchDomain mocks base method
 func (m *MockElasticsearchServiceAPI) DeleteElasticsearchDomain(arg0 *elasticsearchservice.DeleteElasticsearchDomainInput) (*elasticsearchservice.DeleteElasticsearchDomainOutput, error) {
 	m.ctrl.T.Helper()
@@ -283,6 +383,56 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DeleteElasticsearchServiceRol
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteElasticsearchServiceRoleWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DeleteElasticsearchServiceRoleWithContext), varargs...)
+}
+
+// DeletePackage mocks base method
+func (m *MockElasticsearchServiceAPI) DeletePackage(arg0 *elasticsearchservice.DeletePackageInput) (*elasticsearchservice.DeletePackageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePackage", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.DeletePackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePackage indicates an expected call of DeletePackage
+func (mr *MockElasticsearchServiceAPIMockRecorder) DeletePackage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePackage", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DeletePackage), arg0)
+}
+
+// DeletePackageRequest mocks base method
+func (m *MockElasticsearchServiceAPI) DeletePackageRequest(arg0 *elasticsearchservice.DeletePackageInput) (*request.Request, *elasticsearchservice.DeletePackageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePackageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.DeletePackageOutput)
+	return ret0, ret1
+}
+
+// DeletePackageRequest indicates an expected call of DeletePackageRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) DeletePackageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePackageRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DeletePackageRequest), arg0)
+}
+
+// DeletePackageWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) DeletePackageWithContext(arg0 context.Context, arg1 *elasticsearchservice.DeletePackageInput, arg2 ...request.Option) (*elasticsearchservice.DeletePackageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePackageWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.DeletePackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePackageWithContext indicates an expected call of DeletePackageWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) DeletePackageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePackageWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DeletePackageWithContext), varargs...)
 }
 
 // DescribeElasticsearchDomain mocks base method
@@ -485,6 +635,89 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeElasticsearchInstance
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeElasticsearchInstanceTypeLimitsWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DescribeElasticsearchInstanceTypeLimitsWithContext), varargs...)
 }
 
+// DescribePackages mocks base method
+func (m *MockElasticsearchServiceAPI) DescribePackages(arg0 *elasticsearchservice.DescribePackagesInput) (*elasticsearchservice.DescribePackagesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePackages", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.DescribePackagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePackages indicates an expected call of DescribePackages
+func (mr *MockElasticsearchServiceAPIMockRecorder) DescribePackages(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePackages", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DescribePackages), arg0)
+}
+
+// DescribePackagesPages mocks base method
+func (m *MockElasticsearchServiceAPI) DescribePackagesPages(arg0 *elasticsearchservice.DescribePackagesInput, arg1 func(*elasticsearchservice.DescribePackagesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePackagesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribePackagesPages indicates an expected call of DescribePackagesPages
+func (mr *MockElasticsearchServiceAPIMockRecorder) DescribePackagesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePackagesPages", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DescribePackagesPages), arg0, arg1)
+}
+
+// DescribePackagesPagesWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) DescribePackagesPagesWithContext(arg0 context.Context, arg1 *elasticsearchservice.DescribePackagesInput, arg2 func(*elasticsearchservice.DescribePackagesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribePackagesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribePackagesPagesWithContext indicates an expected call of DescribePackagesPagesWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) DescribePackagesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePackagesPagesWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DescribePackagesPagesWithContext), varargs...)
+}
+
+// DescribePackagesRequest mocks base method
+func (m *MockElasticsearchServiceAPI) DescribePackagesRequest(arg0 *elasticsearchservice.DescribePackagesInput) (*request.Request, *elasticsearchservice.DescribePackagesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePackagesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.DescribePackagesOutput)
+	return ret0, ret1
+}
+
+// DescribePackagesRequest indicates an expected call of DescribePackagesRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) DescribePackagesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePackagesRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DescribePackagesRequest), arg0)
+}
+
+// DescribePackagesWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) DescribePackagesWithContext(arg0 context.Context, arg1 *elasticsearchservice.DescribePackagesInput, arg2 ...request.Option) (*elasticsearchservice.DescribePackagesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribePackagesWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.DescribePackagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePackagesWithContext indicates an expected call of DescribePackagesWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) DescribePackagesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePackagesWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DescribePackagesWithContext), varargs...)
+}
+
 // DescribeReservedElasticsearchInstanceOfferings mocks base method
 func (m *MockElasticsearchServiceAPI) DescribeReservedElasticsearchInstanceOfferings(arg0 *elasticsearchservice.DescribeReservedElasticsearchInstanceOfferingsInput) (*elasticsearchservice.DescribeReservedElasticsearchInstanceOfferingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -649,6 +882,56 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeReservedElasticsearch
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservedElasticsearchInstancesWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DescribeReservedElasticsearchInstancesWithContext), varargs...)
+}
+
+// DissociatePackage mocks base method
+func (m *MockElasticsearchServiceAPI) DissociatePackage(arg0 *elasticsearchservice.DissociatePackageInput) (*elasticsearchservice.DissociatePackageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DissociatePackage", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.DissociatePackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DissociatePackage indicates an expected call of DissociatePackage
+func (mr *MockElasticsearchServiceAPIMockRecorder) DissociatePackage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DissociatePackage", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DissociatePackage), arg0)
+}
+
+// DissociatePackageRequest mocks base method
+func (m *MockElasticsearchServiceAPI) DissociatePackageRequest(arg0 *elasticsearchservice.DissociatePackageInput) (*request.Request, *elasticsearchservice.DissociatePackageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DissociatePackageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.DissociatePackageOutput)
+	return ret0, ret1
+}
+
+// DissociatePackageRequest indicates an expected call of DissociatePackageRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) DissociatePackageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DissociatePackageRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DissociatePackageRequest), arg0)
+}
+
+// DissociatePackageWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) DissociatePackageWithContext(arg0 context.Context, arg1 *elasticsearchservice.DissociatePackageInput, arg2 ...request.Option) (*elasticsearchservice.DissociatePackageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DissociatePackageWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.DissociatePackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DissociatePackageWithContext indicates an expected call of DissociatePackageWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) DissociatePackageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DissociatePackageWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DissociatePackageWithContext), varargs...)
 }
 
 // GetCompatibleElasticsearchVersions mocks base method
@@ -884,6 +1167,89 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) ListDomainNamesWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainNamesWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).ListDomainNamesWithContext), varargs...)
 }
 
+// ListDomainsForPackage mocks base method
+func (m *MockElasticsearchServiceAPI) ListDomainsForPackage(arg0 *elasticsearchservice.ListDomainsForPackageInput) (*elasticsearchservice.ListDomainsForPackageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDomainsForPackage", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.ListDomainsForPackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDomainsForPackage indicates an expected call of ListDomainsForPackage
+func (mr *MockElasticsearchServiceAPIMockRecorder) ListDomainsForPackage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsForPackage", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).ListDomainsForPackage), arg0)
+}
+
+// ListDomainsForPackagePages mocks base method
+func (m *MockElasticsearchServiceAPI) ListDomainsForPackagePages(arg0 *elasticsearchservice.ListDomainsForPackageInput, arg1 func(*elasticsearchservice.ListDomainsForPackageOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDomainsForPackagePages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDomainsForPackagePages indicates an expected call of ListDomainsForPackagePages
+func (mr *MockElasticsearchServiceAPIMockRecorder) ListDomainsForPackagePages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsForPackagePages", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).ListDomainsForPackagePages), arg0, arg1)
+}
+
+// ListDomainsForPackagePagesWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) ListDomainsForPackagePagesWithContext(arg0 context.Context, arg1 *elasticsearchservice.ListDomainsForPackageInput, arg2 func(*elasticsearchservice.ListDomainsForPackageOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDomainsForPackagePagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDomainsForPackagePagesWithContext indicates an expected call of ListDomainsForPackagePagesWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) ListDomainsForPackagePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsForPackagePagesWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).ListDomainsForPackagePagesWithContext), varargs...)
+}
+
+// ListDomainsForPackageRequest mocks base method
+func (m *MockElasticsearchServiceAPI) ListDomainsForPackageRequest(arg0 *elasticsearchservice.ListDomainsForPackageInput) (*request.Request, *elasticsearchservice.ListDomainsForPackageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDomainsForPackageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.ListDomainsForPackageOutput)
+	return ret0, ret1
+}
+
+// ListDomainsForPackageRequest indicates an expected call of ListDomainsForPackageRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) ListDomainsForPackageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsForPackageRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).ListDomainsForPackageRequest), arg0)
+}
+
+// ListDomainsForPackageWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) ListDomainsForPackageWithContext(arg0 context.Context, arg1 *elasticsearchservice.ListDomainsForPackageInput, arg2 ...request.Option) (*elasticsearchservice.ListDomainsForPackageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDomainsForPackageWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.ListDomainsForPackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDomainsForPackageWithContext indicates an expected call of ListDomainsForPackageWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) ListDomainsForPackageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsForPackageWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).ListDomainsForPackageWithContext), varargs...)
+}
+
 // ListElasticsearchInstanceTypes mocks base method
 func (m *MockElasticsearchServiceAPI) ListElasticsearchInstanceTypes(arg0 *elasticsearchservice.ListElasticsearchInstanceTypesInput) (*elasticsearchservice.ListElasticsearchInstanceTypesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1048,6 +1414,89 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) ListElasticsearchVersionsWith
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListElasticsearchVersionsWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).ListElasticsearchVersionsWithContext), varargs...)
+}
+
+// ListPackagesForDomain mocks base method
+func (m *MockElasticsearchServiceAPI) ListPackagesForDomain(arg0 *elasticsearchservice.ListPackagesForDomainInput) (*elasticsearchservice.ListPackagesForDomainOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPackagesForDomain", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.ListPackagesForDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPackagesForDomain indicates an expected call of ListPackagesForDomain
+func (mr *MockElasticsearchServiceAPIMockRecorder) ListPackagesForDomain(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPackagesForDomain", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).ListPackagesForDomain), arg0)
+}
+
+// ListPackagesForDomainPages mocks base method
+func (m *MockElasticsearchServiceAPI) ListPackagesForDomainPages(arg0 *elasticsearchservice.ListPackagesForDomainInput, arg1 func(*elasticsearchservice.ListPackagesForDomainOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPackagesForDomainPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPackagesForDomainPages indicates an expected call of ListPackagesForDomainPages
+func (mr *MockElasticsearchServiceAPIMockRecorder) ListPackagesForDomainPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPackagesForDomainPages", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).ListPackagesForDomainPages), arg0, arg1)
+}
+
+// ListPackagesForDomainPagesWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) ListPackagesForDomainPagesWithContext(arg0 context.Context, arg1 *elasticsearchservice.ListPackagesForDomainInput, arg2 func(*elasticsearchservice.ListPackagesForDomainOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPackagesForDomainPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPackagesForDomainPagesWithContext indicates an expected call of ListPackagesForDomainPagesWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) ListPackagesForDomainPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPackagesForDomainPagesWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).ListPackagesForDomainPagesWithContext), varargs...)
+}
+
+// ListPackagesForDomainRequest mocks base method
+func (m *MockElasticsearchServiceAPI) ListPackagesForDomainRequest(arg0 *elasticsearchservice.ListPackagesForDomainInput) (*request.Request, *elasticsearchservice.ListPackagesForDomainOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPackagesForDomainRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.ListPackagesForDomainOutput)
+	return ret0, ret1
+}
+
+// ListPackagesForDomainRequest indicates an expected call of ListPackagesForDomainRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) ListPackagesForDomainRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPackagesForDomainRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).ListPackagesForDomainRequest), arg0)
+}
+
+// ListPackagesForDomainWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) ListPackagesForDomainWithContext(arg0 context.Context, arg1 *elasticsearchservice.ListPackagesForDomainInput, arg2 ...request.Option) (*elasticsearchservice.ListPackagesForDomainOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPackagesForDomainWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.ListPackagesForDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPackagesForDomainWithContext indicates an expected call of ListPackagesForDomainWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) ListPackagesForDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPackagesForDomainWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).ListPackagesForDomainWithContext), varargs...)
 }
 
 // ListTags mocks base method

@@ -683,3 +683,53 @@ func (mr *MockDetectiveAPIMockRecorder) RejectInvitationWithContext(arg0, arg1 i
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectInvitationWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).RejectInvitationWithContext), varargs...)
 }
+
+// StartMonitoringMember mocks base method
+func (m *MockDetectiveAPI) StartMonitoringMember(arg0 *detective.StartMonitoringMemberInput) (*detective.StartMonitoringMemberOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMonitoringMember", arg0)
+	ret0, _ := ret[0].(*detective.StartMonitoringMemberOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMonitoringMember indicates an expected call of StartMonitoringMember
+func (mr *MockDetectiveAPIMockRecorder) StartMonitoringMember(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMonitoringMember", reflect.TypeOf((*MockDetectiveAPI)(nil).StartMonitoringMember), arg0)
+}
+
+// StartMonitoringMemberRequest mocks base method
+func (m *MockDetectiveAPI) StartMonitoringMemberRequest(arg0 *detective.StartMonitoringMemberInput) (*request.Request, *detective.StartMonitoringMemberOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMonitoringMemberRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*detective.StartMonitoringMemberOutput)
+	return ret0, ret1
+}
+
+// StartMonitoringMemberRequest indicates an expected call of StartMonitoringMemberRequest
+func (mr *MockDetectiveAPIMockRecorder) StartMonitoringMemberRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMonitoringMemberRequest", reflect.TypeOf((*MockDetectiveAPI)(nil).StartMonitoringMemberRequest), arg0)
+}
+
+// StartMonitoringMemberWithContext mocks base method
+func (m *MockDetectiveAPI) StartMonitoringMemberWithContext(arg0 context.Context, arg1 *detective.StartMonitoringMemberInput, arg2 ...request.Option) (*detective.StartMonitoringMemberOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartMonitoringMemberWithContext", varargs...)
+	ret0, _ := ret[0].(*detective.StartMonitoringMemberOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMonitoringMemberWithContext indicates an expected call of StartMonitoringMemberWithContext
+func (mr *MockDetectiveAPIMockRecorder) StartMonitoringMemberWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMonitoringMemberWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).StartMonitoringMemberWithContext), varargs...)
+}
