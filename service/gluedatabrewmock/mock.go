@@ -715,6 +715,56 @@ func (mr *MockGlueDataBrewAPIMockRecorder) DescribeJobRequest(arg0 interface{}) 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobRequest", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).DescribeJobRequest), arg0)
 }
 
+// DescribeJobRun mocks base method
+func (m *MockGlueDataBrewAPI) DescribeJobRun(arg0 *gluedatabrew.DescribeJobRunInput) (*gluedatabrew.DescribeJobRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeJobRun", arg0)
+	ret0, _ := ret[0].(*gluedatabrew.DescribeJobRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeJobRun indicates an expected call of DescribeJobRun
+func (mr *MockGlueDataBrewAPIMockRecorder) DescribeJobRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobRun", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).DescribeJobRun), arg0)
+}
+
+// DescribeJobRunRequest mocks base method
+func (m *MockGlueDataBrewAPI) DescribeJobRunRequest(arg0 *gluedatabrew.DescribeJobRunInput) (*request.Request, *gluedatabrew.DescribeJobRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeJobRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gluedatabrew.DescribeJobRunOutput)
+	return ret0, ret1
+}
+
+// DescribeJobRunRequest indicates an expected call of DescribeJobRunRequest
+func (mr *MockGlueDataBrewAPIMockRecorder) DescribeJobRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobRunRequest", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).DescribeJobRunRequest), arg0)
+}
+
+// DescribeJobRunWithContext mocks base method
+func (m *MockGlueDataBrewAPI) DescribeJobRunWithContext(arg0 context.Context, arg1 *gluedatabrew.DescribeJobRunInput, arg2 ...request.Option) (*gluedatabrew.DescribeJobRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeJobRunWithContext", varargs...)
+	ret0, _ := ret[0].(*gluedatabrew.DescribeJobRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeJobRunWithContext indicates an expected call of DescribeJobRunWithContext
+func (mr *MockGlueDataBrewAPIMockRecorder) DescribeJobRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobRunWithContext", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).DescribeJobRunWithContext), varargs...)
+}
+
 // DescribeJobWithContext mocks base method
 func (m *MockGlueDataBrewAPI) DescribeJobWithContext(arg0 context.Context, arg1 *gluedatabrew.DescribeJobInput, arg2 ...request.Option) (*gluedatabrew.DescribeJobOutput, error) {
 	m.ctrl.T.Helper()
