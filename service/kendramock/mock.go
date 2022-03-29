@@ -285,6 +285,56 @@ func (mr *MockKendraAPIMockRecorder) CreateIndexWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIndexWithContext", reflect.TypeOf((*MockKendraAPI)(nil).CreateIndexWithContext), varargs...)
 }
 
+// CreateThesaurus mocks base method
+func (m *MockKendraAPI) CreateThesaurus(arg0 *kendra.CreateThesaurusInput) (*kendra.CreateThesaurusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateThesaurus", arg0)
+	ret0, _ := ret[0].(*kendra.CreateThesaurusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateThesaurus indicates an expected call of CreateThesaurus
+func (mr *MockKendraAPIMockRecorder) CreateThesaurus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateThesaurus", reflect.TypeOf((*MockKendraAPI)(nil).CreateThesaurus), arg0)
+}
+
+// CreateThesaurusRequest mocks base method
+func (m *MockKendraAPI) CreateThesaurusRequest(arg0 *kendra.CreateThesaurusInput) (*request.Request, *kendra.CreateThesaurusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateThesaurusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.CreateThesaurusOutput)
+	return ret0, ret1
+}
+
+// CreateThesaurusRequest indicates an expected call of CreateThesaurusRequest
+func (mr *MockKendraAPIMockRecorder) CreateThesaurusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateThesaurusRequest", reflect.TypeOf((*MockKendraAPI)(nil).CreateThesaurusRequest), arg0)
+}
+
+// CreateThesaurusWithContext mocks base method
+func (m *MockKendraAPI) CreateThesaurusWithContext(arg0 context.Context, arg1 *kendra.CreateThesaurusInput, arg2 ...request.Option) (*kendra.CreateThesaurusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateThesaurusWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.CreateThesaurusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateThesaurusWithContext indicates an expected call of CreateThesaurusWithContext
+func (mr *MockKendraAPIMockRecorder) CreateThesaurusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateThesaurusWithContext", reflect.TypeOf((*MockKendraAPI)(nil).CreateThesaurusWithContext), varargs...)
+}
+
 // DeleteDataSource mocks base method
 func (m *MockKendraAPI) DeleteDataSource(arg0 *kendra.DeleteDataSourceInput) (*kendra.DeleteDataSourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -435,6 +485,56 @@ func (mr *MockKendraAPIMockRecorder) DeleteIndexWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIndexWithContext", reflect.TypeOf((*MockKendraAPI)(nil).DeleteIndexWithContext), varargs...)
 }
 
+// DeleteThesaurus mocks base method
+func (m *MockKendraAPI) DeleteThesaurus(arg0 *kendra.DeleteThesaurusInput) (*kendra.DeleteThesaurusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteThesaurus", arg0)
+	ret0, _ := ret[0].(*kendra.DeleteThesaurusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteThesaurus indicates an expected call of DeleteThesaurus
+func (mr *MockKendraAPIMockRecorder) DeleteThesaurus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteThesaurus", reflect.TypeOf((*MockKendraAPI)(nil).DeleteThesaurus), arg0)
+}
+
+// DeleteThesaurusRequest mocks base method
+func (m *MockKendraAPI) DeleteThesaurusRequest(arg0 *kendra.DeleteThesaurusInput) (*request.Request, *kendra.DeleteThesaurusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteThesaurusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.DeleteThesaurusOutput)
+	return ret0, ret1
+}
+
+// DeleteThesaurusRequest indicates an expected call of DeleteThesaurusRequest
+func (mr *MockKendraAPIMockRecorder) DeleteThesaurusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteThesaurusRequest", reflect.TypeOf((*MockKendraAPI)(nil).DeleteThesaurusRequest), arg0)
+}
+
+// DeleteThesaurusWithContext mocks base method
+func (m *MockKendraAPI) DeleteThesaurusWithContext(arg0 context.Context, arg1 *kendra.DeleteThesaurusInput, arg2 ...request.Option) (*kendra.DeleteThesaurusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteThesaurusWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.DeleteThesaurusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteThesaurusWithContext indicates an expected call of DeleteThesaurusWithContext
+func (mr *MockKendraAPIMockRecorder) DeleteThesaurusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteThesaurusWithContext", reflect.TypeOf((*MockKendraAPI)(nil).DeleteThesaurusWithContext), varargs...)
+}
+
 // DescribeDataSource mocks base method
 func (m *MockKendraAPI) DescribeDataSource(arg0 *kendra.DescribeDataSourceInput) (*kendra.DescribeDataSourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +683,56 @@ func (mr *MockKendraAPIMockRecorder) DescribeIndexWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIndexWithContext", reflect.TypeOf((*MockKendraAPI)(nil).DescribeIndexWithContext), varargs...)
+}
+
+// DescribeThesaurus mocks base method
+func (m *MockKendraAPI) DescribeThesaurus(arg0 *kendra.DescribeThesaurusInput) (*kendra.DescribeThesaurusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeThesaurus", arg0)
+	ret0, _ := ret[0].(*kendra.DescribeThesaurusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeThesaurus indicates an expected call of DescribeThesaurus
+func (mr *MockKendraAPIMockRecorder) DescribeThesaurus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeThesaurus", reflect.TypeOf((*MockKendraAPI)(nil).DescribeThesaurus), arg0)
+}
+
+// DescribeThesaurusRequest mocks base method
+func (m *MockKendraAPI) DescribeThesaurusRequest(arg0 *kendra.DescribeThesaurusInput) (*request.Request, *kendra.DescribeThesaurusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeThesaurusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.DescribeThesaurusOutput)
+	return ret0, ret1
+}
+
+// DescribeThesaurusRequest indicates an expected call of DescribeThesaurusRequest
+func (mr *MockKendraAPIMockRecorder) DescribeThesaurusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeThesaurusRequest", reflect.TypeOf((*MockKendraAPI)(nil).DescribeThesaurusRequest), arg0)
+}
+
+// DescribeThesaurusWithContext mocks base method
+func (m *MockKendraAPI) DescribeThesaurusWithContext(arg0 context.Context, arg1 *kendra.DescribeThesaurusInput, arg2 ...request.Option) (*kendra.DescribeThesaurusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeThesaurusWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.DescribeThesaurusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeThesaurusWithContext indicates an expected call of DescribeThesaurusWithContext
+func (mr *MockKendraAPIMockRecorder) DescribeThesaurusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeThesaurusWithContext", reflect.TypeOf((*MockKendraAPI)(nil).DescribeThesaurusWithContext), varargs...)
 }
 
 // ListDataSourceSyncJobs mocks base method
@@ -932,6 +1082,56 @@ func (mr *MockKendraAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockKendraAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// ListThesauri mocks base method
+func (m *MockKendraAPI) ListThesauri(arg0 *kendra.ListThesauriInput) (*kendra.ListThesauriOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListThesauri", arg0)
+	ret0, _ := ret[0].(*kendra.ListThesauriOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListThesauri indicates an expected call of ListThesauri
+func (mr *MockKendraAPIMockRecorder) ListThesauri(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThesauri", reflect.TypeOf((*MockKendraAPI)(nil).ListThesauri), arg0)
+}
+
+// ListThesauriRequest mocks base method
+func (m *MockKendraAPI) ListThesauriRequest(arg0 *kendra.ListThesauriInput) (*request.Request, *kendra.ListThesauriOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListThesauriRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.ListThesauriOutput)
+	return ret0, ret1
+}
+
+// ListThesauriRequest indicates an expected call of ListThesauriRequest
+func (mr *MockKendraAPIMockRecorder) ListThesauriRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThesauriRequest", reflect.TypeOf((*MockKendraAPI)(nil).ListThesauriRequest), arg0)
+}
+
+// ListThesauriWithContext mocks base method
+func (m *MockKendraAPI) ListThesauriWithContext(arg0 context.Context, arg1 *kendra.ListThesauriInput, arg2 ...request.Option) (*kendra.ListThesauriOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListThesauriWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.ListThesauriOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListThesauriWithContext indicates an expected call of ListThesauriWithContext
+func (mr *MockKendraAPIMockRecorder) ListThesauriWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThesauriWithContext", reflect.TypeOf((*MockKendraAPI)(nil).ListThesauriWithContext), varargs...)
 }
 
 // Query mocks base method
@@ -1332,4 +1532,54 @@ func (mr *MockKendraAPIMockRecorder) UpdateIndexWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIndexWithContext", reflect.TypeOf((*MockKendraAPI)(nil).UpdateIndexWithContext), varargs...)
+}
+
+// UpdateThesaurus mocks base method
+func (m *MockKendraAPI) UpdateThesaurus(arg0 *kendra.UpdateThesaurusInput) (*kendra.UpdateThesaurusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateThesaurus", arg0)
+	ret0, _ := ret[0].(*kendra.UpdateThesaurusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateThesaurus indicates an expected call of UpdateThesaurus
+func (mr *MockKendraAPIMockRecorder) UpdateThesaurus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateThesaurus", reflect.TypeOf((*MockKendraAPI)(nil).UpdateThesaurus), arg0)
+}
+
+// UpdateThesaurusRequest mocks base method
+func (m *MockKendraAPI) UpdateThesaurusRequest(arg0 *kendra.UpdateThesaurusInput) (*request.Request, *kendra.UpdateThesaurusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateThesaurusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.UpdateThesaurusOutput)
+	return ret0, ret1
+}
+
+// UpdateThesaurusRequest indicates an expected call of UpdateThesaurusRequest
+func (mr *MockKendraAPIMockRecorder) UpdateThesaurusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateThesaurusRequest", reflect.TypeOf((*MockKendraAPI)(nil).UpdateThesaurusRequest), arg0)
+}
+
+// UpdateThesaurusWithContext mocks base method
+func (m *MockKendraAPI) UpdateThesaurusWithContext(arg0 context.Context, arg1 *kendra.UpdateThesaurusInput, arg2 ...request.Option) (*kendra.UpdateThesaurusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateThesaurusWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.UpdateThesaurusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateThesaurusWithContext indicates an expected call of UpdateThesaurusWithContext
+func (mr *MockKendraAPIMockRecorder) UpdateThesaurusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateThesaurusWithContext", reflect.TypeOf((*MockKendraAPI)(nil).UpdateThesaurusWithContext), varargs...)
 }
