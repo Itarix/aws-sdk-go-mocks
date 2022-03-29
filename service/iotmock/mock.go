@@ -585,6 +585,56 @@ func (mr *MockIoTAPIMockRecorder) CancelCertificateTransferWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelCertificateTransferWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CancelCertificateTransferWithContext), varargs...)
 }
 
+// CancelDetectMitigationActionsTask mocks base method
+func (m *MockIoTAPI) CancelDetectMitigationActionsTask(arg0 *iot.CancelDetectMitigationActionsTaskInput) (*iot.CancelDetectMitigationActionsTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelDetectMitigationActionsTask", arg0)
+	ret0, _ := ret[0].(*iot.CancelDetectMitigationActionsTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelDetectMitigationActionsTask indicates an expected call of CancelDetectMitigationActionsTask
+func (mr *MockIoTAPIMockRecorder) CancelDetectMitigationActionsTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDetectMitigationActionsTask", reflect.TypeOf((*MockIoTAPI)(nil).CancelDetectMitigationActionsTask), arg0)
+}
+
+// CancelDetectMitigationActionsTaskRequest mocks base method
+func (m *MockIoTAPI) CancelDetectMitigationActionsTaskRequest(arg0 *iot.CancelDetectMitigationActionsTaskInput) (*request.Request, *iot.CancelDetectMitigationActionsTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelDetectMitigationActionsTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.CancelDetectMitigationActionsTaskOutput)
+	return ret0, ret1
+}
+
+// CancelDetectMitigationActionsTaskRequest indicates an expected call of CancelDetectMitigationActionsTaskRequest
+func (mr *MockIoTAPIMockRecorder) CancelDetectMitigationActionsTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDetectMitigationActionsTaskRequest", reflect.TypeOf((*MockIoTAPI)(nil).CancelDetectMitigationActionsTaskRequest), arg0)
+}
+
+// CancelDetectMitigationActionsTaskWithContext mocks base method
+func (m *MockIoTAPI) CancelDetectMitigationActionsTaskWithContext(arg0 context.Context, arg1 *iot.CancelDetectMitigationActionsTaskInput, arg2 ...request.Option) (*iot.CancelDetectMitigationActionsTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelDetectMitigationActionsTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.CancelDetectMitigationActionsTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelDetectMitigationActionsTaskWithContext indicates an expected call of CancelDetectMitigationActionsTaskWithContext
+func (mr *MockIoTAPIMockRecorder) CancelDetectMitigationActionsTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDetectMitigationActionsTaskWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CancelDetectMitigationActionsTaskWithContext), varargs...)
+}
+
 // CancelJob mocks base method
 func (m *MockIoTAPI) CancelJob(arg0 *iot.CancelJobInput) (*iot.CancelJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -983,6 +1033,56 @@ func (mr *MockIoTAPIMockRecorder) CreateCertificateFromCsrWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCertificateFromCsrWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateCertificateFromCsrWithContext), varargs...)
+}
+
+// CreateCustomMetric mocks base method
+func (m *MockIoTAPI) CreateCustomMetric(arg0 *iot.CreateCustomMetricInput) (*iot.CreateCustomMetricOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCustomMetric", arg0)
+	ret0, _ := ret[0].(*iot.CreateCustomMetricOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCustomMetric indicates an expected call of CreateCustomMetric
+func (mr *MockIoTAPIMockRecorder) CreateCustomMetric(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomMetric", reflect.TypeOf((*MockIoTAPI)(nil).CreateCustomMetric), arg0)
+}
+
+// CreateCustomMetricRequest mocks base method
+func (m *MockIoTAPI) CreateCustomMetricRequest(arg0 *iot.CreateCustomMetricInput) (*request.Request, *iot.CreateCustomMetricOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCustomMetricRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.CreateCustomMetricOutput)
+	return ret0, ret1
+}
+
+// CreateCustomMetricRequest indicates an expected call of CreateCustomMetricRequest
+func (mr *MockIoTAPIMockRecorder) CreateCustomMetricRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomMetricRequest", reflect.TypeOf((*MockIoTAPI)(nil).CreateCustomMetricRequest), arg0)
+}
+
+// CreateCustomMetricWithContext mocks base method
+func (m *MockIoTAPI) CreateCustomMetricWithContext(arg0 context.Context, arg1 *iot.CreateCustomMetricInput, arg2 ...request.Option) (*iot.CreateCustomMetricOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCustomMetricWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.CreateCustomMetricOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCustomMetricWithContext indicates an expected call of CreateCustomMetricWithContext
+func (mr *MockIoTAPIMockRecorder) CreateCustomMetricWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomMetricWithContext", reflect.TypeOf((*MockIoTAPI)(nil).CreateCustomMetricWithContext), varargs...)
 }
 
 // CreateDimension mocks base method
@@ -2333,6 +2433,56 @@ func (mr *MockIoTAPIMockRecorder) DeleteCertificateWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCertificateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteCertificateWithContext), varargs...)
+}
+
+// DeleteCustomMetric mocks base method
+func (m *MockIoTAPI) DeleteCustomMetric(arg0 *iot.DeleteCustomMetricInput) (*iot.DeleteCustomMetricOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCustomMetric", arg0)
+	ret0, _ := ret[0].(*iot.DeleteCustomMetricOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCustomMetric indicates an expected call of DeleteCustomMetric
+func (mr *MockIoTAPIMockRecorder) DeleteCustomMetric(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomMetric", reflect.TypeOf((*MockIoTAPI)(nil).DeleteCustomMetric), arg0)
+}
+
+// DeleteCustomMetricRequest mocks base method
+func (m *MockIoTAPI) DeleteCustomMetricRequest(arg0 *iot.DeleteCustomMetricInput) (*request.Request, *iot.DeleteCustomMetricOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCustomMetricRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DeleteCustomMetricOutput)
+	return ret0, ret1
+}
+
+// DeleteCustomMetricRequest indicates an expected call of DeleteCustomMetricRequest
+func (mr *MockIoTAPIMockRecorder) DeleteCustomMetricRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomMetricRequest", reflect.TypeOf((*MockIoTAPI)(nil).DeleteCustomMetricRequest), arg0)
+}
+
+// DeleteCustomMetricWithContext mocks base method
+func (m *MockIoTAPI) DeleteCustomMetricWithContext(arg0 context.Context, arg1 *iot.DeleteCustomMetricInput, arg2 ...request.Option) (*iot.DeleteCustomMetricOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCustomMetricWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DeleteCustomMetricOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCustomMetricWithContext indicates an expected call of DeleteCustomMetricWithContext
+func (mr *MockIoTAPIMockRecorder) DeleteCustomMetricWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomMetricWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DeleteCustomMetricWithContext), varargs...)
 }
 
 // DeleteDimension mocks base method
@@ -3935,6 +4085,56 @@ func (mr *MockIoTAPIMockRecorder) DescribeCertificateWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCertificateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeCertificateWithContext), varargs...)
 }
 
+// DescribeCustomMetric mocks base method
+func (m *MockIoTAPI) DescribeCustomMetric(arg0 *iot.DescribeCustomMetricInput) (*iot.DescribeCustomMetricOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCustomMetric", arg0)
+	ret0, _ := ret[0].(*iot.DescribeCustomMetricOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCustomMetric indicates an expected call of DescribeCustomMetric
+func (mr *MockIoTAPIMockRecorder) DescribeCustomMetric(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomMetric", reflect.TypeOf((*MockIoTAPI)(nil).DescribeCustomMetric), arg0)
+}
+
+// DescribeCustomMetricRequest mocks base method
+func (m *MockIoTAPI) DescribeCustomMetricRequest(arg0 *iot.DescribeCustomMetricInput) (*request.Request, *iot.DescribeCustomMetricOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCustomMetricRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DescribeCustomMetricOutput)
+	return ret0, ret1
+}
+
+// DescribeCustomMetricRequest indicates an expected call of DescribeCustomMetricRequest
+func (mr *MockIoTAPIMockRecorder) DescribeCustomMetricRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomMetricRequest", reflect.TypeOf((*MockIoTAPI)(nil).DescribeCustomMetricRequest), arg0)
+}
+
+// DescribeCustomMetricWithContext mocks base method
+func (m *MockIoTAPI) DescribeCustomMetricWithContext(arg0 context.Context, arg1 *iot.DescribeCustomMetricInput, arg2 ...request.Option) (*iot.DescribeCustomMetricOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCustomMetricWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DescribeCustomMetricOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCustomMetricWithContext indicates an expected call of DescribeCustomMetricWithContext
+func (mr *MockIoTAPIMockRecorder) DescribeCustomMetricWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomMetricWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeCustomMetricWithContext), varargs...)
+}
+
 // DescribeDefaultAuthorizer mocks base method
 func (m *MockIoTAPI) DescribeDefaultAuthorizer(arg0 *iot.DescribeDefaultAuthorizerInput) (*iot.DescribeDefaultAuthorizerOutput, error) {
 	m.ctrl.T.Helper()
@@ -3983,6 +4183,56 @@ func (mr *MockIoTAPIMockRecorder) DescribeDefaultAuthorizerWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDefaultAuthorizerWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeDefaultAuthorizerWithContext), varargs...)
+}
+
+// DescribeDetectMitigationActionsTask mocks base method
+func (m *MockIoTAPI) DescribeDetectMitigationActionsTask(arg0 *iot.DescribeDetectMitigationActionsTaskInput) (*iot.DescribeDetectMitigationActionsTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDetectMitigationActionsTask", arg0)
+	ret0, _ := ret[0].(*iot.DescribeDetectMitigationActionsTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDetectMitigationActionsTask indicates an expected call of DescribeDetectMitigationActionsTask
+func (mr *MockIoTAPIMockRecorder) DescribeDetectMitigationActionsTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDetectMitigationActionsTask", reflect.TypeOf((*MockIoTAPI)(nil).DescribeDetectMitigationActionsTask), arg0)
+}
+
+// DescribeDetectMitigationActionsTaskRequest mocks base method
+func (m *MockIoTAPI) DescribeDetectMitigationActionsTaskRequest(arg0 *iot.DescribeDetectMitigationActionsTaskInput) (*request.Request, *iot.DescribeDetectMitigationActionsTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDetectMitigationActionsTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.DescribeDetectMitigationActionsTaskOutput)
+	return ret0, ret1
+}
+
+// DescribeDetectMitigationActionsTaskRequest indicates an expected call of DescribeDetectMitigationActionsTaskRequest
+func (mr *MockIoTAPIMockRecorder) DescribeDetectMitigationActionsTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDetectMitigationActionsTaskRequest", reflect.TypeOf((*MockIoTAPI)(nil).DescribeDetectMitigationActionsTaskRequest), arg0)
+}
+
+// DescribeDetectMitigationActionsTaskWithContext mocks base method
+func (m *MockIoTAPI) DescribeDetectMitigationActionsTaskWithContext(arg0 context.Context, arg1 *iot.DescribeDetectMitigationActionsTaskInput, arg2 ...request.Option) (*iot.DescribeDetectMitigationActionsTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDetectMitigationActionsTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.DescribeDetectMitigationActionsTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDetectMitigationActionsTaskWithContext indicates an expected call of DescribeDetectMitigationActionsTaskWithContext
+func (mr *MockIoTAPIMockRecorder) DescribeDetectMitigationActionsTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDetectMitigationActionsTaskWithContext", reflect.TypeOf((*MockIoTAPI)(nil).DescribeDetectMitigationActionsTaskWithContext), varargs...)
 }
 
 // DescribeDimension mocks base method
@@ -5183,6 +5433,89 @@ func (mr *MockIoTAPIMockRecorder) EnableTopicRuleWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableTopicRuleWithContext", reflect.TypeOf((*MockIoTAPI)(nil).EnableTopicRuleWithContext), varargs...)
+}
+
+// GetBehaviorModelTrainingSummaries mocks base method
+func (m *MockIoTAPI) GetBehaviorModelTrainingSummaries(arg0 *iot.GetBehaviorModelTrainingSummariesInput) (*iot.GetBehaviorModelTrainingSummariesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBehaviorModelTrainingSummaries", arg0)
+	ret0, _ := ret[0].(*iot.GetBehaviorModelTrainingSummariesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBehaviorModelTrainingSummaries indicates an expected call of GetBehaviorModelTrainingSummaries
+func (mr *MockIoTAPIMockRecorder) GetBehaviorModelTrainingSummaries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBehaviorModelTrainingSummaries", reflect.TypeOf((*MockIoTAPI)(nil).GetBehaviorModelTrainingSummaries), arg0)
+}
+
+// GetBehaviorModelTrainingSummariesPages mocks base method
+func (m *MockIoTAPI) GetBehaviorModelTrainingSummariesPages(arg0 *iot.GetBehaviorModelTrainingSummariesInput, arg1 func(*iot.GetBehaviorModelTrainingSummariesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBehaviorModelTrainingSummariesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetBehaviorModelTrainingSummariesPages indicates an expected call of GetBehaviorModelTrainingSummariesPages
+func (mr *MockIoTAPIMockRecorder) GetBehaviorModelTrainingSummariesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBehaviorModelTrainingSummariesPages", reflect.TypeOf((*MockIoTAPI)(nil).GetBehaviorModelTrainingSummariesPages), arg0, arg1)
+}
+
+// GetBehaviorModelTrainingSummariesPagesWithContext mocks base method
+func (m *MockIoTAPI) GetBehaviorModelTrainingSummariesPagesWithContext(arg0 context.Context, arg1 *iot.GetBehaviorModelTrainingSummariesInput, arg2 func(*iot.GetBehaviorModelTrainingSummariesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetBehaviorModelTrainingSummariesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetBehaviorModelTrainingSummariesPagesWithContext indicates an expected call of GetBehaviorModelTrainingSummariesPagesWithContext
+func (mr *MockIoTAPIMockRecorder) GetBehaviorModelTrainingSummariesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBehaviorModelTrainingSummariesPagesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).GetBehaviorModelTrainingSummariesPagesWithContext), varargs...)
+}
+
+// GetBehaviorModelTrainingSummariesRequest mocks base method
+func (m *MockIoTAPI) GetBehaviorModelTrainingSummariesRequest(arg0 *iot.GetBehaviorModelTrainingSummariesInput) (*request.Request, *iot.GetBehaviorModelTrainingSummariesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBehaviorModelTrainingSummariesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.GetBehaviorModelTrainingSummariesOutput)
+	return ret0, ret1
+}
+
+// GetBehaviorModelTrainingSummariesRequest indicates an expected call of GetBehaviorModelTrainingSummariesRequest
+func (mr *MockIoTAPIMockRecorder) GetBehaviorModelTrainingSummariesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBehaviorModelTrainingSummariesRequest", reflect.TypeOf((*MockIoTAPI)(nil).GetBehaviorModelTrainingSummariesRequest), arg0)
+}
+
+// GetBehaviorModelTrainingSummariesWithContext mocks base method
+func (m *MockIoTAPI) GetBehaviorModelTrainingSummariesWithContext(arg0 context.Context, arg1 *iot.GetBehaviorModelTrainingSummariesInput, arg2 ...request.Option) (*iot.GetBehaviorModelTrainingSummariesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetBehaviorModelTrainingSummariesWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.GetBehaviorModelTrainingSummariesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBehaviorModelTrainingSummariesWithContext indicates an expected call of GetBehaviorModelTrainingSummariesWithContext
+func (mr *MockIoTAPIMockRecorder) GetBehaviorModelTrainingSummariesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBehaviorModelTrainingSummariesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).GetBehaviorModelTrainingSummariesWithContext), varargs...)
 }
 
 // GetCardinality mocks base method
@@ -6879,6 +7212,255 @@ func (mr *MockIoTAPIMockRecorder) ListCertificatesWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificatesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListCertificatesWithContext), varargs...)
+}
+
+// ListCustomMetrics mocks base method
+func (m *MockIoTAPI) ListCustomMetrics(arg0 *iot.ListCustomMetricsInput) (*iot.ListCustomMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomMetrics", arg0)
+	ret0, _ := ret[0].(*iot.ListCustomMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCustomMetrics indicates an expected call of ListCustomMetrics
+func (mr *MockIoTAPIMockRecorder) ListCustomMetrics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomMetrics", reflect.TypeOf((*MockIoTAPI)(nil).ListCustomMetrics), arg0)
+}
+
+// ListCustomMetricsPages mocks base method
+func (m *MockIoTAPI) ListCustomMetricsPages(arg0 *iot.ListCustomMetricsInput, arg1 func(*iot.ListCustomMetricsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomMetricsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCustomMetricsPages indicates an expected call of ListCustomMetricsPages
+func (mr *MockIoTAPIMockRecorder) ListCustomMetricsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomMetricsPages", reflect.TypeOf((*MockIoTAPI)(nil).ListCustomMetricsPages), arg0, arg1)
+}
+
+// ListCustomMetricsPagesWithContext mocks base method
+func (m *MockIoTAPI) ListCustomMetricsPagesWithContext(arg0 context.Context, arg1 *iot.ListCustomMetricsInput, arg2 func(*iot.ListCustomMetricsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCustomMetricsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCustomMetricsPagesWithContext indicates an expected call of ListCustomMetricsPagesWithContext
+func (mr *MockIoTAPIMockRecorder) ListCustomMetricsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomMetricsPagesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListCustomMetricsPagesWithContext), varargs...)
+}
+
+// ListCustomMetricsRequest mocks base method
+func (m *MockIoTAPI) ListCustomMetricsRequest(arg0 *iot.ListCustomMetricsInput) (*request.Request, *iot.ListCustomMetricsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomMetricsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListCustomMetricsOutput)
+	return ret0, ret1
+}
+
+// ListCustomMetricsRequest indicates an expected call of ListCustomMetricsRequest
+func (mr *MockIoTAPIMockRecorder) ListCustomMetricsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomMetricsRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListCustomMetricsRequest), arg0)
+}
+
+// ListCustomMetricsWithContext mocks base method
+func (m *MockIoTAPI) ListCustomMetricsWithContext(arg0 context.Context, arg1 *iot.ListCustomMetricsInput, arg2 ...request.Option) (*iot.ListCustomMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCustomMetricsWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListCustomMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCustomMetricsWithContext indicates an expected call of ListCustomMetricsWithContext
+func (mr *MockIoTAPIMockRecorder) ListCustomMetricsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomMetricsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListCustomMetricsWithContext), varargs...)
+}
+
+// ListDetectMitigationActionsExecutions mocks base method
+func (m *MockIoTAPI) ListDetectMitigationActionsExecutions(arg0 *iot.ListDetectMitigationActionsExecutionsInput) (*iot.ListDetectMitigationActionsExecutionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDetectMitigationActionsExecutions", arg0)
+	ret0, _ := ret[0].(*iot.ListDetectMitigationActionsExecutionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDetectMitigationActionsExecutions indicates an expected call of ListDetectMitigationActionsExecutions
+func (mr *MockIoTAPIMockRecorder) ListDetectMitigationActionsExecutions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectMitigationActionsExecutions", reflect.TypeOf((*MockIoTAPI)(nil).ListDetectMitigationActionsExecutions), arg0)
+}
+
+// ListDetectMitigationActionsExecutionsPages mocks base method
+func (m *MockIoTAPI) ListDetectMitigationActionsExecutionsPages(arg0 *iot.ListDetectMitigationActionsExecutionsInput, arg1 func(*iot.ListDetectMitigationActionsExecutionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDetectMitigationActionsExecutionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDetectMitigationActionsExecutionsPages indicates an expected call of ListDetectMitigationActionsExecutionsPages
+func (mr *MockIoTAPIMockRecorder) ListDetectMitigationActionsExecutionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectMitigationActionsExecutionsPages", reflect.TypeOf((*MockIoTAPI)(nil).ListDetectMitigationActionsExecutionsPages), arg0, arg1)
+}
+
+// ListDetectMitigationActionsExecutionsPagesWithContext mocks base method
+func (m *MockIoTAPI) ListDetectMitigationActionsExecutionsPagesWithContext(arg0 context.Context, arg1 *iot.ListDetectMitigationActionsExecutionsInput, arg2 func(*iot.ListDetectMitigationActionsExecutionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDetectMitigationActionsExecutionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDetectMitigationActionsExecutionsPagesWithContext indicates an expected call of ListDetectMitigationActionsExecutionsPagesWithContext
+func (mr *MockIoTAPIMockRecorder) ListDetectMitigationActionsExecutionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectMitigationActionsExecutionsPagesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListDetectMitigationActionsExecutionsPagesWithContext), varargs...)
+}
+
+// ListDetectMitigationActionsExecutionsRequest mocks base method
+func (m *MockIoTAPI) ListDetectMitigationActionsExecutionsRequest(arg0 *iot.ListDetectMitigationActionsExecutionsInput) (*request.Request, *iot.ListDetectMitigationActionsExecutionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDetectMitigationActionsExecutionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListDetectMitigationActionsExecutionsOutput)
+	return ret0, ret1
+}
+
+// ListDetectMitigationActionsExecutionsRequest indicates an expected call of ListDetectMitigationActionsExecutionsRequest
+func (mr *MockIoTAPIMockRecorder) ListDetectMitigationActionsExecutionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectMitigationActionsExecutionsRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListDetectMitigationActionsExecutionsRequest), arg0)
+}
+
+// ListDetectMitigationActionsExecutionsWithContext mocks base method
+func (m *MockIoTAPI) ListDetectMitigationActionsExecutionsWithContext(arg0 context.Context, arg1 *iot.ListDetectMitigationActionsExecutionsInput, arg2 ...request.Option) (*iot.ListDetectMitigationActionsExecutionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDetectMitigationActionsExecutionsWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListDetectMitigationActionsExecutionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDetectMitigationActionsExecutionsWithContext indicates an expected call of ListDetectMitigationActionsExecutionsWithContext
+func (mr *MockIoTAPIMockRecorder) ListDetectMitigationActionsExecutionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectMitigationActionsExecutionsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListDetectMitigationActionsExecutionsWithContext), varargs...)
+}
+
+// ListDetectMitigationActionsTasks mocks base method
+func (m *MockIoTAPI) ListDetectMitigationActionsTasks(arg0 *iot.ListDetectMitigationActionsTasksInput) (*iot.ListDetectMitigationActionsTasksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDetectMitigationActionsTasks", arg0)
+	ret0, _ := ret[0].(*iot.ListDetectMitigationActionsTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDetectMitigationActionsTasks indicates an expected call of ListDetectMitigationActionsTasks
+func (mr *MockIoTAPIMockRecorder) ListDetectMitigationActionsTasks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectMitigationActionsTasks", reflect.TypeOf((*MockIoTAPI)(nil).ListDetectMitigationActionsTasks), arg0)
+}
+
+// ListDetectMitigationActionsTasksPages mocks base method
+func (m *MockIoTAPI) ListDetectMitigationActionsTasksPages(arg0 *iot.ListDetectMitigationActionsTasksInput, arg1 func(*iot.ListDetectMitigationActionsTasksOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDetectMitigationActionsTasksPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDetectMitigationActionsTasksPages indicates an expected call of ListDetectMitigationActionsTasksPages
+func (mr *MockIoTAPIMockRecorder) ListDetectMitigationActionsTasksPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectMitigationActionsTasksPages", reflect.TypeOf((*MockIoTAPI)(nil).ListDetectMitigationActionsTasksPages), arg0, arg1)
+}
+
+// ListDetectMitigationActionsTasksPagesWithContext mocks base method
+func (m *MockIoTAPI) ListDetectMitigationActionsTasksPagesWithContext(arg0 context.Context, arg1 *iot.ListDetectMitigationActionsTasksInput, arg2 func(*iot.ListDetectMitigationActionsTasksOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDetectMitigationActionsTasksPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDetectMitigationActionsTasksPagesWithContext indicates an expected call of ListDetectMitigationActionsTasksPagesWithContext
+func (mr *MockIoTAPIMockRecorder) ListDetectMitigationActionsTasksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectMitigationActionsTasksPagesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListDetectMitigationActionsTasksPagesWithContext), varargs...)
+}
+
+// ListDetectMitigationActionsTasksRequest mocks base method
+func (m *MockIoTAPI) ListDetectMitigationActionsTasksRequest(arg0 *iot.ListDetectMitigationActionsTasksInput) (*request.Request, *iot.ListDetectMitigationActionsTasksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDetectMitigationActionsTasksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListDetectMitigationActionsTasksOutput)
+	return ret0, ret1
+}
+
+// ListDetectMitigationActionsTasksRequest indicates an expected call of ListDetectMitigationActionsTasksRequest
+func (mr *MockIoTAPIMockRecorder) ListDetectMitigationActionsTasksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectMitigationActionsTasksRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListDetectMitigationActionsTasksRequest), arg0)
+}
+
+// ListDetectMitigationActionsTasksWithContext mocks base method
+func (m *MockIoTAPI) ListDetectMitigationActionsTasksWithContext(arg0 context.Context, arg1 *iot.ListDetectMitigationActionsTasksInput, arg2 ...request.Option) (*iot.ListDetectMitigationActionsTasksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDetectMitigationActionsTasksWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListDetectMitigationActionsTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDetectMitigationActionsTasksWithContext indicates an expected call of ListDetectMitigationActionsTasksWithContext
+func (mr *MockIoTAPIMockRecorder) ListDetectMitigationActionsTasksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDetectMitigationActionsTasksWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListDetectMitigationActionsTasksWithContext), varargs...)
 }
 
 // ListDimensions mocks base method
@@ -10669,6 +11251,56 @@ func (mr *MockIoTAPIMockRecorder) StartAuditMitigationActionsTaskWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAuditMitigationActionsTaskWithContext", reflect.TypeOf((*MockIoTAPI)(nil).StartAuditMitigationActionsTaskWithContext), varargs...)
 }
 
+// StartDetectMitigationActionsTask mocks base method
+func (m *MockIoTAPI) StartDetectMitigationActionsTask(arg0 *iot.StartDetectMitigationActionsTaskInput) (*iot.StartDetectMitigationActionsTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDetectMitigationActionsTask", arg0)
+	ret0, _ := ret[0].(*iot.StartDetectMitigationActionsTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDetectMitigationActionsTask indicates an expected call of StartDetectMitigationActionsTask
+func (mr *MockIoTAPIMockRecorder) StartDetectMitigationActionsTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDetectMitigationActionsTask", reflect.TypeOf((*MockIoTAPI)(nil).StartDetectMitigationActionsTask), arg0)
+}
+
+// StartDetectMitigationActionsTaskRequest mocks base method
+func (m *MockIoTAPI) StartDetectMitigationActionsTaskRequest(arg0 *iot.StartDetectMitigationActionsTaskInput) (*request.Request, *iot.StartDetectMitigationActionsTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDetectMitigationActionsTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.StartDetectMitigationActionsTaskOutput)
+	return ret0, ret1
+}
+
+// StartDetectMitigationActionsTaskRequest indicates an expected call of StartDetectMitigationActionsTaskRequest
+func (mr *MockIoTAPIMockRecorder) StartDetectMitigationActionsTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDetectMitigationActionsTaskRequest", reflect.TypeOf((*MockIoTAPI)(nil).StartDetectMitigationActionsTaskRequest), arg0)
+}
+
+// StartDetectMitigationActionsTaskWithContext mocks base method
+func (m *MockIoTAPI) StartDetectMitigationActionsTaskWithContext(arg0 context.Context, arg1 *iot.StartDetectMitigationActionsTaskInput, arg2 ...request.Option) (*iot.StartDetectMitigationActionsTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartDetectMitigationActionsTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.StartDetectMitigationActionsTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDetectMitigationActionsTaskWithContext indicates an expected call of StartDetectMitigationActionsTaskWithContext
+func (mr *MockIoTAPIMockRecorder) StartDetectMitigationActionsTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDetectMitigationActionsTaskWithContext", reflect.TypeOf((*MockIoTAPI)(nil).StartDetectMitigationActionsTaskWithContext), varargs...)
+}
+
 // StartOnDemandAuditTask mocks base method
 func (m *MockIoTAPI) StartOnDemandAuditTask(arg0 *iot.StartOnDemandAuditTaskInput) (*iot.StartOnDemandAuditTaskOutput, error) {
 	m.ctrl.T.Helper()
@@ -11367,6 +11999,56 @@ func (mr *MockIoTAPIMockRecorder) UpdateCertificateWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCertificateWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateCertificateWithContext), varargs...)
+}
+
+// UpdateCustomMetric mocks base method
+func (m *MockIoTAPI) UpdateCustomMetric(arg0 *iot.UpdateCustomMetricInput) (*iot.UpdateCustomMetricOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCustomMetric", arg0)
+	ret0, _ := ret[0].(*iot.UpdateCustomMetricOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCustomMetric indicates an expected call of UpdateCustomMetric
+func (mr *MockIoTAPIMockRecorder) UpdateCustomMetric(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCustomMetric", reflect.TypeOf((*MockIoTAPI)(nil).UpdateCustomMetric), arg0)
+}
+
+// UpdateCustomMetricRequest mocks base method
+func (m *MockIoTAPI) UpdateCustomMetricRequest(arg0 *iot.UpdateCustomMetricInput) (*request.Request, *iot.UpdateCustomMetricOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCustomMetricRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.UpdateCustomMetricOutput)
+	return ret0, ret1
+}
+
+// UpdateCustomMetricRequest indicates an expected call of UpdateCustomMetricRequest
+func (mr *MockIoTAPIMockRecorder) UpdateCustomMetricRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCustomMetricRequest", reflect.TypeOf((*MockIoTAPI)(nil).UpdateCustomMetricRequest), arg0)
+}
+
+// UpdateCustomMetricWithContext mocks base method
+func (m *MockIoTAPI) UpdateCustomMetricWithContext(arg0 context.Context, arg1 *iot.UpdateCustomMetricInput, arg2 ...request.Option) (*iot.UpdateCustomMetricOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateCustomMetricWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.UpdateCustomMetricOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCustomMetricWithContext indicates an expected call of UpdateCustomMetricWithContext
+func (mr *MockIoTAPIMockRecorder) UpdateCustomMetricWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCustomMetricWithContext", reflect.TypeOf((*MockIoTAPI)(nil).UpdateCustomMetricWithContext), varargs...)
 }
 
 // UpdateDimension mocks base method

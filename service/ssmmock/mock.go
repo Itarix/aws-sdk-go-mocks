@@ -5772,6 +5772,56 @@ func (mr *MockSSMAPIMockRecorder) ListComplianceSummariesWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListComplianceSummariesWithContext", reflect.TypeOf((*MockSSMAPI)(nil).ListComplianceSummariesWithContext), varargs...)
 }
 
+// ListDocumentMetadataHistory mocks base method
+func (m *MockSSMAPI) ListDocumentMetadataHistory(arg0 *ssm.ListDocumentMetadataHistoryInput) (*ssm.ListDocumentMetadataHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDocumentMetadataHistory", arg0)
+	ret0, _ := ret[0].(*ssm.ListDocumentMetadataHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDocumentMetadataHistory indicates an expected call of ListDocumentMetadataHistory
+func (mr *MockSSMAPIMockRecorder) ListDocumentMetadataHistory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentMetadataHistory", reflect.TypeOf((*MockSSMAPI)(nil).ListDocumentMetadataHistory), arg0)
+}
+
+// ListDocumentMetadataHistoryRequest mocks base method
+func (m *MockSSMAPI) ListDocumentMetadataHistoryRequest(arg0 *ssm.ListDocumentMetadataHistoryInput) (*request.Request, *ssm.ListDocumentMetadataHistoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDocumentMetadataHistoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssm.ListDocumentMetadataHistoryOutput)
+	return ret0, ret1
+}
+
+// ListDocumentMetadataHistoryRequest indicates an expected call of ListDocumentMetadataHistoryRequest
+func (mr *MockSSMAPIMockRecorder) ListDocumentMetadataHistoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentMetadataHistoryRequest", reflect.TypeOf((*MockSSMAPI)(nil).ListDocumentMetadataHistoryRequest), arg0)
+}
+
+// ListDocumentMetadataHistoryWithContext mocks base method
+func (m *MockSSMAPI) ListDocumentMetadataHistoryWithContext(arg0 context.Context, arg1 *ssm.ListDocumentMetadataHistoryInput, arg2 ...request.Option) (*ssm.ListDocumentMetadataHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDocumentMetadataHistoryWithContext", varargs...)
+	ret0, _ := ret[0].(*ssm.ListDocumentMetadataHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDocumentMetadataHistoryWithContext indicates an expected call of ListDocumentMetadataHistoryWithContext
+func (mr *MockSSMAPIMockRecorder) ListDocumentMetadataHistoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentMetadataHistoryWithContext", reflect.TypeOf((*MockSSMAPI)(nil).ListDocumentMetadataHistoryWithContext), varargs...)
+}
+
 // ListDocumentVersions mocks base method
 func (m *MockSSMAPI) ListDocumentVersions(arg0 *ssm.ListDocumentVersionsInput) (*ssm.ListDocumentVersionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -5988,6 +6038,89 @@ func (mr *MockSSMAPIMockRecorder) ListInventoryEntriesWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInventoryEntriesWithContext", reflect.TypeOf((*MockSSMAPI)(nil).ListInventoryEntriesWithContext), varargs...)
 }
 
+// ListOpsItemEvents mocks base method
+func (m *MockSSMAPI) ListOpsItemEvents(arg0 *ssm.ListOpsItemEventsInput) (*ssm.ListOpsItemEventsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOpsItemEvents", arg0)
+	ret0, _ := ret[0].(*ssm.ListOpsItemEventsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOpsItemEvents indicates an expected call of ListOpsItemEvents
+func (mr *MockSSMAPIMockRecorder) ListOpsItemEvents(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOpsItemEvents", reflect.TypeOf((*MockSSMAPI)(nil).ListOpsItemEvents), arg0)
+}
+
+// ListOpsItemEventsPages mocks base method
+func (m *MockSSMAPI) ListOpsItemEventsPages(arg0 *ssm.ListOpsItemEventsInput, arg1 func(*ssm.ListOpsItemEventsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOpsItemEventsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOpsItemEventsPages indicates an expected call of ListOpsItemEventsPages
+func (mr *MockSSMAPIMockRecorder) ListOpsItemEventsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOpsItemEventsPages", reflect.TypeOf((*MockSSMAPI)(nil).ListOpsItemEventsPages), arg0, arg1)
+}
+
+// ListOpsItemEventsPagesWithContext mocks base method
+func (m *MockSSMAPI) ListOpsItemEventsPagesWithContext(arg0 context.Context, arg1 *ssm.ListOpsItemEventsInput, arg2 func(*ssm.ListOpsItemEventsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOpsItemEventsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOpsItemEventsPagesWithContext indicates an expected call of ListOpsItemEventsPagesWithContext
+func (mr *MockSSMAPIMockRecorder) ListOpsItemEventsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOpsItemEventsPagesWithContext", reflect.TypeOf((*MockSSMAPI)(nil).ListOpsItemEventsPagesWithContext), varargs...)
+}
+
+// ListOpsItemEventsRequest mocks base method
+func (m *MockSSMAPI) ListOpsItemEventsRequest(arg0 *ssm.ListOpsItemEventsInput) (*request.Request, *ssm.ListOpsItemEventsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOpsItemEventsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssm.ListOpsItemEventsOutput)
+	return ret0, ret1
+}
+
+// ListOpsItemEventsRequest indicates an expected call of ListOpsItemEventsRequest
+func (mr *MockSSMAPIMockRecorder) ListOpsItemEventsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOpsItemEventsRequest", reflect.TypeOf((*MockSSMAPI)(nil).ListOpsItemEventsRequest), arg0)
+}
+
+// ListOpsItemEventsWithContext mocks base method
+func (m *MockSSMAPI) ListOpsItemEventsWithContext(arg0 context.Context, arg1 *ssm.ListOpsItemEventsInput, arg2 ...request.Option) (*ssm.ListOpsItemEventsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOpsItemEventsWithContext", varargs...)
+	ret0, _ := ret[0].(*ssm.ListOpsItemEventsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOpsItemEventsWithContext indicates an expected call of ListOpsItemEventsWithContext
+func (mr *MockSSMAPIMockRecorder) ListOpsItemEventsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOpsItemEventsWithContext", reflect.TypeOf((*MockSSMAPI)(nil).ListOpsItemEventsWithContext), varargs...)
+}
+
 // ListOpsMetadata mocks base method
 func (m *MockSSMAPI) ListOpsMetadata(arg0 *ssm.ListOpsMetadataInput) (*ssm.ListOpsMetadataOutput, error) {
 	m.ctrl.T.Helper()
@@ -6001,6 +6134,39 @@ func (m *MockSSMAPI) ListOpsMetadata(arg0 *ssm.ListOpsMetadataInput) (*ssm.ListO
 func (mr *MockSSMAPIMockRecorder) ListOpsMetadata(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOpsMetadata", reflect.TypeOf((*MockSSMAPI)(nil).ListOpsMetadata), arg0)
+}
+
+// ListOpsMetadataPages mocks base method
+func (m *MockSSMAPI) ListOpsMetadataPages(arg0 *ssm.ListOpsMetadataInput, arg1 func(*ssm.ListOpsMetadataOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOpsMetadataPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOpsMetadataPages indicates an expected call of ListOpsMetadataPages
+func (mr *MockSSMAPIMockRecorder) ListOpsMetadataPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOpsMetadataPages", reflect.TypeOf((*MockSSMAPI)(nil).ListOpsMetadataPages), arg0, arg1)
+}
+
+// ListOpsMetadataPagesWithContext mocks base method
+func (m *MockSSMAPI) ListOpsMetadataPagesWithContext(arg0 context.Context, arg1 *ssm.ListOpsMetadataInput, arg2 func(*ssm.ListOpsMetadataOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOpsMetadataPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOpsMetadataPagesWithContext indicates an expected call of ListOpsMetadataPagesWithContext
+func (mr *MockSSMAPIMockRecorder) ListOpsMetadataPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOpsMetadataPagesWithContext", reflect.TypeOf((*MockSSMAPI)(nil).ListOpsMetadataPagesWithContext), varargs...)
 }
 
 // ListOpsMetadataRequest mocks base method
@@ -7004,6 +7170,56 @@ func (mr *MockSSMAPIMockRecorder) StartAutomationExecutionWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAutomationExecutionWithContext", reflect.TypeOf((*MockSSMAPI)(nil).StartAutomationExecutionWithContext), varargs...)
 }
 
+// StartChangeRequestExecution mocks base method
+func (m *MockSSMAPI) StartChangeRequestExecution(arg0 *ssm.StartChangeRequestExecutionInput) (*ssm.StartChangeRequestExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartChangeRequestExecution", arg0)
+	ret0, _ := ret[0].(*ssm.StartChangeRequestExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartChangeRequestExecution indicates an expected call of StartChangeRequestExecution
+func (mr *MockSSMAPIMockRecorder) StartChangeRequestExecution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartChangeRequestExecution", reflect.TypeOf((*MockSSMAPI)(nil).StartChangeRequestExecution), arg0)
+}
+
+// StartChangeRequestExecutionRequest mocks base method
+func (m *MockSSMAPI) StartChangeRequestExecutionRequest(arg0 *ssm.StartChangeRequestExecutionInput) (*request.Request, *ssm.StartChangeRequestExecutionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartChangeRequestExecutionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssm.StartChangeRequestExecutionOutput)
+	return ret0, ret1
+}
+
+// StartChangeRequestExecutionRequest indicates an expected call of StartChangeRequestExecutionRequest
+func (mr *MockSSMAPIMockRecorder) StartChangeRequestExecutionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartChangeRequestExecutionRequest", reflect.TypeOf((*MockSSMAPI)(nil).StartChangeRequestExecutionRequest), arg0)
+}
+
+// StartChangeRequestExecutionWithContext mocks base method
+func (m *MockSSMAPI) StartChangeRequestExecutionWithContext(arg0 context.Context, arg1 *ssm.StartChangeRequestExecutionInput, arg2 ...request.Option) (*ssm.StartChangeRequestExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartChangeRequestExecutionWithContext", varargs...)
+	ret0, _ := ret[0].(*ssm.StartChangeRequestExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartChangeRequestExecutionWithContext indicates an expected call of StartChangeRequestExecutionWithContext
+func (mr *MockSSMAPIMockRecorder) StartChangeRequestExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartChangeRequestExecutionWithContext", reflect.TypeOf((*MockSSMAPI)(nil).StartChangeRequestExecutionWithContext), varargs...)
+}
+
 // StartSession mocks base method
 func (m *MockSSMAPI) StartSession(arg0 *ssm.StartSessionInput) (*ssm.StartSessionOutput, error) {
 	m.ctrl.T.Helper()
@@ -7317,6 +7533,56 @@ func (mr *MockSSMAPIMockRecorder) UpdateDocumentDefaultVersionWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentDefaultVersionWithContext", reflect.TypeOf((*MockSSMAPI)(nil).UpdateDocumentDefaultVersionWithContext), varargs...)
+}
+
+// UpdateDocumentMetadata mocks base method
+func (m *MockSSMAPI) UpdateDocumentMetadata(arg0 *ssm.UpdateDocumentMetadataInput) (*ssm.UpdateDocumentMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDocumentMetadata", arg0)
+	ret0, _ := ret[0].(*ssm.UpdateDocumentMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDocumentMetadata indicates an expected call of UpdateDocumentMetadata
+func (mr *MockSSMAPIMockRecorder) UpdateDocumentMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentMetadata", reflect.TypeOf((*MockSSMAPI)(nil).UpdateDocumentMetadata), arg0)
+}
+
+// UpdateDocumentMetadataRequest mocks base method
+func (m *MockSSMAPI) UpdateDocumentMetadataRequest(arg0 *ssm.UpdateDocumentMetadataInput) (*request.Request, *ssm.UpdateDocumentMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDocumentMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssm.UpdateDocumentMetadataOutput)
+	return ret0, ret1
+}
+
+// UpdateDocumentMetadataRequest indicates an expected call of UpdateDocumentMetadataRequest
+func (mr *MockSSMAPIMockRecorder) UpdateDocumentMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentMetadataRequest", reflect.TypeOf((*MockSSMAPI)(nil).UpdateDocumentMetadataRequest), arg0)
+}
+
+// UpdateDocumentMetadataWithContext mocks base method
+func (m *MockSSMAPI) UpdateDocumentMetadataWithContext(arg0 context.Context, arg1 *ssm.UpdateDocumentMetadataInput, arg2 ...request.Option) (*ssm.UpdateDocumentMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDocumentMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*ssm.UpdateDocumentMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDocumentMetadataWithContext indicates an expected call of UpdateDocumentMetadataWithContext
+func (mr *MockSSMAPIMockRecorder) UpdateDocumentMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDocumentMetadataWithContext", reflect.TypeOf((*MockSSMAPI)(nil).UpdateDocumentMetadataWithContext), varargs...)
 }
 
 // UpdateDocumentRequest mocks base method
