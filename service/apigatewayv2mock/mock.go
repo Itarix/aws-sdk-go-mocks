@@ -2885,6 +2885,56 @@ func (mr *MockApiGatewayV2APIMockRecorder) ReimportApiWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReimportApiWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).ReimportApiWithContext), varargs...)
 }
 
+// ResetAuthorizersCache mocks base method
+func (m *MockApiGatewayV2API) ResetAuthorizersCache(arg0 *apigatewayv2.ResetAuthorizersCacheInput) (*apigatewayv2.ResetAuthorizersCacheOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResetAuthorizersCache", arg0)
+	ret0, _ := ret[0].(*apigatewayv2.ResetAuthorizersCacheOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResetAuthorizersCache indicates an expected call of ResetAuthorizersCache
+func (mr *MockApiGatewayV2APIMockRecorder) ResetAuthorizersCache(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetAuthorizersCache", reflect.TypeOf((*MockApiGatewayV2API)(nil).ResetAuthorizersCache), arg0)
+}
+
+// ResetAuthorizersCacheRequest mocks base method
+func (m *MockApiGatewayV2API) ResetAuthorizersCacheRequest(arg0 *apigatewayv2.ResetAuthorizersCacheInput) (*request.Request, *apigatewayv2.ResetAuthorizersCacheOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResetAuthorizersCacheRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apigatewayv2.ResetAuthorizersCacheOutput)
+	return ret0, ret1
+}
+
+// ResetAuthorizersCacheRequest indicates an expected call of ResetAuthorizersCacheRequest
+func (mr *MockApiGatewayV2APIMockRecorder) ResetAuthorizersCacheRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetAuthorizersCacheRequest", reflect.TypeOf((*MockApiGatewayV2API)(nil).ResetAuthorizersCacheRequest), arg0)
+}
+
+// ResetAuthorizersCacheWithContext mocks base method
+func (m *MockApiGatewayV2API) ResetAuthorizersCacheWithContext(arg0 context.Context, arg1 *apigatewayv2.ResetAuthorizersCacheInput, arg2 ...request.Option) (*apigatewayv2.ResetAuthorizersCacheOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ResetAuthorizersCacheWithContext", varargs...)
+	ret0, _ := ret[0].(*apigatewayv2.ResetAuthorizersCacheOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResetAuthorizersCacheWithContext indicates an expected call of ResetAuthorizersCacheWithContext
+func (mr *MockApiGatewayV2APIMockRecorder) ResetAuthorizersCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetAuthorizersCacheWithContext", reflect.TypeOf((*MockApiGatewayV2API)(nil).ResetAuthorizersCacheWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockApiGatewayV2API) TagResource(arg0 *apigatewayv2.TagResourceInput) (*apigatewayv2.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
