@@ -135,6 +135,56 @@ func (mr *MockWorkMailAPIMockRecorder) AssociateMemberToGroupWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateMemberToGroupWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).AssociateMemberToGroupWithContext), varargs...)
 }
 
+// CancelMailboxExportJob mocks base method
+func (m *MockWorkMailAPI) CancelMailboxExportJob(arg0 *workmail.CancelMailboxExportJobInput) (*workmail.CancelMailboxExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelMailboxExportJob", arg0)
+	ret0, _ := ret[0].(*workmail.CancelMailboxExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelMailboxExportJob indicates an expected call of CancelMailboxExportJob
+func (mr *MockWorkMailAPIMockRecorder) CancelMailboxExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelMailboxExportJob", reflect.TypeOf((*MockWorkMailAPI)(nil).CancelMailboxExportJob), arg0)
+}
+
+// CancelMailboxExportJobRequest mocks base method
+func (m *MockWorkMailAPI) CancelMailboxExportJobRequest(arg0 *workmail.CancelMailboxExportJobInput) (*request.Request, *workmail.CancelMailboxExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelMailboxExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.CancelMailboxExportJobOutput)
+	return ret0, ret1
+}
+
+// CancelMailboxExportJobRequest indicates an expected call of CancelMailboxExportJobRequest
+func (mr *MockWorkMailAPIMockRecorder) CancelMailboxExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelMailboxExportJobRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).CancelMailboxExportJobRequest), arg0)
+}
+
+// CancelMailboxExportJobWithContext mocks base method
+func (m *MockWorkMailAPI) CancelMailboxExportJobWithContext(arg0 context.Context, arg1 *workmail.CancelMailboxExportJobInput, arg2 ...request.Option) (*workmail.CancelMailboxExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelMailboxExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.CancelMailboxExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelMailboxExportJobWithContext indicates an expected call of CancelMailboxExportJobWithContext
+func (mr *MockWorkMailAPIMockRecorder) CancelMailboxExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelMailboxExportJobWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).CancelMailboxExportJobWithContext), varargs...)
+}
+
 // CreateAlias mocks base method
 func (m *MockWorkMailAPI) CreateAlias(arg0 *workmail.CreateAliasInput) (*workmail.CreateAliasOutput, error) {
 	m.ctrl.T.Helper()
@@ -783,6 +833,56 @@ func (mr *MockWorkMailAPIMockRecorder) DescribeGroupWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGroupWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeGroupWithContext), varargs...)
+}
+
+// DescribeMailboxExportJob mocks base method
+func (m *MockWorkMailAPI) DescribeMailboxExportJob(arg0 *workmail.DescribeMailboxExportJobInput) (*workmail.DescribeMailboxExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMailboxExportJob", arg0)
+	ret0, _ := ret[0].(*workmail.DescribeMailboxExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMailboxExportJob indicates an expected call of DescribeMailboxExportJob
+func (mr *MockWorkMailAPIMockRecorder) DescribeMailboxExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMailboxExportJob", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeMailboxExportJob), arg0)
+}
+
+// DescribeMailboxExportJobRequest mocks base method
+func (m *MockWorkMailAPI) DescribeMailboxExportJobRequest(arg0 *workmail.DescribeMailboxExportJobInput) (*request.Request, *workmail.DescribeMailboxExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMailboxExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.DescribeMailboxExportJobOutput)
+	return ret0, ret1
+}
+
+// DescribeMailboxExportJobRequest indicates an expected call of DescribeMailboxExportJobRequest
+func (mr *MockWorkMailAPIMockRecorder) DescribeMailboxExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMailboxExportJobRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeMailboxExportJobRequest), arg0)
+}
+
+// DescribeMailboxExportJobWithContext mocks base method
+func (m *MockWorkMailAPI) DescribeMailboxExportJobWithContext(arg0 context.Context, arg1 *workmail.DescribeMailboxExportJobInput, arg2 ...request.Option) (*workmail.DescribeMailboxExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMailboxExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.DescribeMailboxExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMailboxExportJobWithContext indicates an expected call of DescribeMailboxExportJobWithContext
+func (mr *MockWorkMailAPIMockRecorder) DescribeMailboxExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMailboxExportJobWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeMailboxExportJobWithContext), varargs...)
 }
 
 // DescribeOrganization mocks base method
@@ -1482,6 +1582,89 @@ func (mr *MockWorkMailAPIMockRecorder) ListGroupsWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListGroupsWithContext), varargs...)
+}
+
+// ListMailboxExportJobs mocks base method
+func (m *MockWorkMailAPI) ListMailboxExportJobs(arg0 *workmail.ListMailboxExportJobsInput) (*workmail.ListMailboxExportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMailboxExportJobs", arg0)
+	ret0, _ := ret[0].(*workmail.ListMailboxExportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMailboxExportJobs indicates an expected call of ListMailboxExportJobs
+func (mr *MockWorkMailAPIMockRecorder) ListMailboxExportJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMailboxExportJobs", reflect.TypeOf((*MockWorkMailAPI)(nil).ListMailboxExportJobs), arg0)
+}
+
+// ListMailboxExportJobsPages mocks base method
+func (m *MockWorkMailAPI) ListMailboxExportJobsPages(arg0 *workmail.ListMailboxExportJobsInput, arg1 func(*workmail.ListMailboxExportJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMailboxExportJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMailboxExportJobsPages indicates an expected call of ListMailboxExportJobsPages
+func (mr *MockWorkMailAPIMockRecorder) ListMailboxExportJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMailboxExportJobsPages", reflect.TypeOf((*MockWorkMailAPI)(nil).ListMailboxExportJobsPages), arg0, arg1)
+}
+
+// ListMailboxExportJobsPagesWithContext mocks base method
+func (m *MockWorkMailAPI) ListMailboxExportJobsPagesWithContext(arg0 context.Context, arg1 *workmail.ListMailboxExportJobsInput, arg2 func(*workmail.ListMailboxExportJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMailboxExportJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMailboxExportJobsPagesWithContext indicates an expected call of ListMailboxExportJobsPagesWithContext
+func (mr *MockWorkMailAPIMockRecorder) ListMailboxExportJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMailboxExportJobsPagesWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListMailboxExportJobsPagesWithContext), varargs...)
+}
+
+// ListMailboxExportJobsRequest mocks base method
+func (m *MockWorkMailAPI) ListMailboxExportJobsRequest(arg0 *workmail.ListMailboxExportJobsInput) (*request.Request, *workmail.ListMailboxExportJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMailboxExportJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.ListMailboxExportJobsOutput)
+	return ret0, ret1
+}
+
+// ListMailboxExportJobsRequest indicates an expected call of ListMailboxExportJobsRequest
+func (mr *MockWorkMailAPIMockRecorder) ListMailboxExportJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMailboxExportJobsRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).ListMailboxExportJobsRequest), arg0)
+}
+
+// ListMailboxExportJobsWithContext mocks base method
+func (m *MockWorkMailAPI) ListMailboxExportJobsWithContext(arg0 context.Context, arg1 *workmail.ListMailboxExportJobsInput, arg2 ...request.Option) (*workmail.ListMailboxExportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMailboxExportJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.ListMailboxExportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMailboxExportJobsWithContext indicates an expected call of ListMailboxExportJobsWithContext
+func (mr *MockWorkMailAPIMockRecorder) ListMailboxExportJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMailboxExportJobsWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListMailboxExportJobsWithContext), varargs...)
 }
 
 // ListMailboxPermissions mocks base method
@@ -2197,6 +2380,56 @@ func (mr *MockWorkMailAPIMockRecorder) ResetPasswordWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetPasswordWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ResetPasswordWithContext), varargs...)
+}
+
+// StartMailboxExportJob mocks base method
+func (m *MockWorkMailAPI) StartMailboxExportJob(arg0 *workmail.StartMailboxExportJobInput) (*workmail.StartMailboxExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMailboxExportJob", arg0)
+	ret0, _ := ret[0].(*workmail.StartMailboxExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMailboxExportJob indicates an expected call of StartMailboxExportJob
+func (mr *MockWorkMailAPIMockRecorder) StartMailboxExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMailboxExportJob", reflect.TypeOf((*MockWorkMailAPI)(nil).StartMailboxExportJob), arg0)
+}
+
+// StartMailboxExportJobRequest mocks base method
+func (m *MockWorkMailAPI) StartMailboxExportJobRequest(arg0 *workmail.StartMailboxExportJobInput) (*request.Request, *workmail.StartMailboxExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMailboxExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.StartMailboxExportJobOutput)
+	return ret0, ret1
+}
+
+// StartMailboxExportJobRequest indicates an expected call of StartMailboxExportJobRequest
+func (mr *MockWorkMailAPIMockRecorder) StartMailboxExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMailboxExportJobRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).StartMailboxExportJobRequest), arg0)
+}
+
+// StartMailboxExportJobWithContext mocks base method
+func (m *MockWorkMailAPI) StartMailboxExportJobWithContext(arg0 context.Context, arg1 *workmail.StartMailboxExportJobInput, arg2 ...request.Option) (*workmail.StartMailboxExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartMailboxExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.StartMailboxExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMailboxExportJobWithContext indicates an expected call of StartMailboxExportJobWithContext
+func (mr *MockWorkMailAPIMockRecorder) StartMailboxExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMailboxExportJobWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).StartMailboxExportJobWithContext), varargs...)
 }
 
 // TagResource mocks base method
