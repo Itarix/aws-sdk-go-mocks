@@ -35,6 +35,106 @@ func (m *MockCostExplorerAPI) EXPECT() *MockCostExplorerAPIMockRecorder {
 	return m.recorder
 }
 
+// CreateAnomalyMonitor mocks base method
+func (m *MockCostExplorerAPI) CreateAnomalyMonitor(arg0 *costexplorer.CreateAnomalyMonitorInput) (*costexplorer.CreateAnomalyMonitorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAnomalyMonitor", arg0)
+	ret0, _ := ret[0].(*costexplorer.CreateAnomalyMonitorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAnomalyMonitor indicates an expected call of CreateAnomalyMonitor
+func (mr *MockCostExplorerAPIMockRecorder) CreateAnomalyMonitor(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnomalyMonitor", reflect.TypeOf((*MockCostExplorerAPI)(nil).CreateAnomalyMonitor), arg0)
+}
+
+// CreateAnomalyMonitorRequest mocks base method
+func (m *MockCostExplorerAPI) CreateAnomalyMonitorRequest(arg0 *costexplorer.CreateAnomalyMonitorInput) (*request.Request, *costexplorer.CreateAnomalyMonitorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAnomalyMonitorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.CreateAnomalyMonitorOutput)
+	return ret0, ret1
+}
+
+// CreateAnomalyMonitorRequest indicates an expected call of CreateAnomalyMonitorRequest
+func (mr *MockCostExplorerAPIMockRecorder) CreateAnomalyMonitorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnomalyMonitorRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).CreateAnomalyMonitorRequest), arg0)
+}
+
+// CreateAnomalyMonitorWithContext mocks base method
+func (m *MockCostExplorerAPI) CreateAnomalyMonitorWithContext(arg0 context.Context, arg1 *costexplorer.CreateAnomalyMonitorInput, arg2 ...request.Option) (*costexplorer.CreateAnomalyMonitorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAnomalyMonitorWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.CreateAnomalyMonitorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAnomalyMonitorWithContext indicates an expected call of CreateAnomalyMonitorWithContext
+func (mr *MockCostExplorerAPIMockRecorder) CreateAnomalyMonitorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnomalyMonitorWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).CreateAnomalyMonitorWithContext), varargs...)
+}
+
+// CreateAnomalySubscription mocks base method
+func (m *MockCostExplorerAPI) CreateAnomalySubscription(arg0 *costexplorer.CreateAnomalySubscriptionInput) (*costexplorer.CreateAnomalySubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAnomalySubscription", arg0)
+	ret0, _ := ret[0].(*costexplorer.CreateAnomalySubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAnomalySubscription indicates an expected call of CreateAnomalySubscription
+func (mr *MockCostExplorerAPIMockRecorder) CreateAnomalySubscription(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnomalySubscription", reflect.TypeOf((*MockCostExplorerAPI)(nil).CreateAnomalySubscription), arg0)
+}
+
+// CreateAnomalySubscriptionRequest mocks base method
+func (m *MockCostExplorerAPI) CreateAnomalySubscriptionRequest(arg0 *costexplorer.CreateAnomalySubscriptionInput) (*request.Request, *costexplorer.CreateAnomalySubscriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAnomalySubscriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.CreateAnomalySubscriptionOutput)
+	return ret0, ret1
+}
+
+// CreateAnomalySubscriptionRequest indicates an expected call of CreateAnomalySubscriptionRequest
+func (mr *MockCostExplorerAPIMockRecorder) CreateAnomalySubscriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnomalySubscriptionRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).CreateAnomalySubscriptionRequest), arg0)
+}
+
+// CreateAnomalySubscriptionWithContext mocks base method
+func (m *MockCostExplorerAPI) CreateAnomalySubscriptionWithContext(arg0 context.Context, arg1 *costexplorer.CreateAnomalySubscriptionInput, arg2 ...request.Option) (*costexplorer.CreateAnomalySubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAnomalySubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.CreateAnomalySubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAnomalySubscriptionWithContext indicates an expected call of CreateAnomalySubscriptionWithContext
+func (mr *MockCostExplorerAPIMockRecorder) CreateAnomalySubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnomalySubscriptionWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).CreateAnomalySubscriptionWithContext), varargs...)
+}
+
 // CreateCostCategoryDefinition mocks base method
 func (m *MockCostExplorerAPI) CreateCostCategoryDefinition(arg0 *costexplorer.CreateCostCategoryDefinitionInput) (*costexplorer.CreateCostCategoryDefinitionOutput, error) {
 	m.ctrl.T.Helper()
@@ -83,6 +183,106 @@ func (mr *MockCostExplorerAPIMockRecorder) CreateCostCategoryDefinitionWithConte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCostCategoryDefinitionWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).CreateCostCategoryDefinitionWithContext), varargs...)
+}
+
+// DeleteAnomalyMonitor mocks base method
+func (m *MockCostExplorerAPI) DeleteAnomalyMonitor(arg0 *costexplorer.DeleteAnomalyMonitorInput) (*costexplorer.DeleteAnomalyMonitorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAnomalyMonitor", arg0)
+	ret0, _ := ret[0].(*costexplorer.DeleteAnomalyMonitorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAnomalyMonitor indicates an expected call of DeleteAnomalyMonitor
+func (mr *MockCostExplorerAPIMockRecorder) DeleteAnomalyMonitor(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnomalyMonitor", reflect.TypeOf((*MockCostExplorerAPI)(nil).DeleteAnomalyMonitor), arg0)
+}
+
+// DeleteAnomalyMonitorRequest mocks base method
+func (m *MockCostExplorerAPI) DeleteAnomalyMonitorRequest(arg0 *costexplorer.DeleteAnomalyMonitorInput) (*request.Request, *costexplorer.DeleteAnomalyMonitorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAnomalyMonitorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.DeleteAnomalyMonitorOutput)
+	return ret0, ret1
+}
+
+// DeleteAnomalyMonitorRequest indicates an expected call of DeleteAnomalyMonitorRequest
+func (mr *MockCostExplorerAPIMockRecorder) DeleteAnomalyMonitorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnomalyMonitorRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).DeleteAnomalyMonitorRequest), arg0)
+}
+
+// DeleteAnomalyMonitorWithContext mocks base method
+func (m *MockCostExplorerAPI) DeleteAnomalyMonitorWithContext(arg0 context.Context, arg1 *costexplorer.DeleteAnomalyMonitorInput, arg2 ...request.Option) (*costexplorer.DeleteAnomalyMonitorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAnomalyMonitorWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.DeleteAnomalyMonitorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAnomalyMonitorWithContext indicates an expected call of DeleteAnomalyMonitorWithContext
+func (mr *MockCostExplorerAPIMockRecorder) DeleteAnomalyMonitorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnomalyMonitorWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).DeleteAnomalyMonitorWithContext), varargs...)
+}
+
+// DeleteAnomalySubscription mocks base method
+func (m *MockCostExplorerAPI) DeleteAnomalySubscription(arg0 *costexplorer.DeleteAnomalySubscriptionInput) (*costexplorer.DeleteAnomalySubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAnomalySubscription", arg0)
+	ret0, _ := ret[0].(*costexplorer.DeleteAnomalySubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAnomalySubscription indicates an expected call of DeleteAnomalySubscription
+func (mr *MockCostExplorerAPIMockRecorder) DeleteAnomalySubscription(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnomalySubscription", reflect.TypeOf((*MockCostExplorerAPI)(nil).DeleteAnomalySubscription), arg0)
+}
+
+// DeleteAnomalySubscriptionRequest mocks base method
+func (m *MockCostExplorerAPI) DeleteAnomalySubscriptionRequest(arg0 *costexplorer.DeleteAnomalySubscriptionInput) (*request.Request, *costexplorer.DeleteAnomalySubscriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAnomalySubscriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.DeleteAnomalySubscriptionOutput)
+	return ret0, ret1
+}
+
+// DeleteAnomalySubscriptionRequest indicates an expected call of DeleteAnomalySubscriptionRequest
+func (mr *MockCostExplorerAPIMockRecorder) DeleteAnomalySubscriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnomalySubscriptionRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).DeleteAnomalySubscriptionRequest), arg0)
+}
+
+// DeleteAnomalySubscriptionWithContext mocks base method
+func (m *MockCostExplorerAPI) DeleteAnomalySubscriptionWithContext(arg0 context.Context, arg1 *costexplorer.DeleteAnomalySubscriptionInput, arg2 ...request.Option) (*costexplorer.DeleteAnomalySubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAnomalySubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.DeleteAnomalySubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAnomalySubscriptionWithContext indicates an expected call of DeleteAnomalySubscriptionWithContext
+func (mr *MockCostExplorerAPIMockRecorder) DeleteAnomalySubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnomalySubscriptionWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).DeleteAnomalySubscriptionWithContext), varargs...)
 }
 
 // DeleteCostCategoryDefinition mocks base method
@@ -183,6 +383,156 @@ func (mr *MockCostExplorerAPIMockRecorder) DescribeCostCategoryDefinitionWithCon
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCostCategoryDefinitionWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).DescribeCostCategoryDefinitionWithContext), varargs...)
+}
+
+// GetAnomalies mocks base method
+func (m *MockCostExplorerAPI) GetAnomalies(arg0 *costexplorer.GetAnomaliesInput) (*costexplorer.GetAnomaliesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAnomalies", arg0)
+	ret0, _ := ret[0].(*costexplorer.GetAnomaliesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAnomalies indicates an expected call of GetAnomalies
+func (mr *MockCostExplorerAPIMockRecorder) GetAnomalies(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnomalies", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetAnomalies), arg0)
+}
+
+// GetAnomaliesRequest mocks base method
+func (m *MockCostExplorerAPI) GetAnomaliesRequest(arg0 *costexplorer.GetAnomaliesInput) (*request.Request, *costexplorer.GetAnomaliesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAnomaliesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.GetAnomaliesOutput)
+	return ret0, ret1
+}
+
+// GetAnomaliesRequest indicates an expected call of GetAnomaliesRequest
+func (mr *MockCostExplorerAPIMockRecorder) GetAnomaliesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnomaliesRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetAnomaliesRequest), arg0)
+}
+
+// GetAnomaliesWithContext mocks base method
+func (m *MockCostExplorerAPI) GetAnomaliesWithContext(arg0 context.Context, arg1 *costexplorer.GetAnomaliesInput, arg2 ...request.Option) (*costexplorer.GetAnomaliesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAnomaliesWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.GetAnomaliesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAnomaliesWithContext indicates an expected call of GetAnomaliesWithContext
+func (mr *MockCostExplorerAPIMockRecorder) GetAnomaliesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnomaliesWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetAnomaliesWithContext), varargs...)
+}
+
+// GetAnomalyMonitors mocks base method
+func (m *MockCostExplorerAPI) GetAnomalyMonitors(arg0 *costexplorer.GetAnomalyMonitorsInput) (*costexplorer.GetAnomalyMonitorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAnomalyMonitors", arg0)
+	ret0, _ := ret[0].(*costexplorer.GetAnomalyMonitorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAnomalyMonitors indicates an expected call of GetAnomalyMonitors
+func (mr *MockCostExplorerAPIMockRecorder) GetAnomalyMonitors(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnomalyMonitors", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetAnomalyMonitors), arg0)
+}
+
+// GetAnomalyMonitorsRequest mocks base method
+func (m *MockCostExplorerAPI) GetAnomalyMonitorsRequest(arg0 *costexplorer.GetAnomalyMonitorsInput) (*request.Request, *costexplorer.GetAnomalyMonitorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAnomalyMonitorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.GetAnomalyMonitorsOutput)
+	return ret0, ret1
+}
+
+// GetAnomalyMonitorsRequest indicates an expected call of GetAnomalyMonitorsRequest
+func (mr *MockCostExplorerAPIMockRecorder) GetAnomalyMonitorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnomalyMonitorsRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetAnomalyMonitorsRequest), arg0)
+}
+
+// GetAnomalyMonitorsWithContext mocks base method
+func (m *MockCostExplorerAPI) GetAnomalyMonitorsWithContext(arg0 context.Context, arg1 *costexplorer.GetAnomalyMonitorsInput, arg2 ...request.Option) (*costexplorer.GetAnomalyMonitorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAnomalyMonitorsWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.GetAnomalyMonitorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAnomalyMonitorsWithContext indicates an expected call of GetAnomalyMonitorsWithContext
+func (mr *MockCostExplorerAPIMockRecorder) GetAnomalyMonitorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnomalyMonitorsWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetAnomalyMonitorsWithContext), varargs...)
+}
+
+// GetAnomalySubscriptions mocks base method
+func (m *MockCostExplorerAPI) GetAnomalySubscriptions(arg0 *costexplorer.GetAnomalySubscriptionsInput) (*costexplorer.GetAnomalySubscriptionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAnomalySubscriptions", arg0)
+	ret0, _ := ret[0].(*costexplorer.GetAnomalySubscriptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAnomalySubscriptions indicates an expected call of GetAnomalySubscriptions
+func (mr *MockCostExplorerAPIMockRecorder) GetAnomalySubscriptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnomalySubscriptions", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetAnomalySubscriptions), arg0)
+}
+
+// GetAnomalySubscriptionsRequest mocks base method
+func (m *MockCostExplorerAPI) GetAnomalySubscriptionsRequest(arg0 *costexplorer.GetAnomalySubscriptionsInput) (*request.Request, *costexplorer.GetAnomalySubscriptionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAnomalySubscriptionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.GetAnomalySubscriptionsOutput)
+	return ret0, ret1
+}
+
+// GetAnomalySubscriptionsRequest indicates an expected call of GetAnomalySubscriptionsRequest
+func (mr *MockCostExplorerAPIMockRecorder) GetAnomalySubscriptionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnomalySubscriptionsRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetAnomalySubscriptionsRequest), arg0)
+}
+
+// GetAnomalySubscriptionsWithContext mocks base method
+func (m *MockCostExplorerAPI) GetAnomalySubscriptionsWithContext(arg0 context.Context, arg1 *costexplorer.GetAnomalySubscriptionsInput, arg2 ...request.Option) (*costexplorer.GetAnomalySubscriptionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAnomalySubscriptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.GetAnomalySubscriptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAnomalySubscriptionsWithContext indicates an expected call of GetAnomalySubscriptionsWithContext
+func (mr *MockCostExplorerAPIMockRecorder) GetAnomalySubscriptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnomalySubscriptionsWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetAnomalySubscriptionsWithContext), varargs...)
 }
 
 // GetCostAndUsage mocks base method
@@ -1032,6 +1382,156 @@ func (mr *MockCostExplorerAPIMockRecorder) ListCostCategoryDefinitionsWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCostCategoryDefinitionsWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).ListCostCategoryDefinitionsWithContext), varargs...)
+}
+
+// ProvideAnomalyFeedback mocks base method
+func (m *MockCostExplorerAPI) ProvideAnomalyFeedback(arg0 *costexplorer.ProvideAnomalyFeedbackInput) (*costexplorer.ProvideAnomalyFeedbackOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ProvideAnomalyFeedback", arg0)
+	ret0, _ := ret[0].(*costexplorer.ProvideAnomalyFeedbackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ProvideAnomalyFeedback indicates an expected call of ProvideAnomalyFeedback
+func (mr *MockCostExplorerAPIMockRecorder) ProvideAnomalyFeedback(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ProvideAnomalyFeedback", reflect.TypeOf((*MockCostExplorerAPI)(nil).ProvideAnomalyFeedback), arg0)
+}
+
+// ProvideAnomalyFeedbackRequest mocks base method
+func (m *MockCostExplorerAPI) ProvideAnomalyFeedbackRequest(arg0 *costexplorer.ProvideAnomalyFeedbackInput) (*request.Request, *costexplorer.ProvideAnomalyFeedbackOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ProvideAnomalyFeedbackRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.ProvideAnomalyFeedbackOutput)
+	return ret0, ret1
+}
+
+// ProvideAnomalyFeedbackRequest indicates an expected call of ProvideAnomalyFeedbackRequest
+func (mr *MockCostExplorerAPIMockRecorder) ProvideAnomalyFeedbackRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ProvideAnomalyFeedbackRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).ProvideAnomalyFeedbackRequest), arg0)
+}
+
+// ProvideAnomalyFeedbackWithContext mocks base method
+func (m *MockCostExplorerAPI) ProvideAnomalyFeedbackWithContext(arg0 context.Context, arg1 *costexplorer.ProvideAnomalyFeedbackInput, arg2 ...request.Option) (*costexplorer.ProvideAnomalyFeedbackOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ProvideAnomalyFeedbackWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.ProvideAnomalyFeedbackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ProvideAnomalyFeedbackWithContext indicates an expected call of ProvideAnomalyFeedbackWithContext
+func (mr *MockCostExplorerAPIMockRecorder) ProvideAnomalyFeedbackWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ProvideAnomalyFeedbackWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).ProvideAnomalyFeedbackWithContext), varargs...)
+}
+
+// UpdateAnomalyMonitor mocks base method
+func (m *MockCostExplorerAPI) UpdateAnomalyMonitor(arg0 *costexplorer.UpdateAnomalyMonitorInput) (*costexplorer.UpdateAnomalyMonitorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAnomalyMonitor", arg0)
+	ret0, _ := ret[0].(*costexplorer.UpdateAnomalyMonitorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAnomalyMonitor indicates an expected call of UpdateAnomalyMonitor
+func (mr *MockCostExplorerAPIMockRecorder) UpdateAnomalyMonitor(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnomalyMonitor", reflect.TypeOf((*MockCostExplorerAPI)(nil).UpdateAnomalyMonitor), arg0)
+}
+
+// UpdateAnomalyMonitorRequest mocks base method
+func (m *MockCostExplorerAPI) UpdateAnomalyMonitorRequest(arg0 *costexplorer.UpdateAnomalyMonitorInput) (*request.Request, *costexplorer.UpdateAnomalyMonitorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAnomalyMonitorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.UpdateAnomalyMonitorOutput)
+	return ret0, ret1
+}
+
+// UpdateAnomalyMonitorRequest indicates an expected call of UpdateAnomalyMonitorRequest
+func (mr *MockCostExplorerAPIMockRecorder) UpdateAnomalyMonitorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnomalyMonitorRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).UpdateAnomalyMonitorRequest), arg0)
+}
+
+// UpdateAnomalyMonitorWithContext mocks base method
+func (m *MockCostExplorerAPI) UpdateAnomalyMonitorWithContext(arg0 context.Context, arg1 *costexplorer.UpdateAnomalyMonitorInput, arg2 ...request.Option) (*costexplorer.UpdateAnomalyMonitorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAnomalyMonitorWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.UpdateAnomalyMonitorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAnomalyMonitorWithContext indicates an expected call of UpdateAnomalyMonitorWithContext
+func (mr *MockCostExplorerAPIMockRecorder) UpdateAnomalyMonitorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnomalyMonitorWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).UpdateAnomalyMonitorWithContext), varargs...)
+}
+
+// UpdateAnomalySubscription mocks base method
+func (m *MockCostExplorerAPI) UpdateAnomalySubscription(arg0 *costexplorer.UpdateAnomalySubscriptionInput) (*costexplorer.UpdateAnomalySubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAnomalySubscription", arg0)
+	ret0, _ := ret[0].(*costexplorer.UpdateAnomalySubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAnomalySubscription indicates an expected call of UpdateAnomalySubscription
+func (mr *MockCostExplorerAPIMockRecorder) UpdateAnomalySubscription(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnomalySubscription", reflect.TypeOf((*MockCostExplorerAPI)(nil).UpdateAnomalySubscription), arg0)
+}
+
+// UpdateAnomalySubscriptionRequest mocks base method
+func (m *MockCostExplorerAPI) UpdateAnomalySubscriptionRequest(arg0 *costexplorer.UpdateAnomalySubscriptionInput) (*request.Request, *costexplorer.UpdateAnomalySubscriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAnomalySubscriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.UpdateAnomalySubscriptionOutput)
+	return ret0, ret1
+}
+
+// UpdateAnomalySubscriptionRequest indicates an expected call of UpdateAnomalySubscriptionRequest
+func (mr *MockCostExplorerAPIMockRecorder) UpdateAnomalySubscriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnomalySubscriptionRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).UpdateAnomalySubscriptionRequest), arg0)
+}
+
+// UpdateAnomalySubscriptionWithContext mocks base method
+func (m *MockCostExplorerAPI) UpdateAnomalySubscriptionWithContext(arg0 context.Context, arg1 *costexplorer.UpdateAnomalySubscriptionInput, arg2 ...request.Option) (*costexplorer.UpdateAnomalySubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAnomalySubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.UpdateAnomalySubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAnomalySubscriptionWithContext indicates an expected call of UpdateAnomalySubscriptionWithContext
+func (mr *MockCostExplorerAPIMockRecorder) UpdateAnomalySubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnomalySubscriptionWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).UpdateAnomalySubscriptionWithContext), varargs...)
 }
 
 // UpdateCostCategoryDefinition mocks base method
