@@ -350,6 +350,39 @@ func (mr *MockOpsWorksCMAPIMockRecorder) DescribeBackups(arg0 interface{}) *gomo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBackups", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).DescribeBackups), arg0)
 }
 
+// DescribeBackupsPages mocks base method
+func (m *MockOpsWorksCMAPI) DescribeBackupsPages(arg0 *opsworkscm.DescribeBackupsInput, arg1 func(*opsworkscm.DescribeBackupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBackupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeBackupsPages indicates an expected call of DescribeBackupsPages
+func (mr *MockOpsWorksCMAPIMockRecorder) DescribeBackupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBackupsPages", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).DescribeBackupsPages), arg0, arg1)
+}
+
+// DescribeBackupsPagesWithContext mocks base method
+func (m *MockOpsWorksCMAPI) DescribeBackupsPagesWithContext(arg0 context.Context, arg1 *opsworkscm.DescribeBackupsInput, arg2 func(*opsworkscm.DescribeBackupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeBackupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeBackupsPagesWithContext indicates an expected call of DescribeBackupsPagesWithContext
+func (mr *MockOpsWorksCMAPIMockRecorder) DescribeBackupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBackupsPagesWithContext", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).DescribeBackupsPagesWithContext), varargs...)
+}
+
 // DescribeBackupsRequest mocks base method
 func (m *MockOpsWorksCMAPI) DescribeBackupsRequest(arg0 *opsworkscm.DescribeBackupsInput) (*request.Request, *opsworkscm.DescribeBackupsOutput) {
 	m.ctrl.T.Helper()
@@ -398,6 +431,39 @@ func (m *MockOpsWorksCMAPI) DescribeEvents(arg0 *opsworkscm.DescribeEventsInput)
 func (mr *MockOpsWorksCMAPIMockRecorder) DescribeEvents(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEvents", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).DescribeEvents), arg0)
+}
+
+// DescribeEventsPages mocks base method
+func (m *MockOpsWorksCMAPI) DescribeEventsPages(arg0 *opsworkscm.DescribeEventsInput, arg1 func(*opsworkscm.DescribeEventsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEventsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeEventsPages indicates an expected call of DescribeEventsPages
+func (mr *MockOpsWorksCMAPIMockRecorder) DescribeEventsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsPages", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).DescribeEventsPages), arg0, arg1)
+}
+
+// DescribeEventsPagesWithContext mocks base method
+func (m *MockOpsWorksCMAPI) DescribeEventsPagesWithContext(arg0 context.Context, arg1 *opsworkscm.DescribeEventsInput, arg2 func(*opsworkscm.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEventsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeEventsPagesWithContext indicates an expected call of DescribeEventsPagesWithContext
+func (mr *MockOpsWorksCMAPIMockRecorder) DescribeEventsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsPagesWithContext", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).DescribeEventsPagesWithContext), varargs...)
 }
 
 // DescribeEventsRequest mocks base method
@@ -498,6 +564,39 @@ func (m *MockOpsWorksCMAPI) DescribeServers(arg0 *opsworkscm.DescribeServersInpu
 func (mr *MockOpsWorksCMAPIMockRecorder) DescribeServers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServers", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).DescribeServers), arg0)
+}
+
+// DescribeServersPages mocks base method
+func (m *MockOpsWorksCMAPI) DescribeServersPages(arg0 *opsworkscm.DescribeServersInput, arg1 func(*opsworkscm.DescribeServersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeServersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeServersPages indicates an expected call of DescribeServersPages
+func (mr *MockOpsWorksCMAPIMockRecorder) DescribeServersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServersPages", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).DescribeServersPages), arg0, arg1)
+}
+
+// DescribeServersPagesWithContext mocks base method
+func (m *MockOpsWorksCMAPI) DescribeServersPagesWithContext(arg0 context.Context, arg1 *opsworkscm.DescribeServersInput, arg2 func(*opsworkscm.DescribeServersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeServersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeServersPagesWithContext indicates an expected call of DescribeServersPagesWithContext
+func (mr *MockOpsWorksCMAPIMockRecorder) DescribeServersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServersPagesWithContext", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).DescribeServersPagesWithContext), varargs...)
 }
 
 // DescribeServersRequest mocks base method
@@ -648,6 +747,39 @@ func (m *MockOpsWorksCMAPI) ListTagsForResource(arg0 *opsworkscm.ListTagsForReso
 func (mr *MockOpsWorksCMAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourcePages mocks base method
+func (m *MockOpsWorksCMAPI) ListTagsForResourcePages(arg0 *opsworkscm.ListTagsForResourceInput, arg1 func(*opsworkscm.ListTagsForResourceOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourcePages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTagsForResourcePages indicates an expected call of ListTagsForResourcePages
+func (mr *MockOpsWorksCMAPIMockRecorder) ListTagsForResourcePages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePages", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).ListTagsForResourcePages), arg0, arg1)
+}
+
+// ListTagsForResourcePagesWithContext mocks base method
+func (m *MockOpsWorksCMAPI) ListTagsForResourcePagesWithContext(arg0 context.Context, arg1 *opsworkscm.ListTagsForResourceInput, arg2 func(*opsworkscm.ListTagsForResourceOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourcePagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTagsForResourcePagesWithContext indicates an expected call of ListTagsForResourcePagesWithContext
+func (mr *MockOpsWorksCMAPIMockRecorder) ListTagsForResourcePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePagesWithContext", reflect.TypeOf((*MockOpsWorksCMAPI)(nil).ListTagsForResourcePagesWithContext), varargs...)
 }
 
 // ListTagsForResourceRequest mocks base method
