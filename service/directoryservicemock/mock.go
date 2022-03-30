@@ -1135,6 +1135,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeCertificateWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCertificateWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeCertificateWithContext), varargs...)
 }
 
+// DescribeClientAuthenticationSettings mocks base method
+func (m *MockDirectoryServiceAPI) DescribeClientAuthenticationSettings(arg0 *directoryservice.DescribeClientAuthenticationSettingsInput) (*directoryservice.DescribeClientAuthenticationSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeClientAuthenticationSettings", arg0)
+	ret0, _ := ret[0].(*directoryservice.DescribeClientAuthenticationSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeClientAuthenticationSettings indicates an expected call of DescribeClientAuthenticationSettings
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeClientAuthenticationSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClientAuthenticationSettings", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeClientAuthenticationSettings), arg0)
+}
+
+// DescribeClientAuthenticationSettingsRequest mocks base method
+func (m *MockDirectoryServiceAPI) DescribeClientAuthenticationSettingsRequest(arg0 *directoryservice.DescribeClientAuthenticationSettingsInput) (*request.Request, *directoryservice.DescribeClientAuthenticationSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeClientAuthenticationSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.DescribeClientAuthenticationSettingsOutput)
+	return ret0, ret1
+}
+
+// DescribeClientAuthenticationSettingsRequest indicates an expected call of DescribeClientAuthenticationSettingsRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeClientAuthenticationSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClientAuthenticationSettingsRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeClientAuthenticationSettingsRequest), arg0)
+}
+
+// DescribeClientAuthenticationSettingsWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeClientAuthenticationSettingsWithContext(arg0 context.Context, arg1 *directoryservice.DescribeClientAuthenticationSettingsInput, arg2 ...request.Option) (*directoryservice.DescribeClientAuthenticationSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeClientAuthenticationSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.DescribeClientAuthenticationSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeClientAuthenticationSettingsWithContext indicates an expected call of DescribeClientAuthenticationSettingsWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeClientAuthenticationSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClientAuthenticationSettingsWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeClientAuthenticationSettingsWithContext), varargs...)
+}
+
 // DescribeConditionalForwarders mocks base method
 func (m *MockDirectoryServiceAPI) DescribeConditionalForwarders(arg0 *directoryservice.DescribeConditionalForwardersInput) (*directoryservice.DescribeConditionalForwardersOutput, error) {
 	m.ctrl.T.Helper()
