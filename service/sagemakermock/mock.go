@@ -11717,6 +11717,56 @@ func (mr *MockSageMakerAPIMockRecorder) RenderUiTemplateWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RenderUiTemplateWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).RenderUiTemplateWithContext), varargs...)
 }
 
+// RetryPipelineExecution mocks base method
+func (m *MockSageMakerAPI) RetryPipelineExecution(arg0 *sagemaker.RetryPipelineExecutionInput) (*sagemaker.RetryPipelineExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RetryPipelineExecution", arg0)
+	ret0, _ := ret[0].(*sagemaker.RetryPipelineExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RetryPipelineExecution indicates an expected call of RetryPipelineExecution
+func (mr *MockSageMakerAPIMockRecorder) RetryPipelineExecution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetryPipelineExecution", reflect.TypeOf((*MockSageMakerAPI)(nil).RetryPipelineExecution), arg0)
+}
+
+// RetryPipelineExecutionRequest mocks base method
+func (m *MockSageMakerAPI) RetryPipelineExecutionRequest(arg0 *sagemaker.RetryPipelineExecutionInput) (*request.Request, *sagemaker.RetryPipelineExecutionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RetryPipelineExecutionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.RetryPipelineExecutionOutput)
+	return ret0, ret1
+}
+
+// RetryPipelineExecutionRequest indicates an expected call of RetryPipelineExecutionRequest
+func (mr *MockSageMakerAPIMockRecorder) RetryPipelineExecutionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetryPipelineExecutionRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).RetryPipelineExecutionRequest), arg0)
+}
+
+// RetryPipelineExecutionWithContext mocks base method
+func (m *MockSageMakerAPI) RetryPipelineExecutionWithContext(arg0 context.Context, arg1 *sagemaker.RetryPipelineExecutionInput, arg2 ...request.Option) (*sagemaker.RetryPipelineExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RetryPipelineExecutionWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.RetryPipelineExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RetryPipelineExecutionWithContext indicates an expected call of RetryPipelineExecutionWithContext
+func (mr *MockSageMakerAPIMockRecorder) RetryPipelineExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetryPipelineExecutionWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).RetryPipelineExecutionWithContext), varargs...)
+}
+
 // Search mocks base method
 func (m *MockSageMakerAPI) Search(arg0 *sagemaker.SearchInput) (*sagemaker.SearchOutput, error) {
 	m.ctrl.T.Helper()

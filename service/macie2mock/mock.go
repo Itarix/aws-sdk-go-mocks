@@ -2366,6 +2366,56 @@ func (mr *MockMacie2APIMockRecorder) ListInvitationsWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInvitationsWithContext", reflect.TypeOf((*MockMacie2API)(nil).ListInvitationsWithContext), varargs...)
 }
 
+// ListManagedDataIdentifiers mocks base method
+func (m *MockMacie2API) ListManagedDataIdentifiers(arg0 *macie2.ListManagedDataIdentifiersInput) (*macie2.ListManagedDataIdentifiersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListManagedDataIdentifiers", arg0)
+	ret0, _ := ret[0].(*macie2.ListManagedDataIdentifiersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListManagedDataIdentifiers indicates an expected call of ListManagedDataIdentifiers
+func (mr *MockMacie2APIMockRecorder) ListManagedDataIdentifiers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedDataIdentifiers", reflect.TypeOf((*MockMacie2API)(nil).ListManagedDataIdentifiers), arg0)
+}
+
+// ListManagedDataIdentifiersRequest mocks base method
+func (m *MockMacie2API) ListManagedDataIdentifiersRequest(arg0 *macie2.ListManagedDataIdentifiersInput) (*request.Request, *macie2.ListManagedDataIdentifiersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListManagedDataIdentifiersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*macie2.ListManagedDataIdentifiersOutput)
+	return ret0, ret1
+}
+
+// ListManagedDataIdentifiersRequest indicates an expected call of ListManagedDataIdentifiersRequest
+func (mr *MockMacie2APIMockRecorder) ListManagedDataIdentifiersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedDataIdentifiersRequest", reflect.TypeOf((*MockMacie2API)(nil).ListManagedDataIdentifiersRequest), arg0)
+}
+
+// ListManagedDataIdentifiersWithContext mocks base method
+func (m *MockMacie2API) ListManagedDataIdentifiersWithContext(arg0 context.Context, arg1 *macie2.ListManagedDataIdentifiersInput, arg2 ...request.Option) (*macie2.ListManagedDataIdentifiersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListManagedDataIdentifiersWithContext", varargs...)
+	ret0, _ := ret[0].(*macie2.ListManagedDataIdentifiersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListManagedDataIdentifiersWithContext indicates an expected call of ListManagedDataIdentifiersWithContext
+func (mr *MockMacie2APIMockRecorder) ListManagedDataIdentifiersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedDataIdentifiersWithContext", reflect.TypeOf((*MockMacie2API)(nil).ListManagedDataIdentifiersWithContext), varargs...)
+}
+
 // ListMembers mocks base method
 func (m *MockMacie2API) ListMembers(arg0 *macie2.ListMembersInput) (*macie2.ListMembersOutput, error) {
 	m.ctrl.T.Helper()
