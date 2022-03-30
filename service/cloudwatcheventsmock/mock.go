@@ -135,6 +135,56 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) CancelReplayWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelReplayWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).CancelReplayWithContext), varargs...)
 }
 
+// CreateApiDestination mocks base method
+func (m *MockCloudWatchEventsAPI) CreateApiDestination(arg0 *cloudwatchevents.CreateApiDestinationInput) (*cloudwatchevents.CreateApiDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateApiDestination", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.CreateApiDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateApiDestination indicates an expected call of CreateApiDestination
+func (mr *MockCloudWatchEventsAPIMockRecorder) CreateApiDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiDestination", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).CreateApiDestination), arg0)
+}
+
+// CreateApiDestinationRequest mocks base method
+func (m *MockCloudWatchEventsAPI) CreateApiDestinationRequest(arg0 *cloudwatchevents.CreateApiDestinationInput) (*request.Request, *cloudwatchevents.CreateApiDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateApiDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.CreateApiDestinationOutput)
+	return ret0, ret1
+}
+
+// CreateApiDestinationRequest indicates an expected call of CreateApiDestinationRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) CreateApiDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiDestinationRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).CreateApiDestinationRequest), arg0)
+}
+
+// CreateApiDestinationWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) CreateApiDestinationWithContext(arg0 context.Context, arg1 *cloudwatchevents.CreateApiDestinationInput, arg2 ...request.Option) (*cloudwatchevents.CreateApiDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateApiDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.CreateApiDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateApiDestinationWithContext indicates an expected call of CreateApiDestinationWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) CreateApiDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApiDestinationWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).CreateApiDestinationWithContext), varargs...)
+}
+
 // CreateArchive mocks base method
 func (m *MockCloudWatchEventsAPI) CreateArchive(arg0 *cloudwatchevents.CreateArchiveInput) (*cloudwatchevents.CreateArchiveOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +233,56 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) CreateArchiveWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateArchiveWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).CreateArchiveWithContext), varargs...)
+}
+
+// CreateConnection mocks base method
+func (m *MockCloudWatchEventsAPI) CreateConnection(arg0 *cloudwatchevents.CreateConnectionInput) (*cloudwatchevents.CreateConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnection", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.CreateConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnection indicates an expected call of CreateConnection
+func (mr *MockCloudWatchEventsAPIMockRecorder) CreateConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnection", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).CreateConnection), arg0)
+}
+
+// CreateConnectionRequest mocks base method
+func (m *MockCloudWatchEventsAPI) CreateConnectionRequest(arg0 *cloudwatchevents.CreateConnectionInput) (*request.Request, *cloudwatchevents.CreateConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.CreateConnectionOutput)
+	return ret0, ret1
+}
+
+// CreateConnectionRequest indicates an expected call of CreateConnectionRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) CreateConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectionRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).CreateConnectionRequest), arg0)
+}
+
+// CreateConnectionWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) CreateConnectionWithContext(arg0 context.Context, arg1 *cloudwatchevents.CreateConnectionInput, arg2 ...request.Option) (*cloudwatchevents.CreateConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.CreateConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectionWithContext indicates an expected call of CreateConnectionWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) CreateConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectionWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).CreateConnectionWithContext), varargs...)
 }
 
 // CreateEventBus mocks base method
@@ -335,6 +435,106 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) DeactivateEventSourceWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateEventSourceWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeactivateEventSourceWithContext), varargs...)
 }
 
+// DeauthorizeConnection mocks base method
+func (m *MockCloudWatchEventsAPI) DeauthorizeConnection(arg0 *cloudwatchevents.DeauthorizeConnectionInput) (*cloudwatchevents.DeauthorizeConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeauthorizeConnection", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.DeauthorizeConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeauthorizeConnection indicates an expected call of DeauthorizeConnection
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeauthorizeConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeauthorizeConnection", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeauthorizeConnection), arg0)
+}
+
+// DeauthorizeConnectionRequest mocks base method
+func (m *MockCloudWatchEventsAPI) DeauthorizeConnectionRequest(arg0 *cloudwatchevents.DeauthorizeConnectionInput) (*request.Request, *cloudwatchevents.DeauthorizeConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeauthorizeConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.DeauthorizeConnectionOutput)
+	return ret0, ret1
+}
+
+// DeauthorizeConnectionRequest indicates an expected call of DeauthorizeConnectionRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeauthorizeConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeauthorizeConnectionRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeauthorizeConnectionRequest), arg0)
+}
+
+// DeauthorizeConnectionWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) DeauthorizeConnectionWithContext(arg0 context.Context, arg1 *cloudwatchevents.DeauthorizeConnectionInput, arg2 ...request.Option) (*cloudwatchevents.DeauthorizeConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeauthorizeConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.DeauthorizeConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeauthorizeConnectionWithContext indicates an expected call of DeauthorizeConnectionWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeauthorizeConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeauthorizeConnectionWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeauthorizeConnectionWithContext), varargs...)
+}
+
+// DeleteApiDestination mocks base method
+func (m *MockCloudWatchEventsAPI) DeleteApiDestination(arg0 *cloudwatchevents.DeleteApiDestinationInput) (*cloudwatchevents.DeleteApiDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteApiDestination", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.DeleteApiDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteApiDestination indicates an expected call of DeleteApiDestination
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeleteApiDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiDestination", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeleteApiDestination), arg0)
+}
+
+// DeleteApiDestinationRequest mocks base method
+func (m *MockCloudWatchEventsAPI) DeleteApiDestinationRequest(arg0 *cloudwatchevents.DeleteApiDestinationInput) (*request.Request, *cloudwatchevents.DeleteApiDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteApiDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.DeleteApiDestinationOutput)
+	return ret0, ret1
+}
+
+// DeleteApiDestinationRequest indicates an expected call of DeleteApiDestinationRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeleteApiDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiDestinationRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeleteApiDestinationRequest), arg0)
+}
+
+// DeleteApiDestinationWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) DeleteApiDestinationWithContext(arg0 context.Context, arg1 *cloudwatchevents.DeleteApiDestinationInput, arg2 ...request.Option) (*cloudwatchevents.DeleteApiDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteApiDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.DeleteApiDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteApiDestinationWithContext indicates an expected call of DeleteApiDestinationWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeleteApiDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApiDestinationWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeleteApiDestinationWithContext), varargs...)
+}
+
 // DeleteArchive mocks base method
 func (m *MockCloudWatchEventsAPI) DeleteArchive(arg0 *cloudwatchevents.DeleteArchiveInput) (*cloudwatchevents.DeleteArchiveOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +583,56 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) DeleteArchiveWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteArchiveWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeleteArchiveWithContext), varargs...)
+}
+
+// DeleteConnection mocks base method
+func (m *MockCloudWatchEventsAPI) DeleteConnection(arg0 *cloudwatchevents.DeleteConnectionInput) (*cloudwatchevents.DeleteConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnection", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.DeleteConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnection indicates an expected call of DeleteConnection
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeleteConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnection", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeleteConnection), arg0)
+}
+
+// DeleteConnectionRequest mocks base method
+func (m *MockCloudWatchEventsAPI) DeleteConnectionRequest(arg0 *cloudwatchevents.DeleteConnectionInput) (*request.Request, *cloudwatchevents.DeleteConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.DeleteConnectionOutput)
+	return ret0, ret1
+}
+
+// DeleteConnectionRequest indicates an expected call of DeleteConnectionRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeleteConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectionRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeleteConnectionRequest), arg0)
+}
+
+// DeleteConnectionWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) DeleteConnectionWithContext(arg0 context.Context, arg1 *cloudwatchevents.DeleteConnectionInput, arg2 ...request.Option) (*cloudwatchevents.DeleteConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.DeleteConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnectionWithContext indicates an expected call of DeleteConnectionWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) DeleteConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectionWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeleteConnectionWithContext), varargs...)
 }
 
 // DeleteEventBus mocks base method
@@ -535,6 +785,56 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) DeleteRuleWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRuleWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DeleteRuleWithContext), varargs...)
 }
 
+// DescribeApiDestination mocks base method
+func (m *MockCloudWatchEventsAPI) DescribeApiDestination(arg0 *cloudwatchevents.DescribeApiDestinationInput) (*cloudwatchevents.DescribeApiDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeApiDestination", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.DescribeApiDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeApiDestination indicates an expected call of DescribeApiDestination
+func (mr *MockCloudWatchEventsAPIMockRecorder) DescribeApiDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApiDestination", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DescribeApiDestination), arg0)
+}
+
+// DescribeApiDestinationRequest mocks base method
+func (m *MockCloudWatchEventsAPI) DescribeApiDestinationRequest(arg0 *cloudwatchevents.DescribeApiDestinationInput) (*request.Request, *cloudwatchevents.DescribeApiDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeApiDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.DescribeApiDestinationOutput)
+	return ret0, ret1
+}
+
+// DescribeApiDestinationRequest indicates an expected call of DescribeApiDestinationRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) DescribeApiDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApiDestinationRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DescribeApiDestinationRequest), arg0)
+}
+
+// DescribeApiDestinationWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) DescribeApiDestinationWithContext(arg0 context.Context, arg1 *cloudwatchevents.DescribeApiDestinationInput, arg2 ...request.Option) (*cloudwatchevents.DescribeApiDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeApiDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.DescribeApiDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeApiDestinationWithContext indicates an expected call of DescribeApiDestinationWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) DescribeApiDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApiDestinationWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DescribeApiDestinationWithContext), varargs...)
+}
+
 // DescribeArchive mocks base method
 func (m *MockCloudWatchEventsAPI) DescribeArchive(arg0 *cloudwatchevents.DescribeArchiveInput) (*cloudwatchevents.DescribeArchiveOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +883,56 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) DescribeArchiveWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeArchiveWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DescribeArchiveWithContext), varargs...)
+}
+
+// DescribeConnection mocks base method
+func (m *MockCloudWatchEventsAPI) DescribeConnection(arg0 *cloudwatchevents.DescribeConnectionInput) (*cloudwatchevents.DescribeConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeConnection", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.DescribeConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeConnection indicates an expected call of DescribeConnection
+func (mr *MockCloudWatchEventsAPIMockRecorder) DescribeConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnection", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DescribeConnection), arg0)
+}
+
+// DescribeConnectionRequest mocks base method
+func (m *MockCloudWatchEventsAPI) DescribeConnectionRequest(arg0 *cloudwatchevents.DescribeConnectionInput) (*request.Request, *cloudwatchevents.DescribeConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.DescribeConnectionOutput)
+	return ret0, ret1
+}
+
+// DescribeConnectionRequest indicates an expected call of DescribeConnectionRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) DescribeConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnectionRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DescribeConnectionRequest), arg0)
+}
+
+// DescribeConnectionWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) DescribeConnectionWithContext(arg0 context.Context, arg1 *cloudwatchevents.DescribeConnectionInput, arg2 ...request.Option) (*cloudwatchevents.DescribeConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.DescribeConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeConnectionWithContext indicates an expected call of DescribeConnectionWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) DescribeConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnectionWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).DescribeConnectionWithContext), varargs...)
 }
 
 // DescribeEventBus mocks base method
@@ -935,6 +1285,56 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) EnableRuleWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableRuleWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).EnableRuleWithContext), varargs...)
 }
 
+// ListApiDestinations mocks base method
+func (m *MockCloudWatchEventsAPI) ListApiDestinations(arg0 *cloudwatchevents.ListApiDestinationsInput) (*cloudwatchevents.ListApiDestinationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApiDestinations", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.ListApiDestinationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApiDestinations indicates an expected call of ListApiDestinations
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListApiDestinations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApiDestinations", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListApiDestinations), arg0)
+}
+
+// ListApiDestinationsRequest mocks base method
+func (m *MockCloudWatchEventsAPI) ListApiDestinationsRequest(arg0 *cloudwatchevents.ListApiDestinationsInput) (*request.Request, *cloudwatchevents.ListApiDestinationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApiDestinationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.ListApiDestinationsOutput)
+	return ret0, ret1
+}
+
+// ListApiDestinationsRequest indicates an expected call of ListApiDestinationsRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListApiDestinationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApiDestinationsRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListApiDestinationsRequest), arg0)
+}
+
+// ListApiDestinationsWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) ListApiDestinationsWithContext(arg0 context.Context, arg1 *cloudwatchevents.ListApiDestinationsInput, arg2 ...request.Option) (*cloudwatchevents.ListApiDestinationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApiDestinationsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.ListApiDestinationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApiDestinationsWithContext indicates an expected call of ListApiDestinationsWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListApiDestinationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApiDestinationsWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListApiDestinationsWithContext), varargs...)
+}
+
 // ListArchives mocks base method
 func (m *MockCloudWatchEventsAPI) ListArchives(arg0 *cloudwatchevents.ListArchivesInput) (*cloudwatchevents.ListArchivesOutput, error) {
 	m.ctrl.T.Helper()
@@ -983,6 +1383,56 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) ListArchivesWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListArchivesWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListArchivesWithContext), varargs...)
+}
+
+// ListConnections mocks base method
+func (m *MockCloudWatchEventsAPI) ListConnections(arg0 *cloudwatchevents.ListConnectionsInput) (*cloudwatchevents.ListConnectionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnections", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.ListConnectionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConnections indicates an expected call of ListConnections
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListConnections(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnections", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListConnections), arg0)
+}
+
+// ListConnectionsRequest mocks base method
+func (m *MockCloudWatchEventsAPI) ListConnectionsRequest(arg0 *cloudwatchevents.ListConnectionsInput) (*request.Request, *cloudwatchevents.ListConnectionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnectionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.ListConnectionsOutput)
+	return ret0, ret1
+}
+
+// ListConnectionsRequest indicates an expected call of ListConnectionsRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListConnectionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectionsRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListConnectionsRequest), arg0)
+}
+
+// ListConnectionsWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) ListConnectionsWithContext(arg0 context.Context, arg1 *cloudwatchevents.ListConnectionsInput, arg2 ...request.Option) (*cloudwatchevents.ListConnectionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListConnectionsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.ListConnectionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConnectionsWithContext indicates an expected call of ListConnectionsWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) ListConnectionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectionsWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).ListConnectionsWithContext), varargs...)
 }
 
 // ListEventBuses mocks base method
@@ -1985,6 +2435,56 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) UntagResourceWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
+// UpdateApiDestination mocks base method
+func (m *MockCloudWatchEventsAPI) UpdateApiDestination(arg0 *cloudwatchevents.UpdateApiDestinationInput) (*cloudwatchevents.UpdateApiDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApiDestination", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.UpdateApiDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApiDestination indicates an expected call of UpdateApiDestination
+func (mr *MockCloudWatchEventsAPIMockRecorder) UpdateApiDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiDestination", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).UpdateApiDestination), arg0)
+}
+
+// UpdateApiDestinationRequest mocks base method
+func (m *MockCloudWatchEventsAPI) UpdateApiDestinationRequest(arg0 *cloudwatchevents.UpdateApiDestinationInput) (*request.Request, *cloudwatchevents.UpdateApiDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApiDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.UpdateApiDestinationOutput)
+	return ret0, ret1
+}
+
+// UpdateApiDestinationRequest indicates an expected call of UpdateApiDestinationRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) UpdateApiDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiDestinationRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).UpdateApiDestinationRequest), arg0)
+}
+
+// UpdateApiDestinationWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) UpdateApiDestinationWithContext(arg0 context.Context, arg1 *cloudwatchevents.UpdateApiDestinationInput, arg2 ...request.Option) (*cloudwatchevents.UpdateApiDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateApiDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.UpdateApiDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApiDestinationWithContext indicates an expected call of UpdateApiDestinationWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) UpdateApiDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApiDestinationWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).UpdateApiDestinationWithContext), varargs...)
+}
+
 // UpdateArchive mocks base method
 func (m *MockCloudWatchEventsAPI) UpdateArchive(arg0 *cloudwatchevents.UpdateArchiveInput) (*cloudwatchevents.UpdateArchiveOutput, error) {
 	m.ctrl.T.Helper()
@@ -2033,4 +2533,54 @@ func (mr *MockCloudWatchEventsAPIMockRecorder) UpdateArchiveWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateArchiveWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).UpdateArchiveWithContext), varargs...)
+}
+
+// UpdateConnection mocks base method
+func (m *MockCloudWatchEventsAPI) UpdateConnection(arg0 *cloudwatchevents.UpdateConnectionInput) (*cloudwatchevents.UpdateConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnection", arg0)
+	ret0, _ := ret[0].(*cloudwatchevents.UpdateConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnection indicates an expected call of UpdateConnection
+func (mr *MockCloudWatchEventsAPIMockRecorder) UpdateConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnection", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).UpdateConnection), arg0)
+}
+
+// UpdateConnectionRequest mocks base method
+func (m *MockCloudWatchEventsAPI) UpdateConnectionRequest(arg0 *cloudwatchevents.UpdateConnectionInput) (*request.Request, *cloudwatchevents.UpdateConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevents.UpdateConnectionOutput)
+	return ret0, ret1
+}
+
+// UpdateConnectionRequest indicates an expected call of UpdateConnectionRequest
+func (mr *MockCloudWatchEventsAPIMockRecorder) UpdateConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectionRequest", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).UpdateConnectionRequest), arg0)
+}
+
+// UpdateConnectionWithContext mocks base method
+func (m *MockCloudWatchEventsAPI) UpdateConnectionWithContext(arg0 context.Context, arg1 *cloudwatchevents.UpdateConnectionInput, arg2 ...request.Option) (*cloudwatchevents.UpdateConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevents.UpdateConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectionWithContext indicates an expected call of UpdateConnectionWithContext
+func (mr *MockCloudWatchEventsAPIMockRecorder) UpdateConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectionWithContext", reflect.TypeOf((*MockCloudWatchEventsAPI)(nil).UpdateConnectionWithContext), varargs...)
 }
