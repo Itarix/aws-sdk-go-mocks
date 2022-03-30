@@ -1350,6 +1350,56 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) UpdateApplication(arg0 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplication", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).UpdateApplication), arg0)
 }
 
+// UpdateApplicationMaintenanceConfiguration mocks base method
+func (m *MockKinesisAnalyticsV2API) UpdateApplicationMaintenanceConfiguration(arg0 *kinesisanalyticsv2.UpdateApplicationMaintenanceConfigurationInput) (*kinesisanalyticsv2.UpdateApplicationMaintenanceConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApplicationMaintenanceConfiguration", arg0)
+	ret0, _ := ret[0].(*kinesisanalyticsv2.UpdateApplicationMaintenanceConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApplicationMaintenanceConfiguration indicates an expected call of UpdateApplicationMaintenanceConfiguration
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) UpdateApplicationMaintenanceConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationMaintenanceConfiguration", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).UpdateApplicationMaintenanceConfiguration), arg0)
+}
+
+// UpdateApplicationMaintenanceConfigurationRequest mocks base method
+func (m *MockKinesisAnalyticsV2API) UpdateApplicationMaintenanceConfigurationRequest(arg0 *kinesisanalyticsv2.UpdateApplicationMaintenanceConfigurationInput) (*request.Request, *kinesisanalyticsv2.UpdateApplicationMaintenanceConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApplicationMaintenanceConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisanalyticsv2.UpdateApplicationMaintenanceConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateApplicationMaintenanceConfigurationRequest indicates an expected call of UpdateApplicationMaintenanceConfigurationRequest
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) UpdateApplicationMaintenanceConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationMaintenanceConfigurationRequest", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).UpdateApplicationMaintenanceConfigurationRequest), arg0)
+}
+
+// UpdateApplicationMaintenanceConfigurationWithContext mocks base method
+func (m *MockKinesisAnalyticsV2API) UpdateApplicationMaintenanceConfigurationWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.UpdateApplicationMaintenanceConfigurationInput, arg2 ...request.Option) (*kinesisanalyticsv2.UpdateApplicationMaintenanceConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateApplicationMaintenanceConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisanalyticsv2.UpdateApplicationMaintenanceConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApplicationMaintenanceConfigurationWithContext indicates an expected call of UpdateApplicationMaintenanceConfigurationWithContext
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) UpdateApplicationMaintenanceConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationMaintenanceConfigurationWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).UpdateApplicationMaintenanceConfigurationWithContext), varargs...)
+}
+
 // UpdateApplicationRequest mocks base method
 func (m *MockKinesisAnalyticsV2API) UpdateApplicationRequest(arg0 *kinesisanalyticsv2.UpdateApplicationInput) (*request.Request, *kinesisanalyticsv2.UpdateApplicationOutput) {
 	m.ctrl.T.Helper()

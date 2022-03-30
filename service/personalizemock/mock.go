@@ -150,6 +150,56 @@ func (mr *MockPersonalizeAPIMockRecorder) CreateDataset(arg0 interface{}) *gomoc
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataset", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateDataset), arg0)
 }
 
+// CreateDatasetExportJob mocks base method
+func (m *MockPersonalizeAPI) CreateDatasetExportJob(arg0 *personalize.CreateDatasetExportJobInput) (*personalize.CreateDatasetExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDatasetExportJob", arg0)
+	ret0, _ := ret[0].(*personalize.CreateDatasetExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDatasetExportJob indicates an expected call of CreateDatasetExportJob
+func (mr *MockPersonalizeAPIMockRecorder) CreateDatasetExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatasetExportJob", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateDatasetExportJob), arg0)
+}
+
+// CreateDatasetExportJobRequest mocks base method
+func (m *MockPersonalizeAPI) CreateDatasetExportJobRequest(arg0 *personalize.CreateDatasetExportJobInput) (*request.Request, *personalize.CreateDatasetExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDatasetExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.CreateDatasetExportJobOutput)
+	return ret0, ret1
+}
+
+// CreateDatasetExportJobRequest indicates an expected call of CreateDatasetExportJobRequest
+func (mr *MockPersonalizeAPIMockRecorder) CreateDatasetExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatasetExportJobRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateDatasetExportJobRequest), arg0)
+}
+
+// CreateDatasetExportJobWithContext mocks base method
+func (m *MockPersonalizeAPI) CreateDatasetExportJobWithContext(arg0 context.Context, arg1 *personalize.CreateDatasetExportJobInput, arg2 ...request.Option) (*personalize.CreateDatasetExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDatasetExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.CreateDatasetExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDatasetExportJobWithContext indicates an expected call of CreateDatasetExportJobWithContext
+func (mr *MockPersonalizeAPIMockRecorder) CreateDatasetExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatasetExportJobWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateDatasetExportJobWithContext), varargs...)
+}
+
 // CreateDatasetGroup mocks base method
 func (m *MockPersonalizeAPI) CreateDatasetGroup(arg0 *personalize.CreateDatasetGroupInput) (*personalize.CreateDatasetGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -1050,6 +1100,56 @@ func (mr *MockPersonalizeAPIMockRecorder) DescribeDataset(arg0 interface{}) *gom
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataset", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeDataset), arg0)
 }
 
+// DescribeDatasetExportJob mocks base method
+func (m *MockPersonalizeAPI) DescribeDatasetExportJob(arg0 *personalize.DescribeDatasetExportJobInput) (*personalize.DescribeDatasetExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDatasetExportJob", arg0)
+	ret0, _ := ret[0].(*personalize.DescribeDatasetExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDatasetExportJob indicates an expected call of DescribeDatasetExportJob
+func (mr *MockPersonalizeAPIMockRecorder) DescribeDatasetExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDatasetExportJob", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeDatasetExportJob), arg0)
+}
+
+// DescribeDatasetExportJobRequest mocks base method
+func (m *MockPersonalizeAPI) DescribeDatasetExportJobRequest(arg0 *personalize.DescribeDatasetExportJobInput) (*request.Request, *personalize.DescribeDatasetExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDatasetExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.DescribeDatasetExportJobOutput)
+	return ret0, ret1
+}
+
+// DescribeDatasetExportJobRequest indicates an expected call of DescribeDatasetExportJobRequest
+func (mr *MockPersonalizeAPIMockRecorder) DescribeDatasetExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDatasetExportJobRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeDatasetExportJobRequest), arg0)
+}
+
+// DescribeDatasetExportJobWithContext mocks base method
+func (m *MockPersonalizeAPI) DescribeDatasetExportJobWithContext(arg0 context.Context, arg1 *personalize.DescribeDatasetExportJobInput, arg2 ...request.Option) (*personalize.DescribeDatasetExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDatasetExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.DescribeDatasetExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDatasetExportJobWithContext indicates an expected call of DescribeDatasetExportJobWithContext
+func (mr *MockPersonalizeAPIMockRecorder) DescribeDatasetExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDatasetExportJobWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeDatasetExportJobWithContext), varargs...)
+}
+
 // DescribeDatasetGroup mocks base method
 func (m *MockPersonalizeAPI) DescribeDatasetGroup(arg0 *personalize.DescribeDatasetGroupInput) (*personalize.DescribeDatasetGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -1751,6 +1851,89 @@ func (mr *MockPersonalizeAPIMockRecorder) ListCampaignsWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCampaignsWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListCampaignsWithContext), varargs...)
 }
 
+// ListDatasetExportJobs mocks base method
+func (m *MockPersonalizeAPI) ListDatasetExportJobs(arg0 *personalize.ListDatasetExportJobsInput) (*personalize.ListDatasetExportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasetExportJobs", arg0)
+	ret0, _ := ret[0].(*personalize.ListDatasetExportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDatasetExportJobs indicates an expected call of ListDatasetExportJobs
+func (mr *MockPersonalizeAPIMockRecorder) ListDatasetExportJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetExportJobs", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListDatasetExportJobs), arg0)
+}
+
+// ListDatasetExportJobsPages mocks base method
+func (m *MockPersonalizeAPI) ListDatasetExportJobsPages(arg0 *personalize.ListDatasetExportJobsInput, arg1 func(*personalize.ListDatasetExportJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasetExportJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDatasetExportJobsPages indicates an expected call of ListDatasetExportJobsPages
+func (mr *MockPersonalizeAPIMockRecorder) ListDatasetExportJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetExportJobsPages", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListDatasetExportJobsPages), arg0, arg1)
+}
+
+// ListDatasetExportJobsPagesWithContext mocks base method
+func (m *MockPersonalizeAPI) ListDatasetExportJobsPagesWithContext(arg0 context.Context, arg1 *personalize.ListDatasetExportJobsInput, arg2 func(*personalize.ListDatasetExportJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDatasetExportJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDatasetExportJobsPagesWithContext indicates an expected call of ListDatasetExportJobsPagesWithContext
+func (mr *MockPersonalizeAPIMockRecorder) ListDatasetExportJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetExportJobsPagesWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListDatasetExportJobsPagesWithContext), varargs...)
+}
+
+// ListDatasetExportJobsRequest mocks base method
+func (m *MockPersonalizeAPI) ListDatasetExportJobsRequest(arg0 *personalize.ListDatasetExportJobsInput) (*request.Request, *personalize.ListDatasetExportJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasetExportJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.ListDatasetExportJobsOutput)
+	return ret0, ret1
+}
+
+// ListDatasetExportJobsRequest indicates an expected call of ListDatasetExportJobsRequest
+func (mr *MockPersonalizeAPIMockRecorder) ListDatasetExportJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetExportJobsRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListDatasetExportJobsRequest), arg0)
+}
+
+// ListDatasetExportJobsWithContext mocks base method
+func (m *MockPersonalizeAPI) ListDatasetExportJobsWithContext(arg0 context.Context, arg1 *personalize.ListDatasetExportJobsInput, arg2 ...request.Option) (*personalize.ListDatasetExportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDatasetExportJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.ListDatasetExportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDatasetExportJobsWithContext indicates an expected call of ListDatasetExportJobsWithContext
+func (mr *MockPersonalizeAPIMockRecorder) ListDatasetExportJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetExportJobsWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListDatasetExportJobsWithContext), varargs...)
+}
+
 // ListDatasetGroups mocks base method
 func (m *MockPersonalizeAPI) ListDatasetGroups(arg0 *personalize.ListDatasetGroupsInput) (*personalize.ListDatasetGroupsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2096,6 +2279,39 @@ func (m *MockPersonalizeAPI) ListFilters(arg0 *personalize.ListFiltersInput) (*p
 func (mr *MockPersonalizeAPIMockRecorder) ListFilters(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFilters", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListFilters), arg0)
+}
+
+// ListFiltersPages mocks base method
+func (m *MockPersonalizeAPI) ListFiltersPages(arg0 *personalize.ListFiltersInput, arg1 func(*personalize.ListFiltersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFiltersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFiltersPages indicates an expected call of ListFiltersPages
+func (mr *MockPersonalizeAPIMockRecorder) ListFiltersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFiltersPages", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListFiltersPages), arg0, arg1)
+}
+
+// ListFiltersPagesWithContext mocks base method
+func (m *MockPersonalizeAPI) ListFiltersPagesWithContext(arg0 context.Context, arg1 *personalize.ListFiltersInput, arg2 func(*personalize.ListFiltersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFiltersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFiltersPagesWithContext indicates an expected call of ListFiltersPagesWithContext
+func (mr *MockPersonalizeAPIMockRecorder) ListFiltersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFiltersPagesWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListFiltersPagesWithContext), varargs...)
 }
 
 // ListFiltersRequest mocks base method
