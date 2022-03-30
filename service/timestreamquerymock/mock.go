@@ -85,6 +85,106 @@ func (mr *MockTimestreamQueryAPIMockRecorder) CancelQueryWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelQueryWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).CancelQueryWithContext), varargs...)
 }
 
+// CreateScheduledQuery mocks base method
+func (m *MockTimestreamQueryAPI) CreateScheduledQuery(arg0 *timestreamquery.CreateScheduledQueryInput) (*timestreamquery.CreateScheduledQueryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateScheduledQuery", arg0)
+	ret0, _ := ret[0].(*timestreamquery.CreateScheduledQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateScheduledQuery indicates an expected call of CreateScheduledQuery
+func (mr *MockTimestreamQueryAPIMockRecorder) CreateScheduledQuery(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateScheduledQuery", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).CreateScheduledQuery), arg0)
+}
+
+// CreateScheduledQueryRequest mocks base method
+func (m *MockTimestreamQueryAPI) CreateScheduledQueryRequest(arg0 *timestreamquery.CreateScheduledQueryInput) (*request.Request, *timestreamquery.CreateScheduledQueryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateScheduledQueryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*timestreamquery.CreateScheduledQueryOutput)
+	return ret0, ret1
+}
+
+// CreateScheduledQueryRequest indicates an expected call of CreateScheduledQueryRequest
+func (mr *MockTimestreamQueryAPIMockRecorder) CreateScheduledQueryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateScheduledQueryRequest", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).CreateScheduledQueryRequest), arg0)
+}
+
+// CreateScheduledQueryWithContext mocks base method
+func (m *MockTimestreamQueryAPI) CreateScheduledQueryWithContext(arg0 context.Context, arg1 *timestreamquery.CreateScheduledQueryInput, arg2 ...request.Option) (*timestreamquery.CreateScheduledQueryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateScheduledQueryWithContext", varargs...)
+	ret0, _ := ret[0].(*timestreamquery.CreateScheduledQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateScheduledQueryWithContext indicates an expected call of CreateScheduledQueryWithContext
+func (mr *MockTimestreamQueryAPIMockRecorder) CreateScheduledQueryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateScheduledQueryWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).CreateScheduledQueryWithContext), varargs...)
+}
+
+// DeleteScheduledQuery mocks base method
+func (m *MockTimestreamQueryAPI) DeleteScheduledQuery(arg0 *timestreamquery.DeleteScheduledQueryInput) (*timestreamquery.DeleteScheduledQueryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteScheduledQuery", arg0)
+	ret0, _ := ret[0].(*timestreamquery.DeleteScheduledQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteScheduledQuery indicates an expected call of DeleteScheduledQuery
+func (mr *MockTimestreamQueryAPIMockRecorder) DeleteScheduledQuery(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteScheduledQuery", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).DeleteScheduledQuery), arg0)
+}
+
+// DeleteScheduledQueryRequest mocks base method
+func (m *MockTimestreamQueryAPI) DeleteScheduledQueryRequest(arg0 *timestreamquery.DeleteScheduledQueryInput) (*request.Request, *timestreamquery.DeleteScheduledQueryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteScheduledQueryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*timestreamquery.DeleteScheduledQueryOutput)
+	return ret0, ret1
+}
+
+// DeleteScheduledQueryRequest indicates an expected call of DeleteScheduledQueryRequest
+func (mr *MockTimestreamQueryAPIMockRecorder) DeleteScheduledQueryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteScheduledQueryRequest", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).DeleteScheduledQueryRequest), arg0)
+}
+
+// DeleteScheduledQueryWithContext mocks base method
+func (m *MockTimestreamQueryAPI) DeleteScheduledQueryWithContext(arg0 context.Context, arg1 *timestreamquery.DeleteScheduledQueryInput, arg2 ...request.Option) (*timestreamquery.DeleteScheduledQueryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteScheduledQueryWithContext", varargs...)
+	ret0, _ := ret[0].(*timestreamquery.DeleteScheduledQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteScheduledQueryWithContext indicates an expected call of DeleteScheduledQueryWithContext
+func (mr *MockTimestreamQueryAPIMockRecorder) DeleteScheduledQueryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteScheduledQueryWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).DeleteScheduledQueryWithContext), varargs...)
+}
+
 // DescribeEndpoints mocks base method
 func (m *MockTimestreamQueryAPI) DescribeEndpoints(arg0 *timestreamquery.DescribeEndpointsInput) (*timestreamquery.DescribeEndpointsOutput, error) {
 	m.ctrl.T.Helper()
@@ -133,6 +233,322 @@ func (mr *MockTimestreamQueryAPIMockRecorder) DescribeEndpointsWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointsWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).DescribeEndpointsWithContext), varargs...)
+}
+
+// DescribeScheduledQuery mocks base method
+func (m *MockTimestreamQueryAPI) DescribeScheduledQuery(arg0 *timestreamquery.DescribeScheduledQueryInput) (*timestreamquery.DescribeScheduledQueryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeScheduledQuery", arg0)
+	ret0, _ := ret[0].(*timestreamquery.DescribeScheduledQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeScheduledQuery indicates an expected call of DescribeScheduledQuery
+func (mr *MockTimestreamQueryAPIMockRecorder) DescribeScheduledQuery(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduledQuery", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).DescribeScheduledQuery), arg0)
+}
+
+// DescribeScheduledQueryRequest mocks base method
+func (m *MockTimestreamQueryAPI) DescribeScheduledQueryRequest(arg0 *timestreamquery.DescribeScheduledQueryInput) (*request.Request, *timestreamquery.DescribeScheduledQueryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeScheduledQueryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*timestreamquery.DescribeScheduledQueryOutput)
+	return ret0, ret1
+}
+
+// DescribeScheduledQueryRequest indicates an expected call of DescribeScheduledQueryRequest
+func (mr *MockTimestreamQueryAPIMockRecorder) DescribeScheduledQueryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduledQueryRequest", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).DescribeScheduledQueryRequest), arg0)
+}
+
+// DescribeScheduledQueryWithContext mocks base method
+func (m *MockTimestreamQueryAPI) DescribeScheduledQueryWithContext(arg0 context.Context, arg1 *timestreamquery.DescribeScheduledQueryInput, arg2 ...request.Option) (*timestreamquery.DescribeScheduledQueryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeScheduledQueryWithContext", varargs...)
+	ret0, _ := ret[0].(*timestreamquery.DescribeScheduledQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeScheduledQueryWithContext indicates an expected call of DescribeScheduledQueryWithContext
+func (mr *MockTimestreamQueryAPIMockRecorder) DescribeScheduledQueryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduledQueryWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).DescribeScheduledQueryWithContext), varargs...)
+}
+
+// ExecuteScheduledQuery mocks base method
+func (m *MockTimestreamQueryAPI) ExecuteScheduledQuery(arg0 *timestreamquery.ExecuteScheduledQueryInput) (*timestreamquery.ExecuteScheduledQueryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExecuteScheduledQuery", arg0)
+	ret0, _ := ret[0].(*timestreamquery.ExecuteScheduledQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExecuteScheduledQuery indicates an expected call of ExecuteScheduledQuery
+func (mr *MockTimestreamQueryAPIMockRecorder) ExecuteScheduledQuery(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteScheduledQuery", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).ExecuteScheduledQuery), arg0)
+}
+
+// ExecuteScheduledQueryRequest mocks base method
+func (m *MockTimestreamQueryAPI) ExecuteScheduledQueryRequest(arg0 *timestreamquery.ExecuteScheduledQueryInput) (*request.Request, *timestreamquery.ExecuteScheduledQueryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExecuteScheduledQueryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*timestreamquery.ExecuteScheduledQueryOutput)
+	return ret0, ret1
+}
+
+// ExecuteScheduledQueryRequest indicates an expected call of ExecuteScheduledQueryRequest
+func (mr *MockTimestreamQueryAPIMockRecorder) ExecuteScheduledQueryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteScheduledQueryRequest", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).ExecuteScheduledQueryRequest), arg0)
+}
+
+// ExecuteScheduledQueryWithContext mocks base method
+func (m *MockTimestreamQueryAPI) ExecuteScheduledQueryWithContext(arg0 context.Context, arg1 *timestreamquery.ExecuteScheduledQueryInput, arg2 ...request.Option) (*timestreamquery.ExecuteScheduledQueryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExecuteScheduledQueryWithContext", varargs...)
+	ret0, _ := ret[0].(*timestreamquery.ExecuteScheduledQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExecuteScheduledQueryWithContext indicates an expected call of ExecuteScheduledQueryWithContext
+func (mr *MockTimestreamQueryAPIMockRecorder) ExecuteScheduledQueryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteScheduledQueryWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).ExecuteScheduledQueryWithContext), varargs...)
+}
+
+// ListScheduledQueries mocks base method
+func (m *MockTimestreamQueryAPI) ListScheduledQueries(arg0 *timestreamquery.ListScheduledQueriesInput) (*timestreamquery.ListScheduledQueriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListScheduledQueries", arg0)
+	ret0, _ := ret[0].(*timestreamquery.ListScheduledQueriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListScheduledQueries indicates an expected call of ListScheduledQueries
+func (mr *MockTimestreamQueryAPIMockRecorder) ListScheduledQueries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScheduledQueries", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).ListScheduledQueries), arg0)
+}
+
+// ListScheduledQueriesPages mocks base method
+func (m *MockTimestreamQueryAPI) ListScheduledQueriesPages(arg0 *timestreamquery.ListScheduledQueriesInput, arg1 func(*timestreamquery.ListScheduledQueriesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListScheduledQueriesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListScheduledQueriesPages indicates an expected call of ListScheduledQueriesPages
+func (mr *MockTimestreamQueryAPIMockRecorder) ListScheduledQueriesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScheduledQueriesPages", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).ListScheduledQueriesPages), arg0, arg1)
+}
+
+// ListScheduledQueriesPagesWithContext mocks base method
+func (m *MockTimestreamQueryAPI) ListScheduledQueriesPagesWithContext(arg0 context.Context, arg1 *timestreamquery.ListScheduledQueriesInput, arg2 func(*timestreamquery.ListScheduledQueriesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListScheduledQueriesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListScheduledQueriesPagesWithContext indicates an expected call of ListScheduledQueriesPagesWithContext
+func (mr *MockTimestreamQueryAPIMockRecorder) ListScheduledQueriesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScheduledQueriesPagesWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).ListScheduledQueriesPagesWithContext), varargs...)
+}
+
+// ListScheduledQueriesRequest mocks base method
+func (m *MockTimestreamQueryAPI) ListScheduledQueriesRequest(arg0 *timestreamquery.ListScheduledQueriesInput) (*request.Request, *timestreamquery.ListScheduledQueriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListScheduledQueriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*timestreamquery.ListScheduledQueriesOutput)
+	return ret0, ret1
+}
+
+// ListScheduledQueriesRequest indicates an expected call of ListScheduledQueriesRequest
+func (mr *MockTimestreamQueryAPIMockRecorder) ListScheduledQueriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScheduledQueriesRequest", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).ListScheduledQueriesRequest), arg0)
+}
+
+// ListScheduledQueriesWithContext mocks base method
+func (m *MockTimestreamQueryAPI) ListScheduledQueriesWithContext(arg0 context.Context, arg1 *timestreamquery.ListScheduledQueriesInput, arg2 ...request.Option) (*timestreamquery.ListScheduledQueriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListScheduledQueriesWithContext", varargs...)
+	ret0, _ := ret[0].(*timestreamquery.ListScheduledQueriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListScheduledQueriesWithContext indicates an expected call of ListScheduledQueriesWithContext
+func (mr *MockTimestreamQueryAPIMockRecorder) ListScheduledQueriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScheduledQueriesWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).ListScheduledQueriesWithContext), varargs...)
+}
+
+// ListTagsForResource mocks base method
+func (m *MockTimestreamQueryAPI) ListTagsForResource(arg0 *timestreamquery.ListTagsForResourceInput) (*timestreamquery.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*timestreamquery.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockTimestreamQueryAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourcePages mocks base method
+func (m *MockTimestreamQueryAPI) ListTagsForResourcePages(arg0 *timestreamquery.ListTagsForResourceInput, arg1 func(*timestreamquery.ListTagsForResourceOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourcePages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTagsForResourcePages indicates an expected call of ListTagsForResourcePages
+func (mr *MockTimestreamQueryAPIMockRecorder) ListTagsForResourcePages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePages", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).ListTagsForResourcePages), arg0, arg1)
+}
+
+// ListTagsForResourcePagesWithContext mocks base method
+func (m *MockTimestreamQueryAPI) ListTagsForResourcePagesWithContext(arg0 context.Context, arg1 *timestreamquery.ListTagsForResourceInput, arg2 func(*timestreamquery.ListTagsForResourceOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourcePagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTagsForResourcePagesWithContext indicates an expected call of ListTagsForResourcePagesWithContext
+func (mr *MockTimestreamQueryAPIMockRecorder) ListTagsForResourcePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePagesWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).ListTagsForResourcePagesWithContext), varargs...)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockTimestreamQueryAPI) ListTagsForResourceRequest(arg0 *timestreamquery.ListTagsForResourceInput) (*request.Request, *timestreamquery.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*timestreamquery.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockTimestreamQueryAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockTimestreamQueryAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *timestreamquery.ListTagsForResourceInput, arg2 ...request.Option) (*timestreamquery.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*timestreamquery.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockTimestreamQueryAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// PrepareQuery mocks base method
+func (m *MockTimestreamQueryAPI) PrepareQuery(arg0 *timestreamquery.PrepareQueryInput) (*timestreamquery.PrepareQueryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PrepareQuery", arg0)
+	ret0, _ := ret[0].(*timestreamquery.PrepareQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PrepareQuery indicates an expected call of PrepareQuery
+func (mr *MockTimestreamQueryAPIMockRecorder) PrepareQuery(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PrepareQuery", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).PrepareQuery), arg0)
+}
+
+// PrepareQueryRequest mocks base method
+func (m *MockTimestreamQueryAPI) PrepareQueryRequest(arg0 *timestreamquery.PrepareQueryInput) (*request.Request, *timestreamquery.PrepareQueryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PrepareQueryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*timestreamquery.PrepareQueryOutput)
+	return ret0, ret1
+}
+
+// PrepareQueryRequest indicates an expected call of PrepareQueryRequest
+func (mr *MockTimestreamQueryAPIMockRecorder) PrepareQueryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PrepareQueryRequest", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).PrepareQueryRequest), arg0)
+}
+
+// PrepareQueryWithContext mocks base method
+func (m *MockTimestreamQueryAPI) PrepareQueryWithContext(arg0 context.Context, arg1 *timestreamquery.PrepareQueryInput, arg2 ...request.Option) (*timestreamquery.PrepareQueryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PrepareQueryWithContext", varargs...)
+	ret0, _ := ret[0].(*timestreamquery.PrepareQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PrepareQueryWithContext indicates an expected call of PrepareQueryWithContext
+func (mr *MockTimestreamQueryAPIMockRecorder) PrepareQueryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PrepareQueryWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).PrepareQueryWithContext), varargs...)
 }
 
 // Query mocks base method
@@ -216,4 +632,154 @@ func (mr *MockTimestreamQueryAPIMockRecorder) QueryWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "QueryWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).QueryWithContext), varargs...)
+}
+
+// TagResource mocks base method
+func (m *MockTimestreamQueryAPI) TagResource(arg0 *timestreamquery.TagResourceInput) (*timestreamquery.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*timestreamquery.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockTimestreamQueryAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockTimestreamQueryAPI) TagResourceRequest(arg0 *timestreamquery.TagResourceInput) (*request.Request, *timestreamquery.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*timestreamquery.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockTimestreamQueryAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockTimestreamQueryAPI) TagResourceWithContext(arg0 context.Context, arg1 *timestreamquery.TagResourceInput, arg2 ...request.Option) (*timestreamquery.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*timestreamquery.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockTimestreamQueryAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockTimestreamQueryAPI) UntagResource(arg0 *timestreamquery.UntagResourceInput) (*timestreamquery.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*timestreamquery.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockTimestreamQueryAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockTimestreamQueryAPI) UntagResourceRequest(arg0 *timestreamquery.UntagResourceInput) (*request.Request, *timestreamquery.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*timestreamquery.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockTimestreamQueryAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockTimestreamQueryAPI) UntagResourceWithContext(arg0 context.Context, arg1 *timestreamquery.UntagResourceInput, arg2 ...request.Option) (*timestreamquery.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*timestreamquery.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockTimestreamQueryAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateScheduledQuery mocks base method
+func (m *MockTimestreamQueryAPI) UpdateScheduledQuery(arg0 *timestreamquery.UpdateScheduledQueryInput) (*timestreamquery.UpdateScheduledQueryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateScheduledQuery", arg0)
+	ret0, _ := ret[0].(*timestreamquery.UpdateScheduledQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateScheduledQuery indicates an expected call of UpdateScheduledQuery
+func (mr *MockTimestreamQueryAPIMockRecorder) UpdateScheduledQuery(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateScheduledQuery", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).UpdateScheduledQuery), arg0)
+}
+
+// UpdateScheduledQueryRequest mocks base method
+func (m *MockTimestreamQueryAPI) UpdateScheduledQueryRequest(arg0 *timestreamquery.UpdateScheduledQueryInput) (*request.Request, *timestreamquery.UpdateScheduledQueryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateScheduledQueryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*timestreamquery.UpdateScheduledQueryOutput)
+	return ret0, ret1
+}
+
+// UpdateScheduledQueryRequest indicates an expected call of UpdateScheduledQueryRequest
+func (mr *MockTimestreamQueryAPIMockRecorder) UpdateScheduledQueryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateScheduledQueryRequest", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).UpdateScheduledQueryRequest), arg0)
+}
+
+// UpdateScheduledQueryWithContext mocks base method
+func (m *MockTimestreamQueryAPI) UpdateScheduledQueryWithContext(arg0 context.Context, arg1 *timestreamquery.UpdateScheduledQueryInput, arg2 ...request.Option) (*timestreamquery.UpdateScheduledQueryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateScheduledQueryWithContext", varargs...)
+	ret0, _ := ret[0].(*timestreamquery.UpdateScheduledQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateScheduledQueryWithContext indicates an expected call of UpdateScheduledQueryWithContext
+func (mr *MockTimestreamQueryAPIMockRecorder) UpdateScheduledQueryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateScheduledQueryWithContext", reflect.TypeOf((*MockTimestreamQueryAPI)(nil).UpdateScheduledQueryWithContext), varargs...)
 }

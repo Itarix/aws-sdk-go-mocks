@@ -435,6 +435,56 @@ func (mr *MockProtonAPIMockRecorder) CreateEnvironmentWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEnvironmentWithContext", reflect.TypeOf((*MockProtonAPI)(nil).CreateEnvironmentWithContext), varargs...)
 }
 
+// CreateRepository mocks base method
+func (m *MockProtonAPI) CreateRepository(arg0 *proton.CreateRepositoryInput) (*proton.CreateRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRepository", arg0)
+	ret0, _ := ret[0].(*proton.CreateRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRepository indicates an expected call of CreateRepository
+func (mr *MockProtonAPIMockRecorder) CreateRepository(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRepository", reflect.TypeOf((*MockProtonAPI)(nil).CreateRepository), arg0)
+}
+
+// CreateRepositoryRequest mocks base method
+func (m *MockProtonAPI) CreateRepositoryRequest(arg0 *proton.CreateRepositoryInput) (*request.Request, *proton.CreateRepositoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRepositoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.CreateRepositoryOutput)
+	return ret0, ret1
+}
+
+// CreateRepositoryRequest indicates an expected call of CreateRepositoryRequest
+func (mr *MockProtonAPIMockRecorder) CreateRepositoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRepositoryRequest", reflect.TypeOf((*MockProtonAPI)(nil).CreateRepositoryRequest), arg0)
+}
+
+// CreateRepositoryWithContext mocks base method
+func (m *MockProtonAPI) CreateRepositoryWithContext(arg0 context.Context, arg1 *proton.CreateRepositoryInput, arg2 ...request.Option) (*proton.CreateRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRepositoryWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.CreateRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRepositoryWithContext indicates an expected call of CreateRepositoryWithContext
+func (mr *MockProtonAPIMockRecorder) CreateRepositoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRepositoryWithContext", reflect.TypeOf((*MockProtonAPI)(nil).CreateRepositoryWithContext), varargs...)
+}
+
 // CreateService mocks base method
 func (m *MockProtonAPI) CreateService(arg0 *proton.CreateServiceInput) (*proton.CreateServiceOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +633,56 @@ func (mr *MockProtonAPIMockRecorder) CreateServiceWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateServiceWithContext", reflect.TypeOf((*MockProtonAPI)(nil).CreateServiceWithContext), varargs...)
+}
+
+// CreateTemplateSyncConfig mocks base method
+func (m *MockProtonAPI) CreateTemplateSyncConfig(arg0 *proton.CreateTemplateSyncConfigInput) (*proton.CreateTemplateSyncConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTemplateSyncConfig", arg0)
+	ret0, _ := ret[0].(*proton.CreateTemplateSyncConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTemplateSyncConfig indicates an expected call of CreateTemplateSyncConfig
+func (mr *MockProtonAPIMockRecorder) CreateTemplateSyncConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTemplateSyncConfig", reflect.TypeOf((*MockProtonAPI)(nil).CreateTemplateSyncConfig), arg0)
+}
+
+// CreateTemplateSyncConfigRequest mocks base method
+func (m *MockProtonAPI) CreateTemplateSyncConfigRequest(arg0 *proton.CreateTemplateSyncConfigInput) (*request.Request, *proton.CreateTemplateSyncConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTemplateSyncConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.CreateTemplateSyncConfigOutput)
+	return ret0, ret1
+}
+
+// CreateTemplateSyncConfigRequest indicates an expected call of CreateTemplateSyncConfigRequest
+func (mr *MockProtonAPIMockRecorder) CreateTemplateSyncConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTemplateSyncConfigRequest", reflect.TypeOf((*MockProtonAPI)(nil).CreateTemplateSyncConfigRequest), arg0)
+}
+
+// CreateTemplateSyncConfigWithContext mocks base method
+func (m *MockProtonAPI) CreateTemplateSyncConfigWithContext(arg0 context.Context, arg1 *proton.CreateTemplateSyncConfigInput, arg2 ...request.Option) (*proton.CreateTemplateSyncConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateTemplateSyncConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.CreateTemplateSyncConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTemplateSyncConfigWithContext indicates an expected call of CreateTemplateSyncConfigWithContext
+func (mr *MockProtonAPIMockRecorder) CreateTemplateSyncConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTemplateSyncConfigWithContext", reflect.TypeOf((*MockProtonAPI)(nil).CreateTemplateSyncConfigWithContext), varargs...)
 }
 
 // DeleteEnvironment mocks base method
@@ -785,6 +885,56 @@ func (mr *MockProtonAPIMockRecorder) DeleteEnvironmentWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEnvironmentWithContext", reflect.TypeOf((*MockProtonAPI)(nil).DeleteEnvironmentWithContext), varargs...)
 }
 
+// DeleteRepository mocks base method
+func (m *MockProtonAPI) DeleteRepository(arg0 *proton.DeleteRepositoryInput) (*proton.DeleteRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRepository", arg0)
+	ret0, _ := ret[0].(*proton.DeleteRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRepository indicates an expected call of DeleteRepository
+func (mr *MockProtonAPIMockRecorder) DeleteRepository(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRepository", reflect.TypeOf((*MockProtonAPI)(nil).DeleteRepository), arg0)
+}
+
+// DeleteRepositoryRequest mocks base method
+func (m *MockProtonAPI) DeleteRepositoryRequest(arg0 *proton.DeleteRepositoryInput) (*request.Request, *proton.DeleteRepositoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRepositoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.DeleteRepositoryOutput)
+	return ret0, ret1
+}
+
+// DeleteRepositoryRequest indicates an expected call of DeleteRepositoryRequest
+func (mr *MockProtonAPIMockRecorder) DeleteRepositoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRepositoryRequest", reflect.TypeOf((*MockProtonAPI)(nil).DeleteRepositoryRequest), arg0)
+}
+
+// DeleteRepositoryWithContext mocks base method
+func (m *MockProtonAPI) DeleteRepositoryWithContext(arg0 context.Context, arg1 *proton.DeleteRepositoryInput, arg2 ...request.Option) (*proton.DeleteRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRepositoryWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.DeleteRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRepositoryWithContext indicates an expected call of DeleteRepositoryWithContext
+func (mr *MockProtonAPIMockRecorder) DeleteRepositoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRepositoryWithContext", reflect.TypeOf((*MockProtonAPI)(nil).DeleteRepositoryWithContext), varargs...)
+}
+
 // DeleteService mocks base method
 func (m *MockProtonAPI) DeleteService(arg0 *proton.DeleteServiceInput) (*proton.DeleteServiceOutput, error) {
 	m.ctrl.T.Helper()
@@ -933,6 +1083,56 @@ func (mr *MockProtonAPIMockRecorder) DeleteServiceWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteServiceWithContext", reflect.TypeOf((*MockProtonAPI)(nil).DeleteServiceWithContext), varargs...)
+}
+
+// DeleteTemplateSyncConfig mocks base method
+func (m *MockProtonAPI) DeleteTemplateSyncConfig(arg0 *proton.DeleteTemplateSyncConfigInput) (*proton.DeleteTemplateSyncConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTemplateSyncConfig", arg0)
+	ret0, _ := ret[0].(*proton.DeleteTemplateSyncConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTemplateSyncConfig indicates an expected call of DeleteTemplateSyncConfig
+func (mr *MockProtonAPIMockRecorder) DeleteTemplateSyncConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTemplateSyncConfig", reflect.TypeOf((*MockProtonAPI)(nil).DeleteTemplateSyncConfig), arg0)
+}
+
+// DeleteTemplateSyncConfigRequest mocks base method
+func (m *MockProtonAPI) DeleteTemplateSyncConfigRequest(arg0 *proton.DeleteTemplateSyncConfigInput) (*request.Request, *proton.DeleteTemplateSyncConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTemplateSyncConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.DeleteTemplateSyncConfigOutput)
+	return ret0, ret1
+}
+
+// DeleteTemplateSyncConfigRequest indicates an expected call of DeleteTemplateSyncConfigRequest
+func (mr *MockProtonAPIMockRecorder) DeleteTemplateSyncConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTemplateSyncConfigRequest", reflect.TypeOf((*MockProtonAPI)(nil).DeleteTemplateSyncConfigRequest), arg0)
+}
+
+// DeleteTemplateSyncConfigWithContext mocks base method
+func (m *MockProtonAPI) DeleteTemplateSyncConfigWithContext(arg0 context.Context, arg1 *proton.DeleteTemplateSyncConfigInput, arg2 ...request.Option) (*proton.DeleteTemplateSyncConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteTemplateSyncConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.DeleteTemplateSyncConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTemplateSyncConfigWithContext indicates an expected call of DeleteTemplateSyncConfigWithContext
+func (mr *MockProtonAPIMockRecorder) DeleteTemplateSyncConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTemplateSyncConfigWithContext", reflect.TypeOf((*MockProtonAPI)(nil).DeleteTemplateSyncConfigWithContext), varargs...)
 }
 
 // GetAccountSettings mocks base method
@@ -1185,6 +1385,106 @@ func (mr *MockProtonAPIMockRecorder) GetEnvironmentWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnvironmentWithContext", reflect.TypeOf((*MockProtonAPI)(nil).GetEnvironmentWithContext), varargs...)
 }
 
+// GetRepository mocks base method
+func (m *MockProtonAPI) GetRepository(arg0 *proton.GetRepositoryInput) (*proton.GetRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRepository", arg0)
+	ret0, _ := ret[0].(*proton.GetRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRepository indicates an expected call of GetRepository
+func (mr *MockProtonAPIMockRecorder) GetRepository(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRepository", reflect.TypeOf((*MockProtonAPI)(nil).GetRepository), arg0)
+}
+
+// GetRepositoryRequest mocks base method
+func (m *MockProtonAPI) GetRepositoryRequest(arg0 *proton.GetRepositoryInput) (*request.Request, *proton.GetRepositoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRepositoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.GetRepositoryOutput)
+	return ret0, ret1
+}
+
+// GetRepositoryRequest indicates an expected call of GetRepositoryRequest
+func (mr *MockProtonAPIMockRecorder) GetRepositoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRepositoryRequest", reflect.TypeOf((*MockProtonAPI)(nil).GetRepositoryRequest), arg0)
+}
+
+// GetRepositorySyncStatus mocks base method
+func (m *MockProtonAPI) GetRepositorySyncStatus(arg0 *proton.GetRepositorySyncStatusInput) (*proton.GetRepositorySyncStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRepositorySyncStatus", arg0)
+	ret0, _ := ret[0].(*proton.GetRepositorySyncStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRepositorySyncStatus indicates an expected call of GetRepositorySyncStatus
+func (mr *MockProtonAPIMockRecorder) GetRepositorySyncStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRepositorySyncStatus", reflect.TypeOf((*MockProtonAPI)(nil).GetRepositorySyncStatus), arg0)
+}
+
+// GetRepositorySyncStatusRequest mocks base method
+func (m *MockProtonAPI) GetRepositorySyncStatusRequest(arg0 *proton.GetRepositorySyncStatusInput) (*request.Request, *proton.GetRepositorySyncStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRepositorySyncStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.GetRepositorySyncStatusOutput)
+	return ret0, ret1
+}
+
+// GetRepositorySyncStatusRequest indicates an expected call of GetRepositorySyncStatusRequest
+func (mr *MockProtonAPIMockRecorder) GetRepositorySyncStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRepositorySyncStatusRequest", reflect.TypeOf((*MockProtonAPI)(nil).GetRepositorySyncStatusRequest), arg0)
+}
+
+// GetRepositorySyncStatusWithContext mocks base method
+func (m *MockProtonAPI) GetRepositorySyncStatusWithContext(arg0 context.Context, arg1 *proton.GetRepositorySyncStatusInput, arg2 ...request.Option) (*proton.GetRepositorySyncStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRepositorySyncStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.GetRepositorySyncStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRepositorySyncStatusWithContext indicates an expected call of GetRepositorySyncStatusWithContext
+func (mr *MockProtonAPIMockRecorder) GetRepositorySyncStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRepositorySyncStatusWithContext", reflect.TypeOf((*MockProtonAPI)(nil).GetRepositorySyncStatusWithContext), varargs...)
+}
+
+// GetRepositoryWithContext mocks base method
+func (m *MockProtonAPI) GetRepositoryWithContext(arg0 context.Context, arg1 *proton.GetRepositoryInput, arg2 ...request.Option) (*proton.GetRepositoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRepositoryWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.GetRepositoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRepositoryWithContext indicates an expected call of GetRepositoryWithContext
+func (mr *MockProtonAPIMockRecorder) GetRepositoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRepositoryWithContext", reflect.TypeOf((*MockProtonAPI)(nil).GetRepositoryWithContext), varargs...)
+}
+
 // GetService mocks base method
 func (m *MockProtonAPI) GetService(arg0 *proton.GetServiceInput) (*proton.GetServiceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1385,6 +1685,106 @@ func (mr *MockProtonAPIMockRecorder) GetServiceWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceWithContext", reflect.TypeOf((*MockProtonAPI)(nil).GetServiceWithContext), varargs...)
 }
 
+// GetTemplateSyncConfig mocks base method
+func (m *MockProtonAPI) GetTemplateSyncConfig(arg0 *proton.GetTemplateSyncConfigInput) (*proton.GetTemplateSyncConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTemplateSyncConfig", arg0)
+	ret0, _ := ret[0].(*proton.GetTemplateSyncConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTemplateSyncConfig indicates an expected call of GetTemplateSyncConfig
+func (mr *MockProtonAPIMockRecorder) GetTemplateSyncConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTemplateSyncConfig", reflect.TypeOf((*MockProtonAPI)(nil).GetTemplateSyncConfig), arg0)
+}
+
+// GetTemplateSyncConfigRequest mocks base method
+func (m *MockProtonAPI) GetTemplateSyncConfigRequest(arg0 *proton.GetTemplateSyncConfigInput) (*request.Request, *proton.GetTemplateSyncConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTemplateSyncConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.GetTemplateSyncConfigOutput)
+	return ret0, ret1
+}
+
+// GetTemplateSyncConfigRequest indicates an expected call of GetTemplateSyncConfigRequest
+func (mr *MockProtonAPIMockRecorder) GetTemplateSyncConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTemplateSyncConfigRequest", reflect.TypeOf((*MockProtonAPI)(nil).GetTemplateSyncConfigRequest), arg0)
+}
+
+// GetTemplateSyncConfigWithContext mocks base method
+func (m *MockProtonAPI) GetTemplateSyncConfigWithContext(arg0 context.Context, arg1 *proton.GetTemplateSyncConfigInput, arg2 ...request.Option) (*proton.GetTemplateSyncConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTemplateSyncConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.GetTemplateSyncConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTemplateSyncConfigWithContext indicates an expected call of GetTemplateSyncConfigWithContext
+func (mr *MockProtonAPIMockRecorder) GetTemplateSyncConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTemplateSyncConfigWithContext", reflect.TypeOf((*MockProtonAPI)(nil).GetTemplateSyncConfigWithContext), varargs...)
+}
+
+// GetTemplateSyncStatus mocks base method
+func (m *MockProtonAPI) GetTemplateSyncStatus(arg0 *proton.GetTemplateSyncStatusInput) (*proton.GetTemplateSyncStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTemplateSyncStatus", arg0)
+	ret0, _ := ret[0].(*proton.GetTemplateSyncStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTemplateSyncStatus indicates an expected call of GetTemplateSyncStatus
+func (mr *MockProtonAPIMockRecorder) GetTemplateSyncStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTemplateSyncStatus", reflect.TypeOf((*MockProtonAPI)(nil).GetTemplateSyncStatus), arg0)
+}
+
+// GetTemplateSyncStatusRequest mocks base method
+func (m *MockProtonAPI) GetTemplateSyncStatusRequest(arg0 *proton.GetTemplateSyncStatusInput) (*request.Request, *proton.GetTemplateSyncStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTemplateSyncStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.GetTemplateSyncStatusOutput)
+	return ret0, ret1
+}
+
+// GetTemplateSyncStatusRequest indicates an expected call of GetTemplateSyncStatusRequest
+func (mr *MockProtonAPIMockRecorder) GetTemplateSyncStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTemplateSyncStatusRequest", reflect.TypeOf((*MockProtonAPI)(nil).GetTemplateSyncStatusRequest), arg0)
+}
+
+// GetTemplateSyncStatusWithContext mocks base method
+func (m *MockProtonAPI) GetTemplateSyncStatusWithContext(arg0 context.Context, arg1 *proton.GetTemplateSyncStatusInput, arg2 ...request.Option) (*proton.GetTemplateSyncStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTemplateSyncStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.GetTemplateSyncStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTemplateSyncStatusWithContext indicates an expected call of GetTemplateSyncStatusWithContext
+func (mr *MockProtonAPIMockRecorder) GetTemplateSyncStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTemplateSyncStatusWithContext", reflect.TypeOf((*MockProtonAPI)(nil).GetTemplateSyncStatusWithContext), varargs...)
+}
+
 // ListEnvironmentAccountConnections mocks base method
 func (m *MockProtonAPI) ListEnvironmentAccountConnections(arg0 *proton.ListEnvironmentAccountConnectionsInput) (*proton.ListEnvironmentAccountConnectionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1466,6 +1866,172 @@ func (mr *MockProtonAPIMockRecorder) ListEnvironmentAccountConnectionsWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentAccountConnectionsWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListEnvironmentAccountConnectionsWithContext), varargs...)
+}
+
+// ListEnvironmentOutputs mocks base method
+func (m *MockProtonAPI) ListEnvironmentOutputs(arg0 *proton.ListEnvironmentOutputsInput) (*proton.ListEnvironmentOutputsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEnvironmentOutputs", arg0)
+	ret0, _ := ret[0].(*proton.ListEnvironmentOutputsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEnvironmentOutputs indicates an expected call of ListEnvironmentOutputs
+func (mr *MockProtonAPIMockRecorder) ListEnvironmentOutputs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentOutputs", reflect.TypeOf((*MockProtonAPI)(nil).ListEnvironmentOutputs), arg0)
+}
+
+// ListEnvironmentOutputsPages mocks base method
+func (m *MockProtonAPI) ListEnvironmentOutputsPages(arg0 *proton.ListEnvironmentOutputsInput, arg1 func(*proton.ListEnvironmentOutputsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEnvironmentOutputsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEnvironmentOutputsPages indicates an expected call of ListEnvironmentOutputsPages
+func (mr *MockProtonAPIMockRecorder) ListEnvironmentOutputsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentOutputsPages", reflect.TypeOf((*MockProtonAPI)(nil).ListEnvironmentOutputsPages), arg0, arg1)
+}
+
+// ListEnvironmentOutputsPagesWithContext mocks base method
+func (m *MockProtonAPI) ListEnvironmentOutputsPagesWithContext(arg0 context.Context, arg1 *proton.ListEnvironmentOutputsInput, arg2 func(*proton.ListEnvironmentOutputsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEnvironmentOutputsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEnvironmentOutputsPagesWithContext indicates an expected call of ListEnvironmentOutputsPagesWithContext
+func (mr *MockProtonAPIMockRecorder) ListEnvironmentOutputsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentOutputsPagesWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListEnvironmentOutputsPagesWithContext), varargs...)
+}
+
+// ListEnvironmentOutputsRequest mocks base method
+func (m *MockProtonAPI) ListEnvironmentOutputsRequest(arg0 *proton.ListEnvironmentOutputsInput) (*request.Request, *proton.ListEnvironmentOutputsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEnvironmentOutputsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.ListEnvironmentOutputsOutput)
+	return ret0, ret1
+}
+
+// ListEnvironmentOutputsRequest indicates an expected call of ListEnvironmentOutputsRequest
+func (mr *MockProtonAPIMockRecorder) ListEnvironmentOutputsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentOutputsRequest", reflect.TypeOf((*MockProtonAPI)(nil).ListEnvironmentOutputsRequest), arg0)
+}
+
+// ListEnvironmentOutputsWithContext mocks base method
+func (m *MockProtonAPI) ListEnvironmentOutputsWithContext(arg0 context.Context, arg1 *proton.ListEnvironmentOutputsInput, arg2 ...request.Option) (*proton.ListEnvironmentOutputsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEnvironmentOutputsWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.ListEnvironmentOutputsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEnvironmentOutputsWithContext indicates an expected call of ListEnvironmentOutputsWithContext
+func (mr *MockProtonAPIMockRecorder) ListEnvironmentOutputsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentOutputsWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListEnvironmentOutputsWithContext), varargs...)
+}
+
+// ListEnvironmentProvisionedResources mocks base method
+func (m *MockProtonAPI) ListEnvironmentProvisionedResources(arg0 *proton.ListEnvironmentProvisionedResourcesInput) (*proton.ListEnvironmentProvisionedResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEnvironmentProvisionedResources", arg0)
+	ret0, _ := ret[0].(*proton.ListEnvironmentProvisionedResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEnvironmentProvisionedResources indicates an expected call of ListEnvironmentProvisionedResources
+func (mr *MockProtonAPIMockRecorder) ListEnvironmentProvisionedResources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentProvisionedResources", reflect.TypeOf((*MockProtonAPI)(nil).ListEnvironmentProvisionedResources), arg0)
+}
+
+// ListEnvironmentProvisionedResourcesPages mocks base method
+func (m *MockProtonAPI) ListEnvironmentProvisionedResourcesPages(arg0 *proton.ListEnvironmentProvisionedResourcesInput, arg1 func(*proton.ListEnvironmentProvisionedResourcesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEnvironmentProvisionedResourcesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEnvironmentProvisionedResourcesPages indicates an expected call of ListEnvironmentProvisionedResourcesPages
+func (mr *MockProtonAPIMockRecorder) ListEnvironmentProvisionedResourcesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentProvisionedResourcesPages", reflect.TypeOf((*MockProtonAPI)(nil).ListEnvironmentProvisionedResourcesPages), arg0, arg1)
+}
+
+// ListEnvironmentProvisionedResourcesPagesWithContext mocks base method
+func (m *MockProtonAPI) ListEnvironmentProvisionedResourcesPagesWithContext(arg0 context.Context, arg1 *proton.ListEnvironmentProvisionedResourcesInput, arg2 func(*proton.ListEnvironmentProvisionedResourcesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEnvironmentProvisionedResourcesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEnvironmentProvisionedResourcesPagesWithContext indicates an expected call of ListEnvironmentProvisionedResourcesPagesWithContext
+func (mr *MockProtonAPIMockRecorder) ListEnvironmentProvisionedResourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentProvisionedResourcesPagesWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListEnvironmentProvisionedResourcesPagesWithContext), varargs...)
+}
+
+// ListEnvironmentProvisionedResourcesRequest mocks base method
+func (m *MockProtonAPI) ListEnvironmentProvisionedResourcesRequest(arg0 *proton.ListEnvironmentProvisionedResourcesInput) (*request.Request, *proton.ListEnvironmentProvisionedResourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEnvironmentProvisionedResourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.ListEnvironmentProvisionedResourcesOutput)
+	return ret0, ret1
+}
+
+// ListEnvironmentProvisionedResourcesRequest indicates an expected call of ListEnvironmentProvisionedResourcesRequest
+func (mr *MockProtonAPIMockRecorder) ListEnvironmentProvisionedResourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentProvisionedResourcesRequest", reflect.TypeOf((*MockProtonAPI)(nil).ListEnvironmentProvisionedResourcesRequest), arg0)
+}
+
+// ListEnvironmentProvisionedResourcesWithContext mocks base method
+func (m *MockProtonAPI) ListEnvironmentProvisionedResourcesWithContext(arg0 context.Context, arg1 *proton.ListEnvironmentProvisionedResourcesInput, arg2 ...request.Option) (*proton.ListEnvironmentProvisionedResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEnvironmentProvisionedResourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.ListEnvironmentProvisionedResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEnvironmentProvisionedResourcesWithContext indicates an expected call of ListEnvironmentProvisionedResourcesWithContext
+func (mr *MockProtonAPIMockRecorder) ListEnvironmentProvisionedResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentProvisionedResourcesWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListEnvironmentProvisionedResourcesWithContext), varargs...)
 }
 
 // ListEnvironmentTemplateVersions mocks base method
@@ -1717,6 +2283,338 @@ func (mr *MockProtonAPIMockRecorder) ListEnvironmentsWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentsWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListEnvironmentsWithContext), varargs...)
 }
 
+// ListRepositories mocks base method
+func (m *MockProtonAPI) ListRepositories(arg0 *proton.ListRepositoriesInput) (*proton.ListRepositoriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRepositories", arg0)
+	ret0, _ := ret[0].(*proton.ListRepositoriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRepositories indicates an expected call of ListRepositories
+func (mr *MockProtonAPIMockRecorder) ListRepositories(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositories", reflect.TypeOf((*MockProtonAPI)(nil).ListRepositories), arg0)
+}
+
+// ListRepositoriesPages mocks base method
+func (m *MockProtonAPI) ListRepositoriesPages(arg0 *proton.ListRepositoriesInput, arg1 func(*proton.ListRepositoriesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRepositoriesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRepositoriesPages indicates an expected call of ListRepositoriesPages
+func (mr *MockProtonAPIMockRecorder) ListRepositoriesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositoriesPages", reflect.TypeOf((*MockProtonAPI)(nil).ListRepositoriesPages), arg0, arg1)
+}
+
+// ListRepositoriesPagesWithContext mocks base method
+func (m *MockProtonAPI) ListRepositoriesPagesWithContext(arg0 context.Context, arg1 *proton.ListRepositoriesInput, arg2 func(*proton.ListRepositoriesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRepositoriesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRepositoriesPagesWithContext indicates an expected call of ListRepositoriesPagesWithContext
+func (mr *MockProtonAPIMockRecorder) ListRepositoriesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositoriesPagesWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListRepositoriesPagesWithContext), varargs...)
+}
+
+// ListRepositoriesRequest mocks base method
+func (m *MockProtonAPI) ListRepositoriesRequest(arg0 *proton.ListRepositoriesInput) (*request.Request, *proton.ListRepositoriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRepositoriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.ListRepositoriesOutput)
+	return ret0, ret1
+}
+
+// ListRepositoriesRequest indicates an expected call of ListRepositoriesRequest
+func (mr *MockProtonAPIMockRecorder) ListRepositoriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositoriesRequest", reflect.TypeOf((*MockProtonAPI)(nil).ListRepositoriesRequest), arg0)
+}
+
+// ListRepositoriesWithContext mocks base method
+func (m *MockProtonAPI) ListRepositoriesWithContext(arg0 context.Context, arg1 *proton.ListRepositoriesInput, arg2 ...request.Option) (*proton.ListRepositoriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRepositoriesWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.ListRepositoriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRepositoriesWithContext indicates an expected call of ListRepositoriesWithContext
+func (mr *MockProtonAPIMockRecorder) ListRepositoriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositoriesWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListRepositoriesWithContext), varargs...)
+}
+
+// ListRepositorySyncDefinitions mocks base method
+func (m *MockProtonAPI) ListRepositorySyncDefinitions(arg0 *proton.ListRepositorySyncDefinitionsInput) (*proton.ListRepositorySyncDefinitionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRepositorySyncDefinitions", arg0)
+	ret0, _ := ret[0].(*proton.ListRepositorySyncDefinitionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRepositorySyncDefinitions indicates an expected call of ListRepositorySyncDefinitions
+func (mr *MockProtonAPIMockRecorder) ListRepositorySyncDefinitions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositorySyncDefinitions", reflect.TypeOf((*MockProtonAPI)(nil).ListRepositorySyncDefinitions), arg0)
+}
+
+// ListRepositorySyncDefinitionsPages mocks base method
+func (m *MockProtonAPI) ListRepositorySyncDefinitionsPages(arg0 *proton.ListRepositorySyncDefinitionsInput, arg1 func(*proton.ListRepositorySyncDefinitionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRepositorySyncDefinitionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRepositorySyncDefinitionsPages indicates an expected call of ListRepositorySyncDefinitionsPages
+func (mr *MockProtonAPIMockRecorder) ListRepositorySyncDefinitionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositorySyncDefinitionsPages", reflect.TypeOf((*MockProtonAPI)(nil).ListRepositorySyncDefinitionsPages), arg0, arg1)
+}
+
+// ListRepositorySyncDefinitionsPagesWithContext mocks base method
+func (m *MockProtonAPI) ListRepositorySyncDefinitionsPagesWithContext(arg0 context.Context, arg1 *proton.ListRepositorySyncDefinitionsInput, arg2 func(*proton.ListRepositorySyncDefinitionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRepositorySyncDefinitionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRepositorySyncDefinitionsPagesWithContext indicates an expected call of ListRepositorySyncDefinitionsPagesWithContext
+func (mr *MockProtonAPIMockRecorder) ListRepositorySyncDefinitionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositorySyncDefinitionsPagesWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListRepositorySyncDefinitionsPagesWithContext), varargs...)
+}
+
+// ListRepositorySyncDefinitionsRequest mocks base method
+func (m *MockProtonAPI) ListRepositorySyncDefinitionsRequest(arg0 *proton.ListRepositorySyncDefinitionsInput) (*request.Request, *proton.ListRepositorySyncDefinitionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRepositorySyncDefinitionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.ListRepositorySyncDefinitionsOutput)
+	return ret0, ret1
+}
+
+// ListRepositorySyncDefinitionsRequest indicates an expected call of ListRepositorySyncDefinitionsRequest
+func (mr *MockProtonAPIMockRecorder) ListRepositorySyncDefinitionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositorySyncDefinitionsRequest", reflect.TypeOf((*MockProtonAPI)(nil).ListRepositorySyncDefinitionsRequest), arg0)
+}
+
+// ListRepositorySyncDefinitionsWithContext mocks base method
+func (m *MockProtonAPI) ListRepositorySyncDefinitionsWithContext(arg0 context.Context, arg1 *proton.ListRepositorySyncDefinitionsInput, arg2 ...request.Option) (*proton.ListRepositorySyncDefinitionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRepositorySyncDefinitionsWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.ListRepositorySyncDefinitionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRepositorySyncDefinitionsWithContext indicates an expected call of ListRepositorySyncDefinitionsWithContext
+func (mr *MockProtonAPIMockRecorder) ListRepositorySyncDefinitionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRepositorySyncDefinitionsWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListRepositorySyncDefinitionsWithContext), varargs...)
+}
+
+// ListServiceInstanceOutputs mocks base method
+func (m *MockProtonAPI) ListServiceInstanceOutputs(arg0 *proton.ListServiceInstanceOutputsInput) (*proton.ListServiceInstanceOutputsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServiceInstanceOutputs", arg0)
+	ret0, _ := ret[0].(*proton.ListServiceInstanceOutputsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServiceInstanceOutputs indicates an expected call of ListServiceInstanceOutputs
+func (mr *MockProtonAPIMockRecorder) ListServiceInstanceOutputs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceInstanceOutputs", reflect.TypeOf((*MockProtonAPI)(nil).ListServiceInstanceOutputs), arg0)
+}
+
+// ListServiceInstanceOutputsPages mocks base method
+func (m *MockProtonAPI) ListServiceInstanceOutputsPages(arg0 *proton.ListServiceInstanceOutputsInput, arg1 func(*proton.ListServiceInstanceOutputsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServiceInstanceOutputsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListServiceInstanceOutputsPages indicates an expected call of ListServiceInstanceOutputsPages
+func (mr *MockProtonAPIMockRecorder) ListServiceInstanceOutputsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceInstanceOutputsPages", reflect.TypeOf((*MockProtonAPI)(nil).ListServiceInstanceOutputsPages), arg0, arg1)
+}
+
+// ListServiceInstanceOutputsPagesWithContext mocks base method
+func (m *MockProtonAPI) ListServiceInstanceOutputsPagesWithContext(arg0 context.Context, arg1 *proton.ListServiceInstanceOutputsInput, arg2 func(*proton.ListServiceInstanceOutputsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServiceInstanceOutputsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListServiceInstanceOutputsPagesWithContext indicates an expected call of ListServiceInstanceOutputsPagesWithContext
+func (mr *MockProtonAPIMockRecorder) ListServiceInstanceOutputsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceInstanceOutputsPagesWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListServiceInstanceOutputsPagesWithContext), varargs...)
+}
+
+// ListServiceInstanceOutputsRequest mocks base method
+func (m *MockProtonAPI) ListServiceInstanceOutputsRequest(arg0 *proton.ListServiceInstanceOutputsInput) (*request.Request, *proton.ListServiceInstanceOutputsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServiceInstanceOutputsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.ListServiceInstanceOutputsOutput)
+	return ret0, ret1
+}
+
+// ListServiceInstanceOutputsRequest indicates an expected call of ListServiceInstanceOutputsRequest
+func (mr *MockProtonAPIMockRecorder) ListServiceInstanceOutputsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceInstanceOutputsRequest", reflect.TypeOf((*MockProtonAPI)(nil).ListServiceInstanceOutputsRequest), arg0)
+}
+
+// ListServiceInstanceOutputsWithContext mocks base method
+func (m *MockProtonAPI) ListServiceInstanceOutputsWithContext(arg0 context.Context, arg1 *proton.ListServiceInstanceOutputsInput, arg2 ...request.Option) (*proton.ListServiceInstanceOutputsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServiceInstanceOutputsWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.ListServiceInstanceOutputsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServiceInstanceOutputsWithContext indicates an expected call of ListServiceInstanceOutputsWithContext
+func (mr *MockProtonAPIMockRecorder) ListServiceInstanceOutputsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceInstanceOutputsWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListServiceInstanceOutputsWithContext), varargs...)
+}
+
+// ListServiceInstanceProvisionedResources mocks base method
+func (m *MockProtonAPI) ListServiceInstanceProvisionedResources(arg0 *proton.ListServiceInstanceProvisionedResourcesInput) (*proton.ListServiceInstanceProvisionedResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServiceInstanceProvisionedResources", arg0)
+	ret0, _ := ret[0].(*proton.ListServiceInstanceProvisionedResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServiceInstanceProvisionedResources indicates an expected call of ListServiceInstanceProvisionedResources
+func (mr *MockProtonAPIMockRecorder) ListServiceInstanceProvisionedResources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceInstanceProvisionedResources", reflect.TypeOf((*MockProtonAPI)(nil).ListServiceInstanceProvisionedResources), arg0)
+}
+
+// ListServiceInstanceProvisionedResourcesPages mocks base method
+func (m *MockProtonAPI) ListServiceInstanceProvisionedResourcesPages(arg0 *proton.ListServiceInstanceProvisionedResourcesInput, arg1 func(*proton.ListServiceInstanceProvisionedResourcesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServiceInstanceProvisionedResourcesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListServiceInstanceProvisionedResourcesPages indicates an expected call of ListServiceInstanceProvisionedResourcesPages
+func (mr *MockProtonAPIMockRecorder) ListServiceInstanceProvisionedResourcesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceInstanceProvisionedResourcesPages", reflect.TypeOf((*MockProtonAPI)(nil).ListServiceInstanceProvisionedResourcesPages), arg0, arg1)
+}
+
+// ListServiceInstanceProvisionedResourcesPagesWithContext mocks base method
+func (m *MockProtonAPI) ListServiceInstanceProvisionedResourcesPagesWithContext(arg0 context.Context, arg1 *proton.ListServiceInstanceProvisionedResourcesInput, arg2 func(*proton.ListServiceInstanceProvisionedResourcesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServiceInstanceProvisionedResourcesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListServiceInstanceProvisionedResourcesPagesWithContext indicates an expected call of ListServiceInstanceProvisionedResourcesPagesWithContext
+func (mr *MockProtonAPIMockRecorder) ListServiceInstanceProvisionedResourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceInstanceProvisionedResourcesPagesWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListServiceInstanceProvisionedResourcesPagesWithContext), varargs...)
+}
+
+// ListServiceInstanceProvisionedResourcesRequest mocks base method
+func (m *MockProtonAPI) ListServiceInstanceProvisionedResourcesRequest(arg0 *proton.ListServiceInstanceProvisionedResourcesInput) (*request.Request, *proton.ListServiceInstanceProvisionedResourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServiceInstanceProvisionedResourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.ListServiceInstanceProvisionedResourcesOutput)
+	return ret0, ret1
+}
+
+// ListServiceInstanceProvisionedResourcesRequest indicates an expected call of ListServiceInstanceProvisionedResourcesRequest
+func (mr *MockProtonAPIMockRecorder) ListServiceInstanceProvisionedResourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceInstanceProvisionedResourcesRequest", reflect.TypeOf((*MockProtonAPI)(nil).ListServiceInstanceProvisionedResourcesRequest), arg0)
+}
+
+// ListServiceInstanceProvisionedResourcesWithContext mocks base method
+func (m *MockProtonAPI) ListServiceInstanceProvisionedResourcesWithContext(arg0 context.Context, arg1 *proton.ListServiceInstanceProvisionedResourcesInput, arg2 ...request.Option) (*proton.ListServiceInstanceProvisionedResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServiceInstanceProvisionedResourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.ListServiceInstanceProvisionedResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServiceInstanceProvisionedResourcesWithContext indicates an expected call of ListServiceInstanceProvisionedResourcesWithContext
+func (mr *MockProtonAPIMockRecorder) ListServiceInstanceProvisionedResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceInstanceProvisionedResourcesWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListServiceInstanceProvisionedResourcesWithContext), varargs...)
+}
+
 // ListServiceInstances mocks base method
 func (m *MockProtonAPI) ListServiceInstances(arg0 *proton.ListServiceInstancesInput) (*proton.ListServiceInstancesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1798,6 +2696,172 @@ func (mr *MockProtonAPIMockRecorder) ListServiceInstancesWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceInstancesWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListServiceInstancesWithContext), varargs...)
+}
+
+// ListServicePipelineOutputs mocks base method
+func (m *MockProtonAPI) ListServicePipelineOutputs(arg0 *proton.ListServicePipelineOutputsInput) (*proton.ListServicePipelineOutputsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServicePipelineOutputs", arg0)
+	ret0, _ := ret[0].(*proton.ListServicePipelineOutputsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServicePipelineOutputs indicates an expected call of ListServicePipelineOutputs
+func (mr *MockProtonAPIMockRecorder) ListServicePipelineOutputs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicePipelineOutputs", reflect.TypeOf((*MockProtonAPI)(nil).ListServicePipelineOutputs), arg0)
+}
+
+// ListServicePipelineOutputsPages mocks base method
+func (m *MockProtonAPI) ListServicePipelineOutputsPages(arg0 *proton.ListServicePipelineOutputsInput, arg1 func(*proton.ListServicePipelineOutputsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServicePipelineOutputsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListServicePipelineOutputsPages indicates an expected call of ListServicePipelineOutputsPages
+func (mr *MockProtonAPIMockRecorder) ListServicePipelineOutputsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicePipelineOutputsPages", reflect.TypeOf((*MockProtonAPI)(nil).ListServicePipelineOutputsPages), arg0, arg1)
+}
+
+// ListServicePipelineOutputsPagesWithContext mocks base method
+func (m *MockProtonAPI) ListServicePipelineOutputsPagesWithContext(arg0 context.Context, arg1 *proton.ListServicePipelineOutputsInput, arg2 func(*proton.ListServicePipelineOutputsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServicePipelineOutputsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListServicePipelineOutputsPagesWithContext indicates an expected call of ListServicePipelineOutputsPagesWithContext
+func (mr *MockProtonAPIMockRecorder) ListServicePipelineOutputsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicePipelineOutputsPagesWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListServicePipelineOutputsPagesWithContext), varargs...)
+}
+
+// ListServicePipelineOutputsRequest mocks base method
+func (m *MockProtonAPI) ListServicePipelineOutputsRequest(arg0 *proton.ListServicePipelineOutputsInput) (*request.Request, *proton.ListServicePipelineOutputsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServicePipelineOutputsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.ListServicePipelineOutputsOutput)
+	return ret0, ret1
+}
+
+// ListServicePipelineOutputsRequest indicates an expected call of ListServicePipelineOutputsRequest
+func (mr *MockProtonAPIMockRecorder) ListServicePipelineOutputsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicePipelineOutputsRequest", reflect.TypeOf((*MockProtonAPI)(nil).ListServicePipelineOutputsRequest), arg0)
+}
+
+// ListServicePipelineOutputsWithContext mocks base method
+func (m *MockProtonAPI) ListServicePipelineOutputsWithContext(arg0 context.Context, arg1 *proton.ListServicePipelineOutputsInput, arg2 ...request.Option) (*proton.ListServicePipelineOutputsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServicePipelineOutputsWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.ListServicePipelineOutputsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServicePipelineOutputsWithContext indicates an expected call of ListServicePipelineOutputsWithContext
+func (mr *MockProtonAPIMockRecorder) ListServicePipelineOutputsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicePipelineOutputsWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListServicePipelineOutputsWithContext), varargs...)
+}
+
+// ListServicePipelineProvisionedResources mocks base method
+func (m *MockProtonAPI) ListServicePipelineProvisionedResources(arg0 *proton.ListServicePipelineProvisionedResourcesInput) (*proton.ListServicePipelineProvisionedResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServicePipelineProvisionedResources", arg0)
+	ret0, _ := ret[0].(*proton.ListServicePipelineProvisionedResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServicePipelineProvisionedResources indicates an expected call of ListServicePipelineProvisionedResources
+func (mr *MockProtonAPIMockRecorder) ListServicePipelineProvisionedResources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicePipelineProvisionedResources", reflect.TypeOf((*MockProtonAPI)(nil).ListServicePipelineProvisionedResources), arg0)
+}
+
+// ListServicePipelineProvisionedResourcesPages mocks base method
+func (m *MockProtonAPI) ListServicePipelineProvisionedResourcesPages(arg0 *proton.ListServicePipelineProvisionedResourcesInput, arg1 func(*proton.ListServicePipelineProvisionedResourcesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServicePipelineProvisionedResourcesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListServicePipelineProvisionedResourcesPages indicates an expected call of ListServicePipelineProvisionedResourcesPages
+func (mr *MockProtonAPIMockRecorder) ListServicePipelineProvisionedResourcesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicePipelineProvisionedResourcesPages", reflect.TypeOf((*MockProtonAPI)(nil).ListServicePipelineProvisionedResourcesPages), arg0, arg1)
+}
+
+// ListServicePipelineProvisionedResourcesPagesWithContext mocks base method
+func (m *MockProtonAPI) ListServicePipelineProvisionedResourcesPagesWithContext(arg0 context.Context, arg1 *proton.ListServicePipelineProvisionedResourcesInput, arg2 func(*proton.ListServicePipelineProvisionedResourcesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServicePipelineProvisionedResourcesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListServicePipelineProvisionedResourcesPagesWithContext indicates an expected call of ListServicePipelineProvisionedResourcesPagesWithContext
+func (mr *MockProtonAPIMockRecorder) ListServicePipelineProvisionedResourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicePipelineProvisionedResourcesPagesWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListServicePipelineProvisionedResourcesPagesWithContext), varargs...)
+}
+
+// ListServicePipelineProvisionedResourcesRequest mocks base method
+func (m *MockProtonAPI) ListServicePipelineProvisionedResourcesRequest(arg0 *proton.ListServicePipelineProvisionedResourcesInput) (*request.Request, *proton.ListServicePipelineProvisionedResourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServicePipelineProvisionedResourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.ListServicePipelineProvisionedResourcesOutput)
+	return ret0, ret1
+}
+
+// ListServicePipelineProvisionedResourcesRequest indicates an expected call of ListServicePipelineProvisionedResourcesRequest
+func (mr *MockProtonAPIMockRecorder) ListServicePipelineProvisionedResourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicePipelineProvisionedResourcesRequest", reflect.TypeOf((*MockProtonAPI)(nil).ListServicePipelineProvisionedResourcesRequest), arg0)
+}
+
+// ListServicePipelineProvisionedResourcesWithContext mocks base method
+func (m *MockProtonAPI) ListServicePipelineProvisionedResourcesWithContext(arg0 context.Context, arg1 *proton.ListServicePipelineProvisionedResourcesInput, arg2 ...request.Option) (*proton.ListServicePipelineProvisionedResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServicePipelineProvisionedResourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.ListServicePipelineProvisionedResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServicePipelineProvisionedResourcesWithContext indicates an expected call of ListServicePipelineProvisionedResourcesWithContext
+func (mr *MockProtonAPIMockRecorder) ListServicePipelineProvisionedResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicePipelineProvisionedResourcesWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListServicePipelineProvisionedResourcesWithContext), varargs...)
 }
 
 // ListServiceTemplateVersions mocks base method
@@ -2130,6 +3194,56 @@ func (mr *MockProtonAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockProtonAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// NotifyResourceDeploymentStatusChange mocks base method
+func (m *MockProtonAPI) NotifyResourceDeploymentStatusChange(arg0 *proton.NotifyResourceDeploymentStatusChangeInput) (*proton.NotifyResourceDeploymentStatusChangeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "NotifyResourceDeploymentStatusChange", arg0)
+	ret0, _ := ret[0].(*proton.NotifyResourceDeploymentStatusChangeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// NotifyResourceDeploymentStatusChange indicates an expected call of NotifyResourceDeploymentStatusChange
+func (mr *MockProtonAPIMockRecorder) NotifyResourceDeploymentStatusChange(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyResourceDeploymentStatusChange", reflect.TypeOf((*MockProtonAPI)(nil).NotifyResourceDeploymentStatusChange), arg0)
+}
+
+// NotifyResourceDeploymentStatusChangeRequest mocks base method
+func (m *MockProtonAPI) NotifyResourceDeploymentStatusChangeRequest(arg0 *proton.NotifyResourceDeploymentStatusChangeInput) (*request.Request, *proton.NotifyResourceDeploymentStatusChangeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "NotifyResourceDeploymentStatusChangeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.NotifyResourceDeploymentStatusChangeOutput)
+	return ret0, ret1
+}
+
+// NotifyResourceDeploymentStatusChangeRequest indicates an expected call of NotifyResourceDeploymentStatusChangeRequest
+func (mr *MockProtonAPIMockRecorder) NotifyResourceDeploymentStatusChangeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyResourceDeploymentStatusChangeRequest", reflect.TypeOf((*MockProtonAPI)(nil).NotifyResourceDeploymentStatusChangeRequest), arg0)
+}
+
+// NotifyResourceDeploymentStatusChangeWithContext mocks base method
+func (m *MockProtonAPI) NotifyResourceDeploymentStatusChangeWithContext(arg0 context.Context, arg1 *proton.NotifyResourceDeploymentStatusChangeInput, arg2 ...request.Option) (*proton.NotifyResourceDeploymentStatusChangeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "NotifyResourceDeploymentStatusChangeWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.NotifyResourceDeploymentStatusChangeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// NotifyResourceDeploymentStatusChangeWithContext indicates an expected call of NotifyResourceDeploymentStatusChangeWithContext
+func (mr *MockProtonAPIMockRecorder) NotifyResourceDeploymentStatusChangeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyResourceDeploymentStatusChangeWithContext", reflect.TypeOf((*MockProtonAPI)(nil).NotifyResourceDeploymentStatusChangeWithContext), varargs...)
 }
 
 // RejectEnvironmentAccountConnection mocks base method
@@ -2780,6 +3894,56 @@ func (mr *MockProtonAPIMockRecorder) UpdateServiceWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateServiceWithContext", reflect.TypeOf((*MockProtonAPI)(nil).UpdateServiceWithContext), varargs...)
+}
+
+// UpdateTemplateSyncConfig mocks base method
+func (m *MockProtonAPI) UpdateTemplateSyncConfig(arg0 *proton.UpdateTemplateSyncConfigInput) (*proton.UpdateTemplateSyncConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTemplateSyncConfig", arg0)
+	ret0, _ := ret[0].(*proton.UpdateTemplateSyncConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTemplateSyncConfig indicates an expected call of UpdateTemplateSyncConfig
+func (mr *MockProtonAPIMockRecorder) UpdateTemplateSyncConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTemplateSyncConfig", reflect.TypeOf((*MockProtonAPI)(nil).UpdateTemplateSyncConfig), arg0)
+}
+
+// UpdateTemplateSyncConfigRequest mocks base method
+func (m *MockProtonAPI) UpdateTemplateSyncConfigRequest(arg0 *proton.UpdateTemplateSyncConfigInput) (*request.Request, *proton.UpdateTemplateSyncConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTemplateSyncConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.UpdateTemplateSyncConfigOutput)
+	return ret0, ret1
+}
+
+// UpdateTemplateSyncConfigRequest indicates an expected call of UpdateTemplateSyncConfigRequest
+func (mr *MockProtonAPIMockRecorder) UpdateTemplateSyncConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTemplateSyncConfigRequest", reflect.TypeOf((*MockProtonAPI)(nil).UpdateTemplateSyncConfigRequest), arg0)
+}
+
+// UpdateTemplateSyncConfigWithContext mocks base method
+func (m *MockProtonAPI) UpdateTemplateSyncConfigWithContext(arg0 context.Context, arg1 *proton.UpdateTemplateSyncConfigInput, arg2 ...request.Option) (*proton.UpdateTemplateSyncConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateTemplateSyncConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.UpdateTemplateSyncConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTemplateSyncConfigWithContext indicates an expected call of UpdateTemplateSyncConfigWithContext
+func (mr *MockProtonAPIMockRecorder) UpdateTemplateSyncConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTemplateSyncConfigWithContext", reflect.TypeOf((*MockProtonAPI)(nil).UpdateTemplateSyncConfigWithContext), varargs...)
 }
 
 // WaitUntilEnvironmentDeployed mocks base method

@@ -85,6 +85,56 @@ func (mr *MockIoTSiteWiseAPIMockRecorder) AssociateAssetsWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateAssetsWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).AssociateAssetsWithContext), varargs...)
 }
 
+// AssociateTimeSeriesToAssetProperty mocks base method
+func (m *MockIoTSiteWiseAPI) AssociateTimeSeriesToAssetProperty(arg0 *iotsitewise.AssociateTimeSeriesToAssetPropertyInput) (*iotsitewise.AssociateTimeSeriesToAssetPropertyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateTimeSeriesToAssetProperty", arg0)
+	ret0, _ := ret[0].(*iotsitewise.AssociateTimeSeriesToAssetPropertyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateTimeSeriesToAssetProperty indicates an expected call of AssociateTimeSeriesToAssetProperty
+func (mr *MockIoTSiteWiseAPIMockRecorder) AssociateTimeSeriesToAssetProperty(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateTimeSeriesToAssetProperty", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).AssociateTimeSeriesToAssetProperty), arg0)
+}
+
+// AssociateTimeSeriesToAssetPropertyRequest mocks base method
+func (m *MockIoTSiteWiseAPI) AssociateTimeSeriesToAssetPropertyRequest(arg0 *iotsitewise.AssociateTimeSeriesToAssetPropertyInput) (*request.Request, *iotsitewise.AssociateTimeSeriesToAssetPropertyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateTimeSeriesToAssetPropertyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.AssociateTimeSeriesToAssetPropertyOutput)
+	return ret0, ret1
+}
+
+// AssociateTimeSeriesToAssetPropertyRequest indicates an expected call of AssociateTimeSeriesToAssetPropertyRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) AssociateTimeSeriesToAssetPropertyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateTimeSeriesToAssetPropertyRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).AssociateTimeSeriesToAssetPropertyRequest), arg0)
+}
+
+// AssociateTimeSeriesToAssetPropertyWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) AssociateTimeSeriesToAssetPropertyWithContext(arg0 context.Context, arg1 *iotsitewise.AssociateTimeSeriesToAssetPropertyInput, arg2 ...request.Option) (*iotsitewise.AssociateTimeSeriesToAssetPropertyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateTimeSeriesToAssetPropertyWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.AssociateTimeSeriesToAssetPropertyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateTimeSeriesToAssetPropertyWithContext indicates an expected call of AssociateTimeSeriesToAssetPropertyWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) AssociateTimeSeriesToAssetPropertyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateTimeSeriesToAssetPropertyWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).AssociateTimeSeriesToAssetPropertyWithContext), varargs...)
+}
+
 // BatchAssociateProjectAssets mocks base method
 func (m *MockIoTSiteWiseAPI) BatchAssociateProjectAssets(arg0 *iotsitewise.BatchAssociateProjectAssetsInput) (*iotsitewise.BatchAssociateProjectAssetsOutput, error) {
 	m.ctrl.T.Helper()
@@ -935,6 +985,56 @@ func (mr *MockIoTSiteWiseAPIMockRecorder) DeleteProjectWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DeleteProjectWithContext), varargs...)
 }
 
+// DeleteTimeSeries mocks base method
+func (m *MockIoTSiteWiseAPI) DeleteTimeSeries(arg0 *iotsitewise.DeleteTimeSeriesInput) (*iotsitewise.DeleteTimeSeriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTimeSeries", arg0)
+	ret0, _ := ret[0].(*iotsitewise.DeleteTimeSeriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTimeSeries indicates an expected call of DeleteTimeSeries
+func (mr *MockIoTSiteWiseAPIMockRecorder) DeleteTimeSeries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTimeSeries", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DeleteTimeSeries), arg0)
+}
+
+// DeleteTimeSeriesRequest mocks base method
+func (m *MockIoTSiteWiseAPI) DeleteTimeSeriesRequest(arg0 *iotsitewise.DeleteTimeSeriesInput) (*request.Request, *iotsitewise.DeleteTimeSeriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTimeSeriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.DeleteTimeSeriesOutput)
+	return ret0, ret1
+}
+
+// DeleteTimeSeriesRequest indicates an expected call of DeleteTimeSeriesRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) DeleteTimeSeriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTimeSeriesRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DeleteTimeSeriesRequest), arg0)
+}
+
+// DeleteTimeSeriesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) DeleteTimeSeriesWithContext(arg0 context.Context, arg1 *iotsitewise.DeleteTimeSeriesInput, arg2 ...request.Option) (*iotsitewise.DeleteTimeSeriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteTimeSeriesWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.DeleteTimeSeriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTimeSeriesWithContext indicates an expected call of DeleteTimeSeriesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) DeleteTimeSeriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTimeSeriesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DeleteTimeSeriesWithContext), varargs...)
+}
+
 // DescribeAccessPolicy mocks base method
 func (m *MockIoTSiteWiseAPI) DescribeAccessPolicy(arg0 *iotsitewise.DescribeAccessPolicyInput) (*iotsitewise.DescribeAccessPolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -1535,6 +1635,56 @@ func (mr *MockIoTSiteWiseAPIMockRecorder) DescribeStorageConfigurationWithContex
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageConfigurationWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DescribeStorageConfigurationWithContext), varargs...)
 }
 
+// DescribeTimeSeries mocks base method
+func (m *MockIoTSiteWiseAPI) DescribeTimeSeries(arg0 *iotsitewise.DescribeTimeSeriesInput) (*iotsitewise.DescribeTimeSeriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTimeSeries", arg0)
+	ret0, _ := ret[0].(*iotsitewise.DescribeTimeSeriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTimeSeries indicates an expected call of DescribeTimeSeries
+func (mr *MockIoTSiteWiseAPIMockRecorder) DescribeTimeSeries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTimeSeries", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DescribeTimeSeries), arg0)
+}
+
+// DescribeTimeSeriesRequest mocks base method
+func (m *MockIoTSiteWiseAPI) DescribeTimeSeriesRequest(arg0 *iotsitewise.DescribeTimeSeriesInput) (*request.Request, *iotsitewise.DescribeTimeSeriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTimeSeriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.DescribeTimeSeriesOutput)
+	return ret0, ret1
+}
+
+// DescribeTimeSeriesRequest indicates an expected call of DescribeTimeSeriesRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) DescribeTimeSeriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTimeSeriesRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DescribeTimeSeriesRequest), arg0)
+}
+
+// DescribeTimeSeriesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) DescribeTimeSeriesWithContext(arg0 context.Context, arg1 *iotsitewise.DescribeTimeSeriesInput, arg2 ...request.Option) (*iotsitewise.DescribeTimeSeriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeTimeSeriesWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.DescribeTimeSeriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTimeSeriesWithContext indicates an expected call of DescribeTimeSeriesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) DescribeTimeSeriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTimeSeriesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DescribeTimeSeriesWithContext), varargs...)
+}
+
 // DisassociateAssets mocks base method
 func (m *MockIoTSiteWiseAPI) DisassociateAssets(arg0 *iotsitewise.DisassociateAssetsInput) (*iotsitewise.DisassociateAssetsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1583,6 +1733,56 @@ func (mr *MockIoTSiteWiseAPIMockRecorder) DisassociateAssetsWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateAssetsWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DisassociateAssetsWithContext), varargs...)
+}
+
+// DisassociateTimeSeriesFromAssetProperty mocks base method
+func (m *MockIoTSiteWiseAPI) DisassociateTimeSeriesFromAssetProperty(arg0 *iotsitewise.DisassociateTimeSeriesFromAssetPropertyInput) (*iotsitewise.DisassociateTimeSeriesFromAssetPropertyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateTimeSeriesFromAssetProperty", arg0)
+	ret0, _ := ret[0].(*iotsitewise.DisassociateTimeSeriesFromAssetPropertyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateTimeSeriesFromAssetProperty indicates an expected call of DisassociateTimeSeriesFromAssetProperty
+func (mr *MockIoTSiteWiseAPIMockRecorder) DisassociateTimeSeriesFromAssetProperty(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateTimeSeriesFromAssetProperty", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DisassociateTimeSeriesFromAssetProperty), arg0)
+}
+
+// DisassociateTimeSeriesFromAssetPropertyRequest mocks base method
+func (m *MockIoTSiteWiseAPI) DisassociateTimeSeriesFromAssetPropertyRequest(arg0 *iotsitewise.DisassociateTimeSeriesFromAssetPropertyInput) (*request.Request, *iotsitewise.DisassociateTimeSeriesFromAssetPropertyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateTimeSeriesFromAssetPropertyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.DisassociateTimeSeriesFromAssetPropertyOutput)
+	return ret0, ret1
+}
+
+// DisassociateTimeSeriesFromAssetPropertyRequest indicates an expected call of DisassociateTimeSeriesFromAssetPropertyRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) DisassociateTimeSeriesFromAssetPropertyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateTimeSeriesFromAssetPropertyRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DisassociateTimeSeriesFromAssetPropertyRequest), arg0)
+}
+
+// DisassociateTimeSeriesFromAssetPropertyWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) DisassociateTimeSeriesFromAssetPropertyWithContext(arg0 context.Context, arg1 *iotsitewise.DisassociateTimeSeriesFromAssetPropertyInput, arg2 ...request.Option) (*iotsitewise.DisassociateTimeSeriesFromAssetPropertyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateTimeSeriesFromAssetPropertyWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.DisassociateTimeSeriesFromAssetPropertyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateTimeSeriesFromAssetPropertyWithContext indicates an expected call of DisassociateTimeSeriesFromAssetPropertyWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) DisassociateTimeSeriesFromAssetPropertyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateTimeSeriesFromAssetPropertyWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DisassociateTimeSeriesFromAssetPropertyWithContext), varargs...)
 }
 
 // GetAssetPropertyAggregates mocks base method
@@ -2762,6 +2962,89 @@ func (mr *MockIoTSiteWiseAPIMockRecorder) ListTagsForResourceWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// ListTimeSeries mocks base method
+func (m *MockIoTSiteWiseAPI) ListTimeSeries(arg0 *iotsitewise.ListTimeSeriesInput) (*iotsitewise.ListTimeSeriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTimeSeries", arg0)
+	ret0, _ := ret[0].(*iotsitewise.ListTimeSeriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTimeSeries indicates an expected call of ListTimeSeries
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListTimeSeries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTimeSeries", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListTimeSeries), arg0)
+}
+
+// ListTimeSeriesPages mocks base method
+func (m *MockIoTSiteWiseAPI) ListTimeSeriesPages(arg0 *iotsitewise.ListTimeSeriesInput, arg1 func(*iotsitewise.ListTimeSeriesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTimeSeriesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTimeSeriesPages indicates an expected call of ListTimeSeriesPages
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListTimeSeriesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTimeSeriesPages", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListTimeSeriesPages), arg0, arg1)
+}
+
+// ListTimeSeriesPagesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) ListTimeSeriesPagesWithContext(arg0 context.Context, arg1 *iotsitewise.ListTimeSeriesInput, arg2 func(*iotsitewise.ListTimeSeriesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTimeSeriesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTimeSeriesPagesWithContext indicates an expected call of ListTimeSeriesPagesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListTimeSeriesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTimeSeriesPagesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListTimeSeriesPagesWithContext), varargs...)
+}
+
+// ListTimeSeriesRequest mocks base method
+func (m *MockIoTSiteWiseAPI) ListTimeSeriesRequest(arg0 *iotsitewise.ListTimeSeriesInput) (*request.Request, *iotsitewise.ListTimeSeriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTimeSeriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.ListTimeSeriesOutput)
+	return ret0, ret1
+}
+
+// ListTimeSeriesRequest indicates an expected call of ListTimeSeriesRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListTimeSeriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTimeSeriesRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListTimeSeriesRequest), arg0)
+}
+
+// ListTimeSeriesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) ListTimeSeriesWithContext(arg0 context.Context, arg1 *iotsitewise.ListTimeSeriesInput, arg2 ...request.Option) (*iotsitewise.ListTimeSeriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTimeSeriesWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.ListTimeSeriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTimeSeriesWithContext indicates an expected call of ListTimeSeriesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListTimeSeriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTimeSeriesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListTimeSeriesWithContext), varargs...)
 }
 
 // PutDefaultEncryptionConfiguration mocks base method
