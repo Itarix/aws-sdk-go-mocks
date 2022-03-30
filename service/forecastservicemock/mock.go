@@ -735,6 +735,56 @@ func (mr *MockForecastServiceAPIMockRecorder) DeletePredictorWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePredictorWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeletePredictorWithContext), varargs...)
 }
 
+// DeleteResourceTree mocks base method
+func (m *MockForecastServiceAPI) DeleteResourceTree(arg0 *forecastservice.DeleteResourceTreeInput) (*forecastservice.DeleteResourceTreeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourceTree", arg0)
+	ret0, _ := ret[0].(*forecastservice.DeleteResourceTreeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourceTree indicates an expected call of DeleteResourceTree
+func (mr *MockForecastServiceAPIMockRecorder) DeleteResourceTree(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourceTree", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteResourceTree), arg0)
+}
+
+// DeleteResourceTreeRequest mocks base method
+func (m *MockForecastServiceAPI) DeleteResourceTreeRequest(arg0 *forecastservice.DeleteResourceTreeInput) (*request.Request, *forecastservice.DeleteResourceTreeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourceTreeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DeleteResourceTreeOutput)
+	return ret0, ret1
+}
+
+// DeleteResourceTreeRequest indicates an expected call of DeleteResourceTreeRequest
+func (mr *MockForecastServiceAPIMockRecorder) DeleteResourceTreeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourceTreeRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteResourceTreeRequest), arg0)
+}
+
+// DeleteResourceTreeWithContext mocks base method
+func (m *MockForecastServiceAPI) DeleteResourceTreeWithContext(arg0 context.Context, arg1 *forecastservice.DeleteResourceTreeInput, arg2 ...request.Option) (*forecastservice.DeleteResourceTreeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteResourceTreeWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DeleteResourceTreeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourceTreeWithContext indicates an expected call of DeleteResourceTreeWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DeleteResourceTreeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourceTreeWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteResourceTreeWithContext), varargs...)
+}
+
 // DescribeDataset mocks base method
 func (m *MockForecastServiceAPI) DescribeDataset(arg0 *forecastservice.DescribeDatasetInput) (*forecastservice.DescribeDatasetOutput, error) {
 	m.ctrl.T.Helper()

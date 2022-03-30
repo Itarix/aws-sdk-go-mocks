@@ -585,6 +585,56 @@ func (mr *MockCustomerProfilesAPIMockRecorder) GetIntegrationWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIntegrationWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetIntegrationWithContext), varargs...)
 }
 
+// GetMatches mocks base method
+func (m *MockCustomerProfilesAPI) GetMatches(arg0 *customerprofiles.GetMatchesInput) (*customerprofiles.GetMatchesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMatches", arg0)
+	ret0, _ := ret[0].(*customerprofiles.GetMatchesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMatches indicates an expected call of GetMatches
+func (mr *MockCustomerProfilesAPIMockRecorder) GetMatches(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMatches", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetMatches), arg0)
+}
+
+// GetMatchesRequest mocks base method
+func (m *MockCustomerProfilesAPI) GetMatchesRequest(arg0 *customerprofiles.GetMatchesInput) (*request.Request, *customerprofiles.GetMatchesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMatchesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.GetMatchesOutput)
+	return ret0, ret1
+}
+
+// GetMatchesRequest indicates an expected call of GetMatchesRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) GetMatchesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMatchesRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetMatchesRequest), arg0)
+}
+
+// GetMatchesWithContext mocks base method
+func (m *MockCustomerProfilesAPI) GetMatchesWithContext(arg0 context.Context, arg1 *customerprofiles.GetMatchesInput, arg2 ...request.Option) (*customerprofiles.GetMatchesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMatchesWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.GetMatchesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMatchesWithContext indicates an expected call of GetMatchesWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) GetMatchesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMatchesWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetMatchesWithContext), varargs...)
+}
+
 // GetProfileObjectType mocks base method
 func (m *MockCustomerProfilesAPI) GetProfileObjectType(arg0 *customerprofiles.GetProfileObjectTypeInput) (*customerprofiles.GetProfileObjectTypeOutput, error) {
 	m.ctrl.T.Helper()
@@ -1033,6 +1083,56 @@ func (mr *MockCustomerProfilesAPIMockRecorder) ListTagsForResourceWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// MergeProfiles mocks base method
+func (m *MockCustomerProfilesAPI) MergeProfiles(arg0 *customerprofiles.MergeProfilesInput) (*customerprofiles.MergeProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "MergeProfiles", arg0)
+	ret0, _ := ret[0].(*customerprofiles.MergeProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// MergeProfiles indicates an expected call of MergeProfiles
+func (mr *MockCustomerProfilesAPIMockRecorder) MergeProfiles(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MergeProfiles", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).MergeProfiles), arg0)
+}
+
+// MergeProfilesRequest mocks base method
+func (m *MockCustomerProfilesAPI) MergeProfilesRequest(arg0 *customerprofiles.MergeProfilesInput) (*request.Request, *customerprofiles.MergeProfilesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "MergeProfilesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.MergeProfilesOutput)
+	return ret0, ret1
+}
+
+// MergeProfilesRequest indicates an expected call of MergeProfilesRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) MergeProfilesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MergeProfilesRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).MergeProfilesRequest), arg0)
+}
+
+// MergeProfilesWithContext mocks base method
+func (m *MockCustomerProfilesAPI) MergeProfilesWithContext(arg0 context.Context, arg1 *customerprofiles.MergeProfilesInput, arg2 ...request.Option) (*customerprofiles.MergeProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "MergeProfilesWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.MergeProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// MergeProfilesWithContext indicates an expected call of MergeProfilesWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) MergeProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MergeProfilesWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).MergeProfilesWithContext), varargs...)
 }
 
 // PutIntegration mocks base method
