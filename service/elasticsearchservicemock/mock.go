@@ -635,6 +635,89 @@ func (mr *MockElasticsearchServiceAPIMockRecorder) DeletePackageWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePackageWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DeletePackageWithContext), varargs...)
 }
 
+// DescribeDomainAutoTunes mocks base method
+func (m *MockElasticsearchServiceAPI) DescribeDomainAutoTunes(arg0 *elasticsearchservice.DescribeDomainAutoTunesInput) (*elasticsearchservice.DescribeDomainAutoTunesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDomainAutoTunes", arg0)
+	ret0, _ := ret[0].(*elasticsearchservice.DescribeDomainAutoTunesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDomainAutoTunes indicates an expected call of DescribeDomainAutoTunes
+func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeDomainAutoTunes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainAutoTunes", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DescribeDomainAutoTunes), arg0)
+}
+
+// DescribeDomainAutoTunesPages mocks base method
+func (m *MockElasticsearchServiceAPI) DescribeDomainAutoTunesPages(arg0 *elasticsearchservice.DescribeDomainAutoTunesInput, arg1 func(*elasticsearchservice.DescribeDomainAutoTunesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDomainAutoTunesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDomainAutoTunesPages indicates an expected call of DescribeDomainAutoTunesPages
+func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeDomainAutoTunesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainAutoTunesPages", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DescribeDomainAutoTunesPages), arg0, arg1)
+}
+
+// DescribeDomainAutoTunesPagesWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) DescribeDomainAutoTunesPagesWithContext(arg0 context.Context, arg1 *elasticsearchservice.DescribeDomainAutoTunesInput, arg2 func(*elasticsearchservice.DescribeDomainAutoTunesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDomainAutoTunesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDomainAutoTunesPagesWithContext indicates an expected call of DescribeDomainAutoTunesPagesWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeDomainAutoTunesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainAutoTunesPagesWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DescribeDomainAutoTunesPagesWithContext), varargs...)
+}
+
+// DescribeDomainAutoTunesRequest mocks base method
+func (m *MockElasticsearchServiceAPI) DescribeDomainAutoTunesRequest(arg0 *elasticsearchservice.DescribeDomainAutoTunesInput) (*request.Request, *elasticsearchservice.DescribeDomainAutoTunesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDomainAutoTunesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*elasticsearchservice.DescribeDomainAutoTunesOutput)
+	return ret0, ret1
+}
+
+// DescribeDomainAutoTunesRequest indicates an expected call of DescribeDomainAutoTunesRequest
+func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeDomainAutoTunesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainAutoTunesRequest", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DescribeDomainAutoTunesRequest), arg0)
+}
+
+// DescribeDomainAutoTunesWithContext mocks base method
+func (m *MockElasticsearchServiceAPI) DescribeDomainAutoTunesWithContext(arg0 context.Context, arg1 *elasticsearchservice.DescribeDomainAutoTunesInput, arg2 ...request.Option) (*elasticsearchservice.DescribeDomainAutoTunesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDomainAutoTunesWithContext", varargs...)
+	ret0, _ := ret[0].(*elasticsearchservice.DescribeDomainAutoTunesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDomainAutoTunesWithContext indicates an expected call of DescribeDomainAutoTunesWithContext
+func (mr *MockElasticsearchServiceAPIMockRecorder) DescribeDomainAutoTunesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainAutoTunesWithContext", reflect.TypeOf((*MockElasticsearchServiceAPI)(nil).DescribeDomainAutoTunesWithContext), varargs...)
+}
+
 // DescribeElasticsearchDomain mocks base method
 func (m *MockElasticsearchServiceAPI) DescribeElasticsearchDomain(arg0 *elasticsearchservice.DescribeElasticsearchDomainInput) (*elasticsearchservice.DescribeElasticsearchDomainOutput, error) {
 	m.ctrl.T.Helper()
