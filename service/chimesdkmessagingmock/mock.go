@@ -1135,6 +1135,56 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) DisassociateChannelFlowWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateChannelFlowWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DisassociateChannelFlowWithContext), varargs...)
 }
 
+// GetChannelMembershipPreferences mocks base method
+func (m *MockChimeSDKMessagingAPI) GetChannelMembershipPreferences(arg0 *chimesdkmessaging.GetChannelMembershipPreferencesInput) (*chimesdkmessaging.GetChannelMembershipPreferencesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetChannelMembershipPreferences", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.GetChannelMembershipPreferencesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetChannelMembershipPreferences indicates an expected call of GetChannelMembershipPreferences
+func (mr *MockChimeSDKMessagingAPIMockRecorder) GetChannelMembershipPreferences(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelMembershipPreferences", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).GetChannelMembershipPreferences), arg0)
+}
+
+// GetChannelMembershipPreferencesRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) GetChannelMembershipPreferencesRequest(arg0 *chimesdkmessaging.GetChannelMembershipPreferencesInput) (*request.Request, *chimesdkmessaging.GetChannelMembershipPreferencesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetChannelMembershipPreferencesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.GetChannelMembershipPreferencesOutput)
+	return ret0, ret1
+}
+
+// GetChannelMembershipPreferencesRequest indicates an expected call of GetChannelMembershipPreferencesRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) GetChannelMembershipPreferencesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelMembershipPreferencesRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).GetChannelMembershipPreferencesRequest), arg0)
+}
+
+// GetChannelMembershipPreferencesWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) GetChannelMembershipPreferencesWithContext(arg0 context.Context, arg1 *chimesdkmessaging.GetChannelMembershipPreferencesInput, arg2 ...request.Option) (*chimesdkmessaging.GetChannelMembershipPreferencesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetChannelMembershipPreferencesWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.GetChannelMembershipPreferencesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetChannelMembershipPreferencesWithContext indicates an expected call of GetChannelMembershipPreferencesWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) GetChannelMembershipPreferencesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelMembershipPreferencesWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).GetChannelMembershipPreferencesWithContext), varargs...)
+}
+
 // GetChannelMessage mocks base method
 func (m *MockChimeSDKMessagingAPI) GetChannelMessage(arg0 *chimesdkmessaging.GetChannelMessageInput) (*chimesdkmessaging.GetChannelMessageOutput, error) {
 	m.ctrl.T.Helper()
@@ -2080,6 +2130,56 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) ListTagsForResourceWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// PutChannelMembershipPreferences mocks base method
+func (m *MockChimeSDKMessagingAPI) PutChannelMembershipPreferences(arg0 *chimesdkmessaging.PutChannelMembershipPreferencesInput) (*chimesdkmessaging.PutChannelMembershipPreferencesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutChannelMembershipPreferences", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.PutChannelMembershipPreferencesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutChannelMembershipPreferences indicates an expected call of PutChannelMembershipPreferences
+func (mr *MockChimeSDKMessagingAPIMockRecorder) PutChannelMembershipPreferences(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutChannelMembershipPreferences", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).PutChannelMembershipPreferences), arg0)
+}
+
+// PutChannelMembershipPreferencesRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) PutChannelMembershipPreferencesRequest(arg0 *chimesdkmessaging.PutChannelMembershipPreferencesInput) (*request.Request, *chimesdkmessaging.PutChannelMembershipPreferencesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutChannelMembershipPreferencesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.PutChannelMembershipPreferencesOutput)
+	return ret0, ret1
+}
+
+// PutChannelMembershipPreferencesRequest indicates an expected call of PutChannelMembershipPreferencesRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) PutChannelMembershipPreferencesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutChannelMembershipPreferencesRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).PutChannelMembershipPreferencesRequest), arg0)
+}
+
+// PutChannelMembershipPreferencesWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) PutChannelMembershipPreferencesWithContext(arg0 context.Context, arg1 *chimesdkmessaging.PutChannelMembershipPreferencesInput, arg2 ...request.Option) (*chimesdkmessaging.PutChannelMembershipPreferencesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutChannelMembershipPreferencesWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.PutChannelMembershipPreferencesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutChannelMembershipPreferencesWithContext indicates an expected call of PutChannelMembershipPreferencesWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) PutChannelMembershipPreferencesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutChannelMembershipPreferencesWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).PutChannelMembershipPreferencesWithContext), varargs...)
 }
 
 // RedactChannelMessage mocks base method
