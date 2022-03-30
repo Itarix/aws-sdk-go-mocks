@@ -35,6 +35,56 @@ func (m *MockOutpostsAPI) EXPECT() *MockOutpostsAPIMockRecorder {
 	return m.recorder
 }
 
+// CreateOrder mocks base method
+func (m *MockOutpostsAPI) CreateOrder(arg0 *outposts.CreateOrderInput) (*outposts.CreateOrderOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateOrder", arg0)
+	ret0, _ := ret[0].(*outposts.CreateOrderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateOrder indicates an expected call of CreateOrder
+func (mr *MockOutpostsAPIMockRecorder) CreateOrder(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateOrder", reflect.TypeOf((*MockOutpostsAPI)(nil).CreateOrder), arg0)
+}
+
+// CreateOrderRequest mocks base method
+func (m *MockOutpostsAPI) CreateOrderRequest(arg0 *outposts.CreateOrderInput) (*request.Request, *outposts.CreateOrderOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateOrderRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.CreateOrderOutput)
+	return ret0, ret1
+}
+
+// CreateOrderRequest indicates an expected call of CreateOrderRequest
+func (mr *MockOutpostsAPIMockRecorder) CreateOrderRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateOrderRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).CreateOrderRequest), arg0)
+}
+
+// CreateOrderWithContext mocks base method
+func (m *MockOutpostsAPI) CreateOrderWithContext(arg0 context.Context, arg1 *outposts.CreateOrderInput, arg2 ...request.Option) (*outposts.CreateOrderOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateOrderWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.CreateOrderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateOrderWithContext indicates an expected call of CreateOrderWithContext
+func (mr *MockOutpostsAPIMockRecorder) CreateOrderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateOrderWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).CreateOrderWithContext), varargs...)
+}
+
 // CreateOutpost mocks base method
 func (m *MockOutpostsAPI) CreateOutpost(arg0 *outposts.CreateOutpostInput) (*outposts.CreateOutpostOutput, error) {
 	m.ctrl.T.Helper()
