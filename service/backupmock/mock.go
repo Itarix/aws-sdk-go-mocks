@@ -185,6 +185,106 @@ func (mr *MockBackupAPIMockRecorder) CreateBackupVaultWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBackupVaultWithContext", reflect.TypeOf((*MockBackupAPI)(nil).CreateBackupVaultWithContext), varargs...)
 }
 
+// CreateFramework mocks base method
+func (m *MockBackupAPI) CreateFramework(arg0 *backup.CreateFrameworkInput) (*backup.CreateFrameworkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFramework", arg0)
+	ret0, _ := ret[0].(*backup.CreateFrameworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFramework indicates an expected call of CreateFramework
+func (mr *MockBackupAPIMockRecorder) CreateFramework(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFramework", reflect.TypeOf((*MockBackupAPI)(nil).CreateFramework), arg0)
+}
+
+// CreateFrameworkRequest mocks base method
+func (m *MockBackupAPI) CreateFrameworkRequest(arg0 *backup.CreateFrameworkInput) (*request.Request, *backup.CreateFrameworkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFrameworkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.CreateFrameworkOutput)
+	return ret0, ret1
+}
+
+// CreateFrameworkRequest indicates an expected call of CreateFrameworkRequest
+func (mr *MockBackupAPIMockRecorder) CreateFrameworkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFrameworkRequest", reflect.TypeOf((*MockBackupAPI)(nil).CreateFrameworkRequest), arg0)
+}
+
+// CreateFrameworkWithContext mocks base method
+func (m *MockBackupAPI) CreateFrameworkWithContext(arg0 context.Context, arg1 *backup.CreateFrameworkInput, arg2 ...request.Option) (*backup.CreateFrameworkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFrameworkWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.CreateFrameworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFrameworkWithContext indicates an expected call of CreateFrameworkWithContext
+func (mr *MockBackupAPIMockRecorder) CreateFrameworkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFrameworkWithContext", reflect.TypeOf((*MockBackupAPI)(nil).CreateFrameworkWithContext), varargs...)
+}
+
+// CreateReportPlan mocks base method
+func (m *MockBackupAPI) CreateReportPlan(arg0 *backup.CreateReportPlanInput) (*backup.CreateReportPlanOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateReportPlan", arg0)
+	ret0, _ := ret[0].(*backup.CreateReportPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateReportPlan indicates an expected call of CreateReportPlan
+func (mr *MockBackupAPIMockRecorder) CreateReportPlan(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReportPlan", reflect.TypeOf((*MockBackupAPI)(nil).CreateReportPlan), arg0)
+}
+
+// CreateReportPlanRequest mocks base method
+func (m *MockBackupAPI) CreateReportPlanRequest(arg0 *backup.CreateReportPlanInput) (*request.Request, *backup.CreateReportPlanOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateReportPlanRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.CreateReportPlanOutput)
+	return ret0, ret1
+}
+
+// CreateReportPlanRequest indicates an expected call of CreateReportPlanRequest
+func (mr *MockBackupAPIMockRecorder) CreateReportPlanRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReportPlanRequest", reflect.TypeOf((*MockBackupAPI)(nil).CreateReportPlanRequest), arg0)
+}
+
+// CreateReportPlanWithContext mocks base method
+func (m *MockBackupAPI) CreateReportPlanWithContext(arg0 context.Context, arg1 *backup.CreateReportPlanInput, arg2 ...request.Option) (*backup.CreateReportPlanOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateReportPlanWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.CreateReportPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateReportPlanWithContext indicates an expected call of CreateReportPlanWithContext
+func (mr *MockBackupAPIMockRecorder) CreateReportPlanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReportPlanWithContext", reflect.TypeOf((*MockBackupAPI)(nil).CreateReportPlanWithContext), varargs...)
+}
+
 // DeleteBackupPlan mocks base method
 func (m *MockBackupAPI) DeleteBackupPlan(arg0 *backup.DeleteBackupPlanInput) (*backup.DeleteBackupPlanOutput, error) {
 	m.ctrl.T.Helper()
@@ -435,6 +535,56 @@ func (mr *MockBackupAPIMockRecorder) DeleteBackupVaultWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackupVaultWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DeleteBackupVaultWithContext), varargs...)
 }
 
+// DeleteFramework mocks base method
+func (m *MockBackupAPI) DeleteFramework(arg0 *backup.DeleteFrameworkInput) (*backup.DeleteFrameworkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFramework", arg0)
+	ret0, _ := ret[0].(*backup.DeleteFrameworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFramework indicates an expected call of DeleteFramework
+func (mr *MockBackupAPIMockRecorder) DeleteFramework(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFramework", reflect.TypeOf((*MockBackupAPI)(nil).DeleteFramework), arg0)
+}
+
+// DeleteFrameworkRequest mocks base method
+func (m *MockBackupAPI) DeleteFrameworkRequest(arg0 *backup.DeleteFrameworkInput) (*request.Request, *backup.DeleteFrameworkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFrameworkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.DeleteFrameworkOutput)
+	return ret0, ret1
+}
+
+// DeleteFrameworkRequest indicates an expected call of DeleteFrameworkRequest
+func (mr *MockBackupAPIMockRecorder) DeleteFrameworkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFrameworkRequest", reflect.TypeOf((*MockBackupAPI)(nil).DeleteFrameworkRequest), arg0)
+}
+
+// DeleteFrameworkWithContext mocks base method
+func (m *MockBackupAPI) DeleteFrameworkWithContext(arg0 context.Context, arg1 *backup.DeleteFrameworkInput, arg2 ...request.Option) (*backup.DeleteFrameworkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFrameworkWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.DeleteFrameworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFrameworkWithContext indicates an expected call of DeleteFrameworkWithContext
+func (mr *MockBackupAPIMockRecorder) DeleteFrameworkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFrameworkWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DeleteFrameworkWithContext), varargs...)
+}
+
 // DeleteRecoveryPoint mocks base method
 func (m *MockBackupAPI) DeleteRecoveryPoint(arg0 *backup.DeleteRecoveryPointInput) (*backup.DeleteRecoveryPointOutput, error) {
 	m.ctrl.T.Helper()
@@ -483,6 +633,56 @@ func (mr *MockBackupAPIMockRecorder) DeleteRecoveryPointWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRecoveryPointWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DeleteRecoveryPointWithContext), varargs...)
+}
+
+// DeleteReportPlan mocks base method
+func (m *MockBackupAPI) DeleteReportPlan(arg0 *backup.DeleteReportPlanInput) (*backup.DeleteReportPlanOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteReportPlan", arg0)
+	ret0, _ := ret[0].(*backup.DeleteReportPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteReportPlan indicates an expected call of DeleteReportPlan
+func (mr *MockBackupAPIMockRecorder) DeleteReportPlan(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReportPlan", reflect.TypeOf((*MockBackupAPI)(nil).DeleteReportPlan), arg0)
+}
+
+// DeleteReportPlanRequest mocks base method
+func (m *MockBackupAPI) DeleteReportPlanRequest(arg0 *backup.DeleteReportPlanInput) (*request.Request, *backup.DeleteReportPlanOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteReportPlanRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.DeleteReportPlanOutput)
+	return ret0, ret1
+}
+
+// DeleteReportPlanRequest indicates an expected call of DeleteReportPlanRequest
+func (mr *MockBackupAPIMockRecorder) DeleteReportPlanRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReportPlanRequest", reflect.TypeOf((*MockBackupAPI)(nil).DeleteReportPlanRequest), arg0)
+}
+
+// DeleteReportPlanWithContext mocks base method
+func (m *MockBackupAPI) DeleteReportPlanWithContext(arg0 context.Context, arg1 *backup.DeleteReportPlanInput, arg2 ...request.Option) (*backup.DeleteReportPlanOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteReportPlanWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.DeleteReportPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteReportPlanWithContext indicates an expected call of DeleteReportPlanWithContext
+func (mr *MockBackupAPIMockRecorder) DeleteReportPlanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReportPlanWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DeleteReportPlanWithContext), varargs...)
 }
 
 // DescribeBackupJob mocks base method
@@ -633,6 +833,56 @@ func (mr *MockBackupAPIMockRecorder) DescribeCopyJobWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCopyJobWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DescribeCopyJobWithContext), varargs...)
+}
+
+// DescribeFramework mocks base method
+func (m *MockBackupAPI) DescribeFramework(arg0 *backup.DescribeFrameworkInput) (*backup.DescribeFrameworkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFramework", arg0)
+	ret0, _ := ret[0].(*backup.DescribeFrameworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFramework indicates an expected call of DescribeFramework
+func (mr *MockBackupAPIMockRecorder) DescribeFramework(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFramework", reflect.TypeOf((*MockBackupAPI)(nil).DescribeFramework), arg0)
+}
+
+// DescribeFrameworkRequest mocks base method
+func (m *MockBackupAPI) DescribeFrameworkRequest(arg0 *backup.DescribeFrameworkInput) (*request.Request, *backup.DescribeFrameworkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFrameworkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.DescribeFrameworkOutput)
+	return ret0, ret1
+}
+
+// DescribeFrameworkRequest indicates an expected call of DescribeFrameworkRequest
+func (mr *MockBackupAPIMockRecorder) DescribeFrameworkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFrameworkRequest", reflect.TypeOf((*MockBackupAPI)(nil).DescribeFrameworkRequest), arg0)
+}
+
+// DescribeFrameworkWithContext mocks base method
+func (m *MockBackupAPI) DescribeFrameworkWithContext(arg0 context.Context, arg1 *backup.DescribeFrameworkInput, arg2 ...request.Option) (*backup.DescribeFrameworkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFrameworkWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.DescribeFrameworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFrameworkWithContext indicates an expected call of DescribeFrameworkWithContext
+func (mr *MockBackupAPIMockRecorder) DescribeFrameworkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFrameworkWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DescribeFrameworkWithContext), varargs...)
 }
 
 // DescribeGlobalSettings mocks base method
@@ -833,6 +1083,106 @@ func (mr *MockBackupAPIMockRecorder) DescribeRegionSettingsWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRegionSettingsWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DescribeRegionSettingsWithContext), varargs...)
+}
+
+// DescribeReportJob mocks base method
+func (m *MockBackupAPI) DescribeReportJob(arg0 *backup.DescribeReportJobInput) (*backup.DescribeReportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReportJob", arg0)
+	ret0, _ := ret[0].(*backup.DescribeReportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReportJob indicates an expected call of DescribeReportJob
+func (mr *MockBackupAPIMockRecorder) DescribeReportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReportJob", reflect.TypeOf((*MockBackupAPI)(nil).DescribeReportJob), arg0)
+}
+
+// DescribeReportJobRequest mocks base method
+func (m *MockBackupAPI) DescribeReportJobRequest(arg0 *backup.DescribeReportJobInput) (*request.Request, *backup.DescribeReportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.DescribeReportJobOutput)
+	return ret0, ret1
+}
+
+// DescribeReportJobRequest indicates an expected call of DescribeReportJobRequest
+func (mr *MockBackupAPIMockRecorder) DescribeReportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReportJobRequest", reflect.TypeOf((*MockBackupAPI)(nil).DescribeReportJobRequest), arg0)
+}
+
+// DescribeReportJobWithContext mocks base method
+func (m *MockBackupAPI) DescribeReportJobWithContext(arg0 context.Context, arg1 *backup.DescribeReportJobInput, arg2 ...request.Option) (*backup.DescribeReportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.DescribeReportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReportJobWithContext indicates an expected call of DescribeReportJobWithContext
+func (mr *MockBackupAPIMockRecorder) DescribeReportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReportJobWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DescribeReportJobWithContext), varargs...)
+}
+
+// DescribeReportPlan mocks base method
+func (m *MockBackupAPI) DescribeReportPlan(arg0 *backup.DescribeReportPlanInput) (*backup.DescribeReportPlanOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReportPlan", arg0)
+	ret0, _ := ret[0].(*backup.DescribeReportPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReportPlan indicates an expected call of DescribeReportPlan
+func (mr *MockBackupAPIMockRecorder) DescribeReportPlan(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReportPlan", reflect.TypeOf((*MockBackupAPI)(nil).DescribeReportPlan), arg0)
+}
+
+// DescribeReportPlanRequest mocks base method
+func (m *MockBackupAPI) DescribeReportPlanRequest(arg0 *backup.DescribeReportPlanInput) (*request.Request, *backup.DescribeReportPlanOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReportPlanRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.DescribeReportPlanOutput)
+	return ret0, ret1
+}
+
+// DescribeReportPlanRequest indicates an expected call of DescribeReportPlanRequest
+func (mr *MockBackupAPIMockRecorder) DescribeReportPlanRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReportPlanRequest", reflect.TypeOf((*MockBackupAPI)(nil).DescribeReportPlanRequest), arg0)
+}
+
+// DescribeReportPlanWithContext mocks base method
+func (m *MockBackupAPI) DescribeReportPlanWithContext(arg0 context.Context, arg1 *backup.DescribeReportPlanInput, arg2 ...request.Option) (*backup.DescribeReportPlanOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReportPlanWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.DescribeReportPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReportPlanWithContext indicates an expected call of DescribeReportPlanWithContext
+func (mr *MockBackupAPIMockRecorder) DescribeReportPlanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReportPlanWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DescribeReportPlanWithContext), varargs...)
 }
 
 // DescribeRestoreJob mocks base method
@@ -1966,6 +2316,89 @@ func (mr *MockBackupAPIMockRecorder) ListCopyJobsWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCopyJobsWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListCopyJobsWithContext), varargs...)
 }
 
+// ListFrameworks mocks base method
+func (m *MockBackupAPI) ListFrameworks(arg0 *backup.ListFrameworksInput) (*backup.ListFrameworksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFrameworks", arg0)
+	ret0, _ := ret[0].(*backup.ListFrameworksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFrameworks indicates an expected call of ListFrameworks
+func (mr *MockBackupAPIMockRecorder) ListFrameworks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFrameworks", reflect.TypeOf((*MockBackupAPI)(nil).ListFrameworks), arg0)
+}
+
+// ListFrameworksPages mocks base method
+func (m *MockBackupAPI) ListFrameworksPages(arg0 *backup.ListFrameworksInput, arg1 func(*backup.ListFrameworksOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFrameworksPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFrameworksPages indicates an expected call of ListFrameworksPages
+func (mr *MockBackupAPIMockRecorder) ListFrameworksPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFrameworksPages", reflect.TypeOf((*MockBackupAPI)(nil).ListFrameworksPages), arg0, arg1)
+}
+
+// ListFrameworksPagesWithContext mocks base method
+func (m *MockBackupAPI) ListFrameworksPagesWithContext(arg0 context.Context, arg1 *backup.ListFrameworksInput, arg2 func(*backup.ListFrameworksOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFrameworksPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFrameworksPagesWithContext indicates an expected call of ListFrameworksPagesWithContext
+func (mr *MockBackupAPIMockRecorder) ListFrameworksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFrameworksPagesWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListFrameworksPagesWithContext), varargs...)
+}
+
+// ListFrameworksRequest mocks base method
+func (m *MockBackupAPI) ListFrameworksRequest(arg0 *backup.ListFrameworksInput) (*request.Request, *backup.ListFrameworksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFrameworksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.ListFrameworksOutput)
+	return ret0, ret1
+}
+
+// ListFrameworksRequest indicates an expected call of ListFrameworksRequest
+func (mr *MockBackupAPIMockRecorder) ListFrameworksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFrameworksRequest", reflect.TypeOf((*MockBackupAPI)(nil).ListFrameworksRequest), arg0)
+}
+
+// ListFrameworksWithContext mocks base method
+func (m *MockBackupAPI) ListFrameworksWithContext(arg0 context.Context, arg1 *backup.ListFrameworksInput, arg2 ...request.Option) (*backup.ListFrameworksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFrameworksWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.ListFrameworksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFrameworksWithContext indicates an expected call of ListFrameworksWithContext
+func (mr *MockBackupAPIMockRecorder) ListFrameworksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFrameworksWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListFrameworksWithContext), varargs...)
+}
+
 // ListProtectedResources mocks base method
 func (m *MockBackupAPI) ListProtectedResources(arg0 *backup.ListProtectedResourcesInput) (*backup.ListProtectedResourcesOutput, error) {
 	m.ctrl.T.Helper()
@@ -2213,6 +2646,172 @@ func (mr *MockBackupAPIMockRecorder) ListRecoveryPointsByResourceWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecoveryPointsByResourceWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListRecoveryPointsByResourceWithContext), varargs...)
+}
+
+// ListReportJobs mocks base method
+func (m *MockBackupAPI) ListReportJobs(arg0 *backup.ListReportJobsInput) (*backup.ListReportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReportJobs", arg0)
+	ret0, _ := ret[0].(*backup.ListReportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReportJobs indicates an expected call of ListReportJobs
+func (mr *MockBackupAPIMockRecorder) ListReportJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportJobs", reflect.TypeOf((*MockBackupAPI)(nil).ListReportJobs), arg0)
+}
+
+// ListReportJobsPages mocks base method
+func (m *MockBackupAPI) ListReportJobsPages(arg0 *backup.ListReportJobsInput, arg1 func(*backup.ListReportJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReportJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListReportJobsPages indicates an expected call of ListReportJobsPages
+func (mr *MockBackupAPIMockRecorder) ListReportJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportJobsPages", reflect.TypeOf((*MockBackupAPI)(nil).ListReportJobsPages), arg0, arg1)
+}
+
+// ListReportJobsPagesWithContext mocks base method
+func (m *MockBackupAPI) ListReportJobsPagesWithContext(arg0 context.Context, arg1 *backup.ListReportJobsInput, arg2 func(*backup.ListReportJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReportJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListReportJobsPagesWithContext indicates an expected call of ListReportJobsPagesWithContext
+func (mr *MockBackupAPIMockRecorder) ListReportJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportJobsPagesWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListReportJobsPagesWithContext), varargs...)
+}
+
+// ListReportJobsRequest mocks base method
+func (m *MockBackupAPI) ListReportJobsRequest(arg0 *backup.ListReportJobsInput) (*request.Request, *backup.ListReportJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReportJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.ListReportJobsOutput)
+	return ret0, ret1
+}
+
+// ListReportJobsRequest indicates an expected call of ListReportJobsRequest
+func (mr *MockBackupAPIMockRecorder) ListReportJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportJobsRequest", reflect.TypeOf((*MockBackupAPI)(nil).ListReportJobsRequest), arg0)
+}
+
+// ListReportJobsWithContext mocks base method
+func (m *MockBackupAPI) ListReportJobsWithContext(arg0 context.Context, arg1 *backup.ListReportJobsInput, arg2 ...request.Option) (*backup.ListReportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReportJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.ListReportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReportJobsWithContext indicates an expected call of ListReportJobsWithContext
+func (mr *MockBackupAPIMockRecorder) ListReportJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportJobsWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListReportJobsWithContext), varargs...)
+}
+
+// ListReportPlans mocks base method
+func (m *MockBackupAPI) ListReportPlans(arg0 *backup.ListReportPlansInput) (*backup.ListReportPlansOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReportPlans", arg0)
+	ret0, _ := ret[0].(*backup.ListReportPlansOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReportPlans indicates an expected call of ListReportPlans
+func (mr *MockBackupAPIMockRecorder) ListReportPlans(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportPlans", reflect.TypeOf((*MockBackupAPI)(nil).ListReportPlans), arg0)
+}
+
+// ListReportPlansPages mocks base method
+func (m *MockBackupAPI) ListReportPlansPages(arg0 *backup.ListReportPlansInput, arg1 func(*backup.ListReportPlansOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReportPlansPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListReportPlansPages indicates an expected call of ListReportPlansPages
+func (mr *MockBackupAPIMockRecorder) ListReportPlansPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportPlansPages", reflect.TypeOf((*MockBackupAPI)(nil).ListReportPlansPages), arg0, arg1)
+}
+
+// ListReportPlansPagesWithContext mocks base method
+func (m *MockBackupAPI) ListReportPlansPagesWithContext(arg0 context.Context, arg1 *backup.ListReportPlansInput, arg2 func(*backup.ListReportPlansOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReportPlansPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListReportPlansPagesWithContext indicates an expected call of ListReportPlansPagesWithContext
+func (mr *MockBackupAPIMockRecorder) ListReportPlansPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportPlansPagesWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListReportPlansPagesWithContext), varargs...)
+}
+
+// ListReportPlansRequest mocks base method
+func (m *MockBackupAPI) ListReportPlansRequest(arg0 *backup.ListReportPlansInput) (*request.Request, *backup.ListReportPlansOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReportPlansRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.ListReportPlansOutput)
+	return ret0, ret1
+}
+
+// ListReportPlansRequest indicates an expected call of ListReportPlansRequest
+func (mr *MockBackupAPIMockRecorder) ListReportPlansRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportPlansRequest", reflect.TypeOf((*MockBackupAPI)(nil).ListReportPlansRequest), arg0)
+}
+
+// ListReportPlansWithContext mocks base method
+func (m *MockBackupAPI) ListReportPlansWithContext(arg0 context.Context, arg1 *backup.ListReportPlansInput, arg2 ...request.Option) (*backup.ListReportPlansOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReportPlansWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.ListReportPlansOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReportPlansWithContext indicates an expected call of ListReportPlansWithContext
+func (mr *MockBackupAPIMockRecorder) ListReportPlansWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReportPlansWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListReportPlansWithContext), varargs...)
 }
 
 // ListRestoreJobs mocks base method
@@ -2581,6 +3180,56 @@ func (mr *MockBackupAPIMockRecorder) StartCopyJobWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCopyJobWithContext", reflect.TypeOf((*MockBackupAPI)(nil).StartCopyJobWithContext), varargs...)
 }
 
+// StartReportJob mocks base method
+func (m *MockBackupAPI) StartReportJob(arg0 *backup.StartReportJobInput) (*backup.StartReportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartReportJob", arg0)
+	ret0, _ := ret[0].(*backup.StartReportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartReportJob indicates an expected call of StartReportJob
+func (mr *MockBackupAPIMockRecorder) StartReportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartReportJob", reflect.TypeOf((*MockBackupAPI)(nil).StartReportJob), arg0)
+}
+
+// StartReportJobRequest mocks base method
+func (m *MockBackupAPI) StartReportJobRequest(arg0 *backup.StartReportJobInput) (*request.Request, *backup.StartReportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartReportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.StartReportJobOutput)
+	return ret0, ret1
+}
+
+// StartReportJobRequest indicates an expected call of StartReportJobRequest
+func (mr *MockBackupAPIMockRecorder) StartReportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartReportJobRequest", reflect.TypeOf((*MockBackupAPI)(nil).StartReportJobRequest), arg0)
+}
+
+// StartReportJobWithContext mocks base method
+func (m *MockBackupAPI) StartReportJobWithContext(arg0 context.Context, arg1 *backup.StartReportJobInput, arg2 ...request.Option) (*backup.StartReportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartReportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.StartReportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartReportJobWithContext indicates an expected call of StartReportJobWithContext
+func (mr *MockBackupAPIMockRecorder) StartReportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartReportJobWithContext", reflect.TypeOf((*MockBackupAPI)(nil).StartReportJobWithContext), varargs...)
+}
+
 // StartRestoreJob mocks base method
 func (m *MockBackupAPI) StartRestoreJob(arg0 *backup.StartRestoreJobInput) (*backup.StartRestoreJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -2831,6 +3480,56 @@ func (mr *MockBackupAPIMockRecorder) UpdateBackupPlanWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBackupPlanWithContext", reflect.TypeOf((*MockBackupAPI)(nil).UpdateBackupPlanWithContext), varargs...)
 }
 
+// UpdateFramework mocks base method
+func (m *MockBackupAPI) UpdateFramework(arg0 *backup.UpdateFrameworkInput) (*backup.UpdateFrameworkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFramework", arg0)
+	ret0, _ := ret[0].(*backup.UpdateFrameworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFramework indicates an expected call of UpdateFramework
+func (mr *MockBackupAPIMockRecorder) UpdateFramework(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFramework", reflect.TypeOf((*MockBackupAPI)(nil).UpdateFramework), arg0)
+}
+
+// UpdateFrameworkRequest mocks base method
+func (m *MockBackupAPI) UpdateFrameworkRequest(arg0 *backup.UpdateFrameworkInput) (*request.Request, *backup.UpdateFrameworkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFrameworkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.UpdateFrameworkOutput)
+	return ret0, ret1
+}
+
+// UpdateFrameworkRequest indicates an expected call of UpdateFrameworkRequest
+func (mr *MockBackupAPIMockRecorder) UpdateFrameworkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFrameworkRequest", reflect.TypeOf((*MockBackupAPI)(nil).UpdateFrameworkRequest), arg0)
+}
+
+// UpdateFrameworkWithContext mocks base method
+func (m *MockBackupAPI) UpdateFrameworkWithContext(arg0 context.Context, arg1 *backup.UpdateFrameworkInput, arg2 ...request.Option) (*backup.UpdateFrameworkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFrameworkWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.UpdateFrameworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFrameworkWithContext indicates an expected call of UpdateFrameworkWithContext
+func (mr *MockBackupAPIMockRecorder) UpdateFrameworkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFrameworkWithContext", reflect.TypeOf((*MockBackupAPI)(nil).UpdateFrameworkWithContext), varargs...)
+}
+
 // UpdateGlobalSettings mocks base method
 func (m *MockBackupAPI) UpdateGlobalSettings(arg0 *backup.UpdateGlobalSettingsInput) (*backup.UpdateGlobalSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2979,4 +3678,54 @@ func (mr *MockBackupAPIMockRecorder) UpdateRegionSettingsWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRegionSettingsWithContext", reflect.TypeOf((*MockBackupAPI)(nil).UpdateRegionSettingsWithContext), varargs...)
+}
+
+// UpdateReportPlan mocks base method
+func (m *MockBackupAPI) UpdateReportPlan(arg0 *backup.UpdateReportPlanInput) (*backup.UpdateReportPlanOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateReportPlan", arg0)
+	ret0, _ := ret[0].(*backup.UpdateReportPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateReportPlan indicates an expected call of UpdateReportPlan
+func (mr *MockBackupAPIMockRecorder) UpdateReportPlan(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateReportPlan", reflect.TypeOf((*MockBackupAPI)(nil).UpdateReportPlan), arg0)
+}
+
+// UpdateReportPlanRequest mocks base method
+func (m *MockBackupAPI) UpdateReportPlanRequest(arg0 *backup.UpdateReportPlanInput) (*request.Request, *backup.UpdateReportPlanOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateReportPlanRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.UpdateReportPlanOutput)
+	return ret0, ret1
+}
+
+// UpdateReportPlanRequest indicates an expected call of UpdateReportPlanRequest
+func (mr *MockBackupAPIMockRecorder) UpdateReportPlanRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateReportPlanRequest", reflect.TypeOf((*MockBackupAPI)(nil).UpdateReportPlanRequest), arg0)
+}
+
+// UpdateReportPlanWithContext mocks base method
+func (m *MockBackupAPI) UpdateReportPlanWithContext(arg0 context.Context, arg1 *backup.UpdateReportPlanInput, arg2 ...request.Option) (*backup.UpdateReportPlanOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateReportPlanWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.UpdateReportPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateReportPlanWithContext indicates an expected call of UpdateReportPlanWithContext
+func (mr *MockBackupAPIMockRecorder) UpdateReportPlanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateReportPlanWithContext", reflect.TypeOf((*MockBackupAPI)(nil).UpdateReportPlanWithContext), varargs...)
 }
