@@ -135,6 +135,56 @@ func (mr *MockRekognitionAPIMockRecorder) CreateCollectionWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCollectionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateCollectionWithContext), varargs...)
 }
 
+// CreateDataset mocks base method
+func (m *MockRekognitionAPI) CreateDataset(arg0 *rekognition.CreateDatasetInput) (*rekognition.CreateDatasetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDataset", arg0)
+	ret0, _ := ret[0].(*rekognition.CreateDatasetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDataset indicates an expected call of CreateDataset
+func (mr *MockRekognitionAPIMockRecorder) CreateDataset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataset", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateDataset), arg0)
+}
+
+// CreateDatasetRequest mocks base method
+func (m *MockRekognitionAPI) CreateDatasetRequest(arg0 *rekognition.CreateDatasetInput) (*request.Request, *rekognition.CreateDatasetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDatasetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.CreateDatasetOutput)
+	return ret0, ret1
+}
+
+// CreateDatasetRequest indicates an expected call of CreateDatasetRequest
+func (mr *MockRekognitionAPIMockRecorder) CreateDatasetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatasetRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateDatasetRequest), arg0)
+}
+
+// CreateDatasetWithContext mocks base method
+func (m *MockRekognitionAPI) CreateDatasetWithContext(arg0 context.Context, arg1 *rekognition.CreateDatasetInput, arg2 ...request.Option) (*rekognition.CreateDatasetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDatasetWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.CreateDatasetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDatasetWithContext indicates an expected call of CreateDatasetWithContext
+func (mr *MockRekognitionAPIMockRecorder) CreateDatasetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatasetWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateDatasetWithContext), varargs...)
+}
+
 // CreateProject mocks base method
 func (m *MockRekognitionAPI) CreateProject(arg0 *rekognition.CreateProjectInput) (*rekognition.CreateProjectOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +383,56 @@ func (mr *MockRekognitionAPIMockRecorder) DeleteCollectionWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCollectionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteCollectionWithContext), varargs...)
+}
+
+// DeleteDataset mocks base method
+func (m *MockRekognitionAPI) DeleteDataset(arg0 *rekognition.DeleteDatasetInput) (*rekognition.DeleteDatasetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDataset", arg0)
+	ret0, _ := ret[0].(*rekognition.DeleteDatasetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDataset indicates an expected call of DeleteDataset
+func (mr *MockRekognitionAPIMockRecorder) DeleteDataset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataset", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteDataset), arg0)
+}
+
+// DeleteDatasetRequest mocks base method
+func (m *MockRekognitionAPI) DeleteDatasetRequest(arg0 *rekognition.DeleteDatasetInput) (*request.Request, *rekognition.DeleteDatasetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDatasetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.DeleteDatasetOutput)
+	return ret0, ret1
+}
+
+// DeleteDatasetRequest indicates an expected call of DeleteDatasetRequest
+func (mr *MockRekognitionAPIMockRecorder) DeleteDatasetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatasetRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteDatasetRequest), arg0)
+}
+
+// DeleteDatasetWithContext mocks base method
+func (m *MockRekognitionAPI) DeleteDatasetWithContext(arg0 context.Context, arg1 *rekognition.DeleteDatasetInput, arg2 ...request.Option) (*rekognition.DeleteDatasetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDatasetWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.DeleteDatasetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDatasetWithContext indicates an expected call of DeleteDatasetWithContext
+func (mr *MockRekognitionAPIMockRecorder) DeleteDatasetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatasetWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteDatasetWithContext), varargs...)
 }
 
 // DeleteFaces mocks base method
@@ -583,6 +683,56 @@ func (mr *MockRekognitionAPIMockRecorder) DescribeCollectionWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCollectionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeCollectionWithContext), varargs...)
+}
+
+// DescribeDataset mocks base method
+func (m *MockRekognitionAPI) DescribeDataset(arg0 *rekognition.DescribeDatasetInput) (*rekognition.DescribeDatasetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDataset", arg0)
+	ret0, _ := ret[0].(*rekognition.DescribeDatasetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDataset indicates an expected call of DescribeDataset
+func (mr *MockRekognitionAPIMockRecorder) DescribeDataset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataset", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeDataset), arg0)
+}
+
+// DescribeDatasetRequest mocks base method
+func (m *MockRekognitionAPI) DescribeDatasetRequest(arg0 *rekognition.DescribeDatasetInput) (*request.Request, *rekognition.DescribeDatasetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDatasetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.DescribeDatasetOutput)
+	return ret0, ret1
+}
+
+// DescribeDatasetRequest indicates an expected call of DescribeDatasetRequest
+func (mr *MockRekognitionAPIMockRecorder) DescribeDatasetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDatasetRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeDatasetRequest), arg0)
+}
+
+// DescribeDatasetWithContext mocks base method
+func (m *MockRekognitionAPI) DescribeDatasetWithContext(arg0 context.Context, arg1 *rekognition.DescribeDatasetInput, arg2 ...request.Option) (*rekognition.DescribeDatasetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDatasetWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.DescribeDatasetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDatasetWithContext indicates an expected call of DescribeDatasetWithContext
+func (mr *MockRekognitionAPIMockRecorder) DescribeDatasetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDatasetWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DescribeDatasetWithContext), varargs...)
 }
 
 // DescribeProjectVersions mocks base method
@@ -1099,6 +1249,56 @@ func (mr *MockRekognitionAPIMockRecorder) DetectTextWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectTextWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DetectTextWithContext), varargs...)
+}
+
+// DistributeDatasetEntries mocks base method
+func (m *MockRekognitionAPI) DistributeDatasetEntries(arg0 *rekognition.DistributeDatasetEntriesInput) (*rekognition.DistributeDatasetEntriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DistributeDatasetEntries", arg0)
+	ret0, _ := ret[0].(*rekognition.DistributeDatasetEntriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DistributeDatasetEntries indicates an expected call of DistributeDatasetEntries
+func (mr *MockRekognitionAPIMockRecorder) DistributeDatasetEntries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DistributeDatasetEntries", reflect.TypeOf((*MockRekognitionAPI)(nil).DistributeDatasetEntries), arg0)
+}
+
+// DistributeDatasetEntriesRequest mocks base method
+func (m *MockRekognitionAPI) DistributeDatasetEntriesRequest(arg0 *rekognition.DistributeDatasetEntriesInput) (*request.Request, *rekognition.DistributeDatasetEntriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DistributeDatasetEntriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.DistributeDatasetEntriesOutput)
+	return ret0, ret1
+}
+
+// DistributeDatasetEntriesRequest indicates an expected call of DistributeDatasetEntriesRequest
+func (mr *MockRekognitionAPIMockRecorder) DistributeDatasetEntriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DistributeDatasetEntriesRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).DistributeDatasetEntriesRequest), arg0)
+}
+
+// DistributeDatasetEntriesWithContext mocks base method
+func (m *MockRekognitionAPI) DistributeDatasetEntriesWithContext(arg0 context.Context, arg1 *rekognition.DistributeDatasetEntriesInput, arg2 ...request.Option) (*rekognition.DistributeDatasetEntriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DistributeDatasetEntriesWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.DistributeDatasetEntriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DistributeDatasetEntriesWithContext indicates an expected call of DistributeDatasetEntriesWithContext
+func (mr *MockRekognitionAPIMockRecorder) DistributeDatasetEntriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DistributeDatasetEntriesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DistributeDatasetEntriesWithContext), varargs...)
 }
 
 // GetCelebrityInfo mocks base method
@@ -1946,6 +2146,172 @@ func (mr *MockRekognitionAPIMockRecorder) ListCollectionsWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCollectionsWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListCollectionsWithContext), varargs...)
+}
+
+// ListDatasetEntries mocks base method
+func (m *MockRekognitionAPI) ListDatasetEntries(arg0 *rekognition.ListDatasetEntriesInput) (*rekognition.ListDatasetEntriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasetEntries", arg0)
+	ret0, _ := ret[0].(*rekognition.ListDatasetEntriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDatasetEntries indicates an expected call of ListDatasetEntries
+func (mr *MockRekognitionAPIMockRecorder) ListDatasetEntries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetEntries", reflect.TypeOf((*MockRekognitionAPI)(nil).ListDatasetEntries), arg0)
+}
+
+// ListDatasetEntriesPages mocks base method
+func (m *MockRekognitionAPI) ListDatasetEntriesPages(arg0 *rekognition.ListDatasetEntriesInput, arg1 func(*rekognition.ListDatasetEntriesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasetEntriesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDatasetEntriesPages indicates an expected call of ListDatasetEntriesPages
+func (mr *MockRekognitionAPIMockRecorder) ListDatasetEntriesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetEntriesPages", reflect.TypeOf((*MockRekognitionAPI)(nil).ListDatasetEntriesPages), arg0, arg1)
+}
+
+// ListDatasetEntriesPagesWithContext mocks base method
+func (m *MockRekognitionAPI) ListDatasetEntriesPagesWithContext(arg0 context.Context, arg1 *rekognition.ListDatasetEntriesInput, arg2 func(*rekognition.ListDatasetEntriesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDatasetEntriesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDatasetEntriesPagesWithContext indicates an expected call of ListDatasetEntriesPagesWithContext
+func (mr *MockRekognitionAPIMockRecorder) ListDatasetEntriesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetEntriesPagesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListDatasetEntriesPagesWithContext), varargs...)
+}
+
+// ListDatasetEntriesRequest mocks base method
+func (m *MockRekognitionAPI) ListDatasetEntriesRequest(arg0 *rekognition.ListDatasetEntriesInput) (*request.Request, *rekognition.ListDatasetEntriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasetEntriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.ListDatasetEntriesOutput)
+	return ret0, ret1
+}
+
+// ListDatasetEntriesRequest indicates an expected call of ListDatasetEntriesRequest
+func (mr *MockRekognitionAPIMockRecorder) ListDatasetEntriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetEntriesRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).ListDatasetEntriesRequest), arg0)
+}
+
+// ListDatasetEntriesWithContext mocks base method
+func (m *MockRekognitionAPI) ListDatasetEntriesWithContext(arg0 context.Context, arg1 *rekognition.ListDatasetEntriesInput, arg2 ...request.Option) (*rekognition.ListDatasetEntriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDatasetEntriesWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.ListDatasetEntriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDatasetEntriesWithContext indicates an expected call of ListDatasetEntriesWithContext
+func (mr *MockRekognitionAPIMockRecorder) ListDatasetEntriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetEntriesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListDatasetEntriesWithContext), varargs...)
+}
+
+// ListDatasetLabels mocks base method
+func (m *MockRekognitionAPI) ListDatasetLabels(arg0 *rekognition.ListDatasetLabelsInput) (*rekognition.ListDatasetLabelsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasetLabels", arg0)
+	ret0, _ := ret[0].(*rekognition.ListDatasetLabelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDatasetLabels indicates an expected call of ListDatasetLabels
+func (mr *MockRekognitionAPIMockRecorder) ListDatasetLabels(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetLabels", reflect.TypeOf((*MockRekognitionAPI)(nil).ListDatasetLabels), arg0)
+}
+
+// ListDatasetLabelsPages mocks base method
+func (m *MockRekognitionAPI) ListDatasetLabelsPages(arg0 *rekognition.ListDatasetLabelsInput, arg1 func(*rekognition.ListDatasetLabelsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasetLabelsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDatasetLabelsPages indicates an expected call of ListDatasetLabelsPages
+func (mr *MockRekognitionAPIMockRecorder) ListDatasetLabelsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetLabelsPages", reflect.TypeOf((*MockRekognitionAPI)(nil).ListDatasetLabelsPages), arg0, arg1)
+}
+
+// ListDatasetLabelsPagesWithContext mocks base method
+func (m *MockRekognitionAPI) ListDatasetLabelsPagesWithContext(arg0 context.Context, arg1 *rekognition.ListDatasetLabelsInput, arg2 func(*rekognition.ListDatasetLabelsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDatasetLabelsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDatasetLabelsPagesWithContext indicates an expected call of ListDatasetLabelsPagesWithContext
+func (mr *MockRekognitionAPIMockRecorder) ListDatasetLabelsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetLabelsPagesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListDatasetLabelsPagesWithContext), varargs...)
+}
+
+// ListDatasetLabelsRequest mocks base method
+func (m *MockRekognitionAPI) ListDatasetLabelsRequest(arg0 *rekognition.ListDatasetLabelsInput) (*request.Request, *rekognition.ListDatasetLabelsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasetLabelsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.ListDatasetLabelsOutput)
+	return ret0, ret1
+}
+
+// ListDatasetLabelsRequest indicates an expected call of ListDatasetLabelsRequest
+func (mr *MockRekognitionAPIMockRecorder) ListDatasetLabelsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetLabelsRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).ListDatasetLabelsRequest), arg0)
+}
+
+// ListDatasetLabelsWithContext mocks base method
+func (m *MockRekognitionAPI) ListDatasetLabelsWithContext(arg0 context.Context, arg1 *rekognition.ListDatasetLabelsInput, arg2 ...request.Option) (*rekognition.ListDatasetLabelsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDatasetLabelsWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.ListDatasetLabelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDatasetLabelsWithContext indicates an expected call of ListDatasetLabelsWithContext
+func (mr *MockRekognitionAPIMockRecorder) ListDatasetLabelsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetLabelsWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListDatasetLabelsWithContext), varargs...)
 }
 
 // ListFaces mocks base method
@@ -3012,6 +3378,56 @@ func (mr *MockRekognitionAPIMockRecorder) UntagResourceWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateDatasetEntries mocks base method
+func (m *MockRekognitionAPI) UpdateDatasetEntries(arg0 *rekognition.UpdateDatasetEntriesInput) (*rekognition.UpdateDatasetEntriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDatasetEntries", arg0)
+	ret0, _ := ret[0].(*rekognition.UpdateDatasetEntriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDatasetEntries indicates an expected call of UpdateDatasetEntries
+func (mr *MockRekognitionAPIMockRecorder) UpdateDatasetEntries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatasetEntries", reflect.TypeOf((*MockRekognitionAPI)(nil).UpdateDatasetEntries), arg0)
+}
+
+// UpdateDatasetEntriesRequest mocks base method
+func (m *MockRekognitionAPI) UpdateDatasetEntriesRequest(arg0 *rekognition.UpdateDatasetEntriesInput) (*request.Request, *rekognition.UpdateDatasetEntriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDatasetEntriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.UpdateDatasetEntriesOutput)
+	return ret0, ret1
+}
+
+// UpdateDatasetEntriesRequest indicates an expected call of UpdateDatasetEntriesRequest
+func (mr *MockRekognitionAPIMockRecorder) UpdateDatasetEntriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatasetEntriesRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).UpdateDatasetEntriesRequest), arg0)
+}
+
+// UpdateDatasetEntriesWithContext mocks base method
+func (m *MockRekognitionAPI) UpdateDatasetEntriesWithContext(arg0 context.Context, arg1 *rekognition.UpdateDatasetEntriesInput, arg2 ...request.Option) (*rekognition.UpdateDatasetEntriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDatasetEntriesWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.UpdateDatasetEntriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDatasetEntriesWithContext indicates an expected call of UpdateDatasetEntriesWithContext
+func (mr *MockRekognitionAPIMockRecorder) UpdateDatasetEntriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatasetEntriesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).UpdateDatasetEntriesWithContext), varargs...)
 }
 
 // WaitUntilProjectVersionRunning mocks base method
