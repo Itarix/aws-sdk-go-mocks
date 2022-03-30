@@ -485,6 +485,56 @@ func (mr *MockECRAPIMockRecorder) DeleteRepositoryWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRepositoryWithContext", reflect.TypeOf((*MockECRAPI)(nil).DeleteRepositoryWithContext), varargs...)
 }
 
+// DescribeImageReplicationStatus mocks base method
+func (m *MockECRAPI) DescribeImageReplicationStatus(arg0 *ecr.DescribeImageReplicationStatusInput) (*ecr.DescribeImageReplicationStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeImageReplicationStatus", arg0)
+	ret0, _ := ret[0].(*ecr.DescribeImageReplicationStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeImageReplicationStatus indicates an expected call of DescribeImageReplicationStatus
+func (mr *MockECRAPIMockRecorder) DescribeImageReplicationStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeImageReplicationStatus", reflect.TypeOf((*MockECRAPI)(nil).DescribeImageReplicationStatus), arg0)
+}
+
+// DescribeImageReplicationStatusRequest mocks base method
+func (m *MockECRAPI) DescribeImageReplicationStatusRequest(arg0 *ecr.DescribeImageReplicationStatusInput) (*request.Request, *ecr.DescribeImageReplicationStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeImageReplicationStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ecr.DescribeImageReplicationStatusOutput)
+	return ret0, ret1
+}
+
+// DescribeImageReplicationStatusRequest indicates an expected call of DescribeImageReplicationStatusRequest
+func (mr *MockECRAPIMockRecorder) DescribeImageReplicationStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeImageReplicationStatusRequest", reflect.TypeOf((*MockECRAPI)(nil).DescribeImageReplicationStatusRequest), arg0)
+}
+
+// DescribeImageReplicationStatusWithContext mocks base method
+func (m *MockECRAPI) DescribeImageReplicationStatusWithContext(arg0 context.Context, arg1 *ecr.DescribeImageReplicationStatusInput, arg2 ...request.Option) (*ecr.DescribeImageReplicationStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeImageReplicationStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*ecr.DescribeImageReplicationStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeImageReplicationStatusWithContext indicates an expected call of DescribeImageReplicationStatusWithContext
+func (mr *MockECRAPIMockRecorder) DescribeImageReplicationStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeImageReplicationStatusWithContext", reflect.TypeOf((*MockECRAPI)(nil).DescribeImageReplicationStatusWithContext), varargs...)
+}
+
 // DescribeImageScanFindings mocks base method
 func (m *MockECRAPI) DescribeImageScanFindings(arg0 *ecr.DescribeImageScanFindingsInput) (*ecr.DescribeImageScanFindingsOutput, error) {
 	m.ctrl.T.Helper()

@@ -11017,6 +11017,56 @@ func (mr *MockIoTAPIMockRecorder) ListViolationEventsWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListViolationEventsWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListViolationEventsWithContext), varargs...)
 }
 
+// PutVerificationStateOnViolation mocks base method
+func (m *MockIoTAPI) PutVerificationStateOnViolation(arg0 *iot.PutVerificationStateOnViolationInput) (*iot.PutVerificationStateOnViolationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutVerificationStateOnViolation", arg0)
+	ret0, _ := ret[0].(*iot.PutVerificationStateOnViolationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutVerificationStateOnViolation indicates an expected call of PutVerificationStateOnViolation
+func (mr *MockIoTAPIMockRecorder) PutVerificationStateOnViolation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutVerificationStateOnViolation", reflect.TypeOf((*MockIoTAPI)(nil).PutVerificationStateOnViolation), arg0)
+}
+
+// PutVerificationStateOnViolationRequest mocks base method
+func (m *MockIoTAPI) PutVerificationStateOnViolationRequest(arg0 *iot.PutVerificationStateOnViolationInput) (*request.Request, *iot.PutVerificationStateOnViolationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutVerificationStateOnViolationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.PutVerificationStateOnViolationOutput)
+	return ret0, ret1
+}
+
+// PutVerificationStateOnViolationRequest indicates an expected call of PutVerificationStateOnViolationRequest
+func (mr *MockIoTAPIMockRecorder) PutVerificationStateOnViolationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutVerificationStateOnViolationRequest", reflect.TypeOf((*MockIoTAPI)(nil).PutVerificationStateOnViolationRequest), arg0)
+}
+
+// PutVerificationStateOnViolationWithContext mocks base method
+func (m *MockIoTAPI) PutVerificationStateOnViolationWithContext(arg0 context.Context, arg1 *iot.PutVerificationStateOnViolationInput, arg2 ...request.Option) (*iot.PutVerificationStateOnViolationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutVerificationStateOnViolationWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.PutVerificationStateOnViolationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutVerificationStateOnViolationWithContext indicates an expected call of PutVerificationStateOnViolationWithContext
+func (mr *MockIoTAPIMockRecorder) PutVerificationStateOnViolationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutVerificationStateOnViolationWithContext", reflect.TypeOf((*MockIoTAPI)(nil).PutVerificationStateOnViolationWithContext), varargs...)
+}
+
 // RegisterCACertificate mocks base method
 func (m *MockIoTAPI) RegisterCACertificate(arg0 *iot.RegisterCACertificateInput) (*iot.RegisterCACertificateOutput, error) {
 	m.ctrl.T.Helper()

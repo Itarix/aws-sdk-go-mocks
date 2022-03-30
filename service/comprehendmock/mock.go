@@ -1618,6 +1618,89 @@ func (mr *MockComprehendAPIMockRecorder) ListDocumentClassificationJobsWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentClassificationJobsWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListDocumentClassificationJobsWithContext), varargs...)
 }
 
+// ListDocumentClassifierSummaries mocks base method
+func (m *MockComprehendAPI) ListDocumentClassifierSummaries(arg0 *comprehend.ListDocumentClassifierSummariesInput) (*comprehend.ListDocumentClassifierSummariesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDocumentClassifierSummaries", arg0)
+	ret0, _ := ret[0].(*comprehend.ListDocumentClassifierSummariesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDocumentClassifierSummaries indicates an expected call of ListDocumentClassifierSummaries
+func (mr *MockComprehendAPIMockRecorder) ListDocumentClassifierSummaries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentClassifierSummaries", reflect.TypeOf((*MockComprehendAPI)(nil).ListDocumentClassifierSummaries), arg0)
+}
+
+// ListDocumentClassifierSummariesPages mocks base method
+func (m *MockComprehendAPI) ListDocumentClassifierSummariesPages(arg0 *comprehend.ListDocumentClassifierSummariesInput, arg1 func(*comprehend.ListDocumentClassifierSummariesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDocumentClassifierSummariesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDocumentClassifierSummariesPages indicates an expected call of ListDocumentClassifierSummariesPages
+func (mr *MockComprehendAPIMockRecorder) ListDocumentClassifierSummariesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentClassifierSummariesPages", reflect.TypeOf((*MockComprehendAPI)(nil).ListDocumentClassifierSummariesPages), arg0, arg1)
+}
+
+// ListDocumentClassifierSummariesPagesWithContext mocks base method
+func (m *MockComprehendAPI) ListDocumentClassifierSummariesPagesWithContext(arg0 context.Context, arg1 *comprehend.ListDocumentClassifierSummariesInput, arg2 func(*comprehend.ListDocumentClassifierSummariesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDocumentClassifierSummariesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDocumentClassifierSummariesPagesWithContext indicates an expected call of ListDocumentClassifierSummariesPagesWithContext
+func (mr *MockComprehendAPIMockRecorder) ListDocumentClassifierSummariesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentClassifierSummariesPagesWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListDocumentClassifierSummariesPagesWithContext), varargs...)
+}
+
+// ListDocumentClassifierSummariesRequest mocks base method
+func (m *MockComprehendAPI) ListDocumentClassifierSummariesRequest(arg0 *comprehend.ListDocumentClassifierSummariesInput) (*request.Request, *comprehend.ListDocumentClassifierSummariesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDocumentClassifierSummariesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.ListDocumentClassifierSummariesOutput)
+	return ret0, ret1
+}
+
+// ListDocumentClassifierSummariesRequest indicates an expected call of ListDocumentClassifierSummariesRequest
+func (mr *MockComprehendAPIMockRecorder) ListDocumentClassifierSummariesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentClassifierSummariesRequest", reflect.TypeOf((*MockComprehendAPI)(nil).ListDocumentClassifierSummariesRequest), arg0)
+}
+
+// ListDocumentClassifierSummariesWithContext mocks base method
+func (m *MockComprehendAPI) ListDocumentClassifierSummariesWithContext(arg0 context.Context, arg1 *comprehend.ListDocumentClassifierSummariesInput, arg2 ...request.Option) (*comprehend.ListDocumentClassifierSummariesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDocumentClassifierSummariesWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.ListDocumentClassifierSummariesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDocumentClassifierSummariesWithContext indicates an expected call of ListDocumentClassifierSummariesWithContext
+func (mr *MockComprehendAPIMockRecorder) ListDocumentClassifierSummariesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDocumentClassifierSummariesWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListDocumentClassifierSummariesWithContext), varargs...)
+}
+
 // ListDocumentClassifiers mocks base method
 func (m *MockComprehendAPI) ListDocumentClassifiers(arg0 *comprehend.ListDocumentClassifiersInput) (*comprehend.ListDocumentClassifiersOutput, error) {
 	m.ctrl.T.Helper()
@@ -1915,6 +1998,89 @@ func (mr *MockComprehendAPIMockRecorder) ListEntitiesDetectionJobsWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEntitiesDetectionJobsWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListEntitiesDetectionJobsWithContext), varargs...)
+}
+
+// ListEntityRecognizerSummaries mocks base method
+func (m *MockComprehendAPI) ListEntityRecognizerSummaries(arg0 *comprehend.ListEntityRecognizerSummariesInput) (*comprehend.ListEntityRecognizerSummariesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEntityRecognizerSummaries", arg0)
+	ret0, _ := ret[0].(*comprehend.ListEntityRecognizerSummariesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEntityRecognizerSummaries indicates an expected call of ListEntityRecognizerSummaries
+func (mr *MockComprehendAPIMockRecorder) ListEntityRecognizerSummaries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEntityRecognizerSummaries", reflect.TypeOf((*MockComprehendAPI)(nil).ListEntityRecognizerSummaries), arg0)
+}
+
+// ListEntityRecognizerSummariesPages mocks base method
+func (m *MockComprehendAPI) ListEntityRecognizerSummariesPages(arg0 *comprehend.ListEntityRecognizerSummariesInput, arg1 func(*comprehend.ListEntityRecognizerSummariesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEntityRecognizerSummariesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEntityRecognizerSummariesPages indicates an expected call of ListEntityRecognizerSummariesPages
+func (mr *MockComprehendAPIMockRecorder) ListEntityRecognizerSummariesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEntityRecognizerSummariesPages", reflect.TypeOf((*MockComprehendAPI)(nil).ListEntityRecognizerSummariesPages), arg0, arg1)
+}
+
+// ListEntityRecognizerSummariesPagesWithContext mocks base method
+func (m *MockComprehendAPI) ListEntityRecognizerSummariesPagesWithContext(arg0 context.Context, arg1 *comprehend.ListEntityRecognizerSummariesInput, arg2 func(*comprehend.ListEntityRecognizerSummariesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEntityRecognizerSummariesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEntityRecognizerSummariesPagesWithContext indicates an expected call of ListEntityRecognizerSummariesPagesWithContext
+func (mr *MockComprehendAPIMockRecorder) ListEntityRecognizerSummariesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEntityRecognizerSummariesPagesWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListEntityRecognizerSummariesPagesWithContext), varargs...)
+}
+
+// ListEntityRecognizerSummariesRequest mocks base method
+func (m *MockComprehendAPI) ListEntityRecognizerSummariesRequest(arg0 *comprehend.ListEntityRecognizerSummariesInput) (*request.Request, *comprehend.ListEntityRecognizerSummariesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEntityRecognizerSummariesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.ListEntityRecognizerSummariesOutput)
+	return ret0, ret1
+}
+
+// ListEntityRecognizerSummariesRequest indicates an expected call of ListEntityRecognizerSummariesRequest
+func (mr *MockComprehendAPIMockRecorder) ListEntityRecognizerSummariesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEntityRecognizerSummariesRequest", reflect.TypeOf((*MockComprehendAPI)(nil).ListEntityRecognizerSummariesRequest), arg0)
+}
+
+// ListEntityRecognizerSummariesWithContext mocks base method
+func (m *MockComprehendAPI) ListEntityRecognizerSummariesWithContext(arg0 context.Context, arg1 *comprehend.ListEntityRecognizerSummariesInput, arg2 ...request.Option) (*comprehend.ListEntityRecognizerSummariesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEntityRecognizerSummariesWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.ListEntityRecognizerSummariesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEntityRecognizerSummariesWithContext indicates an expected call of ListEntityRecognizerSummariesWithContext
+func (mr *MockComprehendAPIMockRecorder) ListEntityRecognizerSummariesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEntityRecognizerSummariesWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListEntityRecognizerSummariesWithContext), varargs...)
 }
 
 // ListEntityRecognizers mocks base method
