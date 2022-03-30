@@ -235,6 +235,56 @@ func (mr *MockDataSyncAPIMockRecorder) CreateLocationFsxWindowsWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationFsxWindowsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationFsxWindowsWithContext), varargs...)
 }
 
+// CreateLocationHdfs mocks base method
+func (m *MockDataSyncAPI) CreateLocationHdfs(arg0 *datasync.CreateLocationHdfsInput) (*datasync.CreateLocationHdfsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLocationHdfs", arg0)
+	ret0, _ := ret[0].(*datasync.CreateLocationHdfsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLocationHdfs indicates an expected call of CreateLocationHdfs
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationHdfs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationHdfs", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationHdfs), arg0)
+}
+
+// CreateLocationHdfsRequest mocks base method
+func (m *MockDataSyncAPI) CreateLocationHdfsRequest(arg0 *datasync.CreateLocationHdfsInput) (*request.Request, *datasync.CreateLocationHdfsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLocationHdfsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.CreateLocationHdfsOutput)
+	return ret0, ret1
+}
+
+// CreateLocationHdfsRequest indicates an expected call of CreateLocationHdfsRequest
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationHdfsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationHdfsRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationHdfsRequest), arg0)
+}
+
+// CreateLocationHdfsWithContext mocks base method
+func (m *MockDataSyncAPI) CreateLocationHdfsWithContext(arg0 context.Context, arg1 *datasync.CreateLocationHdfsInput, arg2 ...request.Option) (*datasync.CreateLocationHdfsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLocationHdfsWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.CreateLocationHdfsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLocationHdfsWithContext indicates an expected call of CreateLocationHdfsWithContext
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationHdfsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationHdfsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationHdfsWithContext), varargs...)
+}
+
 // CreateLocationNfs mocks base method
 func (m *MockDataSyncAPI) CreateLocationNfs(arg0 *datasync.CreateLocationNfsInput) (*datasync.CreateLocationNfsOutput, error) {
 	m.ctrl.T.Helper()
@@ -783,6 +833,56 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeLocationFsxWindowsWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationFsxWindowsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationFsxWindowsWithContext), varargs...)
+}
+
+// DescribeLocationHdfs mocks base method
+func (m *MockDataSyncAPI) DescribeLocationHdfs(arg0 *datasync.DescribeLocationHdfsInput) (*datasync.DescribeLocationHdfsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLocationHdfs", arg0)
+	ret0, _ := ret[0].(*datasync.DescribeLocationHdfsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLocationHdfs indicates an expected call of DescribeLocationHdfs
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationHdfs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationHdfs", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationHdfs), arg0)
+}
+
+// DescribeLocationHdfsRequest mocks base method
+func (m *MockDataSyncAPI) DescribeLocationHdfsRequest(arg0 *datasync.DescribeLocationHdfsInput) (*request.Request, *datasync.DescribeLocationHdfsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLocationHdfsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.DescribeLocationHdfsOutput)
+	return ret0, ret1
+}
+
+// DescribeLocationHdfsRequest indicates an expected call of DescribeLocationHdfsRequest
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationHdfsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationHdfsRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationHdfsRequest), arg0)
+}
+
+// DescribeLocationHdfsWithContext mocks base method
+func (m *MockDataSyncAPI) DescribeLocationHdfsWithContext(arg0 context.Context, arg1 *datasync.DescribeLocationHdfsInput, arg2 ...request.Option) (*datasync.DescribeLocationHdfsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLocationHdfsWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.DescribeLocationHdfsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLocationHdfsWithContext indicates an expected call of DescribeLocationHdfsWithContext
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationHdfsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationHdfsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationHdfsWithContext), varargs...)
 }
 
 // DescribeLocationNfs mocks base method
@@ -1698,6 +1798,56 @@ func (mr *MockDataSyncAPIMockRecorder) UpdateAgentWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAgentWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateAgentWithContext), varargs...)
+}
+
+// UpdateLocationHdfs mocks base method
+func (m *MockDataSyncAPI) UpdateLocationHdfs(arg0 *datasync.UpdateLocationHdfsInput) (*datasync.UpdateLocationHdfsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLocationHdfs", arg0)
+	ret0, _ := ret[0].(*datasync.UpdateLocationHdfsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLocationHdfs indicates an expected call of UpdateLocationHdfs
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationHdfs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationHdfs", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationHdfs), arg0)
+}
+
+// UpdateLocationHdfsRequest mocks base method
+func (m *MockDataSyncAPI) UpdateLocationHdfsRequest(arg0 *datasync.UpdateLocationHdfsInput) (*request.Request, *datasync.UpdateLocationHdfsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLocationHdfsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.UpdateLocationHdfsOutput)
+	return ret0, ret1
+}
+
+// UpdateLocationHdfsRequest indicates an expected call of UpdateLocationHdfsRequest
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationHdfsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationHdfsRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationHdfsRequest), arg0)
+}
+
+// UpdateLocationHdfsWithContext mocks base method
+func (m *MockDataSyncAPI) UpdateLocationHdfsWithContext(arg0 context.Context, arg1 *datasync.UpdateLocationHdfsInput, arg2 ...request.Option) (*datasync.UpdateLocationHdfsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateLocationHdfsWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.UpdateLocationHdfsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLocationHdfsWithContext indicates an expected call of UpdateLocationHdfsWithContext
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationHdfsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationHdfsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationHdfsWithContext), varargs...)
 }
 
 // UpdateLocationNfs mocks base method
