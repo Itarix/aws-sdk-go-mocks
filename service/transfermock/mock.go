@@ -185,6 +185,56 @@ func (mr *MockTransferAPIMockRecorder) CreateUserWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserWithContext", reflect.TypeOf((*MockTransferAPI)(nil).CreateUserWithContext), varargs...)
 }
 
+// CreateWorkflow mocks base method
+func (m *MockTransferAPI) CreateWorkflow(arg0 *transfer.CreateWorkflowInput) (*transfer.CreateWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorkflow", arg0)
+	ret0, _ := ret[0].(*transfer.CreateWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorkflow indicates an expected call of CreateWorkflow
+func (mr *MockTransferAPIMockRecorder) CreateWorkflow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkflow", reflect.TypeOf((*MockTransferAPI)(nil).CreateWorkflow), arg0)
+}
+
+// CreateWorkflowRequest mocks base method
+func (m *MockTransferAPI) CreateWorkflowRequest(arg0 *transfer.CreateWorkflowInput) (*request.Request, *transfer.CreateWorkflowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorkflowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.CreateWorkflowOutput)
+	return ret0, ret1
+}
+
+// CreateWorkflowRequest indicates an expected call of CreateWorkflowRequest
+func (mr *MockTransferAPIMockRecorder) CreateWorkflowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkflowRequest", reflect.TypeOf((*MockTransferAPI)(nil).CreateWorkflowRequest), arg0)
+}
+
+// CreateWorkflowWithContext mocks base method
+func (m *MockTransferAPI) CreateWorkflowWithContext(arg0 context.Context, arg1 *transfer.CreateWorkflowInput, arg2 ...request.Option) (*transfer.CreateWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWorkflowWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.CreateWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorkflowWithContext indicates an expected call of CreateWorkflowWithContext
+func (mr *MockTransferAPIMockRecorder) CreateWorkflowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkflowWithContext", reflect.TypeOf((*MockTransferAPI)(nil).CreateWorkflowWithContext), varargs...)
+}
+
 // DeleteAccess mocks base method
 func (m *MockTransferAPI) DeleteAccess(arg0 *transfer.DeleteAccessInput) (*transfer.DeleteAccessOutput, error) {
 	m.ctrl.T.Helper()
@@ -385,6 +435,56 @@ func (mr *MockTransferAPIMockRecorder) DeleteUserWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DeleteUserWithContext), varargs...)
 }
 
+// DeleteWorkflow mocks base method
+func (m *MockTransferAPI) DeleteWorkflow(arg0 *transfer.DeleteWorkflowInput) (*transfer.DeleteWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorkflow", arg0)
+	ret0, _ := ret[0].(*transfer.DeleteWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorkflow indicates an expected call of DeleteWorkflow
+func (mr *MockTransferAPIMockRecorder) DeleteWorkflow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkflow", reflect.TypeOf((*MockTransferAPI)(nil).DeleteWorkflow), arg0)
+}
+
+// DeleteWorkflowRequest mocks base method
+func (m *MockTransferAPI) DeleteWorkflowRequest(arg0 *transfer.DeleteWorkflowInput) (*request.Request, *transfer.DeleteWorkflowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorkflowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.DeleteWorkflowOutput)
+	return ret0, ret1
+}
+
+// DeleteWorkflowRequest indicates an expected call of DeleteWorkflowRequest
+func (mr *MockTransferAPIMockRecorder) DeleteWorkflowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkflowRequest", reflect.TypeOf((*MockTransferAPI)(nil).DeleteWorkflowRequest), arg0)
+}
+
+// DeleteWorkflowWithContext mocks base method
+func (m *MockTransferAPI) DeleteWorkflowWithContext(arg0 context.Context, arg1 *transfer.DeleteWorkflowInput, arg2 ...request.Option) (*transfer.DeleteWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteWorkflowWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.DeleteWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorkflowWithContext indicates an expected call of DeleteWorkflowWithContext
+func (mr *MockTransferAPIMockRecorder) DeleteWorkflowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkflowWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DeleteWorkflowWithContext), varargs...)
+}
+
 // DescribeAccess mocks base method
 func (m *MockTransferAPI) DescribeAccess(arg0 *transfer.DescribeAccessInput) (*transfer.DescribeAccessOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +533,56 @@ func (mr *MockTransferAPIMockRecorder) DescribeAccessWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccessWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DescribeAccessWithContext), varargs...)
+}
+
+// DescribeExecution mocks base method
+func (m *MockTransferAPI) DescribeExecution(arg0 *transfer.DescribeExecutionInput) (*transfer.DescribeExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeExecution", arg0)
+	ret0, _ := ret[0].(*transfer.DescribeExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeExecution indicates an expected call of DescribeExecution
+func (mr *MockTransferAPIMockRecorder) DescribeExecution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExecution", reflect.TypeOf((*MockTransferAPI)(nil).DescribeExecution), arg0)
+}
+
+// DescribeExecutionRequest mocks base method
+func (m *MockTransferAPI) DescribeExecutionRequest(arg0 *transfer.DescribeExecutionInput) (*request.Request, *transfer.DescribeExecutionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeExecutionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.DescribeExecutionOutput)
+	return ret0, ret1
+}
+
+// DescribeExecutionRequest indicates an expected call of DescribeExecutionRequest
+func (mr *MockTransferAPIMockRecorder) DescribeExecutionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExecutionRequest", reflect.TypeOf((*MockTransferAPI)(nil).DescribeExecutionRequest), arg0)
+}
+
+// DescribeExecutionWithContext mocks base method
+func (m *MockTransferAPI) DescribeExecutionWithContext(arg0 context.Context, arg1 *transfer.DescribeExecutionInput, arg2 ...request.Option) (*transfer.DescribeExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeExecutionWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.DescribeExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeExecutionWithContext indicates an expected call of DescribeExecutionWithContext
+func (mr *MockTransferAPIMockRecorder) DescribeExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExecutionWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DescribeExecutionWithContext), varargs...)
 }
 
 // DescribeSecurityPolicy mocks base method
@@ -585,6 +735,56 @@ func (mr *MockTransferAPIMockRecorder) DescribeUserWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DescribeUserWithContext), varargs...)
 }
 
+// DescribeWorkflow mocks base method
+func (m *MockTransferAPI) DescribeWorkflow(arg0 *transfer.DescribeWorkflowInput) (*transfer.DescribeWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkflow", arg0)
+	ret0, _ := ret[0].(*transfer.DescribeWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkflow indicates an expected call of DescribeWorkflow
+func (mr *MockTransferAPIMockRecorder) DescribeWorkflow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkflow", reflect.TypeOf((*MockTransferAPI)(nil).DescribeWorkflow), arg0)
+}
+
+// DescribeWorkflowRequest mocks base method
+func (m *MockTransferAPI) DescribeWorkflowRequest(arg0 *transfer.DescribeWorkflowInput) (*request.Request, *transfer.DescribeWorkflowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkflowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.DescribeWorkflowOutput)
+	return ret0, ret1
+}
+
+// DescribeWorkflowRequest indicates an expected call of DescribeWorkflowRequest
+func (mr *MockTransferAPIMockRecorder) DescribeWorkflowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkflowRequest", reflect.TypeOf((*MockTransferAPI)(nil).DescribeWorkflowRequest), arg0)
+}
+
+// DescribeWorkflowWithContext mocks base method
+func (m *MockTransferAPI) DescribeWorkflowWithContext(arg0 context.Context, arg1 *transfer.DescribeWorkflowInput, arg2 ...request.Option) (*transfer.DescribeWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWorkflowWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.DescribeWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkflowWithContext indicates an expected call of DescribeWorkflowWithContext
+func (mr *MockTransferAPIMockRecorder) DescribeWorkflowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkflowWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DescribeWorkflowWithContext), varargs...)
+}
+
 // ImportSshPublicKey mocks base method
 func (m *MockTransferAPI) ImportSshPublicKey(arg0 *transfer.ImportSshPublicKeyInput) (*transfer.ImportSshPublicKeyOutput, error) {
 	m.ctrl.T.Helper()
@@ -716,6 +916,89 @@ func (mr *MockTransferAPIMockRecorder) ListAccessesWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessesWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListAccessesWithContext), varargs...)
+}
+
+// ListExecutions mocks base method
+func (m *MockTransferAPI) ListExecutions(arg0 *transfer.ListExecutionsInput) (*transfer.ListExecutionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExecutions", arg0)
+	ret0, _ := ret[0].(*transfer.ListExecutionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExecutions indicates an expected call of ListExecutions
+func (mr *MockTransferAPIMockRecorder) ListExecutions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutions", reflect.TypeOf((*MockTransferAPI)(nil).ListExecutions), arg0)
+}
+
+// ListExecutionsPages mocks base method
+func (m *MockTransferAPI) ListExecutionsPages(arg0 *transfer.ListExecutionsInput, arg1 func(*transfer.ListExecutionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExecutionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExecutionsPages indicates an expected call of ListExecutionsPages
+func (mr *MockTransferAPIMockRecorder) ListExecutionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutionsPages", reflect.TypeOf((*MockTransferAPI)(nil).ListExecutionsPages), arg0, arg1)
+}
+
+// ListExecutionsPagesWithContext mocks base method
+func (m *MockTransferAPI) ListExecutionsPagesWithContext(arg0 context.Context, arg1 *transfer.ListExecutionsInput, arg2 func(*transfer.ListExecutionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExecutionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExecutionsPagesWithContext indicates an expected call of ListExecutionsPagesWithContext
+func (mr *MockTransferAPIMockRecorder) ListExecutionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutionsPagesWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListExecutionsPagesWithContext), varargs...)
+}
+
+// ListExecutionsRequest mocks base method
+func (m *MockTransferAPI) ListExecutionsRequest(arg0 *transfer.ListExecutionsInput) (*request.Request, *transfer.ListExecutionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExecutionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.ListExecutionsOutput)
+	return ret0, ret1
+}
+
+// ListExecutionsRequest indicates an expected call of ListExecutionsRequest
+func (mr *MockTransferAPIMockRecorder) ListExecutionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutionsRequest", reflect.TypeOf((*MockTransferAPI)(nil).ListExecutionsRequest), arg0)
+}
+
+// ListExecutionsWithContext mocks base method
+func (m *MockTransferAPI) ListExecutionsWithContext(arg0 context.Context, arg1 *transfer.ListExecutionsInput, arg2 ...request.Option) (*transfer.ListExecutionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExecutionsWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.ListExecutionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExecutionsWithContext indicates an expected call of ListExecutionsWithContext
+func (mr *MockTransferAPIMockRecorder) ListExecutionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutionsWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListExecutionsWithContext), varargs...)
 }
 
 // ListSecurityPolicies mocks base method
@@ -1048,6 +1331,139 @@ func (mr *MockTransferAPIMockRecorder) ListUsersWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListUsersWithContext), varargs...)
+}
+
+// ListWorkflows mocks base method
+func (m *MockTransferAPI) ListWorkflows(arg0 *transfer.ListWorkflowsInput) (*transfer.ListWorkflowsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkflows", arg0)
+	ret0, _ := ret[0].(*transfer.ListWorkflowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorkflows indicates an expected call of ListWorkflows
+func (mr *MockTransferAPIMockRecorder) ListWorkflows(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflows", reflect.TypeOf((*MockTransferAPI)(nil).ListWorkflows), arg0)
+}
+
+// ListWorkflowsPages mocks base method
+func (m *MockTransferAPI) ListWorkflowsPages(arg0 *transfer.ListWorkflowsInput, arg1 func(*transfer.ListWorkflowsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkflowsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorkflowsPages indicates an expected call of ListWorkflowsPages
+func (mr *MockTransferAPIMockRecorder) ListWorkflowsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflowsPages", reflect.TypeOf((*MockTransferAPI)(nil).ListWorkflowsPages), arg0, arg1)
+}
+
+// ListWorkflowsPagesWithContext mocks base method
+func (m *MockTransferAPI) ListWorkflowsPagesWithContext(arg0 context.Context, arg1 *transfer.ListWorkflowsInput, arg2 func(*transfer.ListWorkflowsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorkflowsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorkflowsPagesWithContext indicates an expected call of ListWorkflowsPagesWithContext
+func (mr *MockTransferAPIMockRecorder) ListWorkflowsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflowsPagesWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListWorkflowsPagesWithContext), varargs...)
+}
+
+// ListWorkflowsRequest mocks base method
+func (m *MockTransferAPI) ListWorkflowsRequest(arg0 *transfer.ListWorkflowsInput) (*request.Request, *transfer.ListWorkflowsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkflowsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.ListWorkflowsOutput)
+	return ret0, ret1
+}
+
+// ListWorkflowsRequest indicates an expected call of ListWorkflowsRequest
+func (mr *MockTransferAPIMockRecorder) ListWorkflowsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflowsRequest", reflect.TypeOf((*MockTransferAPI)(nil).ListWorkflowsRequest), arg0)
+}
+
+// ListWorkflowsWithContext mocks base method
+func (m *MockTransferAPI) ListWorkflowsWithContext(arg0 context.Context, arg1 *transfer.ListWorkflowsInput, arg2 ...request.Option) (*transfer.ListWorkflowsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorkflowsWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.ListWorkflowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorkflowsWithContext indicates an expected call of ListWorkflowsWithContext
+func (mr *MockTransferAPIMockRecorder) ListWorkflowsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkflowsWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListWorkflowsWithContext), varargs...)
+}
+
+// SendWorkflowStepState mocks base method
+func (m *MockTransferAPI) SendWorkflowStepState(arg0 *transfer.SendWorkflowStepStateInput) (*transfer.SendWorkflowStepStateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendWorkflowStepState", arg0)
+	ret0, _ := ret[0].(*transfer.SendWorkflowStepStateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendWorkflowStepState indicates an expected call of SendWorkflowStepState
+func (mr *MockTransferAPIMockRecorder) SendWorkflowStepState(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendWorkflowStepState", reflect.TypeOf((*MockTransferAPI)(nil).SendWorkflowStepState), arg0)
+}
+
+// SendWorkflowStepStateRequest mocks base method
+func (m *MockTransferAPI) SendWorkflowStepStateRequest(arg0 *transfer.SendWorkflowStepStateInput) (*request.Request, *transfer.SendWorkflowStepStateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendWorkflowStepStateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.SendWorkflowStepStateOutput)
+	return ret0, ret1
+}
+
+// SendWorkflowStepStateRequest indicates an expected call of SendWorkflowStepStateRequest
+func (mr *MockTransferAPIMockRecorder) SendWorkflowStepStateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendWorkflowStepStateRequest", reflect.TypeOf((*MockTransferAPI)(nil).SendWorkflowStepStateRequest), arg0)
+}
+
+// SendWorkflowStepStateWithContext mocks base method
+func (m *MockTransferAPI) SendWorkflowStepStateWithContext(arg0 context.Context, arg1 *transfer.SendWorkflowStepStateInput, arg2 ...request.Option) (*transfer.SendWorkflowStepStateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SendWorkflowStepStateWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.SendWorkflowStepStateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendWorkflowStepStateWithContext indicates an expected call of SendWorkflowStepStateWithContext
+func (mr *MockTransferAPIMockRecorder) SendWorkflowStepStateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendWorkflowStepStateWithContext", reflect.TypeOf((*MockTransferAPI)(nil).SendWorkflowStepStateWithContext), varargs...)
 }
 
 // StartServer mocks base method
