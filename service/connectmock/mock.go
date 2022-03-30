@@ -4710,6 +4710,56 @@ func (mr *MockConnectAPIMockRecorder) StartContactRecordingWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartContactRecordingWithContext", reflect.TypeOf((*MockConnectAPI)(nil).StartContactRecordingWithContext), varargs...)
 }
 
+// StartContactStreaming mocks base method
+func (m *MockConnectAPI) StartContactStreaming(arg0 *connect.StartContactStreamingInput) (*connect.StartContactStreamingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartContactStreaming", arg0)
+	ret0, _ := ret[0].(*connect.StartContactStreamingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartContactStreaming indicates an expected call of StartContactStreaming
+func (mr *MockConnectAPIMockRecorder) StartContactStreaming(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartContactStreaming", reflect.TypeOf((*MockConnectAPI)(nil).StartContactStreaming), arg0)
+}
+
+// StartContactStreamingRequest mocks base method
+func (m *MockConnectAPI) StartContactStreamingRequest(arg0 *connect.StartContactStreamingInput) (*request.Request, *connect.StartContactStreamingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartContactStreamingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.StartContactStreamingOutput)
+	return ret0, ret1
+}
+
+// StartContactStreamingRequest indicates an expected call of StartContactStreamingRequest
+func (mr *MockConnectAPIMockRecorder) StartContactStreamingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartContactStreamingRequest", reflect.TypeOf((*MockConnectAPI)(nil).StartContactStreamingRequest), arg0)
+}
+
+// StartContactStreamingWithContext mocks base method
+func (m *MockConnectAPI) StartContactStreamingWithContext(arg0 context.Context, arg1 *connect.StartContactStreamingInput, arg2 ...request.Option) (*connect.StartContactStreamingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartContactStreamingWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.StartContactStreamingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartContactStreamingWithContext indicates an expected call of StartContactStreamingWithContext
+func (mr *MockConnectAPIMockRecorder) StartContactStreamingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartContactStreamingWithContext", reflect.TypeOf((*MockConnectAPI)(nil).StartContactStreamingWithContext), varargs...)
+}
+
 // StartOutboundVoiceContact mocks base method
 func (m *MockConnectAPI) StartOutboundVoiceContact(arg0 *connect.StartOutboundVoiceContactInput) (*connect.StartOutboundVoiceContactOutput, error) {
 	m.ctrl.T.Helper()
@@ -4888,6 +4938,56 @@ func (m *MockConnectAPI) StopContactRequest(arg0 *connect.StopContactInput) (*re
 func (mr *MockConnectAPIMockRecorder) StopContactRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopContactRequest", reflect.TypeOf((*MockConnectAPI)(nil).StopContactRequest), arg0)
+}
+
+// StopContactStreaming mocks base method
+func (m *MockConnectAPI) StopContactStreaming(arg0 *connect.StopContactStreamingInput) (*connect.StopContactStreamingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopContactStreaming", arg0)
+	ret0, _ := ret[0].(*connect.StopContactStreamingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopContactStreaming indicates an expected call of StopContactStreaming
+func (mr *MockConnectAPIMockRecorder) StopContactStreaming(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopContactStreaming", reflect.TypeOf((*MockConnectAPI)(nil).StopContactStreaming), arg0)
+}
+
+// StopContactStreamingRequest mocks base method
+func (m *MockConnectAPI) StopContactStreamingRequest(arg0 *connect.StopContactStreamingInput) (*request.Request, *connect.StopContactStreamingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopContactStreamingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.StopContactStreamingOutput)
+	return ret0, ret1
+}
+
+// StopContactStreamingRequest indicates an expected call of StopContactStreamingRequest
+func (mr *MockConnectAPIMockRecorder) StopContactStreamingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopContactStreamingRequest", reflect.TypeOf((*MockConnectAPI)(nil).StopContactStreamingRequest), arg0)
+}
+
+// StopContactStreamingWithContext mocks base method
+func (m *MockConnectAPI) StopContactStreamingWithContext(arg0 context.Context, arg1 *connect.StopContactStreamingInput, arg2 ...request.Option) (*connect.StopContactStreamingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopContactStreamingWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.StopContactStreamingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopContactStreamingWithContext indicates an expected call of StopContactStreamingWithContext
+func (mr *MockConnectAPIMockRecorder) StopContactStreamingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopContactStreamingWithContext", reflect.TypeOf((*MockConnectAPI)(nil).StopContactStreamingWithContext), varargs...)
 }
 
 // StopContactWithContext mocks base method
