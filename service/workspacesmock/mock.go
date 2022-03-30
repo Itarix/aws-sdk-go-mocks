@@ -385,6 +385,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) CreateTagsWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTagsWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateTagsWithContext), varargs...)
 }
 
+// CreateUpdatedWorkspaceImage mocks base method
+func (m *MockWorkSpacesAPI) CreateUpdatedWorkspaceImage(arg0 *workspaces.CreateUpdatedWorkspaceImageInput) (*workspaces.CreateUpdatedWorkspaceImageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUpdatedWorkspaceImage", arg0)
+	ret0, _ := ret[0].(*workspaces.CreateUpdatedWorkspaceImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUpdatedWorkspaceImage indicates an expected call of CreateUpdatedWorkspaceImage
+func (mr *MockWorkSpacesAPIMockRecorder) CreateUpdatedWorkspaceImage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUpdatedWorkspaceImage", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateUpdatedWorkspaceImage), arg0)
+}
+
+// CreateUpdatedWorkspaceImageRequest mocks base method
+func (m *MockWorkSpacesAPI) CreateUpdatedWorkspaceImageRequest(arg0 *workspaces.CreateUpdatedWorkspaceImageInput) (*request.Request, *workspaces.CreateUpdatedWorkspaceImageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUpdatedWorkspaceImageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.CreateUpdatedWorkspaceImageOutput)
+	return ret0, ret1
+}
+
+// CreateUpdatedWorkspaceImageRequest indicates an expected call of CreateUpdatedWorkspaceImageRequest
+func (mr *MockWorkSpacesAPIMockRecorder) CreateUpdatedWorkspaceImageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUpdatedWorkspaceImageRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateUpdatedWorkspaceImageRequest), arg0)
+}
+
+// CreateUpdatedWorkspaceImageWithContext mocks base method
+func (m *MockWorkSpacesAPI) CreateUpdatedWorkspaceImageWithContext(arg0 context.Context, arg1 *workspaces.CreateUpdatedWorkspaceImageInput, arg2 ...request.Option) (*workspaces.CreateUpdatedWorkspaceImageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateUpdatedWorkspaceImageWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.CreateUpdatedWorkspaceImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUpdatedWorkspaceImageWithContext indicates an expected call of CreateUpdatedWorkspaceImageWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) CreateUpdatedWorkspaceImageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUpdatedWorkspaceImageWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateUpdatedWorkspaceImageWithContext), varargs...)
+}
+
 // CreateWorkspaceBundle mocks base method
 func (m *MockWorkSpacesAPI) CreateWorkspaceBundle(arg0 *workspaces.CreateWorkspaceBundleInput) (*workspaces.CreateWorkspaceBundleOutput, error) {
 	m.ctrl.T.Helper()

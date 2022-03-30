@@ -685,6 +685,56 @@ func (mr *MockWorkMailAPIMockRecorder) DeleteMailboxPermissionsWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMailboxPermissionsWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteMailboxPermissionsWithContext), varargs...)
 }
 
+// DeleteMobileDeviceAccessOverride mocks base method
+func (m *MockWorkMailAPI) DeleteMobileDeviceAccessOverride(arg0 *workmail.DeleteMobileDeviceAccessOverrideInput) (*workmail.DeleteMobileDeviceAccessOverrideOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMobileDeviceAccessOverride", arg0)
+	ret0, _ := ret[0].(*workmail.DeleteMobileDeviceAccessOverrideOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMobileDeviceAccessOverride indicates an expected call of DeleteMobileDeviceAccessOverride
+func (mr *MockWorkMailAPIMockRecorder) DeleteMobileDeviceAccessOverride(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMobileDeviceAccessOverride", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteMobileDeviceAccessOverride), arg0)
+}
+
+// DeleteMobileDeviceAccessOverrideRequest mocks base method
+func (m *MockWorkMailAPI) DeleteMobileDeviceAccessOverrideRequest(arg0 *workmail.DeleteMobileDeviceAccessOverrideInput) (*request.Request, *workmail.DeleteMobileDeviceAccessOverrideOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMobileDeviceAccessOverrideRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.DeleteMobileDeviceAccessOverrideOutput)
+	return ret0, ret1
+}
+
+// DeleteMobileDeviceAccessOverrideRequest indicates an expected call of DeleteMobileDeviceAccessOverrideRequest
+func (mr *MockWorkMailAPIMockRecorder) DeleteMobileDeviceAccessOverrideRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMobileDeviceAccessOverrideRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteMobileDeviceAccessOverrideRequest), arg0)
+}
+
+// DeleteMobileDeviceAccessOverrideWithContext mocks base method
+func (m *MockWorkMailAPI) DeleteMobileDeviceAccessOverrideWithContext(arg0 context.Context, arg1 *workmail.DeleteMobileDeviceAccessOverrideInput, arg2 ...request.Option) (*workmail.DeleteMobileDeviceAccessOverrideOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteMobileDeviceAccessOverrideWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.DeleteMobileDeviceAccessOverrideOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMobileDeviceAccessOverrideWithContext indicates an expected call of DeleteMobileDeviceAccessOverrideWithContext
+func (mr *MockWorkMailAPIMockRecorder) DeleteMobileDeviceAccessOverrideWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMobileDeviceAccessOverrideWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteMobileDeviceAccessOverrideWithContext), varargs...)
+}
+
 // DeleteMobileDeviceAccessRule mocks base method
 func (m *MockWorkMailAPI) DeleteMobileDeviceAccessRule(arg0 *workmail.DeleteMobileDeviceAccessRuleInput) (*workmail.DeleteMobileDeviceAccessRuleOutput, error) {
 	m.ctrl.T.Helper()
@@ -1535,6 +1585,56 @@ func (mr *MockWorkMailAPIMockRecorder) GetMobileDeviceAccessEffectWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMobileDeviceAccessEffectWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).GetMobileDeviceAccessEffectWithContext), varargs...)
 }
 
+// GetMobileDeviceAccessOverride mocks base method
+func (m *MockWorkMailAPI) GetMobileDeviceAccessOverride(arg0 *workmail.GetMobileDeviceAccessOverrideInput) (*workmail.GetMobileDeviceAccessOverrideOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMobileDeviceAccessOverride", arg0)
+	ret0, _ := ret[0].(*workmail.GetMobileDeviceAccessOverrideOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMobileDeviceAccessOverride indicates an expected call of GetMobileDeviceAccessOverride
+func (mr *MockWorkMailAPIMockRecorder) GetMobileDeviceAccessOverride(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMobileDeviceAccessOverride", reflect.TypeOf((*MockWorkMailAPI)(nil).GetMobileDeviceAccessOverride), arg0)
+}
+
+// GetMobileDeviceAccessOverrideRequest mocks base method
+func (m *MockWorkMailAPI) GetMobileDeviceAccessOverrideRequest(arg0 *workmail.GetMobileDeviceAccessOverrideInput) (*request.Request, *workmail.GetMobileDeviceAccessOverrideOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMobileDeviceAccessOverrideRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.GetMobileDeviceAccessOverrideOutput)
+	return ret0, ret1
+}
+
+// GetMobileDeviceAccessOverrideRequest indicates an expected call of GetMobileDeviceAccessOverrideRequest
+func (mr *MockWorkMailAPIMockRecorder) GetMobileDeviceAccessOverrideRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMobileDeviceAccessOverrideRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).GetMobileDeviceAccessOverrideRequest), arg0)
+}
+
+// GetMobileDeviceAccessOverrideWithContext mocks base method
+func (m *MockWorkMailAPI) GetMobileDeviceAccessOverrideWithContext(arg0 context.Context, arg1 *workmail.GetMobileDeviceAccessOverrideInput, arg2 ...request.Option) (*workmail.GetMobileDeviceAccessOverrideOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMobileDeviceAccessOverrideWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.GetMobileDeviceAccessOverrideOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMobileDeviceAccessOverrideWithContext indicates an expected call of GetMobileDeviceAccessOverrideWithContext
+func (mr *MockWorkMailAPIMockRecorder) GetMobileDeviceAccessOverrideWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMobileDeviceAccessOverrideWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).GetMobileDeviceAccessOverrideWithContext), varargs...)
+}
+
 // ListAccessControlRules mocks base method
 func (m *MockWorkMailAPI) ListAccessControlRules(arg0 *workmail.ListAccessControlRulesInput) (*workmail.ListAccessControlRulesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1998,6 +2098,89 @@ func (mr *MockWorkMailAPIMockRecorder) ListMailboxPermissionsWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMailboxPermissionsWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListMailboxPermissionsWithContext), varargs...)
+}
+
+// ListMobileDeviceAccessOverrides mocks base method
+func (m *MockWorkMailAPI) ListMobileDeviceAccessOverrides(arg0 *workmail.ListMobileDeviceAccessOverridesInput) (*workmail.ListMobileDeviceAccessOverridesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMobileDeviceAccessOverrides", arg0)
+	ret0, _ := ret[0].(*workmail.ListMobileDeviceAccessOverridesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMobileDeviceAccessOverrides indicates an expected call of ListMobileDeviceAccessOverrides
+func (mr *MockWorkMailAPIMockRecorder) ListMobileDeviceAccessOverrides(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMobileDeviceAccessOverrides", reflect.TypeOf((*MockWorkMailAPI)(nil).ListMobileDeviceAccessOverrides), arg0)
+}
+
+// ListMobileDeviceAccessOverridesPages mocks base method
+func (m *MockWorkMailAPI) ListMobileDeviceAccessOverridesPages(arg0 *workmail.ListMobileDeviceAccessOverridesInput, arg1 func(*workmail.ListMobileDeviceAccessOverridesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMobileDeviceAccessOverridesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMobileDeviceAccessOverridesPages indicates an expected call of ListMobileDeviceAccessOverridesPages
+func (mr *MockWorkMailAPIMockRecorder) ListMobileDeviceAccessOverridesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMobileDeviceAccessOverridesPages", reflect.TypeOf((*MockWorkMailAPI)(nil).ListMobileDeviceAccessOverridesPages), arg0, arg1)
+}
+
+// ListMobileDeviceAccessOverridesPagesWithContext mocks base method
+func (m *MockWorkMailAPI) ListMobileDeviceAccessOverridesPagesWithContext(arg0 context.Context, arg1 *workmail.ListMobileDeviceAccessOverridesInput, arg2 func(*workmail.ListMobileDeviceAccessOverridesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMobileDeviceAccessOverridesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMobileDeviceAccessOverridesPagesWithContext indicates an expected call of ListMobileDeviceAccessOverridesPagesWithContext
+func (mr *MockWorkMailAPIMockRecorder) ListMobileDeviceAccessOverridesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMobileDeviceAccessOverridesPagesWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListMobileDeviceAccessOverridesPagesWithContext), varargs...)
+}
+
+// ListMobileDeviceAccessOverridesRequest mocks base method
+func (m *MockWorkMailAPI) ListMobileDeviceAccessOverridesRequest(arg0 *workmail.ListMobileDeviceAccessOverridesInput) (*request.Request, *workmail.ListMobileDeviceAccessOverridesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMobileDeviceAccessOverridesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.ListMobileDeviceAccessOverridesOutput)
+	return ret0, ret1
+}
+
+// ListMobileDeviceAccessOverridesRequest indicates an expected call of ListMobileDeviceAccessOverridesRequest
+func (mr *MockWorkMailAPIMockRecorder) ListMobileDeviceAccessOverridesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMobileDeviceAccessOverridesRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).ListMobileDeviceAccessOverridesRequest), arg0)
+}
+
+// ListMobileDeviceAccessOverridesWithContext mocks base method
+func (m *MockWorkMailAPI) ListMobileDeviceAccessOverridesWithContext(arg0 context.Context, arg1 *workmail.ListMobileDeviceAccessOverridesInput, arg2 ...request.Option) (*workmail.ListMobileDeviceAccessOverridesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMobileDeviceAccessOverridesWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.ListMobileDeviceAccessOverridesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMobileDeviceAccessOverridesWithContext indicates an expected call of ListMobileDeviceAccessOverridesWithContext
+func (mr *MockWorkMailAPIMockRecorder) ListMobileDeviceAccessOverridesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMobileDeviceAccessOverridesWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListMobileDeviceAccessOverridesWithContext), varargs...)
 }
 
 // ListMobileDeviceAccessRules mocks base method
@@ -2530,6 +2713,56 @@ func (mr *MockWorkMailAPIMockRecorder) PutMailboxPermissionsWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMailboxPermissionsWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).PutMailboxPermissionsWithContext), varargs...)
+}
+
+// PutMobileDeviceAccessOverride mocks base method
+func (m *MockWorkMailAPI) PutMobileDeviceAccessOverride(arg0 *workmail.PutMobileDeviceAccessOverrideInput) (*workmail.PutMobileDeviceAccessOverrideOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutMobileDeviceAccessOverride", arg0)
+	ret0, _ := ret[0].(*workmail.PutMobileDeviceAccessOverrideOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutMobileDeviceAccessOverride indicates an expected call of PutMobileDeviceAccessOverride
+func (mr *MockWorkMailAPIMockRecorder) PutMobileDeviceAccessOverride(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMobileDeviceAccessOverride", reflect.TypeOf((*MockWorkMailAPI)(nil).PutMobileDeviceAccessOverride), arg0)
+}
+
+// PutMobileDeviceAccessOverrideRequest mocks base method
+func (m *MockWorkMailAPI) PutMobileDeviceAccessOverrideRequest(arg0 *workmail.PutMobileDeviceAccessOverrideInput) (*request.Request, *workmail.PutMobileDeviceAccessOverrideOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutMobileDeviceAccessOverrideRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.PutMobileDeviceAccessOverrideOutput)
+	return ret0, ret1
+}
+
+// PutMobileDeviceAccessOverrideRequest indicates an expected call of PutMobileDeviceAccessOverrideRequest
+func (mr *MockWorkMailAPIMockRecorder) PutMobileDeviceAccessOverrideRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMobileDeviceAccessOverrideRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).PutMobileDeviceAccessOverrideRequest), arg0)
+}
+
+// PutMobileDeviceAccessOverrideWithContext mocks base method
+func (m *MockWorkMailAPI) PutMobileDeviceAccessOverrideWithContext(arg0 context.Context, arg1 *workmail.PutMobileDeviceAccessOverrideInput, arg2 ...request.Option) (*workmail.PutMobileDeviceAccessOverrideOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutMobileDeviceAccessOverrideWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.PutMobileDeviceAccessOverrideOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutMobileDeviceAccessOverrideWithContext indicates an expected call of PutMobileDeviceAccessOverrideWithContext
+func (mr *MockWorkMailAPIMockRecorder) PutMobileDeviceAccessOverrideWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMobileDeviceAccessOverrideWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).PutMobileDeviceAccessOverrideWithContext), varargs...)
 }
 
 // PutRetentionPolicy mocks base method
