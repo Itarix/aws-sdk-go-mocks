@@ -1185,6 +1185,56 @@ func (mr *MockLexModelsV2APIMockRecorder) DeleteSlotWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSlotWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).DeleteSlotWithContext), varargs...)
 }
 
+// DeleteUtterances mocks base method
+func (m *MockLexModelsV2API) DeleteUtterances(arg0 *lexmodelsv2.DeleteUtterancesInput) (*lexmodelsv2.DeleteUtterancesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteUtterances", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.DeleteUtterancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteUtterances indicates an expected call of DeleteUtterances
+func (mr *MockLexModelsV2APIMockRecorder) DeleteUtterances(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUtterances", reflect.TypeOf((*MockLexModelsV2API)(nil).DeleteUtterances), arg0)
+}
+
+// DeleteUtterancesRequest mocks base method
+func (m *MockLexModelsV2API) DeleteUtterancesRequest(arg0 *lexmodelsv2.DeleteUtterancesInput) (*request.Request, *lexmodelsv2.DeleteUtterancesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteUtterancesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.DeleteUtterancesOutput)
+	return ret0, ret1
+}
+
+// DeleteUtterancesRequest indicates an expected call of DeleteUtterancesRequest
+func (mr *MockLexModelsV2APIMockRecorder) DeleteUtterancesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUtterancesRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).DeleteUtterancesRequest), arg0)
+}
+
+// DeleteUtterancesWithContext mocks base method
+func (m *MockLexModelsV2API) DeleteUtterancesWithContext(arg0 context.Context, arg1 *lexmodelsv2.DeleteUtterancesInput, arg2 ...request.Option) (*lexmodelsv2.DeleteUtterancesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteUtterancesWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.DeleteUtterancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteUtterancesWithContext indicates an expected call of DeleteUtterancesWithContext
+func (mr *MockLexModelsV2APIMockRecorder) DeleteUtterancesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUtterancesWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).DeleteUtterancesWithContext), varargs...)
+}
+
 // DescribeBot mocks base method
 func (m *MockLexModelsV2API) DescribeBot(arg0 *lexmodelsv2.DescribeBotInput) (*lexmodelsv2.DescribeBotOutput, error) {
 	m.ctrl.T.Helper()
@@ -1683,6 +1733,89 @@ func (mr *MockLexModelsV2APIMockRecorder) DescribeSlotWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSlotWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).DescribeSlotWithContext), varargs...)
+}
+
+// ListAggregatedUtterances mocks base method
+func (m *MockLexModelsV2API) ListAggregatedUtterances(arg0 *lexmodelsv2.ListAggregatedUtterancesInput) (*lexmodelsv2.ListAggregatedUtterancesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAggregatedUtterances", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.ListAggregatedUtterancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAggregatedUtterances indicates an expected call of ListAggregatedUtterances
+func (mr *MockLexModelsV2APIMockRecorder) ListAggregatedUtterances(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAggregatedUtterances", reflect.TypeOf((*MockLexModelsV2API)(nil).ListAggregatedUtterances), arg0)
+}
+
+// ListAggregatedUtterancesPages mocks base method
+func (m *MockLexModelsV2API) ListAggregatedUtterancesPages(arg0 *lexmodelsv2.ListAggregatedUtterancesInput, arg1 func(*lexmodelsv2.ListAggregatedUtterancesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAggregatedUtterancesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAggregatedUtterancesPages indicates an expected call of ListAggregatedUtterancesPages
+func (mr *MockLexModelsV2APIMockRecorder) ListAggregatedUtterancesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAggregatedUtterancesPages", reflect.TypeOf((*MockLexModelsV2API)(nil).ListAggregatedUtterancesPages), arg0, arg1)
+}
+
+// ListAggregatedUtterancesPagesWithContext mocks base method
+func (m *MockLexModelsV2API) ListAggregatedUtterancesPagesWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListAggregatedUtterancesInput, arg2 func(*lexmodelsv2.ListAggregatedUtterancesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAggregatedUtterancesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAggregatedUtterancesPagesWithContext indicates an expected call of ListAggregatedUtterancesPagesWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListAggregatedUtterancesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAggregatedUtterancesPagesWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListAggregatedUtterancesPagesWithContext), varargs...)
+}
+
+// ListAggregatedUtterancesRequest mocks base method
+func (m *MockLexModelsV2API) ListAggregatedUtterancesRequest(arg0 *lexmodelsv2.ListAggregatedUtterancesInput) (*request.Request, *lexmodelsv2.ListAggregatedUtterancesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAggregatedUtterancesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.ListAggregatedUtterancesOutput)
+	return ret0, ret1
+}
+
+// ListAggregatedUtterancesRequest indicates an expected call of ListAggregatedUtterancesRequest
+func (mr *MockLexModelsV2APIMockRecorder) ListAggregatedUtterancesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAggregatedUtterancesRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).ListAggregatedUtterancesRequest), arg0)
+}
+
+// ListAggregatedUtterancesWithContext mocks base method
+func (m *MockLexModelsV2API) ListAggregatedUtterancesWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListAggregatedUtterancesInput, arg2 ...request.Option) (*lexmodelsv2.ListAggregatedUtterancesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAggregatedUtterancesWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.ListAggregatedUtterancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAggregatedUtterancesWithContext indicates an expected call of ListAggregatedUtterancesWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListAggregatedUtterancesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAggregatedUtterancesWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListAggregatedUtterancesWithContext), varargs...)
 }
 
 // ListBotAliases mocks base method
