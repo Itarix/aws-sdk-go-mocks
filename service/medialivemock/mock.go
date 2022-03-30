@@ -335,6 +335,56 @@ func (mr *MockMediaLiveAPIMockRecorder) CancelInputDeviceTransferWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelInputDeviceTransferWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).CancelInputDeviceTransferWithContext), varargs...)
 }
 
+// ClaimDevice mocks base method
+func (m *MockMediaLiveAPI) ClaimDevice(arg0 *medialive.ClaimDeviceInput) (*medialive.ClaimDeviceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ClaimDevice", arg0)
+	ret0, _ := ret[0].(*medialive.ClaimDeviceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ClaimDevice indicates an expected call of ClaimDevice
+func (mr *MockMediaLiveAPIMockRecorder) ClaimDevice(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClaimDevice", reflect.TypeOf((*MockMediaLiveAPI)(nil).ClaimDevice), arg0)
+}
+
+// ClaimDeviceRequest mocks base method
+func (m *MockMediaLiveAPI) ClaimDeviceRequest(arg0 *medialive.ClaimDeviceInput) (*request.Request, *medialive.ClaimDeviceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ClaimDeviceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.ClaimDeviceOutput)
+	return ret0, ret1
+}
+
+// ClaimDeviceRequest indicates an expected call of ClaimDeviceRequest
+func (mr *MockMediaLiveAPIMockRecorder) ClaimDeviceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClaimDeviceRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).ClaimDeviceRequest), arg0)
+}
+
+// ClaimDeviceWithContext mocks base method
+func (m *MockMediaLiveAPI) ClaimDeviceWithContext(arg0 context.Context, arg1 *medialive.ClaimDeviceInput, arg2 ...request.Option) (*medialive.ClaimDeviceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ClaimDeviceWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.ClaimDeviceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ClaimDeviceWithContext indicates an expected call of ClaimDeviceWithContext
+func (mr *MockMediaLiveAPIMockRecorder) ClaimDeviceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClaimDeviceWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).ClaimDeviceWithContext), varargs...)
+}
+
 // CreateChannel mocks base method
 func (m *MockMediaLiveAPI) CreateChannel(arg0 *medialive.CreateChannelInput) (*medialive.CreateChannelOutput, error) {
 	m.ctrl.T.Helper()
