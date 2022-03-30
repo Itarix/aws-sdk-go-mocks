@@ -1967,6 +1967,56 @@ func (mr *MockCloudFormationAPIMockRecorder) GetTemplateWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTemplateWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).GetTemplateWithContext), varargs...)
 }
 
+// ImportStacksToStackSet mocks base method
+func (m *MockCloudFormationAPI) ImportStacksToStackSet(arg0 *cloudformation.ImportStacksToStackSetInput) (*cloudformation.ImportStacksToStackSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportStacksToStackSet", arg0)
+	ret0, _ := ret[0].(*cloudformation.ImportStacksToStackSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportStacksToStackSet indicates an expected call of ImportStacksToStackSet
+func (mr *MockCloudFormationAPIMockRecorder) ImportStacksToStackSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportStacksToStackSet", reflect.TypeOf((*MockCloudFormationAPI)(nil).ImportStacksToStackSet), arg0)
+}
+
+// ImportStacksToStackSetRequest mocks base method
+func (m *MockCloudFormationAPI) ImportStacksToStackSetRequest(arg0 *cloudformation.ImportStacksToStackSetInput) (*request.Request, *cloudformation.ImportStacksToStackSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportStacksToStackSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudformation.ImportStacksToStackSetOutput)
+	return ret0, ret1
+}
+
+// ImportStacksToStackSetRequest indicates an expected call of ImportStacksToStackSetRequest
+func (mr *MockCloudFormationAPIMockRecorder) ImportStacksToStackSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportStacksToStackSetRequest", reflect.TypeOf((*MockCloudFormationAPI)(nil).ImportStacksToStackSetRequest), arg0)
+}
+
+// ImportStacksToStackSetWithContext mocks base method
+func (m *MockCloudFormationAPI) ImportStacksToStackSetWithContext(arg0 context.Context, arg1 *cloudformation.ImportStacksToStackSetInput, arg2 ...request.Option) (*cloudformation.ImportStacksToStackSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportStacksToStackSetWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudformation.ImportStacksToStackSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportStacksToStackSetWithContext indicates an expected call of ImportStacksToStackSetWithContext
+func (mr *MockCloudFormationAPIMockRecorder) ImportStacksToStackSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportStacksToStackSetWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).ImportStacksToStackSetWithContext), varargs...)
+}
+
 // ListChangeSets mocks base method
 func (m *MockCloudFormationAPI) ListChangeSets(arg0 *cloudformation.ListChangeSetsInput) (*cloudformation.ListChangeSetsOutput, error) {
 	m.ctrl.T.Helper()
