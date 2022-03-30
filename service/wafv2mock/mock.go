@@ -885,6 +885,56 @@ func (mr *MockWAFV2APIMockRecorder) GetLoggingConfigurationWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoggingConfigurationWithContext", reflect.TypeOf((*MockWAFV2API)(nil).GetLoggingConfigurationWithContext), varargs...)
 }
 
+// GetManagedRuleSet mocks base method
+func (m *MockWAFV2API) GetManagedRuleSet(arg0 *wafv2.GetManagedRuleSetInput) (*wafv2.GetManagedRuleSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetManagedRuleSet", arg0)
+	ret0, _ := ret[0].(*wafv2.GetManagedRuleSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetManagedRuleSet indicates an expected call of GetManagedRuleSet
+func (mr *MockWAFV2APIMockRecorder) GetManagedRuleSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetManagedRuleSet", reflect.TypeOf((*MockWAFV2API)(nil).GetManagedRuleSet), arg0)
+}
+
+// GetManagedRuleSetRequest mocks base method
+func (m *MockWAFV2API) GetManagedRuleSetRequest(arg0 *wafv2.GetManagedRuleSetInput) (*request.Request, *wafv2.GetManagedRuleSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetManagedRuleSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wafv2.GetManagedRuleSetOutput)
+	return ret0, ret1
+}
+
+// GetManagedRuleSetRequest indicates an expected call of GetManagedRuleSetRequest
+func (mr *MockWAFV2APIMockRecorder) GetManagedRuleSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetManagedRuleSetRequest", reflect.TypeOf((*MockWAFV2API)(nil).GetManagedRuleSetRequest), arg0)
+}
+
+// GetManagedRuleSetWithContext mocks base method
+func (m *MockWAFV2API) GetManagedRuleSetWithContext(arg0 context.Context, arg1 *wafv2.GetManagedRuleSetInput, arg2 ...request.Option) (*wafv2.GetManagedRuleSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetManagedRuleSetWithContext", varargs...)
+	ret0, _ := ret[0].(*wafv2.GetManagedRuleSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetManagedRuleSetWithContext indicates an expected call of GetManagedRuleSetWithContext
+func (mr *MockWAFV2APIMockRecorder) GetManagedRuleSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetManagedRuleSetWithContext", reflect.TypeOf((*MockWAFV2API)(nil).GetManagedRuleSetWithContext), varargs...)
+}
+
 // GetPermissionPolicy mocks base method
 func (m *MockWAFV2API) GetPermissionPolicy(arg0 *wafv2.GetPermissionPolicyInput) (*wafv2.GetPermissionPolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -1235,6 +1285,56 @@ func (mr *MockWAFV2APIMockRecorder) GetWebACLWithContext(arg0, arg1 interface{},
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWebACLWithContext", reflect.TypeOf((*MockWAFV2API)(nil).GetWebACLWithContext), varargs...)
 }
 
+// ListAvailableManagedRuleGroupVersions mocks base method
+func (m *MockWAFV2API) ListAvailableManagedRuleGroupVersions(arg0 *wafv2.ListAvailableManagedRuleGroupVersionsInput) (*wafv2.ListAvailableManagedRuleGroupVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAvailableManagedRuleGroupVersions", arg0)
+	ret0, _ := ret[0].(*wafv2.ListAvailableManagedRuleGroupVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAvailableManagedRuleGroupVersions indicates an expected call of ListAvailableManagedRuleGroupVersions
+func (mr *MockWAFV2APIMockRecorder) ListAvailableManagedRuleGroupVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableManagedRuleGroupVersions", reflect.TypeOf((*MockWAFV2API)(nil).ListAvailableManagedRuleGroupVersions), arg0)
+}
+
+// ListAvailableManagedRuleGroupVersionsRequest mocks base method
+func (m *MockWAFV2API) ListAvailableManagedRuleGroupVersionsRequest(arg0 *wafv2.ListAvailableManagedRuleGroupVersionsInput) (*request.Request, *wafv2.ListAvailableManagedRuleGroupVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAvailableManagedRuleGroupVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wafv2.ListAvailableManagedRuleGroupVersionsOutput)
+	return ret0, ret1
+}
+
+// ListAvailableManagedRuleGroupVersionsRequest indicates an expected call of ListAvailableManagedRuleGroupVersionsRequest
+func (mr *MockWAFV2APIMockRecorder) ListAvailableManagedRuleGroupVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableManagedRuleGroupVersionsRequest", reflect.TypeOf((*MockWAFV2API)(nil).ListAvailableManagedRuleGroupVersionsRequest), arg0)
+}
+
+// ListAvailableManagedRuleGroupVersionsWithContext mocks base method
+func (m *MockWAFV2API) ListAvailableManagedRuleGroupVersionsWithContext(arg0 context.Context, arg1 *wafv2.ListAvailableManagedRuleGroupVersionsInput, arg2 ...request.Option) (*wafv2.ListAvailableManagedRuleGroupVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAvailableManagedRuleGroupVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*wafv2.ListAvailableManagedRuleGroupVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAvailableManagedRuleGroupVersionsWithContext indicates an expected call of ListAvailableManagedRuleGroupVersionsWithContext
+func (mr *MockWAFV2APIMockRecorder) ListAvailableManagedRuleGroupVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableManagedRuleGroupVersionsWithContext", reflect.TypeOf((*MockWAFV2API)(nil).ListAvailableManagedRuleGroupVersionsWithContext), varargs...)
+}
+
 // ListAvailableManagedRuleGroups mocks base method
 func (m *MockWAFV2API) ListAvailableManagedRuleGroups(arg0 *wafv2.ListAvailableManagedRuleGroupsInput) (*wafv2.ListAvailableManagedRuleGroupsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1383,6 +1483,56 @@ func (mr *MockWAFV2APIMockRecorder) ListLoggingConfigurationsWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLoggingConfigurationsWithContext", reflect.TypeOf((*MockWAFV2API)(nil).ListLoggingConfigurationsWithContext), varargs...)
+}
+
+// ListManagedRuleSets mocks base method
+func (m *MockWAFV2API) ListManagedRuleSets(arg0 *wafv2.ListManagedRuleSetsInput) (*wafv2.ListManagedRuleSetsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListManagedRuleSets", arg0)
+	ret0, _ := ret[0].(*wafv2.ListManagedRuleSetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListManagedRuleSets indicates an expected call of ListManagedRuleSets
+func (mr *MockWAFV2APIMockRecorder) ListManagedRuleSets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedRuleSets", reflect.TypeOf((*MockWAFV2API)(nil).ListManagedRuleSets), arg0)
+}
+
+// ListManagedRuleSetsRequest mocks base method
+func (m *MockWAFV2API) ListManagedRuleSetsRequest(arg0 *wafv2.ListManagedRuleSetsInput) (*request.Request, *wafv2.ListManagedRuleSetsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListManagedRuleSetsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wafv2.ListManagedRuleSetsOutput)
+	return ret0, ret1
+}
+
+// ListManagedRuleSetsRequest indicates an expected call of ListManagedRuleSetsRequest
+func (mr *MockWAFV2APIMockRecorder) ListManagedRuleSetsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedRuleSetsRequest", reflect.TypeOf((*MockWAFV2API)(nil).ListManagedRuleSetsRequest), arg0)
+}
+
+// ListManagedRuleSetsWithContext mocks base method
+func (m *MockWAFV2API) ListManagedRuleSetsWithContext(arg0 context.Context, arg1 *wafv2.ListManagedRuleSetsInput, arg2 ...request.Option) (*wafv2.ListManagedRuleSetsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListManagedRuleSetsWithContext", varargs...)
+	ret0, _ := ret[0].(*wafv2.ListManagedRuleSetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListManagedRuleSetsWithContext indicates an expected call of ListManagedRuleSetsWithContext
+func (mr *MockWAFV2APIMockRecorder) ListManagedRuleSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedRuleSetsWithContext", reflect.TypeOf((*MockWAFV2API)(nil).ListManagedRuleSetsWithContext), varargs...)
 }
 
 // ListRegexPatternSets mocks base method
@@ -1685,6 +1835,56 @@ func (mr *MockWAFV2APIMockRecorder) PutLoggingConfigurationWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLoggingConfigurationWithContext", reflect.TypeOf((*MockWAFV2API)(nil).PutLoggingConfigurationWithContext), varargs...)
 }
 
+// PutManagedRuleSetVersions mocks base method
+func (m *MockWAFV2API) PutManagedRuleSetVersions(arg0 *wafv2.PutManagedRuleSetVersionsInput) (*wafv2.PutManagedRuleSetVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutManagedRuleSetVersions", arg0)
+	ret0, _ := ret[0].(*wafv2.PutManagedRuleSetVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutManagedRuleSetVersions indicates an expected call of PutManagedRuleSetVersions
+func (mr *MockWAFV2APIMockRecorder) PutManagedRuleSetVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutManagedRuleSetVersions", reflect.TypeOf((*MockWAFV2API)(nil).PutManagedRuleSetVersions), arg0)
+}
+
+// PutManagedRuleSetVersionsRequest mocks base method
+func (m *MockWAFV2API) PutManagedRuleSetVersionsRequest(arg0 *wafv2.PutManagedRuleSetVersionsInput) (*request.Request, *wafv2.PutManagedRuleSetVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutManagedRuleSetVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wafv2.PutManagedRuleSetVersionsOutput)
+	return ret0, ret1
+}
+
+// PutManagedRuleSetVersionsRequest indicates an expected call of PutManagedRuleSetVersionsRequest
+func (mr *MockWAFV2APIMockRecorder) PutManagedRuleSetVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutManagedRuleSetVersionsRequest", reflect.TypeOf((*MockWAFV2API)(nil).PutManagedRuleSetVersionsRequest), arg0)
+}
+
+// PutManagedRuleSetVersionsWithContext mocks base method
+func (m *MockWAFV2API) PutManagedRuleSetVersionsWithContext(arg0 context.Context, arg1 *wafv2.PutManagedRuleSetVersionsInput, arg2 ...request.Option) (*wafv2.PutManagedRuleSetVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutManagedRuleSetVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*wafv2.PutManagedRuleSetVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutManagedRuleSetVersionsWithContext indicates an expected call of PutManagedRuleSetVersionsWithContext
+func (mr *MockWAFV2APIMockRecorder) PutManagedRuleSetVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutManagedRuleSetVersionsWithContext", reflect.TypeOf((*MockWAFV2API)(nil).PutManagedRuleSetVersionsWithContext), varargs...)
+}
+
 // PutPermissionPolicy mocks base method
 func (m *MockWAFV2API) PutPermissionPolicy(arg0 *wafv2.PutPermissionPolicyInput) (*wafv2.PutPermissionPolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -1883,6 +2083,56 @@ func (mr *MockWAFV2APIMockRecorder) UpdateIPSetWithContext(arg0, arg1 interface{
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIPSetWithContext", reflect.TypeOf((*MockWAFV2API)(nil).UpdateIPSetWithContext), varargs...)
+}
+
+// UpdateManagedRuleSetVersionExpiryDate mocks base method
+func (m *MockWAFV2API) UpdateManagedRuleSetVersionExpiryDate(arg0 *wafv2.UpdateManagedRuleSetVersionExpiryDateInput) (*wafv2.UpdateManagedRuleSetVersionExpiryDateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateManagedRuleSetVersionExpiryDate", arg0)
+	ret0, _ := ret[0].(*wafv2.UpdateManagedRuleSetVersionExpiryDateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateManagedRuleSetVersionExpiryDate indicates an expected call of UpdateManagedRuleSetVersionExpiryDate
+func (mr *MockWAFV2APIMockRecorder) UpdateManagedRuleSetVersionExpiryDate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateManagedRuleSetVersionExpiryDate", reflect.TypeOf((*MockWAFV2API)(nil).UpdateManagedRuleSetVersionExpiryDate), arg0)
+}
+
+// UpdateManagedRuleSetVersionExpiryDateRequest mocks base method
+func (m *MockWAFV2API) UpdateManagedRuleSetVersionExpiryDateRequest(arg0 *wafv2.UpdateManagedRuleSetVersionExpiryDateInput) (*request.Request, *wafv2.UpdateManagedRuleSetVersionExpiryDateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateManagedRuleSetVersionExpiryDateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wafv2.UpdateManagedRuleSetVersionExpiryDateOutput)
+	return ret0, ret1
+}
+
+// UpdateManagedRuleSetVersionExpiryDateRequest indicates an expected call of UpdateManagedRuleSetVersionExpiryDateRequest
+func (mr *MockWAFV2APIMockRecorder) UpdateManagedRuleSetVersionExpiryDateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateManagedRuleSetVersionExpiryDateRequest", reflect.TypeOf((*MockWAFV2API)(nil).UpdateManagedRuleSetVersionExpiryDateRequest), arg0)
+}
+
+// UpdateManagedRuleSetVersionExpiryDateWithContext mocks base method
+func (m *MockWAFV2API) UpdateManagedRuleSetVersionExpiryDateWithContext(arg0 context.Context, arg1 *wafv2.UpdateManagedRuleSetVersionExpiryDateInput, arg2 ...request.Option) (*wafv2.UpdateManagedRuleSetVersionExpiryDateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateManagedRuleSetVersionExpiryDateWithContext", varargs...)
+	ret0, _ := ret[0].(*wafv2.UpdateManagedRuleSetVersionExpiryDateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateManagedRuleSetVersionExpiryDateWithContext indicates an expected call of UpdateManagedRuleSetVersionExpiryDateWithContext
+func (mr *MockWAFV2APIMockRecorder) UpdateManagedRuleSetVersionExpiryDateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateManagedRuleSetVersionExpiryDateWithContext", reflect.TypeOf((*MockWAFV2API)(nil).UpdateManagedRuleSetVersionExpiryDateWithContext), varargs...)
 }
 
 // UpdateRegexPatternSet mocks base method
