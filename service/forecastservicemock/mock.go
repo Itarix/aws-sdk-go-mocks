@@ -35,6 +35,56 @@ func (m *MockForecastServiceAPI) EXPECT() *MockForecastServiceAPIMockRecorder {
 	return m.recorder
 }
 
+// CreateAutoPredictor mocks base method
+func (m *MockForecastServiceAPI) CreateAutoPredictor(arg0 *forecastservice.CreateAutoPredictorInput) (*forecastservice.CreateAutoPredictorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAutoPredictor", arg0)
+	ret0, _ := ret[0].(*forecastservice.CreateAutoPredictorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAutoPredictor indicates an expected call of CreateAutoPredictor
+func (mr *MockForecastServiceAPIMockRecorder) CreateAutoPredictor(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAutoPredictor", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateAutoPredictor), arg0)
+}
+
+// CreateAutoPredictorRequest mocks base method
+func (m *MockForecastServiceAPI) CreateAutoPredictorRequest(arg0 *forecastservice.CreateAutoPredictorInput) (*request.Request, *forecastservice.CreateAutoPredictorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAutoPredictorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.CreateAutoPredictorOutput)
+	return ret0, ret1
+}
+
+// CreateAutoPredictorRequest indicates an expected call of CreateAutoPredictorRequest
+func (mr *MockForecastServiceAPIMockRecorder) CreateAutoPredictorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAutoPredictorRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateAutoPredictorRequest), arg0)
+}
+
+// CreateAutoPredictorWithContext mocks base method
+func (m *MockForecastServiceAPI) CreateAutoPredictorWithContext(arg0 context.Context, arg1 *forecastservice.CreateAutoPredictorInput, arg2 ...request.Option) (*forecastservice.CreateAutoPredictorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAutoPredictorWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.CreateAutoPredictorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAutoPredictorWithContext indicates an expected call of CreateAutoPredictorWithContext
+func (mr *MockForecastServiceAPIMockRecorder) CreateAutoPredictorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAutoPredictorWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateAutoPredictorWithContext), varargs...)
+}
+
 // CreateDataset mocks base method
 func (m *MockForecastServiceAPI) CreateDataset(arg0 *forecastservice.CreateDatasetInput) (*forecastservice.CreateDatasetOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +233,106 @@ func (mr *MockForecastServiceAPIMockRecorder) CreateDatasetWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatasetWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateDatasetWithContext), varargs...)
+}
+
+// CreateExplainability mocks base method
+func (m *MockForecastServiceAPI) CreateExplainability(arg0 *forecastservice.CreateExplainabilityInput) (*forecastservice.CreateExplainabilityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateExplainability", arg0)
+	ret0, _ := ret[0].(*forecastservice.CreateExplainabilityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateExplainability indicates an expected call of CreateExplainability
+func (mr *MockForecastServiceAPIMockRecorder) CreateExplainability(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExplainability", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateExplainability), arg0)
+}
+
+// CreateExplainabilityExport mocks base method
+func (m *MockForecastServiceAPI) CreateExplainabilityExport(arg0 *forecastservice.CreateExplainabilityExportInput) (*forecastservice.CreateExplainabilityExportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateExplainabilityExport", arg0)
+	ret0, _ := ret[0].(*forecastservice.CreateExplainabilityExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateExplainabilityExport indicates an expected call of CreateExplainabilityExport
+func (mr *MockForecastServiceAPIMockRecorder) CreateExplainabilityExport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExplainabilityExport", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateExplainabilityExport), arg0)
+}
+
+// CreateExplainabilityExportRequest mocks base method
+func (m *MockForecastServiceAPI) CreateExplainabilityExportRequest(arg0 *forecastservice.CreateExplainabilityExportInput) (*request.Request, *forecastservice.CreateExplainabilityExportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateExplainabilityExportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.CreateExplainabilityExportOutput)
+	return ret0, ret1
+}
+
+// CreateExplainabilityExportRequest indicates an expected call of CreateExplainabilityExportRequest
+func (mr *MockForecastServiceAPIMockRecorder) CreateExplainabilityExportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExplainabilityExportRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateExplainabilityExportRequest), arg0)
+}
+
+// CreateExplainabilityExportWithContext mocks base method
+func (m *MockForecastServiceAPI) CreateExplainabilityExportWithContext(arg0 context.Context, arg1 *forecastservice.CreateExplainabilityExportInput, arg2 ...request.Option) (*forecastservice.CreateExplainabilityExportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateExplainabilityExportWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.CreateExplainabilityExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateExplainabilityExportWithContext indicates an expected call of CreateExplainabilityExportWithContext
+func (mr *MockForecastServiceAPIMockRecorder) CreateExplainabilityExportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExplainabilityExportWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateExplainabilityExportWithContext), varargs...)
+}
+
+// CreateExplainabilityRequest mocks base method
+func (m *MockForecastServiceAPI) CreateExplainabilityRequest(arg0 *forecastservice.CreateExplainabilityInput) (*request.Request, *forecastservice.CreateExplainabilityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateExplainabilityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.CreateExplainabilityOutput)
+	return ret0, ret1
+}
+
+// CreateExplainabilityRequest indicates an expected call of CreateExplainabilityRequest
+func (mr *MockForecastServiceAPIMockRecorder) CreateExplainabilityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExplainabilityRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateExplainabilityRequest), arg0)
+}
+
+// CreateExplainabilityWithContext mocks base method
+func (m *MockForecastServiceAPI) CreateExplainabilityWithContext(arg0 context.Context, arg1 *forecastservice.CreateExplainabilityInput, arg2 ...request.Option) (*forecastservice.CreateExplainabilityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateExplainabilityWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.CreateExplainabilityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateExplainabilityWithContext indicates an expected call of CreateExplainabilityWithContext
+func (mr *MockForecastServiceAPIMockRecorder) CreateExplainabilityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExplainabilityWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateExplainabilityWithContext), varargs...)
 }
 
 // CreateForecast mocks base method
@@ -535,6 +685,106 @@ func (mr *MockForecastServiceAPIMockRecorder) DeleteDatasetWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatasetWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteDatasetWithContext), varargs...)
 }
 
+// DeleteExplainability mocks base method
+func (m *MockForecastServiceAPI) DeleteExplainability(arg0 *forecastservice.DeleteExplainabilityInput) (*forecastservice.DeleteExplainabilityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteExplainability", arg0)
+	ret0, _ := ret[0].(*forecastservice.DeleteExplainabilityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteExplainability indicates an expected call of DeleteExplainability
+func (mr *MockForecastServiceAPIMockRecorder) DeleteExplainability(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExplainability", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteExplainability), arg0)
+}
+
+// DeleteExplainabilityExport mocks base method
+func (m *MockForecastServiceAPI) DeleteExplainabilityExport(arg0 *forecastservice.DeleteExplainabilityExportInput) (*forecastservice.DeleteExplainabilityExportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteExplainabilityExport", arg0)
+	ret0, _ := ret[0].(*forecastservice.DeleteExplainabilityExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteExplainabilityExport indicates an expected call of DeleteExplainabilityExport
+func (mr *MockForecastServiceAPIMockRecorder) DeleteExplainabilityExport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExplainabilityExport", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteExplainabilityExport), arg0)
+}
+
+// DeleteExplainabilityExportRequest mocks base method
+func (m *MockForecastServiceAPI) DeleteExplainabilityExportRequest(arg0 *forecastservice.DeleteExplainabilityExportInput) (*request.Request, *forecastservice.DeleteExplainabilityExportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteExplainabilityExportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DeleteExplainabilityExportOutput)
+	return ret0, ret1
+}
+
+// DeleteExplainabilityExportRequest indicates an expected call of DeleteExplainabilityExportRequest
+func (mr *MockForecastServiceAPIMockRecorder) DeleteExplainabilityExportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExplainabilityExportRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteExplainabilityExportRequest), arg0)
+}
+
+// DeleteExplainabilityExportWithContext mocks base method
+func (m *MockForecastServiceAPI) DeleteExplainabilityExportWithContext(arg0 context.Context, arg1 *forecastservice.DeleteExplainabilityExportInput, arg2 ...request.Option) (*forecastservice.DeleteExplainabilityExportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteExplainabilityExportWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DeleteExplainabilityExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteExplainabilityExportWithContext indicates an expected call of DeleteExplainabilityExportWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DeleteExplainabilityExportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExplainabilityExportWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteExplainabilityExportWithContext), varargs...)
+}
+
+// DeleteExplainabilityRequest mocks base method
+func (m *MockForecastServiceAPI) DeleteExplainabilityRequest(arg0 *forecastservice.DeleteExplainabilityInput) (*request.Request, *forecastservice.DeleteExplainabilityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteExplainabilityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DeleteExplainabilityOutput)
+	return ret0, ret1
+}
+
+// DeleteExplainabilityRequest indicates an expected call of DeleteExplainabilityRequest
+func (mr *MockForecastServiceAPIMockRecorder) DeleteExplainabilityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExplainabilityRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteExplainabilityRequest), arg0)
+}
+
+// DeleteExplainabilityWithContext mocks base method
+func (m *MockForecastServiceAPI) DeleteExplainabilityWithContext(arg0 context.Context, arg1 *forecastservice.DeleteExplainabilityInput, arg2 ...request.Option) (*forecastservice.DeleteExplainabilityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteExplainabilityWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DeleteExplainabilityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteExplainabilityWithContext indicates an expected call of DeleteExplainabilityWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DeleteExplainabilityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExplainabilityWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteExplainabilityWithContext), varargs...)
+}
+
 // DeleteForecast mocks base method
 func (m *MockForecastServiceAPI) DeleteForecast(arg0 *forecastservice.DeleteForecastInput) (*forecastservice.DeleteForecastOutput, error) {
 	m.ctrl.T.Helper()
@@ -785,6 +1035,56 @@ func (mr *MockForecastServiceAPIMockRecorder) DeleteResourceTreeWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourceTreeWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteResourceTreeWithContext), varargs...)
 }
 
+// DescribeAutoPredictor mocks base method
+func (m *MockForecastServiceAPI) DescribeAutoPredictor(arg0 *forecastservice.DescribeAutoPredictorInput) (*forecastservice.DescribeAutoPredictorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAutoPredictor", arg0)
+	ret0, _ := ret[0].(*forecastservice.DescribeAutoPredictorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAutoPredictor indicates an expected call of DescribeAutoPredictor
+func (mr *MockForecastServiceAPIMockRecorder) DescribeAutoPredictor(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAutoPredictor", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeAutoPredictor), arg0)
+}
+
+// DescribeAutoPredictorRequest mocks base method
+func (m *MockForecastServiceAPI) DescribeAutoPredictorRequest(arg0 *forecastservice.DescribeAutoPredictorInput) (*request.Request, *forecastservice.DescribeAutoPredictorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAutoPredictorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DescribeAutoPredictorOutput)
+	return ret0, ret1
+}
+
+// DescribeAutoPredictorRequest indicates an expected call of DescribeAutoPredictorRequest
+func (mr *MockForecastServiceAPIMockRecorder) DescribeAutoPredictorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAutoPredictorRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeAutoPredictorRequest), arg0)
+}
+
+// DescribeAutoPredictorWithContext mocks base method
+func (m *MockForecastServiceAPI) DescribeAutoPredictorWithContext(arg0 context.Context, arg1 *forecastservice.DescribeAutoPredictorInput, arg2 ...request.Option) (*forecastservice.DescribeAutoPredictorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAutoPredictorWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DescribeAutoPredictorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAutoPredictorWithContext indicates an expected call of DescribeAutoPredictorWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DescribeAutoPredictorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAutoPredictorWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeAutoPredictorWithContext), varargs...)
+}
+
 // DescribeDataset mocks base method
 func (m *MockForecastServiceAPI) DescribeDataset(arg0 *forecastservice.DescribeDatasetInput) (*forecastservice.DescribeDatasetOutput, error) {
 	m.ctrl.T.Helper()
@@ -933,6 +1233,106 @@ func (mr *MockForecastServiceAPIMockRecorder) DescribeDatasetWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDatasetWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeDatasetWithContext), varargs...)
+}
+
+// DescribeExplainability mocks base method
+func (m *MockForecastServiceAPI) DescribeExplainability(arg0 *forecastservice.DescribeExplainabilityInput) (*forecastservice.DescribeExplainabilityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeExplainability", arg0)
+	ret0, _ := ret[0].(*forecastservice.DescribeExplainabilityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeExplainability indicates an expected call of DescribeExplainability
+func (mr *MockForecastServiceAPIMockRecorder) DescribeExplainability(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExplainability", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeExplainability), arg0)
+}
+
+// DescribeExplainabilityExport mocks base method
+func (m *MockForecastServiceAPI) DescribeExplainabilityExport(arg0 *forecastservice.DescribeExplainabilityExportInput) (*forecastservice.DescribeExplainabilityExportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeExplainabilityExport", arg0)
+	ret0, _ := ret[0].(*forecastservice.DescribeExplainabilityExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeExplainabilityExport indicates an expected call of DescribeExplainabilityExport
+func (mr *MockForecastServiceAPIMockRecorder) DescribeExplainabilityExport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExplainabilityExport", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeExplainabilityExport), arg0)
+}
+
+// DescribeExplainabilityExportRequest mocks base method
+func (m *MockForecastServiceAPI) DescribeExplainabilityExportRequest(arg0 *forecastservice.DescribeExplainabilityExportInput) (*request.Request, *forecastservice.DescribeExplainabilityExportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeExplainabilityExportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DescribeExplainabilityExportOutput)
+	return ret0, ret1
+}
+
+// DescribeExplainabilityExportRequest indicates an expected call of DescribeExplainabilityExportRequest
+func (mr *MockForecastServiceAPIMockRecorder) DescribeExplainabilityExportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExplainabilityExportRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeExplainabilityExportRequest), arg0)
+}
+
+// DescribeExplainabilityExportWithContext mocks base method
+func (m *MockForecastServiceAPI) DescribeExplainabilityExportWithContext(arg0 context.Context, arg1 *forecastservice.DescribeExplainabilityExportInput, arg2 ...request.Option) (*forecastservice.DescribeExplainabilityExportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeExplainabilityExportWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DescribeExplainabilityExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeExplainabilityExportWithContext indicates an expected call of DescribeExplainabilityExportWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DescribeExplainabilityExportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExplainabilityExportWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeExplainabilityExportWithContext), varargs...)
+}
+
+// DescribeExplainabilityRequest mocks base method
+func (m *MockForecastServiceAPI) DescribeExplainabilityRequest(arg0 *forecastservice.DescribeExplainabilityInput) (*request.Request, *forecastservice.DescribeExplainabilityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeExplainabilityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DescribeExplainabilityOutput)
+	return ret0, ret1
+}
+
+// DescribeExplainabilityRequest indicates an expected call of DescribeExplainabilityRequest
+func (mr *MockForecastServiceAPIMockRecorder) DescribeExplainabilityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExplainabilityRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeExplainabilityRequest), arg0)
+}
+
+// DescribeExplainabilityWithContext mocks base method
+func (m *MockForecastServiceAPI) DescribeExplainabilityWithContext(arg0 context.Context, arg1 *forecastservice.DescribeExplainabilityInput, arg2 ...request.Option) (*forecastservice.DescribeExplainabilityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeExplainabilityWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DescribeExplainabilityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeExplainabilityWithContext indicates an expected call of DescribeExplainabilityWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DescribeExplainabilityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExplainabilityWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeExplainabilityWithContext), varargs...)
 }
 
 // DescribeForecast mocks base method
@@ -1432,6 +1832,106 @@ func (mr *MockForecastServiceAPIMockRecorder) ListDatasetsWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetsWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListDatasetsWithContext), varargs...)
+}
+
+// ListExplainabilities mocks base method
+func (m *MockForecastServiceAPI) ListExplainabilities(arg0 *forecastservice.ListExplainabilitiesInput) (*forecastservice.ListExplainabilitiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExplainabilities", arg0)
+	ret0, _ := ret[0].(*forecastservice.ListExplainabilitiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExplainabilities indicates an expected call of ListExplainabilities
+func (mr *MockForecastServiceAPIMockRecorder) ListExplainabilities(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExplainabilities", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListExplainabilities), arg0)
+}
+
+// ListExplainabilitiesRequest mocks base method
+func (m *MockForecastServiceAPI) ListExplainabilitiesRequest(arg0 *forecastservice.ListExplainabilitiesInput) (*request.Request, *forecastservice.ListExplainabilitiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExplainabilitiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.ListExplainabilitiesOutput)
+	return ret0, ret1
+}
+
+// ListExplainabilitiesRequest indicates an expected call of ListExplainabilitiesRequest
+func (mr *MockForecastServiceAPIMockRecorder) ListExplainabilitiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExplainabilitiesRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListExplainabilitiesRequest), arg0)
+}
+
+// ListExplainabilitiesWithContext mocks base method
+func (m *MockForecastServiceAPI) ListExplainabilitiesWithContext(arg0 context.Context, arg1 *forecastservice.ListExplainabilitiesInput, arg2 ...request.Option) (*forecastservice.ListExplainabilitiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExplainabilitiesWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.ListExplainabilitiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExplainabilitiesWithContext indicates an expected call of ListExplainabilitiesWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListExplainabilitiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExplainabilitiesWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListExplainabilitiesWithContext), varargs...)
+}
+
+// ListExplainabilityExports mocks base method
+func (m *MockForecastServiceAPI) ListExplainabilityExports(arg0 *forecastservice.ListExplainabilityExportsInput) (*forecastservice.ListExplainabilityExportsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExplainabilityExports", arg0)
+	ret0, _ := ret[0].(*forecastservice.ListExplainabilityExportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExplainabilityExports indicates an expected call of ListExplainabilityExports
+func (mr *MockForecastServiceAPIMockRecorder) ListExplainabilityExports(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExplainabilityExports", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListExplainabilityExports), arg0)
+}
+
+// ListExplainabilityExportsRequest mocks base method
+func (m *MockForecastServiceAPI) ListExplainabilityExportsRequest(arg0 *forecastservice.ListExplainabilityExportsInput) (*request.Request, *forecastservice.ListExplainabilityExportsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExplainabilityExportsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.ListExplainabilityExportsOutput)
+	return ret0, ret1
+}
+
+// ListExplainabilityExportsRequest indicates an expected call of ListExplainabilityExportsRequest
+func (mr *MockForecastServiceAPIMockRecorder) ListExplainabilityExportsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExplainabilityExportsRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListExplainabilityExportsRequest), arg0)
+}
+
+// ListExplainabilityExportsWithContext mocks base method
+func (m *MockForecastServiceAPI) ListExplainabilityExportsWithContext(arg0 context.Context, arg1 *forecastservice.ListExplainabilityExportsInput, arg2 ...request.Option) (*forecastservice.ListExplainabilityExportsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExplainabilityExportsWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.ListExplainabilityExportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExplainabilityExportsWithContext indicates an expected call of ListExplainabilityExportsWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListExplainabilityExportsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExplainabilityExportsWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListExplainabilityExportsWithContext), varargs...)
 }
 
 // ListForecastExportJobs mocks base method

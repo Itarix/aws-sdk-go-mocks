@@ -715,6 +715,56 @@ func (mr *MockIVSAPIMockRecorder) GetStreamRequest(arg0 interface{}) *gomock.Cal
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStreamRequest", reflect.TypeOf((*MockIVSAPI)(nil).GetStreamRequest), arg0)
 }
 
+// GetStreamSession mocks base method
+func (m *MockIVSAPI) GetStreamSession(arg0 *ivs.GetStreamSessionInput) (*ivs.GetStreamSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStreamSession", arg0)
+	ret0, _ := ret[0].(*ivs.GetStreamSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStreamSession indicates an expected call of GetStreamSession
+func (mr *MockIVSAPIMockRecorder) GetStreamSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStreamSession", reflect.TypeOf((*MockIVSAPI)(nil).GetStreamSession), arg0)
+}
+
+// GetStreamSessionRequest mocks base method
+func (m *MockIVSAPI) GetStreamSessionRequest(arg0 *ivs.GetStreamSessionInput) (*request.Request, *ivs.GetStreamSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStreamSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivs.GetStreamSessionOutput)
+	return ret0, ret1
+}
+
+// GetStreamSessionRequest indicates an expected call of GetStreamSessionRequest
+func (mr *MockIVSAPIMockRecorder) GetStreamSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStreamSessionRequest", reflect.TypeOf((*MockIVSAPI)(nil).GetStreamSessionRequest), arg0)
+}
+
+// GetStreamSessionWithContext mocks base method
+func (m *MockIVSAPI) GetStreamSessionWithContext(arg0 context.Context, arg1 *ivs.GetStreamSessionInput, arg2 ...request.Option) (*ivs.GetStreamSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetStreamSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*ivs.GetStreamSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStreamSessionWithContext indicates an expected call of GetStreamSessionWithContext
+func (mr *MockIVSAPIMockRecorder) GetStreamSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStreamSessionWithContext", reflect.TypeOf((*MockIVSAPI)(nil).GetStreamSessionWithContext), varargs...)
+}
+
 // GetStreamWithContext mocks base method
 func (m *MockIVSAPI) GetStreamWithContext(arg0 context.Context, arg1 *ivs.GetStreamInput, arg2 ...request.Option) (*ivs.GetStreamOutput, error) {
 	m.ctrl.T.Helper()
@@ -1115,6 +1165,89 @@ func (mr *MockIVSAPIMockRecorder) ListStreamKeysWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamKeysWithContext", reflect.TypeOf((*MockIVSAPI)(nil).ListStreamKeysWithContext), varargs...)
+}
+
+// ListStreamSessions mocks base method
+func (m *MockIVSAPI) ListStreamSessions(arg0 *ivs.ListStreamSessionsInput) (*ivs.ListStreamSessionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStreamSessions", arg0)
+	ret0, _ := ret[0].(*ivs.ListStreamSessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStreamSessions indicates an expected call of ListStreamSessions
+func (mr *MockIVSAPIMockRecorder) ListStreamSessions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamSessions", reflect.TypeOf((*MockIVSAPI)(nil).ListStreamSessions), arg0)
+}
+
+// ListStreamSessionsPages mocks base method
+func (m *MockIVSAPI) ListStreamSessionsPages(arg0 *ivs.ListStreamSessionsInput, arg1 func(*ivs.ListStreamSessionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStreamSessionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStreamSessionsPages indicates an expected call of ListStreamSessionsPages
+func (mr *MockIVSAPIMockRecorder) ListStreamSessionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamSessionsPages", reflect.TypeOf((*MockIVSAPI)(nil).ListStreamSessionsPages), arg0, arg1)
+}
+
+// ListStreamSessionsPagesWithContext mocks base method
+func (m *MockIVSAPI) ListStreamSessionsPagesWithContext(arg0 context.Context, arg1 *ivs.ListStreamSessionsInput, arg2 func(*ivs.ListStreamSessionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStreamSessionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStreamSessionsPagesWithContext indicates an expected call of ListStreamSessionsPagesWithContext
+func (mr *MockIVSAPIMockRecorder) ListStreamSessionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamSessionsPagesWithContext", reflect.TypeOf((*MockIVSAPI)(nil).ListStreamSessionsPagesWithContext), varargs...)
+}
+
+// ListStreamSessionsRequest mocks base method
+func (m *MockIVSAPI) ListStreamSessionsRequest(arg0 *ivs.ListStreamSessionsInput) (*request.Request, *ivs.ListStreamSessionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStreamSessionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivs.ListStreamSessionsOutput)
+	return ret0, ret1
+}
+
+// ListStreamSessionsRequest indicates an expected call of ListStreamSessionsRequest
+func (mr *MockIVSAPIMockRecorder) ListStreamSessionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamSessionsRequest", reflect.TypeOf((*MockIVSAPI)(nil).ListStreamSessionsRequest), arg0)
+}
+
+// ListStreamSessionsWithContext mocks base method
+func (m *MockIVSAPI) ListStreamSessionsWithContext(arg0 context.Context, arg1 *ivs.ListStreamSessionsInput, arg2 ...request.Option) (*ivs.ListStreamSessionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStreamSessionsWithContext", varargs...)
+	ret0, _ := ret[0].(*ivs.ListStreamSessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStreamSessionsWithContext indicates an expected call of ListStreamSessionsWithContext
+func (mr *MockIVSAPIMockRecorder) ListStreamSessionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamSessionsWithContext", reflect.TypeOf((*MockIVSAPI)(nil).ListStreamSessionsWithContext), varargs...)
 }
 
 // ListStreams mocks base method

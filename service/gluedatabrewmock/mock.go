@@ -335,6 +335,56 @@ func (mr *MockGlueDataBrewAPIMockRecorder) CreateRecipeWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRecipeWithContext", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).CreateRecipeWithContext), varargs...)
 }
 
+// CreateRuleset mocks base method
+func (m *MockGlueDataBrewAPI) CreateRuleset(arg0 *gluedatabrew.CreateRulesetInput) (*gluedatabrew.CreateRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRuleset", arg0)
+	ret0, _ := ret[0].(*gluedatabrew.CreateRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRuleset indicates an expected call of CreateRuleset
+func (mr *MockGlueDataBrewAPIMockRecorder) CreateRuleset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRuleset", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).CreateRuleset), arg0)
+}
+
+// CreateRulesetRequest mocks base method
+func (m *MockGlueDataBrewAPI) CreateRulesetRequest(arg0 *gluedatabrew.CreateRulesetInput) (*request.Request, *gluedatabrew.CreateRulesetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRulesetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gluedatabrew.CreateRulesetOutput)
+	return ret0, ret1
+}
+
+// CreateRulesetRequest indicates an expected call of CreateRulesetRequest
+func (mr *MockGlueDataBrewAPIMockRecorder) CreateRulesetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRulesetRequest", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).CreateRulesetRequest), arg0)
+}
+
+// CreateRulesetWithContext mocks base method
+func (m *MockGlueDataBrewAPI) CreateRulesetWithContext(arg0 context.Context, arg1 *gluedatabrew.CreateRulesetInput, arg2 ...request.Option) (*gluedatabrew.CreateRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRulesetWithContext", varargs...)
+	ret0, _ := ret[0].(*gluedatabrew.CreateRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRulesetWithContext indicates an expected call of CreateRulesetWithContext
+func (mr *MockGlueDataBrewAPIMockRecorder) CreateRulesetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRulesetWithContext", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).CreateRulesetWithContext), varargs...)
+}
+
 // CreateSchedule mocks base method
 func (m *MockGlueDataBrewAPI) CreateSchedule(arg0 *gluedatabrew.CreateScheduleInput) (*gluedatabrew.CreateScheduleOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +633,56 @@ func (mr *MockGlueDataBrewAPIMockRecorder) DeleteRecipeVersionWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRecipeVersionWithContext", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).DeleteRecipeVersionWithContext), varargs...)
+}
+
+// DeleteRuleset mocks base method
+func (m *MockGlueDataBrewAPI) DeleteRuleset(arg0 *gluedatabrew.DeleteRulesetInput) (*gluedatabrew.DeleteRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRuleset", arg0)
+	ret0, _ := ret[0].(*gluedatabrew.DeleteRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRuleset indicates an expected call of DeleteRuleset
+func (mr *MockGlueDataBrewAPIMockRecorder) DeleteRuleset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRuleset", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).DeleteRuleset), arg0)
+}
+
+// DeleteRulesetRequest mocks base method
+func (m *MockGlueDataBrewAPI) DeleteRulesetRequest(arg0 *gluedatabrew.DeleteRulesetInput) (*request.Request, *gluedatabrew.DeleteRulesetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRulesetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gluedatabrew.DeleteRulesetOutput)
+	return ret0, ret1
+}
+
+// DeleteRulesetRequest indicates an expected call of DeleteRulesetRequest
+func (mr *MockGlueDataBrewAPIMockRecorder) DeleteRulesetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRulesetRequest", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).DeleteRulesetRequest), arg0)
+}
+
+// DeleteRulesetWithContext mocks base method
+func (m *MockGlueDataBrewAPI) DeleteRulesetWithContext(arg0 context.Context, arg1 *gluedatabrew.DeleteRulesetInput, arg2 ...request.Option) (*gluedatabrew.DeleteRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRulesetWithContext", varargs...)
+	ret0, _ := ret[0].(*gluedatabrew.DeleteRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRulesetWithContext indicates an expected call of DeleteRulesetWithContext
+func (mr *MockGlueDataBrewAPIMockRecorder) DeleteRulesetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRulesetWithContext", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).DeleteRulesetWithContext), varargs...)
 }
 
 // DeleteSchedule mocks base method
@@ -883,6 +983,56 @@ func (mr *MockGlueDataBrewAPIMockRecorder) DescribeRecipeWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRecipeWithContext", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).DescribeRecipeWithContext), varargs...)
+}
+
+// DescribeRuleset mocks base method
+func (m *MockGlueDataBrewAPI) DescribeRuleset(arg0 *gluedatabrew.DescribeRulesetInput) (*gluedatabrew.DescribeRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRuleset", arg0)
+	ret0, _ := ret[0].(*gluedatabrew.DescribeRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRuleset indicates an expected call of DescribeRuleset
+func (mr *MockGlueDataBrewAPIMockRecorder) DescribeRuleset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRuleset", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).DescribeRuleset), arg0)
+}
+
+// DescribeRulesetRequest mocks base method
+func (m *MockGlueDataBrewAPI) DescribeRulesetRequest(arg0 *gluedatabrew.DescribeRulesetInput) (*request.Request, *gluedatabrew.DescribeRulesetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRulesetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gluedatabrew.DescribeRulesetOutput)
+	return ret0, ret1
+}
+
+// DescribeRulesetRequest indicates an expected call of DescribeRulesetRequest
+func (mr *MockGlueDataBrewAPIMockRecorder) DescribeRulesetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRulesetRequest", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).DescribeRulesetRequest), arg0)
+}
+
+// DescribeRulesetWithContext mocks base method
+func (m *MockGlueDataBrewAPI) DescribeRulesetWithContext(arg0 context.Context, arg1 *gluedatabrew.DescribeRulesetInput, arg2 ...request.Option) (*gluedatabrew.DescribeRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeRulesetWithContext", varargs...)
+	ret0, _ := ret[0].(*gluedatabrew.DescribeRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRulesetWithContext indicates an expected call of DescribeRulesetWithContext
+func (mr *MockGlueDataBrewAPIMockRecorder) DescribeRulesetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRulesetWithContext", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).DescribeRulesetWithContext), varargs...)
 }
 
 // DescribeSchedule mocks base method
@@ -1431,6 +1581,89 @@ func (mr *MockGlueDataBrewAPIMockRecorder) ListRecipesWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecipesWithContext", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).ListRecipesWithContext), varargs...)
+}
+
+// ListRulesets mocks base method
+func (m *MockGlueDataBrewAPI) ListRulesets(arg0 *gluedatabrew.ListRulesetsInput) (*gluedatabrew.ListRulesetsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRulesets", arg0)
+	ret0, _ := ret[0].(*gluedatabrew.ListRulesetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRulesets indicates an expected call of ListRulesets
+func (mr *MockGlueDataBrewAPIMockRecorder) ListRulesets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRulesets", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).ListRulesets), arg0)
+}
+
+// ListRulesetsPages mocks base method
+func (m *MockGlueDataBrewAPI) ListRulesetsPages(arg0 *gluedatabrew.ListRulesetsInput, arg1 func(*gluedatabrew.ListRulesetsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRulesetsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRulesetsPages indicates an expected call of ListRulesetsPages
+func (mr *MockGlueDataBrewAPIMockRecorder) ListRulesetsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRulesetsPages", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).ListRulesetsPages), arg0, arg1)
+}
+
+// ListRulesetsPagesWithContext mocks base method
+func (m *MockGlueDataBrewAPI) ListRulesetsPagesWithContext(arg0 context.Context, arg1 *gluedatabrew.ListRulesetsInput, arg2 func(*gluedatabrew.ListRulesetsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRulesetsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRulesetsPagesWithContext indicates an expected call of ListRulesetsPagesWithContext
+func (mr *MockGlueDataBrewAPIMockRecorder) ListRulesetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRulesetsPagesWithContext", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).ListRulesetsPagesWithContext), varargs...)
+}
+
+// ListRulesetsRequest mocks base method
+func (m *MockGlueDataBrewAPI) ListRulesetsRequest(arg0 *gluedatabrew.ListRulesetsInput) (*request.Request, *gluedatabrew.ListRulesetsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRulesetsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gluedatabrew.ListRulesetsOutput)
+	return ret0, ret1
+}
+
+// ListRulesetsRequest indicates an expected call of ListRulesetsRequest
+func (mr *MockGlueDataBrewAPIMockRecorder) ListRulesetsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRulesetsRequest", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).ListRulesetsRequest), arg0)
+}
+
+// ListRulesetsWithContext mocks base method
+func (m *MockGlueDataBrewAPI) ListRulesetsWithContext(arg0 context.Context, arg1 *gluedatabrew.ListRulesetsInput, arg2 ...request.Option) (*gluedatabrew.ListRulesetsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRulesetsWithContext", varargs...)
+	ret0, _ := ret[0].(*gluedatabrew.ListRulesetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRulesetsWithContext indicates an expected call of ListRulesetsWithContext
+func (mr *MockGlueDataBrewAPIMockRecorder) ListRulesetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRulesetsWithContext", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).ListRulesetsWithContext), varargs...)
 }
 
 // ListSchedules mocks base method
@@ -2164,6 +2397,56 @@ func (mr *MockGlueDataBrewAPIMockRecorder) UpdateRecipeWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRecipeWithContext", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).UpdateRecipeWithContext), varargs...)
+}
+
+// UpdateRuleset mocks base method
+func (m *MockGlueDataBrewAPI) UpdateRuleset(arg0 *gluedatabrew.UpdateRulesetInput) (*gluedatabrew.UpdateRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRuleset", arg0)
+	ret0, _ := ret[0].(*gluedatabrew.UpdateRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRuleset indicates an expected call of UpdateRuleset
+func (mr *MockGlueDataBrewAPIMockRecorder) UpdateRuleset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRuleset", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).UpdateRuleset), arg0)
+}
+
+// UpdateRulesetRequest mocks base method
+func (m *MockGlueDataBrewAPI) UpdateRulesetRequest(arg0 *gluedatabrew.UpdateRulesetInput) (*request.Request, *gluedatabrew.UpdateRulesetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRulesetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gluedatabrew.UpdateRulesetOutput)
+	return ret0, ret1
+}
+
+// UpdateRulesetRequest indicates an expected call of UpdateRulesetRequest
+func (mr *MockGlueDataBrewAPIMockRecorder) UpdateRulesetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRulesetRequest", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).UpdateRulesetRequest), arg0)
+}
+
+// UpdateRulesetWithContext mocks base method
+func (m *MockGlueDataBrewAPI) UpdateRulesetWithContext(arg0 context.Context, arg1 *gluedatabrew.UpdateRulesetInput, arg2 ...request.Option) (*gluedatabrew.UpdateRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRulesetWithContext", varargs...)
+	ret0, _ := ret[0].(*gluedatabrew.UpdateRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRulesetWithContext indicates an expected call of UpdateRulesetWithContext
+func (mr *MockGlueDataBrewAPIMockRecorder) UpdateRulesetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRulesetWithContext", reflect.TypeOf((*MockGlueDataBrewAPI)(nil).UpdateRulesetWithContext), varargs...)
 }
 
 // UpdateSchedule mocks base method

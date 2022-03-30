@@ -1716,6 +1716,56 @@ func (mr *MockKafkaAPIMockRecorder) UpdateConfigurationWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfigurationWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateConfigurationWithContext), varargs...)
 }
 
+// UpdateConnectivity mocks base method
+func (m *MockKafkaAPI) UpdateConnectivity(arg0 *kafka.UpdateConnectivityInput) (*kafka.UpdateConnectivityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectivity", arg0)
+	ret0, _ := ret[0].(*kafka.UpdateConnectivityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectivity indicates an expected call of UpdateConnectivity
+func (mr *MockKafkaAPIMockRecorder) UpdateConnectivity(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectivity", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateConnectivity), arg0)
+}
+
+// UpdateConnectivityRequest mocks base method
+func (m *MockKafkaAPI) UpdateConnectivityRequest(arg0 *kafka.UpdateConnectivityInput) (*request.Request, *kafka.UpdateConnectivityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectivityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.UpdateConnectivityOutput)
+	return ret0, ret1
+}
+
+// UpdateConnectivityRequest indicates an expected call of UpdateConnectivityRequest
+func (mr *MockKafkaAPIMockRecorder) UpdateConnectivityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectivityRequest", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateConnectivityRequest), arg0)
+}
+
+// UpdateConnectivityWithContext mocks base method
+func (m *MockKafkaAPI) UpdateConnectivityWithContext(arg0 context.Context, arg1 *kafka.UpdateConnectivityInput, arg2 ...request.Option) (*kafka.UpdateConnectivityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateConnectivityWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.UpdateConnectivityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectivityWithContext indicates an expected call of UpdateConnectivityWithContext
+func (mr *MockKafkaAPIMockRecorder) UpdateConnectivityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectivityWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateConnectivityWithContext), varargs...)
+}
+
 // UpdateMonitoring mocks base method
 func (m *MockKafkaAPI) UpdateMonitoring(arg0 *kafka.UpdateMonitoringInput) (*kafka.UpdateMonitoringOutput, error) {
 	m.ctrl.T.Helper()

@@ -1700,6 +1700,106 @@ func (mr *MockAuditManagerAPIMockRecorder) GetEvidenceWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEvidenceWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).GetEvidenceWithContext), varargs...)
 }
 
+// GetInsights mocks base method
+func (m *MockAuditManagerAPI) GetInsights(arg0 *auditmanager.GetInsightsInput) (*auditmanager.GetInsightsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsights", arg0)
+	ret0, _ := ret[0].(*auditmanager.GetInsightsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInsights indicates an expected call of GetInsights
+func (mr *MockAuditManagerAPIMockRecorder) GetInsights(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsights", reflect.TypeOf((*MockAuditManagerAPI)(nil).GetInsights), arg0)
+}
+
+// GetInsightsByAssessment mocks base method
+func (m *MockAuditManagerAPI) GetInsightsByAssessment(arg0 *auditmanager.GetInsightsByAssessmentInput) (*auditmanager.GetInsightsByAssessmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsightsByAssessment", arg0)
+	ret0, _ := ret[0].(*auditmanager.GetInsightsByAssessmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInsightsByAssessment indicates an expected call of GetInsightsByAssessment
+func (mr *MockAuditManagerAPIMockRecorder) GetInsightsByAssessment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightsByAssessment", reflect.TypeOf((*MockAuditManagerAPI)(nil).GetInsightsByAssessment), arg0)
+}
+
+// GetInsightsByAssessmentRequest mocks base method
+func (m *MockAuditManagerAPI) GetInsightsByAssessmentRequest(arg0 *auditmanager.GetInsightsByAssessmentInput) (*request.Request, *auditmanager.GetInsightsByAssessmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsightsByAssessmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*auditmanager.GetInsightsByAssessmentOutput)
+	return ret0, ret1
+}
+
+// GetInsightsByAssessmentRequest indicates an expected call of GetInsightsByAssessmentRequest
+func (mr *MockAuditManagerAPIMockRecorder) GetInsightsByAssessmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightsByAssessmentRequest", reflect.TypeOf((*MockAuditManagerAPI)(nil).GetInsightsByAssessmentRequest), arg0)
+}
+
+// GetInsightsByAssessmentWithContext mocks base method
+func (m *MockAuditManagerAPI) GetInsightsByAssessmentWithContext(arg0 context.Context, arg1 *auditmanager.GetInsightsByAssessmentInput, arg2 ...request.Option) (*auditmanager.GetInsightsByAssessmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetInsightsByAssessmentWithContext", varargs...)
+	ret0, _ := ret[0].(*auditmanager.GetInsightsByAssessmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInsightsByAssessmentWithContext indicates an expected call of GetInsightsByAssessmentWithContext
+func (mr *MockAuditManagerAPIMockRecorder) GetInsightsByAssessmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightsByAssessmentWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).GetInsightsByAssessmentWithContext), varargs...)
+}
+
+// GetInsightsRequest mocks base method
+func (m *MockAuditManagerAPI) GetInsightsRequest(arg0 *auditmanager.GetInsightsInput) (*request.Request, *auditmanager.GetInsightsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInsightsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*auditmanager.GetInsightsOutput)
+	return ret0, ret1
+}
+
+// GetInsightsRequest indicates an expected call of GetInsightsRequest
+func (mr *MockAuditManagerAPIMockRecorder) GetInsightsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightsRequest", reflect.TypeOf((*MockAuditManagerAPI)(nil).GetInsightsRequest), arg0)
+}
+
+// GetInsightsWithContext mocks base method
+func (m *MockAuditManagerAPI) GetInsightsWithContext(arg0 context.Context, arg1 *auditmanager.GetInsightsInput, arg2 ...request.Option) (*auditmanager.GetInsightsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetInsightsWithContext", varargs...)
+	ret0, _ := ret[0].(*auditmanager.GetInsightsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInsightsWithContext indicates an expected call of GetInsightsWithContext
+func (mr *MockAuditManagerAPIMockRecorder) GetInsightsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInsightsWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).GetInsightsWithContext), varargs...)
+}
+
 // GetOrganizationAdminAccount mocks base method
 func (m *MockAuditManagerAPI) GetOrganizationAdminAccount(arg0 *auditmanager.GetOrganizationAdminAccountInput) (*auditmanager.GetOrganizationAdminAccountOutput, error) {
 	m.ctrl.T.Helper()
@@ -1848,6 +1948,89 @@ func (mr *MockAuditManagerAPIMockRecorder) GetSettingsWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSettingsWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).GetSettingsWithContext), varargs...)
+}
+
+// ListAssessmentControlInsightsByControlDomain mocks base method
+func (m *MockAuditManagerAPI) ListAssessmentControlInsightsByControlDomain(arg0 *auditmanager.ListAssessmentControlInsightsByControlDomainInput) (*auditmanager.ListAssessmentControlInsightsByControlDomainOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssessmentControlInsightsByControlDomain", arg0)
+	ret0, _ := ret[0].(*auditmanager.ListAssessmentControlInsightsByControlDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssessmentControlInsightsByControlDomain indicates an expected call of ListAssessmentControlInsightsByControlDomain
+func (mr *MockAuditManagerAPIMockRecorder) ListAssessmentControlInsightsByControlDomain(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssessmentControlInsightsByControlDomain", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListAssessmentControlInsightsByControlDomain), arg0)
+}
+
+// ListAssessmentControlInsightsByControlDomainPages mocks base method
+func (m *MockAuditManagerAPI) ListAssessmentControlInsightsByControlDomainPages(arg0 *auditmanager.ListAssessmentControlInsightsByControlDomainInput, arg1 func(*auditmanager.ListAssessmentControlInsightsByControlDomainOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssessmentControlInsightsByControlDomainPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssessmentControlInsightsByControlDomainPages indicates an expected call of ListAssessmentControlInsightsByControlDomainPages
+func (mr *MockAuditManagerAPIMockRecorder) ListAssessmentControlInsightsByControlDomainPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssessmentControlInsightsByControlDomainPages", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListAssessmentControlInsightsByControlDomainPages), arg0, arg1)
+}
+
+// ListAssessmentControlInsightsByControlDomainPagesWithContext mocks base method
+func (m *MockAuditManagerAPI) ListAssessmentControlInsightsByControlDomainPagesWithContext(arg0 context.Context, arg1 *auditmanager.ListAssessmentControlInsightsByControlDomainInput, arg2 func(*auditmanager.ListAssessmentControlInsightsByControlDomainOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssessmentControlInsightsByControlDomainPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssessmentControlInsightsByControlDomainPagesWithContext indicates an expected call of ListAssessmentControlInsightsByControlDomainPagesWithContext
+func (mr *MockAuditManagerAPIMockRecorder) ListAssessmentControlInsightsByControlDomainPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssessmentControlInsightsByControlDomainPagesWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListAssessmentControlInsightsByControlDomainPagesWithContext), varargs...)
+}
+
+// ListAssessmentControlInsightsByControlDomainRequest mocks base method
+func (m *MockAuditManagerAPI) ListAssessmentControlInsightsByControlDomainRequest(arg0 *auditmanager.ListAssessmentControlInsightsByControlDomainInput) (*request.Request, *auditmanager.ListAssessmentControlInsightsByControlDomainOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssessmentControlInsightsByControlDomainRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*auditmanager.ListAssessmentControlInsightsByControlDomainOutput)
+	return ret0, ret1
+}
+
+// ListAssessmentControlInsightsByControlDomainRequest indicates an expected call of ListAssessmentControlInsightsByControlDomainRequest
+func (mr *MockAuditManagerAPIMockRecorder) ListAssessmentControlInsightsByControlDomainRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssessmentControlInsightsByControlDomainRequest", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListAssessmentControlInsightsByControlDomainRequest), arg0)
+}
+
+// ListAssessmentControlInsightsByControlDomainWithContext mocks base method
+func (m *MockAuditManagerAPI) ListAssessmentControlInsightsByControlDomainWithContext(arg0 context.Context, arg1 *auditmanager.ListAssessmentControlInsightsByControlDomainInput, arg2 ...request.Option) (*auditmanager.ListAssessmentControlInsightsByControlDomainOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssessmentControlInsightsByControlDomainWithContext", varargs...)
+	ret0, _ := ret[0].(*auditmanager.ListAssessmentControlInsightsByControlDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssessmentControlInsightsByControlDomainWithContext indicates an expected call of ListAssessmentControlInsightsByControlDomainWithContext
+func (mr *MockAuditManagerAPIMockRecorder) ListAssessmentControlInsightsByControlDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssessmentControlInsightsByControlDomainWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListAssessmentControlInsightsByControlDomainWithContext), varargs...)
 }
 
 // ListAssessmentFrameworkShareRequests mocks base method
@@ -2180,6 +2363,255 @@ func (mr *MockAuditManagerAPIMockRecorder) ListAssessmentsWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssessmentsWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListAssessmentsWithContext), varargs...)
+}
+
+// ListControlDomainInsights mocks base method
+func (m *MockAuditManagerAPI) ListControlDomainInsights(arg0 *auditmanager.ListControlDomainInsightsInput) (*auditmanager.ListControlDomainInsightsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListControlDomainInsights", arg0)
+	ret0, _ := ret[0].(*auditmanager.ListControlDomainInsightsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListControlDomainInsights indicates an expected call of ListControlDomainInsights
+func (mr *MockAuditManagerAPIMockRecorder) ListControlDomainInsights(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlDomainInsights", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlDomainInsights), arg0)
+}
+
+// ListControlDomainInsightsByAssessment mocks base method
+func (m *MockAuditManagerAPI) ListControlDomainInsightsByAssessment(arg0 *auditmanager.ListControlDomainInsightsByAssessmentInput) (*auditmanager.ListControlDomainInsightsByAssessmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListControlDomainInsightsByAssessment", arg0)
+	ret0, _ := ret[0].(*auditmanager.ListControlDomainInsightsByAssessmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListControlDomainInsightsByAssessment indicates an expected call of ListControlDomainInsightsByAssessment
+func (mr *MockAuditManagerAPIMockRecorder) ListControlDomainInsightsByAssessment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlDomainInsightsByAssessment", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlDomainInsightsByAssessment), arg0)
+}
+
+// ListControlDomainInsightsByAssessmentPages mocks base method
+func (m *MockAuditManagerAPI) ListControlDomainInsightsByAssessmentPages(arg0 *auditmanager.ListControlDomainInsightsByAssessmentInput, arg1 func(*auditmanager.ListControlDomainInsightsByAssessmentOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListControlDomainInsightsByAssessmentPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListControlDomainInsightsByAssessmentPages indicates an expected call of ListControlDomainInsightsByAssessmentPages
+func (mr *MockAuditManagerAPIMockRecorder) ListControlDomainInsightsByAssessmentPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlDomainInsightsByAssessmentPages", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlDomainInsightsByAssessmentPages), arg0, arg1)
+}
+
+// ListControlDomainInsightsByAssessmentPagesWithContext mocks base method
+func (m *MockAuditManagerAPI) ListControlDomainInsightsByAssessmentPagesWithContext(arg0 context.Context, arg1 *auditmanager.ListControlDomainInsightsByAssessmentInput, arg2 func(*auditmanager.ListControlDomainInsightsByAssessmentOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListControlDomainInsightsByAssessmentPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListControlDomainInsightsByAssessmentPagesWithContext indicates an expected call of ListControlDomainInsightsByAssessmentPagesWithContext
+func (mr *MockAuditManagerAPIMockRecorder) ListControlDomainInsightsByAssessmentPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlDomainInsightsByAssessmentPagesWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlDomainInsightsByAssessmentPagesWithContext), varargs...)
+}
+
+// ListControlDomainInsightsByAssessmentRequest mocks base method
+func (m *MockAuditManagerAPI) ListControlDomainInsightsByAssessmentRequest(arg0 *auditmanager.ListControlDomainInsightsByAssessmentInput) (*request.Request, *auditmanager.ListControlDomainInsightsByAssessmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListControlDomainInsightsByAssessmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*auditmanager.ListControlDomainInsightsByAssessmentOutput)
+	return ret0, ret1
+}
+
+// ListControlDomainInsightsByAssessmentRequest indicates an expected call of ListControlDomainInsightsByAssessmentRequest
+func (mr *MockAuditManagerAPIMockRecorder) ListControlDomainInsightsByAssessmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlDomainInsightsByAssessmentRequest", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlDomainInsightsByAssessmentRequest), arg0)
+}
+
+// ListControlDomainInsightsByAssessmentWithContext mocks base method
+func (m *MockAuditManagerAPI) ListControlDomainInsightsByAssessmentWithContext(arg0 context.Context, arg1 *auditmanager.ListControlDomainInsightsByAssessmentInput, arg2 ...request.Option) (*auditmanager.ListControlDomainInsightsByAssessmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListControlDomainInsightsByAssessmentWithContext", varargs...)
+	ret0, _ := ret[0].(*auditmanager.ListControlDomainInsightsByAssessmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListControlDomainInsightsByAssessmentWithContext indicates an expected call of ListControlDomainInsightsByAssessmentWithContext
+func (mr *MockAuditManagerAPIMockRecorder) ListControlDomainInsightsByAssessmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlDomainInsightsByAssessmentWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlDomainInsightsByAssessmentWithContext), varargs...)
+}
+
+// ListControlDomainInsightsPages mocks base method
+func (m *MockAuditManagerAPI) ListControlDomainInsightsPages(arg0 *auditmanager.ListControlDomainInsightsInput, arg1 func(*auditmanager.ListControlDomainInsightsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListControlDomainInsightsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListControlDomainInsightsPages indicates an expected call of ListControlDomainInsightsPages
+func (mr *MockAuditManagerAPIMockRecorder) ListControlDomainInsightsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlDomainInsightsPages", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlDomainInsightsPages), arg0, arg1)
+}
+
+// ListControlDomainInsightsPagesWithContext mocks base method
+func (m *MockAuditManagerAPI) ListControlDomainInsightsPagesWithContext(arg0 context.Context, arg1 *auditmanager.ListControlDomainInsightsInput, arg2 func(*auditmanager.ListControlDomainInsightsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListControlDomainInsightsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListControlDomainInsightsPagesWithContext indicates an expected call of ListControlDomainInsightsPagesWithContext
+func (mr *MockAuditManagerAPIMockRecorder) ListControlDomainInsightsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlDomainInsightsPagesWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlDomainInsightsPagesWithContext), varargs...)
+}
+
+// ListControlDomainInsightsRequest mocks base method
+func (m *MockAuditManagerAPI) ListControlDomainInsightsRequest(arg0 *auditmanager.ListControlDomainInsightsInput) (*request.Request, *auditmanager.ListControlDomainInsightsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListControlDomainInsightsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*auditmanager.ListControlDomainInsightsOutput)
+	return ret0, ret1
+}
+
+// ListControlDomainInsightsRequest indicates an expected call of ListControlDomainInsightsRequest
+func (mr *MockAuditManagerAPIMockRecorder) ListControlDomainInsightsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlDomainInsightsRequest", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlDomainInsightsRequest), arg0)
+}
+
+// ListControlDomainInsightsWithContext mocks base method
+func (m *MockAuditManagerAPI) ListControlDomainInsightsWithContext(arg0 context.Context, arg1 *auditmanager.ListControlDomainInsightsInput, arg2 ...request.Option) (*auditmanager.ListControlDomainInsightsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListControlDomainInsightsWithContext", varargs...)
+	ret0, _ := ret[0].(*auditmanager.ListControlDomainInsightsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListControlDomainInsightsWithContext indicates an expected call of ListControlDomainInsightsWithContext
+func (mr *MockAuditManagerAPIMockRecorder) ListControlDomainInsightsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlDomainInsightsWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlDomainInsightsWithContext), varargs...)
+}
+
+// ListControlInsightsByControlDomain mocks base method
+func (m *MockAuditManagerAPI) ListControlInsightsByControlDomain(arg0 *auditmanager.ListControlInsightsByControlDomainInput) (*auditmanager.ListControlInsightsByControlDomainOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListControlInsightsByControlDomain", arg0)
+	ret0, _ := ret[0].(*auditmanager.ListControlInsightsByControlDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListControlInsightsByControlDomain indicates an expected call of ListControlInsightsByControlDomain
+func (mr *MockAuditManagerAPIMockRecorder) ListControlInsightsByControlDomain(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlInsightsByControlDomain", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlInsightsByControlDomain), arg0)
+}
+
+// ListControlInsightsByControlDomainPages mocks base method
+func (m *MockAuditManagerAPI) ListControlInsightsByControlDomainPages(arg0 *auditmanager.ListControlInsightsByControlDomainInput, arg1 func(*auditmanager.ListControlInsightsByControlDomainOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListControlInsightsByControlDomainPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListControlInsightsByControlDomainPages indicates an expected call of ListControlInsightsByControlDomainPages
+func (mr *MockAuditManagerAPIMockRecorder) ListControlInsightsByControlDomainPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlInsightsByControlDomainPages", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlInsightsByControlDomainPages), arg0, arg1)
+}
+
+// ListControlInsightsByControlDomainPagesWithContext mocks base method
+func (m *MockAuditManagerAPI) ListControlInsightsByControlDomainPagesWithContext(arg0 context.Context, arg1 *auditmanager.ListControlInsightsByControlDomainInput, arg2 func(*auditmanager.ListControlInsightsByControlDomainOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListControlInsightsByControlDomainPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListControlInsightsByControlDomainPagesWithContext indicates an expected call of ListControlInsightsByControlDomainPagesWithContext
+func (mr *MockAuditManagerAPIMockRecorder) ListControlInsightsByControlDomainPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlInsightsByControlDomainPagesWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlInsightsByControlDomainPagesWithContext), varargs...)
+}
+
+// ListControlInsightsByControlDomainRequest mocks base method
+func (m *MockAuditManagerAPI) ListControlInsightsByControlDomainRequest(arg0 *auditmanager.ListControlInsightsByControlDomainInput) (*request.Request, *auditmanager.ListControlInsightsByControlDomainOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListControlInsightsByControlDomainRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*auditmanager.ListControlInsightsByControlDomainOutput)
+	return ret0, ret1
+}
+
+// ListControlInsightsByControlDomainRequest indicates an expected call of ListControlInsightsByControlDomainRequest
+func (mr *MockAuditManagerAPIMockRecorder) ListControlInsightsByControlDomainRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlInsightsByControlDomainRequest", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlInsightsByControlDomainRequest), arg0)
+}
+
+// ListControlInsightsByControlDomainWithContext mocks base method
+func (m *MockAuditManagerAPI) ListControlInsightsByControlDomainWithContext(arg0 context.Context, arg1 *auditmanager.ListControlInsightsByControlDomainInput, arg2 ...request.Option) (*auditmanager.ListControlInsightsByControlDomainOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListControlInsightsByControlDomainWithContext", varargs...)
+	ret0, _ := ret[0].(*auditmanager.ListControlInsightsByControlDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListControlInsightsByControlDomainWithContext indicates an expected call of ListControlInsightsByControlDomainWithContext
+func (mr *MockAuditManagerAPIMockRecorder) ListControlInsightsByControlDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListControlInsightsByControlDomainWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).ListControlInsightsByControlDomainWithContext), varargs...)
 }
 
 // ListControls mocks base method
