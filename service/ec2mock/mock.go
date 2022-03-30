@@ -23034,6 +23034,56 @@ func (mr *MockEC2APIMockRecorder) ModifyNetworkInterfaceAttributeWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyNetworkInterfaceAttributeWithContext", reflect.TypeOf((*MockEC2API)(nil).ModifyNetworkInterfaceAttributeWithContext), varargs...)
 }
 
+// ModifyPrivateDnsNameOptions mocks base method
+func (m *MockEC2API) ModifyPrivateDnsNameOptions(arg0 *ec2.ModifyPrivateDnsNameOptionsInput) (*ec2.ModifyPrivateDnsNameOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyPrivateDnsNameOptions", arg0)
+	ret0, _ := ret[0].(*ec2.ModifyPrivateDnsNameOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyPrivateDnsNameOptions indicates an expected call of ModifyPrivateDnsNameOptions
+func (mr *MockEC2APIMockRecorder) ModifyPrivateDnsNameOptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyPrivateDnsNameOptions", reflect.TypeOf((*MockEC2API)(nil).ModifyPrivateDnsNameOptions), arg0)
+}
+
+// ModifyPrivateDnsNameOptionsRequest mocks base method
+func (m *MockEC2API) ModifyPrivateDnsNameOptionsRequest(arg0 *ec2.ModifyPrivateDnsNameOptionsInput) (*request.Request, *ec2.ModifyPrivateDnsNameOptionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyPrivateDnsNameOptionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.ModifyPrivateDnsNameOptionsOutput)
+	return ret0, ret1
+}
+
+// ModifyPrivateDnsNameOptionsRequest indicates an expected call of ModifyPrivateDnsNameOptionsRequest
+func (mr *MockEC2APIMockRecorder) ModifyPrivateDnsNameOptionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyPrivateDnsNameOptionsRequest", reflect.TypeOf((*MockEC2API)(nil).ModifyPrivateDnsNameOptionsRequest), arg0)
+}
+
+// ModifyPrivateDnsNameOptionsWithContext mocks base method
+func (m *MockEC2API) ModifyPrivateDnsNameOptionsWithContext(arg0 context.Context, arg1 *ec2.ModifyPrivateDnsNameOptionsInput, arg2 ...request.Option) (*ec2.ModifyPrivateDnsNameOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyPrivateDnsNameOptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.ModifyPrivateDnsNameOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyPrivateDnsNameOptionsWithContext indicates an expected call of ModifyPrivateDnsNameOptionsWithContext
+func (mr *MockEC2APIMockRecorder) ModifyPrivateDnsNameOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyPrivateDnsNameOptionsWithContext", reflect.TypeOf((*MockEC2API)(nil).ModifyPrivateDnsNameOptionsWithContext), varargs...)
+}
+
 // ModifyReservedInstances mocks base method
 func (m *MockEC2API) ModifyReservedInstances(arg0 *ec2.ModifyReservedInstancesInput) (*ec2.ModifyReservedInstancesOutput, error) {
 	m.ctrl.T.Helper()

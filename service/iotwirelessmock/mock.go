@@ -1985,6 +1985,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) GetMulticastGroupWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMulticastGroupWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetMulticastGroupWithContext), varargs...)
 }
 
+// GetNetworkAnalyzerConfiguration mocks base method
+func (m *MockIoTWirelessAPI) GetNetworkAnalyzerConfiguration(arg0 *iotwireless.GetNetworkAnalyzerConfigurationInput) (*iotwireless.GetNetworkAnalyzerConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetNetworkAnalyzerConfiguration", arg0)
+	ret0, _ := ret[0].(*iotwireless.GetNetworkAnalyzerConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetNetworkAnalyzerConfiguration indicates an expected call of GetNetworkAnalyzerConfiguration
+func (mr *MockIoTWirelessAPIMockRecorder) GetNetworkAnalyzerConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNetworkAnalyzerConfiguration", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetNetworkAnalyzerConfiguration), arg0)
+}
+
+// GetNetworkAnalyzerConfigurationRequest mocks base method
+func (m *MockIoTWirelessAPI) GetNetworkAnalyzerConfigurationRequest(arg0 *iotwireless.GetNetworkAnalyzerConfigurationInput) (*request.Request, *iotwireless.GetNetworkAnalyzerConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetNetworkAnalyzerConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.GetNetworkAnalyzerConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetNetworkAnalyzerConfigurationRequest indicates an expected call of GetNetworkAnalyzerConfigurationRequest
+func (mr *MockIoTWirelessAPIMockRecorder) GetNetworkAnalyzerConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNetworkAnalyzerConfigurationRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetNetworkAnalyzerConfigurationRequest), arg0)
+}
+
+// GetNetworkAnalyzerConfigurationWithContext mocks base method
+func (m *MockIoTWirelessAPI) GetNetworkAnalyzerConfigurationWithContext(arg0 context.Context, arg1 *iotwireless.GetNetworkAnalyzerConfigurationInput, arg2 ...request.Option) (*iotwireless.GetNetworkAnalyzerConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetNetworkAnalyzerConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.GetNetworkAnalyzerConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetNetworkAnalyzerConfigurationWithContext indicates an expected call of GetNetworkAnalyzerConfigurationWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) GetNetworkAnalyzerConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNetworkAnalyzerConfigurationWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetNetworkAnalyzerConfigurationWithContext), varargs...)
+}
+
 // GetPartnerAccount mocks base method
 func (m *MockIoTWirelessAPI) GetPartnerAccount(arg0 *iotwireless.GetPartnerAccountInput) (*iotwireless.GetPartnerAccountOutput, error) {
 	m.ctrl.T.Helper()
@@ -4247,6 +4297,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) UpdateMulticastGroupWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMulticastGroupWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateMulticastGroupWithContext), varargs...)
+}
+
+// UpdateNetworkAnalyzerConfiguration mocks base method
+func (m *MockIoTWirelessAPI) UpdateNetworkAnalyzerConfiguration(arg0 *iotwireless.UpdateNetworkAnalyzerConfigurationInput) (*iotwireless.UpdateNetworkAnalyzerConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateNetworkAnalyzerConfiguration", arg0)
+	ret0, _ := ret[0].(*iotwireless.UpdateNetworkAnalyzerConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateNetworkAnalyzerConfiguration indicates an expected call of UpdateNetworkAnalyzerConfiguration
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateNetworkAnalyzerConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNetworkAnalyzerConfiguration", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateNetworkAnalyzerConfiguration), arg0)
+}
+
+// UpdateNetworkAnalyzerConfigurationRequest mocks base method
+func (m *MockIoTWirelessAPI) UpdateNetworkAnalyzerConfigurationRequest(arg0 *iotwireless.UpdateNetworkAnalyzerConfigurationInput) (*request.Request, *iotwireless.UpdateNetworkAnalyzerConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateNetworkAnalyzerConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.UpdateNetworkAnalyzerConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateNetworkAnalyzerConfigurationRequest indicates an expected call of UpdateNetworkAnalyzerConfigurationRequest
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateNetworkAnalyzerConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNetworkAnalyzerConfigurationRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateNetworkAnalyzerConfigurationRequest), arg0)
+}
+
+// UpdateNetworkAnalyzerConfigurationWithContext mocks base method
+func (m *MockIoTWirelessAPI) UpdateNetworkAnalyzerConfigurationWithContext(arg0 context.Context, arg1 *iotwireless.UpdateNetworkAnalyzerConfigurationInput, arg2 ...request.Option) (*iotwireless.UpdateNetworkAnalyzerConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateNetworkAnalyzerConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.UpdateNetworkAnalyzerConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateNetworkAnalyzerConfigurationWithContext indicates an expected call of UpdateNetworkAnalyzerConfigurationWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateNetworkAnalyzerConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNetworkAnalyzerConfigurationWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateNetworkAnalyzerConfigurationWithContext), varargs...)
 }
 
 // UpdatePartnerAccount mocks base method

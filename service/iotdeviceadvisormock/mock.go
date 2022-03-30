@@ -135,6 +135,56 @@ func (mr *MockIoTDeviceAdvisorAPIMockRecorder) DeleteSuiteDefinitionWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSuiteDefinitionWithContext", reflect.TypeOf((*MockIoTDeviceAdvisorAPI)(nil).DeleteSuiteDefinitionWithContext), varargs...)
 }
 
+// GetEndpoint mocks base method
+func (m *MockIoTDeviceAdvisorAPI) GetEndpoint(arg0 *iotdeviceadvisor.GetEndpointInput) (*iotdeviceadvisor.GetEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEndpoint", arg0)
+	ret0, _ := ret[0].(*iotdeviceadvisor.GetEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEndpoint indicates an expected call of GetEndpoint
+func (mr *MockIoTDeviceAdvisorAPIMockRecorder) GetEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEndpoint", reflect.TypeOf((*MockIoTDeviceAdvisorAPI)(nil).GetEndpoint), arg0)
+}
+
+// GetEndpointRequest mocks base method
+func (m *MockIoTDeviceAdvisorAPI) GetEndpointRequest(arg0 *iotdeviceadvisor.GetEndpointInput) (*request.Request, *iotdeviceadvisor.GetEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotdeviceadvisor.GetEndpointOutput)
+	return ret0, ret1
+}
+
+// GetEndpointRequest indicates an expected call of GetEndpointRequest
+func (mr *MockIoTDeviceAdvisorAPIMockRecorder) GetEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEndpointRequest", reflect.TypeOf((*MockIoTDeviceAdvisorAPI)(nil).GetEndpointRequest), arg0)
+}
+
+// GetEndpointWithContext mocks base method
+func (m *MockIoTDeviceAdvisorAPI) GetEndpointWithContext(arg0 context.Context, arg1 *iotdeviceadvisor.GetEndpointInput, arg2 ...request.Option) (*iotdeviceadvisor.GetEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*iotdeviceadvisor.GetEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEndpointWithContext indicates an expected call of GetEndpointWithContext
+func (mr *MockIoTDeviceAdvisorAPIMockRecorder) GetEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEndpointWithContext", reflect.TypeOf((*MockIoTDeviceAdvisorAPI)(nil).GetEndpointWithContext), varargs...)
+}
+
 // GetSuiteDefinition mocks base method
 func (m *MockIoTDeviceAdvisorAPI) GetSuiteDefinition(arg0 *iotdeviceadvisor.GetSuiteDefinitionInput) (*iotdeviceadvisor.GetSuiteDefinitionOutput, error) {
 	m.ctrl.T.Helper()
