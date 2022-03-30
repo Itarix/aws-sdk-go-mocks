@@ -135,6 +135,56 @@ func (mr *MockMediaTailorAPIMockRecorder) CreateChannelWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreateChannelWithContext), varargs...)
 }
 
+// CreatePrefetchSchedule mocks base method
+func (m *MockMediaTailorAPI) CreatePrefetchSchedule(arg0 *mediatailor.CreatePrefetchScheduleInput) (*mediatailor.CreatePrefetchScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePrefetchSchedule", arg0)
+	ret0, _ := ret[0].(*mediatailor.CreatePrefetchScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePrefetchSchedule indicates an expected call of CreatePrefetchSchedule
+func (mr *MockMediaTailorAPIMockRecorder) CreatePrefetchSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePrefetchSchedule", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreatePrefetchSchedule), arg0)
+}
+
+// CreatePrefetchScheduleRequest mocks base method
+func (m *MockMediaTailorAPI) CreatePrefetchScheduleRequest(arg0 *mediatailor.CreatePrefetchScheduleInput) (*request.Request, *mediatailor.CreatePrefetchScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePrefetchScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.CreatePrefetchScheduleOutput)
+	return ret0, ret1
+}
+
+// CreatePrefetchScheduleRequest indicates an expected call of CreatePrefetchScheduleRequest
+func (mr *MockMediaTailorAPIMockRecorder) CreatePrefetchScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePrefetchScheduleRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreatePrefetchScheduleRequest), arg0)
+}
+
+// CreatePrefetchScheduleWithContext mocks base method
+func (m *MockMediaTailorAPI) CreatePrefetchScheduleWithContext(arg0 context.Context, arg1 *mediatailor.CreatePrefetchScheduleInput, arg2 ...request.Option) (*mediatailor.CreatePrefetchScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreatePrefetchScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.CreatePrefetchScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePrefetchScheduleWithContext indicates an expected call of CreatePrefetchScheduleWithContext
+func (mr *MockMediaTailorAPIMockRecorder) CreatePrefetchScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePrefetchScheduleWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreatePrefetchScheduleWithContext), varargs...)
+}
+
 // CreateProgram mocks base method
 func (m *MockMediaTailorAPI) CreateProgram(arg0 *mediatailor.CreateProgramInput) (*mediatailor.CreateProgramOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +483,56 @@ func (mr *MockMediaTailorAPIMockRecorder) DeletePlaybackConfigurationWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePlaybackConfigurationWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeletePlaybackConfigurationWithContext), varargs...)
+}
+
+// DeletePrefetchSchedule mocks base method
+func (m *MockMediaTailorAPI) DeletePrefetchSchedule(arg0 *mediatailor.DeletePrefetchScheduleInput) (*mediatailor.DeletePrefetchScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePrefetchSchedule", arg0)
+	ret0, _ := ret[0].(*mediatailor.DeletePrefetchScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePrefetchSchedule indicates an expected call of DeletePrefetchSchedule
+func (mr *MockMediaTailorAPIMockRecorder) DeletePrefetchSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePrefetchSchedule", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeletePrefetchSchedule), arg0)
+}
+
+// DeletePrefetchScheduleRequest mocks base method
+func (m *MockMediaTailorAPI) DeletePrefetchScheduleRequest(arg0 *mediatailor.DeletePrefetchScheduleInput) (*request.Request, *mediatailor.DeletePrefetchScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePrefetchScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.DeletePrefetchScheduleOutput)
+	return ret0, ret1
+}
+
+// DeletePrefetchScheduleRequest indicates an expected call of DeletePrefetchScheduleRequest
+func (mr *MockMediaTailorAPIMockRecorder) DeletePrefetchScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePrefetchScheduleRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeletePrefetchScheduleRequest), arg0)
+}
+
+// DeletePrefetchScheduleWithContext mocks base method
+func (m *MockMediaTailorAPI) DeletePrefetchScheduleWithContext(arg0 context.Context, arg1 *mediatailor.DeletePrefetchScheduleInput, arg2 ...request.Option) (*mediatailor.DeletePrefetchScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePrefetchScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.DeletePrefetchScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePrefetchScheduleWithContext indicates an expected call of DeletePrefetchScheduleWithContext
+func (mr *MockMediaTailorAPIMockRecorder) DeletePrefetchScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePrefetchScheduleWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeletePrefetchScheduleWithContext), varargs...)
 }
 
 // DeleteProgram mocks base method
@@ -968,6 +1068,56 @@ func (mr *MockMediaTailorAPIMockRecorder) GetPlaybackConfigurationWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPlaybackConfigurationWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).GetPlaybackConfigurationWithContext), varargs...)
 }
 
+// GetPrefetchSchedule mocks base method
+func (m *MockMediaTailorAPI) GetPrefetchSchedule(arg0 *mediatailor.GetPrefetchScheduleInput) (*mediatailor.GetPrefetchScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPrefetchSchedule", arg0)
+	ret0, _ := ret[0].(*mediatailor.GetPrefetchScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPrefetchSchedule indicates an expected call of GetPrefetchSchedule
+func (mr *MockMediaTailorAPIMockRecorder) GetPrefetchSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPrefetchSchedule", reflect.TypeOf((*MockMediaTailorAPI)(nil).GetPrefetchSchedule), arg0)
+}
+
+// GetPrefetchScheduleRequest mocks base method
+func (m *MockMediaTailorAPI) GetPrefetchScheduleRequest(arg0 *mediatailor.GetPrefetchScheduleInput) (*request.Request, *mediatailor.GetPrefetchScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPrefetchScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.GetPrefetchScheduleOutput)
+	return ret0, ret1
+}
+
+// GetPrefetchScheduleRequest indicates an expected call of GetPrefetchScheduleRequest
+func (mr *MockMediaTailorAPIMockRecorder) GetPrefetchScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPrefetchScheduleRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).GetPrefetchScheduleRequest), arg0)
+}
+
+// GetPrefetchScheduleWithContext mocks base method
+func (m *MockMediaTailorAPI) GetPrefetchScheduleWithContext(arg0 context.Context, arg1 *mediatailor.GetPrefetchScheduleInput, arg2 ...request.Option) (*mediatailor.GetPrefetchScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPrefetchScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.GetPrefetchScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPrefetchScheduleWithContext indicates an expected call of GetPrefetchScheduleWithContext
+func (mr *MockMediaTailorAPIMockRecorder) GetPrefetchScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPrefetchScheduleWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).GetPrefetchScheduleWithContext), varargs...)
+}
+
 // ListAlerts mocks base method
 func (m *MockMediaTailorAPI) ListAlerts(arg0 *mediatailor.ListAlertsInput) (*mediatailor.ListAlertsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1215,6 +1365,89 @@ func (mr *MockMediaTailorAPIMockRecorder) ListPlaybackConfigurationsWithContext(
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlaybackConfigurationsWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListPlaybackConfigurationsWithContext), varargs...)
+}
+
+// ListPrefetchSchedules mocks base method
+func (m *MockMediaTailorAPI) ListPrefetchSchedules(arg0 *mediatailor.ListPrefetchSchedulesInput) (*mediatailor.ListPrefetchSchedulesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPrefetchSchedules", arg0)
+	ret0, _ := ret[0].(*mediatailor.ListPrefetchSchedulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPrefetchSchedules indicates an expected call of ListPrefetchSchedules
+func (mr *MockMediaTailorAPIMockRecorder) ListPrefetchSchedules(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPrefetchSchedules", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListPrefetchSchedules), arg0)
+}
+
+// ListPrefetchSchedulesPages mocks base method
+func (m *MockMediaTailorAPI) ListPrefetchSchedulesPages(arg0 *mediatailor.ListPrefetchSchedulesInput, arg1 func(*mediatailor.ListPrefetchSchedulesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPrefetchSchedulesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPrefetchSchedulesPages indicates an expected call of ListPrefetchSchedulesPages
+func (mr *MockMediaTailorAPIMockRecorder) ListPrefetchSchedulesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPrefetchSchedulesPages", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListPrefetchSchedulesPages), arg0, arg1)
+}
+
+// ListPrefetchSchedulesPagesWithContext mocks base method
+func (m *MockMediaTailorAPI) ListPrefetchSchedulesPagesWithContext(arg0 context.Context, arg1 *mediatailor.ListPrefetchSchedulesInput, arg2 func(*mediatailor.ListPrefetchSchedulesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPrefetchSchedulesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPrefetchSchedulesPagesWithContext indicates an expected call of ListPrefetchSchedulesPagesWithContext
+func (mr *MockMediaTailorAPIMockRecorder) ListPrefetchSchedulesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPrefetchSchedulesPagesWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListPrefetchSchedulesPagesWithContext), varargs...)
+}
+
+// ListPrefetchSchedulesRequest mocks base method
+func (m *MockMediaTailorAPI) ListPrefetchSchedulesRequest(arg0 *mediatailor.ListPrefetchSchedulesInput) (*request.Request, *mediatailor.ListPrefetchSchedulesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPrefetchSchedulesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.ListPrefetchSchedulesOutput)
+	return ret0, ret1
+}
+
+// ListPrefetchSchedulesRequest indicates an expected call of ListPrefetchSchedulesRequest
+func (mr *MockMediaTailorAPIMockRecorder) ListPrefetchSchedulesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPrefetchSchedulesRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListPrefetchSchedulesRequest), arg0)
+}
+
+// ListPrefetchSchedulesWithContext mocks base method
+func (m *MockMediaTailorAPI) ListPrefetchSchedulesWithContext(arg0 context.Context, arg1 *mediatailor.ListPrefetchSchedulesInput, arg2 ...request.Option) (*mediatailor.ListPrefetchSchedulesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPrefetchSchedulesWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.ListPrefetchSchedulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPrefetchSchedulesWithContext indicates an expected call of ListPrefetchSchedulesWithContext
+func (mr *MockMediaTailorAPIMockRecorder) ListPrefetchSchedulesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPrefetchSchedulesWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListPrefetchSchedulesWithContext), varargs...)
 }
 
 // ListSourceLocations mocks base method
