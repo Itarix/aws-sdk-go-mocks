@@ -1766,6 +1766,56 @@ func (mr *MockForecastServiceAPIMockRecorder) ListTagsForResourceWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// StopResource mocks base method
+func (m *MockForecastServiceAPI) StopResource(arg0 *forecastservice.StopResourceInput) (*forecastservice.StopResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopResource", arg0)
+	ret0, _ := ret[0].(*forecastservice.StopResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopResource indicates an expected call of StopResource
+func (mr *MockForecastServiceAPIMockRecorder) StopResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopResource", reflect.TypeOf((*MockForecastServiceAPI)(nil).StopResource), arg0)
+}
+
+// StopResourceRequest mocks base method
+func (m *MockForecastServiceAPI) StopResourceRequest(arg0 *forecastservice.StopResourceInput) (*request.Request, *forecastservice.StopResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.StopResourceOutput)
+	return ret0, ret1
+}
+
+// StopResourceRequest indicates an expected call of StopResourceRequest
+func (mr *MockForecastServiceAPIMockRecorder) StopResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopResourceRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).StopResourceRequest), arg0)
+}
+
+// StopResourceWithContext mocks base method
+func (m *MockForecastServiceAPI) StopResourceWithContext(arg0 context.Context, arg1 *forecastservice.StopResourceInput, arg2 ...request.Option) (*forecastservice.StopResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.StopResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopResourceWithContext indicates an expected call of StopResourceWithContext
+func (mr *MockForecastServiceAPIMockRecorder) StopResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopResourceWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).StopResourceWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockForecastServiceAPI) TagResource(arg0 *forecastservice.TagResourceInput) (*forecastservice.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
