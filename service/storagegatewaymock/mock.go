@@ -4698,6 +4698,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBFileShareWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBFileShareWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBFileShareWithContext), varargs...)
 }
 
+// UpdateSMBLocalGroups mocks base method
+func (m *MockStorageGatewayAPI) UpdateSMBLocalGroups(arg0 *storagegateway.UpdateSMBLocalGroupsInput) (*storagegateway.UpdateSMBLocalGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSMBLocalGroups", arg0)
+	ret0, _ := ret[0].(*storagegateway.UpdateSMBLocalGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSMBLocalGroups indicates an expected call of UpdateSMBLocalGroups
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBLocalGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBLocalGroups", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBLocalGroups), arg0)
+}
+
+// UpdateSMBLocalGroupsRequest mocks base method
+func (m *MockStorageGatewayAPI) UpdateSMBLocalGroupsRequest(arg0 *storagegateway.UpdateSMBLocalGroupsInput) (*request.Request, *storagegateway.UpdateSMBLocalGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSMBLocalGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.UpdateSMBLocalGroupsOutput)
+	return ret0, ret1
+}
+
+// UpdateSMBLocalGroupsRequest indicates an expected call of UpdateSMBLocalGroupsRequest
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBLocalGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBLocalGroupsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBLocalGroupsRequest), arg0)
+}
+
+// UpdateSMBLocalGroupsWithContext mocks base method
+func (m *MockStorageGatewayAPI) UpdateSMBLocalGroupsWithContext(arg0 context.Context, arg1 *storagegateway.UpdateSMBLocalGroupsInput, arg2 ...request.Option) (*storagegateway.UpdateSMBLocalGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSMBLocalGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.UpdateSMBLocalGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSMBLocalGroupsWithContext indicates an expected call of UpdateSMBLocalGroupsWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateSMBLocalGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSMBLocalGroupsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateSMBLocalGroupsWithContext), varargs...)
+}
+
 // UpdateSMBSecurityStrategy mocks base method
 func (m *MockStorageGatewayAPI) UpdateSMBSecurityStrategy(arg0 *storagegateway.UpdateSMBSecurityStrategyInput) (*storagegateway.UpdateSMBSecurityStrategyOutput, error) {
 	m.ctrl.T.Helper()
