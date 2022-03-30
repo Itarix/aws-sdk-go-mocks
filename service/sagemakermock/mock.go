@@ -13633,6 +13633,171 @@ func (mr *MockSageMakerAPIMockRecorder) WaitUntilEndpointInServiceWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilEndpointInServiceWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).WaitUntilEndpointInServiceWithContext), varargs...)
 }
 
+// WaitUntilImageCreated mocks base method
+func (m *MockSageMakerAPI) WaitUntilImageCreated(arg0 *sagemaker.DescribeImageInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilImageCreated", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilImageCreated indicates an expected call of WaitUntilImageCreated
+func (mr *MockSageMakerAPIMockRecorder) WaitUntilImageCreated(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilImageCreated", reflect.TypeOf((*MockSageMakerAPI)(nil).WaitUntilImageCreated), arg0)
+}
+
+// WaitUntilImageCreatedWithContext mocks base method
+func (m *MockSageMakerAPI) WaitUntilImageCreatedWithContext(arg0 context.Context, arg1 *sagemaker.DescribeImageInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilImageCreatedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilImageCreatedWithContext indicates an expected call of WaitUntilImageCreatedWithContext
+func (mr *MockSageMakerAPIMockRecorder) WaitUntilImageCreatedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilImageCreatedWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).WaitUntilImageCreatedWithContext), varargs...)
+}
+
+// WaitUntilImageDeleted mocks base method
+func (m *MockSageMakerAPI) WaitUntilImageDeleted(arg0 *sagemaker.DescribeImageInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilImageDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilImageDeleted indicates an expected call of WaitUntilImageDeleted
+func (mr *MockSageMakerAPIMockRecorder) WaitUntilImageDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilImageDeleted", reflect.TypeOf((*MockSageMakerAPI)(nil).WaitUntilImageDeleted), arg0)
+}
+
+// WaitUntilImageDeletedWithContext mocks base method
+func (m *MockSageMakerAPI) WaitUntilImageDeletedWithContext(arg0 context.Context, arg1 *sagemaker.DescribeImageInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilImageDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilImageDeletedWithContext indicates an expected call of WaitUntilImageDeletedWithContext
+func (mr *MockSageMakerAPIMockRecorder) WaitUntilImageDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilImageDeletedWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).WaitUntilImageDeletedWithContext), varargs...)
+}
+
+// WaitUntilImageUpdated mocks base method
+func (m *MockSageMakerAPI) WaitUntilImageUpdated(arg0 *sagemaker.DescribeImageInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilImageUpdated", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilImageUpdated indicates an expected call of WaitUntilImageUpdated
+func (mr *MockSageMakerAPIMockRecorder) WaitUntilImageUpdated(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilImageUpdated", reflect.TypeOf((*MockSageMakerAPI)(nil).WaitUntilImageUpdated), arg0)
+}
+
+// WaitUntilImageUpdatedWithContext mocks base method
+func (m *MockSageMakerAPI) WaitUntilImageUpdatedWithContext(arg0 context.Context, arg1 *sagemaker.DescribeImageInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilImageUpdatedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilImageUpdatedWithContext indicates an expected call of WaitUntilImageUpdatedWithContext
+func (mr *MockSageMakerAPIMockRecorder) WaitUntilImageUpdatedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilImageUpdatedWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).WaitUntilImageUpdatedWithContext), varargs...)
+}
+
+// WaitUntilImageVersionCreated mocks base method
+func (m *MockSageMakerAPI) WaitUntilImageVersionCreated(arg0 *sagemaker.DescribeImageVersionInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilImageVersionCreated", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilImageVersionCreated indicates an expected call of WaitUntilImageVersionCreated
+func (mr *MockSageMakerAPIMockRecorder) WaitUntilImageVersionCreated(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilImageVersionCreated", reflect.TypeOf((*MockSageMakerAPI)(nil).WaitUntilImageVersionCreated), arg0)
+}
+
+// WaitUntilImageVersionCreatedWithContext mocks base method
+func (m *MockSageMakerAPI) WaitUntilImageVersionCreatedWithContext(arg0 context.Context, arg1 *sagemaker.DescribeImageVersionInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilImageVersionCreatedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilImageVersionCreatedWithContext indicates an expected call of WaitUntilImageVersionCreatedWithContext
+func (mr *MockSageMakerAPIMockRecorder) WaitUntilImageVersionCreatedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilImageVersionCreatedWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).WaitUntilImageVersionCreatedWithContext), varargs...)
+}
+
+// WaitUntilImageVersionDeleted mocks base method
+func (m *MockSageMakerAPI) WaitUntilImageVersionDeleted(arg0 *sagemaker.DescribeImageVersionInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilImageVersionDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilImageVersionDeleted indicates an expected call of WaitUntilImageVersionDeleted
+func (mr *MockSageMakerAPIMockRecorder) WaitUntilImageVersionDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilImageVersionDeleted", reflect.TypeOf((*MockSageMakerAPI)(nil).WaitUntilImageVersionDeleted), arg0)
+}
+
+// WaitUntilImageVersionDeletedWithContext mocks base method
+func (m *MockSageMakerAPI) WaitUntilImageVersionDeletedWithContext(arg0 context.Context, arg1 *sagemaker.DescribeImageVersionInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilImageVersionDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilImageVersionDeletedWithContext indicates an expected call of WaitUntilImageVersionDeletedWithContext
+func (mr *MockSageMakerAPIMockRecorder) WaitUntilImageVersionDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilImageVersionDeletedWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).WaitUntilImageVersionDeletedWithContext), varargs...)
+}
+
 // WaitUntilNotebookInstanceDeleted mocks base method
 func (m *MockSageMakerAPI) WaitUntilNotebookInstanceDeleted(arg0 *sagemaker.DescribeNotebookInstanceInput) error {
 	m.ctrl.T.Helper()
