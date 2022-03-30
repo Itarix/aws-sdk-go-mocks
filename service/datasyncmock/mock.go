@@ -1700,6 +1700,156 @@ func (mr *MockDataSyncAPIMockRecorder) UpdateAgentWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAgentWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateAgentWithContext), varargs...)
 }
 
+// UpdateLocationNfs mocks base method
+func (m *MockDataSyncAPI) UpdateLocationNfs(arg0 *datasync.UpdateLocationNfsInput) (*datasync.UpdateLocationNfsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLocationNfs", arg0)
+	ret0, _ := ret[0].(*datasync.UpdateLocationNfsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLocationNfs indicates an expected call of UpdateLocationNfs
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationNfs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationNfs", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationNfs), arg0)
+}
+
+// UpdateLocationNfsRequest mocks base method
+func (m *MockDataSyncAPI) UpdateLocationNfsRequest(arg0 *datasync.UpdateLocationNfsInput) (*request.Request, *datasync.UpdateLocationNfsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLocationNfsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.UpdateLocationNfsOutput)
+	return ret0, ret1
+}
+
+// UpdateLocationNfsRequest indicates an expected call of UpdateLocationNfsRequest
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationNfsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationNfsRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationNfsRequest), arg0)
+}
+
+// UpdateLocationNfsWithContext mocks base method
+func (m *MockDataSyncAPI) UpdateLocationNfsWithContext(arg0 context.Context, arg1 *datasync.UpdateLocationNfsInput, arg2 ...request.Option) (*datasync.UpdateLocationNfsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateLocationNfsWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.UpdateLocationNfsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLocationNfsWithContext indicates an expected call of UpdateLocationNfsWithContext
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationNfsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationNfsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationNfsWithContext), varargs...)
+}
+
+// UpdateLocationObjectStorage mocks base method
+func (m *MockDataSyncAPI) UpdateLocationObjectStorage(arg0 *datasync.UpdateLocationObjectStorageInput) (*datasync.UpdateLocationObjectStorageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLocationObjectStorage", arg0)
+	ret0, _ := ret[0].(*datasync.UpdateLocationObjectStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLocationObjectStorage indicates an expected call of UpdateLocationObjectStorage
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationObjectStorage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationObjectStorage", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationObjectStorage), arg0)
+}
+
+// UpdateLocationObjectStorageRequest mocks base method
+func (m *MockDataSyncAPI) UpdateLocationObjectStorageRequest(arg0 *datasync.UpdateLocationObjectStorageInput) (*request.Request, *datasync.UpdateLocationObjectStorageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLocationObjectStorageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.UpdateLocationObjectStorageOutput)
+	return ret0, ret1
+}
+
+// UpdateLocationObjectStorageRequest indicates an expected call of UpdateLocationObjectStorageRequest
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationObjectStorageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationObjectStorageRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationObjectStorageRequest), arg0)
+}
+
+// UpdateLocationObjectStorageWithContext mocks base method
+func (m *MockDataSyncAPI) UpdateLocationObjectStorageWithContext(arg0 context.Context, arg1 *datasync.UpdateLocationObjectStorageInput, arg2 ...request.Option) (*datasync.UpdateLocationObjectStorageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateLocationObjectStorageWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.UpdateLocationObjectStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLocationObjectStorageWithContext indicates an expected call of UpdateLocationObjectStorageWithContext
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationObjectStorageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationObjectStorageWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationObjectStorageWithContext), varargs...)
+}
+
+// UpdateLocationSmb mocks base method
+func (m *MockDataSyncAPI) UpdateLocationSmb(arg0 *datasync.UpdateLocationSmbInput) (*datasync.UpdateLocationSmbOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLocationSmb", arg0)
+	ret0, _ := ret[0].(*datasync.UpdateLocationSmbOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLocationSmb indicates an expected call of UpdateLocationSmb
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationSmb(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationSmb", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationSmb), arg0)
+}
+
+// UpdateLocationSmbRequest mocks base method
+func (m *MockDataSyncAPI) UpdateLocationSmbRequest(arg0 *datasync.UpdateLocationSmbInput) (*request.Request, *datasync.UpdateLocationSmbOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLocationSmbRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.UpdateLocationSmbOutput)
+	return ret0, ret1
+}
+
+// UpdateLocationSmbRequest indicates an expected call of UpdateLocationSmbRequest
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationSmbRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationSmbRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationSmbRequest), arg0)
+}
+
+// UpdateLocationSmbWithContext mocks base method
+func (m *MockDataSyncAPI) UpdateLocationSmbWithContext(arg0 context.Context, arg1 *datasync.UpdateLocationSmbInput, arg2 ...request.Option) (*datasync.UpdateLocationSmbOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateLocationSmbWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.UpdateLocationSmbOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLocationSmbWithContext indicates an expected call of UpdateLocationSmbWithContext
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationSmbWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationSmbWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationSmbWithContext), varargs...)
+}
+
 // UpdateTask mocks base method
 func (m *MockDataSyncAPI) UpdateTask(arg0 *datasync.UpdateTaskInput) (*datasync.UpdateTaskOutput, error) {
 	m.ctrl.T.Helper()
