@@ -250,6 +250,56 @@ func (mr *MockGameLiftAPIMockRecorder) CreateFleet(arg0 interface{}) *gomock.Cal
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFleet", reflect.TypeOf((*MockGameLiftAPI)(nil).CreateFleet), arg0)
 }
 
+// CreateFleetLocations mocks base method
+func (m *MockGameLiftAPI) CreateFleetLocations(arg0 *gamelift.CreateFleetLocationsInput) (*gamelift.CreateFleetLocationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFleetLocations", arg0)
+	ret0, _ := ret[0].(*gamelift.CreateFleetLocationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFleetLocations indicates an expected call of CreateFleetLocations
+func (mr *MockGameLiftAPIMockRecorder) CreateFleetLocations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFleetLocations", reflect.TypeOf((*MockGameLiftAPI)(nil).CreateFleetLocations), arg0)
+}
+
+// CreateFleetLocationsRequest mocks base method
+func (m *MockGameLiftAPI) CreateFleetLocationsRequest(arg0 *gamelift.CreateFleetLocationsInput) (*request.Request, *gamelift.CreateFleetLocationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFleetLocationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.CreateFleetLocationsOutput)
+	return ret0, ret1
+}
+
+// CreateFleetLocationsRequest indicates an expected call of CreateFleetLocationsRequest
+func (mr *MockGameLiftAPIMockRecorder) CreateFleetLocationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFleetLocationsRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).CreateFleetLocationsRequest), arg0)
+}
+
+// CreateFleetLocationsWithContext mocks base method
+func (m *MockGameLiftAPI) CreateFleetLocationsWithContext(arg0 context.Context, arg1 *gamelift.CreateFleetLocationsInput, arg2 ...request.Option) (*gamelift.CreateFleetLocationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFleetLocationsWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.CreateFleetLocationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFleetLocationsWithContext indicates an expected call of CreateFleetLocationsWithContext
+func (mr *MockGameLiftAPIMockRecorder) CreateFleetLocationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFleetLocationsWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).CreateFleetLocationsWithContext), varargs...)
+}
+
 // CreateFleetRequest mocks base method
 func (m *MockGameLiftAPI) CreateFleetRequest(arg0 *gamelift.CreateFleetInput) (*request.Request, *gamelift.CreateFleetOutput) {
 	m.ctrl.T.Helper()
@@ -898,6 +948,56 @@ func (m *MockGameLiftAPI) DeleteFleet(arg0 *gamelift.DeleteFleetInput) (*gamelif
 func (mr *MockGameLiftAPIMockRecorder) DeleteFleet(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFleet", reflect.TypeOf((*MockGameLiftAPI)(nil).DeleteFleet), arg0)
+}
+
+// DeleteFleetLocations mocks base method
+func (m *MockGameLiftAPI) DeleteFleetLocations(arg0 *gamelift.DeleteFleetLocationsInput) (*gamelift.DeleteFleetLocationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFleetLocations", arg0)
+	ret0, _ := ret[0].(*gamelift.DeleteFleetLocationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFleetLocations indicates an expected call of DeleteFleetLocations
+func (mr *MockGameLiftAPIMockRecorder) DeleteFleetLocations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFleetLocations", reflect.TypeOf((*MockGameLiftAPI)(nil).DeleteFleetLocations), arg0)
+}
+
+// DeleteFleetLocationsRequest mocks base method
+func (m *MockGameLiftAPI) DeleteFleetLocationsRequest(arg0 *gamelift.DeleteFleetLocationsInput) (*request.Request, *gamelift.DeleteFleetLocationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFleetLocationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.DeleteFleetLocationsOutput)
+	return ret0, ret1
+}
+
+// DeleteFleetLocationsRequest indicates an expected call of DeleteFleetLocationsRequest
+func (mr *MockGameLiftAPIMockRecorder) DeleteFleetLocationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFleetLocationsRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).DeleteFleetLocationsRequest), arg0)
+}
+
+// DeleteFleetLocationsWithContext mocks base method
+func (m *MockGameLiftAPI) DeleteFleetLocationsWithContext(arg0 context.Context, arg1 *gamelift.DeleteFleetLocationsInput, arg2 ...request.Option) (*gamelift.DeleteFleetLocationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFleetLocationsWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.DeleteFleetLocationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFleetLocationsWithContext indicates an expected call of DeleteFleetLocationsWithContext
+func (mr *MockGameLiftAPIMockRecorder) DeleteFleetLocationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFleetLocationsWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DeleteFleetLocationsWithContext), varargs...)
 }
 
 // DeleteFleetRequest mocks base method
@@ -1782,6 +1882,189 @@ func (mr *MockGameLiftAPIMockRecorder) DescribeFleetEventsWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetEventsWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetEventsWithContext), varargs...)
+}
+
+// DescribeFleetLocationAttributes mocks base method
+func (m *MockGameLiftAPI) DescribeFleetLocationAttributes(arg0 *gamelift.DescribeFleetLocationAttributesInput) (*gamelift.DescribeFleetLocationAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetLocationAttributes", arg0)
+	ret0, _ := ret[0].(*gamelift.DescribeFleetLocationAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetLocationAttributes indicates an expected call of DescribeFleetLocationAttributes
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetLocationAttributes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetLocationAttributes", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetLocationAttributes), arg0)
+}
+
+// DescribeFleetLocationAttributesPages mocks base method
+func (m *MockGameLiftAPI) DescribeFleetLocationAttributesPages(arg0 *gamelift.DescribeFleetLocationAttributesInput, arg1 func(*gamelift.DescribeFleetLocationAttributesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetLocationAttributesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetLocationAttributesPages indicates an expected call of DescribeFleetLocationAttributesPages
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetLocationAttributesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetLocationAttributesPages", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetLocationAttributesPages), arg0, arg1)
+}
+
+// DescribeFleetLocationAttributesPagesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeFleetLocationAttributesPagesWithContext(arg0 context.Context, arg1 *gamelift.DescribeFleetLocationAttributesInput, arg2 func(*gamelift.DescribeFleetLocationAttributesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetLocationAttributesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetLocationAttributesPagesWithContext indicates an expected call of DescribeFleetLocationAttributesPagesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetLocationAttributesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetLocationAttributesPagesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetLocationAttributesPagesWithContext), varargs...)
+}
+
+// DescribeFleetLocationAttributesRequest mocks base method
+func (m *MockGameLiftAPI) DescribeFleetLocationAttributesRequest(arg0 *gamelift.DescribeFleetLocationAttributesInput) (*request.Request, *gamelift.DescribeFleetLocationAttributesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetLocationAttributesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.DescribeFleetLocationAttributesOutput)
+	return ret0, ret1
+}
+
+// DescribeFleetLocationAttributesRequest indicates an expected call of DescribeFleetLocationAttributesRequest
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetLocationAttributesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetLocationAttributesRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetLocationAttributesRequest), arg0)
+}
+
+// DescribeFleetLocationAttributesWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeFleetLocationAttributesWithContext(arg0 context.Context, arg1 *gamelift.DescribeFleetLocationAttributesInput, arg2 ...request.Option) (*gamelift.DescribeFleetLocationAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetLocationAttributesWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.DescribeFleetLocationAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetLocationAttributesWithContext indicates an expected call of DescribeFleetLocationAttributesWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetLocationAttributesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetLocationAttributesWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetLocationAttributesWithContext), varargs...)
+}
+
+// DescribeFleetLocationCapacity mocks base method
+func (m *MockGameLiftAPI) DescribeFleetLocationCapacity(arg0 *gamelift.DescribeFleetLocationCapacityInput) (*gamelift.DescribeFleetLocationCapacityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetLocationCapacity", arg0)
+	ret0, _ := ret[0].(*gamelift.DescribeFleetLocationCapacityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetLocationCapacity indicates an expected call of DescribeFleetLocationCapacity
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetLocationCapacity(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetLocationCapacity", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetLocationCapacity), arg0)
+}
+
+// DescribeFleetLocationCapacityRequest mocks base method
+func (m *MockGameLiftAPI) DescribeFleetLocationCapacityRequest(arg0 *gamelift.DescribeFleetLocationCapacityInput) (*request.Request, *gamelift.DescribeFleetLocationCapacityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetLocationCapacityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.DescribeFleetLocationCapacityOutput)
+	return ret0, ret1
+}
+
+// DescribeFleetLocationCapacityRequest indicates an expected call of DescribeFleetLocationCapacityRequest
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetLocationCapacityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetLocationCapacityRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetLocationCapacityRequest), arg0)
+}
+
+// DescribeFleetLocationCapacityWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeFleetLocationCapacityWithContext(arg0 context.Context, arg1 *gamelift.DescribeFleetLocationCapacityInput, arg2 ...request.Option) (*gamelift.DescribeFleetLocationCapacityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetLocationCapacityWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.DescribeFleetLocationCapacityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetLocationCapacityWithContext indicates an expected call of DescribeFleetLocationCapacityWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetLocationCapacityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetLocationCapacityWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetLocationCapacityWithContext), varargs...)
+}
+
+// DescribeFleetLocationUtilization mocks base method
+func (m *MockGameLiftAPI) DescribeFleetLocationUtilization(arg0 *gamelift.DescribeFleetLocationUtilizationInput) (*gamelift.DescribeFleetLocationUtilizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetLocationUtilization", arg0)
+	ret0, _ := ret[0].(*gamelift.DescribeFleetLocationUtilizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetLocationUtilization indicates an expected call of DescribeFleetLocationUtilization
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetLocationUtilization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetLocationUtilization", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetLocationUtilization), arg0)
+}
+
+// DescribeFleetLocationUtilizationRequest mocks base method
+func (m *MockGameLiftAPI) DescribeFleetLocationUtilizationRequest(arg0 *gamelift.DescribeFleetLocationUtilizationInput) (*request.Request, *gamelift.DescribeFleetLocationUtilizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetLocationUtilizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*gamelift.DescribeFleetLocationUtilizationOutput)
+	return ret0, ret1
+}
+
+// DescribeFleetLocationUtilizationRequest indicates an expected call of DescribeFleetLocationUtilizationRequest
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetLocationUtilizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetLocationUtilizationRequest", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetLocationUtilizationRequest), arg0)
+}
+
+// DescribeFleetLocationUtilizationWithContext mocks base method
+func (m *MockGameLiftAPI) DescribeFleetLocationUtilizationWithContext(arg0 context.Context, arg1 *gamelift.DescribeFleetLocationUtilizationInput, arg2 ...request.Option) (*gamelift.DescribeFleetLocationUtilizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetLocationUtilizationWithContext", varargs...)
+	ret0, _ := ret[0].(*gamelift.DescribeFleetLocationUtilizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetLocationUtilizationWithContext indicates an expected call of DescribeFleetLocationUtilizationWithContext
+func (mr *MockGameLiftAPIMockRecorder) DescribeFleetLocationUtilizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetLocationUtilizationWithContext", reflect.TypeOf((*MockGameLiftAPI)(nil).DescribeFleetLocationUtilizationWithContext), varargs...)
 }
 
 // DescribeFleetPortSettings mocks base method

@@ -1382,3 +1382,86 @@ func (mr *MockAccessAnalyzerAPIMockRecorder) UpdateFindingsWithContext(arg0, arg
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFindingsWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).UpdateFindingsWithContext), varargs...)
 }
+
+// ValidatePolicy mocks base method
+func (m *MockAccessAnalyzerAPI) ValidatePolicy(arg0 *accessanalyzer.ValidatePolicyInput) (*accessanalyzer.ValidatePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ValidatePolicy", arg0)
+	ret0, _ := ret[0].(*accessanalyzer.ValidatePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ValidatePolicy indicates an expected call of ValidatePolicy
+func (mr *MockAccessAnalyzerAPIMockRecorder) ValidatePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidatePolicy", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ValidatePolicy), arg0)
+}
+
+// ValidatePolicyPages mocks base method
+func (m *MockAccessAnalyzerAPI) ValidatePolicyPages(arg0 *accessanalyzer.ValidatePolicyInput, arg1 func(*accessanalyzer.ValidatePolicyOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ValidatePolicyPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ValidatePolicyPages indicates an expected call of ValidatePolicyPages
+func (mr *MockAccessAnalyzerAPIMockRecorder) ValidatePolicyPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidatePolicyPages", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ValidatePolicyPages), arg0, arg1)
+}
+
+// ValidatePolicyPagesWithContext mocks base method
+func (m *MockAccessAnalyzerAPI) ValidatePolicyPagesWithContext(arg0 context.Context, arg1 *accessanalyzer.ValidatePolicyInput, arg2 func(*accessanalyzer.ValidatePolicyOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ValidatePolicyPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ValidatePolicyPagesWithContext indicates an expected call of ValidatePolicyPagesWithContext
+func (mr *MockAccessAnalyzerAPIMockRecorder) ValidatePolicyPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidatePolicyPagesWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ValidatePolicyPagesWithContext), varargs...)
+}
+
+// ValidatePolicyRequest mocks base method
+func (m *MockAccessAnalyzerAPI) ValidatePolicyRequest(arg0 *accessanalyzer.ValidatePolicyInput) (*request.Request, *accessanalyzer.ValidatePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ValidatePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*accessanalyzer.ValidatePolicyOutput)
+	return ret0, ret1
+}
+
+// ValidatePolicyRequest indicates an expected call of ValidatePolicyRequest
+func (mr *MockAccessAnalyzerAPIMockRecorder) ValidatePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidatePolicyRequest", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ValidatePolicyRequest), arg0)
+}
+
+// ValidatePolicyWithContext mocks base method
+func (m *MockAccessAnalyzerAPI) ValidatePolicyWithContext(arg0 context.Context, arg1 *accessanalyzer.ValidatePolicyInput, arg2 ...request.Option) (*accessanalyzer.ValidatePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ValidatePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*accessanalyzer.ValidatePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ValidatePolicyWithContext indicates an expected call of ValidatePolicyWithContext
+func (mr *MockAccessAnalyzerAPIMockRecorder) ValidatePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidatePolicyWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ValidatePolicyWithContext), varargs...)
+}
