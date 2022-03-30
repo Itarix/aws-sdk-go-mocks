@@ -85,6 +85,156 @@ func (mr *MockIoTWirelessAPIMockRecorder) AssociateAwsAccountWithPartnerAccountW
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateAwsAccountWithPartnerAccountWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).AssociateAwsAccountWithPartnerAccountWithContext), varargs...)
 }
 
+// AssociateMulticastGroupWithFuotaTask mocks base method
+func (m *MockIoTWirelessAPI) AssociateMulticastGroupWithFuotaTask(arg0 *iotwireless.AssociateMulticastGroupWithFuotaTaskInput) (*iotwireless.AssociateMulticastGroupWithFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateMulticastGroupWithFuotaTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.AssociateMulticastGroupWithFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateMulticastGroupWithFuotaTask indicates an expected call of AssociateMulticastGroupWithFuotaTask
+func (mr *MockIoTWirelessAPIMockRecorder) AssociateMulticastGroupWithFuotaTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateMulticastGroupWithFuotaTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).AssociateMulticastGroupWithFuotaTask), arg0)
+}
+
+// AssociateMulticastGroupWithFuotaTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) AssociateMulticastGroupWithFuotaTaskRequest(arg0 *iotwireless.AssociateMulticastGroupWithFuotaTaskInput) (*request.Request, *iotwireless.AssociateMulticastGroupWithFuotaTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateMulticastGroupWithFuotaTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.AssociateMulticastGroupWithFuotaTaskOutput)
+	return ret0, ret1
+}
+
+// AssociateMulticastGroupWithFuotaTaskRequest indicates an expected call of AssociateMulticastGroupWithFuotaTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) AssociateMulticastGroupWithFuotaTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateMulticastGroupWithFuotaTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).AssociateMulticastGroupWithFuotaTaskRequest), arg0)
+}
+
+// AssociateMulticastGroupWithFuotaTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) AssociateMulticastGroupWithFuotaTaskWithContext(arg0 context.Context, arg1 *iotwireless.AssociateMulticastGroupWithFuotaTaskInput, arg2 ...request.Option) (*iotwireless.AssociateMulticastGroupWithFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateMulticastGroupWithFuotaTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.AssociateMulticastGroupWithFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateMulticastGroupWithFuotaTaskWithContext indicates an expected call of AssociateMulticastGroupWithFuotaTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) AssociateMulticastGroupWithFuotaTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateMulticastGroupWithFuotaTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).AssociateMulticastGroupWithFuotaTaskWithContext), varargs...)
+}
+
+// AssociateWirelessDeviceWithFuotaTask mocks base method
+func (m *MockIoTWirelessAPI) AssociateWirelessDeviceWithFuotaTask(arg0 *iotwireless.AssociateWirelessDeviceWithFuotaTaskInput) (*iotwireless.AssociateWirelessDeviceWithFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateWirelessDeviceWithFuotaTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.AssociateWirelessDeviceWithFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateWirelessDeviceWithFuotaTask indicates an expected call of AssociateWirelessDeviceWithFuotaTask
+func (mr *MockIoTWirelessAPIMockRecorder) AssociateWirelessDeviceWithFuotaTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateWirelessDeviceWithFuotaTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).AssociateWirelessDeviceWithFuotaTask), arg0)
+}
+
+// AssociateWirelessDeviceWithFuotaTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) AssociateWirelessDeviceWithFuotaTaskRequest(arg0 *iotwireless.AssociateWirelessDeviceWithFuotaTaskInput) (*request.Request, *iotwireless.AssociateWirelessDeviceWithFuotaTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateWirelessDeviceWithFuotaTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.AssociateWirelessDeviceWithFuotaTaskOutput)
+	return ret0, ret1
+}
+
+// AssociateWirelessDeviceWithFuotaTaskRequest indicates an expected call of AssociateWirelessDeviceWithFuotaTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) AssociateWirelessDeviceWithFuotaTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateWirelessDeviceWithFuotaTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).AssociateWirelessDeviceWithFuotaTaskRequest), arg0)
+}
+
+// AssociateWirelessDeviceWithFuotaTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) AssociateWirelessDeviceWithFuotaTaskWithContext(arg0 context.Context, arg1 *iotwireless.AssociateWirelessDeviceWithFuotaTaskInput, arg2 ...request.Option) (*iotwireless.AssociateWirelessDeviceWithFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateWirelessDeviceWithFuotaTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.AssociateWirelessDeviceWithFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateWirelessDeviceWithFuotaTaskWithContext indicates an expected call of AssociateWirelessDeviceWithFuotaTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) AssociateWirelessDeviceWithFuotaTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateWirelessDeviceWithFuotaTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).AssociateWirelessDeviceWithFuotaTaskWithContext), varargs...)
+}
+
+// AssociateWirelessDeviceWithMulticastGroup mocks base method
+func (m *MockIoTWirelessAPI) AssociateWirelessDeviceWithMulticastGroup(arg0 *iotwireless.AssociateWirelessDeviceWithMulticastGroupInput) (*iotwireless.AssociateWirelessDeviceWithMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateWirelessDeviceWithMulticastGroup", arg0)
+	ret0, _ := ret[0].(*iotwireless.AssociateWirelessDeviceWithMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateWirelessDeviceWithMulticastGroup indicates an expected call of AssociateWirelessDeviceWithMulticastGroup
+func (mr *MockIoTWirelessAPIMockRecorder) AssociateWirelessDeviceWithMulticastGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateWirelessDeviceWithMulticastGroup", reflect.TypeOf((*MockIoTWirelessAPI)(nil).AssociateWirelessDeviceWithMulticastGroup), arg0)
+}
+
+// AssociateWirelessDeviceWithMulticastGroupRequest mocks base method
+func (m *MockIoTWirelessAPI) AssociateWirelessDeviceWithMulticastGroupRequest(arg0 *iotwireless.AssociateWirelessDeviceWithMulticastGroupInput) (*request.Request, *iotwireless.AssociateWirelessDeviceWithMulticastGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateWirelessDeviceWithMulticastGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.AssociateWirelessDeviceWithMulticastGroupOutput)
+	return ret0, ret1
+}
+
+// AssociateWirelessDeviceWithMulticastGroupRequest indicates an expected call of AssociateWirelessDeviceWithMulticastGroupRequest
+func (mr *MockIoTWirelessAPIMockRecorder) AssociateWirelessDeviceWithMulticastGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateWirelessDeviceWithMulticastGroupRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).AssociateWirelessDeviceWithMulticastGroupRequest), arg0)
+}
+
+// AssociateWirelessDeviceWithMulticastGroupWithContext mocks base method
+func (m *MockIoTWirelessAPI) AssociateWirelessDeviceWithMulticastGroupWithContext(arg0 context.Context, arg1 *iotwireless.AssociateWirelessDeviceWithMulticastGroupInput, arg2 ...request.Option) (*iotwireless.AssociateWirelessDeviceWithMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateWirelessDeviceWithMulticastGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.AssociateWirelessDeviceWithMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateWirelessDeviceWithMulticastGroupWithContext indicates an expected call of AssociateWirelessDeviceWithMulticastGroupWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) AssociateWirelessDeviceWithMulticastGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateWirelessDeviceWithMulticastGroupWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).AssociateWirelessDeviceWithMulticastGroupWithContext), varargs...)
+}
+
 // AssociateWirelessDeviceWithThing mocks base method
 func (m *MockIoTWirelessAPI) AssociateWirelessDeviceWithThing(arg0 *iotwireless.AssociateWirelessDeviceWithThingInput) (*iotwireless.AssociateWirelessDeviceWithThingOutput, error) {
 	m.ctrl.T.Helper()
@@ -235,6 +385,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) AssociateWirelessGatewayWithThingWithC
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateWirelessGatewayWithThingWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).AssociateWirelessGatewayWithThingWithContext), varargs...)
 }
 
+// CancelMulticastGroupSession mocks base method
+func (m *MockIoTWirelessAPI) CancelMulticastGroupSession(arg0 *iotwireless.CancelMulticastGroupSessionInput) (*iotwireless.CancelMulticastGroupSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelMulticastGroupSession", arg0)
+	ret0, _ := ret[0].(*iotwireless.CancelMulticastGroupSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelMulticastGroupSession indicates an expected call of CancelMulticastGroupSession
+func (mr *MockIoTWirelessAPIMockRecorder) CancelMulticastGroupSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelMulticastGroupSession", reflect.TypeOf((*MockIoTWirelessAPI)(nil).CancelMulticastGroupSession), arg0)
+}
+
+// CancelMulticastGroupSessionRequest mocks base method
+func (m *MockIoTWirelessAPI) CancelMulticastGroupSessionRequest(arg0 *iotwireless.CancelMulticastGroupSessionInput) (*request.Request, *iotwireless.CancelMulticastGroupSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelMulticastGroupSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.CancelMulticastGroupSessionOutput)
+	return ret0, ret1
+}
+
+// CancelMulticastGroupSessionRequest indicates an expected call of CancelMulticastGroupSessionRequest
+func (mr *MockIoTWirelessAPIMockRecorder) CancelMulticastGroupSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelMulticastGroupSessionRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).CancelMulticastGroupSessionRequest), arg0)
+}
+
+// CancelMulticastGroupSessionWithContext mocks base method
+func (m *MockIoTWirelessAPI) CancelMulticastGroupSessionWithContext(arg0 context.Context, arg1 *iotwireless.CancelMulticastGroupSessionInput, arg2 ...request.Option) (*iotwireless.CancelMulticastGroupSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelMulticastGroupSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.CancelMulticastGroupSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelMulticastGroupSessionWithContext indicates an expected call of CancelMulticastGroupSessionWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) CancelMulticastGroupSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelMulticastGroupSessionWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).CancelMulticastGroupSessionWithContext), varargs...)
+}
+
 // CreateDestination mocks base method
 func (m *MockIoTWirelessAPI) CreateDestination(arg0 *iotwireless.CreateDestinationInput) (*iotwireless.CreateDestinationOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +533,106 @@ func (mr *MockIoTWirelessAPIMockRecorder) CreateDeviceProfileWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDeviceProfileWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).CreateDeviceProfileWithContext), varargs...)
+}
+
+// CreateFuotaTask mocks base method
+func (m *MockIoTWirelessAPI) CreateFuotaTask(arg0 *iotwireless.CreateFuotaTaskInput) (*iotwireless.CreateFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFuotaTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.CreateFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFuotaTask indicates an expected call of CreateFuotaTask
+func (mr *MockIoTWirelessAPIMockRecorder) CreateFuotaTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFuotaTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).CreateFuotaTask), arg0)
+}
+
+// CreateFuotaTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) CreateFuotaTaskRequest(arg0 *iotwireless.CreateFuotaTaskInput) (*request.Request, *iotwireless.CreateFuotaTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFuotaTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.CreateFuotaTaskOutput)
+	return ret0, ret1
+}
+
+// CreateFuotaTaskRequest indicates an expected call of CreateFuotaTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) CreateFuotaTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFuotaTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).CreateFuotaTaskRequest), arg0)
+}
+
+// CreateFuotaTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) CreateFuotaTaskWithContext(arg0 context.Context, arg1 *iotwireless.CreateFuotaTaskInput, arg2 ...request.Option) (*iotwireless.CreateFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFuotaTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.CreateFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFuotaTaskWithContext indicates an expected call of CreateFuotaTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) CreateFuotaTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFuotaTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).CreateFuotaTaskWithContext), varargs...)
+}
+
+// CreateMulticastGroup mocks base method
+func (m *MockIoTWirelessAPI) CreateMulticastGroup(arg0 *iotwireless.CreateMulticastGroupInput) (*iotwireless.CreateMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMulticastGroup", arg0)
+	ret0, _ := ret[0].(*iotwireless.CreateMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMulticastGroup indicates an expected call of CreateMulticastGroup
+func (mr *MockIoTWirelessAPIMockRecorder) CreateMulticastGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMulticastGroup", reflect.TypeOf((*MockIoTWirelessAPI)(nil).CreateMulticastGroup), arg0)
+}
+
+// CreateMulticastGroupRequest mocks base method
+func (m *MockIoTWirelessAPI) CreateMulticastGroupRequest(arg0 *iotwireless.CreateMulticastGroupInput) (*request.Request, *iotwireless.CreateMulticastGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMulticastGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.CreateMulticastGroupOutput)
+	return ret0, ret1
+}
+
+// CreateMulticastGroupRequest indicates an expected call of CreateMulticastGroupRequest
+func (mr *MockIoTWirelessAPIMockRecorder) CreateMulticastGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMulticastGroupRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).CreateMulticastGroupRequest), arg0)
+}
+
+// CreateMulticastGroupWithContext mocks base method
+func (m *MockIoTWirelessAPI) CreateMulticastGroupWithContext(arg0 context.Context, arg1 *iotwireless.CreateMulticastGroupInput, arg2 ...request.Option) (*iotwireless.CreateMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateMulticastGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.CreateMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMulticastGroupWithContext indicates an expected call of CreateMulticastGroupWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) CreateMulticastGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMulticastGroupWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).CreateMulticastGroupWithContext), varargs...)
 }
 
 // CreateServiceProfile mocks base method
@@ -685,6 +985,106 @@ func (mr *MockIoTWirelessAPIMockRecorder) DeleteDeviceProfileWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDeviceProfileWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteDeviceProfileWithContext), varargs...)
 }
 
+// DeleteFuotaTask mocks base method
+func (m *MockIoTWirelessAPI) DeleteFuotaTask(arg0 *iotwireless.DeleteFuotaTaskInput) (*iotwireless.DeleteFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFuotaTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.DeleteFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFuotaTask indicates an expected call of DeleteFuotaTask
+func (mr *MockIoTWirelessAPIMockRecorder) DeleteFuotaTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFuotaTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteFuotaTask), arg0)
+}
+
+// DeleteFuotaTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) DeleteFuotaTaskRequest(arg0 *iotwireless.DeleteFuotaTaskInput) (*request.Request, *iotwireless.DeleteFuotaTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFuotaTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.DeleteFuotaTaskOutput)
+	return ret0, ret1
+}
+
+// DeleteFuotaTaskRequest indicates an expected call of DeleteFuotaTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) DeleteFuotaTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFuotaTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteFuotaTaskRequest), arg0)
+}
+
+// DeleteFuotaTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) DeleteFuotaTaskWithContext(arg0 context.Context, arg1 *iotwireless.DeleteFuotaTaskInput, arg2 ...request.Option) (*iotwireless.DeleteFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFuotaTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.DeleteFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFuotaTaskWithContext indicates an expected call of DeleteFuotaTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) DeleteFuotaTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFuotaTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteFuotaTaskWithContext), varargs...)
+}
+
+// DeleteMulticastGroup mocks base method
+func (m *MockIoTWirelessAPI) DeleteMulticastGroup(arg0 *iotwireless.DeleteMulticastGroupInput) (*iotwireless.DeleteMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMulticastGroup", arg0)
+	ret0, _ := ret[0].(*iotwireless.DeleteMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMulticastGroup indicates an expected call of DeleteMulticastGroup
+func (mr *MockIoTWirelessAPIMockRecorder) DeleteMulticastGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMulticastGroup", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteMulticastGroup), arg0)
+}
+
+// DeleteMulticastGroupRequest mocks base method
+func (m *MockIoTWirelessAPI) DeleteMulticastGroupRequest(arg0 *iotwireless.DeleteMulticastGroupInput) (*request.Request, *iotwireless.DeleteMulticastGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMulticastGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.DeleteMulticastGroupOutput)
+	return ret0, ret1
+}
+
+// DeleteMulticastGroupRequest indicates an expected call of DeleteMulticastGroupRequest
+func (mr *MockIoTWirelessAPIMockRecorder) DeleteMulticastGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMulticastGroupRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteMulticastGroupRequest), arg0)
+}
+
+// DeleteMulticastGroupWithContext mocks base method
+func (m *MockIoTWirelessAPI) DeleteMulticastGroupWithContext(arg0 context.Context, arg1 *iotwireless.DeleteMulticastGroupInput, arg2 ...request.Option) (*iotwireless.DeleteMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteMulticastGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.DeleteMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMulticastGroupWithContext indicates an expected call of DeleteMulticastGroupWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) DeleteMulticastGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMulticastGroupWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteMulticastGroupWithContext), varargs...)
+}
+
 // DeleteServiceProfile mocks base method
 func (m *MockIoTWirelessAPI) DeleteServiceProfile(arg0 *iotwireless.DeleteServiceProfileInput) (*iotwireless.DeleteServiceProfileOutput, error) {
 	m.ctrl.T.Helper()
@@ -985,6 +1385,156 @@ func (mr *MockIoTWirelessAPIMockRecorder) DisassociateAwsAccountFromPartnerAccou
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateAwsAccountFromPartnerAccountWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DisassociateAwsAccountFromPartnerAccountWithContext), varargs...)
 }
 
+// DisassociateMulticastGroupFromFuotaTask mocks base method
+func (m *MockIoTWirelessAPI) DisassociateMulticastGroupFromFuotaTask(arg0 *iotwireless.DisassociateMulticastGroupFromFuotaTaskInput) (*iotwireless.DisassociateMulticastGroupFromFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateMulticastGroupFromFuotaTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.DisassociateMulticastGroupFromFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateMulticastGroupFromFuotaTask indicates an expected call of DisassociateMulticastGroupFromFuotaTask
+func (mr *MockIoTWirelessAPIMockRecorder) DisassociateMulticastGroupFromFuotaTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMulticastGroupFromFuotaTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DisassociateMulticastGroupFromFuotaTask), arg0)
+}
+
+// DisassociateMulticastGroupFromFuotaTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) DisassociateMulticastGroupFromFuotaTaskRequest(arg0 *iotwireless.DisassociateMulticastGroupFromFuotaTaskInput) (*request.Request, *iotwireless.DisassociateMulticastGroupFromFuotaTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateMulticastGroupFromFuotaTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.DisassociateMulticastGroupFromFuotaTaskOutput)
+	return ret0, ret1
+}
+
+// DisassociateMulticastGroupFromFuotaTaskRequest indicates an expected call of DisassociateMulticastGroupFromFuotaTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) DisassociateMulticastGroupFromFuotaTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMulticastGroupFromFuotaTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DisassociateMulticastGroupFromFuotaTaskRequest), arg0)
+}
+
+// DisassociateMulticastGroupFromFuotaTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) DisassociateMulticastGroupFromFuotaTaskWithContext(arg0 context.Context, arg1 *iotwireless.DisassociateMulticastGroupFromFuotaTaskInput, arg2 ...request.Option) (*iotwireless.DisassociateMulticastGroupFromFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateMulticastGroupFromFuotaTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.DisassociateMulticastGroupFromFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateMulticastGroupFromFuotaTaskWithContext indicates an expected call of DisassociateMulticastGroupFromFuotaTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) DisassociateMulticastGroupFromFuotaTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMulticastGroupFromFuotaTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DisassociateMulticastGroupFromFuotaTaskWithContext), varargs...)
+}
+
+// DisassociateWirelessDeviceFromFuotaTask mocks base method
+func (m *MockIoTWirelessAPI) DisassociateWirelessDeviceFromFuotaTask(arg0 *iotwireless.DisassociateWirelessDeviceFromFuotaTaskInput) (*iotwireless.DisassociateWirelessDeviceFromFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateWirelessDeviceFromFuotaTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.DisassociateWirelessDeviceFromFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateWirelessDeviceFromFuotaTask indicates an expected call of DisassociateWirelessDeviceFromFuotaTask
+func (mr *MockIoTWirelessAPIMockRecorder) DisassociateWirelessDeviceFromFuotaTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateWirelessDeviceFromFuotaTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DisassociateWirelessDeviceFromFuotaTask), arg0)
+}
+
+// DisassociateWirelessDeviceFromFuotaTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) DisassociateWirelessDeviceFromFuotaTaskRequest(arg0 *iotwireless.DisassociateWirelessDeviceFromFuotaTaskInput) (*request.Request, *iotwireless.DisassociateWirelessDeviceFromFuotaTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateWirelessDeviceFromFuotaTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.DisassociateWirelessDeviceFromFuotaTaskOutput)
+	return ret0, ret1
+}
+
+// DisassociateWirelessDeviceFromFuotaTaskRequest indicates an expected call of DisassociateWirelessDeviceFromFuotaTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) DisassociateWirelessDeviceFromFuotaTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateWirelessDeviceFromFuotaTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DisassociateWirelessDeviceFromFuotaTaskRequest), arg0)
+}
+
+// DisassociateWirelessDeviceFromFuotaTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) DisassociateWirelessDeviceFromFuotaTaskWithContext(arg0 context.Context, arg1 *iotwireless.DisassociateWirelessDeviceFromFuotaTaskInput, arg2 ...request.Option) (*iotwireless.DisassociateWirelessDeviceFromFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateWirelessDeviceFromFuotaTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.DisassociateWirelessDeviceFromFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateWirelessDeviceFromFuotaTaskWithContext indicates an expected call of DisassociateWirelessDeviceFromFuotaTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) DisassociateWirelessDeviceFromFuotaTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateWirelessDeviceFromFuotaTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DisassociateWirelessDeviceFromFuotaTaskWithContext), varargs...)
+}
+
+// DisassociateWirelessDeviceFromMulticastGroup mocks base method
+func (m *MockIoTWirelessAPI) DisassociateWirelessDeviceFromMulticastGroup(arg0 *iotwireless.DisassociateWirelessDeviceFromMulticastGroupInput) (*iotwireless.DisassociateWirelessDeviceFromMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateWirelessDeviceFromMulticastGroup", arg0)
+	ret0, _ := ret[0].(*iotwireless.DisassociateWirelessDeviceFromMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateWirelessDeviceFromMulticastGroup indicates an expected call of DisassociateWirelessDeviceFromMulticastGroup
+func (mr *MockIoTWirelessAPIMockRecorder) DisassociateWirelessDeviceFromMulticastGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateWirelessDeviceFromMulticastGroup", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DisassociateWirelessDeviceFromMulticastGroup), arg0)
+}
+
+// DisassociateWirelessDeviceFromMulticastGroupRequest mocks base method
+func (m *MockIoTWirelessAPI) DisassociateWirelessDeviceFromMulticastGroupRequest(arg0 *iotwireless.DisassociateWirelessDeviceFromMulticastGroupInput) (*request.Request, *iotwireless.DisassociateWirelessDeviceFromMulticastGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateWirelessDeviceFromMulticastGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.DisassociateWirelessDeviceFromMulticastGroupOutput)
+	return ret0, ret1
+}
+
+// DisassociateWirelessDeviceFromMulticastGroupRequest indicates an expected call of DisassociateWirelessDeviceFromMulticastGroupRequest
+func (mr *MockIoTWirelessAPIMockRecorder) DisassociateWirelessDeviceFromMulticastGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateWirelessDeviceFromMulticastGroupRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DisassociateWirelessDeviceFromMulticastGroupRequest), arg0)
+}
+
+// DisassociateWirelessDeviceFromMulticastGroupWithContext mocks base method
+func (m *MockIoTWirelessAPI) DisassociateWirelessDeviceFromMulticastGroupWithContext(arg0 context.Context, arg1 *iotwireless.DisassociateWirelessDeviceFromMulticastGroupInput, arg2 ...request.Option) (*iotwireless.DisassociateWirelessDeviceFromMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateWirelessDeviceFromMulticastGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.DisassociateWirelessDeviceFromMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateWirelessDeviceFromMulticastGroupWithContext indicates an expected call of DisassociateWirelessDeviceFromMulticastGroupWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) DisassociateWirelessDeviceFromMulticastGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateWirelessDeviceFromMulticastGroupWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DisassociateWirelessDeviceFromMulticastGroupWithContext), varargs...)
+}
+
 // DisassociateWirelessDeviceFromThing mocks base method
 func (m *MockIoTWirelessAPI) DisassociateWirelessDeviceFromThing(arg0 *iotwireless.DisassociateWirelessDeviceFromThingInput) (*iotwireless.DisassociateWirelessDeviceFromThingOutput, error) {
 	m.ctrl.T.Helper()
@@ -1235,6 +1785,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) GetDeviceProfileWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeviceProfileWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetDeviceProfileWithContext), varargs...)
 }
 
+// GetFuotaTask mocks base method
+func (m *MockIoTWirelessAPI) GetFuotaTask(arg0 *iotwireless.GetFuotaTaskInput) (*iotwireless.GetFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFuotaTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.GetFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFuotaTask indicates an expected call of GetFuotaTask
+func (mr *MockIoTWirelessAPIMockRecorder) GetFuotaTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFuotaTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetFuotaTask), arg0)
+}
+
+// GetFuotaTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) GetFuotaTaskRequest(arg0 *iotwireless.GetFuotaTaskInput) (*request.Request, *iotwireless.GetFuotaTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFuotaTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.GetFuotaTaskOutput)
+	return ret0, ret1
+}
+
+// GetFuotaTaskRequest indicates an expected call of GetFuotaTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) GetFuotaTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFuotaTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetFuotaTaskRequest), arg0)
+}
+
+// GetFuotaTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) GetFuotaTaskWithContext(arg0 context.Context, arg1 *iotwireless.GetFuotaTaskInput, arg2 ...request.Option) (*iotwireless.GetFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFuotaTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.GetFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFuotaTaskWithContext indicates an expected call of GetFuotaTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) GetFuotaTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFuotaTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetFuotaTaskWithContext), varargs...)
+}
+
 // GetLogLevelsByResourceTypes mocks base method
 func (m *MockIoTWirelessAPI) GetLogLevelsByResourceTypes(arg0 *iotwireless.GetLogLevelsByResourceTypesInput) (*iotwireless.GetLogLevelsByResourceTypesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1285,6 +1885,106 @@ func (mr *MockIoTWirelessAPIMockRecorder) GetLogLevelsByResourceTypesWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLogLevelsByResourceTypesWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetLogLevelsByResourceTypesWithContext), varargs...)
 }
 
+// GetMulticastGroup mocks base method
+func (m *MockIoTWirelessAPI) GetMulticastGroup(arg0 *iotwireless.GetMulticastGroupInput) (*iotwireless.GetMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMulticastGroup", arg0)
+	ret0, _ := ret[0].(*iotwireless.GetMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMulticastGroup indicates an expected call of GetMulticastGroup
+func (mr *MockIoTWirelessAPIMockRecorder) GetMulticastGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMulticastGroup", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetMulticastGroup), arg0)
+}
+
+// GetMulticastGroupRequest mocks base method
+func (m *MockIoTWirelessAPI) GetMulticastGroupRequest(arg0 *iotwireless.GetMulticastGroupInput) (*request.Request, *iotwireless.GetMulticastGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMulticastGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.GetMulticastGroupOutput)
+	return ret0, ret1
+}
+
+// GetMulticastGroupRequest indicates an expected call of GetMulticastGroupRequest
+func (mr *MockIoTWirelessAPIMockRecorder) GetMulticastGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMulticastGroupRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetMulticastGroupRequest), arg0)
+}
+
+// GetMulticastGroupSession mocks base method
+func (m *MockIoTWirelessAPI) GetMulticastGroupSession(arg0 *iotwireless.GetMulticastGroupSessionInput) (*iotwireless.GetMulticastGroupSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMulticastGroupSession", arg0)
+	ret0, _ := ret[0].(*iotwireless.GetMulticastGroupSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMulticastGroupSession indicates an expected call of GetMulticastGroupSession
+func (mr *MockIoTWirelessAPIMockRecorder) GetMulticastGroupSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMulticastGroupSession", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetMulticastGroupSession), arg0)
+}
+
+// GetMulticastGroupSessionRequest mocks base method
+func (m *MockIoTWirelessAPI) GetMulticastGroupSessionRequest(arg0 *iotwireless.GetMulticastGroupSessionInput) (*request.Request, *iotwireless.GetMulticastGroupSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMulticastGroupSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.GetMulticastGroupSessionOutput)
+	return ret0, ret1
+}
+
+// GetMulticastGroupSessionRequest indicates an expected call of GetMulticastGroupSessionRequest
+func (mr *MockIoTWirelessAPIMockRecorder) GetMulticastGroupSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMulticastGroupSessionRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetMulticastGroupSessionRequest), arg0)
+}
+
+// GetMulticastGroupSessionWithContext mocks base method
+func (m *MockIoTWirelessAPI) GetMulticastGroupSessionWithContext(arg0 context.Context, arg1 *iotwireless.GetMulticastGroupSessionInput, arg2 ...request.Option) (*iotwireless.GetMulticastGroupSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMulticastGroupSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.GetMulticastGroupSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMulticastGroupSessionWithContext indicates an expected call of GetMulticastGroupSessionWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) GetMulticastGroupSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMulticastGroupSessionWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetMulticastGroupSessionWithContext), varargs...)
+}
+
+// GetMulticastGroupWithContext mocks base method
+func (m *MockIoTWirelessAPI) GetMulticastGroupWithContext(arg0 context.Context, arg1 *iotwireless.GetMulticastGroupInput, arg2 ...request.Option) (*iotwireless.GetMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMulticastGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.GetMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMulticastGroupWithContext indicates an expected call of GetMulticastGroupWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) GetMulticastGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMulticastGroupWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetMulticastGroupWithContext), varargs...)
+}
+
 // GetPartnerAccount mocks base method
 func (m *MockIoTWirelessAPI) GetPartnerAccount(arg0 *iotwireless.GetPartnerAccountInput) (*iotwireless.GetPartnerAccountOutput, error) {
 	m.ctrl.T.Helper()
@@ -1333,6 +2033,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) GetPartnerAccountWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPartnerAccountWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetPartnerAccountWithContext), varargs...)
+}
+
+// GetResourceEventConfiguration mocks base method
+func (m *MockIoTWirelessAPI) GetResourceEventConfiguration(arg0 *iotwireless.GetResourceEventConfigurationInput) (*iotwireless.GetResourceEventConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourceEventConfiguration", arg0)
+	ret0, _ := ret[0].(*iotwireless.GetResourceEventConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourceEventConfiguration indicates an expected call of GetResourceEventConfiguration
+func (mr *MockIoTWirelessAPIMockRecorder) GetResourceEventConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceEventConfiguration", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetResourceEventConfiguration), arg0)
+}
+
+// GetResourceEventConfigurationRequest mocks base method
+func (m *MockIoTWirelessAPI) GetResourceEventConfigurationRequest(arg0 *iotwireless.GetResourceEventConfigurationInput) (*request.Request, *iotwireless.GetResourceEventConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourceEventConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.GetResourceEventConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetResourceEventConfigurationRequest indicates an expected call of GetResourceEventConfigurationRequest
+func (mr *MockIoTWirelessAPIMockRecorder) GetResourceEventConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceEventConfigurationRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetResourceEventConfigurationRequest), arg0)
+}
+
+// GetResourceEventConfigurationWithContext mocks base method
+func (m *MockIoTWirelessAPI) GetResourceEventConfigurationWithContext(arg0 context.Context, arg1 *iotwireless.GetResourceEventConfigurationInput, arg2 ...request.Option) (*iotwireless.GetResourceEventConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResourceEventConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.GetResourceEventConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourceEventConfigurationWithContext indicates an expected call of GetResourceEventConfigurationWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) GetResourceEventConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceEventConfigurationWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetResourceEventConfigurationWithContext), varargs...)
 }
 
 // GetResourceLogLevel mocks base method
@@ -2051,6 +2801,255 @@ func (mr *MockIoTWirelessAPIMockRecorder) ListDeviceProfilesWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeviceProfilesWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListDeviceProfilesWithContext), varargs...)
 }
 
+// ListFuotaTasks mocks base method
+func (m *MockIoTWirelessAPI) ListFuotaTasks(arg0 *iotwireless.ListFuotaTasksInput) (*iotwireless.ListFuotaTasksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFuotaTasks", arg0)
+	ret0, _ := ret[0].(*iotwireless.ListFuotaTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFuotaTasks indicates an expected call of ListFuotaTasks
+func (mr *MockIoTWirelessAPIMockRecorder) ListFuotaTasks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFuotaTasks", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListFuotaTasks), arg0)
+}
+
+// ListFuotaTasksPages mocks base method
+func (m *MockIoTWirelessAPI) ListFuotaTasksPages(arg0 *iotwireless.ListFuotaTasksInput, arg1 func(*iotwireless.ListFuotaTasksOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFuotaTasksPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFuotaTasksPages indicates an expected call of ListFuotaTasksPages
+func (mr *MockIoTWirelessAPIMockRecorder) ListFuotaTasksPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFuotaTasksPages", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListFuotaTasksPages), arg0, arg1)
+}
+
+// ListFuotaTasksPagesWithContext mocks base method
+func (m *MockIoTWirelessAPI) ListFuotaTasksPagesWithContext(arg0 context.Context, arg1 *iotwireless.ListFuotaTasksInput, arg2 func(*iotwireless.ListFuotaTasksOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFuotaTasksPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFuotaTasksPagesWithContext indicates an expected call of ListFuotaTasksPagesWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) ListFuotaTasksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFuotaTasksPagesWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListFuotaTasksPagesWithContext), varargs...)
+}
+
+// ListFuotaTasksRequest mocks base method
+func (m *MockIoTWirelessAPI) ListFuotaTasksRequest(arg0 *iotwireless.ListFuotaTasksInput) (*request.Request, *iotwireless.ListFuotaTasksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFuotaTasksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.ListFuotaTasksOutput)
+	return ret0, ret1
+}
+
+// ListFuotaTasksRequest indicates an expected call of ListFuotaTasksRequest
+func (mr *MockIoTWirelessAPIMockRecorder) ListFuotaTasksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFuotaTasksRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListFuotaTasksRequest), arg0)
+}
+
+// ListFuotaTasksWithContext mocks base method
+func (m *MockIoTWirelessAPI) ListFuotaTasksWithContext(arg0 context.Context, arg1 *iotwireless.ListFuotaTasksInput, arg2 ...request.Option) (*iotwireless.ListFuotaTasksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFuotaTasksWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.ListFuotaTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFuotaTasksWithContext indicates an expected call of ListFuotaTasksWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) ListFuotaTasksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFuotaTasksWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListFuotaTasksWithContext), varargs...)
+}
+
+// ListMulticastGroups mocks base method
+func (m *MockIoTWirelessAPI) ListMulticastGroups(arg0 *iotwireless.ListMulticastGroupsInput) (*iotwireless.ListMulticastGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMulticastGroups", arg0)
+	ret0, _ := ret[0].(*iotwireless.ListMulticastGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMulticastGroups indicates an expected call of ListMulticastGroups
+func (mr *MockIoTWirelessAPIMockRecorder) ListMulticastGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMulticastGroups", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListMulticastGroups), arg0)
+}
+
+// ListMulticastGroupsByFuotaTask mocks base method
+func (m *MockIoTWirelessAPI) ListMulticastGroupsByFuotaTask(arg0 *iotwireless.ListMulticastGroupsByFuotaTaskInput) (*iotwireless.ListMulticastGroupsByFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMulticastGroupsByFuotaTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.ListMulticastGroupsByFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMulticastGroupsByFuotaTask indicates an expected call of ListMulticastGroupsByFuotaTask
+func (mr *MockIoTWirelessAPIMockRecorder) ListMulticastGroupsByFuotaTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMulticastGroupsByFuotaTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListMulticastGroupsByFuotaTask), arg0)
+}
+
+// ListMulticastGroupsByFuotaTaskPages mocks base method
+func (m *MockIoTWirelessAPI) ListMulticastGroupsByFuotaTaskPages(arg0 *iotwireless.ListMulticastGroupsByFuotaTaskInput, arg1 func(*iotwireless.ListMulticastGroupsByFuotaTaskOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMulticastGroupsByFuotaTaskPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMulticastGroupsByFuotaTaskPages indicates an expected call of ListMulticastGroupsByFuotaTaskPages
+func (mr *MockIoTWirelessAPIMockRecorder) ListMulticastGroupsByFuotaTaskPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMulticastGroupsByFuotaTaskPages", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListMulticastGroupsByFuotaTaskPages), arg0, arg1)
+}
+
+// ListMulticastGroupsByFuotaTaskPagesWithContext mocks base method
+func (m *MockIoTWirelessAPI) ListMulticastGroupsByFuotaTaskPagesWithContext(arg0 context.Context, arg1 *iotwireless.ListMulticastGroupsByFuotaTaskInput, arg2 func(*iotwireless.ListMulticastGroupsByFuotaTaskOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMulticastGroupsByFuotaTaskPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMulticastGroupsByFuotaTaskPagesWithContext indicates an expected call of ListMulticastGroupsByFuotaTaskPagesWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) ListMulticastGroupsByFuotaTaskPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMulticastGroupsByFuotaTaskPagesWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListMulticastGroupsByFuotaTaskPagesWithContext), varargs...)
+}
+
+// ListMulticastGroupsByFuotaTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) ListMulticastGroupsByFuotaTaskRequest(arg0 *iotwireless.ListMulticastGroupsByFuotaTaskInput) (*request.Request, *iotwireless.ListMulticastGroupsByFuotaTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMulticastGroupsByFuotaTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.ListMulticastGroupsByFuotaTaskOutput)
+	return ret0, ret1
+}
+
+// ListMulticastGroupsByFuotaTaskRequest indicates an expected call of ListMulticastGroupsByFuotaTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) ListMulticastGroupsByFuotaTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMulticastGroupsByFuotaTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListMulticastGroupsByFuotaTaskRequest), arg0)
+}
+
+// ListMulticastGroupsByFuotaTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) ListMulticastGroupsByFuotaTaskWithContext(arg0 context.Context, arg1 *iotwireless.ListMulticastGroupsByFuotaTaskInput, arg2 ...request.Option) (*iotwireless.ListMulticastGroupsByFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMulticastGroupsByFuotaTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.ListMulticastGroupsByFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMulticastGroupsByFuotaTaskWithContext indicates an expected call of ListMulticastGroupsByFuotaTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) ListMulticastGroupsByFuotaTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMulticastGroupsByFuotaTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListMulticastGroupsByFuotaTaskWithContext), varargs...)
+}
+
+// ListMulticastGroupsPages mocks base method
+func (m *MockIoTWirelessAPI) ListMulticastGroupsPages(arg0 *iotwireless.ListMulticastGroupsInput, arg1 func(*iotwireless.ListMulticastGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMulticastGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMulticastGroupsPages indicates an expected call of ListMulticastGroupsPages
+func (mr *MockIoTWirelessAPIMockRecorder) ListMulticastGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMulticastGroupsPages", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListMulticastGroupsPages), arg0, arg1)
+}
+
+// ListMulticastGroupsPagesWithContext mocks base method
+func (m *MockIoTWirelessAPI) ListMulticastGroupsPagesWithContext(arg0 context.Context, arg1 *iotwireless.ListMulticastGroupsInput, arg2 func(*iotwireless.ListMulticastGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMulticastGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMulticastGroupsPagesWithContext indicates an expected call of ListMulticastGroupsPagesWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) ListMulticastGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMulticastGroupsPagesWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListMulticastGroupsPagesWithContext), varargs...)
+}
+
+// ListMulticastGroupsRequest mocks base method
+func (m *MockIoTWirelessAPI) ListMulticastGroupsRequest(arg0 *iotwireless.ListMulticastGroupsInput) (*request.Request, *iotwireless.ListMulticastGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMulticastGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.ListMulticastGroupsOutput)
+	return ret0, ret1
+}
+
+// ListMulticastGroupsRequest indicates an expected call of ListMulticastGroupsRequest
+func (mr *MockIoTWirelessAPIMockRecorder) ListMulticastGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMulticastGroupsRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListMulticastGroupsRequest), arg0)
+}
+
+// ListMulticastGroupsWithContext mocks base method
+func (m *MockIoTWirelessAPI) ListMulticastGroupsWithContext(arg0 context.Context, arg1 *iotwireless.ListMulticastGroupsInput, arg2 ...request.Option) (*iotwireless.ListMulticastGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMulticastGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.ListMulticastGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMulticastGroupsWithContext indicates an expected call of ListMulticastGroupsWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) ListMulticastGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMulticastGroupsWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListMulticastGroupsWithContext), varargs...)
+}
+
 // ListPartnerAccounts mocks base method
 func (m *MockIoTWirelessAPI) ListPartnerAccounts(arg0 *iotwireless.ListPartnerAccountsInput) (*iotwireless.ListPartnerAccountsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2600,6 +3599,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) ResetResourceLogLevelWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetResourceLogLevelWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ResetResourceLogLevelWithContext), varargs...)
 }
 
+// SendDataToMulticastGroup mocks base method
+func (m *MockIoTWirelessAPI) SendDataToMulticastGroup(arg0 *iotwireless.SendDataToMulticastGroupInput) (*iotwireless.SendDataToMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendDataToMulticastGroup", arg0)
+	ret0, _ := ret[0].(*iotwireless.SendDataToMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendDataToMulticastGroup indicates an expected call of SendDataToMulticastGroup
+func (mr *MockIoTWirelessAPIMockRecorder) SendDataToMulticastGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendDataToMulticastGroup", reflect.TypeOf((*MockIoTWirelessAPI)(nil).SendDataToMulticastGroup), arg0)
+}
+
+// SendDataToMulticastGroupRequest mocks base method
+func (m *MockIoTWirelessAPI) SendDataToMulticastGroupRequest(arg0 *iotwireless.SendDataToMulticastGroupInput) (*request.Request, *iotwireless.SendDataToMulticastGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendDataToMulticastGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.SendDataToMulticastGroupOutput)
+	return ret0, ret1
+}
+
+// SendDataToMulticastGroupRequest indicates an expected call of SendDataToMulticastGroupRequest
+func (mr *MockIoTWirelessAPIMockRecorder) SendDataToMulticastGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendDataToMulticastGroupRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).SendDataToMulticastGroupRequest), arg0)
+}
+
+// SendDataToMulticastGroupWithContext mocks base method
+func (m *MockIoTWirelessAPI) SendDataToMulticastGroupWithContext(arg0 context.Context, arg1 *iotwireless.SendDataToMulticastGroupInput, arg2 ...request.Option) (*iotwireless.SendDataToMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SendDataToMulticastGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.SendDataToMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendDataToMulticastGroupWithContext indicates an expected call of SendDataToMulticastGroupWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) SendDataToMulticastGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendDataToMulticastGroupWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).SendDataToMulticastGroupWithContext), varargs...)
+}
+
 // SendDataToWirelessDevice mocks base method
 func (m *MockIoTWirelessAPI) SendDataToWirelessDevice(arg0 *iotwireless.SendDataToWirelessDeviceInput) (*iotwireless.SendDataToWirelessDeviceOutput, error) {
 	m.ctrl.T.Helper()
@@ -2648,6 +3697,206 @@ func (mr *MockIoTWirelessAPIMockRecorder) SendDataToWirelessDeviceWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendDataToWirelessDeviceWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).SendDataToWirelessDeviceWithContext), varargs...)
+}
+
+// StartBulkAssociateWirelessDeviceWithMulticastGroup mocks base method
+func (m *MockIoTWirelessAPI) StartBulkAssociateWirelessDeviceWithMulticastGroup(arg0 *iotwireless.StartBulkAssociateWirelessDeviceWithMulticastGroupInput) (*iotwireless.StartBulkAssociateWirelessDeviceWithMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartBulkAssociateWirelessDeviceWithMulticastGroup", arg0)
+	ret0, _ := ret[0].(*iotwireless.StartBulkAssociateWirelessDeviceWithMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartBulkAssociateWirelessDeviceWithMulticastGroup indicates an expected call of StartBulkAssociateWirelessDeviceWithMulticastGroup
+func (mr *MockIoTWirelessAPIMockRecorder) StartBulkAssociateWirelessDeviceWithMulticastGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartBulkAssociateWirelessDeviceWithMulticastGroup", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartBulkAssociateWirelessDeviceWithMulticastGroup), arg0)
+}
+
+// StartBulkAssociateWirelessDeviceWithMulticastGroupRequest mocks base method
+func (m *MockIoTWirelessAPI) StartBulkAssociateWirelessDeviceWithMulticastGroupRequest(arg0 *iotwireless.StartBulkAssociateWirelessDeviceWithMulticastGroupInput) (*request.Request, *iotwireless.StartBulkAssociateWirelessDeviceWithMulticastGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartBulkAssociateWirelessDeviceWithMulticastGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.StartBulkAssociateWirelessDeviceWithMulticastGroupOutput)
+	return ret0, ret1
+}
+
+// StartBulkAssociateWirelessDeviceWithMulticastGroupRequest indicates an expected call of StartBulkAssociateWirelessDeviceWithMulticastGroupRequest
+func (mr *MockIoTWirelessAPIMockRecorder) StartBulkAssociateWirelessDeviceWithMulticastGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartBulkAssociateWirelessDeviceWithMulticastGroupRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartBulkAssociateWirelessDeviceWithMulticastGroupRequest), arg0)
+}
+
+// StartBulkAssociateWirelessDeviceWithMulticastGroupWithContext mocks base method
+func (m *MockIoTWirelessAPI) StartBulkAssociateWirelessDeviceWithMulticastGroupWithContext(arg0 context.Context, arg1 *iotwireless.StartBulkAssociateWirelessDeviceWithMulticastGroupInput, arg2 ...request.Option) (*iotwireless.StartBulkAssociateWirelessDeviceWithMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartBulkAssociateWirelessDeviceWithMulticastGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.StartBulkAssociateWirelessDeviceWithMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartBulkAssociateWirelessDeviceWithMulticastGroupWithContext indicates an expected call of StartBulkAssociateWirelessDeviceWithMulticastGroupWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) StartBulkAssociateWirelessDeviceWithMulticastGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartBulkAssociateWirelessDeviceWithMulticastGroupWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartBulkAssociateWirelessDeviceWithMulticastGroupWithContext), varargs...)
+}
+
+// StartBulkDisassociateWirelessDeviceFromMulticastGroup mocks base method
+func (m *MockIoTWirelessAPI) StartBulkDisassociateWirelessDeviceFromMulticastGroup(arg0 *iotwireless.StartBulkDisassociateWirelessDeviceFromMulticastGroupInput) (*iotwireless.StartBulkDisassociateWirelessDeviceFromMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartBulkDisassociateWirelessDeviceFromMulticastGroup", arg0)
+	ret0, _ := ret[0].(*iotwireless.StartBulkDisassociateWirelessDeviceFromMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartBulkDisassociateWirelessDeviceFromMulticastGroup indicates an expected call of StartBulkDisassociateWirelessDeviceFromMulticastGroup
+func (mr *MockIoTWirelessAPIMockRecorder) StartBulkDisassociateWirelessDeviceFromMulticastGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartBulkDisassociateWirelessDeviceFromMulticastGroup", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartBulkDisassociateWirelessDeviceFromMulticastGroup), arg0)
+}
+
+// StartBulkDisassociateWirelessDeviceFromMulticastGroupRequest mocks base method
+func (m *MockIoTWirelessAPI) StartBulkDisassociateWirelessDeviceFromMulticastGroupRequest(arg0 *iotwireless.StartBulkDisassociateWirelessDeviceFromMulticastGroupInput) (*request.Request, *iotwireless.StartBulkDisassociateWirelessDeviceFromMulticastGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartBulkDisassociateWirelessDeviceFromMulticastGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.StartBulkDisassociateWirelessDeviceFromMulticastGroupOutput)
+	return ret0, ret1
+}
+
+// StartBulkDisassociateWirelessDeviceFromMulticastGroupRequest indicates an expected call of StartBulkDisassociateWirelessDeviceFromMulticastGroupRequest
+func (mr *MockIoTWirelessAPIMockRecorder) StartBulkDisassociateWirelessDeviceFromMulticastGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartBulkDisassociateWirelessDeviceFromMulticastGroupRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartBulkDisassociateWirelessDeviceFromMulticastGroupRequest), arg0)
+}
+
+// StartBulkDisassociateWirelessDeviceFromMulticastGroupWithContext mocks base method
+func (m *MockIoTWirelessAPI) StartBulkDisassociateWirelessDeviceFromMulticastGroupWithContext(arg0 context.Context, arg1 *iotwireless.StartBulkDisassociateWirelessDeviceFromMulticastGroupInput, arg2 ...request.Option) (*iotwireless.StartBulkDisassociateWirelessDeviceFromMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartBulkDisassociateWirelessDeviceFromMulticastGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.StartBulkDisassociateWirelessDeviceFromMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartBulkDisassociateWirelessDeviceFromMulticastGroupWithContext indicates an expected call of StartBulkDisassociateWirelessDeviceFromMulticastGroupWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) StartBulkDisassociateWirelessDeviceFromMulticastGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartBulkDisassociateWirelessDeviceFromMulticastGroupWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartBulkDisassociateWirelessDeviceFromMulticastGroupWithContext), varargs...)
+}
+
+// StartFuotaTask mocks base method
+func (m *MockIoTWirelessAPI) StartFuotaTask(arg0 *iotwireless.StartFuotaTaskInput) (*iotwireless.StartFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartFuotaTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.StartFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartFuotaTask indicates an expected call of StartFuotaTask
+func (mr *MockIoTWirelessAPIMockRecorder) StartFuotaTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartFuotaTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartFuotaTask), arg0)
+}
+
+// StartFuotaTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) StartFuotaTaskRequest(arg0 *iotwireless.StartFuotaTaskInput) (*request.Request, *iotwireless.StartFuotaTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartFuotaTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.StartFuotaTaskOutput)
+	return ret0, ret1
+}
+
+// StartFuotaTaskRequest indicates an expected call of StartFuotaTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) StartFuotaTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartFuotaTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartFuotaTaskRequest), arg0)
+}
+
+// StartFuotaTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) StartFuotaTaskWithContext(arg0 context.Context, arg1 *iotwireless.StartFuotaTaskInput, arg2 ...request.Option) (*iotwireless.StartFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartFuotaTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.StartFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartFuotaTaskWithContext indicates an expected call of StartFuotaTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) StartFuotaTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartFuotaTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartFuotaTaskWithContext), varargs...)
+}
+
+// StartMulticastGroupSession mocks base method
+func (m *MockIoTWirelessAPI) StartMulticastGroupSession(arg0 *iotwireless.StartMulticastGroupSessionInput) (*iotwireless.StartMulticastGroupSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMulticastGroupSession", arg0)
+	ret0, _ := ret[0].(*iotwireless.StartMulticastGroupSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMulticastGroupSession indicates an expected call of StartMulticastGroupSession
+func (mr *MockIoTWirelessAPIMockRecorder) StartMulticastGroupSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMulticastGroupSession", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartMulticastGroupSession), arg0)
+}
+
+// StartMulticastGroupSessionRequest mocks base method
+func (m *MockIoTWirelessAPI) StartMulticastGroupSessionRequest(arg0 *iotwireless.StartMulticastGroupSessionInput) (*request.Request, *iotwireless.StartMulticastGroupSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMulticastGroupSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.StartMulticastGroupSessionOutput)
+	return ret0, ret1
+}
+
+// StartMulticastGroupSessionRequest indicates an expected call of StartMulticastGroupSessionRequest
+func (mr *MockIoTWirelessAPIMockRecorder) StartMulticastGroupSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMulticastGroupSessionRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartMulticastGroupSessionRequest), arg0)
+}
+
+// StartMulticastGroupSessionWithContext mocks base method
+func (m *MockIoTWirelessAPI) StartMulticastGroupSessionWithContext(arg0 context.Context, arg1 *iotwireless.StartMulticastGroupSessionInput, arg2 ...request.Option) (*iotwireless.StartMulticastGroupSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartMulticastGroupSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.StartMulticastGroupSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMulticastGroupSessionWithContext indicates an expected call of StartMulticastGroupSessionWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) StartMulticastGroupSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMulticastGroupSessionWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartMulticastGroupSessionWithContext), varargs...)
 }
 
 // TagResource mocks base method
@@ -2850,6 +4099,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) UpdateDestinationWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDestinationWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateDestinationWithContext), varargs...)
 }
 
+// UpdateFuotaTask mocks base method
+func (m *MockIoTWirelessAPI) UpdateFuotaTask(arg0 *iotwireless.UpdateFuotaTaskInput) (*iotwireless.UpdateFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFuotaTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.UpdateFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFuotaTask indicates an expected call of UpdateFuotaTask
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateFuotaTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFuotaTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateFuotaTask), arg0)
+}
+
+// UpdateFuotaTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) UpdateFuotaTaskRequest(arg0 *iotwireless.UpdateFuotaTaskInput) (*request.Request, *iotwireless.UpdateFuotaTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFuotaTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.UpdateFuotaTaskOutput)
+	return ret0, ret1
+}
+
+// UpdateFuotaTaskRequest indicates an expected call of UpdateFuotaTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateFuotaTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFuotaTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateFuotaTaskRequest), arg0)
+}
+
+// UpdateFuotaTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) UpdateFuotaTaskWithContext(arg0 context.Context, arg1 *iotwireless.UpdateFuotaTaskInput, arg2 ...request.Option) (*iotwireless.UpdateFuotaTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFuotaTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.UpdateFuotaTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFuotaTaskWithContext indicates an expected call of UpdateFuotaTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateFuotaTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFuotaTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateFuotaTaskWithContext), varargs...)
+}
+
 // UpdateLogLevelsByResourceTypes mocks base method
 func (m *MockIoTWirelessAPI) UpdateLogLevelsByResourceTypes(arg0 *iotwireless.UpdateLogLevelsByResourceTypesInput) (*iotwireless.UpdateLogLevelsByResourceTypesOutput, error) {
 	m.ctrl.T.Helper()
@@ -2900,6 +4199,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) UpdateLogLevelsByResourceTypesWithCont
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLogLevelsByResourceTypesWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateLogLevelsByResourceTypesWithContext), varargs...)
 }
 
+// UpdateMulticastGroup mocks base method
+func (m *MockIoTWirelessAPI) UpdateMulticastGroup(arg0 *iotwireless.UpdateMulticastGroupInput) (*iotwireless.UpdateMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMulticastGroup", arg0)
+	ret0, _ := ret[0].(*iotwireless.UpdateMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMulticastGroup indicates an expected call of UpdateMulticastGroup
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateMulticastGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMulticastGroup", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateMulticastGroup), arg0)
+}
+
+// UpdateMulticastGroupRequest mocks base method
+func (m *MockIoTWirelessAPI) UpdateMulticastGroupRequest(arg0 *iotwireless.UpdateMulticastGroupInput) (*request.Request, *iotwireless.UpdateMulticastGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMulticastGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.UpdateMulticastGroupOutput)
+	return ret0, ret1
+}
+
+// UpdateMulticastGroupRequest indicates an expected call of UpdateMulticastGroupRequest
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateMulticastGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMulticastGroupRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateMulticastGroupRequest), arg0)
+}
+
+// UpdateMulticastGroupWithContext mocks base method
+func (m *MockIoTWirelessAPI) UpdateMulticastGroupWithContext(arg0 context.Context, arg1 *iotwireless.UpdateMulticastGroupInput, arg2 ...request.Option) (*iotwireless.UpdateMulticastGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateMulticastGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.UpdateMulticastGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMulticastGroupWithContext indicates an expected call of UpdateMulticastGroupWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateMulticastGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMulticastGroupWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateMulticastGroupWithContext), varargs...)
+}
+
 // UpdatePartnerAccount mocks base method
 func (m *MockIoTWirelessAPI) UpdatePartnerAccount(arg0 *iotwireless.UpdatePartnerAccountInput) (*iotwireless.UpdatePartnerAccountOutput, error) {
 	m.ctrl.T.Helper()
@@ -2948,6 +4297,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) UpdatePartnerAccountWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePartnerAccountWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdatePartnerAccountWithContext), varargs...)
+}
+
+// UpdateResourceEventConfiguration mocks base method
+func (m *MockIoTWirelessAPI) UpdateResourceEventConfiguration(arg0 *iotwireless.UpdateResourceEventConfigurationInput) (*iotwireless.UpdateResourceEventConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateResourceEventConfiguration", arg0)
+	ret0, _ := ret[0].(*iotwireless.UpdateResourceEventConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateResourceEventConfiguration indicates an expected call of UpdateResourceEventConfiguration
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateResourceEventConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResourceEventConfiguration", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateResourceEventConfiguration), arg0)
+}
+
+// UpdateResourceEventConfigurationRequest mocks base method
+func (m *MockIoTWirelessAPI) UpdateResourceEventConfigurationRequest(arg0 *iotwireless.UpdateResourceEventConfigurationInput) (*request.Request, *iotwireless.UpdateResourceEventConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateResourceEventConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.UpdateResourceEventConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateResourceEventConfigurationRequest indicates an expected call of UpdateResourceEventConfigurationRequest
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateResourceEventConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResourceEventConfigurationRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateResourceEventConfigurationRequest), arg0)
+}
+
+// UpdateResourceEventConfigurationWithContext mocks base method
+func (m *MockIoTWirelessAPI) UpdateResourceEventConfigurationWithContext(arg0 context.Context, arg1 *iotwireless.UpdateResourceEventConfigurationInput, arg2 ...request.Option) (*iotwireless.UpdateResourceEventConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateResourceEventConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.UpdateResourceEventConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateResourceEventConfigurationWithContext indicates an expected call of UpdateResourceEventConfigurationWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateResourceEventConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResourceEventConfigurationWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateResourceEventConfigurationWithContext), varargs...)
 }
 
 // UpdateWirelessDevice mocks base method

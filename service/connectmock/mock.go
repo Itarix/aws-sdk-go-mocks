@@ -835,6 +835,56 @@ func (mr *MockConnectAPIMockRecorder) CreateRoutingProfileWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoutingProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateRoutingProfileWithContext), varargs...)
 }
 
+// CreateSecurityProfile mocks base method
+func (m *MockConnectAPI) CreateSecurityProfile(arg0 *connect.CreateSecurityProfileInput) (*connect.CreateSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSecurityProfile", arg0)
+	ret0, _ := ret[0].(*connect.CreateSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSecurityProfile indicates an expected call of CreateSecurityProfile
+func (mr *MockConnectAPIMockRecorder) CreateSecurityProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityProfile", reflect.TypeOf((*MockConnectAPI)(nil).CreateSecurityProfile), arg0)
+}
+
+// CreateSecurityProfileRequest mocks base method
+func (m *MockConnectAPI) CreateSecurityProfileRequest(arg0 *connect.CreateSecurityProfileInput) (*request.Request, *connect.CreateSecurityProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSecurityProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.CreateSecurityProfileOutput)
+	return ret0, ret1
+}
+
+// CreateSecurityProfileRequest indicates an expected call of CreateSecurityProfileRequest
+func (mr *MockConnectAPIMockRecorder) CreateSecurityProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityProfileRequest", reflect.TypeOf((*MockConnectAPI)(nil).CreateSecurityProfileRequest), arg0)
+}
+
+// CreateSecurityProfileWithContext mocks base method
+func (m *MockConnectAPI) CreateSecurityProfileWithContext(arg0 context.Context, arg1 *connect.CreateSecurityProfileInput, arg2 ...request.Option) (*connect.CreateSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSecurityProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.CreateSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSecurityProfileWithContext indicates an expected call of CreateSecurityProfileWithContext
+func (mr *MockConnectAPIMockRecorder) CreateSecurityProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateSecurityProfileWithContext), varargs...)
+}
+
 // CreateUseCase mocks base method
 func (m *MockConnectAPI) CreateUseCase(arg0 *connect.CreateUseCaseInput) (*connect.CreateUseCaseOutput, error) {
 	m.ctrl.T.Helper()
@@ -1183,6 +1233,56 @@ func (mr *MockConnectAPIMockRecorder) DeleteQuickConnectWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQuickConnectWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteQuickConnectWithContext), varargs...)
+}
+
+// DeleteSecurityProfile mocks base method
+func (m *MockConnectAPI) DeleteSecurityProfile(arg0 *connect.DeleteSecurityProfileInput) (*connect.DeleteSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSecurityProfile", arg0)
+	ret0, _ := ret[0].(*connect.DeleteSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSecurityProfile indicates an expected call of DeleteSecurityProfile
+func (mr *MockConnectAPIMockRecorder) DeleteSecurityProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityProfile", reflect.TypeOf((*MockConnectAPI)(nil).DeleteSecurityProfile), arg0)
+}
+
+// DeleteSecurityProfileRequest mocks base method
+func (m *MockConnectAPI) DeleteSecurityProfileRequest(arg0 *connect.DeleteSecurityProfileInput) (*request.Request, *connect.DeleteSecurityProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSecurityProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DeleteSecurityProfileOutput)
+	return ret0, ret1
+}
+
+// DeleteSecurityProfileRequest indicates an expected call of DeleteSecurityProfileRequest
+func (mr *MockConnectAPIMockRecorder) DeleteSecurityProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityProfileRequest", reflect.TypeOf((*MockConnectAPI)(nil).DeleteSecurityProfileRequest), arg0)
+}
+
+// DeleteSecurityProfileWithContext mocks base method
+func (m *MockConnectAPI) DeleteSecurityProfileWithContext(arg0 context.Context, arg1 *connect.DeleteSecurityProfileInput, arg2 ...request.Option) (*connect.DeleteSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSecurityProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DeleteSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSecurityProfileWithContext indicates an expected call of DeleteSecurityProfileWithContext
+func (mr *MockConnectAPIMockRecorder) DeleteSecurityProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteSecurityProfileWithContext), varargs...)
 }
 
 // DeleteUseCase mocks base method
@@ -1783,6 +1883,56 @@ func (mr *MockConnectAPIMockRecorder) DescribeRoutingProfileWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRoutingProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeRoutingProfileWithContext), varargs...)
+}
+
+// DescribeSecurityProfile mocks base method
+func (m *MockConnectAPI) DescribeSecurityProfile(arg0 *connect.DescribeSecurityProfileInput) (*connect.DescribeSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSecurityProfile", arg0)
+	ret0, _ := ret[0].(*connect.DescribeSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSecurityProfile indicates an expected call of DescribeSecurityProfile
+func (mr *MockConnectAPIMockRecorder) DescribeSecurityProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSecurityProfile", reflect.TypeOf((*MockConnectAPI)(nil).DescribeSecurityProfile), arg0)
+}
+
+// DescribeSecurityProfileRequest mocks base method
+func (m *MockConnectAPI) DescribeSecurityProfileRequest(arg0 *connect.DescribeSecurityProfileInput) (*request.Request, *connect.DescribeSecurityProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSecurityProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DescribeSecurityProfileOutput)
+	return ret0, ret1
+}
+
+// DescribeSecurityProfileRequest indicates an expected call of DescribeSecurityProfileRequest
+func (mr *MockConnectAPIMockRecorder) DescribeSecurityProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSecurityProfileRequest", reflect.TypeOf((*MockConnectAPI)(nil).DescribeSecurityProfileRequest), arg0)
+}
+
+// DescribeSecurityProfileWithContext mocks base method
+func (m *MockConnectAPI) DescribeSecurityProfileWithContext(arg0 context.Context, arg1 *connect.DescribeSecurityProfileInput, arg2 ...request.Option) (*connect.DescribeSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSecurityProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DescribeSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSecurityProfileWithContext indicates an expected call of DescribeSecurityProfileWithContext
+func (mr *MockConnectAPIMockRecorder) DescribeSecurityProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSecurityProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeSecurityProfileWithContext), varargs...)
 }
 
 // DescribeUser mocks base method
@@ -4178,6 +4328,89 @@ func (mr *MockConnectAPIMockRecorder) ListSecurityKeysWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityKeysWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityKeysWithContext), varargs...)
 }
 
+// ListSecurityProfilePermissions mocks base method
+func (m *MockConnectAPI) ListSecurityProfilePermissions(arg0 *connect.ListSecurityProfilePermissionsInput) (*connect.ListSecurityProfilePermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSecurityProfilePermissions", arg0)
+	ret0, _ := ret[0].(*connect.ListSecurityProfilePermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSecurityProfilePermissions indicates an expected call of ListSecurityProfilePermissions
+func (mr *MockConnectAPIMockRecorder) ListSecurityProfilePermissions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfilePermissions", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityProfilePermissions), arg0)
+}
+
+// ListSecurityProfilePermissionsPages mocks base method
+func (m *MockConnectAPI) ListSecurityProfilePermissionsPages(arg0 *connect.ListSecurityProfilePermissionsInput, arg1 func(*connect.ListSecurityProfilePermissionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSecurityProfilePermissionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSecurityProfilePermissionsPages indicates an expected call of ListSecurityProfilePermissionsPages
+func (mr *MockConnectAPIMockRecorder) ListSecurityProfilePermissionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfilePermissionsPages", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityProfilePermissionsPages), arg0, arg1)
+}
+
+// ListSecurityProfilePermissionsPagesWithContext mocks base method
+func (m *MockConnectAPI) ListSecurityProfilePermissionsPagesWithContext(arg0 context.Context, arg1 *connect.ListSecurityProfilePermissionsInput, arg2 func(*connect.ListSecurityProfilePermissionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSecurityProfilePermissionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSecurityProfilePermissionsPagesWithContext indicates an expected call of ListSecurityProfilePermissionsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListSecurityProfilePermissionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfilePermissionsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityProfilePermissionsPagesWithContext), varargs...)
+}
+
+// ListSecurityProfilePermissionsRequest mocks base method
+func (m *MockConnectAPI) ListSecurityProfilePermissionsRequest(arg0 *connect.ListSecurityProfilePermissionsInput) (*request.Request, *connect.ListSecurityProfilePermissionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSecurityProfilePermissionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListSecurityProfilePermissionsOutput)
+	return ret0, ret1
+}
+
+// ListSecurityProfilePermissionsRequest indicates an expected call of ListSecurityProfilePermissionsRequest
+func (mr *MockConnectAPIMockRecorder) ListSecurityProfilePermissionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfilePermissionsRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityProfilePermissionsRequest), arg0)
+}
+
+// ListSecurityProfilePermissionsWithContext mocks base method
+func (m *MockConnectAPI) ListSecurityProfilePermissionsWithContext(arg0 context.Context, arg1 *connect.ListSecurityProfilePermissionsInput, arg2 ...request.Option) (*connect.ListSecurityProfilePermissionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSecurityProfilePermissionsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListSecurityProfilePermissionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSecurityProfilePermissionsWithContext indicates an expected call of ListSecurityProfilePermissionsWithContext
+func (mr *MockConnectAPIMockRecorder) ListSecurityProfilePermissionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfilePermissionsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityProfilePermissionsWithContext), varargs...)
+}
+
 // ListSecurityProfiles mocks base method
 func (m *MockConnectAPI) ListSecurityProfiles(arg0 *connect.ListSecurityProfilesInput) (*connect.ListSecurityProfilesOutput, error) {
 	m.ctrl.T.Helper()
@@ -6058,6 +6291,56 @@ func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileQueuesWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileQueuesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileQueuesWithContext), varargs...)
+}
+
+// UpdateSecurityProfile mocks base method
+func (m *MockConnectAPI) UpdateSecurityProfile(arg0 *connect.UpdateSecurityProfileInput) (*connect.UpdateSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSecurityProfile", arg0)
+	ret0, _ := ret[0].(*connect.UpdateSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSecurityProfile indicates an expected call of UpdateSecurityProfile
+func (mr *MockConnectAPIMockRecorder) UpdateSecurityProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSecurityProfile", reflect.TypeOf((*MockConnectAPI)(nil).UpdateSecurityProfile), arg0)
+}
+
+// UpdateSecurityProfileRequest mocks base method
+func (m *MockConnectAPI) UpdateSecurityProfileRequest(arg0 *connect.UpdateSecurityProfileInput) (*request.Request, *connect.UpdateSecurityProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSecurityProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateSecurityProfileOutput)
+	return ret0, ret1
+}
+
+// UpdateSecurityProfileRequest indicates an expected call of UpdateSecurityProfileRequest
+func (mr *MockConnectAPIMockRecorder) UpdateSecurityProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSecurityProfileRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateSecurityProfileRequest), arg0)
+}
+
+// UpdateSecurityProfileWithContext mocks base method
+func (m *MockConnectAPI) UpdateSecurityProfileWithContext(arg0 context.Context, arg1 *connect.UpdateSecurityProfileInput, arg2 ...request.Option) (*connect.UpdateSecurityProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSecurityProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateSecurityProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSecurityProfileWithContext indicates an expected call of UpdateSecurityProfileWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateSecurityProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSecurityProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateSecurityProfileWithContext), varargs...)
 }
 
 // UpdateUserHierarchy mocks base method
