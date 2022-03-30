@@ -135,6 +135,56 @@ func (mr *MockRedshiftAPIMockRecorder) AddPartnerWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddPartnerWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).AddPartnerWithContext), varargs...)
 }
 
+// AssociateDataShareConsumer mocks base method
+func (m *MockRedshiftAPI) AssociateDataShareConsumer(arg0 *redshift.AssociateDataShareConsumerInput) (*redshift.AssociateDataShareConsumerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateDataShareConsumer", arg0)
+	ret0, _ := ret[0].(*redshift.AssociateDataShareConsumerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateDataShareConsumer indicates an expected call of AssociateDataShareConsumer
+func (mr *MockRedshiftAPIMockRecorder) AssociateDataShareConsumer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDataShareConsumer", reflect.TypeOf((*MockRedshiftAPI)(nil).AssociateDataShareConsumer), arg0)
+}
+
+// AssociateDataShareConsumerRequest mocks base method
+func (m *MockRedshiftAPI) AssociateDataShareConsumerRequest(arg0 *redshift.AssociateDataShareConsumerInput) (*request.Request, *redshift.AssociateDataShareConsumerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateDataShareConsumerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.AssociateDataShareConsumerOutput)
+	return ret0, ret1
+}
+
+// AssociateDataShareConsumerRequest indicates an expected call of AssociateDataShareConsumerRequest
+func (mr *MockRedshiftAPIMockRecorder) AssociateDataShareConsumerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDataShareConsumerRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).AssociateDataShareConsumerRequest), arg0)
+}
+
+// AssociateDataShareConsumerWithContext mocks base method
+func (m *MockRedshiftAPI) AssociateDataShareConsumerWithContext(arg0 context.Context, arg1 *redshift.AssociateDataShareConsumerInput, arg2 ...request.Option) (*redshift.AssociateDataShareConsumerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateDataShareConsumerWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.AssociateDataShareConsumerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateDataShareConsumerWithContext indicates an expected call of AssociateDataShareConsumerWithContext
+func (mr *MockRedshiftAPIMockRecorder) AssociateDataShareConsumerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDataShareConsumerWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).AssociateDataShareConsumerWithContext), varargs...)
+}
+
 // AuthorizeClusterSecurityGroupIngress mocks base method
 func (m *MockRedshiftAPI) AuthorizeClusterSecurityGroupIngress(arg0 *redshift.AuthorizeClusterSecurityGroupIngressInput) (*redshift.AuthorizeClusterSecurityGroupIngressOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +233,56 @@ func (mr *MockRedshiftAPIMockRecorder) AuthorizeClusterSecurityGroupIngressWithC
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AuthorizeClusterSecurityGroupIngressWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).AuthorizeClusterSecurityGroupIngressWithContext), varargs...)
+}
+
+// AuthorizeDataShare mocks base method
+func (m *MockRedshiftAPI) AuthorizeDataShare(arg0 *redshift.AuthorizeDataShareInput) (*redshift.AuthorizeDataShareOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AuthorizeDataShare", arg0)
+	ret0, _ := ret[0].(*redshift.AuthorizeDataShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AuthorizeDataShare indicates an expected call of AuthorizeDataShare
+func (mr *MockRedshiftAPIMockRecorder) AuthorizeDataShare(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AuthorizeDataShare", reflect.TypeOf((*MockRedshiftAPI)(nil).AuthorizeDataShare), arg0)
+}
+
+// AuthorizeDataShareRequest mocks base method
+func (m *MockRedshiftAPI) AuthorizeDataShareRequest(arg0 *redshift.AuthorizeDataShareInput) (*request.Request, *redshift.AuthorizeDataShareOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AuthorizeDataShareRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.AuthorizeDataShareOutput)
+	return ret0, ret1
+}
+
+// AuthorizeDataShareRequest indicates an expected call of AuthorizeDataShareRequest
+func (mr *MockRedshiftAPIMockRecorder) AuthorizeDataShareRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AuthorizeDataShareRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).AuthorizeDataShareRequest), arg0)
+}
+
+// AuthorizeDataShareWithContext mocks base method
+func (m *MockRedshiftAPI) AuthorizeDataShareWithContext(arg0 context.Context, arg1 *redshift.AuthorizeDataShareInput, arg2 ...request.Option) (*redshift.AuthorizeDataShareOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AuthorizeDataShareWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.AuthorizeDataShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AuthorizeDataShareWithContext indicates an expected call of AuthorizeDataShareWithContext
+func (mr *MockRedshiftAPIMockRecorder) AuthorizeDataShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AuthorizeDataShareWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).AuthorizeDataShareWithContext), varargs...)
 }
 
 // AuthorizeEndpointAccess mocks base method
@@ -1233,6 +1333,56 @@ func (mr *MockRedshiftAPIMockRecorder) CreateUsageLimitWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUsageLimitWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateUsageLimitWithContext), varargs...)
+}
+
+// DeauthorizeDataShare mocks base method
+func (m *MockRedshiftAPI) DeauthorizeDataShare(arg0 *redshift.DeauthorizeDataShareInput) (*redshift.DeauthorizeDataShareOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeauthorizeDataShare", arg0)
+	ret0, _ := ret[0].(*redshift.DeauthorizeDataShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeauthorizeDataShare indicates an expected call of DeauthorizeDataShare
+func (mr *MockRedshiftAPIMockRecorder) DeauthorizeDataShare(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeauthorizeDataShare", reflect.TypeOf((*MockRedshiftAPI)(nil).DeauthorizeDataShare), arg0)
+}
+
+// DeauthorizeDataShareRequest mocks base method
+func (m *MockRedshiftAPI) DeauthorizeDataShareRequest(arg0 *redshift.DeauthorizeDataShareInput) (*request.Request, *redshift.DeauthorizeDataShareOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeauthorizeDataShareRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DeauthorizeDataShareOutput)
+	return ret0, ret1
+}
+
+// DeauthorizeDataShareRequest indicates an expected call of DeauthorizeDataShareRequest
+func (mr *MockRedshiftAPIMockRecorder) DeauthorizeDataShareRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeauthorizeDataShareRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DeauthorizeDataShareRequest), arg0)
+}
+
+// DeauthorizeDataShareWithContext mocks base method
+func (m *MockRedshiftAPI) DeauthorizeDataShareWithContext(arg0 context.Context, arg1 *redshift.DeauthorizeDataShareInput, arg2 ...request.Option) (*redshift.DeauthorizeDataShareOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeauthorizeDataShareWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DeauthorizeDataShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeauthorizeDataShareWithContext indicates an expected call of DeauthorizeDataShareWithContext
+func (mr *MockRedshiftAPIMockRecorder) DeauthorizeDataShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeauthorizeDataShareWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DeauthorizeDataShareWithContext), varargs...)
 }
 
 // DeleteAuthenticationProfile mocks base method
@@ -2880,6 +3030,156 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClustersWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClustersWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeClustersWithContext), varargs...)
+}
+
+// DescribeDataShares mocks base method
+func (m *MockRedshiftAPI) DescribeDataShares(arg0 *redshift.DescribeDataSharesInput) (*redshift.DescribeDataSharesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDataShares", arg0)
+	ret0, _ := ret[0].(*redshift.DescribeDataSharesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDataShares indicates an expected call of DescribeDataShares
+func (mr *MockRedshiftAPIMockRecorder) DescribeDataShares(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataShares", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeDataShares), arg0)
+}
+
+// DescribeDataSharesForConsumer mocks base method
+func (m *MockRedshiftAPI) DescribeDataSharesForConsumer(arg0 *redshift.DescribeDataSharesForConsumerInput) (*redshift.DescribeDataSharesForConsumerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDataSharesForConsumer", arg0)
+	ret0, _ := ret[0].(*redshift.DescribeDataSharesForConsumerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDataSharesForConsumer indicates an expected call of DescribeDataSharesForConsumer
+func (mr *MockRedshiftAPIMockRecorder) DescribeDataSharesForConsumer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataSharesForConsumer", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeDataSharesForConsumer), arg0)
+}
+
+// DescribeDataSharesForConsumerRequest mocks base method
+func (m *MockRedshiftAPI) DescribeDataSharesForConsumerRequest(arg0 *redshift.DescribeDataSharesForConsumerInput) (*request.Request, *redshift.DescribeDataSharesForConsumerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDataSharesForConsumerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DescribeDataSharesForConsumerOutput)
+	return ret0, ret1
+}
+
+// DescribeDataSharesForConsumerRequest indicates an expected call of DescribeDataSharesForConsumerRequest
+func (mr *MockRedshiftAPIMockRecorder) DescribeDataSharesForConsumerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataSharesForConsumerRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeDataSharesForConsumerRequest), arg0)
+}
+
+// DescribeDataSharesForConsumerWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeDataSharesForConsumerWithContext(arg0 context.Context, arg1 *redshift.DescribeDataSharesForConsumerInput, arg2 ...request.Option) (*redshift.DescribeDataSharesForConsumerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDataSharesForConsumerWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DescribeDataSharesForConsumerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDataSharesForConsumerWithContext indicates an expected call of DescribeDataSharesForConsumerWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeDataSharesForConsumerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataSharesForConsumerWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeDataSharesForConsumerWithContext), varargs...)
+}
+
+// DescribeDataSharesForProducer mocks base method
+func (m *MockRedshiftAPI) DescribeDataSharesForProducer(arg0 *redshift.DescribeDataSharesForProducerInput) (*redshift.DescribeDataSharesForProducerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDataSharesForProducer", arg0)
+	ret0, _ := ret[0].(*redshift.DescribeDataSharesForProducerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDataSharesForProducer indicates an expected call of DescribeDataSharesForProducer
+func (mr *MockRedshiftAPIMockRecorder) DescribeDataSharesForProducer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataSharesForProducer", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeDataSharesForProducer), arg0)
+}
+
+// DescribeDataSharesForProducerRequest mocks base method
+func (m *MockRedshiftAPI) DescribeDataSharesForProducerRequest(arg0 *redshift.DescribeDataSharesForProducerInput) (*request.Request, *redshift.DescribeDataSharesForProducerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDataSharesForProducerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DescribeDataSharesForProducerOutput)
+	return ret0, ret1
+}
+
+// DescribeDataSharesForProducerRequest indicates an expected call of DescribeDataSharesForProducerRequest
+func (mr *MockRedshiftAPIMockRecorder) DescribeDataSharesForProducerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataSharesForProducerRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeDataSharesForProducerRequest), arg0)
+}
+
+// DescribeDataSharesForProducerWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeDataSharesForProducerWithContext(arg0 context.Context, arg1 *redshift.DescribeDataSharesForProducerInput, arg2 ...request.Option) (*redshift.DescribeDataSharesForProducerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDataSharesForProducerWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DescribeDataSharesForProducerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDataSharesForProducerWithContext indicates an expected call of DescribeDataSharesForProducerWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeDataSharesForProducerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataSharesForProducerWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeDataSharesForProducerWithContext), varargs...)
+}
+
+// DescribeDataSharesRequest mocks base method
+func (m *MockRedshiftAPI) DescribeDataSharesRequest(arg0 *redshift.DescribeDataSharesInput) (*request.Request, *redshift.DescribeDataSharesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDataSharesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DescribeDataSharesOutput)
+	return ret0, ret1
+}
+
+// DescribeDataSharesRequest indicates an expected call of DescribeDataSharesRequest
+func (mr *MockRedshiftAPIMockRecorder) DescribeDataSharesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataSharesRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeDataSharesRequest), arg0)
+}
+
+// DescribeDataSharesWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeDataSharesWithContext(arg0 context.Context, arg1 *redshift.DescribeDataSharesInput, arg2 ...request.Option) (*redshift.DescribeDataSharesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDataSharesWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DescribeDataSharesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDataSharesWithContext indicates an expected call of DescribeDataSharesWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeDataSharesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataSharesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeDataSharesWithContext), varargs...)
 }
 
 // DescribeDefaultClusterParameters mocks base method
@@ -4643,6 +4943,56 @@ func (mr *MockRedshiftAPIMockRecorder) DisableSnapshotCopyWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableSnapshotCopyWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DisableSnapshotCopyWithContext), varargs...)
 }
 
+// DisassociateDataShareConsumer mocks base method
+func (m *MockRedshiftAPI) DisassociateDataShareConsumer(arg0 *redshift.DisassociateDataShareConsumerInput) (*redshift.DisassociateDataShareConsumerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateDataShareConsumer", arg0)
+	ret0, _ := ret[0].(*redshift.DisassociateDataShareConsumerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateDataShareConsumer indicates an expected call of DisassociateDataShareConsumer
+func (mr *MockRedshiftAPIMockRecorder) DisassociateDataShareConsumer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDataShareConsumer", reflect.TypeOf((*MockRedshiftAPI)(nil).DisassociateDataShareConsumer), arg0)
+}
+
+// DisassociateDataShareConsumerRequest mocks base method
+func (m *MockRedshiftAPI) DisassociateDataShareConsumerRequest(arg0 *redshift.DisassociateDataShareConsumerInput) (*request.Request, *redshift.DisassociateDataShareConsumerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateDataShareConsumerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DisassociateDataShareConsumerOutput)
+	return ret0, ret1
+}
+
+// DisassociateDataShareConsumerRequest indicates an expected call of DisassociateDataShareConsumerRequest
+func (mr *MockRedshiftAPIMockRecorder) DisassociateDataShareConsumerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDataShareConsumerRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DisassociateDataShareConsumerRequest), arg0)
+}
+
+// DisassociateDataShareConsumerWithContext mocks base method
+func (m *MockRedshiftAPI) DisassociateDataShareConsumerWithContext(arg0 context.Context, arg1 *redshift.DisassociateDataShareConsumerInput, arg2 ...request.Option) (*redshift.DisassociateDataShareConsumerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateDataShareConsumerWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DisassociateDataShareConsumerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateDataShareConsumerWithContext indicates an expected call of DisassociateDataShareConsumerWithContext
+func (mr *MockRedshiftAPIMockRecorder) DisassociateDataShareConsumerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDataShareConsumerWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DisassociateDataShareConsumerWithContext), varargs...)
+}
+
 // EnableLogging mocks base method
 func (m *MockRedshiftAPI) EnableLogging(arg0 *redshift.EnableLoggingInput) (*redshift.LoggingStatus, error) {
 	m.ctrl.T.Helper()
@@ -5824,6 +6174,56 @@ func (mr *MockRedshiftAPIMockRecorder) RebootClusterWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebootClusterWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).RebootClusterWithContext), varargs...)
+}
+
+// RejectDataShare mocks base method
+func (m *MockRedshiftAPI) RejectDataShare(arg0 *redshift.RejectDataShareInput) (*redshift.RejectDataShareOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RejectDataShare", arg0)
+	ret0, _ := ret[0].(*redshift.RejectDataShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RejectDataShare indicates an expected call of RejectDataShare
+func (mr *MockRedshiftAPIMockRecorder) RejectDataShare(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectDataShare", reflect.TypeOf((*MockRedshiftAPI)(nil).RejectDataShare), arg0)
+}
+
+// RejectDataShareRequest mocks base method
+func (m *MockRedshiftAPI) RejectDataShareRequest(arg0 *redshift.RejectDataShareInput) (*request.Request, *redshift.RejectDataShareOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RejectDataShareRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.RejectDataShareOutput)
+	return ret0, ret1
+}
+
+// RejectDataShareRequest indicates an expected call of RejectDataShareRequest
+func (mr *MockRedshiftAPIMockRecorder) RejectDataShareRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectDataShareRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).RejectDataShareRequest), arg0)
+}
+
+// RejectDataShareWithContext mocks base method
+func (m *MockRedshiftAPI) RejectDataShareWithContext(arg0 context.Context, arg1 *redshift.RejectDataShareInput, arg2 ...request.Option) (*redshift.RejectDataShareOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RejectDataShareWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.RejectDataShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RejectDataShareWithContext indicates an expected call of RejectDataShareWithContext
+func (mr *MockRedshiftAPIMockRecorder) RejectDataShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectDataShareWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).RejectDataShareWithContext), varargs...)
 }
 
 // ResetClusterParameterGroup mocks base method
