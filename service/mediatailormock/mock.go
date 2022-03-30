@@ -35,6 +35,306 @@ func (m *MockMediaTailorAPI) EXPECT() *MockMediaTailorAPIMockRecorder {
 	return m.recorder
 }
 
+// CreateChannel mocks base method
+func (m *MockMediaTailorAPI) CreateChannel(arg0 *mediatailor.CreateChannelInput) (*mediatailor.CreateChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateChannel", arg0)
+	ret0, _ := ret[0].(*mediatailor.CreateChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateChannel indicates an expected call of CreateChannel
+func (mr *MockMediaTailorAPIMockRecorder) CreateChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannel", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreateChannel), arg0)
+}
+
+// CreateChannelRequest mocks base method
+func (m *MockMediaTailorAPI) CreateChannelRequest(arg0 *mediatailor.CreateChannelInput) (*request.Request, *mediatailor.CreateChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.CreateChannelOutput)
+	return ret0, ret1
+}
+
+// CreateChannelRequest indicates an expected call of CreateChannelRequest
+func (mr *MockMediaTailorAPIMockRecorder) CreateChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreateChannelRequest), arg0)
+}
+
+// CreateChannelWithContext mocks base method
+func (m *MockMediaTailorAPI) CreateChannelWithContext(arg0 context.Context, arg1 *mediatailor.CreateChannelInput, arg2 ...request.Option) (*mediatailor.CreateChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.CreateChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateChannelWithContext indicates an expected call of CreateChannelWithContext
+func (mr *MockMediaTailorAPIMockRecorder) CreateChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreateChannelWithContext), varargs...)
+}
+
+// CreateProgram mocks base method
+func (m *MockMediaTailorAPI) CreateProgram(arg0 *mediatailor.CreateProgramInput) (*mediatailor.CreateProgramOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProgram", arg0)
+	ret0, _ := ret[0].(*mediatailor.CreateProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProgram indicates an expected call of CreateProgram
+func (mr *MockMediaTailorAPIMockRecorder) CreateProgram(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProgram", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreateProgram), arg0)
+}
+
+// CreateProgramRequest mocks base method
+func (m *MockMediaTailorAPI) CreateProgramRequest(arg0 *mediatailor.CreateProgramInput) (*request.Request, *mediatailor.CreateProgramOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProgramRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.CreateProgramOutput)
+	return ret0, ret1
+}
+
+// CreateProgramRequest indicates an expected call of CreateProgramRequest
+func (mr *MockMediaTailorAPIMockRecorder) CreateProgramRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProgramRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreateProgramRequest), arg0)
+}
+
+// CreateProgramWithContext mocks base method
+func (m *MockMediaTailorAPI) CreateProgramWithContext(arg0 context.Context, arg1 *mediatailor.CreateProgramInput, arg2 ...request.Option) (*mediatailor.CreateProgramOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateProgramWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.CreateProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProgramWithContext indicates an expected call of CreateProgramWithContext
+func (mr *MockMediaTailorAPIMockRecorder) CreateProgramWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProgramWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreateProgramWithContext), varargs...)
+}
+
+// CreateSourceLocation mocks base method
+func (m *MockMediaTailorAPI) CreateSourceLocation(arg0 *mediatailor.CreateSourceLocationInput) (*mediatailor.CreateSourceLocationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSourceLocation", arg0)
+	ret0, _ := ret[0].(*mediatailor.CreateSourceLocationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSourceLocation indicates an expected call of CreateSourceLocation
+func (mr *MockMediaTailorAPIMockRecorder) CreateSourceLocation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSourceLocation", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreateSourceLocation), arg0)
+}
+
+// CreateSourceLocationRequest mocks base method
+func (m *MockMediaTailorAPI) CreateSourceLocationRequest(arg0 *mediatailor.CreateSourceLocationInput) (*request.Request, *mediatailor.CreateSourceLocationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSourceLocationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.CreateSourceLocationOutput)
+	return ret0, ret1
+}
+
+// CreateSourceLocationRequest indicates an expected call of CreateSourceLocationRequest
+func (mr *MockMediaTailorAPIMockRecorder) CreateSourceLocationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSourceLocationRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreateSourceLocationRequest), arg0)
+}
+
+// CreateSourceLocationWithContext mocks base method
+func (m *MockMediaTailorAPI) CreateSourceLocationWithContext(arg0 context.Context, arg1 *mediatailor.CreateSourceLocationInput, arg2 ...request.Option) (*mediatailor.CreateSourceLocationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSourceLocationWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.CreateSourceLocationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSourceLocationWithContext indicates an expected call of CreateSourceLocationWithContext
+func (mr *MockMediaTailorAPIMockRecorder) CreateSourceLocationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSourceLocationWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreateSourceLocationWithContext), varargs...)
+}
+
+// CreateVodSource mocks base method
+func (m *MockMediaTailorAPI) CreateVodSource(arg0 *mediatailor.CreateVodSourceInput) (*mediatailor.CreateVodSourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVodSource", arg0)
+	ret0, _ := ret[0].(*mediatailor.CreateVodSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVodSource indicates an expected call of CreateVodSource
+func (mr *MockMediaTailorAPIMockRecorder) CreateVodSource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVodSource", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreateVodSource), arg0)
+}
+
+// CreateVodSourceRequest mocks base method
+func (m *MockMediaTailorAPI) CreateVodSourceRequest(arg0 *mediatailor.CreateVodSourceInput) (*request.Request, *mediatailor.CreateVodSourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVodSourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.CreateVodSourceOutput)
+	return ret0, ret1
+}
+
+// CreateVodSourceRequest indicates an expected call of CreateVodSourceRequest
+func (mr *MockMediaTailorAPIMockRecorder) CreateVodSourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVodSourceRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreateVodSourceRequest), arg0)
+}
+
+// CreateVodSourceWithContext mocks base method
+func (m *MockMediaTailorAPI) CreateVodSourceWithContext(arg0 context.Context, arg1 *mediatailor.CreateVodSourceInput, arg2 ...request.Option) (*mediatailor.CreateVodSourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateVodSourceWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.CreateVodSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVodSourceWithContext indicates an expected call of CreateVodSourceWithContext
+func (mr *MockMediaTailorAPIMockRecorder) CreateVodSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVodSourceWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).CreateVodSourceWithContext), varargs...)
+}
+
+// DeleteChannel mocks base method
+func (m *MockMediaTailorAPI) DeleteChannel(arg0 *mediatailor.DeleteChannelInput) (*mediatailor.DeleteChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannel", arg0)
+	ret0, _ := ret[0].(*mediatailor.DeleteChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannel indicates an expected call of DeleteChannel
+func (mr *MockMediaTailorAPIMockRecorder) DeleteChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannel", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteChannel), arg0)
+}
+
+// DeleteChannelPolicy mocks base method
+func (m *MockMediaTailorAPI) DeleteChannelPolicy(arg0 *mediatailor.DeleteChannelPolicyInput) (*mediatailor.DeleteChannelPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelPolicy", arg0)
+	ret0, _ := ret[0].(*mediatailor.DeleteChannelPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelPolicy indicates an expected call of DeleteChannelPolicy
+func (mr *MockMediaTailorAPIMockRecorder) DeleteChannelPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelPolicy", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteChannelPolicy), arg0)
+}
+
+// DeleteChannelPolicyRequest mocks base method
+func (m *MockMediaTailorAPI) DeleteChannelPolicyRequest(arg0 *mediatailor.DeleteChannelPolicyInput) (*request.Request, *mediatailor.DeleteChannelPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.DeleteChannelPolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteChannelPolicyRequest indicates an expected call of DeleteChannelPolicyRequest
+func (mr *MockMediaTailorAPIMockRecorder) DeleteChannelPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelPolicyRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteChannelPolicyRequest), arg0)
+}
+
+// DeleteChannelPolicyWithContext mocks base method
+func (m *MockMediaTailorAPI) DeleteChannelPolicyWithContext(arg0 context.Context, arg1 *mediatailor.DeleteChannelPolicyInput, arg2 ...request.Option) (*mediatailor.DeleteChannelPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteChannelPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.DeleteChannelPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelPolicyWithContext indicates an expected call of DeleteChannelPolicyWithContext
+func (mr *MockMediaTailorAPIMockRecorder) DeleteChannelPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelPolicyWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteChannelPolicyWithContext), varargs...)
+}
+
+// DeleteChannelRequest mocks base method
+func (m *MockMediaTailorAPI) DeleteChannelRequest(arg0 *mediatailor.DeleteChannelInput) (*request.Request, *mediatailor.DeleteChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.DeleteChannelOutput)
+	return ret0, ret1
+}
+
+// DeleteChannelRequest indicates an expected call of DeleteChannelRequest
+func (mr *MockMediaTailorAPIMockRecorder) DeleteChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteChannelRequest), arg0)
+}
+
+// DeleteChannelWithContext mocks base method
+func (m *MockMediaTailorAPI) DeleteChannelWithContext(arg0 context.Context, arg1 *mediatailor.DeleteChannelInput, arg2 ...request.Option) (*mediatailor.DeleteChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.DeleteChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelWithContext indicates an expected call of DeleteChannelWithContext
+func (mr *MockMediaTailorAPIMockRecorder) DeleteChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteChannelWithContext), varargs...)
+}
+
 // DeletePlaybackConfiguration mocks base method
 func (m *MockMediaTailorAPI) DeletePlaybackConfiguration(arg0 *mediatailor.DeletePlaybackConfigurationInput) (*mediatailor.DeletePlaybackConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -85,6 +385,489 @@ func (mr *MockMediaTailorAPIMockRecorder) DeletePlaybackConfigurationWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePlaybackConfigurationWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeletePlaybackConfigurationWithContext), varargs...)
 }
 
+// DeleteProgram mocks base method
+func (m *MockMediaTailorAPI) DeleteProgram(arg0 *mediatailor.DeleteProgramInput) (*mediatailor.DeleteProgramOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProgram", arg0)
+	ret0, _ := ret[0].(*mediatailor.DeleteProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProgram indicates an expected call of DeleteProgram
+func (mr *MockMediaTailorAPIMockRecorder) DeleteProgram(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProgram", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteProgram), arg0)
+}
+
+// DeleteProgramRequest mocks base method
+func (m *MockMediaTailorAPI) DeleteProgramRequest(arg0 *mediatailor.DeleteProgramInput) (*request.Request, *mediatailor.DeleteProgramOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProgramRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.DeleteProgramOutput)
+	return ret0, ret1
+}
+
+// DeleteProgramRequest indicates an expected call of DeleteProgramRequest
+func (mr *MockMediaTailorAPIMockRecorder) DeleteProgramRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProgramRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteProgramRequest), arg0)
+}
+
+// DeleteProgramWithContext mocks base method
+func (m *MockMediaTailorAPI) DeleteProgramWithContext(arg0 context.Context, arg1 *mediatailor.DeleteProgramInput, arg2 ...request.Option) (*mediatailor.DeleteProgramOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteProgramWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.DeleteProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProgramWithContext indicates an expected call of DeleteProgramWithContext
+func (mr *MockMediaTailorAPIMockRecorder) DeleteProgramWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProgramWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteProgramWithContext), varargs...)
+}
+
+// DeleteSourceLocation mocks base method
+func (m *MockMediaTailorAPI) DeleteSourceLocation(arg0 *mediatailor.DeleteSourceLocationInput) (*mediatailor.DeleteSourceLocationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSourceLocation", arg0)
+	ret0, _ := ret[0].(*mediatailor.DeleteSourceLocationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSourceLocation indicates an expected call of DeleteSourceLocation
+func (mr *MockMediaTailorAPIMockRecorder) DeleteSourceLocation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSourceLocation", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteSourceLocation), arg0)
+}
+
+// DeleteSourceLocationRequest mocks base method
+func (m *MockMediaTailorAPI) DeleteSourceLocationRequest(arg0 *mediatailor.DeleteSourceLocationInput) (*request.Request, *mediatailor.DeleteSourceLocationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSourceLocationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.DeleteSourceLocationOutput)
+	return ret0, ret1
+}
+
+// DeleteSourceLocationRequest indicates an expected call of DeleteSourceLocationRequest
+func (mr *MockMediaTailorAPIMockRecorder) DeleteSourceLocationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSourceLocationRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteSourceLocationRequest), arg0)
+}
+
+// DeleteSourceLocationWithContext mocks base method
+func (m *MockMediaTailorAPI) DeleteSourceLocationWithContext(arg0 context.Context, arg1 *mediatailor.DeleteSourceLocationInput, arg2 ...request.Option) (*mediatailor.DeleteSourceLocationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSourceLocationWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.DeleteSourceLocationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSourceLocationWithContext indicates an expected call of DeleteSourceLocationWithContext
+func (mr *MockMediaTailorAPIMockRecorder) DeleteSourceLocationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSourceLocationWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteSourceLocationWithContext), varargs...)
+}
+
+// DeleteVodSource mocks base method
+func (m *MockMediaTailorAPI) DeleteVodSource(arg0 *mediatailor.DeleteVodSourceInput) (*mediatailor.DeleteVodSourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVodSource", arg0)
+	ret0, _ := ret[0].(*mediatailor.DeleteVodSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVodSource indicates an expected call of DeleteVodSource
+func (mr *MockMediaTailorAPIMockRecorder) DeleteVodSource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVodSource", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteVodSource), arg0)
+}
+
+// DeleteVodSourceRequest mocks base method
+func (m *MockMediaTailorAPI) DeleteVodSourceRequest(arg0 *mediatailor.DeleteVodSourceInput) (*request.Request, *mediatailor.DeleteVodSourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVodSourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.DeleteVodSourceOutput)
+	return ret0, ret1
+}
+
+// DeleteVodSourceRequest indicates an expected call of DeleteVodSourceRequest
+func (mr *MockMediaTailorAPIMockRecorder) DeleteVodSourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVodSourceRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteVodSourceRequest), arg0)
+}
+
+// DeleteVodSourceWithContext mocks base method
+func (m *MockMediaTailorAPI) DeleteVodSourceWithContext(arg0 context.Context, arg1 *mediatailor.DeleteVodSourceInput, arg2 ...request.Option) (*mediatailor.DeleteVodSourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteVodSourceWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.DeleteVodSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVodSourceWithContext indicates an expected call of DeleteVodSourceWithContext
+func (mr *MockMediaTailorAPIMockRecorder) DeleteVodSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVodSourceWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).DeleteVodSourceWithContext), varargs...)
+}
+
+// DescribeChannel mocks base method
+func (m *MockMediaTailorAPI) DescribeChannel(arg0 *mediatailor.DescribeChannelInput) (*mediatailor.DescribeChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannel", arg0)
+	ret0, _ := ret[0].(*mediatailor.DescribeChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannel indicates an expected call of DescribeChannel
+func (mr *MockMediaTailorAPIMockRecorder) DescribeChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannel", reflect.TypeOf((*MockMediaTailorAPI)(nil).DescribeChannel), arg0)
+}
+
+// DescribeChannelRequest mocks base method
+func (m *MockMediaTailorAPI) DescribeChannelRequest(arg0 *mediatailor.DescribeChannelInput) (*request.Request, *mediatailor.DescribeChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.DescribeChannelOutput)
+	return ret0, ret1
+}
+
+// DescribeChannelRequest indicates an expected call of DescribeChannelRequest
+func (mr *MockMediaTailorAPIMockRecorder) DescribeChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).DescribeChannelRequest), arg0)
+}
+
+// DescribeChannelWithContext mocks base method
+func (m *MockMediaTailorAPI) DescribeChannelWithContext(arg0 context.Context, arg1 *mediatailor.DescribeChannelInput, arg2 ...request.Option) (*mediatailor.DescribeChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.DescribeChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannelWithContext indicates an expected call of DescribeChannelWithContext
+func (mr *MockMediaTailorAPIMockRecorder) DescribeChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).DescribeChannelWithContext), varargs...)
+}
+
+// DescribeProgram mocks base method
+func (m *MockMediaTailorAPI) DescribeProgram(arg0 *mediatailor.DescribeProgramInput) (*mediatailor.DescribeProgramOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProgram", arg0)
+	ret0, _ := ret[0].(*mediatailor.DescribeProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeProgram indicates an expected call of DescribeProgram
+func (mr *MockMediaTailorAPIMockRecorder) DescribeProgram(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProgram", reflect.TypeOf((*MockMediaTailorAPI)(nil).DescribeProgram), arg0)
+}
+
+// DescribeProgramRequest mocks base method
+func (m *MockMediaTailorAPI) DescribeProgramRequest(arg0 *mediatailor.DescribeProgramInput) (*request.Request, *mediatailor.DescribeProgramOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProgramRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.DescribeProgramOutput)
+	return ret0, ret1
+}
+
+// DescribeProgramRequest indicates an expected call of DescribeProgramRequest
+func (mr *MockMediaTailorAPIMockRecorder) DescribeProgramRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProgramRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).DescribeProgramRequest), arg0)
+}
+
+// DescribeProgramWithContext mocks base method
+func (m *MockMediaTailorAPI) DescribeProgramWithContext(arg0 context.Context, arg1 *mediatailor.DescribeProgramInput, arg2 ...request.Option) (*mediatailor.DescribeProgramOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeProgramWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.DescribeProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeProgramWithContext indicates an expected call of DescribeProgramWithContext
+func (mr *MockMediaTailorAPIMockRecorder) DescribeProgramWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProgramWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).DescribeProgramWithContext), varargs...)
+}
+
+// DescribeSourceLocation mocks base method
+func (m *MockMediaTailorAPI) DescribeSourceLocation(arg0 *mediatailor.DescribeSourceLocationInput) (*mediatailor.DescribeSourceLocationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSourceLocation", arg0)
+	ret0, _ := ret[0].(*mediatailor.DescribeSourceLocationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSourceLocation indicates an expected call of DescribeSourceLocation
+func (mr *MockMediaTailorAPIMockRecorder) DescribeSourceLocation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSourceLocation", reflect.TypeOf((*MockMediaTailorAPI)(nil).DescribeSourceLocation), arg0)
+}
+
+// DescribeSourceLocationRequest mocks base method
+func (m *MockMediaTailorAPI) DescribeSourceLocationRequest(arg0 *mediatailor.DescribeSourceLocationInput) (*request.Request, *mediatailor.DescribeSourceLocationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSourceLocationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.DescribeSourceLocationOutput)
+	return ret0, ret1
+}
+
+// DescribeSourceLocationRequest indicates an expected call of DescribeSourceLocationRequest
+func (mr *MockMediaTailorAPIMockRecorder) DescribeSourceLocationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSourceLocationRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).DescribeSourceLocationRequest), arg0)
+}
+
+// DescribeSourceLocationWithContext mocks base method
+func (m *MockMediaTailorAPI) DescribeSourceLocationWithContext(arg0 context.Context, arg1 *mediatailor.DescribeSourceLocationInput, arg2 ...request.Option) (*mediatailor.DescribeSourceLocationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSourceLocationWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.DescribeSourceLocationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSourceLocationWithContext indicates an expected call of DescribeSourceLocationWithContext
+func (mr *MockMediaTailorAPIMockRecorder) DescribeSourceLocationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSourceLocationWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).DescribeSourceLocationWithContext), varargs...)
+}
+
+// DescribeVodSource mocks base method
+func (m *MockMediaTailorAPI) DescribeVodSource(arg0 *mediatailor.DescribeVodSourceInput) (*mediatailor.DescribeVodSourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeVodSource", arg0)
+	ret0, _ := ret[0].(*mediatailor.DescribeVodSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeVodSource indicates an expected call of DescribeVodSource
+func (mr *MockMediaTailorAPIMockRecorder) DescribeVodSource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVodSource", reflect.TypeOf((*MockMediaTailorAPI)(nil).DescribeVodSource), arg0)
+}
+
+// DescribeVodSourceRequest mocks base method
+func (m *MockMediaTailorAPI) DescribeVodSourceRequest(arg0 *mediatailor.DescribeVodSourceInput) (*request.Request, *mediatailor.DescribeVodSourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeVodSourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.DescribeVodSourceOutput)
+	return ret0, ret1
+}
+
+// DescribeVodSourceRequest indicates an expected call of DescribeVodSourceRequest
+func (mr *MockMediaTailorAPIMockRecorder) DescribeVodSourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVodSourceRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).DescribeVodSourceRequest), arg0)
+}
+
+// DescribeVodSourceWithContext mocks base method
+func (m *MockMediaTailorAPI) DescribeVodSourceWithContext(arg0 context.Context, arg1 *mediatailor.DescribeVodSourceInput, arg2 ...request.Option) (*mediatailor.DescribeVodSourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeVodSourceWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.DescribeVodSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeVodSourceWithContext indicates an expected call of DescribeVodSourceWithContext
+func (mr *MockMediaTailorAPIMockRecorder) DescribeVodSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVodSourceWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).DescribeVodSourceWithContext), varargs...)
+}
+
+// GetChannelPolicy mocks base method
+func (m *MockMediaTailorAPI) GetChannelPolicy(arg0 *mediatailor.GetChannelPolicyInput) (*mediatailor.GetChannelPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetChannelPolicy", arg0)
+	ret0, _ := ret[0].(*mediatailor.GetChannelPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetChannelPolicy indicates an expected call of GetChannelPolicy
+func (mr *MockMediaTailorAPIMockRecorder) GetChannelPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelPolicy", reflect.TypeOf((*MockMediaTailorAPI)(nil).GetChannelPolicy), arg0)
+}
+
+// GetChannelPolicyRequest mocks base method
+func (m *MockMediaTailorAPI) GetChannelPolicyRequest(arg0 *mediatailor.GetChannelPolicyInput) (*request.Request, *mediatailor.GetChannelPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetChannelPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.GetChannelPolicyOutput)
+	return ret0, ret1
+}
+
+// GetChannelPolicyRequest indicates an expected call of GetChannelPolicyRequest
+func (mr *MockMediaTailorAPIMockRecorder) GetChannelPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelPolicyRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).GetChannelPolicyRequest), arg0)
+}
+
+// GetChannelPolicyWithContext mocks base method
+func (m *MockMediaTailorAPI) GetChannelPolicyWithContext(arg0 context.Context, arg1 *mediatailor.GetChannelPolicyInput, arg2 ...request.Option) (*mediatailor.GetChannelPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetChannelPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.GetChannelPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetChannelPolicyWithContext indicates an expected call of GetChannelPolicyWithContext
+func (mr *MockMediaTailorAPIMockRecorder) GetChannelPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelPolicyWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).GetChannelPolicyWithContext), varargs...)
+}
+
+// GetChannelSchedule mocks base method
+func (m *MockMediaTailorAPI) GetChannelSchedule(arg0 *mediatailor.GetChannelScheduleInput) (*mediatailor.GetChannelScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetChannelSchedule", arg0)
+	ret0, _ := ret[0].(*mediatailor.GetChannelScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetChannelSchedule indicates an expected call of GetChannelSchedule
+func (mr *MockMediaTailorAPIMockRecorder) GetChannelSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelSchedule", reflect.TypeOf((*MockMediaTailorAPI)(nil).GetChannelSchedule), arg0)
+}
+
+// GetChannelSchedulePages mocks base method
+func (m *MockMediaTailorAPI) GetChannelSchedulePages(arg0 *mediatailor.GetChannelScheduleInput, arg1 func(*mediatailor.GetChannelScheduleOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetChannelSchedulePages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetChannelSchedulePages indicates an expected call of GetChannelSchedulePages
+func (mr *MockMediaTailorAPIMockRecorder) GetChannelSchedulePages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelSchedulePages", reflect.TypeOf((*MockMediaTailorAPI)(nil).GetChannelSchedulePages), arg0, arg1)
+}
+
+// GetChannelSchedulePagesWithContext mocks base method
+func (m *MockMediaTailorAPI) GetChannelSchedulePagesWithContext(arg0 context.Context, arg1 *mediatailor.GetChannelScheduleInput, arg2 func(*mediatailor.GetChannelScheduleOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetChannelSchedulePagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetChannelSchedulePagesWithContext indicates an expected call of GetChannelSchedulePagesWithContext
+func (mr *MockMediaTailorAPIMockRecorder) GetChannelSchedulePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelSchedulePagesWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).GetChannelSchedulePagesWithContext), varargs...)
+}
+
+// GetChannelScheduleRequest mocks base method
+func (m *MockMediaTailorAPI) GetChannelScheduleRequest(arg0 *mediatailor.GetChannelScheduleInput) (*request.Request, *mediatailor.GetChannelScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetChannelScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.GetChannelScheduleOutput)
+	return ret0, ret1
+}
+
+// GetChannelScheduleRequest indicates an expected call of GetChannelScheduleRequest
+func (mr *MockMediaTailorAPIMockRecorder) GetChannelScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelScheduleRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).GetChannelScheduleRequest), arg0)
+}
+
+// GetChannelScheduleWithContext mocks base method
+func (m *MockMediaTailorAPI) GetChannelScheduleWithContext(arg0 context.Context, arg1 *mediatailor.GetChannelScheduleInput, arg2 ...request.Option) (*mediatailor.GetChannelScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetChannelScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.GetChannelScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetChannelScheduleWithContext indicates an expected call of GetChannelScheduleWithContext
+func (mr *MockMediaTailorAPIMockRecorder) GetChannelScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelScheduleWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).GetChannelScheduleWithContext), varargs...)
+}
+
 // GetPlaybackConfiguration mocks base method
 func (m *MockMediaTailorAPI) GetPlaybackConfiguration(arg0 *mediatailor.GetPlaybackConfigurationInput) (*mediatailor.GetPlaybackConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -133,6 +916,89 @@ func (mr *MockMediaTailorAPIMockRecorder) GetPlaybackConfigurationWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPlaybackConfigurationWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).GetPlaybackConfigurationWithContext), varargs...)
+}
+
+// ListChannels mocks base method
+func (m *MockMediaTailorAPI) ListChannels(arg0 *mediatailor.ListChannelsInput) (*mediatailor.ListChannelsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannels", arg0)
+	ret0, _ := ret[0].(*mediatailor.ListChannelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannels indicates an expected call of ListChannels
+func (mr *MockMediaTailorAPIMockRecorder) ListChannels(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannels", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListChannels), arg0)
+}
+
+// ListChannelsPages mocks base method
+func (m *MockMediaTailorAPI) ListChannelsPages(arg0 *mediatailor.ListChannelsInput, arg1 func(*mediatailor.ListChannelsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelsPages indicates an expected call of ListChannelsPages
+func (mr *MockMediaTailorAPIMockRecorder) ListChannelsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsPages", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListChannelsPages), arg0, arg1)
+}
+
+// ListChannelsPagesWithContext mocks base method
+func (m *MockMediaTailorAPI) ListChannelsPagesWithContext(arg0 context.Context, arg1 *mediatailor.ListChannelsInput, arg2 func(*mediatailor.ListChannelsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelsPagesWithContext indicates an expected call of ListChannelsPagesWithContext
+func (mr *MockMediaTailorAPIMockRecorder) ListChannelsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsPagesWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListChannelsPagesWithContext), varargs...)
+}
+
+// ListChannelsRequest mocks base method
+func (m *MockMediaTailorAPI) ListChannelsRequest(arg0 *mediatailor.ListChannelsInput) (*request.Request, *mediatailor.ListChannelsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.ListChannelsOutput)
+	return ret0, ret1
+}
+
+// ListChannelsRequest indicates an expected call of ListChannelsRequest
+func (mr *MockMediaTailorAPIMockRecorder) ListChannelsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListChannelsRequest), arg0)
+}
+
+// ListChannelsWithContext mocks base method
+func (m *MockMediaTailorAPI) ListChannelsWithContext(arg0 context.Context, arg1 *mediatailor.ListChannelsInput, arg2 ...request.Option) (*mediatailor.ListChannelsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelsWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.ListChannelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelsWithContext indicates an expected call of ListChannelsWithContext
+func (mr *MockMediaTailorAPIMockRecorder) ListChannelsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListChannelsWithContext), varargs...)
 }
 
 // ListPlaybackConfigurations mocks base method
@@ -218,6 +1084,172 @@ func (mr *MockMediaTailorAPIMockRecorder) ListPlaybackConfigurationsWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlaybackConfigurationsWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListPlaybackConfigurationsWithContext), varargs...)
 }
 
+// ListPrograms mocks base method
+func (m *MockMediaTailorAPI) ListPrograms(arg0 *mediatailor.ListProgramsInput) (*mediatailor.ListProgramsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPrograms", arg0)
+	ret0, _ := ret[0].(*mediatailor.ListProgramsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPrograms indicates an expected call of ListPrograms
+func (mr *MockMediaTailorAPIMockRecorder) ListPrograms(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPrograms", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListPrograms), arg0)
+}
+
+// ListProgramsPages mocks base method
+func (m *MockMediaTailorAPI) ListProgramsPages(arg0 *mediatailor.ListProgramsInput, arg1 func(*mediatailor.ListProgramsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProgramsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProgramsPages indicates an expected call of ListProgramsPages
+func (mr *MockMediaTailorAPIMockRecorder) ListProgramsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProgramsPages", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListProgramsPages), arg0, arg1)
+}
+
+// ListProgramsPagesWithContext mocks base method
+func (m *MockMediaTailorAPI) ListProgramsPagesWithContext(arg0 context.Context, arg1 *mediatailor.ListProgramsInput, arg2 func(*mediatailor.ListProgramsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProgramsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProgramsPagesWithContext indicates an expected call of ListProgramsPagesWithContext
+func (mr *MockMediaTailorAPIMockRecorder) ListProgramsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProgramsPagesWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListProgramsPagesWithContext), varargs...)
+}
+
+// ListProgramsRequest mocks base method
+func (m *MockMediaTailorAPI) ListProgramsRequest(arg0 *mediatailor.ListProgramsInput) (*request.Request, *mediatailor.ListProgramsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProgramsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.ListProgramsOutput)
+	return ret0, ret1
+}
+
+// ListProgramsRequest indicates an expected call of ListProgramsRequest
+func (mr *MockMediaTailorAPIMockRecorder) ListProgramsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProgramsRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListProgramsRequest), arg0)
+}
+
+// ListProgramsWithContext mocks base method
+func (m *MockMediaTailorAPI) ListProgramsWithContext(arg0 context.Context, arg1 *mediatailor.ListProgramsInput, arg2 ...request.Option) (*mediatailor.ListProgramsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProgramsWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.ListProgramsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProgramsWithContext indicates an expected call of ListProgramsWithContext
+func (mr *MockMediaTailorAPIMockRecorder) ListProgramsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProgramsWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListProgramsWithContext), varargs...)
+}
+
+// ListSourceLocations mocks base method
+func (m *MockMediaTailorAPI) ListSourceLocations(arg0 *mediatailor.ListSourceLocationsInput) (*mediatailor.ListSourceLocationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSourceLocations", arg0)
+	ret0, _ := ret[0].(*mediatailor.ListSourceLocationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSourceLocations indicates an expected call of ListSourceLocations
+func (mr *MockMediaTailorAPIMockRecorder) ListSourceLocations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceLocations", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListSourceLocations), arg0)
+}
+
+// ListSourceLocationsPages mocks base method
+func (m *MockMediaTailorAPI) ListSourceLocationsPages(arg0 *mediatailor.ListSourceLocationsInput, arg1 func(*mediatailor.ListSourceLocationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSourceLocationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSourceLocationsPages indicates an expected call of ListSourceLocationsPages
+func (mr *MockMediaTailorAPIMockRecorder) ListSourceLocationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceLocationsPages", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListSourceLocationsPages), arg0, arg1)
+}
+
+// ListSourceLocationsPagesWithContext mocks base method
+func (m *MockMediaTailorAPI) ListSourceLocationsPagesWithContext(arg0 context.Context, arg1 *mediatailor.ListSourceLocationsInput, arg2 func(*mediatailor.ListSourceLocationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSourceLocationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSourceLocationsPagesWithContext indicates an expected call of ListSourceLocationsPagesWithContext
+func (mr *MockMediaTailorAPIMockRecorder) ListSourceLocationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceLocationsPagesWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListSourceLocationsPagesWithContext), varargs...)
+}
+
+// ListSourceLocationsRequest mocks base method
+func (m *MockMediaTailorAPI) ListSourceLocationsRequest(arg0 *mediatailor.ListSourceLocationsInput) (*request.Request, *mediatailor.ListSourceLocationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSourceLocationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.ListSourceLocationsOutput)
+	return ret0, ret1
+}
+
+// ListSourceLocationsRequest indicates an expected call of ListSourceLocationsRequest
+func (mr *MockMediaTailorAPIMockRecorder) ListSourceLocationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceLocationsRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListSourceLocationsRequest), arg0)
+}
+
+// ListSourceLocationsWithContext mocks base method
+func (m *MockMediaTailorAPI) ListSourceLocationsWithContext(arg0 context.Context, arg1 *mediatailor.ListSourceLocationsInput, arg2 ...request.Option) (*mediatailor.ListSourceLocationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSourceLocationsWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.ListSourceLocationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSourceLocationsWithContext indicates an expected call of ListSourceLocationsWithContext
+func (mr *MockMediaTailorAPIMockRecorder) ListSourceLocationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceLocationsWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListSourceLocationsWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockMediaTailorAPI) ListTagsForResource(arg0 *mediatailor.ListTagsForResourceInput) (*mediatailor.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -268,6 +1300,139 @@ func (mr *MockMediaTailorAPIMockRecorder) ListTagsForResourceWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ListVodSources mocks base method
+func (m *MockMediaTailorAPI) ListVodSources(arg0 *mediatailor.ListVodSourcesInput) (*mediatailor.ListVodSourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVodSources", arg0)
+	ret0, _ := ret[0].(*mediatailor.ListVodSourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVodSources indicates an expected call of ListVodSources
+func (mr *MockMediaTailorAPIMockRecorder) ListVodSources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVodSources", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListVodSources), arg0)
+}
+
+// ListVodSourcesPages mocks base method
+func (m *MockMediaTailorAPI) ListVodSourcesPages(arg0 *mediatailor.ListVodSourcesInput, arg1 func(*mediatailor.ListVodSourcesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVodSourcesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListVodSourcesPages indicates an expected call of ListVodSourcesPages
+func (mr *MockMediaTailorAPIMockRecorder) ListVodSourcesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVodSourcesPages", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListVodSourcesPages), arg0, arg1)
+}
+
+// ListVodSourcesPagesWithContext mocks base method
+func (m *MockMediaTailorAPI) ListVodSourcesPagesWithContext(arg0 context.Context, arg1 *mediatailor.ListVodSourcesInput, arg2 func(*mediatailor.ListVodSourcesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVodSourcesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListVodSourcesPagesWithContext indicates an expected call of ListVodSourcesPagesWithContext
+func (mr *MockMediaTailorAPIMockRecorder) ListVodSourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVodSourcesPagesWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListVodSourcesPagesWithContext), varargs...)
+}
+
+// ListVodSourcesRequest mocks base method
+func (m *MockMediaTailorAPI) ListVodSourcesRequest(arg0 *mediatailor.ListVodSourcesInput) (*request.Request, *mediatailor.ListVodSourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVodSourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.ListVodSourcesOutput)
+	return ret0, ret1
+}
+
+// ListVodSourcesRequest indicates an expected call of ListVodSourcesRequest
+func (mr *MockMediaTailorAPIMockRecorder) ListVodSourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVodSourcesRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListVodSourcesRequest), arg0)
+}
+
+// ListVodSourcesWithContext mocks base method
+func (m *MockMediaTailorAPI) ListVodSourcesWithContext(arg0 context.Context, arg1 *mediatailor.ListVodSourcesInput, arg2 ...request.Option) (*mediatailor.ListVodSourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVodSourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.ListVodSourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVodSourcesWithContext indicates an expected call of ListVodSourcesWithContext
+func (mr *MockMediaTailorAPIMockRecorder) ListVodSourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVodSourcesWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ListVodSourcesWithContext), varargs...)
+}
+
+// PutChannelPolicy mocks base method
+func (m *MockMediaTailorAPI) PutChannelPolicy(arg0 *mediatailor.PutChannelPolicyInput) (*mediatailor.PutChannelPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutChannelPolicy", arg0)
+	ret0, _ := ret[0].(*mediatailor.PutChannelPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutChannelPolicy indicates an expected call of PutChannelPolicy
+func (mr *MockMediaTailorAPIMockRecorder) PutChannelPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutChannelPolicy", reflect.TypeOf((*MockMediaTailorAPI)(nil).PutChannelPolicy), arg0)
+}
+
+// PutChannelPolicyRequest mocks base method
+func (m *MockMediaTailorAPI) PutChannelPolicyRequest(arg0 *mediatailor.PutChannelPolicyInput) (*request.Request, *mediatailor.PutChannelPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutChannelPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.PutChannelPolicyOutput)
+	return ret0, ret1
+}
+
+// PutChannelPolicyRequest indicates an expected call of PutChannelPolicyRequest
+func (mr *MockMediaTailorAPIMockRecorder) PutChannelPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutChannelPolicyRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).PutChannelPolicyRequest), arg0)
+}
+
+// PutChannelPolicyWithContext mocks base method
+func (m *MockMediaTailorAPI) PutChannelPolicyWithContext(arg0 context.Context, arg1 *mediatailor.PutChannelPolicyInput, arg2 ...request.Option) (*mediatailor.PutChannelPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutChannelPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.PutChannelPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutChannelPolicyWithContext indicates an expected call of PutChannelPolicyWithContext
+func (mr *MockMediaTailorAPIMockRecorder) PutChannelPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutChannelPolicyWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).PutChannelPolicyWithContext), varargs...)
+}
+
 // PutPlaybackConfiguration mocks base method
 func (m *MockMediaTailorAPI) PutPlaybackConfiguration(arg0 *mediatailor.PutPlaybackConfigurationInput) (*mediatailor.PutPlaybackConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -316,6 +1481,106 @@ func (mr *MockMediaTailorAPIMockRecorder) PutPlaybackConfigurationWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPlaybackConfigurationWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).PutPlaybackConfigurationWithContext), varargs...)
+}
+
+// StartChannel mocks base method
+func (m *MockMediaTailorAPI) StartChannel(arg0 *mediatailor.StartChannelInput) (*mediatailor.StartChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartChannel", arg0)
+	ret0, _ := ret[0].(*mediatailor.StartChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartChannel indicates an expected call of StartChannel
+func (mr *MockMediaTailorAPIMockRecorder) StartChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartChannel", reflect.TypeOf((*MockMediaTailorAPI)(nil).StartChannel), arg0)
+}
+
+// StartChannelRequest mocks base method
+func (m *MockMediaTailorAPI) StartChannelRequest(arg0 *mediatailor.StartChannelInput) (*request.Request, *mediatailor.StartChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.StartChannelOutput)
+	return ret0, ret1
+}
+
+// StartChannelRequest indicates an expected call of StartChannelRequest
+func (mr *MockMediaTailorAPIMockRecorder) StartChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartChannelRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).StartChannelRequest), arg0)
+}
+
+// StartChannelWithContext mocks base method
+func (m *MockMediaTailorAPI) StartChannelWithContext(arg0 context.Context, arg1 *mediatailor.StartChannelInput, arg2 ...request.Option) (*mediatailor.StartChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.StartChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartChannelWithContext indicates an expected call of StartChannelWithContext
+func (mr *MockMediaTailorAPIMockRecorder) StartChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartChannelWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).StartChannelWithContext), varargs...)
+}
+
+// StopChannel mocks base method
+func (m *MockMediaTailorAPI) StopChannel(arg0 *mediatailor.StopChannelInput) (*mediatailor.StopChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopChannel", arg0)
+	ret0, _ := ret[0].(*mediatailor.StopChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopChannel indicates an expected call of StopChannel
+func (mr *MockMediaTailorAPIMockRecorder) StopChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopChannel", reflect.TypeOf((*MockMediaTailorAPI)(nil).StopChannel), arg0)
+}
+
+// StopChannelRequest mocks base method
+func (m *MockMediaTailorAPI) StopChannelRequest(arg0 *mediatailor.StopChannelInput) (*request.Request, *mediatailor.StopChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.StopChannelOutput)
+	return ret0, ret1
+}
+
+// StopChannelRequest indicates an expected call of StopChannelRequest
+func (mr *MockMediaTailorAPIMockRecorder) StopChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopChannelRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).StopChannelRequest), arg0)
+}
+
+// StopChannelWithContext mocks base method
+func (m *MockMediaTailorAPI) StopChannelWithContext(arg0 context.Context, arg1 *mediatailor.StopChannelInput, arg2 ...request.Option) (*mediatailor.StopChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.StopChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopChannelWithContext indicates an expected call of StopChannelWithContext
+func (mr *MockMediaTailorAPIMockRecorder) StopChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopChannelWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).StopChannelWithContext), varargs...)
 }
 
 // TagResource mocks base method
@@ -416,4 +1681,154 @@ func (mr *MockMediaTailorAPIMockRecorder) UntagResourceWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateChannel mocks base method
+func (m *MockMediaTailorAPI) UpdateChannel(arg0 *mediatailor.UpdateChannelInput) (*mediatailor.UpdateChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateChannel", arg0)
+	ret0, _ := ret[0].(*mediatailor.UpdateChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateChannel indicates an expected call of UpdateChannel
+func (mr *MockMediaTailorAPIMockRecorder) UpdateChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannel", reflect.TypeOf((*MockMediaTailorAPI)(nil).UpdateChannel), arg0)
+}
+
+// UpdateChannelRequest mocks base method
+func (m *MockMediaTailorAPI) UpdateChannelRequest(arg0 *mediatailor.UpdateChannelInput) (*request.Request, *mediatailor.UpdateChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.UpdateChannelOutput)
+	return ret0, ret1
+}
+
+// UpdateChannelRequest indicates an expected call of UpdateChannelRequest
+func (mr *MockMediaTailorAPIMockRecorder) UpdateChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).UpdateChannelRequest), arg0)
+}
+
+// UpdateChannelWithContext mocks base method
+func (m *MockMediaTailorAPI) UpdateChannelWithContext(arg0 context.Context, arg1 *mediatailor.UpdateChannelInput, arg2 ...request.Option) (*mediatailor.UpdateChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.UpdateChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateChannelWithContext indicates an expected call of UpdateChannelWithContext
+func (mr *MockMediaTailorAPIMockRecorder) UpdateChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).UpdateChannelWithContext), varargs...)
+}
+
+// UpdateSourceLocation mocks base method
+func (m *MockMediaTailorAPI) UpdateSourceLocation(arg0 *mediatailor.UpdateSourceLocationInput) (*mediatailor.UpdateSourceLocationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSourceLocation", arg0)
+	ret0, _ := ret[0].(*mediatailor.UpdateSourceLocationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSourceLocation indicates an expected call of UpdateSourceLocation
+func (mr *MockMediaTailorAPIMockRecorder) UpdateSourceLocation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSourceLocation", reflect.TypeOf((*MockMediaTailorAPI)(nil).UpdateSourceLocation), arg0)
+}
+
+// UpdateSourceLocationRequest mocks base method
+func (m *MockMediaTailorAPI) UpdateSourceLocationRequest(arg0 *mediatailor.UpdateSourceLocationInput) (*request.Request, *mediatailor.UpdateSourceLocationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSourceLocationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.UpdateSourceLocationOutput)
+	return ret0, ret1
+}
+
+// UpdateSourceLocationRequest indicates an expected call of UpdateSourceLocationRequest
+func (mr *MockMediaTailorAPIMockRecorder) UpdateSourceLocationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSourceLocationRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).UpdateSourceLocationRequest), arg0)
+}
+
+// UpdateSourceLocationWithContext mocks base method
+func (m *MockMediaTailorAPI) UpdateSourceLocationWithContext(arg0 context.Context, arg1 *mediatailor.UpdateSourceLocationInput, arg2 ...request.Option) (*mediatailor.UpdateSourceLocationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSourceLocationWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.UpdateSourceLocationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSourceLocationWithContext indicates an expected call of UpdateSourceLocationWithContext
+func (mr *MockMediaTailorAPIMockRecorder) UpdateSourceLocationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSourceLocationWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).UpdateSourceLocationWithContext), varargs...)
+}
+
+// UpdateVodSource mocks base method
+func (m *MockMediaTailorAPI) UpdateVodSource(arg0 *mediatailor.UpdateVodSourceInput) (*mediatailor.UpdateVodSourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVodSource", arg0)
+	ret0, _ := ret[0].(*mediatailor.UpdateVodSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVodSource indicates an expected call of UpdateVodSource
+func (mr *MockMediaTailorAPIMockRecorder) UpdateVodSource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVodSource", reflect.TypeOf((*MockMediaTailorAPI)(nil).UpdateVodSource), arg0)
+}
+
+// UpdateVodSourceRequest mocks base method
+func (m *MockMediaTailorAPI) UpdateVodSourceRequest(arg0 *mediatailor.UpdateVodSourceInput) (*request.Request, *mediatailor.UpdateVodSourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVodSourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.UpdateVodSourceOutput)
+	return ret0, ret1
+}
+
+// UpdateVodSourceRequest indicates an expected call of UpdateVodSourceRequest
+func (mr *MockMediaTailorAPIMockRecorder) UpdateVodSourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVodSourceRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).UpdateVodSourceRequest), arg0)
+}
+
+// UpdateVodSourceWithContext mocks base method
+func (m *MockMediaTailorAPI) UpdateVodSourceWithContext(arg0 context.Context, arg1 *mediatailor.UpdateVodSourceInput, arg2 ...request.Option) (*mediatailor.UpdateVodSourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateVodSourceWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.UpdateVodSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVodSourceWithContext indicates an expected call of UpdateVodSourceWithContext
+func (mr *MockMediaTailorAPIMockRecorder) UpdateVodSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVodSourceWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).UpdateVodSourceWithContext), varargs...)
 }

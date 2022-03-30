@@ -385,6 +385,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) CreateTagsWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTagsWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateTagsWithContext), varargs...)
 }
 
+// CreateWorkspaceBundle mocks base method
+func (m *MockWorkSpacesAPI) CreateWorkspaceBundle(arg0 *workspaces.CreateWorkspaceBundleInput) (*workspaces.CreateWorkspaceBundleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorkspaceBundle", arg0)
+	ret0, _ := ret[0].(*workspaces.CreateWorkspaceBundleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorkspaceBundle indicates an expected call of CreateWorkspaceBundle
+func (mr *MockWorkSpacesAPIMockRecorder) CreateWorkspaceBundle(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkspaceBundle", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateWorkspaceBundle), arg0)
+}
+
+// CreateWorkspaceBundleRequest mocks base method
+func (m *MockWorkSpacesAPI) CreateWorkspaceBundleRequest(arg0 *workspaces.CreateWorkspaceBundleInput) (*request.Request, *workspaces.CreateWorkspaceBundleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorkspaceBundleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.CreateWorkspaceBundleOutput)
+	return ret0, ret1
+}
+
+// CreateWorkspaceBundleRequest indicates an expected call of CreateWorkspaceBundleRequest
+func (mr *MockWorkSpacesAPIMockRecorder) CreateWorkspaceBundleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkspaceBundleRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateWorkspaceBundleRequest), arg0)
+}
+
+// CreateWorkspaceBundleWithContext mocks base method
+func (m *MockWorkSpacesAPI) CreateWorkspaceBundleWithContext(arg0 context.Context, arg1 *workspaces.CreateWorkspaceBundleInput, arg2 ...request.Option) (*workspaces.CreateWorkspaceBundleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWorkspaceBundleWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.CreateWorkspaceBundleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorkspaceBundleWithContext indicates an expected call of CreateWorkspaceBundleWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) CreateWorkspaceBundleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkspaceBundleWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateWorkspaceBundleWithContext), varargs...)
+}
+
 // CreateWorkspaces mocks base method
 func (m *MockWorkSpacesAPI) CreateWorkspaces(arg0 *workspaces.CreateWorkspacesInput) (*workspaces.CreateWorkspacesOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +633,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) DeleteTagsWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteTagsWithContext), varargs...)
+}
+
+// DeleteWorkspaceBundle mocks base method
+func (m *MockWorkSpacesAPI) DeleteWorkspaceBundle(arg0 *workspaces.DeleteWorkspaceBundleInput) (*workspaces.DeleteWorkspaceBundleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorkspaceBundle", arg0)
+	ret0, _ := ret[0].(*workspaces.DeleteWorkspaceBundleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorkspaceBundle indicates an expected call of DeleteWorkspaceBundle
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteWorkspaceBundle(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkspaceBundle", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteWorkspaceBundle), arg0)
+}
+
+// DeleteWorkspaceBundleRequest mocks base method
+func (m *MockWorkSpacesAPI) DeleteWorkspaceBundleRequest(arg0 *workspaces.DeleteWorkspaceBundleInput) (*request.Request, *workspaces.DeleteWorkspaceBundleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorkspaceBundleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DeleteWorkspaceBundleOutput)
+	return ret0, ret1
+}
+
+// DeleteWorkspaceBundleRequest indicates an expected call of DeleteWorkspaceBundleRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteWorkspaceBundleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkspaceBundleRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteWorkspaceBundleRequest), arg0)
+}
+
+// DeleteWorkspaceBundleWithContext mocks base method
+func (m *MockWorkSpacesAPI) DeleteWorkspaceBundleWithContext(arg0 context.Context, arg1 *workspaces.DeleteWorkspaceBundleInput, arg2 ...request.Option) (*workspaces.DeleteWorkspaceBundleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteWorkspaceBundleWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DeleteWorkspaceBundleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorkspaceBundleWithContext indicates an expected call of DeleteWorkspaceBundleWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteWorkspaceBundleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkspaceBundleWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteWorkspaceBundleWithContext), varargs...)
 }
 
 // DeleteWorkspaceImage mocks base method
@@ -2582,6 +2682,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) UpdateRulesOfIpGroupWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRulesOfIpGroupWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).UpdateRulesOfIpGroupWithContext), varargs...)
+}
+
+// UpdateWorkspaceBundle mocks base method
+func (m *MockWorkSpacesAPI) UpdateWorkspaceBundle(arg0 *workspaces.UpdateWorkspaceBundleInput) (*workspaces.UpdateWorkspaceBundleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkspaceBundle", arg0)
+	ret0, _ := ret[0].(*workspaces.UpdateWorkspaceBundleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkspaceBundle indicates an expected call of UpdateWorkspaceBundle
+func (mr *MockWorkSpacesAPIMockRecorder) UpdateWorkspaceBundle(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkspaceBundle", reflect.TypeOf((*MockWorkSpacesAPI)(nil).UpdateWorkspaceBundle), arg0)
+}
+
+// UpdateWorkspaceBundleRequest mocks base method
+func (m *MockWorkSpacesAPI) UpdateWorkspaceBundleRequest(arg0 *workspaces.UpdateWorkspaceBundleInput) (*request.Request, *workspaces.UpdateWorkspaceBundleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkspaceBundleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.UpdateWorkspaceBundleOutput)
+	return ret0, ret1
+}
+
+// UpdateWorkspaceBundleRequest indicates an expected call of UpdateWorkspaceBundleRequest
+func (mr *MockWorkSpacesAPIMockRecorder) UpdateWorkspaceBundleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkspaceBundleRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).UpdateWorkspaceBundleRequest), arg0)
+}
+
+// UpdateWorkspaceBundleWithContext mocks base method
+func (m *MockWorkSpacesAPI) UpdateWorkspaceBundleWithContext(arg0 context.Context, arg1 *workspaces.UpdateWorkspaceBundleInput, arg2 ...request.Option) (*workspaces.UpdateWorkspaceBundleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateWorkspaceBundleWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.UpdateWorkspaceBundleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkspaceBundleWithContext indicates an expected call of UpdateWorkspaceBundleWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) UpdateWorkspaceBundleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkspaceBundleWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).UpdateWorkspaceBundleWithContext), varargs...)
 }
 
 // UpdateWorkspaceImagePermission mocks base method
