@@ -1751,6 +1751,89 @@ func (mr *MockIoTSiteWiseAPIMockRecorder) GetAssetPropertyValueWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssetPropertyValueWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).GetAssetPropertyValueWithContext), varargs...)
 }
 
+// GetInterpolatedAssetPropertyValues mocks base method
+func (m *MockIoTSiteWiseAPI) GetInterpolatedAssetPropertyValues(arg0 *iotsitewise.GetInterpolatedAssetPropertyValuesInput) (*iotsitewise.GetInterpolatedAssetPropertyValuesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInterpolatedAssetPropertyValues", arg0)
+	ret0, _ := ret[0].(*iotsitewise.GetInterpolatedAssetPropertyValuesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInterpolatedAssetPropertyValues indicates an expected call of GetInterpolatedAssetPropertyValues
+func (mr *MockIoTSiteWiseAPIMockRecorder) GetInterpolatedAssetPropertyValues(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInterpolatedAssetPropertyValues", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).GetInterpolatedAssetPropertyValues), arg0)
+}
+
+// GetInterpolatedAssetPropertyValuesPages mocks base method
+func (m *MockIoTSiteWiseAPI) GetInterpolatedAssetPropertyValuesPages(arg0 *iotsitewise.GetInterpolatedAssetPropertyValuesInput, arg1 func(*iotsitewise.GetInterpolatedAssetPropertyValuesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInterpolatedAssetPropertyValuesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetInterpolatedAssetPropertyValuesPages indicates an expected call of GetInterpolatedAssetPropertyValuesPages
+func (mr *MockIoTSiteWiseAPIMockRecorder) GetInterpolatedAssetPropertyValuesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInterpolatedAssetPropertyValuesPages", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).GetInterpolatedAssetPropertyValuesPages), arg0, arg1)
+}
+
+// GetInterpolatedAssetPropertyValuesPagesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) GetInterpolatedAssetPropertyValuesPagesWithContext(arg0 context.Context, arg1 *iotsitewise.GetInterpolatedAssetPropertyValuesInput, arg2 func(*iotsitewise.GetInterpolatedAssetPropertyValuesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetInterpolatedAssetPropertyValuesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetInterpolatedAssetPropertyValuesPagesWithContext indicates an expected call of GetInterpolatedAssetPropertyValuesPagesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) GetInterpolatedAssetPropertyValuesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInterpolatedAssetPropertyValuesPagesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).GetInterpolatedAssetPropertyValuesPagesWithContext), varargs...)
+}
+
+// GetInterpolatedAssetPropertyValuesRequest mocks base method
+func (m *MockIoTSiteWiseAPI) GetInterpolatedAssetPropertyValuesRequest(arg0 *iotsitewise.GetInterpolatedAssetPropertyValuesInput) (*request.Request, *iotsitewise.GetInterpolatedAssetPropertyValuesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetInterpolatedAssetPropertyValuesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.GetInterpolatedAssetPropertyValuesOutput)
+	return ret0, ret1
+}
+
+// GetInterpolatedAssetPropertyValuesRequest indicates an expected call of GetInterpolatedAssetPropertyValuesRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) GetInterpolatedAssetPropertyValuesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInterpolatedAssetPropertyValuesRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).GetInterpolatedAssetPropertyValuesRequest), arg0)
+}
+
+// GetInterpolatedAssetPropertyValuesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) GetInterpolatedAssetPropertyValuesWithContext(arg0 context.Context, arg1 *iotsitewise.GetInterpolatedAssetPropertyValuesInput, arg2 ...request.Option) (*iotsitewise.GetInterpolatedAssetPropertyValuesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetInterpolatedAssetPropertyValuesWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.GetInterpolatedAssetPropertyValuesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetInterpolatedAssetPropertyValuesWithContext indicates an expected call of GetInterpolatedAssetPropertyValuesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) GetInterpolatedAssetPropertyValuesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInterpolatedAssetPropertyValuesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).GetInterpolatedAssetPropertyValuesWithContext), varargs...)
+}
+
 // ListAccessPolicies mocks base method
 func (m *MockIoTSiteWiseAPI) ListAccessPolicies(arg0 *iotsitewise.ListAccessPoliciesInput) (*iotsitewise.ListAccessPoliciesOutput, error) {
 	m.ctrl.T.Helper()
