@@ -185,6 +185,156 @@ func (mr *MockLakeFormationAPIMockRecorder) BatchRevokePermissionsWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchRevokePermissionsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).BatchRevokePermissionsWithContext), varargs...)
 }
 
+// CancelTransaction mocks base method
+func (m *MockLakeFormationAPI) CancelTransaction(arg0 *lakeformation.CancelTransactionInput) (*lakeformation.CancelTransactionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelTransaction", arg0)
+	ret0, _ := ret[0].(*lakeformation.CancelTransactionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelTransaction indicates an expected call of CancelTransaction
+func (mr *MockLakeFormationAPIMockRecorder) CancelTransaction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelTransaction", reflect.TypeOf((*MockLakeFormationAPI)(nil).CancelTransaction), arg0)
+}
+
+// CancelTransactionRequest mocks base method
+func (m *MockLakeFormationAPI) CancelTransactionRequest(arg0 *lakeformation.CancelTransactionInput) (*request.Request, *lakeformation.CancelTransactionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelTransactionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.CancelTransactionOutput)
+	return ret0, ret1
+}
+
+// CancelTransactionRequest indicates an expected call of CancelTransactionRequest
+func (mr *MockLakeFormationAPIMockRecorder) CancelTransactionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelTransactionRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).CancelTransactionRequest), arg0)
+}
+
+// CancelTransactionWithContext mocks base method
+func (m *MockLakeFormationAPI) CancelTransactionWithContext(arg0 context.Context, arg1 *lakeformation.CancelTransactionInput, arg2 ...request.Option) (*lakeformation.CancelTransactionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelTransactionWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.CancelTransactionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelTransactionWithContext indicates an expected call of CancelTransactionWithContext
+func (mr *MockLakeFormationAPIMockRecorder) CancelTransactionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelTransactionWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).CancelTransactionWithContext), varargs...)
+}
+
+// CommitTransaction mocks base method
+func (m *MockLakeFormationAPI) CommitTransaction(arg0 *lakeformation.CommitTransactionInput) (*lakeformation.CommitTransactionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CommitTransaction", arg0)
+	ret0, _ := ret[0].(*lakeformation.CommitTransactionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CommitTransaction indicates an expected call of CommitTransaction
+func (mr *MockLakeFormationAPIMockRecorder) CommitTransaction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CommitTransaction", reflect.TypeOf((*MockLakeFormationAPI)(nil).CommitTransaction), arg0)
+}
+
+// CommitTransactionRequest mocks base method
+func (m *MockLakeFormationAPI) CommitTransactionRequest(arg0 *lakeformation.CommitTransactionInput) (*request.Request, *lakeformation.CommitTransactionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CommitTransactionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.CommitTransactionOutput)
+	return ret0, ret1
+}
+
+// CommitTransactionRequest indicates an expected call of CommitTransactionRequest
+func (mr *MockLakeFormationAPIMockRecorder) CommitTransactionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CommitTransactionRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).CommitTransactionRequest), arg0)
+}
+
+// CommitTransactionWithContext mocks base method
+func (m *MockLakeFormationAPI) CommitTransactionWithContext(arg0 context.Context, arg1 *lakeformation.CommitTransactionInput, arg2 ...request.Option) (*lakeformation.CommitTransactionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CommitTransactionWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.CommitTransactionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CommitTransactionWithContext indicates an expected call of CommitTransactionWithContext
+func (mr *MockLakeFormationAPIMockRecorder) CommitTransactionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CommitTransactionWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).CommitTransactionWithContext), varargs...)
+}
+
+// CreateDataCellsFilter mocks base method
+func (m *MockLakeFormationAPI) CreateDataCellsFilter(arg0 *lakeformation.CreateDataCellsFilterInput) (*lakeformation.CreateDataCellsFilterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDataCellsFilter", arg0)
+	ret0, _ := ret[0].(*lakeformation.CreateDataCellsFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDataCellsFilter indicates an expected call of CreateDataCellsFilter
+func (mr *MockLakeFormationAPIMockRecorder) CreateDataCellsFilter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataCellsFilter", reflect.TypeOf((*MockLakeFormationAPI)(nil).CreateDataCellsFilter), arg0)
+}
+
+// CreateDataCellsFilterRequest mocks base method
+func (m *MockLakeFormationAPI) CreateDataCellsFilterRequest(arg0 *lakeformation.CreateDataCellsFilterInput) (*request.Request, *lakeformation.CreateDataCellsFilterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDataCellsFilterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.CreateDataCellsFilterOutput)
+	return ret0, ret1
+}
+
+// CreateDataCellsFilterRequest indicates an expected call of CreateDataCellsFilterRequest
+func (mr *MockLakeFormationAPIMockRecorder) CreateDataCellsFilterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataCellsFilterRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).CreateDataCellsFilterRequest), arg0)
+}
+
+// CreateDataCellsFilterWithContext mocks base method
+func (m *MockLakeFormationAPI) CreateDataCellsFilterWithContext(arg0 context.Context, arg1 *lakeformation.CreateDataCellsFilterInput, arg2 ...request.Option) (*lakeformation.CreateDataCellsFilterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDataCellsFilterWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.CreateDataCellsFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDataCellsFilterWithContext indicates an expected call of CreateDataCellsFilterWithContext
+func (mr *MockLakeFormationAPIMockRecorder) CreateDataCellsFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataCellsFilterWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).CreateDataCellsFilterWithContext), varargs...)
+}
+
 // CreateLFTag mocks base method
 func (m *MockLakeFormationAPI) CreateLFTag(arg0 *lakeformation.CreateLFTagInput) (*lakeformation.CreateLFTagOutput, error) {
 	m.ctrl.T.Helper()
@@ -235,6 +385,56 @@ func (mr *MockLakeFormationAPIMockRecorder) CreateLFTagWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLFTagWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).CreateLFTagWithContext), varargs...)
 }
 
+// DeleteDataCellsFilter mocks base method
+func (m *MockLakeFormationAPI) DeleteDataCellsFilter(arg0 *lakeformation.DeleteDataCellsFilterInput) (*lakeformation.DeleteDataCellsFilterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDataCellsFilter", arg0)
+	ret0, _ := ret[0].(*lakeformation.DeleteDataCellsFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDataCellsFilter indicates an expected call of DeleteDataCellsFilter
+func (mr *MockLakeFormationAPIMockRecorder) DeleteDataCellsFilter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataCellsFilter", reflect.TypeOf((*MockLakeFormationAPI)(nil).DeleteDataCellsFilter), arg0)
+}
+
+// DeleteDataCellsFilterRequest mocks base method
+func (m *MockLakeFormationAPI) DeleteDataCellsFilterRequest(arg0 *lakeformation.DeleteDataCellsFilterInput) (*request.Request, *lakeformation.DeleteDataCellsFilterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDataCellsFilterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.DeleteDataCellsFilterOutput)
+	return ret0, ret1
+}
+
+// DeleteDataCellsFilterRequest indicates an expected call of DeleteDataCellsFilterRequest
+func (mr *MockLakeFormationAPIMockRecorder) DeleteDataCellsFilterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataCellsFilterRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).DeleteDataCellsFilterRequest), arg0)
+}
+
+// DeleteDataCellsFilterWithContext mocks base method
+func (m *MockLakeFormationAPI) DeleteDataCellsFilterWithContext(arg0 context.Context, arg1 *lakeformation.DeleteDataCellsFilterInput, arg2 ...request.Option) (*lakeformation.DeleteDataCellsFilterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDataCellsFilterWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.DeleteDataCellsFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDataCellsFilterWithContext indicates an expected call of DeleteDataCellsFilterWithContext
+func (mr *MockLakeFormationAPIMockRecorder) DeleteDataCellsFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataCellsFilterWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).DeleteDataCellsFilterWithContext), varargs...)
+}
+
 // DeleteLFTag mocks base method
 func (m *MockLakeFormationAPI) DeleteLFTag(arg0 *lakeformation.DeleteLFTagInput) (*lakeformation.DeleteLFTagOutput, error) {
 	m.ctrl.T.Helper()
@@ -283,6 +483,56 @@ func (mr *MockLakeFormationAPIMockRecorder) DeleteLFTagWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLFTagWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).DeleteLFTagWithContext), varargs...)
+}
+
+// DeleteObjectsOnCancel mocks base method
+func (m *MockLakeFormationAPI) DeleteObjectsOnCancel(arg0 *lakeformation.DeleteObjectsOnCancelInput) (*lakeformation.DeleteObjectsOnCancelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteObjectsOnCancel", arg0)
+	ret0, _ := ret[0].(*lakeformation.DeleteObjectsOnCancelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteObjectsOnCancel indicates an expected call of DeleteObjectsOnCancel
+func (mr *MockLakeFormationAPIMockRecorder) DeleteObjectsOnCancel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteObjectsOnCancel", reflect.TypeOf((*MockLakeFormationAPI)(nil).DeleteObjectsOnCancel), arg0)
+}
+
+// DeleteObjectsOnCancelRequest mocks base method
+func (m *MockLakeFormationAPI) DeleteObjectsOnCancelRequest(arg0 *lakeformation.DeleteObjectsOnCancelInput) (*request.Request, *lakeformation.DeleteObjectsOnCancelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteObjectsOnCancelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.DeleteObjectsOnCancelOutput)
+	return ret0, ret1
+}
+
+// DeleteObjectsOnCancelRequest indicates an expected call of DeleteObjectsOnCancelRequest
+func (mr *MockLakeFormationAPIMockRecorder) DeleteObjectsOnCancelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteObjectsOnCancelRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).DeleteObjectsOnCancelRequest), arg0)
+}
+
+// DeleteObjectsOnCancelWithContext mocks base method
+func (m *MockLakeFormationAPI) DeleteObjectsOnCancelWithContext(arg0 context.Context, arg1 *lakeformation.DeleteObjectsOnCancelInput, arg2 ...request.Option) (*lakeformation.DeleteObjectsOnCancelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteObjectsOnCancelWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.DeleteObjectsOnCancelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteObjectsOnCancelWithContext indicates an expected call of DeleteObjectsOnCancelWithContext
+func (mr *MockLakeFormationAPIMockRecorder) DeleteObjectsOnCancelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteObjectsOnCancelWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).DeleteObjectsOnCancelWithContext), varargs...)
 }
 
 // DeregisterResource mocks base method
@@ -383,6 +633,106 @@ func (mr *MockLakeFormationAPIMockRecorder) DescribeResourceWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeResourceWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).DescribeResourceWithContext), varargs...)
+}
+
+// DescribeTransaction mocks base method
+func (m *MockLakeFormationAPI) DescribeTransaction(arg0 *lakeformation.DescribeTransactionInput) (*lakeformation.DescribeTransactionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTransaction", arg0)
+	ret0, _ := ret[0].(*lakeformation.DescribeTransactionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTransaction indicates an expected call of DescribeTransaction
+func (mr *MockLakeFormationAPIMockRecorder) DescribeTransaction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTransaction", reflect.TypeOf((*MockLakeFormationAPI)(nil).DescribeTransaction), arg0)
+}
+
+// DescribeTransactionRequest mocks base method
+func (m *MockLakeFormationAPI) DescribeTransactionRequest(arg0 *lakeformation.DescribeTransactionInput) (*request.Request, *lakeformation.DescribeTransactionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTransactionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.DescribeTransactionOutput)
+	return ret0, ret1
+}
+
+// DescribeTransactionRequest indicates an expected call of DescribeTransactionRequest
+func (mr *MockLakeFormationAPIMockRecorder) DescribeTransactionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTransactionRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).DescribeTransactionRequest), arg0)
+}
+
+// DescribeTransactionWithContext mocks base method
+func (m *MockLakeFormationAPI) DescribeTransactionWithContext(arg0 context.Context, arg1 *lakeformation.DescribeTransactionInput, arg2 ...request.Option) (*lakeformation.DescribeTransactionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeTransactionWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.DescribeTransactionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTransactionWithContext indicates an expected call of DescribeTransactionWithContext
+func (mr *MockLakeFormationAPIMockRecorder) DescribeTransactionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTransactionWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).DescribeTransactionWithContext), varargs...)
+}
+
+// ExtendTransaction mocks base method
+func (m *MockLakeFormationAPI) ExtendTransaction(arg0 *lakeformation.ExtendTransactionInput) (*lakeformation.ExtendTransactionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExtendTransaction", arg0)
+	ret0, _ := ret[0].(*lakeformation.ExtendTransactionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExtendTransaction indicates an expected call of ExtendTransaction
+func (mr *MockLakeFormationAPIMockRecorder) ExtendTransaction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExtendTransaction", reflect.TypeOf((*MockLakeFormationAPI)(nil).ExtendTransaction), arg0)
+}
+
+// ExtendTransactionRequest mocks base method
+func (m *MockLakeFormationAPI) ExtendTransactionRequest(arg0 *lakeformation.ExtendTransactionInput) (*request.Request, *lakeformation.ExtendTransactionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExtendTransactionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.ExtendTransactionOutput)
+	return ret0, ret1
+}
+
+// ExtendTransactionRequest indicates an expected call of ExtendTransactionRequest
+func (mr *MockLakeFormationAPIMockRecorder) ExtendTransactionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExtendTransactionRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).ExtendTransactionRequest), arg0)
+}
+
+// ExtendTransactionWithContext mocks base method
+func (m *MockLakeFormationAPI) ExtendTransactionWithContext(arg0 context.Context, arg1 *lakeformation.ExtendTransactionInput, arg2 ...request.Option) (*lakeformation.ExtendTransactionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExtendTransactionWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.ExtendTransactionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExtendTransactionWithContext indicates an expected call of ExtendTransactionWithContext
+func (mr *MockLakeFormationAPIMockRecorder) ExtendTransactionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExtendTransactionWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).ExtendTransactionWithContext), varargs...)
 }
 
 // GetDataLakeSettings mocks base method
@@ -568,6 +918,106 @@ func (mr *MockLakeFormationAPIMockRecorder) GetLFTagWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLFTagWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetLFTagWithContext), varargs...)
 }
 
+// GetQueryState mocks base method
+func (m *MockLakeFormationAPI) GetQueryState(arg0 *lakeformation.GetQueryStateInput) (*lakeformation.GetQueryStateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetQueryState", arg0)
+	ret0, _ := ret[0].(*lakeformation.GetQueryStateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetQueryState indicates an expected call of GetQueryState
+func (mr *MockLakeFormationAPIMockRecorder) GetQueryState(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueryState", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetQueryState), arg0)
+}
+
+// GetQueryStateRequest mocks base method
+func (m *MockLakeFormationAPI) GetQueryStateRequest(arg0 *lakeformation.GetQueryStateInput) (*request.Request, *lakeformation.GetQueryStateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetQueryStateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.GetQueryStateOutput)
+	return ret0, ret1
+}
+
+// GetQueryStateRequest indicates an expected call of GetQueryStateRequest
+func (mr *MockLakeFormationAPIMockRecorder) GetQueryStateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueryStateRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetQueryStateRequest), arg0)
+}
+
+// GetQueryStateWithContext mocks base method
+func (m *MockLakeFormationAPI) GetQueryStateWithContext(arg0 context.Context, arg1 *lakeformation.GetQueryStateInput, arg2 ...request.Option) (*lakeformation.GetQueryStateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetQueryStateWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.GetQueryStateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetQueryStateWithContext indicates an expected call of GetQueryStateWithContext
+func (mr *MockLakeFormationAPIMockRecorder) GetQueryStateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueryStateWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetQueryStateWithContext), varargs...)
+}
+
+// GetQueryStatistics mocks base method
+func (m *MockLakeFormationAPI) GetQueryStatistics(arg0 *lakeformation.GetQueryStatisticsInput) (*lakeformation.GetQueryStatisticsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetQueryStatistics", arg0)
+	ret0, _ := ret[0].(*lakeformation.GetQueryStatisticsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetQueryStatistics indicates an expected call of GetQueryStatistics
+func (mr *MockLakeFormationAPIMockRecorder) GetQueryStatistics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueryStatistics", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetQueryStatistics), arg0)
+}
+
+// GetQueryStatisticsRequest mocks base method
+func (m *MockLakeFormationAPI) GetQueryStatisticsRequest(arg0 *lakeformation.GetQueryStatisticsInput) (*request.Request, *lakeformation.GetQueryStatisticsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetQueryStatisticsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.GetQueryStatisticsOutput)
+	return ret0, ret1
+}
+
+// GetQueryStatisticsRequest indicates an expected call of GetQueryStatisticsRequest
+func (mr *MockLakeFormationAPIMockRecorder) GetQueryStatisticsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueryStatisticsRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetQueryStatisticsRequest), arg0)
+}
+
+// GetQueryStatisticsWithContext mocks base method
+func (m *MockLakeFormationAPI) GetQueryStatisticsWithContext(arg0 context.Context, arg1 *lakeformation.GetQueryStatisticsInput, arg2 ...request.Option) (*lakeformation.GetQueryStatisticsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetQueryStatisticsWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.GetQueryStatisticsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetQueryStatisticsWithContext indicates an expected call of GetQueryStatisticsWithContext
+func (mr *MockLakeFormationAPIMockRecorder) GetQueryStatisticsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueryStatisticsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetQueryStatisticsWithContext), varargs...)
+}
+
 // GetResourceLFTags mocks base method
 func (m *MockLakeFormationAPI) GetResourceLFTags(arg0 *lakeformation.GetResourceLFTagsInput) (*lakeformation.GetResourceLFTagsOutput, error) {
 	m.ctrl.T.Helper()
@@ -616,6 +1066,222 @@ func (mr *MockLakeFormationAPIMockRecorder) GetResourceLFTagsWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceLFTagsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetResourceLFTagsWithContext), varargs...)
+}
+
+// GetTableObjects mocks base method
+func (m *MockLakeFormationAPI) GetTableObjects(arg0 *lakeformation.GetTableObjectsInput) (*lakeformation.GetTableObjectsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTableObjects", arg0)
+	ret0, _ := ret[0].(*lakeformation.GetTableObjectsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTableObjects indicates an expected call of GetTableObjects
+func (mr *MockLakeFormationAPIMockRecorder) GetTableObjects(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTableObjects", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetTableObjects), arg0)
+}
+
+// GetTableObjectsPages mocks base method
+func (m *MockLakeFormationAPI) GetTableObjectsPages(arg0 *lakeformation.GetTableObjectsInput, arg1 func(*lakeformation.GetTableObjectsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTableObjectsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetTableObjectsPages indicates an expected call of GetTableObjectsPages
+func (mr *MockLakeFormationAPIMockRecorder) GetTableObjectsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTableObjectsPages", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetTableObjectsPages), arg0, arg1)
+}
+
+// GetTableObjectsPagesWithContext mocks base method
+func (m *MockLakeFormationAPI) GetTableObjectsPagesWithContext(arg0 context.Context, arg1 *lakeformation.GetTableObjectsInput, arg2 func(*lakeformation.GetTableObjectsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTableObjectsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetTableObjectsPagesWithContext indicates an expected call of GetTableObjectsPagesWithContext
+func (mr *MockLakeFormationAPIMockRecorder) GetTableObjectsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTableObjectsPagesWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetTableObjectsPagesWithContext), varargs...)
+}
+
+// GetTableObjectsRequest mocks base method
+func (m *MockLakeFormationAPI) GetTableObjectsRequest(arg0 *lakeformation.GetTableObjectsInput) (*request.Request, *lakeformation.GetTableObjectsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTableObjectsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.GetTableObjectsOutput)
+	return ret0, ret1
+}
+
+// GetTableObjectsRequest indicates an expected call of GetTableObjectsRequest
+func (mr *MockLakeFormationAPIMockRecorder) GetTableObjectsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTableObjectsRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetTableObjectsRequest), arg0)
+}
+
+// GetTableObjectsWithContext mocks base method
+func (m *MockLakeFormationAPI) GetTableObjectsWithContext(arg0 context.Context, arg1 *lakeformation.GetTableObjectsInput, arg2 ...request.Option) (*lakeformation.GetTableObjectsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTableObjectsWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.GetTableObjectsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTableObjectsWithContext indicates an expected call of GetTableObjectsWithContext
+func (mr *MockLakeFormationAPIMockRecorder) GetTableObjectsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTableObjectsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetTableObjectsWithContext), varargs...)
+}
+
+// GetWorkUnitResults mocks base method
+func (m *MockLakeFormationAPI) GetWorkUnitResults(arg0 *lakeformation.GetWorkUnitResultsInput) (*lakeformation.GetWorkUnitResultsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkUnitResults", arg0)
+	ret0, _ := ret[0].(*lakeformation.GetWorkUnitResultsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorkUnitResults indicates an expected call of GetWorkUnitResults
+func (mr *MockLakeFormationAPIMockRecorder) GetWorkUnitResults(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkUnitResults", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetWorkUnitResults), arg0)
+}
+
+// GetWorkUnitResultsRequest mocks base method
+func (m *MockLakeFormationAPI) GetWorkUnitResultsRequest(arg0 *lakeformation.GetWorkUnitResultsInput) (*request.Request, *lakeformation.GetWorkUnitResultsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkUnitResultsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.GetWorkUnitResultsOutput)
+	return ret0, ret1
+}
+
+// GetWorkUnitResultsRequest indicates an expected call of GetWorkUnitResultsRequest
+func (mr *MockLakeFormationAPIMockRecorder) GetWorkUnitResultsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkUnitResultsRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetWorkUnitResultsRequest), arg0)
+}
+
+// GetWorkUnitResultsWithContext mocks base method
+func (m *MockLakeFormationAPI) GetWorkUnitResultsWithContext(arg0 context.Context, arg1 *lakeformation.GetWorkUnitResultsInput, arg2 ...request.Option) (*lakeformation.GetWorkUnitResultsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetWorkUnitResultsWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.GetWorkUnitResultsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorkUnitResultsWithContext indicates an expected call of GetWorkUnitResultsWithContext
+func (mr *MockLakeFormationAPIMockRecorder) GetWorkUnitResultsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkUnitResultsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetWorkUnitResultsWithContext), varargs...)
+}
+
+// GetWorkUnits mocks base method
+func (m *MockLakeFormationAPI) GetWorkUnits(arg0 *lakeformation.GetWorkUnitsInput) (*lakeformation.GetWorkUnitsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkUnits", arg0)
+	ret0, _ := ret[0].(*lakeformation.GetWorkUnitsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorkUnits indicates an expected call of GetWorkUnits
+func (mr *MockLakeFormationAPIMockRecorder) GetWorkUnits(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkUnits", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetWorkUnits), arg0)
+}
+
+// GetWorkUnitsPages mocks base method
+func (m *MockLakeFormationAPI) GetWorkUnitsPages(arg0 *lakeformation.GetWorkUnitsInput, arg1 func(*lakeformation.GetWorkUnitsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkUnitsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetWorkUnitsPages indicates an expected call of GetWorkUnitsPages
+func (mr *MockLakeFormationAPIMockRecorder) GetWorkUnitsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkUnitsPages", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetWorkUnitsPages), arg0, arg1)
+}
+
+// GetWorkUnitsPagesWithContext mocks base method
+func (m *MockLakeFormationAPI) GetWorkUnitsPagesWithContext(arg0 context.Context, arg1 *lakeformation.GetWorkUnitsInput, arg2 func(*lakeformation.GetWorkUnitsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetWorkUnitsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetWorkUnitsPagesWithContext indicates an expected call of GetWorkUnitsPagesWithContext
+func (mr *MockLakeFormationAPIMockRecorder) GetWorkUnitsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkUnitsPagesWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetWorkUnitsPagesWithContext), varargs...)
+}
+
+// GetWorkUnitsRequest mocks base method
+func (m *MockLakeFormationAPI) GetWorkUnitsRequest(arg0 *lakeformation.GetWorkUnitsInput) (*request.Request, *lakeformation.GetWorkUnitsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWorkUnitsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.GetWorkUnitsOutput)
+	return ret0, ret1
+}
+
+// GetWorkUnitsRequest indicates an expected call of GetWorkUnitsRequest
+func (mr *MockLakeFormationAPIMockRecorder) GetWorkUnitsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkUnitsRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetWorkUnitsRequest), arg0)
+}
+
+// GetWorkUnitsWithContext mocks base method
+func (m *MockLakeFormationAPI) GetWorkUnitsWithContext(arg0 context.Context, arg1 *lakeformation.GetWorkUnitsInput, arg2 ...request.Option) (*lakeformation.GetWorkUnitsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetWorkUnitsWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.GetWorkUnitsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWorkUnitsWithContext indicates an expected call of GetWorkUnitsWithContext
+func (mr *MockLakeFormationAPIMockRecorder) GetWorkUnitsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkUnitsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetWorkUnitsWithContext), varargs...)
 }
 
 // GrantPermissions mocks base method
@@ -668,6 +1334,89 @@ func (mr *MockLakeFormationAPIMockRecorder) GrantPermissionsWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GrantPermissionsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).GrantPermissionsWithContext), varargs...)
 }
 
+// ListDataCellsFilter mocks base method
+func (m *MockLakeFormationAPI) ListDataCellsFilter(arg0 *lakeformation.ListDataCellsFilterInput) (*lakeformation.ListDataCellsFilterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataCellsFilter", arg0)
+	ret0, _ := ret[0].(*lakeformation.ListDataCellsFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataCellsFilter indicates an expected call of ListDataCellsFilter
+func (mr *MockLakeFormationAPIMockRecorder) ListDataCellsFilter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataCellsFilter", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListDataCellsFilter), arg0)
+}
+
+// ListDataCellsFilterPages mocks base method
+func (m *MockLakeFormationAPI) ListDataCellsFilterPages(arg0 *lakeformation.ListDataCellsFilterInput, arg1 func(*lakeformation.ListDataCellsFilterOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataCellsFilterPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDataCellsFilterPages indicates an expected call of ListDataCellsFilterPages
+func (mr *MockLakeFormationAPIMockRecorder) ListDataCellsFilterPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataCellsFilterPages", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListDataCellsFilterPages), arg0, arg1)
+}
+
+// ListDataCellsFilterPagesWithContext mocks base method
+func (m *MockLakeFormationAPI) ListDataCellsFilterPagesWithContext(arg0 context.Context, arg1 *lakeformation.ListDataCellsFilterInput, arg2 func(*lakeformation.ListDataCellsFilterOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDataCellsFilterPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDataCellsFilterPagesWithContext indicates an expected call of ListDataCellsFilterPagesWithContext
+func (mr *MockLakeFormationAPIMockRecorder) ListDataCellsFilterPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataCellsFilterPagesWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListDataCellsFilterPagesWithContext), varargs...)
+}
+
+// ListDataCellsFilterRequest mocks base method
+func (m *MockLakeFormationAPI) ListDataCellsFilterRequest(arg0 *lakeformation.ListDataCellsFilterInput) (*request.Request, *lakeformation.ListDataCellsFilterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataCellsFilterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.ListDataCellsFilterOutput)
+	return ret0, ret1
+}
+
+// ListDataCellsFilterRequest indicates an expected call of ListDataCellsFilterRequest
+func (mr *MockLakeFormationAPIMockRecorder) ListDataCellsFilterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataCellsFilterRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListDataCellsFilterRequest), arg0)
+}
+
+// ListDataCellsFilterWithContext mocks base method
+func (m *MockLakeFormationAPI) ListDataCellsFilterWithContext(arg0 context.Context, arg1 *lakeformation.ListDataCellsFilterInput, arg2 ...request.Option) (*lakeformation.ListDataCellsFilterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDataCellsFilterWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.ListDataCellsFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataCellsFilterWithContext indicates an expected call of ListDataCellsFilterWithContext
+func (mr *MockLakeFormationAPIMockRecorder) ListDataCellsFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataCellsFilterWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListDataCellsFilterWithContext), varargs...)
+}
+
 // ListLFTags mocks base method
 func (m *MockLakeFormationAPI) ListLFTags(arg0 *lakeformation.ListLFTagsInput) (*lakeformation.ListLFTagsOutput, error) {
 	m.ctrl.T.Helper()
@@ -681,6 +1430,39 @@ func (m *MockLakeFormationAPI) ListLFTags(arg0 *lakeformation.ListLFTagsInput) (
 func (mr *MockLakeFormationAPIMockRecorder) ListLFTags(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLFTags", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListLFTags), arg0)
+}
+
+// ListLFTagsPages mocks base method
+func (m *MockLakeFormationAPI) ListLFTagsPages(arg0 *lakeformation.ListLFTagsInput, arg1 func(*lakeformation.ListLFTagsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLFTagsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLFTagsPages indicates an expected call of ListLFTagsPages
+func (mr *MockLakeFormationAPIMockRecorder) ListLFTagsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLFTagsPages", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListLFTagsPages), arg0, arg1)
+}
+
+// ListLFTagsPagesWithContext mocks base method
+func (m *MockLakeFormationAPI) ListLFTagsPagesWithContext(arg0 context.Context, arg1 *lakeformation.ListLFTagsInput, arg2 func(*lakeformation.ListLFTagsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLFTagsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLFTagsPagesWithContext indicates an expected call of ListLFTagsPagesWithContext
+func (mr *MockLakeFormationAPIMockRecorder) ListLFTagsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLFTagsPagesWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListLFTagsPagesWithContext), varargs...)
 }
 
 // ListLFTagsRequest mocks base method
@@ -882,6 +1664,172 @@ func (mr *MockLakeFormationAPIMockRecorder) ListResourcesWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcesWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListResourcesWithContext), varargs...)
+}
+
+// ListTableStorageOptimizers mocks base method
+func (m *MockLakeFormationAPI) ListTableStorageOptimizers(arg0 *lakeformation.ListTableStorageOptimizersInput) (*lakeformation.ListTableStorageOptimizersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTableStorageOptimizers", arg0)
+	ret0, _ := ret[0].(*lakeformation.ListTableStorageOptimizersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTableStorageOptimizers indicates an expected call of ListTableStorageOptimizers
+func (mr *MockLakeFormationAPIMockRecorder) ListTableStorageOptimizers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTableStorageOptimizers", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListTableStorageOptimizers), arg0)
+}
+
+// ListTableStorageOptimizersPages mocks base method
+func (m *MockLakeFormationAPI) ListTableStorageOptimizersPages(arg0 *lakeformation.ListTableStorageOptimizersInput, arg1 func(*lakeformation.ListTableStorageOptimizersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTableStorageOptimizersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTableStorageOptimizersPages indicates an expected call of ListTableStorageOptimizersPages
+func (mr *MockLakeFormationAPIMockRecorder) ListTableStorageOptimizersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTableStorageOptimizersPages", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListTableStorageOptimizersPages), arg0, arg1)
+}
+
+// ListTableStorageOptimizersPagesWithContext mocks base method
+func (m *MockLakeFormationAPI) ListTableStorageOptimizersPagesWithContext(arg0 context.Context, arg1 *lakeformation.ListTableStorageOptimizersInput, arg2 func(*lakeformation.ListTableStorageOptimizersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTableStorageOptimizersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTableStorageOptimizersPagesWithContext indicates an expected call of ListTableStorageOptimizersPagesWithContext
+func (mr *MockLakeFormationAPIMockRecorder) ListTableStorageOptimizersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTableStorageOptimizersPagesWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListTableStorageOptimizersPagesWithContext), varargs...)
+}
+
+// ListTableStorageOptimizersRequest mocks base method
+func (m *MockLakeFormationAPI) ListTableStorageOptimizersRequest(arg0 *lakeformation.ListTableStorageOptimizersInput) (*request.Request, *lakeformation.ListTableStorageOptimizersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTableStorageOptimizersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.ListTableStorageOptimizersOutput)
+	return ret0, ret1
+}
+
+// ListTableStorageOptimizersRequest indicates an expected call of ListTableStorageOptimizersRequest
+func (mr *MockLakeFormationAPIMockRecorder) ListTableStorageOptimizersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTableStorageOptimizersRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListTableStorageOptimizersRequest), arg0)
+}
+
+// ListTableStorageOptimizersWithContext mocks base method
+func (m *MockLakeFormationAPI) ListTableStorageOptimizersWithContext(arg0 context.Context, arg1 *lakeformation.ListTableStorageOptimizersInput, arg2 ...request.Option) (*lakeformation.ListTableStorageOptimizersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTableStorageOptimizersWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.ListTableStorageOptimizersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTableStorageOptimizersWithContext indicates an expected call of ListTableStorageOptimizersWithContext
+func (mr *MockLakeFormationAPIMockRecorder) ListTableStorageOptimizersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTableStorageOptimizersWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListTableStorageOptimizersWithContext), varargs...)
+}
+
+// ListTransactions mocks base method
+func (m *MockLakeFormationAPI) ListTransactions(arg0 *lakeformation.ListTransactionsInput) (*lakeformation.ListTransactionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTransactions", arg0)
+	ret0, _ := ret[0].(*lakeformation.ListTransactionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTransactions indicates an expected call of ListTransactions
+func (mr *MockLakeFormationAPIMockRecorder) ListTransactions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTransactions", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListTransactions), arg0)
+}
+
+// ListTransactionsPages mocks base method
+func (m *MockLakeFormationAPI) ListTransactionsPages(arg0 *lakeformation.ListTransactionsInput, arg1 func(*lakeformation.ListTransactionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTransactionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTransactionsPages indicates an expected call of ListTransactionsPages
+func (mr *MockLakeFormationAPIMockRecorder) ListTransactionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTransactionsPages", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListTransactionsPages), arg0, arg1)
+}
+
+// ListTransactionsPagesWithContext mocks base method
+func (m *MockLakeFormationAPI) ListTransactionsPagesWithContext(arg0 context.Context, arg1 *lakeformation.ListTransactionsInput, arg2 func(*lakeformation.ListTransactionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTransactionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTransactionsPagesWithContext indicates an expected call of ListTransactionsPagesWithContext
+func (mr *MockLakeFormationAPIMockRecorder) ListTransactionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTransactionsPagesWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListTransactionsPagesWithContext), varargs...)
+}
+
+// ListTransactionsRequest mocks base method
+func (m *MockLakeFormationAPI) ListTransactionsRequest(arg0 *lakeformation.ListTransactionsInput) (*request.Request, *lakeformation.ListTransactionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTransactionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.ListTransactionsOutput)
+	return ret0, ret1
+}
+
+// ListTransactionsRequest indicates an expected call of ListTransactionsRequest
+func (mr *MockLakeFormationAPIMockRecorder) ListTransactionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTransactionsRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListTransactionsRequest), arg0)
+}
+
+// ListTransactionsWithContext mocks base method
+func (m *MockLakeFormationAPI) ListTransactionsWithContext(arg0 context.Context, arg1 *lakeformation.ListTransactionsInput, arg2 ...request.Option) (*lakeformation.ListTransactionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTransactionsWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.ListTransactionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTransactionsWithContext indicates an expected call of ListTransactionsWithContext
+func (mr *MockLakeFormationAPIMockRecorder) ListTransactionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTransactionsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListTransactionsWithContext), varargs...)
 }
 
 // PutDataLakeSettings mocks base method
@@ -1099,6 +2047,39 @@ func (mr *MockLakeFormationAPIMockRecorder) SearchDatabasesByLFTags(arg0 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDatabasesByLFTags", reflect.TypeOf((*MockLakeFormationAPI)(nil).SearchDatabasesByLFTags), arg0)
 }
 
+// SearchDatabasesByLFTagsPages mocks base method
+func (m *MockLakeFormationAPI) SearchDatabasesByLFTagsPages(arg0 *lakeformation.SearchDatabasesByLFTagsInput, arg1 func(*lakeformation.SearchDatabasesByLFTagsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchDatabasesByLFTagsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchDatabasesByLFTagsPages indicates an expected call of SearchDatabasesByLFTagsPages
+func (mr *MockLakeFormationAPIMockRecorder) SearchDatabasesByLFTagsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDatabasesByLFTagsPages", reflect.TypeOf((*MockLakeFormationAPI)(nil).SearchDatabasesByLFTagsPages), arg0, arg1)
+}
+
+// SearchDatabasesByLFTagsPagesWithContext mocks base method
+func (m *MockLakeFormationAPI) SearchDatabasesByLFTagsPagesWithContext(arg0 context.Context, arg1 *lakeformation.SearchDatabasesByLFTagsInput, arg2 func(*lakeformation.SearchDatabasesByLFTagsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchDatabasesByLFTagsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchDatabasesByLFTagsPagesWithContext indicates an expected call of SearchDatabasesByLFTagsPagesWithContext
+func (mr *MockLakeFormationAPIMockRecorder) SearchDatabasesByLFTagsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDatabasesByLFTagsPagesWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).SearchDatabasesByLFTagsPagesWithContext), varargs...)
+}
+
 // SearchDatabasesByLFTagsRequest mocks base method
 func (m *MockLakeFormationAPI) SearchDatabasesByLFTagsRequest(arg0 *lakeformation.SearchDatabasesByLFTagsInput) (*request.Request, *lakeformation.SearchDatabasesByLFTagsOutput) {
 	m.ctrl.T.Helper()
@@ -1149,6 +2130,39 @@ func (mr *MockLakeFormationAPIMockRecorder) SearchTablesByLFTags(arg0 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchTablesByLFTags", reflect.TypeOf((*MockLakeFormationAPI)(nil).SearchTablesByLFTags), arg0)
 }
 
+// SearchTablesByLFTagsPages mocks base method
+func (m *MockLakeFormationAPI) SearchTablesByLFTagsPages(arg0 *lakeformation.SearchTablesByLFTagsInput, arg1 func(*lakeformation.SearchTablesByLFTagsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchTablesByLFTagsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchTablesByLFTagsPages indicates an expected call of SearchTablesByLFTagsPages
+func (mr *MockLakeFormationAPIMockRecorder) SearchTablesByLFTagsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchTablesByLFTagsPages", reflect.TypeOf((*MockLakeFormationAPI)(nil).SearchTablesByLFTagsPages), arg0, arg1)
+}
+
+// SearchTablesByLFTagsPagesWithContext mocks base method
+func (m *MockLakeFormationAPI) SearchTablesByLFTagsPagesWithContext(arg0 context.Context, arg1 *lakeformation.SearchTablesByLFTagsInput, arg2 func(*lakeformation.SearchTablesByLFTagsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchTablesByLFTagsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchTablesByLFTagsPagesWithContext indicates an expected call of SearchTablesByLFTagsPagesWithContext
+func (mr *MockLakeFormationAPIMockRecorder) SearchTablesByLFTagsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchTablesByLFTagsPagesWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).SearchTablesByLFTagsPagesWithContext), varargs...)
+}
+
 // SearchTablesByLFTagsRequest mocks base method
 func (m *MockLakeFormationAPI) SearchTablesByLFTagsRequest(arg0 *lakeformation.SearchTablesByLFTagsInput) (*request.Request, *lakeformation.SearchTablesByLFTagsOutput) {
 	m.ctrl.T.Helper()
@@ -1182,6 +2196,106 @@ func (mr *MockLakeFormationAPIMockRecorder) SearchTablesByLFTagsWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchTablesByLFTagsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).SearchTablesByLFTagsWithContext), varargs...)
+}
+
+// StartQueryPlanning mocks base method
+func (m *MockLakeFormationAPI) StartQueryPlanning(arg0 *lakeformation.StartQueryPlanningInput) (*lakeformation.StartQueryPlanningOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartQueryPlanning", arg0)
+	ret0, _ := ret[0].(*lakeformation.StartQueryPlanningOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartQueryPlanning indicates an expected call of StartQueryPlanning
+func (mr *MockLakeFormationAPIMockRecorder) StartQueryPlanning(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartQueryPlanning", reflect.TypeOf((*MockLakeFormationAPI)(nil).StartQueryPlanning), arg0)
+}
+
+// StartQueryPlanningRequest mocks base method
+func (m *MockLakeFormationAPI) StartQueryPlanningRequest(arg0 *lakeformation.StartQueryPlanningInput) (*request.Request, *lakeformation.StartQueryPlanningOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartQueryPlanningRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.StartQueryPlanningOutput)
+	return ret0, ret1
+}
+
+// StartQueryPlanningRequest indicates an expected call of StartQueryPlanningRequest
+func (mr *MockLakeFormationAPIMockRecorder) StartQueryPlanningRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartQueryPlanningRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).StartQueryPlanningRequest), arg0)
+}
+
+// StartQueryPlanningWithContext mocks base method
+func (m *MockLakeFormationAPI) StartQueryPlanningWithContext(arg0 context.Context, arg1 *lakeformation.StartQueryPlanningInput, arg2 ...request.Option) (*lakeformation.StartQueryPlanningOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartQueryPlanningWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.StartQueryPlanningOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartQueryPlanningWithContext indicates an expected call of StartQueryPlanningWithContext
+func (mr *MockLakeFormationAPIMockRecorder) StartQueryPlanningWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartQueryPlanningWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).StartQueryPlanningWithContext), varargs...)
+}
+
+// StartTransaction mocks base method
+func (m *MockLakeFormationAPI) StartTransaction(arg0 *lakeformation.StartTransactionInput) (*lakeformation.StartTransactionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartTransaction", arg0)
+	ret0, _ := ret[0].(*lakeformation.StartTransactionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartTransaction indicates an expected call of StartTransaction
+func (mr *MockLakeFormationAPIMockRecorder) StartTransaction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTransaction", reflect.TypeOf((*MockLakeFormationAPI)(nil).StartTransaction), arg0)
+}
+
+// StartTransactionRequest mocks base method
+func (m *MockLakeFormationAPI) StartTransactionRequest(arg0 *lakeformation.StartTransactionInput) (*request.Request, *lakeformation.StartTransactionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartTransactionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.StartTransactionOutput)
+	return ret0, ret1
+}
+
+// StartTransactionRequest indicates an expected call of StartTransactionRequest
+func (mr *MockLakeFormationAPIMockRecorder) StartTransactionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTransactionRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).StartTransactionRequest), arg0)
+}
+
+// StartTransactionWithContext mocks base method
+func (m *MockLakeFormationAPI) StartTransactionWithContext(arg0 context.Context, arg1 *lakeformation.StartTransactionInput, arg2 ...request.Option) (*lakeformation.StartTransactionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartTransactionWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.StartTransactionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartTransactionWithContext indicates an expected call of StartTransactionWithContext
+func (mr *MockLakeFormationAPIMockRecorder) StartTransactionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTransactionWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).StartTransactionWithContext), varargs...)
 }
 
 // UpdateLFTag mocks base method
@@ -1282,4 +2396,104 @@ func (mr *MockLakeFormationAPIMockRecorder) UpdateResourceWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResourceWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).UpdateResourceWithContext), varargs...)
+}
+
+// UpdateTableObjects mocks base method
+func (m *MockLakeFormationAPI) UpdateTableObjects(arg0 *lakeformation.UpdateTableObjectsInput) (*lakeformation.UpdateTableObjectsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTableObjects", arg0)
+	ret0, _ := ret[0].(*lakeformation.UpdateTableObjectsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTableObjects indicates an expected call of UpdateTableObjects
+func (mr *MockLakeFormationAPIMockRecorder) UpdateTableObjects(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTableObjects", reflect.TypeOf((*MockLakeFormationAPI)(nil).UpdateTableObjects), arg0)
+}
+
+// UpdateTableObjectsRequest mocks base method
+func (m *MockLakeFormationAPI) UpdateTableObjectsRequest(arg0 *lakeformation.UpdateTableObjectsInput) (*request.Request, *lakeformation.UpdateTableObjectsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTableObjectsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.UpdateTableObjectsOutput)
+	return ret0, ret1
+}
+
+// UpdateTableObjectsRequest indicates an expected call of UpdateTableObjectsRequest
+func (mr *MockLakeFormationAPIMockRecorder) UpdateTableObjectsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTableObjectsRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).UpdateTableObjectsRequest), arg0)
+}
+
+// UpdateTableObjectsWithContext mocks base method
+func (m *MockLakeFormationAPI) UpdateTableObjectsWithContext(arg0 context.Context, arg1 *lakeformation.UpdateTableObjectsInput, arg2 ...request.Option) (*lakeformation.UpdateTableObjectsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateTableObjectsWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.UpdateTableObjectsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTableObjectsWithContext indicates an expected call of UpdateTableObjectsWithContext
+func (mr *MockLakeFormationAPIMockRecorder) UpdateTableObjectsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTableObjectsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).UpdateTableObjectsWithContext), varargs...)
+}
+
+// UpdateTableStorageOptimizer mocks base method
+func (m *MockLakeFormationAPI) UpdateTableStorageOptimizer(arg0 *lakeformation.UpdateTableStorageOptimizerInput) (*lakeformation.UpdateTableStorageOptimizerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTableStorageOptimizer", arg0)
+	ret0, _ := ret[0].(*lakeformation.UpdateTableStorageOptimizerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTableStorageOptimizer indicates an expected call of UpdateTableStorageOptimizer
+func (mr *MockLakeFormationAPIMockRecorder) UpdateTableStorageOptimizer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTableStorageOptimizer", reflect.TypeOf((*MockLakeFormationAPI)(nil).UpdateTableStorageOptimizer), arg0)
+}
+
+// UpdateTableStorageOptimizerRequest mocks base method
+func (m *MockLakeFormationAPI) UpdateTableStorageOptimizerRequest(arg0 *lakeformation.UpdateTableStorageOptimizerInput) (*request.Request, *lakeformation.UpdateTableStorageOptimizerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTableStorageOptimizerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.UpdateTableStorageOptimizerOutput)
+	return ret0, ret1
+}
+
+// UpdateTableStorageOptimizerRequest indicates an expected call of UpdateTableStorageOptimizerRequest
+func (mr *MockLakeFormationAPIMockRecorder) UpdateTableStorageOptimizerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTableStorageOptimizerRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).UpdateTableStorageOptimizerRequest), arg0)
+}
+
+// UpdateTableStorageOptimizerWithContext mocks base method
+func (m *MockLakeFormationAPI) UpdateTableStorageOptimizerWithContext(arg0 context.Context, arg1 *lakeformation.UpdateTableStorageOptimizerInput, arg2 ...request.Option) (*lakeformation.UpdateTableStorageOptimizerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateTableStorageOptimizerWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.UpdateTableStorageOptimizerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTableStorageOptimizerWithContext indicates an expected call of UpdateTableStorageOptimizerWithContext
+func (mr *MockLakeFormationAPIMockRecorder) UpdateTableStorageOptimizerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTableStorageOptimizerWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).UpdateTableStorageOptimizerWithContext), varargs...)
 }

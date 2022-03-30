@@ -1534,6 +1534,56 @@ func (mr *MockKinesisAPIMockRecorder) UpdateShardCountWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateShardCountWithContext", reflect.TypeOf((*MockKinesisAPI)(nil).UpdateShardCountWithContext), varargs...)
 }
 
+// UpdateStreamMode mocks base method
+func (m *MockKinesisAPI) UpdateStreamMode(arg0 *kinesis.UpdateStreamModeInput) (*kinesis.UpdateStreamModeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStreamMode", arg0)
+	ret0, _ := ret[0].(*kinesis.UpdateStreamModeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStreamMode indicates an expected call of UpdateStreamMode
+func (mr *MockKinesisAPIMockRecorder) UpdateStreamMode(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStreamMode", reflect.TypeOf((*MockKinesisAPI)(nil).UpdateStreamMode), arg0)
+}
+
+// UpdateStreamModeRequest mocks base method
+func (m *MockKinesisAPI) UpdateStreamModeRequest(arg0 *kinesis.UpdateStreamModeInput) (*request.Request, *kinesis.UpdateStreamModeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStreamModeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesis.UpdateStreamModeOutput)
+	return ret0, ret1
+}
+
+// UpdateStreamModeRequest indicates an expected call of UpdateStreamModeRequest
+func (mr *MockKinesisAPIMockRecorder) UpdateStreamModeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStreamModeRequest", reflect.TypeOf((*MockKinesisAPI)(nil).UpdateStreamModeRequest), arg0)
+}
+
+// UpdateStreamModeWithContext mocks base method
+func (m *MockKinesisAPI) UpdateStreamModeWithContext(arg0 context.Context, arg1 *kinesis.UpdateStreamModeInput, arg2 ...request.Option) (*kinesis.UpdateStreamModeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateStreamModeWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesis.UpdateStreamModeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStreamModeWithContext indicates an expected call of UpdateStreamModeWithContext
+func (mr *MockKinesisAPIMockRecorder) UpdateStreamModeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStreamModeWithContext", reflect.TypeOf((*MockKinesisAPI)(nil).UpdateStreamModeWithContext), varargs...)
+}
+
 // WaitUntilStreamExists mocks base method
 func (m *MockKinesisAPI) WaitUntilStreamExists(arg0 *kinesis.DescribeStreamInput) error {
 	m.ctrl.T.Helper()

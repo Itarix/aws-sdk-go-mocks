@@ -235,6 +235,56 @@ func (mr *MockFSxAPIMockRecorder) CreateBackupWithContext(arg0, arg1 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBackupWithContext", reflect.TypeOf((*MockFSxAPI)(nil).CreateBackupWithContext), varargs...)
 }
 
+// CreateDataRepositoryAssociation mocks base method
+func (m *MockFSxAPI) CreateDataRepositoryAssociation(arg0 *fsx.CreateDataRepositoryAssociationInput) (*fsx.CreateDataRepositoryAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDataRepositoryAssociation", arg0)
+	ret0, _ := ret[0].(*fsx.CreateDataRepositoryAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDataRepositoryAssociation indicates an expected call of CreateDataRepositoryAssociation
+func (mr *MockFSxAPIMockRecorder) CreateDataRepositoryAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataRepositoryAssociation", reflect.TypeOf((*MockFSxAPI)(nil).CreateDataRepositoryAssociation), arg0)
+}
+
+// CreateDataRepositoryAssociationRequest mocks base method
+func (m *MockFSxAPI) CreateDataRepositoryAssociationRequest(arg0 *fsx.CreateDataRepositoryAssociationInput) (*request.Request, *fsx.CreateDataRepositoryAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDataRepositoryAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.CreateDataRepositoryAssociationOutput)
+	return ret0, ret1
+}
+
+// CreateDataRepositoryAssociationRequest indicates an expected call of CreateDataRepositoryAssociationRequest
+func (mr *MockFSxAPIMockRecorder) CreateDataRepositoryAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataRepositoryAssociationRequest", reflect.TypeOf((*MockFSxAPI)(nil).CreateDataRepositoryAssociationRequest), arg0)
+}
+
+// CreateDataRepositoryAssociationWithContext mocks base method
+func (m *MockFSxAPI) CreateDataRepositoryAssociationWithContext(arg0 context.Context, arg1 *fsx.CreateDataRepositoryAssociationInput, arg2 ...request.Option) (*fsx.CreateDataRepositoryAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDataRepositoryAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.CreateDataRepositoryAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDataRepositoryAssociationWithContext indicates an expected call of CreateDataRepositoryAssociationWithContext
+func (mr *MockFSxAPIMockRecorder) CreateDataRepositoryAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataRepositoryAssociationWithContext", reflect.TypeOf((*MockFSxAPI)(nil).CreateDataRepositoryAssociationWithContext), varargs...)
+}
+
 // CreateDataRepositoryTask mocks base method
 func (m *MockFSxAPI) CreateDataRepositoryTask(arg0 *fsx.CreateDataRepositoryTaskInput) (*fsx.CreateDataRepositoryTaskOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +433,56 @@ func (mr *MockFSxAPIMockRecorder) CreateFileSystemWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFileSystemWithContext", reflect.TypeOf((*MockFSxAPI)(nil).CreateFileSystemWithContext), varargs...)
+}
+
+// CreateSnapshot mocks base method
+func (m *MockFSxAPI) CreateSnapshot(arg0 *fsx.CreateSnapshotInput) (*fsx.CreateSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSnapshot", arg0)
+	ret0, _ := ret[0].(*fsx.CreateSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSnapshot indicates an expected call of CreateSnapshot
+func (mr *MockFSxAPIMockRecorder) CreateSnapshot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshot", reflect.TypeOf((*MockFSxAPI)(nil).CreateSnapshot), arg0)
+}
+
+// CreateSnapshotRequest mocks base method
+func (m *MockFSxAPI) CreateSnapshotRequest(arg0 *fsx.CreateSnapshotInput) (*request.Request, *fsx.CreateSnapshotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSnapshotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.CreateSnapshotOutput)
+	return ret0, ret1
+}
+
+// CreateSnapshotRequest indicates an expected call of CreateSnapshotRequest
+func (mr *MockFSxAPIMockRecorder) CreateSnapshotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshotRequest", reflect.TypeOf((*MockFSxAPI)(nil).CreateSnapshotRequest), arg0)
+}
+
+// CreateSnapshotWithContext mocks base method
+func (m *MockFSxAPI) CreateSnapshotWithContext(arg0 context.Context, arg1 *fsx.CreateSnapshotInput, arg2 ...request.Option) (*fsx.CreateSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSnapshotWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.CreateSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSnapshotWithContext indicates an expected call of CreateSnapshotWithContext
+func (mr *MockFSxAPIMockRecorder) CreateSnapshotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshotWithContext", reflect.TypeOf((*MockFSxAPI)(nil).CreateSnapshotWithContext), varargs...)
 }
 
 // CreateStorageVirtualMachine mocks base method
@@ -585,6 +685,56 @@ func (mr *MockFSxAPIMockRecorder) DeleteBackupWithContext(arg0, arg1 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackupWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DeleteBackupWithContext), varargs...)
 }
 
+// DeleteDataRepositoryAssociation mocks base method
+func (m *MockFSxAPI) DeleteDataRepositoryAssociation(arg0 *fsx.DeleteDataRepositoryAssociationInput) (*fsx.DeleteDataRepositoryAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDataRepositoryAssociation", arg0)
+	ret0, _ := ret[0].(*fsx.DeleteDataRepositoryAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDataRepositoryAssociation indicates an expected call of DeleteDataRepositoryAssociation
+func (mr *MockFSxAPIMockRecorder) DeleteDataRepositoryAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataRepositoryAssociation", reflect.TypeOf((*MockFSxAPI)(nil).DeleteDataRepositoryAssociation), arg0)
+}
+
+// DeleteDataRepositoryAssociationRequest mocks base method
+func (m *MockFSxAPI) DeleteDataRepositoryAssociationRequest(arg0 *fsx.DeleteDataRepositoryAssociationInput) (*request.Request, *fsx.DeleteDataRepositoryAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDataRepositoryAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.DeleteDataRepositoryAssociationOutput)
+	return ret0, ret1
+}
+
+// DeleteDataRepositoryAssociationRequest indicates an expected call of DeleteDataRepositoryAssociationRequest
+func (mr *MockFSxAPIMockRecorder) DeleteDataRepositoryAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataRepositoryAssociationRequest", reflect.TypeOf((*MockFSxAPI)(nil).DeleteDataRepositoryAssociationRequest), arg0)
+}
+
+// DeleteDataRepositoryAssociationWithContext mocks base method
+func (m *MockFSxAPI) DeleteDataRepositoryAssociationWithContext(arg0 context.Context, arg1 *fsx.DeleteDataRepositoryAssociationInput, arg2 ...request.Option) (*fsx.DeleteDataRepositoryAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDataRepositoryAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.DeleteDataRepositoryAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDataRepositoryAssociationWithContext indicates an expected call of DeleteDataRepositoryAssociationWithContext
+func (mr *MockFSxAPIMockRecorder) DeleteDataRepositoryAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataRepositoryAssociationWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DeleteDataRepositoryAssociationWithContext), varargs...)
+}
+
 // DeleteFileSystem mocks base method
 func (m *MockFSxAPI) DeleteFileSystem(arg0 *fsx.DeleteFileSystemInput) (*fsx.DeleteFileSystemOutput, error) {
 	m.ctrl.T.Helper()
@@ -633,6 +783,56 @@ func (mr *MockFSxAPIMockRecorder) DeleteFileSystemWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFileSystemWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DeleteFileSystemWithContext), varargs...)
+}
+
+// DeleteSnapshot mocks base method
+func (m *MockFSxAPI) DeleteSnapshot(arg0 *fsx.DeleteSnapshotInput) (*fsx.DeleteSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSnapshot", arg0)
+	ret0, _ := ret[0].(*fsx.DeleteSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSnapshot indicates an expected call of DeleteSnapshot
+func (mr *MockFSxAPIMockRecorder) DeleteSnapshot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSnapshot", reflect.TypeOf((*MockFSxAPI)(nil).DeleteSnapshot), arg0)
+}
+
+// DeleteSnapshotRequest mocks base method
+func (m *MockFSxAPI) DeleteSnapshotRequest(arg0 *fsx.DeleteSnapshotInput) (*request.Request, *fsx.DeleteSnapshotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSnapshotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.DeleteSnapshotOutput)
+	return ret0, ret1
+}
+
+// DeleteSnapshotRequest indicates an expected call of DeleteSnapshotRequest
+func (mr *MockFSxAPIMockRecorder) DeleteSnapshotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSnapshotRequest", reflect.TypeOf((*MockFSxAPI)(nil).DeleteSnapshotRequest), arg0)
+}
+
+// DeleteSnapshotWithContext mocks base method
+func (m *MockFSxAPI) DeleteSnapshotWithContext(arg0 context.Context, arg1 *fsx.DeleteSnapshotInput, arg2 ...request.Option) (*fsx.DeleteSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSnapshotWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.DeleteSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSnapshotWithContext indicates an expected call of DeleteSnapshotWithContext
+func (mr *MockFSxAPIMockRecorder) DeleteSnapshotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSnapshotWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DeleteSnapshotWithContext), varargs...)
 }
 
 // DeleteStorageVirtualMachine mocks base method
@@ -816,6 +1016,89 @@ func (mr *MockFSxAPIMockRecorder) DescribeBackupsWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBackupsWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DescribeBackupsWithContext), varargs...)
+}
+
+// DescribeDataRepositoryAssociations mocks base method
+func (m *MockFSxAPI) DescribeDataRepositoryAssociations(arg0 *fsx.DescribeDataRepositoryAssociationsInput) (*fsx.DescribeDataRepositoryAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDataRepositoryAssociations", arg0)
+	ret0, _ := ret[0].(*fsx.DescribeDataRepositoryAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDataRepositoryAssociations indicates an expected call of DescribeDataRepositoryAssociations
+func (mr *MockFSxAPIMockRecorder) DescribeDataRepositoryAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataRepositoryAssociations", reflect.TypeOf((*MockFSxAPI)(nil).DescribeDataRepositoryAssociations), arg0)
+}
+
+// DescribeDataRepositoryAssociationsPages mocks base method
+func (m *MockFSxAPI) DescribeDataRepositoryAssociationsPages(arg0 *fsx.DescribeDataRepositoryAssociationsInput, arg1 func(*fsx.DescribeDataRepositoryAssociationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDataRepositoryAssociationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDataRepositoryAssociationsPages indicates an expected call of DescribeDataRepositoryAssociationsPages
+func (mr *MockFSxAPIMockRecorder) DescribeDataRepositoryAssociationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataRepositoryAssociationsPages", reflect.TypeOf((*MockFSxAPI)(nil).DescribeDataRepositoryAssociationsPages), arg0, arg1)
+}
+
+// DescribeDataRepositoryAssociationsPagesWithContext mocks base method
+func (m *MockFSxAPI) DescribeDataRepositoryAssociationsPagesWithContext(arg0 context.Context, arg1 *fsx.DescribeDataRepositoryAssociationsInput, arg2 func(*fsx.DescribeDataRepositoryAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDataRepositoryAssociationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDataRepositoryAssociationsPagesWithContext indicates an expected call of DescribeDataRepositoryAssociationsPagesWithContext
+func (mr *MockFSxAPIMockRecorder) DescribeDataRepositoryAssociationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataRepositoryAssociationsPagesWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DescribeDataRepositoryAssociationsPagesWithContext), varargs...)
+}
+
+// DescribeDataRepositoryAssociationsRequest mocks base method
+func (m *MockFSxAPI) DescribeDataRepositoryAssociationsRequest(arg0 *fsx.DescribeDataRepositoryAssociationsInput) (*request.Request, *fsx.DescribeDataRepositoryAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDataRepositoryAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.DescribeDataRepositoryAssociationsOutput)
+	return ret0, ret1
+}
+
+// DescribeDataRepositoryAssociationsRequest indicates an expected call of DescribeDataRepositoryAssociationsRequest
+func (mr *MockFSxAPIMockRecorder) DescribeDataRepositoryAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataRepositoryAssociationsRequest", reflect.TypeOf((*MockFSxAPI)(nil).DescribeDataRepositoryAssociationsRequest), arg0)
+}
+
+// DescribeDataRepositoryAssociationsWithContext mocks base method
+func (m *MockFSxAPI) DescribeDataRepositoryAssociationsWithContext(arg0 context.Context, arg1 *fsx.DescribeDataRepositoryAssociationsInput, arg2 ...request.Option) (*fsx.DescribeDataRepositoryAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDataRepositoryAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.DescribeDataRepositoryAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDataRepositoryAssociationsWithContext indicates an expected call of DescribeDataRepositoryAssociationsWithContext
+func (mr *MockFSxAPIMockRecorder) DescribeDataRepositoryAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataRepositoryAssociationsWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DescribeDataRepositoryAssociationsWithContext), varargs...)
 }
 
 // DescribeDataRepositoryTasks mocks base method
@@ -1065,6 +1348,89 @@ func (mr *MockFSxAPIMockRecorder) DescribeFileSystemsWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemsWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DescribeFileSystemsWithContext), varargs...)
+}
+
+// DescribeSnapshots mocks base method
+func (m *MockFSxAPI) DescribeSnapshots(arg0 *fsx.DescribeSnapshotsInput) (*fsx.DescribeSnapshotsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSnapshots", arg0)
+	ret0, _ := ret[0].(*fsx.DescribeSnapshotsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSnapshots indicates an expected call of DescribeSnapshots
+func (mr *MockFSxAPIMockRecorder) DescribeSnapshots(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshots", reflect.TypeOf((*MockFSxAPI)(nil).DescribeSnapshots), arg0)
+}
+
+// DescribeSnapshotsPages mocks base method
+func (m *MockFSxAPI) DescribeSnapshotsPages(arg0 *fsx.DescribeSnapshotsInput, arg1 func(*fsx.DescribeSnapshotsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSnapshotsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSnapshotsPages indicates an expected call of DescribeSnapshotsPages
+func (mr *MockFSxAPIMockRecorder) DescribeSnapshotsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotsPages", reflect.TypeOf((*MockFSxAPI)(nil).DescribeSnapshotsPages), arg0, arg1)
+}
+
+// DescribeSnapshotsPagesWithContext mocks base method
+func (m *MockFSxAPI) DescribeSnapshotsPagesWithContext(arg0 context.Context, arg1 *fsx.DescribeSnapshotsInput, arg2 func(*fsx.DescribeSnapshotsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSnapshotsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSnapshotsPagesWithContext indicates an expected call of DescribeSnapshotsPagesWithContext
+func (mr *MockFSxAPIMockRecorder) DescribeSnapshotsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotsPagesWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DescribeSnapshotsPagesWithContext), varargs...)
+}
+
+// DescribeSnapshotsRequest mocks base method
+func (m *MockFSxAPI) DescribeSnapshotsRequest(arg0 *fsx.DescribeSnapshotsInput) (*request.Request, *fsx.DescribeSnapshotsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSnapshotsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.DescribeSnapshotsOutput)
+	return ret0, ret1
+}
+
+// DescribeSnapshotsRequest indicates an expected call of DescribeSnapshotsRequest
+func (mr *MockFSxAPIMockRecorder) DescribeSnapshotsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotsRequest", reflect.TypeOf((*MockFSxAPI)(nil).DescribeSnapshotsRequest), arg0)
+}
+
+// DescribeSnapshotsWithContext mocks base method
+func (m *MockFSxAPI) DescribeSnapshotsWithContext(arg0 context.Context, arg1 *fsx.DescribeSnapshotsInput, arg2 ...request.Option) (*fsx.DescribeSnapshotsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSnapshotsWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.DescribeSnapshotsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSnapshotsWithContext indicates an expected call of DescribeSnapshotsWithContext
+func (mr *MockFSxAPIMockRecorder) DescribeSnapshotsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotsWithContext", reflect.TypeOf((*MockFSxAPI)(nil).DescribeSnapshotsWithContext), varargs...)
 }
 
 // DescribeStorageVirtualMachines mocks base method
@@ -1366,6 +1732,106 @@ func (mr *MockFSxAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockFSxAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ReleaseFileSystemNfsV3Locks mocks base method
+func (m *MockFSxAPI) ReleaseFileSystemNfsV3Locks(arg0 *fsx.ReleaseFileSystemNfsV3LocksInput) (*fsx.ReleaseFileSystemNfsV3LocksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ReleaseFileSystemNfsV3Locks", arg0)
+	ret0, _ := ret[0].(*fsx.ReleaseFileSystemNfsV3LocksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ReleaseFileSystemNfsV3Locks indicates an expected call of ReleaseFileSystemNfsV3Locks
+func (mr *MockFSxAPIMockRecorder) ReleaseFileSystemNfsV3Locks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReleaseFileSystemNfsV3Locks", reflect.TypeOf((*MockFSxAPI)(nil).ReleaseFileSystemNfsV3Locks), arg0)
+}
+
+// ReleaseFileSystemNfsV3LocksRequest mocks base method
+func (m *MockFSxAPI) ReleaseFileSystemNfsV3LocksRequest(arg0 *fsx.ReleaseFileSystemNfsV3LocksInput) (*request.Request, *fsx.ReleaseFileSystemNfsV3LocksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ReleaseFileSystemNfsV3LocksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.ReleaseFileSystemNfsV3LocksOutput)
+	return ret0, ret1
+}
+
+// ReleaseFileSystemNfsV3LocksRequest indicates an expected call of ReleaseFileSystemNfsV3LocksRequest
+func (mr *MockFSxAPIMockRecorder) ReleaseFileSystemNfsV3LocksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReleaseFileSystemNfsV3LocksRequest", reflect.TypeOf((*MockFSxAPI)(nil).ReleaseFileSystemNfsV3LocksRequest), arg0)
+}
+
+// ReleaseFileSystemNfsV3LocksWithContext mocks base method
+func (m *MockFSxAPI) ReleaseFileSystemNfsV3LocksWithContext(arg0 context.Context, arg1 *fsx.ReleaseFileSystemNfsV3LocksInput, arg2 ...request.Option) (*fsx.ReleaseFileSystemNfsV3LocksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ReleaseFileSystemNfsV3LocksWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.ReleaseFileSystemNfsV3LocksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ReleaseFileSystemNfsV3LocksWithContext indicates an expected call of ReleaseFileSystemNfsV3LocksWithContext
+func (mr *MockFSxAPIMockRecorder) ReleaseFileSystemNfsV3LocksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReleaseFileSystemNfsV3LocksWithContext", reflect.TypeOf((*MockFSxAPI)(nil).ReleaseFileSystemNfsV3LocksWithContext), varargs...)
+}
+
+// RestoreVolumeFromSnapshot mocks base method
+func (m *MockFSxAPI) RestoreVolumeFromSnapshot(arg0 *fsx.RestoreVolumeFromSnapshotInput) (*fsx.RestoreVolumeFromSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreVolumeFromSnapshot", arg0)
+	ret0, _ := ret[0].(*fsx.RestoreVolumeFromSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreVolumeFromSnapshot indicates an expected call of RestoreVolumeFromSnapshot
+func (mr *MockFSxAPIMockRecorder) RestoreVolumeFromSnapshot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreVolumeFromSnapshot", reflect.TypeOf((*MockFSxAPI)(nil).RestoreVolumeFromSnapshot), arg0)
+}
+
+// RestoreVolumeFromSnapshotRequest mocks base method
+func (m *MockFSxAPI) RestoreVolumeFromSnapshotRequest(arg0 *fsx.RestoreVolumeFromSnapshotInput) (*request.Request, *fsx.RestoreVolumeFromSnapshotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreVolumeFromSnapshotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.RestoreVolumeFromSnapshotOutput)
+	return ret0, ret1
+}
+
+// RestoreVolumeFromSnapshotRequest indicates an expected call of RestoreVolumeFromSnapshotRequest
+func (mr *MockFSxAPIMockRecorder) RestoreVolumeFromSnapshotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreVolumeFromSnapshotRequest", reflect.TypeOf((*MockFSxAPI)(nil).RestoreVolumeFromSnapshotRequest), arg0)
+}
+
+// RestoreVolumeFromSnapshotWithContext mocks base method
+func (m *MockFSxAPI) RestoreVolumeFromSnapshotWithContext(arg0 context.Context, arg1 *fsx.RestoreVolumeFromSnapshotInput, arg2 ...request.Option) (*fsx.RestoreVolumeFromSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RestoreVolumeFromSnapshotWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.RestoreVolumeFromSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreVolumeFromSnapshotWithContext indicates an expected call of RestoreVolumeFromSnapshotWithContext
+func (mr *MockFSxAPIMockRecorder) RestoreVolumeFromSnapshotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreVolumeFromSnapshotWithContext", reflect.TypeOf((*MockFSxAPI)(nil).RestoreVolumeFromSnapshotWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockFSxAPI) TagResource(arg0 *fsx.TagResourceInput) (*fsx.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1466,6 +1932,56 @@ func (mr *MockFSxAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockFSxAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
+// UpdateDataRepositoryAssociation mocks base method
+func (m *MockFSxAPI) UpdateDataRepositoryAssociation(arg0 *fsx.UpdateDataRepositoryAssociationInput) (*fsx.UpdateDataRepositoryAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDataRepositoryAssociation", arg0)
+	ret0, _ := ret[0].(*fsx.UpdateDataRepositoryAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDataRepositoryAssociation indicates an expected call of UpdateDataRepositoryAssociation
+func (mr *MockFSxAPIMockRecorder) UpdateDataRepositoryAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataRepositoryAssociation", reflect.TypeOf((*MockFSxAPI)(nil).UpdateDataRepositoryAssociation), arg0)
+}
+
+// UpdateDataRepositoryAssociationRequest mocks base method
+func (m *MockFSxAPI) UpdateDataRepositoryAssociationRequest(arg0 *fsx.UpdateDataRepositoryAssociationInput) (*request.Request, *fsx.UpdateDataRepositoryAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDataRepositoryAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.UpdateDataRepositoryAssociationOutput)
+	return ret0, ret1
+}
+
+// UpdateDataRepositoryAssociationRequest indicates an expected call of UpdateDataRepositoryAssociationRequest
+func (mr *MockFSxAPIMockRecorder) UpdateDataRepositoryAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataRepositoryAssociationRequest", reflect.TypeOf((*MockFSxAPI)(nil).UpdateDataRepositoryAssociationRequest), arg0)
+}
+
+// UpdateDataRepositoryAssociationWithContext mocks base method
+func (m *MockFSxAPI) UpdateDataRepositoryAssociationWithContext(arg0 context.Context, arg1 *fsx.UpdateDataRepositoryAssociationInput, arg2 ...request.Option) (*fsx.UpdateDataRepositoryAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDataRepositoryAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.UpdateDataRepositoryAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDataRepositoryAssociationWithContext indicates an expected call of UpdateDataRepositoryAssociationWithContext
+func (mr *MockFSxAPIMockRecorder) UpdateDataRepositoryAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataRepositoryAssociationWithContext", reflect.TypeOf((*MockFSxAPI)(nil).UpdateDataRepositoryAssociationWithContext), varargs...)
+}
+
 // UpdateFileSystem mocks base method
 func (m *MockFSxAPI) UpdateFileSystem(arg0 *fsx.UpdateFileSystemInput) (*fsx.UpdateFileSystemOutput, error) {
 	m.ctrl.T.Helper()
@@ -1514,6 +2030,56 @@ func (mr *MockFSxAPIMockRecorder) UpdateFileSystemWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFileSystemWithContext", reflect.TypeOf((*MockFSxAPI)(nil).UpdateFileSystemWithContext), varargs...)
+}
+
+// UpdateSnapshot mocks base method
+func (m *MockFSxAPI) UpdateSnapshot(arg0 *fsx.UpdateSnapshotInput) (*fsx.UpdateSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSnapshot", arg0)
+	ret0, _ := ret[0].(*fsx.UpdateSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSnapshot indicates an expected call of UpdateSnapshot
+func (mr *MockFSxAPIMockRecorder) UpdateSnapshot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSnapshot", reflect.TypeOf((*MockFSxAPI)(nil).UpdateSnapshot), arg0)
+}
+
+// UpdateSnapshotRequest mocks base method
+func (m *MockFSxAPI) UpdateSnapshotRequest(arg0 *fsx.UpdateSnapshotInput) (*request.Request, *fsx.UpdateSnapshotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSnapshotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.UpdateSnapshotOutput)
+	return ret0, ret1
+}
+
+// UpdateSnapshotRequest indicates an expected call of UpdateSnapshotRequest
+func (mr *MockFSxAPIMockRecorder) UpdateSnapshotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSnapshotRequest", reflect.TypeOf((*MockFSxAPI)(nil).UpdateSnapshotRequest), arg0)
+}
+
+// UpdateSnapshotWithContext mocks base method
+func (m *MockFSxAPI) UpdateSnapshotWithContext(arg0 context.Context, arg1 *fsx.UpdateSnapshotInput, arg2 ...request.Option) (*fsx.UpdateSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSnapshotWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.UpdateSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSnapshotWithContext indicates an expected call of UpdateSnapshotWithContext
+func (mr *MockFSxAPIMockRecorder) UpdateSnapshotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSnapshotWithContext", reflect.TypeOf((*MockFSxAPI)(nil).UpdateSnapshotWithContext), varargs...)
 }
 
 // UpdateStorageVirtualMachine mocks base method
