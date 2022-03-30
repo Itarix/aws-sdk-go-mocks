@@ -1765,3 +1765,53 @@ func (mr *MockKafkaAPIMockRecorder) UpdateMonitoringWithContext(arg0, arg1 inter
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMonitoringWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateMonitoringWithContext), varargs...)
 }
+
+// UpdateSecurity mocks base method
+func (m *MockKafkaAPI) UpdateSecurity(arg0 *kafka.UpdateSecurityInput) (*kafka.UpdateSecurityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSecurity", arg0)
+	ret0, _ := ret[0].(*kafka.UpdateSecurityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSecurity indicates an expected call of UpdateSecurity
+func (mr *MockKafkaAPIMockRecorder) UpdateSecurity(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSecurity", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateSecurity), arg0)
+}
+
+// UpdateSecurityRequest mocks base method
+func (m *MockKafkaAPI) UpdateSecurityRequest(arg0 *kafka.UpdateSecurityInput) (*request.Request, *kafka.UpdateSecurityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSecurityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.UpdateSecurityOutput)
+	return ret0, ret1
+}
+
+// UpdateSecurityRequest indicates an expected call of UpdateSecurityRequest
+func (mr *MockKafkaAPIMockRecorder) UpdateSecurityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSecurityRequest", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateSecurityRequest), arg0)
+}
+
+// UpdateSecurityWithContext mocks base method
+func (m *MockKafkaAPI) UpdateSecurityWithContext(arg0 context.Context, arg1 *kafka.UpdateSecurityInput, arg2 ...request.Option) (*kafka.UpdateSecurityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSecurityWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.UpdateSecurityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSecurityWithContext indicates an expected call of UpdateSecurityWithContext
+func (mr *MockKafkaAPIMockRecorder) UpdateSecurityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSecurityWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateSecurityWithContext), varargs...)
+}
