@@ -135,6 +135,56 @@ func (mr *MockFSxAPIMockRecorder) CancelDataRepositoryTaskWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDataRepositoryTaskWithContext", reflect.TypeOf((*MockFSxAPI)(nil).CancelDataRepositoryTaskWithContext), varargs...)
 }
 
+// CopyBackup mocks base method
+func (m *MockFSxAPI) CopyBackup(arg0 *fsx.CopyBackupInput) (*fsx.CopyBackupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CopyBackup", arg0)
+	ret0, _ := ret[0].(*fsx.CopyBackupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CopyBackup indicates an expected call of CopyBackup
+func (mr *MockFSxAPIMockRecorder) CopyBackup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopyBackup", reflect.TypeOf((*MockFSxAPI)(nil).CopyBackup), arg0)
+}
+
+// CopyBackupRequest mocks base method
+func (m *MockFSxAPI) CopyBackupRequest(arg0 *fsx.CopyBackupInput) (*request.Request, *fsx.CopyBackupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CopyBackupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.CopyBackupOutput)
+	return ret0, ret1
+}
+
+// CopyBackupRequest indicates an expected call of CopyBackupRequest
+func (mr *MockFSxAPIMockRecorder) CopyBackupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopyBackupRequest", reflect.TypeOf((*MockFSxAPI)(nil).CopyBackupRequest), arg0)
+}
+
+// CopyBackupWithContext mocks base method
+func (m *MockFSxAPI) CopyBackupWithContext(arg0 context.Context, arg1 *fsx.CopyBackupInput, arg2 ...request.Option) (*fsx.CopyBackupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CopyBackupWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.CopyBackupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CopyBackupWithContext indicates an expected call of CopyBackupWithContext
+func (mr *MockFSxAPIMockRecorder) CopyBackupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopyBackupWithContext", reflect.TypeOf((*MockFSxAPI)(nil).CopyBackupWithContext), varargs...)
+}
+
 // CreateBackup mocks base method
 func (m *MockFSxAPI) CreateBackup(arg0 *fsx.CreateBackupInput) (*fsx.CreateBackupOutput, error) {
 	m.ctrl.T.Helper()
