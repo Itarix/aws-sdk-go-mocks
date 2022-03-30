@@ -35,6 +35,106 @@ func (m *MockNetworkManagerAPI) EXPECT() *MockNetworkManagerAPIMockRecorder {
 	return m.recorder
 }
 
+// AcceptAttachment mocks base method
+func (m *MockNetworkManagerAPI) AcceptAttachment(arg0 *networkmanager.AcceptAttachmentInput) (*networkmanager.AcceptAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AcceptAttachment", arg0)
+	ret0, _ := ret[0].(*networkmanager.AcceptAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AcceptAttachment indicates an expected call of AcceptAttachment
+func (mr *MockNetworkManagerAPIMockRecorder) AcceptAttachment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptAttachment", reflect.TypeOf((*MockNetworkManagerAPI)(nil).AcceptAttachment), arg0)
+}
+
+// AcceptAttachmentRequest mocks base method
+func (m *MockNetworkManagerAPI) AcceptAttachmentRequest(arg0 *networkmanager.AcceptAttachmentInput) (*request.Request, *networkmanager.AcceptAttachmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AcceptAttachmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.AcceptAttachmentOutput)
+	return ret0, ret1
+}
+
+// AcceptAttachmentRequest indicates an expected call of AcceptAttachmentRequest
+func (mr *MockNetworkManagerAPIMockRecorder) AcceptAttachmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptAttachmentRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).AcceptAttachmentRequest), arg0)
+}
+
+// AcceptAttachmentWithContext mocks base method
+func (m *MockNetworkManagerAPI) AcceptAttachmentWithContext(arg0 context.Context, arg1 *networkmanager.AcceptAttachmentInput, arg2 ...request.Option) (*networkmanager.AcceptAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AcceptAttachmentWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.AcceptAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AcceptAttachmentWithContext indicates an expected call of AcceptAttachmentWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) AcceptAttachmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptAttachmentWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).AcceptAttachmentWithContext), varargs...)
+}
+
+// AssociateConnectPeer mocks base method
+func (m *MockNetworkManagerAPI) AssociateConnectPeer(arg0 *networkmanager.AssociateConnectPeerInput) (*networkmanager.AssociateConnectPeerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateConnectPeer", arg0)
+	ret0, _ := ret[0].(*networkmanager.AssociateConnectPeerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateConnectPeer indicates an expected call of AssociateConnectPeer
+func (mr *MockNetworkManagerAPIMockRecorder) AssociateConnectPeer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateConnectPeer", reflect.TypeOf((*MockNetworkManagerAPI)(nil).AssociateConnectPeer), arg0)
+}
+
+// AssociateConnectPeerRequest mocks base method
+func (m *MockNetworkManagerAPI) AssociateConnectPeerRequest(arg0 *networkmanager.AssociateConnectPeerInput) (*request.Request, *networkmanager.AssociateConnectPeerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateConnectPeerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.AssociateConnectPeerOutput)
+	return ret0, ret1
+}
+
+// AssociateConnectPeerRequest indicates an expected call of AssociateConnectPeerRequest
+func (mr *MockNetworkManagerAPIMockRecorder) AssociateConnectPeerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateConnectPeerRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).AssociateConnectPeerRequest), arg0)
+}
+
+// AssociateConnectPeerWithContext mocks base method
+func (m *MockNetworkManagerAPI) AssociateConnectPeerWithContext(arg0 context.Context, arg1 *networkmanager.AssociateConnectPeerInput, arg2 ...request.Option) (*networkmanager.AssociateConnectPeerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateConnectPeerWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.AssociateConnectPeerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateConnectPeerWithContext indicates an expected call of AssociateConnectPeerWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) AssociateConnectPeerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateConnectPeerWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).AssociateConnectPeerWithContext), varargs...)
+}
+
 // AssociateCustomerGateway mocks base method
 func (m *MockNetworkManagerAPI) AssociateCustomerGateway(arg0 *networkmanager.AssociateCustomerGatewayInput) (*networkmanager.AssociateCustomerGatewayOutput, error) {
 	m.ctrl.T.Helper()
@@ -185,6 +285,106 @@ func (mr *MockNetworkManagerAPIMockRecorder) AssociateTransitGatewayConnectPeerW
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateTransitGatewayConnectPeerWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).AssociateTransitGatewayConnectPeerWithContext), varargs...)
 }
 
+// CreateConnectAttachment mocks base method
+func (m *MockNetworkManagerAPI) CreateConnectAttachment(arg0 *networkmanager.CreateConnectAttachmentInput) (*networkmanager.CreateConnectAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectAttachment", arg0)
+	ret0, _ := ret[0].(*networkmanager.CreateConnectAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectAttachment indicates an expected call of CreateConnectAttachment
+func (mr *MockNetworkManagerAPIMockRecorder) CreateConnectAttachment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectAttachment", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateConnectAttachment), arg0)
+}
+
+// CreateConnectAttachmentRequest mocks base method
+func (m *MockNetworkManagerAPI) CreateConnectAttachmentRequest(arg0 *networkmanager.CreateConnectAttachmentInput) (*request.Request, *networkmanager.CreateConnectAttachmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectAttachmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.CreateConnectAttachmentOutput)
+	return ret0, ret1
+}
+
+// CreateConnectAttachmentRequest indicates an expected call of CreateConnectAttachmentRequest
+func (mr *MockNetworkManagerAPIMockRecorder) CreateConnectAttachmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectAttachmentRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateConnectAttachmentRequest), arg0)
+}
+
+// CreateConnectAttachmentWithContext mocks base method
+func (m *MockNetworkManagerAPI) CreateConnectAttachmentWithContext(arg0 context.Context, arg1 *networkmanager.CreateConnectAttachmentInput, arg2 ...request.Option) (*networkmanager.CreateConnectAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateConnectAttachmentWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.CreateConnectAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectAttachmentWithContext indicates an expected call of CreateConnectAttachmentWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) CreateConnectAttachmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectAttachmentWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateConnectAttachmentWithContext), varargs...)
+}
+
+// CreateConnectPeer mocks base method
+func (m *MockNetworkManagerAPI) CreateConnectPeer(arg0 *networkmanager.CreateConnectPeerInput) (*networkmanager.CreateConnectPeerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectPeer", arg0)
+	ret0, _ := ret[0].(*networkmanager.CreateConnectPeerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectPeer indicates an expected call of CreateConnectPeer
+func (mr *MockNetworkManagerAPIMockRecorder) CreateConnectPeer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectPeer", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateConnectPeer), arg0)
+}
+
+// CreateConnectPeerRequest mocks base method
+func (m *MockNetworkManagerAPI) CreateConnectPeerRequest(arg0 *networkmanager.CreateConnectPeerInput) (*request.Request, *networkmanager.CreateConnectPeerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectPeerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.CreateConnectPeerOutput)
+	return ret0, ret1
+}
+
+// CreateConnectPeerRequest indicates an expected call of CreateConnectPeerRequest
+func (mr *MockNetworkManagerAPIMockRecorder) CreateConnectPeerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectPeerRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateConnectPeerRequest), arg0)
+}
+
+// CreateConnectPeerWithContext mocks base method
+func (m *MockNetworkManagerAPI) CreateConnectPeerWithContext(arg0 context.Context, arg1 *networkmanager.CreateConnectPeerInput, arg2 ...request.Option) (*networkmanager.CreateConnectPeerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateConnectPeerWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.CreateConnectPeerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectPeerWithContext indicates an expected call of CreateConnectPeerWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) CreateConnectPeerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectPeerWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateConnectPeerWithContext), varargs...)
+}
+
 // CreateConnection mocks base method
 func (m *MockNetworkManagerAPI) CreateConnection(arg0 *networkmanager.CreateConnectionInput) (*networkmanager.CreateConnectionOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +433,56 @@ func (mr *MockNetworkManagerAPIMockRecorder) CreateConnectionWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectionWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateConnectionWithContext), varargs...)
+}
+
+// CreateCoreNetwork mocks base method
+func (m *MockNetworkManagerAPI) CreateCoreNetwork(arg0 *networkmanager.CreateCoreNetworkInput) (*networkmanager.CreateCoreNetworkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCoreNetwork", arg0)
+	ret0, _ := ret[0].(*networkmanager.CreateCoreNetworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCoreNetwork indicates an expected call of CreateCoreNetwork
+func (mr *MockNetworkManagerAPIMockRecorder) CreateCoreNetwork(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCoreNetwork", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateCoreNetwork), arg0)
+}
+
+// CreateCoreNetworkRequest mocks base method
+func (m *MockNetworkManagerAPI) CreateCoreNetworkRequest(arg0 *networkmanager.CreateCoreNetworkInput) (*request.Request, *networkmanager.CreateCoreNetworkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCoreNetworkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.CreateCoreNetworkOutput)
+	return ret0, ret1
+}
+
+// CreateCoreNetworkRequest indicates an expected call of CreateCoreNetworkRequest
+func (mr *MockNetworkManagerAPIMockRecorder) CreateCoreNetworkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCoreNetworkRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateCoreNetworkRequest), arg0)
+}
+
+// CreateCoreNetworkWithContext mocks base method
+func (m *MockNetworkManagerAPI) CreateCoreNetworkWithContext(arg0 context.Context, arg1 *networkmanager.CreateCoreNetworkInput, arg2 ...request.Option) (*networkmanager.CreateCoreNetworkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCoreNetworkWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.CreateCoreNetworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCoreNetworkWithContext indicates an expected call of CreateCoreNetworkWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) CreateCoreNetworkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCoreNetworkWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateCoreNetworkWithContext), varargs...)
 }
 
 // CreateDevice mocks base method
@@ -415,6 +665,56 @@ func (mr *MockNetworkManagerAPIMockRecorder) CreateSiteRequest(arg0 interface{})
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSiteRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateSiteRequest), arg0)
 }
 
+// CreateSiteToSiteVpnAttachment mocks base method
+func (m *MockNetworkManagerAPI) CreateSiteToSiteVpnAttachment(arg0 *networkmanager.CreateSiteToSiteVpnAttachmentInput) (*networkmanager.CreateSiteToSiteVpnAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSiteToSiteVpnAttachment", arg0)
+	ret0, _ := ret[0].(*networkmanager.CreateSiteToSiteVpnAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSiteToSiteVpnAttachment indicates an expected call of CreateSiteToSiteVpnAttachment
+func (mr *MockNetworkManagerAPIMockRecorder) CreateSiteToSiteVpnAttachment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSiteToSiteVpnAttachment", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateSiteToSiteVpnAttachment), arg0)
+}
+
+// CreateSiteToSiteVpnAttachmentRequest mocks base method
+func (m *MockNetworkManagerAPI) CreateSiteToSiteVpnAttachmentRequest(arg0 *networkmanager.CreateSiteToSiteVpnAttachmentInput) (*request.Request, *networkmanager.CreateSiteToSiteVpnAttachmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSiteToSiteVpnAttachmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.CreateSiteToSiteVpnAttachmentOutput)
+	return ret0, ret1
+}
+
+// CreateSiteToSiteVpnAttachmentRequest indicates an expected call of CreateSiteToSiteVpnAttachmentRequest
+func (mr *MockNetworkManagerAPIMockRecorder) CreateSiteToSiteVpnAttachmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSiteToSiteVpnAttachmentRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateSiteToSiteVpnAttachmentRequest), arg0)
+}
+
+// CreateSiteToSiteVpnAttachmentWithContext mocks base method
+func (m *MockNetworkManagerAPI) CreateSiteToSiteVpnAttachmentWithContext(arg0 context.Context, arg1 *networkmanager.CreateSiteToSiteVpnAttachmentInput, arg2 ...request.Option) (*networkmanager.CreateSiteToSiteVpnAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSiteToSiteVpnAttachmentWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.CreateSiteToSiteVpnAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSiteToSiteVpnAttachmentWithContext indicates an expected call of CreateSiteToSiteVpnAttachmentWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) CreateSiteToSiteVpnAttachmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSiteToSiteVpnAttachmentWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateSiteToSiteVpnAttachmentWithContext), varargs...)
+}
+
 // CreateSiteWithContext mocks base method
 func (m *MockNetworkManagerAPI) CreateSiteWithContext(arg0 context.Context, arg1 *networkmanager.CreateSiteInput, arg2 ...request.Option) (*networkmanager.CreateSiteOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +733,156 @@ func (mr *MockNetworkManagerAPIMockRecorder) CreateSiteWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSiteWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateSiteWithContext), varargs...)
+}
+
+// CreateVpcAttachment mocks base method
+func (m *MockNetworkManagerAPI) CreateVpcAttachment(arg0 *networkmanager.CreateVpcAttachmentInput) (*networkmanager.CreateVpcAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVpcAttachment", arg0)
+	ret0, _ := ret[0].(*networkmanager.CreateVpcAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVpcAttachment indicates an expected call of CreateVpcAttachment
+func (mr *MockNetworkManagerAPIMockRecorder) CreateVpcAttachment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcAttachment", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateVpcAttachment), arg0)
+}
+
+// CreateVpcAttachmentRequest mocks base method
+func (m *MockNetworkManagerAPI) CreateVpcAttachmentRequest(arg0 *networkmanager.CreateVpcAttachmentInput) (*request.Request, *networkmanager.CreateVpcAttachmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVpcAttachmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.CreateVpcAttachmentOutput)
+	return ret0, ret1
+}
+
+// CreateVpcAttachmentRequest indicates an expected call of CreateVpcAttachmentRequest
+func (mr *MockNetworkManagerAPIMockRecorder) CreateVpcAttachmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcAttachmentRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateVpcAttachmentRequest), arg0)
+}
+
+// CreateVpcAttachmentWithContext mocks base method
+func (m *MockNetworkManagerAPI) CreateVpcAttachmentWithContext(arg0 context.Context, arg1 *networkmanager.CreateVpcAttachmentInput, arg2 ...request.Option) (*networkmanager.CreateVpcAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateVpcAttachmentWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.CreateVpcAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVpcAttachmentWithContext indicates an expected call of CreateVpcAttachmentWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) CreateVpcAttachmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcAttachmentWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).CreateVpcAttachmentWithContext), varargs...)
+}
+
+// DeleteAttachment mocks base method
+func (m *MockNetworkManagerAPI) DeleteAttachment(arg0 *networkmanager.DeleteAttachmentInput) (*networkmanager.DeleteAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAttachment", arg0)
+	ret0, _ := ret[0].(*networkmanager.DeleteAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAttachment indicates an expected call of DeleteAttachment
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteAttachment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAttachment", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteAttachment), arg0)
+}
+
+// DeleteAttachmentRequest mocks base method
+func (m *MockNetworkManagerAPI) DeleteAttachmentRequest(arg0 *networkmanager.DeleteAttachmentInput) (*request.Request, *networkmanager.DeleteAttachmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAttachmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.DeleteAttachmentOutput)
+	return ret0, ret1
+}
+
+// DeleteAttachmentRequest indicates an expected call of DeleteAttachmentRequest
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteAttachmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAttachmentRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteAttachmentRequest), arg0)
+}
+
+// DeleteAttachmentWithContext mocks base method
+func (m *MockNetworkManagerAPI) DeleteAttachmentWithContext(arg0 context.Context, arg1 *networkmanager.DeleteAttachmentInput, arg2 ...request.Option) (*networkmanager.DeleteAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAttachmentWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.DeleteAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAttachmentWithContext indicates an expected call of DeleteAttachmentWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteAttachmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAttachmentWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteAttachmentWithContext), varargs...)
+}
+
+// DeleteConnectPeer mocks base method
+func (m *MockNetworkManagerAPI) DeleteConnectPeer(arg0 *networkmanager.DeleteConnectPeerInput) (*networkmanager.DeleteConnectPeerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnectPeer", arg0)
+	ret0, _ := ret[0].(*networkmanager.DeleteConnectPeerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnectPeer indicates an expected call of DeleteConnectPeer
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteConnectPeer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectPeer", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteConnectPeer), arg0)
+}
+
+// DeleteConnectPeerRequest mocks base method
+func (m *MockNetworkManagerAPI) DeleteConnectPeerRequest(arg0 *networkmanager.DeleteConnectPeerInput) (*request.Request, *networkmanager.DeleteConnectPeerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnectPeerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.DeleteConnectPeerOutput)
+	return ret0, ret1
+}
+
+// DeleteConnectPeerRequest indicates an expected call of DeleteConnectPeerRequest
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteConnectPeerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectPeerRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteConnectPeerRequest), arg0)
+}
+
+// DeleteConnectPeerWithContext mocks base method
+func (m *MockNetworkManagerAPI) DeleteConnectPeerWithContext(arg0 context.Context, arg1 *networkmanager.DeleteConnectPeerInput, arg2 ...request.Option) (*networkmanager.DeleteConnectPeerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteConnectPeerWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.DeleteConnectPeerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnectPeerWithContext indicates an expected call of DeleteConnectPeerWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteConnectPeerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectPeerWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteConnectPeerWithContext), varargs...)
 }
 
 // DeleteConnection mocks base method
@@ -483,6 +933,106 @@ func (mr *MockNetworkManagerAPIMockRecorder) DeleteConnectionWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectionWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteConnectionWithContext), varargs...)
+}
+
+// DeleteCoreNetwork mocks base method
+func (m *MockNetworkManagerAPI) DeleteCoreNetwork(arg0 *networkmanager.DeleteCoreNetworkInput) (*networkmanager.DeleteCoreNetworkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCoreNetwork", arg0)
+	ret0, _ := ret[0].(*networkmanager.DeleteCoreNetworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCoreNetwork indicates an expected call of DeleteCoreNetwork
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteCoreNetwork(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCoreNetwork", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteCoreNetwork), arg0)
+}
+
+// DeleteCoreNetworkPolicyVersion mocks base method
+func (m *MockNetworkManagerAPI) DeleteCoreNetworkPolicyVersion(arg0 *networkmanager.DeleteCoreNetworkPolicyVersionInput) (*networkmanager.DeleteCoreNetworkPolicyVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCoreNetworkPolicyVersion", arg0)
+	ret0, _ := ret[0].(*networkmanager.DeleteCoreNetworkPolicyVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCoreNetworkPolicyVersion indicates an expected call of DeleteCoreNetworkPolicyVersion
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteCoreNetworkPolicyVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCoreNetworkPolicyVersion", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteCoreNetworkPolicyVersion), arg0)
+}
+
+// DeleteCoreNetworkPolicyVersionRequest mocks base method
+func (m *MockNetworkManagerAPI) DeleteCoreNetworkPolicyVersionRequest(arg0 *networkmanager.DeleteCoreNetworkPolicyVersionInput) (*request.Request, *networkmanager.DeleteCoreNetworkPolicyVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCoreNetworkPolicyVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.DeleteCoreNetworkPolicyVersionOutput)
+	return ret0, ret1
+}
+
+// DeleteCoreNetworkPolicyVersionRequest indicates an expected call of DeleteCoreNetworkPolicyVersionRequest
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteCoreNetworkPolicyVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCoreNetworkPolicyVersionRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteCoreNetworkPolicyVersionRequest), arg0)
+}
+
+// DeleteCoreNetworkPolicyVersionWithContext mocks base method
+func (m *MockNetworkManagerAPI) DeleteCoreNetworkPolicyVersionWithContext(arg0 context.Context, arg1 *networkmanager.DeleteCoreNetworkPolicyVersionInput, arg2 ...request.Option) (*networkmanager.DeleteCoreNetworkPolicyVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCoreNetworkPolicyVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.DeleteCoreNetworkPolicyVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCoreNetworkPolicyVersionWithContext indicates an expected call of DeleteCoreNetworkPolicyVersionWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteCoreNetworkPolicyVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCoreNetworkPolicyVersionWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteCoreNetworkPolicyVersionWithContext), varargs...)
+}
+
+// DeleteCoreNetworkRequest mocks base method
+func (m *MockNetworkManagerAPI) DeleteCoreNetworkRequest(arg0 *networkmanager.DeleteCoreNetworkInput) (*request.Request, *networkmanager.DeleteCoreNetworkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCoreNetworkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.DeleteCoreNetworkOutput)
+	return ret0, ret1
+}
+
+// DeleteCoreNetworkRequest indicates an expected call of DeleteCoreNetworkRequest
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteCoreNetworkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCoreNetworkRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteCoreNetworkRequest), arg0)
+}
+
+// DeleteCoreNetworkWithContext mocks base method
+func (m *MockNetworkManagerAPI) DeleteCoreNetworkWithContext(arg0 context.Context, arg1 *networkmanager.DeleteCoreNetworkInput, arg2 ...request.Option) (*networkmanager.DeleteCoreNetworkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCoreNetworkWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.DeleteCoreNetworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCoreNetworkWithContext indicates an expected call of DeleteCoreNetworkWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteCoreNetworkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCoreNetworkWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteCoreNetworkWithContext), varargs...)
 }
 
 // DeleteDevice mocks base method
@@ -633,6 +1183,56 @@ func (mr *MockNetworkManagerAPIMockRecorder) DeleteLinkWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLinkWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteLinkWithContext), varargs...)
+}
+
+// DeleteResourcePolicy mocks base method
+func (m *MockNetworkManagerAPI) DeleteResourcePolicy(arg0 *networkmanager.DeleteResourcePolicyInput) (*networkmanager.DeleteResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourcePolicy", arg0)
+	ret0, _ := ret[0].(*networkmanager.DeleteResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicy indicates an expected call of DeleteResourcePolicy
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicy", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteResourcePolicy), arg0)
+}
+
+// DeleteResourcePolicyRequest mocks base method
+func (m *MockNetworkManagerAPI) DeleteResourcePolicyRequest(arg0 *networkmanager.DeleteResourcePolicyInput) (*request.Request, *networkmanager.DeleteResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.DeleteResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicyRequest indicates an expected call of DeleteResourcePolicyRequest
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteResourcePolicyRequest), arg0)
+}
+
+// DeleteResourcePolicyWithContext mocks base method
+func (m *MockNetworkManagerAPI) DeleteResourcePolicyWithContext(arg0 context.Context, arg1 *networkmanager.DeleteResourcePolicyInput, arg2 ...request.Option) (*networkmanager.DeleteResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.DeleteResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicyWithContext indicates an expected call of DeleteResourcePolicyWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) DeleteResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DeleteResourcePolicyWithContext), varargs...)
 }
 
 // DeleteSite mocks base method
@@ -818,6 +1418,56 @@ func (mr *MockNetworkManagerAPIMockRecorder) DescribeGlobalNetworksWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalNetworksWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DescribeGlobalNetworksWithContext), varargs...)
 }
 
+// DisassociateConnectPeer mocks base method
+func (m *MockNetworkManagerAPI) DisassociateConnectPeer(arg0 *networkmanager.DisassociateConnectPeerInput) (*networkmanager.DisassociateConnectPeerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateConnectPeer", arg0)
+	ret0, _ := ret[0].(*networkmanager.DisassociateConnectPeerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateConnectPeer indicates an expected call of DisassociateConnectPeer
+func (mr *MockNetworkManagerAPIMockRecorder) DisassociateConnectPeer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateConnectPeer", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DisassociateConnectPeer), arg0)
+}
+
+// DisassociateConnectPeerRequest mocks base method
+func (m *MockNetworkManagerAPI) DisassociateConnectPeerRequest(arg0 *networkmanager.DisassociateConnectPeerInput) (*request.Request, *networkmanager.DisassociateConnectPeerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateConnectPeerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.DisassociateConnectPeerOutput)
+	return ret0, ret1
+}
+
+// DisassociateConnectPeerRequest indicates an expected call of DisassociateConnectPeerRequest
+func (mr *MockNetworkManagerAPIMockRecorder) DisassociateConnectPeerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateConnectPeerRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DisassociateConnectPeerRequest), arg0)
+}
+
+// DisassociateConnectPeerWithContext mocks base method
+func (m *MockNetworkManagerAPI) DisassociateConnectPeerWithContext(arg0 context.Context, arg1 *networkmanager.DisassociateConnectPeerInput, arg2 ...request.Option) (*networkmanager.DisassociateConnectPeerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateConnectPeerWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.DisassociateConnectPeerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateConnectPeerWithContext indicates an expected call of DisassociateConnectPeerWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) DisassociateConnectPeerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateConnectPeerWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DisassociateConnectPeerWithContext), varargs...)
+}
+
 // DisassociateCustomerGateway mocks base method
 func (m *MockNetworkManagerAPI) DisassociateCustomerGateway(arg0 *networkmanager.DisassociateCustomerGatewayInput) (*networkmanager.DisassociateCustomerGatewayOutput, error) {
 	m.ctrl.T.Helper()
@@ -968,6 +1618,239 @@ func (mr *MockNetworkManagerAPIMockRecorder) DisassociateTransitGatewayConnectPe
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateTransitGatewayConnectPeerWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).DisassociateTransitGatewayConnectPeerWithContext), varargs...)
 }
 
+// ExecuteCoreNetworkChangeSet mocks base method
+func (m *MockNetworkManagerAPI) ExecuteCoreNetworkChangeSet(arg0 *networkmanager.ExecuteCoreNetworkChangeSetInput) (*networkmanager.ExecuteCoreNetworkChangeSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExecuteCoreNetworkChangeSet", arg0)
+	ret0, _ := ret[0].(*networkmanager.ExecuteCoreNetworkChangeSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExecuteCoreNetworkChangeSet indicates an expected call of ExecuteCoreNetworkChangeSet
+func (mr *MockNetworkManagerAPIMockRecorder) ExecuteCoreNetworkChangeSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteCoreNetworkChangeSet", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ExecuteCoreNetworkChangeSet), arg0)
+}
+
+// ExecuteCoreNetworkChangeSetRequest mocks base method
+func (m *MockNetworkManagerAPI) ExecuteCoreNetworkChangeSetRequest(arg0 *networkmanager.ExecuteCoreNetworkChangeSetInput) (*request.Request, *networkmanager.ExecuteCoreNetworkChangeSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExecuteCoreNetworkChangeSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.ExecuteCoreNetworkChangeSetOutput)
+	return ret0, ret1
+}
+
+// ExecuteCoreNetworkChangeSetRequest indicates an expected call of ExecuteCoreNetworkChangeSetRequest
+func (mr *MockNetworkManagerAPIMockRecorder) ExecuteCoreNetworkChangeSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteCoreNetworkChangeSetRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ExecuteCoreNetworkChangeSetRequest), arg0)
+}
+
+// ExecuteCoreNetworkChangeSetWithContext mocks base method
+func (m *MockNetworkManagerAPI) ExecuteCoreNetworkChangeSetWithContext(arg0 context.Context, arg1 *networkmanager.ExecuteCoreNetworkChangeSetInput, arg2 ...request.Option) (*networkmanager.ExecuteCoreNetworkChangeSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExecuteCoreNetworkChangeSetWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.ExecuteCoreNetworkChangeSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExecuteCoreNetworkChangeSetWithContext indicates an expected call of ExecuteCoreNetworkChangeSetWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) ExecuteCoreNetworkChangeSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteCoreNetworkChangeSetWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ExecuteCoreNetworkChangeSetWithContext), varargs...)
+}
+
+// GetConnectAttachment mocks base method
+func (m *MockNetworkManagerAPI) GetConnectAttachment(arg0 *networkmanager.GetConnectAttachmentInput) (*networkmanager.GetConnectAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectAttachment", arg0)
+	ret0, _ := ret[0].(*networkmanager.GetConnectAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnectAttachment indicates an expected call of GetConnectAttachment
+func (mr *MockNetworkManagerAPIMockRecorder) GetConnectAttachment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectAttachment", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetConnectAttachment), arg0)
+}
+
+// GetConnectAttachmentRequest mocks base method
+func (m *MockNetworkManagerAPI) GetConnectAttachmentRequest(arg0 *networkmanager.GetConnectAttachmentInput) (*request.Request, *networkmanager.GetConnectAttachmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectAttachmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.GetConnectAttachmentOutput)
+	return ret0, ret1
+}
+
+// GetConnectAttachmentRequest indicates an expected call of GetConnectAttachmentRequest
+func (mr *MockNetworkManagerAPIMockRecorder) GetConnectAttachmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectAttachmentRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetConnectAttachmentRequest), arg0)
+}
+
+// GetConnectAttachmentWithContext mocks base method
+func (m *MockNetworkManagerAPI) GetConnectAttachmentWithContext(arg0 context.Context, arg1 *networkmanager.GetConnectAttachmentInput, arg2 ...request.Option) (*networkmanager.GetConnectAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetConnectAttachmentWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.GetConnectAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnectAttachmentWithContext indicates an expected call of GetConnectAttachmentWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) GetConnectAttachmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectAttachmentWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetConnectAttachmentWithContext), varargs...)
+}
+
+// GetConnectPeer mocks base method
+func (m *MockNetworkManagerAPI) GetConnectPeer(arg0 *networkmanager.GetConnectPeerInput) (*networkmanager.GetConnectPeerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectPeer", arg0)
+	ret0, _ := ret[0].(*networkmanager.GetConnectPeerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnectPeer indicates an expected call of GetConnectPeer
+func (mr *MockNetworkManagerAPIMockRecorder) GetConnectPeer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectPeer", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetConnectPeer), arg0)
+}
+
+// GetConnectPeerAssociations mocks base method
+func (m *MockNetworkManagerAPI) GetConnectPeerAssociations(arg0 *networkmanager.GetConnectPeerAssociationsInput) (*networkmanager.GetConnectPeerAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectPeerAssociations", arg0)
+	ret0, _ := ret[0].(*networkmanager.GetConnectPeerAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnectPeerAssociations indicates an expected call of GetConnectPeerAssociations
+func (mr *MockNetworkManagerAPIMockRecorder) GetConnectPeerAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectPeerAssociations", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetConnectPeerAssociations), arg0)
+}
+
+// GetConnectPeerAssociationsPages mocks base method
+func (m *MockNetworkManagerAPI) GetConnectPeerAssociationsPages(arg0 *networkmanager.GetConnectPeerAssociationsInput, arg1 func(*networkmanager.GetConnectPeerAssociationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectPeerAssociationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetConnectPeerAssociationsPages indicates an expected call of GetConnectPeerAssociationsPages
+func (mr *MockNetworkManagerAPIMockRecorder) GetConnectPeerAssociationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectPeerAssociationsPages", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetConnectPeerAssociationsPages), arg0, arg1)
+}
+
+// GetConnectPeerAssociationsPagesWithContext mocks base method
+func (m *MockNetworkManagerAPI) GetConnectPeerAssociationsPagesWithContext(arg0 context.Context, arg1 *networkmanager.GetConnectPeerAssociationsInput, arg2 func(*networkmanager.GetConnectPeerAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetConnectPeerAssociationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetConnectPeerAssociationsPagesWithContext indicates an expected call of GetConnectPeerAssociationsPagesWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) GetConnectPeerAssociationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectPeerAssociationsPagesWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetConnectPeerAssociationsPagesWithContext), varargs...)
+}
+
+// GetConnectPeerAssociationsRequest mocks base method
+func (m *MockNetworkManagerAPI) GetConnectPeerAssociationsRequest(arg0 *networkmanager.GetConnectPeerAssociationsInput) (*request.Request, *networkmanager.GetConnectPeerAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectPeerAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.GetConnectPeerAssociationsOutput)
+	return ret0, ret1
+}
+
+// GetConnectPeerAssociationsRequest indicates an expected call of GetConnectPeerAssociationsRequest
+func (mr *MockNetworkManagerAPIMockRecorder) GetConnectPeerAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectPeerAssociationsRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetConnectPeerAssociationsRequest), arg0)
+}
+
+// GetConnectPeerAssociationsWithContext mocks base method
+func (m *MockNetworkManagerAPI) GetConnectPeerAssociationsWithContext(arg0 context.Context, arg1 *networkmanager.GetConnectPeerAssociationsInput, arg2 ...request.Option) (*networkmanager.GetConnectPeerAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetConnectPeerAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.GetConnectPeerAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnectPeerAssociationsWithContext indicates an expected call of GetConnectPeerAssociationsWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) GetConnectPeerAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectPeerAssociationsWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetConnectPeerAssociationsWithContext), varargs...)
+}
+
+// GetConnectPeerRequest mocks base method
+func (m *MockNetworkManagerAPI) GetConnectPeerRequest(arg0 *networkmanager.GetConnectPeerInput) (*request.Request, *networkmanager.GetConnectPeerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectPeerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.GetConnectPeerOutput)
+	return ret0, ret1
+}
+
+// GetConnectPeerRequest indicates an expected call of GetConnectPeerRequest
+func (mr *MockNetworkManagerAPIMockRecorder) GetConnectPeerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectPeerRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetConnectPeerRequest), arg0)
+}
+
+// GetConnectPeerWithContext mocks base method
+func (m *MockNetworkManagerAPI) GetConnectPeerWithContext(arg0 context.Context, arg1 *networkmanager.GetConnectPeerInput, arg2 ...request.Option) (*networkmanager.GetConnectPeerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetConnectPeerWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.GetConnectPeerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnectPeerWithContext indicates an expected call of GetConnectPeerWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) GetConnectPeerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectPeerWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetConnectPeerWithContext), varargs...)
+}
+
 // GetConnections mocks base method
 func (m *MockNetworkManagerAPI) GetConnections(arg0 *networkmanager.GetConnectionsInput) (*networkmanager.GetConnectionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1049,6 +1932,189 @@ func (mr *MockNetworkManagerAPIMockRecorder) GetConnectionsWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectionsWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetConnectionsWithContext), varargs...)
+}
+
+// GetCoreNetwork mocks base method
+func (m *MockNetworkManagerAPI) GetCoreNetwork(arg0 *networkmanager.GetCoreNetworkInput) (*networkmanager.GetCoreNetworkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCoreNetwork", arg0)
+	ret0, _ := ret[0].(*networkmanager.GetCoreNetworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCoreNetwork indicates an expected call of GetCoreNetwork
+func (mr *MockNetworkManagerAPIMockRecorder) GetCoreNetwork(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCoreNetwork", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetCoreNetwork), arg0)
+}
+
+// GetCoreNetworkChangeSet mocks base method
+func (m *MockNetworkManagerAPI) GetCoreNetworkChangeSet(arg0 *networkmanager.GetCoreNetworkChangeSetInput) (*networkmanager.GetCoreNetworkChangeSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCoreNetworkChangeSet", arg0)
+	ret0, _ := ret[0].(*networkmanager.GetCoreNetworkChangeSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCoreNetworkChangeSet indicates an expected call of GetCoreNetworkChangeSet
+func (mr *MockNetworkManagerAPIMockRecorder) GetCoreNetworkChangeSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCoreNetworkChangeSet", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetCoreNetworkChangeSet), arg0)
+}
+
+// GetCoreNetworkChangeSetPages mocks base method
+func (m *MockNetworkManagerAPI) GetCoreNetworkChangeSetPages(arg0 *networkmanager.GetCoreNetworkChangeSetInput, arg1 func(*networkmanager.GetCoreNetworkChangeSetOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCoreNetworkChangeSetPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetCoreNetworkChangeSetPages indicates an expected call of GetCoreNetworkChangeSetPages
+func (mr *MockNetworkManagerAPIMockRecorder) GetCoreNetworkChangeSetPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCoreNetworkChangeSetPages", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetCoreNetworkChangeSetPages), arg0, arg1)
+}
+
+// GetCoreNetworkChangeSetPagesWithContext mocks base method
+func (m *MockNetworkManagerAPI) GetCoreNetworkChangeSetPagesWithContext(arg0 context.Context, arg1 *networkmanager.GetCoreNetworkChangeSetInput, arg2 func(*networkmanager.GetCoreNetworkChangeSetOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCoreNetworkChangeSetPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetCoreNetworkChangeSetPagesWithContext indicates an expected call of GetCoreNetworkChangeSetPagesWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) GetCoreNetworkChangeSetPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCoreNetworkChangeSetPagesWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetCoreNetworkChangeSetPagesWithContext), varargs...)
+}
+
+// GetCoreNetworkChangeSetRequest mocks base method
+func (m *MockNetworkManagerAPI) GetCoreNetworkChangeSetRequest(arg0 *networkmanager.GetCoreNetworkChangeSetInput) (*request.Request, *networkmanager.GetCoreNetworkChangeSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCoreNetworkChangeSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.GetCoreNetworkChangeSetOutput)
+	return ret0, ret1
+}
+
+// GetCoreNetworkChangeSetRequest indicates an expected call of GetCoreNetworkChangeSetRequest
+func (mr *MockNetworkManagerAPIMockRecorder) GetCoreNetworkChangeSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCoreNetworkChangeSetRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetCoreNetworkChangeSetRequest), arg0)
+}
+
+// GetCoreNetworkChangeSetWithContext mocks base method
+func (m *MockNetworkManagerAPI) GetCoreNetworkChangeSetWithContext(arg0 context.Context, arg1 *networkmanager.GetCoreNetworkChangeSetInput, arg2 ...request.Option) (*networkmanager.GetCoreNetworkChangeSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCoreNetworkChangeSetWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.GetCoreNetworkChangeSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCoreNetworkChangeSetWithContext indicates an expected call of GetCoreNetworkChangeSetWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) GetCoreNetworkChangeSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCoreNetworkChangeSetWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetCoreNetworkChangeSetWithContext), varargs...)
+}
+
+// GetCoreNetworkPolicy mocks base method
+func (m *MockNetworkManagerAPI) GetCoreNetworkPolicy(arg0 *networkmanager.GetCoreNetworkPolicyInput) (*networkmanager.GetCoreNetworkPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCoreNetworkPolicy", arg0)
+	ret0, _ := ret[0].(*networkmanager.GetCoreNetworkPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCoreNetworkPolicy indicates an expected call of GetCoreNetworkPolicy
+func (mr *MockNetworkManagerAPIMockRecorder) GetCoreNetworkPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCoreNetworkPolicy", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetCoreNetworkPolicy), arg0)
+}
+
+// GetCoreNetworkPolicyRequest mocks base method
+func (m *MockNetworkManagerAPI) GetCoreNetworkPolicyRequest(arg0 *networkmanager.GetCoreNetworkPolicyInput) (*request.Request, *networkmanager.GetCoreNetworkPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCoreNetworkPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.GetCoreNetworkPolicyOutput)
+	return ret0, ret1
+}
+
+// GetCoreNetworkPolicyRequest indicates an expected call of GetCoreNetworkPolicyRequest
+func (mr *MockNetworkManagerAPIMockRecorder) GetCoreNetworkPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCoreNetworkPolicyRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetCoreNetworkPolicyRequest), arg0)
+}
+
+// GetCoreNetworkPolicyWithContext mocks base method
+func (m *MockNetworkManagerAPI) GetCoreNetworkPolicyWithContext(arg0 context.Context, arg1 *networkmanager.GetCoreNetworkPolicyInput, arg2 ...request.Option) (*networkmanager.GetCoreNetworkPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCoreNetworkPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.GetCoreNetworkPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCoreNetworkPolicyWithContext indicates an expected call of GetCoreNetworkPolicyWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) GetCoreNetworkPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCoreNetworkPolicyWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetCoreNetworkPolicyWithContext), varargs...)
+}
+
+// GetCoreNetworkRequest mocks base method
+func (m *MockNetworkManagerAPI) GetCoreNetworkRequest(arg0 *networkmanager.GetCoreNetworkInput) (*request.Request, *networkmanager.GetCoreNetworkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCoreNetworkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.GetCoreNetworkOutput)
+	return ret0, ret1
+}
+
+// GetCoreNetworkRequest indicates an expected call of GetCoreNetworkRequest
+func (mr *MockNetworkManagerAPIMockRecorder) GetCoreNetworkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCoreNetworkRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetCoreNetworkRequest), arg0)
+}
+
+// GetCoreNetworkWithContext mocks base method
+func (m *MockNetworkManagerAPI) GetCoreNetworkWithContext(arg0 context.Context, arg1 *networkmanager.GetCoreNetworkInput, arg2 ...request.Option) (*networkmanager.GetCoreNetworkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCoreNetworkWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.GetCoreNetworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCoreNetworkWithContext indicates an expected call of GetCoreNetworkWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) GetCoreNetworkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCoreNetworkWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetCoreNetworkWithContext), varargs...)
 }
 
 // GetCustomerGatewayAssociations mocks base method
@@ -1765,6 +2831,56 @@ func (mr *MockNetworkManagerAPIMockRecorder) GetNetworkTelemetryWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNetworkTelemetryWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetNetworkTelemetryWithContext), varargs...)
 }
 
+// GetResourcePolicy mocks base method
+func (m *MockNetworkManagerAPI) GetResourcePolicy(arg0 *networkmanager.GetResourcePolicyInput) (*networkmanager.GetResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcePolicy", arg0)
+	ret0, _ := ret[0].(*networkmanager.GetResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcePolicy indicates an expected call of GetResourcePolicy
+func (mr *MockNetworkManagerAPIMockRecorder) GetResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicy", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetResourcePolicy), arg0)
+}
+
+// GetResourcePolicyRequest mocks base method
+func (m *MockNetworkManagerAPI) GetResourcePolicyRequest(arg0 *networkmanager.GetResourcePolicyInput) (*request.Request, *networkmanager.GetResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.GetResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// GetResourcePolicyRequest indicates an expected call of GetResourcePolicyRequest
+func (mr *MockNetworkManagerAPIMockRecorder) GetResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicyRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetResourcePolicyRequest), arg0)
+}
+
+// GetResourcePolicyWithContext mocks base method
+func (m *MockNetworkManagerAPI) GetResourcePolicyWithContext(arg0 context.Context, arg1 *networkmanager.GetResourcePolicyInput, arg2 ...request.Option) (*networkmanager.GetResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.GetResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcePolicyWithContext indicates an expected call of GetResourcePolicyWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) GetResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicyWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetResourcePolicyWithContext), varargs...)
+}
+
 // GetRouteAnalysis mocks base method
 func (m *MockNetworkManagerAPI) GetRouteAnalysis(arg0 *networkmanager.GetRouteAnalysisInput) (*networkmanager.GetRouteAnalysisOutput, error) {
 	m.ctrl.T.Helper()
@@ -1813,6 +2929,56 @@ func (mr *MockNetworkManagerAPIMockRecorder) GetRouteAnalysisWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRouteAnalysisWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetRouteAnalysisWithContext), varargs...)
+}
+
+// GetSiteToSiteVpnAttachment mocks base method
+func (m *MockNetworkManagerAPI) GetSiteToSiteVpnAttachment(arg0 *networkmanager.GetSiteToSiteVpnAttachmentInput) (*networkmanager.GetSiteToSiteVpnAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSiteToSiteVpnAttachment", arg0)
+	ret0, _ := ret[0].(*networkmanager.GetSiteToSiteVpnAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSiteToSiteVpnAttachment indicates an expected call of GetSiteToSiteVpnAttachment
+func (mr *MockNetworkManagerAPIMockRecorder) GetSiteToSiteVpnAttachment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSiteToSiteVpnAttachment", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetSiteToSiteVpnAttachment), arg0)
+}
+
+// GetSiteToSiteVpnAttachmentRequest mocks base method
+func (m *MockNetworkManagerAPI) GetSiteToSiteVpnAttachmentRequest(arg0 *networkmanager.GetSiteToSiteVpnAttachmentInput) (*request.Request, *networkmanager.GetSiteToSiteVpnAttachmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSiteToSiteVpnAttachmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.GetSiteToSiteVpnAttachmentOutput)
+	return ret0, ret1
+}
+
+// GetSiteToSiteVpnAttachmentRequest indicates an expected call of GetSiteToSiteVpnAttachmentRequest
+func (mr *MockNetworkManagerAPIMockRecorder) GetSiteToSiteVpnAttachmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSiteToSiteVpnAttachmentRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetSiteToSiteVpnAttachmentRequest), arg0)
+}
+
+// GetSiteToSiteVpnAttachmentWithContext mocks base method
+func (m *MockNetworkManagerAPI) GetSiteToSiteVpnAttachmentWithContext(arg0 context.Context, arg1 *networkmanager.GetSiteToSiteVpnAttachmentInput, arg2 ...request.Option) (*networkmanager.GetSiteToSiteVpnAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSiteToSiteVpnAttachmentWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.GetSiteToSiteVpnAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSiteToSiteVpnAttachmentWithContext indicates an expected call of GetSiteToSiteVpnAttachmentWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) GetSiteToSiteVpnAttachmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSiteToSiteVpnAttachmentWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetSiteToSiteVpnAttachmentWithContext), varargs...)
 }
 
 // GetSites mocks base method
@@ -2064,6 +3230,388 @@ func (mr *MockNetworkManagerAPIMockRecorder) GetTransitGatewayRegistrationsWithC
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTransitGatewayRegistrationsWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetTransitGatewayRegistrationsWithContext), varargs...)
 }
 
+// GetVpcAttachment mocks base method
+func (m *MockNetworkManagerAPI) GetVpcAttachment(arg0 *networkmanager.GetVpcAttachmentInput) (*networkmanager.GetVpcAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVpcAttachment", arg0)
+	ret0, _ := ret[0].(*networkmanager.GetVpcAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVpcAttachment indicates an expected call of GetVpcAttachment
+func (mr *MockNetworkManagerAPIMockRecorder) GetVpcAttachment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcAttachment", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetVpcAttachment), arg0)
+}
+
+// GetVpcAttachmentRequest mocks base method
+func (m *MockNetworkManagerAPI) GetVpcAttachmentRequest(arg0 *networkmanager.GetVpcAttachmentInput) (*request.Request, *networkmanager.GetVpcAttachmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVpcAttachmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.GetVpcAttachmentOutput)
+	return ret0, ret1
+}
+
+// GetVpcAttachmentRequest indicates an expected call of GetVpcAttachmentRequest
+func (mr *MockNetworkManagerAPIMockRecorder) GetVpcAttachmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcAttachmentRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetVpcAttachmentRequest), arg0)
+}
+
+// GetVpcAttachmentWithContext mocks base method
+func (m *MockNetworkManagerAPI) GetVpcAttachmentWithContext(arg0 context.Context, arg1 *networkmanager.GetVpcAttachmentInput, arg2 ...request.Option) (*networkmanager.GetVpcAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetVpcAttachmentWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.GetVpcAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVpcAttachmentWithContext indicates an expected call of GetVpcAttachmentWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) GetVpcAttachmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVpcAttachmentWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).GetVpcAttachmentWithContext), varargs...)
+}
+
+// ListAttachments mocks base method
+func (m *MockNetworkManagerAPI) ListAttachments(arg0 *networkmanager.ListAttachmentsInput) (*networkmanager.ListAttachmentsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAttachments", arg0)
+	ret0, _ := ret[0].(*networkmanager.ListAttachmentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAttachments indicates an expected call of ListAttachments
+func (mr *MockNetworkManagerAPIMockRecorder) ListAttachments(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttachments", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListAttachments), arg0)
+}
+
+// ListAttachmentsPages mocks base method
+func (m *MockNetworkManagerAPI) ListAttachmentsPages(arg0 *networkmanager.ListAttachmentsInput, arg1 func(*networkmanager.ListAttachmentsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAttachmentsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAttachmentsPages indicates an expected call of ListAttachmentsPages
+func (mr *MockNetworkManagerAPIMockRecorder) ListAttachmentsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttachmentsPages", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListAttachmentsPages), arg0, arg1)
+}
+
+// ListAttachmentsPagesWithContext mocks base method
+func (m *MockNetworkManagerAPI) ListAttachmentsPagesWithContext(arg0 context.Context, arg1 *networkmanager.ListAttachmentsInput, arg2 func(*networkmanager.ListAttachmentsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAttachmentsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAttachmentsPagesWithContext indicates an expected call of ListAttachmentsPagesWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) ListAttachmentsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttachmentsPagesWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListAttachmentsPagesWithContext), varargs...)
+}
+
+// ListAttachmentsRequest mocks base method
+func (m *MockNetworkManagerAPI) ListAttachmentsRequest(arg0 *networkmanager.ListAttachmentsInput) (*request.Request, *networkmanager.ListAttachmentsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAttachmentsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.ListAttachmentsOutput)
+	return ret0, ret1
+}
+
+// ListAttachmentsRequest indicates an expected call of ListAttachmentsRequest
+func (mr *MockNetworkManagerAPIMockRecorder) ListAttachmentsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttachmentsRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListAttachmentsRequest), arg0)
+}
+
+// ListAttachmentsWithContext mocks base method
+func (m *MockNetworkManagerAPI) ListAttachmentsWithContext(arg0 context.Context, arg1 *networkmanager.ListAttachmentsInput, arg2 ...request.Option) (*networkmanager.ListAttachmentsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAttachmentsWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.ListAttachmentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAttachmentsWithContext indicates an expected call of ListAttachmentsWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) ListAttachmentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttachmentsWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListAttachmentsWithContext), varargs...)
+}
+
+// ListConnectPeers mocks base method
+func (m *MockNetworkManagerAPI) ListConnectPeers(arg0 *networkmanager.ListConnectPeersInput) (*networkmanager.ListConnectPeersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnectPeers", arg0)
+	ret0, _ := ret[0].(*networkmanager.ListConnectPeersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConnectPeers indicates an expected call of ListConnectPeers
+func (mr *MockNetworkManagerAPIMockRecorder) ListConnectPeers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectPeers", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListConnectPeers), arg0)
+}
+
+// ListConnectPeersPages mocks base method
+func (m *MockNetworkManagerAPI) ListConnectPeersPages(arg0 *networkmanager.ListConnectPeersInput, arg1 func(*networkmanager.ListConnectPeersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnectPeersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListConnectPeersPages indicates an expected call of ListConnectPeersPages
+func (mr *MockNetworkManagerAPIMockRecorder) ListConnectPeersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectPeersPages", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListConnectPeersPages), arg0, arg1)
+}
+
+// ListConnectPeersPagesWithContext mocks base method
+func (m *MockNetworkManagerAPI) ListConnectPeersPagesWithContext(arg0 context.Context, arg1 *networkmanager.ListConnectPeersInput, arg2 func(*networkmanager.ListConnectPeersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListConnectPeersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListConnectPeersPagesWithContext indicates an expected call of ListConnectPeersPagesWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) ListConnectPeersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectPeersPagesWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListConnectPeersPagesWithContext), varargs...)
+}
+
+// ListConnectPeersRequest mocks base method
+func (m *MockNetworkManagerAPI) ListConnectPeersRequest(arg0 *networkmanager.ListConnectPeersInput) (*request.Request, *networkmanager.ListConnectPeersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnectPeersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.ListConnectPeersOutput)
+	return ret0, ret1
+}
+
+// ListConnectPeersRequest indicates an expected call of ListConnectPeersRequest
+func (mr *MockNetworkManagerAPIMockRecorder) ListConnectPeersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectPeersRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListConnectPeersRequest), arg0)
+}
+
+// ListConnectPeersWithContext mocks base method
+func (m *MockNetworkManagerAPI) ListConnectPeersWithContext(arg0 context.Context, arg1 *networkmanager.ListConnectPeersInput, arg2 ...request.Option) (*networkmanager.ListConnectPeersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListConnectPeersWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.ListConnectPeersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConnectPeersWithContext indicates an expected call of ListConnectPeersWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) ListConnectPeersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectPeersWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListConnectPeersWithContext), varargs...)
+}
+
+// ListCoreNetworkPolicyVersions mocks base method
+func (m *MockNetworkManagerAPI) ListCoreNetworkPolicyVersions(arg0 *networkmanager.ListCoreNetworkPolicyVersionsInput) (*networkmanager.ListCoreNetworkPolicyVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCoreNetworkPolicyVersions", arg0)
+	ret0, _ := ret[0].(*networkmanager.ListCoreNetworkPolicyVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCoreNetworkPolicyVersions indicates an expected call of ListCoreNetworkPolicyVersions
+func (mr *MockNetworkManagerAPIMockRecorder) ListCoreNetworkPolicyVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoreNetworkPolicyVersions", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListCoreNetworkPolicyVersions), arg0)
+}
+
+// ListCoreNetworkPolicyVersionsPages mocks base method
+func (m *MockNetworkManagerAPI) ListCoreNetworkPolicyVersionsPages(arg0 *networkmanager.ListCoreNetworkPolicyVersionsInput, arg1 func(*networkmanager.ListCoreNetworkPolicyVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCoreNetworkPolicyVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCoreNetworkPolicyVersionsPages indicates an expected call of ListCoreNetworkPolicyVersionsPages
+func (mr *MockNetworkManagerAPIMockRecorder) ListCoreNetworkPolicyVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoreNetworkPolicyVersionsPages", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListCoreNetworkPolicyVersionsPages), arg0, arg1)
+}
+
+// ListCoreNetworkPolicyVersionsPagesWithContext mocks base method
+func (m *MockNetworkManagerAPI) ListCoreNetworkPolicyVersionsPagesWithContext(arg0 context.Context, arg1 *networkmanager.ListCoreNetworkPolicyVersionsInput, arg2 func(*networkmanager.ListCoreNetworkPolicyVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCoreNetworkPolicyVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCoreNetworkPolicyVersionsPagesWithContext indicates an expected call of ListCoreNetworkPolicyVersionsPagesWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) ListCoreNetworkPolicyVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoreNetworkPolicyVersionsPagesWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListCoreNetworkPolicyVersionsPagesWithContext), varargs...)
+}
+
+// ListCoreNetworkPolicyVersionsRequest mocks base method
+func (m *MockNetworkManagerAPI) ListCoreNetworkPolicyVersionsRequest(arg0 *networkmanager.ListCoreNetworkPolicyVersionsInput) (*request.Request, *networkmanager.ListCoreNetworkPolicyVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCoreNetworkPolicyVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.ListCoreNetworkPolicyVersionsOutput)
+	return ret0, ret1
+}
+
+// ListCoreNetworkPolicyVersionsRequest indicates an expected call of ListCoreNetworkPolicyVersionsRequest
+func (mr *MockNetworkManagerAPIMockRecorder) ListCoreNetworkPolicyVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoreNetworkPolicyVersionsRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListCoreNetworkPolicyVersionsRequest), arg0)
+}
+
+// ListCoreNetworkPolicyVersionsWithContext mocks base method
+func (m *MockNetworkManagerAPI) ListCoreNetworkPolicyVersionsWithContext(arg0 context.Context, arg1 *networkmanager.ListCoreNetworkPolicyVersionsInput, arg2 ...request.Option) (*networkmanager.ListCoreNetworkPolicyVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCoreNetworkPolicyVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.ListCoreNetworkPolicyVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCoreNetworkPolicyVersionsWithContext indicates an expected call of ListCoreNetworkPolicyVersionsWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) ListCoreNetworkPolicyVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoreNetworkPolicyVersionsWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListCoreNetworkPolicyVersionsWithContext), varargs...)
+}
+
+// ListCoreNetworks mocks base method
+func (m *MockNetworkManagerAPI) ListCoreNetworks(arg0 *networkmanager.ListCoreNetworksInput) (*networkmanager.ListCoreNetworksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCoreNetworks", arg0)
+	ret0, _ := ret[0].(*networkmanager.ListCoreNetworksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCoreNetworks indicates an expected call of ListCoreNetworks
+func (mr *MockNetworkManagerAPIMockRecorder) ListCoreNetworks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoreNetworks", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListCoreNetworks), arg0)
+}
+
+// ListCoreNetworksPages mocks base method
+func (m *MockNetworkManagerAPI) ListCoreNetworksPages(arg0 *networkmanager.ListCoreNetworksInput, arg1 func(*networkmanager.ListCoreNetworksOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCoreNetworksPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCoreNetworksPages indicates an expected call of ListCoreNetworksPages
+func (mr *MockNetworkManagerAPIMockRecorder) ListCoreNetworksPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoreNetworksPages", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListCoreNetworksPages), arg0, arg1)
+}
+
+// ListCoreNetworksPagesWithContext mocks base method
+func (m *MockNetworkManagerAPI) ListCoreNetworksPagesWithContext(arg0 context.Context, arg1 *networkmanager.ListCoreNetworksInput, arg2 func(*networkmanager.ListCoreNetworksOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCoreNetworksPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCoreNetworksPagesWithContext indicates an expected call of ListCoreNetworksPagesWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) ListCoreNetworksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoreNetworksPagesWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListCoreNetworksPagesWithContext), varargs...)
+}
+
+// ListCoreNetworksRequest mocks base method
+func (m *MockNetworkManagerAPI) ListCoreNetworksRequest(arg0 *networkmanager.ListCoreNetworksInput) (*request.Request, *networkmanager.ListCoreNetworksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCoreNetworksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.ListCoreNetworksOutput)
+	return ret0, ret1
+}
+
+// ListCoreNetworksRequest indicates an expected call of ListCoreNetworksRequest
+func (mr *MockNetworkManagerAPIMockRecorder) ListCoreNetworksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoreNetworksRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListCoreNetworksRequest), arg0)
+}
+
+// ListCoreNetworksWithContext mocks base method
+func (m *MockNetworkManagerAPI) ListCoreNetworksWithContext(arg0 context.Context, arg1 *networkmanager.ListCoreNetworksInput, arg2 ...request.Option) (*networkmanager.ListCoreNetworksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCoreNetworksWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.ListCoreNetworksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCoreNetworksWithContext indicates an expected call of ListCoreNetworksWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) ListCoreNetworksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoreNetworksWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListCoreNetworksWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockNetworkManagerAPI) ListTagsForResource(arg0 *networkmanager.ListTagsForResourceInput) (*networkmanager.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -2114,6 +3662,106 @@ func (mr *MockNetworkManagerAPIMockRecorder) ListTagsForResourceWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// PutCoreNetworkPolicy mocks base method
+func (m *MockNetworkManagerAPI) PutCoreNetworkPolicy(arg0 *networkmanager.PutCoreNetworkPolicyInput) (*networkmanager.PutCoreNetworkPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutCoreNetworkPolicy", arg0)
+	ret0, _ := ret[0].(*networkmanager.PutCoreNetworkPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutCoreNetworkPolicy indicates an expected call of PutCoreNetworkPolicy
+func (mr *MockNetworkManagerAPIMockRecorder) PutCoreNetworkPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutCoreNetworkPolicy", reflect.TypeOf((*MockNetworkManagerAPI)(nil).PutCoreNetworkPolicy), arg0)
+}
+
+// PutCoreNetworkPolicyRequest mocks base method
+func (m *MockNetworkManagerAPI) PutCoreNetworkPolicyRequest(arg0 *networkmanager.PutCoreNetworkPolicyInput) (*request.Request, *networkmanager.PutCoreNetworkPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutCoreNetworkPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.PutCoreNetworkPolicyOutput)
+	return ret0, ret1
+}
+
+// PutCoreNetworkPolicyRequest indicates an expected call of PutCoreNetworkPolicyRequest
+func (mr *MockNetworkManagerAPIMockRecorder) PutCoreNetworkPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutCoreNetworkPolicyRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).PutCoreNetworkPolicyRequest), arg0)
+}
+
+// PutCoreNetworkPolicyWithContext mocks base method
+func (m *MockNetworkManagerAPI) PutCoreNetworkPolicyWithContext(arg0 context.Context, arg1 *networkmanager.PutCoreNetworkPolicyInput, arg2 ...request.Option) (*networkmanager.PutCoreNetworkPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutCoreNetworkPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.PutCoreNetworkPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutCoreNetworkPolicyWithContext indicates an expected call of PutCoreNetworkPolicyWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) PutCoreNetworkPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutCoreNetworkPolicyWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).PutCoreNetworkPolicyWithContext), varargs...)
+}
+
+// PutResourcePolicy mocks base method
+func (m *MockNetworkManagerAPI) PutResourcePolicy(arg0 *networkmanager.PutResourcePolicyInput) (*networkmanager.PutResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourcePolicy", arg0)
+	ret0, _ := ret[0].(*networkmanager.PutResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourcePolicy indicates an expected call of PutResourcePolicy
+func (mr *MockNetworkManagerAPIMockRecorder) PutResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicy", reflect.TypeOf((*MockNetworkManagerAPI)(nil).PutResourcePolicy), arg0)
+}
+
+// PutResourcePolicyRequest mocks base method
+func (m *MockNetworkManagerAPI) PutResourcePolicyRequest(arg0 *networkmanager.PutResourcePolicyInput) (*request.Request, *networkmanager.PutResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.PutResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// PutResourcePolicyRequest indicates an expected call of PutResourcePolicyRequest
+func (mr *MockNetworkManagerAPIMockRecorder) PutResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).PutResourcePolicyRequest), arg0)
+}
+
+// PutResourcePolicyWithContext mocks base method
+func (m *MockNetworkManagerAPI) PutResourcePolicyWithContext(arg0 context.Context, arg1 *networkmanager.PutResourcePolicyInput, arg2 ...request.Option) (*networkmanager.PutResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.PutResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourcePolicyWithContext indicates an expected call of PutResourcePolicyWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) PutResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).PutResourcePolicyWithContext), varargs...)
+}
+
 // RegisterTransitGateway mocks base method
 func (m *MockNetworkManagerAPI) RegisterTransitGateway(arg0 *networkmanager.RegisterTransitGatewayInput) (*networkmanager.RegisterTransitGatewayOutput, error) {
 	m.ctrl.T.Helper()
@@ -2162,6 +3810,106 @@ func (mr *MockNetworkManagerAPIMockRecorder) RegisterTransitGatewayWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterTransitGatewayWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).RegisterTransitGatewayWithContext), varargs...)
+}
+
+// RejectAttachment mocks base method
+func (m *MockNetworkManagerAPI) RejectAttachment(arg0 *networkmanager.RejectAttachmentInput) (*networkmanager.RejectAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RejectAttachment", arg0)
+	ret0, _ := ret[0].(*networkmanager.RejectAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RejectAttachment indicates an expected call of RejectAttachment
+func (mr *MockNetworkManagerAPIMockRecorder) RejectAttachment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectAttachment", reflect.TypeOf((*MockNetworkManagerAPI)(nil).RejectAttachment), arg0)
+}
+
+// RejectAttachmentRequest mocks base method
+func (m *MockNetworkManagerAPI) RejectAttachmentRequest(arg0 *networkmanager.RejectAttachmentInput) (*request.Request, *networkmanager.RejectAttachmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RejectAttachmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.RejectAttachmentOutput)
+	return ret0, ret1
+}
+
+// RejectAttachmentRequest indicates an expected call of RejectAttachmentRequest
+func (mr *MockNetworkManagerAPIMockRecorder) RejectAttachmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectAttachmentRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).RejectAttachmentRequest), arg0)
+}
+
+// RejectAttachmentWithContext mocks base method
+func (m *MockNetworkManagerAPI) RejectAttachmentWithContext(arg0 context.Context, arg1 *networkmanager.RejectAttachmentInput, arg2 ...request.Option) (*networkmanager.RejectAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RejectAttachmentWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.RejectAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RejectAttachmentWithContext indicates an expected call of RejectAttachmentWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) RejectAttachmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectAttachmentWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).RejectAttachmentWithContext), varargs...)
+}
+
+// RestoreCoreNetworkPolicyVersion mocks base method
+func (m *MockNetworkManagerAPI) RestoreCoreNetworkPolicyVersion(arg0 *networkmanager.RestoreCoreNetworkPolicyVersionInput) (*networkmanager.RestoreCoreNetworkPolicyVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreCoreNetworkPolicyVersion", arg0)
+	ret0, _ := ret[0].(*networkmanager.RestoreCoreNetworkPolicyVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreCoreNetworkPolicyVersion indicates an expected call of RestoreCoreNetworkPolicyVersion
+func (mr *MockNetworkManagerAPIMockRecorder) RestoreCoreNetworkPolicyVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreCoreNetworkPolicyVersion", reflect.TypeOf((*MockNetworkManagerAPI)(nil).RestoreCoreNetworkPolicyVersion), arg0)
+}
+
+// RestoreCoreNetworkPolicyVersionRequest mocks base method
+func (m *MockNetworkManagerAPI) RestoreCoreNetworkPolicyVersionRequest(arg0 *networkmanager.RestoreCoreNetworkPolicyVersionInput) (*request.Request, *networkmanager.RestoreCoreNetworkPolicyVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreCoreNetworkPolicyVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.RestoreCoreNetworkPolicyVersionOutput)
+	return ret0, ret1
+}
+
+// RestoreCoreNetworkPolicyVersionRequest indicates an expected call of RestoreCoreNetworkPolicyVersionRequest
+func (mr *MockNetworkManagerAPIMockRecorder) RestoreCoreNetworkPolicyVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreCoreNetworkPolicyVersionRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).RestoreCoreNetworkPolicyVersionRequest), arg0)
+}
+
+// RestoreCoreNetworkPolicyVersionWithContext mocks base method
+func (m *MockNetworkManagerAPI) RestoreCoreNetworkPolicyVersionWithContext(arg0 context.Context, arg1 *networkmanager.RestoreCoreNetworkPolicyVersionInput, arg2 ...request.Option) (*networkmanager.RestoreCoreNetworkPolicyVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RestoreCoreNetworkPolicyVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.RestoreCoreNetworkPolicyVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreCoreNetworkPolicyVersionWithContext indicates an expected call of RestoreCoreNetworkPolicyVersionWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) RestoreCoreNetworkPolicyVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreCoreNetworkPolicyVersionWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).RestoreCoreNetworkPolicyVersionWithContext), varargs...)
 }
 
 // StartRouteAnalysis mocks base method
@@ -2362,6 +4110,56 @@ func (mr *MockNetworkManagerAPIMockRecorder) UpdateConnectionWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectionWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).UpdateConnectionWithContext), varargs...)
+}
+
+// UpdateCoreNetwork mocks base method
+func (m *MockNetworkManagerAPI) UpdateCoreNetwork(arg0 *networkmanager.UpdateCoreNetworkInput) (*networkmanager.UpdateCoreNetworkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCoreNetwork", arg0)
+	ret0, _ := ret[0].(*networkmanager.UpdateCoreNetworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCoreNetwork indicates an expected call of UpdateCoreNetwork
+func (mr *MockNetworkManagerAPIMockRecorder) UpdateCoreNetwork(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCoreNetwork", reflect.TypeOf((*MockNetworkManagerAPI)(nil).UpdateCoreNetwork), arg0)
+}
+
+// UpdateCoreNetworkRequest mocks base method
+func (m *MockNetworkManagerAPI) UpdateCoreNetworkRequest(arg0 *networkmanager.UpdateCoreNetworkInput) (*request.Request, *networkmanager.UpdateCoreNetworkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCoreNetworkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.UpdateCoreNetworkOutput)
+	return ret0, ret1
+}
+
+// UpdateCoreNetworkRequest indicates an expected call of UpdateCoreNetworkRequest
+func (mr *MockNetworkManagerAPIMockRecorder) UpdateCoreNetworkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCoreNetworkRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).UpdateCoreNetworkRequest), arg0)
+}
+
+// UpdateCoreNetworkWithContext mocks base method
+func (m *MockNetworkManagerAPI) UpdateCoreNetworkWithContext(arg0 context.Context, arg1 *networkmanager.UpdateCoreNetworkInput, arg2 ...request.Option) (*networkmanager.UpdateCoreNetworkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateCoreNetworkWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.UpdateCoreNetworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCoreNetworkWithContext indicates an expected call of UpdateCoreNetworkWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) UpdateCoreNetworkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCoreNetworkWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).UpdateCoreNetworkWithContext), varargs...)
 }
 
 // UpdateDevice mocks base method
@@ -2612,4 +4410,54 @@ func (mr *MockNetworkManagerAPIMockRecorder) UpdateSiteWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSiteWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).UpdateSiteWithContext), varargs...)
+}
+
+// UpdateVpcAttachment mocks base method
+func (m *MockNetworkManagerAPI) UpdateVpcAttachment(arg0 *networkmanager.UpdateVpcAttachmentInput) (*networkmanager.UpdateVpcAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVpcAttachment", arg0)
+	ret0, _ := ret[0].(*networkmanager.UpdateVpcAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVpcAttachment indicates an expected call of UpdateVpcAttachment
+func (mr *MockNetworkManagerAPIMockRecorder) UpdateVpcAttachment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVpcAttachment", reflect.TypeOf((*MockNetworkManagerAPI)(nil).UpdateVpcAttachment), arg0)
+}
+
+// UpdateVpcAttachmentRequest mocks base method
+func (m *MockNetworkManagerAPI) UpdateVpcAttachmentRequest(arg0 *networkmanager.UpdateVpcAttachmentInput) (*request.Request, *networkmanager.UpdateVpcAttachmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVpcAttachmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.UpdateVpcAttachmentOutput)
+	return ret0, ret1
+}
+
+// UpdateVpcAttachmentRequest indicates an expected call of UpdateVpcAttachmentRequest
+func (mr *MockNetworkManagerAPIMockRecorder) UpdateVpcAttachmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVpcAttachmentRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).UpdateVpcAttachmentRequest), arg0)
+}
+
+// UpdateVpcAttachmentWithContext mocks base method
+func (m *MockNetworkManagerAPI) UpdateVpcAttachmentWithContext(arg0 context.Context, arg1 *networkmanager.UpdateVpcAttachmentInput, arg2 ...request.Option) (*networkmanager.UpdateVpcAttachmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateVpcAttachmentWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.UpdateVpcAttachmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVpcAttachmentWithContext indicates an expected call of UpdateVpcAttachmentWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) UpdateVpcAttachmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVpcAttachmentWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).UpdateVpcAttachmentWithContext), varargs...)
 }
