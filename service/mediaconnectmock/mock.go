@@ -1516,3 +1516,102 @@ func (mr *MockMediaConnectAPIMockRecorder) UpdateFlowWithContext(arg0, arg1 inte
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFlowWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateFlowWithContext), varargs...)
 }
+
+// WaitUntilFlowActive mocks base method
+func (m *MockMediaConnectAPI) WaitUntilFlowActive(arg0 *mediaconnect.DescribeFlowInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilFlowActive", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilFlowActive indicates an expected call of WaitUntilFlowActive
+func (mr *MockMediaConnectAPIMockRecorder) WaitUntilFlowActive(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilFlowActive", reflect.TypeOf((*MockMediaConnectAPI)(nil).WaitUntilFlowActive), arg0)
+}
+
+// WaitUntilFlowActiveWithContext mocks base method
+func (m *MockMediaConnectAPI) WaitUntilFlowActiveWithContext(arg0 context.Context, arg1 *mediaconnect.DescribeFlowInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilFlowActiveWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilFlowActiveWithContext indicates an expected call of WaitUntilFlowActiveWithContext
+func (mr *MockMediaConnectAPIMockRecorder) WaitUntilFlowActiveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilFlowActiveWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).WaitUntilFlowActiveWithContext), varargs...)
+}
+
+// WaitUntilFlowDeleted mocks base method
+func (m *MockMediaConnectAPI) WaitUntilFlowDeleted(arg0 *mediaconnect.DescribeFlowInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilFlowDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilFlowDeleted indicates an expected call of WaitUntilFlowDeleted
+func (mr *MockMediaConnectAPIMockRecorder) WaitUntilFlowDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilFlowDeleted", reflect.TypeOf((*MockMediaConnectAPI)(nil).WaitUntilFlowDeleted), arg0)
+}
+
+// WaitUntilFlowDeletedWithContext mocks base method
+func (m *MockMediaConnectAPI) WaitUntilFlowDeletedWithContext(arg0 context.Context, arg1 *mediaconnect.DescribeFlowInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilFlowDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilFlowDeletedWithContext indicates an expected call of WaitUntilFlowDeletedWithContext
+func (mr *MockMediaConnectAPIMockRecorder) WaitUntilFlowDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilFlowDeletedWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).WaitUntilFlowDeletedWithContext), varargs...)
+}
+
+// WaitUntilFlowStandby mocks base method
+func (m *MockMediaConnectAPI) WaitUntilFlowStandby(arg0 *mediaconnect.DescribeFlowInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilFlowStandby", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilFlowStandby indicates an expected call of WaitUntilFlowStandby
+func (mr *MockMediaConnectAPIMockRecorder) WaitUntilFlowStandby(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilFlowStandby", reflect.TypeOf((*MockMediaConnectAPI)(nil).WaitUntilFlowStandby), arg0)
+}
+
+// WaitUntilFlowStandbyWithContext mocks base method
+func (m *MockMediaConnectAPI) WaitUntilFlowStandbyWithContext(arg0 context.Context, arg1 *mediaconnect.DescribeFlowInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilFlowStandbyWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilFlowStandbyWithContext indicates an expected call of WaitUntilFlowStandbyWithContext
+func (mr *MockMediaConnectAPIMockRecorder) WaitUntilFlowStandbyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilFlowStandbyWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).WaitUntilFlowStandbyWithContext), varargs...)
+}
