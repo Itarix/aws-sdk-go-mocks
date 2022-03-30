@@ -285,6 +285,56 @@ func (mr *MockSnowballAPIMockRecorder) CreateJobWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).CreateJobWithContext), varargs...)
 }
 
+// CreateLongTermPricing mocks base method
+func (m *MockSnowballAPI) CreateLongTermPricing(arg0 *snowball.CreateLongTermPricingInput) (*snowball.CreateLongTermPricingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLongTermPricing", arg0)
+	ret0, _ := ret[0].(*snowball.CreateLongTermPricingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLongTermPricing indicates an expected call of CreateLongTermPricing
+func (mr *MockSnowballAPIMockRecorder) CreateLongTermPricing(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLongTermPricing", reflect.TypeOf((*MockSnowballAPI)(nil).CreateLongTermPricing), arg0)
+}
+
+// CreateLongTermPricingRequest mocks base method
+func (m *MockSnowballAPI) CreateLongTermPricingRequest(arg0 *snowball.CreateLongTermPricingInput) (*request.Request, *snowball.CreateLongTermPricingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLongTermPricingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*snowball.CreateLongTermPricingOutput)
+	return ret0, ret1
+}
+
+// CreateLongTermPricingRequest indicates an expected call of CreateLongTermPricingRequest
+func (mr *MockSnowballAPIMockRecorder) CreateLongTermPricingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLongTermPricingRequest", reflect.TypeOf((*MockSnowballAPI)(nil).CreateLongTermPricingRequest), arg0)
+}
+
+// CreateLongTermPricingWithContext mocks base method
+func (m *MockSnowballAPI) CreateLongTermPricingWithContext(arg0 context.Context, arg1 *snowball.CreateLongTermPricingInput, arg2 ...request.Option) (*snowball.CreateLongTermPricingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLongTermPricingWithContext", varargs...)
+	ret0, _ := ret[0].(*snowball.CreateLongTermPricingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLongTermPricingWithContext indicates an expected call of CreateLongTermPricingWithContext
+func (mr *MockSnowballAPIMockRecorder) CreateLongTermPricingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLongTermPricingWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).CreateLongTermPricingWithContext), varargs...)
+}
+
 // CreateReturnShippingLabel mocks base method
 func (m *MockSnowballAPI) CreateReturnShippingLabel(arg0 *snowball.CreateReturnShippingLabelInput) (*snowball.CreateReturnShippingLabelOutput, error) {
 	m.ctrl.T.Helper()
@@ -1051,6 +1101,56 @@ func (mr *MockSnowballAPIMockRecorder) ListJobsWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).ListJobsWithContext), varargs...)
 }
 
+// ListLongTermPricing mocks base method
+func (m *MockSnowballAPI) ListLongTermPricing(arg0 *snowball.ListLongTermPricingInput) (*snowball.ListLongTermPricingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLongTermPricing", arg0)
+	ret0, _ := ret[0].(*snowball.ListLongTermPricingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLongTermPricing indicates an expected call of ListLongTermPricing
+func (mr *MockSnowballAPIMockRecorder) ListLongTermPricing(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLongTermPricing", reflect.TypeOf((*MockSnowballAPI)(nil).ListLongTermPricing), arg0)
+}
+
+// ListLongTermPricingRequest mocks base method
+func (m *MockSnowballAPI) ListLongTermPricingRequest(arg0 *snowball.ListLongTermPricingInput) (*request.Request, *snowball.ListLongTermPricingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLongTermPricingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*snowball.ListLongTermPricingOutput)
+	return ret0, ret1
+}
+
+// ListLongTermPricingRequest indicates an expected call of ListLongTermPricingRequest
+func (mr *MockSnowballAPIMockRecorder) ListLongTermPricingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLongTermPricingRequest", reflect.TypeOf((*MockSnowballAPI)(nil).ListLongTermPricingRequest), arg0)
+}
+
+// ListLongTermPricingWithContext mocks base method
+func (m *MockSnowballAPI) ListLongTermPricingWithContext(arg0 context.Context, arg1 *snowball.ListLongTermPricingInput, arg2 ...request.Option) (*snowball.ListLongTermPricingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLongTermPricingWithContext", varargs...)
+	ret0, _ := ret[0].(*snowball.ListLongTermPricingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLongTermPricingWithContext indicates an expected call of ListLongTermPricingWithContext
+func (mr *MockSnowballAPIMockRecorder) ListLongTermPricingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLongTermPricingWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).ListLongTermPricingWithContext), varargs...)
+}
+
 // UpdateCluster mocks base method
 func (m *MockSnowballAPI) UpdateCluster(arg0 *snowball.UpdateClusterInput) (*snowball.UpdateClusterOutput, error) {
 	m.ctrl.T.Helper()
@@ -1199,4 +1299,54 @@ func (mr *MockSnowballAPIMockRecorder) UpdateJobWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJobWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).UpdateJobWithContext), varargs...)
+}
+
+// UpdateLongTermPricing mocks base method
+func (m *MockSnowballAPI) UpdateLongTermPricing(arg0 *snowball.UpdateLongTermPricingInput) (*snowball.UpdateLongTermPricingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLongTermPricing", arg0)
+	ret0, _ := ret[0].(*snowball.UpdateLongTermPricingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLongTermPricing indicates an expected call of UpdateLongTermPricing
+func (mr *MockSnowballAPIMockRecorder) UpdateLongTermPricing(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLongTermPricing", reflect.TypeOf((*MockSnowballAPI)(nil).UpdateLongTermPricing), arg0)
+}
+
+// UpdateLongTermPricingRequest mocks base method
+func (m *MockSnowballAPI) UpdateLongTermPricingRequest(arg0 *snowball.UpdateLongTermPricingInput) (*request.Request, *snowball.UpdateLongTermPricingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLongTermPricingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*snowball.UpdateLongTermPricingOutput)
+	return ret0, ret1
+}
+
+// UpdateLongTermPricingRequest indicates an expected call of UpdateLongTermPricingRequest
+func (mr *MockSnowballAPIMockRecorder) UpdateLongTermPricingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLongTermPricingRequest", reflect.TypeOf((*MockSnowballAPI)(nil).UpdateLongTermPricingRequest), arg0)
+}
+
+// UpdateLongTermPricingWithContext mocks base method
+func (m *MockSnowballAPI) UpdateLongTermPricingWithContext(arg0 context.Context, arg1 *snowball.UpdateLongTermPricingInput, arg2 ...request.Option) (*snowball.UpdateLongTermPricingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateLongTermPricingWithContext", varargs...)
+	ret0, _ := ret[0].(*snowball.UpdateLongTermPricingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLongTermPricingWithContext indicates an expected call of UpdateLongTermPricingWithContext
+func (mr *MockSnowballAPIMockRecorder) UpdateLongTermPricingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLongTermPricingWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).UpdateLongTermPricingWithContext), varargs...)
 }
