@@ -35,6 +35,56 @@ func (m *MockBraketAPI) EXPECT() *MockBraketAPIMockRecorder {
 	return m.recorder
 }
 
+// CancelJob mocks base method
+func (m *MockBraketAPI) CancelJob(arg0 *braket.CancelJobInput) (*braket.CancelJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelJob", arg0)
+	ret0, _ := ret[0].(*braket.CancelJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelJob indicates an expected call of CancelJob
+func (mr *MockBraketAPIMockRecorder) CancelJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelJob", reflect.TypeOf((*MockBraketAPI)(nil).CancelJob), arg0)
+}
+
+// CancelJobRequest mocks base method
+func (m *MockBraketAPI) CancelJobRequest(arg0 *braket.CancelJobInput) (*request.Request, *braket.CancelJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*braket.CancelJobOutput)
+	return ret0, ret1
+}
+
+// CancelJobRequest indicates an expected call of CancelJobRequest
+func (mr *MockBraketAPIMockRecorder) CancelJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelJobRequest", reflect.TypeOf((*MockBraketAPI)(nil).CancelJobRequest), arg0)
+}
+
+// CancelJobWithContext mocks base method
+func (m *MockBraketAPI) CancelJobWithContext(arg0 context.Context, arg1 *braket.CancelJobInput, arg2 ...request.Option) (*braket.CancelJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelJobWithContext", varargs...)
+	ret0, _ := ret[0].(*braket.CancelJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelJobWithContext indicates an expected call of CancelJobWithContext
+func (mr *MockBraketAPIMockRecorder) CancelJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelJobWithContext", reflect.TypeOf((*MockBraketAPI)(nil).CancelJobWithContext), varargs...)
+}
+
 // CancelQuantumTask mocks base method
 func (m *MockBraketAPI) CancelQuantumTask(arg0 *braket.CancelQuantumTaskInput) (*braket.CancelQuantumTaskOutput, error) {
 	m.ctrl.T.Helper()
@@ -83,6 +133,56 @@ func (mr *MockBraketAPIMockRecorder) CancelQuantumTaskWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelQuantumTaskWithContext", reflect.TypeOf((*MockBraketAPI)(nil).CancelQuantumTaskWithContext), varargs...)
+}
+
+// CreateJob mocks base method
+func (m *MockBraketAPI) CreateJob(arg0 *braket.CreateJobInput) (*braket.CreateJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateJob", arg0)
+	ret0, _ := ret[0].(*braket.CreateJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateJob indicates an expected call of CreateJob
+func (mr *MockBraketAPIMockRecorder) CreateJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJob", reflect.TypeOf((*MockBraketAPI)(nil).CreateJob), arg0)
+}
+
+// CreateJobRequest mocks base method
+func (m *MockBraketAPI) CreateJobRequest(arg0 *braket.CreateJobInput) (*request.Request, *braket.CreateJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*braket.CreateJobOutput)
+	return ret0, ret1
+}
+
+// CreateJobRequest indicates an expected call of CreateJobRequest
+func (mr *MockBraketAPIMockRecorder) CreateJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobRequest", reflect.TypeOf((*MockBraketAPI)(nil).CreateJobRequest), arg0)
+}
+
+// CreateJobWithContext mocks base method
+func (m *MockBraketAPI) CreateJobWithContext(arg0 context.Context, arg1 *braket.CreateJobInput, arg2 ...request.Option) (*braket.CreateJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateJobWithContext", varargs...)
+	ret0, _ := ret[0].(*braket.CreateJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateJobWithContext indicates an expected call of CreateJobWithContext
+func (mr *MockBraketAPIMockRecorder) CreateJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobWithContext", reflect.TypeOf((*MockBraketAPI)(nil).CreateJobWithContext), varargs...)
 }
 
 // CreateQuantumTask mocks base method
@@ -183,6 +283,56 @@ func (mr *MockBraketAPIMockRecorder) GetDeviceWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeviceWithContext", reflect.TypeOf((*MockBraketAPI)(nil).GetDeviceWithContext), varargs...)
+}
+
+// GetJob mocks base method
+func (m *MockBraketAPI) GetJob(arg0 *braket.GetJobInput) (*braket.GetJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJob", arg0)
+	ret0, _ := ret[0].(*braket.GetJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJob indicates an expected call of GetJob
+func (mr *MockBraketAPIMockRecorder) GetJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJob", reflect.TypeOf((*MockBraketAPI)(nil).GetJob), arg0)
+}
+
+// GetJobRequest mocks base method
+func (m *MockBraketAPI) GetJobRequest(arg0 *braket.GetJobInput) (*request.Request, *braket.GetJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*braket.GetJobOutput)
+	return ret0, ret1
+}
+
+// GetJobRequest indicates an expected call of GetJobRequest
+func (mr *MockBraketAPIMockRecorder) GetJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobRequest", reflect.TypeOf((*MockBraketAPI)(nil).GetJobRequest), arg0)
+}
+
+// GetJobWithContext mocks base method
+func (m *MockBraketAPI) GetJobWithContext(arg0 context.Context, arg1 *braket.GetJobInput, arg2 ...request.Option) (*braket.GetJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetJobWithContext", varargs...)
+	ret0, _ := ret[0].(*braket.GetJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetJobWithContext indicates an expected call of GetJobWithContext
+func (mr *MockBraketAPIMockRecorder) GetJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobWithContext", reflect.TypeOf((*MockBraketAPI)(nil).GetJobWithContext), varargs...)
 }
 
 // GetQuantumTask mocks base method
@@ -366,6 +516,89 @@ func (mr *MockBraketAPIMockRecorder) SearchDevicesWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDevicesWithContext", reflect.TypeOf((*MockBraketAPI)(nil).SearchDevicesWithContext), varargs...)
+}
+
+// SearchJobs mocks base method
+func (m *MockBraketAPI) SearchJobs(arg0 *braket.SearchJobsInput) (*braket.SearchJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchJobs", arg0)
+	ret0, _ := ret[0].(*braket.SearchJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchJobs indicates an expected call of SearchJobs
+func (mr *MockBraketAPIMockRecorder) SearchJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchJobs", reflect.TypeOf((*MockBraketAPI)(nil).SearchJobs), arg0)
+}
+
+// SearchJobsPages mocks base method
+func (m *MockBraketAPI) SearchJobsPages(arg0 *braket.SearchJobsInput, arg1 func(*braket.SearchJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchJobsPages indicates an expected call of SearchJobsPages
+func (mr *MockBraketAPIMockRecorder) SearchJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchJobsPages", reflect.TypeOf((*MockBraketAPI)(nil).SearchJobsPages), arg0, arg1)
+}
+
+// SearchJobsPagesWithContext mocks base method
+func (m *MockBraketAPI) SearchJobsPagesWithContext(arg0 context.Context, arg1 *braket.SearchJobsInput, arg2 func(*braket.SearchJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchJobsPagesWithContext indicates an expected call of SearchJobsPagesWithContext
+func (mr *MockBraketAPIMockRecorder) SearchJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchJobsPagesWithContext", reflect.TypeOf((*MockBraketAPI)(nil).SearchJobsPagesWithContext), varargs...)
+}
+
+// SearchJobsRequest mocks base method
+func (m *MockBraketAPI) SearchJobsRequest(arg0 *braket.SearchJobsInput) (*request.Request, *braket.SearchJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*braket.SearchJobsOutput)
+	return ret0, ret1
+}
+
+// SearchJobsRequest indicates an expected call of SearchJobsRequest
+func (mr *MockBraketAPIMockRecorder) SearchJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchJobsRequest", reflect.TypeOf((*MockBraketAPI)(nil).SearchJobsRequest), arg0)
+}
+
+// SearchJobsWithContext mocks base method
+func (m *MockBraketAPI) SearchJobsWithContext(arg0 context.Context, arg1 *braket.SearchJobsInput, arg2 ...request.Option) (*braket.SearchJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*braket.SearchJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchJobsWithContext indicates an expected call of SearchJobsWithContext
+func (mr *MockBraketAPIMockRecorder) SearchJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchJobsWithContext", reflect.TypeOf((*MockBraketAPI)(nil).SearchJobsWithContext), varargs...)
 }
 
 // SearchQuantumTasks mocks base method
