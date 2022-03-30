@@ -2511,6 +2511,56 @@ func (mr *MockCodeBuildAPIMockRecorder) UpdateProjectRequest(arg0 interface{}) *
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProjectRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).UpdateProjectRequest), arg0)
 }
 
+// UpdateProjectVisibility mocks base method
+func (m *MockCodeBuildAPI) UpdateProjectVisibility(arg0 *codebuild.UpdateProjectVisibilityInput) (*codebuild.UpdateProjectVisibilityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProjectVisibility", arg0)
+	ret0, _ := ret[0].(*codebuild.UpdateProjectVisibilityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProjectVisibility indicates an expected call of UpdateProjectVisibility
+func (mr *MockCodeBuildAPIMockRecorder) UpdateProjectVisibility(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProjectVisibility", reflect.TypeOf((*MockCodeBuildAPI)(nil).UpdateProjectVisibility), arg0)
+}
+
+// UpdateProjectVisibilityRequest mocks base method
+func (m *MockCodeBuildAPI) UpdateProjectVisibilityRequest(arg0 *codebuild.UpdateProjectVisibilityInput) (*request.Request, *codebuild.UpdateProjectVisibilityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProjectVisibilityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codebuild.UpdateProjectVisibilityOutput)
+	return ret0, ret1
+}
+
+// UpdateProjectVisibilityRequest indicates an expected call of UpdateProjectVisibilityRequest
+func (mr *MockCodeBuildAPIMockRecorder) UpdateProjectVisibilityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProjectVisibilityRequest", reflect.TypeOf((*MockCodeBuildAPI)(nil).UpdateProjectVisibilityRequest), arg0)
+}
+
+// UpdateProjectVisibilityWithContext mocks base method
+func (m *MockCodeBuildAPI) UpdateProjectVisibilityWithContext(arg0 context.Context, arg1 *codebuild.UpdateProjectVisibilityInput, arg2 ...request.Option) (*codebuild.UpdateProjectVisibilityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateProjectVisibilityWithContext", varargs...)
+	ret0, _ := ret[0].(*codebuild.UpdateProjectVisibilityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProjectVisibilityWithContext indicates an expected call of UpdateProjectVisibilityWithContext
+func (mr *MockCodeBuildAPIMockRecorder) UpdateProjectVisibilityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProjectVisibilityWithContext", reflect.TypeOf((*MockCodeBuildAPI)(nil).UpdateProjectVisibilityWithContext), varargs...)
+}
+
 // UpdateProjectWithContext mocks base method
 func (m *MockCodeBuildAPI) UpdateProjectWithContext(arg0 context.Context, arg1 *codebuild.UpdateProjectInput, arg2 ...request.Option) (*codebuild.UpdateProjectOutput, error) {
 	m.ctrl.T.Helper()
