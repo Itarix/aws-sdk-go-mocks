@@ -1533,6 +1533,56 @@ func (mr *MockMacie2APIMockRecorder) GetFindingsFilterWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFindingsFilterWithContext", reflect.TypeOf((*MockMacie2API)(nil).GetFindingsFilterWithContext), varargs...)
 }
 
+// GetFindingsPublicationConfiguration mocks base method
+func (m *MockMacie2API) GetFindingsPublicationConfiguration(arg0 *macie2.GetFindingsPublicationConfigurationInput) (*macie2.GetFindingsPublicationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFindingsPublicationConfiguration", arg0)
+	ret0, _ := ret[0].(*macie2.GetFindingsPublicationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFindingsPublicationConfiguration indicates an expected call of GetFindingsPublicationConfiguration
+func (mr *MockMacie2APIMockRecorder) GetFindingsPublicationConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFindingsPublicationConfiguration", reflect.TypeOf((*MockMacie2API)(nil).GetFindingsPublicationConfiguration), arg0)
+}
+
+// GetFindingsPublicationConfigurationRequest mocks base method
+func (m *MockMacie2API) GetFindingsPublicationConfigurationRequest(arg0 *macie2.GetFindingsPublicationConfigurationInput) (*request.Request, *macie2.GetFindingsPublicationConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFindingsPublicationConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*macie2.GetFindingsPublicationConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetFindingsPublicationConfigurationRequest indicates an expected call of GetFindingsPublicationConfigurationRequest
+func (mr *MockMacie2APIMockRecorder) GetFindingsPublicationConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFindingsPublicationConfigurationRequest", reflect.TypeOf((*MockMacie2API)(nil).GetFindingsPublicationConfigurationRequest), arg0)
+}
+
+// GetFindingsPublicationConfigurationWithContext mocks base method
+func (m *MockMacie2API) GetFindingsPublicationConfigurationWithContext(arg0 context.Context, arg1 *macie2.GetFindingsPublicationConfigurationInput, arg2 ...request.Option) (*macie2.GetFindingsPublicationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFindingsPublicationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*macie2.GetFindingsPublicationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFindingsPublicationConfigurationWithContext indicates an expected call of GetFindingsPublicationConfigurationWithContext
+func (mr *MockMacie2APIMockRecorder) GetFindingsPublicationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFindingsPublicationConfigurationWithContext", reflect.TypeOf((*MockMacie2API)(nil).GetFindingsPublicationConfigurationWithContext), varargs...)
+}
+
 // GetFindingsRequest mocks base method
 func (m *MockMacie2API) GetFindingsRequest(arg0 *macie2.GetFindingsInput) (*request.Request, *macie2.GetFindingsOutput) {
 	m.ctrl.T.Helper()
@@ -2580,6 +2630,56 @@ func (mr *MockMacie2APIMockRecorder) PutClassificationExportConfigurationWithCon
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutClassificationExportConfigurationWithContext", reflect.TypeOf((*MockMacie2API)(nil).PutClassificationExportConfigurationWithContext), varargs...)
+}
+
+// PutFindingsPublicationConfiguration mocks base method
+func (m *MockMacie2API) PutFindingsPublicationConfiguration(arg0 *macie2.PutFindingsPublicationConfigurationInput) (*macie2.PutFindingsPublicationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutFindingsPublicationConfiguration", arg0)
+	ret0, _ := ret[0].(*macie2.PutFindingsPublicationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutFindingsPublicationConfiguration indicates an expected call of PutFindingsPublicationConfiguration
+func (mr *MockMacie2APIMockRecorder) PutFindingsPublicationConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFindingsPublicationConfiguration", reflect.TypeOf((*MockMacie2API)(nil).PutFindingsPublicationConfiguration), arg0)
+}
+
+// PutFindingsPublicationConfigurationRequest mocks base method
+func (m *MockMacie2API) PutFindingsPublicationConfigurationRequest(arg0 *macie2.PutFindingsPublicationConfigurationInput) (*request.Request, *macie2.PutFindingsPublicationConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutFindingsPublicationConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*macie2.PutFindingsPublicationConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutFindingsPublicationConfigurationRequest indicates an expected call of PutFindingsPublicationConfigurationRequest
+func (mr *MockMacie2APIMockRecorder) PutFindingsPublicationConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFindingsPublicationConfigurationRequest", reflect.TypeOf((*MockMacie2API)(nil).PutFindingsPublicationConfigurationRequest), arg0)
+}
+
+// PutFindingsPublicationConfigurationWithContext mocks base method
+func (m *MockMacie2API) PutFindingsPublicationConfigurationWithContext(arg0 context.Context, arg1 *macie2.PutFindingsPublicationConfigurationInput, arg2 ...request.Option) (*macie2.PutFindingsPublicationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutFindingsPublicationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*macie2.PutFindingsPublicationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutFindingsPublicationConfigurationWithContext indicates an expected call of PutFindingsPublicationConfigurationWithContext
+func (mr *MockMacie2APIMockRecorder) PutFindingsPublicationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFindingsPublicationConfigurationWithContext", reflect.TypeOf((*MockMacie2API)(nil).PutFindingsPublicationConfigurationWithContext), varargs...)
 }
 
 // TagResource mocks base method
