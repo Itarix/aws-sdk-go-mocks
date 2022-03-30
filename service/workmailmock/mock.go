@@ -1085,6 +1085,56 @@ func (mr *MockWorkMailAPIMockRecorder) DescribeGroupWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGroupWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeGroupWithContext), varargs...)
 }
 
+// DescribeInboundDmarcSettings mocks base method
+func (m *MockWorkMailAPI) DescribeInboundDmarcSettings(arg0 *workmail.DescribeInboundDmarcSettingsInput) (*workmail.DescribeInboundDmarcSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInboundDmarcSettings", arg0)
+	ret0, _ := ret[0].(*workmail.DescribeInboundDmarcSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInboundDmarcSettings indicates an expected call of DescribeInboundDmarcSettings
+func (mr *MockWorkMailAPIMockRecorder) DescribeInboundDmarcSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInboundDmarcSettings", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeInboundDmarcSettings), arg0)
+}
+
+// DescribeInboundDmarcSettingsRequest mocks base method
+func (m *MockWorkMailAPI) DescribeInboundDmarcSettingsRequest(arg0 *workmail.DescribeInboundDmarcSettingsInput) (*request.Request, *workmail.DescribeInboundDmarcSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInboundDmarcSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.DescribeInboundDmarcSettingsOutput)
+	return ret0, ret1
+}
+
+// DescribeInboundDmarcSettingsRequest indicates an expected call of DescribeInboundDmarcSettingsRequest
+func (mr *MockWorkMailAPIMockRecorder) DescribeInboundDmarcSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInboundDmarcSettingsRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeInboundDmarcSettingsRequest), arg0)
+}
+
+// DescribeInboundDmarcSettingsWithContext mocks base method
+func (m *MockWorkMailAPI) DescribeInboundDmarcSettingsWithContext(arg0 context.Context, arg1 *workmail.DescribeInboundDmarcSettingsInput, arg2 ...request.Option) (*workmail.DescribeInboundDmarcSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeInboundDmarcSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.DescribeInboundDmarcSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInboundDmarcSettingsWithContext indicates an expected call of DescribeInboundDmarcSettingsWithContext
+func (mr *MockWorkMailAPIMockRecorder) DescribeInboundDmarcSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInboundDmarcSettingsWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeInboundDmarcSettingsWithContext), varargs...)
+}
+
 // DescribeMailboxExportJob mocks base method
 func (m *MockWorkMailAPI) DescribeMailboxExportJob(arg0 *workmail.DescribeMailboxExportJobInput) (*workmail.DescribeMailboxExportJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -2663,6 +2713,56 @@ func (mr *MockWorkMailAPIMockRecorder) PutAccessControlRuleWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccessControlRuleWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).PutAccessControlRuleWithContext), varargs...)
+}
+
+// PutInboundDmarcSettings mocks base method
+func (m *MockWorkMailAPI) PutInboundDmarcSettings(arg0 *workmail.PutInboundDmarcSettingsInput) (*workmail.PutInboundDmarcSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutInboundDmarcSettings", arg0)
+	ret0, _ := ret[0].(*workmail.PutInboundDmarcSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutInboundDmarcSettings indicates an expected call of PutInboundDmarcSettings
+func (mr *MockWorkMailAPIMockRecorder) PutInboundDmarcSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInboundDmarcSettings", reflect.TypeOf((*MockWorkMailAPI)(nil).PutInboundDmarcSettings), arg0)
+}
+
+// PutInboundDmarcSettingsRequest mocks base method
+func (m *MockWorkMailAPI) PutInboundDmarcSettingsRequest(arg0 *workmail.PutInboundDmarcSettingsInput) (*request.Request, *workmail.PutInboundDmarcSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutInboundDmarcSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.PutInboundDmarcSettingsOutput)
+	return ret0, ret1
+}
+
+// PutInboundDmarcSettingsRequest indicates an expected call of PutInboundDmarcSettingsRequest
+func (mr *MockWorkMailAPIMockRecorder) PutInboundDmarcSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInboundDmarcSettingsRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).PutInboundDmarcSettingsRequest), arg0)
+}
+
+// PutInboundDmarcSettingsWithContext mocks base method
+func (m *MockWorkMailAPI) PutInboundDmarcSettingsWithContext(arg0 context.Context, arg1 *workmail.PutInboundDmarcSettingsInput, arg2 ...request.Option) (*workmail.PutInboundDmarcSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutInboundDmarcSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.PutInboundDmarcSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutInboundDmarcSettingsWithContext indicates an expected call of PutInboundDmarcSettingsWithContext
+func (mr *MockWorkMailAPIMockRecorder) PutInboundDmarcSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInboundDmarcSettingsWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).PutInboundDmarcSettingsWithContext), varargs...)
 }
 
 // PutMailboxPermissions mocks base method
