@@ -885,6 +885,56 @@ func (mr *MockBackupAPIMockRecorder) DescribeRestoreJobWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRestoreJobWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DescribeRestoreJobWithContext), varargs...)
 }
 
+// DisassociateRecoveryPoint mocks base method
+func (m *MockBackupAPI) DisassociateRecoveryPoint(arg0 *backup.DisassociateRecoveryPointInput) (*backup.DisassociateRecoveryPointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateRecoveryPoint", arg0)
+	ret0, _ := ret[0].(*backup.DisassociateRecoveryPointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateRecoveryPoint indicates an expected call of DisassociateRecoveryPoint
+func (mr *MockBackupAPIMockRecorder) DisassociateRecoveryPoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateRecoveryPoint", reflect.TypeOf((*MockBackupAPI)(nil).DisassociateRecoveryPoint), arg0)
+}
+
+// DisassociateRecoveryPointRequest mocks base method
+func (m *MockBackupAPI) DisassociateRecoveryPointRequest(arg0 *backup.DisassociateRecoveryPointInput) (*request.Request, *backup.DisassociateRecoveryPointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateRecoveryPointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.DisassociateRecoveryPointOutput)
+	return ret0, ret1
+}
+
+// DisassociateRecoveryPointRequest indicates an expected call of DisassociateRecoveryPointRequest
+func (mr *MockBackupAPIMockRecorder) DisassociateRecoveryPointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateRecoveryPointRequest", reflect.TypeOf((*MockBackupAPI)(nil).DisassociateRecoveryPointRequest), arg0)
+}
+
+// DisassociateRecoveryPointWithContext mocks base method
+func (m *MockBackupAPI) DisassociateRecoveryPointWithContext(arg0 context.Context, arg1 *backup.DisassociateRecoveryPointInput, arg2 ...request.Option) (*backup.DisassociateRecoveryPointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateRecoveryPointWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.DisassociateRecoveryPointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateRecoveryPointWithContext indicates an expected call of DisassociateRecoveryPointWithContext
+func (mr *MockBackupAPIMockRecorder) DisassociateRecoveryPointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateRecoveryPointWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DisassociateRecoveryPointWithContext), varargs...)
+}
+
 // ExportBackupPlanTemplate mocks base method
 func (m *MockBackupAPI) ExportBackupPlanTemplate(arg0 *backup.ExportBackupPlanTemplateInput) (*backup.ExportBackupPlanTemplateOutput, error) {
 	m.ctrl.T.Helper()

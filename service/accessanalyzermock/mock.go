@@ -85,6 +85,56 @@ func (mr *MockAccessAnalyzerAPIMockRecorder) ApplyArchiveRuleWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ApplyArchiveRuleWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ApplyArchiveRuleWithContext), varargs...)
 }
 
+// CreateAccessPreview mocks base method
+func (m *MockAccessAnalyzerAPI) CreateAccessPreview(arg0 *accessanalyzer.CreateAccessPreviewInput) (*accessanalyzer.CreateAccessPreviewOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAccessPreview", arg0)
+	ret0, _ := ret[0].(*accessanalyzer.CreateAccessPreviewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAccessPreview indicates an expected call of CreateAccessPreview
+func (mr *MockAccessAnalyzerAPIMockRecorder) CreateAccessPreview(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessPreview", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).CreateAccessPreview), arg0)
+}
+
+// CreateAccessPreviewRequest mocks base method
+func (m *MockAccessAnalyzerAPI) CreateAccessPreviewRequest(arg0 *accessanalyzer.CreateAccessPreviewInput) (*request.Request, *accessanalyzer.CreateAccessPreviewOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAccessPreviewRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*accessanalyzer.CreateAccessPreviewOutput)
+	return ret0, ret1
+}
+
+// CreateAccessPreviewRequest indicates an expected call of CreateAccessPreviewRequest
+func (mr *MockAccessAnalyzerAPIMockRecorder) CreateAccessPreviewRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessPreviewRequest", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).CreateAccessPreviewRequest), arg0)
+}
+
+// CreateAccessPreviewWithContext mocks base method
+func (m *MockAccessAnalyzerAPI) CreateAccessPreviewWithContext(arg0 context.Context, arg1 *accessanalyzer.CreateAccessPreviewInput, arg2 ...request.Option) (*accessanalyzer.CreateAccessPreviewOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAccessPreviewWithContext", varargs...)
+	ret0, _ := ret[0].(*accessanalyzer.CreateAccessPreviewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAccessPreviewWithContext indicates an expected call of CreateAccessPreviewWithContext
+func (mr *MockAccessAnalyzerAPIMockRecorder) CreateAccessPreviewWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessPreviewWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).CreateAccessPreviewWithContext), varargs...)
+}
+
 // CreateAnalyzer mocks base method
 func (m *MockAccessAnalyzerAPI) CreateAnalyzer(arg0 *accessanalyzer.CreateAnalyzerInput) (*accessanalyzer.CreateAnalyzerOutput, error) {
 	m.ctrl.T.Helper()
@@ -285,6 +335,56 @@ func (mr *MockAccessAnalyzerAPIMockRecorder) DeleteArchiveRuleWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteArchiveRuleWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).DeleteArchiveRuleWithContext), varargs...)
 }
 
+// GetAccessPreview mocks base method
+func (m *MockAccessAnalyzerAPI) GetAccessPreview(arg0 *accessanalyzer.GetAccessPreviewInput) (*accessanalyzer.GetAccessPreviewOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccessPreview", arg0)
+	ret0, _ := ret[0].(*accessanalyzer.GetAccessPreviewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccessPreview indicates an expected call of GetAccessPreview
+func (mr *MockAccessAnalyzerAPIMockRecorder) GetAccessPreview(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessPreview", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).GetAccessPreview), arg0)
+}
+
+// GetAccessPreviewRequest mocks base method
+func (m *MockAccessAnalyzerAPI) GetAccessPreviewRequest(arg0 *accessanalyzer.GetAccessPreviewInput) (*request.Request, *accessanalyzer.GetAccessPreviewOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccessPreviewRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*accessanalyzer.GetAccessPreviewOutput)
+	return ret0, ret1
+}
+
+// GetAccessPreviewRequest indicates an expected call of GetAccessPreviewRequest
+func (mr *MockAccessAnalyzerAPIMockRecorder) GetAccessPreviewRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessPreviewRequest", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).GetAccessPreviewRequest), arg0)
+}
+
+// GetAccessPreviewWithContext mocks base method
+func (m *MockAccessAnalyzerAPI) GetAccessPreviewWithContext(arg0 context.Context, arg1 *accessanalyzer.GetAccessPreviewInput, arg2 ...request.Option) (*accessanalyzer.GetAccessPreviewOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAccessPreviewWithContext", varargs...)
+	ret0, _ := ret[0].(*accessanalyzer.GetAccessPreviewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccessPreviewWithContext indicates an expected call of GetAccessPreviewWithContext
+func (mr *MockAccessAnalyzerAPIMockRecorder) GetAccessPreviewWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessPreviewWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).GetAccessPreviewWithContext), varargs...)
+}
+
 // GetAnalyzedResource mocks base method
 func (m *MockAccessAnalyzerAPI) GetAnalyzedResource(arg0 *accessanalyzer.GetAnalyzedResourceInput) (*accessanalyzer.GetAnalyzedResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -483,6 +583,172 @@ func (mr *MockAccessAnalyzerAPIMockRecorder) GetFindingWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFindingWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).GetFindingWithContext), varargs...)
+}
+
+// ListAccessPreviewFindings mocks base method
+func (m *MockAccessAnalyzerAPI) ListAccessPreviewFindings(arg0 *accessanalyzer.ListAccessPreviewFindingsInput) (*accessanalyzer.ListAccessPreviewFindingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessPreviewFindings", arg0)
+	ret0, _ := ret[0].(*accessanalyzer.ListAccessPreviewFindingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAccessPreviewFindings indicates an expected call of ListAccessPreviewFindings
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListAccessPreviewFindings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPreviewFindings", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListAccessPreviewFindings), arg0)
+}
+
+// ListAccessPreviewFindingsPages mocks base method
+func (m *MockAccessAnalyzerAPI) ListAccessPreviewFindingsPages(arg0 *accessanalyzer.ListAccessPreviewFindingsInput, arg1 func(*accessanalyzer.ListAccessPreviewFindingsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessPreviewFindingsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAccessPreviewFindingsPages indicates an expected call of ListAccessPreviewFindingsPages
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListAccessPreviewFindingsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPreviewFindingsPages", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListAccessPreviewFindingsPages), arg0, arg1)
+}
+
+// ListAccessPreviewFindingsPagesWithContext mocks base method
+func (m *MockAccessAnalyzerAPI) ListAccessPreviewFindingsPagesWithContext(arg0 context.Context, arg1 *accessanalyzer.ListAccessPreviewFindingsInput, arg2 func(*accessanalyzer.ListAccessPreviewFindingsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAccessPreviewFindingsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAccessPreviewFindingsPagesWithContext indicates an expected call of ListAccessPreviewFindingsPagesWithContext
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListAccessPreviewFindingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPreviewFindingsPagesWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListAccessPreviewFindingsPagesWithContext), varargs...)
+}
+
+// ListAccessPreviewFindingsRequest mocks base method
+func (m *MockAccessAnalyzerAPI) ListAccessPreviewFindingsRequest(arg0 *accessanalyzer.ListAccessPreviewFindingsInput) (*request.Request, *accessanalyzer.ListAccessPreviewFindingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessPreviewFindingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*accessanalyzer.ListAccessPreviewFindingsOutput)
+	return ret0, ret1
+}
+
+// ListAccessPreviewFindingsRequest indicates an expected call of ListAccessPreviewFindingsRequest
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListAccessPreviewFindingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPreviewFindingsRequest", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListAccessPreviewFindingsRequest), arg0)
+}
+
+// ListAccessPreviewFindingsWithContext mocks base method
+func (m *MockAccessAnalyzerAPI) ListAccessPreviewFindingsWithContext(arg0 context.Context, arg1 *accessanalyzer.ListAccessPreviewFindingsInput, arg2 ...request.Option) (*accessanalyzer.ListAccessPreviewFindingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAccessPreviewFindingsWithContext", varargs...)
+	ret0, _ := ret[0].(*accessanalyzer.ListAccessPreviewFindingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAccessPreviewFindingsWithContext indicates an expected call of ListAccessPreviewFindingsWithContext
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListAccessPreviewFindingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPreviewFindingsWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListAccessPreviewFindingsWithContext), varargs...)
+}
+
+// ListAccessPreviews mocks base method
+func (m *MockAccessAnalyzerAPI) ListAccessPreviews(arg0 *accessanalyzer.ListAccessPreviewsInput) (*accessanalyzer.ListAccessPreviewsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessPreviews", arg0)
+	ret0, _ := ret[0].(*accessanalyzer.ListAccessPreviewsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAccessPreviews indicates an expected call of ListAccessPreviews
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListAccessPreviews(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPreviews", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListAccessPreviews), arg0)
+}
+
+// ListAccessPreviewsPages mocks base method
+func (m *MockAccessAnalyzerAPI) ListAccessPreviewsPages(arg0 *accessanalyzer.ListAccessPreviewsInput, arg1 func(*accessanalyzer.ListAccessPreviewsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessPreviewsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAccessPreviewsPages indicates an expected call of ListAccessPreviewsPages
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListAccessPreviewsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPreviewsPages", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListAccessPreviewsPages), arg0, arg1)
+}
+
+// ListAccessPreviewsPagesWithContext mocks base method
+func (m *MockAccessAnalyzerAPI) ListAccessPreviewsPagesWithContext(arg0 context.Context, arg1 *accessanalyzer.ListAccessPreviewsInput, arg2 func(*accessanalyzer.ListAccessPreviewsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAccessPreviewsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAccessPreviewsPagesWithContext indicates an expected call of ListAccessPreviewsPagesWithContext
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListAccessPreviewsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPreviewsPagesWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListAccessPreviewsPagesWithContext), varargs...)
+}
+
+// ListAccessPreviewsRequest mocks base method
+func (m *MockAccessAnalyzerAPI) ListAccessPreviewsRequest(arg0 *accessanalyzer.ListAccessPreviewsInput) (*request.Request, *accessanalyzer.ListAccessPreviewsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessPreviewsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*accessanalyzer.ListAccessPreviewsOutput)
+	return ret0, ret1
+}
+
+// ListAccessPreviewsRequest indicates an expected call of ListAccessPreviewsRequest
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListAccessPreviewsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPreviewsRequest", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListAccessPreviewsRequest), arg0)
+}
+
+// ListAccessPreviewsWithContext mocks base method
+func (m *MockAccessAnalyzerAPI) ListAccessPreviewsWithContext(arg0 context.Context, arg1 *accessanalyzer.ListAccessPreviewsInput, arg2 ...request.Option) (*accessanalyzer.ListAccessPreviewsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAccessPreviewsWithContext", varargs...)
+	ret0, _ := ret[0].(*accessanalyzer.ListAccessPreviewsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAccessPreviewsWithContext indicates an expected call of ListAccessPreviewsWithContext
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListAccessPreviewsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPreviewsWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListAccessPreviewsWithContext), varargs...)
 }
 
 // ListAnalyzedResources mocks base method
