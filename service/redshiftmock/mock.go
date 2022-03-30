@@ -4510,6 +4510,56 @@ func (mr *MockRedshiftAPIMockRecorder) GetReservedNodeExchangeOfferingsWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetReservedNodeExchangeOfferingsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).GetReservedNodeExchangeOfferingsWithContext), varargs...)
 }
 
+// ModifyAquaConfiguration mocks base method
+func (m *MockRedshiftAPI) ModifyAquaConfiguration(arg0 *redshift.ModifyAquaConfigurationInput) (*redshift.ModifyAquaConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyAquaConfiguration", arg0)
+	ret0, _ := ret[0].(*redshift.ModifyAquaConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyAquaConfiguration indicates an expected call of ModifyAquaConfiguration
+func (mr *MockRedshiftAPIMockRecorder) ModifyAquaConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyAquaConfiguration", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyAquaConfiguration), arg0)
+}
+
+// ModifyAquaConfigurationRequest mocks base method
+func (m *MockRedshiftAPI) ModifyAquaConfigurationRequest(arg0 *redshift.ModifyAquaConfigurationInput) (*request.Request, *redshift.ModifyAquaConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyAquaConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.ModifyAquaConfigurationOutput)
+	return ret0, ret1
+}
+
+// ModifyAquaConfigurationRequest indicates an expected call of ModifyAquaConfigurationRequest
+func (mr *MockRedshiftAPIMockRecorder) ModifyAquaConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyAquaConfigurationRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyAquaConfigurationRequest), arg0)
+}
+
+// ModifyAquaConfigurationWithContext mocks base method
+func (m *MockRedshiftAPI) ModifyAquaConfigurationWithContext(arg0 context.Context, arg1 *redshift.ModifyAquaConfigurationInput, arg2 ...request.Option) (*redshift.ModifyAquaConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyAquaConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.ModifyAquaConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyAquaConfigurationWithContext indicates an expected call of ModifyAquaConfigurationWithContext
+func (mr *MockRedshiftAPIMockRecorder) ModifyAquaConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyAquaConfigurationWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyAquaConfigurationWithContext), varargs...)
+}
+
 // ModifyCluster mocks base method
 func (m *MockRedshiftAPI) ModifyCluster(arg0 *redshift.ModifyClusterInput) (*redshift.ModifyClusterOutput, error) {
 	m.ctrl.T.Helper()
