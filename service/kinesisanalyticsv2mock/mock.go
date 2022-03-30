@@ -1135,6 +1135,56 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListTagsForResourceWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// RollbackApplication mocks base method
+func (m *MockKinesisAnalyticsV2API) RollbackApplication(arg0 *kinesisanalyticsv2.RollbackApplicationInput) (*kinesisanalyticsv2.RollbackApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RollbackApplication", arg0)
+	ret0, _ := ret[0].(*kinesisanalyticsv2.RollbackApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RollbackApplication indicates an expected call of RollbackApplication
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) RollbackApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RollbackApplication", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).RollbackApplication), arg0)
+}
+
+// RollbackApplicationRequest mocks base method
+func (m *MockKinesisAnalyticsV2API) RollbackApplicationRequest(arg0 *kinesisanalyticsv2.RollbackApplicationInput) (*request.Request, *kinesisanalyticsv2.RollbackApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RollbackApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisanalyticsv2.RollbackApplicationOutput)
+	return ret0, ret1
+}
+
+// RollbackApplicationRequest indicates an expected call of RollbackApplicationRequest
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) RollbackApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RollbackApplicationRequest", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).RollbackApplicationRequest), arg0)
+}
+
+// RollbackApplicationWithContext mocks base method
+func (m *MockKinesisAnalyticsV2API) RollbackApplicationWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.RollbackApplicationInput, arg2 ...request.Option) (*kinesisanalyticsv2.RollbackApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RollbackApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisanalyticsv2.RollbackApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RollbackApplicationWithContext indicates an expected call of RollbackApplicationWithContext
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) RollbackApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RollbackApplicationWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).RollbackApplicationWithContext), varargs...)
+}
+
 // StartApplication mocks base method
 func (m *MockKinesisAnalyticsV2API) StartApplication(arg0 *kinesisanalyticsv2.StartApplicationInput) (*kinesisanalyticsv2.StartApplicationOutput, error) {
 	m.ctrl.T.Helper()
