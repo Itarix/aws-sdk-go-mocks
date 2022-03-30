@@ -335,6 +335,56 @@ func (mr *MockComprehendAPIMockRecorder) ClassifyDocumentWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClassifyDocumentWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ClassifyDocumentWithContext), varargs...)
 }
 
+// ContainsPiiEntities mocks base method
+func (m *MockComprehendAPI) ContainsPiiEntities(arg0 *comprehend.ContainsPiiEntitiesInput) (*comprehend.ContainsPiiEntitiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ContainsPiiEntities", arg0)
+	ret0, _ := ret[0].(*comprehend.ContainsPiiEntitiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ContainsPiiEntities indicates an expected call of ContainsPiiEntities
+func (mr *MockComprehendAPIMockRecorder) ContainsPiiEntities(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ContainsPiiEntities", reflect.TypeOf((*MockComprehendAPI)(nil).ContainsPiiEntities), arg0)
+}
+
+// ContainsPiiEntitiesRequest mocks base method
+func (m *MockComprehendAPI) ContainsPiiEntitiesRequest(arg0 *comprehend.ContainsPiiEntitiesInput) (*request.Request, *comprehend.ContainsPiiEntitiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ContainsPiiEntitiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.ContainsPiiEntitiesOutput)
+	return ret0, ret1
+}
+
+// ContainsPiiEntitiesRequest indicates an expected call of ContainsPiiEntitiesRequest
+func (mr *MockComprehendAPIMockRecorder) ContainsPiiEntitiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ContainsPiiEntitiesRequest", reflect.TypeOf((*MockComprehendAPI)(nil).ContainsPiiEntitiesRequest), arg0)
+}
+
+// ContainsPiiEntitiesWithContext mocks base method
+func (m *MockComprehendAPI) ContainsPiiEntitiesWithContext(arg0 context.Context, arg1 *comprehend.ContainsPiiEntitiesInput, arg2 ...request.Option) (*comprehend.ContainsPiiEntitiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ContainsPiiEntitiesWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.ContainsPiiEntitiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ContainsPiiEntitiesWithContext indicates an expected call of ContainsPiiEntitiesWithContext
+func (mr *MockComprehendAPIMockRecorder) ContainsPiiEntitiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ContainsPiiEntitiesWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ContainsPiiEntitiesWithContext), varargs...)
+}
+
 // CreateDocumentClassifier mocks base method
 func (m *MockComprehendAPI) CreateDocumentClassifier(arg0 *comprehend.CreateDocumentClassifierInput) (*comprehend.CreateDocumentClassifierOutput, error) {
 	m.ctrl.T.Helper()
