@@ -468,6 +468,89 @@ func (mr *MockDevOpsGuruAPIMockRecorder) DescribeServiceIntegrationWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServiceIntegrationWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeServiceIntegrationWithContext), varargs...)
 }
 
+// GetCostEstimation mocks base method
+func (m *MockDevOpsGuruAPI) GetCostEstimation(arg0 *devopsguru.GetCostEstimationInput) (*devopsguru.GetCostEstimationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCostEstimation", arg0)
+	ret0, _ := ret[0].(*devopsguru.GetCostEstimationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCostEstimation indicates an expected call of GetCostEstimation
+func (mr *MockDevOpsGuruAPIMockRecorder) GetCostEstimation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostEstimation", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).GetCostEstimation), arg0)
+}
+
+// GetCostEstimationPages mocks base method
+func (m *MockDevOpsGuruAPI) GetCostEstimationPages(arg0 *devopsguru.GetCostEstimationInput, arg1 func(*devopsguru.GetCostEstimationOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCostEstimationPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetCostEstimationPages indicates an expected call of GetCostEstimationPages
+func (mr *MockDevOpsGuruAPIMockRecorder) GetCostEstimationPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostEstimationPages", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).GetCostEstimationPages), arg0, arg1)
+}
+
+// GetCostEstimationPagesWithContext mocks base method
+func (m *MockDevOpsGuruAPI) GetCostEstimationPagesWithContext(arg0 context.Context, arg1 *devopsguru.GetCostEstimationInput, arg2 func(*devopsguru.GetCostEstimationOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCostEstimationPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetCostEstimationPagesWithContext indicates an expected call of GetCostEstimationPagesWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) GetCostEstimationPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostEstimationPagesWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).GetCostEstimationPagesWithContext), varargs...)
+}
+
+// GetCostEstimationRequest mocks base method
+func (m *MockDevOpsGuruAPI) GetCostEstimationRequest(arg0 *devopsguru.GetCostEstimationInput) (*request.Request, *devopsguru.GetCostEstimationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCostEstimationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devopsguru.GetCostEstimationOutput)
+	return ret0, ret1
+}
+
+// GetCostEstimationRequest indicates an expected call of GetCostEstimationRequest
+func (mr *MockDevOpsGuruAPIMockRecorder) GetCostEstimationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostEstimationRequest", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).GetCostEstimationRequest), arg0)
+}
+
+// GetCostEstimationWithContext mocks base method
+func (m *MockDevOpsGuruAPI) GetCostEstimationWithContext(arg0 context.Context, arg1 *devopsguru.GetCostEstimationInput, arg2 ...request.Option) (*devopsguru.GetCostEstimationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCostEstimationWithContext", varargs...)
+	ret0, _ := ret[0].(*devopsguru.GetCostEstimationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCostEstimationWithContext indicates an expected call of GetCostEstimationWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) GetCostEstimationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostEstimationWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).GetCostEstimationWithContext), varargs...)
+}
+
 // GetResourceCollection mocks base method
 func (m *MockDevOpsGuruAPI) GetResourceCollection(arg0 *devopsguru.GetResourceCollectionInput) (*devopsguru.GetResourceCollectionOutput, error) {
 	m.ctrl.T.Helper()
@@ -1147,6 +1230,56 @@ func (mr *MockDevOpsGuruAPIMockRecorder) SearchInsightsWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchInsightsWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).SearchInsightsWithContext), varargs...)
+}
+
+// StartCostEstimation mocks base method
+func (m *MockDevOpsGuruAPI) StartCostEstimation(arg0 *devopsguru.StartCostEstimationInput) (*devopsguru.StartCostEstimationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartCostEstimation", arg0)
+	ret0, _ := ret[0].(*devopsguru.StartCostEstimationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartCostEstimation indicates an expected call of StartCostEstimation
+func (mr *MockDevOpsGuruAPIMockRecorder) StartCostEstimation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCostEstimation", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).StartCostEstimation), arg0)
+}
+
+// StartCostEstimationRequest mocks base method
+func (m *MockDevOpsGuruAPI) StartCostEstimationRequest(arg0 *devopsguru.StartCostEstimationInput) (*request.Request, *devopsguru.StartCostEstimationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartCostEstimationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devopsguru.StartCostEstimationOutput)
+	return ret0, ret1
+}
+
+// StartCostEstimationRequest indicates an expected call of StartCostEstimationRequest
+func (mr *MockDevOpsGuruAPIMockRecorder) StartCostEstimationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCostEstimationRequest", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).StartCostEstimationRequest), arg0)
+}
+
+// StartCostEstimationWithContext mocks base method
+func (m *MockDevOpsGuruAPI) StartCostEstimationWithContext(arg0 context.Context, arg1 *devopsguru.StartCostEstimationInput, arg2 ...request.Option) (*devopsguru.StartCostEstimationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartCostEstimationWithContext", varargs...)
+	ret0, _ := ret[0].(*devopsguru.StartCostEstimationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartCostEstimationWithContext indicates an expected call of StartCostEstimationWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) StartCostEstimationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCostEstimationWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).StartCostEstimationWithContext), varargs...)
 }
 
 // UpdateResourceCollection mocks base method

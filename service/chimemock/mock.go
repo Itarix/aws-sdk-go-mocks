@@ -7228,6 +7228,56 @@ func (mr *MockChimeAPIMockRecorder) ListSipRulesWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSipRulesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListSipRulesWithContext), varargs...)
 }
 
+// ListSupportedPhoneNumberCountries mocks base method
+func (m *MockChimeAPI) ListSupportedPhoneNumberCountries(arg0 *chime.ListSupportedPhoneNumberCountriesInput) (*chime.ListSupportedPhoneNumberCountriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSupportedPhoneNumberCountries", arg0)
+	ret0, _ := ret[0].(*chime.ListSupportedPhoneNumberCountriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSupportedPhoneNumberCountries indicates an expected call of ListSupportedPhoneNumberCountries
+func (mr *MockChimeAPIMockRecorder) ListSupportedPhoneNumberCountries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSupportedPhoneNumberCountries", reflect.TypeOf((*MockChimeAPI)(nil).ListSupportedPhoneNumberCountries), arg0)
+}
+
+// ListSupportedPhoneNumberCountriesRequest mocks base method
+func (m *MockChimeAPI) ListSupportedPhoneNumberCountriesRequest(arg0 *chime.ListSupportedPhoneNumberCountriesInput) (*request.Request, *chime.ListSupportedPhoneNumberCountriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSupportedPhoneNumberCountriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ListSupportedPhoneNumberCountriesOutput)
+	return ret0, ret1
+}
+
+// ListSupportedPhoneNumberCountriesRequest indicates an expected call of ListSupportedPhoneNumberCountriesRequest
+func (mr *MockChimeAPIMockRecorder) ListSupportedPhoneNumberCountriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSupportedPhoneNumberCountriesRequest", reflect.TypeOf((*MockChimeAPI)(nil).ListSupportedPhoneNumberCountriesRequest), arg0)
+}
+
+// ListSupportedPhoneNumberCountriesWithContext mocks base method
+func (m *MockChimeAPI) ListSupportedPhoneNumberCountriesWithContext(arg0 context.Context, arg1 *chime.ListSupportedPhoneNumberCountriesInput, arg2 ...request.Option) (*chime.ListSupportedPhoneNumberCountriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSupportedPhoneNumberCountriesWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ListSupportedPhoneNumberCountriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSupportedPhoneNumberCountriesWithContext indicates an expected call of ListSupportedPhoneNumberCountriesWithContext
+func (mr *MockChimeAPIMockRecorder) ListSupportedPhoneNumberCountriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSupportedPhoneNumberCountriesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ListSupportedPhoneNumberCountriesWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockChimeAPI) ListTagsForResource(arg0 *chime.ListTagsForResourceInput) (*chime.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -8540,6 +8590,39 @@ func (m *MockChimeAPI) SearchAvailablePhoneNumbers(arg0 *chime.SearchAvailablePh
 func (mr *MockChimeAPIMockRecorder) SearchAvailablePhoneNumbers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAvailablePhoneNumbers", reflect.TypeOf((*MockChimeAPI)(nil).SearchAvailablePhoneNumbers), arg0)
+}
+
+// SearchAvailablePhoneNumbersPages mocks base method
+func (m *MockChimeAPI) SearchAvailablePhoneNumbersPages(arg0 *chime.SearchAvailablePhoneNumbersInput, arg1 func(*chime.SearchAvailablePhoneNumbersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchAvailablePhoneNumbersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchAvailablePhoneNumbersPages indicates an expected call of SearchAvailablePhoneNumbersPages
+func (mr *MockChimeAPIMockRecorder) SearchAvailablePhoneNumbersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAvailablePhoneNumbersPages", reflect.TypeOf((*MockChimeAPI)(nil).SearchAvailablePhoneNumbersPages), arg0, arg1)
+}
+
+// SearchAvailablePhoneNumbersPagesWithContext mocks base method
+func (m *MockChimeAPI) SearchAvailablePhoneNumbersPagesWithContext(arg0 context.Context, arg1 *chime.SearchAvailablePhoneNumbersInput, arg2 func(*chime.SearchAvailablePhoneNumbersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchAvailablePhoneNumbersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchAvailablePhoneNumbersPagesWithContext indicates an expected call of SearchAvailablePhoneNumbersPagesWithContext
+func (mr *MockChimeAPIMockRecorder) SearchAvailablePhoneNumbersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAvailablePhoneNumbersPagesWithContext", reflect.TypeOf((*MockChimeAPI)(nil).SearchAvailablePhoneNumbersPagesWithContext), varargs...)
 }
 
 // SearchAvailablePhoneNumbersRequest mocks base method
