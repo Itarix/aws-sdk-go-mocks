@@ -2615,6 +2615,36 @@ func (mr *MockEMRAPIMockRecorder) TerminateJobFlowsWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateJobFlowsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).TerminateJobFlowsWithContext), varargs...)
 }
 
+// UpdateStudio mocks base method
+func (m *MockEMRAPI) UpdateStudio(arg0 *emr.UpdateStudioInput) (*emr.UpdateStudioOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStudio", arg0)
+	ret0, _ := ret[0].(*emr.UpdateStudioOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStudio indicates an expected call of UpdateStudio
+func (mr *MockEMRAPIMockRecorder) UpdateStudio(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStudio", reflect.TypeOf((*MockEMRAPI)(nil).UpdateStudio), arg0)
+}
+
+// UpdateStudioRequest mocks base method
+func (m *MockEMRAPI) UpdateStudioRequest(arg0 *emr.UpdateStudioInput) (*request.Request, *emr.UpdateStudioOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStudioRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.UpdateStudioOutput)
+	return ret0, ret1
+}
+
+// UpdateStudioRequest indicates an expected call of UpdateStudioRequest
+func (mr *MockEMRAPIMockRecorder) UpdateStudioRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStudioRequest", reflect.TypeOf((*MockEMRAPI)(nil).UpdateStudioRequest), arg0)
+}
+
 // UpdateStudioSessionMapping mocks base method
 func (m *MockEMRAPI) UpdateStudioSessionMapping(arg0 *emr.UpdateStudioSessionMappingInput) (*emr.UpdateStudioSessionMappingOutput, error) {
 	m.ctrl.T.Helper()
@@ -2663,6 +2693,26 @@ func (mr *MockEMRAPIMockRecorder) UpdateStudioSessionMappingWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStudioSessionMappingWithContext", reflect.TypeOf((*MockEMRAPI)(nil).UpdateStudioSessionMappingWithContext), varargs...)
+}
+
+// UpdateStudioWithContext mocks base method
+func (m *MockEMRAPI) UpdateStudioWithContext(arg0 context.Context, arg1 *emr.UpdateStudioInput, arg2 ...request.Option) (*emr.UpdateStudioOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateStudioWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.UpdateStudioOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStudioWithContext indicates an expected call of UpdateStudioWithContext
+func (mr *MockEMRAPIMockRecorder) UpdateStudioWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStudioWithContext", reflect.TypeOf((*MockEMRAPI)(nil).UpdateStudioWithContext), varargs...)
 }
 
 // WaitUntilClusterRunning mocks base method

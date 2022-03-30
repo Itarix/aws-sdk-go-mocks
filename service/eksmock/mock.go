@@ -35,6 +35,56 @@ func (m *MockEKSAPI) EXPECT() *MockEKSAPIMockRecorder {
 	return m.recorder
 }
 
+// AssociateEncryptionConfig mocks base method
+func (m *MockEKSAPI) AssociateEncryptionConfig(arg0 *eks.AssociateEncryptionConfigInput) (*eks.AssociateEncryptionConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateEncryptionConfig", arg0)
+	ret0, _ := ret[0].(*eks.AssociateEncryptionConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateEncryptionConfig indicates an expected call of AssociateEncryptionConfig
+func (mr *MockEKSAPIMockRecorder) AssociateEncryptionConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateEncryptionConfig", reflect.TypeOf((*MockEKSAPI)(nil).AssociateEncryptionConfig), arg0)
+}
+
+// AssociateEncryptionConfigRequest mocks base method
+func (m *MockEKSAPI) AssociateEncryptionConfigRequest(arg0 *eks.AssociateEncryptionConfigInput) (*request.Request, *eks.AssociateEncryptionConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateEncryptionConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*eks.AssociateEncryptionConfigOutput)
+	return ret0, ret1
+}
+
+// AssociateEncryptionConfigRequest indicates an expected call of AssociateEncryptionConfigRequest
+func (mr *MockEKSAPIMockRecorder) AssociateEncryptionConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateEncryptionConfigRequest", reflect.TypeOf((*MockEKSAPI)(nil).AssociateEncryptionConfigRequest), arg0)
+}
+
+// AssociateEncryptionConfigWithContext mocks base method
+func (m *MockEKSAPI) AssociateEncryptionConfigWithContext(arg0 context.Context, arg1 *eks.AssociateEncryptionConfigInput, arg2 ...request.Option) (*eks.AssociateEncryptionConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateEncryptionConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*eks.AssociateEncryptionConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateEncryptionConfigWithContext indicates an expected call of AssociateEncryptionConfigWithContext
+func (mr *MockEKSAPIMockRecorder) AssociateEncryptionConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateEncryptionConfigWithContext", reflect.TypeOf((*MockEKSAPI)(nil).AssociateEncryptionConfigWithContext), varargs...)
+}
+
 // AssociateIdentityProviderConfig mocks base method
 func (m *MockEKSAPI) AssociateIdentityProviderConfig(arg0 *eks.AssociateIdentityProviderConfigInput) (*eks.AssociateIdentityProviderConfigOutput, error) {
 	m.ctrl.T.Helper()
