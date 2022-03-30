@@ -2182,6 +2182,56 @@ func (mr *MockNimbleStudioAPIMockRecorder) PutStudioMembersWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutStudioMembersWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).PutStudioMembersWithContext), varargs...)
 }
 
+// StartStreamingSession mocks base method
+func (m *MockNimbleStudioAPI) StartStreamingSession(arg0 *nimblestudio.StartStreamingSessionInput) (*nimblestudio.StartStreamingSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartStreamingSession", arg0)
+	ret0, _ := ret[0].(*nimblestudio.StartStreamingSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartStreamingSession indicates an expected call of StartStreamingSession
+func (mr *MockNimbleStudioAPIMockRecorder) StartStreamingSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartStreamingSession", reflect.TypeOf((*MockNimbleStudioAPI)(nil).StartStreamingSession), arg0)
+}
+
+// StartStreamingSessionRequest mocks base method
+func (m *MockNimbleStudioAPI) StartStreamingSessionRequest(arg0 *nimblestudio.StartStreamingSessionInput) (*request.Request, *nimblestudio.StartStreamingSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartStreamingSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*nimblestudio.StartStreamingSessionOutput)
+	return ret0, ret1
+}
+
+// StartStreamingSessionRequest indicates an expected call of StartStreamingSessionRequest
+func (mr *MockNimbleStudioAPIMockRecorder) StartStreamingSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartStreamingSessionRequest", reflect.TypeOf((*MockNimbleStudioAPI)(nil).StartStreamingSessionRequest), arg0)
+}
+
+// StartStreamingSessionWithContext mocks base method
+func (m *MockNimbleStudioAPI) StartStreamingSessionWithContext(arg0 context.Context, arg1 *nimblestudio.StartStreamingSessionInput, arg2 ...request.Option) (*nimblestudio.StartStreamingSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartStreamingSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*nimblestudio.StartStreamingSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartStreamingSessionWithContext indicates an expected call of StartStreamingSessionWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) StartStreamingSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartStreamingSessionWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).StartStreamingSessionWithContext), varargs...)
+}
+
 // StartStudioSSOConfigurationRepair mocks base method
 func (m *MockNimbleStudioAPI) StartStudioSSOConfigurationRepair(arg0 *nimblestudio.StartStudioSSOConfigurationRepairInput) (*nimblestudio.StartStudioSSOConfigurationRepairOutput, error) {
 	m.ctrl.T.Helper()
@@ -2230,6 +2280,56 @@ func (mr *MockNimbleStudioAPIMockRecorder) StartStudioSSOConfigurationRepairWith
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartStudioSSOConfigurationRepairWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).StartStudioSSOConfigurationRepairWithContext), varargs...)
+}
+
+// StopStreamingSession mocks base method
+func (m *MockNimbleStudioAPI) StopStreamingSession(arg0 *nimblestudio.StopStreamingSessionInput) (*nimblestudio.StopStreamingSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopStreamingSession", arg0)
+	ret0, _ := ret[0].(*nimblestudio.StopStreamingSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopStreamingSession indicates an expected call of StopStreamingSession
+func (mr *MockNimbleStudioAPIMockRecorder) StopStreamingSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopStreamingSession", reflect.TypeOf((*MockNimbleStudioAPI)(nil).StopStreamingSession), arg0)
+}
+
+// StopStreamingSessionRequest mocks base method
+func (m *MockNimbleStudioAPI) StopStreamingSessionRequest(arg0 *nimblestudio.StopStreamingSessionInput) (*request.Request, *nimblestudio.StopStreamingSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopStreamingSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*nimblestudio.StopStreamingSessionOutput)
+	return ret0, ret1
+}
+
+// StopStreamingSessionRequest indicates an expected call of StopStreamingSessionRequest
+func (mr *MockNimbleStudioAPIMockRecorder) StopStreamingSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopStreamingSessionRequest", reflect.TypeOf((*MockNimbleStudioAPI)(nil).StopStreamingSessionRequest), arg0)
+}
+
+// StopStreamingSessionWithContext mocks base method
+func (m *MockNimbleStudioAPI) StopStreamingSessionWithContext(arg0 context.Context, arg1 *nimblestudio.StopStreamingSessionInput, arg2 ...request.Option) (*nimblestudio.StopStreamingSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopStreamingSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*nimblestudio.StopStreamingSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopStreamingSessionWithContext indicates an expected call of StopStreamingSessionWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) StopStreamingSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopStreamingSessionWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).StopStreamingSessionWithContext), varargs...)
 }
 
 // TagResource mocks base method
@@ -2580,4 +2680,400 @@ func (mr *MockNimbleStudioAPIMockRecorder) UpdateStudioWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStudioWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).UpdateStudioWithContext), varargs...)
+}
+
+// WaitUntilLaunchProfileDeleted mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilLaunchProfileDeleted(arg0 *nimblestudio.GetLaunchProfileInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilLaunchProfileDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilLaunchProfileDeleted indicates an expected call of WaitUntilLaunchProfileDeleted
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilLaunchProfileDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilLaunchProfileDeleted", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilLaunchProfileDeleted), arg0)
+}
+
+// WaitUntilLaunchProfileDeletedWithContext mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilLaunchProfileDeletedWithContext(arg0 context.Context, arg1 *nimblestudio.GetLaunchProfileInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilLaunchProfileDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilLaunchProfileDeletedWithContext indicates an expected call of WaitUntilLaunchProfileDeletedWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilLaunchProfileDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilLaunchProfileDeletedWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilLaunchProfileDeletedWithContext), varargs...)
+}
+
+// WaitUntilLaunchProfileReady mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilLaunchProfileReady(arg0 *nimblestudio.GetLaunchProfileInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilLaunchProfileReady", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilLaunchProfileReady indicates an expected call of WaitUntilLaunchProfileReady
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilLaunchProfileReady(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilLaunchProfileReady", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilLaunchProfileReady), arg0)
+}
+
+// WaitUntilLaunchProfileReadyWithContext mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilLaunchProfileReadyWithContext(arg0 context.Context, arg1 *nimblestudio.GetLaunchProfileInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilLaunchProfileReadyWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilLaunchProfileReadyWithContext indicates an expected call of WaitUntilLaunchProfileReadyWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilLaunchProfileReadyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilLaunchProfileReadyWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilLaunchProfileReadyWithContext), varargs...)
+}
+
+// WaitUntilStreamingImageDeleted mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStreamingImageDeleted(arg0 *nimblestudio.GetStreamingImageInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilStreamingImageDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStreamingImageDeleted indicates an expected call of WaitUntilStreamingImageDeleted
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStreamingImageDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStreamingImageDeleted", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStreamingImageDeleted), arg0)
+}
+
+// WaitUntilStreamingImageDeletedWithContext mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStreamingImageDeletedWithContext(arg0 context.Context, arg1 *nimblestudio.GetStreamingImageInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilStreamingImageDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStreamingImageDeletedWithContext indicates an expected call of WaitUntilStreamingImageDeletedWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStreamingImageDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStreamingImageDeletedWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStreamingImageDeletedWithContext), varargs...)
+}
+
+// WaitUntilStreamingImageReady mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStreamingImageReady(arg0 *nimblestudio.GetStreamingImageInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilStreamingImageReady", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStreamingImageReady indicates an expected call of WaitUntilStreamingImageReady
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStreamingImageReady(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStreamingImageReady", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStreamingImageReady), arg0)
+}
+
+// WaitUntilStreamingImageReadyWithContext mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStreamingImageReadyWithContext(arg0 context.Context, arg1 *nimblestudio.GetStreamingImageInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilStreamingImageReadyWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStreamingImageReadyWithContext indicates an expected call of WaitUntilStreamingImageReadyWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStreamingImageReadyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStreamingImageReadyWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStreamingImageReadyWithContext), varargs...)
+}
+
+// WaitUntilStreamingSessionDeleted mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStreamingSessionDeleted(arg0 *nimblestudio.GetStreamingSessionInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilStreamingSessionDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStreamingSessionDeleted indicates an expected call of WaitUntilStreamingSessionDeleted
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStreamingSessionDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStreamingSessionDeleted", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStreamingSessionDeleted), arg0)
+}
+
+// WaitUntilStreamingSessionDeletedWithContext mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStreamingSessionDeletedWithContext(arg0 context.Context, arg1 *nimblestudio.GetStreamingSessionInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilStreamingSessionDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStreamingSessionDeletedWithContext indicates an expected call of WaitUntilStreamingSessionDeletedWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStreamingSessionDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStreamingSessionDeletedWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStreamingSessionDeletedWithContext), varargs...)
+}
+
+// WaitUntilStreamingSessionReady mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStreamingSessionReady(arg0 *nimblestudio.GetStreamingSessionInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilStreamingSessionReady", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStreamingSessionReady indicates an expected call of WaitUntilStreamingSessionReady
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStreamingSessionReady(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStreamingSessionReady", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStreamingSessionReady), arg0)
+}
+
+// WaitUntilStreamingSessionReadyWithContext mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStreamingSessionReadyWithContext(arg0 context.Context, arg1 *nimblestudio.GetStreamingSessionInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilStreamingSessionReadyWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStreamingSessionReadyWithContext indicates an expected call of WaitUntilStreamingSessionReadyWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStreamingSessionReadyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStreamingSessionReadyWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStreamingSessionReadyWithContext), varargs...)
+}
+
+// WaitUntilStreamingSessionStopped mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStreamingSessionStopped(arg0 *nimblestudio.GetStreamingSessionInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilStreamingSessionStopped", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStreamingSessionStopped indicates an expected call of WaitUntilStreamingSessionStopped
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStreamingSessionStopped(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStreamingSessionStopped", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStreamingSessionStopped), arg0)
+}
+
+// WaitUntilStreamingSessionStoppedWithContext mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStreamingSessionStoppedWithContext(arg0 context.Context, arg1 *nimblestudio.GetStreamingSessionInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilStreamingSessionStoppedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStreamingSessionStoppedWithContext indicates an expected call of WaitUntilStreamingSessionStoppedWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStreamingSessionStoppedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStreamingSessionStoppedWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStreamingSessionStoppedWithContext), varargs...)
+}
+
+// WaitUntilStreamingSessionStreamReady mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStreamingSessionStreamReady(arg0 *nimblestudio.GetStreamingSessionStreamInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilStreamingSessionStreamReady", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStreamingSessionStreamReady indicates an expected call of WaitUntilStreamingSessionStreamReady
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStreamingSessionStreamReady(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStreamingSessionStreamReady", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStreamingSessionStreamReady), arg0)
+}
+
+// WaitUntilStreamingSessionStreamReadyWithContext mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStreamingSessionStreamReadyWithContext(arg0 context.Context, arg1 *nimblestudio.GetStreamingSessionStreamInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilStreamingSessionStreamReadyWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStreamingSessionStreamReadyWithContext indicates an expected call of WaitUntilStreamingSessionStreamReadyWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStreamingSessionStreamReadyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStreamingSessionStreamReadyWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStreamingSessionStreamReadyWithContext), varargs...)
+}
+
+// WaitUntilStudioComponentDeleted mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStudioComponentDeleted(arg0 *nimblestudio.GetStudioComponentInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilStudioComponentDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStudioComponentDeleted indicates an expected call of WaitUntilStudioComponentDeleted
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStudioComponentDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStudioComponentDeleted", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStudioComponentDeleted), arg0)
+}
+
+// WaitUntilStudioComponentDeletedWithContext mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStudioComponentDeletedWithContext(arg0 context.Context, arg1 *nimblestudio.GetStudioComponentInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilStudioComponentDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStudioComponentDeletedWithContext indicates an expected call of WaitUntilStudioComponentDeletedWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStudioComponentDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStudioComponentDeletedWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStudioComponentDeletedWithContext), varargs...)
+}
+
+// WaitUntilStudioComponentReady mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStudioComponentReady(arg0 *nimblestudio.GetStudioComponentInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilStudioComponentReady", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStudioComponentReady indicates an expected call of WaitUntilStudioComponentReady
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStudioComponentReady(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStudioComponentReady", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStudioComponentReady), arg0)
+}
+
+// WaitUntilStudioComponentReadyWithContext mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStudioComponentReadyWithContext(arg0 context.Context, arg1 *nimblestudio.GetStudioComponentInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilStudioComponentReadyWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStudioComponentReadyWithContext indicates an expected call of WaitUntilStudioComponentReadyWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStudioComponentReadyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStudioComponentReadyWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStudioComponentReadyWithContext), varargs...)
+}
+
+// WaitUntilStudioDeleted mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStudioDeleted(arg0 *nimblestudio.GetStudioInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilStudioDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStudioDeleted indicates an expected call of WaitUntilStudioDeleted
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStudioDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStudioDeleted", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStudioDeleted), arg0)
+}
+
+// WaitUntilStudioDeletedWithContext mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStudioDeletedWithContext(arg0 context.Context, arg1 *nimblestudio.GetStudioInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilStudioDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStudioDeletedWithContext indicates an expected call of WaitUntilStudioDeletedWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStudioDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStudioDeletedWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStudioDeletedWithContext), varargs...)
+}
+
+// WaitUntilStudioReady mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStudioReady(arg0 *nimblestudio.GetStudioInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilStudioReady", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStudioReady indicates an expected call of WaitUntilStudioReady
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStudioReady(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStudioReady", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStudioReady), arg0)
+}
+
+// WaitUntilStudioReadyWithContext mocks base method
+func (m *MockNimbleStudioAPI) WaitUntilStudioReadyWithContext(arg0 context.Context, arg1 *nimblestudio.GetStudioInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilStudioReadyWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilStudioReadyWithContext indicates an expected call of WaitUntilStudioReadyWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) WaitUntilStudioReadyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilStudioReadyWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).WaitUntilStudioReadyWithContext), varargs...)
 }
