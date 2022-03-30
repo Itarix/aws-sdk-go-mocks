@@ -35,6 +35,56 @@ func (m *MockChimeSDKMessagingAPI) EXPECT() *MockChimeSDKMessagingAPIMockRecorde
 	return m.recorder
 }
 
+// AssociateChannelFlow mocks base method
+func (m *MockChimeSDKMessagingAPI) AssociateChannelFlow(arg0 *chimesdkmessaging.AssociateChannelFlowInput) (*chimesdkmessaging.AssociateChannelFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateChannelFlow", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.AssociateChannelFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateChannelFlow indicates an expected call of AssociateChannelFlow
+func (mr *MockChimeSDKMessagingAPIMockRecorder) AssociateChannelFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateChannelFlow", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).AssociateChannelFlow), arg0)
+}
+
+// AssociateChannelFlowRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) AssociateChannelFlowRequest(arg0 *chimesdkmessaging.AssociateChannelFlowInput) (*request.Request, *chimesdkmessaging.AssociateChannelFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateChannelFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.AssociateChannelFlowOutput)
+	return ret0, ret1
+}
+
+// AssociateChannelFlowRequest indicates an expected call of AssociateChannelFlowRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) AssociateChannelFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateChannelFlowRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).AssociateChannelFlowRequest), arg0)
+}
+
+// AssociateChannelFlowWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) AssociateChannelFlowWithContext(arg0 context.Context, arg1 *chimesdkmessaging.AssociateChannelFlowInput, arg2 ...request.Option) (*chimesdkmessaging.AssociateChannelFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateChannelFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.AssociateChannelFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateChannelFlowWithContext indicates an expected call of AssociateChannelFlowWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) AssociateChannelFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateChannelFlowWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).AssociateChannelFlowWithContext), varargs...)
+}
+
 // BatchCreateChannelMembership mocks base method
 func (m *MockChimeSDKMessagingAPI) BatchCreateChannelMembership(arg0 *chimesdkmessaging.BatchCreateChannelMembershipInput) (*chimesdkmessaging.BatchCreateChannelMembershipOutput, error) {
 	m.ctrl.T.Helper()
@@ -83,6 +133,56 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) BatchCreateChannelMembershipWith
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateChannelMembershipWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).BatchCreateChannelMembershipWithContext), varargs...)
+}
+
+// ChannelFlowCallback mocks base method
+func (m *MockChimeSDKMessagingAPI) ChannelFlowCallback(arg0 *chimesdkmessaging.ChannelFlowCallbackInput) (*chimesdkmessaging.ChannelFlowCallbackOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ChannelFlowCallback", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.ChannelFlowCallbackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ChannelFlowCallback indicates an expected call of ChannelFlowCallback
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ChannelFlowCallback(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ChannelFlowCallback", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ChannelFlowCallback), arg0)
+}
+
+// ChannelFlowCallbackRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) ChannelFlowCallbackRequest(arg0 *chimesdkmessaging.ChannelFlowCallbackInput) (*request.Request, *chimesdkmessaging.ChannelFlowCallbackOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ChannelFlowCallbackRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.ChannelFlowCallbackOutput)
+	return ret0, ret1
+}
+
+// ChannelFlowCallbackRequest indicates an expected call of ChannelFlowCallbackRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ChannelFlowCallbackRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ChannelFlowCallbackRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ChannelFlowCallbackRequest), arg0)
+}
+
+// ChannelFlowCallbackWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) ChannelFlowCallbackWithContext(arg0 context.Context, arg1 *chimesdkmessaging.ChannelFlowCallbackInput, arg2 ...request.Option) (*chimesdkmessaging.ChannelFlowCallbackOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ChannelFlowCallbackWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.ChannelFlowCallbackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ChannelFlowCallbackWithContext indicates an expected call of ChannelFlowCallbackWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ChannelFlowCallbackWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ChannelFlowCallbackWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ChannelFlowCallbackWithContext), varargs...)
 }
 
 // CreateChannel mocks base method
@@ -148,6 +248,56 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) CreateChannelBanWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelBanWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).CreateChannelBanWithContext), varargs...)
+}
+
+// CreateChannelFlow mocks base method
+func (m *MockChimeSDKMessagingAPI) CreateChannelFlow(arg0 *chimesdkmessaging.CreateChannelFlowInput) (*chimesdkmessaging.CreateChannelFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateChannelFlow", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.CreateChannelFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateChannelFlow indicates an expected call of CreateChannelFlow
+func (mr *MockChimeSDKMessagingAPIMockRecorder) CreateChannelFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelFlow", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).CreateChannelFlow), arg0)
+}
+
+// CreateChannelFlowRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) CreateChannelFlowRequest(arg0 *chimesdkmessaging.CreateChannelFlowInput) (*request.Request, *chimesdkmessaging.CreateChannelFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateChannelFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.CreateChannelFlowOutput)
+	return ret0, ret1
+}
+
+// CreateChannelFlowRequest indicates an expected call of CreateChannelFlowRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) CreateChannelFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelFlowRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).CreateChannelFlowRequest), arg0)
+}
+
+// CreateChannelFlowWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) CreateChannelFlowWithContext(arg0 context.Context, arg1 *chimesdkmessaging.CreateChannelFlowInput, arg2 ...request.Option) (*chimesdkmessaging.CreateChannelFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateChannelFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.CreateChannelFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateChannelFlowWithContext indicates an expected call of CreateChannelFlowWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) CreateChannelFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelFlowWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).CreateChannelFlowWithContext), varargs...)
 }
 
 // CreateChannelMembership mocks base method
@@ -348,6 +498,56 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) DeleteChannelBanWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelBanWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DeleteChannelBanWithContext), varargs...)
+}
+
+// DeleteChannelFlow mocks base method
+func (m *MockChimeSDKMessagingAPI) DeleteChannelFlow(arg0 *chimesdkmessaging.DeleteChannelFlowInput) (*chimesdkmessaging.DeleteChannelFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelFlow", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.DeleteChannelFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelFlow indicates an expected call of DeleteChannelFlow
+func (mr *MockChimeSDKMessagingAPIMockRecorder) DeleteChannelFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelFlow", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DeleteChannelFlow), arg0)
+}
+
+// DeleteChannelFlowRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) DeleteChannelFlowRequest(arg0 *chimesdkmessaging.DeleteChannelFlowInput) (*request.Request, *chimesdkmessaging.DeleteChannelFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.DeleteChannelFlowOutput)
+	return ret0, ret1
+}
+
+// DeleteChannelFlowRequest indicates an expected call of DeleteChannelFlowRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) DeleteChannelFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelFlowRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DeleteChannelFlowRequest), arg0)
+}
+
+// DeleteChannelFlowWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) DeleteChannelFlowWithContext(arg0 context.Context, arg1 *chimesdkmessaging.DeleteChannelFlowInput, arg2 ...request.Option) (*chimesdkmessaging.DeleteChannelFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteChannelFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.DeleteChannelFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelFlowWithContext indicates an expected call of DeleteChannelFlowWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) DeleteChannelFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelFlowWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DeleteChannelFlowWithContext), varargs...)
 }
 
 // DeleteChannelMembership mocks base method
@@ -600,6 +800,56 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) DescribeChannelBanWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelBanWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DescribeChannelBanWithContext), varargs...)
 }
 
+// DescribeChannelFlow mocks base method
+func (m *MockChimeSDKMessagingAPI) DescribeChannelFlow(arg0 *chimesdkmessaging.DescribeChannelFlowInput) (*chimesdkmessaging.DescribeChannelFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannelFlow", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.DescribeChannelFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannelFlow indicates an expected call of DescribeChannelFlow
+func (mr *MockChimeSDKMessagingAPIMockRecorder) DescribeChannelFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelFlow", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DescribeChannelFlow), arg0)
+}
+
+// DescribeChannelFlowRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) DescribeChannelFlowRequest(arg0 *chimesdkmessaging.DescribeChannelFlowInput) (*request.Request, *chimesdkmessaging.DescribeChannelFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeChannelFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.DescribeChannelFlowOutput)
+	return ret0, ret1
+}
+
+// DescribeChannelFlowRequest indicates an expected call of DescribeChannelFlowRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) DescribeChannelFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelFlowRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DescribeChannelFlowRequest), arg0)
+}
+
+// DescribeChannelFlowWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) DescribeChannelFlowWithContext(arg0 context.Context, arg1 *chimesdkmessaging.DescribeChannelFlowInput, arg2 ...request.Option) (*chimesdkmessaging.DescribeChannelFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeChannelFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.DescribeChannelFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeChannelFlowWithContext indicates an expected call of DescribeChannelFlowWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) DescribeChannelFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelFlowWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DescribeChannelFlowWithContext), varargs...)
+}
+
 // DescribeChannelMembership mocks base method
 func (m *MockChimeSDKMessagingAPI) DescribeChannelMembership(arg0 *chimesdkmessaging.DescribeChannelMembershipInput) (*chimesdkmessaging.DescribeChannelMembershipOutput, error) {
 	m.ctrl.T.Helper()
@@ -835,6 +1085,56 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) DescribeChannelWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChannelWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DescribeChannelWithContext), varargs...)
 }
 
+// DisassociateChannelFlow mocks base method
+func (m *MockChimeSDKMessagingAPI) DisassociateChannelFlow(arg0 *chimesdkmessaging.DisassociateChannelFlowInput) (*chimesdkmessaging.DisassociateChannelFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateChannelFlow", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.DisassociateChannelFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateChannelFlow indicates an expected call of DisassociateChannelFlow
+func (mr *MockChimeSDKMessagingAPIMockRecorder) DisassociateChannelFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateChannelFlow", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DisassociateChannelFlow), arg0)
+}
+
+// DisassociateChannelFlowRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) DisassociateChannelFlowRequest(arg0 *chimesdkmessaging.DisassociateChannelFlowInput) (*request.Request, *chimesdkmessaging.DisassociateChannelFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateChannelFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.DisassociateChannelFlowOutput)
+	return ret0, ret1
+}
+
+// DisassociateChannelFlowRequest indicates an expected call of DisassociateChannelFlowRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) DisassociateChannelFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateChannelFlowRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DisassociateChannelFlowRequest), arg0)
+}
+
+// DisassociateChannelFlowWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) DisassociateChannelFlowWithContext(arg0 context.Context, arg1 *chimesdkmessaging.DisassociateChannelFlowInput, arg2 ...request.Option) (*chimesdkmessaging.DisassociateChannelFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateChannelFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.DisassociateChannelFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateChannelFlowWithContext indicates an expected call of DisassociateChannelFlowWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) DisassociateChannelFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateChannelFlowWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DisassociateChannelFlowWithContext), varargs...)
+}
+
 // GetChannelMessage mocks base method
 func (m *MockChimeSDKMessagingAPI) GetChannelMessage(arg0 *chimesdkmessaging.GetChannelMessageInput) (*chimesdkmessaging.GetChannelMessageOutput, error) {
 	m.ctrl.T.Helper()
@@ -863,6 +1163,56 @@ func (m *MockChimeSDKMessagingAPI) GetChannelMessageRequest(arg0 *chimesdkmessag
 func (mr *MockChimeSDKMessagingAPIMockRecorder) GetChannelMessageRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelMessageRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).GetChannelMessageRequest), arg0)
+}
+
+// GetChannelMessageStatus mocks base method
+func (m *MockChimeSDKMessagingAPI) GetChannelMessageStatus(arg0 *chimesdkmessaging.GetChannelMessageStatusInput) (*chimesdkmessaging.GetChannelMessageStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetChannelMessageStatus", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.GetChannelMessageStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetChannelMessageStatus indicates an expected call of GetChannelMessageStatus
+func (mr *MockChimeSDKMessagingAPIMockRecorder) GetChannelMessageStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelMessageStatus", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).GetChannelMessageStatus), arg0)
+}
+
+// GetChannelMessageStatusRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) GetChannelMessageStatusRequest(arg0 *chimesdkmessaging.GetChannelMessageStatusInput) (*request.Request, *chimesdkmessaging.GetChannelMessageStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetChannelMessageStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.GetChannelMessageStatusOutput)
+	return ret0, ret1
+}
+
+// GetChannelMessageStatusRequest indicates an expected call of GetChannelMessageStatusRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) GetChannelMessageStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelMessageStatusRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).GetChannelMessageStatusRequest), arg0)
+}
+
+// GetChannelMessageStatusWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) GetChannelMessageStatusWithContext(arg0 context.Context, arg1 *chimesdkmessaging.GetChannelMessageStatusInput, arg2 ...request.Option) (*chimesdkmessaging.GetChannelMessageStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetChannelMessageStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.GetChannelMessageStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetChannelMessageStatusWithContext indicates an expected call of GetChannelMessageStatusWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) GetChannelMessageStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetChannelMessageStatusWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).GetChannelMessageStatusWithContext), varargs...)
 }
 
 // GetChannelMessageWithContext mocks base method
@@ -1016,6 +1366,89 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) ListChannelBansWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelBansWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListChannelBansWithContext), varargs...)
+}
+
+// ListChannelFlows mocks base method
+func (m *MockChimeSDKMessagingAPI) ListChannelFlows(arg0 *chimesdkmessaging.ListChannelFlowsInput) (*chimesdkmessaging.ListChannelFlowsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelFlows", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.ListChannelFlowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelFlows indicates an expected call of ListChannelFlows
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListChannelFlows(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelFlows", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListChannelFlows), arg0)
+}
+
+// ListChannelFlowsPages mocks base method
+func (m *MockChimeSDKMessagingAPI) ListChannelFlowsPages(arg0 *chimesdkmessaging.ListChannelFlowsInput, arg1 func(*chimesdkmessaging.ListChannelFlowsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelFlowsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelFlowsPages indicates an expected call of ListChannelFlowsPages
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListChannelFlowsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelFlowsPages", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListChannelFlowsPages), arg0, arg1)
+}
+
+// ListChannelFlowsPagesWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) ListChannelFlowsPagesWithContext(arg0 context.Context, arg1 *chimesdkmessaging.ListChannelFlowsInput, arg2 func(*chimesdkmessaging.ListChannelFlowsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelFlowsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelFlowsPagesWithContext indicates an expected call of ListChannelFlowsPagesWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListChannelFlowsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelFlowsPagesWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListChannelFlowsPagesWithContext), varargs...)
+}
+
+// ListChannelFlowsRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) ListChannelFlowsRequest(arg0 *chimesdkmessaging.ListChannelFlowsInput) (*request.Request, *chimesdkmessaging.ListChannelFlowsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelFlowsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.ListChannelFlowsOutput)
+	return ret0, ret1
+}
+
+// ListChannelFlowsRequest indicates an expected call of ListChannelFlowsRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListChannelFlowsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelFlowsRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListChannelFlowsRequest), arg0)
+}
+
+// ListChannelFlowsWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) ListChannelFlowsWithContext(arg0 context.Context, arg1 *chimesdkmessaging.ListChannelFlowsInput, arg2 ...request.Option) (*chimesdkmessaging.ListChannelFlowsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelFlowsWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.ListChannelFlowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelFlowsWithContext indicates an expected call of ListChannelFlowsWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListChannelFlowsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelFlowsWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListChannelFlowsWithContext), varargs...)
 }
 
 // ListChannelMemberships mocks base method
@@ -1365,6 +1798,89 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) ListChannels(arg0 interface{}) *
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannels", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListChannels), arg0)
 }
 
+// ListChannelsAssociatedWithChannelFlow mocks base method
+func (m *MockChimeSDKMessagingAPI) ListChannelsAssociatedWithChannelFlow(arg0 *chimesdkmessaging.ListChannelsAssociatedWithChannelFlowInput) (*chimesdkmessaging.ListChannelsAssociatedWithChannelFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelsAssociatedWithChannelFlow", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.ListChannelsAssociatedWithChannelFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelsAssociatedWithChannelFlow indicates an expected call of ListChannelsAssociatedWithChannelFlow
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListChannelsAssociatedWithChannelFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsAssociatedWithChannelFlow", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListChannelsAssociatedWithChannelFlow), arg0)
+}
+
+// ListChannelsAssociatedWithChannelFlowPages mocks base method
+func (m *MockChimeSDKMessagingAPI) ListChannelsAssociatedWithChannelFlowPages(arg0 *chimesdkmessaging.ListChannelsAssociatedWithChannelFlowInput, arg1 func(*chimesdkmessaging.ListChannelsAssociatedWithChannelFlowOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelsAssociatedWithChannelFlowPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelsAssociatedWithChannelFlowPages indicates an expected call of ListChannelsAssociatedWithChannelFlowPages
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListChannelsAssociatedWithChannelFlowPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsAssociatedWithChannelFlowPages", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListChannelsAssociatedWithChannelFlowPages), arg0, arg1)
+}
+
+// ListChannelsAssociatedWithChannelFlowPagesWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) ListChannelsAssociatedWithChannelFlowPagesWithContext(arg0 context.Context, arg1 *chimesdkmessaging.ListChannelsAssociatedWithChannelFlowInput, arg2 func(*chimesdkmessaging.ListChannelsAssociatedWithChannelFlowOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelsAssociatedWithChannelFlowPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListChannelsAssociatedWithChannelFlowPagesWithContext indicates an expected call of ListChannelsAssociatedWithChannelFlowPagesWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListChannelsAssociatedWithChannelFlowPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsAssociatedWithChannelFlowPagesWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListChannelsAssociatedWithChannelFlowPagesWithContext), varargs...)
+}
+
+// ListChannelsAssociatedWithChannelFlowRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) ListChannelsAssociatedWithChannelFlowRequest(arg0 *chimesdkmessaging.ListChannelsAssociatedWithChannelFlowInput) (*request.Request, *chimesdkmessaging.ListChannelsAssociatedWithChannelFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListChannelsAssociatedWithChannelFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.ListChannelsAssociatedWithChannelFlowOutput)
+	return ret0, ret1
+}
+
+// ListChannelsAssociatedWithChannelFlowRequest indicates an expected call of ListChannelsAssociatedWithChannelFlowRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListChannelsAssociatedWithChannelFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsAssociatedWithChannelFlowRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListChannelsAssociatedWithChannelFlowRequest), arg0)
+}
+
+// ListChannelsAssociatedWithChannelFlowWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) ListChannelsAssociatedWithChannelFlowWithContext(arg0 context.Context, arg1 *chimesdkmessaging.ListChannelsAssociatedWithChannelFlowInput, arg2 ...request.Option) (*chimesdkmessaging.ListChannelsAssociatedWithChannelFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListChannelsAssociatedWithChannelFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.ListChannelsAssociatedWithChannelFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListChannelsAssociatedWithChannelFlowWithContext indicates an expected call of ListChannelsAssociatedWithChannelFlowWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListChannelsAssociatedWithChannelFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsAssociatedWithChannelFlowWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListChannelsAssociatedWithChannelFlowWithContext), varargs...)
+}
+
 // ListChannelsModeratedByAppInstanceUser mocks base method
 func (m *MockChimeSDKMessagingAPI) ListChannelsModeratedByAppInstanceUser(arg0 *chimesdkmessaging.ListChannelsModeratedByAppInstanceUserInput) (*chimesdkmessaging.ListChannelsModeratedByAppInstanceUserOutput, error) {
 	m.ctrl.T.Helper()
@@ -1516,6 +2032,56 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) ListChannelsWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListChannelsWithContext), varargs...)
 }
 
+// ListTagsForResource mocks base method
+func (m *MockChimeSDKMessagingAPI) ListTagsForResource(arg0 *chimesdkmessaging.ListTagsForResourceInput) (*chimesdkmessaging.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) ListTagsForResourceRequest(arg0 *chimesdkmessaging.ListTagsForResourceInput) (*request.Request, *chimesdkmessaging.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *chimesdkmessaging.ListTagsForResourceInput, arg2 ...request.Option) (*chimesdkmessaging.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
 // RedactChannelMessage mocks base method
 func (m *MockChimeSDKMessagingAPI) RedactChannelMessage(arg0 *chimesdkmessaging.RedactChannelMessageInput) (*chimesdkmessaging.RedactChannelMessageOutput, error) {
 	m.ctrl.T.Helper()
@@ -1616,6 +2182,106 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) SendChannelMessageWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendChannelMessageWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).SendChannelMessageWithContext), varargs...)
 }
 
+// TagResource mocks base method
+func (m *MockChimeSDKMessagingAPI) TagResource(arg0 *chimesdkmessaging.TagResourceInput) (*chimesdkmessaging.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockChimeSDKMessagingAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) TagResourceRequest(arg0 *chimesdkmessaging.TagResourceInput) (*request.Request, *chimesdkmessaging.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) TagResourceWithContext(arg0 context.Context, arg1 *chimesdkmessaging.TagResourceInput, arg2 ...request.Option) (*chimesdkmessaging.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockChimeSDKMessagingAPI) UntagResource(arg0 *chimesdkmessaging.UntagResourceInput) (*chimesdkmessaging.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockChimeSDKMessagingAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) UntagResourceRequest(arg0 *chimesdkmessaging.UntagResourceInput) (*request.Request, *chimesdkmessaging.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) UntagResourceWithContext(arg0 context.Context, arg1 *chimesdkmessaging.UntagResourceInput, arg2 ...request.Option) (*chimesdkmessaging.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
 // UpdateChannel mocks base method
 func (m *MockChimeSDKMessagingAPI) UpdateChannel(arg0 *chimesdkmessaging.UpdateChannelInput) (*chimesdkmessaging.UpdateChannelOutput, error) {
 	m.ctrl.T.Helper()
@@ -1629,6 +2295,56 @@ func (m *MockChimeSDKMessagingAPI) UpdateChannel(arg0 *chimesdkmessaging.UpdateC
 func (mr *MockChimeSDKMessagingAPIMockRecorder) UpdateChannel(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannel", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).UpdateChannel), arg0)
+}
+
+// UpdateChannelFlow mocks base method
+func (m *MockChimeSDKMessagingAPI) UpdateChannelFlow(arg0 *chimesdkmessaging.UpdateChannelFlowInput) (*chimesdkmessaging.UpdateChannelFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateChannelFlow", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.UpdateChannelFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateChannelFlow indicates an expected call of UpdateChannelFlow
+func (mr *MockChimeSDKMessagingAPIMockRecorder) UpdateChannelFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelFlow", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).UpdateChannelFlow), arg0)
+}
+
+// UpdateChannelFlowRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) UpdateChannelFlowRequest(arg0 *chimesdkmessaging.UpdateChannelFlowInput) (*request.Request, *chimesdkmessaging.UpdateChannelFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateChannelFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.UpdateChannelFlowOutput)
+	return ret0, ret1
+}
+
+// UpdateChannelFlowRequest indicates an expected call of UpdateChannelFlowRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) UpdateChannelFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelFlowRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).UpdateChannelFlowRequest), arg0)
+}
+
+// UpdateChannelFlowWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) UpdateChannelFlowWithContext(arg0 context.Context, arg1 *chimesdkmessaging.UpdateChannelFlowInput, arg2 ...request.Option) (*chimesdkmessaging.UpdateChannelFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateChannelFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.UpdateChannelFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateChannelFlowWithContext indicates an expected call of UpdateChannelFlowWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) UpdateChannelFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelFlowWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).UpdateChannelFlowWithContext), varargs...)
 }
 
 // UpdateChannelMessage mocks base method
