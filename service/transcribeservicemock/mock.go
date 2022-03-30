@@ -35,6 +35,56 @@ func (m *MockTranscribeServiceAPI) EXPECT() *MockTranscribeServiceAPIMockRecorde
 	return m.recorder
 }
 
+// CreateCallAnalyticsCategory mocks base method
+func (m *MockTranscribeServiceAPI) CreateCallAnalyticsCategory(arg0 *transcribeservice.CreateCallAnalyticsCategoryInput) (*transcribeservice.CreateCallAnalyticsCategoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCallAnalyticsCategory", arg0)
+	ret0, _ := ret[0].(*transcribeservice.CreateCallAnalyticsCategoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCallAnalyticsCategory indicates an expected call of CreateCallAnalyticsCategory
+func (mr *MockTranscribeServiceAPIMockRecorder) CreateCallAnalyticsCategory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCallAnalyticsCategory", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).CreateCallAnalyticsCategory), arg0)
+}
+
+// CreateCallAnalyticsCategoryRequest mocks base method
+func (m *MockTranscribeServiceAPI) CreateCallAnalyticsCategoryRequest(arg0 *transcribeservice.CreateCallAnalyticsCategoryInput) (*request.Request, *transcribeservice.CreateCallAnalyticsCategoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCallAnalyticsCategoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.CreateCallAnalyticsCategoryOutput)
+	return ret0, ret1
+}
+
+// CreateCallAnalyticsCategoryRequest indicates an expected call of CreateCallAnalyticsCategoryRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) CreateCallAnalyticsCategoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCallAnalyticsCategoryRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).CreateCallAnalyticsCategoryRequest), arg0)
+}
+
+// CreateCallAnalyticsCategoryWithContext mocks base method
+func (m *MockTranscribeServiceAPI) CreateCallAnalyticsCategoryWithContext(arg0 context.Context, arg1 *transcribeservice.CreateCallAnalyticsCategoryInput, arg2 ...request.Option) (*transcribeservice.CreateCallAnalyticsCategoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCallAnalyticsCategoryWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.CreateCallAnalyticsCategoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCallAnalyticsCategoryWithContext indicates an expected call of CreateCallAnalyticsCategoryWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) CreateCallAnalyticsCategoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCallAnalyticsCategoryWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).CreateCallAnalyticsCategoryWithContext), varargs...)
+}
+
 // CreateLanguageModel mocks base method
 func (m *MockTranscribeServiceAPI) CreateLanguageModel(arg0 *transcribeservice.CreateLanguageModelInput) (*transcribeservice.CreateLanguageModelOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,106 @@ func (mr *MockTranscribeServiceAPIMockRecorder) CreateVocabularyWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVocabularyWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).CreateVocabularyWithContext), varargs...)
+}
+
+// DeleteCallAnalyticsCategory mocks base method
+func (m *MockTranscribeServiceAPI) DeleteCallAnalyticsCategory(arg0 *transcribeservice.DeleteCallAnalyticsCategoryInput) (*transcribeservice.DeleteCallAnalyticsCategoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCallAnalyticsCategory", arg0)
+	ret0, _ := ret[0].(*transcribeservice.DeleteCallAnalyticsCategoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCallAnalyticsCategory indicates an expected call of DeleteCallAnalyticsCategory
+func (mr *MockTranscribeServiceAPIMockRecorder) DeleteCallAnalyticsCategory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCallAnalyticsCategory", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).DeleteCallAnalyticsCategory), arg0)
+}
+
+// DeleteCallAnalyticsCategoryRequest mocks base method
+func (m *MockTranscribeServiceAPI) DeleteCallAnalyticsCategoryRequest(arg0 *transcribeservice.DeleteCallAnalyticsCategoryInput) (*request.Request, *transcribeservice.DeleteCallAnalyticsCategoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCallAnalyticsCategoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.DeleteCallAnalyticsCategoryOutput)
+	return ret0, ret1
+}
+
+// DeleteCallAnalyticsCategoryRequest indicates an expected call of DeleteCallAnalyticsCategoryRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) DeleteCallAnalyticsCategoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCallAnalyticsCategoryRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).DeleteCallAnalyticsCategoryRequest), arg0)
+}
+
+// DeleteCallAnalyticsCategoryWithContext mocks base method
+func (m *MockTranscribeServiceAPI) DeleteCallAnalyticsCategoryWithContext(arg0 context.Context, arg1 *transcribeservice.DeleteCallAnalyticsCategoryInput, arg2 ...request.Option) (*transcribeservice.DeleteCallAnalyticsCategoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCallAnalyticsCategoryWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.DeleteCallAnalyticsCategoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCallAnalyticsCategoryWithContext indicates an expected call of DeleteCallAnalyticsCategoryWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) DeleteCallAnalyticsCategoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCallAnalyticsCategoryWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).DeleteCallAnalyticsCategoryWithContext), varargs...)
+}
+
+// DeleteCallAnalyticsJob mocks base method
+func (m *MockTranscribeServiceAPI) DeleteCallAnalyticsJob(arg0 *transcribeservice.DeleteCallAnalyticsJobInput) (*transcribeservice.DeleteCallAnalyticsJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCallAnalyticsJob", arg0)
+	ret0, _ := ret[0].(*transcribeservice.DeleteCallAnalyticsJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCallAnalyticsJob indicates an expected call of DeleteCallAnalyticsJob
+func (mr *MockTranscribeServiceAPIMockRecorder) DeleteCallAnalyticsJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCallAnalyticsJob", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).DeleteCallAnalyticsJob), arg0)
+}
+
+// DeleteCallAnalyticsJobRequest mocks base method
+func (m *MockTranscribeServiceAPI) DeleteCallAnalyticsJobRequest(arg0 *transcribeservice.DeleteCallAnalyticsJobInput) (*request.Request, *transcribeservice.DeleteCallAnalyticsJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCallAnalyticsJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.DeleteCallAnalyticsJobOutput)
+	return ret0, ret1
+}
+
+// DeleteCallAnalyticsJobRequest indicates an expected call of DeleteCallAnalyticsJobRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) DeleteCallAnalyticsJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCallAnalyticsJobRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).DeleteCallAnalyticsJobRequest), arg0)
+}
+
+// DeleteCallAnalyticsJobWithContext mocks base method
+func (m *MockTranscribeServiceAPI) DeleteCallAnalyticsJobWithContext(arg0 context.Context, arg1 *transcribeservice.DeleteCallAnalyticsJobInput, arg2 ...request.Option) (*transcribeservice.DeleteCallAnalyticsJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCallAnalyticsJobWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.DeleteCallAnalyticsJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCallAnalyticsJobWithContext indicates an expected call of DeleteCallAnalyticsJobWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) DeleteCallAnalyticsJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCallAnalyticsJobWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).DeleteCallAnalyticsJobWithContext), varargs...)
 }
 
 // DeleteLanguageModel mocks base method
@@ -585,6 +735,106 @@ func (mr *MockTranscribeServiceAPIMockRecorder) DescribeLanguageModelWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLanguageModelWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).DescribeLanguageModelWithContext), varargs...)
 }
 
+// GetCallAnalyticsCategory mocks base method
+func (m *MockTranscribeServiceAPI) GetCallAnalyticsCategory(arg0 *transcribeservice.GetCallAnalyticsCategoryInput) (*transcribeservice.GetCallAnalyticsCategoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCallAnalyticsCategory", arg0)
+	ret0, _ := ret[0].(*transcribeservice.GetCallAnalyticsCategoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCallAnalyticsCategory indicates an expected call of GetCallAnalyticsCategory
+func (mr *MockTranscribeServiceAPIMockRecorder) GetCallAnalyticsCategory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCallAnalyticsCategory", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).GetCallAnalyticsCategory), arg0)
+}
+
+// GetCallAnalyticsCategoryRequest mocks base method
+func (m *MockTranscribeServiceAPI) GetCallAnalyticsCategoryRequest(arg0 *transcribeservice.GetCallAnalyticsCategoryInput) (*request.Request, *transcribeservice.GetCallAnalyticsCategoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCallAnalyticsCategoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.GetCallAnalyticsCategoryOutput)
+	return ret0, ret1
+}
+
+// GetCallAnalyticsCategoryRequest indicates an expected call of GetCallAnalyticsCategoryRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) GetCallAnalyticsCategoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCallAnalyticsCategoryRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).GetCallAnalyticsCategoryRequest), arg0)
+}
+
+// GetCallAnalyticsCategoryWithContext mocks base method
+func (m *MockTranscribeServiceAPI) GetCallAnalyticsCategoryWithContext(arg0 context.Context, arg1 *transcribeservice.GetCallAnalyticsCategoryInput, arg2 ...request.Option) (*transcribeservice.GetCallAnalyticsCategoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCallAnalyticsCategoryWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.GetCallAnalyticsCategoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCallAnalyticsCategoryWithContext indicates an expected call of GetCallAnalyticsCategoryWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) GetCallAnalyticsCategoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCallAnalyticsCategoryWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).GetCallAnalyticsCategoryWithContext), varargs...)
+}
+
+// GetCallAnalyticsJob mocks base method
+func (m *MockTranscribeServiceAPI) GetCallAnalyticsJob(arg0 *transcribeservice.GetCallAnalyticsJobInput) (*transcribeservice.GetCallAnalyticsJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCallAnalyticsJob", arg0)
+	ret0, _ := ret[0].(*transcribeservice.GetCallAnalyticsJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCallAnalyticsJob indicates an expected call of GetCallAnalyticsJob
+func (mr *MockTranscribeServiceAPIMockRecorder) GetCallAnalyticsJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCallAnalyticsJob", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).GetCallAnalyticsJob), arg0)
+}
+
+// GetCallAnalyticsJobRequest mocks base method
+func (m *MockTranscribeServiceAPI) GetCallAnalyticsJobRequest(arg0 *transcribeservice.GetCallAnalyticsJobInput) (*request.Request, *transcribeservice.GetCallAnalyticsJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCallAnalyticsJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.GetCallAnalyticsJobOutput)
+	return ret0, ret1
+}
+
+// GetCallAnalyticsJobRequest indicates an expected call of GetCallAnalyticsJobRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) GetCallAnalyticsJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCallAnalyticsJobRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).GetCallAnalyticsJobRequest), arg0)
+}
+
+// GetCallAnalyticsJobWithContext mocks base method
+func (m *MockTranscribeServiceAPI) GetCallAnalyticsJobWithContext(arg0 context.Context, arg1 *transcribeservice.GetCallAnalyticsJobInput, arg2 ...request.Option) (*transcribeservice.GetCallAnalyticsJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCallAnalyticsJobWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.GetCallAnalyticsJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCallAnalyticsJobWithContext indicates an expected call of GetCallAnalyticsJobWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) GetCallAnalyticsJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCallAnalyticsJobWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).GetCallAnalyticsJobWithContext), varargs...)
+}
+
 // GetMedicalTranscriptionJob mocks base method
 func (m *MockTranscribeServiceAPI) GetMedicalTranscriptionJob(arg0 *transcribeservice.GetMedicalTranscriptionJobInput) (*transcribeservice.GetMedicalTranscriptionJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -833,6 +1083,172 @@ func (mr *MockTranscribeServiceAPIMockRecorder) GetVocabularyWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVocabularyWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).GetVocabularyWithContext), varargs...)
+}
+
+// ListCallAnalyticsCategories mocks base method
+func (m *MockTranscribeServiceAPI) ListCallAnalyticsCategories(arg0 *transcribeservice.ListCallAnalyticsCategoriesInput) (*transcribeservice.ListCallAnalyticsCategoriesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCallAnalyticsCategories", arg0)
+	ret0, _ := ret[0].(*transcribeservice.ListCallAnalyticsCategoriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCallAnalyticsCategories indicates an expected call of ListCallAnalyticsCategories
+func (mr *MockTranscribeServiceAPIMockRecorder) ListCallAnalyticsCategories(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCallAnalyticsCategories", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListCallAnalyticsCategories), arg0)
+}
+
+// ListCallAnalyticsCategoriesPages mocks base method
+func (m *MockTranscribeServiceAPI) ListCallAnalyticsCategoriesPages(arg0 *transcribeservice.ListCallAnalyticsCategoriesInput, arg1 func(*transcribeservice.ListCallAnalyticsCategoriesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCallAnalyticsCategoriesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCallAnalyticsCategoriesPages indicates an expected call of ListCallAnalyticsCategoriesPages
+func (mr *MockTranscribeServiceAPIMockRecorder) ListCallAnalyticsCategoriesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCallAnalyticsCategoriesPages", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListCallAnalyticsCategoriesPages), arg0, arg1)
+}
+
+// ListCallAnalyticsCategoriesPagesWithContext mocks base method
+func (m *MockTranscribeServiceAPI) ListCallAnalyticsCategoriesPagesWithContext(arg0 context.Context, arg1 *transcribeservice.ListCallAnalyticsCategoriesInput, arg2 func(*transcribeservice.ListCallAnalyticsCategoriesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCallAnalyticsCategoriesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCallAnalyticsCategoriesPagesWithContext indicates an expected call of ListCallAnalyticsCategoriesPagesWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) ListCallAnalyticsCategoriesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCallAnalyticsCategoriesPagesWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListCallAnalyticsCategoriesPagesWithContext), varargs...)
+}
+
+// ListCallAnalyticsCategoriesRequest mocks base method
+func (m *MockTranscribeServiceAPI) ListCallAnalyticsCategoriesRequest(arg0 *transcribeservice.ListCallAnalyticsCategoriesInput) (*request.Request, *transcribeservice.ListCallAnalyticsCategoriesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCallAnalyticsCategoriesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.ListCallAnalyticsCategoriesOutput)
+	return ret0, ret1
+}
+
+// ListCallAnalyticsCategoriesRequest indicates an expected call of ListCallAnalyticsCategoriesRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) ListCallAnalyticsCategoriesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCallAnalyticsCategoriesRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListCallAnalyticsCategoriesRequest), arg0)
+}
+
+// ListCallAnalyticsCategoriesWithContext mocks base method
+func (m *MockTranscribeServiceAPI) ListCallAnalyticsCategoriesWithContext(arg0 context.Context, arg1 *transcribeservice.ListCallAnalyticsCategoriesInput, arg2 ...request.Option) (*transcribeservice.ListCallAnalyticsCategoriesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCallAnalyticsCategoriesWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.ListCallAnalyticsCategoriesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCallAnalyticsCategoriesWithContext indicates an expected call of ListCallAnalyticsCategoriesWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) ListCallAnalyticsCategoriesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCallAnalyticsCategoriesWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListCallAnalyticsCategoriesWithContext), varargs...)
+}
+
+// ListCallAnalyticsJobs mocks base method
+func (m *MockTranscribeServiceAPI) ListCallAnalyticsJobs(arg0 *transcribeservice.ListCallAnalyticsJobsInput) (*transcribeservice.ListCallAnalyticsJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCallAnalyticsJobs", arg0)
+	ret0, _ := ret[0].(*transcribeservice.ListCallAnalyticsJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCallAnalyticsJobs indicates an expected call of ListCallAnalyticsJobs
+func (mr *MockTranscribeServiceAPIMockRecorder) ListCallAnalyticsJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCallAnalyticsJobs", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListCallAnalyticsJobs), arg0)
+}
+
+// ListCallAnalyticsJobsPages mocks base method
+func (m *MockTranscribeServiceAPI) ListCallAnalyticsJobsPages(arg0 *transcribeservice.ListCallAnalyticsJobsInput, arg1 func(*transcribeservice.ListCallAnalyticsJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCallAnalyticsJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCallAnalyticsJobsPages indicates an expected call of ListCallAnalyticsJobsPages
+func (mr *MockTranscribeServiceAPIMockRecorder) ListCallAnalyticsJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCallAnalyticsJobsPages", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListCallAnalyticsJobsPages), arg0, arg1)
+}
+
+// ListCallAnalyticsJobsPagesWithContext mocks base method
+func (m *MockTranscribeServiceAPI) ListCallAnalyticsJobsPagesWithContext(arg0 context.Context, arg1 *transcribeservice.ListCallAnalyticsJobsInput, arg2 func(*transcribeservice.ListCallAnalyticsJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCallAnalyticsJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCallAnalyticsJobsPagesWithContext indicates an expected call of ListCallAnalyticsJobsPagesWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) ListCallAnalyticsJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCallAnalyticsJobsPagesWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListCallAnalyticsJobsPagesWithContext), varargs...)
+}
+
+// ListCallAnalyticsJobsRequest mocks base method
+func (m *MockTranscribeServiceAPI) ListCallAnalyticsJobsRequest(arg0 *transcribeservice.ListCallAnalyticsJobsInput) (*request.Request, *transcribeservice.ListCallAnalyticsJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCallAnalyticsJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.ListCallAnalyticsJobsOutput)
+	return ret0, ret1
+}
+
+// ListCallAnalyticsJobsRequest indicates an expected call of ListCallAnalyticsJobsRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) ListCallAnalyticsJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCallAnalyticsJobsRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListCallAnalyticsJobsRequest), arg0)
+}
+
+// ListCallAnalyticsJobsWithContext mocks base method
+func (m *MockTranscribeServiceAPI) ListCallAnalyticsJobsWithContext(arg0 context.Context, arg1 *transcribeservice.ListCallAnalyticsJobsInput, arg2 ...request.Option) (*transcribeservice.ListCallAnalyticsJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCallAnalyticsJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.ListCallAnalyticsJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCallAnalyticsJobsWithContext indicates an expected call of ListCallAnalyticsJobsWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) ListCallAnalyticsJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCallAnalyticsJobsWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListCallAnalyticsJobsWithContext), varargs...)
 }
 
 // ListLanguageModels mocks base method
@@ -1333,6 +1749,56 @@ func (mr *MockTranscribeServiceAPIMockRecorder) ListVocabularyFiltersWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVocabularyFiltersWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).ListVocabularyFiltersWithContext), varargs...)
 }
 
+// StartCallAnalyticsJob mocks base method
+func (m *MockTranscribeServiceAPI) StartCallAnalyticsJob(arg0 *transcribeservice.StartCallAnalyticsJobInput) (*transcribeservice.StartCallAnalyticsJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartCallAnalyticsJob", arg0)
+	ret0, _ := ret[0].(*transcribeservice.StartCallAnalyticsJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartCallAnalyticsJob indicates an expected call of StartCallAnalyticsJob
+func (mr *MockTranscribeServiceAPIMockRecorder) StartCallAnalyticsJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCallAnalyticsJob", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).StartCallAnalyticsJob), arg0)
+}
+
+// StartCallAnalyticsJobRequest mocks base method
+func (m *MockTranscribeServiceAPI) StartCallAnalyticsJobRequest(arg0 *transcribeservice.StartCallAnalyticsJobInput) (*request.Request, *transcribeservice.StartCallAnalyticsJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartCallAnalyticsJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.StartCallAnalyticsJobOutput)
+	return ret0, ret1
+}
+
+// StartCallAnalyticsJobRequest indicates an expected call of StartCallAnalyticsJobRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) StartCallAnalyticsJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCallAnalyticsJobRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).StartCallAnalyticsJobRequest), arg0)
+}
+
+// StartCallAnalyticsJobWithContext mocks base method
+func (m *MockTranscribeServiceAPI) StartCallAnalyticsJobWithContext(arg0 context.Context, arg1 *transcribeservice.StartCallAnalyticsJobInput, arg2 ...request.Option) (*transcribeservice.StartCallAnalyticsJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartCallAnalyticsJobWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.StartCallAnalyticsJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartCallAnalyticsJobWithContext indicates an expected call of StartCallAnalyticsJobWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) StartCallAnalyticsJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCallAnalyticsJobWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).StartCallAnalyticsJobWithContext), varargs...)
+}
+
 // StartMedicalTranscriptionJob mocks base method
 func (m *MockTranscribeServiceAPI) StartMedicalTranscriptionJob(arg0 *transcribeservice.StartMedicalTranscriptionJobInput) (*transcribeservice.StartMedicalTranscriptionJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -1431,6 +1897,56 @@ func (mr *MockTranscribeServiceAPIMockRecorder) StartTranscriptionJobWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTranscriptionJobWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).StartTranscriptionJobWithContext), varargs...)
+}
+
+// UpdateCallAnalyticsCategory mocks base method
+func (m *MockTranscribeServiceAPI) UpdateCallAnalyticsCategory(arg0 *transcribeservice.UpdateCallAnalyticsCategoryInput) (*transcribeservice.UpdateCallAnalyticsCategoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCallAnalyticsCategory", arg0)
+	ret0, _ := ret[0].(*transcribeservice.UpdateCallAnalyticsCategoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCallAnalyticsCategory indicates an expected call of UpdateCallAnalyticsCategory
+func (mr *MockTranscribeServiceAPIMockRecorder) UpdateCallAnalyticsCategory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCallAnalyticsCategory", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).UpdateCallAnalyticsCategory), arg0)
+}
+
+// UpdateCallAnalyticsCategoryRequest mocks base method
+func (m *MockTranscribeServiceAPI) UpdateCallAnalyticsCategoryRequest(arg0 *transcribeservice.UpdateCallAnalyticsCategoryInput) (*request.Request, *transcribeservice.UpdateCallAnalyticsCategoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCallAnalyticsCategoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transcribeservice.UpdateCallAnalyticsCategoryOutput)
+	return ret0, ret1
+}
+
+// UpdateCallAnalyticsCategoryRequest indicates an expected call of UpdateCallAnalyticsCategoryRequest
+func (mr *MockTranscribeServiceAPIMockRecorder) UpdateCallAnalyticsCategoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCallAnalyticsCategoryRequest", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).UpdateCallAnalyticsCategoryRequest), arg0)
+}
+
+// UpdateCallAnalyticsCategoryWithContext mocks base method
+func (m *MockTranscribeServiceAPI) UpdateCallAnalyticsCategoryWithContext(arg0 context.Context, arg1 *transcribeservice.UpdateCallAnalyticsCategoryInput, arg2 ...request.Option) (*transcribeservice.UpdateCallAnalyticsCategoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateCallAnalyticsCategoryWithContext", varargs...)
+	ret0, _ := ret[0].(*transcribeservice.UpdateCallAnalyticsCategoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCallAnalyticsCategoryWithContext indicates an expected call of UpdateCallAnalyticsCategoryWithContext
+func (mr *MockTranscribeServiceAPIMockRecorder) UpdateCallAnalyticsCategoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCallAnalyticsCategoryWithContext", reflect.TypeOf((*MockTranscribeServiceAPI)(nil).UpdateCallAnalyticsCategoryWithContext), varargs...)
 }
 
 // UpdateMedicalVocabulary mocks base method
