@@ -35,6 +35,56 @@ func (m *MockRoute53ResolverAPI) EXPECT() *MockRoute53ResolverAPIMockRecorder {
 	return m.recorder
 }
 
+// AssociateFirewallRuleGroup mocks base method
+func (m *MockRoute53ResolverAPI) AssociateFirewallRuleGroup(arg0 *route53resolver.AssociateFirewallRuleGroupInput) (*route53resolver.AssociateFirewallRuleGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateFirewallRuleGroup", arg0)
+	ret0, _ := ret[0].(*route53resolver.AssociateFirewallRuleGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateFirewallRuleGroup indicates an expected call of AssociateFirewallRuleGroup
+func (mr *MockRoute53ResolverAPIMockRecorder) AssociateFirewallRuleGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFirewallRuleGroup", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).AssociateFirewallRuleGroup), arg0)
+}
+
+// AssociateFirewallRuleGroupRequest mocks base method
+func (m *MockRoute53ResolverAPI) AssociateFirewallRuleGroupRequest(arg0 *route53resolver.AssociateFirewallRuleGroupInput) (*request.Request, *route53resolver.AssociateFirewallRuleGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateFirewallRuleGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.AssociateFirewallRuleGroupOutput)
+	return ret0, ret1
+}
+
+// AssociateFirewallRuleGroupRequest indicates an expected call of AssociateFirewallRuleGroupRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) AssociateFirewallRuleGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFirewallRuleGroupRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).AssociateFirewallRuleGroupRequest), arg0)
+}
+
+// AssociateFirewallRuleGroupWithContext mocks base method
+func (m *MockRoute53ResolverAPI) AssociateFirewallRuleGroupWithContext(arg0 context.Context, arg1 *route53resolver.AssociateFirewallRuleGroupInput, arg2 ...request.Option) (*route53resolver.AssociateFirewallRuleGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateFirewallRuleGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.AssociateFirewallRuleGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateFirewallRuleGroupWithContext indicates an expected call of AssociateFirewallRuleGroupWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) AssociateFirewallRuleGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFirewallRuleGroupWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).AssociateFirewallRuleGroupWithContext), varargs...)
+}
+
 // AssociateResolverEndpointIpAddress mocks base method
 func (m *MockRoute53ResolverAPI) AssociateResolverEndpointIpAddress(arg0 *route53resolver.AssociateResolverEndpointIpAddressInput) (*route53resolver.AssociateResolverEndpointIpAddressOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +233,156 @@ func (mr *MockRoute53ResolverAPIMockRecorder) AssociateResolverRuleWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateResolverRuleWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).AssociateResolverRuleWithContext), varargs...)
+}
+
+// CreateFirewallDomainList mocks base method
+func (m *MockRoute53ResolverAPI) CreateFirewallDomainList(arg0 *route53resolver.CreateFirewallDomainListInput) (*route53resolver.CreateFirewallDomainListOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFirewallDomainList", arg0)
+	ret0, _ := ret[0].(*route53resolver.CreateFirewallDomainListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFirewallDomainList indicates an expected call of CreateFirewallDomainList
+func (mr *MockRoute53ResolverAPIMockRecorder) CreateFirewallDomainList(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFirewallDomainList", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).CreateFirewallDomainList), arg0)
+}
+
+// CreateFirewallDomainListRequest mocks base method
+func (m *MockRoute53ResolverAPI) CreateFirewallDomainListRequest(arg0 *route53resolver.CreateFirewallDomainListInput) (*request.Request, *route53resolver.CreateFirewallDomainListOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFirewallDomainListRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.CreateFirewallDomainListOutput)
+	return ret0, ret1
+}
+
+// CreateFirewallDomainListRequest indicates an expected call of CreateFirewallDomainListRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) CreateFirewallDomainListRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFirewallDomainListRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).CreateFirewallDomainListRequest), arg0)
+}
+
+// CreateFirewallDomainListWithContext mocks base method
+func (m *MockRoute53ResolverAPI) CreateFirewallDomainListWithContext(arg0 context.Context, arg1 *route53resolver.CreateFirewallDomainListInput, arg2 ...request.Option) (*route53resolver.CreateFirewallDomainListOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFirewallDomainListWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.CreateFirewallDomainListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFirewallDomainListWithContext indicates an expected call of CreateFirewallDomainListWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) CreateFirewallDomainListWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFirewallDomainListWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).CreateFirewallDomainListWithContext), varargs...)
+}
+
+// CreateFirewallRule mocks base method
+func (m *MockRoute53ResolverAPI) CreateFirewallRule(arg0 *route53resolver.CreateFirewallRuleInput) (*route53resolver.CreateFirewallRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFirewallRule", arg0)
+	ret0, _ := ret[0].(*route53resolver.CreateFirewallRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFirewallRule indicates an expected call of CreateFirewallRule
+func (mr *MockRoute53ResolverAPIMockRecorder) CreateFirewallRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFirewallRule", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).CreateFirewallRule), arg0)
+}
+
+// CreateFirewallRuleGroup mocks base method
+func (m *MockRoute53ResolverAPI) CreateFirewallRuleGroup(arg0 *route53resolver.CreateFirewallRuleGroupInput) (*route53resolver.CreateFirewallRuleGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFirewallRuleGroup", arg0)
+	ret0, _ := ret[0].(*route53resolver.CreateFirewallRuleGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFirewallRuleGroup indicates an expected call of CreateFirewallRuleGroup
+func (mr *MockRoute53ResolverAPIMockRecorder) CreateFirewallRuleGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFirewallRuleGroup", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).CreateFirewallRuleGroup), arg0)
+}
+
+// CreateFirewallRuleGroupRequest mocks base method
+func (m *MockRoute53ResolverAPI) CreateFirewallRuleGroupRequest(arg0 *route53resolver.CreateFirewallRuleGroupInput) (*request.Request, *route53resolver.CreateFirewallRuleGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFirewallRuleGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.CreateFirewallRuleGroupOutput)
+	return ret0, ret1
+}
+
+// CreateFirewallRuleGroupRequest indicates an expected call of CreateFirewallRuleGroupRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) CreateFirewallRuleGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFirewallRuleGroupRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).CreateFirewallRuleGroupRequest), arg0)
+}
+
+// CreateFirewallRuleGroupWithContext mocks base method
+func (m *MockRoute53ResolverAPI) CreateFirewallRuleGroupWithContext(arg0 context.Context, arg1 *route53resolver.CreateFirewallRuleGroupInput, arg2 ...request.Option) (*route53resolver.CreateFirewallRuleGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFirewallRuleGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.CreateFirewallRuleGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFirewallRuleGroupWithContext indicates an expected call of CreateFirewallRuleGroupWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) CreateFirewallRuleGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFirewallRuleGroupWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).CreateFirewallRuleGroupWithContext), varargs...)
+}
+
+// CreateFirewallRuleRequest mocks base method
+func (m *MockRoute53ResolverAPI) CreateFirewallRuleRequest(arg0 *route53resolver.CreateFirewallRuleInput) (*request.Request, *route53resolver.CreateFirewallRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFirewallRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.CreateFirewallRuleOutput)
+	return ret0, ret1
+}
+
+// CreateFirewallRuleRequest indicates an expected call of CreateFirewallRuleRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) CreateFirewallRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFirewallRuleRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).CreateFirewallRuleRequest), arg0)
+}
+
+// CreateFirewallRuleWithContext mocks base method
+func (m *MockRoute53ResolverAPI) CreateFirewallRuleWithContext(arg0 context.Context, arg1 *route53resolver.CreateFirewallRuleInput, arg2 ...request.Option) (*route53resolver.CreateFirewallRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFirewallRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.CreateFirewallRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFirewallRuleWithContext indicates an expected call of CreateFirewallRuleWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) CreateFirewallRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFirewallRuleWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).CreateFirewallRuleWithContext), varargs...)
 }
 
 // CreateResolverEndpoint mocks base method
@@ -335,6 +535,156 @@ func (mr *MockRoute53ResolverAPIMockRecorder) CreateResolverRuleWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateResolverRuleWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).CreateResolverRuleWithContext), varargs...)
 }
 
+// DeleteFirewallDomainList mocks base method
+func (m *MockRoute53ResolverAPI) DeleteFirewallDomainList(arg0 *route53resolver.DeleteFirewallDomainListInput) (*route53resolver.DeleteFirewallDomainListOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFirewallDomainList", arg0)
+	ret0, _ := ret[0].(*route53resolver.DeleteFirewallDomainListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFirewallDomainList indicates an expected call of DeleteFirewallDomainList
+func (mr *MockRoute53ResolverAPIMockRecorder) DeleteFirewallDomainList(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFirewallDomainList", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DeleteFirewallDomainList), arg0)
+}
+
+// DeleteFirewallDomainListRequest mocks base method
+func (m *MockRoute53ResolverAPI) DeleteFirewallDomainListRequest(arg0 *route53resolver.DeleteFirewallDomainListInput) (*request.Request, *route53resolver.DeleteFirewallDomainListOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFirewallDomainListRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.DeleteFirewallDomainListOutput)
+	return ret0, ret1
+}
+
+// DeleteFirewallDomainListRequest indicates an expected call of DeleteFirewallDomainListRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) DeleteFirewallDomainListRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFirewallDomainListRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DeleteFirewallDomainListRequest), arg0)
+}
+
+// DeleteFirewallDomainListWithContext mocks base method
+func (m *MockRoute53ResolverAPI) DeleteFirewallDomainListWithContext(arg0 context.Context, arg1 *route53resolver.DeleteFirewallDomainListInput, arg2 ...request.Option) (*route53resolver.DeleteFirewallDomainListOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFirewallDomainListWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.DeleteFirewallDomainListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFirewallDomainListWithContext indicates an expected call of DeleteFirewallDomainListWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) DeleteFirewallDomainListWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFirewallDomainListWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DeleteFirewallDomainListWithContext), varargs...)
+}
+
+// DeleteFirewallRule mocks base method
+func (m *MockRoute53ResolverAPI) DeleteFirewallRule(arg0 *route53resolver.DeleteFirewallRuleInput) (*route53resolver.DeleteFirewallRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFirewallRule", arg0)
+	ret0, _ := ret[0].(*route53resolver.DeleteFirewallRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFirewallRule indicates an expected call of DeleteFirewallRule
+func (mr *MockRoute53ResolverAPIMockRecorder) DeleteFirewallRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFirewallRule", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DeleteFirewallRule), arg0)
+}
+
+// DeleteFirewallRuleGroup mocks base method
+func (m *MockRoute53ResolverAPI) DeleteFirewallRuleGroup(arg0 *route53resolver.DeleteFirewallRuleGroupInput) (*route53resolver.DeleteFirewallRuleGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFirewallRuleGroup", arg0)
+	ret0, _ := ret[0].(*route53resolver.DeleteFirewallRuleGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFirewallRuleGroup indicates an expected call of DeleteFirewallRuleGroup
+func (mr *MockRoute53ResolverAPIMockRecorder) DeleteFirewallRuleGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFirewallRuleGroup", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DeleteFirewallRuleGroup), arg0)
+}
+
+// DeleteFirewallRuleGroupRequest mocks base method
+func (m *MockRoute53ResolverAPI) DeleteFirewallRuleGroupRequest(arg0 *route53resolver.DeleteFirewallRuleGroupInput) (*request.Request, *route53resolver.DeleteFirewallRuleGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFirewallRuleGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.DeleteFirewallRuleGroupOutput)
+	return ret0, ret1
+}
+
+// DeleteFirewallRuleGroupRequest indicates an expected call of DeleteFirewallRuleGroupRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) DeleteFirewallRuleGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFirewallRuleGroupRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DeleteFirewallRuleGroupRequest), arg0)
+}
+
+// DeleteFirewallRuleGroupWithContext mocks base method
+func (m *MockRoute53ResolverAPI) DeleteFirewallRuleGroupWithContext(arg0 context.Context, arg1 *route53resolver.DeleteFirewallRuleGroupInput, arg2 ...request.Option) (*route53resolver.DeleteFirewallRuleGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFirewallRuleGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.DeleteFirewallRuleGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFirewallRuleGroupWithContext indicates an expected call of DeleteFirewallRuleGroupWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) DeleteFirewallRuleGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFirewallRuleGroupWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DeleteFirewallRuleGroupWithContext), varargs...)
+}
+
+// DeleteFirewallRuleRequest mocks base method
+func (m *MockRoute53ResolverAPI) DeleteFirewallRuleRequest(arg0 *route53resolver.DeleteFirewallRuleInput) (*request.Request, *route53resolver.DeleteFirewallRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFirewallRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.DeleteFirewallRuleOutput)
+	return ret0, ret1
+}
+
+// DeleteFirewallRuleRequest indicates an expected call of DeleteFirewallRuleRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) DeleteFirewallRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFirewallRuleRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DeleteFirewallRuleRequest), arg0)
+}
+
+// DeleteFirewallRuleWithContext mocks base method
+func (m *MockRoute53ResolverAPI) DeleteFirewallRuleWithContext(arg0 context.Context, arg1 *route53resolver.DeleteFirewallRuleInput, arg2 ...request.Option) (*route53resolver.DeleteFirewallRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFirewallRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.DeleteFirewallRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFirewallRuleWithContext indicates an expected call of DeleteFirewallRuleWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) DeleteFirewallRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFirewallRuleWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DeleteFirewallRuleWithContext), varargs...)
+}
+
 // DeleteResolverEndpoint mocks base method
 func (m *MockRoute53ResolverAPI) DeleteResolverEndpoint(arg0 *route53resolver.DeleteResolverEndpointInput) (*route53resolver.DeleteResolverEndpointOutput, error) {
 	m.ctrl.T.Helper()
@@ -485,6 +835,56 @@ func (mr *MockRoute53ResolverAPIMockRecorder) DeleteResolverRuleWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResolverRuleWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DeleteResolverRuleWithContext), varargs...)
 }
 
+// DisassociateFirewallRuleGroup mocks base method
+func (m *MockRoute53ResolverAPI) DisassociateFirewallRuleGroup(arg0 *route53resolver.DisassociateFirewallRuleGroupInput) (*route53resolver.DisassociateFirewallRuleGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFirewallRuleGroup", arg0)
+	ret0, _ := ret[0].(*route53resolver.DisassociateFirewallRuleGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFirewallRuleGroup indicates an expected call of DisassociateFirewallRuleGroup
+func (mr *MockRoute53ResolverAPIMockRecorder) DisassociateFirewallRuleGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFirewallRuleGroup", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DisassociateFirewallRuleGroup), arg0)
+}
+
+// DisassociateFirewallRuleGroupRequest mocks base method
+func (m *MockRoute53ResolverAPI) DisassociateFirewallRuleGroupRequest(arg0 *route53resolver.DisassociateFirewallRuleGroupInput) (*request.Request, *route53resolver.DisassociateFirewallRuleGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFirewallRuleGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.DisassociateFirewallRuleGroupOutput)
+	return ret0, ret1
+}
+
+// DisassociateFirewallRuleGroupRequest indicates an expected call of DisassociateFirewallRuleGroupRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) DisassociateFirewallRuleGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFirewallRuleGroupRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DisassociateFirewallRuleGroupRequest), arg0)
+}
+
+// DisassociateFirewallRuleGroupWithContext mocks base method
+func (m *MockRoute53ResolverAPI) DisassociateFirewallRuleGroupWithContext(arg0 context.Context, arg1 *route53resolver.DisassociateFirewallRuleGroupInput, arg2 ...request.Option) (*route53resolver.DisassociateFirewallRuleGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateFirewallRuleGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.DisassociateFirewallRuleGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFirewallRuleGroupWithContext indicates an expected call of DisassociateFirewallRuleGroupWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) DisassociateFirewallRuleGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFirewallRuleGroupWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DisassociateFirewallRuleGroupWithContext), varargs...)
+}
+
 // DisassociateResolverEndpointIpAddress mocks base method
 func (m *MockRoute53ResolverAPI) DisassociateResolverEndpointIpAddress(arg0 *route53resolver.DisassociateResolverEndpointIpAddressInput) (*route53resolver.DisassociateResolverEndpointIpAddressOutput, error) {
 	m.ctrl.T.Helper()
@@ -633,6 +1033,256 @@ func (mr *MockRoute53ResolverAPIMockRecorder) DisassociateResolverRuleWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateResolverRuleWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).DisassociateResolverRuleWithContext), varargs...)
+}
+
+// GetFirewallConfig mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallConfig(arg0 *route53resolver.GetFirewallConfigInput) (*route53resolver.GetFirewallConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFirewallConfig", arg0)
+	ret0, _ := ret[0].(*route53resolver.GetFirewallConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFirewallConfig indicates an expected call of GetFirewallConfig
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallConfig", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallConfig), arg0)
+}
+
+// GetFirewallConfigRequest mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallConfigRequest(arg0 *route53resolver.GetFirewallConfigInput) (*request.Request, *route53resolver.GetFirewallConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFirewallConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.GetFirewallConfigOutput)
+	return ret0, ret1
+}
+
+// GetFirewallConfigRequest indicates an expected call of GetFirewallConfigRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallConfigRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallConfigRequest), arg0)
+}
+
+// GetFirewallConfigWithContext mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallConfigWithContext(arg0 context.Context, arg1 *route53resolver.GetFirewallConfigInput, arg2 ...request.Option) (*route53resolver.GetFirewallConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFirewallConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.GetFirewallConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFirewallConfigWithContext indicates an expected call of GetFirewallConfigWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallConfigWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallConfigWithContext), varargs...)
+}
+
+// GetFirewallDomainList mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallDomainList(arg0 *route53resolver.GetFirewallDomainListInput) (*route53resolver.GetFirewallDomainListOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFirewallDomainList", arg0)
+	ret0, _ := ret[0].(*route53resolver.GetFirewallDomainListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFirewallDomainList indicates an expected call of GetFirewallDomainList
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallDomainList(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallDomainList", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallDomainList), arg0)
+}
+
+// GetFirewallDomainListRequest mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallDomainListRequest(arg0 *route53resolver.GetFirewallDomainListInput) (*request.Request, *route53resolver.GetFirewallDomainListOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFirewallDomainListRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.GetFirewallDomainListOutput)
+	return ret0, ret1
+}
+
+// GetFirewallDomainListRequest indicates an expected call of GetFirewallDomainListRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallDomainListRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallDomainListRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallDomainListRequest), arg0)
+}
+
+// GetFirewallDomainListWithContext mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallDomainListWithContext(arg0 context.Context, arg1 *route53resolver.GetFirewallDomainListInput, arg2 ...request.Option) (*route53resolver.GetFirewallDomainListOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFirewallDomainListWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.GetFirewallDomainListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFirewallDomainListWithContext indicates an expected call of GetFirewallDomainListWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallDomainListWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallDomainListWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallDomainListWithContext), varargs...)
+}
+
+// GetFirewallRuleGroup mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallRuleGroup(arg0 *route53resolver.GetFirewallRuleGroupInput) (*route53resolver.GetFirewallRuleGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFirewallRuleGroup", arg0)
+	ret0, _ := ret[0].(*route53resolver.GetFirewallRuleGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFirewallRuleGroup indicates an expected call of GetFirewallRuleGroup
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallRuleGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallRuleGroup", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallRuleGroup), arg0)
+}
+
+// GetFirewallRuleGroupAssociation mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallRuleGroupAssociation(arg0 *route53resolver.GetFirewallRuleGroupAssociationInput) (*route53resolver.GetFirewallRuleGroupAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFirewallRuleGroupAssociation", arg0)
+	ret0, _ := ret[0].(*route53resolver.GetFirewallRuleGroupAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFirewallRuleGroupAssociation indicates an expected call of GetFirewallRuleGroupAssociation
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallRuleGroupAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallRuleGroupAssociation", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallRuleGroupAssociation), arg0)
+}
+
+// GetFirewallRuleGroupAssociationRequest mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallRuleGroupAssociationRequest(arg0 *route53resolver.GetFirewallRuleGroupAssociationInput) (*request.Request, *route53resolver.GetFirewallRuleGroupAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFirewallRuleGroupAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.GetFirewallRuleGroupAssociationOutput)
+	return ret0, ret1
+}
+
+// GetFirewallRuleGroupAssociationRequest indicates an expected call of GetFirewallRuleGroupAssociationRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallRuleGroupAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallRuleGroupAssociationRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallRuleGroupAssociationRequest), arg0)
+}
+
+// GetFirewallRuleGroupAssociationWithContext mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallRuleGroupAssociationWithContext(arg0 context.Context, arg1 *route53resolver.GetFirewallRuleGroupAssociationInput, arg2 ...request.Option) (*route53resolver.GetFirewallRuleGroupAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFirewallRuleGroupAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.GetFirewallRuleGroupAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFirewallRuleGroupAssociationWithContext indicates an expected call of GetFirewallRuleGroupAssociationWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallRuleGroupAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallRuleGroupAssociationWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallRuleGroupAssociationWithContext), varargs...)
+}
+
+// GetFirewallRuleGroupPolicy mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallRuleGroupPolicy(arg0 *route53resolver.GetFirewallRuleGroupPolicyInput) (*route53resolver.GetFirewallRuleGroupPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFirewallRuleGroupPolicy", arg0)
+	ret0, _ := ret[0].(*route53resolver.GetFirewallRuleGroupPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFirewallRuleGroupPolicy indicates an expected call of GetFirewallRuleGroupPolicy
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallRuleGroupPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallRuleGroupPolicy", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallRuleGroupPolicy), arg0)
+}
+
+// GetFirewallRuleGroupPolicyRequest mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallRuleGroupPolicyRequest(arg0 *route53resolver.GetFirewallRuleGroupPolicyInput) (*request.Request, *route53resolver.GetFirewallRuleGroupPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFirewallRuleGroupPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.GetFirewallRuleGroupPolicyOutput)
+	return ret0, ret1
+}
+
+// GetFirewallRuleGroupPolicyRequest indicates an expected call of GetFirewallRuleGroupPolicyRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallRuleGroupPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallRuleGroupPolicyRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallRuleGroupPolicyRequest), arg0)
+}
+
+// GetFirewallRuleGroupPolicyWithContext mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallRuleGroupPolicyWithContext(arg0 context.Context, arg1 *route53resolver.GetFirewallRuleGroupPolicyInput, arg2 ...request.Option) (*route53resolver.GetFirewallRuleGroupPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFirewallRuleGroupPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.GetFirewallRuleGroupPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFirewallRuleGroupPolicyWithContext indicates an expected call of GetFirewallRuleGroupPolicyWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallRuleGroupPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallRuleGroupPolicyWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallRuleGroupPolicyWithContext), varargs...)
+}
+
+// GetFirewallRuleGroupRequest mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallRuleGroupRequest(arg0 *route53resolver.GetFirewallRuleGroupInput) (*request.Request, *route53resolver.GetFirewallRuleGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFirewallRuleGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.GetFirewallRuleGroupOutput)
+	return ret0, ret1
+}
+
+// GetFirewallRuleGroupRequest indicates an expected call of GetFirewallRuleGroupRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallRuleGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallRuleGroupRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallRuleGroupRequest), arg0)
+}
+
+// GetFirewallRuleGroupWithContext mocks base method
+func (m *MockRoute53ResolverAPI) GetFirewallRuleGroupWithContext(arg0 context.Context, arg1 *route53resolver.GetFirewallRuleGroupInput, arg2 ...request.Option) (*route53resolver.GetFirewallRuleGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFirewallRuleGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.GetFirewallRuleGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFirewallRuleGroupWithContext indicates an expected call of GetFirewallRuleGroupWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallRuleGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallRuleGroupWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallRuleGroupWithContext), varargs...)
 }
 
 // GetResolverDnssecConfig mocks base method
@@ -1033,6 +1683,554 @@ func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverRuleWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverRuleWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverRuleWithContext), varargs...)
+}
+
+// ImportFirewallDomains mocks base method
+func (m *MockRoute53ResolverAPI) ImportFirewallDomains(arg0 *route53resolver.ImportFirewallDomainsInput) (*route53resolver.ImportFirewallDomainsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportFirewallDomains", arg0)
+	ret0, _ := ret[0].(*route53resolver.ImportFirewallDomainsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportFirewallDomains indicates an expected call of ImportFirewallDomains
+func (mr *MockRoute53ResolverAPIMockRecorder) ImportFirewallDomains(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportFirewallDomains", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ImportFirewallDomains), arg0)
+}
+
+// ImportFirewallDomainsRequest mocks base method
+func (m *MockRoute53ResolverAPI) ImportFirewallDomainsRequest(arg0 *route53resolver.ImportFirewallDomainsInput) (*request.Request, *route53resolver.ImportFirewallDomainsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportFirewallDomainsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.ImportFirewallDomainsOutput)
+	return ret0, ret1
+}
+
+// ImportFirewallDomainsRequest indicates an expected call of ImportFirewallDomainsRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) ImportFirewallDomainsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportFirewallDomainsRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ImportFirewallDomainsRequest), arg0)
+}
+
+// ImportFirewallDomainsWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ImportFirewallDomainsWithContext(arg0 context.Context, arg1 *route53resolver.ImportFirewallDomainsInput, arg2 ...request.Option) (*route53resolver.ImportFirewallDomainsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportFirewallDomainsWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.ImportFirewallDomainsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportFirewallDomainsWithContext indicates an expected call of ImportFirewallDomainsWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ImportFirewallDomainsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportFirewallDomainsWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ImportFirewallDomainsWithContext), varargs...)
+}
+
+// ListFirewallConfigs mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallConfigs(arg0 *route53resolver.ListFirewallConfigsInput) (*route53resolver.ListFirewallConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallConfigs", arg0)
+	ret0, _ := ret[0].(*route53resolver.ListFirewallConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFirewallConfigs indicates an expected call of ListFirewallConfigs
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallConfigs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallConfigs", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallConfigs), arg0)
+}
+
+// ListFirewallConfigsPages mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallConfigsPages(arg0 *route53resolver.ListFirewallConfigsInput, arg1 func(*route53resolver.ListFirewallConfigsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallConfigsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFirewallConfigsPages indicates an expected call of ListFirewallConfigsPages
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallConfigsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallConfigsPages", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallConfigsPages), arg0, arg1)
+}
+
+// ListFirewallConfigsPagesWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallConfigsPagesWithContext(arg0 context.Context, arg1 *route53resolver.ListFirewallConfigsInput, arg2 func(*route53resolver.ListFirewallConfigsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFirewallConfigsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFirewallConfigsPagesWithContext indicates an expected call of ListFirewallConfigsPagesWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallConfigsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallConfigsPagesWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallConfigsPagesWithContext), varargs...)
+}
+
+// ListFirewallConfigsRequest mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallConfigsRequest(arg0 *route53resolver.ListFirewallConfigsInput) (*request.Request, *route53resolver.ListFirewallConfigsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallConfigsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.ListFirewallConfigsOutput)
+	return ret0, ret1
+}
+
+// ListFirewallConfigsRequest indicates an expected call of ListFirewallConfigsRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallConfigsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallConfigsRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallConfigsRequest), arg0)
+}
+
+// ListFirewallConfigsWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallConfigsWithContext(arg0 context.Context, arg1 *route53resolver.ListFirewallConfigsInput, arg2 ...request.Option) (*route53resolver.ListFirewallConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFirewallConfigsWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.ListFirewallConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFirewallConfigsWithContext indicates an expected call of ListFirewallConfigsWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallConfigsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallConfigsWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallConfigsWithContext), varargs...)
+}
+
+// ListFirewallDomainLists mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallDomainLists(arg0 *route53resolver.ListFirewallDomainListsInput) (*route53resolver.ListFirewallDomainListsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallDomainLists", arg0)
+	ret0, _ := ret[0].(*route53resolver.ListFirewallDomainListsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFirewallDomainLists indicates an expected call of ListFirewallDomainLists
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallDomainLists(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallDomainLists", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallDomainLists), arg0)
+}
+
+// ListFirewallDomainListsPages mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallDomainListsPages(arg0 *route53resolver.ListFirewallDomainListsInput, arg1 func(*route53resolver.ListFirewallDomainListsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallDomainListsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFirewallDomainListsPages indicates an expected call of ListFirewallDomainListsPages
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallDomainListsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallDomainListsPages", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallDomainListsPages), arg0, arg1)
+}
+
+// ListFirewallDomainListsPagesWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallDomainListsPagesWithContext(arg0 context.Context, arg1 *route53resolver.ListFirewallDomainListsInput, arg2 func(*route53resolver.ListFirewallDomainListsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFirewallDomainListsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFirewallDomainListsPagesWithContext indicates an expected call of ListFirewallDomainListsPagesWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallDomainListsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallDomainListsPagesWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallDomainListsPagesWithContext), varargs...)
+}
+
+// ListFirewallDomainListsRequest mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallDomainListsRequest(arg0 *route53resolver.ListFirewallDomainListsInput) (*request.Request, *route53resolver.ListFirewallDomainListsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallDomainListsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.ListFirewallDomainListsOutput)
+	return ret0, ret1
+}
+
+// ListFirewallDomainListsRequest indicates an expected call of ListFirewallDomainListsRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallDomainListsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallDomainListsRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallDomainListsRequest), arg0)
+}
+
+// ListFirewallDomainListsWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallDomainListsWithContext(arg0 context.Context, arg1 *route53resolver.ListFirewallDomainListsInput, arg2 ...request.Option) (*route53resolver.ListFirewallDomainListsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFirewallDomainListsWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.ListFirewallDomainListsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFirewallDomainListsWithContext indicates an expected call of ListFirewallDomainListsWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallDomainListsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallDomainListsWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallDomainListsWithContext), varargs...)
+}
+
+// ListFirewallDomains mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallDomains(arg0 *route53resolver.ListFirewallDomainsInput) (*route53resolver.ListFirewallDomainsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallDomains", arg0)
+	ret0, _ := ret[0].(*route53resolver.ListFirewallDomainsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFirewallDomains indicates an expected call of ListFirewallDomains
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallDomains(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallDomains", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallDomains), arg0)
+}
+
+// ListFirewallDomainsPages mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallDomainsPages(arg0 *route53resolver.ListFirewallDomainsInput, arg1 func(*route53resolver.ListFirewallDomainsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallDomainsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFirewallDomainsPages indicates an expected call of ListFirewallDomainsPages
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallDomainsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallDomainsPages", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallDomainsPages), arg0, arg1)
+}
+
+// ListFirewallDomainsPagesWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallDomainsPagesWithContext(arg0 context.Context, arg1 *route53resolver.ListFirewallDomainsInput, arg2 func(*route53resolver.ListFirewallDomainsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFirewallDomainsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFirewallDomainsPagesWithContext indicates an expected call of ListFirewallDomainsPagesWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallDomainsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallDomainsPagesWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallDomainsPagesWithContext), varargs...)
+}
+
+// ListFirewallDomainsRequest mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallDomainsRequest(arg0 *route53resolver.ListFirewallDomainsInput) (*request.Request, *route53resolver.ListFirewallDomainsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallDomainsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.ListFirewallDomainsOutput)
+	return ret0, ret1
+}
+
+// ListFirewallDomainsRequest indicates an expected call of ListFirewallDomainsRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallDomainsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallDomainsRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallDomainsRequest), arg0)
+}
+
+// ListFirewallDomainsWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallDomainsWithContext(arg0 context.Context, arg1 *route53resolver.ListFirewallDomainsInput, arg2 ...request.Option) (*route53resolver.ListFirewallDomainsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFirewallDomainsWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.ListFirewallDomainsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFirewallDomainsWithContext indicates an expected call of ListFirewallDomainsWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallDomainsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallDomainsWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallDomainsWithContext), varargs...)
+}
+
+// ListFirewallRuleGroupAssociations mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRuleGroupAssociations(arg0 *route53resolver.ListFirewallRuleGroupAssociationsInput) (*route53resolver.ListFirewallRuleGroupAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallRuleGroupAssociations", arg0)
+	ret0, _ := ret[0].(*route53resolver.ListFirewallRuleGroupAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFirewallRuleGroupAssociations indicates an expected call of ListFirewallRuleGroupAssociations
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRuleGroupAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRuleGroupAssociations", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRuleGroupAssociations), arg0)
+}
+
+// ListFirewallRuleGroupAssociationsPages mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRuleGroupAssociationsPages(arg0 *route53resolver.ListFirewallRuleGroupAssociationsInput, arg1 func(*route53resolver.ListFirewallRuleGroupAssociationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallRuleGroupAssociationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFirewallRuleGroupAssociationsPages indicates an expected call of ListFirewallRuleGroupAssociationsPages
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRuleGroupAssociationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRuleGroupAssociationsPages", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRuleGroupAssociationsPages), arg0, arg1)
+}
+
+// ListFirewallRuleGroupAssociationsPagesWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRuleGroupAssociationsPagesWithContext(arg0 context.Context, arg1 *route53resolver.ListFirewallRuleGroupAssociationsInput, arg2 func(*route53resolver.ListFirewallRuleGroupAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFirewallRuleGroupAssociationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFirewallRuleGroupAssociationsPagesWithContext indicates an expected call of ListFirewallRuleGroupAssociationsPagesWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRuleGroupAssociationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRuleGroupAssociationsPagesWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRuleGroupAssociationsPagesWithContext), varargs...)
+}
+
+// ListFirewallRuleGroupAssociationsRequest mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRuleGroupAssociationsRequest(arg0 *route53resolver.ListFirewallRuleGroupAssociationsInput) (*request.Request, *route53resolver.ListFirewallRuleGroupAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallRuleGroupAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.ListFirewallRuleGroupAssociationsOutput)
+	return ret0, ret1
+}
+
+// ListFirewallRuleGroupAssociationsRequest indicates an expected call of ListFirewallRuleGroupAssociationsRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRuleGroupAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRuleGroupAssociationsRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRuleGroupAssociationsRequest), arg0)
+}
+
+// ListFirewallRuleGroupAssociationsWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRuleGroupAssociationsWithContext(arg0 context.Context, arg1 *route53resolver.ListFirewallRuleGroupAssociationsInput, arg2 ...request.Option) (*route53resolver.ListFirewallRuleGroupAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFirewallRuleGroupAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.ListFirewallRuleGroupAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFirewallRuleGroupAssociationsWithContext indicates an expected call of ListFirewallRuleGroupAssociationsWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRuleGroupAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRuleGroupAssociationsWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRuleGroupAssociationsWithContext), varargs...)
+}
+
+// ListFirewallRuleGroups mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRuleGroups(arg0 *route53resolver.ListFirewallRuleGroupsInput) (*route53resolver.ListFirewallRuleGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallRuleGroups", arg0)
+	ret0, _ := ret[0].(*route53resolver.ListFirewallRuleGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFirewallRuleGroups indicates an expected call of ListFirewallRuleGroups
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRuleGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRuleGroups", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRuleGroups), arg0)
+}
+
+// ListFirewallRuleGroupsPages mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRuleGroupsPages(arg0 *route53resolver.ListFirewallRuleGroupsInput, arg1 func(*route53resolver.ListFirewallRuleGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallRuleGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFirewallRuleGroupsPages indicates an expected call of ListFirewallRuleGroupsPages
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRuleGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRuleGroupsPages", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRuleGroupsPages), arg0, arg1)
+}
+
+// ListFirewallRuleGroupsPagesWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRuleGroupsPagesWithContext(arg0 context.Context, arg1 *route53resolver.ListFirewallRuleGroupsInput, arg2 func(*route53resolver.ListFirewallRuleGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFirewallRuleGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFirewallRuleGroupsPagesWithContext indicates an expected call of ListFirewallRuleGroupsPagesWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRuleGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRuleGroupsPagesWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRuleGroupsPagesWithContext), varargs...)
+}
+
+// ListFirewallRuleGroupsRequest mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRuleGroupsRequest(arg0 *route53resolver.ListFirewallRuleGroupsInput) (*request.Request, *route53resolver.ListFirewallRuleGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallRuleGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.ListFirewallRuleGroupsOutput)
+	return ret0, ret1
+}
+
+// ListFirewallRuleGroupsRequest indicates an expected call of ListFirewallRuleGroupsRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRuleGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRuleGroupsRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRuleGroupsRequest), arg0)
+}
+
+// ListFirewallRuleGroupsWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRuleGroupsWithContext(arg0 context.Context, arg1 *route53resolver.ListFirewallRuleGroupsInput, arg2 ...request.Option) (*route53resolver.ListFirewallRuleGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFirewallRuleGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.ListFirewallRuleGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFirewallRuleGroupsWithContext indicates an expected call of ListFirewallRuleGroupsWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRuleGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRuleGroupsWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRuleGroupsWithContext), varargs...)
+}
+
+// ListFirewallRules mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRules(arg0 *route53resolver.ListFirewallRulesInput) (*route53resolver.ListFirewallRulesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallRules", arg0)
+	ret0, _ := ret[0].(*route53resolver.ListFirewallRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFirewallRules indicates an expected call of ListFirewallRules
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRules(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRules", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRules), arg0)
+}
+
+// ListFirewallRulesPages mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRulesPages(arg0 *route53resolver.ListFirewallRulesInput, arg1 func(*route53resolver.ListFirewallRulesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallRulesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFirewallRulesPages indicates an expected call of ListFirewallRulesPages
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRulesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRulesPages", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRulesPages), arg0, arg1)
+}
+
+// ListFirewallRulesPagesWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRulesPagesWithContext(arg0 context.Context, arg1 *route53resolver.ListFirewallRulesInput, arg2 func(*route53resolver.ListFirewallRulesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFirewallRulesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFirewallRulesPagesWithContext indicates an expected call of ListFirewallRulesPagesWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRulesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRulesPagesWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRulesPagesWithContext), varargs...)
+}
+
+// ListFirewallRulesRequest mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRulesRequest(arg0 *route53resolver.ListFirewallRulesInput) (*request.Request, *route53resolver.ListFirewallRulesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFirewallRulesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.ListFirewallRulesOutput)
+	return ret0, ret1
+}
+
+// ListFirewallRulesRequest indicates an expected call of ListFirewallRulesRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRulesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRulesRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRulesRequest), arg0)
+}
+
+// ListFirewallRulesWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListFirewallRulesWithContext(arg0 context.Context, arg1 *route53resolver.ListFirewallRulesInput, arg2 ...request.Option) (*route53resolver.ListFirewallRulesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFirewallRulesWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.ListFirewallRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFirewallRulesWithContext indicates an expected call of ListFirewallRulesWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRulesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRulesWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRulesWithContext), varargs...)
 }
 
 // ListResolverDnssecConfigs mocks base method
@@ -1699,6 +2897,56 @@ func (mr *MockRoute53ResolverAPIMockRecorder) ListTagsForResourceWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// PutFirewallRuleGroupPolicy mocks base method
+func (m *MockRoute53ResolverAPI) PutFirewallRuleGroupPolicy(arg0 *route53resolver.PutFirewallRuleGroupPolicyInput) (*route53resolver.PutFirewallRuleGroupPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutFirewallRuleGroupPolicy", arg0)
+	ret0, _ := ret[0].(*route53resolver.PutFirewallRuleGroupPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutFirewallRuleGroupPolicy indicates an expected call of PutFirewallRuleGroupPolicy
+func (mr *MockRoute53ResolverAPIMockRecorder) PutFirewallRuleGroupPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFirewallRuleGroupPolicy", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).PutFirewallRuleGroupPolicy), arg0)
+}
+
+// PutFirewallRuleGroupPolicyRequest mocks base method
+func (m *MockRoute53ResolverAPI) PutFirewallRuleGroupPolicyRequest(arg0 *route53resolver.PutFirewallRuleGroupPolicyInput) (*request.Request, *route53resolver.PutFirewallRuleGroupPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutFirewallRuleGroupPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.PutFirewallRuleGroupPolicyOutput)
+	return ret0, ret1
+}
+
+// PutFirewallRuleGroupPolicyRequest indicates an expected call of PutFirewallRuleGroupPolicyRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) PutFirewallRuleGroupPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFirewallRuleGroupPolicyRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).PutFirewallRuleGroupPolicyRequest), arg0)
+}
+
+// PutFirewallRuleGroupPolicyWithContext mocks base method
+func (m *MockRoute53ResolverAPI) PutFirewallRuleGroupPolicyWithContext(arg0 context.Context, arg1 *route53resolver.PutFirewallRuleGroupPolicyInput, arg2 ...request.Option) (*route53resolver.PutFirewallRuleGroupPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutFirewallRuleGroupPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.PutFirewallRuleGroupPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutFirewallRuleGroupPolicyWithContext indicates an expected call of PutFirewallRuleGroupPolicyWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) PutFirewallRuleGroupPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFirewallRuleGroupPolicyWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).PutFirewallRuleGroupPolicyWithContext), varargs...)
+}
+
 // PutResolverQueryLogConfigPolicy mocks base method
 func (m *MockRoute53ResolverAPI) PutResolverQueryLogConfigPolicy(arg0 *route53resolver.PutResolverQueryLogConfigPolicyInput) (*route53resolver.PutResolverQueryLogConfigPolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -1897,6 +3145,206 @@ func (mr *MockRoute53ResolverAPIMockRecorder) UntagResourceWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateFirewallConfig mocks base method
+func (m *MockRoute53ResolverAPI) UpdateFirewallConfig(arg0 *route53resolver.UpdateFirewallConfigInput) (*route53resolver.UpdateFirewallConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFirewallConfig", arg0)
+	ret0, _ := ret[0].(*route53resolver.UpdateFirewallConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFirewallConfig indicates an expected call of UpdateFirewallConfig
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateFirewallConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallConfig", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateFirewallConfig), arg0)
+}
+
+// UpdateFirewallConfigRequest mocks base method
+func (m *MockRoute53ResolverAPI) UpdateFirewallConfigRequest(arg0 *route53resolver.UpdateFirewallConfigInput) (*request.Request, *route53resolver.UpdateFirewallConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFirewallConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.UpdateFirewallConfigOutput)
+	return ret0, ret1
+}
+
+// UpdateFirewallConfigRequest indicates an expected call of UpdateFirewallConfigRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateFirewallConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallConfigRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateFirewallConfigRequest), arg0)
+}
+
+// UpdateFirewallConfigWithContext mocks base method
+func (m *MockRoute53ResolverAPI) UpdateFirewallConfigWithContext(arg0 context.Context, arg1 *route53resolver.UpdateFirewallConfigInput, arg2 ...request.Option) (*route53resolver.UpdateFirewallConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFirewallConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.UpdateFirewallConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFirewallConfigWithContext indicates an expected call of UpdateFirewallConfigWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateFirewallConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallConfigWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateFirewallConfigWithContext), varargs...)
+}
+
+// UpdateFirewallDomains mocks base method
+func (m *MockRoute53ResolverAPI) UpdateFirewallDomains(arg0 *route53resolver.UpdateFirewallDomainsInput) (*route53resolver.UpdateFirewallDomainsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFirewallDomains", arg0)
+	ret0, _ := ret[0].(*route53resolver.UpdateFirewallDomainsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFirewallDomains indicates an expected call of UpdateFirewallDomains
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateFirewallDomains(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallDomains", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateFirewallDomains), arg0)
+}
+
+// UpdateFirewallDomainsRequest mocks base method
+func (m *MockRoute53ResolverAPI) UpdateFirewallDomainsRequest(arg0 *route53resolver.UpdateFirewallDomainsInput) (*request.Request, *route53resolver.UpdateFirewallDomainsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFirewallDomainsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.UpdateFirewallDomainsOutput)
+	return ret0, ret1
+}
+
+// UpdateFirewallDomainsRequest indicates an expected call of UpdateFirewallDomainsRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateFirewallDomainsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallDomainsRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateFirewallDomainsRequest), arg0)
+}
+
+// UpdateFirewallDomainsWithContext mocks base method
+func (m *MockRoute53ResolverAPI) UpdateFirewallDomainsWithContext(arg0 context.Context, arg1 *route53resolver.UpdateFirewallDomainsInput, arg2 ...request.Option) (*route53resolver.UpdateFirewallDomainsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFirewallDomainsWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.UpdateFirewallDomainsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFirewallDomainsWithContext indicates an expected call of UpdateFirewallDomainsWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateFirewallDomainsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallDomainsWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateFirewallDomainsWithContext), varargs...)
+}
+
+// UpdateFirewallRule mocks base method
+func (m *MockRoute53ResolverAPI) UpdateFirewallRule(arg0 *route53resolver.UpdateFirewallRuleInput) (*route53resolver.UpdateFirewallRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFirewallRule", arg0)
+	ret0, _ := ret[0].(*route53resolver.UpdateFirewallRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFirewallRule indicates an expected call of UpdateFirewallRule
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateFirewallRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallRule", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateFirewallRule), arg0)
+}
+
+// UpdateFirewallRuleGroupAssociation mocks base method
+func (m *MockRoute53ResolverAPI) UpdateFirewallRuleGroupAssociation(arg0 *route53resolver.UpdateFirewallRuleGroupAssociationInput) (*route53resolver.UpdateFirewallRuleGroupAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFirewallRuleGroupAssociation", arg0)
+	ret0, _ := ret[0].(*route53resolver.UpdateFirewallRuleGroupAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFirewallRuleGroupAssociation indicates an expected call of UpdateFirewallRuleGroupAssociation
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateFirewallRuleGroupAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallRuleGroupAssociation", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateFirewallRuleGroupAssociation), arg0)
+}
+
+// UpdateFirewallRuleGroupAssociationRequest mocks base method
+func (m *MockRoute53ResolverAPI) UpdateFirewallRuleGroupAssociationRequest(arg0 *route53resolver.UpdateFirewallRuleGroupAssociationInput) (*request.Request, *route53resolver.UpdateFirewallRuleGroupAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFirewallRuleGroupAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.UpdateFirewallRuleGroupAssociationOutput)
+	return ret0, ret1
+}
+
+// UpdateFirewallRuleGroupAssociationRequest indicates an expected call of UpdateFirewallRuleGroupAssociationRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateFirewallRuleGroupAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallRuleGroupAssociationRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateFirewallRuleGroupAssociationRequest), arg0)
+}
+
+// UpdateFirewallRuleGroupAssociationWithContext mocks base method
+func (m *MockRoute53ResolverAPI) UpdateFirewallRuleGroupAssociationWithContext(arg0 context.Context, arg1 *route53resolver.UpdateFirewallRuleGroupAssociationInput, arg2 ...request.Option) (*route53resolver.UpdateFirewallRuleGroupAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFirewallRuleGroupAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.UpdateFirewallRuleGroupAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFirewallRuleGroupAssociationWithContext indicates an expected call of UpdateFirewallRuleGroupAssociationWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateFirewallRuleGroupAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallRuleGroupAssociationWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateFirewallRuleGroupAssociationWithContext), varargs...)
+}
+
+// UpdateFirewallRuleRequest mocks base method
+func (m *MockRoute53ResolverAPI) UpdateFirewallRuleRequest(arg0 *route53resolver.UpdateFirewallRuleInput) (*request.Request, *route53resolver.UpdateFirewallRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFirewallRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.UpdateFirewallRuleOutput)
+	return ret0, ret1
+}
+
+// UpdateFirewallRuleRequest indicates an expected call of UpdateFirewallRuleRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateFirewallRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallRuleRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateFirewallRuleRequest), arg0)
+}
+
+// UpdateFirewallRuleWithContext mocks base method
+func (m *MockRoute53ResolverAPI) UpdateFirewallRuleWithContext(arg0 context.Context, arg1 *route53resolver.UpdateFirewallRuleInput, arg2 ...request.Option) (*route53resolver.UpdateFirewallRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFirewallRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.UpdateFirewallRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFirewallRuleWithContext indicates an expected call of UpdateFirewallRuleWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateFirewallRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallRuleWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateFirewallRuleWithContext), varargs...)
 }
 
 // UpdateResolverDnssecConfig mocks base method

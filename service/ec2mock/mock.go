@@ -19156,6 +19156,56 @@ func (mr *MockEC2APIMockRecorder) GetEbsEncryptionByDefaultWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEbsEncryptionByDefaultWithContext", reflect.TypeOf((*MockEC2API)(nil).GetEbsEncryptionByDefaultWithContext), varargs...)
 }
 
+// GetFlowLogsIntegrationTemplate mocks base method
+func (m *MockEC2API) GetFlowLogsIntegrationTemplate(arg0 *ec2.GetFlowLogsIntegrationTemplateInput) (*ec2.GetFlowLogsIntegrationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFlowLogsIntegrationTemplate", arg0)
+	ret0, _ := ret[0].(*ec2.GetFlowLogsIntegrationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFlowLogsIntegrationTemplate indicates an expected call of GetFlowLogsIntegrationTemplate
+func (mr *MockEC2APIMockRecorder) GetFlowLogsIntegrationTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFlowLogsIntegrationTemplate", reflect.TypeOf((*MockEC2API)(nil).GetFlowLogsIntegrationTemplate), arg0)
+}
+
+// GetFlowLogsIntegrationTemplateRequest mocks base method
+func (m *MockEC2API) GetFlowLogsIntegrationTemplateRequest(arg0 *ec2.GetFlowLogsIntegrationTemplateInput) (*request.Request, *ec2.GetFlowLogsIntegrationTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFlowLogsIntegrationTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.GetFlowLogsIntegrationTemplateOutput)
+	return ret0, ret1
+}
+
+// GetFlowLogsIntegrationTemplateRequest indicates an expected call of GetFlowLogsIntegrationTemplateRequest
+func (mr *MockEC2APIMockRecorder) GetFlowLogsIntegrationTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFlowLogsIntegrationTemplateRequest", reflect.TypeOf((*MockEC2API)(nil).GetFlowLogsIntegrationTemplateRequest), arg0)
+}
+
+// GetFlowLogsIntegrationTemplateWithContext mocks base method
+func (m *MockEC2API) GetFlowLogsIntegrationTemplateWithContext(arg0 context.Context, arg1 *ec2.GetFlowLogsIntegrationTemplateInput, arg2 ...request.Option) (*ec2.GetFlowLogsIntegrationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFlowLogsIntegrationTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.GetFlowLogsIntegrationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFlowLogsIntegrationTemplateWithContext indicates an expected call of GetFlowLogsIntegrationTemplateWithContext
+func (mr *MockEC2APIMockRecorder) GetFlowLogsIntegrationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFlowLogsIntegrationTemplateWithContext", reflect.TypeOf((*MockEC2API)(nil).GetFlowLogsIntegrationTemplateWithContext), varargs...)
+}
+
 // GetGroupsForCapacityReservation mocks base method
 func (m *MockEC2API) GetGroupsForCapacityReservation(arg0 *ec2.GetGroupsForCapacityReservationInput) (*ec2.GetGroupsForCapacityReservationOutput, error) {
 	m.ctrl.T.Helper()
