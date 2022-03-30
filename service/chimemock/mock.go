@@ -285,6 +285,56 @@ func (mr *MockChimeAPIMockRecorder) BatchCreateAttendeeWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateAttendeeWithContext", reflect.TypeOf((*MockChimeAPI)(nil).BatchCreateAttendeeWithContext), varargs...)
 }
 
+// BatchCreateChannelMembership mocks base method
+func (m *MockChimeAPI) BatchCreateChannelMembership(arg0 *chime.BatchCreateChannelMembershipInput) (*chime.BatchCreateChannelMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchCreateChannelMembership", arg0)
+	ret0, _ := ret[0].(*chime.BatchCreateChannelMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchCreateChannelMembership indicates an expected call of BatchCreateChannelMembership
+func (mr *MockChimeAPIMockRecorder) BatchCreateChannelMembership(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateChannelMembership", reflect.TypeOf((*MockChimeAPI)(nil).BatchCreateChannelMembership), arg0)
+}
+
+// BatchCreateChannelMembershipRequest mocks base method
+func (m *MockChimeAPI) BatchCreateChannelMembershipRequest(arg0 *chime.BatchCreateChannelMembershipInput) (*request.Request, *chime.BatchCreateChannelMembershipOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchCreateChannelMembershipRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.BatchCreateChannelMembershipOutput)
+	return ret0, ret1
+}
+
+// BatchCreateChannelMembershipRequest indicates an expected call of BatchCreateChannelMembershipRequest
+func (mr *MockChimeAPIMockRecorder) BatchCreateChannelMembershipRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateChannelMembershipRequest", reflect.TypeOf((*MockChimeAPI)(nil).BatchCreateChannelMembershipRequest), arg0)
+}
+
+// BatchCreateChannelMembershipWithContext mocks base method
+func (m *MockChimeAPI) BatchCreateChannelMembershipWithContext(arg0 context.Context, arg1 *chime.BatchCreateChannelMembershipInput, arg2 ...request.Option) (*chime.BatchCreateChannelMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchCreateChannelMembershipWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.BatchCreateChannelMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchCreateChannelMembershipWithContext indicates an expected call of BatchCreateChannelMembershipWithContext
+func (mr *MockChimeAPIMockRecorder) BatchCreateChannelMembershipWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateChannelMembershipWithContext", reflect.TypeOf((*MockChimeAPI)(nil).BatchCreateChannelMembershipWithContext), varargs...)
+}
+
 // BatchCreateRoomMembership mocks base method
 func (m *MockChimeAPI) BatchCreateRoomMembership(arg0 *chime.BatchCreateRoomMembershipInput) (*chime.BatchCreateRoomMembershipOutput, error) {
 	m.ctrl.T.Helper()
