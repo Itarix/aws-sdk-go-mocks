@@ -1134,6 +1134,89 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeConnectionsWithCo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnectionsWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeConnectionsWithContext), varargs...)
 }
 
+// DescribeEndpointSettings mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeEndpointSettings(arg0 *databasemigrationservice.DescribeEndpointSettingsInput) (*databasemigrationservice.DescribeEndpointSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEndpointSettings", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeEndpointSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEndpointSettings indicates an expected call of DescribeEndpointSettings
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEndpointSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointSettings", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeEndpointSettings), arg0)
+}
+
+// DescribeEndpointSettingsPages mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeEndpointSettingsPages(arg0 *databasemigrationservice.DescribeEndpointSettingsInput, arg1 func(*databasemigrationservice.DescribeEndpointSettingsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEndpointSettingsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeEndpointSettingsPages indicates an expected call of DescribeEndpointSettingsPages
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEndpointSettingsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointSettingsPages", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeEndpointSettingsPages), arg0, arg1)
+}
+
+// DescribeEndpointSettingsPagesWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeEndpointSettingsPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeEndpointSettingsInput, arg2 func(*databasemigrationservice.DescribeEndpointSettingsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEndpointSettingsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeEndpointSettingsPagesWithContext indicates an expected call of DescribeEndpointSettingsPagesWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEndpointSettingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointSettingsPagesWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeEndpointSettingsPagesWithContext), varargs...)
+}
+
+// DescribeEndpointSettingsRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeEndpointSettingsRequest(arg0 *databasemigrationservice.DescribeEndpointSettingsInput) (*request.Request, *databasemigrationservice.DescribeEndpointSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEndpointSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.DescribeEndpointSettingsOutput)
+	return ret0, ret1
+}
+
+// DescribeEndpointSettingsRequest indicates an expected call of DescribeEndpointSettingsRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEndpointSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointSettingsRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeEndpointSettingsRequest), arg0)
+}
+
+// DescribeEndpointSettingsWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeEndpointSettingsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeEndpointSettingsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeEndpointSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEndpointSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeEndpointSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEndpointSettingsWithContext indicates an expected call of DescribeEndpointSettingsWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEndpointSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointSettingsWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeEndpointSettingsWithContext), varargs...)
+}
+
 // DescribeEndpointTypes mocks base method
 func (m *MockDatabaseMigrationServiceAPI) DescribeEndpointTypes(arg0 *databasemigrationservice.DescribeEndpointTypesInput) (*databasemigrationservice.DescribeEndpointTypesOutput, error) {
 	m.ctrl.T.Helper()
