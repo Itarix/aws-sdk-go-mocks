@@ -935,6 +935,56 @@ func (mr *MockEMRAPIMockRecorder) DescribeStudioWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStudioWithContext", reflect.TypeOf((*MockEMRAPI)(nil).DescribeStudioWithContext), varargs...)
 }
 
+// GetAutoTerminationPolicy mocks base method
+func (m *MockEMRAPI) GetAutoTerminationPolicy(arg0 *emr.GetAutoTerminationPolicyInput) (*emr.GetAutoTerminationPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAutoTerminationPolicy", arg0)
+	ret0, _ := ret[0].(*emr.GetAutoTerminationPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAutoTerminationPolicy indicates an expected call of GetAutoTerminationPolicy
+func (mr *MockEMRAPIMockRecorder) GetAutoTerminationPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutoTerminationPolicy", reflect.TypeOf((*MockEMRAPI)(nil).GetAutoTerminationPolicy), arg0)
+}
+
+// GetAutoTerminationPolicyRequest mocks base method
+func (m *MockEMRAPI) GetAutoTerminationPolicyRequest(arg0 *emr.GetAutoTerminationPolicyInput) (*request.Request, *emr.GetAutoTerminationPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAutoTerminationPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.GetAutoTerminationPolicyOutput)
+	return ret0, ret1
+}
+
+// GetAutoTerminationPolicyRequest indicates an expected call of GetAutoTerminationPolicyRequest
+func (mr *MockEMRAPIMockRecorder) GetAutoTerminationPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutoTerminationPolicyRequest", reflect.TypeOf((*MockEMRAPI)(nil).GetAutoTerminationPolicyRequest), arg0)
+}
+
+// GetAutoTerminationPolicyWithContext mocks base method
+func (m *MockEMRAPI) GetAutoTerminationPolicyWithContext(arg0 context.Context, arg1 *emr.GetAutoTerminationPolicyInput, arg2 ...request.Option) (*emr.GetAutoTerminationPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAutoTerminationPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.GetAutoTerminationPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAutoTerminationPolicyWithContext indicates an expected call of GetAutoTerminationPolicyWithContext
+func (mr *MockEMRAPIMockRecorder) GetAutoTerminationPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutoTerminationPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).GetAutoTerminationPolicyWithContext), varargs...)
+}
+
 // GetBlockPublicAccessConfiguration mocks base method
 func (m *MockEMRAPI) GetBlockPublicAccessConfiguration(arg0 *emr.GetBlockPublicAccessConfigurationInput) (*emr.GetBlockPublicAccessConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -2198,6 +2248,56 @@ func (mr *MockEMRAPIMockRecorder) PutAutoScalingPolicyWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAutoScalingPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).PutAutoScalingPolicyWithContext), varargs...)
 }
 
+// PutAutoTerminationPolicy mocks base method
+func (m *MockEMRAPI) PutAutoTerminationPolicy(arg0 *emr.PutAutoTerminationPolicyInput) (*emr.PutAutoTerminationPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAutoTerminationPolicy", arg0)
+	ret0, _ := ret[0].(*emr.PutAutoTerminationPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAutoTerminationPolicy indicates an expected call of PutAutoTerminationPolicy
+func (mr *MockEMRAPIMockRecorder) PutAutoTerminationPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAutoTerminationPolicy", reflect.TypeOf((*MockEMRAPI)(nil).PutAutoTerminationPolicy), arg0)
+}
+
+// PutAutoTerminationPolicyRequest mocks base method
+func (m *MockEMRAPI) PutAutoTerminationPolicyRequest(arg0 *emr.PutAutoTerminationPolicyInput) (*request.Request, *emr.PutAutoTerminationPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAutoTerminationPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.PutAutoTerminationPolicyOutput)
+	return ret0, ret1
+}
+
+// PutAutoTerminationPolicyRequest indicates an expected call of PutAutoTerminationPolicyRequest
+func (mr *MockEMRAPIMockRecorder) PutAutoTerminationPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAutoTerminationPolicyRequest", reflect.TypeOf((*MockEMRAPI)(nil).PutAutoTerminationPolicyRequest), arg0)
+}
+
+// PutAutoTerminationPolicyWithContext mocks base method
+func (m *MockEMRAPI) PutAutoTerminationPolicyWithContext(arg0 context.Context, arg1 *emr.PutAutoTerminationPolicyInput, arg2 ...request.Option) (*emr.PutAutoTerminationPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAutoTerminationPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.PutAutoTerminationPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAutoTerminationPolicyWithContext indicates an expected call of PutAutoTerminationPolicyWithContext
+func (mr *MockEMRAPIMockRecorder) PutAutoTerminationPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAutoTerminationPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).PutAutoTerminationPolicyWithContext), varargs...)
+}
+
 // PutBlockPublicAccessConfiguration mocks base method
 func (m *MockEMRAPI) PutBlockPublicAccessConfiguration(arg0 *emr.PutBlockPublicAccessConfigurationInput) (*emr.PutBlockPublicAccessConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -2346,6 +2446,56 @@ func (mr *MockEMRAPIMockRecorder) RemoveAutoScalingPolicyWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveAutoScalingPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).RemoveAutoScalingPolicyWithContext), varargs...)
+}
+
+// RemoveAutoTerminationPolicy mocks base method
+func (m *MockEMRAPI) RemoveAutoTerminationPolicy(arg0 *emr.RemoveAutoTerminationPolicyInput) (*emr.RemoveAutoTerminationPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveAutoTerminationPolicy", arg0)
+	ret0, _ := ret[0].(*emr.RemoveAutoTerminationPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveAutoTerminationPolicy indicates an expected call of RemoveAutoTerminationPolicy
+func (mr *MockEMRAPIMockRecorder) RemoveAutoTerminationPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveAutoTerminationPolicy", reflect.TypeOf((*MockEMRAPI)(nil).RemoveAutoTerminationPolicy), arg0)
+}
+
+// RemoveAutoTerminationPolicyRequest mocks base method
+func (m *MockEMRAPI) RemoveAutoTerminationPolicyRequest(arg0 *emr.RemoveAutoTerminationPolicyInput) (*request.Request, *emr.RemoveAutoTerminationPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveAutoTerminationPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.RemoveAutoTerminationPolicyOutput)
+	return ret0, ret1
+}
+
+// RemoveAutoTerminationPolicyRequest indicates an expected call of RemoveAutoTerminationPolicyRequest
+func (mr *MockEMRAPIMockRecorder) RemoveAutoTerminationPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveAutoTerminationPolicyRequest", reflect.TypeOf((*MockEMRAPI)(nil).RemoveAutoTerminationPolicyRequest), arg0)
+}
+
+// RemoveAutoTerminationPolicyWithContext mocks base method
+func (m *MockEMRAPI) RemoveAutoTerminationPolicyWithContext(arg0 context.Context, arg1 *emr.RemoveAutoTerminationPolicyInput, arg2 ...request.Option) (*emr.RemoveAutoTerminationPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveAutoTerminationPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.RemoveAutoTerminationPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveAutoTerminationPolicyWithContext indicates an expected call of RemoveAutoTerminationPolicyWithContext
+func (mr *MockEMRAPIMockRecorder) RemoveAutoTerminationPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveAutoTerminationPolicyWithContext", reflect.TypeOf((*MockEMRAPI)(nil).RemoveAutoTerminationPolicyWithContext), varargs...)
 }
 
 // RemoveManagedScalingPolicy mocks base method
