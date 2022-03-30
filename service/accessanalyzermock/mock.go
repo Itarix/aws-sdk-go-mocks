@@ -85,6 +85,56 @@ func (mr *MockAccessAnalyzerAPIMockRecorder) ApplyArchiveRuleWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ApplyArchiveRuleWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ApplyArchiveRuleWithContext), varargs...)
 }
 
+// CancelPolicyGeneration mocks base method
+func (m *MockAccessAnalyzerAPI) CancelPolicyGeneration(arg0 *accessanalyzer.CancelPolicyGenerationInput) (*accessanalyzer.CancelPolicyGenerationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelPolicyGeneration", arg0)
+	ret0, _ := ret[0].(*accessanalyzer.CancelPolicyGenerationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelPolicyGeneration indicates an expected call of CancelPolicyGeneration
+func (mr *MockAccessAnalyzerAPIMockRecorder) CancelPolicyGeneration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelPolicyGeneration", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).CancelPolicyGeneration), arg0)
+}
+
+// CancelPolicyGenerationRequest mocks base method
+func (m *MockAccessAnalyzerAPI) CancelPolicyGenerationRequest(arg0 *accessanalyzer.CancelPolicyGenerationInput) (*request.Request, *accessanalyzer.CancelPolicyGenerationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelPolicyGenerationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*accessanalyzer.CancelPolicyGenerationOutput)
+	return ret0, ret1
+}
+
+// CancelPolicyGenerationRequest indicates an expected call of CancelPolicyGenerationRequest
+func (mr *MockAccessAnalyzerAPIMockRecorder) CancelPolicyGenerationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelPolicyGenerationRequest", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).CancelPolicyGenerationRequest), arg0)
+}
+
+// CancelPolicyGenerationWithContext mocks base method
+func (m *MockAccessAnalyzerAPI) CancelPolicyGenerationWithContext(arg0 context.Context, arg1 *accessanalyzer.CancelPolicyGenerationInput, arg2 ...request.Option) (*accessanalyzer.CancelPolicyGenerationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelPolicyGenerationWithContext", varargs...)
+	ret0, _ := ret[0].(*accessanalyzer.CancelPolicyGenerationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelPolicyGenerationWithContext indicates an expected call of CancelPolicyGenerationWithContext
+func (mr *MockAccessAnalyzerAPIMockRecorder) CancelPolicyGenerationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelPolicyGenerationWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).CancelPolicyGenerationWithContext), varargs...)
+}
+
 // CreateAccessPreview mocks base method
 func (m *MockAccessAnalyzerAPI) CreateAccessPreview(arg0 *accessanalyzer.CreateAccessPreviewInput) (*accessanalyzer.CreateAccessPreviewOutput, error) {
 	m.ctrl.T.Helper()
@@ -585,6 +635,56 @@ func (mr *MockAccessAnalyzerAPIMockRecorder) GetFindingWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFindingWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).GetFindingWithContext), varargs...)
 }
 
+// GetGeneratedPolicy mocks base method
+func (m *MockAccessAnalyzerAPI) GetGeneratedPolicy(arg0 *accessanalyzer.GetGeneratedPolicyInput) (*accessanalyzer.GetGeneratedPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetGeneratedPolicy", arg0)
+	ret0, _ := ret[0].(*accessanalyzer.GetGeneratedPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetGeneratedPolicy indicates an expected call of GetGeneratedPolicy
+func (mr *MockAccessAnalyzerAPIMockRecorder) GetGeneratedPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGeneratedPolicy", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).GetGeneratedPolicy), arg0)
+}
+
+// GetGeneratedPolicyRequest mocks base method
+func (m *MockAccessAnalyzerAPI) GetGeneratedPolicyRequest(arg0 *accessanalyzer.GetGeneratedPolicyInput) (*request.Request, *accessanalyzer.GetGeneratedPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetGeneratedPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*accessanalyzer.GetGeneratedPolicyOutput)
+	return ret0, ret1
+}
+
+// GetGeneratedPolicyRequest indicates an expected call of GetGeneratedPolicyRequest
+func (mr *MockAccessAnalyzerAPIMockRecorder) GetGeneratedPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGeneratedPolicyRequest", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).GetGeneratedPolicyRequest), arg0)
+}
+
+// GetGeneratedPolicyWithContext mocks base method
+func (m *MockAccessAnalyzerAPI) GetGeneratedPolicyWithContext(arg0 context.Context, arg1 *accessanalyzer.GetGeneratedPolicyInput, arg2 ...request.Option) (*accessanalyzer.GetGeneratedPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetGeneratedPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*accessanalyzer.GetGeneratedPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetGeneratedPolicyWithContext indicates an expected call of GetGeneratedPolicyWithContext
+func (mr *MockAccessAnalyzerAPIMockRecorder) GetGeneratedPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGeneratedPolicyWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).GetGeneratedPolicyWithContext), varargs...)
+}
+
 // ListAccessPreviewFindings mocks base method
 func (m *MockAccessAnalyzerAPI) ListAccessPreviewFindings(arg0 *accessanalyzer.ListAccessPreviewFindingsInput) (*accessanalyzer.ListAccessPreviewFindingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1083,6 +1183,89 @@ func (mr *MockAccessAnalyzerAPIMockRecorder) ListFindingsWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFindingsWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListFindingsWithContext), varargs...)
 }
 
+// ListPolicyGenerations mocks base method
+func (m *MockAccessAnalyzerAPI) ListPolicyGenerations(arg0 *accessanalyzer.ListPolicyGenerationsInput) (*accessanalyzer.ListPolicyGenerationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPolicyGenerations", arg0)
+	ret0, _ := ret[0].(*accessanalyzer.ListPolicyGenerationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPolicyGenerations indicates an expected call of ListPolicyGenerations
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListPolicyGenerations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPolicyGenerations", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListPolicyGenerations), arg0)
+}
+
+// ListPolicyGenerationsPages mocks base method
+func (m *MockAccessAnalyzerAPI) ListPolicyGenerationsPages(arg0 *accessanalyzer.ListPolicyGenerationsInput, arg1 func(*accessanalyzer.ListPolicyGenerationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPolicyGenerationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPolicyGenerationsPages indicates an expected call of ListPolicyGenerationsPages
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListPolicyGenerationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPolicyGenerationsPages", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListPolicyGenerationsPages), arg0, arg1)
+}
+
+// ListPolicyGenerationsPagesWithContext mocks base method
+func (m *MockAccessAnalyzerAPI) ListPolicyGenerationsPagesWithContext(arg0 context.Context, arg1 *accessanalyzer.ListPolicyGenerationsInput, arg2 func(*accessanalyzer.ListPolicyGenerationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPolicyGenerationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPolicyGenerationsPagesWithContext indicates an expected call of ListPolicyGenerationsPagesWithContext
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListPolicyGenerationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPolicyGenerationsPagesWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListPolicyGenerationsPagesWithContext), varargs...)
+}
+
+// ListPolicyGenerationsRequest mocks base method
+func (m *MockAccessAnalyzerAPI) ListPolicyGenerationsRequest(arg0 *accessanalyzer.ListPolicyGenerationsInput) (*request.Request, *accessanalyzer.ListPolicyGenerationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPolicyGenerationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*accessanalyzer.ListPolicyGenerationsOutput)
+	return ret0, ret1
+}
+
+// ListPolicyGenerationsRequest indicates an expected call of ListPolicyGenerationsRequest
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListPolicyGenerationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPolicyGenerationsRequest", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListPolicyGenerationsRequest), arg0)
+}
+
+// ListPolicyGenerationsWithContext mocks base method
+func (m *MockAccessAnalyzerAPI) ListPolicyGenerationsWithContext(arg0 context.Context, arg1 *accessanalyzer.ListPolicyGenerationsInput, arg2 ...request.Option) (*accessanalyzer.ListPolicyGenerationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPolicyGenerationsWithContext", varargs...)
+	ret0, _ := ret[0].(*accessanalyzer.ListPolicyGenerationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPolicyGenerationsWithContext indicates an expected call of ListPolicyGenerationsWithContext
+func (mr *MockAccessAnalyzerAPIMockRecorder) ListPolicyGenerationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPolicyGenerationsWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListPolicyGenerationsWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockAccessAnalyzerAPI) ListTagsForResource(arg0 *accessanalyzer.ListTagsForResourceInput) (*accessanalyzer.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1131,6 +1314,56 @@ func (mr *MockAccessAnalyzerAPIMockRecorder) ListTagsForResourceWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// StartPolicyGeneration mocks base method
+func (m *MockAccessAnalyzerAPI) StartPolicyGeneration(arg0 *accessanalyzer.StartPolicyGenerationInput) (*accessanalyzer.StartPolicyGenerationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartPolicyGeneration", arg0)
+	ret0, _ := ret[0].(*accessanalyzer.StartPolicyGenerationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartPolicyGeneration indicates an expected call of StartPolicyGeneration
+func (mr *MockAccessAnalyzerAPIMockRecorder) StartPolicyGeneration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartPolicyGeneration", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).StartPolicyGeneration), arg0)
+}
+
+// StartPolicyGenerationRequest mocks base method
+func (m *MockAccessAnalyzerAPI) StartPolicyGenerationRequest(arg0 *accessanalyzer.StartPolicyGenerationInput) (*request.Request, *accessanalyzer.StartPolicyGenerationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartPolicyGenerationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*accessanalyzer.StartPolicyGenerationOutput)
+	return ret0, ret1
+}
+
+// StartPolicyGenerationRequest indicates an expected call of StartPolicyGenerationRequest
+func (mr *MockAccessAnalyzerAPIMockRecorder) StartPolicyGenerationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartPolicyGenerationRequest", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).StartPolicyGenerationRequest), arg0)
+}
+
+// StartPolicyGenerationWithContext mocks base method
+func (m *MockAccessAnalyzerAPI) StartPolicyGenerationWithContext(arg0 context.Context, arg1 *accessanalyzer.StartPolicyGenerationInput, arg2 ...request.Option) (*accessanalyzer.StartPolicyGenerationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartPolicyGenerationWithContext", varargs...)
+	ret0, _ := ret[0].(*accessanalyzer.StartPolicyGenerationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartPolicyGenerationWithContext indicates an expected call of StartPolicyGenerationWithContext
+func (mr *MockAccessAnalyzerAPIMockRecorder) StartPolicyGenerationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartPolicyGenerationWithContext", reflect.TypeOf((*MockAccessAnalyzerAPI)(nil).StartPolicyGenerationWithContext), varargs...)
 }
 
 // StartResourceScan mocks base method

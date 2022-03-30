@@ -185,6 +185,56 @@ func (mr *MockIVSAPIMockRecorder) CreateChannelWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelWithContext", reflect.TypeOf((*MockIVSAPI)(nil).CreateChannelWithContext), varargs...)
 }
 
+// CreateRecordingConfiguration mocks base method
+func (m *MockIVSAPI) CreateRecordingConfiguration(arg0 *ivs.CreateRecordingConfigurationInput) (*ivs.CreateRecordingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRecordingConfiguration", arg0)
+	ret0, _ := ret[0].(*ivs.CreateRecordingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRecordingConfiguration indicates an expected call of CreateRecordingConfiguration
+func (mr *MockIVSAPIMockRecorder) CreateRecordingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRecordingConfiguration", reflect.TypeOf((*MockIVSAPI)(nil).CreateRecordingConfiguration), arg0)
+}
+
+// CreateRecordingConfigurationRequest mocks base method
+func (m *MockIVSAPI) CreateRecordingConfigurationRequest(arg0 *ivs.CreateRecordingConfigurationInput) (*request.Request, *ivs.CreateRecordingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRecordingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivs.CreateRecordingConfigurationOutput)
+	return ret0, ret1
+}
+
+// CreateRecordingConfigurationRequest indicates an expected call of CreateRecordingConfigurationRequest
+func (mr *MockIVSAPIMockRecorder) CreateRecordingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRecordingConfigurationRequest", reflect.TypeOf((*MockIVSAPI)(nil).CreateRecordingConfigurationRequest), arg0)
+}
+
+// CreateRecordingConfigurationWithContext mocks base method
+func (m *MockIVSAPI) CreateRecordingConfigurationWithContext(arg0 context.Context, arg1 *ivs.CreateRecordingConfigurationInput, arg2 ...request.Option) (*ivs.CreateRecordingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRecordingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*ivs.CreateRecordingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRecordingConfigurationWithContext indicates an expected call of CreateRecordingConfigurationWithContext
+func (mr *MockIVSAPIMockRecorder) CreateRecordingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRecordingConfigurationWithContext", reflect.TypeOf((*MockIVSAPI)(nil).CreateRecordingConfigurationWithContext), varargs...)
+}
+
 // CreateStreamKey mocks base method
 func (m *MockIVSAPI) CreateStreamKey(arg0 *ivs.CreateStreamKeyInput) (*ivs.CreateStreamKeyOutput, error) {
 	m.ctrl.T.Helper()
@@ -335,6 +385,56 @@ func (mr *MockIVSAPIMockRecorder) DeletePlaybackKeyPairWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePlaybackKeyPairWithContext", reflect.TypeOf((*MockIVSAPI)(nil).DeletePlaybackKeyPairWithContext), varargs...)
 }
 
+// DeleteRecordingConfiguration mocks base method
+func (m *MockIVSAPI) DeleteRecordingConfiguration(arg0 *ivs.DeleteRecordingConfigurationInput) (*ivs.DeleteRecordingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRecordingConfiguration", arg0)
+	ret0, _ := ret[0].(*ivs.DeleteRecordingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRecordingConfiguration indicates an expected call of DeleteRecordingConfiguration
+func (mr *MockIVSAPIMockRecorder) DeleteRecordingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRecordingConfiguration", reflect.TypeOf((*MockIVSAPI)(nil).DeleteRecordingConfiguration), arg0)
+}
+
+// DeleteRecordingConfigurationRequest mocks base method
+func (m *MockIVSAPI) DeleteRecordingConfigurationRequest(arg0 *ivs.DeleteRecordingConfigurationInput) (*request.Request, *ivs.DeleteRecordingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRecordingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivs.DeleteRecordingConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteRecordingConfigurationRequest indicates an expected call of DeleteRecordingConfigurationRequest
+func (mr *MockIVSAPIMockRecorder) DeleteRecordingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRecordingConfigurationRequest", reflect.TypeOf((*MockIVSAPI)(nil).DeleteRecordingConfigurationRequest), arg0)
+}
+
+// DeleteRecordingConfigurationWithContext mocks base method
+func (m *MockIVSAPI) DeleteRecordingConfigurationWithContext(arg0 context.Context, arg1 *ivs.DeleteRecordingConfigurationInput, arg2 ...request.Option) (*ivs.DeleteRecordingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRecordingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*ivs.DeleteRecordingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRecordingConfigurationWithContext indicates an expected call of DeleteRecordingConfigurationWithContext
+func (mr *MockIVSAPIMockRecorder) DeleteRecordingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRecordingConfigurationWithContext", reflect.TypeOf((*MockIVSAPI)(nil).DeleteRecordingConfigurationWithContext), varargs...)
+}
+
 // DeleteStreamKey mocks base method
 func (m *MockIVSAPI) DeleteStreamKey(arg0 *ivs.DeleteStreamKeyInput) (*ivs.DeleteStreamKeyOutput, error) {
 	m.ctrl.T.Helper()
@@ -483,6 +583,56 @@ func (mr *MockIVSAPIMockRecorder) GetPlaybackKeyPairWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPlaybackKeyPairWithContext", reflect.TypeOf((*MockIVSAPI)(nil).GetPlaybackKeyPairWithContext), varargs...)
+}
+
+// GetRecordingConfiguration mocks base method
+func (m *MockIVSAPI) GetRecordingConfiguration(arg0 *ivs.GetRecordingConfigurationInput) (*ivs.GetRecordingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRecordingConfiguration", arg0)
+	ret0, _ := ret[0].(*ivs.GetRecordingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRecordingConfiguration indicates an expected call of GetRecordingConfiguration
+func (mr *MockIVSAPIMockRecorder) GetRecordingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRecordingConfiguration", reflect.TypeOf((*MockIVSAPI)(nil).GetRecordingConfiguration), arg0)
+}
+
+// GetRecordingConfigurationRequest mocks base method
+func (m *MockIVSAPI) GetRecordingConfigurationRequest(arg0 *ivs.GetRecordingConfigurationInput) (*request.Request, *ivs.GetRecordingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRecordingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivs.GetRecordingConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetRecordingConfigurationRequest indicates an expected call of GetRecordingConfigurationRequest
+func (mr *MockIVSAPIMockRecorder) GetRecordingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRecordingConfigurationRequest", reflect.TypeOf((*MockIVSAPI)(nil).GetRecordingConfigurationRequest), arg0)
+}
+
+// GetRecordingConfigurationWithContext mocks base method
+func (m *MockIVSAPI) GetRecordingConfigurationWithContext(arg0 context.Context, arg1 *ivs.GetRecordingConfigurationInput, arg2 ...request.Option) (*ivs.GetRecordingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRecordingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*ivs.GetRecordingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRecordingConfigurationWithContext indicates an expected call of GetRecordingConfigurationWithContext
+func (mr *MockIVSAPIMockRecorder) GetRecordingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRecordingConfigurationWithContext", reflect.TypeOf((*MockIVSAPI)(nil).GetRecordingConfigurationWithContext), varargs...)
 }
 
 // GetStream mocks base method
@@ -799,6 +949,89 @@ func (mr *MockIVSAPIMockRecorder) ListPlaybackKeyPairsWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPlaybackKeyPairsWithContext", reflect.TypeOf((*MockIVSAPI)(nil).ListPlaybackKeyPairsWithContext), varargs...)
+}
+
+// ListRecordingConfigurations mocks base method
+func (m *MockIVSAPI) ListRecordingConfigurations(arg0 *ivs.ListRecordingConfigurationsInput) (*ivs.ListRecordingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRecordingConfigurations", arg0)
+	ret0, _ := ret[0].(*ivs.ListRecordingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRecordingConfigurations indicates an expected call of ListRecordingConfigurations
+func (mr *MockIVSAPIMockRecorder) ListRecordingConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecordingConfigurations", reflect.TypeOf((*MockIVSAPI)(nil).ListRecordingConfigurations), arg0)
+}
+
+// ListRecordingConfigurationsPages mocks base method
+func (m *MockIVSAPI) ListRecordingConfigurationsPages(arg0 *ivs.ListRecordingConfigurationsInput, arg1 func(*ivs.ListRecordingConfigurationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRecordingConfigurationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRecordingConfigurationsPages indicates an expected call of ListRecordingConfigurationsPages
+func (mr *MockIVSAPIMockRecorder) ListRecordingConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecordingConfigurationsPages", reflect.TypeOf((*MockIVSAPI)(nil).ListRecordingConfigurationsPages), arg0, arg1)
+}
+
+// ListRecordingConfigurationsPagesWithContext mocks base method
+func (m *MockIVSAPI) ListRecordingConfigurationsPagesWithContext(arg0 context.Context, arg1 *ivs.ListRecordingConfigurationsInput, arg2 func(*ivs.ListRecordingConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRecordingConfigurationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRecordingConfigurationsPagesWithContext indicates an expected call of ListRecordingConfigurationsPagesWithContext
+func (mr *MockIVSAPIMockRecorder) ListRecordingConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecordingConfigurationsPagesWithContext", reflect.TypeOf((*MockIVSAPI)(nil).ListRecordingConfigurationsPagesWithContext), varargs...)
+}
+
+// ListRecordingConfigurationsRequest mocks base method
+func (m *MockIVSAPI) ListRecordingConfigurationsRequest(arg0 *ivs.ListRecordingConfigurationsInput) (*request.Request, *ivs.ListRecordingConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRecordingConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivs.ListRecordingConfigurationsOutput)
+	return ret0, ret1
+}
+
+// ListRecordingConfigurationsRequest indicates an expected call of ListRecordingConfigurationsRequest
+func (mr *MockIVSAPIMockRecorder) ListRecordingConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecordingConfigurationsRequest", reflect.TypeOf((*MockIVSAPI)(nil).ListRecordingConfigurationsRequest), arg0)
+}
+
+// ListRecordingConfigurationsWithContext mocks base method
+func (m *MockIVSAPI) ListRecordingConfigurationsWithContext(arg0 context.Context, arg1 *ivs.ListRecordingConfigurationsInput, arg2 ...request.Option) (*ivs.ListRecordingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRecordingConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*ivs.ListRecordingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRecordingConfigurationsWithContext indicates an expected call of ListRecordingConfigurationsWithContext
+func (mr *MockIVSAPIMockRecorder) ListRecordingConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecordingConfigurationsWithContext", reflect.TypeOf((*MockIVSAPI)(nil).ListRecordingConfigurationsWithContext), varargs...)
 }
 
 // ListStreamKeys mocks base method

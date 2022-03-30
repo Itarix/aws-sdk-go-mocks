@@ -335,6 +335,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) AssignTapePoolWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssignTapePoolWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AssignTapePoolWithContext), varargs...)
 }
 
+// AssociateFileSystem mocks base method
+func (m *MockStorageGatewayAPI) AssociateFileSystem(arg0 *storagegateway.AssociateFileSystemInput) (*storagegateway.AssociateFileSystemOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateFileSystem", arg0)
+	ret0, _ := ret[0].(*storagegateway.AssociateFileSystemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateFileSystem indicates an expected call of AssociateFileSystem
+func (mr *MockStorageGatewayAPIMockRecorder) AssociateFileSystem(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFileSystem", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AssociateFileSystem), arg0)
+}
+
+// AssociateFileSystemRequest mocks base method
+func (m *MockStorageGatewayAPI) AssociateFileSystemRequest(arg0 *storagegateway.AssociateFileSystemInput) (*request.Request, *storagegateway.AssociateFileSystemOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateFileSystemRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.AssociateFileSystemOutput)
+	return ret0, ret1
+}
+
+// AssociateFileSystemRequest indicates an expected call of AssociateFileSystemRequest
+func (mr *MockStorageGatewayAPIMockRecorder) AssociateFileSystemRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFileSystemRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AssociateFileSystemRequest), arg0)
+}
+
+// AssociateFileSystemWithContext mocks base method
+func (m *MockStorageGatewayAPI) AssociateFileSystemWithContext(arg0 context.Context, arg1 *storagegateway.AssociateFileSystemInput, arg2 ...request.Option) (*storagegateway.AssociateFileSystemOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateFileSystemWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.AssociateFileSystemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateFileSystemWithContext indicates an expected call of AssociateFileSystemWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) AssociateFileSystemWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFileSystemWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).AssociateFileSystemWithContext), varargs...)
+}
+
 // AttachVolume mocks base method
 func (m *MockStorageGatewayAPI) AttachVolume(arg0 *storagegateway.AttachVolumeInput) (*storagegateway.AttachVolumeOutput, error) {
 	m.ctrl.T.Helper()
@@ -1735,6 +1785,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) DescribeChapCredentialsWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChapCredentialsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeChapCredentialsWithContext), varargs...)
 }
 
+// DescribeFileSystemAssociations mocks base method
+func (m *MockStorageGatewayAPI) DescribeFileSystemAssociations(arg0 *storagegateway.DescribeFileSystemAssociationsInput) (*storagegateway.DescribeFileSystemAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFileSystemAssociations", arg0)
+	ret0, _ := ret[0].(*storagegateway.DescribeFileSystemAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFileSystemAssociations indicates an expected call of DescribeFileSystemAssociations
+func (mr *MockStorageGatewayAPIMockRecorder) DescribeFileSystemAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemAssociations", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeFileSystemAssociations), arg0)
+}
+
+// DescribeFileSystemAssociationsRequest mocks base method
+func (m *MockStorageGatewayAPI) DescribeFileSystemAssociationsRequest(arg0 *storagegateway.DescribeFileSystemAssociationsInput) (*request.Request, *storagegateway.DescribeFileSystemAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFileSystemAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.DescribeFileSystemAssociationsOutput)
+	return ret0, ret1
+}
+
+// DescribeFileSystemAssociationsRequest indicates an expected call of DescribeFileSystemAssociationsRequest
+func (mr *MockStorageGatewayAPIMockRecorder) DescribeFileSystemAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemAssociationsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeFileSystemAssociationsRequest), arg0)
+}
+
+// DescribeFileSystemAssociationsWithContext mocks base method
+func (m *MockStorageGatewayAPI) DescribeFileSystemAssociationsWithContext(arg0 context.Context, arg1 *storagegateway.DescribeFileSystemAssociationsInput, arg2 ...request.Option) (*storagegateway.DescribeFileSystemAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFileSystemAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.DescribeFileSystemAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFileSystemAssociationsWithContext indicates an expected call of DescribeFileSystemAssociationsWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) DescribeFileSystemAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFileSystemAssociationsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DescribeFileSystemAssociationsWithContext), varargs...)
+}
+
 // DescribeGatewayInformation mocks base method
 func (m *MockStorageGatewayAPI) DescribeGatewayInformation(arg0 *storagegateway.DescribeGatewayInformationInput) (*storagegateway.DescribeGatewayInformationOutput, error) {
 	m.ctrl.T.Helper()
@@ -2617,6 +2717,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) DisableGatewayWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableGatewayWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DisableGatewayWithContext), varargs...)
 }
 
+// DisassociateFileSystem mocks base method
+func (m *MockStorageGatewayAPI) DisassociateFileSystem(arg0 *storagegateway.DisassociateFileSystemInput) (*storagegateway.DisassociateFileSystemOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFileSystem", arg0)
+	ret0, _ := ret[0].(*storagegateway.DisassociateFileSystemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFileSystem indicates an expected call of DisassociateFileSystem
+func (mr *MockStorageGatewayAPIMockRecorder) DisassociateFileSystem(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFileSystem", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DisassociateFileSystem), arg0)
+}
+
+// DisassociateFileSystemRequest mocks base method
+func (m *MockStorageGatewayAPI) DisassociateFileSystemRequest(arg0 *storagegateway.DisassociateFileSystemInput) (*request.Request, *storagegateway.DisassociateFileSystemOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFileSystemRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.DisassociateFileSystemOutput)
+	return ret0, ret1
+}
+
+// DisassociateFileSystemRequest indicates an expected call of DisassociateFileSystemRequest
+func (mr *MockStorageGatewayAPIMockRecorder) DisassociateFileSystemRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFileSystemRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DisassociateFileSystemRequest), arg0)
+}
+
+// DisassociateFileSystemWithContext mocks base method
+func (m *MockStorageGatewayAPI) DisassociateFileSystemWithContext(arg0 context.Context, arg1 *storagegateway.DisassociateFileSystemInput, arg2 ...request.Option) (*storagegateway.DisassociateFileSystemOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateFileSystemWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.DisassociateFileSystemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFileSystemWithContext indicates an expected call of DisassociateFileSystemWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) DisassociateFileSystemWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFileSystemWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).DisassociateFileSystemWithContext), varargs...)
+}
+
 // JoinDomain mocks base method
 func (m *MockStorageGatewayAPI) JoinDomain(arg0 *storagegateway.JoinDomainInput) (*storagegateway.JoinDomainOutput, error) {
 	m.ctrl.T.Helper()
@@ -2798,6 +2948,89 @@ func (mr *MockStorageGatewayAPIMockRecorder) ListFileSharesWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSharesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSharesWithContext), varargs...)
+}
+
+// ListFileSystemAssociations mocks base method
+func (m *MockStorageGatewayAPI) ListFileSystemAssociations(arg0 *storagegateway.ListFileSystemAssociationsInput) (*storagegateway.ListFileSystemAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFileSystemAssociations", arg0)
+	ret0, _ := ret[0].(*storagegateway.ListFileSystemAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFileSystemAssociations indicates an expected call of ListFileSystemAssociations
+func (mr *MockStorageGatewayAPIMockRecorder) ListFileSystemAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSystemAssociations", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSystemAssociations), arg0)
+}
+
+// ListFileSystemAssociationsPages mocks base method
+func (m *MockStorageGatewayAPI) ListFileSystemAssociationsPages(arg0 *storagegateway.ListFileSystemAssociationsInput, arg1 func(*storagegateway.ListFileSystemAssociationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFileSystemAssociationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFileSystemAssociationsPages indicates an expected call of ListFileSystemAssociationsPages
+func (mr *MockStorageGatewayAPIMockRecorder) ListFileSystemAssociationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSystemAssociationsPages", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSystemAssociationsPages), arg0, arg1)
+}
+
+// ListFileSystemAssociationsPagesWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListFileSystemAssociationsPagesWithContext(arg0 context.Context, arg1 *storagegateway.ListFileSystemAssociationsInput, arg2 func(*storagegateway.ListFileSystemAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFileSystemAssociationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFileSystemAssociationsPagesWithContext indicates an expected call of ListFileSystemAssociationsPagesWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) ListFileSystemAssociationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSystemAssociationsPagesWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSystemAssociationsPagesWithContext), varargs...)
+}
+
+// ListFileSystemAssociationsRequest mocks base method
+func (m *MockStorageGatewayAPI) ListFileSystemAssociationsRequest(arg0 *storagegateway.ListFileSystemAssociationsInput) (*request.Request, *storagegateway.ListFileSystemAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFileSystemAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.ListFileSystemAssociationsOutput)
+	return ret0, ret1
+}
+
+// ListFileSystemAssociationsRequest indicates an expected call of ListFileSystemAssociationsRequest
+func (mr *MockStorageGatewayAPIMockRecorder) ListFileSystemAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSystemAssociationsRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSystemAssociationsRequest), arg0)
+}
+
+// ListFileSystemAssociationsWithContext mocks base method
+func (m *MockStorageGatewayAPI) ListFileSystemAssociationsWithContext(arg0 context.Context, arg1 *storagegateway.ListFileSystemAssociationsInput, arg2 ...request.Option) (*storagegateway.ListFileSystemAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFileSystemAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.ListFileSystemAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFileSystemAssociationsWithContext indicates an expected call of ListFileSystemAssociationsWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) ListFileSystemAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileSystemAssociationsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).ListFileSystemAssociationsWithContext), varargs...)
 }
 
 // ListGateways mocks base method
@@ -4113,6 +4346,56 @@ func (mr *MockStorageGatewayAPIMockRecorder) UpdateChapCredentialsWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChapCredentialsWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateChapCredentialsWithContext), varargs...)
+}
+
+// UpdateFileSystemAssociation mocks base method
+func (m *MockStorageGatewayAPI) UpdateFileSystemAssociation(arg0 *storagegateway.UpdateFileSystemAssociationInput) (*storagegateway.UpdateFileSystemAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFileSystemAssociation", arg0)
+	ret0, _ := ret[0].(*storagegateway.UpdateFileSystemAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFileSystemAssociation indicates an expected call of UpdateFileSystemAssociation
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateFileSystemAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFileSystemAssociation", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateFileSystemAssociation), arg0)
+}
+
+// UpdateFileSystemAssociationRequest mocks base method
+func (m *MockStorageGatewayAPI) UpdateFileSystemAssociationRequest(arg0 *storagegateway.UpdateFileSystemAssociationInput) (*request.Request, *storagegateway.UpdateFileSystemAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFileSystemAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*storagegateway.UpdateFileSystemAssociationOutput)
+	return ret0, ret1
+}
+
+// UpdateFileSystemAssociationRequest indicates an expected call of UpdateFileSystemAssociationRequest
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateFileSystemAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFileSystemAssociationRequest", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateFileSystemAssociationRequest), arg0)
+}
+
+// UpdateFileSystemAssociationWithContext mocks base method
+func (m *MockStorageGatewayAPI) UpdateFileSystemAssociationWithContext(arg0 context.Context, arg1 *storagegateway.UpdateFileSystemAssociationInput, arg2 ...request.Option) (*storagegateway.UpdateFileSystemAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFileSystemAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*storagegateway.UpdateFileSystemAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFileSystemAssociationWithContext indicates an expected call of UpdateFileSystemAssociationWithContext
+func (mr *MockStorageGatewayAPIMockRecorder) UpdateFileSystemAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFileSystemAssociationWithContext", reflect.TypeOf((*MockStorageGatewayAPI)(nil).UpdateFileSystemAssociationWithContext), varargs...)
 }
 
 // UpdateGatewayInformation mocks base method
