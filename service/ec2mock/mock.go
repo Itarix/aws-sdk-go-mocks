@@ -14915,6 +14915,89 @@ func (mr *MockEC2APIMockRecorder) DescribeSnapshotAttributeWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotAttributeWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeSnapshotAttributeWithContext), varargs...)
 }
 
+// DescribeSnapshotTierStatus mocks base method
+func (m *MockEC2API) DescribeSnapshotTierStatus(arg0 *ec2.DescribeSnapshotTierStatusInput) (*ec2.DescribeSnapshotTierStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSnapshotTierStatus", arg0)
+	ret0, _ := ret[0].(*ec2.DescribeSnapshotTierStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSnapshotTierStatus indicates an expected call of DescribeSnapshotTierStatus
+func (mr *MockEC2APIMockRecorder) DescribeSnapshotTierStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotTierStatus", reflect.TypeOf((*MockEC2API)(nil).DescribeSnapshotTierStatus), arg0)
+}
+
+// DescribeSnapshotTierStatusPages mocks base method
+func (m *MockEC2API) DescribeSnapshotTierStatusPages(arg0 *ec2.DescribeSnapshotTierStatusInput, arg1 func(*ec2.DescribeSnapshotTierStatusOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSnapshotTierStatusPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSnapshotTierStatusPages indicates an expected call of DescribeSnapshotTierStatusPages
+func (mr *MockEC2APIMockRecorder) DescribeSnapshotTierStatusPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotTierStatusPages", reflect.TypeOf((*MockEC2API)(nil).DescribeSnapshotTierStatusPages), arg0, arg1)
+}
+
+// DescribeSnapshotTierStatusPagesWithContext mocks base method
+func (m *MockEC2API) DescribeSnapshotTierStatusPagesWithContext(arg0 context.Context, arg1 *ec2.DescribeSnapshotTierStatusInput, arg2 func(*ec2.DescribeSnapshotTierStatusOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSnapshotTierStatusPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSnapshotTierStatusPagesWithContext indicates an expected call of DescribeSnapshotTierStatusPagesWithContext
+func (mr *MockEC2APIMockRecorder) DescribeSnapshotTierStatusPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotTierStatusPagesWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeSnapshotTierStatusPagesWithContext), varargs...)
+}
+
+// DescribeSnapshotTierStatusRequest mocks base method
+func (m *MockEC2API) DescribeSnapshotTierStatusRequest(arg0 *ec2.DescribeSnapshotTierStatusInput) (*request.Request, *ec2.DescribeSnapshotTierStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSnapshotTierStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.DescribeSnapshotTierStatusOutput)
+	return ret0, ret1
+}
+
+// DescribeSnapshotTierStatusRequest indicates an expected call of DescribeSnapshotTierStatusRequest
+func (mr *MockEC2APIMockRecorder) DescribeSnapshotTierStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotTierStatusRequest", reflect.TypeOf((*MockEC2API)(nil).DescribeSnapshotTierStatusRequest), arg0)
+}
+
+// DescribeSnapshotTierStatusWithContext mocks base method
+func (m *MockEC2API) DescribeSnapshotTierStatusWithContext(arg0 context.Context, arg1 *ec2.DescribeSnapshotTierStatusInput, arg2 ...request.Option) (*ec2.DescribeSnapshotTierStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSnapshotTierStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.DescribeSnapshotTierStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSnapshotTierStatusWithContext indicates an expected call of DescribeSnapshotTierStatusWithContext
+func (mr *MockEC2APIMockRecorder) DescribeSnapshotTierStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotTierStatusWithContext", reflect.TypeOf((*MockEC2API)(nil).DescribeSnapshotTierStatusWithContext), varargs...)
+}
+
 // DescribeSnapshots mocks base method
 func (m *MockEC2API) DescribeSnapshots(arg0 *ec2.DescribeSnapshotsInput) (*ec2.DescribeSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
@@ -21884,6 +21967,89 @@ func (mr *MockEC2APIMockRecorder) ImportVolumeWithContext(arg0, arg1 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportVolumeWithContext", reflect.TypeOf((*MockEC2API)(nil).ImportVolumeWithContext), varargs...)
 }
 
+// ListSnapshotsInRecycleBin mocks base method
+func (m *MockEC2API) ListSnapshotsInRecycleBin(arg0 *ec2.ListSnapshotsInRecycleBinInput) (*ec2.ListSnapshotsInRecycleBinOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSnapshotsInRecycleBin", arg0)
+	ret0, _ := ret[0].(*ec2.ListSnapshotsInRecycleBinOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSnapshotsInRecycleBin indicates an expected call of ListSnapshotsInRecycleBin
+func (mr *MockEC2APIMockRecorder) ListSnapshotsInRecycleBin(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSnapshotsInRecycleBin", reflect.TypeOf((*MockEC2API)(nil).ListSnapshotsInRecycleBin), arg0)
+}
+
+// ListSnapshotsInRecycleBinPages mocks base method
+func (m *MockEC2API) ListSnapshotsInRecycleBinPages(arg0 *ec2.ListSnapshotsInRecycleBinInput, arg1 func(*ec2.ListSnapshotsInRecycleBinOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSnapshotsInRecycleBinPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSnapshotsInRecycleBinPages indicates an expected call of ListSnapshotsInRecycleBinPages
+func (mr *MockEC2APIMockRecorder) ListSnapshotsInRecycleBinPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSnapshotsInRecycleBinPages", reflect.TypeOf((*MockEC2API)(nil).ListSnapshotsInRecycleBinPages), arg0, arg1)
+}
+
+// ListSnapshotsInRecycleBinPagesWithContext mocks base method
+func (m *MockEC2API) ListSnapshotsInRecycleBinPagesWithContext(arg0 context.Context, arg1 *ec2.ListSnapshotsInRecycleBinInput, arg2 func(*ec2.ListSnapshotsInRecycleBinOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSnapshotsInRecycleBinPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSnapshotsInRecycleBinPagesWithContext indicates an expected call of ListSnapshotsInRecycleBinPagesWithContext
+func (mr *MockEC2APIMockRecorder) ListSnapshotsInRecycleBinPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSnapshotsInRecycleBinPagesWithContext", reflect.TypeOf((*MockEC2API)(nil).ListSnapshotsInRecycleBinPagesWithContext), varargs...)
+}
+
+// ListSnapshotsInRecycleBinRequest mocks base method
+func (m *MockEC2API) ListSnapshotsInRecycleBinRequest(arg0 *ec2.ListSnapshotsInRecycleBinInput) (*request.Request, *ec2.ListSnapshotsInRecycleBinOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSnapshotsInRecycleBinRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.ListSnapshotsInRecycleBinOutput)
+	return ret0, ret1
+}
+
+// ListSnapshotsInRecycleBinRequest indicates an expected call of ListSnapshotsInRecycleBinRequest
+func (mr *MockEC2APIMockRecorder) ListSnapshotsInRecycleBinRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSnapshotsInRecycleBinRequest", reflect.TypeOf((*MockEC2API)(nil).ListSnapshotsInRecycleBinRequest), arg0)
+}
+
+// ListSnapshotsInRecycleBinWithContext mocks base method
+func (m *MockEC2API) ListSnapshotsInRecycleBinWithContext(arg0 context.Context, arg1 *ec2.ListSnapshotsInRecycleBinInput, arg2 ...request.Option) (*ec2.ListSnapshotsInRecycleBinOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSnapshotsInRecycleBinWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.ListSnapshotsInRecycleBinOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSnapshotsInRecycleBinWithContext indicates an expected call of ListSnapshotsInRecycleBinWithContext
+func (mr *MockEC2APIMockRecorder) ListSnapshotsInRecycleBinWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSnapshotsInRecycleBinWithContext", reflect.TypeOf((*MockEC2API)(nil).ListSnapshotsInRecycleBinWithContext), varargs...)
+}
+
 // ModifyAddressAttribute mocks base method
 func (m *MockEC2API) ModifyAddressAttribute(arg0 *ec2.ModifyAddressAttributeInput) (*ec2.ModifyAddressAttributeOutput, error) {
 	m.ctrl.T.Helper()
@@ -23232,6 +23398,56 @@ func (mr *MockEC2APIMockRecorder) ModifySnapshotAttributeWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySnapshotAttributeWithContext", reflect.TypeOf((*MockEC2API)(nil).ModifySnapshotAttributeWithContext), varargs...)
+}
+
+// ModifySnapshotTier mocks base method
+func (m *MockEC2API) ModifySnapshotTier(arg0 *ec2.ModifySnapshotTierInput) (*ec2.ModifySnapshotTierOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifySnapshotTier", arg0)
+	ret0, _ := ret[0].(*ec2.ModifySnapshotTierOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifySnapshotTier indicates an expected call of ModifySnapshotTier
+func (mr *MockEC2APIMockRecorder) ModifySnapshotTier(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySnapshotTier", reflect.TypeOf((*MockEC2API)(nil).ModifySnapshotTier), arg0)
+}
+
+// ModifySnapshotTierRequest mocks base method
+func (m *MockEC2API) ModifySnapshotTierRequest(arg0 *ec2.ModifySnapshotTierInput) (*request.Request, *ec2.ModifySnapshotTierOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifySnapshotTierRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.ModifySnapshotTierOutput)
+	return ret0, ret1
+}
+
+// ModifySnapshotTierRequest indicates an expected call of ModifySnapshotTierRequest
+func (mr *MockEC2APIMockRecorder) ModifySnapshotTierRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySnapshotTierRequest", reflect.TypeOf((*MockEC2API)(nil).ModifySnapshotTierRequest), arg0)
+}
+
+// ModifySnapshotTierWithContext mocks base method
+func (m *MockEC2API) ModifySnapshotTierWithContext(arg0 context.Context, arg1 *ec2.ModifySnapshotTierInput, arg2 ...request.Option) (*ec2.ModifySnapshotTierOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifySnapshotTierWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.ModifySnapshotTierOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifySnapshotTierWithContext indicates an expected call of ModifySnapshotTierWithContext
+func (mr *MockEC2APIMockRecorder) ModifySnapshotTierWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySnapshotTierWithContext", reflect.TypeOf((*MockEC2API)(nil).ModifySnapshotTierWithContext), varargs...)
 }
 
 // ModifySpotFleetRequest mocks base method
@@ -26082,6 +26298,106 @@ func (mr *MockEC2APIMockRecorder) RestoreManagedPrefixListVersionWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreManagedPrefixListVersionWithContext", reflect.TypeOf((*MockEC2API)(nil).RestoreManagedPrefixListVersionWithContext), varargs...)
+}
+
+// RestoreSnapshotFromRecycleBin mocks base method
+func (m *MockEC2API) RestoreSnapshotFromRecycleBin(arg0 *ec2.RestoreSnapshotFromRecycleBinInput) (*ec2.RestoreSnapshotFromRecycleBinOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreSnapshotFromRecycleBin", arg0)
+	ret0, _ := ret[0].(*ec2.RestoreSnapshotFromRecycleBinOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreSnapshotFromRecycleBin indicates an expected call of RestoreSnapshotFromRecycleBin
+func (mr *MockEC2APIMockRecorder) RestoreSnapshotFromRecycleBin(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreSnapshotFromRecycleBin", reflect.TypeOf((*MockEC2API)(nil).RestoreSnapshotFromRecycleBin), arg0)
+}
+
+// RestoreSnapshotFromRecycleBinRequest mocks base method
+func (m *MockEC2API) RestoreSnapshotFromRecycleBinRequest(arg0 *ec2.RestoreSnapshotFromRecycleBinInput) (*request.Request, *ec2.RestoreSnapshotFromRecycleBinOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreSnapshotFromRecycleBinRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.RestoreSnapshotFromRecycleBinOutput)
+	return ret0, ret1
+}
+
+// RestoreSnapshotFromRecycleBinRequest indicates an expected call of RestoreSnapshotFromRecycleBinRequest
+func (mr *MockEC2APIMockRecorder) RestoreSnapshotFromRecycleBinRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreSnapshotFromRecycleBinRequest", reflect.TypeOf((*MockEC2API)(nil).RestoreSnapshotFromRecycleBinRequest), arg0)
+}
+
+// RestoreSnapshotFromRecycleBinWithContext mocks base method
+func (m *MockEC2API) RestoreSnapshotFromRecycleBinWithContext(arg0 context.Context, arg1 *ec2.RestoreSnapshotFromRecycleBinInput, arg2 ...request.Option) (*ec2.RestoreSnapshotFromRecycleBinOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RestoreSnapshotFromRecycleBinWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.RestoreSnapshotFromRecycleBinOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreSnapshotFromRecycleBinWithContext indicates an expected call of RestoreSnapshotFromRecycleBinWithContext
+func (mr *MockEC2APIMockRecorder) RestoreSnapshotFromRecycleBinWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreSnapshotFromRecycleBinWithContext", reflect.TypeOf((*MockEC2API)(nil).RestoreSnapshotFromRecycleBinWithContext), varargs...)
+}
+
+// RestoreSnapshotTier mocks base method
+func (m *MockEC2API) RestoreSnapshotTier(arg0 *ec2.RestoreSnapshotTierInput) (*ec2.RestoreSnapshotTierOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreSnapshotTier", arg0)
+	ret0, _ := ret[0].(*ec2.RestoreSnapshotTierOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreSnapshotTier indicates an expected call of RestoreSnapshotTier
+func (mr *MockEC2APIMockRecorder) RestoreSnapshotTier(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreSnapshotTier", reflect.TypeOf((*MockEC2API)(nil).RestoreSnapshotTier), arg0)
+}
+
+// RestoreSnapshotTierRequest mocks base method
+func (m *MockEC2API) RestoreSnapshotTierRequest(arg0 *ec2.RestoreSnapshotTierInput) (*request.Request, *ec2.RestoreSnapshotTierOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreSnapshotTierRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ec2.RestoreSnapshotTierOutput)
+	return ret0, ret1
+}
+
+// RestoreSnapshotTierRequest indicates an expected call of RestoreSnapshotTierRequest
+func (mr *MockEC2APIMockRecorder) RestoreSnapshotTierRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreSnapshotTierRequest", reflect.TypeOf((*MockEC2API)(nil).RestoreSnapshotTierRequest), arg0)
+}
+
+// RestoreSnapshotTierWithContext mocks base method
+func (m *MockEC2API) RestoreSnapshotTierWithContext(arg0 context.Context, arg1 *ec2.RestoreSnapshotTierInput, arg2 ...request.Option) (*ec2.RestoreSnapshotTierOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RestoreSnapshotTierWithContext", varargs...)
+	ret0, _ := ret[0].(*ec2.RestoreSnapshotTierOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreSnapshotTierWithContext indicates an expected call of RestoreSnapshotTierWithContext
+func (mr *MockEC2APIMockRecorder) RestoreSnapshotTierWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreSnapshotTierWithContext", reflect.TypeOf((*MockEC2API)(nil).RestoreSnapshotTierWithContext), varargs...)
 }
 
 // RevokeClientVpnIngress mocks base method

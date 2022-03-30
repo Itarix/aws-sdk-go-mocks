@@ -1200,6 +1200,56 @@ func (mr *MockDataExchangeAPIMockRecorder) ListTagsForResourceWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockDataExchangeAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// SendApiAsset mocks base method
+func (m *MockDataExchangeAPI) SendApiAsset(arg0 *dataexchange.SendApiAssetInput) (*dataexchange.SendApiAssetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendApiAsset", arg0)
+	ret0, _ := ret[0].(*dataexchange.SendApiAssetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendApiAsset indicates an expected call of SendApiAsset
+func (mr *MockDataExchangeAPIMockRecorder) SendApiAsset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendApiAsset", reflect.TypeOf((*MockDataExchangeAPI)(nil).SendApiAsset), arg0)
+}
+
+// SendApiAssetRequest mocks base method
+func (m *MockDataExchangeAPI) SendApiAssetRequest(arg0 *dataexchange.SendApiAssetInput) (*request.Request, *dataexchange.SendApiAssetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendApiAssetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*dataexchange.SendApiAssetOutput)
+	return ret0, ret1
+}
+
+// SendApiAssetRequest indicates an expected call of SendApiAssetRequest
+func (mr *MockDataExchangeAPIMockRecorder) SendApiAssetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendApiAssetRequest", reflect.TypeOf((*MockDataExchangeAPI)(nil).SendApiAssetRequest), arg0)
+}
+
+// SendApiAssetWithContext mocks base method
+func (m *MockDataExchangeAPI) SendApiAssetWithContext(arg0 context.Context, arg1 *dataexchange.SendApiAssetInput, arg2 ...request.Option) (*dataexchange.SendApiAssetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SendApiAssetWithContext", varargs...)
+	ret0, _ := ret[0].(*dataexchange.SendApiAssetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendApiAssetWithContext indicates an expected call of SendApiAssetWithContext
+func (mr *MockDataExchangeAPIMockRecorder) SendApiAssetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendApiAssetWithContext", reflect.TypeOf((*MockDataExchangeAPI)(nil).SendApiAssetWithContext), varargs...)
+}
+
 // StartJob mocks base method
 func (m *MockDataExchangeAPI) StartJob(arg0 *dataexchange.StartJobInput) (*dataexchange.StartJobOutput, error) {
 	m.ctrl.T.Helper()

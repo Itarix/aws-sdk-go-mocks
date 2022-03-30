@@ -85,6 +85,106 @@ func (mr *MockWellArchitectedAPIMockRecorder) AssociateLensesWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateLensesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).AssociateLensesWithContext), varargs...)
 }
 
+// CreateLensShare mocks base method
+func (m *MockWellArchitectedAPI) CreateLensShare(arg0 *wellarchitected.CreateLensShareInput) (*wellarchitected.CreateLensShareOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLensShare", arg0)
+	ret0, _ := ret[0].(*wellarchitected.CreateLensShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLensShare indicates an expected call of CreateLensShare
+func (mr *MockWellArchitectedAPIMockRecorder) CreateLensShare(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLensShare", reflect.TypeOf((*MockWellArchitectedAPI)(nil).CreateLensShare), arg0)
+}
+
+// CreateLensShareRequest mocks base method
+func (m *MockWellArchitectedAPI) CreateLensShareRequest(arg0 *wellarchitected.CreateLensShareInput) (*request.Request, *wellarchitected.CreateLensShareOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLensShareRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.CreateLensShareOutput)
+	return ret0, ret1
+}
+
+// CreateLensShareRequest indicates an expected call of CreateLensShareRequest
+func (mr *MockWellArchitectedAPIMockRecorder) CreateLensShareRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLensShareRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).CreateLensShareRequest), arg0)
+}
+
+// CreateLensShareWithContext mocks base method
+func (m *MockWellArchitectedAPI) CreateLensShareWithContext(arg0 context.Context, arg1 *wellarchitected.CreateLensShareInput, arg2 ...request.Option) (*wellarchitected.CreateLensShareOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLensShareWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.CreateLensShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLensShareWithContext indicates an expected call of CreateLensShareWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) CreateLensShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLensShareWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).CreateLensShareWithContext), varargs...)
+}
+
+// CreateLensVersion mocks base method
+func (m *MockWellArchitectedAPI) CreateLensVersion(arg0 *wellarchitected.CreateLensVersionInput) (*wellarchitected.CreateLensVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLensVersion", arg0)
+	ret0, _ := ret[0].(*wellarchitected.CreateLensVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLensVersion indicates an expected call of CreateLensVersion
+func (mr *MockWellArchitectedAPIMockRecorder) CreateLensVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLensVersion", reflect.TypeOf((*MockWellArchitectedAPI)(nil).CreateLensVersion), arg0)
+}
+
+// CreateLensVersionRequest mocks base method
+func (m *MockWellArchitectedAPI) CreateLensVersionRequest(arg0 *wellarchitected.CreateLensVersionInput) (*request.Request, *wellarchitected.CreateLensVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLensVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.CreateLensVersionOutput)
+	return ret0, ret1
+}
+
+// CreateLensVersionRequest indicates an expected call of CreateLensVersionRequest
+func (mr *MockWellArchitectedAPIMockRecorder) CreateLensVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLensVersionRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).CreateLensVersionRequest), arg0)
+}
+
+// CreateLensVersionWithContext mocks base method
+func (m *MockWellArchitectedAPI) CreateLensVersionWithContext(arg0 context.Context, arg1 *wellarchitected.CreateLensVersionInput, arg2 ...request.Option) (*wellarchitected.CreateLensVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLensVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.CreateLensVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLensVersionWithContext indicates an expected call of CreateLensVersionWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) CreateLensVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLensVersionWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).CreateLensVersionWithContext), varargs...)
+}
+
 // CreateMilestone mocks base method
 func (m *MockWellArchitectedAPI) CreateMilestone(arg0 *wellarchitected.CreateMilestoneInput) (*wellarchitected.CreateMilestoneOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +333,106 @@ func (mr *MockWellArchitectedAPIMockRecorder) CreateWorkloadWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkloadWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).CreateWorkloadWithContext), varargs...)
+}
+
+// DeleteLens mocks base method
+func (m *MockWellArchitectedAPI) DeleteLens(arg0 *wellarchitected.DeleteLensInput) (*wellarchitected.DeleteLensOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLens", arg0)
+	ret0, _ := ret[0].(*wellarchitected.DeleteLensOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLens indicates an expected call of DeleteLens
+func (mr *MockWellArchitectedAPIMockRecorder) DeleteLens(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLens", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DeleteLens), arg0)
+}
+
+// DeleteLensRequest mocks base method
+func (m *MockWellArchitectedAPI) DeleteLensRequest(arg0 *wellarchitected.DeleteLensInput) (*request.Request, *wellarchitected.DeleteLensOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLensRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.DeleteLensOutput)
+	return ret0, ret1
+}
+
+// DeleteLensRequest indicates an expected call of DeleteLensRequest
+func (mr *MockWellArchitectedAPIMockRecorder) DeleteLensRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLensRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DeleteLensRequest), arg0)
+}
+
+// DeleteLensShare mocks base method
+func (m *MockWellArchitectedAPI) DeleteLensShare(arg0 *wellarchitected.DeleteLensShareInput) (*wellarchitected.DeleteLensShareOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLensShare", arg0)
+	ret0, _ := ret[0].(*wellarchitected.DeleteLensShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLensShare indicates an expected call of DeleteLensShare
+func (mr *MockWellArchitectedAPIMockRecorder) DeleteLensShare(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLensShare", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DeleteLensShare), arg0)
+}
+
+// DeleteLensShareRequest mocks base method
+func (m *MockWellArchitectedAPI) DeleteLensShareRequest(arg0 *wellarchitected.DeleteLensShareInput) (*request.Request, *wellarchitected.DeleteLensShareOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLensShareRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.DeleteLensShareOutput)
+	return ret0, ret1
+}
+
+// DeleteLensShareRequest indicates an expected call of DeleteLensShareRequest
+func (mr *MockWellArchitectedAPIMockRecorder) DeleteLensShareRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLensShareRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DeleteLensShareRequest), arg0)
+}
+
+// DeleteLensShareWithContext mocks base method
+func (m *MockWellArchitectedAPI) DeleteLensShareWithContext(arg0 context.Context, arg1 *wellarchitected.DeleteLensShareInput, arg2 ...request.Option) (*wellarchitected.DeleteLensShareOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLensShareWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.DeleteLensShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLensShareWithContext indicates an expected call of DeleteLensShareWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) DeleteLensShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLensShareWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DeleteLensShareWithContext), varargs...)
+}
+
+// DeleteLensWithContext mocks base method
+func (m *MockWellArchitectedAPI) DeleteLensWithContext(arg0 context.Context, arg1 *wellarchitected.DeleteLensInput, arg2 ...request.Option) (*wellarchitected.DeleteLensOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLensWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.DeleteLensOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLensWithContext indicates an expected call of DeleteLensWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) DeleteLensWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLensWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DeleteLensWithContext), varargs...)
 }
 
 // DeleteWorkload mocks base method
@@ -385,6 +585,56 @@ func (mr *MockWellArchitectedAPIMockRecorder) DisassociateLensesWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateLensesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DisassociateLensesWithContext), varargs...)
 }
 
+// ExportLens mocks base method
+func (m *MockWellArchitectedAPI) ExportLens(arg0 *wellarchitected.ExportLensInput) (*wellarchitected.ExportLensOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportLens", arg0)
+	ret0, _ := ret[0].(*wellarchitected.ExportLensOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportLens indicates an expected call of ExportLens
+func (mr *MockWellArchitectedAPIMockRecorder) ExportLens(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportLens", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ExportLens), arg0)
+}
+
+// ExportLensRequest mocks base method
+func (m *MockWellArchitectedAPI) ExportLensRequest(arg0 *wellarchitected.ExportLensInput) (*request.Request, *wellarchitected.ExportLensOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportLensRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.ExportLensOutput)
+	return ret0, ret1
+}
+
+// ExportLensRequest indicates an expected call of ExportLensRequest
+func (mr *MockWellArchitectedAPIMockRecorder) ExportLensRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportLensRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ExportLensRequest), arg0)
+}
+
+// ExportLensWithContext mocks base method
+func (m *MockWellArchitectedAPI) ExportLensWithContext(arg0 context.Context, arg1 *wellarchitected.ExportLensInput, arg2 ...request.Option) (*wellarchitected.ExportLensOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExportLensWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.ExportLensOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportLensWithContext indicates an expected call of ExportLensWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) ExportLensWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportLensWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ExportLensWithContext), varargs...)
+}
+
 // GetAnswer mocks base method
 func (m *MockWellArchitectedAPI) GetAnswer(arg0 *wellarchitected.GetAnswerInput) (*wellarchitected.GetAnswerOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +683,36 @@ func (mr *MockWellArchitectedAPIMockRecorder) GetAnswerWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnswerWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetAnswerWithContext), varargs...)
+}
+
+// GetLens mocks base method
+func (m *MockWellArchitectedAPI) GetLens(arg0 *wellarchitected.GetLensInput) (*wellarchitected.GetLensOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLens", arg0)
+	ret0, _ := ret[0].(*wellarchitected.GetLensOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLens indicates an expected call of GetLens
+func (mr *MockWellArchitectedAPIMockRecorder) GetLens(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLens", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetLens), arg0)
+}
+
+// GetLensRequest mocks base method
+func (m *MockWellArchitectedAPI) GetLensRequest(arg0 *wellarchitected.GetLensInput) (*request.Request, *wellarchitected.GetLensOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLensRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.GetLensOutput)
+	return ret0, ret1
+}
+
+// GetLensRequest indicates an expected call of GetLensRequest
+func (mr *MockWellArchitectedAPIMockRecorder) GetLensRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLensRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetLensRequest), arg0)
 }
 
 // GetLensReview mocks base method
@@ -585,6 +865,26 @@ func (mr *MockWellArchitectedAPIMockRecorder) GetLensVersionDifferenceWithContex
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLensVersionDifferenceWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetLensVersionDifferenceWithContext), varargs...)
 }
 
+// GetLensWithContext mocks base method
+func (m *MockWellArchitectedAPI) GetLensWithContext(arg0 context.Context, arg1 *wellarchitected.GetLensInput, arg2 ...request.Option) (*wellarchitected.GetLensOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLensWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.GetLensOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLensWithContext indicates an expected call of GetLensWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) GetLensWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLensWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetLensWithContext), varargs...)
+}
+
 // GetMilestone mocks base method
 func (m *MockWellArchitectedAPI) GetMilestone(arg0 *wellarchitected.GetMilestoneInput) (*wellarchitected.GetMilestoneOutput, error) {
 	m.ctrl.T.Helper()
@@ -683,6 +983,56 @@ func (mr *MockWellArchitectedAPIMockRecorder) GetWorkloadWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkloadWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetWorkloadWithContext), varargs...)
+}
+
+// ImportLens mocks base method
+func (m *MockWellArchitectedAPI) ImportLens(arg0 *wellarchitected.ImportLensInput) (*wellarchitected.ImportLensOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportLens", arg0)
+	ret0, _ := ret[0].(*wellarchitected.ImportLensOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportLens indicates an expected call of ImportLens
+func (mr *MockWellArchitectedAPIMockRecorder) ImportLens(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportLens", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ImportLens), arg0)
+}
+
+// ImportLensRequest mocks base method
+func (m *MockWellArchitectedAPI) ImportLensRequest(arg0 *wellarchitected.ImportLensInput) (*request.Request, *wellarchitected.ImportLensOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportLensRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.ImportLensOutput)
+	return ret0, ret1
+}
+
+// ImportLensRequest indicates an expected call of ImportLensRequest
+func (mr *MockWellArchitectedAPIMockRecorder) ImportLensRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportLensRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ImportLensRequest), arg0)
+}
+
+// ImportLensWithContext mocks base method
+func (m *MockWellArchitectedAPI) ImportLensWithContext(arg0 context.Context, arg1 *wellarchitected.ImportLensInput, arg2 ...request.Option) (*wellarchitected.ImportLensOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportLensWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.ImportLensOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportLensWithContext indicates an expected call of ImportLensWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) ImportLensWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportLensWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ImportLensWithContext), varargs...)
 }
 
 // ListAnswers mocks base method
@@ -932,6 +1282,89 @@ func (mr *MockWellArchitectedAPIMockRecorder) ListLensReviewsWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLensReviewsWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListLensReviewsWithContext), varargs...)
+}
+
+// ListLensShares mocks base method
+func (m *MockWellArchitectedAPI) ListLensShares(arg0 *wellarchitected.ListLensSharesInput) (*wellarchitected.ListLensSharesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLensShares", arg0)
+	ret0, _ := ret[0].(*wellarchitected.ListLensSharesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLensShares indicates an expected call of ListLensShares
+func (mr *MockWellArchitectedAPIMockRecorder) ListLensShares(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLensShares", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListLensShares), arg0)
+}
+
+// ListLensSharesPages mocks base method
+func (m *MockWellArchitectedAPI) ListLensSharesPages(arg0 *wellarchitected.ListLensSharesInput, arg1 func(*wellarchitected.ListLensSharesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLensSharesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLensSharesPages indicates an expected call of ListLensSharesPages
+func (mr *MockWellArchitectedAPIMockRecorder) ListLensSharesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLensSharesPages", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListLensSharesPages), arg0, arg1)
+}
+
+// ListLensSharesPagesWithContext mocks base method
+func (m *MockWellArchitectedAPI) ListLensSharesPagesWithContext(arg0 context.Context, arg1 *wellarchitected.ListLensSharesInput, arg2 func(*wellarchitected.ListLensSharesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLensSharesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLensSharesPagesWithContext indicates an expected call of ListLensSharesPagesWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) ListLensSharesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLensSharesPagesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListLensSharesPagesWithContext), varargs...)
+}
+
+// ListLensSharesRequest mocks base method
+func (m *MockWellArchitectedAPI) ListLensSharesRequest(arg0 *wellarchitected.ListLensSharesInput) (*request.Request, *wellarchitected.ListLensSharesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLensSharesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.ListLensSharesOutput)
+	return ret0, ret1
+}
+
+// ListLensSharesRequest indicates an expected call of ListLensSharesRequest
+func (mr *MockWellArchitectedAPIMockRecorder) ListLensSharesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLensSharesRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListLensSharesRequest), arg0)
+}
+
+// ListLensSharesWithContext mocks base method
+func (m *MockWellArchitectedAPI) ListLensSharesWithContext(arg0 context.Context, arg1 *wellarchitected.ListLensSharesInput, arg2 ...request.Option) (*wellarchitected.ListLensSharesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLensSharesWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.ListLensSharesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLensSharesWithContext indicates an expected call of ListLensSharesWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) ListLensSharesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLensSharesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListLensSharesWithContext), varargs...)
 }
 
 // ListLenses mocks base method
