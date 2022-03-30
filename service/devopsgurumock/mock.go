@@ -335,6 +335,189 @@ func (mr *MockDevOpsGuruAPIMockRecorder) DescribeInsightWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInsightWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeInsightWithContext), varargs...)
 }
 
+// DescribeOrganizationHealth mocks base method
+func (m *MockDevOpsGuruAPI) DescribeOrganizationHealth(arg0 *devopsguru.DescribeOrganizationHealthInput) (*devopsguru.DescribeOrganizationHealthOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationHealth", arg0)
+	ret0, _ := ret[0].(*devopsguru.DescribeOrganizationHealthOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationHealth indicates an expected call of DescribeOrganizationHealth
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeOrganizationHealth(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationHealth", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeOrganizationHealth), arg0)
+}
+
+// DescribeOrganizationHealthRequest mocks base method
+func (m *MockDevOpsGuruAPI) DescribeOrganizationHealthRequest(arg0 *devopsguru.DescribeOrganizationHealthInput) (*request.Request, *devopsguru.DescribeOrganizationHealthOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationHealthRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devopsguru.DescribeOrganizationHealthOutput)
+	return ret0, ret1
+}
+
+// DescribeOrganizationHealthRequest indicates an expected call of DescribeOrganizationHealthRequest
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeOrganizationHealthRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationHealthRequest", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeOrganizationHealthRequest), arg0)
+}
+
+// DescribeOrganizationHealthWithContext mocks base method
+func (m *MockDevOpsGuruAPI) DescribeOrganizationHealthWithContext(arg0 context.Context, arg1 *devopsguru.DescribeOrganizationHealthInput, arg2 ...request.Option) (*devopsguru.DescribeOrganizationHealthOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeOrganizationHealthWithContext", varargs...)
+	ret0, _ := ret[0].(*devopsguru.DescribeOrganizationHealthOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationHealthWithContext indicates an expected call of DescribeOrganizationHealthWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeOrganizationHealthWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationHealthWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeOrganizationHealthWithContext), varargs...)
+}
+
+// DescribeOrganizationOverview mocks base method
+func (m *MockDevOpsGuruAPI) DescribeOrganizationOverview(arg0 *devopsguru.DescribeOrganizationOverviewInput) (*devopsguru.DescribeOrganizationOverviewOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationOverview", arg0)
+	ret0, _ := ret[0].(*devopsguru.DescribeOrganizationOverviewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationOverview indicates an expected call of DescribeOrganizationOverview
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeOrganizationOverview(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationOverview", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeOrganizationOverview), arg0)
+}
+
+// DescribeOrganizationOverviewRequest mocks base method
+func (m *MockDevOpsGuruAPI) DescribeOrganizationOverviewRequest(arg0 *devopsguru.DescribeOrganizationOverviewInput) (*request.Request, *devopsguru.DescribeOrganizationOverviewOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationOverviewRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devopsguru.DescribeOrganizationOverviewOutput)
+	return ret0, ret1
+}
+
+// DescribeOrganizationOverviewRequest indicates an expected call of DescribeOrganizationOverviewRequest
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeOrganizationOverviewRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationOverviewRequest", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeOrganizationOverviewRequest), arg0)
+}
+
+// DescribeOrganizationOverviewWithContext mocks base method
+func (m *MockDevOpsGuruAPI) DescribeOrganizationOverviewWithContext(arg0 context.Context, arg1 *devopsguru.DescribeOrganizationOverviewInput, arg2 ...request.Option) (*devopsguru.DescribeOrganizationOverviewOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeOrganizationOverviewWithContext", varargs...)
+	ret0, _ := ret[0].(*devopsguru.DescribeOrganizationOverviewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationOverviewWithContext indicates an expected call of DescribeOrganizationOverviewWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeOrganizationOverviewWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationOverviewWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeOrganizationOverviewWithContext), varargs...)
+}
+
+// DescribeOrganizationResourceCollectionHealth mocks base method
+func (m *MockDevOpsGuruAPI) DescribeOrganizationResourceCollectionHealth(arg0 *devopsguru.DescribeOrganizationResourceCollectionHealthInput) (*devopsguru.DescribeOrganizationResourceCollectionHealthOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationResourceCollectionHealth", arg0)
+	ret0, _ := ret[0].(*devopsguru.DescribeOrganizationResourceCollectionHealthOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationResourceCollectionHealth indicates an expected call of DescribeOrganizationResourceCollectionHealth
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeOrganizationResourceCollectionHealth(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationResourceCollectionHealth", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeOrganizationResourceCollectionHealth), arg0)
+}
+
+// DescribeOrganizationResourceCollectionHealthPages mocks base method
+func (m *MockDevOpsGuruAPI) DescribeOrganizationResourceCollectionHealthPages(arg0 *devopsguru.DescribeOrganizationResourceCollectionHealthInput, arg1 func(*devopsguru.DescribeOrganizationResourceCollectionHealthOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationResourceCollectionHealthPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeOrganizationResourceCollectionHealthPages indicates an expected call of DescribeOrganizationResourceCollectionHealthPages
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeOrganizationResourceCollectionHealthPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationResourceCollectionHealthPages", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeOrganizationResourceCollectionHealthPages), arg0, arg1)
+}
+
+// DescribeOrganizationResourceCollectionHealthPagesWithContext mocks base method
+func (m *MockDevOpsGuruAPI) DescribeOrganizationResourceCollectionHealthPagesWithContext(arg0 context.Context, arg1 *devopsguru.DescribeOrganizationResourceCollectionHealthInput, arg2 func(*devopsguru.DescribeOrganizationResourceCollectionHealthOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeOrganizationResourceCollectionHealthPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeOrganizationResourceCollectionHealthPagesWithContext indicates an expected call of DescribeOrganizationResourceCollectionHealthPagesWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeOrganizationResourceCollectionHealthPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationResourceCollectionHealthPagesWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeOrganizationResourceCollectionHealthPagesWithContext), varargs...)
+}
+
+// DescribeOrganizationResourceCollectionHealthRequest mocks base method
+func (m *MockDevOpsGuruAPI) DescribeOrganizationResourceCollectionHealthRequest(arg0 *devopsguru.DescribeOrganizationResourceCollectionHealthInput) (*request.Request, *devopsguru.DescribeOrganizationResourceCollectionHealthOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationResourceCollectionHealthRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devopsguru.DescribeOrganizationResourceCollectionHealthOutput)
+	return ret0, ret1
+}
+
+// DescribeOrganizationResourceCollectionHealthRequest indicates an expected call of DescribeOrganizationResourceCollectionHealthRequest
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeOrganizationResourceCollectionHealthRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationResourceCollectionHealthRequest", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeOrganizationResourceCollectionHealthRequest), arg0)
+}
+
+// DescribeOrganizationResourceCollectionHealthWithContext mocks base method
+func (m *MockDevOpsGuruAPI) DescribeOrganizationResourceCollectionHealthWithContext(arg0 context.Context, arg1 *devopsguru.DescribeOrganizationResourceCollectionHealthInput, arg2 ...request.Option) (*devopsguru.DescribeOrganizationResourceCollectionHealthOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeOrganizationResourceCollectionHealthWithContext", varargs...)
+	ret0, _ := ret[0].(*devopsguru.DescribeOrganizationResourceCollectionHealthOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationResourceCollectionHealthWithContext indicates an expected call of DescribeOrganizationResourceCollectionHealthWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeOrganizationResourceCollectionHealthWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationResourceCollectionHealthWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeOrganizationResourceCollectionHealthWithContext), varargs...)
+}
+
 // DescribeResourceCollectionHealth mocks base method
 func (m *MockDevOpsGuruAPI) DescribeResourceCollectionHealth(arg0 *devopsguru.DescribeResourceCollectionHealthInput) (*devopsguru.DescribeResourceCollectionHealthOutput, error) {
 	m.ctrl.T.Helper()
@@ -966,6 +1149,89 @@ func (mr *MockDevOpsGuruAPIMockRecorder) ListNotificationChannelsWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotificationChannelsWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListNotificationChannelsWithContext), varargs...)
 }
 
+// ListOrganizationInsights mocks base method
+func (m *MockDevOpsGuruAPI) ListOrganizationInsights(arg0 *devopsguru.ListOrganizationInsightsInput) (*devopsguru.ListOrganizationInsightsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrganizationInsights", arg0)
+	ret0, _ := ret[0].(*devopsguru.ListOrganizationInsightsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOrganizationInsights indicates an expected call of ListOrganizationInsights
+func (mr *MockDevOpsGuruAPIMockRecorder) ListOrganizationInsights(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationInsights", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListOrganizationInsights), arg0)
+}
+
+// ListOrganizationInsightsPages mocks base method
+func (m *MockDevOpsGuruAPI) ListOrganizationInsightsPages(arg0 *devopsguru.ListOrganizationInsightsInput, arg1 func(*devopsguru.ListOrganizationInsightsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrganizationInsightsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOrganizationInsightsPages indicates an expected call of ListOrganizationInsightsPages
+func (mr *MockDevOpsGuruAPIMockRecorder) ListOrganizationInsightsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationInsightsPages", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListOrganizationInsightsPages), arg0, arg1)
+}
+
+// ListOrganizationInsightsPagesWithContext mocks base method
+func (m *MockDevOpsGuruAPI) ListOrganizationInsightsPagesWithContext(arg0 context.Context, arg1 *devopsguru.ListOrganizationInsightsInput, arg2 func(*devopsguru.ListOrganizationInsightsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOrganizationInsightsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOrganizationInsightsPagesWithContext indicates an expected call of ListOrganizationInsightsPagesWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) ListOrganizationInsightsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationInsightsPagesWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListOrganizationInsightsPagesWithContext), varargs...)
+}
+
+// ListOrganizationInsightsRequest mocks base method
+func (m *MockDevOpsGuruAPI) ListOrganizationInsightsRequest(arg0 *devopsguru.ListOrganizationInsightsInput) (*request.Request, *devopsguru.ListOrganizationInsightsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrganizationInsightsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devopsguru.ListOrganizationInsightsOutput)
+	return ret0, ret1
+}
+
+// ListOrganizationInsightsRequest indicates an expected call of ListOrganizationInsightsRequest
+func (mr *MockDevOpsGuruAPIMockRecorder) ListOrganizationInsightsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationInsightsRequest", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListOrganizationInsightsRequest), arg0)
+}
+
+// ListOrganizationInsightsWithContext mocks base method
+func (m *MockDevOpsGuruAPI) ListOrganizationInsightsWithContext(arg0 context.Context, arg1 *devopsguru.ListOrganizationInsightsInput, arg2 ...request.Option) (*devopsguru.ListOrganizationInsightsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOrganizationInsightsWithContext", varargs...)
+	ret0, _ := ret[0].(*devopsguru.ListOrganizationInsightsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOrganizationInsightsWithContext indicates an expected call of ListOrganizationInsightsWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) ListOrganizationInsightsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationInsightsWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListOrganizationInsightsWithContext), varargs...)
+}
+
 // ListRecommendations mocks base method
 func (m *MockDevOpsGuruAPI) ListRecommendations(arg0 *devopsguru.ListRecommendationsInput) (*devopsguru.ListRecommendationsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1230,6 +1496,89 @@ func (mr *MockDevOpsGuruAPIMockRecorder) SearchInsightsWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchInsightsWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).SearchInsightsWithContext), varargs...)
+}
+
+// SearchOrganizationInsights mocks base method
+func (m *MockDevOpsGuruAPI) SearchOrganizationInsights(arg0 *devopsguru.SearchOrganizationInsightsInput) (*devopsguru.SearchOrganizationInsightsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchOrganizationInsights", arg0)
+	ret0, _ := ret[0].(*devopsguru.SearchOrganizationInsightsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchOrganizationInsights indicates an expected call of SearchOrganizationInsights
+func (mr *MockDevOpsGuruAPIMockRecorder) SearchOrganizationInsights(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchOrganizationInsights", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).SearchOrganizationInsights), arg0)
+}
+
+// SearchOrganizationInsightsPages mocks base method
+func (m *MockDevOpsGuruAPI) SearchOrganizationInsightsPages(arg0 *devopsguru.SearchOrganizationInsightsInput, arg1 func(*devopsguru.SearchOrganizationInsightsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchOrganizationInsightsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchOrganizationInsightsPages indicates an expected call of SearchOrganizationInsightsPages
+func (mr *MockDevOpsGuruAPIMockRecorder) SearchOrganizationInsightsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchOrganizationInsightsPages", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).SearchOrganizationInsightsPages), arg0, arg1)
+}
+
+// SearchOrganizationInsightsPagesWithContext mocks base method
+func (m *MockDevOpsGuruAPI) SearchOrganizationInsightsPagesWithContext(arg0 context.Context, arg1 *devopsguru.SearchOrganizationInsightsInput, arg2 func(*devopsguru.SearchOrganizationInsightsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchOrganizationInsightsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchOrganizationInsightsPagesWithContext indicates an expected call of SearchOrganizationInsightsPagesWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) SearchOrganizationInsightsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchOrganizationInsightsPagesWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).SearchOrganizationInsightsPagesWithContext), varargs...)
+}
+
+// SearchOrganizationInsightsRequest mocks base method
+func (m *MockDevOpsGuruAPI) SearchOrganizationInsightsRequest(arg0 *devopsguru.SearchOrganizationInsightsInput) (*request.Request, *devopsguru.SearchOrganizationInsightsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchOrganizationInsightsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devopsguru.SearchOrganizationInsightsOutput)
+	return ret0, ret1
+}
+
+// SearchOrganizationInsightsRequest indicates an expected call of SearchOrganizationInsightsRequest
+func (mr *MockDevOpsGuruAPIMockRecorder) SearchOrganizationInsightsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchOrganizationInsightsRequest", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).SearchOrganizationInsightsRequest), arg0)
+}
+
+// SearchOrganizationInsightsWithContext mocks base method
+func (m *MockDevOpsGuruAPI) SearchOrganizationInsightsWithContext(arg0 context.Context, arg1 *devopsguru.SearchOrganizationInsightsInput, arg2 ...request.Option) (*devopsguru.SearchOrganizationInsightsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchOrganizationInsightsWithContext", varargs...)
+	ret0, _ := ret[0].(*devopsguru.SearchOrganizationInsightsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchOrganizationInsightsWithContext indicates an expected call of SearchOrganizationInsightsWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) SearchOrganizationInsightsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchOrganizationInsightsWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).SearchOrganizationInsightsWithContext), varargs...)
 }
 
 // StartCostEstimation mocks base method
