@@ -435,6 +435,56 @@ func (mr *MockConnectAPIMockRecorder) AssociateSecurityKeyWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSecurityKeyWithContext", reflect.TypeOf((*MockConnectAPI)(nil).AssociateSecurityKeyWithContext), varargs...)
 }
 
+// CreateAgentStatus mocks base method
+func (m *MockConnectAPI) CreateAgentStatus(arg0 *connect.CreateAgentStatusInput) (*connect.CreateAgentStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAgentStatus", arg0)
+	ret0, _ := ret[0].(*connect.CreateAgentStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAgentStatus indicates an expected call of CreateAgentStatus
+func (mr *MockConnectAPIMockRecorder) CreateAgentStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAgentStatus", reflect.TypeOf((*MockConnectAPI)(nil).CreateAgentStatus), arg0)
+}
+
+// CreateAgentStatusRequest mocks base method
+func (m *MockConnectAPI) CreateAgentStatusRequest(arg0 *connect.CreateAgentStatusInput) (*request.Request, *connect.CreateAgentStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAgentStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.CreateAgentStatusOutput)
+	return ret0, ret1
+}
+
+// CreateAgentStatusRequest indicates an expected call of CreateAgentStatusRequest
+func (mr *MockConnectAPIMockRecorder) CreateAgentStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAgentStatusRequest", reflect.TypeOf((*MockConnectAPI)(nil).CreateAgentStatusRequest), arg0)
+}
+
+// CreateAgentStatusWithContext mocks base method
+func (m *MockConnectAPI) CreateAgentStatusWithContext(arg0 context.Context, arg1 *connect.CreateAgentStatusInput, arg2 ...request.Option) (*connect.CreateAgentStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAgentStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.CreateAgentStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAgentStatusWithContext indicates an expected call of CreateAgentStatusWithContext
+func (mr *MockConnectAPIMockRecorder) CreateAgentStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAgentStatusWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateAgentStatusWithContext), varargs...)
+}
+
 // CreateContactFlow mocks base method
 func (m *MockConnectAPI) CreateContactFlow(arg0 *connect.CreateContactFlowInput) (*connect.CreateContactFlowOutput, error) {
 	m.ctrl.T.Helper()
@@ -483,6 +533,56 @@ func (mr *MockConnectAPIMockRecorder) CreateContactFlowWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactFlowWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateContactFlowWithContext), varargs...)
+}
+
+// CreateHoursOfOperation mocks base method
+func (m *MockConnectAPI) CreateHoursOfOperation(arg0 *connect.CreateHoursOfOperationInput) (*connect.CreateHoursOfOperationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateHoursOfOperation", arg0)
+	ret0, _ := ret[0].(*connect.CreateHoursOfOperationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateHoursOfOperation indicates an expected call of CreateHoursOfOperation
+func (mr *MockConnectAPIMockRecorder) CreateHoursOfOperation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHoursOfOperation", reflect.TypeOf((*MockConnectAPI)(nil).CreateHoursOfOperation), arg0)
+}
+
+// CreateHoursOfOperationRequest mocks base method
+func (m *MockConnectAPI) CreateHoursOfOperationRequest(arg0 *connect.CreateHoursOfOperationInput) (*request.Request, *connect.CreateHoursOfOperationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateHoursOfOperationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.CreateHoursOfOperationOutput)
+	return ret0, ret1
+}
+
+// CreateHoursOfOperationRequest indicates an expected call of CreateHoursOfOperationRequest
+func (mr *MockConnectAPIMockRecorder) CreateHoursOfOperationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHoursOfOperationRequest", reflect.TypeOf((*MockConnectAPI)(nil).CreateHoursOfOperationRequest), arg0)
+}
+
+// CreateHoursOfOperationWithContext mocks base method
+func (m *MockConnectAPI) CreateHoursOfOperationWithContext(arg0 context.Context, arg1 *connect.CreateHoursOfOperationInput, arg2 ...request.Option) (*connect.CreateHoursOfOperationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateHoursOfOperationWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.CreateHoursOfOperationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateHoursOfOperationWithContext indicates an expected call of CreateHoursOfOperationWithContext
+func (mr *MockConnectAPIMockRecorder) CreateHoursOfOperationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHoursOfOperationWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateHoursOfOperationWithContext), varargs...)
 }
 
 // CreateInstance mocks base method
@@ -885,6 +985,56 @@ func (mr *MockConnectAPIMockRecorder) CreateUserWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateUserWithContext), varargs...)
 }
 
+// DeleteHoursOfOperation mocks base method
+func (m *MockConnectAPI) DeleteHoursOfOperation(arg0 *connect.DeleteHoursOfOperationInput) (*connect.DeleteHoursOfOperationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteHoursOfOperation", arg0)
+	ret0, _ := ret[0].(*connect.DeleteHoursOfOperationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteHoursOfOperation indicates an expected call of DeleteHoursOfOperation
+func (mr *MockConnectAPIMockRecorder) DeleteHoursOfOperation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHoursOfOperation", reflect.TypeOf((*MockConnectAPI)(nil).DeleteHoursOfOperation), arg0)
+}
+
+// DeleteHoursOfOperationRequest mocks base method
+func (m *MockConnectAPI) DeleteHoursOfOperationRequest(arg0 *connect.DeleteHoursOfOperationInput) (*request.Request, *connect.DeleteHoursOfOperationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteHoursOfOperationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DeleteHoursOfOperationOutput)
+	return ret0, ret1
+}
+
+// DeleteHoursOfOperationRequest indicates an expected call of DeleteHoursOfOperationRequest
+func (mr *MockConnectAPIMockRecorder) DeleteHoursOfOperationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHoursOfOperationRequest", reflect.TypeOf((*MockConnectAPI)(nil).DeleteHoursOfOperationRequest), arg0)
+}
+
+// DeleteHoursOfOperationWithContext mocks base method
+func (m *MockConnectAPI) DeleteHoursOfOperationWithContext(arg0 context.Context, arg1 *connect.DeleteHoursOfOperationInput, arg2 ...request.Option) (*connect.DeleteHoursOfOperationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteHoursOfOperationWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DeleteHoursOfOperationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteHoursOfOperationWithContext indicates an expected call of DeleteHoursOfOperationWithContext
+func (mr *MockConnectAPIMockRecorder) DeleteHoursOfOperationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHoursOfOperationWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteHoursOfOperationWithContext), varargs...)
+}
+
 // DeleteInstance mocks base method
 func (m *MockConnectAPI) DeleteInstance(arg0 *connect.DeleteInstanceInput) (*connect.DeleteInstanceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1183,6 +1333,56 @@ func (mr *MockConnectAPIMockRecorder) DeleteUserWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteUserWithContext), varargs...)
+}
+
+// DescribeAgentStatus mocks base method
+func (m *MockConnectAPI) DescribeAgentStatus(arg0 *connect.DescribeAgentStatusInput) (*connect.DescribeAgentStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAgentStatus", arg0)
+	ret0, _ := ret[0].(*connect.DescribeAgentStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAgentStatus indicates an expected call of DescribeAgentStatus
+func (mr *MockConnectAPIMockRecorder) DescribeAgentStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAgentStatus", reflect.TypeOf((*MockConnectAPI)(nil).DescribeAgentStatus), arg0)
+}
+
+// DescribeAgentStatusRequest mocks base method
+func (m *MockConnectAPI) DescribeAgentStatusRequest(arg0 *connect.DescribeAgentStatusInput) (*request.Request, *connect.DescribeAgentStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAgentStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DescribeAgentStatusOutput)
+	return ret0, ret1
+}
+
+// DescribeAgentStatusRequest indicates an expected call of DescribeAgentStatusRequest
+func (mr *MockConnectAPIMockRecorder) DescribeAgentStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAgentStatusRequest", reflect.TypeOf((*MockConnectAPI)(nil).DescribeAgentStatusRequest), arg0)
+}
+
+// DescribeAgentStatusWithContext mocks base method
+func (m *MockConnectAPI) DescribeAgentStatusWithContext(arg0 context.Context, arg1 *connect.DescribeAgentStatusInput, arg2 ...request.Option) (*connect.DescribeAgentStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAgentStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DescribeAgentStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAgentStatusWithContext indicates an expected call of DescribeAgentStatusWithContext
+func (mr *MockConnectAPIMockRecorder) DescribeAgentStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAgentStatusWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeAgentStatusWithContext), varargs...)
 }
 
 // DescribeContactFlow mocks base method
@@ -2399,6 +2599,89 @@ func (mr *MockConnectAPIMockRecorder) GetMetricDataWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricDataWithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetMetricDataWithContext), varargs...)
+}
+
+// ListAgentStatuses mocks base method
+func (m *MockConnectAPI) ListAgentStatuses(arg0 *connect.ListAgentStatusesInput) (*connect.ListAgentStatusesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAgentStatuses", arg0)
+	ret0, _ := ret[0].(*connect.ListAgentStatusesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAgentStatuses indicates an expected call of ListAgentStatuses
+func (mr *MockConnectAPIMockRecorder) ListAgentStatuses(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAgentStatuses", reflect.TypeOf((*MockConnectAPI)(nil).ListAgentStatuses), arg0)
+}
+
+// ListAgentStatusesPages mocks base method
+func (m *MockConnectAPI) ListAgentStatusesPages(arg0 *connect.ListAgentStatusesInput, arg1 func(*connect.ListAgentStatusesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAgentStatusesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAgentStatusesPages indicates an expected call of ListAgentStatusesPages
+func (mr *MockConnectAPIMockRecorder) ListAgentStatusesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAgentStatusesPages", reflect.TypeOf((*MockConnectAPI)(nil).ListAgentStatusesPages), arg0, arg1)
+}
+
+// ListAgentStatusesPagesWithContext mocks base method
+func (m *MockConnectAPI) ListAgentStatusesPagesWithContext(arg0 context.Context, arg1 *connect.ListAgentStatusesInput, arg2 func(*connect.ListAgentStatusesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAgentStatusesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAgentStatusesPagesWithContext indicates an expected call of ListAgentStatusesPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListAgentStatusesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAgentStatusesPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListAgentStatusesPagesWithContext), varargs...)
+}
+
+// ListAgentStatusesRequest mocks base method
+func (m *MockConnectAPI) ListAgentStatusesRequest(arg0 *connect.ListAgentStatusesInput) (*request.Request, *connect.ListAgentStatusesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAgentStatusesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListAgentStatusesOutput)
+	return ret0, ret1
+}
+
+// ListAgentStatusesRequest indicates an expected call of ListAgentStatusesRequest
+func (mr *MockConnectAPIMockRecorder) ListAgentStatusesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAgentStatusesRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListAgentStatusesRequest), arg0)
+}
+
+// ListAgentStatusesWithContext mocks base method
+func (m *MockConnectAPI) ListAgentStatusesWithContext(arg0 context.Context, arg1 *connect.ListAgentStatusesInput, arg2 ...request.Option) (*connect.ListAgentStatusesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAgentStatusesWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListAgentStatusesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAgentStatusesWithContext indicates an expected call of ListAgentStatusesWithContext
+func (mr *MockConnectAPIMockRecorder) ListAgentStatusesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAgentStatusesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListAgentStatusesWithContext), varargs...)
 }
 
 // ListApprovedOrigins mocks base method
@@ -4777,6 +5060,56 @@ func (mr *MockConnectAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
+// UpdateAgentStatus mocks base method
+func (m *MockConnectAPI) UpdateAgentStatus(arg0 *connect.UpdateAgentStatusInput) (*connect.UpdateAgentStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAgentStatus", arg0)
+	ret0, _ := ret[0].(*connect.UpdateAgentStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAgentStatus indicates an expected call of UpdateAgentStatus
+func (mr *MockConnectAPIMockRecorder) UpdateAgentStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAgentStatus", reflect.TypeOf((*MockConnectAPI)(nil).UpdateAgentStatus), arg0)
+}
+
+// UpdateAgentStatusRequest mocks base method
+func (m *MockConnectAPI) UpdateAgentStatusRequest(arg0 *connect.UpdateAgentStatusInput) (*request.Request, *connect.UpdateAgentStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAgentStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateAgentStatusOutput)
+	return ret0, ret1
+}
+
+// UpdateAgentStatusRequest indicates an expected call of UpdateAgentStatusRequest
+func (mr *MockConnectAPIMockRecorder) UpdateAgentStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAgentStatusRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateAgentStatusRequest), arg0)
+}
+
+// UpdateAgentStatusWithContext mocks base method
+func (m *MockConnectAPI) UpdateAgentStatusWithContext(arg0 context.Context, arg1 *connect.UpdateAgentStatusInput, arg2 ...request.Option) (*connect.UpdateAgentStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAgentStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateAgentStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAgentStatusWithContext indicates an expected call of UpdateAgentStatusWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateAgentStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAgentStatusWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateAgentStatusWithContext), varargs...)
+}
+
 // UpdateContactAttributes mocks base method
 func (m *MockConnectAPI) UpdateContactAttributes(arg0 *connect.UpdateContactAttributesInput) (*connect.UpdateContactAttributesOutput, error) {
 	m.ctrl.T.Helper()
@@ -4925,6 +5258,56 @@ func (mr *MockConnectAPIMockRecorder) UpdateContactFlowNameWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactFlowNameWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactFlowNameWithContext), varargs...)
+}
+
+// UpdateHoursOfOperation mocks base method
+func (m *MockConnectAPI) UpdateHoursOfOperation(arg0 *connect.UpdateHoursOfOperationInput) (*connect.UpdateHoursOfOperationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateHoursOfOperation", arg0)
+	ret0, _ := ret[0].(*connect.UpdateHoursOfOperationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateHoursOfOperation indicates an expected call of UpdateHoursOfOperation
+func (mr *MockConnectAPIMockRecorder) UpdateHoursOfOperation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateHoursOfOperation", reflect.TypeOf((*MockConnectAPI)(nil).UpdateHoursOfOperation), arg0)
+}
+
+// UpdateHoursOfOperationRequest mocks base method
+func (m *MockConnectAPI) UpdateHoursOfOperationRequest(arg0 *connect.UpdateHoursOfOperationInput) (*request.Request, *connect.UpdateHoursOfOperationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateHoursOfOperationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateHoursOfOperationOutput)
+	return ret0, ret1
+}
+
+// UpdateHoursOfOperationRequest indicates an expected call of UpdateHoursOfOperationRequest
+func (mr *MockConnectAPIMockRecorder) UpdateHoursOfOperationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateHoursOfOperationRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateHoursOfOperationRequest), arg0)
+}
+
+// UpdateHoursOfOperationWithContext mocks base method
+func (m *MockConnectAPI) UpdateHoursOfOperationWithContext(arg0 context.Context, arg1 *connect.UpdateHoursOfOperationInput, arg2 ...request.Option) (*connect.UpdateHoursOfOperationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateHoursOfOperationWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateHoursOfOperationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateHoursOfOperationWithContext indicates an expected call of UpdateHoursOfOperationWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateHoursOfOperationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateHoursOfOperationWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateHoursOfOperationWithContext), varargs...)
 }
 
 // UpdateInstanceAttribute mocks base method
