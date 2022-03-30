@@ -3213,6 +3213,56 @@ func (mr *MockCloudFormationAPIMockRecorder) RegisterTypeWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterTypeWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).RegisterTypeWithContext), varargs...)
 }
 
+// RollbackStack mocks base method
+func (m *MockCloudFormationAPI) RollbackStack(arg0 *cloudformation.RollbackStackInput) (*cloudformation.RollbackStackOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RollbackStack", arg0)
+	ret0, _ := ret[0].(*cloudformation.RollbackStackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RollbackStack indicates an expected call of RollbackStack
+func (mr *MockCloudFormationAPIMockRecorder) RollbackStack(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RollbackStack", reflect.TypeOf((*MockCloudFormationAPI)(nil).RollbackStack), arg0)
+}
+
+// RollbackStackRequest mocks base method
+func (m *MockCloudFormationAPI) RollbackStackRequest(arg0 *cloudformation.RollbackStackInput) (*request.Request, *cloudformation.RollbackStackOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RollbackStackRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudformation.RollbackStackOutput)
+	return ret0, ret1
+}
+
+// RollbackStackRequest indicates an expected call of RollbackStackRequest
+func (mr *MockCloudFormationAPIMockRecorder) RollbackStackRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RollbackStackRequest", reflect.TypeOf((*MockCloudFormationAPI)(nil).RollbackStackRequest), arg0)
+}
+
+// RollbackStackWithContext mocks base method
+func (m *MockCloudFormationAPI) RollbackStackWithContext(arg0 context.Context, arg1 *cloudformation.RollbackStackInput, arg2 ...request.Option) (*cloudformation.RollbackStackOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RollbackStackWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudformation.RollbackStackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RollbackStackWithContext indicates an expected call of RollbackStackWithContext
+func (mr *MockCloudFormationAPIMockRecorder) RollbackStackWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RollbackStackWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).RollbackStackWithContext), varargs...)
+}
+
 // SetStackPolicy mocks base method
 func (m *MockCloudFormationAPI) SetStackPolicy(arg0 *cloudformation.SetStackPolicyInput) (*cloudformation.SetStackPolicyOutput, error) {
 	m.ctrl.T.Helper()
