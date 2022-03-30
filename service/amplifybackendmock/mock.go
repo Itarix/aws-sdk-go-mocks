@@ -265,6 +265,56 @@ func (mr *MockAmplifyBackendAPIMockRecorder) CreateBackendRequest(arg0 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBackendRequest", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).CreateBackendRequest), arg0)
 }
 
+// CreateBackendStorage mocks base method
+func (m *MockAmplifyBackendAPI) CreateBackendStorage(arg0 *amplifybackend.CreateBackendStorageInput) (*amplifybackend.CreateBackendStorageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBackendStorage", arg0)
+	ret0, _ := ret[0].(*amplifybackend.CreateBackendStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBackendStorage indicates an expected call of CreateBackendStorage
+func (mr *MockAmplifyBackendAPIMockRecorder) CreateBackendStorage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBackendStorage", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).CreateBackendStorage), arg0)
+}
+
+// CreateBackendStorageRequest mocks base method
+func (m *MockAmplifyBackendAPI) CreateBackendStorageRequest(arg0 *amplifybackend.CreateBackendStorageInput) (*request.Request, *amplifybackend.CreateBackendStorageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBackendStorageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifybackend.CreateBackendStorageOutput)
+	return ret0, ret1
+}
+
+// CreateBackendStorageRequest indicates an expected call of CreateBackendStorageRequest
+func (mr *MockAmplifyBackendAPIMockRecorder) CreateBackendStorageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBackendStorageRequest", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).CreateBackendStorageRequest), arg0)
+}
+
+// CreateBackendStorageWithContext mocks base method
+func (m *MockAmplifyBackendAPI) CreateBackendStorageWithContext(arg0 context.Context, arg1 *amplifybackend.CreateBackendStorageInput, arg2 ...request.Option) (*amplifybackend.CreateBackendStorageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateBackendStorageWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifybackend.CreateBackendStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBackendStorageWithContext indicates an expected call of CreateBackendStorageWithContext
+func (mr *MockAmplifyBackendAPIMockRecorder) CreateBackendStorageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBackendStorageWithContext", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).CreateBackendStorageWithContext), varargs...)
+}
+
 // CreateBackendWithContext mocks base method
 func (m *MockAmplifyBackendAPI) CreateBackendWithContext(arg0 context.Context, arg1 *amplifybackend.CreateBackendInput, arg2 ...request.Option) (*amplifybackend.CreateBackendOutput, error) {
 	m.ctrl.T.Helper()
@@ -463,6 +513,56 @@ func (m *MockAmplifyBackendAPI) DeleteBackendRequest(arg0 *amplifybackend.Delete
 func (mr *MockAmplifyBackendAPIMockRecorder) DeleteBackendRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackendRequest", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).DeleteBackendRequest), arg0)
+}
+
+// DeleteBackendStorage mocks base method
+func (m *MockAmplifyBackendAPI) DeleteBackendStorage(arg0 *amplifybackend.DeleteBackendStorageInput) (*amplifybackend.DeleteBackendStorageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBackendStorage", arg0)
+	ret0, _ := ret[0].(*amplifybackend.DeleteBackendStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBackendStorage indicates an expected call of DeleteBackendStorage
+func (mr *MockAmplifyBackendAPIMockRecorder) DeleteBackendStorage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackendStorage", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).DeleteBackendStorage), arg0)
+}
+
+// DeleteBackendStorageRequest mocks base method
+func (m *MockAmplifyBackendAPI) DeleteBackendStorageRequest(arg0 *amplifybackend.DeleteBackendStorageInput) (*request.Request, *amplifybackend.DeleteBackendStorageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBackendStorageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifybackend.DeleteBackendStorageOutput)
+	return ret0, ret1
+}
+
+// DeleteBackendStorageRequest indicates an expected call of DeleteBackendStorageRequest
+func (mr *MockAmplifyBackendAPIMockRecorder) DeleteBackendStorageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackendStorageRequest", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).DeleteBackendStorageRequest), arg0)
+}
+
+// DeleteBackendStorageWithContext mocks base method
+func (m *MockAmplifyBackendAPI) DeleteBackendStorageWithContext(arg0 context.Context, arg1 *amplifybackend.DeleteBackendStorageInput, arg2 ...request.Option) (*amplifybackend.DeleteBackendStorageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteBackendStorageWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifybackend.DeleteBackendStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBackendStorageWithContext indicates an expected call of DeleteBackendStorageWithContext
+func (mr *MockAmplifyBackendAPIMockRecorder) DeleteBackendStorageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackendStorageWithContext", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).DeleteBackendStorageWithContext), varargs...)
 }
 
 // DeleteBackendWithContext mocks base method
@@ -815,6 +915,56 @@ func (mr *MockAmplifyBackendAPIMockRecorder) GetBackendRequest(arg0 interface{})
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBackendRequest", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).GetBackendRequest), arg0)
 }
 
+// GetBackendStorage mocks base method
+func (m *MockAmplifyBackendAPI) GetBackendStorage(arg0 *amplifybackend.GetBackendStorageInput) (*amplifybackend.GetBackendStorageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBackendStorage", arg0)
+	ret0, _ := ret[0].(*amplifybackend.GetBackendStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBackendStorage indicates an expected call of GetBackendStorage
+func (mr *MockAmplifyBackendAPIMockRecorder) GetBackendStorage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBackendStorage", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).GetBackendStorage), arg0)
+}
+
+// GetBackendStorageRequest mocks base method
+func (m *MockAmplifyBackendAPI) GetBackendStorageRequest(arg0 *amplifybackend.GetBackendStorageInput) (*request.Request, *amplifybackend.GetBackendStorageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBackendStorageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifybackend.GetBackendStorageOutput)
+	return ret0, ret1
+}
+
+// GetBackendStorageRequest indicates an expected call of GetBackendStorageRequest
+func (mr *MockAmplifyBackendAPIMockRecorder) GetBackendStorageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBackendStorageRequest", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).GetBackendStorageRequest), arg0)
+}
+
+// GetBackendStorageWithContext mocks base method
+func (m *MockAmplifyBackendAPI) GetBackendStorageWithContext(arg0 context.Context, arg1 *amplifybackend.GetBackendStorageInput, arg2 ...request.Option) (*amplifybackend.GetBackendStorageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetBackendStorageWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifybackend.GetBackendStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBackendStorageWithContext indicates an expected call of GetBackendStorageWithContext
+func (mr *MockAmplifyBackendAPIMockRecorder) GetBackendStorageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBackendStorageWithContext", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).GetBackendStorageWithContext), varargs...)
+}
+
 // GetBackendWithContext mocks base method
 func (m *MockAmplifyBackendAPI) GetBackendWithContext(arg0 context.Context, arg1 *amplifybackend.GetBackendInput, arg2 ...request.Option) (*amplifybackend.GetBackendOutput, error) {
 	m.ctrl.T.Helper()
@@ -935,6 +1085,56 @@ func (mr *MockAmplifyBackendAPIMockRecorder) ImportBackendAuthWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportBackendAuthWithContext", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).ImportBackendAuthWithContext), varargs...)
 }
 
+// ImportBackendStorage mocks base method
+func (m *MockAmplifyBackendAPI) ImportBackendStorage(arg0 *amplifybackend.ImportBackendStorageInput) (*amplifybackend.ImportBackendStorageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportBackendStorage", arg0)
+	ret0, _ := ret[0].(*amplifybackend.ImportBackendStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportBackendStorage indicates an expected call of ImportBackendStorage
+func (mr *MockAmplifyBackendAPIMockRecorder) ImportBackendStorage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportBackendStorage", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).ImportBackendStorage), arg0)
+}
+
+// ImportBackendStorageRequest mocks base method
+func (m *MockAmplifyBackendAPI) ImportBackendStorageRequest(arg0 *amplifybackend.ImportBackendStorageInput) (*request.Request, *amplifybackend.ImportBackendStorageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportBackendStorageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifybackend.ImportBackendStorageOutput)
+	return ret0, ret1
+}
+
+// ImportBackendStorageRequest indicates an expected call of ImportBackendStorageRequest
+func (mr *MockAmplifyBackendAPIMockRecorder) ImportBackendStorageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportBackendStorageRequest", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).ImportBackendStorageRequest), arg0)
+}
+
+// ImportBackendStorageWithContext mocks base method
+func (m *MockAmplifyBackendAPI) ImportBackendStorageWithContext(arg0 context.Context, arg1 *amplifybackend.ImportBackendStorageInput, arg2 ...request.Option) (*amplifybackend.ImportBackendStorageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportBackendStorageWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifybackend.ImportBackendStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportBackendStorageWithContext indicates an expected call of ImportBackendStorageWithContext
+func (mr *MockAmplifyBackendAPIMockRecorder) ImportBackendStorageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportBackendStorageWithContext", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).ImportBackendStorageWithContext), varargs...)
+}
+
 // ListBackendJobs mocks base method
 func (m *MockAmplifyBackendAPI) ListBackendJobs(arg0 *amplifybackend.ListBackendJobsInput) (*amplifybackend.ListBackendJobsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1016,6 +1216,56 @@ func (mr *MockAmplifyBackendAPIMockRecorder) ListBackendJobsWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBackendJobsWithContext", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).ListBackendJobsWithContext), varargs...)
+}
+
+// ListS3Buckets mocks base method
+func (m *MockAmplifyBackendAPI) ListS3Buckets(arg0 *amplifybackend.ListS3BucketsInput) (*amplifybackend.ListS3BucketsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListS3Buckets", arg0)
+	ret0, _ := ret[0].(*amplifybackend.ListS3BucketsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListS3Buckets indicates an expected call of ListS3Buckets
+func (mr *MockAmplifyBackendAPIMockRecorder) ListS3Buckets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListS3Buckets", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).ListS3Buckets), arg0)
+}
+
+// ListS3BucketsRequest mocks base method
+func (m *MockAmplifyBackendAPI) ListS3BucketsRequest(arg0 *amplifybackend.ListS3BucketsInput) (*request.Request, *amplifybackend.ListS3BucketsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListS3BucketsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifybackend.ListS3BucketsOutput)
+	return ret0, ret1
+}
+
+// ListS3BucketsRequest indicates an expected call of ListS3BucketsRequest
+func (mr *MockAmplifyBackendAPIMockRecorder) ListS3BucketsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListS3BucketsRequest", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).ListS3BucketsRequest), arg0)
+}
+
+// ListS3BucketsWithContext mocks base method
+func (m *MockAmplifyBackendAPI) ListS3BucketsWithContext(arg0 context.Context, arg1 *amplifybackend.ListS3BucketsInput, arg2 ...request.Option) (*amplifybackend.ListS3BucketsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListS3BucketsWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifybackend.ListS3BucketsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListS3BucketsWithContext indicates an expected call of ListS3BucketsWithContext
+func (mr *MockAmplifyBackendAPIMockRecorder) ListS3BucketsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListS3BucketsWithContext", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).ListS3BucketsWithContext), varargs...)
 }
 
 // RemoveAllBackends mocks base method
@@ -1316,4 +1566,54 @@ func (mr *MockAmplifyBackendAPIMockRecorder) UpdateBackendJobWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBackendJobWithContext", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).UpdateBackendJobWithContext), varargs...)
+}
+
+// UpdateBackendStorage mocks base method
+func (m *MockAmplifyBackendAPI) UpdateBackendStorage(arg0 *amplifybackend.UpdateBackendStorageInput) (*amplifybackend.UpdateBackendStorageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBackendStorage", arg0)
+	ret0, _ := ret[0].(*amplifybackend.UpdateBackendStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBackendStorage indicates an expected call of UpdateBackendStorage
+func (mr *MockAmplifyBackendAPIMockRecorder) UpdateBackendStorage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBackendStorage", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).UpdateBackendStorage), arg0)
+}
+
+// UpdateBackendStorageRequest mocks base method
+func (m *MockAmplifyBackendAPI) UpdateBackendStorageRequest(arg0 *amplifybackend.UpdateBackendStorageInput) (*request.Request, *amplifybackend.UpdateBackendStorageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBackendStorageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifybackend.UpdateBackendStorageOutput)
+	return ret0, ret1
+}
+
+// UpdateBackendStorageRequest indicates an expected call of UpdateBackendStorageRequest
+func (mr *MockAmplifyBackendAPIMockRecorder) UpdateBackendStorageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBackendStorageRequest", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).UpdateBackendStorageRequest), arg0)
+}
+
+// UpdateBackendStorageWithContext mocks base method
+func (m *MockAmplifyBackendAPI) UpdateBackendStorageWithContext(arg0 context.Context, arg1 *amplifybackend.UpdateBackendStorageInput, arg2 ...request.Option) (*amplifybackend.UpdateBackendStorageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateBackendStorageWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifybackend.UpdateBackendStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBackendStorageWithContext indicates an expected call of UpdateBackendStorageWithContext
+func (mr *MockAmplifyBackendAPIMockRecorder) UpdateBackendStorageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBackendStorageWithContext", reflect.TypeOf((*MockAmplifyBackendAPI)(nil).UpdateBackendStorageWithContext), varargs...)
 }

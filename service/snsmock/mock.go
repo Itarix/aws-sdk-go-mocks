@@ -1664,6 +1664,56 @@ func (mr *MockSNSAPIMockRecorder) Publish(arg0 interface{}) *gomock.Call {
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Publish", reflect.TypeOf((*MockSNSAPI)(nil).Publish), arg0)
 }
 
+// PublishBatch mocks base method
+func (m *MockSNSAPI) PublishBatch(arg0 *sns.PublishBatchInput) (*sns.PublishBatchOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PublishBatch", arg0)
+	ret0, _ := ret[0].(*sns.PublishBatchOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PublishBatch indicates an expected call of PublishBatch
+func (mr *MockSNSAPIMockRecorder) PublishBatch(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishBatch", reflect.TypeOf((*MockSNSAPI)(nil).PublishBatch), arg0)
+}
+
+// PublishBatchRequest mocks base method
+func (m *MockSNSAPI) PublishBatchRequest(arg0 *sns.PublishBatchInput) (*request.Request, *sns.PublishBatchOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PublishBatchRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sns.PublishBatchOutput)
+	return ret0, ret1
+}
+
+// PublishBatchRequest indicates an expected call of PublishBatchRequest
+func (mr *MockSNSAPIMockRecorder) PublishBatchRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishBatchRequest", reflect.TypeOf((*MockSNSAPI)(nil).PublishBatchRequest), arg0)
+}
+
+// PublishBatchWithContext mocks base method
+func (m *MockSNSAPI) PublishBatchWithContext(arg0 context.Context, arg1 *sns.PublishBatchInput, arg2 ...request.Option) (*sns.PublishBatchOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PublishBatchWithContext", varargs...)
+	ret0, _ := ret[0].(*sns.PublishBatchOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PublishBatchWithContext indicates an expected call of PublishBatchWithContext
+func (mr *MockSNSAPIMockRecorder) PublishBatchWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishBatchWithContext", reflect.TypeOf((*MockSNSAPI)(nil).PublishBatchWithContext), varargs...)
+}
+
 // PublishRequest mocks base method
 func (m *MockSNSAPI) PublishRequest(arg0 *sns.PublishInput) (*request.Request, *sns.PublishOutput) {
 	m.ctrl.T.Helper()
