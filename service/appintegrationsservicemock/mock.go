@@ -35,6 +35,56 @@ func (m *MockAppIntegrationsServiceAPI) EXPECT() *MockAppIntegrationsServiceAPIM
 	return m.recorder
 }
 
+// CreateDataIntegration mocks base method
+func (m *MockAppIntegrationsServiceAPI) CreateDataIntegration(arg0 *appintegrationsservice.CreateDataIntegrationInput) (*appintegrationsservice.CreateDataIntegrationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDataIntegration", arg0)
+	ret0, _ := ret[0].(*appintegrationsservice.CreateDataIntegrationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDataIntegration indicates an expected call of CreateDataIntegration
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) CreateDataIntegration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataIntegration", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).CreateDataIntegration), arg0)
+}
+
+// CreateDataIntegrationRequest mocks base method
+func (m *MockAppIntegrationsServiceAPI) CreateDataIntegrationRequest(arg0 *appintegrationsservice.CreateDataIntegrationInput) (*request.Request, *appintegrationsservice.CreateDataIntegrationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDataIntegrationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appintegrationsservice.CreateDataIntegrationOutput)
+	return ret0, ret1
+}
+
+// CreateDataIntegrationRequest indicates an expected call of CreateDataIntegrationRequest
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) CreateDataIntegrationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataIntegrationRequest", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).CreateDataIntegrationRequest), arg0)
+}
+
+// CreateDataIntegrationWithContext mocks base method
+func (m *MockAppIntegrationsServiceAPI) CreateDataIntegrationWithContext(arg0 context.Context, arg1 *appintegrationsservice.CreateDataIntegrationInput, arg2 ...request.Option) (*appintegrationsservice.CreateDataIntegrationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDataIntegrationWithContext", varargs...)
+	ret0, _ := ret[0].(*appintegrationsservice.CreateDataIntegrationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDataIntegrationWithContext indicates an expected call of CreateDataIntegrationWithContext
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) CreateDataIntegrationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataIntegrationWithContext", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).CreateDataIntegrationWithContext), varargs...)
+}
+
 // CreateEventIntegration mocks base method
 func (m *MockAppIntegrationsServiceAPI) CreateEventIntegration(arg0 *appintegrationsservice.CreateEventIntegrationInput) (*appintegrationsservice.CreateEventIntegrationOutput, error) {
 	m.ctrl.T.Helper()
@@ -83,6 +133,56 @@ func (mr *MockAppIntegrationsServiceAPIMockRecorder) CreateEventIntegrationWithC
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEventIntegrationWithContext", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).CreateEventIntegrationWithContext), varargs...)
+}
+
+// DeleteDataIntegration mocks base method
+func (m *MockAppIntegrationsServiceAPI) DeleteDataIntegration(arg0 *appintegrationsservice.DeleteDataIntegrationInput) (*appintegrationsservice.DeleteDataIntegrationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDataIntegration", arg0)
+	ret0, _ := ret[0].(*appintegrationsservice.DeleteDataIntegrationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDataIntegration indicates an expected call of DeleteDataIntegration
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) DeleteDataIntegration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataIntegration", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).DeleteDataIntegration), arg0)
+}
+
+// DeleteDataIntegrationRequest mocks base method
+func (m *MockAppIntegrationsServiceAPI) DeleteDataIntegrationRequest(arg0 *appintegrationsservice.DeleteDataIntegrationInput) (*request.Request, *appintegrationsservice.DeleteDataIntegrationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDataIntegrationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appintegrationsservice.DeleteDataIntegrationOutput)
+	return ret0, ret1
+}
+
+// DeleteDataIntegrationRequest indicates an expected call of DeleteDataIntegrationRequest
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) DeleteDataIntegrationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataIntegrationRequest", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).DeleteDataIntegrationRequest), arg0)
+}
+
+// DeleteDataIntegrationWithContext mocks base method
+func (m *MockAppIntegrationsServiceAPI) DeleteDataIntegrationWithContext(arg0 context.Context, arg1 *appintegrationsservice.DeleteDataIntegrationInput, arg2 ...request.Option) (*appintegrationsservice.DeleteDataIntegrationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDataIntegrationWithContext", varargs...)
+	ret0, _ := ret[0].(*appintegrationsservice.DeleteDataIntegrationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDataIntegrationWithContext indicates an expected call of DeleteDataIntegrationWithContext
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) DeleteDataIntegrationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataIntegrationWithContext", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).DeleteDataIntegrationWithContext), varargs...)
 }
 
 // DeleteEventIntegration mocks base method
@@ -135,6 +235,56 @@ func (mr *MockAppIntegrationsServiceAPIMockRecorder) DeleteEventIntegrationWithC
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventIntegrationWithContext", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).DeleteEventIntegrationWithContext), varargs...)
 }
 
+// GetDataIntegration mocks base method
+func (m *MockAppIntegrationsServiceAPI) GetDataIntegration(arg0 *appintegrationsservice.GetDataIntegrationInput) (*appintegrationsservice.GetDataIntegrationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataIntegration", arg0)
+	ret0, _ := ret[0].(*appintegrationsservice.GetDataIntegrationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataIntegration indicates an expected call of GetDataIntegration
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) GetDataIntegration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataIntegration", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).GetDataIntegration), arg0)
+}
+
+// GetDataIntegrationRequest mocks base method
+func (m *MockAppIntegrationsServiceAPI) GetDataIntegrationRequest(arg0 *appintegrationsservice.GetDataIntegrationInput) (*request.Request, *appintegrationsservice.GetDataIntegrationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataIntegrationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appintegrationsservice.GetDataIntegrationOutput)
+	return ret0, ret1
+}
+
+// GetDataIntegrationRequest indicates an expected call of GetDataIntegrationRequest
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) GetDataIntegrationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataIntegrationRequest", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).GetDataIntegrationRequest), arg0)
+}
+
+// GetDataIntegrationWithContext mocks base method
+func (m *MockAppIntegrationsServiceAPI) GetDataIntegrationWithContext(arg0 context.Context, arg1 *appintegrationsservice.GetDataIntegrationInput, arg2 ...request.Option) (*appintegrationsservice.GetDataIntegrationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDataIntegrationWithContext", varargs...)
+	ret0, _ := ret[0].(*appintegrationsservice.GetDataIntegrationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataIntegrationWithContext indicates an expected call of GetDataIntegrationWithContext
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) GetDataIntegrationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataIntegrationWithContext", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).GetDataIntegrationWithContext), varargs...)
+}
+
 // GetEventIntegration mocks base method
 func (m *MockAppIntegrationsServiceAPI) GetEventIntegration(arg0 *appintegrationsservice.GetEventIntegrationInput) (*appintegrationsservice.GetEventIntegrationOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +333,106 @@ func (mr *MockAppIntegrationsServiceAPIMockRecorder) GetEventIntegrationWithCont
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEventIntegrationWithContext", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).GetEventIntegrationWithContext), varargs...)
+}
+
+// ListDataIntegrationAssociations mocks base method
+func (m *MockAppIntegrationsServiceAPI) ListDataIntegrationAssociations(arg0 *appintegrationsservice.ListDataIntegrationAssociationsInput) (*appintegrationsservice.ListDataIntegrationAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataIntegrationAssociations", arg0)
+	ret0, _ := ret[0].(*appintegrationsservice.ListDataIntegrationAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataIntegrationAssociations indicates an expected call of ListDataIntegrationAssociations
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) ListDataIntegrationAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataIntegrationAssociations", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).ListDataIntegrationAssociations), arg0)
+}
+
+// ListDataIntegrationAssociationsRequest mocks base method
+func (m *MockAppIntegrationsServiceAPI) ListDataIntegrationAssociationsRequest(arg0 *appintegrationsservice.ListDataIntegrationAssociationsInput) (*request.Request, *appintegrationsservice.ListDataIntegrationAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataIntegrationAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appintegrationsservice.ListDataIntegrationAssociationsOutput)
+	return ret0, ret1
+}
+
+// ListDataIntegrationAssociationsRequest indicates an expected call of ListDataIntegrationAssociationsRequest
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) ListDataIntegrationAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataIntegrationAssociationsRequest", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).ListDataIntegrationAssociationsRequest), arg0)
+}
+
+// ListDataIntegrationAssociationsWithContext mocks base method
+func (m *MockAppIntegrationsServiceAPI) ListDataIntegrationAssociationsWithContext(arg0 context.Context, arg1 *appintegrationsservice.ListDataIntegrationAssociationsInput, arg2 ...request.Option) (*appintegrationsservice.ListDataIntegrationAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDataIntegrationAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*appintegrationsservice.ListDataIntegrationAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataIntegrationAssociationsWithContext indicates an expected call of ListDataIntegrationAssociationsWithContext
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) ListDataIntegrationAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataIntegrationAssociationsWithContext", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).ListDataIntegrationAssociationsWithContext), varargs...)
+}
+
+// ListDataIntegrations mocks base method
+func (m *MockAppIntegrationsServiceAPI) ListDataIntegrations(arg0 *appintegrationsservice.ListDataIntegrationsInput) (*appintegrationsservice.ListDataIntegrationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataIntegrations", arg0)
+	ret0, _ := ret[0].(*appintegrationsservice.ListDataIntegrationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataIntegrations indicates an expected call of ListDataIntegrations
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) ListDataIntegrations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataIntegrations", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).ListDataIntegrations), arg0)
+}
+
+// ListDataIntegrationsRequest mocks base method
+func (m *MockAppIntegrationsServiceAPI) ListDataIntegrationsRequest(arg0 *appintegrationsservice.ListDataIntegrationsInput) (*request.Request, *appintegrationsservice.ListDataIntegrationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataIntegrationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appintegrationsservice.ListDataIntegrationsOutput)
+	return ret0, ret1
+}
+
+// ListDataIntegrationsRequest indicates an expected call of ListDataIntegrationsRequest
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) ListDataIntegrationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataIntegrationsRequest", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).ListDataIntegrationsRequest), arg0)
+}
+
+// ListDataIntegrationsWithContext mocks base method
+func (m *MockAppIntegrationsServiceAPI) ListDataIntegrationsWithContext(arg0 context.Context, arg1 *appintegrationsservice.ListDataIntegrationsInput, arg2 ...request.Option) (*appintegrationsservice.ListDataIntegrationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDataIntegrationsWithContext", varargs...)
+	ret0, _ := ret[0].(*appintegrationsservice.ListDataIntegrationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataIntegrationsWithContext indicates an expected call of ListDataIntegrationsWithContext
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) ListDataIntegrationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataIntegrationsWithContext", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).ListDataIntegrationsWithContext), varargs...)
 }
 
 // ListEventIntegrationAssociations mocks base method
@@ -433,6 +683,56 @@ func (mr *MockAppIntegrationsServiceAPIMockRecorder) UntagResourceWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateDataIntegration mocks base method
+func (m *MockAppIntegrationsServiceAPI) UpdateDataIntegration(arg0 *appintegrationsservice.UpdateDataIntegrationInput) (*appintegrationsservice.UpdateDataIntegrationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDataIntegration", arg0)
+	ret0, _ := ret[0].(*appintegrationsservice.UpdateDataIntegrationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDataIntegration indicates an expected call of UpdateDataIntegration
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) UpdateDataIntegration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataIntegration", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).UpdateDataIntegration), arg0)
+}
+
+// UpdateDataIntegrationRequest mocks base method
+func (m *MockAppIntegrationsServiceAPI) UpdateDataIntegrationRequest(arg0 *appintegrationsservice.UpdateDataIntegrationInput) (*request.Request, *appintegrationsservice.UpdateDataIntegrationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDataIntegrationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appintegrationsservice.UpdateDataIntegrationOutput)
+	return ret0, ret1
+}
+
+// UpdateDataIntegrationRequest indicates an expected call of UpdateDataIntegrationRequest
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) UpdateDataIntegrationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataIntegrationRequest", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).UpdateDataIntegrationRequest), arg0)
+}
+
+// UpdateDataIntegrationWithContext mocks base method
+func (m *MockAppIntegrationsServiceAPI) UpdateDataIntegrationWithContext(arg0 context.Context, arg1 *appintegrationsservice.UpdateDataIntegrationInput, arg2 ...request.Option) (*appintegrationsservice.UpdateDataIntegrationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDataIntegrationWithContext", varargs...)
+	ret0, _ := ret[0].(*appintegrationsservice.UpdateDataIntegrationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDataIntegrationWithContext indicates an expected call of UpdateDataIntegrationWithContext
+func (mr *MockAppIntegrationsServiceAPIMockRecorder) UpdateDataIntegrationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataIntegrationWithContext", reflect.TypeOf((*MockAppIntegrationsServiceAPI)(nil).UpdateDataIntegrationWithContext), varargs...)
 }
 
 // UpdateEventIntegration mocks base method
