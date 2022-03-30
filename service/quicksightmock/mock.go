@@ -2535,6 +2535,56 @@ func (mr *MockQuickSightAPIMockRecorder) DescribeIngestionWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIngestionWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeIngestionWithContext), varargs...)
 }
 
+// DescribeIpRestriction mocks base method
+func (m *MockQuickSightAPI) DescribeIpRestriction(arg0 *quicksight.DescribeIpRestrictionInput) (*quicksight.DescribeIpRestrictionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeIpRestriction", arg0)
+	ret0, _ := ret[0].(*quicksight.DescribeIpRestrictionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeIpRestriction indicates an expected call of DescribeIpRestriction
+func (mr *MockQuickSightAPIMockRecorder) DescribeIpRestriction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIpRestriction", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeIpRestriction), arg0)
+}
+
+// DescribeIpRestrictionRequest mocks base method
+func (m *MockQuickSightAPI) DescribeIpRestrictionRequest(arg0 *quicksight.DescribeIpRestrictionInput) (*request.Request, *quicksight.DescribeIpRestrictionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeIpRestrictionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.DescribeIpRestrictionOutput)
+	return ret0, ret1
+}
+
+// DescribeIpRestrictionRequest indicates an expected call of DescribeIpRestrictionRequest
+func (mr *MockQuickSightAPIMockRecorder) DescribeIpRestrictionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIpRestrictionRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeIpRestrictionRequest), arg0)
+}
+
+// DescribeIpRestrictionWithContext mocks base method
+func (m *MockQuickSightAPI) DescribeIpRestrictionWithContext(arg0 context.Context, arg1 *quicksight.DescribeIpRestrictionInput, arg2 ...request.Option) (*quicksight.DescribeIpRestrictionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeIpRestrictionWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.DescribeIpRestrictionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeIpRestrictionWithContext indicates an expected call of DescribeIpRestrictionWithContext
+func (mr *MockQuickSightAPIMockRecorder) DescribeIpRestrictionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeIpRestrictionWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeIpRestrictionWithContext), varargs...)
+}
+
 // DescribeNamespace mocks base method
 func (m *MockQuickSightAPI) DescribeNamespace(arg0 *quicksight.DescribeNamespaceInput) (*quicksight.DescribeNamespaceOutput, error) {
 	m.ctrl.T.Helper()
@@ -5795,6 +5845,56 @@ func (mr *MockQuickSightAPIMockRecorder) UpdateIAMPolicyAssignmentWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIAMPolicyAssignmentWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdateIAMPolicyAssignmentWithContext), varargs...)
+}
+
+// UpdateIpRestriction mocks base method
+func (m *MockQuickSightAPI) UpdateIpRestriction(arg0 *quicksight.UpdateIpRestrictionInput) (*quicksight.UpdateIpRestrictionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateIpRestriction", arg0)
+	ret0, _ := ret[0].(*quicksight.UpdateIpRestrictionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateIpRestriction indicates an expected call of UpdateIpRestriction
+func (mr *MockQuickSightAPIMockRecorder) UpdateIpRestriction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIpRestriction", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdateIpRestriction), arg0)
+}
+
+// UpdateIpRestrictionRequest mocks base method
+func (m *MockQuickSightAPI) UpdateIpRestrictionRequest(arg0 *quicksight.UpdateIpRestrictionInput) (*request.Request, *quicksight.UpdateIpRestrictionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateIpRestrictionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.UpdateIpRestrictionOutput)
+	return ret0, ret1
+}
+
+// UpdateIpRestrictionRequest indicates an expected call of UpdateIpRestrictionRequest
+func (mr *MockQuickSightAPIMockRecorder) UpdateIpRestrictionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIpRestrictionRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdateIpRestrictionRequest), arg0)
+}
+
+// UpdateIpRestrictionWithContext mocks base method
+func (m *MockQuickSightAPI) UpdateIpRestrictionWithContext(arg0 context.Context, arg1 *quicksight.UpdateIpRestrictionInput, arg2 ...request.Option) (*quicksight.UpdateIpRestrictionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateIpRestrictionWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.UpdateIpRestrictionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateIpRestrictionWithContext indicates an expected call of UpdateIpRestrictionWithContext
+func (mr *MockQuickSightAPIMockRecorder) UpdateIpRestrictionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIpRestrictionWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdateIpRestrictionWithContext), varargs...)
 }
 
 // UpdateTemplate mocks base method

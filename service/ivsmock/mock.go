@@ -1215,39 +1215,6 @@ func (mr *MockIVSAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockIVSAPI)(nil).ListTagsForResource), arg0)
 }
 
-// ListTagsForResourcePages mocks base method
-func (m *MockIVSAPI) ListTagsForResourcePages(arg0 *ivs.ListTagsForResourceInput, arg1 func(*ivs.ListTagsForResourceOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListTagsForResourcePages", arg0, arg1)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTagsForResourcePages indicates an expected call of ListTagsForResourcePages
-func (mr *MockIVSAPIMockRecorder) ListTagsForResourcePages(arg0, arg1 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePages", reflect.TypeOf((*MockIVSAPI)(nil).ListTagsForResourcePages), arg0, arg1)
-}
-
-// ListTagsForResourcePagesWithContext mocks base method
-func (m *MockIVSAPI) ListTagsForResourcePagesWithContext(arg0 context.Context, arg1 *ivs.ListTagsForResourceInput, arg2 func(*ivs.ListTagsForResourceOutput, bool) bool, arg3 ...request.Option) error {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1, arg2}
-	for _, a := range arg3 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "ListTagsForResourcePagesWithContext", varargs...)
-	ret0, _ := ret[0].(error)
-	return ret0
-}
-
-// ListTagsForResourcePagesWithContext indicates an expected call of ListTagsForResourcePagesWithContext
-func (mr *MockIVSAPIMockRecorder) ListTagsForResourcePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePagesWithContext", reflect.TypeOf((*MockIVSAPI)(nil).ListTagsForResourcePagesWithContext), varargs...)
-}
-
 // ListTagsForResourceRequest mocks base method
 func (m *MockIVSAPI) ListTagsForResourceRequest(arg0 *ivs.ListTagsForResourceInput) (*request.Request, *ivs.ListTagsForResourceOutput) {
 	m.ctrl.T.Helper()
