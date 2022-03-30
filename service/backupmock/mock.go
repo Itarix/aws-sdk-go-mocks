@@ -450,6 +450,56 @@ func (mr *MockBackupAPIMockRecorder) DeleteBackupVaultAccessPolicyWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackupVaultAccessPolicyWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DeleteBackupVaultAccessPolicyWithContext), varargs...)
 }
 
+// DeleteBackupVaultLockConfiguration mocks base method
+func (m *MockBackupAPI) DeleteBackupVaultLockConfiguration(arg0 *backup.DeleteBackupVaultLockConfigurationInput) (*backup.DeleteBackupVaultLockConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBackupVaultLockConfiguration", arg0)
+	ret0, _ := ret[0].(*backup.DeleteBackupVaultLockConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBackupVaultLockConfiguration indicates an expected call of DeleteBackupVaultLockConfiguration
+func (mr *MockBackupAPIMockRecorder) DeleteBackupVaultLockConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackupVaultLockConfiguration", reflect.TypeOf((*MockBackupAPI)(nil).DeleteBackupVaultLockConfiguration), arg0)
+}
+
+// DeleteBackupVaultLockConfigurationRequest mocks base method
+func (m *MockBackupAPI) DeleteBackupVaultLockConfigurationRequest(arg0 *backup.DeleteBackupVaultLockConfigurationInput) (*request.Request, *backup.DeleteBackupVaultLockConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBackupVaultLockConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.DeleteBackupVaultLockConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteBackupVaultLockConfigurationRequest indicates an expected call of DeleteBackupVaultLockConfigurationRequest
+func (mr *MockBackupAPIMockRecorder) DeleteBackupVaultLockConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackupVaultLockConfigurationRequest", reflect.TypeOf((*MockBackupAPI)(nil).DeleteBackupVaultLockConfigurationRequest), arg0)
+}
+
+// DeleteBackupVaultLockConfigurationWithContext mocks base method
+func (m *MockBackupAPI) DeleteBackupVaultLockConfigurationWithContext(arg0 context.Context, arg1 *backup.DeleteBackupVaultLockConfigurationInput, arg2 ...request.Option) (*backup.DeleteBackupVaultLockConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteBackupVaultLockConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.DeleteBackupVaultLockConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBackupVaultLockConfigurationWithContext indicates an expected call of DeleteBackupVaultLockConfigurationWithContext
+func (mr *MockBackupAPIMockRecorder) DeleteBackupVaultLockConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBackupVaultLockConfigurationWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DeleteBackupVaultLockConfigurationWithContext), varargs...)
+}
+
 // DeleteBackupVaultNotifications mocks base method
 func (m *MockBackupAPI) DeleteBackupVaultNotifications(arg0 *backup.DeleteBackupVaultNotificationsInput) (*backup.DeleteBackupVaultNotificationsOutput, error) {
 	m.ctrl.T.Helper()
@@ -3028,6 +3078,56 @@ func (mr *MockBackupAPIMockRecorder) PutBackupVaultAccessPolicyWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBackupVaultAccessPolicyWithContext", reflect.TypeOf((*MockBackupAPI)(nil).PutBackupVaultAccessPolicyWithContext), varargs...)
+}
+
+// PutBackupVaultLockConfiguration mocks base method
+func (m *MockBackupAPI) PutBackupVaultLockConfiguration(arg0 *backup.PutBackupVaultLockConfigurationInput) (*backup.PutBackupVaultLockConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutBackupVaultLockConfiguration", arg0)
+	ret0, _ := ret[0].(*backup.PutBackupVaultLockConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutBackupVaultLockConfiguration indicates an expected call of PutBackupVaultLockConfiguration
+func (mr *MockBackupAPIMockRecorder) PutBackupVaultLockConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBackupVaultLockConfiguration", reflect.TypeOf((*MockBackupAPI)(nil).PutBackupVaultLockConfiguration), arg0)
+}
+
+// PutBackupVaultLockConfigurationRequest mocks base method
+func (m *MockBackupAPI) PutBackupVaultLockConfigurationRequest(arg0 *backup.PutBackupVaultLockConfigurationInput) (*request.Request, *backup.PutBackupVaultLockConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutBackupVaultLockConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.PutBackupVaultLockConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutBackupVaultLockConfigurationRequest indicates an expected call of PutBackupVaultLockConfigurationRequest
+func (mr *MockBackupAPIMockRecorder) PutBackupVaultLockConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBackupVaultLockConfigurationRequest", reflect.TypeOf((*MockBackupAPI)(nil).PutBackupVaultLockConfigurationRequest), arg0)
+}
+
+// PutBackupVaultLockConfigurationWithContext mocks base method
+func (m *MockBackupAPI) PutBackupVaultLockConfigurationWithContext(arg0 context.Context, arg1 *backup.PutBackupVaultLockConfigurationInput, arg2 ...request.Option) (*backup.PutBackupVaultLockConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutBackupVaultLockConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.PutBackupVaultLockConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutBackupVaultLockConfigurationWithContext indicates an expected call of PutBackupVaultLockConfigurationWithContext
+func (mr *MockBackupAPIMockRecorder) PutBackupVaultLockConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBackupVaultLockConfigurationWithContext", reflect.TypeOf((*MockBackupAPI)(nil).PutBackupVaultLockConfigurationWithContext), varargs...)
 }
 
 // PutBackupVaultNotifications mocks base method
