@@ -535,6 +535,56 @@ func (mr *MockAppStreamAPIMockRecorder) CreateStreamingURLWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStreamingURLWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateStreamingURLWithContext), varargs...)
 }
 
+// CreateUpdatedImage mocks base method
+func (m *MockAppStreamAPI) CreateUpdatedImage(arg0 *appstream.CreateUpdatedImageInput) (*appstream.CreateUpdatedImageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUpdatedImage", arg0)
+	ret0, _ := ret[0].(*appstream.CreateUpdatedImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUpdatedImage indicates an expected call of CreateUpdatedImage
+func (mr *MockAppStreamAPIMockRecorder) CreateUpdatedImage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUpdatedImage", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateUpdatedImage), arg0)
+}
+
+// CreateUpdatedImageRequest mocks base method
+func (m *MockAppStreamAPI) CreateUpdatedImageRequest(arg0 *appstream.CreateUpdatedImageInput) (*request.Request, *appstream.CreateUpdatedImageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUpdatedImageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.CreateUpdatedImageOutput)
+	return ret0, ret1
+}
+
+// CreateUpdatedImageRequest indicates an expected call of CreateUpdatedImageRequest
+func (mr *MockAppStreamAPIMockRecorder) CreateUpdatedImageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUpdatedImageRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateUpdatedImageRequest), arg0)
+}
+
+// CreateUpdatedImageWithContext mocks base method
+func (m *MockAppStreamAPI) CreateUpdatedImageWithContext(arg0 context.Context, arg1 *appstream.CreateUpdatedImageInput, arg2 ...request.Option) (*appstream.CreateUpdatedImageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateUpdatedImageWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.CreateUpdatedImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUpdatedImageWithContext indicates an expected call of CreateUpdatedImageWithContext
+func (mr *MockAppStreamAPIMockRecorder) CreateUpdatedImageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUpdatedImageWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateUpdatedImageWithContext), varargs...)
+}
+
 // CreateUsageReportSubscription mocks base method
 func (m *MockAppStreamAPI) CreateUsageReportSubscription(arg0 *appstream.CreateUsageReportSubscriptionInput) (*appstream.CreateUsageReportSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
