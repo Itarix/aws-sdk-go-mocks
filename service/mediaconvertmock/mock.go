@@ -385,6 +385,56 @@ func (mr *MockMediaConvertAPIMockRecorder) DeleteJobTemplateWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobTemplateWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeleteJobTemplateWithContext), varargs...)
 }
 
+// DeletePolicy mocks base method
+func (m *MockMediaConvertAPI) DeletePolicy(arg0 *mediaconvert.DeletePolicyInput) (*mediaconvert.DeletePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePolicy", arg0)
+	ret0, _ := ret[0].(*mediaconvert.DeletePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePolicy indicates an expected call of DeletePolicy
+func (mr *MockMediaConvertAPIMockRecorder) DeletePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePolicy", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeletePolicy), arg0)
+}
+
+// DeletePolicyRequest mocks base method
+func (m *MockMediaConvertAPI) DeletePolicyRequest(arg0 *mediaconvert.DeletePolicyInput) (*request.Request, *mediaconvert.DeletePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconvert.DeletePolicyOutput)
+	return ret0, ret1
+}
+
+// DeletePolicyRequest indicates an expected call of DeletePolicyRequest
+func (mr *MockMediaConvertAPIMockRecorder) DeletePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePolicyRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeletePolicyRequest), arg0)
+}
+
+// DeletePolicyWithContext mocks base method
+func (m *MockMediaConvertAPI) DeletePolicyWithContext(arg0 context.Context, arg1 *mediaconvert.DeletePolicyInput, arg2 ...request.Option) (*mediaconvert.DeletePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconvert.DeletePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePolicyWithContext indicates an expected call of DeletePolicyWithContext
+func (mr *MockMediaConvertAPIMockRecorder) DeletePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePolicyWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).DeletePolicyWithContext), varargs...)
+}
+
 // DeletePreset mocks base method
 func (m *MockMediaConvertAPI) DeletePreset(arg0 *mediaconvert.DeletePresetInput) (*mediaconvert.DeletePresetOutput, error) {
 	m.ctrl.T.Helper()
@@ -716,6 +766,56 @@ func (mr *MockMediaConvertAPIMockRecorder) GetJobWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetJobWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetJobWithContext), varargs...)
+}
+
+// GetPolicy mocks base method
+func (m *MockMediaConvertAPI) GetPolicy(arg0 *mediaconvert.GetPolicyInput) (*mediaconvert.GetPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPolicy", arg0)
+	ret0, _ := ret[0].(*mediaconvert.GetPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPolicy indicates an expected call of GetPolicy
+func (mr *MockMediaConvertAPIMockRecorder) GetPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicy", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetPolicy), arg0)
+}
+
+// GetPolicyRequest mocks base method
+func (m *MockMediaConvertAPI) GetPolicyRequest(arg0 *mediaconvert.GetPolicyInput) (*request.Request, *mediaconvert.GetPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconvert.GetPolicyOutput)
+	return ret0, ret1
+}
+
+// GetPolicyRequest indicates an expected call of GetPolicyRequest
+func (mr *MockMediaConvertAPIMockRecorder) GetPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicyRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetPolicyRequest), arg0)
+}
+
+// GetPolicyWithContext mocks base method
+func (m *MockMediaConvertAPI) GetPolicyWithContext(arg0 context.Context, arg1 *mediaconvert.GetPolicyInput, arg2 ...request.Option) (*mediaconvert.GetPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconvert.GetPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPolicyWithContext indicates an expected call of GetPolicyWithContext
+func (mr *MockMediaConvertAPIMockRecorder) GetPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPolicyWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).GetPolicyWithContext), varargs...)
 }
 
 // GetPreset mocks base method
@@ -1198,6 +1298,56 @@ func (mr *MockMediaConvertAPIMockRecorder) ListTagsForResourceWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// PutPolicy mocks base method
+func (m *MockMediaConvertAPI) PutPolicy(arg0 *mediaconvert.PutPolicyInput) (*mediaconvert.PutPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPolicy", arg0)
+	ret0, _ := ret[0].(*mediaconvert.PutPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPolicy indicates an expected call of PutPolicy
+func (mr *MockMediaConvertAPIMockRecorder) PutPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPolicy", reflect.TypeOf((*MockMediaConvertAPI)(nil).PutPolicy), arg0)
+}
+
+// PutPolicyRequest mocks base method
+func (m *MockMediaConvertAPI) PutPolicyRequest(arg0 *mediaconvert.PutPolicyInput) (*request.Request, *mediaconvert.PutPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconvert.PutPolicyOutput)
+	return ret0, ret1
+}
+
+// PutPolicyRequest indicates an expected call of PutPolicyRequest
+func (mr *MockMediaConvertAPIMockRecorder) PutPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPolicyRequest", reflect.TypeOf((*MockMediaConvertAPI)(nil).PutPolicyRequest), arg0)
+}
+
+// PutPolicyWithContext mocks base method
+func (m *MockMediaConvertAPI) PutPolicyWithContext(arg0 context.Context, arg1 *mediaconvert.PutPolicyInput, arg2 ...request.Option) (*mediaconvert.PutPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconvert.PutPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPolicyWithContext indicates an expected call of PutPolicyWithContext
+func (mr *MockMediaConvertAPIMockRecorder) PutPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPolicyWithContext", reflect.TypeOf((*MockMediaConvertAPI)(nil).PutPolicyWithContext), varargs...)
 }
 
 // TagResource mocks base method
