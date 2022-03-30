@@ -535,6 +535,56 @@ func (mr *MockComputeOptimizerAPIMockRecorder) GetEnrollmentStatusWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnrollmentStatusWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetEnrollmentStatusWithContext), varargs...)
 }
 
+// GetEnrollmentStatusesForOrganization mocks base method
+func (m *MockComputeOptimizerAPI) GetEnrollmentStatusesForOrganization(arg0 *computeoptimizer.GetEnrollmentStatusesForOrganizationInput) (*computeoptimizer.GetEnrollmentStatusesForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEnrollmentStatusesForOrganization", arg0)
+	ret0, _ := ret[0].(*computeoptimizer.GetEnrollmentStatusesForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEnrollmentStatusesForOrganization indicates an expected call of GetEnrollmentStatusesForOrganization
+func (mr *MockComputeOptimizerAPIMockRecorder) GetEnrollmentStatusesForOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnrollmentStatusesForOrganization", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetEnrollmentStatusesForOrganization), arg0)
+}
+
+// GetEnrollmentStatusesForOrganizationRequest mocks base method
+func (m *MockComputeOptimizerAPI) GetEnrollmentStatusesForOrganizationRequest(arg0 *computeoptimizer.GetEnrollmentStatusesForOrganizationInput) (*request.Request, *computeoptimizer.GetEnrollmentStatusesForOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEnrollmentStatusesForOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*computeoptimizer.GetEnrollmentStatusesForOrganizationOutput)
+	return ret0, ret1
+}
+
+// GetEnrollmentStatusesForOrganizationRequest indicates an expected call of GetEnrollmentStatusesForOrganizationRequest
+func (mr *MockComputeOptimizerAPIMockRecorder) GetEnrollmentStatusesForOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnrollmentStatusesForOrganizationRequest", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetEnrollmentStatusesForOrganizationRequest), arg0)
+}
+
+// GetEnrollmentStatusesForOrganizationWithContext mocks base method
+func (m *MockComputeOptimizerAPI) GetEnrollmentStatusesForOrganizationWithContext(arg0 context.Context, arg1 *computeoptimizer.GetEnrollmentStatusesForOrganizationInput, arg2 ...request.Option) (*computeoptimizer.GetEnrollmentStatusesForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetEnrollmentStatusesForOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*computeoptimizer.GetEnrollmentStatusesForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEnrollmentStatusesForOrganizationWithContext indicates an expected call of GetEnrollmentStatusesForOrganizationWithContext
+func (mr *MockComputeOptimizerAPIMockRecorder) GetEnrollmentStatusesForOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnrollmentStatusesForOrganizationWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetEnrollmentStatusesForOrganizationWithContext), varargs...)
+}
+
 // GetLambdaFunctionRecommendations mocks base method
 func (m *MockComputeOptimizerAPI) GetLambdaFunctionRecommendations(arg0 *computeoptimizer.GetLambdaFunctionRecommendationsInput) (*computeoptimizer.GetLambdaFunctionRecommendationsOutput, error) {
 	m.ctrl.T.Helper()
