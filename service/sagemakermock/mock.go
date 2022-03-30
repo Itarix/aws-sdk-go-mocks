@@ -2035,6 +2035,56 @@ func (mr *MockSageMakerAPIMockRecorder) CreateProjectWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProjectWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateProjectWithContext), varargs...)
 }
 
+// CreateStudioLifecycleConfig mocks base method
+func (m *MockSageMakerAPI) CreateStudioLifecycleConfig(arg0 *sagemaker.CreateStudioLifecycleConfigInput) (*sagemaker.CreateStudioLifecycleConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateStudioLifecycleConfig", arg0)
+	ret0, _ := ret[0].(*sagemaker.CreateStudioLifecycleConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateStudioLifecycleConfig indicates an expected call of CreateStudioLifecycleConfig
+func (mr *MockSageMakerAPIMockRecorder) CreateStudioLifecycleConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudioLifecycleConfig", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateStudioLifecycleConfig), arg0)
+}
+
+// CreateStudioLifecycleConfigRequest mocks base method
+func (m *MockSageMakerAPI) CreateStudioLifecycleConfigRequest(arg0 *sagemaker.CreateStudioLifecycleConfigInput) (*request.Request, *sagemaker.CreateStudioLifecycleConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateStudioLifecycleConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.CreateStudioLifecycleConfigOutput)
+	return ret0, ret1
+}
+
+// CreateStudioLifecycleConfigRequest indicates an expected call of CreateStudioLifecycleConfigRequest
+func (mr *MockSageMakerAPIMockRecorder) CreateStudioLifecycleConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudioLifecycleConfigRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateStudioLifecycleConfigRequest), arg0)
+}
+
+// CreateStudioLifecycleConfigWithContext mocks base method
+func (m *MockSageMakerAPI) CreateStudioLifecycleConfigWithContext(arg0 context.Context, arg1 *sagemaker.CreateStudioLifecycleConfigInput, arg2 ...request.Option) (*sagemaker.CreateStudioLifecycleConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateStudioLifecycleConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.CreateStudioLifecycleConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateStudioLifecycleConfigWithContext indicates an expected call of CreateStudioLifecycleConfigWithContext
+func (mr *MockSageMakerAPIMockRecorder) CreateStudioLifecycleConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStudioLifecycleConfigWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateStudioLifecycleConfigWithContext), varargs...)
+}
+
 // CreateTrainingJob mocks base method
 func (m *MockSageMakerAPI) CreateTrainingJob(arg0 *sagemaker.CreateTrainingJobInput) (*sagemaker.CreateTrainingJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -3933,6 +3983,56 @@ func (mr *MockSageMakerAPIMockRecorder) DeleteProjectWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteProjectWithContext), varargs...)
+}
+
+// DeleteStudioLifecycleConfig mocks base method
+func (m *MockSageMakerAPI) DeleteStudioLifecycleConfig(arg0 *sagemaker.DeleteStudioLifecycleConfigInput) (*sagemaker.DeleteStudioLifecycleConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStudioLifecycleConfig", arg0)
+	ret0, _ := ret[0].(*sagemaker.DeleteStudioLifecycleConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStudioLifecycleConfig indicates an expected call of DeleteStudioLifecycleConfig
+func (mr *MockSageMakerAPIMockRecorder) DeleteStudioLifecycleConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudioLifecycleConfig", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteStudioLifecycleConfig), arg0)
+}
+
+// DeleteStudioLifecycleConfigRequest mocks base method
+func (m *MockSageMakerAPI) DeleteStudioLifecycleConfigRequest(arg0 *sagemaker.DeleteStudioLifecycleConfigInput) (*request.Request, *sagemaker.DeleteStudioLifecycleConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStudioLifecycleConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DeleteStudioLifecycleConfigOutput)
+	return ret0, ret1
+}
+
+// DeleteStudioLifecycleConfigRequest indicates an expected call of DeleteStudioLifecycleConfigRequest
+func (mr *MockSageMakerAPIMockRecorder) DeleteStudioLifecycleConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudioLifecycleConfigRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteStudioLifecycleConfigRequest), arg0)
+}
+
+// DeleteStudioLifecycleConfigWithContext mocks base method
+func (m *MockSageMakerAPI) DeleteStudioLifecycleConfigWithContext(arg0 context.Context, arg1 *sagemaker.DeleteStudioLifecycleConfigInput, arg2 ...request.Option) (*sagemaker.DeleteStudioLifecycleConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteStudioLifecycleConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DeleteStudioLifecycleConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStudioLifecycleConfigWithContext indicates an expected call of DeleteStudioLifecycleConfigWithContext
+func (mr *MockSageMakerAPIMockRecorder) DeleteStudioLifecycleConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStudioLifecycleConfigWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteStudioLifecycleConfigWithContext), varargs...)
 }
 
 // DeleteTags mocks base method
@@ -6183,6 +6283,56 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeProjectWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProjectWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeProjectWithContext), varargs...)
+}
+
+// DescribeStudioLifecycleConfig mocks base method
+func (m *MockSageMakerAPI) DescribeStudioLifecycleConfig(arg0 *sagemaker.DescribeStudioLifecycleConfigInput) (*sagemaker.DescribeStudioLifecycleConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStudioLifecycleConfig", arg0)
+	ret0, _ := ret[0].(*sagemaker.DescribeStudioLifecycleConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStudioLifecycleConfig indicates an expected call of DescribeStudioLifecycleConfig
+func (mr *MockSageMakerAPIMockRecorder) DescribeStudioLifecycleConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStudioLifecycleConfig", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeStudioLifecycleConfig), arg0)
+}
+
+// DescribeStudioLifecycleConfigRequest mocks base method
+func (m *MockSageMakerAPI) DescribeStudioLifecycleConfigRequest(arg0 *sagemaker.DescribeStudioLifecycleConfigInput) (*request.Request, *sagemaker.DescribeStudioLifecycleConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStudioLifecycleConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DescribeStudioLifecycleConfigOutput)
+	return ret0, ret1
+}
+
+// DescribeStudioLifecycleConfigRequest indicates an expected call of DescribeStudioLifecycleConfigRequest
+func (mr *MockSageMakerAPIMockRecorder) DescribeStudioLifecycleConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStudioLifecycleConfigRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeStudioLifecycleConfigRequest), arg0)
+}
+
+// DescribeStudioLifecycleConfigWithContext mocks base method
+func (m *MockSageMakerAPI) DescribeStudioLifecycleConfigWithContext(arg0 context.Context, arg1 *sagemaker.DescribeStudioLifecycleConfigInput, arg2 ...request.Option) (*sagemaker.DescribeStudioLifecycleConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeStudioLifecycleConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DescribeStudioLifecycleConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStudioLifecycleConfigWithContext indicates an expected call of DescribeStudioLifecycleConfigWithContext
+func (mr *MockSageMakerAPIMockRecorder) DescribeStudioLifecycleConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStudioLifecycleConfigWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeStudioLifecycleConfigWithContext), varargs...)
 }
 
 // DescribeSubscribedWorkteam mocks base method
@@ -10502,6 +10652,89 @@ func (mr *MockSageMakerAPIMockRecorder) ListProjectsWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListProjectsWithContext), varargs...)
+}
+
+// ListStudioLifecycleConfigs mocks base method
+func (m *MockSageMakerAPI) ListStudioLifecycleConfigs(arg0 *sagemaker.ListStudioLifecycleConfigsInput) (*sagemaker.ListStudioLifecycleConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStudioLifecycleConfigs", arg0)
+	ret0, _ := ret[0].(*sagemaker.ListStudioLifecycleConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStudioLifecycleConfigs indicates an expected call of ListStudioLifecycleConfigs
+func (mr *MockSageMakerAPIMockRecorder) ListStudioLifecycleConfigs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioLifecycleConfigs", reflect.TypeOf((*MockSageMakerAPI)(nil).ListStudioLifecycleConfigs), arg0)
+}
+
+// ListStudioLifecycleConfigsPages mocks base method
+func (m *MockSageMakerAPI) ListStudioLifecycleConfigsPages(arg0 *sagemaker.ListStudioLifecycleConfigsInput, arg1 func(*sagemaker.ListStudioLifecycleConfigsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStudioLifecycleConfigsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStudioLifecycleConfigsPages indicates an expected call of ListStudioLifecycleConfigsPages
+func (mr *MockSageMakerAPIMockRecorder) ListStudioLifecycleConfigsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioLifecycleConfigsPages", reflect.TypeOf((*MockSageMakerAPI)(nil).ListStudioLifecycleConfigsPages), arg0, arg1)
+}
+
+// ListStudioLifecycleConfigsPagesWithContext mocks base method
+func (m *MockSageMakerAPI) ListStudioLifecycleConfigsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListStudioLifecycleConfigsInput, arg2 func(*sagemaker.ListStudioLifecycleConfigsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStudioLifecycleConfigsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStudioLifecycleConfigsPagesWithContext indicates an expected call of ListStudioLifecycleConfigsPagesWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListStudioLifecycleConfigsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioLifecycleConfigsPagesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListStudioLifecycleConfigsPagesWithContext), varargs...)
+}
+
+// ListStudioLifecycleConfigsRequest mocks base method
+func (m *MockSageMakerAPI) ListStudioLifecycleConfigsRequest(arg0 *sagemaker.ListStudioLifecycleConfigsInput) (*request.Request, *sagemaker.ListStudioLifecycleConfigsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStudioLifecycleConfigsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.ListStudioLifecycleConfigsOutput)
+	return ret0, ret1
+}
+
+// ListStudioLifecycleConfigsRequest indicates an expected call of ListStudioLifecycleConfigsRequest
+func (mr *MockSageMakerAPIMockRecorder) ListStudioLifecycleConfigsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioLifecycleConfigsRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).ListStudioLifecycleConfigsRequest), arg0)
+}
+
+// ListStudioLifecycleConfigsWithContext mocks base method
+func (m *MockSageMakerAPI) ListStudioLifecycleConfigsWithContext(arg0 context.Context, arg1 *sagemaker.ListStudioLifecycleConfigsInput, arg2 ...request.Option) (*sagemaker.ListStudioLifecycleConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStudioLifecycleConfigsWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.ListStudioLifecycleConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStudioLifecycleConfigsWithContext indicates an expected call of ListStudioLifecycleConfigsWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListStudioLifecycleConfigsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudioLifecycleConfigsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListStudioLifecycleConfigsWithContext), varargs...)
 }
 
 // ListSubscribedWorkteams mocks base method
