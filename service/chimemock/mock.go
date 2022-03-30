@@ -8943,6 +8943,106 @@ func (mr *MockChimeAPIMockRecorder) SendChannelMessageWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendChannelMessageWithContext", reflect.TypeOf((*MockChimeAPI)(nil).SendChannelMessageWithContext), varargs...)
 }
 
+// StartMeetingTranscription mocks base method
+func (m *MockChimeAPI) StartMeetingTranscription(arg0 *chime.StartMeetingTranscriptionInput) (*chime.StartMeetingTranscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMeetingTranscription", arg0)
+	ret0, _ := ret[0].(*chime.StartMeetingTranscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMeetingTranscription indicates an expected call of StartMeetingTranscription
+func (mr *MockChimeAPIMockRecorder) StartMeetingTranscription(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMeetingTranscription", reflect.TypeOf((*MockChimeAPI)(nil).StartMeetingTranscription), arg0)
+}
+
+// StartMeetingTranscriptionRequest mocks base method
+func (m *MockChimeAPI) StartMeetingTranscriptionRequest(arg0 *chime.StartMeetingTranscriptionInput) (*request.Request, *chime.StartMeetingTranscriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMeetingTranscriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.StartMeetingTranscriptionOutput)
+	return ret0, ret1
+}
+
+// StartMeetingTranscriptionRequest indicates an expected call of StartMeetingTranscriptionRequest
+func (mr *MockChimeAPIMockRecorder) StartMeetingTranscriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMeetingTranscriptionRequest", reflect.TypeOf((*MockChimeAPI)(nil).StartMeetingTranscriptionRequest), arg0)
+}
+
+// StartMeetingTranscriptionWithContext mocks base method
+func (m *MockChimeAPI) StartMeetingTranscriptionWithContext(arg0 context.Context, arg1 *chime.StartMeetingTranscriptionInput, arg2 ...request.Option) (*chime.StartMeetingTranscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartMeetingTranscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.StartMeetingTranscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMeetingTranscriptionWithContext indicates an expected call of StartMeetingTranscriptionWithContext
+func (mr *MockChimeAPIMockRecorder) StartMeetingTranscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMeetingTranscriptionWithContext", reflect.TypeOf((*MockChimeAPI)(nil).StartMeetingTranscriptionWithContext), varargs...)
+}
+
+// StopMeetingTranscription mocks base method
+func (m *MockChimeAPI) StopMeetingTranscription(arg0 *chime.StopMeetingTranscriptionInput) (*chime.StopMeetingTranscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopMeetingTranscription", arg0)
+	ret0, _ := ret[0].(*chime.StopMeetingTranscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopMeetingTranscription indicates an expected call of StopMeetingTranscription
+func (mr *MockChimeAPIMockRecorder) StopMeetingTranscription(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopMeetingTranscription", reflect.TypeOf((*MockChimeAPI)(nil).StopMeetingTranscription), arg0)
+}
+
+// StopMeetingTranscriptionRequest mocks base method
+func (m *MockChimeAPI) StopMeetingTranscriptionRequest(arg0 *chime.StopMeetingTranscriptionInput) (*request.Request, *chime.StopMeetingTranscriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopMeetingTranscriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.StopMeetingTranscriptionOutput)
+	return ret0, ret1
+}
+
+// StopMeetingTranscriptionRequest indicates an expected call of StopMeetingTranscriptionRequest
+func (mr *MockChimeAPIMockRecorder) StopMeetingTranscriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopMeetingTranscriptionRequest", reflect.TypeOf((*MockChimeAPI)(nil).StopMeetingTranscriptionRequest), arg0)
+}
+
+// StopMeetingTranscriptionWithContext mocks base method
+func (m *MockChimeAPI) StopMeetingTranscriptionWithContext(arg0 context.Context, arg1 *chime.StopMeetingTranscriptionInput, arg2 ...request.Option) (*chime.StopMeetingTranscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopMeetingTranscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.StopMeetingTranscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopMeetingTranscriptionWithContext indicates an expected call of StopMeetingTranscriptionWithContext
+func (mr *MockChimeAPIMockRecorder) StopMeetingTranscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopMeetingTranscriptionWithContext", reflect.TypeOf((*MockChimeAPI)(nil).StopMeetingTranscriptionWithContext), varargs...)
+}
+
 // TagAttendee mocks base method
 func (m *MockChimeAPI) TagAttendee(arg0 *chime.TagAttendeeInput) (*chime.TagAttendeeOutput, error) {
 	m.ctrl.T.Helper()
