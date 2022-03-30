@@ -185,6 +185,56 @@ func (mr *MockBatchAPIMockRecorder) CreateJobQueueWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobQueueWithContext", reflect.TypeOf((*MockBatchAPI)(nil).CreateJobQueueWithContext), varargs...)
 }
 
+// CreateSchedulingPolicy mocks base method
+func (m *MockBatchAPI) CreateSchedulingPolicy(arg0 *batch.CreateSchedulingPolicyInput) (*batch.CreateSchedulingPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSchedulingPolicy", arg0)
+	ret0, _ := ret[0].(*batch.CreateSchedulingPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSchedulingPolicy indicates an expected call of CreateSchedulingPolicy
+func (mr *MockBatchAPIMockRecorder) CreateSchedulingPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSchedulingPolicy", reflect.TypeOf((*MockBatchAPI)(nil).CreateSchedulingPolicy), arg0)
+}
+
+// CreateSchedulingPolicyRequest mocks base method
+func (m *MockBatchAPI) CreateSchedulingPolicyRequest(arg0 *batch.CreateSchedulingPolicyInput) (*request.Request, *batch.CreateSchedulingPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSchedulingPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*batch.CreateSchedulingPolicyOutput)
+	return ret0, ret1
+}
+
+// CreateSchedulingPolicyRequest indicates an expected call of CreateSchedulingPolicyRequest
+func (mr *MockBatchAPIMockRecorder) CreateSchedulingPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSchedulingPolicyRequest", reflect.TypeOf((*MockBatchAPI)(nil).CreateSchedulingPolicyRequest), arg0)
+}
+
+// CreateSchedulingPolicyWithContext mocks base method
+func (m *MockBatchAPI) CreateSchedulingPolicyWithContext(arg0 context.Context, arg1 *batch.CreateSchedulingPolicyInput, arg2 ...request.Option) (*batch.CreateSchedulingPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSchedulingPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*batch.CreateSchedulingPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSchedulingPolicyWithContext indicates an expected call of CreateSchedulingPolicyWithContext
+func (mr *MockBatchAPIMockRecorder) CreateSchedulingPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSchedulingPolicyWithContext", reflect.TypeOf((*MockBatchAPI)(nil).CreateSchedulingPolicyWithContext), varargs...)
+}
+
 // DeleteComputeEnvironment mocks base method
 func (m *MockBatchAPI) DeleteComputeEnvironment(arg0 *batch.DeleteComputeEnvironmentInput) (*batch.DeleteComputeEnvironmentOutput, error) {
 	m.ctrl.T.Helper()
@@ -283,6 +333,56 @@ func (mr *MockBatchAPIMockRecorder) DeleteJobQueueWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobQueueWithContext", reflect.TypeOf((*MockBatchAPI)(nil).DeleteJobQueueWithContext), varargs...)
+}
+
+// DeleteSchedulingPolicy mocks base method
+func (m *MockBatchAPI) DeleteSchedulingPolicy(arg0 *batch.DeleteSchedulingPolicyInput) (*batch.DeleteSchedulingPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSchedulingPolicy", arg0)
+	ret0, _ := ret[0].(*batch.DeleteSchedulingPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSchedulingPolicy indicates an expected call of DeleteSchedulingPolicy
+func (mr *MockBatchAPIMockRecorder) DeleteSchedulingPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSchedulingPolicy", reflect.TypeOf((*MockBatchAPI)(nil).DeleteSchedulingPolicy), arg0)
+}
+
+// DeleteSchedulingPolicyRequest mocks base method
+func (m *MockBatchAPI) DeleteSchedulingPolicyRequest(arg0 *batch.DeleteSchedulingPolicyInput) (*request.Request, *batch.DeleteSchedulingPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSchedulingPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*batch.DeleteSchedulingPolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteSchedulingPolicyRequest indicates an expected call of DeleteSchedulingPolicyRequest
+func (mr *MockBatchAPIMockRecorder) DeleteSchedulingPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSchedulingPolicyRequest", reflect.TypeOf((*MockBatchAPI)(nil).DeleteSchedulingPolicyRequest), arg0)
+}
+
+// DeleteSchedulingPolicyWithContext mocks base method
+func (m *MockBatchAPI) DeleteSchedulingPolicyWithContext(arg0 context.Context, arg1 *batch.DeleteSchedulingPolicyInput, arg2 ...request.Option) (*batch.DeleteSchedulingPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSchedulingPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*batch.DeleteSchedulingPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSchedulingPolicyWithContext indicates an expected call of DeleteSchedulingPolicyWithContext
+func (mr *MockBatchAPIMockRecorder) DeleteSchedulingPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSchedulingPolicyWithContext", reflect.TypeOf((*MockBatchAPI)(nil).DeleteSchedulingPolicyWithContext), varargs...)
 }
 
 // DeregisterJobDefinition mocks base method
@@ -634,6 +734,56 @@ func (mr *MockBatchAPIMockRecorder) DescribeJobsWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobsWithContext", reflect.TypeOf((*MockBatchAPI)(nil).DescribeJobsWithContext), varargs...)
 }
 
+// DescribeSchedulingPolicies mocks base method
+func (m *MockBatchAPI) DescribeSchedulingPolicies(arg0 *batch.DescribeSchedulingPoliciesInput) (*batch.DescribeSchedulingPoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSchedulingPolicies", arg0)
+	ret0, _ := ret[0].(*batch.DescribeSchedulingPoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSchedulingPolicies indicates an expected call of DescribeSchedulingPolicies
+func (mr *MockBatchAPIMockRecorder) DescribeSchedulingPolicies(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSchedulingPolicies", reflect.TypeOf((*MockBatchAPI)(nil).DescribeSchedulingPolicies), arg0)
+}
+
+// DescribeSchedulingPoliciesRequest mocks base method
+func (m *MockBatchAPI) DescribeSchedulingPoliciesRequest(arg0 *batch.DescribeSchedulingPoliciesInput) (*request.Request, *batch.DescribeSchedulingPoliciesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSchedulingPoliciesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*batch.DescribeSchedulingPoliciesOutput)
+	return ret0, ret1
+}
+
+// DescribeSchedulingPoliciesRequest indicates an expected call of DescribeSchedulingPoliciesRequest
+func (mr *MockBatchAPIMockRecorder) DescribeSchedulingPoliciesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSchedulingPoliciesRequest", reflect.TypeOf((*MockBatchAPI)(nil).DescribeSchedulingPoliciesRequest), arg0)
+}
+
+// DescribeSchedulingPoliciesWithContext mocks base method
+func (m *MockBatchAPI) DescribeSchedulingPoliciesWithContext(arg0 context.Context, arg1 *batch.DescribeSchedulingPoliciesInput, arg2 ...request.Option) (*batch.DescribeSchedulingPoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSchedulingPoliciesWithContext", varargs...)
+	ret0, _ := ret[0].(*batch.DescribeSchedulingPoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSchedulingPoliciesWithContext indicates an expected call of DescribeSchedulingPoliciesWithContext
+func (mr *MockBatchAPIMockRecorder) DescribeSchedulingPoliciesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSchedulingPoliciesWithContext", reflect.TypeOf((*MockBatchAPI)(nil).DescribeSchedulingPoliciesWithContext), varargs...)
+}
+
 // ListJobs mocks base method
 func (m *MockBatchAPI) ListJobs(arg0 *batch.ListJobsInput) (*batch.ListJobsOutput, error) {
 	m.ctrl.T.Helper()
@@ -715,6 +865,89 @@ func (mr *MockBatchAPIMockRecorder) ListJobsWithContext(arg0, arg1 interface{}, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsWithContext", reflect.TypeOf((*MockBatchAPI)(nil).ListJobsWithContext), varargs...)
+}
+
+// ListSchedulingPolicies mocks base method
+func (m *MockBatchAPI) ListSchedulingPolicies(arg0 *batch.ListSchedulingPoliciesInput) (*batch.ListSchedulingPoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSchedulingPolicies", arg0)
+	ret0, _ := ret[0].(*batch.ListSchedulingPoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSchedulingPolicies indicates an expected call of ListSchedulingPolicies
+func (mr *MockBatchAPIMockRecorder) ListSchedulingPolicies(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchedulingPolicies", reflect.TypeOf((*MockBatchAPI)(nil).ListSchedulingPolicies), arg0)
+}
+
+// ListSchedulingPoliciesPages mocks base method
+func (m *MockBatchAPI) ListSchedulingPoliciesPages(arg0 *batch.ListSchedulingPoliciesInput, arg1 func(*batch.ListSchedulingPoliciesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSchedulingPoliciesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSchedulingPoliciesPages indicates an expected call of ListSchedulingPoliciesPages
+func (mr *MockBatchAPIMockRecorder) ListSchedulingPoliciesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchedulingPoliciesPages", reflect.TypeOf((*MockBatchAPI)(nil).ListSchedulingPoliciesPages), arg0, arg1)
+}
+
+// ListSchedulingPoliciesPagesWithContext mocks base method
+func (m *MockBatchAPI) ListSchedulingPoliciesPagesWithContext(arg0 context.Context, arg1 *batch.ListSchedulingPoliciesInput, arg2 func(*batch.ListSchedulingPoliciesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSchedulingPoliciesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSchedulingPoliciesPagesWithContext indicates an expected call of ListSchedulingPoliciesPagesWithContext
+func (mr *MockBatchAPIMockRecorder) ListSchedulingPoliciesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchedulingPoliciesPagesWithContext", reflect.TypeOf((*MockBatchAPI)(nil).ListSchedulingPoliciesPagesWithContext), varargs...)
+}
+
+// ListSchedulingPoliciesRequest mocks base method
+func (m *MockBatchAPI) ListSchedulingPoliciesRequest(arg0 *batch.ListSchedulingPoliciesInput) (*request.Request, *batch.ListSchedulingPoliciesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSchedulingPoliciesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*batch.ListSchedulingPoliciesOutput)
+	return ret0, ret1
+}
+
+// ListSchedulingPoliciesRequest indicates an expected call of ListSchedulingPoliciesRequest
+func (mr *MockBatchAPIMockRecorder) ListSchedulingPoliciesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchedulingPoliciesRequest", reflect.TypeOf((*MockBatchAPI)(nil).ListSchedulingPoliciesRequest), arg0)
+}
+
+// ListSchedulingPoliciesWithContext mocks base method
+func (m *MockBatchAPI) ListSchedulingPoliciesWithContext(arg0 context.Context, arg1 *batch.ListSchedulingPoliciesInput, arg2 ...request.Option) (*batch.ListSchedulingPoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSchedulingPoliciesWithContext", varargs...)
+	ret0, _ := ret[0].(*batch.ListSchedulingPoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSchedulingPoliciesWithContext indicates an expected call of ListSchedulingPoliciesWithContext
+func (mr *MockBatchAPIMockRecorder) ListSchedulingPoliciesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchedulingPoliciesWithContext", reflect.TypeOf((*MockBatchAPI)(nil).ListSchedulingPoliciesWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
@@ -1115,4 +1348,54 @@ func (mr *MockBatchAPIMockRecorder) UpdateJobQueueWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJobQueueWithContext", reflect.TypeOf((*MockBatchAPI)(nil).UpdateJobQueueWithContext), varargs...)
+}
+
+// UpdateSchedulingPolicy mocks base method
+func (m *MockBatchAPI) UpdateSchedulingPolicy(arg0 *batch.UpdateSchedulingPolicyInput) (*batch.UpdateSchedulingPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSchedulingPolicy", arg0)
+	ret0, _ := ret[0].(*batch.UpdateSchedulingPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSchedulingPolicy indicates an expected call of UpdateSchedulingPolicy
+func (mr *MockBatchAPIMockRecorder) UpdateSchedulingPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSchedulingPolicy", reflect.TypeOf((*MockBatchAPI)(nil).UpdateSchedulingPolicy), arg0)
+}
+
+// UpdateSchedulingPolicyRequest mocks base method
+func (m *MockBatchAPI) UpdateSchedulingPolicyRequest(arg0 *batch.UpdateSchedulingPolicyInput) (*request.Request, *batch.UpdateSchedulingPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSchedulingPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*batch.UpdateSchedulingPolicyOutput)
+	return ret0, ret1
+}
+
+// UpdateSchedulingPolicyRequest indicates an expected call of UpdateSchedulingPolicyRequest
+func (mr *MockBatchAPIMockRecorder) UpdateSchedulingPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSchedulingPolicyRequest", reflect.TypeOf((*MockBatchAPI)(nil).UpdateSchedulingPolicyRequest), arg0)
+}
+
+// UpdateSchedulingPolicyWithContext mocks base method
+func (m *MockBatchAPI) UpdateSchedulingPolicyWithContext(arg0 context.Context, arg1 *batch.UpdateSchedulingPolicyInput, arg2 ...request.Option) (*batch.UpdateSchedulingPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSchedulingPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*batch.UpdateSchedulingPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSchedulingPolicyWithContext indicates an expected call of UpdateSchedulingPolicyWithContext
+func (mr *MockBatchAPIMockRecorder) UpdateSchedulingPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSchedulingPolicyWithContext", reflect.TypeOf((*MockBatchAPI)(nil).UpdateSchedulingPolicyWithContext), varargs...)
 }
