@@ -4535,6 +4535,56 @@ func (mr *MockPinpointAPIMockRecorder) SendMessagesWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendMessagesWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).SendMessagesWithContext), varargs...)
 }
 
+// SendOTPMessage mocks base method
+func (m *MockPinpointAPI) SendOTPMessage(arg0 *pinpoint.SendOTPMessageInput) (*pinpoint.SendOTPMessageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendOTPMessage", arg0)
+	ret0, _ := ret[0].(*pinpoint.SendOTPMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendOTPMessage indicates an expected call of SendOTPMessage
+func (mr *MockPinpointAPIMockRecorder) SendOTPMessage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendOTPMessage", reflect.TypeOf((*MockPinpointAPI)(nil).SendOTPMessage), arg0)
+}
+
+// SendOTPMessageRequest mocks base method
+func (m *MockPinpointAPI) SendOTPMessageRequest(arg0 *pinpoint.SendOTPMessageInput) (*request.Request, *pinpoint.SendOTPMessageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendOTPMessageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.SendOTPMessageOutput)
+	return ret0, ret1
+}
+
+// SendOTPMessageRequest indicates an expected call of SendOTPMessageRequest
+func (mr *MockPinpointAPIMockRecorder) SendOTPMessageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendOTPMessageRequest", reflect.TypeOf((*MockPinpointAPI)(nil).SendOTPMessageRequest), arg0)
+}
+
+// SendOTPMessageWithContext mocks base method
+func (m *MockPinpointAPI) SendOTPMessageWithContext(arg0 context.Context, arg1 *pinpoint.SendOTPMessageInput, arg2 ...request.Option) (*pinpoint.SendOTPMessageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SendOTPMessageWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.SendOTPMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendOTPMessageWithContext indicates an expected call of SendOTPMessageWithContext
+func (mr *MockPinpointAPIMockRecorder) SendOTPMessageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendOTPMessageWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).SendOTPMessageWithContext), varargs...)
+}
+
 // SendUsersMessages mocks base method
 func (m *MockPinpointAPI) SendUsersMessages(arg0 *pinpoint.SendUsersMessagesInput) (*pinpoint.SendUsersMessagesOutput, error) {
 	m.ctrl.T.Helper()

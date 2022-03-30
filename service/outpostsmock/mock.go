@@ -35,6 +35,56 @@ func (m *MockOutpostsAPI) EXPECT() *MockOutpostsAPIMockRecorder {
 	return m.recorder
 }
 
+// CancelOrder mocks base method
+func (m *MockOutpostsAPI) CancelOrder(arg0 *outposts.CancelOrderInput) (*outposts.CancelOrderOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelOrder", arg0)
+	ret0, _ := ret[0].(*outposts.CancelOrderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelOrder indicates an expected call of CancelOrder
+func (mr *MockOutpostsAPIMockRecorder) CancelOrder(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelOrder", reflect.TypeOf((*MockOutpostsAPI)(nil).CancelOrder), arg0)
+}
+
+// CancelOrderRequest mocks base method
+func (m *MockOutpostsAPI) CancelOrderRequest(arg0 *outposts.CancelOrderInput) (*request.Request, *outposts.CancelOrderOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelOrderRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.CancelOrderOutput)
+	return ret0, ret1
+}
+
+// CancelOrderRequest indicates an expected call of CancelOrderRequest
+func (mr *MockOutpostsAPIMockRecorder) CancelOrderRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelOrderRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).CancelOrderRequest), arg0)
+}
+
+// CancelOrderWithContext mocks base method
+func (m *MockOutpostsAPI) CancelOrderWithContext(arg0 context.Context, arg1 *outposts.CancelOrderInput, arg2 ...request.Option) (*outposts.CancelOrderOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelOrderWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.CancelOrderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelOrderWithContext indicates an expected call of CancelOrderWithContext
+func (mr *MockOutpostsAPIMockRecorder) CancelOrderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelOrderWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).CancelOrderWithContext), varargs...)
+}
+
 // CreateOrder mocks base method
 func (m *MockOutpostsAPI) CreateOrder(arg0 *outposts.CreateOrderInput) (*outposts.CreateOrderOutput, error) {
 	m.ctrl.T.Helper()
@@ -133,6 +183,56 @@ func (mr *MockOutpostsAPIMockRecorder) CreateOutpostWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateOutpostWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).CreateOutpostWithContext), varargs...)
+}
+
+// CreateSite mocks base method
+func (m *MockOutpostsAPI) CreateSite(arg0 *outposts.CreateSiteInput) (*outposts.CreateSiteOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSite", arg0)
+	ret0, _ := ret[0].(*outposts.CreateSiteOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSite indicates an expected call of CreateSite
+func (mr *MockOutpostsAPIMockRecorder) CreateSite(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSite", reflect.TypeOf((*MockOutpostsAPI)(nil).CreateSite), arg0)
+}
+
+// CreateSiteRequest mocks base method
+func (m *MockOutpostsAPI) CreateSiteRequest(arg0 *outposts.CreateSiteInput) (*request.Request, *outposts.CreateSiteOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSiteRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.CreateSiteOutput)
+	return ret0, ret1
+}
+
+// CreateSiteRequest indicates an expected call of CreateSiteRequest
+func (mr *MockOutpostsAPIMockRecorder) CreateSiteRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSiteRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).CreateSiteRequest), arg0)
+}
+
+// CreateSiteWithContext mocks base method
+func (m *MockOutpostsAPI) CreateSiteWithContext(arg0 context.Context, arg1 *outposts.CreateSiteInput, arg2 ...request.Option) (*outposts.CreateSiteOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSiteWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.CreateSiteOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSiteWithContext indicates an expected call of CreateSiteWithContext
+func (mr *MockOutpostsAPIMockRecorder) CreateSiteWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSiteWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).CreateSiteWithContext), varargs...)
 }
 
 // DeleteOutpost mocks base method
@@ -235,6 +335,106 @@ func (mr *MockOutpostsAPIMockRecorder) DeleteSiteWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSiteWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).DeleteSiteWithContext), varargs...)
 }
 
+// GetCatalogItem mocks base method
+func (m *MockOutpostsAPI) GetCatalogItem(arg0 *outposts.GetCatalogItemInput) (*outposts.GetCatalogItemOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCatalogItem", arg0)
+	ret0, _ := ret[0].(*outposts.GetCatalogItemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCatalogItem indicates an expected call of GetCatalogItem
+func (mr *MockOutpostsAPIMockRecorder) GetCatalogItem(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCatalogItem", reflect.TypeOf((*MockOutpostsAPI)(nil).GetCatalogItem), arg0)
+}
+
+// GetCatalogItemRequest mocks base method
+func (m *MockOutpostsAPI) GetCatalogItemRequest(arg0 *outposts.GetCatalogItemInput) (*request.Request, *outposts.GetCatalogItemOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCatalogItemRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.GetCatalogItemOutput)
+	return ret0, ret1
+}
+
+// GetCatalogItemRequest indicates an expected call of GetCatalogItemRequest
+func (mr *MockOutpostsAPIMockRecorder) GetCatalogItemRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCatalogItemRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).GetCatalogItemRequest), arg0)
+}
+
+// GetCatalogItemWithContext mocks base method
+func (m *MockOutpostsAPI) GetCatalogItemWithContext(arg0 context.Context, arg1 *outposts.GetCatalogItemInput, arg2 ...request.Option) (*outposts.GetCatalogItemOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCatalogItemWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.GetCatalogItemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCatalogItemWithContext indicates an expected call of GetCatalogItemWithContext
+func (mr *MockOutpostsAPIMockRecorder) GetCatalogItemWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCatalogItemWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).GetCatalogItemWithContext), varargs...)
+}
+
+// GetOrder mocks base method
+func (m *MockOutpostsAPI) GetOrder(arg0 *outposts.GetOrderInput) (*outposts.GetOrderOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetOrder", arg0)
+	ret0, _ := ret[0].(*outposts.GetOrderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetOrder indicates an expected call of GetOrder
+func (mr *MockOutpostsAPIMockRecorder) GetOrder(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOrder", reflect.TypeOf((*MockOutpostsAPI)(nil).GetOrder), arg0)
+}
+
+// GetOrderRequest mocks base method
+func (m *MockOutpostsAPI) GetOrderRequest(arg0 *outposts.GetOrderInput) (*request.Request, *outposts.GetOrderOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetOrderRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.GetOrderOutput)
+	return ret0, ret1
+}
+
+// GetOrderRequest indicates an expected call of GetOrderRequest
+func (mr *MockOutpostsAPIMockRecorder) GetOrderRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOrderRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).GetOrderRequest), arg0)
+}
+
+// GetOrderWithContext mocks base method
+func (m *MockOutpostsAPI) GetOrderWithContext(arg0 context.Context, arg1 *outposts.GetOrderInput, arg2 ...request.Option) (*outposts.GetOrderOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetOrderWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.GetOrderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetOrderWithContext indicates an expected call of GetOrderWithContext
+func (mr *MockOutpostsAPIMockRecorder) GetOrderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOrderWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).GetOrderWithContext), varargs...)
+}
+
 // GetOutpost mocks base method
 func (m *MockOutpostsAPI) GetOutpost(arg0 *outposts.GetOutpostInput) (*outposts.GetOutpostOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +533,272 @@ func (mr *MockOutpostsAPIMockRecorder) GetOutpostWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOutpostWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).GetOutpostWithContext), varargs...)
+}
+
+// GetSite mocks base method
+func (m *MockOutpostsAPI) GetSite(arg0 *outposts.GetSiteInput) (*outposts.GetSiteOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSite", arg0)
+	ret0, _ := ret[0].(*outposts.GetSiteOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSite indicates an expected call of GetSite
+func (mr *MockOutpostsAPIMockRecorder) GetSite(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSite", reflect.TypeOf((*MockOutpostsAPI)(nil).GetSite), arg0)
+}
+
+// GetSiteAddress mocks base method
+func (m *MockOutpostsAPI) GetSiteAddress(arg0 *outposts.GetSiteAddressInput) (*outposts.GetSiteAddressOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSiteAddress", arg0)
+	ret0, _ := ret[0].(*outposts.GetSiteAddressOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSiteAddress indicates an expected call of GetSiteAddress
+func (mr *MockOutpostsAPIMockRecorder) GetSiteAddress(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSiteAddress", reflect.TypeOf((*MockOutpostsAPI)(nil).GetSiteAddress), arg0)
+}
+
+// GetSiteAddressRequest mocks base method
+func (m *MockOutpostsAPI) GetSiteAddressRequest(arg0 *outposts.GetSiteAddressInput) (*request.Request, *outposts.GetSiteAddressOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSiteAddressRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.GetSiteAddressOutput)
+	return ret0, ret1
+}
+
+// GetSiteAddressRequest indicates an expected call of GetSiteAddressRequest
+func (mr *MockOutpostsAPIMockRecorder) GetSiteAddressRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSiteAddressRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).GetSiteAddressRequest), arg0)
+}
+
+// GetSiteAddressWithContext mocks base method
+func (m *MockOutpostsAPI) GetSiteAddressWithContext(arg0 context.Context, arg1 *outposts.GetSiteAddressInput, arg2 ...request.Option) (*outposts.GetSiteAddressOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSiteAddressWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.GetSiteAddressOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSiteAddressWithContext indicates an expected call of GetSiteAddressWithContext
+func (mr *MockOutpostsAPIMockRecorder) GetSiteAddressWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSiteAddressWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).GetSiteAddressWithContext), varargs...)
+}
+
+// GetSiteRequest mocks base method
+func (m *MockOutpostsAPI) GetSiteRequest(arg0 *outposts.GetSiteInput) (*request.Request, *outposts.GetSiteOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSiteRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.GetSiteOutput)
+	return ret0, ret1
+}
+
+// GetSiteRequest indicates an expected call of GetSiteRequest
+func (mr *MockOutpostsAPIMockRecorder) GetSiteRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSiteRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).GetSiteRequest), arg0)
+}
+
+// GetSiteWithContext mocks base method
+func (m *MockOutpostsAPI) GetSiteWithContext(arg0 context.Context, arg1 *outposts.GetSiteInput, arg2 ...request.Option) (*outposts.GetSiteOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSiteWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.GetSiteOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSiteWithContext indicates an expected call of GetSiteWithContext
+func (mr *MockOutpostsAPIMockRecorder) GetSiteWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSiteWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).GetSiteWithContext), varargs...)
+}
+
+// ListCatalogItems mocks base method
+func (m *MockOutpostsAPI) ListCatalogItems(arg0 *outposts.ListCatalogItemsInput) (*outposts.ListCatalogItemsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCatalogItems", arg0)
+	ret0, _ := ret[0].(*outposts.ListCatalogItemsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCatalogItems indicates an expected call of ListCatalogItems
+func (mr *MockOutpostsAPIMockRecorder) ListCatalogItems(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCatalogItems", reflect.TypeOf((*MockOutpostsAPI)(nil).ListCatalogItems), arg0)
+}
+
+// ListCatalogItemsPages mocks base method
+func (m *MockOutpostsAPI) ListCatalogItemsPages(arg0 *outposts.ListCatalogItemsInput, arg1 func(*outposts.ListCatalogItemsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCatalogItemsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCatalogItemsPages indicates an expected call of ListCatalogItemsPages
+func (mr *MockOutpostsAPIMockRecorder) ListCatalogItemsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCatalogItemsPages", reflect.TypeOf((*MockOutpostsAPI)(nil).ListCatalogItemsPages), arg0, arg1)
+}
+
+// ListCatalogItemsPagesWithContext mocks base method
+func (m *MockOutpostsAPI) ListCatalogItemsPagesWithContext(arg0 context.Context, arg1 *outposts.ListCatalogItemsInput, arg2 func(*outposts.ListCatalogItemsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCatalogItemsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCatalogItemsPagesWithContext indicates an expected call of ListCatalogItemsPagesWithContext
+func (mr *MockOutpostsAPIMockRecorder) ListCatalogItemsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCatalogItemsPagesWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).ListCatalogItemsPagesWithContext), varargs...)
+}
+
+// ListCatalogItemsRequest mocks base method
+func (m *MockOutpostsAPI) ListCatalogItemsRequest(arg0 *outposts.ListCatalogItemsInput) (*request.Request, *outposts.ListCatalogItemsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCatalogItemsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.ListCatalogItemsOutput)
+	return ret0, ret1
+}
+
+// ListCatalogItemsRequest indicates an expected call of ListCatalogItemsRequest
+func (mr *MockOutpostsAPIMockRecorder) ListCatalogItemsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCatalogItemsRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).ListCatalogItemsRequest), arg0)
+}
+
+// ListCatalogItemsWithContext mocks base method
+func (m *MockOutpostsAPI) ListCatalogItemsWithContext(arg0 context.Context, arg1 *outposts.ListCatalogItemsInput, arg2 ...request.Option) (*outposts.ListCatalogItemsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCatalogItemsWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.ListCatalogItemsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCatalogItemsWithContext indicates an expected call of ListCatalogItemsWithContext
+func (mr *MockOutpostsAPIMockRecorder) ListCatalogItemsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCatalogItemsWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).ListCatalogItemsWithContext), varargs...)
+}
+
+// ListOrders mocks base method
+func (m *MockOutpostsAPI) ListOrders(arg0 *outposts.ListOrdersInput) (*outposts.ListOrdersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrders", arg0)
+	ret0, _ := ret[0].(*outposts.ListOrdersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOrders indicates an expected call of ListOrders
+func (mr *MockOutpostsAPIMockRecorder) ListOrders(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrders", reflect.TypeOf((*MockOutpostsAPI)(nil).ListOrders), arg0)
+}
+
+// ListOrdersPages mocks base method
+func (m *MockOutpostsAPI) ListOrdersPages(arg0 *outposts.ListOrdersInput, arg1 func(*outposts.ListOrdersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrdersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOrdersPages indicates an expected call of ListOrdersPages
+func (mr *MockOutpostsAPIMockRecorder) ListOrdersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrdersPages", reflect.TypeOf((*MockOutpostsAPI)(nil).ListOrdersPages), arg0, arg1)
+}
+
+// ListOrdersPagesWithContext mocks base method
+func (m *MockOutpostsAPI) ListOrdersPagesWithContext(arg0 context.Context, arg1 *outposts.ListOrdersInput, arg2 func(*outposts.ListOrdersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOrdersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOrdersPagesWithContext indicates an expected call of ListOrdersPagesWithContext
+func (mr *MockOutpostsAPIMockRecorder) ListOrdersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrdersPagesWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).ListOrdersPagesWithContext), varargs...)
+}
+
+// ListOrdersRequest mocks base method
+func (m *MockOutpostsAPI) ListOrdersRequest(arg0 *outposts.ListOrdersInput) (*request.Request, *outposts.ListOrdersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrdersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.ListOrdersOutput)
+	return ret0, ret1
+}
+
+// ListOrdersRequest indicates an expected call of ListOrdersRequest
+func (mr *MockOutpostsAPIMockRecorder) ListOrdersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrdersRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).ListOrdersRequest), arg0)
+}
+
+// ListOrdersWithContext mocks base method
+func (m *MockOutpostsAPI) ListOrdersWithContext(arg0 context.Context, arg1 *outposts.ListOrdersInput, arg2 ...request.Option) (*outposts.ListOrdersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOrdersWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.ListOrdersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOrdersWithContext indicates an expected call of ListOrdersWithContext
+func (mr *MockOutpostsAPIMockRecorder) ListOrdersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrdersWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).ListOrdersWithContext), varargs...)
 }
 
 // ListOutposts mocks base method
@@ -649,4 +1115,154 @@ func (mr *MockOutpostsAPIMockRecorder) UntagResourceWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateSite mocks base method
+func (m *MockOutpostsAPI) UpdateSite(arg0 *outposts.UpdateSiteInput) (*outposts.UpdateSiteOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSite", arg0)
+	ret0, _ := ret[0].(*outposts.UpdateSiteOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSite indicates an expected call of UpdateSite
+func (mr *MockOutpostsAPIMockRecorder) UpdateSite(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSite", reflect.TypeOf((*MockOutpostsAPI)(nil).UpdateSite), arg0)
+}
+
+// UpdateSiteAddress mocks base method
+func (m *MockOutpostsAPI) UpdateSiteAddress(arg0 *outposts.UpdateSiteAddressInput) (*outposts.UpdateSiteAddressOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSiteAddress", arg0)
+	ret0, _ := ret[0].(*outposts.UpdateSiteAddressOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSiteAddress indicates an expected call of UpdateSiteAddress
+func (mr *MockOutpostsAPIMockRecorder) UpdateSiteAddress(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSiteAddress", reflect.TypeOf((*MockOutpostsAPI)(nil).UpdateSiteAddress), arg0)
+}
+
+// UpdateSiteAddressRequest mocks base method
+func (m *MockOutpostsAPI) UpdateSiteAddressRequest(arg0 *outposts.UpdateSiteAddressInput) (*request.Request, *outposts.UpdateSiteAddressOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSiteAddressRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.UpdateSiteAddressOutput)
+	return ret0, ret1
+}
+
+// UpdateSiteAddressRequest indicates an expected call of UpdateSiteAddressRequest
+func (mr *MockOutpostsAPIMockRecorder) UpdateSiteAddressRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSiteAddressRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).UpdateSiteAddressRequest), arg0)
+}
+
+// UpdateSiteAddressWithContext mocks base method
+func (m *MockOutpostsAPI) UpdateSiteAddressWithContext(arg0 context.Context, arg1 *outposts.UpdateSiteAddressInput, arg2 ...request.Option) (*outposts.UpdateSiteAddressOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSiteAddressWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.UpdateSiteAddressOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSiteAddressWithContext indicates an expected call of UpdateSiteAddressWithContext
+func (mr *MockOutpostsAPIMockRecorder) UpdateSiteAddressWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSiteAddressWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).UpdateSiteAddressWithContext), varargs...)
+}
+
+// UpdateSiteRackPhysicalProperties mocks base method
+func (m *MockOutpostsAPI) UpdateSiteRackPhysicalProperties(arg0 *outposts.UpdateSiteRackPhysicalPropertiesInput) (*outposts.UpdateSiteRackPhysicalPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSiteRackPhysicalProperties", arg0)
+	ret0, _ := ret[0].(*outposts.UpdateSiteRackPhysicalPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSiteRackPhysicalProperties indicates an expected call of UpdateSiteRackPhysicalProperties
+func (mr *MockOutpostsAPIMockRecorder) UpdateSiteRackPhysicalProperties(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSiteRackPhysicalProperties", reflect.TypeOf((*MockOutpostsAPI)(nil).UpdateSiteRackPhysicalProperties), arg0)
+}
+
+// UpdateSiteRackPhysicalPropertiesRequest mocks base method
+func (m *MockOutpostsAPI) UpdateSiteRackPhysicalPropertiesRequest(arg0 *outposts.UpdateSiteRackPhysicalPropertiesInput) (*request.Request, *outposts.UpdateSiteRackPhysicalPropertiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSiteRackPhysicalPropertiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.UpdateSiteRackPhysicalPropertiesOutput)
+	return ret0, ret1
+}
+
+// UpdateSiteRackPhysicalPropertiesRequest indicates an expected call of UpdateSiteRackPhysicalPropertiesRequest
+func (mr *MockOutpostsAPIMockRecorder) UpdateSiteRackPhysicalPropertiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSiteRackPhysicalPropertiesRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).UpdateSiteRackPhysicalPropertiesRequest), arg0)
+}
+
+// UpdateSiteRackPhysicalPropertiesWithContext mocks base method
+func (m *MockOutpostsAPI) UpdateSiteRackPhysicalPropertiesWithContext(arg0 context.Context, arg1 *outposts.UpdateSiteRackPhysicalPropertiesInput, arg2 ...request.Option) (*outposts.UpdateSiteRackPhysicalPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSiteRackPhysicalPropertiesWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.UpdateSiteRackPhysicalPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSiteRackPhysicalPropertiesWithContext indicates an expected call of UpdateSiteRackPhysicalPropertiesWithContext
+func (mr *MockOutpostsAPIMockRecorder) UpdateSiteRackPhysicalPropertiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSiteRackPhysicalPropertiesWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).UpdateSiteRackPhysicalPropertiesWithContext), varargs...)
+}
+
+// UpdateSiteRequest mocks base method
+func (m *MockOutpostsAPI) UpdateSiteRequest(arg0 *outposts.UpdateSiteInput) (*request.Request, *outposts.UpdateSiteOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSiteRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.UpdateSiteOutput)
+	return ret0, ret1
+}
+
+// UpdateSiteRequest indicates an expected call of UpdateSiteRequest
+func (mr *MockOutpostsAPIMockRecorder) UpdateSiteRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSiteRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).UpdateSiteRequest), arg0)
+}
+
+// UpdateSiteWithContext mocks base method
+func (m *MockOutpostsAPI) UpdateSiteWithContext(arg0 context.Context, arg1 *outposts.UpdateSiteInput, arg2 ...request.Option) (*outposts.UpdateSiteOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSiteWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.UpdateSiteOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSiteWithContext indicates an expected call of UpdateSiteWithContext
+func (mr *MockOutpostsAPIMockRecorder) UpdateSiteWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSiteWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).UpdateSiteWithContext), varargs...)
 }
