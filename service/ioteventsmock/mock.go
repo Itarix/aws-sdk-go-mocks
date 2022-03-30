@@ -250,6 +250,56 @@ func (mr *MockIoTEventsAPIMockRecorder) DescribeDetectorModel(arg0 interface{}) 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDetectorModel", reflect.TypeOf((*MockIoTEventsAPI)(nil).DescribeDetectorModel), arg0)
 }
 
+// DescribeDetectorModelAnalysis mocks base method
+func (m *MockIoTEventsAPI) DescribeDetectorModelAnalysis(arg0 *iotevents.DescribeDetectorModelAnalysisInput) (*iotevents.DescribeDetectorModelAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDetectorModelAnalysis", arg0)
+	ret0, _ := ret[0].(*iotevents.DescribeDetectorModelAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDetectorModelAnalysis indicates an expected call of DescribeDetectorModelAnalysis
+func (mr *MockIoTEventsAPIMockRecorder) DescribeDetectorModelAnalysis(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDetectorModelAnalysis", reflect.TypeOf((*MockIoTEventsAPI)(nil).DescribeDetectorModelAnalysis), arg0)
+}
+
+// DescribeDetectorModelAnalysisRequest mocks base method
+func (m *MockIoTEventsAPI) DescribeDetectorModelAnalysisRequest(arg0 *iotevents.DescribeDetectorModelAnalysisInput) (*request.Request, *iotevents.DescribeDetectorModelAnalysisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDetectorModelAnalysisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotevents.DescribeDetectorModelAnalysisOutput)
+	return ret0, ret1
+}
+
+// DescribeDetectorModelAnalysisRequest indicates an expected call of DescribeDetectorModelAnalysisRequest
+func (mr *MockIoTEventsAPIMockRecorder) DescribeDetectorModelAnalysisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDetectorModelAnalysisRequest", reflect.TypeOf((*MockIoTEventsAPI)(nil).DescribeDetectorModelAnalysisRequest), arg0)
+}
+
+// DescribeDetectorModelAnalysisWithContext mocks base method
+func (m *MockIoTEventsAPI) DescribeDetectorModelAnalysisWithContext(arg0 context.Context, arg1 *iotevents.DescribeDetectorModelAnalysisInput, arg2 ...request.Option) (*iotevents.DescribeDetectorModelAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDetectorModelAnalysisWithContext", varargs...)
+	ret0, _ := ret[0].(*iotevents.DescribeDetectorModelAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDetectorModelAnalysisWithContext indicates an expected call of DescribeDetectorModelAnalysisWithContext
+func (mr *MockIoTEventsAPIMockRecorder) DescribeDetectorModelAnalysisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDetectorModelAnalysisWithContext", reflect.TypeOf((*MockIoTEventsAPI)(nil).DescribeDetectorModelAnalysisWithContext), varargs...)
+}
+
 // DescribeDetectorModelRequest mocks base method
 func (m *MockIoTEventsAPI) DescribeDetectorModelRequest(arg0 *iotevents.DescribeDetectorModelInput) (*request.Request, *iotevents.DescribeDetectorModelOutput) {
 	m.ctrl.T.Helper()
@@ -383,6 +433,56 @@ func (mr *MockIoTEventsAPIMockRecorder) DescribeLoggingOptionsWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLoggingOptionsWithContext", reflect.TypeOf((*MockIoTEventsAPI)(nil).DescribeLoggingOptionsWithContext), varargs...)
+}
+
+// GetDetectorModelAnalysisResults mocks base method
+func (m *MockIoTEventsAPI) GetDetectorModelAnalysisResults(arg0 *iotevents.GetDetectorModelAnalysisResultsInput) (*iotevents.GetDetectorModelAnalysisResultsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDetectorModelAnalysisResults", arg0)
+	ret0, _ := ret[0].(*iotevents.GetDetectorModelAnalysisResultsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDetectorModelAnalysisResults indicates an expected call of GetDetectorModelAnalysisResults
+func (mr *MockIoTEventsAPIMockRecorder) GetDetectorModelAnalysisResults(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDetectorModelAnalysisResults", reflect.TypeOf((*MockIoTEventsAPI)(nil).GetDetectorModelAnalysisResults), arg0)
+}
+
+// GetDetectorModelAnalysisResultsRequest mocks base method
+func (m *MockIoTEventsAPI) GetDetectorModelAnalysisResultsRequest(arg0 *iotevents.GetDetectorModelAnalysisResultsInput) (*request.Request, *iotevents.GetDetectorModelAnalysisResultsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDetectorModelAnalysisResultsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotevents.GetDetectorModelAnalysisResultsOutput)
+	return ret0, ret1
+}
+
+// GetDetectorModelAnalysisResultsRequest indicates an expected call of GetDetectorModelAnalysisResultsRequest
+func (mr *MockIoTEventsAPIMockRecorder) GetDetectorModelAnalysisResultsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDetectorModelAnalysisResultsRequest", reflect.TypeOf((*MockIoTEventsAPI)(nil).GetDetectorModelAnalysisResultsRequest), arg0)
+}
+
+// GetDetectorModelAnalysisResultsWithContext mocks base method
+func (m *MockIoTEventsAPI) GetDetectorModelAnalysisResultsWithContext(arg0 context.Context, arg1 *iotevents.GetDetectorModelAnalysisResultsInput, arg2 ...request.Option) (*iotevents.GetDetectorModelAnalysisResultsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDetectorModelAnalysisResultsWithContext", varargs...)
+	ret0, _ := ret[0].(*iotevents.GetDetectorModelAnalysisResultsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDetectorModelAnalysisResultsWithContext indicates an expected call of GetDetectorModelAnalysisResultsWithContext
+func (mr *MockIoTEventsAPIMockRecorder) GetDetectorModelAnalysisResultsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDetectorModelAnalysisResultsWithContext", reflect.TypeOf((*MockIoTEventsAPI)(nil).GetDetectorModelAnalysisResultsWithContext), varargs...)
 }
 
 // ListDetectorModelVersions mocks base method
@@ -633,6 +733,56 @@ func (mr *MockIoTEventsAPIMockRecorder) PutLoggingOptionsWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLoggingOptionsWithContext", reflect.TypeOf((*MockIoTEventsAPI)(nil).PutLoggingOptionsWithContext), varargs...)
+}
+
+// StartDetectorModelAnalysis mocks base method
+func (m *MockIoTEventsAPI) StartDetectorModelAnalysis(arg0 *iotevents.StartDetectorModelAnalysisInput) (*iotevents.StartDetectorModelAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDetectorModelAnalysis", arg0)
+	ret0, _ := ret[0].(*iotevents.StartDetectorModelAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDetectorModelAnalysis indicates an expected call of StartDetectorModelAnalysis
+func (mr *MockIoTEventsAPIMockRecorder) StartDetectorModelAnalysis(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDetectorModelAnalysis", reflect.TypeOf((*MockIoTEventsAPI)(nil).StartDetectorModelAnalysis), arg0)
+}
+
+// StartDetectorModelAnalysisRequest mocks base method
+func (m *MockIoTEventsAPI) StartDetectorModelAnalysisRequest(arg0 *iotevents.StartDetectorModelAnalysisInput) (*request.Request, *iotevents.StartDetectorModelAnalysisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDetectorModelAnalysisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotevents.StartDetectorModelAnalysisOutput)
+	return ret0, ret1
+}
+
+// StartDetectorModelAnalysisRequest indicates an expected call of StartDetectorModelAnalysisRequest
+func (mr *MockIoTEventsAPIMockRecorder) StartDetectorModelAnalysisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDetectorModelAnalysisRequest", reflect.TypeOf((*MockIoTEventsAPI)(nil).StartDetectorModelAnalysisRequest), arg0)
+}
+
+// StartDetectorModelAnalysisWithContext mocks base method
+func (m *MockIoTEventsAPI) StartDetectorModelAnalysisWithContext(arg0 context.Context, arg1 *iotevents.StartDetectorModelAnalysisInput, arg2 ...request.Option) (*iotevents.StartDetectorModelAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartDetectorModelAnalysisWithContext", varargs...)
+	ret0, _ := ret[0].(*iotevents.StartDetectorModelAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDetectorModelAnalysisWithContext indicates an expected call of StartDetectorModelAnalysisWithContext
+func (mr *MockIoTEventsAPIMockRecorder) StartDetectorModelAnalysisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDetectorModelAnalysisWithContext", reflect.TypeOf((*MockIoTEventsAPI)(nil).StartDetectorModelAnalysisWithContext), varargs...)
 }
 
 // TagResource mocks base method
