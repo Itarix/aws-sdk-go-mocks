@@ -1285,6 +1285,56 @@ func (mr *MockRoute53ResolverAPIMockRecorder) GetFirewallRuleGroupWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFirewallRuleGroupWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetFirewallRuleGroupWithContext), varargs...)
 }
 
+// GetResolverConfig mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverConfig(arg0 *route53resolver.GetResolverConfigInput) (*route53resolver.GetResolverConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResolverConfig", arg0)
+	ret0, _ := ret[0].(*route53resolver.GetResolverConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResolverConfig indicates an expected call of GetResolverConfig
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverConfig", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverConfig), arg0)
+}
+
+// GetResolverConfigRequest mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverConfigRequest(arg0 *route53resolver.GetResolverConfigInput) (*request.Request, *route53resolver.GetResolverConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResolverConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.GetResolverConfigOutput)
+	return ret0, ret1
+}
+
+// GetResolverConfigRequest indicates an expected call of GetResolverConfigRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverConfigRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverConfigRequest), arg0)
+}
+
+// GetResolverConfigWithContext mocks base method
+func (m *MockRoute53ResolverAPI) GetResolverConfigWithContext(arg0 context.Context, arg1 *route53resolver.GetResolverConfigInput, arg2 ...request.Option) (*route53resolver.GetResolverConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResolverConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.GetResolverConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResolverConfigWithContext indicates an expected call of GetResolverConfigWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) GetResolverConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResolverConfigWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).GetResolverConfigWithContext), varargs...)
+}
+
 // GetResolverDnssecConfig mocks base method
 func (m *MockRoute53ResolverAPI) GetResolverDnssecConfig(arg0 *route53resolver.GetResolverDnssecConfigInput) (*route53resolver.GetResolverDnssecConfigOutput, error) {
 	m.ctrl.T.Helper()
@@ -2231,6 +2281,89 @@ func (mr *MockRoute53ResolverAPIMockRecorder) ListFirewallRulesWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFirewallRulesWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListFirewallRulesWithContext), varargs...)
+}
+
+// ListResolverConfigs mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverConfigs(arg0 *route53resolver.ListResolverConfigsInput) (*route53resolver.ListResolverConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResolverConfigs", arg0)
+	ret0, _ := ret[0].(*route53resolver.ListResolverConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResolverConfigs indicates an expected call of ListResolverConfigs
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverConfigs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverConfigs", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverConfigs), arg0)
+}
+
+// ListResolverConfigsPages mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverConfigsPages(arg0 *route53resolver.ListResolverConfigsInput, arg1 func(*route53resolver.ListResolverConfigsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResolverConfigsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResolverConfigsPages indicates an expected call of ListResolverConfigsPages
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverConfigsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverConfigsPages", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverConfigsPages), arg0, arg1)
+}
+
+// ListResolverConfigsPagesWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverConfigsPagesWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverConfigsInput, arg2 func(*route53resolver.ListResolverConfigsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResolverConfigsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResolverConfigsPagesWithContext indicates an expected call of ListResolverConfigsPagesWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverConfigsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverConfigsPagesWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverConfigsPagesWithContext), varargs...)
+}
+
+// ListResolverConfigsRequest mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverConfigsRequest(arg0 *route53resolver.ListResolverConfigsInput) (*request.Request, *route53resolver.ListResolverConfigsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResolverConfigsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.ListResolverConfigsOutput)
+	return ret0, ret1
+}
+
+// ListResolverConfigsRequest indicates an expected call of ListResolverConfigsRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverConfigsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverConfigsRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverConfigsRequest), arg0)
+}
+
+// ListResolverConfigsWithContext mocks base method
+func (m *MockRoute53ResolverAPI) ListResolverConfigsWithContext(arg0 context.Context, arg1 *route53resolver.ListResolverConfigsInput, arg2 ...request.Option) (*route53resolver.ListResolverConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResolverConfigsWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.ListResolverConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResolverConfigsWithContext indicates an expected call of ListResolverConfigsWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) ListResolverConfigsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolverConfigsWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).ListResolverConfigsWithContext), varargs...)
 }
 
 // ListResolverDnssecConfigs mocks base method
@@ -3345,6 +3478,56 @@ func (mr *MockRoute53ResolverAPIMockRecorder) UpdateFirewallRuleWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallRuleWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateFirewallRuleWithContext), varargs...)
+}
+
+// UpdateResolverConfig mocks base method
+func (m *MockRoute53ResolverAPI) UpdateResolverConfig(arg0 *route53resolver.UpdateResolverConfigInput) (*route53resolver.UpdateResolverConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateResolverConfig", arg0)
+	ret0, _ := ret[0].(*route53resolver.UpdateResolverConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateResolverConfig indicates an expected call of UpdateResolverConfig
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateResolverConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResolverConfig", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateResolverConfig), arg0)
+}
+
+// UpdateResolverConfigRequest mocks base method
+func (m *MockRoute53ResolverAPI) UpdateResolverConfigRequest(arg0 *route53resolver.UpdateResolverConfigInput) (*request.Request, *route53resolver.UpdateResolverConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateResolverConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53resolver.UpdateResolverConfigOutput)
+	return ret0, ret1
+}
+
+// UpdateResolverConfigRequest indicates an expected call of UpdateResolverConfigRequest
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateResolverConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResolverConfigRequest", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateResolverConfigRequest), arg0)
+}
+
+// UpdateResolverConfigWithContext mocks base method
+func (m *MockRoute53ResolverAPI) UpdateResolverConfigWithContext(arg0 context.Context, arg1 *route53resolver.UpdateResolverConfigInput, arg2 ...request.Option) (*route53resolver.UpdateResolverConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateResolverConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*route53resolver.UpdateResolverConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateResolverConfigWithContext indicates an expected call of UpdateResolverConfigWithContext
+func (mr *MockRoute53ResolverAPIMockRecorder) UpdateResolverConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResolverConfigWithContext", reflect.TypeOf((*MockRoute53ResolverAPI)(nil).UpdateResolverConfigWithContext), varargs...)
 }
 
 // UpdateResolverDnssecConfig mocks base method
