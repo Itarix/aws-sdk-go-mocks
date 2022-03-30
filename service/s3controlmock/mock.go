@@ -1982,6 +1982,39 @@ func (mr *MockS3ControlAPIMockRecorder) ListStorageLensConfigurations(arg0 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStorageLensConfigurations", reflect.TypeOf((*MockS3ControlAPI)(nil).ListStorageLensConfigurations), arg0)
 }
 
+// ListStorageLensConfigurationsPages mocks base method
+func (m *MockS3ControlAPI) ListStorageLensConfigurationsPages(arg0 *s3control.ListStorageLensConfigurationsInput, arg1 func(*s3control.ListStorageLensConfigurationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStorageLensConfigurationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStorageLensConfigurationsPages indicates an expected call of ListStorageLensConfigurationsPages
+func (mr *MockS3ControlAPIMockRecorder) ListStorageLensConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStorageLensConfigurationsPages", reflect.TypeOf((*MockS3ControlAPI)(nil).ListStorageLensConfigurationsPages), arg0, arg1)
+}
+
+// ListStorageLensConfigurationsPagesWithContext mocks base method
+func (m *MockS3ControlAPI) ListStorageLensConfigurationsPagesWithContext(arg0 context.Context, arg1 *s3control.ListStorageLensConfigurationsInput, arg2 func(*s3control.ListStorageLensConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStorageLensConfigurationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStorageLensConfigurationsPagesWithContext indicates an expected call of ListStorageLensConfigurationsPagesWithContext
+func (mr *MockS3ControlAPIMockRecorder) ListStorageLensConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStorageLensConfigurationsPagesWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).ListStorageLensConfigurationsPagesWithContext), varargs...)
+}
+
 // ListStorageLensConfigurationsRequest mocks base method
 func (m *MockS3ControlAPI) ListStorageLensConfigurationsRequest(arg0 *s3control.ListStorageLensConfigurationsInput) (*request.Request, *s3control.ListStorageLensConfigurationsOutput) {
 	m.ctrl.T.Helper()
