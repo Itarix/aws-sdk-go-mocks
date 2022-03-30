@@ -485,6 +485,56 @@ func (mr *MockAppRegistryAPIMockRecorder) GetApplicationWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApplicationWithContext", reflect.TypeOf((*MockAppRegistryAPI)(nil).GetApplicationWithContext), varargs...)
 }
 
+// GetAssociatedResource mocks base method
+func (m *MockAppRegistryAPI) GetAssociatedResource(arg0 *appregistry.GetAssociatedResourceInput) (*appregistry.GetAssociatedResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAssociatedResource", arg0)
+	ret0, _ := ret[0].(*appregistry.GetAssociatedResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAssociatedResource indicates an expected call of GetAssociatedResource
+func (mr *MockAppRegistryAPIMockRecorder) GetAssociatedResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssociatedResource", reflect.TypeOf((*MockAppRegistryAPI)(nil).GetAssociatedResource), arg0)
+}
+
+// GetAssociatedResourceRequest mocks base method
+func (m *MockAppRegistryAPI) GetAssociatedResourceRequest(arg0 *appregistry.GetAssociatedResourceInput) (*request.Request, *appregistry.GetAssociatedResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAssociatedResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appregistry.GetAssociatedResourceOutput)
+	return ret0, ret1
+}
+
+// GetAssociatedResourceRequest indicates an expected call of GetAssociatedResourceRequest
+func (mr *MockAppRegistryAPIMockRecorder) GetAssociatedResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssociatedResourceRequest", reflect.TypeOf((*MockAppRegistryAPI)(nil).GetAssociatedResourceRequest), arg0)
+}
+
+// GetAssociatedResourceWithContext mocks base method
+func (m *MockAppRegistryAPI) GetAssociatedResourceWithContext(arg0 context.Context, arg1 *appregistry.GetAssociatedResourceInput, arg2 ...request.Option) (*appregistry.GetAssociatedResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAssociatedResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*appregistry.GetAssociatedResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAssociatedResourceWithContext indicates an expected call of GetAssociatedResourceWithContext
+func (mr *MockAppRegistryAPIMockRecorder) GetAssociatedResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssociatedResourceWithContext", reflect.TypeOf((*MockAppRegistryAPI)(nil).GetAssociatedResourceWithContext), varargs...)
+}
+
 // GetAttributeGroup mocks base method
 func (m *MockAppRegistryAPI) GetAttributeGroup(arg0 *appregistry.GetAttributeGroupInput) (*appregistry.GetAttributeGroupOutput, error) {
 	m.ctrl.T.Helper()
