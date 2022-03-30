@@ -35,6 +35,56 @@ func (m *MockAppStreamAPI) EXPECT() *MockAppStreamAPIMockRecorder {
 	return m.recorder
 }
 
+// AssociateApplicationFleet mocks base method
+func (m *MockAppStreamAPI) AssociateApplicationFleet(arg0 *appstream.AssociateApplicationFleetInput) (*appstream.AssociateApplicationFleetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateApplicationFleet", arg0)
+	ret0, _ := ret[0].(*appstream.AssociateApplicationFleetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateApplicationFleet indicates an expected call of AssociateApplicationFleet
+func (mr *MockAppStreamAPIMockRecorder) AssociateApplicationFleet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApplicationFleet", reflect.TypeOf((*MockAppStreamAPI)(nil).AssociateApplicationFleet), arg0)
+}
+
+// AssociateApplicationFleetRequest mocks base method
+func (m *MockAppStreamAPI) AssociateApplicationFleetRequest(arg0 *appstream.AssociateApplicationFleetInput) (*request.Request, *appstream.AssociateApplicationFleetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateApplicationFleetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.AssociateApplicationFleetOutput)
+	return ret0, ret1
+}
+
+// AssociateApplicationFleetRequest indicates an expected call of AssociateApplicationFleetRequest
+func (mr *MockAppStreamAPIMockRecorder) AssociateApplicationFleetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApplicationFleetRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).AssociateApplicationFleetRequest), arg0)
+}
+
+// AssociateApplicationFleetWithContext mocks base method
+func (m *MockAppStreamAPI) AssociateApplicationFleetWithContext(arg0 context.Context, arg1 *appstream.AssociateApplicationFleetInput, arg2 ...request.Option) (*appstream.AssociateApplicationFleetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateApplicationFleetWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.AssociateApplicationFleetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateApplicationFleetWithContext indicates an expected call of AssociateApplicationFleetWithContext
+func (mr *MockAppStreamAPIMockRecorder) AssociateApplicationFleetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApplicationFleetWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).AssociateApplicationFleetWithContext), varargs...)
+}
+
 // AssociateFleet mocks base method
 func (m *MockAppStreamAPI) AssociateFleet(arg0 *appstream.AssociateFleetInput) (*appstream.AssociateFleetOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,106 @@ func (mr *MockAppStreamAPIMockRecorder) CopyImageWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopyImageWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).CopyImageWithContext), varargs...)
+}
+
+// CreateAppBlock mocks base method
+func (m *MockAppStreamAPI) CreateAppBlock(arg0 *appstream.CreateAppBlockInput) (*appstream.CreateAppBlockOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppBlock", arg0)
+	ret0, _ := ret[0].(*appstream.CreateAppBlockOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppBlock indicates an expected call of CreateAppBlock
+func (mr *MockAppStreamAPIMockRecorder) CreateAppBlock(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppBlock", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateAppBlock), arg0)
+}
+
+// CreateAppBlockRequest mocks base method
+func (m *MockAppStreamAPI) CreateAppBlockRequest(arg0 *appstream.CreateAppBlockInput) (*request.Request, *appstream.CreateAppBlockOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppBlockRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.CreateAppBlockOutput)
+	return ret0, ret1
+}
+
+// CreateAppBlockRequest indicates an expected call of CreateAppBlockRequest
+func (mr *MockAppStreamAPIMockRecorder) CreateAppBlockRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppBlockRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateAppBlockRequest), arg0)
+}
+
+// CreateAppBlockWithContext mocks base method
+func (m *MockAppStreamAPI) CreateAppBlockWithContext(arg0 context.Context, arg1 *appstream.CreateAppBlockInput, arg2 ...request.Option) (*appstream.CreateAppBlockOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAppBlockWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.CreateAppBlockOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppBlockWithContext indicates an expected call of CreateAppBlockWithContext
+func (mr *MockAppStreamAPIMockRecorder) CreateAppBlockWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppBlockWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateAppBlockWithContext), varargs...)
+}
+
+// CreateApplication mocks base method
+func (m *MockAppStreamAPI) CreateApplication(arg0 *appstream.CreateApplicationInput) (*appstream.CreateApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateApplication", arg0)
+	ret0, _ := ret[0].(*appstream.CreateApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateApplication indicates an expected call of CreateApplication
+func (mr *MockAppStreamAPIMockRecorder) CreateApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplication", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateApplication), arg0)
+}
+
+// CreateApplicationRequest mocks base method
+func (m *MockAppStreamAPI) CreateApplicationRequest(arg0 *appstream.CreateApplicationInput) (*request.Request, *appstream.CreateApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.CreateApplicationOutput)
+	return ret0, ret1
+}
+
+// CreateApplicationRequest indicates an expected call of CreateApplicationRequest
+func (mr *MockAppStreamAPIMockRecorder) CreateApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateApplicationRequest), arg0)
+}
+
+// CreateApplicationWithContext mocks base method
+func (m *MockAppStreamAPI) CreateApplicationWithContext(arg0 context.Context, arg1 *appstream.CreateApplicationInput, arg2 ...request.Option) (*appstream.CreateApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.CreateApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateApplicationWithContext indicates an expected call of CreateApplicationWithContext
+func (mr *MockAppStreamAPIMockRecorder) CreateApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateApplicationWithContext), varargs...)
 }
 
 // CreateDirectoryConfig mocks base method
@@ -685,6 +835,106 @@ func (mr *MockAppStreamAPIMockRecorder) CreateUserWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateUserWithContext), varargs...)
 }
 
+// DeleteAppBlock mocks base method
+func (m *MockAppStreamAPI) DeleteAppBlock(arg0 *appstream.DeleteAppBlockInput) (*appstream.DeleteAppBlockOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppBlock", arg0)
+	ret0, _ := ret[0].(*appstream.DeleteAppBlockOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppBlock indicates an expected call of DeleteAppBlock
+func (mr *MockAppStreamAPIMockRecorder) DeleteAppBlock(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppBlock", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteAppBlock), arg0)
+}
+
+// DeleteAppBlockRequest mocks base method
+func (m *MockAppStreamAPI) DeleteAppBlockRequest(arg0 *appstream.DeleteAppBlockInput) (*request.Request, *appstream.DeleteAppBlockOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppBlockRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.DeleteAppBlockOutput)
+	return ret0, ret1
+}
+
+// DeleteAppBlockRequest indicates an expected call of DeleteAppBlockRequest
+func (mr *MockAppStreamAPIMockRecorder) DeleteAppBlockRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppBlockRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteAppBlockRequest), arg0)
+}
+
+// DeleteAppBlockWithContext mocks base method
+func (m *MockAppStreamAPI) DeleteAppBlockWithContext(arg0 context.Context, arg1 *appstream.DeleteAppBlockInput, arg2 ...request.Option) (*appstream.DeleteAppBlockOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAppBlockWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.DeleteAppBlockOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppBlockWithContext indicates an expected call of DeleteAppBlockWithContext
+func (mr *MockAppStreamAPIMockRecorder) DeleteAppBlockWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppBlockWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteAppBlockWithContext), varargs...)
+}
+
+// DeleteApplication mocks base method
+func (m *MockAppStreamAPI) DeleteApplication(arg0 *appstream.DeleteApplicationInput) (*appstream.DeleteApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteApplication", arg0)
+	ret0, _ := ret[0].(*appstream.DeleteApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteApplication indicates an expected call of DeleteApplication
+func (mr *MockAppStreamAPIMockRecorder) DeleteApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplication", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteApplication), arg0)
+}
+
+// DeleteApplicationRequest mocks base method
+func (m *MockAppStreamAPI) DeleteApplicationRequest(arg0 *appstream.DeleteApplicationInput) (*request.Request, *appstream.DeleteApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.DeleteApplicationOutput)
+	return ret0, ret1
+}
+
+// DeleteApplicationRequest indicates an expected call of DeleteApplicationRequest
+func (mr *MockAppStreamAPIMockRecorder) DeleteApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteApplicationRequest), arg0)
+}
+
+// DeleteApplicationWithContext mocks base method
+func (m *MockAppStreamAPI) DeleteApplicationWithContext(arg0 context.Context, arg1 *appstream.DeleteApplicationInput, arg2 ...request.Option) (*appstream.DeleteApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.DeleteApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteApplicationWithContext indicates an expected call of DeleteApplicationWithContext
+func (mr *MockAppStreamAPIMockRecorder) DeleteApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteApplicationWithContext), varargs...)
+}
+
 // DeleteDirectoryConfig mocks base method
 func (m *MockAppStreamAPI) DeleteDirectoryConfig(arg0 *appstream.DeleteDirectoryConfigInput) (*appstream.DeleteDirectoryConfigOutput, error) {
 	m.ctrl.T.Helper()
@@ -1083,6 +1333,156 @@ func (mr *MockAppStreamAPIMockRecorder) DeleteUserWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteUserWithContext), varargs...)
+}
+
+// DescribeAppBlocks mocks base method
+func (m *MockAppStreamAPI) DescribeAppBlocks(arg0 *appstream.DescribeAppBlocksInput) (*appstream.DescribeAppBlocksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppBlocks", arg0)
+	ret0, _ := ret[0].(*appstream.DescribeAppBlocksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppBlocks indicates an expected call of DescribeAppBlocks
+func (mr *MockAppStreamAPIMockRecorder) DescribeAppBlocks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppBlocks", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeAppBlocks), arg0)
+}
+
+// DescribeAppBlocksRequest mocks base method
+func (m *MockAppStreamAPI) DescribeAppBlocksRequest(arg0 *appstream.DescribeAppBlocksInput) (*request.Request, *appstream.DescribeAppBlocksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppBlocksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.DescribeAppBlocksOutput)
+	return ret0, ret1
+}
+
+// DescribeAppBlocksRequest indicates an expected call of DescribeAppBlocksRequest
+func (mr *MockAppStreamAPIMockRecorder) DescribeAppBlocksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppBlocksRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeAppBlocksRequest), arg0)
+}
+
+// DescribeAppBlocksWithContext mocks base method
+func (m *MockAppStreamAPI) DescribeAppBlocksWithContext(arg0 context.Context, arg1 *appstream.DescribeAppBlocksInput, arg2 ...request.Option) (*appstream.DescribeAppBlocksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAppBlocksWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.DescribeAppBlocksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppBlocksWithContext indicates an expected call of DescribeAppBlocksWithContext
+func (mr *MockAppStreamAPIMockRecorder) DescribeAppBlocksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppBlocksWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeAppBlocksWithContext), varargs...)
+}
+
+// DescribeApplicationFleetAssociations mocks base method
+func (m *MockAppStreamAPI) DescribeApplicationFleetAssociations(arg0 *appstream.DescribeApplicationFleetAssociationsInput) (*appstream.DescribeApplicationFleetAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeApplicationFleetAssociations", arg0)
+	ret0, _ := ret[0].(*appstream.DescribeApplicationFleetAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeApplicationFleetAssociations indicates an expected call of DescribeApplicationFleetAssociations
+func (mr *MockAppStreamAPIMockRecorder) DescribeApplicationFleetAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationFleetAssociations", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeApplicationFleetAssociations), arg0)
+}
+
+// DescribeApplicationFleetAssociationsRequest mocks base method
+func (m *MockAppStreamAPI) DescribeApplicationFleetAssociationsRequest(arg0 *appstream.DescribeApplicationFleetAssociationsInput) (*request.Request, *appstream.DescribeApplicationFleetAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeApplicationFleetAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.DescribeApplicationFleetAssociationsOutput)
+	return ret0, ret1
+}
+
+// DescribeApplicationFleetAssociationsRequest indicates an expected call of DescribeApplicationFleetAssociationsRequest
+func (mr *MockAppStreamAPIMockRecorder) DescribeApplicationFleetAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationFleetAssociationsRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeApplicationFleetAssociationsRequest), arg0)
+}
+
+// DescribeApplicationFleetAssociationsWithContext mocks base method
+func (m *MockAppStreamAPI) DescribeApplicationFleetAssociationsWithContext(arg0 context.Context, arg1 *appstream.DescribeApplicationFleetAssociationsInput, arg2 ...request.Option) (*appstream.DescribeApplicationFleetAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeApplicationFleetAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.DescribeApplicationFleetAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeApplicationFleetAssociationsWithContext indicates an expected call of DescribeApplicationFleetAssociationsWithContext
+func (mr *MockAppStreamAPIMockRecorder) DescribeApplicationFleetAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationFleetAssociationsWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeApplicationFleetAssociationsWithContext), varargs...)
+}
+
+// DescribeApplications mocks base method
+func (m *MockAppStreamAPI) DescribeApplications(arg0 *appstream.DescribeApplicationsInput) (*appstream.DescribeApplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeApplications", arg0)
+	ret0, _ := ret[0].(*appstream.DescribeApplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeApplications indicates an expected call of DescribeApplications
+func (mr *MockAppStreamAPIMockRecorder) DescribeApplications(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplications", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeApplications), arg0)
+}
+
+// DescribeApplicationsRequest mocks base method
+func (m *MockAppStreamAPI) DescribeApplicationsRequest(arg0 *appstream.DescribeApplicationsInput) (*request.Request, *appstream.DescribeApplicationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeApplicationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.DescribeApplicationsOutput)
+	return ret0, ret1
+}
+
+// DescribeApplicationsRequest indicates an expected call of DescribeApplicationsRequest
+func (mr *MockAppStreamAPIMockRecorder) DescribeApplicationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationsRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeApplicationsRequest), arg0)
+}
+
+// DescribeApplicationsWithContext mocks base method
+func (m *MockAppStreamAPI) DescribeApplicationsWithContext(arg0 context.Context, arg1 *appstream.DescribeApplicationsInput, arg2 ...request.Option) (*appstream.DescribeApplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeApplicationsWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.DescribeApplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeApplicationsWithContext indicates an expected call of DescribeApplicationsWithContext
+func (mr *MockAppStreamAPIMockRecorder) DescribeApplicationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationsWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeApplicationsWithContext), varargs...)
 }
 
 // DescribeDirectoryConfigs mocks base method
@@ -1701,6 +2101,56 @@ func (mr *MockAppStreamAPIMockRecorder) DisableUserWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableUserWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DisableUserWithContext), varargs...)
 }
 
+// DisassociateApplicationFleet mocks base method
+func (m *MockAppStreamAPI) DisassociateApplicationFleet(arg0 *appstream.DisassociateApplicationFleetInput) (*appstream.DisassociateApplicationFleetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateApplicationFleet", arg0)
+	ret0, _ := ret[0].(*appstream.DisassociateApplicationFleetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateApplicationFleet indicates an expected call of DisassociateApplicationFleet
+func (mr *MockAppStreamAPIMockRecorder) DisassociateApplicationFleet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApplicationFleet", reflect.TypeOf((*MockAppStreamAPI)(nil).DisassociateApplicationFleet), arg0)
+}
+
+// DisassociateApplicationFleetRequest mocks base method
+func (m *MockAppStreamAPI) DisassociateApplicationFleetRequest(arg0 *appstream.DisassociateApplicationFleetInput) (*request.Request, *appstream.DisassociateApplicationFleetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateApplicationFleetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.DisassociateApplicationFleetOutput)
+	return ret0, ret1
+}
+
+// DisassociateApplicationFleetRequest indicates an expected call of DisassociateApplicationFleetRequest
+func (mr *MockAppStreamAPIMockRecorder) DisassociateApplicationFleetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApplicationFleetRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).DisassociateApplicationFleetRequest), arg0)
+}
+
+// DisassociateApplicationFleetWithContext mocks base method
+func (m *MockAppStreamAPI) DisassociateApplicationFleetWithContext(arg0 context.Context, arg1 *appstream.DisassociateApplicationFleetInput, arg2 ...request.Option) (*appstream.DisassociateApplicationFleetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateApplicationFleetWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.DisassociateApplicationFleetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateApplicationFleetWithContext indicates an expected call of DisassociateApplicationFleetWithContext
+func (mr *MockAppStreamAPIMockRecorder) DisassociateApplicationFleetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApplicationFleetWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DisassociateApplicationFleetWithContext), varargs...)
+}
+
 // DisassociateFleet mocks base method
 func (m *MockAppStreamAPI) DisassociateFleet(arg0 *appstream.DisassociateFleetInput) (*appstream.DisassociateFleetOutput, error) {
 	m.ctrl.T.Helper()
@@ -2299,6 +2749,56 @@ func (mr *MockAppStreamAPIMockRecorder) UntagResourceWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateApplication mocks base method
+func (m *MockAppStreamAPI) UpdateApplication(arg0 *appstream.UpdateApplicationInput) (*appstream.UpdateApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApplication", arg0)
+	ret0, _ := ret[0].(*appstream.UpdateApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApplication indicates an expected call of UpdateApplication
+func (mr *MockAppStreamAPIMockRecorder) UpdateApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplication", reflect.TypeOf((*MockAppStreamAPI)(nil).UpdateApplication), arg0)
+}
+
+// UpdateApplicationRequest mocks base method
+func (m *MockAppStreamAPI) UpdateApplicationRequest(arg0 *appstream.UpdateApplicationInput) (*request.Request, *appstream.UpdateApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.UpdateApplicationOutput)
+	return ret0, ret1
+}
+
+// UpdateApplicationRequest indicates an expected call of UpdateApplicationRequest
+func (mr *MockAppStreamAPIMockRecorder) UpdateApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).UpdateApplicationRequest), arg0)
+}
+
+// UpdateApplicationWithContext mocks base method
+func (m *MockAppStreamAPI) UpdateApplicationWithContext(arg0 context.Context, arg1 *appstream.UpdateApplicationInput, arg2 ...request.Option) (*appstream.UpdateApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.UpdateApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApplicationWithContext indicates an expected call of UpdateApplicationWithContext
+func (mr *MockAppStreamAPIMockRecorder) UpdateApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).UpdateApplicationWithContext), varargs...)
 }
 
 // UpdateDirectoryConfig mocks base method
