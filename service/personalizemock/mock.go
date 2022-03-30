@@ -85,6 +85,56 @@ func (mr *MockPersonalizeAPIMockRecorder) CreateBatchInferenceJobWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBatchInferenceJobWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateBatchInferenceJobWithContext), varargs...)
 }
 
+// CreateBatchSegmentJob mocks base method
+func (m *MockPersonalizeAPI) CreateBatchSegmentJob(arg0 *personalize.CreateBatchSegmentJobInput) (*personalize.CreateBatchSegmentJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBatchSegmentJob", arg0)
+	ret0, _ := ret[0].(*personalize.CreateBatchSegmentJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBatchSegmentJob indicates an expected call of CreateBatchSegmentJob
+func (mr *MockPersonalizeAPIMockRecorder) CreateBatchSegmentJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBatchSegmentJob", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateBatchSegmentJob), arg0)
+}
+
+// CreateBatchSegmentJobRequest mocks base method
+func (m *MockPersonalizeAPI) CreateBatchSegmentJobRequest(arg0 *personalize.CreateBatchSegmentJobInput) (*request.Request, *personalize.CreateBatchSegmentJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBatchSegmentJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.CreateBatchSegmentJobOutput)
+	return ret0, ret1
+}
+
+// CreateBatchSegmentJobRequest indicates an expected call of CreateBatchSegmentJobRequest
+func (mr *MockPersonalizeAPIMockRecorder) CreateBatchSegmentJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBatchSegmentJobRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateBatchSegmentJobRequest), arg0)
+}
+
+// CreateBatchSegmentJobWithContext mocks base method
+func (m *MockPersonalizeAPI) CreateBatchSegmentJobWithContext(arg0 context.Context, arg1 *personalize.CreateBatchSegmentJobInput, arg2 ...request.Option) (*personalize.CreateBatchSegmentJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateBatchSegmentJobWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.CreateBatchSegmentJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBatchSegmentJobWithContext indicates an expected call of CreateBatchSegmentJobWithContext
+func (mr *MockPersonalizeAPIMockRecorder) CreateBatchSegmentJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBatchSegmentJobWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateBatchSegmentJobWithContext), varargs...)
+}
+
 // CreateCampaign mocks base method
 func (m *MockPersonalizeAPI) CreateCampaign(arg0 *personalize.CreateCampaignInput) (*personalize.CreateCampaignOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +483,56 @@ func (mr *MockPersonalizeAPIMockRecorder) CreateFilterWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFilterWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateFilterWithContext), varargs...)
+}
+
+// CreateRecommender mocks base method
+func (m *MockPersonalizeAPI) CreateRecommender(arg0 *personalize.CreateRecommenderInput) (*personalize.CreateRecommenderOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRecommender", arg0)
+	ret0, _ := ret[0].(*personalize.CreateRecommenderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRecommender indicates an expected call of CreateRecommender
+func (mr *MockPersonalizeAPIMockRecorder) CreateRecommender(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRecommender", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateRecommender), arg0)
+}
+
+// CreateRecommenderRequest mocks base method
+func (m *MockPersonalizeAPI) CreateRecommenderRequest(arg0 *personalize.CreateRecommenderInput) (*request.Request, *personalize.CreateRecommenderOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRecommenderRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.CreateRecommenderOutput)
+	return ret0, ret1
+}
+
+// CreateRecommenderRequest indicates an expected call of CreateRecommenderRequest
+func (mr *MockPersonalizeAPIMockRecorder) CreateRecommenderRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRecommenderRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateRecommenderRequest), arg0)
+}
+
+// CreateRecommenderWithContext mocks base method
+func (m *MockPersonalizeAPI) CreateRecommenderWithContext(arg0 context.Context, arg1 *personalize.CreateRecommenderInput, arg2 ...request.Option) (*personalize.CreateRecommenderOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRecommenderWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.CreateRecommenderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRecommenderWithContext indicates an expected call of CreateRecommenderWithContext
+func (mr *MockPersonalizeAPIMockRecorder) CreateRecommenderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRecommenderWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateRecommenderWithContext), varargs...)
 }
 
 // CreateSchema mocks base method
@@ -835,6 +935,56 @@ func (mr *MockPersonalizeAPIMockRecorder) DeleteFilterWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFilterWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).DeleteFilterWithContext), varargs...)
 }
 
+// DeleteRecommender mocks base method
+func (m *MockPersonalizeAPI) DeleteRecommender(arg0 *personalize.DeleteRecommenderInput) (*personalize.DeleteRecommenderOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRecommender", arg0)
+	ret0, _ := ret[0].(*personalize.DeleteRecommenderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRecommender indicates an expected call of DeleteRecommender
+func (mr *MockPersonalizeAPIMockRecorder) DeleteRecommender(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRecommender", reflect.TypeOf((*MockPersonalizeAPI)(nil).DeleteRecommender), arg0)
+}
+
+// DeleteRecommenderRequest mocks base method
+func (m *MockPersonalizeAPI) DeleteRecommenderRequest(arg0 *personalize.DeleteRecommenderInput) (*request.Request, *personalize.DeleteRecommenderOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRecommenderRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.DeleteRecommenderOutput)
+	return ret0, ret1
+}
+
+// DeleteRecommenderRequest indicates an expected call of DeleteRecommenderRequest
+func (mr *MockPersonalizeAPIMockRecorder) DeleteRecommenderRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRecommenderRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).DeleteRecommenderRequest), arg0)
+}
+
+// DeleteRecommenderWithContext mocks base method
+func (m *MockPersonalizeAPI) DeleteRecommenderWithContext(arg0 context.Context, arg1 *personalize.DeleteRecommenderInput, arg2 ...request.Option) (*personalize.DeleteRecommenderOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRecommenderWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.DeleteRecommenderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRecommenderWithContext indicates an expected call of DeleteRecommenderWithContext
+func (mr *MockPersonalizeAPIMockRecorder) DeleteRecommenderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRecommenderWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).DeleteRecommenderWithContext), varargs...)
+}
+
 // DeleteSchema mocks base method
 func (m *MockPersonalizeAPI) DeleteSchema(arg0 *personalize.DeleteSchemaInput) (*personalize.DeleteSchemaOutput, error) {
 	m.ctrl.T.Helper()
@@ -1033,6 +1183,56 @@ func (mr *MockPersonalizeAPIMockRecorder) DescribeBatchInferenceJobWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchInferenceJobWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeBatchInferenceJobWithContext), varargs...)
+}
+
+// DescribeBatchSegmentJob mocks base method
+func (m *MockPersonalizeAPI) DescribeBatchSegmentJob(arg0 *personalize.DescribeBatchSegmentJobInput) (*personalize.DescribeBatchSegmentJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBatchSegmentJob", arg0)
+	ret0, _ := ret[0].(*personalize.DescribeBatchSegmentJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBatchSegmentJob indicates an expected call of DescribeBatchSegmentJob
+func (mr *MockPersonalizeAPIMockRecorder) DescribeBatchSegmentJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchSegmentJob", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeBatchSegmentJob), arg0)
+}
+
+// DescribeBatchSegmentJobRequest mocks base method
+func (m *MockPersonalizeAPI) DescribeBatchSegmentJobRequest(arg0 *personalize.DescribeBatchSegmentJobInput) (*request.Request, *personalize.DescribeBatchSegmentJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBatchSegmentJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.DescribeBatchSegmentJobOutput)
+	return ret0, ret1
+}
+
+// DescribeBatchSegmentJobRequest indicates an expected call of DescribeBatchSegmentJobRequest
+func (mr *MockPersonalizeAPIMockRecorder) DescribeBatchSegmentJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchSegmentJobRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeBatchSegmentJobRequest), arg0)
+}
+
+// DescribeBatchSegmentJobWithContext mocks base method
+func (m *MockPersonalizeAPI) DescribeBatchSegmentJobWithContext(arg0 context.Context, arg1 *personalize.DescribeBatchSegmentJobInput, arg2 ...request.Option) (*personalize.DescribeBatchSegmentJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeBatchSegmentJobWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.DescribeBatchSegmentJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBatchSegmentJobWithContext indicates an expected call of DescribeBatchSegmentJobWithContext
+func (mr *MockPersonalizeAPIMockRecorder) DescribeBatchSegmentJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchSegmentJobWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeBatchSegmentJobWithContext), varargs...)
 }
 
 // DescribeCampaign mocks base method
@@ -1485,6 +1685,56 @@ func (mr *MockPersonalizeAPIMockRecorder) DescribeRecipeWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRecipeWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeRecipeWithContext), varargs...)
 }
 
+// DescribeRecommender mocks base method
+func (m *MockPersonalizeAPI) DescribeRecommender(arg0 *personalize.DescribeRecommenderInput) (*personalize.DescribeRecommenderOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRecommender", arg0)
+	ret0, _ := ret[0].(*personalize.DescribeRecommenderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRecommender indicates an expected call of DescribeRecommender
+func (mr *MockPersonalizeAPIMockRecorder) DescribeRecommender(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRecommender", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeRecommender), arg0)
+}
+
+// DescribeRecommenderRequest mocks base method
+func (m *MockPersonalizeAPI) DescribeRecommenderRequest(arg0 *personalize.DescribeRecommenderInput) (*request.Request, *personalize.DescribeRecommenderOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRecommenderRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.DescribeRecommenderOutput)
+	return ret0, ret1
+}
+
+// DescribeRecommenderRequest indicates an expected call of DescribeRecommenderRequest
+func (mr *MockPersonalizeAPIMockRecorder) DescribeRecommenderRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRecommenderRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeRecommenderRequest), arg0)
+}
+
+// DescribeRecommenderWithContext mocks base method
+func (m *MockPersonalizeAPI) DescribeRecommenderWithContext(arg0 context.Context, arg1 *personalize.DescribeRecommenderInput, arg2 ...request.Option) (*personalize.DescribeRecommenderOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeRecommenderWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.DescribeRecommenderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRecommenderWithContext indicates an expected call of DescribeRecommenderWithContext
+func (mr *MockPersonalizeAPIMockRecorder) DescribeRecommenderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRecommenderWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeRecommenderWithContext), varargs...)
+}
+
 // DescribeSchema mocks base method
 func (m *MockPersonalizeAPI) DescribeSchema(arg0 *personalize.DescribeSchemaInput) (*personalize.DescribeSchemaOutput, error) {
 	m.ctrl.T.Helper()
@@ -1766,6 +2016,89 @@ func (mr *MockPersonalizeAPIMockRecorder) ListBatchInferenceJobsWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchInferenceJobsWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListBatchInferenceJobsWithContext), varargs...)
+}
+
+// ListBatchSegmentJobs mocks base method
+func (m *MockPersonalizeAPI) ListBatchSegmentJobs(arg0 *personalize.ListBatchSegmentJobsInput) (*personalize.ListBatchSegmentJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBatchSegmentJobs", arg0)
+	ret0, _ := ret[0].(*personalize.ListBatchSegmentJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBatchSegmentJobs indicates an expected call of ListBatchSegmentJobs
+func (mr *MockPersonalizeAPIMockRecorder) ListBatchSegmentJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchSegmentJobs", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListBatchSegmentJobs), arg0)
+}
+
+// ListBatchSegmentJobsPages mocks base method
+func (m *MockPersonalizeAPI) ListBatchSegmentJobsPages(arg0 *personalize.ListBatchSegmentJobsInput, arg1 func(*personalize.ListBatchSegmentJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBatchSegmentJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListBatchSegmentJobsPages indicates an expected call of ListBatchSegmentJobsPages
+func (mr *MockPersonalizeAPIMockRecorder) ListBatchSegmentJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchSegmentJobsPages", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListBatchSegmentJobsPages), arg0, arg1)
+}
+
+// ListBatchSegmentJobsPagesWithContext mocks base method
+func (m *MockPersonalizeAPI) ListBatchSegmentJobsPagesWithContext(arg0 context.Context, arg1 *personalize.ListBatchSegmentJobsInput, arg2 func(*personalize.ListBatchSegmentJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBatchSegmentJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListBatchSegmentJobsPagesWithContext indicates an expected call of ListBatchSegmentJobsPagesWithContext
+func (mr *MockPersonalizeAPIMockRecorder) ListBatchSegmentJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchSegmentJobsPagesWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListBatchSegmentJobsPagesWithContext), varargs...)
+}
+
+// ListBatchSegmentJobsRequest mocks base method
+func (m *MockPersonalizeAPI) ListBatchSegmentJobsRequest(arg0 *personalize.ListBatchSegmentJobsInput) (*request.Request, *personalize.ListBatchSegmentJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBatchSegmentJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.ListBatchSegmentJobsOutput)
+	return ret0, ret1
+}
+
+// ListBatchSegmentJobsRequest indicates an expected call of ListBatchSegmentJobsRequest
+func (mr *MockPersonalizeAPIMockRecorder) ListBatchSegmentJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchSegmentJobsRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListBatchSegmentJobsRequest), arg0)
+}
+
+// ListBatchSegmentJobsWithContext mocks base method
+func (m *MockPersonalizeAPI) ListBatchSegmentJobsWithContext(arg0 context.Context, arg1 *personalize.ListBatchSegmentJobsInput, arg2 ...request.Option) (*personalize.ListBatchSegmentJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBatchSegmentJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.ListBatchSegmentJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBatchSegmentJobsWithContext indicates an expected call of ListBatchSegmentJobsWithContext
+func (mr *MockPersonalizeAPIMockRecorder) ListBatchSegmentJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchSegmentJobsWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListBatchSegmentJobsWithContext), varargs...)
 }
 
 // ListCampaigns mocks base method
@@ -2432,6 +2765,89 @@ func (mr *MockPersonalizeAPIMockRecorder) ListRecipesWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecipesWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListRecipesWithContext), varargs...)
 }
 
+// ListRecommenders mocks base method
+func (m *MockPersonalizeAPI) ListRecommenders(arg0 *personalize.ListRecommendersInput) (*personalize.ListRecommendersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRecommenders", arg0)
+	ret0, _ := ret[0].(*personalize.ListRecommendersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRecommenders indicates an expected call of ListRecommenders
+func (mr *MockPersonalizeAPIMockRecorder) ListRecommenders(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecommenders", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListRecommenders), arg0)
+}
+
+// ListRecommendersPages mocks base method
+func (m *MockPersonalizeAPI) ListRecommendersPages(arg0 *personalize.ListRecommendersInput, arg1 func(*personalize.ListRecommendersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRecommendersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRecommendersPages indicates an expected call of ListRecommendersPages
+func (mr *MockPersonalizeAPIMockRecorder) ListRecommendersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecommendersPages", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListRecommendersPages), arg0, arg1)
+}
+
+// ListRecommendersPagesWithContext mocks base method
+func (m *MockPersonalizeAPI) ListRecommendersPagesWithContext(arg0 context.Context, arg1 *personalize.ListRecommendersInput, arg2 func(*personalize.ListRecommendersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRecommendersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRecommendersPagesWithContext indicates an expected call of ListRecommendersPagesWithContext
+func (mr *MockPersonalizeAPIMockRecorder) ListRecommendersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecommendersPagesWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListRecommendersPagesWithContext), varargs...)
+}
+
+// ListRecommendersRequest mocks base method
+func (m *MockPersonalizeAPI) ListRecommendersRequest(arg0 *personalize.ListRecommendersInput) (*request.Request, *personalize.ListRecommendersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRecommendersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.ListRecommendersOutput)
+	return ret0, ret1
+}
+
+// ListRecommendersRequest indicates an expected call of ListRecommendersRequest
+func (mr *MockPersonalizeAPIMockRecorder) ListRecommendersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecommendersRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListRecommendersRequest), arg0)
+}
+
+// ListRecommendersWithContext mocks base method
+func (m *MockPersonalizeAPI) ListRecommendersWithContext(arg0 context.Context, arg1 *personalize.ListRecommendersInput, arg2 ...request.Option) (*personalize.ListRecommendersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRecommendersWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.ListRecommendersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRecommendersWithContext indicates an expected call of ListRecommendersWithContext
+func (mr *MockPersonalizeAPIMockRecorder) ListRecommendersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecommendersWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListRecommendersWithContext), varargs...)
+}
+
 // ListSchemas mocks base method
 func (m *MockPersonalizeAPI) ListSchemas(arg0 *personalize.ListSchemasInput) (*personalize.ListSchemasOutput, error) {
 	m.ctrl.T.Helper()
@@ -2779,4 +3195,54 @@ func (mr *MockPersonalizeAPIMockRecorder) UpdateCampaignWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCampaignWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).UpdateCampaignWithContext), varargs...)
+}
+
+// UpdateRecommender mocks base method
+func (m *MockPersonalizeAPI) UpdateRecommender(arg0 *personalize.UpdateRecommenderInput) (*personalize.UpdateRecommenderOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRecommender", arg0)
+	ret0, _ := ret[0].(*personalize.UpdateRecommenderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRecommender indicates an expected call of UpdateRecommender
+func (mr *MockPersonalizeAPIMockRecorder) UpdateRecommender(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRecommender", reflect.TypeOf((*MockPersonalizeAPI)(nil).UpdateRecommender), arg0)
+}
+
+// UpdateRecommenderRequest mocks base method
+func (m *MockPersonalizeAPI) UpdateRecommenderRequest(arg0 *personalize.UpdateRecommenderInput) (*request.Request, *personalize.UpdateRecommenderOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRecommenderRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.UpdateRecommenderOutput)
+	return ret0, ret1
+}
+
+// UpdateRecommenderRequest indicates an expected call of UpdateRecommenderRequest
+func (mr *MockPersonalizeAPIMockRecorder) UpdateRecommenderRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRecommenderRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).UpdateRecommenderRequest), arg0)
+}
+
+// UpdateRecommenderWithContext mocks base method
+func (m *MockPersonalizeAPI) UpdateRecommenderWithContext(arg0 context.Context, arg1 *personalize.UpdateRecommenderInput, arg2 ...request.Option) (*personalize.UpdateRecommenderOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRecommenderWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.UpdateRecommenderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRecommenderWithContext indicates an expected call of UpdateRecommenderWithContext
+func (mr *MockPersonalizeAPIMockRecorder) UpdateRecommenderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRecommenderWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).UpdateRecommenderWithContext), varargs...)
 }
