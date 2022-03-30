@@ -35,6 +35,56 @@ func (m *MockSecurityHubAPI) EXPECT() *MockSecurityHubAPIMockRecorder {
 	return m.recorder
 }
 
+// AcceptAdministratorInvitation mocks base method
+func (m *MockSecurityHubAPI) AcceptAdministratorInvitation(arg0 *securityhub.AcceptAdministratorInvitationInput) (*securityhub.AcceptAdministratorInvitationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AcceptAdministratorInvitation", arg0)
+	ret0, _ := ret[0].(*securityhub.AcceptAdministratorInvitationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AcceptAdministratorInvitation indicates an expected call of AcceptAdministratorInvitation
+func (mr *MockSecurityHubAPIMockRecorder) AcceptAdministratorInvitation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptAdministratorInvitation", reflect.TypeOf((*MockSecurityHubAPI)(nil).AcceptAdministratorInvitation), arg0)
+}
+
+// AcceptAdministratorInvitationRequest mocks base method
+func (m *MockSecurityHubAPI) AcceptAdministratorInvitationRequest(arg0 *securityhub.AcceptAdministratorInvitationInput) (*request.Request, *securityhub.AcceptAdministratorInvitationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AcceptAdministratorInvitationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securityhub.AcceptAdministratorInvitationOutput)
+	return ret0, ret1
+}
+
+// AcceptAdministratorInvitationRequest indicates an expected call of AcceptAdministratorInvitationRequest
+func (mr *MockSecurityHubAPIMockRecorder) AcceptAdministratorInvitationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptAdministratorInvitationRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).AcceptAdministratorInvitationRequest), arg0)
+}
+
+// AcceptAdministratorInvitationWithContext mocks base method
+func (m *MockSecurityHubAPI) AcceptAdministratorInvitationWithContext(arg0 context.Context, arg1 *securityhub.AcceptAdministratorInvitationInput, arg2 ...request.Option) (*securityhub.AcceptAdministratorInvitationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AcceptAdministratorInvitationWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.AcceptAdministratorInvitationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AcceptAdministratorInvitationWithContext indicates an expected call of AcceptAdministratorInvitationWithContext
+func (mr *MockSecurityHubAPIMockRecorder) AcceptAdministratorInvitationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptAdministratorInvitationWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).AcceptAdministratorInvitationWithContext), varargs...)
+}
+
 // AcceptInvitation mocks base method
 func (m *MockSecurityHubAPI) AcceptInvitation(arg0 *securityhub.AcceptInvitationInput) (*securityhub.AcceptInvitationOutput, error) {
 	m.ctrl.T.Helper()
@@ -1267,6 +1317,56 @@ func (mr *MockSecurityHubAPIMockRecorder) DisableSecurityHubWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableSecurityHubWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DisableSecurityHubWithContext), varargs...)
 }
 
+// DisassociateFromAdministratorAccount mocks base method
+func (m *MockSecurityHubAPI) DisassociateFromAdministratorAccount(arg0 *securityhub.DisassociateFromAdministratorAccountInput) (*securityhub.DisassociateFromAdministratorAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFromAdministratorAccount", arg0)
+	ret0, _ := ret[0].(*securityhub.DisassociateFromAdministratorAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFromAdministratorAccount indicates an expected call of DisassociateFromAdministratorAccount
+func (mr *MockSecurityHubAPIMockRecorder) DisassociateFromAdministratorAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFromAdministratorAccount", reflect.TypeOf((*MockSecurityHubAPI)(nil).DisassociateFromAdministratorAccount), arg0)
+}
+
+// DisassociateFromAdministratorAccountRequest mocks base method
+func (m *MockSecurityHubAPI) DisassociateFromAdministratorAccountRequest(arg0 *securityhub.DisassociateFromAdministratorAccountInput) (*request.Request, *securityhub.DisassociateFromAdministratorAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFromAdministratorAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securityhub.DisassociateFromAdministratorAccountOutput)
+	return ret0, ret1
+}
+
+// DisassociateFromAdministratorAccountRequest indicates an expected call of DisassociateFromAdministratorAccountRequest
+func (mr *MockSecurityHubAPIMockRecorder) DisassociateFromAdministratorAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFromAdministratorAccountRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).DisassociateFromAdministratorAccountRequest), arg0)
+}
+
+// DisassociateFromAdministratorAccountWithContext mocks base method
+func (m *MockSecurityHubAPI) DisassociateFromAdministratorAccountWithContext(arg0 context.Context, arg1 *securityhub.DisassociateFromAdministratorAccountInput, arg2 ...request.Option) (*securityhub.DisassociateFromAdministratorAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateFromAdministratorAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.DisassociateFromAdministratorAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFromAdministratorAccountWithContext indicates an expected call of DisassociateFromAdministratorAccountWithContext
+func (mr *MockSecurityHubAPIMockRecorder) DisassociateFromAdministratorAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFromAdministratorAccountWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).DisassociateFromAdministratorAccountWithContext), varargs...)
+}
+
 // DisassociateFromMasterAccount mocks base method
 func (m *MockSecurityHubAPI) DisassociateFromMasterAccount(arg0 *securityhub.DisassociateFromMasterAccountInput) (*securityhub.DisassociateFromMasterAccountOutput, error) {
 	m.ctrl.T.Helper()
@@ -1515,6 +1615,56 @@ func (mr *MockSecurityHubAPIMockRecorder) EnableSecurityHubWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableSecurityHubWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).EnableSecurityHubWithContext), varargs...)
+}
+
+// GetAdministratorAccount mocks base method
+func (m *MockSecurityHubAPI) GetAdministratorAccount(arg0 *securityhub.GetAdministratorAccountInput) (*securityhub.GetAdministratorAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAdministratorAccount", arg0)
+	ret0, _ := ret[0].(*securityhub.GetAdministratorAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAdministratorAccount indicates an expected call of GetAdministratorAccount
+func (mr *MockSecurityHubAPIMockRecorder) GetAdministratorAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdministratorAccount", reflect.TypeOf((*MockSecurityHubAPI)(nil).GetAdministratorAccount), arg0)
+}
+
+// GetAdministratorAccountRequest mocks base method
+func (m *MockSecurityHubAPI) GetAdministratorAccountRequest(arg0 *securityhub.GetAdministratorAccountInput) (*request.Request, *securityhub.GetAdministratorAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAdministratorAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securityhub.GetAdministratorAccountOutput)
+	return ret0, ret1
+}
+
+// GetAdministratorAccountRequest indicates an expected call of GetAdministratorAccountRequest
+func (mr *MockSecurityHubAPIMockRecorder) GetAdministratorAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdministratorAccountRequest", reflect.TypeOf((*MockSecurityHubAPI)(nil).GetAdministratorAccountRequest), arg0)
+}
+
+// GetAdministratorAccountWithContext mocks base method
+func (m *MockSecurityHubAPI) GetAdministratorAccountWithContext(arg0 context.Context, arg1 *securityhub.GetAdministratorAccountInput, arg2 ...request.Option) (*securityhub.GetAdministratorAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAdministratorAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*securityhub.GetAdministratorAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAdministratorAccountWithContext indicates an expected call of GetAdministratorAccountWithContext
+func (mr *MockSecurityHubAPIMockRecorder) GetAdministratorAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdministratorAccountWithContext", reflect.TypeOf((*MockSecurityHubAPI)(nil).GetAdministratorAccountWithContext), varargs...)
 }
 
 // GetEnabledStandards mocks base method
