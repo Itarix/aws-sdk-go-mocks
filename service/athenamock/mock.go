@@ -235,6 +235,56 @@ func (mr *MockAthenaAPIMockRecorder) CreateNamedQueryWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNamedQueryWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).CreateNamedQueryWithContext), varargs...)
 }
 
+// CreatePreparedStatement mocks base method
+func (m *MockAthenaAPI) CreatePreparedStatement(arg0 *athena.CreatePreparedStatementInput) (*athena.CreatePreparedStatementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePreparedStatement", arg0)
+	ret0, _ := ret[0].(*athena.CreatePreparedStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePreparedStatement indicates an expected call of CreatePreparedStatement
+func (mr *MockAthenaAPIMockRecorder) CreatePreparedStatement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePreparedStatement", reflect.TypeOf((*MockAthenaAPI)(nil).CreatePreparedStatement), arg0)
+}
+
+// CreatePreparedStatementRequest mocks base method
+func (m *MockAthenaAPI) CreatePreparedStatementRequest(arg0 *athena.CreatePreparedStatementInput) (*request.Request, *athena.CreatePreparedStatementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePreparedStatementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.CreatePreparedStatementOutput)
+	return ret0, ret1
+}
+
+// CreatePreparedStatementRequest indicates an expected call of CreatePreparedStatementRequest
+func (mr *MockAthenaAPIMockRecorder) CreatePreparedStatementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePreparedStatementRequest", reflect.TypeOf((*MockAthenaAPI)(nil).CreatePreparedStatementRequest), arg0)
+}
+
+// CreatePreparedStatementWithContext mocks base method
+func (m *MockAthenaAPI) CreatePreparedStatementWithContext(arg0 context.Context, arg1 *athena.CreatePreparedStatementInput, arg2 ...request.Option) (*athena.CreatePreparedStatementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreatePreparedStatementWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.CreatePreparedStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePreparedStatementWithContext indicates an expected call of CreatePreparedStatementWithContext
+func (mr *MockAthenaAPIMockRecorder) CreatePreparedStatementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePreparedStatementWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).CreatePreparedStatementWithContext), varargs...)
+}
+
 // CreateWorkGroup mocks base method
 func (m *MockAthenaAPI) CreateWorkGroup(arg0 *athena.CreateWorkGroupInput) (*athena.CreateWorkGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +433,56 @@ func (mr *MockAthenaAPIMockRecorder) DeleteNamedQueryWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNamedQueryWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).DeleteNamedQueryWithContext), varargs...)
+}
+
+// DeletePreparedStatement mocks base method
+func (m *MockAthenaAPI) DeletePreparedStatement(arg0 *athena.DeletePreparedStatementInput) (*athena.DeletePreparedStatementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePreparedStatement", arg0)
+	ret0, _ := ret[0].(*athena.DeletePreparedStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePreparedStatement indicates an expected call of DeletePreparedStatement
+func (mr *MockAthenaAPIMockRecorder) DeletePreparedStatement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePreparedStatement", reflect.TypeOf((*MockAthenaAPI)(nil).DeletePreparedStatement), arg0)
+}
+
+// DeletePreparedStatementRequest mocks base method
+func (m *MockAthenaAPI) DeletePreparedStatementRequest(arg0 *athena.DeletePreparedStatementInput) (*request.Request, *athena.DeletePreparedStatementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePreparedStatementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.DeletePreparedStatementOutput)
+	return ret0, ret1
+}
+
+// DeletePreparedStatementRequest indicates an expected call of DeletePreparedStatementRequest
+func (mr *MockAthenaAPIMockRecorder) DeletePreparedStatementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePreparedStatementRequest", reflect.TypeOf((*MockAthenaAPI)(nil).DeletePreparedStatementRequest), arg0)
+}
+
+// DeletePreparedStatementWithContext mocks base method
+func (m *MockAthenaAPI) DeletePreparedStatementWithContext(arg0 context.Context, arg1 *athena.DeletePreparedStatementInput, arg2 ...request.Option) (*athena.DeletePreparedStatementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePreparedStatementWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.DeletePreparedStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePreparedStatementWithContext indicates an expected call of DeletePreparedStatementWithContext
+func (mr *MockAthenaAPIMockRecorder) DeletePreparedStatementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePreparedStatementWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).DeletePreparedStatementWithContext), varargs...)
 }
 
 // DeleteWorkGroup mocks base method
@@ -583,6 +683,56 @@ func (mr *MockAthenaAPIMockRecorder) GetNamedQueryWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNamedQueryWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetNamedQueryWithContext), varargs...)
+}
+
+// GetPreparedStatement mocks base method
+func (m *MockAthenaAPI) GetPreparedStatement(arg0 *athena.GetPreparedStatementInput) (*athena.GetPreparedStatementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPreparedStatement", arg0)
+	ret0, _ := ret[0].(*athena.GetPreparedStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPreparedStatement indicates an expected call of GetPreparedStatement
+func (mr *MockAthenaAPIMockRecorder) GetPreparedStatement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPreparedStatement", reflect.TypeOf((*MockAthenaAPI)(nil).GetPreparedStatement), arg0)
+}
+
+// GetPreparedStatementRequest mocks base method
+func (m *MockAthenaAPI) GetPreparedStatementRequest(arg0 *athena.GetPreparedStatementInput) (*request.Request, *athena.GetPreparedStatementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPreparedStatementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.GetPreparedStatementOutput)
+	return ret0, ret1
+}
+
+// GetPreparedStatementRequest indicates an expected call of GetPreparedStatementRequest
+func (mr *MockAthenaAPIMockRecorder) GetPreparedStatementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPreparedStatementRequest", reflect.TypeOf((*MockAthenaAPI)(nil).GetPreparedStatementRequest), arg0)
+}
+
+// GetPreparedStatementWithContext mocks base method
+func (m *MockAthenaAPI) GetPreparedStatementWithContext(arg0 context.Context, arg1 *athena.GetPreparedStatementInput, arg2 ...request.Option) (*athena.GetPreparedStatementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPreparedStatementWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.GetPreparedStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPreparedStatementWithContext indicates an expected call of GetPreparedStatementWithContext
+func (mr *MockAthenaAPIMockRecorder) GetPreparedStatementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPreparedStatementWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetPreparedStatementWithContext), varargs...)
 }
 
 // GetQueryExecution mocks base method
@@ -1115,6 +1265,89 @@ func (mr *MockAthenaAPIMockRecorder) ListNamedQueriesWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNamedQueriesWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListNamedQueriesWithContext), varargs...)
+}
+
+// ListPreparedStatements mocks base method
+func (m *MockAthenaAPI) ListPreparedStatements(arg0 *athena.ListPreparedStatementsInput) (*athena.ListPreparedStatementsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPreparedStatements", arg0)
+	ret0, _ := ret[0].(*athena.ListPreparedStatementsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPreparedStatements indicates an expected call of ListPreparedStatements
+func (mr *MockAthenaAPIMockRecorder) ListPreparedStatements(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPreparedStatements", reflect.TypeOf((*MockAthenaAPI)(nil).ListPreparedStatements), arg0)
+}
+
+// ListPreparedStatementsPages mocks base method
+func (m *MockAthenaAPI) ListPreparedStatementsPages(arg0 *athena.ListPreparedStatementsInput, arg1 func(*athena.ListPreparedStatementsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPreparedStatementsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPreparedStatementsPages indicates an expected call of ListPreparedStatementsPages
+func (mr *MockAthenaAPIMockRecorder) ListPreparedStatementsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPreparedStatementsPages", reflect.TypeOf((*MockAthenaAPI)(nil).ListPreparedStatementsPages), arg0, arg1)
+}
+
+// ListPreparedStatementsPagesWithContext mocks base method
+func (m *MockAthenaAPI) ListPreparedStatementsPagesWithContext(arg0 context.Context, arg1 *athena.ListPreparedStatementsInput, arg2 func(*athena.ListPreparedStatementsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPreparedStatementsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPreparedStatementsPagesWithContext indicates an expected call of ListPreparedStatementsPagesWithContext
+func (mr *MockAthenaAPIMockRecorder) ListPreparedStatementsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPreparedStatementsPagesWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListPreparedStatementsPagesWithContext), varargs...)
+}
+
+// ListPreparedStatementsRequest mocks base method
+func (m *MockAthenaAPI) ListPreparedStatementsRequest(arg0 *athena.ListPreparedStatementsInput) (*request.Request, *athena.ListPreparedStatementsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPreparedStatementsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.ListPreparedStatementsOutput)
+	return ret0, ret1
+}
+
+// ListPreparedStatementsRequest indicates an expected call of ListPreparedStatementsRequest
+func (mr *MockAthenaAPIMockRecorder) ListPreparedStatementsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPreparedStatementsRequest", reflect.TypeOf((*MockAthenaAPI)(nil).ListPreparedStatementsRequest), arg0)
+}
+
+// ListPreparedStatementsWithContext mocks base method
+func (m *MockAthenaAPI) ListPreparedStatementsWithContext(arg0 context.Context, arg1 *athena.ListPreparedStatementsInput, arg2 ...request.Option) (*athena.ListPreparedStatementsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPreparedStatementsWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.ListPreparedStatementsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPreparedStatementsWithContext indicates an expected call of ListPreparedStatementsWithContext
+func (mr *MockAthenaAPIMockRecorder) ListPreparedStatementsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPreparedStatementsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListPreparedStatementsWithContext), varargs...)
 }
 
 // ListQueryExecutions mocks base method
@@ -1697,6 +1930,56 @@ func (mr *MockAthenaAPIMockRecorder) UpdateDataCatalogWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataCatalogWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateDataCatalogWithContext), varargs...)
+}
+
+// UpdatePreparedStatement mocks base method
+func (m *MockAthenaAPI) UpdatePreparedStatement(arg0 *athena.UpdatePreparedStatementInput) (*athena.UpdatePreparedStatementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePreparedStatement", arg0)
+	ret0, _ := ret[0].(*athena.UpdatePreparedStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePreparedStatement indicates an expected call of UpdatePreparedStatement
+func (mr *MockAthenaAPIMockRecorder) UpdatePreparedStatement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePreparedStatement", reflect.TypeOf((*MockAthenaAPI)(nil).UpdatePreparedStatement), arg0)
+}
+
+// UpdatePreparedStatementRequest mocks base method
+func (m *MockAthenaAPI) UpdatePreparedStatementRequest(arg0 *athena.UpdatePreparedStatementInput) (*request.Request, *athena.UpdatePreparedStatementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePreparedStatementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.UpdatePreparedStatementOutput)
+	return ret0, ret1
+}
+
+// UpdatePreparedStatementRequest indicates an expected call of UpdatePreparedStatementRequest
+func (mr *MockAthenaAPIMockRecorder) UpdatePreparedStatementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePreparedStatementRequest", reflect.TypeOf((*MockAthenaAPI)(nil).UpdatePreparedStatementRequest), arg0)
+}
+
+// UpdatePreparedStatementWithContext mocks base method
+func (m *MockAthenaAPI) UpdatePreparedStatementWithContext(arg0 context.Context, arg1 *athena.UpdatePreparedStatementInput, arg2 ...request.Option) (*athena.UpdatePreparedStatementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdatePreparedStatementWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.UpdatePreparedStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePreparedStatementWithContext indicates an expected call of UpdatePreparedStatementWithContext
+func (mr *MockAthenaAPIMockRecorder) UpdatePreparedStatementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePreparedStatementWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).UpdatePreparedStatementWithContext), varargs...)
 }
 
 // UpdateWorkGroup mocks base method
