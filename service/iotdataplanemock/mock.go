@@ -85,6 +85,56 @@ func (mr *MockIoTDataPlaneAPIMockRecorder) DeleteThingShadowWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteThingShadowWithContext", reflect.TypeOf((*MockIoTDataPlaneAPI)(nil).DeleteThingShadowWithContext), varargs...)
 }
 
+// GetRetainedMessage mocks base method
+func (m *MockIoTDataPlaneAPI) GetRetainedMessage(arg0 *iotdataplane.GetRetainedMessageInput) (*iotdataplane.GetRetainedMessageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRetainedMessage", arg0)
+	ret0, _ := ret[0].(*iotdataplane.GetRetainedMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRetainedMessage indicates an expected call of GetRetainedMessage
+func (mr *MockIoTDataPlaneAPIMockRecorder) GetRetainedMessage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRetainedMessage", reflect.TypeOf((*MockIoTDataPlaneAPI)(nil).GetRetainedMessage), arg0)
+}
+
+// GetRetainedMessageRequest mocks base method
+func (m *MockIoTDataPlaneAPI) GetRetainedMessageRequest(arg0 *iotdataplane.GetRetainedMessageInput) (*request.Request, *iotdataplane.GetRetainedMessageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRetainedMessageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotdataplane.GetRetainedMessageOutput)
+	return ret0, ret1
+}
+
+// GetRetainedMessageRequest indicates an expected call of GetRetainedMessageRequest
+func (mr *MockIoTDataPlaneAPIMockRecorder) GetRetainedMessageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRetainedMessageRequest", reflect.TypeOf((*MockIoTDataPlaneAPI)(nil).GetRetainedMessageRequest), arg0)
+}
+
+// GetRetainedMessageWithContext mocks base method
+func (m *MockIoTDataPlaneAPI) GetRetainedMessageWithContext(arg0 context.Context, arg1 *iotdataplane.GetRetainedMessageInput, arg2 ...request.Option) (*iotdataplane.GetRetainedMessageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRetainedMessageWithContext", varargs...)
+	ret0, _ := ret[0].(*iotdataplane.GetRetainedMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRetainedMessageWithContext indicates an expected call of GetRetainedMessageWithContext
+func (mr *MockIoTDataPlaneAPIMockRecorder) GetRetainedMessageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRetainedMessageWithContext", reflect.TypeOf((*MockIoTDataPlaneAPI)(nil).GetRetainedMessageWithContext), varargs...)
+}
+
 // GetThingShadow mocks base method
 func (m *MockIoTDataPlaneAPI) GetThingShadow(arg0 *iotdataplane.GetThingShadowInput) (*iotdataplane.GetThingShadowOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +233,89 @@ func (mr *MockIoTDataPlaneAPIMockRecorder) ListNamedShadowsForThingWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNamedShadowsForThingWithContext", reflect.TypeOf((*MockIoTDataPlaneAPI)(nil).ListNamedShadowsForThingWithContext), varargs...)
+}
+
+// ListRetainedMessages mocks base method
+func (m *MockIoTDataPlaneAPI) ListRetainedMessages(arg0 *iotdataplane.ListRetainedMessagesInput) (*iotdataplane.ListRetainedMessagesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRetainedMessages", arg0)
+	ret0, _ := ret[0].(*iotdataplane.ListRetainedMessagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRetainedMessages indicates an expected call of ListRetainedMessages
+func (mr *MockIoTDataPlaneAPIMockRecorder) ListRetainedMessages(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRetainedMessages", reflect.TypeOf((*MockIoTDataPlaneAPI)(nil).ListRetainedMessages), arg0)
+}
+
+// ListRetainedMessagesPages mocks base method
+func (m *MockIoTDataPlaneAPI) ListRetainedMessagesPages(arg0 *iotdataplane.ListRetainedMessagesInput, arg1 func(*iotdataplane.ListRetainedMessagesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRetainedMessagesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRetainedMessagesPages indicates an expected call of ListRetainedMessagesPages
+func (mr *MockIoTDataPlaneAPIMockRecorder) ListRetainedMessagesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRetainedMessagesPages", reflect.TypeOf((*MockIoTDataPlaneAPI)(nil).ListRetainedMessagesPages), arg0, arg1)
+}
+
+// ListRetainedMessagesPagesWithContext mocks base method
+func (m *MockIoTDataPlaneAPI) ListRetainedMessagesPagesWithContext(arg0 context.Context, arg1 *iotdataplane.ListRetainedMessagesInput, arg2 func(*iotdataplane.ListRetainedMessagesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRetainedMessagesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRetainedMessagesPagesWithContext indicates an expected call of ListRetainedMessagesPagesWithContext
+func (mr *MockIoTDataPlaneAPIMockRecorder) ListRetainedMessagesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRetainedMessagesPagesWithContext", reflect.TypeOf((*MockIoTDataPlaneAPI)(nil).ListRetainedMessagesPagesWithContext), varargs...)
+}
+
+// ListRetainedMessagesRequest mocks base method
+func (m *MockIoTDataPlaneAPI) ListRetainedMessagesRequest(arg0 *iotdataplane.ListRetainedMessagesInput) (*request.Request, *iotdataplane.ListRetainedMessagesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRetainedMessagesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotdataplane.ListRetainedMessagesOutput)
+	return ret0, ret1
+}
+
+// ListRetainedMessagesRequest indicates an expected call of ListRetainedMessagesRequest
+func (mr *MockIoTDataPlaneAPIMockRecorder) ListRetainedMessagesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRetainedMessagesRequest", reflect.TypeOf((*MockIoTDataPlaneAPI)(nil).ListRetainedMessagesRequest), arg0)
+}
+
+// ListRetainedMessagesWithContext mocks base method
+func (m *MockIoTDataPlaneAPI) ListRetainedMessagesWithContext(arg0 context.Context, arg1 *iotdataplane.ListRetainedMessagesInput, arg2 ...request.Option) (*iotdataplane.ListRetainedMessagesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRetainedMessagesWithContext", varargs...)
+	ret0, _ := ret[0].(*iotdataplane.ListRetainedMessagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRetainedMessagesWithContext indicates an expected call of ListRetainedMessagesWithContext
+func (mr *MockIoTDataPlaneAPIMockRecorder) ListRetainedMessagesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRetainedMessagesWithContext", reflect.TypeOf((*MockIoTDataPlaneAPI)(nil).ListRetainedMessagesWithContext), varargs...)
 }
 
 // Publish mocks base method
