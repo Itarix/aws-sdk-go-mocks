@@ -1932,6 +1932,56 @@ func (mr *MockAthenaAPIMockRecorder) UpdateDataCatalogWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataCatalogWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateDataCatalogWithContext), varargs...)
 }
 
+// UpdateNamedQuery mocks base method
+func (m *MockAthenaAPI) UpdateNamedQuery(arg0 *athena.UpdateNamedQueryInput) (*athena.UpdateNamedQueryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateNamedQuery", arg0)
+	ret0, _ := ret[0].(*athena.UpdateNamedQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateNamedQuery indicates an expected call of UpdateNamedQuery
+func (mr *MockAthenaAPIMockRecorder) UpdateNamedQuery(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNamedQuery", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateNamedQuery), arg0)
+}
+
+// UpdateNamedQueryRequest mocks base method
+func (m *MockAthenaAPI) UpdateNamedQueryRequest(arg0 *athena.UpdateNamedQueryInput) (*request.Request, *athena.UpdateNamedQueryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateNamedQueryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.UpdateNamedQueryOutput)
+	return ret0, ret1
+}
+
+// UpdateNamedQueryRequest indicates an expected call of UpdateNamedQueryRequest
+func (mr *MockAthenaAPIMockRecorder) UpdateNamedQueryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNamedQueryRequest", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateNamedQueryRequest), arg0)
+}
+
+// UpdateNamedQueryWithContext mocks base method
+func (m *MockAthenaAPI) UpdateNamedQueryWithContext(arg0 context.Context, arg1 *athena.UpdateNamedQueryInput, arg2 ...request.Option) (*athena.UpdateNamedQueryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateNamedQueryWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.UpdateNamedQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateNamedQueryWithContext indicates an expected call of UpdateNamedQueryWithContext
+func (mr *MockAthenaAPIMockRecorder) UpdateNamedQueryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNamedQueryWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateNamedQueryWithContext), varargs...)
+}
+
 // UpdatePreparedStatement mocks base method
 func (m *MockAthenaAPI) UpdatePreparedStatement(arg0 *athena.UpdatePreparedStatementInput) (*athena.UpdatePreparedStatementOutput, error) {
 	m.ctrl.T.Helper()

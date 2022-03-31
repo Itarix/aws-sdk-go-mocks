@@ -300,6 +300,39 @@ func (mr *MockAmplifyUIBuilderAPIMockRecorder) ExportComponents(arg0 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportComponents", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ExportComponents), arg0)
 }
 
+// ExportComponentsPages mocks base method
+func (m *MockAmplifyUIBuilderAPI) ExportComponentsPages(arg0 *amplifyuibuilder.ExportComponentsInput, arg1 func(*amplifyuibuilder.ExportComponentsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportComponentsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ExportComponentsPages indicates an expected call of ExportComponentsPages
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ExportComponentsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportComponentsPages", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ExportComponentsPages), arg0, arg1)
+}
+
+// ExportComponentsPagesWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) ExportComponentsPagesWithContext(arg0 context.Context, arg1 *amplifyuibuilder.ExportComponentsInput, arg2 func(*amplifyuibuilder.ExportComponentsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExportComponentsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ExportComponentsPagesWithContext indicates an expected call of ExportComponentsPagesWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ExportComponentsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportComponentsPagesWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ExportComponentsPagesWithContext), varargs...)
+}
+
 // ExportComponentsRequest mocks base method
 func (m *MockAmplifyUIBuilderAPI) ExportComponentsRequest(arg0 *amplifyuibuilder.ExportComponentsInput) (*request.Request, *amplifyuibuilder.ExportComponentsOutput) {
 	m.ctrl.T.Helper()
@@ -348,6 +381,39 @@ func (m *MockAmplifyUIBuilderAPI) ExportThemes(arg0 *amplifyuibuilder.ExportThem
 func (mr *MockAmplifyUIBuilderAPIMockRecorder) ExportThemes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportThemes", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ExportThemes), arg0)
+}
+
+// ExportThemesPages mocks base method
+func (m *MockAmplifyUIBuilderAPI) ExportThemesPages(arg0 *amplifyuibuilder.ExportThemesInput, arg1 func(*amplifyuibuilder.ExportThemesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportThemesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ExportThemesPages indicates an expected call of ExportThemesPages
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ExportThemesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportThemesPages", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ExportThemesPages), arg0, arg1)
+}
+
+// ExportThemesPagesWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) ExportThemesPagesWithContext(arg0 context.Context, arg1 *amplifyuibuilder.ExportThemesInput, arg2 func(*amplifyuibuilder.ExportThemesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExportThemesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ExportThemesPagesWithContext indicates an expected call of ExportThemesPagesWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ExportThemesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportThemesPagesWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ExportThemesPagesWithContext), varargs...)
 }
 
 // ExportThemesRequest mocks base method

@@ -185,6 +185,106 @@ func (mr *MockFinSpaceDataAPIMockRecorder) CreateDatasetWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatasetWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).CreateDatasetWithContext), varargs...)
 }
 
+// CreatePermissionGroup mocks base method
+func (m *MockFinSpaceDataAPI) CreatePermissionGroup(arg0 *finspacedata.CreatePermissionGroupInput) (*finspacedata.CreatePermissionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePermissionGroup", arg0)
+	ret0, _ := ret[0].(*finspacedata.CreatePermissionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePermissionGroup indicates an expected call of CreatePermissionGroup
+func (mr *MockFinSpaceDataAPIMockRecorder) CreatePermissionGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePermissionGroup", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).CreatePermissionGroup), arg0)
+}
+
+// CreatePermissionGroupRequest mocks base method
+func (m *MockFinSpaceDataAPI) CreatePermissionGroupRequest(arg0 *finspacedata.CreatePermissionGroupInput) (*request.Request, *finspacedata.CreatePermissionGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePermissionGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*finspacedata.CreatePermissionGroupOutput)
+	return ret0, ret1
+}
+
+// CreatePermissionGroupRequest indicates an expected call of CreatePermissionGroupRequest
+func (mr *MockFinSpaceDataAPIMockRecorder) CreatePermissionGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePermissionGroupRequest", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).CreatePermissionGroupRequest), arg0)
+}
+
+// CreatePermissionGroupWithContext mocks base method
+func (m *MockFinSpaceDataAPI) CreatePermissionGroupWithContext(arg0 context.Context, arg1 *finspacedata.CreatePermissionGroupInput, arg2 ...request.Option) (*finspacedata.CreatePermissionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreatePermissionGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*finspacedata.CreatePermissionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePermissionGroupWithContext indicates an expected call of CreatePermissionGroupWithContext
+func (mr *MockFinSpaceDataAPIMockRecorder) CreatePermissionGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePermissionGroupWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).CreatePermissionGroupWithContext), varargs...)
+}
+
+// CreateUser mocks base method
+func (m *MockFinSpaceDataAPI) CreateUser(arg0 *finspacedata.CreateUserInput) (*finspacedata.CreateUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUser", arg0)
+	ret0, _ := ret[0].(*finspacedata.CreateUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUser indicates an expected call of CreateUser
+func (mr *MockFinSpaceDataAPIMockRecorder) CreateUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUser", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).CreateUser), arg0)
+}
+
+// CreateUserRequest mocks base method
+func (m *MockFinSpaceDataAPI) CreateUserRequest(arg0 *finspacedata.CreateUserInput) (*request.Request, *finspacedata.CreateUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*finspacedata.CreateUserOutput)
+	return ret0, ret1
+}
+
+// CreateUserRequest indicates an expected call of CreateUserRequest
+func (mr *MockFinSpaceDataAPIMockRecorder) CreateUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserRequest", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).CreateUserRequest), arg0)
+}
+
+// CreateUserWithContext mocks base method
+func (m *MockFinSpaceDataAPI) CreateUserWithContext(arg0 context.Context, arg1 *finspacedata.CreateUserInput, arg2 ...request.Option) (*finspacedata.CreateUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateUserWithContext", varargs...)
+	ret0, _ := ret[0].(*finspacedata.CreateUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUserWithContext indicates an expected call of CreateUserWithContext
+func (mr *MockFinSpaceDataAPIMockRecorder) CreateUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).CreateUserWithContext), varargs...)
+}
+
 // DeleteDataset mocks base method
 func (m *MockFinSpaceDataAPI) DeleteDataset(arg0 *finspacedata.DeleteDatasetInput) (*finspacedata.DeleteDatasetOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +333,156 @@ func (mr *MockFinSpaceDataAPIMockRecorder) DeleteDatasetWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatasetWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).DeleteDatasetWithContext), varargs...)
+}
+
+// DeletePermissionGroup mocks base method
+func (m *MockFinSpaceDataAPI) DeletePermissionGroup(arg0 *finspacedata.DeletePermissionGroupInput) (*finspacedata.DeletePermissionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePermissionGroup", arg0)
+	ret0, _ := ret[0].(*finspacedata.DeletePermissionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePermissionGroup indicates an expected call of DeletePermissionGroup
+func (mr *MockFinSpaceDataAPIMockRecorder) DeletePermissionGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePermissionGroup", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).DeletePermissionGroup), arg0)
+}
+
+// DeletePermissionGroupRequest mocks base method
+func (m *MockFinSpaceDataAPI) DeletePermissionGroupRequest(arg0 *finspacedata.DeletePermissionGroupInput) (*request.Request, *finspacedata.DeletePermissionGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePermissionGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*finspacedata.DeletePermissionGroupOutput)
+	return ret0, ret1
+}
+
+// DeletePermissionGroupRequest indicates an expected call of DeletePermissionGroupRequest
+func (mr *MockFinSpaceDataAPIMockRecorder) DeletePermissionGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePermissionGroupRequest", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).DeletePermissionGroupRequest), arg0)
+}
+
+// DeletePermissionGroupWithContext mocks base method
+func (m *MockFinSpaceDataAPI) DeletePermissionGroupWithContext(arg0 context.Context, arg1 *finspacedata.DeletePermissionGroupInput, arg2 ...request.Option) (*finspacedata.DeletePermissionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePermissionGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*finspacedata.DeletePermissionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePermissionGroupWithContext indicates an expected call of DeletePermissionGroupWithContext
+func (mr *MockFinSpaceDataAPIMockRecorder) DeletePermissionGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePermissionGroupWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).DeletePermissionGroupWithContext), varargs...)
+}
+
+// DisableUser mocks base method
+func (m *MockFinSpaceDataAPI) DisableUser(arg0 *finspacedata.DisableUserInput) (*finspacedata.DisableUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableUser", arg0)
+	ret0, _ := ret[0].(*finspacedata.DisableUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableUser indicates an expected call of DisableUser
+func (mr *MockFinSpaceDataAPIMockRecorder) DisableUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableUser", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).DisableUser), arg0)
+}
+
+// DisableUserRequest mocks base method
+func (m *MockFinSpaceDataAPI) DisableUserRequest(arg0 *finspacedata.DisableUserInput) (*request.Request, *finspacedata.DisableUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*finspacedata.DisableUserOutput)
+	return ret0, ret1
+}
+
+// DisableUserRequest indicates an expected call of DisableUserRequest
+func (mr *MockFinSpaceDataAPIMockRecorder) DisableUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableUserRequest", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).DisableUserRequest), arg0)
+}
+
+// DisableUserWithContext mocks base method
+func (m *MockFinSpaceDataAPI) DisableUserWithContext(arg0 context.Context, arg1 *finspacedata.DisableUserInput, arg2 ...request.Option) (*finspacedata.DisableUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisableUserWithContext", varargs...)
+	ret0, _ := ret[0].(*finspacedata.DisableUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableUserWithContext indicates an expected call of DisableUserWithContext
+func (mr *MockFinSpaceDataAPIMockRecorder) DisableUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableUserWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).DisableUserWithContext), varargs...)
+}
+
+// EnableUser mocks base method
+func (m *MockFinSpaceDataAPI) EnableUser(arg0 *finspacedata.EnableUserInput) (*finspacedata.EnableUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableUser", arg0)
+	ret0, _ := ret[0].(*finspacedata.EnableUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableUser indicates an expected call of EnableUser
+func (mr *MockFinSpaceDataAPIMockRecorder) EnableUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableUser", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).EnableUser), arg0)
+}
+
+// EnableUserRequest mocks base method
+func (m *MockFinSpaceDataAPI) EnableUserRequest(arg0 *finspacedata.EnableUserInput) (*request.Request, *finspacedata.EnableUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*finspacedata.EnableUserOutput)
+	return ret0, ret1
+}
+
+// EnableUserRequest indicates an expected call of EnableUserRequest
+func (mr *MockFinSpaceDataAPIMockRecorder) EnableUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableUserRequest", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).EnableUserRequest), arg0)
+}
+
+// EnableUserWithContext mocks base method
+func (m *MockFinSpaceDataAPI) EnableUserWithContext(arg0 context.Context, arg1 *finspacedata.EnableUserInput, arg2 ...request.Option) (*finspacedata.EnableUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "EnableUserWithContext", varargs...)
+	ret0, _ := ret[0].(*finspacedata.EnableUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableUserWithContext indicates an expected call of EnableUserWithContext
+func (mr *MockFinSpaceDataAPIMockRecorder) EnableUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableUserWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).EnableUserWithContext), varargs...)
 }
 
 // GetChangeset mocks base method
@@ -433,6 +683,56 @@ func (mr *MockFinSpaceDataAPIMockRecorder) GetProgrammaticAccessCredentialsWithC
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProgrammaticAccessCredentialsWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).GetProgrammaticAccessCredentialsWithContext), varargs...)
+}
+
+// GetUser mocks base method
+func (m *MockFinSpaceDataAPI) GetUser(arg0 *finspacedata.GetUserInput) (*finspacedata.GetUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUser", arg0)
+	ret0, _ := ret[0].(*finspacedata.GetUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUser indicates an expected call of GetUser
+func (mr *MockFinSpaceDataAPIMockRecorder) GetUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUser", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).GetUser), arg0)
+}
+
+// GetUserRequest mocks base method
+func (m *MockFinSpaceDataAPI) GetUserRequest(arg0 *finspacedata.GetUserInput) (*request.Request, *finspacedata.GetUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*finspacedata.GetUserOutput)
+	return ret0, ret1
+}
+
+// GetUserRequest indicates an expected call of GetUserRequest
+func (mr *MockFinSpaceDataAPIMockRecorder) GetUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUserRequest", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).GetUserRequest), arg0)
+}
+
+// GetUserWithContext mocks base method
+func (m *MockFinSpaceDataAPI) GetUserWithContext(arg0 context.Context, arg1 *finspacedata.GetUserInput, arg2 ...request.Option) (*finspacedata.GetUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetUserWithContext", varargs...)
+	ret0, _ := ret[0].(*finspacedata.GetUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUserWithContext indicates an expected call of GetUserWithContext
+func (mr *MockFinSpaceDataAPIMockRecorder) GetUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUserWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).GetUserWithContext), varargs...)
 }
 
 // GetWorkingLocation mocks base method
@@ -734,6 +1034,222 @@ func (mr *MockFinSpaceDataAPIMockRecorder) ListDatasetsWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetsWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).ListDatasetsWithContext), varargs...)
 }
 
+// ListPermissionGroups mocks base method
+func (m *MockFinSpaceDataAPI) ListPermissionGroups(arg0 *finspacedata.ListPermissionGroupsInput) (*finspacedata.ListPermissionGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPermissionGroups", arg0)
+	ret0, _ := ret[0].(*finspacedata.ListPermissionGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPermissionGroups indicates an expected call of ListPermissionGroups
+func (mr *MockFinSpaceDataAPIMockRecorder) ListPermissionGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPermissionGroups", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).ListPermissionGroups), arg0)
+}
+
+// ListPermissionGroupsPages mocks base method
+func (m *MockFinSpaceDataAPI) ListPermissionGroupsPages(arg0 *finspacedata.ListPermissionGroupsInput, arg1 func(*finspacedata.ListPermissionGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPermissionGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPermissionGroupsPages indicates an expected call of ListPermissionGroupsPages
+func (mr *MockFinSpaceDataAPIMockRecorder) ListPermissionGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPermissionGroupsPages", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).ListPermissionGroupsPages), arg0, arg1)
+}
+
+// ListPermissionGroupsPagesWithContext mocks base method
+func (m *MockFinSpaceDataAPI) ListPermissionGroupsPagesWithContext(arg0 context.Context, arg1 *finspacedata.ListPermissionGroupsInput, arg2 func(*finspacedata.ListPermissionGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPermissionGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPermissionGroupsPagesWithContext indicates an expected call of ListPermissionGroupsPagesWithContext
+func (mr *MockFinSpaceDataAPIMockRecorder) ListPermissionGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPermissionGroupsPagesWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).ListPermissionGroupsPagesWithContext), varargs...)
+}
+
+// ListPermissionGroupsRequest mocks base method
+func (m *MockFinSpaceDataAPI) ListPermissionGroupsRequest(arg0 *finspacedata.ListPermissionGroupsInput) (*request.Request, *finspacedata.ListPermissionGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPermissionGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*finspacedata.ListPermissionGroupsOutput)
+	return ret0, ret1
+}
+
+// ListPermissionGroupsRequest indicates an expected call of ListPermissionGroupsRequest
+func (mr *MockFinSpaceDataAPIMockRecorder) ListPermissionGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPermissionGroupsRequest", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).ListPermissionGroupsRequest), arg0)
+}
+
+// ListPermissionGroupsWithContext mocks base method
+func (m *MockFinSpaceDataAPI) ListPermissionGroupsWithContext(arg0 context.Context, arg1 *finspacedata.ListPermissionGroupsInput, arg2 ...request.Option) (*finspacedata.ListPermissionGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPermissionGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*finspacedata.ListPermissionGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPermissionGroupsWithContext indicates an expected call of ListPermissionGroupsWithContext
+func (mr *MockFinSpaceDataAPIMockRecorder) ListPermissionGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPermissionGroupsWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).ListPermissionGroupsWithContext), varargs...)
+}
+
+// ListUsers mocks base method
+func (m *MockFinSpaceDataAPI) ListUsers(arg0 *finspacedata.ListUsersInput) (*finspacedata.ListUsersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUsers", arg0)
+	ret0, _ := ret[0].(*finspacedata.ListUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListUsers indicates an expected call of ListUsers
+func (mr *MockFinSpaceDataAPIMockRecorder) ListUsers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsers", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).ListUsers), arg0)
+}
+
+// ListUsersPages mocks base method
+func (m *MockFinSpaceDataAPI) ListUsersPages(arg0 *finspacedata.ListUsersInput, arg1 func(*finspacedata.ListUsersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUsersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListUsersPages indicates an expected call of ListUsersPages
+func (mr *MockFinSpaceDataAPIMockRecorder) ListUsersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersPages", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).ListUsersPages), arg0, arg1)
+}
+
+// ListUsersPagesWithContext mocks base method
+func (m *MockFinSpaceDataAPI) ListUsersPagesWithContext(arg0 context.Context, arg1 *finspacedata.ListUsersInput, arg2 func(*finspacedata.ListUsersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListUsersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListUsersPagesWithContext indicates an expected call of ListUsersPagesWithContext
+func (mr *MockFinSpaceDataAPIMockRecorder) ListUsersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersPagesWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).ListUsersPagesWithContext), varargs...)
+}
+
+// ListUsersRequest mocks base method
+func (m *MockFinSpaceDataAPI) ListUsersRequest(arg0 *finspacedata.ListUsersInput) (*request.Request, *finspacedata.ListUsersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUsersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*finspacedata.ListUsersOutput)
+	return ret0, ret1
+}
+
+// ListUsersRequest indicates an expected call of ListUsersRequest
+func (mr *MockFinSpaceDataAPIMockRecorder) ListUsersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersRequest", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).ListUsersRequest), arg0)
+}
+
+// ListUsersWithContext mocks base method
+func (m *MockFinSpaceDataAPI) ListUsersWithContext(arg0 context.Context, arg1 *finspacedata.ListUsersInput, arg2 ...request.Option) (*finspacedata.ListUsersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListUsersWithContext", varargs...)
+	ret0, _ := ret[0].(*finspacedata.ListUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListUsersWithContext indicates an expected call of ListUsersWithContext
+func (mr *MockFinSpaceDataAPIMockRecorder) ListUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).ListUsersWithContext), varargs...)
+}
+
+// ResetUserPassword mocks base method
+func (m *MockFinSpaceDataAPI) ResetUserPassword(arg0 *finspacedata.ResetUserPasswordInput) (*finspacedata.ResetUserPasswordOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResetUserPassword", arg0)
+	ret0, _ := ret[0].(*finspacedata.ResetUserPasswordOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResetUserPassword indicates an expected call of ResetUserPassword
+func (mr *MockFinSpaceDataAPIMockRecorder) ResetUserPassword(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetUserPassword", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).ResetUserPassword), arg0)
+}
+
+// ResetUserPasswordRequest mocks base method
+func (m *MockFinSpaceDataAPI) ResetUserPasswordRequest(arg0 *finspacedata.ResetUserPasswordInput) (*request.Request, *finspacedata.ResetUserPasswordOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResetUserPasswordRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*finspacedata.ResetUserPasswordOutput)
+	return ret0, ret1
+}
+
+// ResetUserPasswordRequest indicates an expected call of ResetUserPasswordRequest
+func (mr *MockFinSpaceDataAPIMockRecorder) ResetUserPasswordRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetUserPasswordRequest", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).ResetUserPasswordRequest), arg0)
+}
+
+// ResetUserPasswordWithContext mocks base method
+func (m *MockFinSpaceDataAPI) ResetUserPasswordWithContext(arg0 context.Context, arg1 *finspacedata.ResetUserPasswordInput, arg2 ...request.Option) (*finspacedata.ResetUserPasswordOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ResetUserPasswordWithContext", varargs...)
+	ret0, _ := ret[0].(*finspacedata.ResetUserPasswordOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResetUserPasswordWithContext indicates an expected call of ResetUserPasswordWithContext
+func (mr *MockFinSpaceDataAPIMockRecorder) ResetUserPasswordWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetUserPasswordWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).ResetUserPasswordWithContext), varargs...)
+}
+
 // UpdateChangeset mocks base method
 func (m *MockFinSpaceDataAPI) UpdateChangeset(arg0 *finspacedata.UpdateChangesetInput) (*finspacedata.UpdateChangesetOutput, error) {
 	m.ctrl.T.Helper()
@@ -832,4 +1348,104 @@ func (mr *MockFinSpaceDataAPIMockRecorder) UpdateDatasetWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatasetWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).UpdateDatasetWithContext), varargs...)
+}
+
+// UpdatePermissionGroup mocks base method
+func (m *MockFinSpaceDataAPI) UpdatePermissionGroup(arg0 *finspacedata.UpdatePermissionGroupInput) (*finspacedata.UpdatePermissionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePermissionGroup", arg0)
+	ret0, _ := ret[0].(*finspacedata.UpdatePermissionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePermissionGroup indicates an expected call of UpdatePermissionGroup
+func (mr *MockFinSpaceDataAPIMockRecorder) UpdatePermissionGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePermissionGroup", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).UpdatePermissionGroup), arg0)
+}
+
+// UpdatePermissionGroupRequest mocks base method
+func (m *MockFinSpaceDataAPI) UpdatePermissionGroupRequest(arg0 *finspacedata.UpdatePermissionGroupInput) (*request.Request, *finspacedata.UpdatePermissionGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePermissionGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*finspacedata.UpdatePermissionGroupOutput)
+	return ret0, ret1
+}
+
+// UpdatePermissionGroupRequest indicates an expected call of UpdatePermissionGroupRequest
+func (mr *MockFinSpaceDataAPIMockRecorder) UpdatePermissionGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePermissionGroupRequest", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).UpdatePermissionGroupRequest), arg0)
+}
+
+// UpdatePermissionGroupWithContext mocks base method
+func (m *MockFinSpaceDataAPI) UpdatePermissionGroupWithContext(arg0 context.Context, arg1 *finspacedata.UpdatePermissionGroupInput, arg2 ...request.Option) (*finspacedata.UpdatePermissionGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdatePermissionGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*finspacedata.UpdatePermissionGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePermissionGroupWithContext indicates an expected call of UpdatePermissionGroupWithContext
+func (mr *MockFinSpaceDataAPIMockRecorder) UpdatePermissionGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePermissionGroupWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).UpdatePermissionGroupWithContext), varargs...)
+}
+
+// UpdateUser mocks base method
+func (m *MockFinSpaceDataAPI) UpdateUser(arg0 *finspacedata.UpdateUserInput) (*finspacedata.UpdateUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateUser", arg0)
+	ret0, _ := ret[0].(*finspacedata.UpdateUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateUser indicates an expected call of UpdateUser
+func (mr *MockFinSpaceDataAPIMockRecorder) UpdateUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUser", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).UpdateUser), arg0)
+}
+
+// UpdateUserRequest mocks base method
+func (m *MockFinSpaceDataAPI) UpdateUserRequest(arg0 *finspacedata.UpdateUserInput) (*request.Request, *finspacedata.UpdateUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*finspacedata.UpdateUserOutput)
+	return ret0, ret1
+}
+
+// UpdateUserRequest indicates an expected call of UpdateUserRequest
+func (mr *MockFinSpaceDataAPIMockRecorder) UpdateUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserRequest", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).UpdateUserRequest), arg0)
+}
+
+// UpdateUserWithContext mocks base method
+func (m *MockFinSpaceDataAPI) UpdateUserWithContext(arg0 context.Context, arg1 *finspacedata.UpdateUserInput, arg2 ...request.Option) (*finspacedata.UpdateUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateUserWithContext", varargs...)
+	ret0, _ := ret[0].(*finspacedata.UpdateUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateUserWithContext indicates an expected call of UpdateUserWithContext
+func (mr *MockFinSpaceDataAPIMockRecorder) UpdateUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).UpdateUserWithContext), varargs...)
 }
