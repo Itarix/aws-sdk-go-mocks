@@ -2400,6 +2400,56 @@ func (mr *MockQuickSightAPIMockRecorder) DescribeGroup(arg0 interface{}) *gomock
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGroup", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeGroup), arg0)
 }
 
+// DescribeGroupMembership mocks base method
+func (m *MockQuickSightAPI) DescribeGroupMembership(arg0 *quicksight.DescribeGroupMembershipInput) (*quicksight.DescribeGroupMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGroupMembership", arg0)
+	ret0, _ := ret[0].(*quicksight.DescribeGroupMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGroupMembership indicates an expected call of DescribeGroupMembership
+func (mr *MockQuickSightAPIMockRecorder) DescribeGroupMembership(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGroupMembership", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeGroupMembership), arg0)
+}
+
+// DescribeGroupMembershipRequest mocks base method
+func (m *MockQuickSightAPI) DescribeGroupMembershipRequest(arg0 *quicksight.DescribeGroupMembershipInput) (*request.Request, *quicksight.DescribeGroupMembershipOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGroupMembershipRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.DescribeGroupMembershipOutput)
+	return ret0, ret1
+}
+
+// DescribeGroupMembershipRequest indicates an expected call of DescribeGroupMembershipRequest
+func (mr *MockQuickSightAPIMockRecorder) DescribeGroupMembershipRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGroupMembershipRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeGroupMembershipRequest), arg0)
+}
+
+// DescribeGroupMembershipWithContext mocks base method
+func (m *MockQuickSightAPI) DescribeGroupMembershipWithContext(arg0 context.Context, arg1 *quicksight.DescribeGroupMembershipInput, arg2 ...request.Option) (*quicksight.DescribeGroupMembershipOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGroupMembershipWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.DescribeGroupMembershipOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGroupMembershipWithContext indicates an expected call of DescribeGroupMembershipWithContext
+func (mr *MockQuickSightAPIMockRecorder) DescribeGroupMembershipWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGroupMembershipWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeGroupMembershipWithContext), varargs...)
+}
+
 // DescribeGroupRequest mocks base method
 func (m *MockQuickSightAPI) DescribeGroupRequest(arg0 *quicksight.DescribeGroupInput) (*request.Request, *quicksight.DescribeGroupOutput) {
 	m.ctrl.T.Helper()
@@ -4995,6 +5045,56 @@ func (mr *MockQuickSightAPIMockRecorder) SearchFoldersWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchFoldersWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchFoldersWithContext), varargs...)
+}
+
+// SearchGroups mocks base method
+func (m *MockQuickSightAPI) SearchGroups(arg0 *quicksight.SearchGroupsInput) (*quicksight.SearchGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchGroups", arg0)
+	ret0, _ := ret[0].(*quicksight.SearchGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchGroups indicates an expected call of SearchGroups
+func (mr *MockQuickSightAPIMockRecorder) SearchGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchGroups", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchGroups), arg0)
+}
+
+// SearchGroupsRequest mocks base method
+func (m *MockQuickSightAPI) SearchGroupsRequest(arg0 *quicksight.SearchGroupsInput) (*request.Request, *quicksight.SearchGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.SearchGroupsOutput)
+	return ret0, ret1
+}
+
+// SearchGroupsRequest indicates an expected call of SearchGroupsRequest
+func (mr *MockQuickSightAPIMockRecorder) SearchGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchGroupsRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchGroupsRequest), arg0)
+}
+
+// SearchGroupsWithContext mocks base method
+func (m *MockQuickSightAPI) SearchGroupsWithContext(arg0 context.Context, arg1 *quicksight.SearchGroupsInput, arg2 ...request.Option) (*quicksight.SearchGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.SearchGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchGroupsWithContext indicates an expected call of SearchGroupsWithContext
+func (mr *MockQuickSightAPIMockRecorder) SearchGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchGroupsWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchGroupsWithContext), varargs...)
 }
 
 // TagResource mocks base method
