@@ -1385,6 +1385,56 @@ func (mr *MockImagebuilderAPIMockRecorder) ImportComponentWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportComponentWithContext", reflect.TypeOf((*MockImagebuilderAPI)(nil).ImportComponentWithContext), varargs...)
 }
 
+// ImportVmImage mocks base method
+func (m *MockImagebuilderAPI) ImportVmImage(arg0 *imagebuilder.ImportVmImageInput) (*imagebuilder.ImportVmImageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportVmImage", arg0)
+	ret0, _ := ret[0].(*imagebuilder.ImportVmImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportVmImage indicates an expected call of ImportVmImage
+func (mr *MockImagebuilderAPIMockRecorder) ImportVmImage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportVmImage", reflect.TypeOf((*MockImagebuilderAPI)(nil).ImportVmImage), arg0)
+}
+
+// ImportVmImageRequest mocks base method
+func (m *MockImagebuilderAPI) ImportVmImageRequest(arg0 *imagebuilder.ImportVmImageInput) (*request.Request, *imagebuilder.ImportVmImageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportVmImageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*imagebuilder.ImportVmImageOutput)
+	return ret0, ret1
+}
+
+// ImportVmImageRequest indicates an expected call of ImportVmImageRequest
+func (mr *MockImagebuilderAPIMockRecorder) ImportVmImageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportVmImageRequest", reflect.TypeOf((*MockImagebuilderAPI)(nil).ImportVmImageRequest), arg0)
+}
+
+// ImportVmImageWithContext mocks base method
+func (m *MockImagebuilderAPI) ImportVmImageWithContext(arg0 context.Context, arg1 *imagebuilder.ImportVmImageInput, arg2 ...request.Option) (*imagebuilder.ImportVmImageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportVmImageWithContext", varargs...)
+	ret0, _ := ret[0].(*imagebuilder.ImportVmImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportVmImageWithContext indicates an expected call of ImportVmImageWithContext
+func (mr *MockImagebuilderAPIMockRecorder) ImportVmImageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportVmImageWithContext", reflect.TypeOf((*MockImagebuilderAPI)(nil).ImportVmImageWithContext), varargs...)
+}
+
 // ListComponentBuildVersions mocks base method
 func (m *MockImagebuilderAPI) ListComponentBuildVersions(arg0 *imagebuilder.ListComponentBuildVersionsInput) (*imagebuilder.ListComponentBuildVersionsOutput, error) {
 	m.ctrl.T.Helper()

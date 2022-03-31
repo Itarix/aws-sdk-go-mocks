@@ -185,6 +185,56 @@ func (mr *MockDataSyncAPIMockRecorder) CreateLocationEfsWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationEfsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationEfsWithContext), varargs...)
 }
 
+// CreateLocationFsxLustre mocks base method
+func (m *MockDataSyncAPI) CreateLocationFsxLustre(arg0 *datasync.CreateLocationFsxLustreInput) (*datasync.CreateLocationFsxLustreOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLocationFsxLustre", arg0)
+	ret0, _ := ret[0].(*datasync.CreateLocationFsxLustreOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLocationFsxLustre indicates an expected call of CreateLocationFsxLustre
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationFsxLustre(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationFsxLustre", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationFsxLustre), arg0)
+}
+
+// CreateLocationFsxLustreRequest mocks base method
+func (m *MockDataSyncAPI) CreateLocationFsxLustreRequest(arg0 *datasync.CreateLocationFsxLustreInput) (*request.Request, *datasync.CreateLocationFsxLustreOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLocationFsxLustreRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.CreateLocationFsxLustreOutput)
+	return ret0, ret1
+}
+
+// CreateLocationFsxLustreRequest indicates an expected call of CreateLocationFsxLustreRequest
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationFsxLustreRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationFsxLustreRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationFsxLustreRequest), arg0)
+}
+
+// CreateLocationFsxLustreWithContext mocks base method
+func (m *MockDataSyncAPI) CreateLocationFsxLustreWithContext(arg0 context.Context, arg1 *datasync.CreateLocationFsxLustreInput, arg2 ...request.Option) (*datasync.CreateLocationFsxLustreOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLocationFsxLustreWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.CreateLocationFsxLustreOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLocationFsxLustreWithContext indicates an expected call of CreateLocationFsxLustreWithContext
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationFsxLustreWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationFsxLustreWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationFsxLustreWithContext), varargs...)
+}
+
 // CreateLocationFsxWindows mocks base method
 func (m *MockDataSyncAPI) CreateLocationFsxWindows(arg0 *datasync.CreateLocationFsxWindowsInput) (*datasync.CreateLocationFsxWindowsOutput, error) {
 	m.ctrl.T.Helper()
@@ -783,6 +833,56 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeLocationEfsWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationEfsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationEfsWithContext), varargs...)
+}
+
+// DescribeLocationFsxLustre mocks base method
+func (m *MockDataSyncAPI) DescribeLocationFsxLustre(arg0 *datasync.DescribeLocationFsxLustreInput) (*datasync.DescribeLocationFsxLustreOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLocationFsxLustre", arg0)
+	ret0, _ := ret[0].(*datasync.DescribeLocationFsxLustreOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLocationFsxLustre indicates an expected call of DescribeLocationFsxLustre
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationFsxLustre(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationFsxLustre", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationFsxLustre), arg0)
+}
+
+// DescribeLocationFsxLustreRequest mocks base method
+func (m *MockDataSyncAPI) DescribeLocationFsxLustreRequest(arg0 *datasync.DescribeLocationFsxLustreInput) (*request.Request, *datasync.DescribeLocationFsxLustreOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLocationFsxLustreRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.DescribeLocationFsxLustreOutput)
+	return ret0, ret1
+}
+
+// DescribeLocationFsxLustreRequest indicates an expected call of DescribeLocationFsxLustreRequest
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationFsxLustreRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationFsxLustreRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationFsxLustreRequest), arg0)
+}
+
+// DescribeLocationFsxLustreWithContext mocks base method
+func (m *MockDataSyncAPI) DescribeLocationFsxLustreWithContext(arg0 context.Context, arg1 *datasync.DescribeLocationFsxLustreInput, arg2 ...request.Option) (*datasync.DescribeLocationFsxLustreOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLocationFsxLustreWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.DescribeLocationFsxLustreOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLocationFsxLustreWithContext indicates an expected call of DescribeLocationFsxLustreWithContext
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationFsxLustreWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationFsxLustreWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationFsxLustreWithContext), varargs...)
 }
 
 // DescribeLocationFsxWindows mocks base method
