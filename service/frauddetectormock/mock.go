@@ -1930,6 +1930,56 @@ func (mr *MockFraudDetectorAPIMockRecorder) GetEventPrediction(arg0 interface{})
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEventPrediction", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetEventPrediction), arg0)
 }
 
+// GetEventPredictionMetadata mocks base method
+func (m *MockFraudDetectorAPI) GetEventPredictionMetadata(arg0 *frauddetector.GetEventPredictionMetadataInput) (*frauddetector.GetEventPredictionMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEventPredictionMetadata", arg0)
+	ret0, _ := ret[0].(*frauddetector.GetEventPredictionMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEventPredictionMetadata indicates an expected call of GetEventPredictionMetadata
+func (mr *MockFraudDetectorAPIMockRecorder) GetEventPredictionMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEventPredictionMetadata", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetEventPredictionMetadata), arg0)
+}
+
+// GetEventPredictionMetadataRequest mocks base method
+func (m *MockFraudDetectorAPI) GetEventPredictionMetadataRequest(arg0 *frauddetector.GetEventPredictionMetadataInput) (*request.Request, *frauddetector.GetEventPredictionMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEventPredictionMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.GetEventPredictionMetadataOutput)
+	return ret0, ret1
+}
+
+// GetEventPredictionMetadataRequest indicates an expected call of GetEventPredictionMetadataRequest
+func (mr *MockFraudDetectorAPIMockRecorder) GetEventPredictionMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEventPredictionMetadataRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetEventPredictionMetadataRequest), arg0)
+}
+
+// GetEventPredictionMetadataWithContext mocks base method
+func (m *MockFraudDetectorAPI) GetEventPredictionMetadataWithContext(arg0 context.Context, arg1 *frauddetector.GetEventPredictionMetadataInput, arg2 ...request.Option) (*frauddetector.GetEventPredictionMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetEventPredictionMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.GetEventPredictionMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEventPredictionMetadataWithContext indicates an expected call of GetEventPredictionMetadataWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) GetEventPredictionMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEventPredictionMetadataWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetEventPredictionMetadataWithContext), varargs...)
+}
+
 // GetEventPredictionRequest mocks base method
 func (m *MockFraudDetectorAPI) GetEventPredictionRequest(arg0 *frauddetector.GetEventPredictionInput) (*request.Request, *frauddetector.GetEventPredictionOutput) {
 	m.ctrl.T.Helper()
@@ -2679,6 +2729,89 @@ func (mr *MockFraudDetectorAPIMockRecorder) GetVariablesWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVariablesWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetVariablesWithContext), varargs...)
+}
+
+// ListEventPredictions mocks base method
+func (m *MockFraudDetectorAPI) ListEventPredictions(arg0 *frauddetector.ListEventPredictionsInput) (*frauddetector.ListEventPredictionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEventPredictions", arg0)
+	ret0, _ := ret[0].(*frauddetector.ListEventPredictionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEventPredictions indicates an expected call of ListEventPredictions
+func (mr *MockFraudDetectorAPIMockRecorder) ListEventPredictions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventPredictions", reflect.TypeOf((*MockFraudDetectorAPI)(nil).ListEventPredictions), arg0)
+}
+
+// ListEventPredictionsPages mocks base method
+func (m *MockFraudDetectorAPI) ListEventPredictionsPages(arg0 *frauddetector.ListEventPredictionsInput, arg1 func(*frauddetector.ListEventPredictionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEventPredictionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEventPredictionsPages indicates an expected call of ListEventPredictionsPages
+func (mr *MockFraudDetectorAPIMockRecorder) ListEventPredictionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventPredictionsPages", reflect.TypeOf((*MockFraudDetectorAPI)(nil).ListEventPredictionsPages), arg0, arg1)
+}
+
+// ListEventPredictionsPagesWithContext mocks base method
+func (m *MockFraudDetectorAPI) ListEventPredictionsPagesWithContext(arg0 context.Context, arg1 *frauddetector.ListEventPredictionsInput, arg2 func(*frauddetector.ListEventPredictionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEventPredictionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEventPredictionsPagesWithContext indicates an expected call of ListEventPredictionsPagesWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) ListEventPredictionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventPredictionsPagesWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).ListEventPredictionsPagesWithContext), varargs...)
+}
+
+// ListEventPredictionsRequest mocks base method
+func (m *MockFraudDetectorAPI) ListEventPredictionsRequest(arg0 *frauddetector.ListEventPredictionsInput) (*request.Request, *frauddetector.ListEventPredictionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEventPredictionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.ListEventPredictionsOutput)
+	return ret0, ret1
+}
+
+// ListEventPredictionsRequest indicates an expected call of ListEventPredictionsRequest
+func (mr *MockFraudDetectorAPIMockRecorder) ListEventPredictionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventPredictionsRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).ListEventPredictionsRequest), arg0)
+}
+
+// ListEventPredictionsWithContext mocks base method
+func (m *MockFraudDetectorAPI) ListEventPredictionsWithContext(arg0 context.Context, arg1 *frauddetector.ListEventPredictionsInput, arg2 ...request.Option) (*frauddetector.ListEventPredictionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEventPredictionsWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.ListEventPredictionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEventPredictionsWithContext indicates an expected call of ListEventPredictionsWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) ListEventPredictionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventPredictionsWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).ListEventPredictionsWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
