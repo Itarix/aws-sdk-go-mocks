@@ -585,6 +585,56 @@ func (mr *MockWorkMailAPIMockRecorder) DeleteAliasWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAliasWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteAliasWithContext), varargs...)
 }
 
+// DeleteEmailMonitoringConfiguration mocks base method
+func (m *MockWorkMailAPI) DeleteEmailMonitoringConfiguration(arg0 *workmail.DeleteEmailMonitoringConfigurationInput) (*workmail.DeleteEmailMonitoringConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEmailMonitoringConfiguration", arg0)
+	ret0, _ := ret[0].(*workmail.DeleteEmailMonitoringConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEmailMonitoringConfiguration indicates an expected call of DeleteEmailMonitoringConfiguration
+func (mr *MockWorkMailAPIMockRecorder) DeleteEmailMonitoringConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEmailMonitoringConfiguration", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteEmailMonitoringConfiguration), arg0)
+}
+
+// DeleteEmailMonitoringConfigurationRequest mocks base method
+func (m *MockWorkMailAPI) DeleteEmailMonitoringConfigurationRequest(arg0 *workmail.DeleteEmailMonitoringConfigurationInput) (*request.Request, *workmail.DeleteEmailMonitoringConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEmailMonitoringConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.DeleteEmailMonitoringConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteEmailMonitoringConfigurationRequest indicates an expected call of DeleteEmailMonitoringConfigurationRequest
+func (mr *MockWorkMailAPIMockRecorder) DeleteEmailMonitoringConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEmailMonitoringConfigurationRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteEmailMonitoringConfigurationRequest), arg0)
+}
+
+// DeleteEmailMonitoringConfigurationWithContext mocks base method
+func (m *MockWorkMailAPI) DeleteEmailMonitoringConfigurationWithContext(arg0 context.Context, arg1 *workmail.DeleteEmailMonitoringConfigurationInput, arg2 ...request.Option) (*workmail.DeleteEmailMonitoringConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteEmailMonitoringConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.DeleteEmailMonitoringConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEmailMonitoringConfigurationWithContext indicates an expected call of DeleteEmailMonitoringConfigurationWithContext
+func (mr *MockWorkMailAPIMockRecorder) DeleteEmailMonitoringConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEmailMonitoringConfigurationWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteEmailMonitoringConfigurationWithContext), varargs...)
+}
+
 // DeleteGroup mocks base method
 func (m *MockWorkMailAPI) DeleteGroup(arg0 *workmail.DeleteGroupInput) (*workmail.DeleteGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -1083,6 +1133,56 @@ func (mr *MockWorkMailAPIMockRecorder) DeregisterMailDomainWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterMailDomainWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DeregisterMailDomainWithContext), varargs...)
+}
+
+// DescribeEmailMonitoringConfiguration mocks base method
+func (m *MockWorkMailAPI) DescribeEmailMonitoringConfiguration(arg0 *workmail.DescribeEmailMonitoringConfigurationInput) (*workmail.DescribeEmailMonitoringConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEmailMonitoringConfiguration", arg0)
+	ret0, _ := ret[0].(*workmail.DescribeEmailMonitoringConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEmailMonitoringConfiguration indicates an expected call of DescribeEmailMonitoringConfiguration
+func (mr *MockWorkMailAPIMockRecorder) DescribeEmailMonitoringConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEmailMonitoringConfiguration", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeEmailMonitoringConfiguration), arg0)
+}
+
+// DescribeEmailMonitoringConfigurationRequest mocks base method
+func (m *MockWorkMailAPI) DescribeEmailMonitoringConfigurationRequest(arg0 *workmail.DescribeEmailMonitoringConfigurationInput) (*request.Request, *workmail.DescribeEmailMonitoringConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEmailMonitoringConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.DescribeEmailMonitoringConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeEmailMonitoringConfigurationRequest indicates an expected call of DescribeEmailMonitoringConfigurationRequest
+func (mr *MockWorkMailAPIMockRecorder) DescribeEmailMonitoringConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEmailMonitoringConfigurationRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeEmailMonitoringConfigurationRequest), arg0)
+}
+
+// DescribeEmailMonitoringConfigurationWithContext mocks base method
+func (m *MockWorkMailAPI) DescribeEmailMonitoringConfigurationWithContext(arg0 context.Context, arg1 *workmail.DescribeEmailMonitoringConfigurationInput, arg2 ...request.Option) (*workmail.DescribeEmailMonitoringConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEmailMonitoringConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.DescribeEmailMonitoringConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEmailMonitoringConfigurationWithContext indicates an expected call of DescribeEmailMonitoringConfigurationWithContext
+func (mr *MockWorkMailAPIMockRecorder) DescribeEmailMonitoringConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEmailMonitoringConfigurationWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeEmailMonitoringConfigurationWithContext), varargs...)
 }
 
 // DescribeGroup mocks base method
@@ -2896,6 +2996,56 @@ func (mr *MockWorkMailAPIMockRecorder) PutAccessControlRuleWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccessControlRuleWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).PutAccessControlRuleWithContext), varargs...)
+}
+
+// PutEmailMonitoringConfiguration mocks base method
+func (m *MockWorkMailAPI) PutEmailMonitoringConfiguration(arg0 *workmail.PutEmailMonitoringConfigurationInput) (*workmail.PutEmailMonitoringConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutEmailMonitoringConfiguration", arg0)
+	ret0, _ := ret[0].(*workmail.PutEmailMonitoringConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutEmailMonitoringConfiguration indicates an expected call of PutEmailMonitoringConfiguration
+func (mr *MockWorkMailAPIMockRecorder) PutEmailMonitoringConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEmailMonitoringConfiguration", reflect.TypeOf((*MockWorkMailAPI)(nil).PutEmailMonitoringConfiguration), arg0)
+}
+
+// PutEmailMonitoringConfigurationRequest mocks base method
+func (m *MockWorkMailAPI) PutEmailMonitoringConfigurationRequest(arg0 *workmail.PutEmailMonitoringConfigurationInput) (*request.Request, *workmail.PutEmailMonitoringConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutEmailMonitoringConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.PutEmailMonitoringConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutEmailMonitoringConfigurationRequest indicates an expected call of PutEmailMonitoringConfigurationRequest
+func (mr *MockWorkMailAPIMockRecorder) PutEmailMonitoringConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEmailMonitoringConfigurationRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).PutEmailMonitoringConfigurationRequest), arg0)
+}
+
+// PutEmailMonitoringConfigurationWithContext mocks base method
+func (m *MockWorkMailAPI) PutEmailMonitoringConfigurationWithContext(arg0 context.Context, arg1 *workmail.PutEmailMonitoringConfigurationInput, arg2 ...request.Option) (*workmail.PutEmailMonitoringConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutEmailMonitoringConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.PutEmailMonitoringConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutEmailMonitoringConfigurationWithContext indicates an expected call of PutEmailMonitoringConfigurationWithContext
+func (mr *MockWorkMailAPIMockRecorder) PutEmailMonitoringConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEmailMonitoringConfigurationWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).PutEmailMonitoringConfigurationWithContext), varargs...)
 }
 
 // PutInboundDmarcSettings mocks base method

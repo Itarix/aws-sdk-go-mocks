@@ -967,6 +967,89 @@ func (mr *MockLookoutMetricsAPIMockRecorder) ListAnomalyDetectorsWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnomalyDetectorsWithContext", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).ListAnomalyDetectorsWithContext), varargs...)
 }
 
+// ListAnomalyGroupRelatedMetrics mocks base method
+func (m *MockLookoutMetricsAPI) ListAnomalyGroupRelatedMetrics(arg0 *lookoutmetrics.ListAnomalyGroupRelatedMetricsInput) (*lookoutmetrics.ListAnomalyGroupRelatedMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnomalyGroupRelatedMetrics", arg0)
+	ret0, _ := ret[0].(*lookoutmetrics.ListAnomalyGroupRelatedMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAnomalyGroupRelatedMetrics indicates an expected call of ListAnomalyGroupRelatedMetrics
+func (mr *MockLookoutMetricsAPIMockRecorder) ListAnomalyGroupRelatedMetrics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnomalyGroupRelatedMetrics", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).ListAnomalyGroupRelatedMetrics), arg0)
+}
+
+// ListAnomalyGroupRelatedMetricsPages mocks base method
+func (m *MockLookoutMetricsAPI) ListAnomalyGroupRelatedMetricsPages(arg0 *lookoutmetrics.ListAnomalyGroupRelatedMetricsInput, arg1 func(*lookoutmetrics.ListAnomalyGroupRelatedMetricsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnomalyGroupRelatedMetricsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAnomalyGroupRelatedMetricsPages indicates an expected call of ListAnomalyGroupRelatedMetricsPages
+func (mr *MockLookoutMetricsAPIMockRecorder) ListAnomalyGroupRelatedMetricsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnomalyGroupRelatedMetricsPages", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).ListAnomalyGroupRelatedMetricsPages), arg0, arg1)
+}
+
+// ListAnomalyGroupRelatedMetricsPagesWithContext mocks base method
+func (m *MockLookoutMetricsAPI) ListAnomalyGroupRelatedMetricsPagesWithContext(arg0 context.Context, arg1 *lookoutmetrics.ListAnomalyGroupRelatedMetricsInput, arg2 func(*lookoutmetrics.ListAnomalyGroupRelatedMetricsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAnomalyGroupRelatedMetricsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAnomalyGroupRelatedMetricsPagesWithContext indicates an expected call of ListAnomalyGroupRelatedMetricsPagesWithContext
+func (mr *MockLookoutMetricsAPIMockRecorder) ListAnomalyGroupRelatedMetricsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnomalyGroupRelatedMetricsPagesWithContext", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).ListAnomalyGroupRelatedMetricsPagesWithContext), varargs...)
+}
+
+// ListAnomalyGroupRelatedMetricsRequest mocks base method
+func (m *MockLookoutMetricsAPI) ListAnomalyGroupRelatedMetricsRequest(arg0 *lookoutmetrics.ListAnomalyGroupRelatedMetricsInput) (*request.Request, *lookoutmetrics.ListAnomalyGroupRelatedMetricsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnomalyGroupRelatedMetricsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutmetrics.ListAnomalyGroupRelatedMetricsOutput)
+	return ret0, ret1
+}
+
+// ListAnomalyGroupRelatedMetricsRequest indicates an expected call of ListAnomalyGroupRelatedMetricsRequest
+func (mr *MockLookoutMetricsAPIMockRecorder) ListAnomalyGroupRelatedMetricsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnomalyGroupRelatedMetricsRequest", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).ListAnomalyGroupRelatedMetricsRequest), arg0)
+}
+
+// ListAnomalyGroupRelatedMetricsWithContext mocks base method
+func (m *MockLookoutMetricsAPI) ListAnomalyGroupRelatedMetricsWithContext(arg0 context.Context, arg1 *lookoutmetrics.ListAnomalyGroupRelatedMetricsInput, arg2 ...request.Option) (*lookoutmetrics.ListAnomalyGroupRelatedMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAnomalyGroupRelatedMetricsWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutmetrics.ListAnomalyGroupRelatedMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAnomalyGroupRelatedMetricsWithContext indicates an expected call of ListAnomalyGroupRelatedMetricsWithContext
+func (mr *MockLookoutMetricsAPIMockRecorder) ListAnomalyGroupRelatedMetricsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnomalyGroupRelatedMetricsWithContext", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).ListAnomalyGroupRelatedMetricsWithContext), varargs...)
+}
+
 // ListAnomalyGroupSummaries mocks base method
 func (m *MockLookoutMetricsAPI) ListAnomalyGroupSummaries(arg0 *lookoutmetrics.ListAnomalyGroupSummariesInput) (*lookoutmetrics.ListAnomalyGroupSummariesOutput, error) {
 	m.ctrl.T.Helper()
