@@ -35,6 +35,56 @@ func (m *MockGreengrassV2API) EXPECT() *MockGreengrassV2APIMockRecorder {
 	return m.recorder
 }
 
+// AssociateServiceRoleToAccount mocks base method
+func (m *MockGreengrassV2API) AssociateServiceRoleToAccount(arg0 *greengrassv2.AssociateServiceRoleToAccountInput) (*greengrassv2.AssociateServiceRoleToAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateServiceRoleToAccount", arg0)
+	ret0, _ := ret[0].(*greengrassv2.AssociateServiceRoleToAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateServiceRoleToAccount indicates an expected call of AssociateServiceRoleToAccount
+func (mr *MockGreengrassV2APIMockRecorder) AssociateServiceRoleToAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateServiceRoleToAccount", reflect.TypeOf((*MockGreengrassV2API)(nil).AssociateServiceRoleToAccount), arg0)
+}
+
+// AssociateServiceRoleToAccountRequest mocks base method
+func (m *MockGreengrassV2API) AssociateServiceRoleToAccountRequest(arg0 *greengrassv2.AssociateServiceRoleToAccountInput) (*request.Request, *greengrassv2.AssociateServiceRoleToAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateServiceRoleToAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrassv2.AssociateServiceRoleToAccountOutput)
+	return ret0, ret1
+}
+
+// AssociateServiceRoleToAccountRequest indicates an expected call of AssociateServiceRoleToAccountRequest
+func (mr *MockGreengrassV2APIMockRecorder) AssociateServiceRoleToAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateServiceRoleToAccountRequest", reflect.TypeOf((*MockGreengrassV2API)(nil).AssociateServiceRoleToAccountRequest), arg0)
+}
+
+// AssociateServiceRoleToAccountWithContext mocks base method
+func (m *MockGreengrassV2API) AssociateServiceRoleToAccountWithContext(arg0 context.Context, arg1 *greengrassv2.AssociateServiceRoleToAccountInput, arg2 ...request.Option) (*greengrassv2.AssociateServiceRoleToAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateServiceRoleToAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrassv2.AssociateServiceRoleToAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateServiceRoleToAccountWithContext indicates an expected call of AssociateServiceRoleToAccountWithContext
+func (mr *MockGreengrassV2APIMockRecorder) AssociateServiceRoleToAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateServiceRoleToAccountWithContext", reflect.TypeOf((*MockGreengrassV2API)(nil).AssociateServiceRoleToAccountWithContext), varargs...)
+}
+
 // BatchAssociateClientDeviceWithCoreDevice mocks base method
 func (m *MockGreengrassV2API) BatchAssociateClientDeviceWithCoreDevice(arg0 *greengrassv2.BatchAssociateClientDeviceWithCoreDeviceInput) (*greengrassv2.BatchAssociateClientDeviceWithCoreDeviceOutput, error) {
 	m.ctrl.T.Helper()
@@ -435,6 +485,56 @@ func (mr *MockGreengrassV2APIMockRecorder) DescribeComponentWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeComponentWithContext", reflect.TypeOf((*MockGreengrassV2API)(nil).DescribeComponentWithContext), varargs...)
 }
 
+// DisassociateServiceRoleFromAccount mocks base method
+func (m *MockGreengrassV2API) DisassociateServiceRoleFromAccount(arg0 *greengrassv2.DisassociateServiceRoleFromAccountInput) (*greengrassv2.DisassociateServiceRoleFromAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateServiceRoleFromAccount", arg0)
+	ret0, _ := ret[0].(*greengrassv2.DisassociateServiceRoleFromAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateServiceRoleFromAccount indicates an expected call of DisassociateServiceRoleFromAccount
+func (mr *MockGreengrassV2APIMockRecorder) DisassociateServiceRoleFromAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateServiceRoleFromAccount", reflect.TypeOf((*MockGreengrassV2API)(nil).DisassociateServiceRoleFromAccount), arg0)
+}
+
+// DisassociateServiceRoleFromAccountRequest mocks base method
+func (m *MockGreengrassV2API) DisassociateServiceRoleFromAccountRequest(arg0 *greengrassv2.DisassociateServiceRoleFromAccountInput) (*request.Request, *greengrassv2.DisassociateServiceRoleFromAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateServiceRoleFromAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrassv2.DisassociateServiceRoleFromAccountOutput)
+	return ret0, ret1
+}
+
+// DisassociateServiceRoleFromAccountRequest indicates an expected call of DisassociateServiceRoleFromAccountRequest
+func (mr *MockGreengrassV2APIMockRecorder) DisassociateServiceRoleFromAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateServiceRoleFromAccountRequest", reflect.TypeOf((*MockGreengrassV2API)(nil).DisassociateServiceRoleFromAccountRequest), arg0)
+}
+
+// DisassociateServiceRoleFromAccountWithContext mocks base method
+func (m *MockGreengrassV2API) DisassociateServiceRoleFromAccountWithContext(arg0 context.Context, arg1 *greengrassv2.DisassociateServiceRoleFromAccountInput, arg2 ...request.Option) (*greengrassv2.DisassociateServiceRoleFromAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateServiceRoleFromAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrassv2.DisassociateServiceRoleFromAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateServiceRoleFromAccountWithContext indicates an expected call of DisassociateServiceRoleFromAccountWithContext
+func (mr *MockGreengrassV2APIMockRecorder) DisassociateServiceRoleFromAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateServiceRoleFromAccountWithContext", reflect.TypeOf((*MockGreengrassV2API)(nil).DisassociateServiceRoleFromAccountWithContext), varargs...)
+}
+
 // GetComponent mocks base method
 func (m *MockGreengrassV2API) GetComponent(arg0 *greengrassv2.GetComponentInput) (*greengrassv2.GetComponentOutput, error) {
 	m.ctrl.T.Helper()
@@ -535,6 +635,56 @@ func (mr *MockGreengrassV2APIMockRecorder) GetComponentWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetComponentWithContext", reflect.TypeOf((*MockGreengrassV2API)(nil).GetComponentWithContext), varargs...)
 }
 
+// GetConnectivityInfo mocks base method
+func (m *MockGreengrassV2API) GetConnectivityInfo(arg0 *greengrassv2.GetConnectivityInfoInput) (*greengrassv2.GetConnectivityInfoOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectivityInfo", arg0)
+	ret0, _ := ret[0].(*greengrassv2.GetConnectivityInfoOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnectivityInfo indicates an expected call of GetConnectivityInfo
+func (mr *MockGreengrassV2APIMockRecorder) GetConnectivityInfo(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectivityInfo", reflect.TypeOf((*MockGreengrassV2API)(nil).GetConnectivityInfo), arg0)
+}
+
+// GetConnectivityInfoRequest mocks base method
+func (m *MockGreengrassV2API) GetConnectivityInfoRequest(arg0 *greengrassv2.GetConnectivityInfoInput) (*request.Request, *greengrassv2.GetConnectivityInfoOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectivityInfoRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrassv2.GetConnectivityInfoOutput)
+	return ret0, ret1
+}
+
+// GetConnectivityInfoRequest indicates an expected call of GetConnectivityInfoRequest
+func (mr *MockGreengrassV2APIMockRecorder) GetConnectivityInfoRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectivityInfoRequest", reflect.TypeOf((*MockGreengrassV2API)(nil).GetConnectivityInfoRequest), arg0)
+}
+
+// GetConnectivityInfoWithContext mocks base method
+func (m *MockGreengrassV2API) GetConnectivityInfoWithContext(arg0 context.Context, arg1 *greengrassv2.GetConnectivityInfoInput, arg2 ...request.Option) (*greengrassv2.GetConnectivityInfoOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetConnectivityInfoWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrassv2.GetConnectivityInfoOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnectivityInfoWithContext indicates an expected call of GetConnectivityInfoWithContext
+func (mr *MockGreengrassV2APIMockRecorder) GetConnectivityInfoWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectivityInfoWithContext", reflect.TypeOf((*MockGreengrassV2API)(nil).GetConnectivityInfoWithContext), varargs...)
+}
+
 // GetCoreDevice mocks base method
 func (m *MockGreengrassV2API) GetCoreDevice(arg0 *greengrassv2.GetCoreDeviceInput) (*greengrassv2.GetCoreDeviceOutput, error) {
 	m.ctrl.T.Helper()
@@ -633,6 +783,56 @@ func (mr *MockGreengrassV2APIMockRecorder) GetDeploymentWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeploymentWithContext", reflect.TypeOf((*MockGreengrassV2API)(nil).GetDeploymentWithContext), varargs...)
+}
+
+// GetServiceRoleForAccount mocks base method
+func (m *MockGreengrassV2API) GetServiceRoleForAccount(arg0 *greengrassv2.GetServiceRoleForAccountInput) (*greengrassv2.GetServiceRoleForAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetServiceRoleForAccount", arg0)
+	ret0, _ := ret[0].(*greengrassv2.GetServiceRoleForAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetServiceRoleForAccount indicates an expected call of GetServiceRoleForAccount
+func (mr *MockGreengrassV2APIMockRecorder) GetServiceRoleForAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceRoleForAccount", reflect.TypeOf((*MockGreengrassV2API)(nil).GetServiceRoleForAccount), arg0)
+}
+
+// GetServiceRoleForAccountRequest mocks base method
+func (m *MockGreengrassV2API) GetServiceRoleForAccountRequest(arg0 *greengrassv2.GetServiceRoleForAccountInput) (*request.Request, *greengrassv2.GetServiceRoleForAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetServiceRoleForAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrassv2.GetServiceRoleForAccountOutput)
+	return ret0, ret1
+}
+
+// GetServiceRoleForAccountRequest indicates an expected call of GetServiceRoleForAccountRequest
+func (mr *MockGreengrassV2APIMockRecorder) GetServiceRoleForAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceRoleForAccountRequest", reflect.TypeOf((*MockGreengrassV2API)(nil).GetServiceRoleForAccountRequest), arg0)
+}
+
+// GetServiceRoleForAccountWithContext mocks base method
+func (m *MockGreengrassV2API) GetServiceRoleForAccountWithContext(arg0 context.Context, arg1 *greengrassv2.GetServiceRoleForAccountInput, arg2 ...request.Option) (*greengrassv2.GetServiceRoleForAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetServiceRoleForAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrassv2.GetServiceRoleForAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetServiceRoleForAccountWithContext indicates an expected call of GetServiceRoleForAccountWithContext
+func (mr *MockGreengrassV2APIMockRecorder) GetServiceRoleForAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServiceRoleForAccountWithContext", reflect.TypeOf((*MockGreengrassV2API)(nil).GetServiceRoleForAccountWithContext), varargs...)
 }
 
 // ListClientDevicesAssociatedWithCoreDevice mocks base method
@@ -1414,4 +1614,54 @@ func (mr *MockGreengrassV2APIMockRecorder) UntagResourceWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockGreengrassV2API)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateConnectivityInfo mocks base method
+func (m *MockGreengrassV2API) UpdateConnectivityInfo(arg0 *greengrassv2.UpdateConnectivityInfoInput) (*greengrassv2.UpdateConnectivityInfoOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectivityInfo", arg0)
+	ret0, _ := ret[0].(*greengrassv2.UpdateConnectivityInfoOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectivityInfo indicates an expected call of UpdateConnectivityInfo
+func (mr *MockGreengrassV2APIMockRecorder) UpdateConnectivityInfo(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectivityInfo", reflect.TypeOf((*MockGreengrassV2API)(nil).UpdateConnectivityInfo), arg0)
+}
+
+// UpdateConnectivityInfoRequest mocks base method
+func (m *MockGreengrassV2API) UpdateConnectivityInfoRequest(arg0 *greengrassv2.UpdateConnectivityInfoInput) (*request.Request, *greengrassv2.UpdateConnectivityInfoOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectivityInfoRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrassv2.UpdateConnectivityInfoOutput)
+	return ret0, ret1
+}
+
+// UpdateConnectivityInfoRequest indicates an expected call of UpdateConnectivityInfoRequest
+func (mr *MockGreengrassV2APIMockRecorder) UpdateConnectivityInfoRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectivityInfoRequest", reflect.TypeOf((*MockGreengrassV2API)(nil).UpdateConnectivityInfoRequest), arg0)
+}
+
+// UpdateConnectivityInfoWithContext mocks base method
+func (m *MockGreengrassV2API) UpdateConnectivityInfoWithContext(arg0 context.Context, arg1 *greengrassv2.UpdateConnectivityInfoInput, arg2 ...request.Option) (*greengrassv2.UpdateConnectivityInfoOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateConnectivityInfoWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrassv2.UpdateConnectivityInfoOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectivityInfoWithContext indicates an expected call of UpdateConnectivityInfoWithContext
+func (mr *MockGreengrassV2APIMockRecorder) UpdateConnectivityInfoWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectivityInfoWithContext", reflect.TypeOf((*MockGreengrassV2API)(nil).UpdateConnectivityInfoWithContext), varargs...)
 }

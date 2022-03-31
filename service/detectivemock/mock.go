@@ -285,6 +285,106 @@ func (mr *MockDetectiveAPIMockRecorder) DeleteMembersWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMembersWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).DeleteMembersWithContext), varargs...)
 }
 
+// DescribeOrganizationConfiguration mocks base method
+func (m *MockDetectiveAPI) DescribeOrganizationConfiguration(arg0 *detective.DescribeOrganizationConfigurationInput) (*detective.DescribeOrganizationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationConfiguration", arg0)
+	ret0, _ := ret[0].(*detective.DescribeOrganizationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationConfiguration indicates an expected call of DescribeOrganizationConfiguration
+func (mr *MockDetectiveAPIMockRecorder) DescribeOrganizationConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfiguration", reflect.TypeOf((*MockDetectiveAPI)(nil).DescribeOrganizationConfiguration), arg0)
+}
+
+// DescribeOrganizationConfigurationRequest mocks base method
+func (m *MockDetectiveAPI) DescribeOrganizationConfigurationRequest(arg0 *detective.DescribeOrganizationConfigurationInput) (*request.Request, *detective.DescribeOrganizationConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*detective.DescribeOrganizationConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeOrganizationConfigurationRequest indicates an expected call of DescribeOrganizationConfigurationRequest
+func (mr *MockDetectiveAPIMockRecorder) DescribeOrganizationConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfigurationRequest", reflect.TypeOf((*MockDetectiveAPI)(nil).DescribeOrganizationConfigurationRequest), arg0)
+}
+
+// DescribeOrganizationConfigurationWithContext mocks base method
+func (m *MockDetectiveAPI) DescribeOrganizationConfigurationWithContext(arg0 context.Context, arg1 *detective.DescribeOrganizationConfigurationInput, arg2 ...request.Option) (*detective.DescribeOrganizationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeOrganizationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*detective.DescribeOrganizationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationConfigurationWithContext indicates an expected call of DescribeOrganizationConfigurationWithContext
+func (mr *MockDetectiveAPIMockRecorder) DescribeOrganizationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfigurationWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).DescribeOrganizationConfigurationWithContext), varargs...)
+}
+
+// DisableOrganizationAdminAccount mocks base method
+func (m *MockDetectiveAPI) DisableOrganizationAdminAccount(arg0 *detective.DisableOrganizationAdminAccountInput) (*detective.DisableOrganizationAdminAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableOrganizationAdminAccount", arg0)
+	ret0, _ := ret[0].(*detective.DisableOrganizationAdminAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableOrganizationAdminAccount indicates an expected call of DisableOrganizationAdminAccount
+func (mr *MockDetectiveAPIMockRecorder) DisableOrganizationAdminAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableOrganizationAdminAccount", reflect.TypeOf((*MockDetectiveAPI)(nil).DisableOrganizationAdminAccount), arg0)
+}
+
+// DisableOrganizationAdminAccountRequest mocks base method
+func (m *MockDetectiveAPI) DisableOrganizationAdminAccountRequest(arg0 *detective.DisableOrganizationAdminAccountInput) (*request.Request, *detective.DisableOrganizationAdminAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableOrganizationAdminAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*detective.DisableOrganizationAdminAccountOutput)
+	return ret0, ret1
+}
+
+// DisableOrganizationAdminAccountRequest indicates an expected call of DisableOrganizationAdminAccountRequest
+func (mr *MockDetectiveAPIMockRecorder) DisableOrganizationAdminAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableOrganizationAdminAccountRequest", reflect.TypeOf((*MockDetectiveAPI)(nil).DisableOrganizationAdminAccountRequest), arg0)
+}
+
+// DisableOrganizationAdminAccountWithContext mocks base method
+func (m *MockDetectiveAPI) DisableOrganizationAdminAccountWithContext(arg0 context.Context, arg1 *detective.DisableOrganizationAdminAccountInput, arg2 ...request.Option) (*detective.DisableOrganizationAdminAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisableOrganizationAdminAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*detective.DisableOrganizationAdminAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableOrganizationAdminAccountWithContext indicates an expected call of DisableOrganizationAdminAccountWithContext
+func (mr *MockDetectiveAPIMockRecorder) DisableOrganizationAdminAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableOrganizationAdminAccountWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).DisableOrganizationAdminAccountWithContext), varargs...)
+}
+
 // DisassociateMembership mocks base method
 func (m *MockDetectiveAPI) DisassociateMembership(arg0 *detective.DisassociateMembershipInput) (*detective.DisassociateMembershipOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +433,56 @@ func (mr *MockDetectiveAPIMockRecorder) DisassociateMembershipWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMembershipWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).DisassociateMembershipWithContext), varargs...)
+}
+
+// EnableOrganizationAdminAccount mocks base method
+func (m *MockDetectiveAPI) EnableOrganizationAdminAccount(arg0 *detective.EnableOrganizationAdminAccountInput) (*detective.EnableOrganizationAdminAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableOrganizationAdminAccount", arg0)
+	ret0, _ := ret[0].(*detective.EnableOrganizationAdminAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableOrganizationAdminAccount indicates an expected call of EnableOrganizationAdminAccount
+func (mr *MockDetectiveAPIMockRecorder) EnableOrganizationAdminAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableOrganizationAdminAccount", reflect.TypeOf((*MockDetectiveAPI)(nil).EnableOrganizationAdminAccount), arg0)
+}
+
+// EnableOrganizationAdminAccountRequest mocks base method
+func (m *MockDetectiveAPI) EnableOrganizationAdminAccountRequest(arg0 *detective.EnableOrganizationAdminAccountInput) (*request.Request, *detective.EnableOrganizationAdminAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableOrganizationAdminAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*detective.EnableOrganizationAdminAccountOutput)
+	return ret0, ret1
+}
+
+// EnableOrganizationAdminAccountRequest indicates an expected call of EnableOrganizationAdminAccountRequest
+func (mr *MockDetectiveAPIMockRecorder) EnableOrganizationAdminAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableOrganizationAdminAccountRequest", reflect.TypeOf((*MockDetectiveAPI)(nil).EnableOrganizationAdminAccountRequest), arg0)
+}
+
+// EnableOrganizationAdminAccountWithContext mocks base method
+func (m *MockDetectiveAPI) EnableOrganizationAdminAccountWithContext(arg0 context.Context, arg1 *detective.EnableOrganizationAdminAccountInput, arg2 ...request.Option) (*detective.EnableOrganizationAdminAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "EnableOrganizationAdminAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*detective.EnableOrganizationAdminAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableOrganizationAdminAccountWithContext indicates an expected call of EnableOrganizationAdminAccountWithContext
+func (mr *MockDetectiveAPIMockRecorder) EnableOrganizationAdminAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableOrganizationAdminAccountWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).EnableOrganizationAdminAccountWithContext), varargs...)
 }
 
 // GetMembers mocks base method
@@ -634,6 +784,89 @@ func (mr *MockDetectiveAPIMockRecorder) ListMembersWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMembersWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).ListMembersWithContext), varargs...)
 }
 
+// ListOrganizationAdminAccounts mocks base method
+func (m *MockDetectiveAPI) ListOrganizationAdminAccounts(arg0 *detective.ListOrganizationAdminAccountsInput) (*detective.ListOrganizationAdminAccountsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrganizationAdminAccounts", arg0)
+	ret0, _ := ret[0].(*detective.ListOrganizationAdminAccountsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOrganizationAdminAccounts indicates an expected call of ListOrganizationAdminAccounts
+func (mr *MockDetectiveAPIMockRecorder) ListOrganizationAdminAccounts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccounts", reflect.TypeOf((*MockDetectiveAPI)(nil).ListOrganizationAdminAccounts), arg0)
+}
+
+// ListOrganizationAdminAccountsPages mocks base method
+func (m *MockDetectiveAPI) ListOrganizationAdminAccountsPages(arg0 *detective.ListOrganizationAdminAccountsInput, arg1 func(*detective.ListOrganizationAdminAccountsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrganizationAdminAccountsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOrganizationAdminAccountsPages indicates an expected call of ListOrganizationAdminAccountsPages
+func (mr *MockDetectiveAPIMockRecorder) ListOrganizationAdminAccountsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccountsPages", reflect.TypeOf((*MockDetectiveAPI)(nil).ListOrganizationAdminAccountsPages), arg0, arg1)
+}
+
+// ListOrganizationAdminAccountsPagesWithContext mocks base method
+func (m *MockDetectiveAPI) ListOrganizationAdminAccountsPagesWithContext(arg0 context.Context, arg1 *detective.ListOrganizationAdminAccountsInput, arg2 func(*detective.ListOrganizationAdminAccountsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOrganizationAdminAccountsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOrganizationAdminAccountsPagesWithContext indicates an expected call of ListOrganizationAdminAccountsPagesWithContext
+func (mr *MockDetectiveAPIMockRecorder) ListOrganizationAdminAccountsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccountsPagesWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).ListOrganizationAdminAccountsPagesWithContext), varargs...)
+}
+
+// ListOrganizationAdminAccountsRequest mocks base method
+func (m *MockDetectiveAPI) ListOrganizationAdminAccountsRequest(arg0 *detective.ListOrganizationAdminAccountsInput) (*request.Request, *detective.ListOrganizationAdminAccountsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrganizationAdminAccountsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*detective.ListOrganizationAdminAccountsOutput)
+	return ret0, ret1
+}
+
+// ListOrganizationAdminAccountsRequest indicates an expected call of ListOrganizationAdminAccountsRequest
+func (mr *MockDetectiveAPIMockRecorder) ListOrganizationAdminAccountsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccountsRequest", reflect.TypeOf((*MockDetectiveAPI)(nil).ListOrganizationAdminAccountsRequest), arg0)
+}
+
+// ListOrganizationAdminAccountsWithContext mocks base method
+func (m *MockDetectiveAPI) ListOrganizationAdminAccountsWithContext(arg0 context.Context, arg1 *detective.ListOrganizationAdminAccountsInput, arg2 ...request.Option) (*detective.ListOrganizationAdminAccountsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOrganizationAdminAccountsWithContext", varargs...)
+	ret0, _ := ret[0].(*detective.ListOrganizationAdminAccountsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOrganizationAdminAccountsWithContext indicates an expected call of ListOrganizationAdminAccountsWithContext
+func (mr *MockDetectiveAPIMockRecorder) ListOrganizationAdminAccountsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationAdminAccountsWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).ListOrganizationAdminAccountsWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockDetectiveAPI) ListTagsForResource(arg0 *detective.ListTagsForResourceInput) (*detective.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -882,4 +1115,54 @@ func (mr *MockDetectiveAPIMockRecorder) UntagResourceWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateOrganizationConfiguration mocks base method
+func (m *MockDetectiveAPI) UpdateOrganizationConfiguration(arg0 *detective.UpdateOrganizationConfigurationInput) (*detective.UpdateOrganizationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateOrganizationConfiguration", arg0)
+	ret0, _ := ret[0].(*detective.UpdateOrganizationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateOrganizationConfiguration indicates an expected call of UpdateOrganizationConfiguration
+func (mr *MockDetectiveAPIMockRecorder) UpdateOrganizationConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOrganizationConfiguration", reflect.TypeOf((*MockDetectiveAPI)(nil).UpdateOrganizationConfiguration), arg0)
+}
+
+// UpdateOrganizationConfigurationRequest mocks base method
+func (m *MockDetectiveAPI) UpdateOrganizationConfigurationRequest(arg0 *detective.UpdateOrganizationConfigurationInput) (*request.Request, *detective.UpdateOrganizationConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateOrganizationConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*detective.UpdateOrganizationConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateOrganizationConfigurationRequest indicates an expected call of UpdateOrganizationConfigurationRequest
+func (mr *MockDetectiveAPIMockRecorder) UpdateOrganizationConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOrganizationConfigurationRequest", reflect.TypeOf((*MockDetectiveAPI)(nil).UpdateOrganizationConfigurationRequest), arg0)
+}
+
+// UpdateOrganizationConfigurationWithContext mocks base method
+func (m *MockDetectiveAPI) UpdateOrganizationConfigurationWithContext(arg0 context.Context, arg1 *detective.UpdateOrganizationConfigurationInput, arg2 ...request.Option) (*detective.UpdateOrganizationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateOrganizationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*detective.UpdateOrganizationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateOrganizationConfigurationWithContext indicates an expected call of UpdateOrganizationConfigurationWithContext
+func (mr *MockDetectiveAPIMockRecorder) UpdateOrganizationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOrganizationConfigurationWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).UpdateOrganizationConfigurationWithContext), varargs...)
 }
