@@ -85,6 +85,56 @@ func (mr *MockFMSAPIMockRecorder) AssociateAdminAccountWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateAdminAccountWithContext", reflect.TypeOf((*MockFMSAPI)(nil).AssociateAdminAccountWithContext), varargs...)
 }
 
+// AssociateThirdPartyFirewall mocks base method
+func (m *MockFMSAPI) AssociateThirdPartyFirewall(arg0 *fms.AssociateThirdPartyFirewallInput) (*fms.AssociateThirdPartyFirewallOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateThirdPartyFirewall", arg0)
+	ret0, _ := ret[0].(*fms.AssociateThirdPartyFirewallOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateThirdPartyFirewall indicates an expected call of AssociateThirdPartyFirewall
+func (mr *MockFMSAPIMockRecorder) AssociateThirdPartyFirewall(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateThirdPartyFirewall", reflect.TypeOf((*MockFMSAPI)(nil).AssociateThirdPartyFirewall), arg0)
+}
+
+// AssociateThirdPartyFirewallRequest mocks base method
+func (m *MockFMSAPI) AssociateThirdPartyFirewallRequest(arg0 *fms.AssociateThirdPartyFirewallInput) (*request.Request, *fms.AssociateThirdPartyFirewallOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateThirdPartyFirewallRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.AssociateThirdPartyFirewallOutput)
+	return ret0, ret1
+}
+
+// AssociateThirdPartyFirewallRequest indicates an expected call of AssociateThirdPartyFirewallRequest
+func (mr *MockFMSAPIMockRecorder) AssociateThirdPartyFirewallRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateThirdPartyFirewallRequest", reflect.TypeOf((*MockFMSAPI)(nil).AssociateThirdPartyFirewallRequest), arg0)
+}
+
+// AssociateThirdPartyFirewallWithContext mocks base method
+func (m *MockFMSAPI) AssociateThirdPartyFirewallWithContext(arg0 context.Context, arg1 *fms.AssociateThirdPartyFirewallInput, arg2 ...request.Option) (*fms.AssociateThirdPartyFirewallOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateThirdPartyFirewallWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.AssociateThirdPartyFirewallOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateThirdPartyFirewallWithContext indicates an expected call of AssociateThirdPartyFirewallWithContext
+func (mr *MockFMSAPIMockRecorder) AssociateThirdPartyFirewallWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateThirdPartyFirewallWithContext", reflect.TypeOf((*MockFMSAPI)(nil).AssociateThirdPartyFirewallWithContext), varargs...)
+}
+
 // DeleteAppsList mocks base method
 func (m *MockFMSAPI) DeleteAppsList(arg0 *fms.DeleteAppsListInput) (*fms.DeleteAppsListOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +383,56 @@ func (mr *MockFMSAPIMockRecorder) DisassociateAdminAccountWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateAdminAccountWithContext", reflect.TypeOf((*MockFMSAPI)(nil).DisassociateAdminAccountWithContext), varargs...)
+}
+
+// DisassociateThirdPartyFirewall mocks base method
+func (m *MockFMSAPI) DisassociateThirdPartyFirewall(arg0 *fms.DisassociateThirdPartyFirewallInput) (*fms.DisassociateThirdPartyFirewallOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateThirdPartyFirewall", arg0)
+	ret0, _ := ret[0].(*fms.DisassociateThirdPartyFirewallOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateThirdPartyFirewall indicates an expected call of DisassociateThirdPartyFirewall
+func (mr *MockFMSAPIMockRecorder) DisassociateThirdPartyFirewall(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateThirdPartyFirewall", reflect.TypeOf((*MockFMSAPI)(nil).DisassociateThirdPartyFirewall), arg0)
+}
+
+// DisassociateThirdPartyFirewallRequest mocks base method
+func (m *MockFMSAPI) DisassociateThirdPartyFirewallRequest(arg0 *fms.DisassociateThirdPartyFirewallInput) (*request.Request, *fms.DisassociateThirdPartyFirewallOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateThirdPartyFirewallRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.DisassociateThirdPartyFirewallOutput)
+	return ret0, ret1
+}
+
+// DisassociateThirdPartyFirewallRequest indicates an expected call of DisassociateThirdPartyFirewallRequest
+func (mr *MockFMSAPIMockRecorder) DisassociateThirdPartyFirewallRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateThirdPartyFirewallRequest", reflect.TypeOf((*MockFMSAPI)(nil).DisassociateThirdPartyFirewallRequest), arg0)
+}
+
+// DisassociateThirdPartyFirewallWithContext mocks base method
+func (m *MockFMSAPI) DisassociateThirdPartyFirewallWithContext(arg0 context.Context, arg1 *fms.DisassociateThirdPartyFirewallInput, arg2 ...request.Option) (*fms.DisassociateThirdPartyFirewallOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateThirdPartyFirewallWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.DisassociateThirdPartyFirewallOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateThirdPartyFirewallWithContext indicates an expected call of DisassociateThirdPartyFirewallWithContext
+func (mr *MockFMSAPIMockRecorder) DisassociateThirdPartyFirewallWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateThirdPartyFirewallWithContext", reflect.TypeOf((*MockFMSAPI)(nil).DisassociateThirdPartyFirewallWithContext), varargs...)
 }
 
 // GetAdminAccount mocks base method
@@ -683,6 +783,56 @@ func (mr *MockFMSAPIMockRecorder) GetProtocolsListWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProtocolsListWithContext", reflect.TypeOf((*MockFMSAPI)(nil).GetProtocolsListWithContext), varargs...)
+}
+
+// GetThirdPartyFirewallAssociationStatus mocks base method
+func (m *MockFMSAPI) GetThirdPartyFirewallAssociationStatus(arg0 *fms.GetThirdPartyFirewallAssociationStatusInput) (*fms.GetThirdPartyFirewallAssociationStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetThirdPartyFirewallAssociationStatus", arg0)
+	ret0, _ := ret[0].(*fms.GetThirdPartyFirewallAssociationStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetThirdPartyFirewallAssociationStatus indicates an expected call of GetThirdPartyFirewallAssociationStatus
+func (mr *MockFMSAPIMockRecorder) GetThirdPartyFirewallAssociationStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetThirdPartyFirewallAssociationStatus", reflect.TypeOf((*MockFMSAPI)(nil).GetThirdPartyFirewallAssociationStatus), arg0)
+}
+
+// GetThirdPartyFirewallAssociationStatusRequest mocks base method
+func (m *MockFMSAPI) GetThirdPartyFirewallAssociationStatusRequest(arg0 *fms.GetThirdPartyFirewallAssociationStatusInput) (*request.Request, *fms.GetThirdPartyFirewallAssociationStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetThirdPartyFirewallAssociationStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.GetThirdPartyFirewallAssociationStatusOutput)
+	return ret0, ret1
+}
+
+// GetThirdPartyFirewallAssociationStatusRequest indicates an expected call of GetThirdPartyFirewallAssociationStatusRequest
+func (mr *MockFMSAPIMockRecorder) GetThirdPartyFirewallAssociationStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetThirdPartyFirewallAssociationStatusRequest", reflect.TypeOf((*MockFMSAPI)(nil).GetThirdPartyFirewallAssociationStatusRequest), arg0)
+}
+
+// GetThirdPartyFirewallAssociationStatusWithContext mocks base method
+func (m *MockFMSAPI) GetThirdPartyFirewallAssociationStatusWithContext(arg0 context.Context, arg1 *fms.GetThirdPartyFirewallAssociationStatusInput, arg2 ...request.Option) (*fms.GetThirdPartyFirewallAssociationStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetThirdPartyFirewallAssociationStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.GetThirdPartyFirewallAssociationStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetThirdPartyFirewallAssociationStatusWithContext indicates an expected call of GetThirdPartyFirewallAssociationStatusWithContext
+func (mr *MockFMSAPIMockRecorder) GetThirdPartyFirewallAssociationStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetThirdPartyFirewallAssociationStatusWithContext", reflect.TypeOf((*MockFMSAPI)(nil).GetThirdPartyFirewallAssociationStatusWithContext), varargs...)
 }
 
 // GetViolationDetails mocks base method
@@ -1198,6 +1348,89 @@ func (mr *MockFMSAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// ListThirdPartyFirewallFirewallPolicies mocks base method
+func (m *MockFMSAPI) ListThirdPartyFirewallFirewallPolicies(arg0 *fms.ListThirdPartyFirewallFirewallPoliciesInput) (*fms.ListThirdPartyFirewallFirewallPoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListThirdPartyFirewallFirewallPolicies", arg0)
+	ret0, _ := ret[0].(*fms.ListThirdPartyFirewallFirewallPoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListThirdPartyFirewallFirewallPolicies indicates an expected call of ListThirdPartyFirewallFirewallPolicies
+func (mr *MockFMSAPIMockRecorder) ListThirdPartyFirewallFirewallPolicies(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThirdPartyFirewallFirewallPolicies", reflect.TypeOf((*MockFMSAPI)(nil).ListThirdPartyFirewallFirewallPolicies), arg0)
+}
+
+// ListThirdPartyFirewallFirewallPoliciesPages mocks base method
+func (m *MockFMSAPI) ListThirdPartyFirewallFirewallPoliciesPages(arg0 *fms.ListThirdPartyFirewallFirewallPoliciesInput, arg1 func(*fms.ListThirdPartyFirewallFirewallPoliciesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListThirdPartyFirewallFirewallPoliciesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListThirdPartyFirewallFirewallPoliciesPages indicates an expected call of ListThirdPartyFirewallFirewallPoliciesPages
+func (mr *MockFMSAPIMockRecorder) ListThirdPartyFirewallFirewallPoliciesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThirdPartyFirewallFirewallPoliciesPages", reflect.TypeOf((*MockFMSAPI)(nil).ListThirdPartyFirewallFirewallPoliciesPages), arg0, arg1)
+}
+
+// ListThirdPartyFirewallFirewallPoliciesPagesWithContext mocks base method
+func (m *MockFMSAPI) ListThirdPartyFirewallFirewallPoliciesPagesWithContext(arg0 context.Context, arg1 *fms.ListThirdPartyFirewallFirewallPoliciesInput, arg2 func(*fms.ListThirdPartyFirewallFirewallPoliciesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListThirdPartyFirewallFirewallPoliciesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListThirdPartyFirewallFirewallPoliciesPagesWithContext indicates an expected call of ListThirdPartyFirewallFirewallPoliciesPagesWithContext
+func (mr *MockFMSAPIMockRecorder) ListThirdPartyFirewallFirewallPoliciesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThirdPartyFirewallFirewallPoliciesPagesWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListThirdPartyFirewallFirewallPoliciesPagesWithContext), varargs...)
+}
+
+// ListThirdPartyFirewallFirewallPoliciesRequest mocks base method
+func (m *MockFMSAPI) ListThirdPartyFirewallFirewallPoliciesRequest(arg0 *fms.ListThirdPartyFirewallFirewallPoliciesInput) (*request.Request, *fms.ListThirdPartyFirewallFirewallPoliciesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListThirdPartyFirewallFirewallPoliciesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.ListThirdPartyFirewallFirewallPoliciesOutput)
+	return ret0, ret1
+}
+
+// ListThirdPartyFirewallFirewallPoliciesRequest indicates an expected call of ListThirdPartyFirewallFirewallPoliciesRequest
+func (mr *MockFMSAPIMockRecorder) ListThirdPartyFirewallFirewallPoliciesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThirdPartyFirewallFirewallPoliciesRequest", reflect.TypeOf((*MockFMSAPI)(nil).ListThirdPartyFirewallFirewallPoliciesRequest), arg0)
+}
+
+// ListThirdPartyFirewallFirewallPoliciesWithContext mocks base method
+func (m *MockFMSAPI) ListThirdPartyFirewallFirewallPoliciesWithContext(arg0 context.Context, arg1 *fms.ListThirdPartyFirewallFirewallPoliciesInput, arg2 ...request.Option) (*fms.ListThirdPartyFirewallFirewallPoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListThirdPartyFirewallFirewallPoliciesWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.ListThirdPartyFirewallFirewallPoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListThirdPartyFirewallFirewallPoliciesWithContext indicates an expected call of ListThirdPartyFirewallFirewallPoliciesWithContext
+func (mr *MockFMSAPIMockRecorder) ListThirdPartyFirewallFirewallPoliciesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThirdPartyFirewallFirewallPoliciesWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListThirdPartyFirewallFirewallPoliciesWithContext), varargs...)
 }
 
 // PutAppsList mocks base method
