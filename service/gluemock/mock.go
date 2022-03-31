@@ -785,6 +785,56 @@ func (mr *MockGlueAPIMockRecorder) CancelMLTaskRunWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelMLTaskRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CancelMLTaskRunWithContext), varargs...)
 }
 
+// CancelStatement mocks base method
+func (m *MockGlueAPI) CancelStatement(arg0 *glue.CancelStatementInput) (*glue.CancelStatementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelStatement", arg0)
+	ret0, _ := ret[0].(*glue.CancelStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelStatement indicates an expected call of CancelStatement
+func (mr *MockGlueAPIMockRecorder) CancelStatement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelStatement", reflect.TypeOf((*MockGlueAPI)(nil).CancelStatement), arg0)
+}
+
+// CancelStatementRequest mocks base method
+func (m *MockGlueAPI) CancelStatementRequest(arg0 *glue.CancelStatementInput) (*request.Request, *glue.CancelStatementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelStatementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.CancelStatementOutput)
+	return ret0, ret1
+}
+
+// CancelStatementRequest indicates an expected call of CancelStatementRequest
+func (mr *MockGlueAPIMockRecorder) CancelStatementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelStatementRequest", reflect.TypeOf((*MockGlueAPI)(nil).CancelStatementRequest), arg0)
+}
+
+// CancelStatementWithContext mocks base method
+func (m *MockGlueAPI) CancelStatementWithContext(arg0 context.Context, arg1 *glue.CancelStatementInput, arg2 ...request.Option) (*glue.CancelStatementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelStatementWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.CancelStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelStatementWithContext indicates an expected call of CancelStatementWithContext
+func (mr *MockGlueAPIMockRecorder) CancelStatementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelStatementWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CancelStatementWithContext), varargs...)
+}
+
 // CheckSchemaVersionValidity mocks base method
 func (m *MockGlueAPI) CheckSchemaVersionValidity(arg0 *glue.CheckSchemaVersionValidityInput) (*glue.CheckSchemaVersionValidityOutput, error) {
 	m.ctrl.T.Helper()
@@ -1533,6 +1583,56 @@ func (mr *MockGlueAPIMockRecorder) CreateSecurityConfigurationWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityConfigurationWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreateSecurityConfigurationWithContext), varargs...)
+}
+
+// CreateSession mocks base method
+func (m *MockGlueAPI) CreateSession(arg0 *glue.CreateSessionInput) (*glue.CreateSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSession", arg0)
+	ret0, _ := ret[0].(*glue.CreateSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSession indicates an expected call of CreateSession
+func (mr *MockGlueAPIMockRecorder) CreateSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSession", reflect.TypeOf((*MockGlueAPI)(nil).CreateSession), arg0)
+}
+
+// CreateSessionRequest mocks base method
+func (m *MockGlueAPI) CreateSessionRequest(arg0 *glue.CreateSessionInput) (*request.Request, *glue.CreateSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.CreateSessionOutput)
+	return ret0, ret1
+}
+
+// CreateSessionRequest indicates an expected call of CreateSessionRequest
+func (mr *MockGlueAPIMockRecorder) CreateSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSessionRequest", reflect.TypeOf((*MockGlueAPI)(nil).CreateSessionRequest), arg0)
+}
+
+// CreateSessionWithContext mocks base method
+func (m *MockGlueAPI) CreateSessionWithContext(arg0 context.Context, arg1 *glue.CreateSessionInput, arg2 ...request.Option) (*glue.CreateSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.CreateSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSessionWithContext indicates an expected call of CreateSessionWithContext
+func (mr *MockGlueAPIMockRecorder) CreateSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSessionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreateSessionWithContext), varargs...)
 }
 
 // CreateTable mocks base method
@@ -2583,6 +2683,56 @@ func (mr *MockGlueAPIMockRecorder) DeleteSecurityConfigurationWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityConfigurationWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteSecurityConfigurationWithContext), varargs...)
+}
+
+// DeleteSession mocks base method
+func (m *MockGlueAPI) DeleteSession(arg0 *glue.DeleteSessionInput) (*glue.DeleteSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSession", arg0)
+	ret0, _ := ret[0].(*glue.DeleteSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSession indicates an expected call of DeleteSession
+func (mr *MockGlueAPIMockRecorder) DeleteSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSession", reflect.TypeOf((*MockGlueAPI)(nil).DeleteSession), arg0)
+}
+
+// DeleteSessionRequest mocks base method
+func (m *MockGlueAPI) DeleteSessionRequest(arg0 *glue.DeleteSessionInput) (*request.Request, *glue.DeleteSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.DeleteSessionOutput)
+	return ret0, ret1
+}
+
+// DeleteSessionRequest indicates an expected call of DeleteSessionRequest
+func (mr *MockGlueAPIMockRecorder) DeleteSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSessionRequest", reflect.TypeOf((*MockGlueAPI)(nil).DeleteSessionRequest), arg0)
+}
+
+// DeleteSessionWithContext mocks base method
+func (m *MockGlueAPI) DeleteSessionWithContext(arg0 context.Context, arg1 *glue.DeleteSessionInput, arg2 ...request.Option) (*glue.DeleteSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.DeleteSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSessionWithContext indicates an expected call of DeleteSessionWithContext
+func (mr *MockGlueAPIMockRecorder) DeleteSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSessionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteSessionWithContext), varargs...)
 }
 
 // DeleteTable mocks base method
@@ -5430,6 +5580,106 @@ func (mr *MockGlueAPIMockRecorder) GetSecurityConfigurationsWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSecurityConfigurationsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetSecurityConfigurationsWithContext), varargs...)
 }
 
+// GetSession mocks base method
+func (m *MockGlueAPI) GetSession(arg0 *glue.GetSessionInput) (*glue.GetSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSession", arg0)
+	ret0, _ := ret[0].(*glue.GetSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSession indicates an expected call of GetSession
+func (mr *MockGlueAPIMockRecorder) GetSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSession", reflect.TypeOf((*MockGlueAPI)(nil).GetSession), arg0)
+}
+
+// GetSessionRequest mocks base method
+func (m *MockGlueAPI) GetSessionRequest(arg0 *glue.GetSessionInput) (*request.Request, *glue.GetSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetSessionOutput)
+	return ret0, ret1
+}
+
+// GetSessionRequest indicates an expected call of GetSessionRequest
+func (mr *MockGlueAPIMockRecorder) GetSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSessionRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetSessionRequest), arg0)
+}
+
+// GetSessionWithContext mocks base method
+func (m *MockGlueAPI) GetSessionWithContext(arg0 context.Context, arg1 *glue.GetSessionInput, arg2 ...request.Option) (*glue.GetSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSessionWithContext indicates an expected call of GetSessionWithContext
+func (mr *MockGlueAPIMockRecorder) GetSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSessionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetSessionWithContext), varargs...)
+}
+
+// GetStatement mocks base method
+func (m *MockGlueAPI) GetStatement(arg0 *glue.GetStatementInput) (*glue.GetStatementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStatement", arg0)
+	ret0, _ := ret[0].(*glue.GetStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStatement indicates an expected call of GetStatement
+func (mr *MockGlueAPIMockRecorder) GetStatement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStatement", reflect.TypeOf((*MockGlueAPI)(nil).GetStatement), arg0)
+}
+
+// GetStatementRequest mocks base method
+func (m *MockGlueAPI) GetStatementRequest(arg0 *glue.GetStatementInput) (*request.Request, *glue.GetStatementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStatementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetStatementOutput)
+	return ret0, ret1
+}
+
+// GetStatementRequest indicates an expected call of GetStatementRequest
+func (mr *MockGlueAPIMockRecorder) GetStatementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStatementRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetStatementRequest), arg0)
+}
+
+// GetStatementWithContext mocks base method
+func (m *MockGlueAPI) GetStatementWithContext(arg0 context.Context, arg1 *glue.GetStatementInput, arg2 ...request.Option) (*glue.GetStatementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetStatementWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStatementWithContext indicates an expected call of GetStatementWithContext
+func (mr *MockGlueAPIMockRecorder) GetStatementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStatementWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetStatementWithContext), varargs...)
+}
+
 // GetTable mocks base method
 func (m *MockGlueAPI) GetTable(arg0 *glue.GetTableInput) (*glue.GetTableOutput, error) {
 	m.ctrl.T.Helper()
@@ -7142,6 +7392,139 @@ func (mr *MockGlueAPIMockRecorder) ListSchemasWithContext(arg0, arg1 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchemasWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListSchemasWithContext), varargs...)
 }
 
+// ListSessions mocks base method
+func (m *MockGlueAPI) ListSessions(arg0 *glue.ListSessionsInput) (*glue.ListSessionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSessions", arg0)
+	ret0, _ := ret[0].(*glue.ListSessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSessions indicates an expected call of ListSessions
+func (mr *MockGlueAPIMockRecorder) ListSessions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessions", reflect.TypeOf((*MockGlueAPI)(nil).ListSessions), arg0)
+}
+
+// ListSessionsPages mocks base method
+func (m *MockGlueAPI) ListSessionsPages(arg0 *glue.ListSessionsInput, arg1 func(*glue.ListSessionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSessionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSessionsPages indicates an expected call of ListSessionsPages
+func (mr *MockGlueAPIMockRecorder) ListSessionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionsPages", reflect.TypeOf((*MockGlueAPI)(nil).ListSessionsPages), arg0, arg1)
+}
+
+// ListSessionsPagesWithContext mocks base method
+func (m *MockGlueAPI) ListSessionsPagesWithContext(arg0 context.Context, arg1 *glue.ListSessionsInput, arg2 func(*glue.ListSessionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSessionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSessionsPagesWithContext indicates an expected call of ListSessionsPagesWithContext
+func (mr *MockGlueAPIMockRecorder) ListSessionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionsPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListSessionsPagesWithContext), varargs...)
+}
+
+// ListSessionsRequest mocks base method
+func (m *MockGlueAPI) ListSessionsRequest(arg0 *glue.ListSessionsInput) (*request.Request, *glue.ListSessionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSessionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.ListSessionsOutput)
+	return ret0, ret1
+}
+
+// ListSessionsRequest indicates an expected call of ListSessionsRequest
+func (mr *MockGlueAPIMockRecorder) ListSessionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionsRequest", reflect.TypeOf((*MockGlueAPI)(nil).ListSessionsRequest), arg0)
+}
+
+// ListSessionsWithContext mocks base method
+func (m *MockGlueAPI) ListSessionsWithContext(arg0 context.Context, arg1 *glue.ListSessionsInput, arg2 ...request.Option) (*glue.ListSessionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSessionsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.ListSessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSessionsWithContext indicates an expected call of ListSessionsWithContext
+func (mr *MockGlueAPIMockRecorder) ListSessionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListSessionsWithContext), varargs...)
+}
+
+// ListStatements mocks base method
+func (m *MockGlueAPI) ListStatements(arg0 *glue.ListStatementsInput) (*glue.ListStatementsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStatements", arg0)
+	ret0, _ := ret[0].(*glue.ListStatementsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStatements indicates an expected call of ListStatements
+func (mr *MockGlueAPIMockRecorder) ListStatements(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStatements", reflect.TypeOf((*MockGlueAPI)(nil).ListStatements), arg0)
+}
+
+// ListStatementsRequest mocks base method
+func (m *MockGlueAPI) ListStatementsRequest(arg0 *glue.ListStatementsInput) (*request.Request, *glue.ListStatementsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStatementsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.ListStatementsOutput)
+	return ret0, ret1
+}
+
+// ListStatementsRequest indicates an expected call of ListStatementsRequest
+func (mr *MockGlueAPIMockRecorder) ListStatementsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStatementsRequest", reflect.TypeOf((*MockGlueAPI)(nil).ListStatementsRequest), arg0)
+}
+
+// ListStatementsWithContext mocks base method
+func (m *MockGlueAPI) ListStatementsWithContext(arg0 context.Context, arg1 *glue.ListStatementsInput, arg2 ...request.Option) (*glue.ListStatementsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStatementsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.ListStatementsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStatementsWithContext indicates an expected call of ListStatementsWithContext
+func (mr *MockGlueAPIMockRecorder) ListStatementsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStatementsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListStatementsWithContext), varargs...)
+}
+
 // ListTriggers mocks base method
 func (m *MockGlueAPI) ListTriggers(arg0 *glue.ListTriggersInput) (*glue.ListTriggersOutput, error) {
 	m.ctrl.T.Helper()
@@ -7756,6 +8139,56 @@ func (mr *MockGlueAPIMockRecorder) ResumeWorkflowRunWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeWorkflowRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ResumeWorkflowRunWithContext), varargs...)
+}
+
+// RunStatement mocks base method
+func (m *MockGlueAPI) RunStatement(arg0 *glue.RunStatementInput) (*glue.RunStatementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RunStatement", arg0)
+	ret0, _ := ret[0].(*glue.RunStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RunStatement indicates an expected call of RunStatement
+func (mr *MockGlueAPIMockRecorder) RunStatement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RunStatement", reflect.TypeOf((*MockGlueAPI)(nil).RunStatement), arg0)
+}
+
+// RunStatementRequest mocks base method
+func (m *MockGlueAPI) RunStatementRequest(arg0 *glue.RunStatementInput) (*request.Request, *glue.RunStatementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RunStatementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.RunStatementOutput)
+	return ret0, ret1
+}
+
+// RunStatementRequest indicates an expected call of RunStatementRequest
+func (mr *MockGlueAPIMockRecorder) RunStatementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RunStatementRequest", reflect.TypeOf((*MockGlueAPI)(nil).RunStatementRequest), arg0)
+}
+
+// RunStatementWithContext mocks base method
+func (m *MockGlueAPI) RunStatementWithContext(arg0 context.Context, arg1 *glue.RunStatementInput, arg2 ...request.Option) (*glue.RunStatementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RunStatementWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.RunStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RunStatementWithContext indicates an expected call of RunStatementWithContext
+func (mr *MockGlueAPIMockRecorder) RunStatementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RunStatementWithContext", reflect.TypeOf((*MockGlueAPI)(nil).RunStatementWithContext), varargs...)
 }
 
 // SearchTables mocks base method
@@ -8439,6 +8872,56 @@ func (mr *MockGlueAPIMockRecorder) StopCrawlerWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopCrawlerWithContext", reflect.TypeOf((*MockGlueAPI)(nil).StopCrawlerWithContext), varargs...)
+}
+
+// StopSession mocks base method
+func (m *MockGlueAPI) StopSession(arg0 *glue.StopSessionInput) (*glue.StopSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopSession", arg0)
+	ret0, _ := ret[0].(*glue.StopSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopSession indicates an expected call of StopSession
+func (mr *MockGlueAPIMockRecorder) StopSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSession", reflect.TypeOf((*MockGlueAPI)(nil).StopSession), arg0)
+}
+
+// StopSessionRequest mocks base method
+func (m *MockGlueAPI) StopSessionRequest(arg0 *glue.StopSessionInput) (*request.Request, *glue.StopSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.StopSessionOutput)
+	return ret0, ret1
+}
+
+// StopSessionRequest indicates an expected call of StopSessionRequest
+func (mr *MockGlueAPIMockRecorder) StopSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSessionRequest", reflect.TypeOf((*MockGlueAPI)(nil).StopSessionRequest), arg0)
+}
+
+// StopSessionWithContext mocks base method
+func (m *MockGlueAPI) StopSessionWithContext(arg0 context.Context, arg1 *glue.StopSessionInput, arg2 ...request.Option) (*glue.StopSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.StopSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopSessionWithContext indicates an expected call of StopSessionWithContext
+func (mr *MockGlueAPIMockRecorder) StopSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSessionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).StopSessionWithContext), varargs...)
 }
 
 // StopTrigger mocks base method
