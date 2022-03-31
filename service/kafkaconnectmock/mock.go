@@ -235,6 +235,56 @@ func (mr *MockKafkaConnectAPIMockRecorder) DeleteConnectorWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectorWithContext", reflect.TypeOf((*MockKafkaConnectAPI)(nil).DeleteConnectorWithContext), varargs...)
 }
 
+// DeleteCustomPlugin mocks base method
+func (m *MockKafkaConnectAPI) DeleteCustomPlugin(arg0 *kafkaconnect.DeleteCustomPluginInput) (*kafkaconnect.DeleteCustomPluginOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCustomPlugin", arg0)
+	ret0, _ := ret[0].(*kafkaconnect.DeleteCustomPluginOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCustomPlugin indicates an expected call of DeleteCustomPlugin
+func (mr *MockKafkaConnectAPIMockRecorder) DeleteCustomPlugin(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomPlugin", reflect.TypeOf((*MockKafkaConnectAPI)(nil).DeleteCustomPlugin), arg0)
+}
+
+// DeleteCustomPluginRequest mocks base method
+func (m *MockKafkaConnectAPI) DeleteCustomPluginRequest(arg0 *kafkaconnect.DeleteCustomPluginInput) (*request.Request, *kafkaconnect.DeleteCustomPluginOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCustomPluginRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafkaconnect.DeleteCustomPluginOutput)
+	return ret0, ret1
+}
+
+// DeleteCustomPluginRequest indicates an expected call of DeleteCustomPluginRequest
+func (mr *MockKafkaConnectAPIMockRecorder) DeleteCustomPluginRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomPluginRequest", reflect.TypeOf((*MockKafkaConnectAPI)(nil).DeleteCustomPluginRequest), arg0)
+}
+
+// DeleteCustomPluginWithContext mocks base method
+func (m *MockKafkaConnectAPI) DeleteCustomPluginWithContext(arg0 context.Context, arg1 *kafkaconnect.DeleteCustomPluginInput, arg2 ...request.Option) (*kafkaconnect.DeleteCustomPluginOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCustomPluginWithContext", varargs...)
+	ret0, _ := ret[0].(*kafkaconnect.DeleteCustomPluginOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCustomPluginWithContext indicates an expected call of DeleteCustomPluginWithContext
+func (mr *MockKafkaConnectAPIMockRecorder) DeleteCustomPluginWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomPluginWithContext", reflect.TypeOf((*MockKafkaConnectAPI)(nil).DeleteCustomPluginWithContext), varargs...)
+}
+
 // DescribeConnector mocks base method
 func (m *MockKafkaConnectAPI) DescribeConnector(arg0 *kafkaconnect.DescribeConnectorInput) (*kafkaconnect.DescribeConnectorOutput, error) {
 	m.ctrl.T.Helper()
