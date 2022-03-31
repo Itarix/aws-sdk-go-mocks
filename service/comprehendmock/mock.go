@@ -1285,6 +1285,56 @@ func (mr *MockComprehendAPIMockRecorder) DescribeSentimentDetectionJobWithContex
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSentimentDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeSentimentDetectionJobWithContext), varargs...)
 }
 
+// DescribeTargetedSentimentDetectionJob mocks base method
+func (m *MockComprehendAPI) DescribeTargetedSentimentDetectionJob(arg0 *comprehend.DescribeTargetedSentimentDetectionJobInput) (*comprehend.DescribeTargetedSentimentDetectionJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTargetedSentimentDetectionJob", arg0)
+	ret0, _ := ret[0].(*comprehend.DescribeTargetedSentimentDetectionJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTargetedSentimentDetectionJob indicates an expected call of DescribeTargetedSentimentDetectionJob
+func (mr *MockComprehendAPIMockRecorder) DescribeTargetedSentimentDetectionJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTargetedSentimentDetectionJob", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeTargetedSentimentDetectionJob), arg0)
+}
+
+// DescribeTargetedSentimentDetectionJobRequest mocks base method
+func (m *MockComprehendAPI) DescribeTargetedSentimentDetectionJobRequest(arg0 *comprehend.DescribeTargetedSentimentDetectionJobInput) (*request.Request, *comprehend.DescribeTargetedSentimentDetectionJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTargetedSentimentDetectionJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DescribeTargetedSentimentDetectionJobOutput)
+	return ret0, ret1
+}
+
+// DescribeTargetedSentimentDetectionJobRequest indicates an expected call of DescribeTargetedSentimentDetectionJobRequest
+func (mr *MockComprehendAPIMockRecorder) DescribeTargetedSentimentDetectionJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTargetedSentimentDetectionJobRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeTargetedSentimentDetectionJobRequest), arg0)
+}
+
+// DescribeTargetedSentimentDetectionJobWithContext mocks base method
+func (m *MockComprehendAPI) DescribeTargetedSentimentDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.DescribeTargetedSentimentDetectionJobInput, arg2 ...request.Option) (*comprehend.DescribeTargetedSentimentDetectionJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeTargetedSentimentDetectionJobWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DescribeTargetedSentimentDetectionJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTargetedSentimentDetectionJobWithContext indicates an expected call of DescribeTargetedSentimentDetectionJobWithContext
+func (mr *MockComprehendAPIMockRecorder) DescribeTargetedSentimentDetectionJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTargetedSentimentDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeTargetedSentimentDetectionJobWithContext), varargs...)
+}
+
 // DescribeTopicsDetectionJob mocks base method
 func (m *MockComprehendAPI) DescribeTopicsDetectionJob(arg0 *comprehend.DescribeTopicsDetectionJobInput) (*comprehend.DescribeTopicsDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -2665,6 +2715,89 @@ func (mr *MockComprehendAPIMockRecorder) ListTagsForResourceWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ListTargetedSentimentDetectionJobs mocks base method
+func (m *MockComprehendAPI) ListTargetedSentimentDetectionJobs(arg0 *comprehend.ListTargetedSentimentDetectionJobsInput) (*comprehend.ListTargetedSentimentDetectionJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTargetedSentimentDetectionJobs", arg0)
+	ret0, _ := ret[0].(*comprehend.ListTargetedSentimentDetectionJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTargetedSentimentDetectionJobs indicates an expected call of ListTargetedSentimentDetectionJobs
+func (mr *MockComprehendAPIMockRecorder) ListTargetedSentimentDetectionJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTargetedSentimentDetectionJobs", reflect.TypeOf((*MockComprehendAPI)(nil).ListTargetedSentimentDetectionJobs), arg0)
+}
+
+// ListTargetedSentimentDetectionJobsPages mocks base method
+func (m *MockComprehendAPI) ListTargetedSentimentDetectionJobsPages(arg0 *comprehend.ListTargetedSentimentDetectionJobsInput, arg1 func(*comprehend.ListTargetedSentimentDetectionJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTargetedSentimentDetectionJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTargetedSentimentDetectionJobsPages indicates an expected call of ListTargetedSentimentDetectionJobsPages
+func (mr *MockComprehendAPIMockRecorder) ListTargetedSentimentDetectionJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTargetedSentimentDetectionJobsPages", reflect.TypeOf((*MockComprehendAPI)(nil).ListTargetedSentimentDetectionJobsPages), arg0, arg1)
+}
+
+// ListTargetedSentimentDetectionJobsPagesWithContext mocks base method
+func (m *MockComprehendAPI) ListTargetedSentimentDetectionJobsPagesWithContext(arg0 context.Context, arg1 *comprehend.ListTargetedSentimentDetectionJobsInput, arg2 func(*comprehend.ListTargetedSentimentDetectionJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTargetedSentimentDetectionJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTargetedSentimentDetectionJobsPagesWithContext indicates an expected call of ListTargetedSentimentDetectionJobsPagesWithContext
+func (mr *MockComprehendAPIMockRecorder) ListTargetedSentimentDetectionJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTargetedSentimentDetectionJobsPagesWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListTargetedSentimentDetectionJobsPagesWithContext), varargs...)
+}
+
+// ListTargetedSentimentDetectionJobsRequest mocks base method
+func (m *MockComprehendAPI) ListTargetedSentimentDetectionJobsRequest(arg0 *comprehend.ListTargetedSentimentDetectionJobsInput) (*request.Request, *comprehend.ListTargetedSentimentDetectionJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTargetedSentimentDetectionJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.ListTargetedSentimentDetectionJobsOutput)
+	return ret0, ret1
+}
+
+// ListTargetedSentimentDetectionJobsRequest indicates an expected call of ListTargetedSentimentDetectionJobsRequest
+func (mr *MockComprehendAPIMockRecorder) ListTargetedSentimentDetectionJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTargetedSentimentDetectionJobsRequest", reflect.TypeOf((*MockComprehendAPI)(nil).ListTargetedSentimentDetectionJobsRequest), arg0)
+}
+
+// ListTargetedSentimentDetectionJobsWithContext mocks base method
+func (m *MockComprehendAPI) ListTargetedSentimentDetectionJobsWithContext(arg0 context.Context, arg1 *comprehend.ListTargetedSentimentDetectionJobsInput, arg2 ...request.Option) (*comprehend.ListTargetedSentimentDetectionJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTargetedSentimentDetectionJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.ListTargetedSentimentDetectionJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTargetedSentimentDetectionJobsWithContext indicates an expected call of ListTargetedSentimentDetectionJobsWithContext
+func (mr *MockComprehendAPIMockRecorder) ListTargetedSentimentDetectionJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTargetedSentimentDetectionJobsWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListTargetedSentimentDetectionJobsWithContext), varargs...)
+}
+
 // ListTopicsDetectionJobs mocks base method
 func (m *MockComprehendAPI) ListTopicsDetectionJobs(arg0 *comprehend.ListTopicsDetectionJobsInput) (*comprehend.ListTopicsDetectionJobsOutput, error) {
 	m.ctrl.T.Helper()
@@ -3148,6 +3281,56 @@ func (mr *MockComprehendAPIMockRecorder) StartSentimentDetectionJobWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSentimentDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).StartSentimentDetectionJobWithContext), varargs...)
 }
 
+// StartTargetedSentimentDetectionJob mocks base method
+func (m *MockComprehendAPI) StartTargetedSentimentDetectionJob(arg0 *comprehend.StartTargetedSentimentDetectionJobInput) (*comprehend.StartTargetedSentimentDetectionJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartTargetedSentimentDetectionJob", arg0)
+	ret0, _ := ret[0].(*comprehend.StartTargetedSentimentDetectionJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartTargetedSentimentDetectionJob indicates an expected call of StartTargetedSentimentDetectionJob
+func (mr *MockComprehendAPIMockRecorder) StartTargetedSentimentDetectionJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTargetedSentimentDetectionJob", reflect.TypeOf((*MockComprehendAPI)(nil).StartTargetedSentimentDetectionJob), arg0)
+}
+
+// StartTargetedSentimentDetectionJobRequest mocks base method
+func (m *MockComprehendAPI) StartTargetedSentimentDetectionJobRequest(arg0 *comprehend.StartTargetedSentimentDetectionJobInput) (*request.Request, *comprehend.StartTargetedSentimentDetectionJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartTargetedSentimentDetectionJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.StartTargetedSentimentDetectionJobOutput)
+	return ret0, ret1
+}
+
+// StartTargetedSentimentDetectionJobRequest indicates an expected call of StartTargetedSentimentDetectionJobRequest
+func (mr *MockComprehendAPIMockRecorder) StartTargetedSentimentDetectionJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTargetedSentimentDetectionJobRequest", reflect.TypeOf((*MockComprehendAPI)(nil).StartTargetedSentimentDetectionJobRequest), arg0)
+}
+
+// StartTargetedSentimentDetectionJobWithContext mocks base method
+func (m *MockComprehendAPI) StartTargetedSentimentDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.StartTargetedSentimentDetectionJobInput, arg2 ...request.Option) (*comprehend.StartTargetedSentimentDetectionJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartTargetedSentimentDetectionJobWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.StartTargetedSentimentDetectionJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartTargetedSentimentDetectionJobWithContext indicates an expected call of StartTargetedSentimentDetectionJobWithContext
+func (mr *MockComprehendAPIMockRecorder) StartTargetedSentimentDetectionJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTargetedSentimentDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).StartTargetedSentimentDetectionJobWithContext), varargs...)
+}
+
 // StartTopicsDetectionJob mocks base method
 func (m *MockComprehendAPI) StartTopicsDetectionJob(arg0 *comprehend.StartTopicsDetectionJobInput) (*comprehend.StartTopicsDetectionJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -3496,6 +3679,56 @@ func (mr *MockComprehendAPIMockRecorder) StopSentimentDetectionJobWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSentimentDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).StopSentimentDetectionJobWithContext), varargs...)
+}
+
+// StopTargetedSentimentDetectionJob mocks base method
+func (m *MockComprehendAPI) StopTargetedSentimentDetectionJob(arg0 *comprehend.StopTargetedSentimentDetectionJobInput) (*comprehend.StopTargetedSentimentDetectionJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopTargetedSentimentDetectionJob", arg0)
+	ret0, _ := ret[0].(*comprehend.StopTargetedSentimentDetectionJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopTargetedSentimentDetectionJob indicates an expected call of StopTargetedSentimentDetectionJob
+func (mr *MockComprehendAPIMockRecorder) StopTargetedSentimentDetectionJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopTargetedSentimentDetectionJob", reflect.TypeOf((*MockComprehendAPI)(nil).StopTargetedSentimentDetectionJob), arg0)
+}
+
+// StopTargetedSentimentDetectionJobRequest mocks base method
+func (m *MockComprehendAPI) StopTargetedSentimentDetectionJobRequest(arg0 *comprehend.StopTargetedSentimentDetectionJobInput) (*request.Request, *comprehend.StopTargetedSentimentDetectionJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopTargetedSentimentDetectionJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.StopTargetedSentimentDetectionJobOutput)
+	return ret0, ret1
+}
+
+// StopTargetedSentimentDetectionJobRequest indicates an expected call of StopTargetedSentimentDetectionJobRequest
+func (mr *MockComprehendAPIMockRecorder) StopTargetedSentimentDetectionJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopTargetedSentimentDetectionJobRequest", reflect.TypeOf((*MockComprehendAPI)(nil).StopTargetedSentimentDetectionJobRequest), arg0)
+}
+
+// StopTargetedSentimentDetectionJobWithContext mocks base method
+func (m *MockComprehendAPI) StopTargetedSentimentDetectionJobWithContext(arg0 context.Context, arg1 *comprehend.StopTargetedSentimentDetectionJobInput, arg2 ...request.Option) (*comprehend.StopTargetedSentimentDetectionJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopTargetedSentimentDetectionJobWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.StopTargetedSentimentDetectionJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopTargetedSentimentDetectionJobWithContext indicates an expected call of StopTargetedSentimentDetectionJobWithContext
+func (mr *MockComprehendAPIMockRecorder) StopTargetedSentimentDetectionJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopTargetedSentimentDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).StopTargetedSentimentDetectionJobWithContext), varargs...)
 }
 
 // StopTrainingDocumentClassifier mocks base method
