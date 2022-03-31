@@ -235,6 +235,56 @@ func (mr *MockComprehendMedicalAPIMockRecorder) DescribeRxNormInferenceJobWithCo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRxNormInferenceJobWithContext", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).DescribeRxNormInferenceJobWithContext), varargs...)
 }
 
+// DescribeSNOMEDCTInferenceJob mocks base method
+func (m *MockComprehendMedicalAPI) DescribeSNOMEDCTInferenceJob(arg0 *comprehendmedical.DescribeSNOMEDCTInferenceJobInput) (*comprehendmedical.DescribeSNOMEDCTInferenceJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSNOMEDCTInferenceJob", arg0)
+	ret0, _ := ret[0].(*comprehendmedical.DescribeSNOMEDCTInferenceJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSNOMEDCTInferenceJob indicates an expected call of DescribeSNOMEDCTInferenceJob
+func (mr *MockComprehendMedicalAPIMockRecorder) DescribeSNOMEDCTInferenceJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSNOMEDCTInferenceJob", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).DescribeSNOMEDCTInferenceJob), arg0)
+}
+
+// DescribeSNOMEDCTInferenceJobRequest mocks base method
+func (m *MockComprehendMedicalAPI) DescribeSNOMEDCTInferenceJobRequest(arg0 *comprehendmedical.DescribeSNOMEDCTInferenceJobInput) (*request.Request, *comprehendmedical.DescribeSNOMEDCTInferenceJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSNOMEDCTInferenceJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehendmedical.DescribeSNOMEDCTInferenceJobOutput)
+	return ret0, ret1
+}
+
+// DescribeSNOMEDCTInferenceJobRequest indicates an expected call of DescribeSNOMEDCTInferenceJobRequest
+func (mr *MockComprehendMedicalAPIMockRecorder) DescribeSNOMEDCTInferenceJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSNOMEDCTInferenceJobRequest", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).DescribeSNOMEDCTInferenceJobRequest), arg0)
+}
+
+// DescribeSNOMEDCTInferenceJobWithContext mocks base method
+func (m *MockComprehendMedicalAPI) DescribeSNOMEDCTInferenceJobWithContext(arg0 context.Context, arg1 *comprehendmedical.DescribeSNOMEDCTInferenceJobInput, arg2 ...request.Option) (*comprehendmedical.DescribeSNOMEDCTInferenceJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSNOMEDCTInferenceJobWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehendmedical.DescribeSNOMEDCTInferenceJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSNOMEDCTInferenceJobWithContext indicates an expected call of DescribeSNOMEDCTInferenceJobWithContext
+func (mr *MockComprehendMedicalAPIMockRecorder) DescribeSNOMEDCTInferenceJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSNOMEDCTInferenceJobWithContext", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).DescribeSNOMEDCTInferenceJobWithContext), varargs...)
+}
+
 // DetectEntities mocks base method
 func (m *MockComprehendMedicalAPI) DetectEntities(arg0 *comprehendmedical.DetectEntitiesInput) (*comprehendmedical.DetectEntitiesOutput, error) {
 	m.ctrl.T.Helper()
@@ -485,6 +535,56 @@ func (mr *MockComprehendMedicalAPIMockRecorder) InferRxNormWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InferRxNormWithContext", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).InferRxNormWithContext), varargs...)
 }
 
+// InferSNOMEDCT mocks base method
+func (m *MockComprehendMedicalAPI) InferSNOMEDCT(arg0 *comprehendmedical.InferSNOMEDCTInput) (*comprehendmedical.InferSNOMEDCTOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "InferSNOMEDCT", arg0)
+	ret0, _ := ret[0].(*comprehendmedical.InferSNOMEDCTOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// InferSNOMEDCT indicates an expected call of InferSNOMEDCT
+func (mr *MockComprehendMedicalAPIMockRecorder) InferSNOMEDCT(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InferSNOMEDCT", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).InferSNOMEDCT), arg0)
+}
+
+// InferSNOMEDCTRequest mocks base method
+func (m *MockComprehendMedicalAPI) InferSNOMEDCTRequest(arg0 *comprehendmedical.InferSNOMEDCTInput) (*request.Request, *comprehendmedical.InferSNOMEDCTOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "InferSNOMEDCTRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehendmedical.InferSNOMEDCTOutput)
+	return ret0, ret1
+}
+
+// InferSNOMEDCTRequest indicates an expected call of InferSNOMEDCTRequest
+func (mr *MockComprehendMedicalAPIMockRecorder) InferSNOMEDCTRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InferSNOMEDCTRequest", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).InferSNOMEDCTRequest), arg0)
+}
+
+// InferSNOMEDCTWithContext mocks base method
+func (m *MockComprehendMedicalAPI) InferSNOMEDCTWithContext(arg0 context.Context, arg1 *comprehendmedical.InferSNOMEDCTInput, arg2 ...request.Option) (*comprehendmedical.InferSNOMEDCTOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "InferSNOMEDCTWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehendmedical.InferSNOMEDCTOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// InferSNOMEDCTWithContext indicates an expected call of InferSNOMEDCTWithContext
+func (mr *MockComprehendMedicalAPIMockRecorder) InferSNOMEDCTWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InferSNOMEDCTWithContext", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).InferSNOMEDCTWithContext), varargs...)
+}
+
 // ListEntitiesDetectionV2Jobs mocks base method
 func (m *MockComprehendMedicalAPI) ListEntitiesDetectionV2Jobs(arg0 *comprehendmedical.ListEntitiesDetectionV2JobsInput) (*comprehendmedical.ListEntitiesDetectionV2JobsOutput, error) {
 	m.ctrl.T.Helper()
@@ -683,6 +783,56 @@ func (mr *MockComprehendMedicalAPIMockRecorder) ListRxNormInferenceJobsWithConte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRxNormInferenceJobsWithContext", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).ListRxNormInferenceJobsWithContext), varargs...)
+}
+
+// ListSNOMEDCTInferenceJobs mocks base method
+func (m *MockComprehendMedicalAPI) ListSNOMEDCTInferenceJobs(arg0 *comprehendmedical.ListSNOMEDCTInferenceJobsInput) (*comprehendmedical.ListSNOMEDCTInferenceJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSNOMEDCTInferenceJobs", arg0)
+	ret0, _ := ret[0].(*comprehendmedical.ListSNOMEDCTInferenceJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSNOMEDCTInferenceJobs indicates an expected call of ListSNOMEDCTInferenceJobs
+func (mr *MockComprehendMedicalAPIMockRecorder) ListSNOMEDCTInferenceJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSNOMEDCTInferenceJobs", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).ListSNOMEDCTInferenceJobs), arg0)
+}
+
+// ListSNOMEDCTInferenceJobsRequest mocks base method
+func (m *MockComprehendMedicalAPI) ListSNOMEDCTInferenceJobsRequest(arg0 *comprehendmedical.ListSNOMEDCTInferenceJobsInput) (*request.Request, *comprehendmedical.ListSNOMEDCTInferenceJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSNOMEDCTInferenceJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehendmedical.ListSNOMEDCTInferenceJobsOutput)
+	return ret0, ret1
+}
+
+// ListSNOMEDCTInferenceJobsRequest indicates an expected call of ListSNOMEDCTInferenceJobsRequest
+func (mr *MockComprehendMedicalAPIMockRecorder) ListSNOMEDCTInferenceJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSNOMEDCTInferenceJobsRequest", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).ListSNOMEDCTInferenceJobsRequest), arg0)
+}
+
+// ListSNOMEDCTInferenceJobsWithContext mocks base method
+func (m *MockComprehendMedicalAPI) ListSNOMEDCTInferenceJobsWithContext(arg0 context.Context, arg1 *comprehendmedical.ListSNOMEDCTInferenceJobsInput, arg2 ...request.Option) (*comprehendmedical.ListSNOMEDCTInferenceJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSNOMEDCTInferenceJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehendmedical.ListSNOMEDCTInferenceJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSNOMEDCTInferenceJobsWithContext indicates an expected call of ListSNOMEDCTInferenceJobsWithContext
+func (mr *MockComprehendMedicalAPIMockRecorder) ListSNOMEDCTInferenceJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSNOMEDCTInferenceJobsWithContext", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).ListSNOMEDCTInferenceJobsWithContext), varargs...)
 }
 
 // StartEntitiesDetectionV2Job mocks base method
@@ -885,6 +1035,56 @@ func (mr *MockComprehendMedicalAPIMockRecorder) StartRxNormInferenceJobWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartRxNormInferenceJobWithContext", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).StartRxNormInferenceJobWithContext), varargs...)
 }
 
+// StartSNOMEDCTInferenceJob mocks base method
+func (m *MockComprehendMedicalAPI) StartSNOMEDCTInferenceJob(arg0 *comprehendmedical.StartSNOMEDCTInferenceJobInput) (*comprehendmedical.StartSNOMEDCTInferenceJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSNOMEDCTInferenceJob", arg0)
+	ret0, _ := ret[0].(*comprehendmedical.StartSNOMEDCTInferenceJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSNOMEDCTInferenceJob indicates an expected call of StartSNOMEDCTInferenceJob
+func (mr *MockComprehendMedicalAPIMockRecorder) StartSNOMEDCTInferenceJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSNOMEDCTInferenceJob", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).StartSNOMEDCTInferenceJob), arg0)
+}
+
+// StartSNOMEDCTInferenceJobRequest mocks base method
+func (m *MockComprehendMedicalAPI) StartSNOMEDCTInferenceJobRequest(arg0 *comprehendmedical.StartSNOMEDCTInferenceJobInput) (*request.Request, *comprehendmedical.StartSNOMEDCTInferenceJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSNOMEDCTInferenceJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehendmedical.StartSNOMEDCTInferenceJobOutput)
+	return ret0, ret1
+}
+
+// StartSNOMEDCTInferenceJobRequest indicates an expected call of StartSNOMEDCTInferenceJobRequest
+func (mr *MockComprehendMedicalAPIMockRecorder) StartSNOMEDCTInferenceJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSNOMEDCTInferenceJobRequest", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).StartSNOMEDCTInferenceJobRequest), arg0)
+}
+
+// StartSNOMEDCTInferenceJobWithContext mocks base method
+func (m *MockComprehendMedicalAPI) StartSNOMEDCTInferenceJobWithContext(arg0 context.Context, arg1 *comprehendmedical.StartSNOMEDCTInferenceJobInput, arg2 ...request.Option) (*comprehendmedical.StartSNOMEDCTInferenceJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartSNOMEDCTInferenceJobWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehendmedical.StartSNOMEDCTInferenceJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSNOMEDCTInferenceJobWithContext indicates an expected call of StartSNOMEDCTInferenceJobWithContext
+func (mr *MockComprehendMedicalAPIMockRecorder) StartSNOMEDCTInferenceJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSNOMEDCTInferenceJobWithContext", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).StartSNOMEDCTInferenceJobWithContext), varargs...)
+}
+
 // StopEntitiesDetectionV2Job mocks base method
 func (m *MockComprehendMedicalAPI) StopEntitiesDetectionV2Job(arg0 *comprehendmedical.StopEntitiesDetectionV2JobInput) (*comprehendmedical.StopEntitiesDetectionV2JobOutput, error) {
 	m.ctrl.T.Helper()
@@ -1083,4 +1283,54 @@ func (mr *MockComprehendMedicalAPIMockRecorder) StopRxNormInferenceJobWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopRxNormInferenceJobWithContext", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).StopRxNormInferenceJobWithContext), varargs...)
+}
+
+// StopSNOMEDCTInferenceJob mocks base method
+func (m *MockComprehendMedicalAPI) StopSNOMEDCTInferenceJob(arg0 *comprehendmedical.StopSNOMEDCTInferenceJobInput) (*comprehendmedical.StopSNOMEDCTInferenceJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopSNOMEDCTInferenceJob", arg0)
+	ret0, _ := ret[0].(*comprehendmedical.StopSNOMEDCTInferenceJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopSNOMEDCTInferenceJob indicates an expected call of StopSNOMEDCTInferenceJob
+func (mr *MockComprehendMedicalAPIMockRecorder) StopSNOMEDCTInferenceJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSNOMEDCTInferenceJob", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).StopSNOMEDCTInferenceJob), arg0)
+}
+
+// StopSNOMEDCTInferenceJobRequest mocks base method
+func (m *MockComprehendMedicalAPI) StopSNOMEDCTInferenceJobRequest(arg0 *comprehendmedical.StopSNOMEDCTInferenceJobInput) (*request.Request, *comprehendmedical.StopSNOMEDCTInferenceJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopSNOMEDCTInferenceJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehendmedical.StopSNOMEDCTInferenceJobOutput)
+	return ret0, ret1
+}
+
+// StopSNOMEDCTInferenceJobRequest indicates an expected call of StopSNOMEDCTInferenceJobRequest
+func (mr *MockComprehendMedicalAPIMockRecorder) StopSNOMEDCTInferenceJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSNOMEDCTInferenceJobRequest", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).StopSNOMEDCTInferenceJobRequest), arg0)
+}
+
+// StopSNOMEDCTInferenceJobWithContext mocks base method
+func (m *MockComprehendMedicalAPI) StopSNOMEDCTInferenceJobWithContext(arg0 context.Context, arg1 *comprehendmedical.StopSNOMEDCTInferenceJobInput, arg2 ...request.Option) (*comprehendmedical.StopSNOMEDCTInferenceJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopSNOMEDCTInferenceJobWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehendmedical.StopSNOMEDCTInferenceJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopSNOMEDCTInferenceJobWithContext indicates an expected call of StopSNOMEDCTInferenceJobWithContext
+func (mr *MockComprehendMedicalAPIMockRecorder) StopSNOMEDCTInferenceJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSNOMEDCTInferenceJobWithContext", reflect.TypeOf((*MockComprehendMedicalAPI)(nil).StopSNOMEDCTInferenceJobWithContext), varargs...)
 }

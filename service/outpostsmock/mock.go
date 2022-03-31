@@ -1117,6 +1117,56 @@ func (mr *MockOutpostsAPIMockRecorder) UntagResourceWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
+// UpdateOutpost mocks base method
+func (m *MockOutpostsAPI) UpdateOutpost(arg0 *outposts.UpdateOutpostInput) (*outposts.UpdateOutpostOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateOutpost", arg0)
+	ret0, _ := ret[0].(*outposts.UpdateOutpostOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateOutpost indicates an expected call of UpdateOutpost
+func (mr *MockOutpostsAPIMockRecorder) UpdateOutpost(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOutpost", reflect.TypeOf((*MockOutpostsAPI)(nil).UpdateOutpost), arg0)
+}
+
+// UpdateOutpostRequest mocks base method
+func (m *MockOutpostsAPI) UpdateOutpostRequest(arg0 *outposts.UpdateOutpostInput) (*request.Request, *outposts.UpdateOutpostOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateOutpostRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.UpdateOutpostOutput)
+	return ret0, ret1
+}
+
+// UpdateOutpostRequest indicates an expected call of UpdateOutpostRequest
+func (mr *MockOutpostsAPIMockRecorder) UpdateOutpostRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOutpostRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).UpdateOutpostRequest), arg0)
+}
+
+// UpdateOutpostWithContext mocks base method
+func (m *MockOutpostsAPI) UpdateOutpostWithContext(arg0 context.Context, arg1 *outposts.UpdateOutpostInput, arg2 ...request.Option) (*outposts.UpdateOutpostOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateOutpostWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.UpdateOutpostOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateOutpostWithContext indicates an expected call of UpdateOutpostWithContext
+func (mr *MockOutpostsAPIMockRecorder) UpdateOutpostWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOutpostWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).UpdateOutpostWithContext), varargs...)
+}
+
 // UpdateSite mocks base method
 func (m *MockOutpostsAPI) UpdateSite(arg0 *outposts.UpdateSiteInput) (*outposts.UpdateSiteOutput, error) {
 	m.ctrl.T.Helper()

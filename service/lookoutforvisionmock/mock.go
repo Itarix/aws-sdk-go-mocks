@@ -400,6 +400,56 @@ func (mr *MockLookoutForVisionAPIMockRecorder) DescribeModel(arg0 interface{}) *
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeModel", reflect.TypeOf((*MockLookoutForVisionAPI)(nil).DescribeModel), arg0)
 }
 
+// DescribeModelPackagingJob mocks base method
+func (m *MockLookoutForVisionAPI) DescribeModelPackagingJob(arg0 *lookoutforvision.DescribeModelPackagingJobInput) (*lookoutforvision.DescribeModelPackagingJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeModelPackagingJob", arg0)
+	ret0, _ := ret[0].(*lookoutforvision.DescribeModelPackagingJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeModelPackagingJob indicates an expected call of DescribeModelPackagingJob
+func (mr *MockLookoutForVisionAPIMockRecorder) DescribeModelPackagingJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeModelPackagingJob", reflect.TypeOf((*MockLookoutForVisionAPI)(nil).DescribeModelPackagingJob), arg0)
+}
+
+// DescribeModelPackagingJobRequest mocks base method
+func (m *MockLookoutForVisionAPI) DescribeModelPackagingJobRequest(arg0 *lookoutforvision.DescribeModelPackagingJobInput) (*request.Request, *lookoutforvision.DescribeModelPackagingJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeModelPackagingJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutforvision.DescribeModelPackagingJobOutput)
+	return ret0, ret1
+}
+
+// DescribeModelPackagingJobRequest indicates an expected call of DescribeModelPackagingJobRequest
+func (mr *MockLookoutForVisionAPIMockRecorder) DescribeModelPackagingJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeModelPackagingJobRequest", reflect.TypeOf((*MockLookoutForVisionAPI)(nil).DescribeModelPackagingJobRequest), arg0)
+}
+
+// DescribeModelPackagingJobWithContext mocks base method
+func (m *MockLookoutForVisionAPI) DescribeModelPackagingJobWithContext(arg0 context.Context, arg1 *lookoutforvision.DescribeModelPackagingJobInput, arg2 ...request.Option) (*lookoutforvision.DescribeModelPackagingJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeModelPackagingJobWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutforvision.DescribeModelPackagingJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeModelPackagingJobWithContext indicates an expected call of DescribeModelPackagingJobWithContext
+func (mr *MockLookoutForVisionAPIMockRecorder) DescribeModelPackagingJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeModelPackagingJobWithContext", reflect.TypeOf((*MockLookoutForVisionAPI)(nil).DescribeModelPackagingJobWithContext), varargs...)
+}
+
 // DescribeModelRequest mocks base method
 func (m *MockLookoutForVisionAPI) DescribeModelRequest(arg0 *lookoutforvision.DescribeModelInput) (*request.Request, *lookoutforvision.DescribeModelOutput) {
 	m.ctrl.T.Helper()
@@ -616,6 +666,89 @@ func (mr *MockLookoutForVisionAPIMockRecorder) ListDatasetEntriesWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetEntriesWithContext", reflect.TypeOf((*MockLookoutForVisionAPI)(nil).ListDatasetEntriesWithContext), varargs...)
+}
+
+// ListModelPackagingJobs mocks base method
+func (m *MockLookoutForVisionAPI) ListModelPackagingJobs(arg0 *lookoutforvision.ListModelPackagingJobsInput) (*lookoutforvision.ListModelPackagingJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListModelPackagingJobs", arg0)
+	ret0, _ := ret[0].(*lookoutforvision.ListModelPackagingJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListModelPackagingJobs indicates an expected call of ListModelPackagingJobs
+func (mr *MockLookoutForVisionAPIMockRecorder) ListModelPackagingJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelPackagingJobs", reflect.TypeOf((*MockLookoutForVisionAPI)(nil).ListModelPackagingJobs), arg0)
+}
+
+// ListModelPackagingJobsPages mocks base method
+func (m *MockLookoutForVisionAPI) ListModelPackagingJobsPages(arg0 *lookoutforvision.ListModelPackagingJobsInput, arg1 func(*lookoutforvision.ListModelPackagingJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListModelPackagingJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListModelPackagingJobsPages indicates an expected call of ListModelPackagingJobsPages
+func (mr *MockLookoutForVisionAPIMockRecorder) ListModelPackagingJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelPackagingJobsPages", reflect.TypeOf((*MockLookoutForVisionAPI)(nil).ListModelPackagingJobsPages), arg0, arg1)
+}
+
+// ListModelPackagingJobsPagesWithContext mocks base method
+func (m *MockLookoutForVisionAPI) ListModelPackagingJobsPagesWithContext(arg0 context.Context, arg1 *lookoutforvision.ListModelPackagingJobsInput, arg2 func(*lookoutforvision.ListModelPackagingJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListModelPackagingJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListModelPackagingJobsPagesWithContext indicates an expected call of ListModelPackagingJobsPagesWithContext
+func (mr *MockLookoutForVisionAPIMockRecorder) ListModelPackagingJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelPackagingJobsPagesWithContext", reflect.TypeOf((*MockLookoutForVisionAPI)(nil).ListModelPackagingJobsPagesWithContext), varargs...)
+}
+
+// ListModelPackagingJobsRequest mocks base method
+func (m *MockLookoutForVisionAPI) ListModelPackagingJobsRequest(arg0 *lookoutforvision.ListModelPackagingJobsInput) (*request.Request, *lookoutforvision.ListModelPackagingJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListModelPackagingJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutforvision.ListModelPackagingJobsOutput)
+	return ret0, ret1
+}
+
+// ListModelPackagingJobsRequest indicates an expected call of ListModelPackagingJobsRequest
+func (mr *MockLookoutForVisionAPIMockRecorder) ListModelPackagingJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelPackagingJobsRequest", reflect.TypeOf((*MockLookoutForVisionAPI)(nil).ListModelPackagingJobsRequest), arg0)
+}
+
+// ListModelPackagingJobsWithContext mocks base method
+func (m *MockLookoutForVisionAPI) ListModelPackagingJobsWithContext(arg0 context.Context, arg1 *lookoutforvision.ListModelPackagingJobsInput, arg2 ...request.Option) (*lookoutforvision.ListModelPackagingJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListModelPackagingJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutforvision.ListModelPackagingJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListModelPackagingJobsWithContext indicates an expected call of ListModelPackagingJobsWithContext
+func (mr *MockLookoutForVisionAPIMockRecorder) ListModelPackagingJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelPackagingJobsWithContext", reflect.TypeOf((*MockLookoutForVisionAPI)(nil).ListModelPackagingJobsWithContext), varargs...)
 }
 
 // ListModels mocks base method
@@ -847,6 +980,56 @@ func (m *MockLookoutForVisionAPI) StartModel(arg0 *lookoutforvision.StartModelIn
 func (mr *MockLookoutForVisionAPIMockRecorder) StartModel(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartModel", reflect.TypeOf((*MockLookoutForVisionAPI)(nil).StartModel), arg0)
+}
+
+// StartModelPackagingJob mocks base method
+func (m *MockLookoutForVisionAPI) StartModelPackagingJob(arg0 *lookoutforvision.StartModelPackagingJobInput) (*lookoutforvision.StartModelPackagingJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartModelPackagingJob", arg0)
+	ret0, _ := ret[0].(*lookoutforvision.StartModelPackagingJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartModelPackagingJob indicates an expected call of StartModelPackagingJob
+func (mr *MockLookoutForVisionAPIMockRecorder) StartModelPackagingJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartModelPackagingJob", reflect.TypeOf((*MockLookoutForVisionAPI)(nil).StartModelPackagingJob), arg0)
+}
+
+// StartModelPackagingJobRequest mocks base method
+func (m *MockLookoutForVisionAPI) StartModelPackagingJobRequest(arg0 *lookoutforvision.StartModelPackagingJobInput) (*request.Request, *lookoutforvision.StartModelPackagingJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartModelPackagingJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutforvision.StartModelPackagingJobOutput)
+	return ret0, ret1
+}
+
+// StartModelPackagingJobRequest indicates an expected call of StartModelPackagingJobRequest
+func (mr *MockLookoutForVisionAPIMockRecorder) StartModelPackagingJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartModelPackagingJobRequest", reflect.TypeOf((*MockLookoutForVisionAPI)(nil).StartModelPackagingJobRequest), arg0)
+}
+
+// StartModelPackagingJobWithContext mocks base method
+func (m *MockLookoutForVisionAPI) StartModelPackagingJobWithContext(arg0 context.Context, arg1 *lookoutforvision.StartModelPackagingJobInput, arg2 ...request.Option) (*lookoutforvision.StartModelPackagingJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartModelPackagingJobWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutforvision.StartModelPackagingJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartModelPackagingJobWithContext indicates an expected call of StartModelPackagingJobWithContext
+func (mr *MockLookoutForVisionAPIMockRecorder) StartModelPackagingJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartModelPackagingJobWithContext", reflect.TypeOf((*MockLookoutForVisionAPI)(nil).StartModelPackagingJobWithContext), varargs...)
 }
 
 // StartModelRequest mocks base method
