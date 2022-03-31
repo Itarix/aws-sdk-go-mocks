@@ -835,6 +835,56 @@ func (mr *MockLexModelsV2APIMockRecorder) DeleteBotWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBotWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).DeleteBotWithContext), varargs...)
 }
 
+// DeleteCustomVocabulary mocks base method
+func (m *MockLexModelsV2API) DeleteCustomVocabulary(arg0 *lexmodelsv2.DeleteCustomVocabularyInput) (*lexmodelsv2.DeleteCustomVocabularyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCustomVocabulary", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.DeleteCustomVocabularyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCustomVocabulary indicates an expected call of DeleteCustomVocabulary
+func (mr *MockLexModelsV2APIMockRecorder) DeleteCustomVocabulary(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomVocabulary", reflect.TypeOf((*MockLexModelsV2API)(nil).DeleteCustomVocabulary), arg0)
+}
+
+// DeleteCustomVocabularyRequest mocks base method
+func (m *MockLexModelsV2API) DeleteCustomVocabularyRequest(arg0 *lexmodelsv2.DeleteCustomVocabularyInput) (*request.Request, *lexmodelsv2.DeleteCustomVocabularyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCustomVocabularyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.DeleteCustomVocabularyOutput)
+	return ret0, ret1
+}
+
+// DeleteCustomVocabularyRequest indicates an expected call of DeleteCustomVocabularyRequest
+func (mr *MockLexModelsV2APIMockRecorder) DeleteCustomVocabularyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomVocabularyRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).DeleteCustomVocabularyRequest), arg0)
+}
+
+// DeleteCustomVocabularyWithContext mocks base method
+func (m *MockLexModelsV2API) DeleteCustomVocabularyWithContext(arg0 context.Context, arg1 *lexmodelsv2.DeleteCustomVocabularyInput, arg2 ...request.Option) (*lexmodelsv2.DeleteCustomVocabularyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCustomVocabularyWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.DeleteCustomVocabularyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCustomVocabularyWithContext indicates an expected call of DeleteCustomVocabularyWithContext
+func (mr *MockLexModelsV2APIMockRecorder) DeleteCustomVocabularyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomVocabularyWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).DeleteCustomVocabularyWithContext), varargs...)
+}
+
 // DeleteExport mocks base method
 func (m *MockLexModelsV2API) DeleteExport(arg0 *lexmodelsv2.DeleteExportInput) (*lexmodelsv2.DeleteExportOutput, error) {
 	m.ctrl.T.Helper()
@@ -1483,6 +1533,56 @@ func (mr *MockLexModelsV2APIMockRecorder) DescribeBotWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBotWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).DescribeBotWithContext), varargs...)
+}
+
+// DescribeCustomVocabularyMetadata mocks base method
+func (m *MockLexModelsV2API) DescribeCustomVocabularyMetadata(arg0 *lexmodelsv2.DescribeCustomVocabularyMetadataInput) (*lexmodelsv2.DescribeCustomVocabularyMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCustomVocabularyMetadata", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.DescribeCustomVocabularyMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCustomVocabularyMetadata indicates an expected call of DescribeCustomVocabularyMetadata
+func (mr *MockLexModelsV2APIMockRecorder) DescribeCustomVocabularyMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomVocabularyMetadata", reflect.TypeOf((*MockLexModelsV2API)(nil).DescribeCustomVocabularyMetadata), arg0)
+}
+
+// DescribeCustomVocabularyMetadataRequest mocks base method
+func (m *MockLexModelsV2API) DescribeCustomVocabularyMetadataRequest(arg0 *lexmodelsv2.DescribeCustomVocabularyMetadataInput) (*request.Request, *lexmodelsv2.DescribeCustomVocabularyMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCustomVocabularyMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.DescribeCustomVocabularyMetadataOutput)
+	return ret0, ret1
+}
+
+// DescribeCustomVocabularyMetadataRequest indicates an expected call of DescribeCustomVocabularyMetadataRequest
+func (mr *MockLexModelsV2APIMockRecorder) DescribeCustomVocabularyMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomVocabularyMetadataRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).DescribeCustomVocabularyMetadataRequest), arg0)
+}
+
+// DescribeCustomVocabularyMetadataWithContext mocks base method
+func (m *MockLexModelsV2API) DescribeCustomVocabularyMetadataWithContext(arg0 context.Context, arg1 *lexmodelsv2.DescribeCustomVocabularyMetadataInput, arg2 ...request.Option) (*lexmodelsv2.DescribeCustomVocabularyMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCustomVocabularyMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.DescribeCustomVocabularyMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCustomVocabularyMetadataWithContext indicates an expected call of DescribeCustomVocabularyMetadataWithContext
+func (mr *MockLexModelsV2APIMockRecorder) DescribeCustomVocabularyMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomVocabularyMetadataWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).DescribeCustomVocabularyMetadataWithContext), varargs...)
 }
 
 // DescribeExport mocks base method
