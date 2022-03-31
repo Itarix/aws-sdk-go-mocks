@@ -1200,6 +1200,56 @@ func (mr *MockDataExchangeAPIMockRecorder) ListTagsForResourceWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockDataExchangeAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// RevokeRevision mocks base method
+func (m *MockDataExchangeAPI) RevokeRevision(arg0 *dataexchange.RevokeRevisionInput) (*dataexchange.RevokeRevisionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RevokeRevision", arg0)
+	ret0, _ := ret[0].(*dataexchange.RevokeRevisionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RevokeRevision indicates an expected call of RevokeRevision
+func (mr *MockDataExchangeAPIMockRecorder) RevokeRevision(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeRevision", reflect.TypeOf((*MockDataExchangeAPI)(nil).RevokeRevision), arg0)
+}
+
+// RevokeRevisionRequest mocks base method
+func (m *MockDataExchangeAPI) RevokeRevisionRequest(arg0 *dataexchange.RevokeRevisionInput) (*request.Request, *dataexchange.RevokeRevisionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RevokeRevisionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*dataexchange.RevokeRevisionOutput)
+	return ret0, ret1
+}
+
+// RevokeRevisionRequest indicates an expected call of RevokeRevisionRequest
+func (mr *MockDataExchangeAPIMockRecorder) RevokeRevisionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeRevisionRequest", reflect.TypeOf((*MockDataExchangeAPI)(nil).RevokeRevisionRequest), arg0)
+}
+
+// RevokeRevisionWithContext mocks base method
+func (m *MockDataExchangeAPI) RevokeRevisionWithContext(arg0 context.Context, arg1 *dataexchange.RevokeRevisionInput, arg2 ...request.Option) (*dataexchange.RevokeRevisionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RevokeRevisionWithContext", varargs...)
+	ret0, _ := ret[0].(*dataexchange.RevokeRevisionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RevokeRevisionWithContext indicates an expected call of RevokeRevisionWithContext
+func (mr *MockDataExchangeAPIMockRecorder) RevokeRevisionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeRevisionWithContext", reflect.TypeOf((*MockDataExchangeAPI)(nil).RevokeRevisionWithContext), varargs...)
+}
+
 // SendApiAsset mocks base method
 func (m *MockDataExchangeAPI) SendApiAsset(arg0 *dataexchange.SendApiAssetInput) (*dataexchange.SendApiAssetOutput, error) {
 	m.ctrl.T.Helper()
