@@ -5934,3 +5934,53 @@ func (mr *MockPinpointAPIMockRecorder) UpdateVoiceTemplateWithContext(arg0, arg1
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVoiceTemplateWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).UpdateVoiceTemplateWithContext), varargs...)
 }
+
+// VerifyOTPMessage mocks base method
+func (m *MockPinpointAPI) VerifyOTPMessage(arg0 *pinpoint.VerifyOTPMessageInput) (*pinpoint.VerifyOTPMessageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "VerifyOTPMessage", arg0)
+	ret0, _ := ret[0].(*pinpoint.VerifyOTPMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// VerifyOTPMessage indicates an expected call of VerifyOTPMessage
+func (mr *MockPinpointAPIMockRecorder) VerifyOTPMessage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "VerifyOTPMessage", reflect.TypeOf((*MockPinpointAPI)(nil).VerifyOTPMessage), arg0)
+}
+
+// VerifyOTPMessageRequest mocks base method
+func (m *MockPinpointAPI) VerifyOTPMessageRequest(arg0 *pinpoint.VerifyOTPMessageInput) (*request.Request, *pinpoint.VerifyOTPMessageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "VerifyOTPMessageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pinpoint.VerifyOTPMessageOutput)
+	return ret0, ret1
+}
+
+// VerifyOTPMessageRequest indicates an expected call of VerifyOTPMessageRequest
+func (mr *MockPinpointAPIMockRecorder) VerifyOTPMessageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "VerifyOTPMessageRequest", reflect.TypeOf((*MockPinpointAPI)(nil).VerifyOTPMessageRequest), arg0)
+}
+
+// VerifyOTPMessageWithContext mocks base method
+func (m *MockPinpointAPI) VerifyOTPMessageWithContext(arg0 context.Context, arg1 *pinpoint.VerifyOTPMessageInput, arg2 ...request.Option) (*pinpoint.VerifyOTPMessageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "VerifyOTPMessageWithContext", varargs...)
+	ret0, _ := ret[0].(*pinpoint.VerifyOTPMessageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// VerifyOTPMessageWithContext indicates an expected call of VerifyOTPMessageWithContext
+func (mr *MockPinpointAPIMockRecorder) VerifyOTPMessageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "VerifyOTPMessageWithContext", reflect.TypeOf((*MockPinpointAPI)(nil).VerifyOTPMessageWithContext), varargs...)
+}
