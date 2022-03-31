@@ -3659,6 +3659,56 @@ func (mr *MockConfigServiceAPIMockRecorder) GetConformancePackComplianceSummaryW
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConformancePackComplianceSummaryWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetConformancePackComplianceSummaryWithContext), varargs...)
 }
 
+// GetCustomRulePolicy mocks base method
+func (m *MockConfigServiceAPI) GetCustomRulePolicy(arg0 *configservice.GetCustomRulePolicyInput) (*configservice.GetCustomRulePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCustomRulePolicy", arg0)
+	ret0, _ := ret[0].(*configservice.GetCustomRulePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCustomRulePolicy indicates an expected call of GetCustomRulePolicy
+func (mr *MockConfigServiceAPIMockRecorder) GetCustomRulePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCustomRulePolicy", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetCustomRulePolicy), arg0)
+}
+
+// GetCustomRulePolicyRequest mocks base method
+func (m *MockConfigServiceAPI) GetCustomRulePolicyRequest(arg0 *configservice.GetCustomRulePolicyInput) (*request.Request, *configservice.GetCustomRulePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCustomRulePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.GetCustomRulePolicyOutput)
+	return ret0, ret1
+}
+
+// GetCustomRulePolicyRequest indicates an expected call of GetCustomRulePolicyRequest
+func (mr *MockConfigServiceAPIMockRecorder) GetCustomRulePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCustomRulePolicyRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetCustomRulePolicyRequest), arg0)
+}
+
+// GetCustomRulePolicyWithContext mocks base method
+func (m *MockConfigServiceAPI) GetCustomRulePolicyWithContext(arg0 context.Context, arg1 *configservice.GetCustomRulePolicyInput, arg2 ...request.Option) (*configservice.GetCustomRulePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCustomRulePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.GetCustomRulePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCustomRulePolicyWithContext indicates an expected call of GetCustomRulePolicyWithContext
+func (mr *MockConfigServiceAPIMockRecorder) GetCustomRulePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCustomRulePolicyWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetCustomRulePolicyWithContext), varargs...)
+}
+
 // GetDiscoveredResourceCounts mocks base method
 func (m *MockConfigServiceAPI) GetDiscoveredResourceCounts(arg0 *configservice.GetDiscoveredResourceCountsInput) (*configservice.GetDiscoveredResourceCountsOutput, error) {
 	m.ctrl.T.Helper()
@@ -3906,6 +3956,56 @@ func (mr *MockConfigServiceAPIMockRecorder) GetOrganizationConformancePackDetail
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOrganizationConformancePackDetailedStatusWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetOrganizationConformancePackDetailedStatusWithContext), varargs...)
+}
+
+// GetOrganizationCustomRulePolicy mocks base method
+func (m *MockConfigServiceAPI) GetOrganizationCustomRulePolicy(arg0 *configservice.GetOrganizationCustomRulePolicyInput) (*configservice.GetOrganizationCustomRulePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetOrganizationCustomRulePolicy", arg0)
+	ret0, _ := ret[0].(*configservice.GetOrganizationCustomRulePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetOrganizationCustomRulePolicy indicates an expected call of GetOrganizationCustomRulePolicy
+func (mr *MockConfigServiceAPIMockRecorder) GetOrganizationCustomRulePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOrganizationCustomRulePolicy", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetOrganizationCustomRulePolicy), arg0)
+}
+
+// GetOrganizationCustomRulePolicyRequest mocks base method
+func (m *MockConfigServiceAPI) GetOrganizationCustomRulePolicyRequest(arg0 *configservice.GetOrganizationCustomRulePolicyInput) (*request.Request, *configservice.GetOrganizationCustomRulePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetOrganizationCustomRulePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.GetOrganizationCustomRulePolicyOutput)
+	return ret0, ret1
+}
+
+// GetOrganizationCustomRulePolicyRequest indicates an expected call of GetOrganizationCustomRulePolicyRequest
+func (mr *MockConfigServiceAPIMockRecorder) GetOrganizationCustomRulePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOrganizationCustomRulePolicyRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetOrganizationCustomRulePolicyRequest), arg0)
+}
+
+// GetOrganizationCustomRulePolicyWithContext mocks base method
+func (m *MockConfigServiceAPI) GetOrganizationCustomRulePolicyWithContext(arg0 context.Context, arg1 *configservice.GetOrganizationCustomRulePolicyInput, arg2 ...request.Option) (*configservice.GetOrganizationCustomRulePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetOrganizationCustomRulePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.GetOrganizationCustomRulePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetOrganizationCustomRulePolicyWithContext indicates an expected call of GetOrganizationCustomRulePolicyWithContext
+func (mr *MockConfigServiceAPIMockRecorder) GetOrganizationCustomRulePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOrganizationCustomRulePolicyWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetOrganizationCustomRulePolicyWithContext), varargs...)
 }
 
 // GetResourceConfigHistory mocks base method
