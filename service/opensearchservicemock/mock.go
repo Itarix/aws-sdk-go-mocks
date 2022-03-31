@@ -683,6 +683,56 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeDomainAutoTunesWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainAutoTunesWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeDomainAutoTunesWithContext), varargs...)
 }
 
+// DescribeDomainChangeProgress mocks base method
+func (m *MockOpenSearchServiceAPI) DescribeDomainChangeProgress(arg0 *opensearchservice.DescribeDomainChangeProgressInput) (*opensearchservice.DescribeDomainChangeProgressOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDomainChangeProgress", arg0)
+	ret0, _ := ret[0].(*opensearchservice.DescribeDomainChangeProgressOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDomainChangeProgress indicates an expected call of DescribeDomainChangeProgress
+func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeDomainChangeProgress(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainChangeProgress", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeDomainChangeProgress), arg0)
+}
+
+// DescribeDomainChangeProgressRequest mocks base method
+func (m *MockOpenSearchServiceAPI) DescribeDomainChangeProgressRequest(arg0 *opensearchservice.DescribeDomainChangeProgressInput) (*request.Request, *opensearchservice.DescribeDomainChangeProgressOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDomainChangeProgressRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.DescribeDomainChangeProgressOutput)
+	return ret0, ret1
+}
+
+// DescribeDomainChangeProgressRequest indicates an expected call of DescribeDomainChangeProgressRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeDomainChangeProgressRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainChangeProgressRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeDomainChangeProgressRequest), arg0)
+}
+
+// DescribeDomainChangeProgressWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) DescribeDomainChangeProgressWithContext(arg0 context.Context, arg1 *opensearchservice.DescribeDomainChangeProgressInput, arg2 ...request.Option) (*opensearchservice.DescribeDomainChangeProgressOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDomainChangeProgressWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.DescribeDomainChangeProgressOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDomainChangeProgressWithContext indicates an expected call of DescribeDomainChangeProgressWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeDomainChangeProgressWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainChangeProgressWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeDomainChangeProgressWithContext), varargs...)
+}
+
 // DescribeDomainConfig mocks base method
 func (m *MockOpenSearchServiceAPI) DescribeDomainConfig(arg0 *opensearchservice.DescribeDomainConfigInput) (*opensearchservice.DescribeDomainConfigOutput, error) {
 	m.ctrl.T.Helper()
