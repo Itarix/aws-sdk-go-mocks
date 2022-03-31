@@ -185,6 +185,56 @@ func (mr *MockEFSAPIMockRecorder) CreateMountTargetWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMountTargetWithContext", reflect.TypeOf((*MockEFSAPI)(nil).CreateMountTargetWithContext), varargs...)
 }
 
+// CreateReplicationConfiguration mocks base method
+func (m *MockEFSAPI) CreateReplicationConfiguration(arg0 *efs.CreateReplicationConfigurationInput) (*efs.CreateReplicationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateReplicationConfiguration", arg0)
+	ret0, _ := ret[0].(*efs.CreateReplicationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateReplicationConfiguration indicates an expected call of CreateReplicationConfiguration
+func (mr *MockEFSAPIMockRecorder) CreateReplicationConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReplicationConfiguration", reflect.TypeOf((*MockEFSAPI)(nil).CreateReplicationConfiguration), arg0)
+}
+
+// CreateReplicationConfigurationRequest mocks base method
+func (m *MockEFSAPI) CreateReplicationConfigurationRequest(arg0 *efs.CreateReplicationConfigurationInput) (*request.Request, *efs.CreateReplicationConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateReplicationConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*efs.CreateReplicationConfigurationOutput)
+	return ret0, ret1
+}
+
+// CreateReplicationConfigurationRequest indicates an expected call of CreateReplicationConfigurationRequest
+func (mr *MockEFSAPIMockRecorder) CreateReplicationConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReplicationConfigurationRequest", reflect.TypeOf((*MockEFSAPI)(nil).CreateReplicationConfigurationRequest), arg0)
+}
+
+// CreateReplicationConfigurationWithContext mocks base method
+func (m *MockEFSAPI) CreateReplicationConfigurationWithContext(arg0 context.Context, arg1 *efs.CreateReplicationConfigurationInput, arg2 ...request.Option) (*efs.CreateReplicationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateReplicationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*efs.CreateReplicationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateReplicationConfigurationWithContext indicates an expected call of CreateReplicationConfigurationWithContext
+func (mr *MockEFSAPIMockRecorder) CreateReplicationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReplicationConfigurationWithContext", reflect.TypeOf((*MockEFSAPI)(nil).CreateReplicationConfigurationWithContext), varargs...)
+}
+
 // CreateTags mocks base method
 func (m *MockEFSAPI) CreateTags(arg0 *efs.CreateTagsInput) (*efs.CreateTagsOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +483,56 @@ func (mr *MockEFSAPIMockRecorder) DeleteMountTargetWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMountTargetWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DeleteMountTargetWithContext), varargs...)
+}
+
+// DeleteReplicationConfiguration mocks base method
+func (m *MockEFSAPI) DeleteReplicationConfiguration(arg0 *efs.DeleteReplicationConfigurationInput) (*efs.DeleteReplicationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteReplicationConfiguration", arg0)
+	ret0, _ := ret[0].(*efs.DeleteReplicationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteReplicationConfiguration indicates an expected call of DeleteReplicationConfiguration
+func (mr *MockEFSAPIMockRecorder) DeleteReplicationConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReplicationConfiguration", reflect.TypeOf((*MockEFSAPI)(nil).DeleteReplicationConfiguration), arg0)
+}
+
+// DeleteReplicationConfigurationRequest mocks base method
+func (m *MockEFSAPI) DeleteReplicationConfigurationRequest(arg0 *efs.DeleteReplicationConfigurationInput) (*request.Request, *efs.DeleteReplicationConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteReplicationConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*efs.DeleteReplicationConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteReplicationConfigurationRequest indicates an expected call of DeleteReplicationConfigurationRequest
+func (mr *MockEFSAPIMockRecorder) DeleteReplicationConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReplicationConfigurationRequest", reflect.TypeOf((*MockEFSAPI)(nil).DeleteReplicationConfigurationRequest), arg0)
+}
+
+// DeleteReplicationConfigurationWithContext mocks base method
+func (m *MockEFSAPI) DeleteReplicationConfigurationWithContext(arg0 context.Context, arg1 *efs.DeleteReplicationConfigurationInput, arg2 ...request.Option) (*efs.DeleteReplicationConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteReplicationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*efs.DeleteReplicationConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteReplicationConfigurationWithContext indicates an expected call of DeleteReplicationConfigurationWithContext
+func (mr *MockEFSAPIMockRecorder) DeleteReplicationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReplicationConfigurationWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DeleteReplicationConfigurationWithContext), varargs...)
 }
 
 // DeleteTags mocks base method
@@ -949,6 +1049,56 @@ func (mr *MockEFSAPIMockRecorder) DescribeMountTargetsWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMountTargetsWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DescribeMountTargetsWithContext), varargs...)
+}
+
+// DescribeReplicationConfigurations mocks base method
+func (m *MockEFSAPI) DescribeReplicationConfigurations(arg0 *efs.DescribeReplicationConfigurationsInput) (*efs.DescribeReplicationConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplicationConfigurations", arg0)
+	ret0, _ := ret[0].(*efs.DescribeReplicationConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReplicationConfigurations indicates an expected call of DescribeReplicationConfigurations
+func (mr *MockEFSAPIMockRecorder) DescribeReplicationConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationConfigurations", reflect.TypeOf((*MockEFSAPI)(nil).DescribeReplicationConfigurations), arg0)
+}
+
+// DescribeReplicationConfigurationsRequest mocks base method
+func (m *MockEFSAPI) DescribeReplicationConfigurationsRequest(arg0 *efs.DescribeReplicationConfigurationsInput) (*request.Request, *efs.DescribeReplicationConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplicationConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*efs.DescribeReplicationConfigurationsOutput)
+	return ret0, ret1
+}
+
+// DescribeReplicationConfigurationsRequest indicates an expected call of DescribeReplicationConfigurationsRequest
+func (mr *MockEFSAPIMockRecorder) DescribeReplicationConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationConfigurationsRequest", reflect.TypeOf((*MockEFSAPI)(nil).DescribeReplicationConfigurationsRequest), arg0)
+}
+
+// DescribeReplicationConfigurationsWithContext mocks base method
+func (m *MockEFSAPI) DescribeReplicationConfigurationsWithContext(arg0 context.Context, arg1 *efs.DescribeReplicationConfigurationsInput, arg2 ...request.Option) (*efs.DescribeReplicationConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReplicationConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*efs.DescribeReplicationConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReplicationConfigurationsWithContext indicates an expected call of DescribeReplicationConfigurationsWithContext
+func (mr *MockEFSAPIMockRecorder) DescribeReplicationConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationConfigurationsWithContext", reflect.TypeOf((*MockEFSAPI)(nil).DescribeReplicationConfigurationsWithContext), varargs...)
 }
 
 // DescribeTags mocks base method
