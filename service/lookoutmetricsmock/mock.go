@@ -285,6 +285,56 @@ func (mr *MockLookoutMetricsAPIMockRecorder) CreateMetricSetWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMetricSetWithContext", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).CreateMetricSetWithContext), varargs...)
 }
 
+// DeactivateAnomalyDetector mocks base method
+func (m *MockLookoutMetricsAPI) DeactivateAnomalyDetector(arg0 *lookoutmetrics.DeactivateAnomalyDetectorInput) (*lookoutmetrics.DeactivateAnomalyDetectorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeactivateAnomalyDetector", arg0)
+	ret0, _ := ret[0].(*lookoutmetrics.DeactivateAnomalyDetectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeactivateAnomalyDetector indicates an expected call of DeactivateAnomalyDetector
+func (mr *MockLookoutMetricsAPIMockRecorder) DeactivateAnomalyDetector(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateAnomalyDetector", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).DeactivateAnomalyDetector), arg0)
+}
+
+// DeactivateAnomalyDetectorRequest mocks base method
+func (m *MockLookoutMetricsAPI) DeactivateAnomalyDetectorRequest(arg0 *lookoutmetrics.DeactivateAnomalyDetectorInput) (*request.Request, *lookoutmetrics.DeactivateAnomalyDetectorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeactivateAnomalyDetectorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutmetrics.DeactivateAnomalyDetectorOutput)
+	return ret0, ret1
+}
+
+// DeactivateAnomalyDetectorRequest indicates an expected call of DeactivateAnomalyDetectorRequest
+func (mr *MockLookoutMetricsAPIMockRecorder) DeactivateAnomalyDetectorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateAnomalyDetectorRequest", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).DeactivateAnomalyDetectorRequest), arg0)
+}
+
+// DeactivateAnomalyDetectorWithContext mocks base method
+func (m *MockLookoutMetricsAPI) DeactivateAnomalyDetectorWithContext(arg0 context.Context, arg1 *lookoutmetrics.DeactivateAnomalyDetectorInput, arg2 ...request.Option) (*lookoutmetrics.DeactivateAnomalyDetectorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeactivateAnomalyDetectorWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutmetrics.DeactivateAnomalyDetectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeactivateAnomalyDetectorWithContext indicates an expected call of DeactivateAnomalyDetectorWithContext
+func (mr *MockLookoutMetricsAPIMockRecorder) DeactivateAnomalyDetectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateAnomalyDetectorWithContext", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).DeactivateAnomalyDetectorWithContext), varargs...)
+}
+
 // DeleteAlert mocks base method
 func (m *MockLookoutMetricsAPI) DeleteAlert(arg0 *lookoutmetrics.DeleteAlertInput) (*lookoutmetrics.DeleteAlertOutput, error) {
 	m.ctrl.T.Helper()
