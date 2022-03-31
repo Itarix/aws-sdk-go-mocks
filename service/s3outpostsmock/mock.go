@@ -217,3 +217,86 @@ func (mr *MockS3OutpostsAPIMockRecorder) ListEndpointsWithContext(arg0, arg1 int
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEndpointsWithContext", reflect.TypeOf((*MockS3OutpostsAPI)(nil).ListEndpointsWithContext), varargs...)
 }
+
+// ListSharedEndpoints mocks base method
+func (m *MockS3OutpostsAPI) ListSharedEndpoints(arg0 *s3outposts.ListSharedEndpointsInput) (*s3outposts.ListSharedEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSharedEndpoints", arg0)
+	ret0, _ := ret[0].(*s3outposts.ListSharedEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSharedEndpoints indicates an expected call of ListSharedEndpoints
+func (mr *MockS3OutpostsAPIMockRecorder) ListSharedEndpoints(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharedEndpoints", reflect.TypeOf((*MockS3OutpostsAPI)(nil).ListSharedEndpoints), arg0)
+}
+
+// ListSharedEndpointsPages mocks base method
+func (m *MockS3OutpostsAPI) ListSharedEndpointsPages(arg0 *s3outposts.ListSharedEndpointsInput, arg1 func(*s3outposts.ListSharedEndpointsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSharedEndpointsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSharedEndpointsPages indicates an expected call of ListSharedEndpointsPages
+func (mr *MockS3OutpostsAPIMockRecorder) ListSharedEndpointsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharedEndpointsPages", reflect.TypeOf((*MockS3OutpostsAPI)(nil).ListSharedEndpointsPages), arg0, arg1)
+}
+
+// ListSharedEndpointsPagesWithContext mocks base method
+func (m *MockS3OutpostsAPI) ListSharedEndpointsPagesWithContext(arg0 context.Context, arg1 *s3outposts.ListSharedEndpointsInput, arg2 func(*s3outposts.ListSharedEndpointsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSharedEndpointsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSharedEndpointsPagesWithContext indicates an expected call of ListSharedEndpointsPagesWithContext
+func (mr *MockS3OutpostsAPIMockRecorder) ListSharedEndpointsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharedEndpointsPagesWithContext", reflect.TypeOf((*MockS3OutpostsAPI)(nil).ListSharedEndpointsPagesWithContext), varargs...)
+}
+
+// ListSharedEndpointsRequest mocks base method
+func (m *MockS3OutpostsAPI) ListSharedEndpointsRequest(arg0 *s3outposts.ListSharedEndpointsInput) (*request.Request, *s3outposts.ListSharedEndpointsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSharedEndpointsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3outposts.ListSharedEndpointsOutput)
+	return ret0, ret1
+}
+
+// ListSharedEndpointsRequest indicates an expected call of ListSharedEndpointsRequest
+func (mr *MockS3OutpostsAPIMockRecorder) ListSharedEndpointsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharedEndpointsRequest", reflect.TypeOf((*MockS3OutpostsAPI)(nil).ListSharedEndpointsRequest), arg0)
+}
+
+// ListSharedEndpointsWithContext mocks base method
+func (m *MockS3OutpostsAPI) ListSharedEndpointsWithContext(arg0 context.Context, arg1 *s3outposts.ListSharedEndpointsInput, arg2 ...request.Option) (*s3outposts.ListSharedEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSharedEndpointsWithContext", varargs...)
+	ret0, _ := ret[0].(*s3outposts.ListSharedEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSharedEndpointsWithContext indicates an expected call of ListSharedEndpointsWithContext
+func (mr *MockS3OutpostsAPIMockRecorder) ListSharedEndpointsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharedEndpointsWithContext", reflect.TypeOf((*MockS3OutpostsAPI)(nil).ListSharedEndpointsWithContext), varargs...)
+}
