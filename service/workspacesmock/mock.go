@@ -235,6 +235,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) CopyWorkspaceImageWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopyWorkspaceImageWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CopyWorkspaceImageWithContext), varargs...)
 }
 
+// CreateConnectClientAddIn mocks base method
+func (m *MockWorkSpacesAPI) CreateConnectClientAddIn(arg0 *workspaces.CreateConnectClientAddInInput) (*workspaces.CreateConnectClientAddInOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectClientAddIn", arg0)
+	ret0, _ := ret[0].(*workspaces.CreateConnectClientAddInOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectClientAddIn indicates an expected call of CreateConnectClientAddIn
+func (mr *MockWorkSpacesAPIMockRecorder) CreateConnectClientAddIn(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectClientAddIn", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateConnectClientAddIn), arg0)
+}
+
+// CreateConnectClientAddInRequest mocks base method
+func (m *MockWorkSpacesAPI) CreateConnectClientAddInRequest(arg0 *workspaces.CreateConnectClientAddInInput) (*request.Request, *workspaces.CreateConnectClientAddInOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectClientAddInRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.CreateConnectClientAddInOutput)
+	return ret0, ret1
+}
+
+// CreateConnectClientAddInRequest indicates an expected call of CreateConnectClientAddInRequest
+func (mr *MockWorkSpacesAPIMockRecorder) CreateConnectClientAddInRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectClientAddInRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateConnectClientAddInRequest), arg0)
+}
+
+// CreateConnectClientAddInWithContext mocks base method
+func (m *MockWorkSpacesAPI) CreateConnectClientAddInWithContext(arg0 context.Context, arg1 *workspaces.CreateConnectClientAddInInput, arg2 ...request.Option) (*workspaces.CreateConnectClientAddInOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateConnectClientAddInWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.CreateConnectClientAddInOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectClientAddInWithContext indicates an expected call of CreateConnectClientAddInWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) CreateConnectClientAddInWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectClientAddInWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateConnectClientAddInWithContext), varargs...)
+}
+
 // CreateConnectionAlias mocks base method
 func (m *MockWorkSpacesAPI) CreateConnectionAlias(arg0 *workspaces.CreateConnectionAliasInput) (*workspaces.CreateConnectionAliasOutput, error) {
 	m.ctrl.T.Helper()
@@ -533,6 +583,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) CreateWorkspacesWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkspacesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateWorkspacesWithContext), varargs...)
+}
+
+// DeleteConnectClientAddIn mocks base method
+func (m *MockWorkSpacesAPI) DeleteConnectClientAddIn(arg0 *workspaces.DeleteConnectClientAddInInput) (*workspaces.DeleteConnectClientAddInOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnectClientAddIn", arg0)
+	ret0, _ := ret[0].(*workspaces.DeleteConnectClientAddInOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnectClientAddIn indicates an expected call of DeleteConnectClientAddIn
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteConnectClientAddIn(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectClientAddIn", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteConnectClientAddIn), arg0)
+}
+
+// DeleteConnectClientAddInRequest mocks base method
+func (m *MockWorkSpacesAPI) DeleteConnectClientAddInRequest(arg0 *workspaces.DeleteConnectClientAddInInput) (*request.Request, *workspaces.DeleteConnectClientAddInOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnectClientAddInRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DeleteConnectClientAddInOutput)
+	return ret0, ret1
+}
+
+// DeleteConnectClientAddInRequest indicates an expected call of DeleteConnectClientAddInRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteConnectClientAddInRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectClientAddInRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteConnectClientAddInRequest), arg0)
+}
+
+// DeleteConnectClientAddInWithContext mocks base method
+func (m *MockWorkSpacesAPI) DeleteConnectClientAddInWithContext(arg0 context.Context, arg1 *workspaces.DeleteConnectClientAddInInput, arg2 ...request.Option) (*workspaces.DeleteConnectClientAddInOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteConnectClientAddInWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DeleteConnectClientAddInOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnectClientAddInWithContext indicates an expected call of DeleteConnectClientAddInWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteConnectClientAddInWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectClientAddInWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteConnectClientAddInWithContext), varargs...)
 }
 
 // DeleteConnectionAlias mocks base method
@@ -983,6 +1083,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeClientPropertiesWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClientPropertiesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeClientPropertiesWithContext), varargs...)
+}
+
+// DescribeConnectClientAddIns mocks base method
+func (m *MockWorkSpacesAPI) DescribeConnectClientAddIns(arg0 *workspaces.DescribeConnectClientAddInsInput) (*workspaces.DescribeConnectClientAddInsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeConnectClientAddIns", arg0)
+	ret0, _ := ret[0].(*workspaces.DescribeConnectClientAddInsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeConnectClientAddIns indicates an expected call of DescribeConnectClientAddIns
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeConnectClientAddIns(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnectClientAddIns", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeConnectClientAddIns), arg0)
+}
+
+// DescribeConnectClientAddInsRequest mocks base method
+func (m *MockWorkSpacesAPI) DescribeConnectClientAddInsRequest(arg0 *workspaces.DescribeConnectClientAddInsInput) (*request.Request, *workspaces.DescribeConnectClientAddInsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeConnectClientAddInsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DescribeConnectClientAddInsOutput)
+	return ret0, ret1
+}
+
+// DescribeConnectClientAddInsRequest indicates an expected call of DescribeConnectClientAddInsRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeConnectClientAddInsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnectClientAddInsRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeConnectClientAddInsRequest), arg0)
+}
+
+// DescribeConnectClientAddInsWithContext mocks base method
+func (m *MockWorkSpacesAPI) DescribeConnectClientAddInsWithContext(arg0 context.Context, arg1 *workspaces.DescribeConnectClientAddInsInput, arg2 ...request.Option) (*workspaces.DescribeConnectClientAddInsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeConnectClientAddInsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DescribeConnectClientAddInsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeConnectClientAddInsWithContext indicates an expected call of DescribeConnectClientAddInsWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeConnectClientAddInsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnectClientAddInsWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeConnectClientAddInsWithContext), varargs...)
 }
 
 // DescribeConnectionAliasPermissions mocks base method
@@ -2632,6 +2782,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) TerminateWorkspacesWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateWorkspacesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).TerminateWorkspacesWithContext), varargs...)
+}
+
+// UpdateConnectClientAddIn mocks base method
+func (m *MockWorkSpacesAPI) UpdateConnectClientAddIn(arg0 *workspaces.UpdateConnectClientAddInInput) (*workspaces.UpdateConnectClientAddInOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectClientAddIn", arg0)
+	ret0, _ := ret[0].(*workspaces.UpdateConnectClientAddInOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectClientAddIn indicates an expected call of UpdateConnectClientAddIn
+func (mr *MockWorkSpacesAPIMockRecorder) UpdateConnectClientAddIn(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectClientAddIn", reflect.TypeOf((*MockWorkSpacesAPI)(nil).UpdateConnectClientAddIn), arg0)
+}
+
+// UpdateConnectClientAddInRequest mocks base method
+func (m *MockWorkSpacesAPI) UpdateConnectClientAddInRequest(arg0 *workspaces.UpdateConnectClientAddInInput) (*request.Request, *workspaces.UpdateConnectClientAddInOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectClientAddInRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.UpdateConnectClientAddInOutput)
+	return ret0, ret1
+}
+
+// UpdateConnectClientAddInRequest indicates an expected call of UpdateConnectClientAddInRequest
+func (mr *MockWorkSpacesAPIMockRecorder) UpdateConnectClientAddInRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectClientAddInRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).UpdateConnectClientAddInRequest), arg0)
+}
+
+// UpdateConnectClientAddInWithContext mocks base method
+func (m *MockWorkSpacesAPI) UpdateConnectClientAddInWithContext(arg0 context.Context, arg1 *workspaces.UpdateConnectClientAddInInput, arg2 ...request.Option) (*workspaces.UpdateConnectClientAddInOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateConnectClientAddInWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.UpdateConnectClientAddInOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectClientAddInWithContext indicates an expected call of UpdateConnectClientAddInWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) UpdateConnectClientAddInWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectClientAddInWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).UpdateConnectClientAddInWithContext), varargs...)
 }
 
 // UpdateConnectionAliasPermission mocks base method

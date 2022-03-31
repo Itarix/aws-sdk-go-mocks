@@ -1550,6 +1550,39 @@ func (mr *MockKendraAPIMockRecorder) GetSnapshots(arg0 interface{}) *gomock.Call
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSnapshots", reflect.TypeOf((*MockKendraAPI)(nil).GetSnapshots), arg0)
 }
 
+// GetSnapshotsPages mocks base method
+func (m *MockKendraAPI) GetSnapshotsPages(arg0 *kendra.GetSnapshotsInput, arg1 func(*kendra.GetSnapshotsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSnapshotsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetSnapshotsPages indicates an expected call of GetSnapshotsPages
+func (mr *MockKendraAPIMockRecorder) GetSnapshotsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSnapshotsPages", reflect.TypeOf((*MockKendraAPI)(nil).GetSnapshotsPages), arg0, arg1)
+}
+
+// GetSnapshotsPagesWithContext mocks base method
+func (m *MockKendraAPI) GetSnapshotsPagesWithContext(arg0 context.Context, arg1 *kendra.GetSnapshotsInput, arg2 func(*kendra.GetSnapshotsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSnapshotsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetSnapshotsPagesWithContext indicates an expected call of GetSnapshotsPagesWithContext
+func (mr *MockKendraAPIMockRecorder) GetSnapshotsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSnapshotsPagesWithContext", reflect.TypeOf((*MockKendraAPI)(nil).GetSnapshotsPagesWithContext), varargs...)
+}
+
 // GetSnapshotsRequest mocks base method
 func (m *MockKendraAPI) GetSnapshotsRequest(arg0 *kendra.GetSnapshotsInput) (*request.Request, *kendra.GetSnapshotsOutput) {
 	m.ctrl.T.Helper()
