@@ -5879,6 +5879,189 @@ func (mr *MockGlueAPIMockRecorder) GetTriggersWithContext(arg0, arg1 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTriggersWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetTriggersWithContext), varargs...)
 }
 
+// GetUnfilteredPartitionMetadata mocks base method
+func (m *MockGlueAPI) GetUnfilteredPartitionMetadata(arg0 *glue.GetUnfilteredPartitionMetadataInput) (*glue.GetUnfilteredPartitionMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUnfilteredPartitionMetadata", arg0)
+	ret0, _ := ret[0].(*glue.GetUnfilteredPartitionMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUnfilteredPartitionMetadata indicates an expected call of GetUnfilteredPartitionMetadata
+func (mr *MockGlueAPIMockRecorder) GetUnfilteredPartitionMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUnfilteredPartitionMetadata", reflect.TypeOf((*MockGlueAPI)(nil).GetUnfilteredPartitionMetadata), arg0)
+}
+
+// GetUnfilteredPartitionMetadataRequest mocks base method
+func (m *MockGlueAPI) GetUnfilteredPartitionMetadataRequest(arg0 *glue.GetUnfilteredPartitionMetadataInput) (*request.Request, *glue.GetUnfilteredPartitionMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUnfilteredPartitionMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetUnfilteredPartitionMetadataOutput)
+	return ret0, ret1
+}
+
+// GetUnfilteredPartitionMetadataRequest indicates an expected call of GetUnfilteredPartitionMetadataRequest
+func (mr *MockGlueAPIMockRecorder) GetUnfilteredPartitionMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUnfilteredPartitionMetadataRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetUnfilteredPartitionMetadataRequest), arg0)
+}
+
+// GetUnfilteredPartitionMetadataWithContext mocks base method
+func (m *MockGlueAPI) GetUnfilteredPartitionMetadataWithContext(arg0 context.Context, arg1 *glue.GetUnfilteredPartitionMetadataInput, arg2 ...request.Option) (*glue.GetUnfilteredPartitionMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetUnfilteredPartitionMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetUnfilteredPartitionMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUnfilteredPartitionMetadataWithContext indicates an expected call of GetUnfilteredPartitionMetadataWithContext
+func (mr *MockGlueAPIMockRecorder) GetUnfilteredPartitionMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUnfilteredPartitionMetadataWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetUnfilteredPartitionMetadataWithContext), varargs...)
+}
+
+// GetUnfilteredPartitionsMetadata mocks base method
+func (m *MockGlueAPI) GetUnfilteredPartitionsMetadata(arg0 *glue.GetUnfilteredPartitionsMetadataInput) (*glue.GetUnfilteredPartitionsMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUnfilteredPartitionsMetadata", arg0)
+	ret0, _ := ret[0].(*glue.GetUnfilteredPartitionsMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUnfilteredPartitionsMetadata indicates an expected call of GetUnfilteredPartitionsMetadata
+func (mr *MockGlueAPIMockRecorder) GetUnfilteredPartitionsMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUnfilteredPartitionsMetadata", reflect.TypeOf((*MockGlueAPI)(nil).GetUnfilteredPartitionsMetadata), arg0)
+}
+
+// GetUnfilteredPartitionsMetadataPages mocks base method
+func (m *MockGlueAPI) GetUnfilteredPartitionsMetadataPages(arg0 *glue.GetUnfilteredPartitionsMetadataInput, arg1 func(*glue.GetUnfilteredPartitionsMetadataOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUnfilteredPartitionsMetadataPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetUnfilteredPartitionsMetadataPages indicates an expected call of GetUnfilteredPartitionsMetadataPages
+func (mr *MockGlueAPIMockRecorder) GetUnfilteredPartitionsMetadataPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUnfilteredPartitionsMetadataPages", reflect.TypeOf((*MockGlueAPI)(nil).GetUnfilteredPartitionsMetadataPages), arg0, arg1)
+}
+
+// GetUnfilteredPartitionsMetadataPagesWithContext mocks base method
+func (m *MockGlueAPI) GetUnfilteredPartitionsMetadataPagesWithContext(arg0 context.Context, arg1 *glue.GetUnfilteredPartitionsMetadataInput, arg2 func(*glue.GetUnfilteredPartitionsMetadataOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetUnfilteredPartitionsMetadataPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetUnfilteredPartitionsMetadataPagesWithContext indicates an expected call of GetUnfilteredPartitionsMetadataPagesWithContext
+func (mr *MockGlueAPIMockRecorder) GetUnfilteredPartitionsMetadataPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUnfilteredPartitionsMetadataPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetUnfilteredPartitionsMetadataPagesWithContext), varargs...)
+}
+
+// GetUnfilteredPartitionsMetadataRequest mocks base method
+func (m *MockGlueAPI) GetUnfilteredPartitionsMetadataRequest(arg0 *glue.GetUnfilteredPartitionsMetadataInput) (*request.Request, *glue.GetUnfilteredPartitionsMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUnfilteredPartitionsMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetUnfilteredPartitionsMetadataOutput)
+	return ret0, ret1
+}
+
+// GetUnfilteredPartitionsMetadataRequest indicates an expected call of GetUnfilteredPartitionsMetadataRequest
+func (mr *MockGlueAPIMockRecorder) GetUnfilteredPartitionsMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUnfilteredPartitionsMetadataRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetUnfilteredPartitionsMetadataRequest), arg0)
+}
+
+// GetUnfilteredPartitionsMetadataWithContext mocks base method
+func (m *MockGlueAPI) GetUnfilteredPartitionsMetadataWithContext(arg0 context.Context, arg1 *glue.GetUnfilteredPartitionsMetadataInput, arg2 ...request.Option) (*glue.GetUnfilteredPartitionsMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetUnfilteredPartitionsMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetUnfilteredPartitionsMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUnfilteredPartitionsMetadataWithContext indicates an expected call of GetUnfilteredPartitionsMetadataWithContext
+func (mr *MockGlueAPIMockRecorder) GetUnfilteredPartitionsMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUnfilteredPartitionsMetadataWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetUnfilteredPartitionsMetadataWithContext), varargs...)
+}
+
+// GetUnfilteredTableMetadata mocks base method
+func (m *MockGlueAPI) GetUnfilteredTableMetadata(arg0 *glue.GetUnfilteredTableMetadataInput) (*glue.GetUnfilteredTableMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUnfilteredTableMetadata", arg0)
+	ret0, _ := ret[0].(*glue.GetUnfilteredTableMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUnfilteredTableMetadata indicates an expected call of GetUnfilteredTableMetadata
+func (mr *MockGlueAPIMockRecorder) GetUnfilteredTableMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUnfilteredTableMetadata", reflect.TypeOf((*MockGlueAPI)(nil).GetUnfilteredTableMetadata), arg0)
+}
+
+// GetUnfilteredTableMetadataRequest mocks base method
+func (m *MockGlueAPI) GetUnfilteredTableMetadataRequest(arg0 *glue.GetUnfilteredTableMetadataInput) (*request.Request, *glue.GetUnfilteredTableMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUnfilteredTableMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetUnfilteredTableMetadataOutput)
+	return ret0, ret1
+}
+
+// GetUnfilteredTableMetadataRequest indicates an expected call of GetUnfilteredTableMetadataRequest
+func (mr *MockGlueAPIMockRecorder) GetUnfilteredTableMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUnfilteredTableMetadataRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetUnfilteredTableMetadataRequest), arg0)
+}
+
+// GetUnfilteredTableMetadataWithContext mocks base method
+func (m *MockGlueAPI) GetUnfilteredTableMetadataWithContext(arg0 context.Context, arg1 *glue.GetUnfilteredTableMetadataInput, arg2 ...request.Option) (*glue.GetUnfilteredTableMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetUnfilteredTableMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetUnfilteredTableMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUnfilteredTableMetadataWithContext indicates an expected call of GetUnfilteredTableMetadataWithContext
+func (mr *MockGlueAPIMockRecorder) GetUnfilteredTableMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUnfilteredTableMetadataWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetUnfilteredTableMetadataWithContext), varargs...)
+}
+
 // GetUserDefinedFunction mocks base method
 func (m *MockGlueAPI) GetUserDefinedFunction(arg0 *glue.GetUserDefinedFunctionInput) (*glue.GetUserDefinedFunctionOutput, error) {
 	m.ctrl.T.Helper()

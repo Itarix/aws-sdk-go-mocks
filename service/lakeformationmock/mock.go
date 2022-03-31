@@ -1151,6 +1151,106 @@ func (mr *MockLakeFormationAPIMockRecorder) GetTableObjectsWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTableObjectsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetTableObjectsWithContext), varargs...)
 }
 
+// GetTemporaryGluePartitionCredentials mocks base method
+func (m *MockLakeFormationAPI) GetTemporaryGluePartitionCredentials(arg0 *lakeformation.GetTemporaryGluePartitionCredentialsInput) (*lakeformation.GetTemporaryGluePartitionCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTemporaryGluePartitionCredentials", arg0)
+	ret0, _ := ret[0].(*lakeformation.GetTemporaryGluePartitionCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTemporaryGluePartitionCredentials indicates an expected call of GetTemporaryGluePartitionCredentials
+func (mr *MockLakeFormationAPIMockRecorder) GetTemporaryGluePartitionCredentials(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTemporaryGluePartitionCredentials", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetTemporaryGluePartitionCredentials), arg0)
+}
+
+// GetTemporaryGluePartitionCredentialsRequest mocks base method
+func (m *MockLakeFormationAPI) GetTemporaryGluePartitionCredentialsRequest(arg0 *lakeformation.GetTemporaryGluePartitionCredentialsInput) (*request.Request, *lakeformation.GetTemporaryGluePartitionCredentialsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTemporaryGluePartitionCredentialsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.GetTemporaryGluePartitionCredentialsOutput)
+	return ret0, ret1
+}
+
+// GetTemporaryGluePartitionCredentialsRequest indicates an expected call of GetTemporaryGluePartitionCredentialsRequest
+func (mr *MockLakeFormationAPIMockRecorder) GetTemporaryGluePartitionCredentialsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTemporaryGluePartitionCredentialsRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetTemporaryGluePartitionCredentialsRequest), arg0)
+}
+
+// GetTemporaryGluePartitionCredentialsWithContext mocks base method
+func (m *MockLakeFormationAPI) GetTemporaryGluePartitionCredentialsWithContext(arg0 context.Context, arg1 *lakeformation.GetTemporaryGluePartitionCredentialsInput, arg2 ...request.Option) (*lakeformation.GetTemporaryGluePartitionCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTemporaryGluePartitionCredentialsWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.GetTemporaryGluePartitionCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTemporaryGluePartitionCredentialsWithContext indicates an expected call of GetTemporaryGluePartitionCredentialsWithContext
+func (mr *MockLakeFormationAPIMockRecorder) GetTemporaryGluePartitionCredentialsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTemporaryGluePartitionCredentialsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetTemporaryGluePartitionCredentialsWithContext), varargs...)
+}
+
+// GetTemporaryGlueTableCredentials mocks base method
+func (m *MockLakeFormationAPI) GetTemporaryGlueTableCredentials(arg0 *lakeformation.GetTemporaryGlueTableCredentialsInput) (*lakeformation.GetTemporaryGlueTableCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTemporaryGlueTableCredentials", arg0)
+	ret0, _ := ret[0].(*lakeformation.GetTemporaryGlueTableCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTemporaryGlueTableCredentials indicates an expected call of GetTemporaryGlueTableCredentials
+func (mr *MockLakeFormationAPIMockRecorder) GetTemporaryGlueTableCredentials(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTemporaryGlueTableCredentials", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetTemporaryGlueTableCredentials), arg0)
+}
+
+// GetTemporaryGlueTableCredentialsRequest mocks base method
+func (m *MockLakeFormationAPI) GetTemporaryGlueTableCredentialsRequest(arg0 *lakeformation.GetTemporaryGlueTableCredentialsInput) (*request.Request, *lakeformation.GetTemporaryGlueTableCredentialsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTemporaryGlueTableCredentialsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.GetTemporaryGlueTableCredentialsOutput)
+	return ret0, ret1
+}
+
+// GetTemporaryGlueTableCredentialsRequest indicates an expected call of GetTemporaryGlueTableCredentialsRequest
+func (mr *MockLakeFormationAPIMockRecorder) GetTemporaryGlueTableCredentialsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTemporaryGlueTableCredentialsRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetTemporaryGlueTableCredentialsRequest), arg0)
+}
+
+// GetTemporaryGlueTableCredentialsWithContext mocks base method
+func (m *MockLakeFormationAPI) GetTemporaryGlueTableCredentialsWithContext(arg0 context.Context, arg1 *lakeformation.GetTemporaryGlueTableCredentialsInput, arg2 ...request.Option) (*lakeformation.GetTemporaryGlueTableCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTemporaryGlueTableCredentialsWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.GetTemporaryGlueTableCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTemporaryGlueTableCredentialsWithContext indicates an expected call of GetTemporaryGlueTableCredentialsWithContext
+func (mr *MockLakeFormationAPIMockRecorder) GetTemporaryGlueTableCredentialsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTemporaryGlueTableCredentialsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetTemporaryGlueTableCredentialsWithContext), varargs...)
+}
+
 // GetWorkUnitResults mocks base method
 func (m *MockLakeFormationAPI) GetWorkUnitResults(arg0 *lakeformation.GetWorkUnitResultsInput) (*lakeformation.GetWorkUnitResultsOutput, error) {
 	m.ctrl.T.Helper()

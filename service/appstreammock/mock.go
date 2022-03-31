@@ -85,6 +85,56 @@ func (mr *MockAppStreamAPIMockRecorder) AssociateApplicationFleetWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApplicationFleetWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).AssociateApplicationFleetWithContext), varargs...)
 }
 
+// AssociateApplicationToEntitlement mocks base method
+func (m *MockAppStreamAPI) AssociateApplicationToEntitlement(arg0 *appstream.AssociateApplicationToEntitlementInput) (*appstream.AssociateApplicationToEntitlementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateApplicationToEntitlement", arg0)
+	ret0, _ := ret[0].(*appstream.AssociateApplicationToEntitlementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateApplicationToEntitlement indicates an expected call of AssociateApplicationToEntitlement
+func (mr *MockAppStreamAPIMockRecorder) AssociateApplicationToEntitlement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApplicationToEntitlement", reflect.TypeOf((*MockAppStreamAPI)(nil).AssociateApplicationToEntitlement), arg0)
+}
+
+// AssociateApplicationToEntitlementRequest mocks base method
+func (m *MockAppStreamAPI) AssociateApplicationToEntitlementRequest(arg0 *appstream.AssociateApplicationToEntitlementInput) (*request.Request, *appstream.AssociateApplicationToEntitlementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateApplicationToEntitlementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.AssociateApplicationToEntitlementOutput)
+	return ret0, ret1
+}
+
+// AssociateApplicationToEntitlementRequest indicates an expected call of AssociateApplicationToEntitlementRequest
+func (mr *MockAppStreamAPIMockRecorder) AssociateApplicationToEntitlementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApplicationToEntitlementRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).AssociateApplicationToEntitlementRequest), arg0)
+}
+
+// AssociateApplicationToEntitlementWithContext mocks base method
+func (m *MockAppStreamAPI) AssociateApplicationToEntitlementWithContext(arg0 context.Context, arg1 *appstream.AssociateApplicationToEntitlementInput, arg2 ...request.Option) (*appstream.AssociateApplicationToEntitlementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateApplicationToEntitlementWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.AssociateApplicationToEntitlementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateApplicationToEntitlementWithContext indicates an expected call of AssociateApplicationToEntitlementWithContext
+func (mr *MockAppStreamAPIMockRecorder) AssociateApplicationToEntitlementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApplicationToEntitlementWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).AssociateApplicationToEntitlementWithContext), varargs...)
+}
+
 // AssociateFleet mocks base method
 func (m *MockAppStreamAPI) AssociateFleet(arg0 *appstream.AssociateFleetInput) (*appstream.AssociateFleetOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +483,56 @@ func (mr *MockAppStreamAPIMockRecorder) CreateDirectoryConfigWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDirectoryConfigWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateDirectoryConfigWithContext), varargs...)
+}
+
+// CreateEntitlement mocks base method
+func (m *MockAppStreamAPI) CreateEntitlement(arg0 *appstream.CreateEntitlementInput) (*appstream.CreateEntitlementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEntitlement", arg0)
+	ret0, _ := ret[0].(*appstream.CreateEntitlementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEntitlement indicates an expected call of CreateEntitlement
+func (mr *MockAppStreamAPIMockRecorder) CreateEntitlement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEntitlement", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateEntitlement), arg0)
+}
+
+// CreateEntitlementRequest mocks base method
+func (m *MockAppStreamAPI) CreateEntitlementRequest(arg0 *appstream.CreateEntitlementInput) (*request.Request, *appstream.CreateEntitlementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEntitlementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.CreateEntitlementOutput)
+	return ret0, ret1
+}
+
+// CreateEntitlementRequest indicates an expected call of CreateEntitlementRequest
+func (mr *MockAppStreamAPIMockRecorder) CreateEntitlementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEntitlementRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateEntitlementRequest), arg0)
+}
+
+// CreateEntitlementWithContext mocks base method
+func (m *MockAppStreamAPI) CreateEntitlementWithContext(arg0 context.Context, arg1 *appstream.CreateEntitlementInput, arg2 ...request.Option) (*appstream.CreateEntitlementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateEntitlementWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.CreateEntitlementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEntitlementWithContext indicates an expected call of CreateEntitlementWithContext
+func (mr *MockAppStreamAPIMockRecorder) CreateEntitlementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEntitlementWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).CreateEntitlementWithContext), varargs...)
 }
 
 // CreateFleet mocks base method
@@ -985,6 +1085,56 @@ func (mr *MockAppStreamAPIMockRecorder) DeleteDirectoryConfigWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDirectoryConfigWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteDirectoryConfigWithContext), varargs...)
 }
 
+// DeleteEntitlement mocks base method
+func (m *MockAppStreamAPI) DeleteEntitlement(arg0 *appstream.DeleteEntitlementInput) (*appstream.DeleteEntitlementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEntitlement", arg0)
+	ret0, _ := ret[0].(*appstream.DeleteEntitlementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEntitlement indicates an expected call of DeleteEntitlement
+func (mr *MockAppStreamAPIMockRecorder) DeleteEntitlement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEntitlement", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteEntitlement), arg0)
+}
+
+// DeleteEntitlementRequest mocks base method
+func (m *MockAppStreamAPI) DeleteEntitlementRequest(arg0 *appstream.DeleteEntitlementInput) (*request.Request, *appstream.DeleteEntitlementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEntitlementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.DeleteEntitlementOutput)
+	return ret0, ret1
+}
+
+// DeleteEntitlementRequest indicates an expected call of DeleteEntitlementRequest
+func (mr *MockAppStreamAPIMockRecorder) DeleteEntitlementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEntitlementRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteEntitlementRequest), arg0)
+}
+
+// DeleteEntitlementWithContext mocks base method
+func (m *MockAppStreamAPI) DeleteEntitlementWithContext(arg0 context.Context, arg1 *appstream.DeleteEntitlementInput, arg2 ...request.Option) (*appstream.DeleteEntitlementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteEntitlementWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.DeleteEntitlementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEntitlementWithContext indicates an expected call of DeleteEntitlementWithContext
+func (mr *MockAppStreamAPIMockRecorder) DeleteEntitlementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEntitlementWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DeleteEntitlementWithContext), varargs...)
+}
+
 // DeleteFleet mocks base method
 func (m *MockAppStreamAPI) DeleteFleet(arg0 *appstream.DeleteFleetInput) (*appstream.DeleteFleetOutput, error) {
 	m.ctrl.T.Helper()
@@ -1533,6 +1683,56 @@ func (mr *MockAppStreamAPIMockRecorder) DescribeDirectoryConfigsWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDirectoryConfigsWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeDirectoryConfigsWithContext), varargs...)
+}
+
+// DescribeEntitlements mocks base method
+func (m *MockAppStreamAPI) DescribeEntitlements(arg0 *appstream.DescribeEntitlementsInput) (*appstream.DescribeEntitlementsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEntitlements", arg0)
+	ret0, _ := ret[0].(*appstream.DescribeEntitlementsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEntitlements indicates an expected call of DescribeEntitlements
+func (mr *MockAppStreamAPIMockRecorder) DescribeEntitlements(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEntitlements", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeEntitlements), arg0)
+}
+
+// DescribeEntitlementsRequest mocks base method
+func (m *MockAppStreamAPI) DescribeEntitlementsRequest(arg0 *appstream.DescribeEntitlementsInput) (*request.Request, *appstream.DescribeEntitlementsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEntitlementsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.DescribeEntitlementsOutput)
+	return ret0, ret1
+}
+
+// DescribeEntitlementsRequest indicates an expected call of DescribeEntitlementsRequest
+func (mr *MockAppStreamAPIMockRecorder) DescribeEntitlementsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEntitlementsRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeEntitlementsRequest), arg0)
+}
+
+// DescribeEntitlementsWithContext mocks base method
+func (m *MockAppStreamAPI) DescribeEntitlementsWithContext(arg0 context.Context, arg1 *appstream.DescribeEntitlementsInput, arg2 ...request.Option) (*appstream.DescribeEntitlementsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEntitlementsWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.DescribeEntitlementsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEntitlementsWithContext indicates an expected call of DescribeEntitlementsWithContext
+func (mr *MockAppStreamAPIMockRecorder) DescribeEntitlementsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEntitlementsWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DescribeEntitlementsWithContext), varargs...)
 }
 
 // DescribeFleets mocks base method
@@ -2151,6 +2351,56 @@ func (mr *MockAppStreamAPIMockRecorder) DisassociateApplicationFleetWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApplicationFleetWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DisassociateApplicationFleetWithContext), varargs...)
 }
 
+// DisassociateApplicationFromEntitlement mocks base method
+func (m *MockAppStreamAPI) DisassociateApplicationFromEntitlement(arg0 *appstream.DisassociateApplicationFromEntitlementInput) (*appstream.DisassociateApplicationFromEntitlementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateApplicationFromEntitlement", arg0)
+	ret0, _ := ret[0].(*appstream.DisassociateApplicationFromEntitlementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateApplicationFromEntitlement indicates an expected call of DisassociateApplicationFromEntitlement
+func (mr *MockAppStreamAPIMockRecorder) DisassociateApplicationFromEntitlement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApplicationFromEntitlement", reflect.TypeOf((*MockAppStreamAPI)(nil).DisassociateApplicationFromEntitlement), arg0)
+}
+
+// DisassociateApplicationFromEntitlementRequest mocks base method
+func (m *MockAppStreamAPI) DisassociateApplicationFromEntitlementRequest(arg0 *appstream.DisassociateApplicationFromEntitlementInput) (*request.Request, *appstream.DisassociateApplicationFromEntitlementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateApplicationFromEntitlementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.DisassociateApplicationFromEntitlementOutput)
+	return ret0, ret1
+}
+
+// DisassociateApplicationFromEntitlementRequest indicates an expected call of DisassociateApplicationFromEntitlementRequest
+func (mr *MockAppStreamAPIMockRecorder) DisassociateApplicationFromEntitlementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApplicationFromEntitlementRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).DisassociateApplicationFromEntitlementRequest), arg0)
+}
+
+// DisassociateApplicationFromEntitlementWithContext mocks base method
+func (m *MockAppStreamAPI) DisassociateApplicationFromEntitlementWithContext(arg0 context.Context, arg1 *appstream.DisassociateApplicationFromEntitlementInput, arg2 ...request.Option) (*appstream.DisassociateApplicationFromEntitlementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateApplicationFromEntitlementWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.DisassociateApplicationFromEntitlementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateApplicationFromEntitlementWithContext indicates an expected call of DisassociateApplicationFromEntitlementWithContext
+func (mr *MockAppStreamAPIMockRecorder) DisassociateApplicationFromEntitlementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApplicationFromEntitlementWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).DisassociateApplicationFromEntitlementWithContext), varargs...)
+}
+
 // DisassociateFleet mocks base method
 func (m *MockAppStreamAPI) DisassociateFleet(arg0 *appstream.DisassociateFleetInput) (*appstream.DisassociateFleetOutput, error) {
 	m.ctrl.T.Helper()
@@ -2399,6 +2649,56 @@ func (mr *MockAppStreamAPIMockRecorder) ListAssociatedStacksWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssociatedStacksWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).ListAssociatedStacksWithContext), varargs...)
+}
+
+// ListEntitledApplications mocks base method
+func (m *MockAppStreamAPI) ListEntitledApplications(arg0 *appstream.ListEntitledApplicationsInput) (*appstream.ListEntitledApplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEntitledApplications", arg0)
+	ret0, _ := ret[0].(*appstream.ListEntitledApplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEntitledApplications indicates an expected call of ListEntitledApplications
+func (mr *MockAppStreamAPIMockRecorder) ListEntitledApplications(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEntitledApplications", reflect.TypeOf((*MockAppStreamAPI)(nil).ListEntitledApplications), arg0)
+}
+
+// ListEntitledApplicationsRequest mocks base method
+func (m *MockAppStreamAPI) ListEntitledApplicationsRequest(arg0 *appstream.ListEntitledApplicationsInput) (*request.Request, *appstream.ListEntitledApplicationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEntitledApplicationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.ListEntitledApplicationsOutput)
+	return ret0, ret1
+}
+
+// ListEntitledApplicationsRequest indicates an expected call of ListEntitledApplicationsRequest
+func (mr *MockAppStreamAPIMockRecorder) ListEntitledApplicationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEntitledApplicationsRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).ListEntitledApplicationsRequest), arg0)
+}
+
+// ListEntitledApplicationsWithContext mocks base method
+func (m *MockAppStreamAPI) ListEntitledApplicationsWithContext(arg0 context.Context, arg1 *appstream.ListEntitledApplicationsInput, arg2 ...request.Option) (*appstream.ListEntitledApplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEntitledApplicationsWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.ListEntitledApplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEntitledApplicationsWithContext indicates an expected call of ListEntitledApplicationsWithContext
+func (mr *MockAppStreamAPIMockRecorder) ListEntitledApplicationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEntitledApplicationsWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).ListEntitledApplicationsWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
@@ -2849,6 +3149,56 @@ func (mr *MockAppStreamAPIMockRecorder) UpdateDirectoryConfigWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDirectoryConfigWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).UpdateDirectoryConfigWithContext), varargs...)
+}
+
+// UpdateEntitlement mocks base method
+func (m *MockAppStreamAPI) UpdateEntitlement(arg0 *appstream.UpdateEntitlementInput) (*appstream.UpdateEntitlementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateEntitlement", arg0)
+	ret0, _ := ret[0].(*appstream.UpdateEntitlementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateEntitlement indicates an expected call of UpdateEntitlement
+func (mr *MockAppStreamAPIMockRecorder) UpdateEntitlement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEntitlement", reflect.TypeOf((*MockAppStreamAPI)(nil).UpdateEntitlement), arg0)
+}
+
+// UpdateEntitlementRequest mocks base method
+func (m *MockAppStreamAPI) UpdateEntitlementRequest(arg0 *appstream.UpdateEntitlementInput) (*request.Request, *appstream.UpdateEntitlementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateEntitlementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appstream.UpdateEntitlementOutput)
+	return ret0, ret1
+}
+
+// UpdateEntitlementRequest indicates an expected call of UpdateEntitlementRequest
+func (mr *MockAppStreamAPIMockRecorder) UpdateEntitlementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEntitlementRequest", reflect.TypeOf((*MockAppStreamAPI)(nil).UpdateEntitlementRequest), arg0)
+}
+
+// UpdateEntitlementWithContext mocks base method
+func (m *MockAppStreamAPI) UpdateEntitlementWithContext(arg0 context.Context, arg1 *appstream.UpdateEntitlementInput, arg2 ...request.Option) (*appstream.UpdateEntitlementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateEntitlementWithContext", varargs...)
+	ret0, _ := ret[0].(*appstream.UpdateEntitlementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateEntitlementWithContext indicates an expected call of UpdateEntitlementWithContext
+func (mr *MockAppStreamAPIMockRecorder) UpdateEntitlementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEntitlementWithContext", reflect.TypeOf((*MockAppStreamAPI)(nil).UpdateEntitlementWithContext), varargs...)
 }
 
 // UpdateFleet mocks base method
