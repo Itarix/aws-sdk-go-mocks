@@ -2432,6 +2432,56 @@ func (mr *MockLocationServiceAPIMockRecorder) SearchPlaceIndexForPositionWithCon
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchPlaceIndexForPositionWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).SearchPlaceIndexForPositionWithContext), varargs...)
 }
 
+// SearchPlaceIndexForSuggestions mocks base method
+func (m *MockLocationServiceAPI) SearchPlaceIndexForSuggestions(arg0 *locationservice.SearchPlaceIndexForSuggestionsInput) (*locationservice.SearchPlaceIndexForSuggestionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchPlaceIndexForSuggestions", arg0)
+	ret0, _ := ret[0].(*locationservice.SearchPlaceIndexForSuggestionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchPlaceIndexForSuggestions indicates an expected call of SearchPlaceIndexForSuggestions
+func (mr *MockLocationServiceAPIMockRecorder) SearchPlaceIndexForSuggestions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchPlaceIndexForSuggestions", reflect.TypeOf((*MockLocationServiceAPI)(nil).SearchPlaceIndexForSuggestions), arg0)
+}
+
+// SearchPlaceIndexForSuggestionsRequest mocks base method
+func (m *MockLocationServiceAPI) SearchPlaceIndexForSuggestionsRequest(arg0 *locationservice.SearchPlaceIndexForSuggestionsInput) (*request.Request, *locationservice.SearchPlaceIndexForSuggestionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchPlaceIndexForSuggestionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*locationservice.SearchPlaceIndexForSuggestionsOutput)
+	return ret0, ret1
+}
+
+// SearchPlaceIndexForSuggestionsRequest indicates an expected call of SearchPlaceIndexForSuggestionsRequest
+func (mr *MockLocationServiceAPIMockRecorder) SearchPlaceIndexForSuggestionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchPlaceIndexForSuggestionsRequest", reflect.TypeOf((*MockLocationServiceAPI)(nil).SearchPlaceIndexForSuggestionsRequest), arg0)
+}
+
+// SearchPlaceIndexForSuggestionsWithContext mocks base method
+func (m *MockLocationServiceAPI) SearchPlaceIndexForSuggestionsWithContext(arg0 context.Context, arg1 *locationservice.SearchPlaceIndexForSuggestionsInput, arg2 ...request.Option) (*locationservice.SearchPlaceIndexForSuggestionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchPlaceIndexForSuggestionsWithContext", varargs...)
+	ret0, _ := ret[0].(*locationservice.SearchPlaceIndexForSuggestionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchPlaceIndexForSuggestionsWithContext indicates an expected call of SearchPlaceIndexForSuggestionsWithContext
+func (mr *MockLocationServiceAPIMockRecorder) SearchPlaceIndexForSuggestionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchPlaceIndexForSuggestionsWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).SearchPlaceIndexForSuggestionsWithContext), varargs...)
+}
+
 // SearchPlaceIndexForText mocks base method
 func (m *MockLocationServiceAPI) SearchPlaceIndexForText(arg0 *locationservice.SearchPlaceIndexForTextInput) (*locationservice.SearchPlaceIndexForTextOutput, error) {
 	m.ctrl.T.Helper()

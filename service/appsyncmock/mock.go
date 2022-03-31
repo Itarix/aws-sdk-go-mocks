@@ -35,6 +35,56 @@ func (m *MockAppSyncAPI) EXPECT() *MockAppSyncAPIMockRecorder {
 	return m.recorder
 }
 
+// AssociateApi mocks base method
+func (m *MockAppSyncAPI) AssociateApi(arg0 *appsync.AssociateApiInput) (*appsync.AssociateApiOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateApi", arg0)
+	ret0, _ := ret[0].(*appsync.AssociateApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateApi indicates an expected call of AssociateApi
+func (mr *MockAppSyncAPIMockRecorder) AssociateApi(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApi", reflect.TypeOf((*MockAppSyncAPI)(nil).AssociateApi), arg0)
+}
+
+// AssociateApiRequest mocks base method
+func (m *MockAppSyncAPI) AssociateApiRequest(arg0 *appsync.AssociateApiInput) (*request.Request, *appsync.AssociateApiOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateApiRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.AssociateApiOutput)
+	return ret0, ret1
+}
+
+// AssociateApiRequest indicates an expected call of AssociateApiRequest
+func (mr *MockAppSyncAPIMockRecorder) AssociateApiRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApiRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).AssociateApiRequest), arg0)
+}
+
+// AssociateApiWithContext mocks base method
+func (m *MockAppSyncAPI) AssociateApiWithContext(arg0 context.Context, arg1 *appsync.AssociateApiInput, arg2 ...request.Option) (*appsync.AssociateApiOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateApiWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.AssociateApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateApiWithContext indicates an expected call of AssociateApiWithContext
+func (mr *MockAppSyncAPIMockRecorder) AssociateApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).AssociateApiWithContext), varargs...)
+}
+
 // CreateApiCache mocks base method
 func (m *MockAppSyncAPI) CreateApiCache(arg0 *appsync.CreateApiCacheInput) (*appsync.CreateApiCacheOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +233,56 @@ func (mr *MockAppSyncAPIMockRecorder) CreateDataSourceWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataSourceWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateDataSourceWithContext), varargs...)
+}
+
+// CreateDomainName mocks base method
+func (m *MockAppSyncAPI) CreateDomainName(arg0 *appsync.CreateDomainNameInput) (*appsync.CreateDomainNameOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDomainName", arg0)
+	ret0, _ := ret[0].(*appsync.CreateDomainNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDomainName indicates an expected call of CreateDomainName
+func (mr *MockAppSyncAPIMockRecorder) CreateDomainName(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainName", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateDomainName), arg0)
+}
+
+// CreateDomainNameRequest mocks base method
+func (m *MockAppSyncAPI) CreateDomainNameRequest(arg0 *appsync.CreateDomainNameInput) (*request.Request, *appsync.CreateDomainNameOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDomainNameRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.CreateDomainNameOutput)
+	return ret0, ret1
+}
+
+// CreateDomainNameRequest indicates an expected call of CreateDomainNameRequest
+func (mr *MockAppSyncAPIMockRecorder) CreateDomainNameRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainNameRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateDomainNameRequest), arg0)
+}
+
+// CreateDomainNameWithContext mocks base method
+func (m *MockAppSyncAPI) CreateDomainNameWithContext(arg0 context.Context, arg1 *appsync.CreateDomainNameInput, arg2 ...request.Option) (*appsync.CreateDomainNameOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDomainNameWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.CreateDomainNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDomainNameWithContext indicates an expected call of CreateDomainNameWithContext
+func (mr *MockAppSyncAPIMockRecorder) CreateDomainNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainNameWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).CreateDomainNameWithContext), varargs...)
 }
 
 // CreateFunction mocks base method
@@ -535,6 +635,56 @@ func (mr *MockAppSyncAPIMockRecorder) DeleteDataSourceWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataSourceWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteDataSourceWithContext), varargs...)
 }
 
+// DeleteDomainName mocks base method
+func (m *MockAppSyncAPI) DeleteDomainName(arg0 *appsync.DeleteDomainNameInput) (*appsync.DeleteDomainNameOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDomainName", arg0)
+	ret0, _ := ret[0].(*appsync.DeleteDomainNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDomainName indicates an expected call of DeleteDomainName
+func (mr *MockAppSyncAPIMockRecorder) DeleteDomainName(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainName", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteDomainName), arg0)
+}
+
+// DeleteDomainNameRequest mocks base method
+func (m *MockAppSyncAPI) DeleteDomainNameRequest(arg0 *appsync.DeleteDomainNameInput) (*request.Request, *appsync.DeleteDomainNameOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDomainNameRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.DeleteDomainNameOutput)
+	return ret0, ret1
+}
+
+// DeleteDomainNameRequest indicates an expected call of DeleteDomainNameRequest
+func (mr *MockAppSyncAPIMockRecorder) DeleteDomainNameRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainNameRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteDomainNameRequest), arg0)
+}
+
+// DeleteDomainNameWithContext mocks base method
+func (m *MockAppSyncAPI) DeleteDomainNameWithContext(arg0 context.Context, arg1 *appsync.DeleteDomainNameInput, arg2 ...request.Option) (*appsync.DeleteDomainNameOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDomainNameWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.DeleteDomainNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDomainNameWithContext indicates an expected call of DeleteDomainNameWithContext
+func (mr *MockAppSyncAPIMockRecorder) DeleteDomainNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainNameWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteDomainNameWithContext), varargs...)
+}
+
 // DeleteFunction mocks base method
 func (m *MockAppSyncAPI) DeleteFunction(arg0 *appsync.DeleteFunctionInput) (*appsync.DeleteFunctionOutput, error) {
 	m.ctrl.T.Helper()
@@ -735,6 +885,56 @@ func (mr *MockAppSyncAPIMockRecorder) DeleteTypeWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTypeWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DeleteTypeWithContext), varargs...)
 }
 
+// DisassociateApi mocks base method
+func (m *MockAppSyncAPI) DisassociateApi(arg0 *appsync.DisassociateApiInput) (*appsync.DisassociateApiOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateApi", arg0)
+	ret0, _ := ret[0].(*appsync.DisassociateApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateApi indicates an expected call of DisassociateApi
+func (mr *MockAppSyncAPIMockRecorder) DisassociateApi(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApi", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateApi), arg0)
+}
+
+// DisassociateApiRequest mocks base method
+func (m *MockAppSyncAPI) DisassociateApiRequest(arg0 *appsync.DisassociateApiInput) (*request.Request, *appsync.DisassociateApiOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateApiRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.DisassociateApiOutput)
+	return ret0, ret1
+}
+
+// DisassociateApiRequest indicates an expected call of DisassociateApiRequest
+func (mr *MockAppSyncAPIMockRecorder) DisassociateApiRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApiRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateApiRequest), arg0)
+}
+
+// DisassociateApiWithContext mocks base method
+func (m *MockAppSyncAPI) DisassociateApiWithContext(arg0 context.Context, arg1 *appsync.DisassociateApiInput, arg2 ...request.Option) (*appsync.DisassociateApiOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateApiWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.DisassociateApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateApiWithContext indicates an expected call of DisassociateApiWithContext
+func (mr *MockAppSyncAPIMockRecorder) DisassociateApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateApiWithContext), varargs...)
+}
+
 // FlushApiCache mocks base method
 func (m *MockAppSyncAPI) FlushApiCache(arg0 *appsync.FlushApiCacheInput) (*appsync.FlushApiCacheOutput, error) {
 	m.ctrl.T.Helper()
@@ -783,6 +983,56 @@ func (mr *MockAppSyncAPIMockRecorder) FlushApiCacheWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FlushApiCacheWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).FlushApiCacheWithContext), varargs...)
+}
+
+// GetApiAssociation mocks base method
+func (m *MockAppSyncAPI) GetApiAssociation(arg0 *appsync.GetApiAssociationInput) (*appsync.GetApiAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetApiAssociation", arg0)
+	ret0, _ := ret[0].(*appsync.GetApiAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetApiAssociation indicates an expected call of GetApiAssociation
+func (mr *MockAppSyncAPIMockRecorder) GetApiAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiAssociation", reflect.TypeOf((*MockAppSyncAPI)(nil).GetApiAssociation), arg0)
+}
+
+// GetApiAssociationRequest mocks base method
+func (m *MockAppSyncAPI) GetApiAssociationRequest(arg0 *appsync.GetApiAssociationInput) (*request.Request, *appsync.GetApiAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetApiAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.GetApiAssociationOutput)
+	return ret0, ret1
+}
+
+// GetApiAssociationRequest indicates an expected call of GetApiAssociationRequest
+func (mr *MockAppSyncAPIMockRecorder) GetApiAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiAssociationRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).GetApiAssociationRequest), arg0)
+}
+
+// GetApiAssociationWithContext mocks base method
+func (m *MockAppSyncAPI) GetApiAssociationWithContext(arg0 context.Context, arg1 *appsync.GetApiAssociationInput, arg2 ...request.Option) (*appsync.GetApiAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetApiAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.GetApiAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetApiAssociationWithContext indicates an expected call of GetApiAssociationWithContext
+func (mr *MockAppSyncAPIMockRecorder) GetApiAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApiAssociationWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetApiAssociationWithContext), varargs...)
 }
 
 // GetApiCache mocks base method
@@ -883,6 +1133,56 @@ func (mr *MockAppSyncAPIMockRecorder) GetDataSourceWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataSourceWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetDataSourceWithContext), varargs...)
+}
+
+// GetDomainName mocks base method
+func (m *MockAppSyncAPI) GetDomainName(arg0 *appsync.GetDomainNameInput) (*appsync.GetDomainNameOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDomainName", arg0)
+	ret0, _ := ret[0].(*appsync.GetDomainNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDomainName indicates an expected call of GetDomainName
+func (mr *MockAppSyncAPIMockRecorder) GetDomainName(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainName", reflect.TypeOf((*MockAppSyncAPI)(nil).GetDomainName), arg0)
+}
+
+// GetDomainNameRequest mocks base method
+func (m *MockAppSyncAPI) GetDomainNameRequest(arg0 *appsync.GetDomainNameInput) (*request.Request, *appsync.GetDomainNameOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDomainNameRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.GetDomainNameOutput)
+	return ret0, ret1
+}
+
+// GetDomainNameRequest indicates an expected call of GetDomainNameRequest
+func (mr *MockAppSyncAPIMockRecorder) GetDomainNameRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainNameRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).GetDomainNameRequest), arg0)
+}
+
+// GetDomainNameWithContext mocks base method
+func (m *MockAppSyncAPI) GetDomainNameWithContext(arg0 context.Context, arg1 *appsync.GetDomainNameInput, arg2 ...request.Option) (*appsync.GetDomainNameOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDomainNameWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.GetDomainNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDomainNameWithContext indicates an expected call of GetDomainNameWithContext
+func (mr *MockAppSyncAPIMockRecorder) GetDomainNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainNameWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetDomainNameWithContext), varargs...)
 }
 
 // GetFunction mocks base method
@@ -1283,6 +1583,56 @@ func (mr *MockAppSyncAPIMockRecorder) ListDataSourcesWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataSourcesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDataSourcesWithContext), varargs...)
+}
+
+// ListDomainNames mocks base method
+func (m *MockAppSyncAPI) ListDomainNames(arg0 *appsync.ListDomainNamesInput) (*appsync.ListDomainNamesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDomainNames", arg0)
+	ret0, _ := ret[0].(*appsync.ListDomainNamesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDomainNames indicates an expected call of ListDomainNames
+func (mr *MockAppSyncAPIMockRecorder) ListDomainNames(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainNames", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDomainNames), arg0)
+}
+
+// ListDomainNamesRequest mocks base method
+func (m *MockAppSyncAPI) ListDomainNamesRequest(arg0 *appsync.ListDomainNamesInput) (*request.Request, *appsync.ListDomainNamesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDomainNamesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.ListDomainNamesOutput)
+	return ret0, ret1
+}
+
+// ListDomainNamesRequest indicates an expected call of ListDomainNamesRequest
+func (mr *MockAppSyncAPIMockRecorder) ListDomainNamesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainNamesRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDomainNamesRequest), arg0)
+}
+
+// ListDomainNamesWithContext mocks base method
+func (m *MockAppSyncAPI) ListDomainNamesWithContext(arg0 context.Context, arg1 *appsync.ListDomainNamesInput, arg2 ...request.Option) (*appsync.ListDomainNamesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDomainNamesWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.ListDomainNamesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDomainNamesWithContext indicates an expected call of ListDomainNamesWithContext
+func (mr *MockAppSyncAPIMockRecorder) ListDomainNamesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainNamesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDomainNamesWithContext), varargs...)
 }
 
 // ListFunctions mocks base method
@@ -1883,6 +2233,56 @@ func (mr *MockAppSyncAPIMockRecorder) UpdateDataSourceWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataSourceWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateDataSourceWithContext), varargs...)
+}
+
+// UpdateDomainName mocks base method
+func (m *MockAppSyncAPI) UpdateDomainName(arg0 *appsync.UpdateDomainNameInput) (*appsync.UpdateDomainNameOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDomainName", arg0)
+	ret0, _ := ret[0].(*appsync.UpdateDomainNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDomainName indicates an expected call of UpdateDomainName
+func (mr *MockAppSyncAPIMockRecorder) UpdateDomainName(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainName", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateDomainName), arg0)
+}
+
+// UpdateDomainNameRequest mocks base method
+func (m *MockAppSyncAPI) UpdateDomainNameRequest(arg0 *appsync.UpdateDomainNameInput) (*request.Request, *appsync.UpdateDomainNameOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDomainNameRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.UpdateDomainNameOutput)
+	return ret0, ret1
+}
+
+// UpdateDomainNameRequest indicates an expected call of UpdateDomainNameRequest
+func (mr *MockAppSyncAPIMockRecorder) UpdateDomainNameRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainNameRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateDomainNameRequest), arg0)
+}
+
+// UpdateDomainNameWithContext mocks base method
+func (m *MockAppSyncAPI) UpdateDomainNameWithContext(arg0 context.Context, arg1 *appsync.UpdateDomainNameInput, arg2 ...request.Option) (*appsync.UpdateDomainNameOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDomainNameWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.UpdateDomainNameOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDomainNameWithContext indicates an expected call of UpdateDomainNameWithContext
+func (mr *MockAppSyncAPIMockRecorder) UpdateDomainNameWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainNameWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateDomainNameWithContext), varargs...)
 }
 
 // UpdateFunction mocks base method
