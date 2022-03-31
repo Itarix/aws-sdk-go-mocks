@@ -235,6 +235,56 @@ func (mr *MockDevOpsGuruAPIMockRecorder) DescribeAnomalyWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnomalyWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeAnomalyWithContext), varargs...)
 }
 
+// DescribeEventSourcesConfig mocks base method
+func (m *MockDevOpsGuruAPI) DescribeEventSourcesConfig(arg0 *devopsguru.DescribeEventSourcesConfigInput) (*devopsguru.DescribeEventSourcesConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEventSourcesConfig", arg0)
+	ret0, _ := ret[0].(*devopsguru.DescribeEventSourcesConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEventSourcesConfig indicates an expected call of DescribeEventSourcesConfig
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeEventSourcesConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventSourcesConfig", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeEventSourcesConfig), arg0)
+}
+
+// DescribeEventSourcesConfigRequest mocks base method
+func (m *MockDevOpsGuruAPI) DescribeEventSourcesConfigRequest(arg0 *devopsguru.DescribeEventSourcesConfigInput) (*request.Request, *devopsguru.DescribeEventSourcesConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEventSourcesConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devopsguru.DescribeEventSourcesConfigOutput)
+	return ret0, ret1
+}
+
+// DescribeEventSourcesConfigRequest indicates an expected call of DescribeEventSourcesConfigRequest
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeEventSourcesConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventSourcesConfigRequest", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeEventSourcesConfigRequest), arg0)
+}
+
+// DescribeEventSourcesConfigWithContext mocks base method
+func (m *MockDevOpsGuruAPI) DescribeEventSourcesConfigWithContext(arg0 context.Context, arg1 *devopsguru.DescribeEventSourcesConfigInput, arg2 ...request.Option) (*devopsguru.DescribeEventSourcesConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEventSourcesConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*devopsguru.DescribeEventSourcesConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEventSourcesConfigWithContext indicates an expected call of DescribeEventSourcesConfigWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) DescribeEventSourcesConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventSourcesConfigWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DescribeEventSourcesConfigWithContext), varargs...)
+}
+
 // DescribeFeedback mocks base method
 func (m *MockDevOpsGuruAPI) DescribeFeedback(arg0 *devopsguru.DescribeFeedbackInput) (*devopsguru.DescribeFeedbackOutput, error) {
 	m.ctrl.T.Helper()
@@ -1629,6 +1679,56 @@ func (mr *MockDevOpsGuruAPIMockRecorder) StartCostEstimationWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCostEstimationWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).StartCostEstimationWithContext), varargs...)
+}
+
+// UpdateEventSourcesConfig mocks base method
+func (m *MockDevOpsGuruAPI) UpdateEventSourcesConfig(arg0 *devopsguru.UpdateEventSourcesConfigInput) (*devopsguru.UpdateEventSourcesConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateEventSourcesConfig", arg0)
+	ret0, _ := ret[0].(*devopsguru.UpdateEventSourcesConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateEventSourcesConfig indicates an expected call of UpdateEventSourcesConfig
+func (mr *MockDevOpsGuruAPIMockRecorder) UpdateEventSourcesConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEventSourcesConfig", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).UpdateEventSourcesConfig), arg0)
+}
+
+// UpdateEventSourcesConfigRequest mocks base method
+func (m *MockDevOpsGuruAPI) UpdateEventSourcesConfigRequest(arg0 *devopsguru.UpdateEventSourcesConfigInput) (*request.Request, *devopsguru.UpdateEventSourcesConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateEventSourcesConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devopsguru.UpdateEventSourcesConfigOutput)
+	return ret0, ret1
+}
+
+// UpdateEventSourcesConfigRequest indicates an expected call of UpdateEventSourcesConfigRequest
+func (mr *MockDevOpsGuruAPIMockRecorder) UpdateEventSourcesConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEventSourcesConfigRequest", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).UpdateEventSourcesConfigRequest), arg0)
+}
+
+// UpdateEventSourcesConfigWithContext mocks base method
+func (m *MockDevOpsGuruAPI) UpdateEventSourcesConfigWithContext(arg0 context.Context, arg1 *devopsguru.UpdateEventSourcesConfigInput, arg2 ...request.Option) (*devopsguru.UpdateEventSourcesConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateEventSourcesConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*devopsguru.UpdateEventSourcesConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateEventSourcesConfigWithContext indicates an expected call of UpdateEventSourcesConfigWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) UpdateEventSourcesConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEventSourcesConfigWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).UpdateEventSourcesConfigWithContext), varargs...)
 }
 
 // UpdateResourceCollection mocks base method

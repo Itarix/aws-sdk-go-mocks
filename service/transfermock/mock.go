@@ -1865,3 +1865,69 @@ func (mr *MockTransferAPIMockRecorder) UpdateUserWithContext(arg0, arg1 interfac
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserWithContext", reflect.TypeOf((*MockTransferAPI)(nil).UpdateUserWithContext), varargs...)
 }
+
+// WaitUntilServerOffline mocks base method
+func (m *MockTransferAPI) WaitUntilServerOffline(arg0 *transfer.DescribeServerInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilServerOffline", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilServerOffline indicates an expected call of WaitUntilServerOffline
+func (mr *MockTransferAPIMockRecorder) WaitUntilServerOffline(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilServerOffline", reflect.TypeOf((*MockTransferAPI)(nil).WaitUntilServerOffline), arg0)
+}
+
+// WaitUntilServerOfflineWithContext mocks base method
+func (m *MockTransferAPI) WaitUntilServerOfflineWithContext(arg0 context.Context, arg1 *transfer.DescribeServerInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilServerOfflineWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilServerOfflineWithContext indicates an expected call of WaitUntilServerOfflineWithContext
+func (mr *MockTransferAPIMockRecorder) WaitUntilServerOfflineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilServerOfflineWithContext", reflect.TypeOf((*MockTransferAPI)(nil).WaitUntilServerOfflineWithContext), varargs...)
+}
+
+// WaitUntilServerOnline mocks base method
+func (m *MockTransferAPI) WaitUntilServerOnline(arg0 *transfer.DescribeServerInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilServerOnline", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilServerOnline indicates an expected call of WaitUntilServerOnline
+func (mr *MockTransferAPIMockRecorder) WaitUntilServerOnline(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilServerOnline", reflect.TypeOf((*MockTransferAPI)(nil).WaitUntilServerOnline), arg0)
+}
+
+// WaitUntilServerOnlineWithContext mocks base method
+func (m *MockTransferAPI) WaitUntilServerOnlineWithContext(arg0 context.Context, arg1 *transfer.DescribeServerInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilServerOnlineWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilServerOnlineWithContext indicates an expected call of WaitUntilServerOnlineWithContext
+func (mr *MockTransferAPIMockRecorder) WaitUntilServerOnlineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilServerOnlineWithContext", reflect.TypeOf((*MockTransferAPI)(nil).WaitUntilServerOnlineWithContext), varargs...)
+}
