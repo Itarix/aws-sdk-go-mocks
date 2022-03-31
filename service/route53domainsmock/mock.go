@@ -235,6 +235,56 @@ func (mr *MockRoute53DomainsAPIMockRecorder) CheckDomainTransferabilityWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CheckDomainTransferabilityWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).CheckDomainTransferabilityWithContext), varargs...)
 }
 
+// DeleteDomain mocks base method
+func (m *MockRoute53DomainsAPI) DeleteDomain(arg0 *route53domains.DeleteDomainInput) (*route53domains.DeleteDomainOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDomain", arg0)
+	ret0, _ := ret[0].(*route53domains.DeleteDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDomain indicates an expected call of DeleteDomain
+func (mr *MockRoute53DomainsAPIMockRecorder) DeleteDomain(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomain", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DeleteDomain), arg0)
+}
+
+// DeleteDomainRequest mocks base method
+func (m *MockRoute53DomainsAPI) DeleteDomainRequest(arg0 *route53domains.DeleteDomainInput) (*request.Request, *route53domains.DeleteDomainOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDomainRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53domains.DeleteDomainOutput)
+	return ret0, ret1
+}
+
+// DeleteDomainRequest indicates an expected call of DeleteDomainRequest
+func (mr *MockRoute53DomainsAPIMockRecorder) DeleteDomainRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DeleteDomainRequest), arg0)
+}
+
+// DeleteDomainWithContext mocks base method
+func (m *MockRoute53DomainsAPI) DeleteDomainWithContext(arg0 context.Context, arg1 *route53domains.DeleteDomainInput, arg2 ...request.Option) (*route53domains.DeleteDomainOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDomainWithContext", varargs...)
+	ret0, _ := ret[0].(*route53domains.DeleteDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDomainWithContext indicates an expected call of DeleteDomainWithContext
+func (mr *MockRoute53DomainsAPIMockRecorder) DeleteDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DeleteDomainWithContext), varargs...)
+}
+
 // DeleteTagsForDomain mocks base method
 func (m *MockRoute53DomainsAPI) DeleteTagsForDomain(arg0 *route53domains.DeleteTagsForDomainInput) (*route53domains.DeleteTagsForDomainOutput, error) {
 	m.ctrl.T.Helper()
@@ -851,6 +901,89 @@ func (mr *MockRoute53DomainsAPIMockRecorder) ListOperationsWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperationsWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListOperationsWithContext), varargs...)
 }
 
+// ListPrices mocks base method
+func (m *MockRoute53DomainsAPI) ListPrices(arg0 *route53domains.ListPricesInput) (*route53domains.ListPricesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPrices", arg0)
+	ret0, _ := ret[0].(*route53domains.ListPricesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPrices indicates an expected call of ListPrices
+func (mr *MockRoute53DomainsAPIMockRecorder) ListPrices(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPrices", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListPrices), arg0)
+}
+
+// ListPricesPages mocks base method
+func (m *MockRoute53DomainsAPI) ListPricesPages(arg0 *route53domains.ListPricesInput, arg1 func(*route53domains.ListPricesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPricesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPricesPages indicates an expected call of ListPricesPages
+func (mr *MockRoute53DomainsAPIMockRecorder) ListPricesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPricesPages", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListPricesPages), arg0, arg1)
+}
+
+// ListPricesPagesWithContext mocks base method
+func (m *MockRoute53DomainsAPI) ListPricesPagesWithContext(arg0 context.Context, arg1 *route53domains.ListPricesInput, arg2 func(*route53domains.ListPricesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPricesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPricesPagesWithContext indicates an expected call of ListPricesPagesWithContext
+func (mr *MockRoute53DomainsAPIMockRecorder) ListPricesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPricesPagesWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListPricesPagesWithContext), varargs...)
+}
+
+// ListPricesRequest mocks base method
+func (m *MockRoute53DomainsAPI) ListPricesRequest(arg0 *route53domains.ListPricesInput) (*request.Request, *route53domains.ListPricesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPricesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53domains.ListPricesOutput)
+	return ret0, ret1
+}
+
+// ListPricesRequest indicates an expected call of ListPricesRequest
+func (mr *MockRoute53DomainsAPIMockRecorder) ListPricesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPricesRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListPricesRequest), arg0)
+}
+
+// ListPricesWithContext mocks base method
+func (m *MockRoute53DomainsAPI) ListPricesWithContext(arg0 context.Context, arg1 *route53domains.ListPricesInput, arg2 ...request.Option) (*route53domains.ListPricesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPricesWithContext", varargs...)
+	ret0, _ := ret[0].(*route53domains.ListPricesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPricesWithContext indicates an expected call of ListPricesWithContext
+func (mr *MockRoute53DomainsAPIMockRecorder) ListPricesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPricesWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListPricesWithContext), varargs...)
+}
+
 // ListTagsForDomain mocks base method
 func (m *MockRoute53DomainsAPI) ListTagsForDomain(arg0 *route53domains.ListTagsForDomainInput) (*route53domains.ListTagsForDomainOutput, error) {
 	m.ctrl.T.Helper()
@@ -1464,6 +1597,39 @@ func (m *MockRoute53DomainsAPI) ViewBilling(arg0 *route53domains.ViewBillingInpu
 func (mr *MockRoute53DomainsAPIMockRecorder) ViewBilling(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ViewBilling", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ViewBilling), arg0)
+}
+
+// ViewBillingPages mocks base method
+func (m *MockRoute53DomainsAPI) ViewBillingPages(arg0 *route53domains.ViewBillingInput, arg1 func(*route53domains.ViewBillingOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ViewBillingPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ViewBillingPages indicates an expected call of ViewBillingPages
+func (mr *MockRoute53DomainsAPIMockRecorder) ViewBillingPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ViewBillingPages", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ViewBillingPages), arg0, arg1)
+}
+
+// ViewBillingPagesWithContext mocks base method
+func (m *MockRoute53DomainsAPI) ViewBillingPagesWithContext(arg0 context.Context, arg1 *route53domains.ViewBillingInput, arg2 func(*route53domains.ViewBillingOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ViewBillingPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ViewBillingPagesWithContext indicates an expected call of ViewBillingPagesWithContext
+func (mr *MockRoute53DomainsAPIMockRecorder) ViewBillingPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ViewBillingPagesWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ViewBillingPagesWithContext), varargs...)
 }
 
 // ViewBillingRequest mocks base method

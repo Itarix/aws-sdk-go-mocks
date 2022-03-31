@@ -1050,6 +1050,156 @@ func (mr *MockRoute53RecoveryControlConfigAPIMockRecorder) ListSafetyRulesWithCo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSafetyRulesWithContext", reflect.TypeOf((*MockRoute53RecoveryControlConfigAPI)(nil).ListSafetyRulesWithContext), varargs...)
 }
 
+// ListTagsForResource mocks base method
+func (m *MockRoute53RecoveryControlConfigAPI) ListTagsForResource(arg0 *route53recoverycontrolconfig.ListTagsForResourceInput) (*route53recoverycontrolconfig.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*route53recoverycontrolconfig.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockRoute53RecoveryControlConfigAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockRoute53RecoveryControlConfigAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockRoute53RecoveryControlConfigAPI) ListTagsForResourceRequest(arg0 *route53recoverycontrolconfig.ListTagsForResourceInput) (*request.Request, *route53recoverycontrolconfig.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53recoverycontrolconfig.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockRoute53RecoveryControlConfigAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockRoute53RecoveryControlConfigAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockRoute53RecoveryControlConfigAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *route53recoverycontrolconfig.ListTagsForResourceInput, arg2 ...request.Option) (*route53recoverycontrolconfig.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*route53recoverycontrolconfig.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockRoute53RecoveryControlConfigAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockRoute53RecoveryControlConfigAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// TagResource mocks base method
+func (m *MockRoute53RecoveryControlConfigAPI) TagResource(arg0 *route53recoverycontrolconfig.TagResourceInput) (*route53recoverycontrolconfig.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*route53recoverycontrolconfig.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockRoute53RecoveryControlConfigAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockRoute53RecoveryControlConfigAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockRoute53RecoveryControlConfigAPI) TagResourceRequest(arg0 *route53recoverycontrolconfig.TagResourceInput) (*request.Request, *route53recoverycontrolconfig.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53recoverycontrolconfig.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockRoute53RecoveryControlConfigAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockRoute53RecoveryControlConfigAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockRoute53RecoveryControlConfigAPI) TagResourceWithContext(arg0 context.Context, arg1 *route53recoverycontrolconfig.TagResourceInput, arg2 ...request.Option) (*route53recoverycontrolconfig.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*route53recoverycontrolconfig.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockRoute53RecoveryControlConfigAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockRoute53RecoveryControlConfigAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockRoute53RecoveryControlConfigAPI) UntagResource(arg0 *route53recoverycontrolconfig.UntagResourceInput) (*route53recoverycontrolconfig.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*route53recoverycontrolconfig.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockRoute53RecoveryControlConfigAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockRoute53RecoveryControlConfigAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockRoute53RecoveryControlConfigAPI) UntagResourceRequest(arg0 *route53recoverycontrolconfig.UntagResourceInput) (*request.Request, *route53recoverycontrolconfig.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53recoverycontrolconfig.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockRoute53RecoveryControlConfigAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockRoute53RecoveryControlConfigAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockRoute53RecoveryControlConfigAPI) UntagResourceWithContext(arg0 context.Context, arg1 *route53recoverycontrolconfig.UntagResourceInput, arg2 ...request.Option) (*route53recoverycontrolconfig.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*route53recoverycontrolconfig.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockRoute53RecoveryControlConfigAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockRoute53RecoveryControlConfigAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
 // UpdateControlPanel mocks base method
 func (m *MockRoute53RecoveryControlConfigAPI) UpdateControlPanel(arg0 *route53recoverycontrolconfig.UpdateControlPanelInput) (*route53recoverycontrolconfig.UpdateControlPanelOutput, error) {
 	m.ctrl.T.Helper()

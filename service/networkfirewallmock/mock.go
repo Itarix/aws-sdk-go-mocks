@@ -700,6 +700,56 @@ func (mr *MockNetworkFirewallAPIMockRecorder) DescribeRuleGroup(arg0 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRuleGroup", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).DescribeRuleGroup), arg0)
 }
 
+// DescribeRuleGroupMetadata mocks base method
+func (m *MockNetworkFirewallAPI) DescribeRuleGroupMetadata(arg0 *networkfirewall.DescribeRuleGroupMetadataInput) (*networkfirewall.DescribeRuleGroupMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRuleGroupMetadata", arg0)
+	ret0, _ := ret[0].(*networkfirewall.DescribeRuleGroupMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRuleGroupMetadata indicates an expected call of DescribeRuleGroupMetadata
+func (mr *MockNetworkFirewallAPIMockRecorder) DescribeRuleGroupMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRuleGroupMetadata", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).DescribeRuleGroupMetadata), arg0)
+}
+
+// DescribeRuleGroupMetadataRequest mocks base method
+func (m *MockNetworkFirewallAPI) DescribeRuleGroupMetadataRequest(arg0 *networkfirewall.DescribeRuleGroupMetadataInput) (*request.Request, *networkfirewall.DescribeRuleGroupMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRuleGroupMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkfirewall.DescribeRuleGroupMetadataOutput)
+	return ret0, ret1
+}
+
+// DescribeRuleGroupMetadataRequest indicates an expected call of DescribeRuleGroupMetadataRequest
+func (mr *MockNetworkFirewallAPIMockRecorder) DescribeRuleGroupMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRuleGroupMetadataRequest", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).DescribeRuleGroupMetadataRequest), arg0)
+}
+
+// DescribeRuleGroupMetadataWithContext mocks base method
+func (m *MockNetworkFirewallAPI) DescribeRuleGroupMetadataWithContext(arg0 context.Context, arg1 *networkfirewall.DescribeRuleGroupMetadataInput, arg2 ...request.Option) (*networkfirewall.DescribeRuleGroupMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeRuleGroupMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*networkfirewall.DescribeRuleGroupMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRuleGroupMetadataWithContext indicates an expected call of DescribeRuleGroupMetadataWithContext
+func (mr *MockNetworkFirewallAPIMockRecorder) DescribeRuleGroupMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRuleGroupMetadataWithContext", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).DescribeRuleGroupMetadataWithContext), varargs...)
+}
+
 // DescribeRuleGroupRequest mocks base method
 func (m *MockNetworkFirewallAPI) DescribeRuleGroupRequest(arg0 *networkfirewall.DescribeRuleGroupInput) (*request.Request, *networkfirewall.DescribeRuleGroupOutput) {
 	m.ctrl.T.Helper()
