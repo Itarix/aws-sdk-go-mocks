@@ -400,6 +400,56 @@ func (mr *MockLocationServiceAPIMockRecorder) CalculateRoute(arg0 interface{}) *
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CalculateRoute", reflect.TypeOf((*MockLocationServiceAPI)(nil).CalculateRoute), arg0)
 }
 
+// CalculateRouteMatrix mocks base method
+func (m *MockLocationServiceAPI) CalculateRouteMatrix(arg0 *locationservice.CalculateRouteMatrixInput) (*locationservice.CalculateRouteMatrixOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CalculateRouteMatrix", arg0)
+	ret0, _ := ret[0].(*locationservice.CalculateRouteMatrixOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CalculateRouteMatrix indicates an expected call of CalculateRouteMatrix
+func (mr *MockLocationServiceAPIMockRecorder) CalculateRouteMatrix(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CalculateRouteMatrix", reflect.TypeOf((*MockLocationServiceAPI)(nil).CalculateRouteMatrix), arg0)
+}
+
+// CalculateRouteMatrixRequest mocks base method
+func (m *MockLocationServiceAPI) CalculateRouteMatrixRequest(arg0 *locationservice.CalculateRouteMatrixInput) (*request.Request, *locationservice.CalculateRouteMatrixOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CalculateRouteMatrixRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*locationservice.CalculateRouteMatrixOutput)
+	return ret0, ret1
+}
+
+// CalculateRouteMatrixRequest indicates an expected call of CalculateRouteMatrixRequest
+func (mr *MockLocationServiceAPIMockRecorder) CalculateRouteMatrixRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CalculateRouteMatrixRequest", reflect.TypeOf((*MockLocationServiceAPI)(nil).CalculateRouteMatrixRequest), arg0)
+}
+
+// CalculateRouteMatrixWithContext mocks base method
+func (m *MockLocationServiceAPI) CalculateRouteMatrixWithContext(arg0 context.Context, arg1 *locationservice.CalculateRouteMatrixInput, arg2 ...request.Option) (*locationservice.CalculateRouteMatrixOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CalculateRouteMatrixWithContext", varargs...)
+	ret0, _ := ret[0].(*locationservice.CalculateRouteMatrixOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CalculateRouteMatrixWithContext indicates an expected call of CalculateRouteMatrixWithContext
+func (mr *MockLocationServiceAPIMockRecorder) CalculateRouteMatrixWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CalculateRouteMatrixWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).CalculateRouteMatrixWithContext), varargs...)
+}
+
 // CalculateRouteRequest mocks base method
 func (m *MockLocationServiceAPI) CalculateRouteRequest(arg0 *locationservice.CalculateRouteInput) (*request.Request, *locationservice.CalculateRouteOutput) {
 	m.ctrl.T.Helper()
