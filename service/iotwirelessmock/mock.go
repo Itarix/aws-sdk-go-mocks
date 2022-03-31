@@ -1085,6 +1085,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) DeleteMulticastGroupWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMulticastGroupWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteMulticastGroupWithContext), varargs...)
 }
 
+// DeleteQueuedMessages mocks base method
+func (m *MockIoTWirelessAPI) DeleteQueuedMessages(arg0 *iotwireless.DeleteQueuedMessagesInput) (*iotwireless.DeleteQueuedMessagesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteQueuedMessages", arg0)
+	ret0, _ := ret[0].(*iotwireless.DeleteQueuedMessagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteQueuedMessages indicates an expected call of DeleteQueuedMessages
+func (mr *MockIoTWirelessAPIMockRecorder) DeleteQueuedMessages(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQueuedMessages", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteQueuedMessages), arg0)
+}
+
+// DeleteQueuedMessagesRequest mocks base method
+func (m *MockIoTWirelessAPI) DeleteQueuedMessagesRequest(arg0 *iotwireless.DeleteQueuedMessagesInput) (*request.Request, *iotwireless.DeleteQueuedMessagesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteQueuedMessagesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.DeleteQueuedMessagesOutput)
+	return ret0, ret1
+}
+
+// DeleteQueuedMessagesRequest indicates an expected call of DeleteQueuedMessagesRequest
+func (mr *MockIoTWirelessAPIMockRecorder) DeleteQueuedMessagesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQueuedMessagesRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteQueuedMessagesRequest), arg0)
+}
+
+// DeleteQueuedMessagesWithContext mocks base method
+func (m *MockIoTWirelessAPI) DeleteQueuedMessagesWithContext(arg0 context.Context, arg1 *iotwireless.DeleteQueuedMessagesInput, arg2 ...request.Option) (*iotwireless.DeleteQueuedMessagesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteQueuedMessagesWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.DeleteQueuedMessagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteQueuedMessagesWithContext indicates an expected call of DeleteQueuedMessagesWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) DeleteQueuedMessagesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQueuedMessagesWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteQueuedMessagesWithContext), varargs...)
+}
+
 // DeleteServiceProfile mocks base method
 func (m *MockIoTWirelessAPI) DeleteServiceProfile(arg0 *iotwireless.DeleteServiceProfileInput) (*iotwireless.DeleteServiceProfileOutput, error) {
 	m.ctrl.T.Helper()
@@ -3148,6 +3198,89 @@ func (mr *MockIoTWirelessAPIMockRecorder) ListPartnerAccountsWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPartnerAccountsWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListPartnerAccountsWithContext), varargs...)
+}
+
+// ListQueuedMessages mocks base method
+func (m *MockIoTWirelessAPI) ListQueuedMessages(arg0 *iotwireless.ListQueuedMessagesInput) (*iotwireless.ListQueuedMessagesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListQueuedMessages", arg0)
+	ret0, _ := ret[0].(*iotwireless.ListQueuedMessagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListQueuedMessages indicates an expected call of ListQueuedMessages
+func (mr *MockIoTWirelessAPIMockRecorder) ListQueuedMessages(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueuedMessages", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListQueuedMessages), arg0)
+}
+
+// ListQueuedMessagesPages mocks base method
+func (m *MockIoTWirelessAPI) ListQueuedMessagesPages(arg0 *iotwireless.ListQueuedMessagesInput, arg1 func(*iotwireless.ListQueuedMessagesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListQueuedMessagesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListQueuedMessagesPages indicates an expected call of ListQueuedMessagesPages
+func (mr *MockIoTWirelessAPIMockRecorder) ListQueuedMessagesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueuedMessagesPages", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListQueuedMessagesPages), arg0, arg1)
+}
+
+// ListQueuedMessagesPagesWithContext mocks base method
+func (m *MockIoTWirelessAPI) ListQueuedMessagesPagesWithContext(arg0 context.Context, arg1 *iotwireless.ListQueuedMessagesInput, arg2 func(*iotwireless.ListQueuedMessagesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListQueuedMessagesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListQueuedMessagesPagesWithContext indicates an expected call of ListQueuedMessagesPagesWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) ListQueuedMessagesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueuedMessagesPagesWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListQueuedMessagesPagesWithContext), varargs...)
+}
+
+// ListQueuedMessagesRequest mocks base method
+func (m *MockIoTWirelessAPI) ListQueuedMessagesRequest(arg0 *iotwireless.ListQueuedMessagesInput) (*request.Request, *iotwireless.ListQueuedMessagesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListQueuedMessagesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.ListQueuedMessagesOutput)
+	return ret0, ret1
+}
+
+// ListQueuedMessagesRequest indicates an expected call of ListQueuedMessagesRequest
+func (mr *MockIoTWirelessAPIMockRecorder) ListQueuedMessagesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueuedMessagesRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListQueuedMessagesRequest), arg0)
+}
+
+// ListQueuedMessagesWithContext mocks base method
+func (m *MockIoTWirelessAPI) ListQueuedMessagesWithContext(arg0 context.Context, arg1 *iotwireless.ListQueuedMessagesInput, arg2 ...request.Option) (*iotwireless.ListQueuedMessagesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListQueuedMessagesWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.ListQueuedMessagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListQueuedMessagesWithContext indicates an expected call of ListQueuedMessagesWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) ListQueuedMessagesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueuedMessagesWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListQueuedMessagesWithContext), varargs...)
 }
 
 // ListServiceProfiles mocks base method
