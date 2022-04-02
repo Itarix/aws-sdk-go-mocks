@@ -585,6 +585,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) CreateWorkspacesWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkspacesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateWorkspacesWithContext), varargs...)
 }
 
+// DeleteClientBranding mocks base method
+func (m *MockWorkSpacesAPI) DeleteClientBranding(arg0 *workspaces.DeleteClientBrandingInput) (*workspaces.DeleteClientBrandingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteClientBranding", arg0)
+	ret0, _ := ret[0].(*workspaces.DeleteClientBrandingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteClientBranding indicates an expected call of DeleteClientBranding
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteClientBranding(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClientBranding", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteClientBranding), arg0)
+}
+
+// DeleteClientBrandingRequest mocks base method
+func (m *MockWorkSpacesAPI) DeleteClientBrandingRequest(arg0 *workspaces.DeleteClientBrandingInput) (*request.Request, *workspaces.DeleteClientBrandingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteClientBrandingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DeleteClientBrandingOutput)
+	return ret0, ret1
+}
+
+// DeleteClientBrandingRequest indicates an expected call of DeleteClientBrandingRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteClientBrandingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClientBrandingRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteClientBrandingRequest), arg0)
+}
+
+// DeleteClientBrandingWithContext mocks base method
+func (m *MockWorkSpacesAPI) DeleteClientBrandingWithContext(arg0 context.Context, arg1 *workspaces.DeleteClientBrandingInput, arg2 ...request.Option) (*workspaces.DeleteClientBrandingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteClientBrandingWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DeleteClientBrandingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteClientBrandingWithContext indicates an expected call of DeleteClientBrandingWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DeleteClientBrandingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClientBrandingWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DeleteClientBrandingWithContext), varargs...)
+}
+
 // DeleteConnectClientAddIn mocks base method
 func (m *MockWorkSpacesAPI) DeleteConnectClientAddIn(arg0 *workspaces.DeleteConnectClientAddInInput) (*workspaces.DeleteConnectClientAddInOutput, error) {
 	m.ctrl.T.Helper()
@@ -1033,6 +1083,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeAccountWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeAccountWithContext), varargs...)
+}
+
+// DescribeClientBranding mocks base method
+func (m *MockWorkSpacesAPI) DescribeClientBranding(arg0 *workspaces.DescribeClientBrandingInput) (*workspaces.DescribeClientBrandingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeClientBranding", arg0)
+	ret0, _ := ret[0].(*workspaces.DescribeClientBrandingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeClientBranding indicates an expected call of DescribeClientBranding
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeClientBranding(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClientBranding", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeClientBranding), arg0)
+}
+
+// DescribeClientBrandingRequest mocks base method
+func (m *MockWorkSpacesAPI) DescribeClientBrandingRequest(arg0 *workspaces.DescribeClientBrandingInput) (*request.Request, *workspaces.DescribeClientBrandingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeClientBrandingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DescribeClientBrandingOutput)
+	return ret0, ret1
+}
+
+// DescribeClientBrandingRequest indicates an expected call of DescribeClientBrandingRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeClientBrandingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClientBrandingRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeClientBrandingRequest), arg0)
+}
+
+// DescribeClientBrandingWithContext mocks base method
+func (m *MockWorkSpacesAPI) DescribeClientBrandingWithContext(arg0 context.Context, arg1 *workspaces.DescribeClientBrandingInput, arg2 ...request.Option) (*workspaces.DescribeClientBrandingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeClientBrandingWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DescribeClientBrandingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeClientBrandingWithContext indicates an expected call of DescribeClientBrandingWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeClientBrandingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClientBrandingWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeClientBrandingWithContext), varargs...)
 }
 
 // DescribeClientProperties mocks base method
@@ -1882,6 +1982,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) DisassociateIpGroupsWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateIpGroupsWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DisassociateIpGroupsWithContext), varargs...)
+}
+
+// ImportClientBranding mocks base method
+func (m *MockWorkSpacesAPI) ImportClientBranding(arg0 *workspaces.ImportClientBrandingInput) (*workspaces.ImportClientBrandingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportClientBranding", arg0)
+	ret0, _ := ret[0].(*workspaces.ImportClientBrandingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportClientBranding indicates an expected call of ImportClientBranding
+func (mr *MockWorkSpacesAPIMockRecorder) ImportClientBranding(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportClientBranding", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ImportClientBranding), arg0)
+}
+
+// ImportClientBrandingRequest mocks base method
+func (m *MockWorkSpacesAPI) ImportClientBrandingRequest(arg0 *workspaces.ImportClientBrandingInput) (*request.Request, *workspaces.ImportClientBrandingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportClientBrandingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.ImportClientBrandingOutput)
+	return ret0, ret1
+}
+
+// ImportClientBrandingRequest indicates an expected call of ImportClientBrandingRequest
+func (mr *MockWorkSpacesAPIMockRecorder) ImportClientBrandingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportClientBrandingRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ImportClientBrandingRequest), arg0)
+}
+
+// ImportClientBrandingWithContext mocks base method
+func (m *MockWorkSpacesAPI) ImportClientBrandingWithContext(arg0 context.Context, arg1 *workspaces.ImportClientBrandingInput, arg2 ...request.Option) (*workspaces.ImportClientBrandingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportClientBrandingWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.ImportClientBrandingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportClientBrandingWithContext indicates an expected call of ImportClientBrandingWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) ImportClientBrandingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportClientBrandingWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ImportClientBrandingWithContext), varargs...)
 }
 
 // ImportWorkspaceImage mocks base method

@@ -85,6 +85,89 @@ func (mr *MockRoute53RecoveryClusterAPIMockRecorder) GetRoutingControlStateWithC
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRoutingControlStateWithContext", reflect.TypeOf((*MockRoute53RecoveryClusterAPI)(nil).GetRoutingControlStateWithContext), varargs...)
 }
 
+// ListRoutingControls mocks base method
+func (m *MockRoute53RecoveryClusterAPI) ListRoutingControls(arg0 *route53recoverycluster.ListRoutingControlsInput) (*route53recoverycluster.ListRoutingControlsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRoutingControls", arg0)
+	ret0, _ := ret[0].(*route53recoverycluster.ListRoutingControlsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRoutingControls indicates an expected call of ListRoutingControls
+func (mr *MockRoute53RecoveryClusterAPIMockRecorder) ListRoutingControls(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoutingControls", reflect.TypeOf((*MockRoute53RecoveryClusterAPI)(nil).ListRoutingControls), arg0)
+}
+
+// ListRoutingControlsPages mocks base method
+func (m *MockRoute53RecoveryClusterAPI) ListRoutingControlsPages(arg0 *route53recoverycluster.ListRoutingControlsInput, arg1 func(*route53recoverycluster.ListRoutingControlsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRoutingControlsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRoutingControlsPages indicates an expected call of ListRoutingControlsPages
+func (mr *MockRoute53RecoveryClusterAPIMockRecorder) ListRoutingControlsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoutingControlsPages", reflect.TypeOf((*MockRoute53RecoveryClusterAPI)(nil).ListRoutingControlsPages), arg0, arg1)
+}
+
+// ListRoutingControlsPagesWithContext mocks base method
+func (m *MockRoute53RecoveryClusterAPI) ListRoutingControlsPagesWithContext(arg0 context.Context, arg1 *route53recoverycluster.ListRoutingControlsInput, arg2 func(*route53recoverycluster.ListRoutingControlsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRoutingControlsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRoutingControlsPagesWithContext indicates an expected call of ListRoutingControlsPagesWithContext
+func (mr *MockRoute53RecoveryClusterAPIMockRecorder) ListRoutingControlsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoutingControlsPagesWithContext", reflect.TypeOf((*MockRoute53RecoveryClusterAPI)(nil).ListRoutingControlsPagesWithContext), varargs...)
+}
+
+// ListRoutingControlsRequest mocks base method
+func (m *MockRoute53RecoveryClusterAPI) ListRoutingControlsRequest(arg0 *route53recoverycluster.ListRoutingControlsInput) (*request.Request, *route53recoverycluster.ListRoutingControlsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRoutingControlsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53recoverycluster.ListRoutingControlsOutput)
+	return ret0, ret1
+}
+
+// ListRoutingControlsRequest indicates an expected call of ListRoutingControlsRequest
+func (mr *MockRoute53RecoveryClusterAPIMockRecorder) ListRoutingControlsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoutingControlsRequest", reflect.TypeOf((*MockRoute53RecoveryClusterAPI)(nil).ListRoutingControlsRequest), arg0)
+}
+
+// ListRoutingControlsWithContext mocks base method
+func (m *MockRoute53RecoveryClusterAPI) ListRoutingControlsWithContext(arg0 context.Context, arg1 *route53recoverycluster.ListRoutingControlsInput, arg2 ...request.Option) (*route53recoverycluster.ListRoutingControlsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRoutingControlsWithContext", varargs...)
+	ret0, _ := ret[0].(*route53recoverycluster.ListRoutingControlsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRoutingControlsWithContext indicates an expected call of ListRoutingControlsWithContext
+func (mr *MockRoute53RecoveryClusterAPIMockRecorder) ListRoutingControlsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoutingControlsWithContext", reflect.TypeOf((*MockRoute53RecoveryClusterAPI)(nil).ListRoutingControlsWithContext), varargs...)
+}
+
 // UpdateRoutingControlState mocks base method
 func (m *MockRoute53RecoveryClusterAPI) UpdateRoutingControlState(arg0 *route53recoverycluster.UpdateRoutingControlStateInput) (*route53recoverycluster.UpdateRoutingControlStateOutput, error) {
 	m.ctrl.T.Helper()
