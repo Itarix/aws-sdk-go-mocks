@@ -20,7 +20,7 @@ jobs:
         run: |
           SDK_ACTUAL_VERSION=$(cat aws-sdk.version)
           LAST_VERSION=$(./scripts/git-utils/get_last_version.sh $REPO_GITHUB_AWS)
-          if [ "$SDK_KNOWN_VERSION" = "$LAST_VERSION" ]; then
+          if [ "$SDK_ACTUAL_VERSION" = "$LAST_VERSION" ]; then
             echo "no new version"
           else
            ./scripts/generate_all_since_version.sh $SDK_ACTUAL_VERSION $LAST_VERSION $REPO_GITHUB_AWS

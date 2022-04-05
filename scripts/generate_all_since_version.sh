@@ -56,7 +56,7 @@ do
 
   if [[ $major_tag -eq $major_last_tag ]] && [[ $minor_actual -gt $minor ]]
   then
-      echo "same major. minor is higher"
+    echo "same major. minor is higher"
     break
   fi
 
@@ -70,7 +70,6 @@ do
   then
     minor_after=$((minor+1))
     sdk_version="$major.$minor_after.0"
-    change_minor=false
   else
     bugfix_after=$((bugfix+1))
     sdk_version="$major.$minor.$bugfix_after"
@@ -108,9 +107,14 @@ do
 
     git tag $sdk_version -m "Update version for ${sdk_version}"
     git push --tags
+    git push origin --delete $name_branch
 
     echo "new version generated for ${sdk_version}"
   else
+    if [[ $change_minor = true ]]
+    then
+      break
+    fi
     change_minor=true
   fi
 
