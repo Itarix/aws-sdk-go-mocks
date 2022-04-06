@@ -235,6 +235,56 @@ func (mr *MockDataSyncAPIMockRecorder) CreateLocationFsxLustreWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationFsxLustreWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationFsxLustreWithContext), varargs...)
 }
 
+// CreateLocationFsxOpenZfs mocks base method
+func (m *MockDataSyncAPI) CreateLocationFsxOpenZfs(arg0 *datasync.CreateLocationFsxOpenZfsInput) (*datasync.CreateLocationFsxOpenZfsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLocationFsxOpenZfs", arg0)
+	ret0, _ := ret[0].(*datasync.CreateLocationFsxOpenZfsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLocationFsxOpenZfs indicates an expected call of CreateLocationFsxOpenZfs
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationFsxOpenZfs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationFsxOpenZfs", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationFsxOpenZfs), arg0)
+}
+
+// CreateLocationFsxOpenZfsRequest mocks base method
+func (m *MockDataSyncAPI) CreateLocationFsxOpenZfsRequest(arg0 *datasync.CreateLocationFsxOpenZfsInput) (*request.Request, *datasync.CreateLocationFsxOpenZfsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLocationFsxOpenZfsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.CreateLocationFsxOpenZfsOutput)
+	return ret0, ret1
+}
+
+// CreateLocationFsxOpenZfsRequest indicates an expected call of CreateLocationFsxOpenZfsRequest
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationFsxOpenZfsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationFsxOpenZfsRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationFsxOpenZfsRequest), arg0)
+}
+
+// CreateLocationFsxOpenZfsWithContext mocks base method
+func (m *MockDataSyncAPI) CreateLocationFsxOpenZfsWithContext(arg0 context.Context, arg1 *datasync.CreateLocationFsxOpenZfsInput, arg2 ...request.Option) (*datasync.CreateLocationFsxOpenZfsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLocationFsxOpenZfsWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.CreateLocationFsxOpenZfsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLocationFsxOpenZfsWithContext indicates an expected call of CreateLocationFsxOpenZfsWithContext
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationFsxOpenZfsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationFsxOpenZfsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationFsxOpenZfsWithContext), varargs...)
+}
+
 // CreateLocationFsxWindows mocks base method
 func (m *MockDataSyncAPI) CreateLocationFsxWindows(arg0 *datasync.CreateLocationFsxWindowsInput) (*datasync.CreateLocationFsxWindowsOutput, error) {
 	m.ctrl.T.Helper()
@@ -883,6 +933,56 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeLocationFsxLustreWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationFsxLustreWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationFsxLustreWithContext), varargs...)
+}
+
+// DescribeLocationFsxOpenZfs mocks base method
+func (m *MockDataSyncAPI) DescribeLocationFsxOpenZfs(arg0 *datasync.DescribeLocationFsxOpenZfsInput) (*datasync.DescribeLocationFsxOpenZfsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLocationFsxOpenZfs", arg0)
+	ret0, _ := ret[0].(*datasync.DescribeLocationFsxOpenZfsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLocationFsxOpenZfs indicates an expected call of DescribeLocationFsxOpenZfs
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationFsxOpenZfs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationFsxOpenZfs", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationFsxOpenZfs), arg0)
+}
+
+// DescribeLocationFsxOpenZfsRequest mocks base method
+func (m *MockDataSyncAPI) DescribeLocationFsxOpenZfsRequest(arg0 *datasync.DescribeLocationFsxOpenZfsInput) (*request.Request, *datasync.DescribeLocationFsxOpenZfsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLocationFsxOpenZfsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.DescribeLocationFsxOpenZfsOutput)
+	return ret0, ret1
+}
+
+// DescribeLocationFsxOpenZfsRequest indicates an expected call of DescribeLocationFsxOpenZfsRequest
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationFsxOpenZfsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationFsxOpenZfsRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationFsxOpenZfsRequest), arg0)
+}
+
+// DescribeLocationFsxOpenZfsWithContext mocks base method
+func (m *MockDataSyncAPI) DescribeLocationFsxOpenZfsWithContext(arg0 context.Context, arg1 *datasync.DescribeLocationFsxOpenZfsInput, arg2 ...request.Option) (*datasync.DescribeLocationFsxOpenZfsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLocationFsxOpenZfsWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.DescribeLocationFsxOpenZfsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLocationFsxOpenZfsWithContext indicates an expected call of DescribeLocationFsxOpenZfsWithContext
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationFsxOpenZfsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationFsxOpenZfsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationFsxOpenZfsWithContext), varargs...)
 }
 
 // DescribeLocationFsxWindows mocks base method
