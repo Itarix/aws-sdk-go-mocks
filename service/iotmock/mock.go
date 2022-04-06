@@ -8577,6 +8577,89 @@ func (mr *MockIoTAPIMockRecorder) ListManagedJobTemplatesWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedJobTemplatesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListManagedJobTemplatesWithContext), varargs...)
 }
 
+// ListMetricValues mocks base method
+func (m *MockIoTAPI) ListMetricValues(arg0 *iot.ListMetricValuesInput) (*iot.ListMetricValuesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMetricValues", arg0)
+	ret0, _ := ret[0].(*iot.ListMetricValuesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMetricValues indicates an expected call of ListMetricValues
+func (mr *MockIoTAPIMockRecorder) ListMetricValues(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricValues", reflect.TypeOf((*MockIoTAPI)(nil).ListMetricValues), arg0)
+}
+
+// ListMetricValuesPages mocks base method
+func (m *MockIoTAPI) ListMetricValuesPages(arg0 *iot.ListMetricValuesInput, arg1 func(*iot.ListMetricValuesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMetricValuesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMetricValuesPages indicates an expected call of ListMetricValuesPages
+func (mr *MockIoTAPIMockRecorder) ListMetricValuesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricValuesPages", reflect.TypeOf((*MockIoTAPI)(nil).ListMetricValuesPages), arg0, arg1)
+}
+
+// ListMetricValuesPagesWithContext mocks base method
+func (m *MockIoTAPI) ListMetricValuesPagesWithContext(arg0 context.Context, arg1 *iot.ListMetricValuesInput, arg2 func(*iot.ListMetricValuesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMetricValuesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMetricValuesPagesWithContext indicates an expected call of ListMetricValuesPagesWithContext
+func (mr *MockIoTAPIMockRecorder) ListMetricValuesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricValuesPagesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListMetricValuesPagesWithContext), varargs...)
+}
+
+// ListMetricValuesRequest mocks base method
+func (m *MockIoTAPI) ListMetricValuesRequest(arg0 *iot.ListMetricValuesInput) (*request.Request, *iot.ListMetricValuesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMetricValuesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListMetricValuesOutput)
+	return ret0, ret1
+}
+
+// ListMetricValuesRequest indicates an expected call of ListMetricValuesRequest
+func (mr *MockIoTAPIMockRecorder) ListMetricValuesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricValuesRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListMetricValuesRequest), arg0)
+}
+
+// ListMetricValuesWithContext mocks base method
+func (m *MockIoTAPI) ListMetricValuesWithContext(arg0 context.Context, arg1 *iot.ListMetricValuesInput, arg2 ...request.Option) (*iot.ListMetricValuesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMetricValuesWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListMetricValuesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMetricValuesWithContext indicates an expected call of ListMetricValuesWithContext
+func (mr *MockIoTAPIMockRecorder) ListMetricValuesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricValuesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListMetricValuesWithContext), varargs...)
+}
+
 // ListMitigationActions mocks base method
 func (m *MockIoTAPI) ListMitigationActions(arg0 *iot.ListMitigationActionsInput) (*iot.ListMitigationActionsOutput, error) {
 	m.ctrl.T.Helper()
