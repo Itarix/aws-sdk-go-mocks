@@ -185,6 +185,56 @@ func (mr *MockAppRunnerAPIMockRecorder) CreateConnectionWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectionWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).CreateConnectionWithContext), varargs...)
 }
 
+// CreateObservabilityConfiguration mocks base method
+func (m *MockAppRunnerAPI) CreateObservabilityConfiguration(arg0 *apprunner.CreateObservabilityConfigurationInput) (*apprunner.CreateObservabilityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateObservabilityConfiguration", arg0)
+	ret0, _ := ret[0].(*apprunner.CreateObservabilityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateObservabilityConfiguration indicates an expected call of CreateObservabilityConfiguration
+func (mr *MockAppRunnerAPIMockRecorder) CreateObservabilityConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateObservabilityConfiguration", reflect.TypeOf((*MockAppRunnerAPI)(nil).CreateObservabilityConfiguration), arg0)
+}
+
+// CreateObservabilityConfigurationRequest mocks base method
+func (m *MockAppRunnerAPI) CreateObservabilityConfigurationRequest(arg0 *apprunner.CreateObservabilityConfigurationInput) (*request.Request, *apprunner.CreateObservabilityConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateObservabilityConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apprunner.CreateObservabilityConfigurationOutput)
+	return ret0, ret1
+}
+
+// CreateObservabilityConfigurationRequest indicates an expected call of CreateObservabilityConfigurationRequest
+func (mr *MockAppRunnerAPIMockRecorder) CreateObservabilityConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateObservabilityConfigurationRequest", reflect.TypeOf((*MockAppRunnerAPI)(nil).CreateObservabilityConfigurationRequest), arg0)
+}
+
+// CreateObservabilityConfigurationWithContext mocks base method
+func (m *MockAppRunnerAPI) CreateObservabilityConfigurationWithContext(arg0 context.Context, arg1 *apprunner.CreateObservabilityConfigurationInput, arg2 ...request.Option) (*apprunner.CreateObservabilityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateObservabilityConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*apprunner.CreateObservabilityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateObservabilityConfigurationWithContext indicates an expected call of CreateObservabilityConfigurationWithContext
+func (mr *MockAppRunnerAPIMockRecorder) CreateObservabilityConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateObservabilityConfigurationWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).CreateObservabilityConfigurationWithContext), varargs...)
+}
+
 // CreateService mocks base method
 func (m *MockAppRunnerAPI) CreateService(arg0 *apprunner.CreateServiceInput) (*apprunner.CreateServiceOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +433,56 @@ func (mr *MockAppRunnerAPIMockRecorder) DeleteConnectionWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectionWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).DeleteConnectionWithContext), varargs...)
+}
+
+// DeleteObservabilityConfiguration mocks base method
+func (m *MockAppRunnerAPI) DeleteObservabilityConfiguration(arg0 *apprunner.DeleteObservabilityConfigurationInput) (*apprunner.DeleteObservabilityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteObservabilityConfiguration", arg0)
+	ret0, _ := ret[0].(*apprunner.DeleteObservabilityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteObservabilityConfiguration indicates an expected call of DeleteObservabilityConfiguration
+func (mr *MockAppRunnerAPIMockRecorder) DeleteObservabilityConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteObservabilityConfiguration", reflect.TypeOf((*MockAppRunnerAPI)(nil).DeleteObservabilityConfiguration), arg0)
+}
+
+// DeleteObservabilityConfigurationRequest mocks base method
+func (m *MockAppRunnerAPI) DeleteObservabilityConfigurationRequest(arg0 *apprunner.DeleteObservabilityConfigurationInput) (*request.Request, *apprunner.DeleteObservabilityConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteObservabilityConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apprunner.DeleteObservabilityConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteObservabilityConfigurationRequest indicates an expected call of DeleteObservabilityConfigurationRequest
+func (mr *MockAppRunnerAPIMockRecorder) DeleteObservabilityConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteObservabilityConfigurationRequest", reflect.TypeOf((*MockAppRunnerAPI)(nil).DeleteObservabilityConfigurationRequest), arg0)
+}
+
+// DeleteObservabilityConfigurationWithContext mocks base method
+func (m *MockAppRunnerAPI) DeleteObservabilityConfigurationWithContext(arg0 context.Context, arg1 *apprunner.DeleteObservabilityConfigurationInput, arg2 ...request.Option) (*apprunner.DeleteObservabilityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteObservabilityConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*apprunner.DeleteObservabilityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteObservabilityConfigurationWithContext indicates an expected call of DeleteObservabilityConfigurationWithContext
+func (mr *MockAppRunnerAPIMockRecorder) DeleteObservabilityConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteObservabilityConfigurationWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).DeleteObservabilityConfigurationWithContext), varargs...)
 }
 
 // DeleteService mocks base method
@@ -616,6 +716,56 @@ func (mr *MockAppRunnerAPIMockRecorder) DescribeCustomDomainsWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomDomainsWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).DescribeCustomDomainsWithContext), varargs...)
+}
+
+// DescribeObservabilityConfiguration mocks base method
+func (m *MockAppRunnerAPI) DescribeObservabilityConfiguration(arg0 *apprunner.DescribeObservabilityConfigurationInput) (*apprunner.DescribeObservabilityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeObservabilityConfiguration", arg0)
+	ret0, _ := ret[0].(*apprunner.DescribeObservabilityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeObservabilityConfiguration indicates an expected call of DescribeObservabilityConfiguration
+func (mr *MockAppRunnerAPIMockRecorder) DescribeObservabilityConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeObservabilityConfiguration", reflect.TypeOf((*MockAppRunnerAPI)(nil).DescribeObservabilityConfiguration), arg0)
+}
+
+// DescribeObservabilityConfigurationRequest mocks base method
+func (m *MockAppRunnerAPI) DescribeObservabilityConfigurationRequest(arg0 *apprunner.DescribeObservabilityConfigurationInput) (*request.Request, *apprunner.DescribeObservabilityConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeObservabilityConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apprunner.DescribeObservabilityConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeObservabilityConfigurationRequest indicates an expected call of DescribeObservabilityConfigurationRequest
+func (mr *MockAppRunnerAPIMockRecorder) DescribeObservabilityConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeObservabilityConfigurationRequest", reflect.TypeOf((*MockAppRunnerAPI)(nil).DescribeObservabilityConfigurationRequest), arg0)
+}
+
+// DescribeObservabilityConfigurationWithContext mocks base method
+func (m *MockAppRunnerAPI) DescribeObservabilityConfigurationWithContext(arg0 context.Context, arg1 *apprunner.DescribeObservabilityConfigurationInput, arg2 ...request.Option) (*apprunner.DescribeObservabilityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeObservabilityConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*apprunner.DescribeObservabilityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeObservabilityConfigurationWithContext indicates an expected call of DescribeObservabilityConfigurationWithContext
+func (mr *MockAppRunnerAPIMockRecorder) DescribeObservabilityConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeObservabilityConfigurationWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).DescribeObservabilityConfigurationWithContext), varargs...)
 }
 
 // DescribeService mocks base method
@@ -932,6 +1082,89 @@ func (mr *MockAppRunnerAPIMockRecorder) ListConnectionsWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectionsWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListConnectionsWithContext), varargs...)
+}
+
+// ListObservabilityConfigurations mocks base method
+func (m *MockAppRunnerAPI) ListObservabilityConfigurations(arg0 *apprunner.ListObservabilityConfigurationsInput) (*apprunner.ListObservabilityConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListObservabilityConfigurations", arg0)
+	ret0, _ := ret[0].(*apprunner.ListObservabilityConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListObservabilityConfigurations indicates an expected call of ListObservabilityConfigurations
+func (mr *MockAppRunnerAPIMockRecorder) ListObservabilityConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListObservabilityConfigurations", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListObservabilityConfigurations), arg0)
+}
+
+// ListObservabilityConfigurationsPages mocks base method
+func (m *MockAppRunnerAPI) ListObservabilityConfigurationsPages(arg0 *apprunner.ListObservabilityConfigurationsInput, arg1 func(*apprunner.ListObservabilityConfigurationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListObservabilityConfigurationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListObservabilityConfigurationsPages indicates an expected call of ListObservabilityConfigurationsPages
+func (mr *MockAppRunnerAPIMockRecorder) ListObservabilityConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListObservabilityConfigurationsPages", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListObservabilityConfigurationsPages), arg0, arg1)
+}
+
+// ListObservabilityConfigurationsPagesWithContext mocks base method
+func (m *MockAppRunnerAPI) ListObservabilityConfigurationsPagesWithContext(arg0 context.Context, arg1 *apprunner.ListObservabilityConfigurationsInput, arg2 func(*apprunner.ListObservabilityConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListObservabilityConfigurationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListObservabilityConfigurationsPagesWithContext indicates an expected call of ListObservabilityConfigurationsPagesWithContext
+func (mr *MockAppRunnerAPIMockRecorder) ListObservabilityConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListObservabilityConfigurationsPagesWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListObservabilityConfigurationsPagesWithContext), varargs...)
+}
+
+// ListObservabilityConfigurationsRequest mocks base method
+func (m *MockAppRunnerAPI) ListObservabilityConfigurationsRequest(arg0 *apprunner.ListObservabilityConfigurationsInput) (*request.Request, *apprunner.ListObservabilityConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListObservabilityConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apprunner.ListObservabilityConfigurationsOutput)
+	return ret0, ret1
+}
+
+// ListObservabilityConfigurationsRequest indicates an expected call of ListObservabilityConfigurationsRequest
+func (mr *MockAppRunnerAPIMockRecorder) ListObservabilityConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListObservabilityConfigurationsRequest", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListObservabilityConfigurationsRequest), arg0)
+}
+
+// ListObservabilityConfigurationsWithContext mocks base method
+func (m *MockAppRunnerAPI) ListObservabilityConfigurationsWithContext(arg0 context.Context, arg1 *apprunner.ListObservabilityConfigurationsInput, arg2 ...request.Option) (*apprunner.ListObservabilityConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListObservabilityConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*apprunner.ListObservabilityConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListObservabilityConfigurationsWithContext indicates an expected call of ListObservabilityConfigurationsWithContext
+func (mr *MockAppRunnerAPIMockRecorder) ListObservabilityConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListObservabilityConfigurationsWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListObservabilityConfigurationsWithContext), varargs...)
 }
 
 // ListOperations mocks base method
