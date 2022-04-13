@@ -85,6 +85,56 @@ func (mr *MockDevOpsGuruAPIMockRecorder) AddNotificationChannelWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddNotificationChannelWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).AddNotificationChannelWithContext), varargs...)
 }
 
+// DeleteInsight mocks base method
+func (m *MockDevOpsGuruAPI) DeleteInsight(arg0 *devopsguru.DeleteInsightInput) (*devopsguru.DeleteInsightOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteInsight", arg0)
+	ret0, _ := ret[0].(*devopsguru.DeleteInsightOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteInsight indicates an expected call of DeleteInsight
+func (mr *MockDevOpsGuruAPIMockRecorder) DeleteInsight(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInsight", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DeleteInsight), arg0)
+}
+
+// DeleteInsightRequest mocks base method
+func (m *MockDevOpsGuruAPI) DeleteInsightRequest(arg0 *devopsguru.DeleteInsightInput) (*request.Request, *devopsguru.DeleteInsightOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteInsightRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devopsguru.DeleteInsightOutput)
+	return ret0, ret1
+}
+
+// DeleteInsightRequest indicates an expected call of DeleteInsightRequest
+func (mr *MockDevOpsGuruAPIMockRecorder) DeleteInsightRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInsightRequest", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DeleteInsightRequest), arg0)
+}
+
+// DeleteInsightWithContext mocks base method
+func (m *MockDevOpsGuruAPI) DeleteInsightWithContext(arg0 context.Context, arg1 *devopsguru.DeleteInsightInput, arg2 ...request.Option) (*devopsguru.DeleteInsightOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteInsightWithContext", varargs...)
+	ret0, _ := ret[0].(*devopsguru.DeleteInsightOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteInsightWithContext indicates an expected call of DeleteInsightWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) DeleteInsightWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInsightWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).DeleteInsightWithContext), varargs...)
+}
+
 // DescribeAccountHealth mocks base method
 func (m *MockDevOpsGuruAPI) DescribeAccountHealth(arg0 *devopsguru.DescribeAccountHealthInput) (*devopsguru.DescribeAccountHealthOutput, error) {
 	m.ctrl.T.Helper()
