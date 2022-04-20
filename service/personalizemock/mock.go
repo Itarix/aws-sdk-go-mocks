@@ -3147,6 +3147,106 @@ func (mr *MockPersonalizeAPIMockRecorder) ListTagsForResourceWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// StartRecommender mocks base method
+func (m *MockPersonalizeAPI) StartRecommender(arg0 *personalize.StartRecommenderInput) (*personalize.StartRecommenderOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartRecommender", arg0)
+	ret0, _ := ret[0].(*personalize.StartRecommenderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartRecommender indicates an expected call of StartRecommender
+func (mr *MockPersonalizeAPIMockRecorder) StartRecommender(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartRecommender", reflect.TypeOf((*MockPersonalizeAPI)(nil).StartRecommender), arg0)
+}
+
+// StartRecommenderRequest mocks base method
+func (m *MockPersonalizeAPI) StartRecommenderRequest(arg0 *personalize.StartRecommenderInput) (*request.Request, *personalize.StartRecommenderOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartRecommenderRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.StartRecommenderOutput)
+	return ret0, ret1
+}
+
+// StartRecommenderRequest indicates an expected call of StartRecommenderRequest
+func (mr *MockPersonalizeAPIMockRecorder) StartRecommenderRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartRecommenderRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).StartRecommenderRequest), arg0)
+}
+
+// StartRecommenderWithContext mocks base method
+func (m *MockPersonalizeAPI) StartRecommenderWithContext(arg0 context.Context, arg1 *personalize.StartRecommenderInput, arg2 ...request.Option) (*personalize.StartRecommenderOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartRecommenderWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.StartRecommenderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartRecommenderWithContext indicates an expected call of StartRecommenderWithContext
+func (mr *MockPersonalizeAPIMockRecorder) StartRecommenderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartRecommenderWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).StartRecommenderWithContext), varargs...)
+}
+
+// StopRecommender mocks base method
+func (m *MockPersonalizeAPI) StopRecommender(arg0 *personalize.StopRecommenderInput) (*personalize.StopRecommenderOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopRecommender", arg0)
+	ret0, _ := ret[0].(*personalize.StopRecommenderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopRecommender indicates an expected call of StopRecommender
+func (mr *MockPersonalizeAPIMockRecorder) StopRecommender(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopRecommender", reflect.TypeOf((*MockPersonalizeAPI)(nil).StopRecommender), arg0)
+}
+
+// StopRecommenderRequest mocks base method
+func (m *MockPersonalizeAPI) StopRecommenderRequest(arg0 *personalize.StopRecommenderInput) (*request.Request, *personalize.StopRecommenderOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopRecommenderRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.StopRecommenderOutput)
+	return ret0, ret1
+}
+
+// StopRecommenderRequest indicates an expected call of StopRecommenderRequest
+func (mr *MockPersonalizeAPIMockRecorder) StopRecommenderRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopRecommenderRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).StopRecommenderRequest), arg0)
+}
+
+// StopRecommenderWithContext mocks base method
+func (m *MockPersonalizeAPI) StopRecommenderWithContext(arg0 context.Context, arg1 *personalize.StopRecommenderInput, arg2 ...request.Option) (*personalize.StopRecommenderOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopRecommenderWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.StopRecommenderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopRecommenderWithContext indicates an expected call of StopRecommenderWithContext
+func (mr *MockPersonalizeAPIMockRecorder) StopRecommenderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopRecommenderWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).StopRecommenderWithContext), varargs...)
+}
+
 // StopSolutionVersionCreation mocks base method
 func (m *MockPersonalizeAPI) StopSolutionVersionCreation(arg0 *personalize.StopSolutionVersionCreationInput) (*personalize.StopSolutionVersionCreationOutput, error) {
 	m.ctrl.T.Helper()
