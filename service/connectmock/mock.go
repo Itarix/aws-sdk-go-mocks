@@ -335,6 +335,56 @@ func (mr *MockConnectAPIMockRecorder) AssociateLexBotWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateLexBotWithContext", reflect.TypeOf((*MockConnectAPI)(nil).AssociateLexBotWithContext), varargs...)
 }
 
+// AssociatePhoneNumberContactFlow mocks base method
+func (m *MockConnectAPI) AssociatePhoneNumberContactFlow(arg0 *connect.AssociatePhoneNumberContactFlowInput) (*connect.AssociatePhoneNumberContactFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociatePhoneNumberContactFlow", arg0)
+	ret0, _ := ret[0].(*connect.AssociatePhoneNumberContactFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociatePhoneNumberContactFlow indicates an expected call of AssociatePhoneNumberContactFlow
+func (mr *MockConnectAPIMockRecorder) AssociatePhoneNumberContactFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociatePhoneNumberContactFlow", reflect.TypeOf((*MockConnectAPI)(nil).AssociatePhoneNumberContactFlow), arg0)
+}
+
+// AssociatePhoneNumberContactFlowRequest mocks base method
+func (m *MockConnectAPI) AssociatePhoneNumberContactFlowRequest(arg0 *connect.AssociatePhoneNumberContactFlowInput) (*request.Request, *connect.AssociatePhoneNumberContactFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociatePhoneNumberContactFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.AssociatePhoneNumberContactFlowOutput)
+	return ret0, ret1
+}
+
+// AssociatePhoneNumberContactFlowRequest indicates an expected call of AssociatePhoneNumberContactFlowRequest
+func (mr *MockConnectAPIMockRecorder) AssociatePhoneNumberContactFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociatePhoneNumberContactFlowRequest", reflect.TypeOf((*MockConnectAPI)(nil).AssociatePhoneNumberContactFlowRequest), arg0)
+}
+
+// AssociatePhoneNumberContactFlowWithContext mocks base method
+func (m *MockConnectAPI) AssociatePhoneNumberContactFlowWithContext(arg0 context.Context, arg1 *connect.AssociatePhoneNumberContactFlowInput, arg2 ...request.Option) (*connect.AssociatePhoneNumberContactFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociatePhoneNumberContactFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.AssociatePhoneNumberContactFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociatePhoneNumberContactFlowWithContext indicates an expected call of AssociatePhoneNumberContactFlowWithContext
+func (mr *MockConnectAPIMockRecorder) AssociatePhoneNumberContactFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociatePhoneNumberContactFlowWithContext", reflect.TypeOf((*MockConnectAPI)(nil).AssociatePhoneNumberContactFlowWithContext), varargs...)
+}
+
 // AssociateQueueQuickConnects mocks base method
 func (m *MockConnectAPI) AssociateQueueQuickConnects(arg0 *connect.AssociateQueueQuickConnectsInput) (*connect.AssociateQueueQuickConnectsOutput, error) {
 	m.ctrl.T.Helper()
@@ -483,6 +533,56 @@ func (mr *MockConnectAPIMockRecorder) AssociateSecurityKeyWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSecurityKeyWithContext", reflect.TypeOf((*MockConnectAPI)(nil).AssociateSecurityKeyWithContext), varargs...)
+}
+
+// ClaimPhoneNumber mocks base method
+func (m *MockConnectAPI) ClaimPhoneNumber(arg0 *connect.ClaimPhoneNumberInput) (*connect.ClaimPhoneNumberOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ClaimPhoneNumber", arg0)
+	ret0, _ := ret[0].(*connect.ClaimPhoneNumberOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ClaimPhoneNumber indicates an expected call of ClaimPhoneNumber
+func (mr *MockConnectAPIMockRecorder) ClaimPhoneNumber(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClaimPhoneNumber", reflect.TypeOf((*MockConnectAPI)(nil).ClaimPhoneNumber), arg0)
+}
+
+// ClaimPhoneNumberRequest mocks base method
+func (m *MockConnectAPI) ClaimPhoneNumberRequest(arg0 *connect.ClaimPhoneNumberInput) (*request.Request, *connect.ClaimPhoneNumberOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ClaimPhoneNumberRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ClaimPhoneNumberOutput)
+	return ret0, ret1
+}
+
+// ClaimPhoneNumberRequest indicates an expected call of ClaimPhoneNumberRequest
+func (mr *MockConnectAPIMockRecorder) ClaimPhoneNumberRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClaimPhoneNumberRequest", reflect.TypeOf((*MockConnectAPI)(nil).ClaimPhoneNumberRequest), arg0)
+}
+
+// ClaimPhoneNumberWithContext mocks base method
+func (m *MockConnectAPI) ClaimPhoneNumberWithContext(arg0 context.Context, arg1 *connect.ClaimPhoneNumberInput, arg2 ...request.Option) (*connect.ClaimPhoneNumberOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ClaimPhoneNumberWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ClaimPhoneNumberOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ClaimPhoneNumberWithContext indicates an expected call of ClaimPhoneNumberWithContext
+func (mr *MockConnectAPIMockRecorder) ClaimPhoneNumberWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClaimPhoneNumberWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ClaimPhoneNumberWithContext), varargs...)
 }
 
 // CreateAgentStatus mocks base method
@@ -2135,6 +2235,56 @@ func (mr *MockConnectAPIMockRecorder) DescribeInstanceWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInstanceWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeInstanceWithContext), varargs...)
 }
 
+// DescribePhoneNumber mocks base method
+func (m *MockConnectAPI) DescribePhoneNumber(arg0 *connect.DescribePhoneNumberInput) (*connect.DescribePhoneNumberOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePhoneNumber", arg0)
+	ret0, _ := ret[0].(*connect.DescribePhoneNumberOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePhoneNumber indicates an expected call of DescribePhoneNumber
+func (mr *MockConnectAPIMockRecorder) DescribePhoneNumber(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePhoneNumber", reflect.TypeOf((*MockConnectAPI)(nil).DescribePhoneNumber), arg0)
+}
+
+// DescribePhoneNumberRequest mocks base method
+func (m *MockConnectAPI) DescribePhoneNumberRequest(arg0 *connect.DescribePhoneNumberInput) (*request.Request, *connect.DescribePhoneNumberOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePhoneNumberRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DescribePhoneNumberOutput)
+	return ret0, ret1
+}
+
+// DescribePhoneNumberRequest indicates an expected call of DescribePhoneNumberRequest
+func (mr *MockConnectAPIMockRecorder) DescribePhoneNumberRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePhoneNumberRequest", reflect.TypeOf((*MockConnectAPI)(nil).DescribePhoneNumberRequest), arg0)
+}
+
+// DescribePhoneNumberWithContext mocks base method
+func (m *MockConnectAPI) DescribePhoneNumberWithContext(arg0 context.Context, arg1 *connect.DescribePhoneNumberInput, arg2 ...request.Option) (*connect.DescribePhoneNumberOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribePhoneNumberWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DescribePhoneNumberOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePhoneNumberWithContext indicates an expected call of DescribePhoneNumberWithContext
+func (mr *MockConnectAPIMockRecorder) DescribePhoneNumberWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePhoneNumberWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribePhoneNumberWithContext), varargs...)
+}
+
 // DescribeQueue mocks base method
 func (m *MockConnectAPI) DescribeQueue(arg0 *connect.DescribeQueueInput) (*connect.DescribeQueueOutput, error) {
 	m.ctrl.T.Helper()
@@ -2783,6 +2933,56 @@ func (mr *MockConnectAPIMockRecorder) DisassociateLexBotWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateLexBotWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateLexBotWithContext), varargs...)
+}
+
+// DisassociatePhoneNumberContactFlow mocks base method
+func (m *MockConnectAPI) DisassociatePhoneNumberContactFlow(arg0 *connect.DisassociatePhoneNumberContactFlowInput) (*connect.DisassociatePhoneNumberContactFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociatePhoneNumberContactFlow", arg0)
+	ret0, _ := ret[0].(*connect.DisassociatePhoneNumberContactFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociatePhoneNumberContactFlow indicates an expected call of DisassociatePhoneNumberContactFlow
+func (mr *MockConnectAPIMockRecorder) DisassociatePhoneNumberContactFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociatePhoneNumberContactFlow", reflect.TypeOf((*MockConnectAPI)(nil).DisassociatePhoneNumberContactFlow), arg0)
+}
+
+// DisassociatePhoneNumberContactFlowRequest mocks base method
+func (m *MockConnectAPI) DisassociatePhoneNumberContactFlowRequest(arg0 *connect.DisassociatePhoneNumberContactFlowInput) (*request.Request, *connect.DisassociatePhoneNumberContactFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociatePhoneNumberContactFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DisassociatePhoneNumberContactFlowOutput)
+	return ret0, ret1
+}
+
+// DisassociatePhoneNumberContactFlowRequest indicates an expected call of DisassociatePhoneNumberContactFlowRequest
+func (mr *MockConnectAPIMockRecorder) DisassociatePhoneNumberContactFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociatePhoneNumberContactFlowRequest", reflect.TypeOf((*MockConnectAPI)(nil).DisassociatePhoneNumberContactFlowRequest), arg0)
+}
+
+// DisassociatePhoneNumberContactFlowWithContext mocks base method
+func (m *MockConnectAPI) DisassociatePhoneNumberContactFlowWithContext(arg0 context.Context, arg1 *connect.DisassociatePhoneNumberContactFlowInput, arg2 ...request.Option) (*connect.DisassociatePhoneNumberContactFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociatePhoneNumberContactFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DisassociatePhoneNumberContactFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociatePhoneNumberContactFlowWithContext indicates an expected call of DisassociatePhoneNumberContactFlowWithContext
+func (mr *MockConnectAPIMockRecorder) DisassociatePhoneNumberContactFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociatePhoneNumberContactFlowWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DisassociatePhoneNumberContactFlowWithContext), varargs...)
 }
 
 // DisassociateQueueQuickConnects mocks base method
@@ -4426,6 +4626,89 @@ func (mr *MockConnectAPIMockRecorder) ListPhoneNumbersRequest(arg0 interface{}) 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPhoneNumbersRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListPhoneNumbersRequest), arg0)
 }
 
+// ListPhoneNumbersV2 mocks base method
+func (m *MockConnectAPI) ListPhoneNumbersV2(arg0 *connect.ListPhoneNumbersV2Input) (*connect.ListPhoneNumbersV2Output, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPhoneNumbersV2", arg0)
+	ret0, _ := ret[0].(*connect.ListPhoneNumbersV2Output)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPhoneNumbersV2 indicates an expected call of ListPhoneNumbersV2
+func (mr *MockConnectAPIMockRecorder) ListPhoneNumbersV2(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPhoneNumbersV2", reflect.TypeOf((*MockConnectAPI)(nil).ListPhoneNumbersV2), arg0)
+}
+
+// ListPhoneNumbersV2Pages mocks base method
+func (m *MockConnectAPI) ListPhoneNumbersV2Pages(arg0 *connect.ListPhoneNumbersV2Input, arg1 func(*connect.ListPhoneNumbersV2Output, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPhoneNumbersV2Pages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPhoneNumbersV2Pages indicates an expected call of ListPhoneNumbersV2Pages
+func (mr *MockConnectAPIMockRecorder) ListPhoneNumbersV2Pages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPhoneNumbersV2Pages", reflect.TypeOf((*MockConnectAPI)(nil).ListPhoneNumbersV2Pages), arg0, arg1)
+}
+
+// ListPhoneNumbersV2PagesWithContext mocks base method
+func (m *MockConnectAPI) ListPhoneNumbersV2PagesWithContext(arg0 context.Context, arg1 *connect.ListPhoneNumbersV2Input, arg2 func(*connect.ListPhoneNumbersV2Output, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPhoneNumbersV2PagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPhoneNumbersV2PagesWithContext indicates an expected call of ListPhoneNumbersV2PagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListPhoneNumbersV2PagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPhoneNumbersV2PagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListPhoneNumbersV2PagesWithContext), varargs...)
+}
+
+// ListPhoneNumbersV2Request mocks base method
+func (m *MockConnectAPI) ListPhoneNumbersV2Request(arg0 *connect.ListPhoneNumbersV2Input) (*request.Request, *connect.ListPhoneNumbersV2Output) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPhoneNumbersV2Request", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListPhoneNumbersV2Output)
+	return ret0, ret1
+}
+
+// ListPhoneNumbersV2Request indicates an expected call of ListPhoneNumbersV2Request
+func (mr *MockConnectAPIMockRecorder) ListPhoneNumbersV2Request(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPhoneNumbersV2Request", reflect.TypeOf((*MockConnectAPI)(nil).ListPhoneNumbersV2Request), arg0)
+}
+
+// ListPhoneNumbersV2WithContext mocks base method
+func (m *MockConnectAPI) ListPhoneNumbersV2WithContext(arg0 context.Context, arg1 *connect.ListPhoneNumbersV2Input, arg2 ...request.Option) (*connect.ListPhoneNumbersV2Output, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPhoneNumbersV2WithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListPhoneNumbersV2Output)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPhoneNumbersV2WithContext indicates an expected call of ListPhoneNumbersV2WithContext
+func (mr *MockConnectAPIMockRecorder) ListPhoneNumbersV2WithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPhoneNumbersV2WithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListPhoneNumbersV2WithContext), varargs...)
+}
+
 // ListPhoneNumbersWithContext mocks base method
 func (m *MockConnectAPI) ListPhoneNumbersWithContext(arg0 context.Context, arg1 *connect.ListPhoneNumbersInput, arg2 ...request.Option) (*connect.ListPhoneNumbersOutput, error) {
 	m.ctrl.T.Helper()
@@ -5492,6 +5775,56 @@ func (mr *MockConnectAPIMockRecorder) ListUsersWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListUsersWithContext), varargs...)
 }
 
+// ReleasePhoneNumber mocks base method
+func (m *MockConnectAPI) ReleasePhoneNumber(arg0 *connect.ReleasePhoneNumberInput) (*connect.ReleasePhoneNumberOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ReleasePhoneNumber", arg0)
+	ret0, _ := ret[0].(*connect.ReleasePhoneNumberOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ReleasePhoneNumber indicates an expected call of ReleasePhoneNumber
+func (mr *MockConnectAPIMockRecorder) ReleasePhoneNumber(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReleasePhoneNumber", reflect.TypeOf((*MockConnectAPI)(nil).ReleasePhoneNumber), arg0)
+}
+
+// ReleasePhoneNumberRequest mocks base method
+func (m *MockConnectAPI) ReleasePhoneNumberRequest(arg0 *connect.ReleasePhoneNumberInput) (*request.Request, *connect.ReleasePhoneNumberOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ReleasePhoneNumberRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ReleasePhoneNumberOutput)
+	return ret0, ret1
+}
+
+// ReleasePhoneNumberRequest indicates an expected call of ReleasePhoneNumberRequest
+func (mr *MockConnectAPIMockRecorder) ReleasePhoneNumberRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReleasePhoneNumberRequest", reflect.TypeOf((*MockConnectAPI)(nil).ReleasePhoneNumberRequest), arg0)
+}
+
+// ReleasePhoneNumberWithContext mocks base method
+func (m *MockConnectAPI) ReleasePhoneNumberWithContext(arg0 context.Context, arg1 *connect.ReleasePhoneNumberInput, arg2 ...request.Option) (*connect.ReleasePhoneNumberOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ReleasePhoneNumberWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ReleasePhoneNumberOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ReleasePhoneNumberWithContext indicates an expected call of ReleasePhoneNumberWithContext
+func (mr *MockConnectAPIMockRecorder) ReleasePhoneNumberWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReleasePhoneNumberWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ReleasePhoneNumberWithContext), varargs...)
+}
+
 // ResumeContactRecording mocks base method
 func (m *MockConnectAPI) ResumeContactRecording(arg0 *connect.ResumeContactRecordingInput) (*connect.ResumeContactRecordingOutput, error) {
 	m.ctrl.T.Helper()
@@ -5540,6 +5873,89 @@ func (mr *MockConnectAPIMockRecorder) ResumeContactRecordingWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeContactRecordingWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ResumeContactRecordingWithContext), varargs...)
+}
+
+// SearchAvailablePhoneNumbers mocks base method
+func (m *MockConnectAPI) SearchAvailablePhoneNumbers(arg0 *connect.SearchAvailablePhoneNumbersInput) (*connect.SearchAvailablePhoneNumbersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchAvailablePhoneNumbers", arg0)
+	ret0, _ := ret[0].(*connect.SearchAvailablePhoneNumbersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchAvailablePhoneNumbers indicates an expected call of SearchAvailablePhoneNumbers
+func (mr *MockConnectAPIMockRecorder) SearchAvailablePhoneNumbers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAvailablePhoneNumbers", reflect.TypeOf((*MockConnectAPI)(nil).SearchAvailablePhoneNumbers), arg0)
+}
+
+// SearchAvailablePhoneNumbersPages mocks base method
+func (m *MockConnectAPI) SearchAvailablePhoneNumbersPages(arg0 *connect.SearchAvailablePhoneNumbersInput, arg1 func(*connect.SearchAvailablePhoneNumbersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchAvailablePhoneNumbersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchAvailablePhoneNumbersPages indicates an expected call of SearchAvailablePhoneNumbersPages
+func (mr *MockConnectAPIMockRecorder) SearchAvailablePhoneNumbersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAvailablePhoneNumbersPages", reflect.TypeOf((*MockConnectAPI)(nil).SearchAvailablePhoneNumbersPages), arg0, arg1)
+}
+
+// SearchAvailablePhoneNumbersPagesWithContext mocks base method
+func (m *MockConnectAPI) SearchAvailablePhoneNumbersPagesWithContext(arg0 context.Context, arg1 *connect.SearchAvailablePhoneNumbersInput, arg2 func(*connect.SearchAvailablePhoneNumbersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchAvailablePhoneNumbersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchAvailablePhoneNumbersPagesWithContext indicates an expected call of SearchAvailablePhoneNumbersPagesWithContext
+func (mr *MockConnectAPIMockRecorder) SearchAvailablePhoneNumbersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAvailablePhoneNumbersPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchAvailablePhoneNumbersPagesWithContext), varargs...)
+}
+
+// SearchAvailablePhoneNumbersRequest mocks base method
+func (m *MockConnectAPI) SearchAvailablePhoneNumbersRequest(arg0 *connect.SearchAvailablePhoneNumbersInput) (*request.Request, *connect.SearchAvailablePhoneNumbersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchAvailablePhoneNumbersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.SearchAvailablePhoneNumbersOutput)
+	return ret0, ret1
+}
+
+// SearchAvailablePhoneNumbersRequest indicates an expected call of SearchAvailablePhoneNumbersRequest
+func (mr *MockConnectAPIMockRecorder) SearchAvailablePhoneNumbersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAvailablePhoneNumbersRequest", reflect.TypeOf((*MockConnectAPI)(nil).SearchAvailablePhoneNumbersRequest), arg0)
+}
+
+// SearchAvailablePhoneNumbersWithContext mocks base method
+func (m *MockConnectAPI) SearchAvailablePhoneNumbersWithContext(arg0 context.Context, arg1 *connect.SearchAvailablePhoneNumbersInput, arg2 ...request.Option) (*connect.SearchAvailablePhoneNumbersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchAvailablePhoneNumbersWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.SearchAvailablePhoneNumbersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchAvailablePhoneNumbersWithContext indicates an expected call of SearchAvailablePhoneNumbersWithContext
+func (mr *MockConnectAPIMockRecorder) SearchAvailablePhoneNumbersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAvailablePhoneNumbersWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchAvailablePhoneNumbersWithContext), varargs...)
 }
 
 // SearchVocabularies mocks base method
@@ -6773,6 +7189,56 @@ func (mr *MockConnectAPIMockRecorder) UpdateInstanceStorageConfigWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceStorageConfigWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateInstanceStorageConfigWithContext), varargs...)
+}
+
+// UpdatePhoneNumber mocks base method
+func (m *MockConnectAPI) UpdatePhoneNumber(arg0 *connect.UpdatePhoneNumberInput) (*connect.UpdatePhoneNumberOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePhoneNumber", arg0)
+	ret0, _ := ret[0].(*connect.UpdatePhoneNumberOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePhoneNumber indicates an expected call of UpdatePhoneNumber
+func (mr *MockConnectAPIMockRecorder) UpdatePhoneNumber(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePhoneNumber", reflect.TypeOf((*MockConnectAPI)(nil).UpdatePhoneNumber), arg0)
+}
+
+// UpdatePhoneNumberRequest mocks base method
+func (m *MockConnectAPI) UpdatePhoneNumberRequest(arg0 *connect.UpdatePhoneNumberInput) (*request.Request, *connect.UpdatePhoneNumberOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePhoneNumberRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdatePhoneNumberOutput)
+	return ret0, ret1
+}
+
+// UpdatePhoneNumberRequest indicates an expected call of UpdatePhoneNumberRequest
+func (mr *MockConnectAPIMockRecorder) UpdatePhoneNumberRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePhoneNumberRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdatePhoneNumberRequest), arg0)
+}
+
+// UpdatePhoneNumberWithContext mocks base method
+func (m *MockConnectAPI) UpdatePhoneNumberWithContext(arg0 context.Context, arg1 *connect.UpdatePhoneNumberInput, arg2 ...request.Option) (*connect.UpdatePhoneNumberOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdatePhoneNumberWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdatePhoneNumberOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePhoneNumberWithContext indicates an expected call of UpdatePhoneNumberWithContext
+func (mr *MockConnectAPIMockRecorder) UpdatePhoneNumberWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePhoneNumberWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdatePhoneNumberWithContext), varargs...)
 }
 
 // UpdateQueueHoursOfOperation mocks base method
