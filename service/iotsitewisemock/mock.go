@@ -235,6 +235,255 @@ func (mr *MockIoTSiteWiseAPIMockRecorder) BatchDisassociateProjectAssetsWithCont
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateProjectAssetsWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchDisassociateProjectAssetsWithContext), varargs...)
 }
 
+// BatchGetAssetPropertyAggregates mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyAggregates(arg0 *iotsitewise.BatchGetAssetPropertyAggregatesInput) (*iotsitewise.BatchGetAssetPropertyAggregatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyAggregates", arg0)
+	ret0, _ := ret[0].(*iotsitewise.BatchGetAssetPropertyAggregatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetAssetPropertyAggregates indicates an expected call of BatchGetAssetPropertyAggregates
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyAggregates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyAggregates", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyAggregates), arg0)
+}
+
+// BatchGetAssetPropertyAggregatesPages mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyAggregatesPages(arg0 *iotsitewise.BatchGetAssetPropertyAggregatesInput, arg1 func(*iotsitewise.BatchGetAssetPropertyAggregatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyAggregatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// BatchGetAssetPropertyAggregatesPages indicates an expected call of BatchGetAssetPropertyAggregatesPages
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyAggregatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyAggregatesPages", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyAggregatesPages), arg0, arg1)
+}
+
+// BatchGetAssetPropertyAggregatesPagesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyAggregatesPagesWithContext(arg0 context.Context, arg1 *iotsitewise.BatchGetAssetPropertyAggregatesInput, arg2 func(*iotsitewise.BatchGetAssetPropertyAggregatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyAggregatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// BatchGetAssetPropertyAggregatesPagesWithContext indicates an expected call of BatchGetAssetPropertyAggregatesPagesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyAggregatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyAggregatesPagesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyAggregatesPagesWithContext), varargs...)
+}
+
+// BatchGetAssetPropertyAggregatesRequest mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyAggregatesRequest(arg0 *iotsitewise.BatchGetAssetPropertyAggregatesInput) (*request.Request, *iotsitewise.BatchGetAssetPropertyAggregatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyAggregatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.BatchGetAssetPropertyAggregatesOutput)
+	return ret0, ret1
+}
+
+// BatchGetAssetPropertyAggregatesRequest indicates an expected call of BatchGetAssetPropertyAggregatesRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyAggregatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyAggregatesRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyAggregatesRequest), arg0)
+}
+
+// BatchGetAssetPropertyAggregatesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyAggregatesWithContext(arg0 context.Context, arg1 *iotsitewise.BatchGetAssetPropertyAggregatesInput, arg2 ...request.Option) (*iotsitewise.BatchGetAssetPropertyAggregatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyAggregatesWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.BatchGetAssetPropertyAggregatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetAssetPropertyAggregatesWithContext indicates an expected call of BatchGetAssetPropertyAggregatesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyAggregatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyAggregatesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyAggregatesWithContext), varargs...)
+}
+
+// BatchGetAssetPropertyValue mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyValue(arg0 *iotsitewise.BatchGetAssetPropertyValueInput) (*iotsitewise.BatchGetAssetPropertyValueOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyValue", arg0)
+	ret0, _ := ret[0].(*iotsitewise.BatchGetAssetPropertyValueOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetAssetPropertyValue indicates an expected call of BatchGetAssetPropertyValue
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyValue(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyValue", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyValue), arg0)
+}
+
+// BatchGetAssetPropertyValueHistory mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyValueHistory(arg0 *iotsitewise.BatchGetAssetPropertyValueHistoryInput) (*iotsitewise.BatchGetAssetPropertyValueHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyValueHistory", arg0)
+	ret0, _ := ret[0].(*iotsitewise.BatchGetAssetPropertyValueHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetAssetPropertyValueHistory indicates an expected call of BatchGetAssetPropertyValueHistory
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyValueHistory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyValueHistory", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyValueHistory), arg0)
+}
+
+// BatchGetAssetPropertyValueHistoryPages mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyValueHistoryPages(arg0 *iotsitewise.BatchGetAssetPropertyValueHistoryInput, arg1 func(*iotsitewise.BatchGetAssetPropertyValueHistoryOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyValueHistoryPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// BatchGetAssetPropertyValueHistoryPages indicates an expected call of BatchGetAssetPropertyValueHistoryPages
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyValueHistoryPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyValueHistoryPages", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyValueHistoryPages), arg0, arg1)
+}
+
+// BatchGetAssetPropertyValueHistoryPagesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyValueHistoryPagesWithContext(arg0 context.Context, arg1 *iotsitewise.BatchGetAssetPropertyValueHistoryInput, arg2 func(*iotsitewise.BatchGetAssetPropertyValueHistoryOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyValueHistoryPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// BatchGetAssetPropertyValueHistoryPagesWithContext indicates an expected call of BatchGetAssetPropertyValueHistoryPagesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyValueHistoryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyValueHistoryPagesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyValueHistoryPagesWithContext), varargs...)
+}
+
+// BatchGetAssetPropertyValueHistoryRequest mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyValueHistoryRequest(arg0 *iotsitewise.BatchGetAssetPropertyValueHistoryInput) (*request.Request, *iotsitewise.BatchGetAssetPropertyValueHistoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyValueHistoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.BatchGetAssetPropertyValueHistoryOutput)
+	return ret0, ret1
+}
+
+// BatchGetAssetPropertyValueHistoryRequest indicates an expected call of BatchGetAssetPropertyValueHistoryRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyValueHistoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyValueHistoryRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyValueHistoryRequest), arg0)
+}
+
+// BatchGetAssetPropertyValueHistoryWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyValueHistoryWithContext(arg0 context.Context, arg1 *iotsitewise.BatchGetAssetPropertyValueHistoryInput, arg2 ...request.Option) (*iotsitewise.BatchGetAssetPropertyValueHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyValueHistoryWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.BatchGetAssetPropertyValueHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetAssetPropertyValueHistoryWithContext indicates an expected call of BatchGetAssetPropertyValueHistoryWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyValueHistoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyValueHistoryWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyValueHistoryWithContext), varargs...)
+}
+
+// BatchGetAssetPropertyValuePages mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyValuePages(arg0 *iotsitewise.BatchGetAssetPropertyValueInput, arg1 func(*iotsitewise.BatchGetAssetPropertyValueOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyValuePages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// BatchGetAssetPropertyValuePages indicates an expected call of BatchGetAssetPropertyValuePages
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyValuePages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyValuePages", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyValuePages), arg0, arg1)
+}
+
+// BatchGetAssetPropertyValuePagesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyValuePagesWithContext(arg0 context.Context, arg1 *iotsitewise.BatchGetAssetPropertyValueInput, arg2 func(*iotsitewise.BatchGetAssetPropertyValueOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyValuePagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// BatchGetAssetPropertyValuePagesWithContext indicates an expected call of BatchGetAssetPropertyValuePagesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyValuePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyValuePagesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyValuePagesWithContext), varargs...)
+}
+
+// BatchGetAssetPropertyValueRequest mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyValueRequest(arg0 *iotsitewise.BatchGetAssetPropertyValueInput) (*request.Request, *iotsitewise.BatchGetAssetPropertyValueOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyValueRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.BatchGetAssetPropertyValueOutput)
+	return ret0, ret1
+}
+
+// BatchGetAssetPropertyValueRequest indicates an expected call of BatchGetAssetPropertyValueRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyValueRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyValueRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyValueRequest), arg0)
+}
+
+// BatchGetAssetPropertyValueWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) BatchGetAssetPropertyValueWithContext(arg0 context.Context, arg1 *iotsitewise.BatchGetAssetPropertyValueInput, arg2 ...request.Option) (*iotsitewise.BatchGetAssetPropertyValueOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetAssetPropertyValueWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.BatchGetAssetPropertyValueOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetAssetPropertyValueWithContext indicates an expected call of BatchGetAssetPropertyValueWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) BatchGetAssetPropertyValueWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAssetPropertyValueWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).BatchGetAssetPropertyValueWithContext), varargs...)
+}
+
 // BatchPutAssetPropertyValue mocks base method
 func (m *MockIoTSiteWiseAPI) BatchPutAssetPropertyValue(arg0 *iotsitewise.BatchPutAssetPropertyValueInput) (*iotsitewise.BatchPutAssetPropertyValueOutput, error) {
 	m.ctrl.T.Helper()

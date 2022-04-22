@@ -668,6 +668,56 @@ func (mr *MockLookoutMetricsAPIMockRecorder) DescribeMetricSetWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMetricSetWithContext", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).DescribeMetricSetWithContext), varargs...)
 }
 
+// DetectMetricSetConfig mocks base method
+func (m *MockLookoutMetricsAPI) DetectMetricSetConfig(arg0 *lookoutmetrics.DetectMetricSetConfigInput) (*lookoutmetrics.DetectMetricSetConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetectMetricSetConfig", arg0)
+	ret0, _ := ret[0].(*lookoutmetrics.DetectMetricSetConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetectMetricSetConfig indicates an expected call of DetectMetricSetConfig
+func (mr *MockLookoutMetricsAPIMockRecorder) DetectMetricSetConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectMetricSetConfig", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).DetectMetricSetConfig), arg0)
+}
+
+// DetectMetricSetConfigRequest mocks base method
+func (m *MockLookoutMetricsAPI) DetectMetricSetConfigRequest(arg0 *lookoutmetrics.DetectMetricSetConfigInput) (*request.Request, *lookoutmetrics.DetectMetricSetConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetectMetricSetConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutmetrics.DetectMetricSetConfigOutput)
+	return ret0, ret1
+}
+
+// DetectMetricSetConfigRequest indicates an expected call of DetectMetricSetConfigRequest
+func (mr *MockLookoutMetricsAPIMockRecorder) DetectMetricSetConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectMetricSetConfigRequest", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).DetectMetricSetConfigRequest), arg0)
+}
+
+// DetectMetricSetConfigWithContext mocks base method
+func (m *MockLookoutMetricsAPI) DetectMetricSetConfigWithContext(arg0 context.Context, arg1 *lookoutmetrics.DetectMetricSetConfigInput, arg2 ...request.Option) (*lookoutmetrics.DetectMetricSetConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DetectMetricSetConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutmetrics.DetectMetricSetConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetectMetricSetConfigWithContext indicates an expected call of DetectMetricSetConfigWithContext
+func (mr *MockLookoutMetricsAPIMockRecorder) DetectMetricSetConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectMetricSetConfigWithContext", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).DetectMetricSetConfigWithContext), varargs...)
+}
+
 // GetAnomalyGroup mocks base method
 func (m *MockLookoutMetricsAPI) GetAnomalyGroup(arg0 *lookoutmetrics.GetAnomalyGroupInput) (*lookoutmetrics.GetAnomalyGroupOutput, error) {
 	m.ctrl.T.Helper()

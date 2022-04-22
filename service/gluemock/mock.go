@@ -385,6 +385,56 @@ func (mr *MockGlueAPIMockRecorder) BatchGetCrawlersWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCrawlersWithContext", reflect.TypeOf((*MockGlueAPI)(nil).BatchGetCrawlersWithContext), varargs...)
 }
 
+// BatchGetCustomEntityTypes mocks base method
+func (m *MockGlueAPI) BatchGetCustomEntityTypes(arg0 *glue.BatchGetCustomEntityTypesInput) (*glue.BatchGetCustomEntityTypesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetCustomEntityTypes", arg0)
+	ret0, _ := ret[0].(*glue.BatchGetCustomEntityTypesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetCustomEntityTypes indicates an expected call of BatchGetCustomEntityTypes
+func (mr *MockGlueAPIMockRecorder) BatchGetCustomEntityTypes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCustomEntityTypes", reflect.TypeOf((*MockGlueAPI)(nil).BatchGetCustomEntityTypes), arg0)
+}
+
+// BatchGetCustomEntityTypesRequest mocks base method
+func (m *MockGlueAPI) BatchGetCustomEntityTypesRequest(arg0 *glue.BatchGetCustomEntityTypesInput) (*request.Request, *glue.BatchGetCustomEntityTypesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetCustomEntityTypesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.BatchGetCustomEntityTypesOutput)
+	return ret0, ret1
+}
+
+// BatchGetCustomEntityTypesRequest indicates an expected call of BatchGetCustomEntityTypesRequest
+func (mr *MockGlueAPIMockRecorder) BatchGetCustomEntityTypesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCustomEntityTypesRequest", reflect.TypeOf((*MockGlueAPI)(nil).BatchGetCustomEntityTypesRequest), arg0)
+}
+
+// BatchGetCustomEntityTypesWithContext mocks base method
+func (m *MockGlueAPI) BatchGetCustomEntityTypesWithContext(arg0 context.Context, arg1 *glue.BatchGetCustomEntityTypesInput, arg2 ...request.Option) (*glue.BatchGetCustomEntityTypesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetCustomEntityTypesWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.BatchGetCustomEntityTypesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetCustomEntityTypesWithContext indicates an expected call of BatchGetCustomEntityTypesWithContext
+func (mr *MockGlueAPIMockRecorder) BatchGetCustomEntityTypesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCustomEntityTypesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).BatchGetCustomEntityTypesWithContext), varargs...)
+}
+
 // BatchGetDevEndpoints mocks base method
 func (m *MockGlueAPI) BatchGetDevEndpoints(arg0 *glue.BatchGetDevEndpointsInput) (*glue.BatchGetDevEndpointsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1083,6 +1133,56 @@ func (mr *MockGlueAPIMockRecorder) CreateCrawlerWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCrawlerWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreateCrawlerWithContext), varargs...)
+}
+
+// CreateCustomEntityType mocks base method
+func (m *MockGlueAPI) CreateCustomEntityType(arg0 *glue.CreateCustomEntityTypeInput) (*glue.CreateCustomEntityTypeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCustomEntityType", arg0)
+	ret0, _ := ret[0].(*glue.CreateCustomEntityTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCustomEntityType indicates an expected call of CreateCustomEntityType
+func (mr *MockGlueAPIMockRecorder) CreateCustomEntityType(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomEntityType", reflect.TypeOf((*MockGlueAPI)(nil).CreateCustomEntityType), arg0)
+}
+
+// CreateCustomEntityTypeRequest mocks base method
+func (m *MockGlueAPI) CreateCustomEntityTypeRequest(arg0 *glue.CreateCustomEntityTypeInput) (*request.Request, *glue.CreateCustomEntityTypeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCustomEntityTypeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.CreateCustomEntityTypeOutput)
+	return ret0, ret1
+}
+
+// CreateCustomEntityTypeRequest indicates an expected call of CreateCustomEntityTypeRequest
+func (mr *MockGlueAPIMockRecorder) CreateCustomEntityTypeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomEntityTypeRequest", reflect.TypeOf((*MockGlueAPI)(nil).CreateCustomEntityTypeRequest), arg0)
+}
+
+// CreateCustomEntityTypeWithContext mocks base method
+func (m *MockGlueAPI) CreateCustomEntityTypeWithContext(arg0 context.Context, arg1 *glue.CreateCustomEntityTypeInput, arg2 ...request.Option) (*glue.CreateCustomEntityTypeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCustomEntityTypeWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.CreateCustomEntityTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCustomEntityTypeWithContext indicates an expected call of CreateCustomEntityTypeWithContext
+func (mr *MockGlueAPIMockRecorder) CreateCustomEntityTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomEntityTypeWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreateCustomEntityTypeWithContext), varargs...)
 }
 
 // CreateDatabase mocks base method
@@ -2133,6 +2233,56 @@ func (mr *MockGlueAPIMockRecorder) DeleteCrawlerWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCrawlerWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteCrawlerWithContext), varargs...)
+}
+
+// DeleteCustomEntityType mocks base method
+func (m *MockGlueAPI) DeleteCustomEntityType(arg0 *glue.DeleteCustomEntityTypeInput) (*glue.DeleteCustomEntityTypeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCustomEntityType", arg0)
+	ret0, _ := ret[0].(*glue.DeleteCustomEntityTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCustomEntityType indicates an expected call of DeleteCustomEntityType
+func (mr *MockGlueAPIMockRecorder) DeleteCustomEntityType(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomEntityType", reflect.TypeOf((*MockGlueAPI)(nil).DeleteCustomEntityType), arg0)
+}
+
+// DeleteCustomEntityTypeRequest mocks base method
+func (m *MockGlueAPI) DeleteCustomEntityTypeRequest(arg0 *glue.DeleteCustomEntityTypeInput) (*request.Request, *glue.DeleteCustomEntityTypeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCustomEntityTypeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.DeleteCustomEntityTypeOutput)
+	return ret0, ret1
+}
+
+// DeleteCustomEntityTypeRequest indicates an expected call of DeleteCustomEntityTypeRequest
+func (mr *MockGlueAPIMockRecorder) DeleteCustomEntityTypeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomEntityTypeRequest", reflect.TypeOf((*MockGlueAPI)(nil).DeleteCustomEntityTypeRequest), arg0)
+}
+
+// DeleteCustomEntityTypeWithContext mocks base method
+func (m *MockGlueAPI) DeleteCustomEntityTypeWithContext(arg0 context.Context, arg1 *glue.DeleteCustomEntityTypeInput, arg2 ...request.Option) (*glue.DeleteCustomEntityTypeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCustomEntityTypeWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.DeleteCustomEntityTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCustomEntityTypeWithContext indicates an expected call of DeleteCustomEntityTypeWithContext
+func (mr *MockGlueAPIMockRecorder) DeleteCustomEntityTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomEntityTypeWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteCustomEntityTypeWithContext), varargs...)
 }
 
 // DeleteDatabase mocks base method
@@ -3798,6 +3948,56 @@ func (mr *MockGlueAPIMockRecorder) GetCrawlersWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCrawlersWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetCrawlersWithContext), varargs...)
+}
+
+// GetCustomEntityType mocks base method
+func (m *MockGlueAPI) GetCustomEntityType(arg0 *glue.GetCustomEntityTypeInput) (*glue.GetCustomEntityTypeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCustomEntityType", arg0)
+	ret0, _ := ret[0].(*glue.GetCustomEntityTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCustomEntityType indicates an expected call of GetCustomEntityType
+func (mr *MockGlueAPIMockRecorder) GetCustomEntityType(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCustomEntityType", reflect.TypeOf((*MockGlueAPI)(nil).GetCustomEntityType), arg0)
+}
+
+// GetCustomEntityTypeRequest mocks base method
+func (m *MockGlueAPI) GetCustomEntityTypeRequest(arg0 *glue.GetCustomEntityTypeInput) (*request.Request, *glue.GetCustomEntityTypeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCustomEntityTypeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetCustomEntityTypeOutput)
+	return ret0, ret1
+}
+
+// GetCustomEntityTypeRequest indicates an expected call of GetCustomEntityTypeRequest
+func (mr *MockGlueAPIMockRecorder) GetCustomEntityTypeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCustomEntityTypeRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetCustomEntityTypeRequest), arg0)
+}
+
+// GetCustomEntityTypeWithContext mocks base method
+func (m *MockGlueAPI) GetCustomEntityTypeWithContext(arg0 context.Context, arg1 *glue.GetCustomEntityTypeInput, arg2 ...request.Option) (*glue.GetCustomEntityTypeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCustomEntityTypeWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetCustomEntityTypeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCustomEntityTypeWithContext indicates an expected call of GetCustomEntityTypeWithContext
+func (mr *MockGlueAPIMockRecorder) GetCustomEntityTypeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCustomEntityTypeWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetCustomEntityTypeWithContext), varargs...)
 }
 
 // GetDataCatalogEncryptionSettings mocks base method
@@ -6892,6 +7092,89 @@ func (mr *MockGlueAPIMockRecorder) ListCrawlersWithContext(arg0, arg1 interface{
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCrawlersWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListCrawlersWithContext), varargs...)
+}
+
+// ListCustomEntityTypes mocks base method
+func (m *MockGlueAPI) ListCustomEntityTypes(arg0 *glue.ListCustomEntityTypesInput) (*glue.ListCustomEntityTypesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomEntityTypes", arg0)
+	ret0, _ := ret[0].(*glue.ListCustomEntityTypesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCustomEntityTypes indicates an expected call of ListCustomEntityTypes
+func (mr *MockGlueAPIMockRecorder) ListCustomEntityTypes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomEntityTypes", reflect.TypeOf((*MockGlueAPI)(nil).ListCustomEntityTypes), arg0)
+}
+
+// ListCustomEntityTypesPages mocks base method
+func (m *MockGlueAPI) ListCustomEntityTypesPages(arg0 *glue.ListCustomEntityTypesInput, arg1 func(*glue.ListCustomEntityTypesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomEntityTypesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCustomEntityTypesPages indicates an expected call of ListCustomEntityTypesPages
+func (mr *MockGlueAPIMockRecorder) ListCustomEntityTypesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomEntityTypesPages", reflect.TypeOf((*MockGlueAPI)(nil).ListCustomEntityTypesPages), arg0, arg1)
+}
+
+// ListCustomEntityTypesPagesWithContext mocks base method
+func (m *MockGlueAPI) ListCustomEntityTypesPagesWithContext(arg0 context.Context, arg1 *glue.ListCustomEntityTypesInput, arg2 func(*glue.ListCustomEntityTypesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCustomEntityTypesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCustomEntityTypesPagesWithContext indicates an expected call of ListCustomEntityTypesPagesWithContext
+func (mr *MockGlueAPIMockRecorder) ListCustomEntityTypesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomEntityTypesPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListCustomEntityTypesPagesWithContext), varargs...)
+}
+
+// ListCustomEntityTypesRequest mocks base method
+func (m *MockGlueAPI) ListCustomEntityTypesRequest(arg0 *glue.ListCustomEntityTypesInput) (*request.Request, *glue.ListCustomEntityTypesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomEntityTypesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.ListCustomEntityTypesOutput)
+	return ret0, ret1
+}
+
+// ListCustomEntityTypesRequest indicates an expected call of ListCustomEntityTypesRequest
+func (mr *MockGlueAPIMockRecorder) ListCustomEntityTypesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomEntityTypesRequest", reflect.TypeOf((*MockGlueAPI)(nil).ListCustomEntityTypesRequest), arg0)
+}
+
+// ListCustomEntityTypesWithContext mocks base method
+func (m *MockGlueAPI) ListCustomEntityTypesWithContext(arg0 context.Context, arg1 *glue.ListCustomEntityTypesInput, arg2 ...request.Option) (*glue.ListCustomEntityTypesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCustomEntityTypesWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.ListCustomEntityTypesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCustomEntityTypesWithContext indicates an expected call of ListCustomEntityTypesWithContext
+func (mr *MockGlueAPIMockRecorder) ListCustomEntityTypesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomEntityTypesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListCustomEntityTypesWithContext), varargs...)
 }
 
 // ListDevEndpoints mocks base method
