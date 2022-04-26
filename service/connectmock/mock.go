@@ -5958,6 +5958,89 @@ func (mr *MockConnectAPIMockRecorder) SearchAvailablePhoneNumbersWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAvailablePhoneNumbersWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchAvailablePhoneNumbersWithContext), varargs...)
 }
 
+// SearchUsers mocks base method
+func (m *MockConnectAPI) SearchUsers(arg0 *connect.SearchUsersInput) (*connect.SearchUsersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchUsers", arg0)
+	ret0, _ := ret[0].(*connect.SearchUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchUsers indicates an expected call of SearchUsers
+func (mr *MockConnectAPIMockRecorder) SearchUsers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsers", reflect.TypeOf((*MockConnectAPI)(nil).SearchUsers), arg0)
+}
+
+// SearchUsersPages mocks base method
+func (m *MockConnectAPI) SearchUsersPages(arg0 *connect.SearchUsersInput, arg1 func(*connect.SearchUsersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchUsersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchUsersPages indicates an expected call of SearchUsersPages
+func (mr *MockConnectAPIMockRecorder) SearchUsersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsersPages", reflect.TypeOf((*MockConnectAPI)(nil).SearchUsersPages), arg0, arg1)
+}
+
+// SearchUsersPagesWithContext mocks base method
+func (m *MockConnectAPI) SearchUsersPagesWithContext(arg0 context.Context, arg1 *connect.SearchUsersInput, arg2 func(*connect.SearchUsersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchUsersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchUsersPagesWithContext indicates an expected call of SearchUsersPagesWithContext
+func (mr *MockConnectAPIMockRecorder) SearchUsersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsersPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchUsersPagesWithContext), varargs...)
+}
+
+// SearchUsersRequest mocks base method
+func (m *MockConnectAPI) SearchUsersRequest(arg0 *connect.SearchUsersInput) (*request.Request, *connect.SearchUsersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchUsersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.SearchUsersOutput)
+	return ret0, ret1
+}
+
+// SearchUsersRequest indicates an expected call of SearchUsersRequest
+func (mr *MockConnectAPIMockRecorder) SearchUsersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsersRequest", reflect.TypeOf((*MockConnectAPI)(nil).SearchUsersRequest), arg0)
+}
+
+// SearchUsersWithContext mocks base method
+func (m *MockConnectAPI) SearchUsersWithContext(arg0 context.Context, arg1 *connect.SearchUsersInput, arg2 ...request.Option) (*connect.SearchUsersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchUsersWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.SearchUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchUsersWithContext indicates an expected call of SearchUsersWithContext
+func (mr *MockConnectAPIMockRecorder) SearchUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsersWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchUsersWithContext), varargs...)
+}
+
 // SearchVocabularies mocks base method
 func (m *MockConnectAPI) SearchVocabularies(arg0 *connect.SearchVocabulariesInput) (*connect.SearchVocabulariesOutput, error) {
 	m.ctrl.T.Helper()
