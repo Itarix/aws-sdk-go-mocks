@@ -5165,6 +5165,56 @@ func (mr *MockLightsailAPIMockRecorder) GetLoadBalancerTlsCertificatesWithContex
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoadBalancerTlsCertificatesWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetLoadBalancerTlsCertificatesWithContext), varargs...)
 }
 
+// GetLoadBalancerTlsPolicies mocks base method
+func (m *MockLightsailAPI) GetLoadBalancerTlsPolicies(arg0 *lightsail.GetLoadBalancerTlsPoliciesInput) (*lightsail.GetLoadBalancerTlsPoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLoadBalancerTlsPolicies", arg0)
+	ret0, _ := ret[0].(*lightsail.GetLoadBalancerTlsPoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLoadBalancerTlsPolicies indicates an expected call of GetLoadBalancerTlsPolicies
+func (mr *MockLightsailAPIMockRecorder) GetLoadBalancerTlsPolicies(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoadBalancerTlsPolicies", reflect.TypeOf((*MockLightsailAPI)(nil).GetLoadBalancerTlsPolicies), arg0)
+}
+
+// GetLoadBalancerTlsPoliciesRequest mocks base method
+func (m *MockLightsailAPI) GetLoadBalancerTlsPoliciesRequest(arg0 *lightsail.GetLoadBalancerTlsPoliciesInput) (*request.Request, *lightsail.GetLoadBalancerTlsPoliciesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLoadBalancerTlsPoliciesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.GetLoadBalancerTlsPoliciesOutput)
+	return ret0, ret1
+}
+
+// GetLoadBalancerTlsPoliciesRequest indicates an expected call of GetLoadBalancerTlsPoliciesRequest
+func (mr *MockLightsailAPIMockRecorder) GetLoadBalancerTlsPoliciesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoadBalancerTlsPoliciesRequest", reflect.TypeOf((*MockLightsailAPI)(nil).GetLoadBalancerTlsPoliciesRequest), arg0)
+}
+
+// GetLoadBalancerTlsPoliciesWithContext mocks base method
+func (m *MockLightsailAPI) GetLoadBalancerTlsPoliciesWithContext(arg0 context.Context, arg1 *lightsail.GetLoadBalancerTlsPoliciesInput, arg2 ...request.Option) (*lightsail.GetLoadBalancerTlsPoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLoadBalancerTlsPoliciesWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.GetLoadBalancerTlsPoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLoadBalancerTlsPoliciesWithContext indicates an expected call of GetLoadBalancerTlsPoliciesWithContext
+func (mr *MockLightsailAPIMockRecorder) GetLoadBalancerTlsPoliciesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoadBalancerTlsPoliciesWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetLoadBalancerTlsPoliciesWithContext), varargs...)
+}
+
 // GetLoadBalancerWithContext mocks base method
 func (m *MockLightsailAPI) GetLoadBalancerWithContext(arg0 context.Context, arg1 *lightsail.GetLoadBalancerInput, arg2 ...request.Option) (*lightsail.GetLoadBalancerOutput, error) {
 	m.ctrl.T.Helper()

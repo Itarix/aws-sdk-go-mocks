@@ -1417,6 +1417,56 @@ func (mr *MockNetworkFirewallAPIMockRecorder) UpdateFirewallDescriptionWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallDescriptionWithContext", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).UpdateFirewallDescriptionWithContext), varargs...)
 }
 
+// UpdateFirewallEncryptionConfiguration mocks base method
+func (m *MockNetworkFirewallAPI) UpdateFirewallEncryptionConfiguration(arg0 *networkfirewall.UpdateFirewallEncryptionConfigurationInput) (*networkfirewall.UpdateFirewallEncryptionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFirewallEncryptionConfiguration", arg0)
+	ret0, _ := ret[0].(*networkfirewall.UpdateFirewallEncryptionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFirewallEncryptionConfiguration indicates an expected call of UpdateFirewallEncryptionConfiguration
+func (mr *MockNetworkFirewallAPIMockRecorder) UpdateFirewallEncryptionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallEncryptionConfiguration", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).UpdateFirewallEncryptionConfiguration), arg0)
+}
+
+// UpdateFirewallEncryptionConfigurationRequest mocks base method
+func (m *MockNetworkFirewallAPI) UpdateFirewallEncryptionConfigurationRequest(arg0 *networkfirewall.UpdateFirewallEncryptionConfigurationInput) (*request.Request, *networkfirewall.UpdateFirewallEncryptionConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFirewallEncryptionConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkfirewall.UpdateFirewallEncryptionConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateFirewallEncryptionConfigurationRequest indicates an expected call of UpdateFirewallEncryptionConfigurationRequest
+func (mr *MockNetworkFirewallAPIMockRecorder) UpdateFirewallEncryptionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallEncryptionConfigurationRequest", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).UpdateFirewallEncryptionConfigurationRequest), arg0)
+}
+
+// UpdateFirewallEncryptionConfigurationWithContext mocks base method
+func (m *MockNetworkFirewallAPI) UpdateFirewallEncryptionConfigurationWithContext(arg0 context.Context, arg1 *networkfirewall.UpdateFirewallEncryptionConfigurationInput, arg2 ...request.Option) (*networkfirewall.UpdateFirewallEncryptionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFirewallEncryptionConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*networkfirewall.UpdateFirewallEncryptionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFirewallEncryptionConfigurationWithContext indicates an expected call of UpdateFirewallEncryptionConfigurationWithContext
+func (mr *MockNetworkFirewallAPIMockRecorder) UpdateFirewallEncryptionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFirewallEncryptionConfigurationWithContext", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).UpdateFirewallEncryptionConfigurationWithContext), varargs...)
+}
+
 // UpdateFirewallPolicy mocks base method
 func (m *MockNetworkFirewallAPI) UpdateFirewallPolicy(arg0 *networkfirewall.UpdateFirewallPolicyInput) (*networkfirewall.UpdateFirewallPolicyOutput, error) {
 	m.ctrl.T.Helper()
