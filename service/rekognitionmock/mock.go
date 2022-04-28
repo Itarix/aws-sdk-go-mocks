@@ -3430,6 +3430,56 @@ func (mr *MockRekognitionAPIMockRecorder) UpdateDatasetEntriesWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatasetEntriesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).UpdateDatasetEntriesWithContext), varargs...)
 }
 
+// UpdateStreamProcessor mocks base method
+func (m *MockRekognitionAPI) UpdateStreamProcessor(arg0 *rekognition.UpdateStreamProcessorInput) (*rekognition.UpdateStreamProcessorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStreamProcessor", arg0)
+	ret0, _ := ret[0].(*rekognition.UpdateStreamProcessorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStreamProcessor indicates an expected call of UpdateStreamProcessor
+func (mr *MockRekognitionAPIMockRecorder) UpdateStreamProcessor(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStreamProcessor", reflect.TypeOf((*MockRekognitionAPI)(nil).UpdateStreamProcessor), arg0)
+}
+
+// UpdateStreamProcessorRequest mocks base method
+func (m *MockRekognitionAPI) UpdateStreamProcessorRequest(arg0 *rekognition.UpdateStreamProcessorInput) (*request.Request, *rekognition.UpdateStreamProcessorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStreamProcessorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.UpdateStreamProcessorOutput)
+	return ret0, ret1
+}
+
+// UpdateStreamProcessorRequest indicates an expected call of UpdateStreamProcessorRequest
+func (mr *MockRekognitionAPIMockRecorder) UpdateStreamProcessorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStreamProcessorRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).UpdateStreamProcessorRequest), arg0)
+}
+
+// UpdateStreamProcessorWithContext mocks base method
+func (m *MockRekognitionAPI) UpdateStreamProcessorWithContext(arg0 context.Context, arg1 *rekognition.UpdateStreamProcessorInput, arg2 ...request.Option) (*rekognition.UpdateStreamProcessorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateStreamProcessorWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.UpdateStreamProcessorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStreamProcessorWithContext indicates an expected call of UpdateStreamProcessorWithContext
+func (mr *MockRekognitionAPIMockRecorder) UpdateStreamProcessorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStreamProcessorWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).UpdateStreamProcessorWithContext), varargs...)
+}
+
 // WaitUntilProjectVersionRunning mocks base method
 func (m *MockRekognitionAPI) WaitUntilProjectVersionRunning(arg0 *rekognition.DescribeProjectVersionsInput) error {
 	m.ctrl.T.Helper()

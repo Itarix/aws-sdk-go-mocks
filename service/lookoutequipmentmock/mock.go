@@ -950,6 +950,89 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) ListModelsWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelsWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListModelsWithContext), varargs...)
 }
 
+// ListSensorStatistics mocks base method
+func (m *MockLookoutEquipmentAPI) ListSensorStatistics(arg0 *lookoutequipment.ListSensorStatisticsInput) (*lookoutequipment.ListSensorStatisticsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSensorStatistics", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.ListSensorStatisticsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSensorStatistics indicates an expected call of ListSensorStatistics
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListSensorStatistics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSensorStatistics", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListSensorStatistics), arg0)
+}
+
+// ListSensorStatisticsPages mocks base method
+func (m *MockLookoutEquipmentAPI) ListSensorStatisticsPages(arg0 *lookoutequipment.ListSensorStatisticsInput, arg1 func(*lookoutequipment.ListSensorStatisticsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSensorStatisticsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSensorStatisticsPages indicates an expected call of ListSensorStatisticsPages
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListSensorStatisticsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSensorStatisticsPages", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListSensorStatisticsPages), arg0, arg1)
+}
+
+// ListSensorStatisticsPagesWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) ListSensorStatisticsPagesWithContext(arg0 context.Context, arg1 *lookoutequipment.ListSensorStatisticsInput, arg2 func(*lookoutequipment.ListSensorStatisticsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSensorStatisticsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSensorStatisticsPagesWithContext indicates an expected call of ListSensorStatisticsPagesWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListSensorStatisticsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSensorStatisticsPagesWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListSensorStatisticsPagesWithContext), varargs...)
+}
+
+// ListSensorStatisticsRequest mocks base method
+func (m *MockLookoutEquipmentAPI) ListSensorStatisticsRequest(arg0 *lookoutequipment.ListSensorStatisticsInput) (*request.Request, *lookoutequipment.ListSensorStatisticsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSensorStatisticsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.ListSensorStatisticsOutput)
+	return ret0, ret1
+}
+
+// ListSensorStatisticsRequest indicates an expected call of ListSensorStatisticsRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListSensorStatisticsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSensorStatisticsRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListSensorStatisticsRequest), arg0)
+}
+
+// ListSensorStatisticsWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) ListSensorStatisticsWithContext(arg0 context.Context, arg1 *lookoutequipment.ListSensorStatisticsInput, arg2 ...request.Option) (*lookoutequipment.ListSensorStatisticsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSensorStatisticsWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.ListSensorStatisticsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSensorStatisticsWithContext indicates an expected call of ListSensorStatisticsWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListSensorStatisticsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSensorStatisticsWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListSensorStatisticsWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockLookoutEquipmentAPI) ListTagsForResource(arg0 *lookoutequipment.ListTagsForResourceInput) (*lookoutequipment.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
