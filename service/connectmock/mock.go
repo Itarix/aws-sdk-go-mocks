@@ -5775,6 +5775,56 @@ func (mr *MockConnectAPIMockRecorder) ListUsersWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListUsersWithContext), varargs...)
 }
 
+// PutUserStatus mocks base method
+func (m *MockConnectAPI) PutUserStatus(arg0 *connect.PutUserStatusInput) (*connect.PutUserStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutUserStatus", arg0)
+	ret0, _ := ret[0].(*connect.PutUserStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutUserStatus indicates an expected call of PutUserStatus
+func (mr *MockConnectAPIMockRecorder) PutUserStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutUserStatus", reflect.TypeOf((*MockConnectAPI)(nil).PutUserStatus), arg0)
+}
+
+// PutUserStatusRequest mocks base method
+func (m *MockConnectAPI) PutUserStatusRequest(arg0 *connect.PutUserStatusInput) (*request.Request, *connect.PutUserStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutUserStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.PutUserStatusOutput)
+	return ret0, ret1
+}
+
+// PutUserStatusRequest indicates an expected call of PutUserStatusRequest
+func (mr *MockConnectAPIMockRecorder) PutUserStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutUserStatusRequest", reflect.TypeOf((*MockConnectAPI)(nil).PutUserStatusRequest), arg0)
+}
+
+// PutUserStatusWithContext mocks base method
+func (m *MockConnectAPI) PutUserStatusWithContext(arg0 context.Context, arg1 *connect.PutUserStatusInput, arg2 ...request.Option) (*connect.PutUserStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutUserStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.PutUserStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutUserStatusWithContext indicates an expected call of PutUserStatusWithContext
+func (mr *MockConnectAPIMockRecorder) PutUserStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutUserStatusWithContext", reflect.TypeOf((*MockConnectAPI)(nil).PutUserStatusWithContext), varargs...)
+}
+
 // ReleasePhoneNumber mocks base method
 func (m *MockConnectAPI) ReleasePhoneNumber(arg0 *connect.ReleasePhoneNumberInput) (*connect.ReleasePhoneNumberOutput, error) {
 	m.ctrl.T.Helper()
