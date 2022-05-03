@@ -465,6 +465,39 @@ func (mr *MockOutpostsAPIMockRecorder) GetOutpostInstanceTypes(arg0 interface{})
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOutpostInstanceTypes", reflect.TypeOf((*MockOutpostsAPI)(nil).GetOutpostInstanceTypes), arg0)
 }
 
+// GetOutpostInstanceTypesPages mocks base method
+func (m *MockOutpostsAPI) GetOutpostInstanceTypesPages(arg0 *outposts.GetOutpostInstanceTypesInput, arg1 func(*outposts.GetOutpostInstanceTypesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetOutpostInstanceTypesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetOutpostInstanceTypesPages indicates an expected call of GetOutpostInstanceTypesPages
+func (mr *MockOutpostsAPIMockRecorder) GetOutpostInstanceTypesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOutpostInstanceTypesPages", reflect.TypeOf((*MockOutpostsAPI)(nil).GetOutpostInstanceTypesPages), arg0, arg1)
+}
+
+// GetOutpostInstanceTypesPagesWithContext mocks base method
+func (m *MockOutpostsAPI) GetOutpostInstanceTypesPagesWithContext(arg0 context.Context, arg1 *outposts.GetOutpostInstanceTypesInput, arg2 func(*outposts.GetOutpostInstanceTypesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetOutpostInstanceTypesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetOutpostInstanceTypesPagesWithContext indicates an expected call of GetOutpostInstanceTypesPagesWithContext
+func (mr *MockOutpostsAPIMockRecorder) GetOutpostInstanceTypesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOutpostInstanceTypesPagesWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).GetOutpostInstanceTypesPagesWithContext), varargs...)
+}
+
 // GetOutpostInstanceTypesRequest mocks base method
 func (m *MockOutpostsAPI) GetOutpostInstanceTypesRequest(arg0 *outposts.GetOutpostInstanceTypesInput) (*request.Request, *outposts.GetOutpostInstanceTypesOutput) {
 	m.ctrl.T.Helper()
@@ -633,6 +666,89 @@ func (mr *MockOutpostsAPIMockRecorder) GetSiteWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSiteWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).GetSiteWithContext), varargs...)
+}
+
+// ListAssets mocks base method
+func (m *MockOutpostsAPI) ListAssets(arg0 *outposts.ListAssetsInput) (*outposts.ListAssetsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssets", arg0)
+	ret0, _ := ret[0].(*outposts.ListAssetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssets indicates an expected call of ListAssets
+func (mr *MockOutpostsAPIMockRecorder) ListAssets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssets", reflect.TypeOf((*MockOutpostsAPI)(nil).ListAssets), arg0)
+}
+
+// ListAssetsPages mocks base method
+func (m *MockOutpostsAPI) ListAssetsPages(arg0 *outposts.ListAssetsInput, arg1 func(*outposts.ListAssetsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssetsPages indicates an expected call of ListAssetsPages
+func (mr *MockOutpostsAPIMockRecorder) ListAssetsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetsPages", reflect.TypeOf((*MockOutpostsAPI)(nil).ListAssetsPages), arg0, arg1)
+}
+
+// ListAssetsPagesWithContext mocks base method
+func (m *MockOutpostsAPI) ListAssetsPagesWithContext(arg0 context.Context, arg1 *outposts.ListAssetsInput, arg2 func(*outposts.ListAssetsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssetsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssetsPagesWithContext indicates an expected call of ListAssetsPagesWithContext
+func (mr *MockOutpostsAPIMockRecorder) ListAssetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetsPagesWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).ListAssetsPagesWithContext), varargs...)
+}
+
+// ListAssetsRequest mocks base method
+func (m *MockOutpostsAPI) ListAssetsRequest(arg0 *outposts.ListAssetsInput) (*request.Request, *outposts.ListAssetsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.ListAssetsOutput)
+	return ret0, ret1
+}
+
+// ListAssetsRequest indicates an expected call of ListAssetsRequest
+func (mr *MockOutpostsAPIMockRecorder) ListAssetsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetsRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).ListAssetsRequest), arg0)
+}
+
+// ListAssetsWithContext mocks base method
+func (m *MockOutpostsAPI) ListAssetsWithContext(arg0 context.Context, arg1 *outposts.ListAssetsInput, arg2 ...request.Option) (*outposts.ListAssetsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssetsWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.ListAssetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssetsWithContext indicates an expected call of ListAssetsWithContext
+func (mr *MockOutpostsAPIMockRecorder) ListAssetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetsWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).ListAssetsWithContext), varargs...)
 }
 
 // ListCatalogItems mocks base method
