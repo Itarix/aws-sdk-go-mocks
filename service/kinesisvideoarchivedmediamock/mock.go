@@ -185,6 +185,89 @@ func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) GetHLSStreamingSessionUR
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetHLSStreamingSessionURLWithContext", reflect.TypeOf((*MockKinesisVideoArchivedMediaAPI)(nil).GetHLSStreamingSessionURLWithContext), varargs...)
 }
 
+// GetImages mocks base method
+func (m *MockKinesisVideoArchivedMediaAPI) GetImages(arg0 *kinesisvideoarchivedmedia.GetImagesInput) (*kinesisvideoarchivedmedia.GetImagesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetImages", arg0)
+	ret0, _ := ret[0].(*kinesisvideoarchivedmedia.GetImagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetImages indicates an expected call of GetImages
+func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) GetImages(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImages", reflect.TypeOf((*MockKinesisVideoArchivedMediaAPI)(nil).GetImages), arg0)
+}
+
+// GetImagesPages mocks base method
+func (m *MockKinesisVideoArchivedMediaAPI) GetImagesPages(arg0 *kinesisvideoarchivedmedia.GetImagesInput, arg1 func(*kinesisvideoarchivedmedia.GetImagesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetImagesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetImagesPages indicates an expected call of GetImagesPages
+func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) GetImagesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImagesPages", reflect.TypeOf((*MockKinesisVideoArchivedMediaAPI)(nil).GetImagesPages), arg0, arg1)
+}
+
+// GetImagesPagesWithContext mocks base method
+func (m *MockKinesisVideoArchivedMediaAPI) GetImagesPagesWithContext(arg0 context.Context, arg1 *kinesisvideoarchivedmedia.GetImagesInput, arg2 func(*kinesisvideoarchivedmedia.GetImagesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetImagesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetImagesPagesWithContext indicates an expected call of GetImagesPagesWithContext
+func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) GetImagesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImagesPagesWithContext", reflect.TypeOf((*MockKinesisVideoArchivedMediaAPI)(nil).GetImagesPagesWithContext), varargs...)
+}
+
+// GetImagesRequest mocks base method
+func (m *MockKinesisVideoArchivedMediaAPI) GetImagesRequest(arg0 *kinesisvideoarchivedmedia.GetImagesInput) (*request.Request, *kinesisvideoarchivedmedia.GetImagesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetImagesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideoarchivedmedia.GetImagesOutput)
+	return ret0, ret1
+}
+
+// GetImagesRequest indicates an expected call of GetImagesRequest
+func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) GetImagesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImagesRequest", reflect.TypeOf((*MockKinesisVideoArchivedMediaAPI)(nil).GetImagesRequest), arg0)
+}
+
+// GetImagesWithContext mocks base method
+func (m *MockKinesisVideoArchivedMediaAPI) GetImagesWithContext(arg0 context.Context, arg1 *kinesisvideoarchivedmedia.GetImagesInput, arg2 ...request.Option) (*kinesisvideoarchivedmedia.GetImagesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetImagesWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideoarchivedmedia.GetImagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetImagesWithContext indicates an expected call of GetImagesWithContext
+func (mr *MockKinesisVideoArchivedMediaAPIMockRecorder) GetImagesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImagesWithContext", reflect.TypeOf((*MockKinesisVideoArchivedMediaAPI)(nil).GetImagesWithContext), varargs...)
+}
+
 // GetMediaForFragmentList mocks base method
 func (m *MockKinesisVideoArchivedMediaAPI) GetMediaForFragmentList(arg0 *kinesisvideoarchivedmedia.GetMediaForFragmentListInput) (*kinesisvideoarchivedmedia.GetMediaForFragmentListOutput, error) {
 	m.ctrl.T.Helper()
