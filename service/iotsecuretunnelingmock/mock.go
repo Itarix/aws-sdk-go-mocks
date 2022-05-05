@@ -318,6 +318,56 @@ func (mr *MockIoTSecureTunnelingAPIMockRecorder) OpenTunnelWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "OpenTunnelWithContext", reflect.TypeOf((*MockIoTSecureTunnelingAPI)(nil).OpenTunnelWithContext), varargs...)
 }
 
+// RotateTunnelAccessToken mocks base method
+func (m *MockIoTSecureTunnelingAPI) RotateTunnelAccessToken(arg0 *iotsecuretunneling.RotateTunnelAccessTokenInput) (*iotsecuretunneling.RotateTunnelAccessTokenOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RotateTunnelAccessToken", arg0)
+	ret0, _ := ret[0].(*iotsecuretunneling.RotateTunnelAccessTokenOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RotateTunnelAccessToken indicates an expected call of RotateTunnelAccessToken
+func (mr *MockIoTSecureTunnelingAPIMockRecorder) RotateTunnelAccessToken(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RotateTunnelAccessToken", reflect.TypeOf((*MockIoTSecureTunnelingAPI)(nil).RotateTunnelAccessToken), arg0)
+}
+
+// RotateTunnelAccessTokenRequest mocks base method
+func (m *MockIoTSecureTunnelingAPI) RotateTunnelAccessTokenRequest(arg0 *iotsecuretunneling.RotateTunnelAccessTokenInput) (*request.Request, *iotsecuretunneling.RotateTunnelAccessTokenOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RotateTunnelAccessTokenRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsecuretunneling.RotateTunnelAccessTokenOutput)
+	return ret0, ret1
+}
+
+// RotateTunnelAccessTokenRequest indicates an expected call of RotateTunnelAccessTokenRequest
+func (mr *MockIoTSecureTunnelingAPIMockRecorder) RotateTunnelAccessTokenRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RotateTunnelAccessTokenRequest", reflect.TypeOf((*MockIoTSecureTunnelingAPI)(nil).RotateTunnelAccessTokenRequest), arg0)
+}
+
+// RotateTunnelAccessTokenWithContext mocks base method
+func (m *MockIoTSecureTunnelingAPI) RotateTunnelAccessTokenWithContext(arg0 context.Context, arg1 *iotsecuretunneling.RotateTunnelAccessTokenInput, arg2 ...request.Option) (*iotsecuretunneling.RotateTunnelAccessTokenOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RotateTunnelAccessTokenWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsecuretunneling.RotateTunnelAccessTokenOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RotateTunnelAccessTokenWithContext indicates an expected call of RotateTunnelAccessTokenWithContext
+func (mr *MockIoTSecureTunnelingAPIMockRecorder) RotateTunnelAccessTokenWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RotateTunnelAccessTokenWithContext", reflect.TypeOf((*MockIoTSecureTunnelingAPI)(nil).RotateTunnelAccessTokenWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockIoTSecureTunnelingAPI) TagResource(arg0 *iotsecuretunneling.TagResourceInput) (*iotsecuretunneling.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
