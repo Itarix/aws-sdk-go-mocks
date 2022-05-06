@@ -2048,6 +2048,39 @@ func (mr *MockKendraAPIMockRecorder) ListFaqs(arg0 interface{}) *gomock.Call {
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFaqs", reflect.TypeOf((*MockKendraAPI)(nil).ListFaqs), arg0)
 }
 
+// ListFaqsPages mocks base method
+func (m *MockKendraAPI) ListFaqsPages(arg0 *kendra.ListFaqsInput, arg1 func(*kendra.ListFaqsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFaqsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFaqsPages indicates an expected call of ListFaqsPages
+func (mr *MockKendraAPIMockRecorder) ListFaqsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFaqsPages", reflect.TypeOf((*MockKendraAPI)(nil).ListFaqsPages), arg0, arg1)
+}
+
+// ListFaqsPagesWithContext mocks base method
+func (m *MockKendraAPI) ListFaqsPagesWithContext(arg0 context.Context, arg1 *kendra.ListFaqsInput, arg2 func(*kendra.ListFaqsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFaqsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFaqsPagesWithContext indicates an expected call of ListFaqsPagesWithContext
+func (mr *MockKendraAPIMockRecorder) ListFaqsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFaqsPagesWithContext", reflect.TypeOf((*MockKendraAPI)(nil).ListFaqsPagesWithContext), varargs...)
+}
+
 // ListFaqsRequest mocks base method
 func (m *MockKendraAPI) ListFaqsRequest(arg0 *kendra.ListFaqsInput) (*request.Request, *kendra.ListFaqsOutput) {
 	m.ctrl.T.Helper()
@@ -2096,6 +2129,39 @@ func (m *MockKendraAPI) ListGroupsOlderThanOrderingId(arg0 *kendra.ListGroupsOld
 func (mr *MockKendraAPIMockRecorder) ListGroupsOlderThanOrderingId(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsOlderThanOrderingId", reflect.TypeOf((*MockKendraAPI)(nil).ListGroupsOlderThanOrderingId), arg0)
+}
+
+// ListGroupsOlderThanOrderingIdPages mocks base method
+func (m *MockKendraAPI) ListGroupsOlderThanOrderingIdPages(arg0 *kendra.ListGroupsOlderThanOrderingIdInput, arg1 func(*kendra.ListGroupsOlderThanOrderingIdOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGroupsOlderThanOrderingIdPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGroupsOlderThanOrderingIdPages indicates an expected call of ListGroupsOlderThanOrderingIdPages
+func (mr *MockKendraAPIMockRecorder) ListGroupsOlderThanOrderingIdPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsOlderThanOrderingIdPages", reflect.TypeOf((*MockKendraAPI)(nil).ListGroupsOlderThanOrderingIdPages), arg0, arg1)
+}
+
+// ListGroupsOlderThanOrderingIdPagesWithContext mocks base method
+func (m *MockKendraAPI) ListGroupsOlderThanOrderingIdPagesWithContext(arg0 context.Context, arg1 *kendra.ListGroupsOlderThanOrderingIdInput, arg2 func(*kendra.ListGroupsOlderThanOrderingIdOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGroupsOlderThanOrderingIdPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGroupsOlderThanOrderingIdPagesWithContext indicates an expected call of ListGroupsOlderThanOrderingIdPagesWithContext
+func (mr *MockKendraAPIMockRecorder) ListGroupsOlderThanOrderingIdPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsOlderThanOrderingIdPagesWithContext", reflect.TypeOf((*MockKendraAPI)(nil).ListGroupsOlderThanOrderingIdPagesWithContext), varargs...)
 }
 
 // ListGroupsOlderThanOrderingIdRequest mocks base method
@@ -2231,6 +2297,39 @@ func (mr *MockKendraAPIMockRecorder) ListQuerySuggestionsBlockLists(arg0 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQuerySuggestionsBlockLists", reflect.TypeOf((*MockKendraAPI)(nil).ListQuerySuggestionsBlockLists), arg0)
 }
 
+// ListQuerySuggestionsBlockListsPages mocks base method
+func (m *MockKendraAPI) ListQuerySuggestionsBlockListsPages(arg0 *kendra.ListQuerySuggestionsBlockListsInput, arg1 func(*kendra.ListQuerySuggestionsBlockListsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListQuerySuggestionsBlockListsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListQuerySuggestionsBlockListsPages indicates an expected call of ListQuerySuggestionsBlockListsPages
+func (mr *MockKendraAPIMockRecorder) ListQuerySuggestionsBlockListsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQuerySuggestionsBlockListsPages", reflect.TypeOf((*MockKendraAPI)(nil).ListQuerySuggestionsBlockListsPages), arg0, arg1)
+}
+
+// ListQuerySuggestionsBlockListsPagesWithContext mocks base method
+func (m *MockKendraAPI) ListQuerySuggestionsBlockListsPagesWithContext(arg0 context.Context, arg1 *kendra.ListQuerySuggestionsBlockListsInput, arg2 func(*kendra.ListQuerySuggestionsBlockListsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListQuerySuggestionsBlockListsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListQuerySuggestionsBlockListsPagesWithContext indicates an expected call of ListQuerySuggestionsBlockListsPagesWithContext
+func (mr *MockKendraAPIMockRecorder) ListQuerySuggestionsBlockListsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQuerySuggestionsBlockListsPagesWithContext", reflect.TypeOf((*MockKendraAPI)(nil).ListQuerySuggestionsBlockListsPagesWithContext), varargs...)
+}
+
 // ListQuerySuggestionsBlockListsRequest mocks base method
 func (m *MockKendraAPI) ListQuerySuggestionsBlockListsRequest(arg0 *kendra.ListQuerySuggestionsBlockListsInput) (*request.Request, *kendra.ListQuerySuggestionsBlockListsOutput) {
 	m.ctrl.T.Helper()
@@ -2329,6 +2428,39 @@ func (m *MockKendraAPI) ListThesauri(arg0 *kendra.ListThesauriInput) (*kendra.Li
 func (mr *MockKendraAPIMockRecorder) ListThesauri(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThesauri", reflect.TypeOf((*MockKendraAPI)(nil).ListThesauri), arg0)
+}
+
+// ListThesauriPages mocks base method
+func (m *MockKendraAPI) ListThesauriPages(arg0 *kendra.ListThesauriInput, arg1 func(*kendra.ListThesauriOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListThesauriPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListThesauriPages indicates an expected call of ListThesauriPages
+func (mr *MockKendraAPIMockRecorder) ListThesauriPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThesauriPages", reflect.TypeOf((*MockKendraAPI)(nil).ListThesauriPages), arg0, arg1)
+}
+
+// ListThesauriPagesWithContext mocks base method
+func (m *MockKendraAPI) ListThesauriPagesWithContext(arg0 context.Context, arg1 *kendra.ListThesauriInput, arg2 func(*kendra.ListThesauriOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListThesauriPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListThesauriPagesWithContext indicates an expected call of ListThesauriPagesWithContext
+func (mr *MockKendraAPIMockRecorder) ListThesauriPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThesauriPagesWithContext", reflect.TypeOf((*MockKendraAPI)(nil).ListThesauriPagesWithContext), varargs...)
 }
 
 // ListThesauriRequest mocks base method
