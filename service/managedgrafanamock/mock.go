@@ -100,6 +100,56 @@ func (mr *MockManagedGrafanaAPIMockRecorder) CreateWorkspace(arg0 interface{}) *
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkspace", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).CreateWorkspace), arg0)
 }
 
+// CreateWorkspaceApiKey mocks base method
+func (m *MockManagedGrafanaAPI) CreateWorkspaceApiKey(arg0 *managedgrafana.CreateWorkspaceApiKeyInput) (*managedgrafana.CreateWorkspaceApiKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorkspaceApiKey", arg0)
+	ret0, _ := ret[0].(*managedgrafana.CreateWorkspaceApiKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorkspaceApiKey indicates an expected call of CreateWorkspaceApiKey
+func (mr *MockManagedGrafanaAPIMockRecorder) CreateWorkspaceApiKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkspaceApiKey", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).CreateWorkspaceApiKey), arg0)
+}
+
+// CreateWorkspaceApiKeyRequest mocks base method
+func (m *MockManagedGrafanaAPI) CreateWorkspaceApiKeyRequest(arg0 *managedgrafana.CreateWorkspaceApiKeyInput) (*request.Request, *managedgrafana.CreateWorkspaceApiKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorkspaceApiKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*managedgrafana.CreateWorkspaceApiKeyOutput)
+	return ret0, ret1
+}
+
+// CreateWorkspaceApiKeyRequest indicates an expected call of CreateWorkspaceApiKeyRequest
+func (mr *MockManagedGrafanaAPIMockRecorder) CreateWorkspaceApiKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkspaceApiKeyRequest", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).CreateWorkspaceApiKeyRequest), arg0)
+}
+
+// CreateWorkspaceApiKeyWithContext mocks base method
+func (m *MockManagedGrafanaAPI) CreateWorkspaceApiKeyWithContext(arg0 context.Context, arg1 *managedgrafana.CreateWorkspaceApiKeyInput, arg2 ...request.Option) (*managedgrafana.CreateWorkspaceApiKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWorkspaceApiKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*managedgrafana.CreateWorkspaceApiKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorkspaceApiKeyWithContext indicates an expected call of CreateWorkspaceApiKeyWithContext
+func (mr *MockManagedGrafanaAPIMockRecorder) CreateWorkspaceApiKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkspaceApiKeyWithContext", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).CreateWorkspaceApiKeyWithContext), varargs...)
+}
+
 // CreateWorkspaceRequest mocks base method
 func (m *MockManagedGrafanaAPI) CreateWorkspaceRequest(arg0 *managedgrafana.CreateWorkspaceInput) (*request.Request, *managedgrafana.CreateWorkspaceOutput) {
 	m.ctrl.T.Helper()
@@ -148,6 +198,56 @@ func (m *MockManagedGrafanaAPI) DeleteWorkspace(arg0 *managedgrafana.DeleteWorks
 func (mr *MockManagedGrafanaAPIMockRecorder) DeleteWorkspace(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkspace", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).DeleteWorkspace), arg0)
+}
+
+// DeleteWorkspaceApiKey mocks base method
+func (m *MockManagedGrafanaAPI) DeleteWorkspaceApiKey(arg0 *managedgrafana.DeleteWorkspaceApiKeyInput) (*managedgrafana.DeleteWorkspaceApiKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorkspaceApiKey", arg0)
+	ret0, _ := ret[0].(*managedgrafana.DeleteWorkspaceApiKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorkspaceApiKey indicates an expected call of DeleteWorkspaceApiKey
+func (mr *MockManagedGrafanaAPIMockRecorder) DeleteWorkspaceApiKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkspaceApiKey", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).DeleteWorkspaceApiKey), arg0)
+}
+
+// DeleteWorkspaceApiKeyRequest mocks base method
+func (m *MockManagedGrafanaAPI) DeleteWorkspaceApiKeyRequest(arg0 *managedgrafana.DeleteWorkspaceApiKeyInput) (*request.Request, *managedgrafana.DeleteWorkspaceApiKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWorkspaceApiKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*managedgrafana.DeleteWorkspaceApiKeyOutput)
+	return ret0, ret1
+}
+
+// DeleteWorkspaceApiKeyRequest indicates an expected call of DeleteWorkspaceApiKeyRequest
+func (mr *MockManagedGrafanaAPIMockRecorder) DeleteWorkspaceApiKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkspaceApiKeyRequest", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).DeleteWorkspaceApiKeyRequest), arg0)
+}
+
+// DeleteWorkspaceApiKeyWithContext mocks base method
+func (m *MockManagedGrafanaAPI) DeleteWorkspaceApiKeyWithContext(arg0 context.Context, arg1 *managedgrafana.DeleteWorkspaceApiKeyInput, arg2 ...request.Option) (*managedgrafana.DeleteWorkspaceApiKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteWorkspaceApiKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*managedgrafana.DeleteWorkspaceApiKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWorkspaceApiKeyWithContext indicates an expected call of DeleteWorkspaceApiKeyWithContext
+func (mr *MockManagedGrafanaAPIMockRecorder) DeleteWorkspaceApiKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkspaceApiKeyWithContext", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).DeleteWorkspaceApiKeyWithContext), varargs...)
 }
 
 // DeleteWorkspaceRequest mocks base method
