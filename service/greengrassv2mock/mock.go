@@ -435,6 +435,56 @@ func (mr *MockGreengrassV2APIMockRecorder) DeleteCoreDeviceWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCoreDeviceWithContext", reflect.TypeOf((*MockGreengrassV2API)(nil).DeleteCoreDeviceWithContext), varargs...)
 }
 
+// DeleteDeployment mocks base method
+func (m *MockGreengrassV2API) DeleteDeployment(arg0 *greengrassv2.DeleteDeploymentInput) (*greengrassv2.DeleteDeploymentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDeployment", arg0)
+	ret0, _ := ret[0].(*greengrassv2.DeleteDeploymentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDeployment indicates an expected call of DeleteDeployment
+func (mr *MockGreengrassV2APIMockRecorder) DeleteDeployment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDeployment", reflect.TypeOf((*MockGreengrassV2API)(nil).DeleteDeployment), arg0)
+}
+
+// DeleteDeploymentRequest mocks base method
+func (m *MockGreengrassV2API) DeleteDeploymentRequest(arg0 *greengrassv2.DeleteDeploymentInput) (*request.Request, *greengrassv2.DeleteDeploymentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDeploymentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*greengrassv2.DeleteDeploymentOutput)
+	return ret0, ret1
+}
+
+// DeleteDeploymentRequest indicates an expected call of DeleteDeploymentRequest
+func (mr *MockGreengrassV2APIMockRecorder) DeleteDeploymentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDeploymentRequest", reflect.TypeOf((*MockGreengrassV2API)(nil).DeleteDeploymentRequest), arg0)
+}
+
+// DeleteDeploymentWithContext mocks base method
+func (m *MockGreengrassV2API) DeleteDeploymentWithContext(arg0 context.Context, arg1 *greengrassv2.DeleteDeploymentInput, arg2 ...request.Option) (*greengrassv2.DeleteDeploymentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDeploymentWithContext", varargs...)
+	ret0, _ := ret[0].(*greengrassv2.DeleteDeploymentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDeploymentWithContext indicates an expected call of DeleteDeploymentWithContext
+func (mr *MockGreengrassV2APIMockRecorder) DeleteDeploymentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDeploymentWithContext", reflect.TypeOf((*MockGreengrassV2API)(nil).DeleteDeploymentWithContext), varargs...)
+}
+
 // DescribeComponent mocks base method
 func (m *MockGreengrassV2API) DescribeComponent(arg0 *greengrassv2.DescribeComponentInput) (*greengrassv2.DescribeComponentOutput, error) {
 	m.ctrl.T.Helper()

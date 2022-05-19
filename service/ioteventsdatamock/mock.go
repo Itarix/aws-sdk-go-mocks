@@ -85,6 +85,56 @@ func (mr *MockIoTEventsDataAPIMockRecorder) BatchAcknowledgeAlarmWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAcknowledgeAlarmWithContext", reflect.TypeOf((*MockIoTEventsDataAPI)(nil).BatchAcknowledgeAlarmWithContext), varargs...)
 }
 
+// BatchDeleteDetector mocks base method
+func (m *MockIoTEventsDataAPI) BatchDeleteDetector(arg0 *ioteventsdata.BatchDeleteDetectorInput) (*ioteventsdata.BatchDeleteDetectorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteDetector", arg0)
+	ret0, _ := ret[0].(*ioteventsdata.BatchDeleteDetectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteDetector indicates an expected call of BatchDeleteDetector
+func (mr *MockIoTEventsDataAPIMockRecorder) BatchDeleteDetector(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteDetector", reflect.TypeOf((*MockIoTEventsDataAPI)(nil).BatchDeleteDetector), arg0)
+}
+
+// BatchDeleteDetectorRequest mocks base method
+func (m *MockIoTEventsDataAPI) BatchDeleteDetectorRequest(arg0 *ioteventsdata.BatchDeleteDetectorInput) (*request.Request, *ioteventsdata.BatchDeleteDetectorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteDetectorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ioteventsdata.BatchDeleteDetectorOutput)
+	return ret0, ret1
+}
+
+// BatchDeleteDetectorRequest indicates an expected call of BatchDeleteDetectorRequest
+func (mr *MockIoTEventsDataAPIMockRecorder) BatchDeleteDetectorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteDetectorRequest", reflect.TypeOf((*MockIoTEventsDataAPI)(nil).BatchDeleteDetectorRequest), arg0)
+}
+
+// BatchDeleteDetectorWithContext mocks base method
+func (m *MockIoTEventsDataAPI) BatchDeleteDetectorWithContext(arg0 context.Context, arg1 *ioteventsdata.BatchDeleteDetectorInput, arg2 ...request.Option) (*ioteventsdata.BatchDeleteDetectorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDeleteDetectorWithContext", varargs...)
+	ret0, _ := ret[0].(*ioteventsdata.BatchDeleteDetectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteDetectorWithContext indicates an expected call of BatchDeleteDetectorWithContext
+func (mr *MockIoTEventsDataAPIMockRecorder) BatchDeleteDetectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteDetectorWithContext", reflect.TypeOf((*MockIoTEventsDataAPI)(nil).BatchDeleteDetectorWithContext), varargs...)
+}
+
 // BatchDisableAlarm mocks base method
 func (m *MockIoTEventsDataAPI) BatchDisableAlarm(arg0 *ioteventsdata.BatchDisableAlarmInput) (*ioteventsdata.BatchDisableAlarmOutput, error) {
 	m.ctrl.T.Helper()

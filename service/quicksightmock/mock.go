@@ -5997,6 +5997,56 @@ func (mr *MockQuickSightAPIMockRecorder) UpdateIpRestrictionWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIpRestrictionWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdateIpRestrictionWithContext), varargs...)
 }
 
+// UpdatePublicSharingSettings mocks base method
+func (m *MockQuickSightAPI) UpdatePublicSharingSettings(arg0 *quicksight.UpdatePublicSharingSettingsInput) (*quicksight.UpdatePublicSharingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePublicSharingSettings", arg0)
+	ret0, _ := ret[0].(*quicksight.UpdatePublicSharingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePublicSharingSettings indicates an expected call of UpdatePublicSharingSettings
+func (mr *MockQuickSightAPIMockRecorder) UpdatePublicSharingSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePublicSharingSettings", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdatePublicSharingSettings), arg0)
+}
+
+// UpdatePublicSharingSettingsRequest mocks base method
+func (m *MockQuickSightAPI) UpdatePublicSharingSettingsRequest(arg0 *quicksight.UpdatePublicSharingSettingsInput) (*request.Request, *quicksight.UpdatePublicSharingSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePublicSharingSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.UpdatePublicSharingSettingsOutput)
+	return ret0, ret1
+}
+
+// UpdatePublicSharingSettingsRequest indicates an expected call of UpdatePublicSharingSettingsRequest
+func (mr *MockQuickSightAPIMockRecorder) UpdatePublicSharingSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePublicSharingSettingsRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdatePublicSharingSettingsRequest), arg0)
+}
+
+// UpdatePublicSharingSettingsWithContext mocks base method
+func (m *MockQuickSightAPI) UpdatePublicSharingSettingsWithContext(arg0 context.Context, arg1 *quicksight.UpdatePublicSharingSettingsInput, arg2 ...request.Option) (*quicksight.UpdatePublicSharingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdatePublicSharingSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.UpdatePublicSharingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePublicSharingSettingsWithContext indicates an expected call of UpdatePublicSharingSettingsWithContext
+func (mr *MockQuickSightAPIMockRecorder) UpdatePublicSharingSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePublicSharingSettingsWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).UpdatePublicSharingSettingsWithContext), varargs...)
+}
+
 // UpdateTemplate mocks base method
 func (m *MockQuickSightAPI) UpdateTemplate(arg0 *quicksight.UpdateTemplateInput) (*quicksight.UpdateTemplateOutput, error) {
 	m.ctrl.T.Helper()
