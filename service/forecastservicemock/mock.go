@@ -435,6 +435,56 @@ func (mr *MockForecastServiceAPIMockRecorder) CreateForecastWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateForecastWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateForecastWithContext), varargs...)
 }
 
+// CreateMonitor mocks base method
+func (m *MockForecastServiceAPI) CreateMonitor(arg0 *forecastservice.CreateMonitorInput) (*forecastservice.CreateMonitorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMonitor", arg0)
+	ret0, _ := ret[0].(*forecastservice.CreateMonitorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMonitor indicates an expected call of CreateMonitor
+func (mr *MockForecastServiceAPIMockRecorder) CreateMonitor(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMonitor", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateMonitor), arg0)
+}
+
+// CreateMonitorRequest mocks base method
+func (m *MockForecastServiceAPI) CreateMonitorRequest(arg0 *forecastservice.CreateMonitorInput) (*request.Request, *forecastservice.CreateMonitorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMonitorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.CreateMonitorOutput)
+	return ret0, ret1
+}
+
+// CreateMonitorRequest indicates an expected call of CreateMonitorRequest
+func (mr *MockForecastServiceAPIMockRecorder) CreateMonitorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMonitorRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateMonitorRequest), arg0)
+}
+
+// CreateMonitorWithContext mocks base method
+func (m *MockForecastServiceAPI) CreateMonitorWithContext(arg0 context.Context, arg1 *forecastservice.CreateMonitorInput, arg2 ...request.Option) (*forecastservice.CreateMonitorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateMonitorWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.CreateMonitorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMonitorWithContext indicates an expected call of CreateMonitorWithContext
+func (mr *MockForecastServiceAPIMockRecorder) CreateMonitorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMonitorWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateMonitorWithContext), varargs...)
+}
+
 // CreatePredictor mocks base method
 func (m *MockForecastServiceAPI) CreatePredictor(arg0 *forecastservice.CreatePredictorInput) (*forecastservice.CreatePredictorOutput, error) {
 	m.ctrl.T.Helper()
@@ -883,6 +933,56 @@ func (mr *MockForecastServiceAPIMockRecorder) DeleteForecastWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteForecastWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteForecastWithContext), varargs...)
+}
+
+// DeleteMonitor mocks base method
+func (m *MockForecastServiceAPI) DeleteMonitor(arg0 *forecastservice.DeleteMonitorInput) (*forecastservice.DeleteMonitorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMonitor", arg0)
+	ret0, _ := ret[0].(*forecastservice.DeleteMonitorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMonitor indicates an expected call of DeleteMonitor
+func (mr *MockForecastServiceAPIMockRecorder) DeleteMonitor(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMonitor", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteMonitor), arg0)
+}
+
+// DeleteMonitorRequest mocks base method
+func (m *MockForecastServiceAPI) DeleteMonitorRequest(arg0 *forecastservice.DeleteMonitorInput) (*request.Request, *forecastservice.DeleteMonitorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMonitorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DeleteMonitorOutput)
+	return ret0, ret1
+}
+
+// DeleteMonitorRequest indicates an expected call of DeleteMonitorRequest
+func (mr *MockForecastServiceAPIMockRecorder) DeleteMonitorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMonitorRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteMonitorRequest), arg0)
+}
+
+// DeleteMonitorWithContext mocks base method
+func (m *MockForecastServiceAPI) DeleteMonitorWithContext(arg0 context.Context, arg1 *forecastservice.DeleteMonitorInput, arg2 ...request.Option) (*forecastservice.DeleteMonitorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteMonitorWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DeleteMonitorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMonitorWithContext indicates an expected call of DeleteMonitorWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DeleteMonitorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMonitorWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteMonitorWithContext), varargs...)
 }
 
 // DeletePredictor mocks base method
@@ -1435,6 +1535,56 @@ func (mr *MockForecastServiceAPIMockRecorder) DescribeForecastWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeForecastWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeForecastWithContext), varargs...)
 }
 
+// DescribeMonitor mocks base method
+func (m *MockForecastServiceAPI) DescribeMonitor(arg0 *forecastservice.DescribeMonitorInput) (*forecastservice.DescribeMonitorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMonitor", arg0)
+	ret0, _ := ret[0].(*forecastservice.DescribeMonitorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMonitor indicates an expected call of DescribeMonitor
+func (mr *MockForecastServiceAPIMockRecorder) DescribeMonitor(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMonitor", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeMonitor), arg0)
+}
+
+// DescribeMonitorRequest mocks base method
+func (m *MockForecastServiceAPI) DescribeMonitorRequest(arg0 *forecastservice.DescribeMonitorInput) (*request.Request, *forecastservice.DescribeMonitorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMonitorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DescribeMonitorOutput)
+	return ret0, ret1
+}
+
+// DescribeMonitorRequest indicates an expected call of DescribeMonitorRequest
+func (mr *MockForecastServiceAPIMockRecorder) DescribeMonitorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMonitorRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeMonitorRequest), arg0)
+}
+
+// DescribeMonitorWithContext mocks base method
+func (m *MockForecastServiceAPI) DescribeMonitorWithContext(arg0 context.Context, arg1 *forecastservice.DescribeMonitorInput, arg2 ...request.Option) (*forecastservice.DescribeMonitorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMonitorWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DescribeMonitorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMonitorWithContext indicates an expected call of DescribeMonitorWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DescribeMonitorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMonitorWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeMonitorWithContext), varargs...)
+}
+
 // DescribePredictor mocks base method
 func (m *MockForecastServiceAPI) DescribePredictor(arg0 *forecastservice.DescribePredictorInput) (*forecastservice.DescribePredictorOutput, error) {
 	m.ctrl.T.Helper()
@@ -1849,6 +1999,39 @@ func (mr *MockForecastServiceAPIMockRecorder) ListExplainabilities(arg0 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExplainabilities", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListExplainabilities), arg0)
 }
 
+// ListExplainabilitiesPages mocks base method
+func (m *MockForecastServiceAPI) ListExplainabilitiesPages(arg0 *forecastservice.ListExplainabilitiesInput, arg1 func(*forecastservice.ListExplainabilitiesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExplainabilitiesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExplainabilitiesPages indicates an expected call of ListExplainabilitiesPages
+func (mr *MockForecastServiceAPIMockRecorder) ListExplainabilitiesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExplainabilitiesPages", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListExplainabilitiesPages), arg0, arg1)
+}
+
+// ListExplainabilitiesPagesWithContext mocks base method
+func (m *MockForecastServiceAPI) ListExplainabilitiesPagesWithContext(arg0 context.Context, arg1 *forecastservice.ListExplainabilitiesInput, arg2 func(*forecastservice.ListExplainabilitiesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExplainabilitiesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExplainabilitiesPagesWithContext indicates an expected call of ListExplainabilitiesPagesWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListExplainabilitiesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExplainabilitiesPagesWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListExplainabilitiesPagesWithContext), varargs...)
+}
+
 // ListExplainabilitiesRequest mocks base method
 func (m *MockForecastServiceAPI) ListExplainabilitiesRequest(arg0 *forecastservice.ListExplainabilitiesInput) (*request.Request, *forecastservice.ListExplainabilitiesOutput) {
 	m.ctrl.T.Helper()
@@ -1897,6 +2080,39 @@ func (m *MockForecastServiceAPI) ListExplainabilityExports(arg0 *forecastservice
 func (mr *MockForecastServiceAPIMockRecorder) ListExplainabilityExports(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExplainabilityExports", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListExplainabilityExports), arg0)
+}
+
+// ListExplainabilityExportsPages mocks base method
+func (m *MockForecastServiceAPI) ListExplainabilityExportsPages(arg0 *forecastservice.ListExplainabilityExportsInput, arg1 func(*forecastservice.ListExplainabilityExportsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExplainabilityExportsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExplainabilityExportsPages indicates an expected call of ListExplainabilityExportsPages
+func (mr *MockForecastServiceAPIMockRecorder) ListExplainabilityExportsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExplainabilityExportsPages", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListExplainabilityExportsPages), arg0, arg1)
+}
+
+// ListExplainabilityExportsPagesWithContext mocks base method
+func (m *MockForecastServiceAPI) ListExplainabilityExportsPagesWithContext(arg0 context.Context, arg1 *forecastservice.ListExplainabilityExportsInput, arg2 func(*forecastservice.ListExplainabilityExportsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExplainabilityExportsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExplainabilityExportsPagesWithContext indicates an expected call of ListExplainabilityExportsPagesWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListExplainabilityExportsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExplainabilityExportsPagesWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListExplainabilityExportsPagesWithContext), varargs...)
 }
 
 // ListExplainabilityExportsRequest mocks base method
@@ -2098,6 +2314,172 @@ func (mr *MockForecastServiceAPIMockRecorder) ListForecastsWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListForecastsWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListForecastsWithContext), varargs...)
+}
+
+// ListMonitorEvaluations mocks base method
+func (m *MockForecastServiceAPI) ListMonitorEvaluations(arg0 *forecastservice.ListMonitorEvaluationsInput) (*forecastservice.ListMonitorEvaluationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMonitorEvaluations", arg0)
+	ret0, _ := ret[0].(*forecastservice.ListMonitorEvaluationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMonitorEvaluations indicates an expected call of ListMonitorEvaluations
+func (mr *MockForecastServiceAPIMockRecorder) ListMonitorEvaluations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitorEvaluations", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListMonitorEvaluations), arg0)
+}
+
+// ListMonitorEvaluationsPages mocks base method
+func (m *MockForecastServiceAPI) ListMonitorEvaluationsPages(arg0 *forecastservice.ListMonitorEvaluationsInput, arg1 func(*forecastservice.ListMonitorEvaluationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMonitorEvaluationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMonitorEvaluationsPages indicates an expected call of ListMonitorEvaluationsPages
+func (mr *MockForecastServiceAPIMockRecorder) ListMonitorEvaluationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitorEvaluationsPages", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListMonitorEvaluationsPages), arg0, arg1)
+}
+
+// ListMonitorEvaluationsPagesWithContext mocks base method
+func (m *MockForecastServiceAPI) ListMonitorEvaluationsPagesWithContext(arg0 context.Context, arg1 *forecastservice.ListMonitorEvaluationsInput, arg2 func(*forecastservice.ListMonitorEvaluationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMonitorEvaluationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMonitorEvaluationsPagesWithContext indicates an expected call of ListMonitorEvaluationsPagesWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListMonitorEvaluationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitorEvaluationsPagesWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListMonitorEvaluationsPagesWithContext), varargs...)
+}
+
+// ListMonitorEvaluationsRequest mocks base method
+func (m *MockForecastServiceAPI) ListMonitorEvaluationsRequest(arg0 *forecastservice.ListMonitorEvaluationsInput) (*request.Request, *forecastservice.ListMonitorEvaluationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMonitorEvaluationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.ListMonitorEvaluationsOutput)
+	return ret0, ret1
+}
+
+// ListMonitorEvaluationsRequest indicates an expected call of ListMonitorEvaluationsRequest
+func (mr *MockForecastServiceAPIMockRecorder) ListMonitorEvaluationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitorEvaluationsRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListMonitorEvaluationsRequest), arg0)
+}
+
+// ListMonitorEvaluationsWithContext mocks base method
+func (m *MockForecastServiceAPI) ListMonitorEvaluationsWithContext(arg0 context.Context, arg1 *forecastservice.ListMonitorEvaluationsInput, arg2 ...request.Option) (*forecastservice.ListMonitorEvaluationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMonitorEvaluationsWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.ListMonitorEvaluationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMonitorEvaluationsWithContext indicates an expected call of ListMonitorEvaluationsWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListMonitorEvaluationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitorEvaluationsWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListMonitorEvaluationsWithContext), varargs...)
+}
+
+// ListMonitors mocks base method
+func (m *MockForecastServiceAPI) ListMonitors(arg0 *forecastservice.ListMonitorsInput) (*forecastservice.ListMonitorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMonitors", arg0)
+	ret0, _ := ret[0].(*forecastservice.ListMonitorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMonitors indicates an expected call of ListMonitors
+func (mr *MockForecastServiceAPIMockRecorder) ListMonitors(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitors", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListMonitors), arg0)
+}
+
+// ListMonitorsPages mocks base method
+func (m *MockForecastServiceAPI) ListMonitorsPages(arg0 *forecastservice.ListMonitorsInput, arg1 func(*forecastservice.ListMonitorsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMonitorsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMonitorsPages indicates an expected call of ListMonitorsPages
+func (mr *MockForecastServiceAPIMockRecorder) ListMonitorsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitorsPages", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListMonitorsPages), arg0, arg1)
+}
+
+// ListMonitorsPagesWithContext mocks base method
+func (m *MockForecastServiceAPI) ListMonitorsPagesWithContext(arg0 context.Context, arg1 *forecastservice.ListMonitorsInput, arg2 func(*forecastservice.ListMonitorsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMonitorsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMonitorsPagesWithContext indicates an expected call of ListMonitorsPagesWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListMonitorsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitorsPagesWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListMonitorsPagesWithContext), varargs...)
+}
+
+// ListMonitorsRequest mocks base method
+func (m *MockForecastServiceAPI) ListMonitorsRequest(arg0 *forecastservice.ListMonitorsInput) (*request.Request, *forecastservice.ListMonitorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMonitorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.ListMonitorsOutput)
+	return ret0, ret1
+}
+
+// ListMonitorsRequest indicates an expected call of ListMonitorsRequest
+func (mr *MockForecastServiceAPIMockRecorder) ListMonitorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitorsRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListMonitorsRequest), arg0)
+}
+
+// ListMonitorsWithContext mocks base method
+func (m *MockForecastServiceAPI) ListMonitorsWithContext(arg0 context.Context, arg1 *forecastservice.ListMonitorsInput, arg2 ...request.Option) (*forecastservice.ListMonitorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMonitorsWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.ListMonitorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMonitorsWithContext indicates an expected call of ListMonitorsWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListMonitorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitorsWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListMonitorsWithContext), varargs...)
 }
 
 // ListPredictorBacktestExportJobs mocks base method
@@ -2314,6 +2696,56 @@ func (mr *MockForecastServiceAPIMockRecorder) ListTagsForResourceWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// ResumeResource mocks base method
+func (m *MockForecastServiceAPI) ResumeResource(arg0 *forecastservice.ResumeResourceInput) (*forecastservice.ResumeResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResumeResource", arg0)
+	ret0, _ := ret[0].(*forecastservice.ResumeResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResumeResource indicates an expected call of ResumeResource
+func (mr *MockForecastServiceAPIMockRecorder) ResumeResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeResource", reflect.TypeOf((*MockForecastServiceAPI)(nil).ResumeResource), arg0)
+}
+
+// ResumeResourceRequest mocks base method
+func (m *MockForecastServiceAPI) ResumeResourceRequest(arg0 *forecastservice.ResumeResourceInput) (*request.Request, *forecastservice.ResumeResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResumeResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.ResumeResourceOutput)
+	return ret0, ret1
+}
+
+// ResumeResourceRequest indicates an expected call of ResumeResourceRequest
+func (mr *MockForecastServiceAPIMockRecorder) ResumeResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeResourceRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).ResumeResourceRequest), arg0)
+}
+
+// ResumeResourceWithContext mocks base method
+func (m *MockForecastServiceAPI) ResumeResourceWithContext(arg0 context.Context, arg1 *forecastservice.ResumeResourceInput, arg2 ...request.Option) (*forecastservice.ResumeResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ResumeResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.ResumeResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResumeResourceWithContext indicates an expected call of ResumeResourceWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ResumeResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeResourceWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ResumeResourceWithContext), varargs...)
 }
 
 // StopResource mocks base method
