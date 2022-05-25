@@ -3612,6 +3612,56 @@ func (mr *MockNetworkManagerAPIMockRecorder) ListCoreNetworksWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoreNetworksWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListCoreNetworksWithContext), varargs...)
 }
 
+// ListOrganizationServiceAccessStatus mocks base method
+func (m *MockNetworkManagerAPI) ListOrganizationServiceAccessStatus(arg0 *networkmanager.ListOrganizationServiceAccessStatusInput) (*networkmanager.ListOrganizationServiceAccessStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrganizationServiceAccessStatus", arg0)
+	ret0, _ := ret[0].(*networkmanager.ListOrganizationServiceAccessStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOrganizationServiceAccessStatus indicates an expected call of ListOrganizationServiceAccessStatus
+func (mr *MockNetworkManagerAPIMockRecorder) ListOrganizationServiceAccessStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationServiceAccessStatus", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListOrganizationServiceAccessStatus), arg0)
+}
+
+// ListOrganizationServiceAccessStatusRequest mocks base method
+func (m *MockNetworkManagerAPI) ListOrganizationServiceAccessStatusRequest(arg0 *networkmanager.ListOrganizationServiceAccessStatusInput) (*request.Request, *networkmanager.ListOrganizationServiceAccessStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOrganizationServiceAccessStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.ListOrganizationServiceAccessStatusOutput)
+	return ret0, ret1
+}
+
+// ListOrganizationServiceAccessStatusRequest indicates an expected call of ListOrganizationServiceAccessStatusRequest
+func (mr *MockNetworkManagerAPIMockRecorder) ListOrganizationServiceAccessStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationServiceAccessStatusRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListOrganizationServiceAccessStatusRequest), arg0)
+}
+
+// ListOrganizationServiceAccessStatusWithContext mocks base method
+func (m *MockNetworkManagerAPI) ListOrganizationServiceAccessStatusWithContext(arg0 context.Context, arg1 *networkmanager.ListOrganizationServiceAccessStatusInput, arg2 ...request.Option) (*networkmanager.ListOrganizationServiceAccessStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOrganizationServiceAccessStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.ListOrganizationServiceAccessStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOrganizationServiceAccessStatusWithContext indicates an expected call of ListOrganizationServiceAccessStatusWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) ListOrganizationServiceAccessStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOrganizationServiceAccessStatusWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).ListOrganizationServiceAccessStatusWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockNetworkManagerAPI) ListTagsForResource(arg0 *networkmanager.ListTagsForResourceInput) (*networkmanager.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -3910,6 +3960,56 @@ func (mr *MockNetworkManagerAPIMockRecorder) RestoreCoreNetworkPolicyVersionWith
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreCoreNetworkPolicyVersionWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).RestoreCoreNetworkPolicyVersionWithContext), varargs...)
+}
+
+// StartOrganizationServiceAccessUpdate mocks base method
+func (m *MockNetworkManagerAPI) StartOrganizationServiceAccessUpdate(arg0 *networkmanager.StartOrganizationServiceAccessUpdateInput) (*networkmanager.StartOrganizationServiceAccessUpdateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartOrganizationServiceAccessUpdate", arg0)
+	ret0, _ := ret[0].(*networkmanager.StartOrganizationServiceAccessUpdateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartOrganizationServiceAccessUpdate indicates an expected call of StartOrganizationServiceAccessUpdate
+func (mr *MockNetworkManagerAPIMockRecorder) StartOrganizationServiceAccessUpdate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartOrganizationServiceAccessUpdate", reflect.TypeOf((*MockNetworkManagerAPI)(nil).StartOrganizationServiceAccessUpdate), arg0)
+}
+
+// StartOrganizationServiceAccessUpdateRequest mocks base method
+func (m *MockNetworkManagerAPI) StartOrganizationServiceAccessUpdateRequest(arg0 *networkmanager.StartOrganizationServiceAccessUpdateInput) (*request.Request, *networkmanager.StartOrganizationServiceAccessUpdateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartOrganizationServiceAccessUpdateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkmanager.StartOrganizationServiceAccessUpdateOutput)
+	return ret0, ret1
+}
+
+// StartOrganizationServiceAccessUpdateRequest indicates an expected call of StartOrganizationServiceAccessUpdateRequest
+func (mr *MockNetworkManagerAPIMockRecorder) StartOrganizationServiceAccessUpdateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartOrganizationServiceAccessUpdateRequest", reflect.TypeOf((*MockNetworkManagerAPI)(nil).StartOrganizationServiceAccessUpdateRequest), arg0)
+}
+
+// StartOrganizationServiceAccessUpdateWithContext mocks base method
+func (m *MockNetworkManagerAPI) StartOrganizationServiceAccessUpdateWithContext(arg0 context.Context, arg1 *networkmanager.StartOrganizationServiceAccessUpdateInput, arg2 ...request.Option) (*networkmanager.StartOrganizationServiceAccessUpdateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartOrganizationServiceAccessUpdateWithContext", varargs...)
+	ret0, _ := ret[0].(*networkmanager.StartOrganizationServiceAccessUpdateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartOrganizationServiceAccessUpdateWithContext indicates an expected call of StartOrganizationServiceAccessUpdateWithContext
+func (mr *MockNetworkManagerAPIMockRecorder) StartOrganizationServiceAccessUpdateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartOrganizationServiceAccessUpdateWithContext", reflect.TypeOf((*MockNetworkManagerAPI)(nil).StartOrganizationServiceAccessUpdateWithContext), varargs...)
 }
 
 // StartRouteAnalysis mocks base method
