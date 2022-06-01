@@ -35,6 +35,56 @@ func (m *MockDrsAPI) EXPECT() *MockDrsAPIMockRecorder {
 	return m.recorder
 }
 
+// CreateExtendedSourceServer mocks base method
+func (m *MockDrsAPI) CreateExtendedSourceServer(arg0 *drs.CreateExtendedSourceServerInput) (*drs.CreateExtendedSourceServerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateExtendedSourceServer", arg0)
+	ret0, _ := ret[0].(*drs.CreateExtendedSourceServerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateExtendedSourceServer indicates an expected call of CreateExtendedSourceServer
+func (mr *MockDrsAPIMockRecorder) CreateExtendedSourceServer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExtendedSourceServer", reflect.TypeOf((*MockDrsAPI)(nil).CreateExtendedSourceServer), arg0)
+}
+
+// CreateExtendedSourceServerRequest mocks base method
+func (m *MockDrsAPI) CreateExtendedSourceServerRequest(arg0 *drs.CreateExtendedSourceServerInput) (*request.Request, *drs.CreateExtendedSourceServerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateExtendedSourceServerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.CreateExtendedSourceServerOutput)
+	return ret0, ret1
+}
+
+// CreateExtendedSourceServerRequest indicates an expected call of CreateExtendedSourceServerRequest
+func (mr *MockDrsAPIMockRecorder) CreateExtendedSourceServerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExtendedSourceServerRequest", reflect.TypeOf((*MockDrsAPI)(nil).CreateExtendedSourceServerRequest), arg0)
+}
+
+// CreateExtendedSourceServerWithContext mocks base method
+func (m *MockDrsAPI) CreateExtendedSourceServerWithContext(arg0 context.Context, arg1 *drs.CreateExtendedSourceServerInput, arg2 ...request.Option) (*drs.CreateExtendedSourceServerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateExtendedSourceServerWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.CreateExtendedSourceServerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateExtendedSourceServerWithContext indicates an expected call of CreateExtendedSourceServerWithContext
+func (mr *MockDrsAPIMockRecorder) CreateExtendedSourceServerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExtendedSourceServerWithContext", reflect.TypeOf((*MockDrsAPI)(nil).CreateExtendedSourceServerWithContext), varargs...)
+}
+
 // CreateReplicationConfigurationTemplate mocks base method
 func (m *MockDrsAPI) CreateReplicationConfigurationTemplate(arg0 *drs.CreateReplicationConfigurationTemplateInput) (*drs.CreateReplicationConfigurationTemplateOutput, error) {
 	m.ctrl.T.Helper()
@@ -1081,6 +1131,172 @@ func (mr *MockDrsAPIMockRecorder) InitializeServiceWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitializeServiceWithContext", reflect.TypeOf((*MockDrsAPI)(nil).InitializeServiceWithContext), varargs...)
+}
+
+// ListExtensibleSourceServers mocks base method
+func (m *MockDrsAPI) ListExtensibleSourceServers(arg0 *drs.ListExtensibleSourceServersInput) (*drs.ListExtensibleSourceServersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExtensibleSourceServers", arg0)
+	ret0, _ := ret[0].(*drs.ListExtensibleSourceServersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExtensibleSourceServers indicates an expected call of ListExtensibleSourceServers
+func (mr *MockDrsAPIMockRecorder) ListExtensibleSourceServers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensibleSourceServers", reflect.TypeOf((*MockDrsAPI)(nil).ListExtensibleSourceServers), arg0)
+}
+
+// ListExtensibleSourceServersPages mocks base method
+func (m *MockDrsAPI) ListExtensibleSourceServersPages(arg0 *drs.ListExtensibleSourceServersInput, arg1 func(*drs.ListExtensibleSourceServersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExtensibleSourceServersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExtensibleSourceServersPages indicates an expected call of ListExtensibleSourceServersPages
+func (mr *MockDrsAPIMockRecorder) ListExtensibleSourceServersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensibleSourceServersPages", reflect.TypeOf((*MockDrsAPI)(nil).ListExtensibleSourceServersPages), arg0, arg1)
+}
+
+// ListExtensibleSourceServersPagesWithContext mocks base method
+func (m *MockDrsAPI) ListExtensibleSourceServersPagesWithContext(arg0 context.Context, arg1 *drs.ListExtensibleSourceServersInput, arg2 func(*drs.ListExtensibleSourceServersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExtensibleSourceServersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExtensibleSourceServersPagesWithContext indicates an expected call of ListExtensibleSourceServersPagesWithContext
+func (mr *MockDrsAPIMockRecorder) ListExtensibleSourceServersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensibleSourceServersPagesWithContext", reflect.TypeOf((*MockDrsAPI)(nil).ListExtensibleSourceServersPagesWithContext), varargs...)
+}
+
+// ListExtensibleSourceServersRequest mocks base method
+func (m *MockDrsAPI) ListExtensibleSourceServersRequest(arg0 *drs.ListExtensibleSourceServersInput) (*request.Request, *drs.ListExtensibleSourceServersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExtensibleSourceServersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.ListExtensibleSourceServersOutput)
+	return ret0, ret1
+}
+
+// ListExtensibleSourceServersRequest indicates an expected call of ListExtensibleSourceServersRequest
+func (mr *MockDrsAPIMockRecorder) ListExtensibleSourceServersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensibleSourceServersRequest", reflect.TypeOf((*MockDrsAPI)(nil).ListExtensibleSourceServersRequest), arg0)
+}
+
+// ListExtensibleSourceServersWithContext mocks base method
+func (m *MockDrsAPI) ListExtensibleSourceServersWithContext(arg0 context.Context, arg1 *drs.ListExtensibleSourceServersInput, arg2 ...request.Option) (*drs.ListExtensibleSourceServersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExtensibleSourceServersWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.ListExtensibleSourceServersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExtensibleSourceServersWithContext indicates an expected call of ListExtensibleSourceServersWithContext
+func (mr *MockDrsAPIMockRecorder) ListExtensibleSourceServersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensibleSourceServersWithContext", reflect.TypeOf((*MockDrsAPI)(nil).ListExtensibleSourceServersWithContext), varargs...)
+}
+
+// ListStagingAccounts mocks base method
+func (m *MockDrsAPI) ListStagingAccounts(arg0 *drs.ListStagingAccountsInput) (*drs.ListStagingAccountsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStagingAccounts", arg0)
+	ret0, _ := ret[0].(*drs.ListStagingAccountsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStagingAccounts indicates an expected call of ListStagingAccounts
+func (mr *MockDrsAPIMockRecorder) ListStagingAccounts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStagingAccounts", reflect.TypeOf((*MockDrsAPI)(nil).ListStagingAccounts), arg0)
+}
+
+// ListStagingAccountsPages mocks base method
+func (m *MockDrsAPI) ListStagingAccountsPages(arg0 *drs.ListStagingAccountsInput, arg1 func(*drs.ListStagingAccountsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStagingAccountsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStagingAccountsPages indicates an expected call of ListStagingAccountsPages
+func (mr *MockDrsAPIMockRecorder) ListStagingAccountsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStagingAccountsPages", reflect.TypeOf((*MockDrsAPI)(nil).ListStagingAccountsPages), arg0, arg1)
+}
+
+// ListStagingAccountsPagesWithContext mocks base method
+func (m *MockDrsAPI) ListStagingAccountsPagesWithContext(arg0 context.Context, arg1 *drs.ListStagingAccountsInput, arg2 func(*drs.ListStagingAccountsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStagingAccountsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStagingAccountsPagesWithContext indicates an expected call of ListStagingAccountsPagesWithContext
+func (mr *MockDrsAPIMockRecorder) ListStagingAccountsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStagingAccountsPagesWithContext", reflect.TypeOf((*MockDrsAPI)(nil).ListStagingAccountsPagesWithContext), varargs...)
+}
+
+// ListStagingAccountsRequest mocks base method
+func (m *MockDrsAPI) ListStagingAccountsRequest(arg0 *drs.ListStagingAccountsInput) (*request.Request, *drs.ListStagingAccountsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStagingAccountsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.ListStagingAccountsOutput)
+	return ret0, ret1
+}
+
+// ListStagingAccountsRequest indicates an expected call of ListStagingAccountsRequest
+func (mr *MockDrsAPIMockRecorder) ListStagingAccountsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStagingAccountsRequest", reflect.TypeOf((*MockDrsAPI)(nil).ListStagingAccountsRequest), arg0)
+}
+
+// ListStagingAccountsWithContext mocks base method
+func (m *MockDrsAPI) ListStagingAccountsWithContext(arg0 context.Context, arg1 *drs.ListStagingAccountsInput, arg2 ...request.Option) (*drs.ListStagingAccountsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStagingAccountsWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.ListStagingAccountsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStagingAccountsWithContext indicates an expected call of ListStagingAccountsWithContext
+func (mr *MockDrsAPIMockRecorder) ListStagingAccountsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStagingAccountsWithContext", reflect.TypeOf((*MockDrsAPI)(nil).ListStagingAccountsWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
