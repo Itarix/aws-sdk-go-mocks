@@ -85,6 +85,56 @@ func (mr *MockChimeSDKMeetingsAPIMockRecorder) BatchCreateAttendeeWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateAttendeeWithContext", reflect.TypeOf((*MockChimeSDKMeetingsAPI)(nil).BatchCreateAttendeeWithContext), varargs...)
 }
 
+// BatchUpdateAttendeeCapabilitiesExcept mocks base method
+func (m *MockChimeSDKMeetingsAPI) BatchUpdateAttendeeCapabilitiesExcept(arg0 *chimesdkmeetings.BatchUpdateAttendeeCapabilitiesExceptInput) (*chimesdkmeetings.BatchUpdateAttendeeCapabilitiesExceptOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchUpdateAttendeeCapabilitiesExcept", arg0)
+	ret0, _ := ret[0].(*chimesdkmeetings.BatchUpdateAttendeeCapabilitiesExceptOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchUpdateAttendeeCapabilitiesExcept indicates an expected call of BatchUpdateAttendeeCapabilitiesExcept
+func (mr *MockChimeSDKMeetingsAPIMockRecorder) BatchUpdateAttendeeCapabilitiesExcept(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateAttendeeCapabilitiesExcept", reflect.TypeOf((*MockChimeSDKMeetingsAPI)(nil).BatchUpdateAttendeeCapabilitiesExcept), arg0)
+}
+
+// BatchUpdateAttendeeCapabilitiesExceptRequest mocks base method
+func (m *MockChimeSDKMeetingsAPI) BatchUpdateAttendeeCapabilitiesExceptRequest(arg0 *chimesdkmeetings.BatchUpdateAttendeeCapabilitiesExceptInput) (*request.Request, *chimesdkmeetings.BatchUpdateAttendeeCapabilitiesExceptOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchUpdateAttendeeCapabilitiesExceptRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmeetings.BatchUpdateAttendeeCapabilitiesExceptOutput)
+	return ret0, ret1
+}
+
+// BatchUpdateAttendeeCapabilitiesExceptRequest indicates an expected call of BatchUpdateAttendeeCapabilitiesExceptRequest
+func (mr *MockChimeSDKMeetingsAPIMockRecorder) BatchUpdateAttendeeCapabilitiesExceptRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateAttendeeCapabilitiesExceptRequest", reflect.TypeOf((*MockChimeSDKMeetingsAPI)(nil).BatchUpdateAttendeeCapabilitiesExceptRequest), arg0)
+}
+
+// BatchUpdateAttendeeCapabilitiesExceptWithContext mocks base method
+func (m *MockChimeSDKMeetingsAPI) BatchUpdateAttendeeCapabilitiesExceptWithContext(arg0 context.Context, arg1 *chimesdkmeetings.BatchUpdateAttendeeCapabilitiesExceptInput, arg2 ...request.Option) (*chimesdkmeetings.BatchUpdateAttendeeCapabilitiesExceptOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchUpdateAttendeeCapabilitiesExceptWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmeetings.BatchUpdateAttendeeCapabilitiesExceptOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchUpdateAttendeeCapabilitiesExceptWithContext indicates an expected call of BatchUpdateAttendeeCapabilitiesExceptWithContext
+func (mr *MockChimeSDKMeetingsAPIMockRecorder) BatchUpdateAttendeeCapabilitiesExceptWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateAttendeeCapabilitiesExceptWithContext", reflect.TypeOf((*MockChimeSDKMeetingsAPI)(nil).BatchUpdateAttendeeCapabilitiesExceptWithContext), varargs...)
+}
+
 // CreateAttendee mocks base method
 func (m *MockChimeSDKMeetingsAPI) CreateAttendee(arg0 *chimesdkmeetings.CreateAttendeeInput) (*chimesdkmeetings.CreateAttendeeOutput, error) {
 	m.ctrl.T.Helper()
@@ -616,4 +666,54 @@ func (mr *MockChimeSDKMeetingsAPIMockRecorder) StopMeetingTranscriptionWithConte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopMeetingTranscriptionWithContext", reflect.TypeOf((*MockChimeSDKMeetingsAPI)(nil).StopMeetingTranscriptionWithContext), varargs...)
+}
+
+// UpdateAttendeeCapabilities mocks base method
+func (m *MockChimeSDKMeetingsAPI) UpdateAttendeeCapabilities(arg0 *chimesdkmeetings.UpdateAttendeeCapabilitiesInput) (*chimesdkmeetings.UpdateAttendeeCapabilitiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAttendeeCapabilities", arg0)
+	ret0, _ := ret[0].(*chimesdkmeetings.UpdateAttendeeCapabilitiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAttendeeCapabilities indicates an expected call of UpdateAttendeeCapabilities
+func (mr *MockChimeSDKMeetingsAPIMockRecorder) UpdateAttendeeCapabilities(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAttendeeCapabilities", reflect.TypeOf((*MockChimeSDKMeetingsAPI)(nil).UpdateAttendeeCapabilities), arg0)
+}
+
+// UpdateAttendeeCapabilitiesRequest mocks base method
+func (m *MockChimeSDKMeetingsAPI) UpdateAttendeeCapabilitiesRequest(arg0 *chimesdkmeetings.UpdateAttendeeCapabilitiesInput) (*request.Request, *chimesdkmeetings.UpdateAttendeeCapabilitiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAttendeeCapabilitiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmeetings.UpdateAttendeeCapabilitiesOutput)
+	return ret0, ret1
+}
+
+// UpdateAttendeeCapabilitiesRequest indicates an expected call of UpdateAttendeeCapabilitiesRequest
+func (mr *MockChimeSDKMeetingsAPIMockRecorder) UpdateAttendeeCapabilitiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAttendeeCapabilitiesRequest", reflect.TypeOf((*MockChimeSDKMeetingsAPI)(nil).UpdateAttendeeCapabilitiesRequest), arg0)
+}
+
+// UpdateAttendeeCapabilitiesWithContext mocks base method
+func (m *MockChimeSDKMeetingsAPI) UpdateAttendeeCapabilitiesWithContext(arg0 context.Context, arg1 *chimesdkmeetings.UpdateAttendeeCapabilitiesInput, arg2 ...request.Option) (*chimesdkmeetings.UpdateAttendeeCapabilitiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAttendeeCapabilitiesWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmeetings.UpdateAttendeeCapabilitiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAttendeeCapabilitiesWithContext indicates an expected call of UpdateAttendeeCapabilitiesWithContext
+func (mr *MockChimeSDKMeetingsAPIMockRecorder) UpdateAttendeeCapabilitiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAttendeeCapabilitiesWithContext", reflect.TypeOf((*MockChimeSDKMeetingsAPI)(nil).UpdateAttendeeCapabilitiesWithContext), varargs...)
 }

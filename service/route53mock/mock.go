@@ -135,6 +135,56 @@ func (mr *MockRoute53APIMockRecorder) AssociateVPCWithHostedZoneWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateVPCWithHostedZoneWithContext", reflect.TypeOf((*MockRoute53API)(nil).AssociateVPCWithHostedZoneWithContext), varargs...)
 }
 
+// ChangeCidrCollection mocks base method
+func (m *MockRoute53API) ChangeCidrCollection(arg0 *route53.ChangeCidrCollectionInput) (*route53.ChangeCidrCollectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ChangeCidrCollection", arg0)
+	ret0, _ := ret[0].(*route53.ChangeCidrCollectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ChangeCidrCollection indicates an expected call of ChangeCidrCollection
+func (mr *MockRoute53APIMockRecorder) ChangeCidrCollection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ChangeCidrCollection", reflect.TypeOf((*MockRoute53API)(nil).ChangeCidrCollection), arg0)
+}
+
+// ChangeCidrCollectionRequest mocks base method
+func (m *MockRoute53API) ChangeCidrCollectionRequest(arg0 *route53.ChangeCidrCollectionInput) (*request.Request, *route53.ChangeCidrCollectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ChangeCidrCollectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53.ChangeCidrCollectionOutput)
+	return ret0, ret1
+}
+
+// ChangeCidrCollectionRequest indicates an expected call of ChangeCidrCollectionRequest
+func (mr *MockRoute53APIMockRecorder) ChangeCidrCollectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ChangeCidrCollectionRequest", reflect.TypeOf((*MockRoute53API)(nil).ChangeCidrCollectionRequest), arg0)
+}
+
+// ChangeCidrCollectionWithContext mocks base method
+func (m *MockRoute53API) ChangeCidrCollectionWithContext(arg0 context.Context, arg1 *route53.ChangeCidrCollectionInput, arg2 ...request.Option) (*route53.ChangeCidrCollectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ChangeCidrCollectionWithContext", varargs...)
+	ret0, _ := ret[0].(*route53.ChangeCidrCollectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ChangeCidrCollectionWithContext indicates an expected call of ChangeCidrCollectionWithContext
+func (mr *MockRoute53APIMockRecorder) ChangeCidrCollectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ChangeCidrCollectionWithContext", reflect.TypeOf((*MockRoute53API)(nil).ChangeCidrCollectionWithContext), varargs...)
+}
+
 // ChangeResourceRecordSets mocks base method
 func (m *MockRoute53API) ChangeResourceRecordSets(arg0 *route53.ChangeResourceRecordSetsInput) (*route53.ChangeResourceRecordSetsOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,56 @@ func (mr *MockRoute53APIMockRecorder) ChangeTagsForResourceWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ChangeTagsForResourceWithContext", reflect.TypeOf((*MockRoute53API)(nil).ChangeTagsForResourceWithContext), varargs...)
+}
+
+// CreateCidrCollection mocks base method
+func (m *MockRoute53API) CreateCidrCollection(arg0 *route53.CreateCidrCollectionInput) (*route53.CreateCidrCollectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCidrCollection", arg0)
+	ret0, _ := ret[0].(*route53.CreateCidrCollectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCidrCollection indicates an expected call of CreateCidrCollection
+func (mr *MockRoute53APIMockRecorder) CreateCidrCollection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCidrCollection", reflect.TypeOf((*MockRoute53API)(nil).CreateCidrCollection), arg0)
+}
+
+// CreateCidrCollectionRequest mocks base method
+func (m *MockRoute53API) CreateCidrCollectionRequest(arg0 *route53.CreateCidrCollectionInput) (*request.Request, *route53.CreateCidrCollectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCidrCollectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53.CreateCidrCollectionOutput)
+	return ret0, ret1
+}
+
+// CreateCidrCollectionRequest indicates an expected call of CreateCidrCollectionRequest
+func (mr *MockRoute53APIMockRecorder) CreateCidrCollectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCidrCollectionRequest", reflect.TypeOf((*MockRoute53API)(nil).CreateCidrCollectionRequest), arg0)
+}
+
+// CreateCidrCollectionWithContext mocks base method
+func (m *MockRoute53API) CreateCidrCollectionWithContext(arg0 context.Context, arg1 *route53.CreateCidrCollectionInput, arg2 ...request.Option) (*route53.CreateCidrCollectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCidrCollectionWithContext", varargs...)
+	ret0, _ := ret[0].(*route53.CreateCidrCollectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCidrCollectionWithContext indicates an expected call of CreateCidrCollectionWithContext
+func (mr *MockRoute53APIMockRecorder) CreateCidrCollectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCidrCollectionWithContext", reflect.TypeOf((*MockRoute53API)(nil).CreateCidrCollectionWithContext), varargs...)
 }
 
 // CreateHealthCheck mocks base method
@@ -733,6 +833,56 @@ func (mr *MockRoute53APIMockRecorder) DeactivateKeySigningKeyWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateKeySigningKeyWithContext", reflect.TypeOf((*MockRoute53API)(nil).DeactivateKeySigningKeyWithContext), varargs...)
+}
+
+// DeleteCidrCollection mocks base method
+func (m *MockRoute53API) DeleteCidrCollection(arg0 *route53.DeleteCidrCollectionInput) (*route53.DeleteCidrCollectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCidrCollection", arg0)
+	ret0, _ := ret[0].(*route53.DeleteCidrCollectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCidrCollection indicates an expected call of DeleteCidrCollection
+func (mr *MockRoute53APIMockRecorder) DeleteCidrCollection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCidrCollection", reflect.TypeOf((*MockRoute53API)(nil).DeleteCidrCollection), arg0)
+}
+
+// DeleteCidrCollectionRequest mocks base method
+func (m *MockRoute53API) DeleteCidrCollectionRequest(arg0 *route53.DeleteCidrCollectionInput) (*request.Request, *route53.DeleteCidrCollectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCidrCollectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53.DeleteCidrCollectionOutput)
+	return ret0, ret1
+}
+
+// DeleteCidrCollectionRequest indicates an expected call of DeleteCidrCollectionRequest
+func (mr *MockRoute53APIMockRecorder) DeleteCidrCollectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCidrCollectionRequest", reflect.TypeOf((*MockRoute53API)(nil).DeleteCidrCollectionRequest), arg0)
+}
+
+// DeleteCidrCollectionWithContext mocks base method
+func (m *MockRoute53API) DeleteCidrCollectionWithContext(arg0 context.Context, arg1 *route53.DeleteCidrCollectionInput, arg2 ...request.Option) (*route53.DeleteCidrCollectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCidrCollectionWithContext", varargs...)
+	ret0, _ := ret[0].(*route53.DeleteCidrCollectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCidrCollectionWithContext indicates an expected call of DeleteCidrCollectionWithContext
+func (mr *MockRoute53APIMockRecorder) DeleteCidrCollectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCidrCollectionWithContext", reflect.TypeOf((*MockRoute53API)(nil).DeleteCidrCollectionWithContext), varargs...)
 }
 
 // DeleteHealthCheck mocks base method
@@ -2183,6 +2333,255 @@ func (mr *MockRoute53APIMockRecorder) GetTrafficPolicyWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTrafficPolicyWithContext", reflect.TypeOf((*MockRoute53API)(nil).GetTrafficPolicyWithContext), varargs...)
+}
+
+// ListCidrBlocks mocks base method
+func (m *MockRoute53API) ListCidrBlocks(arg0 *route53.ListCidrBlocksInput) (*route53.ListCidrBlocksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCidrBlocks", arg0)
+	ret0, _ := ret[0].(*route53.ListCidrBlocksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCidrBlocks indicates an expected call of ListCidrBlocks
+func (mr *MockRoute53APIMockRecorder) ListCidrBlocks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrBlocks", reflect.TypeOf((*MockRoute53API)(nil).ListCidrBlocks), arg0)
+}
+
+// ListCidrBlocksPages mocks base method
+func (m *MockRoute53API) ListCidrBlocksPages(arg0 *route53.ListCidrBlocksInput, arg1 func(*route53.ListCidrBlocksOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCidrBlocksPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCidrBlocksPages indicates an expected call of ListCidrBlocksPages
+func (mr *MockRoute53APIMockRecorder) ListCidrBlocksPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrBlocksPages", reflect.TypeOf((*MockRoute53API)(nil).ListCidrBlocksPages), arg0, arg1)
+}
+
+// ListCidrBlocksPagesWithContext mocks base method
+func (m *MockRoute53API) ListCidrBlocksPagesWithContext(arg0 context.Context, arg1 *route53.ListCidrBlocksInput, arg2 func(*route53.ListCidrBlocksOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCidrBlocksPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCidrBlocksPagesWithContext indicates an expected call of ListCidrBlocksPagesWithContext
+func (mr *MockRoute53APIMockRecorder) ListCidrBlocksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrBlocksPagesWithContext", reflect.TypeOf((*MockRoute53API)(nil).ListCidrBlocksPagesWithContext), varargs...)
+}
+
+// ListCidrBlocksRequest mocks base method
+func (m *MockRoute53API) ListCidrBlocksRequest(arg0 *route53.ListCidrBlocksInput) (*request.Request, *route53.ListCidrBlocksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCidrBlocksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53.ListCidrBlocksOutput)
+	return ret0, ret1
+}
+
+// ListCidrBlocksRequest indicates an expected call of ListCidrBlocksRequest
+func (mr *MockRoute53APIMockRecorder) ListCidrBlocksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrBlocksRequest", reflect.TypeOf((*MockRoute53API)(nil).ListCidrBlocksRequest), arg0)
+}
+
+// ListCidrBlocksWithContext mocks base method
+func (m *MockRoute53API) ListCidrBlocksWithContext(arg0 context.Context, arg1 *route53.ListCidrBlocksInput, arg2 ...request.Option) (*route53.ListCidrBlocksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCidrBlocksWithContext", varargs...)
+	ret0, _ := ret[0].(*route53.ListCidrBlocksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCidrBlocksWithContext indicates an expected call of ListCidrBlocksWithContext
+func (mr *MockRoute53APIMockRecorder) ListCidrBlocksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrBlocksWithContext", reflect.TypeOf((*MockRoute53API)(nil).ListCidrBlocksWithContext), varargs...)
+}
+
+// ListCidrCollections mocks base method
+func (m *MockRoute53API) ListCidrCollections(arg0 *route53.ListCidrCollectionsInput) (*route53.ListCidrCollectionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCidrCollections", arg0)
+	ret0, _ := ret[0].(*route53.ListCidrCollectionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCidrCollections indicates an expected call of ListCidrCollections
+func (mr *MockRoute53APIMockRecorder) ListCidrCollections(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrCollections", reflect.TypeOf((*MockRoute53API)(nil).ListCidrCollections), arg0)
+}
+
+// ListCidrCollectionsPages mocks base method
+func (m *MockRoute53API) ListCidrCollectionsPages(arg0 *route53.ListCidrCollectionsInput, arg1 func(*route53.ListCidrCollectionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCidrCollectionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCidrCollectionsPages indicates an expected call of ListCidrCollectionsPages
+func (mr *MockRoute53APIMockRecorder) ListCidrCollectionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrCollectionsPages", reflect.TypeOf((*MockRoute53API)(nil).ListCidrCollectionsPages), arg0, arg1)
+}
+
+// ListCidrCollectionsPagesWithContext mocks base method
+func (m *MockRoute53API) ListCidrCollectionsPagesWithContext(arg0 context.Context, arg1 *route53.ListCidrCollectionsInput, arg2 func(*route53.ListCidrCollectionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCidrCollectionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCidrCollectionsPagesWithContext indicates an expected call of ListCidrCollectionsPagesWithContext
+func (mr *MockRoute53APIMockRecorder) ListCidrCollectionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrCollectionsPagesWithContext", reflect.TypeOf((*MockRoute53API)(nil).ListCidrCollectionsPagesWithContext), varargs...)
+}
+
+// ListCidrCollectionsRequest mocks base method
+func (m *MockRoute53API) ListCidrCollectionsRequest(arg0 *route53.ListCidrCollectionsInput) (*request.Request, *route53.ListCidrCollectionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCidrCollectionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53.ListCidrCollectionsOutput)
+	return ret0, ret1
+}
+
+// ListCidrCollectionsRequest indicates an expected call of ListCidrCollectionsRequest
+func (mr *MockRoute53APIMockRecorder) ListCidrCollectionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrCollectionsRequest", reflect.TypeOf((*MockRoute53API)(nil).ListCidrCollectionsRequest), arg0)
+}
+
+// ListCidrCollectionsWithContext mocks base method
+func (m *MockRoute53API) ListCidrCollectionsWithContext(arg0 context.Context, arg1 *route53.ListCidrCollectionsInput, arg2 ...request.Option) (*route53.ListCidrCollectionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCidrCollectionsWithContext", varargs...)
+	ret0, _ := ret[0].(*route53.ListCidrCollectionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCidrCollectionsWithContext indicates an expected call of ListCidrCollectionsWithContext
+func (mr *MockRoute53APIMockRecorder) ListCidrCollectionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrCollectionsWithContext", reflect.TypeOf((*MockRoute53API)(nil).ListCidrCollectionsWithContext), varargs...)
+}
+
+// ListCidrLocations mocks base method
+func (m *MockRoute53API) ListCidrLocations(arg0 *route53.ListCidrLocationsInput) (*route53.ListCidrLocationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCidrLocations", arg0)
+	ret0, _ := ret[0].(*route53.ListCidrLocationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCidrLocations indicates an expected call of ListCidrLocations
+func (mr *MockRoute53APIMockRecorder) ListCidrLocations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrLocations", reflect.TypeOf((*MockRoute53API)(nil).ListCidrLocations), arg0)
+}
+
+// ListCidrLocationsPages mocks base method
+func (m *MockRoute53API) ListCidrLocationsPages(arg0 *route53.ListCidrLocationsInput, arg1 func(*route53.ListCidrLocationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCidrLocationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCidrLocationsPages indicates an expected call of ListCidrLocationsPages
+func (mr *MockRoute53APIMockRecorder) ListCidrLocationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrLocationsPages", reflect.TypeOf((*MockRoute53API)(nil).ListCidrLocationsPages), arg0, arg1)
+}
+
+// ListCidrLocationsPagesWithContext mocks base method
+func (m *MockRoute53API) ListCidrLocationsPagesWithContext(arg0 context.Context, arg1 *route53.ListCidrLocationsInput, arg2 func(*route53.ListCidrLocationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCidrLocationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCidrLocationsPagesWithContext indicates an expected call of ListCidrLocationsPagesWithContext
+func (mr *MockRoute53APIMockRecorder) ListCidrLocationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrLocationsPagesWithContext", reflect.TypeOf((*MockRoute53API)(nil).ListCidrLocationsPagesWithContext), varargs...)
+}
+
+// ListCidrLocationsRequest mocks base method
+func (m *MockRoute53API) ListCidrLocationsRequest(arg0 *route53.ListCidrLocationsInput) (*request.Request, *route53.ListCidrLocationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCidrLocationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53.ListCidrLocationsOutput)
+	return ret0, ret1
+}
+
+// ListCidrLocationsRequest indicates an expected call of ListCidrLocationsRequest
+func (mr *MockRoute53APIMockRecorder) ListCidrLocationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrLocationsRequest", reflect.TypeOf((*MockRoute53API)(nil).ListCidrLocationsRequest), arg0)
+}
+
+// ListCidrLocationsWithContext mocks base method
+func (m *MockRoute53API) ListCidrLocationsWithContext(arg0 context.Context, arg1 *route53.ListCidrLocationsInput, arg2 ...request.Option) (*route53.ListCidrLocationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCidrLocationsWithContext", varargs...)
+	ret0, _ := ret[0].(*route53.ListCidrLocationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCidrLocationsWithContext indicates an expected call of ListCidrLocationsWithContext
+func (mr *MockRoute53APIMockRecorder) ListCidrLocationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCidrLocationsWithContext", reflect.TypeOf((*MockRoute53API)(nil).ListCidrLocationsWithContext), varargs...)
 }
 
 // ListGeoLocations mocks base method

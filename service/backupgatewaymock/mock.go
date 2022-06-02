@@ -285,6 +285,56 @@ func (mr *MockBackupGatewayAPIMockRecorder) DisassociateGatewayFromServerWithCon
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateGatewayFromServerWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).DisassociateGatewayFromServerWithContext), varargs...)
 }
 
+// GetGateway mocks base method
+func (m *MockBackupGatewayAPI) GetGateway(arg0 *backupgateway.GetGatewayInput) (*backupgateway.GetGatewayOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetGateway", arg0)
+	ret0, _ := ret[0].(*backupgateway.GetGatewayOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetGateway indicates an expected call of GetGateway
+func (mr *MockBackupGatewayAPIMockRecorder) GetGateway(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGateway", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetGateway), arg0)
+}
+
+// GetGatewayRequest mocks base method
+func (m *MockBackupGatewayAPI) GetGatewayRequest(arg0 *backupgateway.GetGatewayInput) (*request.Request, *backupgateway.GetGatewayOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetGatewayRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backupgateway.GetGatewayOutput)
+	return ret0, ret1
+}
+
+// GetGatewayRequest indicates an expected call of GetGatewayRequest
+func (mr *MockBackupGatewayAPIMockRecorder) GetGatewayRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayRequest", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetGatewayRequest), arg0)
+}
+
+// GetGatewayWithContext mocks base method
+func (m *MockBackupGatewayAPI) GetGatewayWithContext(arg0 context.Context, arg1 *backupgateway.GetGatewayInput, arg2 ...request.Option) (*backupgateway.GetGatewayOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetGatewayWithContext", varargs...)
+	ret0, _ := ret[0].(*backupgateway.GetGatewayOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetGatewayWithContext indicates an expected call of GetGatewayWithContext
+func (mr *MockBackupGatewayAPIMockRecorder) GetGatewayWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetGatewayWithContext), varargs...)
+}
+
 // ImportHypervisorConfiguration mocks base method
 func (m *MockBackupGatewayAPI) ImportHypervisorConfiguration(arg0 *backupgateway.ImportHypervisorConfigurationInput) (*backupgateway.ImportHypervisorConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -882,6 +932,56 @@ func (mr *MockBackupGatewayAPIMockRecorder) UpdateGatewayInformationWithContext(
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayInformationWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).UpdateGatewayInformationWithContext), varargs...)
+}
+
+// UpdateGatewaySoftwareNow mocks base method
+func (m *MockBackupGatewayAPI) UpdateGatewaySoftwareNow(arg0 *backupgateway.UpdateGatewaySoftwareNowInput) (*backupgateway.UpdateGatewaySoftwareNowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGatewaySoftwareNow", arg0)
+	ret0, _ := ret[0].(*backupgateway.UpdateGatewaySoftwareNowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGatewaySoftwareNow indicates an expected call of UpdateGatewaySoftwareNow
+func (mr *MockBackupGatewayAPIMockRecorder) UpdateGatewaySoftwareNow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewaySoftwareNow", reflect.TypeOf((*MockBackupGatewayAPI)(nil).UpdateGatewaySoftwareNow), arg0)
+}
+
+// UpdateGatewaySoftwareNowRequest mocks base method
+func (m *MockBackupGatewayAPI) UpdateGatewaySoftwareNowRequest(arg0 *backupgateway.UpdateGatewaySoftwareNowInput) (*request.Request, *backupgateway.UpdateGatewaySoftwareNowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGatewaySoftwareNowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backupgateway.UpdateGatewaySoftwareNowOutput)
+	return ret0, ret1
+}
+
+// UpdateGatewaySoftwareNowRequest indicates an expected call of UpdateGatewaySoftwareNowRequest
+func (mr *MockBackupGatewayAPIMockRecorder) UpdateGatewaySoftwareNowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewaySoftwareNowRequest", reflect.TypeOf((*MockBackupGatewayAPI)(nil).UpdateGatewaySoftwareNowRequest), arg0)
+}
+
+// UpdateGatewaySoftwareNowWithContext mocks base method
+func (m *MockBackupGatewayAPI) UpdateGatewaySoftwareNowWithContext(arg0 context.Context, arg1 *backupgateway.UpdateGatewaySoftwareNowInput, arg2 ...request.Option) (*backupgateway.UpdateGatewaySoftwareNowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateGatewaySoftwareNowWithContext", varargs...)
+	ret0, _ := ret[0].(*backupgateway.UpdateGatewaySoftwareNowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGatewaySoftwareNowWithContext indicates an expected call of UpdateGatewaySoftwareNowWithContext
+func (mr *MockBackupGatewayAPIMockRecorder) UpdateGatewaySoftwareNowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewaySoftwareNowWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).UpdateGatewaySoftwareNowWithContext), varargs...)
 }
 
 // UpdateHypervisor mocks base method
