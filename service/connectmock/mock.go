@@ -1085,6 +1085,56 @@ func (mr *MockConnectAPIMockRecorder) CreateSecurityProfileWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSecurityProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateSecurityProfileWithContext), varargs...)
 }
 
+// CreateTaskTemplate mocks base method
+func (m *MockConnectAPI) CreateTaskTemplate(arg0 *connect.CreateTaskTemplateInput) (*connect.CreateTaskTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTaskTemplate", arg0)
+	ret0, _ := ret[0].(*connect.CreateTaskTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTaskTemplate indicates an expected call of CreateTaskTemplate
+func (mr *MockConnectAPIMockRecorder) CreateTaskTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTaskTemplate", reflect.TypeOf((*MockConnectAPI)(nil).CreateTaskTemplate), arg0)
+}
+
+// CreateTaskTemplateRequest mocks base method
+func (m *MockConnectAPI) CreateTaskTemplateRequest(arg0 *connect.CreateTaskTemplateInput) (*request.Request, *connect.CreateTaskTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTaskTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.CreateTaskTemplateOutput)
+	return ret0, ret1
+}
+
+// CreateTaskTemplateRequest indicates an expected call of CreateTaskTemplateRequest
+func (mr *MockConnectAPIMockRecorder) CreateTaskTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTaskTemplateRequest", reflect.TypeOf((*MockConnectAPI)(nil).CreateTaskTemplateRequest), arg0)
+}
+
+// CreateTaskTemplateWithContext mocks base method
+func (m *MockConnectAPI) CreateTaskTemplateWithContext(arg0 context.Context, arg1 *connect.CreateTaskTemplateInput, arg2 ...request.Option) (*connect.CreateTaskTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateTaskTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.CreateTaskTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTaskTemplateWithContext indicates an expected call of CreateTaskTemplateWithContext
+func (mr *MockConnectAPIMockRecorder) CreateTaskTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTaskTemplateWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateTaskTemplateWithContext), varargs...)
+}
+
 // CreateUseCase mocks base method
 func (m *MockConnectAPI) CreateUseCase(arg0 *connect.CreateUseCaseInput) (*connect.CreateUseCaseOutput, error) {
 	m.ctrl.T.Helper()
@@ -1633,6 +1683,56 @@ func (mr *MockConnectAPIMockRecorder) DeleteSecurityProfileWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSecurityProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteSecurityProfileWithContext), varargs...)
+}
+
+// DeleteTaskTemplate mocks base method
+func (m *MockConnectAPI) DeleteTaskTemplate(arg0 *connect.DeleteTaskTemplateInput) (*connect.DeleteTaskTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTaskTemplate", arg0)
+	ret0, _ := ret[0].(*connect.DeleteTaskTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTaskTemplate indicates an expected call of DeleteTaskTemplate
+func (mr *MockConnectAPIMockRecorder) DeleteTaskTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTaskTemplate", reflect.TypeOf((*MockConnectAPI)(nil).DeleteTaskTemplate), arg0)
+}
+
+// DeleteTaskTemplateRequest mocks base method
+func (m *MockConnectAPI) DeleteTaskTemplateRequest(arg0 *connect.DeleteTaskTemplateInput) (*request.Request, *connect.DeleteTaskTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTaskTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DeleteTaskTemplateOutput)
+	return ret0, ret1
+}
+
+// DeleteTaskTemplateRequest indicates an expected call of DeleteTaskTemplateRequest
+func (mr *MockConnectAPIMockRecorder) DeleteTaskTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTaskTemplateRequest", reflect.TypeOf((*MockConnectAPI)(nil).DeleteTaskTemplateRequest), arg0)
+}
+
+// DeleteTaskTemplateWithContext mocks base method
+func (m *MockConnectAPI) DeleteTaskTemplateWithContext(arg0 context.Context, arg1 *connect.DeleteTaskTemplateInput, arg2 ...request.Option) (*connect.DeleteTaskTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteTaskTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DeleteTaskTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTaskTemplateWithContext indicates an expected call of DeleteTaskTemplateWithContext
+func (mr *MockConnectAPIMockRecorder) DeleteTaskTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTaskTemplateWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteTaskTemplateWithContext), varargs...)
 }
 
 // DeleteUseCase mocks base method
@@ -3399,6 +3499,56 @@ func (mr *MockConnectAPIMockRecorder) GetMetricDataWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricDataWithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetMetricDataWithContext), varargs...)
+}
+
+// GetTaskTemplate mocks base method
+func (m *MockConnectAPI) GetTaskTemplate(arg0 *connect.GetTaskTemplateInput) (*connect.GetTaskTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTaskTemplate", arg0)
+	ret0, _ := ret[0].(*connect.GetTaskTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTaskTemplate indicates an expected call of GetTaskTemplate
+func (mr *MockConnectAPIMockRecorder) GetTaskTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTaskTemplate", reflect.TypeOf((*MockConnectAPI)(nil).GetTaskTemplate), arg0)
+}
+
+// GetTaskTemplateRequest mocks base method
+func (m *MockConnectAPI) GetTaskTemplateRequest(arg0 *connect.GetTaskTemplateInput) (*request.Request, *connect.GetTaskTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTaskTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.GetTaskTemplateOutput)
+	return ret0, ret1
+}
+
+// GetTaskTemplateRequest indicates an expected call of GetTaskTemplateRequest
+func (mr *MockConnectAPIMockRecorder) GetTaskTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTaskTemplateRequest", reflect.TypeOf((*MockConnectAPI)(nil).GetTaskTemplateRequest), arg0)
+}
+
+// GetTaskTemplateWithContext mocks base method
+func (m *MockConnectAPI) GetTaskTemplateWithContext(arg0 context.Context, arg1 *connect.GetTaskTemplateInput, arg2 ...request.Option) (*connect.GetTaskTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTaskTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.GetTaskTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTaskTemplateWithContext indicates an expected call of GetTaskTemplateWithContext
+func (mr *MockConnectAPIMockRecorder) GetTaskTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTaskTemplateWithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetTaskTemplateWithContext), varargs...)
 }
 
 // ListAgentStatuses mocks base method
@@ -5526,6 +5676,89 @@ func (mr *MockConnectAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ListTaskTemplates mocks base method
+func (m *MockConnectAPI) ListTaskTemplates(arg0 *connect.ListTaskTemplatesInput) (*connect.ListTaskTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTaskTemplates", arg0)
+	ret0, _ := ret[0].(*connect.ListTaskTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTaskTemplates indicates an expected call of ListTaskTemplates
+func (mr *MockConnectAPIMockRecorder) ListTaskTemplates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTaskTemplates", reflect.TypeOf((*MockConnectAPI)(nil).ListTaskTemplates), arg0)
+}
+
+// ListTaskTemplatesPages mocks base method
+func (m *MockConnectAPI) ListTaskTemplatesPages(arg0 *connect.ListTaskTemplatesInput, arg1 func(*connect.ListTaskTemplatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTaskTemplatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTaskTemplatesPages indicates an expected call of ListTaskTemplatesPages
+func (mr *MockConnectAPIMockRecorder) ListTaskTemplatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTaskTemplatesPages", reflect.TypeOf((*MockConnectAPI)(nil).ListTaskTemplatesPages), arg0, arg1)
+}
+
+// ListTaskTemplatesPagesWithContext mocks base method
+func (m *MockConnectAPI) ListTaskTemplatesPagesWithContext(arg0 context.Context, arg1 *connect.ListTaskTemplatesInput, arg2 func(*connect.ListTaskTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTaskTemplatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTaskTemplatesPagesWithContext indicates an expected call of ListTaskTemplatesPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListTaskTemplatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTaskTemplatesPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListTaskTemplatesPagesWithContext), varargs...)
+}
+
+// ListTaskTemplatesRequest mocks base method
+func (m *MockConnectAPI) ListTaskTemplatesRequest(arg0 *connect.ListTaskTemplatesInput) (*request.Request, *connect.ListTaskTemplatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTaskTemplatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListTaskTemplatesOutput)
+	return ret0, ret1
+}
+
+// ListTaskTemplatesRequest indicates an expected call of ListTaskTemplatesRequest
+func (mr *MockConnectAPIMockRecorder) ListTaskTemplatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTaskTemplatesRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListTaskTemplatesRequest), arg0)
+}
+
+// ListTaskTemplatesWithContext mocks base method
+func (m *MockConnectAPI) ListTaskTemplatesWithContext(arg0 context.Context, arg1 *connect.ListTaskTemplatesInput, arg2 ...request.Option) (*connect.ListTaskTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTaskTemplatesWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListTaskTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTaskTemplatesWithContext indicates an expected call of ListTaskTemplatesWithContext
+func (mr *MockConnectAPIMockRecorder) ListTaskTemplatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTaskTemplatesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListTaskTemplatesWithContext), varargs...)
+}
+
 // ListUseCases mocks base method
 func (m *MockConnectAPI) ListUseCases(arg0 *connect.ListUseCasesInput) (*connect.ListUseCasesOutput, error) {
 	m.ctrl.T.Helper()
@@ -6672,6 +6905,56 @@ func (mr *MockConnectAPIMockRecorder) TagResourceWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockConnectAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// TransferContact mocks base method
+func (m *MockConnectAPI) TransferContact(arg0 *connect.TransferContactInput) (*connect.TransferContactOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TransferContact", arg0)
+	ret0, _ := ret[0].(*connect.TransferContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TransferContact indicates an expected call of TransferContact
+func (mr *MockConnectAPIMockRecorder) TransferContact(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferContact", reflect.TypeOf((*MockConnectAPI)(nil).TransferContact), arg0)
+}
+
+// TransferContactRequest mocks base method
+func (m *MockConnectAPI) TransferContactRequest(arg0 *connect.TransferContactInput) (*request.Request, *connect.TransferContactOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TransferContactRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.TransferContactOutput)
+	return ret0, ret1
+}
+
+// TransferContactRequest indicates an expected call of TransferContactRequest
+func (mr *MockConnectAPIMockRecorder) TransferContactRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferContactRequest", reflect.TypeOf((*MockConnectAPI)(nil).TransferContactRequest), arg0)
+}
+
+// TransferContactWithContext mocks base method
+func (m *MockConnectAPI) TransferContactWithContext(arg0 context.Context, arg1 *connect.TransferContactInput, arg2 ...request.Option) (*connect.TransferContactOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TransferContactWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.TransferContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TransferContactWithContext indicates an expected call of TransferContactWithContext
+func (mr *MockConnectAPIMockRecorder) TransferContactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferContactWithContext", reflect.TypeOf((*MockConnectAPI)(nil).TransferContactWithContext), varargs...)
 }
 
 // UntagResource mocks base method
@@ -7972,6 +8255,56 @@ func (mr *MockConnectAPIMockRecorder) UpdateSecurityProfileWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSecurityProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateSecurityProfileWithContext), varargs...)
+}
+
+// UpdateTaskTemplate mocks base method
+func (m *MockConnectAPI) UpdateTaskTemplate(arg0 *connect.UpdateTaskTemplateInput) (*connect.UpdateTaskTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTaskTemplate", arg0)
+	ret0, _ := ret[0].(*connect.UpdateTaskTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTaskTemplate indicates an expected call of UpdateTaskTemplate
+func (mr *MockConnectAPIMockRecorder) UpdateTaskTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTaskTemplate", reflect.TypeOf((*MockConnectAPI)(nil).UpdateTaskTemplate), arg0)
+}
+
+// UpdateTaskTemplateRequest mocks base method
+func (m *MockConnectAPI) UpdateTaskTemplateRequest(arg0 *connect.UpdateTaskTemplateInput) (*request.Request, *connect.UpdateTaskTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTaskTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateTaskTemplateOutput)
+	return ret0, ret1
+}
+
+// UpdateTaskTemplateRequest indicates an expected call of UpdateTaskTemplateRequest
+func (mr *MockConnectAPIMockRecorder) UpdateTaskTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTaskTemplateRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateTaskTemplateRequest), arg0)
+}
+
+// UpdateTaskTemplateWithContext mocks base method
+func (m *MockConnectAPI) UpdateTaskTemplateWithContext(arg0 context.Context, arg1 *connect.UpdateTaskTemplateInput, arg2 ...request.Option) (*connect.UpdateTaskTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateTaskTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateTaskTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTaskTemplateWithContext indicates an expected call of UpdateTaskTemplateWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateTaskTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTaskTemplateWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateTaskTemplateWithContext), varargs...)
 }
 
 // UpdateUserHierarchy mocks base method
