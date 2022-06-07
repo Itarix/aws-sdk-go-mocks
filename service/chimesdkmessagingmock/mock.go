@@ -2232,6 +2232,89 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) RedactChannelMessageWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RedactChannelMessageWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).RedactChannelMessageWithContext), varargs...)
 }
 
+// SearchChannels mocks base method
+func (m *MockChimeSDKMessagingAPI) SearchChannels(arg0 *chimesdkmessaging.SearchChannelsInput) (*chimesdkmessaging.SearchChannelsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchChannels", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.SearchChannelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchChannels indicates an expected call of SearchChannels
+func (mr *MockChimeSDKMessagingAPIMockRecorder) SearchChannels(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchChannels", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).SearchChannels), arg0)
+}
+
+// SearchChannelsPages mocks base method
+func (m *MockChimeSDKMessagingAPI) SearchChannelsPages(arg0 *chimesdkmessaging.SearchChannelsInput, arg1 func(*chimesdkmessaging.SearchChannelsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchChannelsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchChannelsPages indicates an expected call of SearchChannelsPages
+func (mr *MockChimeSDKMessagingAPIMockRecorder) SearchChannelsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchChannelsPages", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).SearchChannelsPages), arg0, arg1)
+}
+
+// SearchChannelsPagesWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) SearchChannelsPagesWithContext(arg0 context.Context, arg1 *chimesdkmessaging.SearchChannelsInput, arg2 func(*chimesdkmessaging.SearchChannelsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchChannelsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchChannelsPagesWithContext indicates an expected call of SearchChannelsPagesWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) SearchChannelsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchChannelsPagesWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).SearchChannelsPagesWithContext), varargs...)
+}
+
+// SearchChannelsRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) SearchChannelsRequest(arg0 *chimesdkmessaging.SearchChannelsInput) (*request.Request, *chimesdkmessaging.SearchChannelsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchChannelsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.SearchChannelsOutput)
+	return ret0, ret1
+}
+
+// SearchChannelsRequest indicates an expected call of SearchChannelsRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) SearchChannelsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchChannelsRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).SearchChannelsRequest), arg0)
+}
+
+// SearchChannelsWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) SearchChannelsWithContext(arg0 context.Context, arg1 *chimesdkmessaging.SearchChannelsInput, arg2 ...request.Option) (*chimesdkmessaging.SearchChannelsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchChannelsWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.SearchChannelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchChannelsWithContext indicates an expected call of SearchChannelsWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) SearchChannelsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchChannelsWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).SearchChannelsWithContext), varargs...)
+}
+
 // SendChannelMessage mocks base method
 func (m *MockChimeSDKMessagingAPI) SendChannelMessage(arg0 *chimesdkmessaging.SendChannelMessageInput) (*chimesdkmessaging.SendChannelMessageOutput, error) {
 	m.ctrl.T.Helper()

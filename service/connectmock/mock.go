@@ -3368,6 +3368,89 @@ func (mr *MockConnectAPIMockRecorder) GetCurrentMetricDataWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCurrentMetricDataWithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetCurrentMetricDataWithContext), varargs...)
 }
 
+// GetCurrentUserData mocks base method
+func (m *MockConnectAPI) GetCurrentUserData(arg0 *connect.GetCurrentUserDataInput) (*connect.GetCurrentUserDataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCurrentUserData", arg0)
+	ret0, _ := ret[0].(*connect.GetCurrentUserDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCurrentUserData indicates an expected call of GetCurrentUserData
+func (mr *MockConnectAPIMockRecorder) GetCurrentUserData(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCurrentUserData", reflect.TypeOf((*MockConnectAPI)(nil).GetCurrentUserData), arg0)
+}
+
+// GetCurrentUserDataPages mocks base method
+func (m *MockConnectAPI) GetCurrentUserDataPages(arg0 *connect.GetCurrentUserDataInput, arg1 func(*connect.GetCurrentUserDataOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCurrentUserDataPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetCurrentUserDataPages indicates an expected call of GetCurrentUserDataPages
+func (mr *MockConnectAPIMockRecorder) GetCurrentUserDataPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCurrentUserDataPages", reflect.TypeOf((*MockConnectAPI)(nil).GetCurrentUserDataPages), arg0, arg1)
+}
+
+// GetCurrentUserDataPagesWithContext mocks base method
+func (m *MockConnectAPI) GetCurrentUserDataPagesWithContext(arg0 context.Context, arg1 *connect.GetCurrentUserDataInput, arg2 func(*connect.GetCurrentUserDataOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCurrentUserDataPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetCurrentUserDataPagesWithContext indicates an expected call of GetCurrentUserDataPagesWithContext
+func (mr *MockConnectAPIMockRecorder) GetCurrentUserDataPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCurrentUserDataPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetCurrentUserDataPagesWithContext), varargs...)
+}
+
+// GetCurrentUserDataRequest mocks base method
+func (m *MockConnectAPI) GetCurrentUserDataRequest(arg0 *connect.GetCurrentUserDataInput) (*request.Request, *connect.GetCurrentUserDataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCurrentUserDataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.GetCurrentUserDataOutput)
+	return ret0, ret1
+}
+
+// GetCurrentUserDataRequest indicates an expected call of GetCurrentUserDataRequest
+func (mr *MockConnectAPIMockRecorder) GetCurrentUserDataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCurrentUserDataRequest", reflect.TypeOf((*MockConnectAPI)(nil).GetCurrentUserDataRequest), arg0)
+}
+
+// GetCurrentUserDataWithContext mocks base method
+func (m *MockConnectAPI) GetCurrentUserDataWithContext(arg0 context.Context, arg1 *connect.GetCurrentUserDataInput, arg2 ...request.Option) (*connect.GetCurrentUserDataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCurrentUserDataWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.GetCurrentUserDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCurrentUserDataWithContext indicates an expected call of GetCurrentUserDataWithContext
+func (mr *MockConnectAPIMockRecorder) GetCurrentUserDataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCurrentUserDataWithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetCurrentUserDataWithContext), varargs...)
+}
+
 // GetFederationToken mocks base method
 func (m *MockConnectAPI) GetFederationToken(arg0 *connect.GetFederationTokenInput) (*connect.GetFederationTokenOutput, error) {
 	m.ctrl.T.Helper()
