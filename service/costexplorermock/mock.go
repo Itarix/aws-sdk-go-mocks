@@ -1351,6 +1351,89 @@ func (mr *MockCostExplorerAPIMockRecorder) GetUsageForecastWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsageForecastWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).GetUsageForecastWithContext), varargs...)
 }
 
+// ListCostAllocationTags mocks base method
+func (m *MockCostExplorerAPI) ListCostAllocationTags(arg0 *costexplorer.ListCostAllocationTagsInput) (*costexplorer.ListCostAllocationTagsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCostAllocationTags", arg0)
+	ret0, _ := ret[0].(*costexplorer.ListCostAllocationTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCostAllocationTags indicates an expected call of ListCostAllocationTags
+func (mr *MockCostExplorerAPIMockRecorder) ListCostAllocationTags(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCostAllocationTags", reflect.TypeOf((*MockCostExplorerAPI)(nil).ListCostAllocationTags), arg0)
+}
+
+// ListCostAllocationTagsPages mocks base method
+func (m *MockCostExplorerAPI) ListCostAllocationTagsPages(arg0 *costexplorer.ListCostAllocationTagsInput, arg1 func(*costexplorer.ListCostAllocationTagsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCostAllocationTagsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCostAllocationTagsPages indicates an expected call of ListCostAllocationTagsPages
+func (mr *MockCostExplorerAPIMockRecorder) ListCostAllocationTagsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCostAllocationTagsPages", reflect.TypeOf((*MockCostExplorerAPI)(nil).ListCostAllocationTagsPages), arg0, arg1)
+}
+
+// ListCostAllocationTagsPagesWithContext mocks base method
+func (m *MockCostExplorerAPI) ListCostAllocationTagsPagesWithContext(arg0 context.Context, arg1 *costexplorer.ListCostAllocationTagsInput, arg2 func(*costexplorer.ListCostAllocationTagsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCostAllocationTagsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCostAllocationTagsPagesWithContext indicates an expected call of ListCostAllocationTagsPagesWithContext
+func (mr *MockCostExplorerAPIMockRecorder) ListCostAllocationTagsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCostAllocationTagsPagesWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).ListCostAllocationTagsPagesWithContext), varargs...)
+}
+
+// ListCostAllocationTagsRequest mocks base method
+func (m *MockCostExplorerAPI) ListCostAllocationTagsRequest(arg0 *costexplorer.ListCostAllocationTagsInput) (*request.Request, *costexplorer.ListCostAllocationTagsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCostAllocationTagsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.ListCostAllocationTagsOutput)
+	return ret0, ret1
+}
+
+// ListCostAllocationTagsRequest indicates an expected call of ListCostAllocationTagsRequest
+func (mr *MockCostExplorerAPIMockRecorder) ListCostAllocationTagsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCostAllocationTagsRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).ListCostAllocationTagsRequest), arg0)
+}
+
+// ListCostAllocationTagsWithContext mocks base method
+func (m *MockCostExplorerAPI) ListCostAllocationTagsWithContext(arg0 context.Context, arg1 *costexplorer.ListCostAllocationTagsInput, arg2 ...request.Option) (*costexplorer.ListCostAllocationTagsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCostAllocationTagsWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.ListCostAllocationTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCostAllocationTagsWithContext indicates an expected call of ListCostAllocationTagsWithContext
+func (mr *MockCostExplorerAPIMockRecorder) ListCostAllocationTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCostAllocationTagsWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).ListCostAllocationTagsWithContext), varargs...)
+}
+
 // ListCostCategoryDefinitions mocks base method
 func (m *MockCostExplorerAPI) ListCostCategoryDefinitions(arg0 *costexplorer.ListCostCategoryDefinitionsInput) (*costexplorer.ListCostCategoryDefinitionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1732,6 +1815,56 @@ func (mr *MockCostExplorerAPIMockRecorder) UpdateAnomalySubscriptionWithContext(
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnomalySubscriptionWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).UpdateAnomalySubscriptionWithContext), varargs...)
+}
+
+// UpdateCostAllocationTagsStatus mocks base method
+func (m *MockCostExplorerAPI) UpdateCostAllocationTagsStatus(arg0 *costexplorer.UpdateCostAllocationTagsStatusInput) (*costexplorer.UpdateCostAllocationTagsStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCostAllocationTagsStatus", arg0)
+	ret0, _ := ret[0].(*costexplorer.UpdateCostAllocationTagsStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCostAllocationTagsStatus indicates an expected call of UpdateCostAllocationTagsStatus
+func (mr *MockCostExplorerAPIMockRecorder) UpdateCostAllocationTagsStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCostAllocationTagsStatus", reflect.TypeOf((*MockCostExplorerAPI)(nil).UpdateCostAllocationTagsStatus), arg0)
+}
+
+// UpdateCostAllocationTagsStatusRequest mocks base method
+func (m *MockCostExplorerAPI) UpdateCostAllocationTagsStatusRequest(arg0 *costexplorer.UpdateCostAllocationTagsStatusInput) (*request.Request, *costexplorer.UpdateCostAllocationTagsStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCostAllocationTagsStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.UpdateCostAllocationTagsStatusOutput)
+	return ret0, ret1
+}
+
+// UpdateCostAllocationTagsStatusRequest indicates an expected call of UpdateCostAllocationTagsStatusRequest
+func (mr *MockCostExplorerAPIMockRecorder) UpdateCostAllocationTagsStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCostAllocationTagsStatusRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).UpdateCostAllocationTagsStatusRequest), arg0)
+}
+
+// UpdateCostAllocationTagsStatusWithContext mocks base method
+func (m *MockCostExplorerAPI) UpdateCostAllocationTagsStatusWithContext(arg0 context.Context, arg1 *costexplorer.UpdateCostAllocationTagsStatusInput, arg2 ...request.Option) (*costexplorer.UpdateCostAllocationTagsStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateCostAllocationTagsStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.UpdateCostAllocationTagsStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCostAllocationTagsStatusWithContext indicates an expected call of UpdateCostAllocationTagsStatusWithContext
+func (mr *MockCostExplorerAPIMockRecorder) UpdateCostAllocationTagsStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCostAllocationTagsStatusWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).UpdateCostAllocationTagsStatusWithContext), varargs...)
 }
 
 // UpdateCostCategoryDefinition mocks base method
