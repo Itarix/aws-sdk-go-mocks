@@ -785,6 +785,56 @@ func (mr *MockNeptuneAPIMockRecorder) CreateEventSubscriptionWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEventSubscriptionWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).CreateEventSubscriptionWithContext), varargs...)
 }
 
+// CreateGlobalCluster mocks base method
+func (m *MockNeptuneAPI) CreateGlobalCluster(arg0 *neptune.CreateGlobalClusterInput) (*neptune.CreateGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateGlobalCluster", arg0)
+	ret0, _ := ret[0].(*neptune.CreateGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateGlobalCluster indicates an expected call of CreateGlobalCluster
+func (mr *MockNeptuneAPIMockRecorder) CreateGlobalCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGlobalCluster", reflect.TypeOf((*MockNeptuneAPI)(nil).CreateGlobalCluster), arg0)
+}
+
+// CreateGlobalClusterRequest mocks base method
+func (m *MockNeptuneAPI) CreateGlobalClusterRequest(arg0 *neptune.CreateGlobalClusterInput) (*request.Request, *neptune.CreateGlobalClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateGlobalClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*neptune.CreateGlobalClusterOutput)
+	return ret0, ret1
+}
+
+// CreateGlobalClusterRequest indicates an expected call of CreateGlobalClusterRequest
+func (mr *MockNeptuneAPIMockRecorder) CreateGlobalClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGlobalClusterRequest", reflect.TypeOf((*MockNeptuneAPI)(nil).CreateGlobalClusterRequest), arg0)
+}
+
+// CreateGlobalClusterWithContext mocks base method
+func (m *MockNeptuneAPI) CreateGlobalClusterWithContext(arg0 context.Context, arg1 *neptune.CreateGlobalClusterInput, arg2 ...request.Option) (*neptune.CreateGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateGlobalClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*neptune.CreateGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateGlobalClusterWithContext indicates an expected call of CreateGlobalClusterWithContext
+func (mr *MockNeptuneAPIMockRecorder) CreateGlobalClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGlobalClusterWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).CreateGlobalClusterWithContext), varargs...)
+}
+
 // DeleteDBCluster mocks base method
 func (m *MockNeptuneAPI) DeleteDBCluster(arg0 *neptune.DeleteDBClusterInput) (*neptune.DeleteDBClusterOutput, error) {
 	m.ctrl.T.Helper()
@@ -1183,6 +1233,56 @@ func (mr *MockNeptuneAPIMockRecorder) DeleteEventSubscriptionWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventSubscriptionWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).DeleteEventSubscriptionWithContext), varargs...)
+}
+
+// DeleteGlobalCluster mocks base method
+func (m *MockNeptuneAPI) DeleteGlobalCluster(arg0 *neptune.DeleteGlobalClusterInput) (*neptune.DeleteGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteGlobalCluster", arg0)
+	ret0, _ := ret[0].(*neptune.DeleteGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteGlobalCluster indicates an expected call of DeleteGlobalCluster
+func (mr *MockNeptuneAPIMockRecorder) DeleteGlobalCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGlobalCluster", reflect.TypeOf((*MockNeptuneAPI)(nil).DeleteGlobalCluster), arg0)
+}
+
+// DeleteGlobalClusterRequest mocks base method
+func (m *MockNeptuneAPI) DeleteGlobalClusterRequest(arg0 *neptune.DeleteGlobalClusterInput) (*request.Request, *neptune.DeleteGlobalClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteGlobalClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*neptune.DeleteGlobalClusterOutput)
+	return ret0, ret1
+}
+
+// DeleteGlobalClusterRequest indicates an expected call of DeleteGlobalClusterRequest
+func (mr *MockNeptuneAPIMockRecorder) DeleteGlobalClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGlobalClusterRequest", reflect.TypeOf((*MockNeptuneAPI)(nil).DeleteGlobalClusterRequest), arg0)
+}
+
+// DeleteGlobalClusterWithContext mocks base method
+func (m *MockNeptuneAPI) DeleteGlobalClusterWithContext(arg0 context.Context, arg1 *neptune.DeleteGlobalClusterInput, arg2 ...request.Option) (*neptune.DeleteGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteGlobalClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*neptune.DeleteGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteGlobalClusterWithContext indicates an expected call of DeleteGlobalClusterWithContext
+func (mr *MockNeptuneAPIMockRecorder) DeleteGlobalClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGlobalClusterWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).DeleteGlobalClusterWithContext), varargs...)
 }
 
 // DescribeDBClusterEndpoints mocks base method
@@ -2414,6 +2514,56 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeEventsWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).DescribeEventsWithContext), varargs...)
 }
 
+// DescribeGlobalClusters mocks base method
+func (m *MockNeptuneAPI) DescribeGlobalClusters(arg0 *neptune.DescribeGlobalClustersInput) (*neptune.DescribeGlobalClustersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGlobalClusters", arg0)
+	ret0, _ := ret[0].(*neptune.DescribeGlobalClustersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGlobalClusters indicates an expected call of DescribeGlobalClusters
+func (mr *MockNeptuneAPIMockRecorder) DescribeGlobalClusters(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalClusters", reflect.TypeOf((*MockNeptuneAPI)(nil).DescribeGlobalClusters), arg0)
+}
+
+// DescribeGlobalClustersRequest mocks base method
+func (m *MockNeptuneAPI) DescribeGlobalClustersRequest(arg0 *neptune.DescribeGlobalClustersInput) (*request.Request, *neptune.DescribeGlobalClustersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGlobalClustersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*neptune.DescribeGlobalClustersOutput)
+	return ret0, ret1
+}
+
+// DescribeGlobalClustersRequest indicates an expected call of DescribeGlobalClustersRequest
+func (mr *MockNeptuneAPIMockRecorder) DescribeGlobalClustersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalClustersRequest", reflect.TypeOf((*MockNeptuneAPI)(nil).DescribeGlobalClustersRequest), arg0)
+}
+
+// DescribeGlobalClustersWithContext mocks base method
+func (m *MockNeptuneAPI) DescribeGlobalClustersWithContext(arg0 context.Context, arg1 *neptune.DescribeGlobalClustersInput, arg2 ...request.Option) (*neptune.DescribeGlobalClustersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGlobalClustersWithContext", varargs...)
+	ret0, _ := ret[0].(*neptune.DescribeGlobalClustersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGlobalClustersWithContext indicates an expected call of DescribeGlobalClustersWithContext
+func (mr *MockNeptuneAPIMockRecorder) DescribeGlobalClustersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalClustersWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).DescribeGlobalClustersWithContext), varargs...)
+}
+
 // DescribeOrderableDBInstanceOptions mocks base method
 func (m *MockNeptuneAPI) DescribeOrderableDBInstanceOptions(arg0 *neptune.DescribeOrderableDBInstanceOptionsInput) (*neptune.DescribeOrderableDBInstanceOptionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2678,6 +2828,56 @@ func (mr *MockNeptuneAPIMockRecorder) FailoverDBClusterWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FailoverDBClusterWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).FailoverDBClusterWithContext), varargs...)
+}
+
+// FailoverGlobalCluster mocks base method
+func (m *MockNeptuneAPI) FailoverGlobalCluster(arg0 *neptune.FailoverGlobalClusterInput) (*neptune.FailoverGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "FailoverGlobalCluster", arg0)
+	ret0, _ := ret[0].(*neptune.FailoverGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// FailoverGlobalCluster indicates an expected call of FailoverGlobalCluster
+func (mr *MockNeptuneAPIMockRecorder) FailoverGlobalCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FailoverGlobalCluster", reflect.TypeOf((*MockNeptuneAPI)(nil).FailoverGlobalCluster), arg0)
+}
+
+// FailoverGlobalClusterRequest mocks base method
+func (m *MockNeptuneAPI) FailoverGlobalClusterRequest(arg0 *neptune.FailoverGlobalClusterInput) (*request.Request, *neptune.FailoverGlobalClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "FailoverGlobalClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*neptune.FailoverGlobalClusterOutput)
+	return ret0, ret1
+}
+
+// FailoverGlobalClusterRequest indicates an expected call of FailoverGlobalClusterRequest
+func (mr *MockNeptuneAPIMockRecorder) FailoverGlobalClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FailoverGlobalClusterRequest", reflect.TypeOf((*MockNeptuneAPI)(nil).FailoverGlobalClusterRequest), arg0)
+}
+
+// FailoverGlobalClusterWithContext mocks base method
+func (m *MockNeptuneAPI) FailoverGlobalClusterWithContext(arg0 context.Context, arg1 *neptune.FailoverGlobalClusterInput, arg2 ...request.Option) (*neptune.FailoverGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "FailoverGlobalClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*neptune.FailoverGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// FailoverGlobalClusterWithContext indicates an expected call of FailoverGlobalClusterWithContext
+func (mr *MockNeptuneAPIMockRecorder) FailoverGlobalClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FailoverGlobalClusterWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).FailoverGlobalClusterWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
@@ -3130,6 +3330,56 @@ func (mr *MockNeptuneAPIMockRecorder) ModifyEventSubscriptionWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyEventSubscriptionWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).ModifyEventSubscriptionWithContext), varargs...)
 }
 
+// ModifyGlobalCluster mocks base method
+func (m *MockNeptuneAPI) ModifyGlobalCluster(arg0 *neptune.ModifyGlobalClusterInput) (*neptune.ModifyGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyGlobalCluster", arg0)
+	ret0, _ := ret[0].(*neptune.ModifyGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyGlobalCluster indicates an expected call of ModifyGlobalCluster
+func (mr *MockNeptuneAPIMockRecorder) ModifyGlobalCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyGlobalCluster", reflect.TypeOf((*MockNeptuneAPI)(nil).ModifyGlobalCluster), arg0)
+}
+
+// ModifyGlobalClusterRequest mocks base method
+func (m *MockNeptuneAPI) ModifyGlobalClusterRequest(arg0 *neptune.ModifyGlobalClusterInput) (*request.Request, *neptune.ModifyGlobalClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyGlobalClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*neptune.ModifyGlobalClusterOutput)
+	return ret0, ret1
+}
+
+// ModifyGlobalClusterRequest indicates an expected call of ModifyGlobalClusterRequest
+func (mr *MockNeptuneAPIMockRecorder) ModifyGlobalClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyGlobalClusterRequest", reflect.TypeOf((*MockNeptuneAPI)(nil).ModifyGlobalClusterRequest), arg0)
+}
+
+// ModifyGlobalClusterWithContext mocks base method
+func (m *MockNeptuneAPI) ModifyGlobalClusterWithContext(arg0 context.Context, arg1 *neptune.ModifyGlobalClusterInput, arg2 ...request.Option) (*neptune.ModifyGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyGlobalClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*neptune.ModifyGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyGlobalClusterWithContext indicates an expected call of ModifyGlobalClusterWithContext
+func (mr *MockNeptuneAPIMockRecorder) ModifyGlobalClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyGlobalClusterWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).ModifyGlobalClusterWithContext), varargs...)
+}
+
 // PromoteReadReplicaDBCluster mocks base method
 func (m *MockNeptuneAPI) PromoteReadReplicaDBCluster(arg0 *neptune.PromoteReadReplicaDBClusterInput) (*neptune.PromoteReadReplicaDBClusterOutput, error) {
 	m.ctrl.T.Helper()
@@ -3228,6 +3478,56 @@ func (mr *MockNeptuneAPIMockRecorder) RebootDBInstanceWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebootDBInstanceWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).RebootDBInstanceWithContext), varargs...)
+}
+
+// RemoveFromGlobalCluster mocks base method
+func (m *MockNeptuneAPI) RemoveFromGlobalCluster(arg0 *neptune.RemoveFromGlobalClusterInput) (*neptune.RemoveFromGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveFromGlobalCluster", arg0)
+	ret0, _ := ret[0].(*neptune.RemoveFromGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveFromGlobalCluster indicates an expected call of RemoveFromGlobalCluster
+func (mr *MockNeptuneAPIMockRecorder) RemoveFromGlobalCluster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveFromGlobalCluster", reflect.TypeOf((*MockNeptuneAPI)(nil).RemoveFromGlobalCluster), arg0)
+}
+
+// RemoveFromGlobalClusterRequest mocks base method
+func (m *MockNeptuneAPI) RemoveFromGlobalClusterRequest(arg0 *neptune.RemoveFromGlobalClusterInput) (*request.Request, *neptune.RemoveFromGlobalClusterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveFromGlobalClusterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*neptune.RemoveFromGlobalClusterOutput)
+	return ret0, ret1
+}
+
+// RemoveFromGlobalClusterRequest indicates an expected call of RemoveFromGlobalClusterRequest
+func (mr *MockNeptuneAPIMockRecorder) RemoveFromGlobalClusterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveFromGlobalClusterRequest", reflect.TypeOf((*MockNeptuneAPI)(nil).RemoveFromGlobalClusterRequest), arg0)
+}
+
+// RemoveFromGlobalClusterWithContext mocks base method
+func (m *MockNeptuneAPI) RemoveFromGlobalClusterWithContext(arg0 context.Context, arg1 *neptune.RemoveFromGlobalClusterInput, arg2 ...request.Option) (*neptune.RemoveFromGlobalClusterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveFromGlobalClusterWithContext", varargs...)
+	ret0, _ := ret[0].(*neptune.RemoveFromGlobalClusterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveFromGlobalClusterWithContext indicates an expected call of RemoveFromGlobalClusterWithContext
+func (mr *MockNeptuneAPIMockRecorder) RemoveFromGlobalClusterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveFromGlobalClusterWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).RemoveFromGlobalClusterWithContext), varargs...)
 }
 
 // RemoveRoleFromDBCluster mocks base method

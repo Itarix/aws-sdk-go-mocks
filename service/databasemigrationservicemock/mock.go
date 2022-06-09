@@ -285,6 +285,56 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) CreateEventSubscriptionWi
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEventSubscriptionWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).CreateEventSubscriptionWithContext), varargs...)
 }
 
+// CreateFleetAdvisorCollector mocks base method
+func (m *MockDatabaseMigrationServiceAPI) CreateFleetAdvisorCollector(arg0 *databasemigrationservice.CreateFleetAdvisorCollectorInput) (*databasemigrationservice.CreateFleetAdvisorCollectorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFleetAdvisorCollector", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.CreateFleetAdvisorCollectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFleetAdvisorCollector indicates an expected call of CreateFleetAdvisorCollector
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) CreateFleetAdvisorCollector(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFleetAdvisorCollector", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).CreateFleetAdvisorCollector), arg0)
+}
+
+// CreateFleetAdvisorCollectorRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) CreateFleetAdvisorCollectorRequest(arg0 *databasemigrationservice.CreateFleetAdvisorCollectorInput) (*request.Request, *databasemigrationservice.CreateFleetAdvisorCollectorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFleetAdvisorCollectorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.CreateFleetAdvisorCollectorOutput)
+	return ret0, ret1
+}
+
+// CreateFleetAdvisorCollectorRequest indicates an expected call of CreateFleetAdvisorCollectorRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) CreateFleetAdvisorCollectorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFleetAdvisorCollectorRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).CreateFleetAdvisorCollectorRequest), arg0)
+}
+
+// CreateFleetAdvisorCollectorWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) CreateFleetAdvisorCollectorWithContext(arg0 context.Context, arg1 *databasemigrationservice.CreateFleetAdvisorCollectorInput, arg2 ...request.Option) (*databasemigrationservice.CreateFleetAdvisorCollectorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFleetAdvisorCollectorWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.CreateFleetAdvisorCollectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFleetAdvisorCollectorWithContext indicates an expected call of CreateFleetAdvisorCollectorWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) CreateFleetAdvisorCollectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFleetAdvisorCollectorWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).CreateFleetAdvisorCollectorWithContext), varargs...)
+}
+
 // CreateReplicationInstance mocks base method
 func (m *MockDatabaseMigrationServiceAPI) CreateReplicationInstance(arg0 *databasemigrationservice.CreateReplicationInstanceInput) (*databasemigrationservice.CreateReplicationInstanceOutput, error) {
 	m.ctrl.T.Helper()
@@ -633,6 +683,106 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteEventSubscriptionWi
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventSubscriptionWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteEventSubscriptionWithContext), varargs...)
+}
+
+// DeleteFleetAdvisorCollector mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DeleteFleetAdvisorCollector(arg0 *databasemigrationservice.DeleteFleetAdvisorCollectorInput) (*databasemigrationservice.DeleteFleetAdvisorCollectorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFleetAdvisorCollector", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.DeleteFleetAdvisorCollectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFleetAdvisorCollector indicates an expected call of DeleteFleetAdvisorCollector
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteFleetAdvisorCollector(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFleetAdvisorCollector", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteFleetAdvisorCollector), arg0)
+}
+
+// DeleteFleetAdvisorCollectorRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DeleteFleetAdvisorCollectorRequest(arg0 *databasemigrationservice.DeleteFleetAdvisorCollectorInput) (*request.Request, *databasemigrationservice.DeleteFleetAdvisorCollectorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFleetAdvisorCollectorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.DeleteFleetAdvisorCollectorOutput)
+	return ret0, ret1
+}
+
+// DeleteFleetAdvisorCollectorRequest indicates an expected call of DeleteFleetAdvisorCollectorRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteFleetAdvisorCollectorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFleetAdvisorCollectorRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteFleetAdvisorCollectorRequest), arg0)
+}
+
+// DeleteFleetAdvisorCollectorWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DeleteFleetAdvisorCollectorWithContext(arg0 context.Context, arg1 *databasemigrationservice.DeleteFleetAdvisorCollectorInput, arg2 ...request.Option) (*databasemigrationservice.DeleteFleetAdvisorCollectorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFleetAdvisorCollectorWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.DeleteFleetAdvisorCollectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFleetAdvisorCollectorWithContext indicates an expected call of DeleteFleetAdvisorCollectorWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteFleetAdvisorCollectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFleetAdvisorCollectorWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteFleetAdvisorCollectorWithContext), varargs...)
+}
+
+// DeleteFleetAdvisorDatabases mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DeleteFleetAdvisorDatabases(arg0 *databasemigrationservice.DeleteFleetAdvisorDatabasesInput) (*databasemigrationservice.DeleteFleetAdvisorDatabasesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFleetAdvisorDatabases", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.DeleteFleetAdvisorDatabasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFleetAdvisorDatabases indicates an expected call of DeleteFleetAdvisorDatabases
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteFleetAdvisorDatabases(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFleetAdvisorDatabases", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteFleetAdvisorDatabases), arg0)
+}
+
+// DeleteFleetAdvisorDatabasesRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DeleteFleetAdvisorDatabasesRequest(arg0 *databasemigrationservice.DeleteFleetAdvisorDatabasesInput) (*request.Request, *databasemigrationservice.DeleteFleetAdvisorDatabasesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFleetAdvisorDatabasesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.DeleteFleetAdvisorDatabasesOutput)
+	return ret0, ret1
+}
+
+// DeleteFleetAdvisorDatabasesRequest indicates an expected call of DeleteFleetAdvisorDatabasesRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteFleetAdvisorDatabasesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFleetAdvisorDatabasesRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteFleetAdvisorDatabasesRequest), arg0)
+}
+
+// DeleteFleetAdvisorDatabasesWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DeleteFleetAdvisorDatabasesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DeleteFleetAdvisorDatabasesInput, arg2 ...request.Option) (*databasemigrationservice.DeleteFleetAdvisorDatabasesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFleetAdvisorDatabasesWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.DeleteFleetAdvisorDatabasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFleetAdvisorDatabasesWithContext indicates an expected call of DeleteFleetAdvisorDatabasesWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteFleetAdvisorDatabasesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFleetAdvisorDatabasesWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteFleetAdvisorDatabasesWithContext), varargs...)
 }
 
 // DeleteReplicationInstance mocks base method
@@ -1597,6 +1747,421 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEventsWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeEventsWithContext), varargs...)
+}
+
+// DescribeFleetAdvisorCollectors mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorCollectors(arg0 *databasemigrationservice.DescribeFleetAdvisorCollectorsInput) (*databasemigrationservice.DescribeFleetAdvisorCollectorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorCollectors", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeFleetAdvisorCollectorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorCollectors indicates an expected call of DescribeFleetAdvisorCollectors
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorCollectors(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorCollectors", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorCollectors), arg0)
+}
+
+// DescribeFleetAdvisorCollectorsPages mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorCollectorsPages(arg0 *databasemigrationservice.DescribeFleetAdvisorCollectorsInput, arg1 func(*databasemigrationservice.DescribeFleetAdvisorCollectorsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorCollectorsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetAdvisorCollectorsPages indicates an expected call of DescribeFleetAdvisorCollectorsPages
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorCollectorsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorCollectorsPages", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorCollectorsPages), arg0, arg1)
+}
+
+// DescribeFleetAdvisorCollectorsPagesWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorCollectorsPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeFleetAdvisorCollectorsInput, arg2 func(*databasemigrationservice.DescribeFleetAdvisorCollectorsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorCollectorsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetAdvisorCollectorsPagesWithContext indicates an expected call of DescribeFleetAdvisorCollectorsPagesWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorCollectorsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorCollectorsPagesWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorCollectorsPagesWithContext), varargs...)
+}
+
+// DescribeFleetAdvisorCollectorsRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorCollectorsRequest(arg0 *databasemigrationservice.DescribeFleetAdvisorCollectorsInput) (*request.Request, *databasemigrationservice.DescribeFleetAdvisorCollectorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorCollectorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.DescribeFleetAdvisorCollectorsOutput)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorCollectorsRequest indicates an expected call of DescribeFleetAdvisorCollectorsRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorCollectorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorCollectorsRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorCollectorsRequest), arg0)
+}
+
+// DescribeFleetAdvisorCollectorsWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorCollectorsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeFleetAdvisorCollectorsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeFleetAdvisorCollectorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorCollectorsWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeFleetAdvisorCollectorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorCollectorsWithContext indicates an expected call of DescribeFleetAdvisorCollectorsWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorCollectorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorCollectorsWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorCollectorsWithContext), varargs...)
+}
+
+// DescribeFleetAdvisorDatabases mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorDatabases(arg0 *databasemigrationservice.DescribeFleetAdvisorDatabasesInput) (*databasemigrationservice.DescribeFleetAdvisorDatabasesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorDatabases", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeFleetAdvisorDatabasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorDatabases indicates an expected call of DescribeFleetAdvisorDatabases
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorDatabases(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorDatabases", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorDatabases), arg0)
+}
+
+// DescribeFleetAdvisorDatabasesPages mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorDatabasesPages(arg0 *databasemigrationservice.DescribeFleetAdvisorDatabasesInput, arg1 func(*databasemigrationservice.DescribeFleetAdvisorDatabasesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorDatabasesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetAdvisorDatabasesPages indicates an expected call of DescribeFleetAdvisorDatabasesPages
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorDatabasesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorDatabasesPages", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorDatabasesPages), arg0, arg1)
+}
+
+// DescribeFleetAdvisorDatabasesPagesWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorDatabasesPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeFleetAdvisorDatabasesInput, arg2 func(*databasemigrationservice.DescribeFleetAdvisorDatabasesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorDatabasesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetAdvisorDatabasesPagesWithContext indicates an expected call of DescribeFleetAdvisorDatabasesPagesWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorDatabasesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorDatabasesPagesWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorDatabasesPagesWithContext), varargs...)
+}
+
+// DescribeFleetAdvisorDatabasesRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorDatabasesRequest(arg0 *databasemigrationservice.DescribeFleetAdvisorDatabasesInput) (*request.Request, *databasemigrationservice.DescribeFleetAdvisorDatabasesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorDatabasesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.DescribeFleetAdvisorDatabasesOutput)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorDatabasesRequest indicates an expected call of DescribeFleetAdvisorDatabasesRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorDatabasesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorDatabasesRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorDatabasesRequest), arg0)
+}
+
+// DescribeFleetAdvisorDatabasesWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorDatabasesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeFleetAdvisorDatabasesInput, arg2 ...request.Option) (*databasemigrationservice.DescribeFleetAdvisorDatabasesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorDatabasesWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeFleetAdvisorDatabasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorDatabasesWithContext indicates an expected call of DescribeFleetAdvisorDatabasesWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorDatabasesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorDatabasesWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorDatabasesWithContext), varargs...)
+}
+
+// DescribeFleetAdvisorLsaAnalysis mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorLsaAnalysis(arg0 *databasemigrationservice.DescribeFleetAdvisorLsaAnalysisInput) (*databasemigrationservice.DescribeFleetAdvisorLsaAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorLsaAnalysis", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeFleetAdvisorLsaAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorLsaAnalysis indicates an expected call of DescribeFleetAdvisorLsaAnalysis
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorLsaAnalysis(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorLsaAnalysis", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorLsaAnalysis), arg0)
+}
+
+// DescribeFleetAdvisorLsaAnalysisPages mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorLsaAnalysisPages(arg0 *databasemigrationservice.DescribeFleetAdvisorLsaAnalysisInput, arg1 func(*databasemigrationservice.DescribeFleetAdvisorLsaAnalysisOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorLsaAnalysisPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetAdvisorLsaAnalysisPages indicates an expected call of DescribeFleetAdvisorLsaAnalysisPages
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorLsaAnalysisPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorLsaAnalysisPages", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorLsaAnalysisPages), arg0, arg1)
+}
+
+// DescribeFleetAdvisorLsaAnalysisPagesWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorLsaAnalysisPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeFleetAdvisorLsaAnalysisInput, arg2 func(*databasemigrationservice.DescribeFleetAdvisorLsaAnalysisOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorLsaAnalysisPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetAdvisorLsaAnalysisPagesWithContext indicates an expected call of DescribeFleetAdvisorLsaAnalysisPagesWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorLsaAnalysisPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorLsaAnalysisPagesWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorLsaAnalysisPagesWithContext), varargs...)
+}
+
+// DescribeFleetAdvisorLsaAnalysisRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorLsaAnalysisRequest(arg0 *databasemigrationservice.DescribeFleetAdvisorLsaAnalysisInput) (*request.Request, *databasemigrationservice.DescribeFleetAdvisorLsaAnalysisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorLsaAnalysisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.DescribeFleetAdvisorLsaAnalysisOutput)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorLsaAnalysisRequest indicates an expected call of DescribeFleetAdvisorLsaAnalysisRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorLsaAnalysisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorLsaAnalysisRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorLsaAnalysisRequest), arg0)
+}
+
+// DescribeFleetAdvisorLsaAnalysisWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorLsaAnalysisWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeFleetAdvisorLsaAnalysisInput, arg2 ...request.Option) (*databasemigrationservice.DescribeFleetAdvisorLsaAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorLsaAnalysisWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeFleetAdvisorLsaAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorLsaAnalysisWithContext indicates an expected call of DescribeFleetAdvisorLsaAnalysisWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorLsaAnalysisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorLsaAnalysisWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorLsaAnalysisWithContext), varargs...)
+}
+
+// DescribeFleetAdvisorSchemaObjectSummary mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorSchemaObjectSummary(arg0 *databasemigrationservice.DescribeFleetAdvisorSchemaObjectSummaryInput) (*databasemigrationservice.DescribeFleetAdvisorSchemaObjectSummaryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorSchemaObjectSummary", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeFleetAdvisorSchemaObjectSummaryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorSchemaObjectSummary indicates an expected call of DescribeFleetAdvisorSchemaObjectSummary
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorSchemaObjectSummary(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorSchemaObjectSummary", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorSchemaObjectSummary), arg0)
+}
+
+// DescribeFleetAdvisorSchemaObjectSummaryPages mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorSchemaObjectSummaryPages(arg0 *databasemigrationservice.DescribeFleetAdvisorSchemaObjectSummaryInput, arg1 func(*databasemigrationservice.DescribeFleetAdvisorSchemaObjectSummaryOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorSchemaObjectSummaryPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetAdvisorSchemaObjectSummaryPages indicates an expected call of DescribeFleetAdvisorSchemaObjectSummaryPages
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorSchemaObjectSummaryPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorSchemaObjectSummaryPages", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorSchemaObjectSummaryPages), arg0, arg1)
+}
+
+// DescribeFleetAdvisorSchemaObjectSummaryPagesWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorSchemaObjectSummaryPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeFleetAdvisorSchemaObjectSummaryInput, arg2 func(*databasemigrationservice.DescribeFleetAdvisorSchemaObjectSummaryOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorSchemaObjectSummaryPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetAdvisorSchemaObjectSummaryPagesWithContext indicates an expected call of DescribeFleetAdvisorSchemaObjectSummaryPagesWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorSchemaObjectSummaryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorSchemaObjectSummaryPagesWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorSchemaObjectSummaryPagesWithContext), varargs...)
+}
+
+// DescribeFleetAdvisorSchemaObjectSummaryRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorSchemaObjectSummaryRequest(arg0 *databasemigrationservice.DescribeFleetAdvisorSchemaObjectSummaryInput) (*request.Request, *databasemigrationservice.DescribeFleetAdvisorSchemaObjectSummaryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorSchemaObjectSummaryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.DescribeFleetAdvisorSchemaObjectSummaryOutput)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorSchemaObjectSummaryRequest indicates an expected call of DescribeFleetAdvisorSchemaObjectSummaryRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorSchemaObjectSummaryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorSchemaObjectSummaryRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorSchemaObjectSummaryRequest), arg0)
+}
+
+// DescribeFleetAdvisorSchemaObjectSummaryWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorSchemaObjectSummaryWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeFleetAdvisorSchemaObjectSummaryInput, arg2 ...request.Option) (*databasemigrationservice.DescribeFleetAdvisorSchemaObjectSummaryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorSchemaObjectSummaryWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeFleetAdvisorSchemaObjectSummaryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorSchemaObjectSummaryWithContext indicates an expected call of DescribeFleetAdvisorSchemaObjectSummaryWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorSchemaObjectSummaryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorSchemaObjectSummaryWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorSchemaObjectSummaryWithContext), varargs...)
+}
+
+// DescribeFleetAdvisorSchemas mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorSchemas(arg0 *databasemigrationservice.DescribeFleetAdvisorSchemasInput) (*databasemigrationservice.DescribeFleetAdvisorSchemasOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorSchemas", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeFleetAdvisorSchemasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorSchemas indicates an expected call of DescribeFleetAdvisorSchemas
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorSchemas(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorSchemas", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorSchemas), arg0)
+}
+
+// DescribeFleetAdvisorSchemasPages mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorSchemasPages(arg0 *databasemigrationservice.DescribeFleetAdvisorSchemasInput, arg1 func(*databasemigrationservice.DescribeFleetAdvisorSchemasOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorSchemasPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetAdvisorSchemasPages indicates an expected call of DescribeFleetAdvisorSchemasPages
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorSchemasPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorSchemasPages", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorSchemasPages), arg0, arg1)
+}
+
+// DescribeFleetAdvisorSchemasPagesWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorSchemasPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeFleetAdvisorSchemasInput, arg2 func(*databasemigrationservice.DescribeFleetAdvisorSchemasOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorSchemasPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFleetAdvisorSchemasPagesWithContext indicates an expected call of DescribeFleetAdvisorSchemasPagesWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorSchemasPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorSchemasPagesWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorSchemasPagesWithContext), varargs...)
+}
+
+// DescribeFleetAdvisorSchemasRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorSchemasRequest(arg0 *databasemigrationservice.DescribeFleetAdvisorSchemasInput) (*request.Request, *databasemigrationservice.DescribeFleetAdvisorSchemasOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorSchemasRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.DescribeFleetAdvisorSchemasOutput)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorSchemasRequest indicates an expected call of DescribeFleetAdvisorSchemasRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorSchemasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorSchemasRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorSchemasRequest), arg0)
+}
+
+// DescribeFleetAdvisorSchemasWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeFleetAdvisorSchemasWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeFleetAdvisorSchemasInput, arg2 ...request.Option) (*databasemigrationservice.DescribeFleetAdvisorSchemasOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFleetAdvisorSchemasWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeFleetAdvisorSchemasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFleetAdvisorSchemasWithContext indicates an expected call of DescribeFleetAdvisorSchemasWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeFleetAdvisorSchemasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFleetAdvisorSchemasWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeFleetAdvisorSchemasWithContext), varargs...)
 }
 
 // DescribeOrderableReplicationInstances mocks base method
@@ -3160,6 +3725,56 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) RemoveTagsFromResourceWit
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsFromResourceWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).RemoveTagsFromResourceWithContext), varargs...)
+}
+
+// RunFleetAdvisorLsaAnalysis mocks base method
+func (m *MockDatabaseMigrationServiceAPI) RunFleetAdvisorLsaAnalysis(arg0 *databasemigrationservice.RunFleetAdvisorLsaAnalysisInput) (*databasemigrationservice.RunFleetAdvisorLsaAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RunFleetAdvisorLsaAnalysis", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.RunFleetAdvisorLsaAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RunFleetAdvisorLsaAnalysis indicates an expected call of RunFleetAdvisorLsaAnalysis
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) RunFleetAdvisorLsaAnalysis(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RunFleetAdvisorLsaAnalysis", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).RunFleetAdvisorLsaAnalysis), arg0)
+}
+
+// RunFleetAdvisorLsaAnalysisRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) RunFleetAdvisorLsaAnalysisRequest(arg0 *databasemigrationservice.RunFleetAdvisorLsaAnalysisInput) (*request.Request, *databasemigrationservice.RunFleetAdvisorLsaAnalysisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RunFleetAdvisorLsaAnalysisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.RunFleetAdvisorLsaAnalysisOutput)
+	return ret0, ret1
+}
+
+// RunFleetAdvisorLsaAnalysisRequest indicates an expected call of RunFleetAdvisorLsaAnalysisRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) RunFleetAdvisorLsaAnalysisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RunFleetAdvisorLsaAnalysisRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).RunFleetAdvisorLsaAnalysisRequest), arg0)
+}
+
+// RunFleetAdvisorLsaAnalysisWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) RunFleetAdvisorLsaAnalysisWithContext(arg0 context.Context, arg1 *databasemigrationservice.RunFleetAdvisorLsaAnalysisInput, arg2 ...request.Option) (*databasemigrationservice.RunFleetAdvisorLsaAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RunFleetAdvisorLsaAnalysisWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.RunFleetAdvisorLsaAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RunFleetAdvisorLsaAnalysisWithContext indicates an expected call of RunFleetAdvisorLsaAnalysisWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) RunFleetAdvisorLsaAnalysisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RunFleetAdvisorLsaAnalysisWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).RunFleetAdvisorLsaAnalysisWithContext), varargs...)
 }
 
 // StartReplicationTask mocks base method

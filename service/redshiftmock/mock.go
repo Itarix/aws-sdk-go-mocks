@@ -5325,6 +5325,56 @@ func (mr *MockRedshiftAPIMockRecorder) GetClusterCredentialsWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClusterCredentialsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).GetClusterCredentialsWithContext), varargs...)
 }
 
+// GetClusterCredentialsWithIAM mocks base method
+func (m *MockRedshiftAPI) GetClusterCredentialsWithIAM(arg0 *redshift.GetClusterCredentialsWithIAMInput) (*redshift.GetClusterCredentialsWithIAMOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetClusterCredentialsWithIAM", arg0)
+	ret0, _ := ret[0].(*redshift.GetClusterCredentialsWithIAMOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetClusterCredentialsWithIAM indicates an expected call of GetClusterCredentialsWithIAM
+func (mr *MockRedshiftAPIMockRecorder) GetClusterCredentialsWithIAM(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClusterCredentialsWithIAM", reflect.TypeOf((*MockRedshiftAPI)(nil).GetClusterCredentialsWithIAM), arg0)
+}
+
+// GetClusterCredentialsWithIAMRequest mocks base method
+func (m *MockRedshiftAPI) GetClusterCredentialsWithIAMRequest(arg0 *redshift.GetClusterCredentialsWithIAMInput) (*request.Request, *redshift.GetClusterCredentialsWithIAMOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetClusterCredentialsWithIAMRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.GetClusterCredentialsWithIAMOutput)
+	return ret0, ret1
+}
+
+// GetClusterCredentialsWithIAMRequest indicates an expected call of GetClusterCredentialsWithIAMRequest
+func (mr *MockRedshiftAPIMockRecorder) GetClusterCredentialsWithIAMRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClusterCredentialsWithIAMRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).GetClusterCredentialsWithIAMRequest), arg0)
+}
+
+// GetClusterCredentialsWithIAMWithContext mocks base method
+func (m *MockRedshiftAPI) GetClusterCredentialsWithIAMWithContext(arg0 context.Context, arg1 *redshift.GetClusterCredentialsWithIAMInput, arg2 ...request.Option) (*redshift.GetClusterCredentialsWithIAMOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetClusterCredentialsWithIAMWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.GetClusterCredentialsWithIAMOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetClusterCredentialsWithIAMWithContext indicates an expected call of GetClusterCredentialsWithIAMWithContext
+func (mr *MockRedshiftAPIMockRecorder) GetClusterCredentialsWithIAMWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClusterCredentialsWithIAMWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).GetClusterCredentialsWithIAMWithContext), varargs...)
+}
+
 // GetReservedNodeExchangeConfigurationOptions mocks base method
 func (m *MockRedshiftAPI) GetReservedNodeExchangeConfigurationOptions(arg0 *redshift.GetReservedNodeExchangeConfigurationOptionsInput) (*redshift.GetReservedNodeExchangeConfigurationOptionsOutput, error) {
 	m.ctrl.T.Helper()
