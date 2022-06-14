@@ -385,6 +385,56 @@ func (mr *MockOutpostsAPIMockRecorder) GetCatalogItemWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCatalogItemWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).GetCatalogItemWithContext), varargs...)
 }
 
+// GetConnection mocks base method
+func (m *MockOutpostsAPI) GetConnection(arg0 *outposts.GetConnectionInput) (*outposts.GetConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnection", arg0)
+	ret0, _ := ret[0].(*outposts.GetConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnection indicates an expected call of GetConnection
+func (mr *MockOutpostsAPIMockRecorder) GetConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnection", reflect.TypeOf((*MockOutpostsAPI)(nil).GetConnection), arg0)
+}
+
+// GetConnectionRequest mocks base method
+func (m *MockOutpostsAPI) GetConnectionRequest(arg0 *outposts.GetConnectionInput) (*request.Request, *outposts.GetConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.GetConnectionOutput)
+	return ret0, ret1
+}
+
+// GetConnectionRequest indicates an expected call of GetConnectionRequest
+func (mr *MockOutpostsAPIMockRecorder) GetConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectionRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).GetConnectionRequest), arg0)
+}
+
+// GetConnectionWithContext mocks base method
+func (m *MockOutpostsAPI) GetConnectionWithContext(arg0 context.Context, arg1 *outposts.GetConnectionInput, arg2 ...request.Option) (*outposts.GetConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.GetConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConnectionWithContext indicates an expected call of GetConnectionWithContext
+func (mr *MockOutpostsAPIMockRecorder) GetConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConnectionWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).GetConnectionWithContext), varargs...)
+}
+
 // GetOrder mocks base method
 func (m *MockOutpostsAPI) GetOrder(arg0 *outposts.GetOrderInput) (*outposts.GetOrderOutput, error) {
 	m.ctrl.T.Helper()
@@ -1131,6 +1181,56 @@ func (mr *MockOutpostsAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// StartConnection mocks base method
+func (m *MockOutpostsAPI) StartConnection(arg0 *outposts.StartConnectionInput) (*outposts.StartConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartConnection", arg0)
+	ret0, _ := ret[0].(*outposts.StartConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartConnection indicates an expected call of StartConnection
+func (mr *MockOutpostsAPIMockRecorder) StartConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartConnection", reflect.TypeOf((*MockOutpostsAPI)(nil).StartConnection), arg0)
+}
+
+// StartConnectionRequest mocks base method
+func (m *MockOutpostsAPI) StartConnectionRequest(arg0 *outposts.StartConnectionInput) (*request.Request, *outposts.StartConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*outposts.StartConnectionOutput)
+	return ret0, ret1
+}
+
+// StartConnectionRequest indicates an expected call of StartConnectionRequest
+func (mr *MockOutpostsAPIMockRecorder) StartConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartConnectionRequest", reflect.TypeOf((*MockOutpostsAPI)(nil).StartConnectionRequest), arg0)
+}
+
+// StartConnectionWithContext mocks base method
+func (m *MockOutpostsAPI) StartConnectionWithContext(arg0 context.Context, arg1 *outposts.StartConnectionInput, arg2 ...request.Option) (*outposts.StartConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*outposts.StartConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartConnectionWithContext indicates an expected call of StartConnectionWithContext
+func (mr *MockOutpostsAPIMockRecorder) StartConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartConnectionWithContext", reflect.TypeOf((*MockOutpostsAPI)(nil).StartConnectionWithContext), varargs...)
 }
 
 // TagResource mocks base method
