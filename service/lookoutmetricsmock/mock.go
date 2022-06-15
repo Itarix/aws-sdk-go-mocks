@@ -1599,6 +1599,56 @@ func (mr *MockLookoutMetricsAPIMockRecorder) UntagResourceWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
+// UpdateAlert mocks base method
+func (m *MockLookoutMetricsAPI) UpdateAlert(arg0 *lookoutmetrics.UpdateAlertInput) (*lookoutmetrics.UpdateAlertOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAlert", arg0)
+	ret0, _ := ret[0].(*lookoutmetrics.UpdateAlertOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAlert indicates an expected call of UpdateAlert
+func (mr *MockLookoutMetricsAPIMockRecorder) UpdateAlert(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAlert", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).UpdateAlert), arg0)
+}
+
+// UpdateAlertRequest mocks base method
+func (m *MockLookoutMetricsAPI) UpdateAlertRequest(arg0 *lookoutmetrics.UpdateAlertInput) (*request.Request, *lookoutmetrics.UpdateAlertOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAlertRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutmetrics.UpdateAlertOutput)
+	return ret0, ret1
+}
+
+// UpdateAlertRequest indicates an expected call of UpdateAlertRequest
+func (mr *MockLookoutMetricsAPIMockRecorder) UpdateAlertRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAlertRequest", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).UpdateAlertRequest), arg0)
+}
+
+// UpdateAlertWithContext mocks base method
+func (m *MockLookoutMetricsAPI) UpdateAlertWithContext(arg0 context.Context, arg1 *lookoutmetrics.UpdateAlertInput, arg2 ...request.Option) (*lookoutmetrics.UpdateAlertOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAlertWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutmetrics.UpdateAlertOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAlertWithContext indicates an expected call of UpdateAlertWithContext
+func (mr *MockLookoutMetricsAPIMockRecorder) UpdateAlertWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAlertWithContext", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).UpdateAlertWithContext), varargs...)
+}
+
 // UpdateAnomalyDetector mocks base method
 func (m *MockLookoutMetricsAPI) UpdateAnomalyDetector(arg0 *lookoutmetrics.UpdateAnomalyDetectorInput) (*lookoutmetrics.UpdateAnomalyDetectorOutput, error) {
 	m.ctrl.T.Helper()
