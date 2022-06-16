@@ -849,6 +849,89 @@ func (mr *MockAppRegistryAPIMockRecorder) ListAttributeGroups(arg0 interface{}) 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttributeGroups", reflect.TypeOf((*MockAppRegistryAPI)(nil).ListAttributeGroups), arg0)
 }
 
+// ListAttributeGroupsForApplication mocks base method
+func (m *MockAppRegistryAPI) ListAttributeGroupsForApplication(arg0 *appregistry.ListAttributeGroupsForApplicationInput) (*appregistry.ListAttributeGroupsForApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAttributeGroupsForApplication", arg0)
+	ret0, _ := ret[0].(*appregistry.ListAttributeGroupsForApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAttributeGroupsForApplication indicates an expected call of ListAttributeGroupsForApplication
+func (mr *MockAppRegistryAPIMockRecorder) ListAttributeGroupsForApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttributeGroupsForApplication", reflect.TypeOf((*MockAppRegistryAPI)(nil).ListAttributeGroupsForApplication), arg0)
+}
+
+// ListAttributeGroupsForApplicationPages mocks base method
+func (m *MockAppRegistryAPI) ListAttributeGroupsForApplicationPages(arg0 *appregistry.ListAttributeGroupsForApplicationInput, arg1 func(*appregistry.ListAttributeGroupsForApplicationOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAttributeGroupsForApplicationPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAttributeGroupsForApplicationPages indicates an expected call of ListAttributeGroupsForApplicationPages
+func (mr *MockAppRegistryAPIMockRecorder) ListAttributeGroupsForApplicationPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttributeGroupsForApplicationPages", reflect.TypeOf((*MockAppRegistryAPI)(nil).ListAttributeGroupsForApplicationPages), arg0, arg1)
+}
+
+// ListAttributeGroupsForApplicationPagesWithContext mocks base method
+func (m *MockAppRegistryAPI) ListAttributeGroupsForApplicationPagesWithContext(arg0 context.Context, arg1 *appregistry.ListAttributeGroupsForApplicationInput, arg2 func(*appregistry.ListAttributeGroupsForApplicationOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAttributeGroupsForApplicationPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAttributeGroupsForApplicationPagesWithContext indicates an expected call of ListAttributeGroupsForApplicationPagesWithContext
+func (mr *MockAppRegistryAPIMockRecorder) ListAttributeGroupsForApplicationPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttributeGroupsForApplicationPagesWithContext", reflect.TypeOf((*MockAppRegistryAPI)(nil).ListAttributeGroupsForApplicationPagesWithContext), varargs...)
+}
+
+// ListAttributeGroupsForApplicationRequest mocks base method
+func (m *MockAppRegistryAPI) ListAttributeGroupsForApplicationRequest(arg0 *appregistry.ListAttributeGroupsForApplicationInput) (*request.Request, *appregistry.ListAttributeGroupsForApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAttributeGroupsForApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appregistry.ListAttributeGroupsForApplicationOutput)
+	return ret0, ret1
+}
+
+// ListAttributeGroupsForApplicationRequest indicates an expected call of ListAttributeGroupsForApplicationRequest
+func (mr *MockAppRegistryAPIMockRecorder) ListAttributeGroupsForApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttributeGroupsForApplicationRequest", reflect.TypeOf((*MockAppRegistryAPI)(nil).ListAttributeGroupsForApplicationRequest), arg0)
+}
+
+// ListAttributeGroupsForApplicationWithContext mocks base method
+func (m *MockAppRegistryAPI) ListAttributeGroupsForApplicationWithContext(arg0 context.Context, arg1 *appregistry.ListAttributeGroupsForApplicationInput, arg2 ...request.Option) (*appregistry.ListAttributeGroupsForApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAttributeGroupsForApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*appregistry.ListAttributeGroupsForApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAttributeGroupsForApplicationWithContext indicates an expected call of ListAttributeGroupsForApplicationWithContext
+func (mr *MockAppRegistryAPIMockRecorder) ListAttributeGroupsForApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAttributeGroupsForApplicationWithContext", reflect.TypeOf((*MockAppRegistryAPI)(nil).ListAttributeGroupsForApplicationWithContext), varargs...)
+}
+
 // ListAttributeGroupsPages mocks base method
 func (m *MockAppRegistryAPI) ListAttributeGroupsPages(arg0 *appregistry.ListAttributeGroupsInput, arg1 func(*appregistry.ListAttributeGroupsOutput, bool) bool) error {
 	m.ctrl.T.Helper()

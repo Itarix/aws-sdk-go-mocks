@@ -35,6 +35,56 @@ func (m *MockGuardDutyAPI) EXPECT() *MockGuardDutyAPIMockRecorder {
 	return m.recorder
 }
 
+// AcceptAdministratorInvitation mocks base method
+func (m *MockGuardDutyAPI) AcceptAdministratorInvitation(arg0 *guardduty.AcceptAdministratorInvitationInput) (*guardduty.AcceptAdministratorInvitationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AcceptAdministratorInvitation", arg0)
+	ret0, _ := ret[0].(*guardduty.AcceptAdministratorInvitationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AcceptAdministratorInvitation indicates an expected call of AcceptAdministratorInvitation
+func (mr *MockGuardDutyAPIMockRecorder) AcceptAdministratorInvitation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptAdministratorInvitation", reflect.TypeOf((*MockGuardDutyAPI)(nil).AcceptAdministratorInvitation), arg0)
+}
+
+// AcceptAdministratorInvitationRequest mocks base method
+func (m *MockGuardDutyAPI) AcceptAdministratorInvitationRequest(arg0 *guardduty.AcceptAdministratorInvitationInput) (*request.Request, *guardduty.AcceptAdministratorInvitationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AcceptAdministratorInvitationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.AcceptAdministratorInvitationOutput)
+	return ret0, ret1
+}
+
+// AcceptAdministratorInvitationRequest indicates an expected call of AcceptAdministratorInvitationRequest
+func (mr *MockGuardDutyAPIMockRecorder) AcceptAdministratorInvitationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptAdministratorInvitationRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).AcceptAdministratorInvitationRequest), arg0)
+}
+
+// AcceptAdministratorInvitationWithContext mocks base method
+func (m *MockGuardDutyAPI) AcceptAdministratorInvitationWithContext(arg0 context.Context, arg1 *guardduty.AcceptAdministratorInvitationInput, arg2 ...request.Option) (*guardduty.AcceptAdministratorInvitationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AcceptAdministratorInvitationWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.AcceptAdministratorInvitationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AcceptAdministratorInvitationWithContext indicates an expected call of AcceptAdministratorInvitationWithContext
+func (mr *MockGuardDutyAPIMockRecorder) AcceptAdministratorInvitationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptAdministratorInvitationWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).AcceptAdministratorInvitationWithContext), varargs...)
+}
+
 // AcceptInvitation mocks base method
 func (m *MockGuardDutyAPI) AcceptInvitation(arg0 *guardduty.AcceptInvitationInput) (*guardduty.AcceptInvitationOutput, error) {
 	m.ctrl.T.Helper()
@@ -1035,6 +1085,56 @@ func (mr *MockGuardDutyAPIMockRecorder) DisableOrganizationAdminAccountWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableOrganizationAdminAccountWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisableOrganizationAdminAccountWithContext), varargs...)
 }
 
+// DisassociateFromAdministratorAccount mocks base method
+func (m *MockGuardDutyAPI) DisassociateFromAdministratorAccount(arg0 *guardduty.DisassociateFromAdministratorAccountInput) (*guardduty.DisassociateFromAdministratorAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFromAdministratorAccount", arg0)
+	ret0, _ := ret[0].(*guardduty.DisassociateFromAdministratorAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFromAdministratorAccount indicates an expected call of DisassociateFromAdministratorAccount
+func (mr *MockGuardDutyAPIMockRecorder) DisassociateFromAdministratorAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFromAdministratorAccount", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisassociateFromAdministratorAccount), arg0)
+}
+
+// DisassociateFromAdministratorAccountRequest mocks base method
+func (m *MockGuardDutyAPI) DisassociateFromAdministratorAccountRequest(arg0 *guardduty.DisassociateFromAdministratorAccountInput) (*request.Request, *guardduty.DisassociateFromAdministratorAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFromAdministratorAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.DisassociateFromAdministratorAccountOutput)
+	return ret0, ret1
+}
+
+// DisassociateFromAdministratorAccountRequest indicates an expected call of DisassociateFromAdministratorAccountRequest
+func (mr *MockGuardDutyAPIMockRecorder) DisassociateFromAdministratorAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFromAdministratorAccountRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisassociateFromAdministratorAccountRequest), arg0)
+}
+
+// DisassociateFromAdministratorAccountWithContext mocks base method
+func (m *MockGuardDutyAPI) DisassociateFromAdministratorAccountWithContext(arg0 context.Context, arg1 *guardduty.DisassociateFromAdministratorAccountInput, arg2 ...request.Option) (*guardduty.DisassociateFromAdministratorAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateFromAdministratorAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.DisassociateFromAdministratorAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFromAdministratorAccountWithContext indicates an expected call of DisassociateFromAdministratorAccountWithContext
+func (mr *MockGuardDutyAPIMockRecorder) DisassociateFromAdministratorAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFromAdministratorAccountWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DisassociateFromAdministratorAccountWithContext), varargs...)
+}
+
 // DisassociateFromMasterAccount mocks base method
 func (m *MockGuardDutyAPI) DisassociateFromMasterAccount(arg0 *guardduty.DisassociateFromMasterAccountInput) (*guardduty.DisassociateFromMasterAccountOutput, error) {
 	m.ctrl.T.Helper()
@@ -1183,6 +1283,56 @@ func (mr *MockGuardDutyAPIMockRecorder) EnableOrganizationAdminAccountWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableOrganizationAdminAccountWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).EnableOrganizationAdminAccountWithContext), varargs...)
+}
+
+// GetAdministratorAccount mocks base method
+func (m *MockGuardDutyAPI) GetAdministratorAccount(arg0 *guardduty.GetAdministratorAccountInput) (*guardduty.GetAdministratorAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAdministratorAccount", arg0)
+	ret0, _ := ret[0].(*guardduty.GetAdministratorAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAdministratorAccount indicates an expected call of GetAdministratorAccount
+func (mr *MockGuardDutyAPIMockRecorder) GetAdministratorAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdministratorAccount", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetAdministratorAccount), arg0)
+}
+
+// GetAdministratorAccountRequest mocks base method
+func (m *MockGuardDutyAPI) GetAdministratorAccountRequest(arg0 *guardduty.GetAdministratorAccountInput) (*request.Request, *guardduty.GetAdministratorAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAdministratorAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.GetAdministratorAccountOutput)
+	return ret0, ret1
+}
+
+// GetAdministratorAccountRequest indicates an expected call of GetAdministratorAccountRequest
+func (mr *MockGuardDutyAPIMockRecorder) GetAdministratorAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdministratorAccountRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetAdministratorAccountRequest), arg0)
+}
+
+// GetAdministratorAccountWithContext mocks base method
+func (m *MockGuardDutyAPI) GetAdministratorAccountWithContext(arg0 context.Context, arg1 *guardduty.GetAdministratorAccountInput, arg2 ...request.Option) (*guardduty.GetAdministratorAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAdministratorAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.GetAdministratorAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAdministratorAccountWithContext indicates an expected call of GetAdministratorAccountWithContext
+func (mr *MockGuardDutyAPIMockRecorder) GetAdministratorAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdministratorAccountWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetAdministratorAccountWithContext), varargs...)
 }
 
 // GetDetector mocks base method
@@ -1633,6 +1783,56 @@ func (mr *MockGuardDutyAPIMockRecorder) GetMembersWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetMembersWithContext), varargs...)
+}
+
+// GetRemainingFreeTrialDays mocks base method
+func (m *MockGuardDutyAPI) GetRemainingFreeTrialDays(arg0 *guardduty.GetRemainingFreeTrialDaysInput) (*guardduty.GetRemainingFreeTrialDaysOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRemainingFreeTrialDays", arg0)
+	ret0, _ := ret[0].(*guardduty.GetRemainingFreeTrialDaysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRemainingFreeTrialDays indicates an expected call of GetRemainingFreeTrialDays
+func (mr *MockGuardDutyAPIMockRecorder) GetRemainingFreeTrialDays(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRemainingFreeTrialDays", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetRemainingFreeTrialDays), arg0)
+}
+
+// GetRemainingFreeTrialDaysRequest mocks base method
+func (m *MockGuardDutyAPI) GetRemainingFreeTrialDaysRequest(arg0 *guardduty.GetRemainingFreeTrialDaysInput) (*request.Request, *guardduty.GetRemainingFreeTrialDaysOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRemainingFreeTrialDaysRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.GetRemainingFreeTrialDaysOutput)
+	return ret0, ret1
+}
+
+// GetRemainingFreeTrialDaysRequest indicates an expected call of GetRemainingFreeTrialDaysRequest
+func (mr *MockGuardDutyAPIMockRecorder) GetRemainingFreeTrialDaysRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRemainingFreeTrialDaysRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetRemainingFreeTrialDaysRequest), arg0)
+}
+
+// GetRemainingFreeTrialDaysWithContext mocks base method
+func (m *MockGuardDutyAPI) GetRemainingFreeTrialDaysWithContext(arg0 context.Context, arg1 *guardduty.GetRemainingFreeTrialDaysInput, arg2 ...request.Option) (*guardduty.GetRemainingFreeTrialDaysOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRemainingFreeTrialDaysWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.GetRemainingFreeTrialDaysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRemainingFreeTrialDaysWithContext indicates an expected call of GetRemainingFreeTrialDaysWithContext
+func (mr *MockGuardDutyAPIMockRecorder) GetRemainingFreeTrialDaysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRemainingFreeTrialDaysWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetRemainingFreeTrialDaysWithContext), varargs...)
 }
 
 // GetThreatIntelSet mocks base method
