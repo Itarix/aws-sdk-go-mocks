@@ -1518,6 +1518,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeRegionsWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRegionsWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeRegionsWithContext), varargs...)
 }
 
+// DescribeSettings mocks base method
+func (m *MockDirectoryServiceAPI) DescribeSettings(arg0 *directoryservice.DescribeSettingsInput) (*directoryservice.DescribeSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSettings", arg0)
+	ret0, _ := ret[0].(*directoryservice.DescribeSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSettings indicates an expected call of DescribeSettings
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSettings", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeSettings), arg0)
+}
+
+// DescribeSettingsRequest mocks base method
+func (m *MockDirectoryServiceAPI) DescribeSettingsRequest(arg0 *directoryservice.DescribeSettingsInput) (*request.Request, *directoryservice.DescribeSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.DescribeSettingsOutput)
+	return ret0, ret1
+}
+
+// DescribeSettingsRequest indicates an expected call of DescribeSettingsRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSettingsRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeSettingsRequest), arg0)
+}
+
+// DescribeSettingsWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeSettingsWithContext(arg0 context.Context, arg1 *directoryservice.DescribeSettingsInput, arg2 ...request.Option) (*directoryservice.DescribeSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.DescribeSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSettingsWithContext indicates an expected call of DescribeSettingsWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSettingsWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeSettingsWithContext), varargs...)
+}
+
 // DescribeSharedDirectories mocks base method
 func (m *MockDirectoryServiceAPI) DescribeSharedDirectories(arg0 *directoryservice.DescribeSharedDirectoriesInput) (*directoryservice.DescribeSharedDirectoriesOutput, error) {
 	m.ctrl.T.Helper()
@@ -3116,6 +3166,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) UpdateRadiusWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRadiusWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UpdateRadiusWithContext), varargs...)
+}
+
+// UpdateSettings mocks base method
+func (m *MockDirectoryServiceAPI) UpdateSettings(arg0 *directoryservice.UpdateSettingsInput) (*directoryservice.UpdateSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSettings", arg0)
+	ret0, _ := ret[0].(*directoryservice.UpdateSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSettings indicates an expected call of UpdateSettings
+func (mr *MockDirectoryServiceAPIMockRecorder) UpdateSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSettings", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UpdateSettings), arg0)
+}
+
+// UpdateSettingsRequest mocks base method
+func (m *MockDirectoryServiceAPI) UpdateSettingsRequest(arg0 *directoryservice.UpdateSettingsInput) (*request.Request, *directoryservice.UpdateSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.UpdateSettingsOutput)
+	return ret0, ret1
+}
+
+// UpdateSettingsRequest indicates an expected call of UpdateSettingsRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) UpdateSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSettingsRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UpdateSettingsRequest), arg0)
+}
+
+// UpdateSettingsWithContext mocks base method
+func (m *MockDirectoryServiceAPI) UpdateSettingsWithContext(arg0 context.Context, arg1 *directoryservice.UpdateSettingsInput, arg2 ...request.Option) (*directoryservice.UpdateSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.UpdateSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSettingsWithContext indicates an expected call of UpdateSettingsWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) UpdateSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSettingsWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UpdateSettingsWithContext), varargs...)
 }
 
 // UpdateTrust mocks base method
