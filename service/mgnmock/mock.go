@@ -85,6 +85,56 @@ func (mr *MockMgnAPIMockRecorder) ChangeServerLifeCycleStateWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ChangeServerLifeCycleStateWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ChangeServerLifeCycleStateWithContext), varargs...)
 }
 
+// CreateLaunchConfigurationTemplate mocks base method
+func (m *MockMgnAPI) CreateLaunchConfigurationTemplate(arg0 *mgn.CreateLaunchConfigurationTemplateInput) (*mgn.CreateLaunchConfigurationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLaunchConfigurationTemplate", arg0)
+	ret0, _ := ret[0].(*mgn.CreateLaunchConfigurationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLaunchConfigurationTemplate indicates an expected call of CreateLaunchConfigurationTemplate
+func (mr *MockMgnAPIMockRecorder) CreateLaunchConfigurationTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLaunchConfigurationTemplate", reflect.TypeOf((*MockMgnAPI)(nil).CreateLaunchConfigurationTemplate), arg0)
+}
+
+// CreateLaunchConfigurationTemplateRequest mocks base method
+func (m *MockMgnAPI) CreateLaunchConfigurationTemplateRequest(arg0 *mgn.CreateLaunchConfigurationTemplateInput) (*request.Request, *mgn.CreateLaunchConfigurationTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLaunchConfigurationTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.CreateLaunchConfigurationTemplateOutput)
+	return ret0, ret1
+}
+
+// CreateLaunchConfigurationTemplateRequest indicates an expected call of CreateLaunchConfigurationTemplateRequest
+func (mr *MockMgnAPIMockRecorder) CreateLaunchConfigurationTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLaunchConfigurationTemplateRequest", reflect.TypeOf((*MockMgnAPI)(nil).CreateLaunchConfigurationTemplateRequest), arg0)
+}
+
+// CreateLaunchConfigurationTemplateWithContext mocks base method
+func (m *MockMgnAPI) CreateLaunchConfigurationTemplateWithContext(arg0 context.Context, arg1 *mgn.CreateLaunchConfigurationTemplateInput, arg2 ...request.Option) (*mgn.CreateLaunchConfigurationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLaunchConfigurationTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.CreateLaunchConfigurationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLaunchConfigurationTemplateWithContext indicates an expected call of CreateLaunchConfigurationTemplateWithContext
+func (mr *MockMgnAPIMockRecorder) CreateLaunchConfigurationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLaunchConfigurationTemplateWithContext", reflect.TypeOf((*MockMgnAPI)(nil).CreateLaunchConfigurationTemplateWithContext), varargs...)
+}
+
 // CreateReplicationConfigurationTemplate mocks base method
 func (m *MockMgnAPI) CreateReplicationConfigurationTemplate(arg0 *mgn.CreateReplicationConfigurationTemplateInput) (*mgn.CreateReplicationConfigurationTemplateOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +233,56 @@ func (mr *MockMgnAPIMockRecorder) DeleteJobWithContext(arg0, arg1 interface{}, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobWithContext", reflect.TypeOf((*MockMgnAPI)(nil).DeleteJobWithContext), varargs...)
+}
+
+// DeleteLaunchConfigurationTemplate mocks base method
+func (m *MockMgnAPI) DeleteLaunchConfigurationTemplate(arg0 *mgn.DeleteLaunchConfigurationTemplateInput) (*mgn.DeleteLaunchConfigurationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLaunchConfigurationTemplate", arg0)
+	ret0, _ := ret[0].(*mgn.DeleteLaunchConfigurationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLaunchConfigurationTemplate indicates an expected call of DeleteLaunchConfigurationTemplate
+func (mr *MockMgnAPIMockRecorder) DeleteLaunchConfigurationTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLaunchConfigurationTemplate", reflect.TypeOf((*MockMgnAPI)(nil).DeleteLaunchConfigurationTemplate), arg0)
+}
+
+// DeleteLaunchConfigurationTemplateRequest mocks base method
+func (m *MockMgnAPI) DeleteLaunchConfigurationTemplateRequest(arg0 *mgn.DeleteLaunchConfigurationTemplateInput) (*request.Request, *mgn.DeleteLaunchConfigurationTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLaunchConfigurationTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.DeleteLaunchConfigurationTemplateOutput)
+	return ret0, ret1
+}
+
+// DeleteLaunchConfigurationTemplateRequest indicates an expected call of DeleteLaunchConfigurationTemplateRequest
+func (mr *MockMgnAPIMockRecorder) DeleteLaunchConfigurationTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLaunchConfigurationTemplateRequest", reflect.TypeOf((*MockMgnAPI)(nil).DeleteLaunchConfigurationTemplateRequest), arg0)
+}
+
+// DeleteLaunchConfigurationTemplateWithContext mocks base method
+func (m *MockMgnAPI) DeleteLaunchConfigurationTemplateWithContext(arg0 context.Context, arg1 *mgn.DeleteLaunchConfigurationTemplateInput, arg2 ...request.Option) (*mgn.DeleteLaunchConfigurationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLaunchConfigurationTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.DeleteLaunchConfigurationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLaunchConfigurationTemplateWithContext indicates an expected call of DeleteLaunchConfigurationTemplateWithContext
+func (mr *MockMgnAPIMockRecorder) DeleteLaunchConfigurationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLaunchConfigurationTemplateWithContext", reflect.TypeOf((*MockMgnAPI)(nil).DeleteLaunchConfigurationTemplateWithContext), varargs...)
 }
 
 // DeleteReplicationConfigurationTemplate mocks base method
@@ -499,6 +599,89 @@ func (mr *MockMgnAPIMockRecorder) DescribeJobsWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).DescribeJobsWithContext), varargs...)
+}
+
+// DescribeLaunchConfigurationTemplates mocks base method
+func (m *MockMgnAPI) DescribeLaunchConfigurationTemplates(arg0 *mgn.DescribeLaunchConfigurationTemplatesInput) (*mgn.DescribeLaunchConfigurationTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLaunchConfigurationTemplates", arg0)
+	ret0, _ := ret[0].(*mgn.DescribeLaunchConfigurationTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLaunchConfigurationTemplates indicates an expected call of DescribeLaunchConfigurationTemplates
+func (mr *MockMgnAPIMockRecorder) DescribeLaunchConfigurationTemplates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLaunchConfigurationTemplates", reflect.TypeOf((*MockMgnAPI)(nil).DescribeLaunchConfigurationTemplates), arg0)
+}
+
+// DescribeLaunchConfigurationTemplatesPages mocks base method
+func (m *MockMgnAPI) DescribeLaunchConfigurationTemplatesPages(arg0 *mgn.DescribeLaunchConfigurationTemplatesInput, arg1 func(*mgn.DescribeLaunchConfigurationTemplatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLaunchConfigurationTemplatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeLaunchConfigurationTemplatesPages indicates an expected call of DescribeLaunchConfigurationTemplatesPages
+func (mr *MockMgnAPIMockRecorder) DescribeLaunchConfigurationTemplatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLaunchConfigurationTemplatesPages", reflect.TypeOf((*MockMgnAPI)(nil).DescribeLaunchConfigurationTemplatesPages), arg0, arg1)
+}
+
+// DescribeLaunchConfigurationTemplatesPagesWithContext mocks base method
+func (m *MockMgnAPI) DescribeLaunchConfigurationTemplatesPagesWithContext(arg0 context.Context, arg1 *mgn.DescribeLaunchConfigurationTemplatesInput, arg2 func(*mgn.DescribeLaunchConfigurationTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLaunchConfigurationTemplatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeLaunchConfigurationTemplatesPagesWithContext indicates an expected call of DescribeLaunchConfigurationTemplatesPagesWithContext
+func (mr *MockMgnAPIMockRecorder) DescribeLaunchConfigurationTemplatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLaunchConfigurationTemplatesPagesWithContext", reflect.TypeOf((*MockMgnAPI)(nil).DescribeLaunchConfigurationTemplatesPagesWithContext), varargs...)
+}
+
+// DescribeLaunchConfigurationTemplatesRequest mocks base method
+func (m *MockMgnAPI) DescribeLaunchConfigurationTemplatesRequest(arg0 *mgn.DescribeLaunchConfigurationTemplatesInput) (*request.Request, *mgn.DescribeLaunchConfigurationTemplatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLaunchConfigurationTemplatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.DescribeLaunchConfigurationTemplatesOutput)
+	return ret0, ret1
+}
+
+// DescribeLaunchConfigurationTemplatesRequest indicates an expected call of DescribeLaunchConfigurationTemplatesRequest
+func (mr *MockMgnAPIMockRecorder) DescribeLaunchConfigurationTemplatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLaunchConfigurationTemplatesRequest", reflect.TypeOf((*MockMgnAPI)(nil).DescribeLaunchConfigurationTemplatesRequest), arg0)
+}
+
+// DescribeLaunchConfigurationTemplatesWithContext mocks base method
+func (m *MockMgnAPI) DescribeLaunchConfigurationTemplatesWithContext(arg0 context.Context, arg1 *mgn.DescribeLaunchConfigurationTemplatesInput, arg2 ...request.Option) (*mgn.DescribeLaunchConfigurationTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLaunchConfigurationTemplatesWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.DescribeLaunchConfigurationTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLaunchConfigurationTemplatesWithContext indicates an expected call of DescribeLaunchConfigurationTemplatesWithContext
+func (mr *MockMgnAPIMockRecorder) DescribeLaunchConfigurationTemplatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLaunchConfigurationTemplatesWithContext", reflect.TypeOf((*MockMgnAPI)(nil).DescribeLaunchConfigurationTemplatesWithContext), varargs...)
 }
 
 // DescribeReplicationConfigurationTemplates mocks base method
@@ -1478,6 +1661,56 @@ func (m *MockMgnAPI) UpdateLaunchConfigurationRequest(arg0 *mgn.UpdateLaunchConf
 func (mr *MockMgnAPIMockRecorder) UpdateLaunchConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLaunchConfigurationRequest", reflect.TypeOf((*MockMgnAPI)(nil).UpdateLaunchConfigurationRequest), arg0)
+}
+
+// UpdateLaunchConfigurationTemplate mocks base method
+func (m *MockMgnAPI) UpdateLaunchConfigurationTemplate(arg0 *mgn.UpdateLaunchConfigurationTemplateInput) (*mgn.UpdateLaunchConfigurationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLaunchConfigurationTemplate", arg0)
+	ret0, _ := ret[0].(*mgn.UpdateLaunchConfigurationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLaunchConfigurationTemplate indicates an expected call of UpdateLaunchConfigurationTemplate
+func (mr *MockMgnAPIMockRecorder) UpdateLaunchConfigurationTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLaunchConfigurationTemplate", reflect.TypeOf((*MockMgnAPI)(nil).UpdateLaunchConfigurationTemplate), arg0)
+}
+
+// UpdateLaunchConfigurationTemplateRequest mocks base method
+func (m *MockMgnAPI) UpdateLaunchConfigurationTemplateRequest(arg0 *mgn.UpdateLaunchConfigurationTemplateInput) (*request.Request, *mgn.UpdateLaunchConfigurationTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLaunchConfigurationTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.UpdateLaunchConfigurationTemplateOutput)
+	return ret0, ret1
+}
+
+// UpdateLaunchConfigurationTemplateRequest indicates an expected call of UpdateLaunchConfigurationTemplateRequest
+func (mr *MockMgnAPIMockRecorder) UpdateLaunchConfigurationTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLaunchConfigurationTemplateRequest", reflect.TypeOf((*MockMgnAPI)(nil).UpdateLaunchConfigurationTemplateRequest), arg0)
+}
+
+// UpdateLaunchConfigurationTemplateWithContext mocks base method
+func (m *MockMgnAPI) UpdateLaunchConfigurationTemplateWithContext(arg0 context.Context, arg1 *mgn.UpdateLaunchConfigurationTemplateInput, arg2 ...request.Option) (*mgn.UpdateLaunchConfigurationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateLaunchConfigurationTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.UpdateLaunchConfigurationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLaunchConfigurationTemplateWithContext indicates an expected call of UpdateLaunchConfigurationTemplateWithContext
+func (mr *MockMgnAPIMockRecorder) UpdateLaunchConfigurationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLaunchConfigurationTemplateWithContext", reflect.TypeOf((*MockMgnAPI)(nil).UpdateLaunchConfigurationTemplateWithContext), varargs...)
 }
 
 // UpdateLaunchConfigurationWithContext mocks base method

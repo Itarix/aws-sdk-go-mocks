@@ -701,6 +701,89 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) ListDatasetsWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetsWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListDatasetsWithContext), varargs...)
 }
 
+// ListInferenceEvents mocks base method
+func (m *MockLookoutEquipmentAPI) ListInferenceEvents(arg0 *lookoutequipment.ListInferenceEventsInput) (*lookoutequipment.ListInferenceEventsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInferenceEvents", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.ListInferenceEventsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListInferenceEvents indicates an expected call of ListInferenceEvents
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListInferenceEvents(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInferenceEvents", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListInferenceEvents), arg0)
+}
+
+// ListInferenceEventsPages mocks base method
+func (m *MockLookoutEquipmentAPI) ListInferenceEventsPages(arg0 *lookoutequipment.ListInferenceEventsInput, arg1 func(*lookoutequipment.ListInferenceEventsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInferenceEventsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListInferenceEventsPages indicates an expected call of ListInferenceEventsPages
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListInferenceEventsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInferenceEventsPages", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListInferenceEventsPages), arg0, arg1)
+}
+
+// ListInferenceEventsPagesWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) ListInferenceEventsPagesWithContext(arg0 context.Context, arg1 *lookoutequipment.ListInferenceEventsInput, arg2 func(*lookoutequipment.ListInferenceEventsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListInferenceEventsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListInferenceEventsPagesWithContext indicates an expected call of ListInferenceEventsPagesWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListInferenceEventsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInferenceEventsPagesWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListInferenceEventsPagesWithContext), varargs...)
+}
+
+// ListInferenceEventsRequest mocks base method
+func (m *MockLookoutEquipmentAPI) ListInferenceEventsRequest(arg0 *lookoutequipment.ListInferenceEventsInput) (*request.Request, *lookoutequipment.ListInferenceEventsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInferenceEventsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.ListInferenceEventsOutput)
+	return ret0, ret1
+}
+
+// ListInferenceEventsRequest indicates an expected call of ListInferenceEventsRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListInferenceEventsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInferenceEventsRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListInferenceEventsRequest), arg0)
+}
+
+// ListInferenceEventsWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) ListInferenceEventsWithContext(arg0 context.Context, arg1 *lookoutequipment.ListInferenceEventsInput, arg2 ...request.Option) (*lookoutequipment.ListInferenceEventsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListInferenceEventsWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.ListInferenceEventsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListInferenceEventsWithContext indicates an expected call of ListInferenceEventsWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListInferenceEventsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInferenceEventsWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListInferenceEventsWithContext), varargs...)
+}
+
 // ListInferenceExecutions mocks base method
 func (m *MockLookoutEquipmentAPI) ListInferenceExecutions(arg0 *lookoutequipment.ListInferenceExecutionsInput) (*lookoutequipment.ListInferenceExecutionsOutput, error) {
 	m.ctrl.T.Helper()

@@ -1349,3 +1349,53 @@ func (mr *MockMigrationHubRefactorSpacesAPIMockRecorder) UntagResourceWithContex
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockMigrationHubRefactorSpacesAPI)(nil).UntagResourceWithContext), varargs...)
 }
+
+// UpdateRoute mocks base method
+func (m *MockMigrationHubRefactorSpacesAPI) UpdateRoute(arg0 *migrationhubrefactorspaces.UpdateRouteInput) (*migrationhubrefactorspaces.UpdateRouteOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoute", arg0)
+	ret0, _ := ret[0].(*migrationhubrefactorspaces.UpdateRouteOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoute indicates an expected call of UpdateRoute
+func (mr *MockMigrationHubRefactorSpacesAPIMockRecorder) UpdateRoute(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoute", reflect.TypeOf((*MockMigrationHubRefactorSpacesAPI)(nil).UpdateRoute), arg0)
+}
+
+// UpdateRouteRequest mocks base method
+func (m *MockMigrationHubRefactorSpacesAPI) UpdateRouteRequest(arg0 *migrationhubrefactorspaces.UpdateRouteInput) (*request.Request, *migrationhubrefactorspaces.UpdateRouteOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRouteRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*migrationhubrefactorspaces.UpdateRouteOutput)
+	return ret0, ret1
+}
+
+// UpdateRouteRequest indicates an expected call of UpdateRouteRequest
+func (mr *MockMigrationHubRefactorSpacesAPIMockRecorder) UpdateRouteRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRouteRequest", reflect.TypeOf((*MockMigrationHubRefactorSpacesAPI)(nil).UpdateRouteRequest), arg0)
+}
+
+// UpdateRouteWithContext mocks base method
+func (m *MockMigrationHubRefactorSpacesAPI) UpdateRouteWithContext(arg0 context.Context, arg1 *migrationhubrefactorspaces.UpdateRouteInput, arg2 ...request.Option) (*migrationhubrefactorspaces.UpdateRouteOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRouteWithContext", varargs...)
+	ret0, _ := ret[0].(*migrationhubrefactorspaces.UpdateRouteOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRouteWithContext indicates an expected call of UpdateRouteWithContext
+func (mr *MockMigrationHubRefactorSpacesAPIMockRecorder) UpdateRouteWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRouteWithContext", reflect.TypeOf((*MockMigrationHubRefactorSpacesAPI)(nil).UpdateRouteWithContext), varargs...)
+}
