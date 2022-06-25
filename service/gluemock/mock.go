@@ -7094,6 +7094,56 @@ func (mr *MockGlueAPIMockRecorder) ListCrawlersWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCrawlersWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListCrawlersWithContext), varargs...)
 }
 
+// ListCrawls mocks base method
+func (m *MockGlueAPI) ListCrawls(arg0 *glue.ListCrawlsInput) (*glue.ListCrawlsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCrawls", arg0)
+	ret0, _ := ret[0].(*glue.ListCrawlsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCrawls indicates an expected call of ListCrawls
+func (mr *MockGlueAPIMockRecorder) ListCrawls(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCrawls", reflect.TypeOf((*MockGlueAPI)(nil).ListCrawls), arg0)
+}
+
+// ListCrawlsRequest mocks base method
+func (m *MockGlueAPI) ListCrawlsRequest(arg0 *glue.ListCrawlsInput) (*request.Request, *glue.ListCrawlsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCrawlsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.ListCrawlsOutput)
+	return ret0, ret1
+}
+
+// ListCrawlsRequest indicates an expected call of ListCrawlsRequest
+func (mr *MockGlueAPIMockRecorder) ListCrawlsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCrawlsRequest", reflect.TypeOf((*MockGlueAPI)(nil).ListCrawlsRequest), arg0)
+}
+
+// ListCrawlsWithContext mocks base method
+func (m *MockGlueAPI) ListCrawlsWithContext(arg0 context.Context, arg1 *glue.ListCrawlsInput, arg2 ...request.Option) (*glue.ListCrawlsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCrawlsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.ListCrawlsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCrawlsWithContext indicates an expected call of ListCrawlsWithContext
+func (mr *MockGlueAPIMockRecorder) ListCrawlsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCrawlsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListCrawlsWithContext), varargs...)
+}
+
 // ListCustomEntityTypes mocks base method
 func (m *MockGlueAPI) ListCustomEntityTypes(arg0 *glue.ListCustomEntityTypesInput) (*glue.ListCustomEntityTypesOutput, error) {
 	m.ctrl.T.Helper()
