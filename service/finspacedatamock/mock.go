@@ -735,6 +735,56 @@ func (mr *MockFinSpaceDataAPIMockRecorder) GetDatasetWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatasetWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).GetDatasetWithContext), varargs...)
 }
 
+// GetExternalDataViewAccessDetails mocks base method
+func (m *MockFinSpaceDataAPI) GetExternalDataViewAccessDetails(arg0 *finspacedata.GetExternalDataViewAccessDetailsInput) (*finspacedata.GetExternalDataViewAccessDetailsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetExternalDataViewAccessDetails", arg0)
+	ret0, _ := ret[0].(*finspacedata.GetExternalDataViewAccessDetailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetExternalDataViewAccessDetails indicates an expected call of GetExternalDataViewAccessDetails
+func (mr *MockFinSpaceDataAPIMockRecorder) GetExternalDataViewAccessDetails(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExternalDataViewAccessDetails", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).GetExternalDataViewAccessDetails), arg0)
+}
+
+// GetExternalDataViewAccessDetailsRequest mocks base method
+func (m *MockFinSpaceDataAPI) GetExternalDataViewAccessDetailsRequest(arg0 *finspacedata.GetExternalDataViewAccessDetailsInput) (*request.Request, *finspacedata.GetExternalDataViewAccessDetailsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetExternalDataViewAccessDetailsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*finspacedata.GetExternalDataViewAccessDetailsOutput)
+	return ret0, ret1
+}
+
+// GetExternalDataViewAccessDetailsRequest indicates an expected call of GetExternalDataViewAccessDetailsRequest
+func (mr *MockFinSpaceDataAPIMockRecorder) GetExternalDataViewAccessDetailsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExternalDataViewAccessDetailsRequest", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).GetExternalDataViewAccessDetailsRequest), arg0)
+}
+
+// GetExternalDataViewAccessDetailsWithContext mocks base method
+func (m *MockFinSpaceDataAPI) GetExternalDataViewAccessDetailsWithContext(arg0 context.Context, arg1 *finspacedata.GetExternalDataViewAccessDetailsInput, arg2 ...request.Option) (*finspacedata.GetExternalDataViewAccessDetailsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetExternalDataViewAccessDetailsWithContext", varargs...)
+	ret0, _ := ret[0].(*finspacedata.GetExternalDataViewAccessDetailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetExternalDataViewAccessDetailsWithContext indicates an expected call of GetExternalDataViewAccessDetailsWithContext
+func (mr *MockFinSpaceDataAPIMockRecorder) GetExternalDataViewAccessDetailsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExternalDataViewAccessDetailsWithContext", reflect.TypeOf((*MockFinSpaceDataAPI)(nil).GetExternalDataViewAccessDetailsWithContext), varargs...)
+}
+
 // GetPermissionGroup mocks base method
 func (m *MockFinSpaceDataAPI) GetPermissionGroup(arg0 *finspacedata.GetPermissionGroupInput) (*finspacedata.GetPermissionGroupOutput, error) {
 	m.ctrl.T.Helper()
