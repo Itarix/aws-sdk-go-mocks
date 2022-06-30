@@ -5385,6 +5385,56 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeFeatureGroupWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFeatureGroupWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeFeatureGroupWithContext), varargs...)
 }
 
+// DescribeFeatureMetadata mocks base method
+func (m *MockSageMakerAPI) DescribeFeatureMetadata(arg0 *sagemaker.DescribeFeatureMetadataInput) (*sagemaker.DescribeFeatureMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFeatureMetadata", arg0)
+	ret0, _ := ret[0].(*sagemaker.DescribeFeatureMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFeatureMetadata indicates an expected call of DescribeFeatureMetadata
+func (mr *MockSageMakerAPIMockRecorder) DescribeFeatureMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFeatureMetadata", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeFeatureMetadata), arg0)
+}
+
+// DescribeFeatureMetadataRequest mocks base method
+func (m *MockSageMakerAPI) DescribeFeatureMetadataRequest(arg0 *sagemaker.DescribeFeatureMetadataInput) (*request.Request, *sagemaker.DescribeFeatureMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFeatureMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DescribeFeatureMetadataOutput)
+	return ret0, ret1
+}
+
+// DescribeFeatureMetadataRequest indicates an expected call of DescribeFeatureMetadataRequest
+func (mr *MockSageMakerAPIMockRecorder) DescribeFeatureMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFeatureMetadataRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeFeatureMetadataRequest), arg0)
+}
+
+// DescribeFeatureMetadataWithContext mocks base method
+func (m *MockSageMakerAPI) DescribeFeatureMetadataWithContext(arg0 context.Context, arg1 *sagemaker.DescribeFeatureMetadataInput, arg2 ...request.Option) (*sagemaker.DescribeFeatureMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFeatureMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DescribeFeatureMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFeatureMetadataWithContext indicates an expected call of DescribeFeatureMetadataWithContext
+func (mr *MockSageMakerAPIMockRecorder) DescribeFeatureMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFeatureMetadataWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeFeatureMetadataWithContext), varargs...)
+}
+
 // DescribeFlowDefinition mocks base method
 func (m *MockSageMakerAPI) DescribeFlowDefinition(arg0 *sagemaker.DescribeFlowDefinitionInput) (*sagemaker.DescribeFlowDefinitionOutput, error) {
 	m.ctrl.T.Helper()
@@ -13830,6 +13880,106 @@ func (mr *MockSageMakerAPIMockRecorder) UpdateExperimentWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateExperimentWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateExperimentWithContext), varargs...)
+}
+
+// UpdateFeatureGroup mocks base method
+func (m *MockSageMakerAPI) UpdateFeatureGroup(arg0 *sagemaker.UpdateFeatureGroupInput) (*sagemaker.UpdateFeatureGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFeatureGroup", arg0)
+	ret0, _ := ret[0].(*sagemaker.UpdateFeatureGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFeatureGroup indicates an expected call of UpdateFeatureGroup
+func (mr *MockSageMakerAPIMockRecorder) UpdateFeatureGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFeatureGroup", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateFeatureGroup), arg0)
+}
+
+// UpdateFeatureGroupRequest mocks base method
+func (m *MockSageMakerAPI) UpdateFeatureGroupRequest(arg0 *sagemaker.UpdateFeatureGroupInput) (*request.Request, *sagemaker.UpdateFeatureGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFeatureGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.UpdateFeatureGroupOutput)
+	return ret0, ret1
+}
+
+// UpdateFeatureGroupRequest indicates an expected call of UpdateFeatureGroupRequest
+func (mr *MockSageMakerAPIMockRecorder) UpdateFeatureGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFeatureGroupRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateFeatureGroupRequest), arg0)
+}
+
+// UpdateFeatureGroupWithContext mocks base method
+func (m *MockSageMakerAPI) UpdateFeatureGroupWithContext(arg0 context.Context, arg1 *sagemaker.UpdateFeatureGroupInput, arg2 ...request.Option) (*sagemaker.UpdateFeatureGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFeatureGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.UpdateFeatureGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFeatureGroupWithContext indicates an expected call of UpdateFeatureGroupWithContext
+func (mr *MockSageMakerAPIMockRecorder) UpdateFeatureGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFeatureGroupWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateFeatureGroupWithContext), varargs...)
+}
+
+// UpdateFeatureMetadata mocks base method
+func (m *MockSageMakerAPI) UpdateFeatureMetadata(arg0 *sagemaker.UpdateFeatureMetadataInput) (*sagemaker.UpdateFeatureMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFeatureMetadata", arg0)
+	ret0, _ := ret[0].(*sagemaker.UpdateFeatureMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFeatureMetadata indicates an expected call of UpdateFeatureMetadata
+func (mr *MockSageMakerAPIMockRecorder) UpdateFeatureMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFeatureMetadata", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateFeatureMetadata), arg0)
+}
+
+// UpdateFeatureMetadataRequest mocks base method
+func (m *MockSageMakerAPI) UpdateFeatureMetadataRequest(arg0 *sagemaker.UpdateFeatureMetadataInput) (*request.Request, *sagemaker.UpdateFeatureMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFeatureMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.UpdateFeatureMetadataOutput)
+	return ret0, ret1
+}
+
+// UpdateFeatureMetadataRequest indicates an expected call of UpdateFeatureMetadataRequest
+func (mr *MockSageMakerAPIMockRecorder) UpdateFeatureMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFeatureMetadataRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateFeatureMetadataRequest), arg0)
+}
+
+// UpdateFeatureMetadataWithContext mocks base method
+func (m *MockSageMakerAPI) UpdateFeatureMetadataWithContext(arg0 context.Context, arg1 *sagemaker.UpdateFeatureMetadataInput, arg2 ...request.Option) (*sagemaker.UpdateFeatureMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFeatureMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.UpdateFeatureMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFeatureMetadataWithContext indicates an expected call of UpdateFeatureMetadataWithContext
+func (mr *MockSageMakerAPIMockRecorder) UpdateFeatureMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFeatureMetadataWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).UpdateFeatureMetadataWithContext), varargs...)
 }
 
 // UpdateImage mocks base method

@@ -385,6 +385,89 @@ func (mr *MockTranslateAPIMockRecorder) ImportTerminologyWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportTerminologyWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).ImportTerminologyWithContext), varargs...)
 }
 
+// ListLanguages mocks base method
+func (m *MockTranslateAPI) ListLanguages(arg0 *translate.ListLanguagesInput) (*translate.ListLanguagesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLanguages", arg0)
+	ret0, _ := ret[0].(*translate.ListLanguagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLanguages indicates an expected call of ListLanguages
+func (mr *MockTranslateAPIMockRecorder) ListLanguages(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLanguages", reflect.TypeOf((*MockTranslateAPI)(nil).ListLanguages), arg0)
+}
+
+// ListLanguagesPages mocks base method
+func (m *MockTranslateAPI) ListLanguagesPages(arg0 *translate.ListLanguagesInput, arg1 func(*translate.ListLanguagesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLanguagesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLanguagesPages indicates an expected call of ListLanguagesPages
+func (mr *MockTranslateAPIMockRecorder) ListLanguagesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLanguagesPages", reflect.TypeOf((*MockTranslateAPI)(nil).ListLanguagesPages), arg0, arg1)
+}
+
+// ListLanguagesPagesWithContext mocks base method
+func (m *MockTranslateAPI) ListLanguagesPagesWithContext(arg0 context.Context, arg1 *translate.ListLanguagesInput, arg2 func(*translate.ListLanguagesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLanguagesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLanguagesPagesWithContext indicates an expected call of ListLanguagesPagesWithContext
+func (mr *MockTranslateAPIMockRecorder) ListLanguagesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLanguagesPagesWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).ListLanguagesPagesWithContext), varargs...)
+}
+
+// ListLanguagesRequest mocks base method
+func (m *MockTranslateAPI) ListLanguagesRequest(arg0 *translate.ListLanguagesInput) (*request.Request, *translate.ListLanguagesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLanguagesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*translate.ListLanguagesOutput)
+	return ret0, ret1
+}
+
+// ListLanguagesRequest indicates an expected call of ListLanguagesRequest
+func (mr *MockTranslateAPIMockRecorder) ListLanguagesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLanguagesRequest", reflect.TypeOf((*MockTranslateAPI)(nil).ListLanguagesRequest), arg0)
+}
+
+// ListLanguagesWithContext mocks base method
+func (m *MockTranslateAPI) ListLanguagesWithContext(arg0 context.Context, arg1 *translate.ListLanguagesInput, arg2 ...request.Option) (*translate.ListLanguagesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLanguagesWithContext", varargs...)
+	ret0, _ := ret[0].(*translate.ListLanguagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLanguagesWithContext indicates an expected call of ListLanguagesWithContext
+func (mr *MockTranslateAPIMockRecorder) ListLanguagesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLanguagesWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).ListLanguagesWithContext), varargs...)
+}
+
 // ListParallelData mocks base method
 func (m *MockTranslateAPI) ListParallelData(arg0 *translate.ListParallelDataInput) (*translate.ListParallelDataOutput, error) {
 	m.ctrl.T.Helper()
