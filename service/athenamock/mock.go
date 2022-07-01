@@ -85,6 +85,56 @@ func (mr *MockAthenaAPIMockRecorder) BatchGetNamedQueryWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetNamedQueryWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).BatchGetNamedQueryWithContext), varargs...)
 }
 
+// BatchGetPreparedStatement mocks base method
+func (m *MockAthenaAPI) BatchGetPreparedStatement(arg0 *athena.BatchGetPreparedStatementInput) (*athena.BatchGetPreparedStatementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetPreparedStatement", arg0)
+	ret0, _ := ret[0].(*athena.BatchGetPreparedStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetPreparedStatement indicates an expected call of BatchGetPreparedStatement
+func (mr *MockAthenaAPIMockRecorder) BatchGetPreparedStatement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetPreparedStatement", reflect.TypeOf((*MockAthenaAPI)(nil).BatchGetPreparedStatement), arg0)
+}
+
+// BatchGetPreparedStatementRequest mocks base method
+func (m *MockAthenaAPI) BatchGetPreparedStatementRequest(arg0 *athena.BatchGetPreparedStatementInput) (*request.Request, *athena.BatchGetPreparedStatementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetPreparedStatementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.BatchGetPreparedStatementOutput)
+	return ret0, ret1
+}
+
+// BatchGetPreparedStatementRequest indicates an expected call of BatchGetPreparedStatementRequest
+func (mr *MockAthenaAPIMockRecorder) BatchGetPreparedStatementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetPreparedStatementRequest", reflect.TypeOf((*MockAthenaAPI)(nil).BatchGetPreparedStatementRequest), arg0)
+}
+
+// BatchGetPreparedStatementWithContext mocks base method
+func (m *MockAthenaAPI) BatchGetPreparedStatementWithContext(arg0 context.Context, arg1 *athena.BatchGetPreparedStatementInput, arg2 ...request.Option) (*athena.BatchGetPreparedStatementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetPreparedStatementWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.BatchGetPreparedStatementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetPreparedStatementWithContext indicates an expected call of BatchGetPreparedStatementWithContext
+func (mr *MockAthenaAPIMockRecorder) BatchGetPreparedStatementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetPreparedStatementWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).BatchGetPreparedStatementWithContext), varargs...)
+}
+
 // BatchGetQueryExecution mocks base method
 func (m *MockAthenaAPI) BatchGetQueryExecution(arg0 *athena.BatchGetQueryExecutionInput) (*athena.BatchGetQueryExecutionOutput, error) {
 	m.ctrl.T.Helper()

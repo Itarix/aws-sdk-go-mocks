@@ -235,6 +235,56 @@ func (mr *MockWorkMailAPIMockRecorder) CreateAliasWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAliasWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).CreateAliasWithContext), varargs...)
 }
 
+// CreateAvailabilityConfiguration mocks base method
+func (m *MockWorkMailAPI) CreateAvailabilityConfiguration(arg0 *workmail.CreateAvailabilityConfigurationInput) (*workmail.CreateAvailabilityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAvailabilityConfiguration", arg0)
+	ret0, _ := ret[0].(*workmail.CreateAvailabilityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAvailabilityConfiguration indicates an expected call of CreateAvailabilityConfiguration
+func (mr *MockWorkMailAPIMockRecorder) CreateAvailabilityConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAvailabilityConfiguration", reflect.TypeOf((*MockWorkMailAPI)(nil).CreateAvailabilityConfiguration), arg0)
+}
+
+// CreateAvailabilityConfigurationRequest mocks base method
+func (m *MockWorkMailAPI) CreateAvailabilityConfigurationRequest(arg0 *workmail.CreateAvailabilityConfigurationInput) (*request.Request, *workmail.CreateAvailabilityConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAvailabilityConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.CreateAvailabilityConfigurationOutput)
+	return ret0, ret1
+}
+
+// CreateAvailabilityConfigurationRequest indicates an expected call of CreateAvailabilityConfigurationRequest
+func (mr *MockWorkMailAPIMockRecorder) CreateAvailabilityConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAvailabilityConfigurationRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).CreateAvailabilityConfigurationRequest), arg0)
+}
+
+// CreateAvailabilityConfigurationWithContext mocks base method
+func (m *MockWorkMailAPI) CreateAvailabilityConfigurationWithContext(arg0 context.Context, arg1 *workmail.CreateAvailabilityConfigurationInput, arg2 ...request.Option) (*workmail.CreateAvailabilityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAvailabilityConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.CreateAvailabilityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAvailabilityConfigurationWithContext indicates an expected call of CreateAvailabilityConfigurationWithContext
+func (mr *MockWorkMailAPIMockRecorder) CreateAvailabilityConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAvailabilityConfigurationWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).CreateAvailabilityConfigurationWithContext), varargs...)
+}
+
 // CreateGroup mocks base method
 func (m *MockWorkMailAPI) CreateGroup(arg0 *workmail.CreateGroupInput) (*workmail.CreateGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +633,56 @@ func (mr *MockWorkMailAPIMockRecorder) DeleteAliasWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAliasWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteAliasWithContext), varargs...)
+}
+
+// DeleteAvailabilityConfiguration mocks base method
+func (m *MockWorkMailAPI) DeleteAvailabilityConfiguration(arg0 *workmail.DeleteAvailabilityConfigurationInput) (*workmail.DeleteAvailabilityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAvailabilityConfiguration", arg0)
+	ret0, _ := ret[0].(*workmail.DeleteAvailabilityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAvailabilityConfiguration indicates an expected call of DeleteAvailabilityConfiguration
+func (mr *MockWorkMailAPIMockRecorder) DeleteAvailabilityConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAvailabilityConfiguration", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteAvailabilityConfiguration), arg0)
+}
+
+// DeleteAvailabilityConfigurationRequest mocks base method
+func (m *MockWorkMailAPI) DeleteAvailabilityConfigurationRequest(arg0 *workmail.DeleteAvailabilityConfigurationInput) (*request.Request, *workmail.DeleteAvailabilityConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAvailabilityConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.DeleteAvailabilityConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteAvailabilityConfigurationRequest indicates an expected call of DeleteAvailabilityConfigurationRequest
+func (mr *MockWorkMailAPIMockRecorder) DeleteAvailabilityConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAvailabilityConfigurationRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteAvailabilityConfigurationRequest), arg0)
+}
+
+// DeleteAvailabilityConfigurationWithContext mocks base method
+func (m *MockWorkMailAPI) DeleteAvailabilityConfigurationWithContext(arg0 context.Context, arg1 *workmail.DeleteAvailabilityConfigurationInput, arg2 ...request.Option) (*workmail.DeleteAvailabilityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAvailabilityConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.DeleteAvailabilityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAvailabilityConfigurationWithContext indicates an expected call of DeleteAvailabilityConfigurationWithContext
+func (mr *MockWorkMailAPIMockRecorder) DeleteAvailabilityConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAvailabilityConfigurationWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteAvailabilityConfigurationWithContext), varargs...)
 }
 
 // DeleteEmailMonitoringConfiguration mocks base method
@@ -2016,6 +2116,89 @@ func (mr *MockWorkMailAPIMockRecorder) ListAliasesWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAliasesWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListAliasesWithContext), varargs...)
+}
+
+// ListAvailabilityConfigurations mocks base method
+func (m *MockWorkMailAPI) ListAvailabilityConfigurations(arg0 *workmail.ListAvailabilityConfigurationsInput) (*workmail.ListAvailabilityConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAvailabilityConfigurations", arg0)
+	ret0, _ := ret[0].(*workmail.ListAvailabilityConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAvailabilityConfigurations indicates an expected call of ListAvailabilityConfigurations
+func (mr *MockWorkMailAPIMockRecorder) ListAvailabilityConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailabilityConfigurations", reflect.TypeOf((*MockWorkMailAPI)(nil).ListAvailabilityConfigurations), arg0)
+}
+
+// ListAvailabilityConfigurationsPages mocks base method
+func (m *MockWorkMailAPI) ListAvailabilityConfigurationsPages(arg0 *workmail.ListAvailabilityConfigurationsInput, arg1 func(*workmail.ListAvailabilityConfigurationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAvailabilityConfigurationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAvailabilityConfigurationsPages indicates an expected call of ListAvailabilityConfigurationsPages
+func (mr *MockWorkMailAPIMockRecorder) ListAvailabilityConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailabilityConfigurationsPages", reflect.TypeOf((*MockWorkMailAPI)(nil).ListAvailabilityConfigurationsPages), arg0, arg1)
+}
+
+// ListAvailabilityConfigurationsPagesWithContext mocks base method
+func (m *MockWorkMailAPI) ListAvailabilityConfigurationsPagesWithContext(arg0 context.Context, arg1 *workmail.ListAvailabilityConfigurationsInput, arg2 func(*workmail.ListAvailabilityConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAvailabilityConfigurationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAvailabilityConfigurationsPagesWithContext indicates an expected call of ListAvailabilityConfigurationsPagesWithContext
+func (mr *MockWorkMailAPIMockRecorder) ListAvailabilityConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailabilityConfigurationsPagesWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListAvailabilityConfigurationsPagesWithContext), varargs...)
+}
+
+// ListAvailabilityConfigurationsRequest mocks base method
+func (m *MockWorkMailAPI) ListAvailabilityConfigurationsRequest(arg0 *workmail.ListAvailabilityConfigurationsInput) (*request.Request, *workmail.ListAvailabilityConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAvailabilityConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.ListAvailabilityConfigurationsOutput)
+	return ret0, ret1
+}
+
+// ListAvailabilityConfigurationsRequest indicates an expected call of ListAvailabilityConfigurationsRequest
+func (mr *MockWorkMailAPIMockRecorder) ListAvailabilityConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailabilityConfigurationsRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).ListAvailabilityConfigurationsRequest), arg0)
+}
+
+// ListAvailabilityConfigurationsWithContext mocks base method
+func (m *MockWorkMailAPI) ListAvailabilityConfigurationsWithContext(arg0 context.Context, arg1 *workmail.ListAvailabilityConfigurationsInput, arg2 ...request.Option) (*workmail.ListAvailabilityConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAvailabilityConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.ListAvailabilityConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAvailabilityConfigurationsWithContext indicates an expected call of ListAvailabilityConfigurationsWithContext
+func (mr *MockWorkMailAPIMockRecorder) ListAvailabilityConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailabilityConfigurationsWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListAvailabilityConfigurationsWithContext), varargs...)
 }
 
 // ListGroupMembers mocks base method
@@ -3498,6 +3681,56 @@ func (mr *MockWorkMailAPIMockRecorder) TagResourceWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).TagResourceWithContext), varargs...)
 }
 
+// TestAvailabilityConfiguration mocks base method
+func (m *MockWorkMailAPI) TestAvailabilityConfiguration(arg0 *workmail.TestAvailabilityConfigurationInput) (*workmail.TestAvailabilityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TestAvailabilityConfiguration", arg0)
+	ret0, _ := ret[0].(*workmail.TestAvailabilityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TestAvailabilityConfiguration indicates an expected call of TestAvailabilityConfiguration
+func (mr *MockWorkMailAPIMockRecorder) TestAvailabilityConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestAvailabilityConfiguration", reflect.TypeOf((*MockWorkMailAPI)(nil).TestAvailabilityConfiguration), arg0)
+}
+
+// TestAvailabilityConfigurationRequest mocks base method
+func (m *MockWorkMailAPI) TestAvailabilityConfigurationRequest(arg0 *workmail.TestAvailabilityConfigurationInput) (*request.Request, *workmail.TestAvailabilityConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TestAvailabilityConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.TestAvailabilityConfigurationOutput)
+	return ret0, ret1
+}
+
+// TestAvailabilityConfigurationRequest indicates an expected call of TestAvailabilityConfigurationRequest
+func (mr *MockWorkMailAPIMockRecorder) TestAvailabilityConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestAvailabilityConfigurationRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).TestAvailabilityConfigurationRequest), arg0)
+}
+
+// TestAvailabilityConfigurationWithContext mocks base method
+func (m *MockWorkMailAPI) TestAvailabilityConfigurationWithContext(arg0 context.Context, arg1 *workmail.TestAvailabilityConfigurationInput, arg2 ...request.Option) (*workmail.TestAvailabilityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TestAvailabilityConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.TestAvailabilityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TestAvailabilityConfigurationWithContext indicates an expected call of TestAvailabilityConfigurationWithContext
+func (mr *MockWorkMailAPIMockRecorder) TestAvailabilityConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestAvailabilityConfigurationWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).TestAvailabilityConfigurationWithContext), varargs...)
+}
+
 // UntagResource mocks base method
 func (m *MockWorkMailAPI) UntagResource(arg0 *workmail.UntagResourceInput) (*workmail.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -3546,6 +3779,56 @@ func (mr *MockWorkMailAPIMockRecorder) UntagResourceWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateAvailabilityConfiguration mocks base method
+func (m *MockWorkMailAPI) UpdateAvailabilityConfiguration(arg0 *workmail.UpdateAvailabilityConfigurationInput) (*workmail.UpdateAvailabilityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAvailabilityConfiguration", arg0)
+	ret0, _ := ret[0].(*workmail.UpdateAvailabilityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAvailabilityConfiguration indicates an expected call of UpdateAvailabilityConfiguration
+func (mr *MockWorkMailAPIMockRecorder) UpdateAvailabilityConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAvailabilityConfiguration", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateAvailabilityConfiguration), arg0)
+}
+
+// UpdateAvailabilityConfigurationRequest mocks base method
+func (m *MockWorkMailAPI) UpdateAvailabilityConfigurationRequest(arg0 *workmail.UpdateAvailabilityConfigurationInput) (*request.Request, *workmail.UpdateAvailabilityConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAvailabilityConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.UpdateAvailabilityConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateAvailabilityConfigurationRequest indicates an expected call of UpdateAvailabilityConfigurationRequest
+func (mr *MockWorkMailAPIMockRecorder) UpdateAvailabilityConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAvailabilityConfigurationRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateAvailabilityConfigurationRequest), arg0)
+}
+
+// UpdateAvailabilityConfigurationWithContext mocks base method
+func (m *MockWorkMailAPI) UpdateAvailabilityConfigurationWithContext(arg0 context.Context, arg1 *workmail.UpdateAvailabilityConfigurationInput, arg2 ...request.Option) (*workmail.UpdateAvailabilityConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAvailabilityConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.UpdateAvailabilityConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAvailabilityConfigurationWithContext indicates an expected call of UpdateAvailabilityConfigurationWithContext
+func (mr *MockWorkMailAPIMockRecorder) UpdateAvailabilityConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAvailabilityConfigurationWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateAvailabilityConfigurationWithContext), varargs...)
 }
 
 // UpdateDefaultMailDomain mocks base method

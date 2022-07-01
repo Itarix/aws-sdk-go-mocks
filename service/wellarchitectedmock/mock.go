@@ -2065,6 +2065,56 @@ func (mr *MockWellArchitectedAPIMockRecorder) UpdateAnswerWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnswerWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).UpdateAnswerWithContext), varargs...)
 }
 
+// UpdateGlobalSettings mocks base method
+func (m *MockWellArchitectedAPI) UpdateGlobalSettings(arg0 *wellarchitected.UpdateGlobalSettingsInput) (*wellarchitected.UpdateGlobalSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGlobalSettings", arg0)
+	ret0, _ := ret[0].(*wellarchitected.UpdateGlobalSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGlobalSettings indicates an expected call of UpdateGlobalSettings
+func (mr *MockWellArchitectedAPIMockRecorder) UpdateGlobalSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGlobalSettings", reflect.TypeOf((*MockWellArchitectedAPI)(nil).UpdateGlobalSettings), arg0)
+}
+
+// UpdateGlobalSettingsRequest mocks base method
+func (m *MockWellArchitectedAPI) UpdateGlobalSettingsRequest(arg0 *wellarchitected.UpdateGlobalSettingsInput) (*request.Request, *wellarchitected.UpdateGlobalSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGlobalSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.UpdateGlobalSettingsOutput)
+	return ret0, ret1
+}
+
+// UpdateGlobalSettingsRequest indicates an expected call of UpdateGlobalSettingsRequest
+func (mr *MockWellArchitectedAPIMockRecorder) UpdateGlobalSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGlobalSettingsRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).UpdateGlobalSettingsRequest), arg0)
+}
+
+// UpdateGlobalSettingsWithContext mocks base method
+func (m *MockWellArchitectedAPI) UpdateGlobalSettingsWithContext(arg0 context.Context, arg1 *wellarchitected.UpdateGlobalSettingsInput, arg2 ...request.Option) (*wellarchitected.UpdateGlobalSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateGlobalSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.UpdateGlobalSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGlobalSettingsWithContext indicates an expected call of UpdateGlobalSettingsWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) UpdateGlobalSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGlobalSettingsWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).UpdateGlobalSettingsWithContext), varargs...)
+}
+
 // UpdateLensReview mocks base method
 func (m *MockWellArchitectedAPI) UpdateLensReview(arg0 *wellarchitected.UpdateLensReviewInput) (*wellarchitected.UpdateLensReviewOutput, error) {
 	m.ctrl.T.Helper()
