@@ -135,6 +135,56 @@ func (mr *MockQuickSightAPIMockRecorder) CreateAccountCustomizationWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccountCustomizationWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).CreateAccountCustomizationWithContext), varargs...)
 }
 
+// CreateAccountSubscription mocks base method
+func (m *MockQuickSightAPI) CreateAccountSubscription(arg0 *quicksight.CreateAccountSubscriptionInput) (*quicksight.CreateAccountSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAccountSubscription", arg0)
+	ret0, _ := ret[0].(*quicksight.CreateAccountSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAccountSubscription indicates an expected call of CreateAccountSubscription
+func (mr *MockQuickSightAPIMockRecorder) CreateAccountSubscription(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccountSubscription", reflect.TypeOf((*MockQuickSightAPI)(nil).CreateAccountSubscription), arg0)
+}
+
+// CreateAccountSubscriptionRequest mocks base method
+func (m *MockQuickSightAPI) CreateAccountSubscriptionRequest(arg0 *quicksight.CreateAccountSubscriptionInput) (*request.Request, *quicksight.CreateAccountSubscriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAccountSubscriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.CreateAccountSubscriptionOutput)
+	return ret0, ret1
+}
+
+// CreateAccountSubscriptionRequest indicates an expected call of CreateAccountSubscriptionRequest
+func (mr *MockQuickSightAPIMockRecorder) CreateAccountSubscriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccountSubscriptionRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).CreateAccountSubscriptionRequest), arg0)
+}
+
+// CreateAccountSubscriptionWithContext mocks base method
+func (m *MockQuickSightAPI) CreateAccountSubscriptionWithContext(arg0 context.Context, arg1 *quicksight.CreateAccountSubscriptionInput, arg2 ...request.Option) (*quicksight.CreateAccountSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAccountSubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.CreateAccountSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAccountSubscriptionWithContext indicates an expected call of CreateAccountSubscriptionWithContext
+func (mr *MockQuickSightAPIMockRecorder) CreateAccountSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccountSubscriptionWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).CreateAccountSubscriptionWithContext), varargs...)
+}
+
 // CreateAnalysis mocks base method
 func (m *MockQuickSightAPI) CreateAnalysis(arg0 *quicksight.CreateAnalysisInput) (*quicksight.CreateAnalysisOutput, error) {
 	m.ctrl.T.Helper()
@@ -1833,6 +1883,56 @@ func (mr *MockQuickSightAPIMockRecorder) DescribeAccountSettingsWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountSettingsWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAccountSettingsWithContext), varargs...)
+}
+
+// DescribeAccountSubscription mocks base method
+func (m *MockQuickSightAPI) DescribeAccountSubscription(arg0 *quicksight.DescribeAccountSubscriptionInput) (*quicksight.DescribeAccountSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccountSubscription", arg0)
+	ret0, _ := ret[0].(*quicksight.DescribeAccountSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccountSubscription indicates an expected call of DescribeAccountSubscription
+func (mr *MockQuickSightAPIMockRecorder) DescribeAccountSubscription(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountSubscription", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAccountSubscription), arg0)
+}
+
+// DescribeAccountSubscriptionRequest mocks base method
+func (m *MockQuickSightAPI) DescribeAccountSubscriptionRequest(arg0 *quicksight.DescribeAccountSubscriptionInput) (*request.Request, *quicksight.DescribeAccountSubscriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccountSubscriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.DescribeAccountSubscriptionOutput)
+	return ret0, ret1
+}
+
+// DescribeAccountSubscriptionRequest indicates an expected call of DescribeAccountSubscriptionRequest
+func (mr *MockQuickSightAPIMockRecorder) DescribeAccountSubscriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountSubscriptionRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAccountSubscriptionRequest), arg0)
+}
+
+// DescribeAccountSubscriptionWithContext mocks base method
+func (m *MockQuickSightAPI) DescribeAccountSubscriptionWithContext(arg0 context.Context, arg1 *quicksight.DescribeAccountSubscriptionInput, arg2 ...request.Option) (*quicksight.DescribeAccountSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAccountSubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.DescribeAccountSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccountSubscriptionWithContext indicates an expected call of DescribeAccountSubscriptionWithContext
+func (mr *MockQuickSightAPIMockRecorder) DescribeAccountSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountSubscriptionWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAccountSubscriptionWithContext), varargs...)
 }
 
 // DescribeAnalysis mocks base method
