@@ -35,6 +35,56 @@ func (m *MockSyntheticsAPI) EXPECT() *MockSyntheticsAPIMockRecorder {
 	return m.recorder
 }
 
+// AssociateResource mocks base method
+func (m *MockSyntheticsAPI) AssociateResource(arg0 *synthetics.AssociateResourceInput) (*synthetics.AssociateResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateResource", arg0)
+	ret0, _ := ret[0].(*synthetics.AssociateResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateResource indicates an expected call of AssociateResource
+func (mr *MockSyntheticsAPIMockRecorder) AssociateResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateResource", reflect.TypeOf((*MockSyntheticsAPI)(nil).AssociateResource), arg0)
+}
+
+// AssociateResourceRequest mocks base method
+func (m *MockSyntheticsAPI) AssociateResourceRequest(arg0 *synthetics.AssociateResourceInput) (*request.Request, *synthetics.AssociateResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*synthetics.AssociateResourceOutput)
+	return ret0, ret1
+}
+
+// AssociateResourceRequest indicates an expected call of AssociateResourceRequest
+func (mr *MockSyntheticsAPIMockRecorder) AssociateResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateResourceRequest", reflect.TypeOf((*MockSyntheticsAPI)(nil).AssociateResourceRequest), arg0)
+}
+
+// AssociateResourceWithContext mocks base method
+func (m *MockSyntheticsAPI) AssociateResourceWithContext(arg0 context.Context, arg1 *synthetics.AssociateResourceInput, arg2 ...request.Option) (*synthetics.AssociateResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*synthetics.AssociateResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateResourceWithContext indicates an expected call of AssociateResourceWithContext
+func (mr *MockSyntheticsAPIMockRecorder) AssociateResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateResourceWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).AssociateResourceWithContext), varargs...)
+}
+
 // CreateCanary mocks base method
 func (m *MockSyntheticsAPI) CreateCanary(arg0 *synthetics.CreateCanaryInput) (*synthetics.CreateCanaryOutput, error) {
 	m.ctrl.T.Helper()
@@ -85,6 +135,56 @@ func (mr *MockSyntheticsAPIMockRecorder) CreateCanaryWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCanaryWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).CreateCanaryWithContext), varargs...)
 }
 
+// CreateGroup mocks base method
+func (m *MockSyntheticsAPI) CreateGroup(arg0 *synthetics.CreateGroupInput) (*synthetics.CreateGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateGroup", arg0)
+	ret0, _ := ret[0].(*synthetics.CreateGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateGroup indicates an expected call of CreateGroup
+func (mr *MockSyntheticsAPIMockRecorder) CreateGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGroup", reflect.TypeOf((*MockSyntheticsAPI)(nil).CreateGroup), arg0)
+}
+
+// CreateGroupRequest mocks base method
+func (m *MockSyntheticsAPI) CreateGroupRequest(arg0 *synthetics.CreateGroupInput) (*request.Request, *synthetics.CreateGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*synthetics.CreateGroupOutput)
+	return ret0, ret1
+}
+
+// CreateGroupRequest indicates an expected call of CreateGroupRequest
+func (mr *MockSyntheticsAPIMockRecorder) CreateGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGroupRequest", reflect.TypeOf((*MockSyntheticsAPI)(nil).CreateGroupRequest), arg0)
+}
+
+// CreateGroupWithContext mocks base method
+func (m *MockSyntheticsAPI) CreateGroupWithContext(arg0 context.Context, arg1 *synthetics.CreateGroupInput, arg2 ...request.Option) (*synthetics.CreateGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*synthetics.CreateGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateGroupWithContext indicates an expected call of CreateGroupWithContext
+func (mr *MockSyntheticsAPIMockRecorder) CreateGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGroupWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).CreateGroupWithContext), varargs...)
+}
+
 // DeleteCanary mocks base method
 func (m *MockSyntheticsAPI) DeleteCanary(arg0 *synthetics.DeleteCanaryInput) (*synthetics.DeleteCanaryOutput, error) {
 	m.ctrl.T.Helper()
@@ -133,6 +233,56 @@ func (mr *MockSyntheticsAPIMockRecorder) DeleteCanaryWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCanaryWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).DeleteCanaryWithContext), varargs...)
+}
+
+// DeleteGroup mocks base method
+func (m *MockSyntheticsAPI) DeleteGroup(arg0 *synthetics.DeleteGroupInput) (*synthetics.DeleteGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteGroup", arg0)
+	ret0, _ := ret[0].(*synthetics.DeleteGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteGroup indicates an expected call of DeleteGroup
+func (mr *MockSyntheticsAPIMockRecorder) DeleteGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGroup", reflect.TypeOf((*MockSyntheticsAPI)(nil).DeleteGroup), arg0)
+}
+
+// DeleteGroupRequest mocks base method
+func (m *MockSyntheticsAPI) DeleteGroupRequest(arg0 *synthetics.DeleteGroupInput) (*request.Request, *synthetics.DeleteGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*synthetics.DeleteGroupOutput)
+	return ret0, ret1
+}
+
+// DeleteGroupRequest indicates an expected call of DeleteGroupRequest
+func (mr *MockSyntheticsAPIMockRecorder) DeleteGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGroupRequest", reflect.TypeOf((*MockSyntheticsAPI)(nil).DeleteGroupRequest), arg0)
+}
+
+// DeleteGroupWithContext mocks base method
+func (m *MockSyntheticsAPI) DeleteGroupWithContext(arg0 context.Context, arg1 *synthetics.DeleteGroupInput, arg2 ...request.Option) (*synthetics.DeleteGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*synthetics.DeleteGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteGroupWithContext indicates an expected call of DeleteGroupWithContext
+func (mr *MockSyntheticsAPIMockRecorder) DeleteGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGroupWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).DeleteGroupWithContext), varargs...)
 }
 
 // DescribeCanaries mocks base method
@@ -384,6 +534,56 @@ func (mr *MockSyntheticsAPIMockRecorder) DescribeRuntimeVersionsWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRuntimeVersionsWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).DescribeRuntimeVersionsWithContext), varargs...)
 }
 
+// DisassociateResource mocks base method
+func (m *MockSyntheticsAPI) DisassociateResource(arg0 *synthetics.DisassociateResourceInput) (*synthetics.DisassociateResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateResource", arg0)
+	ret0, _ := ret[0].(*synthetics.DisassociateResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateResource indicates an expected call of DisassociateResource
+func (mr *MockSyntheticsAPIMockRecorder) DisassociateResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateResource", reflect.TypeOf((*MockSyntheticsAPI)(nil).DisassociateResource), arg0)
+}
+
+// DisassociateResourceRequest mocks base method
+func (m *MockSyntheticsAPI) DisassociateResourceRequest(arg0 *synthetics.DisassociateResourceInput) (*request.Request, *synthetics.DisassociateResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*synthetics.DisassociateResourceOutput)
+	return ret0, ret1
+}
+
+// DisassociateResourceRequest indicates an expected call of DisassociateResourceRequest
+func (mr *MockSyntheticsAPIMockRecorder) DisassociateResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateResourceRequest", reflect.TypeOf((*MockSyntheticsAPI)(nil).DisassociateResourceRequest), arg0)
+}
+
+// DisassociateResourceWithContext mocks base method
+func (m *MockSyntheticsAPI) DisassociateResourceWithContext(arg0 context.Context, arg1 *synthetics.DisassociateResourceInput, arg2 ...request.Option) (*synthetics.DisassociateResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*synthetics.DisassociateResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateResourceWithContext indicates an expected call of DisassociateResourceWithContext
+func (mr *MockSyntheticsAPIMockRecorder) DisassociateResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateResourceWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).DisassociateResourceWithContext), varargs...)
+}
+
 // GetCanary mocks base method
 func (m *MockSyntheticsAPI) GetCanary(arg0 *synthetics.GetCanaryInput) (*synthetics.GetCanaryOutput, error) {
 	m.ctrl.T.Helper()
@@ -515,6 +715,305 @@ func (mr *MockSyntheticsAPIMockRecorder) GetCanaryWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCanaryWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).GetCanaryWithContext), varargs...)
+}
+
+// GetGroup mocks base method
+func (m *MockSyntheticsAPI) GetGroup(arg0 *synthetics.GetGroupInput) (*synthetics.GetGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetGroup", arg0)
+	ret0, _ := ret[0].(*synthetics.GetGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetGroup indicates an expected call of GetGroup
+func (mr *MockSyntheticsAPIMockRecorder) GetGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGroup", reflect.TypeOf((*MockSyntheticsAPI)(nil).GetGroup), arg0)
+}
+
+// GetGroupRequest mocks base method
+func (m *MockSyntheticsAPI) GetGroupRequest(arg0 *synthetics.GetGroupInput) (*request.Request, *synthetics.GetGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*synthetics.GetGroupOutput)
+	return ret0, ret1
+}
+
+// GetGroupRequest indicates an expected call of GetGroupRequest
+func (mr *MockSyntheticsAPIMockRecorder) GetGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGroupRequest", reflect.TypeOf((*MockSyntheticsAPI)(nil).GetGroupRequest), arg0)
+}
+
+// GetGroupWithContext mocks base method
+func (m *MockSyntheticsAPI) GetGroupWithContext(arg0 context.Context, arg1 *synthetics.GetGroupInput, arg2 ...request.Option) (*synthetics.GetGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*synthetics.GetGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetGroupWithContext indicates an expected call of GetGroupWithContext
+func (mr *MockSyntheticsAPIMockRecorder) GetGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGroupWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).GetGroupWithContext), varargs...)
+}
+
+// ListAssociatedGroups mocks base method
+func (m *MockSyntheticsAPI) ListAssociatedGroups(arg0 *synthetics.ListAssociatedGroupsInput) (*synthetics.ListAssociatedGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssociatedGroups", arg0)
+	ret0, _ := ret[0].(*synthetics.ListAssociatedGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssociatedGroups indicates an expected call of ListAssociatedGroups
+func (mr *MockSyntheticsAPIMockRecorder) ListAssociatedGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssociatedGroups", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListAssociatedGroups), arg0)
+}
+
+// ListAssociatedGroupsPages mocks base method
+func (m *MockSyntheticsAPI) ListAssociatedGroupsPages(arg0 *synthetics.ListAssociatedGroupsInput, arg1 func(*synthetics.ListAssociatedGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssociatedGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssociatedGroupsPages indicates an expected call of ListAssociatedGroupsPages
+func (mr *MockSyntheticsAPIMockRecorder) ListAssociatedGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssociatedGroupsPages", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListAssociatedGroupsPages), arg0, arg1)
+}
+
+// ListAssociatedGroupsPagesWithContext mocks base method
+func (m *MockSyntheticsAPI) ListAssociatedGroupsPagesWithContext(arg0 context.Context, arg1 *synthetics.ListAssociatedGroupsInput, arg2 func(*synthetics.ListAssociatedGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssociatedGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssociatedGroupsPagesWithContext indicates an expected call of ListAssociatedGroupsPagesWithContext
+func (mr *MockSyntheticsAPIMockRecorder) ListAssociatedGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssociatedGroupsPagesWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListAssociatedGroupsPagesWithContext), varargs...)
+}
+
+// ListAssociatedGroupsRequest mocks base method
+func (m *MockSyntheticsAPI) ListAssociatedGroupsRequest(arg0 *synthetics.ListAssociatedGroupsInput) (*request.Request, *synthetics.ListAssociatedGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssociatedGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*synthetics.ListAssociatedGroupsOutput)
+	return ret0, ret1
+}
+
+// ListAssociatedGroupsRequest indicates an expected call of ListAssociatedGroupsRequest
+func (mr *MockSyntheticsAPIMockRecorder) ListAssociatedGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssociatedGroupsRequest", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListAssociatedGroupsRequest), arg0)
+}
+
+// ListAssociatedGroupsWithContext mocks base method
+func (m *MockSyntheticsAPI) ListAssociatedGroupsWithContext(arg0 context.Context, arg1 *synthetics.ListAssociatedGroupsInput, arg2 ...request.Option) (*synthetics.ListAssociatedGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssociatedGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*synthetics.ListAssociatedGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssociatedGroupsWithContext indicates an expected call of ListAssociatedGroupsWithContext
+func (mr *MockSyntheticsAPIMockRecorder) ListAssociatedGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssociatedGroupsWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListAssociatedGroupsWithContext), varargs...)
+}
+
+// ListGroupResources mocks base method
+func (m *MockSyntheticsAPI) ListGroupResources(arg0 *synthetics.ListGroupResourcesInput) (*synthetics.ListGroupResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGroupResources", arg0)
+	ret0, _ := ret[0].(*synthetics.ListGroupResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListGroupResources indicates an expected call of ListGroupResources
+func (mr *MockSyntheticsAPIMockRecorder) ListGroupResources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupResources", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListGroupResources), arg0)
+}
+
+// ListGroupResourcesPages mocks base method
+func (m *MockSyntheticsAPI) ListGroupResourcesPages(arg0 *synthetics.ListGroupResourcesInput, arg1 func(*synthetics.ListGroupResourcesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGroupResourcesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGroupResourcesPages indicates an expected call of ListGroupResourcesPages
+func (mr *MockSyntheticsAPIMockRecorder) ListGroupResourcesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupResourcesPages", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListGroupResourcesPages), arg0, arg1)
+}
+
+// ListGroupResourcesPagesWithContext mocks base method
+func (m *MockSyntheticsAPI) ListGroupResourcesPagesWithContext(arg0 context.Context, arg1 *synthetics.ListGroupResourcesInput, arg2 func(*synthetics.ListGroupResourcesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGroupResourcesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGroupResourcesPagesWithContext indicates an expected call of ListGroupResourcesPagesWithContext
+func (mr *MockSyntheticsAPIMockRecorder) ListGroupResourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupResourcesPagesWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListGroupResourcesPagesWithContext), varargs...)
+}
+
+// ListGroupResourcesRequest mocks base method
+func (m *MockSyntheticsAPI) ListGroupResourcesRequest(arg0 *synthetics.ListGroupResourcesInput) (*request.Request, *synthetics.ListGroupResourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGroupResourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*synthetics.ListGroupResourcesOutput)
+	return ret0, ret1
+}
+
+// ListGroupResourcesRequest indicates an expected call of ListGroupResourcesRequest
+func (mr *MockSyntheticsAPIMockRecorder) ListGroupResourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupResourcesRequest", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListGroupResourcesRequest), arg0)
+}
+
+// ListGroupResourcesWithContext mocks base method
+func (m *MockSyntheticsAPI) ListGroupResourcesWithContext(arg0 context.Context, arg1 *synthetics.ListGroupResourcesInput, arg2 ...request.Option) (*synthetics.ListGroupResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGroupResourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*synthetics.ListGroupResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListGroupResourcesWithContext indicates an expected call of ListGroupResourcesWithContext
+func (mr *MockSyntheticsAPIMockRecorder) ListGroupResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupResourcesWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListGroupResourcesWithContext), varargs...)
+}
+
+// ListGroups mocks base method
+func (m *MockSyntheticsAPI) ListGroups(arg0 *synthetics.ListGroupsInput) (*synthetics.ListGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGroups", arg0)
+	ret0, _ := ret[0].(*synthetics.ListGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListGroups indicates an expected call of ListGroups
+func (mr *MockSyntheticsAPIMockRecorder) ListGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroups", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListGroups), arg0)
+}
+
+// ListGroupsPages mocks base method
+func (m *MockSyntheticsAPI) ListGroupsPages(arg0 *synthetics.ListGroupsInput, arg1 func(*synthetics.ListGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGroupsPages indicates an expected call of ListGroupsPages
+func (mr *MockSyntheticsAPIMockRecorder) ListGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsPages", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListGroupsPages), arg0, arg1)
+}
+
+// ListGroupsPagesWithContext mocks base method
+func (m *MockSyntheticsAPI) ListGroupsPagesWithContext(arg0 context.Context, arg1 *synthetics.ListGroupsInput, arg2 func(*synthetics.ListGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGroupsPagesWithContext indicates an expected call of ListGroupsPagesWithContext
+func (mr *MockSyntheticsAPIMockRecorder) ListGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsPagesWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListGroupsPagesWithContext), varargs...)
+}
+
+// ListGroupsRequest mocks base method
+func (m *MockSyntheticsAPI) ListGroupsRequest(arg0 *synthetics.ListGroupsInput) (*request.Request, *synthetics.ListGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*synthetics.ListGroupsOutput)
+	return ret0, ret1
+}
+
+// ListGroupsRequest indicates an expected call of ListGroupsRequest
+func (mr *MockSyntheticsAPIMockRecorder) ListGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsRequest", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListGroupsRequest), arg0)
+}
+
+// ListGroupsWithContext mocks base method
+func (m *MockSyntheticsAPI) ListGroupsWithContext(arg0 context.Context, arg1 *synthetics.ListGroupsInput, arg2 ...request.Option) (*synthetics.ListGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*synthetics.ListGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListGroupsWithContext indicates an expected call of ListGroupsWithContext
+func (mr *MockSyntheticsAPIMockRecorder) ListGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsWithContext", reflect.TypeOf((*MockSyntheticsAPI)(nil).ListGroupsWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
