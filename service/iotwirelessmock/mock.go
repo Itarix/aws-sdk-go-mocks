@@ -2285,6 +2285,106 @@ func (mr *MockIoTWirelessAPIMockRecorder) GetPartnerAccountWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPartnerAccountWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetPartnerAccountWithContext), varargs...)
 }
 
+// GetPosition mocks base method
+func (m *MockIoTWirelessAPI) GetPosition(arg0 *iotwireless.GetPositionInput) (*iotwireless.GetPositionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPosition", arg0)
+	ret0, _ := ret[0].(*iotwireless.GetPositionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPosition indicates an expected call of GetPosition
+func (mr *MockIoTWirelessAPIMockRecorder) GetPosition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPosition", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetPosition), arg0)
+}
+
+// GetPositionConfiguration mocks base method
+func (m *MockIoTWirelessAPI) GetPositionConfiguration(arg0 *iotwireless.GetPositionConfigurationInput) (*iotwireless.GetPositionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPositionConfiguration", arg0)
+	ret0, _ := ret[0].(*iotwireless.GetPositionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPositionConfiguration indicates an expected call of GetPositionConfiguration
+func (mr *MockIoTWirelessAPIMockRecorder) GetPositionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPositionConfiguration", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetPositionConfiguration), arg0)
+}
+
+// GetPositionConfigurationRequest mocks base method
+func (m *MockIoTWirelessAPI) GetPositionConfigurationRequest(arg0 *iotwireless.GetPositionConfigurationInput) (*request.Request, *iotwireless.GetPositionConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPositionConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.GetPositionConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetPositionConfigurationRequest indicates an expected call of GetPositionConfigurationRequest
+func (mr *MockIoTWirelessAPIMockRecorder) GetPositionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPositionConfigurationRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetPositionConfigurationRequest), arg0)
+}
+
+// GetPositionConfigurationWithContext mocks base method
+func (m *MockIoTWirelessAPI) GetPositionConfigurationWithContext(arg0 context.Context, arg1 *iotwireless.GetPositionConfigurationInput, arg2 ...request.Option) (*iotwireless.GetPositionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPositionConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.GetPositionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPositionConfigurationWithContext indicates an expected call of GetPositionConfigurationWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) GetPositionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPositionConfigurationWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetPositionConfigurationWithContext), varargs...)
+}
+
+// GetPositionRequest mocks base method
+func (m *MockIoTWirelessAPI) GetPositionRequest(arg0 *iotwireless.GetPositionInput) (*request.Request, *iotwireless.GetPositionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPositionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.GetPositionOutput)
+	return ret0, ret1
+}
+
+// GetPositionRequest indicates an expected call of GetPositionRequest
+func (mr *MockIoTWirelessAPIMockRecorder) GetPositionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPositionRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetPositionRequest), arg0)
+}
+
+// GetPositionWithContext mocks base method
+func (m *MockIoTWirelessAPI) GetPositionWithContext(arg0 context.Context, arg1 *iotwireless.GetPositionInput, arg2 ...request.Option) (*iotwireless.GetPositionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPositionWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.GetPositionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPositionWithContext indicates an expected call of GetPositionWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) GetPositionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPositionWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetPositionWithContext), varargs...)
+}
+
 // GetResourceEventConfiguration mocks base method
 func (m *MockIoTWirelessAPI) GetResourceEventConfiguration(arg0 *iotwireless.GetResourceEventConfigurationInput) (*iotwireless.GetResourceEventConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -3483,6 +3583,89 @@ func (mr *MockIoTWirelessAPIMockRecorder) ListPartnerAccountsWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPartnerAccountsWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListPartnerAccountsWithContext), varargs...)
 }
 
+// ListPositionConfigurations mocks base method
+func (m *MockIoTWirelessAPI) ListPositionConfigurations(arg0 *iotwireless.ListPositionConfigurationsInput) (*iotwireless.ListPositionConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPositionConfigurations", arg0)
+	ret0, _ := ret[0].(*iotwireless.ListPositionConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPositionConfigurations indicates an expected call of ListPositionConfigurations
+func (mr *MockIoTWirelessAPIMockRecorder) ListPositionConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPositionConfigurations", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListPositionConfigurations), arg0)
+}
+
+// ListPositionConfigurationsPages mocks base method
+func (m *MockIoTWirelessAPI) ListPositionConfigurationsPages(arg0 *iotwireless.ListPositionConfigurationsInput, arg1 func(*iotwireless.ListPositionConfigurationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPositionConfigurationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPositionConfigurationsPages indicates an expected call of ListPositionConfigurationsPages
+func (mr *MockIoTWirelessAPIMockRecorder) ListPositionConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPositionConfigurationsPages", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListPositionConfigurationsPages), arg0, arg1)
+}
+
+// ListPositionConfigurationsPagesWithContext mocks base method
+func (m *MockIoTWirelessAPI) ListPositionConfigurationsPagesWithContext(arg0 context.Context, arg1 *iotwireless.ListPositionConfigurationsInput, arg2 func(*iotwireless.ListPositionConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPositionConfigurationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPositionConfigurationsPagesWithContext indicates an expected call of ListPositionConfigurationsPagesWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) ListPositionConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPositionConfigurationsPagesWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListPositionConfigurationsPagesWithContext), varargs...)
+}
+
+// ListPositionConfigurationsRequest mocks base method
+func (m *MockIoTWirelessAPI) ListPositionConfigurationsRequest(arg0 *iotwireless.ListPositionConfigurationsInput) (*request.Request, *iotwireless.ListPositionConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPositionConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.ListPositionConfigurationsOutput)
+	return ret0, ret1
+}
+
+// ListPositionConfigurationsRequest indicates an expected call of ListPositionConfigurationsRequest
+func (mr *MockIoTWirelessAPIMockRecorder) ListPositionConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPositionConfigurationsRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListPositionConfigurationsRequest), arg0)
+}
+
+// ListPositionConfigurationsWithContext mocks base method
+func (m *MockIoTWirelessAPI) ListPositionConfigurationsWithContext(arg0 context.Context, arg1 *iotwireless.ListPositionConfigurationsInput, arg2 ...request.Option) (*iotwireless.ListPositionConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPositionConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.ListPositionConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPositionConfigurationsWithContext indicates an expected call of ListPositionConfigurationsWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) ListPositionConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPositionConfigurationsWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListPositionConfigurationsWithContext), varargs...)
+}
+
 // ListQueuedMessages mocks base method
 func (m *MockIoTWirelessAPI) ListQueuedMessages(arg0 *iotwireless.ListQueuedMessagesInput) (*iotwireless.ListQueuedMessagesOutput, error) {
 	m.ctrl.T.Helper()
@@ -3913,6 +4096,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) ListWirelessGatewaysWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWirelessGatewaysWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListWirelessGatewaysWithContext), varargs...)
+}
+
+// PutPositionConfiguration mocks base method
+func (m *MockIoTWirelessAPI) PutPositionConfiguration(arg0 *iotwireless.PutPositionConfigurationInput) (*iotwireless.PutPositionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPositionConfiguration", arg0)
+	ret0, _ := ret[0].(*iotwireless.PutPositionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPositionConfiguration indicates an expected call of PutPositionConfiguration
+func (mr *MockIoTWirelessAPIMockRecorder) PutPositionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPositionConfiguration", reflect.TypeOf((*MockIoTWirelessAPI)(nil).PutPositionConfiguration), arg0)
+}
+
+// PutPositionConfigurationRequest mocks base method
+func (m *MockIoTWirelessAPI) PutPositionConfigurationRequest(arg0 *iotwireless.PutPositionConfigurationInput) (*request.Request, *iotwireless.PutPositionConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPositionConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.PutPositionConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutPositionConfigurationRequest indicates an expected call of PutPositionConfigurationRequest
+func (mr *MockIoTWirelessAPIMockRecorder) PutPositionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPositionConfigurationRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).PutPositionConfigurationRequest), arg0)
+}
+
+// PutPositionConfigurationWithContext mocks base method
+func (m *MockIoTWirelessAPI) PutPositionConfigurationWithContext(arg0 context.Context, arg1 *iotwireless.PutPositionConfigurationInput, arg2 ...request.Option) (*iotwireless.PutPositionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutPositionConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.PutPositionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPositionConfigurationWithContext indicates an expected call of PutPositionConfigurationWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) PutPositionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPositionConfigurationWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).PutPositionConfigurationWithContext), varargs...)
 }
 
 // PutResourceLogLevel mocks base method
@@ -4863,6 +5096,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) UpdatePartnerAccountWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePartnerAccountWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdatePartnerAccountWithContext), varargs...)
+}
+
+// UpdatePosition mocks base method
+func (m *MockIoTWirelessAPI) UpdatePosition(arg0 *iotwireless.UpdatePositionInput) (*iotwireless.UpdatePositionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePosition", arg0)
+	ret0, _ := ret[0].(*iotwireless.UpdatePositionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePosition indicates an expected call of UpdatePosition
+func (mr *MockIoTWirelessAPIMockRecorder) UpdatePosition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePosition", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdatePosition), arg0)
+}
+
+// UpdatePositionRequest mocks base method
+func (m *MockIoTWirelessAPI) UpdatePositionRequest(arg0 *iotwireless.UpdatePositionInput) (*request.Request, *iotwireless.UpdatePositionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePositionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.UpdatePositionOutput)
+	return ret0, ret1
+}
+
+// UpdatePositionRequest indicates an expected call of UpdatePositionRequest
+func (mr *MockIoTWirelessAPIMockRecorder) UpdatePositionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePositionRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdatePositionRequest), arg0)
+}
+
+// UpdatePositionWithContext mocks base method
+func (m *MockIoTWirelessAPI) UpdatePositionWithContext(arg0 context.Context, arg1 *iotwireless.UpdatePositionInput, arg2 ...request.Option) (*iotwireless.UpdatePositionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdatePositionWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.UpdatePositionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePositionWithContext indicates an expected call of UpdatePositionWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) UpdatePositionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePositionWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdatePositionWithContext), varargs...)
 }
 
 // UpdateResourceEventConfiguration mocks base method

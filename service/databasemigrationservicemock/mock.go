@@ -4027,6 +4027,56 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) TestConnectionWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestConnectionWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).TestConnectionWithContext), varargs...)
 }
 
+// UpdateSubscriptionsToEventBridge mocks base method
+func (m *MockDatabaseMigrationServiceAPI) UpdateSubscriptionsToEventBridge(arg0 *databasemigrationservice.UpdateSubscriptionsToEventBridgeInput) (*databasemigrationservice.UpdateSubscriptionsToEventBridgeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSubscriptionsToEventBridge", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.UpdateSubscriptionsToEventBridgeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSubscriptionsToEventBridge indicates an expected call of UpdateSubscriptionsToEventBridge
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) UpdateSubscriptionsToEventBridge(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubscriptionsToEventBridge", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).UpdateSubscriptionsToEventBridge), arg0)
+}
+
+// UpdateSubscriptionsToEventBridgeRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) UpdateSubscriptionsToEventBridgeRequest(arg0 *databasemigrationservice.UpdateSubscriptionsToEventBridgeInput) (*request.Request, *databasemigrationservice.UpdateSubscriptionsToEventBridgeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSubscriptionsToEventBridgeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.UpdateSubscriptionsToEventBridgeOutput)
+	return ret0, ret1
+}
+
+// UpdateSubscriptionsToEventBridgeRequest indicates an expected call of UpdateSubscriptionsToEventBridgeRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) UpdateSubscriptionsToEventBridgeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubscriptionsToEventBridgeRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).UpdateSubscriptionsToEventBridgeRequest), arg0)
+}
+
+// UpdateSubscriptionsToEventBridgeWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) UpdateSubscriptionsToEventBridgeWithContext(arg0 context.Context, arg1 *databasemigrationservice.UpdateSubscriptionsToEventBridgeInput, arg2 ...request.Option) (*databasemigrationservice.UpdateSubscriptionsToEventBridgeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSubscriptionsToEventBridgeWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.UpdateSubscriptionsToEventBridgeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSubscriptionsToEventBridgeWithContext indicates an expected call of UpdateSubscriptionsToEventBridgeWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) UpdateSubscriptionsToEventBridgeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubscriptionsToEventBridgeWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).UpdateSubscriptionsToEventBridgeWithContext), varargs...)
+}
+
 // WaitUntilEndpointDeleted mocks base method
 func (m *MockDatabaseMigrationServiceAPI) WaitUntilEndpointDeleted(arg0 *databasemigrationservice.DescribeEndpointsInput) error {
 	m.ctrl.T.Helper()
