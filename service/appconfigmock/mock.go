@@ -235,6 +235,106 @@ func (mr *MockAppConfigAPIMockRecorder) CreateEnvironmentWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEnvironmentWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).CreateEnvironmentWithContext), varargs...)
 }
 
+// CreateExtension mocks base method
+func (m *MockAppConfigAPI) CreateExtension(arg0 *appconfig.CreateExtensionInput) (*appconfig.CreateExtensionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateExtension", arg0)
+	ret0, _ := ret[0].(*appconfig.CreateExtensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateExtension indicates an expected call of CreateExtension
+func (mr *MockAppConfigAPIMockRecorder) CreateExtension(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExtension", reflect.TypeOf((*MockAppConfigAPI)(nil).CreateExtension), arg0)
+}
+
+// CreateExtensionAssociation mocks base method
+func (m *MockAppConfigAPI) CreateExtensionAssociation(arg0 *appconfig.CreateExtensionAssociationInput) (*appconfig.CreateExtensionAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateExtensionAssociation", arg0)
+	ret0, _ := ret[0].(*appconfig.CreateExtensionAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateExtensionAssociation indicates an expected call of CreateExtensionAssociation
+func (mr *MockAppConfigAPIMockRecorder) CreateExtensionAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExtensionAssociation", reflect.TypeOf((*MockAppConfigAPI)(nil).CreateExtensionAssociation), arg0)
+}
+
+// CreateExtensionAssociationRequest mocks base method
+func (m *MockAppConfigAPI) CreateExtensionAssociationRequest(arg0 *appconfig.CreateExtensionAssociationInput) (*request.Request, *appconfig.CreateExtensionAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateExtensionAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appconfig.CreateExtensionAssociationOutput)
+	return ret0, ret1
+}
+
+// CreateExtensionAssociationRequest indicates an expected call of CreateExtensionAssociationRequest
+func (mr *MockAppConfigAPIMockRecorder) CreateExtensionAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExtensionAssociationRequest", reflect.TypeOf((*MockAppConfigAPI)(nil).CreateExtensionAssociationRequest), arg0)
+}
+
+// CreateExtensionAssociationWithContext mocks base method
+func (m *MockAppConfigAPI) CreateExtensionAssociationWithContext(arg0 context.Context, arg1 *appconfig.CreateExtensionAssociationInput, arg2 ...request.Option) (*appconfig.CreateExtensionAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateExtensionAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*appconfig.CreateExtensionAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateExtensionAssociationWithContext indicates an expected call of CreateExtensionAssociationWithContext
+func (mr *MockAppConfigAPIMockRecorder) CreateExtensionAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExtensionAssociationWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).CreateExtensionAssociationWithContext), varargs...)
+}
+
+// CreateExtensionRequest mocks base method
+func (m *MockAppConfigAPI) CreateExtensionRequest(arg0 *appconfig.CreateExtensionInput) (*request.Request, *appconfig.CreateExtensionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateExtensionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appconfig.CreateExtensionOutput)
+	return ret0, ret1
+}
+
+// CreateExtensionRequest indicates an expected call of CreateExtensionRequest
+func (mr *MockAppConfigAPIMockRecorder) CreateExtensionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExtensionRequest", reflect.TypeOf((*MockAppConfigAPI)(nil).CreateExtensionRequest), arg0)
+}
+
+// CreateExtensionWithContext mocks base method
+func (m *MockAppConfigAPI) CreateExtensionWithContext(arg0 context.Context, arg1 *appconfig.CreateExtensionInput, arg2 ...request.Option) (*appconfig.CreateExtensionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateExtensionWithContext", varargs...)
+	ret0, _ := ret[0].(*appconfig.CreateExtensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateExtensionWithContext indicates an expected call of CreateExtensionWithContext
+func (mr *MockAppConfigAPIMockRecorder) CreateExtensionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExtensionWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).CreateExtensionWithContext), varargs...)
+}
+
 // CreateHostedConfigurationVersion mocks base method
 func (m *MockAppConfigAPI) CreateHostedConfigurationVersion(arg0 *appconfig.CreateHostedConfigurationVersionInput) (*appconfig.CreateHostedConfigurationVersionOutput, error) {
 	m.ctrl.T.Helper()
@@ -483,6 +583,106 @@ func (mr *MockAppConfigAPIMockRecorder) DeleteEnvironmentWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEnvironmentWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).DeleteEnvironmentWithContext), varargs...)
+}
+
+// DeleteExtension mocks base method
+func (m *MockAppConfigAPI) DeleteExtension(arg0 *appconfig.DeleteExtensionInput) (*appconfig.DeleteExtensionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteExtension", arg0)
+	ret0, _ := ret[0].(*appconfig.DeleteExtensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteExtension indicates an expected call of DeleteExtension
+func (mr *MockAppConfigAPIMockRecorder) DeleteExtension(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExtension", reflect.TypeOf((*MockAppConfigAPI)(nil).DeleteExtension), arg0)
+}
+
+// DeleteExtensionAssociation mocks base method
+func (m *MockAppConfigAPI) DeleteExtensionAssociation(arg0 *appconfig.DeleteExtensionAssociationInput) (*appconfig.DeleteExtensionAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteExtensionAssociation", arg0)
+	ret0, _ := ret[0].(*appconfig.DeleteExtensionAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteExtensionAssociation indicates an expected call of DeleteExtensionAssociation
+func (mr *MockAppConfigAPIMockRecorder) DeleteExtensionAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExtensionAssociation", reflect.TypeOf((*MockAppConfigAPI)(nil).DeleteExtensionAssociation), arg0)
+}
+
+// DeleteExtensionAssociationRequest mocks base method
+func (m *MockAppConfigAPI) DeleteExtensionAssociationRequest(arg0 *appconfig.DeleteExtensionAssociationInput) (*request.Request, *appconfig.DeleteExtensionAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteExtensionAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appconfig.DeleteExtensionAssociationOutput)
+	return ret0, ret1
+}
+
+// DeleteExtensionAssociationRequest indicates an expected call of DeleteExtensionAssociationRequest
+func (mr *MockAppConfigAPIMockRecorder) DeleteExtensionAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExtensionAssociationRequest", reflect.TypeOf((*MockAppConfigAPI)(nil).DeleteExtensionAssociationRequest), arg0)
+}
+
+// DeleteExtensionAssociationWithContext mocks base method
+func (m *MockAppConfigAPI) DeleteExtensionAssociationWithContext(arg0 context.Context, arg1 *appconfig.DeleteExtensionAssociationInput, arg2 ...request.Option) (*appconfig.DeleteExtensionAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteExtensionAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*appconfig.DeleteExtensionAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteExtensionAssociationWithContext indicates an expected call of DeleteExtensionAssociationWithContext
+func (mr *MockAppConfigAPIMockRecorder) DeleteExtensionAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExtensionAssociationWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).DeleteExtensionAssociationWithContext), varargs...)
+}
+
+// DeleteExtensionRequest mocks base method
+func (m *MockAppConfigAPI) DeleteExtensionRequest(arg0 *appconfig.DeleteExtensionInput) (*request.Request, *appconfig.DeleteExtensionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteExtensionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appconfig.DeleteExtensionOutput)
+	return ret0, ret1
+}
+
+// DeleteExtensionRequest indicates an expected call of DeleteExtensionRequest
+func (mr *MockAppConfigAPIMockRecorder) DeleteExtensionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExtensionRequest", reflect.TypeOf((*MockAppConfigAPI)(nil).DeleteExtensionRequest), arg0)
+}
+
+// DeleteExtensionWithContext mocks base method
+func (m *MockAppConfigAPI) DeleteExtensionWithContext(arg0 context.Context, arg1 *appconfig.DeleteExtensionInput, arg2 ...request.Option) (*appconfig.DeleteExtensionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteExtensionWithContext", varargs...)
+	ret0, _ := ret[0].(*appconfig.DeleteExtensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteExtensionWithContext indicates an expected call of DeleteExtensionWithContext
+func (mr *MockAppConfigAPIMockRecorder) DeleteExtensionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteExtensionWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).DeleteExtensionWithContext), varargs...)
 }
 
 // DeleteHostedConfigurationVersion mocks base method
@@ -833,6 +1033,106 @@ func (mr *MockAppConfigAPIMockRecorder) GetEnvironmentWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnvironmentWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).GetEnvironmentWithContext), varargs...)
+}
+
+// GetExtension mocks base method
+func (m *MockAppConfigAPI) GetExtension(arg0 *appconfig.GetExtensionInput) (*appconfig.GetExtensionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetExtension", arg0)
+	ret0, _ := ret[0].(*appconfig.GetExtensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetExtension indicates an expected call of GetExtension
+func (mr *MockAppConfigAPIMockRecorder) GetExtension(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExtension", reflect.TypeOf((*MockAppConfigAPI)(nil).GetExtension), arg0)
+}
+
+// GetExtensionAssociation mocks base method
+func (m *MockAppConfigAPI) GetExtensionAssociation(arg0 *appconfig.GetExtensionAssociationInput) (*appconfig.GetExtensionAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetExtensionAssociation", arg0)
+	ret0, _ := ret[0].(*appconfig.GetExtensionAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetExtensionAssociation indicates an expected call of GetExtensionAssociation
+func (mr *MockAppConfigAPIMockRecorder) GetExtensionAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExtensionAssociation", reflect.TypeOf((*MockAppConfigAPI)(nil).GetExtensionAssociation), arg0)
+}
+
+// GetExtensionAssociationRequest mocks base method
+func (m *MockAppConfigAPI) GetExtensionAssociationRequest(arg0 *appconfig.GetExtensionAssociationInput) (*request.Request, *appconfig.GetExtensionAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetExtensionAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appconfig.GetExtensionAssociationOutput)
+	return ret0, ret1
+}
+
+// GetExtensionAssociationRequest indicates an expected call of GetExtensionAssociationRequest
+func (mr *MockAppConfigAPIMockRecorder) GetExtensionAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExtensionAssociationRequest", reflect.TypeOf((*MockAppConfigAPI)(nil).GetExtensionAssociationRequest), arg0)
+}
+
+// GetExtensionAssociationWithContext mocks base method
+func (m *MockAppConfigAPI) GetExtensionAssociationWithContext(arg0 context.Context, arg1 *appconfig.GetExtensionAssociationInput, arg2 ...request.Option) (*appconfig.GetExtensionAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetExtensionAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*appconfig.GetExtensionAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetExtensionAssociationWithContext indicates an expected call of GetExtensionAssociationWithContext
+func (mr *MockAppConfigAPIMockRecorder) GetExtensionAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExtensionAssociationWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).GetExtensionAssociationWithContext), varargs...)
+}
+
+// GetExtensionRequest mocks base method
+func (m *MockAppConfigAPI) GetExtensionRequest(arg0 *appconfig.GetExtensionInput) (*request.Request, *appconfig.GetExtensionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetExtensionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appconfig.GetExtensionOutput)
+	return ret0, ret1
+}
+
+// GetExtensionRequest indicates an expected call of GetExtensionRequest
+func (mr *MockAppConfigAPIMockRecorder) GetExtensionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExtensionRequest", reflect.TypeOf((*MockAppConfigAPI)(nil).GetExtensionRequest), arg0)
+}
+
+// GetExtensionWithContext mocks base method
+func (m *MockAppConfigAPI) GetExtensionWithContext(arg0 context.Context, arg1 *appconfig.GetExtensionInput, arg2 ...request.Option) (*appconfig.GetExtensionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetExtensionWithContext", varargs...)
+	ret0, _ := ret[0].(*appconfig.GetExtensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetExtensionWithContext indicates an expected call of GetExtensionWithContext
+func (mr *MockAppConfigAPIMockRecorder) GetExtensionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExtensionWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).GetExtensionWithContext), varargs...)
 }
 
 // GetHostedConfigurationVersion mocks base method
@@ -1298,6 +1598,172 @@ func (mr *MockAppConfigAPIMockRecorder) ListEnvironmentsWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentsWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).ListEnvironmentsWithContext), varargs...)
+}
+
+// ListExtensionAssociations mocks base method
+func (m *MockAppConfigAPI) ListExtensionAssociations(arg0 *appconfig.ListExtensionAssociationsInput) (*appconfig.ListExtensionAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExtensionAssociations", arg0)
+	ret0, _ := ret[0].(*appconfig.ListExtensionAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExtensionAssociations indicates an expected call of ListExtensionAssociations
+func (mr *MockAppConfigAPIMockRecorder) ListExtensionAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensionAssociations", reflect.TypeOf((*MockAppConfigAPI)(nil).ListExtensionAssociations), arg0)
+}
+
+// ListExtensionAssociationsPages mocks base method
+func (m *MockAppConfigAPI) ListExtensionAssociationsPages(arg0 *appconfig.ListExtensionAssociationsInput, arg1 func(*appconfig.ListExtensionAssociationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExtensionAssociationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExtensionAssociationsPages indicates an expected call of ListExtensionAssociationsPages
+func (mr *MockAppConfigAPIMockRecorder) ListExtensionAssociationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensionAssociationsPages", reflect.TypeOf((*MockAppConfigAPI)(nil).ListExtensionAssociationsPages), arg0, arg1)
+}
+
+// ListExtensionAssociationsPagesWithContext mocks base method
+func (m *MockAppConfigAPI) ListExtensionAssociationsPagesWithContext(arg0 context.Context, arg1 *appconfig.ListExtensionAssociationsInput, arg2 func(*appconfig.ListExtensionAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExtensionAssociationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExtensionAssociationsPagesWithContext indicates an expected call of ListExtensionAssociationsPagesWithContext
+func (mr *MockAppConfigAPIMockRecorder) ListExtensionAssociationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensionAssociationsPagesWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).ListExtensionAssociationsPagesWithContext), varargs...)
+}
+
+// ListExtensionAssociationsRequest mocks base method
+func (m *MockAppConfigAPI) ListExtensionAssociationsRequest(arg0 *appconfig.ListExtensionAssociationsInput) (*request.Request, *appconfig.ListExtensionAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExtensionAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appconfig.ListExtensionAssociationsOutput)
+	return ret0, ret1
+}
+
+// ListExtensionAssociationsRequest indicates an expected call of ListExtensionAssociationsRequest
+func (mr *MockAppConfigAPIMockRecorder) ListExtensionAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensionAssociationsRequest", reflect.TypeOf((*MockAppConfigAPI)(nil).ListExtensionAssociationsRequest), arg0)
+}
+
+// ListExtensionAssociationsWithContext mocks base method
+func (m *MockAppConfigAPI) ListExtensionAssociationsWithContext(arg0 context.Context, arg1 *appconfig.ListExtensionAssociationsInput, arg2 ...request.Option) (*appconfig.ListExtensionAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExtensionAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*appconfig.ListExtensionAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExtensionAssociationsWithContext indicates an expected call of ListExtensionAssociationsWithContext
+func (mr *MockAppConfigAPIMockRecorder) ListExtensionAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensionAssociationsWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).ListExtensionAssociationsWithContext), varargs...)
+}
+
+// ListExtensions mocks base method
+func (m *MockAppConfigAPI) ListExtensions(arg0 *appconfig.ListExtensionsInput) (*appconfig.ListExtensionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExtensions", arg0)
+	ret0, _ := ret[0].(*appconfig.ListExtensionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExtensions indicates an expected call of ListExtensions
+func (mr *MockAppConfigAPIMockRecorder) ListExtensions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensions", reflect.TypeOf((*MockAppConfigAPI)(nil).ListExtensions), arg0)
+}
+
+// ListExtensionsPages mocks base method
+func (m *MockAppConfigAPI) ListExtensionsPages(arg0 *appconfig.ListExtensionsInput, arg1 func(*appconfig.ListExtensionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExtensionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExtensionsPages indicates an expected call of ListExtensionsPages
+func (mr *MockAppConfigAPIMockRecorder) ListExtensionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensionsPages", reflect.TypeOf((*MockAppConfigAPI)(nil).ListExtensionsPages), arg0, arg1)
+}
+
+// ListExtensionsPagesWithContext mocks base method
+func (m *MockAppConfigAPI) ListExtensionsPagesWithContext(arg0 context.Context, arg1 *appconfig.ListExtensionsInput, arg2 func(*appconfig.ListExtensionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExtensionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExtensionsPagesWithContext indicates an expected call of ListExtensionsPagesWithContext
+func (mr *MockAppConfigAPIMockRecorder) ListExtensionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensionsPagesWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).ListExtensionsPagesWithContext), varargs...)
+}
+
+// ListExtensionsRequest mocks base method
+func (m *MockAppConfigAPI) ListExtensionsRequest(arg0 *appconfig.ListExtensionsInput) (*request.Request, *appconfig.ListExtensionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExtensionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appconfig.ListExtensionsOutput)
+	return ret0, ret1
+}
+
+// ListExtensionsRequest indicates an expected call of ListExtensionsRequest
+func (mr *MockAppConfigAPIMockRecorder) ListExtensionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensionsRequest", reflect.TypeOf((*MockAppConfigAPI)(nil).ListExtensionsRequest), arg0)
+}
+
+// ListExtensionsWithContext mocks base method
+func (m *MockAppConfigAPI) ListExtensionsWithContext(arg0 context.Context, arg1 *appconfig.ListExtensionsInput, arg2 ...request.Option) (*appconfig.ListExtensionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExtensionsWithContext", varargs...)
+	ret0, _ := ret[0].(*appconfig.ListExtensionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExtensionsWithContext indicates an expected call of ListExtensionsWithContext
+func (mr *MockAppConfigAPIMockRecorder) ListExtensionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensionsWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).ListExtensionsWithContext), varargs...)
 }
 
 // ListHostedConfigurationVersions mocks base method
@@ -1831,6 +2297,106 @@ func (mr *MockAppConfigAPIMockRecorder) UpdateEnvironmentWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEnvironmentWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).UpdateEnvironmentWithContext), varargs...)
+}
+
+// UpdateExtension mocks base method
+func (m *MockAppConfigAPI) UpdateExtension(arg0 *appconfig.UpdateExtensionInput) (*appconfig.UpdateExtensionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateExtension", arg0)
+	ret0, _ := ret[0].(*appconfig.UpdateExtensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateExtension indicates an expected call of UpdateExtension
+func (mr *MockAppConfigAPIMockRecorder) UpdateExtension(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateExtension", reflect.TypeOf((*MockAppConfigAPI)(nil).UpdateExtension), arg0)
+}
+
+// UpdateExtensionAssociation mocks base method
+func (m *MockAppConfigAPI) UpdateExtensionAssociation(arg0 *appconfig.UpdateExtensionAssociationInput) (*appconfig.UpdateExtensionAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateExtensionAssociation", arg0)
+	ret0, _ := ret[0].(*appconfig.UpdateExtensionAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateExtensionAssociation indicates an expected call of UpdateExtensionAssociation
+func (mr *MockAppConfigAPIMockRecorder) UpdateExtensionAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateExtensionAssociation", reflect.TypeOf((*MockAppConfigAPI)(nil).UpdateExtensionAssociation), arg0)
+}
+
+// UpdateExtensionAssociationRequest mocks base method
+func (m *MockAppConfigAPI) UpdateExtensionAssociationRequest(arg0 *appconfig.UpdateExtensionAssociationInput) (*request.Request, *appconfig.UpdateExtensionAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateExtensionAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appconfig.UpdateExtensionAssociationOutput)
+	return ret0, ret1
+}
+
+// UpdateExtensionAssociationRequest indicates an expected call of UpdateExtensionAssociationRequest
+func (mr *MockAppConfigAPIMockRecorder) UpdateExtensionAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateExtensionAssociationRequest", reflect.TypeOf((*MockAppConfigAPI)(nil).UpdateExtensionAssociationRequest), arg0)
+}
+
+// UpdateExtensionAssociationWithContext mocks base method
+func (m *MockAppConfigAPI) UpdateExtensionAssociationWithContext(arg0 context.Context, arg1 *appconfig.UpdateExtensionAssociationInput, arg2 ...request.Option) (*appconfig.UpdateExtensionAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateExtensionAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*appconfig.UpdateExtensionAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateExtensionAssociationWithContext indicates an expected call of UpdateExtensionAssociationWithContext
+func (mr *MockAppConfigAPIMockRecorder) UpdateExtensionAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateExtensionAssociationWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).UpdateExtensionAssociationWithContext), varargs...)
+}
+
+// UpdateExtensionRequest mocks base method
+func (m *MockAppConfigAPI) UpdateExtensionRequest(arg0 *appconfig.UpdateExtensionInput) (*request.Request, *appconfig.UpdateExtensionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateExtensionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appconfig.UpdateExtensionOutput)
+	return ret0, ret1
+}
+
+// UpdateExtensionRequest indicates an expected call of UpdateExtensionRequest
+func (mr *MockAppConfigAPIMockRecorder) UpdateExtensionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateExtensionRequest", reflect.TypeOf((*MockAppConfigAPI)(nil).UpdateExtensionRequest), arg0)
+}
+
+// UpdateExtensionWithContext mocks base method
+func (m *MockAppConfigAPI) UpdateExtensionWithContext(arg0 context.Context, arg1 *appconfig.UpdateExtensionInput, arg2 ...request.Option) (*appconfig.UpdateExtensionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateExtensionWithContext", varargs...)
+	ret0, _ := ret[0].(*appconfig.UpdateExtensionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateExtensionWithContext indicates an expected call of UpdateExtensionWithContext
+func (mr *MockAppConfigAPIMockRecorder) UpdateExtensionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateExtensionWithContext", reflect.TypeOf((*MockAppConfigAPI)(nil).UpdateExtensionWithContext), varargs...)
 }
 
 // ValidateConfiguration mocks base method
