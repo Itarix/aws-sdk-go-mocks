@@ -685,6 +685,56 @@ func (mr *MockInspector2APIMockRecorder) EnableWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableWithContext", reflect.TypeOf((*MockInspector2API)(nil).EnableWithContext), varargs...)
 }
 
+// GetConfiguration mocks base method
+func (m *MockInspector2API) GetConfiguration(arg0 *inspector2.GetConfigurationInput) (*inspector2.GetConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConfiguration", arg0)
+	ret0, _ := ret[0].(*inspector2.GetConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConfiguration indicates an expected call of GetConfiguration
+func (mr *MockInspector2APIMockRecorder) GetConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfiguration", reflect.TypeOf((*MockInspector2API)(nil).GetConfiguration), arg0)
+}
+
+// GetConfigurationRequest mocks base method
+func (m *MockInspector2API) GetConfigurationRequest(arg0 *inspector2.GetConfigurationInput) (*request.Request, *inspector2.GetConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.GetConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetConfigurationRequest indicates an expected call of GetConfigurationRequest
+func (mr *MockInspector2APIMockRecorder) GetConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfigurationRequest", reflect.TypeOf((*MockInspector2API)(nil).GetConfigurationRequest), arg0)
+}
+
+// GetConfigurationWithContext mocks base method
+func (m *MockInspector2API) GetConfigurationWithContext(arg0 context.Context, arg1 *inspector2.GetConfigurationInput, arg2 ...request.Option) (*inspector2.GetConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.GetConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConfigurationWithContext indicates an expected call of GetConfigurationWithContext
+func (mr *MockInspector2APIMockRecorder) GetConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfigurationWithContext", reflect.TypeOf((*MockInspector2API)(nil).GetConfigurationWithContext), varargs...)
+}
+
 // GetDelegatedAdminAccount mocks base method
 func (m *MockInspector2API) GetDelegatedAdminAccount(arg0 *inspector2.GetDelegatedAdminAccountInput) (*inspector2.GetDelegatedAdminAccountOutput, error) {
 	m.ctrl.T.Helper()
@@ -1730,6 +1780,56 @@ func (mr *MockInspector2APIMockRecorder) UntagResourceWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockInspector2API)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateConfiguration mocks base method
+func (m *MockInspector2API) UpdateConfiguration(arg0 *inspector2.UpdateConfigurationInput) (*inspector2.UpdateConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConfiguration", arg0)
+	ret0, _ := ret[0].(*inspector2.UpdateConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConfiguration indicates an expected call of UpdateConfiguration
+func (mr *MockInspector2APIMockRecorder) UpdateConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfiguration", reflect.TypeOf((*MockInspector2API)(nil).UpdateConfiguration), arg0)
+}
+
+// UpdateConfigurationRequest mocks base method
+func (m *MockInspector2API) UpdateConfigurationRequest(arg0 *inspector2.UpdateConfigurationInput) (*request.Request, *inspector2.UpdateConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.UpdateConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateConfigurationRequest indicates an expected call of UpdateConfigurationRequest
+func (mr *MockInspector2APIMockRecorder) UpdateConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfigurationRequest", reflect.TypeOf((*MockInspector2API)(nil).UpdateConfigurationRequest), arg0)
+}
+
+// UpdateConfigurationWithContext mocks base method
+func (m *MockInspector2API) UpdateConfigurationWithContext(arg0 context.Context, arg1 *inspector2.UpdateConfigurationInput, arg2 ...request.Option) (*inspector2.UpdateConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.UpdateConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConfigurationWithContext indicates an expected call of UpdateConfigurationWithContext
+func (mr *MockInspector2APIMockRecorder) UpdateConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfigurationWithContext", reflect.TypeOf((*MockInspector2API)(nil).UpdateConfigurationWithContext), varargs...)
 }
 
 // UpdateFilter mocks base method

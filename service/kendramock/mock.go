@@ -335,6 +335,56 @@ func (mr *MockKendraAPIMockRecorder) ClearQuerySuggestionsWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ClearQuerySuggestionsWithContext", reflect.TypeOf((*MockKendraAPI)(nil).ClearQuerySuggestionsWithContext), varargs...)
 }
 
+// CreateAccessControlConfiguration mocks base method
+func (m *MockKendraAPI) CreateAccessControlConfiguration(arg0 *kendra.CreateAccessControlConfigurationInput) (*kendra.CreateAccessControlConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAccessControlConfiguration", arg0)
+	ret0, _ := ret[0].(*kendra.CreateAccessControlConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAccessControlConfiguration indicates an expected call of CreateAccessControlConfiguration
+func (mr *MockKendraAPIMockRecorder) CreateAccessControlConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessControlConfiguration", reflect.TypeOf((*MockKendraAPI)(nil).CreateAccessControlConfiguration), arg0)
+}
+
+// CreateAccessControlConfigurationRequest mocks base method
+func (m *MockKendraAPI) CreateAccessControlConfigurationRequest(arg0 *kendra.CreateAccessControlConfigurationInput) (*request.Request, *kendra.CreateAccessControlConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAccessControlConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.CreateAccessControlConfigurationOutput)
+	return ret0, ret1
+}
+
+// CreateAccessControlConfigurationRequest indicates an expected call of CreateAccessControlConfigurationRequest
+func (mr *MockKendraAPIMockRecorder) CreateAccessControlConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessControlConfigurationRequest", reflect.TypeOf((*MockKendraAPI)(nil).CreateAccessControlConfigurationRequest), arg0)
+}
+
+// CreateAccessControlConfigurationWithContext mocks base method
+func (m *MockKendraAPI) CreateAccessControlConfigurationWithContext(arg0 context.Context, arg1 *kendra.CreateAccessControlConfigurationInput, arg2 ...request.Option) (*kendra.CreateAccessControlConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAccessControlConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.CreateAccessControlConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAccessControlConfigurationWithContext indicates an expected call of CreateAccessControlConfigurationWithContext
+func (mr *MockKendraAPIMockRecorder) CreateAccessControlConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessControlConfigurationWithContext", reflect.TypeOf((*MockKendraAPI)(nil).CreateAccessControlConfigurationWithContext), varargs...)
+}
+
 // CreateDataSource mocks base method
 func (m *MockKendraAPI) CreateDataSource(arg0 *kendra.CreateDataSourceInput) (*kendra.CreateDataSourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -633,6 +683,56 @@ func (mr *MockKendraAPIMockRecorder) CreateThesaurusWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateThesaurusWithContext", reflect.TypeOf((*MockKendraAPI)(nil).CreateThesaurusWithContext), varargs...)
+}
+
+// DeleteAccessControlConfiguration mocks base method
+func (m *MockKendraAPI) DeleteAccessControlConfiguration(arg0 *kendra.DeleteAccessControlConfigurationInput) (*kendra.DeleteAccessControlConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccessControlConfiguration", arg0)
+	ret0, _ := ret[0].(*kendra.DeleteAccessControlConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccessControlConfiguration indicates an expected call of DeleteAccessControlConfiguration
+func (mr *MockKendraAPIMockRecorder) DeleteAccessControlConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessControlConfiguration", reflect.TypeOf((*MockKendraAPI)(nil).DeleteAccessControlConfiguration), arg0)
+}
+
+// DeleteAccessControlConfigurationRequest mocks base method
+func (m *MockKendraAPI) DeleteAccessControlConfigurationRequest(arg0 *kendra.DeleteAccessControlConfigurationInput) (*request.Request, *kendra.DeleteAccessControlConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccessControlConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.DeleteAccessControlConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteAccessControlConfigurationRequest indicates an expected call of DeleteAccessControlConfigurationRequest
+func (mr *MockKendraAPIMockRecorder) DeleteAccessControlConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessControlConfigurationRequest", reflect.TypeOf((*MockKendraAPI)(nil).DeleteAccessControlConfigurationRequest), arg0)
+}
+
+// DeleteAccessControlConfigurationWithContext mocks base method
+func (m *MockKendraAPI) DeleteAccessControlConfigurationWithContext(arg0 context.Context, arg1 *kendra.DeleteAccessControlConfigurationInput, arg2 ...request.Option) (*kendra.DeleteAccessControlConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAccessControlConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.DeleteAccessControlConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccessControlConfigurationWithContext indicates an expected call of DeleteAccessControlConfigurationWithContext
+func (mr *MockKendraAPIMockRecorder) DeleteAccessControlConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessControlConfigurationWithContext", reflect.TypeOf((*MockKendraAPI)(nil).DeleteAccessControlConfigurationWithContext), varargs...)
 }
 
 // DeleteDataSource mocks base method
@@ -983,6 +1083,56 @@ func (mr *MockKendraAPIMockRecorder) DeleteThesaurusWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteThesaurusWithContext", reflect.TypeOf((*MockKendraAPI)(nil).DeleteThesaurusWithContext), varargs...)
+}
+
+// DescribeAccessControlConfiguration mocks base method
+func (m *MockKendraAPI) DescribeAccessControlConfiguration(arg0 *kendra.DescribeAccessControlConfigurationInput) (*kendra.DescribeAccessControlConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccessControlConfiguration", arg0)
+	ret0, _ := ret[0].(*kendra.DescribeAccessControlConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccessControlConfiguration indicates an expected call of DescribeAccessControlConfiguration
+func (mr *MockKendraAPIMockRecorder) DescribeAccessControlConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccessControlConfiguration", reflect.TypeOf((*MockKendraAPI)(nil).DescribeAccessControlConfiguration), arg0)
+}
+
+// DescribeAccessControlConfigurationRequest mocks base method
+func (m *MockKendraAPI) DescribeAccessControlConfigurationRequest(arg0 *kendra.DescribeAccessControlConfigurationInput) (*request.Request, *kendra.DescribeAccessControlConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccessControlConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.DescribeAccessControlConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeAccessControlConfigurationRequest indicates an expected call of DescribeAccessControlConfigurationRequest
+func (mr *MockKendraAPIMockRecorder) DescribeAccessControlConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccessControlConfigurationRequest", reflect.TypeOf((*MockKendraAPI)(nil).DescribeAccessControlConfigurationRequest), arg0)
+}
+
+// DescribeAccessControlConfigurationWithContext mocks base method
+func (m *MockKendraAPI) DescribeAccessControlConfigurationWithContext(arg0 context.Context, arg1 *kendra.DescribeAccessControlConfigurationInput, arg2 ...request.Option) (*kendra.DescribeAccessControlConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAccessControlConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.DescribeAccessControlConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccessControlConfigurationWithContext indicates an expected call of DescribeAccessControlConfigurationWithContext
+func (mr *MockKendraAPIMockRecorder) DescribeAccessControlConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccessControlConfigurationWithContext", reflect.TypeOf((*MockKendraAPI)(nil).DescribeAccessControlConfigurationWithContext), varargs...)
 }
 
 // DescribeDataSource mocks base method
@@ -1616,6 +1766,89 @@ func (mr *MockKendraAPIMockRecorder) GetSnapshotsWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSnapshotsWithContext", reflect.TypeOf((*MockKendraAPI)(nil).GetSnapshotsWithContext), varargs...)
+}
+
+// ListAccessControlConfigurations mocks base method
+func (m *MockKendraAPI) ListAccessControlConfigurations(arg0 *kendra.ListAccessControlConfigurationsInput) (*kendra.ListAccessControlConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessControlConfigurations", arg0)
+	ret0, _ := ret[0].(*kendra.ListAccessControlConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAccessControlConfigurations indicates an expected call of ListAccessControlConfigurations
+func (mr *MockKendraAPIMockRecorder) ListAccessControlConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessControlConfigurations", reflect.TypeOf((*MockKendraAPI)(nil).ListAccessControlConfigurations), arg0)
+}
+
+// ListAccessControlConfigurationsPages mocks base method
+func (m *MockKendraAPI) ListAccessControlConfigurationsPages(arg0 *kendra.ListAccessControlConfigurationsInput, arg1 func(*kendra.ListAccessControlConfigurationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessControlConfigurationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAccessControlConfigurationsPages indicates an expected call of ListAccessControlConfigurationsPages
+func (mr *MockKendraAPIMockRecorder) ListAccessControlConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessControlConfigurationsPages", reflect.TypeOf((*MockKendraAPI)(nil).ListAccessControlConfigurationsPages), arg0, arg1)
+}
+
+// ListAccessControlConfigurationsPagesWithContext mocks base method
+func (m *MockKendraAPI) ListAccessControlConfigurationsPagesWithContext(arg0 context.Context, arg1 *kendra.ListAccessControlConfigurationsInput, arg2 func(*kendra.ListAccessControlConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAccessControlConfigurationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAccessControlConfigurationsPagesWithContext indicates an expected call of ListAccessControlConfigurationsPagesWithContext
+func (mr *MockKendraAPIMockRecorder) ListAccessControlConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessControlConfigurationsPagesWithContext", reflect.TypeOf((*MockKendraAPI)(nil).ListAccessControlConfigurationsPagesWithContext), varargs...)
+}
+
+// ListAccessControlConfigurationsRequest mocks base method
+func (m *MockKendraAPI) ListAccessControlConfigurationsRequest(arg0 *kendra.ListAccessControlConfigurationsInput) (*request.Request, *kendra.ListAccessControlConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessControlConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.ListAccessControlConfigurationsOutput)
+	return ret0, ret1
+}
+
+// ListAccessControlConfigurationsRequest indicates an expected call of ListAccessControlConfigurationsRequest
+func (mr *MockKendraAPIMockRecorder) ListAccessControlConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessControlConfigurationsRequest", reflect.TypeOf((*MockKendraAPI)(nil).ListAccessControlConfigurationsRequest), arg0)
+}
+
+// ListAccessControlConfigurationsWithContext mocks base method
+func (m *MockKendraAPI) ListAccessControlConfigurationsWithContext(arg0 context.Context, arg1 *kendra.ListAccessControlConfigurationsInput, arg2 ...request.Option) (*kendra.ListAccessControlConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAccessControlConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.ListAccessControlConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAccessControlConfigurationsWithContext indicates an expected call of ListAccessControlConfigurationsWithContext
+func (mr *MockKendraAPIMockRecorder) ListAccessControlConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessControlConfigurationsWithContext", reflect.TypeOf((*MockKendraAPI)(nil).ListAccessControlConfigurationsWithContext), varargs...)
 }
 
 // ListDataSourceSyncJobs mocks base method
@@ -2846,6 +3079,56 @@ func (mr *MockKendraAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockKendraAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateAccessControlConfiguration mocks base method
+func (m *MockKendraAPI) UpdateAccessControlConfiguration(arg0 *kendra.UpdateAccessControlConfigurationInput) (*kendra.UpdateAccessControlConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAccessControlConfiguration", arg0)
+	ret0, _ := ret[0].(*kendra.UpdateAccessControlConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAccessControlConfiguration indicates an expected call of UpdateAccessControlConfiguration
+func (mr *MockKendraAPIMockRecorder) UpdateAccessControlConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccessControlConfiguration", reflect.TypeOf((*MockKendraAPI)(nil).UpdateAccessControlConfiguration), arg0)
+}
+
+// UpdateAccessControlConfigurationRequest mocks base method
+func (m *MockKendraAPI) UpdateAccessControlConfigurationRequest(arg0 *kendra.UpdateAccessControlConfigurationInput) (*request.Request, *kendra.UpdateAccessControlConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAccessControlConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.UpdateAccessControlConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateAccessControlConfigurationRequest indicates an expected call of UpdateAccessControlConfigurationRequest
+func (mr *MockKendraAPIMockRecorder) UpdateAccessControlConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccessControlConfigurationRequest", reflect.TypeOf((*MockKendraAPI)(nil).UpdateAccessControlConfigurationRequest), arg0)
+}
+
+// UpdateAccessControlConfigurationWithContext mocks base method
+func (m *MockKendraAPI) UpdateAccessControlConfigurationWithContext(arg0 context.Context, arg1 *kendra.UpdateAccessControlConfigurationInput, arg2 ...request.Option) (*kendra.UpdateAccessControlConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAccessControlConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.UpdateAccessControlConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAccessControlConfigurationWithContext indicates an expected call of UpdateAccessControlConfigurationWithContext
+func (mr *MockKendraAPIMockRecorder) UpdateAccessControlConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccessControlConfigurationWithContext", reflect.TypeOf((*MockKendraAPI)(nil).UpdateAccessControlConfigurationWithContext), varargs...)
 }
 
 // UpdateDataSource mocks base method

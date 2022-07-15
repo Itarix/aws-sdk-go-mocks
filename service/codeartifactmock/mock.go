@@ -535,6 +535,36 @@ func (mr *MockCodeArtifactAPIMockRecorder) DescribeDomainWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainWithContext", reflect.TypeOf((*MockCodeArtifactAPI)(nil).DescribeDomainWithContext), varargs...)
 }
 
+// DescribePackage mocks base method
+func (m *MockCodeArtifactAPI) DescribePackage(arg0 *codeartifact.DescribePackageInput) (*codeartifact.DescribePackageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePackage", arg0)
+	ret0, _ := ret[0].(*codeartifact.DescribePackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePackage indicates an expected call of DescribePackage
+func (mr *MockCodeArtifactAPIMockRecorder) DescribePackage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePackage", reflect.TypeOf((*MockCodeArtifactAPI)(nil).DescribePackage), arg0)
+}
+
+// DescribePackageRequest mocks base method
+func (m *MockCodeArtifactAPI) DescribePackageRequest(arg0 *codeartifact.DescribePackageInput) (*request.Request, *codeartifact.DescribePackageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribePackageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codeartifact.DescribePackageOutput)
+	return ret0, ret1
+}
+
+// DescribePackageRequest indicates an expected call of DescribePackageRequest
+func (mr *MockCodeArtifactAPIMockRecorder) DescribePackageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePackageRequest", reflect.TypeOf((*MockCodeArtifactAPI)(nil).DescribePackageRequest), arg0)
+}
+
 // DescribePackageVersion mocks base method
 func (m *MockCodeArtifactAPI) DescribePackageVersion(arg0 *codeartifact.DescribePackageVersionInput) (*codeartifact.DescribePackageVersionOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +613,26 @@ func (mr *MockCodeArtifactAPIMockRecorder) DescribePackageVersionWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePackageVersionWithContext", reflect.TypeOf((*MockCodeArtifactAPI)(nil).DescribePackageVersionWithContext), varargs...)
+}
+
+// DescribePackageWithContext mocks base method
+func (m *MockCodeArtifactAPI) DescribePackageWithContext(arg0 context.Context, arg1 *codeartifact.DescribePackageInput, arg2 ...request.Option) (*codeartifact.DescribePackageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribePackageWithContext", varargs...)
+	ret0, _ := ret[0].(*codeartifact.DescribePackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribePackageWithContext indicates an expected call of DescribePackageWithContext
+func (mr *MockCodeArtifactAPIMockRecorder) DescribePackageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePackageWithContext", reflect.TypeOf((*MockCodeArtifactAPI)(nil).DescribePackageWithContext), varargs...)
 }
 
 // DescribeRepository mocks base method
@@ -1681,6 +1731,56 @@ func (mr *MockCodeArtifactAPIMockRecorder) PutDomainPermissionsPolicyWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDomainPermissionsPolicyWithContext", reflect.TypeOf((*MockCodeArtifactAPI)(nil).PutDomainPermissionsPolicyWithContext), varargs...)
+}
+
+// PutPackageOriginConfiguration mocks base method
+func (m *MockCodeArtifactAPI) PutPackageOriginConfiguration(arg0 *codeartifact.PutPackageOriginConfigurationInput) (*codeartifact.PutPackageOriginConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPackageOriginConfiguration", arg0)
+	ret0, _ := ret[0].(*codeartifact.PutPackageOriginConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPackageOriginConfiguration indicates an expected call of PutPackageOriginConfiguration
+func (mr *MockCodeArtifactAPIMockRecorder) PutPackageOriginConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPackageOriginConfiguration", reflect.TypeOf((*MockCodeArtifactAPI)(nil).PutPackageOriginConfiguration), arg0)
+}
+
+// PutPackageOriginConfigurationRequest mocks base method
+func (m *MockCodeArtifactAPI) PutPackageOriginConfigurationRequest(arg0 *codeartifact.PutPackageOriginConfigurationInput) (*request.Request, *codeartifact.PutPackageOriginConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPackageOriginConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codeartifact.PutPackageOriginConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutPackageOriginConfigurationRequest indicates an expected call of PutPackageOriginConfigurationRequest
+func (mr *MockCodeArtifactAPIMockRecorder) PutPackageOriginConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPackageOriginConfigurationRequest", reflect.TypeOf((*MockCodeArtifactAPI)(nil).PutPackageOriginConfigurationRequest), arg0)
+}
+
+// PutPackageOriginConfigurationWithContext mocks base method
+func (m *MockCodeArtifactAPI) PutPackageOriginConfigurationWithContext(arg0 context.Context, arg1 *codeartifact.PutPackageOriginConfigurationInput, arg2 ...request.Option) (*codeartifact.PutPackageOriginConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutPackageOriginConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*codeartifact.PutPackageOriginConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPackageOriginConfigurationWithContext indicates an expected call of PutPackageOriginConfigurationWithContext
+func (mr *MockCodeArtifactAPIMockRecorder) PutPackageOriginConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPackageOriginConfigurationWithContext", reflect.TypeOf((*MockCodeArtifactAPI)(nil).PutPackageOriginConfigurationWithContext), varargs...)
 }
 
 // PutRepositoryPermissionsPolicy mocks base method
