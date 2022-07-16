@@ -285,6 +285,56 @@ func (mr *MockCloudWatchEvidentlyAPIMockRecorder) CreateProjectWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProjectWithContext", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).CreateProjectWithContext), varargs...)
 }
 
+// CreateSegment mocks base method
+func (m *MockCloudWatchEvidentlyAPI) CreateSegment(arg0 *cloudwatchevidently.CreateSegmentInput) (*cloudwatchevidently.CreateSegmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSegment", arg0)
+	ret0, _ := ret[0].(*cloudwatchevidently.CreateSegmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSegment indicates an expected call of CreateSegment
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) CreateSegment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSegment", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).CreateSegment), arg0)
+}
+
+// CreateSegmentRequest mocks base method
+func (m *MockCloudWatchEvidentlyAPI) CreateSegmentRequest(arg0 *cloudwatchevidently.CreateSegmentInput) (*request.Request, *cloudwatchevidently.CreateSegmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSegmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevidently.CreateSegmentOutput)
+	return ret0, ret1
+}
+
+// CreateSegmentRequest indicates an expected call of CreateSegmentRequest
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) CreateSegmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSegmentRequest", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).CreateSegmentRequest), arg0)
+}
+
+// CreateSegmentWithContext mocks base method
+func (m *MockCloudWatchEvidentlyAPI) CreateSegmentWithContext(arg0 context.Context, arg1 *cloudwatchevidently.CreateSegmentInput, arg2 ...request.Option) (*cloudwatchevidently.CreateSegmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSegmentWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevidently.CreateSegmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSegmentWithContext indicates an expected call of CreateSegmentWithContext
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) CreateSegmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSegmentWithContext", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).CreateSegmentWithContext), varargs...)
+}
+
 // DeleteExperiment mocks base method
 func (m *MockCloudWatchEvidentlyAPI) DeleteExperiment(arg0 *cloudwatchevidently.DeleteExperimentInput) (*cloudwatchevidently.DeleteExperimentOutput, error) {
 	m.ctrl.T.Helper()
@@ -483,6 +533,56 @@ func (mr *MockCloudWatchEvidentlyAPIMockRecorder) DeleteProjectWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectWithContext", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).DeleteProjectWithContext), varargs...)
+}
+
+// DeleteSegment mocks base method
+func (m *MockCloudWatchEvidentlyAPI) DeleteSegment(arg0 *cloudwatchevidently.DeleteSegmentInput) (*cloudwatchevidently.DeleteSegmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSegment", arg0)
+	ret0, _ := ret[0].(*cloudwatchevidently.DeleteSegmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSegment indicates an expected call of DeleteSegment
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) DeleteSegment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSegment", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).DeleteSegment), arg0)
+}
+
+// DeleteSegmentRequest mocks base method
+func (m *MockCloudWatchEvidentlyAPI) DeleteSegmentRequest(arg0 *cloudwatchevidently.DeleteSegmentInput) (*request.Request, *cloudwatchevidently.DeleteSegmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSegmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevidently.DeleteSegmentOutput)
+	return ret0, ret1
+}
+
+// DeleteSegmentRequest indicates an expected call of DeleteSegmentRequest
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) DeleteSegmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSegmentRequest", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).DeleteSegmentRequest), arg0)
+}
+
+// DeleteSegmentWithContext mocks base method
+func (m *MockCloudWatchEvidentlyAPI) DeleteSegmentWithContext(arg0 context.Context, arg1 *cloudwatchevidently.DeleteSegmentInput, arg2 ...request.Option) (*cloudwatchevidently.DeleteSegmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSegmentWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevidently.DeleteSegmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSegmentWithContext indicates an expected call of DeleteSegmentWithContext
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) DeleteSegmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSegmentWithContext", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).DeleteSegmentWithContext), varargs...)
 }
 
 // EvaluateFeature mocks base method
@@ -783,6 +883,56 @@ func (mr *MockCloudWatchEvidentlyAPIMockRecorder) GetProjectWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProjectWithContext", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).GetProjectWithContext), varargs...)
+}
+
+// GetSegment mocks base method
+func (m *MockCloudWatchEvidentlyAPI) GetSegment(arg0 *cloudwatchevidently.GetSegmentInput) (*cloudwatchevidently.GetSegmentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSegment", arg0)
+	ret0, _ := ret[0].(*cloudwatchevidently.GetSegmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSegment indicates an expected call of GetSegment
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) GetSegment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSegment", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).GetSegment), arg0)
+}
+
+// GetSegmentRequest mocks base method
+func (m *MockCloudWatchEvidentlyAPI) GetSegmentRequest(arg0 *cloudwatchevidently.GetSegmentInput) (*request.Request, *cloudwatchevidently.GetSegmentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSegmentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevidently.GetSegmentOutput)
+	return ret0, ret1
+}
+
+// GetSegmentRequest indicates an expected call of GetSegmentRequest
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) GetSegmentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSegmentRequest", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).GetSegmentRequest), arg0)
+}
+
+// GetSegmentWithContext mocks base method
+func (m *MockCloudWatchEvidentlyAPI) GetSegmentWithContext(arg0 context.Context, arg1 *cloudwatchevidently.GetSegmentInput, arg2 ...request.Option) (*cloudwatchevidently.GetSegmentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSegmentWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevidently.GetSegmentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSegmentWithContext indicates an expected call of GetSegmentWithContext
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) GetSegmentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSegmentWithContext", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).GetSegmentWithContext), varargs...)
 }
 
 // ListExperiments mocks base method
@@ -1115,6 +1265,172 @@ func (mr *MockCloudWatchEvidentlyAPIMockRecorder) ListProjectsWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectsWithContext", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).ListProjectsWithContext), varargs...)
+}
+
+// ListSegmentReferences mocks base method
+func (m *MockCloudWatchEvidentlyAPI) ListSegmentReferences(arg0 *cloudwatchevidently.ListSegmentReferencesInput) (*cloudwatchevidently.ListSegmentReferencesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSegmentReferences", arg0)
+	ret0, _ := ret[0].(*cloudwatchevidently.ListSegmentReferencesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSegmentReferences indicates an expected call of ListSegmentReferences
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) ListSegmentReferences(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSegmentReferences", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).ListSegmentReferences), arg0)
+}
+
+// ListSegmentReferencesPages mocks base method
+func (m *MockCloudWatchEvidentlyAPI) ListSegmentReferencesPages(arg0 *cloudwatchevidently.ListSegmentReferencesInput, arg1 func(*cloudwatchevidently.ListSegmentReferencesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSegmentReferencesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSegmentReferencesPages indicates an expected call of ListSegmentReferencesPages
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) ListSegmentReferencesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSegmentReferencesPages", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).ListSegmentReferencesPages), arg0, arg1)
+}
+
+// ListSegmentReferencesPagesWithContext mocks base method
+func (m *MockCloudWatchEvidentlyAPI) ListSegmentReferencesPagesWithContext(arg0 context.Context, arg1 *cloudwatchevidently.ListSegmentReferencesInput, arg2 func(*cloudwatchevidently.ListSegmentReferencesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSegmentReferencesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSegmentReferencesPagesWithContext indicates an expected call of ListSegmentReferencesPagesWithContext
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) ListSegmentReferencesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSegmentReferencesPagesWithContext", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).ListSegmentReferencesPagesWithContext), varargs...)
+}
+
+// ListSegmentReferencesRequest mocks base method
+func (m *MockCloudWatchEvidentlyAPI) ListSegmentReferencesRequest(arg0 *cloudwatchevidently.ListSegmentReferencesInput) (*request.Request, *cloudwatchevidently.ListSegmentReferencesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSegmentReferencesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevidently.ListSegmentReferencesOutput)
+	return ret0, ret1
+}
+
+// ListSegmentReferencesRequest indicates an expected call of ListSegmentReferencesRequest
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) ListSegmentReferencesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSegmentReferencesRequest", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).ListSegmentReferencesRequest), arg0)
+}
+
+// ListSegmentReferencesWithContext mocks base method
+func (m *MockCloudWatchEvidentlyAPI) ListSegmentReferencesWithContext(arg0 context.Context, arg1 *cloudwatchevidently.ListSegmentReferencesInput, arg2 ...request.Option) (*cloudwatchevidently.ListSegmentReferencesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSegmentReferencesWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevidently.ListSegmentReferencesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSegmentReferencesWithContext indicates an expected call of ListSegmentReferencesWithContext
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) ListSegmentReferencesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSegmentReferencesWithContext", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).ListSegmentReferencesWithContext), varargs...)
+}
+
+// ListSegments mocks base method
+func (m *MockCloudWatchEvidentlyAPI) ListSegments(arg0 *cloudwatchevidently.ListSegmentsInput) (*cloudwatchevidently.ListSegmentsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSegments", arg0)
+	ret0, _ := ret[0].(*cloudwatchevidently.ListSegmentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSegments indicates an expected call of ListSegments
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) ListSegments(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSegments", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).ListSegments), arg0)
+}
+
+// ListSegmentsPages mocks base method
+func (m *MockCloudWatchEvidentlyAPI) ListSegmentsPages(arg0 *cloudwatchevidently.ListSegmentsInput, arg1 func(*cloudwatchevidently.ListSegmentsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSegmentsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSegmentsPages indicates an expected call of ListSegmentsPages
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) ListSegmentsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSegmentsPages", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).ListSegmentsPages), arg0, arg1)
+}
+
+// ListSegmentsPagesWithContext mocks base method
+func (m *MockCloudWatchEvidentlyAPI) ListSegmentsPagesWithContext(arg0 context.Context, arg1 *cloudwatchevidently.ListSegmentsInput, arg2 func(*cloudwatchevidently.ListSegmentsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSegmentsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSegmentsPagesWithContext indicates an expected call of ListSegmentsPagesWithContext
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) ListSegmentsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSegmentsPagesWithContext", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).ListSegmentsPagesWithContext), varargs...)
+}
+
+// ListSegmentsRequest mocks base method
+func (m *MockCloudWatchEvidentlyAPI) ListSegmentsRequest(arg0 *cloudwatchevidently.ListSegmentsInput) (*request.Request, *cloudwatchevidently.ListSegmentsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSegmentsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevidently.ListSegmentsOutput)
+	return ret0, ret1
+}
+
+// ListSegmentsRequest indicates an expected call of ListSegmentsRequest
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) ListSegmentsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSegmentsRequest", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).ListSegmentsRequest), arg0)
+}
+
+// ListSegmentsWithContext mocks base method
+func (m *MockCloudWatchEvidentlyAPI) ListSegmentsWithContext(arg0 context.Context, arg1 *cloudwatchevidently.ListSegmentsInput, arg2 ...request.Option) (*cloudwatchevidently.ListSegmentsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSegmentsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevidently.ListSegmentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSegmentsWithContext indicates an expected call of ListSegmentsWithContext
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) ListSegmentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSegmentsWithContext", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).ListSegmentsWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
@@ -1465,6 +1781,56 @@ func (mr *MockCloudWatchEvidentlyAPIMockRecorder) TagResourceWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// TestSegmentPattern mocks base method
+func (m *MockCloudWatchEvidentlyAPI) TestSegmentPattern(arg0 *cloudwatchevidently.TestSegmentPatternInput) (*cloudwatchevidently.TestSegmentPatternOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TestSegmentPattern", arg0)
+	ret0, _ := ret[0].(*cloudwatchevidently.TestSegmentPatternOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TestSegmentPattern indicates an expected call of TestSegmentPattern
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) TestSegmentPattern(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestSegmentPattern", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).TestSegmentPattern), arg0)
+}
+
+// TestSegmentPatternRequest mocks base method
+func (m *MockCloudWatchEvidentlyAPI) TestSegmentPatternRequest(arg0 *cloudwatchevidently.TestSegmentPatternInput) (*request.Request, *cloudwatchevidently.TestSegmentPatternOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TestSegmentPatternRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchevidently.TestSegmentPatternOutput)
+	return ret0, ret1
+}
+
+// TestSegmentPatternRequest indicates an expected call of TestSegmentPatternRequest
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) TestSegmentPatternRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestSegmentPatternRequest", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).TestSegmentPatternRequest), arg0)
+}
+
+// TestSegmentPatternWithContext mocks base method
+func (m *MockCloudWatchEvidentlyAPI) TestSegmentPatternWithContext(arg0 context.Context, arg1 *cloudwatchevidently.TestSegmentPatternInput, arg2 ...request.Option) (*cloudwatchevidently.TestSegmentPatternOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TestSegmentPatternWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchevidently.TestSegmentPatternOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TestSegmentPatternWithContext indicates an expected call of TestSegmentPatternWithContext
+func (mr *MockCloudWatchEvidentlyAPIMockRecorder) TestSegmentPatternWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestSegmentPatternWithContext", reflect.TypeOf((*MockCloudWatchEvidentlyAPI)(nil).TestSegmentPatternWithContext), varargs...)
 }
 
 // UntagResource mocks base method
