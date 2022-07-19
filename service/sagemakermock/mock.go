@@ -835,6 +835,106 @@ func (mr *MockSageMakerAPIMockRecorder) CreateDomainWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateDomainWithContext), varargs...)
 }
 
+// CreateEdgeDeploymentPlan mocks base method
+func (m *MockSageMakerAPI) CreateEdgeDeploymentPlan(arg0 *sagemaker.CreateEdgeDeploymentPlanInput) (*sagemaker.CreateEdgeDeploymentPlanOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEdgeDeploymentPlan", arg0)
+	ret0, _ := ret[0].(*sagemaker.CreateEdgeDeploymentPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEdgeDeploymentPlan indicates an expected call of CreateEdgeDeploymentPlan
+func (mr *MockSageMakerAPIMockRecorder) CreateEdgeDeploymentPlan(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEdgeDeploymentPlan", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateEdgeDeploymentPlan), arg0)
+}
+
+// CreateEdgeDeploymentPlanRequest mocks base method
+func (m *MockSageMakerAPI) CreateEdgeDeploymentPlanRequest(arg0 *sagemaker.CreateEdgeDeploymentPlanInput) (*request.Request, *sagemaker.CreateEdgeDeploymentPlanOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEdgeDeploymentPlanRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.CreateEdgeDeploymentPlanOutput)
+	return ret0, ret1
+}
+
+// CreateEdgeDeploymentPlanRequest indicates an expected call of CreateEdgeDeploymentPlanRequest
+func (mr *MockSageMakerAPIMockRecorder) CreateEdgeDeploymentPlanRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEdgeDeploymentPlanRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateEdgeDeploymentPlanRequest), arg0)
+}
+
+// CreateEdgeDeploymentPlanWithContext mocks base method
+func (m *MockSageMakerAPI) CreateEdgeDeploymentPlanWithContext(arg0 context.Context, arg1 *sagemaker.CreateEdgeDeploymentPlanInput, arg2 ...request.Option) (*sagemaker.CreateEdgeDeploymentPlanOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateEdgeDeploymentPlanWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.CreateEdgeDeploymentPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEdgeDeploymentPlanWithContext indicates an expected call of CreateEdgeDeploymentPlanWithContext
+func (mr *MockSageMakerAPIMockRecorder) CreateEdgeDeploymentPlanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEdgeDeploymentPlanWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateEdgeDeploymentPlanWithContext), varargs...)
+}
+
+// CreateEdgeDeploymentStage mocks base method
+func (m *MockSageMakerAPI) CreateEdgeDeploymentStage(arg0 *sagemaker.CreateEdgeDeploymentStageInput) (*sagemaker.CreateEdgeDeploymentStageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEdgeDeploymentStage", arg0)
+	ret0, _ := ret[0].(*sagemaker.CreateEdgeDeploymentStageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEdgeDeploymentStage indicates an expected call of CreateEdgeDeploymentStage
+func (mr *MockSageMakerAPIMockRecorder) CreateEdgeDeploymentStage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEdgeDeploymentStage", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateEdgeDeploymentStage), arg0)
+}
+
+// CreateEdgeDeploymentStageRequest mocks base method
+func (m *MockSageMakerAPI) CreateEdgeDeploymentStageRequest(arg0 *sagemaker.CreateEdgeDeploymentStageInput) (*request.Request, *sagemaker.CreateEdgeDeploymentStageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEdgeDeploymentStageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.CreateEdgeDeploymentStageOutput)
+	return ret0, ret1
+}
+
+// CreateEdgeDeploymentStageRequest indicates an expected call of CreateEdgeDeploymentStageRequest
+func (mr *MockSageMakerAPIMockRecorder) CreateEdgeDeploymentStageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEdgeDeploymentStageRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateEdgeDeploymentStageRequest), arg0)
+}
+
+// CreateEdgeDeploymentStageWithContext mocks base method
+func (m *MockSageMakerAPI) CreateEdgeDeploymentStageWithContext(arg0 context.Context, arg1 *sagemaker.CreateEdgeDeploymentStageInput, arg2 ...request.Option) (*sagemaker.CreateEdgeDeploymentStageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateEdgeDeploymentStageWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.CreateEdgeDeploymentStageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEdgeDeploymentStageWithContext indicates an expected call of CreateEdgeDeploymentStageWithContext
+func (mr *MockSageMakerAPIMockRecorder) CreateEdgeDeploymentStageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEdgeDeploymentStageWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateEdgeDeploymentStageWithContext), varargs...)
+}
+
 // CreateEdgePackagingJob mocks base method
 func (m *MockSageMakerAPI) CreateEdgePackagingJob(arg0 *sagemaker.CreateEdgePackagingJobInput) (*sagemaker.CreateEdgePackagingJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -3085,6 +3185,106 @@ func (mr *MockSageMakerAPIMockRecorder) DeleteDomainWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteDomainWithContext), varargs...)
 }
 
+// DeleteEdgeDeploymentPlan mocks base method
+func (m *MockSageMakerAPI) DeleteEdgeDeploymentPlan(arg0 *sagemaker.DeleteEdgeDeploymentPlanInput) (*sagemaker.DeleteEdgeDeploymentPlanOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEdgeDeploymentPlan", arg0)
+	ret0, _ := ret[0].(*sagemaker.DeleteEdgeDeploymentPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEdgeDeploymentPlan indicates an expected call of DeleteEdgeDeploymentPlan
+func (mr *MockSageMakerAPIMockRecorder) DeleteEdgeDeploymentPlan(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEdgeDeploymentPlan", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteEdgeDeploymentPlan), arg0)
+}
+
+// DeleteEdgeDeploymentPlanRequest mocks base method
+func (m *MockSageMakerAPI) DeleteEdgeDeploymentPlanRequest(arg0 *sagemaker.DeleteEdgeDeploymentPlanInput) (*request.Request, *sagemaker.DeleteEdgeDeploymentPlanOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEdgeDeploymentPlanRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DeleteEdgeDeploymentPlanOutput)
+	return ret0, ret1
+}
+
+// DeleteEdgeDeploymentPlanRequest indicates an expected call of DeleteEdgeDeploymentPlanRequest
+func (mr *MockSageMakerAPIMockRecorder) DeleteEdgeDeploymentPlanRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEdgeDeploymentPlanRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteEdgeDeploymentPlanRequest), arg0)
+}
+
+// DeleteEdgeDeploymentPlanWithContext mocks base method
+func (m *MockSageMakerAPI) DeleteEdgeDeploymentPlanWithContext(arg0 context.Context, arg1 *sagemaker.DeleteEdgeDeploymentPlanInput, arg2 ...request.Option) (*sagemaker.DeleteEdgeDeploymentPlanOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteEdgeDeploymentPlanWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DeleteEdgeDeploymentPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEdgeDeploymentPlanWithContext indicates an expected call of DeleteEdgeDeploymentPlanWithContext
+func (mr *MockSageMakerAPIMockRecorder) DeleteEdgeDeploymentPlanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEdgeDeploymentPlanWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteEdgeDeploymentPlanWithContext), varargs...)
+}
+
+// DeleteEdgeDeploymentStage mocks base method
+func (m *MockSageMakerAPI) DeleteEdgeDeploymentStage(arg0 *sagemaker.DeleteEdgeDeploymentStageInput) (*sagemaker.DeleteEdgeDeploymentStageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEdgeDeploymentStage", arg0)
+	ret0, _ := ret[0].(*sagemaker.DeleteEdgeDeploymentStageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEdgeDeploymentStage indicates an expected call of DeleteEdgeDeploymentStage
+func (mr *MockSageMakerAPIMockRecorder) DeleteEdgeDeploymentStage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEdgeDeploymentStage", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteEdgeDeploymentStage), arg0)
+}
+
+// DeleteEdgeDeploymentStageRequest mocks base method
+func (m *MockSageMakerAPI) DeleteEdgeDeploymentStageRequest(arg0 *sagemaker.DeleteEdgeDeploymentStageInput) (*request.Request, *sagemaker.DeleteEdgeDeploymentStageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEdgeDeploymentStageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DeleteEdgeDeploymentStageOutput)
+	return ret0, ret1
+}
+
+// DeleteEdgeDeploymentStageRequest indicates an expected call of DeleteEdgeDeploymentStageRequest
+func (mr *MockSageMakerAPIMockRecorder) DeleteEdgeDeploymentStageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEdgeDeploymentStageRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteEdgeDeploymentStageRequest), arg0)
+}
+
+// DeleteEdgeDeploymentStageWithContext mocks base method
+func (m *MockSageMakerAPI) DeleteEdgeDeploymentStageWithContext(arg0 context.Context, arg1 *sagemaker.DeleteEdgeDeploymentStageInput, arg2 ...request.Option) (*sagemaker.DeleteEdgeDeploymentStageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteEdgeDeploymentStageWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DeleteEdgeDeploymentStageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEdgeDeploymentStageWithContext indicates an expected call of DeleteEdgeDeploymentStageWithContext
+func (mr *MockSageMakerAPIMockRecorder) DeleteEdgeDeploymentStageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEdgeDeploymentStageWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteEdgeDeploymentStageWithContext), varargs...)
+}
+
 // DeleteEndpoint mocks base method
 func (m *MockSageMakerAPI) DeleteEndpoint(arg0 *sagemaker.DeleteEndpointInput) (*sagemaker.DeleteEndpointOutput, error) {
 	m.ctrl.T.Helper()
@@ -5133,6 +5333,56 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeDomainWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeDomainWithContext), varargs...)
+}
+
+// DescribeEdgeDeploymentPlan mocks base method
+func (m *MockSageMakerAPI) DescribeEdgeDeploymentPlan(arg0 *sagemaker.DescribeEdgeDeploymentPlanInput) (*sagemaker.DescribeEdgeDeploymentPlanOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEdgeDeploymentPlan", arg0)
+	ret0, _ := ret[0].(*sagemaker.DescribeEdgeDeploymentPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEdgeDeploymentPlan indicates an expected call of DescribeEdgeDeploymentPlan
+func (mr *MockSageMakerAPIMockRecorder) DescribeEdgeDeploymentPlan(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEdgeDeploymentPlan", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeEdgeDeploymentPlan), arg0)
+}
+
+// DescribeEdgeDeploymentPlanRequest mocks base method
+func (m *MockSageMakerAPI) DescribeEdgeDeploymentPlanRequest(arg0 *sagemaker.DescribeEdgeDeploymentPlanInput) (*request.Request, *sagemaker.DescribeEdgeDeploymentPlanOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEdgeDeploymentPlanRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DescribeEdgeDeploymentPlanOutput)
+	return ret0, ret1
+}
+
+// DescribeEdgeDeploymentPlanRequest indicates an expected call of DescribeEdgeDeploymentPlanRequest
+func (mr *MockSageMakerAPIMockRecorder) DescribeEdgeDeploymentPlanRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEdgeDeploymentPlanRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeEdgeDeploymentPlanRequest), arg0)
+}
+
+// DescribeEdgeDeploymentPlanWithContext mocks base method
+func (m *MockSageMakerAPI) DescribeEdgeDeploymentPlanWithContext(arg0 context.Context, arg1 *sagemaker.DescribeEdgeDeploymentPlanInput, arg2 ...request.Option) (*sagemaker.DescribeEdgeDeploymentPlanOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEdgeDeploymentPlanWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DescribeEdgeDeploymentPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEdgeDeploymentPlanWithContext indicates an expected call of DescribeEdgeDeploymentPlanWithContext
+func (mr *MockSageMakerAPIMockRecorder) DescribeEdgeDeploymentPlanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEdgeDeploymentPlanWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeEdgeDeploymentPlanWithContext), varargs...)
 }
 
 // DescribeEdgePackagingJob mocks base method
@@ -8630,6 +8880,89 @@ func (mr *MockSageMakerAPIMockRecorder) ListDomainsWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListDomainsWithContext), varargs...)
 }
 
+// ListEdgeDeploymentPlans mocks base method
+func (m *MockSageMakerAPI) ListEdgeDeploymentPlans(arg0 *sagemaker.ListEdgeDeploymentPlansInput) (*sagemaker.ListEdgeDeploymentPlansOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEdgeDeploymentPlans", arg0)
+	ret0, _ := ret[0].(*sagemaker.ListEdgeDeploymentPlansOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEdgeDeploymentPlans indicates an expected call of ListEdgeDeploymentPlans
+func (mr *MockSageMakerAPIMockRecorder) ListEdgeDeploymentPlans(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEdgeDeploymentPlans", reflect.TypeOf((*MockSageMakerAPI)(nil).ListEdgeDeploymentPlans), arg0)
+}
+
+// ListEdgeDeploymentPlansPages mocks base method
+func (m *MockSageMakerAPI) ListEdgeDeploymentPlansPages(arg0 *sagemaker.ListEdgeDeploymentPlansInput, arg1 func(*sagemaker.ListEdgeDeploymentPlansOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEdgeDeploymentPlansPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEdgeDeploymentPlansPages indicates an expected call of ListEdgeDeploymentPlansPages
+func (mr *MockSageMakerAPIMockRecorder) ListEdgeDeploymentPlansPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEdgeDeploymentPlansPages", reflect.TypeOf((*MockSageMakerAPI)(nil).ListEdgeDeploymentPlansPages), arg0, arg1)
+}
+
+// ListEdgeDeploymentPlansPagesWithContext mocks base method
+func (m *MockSageMakerAPI) ListEdgeDeploymentPlansPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListEdgeDeploymentPlansInput, arg2 func(*sagemaker.ListEdgeDeploymentPlansOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEdgeDeploymentPlansPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEdgeDeploymentPlansPagesWithContext indicates an expected call of ListEdgeDeploymentPlansPagesWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListEdgeDeploymentPlansPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEdgeDeploymentPlansPagesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListEdgeDeploymentPlansPagesWithContext), varargs...)
+}
+
+// ListEdgeDeploymentPlansRequest mocks base method
+func (m *MockSageMakerAPI) ListEdgeDeploymentPlansRequest(arg0 *sagemaker.ListEdgeDeploymentPlansInput) (*request.Request, *sagemaker.ListEdgeDeploymentPlansOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEdgeDeploymentPlansRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.ListEdgeDeploymentPlansOutput)
+	return ret0, ret1
+}
+
+// ListEdgeDeploymentPlansRequest indicates an expected call of ListEdgeDeploymentPlansRequest
+func (mr *MockSageMakerAPIMockRecorder) ListEdgeDeploymentPlansRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEdgeDeploymentPlansRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).ListEdgeDeploymentPlansRequest), arg0)
+}
+
+// ListEdgeDeploymentPlansWithContext mocks base method
+func (m *MockSageMakerAPI) ListEdgeDeploymentPlansWithContext(arg0 context.Context, arg1 *sagemaker.ListEdgeDeploymentPlansInput, arg2 ...request.Option) (*sagemaker.ListEdgeDeploymentPlansOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEdgeDeploymentPlansWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.ListEdgeDeploymentPlansOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEdgeDeploymentPlansWithContext indicates an expected call of ListEdgeDeploymentPlansWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListEdgeDeploymentPlansWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEdgeDeploymentPlansWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListEdgeDeploymentPlansWithContext), varargs...)
+}
+
 // ListEdgePackagingJobs mocks base method
 func (m *MockSageMakerAPI) ListEdgePackagingJobs(arg0 *sagemaker.ListEdgePackagingJobsInput) (*sagemaker.ListEdgePackagingJobsOutput, error) {
 	m.ctrl.T.Helper()
@@ -11203,6 +11536,89 @@ func (mr *MockSageMakerAPIMockRecorder) ListProjectsWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListProjectsWithContext), varargs...)
 }
 
+// ListStageDevices mocks base method
+func (m *MockSageMakerAPI) ListStageDevices(arg0 *sagemaker.ListStageDevicesInput) (*sagemaker.ListStageDevicesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStageDevices", arg0)
+	ret0, _ := ret[0].(*sagemaker.ListStageDevicesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStageDevices indicates an expected call of ListStageDevices
+func (mr *MockSageMakerAPIMockRecorder) ListStageDevices(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStageDevices", reflect.TypeOf((*MockSageMakerAPI)(nil).ListStageDevices), arg0)
+}
+
+// ListStageDevicesPages mocks base method
+func (m *MockSageMakerAPI) ListStageDevicesPages(arg0 *sagemaker.ListStageDevicesInput, arg1 func(*sagemaker.ListStageDevicesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStageDevicesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStageDevicesPages indicates an expected call of ListStageDevicesPages
+func (mr *MockSageMakerAPIMockRecorder) ListStageDevicesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStageDevicesPages", reflect.TypeOf((*MockSageMakerAPI)(nil).ListStageDevicesPages), arg0, arg1)
+}
+
+// ListStageDevicesPagesWithContext mocks base method
+func (m *MockSageMakerAPI) ListStageDevicesPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListStageDevicesInput, arg2 func(*sagemaker.ListStageDevicesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStageDevicesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStageDevicesPagesWithContext indicates an expected call of ListStageDevicesPagesWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListStageDevicesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStageDevicesPagesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListStageDevicesPagesWithContext), varargs...)
+}
+
+// ListStageDevicesRequest mocks base method
+func (m *MockSageMakerAPI) ListStageDevicesRequest(arg0 *sagemaker.ListStageDevicesInput) (*request.Request, *sagemaker.ListStageDevicesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStageDevicesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.ListStageDevicesOutput)
+	return ret0, ret1
+}
+
+// ListStageDevicesRequest indicates an expected call of ListStageDevicesRequest
+func (mr *MockSageMakerAPIMockRecorder) ListStageDevicesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStageDevicesRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).ListStageDevicesRequest), arg0)
+}
+
+// ListStageDevicesWithContext mocks base method
+func (m *MockSageMakerAPI) ListStageDevicesWithContext(arg0 context.Context, arg1 *sagemaker.ListStageDevicesInput, arg2 ...request.Option) (*sagemaker.ListStageDevicesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStageDevicesWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.ListStageDevicesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStageDevicesWithContext indicates an expected call of ListStageDevicesWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListStageDevicesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStageDevicesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListStageDevicesWithContext), varargs...)
+}
+
 // ListStudioLifecycleConfigs mocks base method
 func (m *MockSageMakerAPI) ListStudioLifecycleConfigs(arg0 *sagemaker.ListStudioLifecycleConfigsInput) (*sagemaker.ListStudioLifecycleConfigsOutput, error) {
 	m.ctrl.T.Helper()
@@ -12582,6 +12998,56 @@ func (mr *MockSageMakerAPIMockRecorder) SendPipelineExecutionStepSuccessWithCont
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendPipelineExecutionStepSuccessWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).SendPipelineExecutionStepSuccessWithContext), varargs...)
 }
 
+// StartEdgeDeploymentStage mocks base method
+func (m *MockSageMakerAPI) StartEdgeDeploymentStage(arg0 *sagemaker.StartEdgeDeploymentStageInput) (*sagemaker.StartEdgeDeploymentStageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartEdgeDeploymentStage", arg0)
+	ret0, _ := ret[0].(*sagemaker.StartEdgeDeploymentStageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartEdgeDeploymentStage indicates an expected call of StartEdgeDeploymentStage
+func (mr *MockSageMakerAPIMockRecorder) StartEdgeDeploymentStage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartEdgeDeploymentStage", reflect.TypeOf((*MockSageMakerAPI)(nil).StartEdgeDeploymentStage), arg0)
+}
+
+// StartEdgeDeploymentStageRequest mocks base method
+func (m *MockSageMakerAPI) StartEdgeDeploymentStageRequest(arg0 *sagemaker.StartEdgeDeploymentStageInput) (*request.Request, *sagemaker.StartEdgeDeploymentStageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartEdgeDeploymentStageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.StartEdgeDeploymentStageOutput)
+	return ret0, ret1
+}
+
+// StartEdgeDeploymentStageRequest indicates an expected call of StartEdgeDeploymentStageRequest
+func (mr *MockSageMakerAPIMockRecorder) StartEdgeDeploymentStageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartEdgeDeploymentStageRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).StartEdgeDeploymentStageRequest), arg0)
+}
+
+// StartEdgeDeploymentStageWithContext mocks base method
+func (m *MockSageMakerAPI) StartEdgeDeploymentStageWithContext(arg0 context.Context, arg1 *sagemaker.StartEdgeDeploymentStageInput, arg2 ...request.Option) (*sagemaker.StartEdgeDeploymentStageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartEdgeDeploymentStageWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.StartEdgeDeploymentStageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartEdgeDeploymentStageWithContext indicates an expected call of StartEdgeDeploymentStageWithContext
+func (mr *MockSageMakerAPIMockRecorder) StartEdgeDeploymentStageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartEdgeDeploymentStageWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).StartEdgeDeploymentStageWithContext), varargs...)
+}
+
 // StartMonitoringSchedule mocks base method
 func (m *MockSageMakerAPI) StartMonitoringSchedule(arg0 *sagemaker.StartMonitoringScheduleInput) (*sagemaker.StartMonitoringScheduleOutput, error) {
 	m.ctrl.T.Helper()
@@ -12830,6 +13296,56 @@ func (mr *MockSageMakerAPIMockRecorder) StopCompilationJobWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopCompilationJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).StopCompilationJobWithContext), varargs...)
+}
+
+// StopEdgeDeploymentStage mocks base method
+func (m *MockSageMakerAPI) StopEdgeDeploymentStage(arg0 *sagemaker.StopEdgeDeploymentStageInput) (*sagemaker.StopEdgeDeploymentStageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopEdgeDeploymentStage", arg0)
+	ret0, _ := ret[0].(*sagemaker.StopEdgeDeploymentStageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopEdgeDeploymentStage indicates an expected call of StopEdgeDeploymentStage
+func (mr *MockSageMakerAPIMockRecorder) StopEdgeDeploymentStage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopEdgeDeploymentStage", reflect.TypeOf((*MockSageMakerAPI)(nil).StopEdgeDeploymentStage), arg0)
+}
+
+// StopEdgeDeploymentStageRequest mocks base method
+func (m *MockSageMakerAPI) StopEdgeDeploymentStageRequest(arg0 *sagemaker.StopEdgeDeploymentStageInput) (*request.Request, *sagemaker.StopEdgeDeploymentStageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopEdgeDeploymentStageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.StopEdgeDeploymentStageOutput)
+	return ret0, ret1
+}
+
+// StopEdgeDeploymentStageRequest indicates an expected call of StopEdgeDeploymentStageRequest
+func (mr *MockSageMakerAPIMockRecorder) StopEdgeDeploymentStageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopEdgeDeploymentStageRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).StopEdgeDeploymentStageRequest), arg0)
+}
+
+// StopEdgeDeploymentStageWithContext mocks base method
+func (m *MockSageMakerAPI) StopEdgeDeploymentStageWithContext(arg0 context.Context, arg1 *sagemaker.StopEdgeDeploymentStageInput, arg2 ...request.Option) (*sagemaker.StopEdgeDeploymentStageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopEdgeDeploymentStageWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.StopEdgeDeploymentStageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopEdgeDeploymentStageWithContext indicates an expected call of StopEdgeDeploymentStageWithContext
+func (mr *MockSageMakerAPIMockRecorder) StopEdgeDeploymentStageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopEdgeDeploymentStageWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).StopEdgeDeploymentStageWithContext), varargs...)
 }
 
 // StopEdgePackagingJob mocks base method

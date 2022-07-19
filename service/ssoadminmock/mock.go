@@ -35,6 +35,56 @@ func (m *MockSSOAdminAPI) EXPECT() *MockSSOAdminAPIMockRecorder {
 	return m.recorder
 }
 
+// AttachCustomerManagedPolicyReferenceToPermissionSet mocks base method
+func (m *MockSSOAdminAPI) AttachCustomerManagedPolicyReferenceToPermissionSet(arg0 *ssoadmin.AttachCustomerManagedPolicyReferenceToPermissionSetInput) (*ssoadmin.AttachCustomerManagedPolicyReferenceToPermissionSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AttachCustomerManagedPolicyReferenceToPermissionSet", arg0)
+	ret0, _ := ret[0].(*ssoadmin.AttachCustomerManagedPolicyReferenceToPermissionSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AttachCustomerManagedPolicyReferenceToPermissionSet indicates an expected call of AttachCustomerManagedPolicyReferenceToPermissionSet
+func (mr *MockSSOAdminAPIMockRecorder) AttachCustomerManagedPolicyReferenceToPermissionSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachCustomerManagedPolicyReferenceToPermissionSet", reflect.TypeOf((*MockSSOAdminAPI)(nil).AttachCustomerManagedPolicyReferenceToPermissionSet), arg0)
+}
+
+// AttachCustomerManagedPolicyReferenceToPermissionSetRequest mocks base method
+func (m *MockSSOAdminAPI) AttachCustomerManagedPolicyReferenceToPermissionSetRequest(arg0 *ssoadmin.AttachCustomerManagedPolicyReferenceToPermissionSetInput) (*request.Request, *ssoadmin.AttachCustomerManagedPolicyReferenceToPermissionSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AttachCustomerManagedPolicyReferenceToPermissionSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssoadmin.AttachCustomerManagedPolicyReferenceToPermissionSetOutput)
+	return ret0, ret1
+}
+
+// AttachCustomerManagedPolicyReferenceToPermissionSetRequest indicates an expected call of AttachCustomerManagedPolicyReferenceToPermissionSetRequest
+func (mr *MockSSOAdminAPIMockRecorder) AttachCustomerManagedPolicyReferenceToPermissionSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachCustomerManagedPolicyReferenceToPermissionSetRequest", reflect.TypeOf((*MockSSOAdminAPI)(nil).AttachCustomerManagedPolicyReferenceToPermissionSetRequest), arg0)
+}
+
+// AttachCustomerManagedPolicyReferenceToPermissionSetWithContext mocks base method
+func (m *MockSSOAdminAPI) AttachCustomerManagedPolicyReferenceToPermissionSetWithContext(arg0 context.Context, arg1 *ssoadmin.AttachCustomerManagedPolicyReferenceToPermissionSetInput, arg2 ...request.Option) (*ssoadmin.AttachCustomerManagedPolicyReferenceToPermissionSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AttachCustomerManagedPolicyReferenceToPermissionSetWithContext", varargs...)
+	ret0, _ := ret[0].(*ssoadmin.AttachCustomerManagedPolicyReferenceToPermissionSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AttachCustomerManagedPolicyReferenceToPermissionSetWithContext indicates an expected call of AttachCustomerManagedPolicyReferenceToPermissionSetWithContext
+func (mr *MockSSOAdminAPIMockRecorder) AttachCustomerManagedPolicyReferenceToPermissionSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AttachCustomerManagedPolicyReferenceToPermissionSetWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).AttachCustomerManagedPolicyReferenceToPermissionSetWithContext), varargs...)
+}
+
 // AttachManagedPolicyToPermissionSet mocks base method
 func (m *MockSSOAdminAPI) AttachManagedPolicyToPermissionSet(arg0 *ssoadmin.AttachManagedPolicyToPermissionSetInput) (*ssoadmin.AttachManagedPolicyToPermissionSetOutput, error) {
 	m.ctrl.T.Helper()
@@ -435,6 +485,56 @@ func (mr *MockSSOAdminAPIMockRecorder) DeletePermissionSetWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePermissionSetWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).DeletePermissionSetWithContext), varargs...)
 }
 
+// DeletePermissionsBoundaryFromPermissionSet mocks base method
+func (m *MockSSOAdminAPI) DeletePermissionsBoundaryFromPermissionSet(arg0 *ssoadmin.DeletePermissionsBoundaryFromPermissionSetInput) (*ssoadmin.DeletePermissionsBoundaryFromPermissionSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePermissionsBoundaryFromPermissionSet", arg0)
+	ret0, _ := ret[0].(*ssoadmin.DeletePermissionsBoundaryFromPermissionSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePermissionsBoundaryFromPermissionSet indicates an expected call of DeletePermissionsBoundaryFromPermissionSet
+func (mr *MockSSOAdminAPIMockRecorder) DeletePermissionsBoundaryFromPermissionSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePermissionsBoundaryFromPermissionSet", reflect.TypeOf((*MockSSOAdminAPI)(nil).DeletePermissionsBoundaryFromPermissionSet), arg0)
+}
+
+// DeletePermissionsBoundaryFromPermissionSetRequest mocks base method
+func (m *MockSSOAdminAPI) DeletePermissionsBoundaryFromPermissionSetRequest(arg0 *ssoadmin.DeletePermissionsBoundaryFromPermissionSetInput) (*request.Request, *ssoadmin.DeletePermissionsBoundaryFromPermissionSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePermissionsBoundaryFromPermissionSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssoadmin.DeletePermissionsBoundaryFromPermissionSetOutput)
+	return ret0, ret1
+}
+
+// DeletePermissionsBoundaryFromPermissionSetRequest indicates an expected call of DeletePermissionsBoundaryFromPermissionSetRequest
+func (mr *MockSSOAdminAPIMockRecorder) DeletePermissionsBoundaryFromPermissionSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePermissionsBoundaryFromPermissionSetRequest", reflect.TypeOf((*MockSSOAdminAPI)(nil).DeletePermissionsBoundaryFromPermissionSetRequest), arg0)
+}
+
+// DeletePermissionsBoundaryFromPermissionSetWithContext mocks base method
+func (m *MockSSOAdminAPI) DeletePermissionsBoundaryFromPermissionSetWithContext(arg0 context.Context, arg1 *ssoadmin.DeletePermissionsBoundaryFromPermissionSetInput, arg2 ...request.Option) (*ssoadmin.DeletePermissionsBoundaryFromPermissionSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePermissionsBoundaryFromPermissionSetWithContext", varargs...)
+	ret0, _ := ret[0].(*ssoadmin.DeletePermissionsBoundaryFromPermissionSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePermissionsBoundaryFromPermissionSetWithContext indicates an expected call of DeletePermissionsBoundaryFromPermissionSetWithContext
+func (mr *MockSSOAdminAPIMockRecorder) DeletePermissionsBoundaryFromPermissionSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePermissionsBoundaryFromPermissionSetWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).DeletePermissionsBoundaryFromPermissionSetWithContext), varargs...)
+}
+
 // DescribeAccountAssignmentCreationStatus mocks base method
 func (m *MockSSOAdminAPI) DescribeAccountAssignmentCreationStatus(arg0 *ssoadmin.DescribeAccountAssignmentCreationStatusInput) (*ssoadmin.DescribeAccountAssignmentCreationStatusOutput, error) {
 	m.ctrl.T.Helper()
@@ -685,6 +785,56 @@ func (mr *MockSSOAdminAPIMockRecorder) DescribePermissionSetWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePermissionSetWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).DescribePermissionSetWithContext), varargs...)
 }
 
+// DetachCustomerManagedPolicyReferenceFromPermissionSet mocks base method
+func (m *MockSSOAdminAPI) DetachCustomerManagedPolicyReferenceFromPermissionSet(arg0 *ssoadmin.DetachCustomerManagedPolicyReferenceFromPermissionSetInput) (*ssoadmin.DetachCustomerManagedPolicyReferenceFromPermissionSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetachCustomerManagedPolicyReferenceFromPermissionSet", arg0)
+	ret0, _ := ret[0].(*ssoadmin.DetachCustomerManagedPolicyReferenceFromPermissionSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetachCustomerManagedPolicyReferenceFromPermissionSet indicates an expected call of DetachCustomerManagedPolicyReferenceFromPermissionSet
+func (mr *MockSSOAdminAPIMockRecorder) DetachCustomerManagedPolicyReferenceFromPermissionSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetachCustomerManagedPolicyReferenceFromPermissionSet", reflect.TypeOf((*MockSSOAdminAPI)(nil).DetachCustomerManagedPolicyReferenceFromPermissionSet), arg0)
+}
+
+// DetachCustomerManagedPolicyReferenceFromPermissionSetRequest mocks base method
+func (m *MockSSOAdminAPI) DetachCustomerManagedPolicyReferenceFromPermissionSetRequest(arg0 *ssoadmin.DetachCustomerManagedPolicyReferenceFromPermissionSetInput) (*request.Request, *ssoadmin.DetachCustomerManagedPolicyReferenceFromPermissionSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetachCustomerManagedPolicyReferenceFromPermissionSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssoadmin.DetachCustomerManagedPolicyReferenceFromPermissionSetOutput)
+	return ret0, ret1
+}
+
+// DetachCustomerManagedPolicyReferenceFromPermissionSetRequest indicates an expected call of DetachCustomerManagedPolicyReferenceFromPermissionSetRequest
+func (mr *MockSSOAdminAPIMockRecorder) DetachCustomerManagedPolicyReferenceFromPermissionSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetachCustomerManagedPolicyReferenceFromPermissionSetRequest", reflect.TypeOf((*MockSSOAdminAPI)(nil).DetachCustomerManagedPolicyReferenceFromPermissionSetRequest), arg0)
+}
+
+// DetachCustomerManagedPolicyReferenceFromPermissionSetWithContext mocks base method
+func (m *MockSSOAdminAPI) DetachCustomerManagedPolicyReferenceFromPermissionSetWithContext(arg0 context.Context, arg1 *ssoadmin.DetachCustomerManagedPolicyReferenceFromPermissionSetInput, arg2 ...request.Option) (*ssoadmin.DetachCustomerManagedPolicyReferenceFromPermissionSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DetachCustomerManagedPolicyReferenceFromPermissionSetWithContext", varargs...)
+	ret0, _ := ret[0].(*ssoadmin.DetachCustomerManagedPolicyReferenceFromPermissionSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetachCustomerManagedPolicyReferenceFromPermissionSetWithContext indicates an expected call of DetachCustomerManagedPolicyReferenceFromPermissionSetWithContext
+func (mr *MockSSOAdminAPIMockRecorder) DetachCustomerManagedPolicyReferenceFromPermissionSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetachCustomerManagedPolicyReferenceFromPermissionSetWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).DetachCustomerManagedPolicyReferenceFromPermissionSetWithContext), varargs...)
+}
+
 // DetachManagedPolicyFromPermissionSet mocks base method
 func (m *MockSSOAdminAPI) DetachManagedPolicyFromPermissionSet(arg0 *ssoadmin.DetachManagedPolicyFromPermissionSetInput) (*ssoadmin.DetachManagedPolicyFromPermissionSetOutput, error) {
 	m.ctrl.T.Helper()
@@ -783,6 +933,56 @@ func (mr *MockSSOAdminAPIMockRecorder) GetInlinePolicyForPermissionSetWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInlinePolicyForPermissionSetWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).GetInlinePolicyForPermissionSetWithContext), varargs...)
+}
+
+// GetPermissionsBoundaryForPermissionSet mocks base method
+func (m *MockSSOAdminAPI) GetPermissionsBoundaryForPermissionSet(arg0 *ssoadmin.GetPermissionsBoundaryForPermissionSetInput) (*ssoadmin.GetPermissionsBoundaryForPermissionSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPermissionsBoundaryForPermissionSet", arg0)
+	ret0, _ := ret[0].(*ssoadmin.GetPermissionsBoundaryForPermissionSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPermissionsBoundaryForPermissionSet indicates an expected call of GetPermissionsBoundaryForPermissionSet
+func (mr *MockSSOAdminAPIMockRecorder) GetPermissionsBoundaryForPermissionSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPermissionsBoundaryForPermissionSet", reflect.TypeOf((*MockSSOAdminAPI)(nil).GetPermissionsBoundaryForPermissionSet), arg0)
+}
+
+// GetPermissionsBoundaryForPermissionSetRequest mocks base method
+func (m *MockSSOAdminAPI) GetPermissionsBoundaryForPermissionSetRequest(arg0 *ssoadmin.GetPermissionsBoundaryForPermissionSetInput) (*request.Request, *ssoadmin.GetPermissionsBoundaryForPermissionSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPermissionsBoundaryForPermissionSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssoadmin.GetPermissionsBoundaryForPermissionSetOutput)
+	return ret0, ret1
+}
+
+// GetPermissionsBoundaryForPermissionSetRequest indicates an expected call of GetPermissionsBoundaryForPermissionSetRequest
+func (mr *MockSSOAdminAPIMockRecorder) GetPermissionsBoundaryForPermissionSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPermissionsBoundaryForPermissionSetRequest", reflect.TypeOf((*MockSSOAdminAPI)(nil).GetPermissionsBoundaryForPermissionSetRequest), arg0)
+}
+
+// GetPermissionsBoundaryForPermissionSetWithContext mocks base method
+func (m *MockSSOAdminAPI) GetPermissionsBoundaryForPermissionSetWithContext(arg0 context.Context, arg1 *ssoadmin.GetPermissionsBoundaryForPermissionSetInput, arg2 ...request.Option) (*ssoadmin.GetPermissionsBoundaryForPermissionSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPermissionsBoundaryForPermissionSetWithContext", varargs...)
+	ret0, _ := ret[0].(*ssoadmin.GetPermissionsBoundaryForPermissionSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPermissionsBoundaryForPermissionSetWithContext indicates an expected call of GetPermissionsBoundaryForPermissionSetWithContext
+func (mr *MockSSOAdminAPIMockRecorder) GetPermissionsBoundaryForPermissionSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPermissionsBoundaryForPermissionSetWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).GetPermissionsBoundaryForPermissionSetWithContext), varargs...)
 }
 
 // ListAccountAssignmentCreationStatus mocks base method
@@ -1115,6 +1315,89 @@ func (mr *MockSSOAdminAPIMockRecorder) ListAccountsForProvisionedPermissionSetWi
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccountsForProvisionedPermissionSetWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).ListAccountsForProvisionedPermissionSetWithContext), varargs...)
+}
+
+// ListCustomerManagedPolicyReferencesInPermissionSet mocks base method
+func (m *MockSSOAdminAPI) ListCustomerManagedPolicyReferencesInPermissionSet(arg0 *ssoadmin.ListCustomerManagedPolicyReferencesInPermissionSetInput) (*ssoadmin.ListCustomerManagedPolicyReferencesInPermissionSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomerManagedPolicyReferencesInPermissionSet", arg0)
+	ret0, _ := ret[0].(*ssoadmin.ListCustomerManagedPolicyReferencesInPermissionSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCustomerManagedPolicyReferencesInPermissionSet indicates an expected call of ListCustomerManagedPolicyReferencesInPermissionSet
+func (mr *MockSSOAdminAPIMockRecorder) ListCustomerManagedPolicyReferencesInPermissionSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomerManagedPolicyReferencesInPermissionSet", reflect.TypeOf((*MockSSOAdminAPI)(nil).ListCustomerManagedPolicyReferencesInPermissionSet), arg0)
+}
+
+// ListCustomerManagedPolicyReferencesInPermissionSetPages mocks base method
+func (m *MockSSOAdminAPI) ListCustomerManagedPolicyReferencesInPermissionSetPages(arg0 *ssoadmin.ListCustomerManagedPolicyReferencesInPermissionSetInput, arg1 func(*ssoadmin.ListCustomerManagedPolicyReferencesInPermissionSetOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomerManagedPolicyReferencesInPermissionSetPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCustomerManagedPolicyReferencesInPermissionSetPages indicates an expected call of ListCustomerManagedPolicyReferencesInPermissionSetPages
+func (mr *MockSSOAdminAPIMockRecorder) ListCustomerManagedPolicyReferencesInPermissionSetPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomerManagedPolicyReferencesInPermissionSetPages", reflect.TypeOf((*MockSSOAdminAPI)(nil).ListCustomerManagedPolicyReferencesInPermissionSetPages), arg0, arg1)
+}
+
+// ListCustomerManagedPolicyReferencesInPermissionSetPagesWithContext mocks base method
+func (m *MockSSOAdminAPI) ListCustomerManagedPolicyReferencesInPermissionSetPagesWithContext(arg0 context.Context, arg1 *ssoadmin.ListCustomerManagedPolicyReferencesInPermissionSetInput, arg2 func(*ssoadmin.ListCustomerManagedPolicyReferencesInPermissionSetOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCustomerManagedPolicyReferencesInPermissionSetPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCustomerManagedPolicyReferencesInPermissionSetPagesWithContext indicates an expected call of ListCustomerManagedPolicyReferencesInPermissionSetPagesWithContext
+func (mr *MockSSOAdminAPIMockRecorder) ListCustomerManagedPolicyReferencesInPermissionSetPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomerManagedPolicyReferencesInPermissionSetPagesWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).ListCustomerManagedPolicyReferencesInPermissionSetPagesWithContext), varargs...)
+}
+
+// ListCustomerManagedPolicyReferencesInPermissionSetRequest mocks base method
+func (m *MockSSOAdminAPI) ListCustomerManagedPolicyReferencesInPermissionSetRequest(arg0 *ssoadmin.ListCustomerManagedPolicyReferencesInPermissionSetInput) (*request.Request, *ssoadmin.ListCustomerManagedPolicyReferencesInPermissionSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomerManagedPolicyReferencesInPermissionSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssoadmin.ListCustomerManagedPolicyReferencesInPermissionSetOutput)
+	return ret0, ret1
+}
+
+// ListCustomerManagedPolicyReferencesInPermissionSetRequest indicates an expected call of ListCustomerManagedPolicyReferencesInPermissionSetRequest
+func (mr *MockSSOAdminAPIMockRecorder) ListCustomerManagedPolicyReferencesInPermissionSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomerManagedPolicyReferencesInPermissionSetRequest", reflect.TypeOf((*MockSSOAdminAPI)(nil).ListCustomerManagedPolicyReferencesInPermissionSetRequest), arg0)
+}
+
+// ListCustomerManagedPolicyReferencesInPermissionSetWithContext mocks base method
+func (m *MockSSOAdminAPI) ListCustomerManagedPolicyReferencesInPermissionSetWithContext(arg0 context.Context, arg1 *ssoadmin.ListCustomerManagedPolicyReferencesInPermissionSetInput, arg2 ...request.Option) (*ssoadmin.ListCustomerManagedPolicyReferencesInPermissionSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCustomerManagedPolicyReferencesInPermissionSetWithContext", varargs...)
+	ret0, _ := ret[0].(*ssoadmin.ListCustomerManagedPolicyReferencesInPermissionSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCustomerManagedPolicyReferencesInPermissionSetWithContext indicates an expected call of ListCustomerManagedPolicyReferencesInPermissionSetWithContext
+func (mr *MockSSOAdminAPIMockRecorder) ListCustomerManagedPolicyReferencesInPermissionSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomerManagedPolicyReferencesInPermissionSetWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).ListCustomerManagedPolicyReferencesInPermissionSetWithContext), varargs...)
 }
 
 // ListInstances mocks base method
@@ -1713,6 +1996,56 @@ func (mr *MockSSOAdminAPIMockRecorder) PutInlinePolicyToPermissionSetWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInlinePolicyToPermissionSetWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).PutInlinePolicyToPermissionSetWithContext), varargs...)
+}
+
+// PutPermissionsBoundaryToPermissionSet mocks base method
+func (m *MockSSOAdminAPI) PutPermissionsBoundaryToPermissionSet(arg0 *ssoadmin.PutPermissionsBoundaryToPermissionSetInput) (*ssoadmin.PutPermissionsBoundaryToPermissionSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPermissionsBoundaryToPermissionSet", arg0)
+	ret0, _ := ret[0].(*ssoadmin.PutPermissionsBoundaryToPermissionSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPermissionsBoundaryToPermissionSet indicates an expected call of PutPermissionsBoundaryToPermissionSet
+func (mr *MockSSOAdminAPIMockRecorder) PutPermissionsBoundaryToPermissionSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPermissionsBoundaryToPermissionSet", reflect.TypeOf((*MockSSOAdminAPI)(nil).PutPermissionsBoundaryToPermissionSet), arg0)
+}
+
+// PutPermissionsBoundaryToPermissionSetRequest mocks base method
+func (m *MockSSOAdminAPI) PutPermissionsBoundaryToPermissionSetRequest(arg0 *ssoadmin.PutPermissionsBoundaryToPermissionSetInput) (*request.Request, *ssoadmin.PutPermissionsBoundaryToPermissionSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutPermissionsBoundaryToPermissionSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssoadmin.PutPermissionsBoundaryToPermissionSetOutput)
+	return ret0, ret1
+}
+
+// PutPermissionsBoundaryToPermissionSetRequest indicates an expected call of PutPermissionsBoundaryToPermissionSetRequest
+func (mr *MockSSOAdminAPIMockRecorder) PutPermissionsBoundaryToPermissionSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPermissionsBoundaryToPermissionSetRequest", reflect.TypeOf((*MockSSOAdminAPI)(nil).PutPermissionsBoundaryToPermissionSetRequest), arg0)
+}
+
+// PutPermissionsBoundaryToPermissionSetWithContext mocks base method
+func (m *MockSSOAdminAPI) PutPermissionsBoundaryToPermissionSetWithContext(arg0 context.Context, arg1 *ssoadmin.PutPermissionsBoundaryToPermissionSetInput, arg2 ...request.Option) (*ssoadmin.PutPermissionsBoundaryToPermissionSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutPermissionsBoundaryToPermissionSetWithContext", varargs...)
+	ret0, _ := ret[0].(*ssoadmin.PutPermissionsBoundaryToPermissionSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutPermissionsBoundaryToPermissionSetWithContext indicates an expected call of PutPermissionsBoundaryToPermissionSetWithContext
+func (mr *MockSSOAdminAPIMockRecorder) PutPermissionsBoundaryToPermissionSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutPermissionsBoundaryToPermissionSetWithContext", reflect.TypeOf((*MockSSOAdminAPI)(nil).PutPermissionsBoundaryToPermissionSetWithContext), varargs...)
 }
 
 // TagResource mocks base method
