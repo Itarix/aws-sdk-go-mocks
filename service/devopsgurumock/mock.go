@@ -1000,6 +1000,89 @@ func (mr *MockDevOpsGuruAPIMockRecorder) ListAnomaliesForInsightWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnomaliesForInsightWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListAnomaliesForInsightWithContext), varargs...)
 }
 
+// ListAnomalousLogGroups mocks base method
+func (m *MockDevOpsGuruAPI) ListAnomalousLogGroups(arg0 *devopsguru.ListAnomalousLogGroupsInput) (*devopsguru.ListAnomalousLogGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnomalousLogGroups", arg0)
+	ret0, _ := ret[0].(*devopsguru.ListAnomalousLogGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAnomalousLogGroups indicates an expected call of ListAnomalousLogGroups
+func (mr *MockDevOpsGuruAPIMockRecorder) ListAnomalousLogGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnomalousLogGroups", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListAnomalousLogGroups), arg0)
+}
+
+// ListAnomalousLogGroupsPages mocks base method
+func (m *MockDevOpsGuruAPI) ListAnomalousLogGroupsPages(arg0 *devopsguru.ListAnomalousLogGroupsInput, arg1 func(*devopsguru.ListAnomalousLogGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnomalousLogGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAnomalousLogGroupsPages indicates an expected call of ListAnomalousLogGroupsPages
+func (mr *MockDevOpsGuruAPIMockRecorder) ListAnomalousLogGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnomalousLogGroupsPages", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListAnomalousLogGroupsPages), arg0, arg1)
+}
+
+// ListAnomalousLogGroupsPagesWithContext mocks base method
+func (m *MockDevOpsGuruAPI) ListAnomalousLogGroupsPagesWithContext(arg0 context.Context, arg1 *devopsguru.ListAnomalousLogGroupsInput, arg2 func(*devopsguru.ListAnomalousLogGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAnomalousLogGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAnomalousLogGroupsPagesWithContext indicates an expected call of ListAnomalousLogGroupsPagesWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) ListAnomalousLogGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnomalousLogGroupsPagesWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListAnomalousLogGroupsPagesWithContext), varargs...)
+}
+
+// ListAnomalousLogGroupsRequest mocks base method
+func (m *MockDevOpsGuruAPI) ListAnomalousLogGroupsRequest(arg0 *devopsguru.ListAnomalousLogGroupsInput) (*request.Request, *devopsguru.ListAnomalousLogGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnomalousLogGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devopsguru.ListAnomalousLogGroupsOutput)
+	return ret0, ret1
+}
+
+// ListAnomalousLogGroupsRequest indicates an expected call of ListAnomalousLogGroupsRequest
+func (mr *MockDevOpsGuruAPIMockRecorder) ListAnomalousLogGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnomalousLogGroupsRequest", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListAnomalousLogGroupsRequest), arg0)
+}
+
+// ListAnomalousLogGroupsWithContext mocks base method
+func (m *MockDevOpsGuruAPI) ListAnomalousLogGroupsWithContext(arg0 context.Context, arg1 *devopsguru.ListAnomalousLogGroupsInput, arg2 ...request.Option) (*devopsguru.ListAnomalousLogGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAnomalousLogGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*devopsguru.ListAnomalousLogGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAnomalousLogGroupsWithContext indicates an expected call of ListAnomalousLogGroupsWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) ListAnomalousLogGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnomalousLogGroupsWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListAnomalousLogGroupsWithContext), varargs...)
+}
+
 // ListEvents mocks base method
 func (m *MockDevOpsGuruAPI) ListEvents(arg0 *devopsguru.ListEventsInput) (*devopsguru.ListEventsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1164,6 +1247,89 @@ func (mr *MockDevOpsGuruAPIMockRecorder) ListInsightsWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInsightsWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListInsightsWithContext), varargs...)
+}
+
+// ListMonitoredResources mocks base method
+func (m *MockDevOpsGuruAPI) ListMonitoredResources(arg0 *devopsguru.ListMonitoredResourcesInput) (*devopsguru.ListMonitoredResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMonitoredResources", arg0)
+	ret0, _ := ret[0].(*devopsguru.ListMonitoredResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMonitoredResources indicates an expected call of ListMonitoredResources
+func (mr *MockDevOpsGuruAPIMockRecorder) ListMonitoredResources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitoredResources", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListMonitoredResources), arg0)
+}
+
+// ListMonitoredResourcesPages mocks base method
+func (m *MockDevOpsGuruAPI) ListMonitoredResourcesPages(arg0 *devopsguru.ListMonitoredResourcesInput, arg1 func(*devopsguru.ListMonitoredResourcesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMonitoredResourcesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMonitoredResourcesPages indicates an expected call of ListMonitoredResourcesPages
+func (mr *MockDevOpsGuruAPIMockRecorder) ListMonitoredResourcesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitoredResourcesPages", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListMonitoredResourcesPages), arg0, arg1)
+}
+
+// ListMonitoredResourcesPagesWithContext mocks base method
+func (m *MockDevOpsGuruAPI) ListMonitoredResourcesPagesWithContext(arg0 context.Context, arg1 *devopsguru.ListMonitoredResourcesInput, arg2 func(*devopsguru.ListMonitoredResourcesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMonitoredResourcesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMonitoredResourcesPagesWithContext indicates an expected call of ListMonitoredResourcesPagesWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) ListMonitoredResourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitoredResourcesPagesWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListMonitoredResourcesPagesWithContext), varargs...)
+}
+
+// ListMonitoredResourcesRequest mocks base method
+func (m *MockDevOpsGuruAPI) ListMonitoredResourcesRequest(arg0 *devopsguru.ListMonitoredResourcesInput) (*request.Request, *devopsguru.ListMonitoredResourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMonitoredResourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*devopsguru.ListMonitoredResourcesOutput)
+	return ret0, ret1
+}
+
+// ListMonitoredResourcesRequest indicates an expected call of ListMonitoredResourcesRequest
+func (mr *MockDevOpsGuruAPIMockRecorder) ListMonitoredResourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitoredResourcesRequest", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListMonitoredResourcesRequest), arg0)
+}
+
+// ListMonitoredResourcesWithContext mocks base method
+func (m *MockDevOpsGuruAPI) ListMonitoredResourcesWithContext(arg0 context.Context, arg1 *devopsguru.ListMonitoredResourcesInput, arg2 ...request.Option) (*devopsguru.ListMonitoredResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMonitoredResourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*devopsguru.ListMonitoredResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMonitoredResourcesWithContext indicates an expected call of ListMonitoredResourcesWithContext
+func (mr *MockDevOpsGuruAPIMockRecorder) ListMonitoredResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMonitoredResourcesWithContext", reflect.TypeOf((*MockDevOpsGuruAPI)(nil).ListMonitoredResourcesWithContext), varargs...)
 }
 
 // ListNotificationChannels mocks base method

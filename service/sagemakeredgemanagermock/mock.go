@@ -35,6 +35,56 @@ func (m *MockSagemakerEdgeManagerAPI) EXPECT() *MockSagemakerEdgeManagerAPIMockR
 	return m.recorder
 }
 
+// GetDeployments mocks base method
+func (m *MockSagemakerEdgeManagerAPI) GetDeployments(arg0 *sagemakeredgemanager.GetDeploymentsInput) (*sagemakeredgemanager.GetDeploymentsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDeployments", arg0)
+	ret0, _ := ret[0].(*sagemakeredgemanager.GetDeploymentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDeployments indicates an expected call of GetDeployments
+func (mr *MockSagemakerEdgeManagerAPIMockRecorder) GetDeployments(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeployments", reflect.TypeOf((*MockSagemakerEdgeManagerAPI)(nil).GetDeployments), arg0)
+}
+
+// GetDeploymentsRequest mocks base method
+func (m *MockSagemakerEdgeManagerAPI) GetDeploymentsRequest(arg0 *sagemakeredgemanager.GetDeploymentsInput) (*request.Request, *sagemakeredgemanager.GetDeploymentsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDeploymentsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemakeredgemanager.GetDeploymentsOutput)
+	return ret0, ret1
+}
+
+// GetDeploymentsRequest indicates an expected call of GetDeploymentsRequest
+func (mr *MockSagemakerEdgeManagerAPIMockRecorder) GetDeploymentsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeploymentsRequest", reflect.TypeOf((*MockSagemakerEdgeManagerAPI)(nil).GetDeploymentsRequest), arg0)
+}
+
+// GetDeploymentsWithContext mocks base method
+func (m *MockSagemakerEdgeManagerAPI) GetDeploymentsWithContext(arg0 context.Context, arg1 *sagemakeredgemanager.GetDeploymentsInput, arg2 ...request.Option) (*sagemakeredgemanager.GetDeploymentsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDeploymentsWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemakeredgemanager.GetDeploymentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDeploymentsWithContext indicates an expected call of GetDeploymentsWithContext
+func (mr *MockSagemakerEdgeManagerAPIMockRecorder) GetDeploymentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDeploymentsWithContext", reflect.TypeOf((*MockSagemakerEdgeManagerAPI)(nil).GetDeploymentsWithContext), varargs...)
+}
+
 // GetDeviceRegistration mocks base method
 func (m *MockSagemakerEdgeManagerAPI) GetDeviceRegistration(arg0 *sagemakeredgemanager.GetDeviceRegistrationInput) (*sagemakeredgemanager.GetDeviceRegistrationOutput, error) {
 	m.ctrl.T.Helper()
