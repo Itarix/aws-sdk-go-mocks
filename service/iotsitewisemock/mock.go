@@ -684,6 +684,56 @@ func (mr *MockIoTSiteWiseAPIMockRecorder) CreateAssetWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAssetWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).CreateAssetWithContext), varargs...)
 }
 
+// CreateBulkImportJob mocks base method
+func (m *MockIoTSiteWiseAPI) CreateBulkImportJob(arg0 *iotsitewise.CreateBulkImportJobInput) (*iotsitewise.CreateBulkImportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBulkImportJob", arg0)
+	ret0, _ := ret[0].(*iotsitewise.CreateBulkImportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBulkImportJob indicates an expected call of CreateBulkImportJob
+func (mr *MockIoTSiteWiseAPIMockRecorder) CreateBulkImportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBulkImportJob", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).CreateBulkImportJob), arg0)
+}
+
+// CreateBulkImportJobRequest mocks base method
+func (m *MockIoTSiteWiseAPI) CreateBulkImportJobRequest(arg0 *iotsitewise.CreateBulkImportJobInput) (*request.Request, *iotsitewise.CreateBulkImportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBulkImportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.CreateBulkImportJobOutput)
+	return ret0, ret1
+}
+
+// CreateBulkImportJobRequest indicates an expected call of CreateBulkImportJobRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) CreateBulkImportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBulkImportJobRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).CreateBulkImportJobRequest), arg0)
+}
+
+// CreateBulkImportJobWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) CreateBulkImportJobWithContext(arg0 context.Context, arg1 *iotsitewise.CreateBulkImportJobInput, arg2 ...request.Option) (*iotsitewise.CreateBulkImportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateBulkImportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.CreateBulkImportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBulkImportJobWithContext indicates an expected call of CreateBulkImportJobWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) CreateBulkImportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBulkImportJobWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).CreateBulkImportJobWithContext), varargs...)
+}
+
 // CreateDashboard mocks base method
 func (m *MockIoTSiteWiseAPI) CreateDashboard(arg0 *iotsitewise.CreateDashboardInput) (*iotsitewise.CreateDashboardOutput, error) {
 	m.ctrl.T.Helper()
@@ -1482,6 +1532,56 @@ func (mr *MockIoTSiteWiseAPIMockRecorder) DescribeAssetWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAssetWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DescribeAssetWithContext), varargs...)
+}
+
+// DescribeBulkImportJob mocks base method
+func (m *MockIoTSiteWiseAPI) DescribeBulkImportJob(arg0 *iotsitewise.DescribeBulkImportJobInput) (*iotsitewise.DescribeBulkImportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBulkImportJob", arg0)
+	ret0, _ := ret[0].(*iotsitewise.DescribeBulkImportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBulkImportJob indicates an expected call of DescribeBulkImportJob
+func (mr *MockIoTSiteWiseAPIMockRecorder) DescribeBulkImportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBulkImportJob", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DescribeBulkImportJob), arg0)
+}
+
+// DescribeBulkImportJobRequest mocks base method
+func (m *MockIoTSiteWiseAPI) DescribeBulkImportJobRequest(arg0 *iotsitewise.DescribeBulkImportJobInput) (*request.Request, *iotsitewise.DescribeBulkImportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBulkImportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.DescribeBulkImportJobOutput)
+	return ret0, ret1
+}
+
+// DescribeBulkImportJobRequest indicates an expected call of DescribeBulkImportJobRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) DescribeBulkImportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBulkImportJobRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DescribeBulkImportJobRequest), arg0)
+}
+
+// DescribeBulkImportJobWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) DescribeBulkImportJobWithContext(arg0 context.Context, arg1 *iotsitewise.DescribeBulkImportJobInput, arg2 ...request.Option) (*iotsitewise.DescribeBulkImportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeBulkImportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.DescribeBulkImportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBulkImportJobWithContext indicates an expected call of DescribeBulkImportJobWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) DescribeBulkImportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBulkImportJobWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).DescribeBulkImportJobWithContext), varargs...)
 }
 
 // DescribeDashboard mocks base method
@@ -2746,6 +2846,89 @@ func (mr *MockIoTSiteWiseAPIMockRecorder) ListAssociatedAssetsWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssociatedAssetsWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListAssociatedAssetsWithContext), varargs...)
+}
+
+// ListBulkImportJobs mocks base method
+func (m *MockIoTSiteWiseAPI) ListBulkImportJobs(arg0 *iotsitewise.ListBulkImportJobsInput) (*iotsitewise.ListBulkImportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBulkImportJobs", arg0)
+	ret0, _ := ret[0].(*iotsitewise.ListBulkImportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBulkImportJobs indicates an expected call of ListBulkImportJobs
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListBulkImportJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBulkImportJobs", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListBulkImportJobs), arg0)
+}
+
+// ListBulkImportJobsPages mocks base method
+func (m *MockIoTSiteWiseAPI) ListBulkImportJobsPages(arg0 *iotsitewise.ListBulkImportJobsInput, arg1 func(*iotsitewise.ListBulkImportJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBulkImportJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListBulkImportJobsPages indicates an expected call of ListBulkImportJobsPages
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListBulkImportJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBulkImportJobsPages", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListBulkImportJobsPages), arg0, arg1)
+}
+
+// ListBulkImportJobsPagesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) ListBulkImportJobsPagesWithContext(arg0 context.Context, arg1 *iotsitewise.ListBulkImportJobsInput, arg2 func(*iotsitewise.ListBulkImportJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBulkImportJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListBulkImportJobsPagesWithContext indicates an expected call of ListBulkImportJobsPagesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListBulkImportJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBulkImportJobsPagesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListBulkImportJobsPagesWithContext), varargs...)
+}
+
+// ListBulkImportJobsRequest mocks base method
+func (m *MockIoTSiteWiseAPI) ListBulkImportJobsRequest(arg0 *iotsitewise.ListBulkImportJobsInput) (*request.Request, *iotsitewise.ListBulkImportJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBulkImportJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.ListBulkImportJobsOutput)
+	return ret0, ret1
+}
+
+// ListBulkImportJobsRequest indicates an expected call of ListBulkImportJobsRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListBulkImportJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBulkImportJobsRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListBulkImportJobsRequest), arg0)
+}
+
+// ListBulkImportJobsWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) ListBulkImportJobsWithContext(arg0 context.Context, arg1 *iotsitewise.ListBulkImportJobsInput, arg2 ...request.Option) (*iotsitewise.ListBulkImportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBulkImportJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.ListBulkImportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBulkImportJobsWithContext indicates an expected call of ListBulkImportJobsWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListBulkImportJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBulkImportJobsWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListBulkImportJobsWithContext), varargs...)
 }
 
 // ListDashboards mocks base method

@@ -918,6 +918,56 @@ func (mr *MockAthenaAPIMockRecorder) GetQueryResultsWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueryResultsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetQueryResultsWithContext), varargs...)
 }
 
+// GetQueryRuntimeStatistics mocks base method
+func (m *MockAthenaAPI) GetQueryRuntimeStatistics(arg0 *athena.GetQueryRuntimeStatisticsInput) (*athena.GetQueryRuntimeStatisticsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetQueryRuntimeStatistics", arg0)
+	ret0, _ := ret[0].(*athena.GetQueryRuntimeStatisticsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetQueryRuntimeStatistics indicates an expected call of GetQueryRuntimeStatistics
+func (mr *MockAthenaAPIMockRecorder) GetQueryRuntimeStatistics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueryRuntimeStatistics", reflect.TypeOf((*MockAthenaAPI)(nil).GetQueryRuntimeStatistics), arg0)
+}
+
+// GetQueryRuntimeStatisticsRequest mocks base method
+func (m *MockAthenaAPI) GetQueryRuntimeStatisticsRequest(arg0 *athena.GetQueryRuntimeStatisticsInput) (*request.Request, *athena.GetQueryRuntimeStatisticsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetQueryRuntimeStatisticsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.GetQueryRuntimeStatisticsOutput)
+	return ret0, ret1
+}
+
+// GetQueryRuntimeStatisticsRequest indicates an expected call of GetQueryRuntimeStatisticsRequest
+func (mr *MockAthenaAPIMockRecorder) GetQueryRuntimeStatisticsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueryRuntimeStatisticsRequest", reflect.TypeOf((*MockAthenaAPI)(nil).GetQueryRuntimeStatisticsRequest), arg0)
+}
+
+// GetQueryRuntimeStatisticsWithContext mocks base method
+func (m *MockAthenaAPI) GetQueryRuntimeStatisticsWithContext(arg0 context.Context, arg1 *athena.GetQueryRuntimeStatisticsInput, arg2 ...request.Option) (*athena.GetQueryRuntimeStatisticsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetQueryRuntimeStatisticsWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.GetQueryRuntimeStatisticsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetQueryRuntimeStatisticsWithContext indicates an expected call of GetQueryRuntimeStatisticsWithContext
+func (mr *MockAthenaAPIMockRecorder) GetQueryRuntimeStatisticsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueryRuntimeStatisticsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetQueryRuntimeStatisticsWithContext), varargs...)
+}
+
 // GetTableMetadata mocks base method
 func (m *MockAthenaAPI) GetTableMetadata(arg0 *athena.GetTableMetadataInput) (*athena.GetTableMetadataOutput, error) {
 	m.ctrl.T.Helper()
@@ -1197,6 +1247,39 @@ func (m *MockAthenaAPI) ListEngineVersions(arg0 *athena.ListEngineVersionsInput)
 func (mr *MockAthenaAPIMockRecorder) ListEngineVersions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEngineVersions", reflect.TypeOf((*MockAthenaAPI)(nil).ListEngineVersions), arg0)
+}
+
+// ListEngineVersionsPages mocks base method
+func (m *MockAthenaAPI) ListEngineVersionsPages(arg0 *athena.ListEngineVersionsInput, arg1 func(*athena.ListEngineVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEngineVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEngineVersionsPages indicates an expected call of ListEngineVersionsPages
+func (mr *MockAthenaAPIMockRecorder) ListEngineVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEngineVersionsPages", reflect.TypeOf((*MockAthenaAPI)(nil).ListEngineVersionsPages), arg0, arg1)
+}
+
+// ListEngineVersionsPagesWithContext mocks base method
+func (m *MockAthenaAPI) ListEngineVersionsPagesWithContext(arg0 context.Context, arg1 *athena.ListEngineVersionsInput, arg2 func(*athena.ListEngineVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEngineVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEngineVersionsPagesWithContext indicates an expected call of ListEngineVersionsPagesWithContext
+func (mr *MockAthenaAPIMockRecorder) ListEngineVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEngineVersionsPagesWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListEngineVersionsPagesWithContext), varargs...)
 }
 
 // ListEngineVersionsRequest mocks base method
