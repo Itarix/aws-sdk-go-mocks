@@ -2515,6 +2515,56 @@ func (mr *MockMediaLiveAPIMockRecorder) PurchaseOfferingWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseOfferingWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).PurchaseOfferingWithContext), varargs...)
 }
 
+// RebootInputDevice mocks base method
+func (m *MockMediaLiveAPI) RebootInputDevice(arg0 *medialive.RebootInputDeviceInput) (*medialive.RebootInputDeviceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RebootInputDevice", arg0)
+	ret0, _ := ret[0].(*medialive.RebootInputDeviceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RebootInputDevice indicates an expected call of RebootInputDevice
+func (mr *MockMediaLiveAPIMockRecorder) RebootInputDevice(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebootInputDevice", reflect.TypeOf((*MockMediaLiveAPI)(nil).RebootInputDevice), arg0)
+}
+
+// RebootInputDeviceRequest mocks base method
+func (m *MockMediaLiveAPI) RebootInputDeviceRequest(arg0 *medialive.RebootInputDeviceInput) (*request.Request, *medialive.RebootInputDeviceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RebootInputDeviceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.RebootInputDeviceOutput)
+	return ret0, ret1
+}
+
+// RebootInputDeviceRequest indicates an expected call of RebootInputDeviceRequest
+func (mr *MockMediaLiveAPIMockRecorder) RebootInputDeviceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebootInputDeviceRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).RebootInputDeviceRequest), arg0)
+}
+
+// RebootInputDeviceWithContext mocks base method
+func (m *MockMediaLiveAPI) RebootInputDeviceWithContext(arg0 context.Context, arg1 *medialive.RebootInputDeviceInput, arg2 ...request.Option) (*medialive.RebootInputDeviceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RebootInputDeviceWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.RebootInputDeviceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RebootInputDeviceWithContext indicates an expected call of RebootInputDeviceWithContext
+func (mr *MockMediaLiveAPIMockRecorder) RebootInputDeviceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebootInputDeviceWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).RebootInputDeviceWithContext), varargs...)
+}
+
 // RejectInputDeviceTransfer mocks base method
 func (m *MockMediaLiveAPI) RejectInputDeviceTransfer(arg0 *medialive.RejectInputDeviceTransferInput) (*medialive.RejectInputDeviceTransferOutput, error) {
 	m.ctrl.T.Helper()
@@ -2613,6 +2663,56 @@ func (mr *MockMediaLiveAPIMockRecorder) StartChannelWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartChannelWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).StartChannelWithContext), varargs...)
+}
+
+// StartInputDeviceMaintenanceWindow mocks base method
+func (m *MockMediaLiveAPI) StartInputDeviceMaintenanceWindow(arg0 *medialive.StartInputDeviceMaintenanceWindowInput) (*medialive.StartInputDeviceMaintenanceWindowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartInputDeviceMaintenanceWindow", arg0)
+	ret0, _ := ret[0].(*medialive.StartInputDeviceMaintenanceWindowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartInputDeviceMaintenanceWindow indicates an expected call of StartInputDeviceMaintenanceWindow
+func (mr *MockMediaLiveAPIMockRecorder) StartInputDeviceMaintenanceWindow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartInputDeviceMaintenanceWindow", reflect.TypeOf((*MockMediaLiveAPI)(nil).StartInputDeviceMaintenanceWindow), arg0)
+}
+
+// StartInputDeviceMaintenanceWindowRequest mocks base method
+func (m *MockMediaLiveAPI) StartInputDeviceMaintenanceWindowRequest(arg0 *medialive.StartInputDeviceMaintenanceWindowInput) (*request.Request, *medialive.StartInputDeviceMaintenanceWindowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartInputDeviceMaintenanceWindowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.StartInputDeviceMaintenanceWindowOutput)
+	return ret0, ret1
+}
+
+// StartInputDeviceMaintenanceWindowRequest indicates an expected call of StartInputDeviceMaintenanceWindowRequest
+func (mr *MockMediaLiveAPIMockRecorder) StartInputDeviceMaintenanceWindowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartInputDeviceMaintenanceWindowRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).StartInputDeviceMaintenanceWindowRequest), arg0)
+}
+
+// StartInputDeviceMaintenanceWindowWithContext mocks base method
+func (m *MockMediaLiveAPI) StartInputDeviceMaintenanceWindowWithContext(arg0 context.Context, arg1 *medialive.StartInputDeviceMaintenanceWindowInput, arg2 ...request.Option) (*medialive.StartInputDeviceMaintenanceWindowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartInputDeviceMaintenanceWindowWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.StartInputDeviceMaintenanceWindowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartInputDeviceMaintenanceWindowWithContext indicates an expected call of StartInputDeviceMaintenanceWindowWithContext
+func (mr *MockMediaLiveAPIMockRecorder) StartInputDeviceMaintenanceWindowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartInputDeviceMaintenanceWindowWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).StartInputDeviceMaintenanceWindowWithContext), varargs...)
 }
 
 // StartMultiplex mocks base method

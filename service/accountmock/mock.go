@@ -135,6 +135,56 @@ func (mr *MockAccountAPIMockRecorder) GetAlternateContactWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAlternateContactWithContext", reflect.TypeOf((*MockAccountAPI)(nil).GetAlternateContactWithContext), varargs...)
 }
 
+// GetContactInformation mocks base method
+func (m *MockAccountAPI) GetContactInformation(arg0 *account.GetContactInformationInput) (*account.GetContactInformationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContactInformation", arg0)
+	ret0, _ := ret[0].(*account.GetContactInformationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContactInformation indicates an expected call of GetContactInformation
+func (mr *MockAccountAPIMockRecorder) GetContactInformation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactInformation", reflect.TypeOf((*MockAccountAPI)(nil).GetContactInformation), arg0)
+}
+
+// GetContactInformationRequest mocks base method
+func (m *MockAccountAPI) GetContactInformationRequest(arg0 *account.GetContactInformationInput) (*request.Request, *account.GetContactInformationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContactInformationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*account.GetContactInformationOutput)
+	return ret0, ret1
+}
+
+// GetContactInformationRequest indicates an expected call of GetContactInformationRequest
+func (mr *MockAccountAPIMockRecorder) GetContactInformationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactInformationRequest", reflect.TypeOf((*MockAccountAPI)(nil).GetContactInformationRequest), arg0)
+}
+
+// GetContactInformationWithContext mocks base method
+func (m *MockAccountAPI) GetContactInformationWithContext(arg0 context.Context, arg1 *account.GetContactInformationInput, arg2 ...request.Option) (*account.GetContactInformationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetContactInformationWithContext", varargs...)
+	ret0, _ := ret[0].(*account.GetContactInformationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContactInformationWithContext indicates an expected call of GetContactInformationWithContext
+func (mr *MockAccountAPIMockRecorder) GetContactInformationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactInformationWithContext", reflect.TypeOf((*MockAccountAPI)(nil).GetContactInformationWithContext), varargs...)
+}
+
 // PutAlternateContact mocks base method
 func (m *MockAccountAPI) PutAlternateContact(arg0 *account.PutAlternateContactInput) (*account.PutAlternateContactOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,4 +233,54 @@ func (mr *MockAccountAPIMockRecorder) PutAlternateContactWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAlternateContactWithContext", reflect.TypeOf((*MockAccountAPI)(nil).PutAlternateContactWithContext), varargs...)
+}
+
+// PutContactInformation mocks base method
+func (m *MockAccountAPI) PutContactInformation(arg0 *account.PutContactInformationInput) (*account.PutContactInformationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutContactInformation", arg0)
+	ret0, _ := ret[0].(*account.PutContactInformationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutContactInformation indicates an expected call of PutContactInformation
+func (mr *MockAccountAPIMockRecorder) PutContactInformation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutContactInformation", reflect.TypeOf((*MockAccountAPI)(nil).PutContactInformation), arg0)
+}
+
+// PutContactInformationRequest mocks base method
+func (m *MockAccountAPI) PutContactInformationRequest(arg0 *account.PutContactInformationInput) (*request.Request, *account.PutContactInformationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutContactInformationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*account.PutContactInformationOutput)
+	return ret0, ret1
+}
+
+// PutContactInformationRequest indicates an expected call of PutContactInformationRequest
+func (mr *MockAccountAPIMockRecorder) PutContactInformationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutContactInformationRequest", reflect.TypeOf((*MockAccountAPI)(nil).PutContactInformationRequest), arg0)
+}
+
+// PutContactInformationWithContext mocks base method
+func (m *MockAccountAPI) PutContactInformationWithContext(arg0 context.Context, arg1 *account.PutContactInformationInput, arg2 ...request.Option) (*account.PutContactInformationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutContactInformationWithContext", varargs...)
+	ret0, _ := ret[0].(*account.PutContactInformationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutContactInformationWithContext indicates an expected call of PutContactInformationWithContext
+func (mr *MockAccountAPIMockRecorder) PutContactInformationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutContactInformationWithContext", reflect.TypeOf((*MockAccountAPI)(nil).PutContactInformationWithContext), varargs...)
 }
