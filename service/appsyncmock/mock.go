@@ -935,6 +935,56 @@ func (mr *MockAppSyncAPIMockRecorder) DisassociateApiWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateApiWithContext), varargs...)
 }
 
+// EvaluateMappingTemplate mocks base method
+func (m *MockAppSyncAPI) EvaluateMappingTemplate(arg0 *appsync.EvaluateMappingTemplateInput) (*appsync.EvaluateMappingTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EvaluateMappingTemplate", arg0)
+	ret0, _ := ret[0].(*appsync.EvaluateMappingTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EvaluateMappingTemplate indicates an expected call of EvaluateMappingTemplate
+func (mr *MockAppSyncAPIMockRecorder) EvaluateMappingTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EvaluateMappingTemplate", reflect.TypeOf((*MockAppSyncAPI)(nil).EvaluateMappingTemplate), arg0)
+}
+
+// EvaluateMappingTemplateRequest mocks base method
+func (m *MockAppSyncAPI) EvaluateMappingTemplateRequest(arg0 *appsync.EvaluateMappingTemplateInput) (*request.Request, *appsync.EvaluateMappingTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EvaluateMappingTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.EvaluateMappingTemplateOutput)
+	return ret0, ret1
+}
+
+// EvaluateMappingTemplateRequest indicates an expected call of EvaluateMappingTemplateRequest
+func (mr *MockAppSyncAPIMockRecorder) EvaluateMappingTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EvaluateMappingTemplateRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).EvaluateMappingTemplateRequest), arg0)
+}
+
+// EvaluateMappingTemplateWithContext mocks base method
+func (m *MockAppSyncAPI) EvaluateMappingTemplateWithContext(arg0 context.Context, arg1 *appsync.EvaluateMappingTemplateInput, arg2 ...request.Option) (*appsync.EvaluateMappingTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "EvaluateMappingTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.EvaluateMappingTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EvaluateMappingTemplateWithContext indicates an expected call of EvaluateMappingTemplateWithContext
+func (mr *MockAppSyncAPIMockRecorder) EvaluateMappingTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EvaluateMappingTemplateWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).EvaluateMappingTemplateWithContext), varargs...)
+}
+
 // FlushApiCache mocks base method
 func (m *MockAppSyncAPI) FlushApiCache(arg0 *appsync.FlushApiCacheInput) (*appsync.FlushApiCacheOutput, error) {
 	m.ctrl.T.Helper()

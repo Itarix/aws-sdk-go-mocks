@@ -85,6 +85,156 @@ func (mr *MockTransferAPIMockRecorder) CreateAccessWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessWithContext", reflect.TypeOf((*MockTransferAPI)(nil).CreateAccessWithContext), varargs...)
 }
 
+// CreateAgreement mocks base method
+func (m *MockTransferAPI) CreateAgreement(arg0 *transfer.CreateAgreementInput) (*transfer.CreateAgreementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAgreement", arg0)
+	ret0, _ := ret[0].(*transfer.CreateAgreementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAgreement indicates an expected call of CreateAgreement
+func (mr *MockTransferAPIMockRecorder) CreateAgreement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAgreement", reflect.TypeOf((*MockTransferAPI)(nil).CreateAgreement), arg0)
+}
+
+// CreateAgreementRequest mocks base method
+func (m *MockTransferAPI) CreateAgreementRequest(arg0 *transfer.CreateAgreementInput) (*request.Request, *transfer.CreateAgreementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAgreementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.CreateAgreementOutput)
+	return ret0, ret1
+}
+
+// CreateAgreementRequest indicates an expected call of CreateAgreementRequest
+func (mr *MockTransferAPIMockRecorder) CreateAgreementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAgreementRequest", reflect.TypeOf((*MockTransferAPI)(nil).CreateAgreementRequest), arg0)
+}
+
+// CreateAgreementWithContext mocks base method
+func (m *MockTransferAPI) CreateAgreementWithContext(arg0 context.Context, arg1 *transfer.CreateAgreementInput, arg2 ...request.Option) (*transfer.CreateAgreementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAgreementWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.CreateAgreementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAgreementWithContext indicates an expected call of CreateAgreementWithContext
+func (mr *MockTransferAPIMockRecorder) CreateAgreementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAgreementWithContext", reflect.TypeOf((*MockTransferAPI)(nil).CreateAgreementWithContext), varargs...)
+}
+
+// CreateConnector mocks base method
+func (m *MockTransferAPI) CreateConnector(arg0 *transfer.CreateConnectorInput) (*transfer.CreateConnectorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnector", arg0)
+	ret0, _ := ret[0].(*transfer.CreateConnectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnector indicates an expected call of CreateConnector
+func (mr *MockTransferAPIMockRecorder) CreateConnector(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnector", reflect.TypeOf((*MockTransferAPI)(nil).CreateConnector), arg0)
+}
+
+// CreateConnectorRequest mocks base method
+func (m *MockTransferAPI) CreateConnectorRequest(arg0 *transfer.CreateConnectorInput) (*request.Request, *transfer.CreateConnectorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.CreateConnectorOutput)
+	return ret0, ret1
+}
+
+// CreateConnectorRequest indicates an expected call of CreateConnectorRequest
+func (mr *MockTransferAPIMockRecorder) CreateConnectorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectorRequest", reflect.TypeOf((*MockTransferAPI)(nil).CreateConnectorRequest), arg0)
+}
+
+// CreateConnectorWithContext mocks base method
+func (m *MockTransferAPI) CreateConnectorWithContext(arg0 context.Context, arg1 *transfer.CreateConnectorInput, arg2 ...request.Option) (*transfer.CreateConnectorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateConnectorWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.CreateConnectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectorWithContext indicates an expected call of CreateConnectorWithContext
+func (mr *MockTransferAPIMockRecorder) CreateConnectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectorWithContext", reflect.TypeOf((*MockTransferAPI)(nil).CreateConnectorWithContext), varargs...)
+}
+
+// CreateProfile mocks base method
+func (m *MockTransferAPI) CreateProfile(arg0 *transfer.CreateProfileInput) (*transfer.CreateProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProfile", arg0)
+	ret0, _ := ret[0].(*transfer.CreateProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProfile indicates an expected call of CreateProfile
+func (mr *MockTransferAPIMockRecorder) CreateProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProfile", reflect.TypeOf((*MockTransferAPI)(nil).CreateProfile), arg0)
+}
+
+// CreateProfileRequest mocks base method
+func (m *MockTransferAPI) CreateProfileRequest(arg0 *transfer.CreateProfileInput) (*request.Request, *transfer.CreateProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.CreateProfileOutput)
+	return ret0, ret1
+}
+
+// CreateProfileRequest indicates an expected call of CreateProfileRequest
+func (mr *MockTransferAPIMockRecorder) CreateProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProfileRequest", reflect.TypeOf((*MockTransferAPI)(nil).CreateProfileRequest), arg0)
+}
+
+// CreateProfileWithContext mocks base method
+func (m *MockTransferAPI) CreateProfileWithContext(arg0 context.Context, arg1 *transfer.CreateProfileInput, arg2 ...request.Option) (*transfer.CreateProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.CreateProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProfileWithContext indicates an expected call of CreateProfileWithContext
+func (mr *MockTransferAPIMockRecorder) CreateProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProfileWithContext", reflect.TypeOf((*MockTransferAPI)(nil).CreateProfileWithContext), varargs...)
+}
+
 // CreateServer mocks base method
 func (m *MockTransferAPI) CreateServer(arg0 *transfer.CreateServerInput) (*transfer.CreateServerOutput, error) {
 	m.ctrl.T.Helper()
@@ -283,6 +433,206 @@ func (mr *MockTransferAPIMockRecorder) DeleteAccessWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DeleteAccessWithContext), varargs...)
+}
+
+// DeleteAgreement mocks base method
+func (m *MockTransferAPI) DeleteAgreement(arg0 *transfer.DeleteAgreementInput) (*transfer.DeleteAgreementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAgreement", arg0)
+	ret0, _ := ret[0].(*transfer.DeleteAgreementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAgreement indicates an expected call of DeleteAgreement
+func (mr *MockTransferAPIMockRecorder) DeleteAgreement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAgreement", reflect.TypeOf((*MockTransferAPI)(nil).DeleteAgreement), arg0)
+}
+
+// DeleteAgreementRequest mocks base method
+func (m *MockTransferAPI) DeleteAgreementRequest(arg0 *transfer.DeleteAgreementInput) (*request.Request, *transfer.DeleteAgreementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAgreementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.DeleteAgreementOutput)
+	return ret0, ret1
+}
+
+// DeleteAgreementRequest indicates an expected call of DeleteAgreementRequest
+func (mr *MockTransferAPIMockRecorder) DeleteAgreementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAgreementRequest", reflect.TypeOf((*MockTransferAPI)(nil).DeleteAgreementRequest), arg0)
+}
+
+// DeleteAgreementWithContext mocks base method
+func (m *MockTransferAPI) DeleteAgreementWithContext(arg0 context.Context, arg1 *transfer.DeleteAgreementInput, arg2 ...request.Option) (*transfer.DeleteAgreementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAgreementWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.DeleteAgreementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAgreementWithContext indicates an expected call of DeleteAgreementWithContext
+func (mr *MockTransferAPIMockRecorder) DeleteAgreementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAgreementWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DeleteAgreementWithContext), varargs...)
+}
+
+// DeleteCertificate mocks base method
+func (m *MockTransferAPI) DeleteCertificate(arg0 *transfer.DeleteCertificateInput) (*transfer.DeleteCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCertificate", arg0)
+	ret0, _ := ret[0].(*transfer.DeleteCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCertificate indicates an expected call of DeleteCertificate
+func (mr *MockTransferAPIMockRecorder) DeleteCertificate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCertificate", reflect.TypeOf((*MockTransferAPI)(nil).DeleteCertificate), arg0)
+}
+
+// DeleteCertificateRequest mocks base method
+func (m *MockTransferAPI) DeleteCertificateRequest(arg0 *transfer.DeleteCertificateInput) (*request.Request, *transfer.DeleteCertificateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCertificateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.DeleteCertificateOutput)
+	return ret0, ret1
+}
+
+// DeleteCertificateRequest indicates an expected call of DeleteCertificateRequest
+func (mr *MockTransferAPIMockRecorder) DeleteCertificateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCertificateRequest", reflect.TypeOf((*MockTransferAPI)(nil).DeleteCertificateRequest), arg0)
+}
+
+// DeleteCertificateWithContext mocks base method
+func (m *MockTransferAPI) DeleteCertificateWithContext(arg0 context.Context, arg1 *transfer.DeleteCertificateInput, arg2 ...request.Option) (*transfer.DeleteCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCertificateWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.DeleteCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCertificateWithContext indicates an expected call of DeleteCertificateWithContext
+func (mr *MockTransferAPIMockRecorder) DeleteCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCertificateWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DeleteCertificateWithContext), varargs...)
+}
+
+// DeleteConnector mocks base method
+func (m *MockTransferAPI) DeleteConnector(arg0 *transfer.DeleteConnectorInput) (*transfer.DeleteConnectorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnector", arg0)
+	ret0, _ := ret[0].(*transfer.DeleteConnectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnector indicates an expected call of DeleteConnector
+func (mr *MockTransferAPIMockRecorder) DeleteConnector(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnector", reflect.TypeOf((*MockTransferAPI)(nil).DeleteConnector), arg0)
+}
+
+// DeleteConnectorRequest mocks base method
+func (m *MockTransferAPI) DeleteConnectorRequest(arg0 *transfer.DeleteConnectorInput) (*request.Request, *transfer.DeleteConnectorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnectorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.DeleteConnectorOutput)
+	return ret0, ret1
+}
+
+// DeleteConnectorRequest indicates an expected call of DeleteConnectorRequest
+func (mr *MockTransferAPIMockRecorder) DeleteConnectorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectorRequest", reflect.TypeOf((*MockTransferAPI)(nil).DeleteConnectorRequest), arg0)
+}
+
+// DeleteConnectorWithContext mocks base method
+func (m *MockTransferAPI) DeleteConnectorWithContext(arg0 context.Context, arg1 *transfer.DeleteConnectorInput, arg2 ...request.Option) (*transfer.DeleteConnectorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteConnectorWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.DeleteConnectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnectorWithContext indicates an expected call of DeleteConnectorWithContext
+func (mr *MockTransferAPIMockRecorder) DeleteConnectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectorWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DeleteConnectorWithContext), varargs...)
+}
+
+// DeleteProfile mocks base method
+func (m *MockTransferAPI) DeleteProfile(arg0 *transfer.DeleteProfileInput) (*transfer.DeleteProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProfile", arg0)
+	ret0, _ := ret[0].(*transfer.DeleteProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProfile indicates an expected call of DeleteProfile
+func (mr *MockTransferAPIMockRecorder) DeleteProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProfile", reflect.TypeOf((*MockTransferAPI)(nil).DeleteProfile), arg0)
+}
+
+// DeleteProfileRequest mocks base method
+func (m *MockTransferAPI) DeleteProfileRequest(arg0 *transfer.DeleteProfileInput) (*request.Request, *transfer.DeleteProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.DeleteProfileOutput)
+	return ret0, ret1
+}
+
+// DeleteProfileRequest indicates an expected call of DeleteProfileRequest
+func (mr *MockTransferAPIMockRecorder) DeleteProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProfileRequest", reflect.TypeOf((*MockTransferAPI)(nil).DeleteProfileRequest), arg0)
+}
+
+// DeleteProfileWithContext mocks base method
+func (m *MockTransferAPI) DeleteProfileWithContext(arg0 context.Context, arg1 *transfer.DeleteProfileInput, arg2 ...request.Option) (*transfer.DeleteProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.DeleteProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProfileWithContext indicates an expected call of DeleteProfileWithContext
+func (mr *MockTransferAPIMockRecorder) DeleteProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProfileWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DeleteProfileWithContext), varargs...)
 }
 
 // DeleteServer mocks base method
@@ -535,6 +885,156 @@ func (mr *MockTransferAPIMockRecorder) DescribeAccessWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccessWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DescribeAccessWithContext), varargs...)
 }
 
+// DescribeAgreement mocks base method
+func (m *MockTransferAPI) DescribeAgreement(arg0 *transfer.DescribeAgreementInput) (*transfer.DescribeAgreementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAgreement", arg0)
+	ret0, _ := ret[0].(*transfer.DescribeAgreementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAgreement indicates an expected call of DescribeAgreement
+func (mr *MockTransferAPIMockRecorder) DescribeAgreement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAgreement", reflect.TypeOf((*MockTransferAPI)(nil).DescribeAgreement), arg0)
+}
+
+// DescribeAgreementRequest mocks base method
+func (m *MockTransferAPI) DescribeAgreementRequest(arg0 *transfer.DescribeAgreementInput) (*request.Request, *transfer.DescribeAgreementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAgreementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.DescribeAgreementOutput)
+	return ret0, ret1
+}
+
+// DescribeAgreementRequest indicates an expected call of DescribeAgreementRequest
+func (mr *MockTransferAPIMockRecorder) DescribeAgreementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAgreementRequest", reflect.TypeOf((*MockTransferAPI)(nil).DescribeAgreementRequest), arg0)
+}
+
+// DescribeAgreementWithContext mocks base method
+func (m *MockTransferAPI) DescribeAgreementWithContext(arg0 context.Context, arg1 *transfer.DescribeAgreementInput, arg2 ...request.Option) (*transfer.DescribeAgreementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAgreementWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.DescribeAgreementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAgreementWithContext indicates an expected call of DescribeAgreementWithContext
+func (mr *MockTransferAPIMockRecorder) DescribeAgreementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAgreementWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DescribeAgreementWithContext), varargs...)
+}
+
+// DescribeCertificate mocks base method
+func (m *MockTransferAPI) DescribeCertificate(arg0 *transfer.DescribeCertificateInput) (*transfer.DescribeCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCertificate", arg0)
+	ret0, _ := ret[0].(*transfer.DescribeCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCertificate indicates an expected call of DescribeCertificate
+func (mr *MockTransferAPIMockRecorder) DescribeCertificate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCertificate", reflect.TypeOf((*MockTransferAPI)(nil).DescribeCertificate), arg0)
+}
+
+// DescribeCertificateRequest mocks base method
+func (m *MockTransferAPI) DescribeCertificateRequest(arg0 *transfer.DescribeCertificateInput) (*request.Request, *transfer.DescribeCertificateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCertificateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.DescribeCertificateOutput)
+	return ret0, ret1
+}
+
+// DescribeCertificateRequest indicates an expected call of DescribeCertificateRequest
+func (mr *MockTransferAPIMockRecorder) DescribeCertificateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCertificateRequest", reflect.TypeOf((*MockTransferAPI)(nil).DescribeCertificateRequest), arg0)
+}
+
+// DescribeCertificateWithContext mocks base method
+func (m *MockTransferAPI) DescribeCertificateWithContext(arg0 context.Context, arg1 *transfer.DescribeCertificateInput, arg2 ...request.Option) (*transfer.DescribeCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCertificateWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.DescribeCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCertificateWithContext indicates an expected call of DescribeCertificateWithContext
+func (mr *MockTransferAPIMockRecorder) DescribeCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCertificateWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DescribeCertificateWithContext), varargs...)
+}
+
+// DescribeConnector mocks base method
+func (m *MockTransferAPI) DescribeConnector(arg0 *transfer.DescribeConnectorInput) (*transfer.DescribeConnectorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeConnector", arg0)
+	ret0, _ := ret[0].(*transfer.DescribeConnectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeConnector indicates an expected call of DescribeConnector
+func (mr *MockTransferAPIMockRecorder) DescribeConnector(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnector", reflect.TypeOf((*MockTransferAPI)(nil).DescribeConnector), arg0)
+}
+
+// DescribeConnectorRequest mocks base method
+func (m *MockTransferAPI) DescribeConnectorRequest(arg0 *transfer.DescribeConnectorInput) (*request.Request, *transfer.DescribeConnectorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeConnectorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.DescribeConnectorOutput)
+	return ret0, ret1
+}
+
+// DescribeConnectorRequest indicates an expected call of DescribeConnectorRequest
+func (mr *MockTransferAPIMockRecorder) DescribeConnectorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnectorRequest", reflect.TypeOf((*MockTransferAPI)(nil).DescribeConnectorRequest), arg0)
+}
+
+// DescribeConnectorWithContext mocks base method
+func (m *MockTransferAPI) DescribeConnectorWithContext(arg0 context.Context, arg1 *transfer.DescribeConnectorInput, arg2 ...request.Option) (*transfer.DescribeConnectorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeConnectorWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.DescribeConnectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeConnectorWithContext indicates an expected call of DescribeConnectorWithContext
+func (mr *MockTransferAPIMockRecorder) DescribeConnectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConnectorWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DescribeConnectorWithContext), varargs...)
+}
+
 // DescribeExecution mocks base method
 func (m *MockTransferAPI) DescribeExecution(arg0 *transfer.DescribeExecutionInput) (*transfer.DescribeExecutionOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +1083,56 @@ func (mr *MockTransferAPIMockRecorder) DescribeExecutionWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExecutionWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DescribeExecutionWithContext), varargs...)
+}
+
+// DescribeProfile mocks base method
+func (m *MockTransferAPI) DescribeProfile(arg0 *transfer.DescribeProfileInput) (*transfer.DescribeProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProfile", arg0)
+	ret0, _ := ret[0].(*transfer.DescribeProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeProfile indicates an expected call of DescribeProfile
+func (mr *MockTransferAPIMockRecorder) DescribeProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProfile", reflect.TypeOf((*MockTransferAPI)(nil).DescribeProfile), arg0)
+}
+
+// DescribeProfileRequest mocks base method
+func (m *MockTransferAPI) DescribeProfileRequest(arg0 *transfer.DescribeProfileInput) (*request.Request, *transfer.DescribeProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.DescribeProfileOutput)
+	return ret0, ret1
+}
+
+// DescribeProfileRequest indicates an expected call of DescribeProfileRequest
+func (mr *MockTransferAPIMockRecorder) DescribeProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProfileRequest", reflect.TypeOf((*MockTransferAPI)(nil).DescribeProfileRequest), arg0)
+}
+
+// DescribeProfileWithContext mocks base method
+func (m *MockTransferAPI) DescribeProfileWithContext(arg0 context.Context, arg1 *transfer.DescribeProfileInput, arg2 ...request.Option) (*transfer.DescribeProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.DescribeProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeProfileWithContext indicates an expected call of DescribeProfileWithContext
+func (mr *MockTransferAPIMockRecorder) DescribeProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProfileWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DescribeProfileWithContext), varargs...)
 }
 
 // DescribeSecurityPolicy mocks base method
@@ -785,6 +1335,56 @@ func (mr *MockTransferAPIMockRecorder) DescribeWorkflowWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkflowWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DescribeWorkflowWithContext), varargs...)
 }
 
+// ImportCertificate mocks base method
+func (m *MockTransferAPI) ImportCertificate(arg0 *transfer.ImportCertificateInput) (*transfer.ImportCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportCertificate", arg0)
+	ret0, _ := ret[0].(*transfer.ImportCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportCertificate indicates an expected call of ImportCertificate
+func (mr *MockTransferAPIMockRecorder) ImportCertificate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportCertificate", reflect.TypeOf((*MockTransferAPI)(nil).ImportCertificate), arg0)
+}
+
+// ImportCertificateRequest mocks base method
+func (m *MockTransferAPI) ImportCertificateRequest(arg0 *transfer.ImportCertificateInput) (*request.Request, *transfer.ImportCertificateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportCertificateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.ImportCertificateOutput)
+	return ret0, ret1
+}
+
+// ImportCertificateRequest indicates an expected call of ImportCertificateRequest
+func (mr *MockTransferAPIMockRecorder) ImportCertificateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportCertificateRequest", reflect.TypeOf((*MockTransferAPI)(nil).ImportCertificateRequest), arg0)
+}
+
+// ImportCertificateWithContext mocks base method
+func (m *MockTransferAPI) ImportCertificateWithContext(arg0 context.Context, arg1 *transfer.ImportCertificateInput, arg2 ...request.Option) (*transfer.ImportCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportCertificateWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.ImportCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportCertificateWithContext indicates an expected call of ImportCertificateWithContext
+func (mr *MockTransferAPIMockRecorder) ImportCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportCertificateWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ImportCertificateWithContext), varargs...)
+}
+
 // ImportSshPublicKey mocks base method
 func (m *MockTransferAPI) ImportSshPublicKey(arg0 *transfer.ImportSshPublicKeyInput) (*transfer.ImportSshPublicKeyOutput, error) {
 	m.ctrl.T.Helper()
@@ -918,6 +1518,255 @@ func (mr *MockTransferAPIMockRecorder) ListAccessesWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessesWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListAccessesWithContext), varargs...)
 }
 
+// ListAgreements mocks base method
+func (m *MockTransferAPI) ListAgreements(arg0 *transfer.ListAgreementsInput) (*transfer.ListAgreementsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAgreements", arg0)
+	ret0, _ := ret[0].(*transfer.ListAgreementsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAgreements indicates an expected call of ListAgreements
+func (mr *MockTransferAPIMockRecorder) ListAgreements(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAgreements", reflect.TypeOf((*MockTransferAPI)(nil).ListAgreements), arg0)
+}
+
+// ListAgreementsPages mocks base method
+func (m *MockTransferAPI) ListAgreementsPages(arg0 *transfer.ListAgreementsInput, arg1 func(*transfer.ListAgreementsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAgreementsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAgreementsPages indicates an expected call of ListAgreementsPages
+func (mr *MockTransferAPIMockRecorder) ListAgreementsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAgreementsPages", reflect.TypeOf((*MockTransferAPI)(nil).ListAgreementsPages), arg0, arg1)
+}
+
+// ListAgreementsPagesWithContext mocks base method
+func (m *MockTransferAPI) ListAgreementsPagesWithContext(arg0 context.Context, arg1 *transfer.ListAgreementsInput, arg2 func(*transfer.ListAgreementsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAgreementsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAgreementsPagesWithContext indicates an expected call of ListAgreementsPagesWithContext
+func (mr *MockTransferAPIMockRecorder) ListAgreementsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAgreementsPagesWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListAgreementsPagesWithContext), varargs...)
+}
+
+// ListAgreementsRequest mocks base method
+func (m *MockTransferAPI) ListAgreementsRequest(arg0 *transfer.ListAgreementsInput) (*request.Request, *transfer.ListAgreementsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAgreementsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.ListAgreementsOutput)
+	return ret0, ret1
+}
+
+// ListAgreementsRequest indicates an expected call of ListAgreementsRequest
+func (mr *MockTransferAPIMockRecorder) ListAgreementsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAgreementsRequest", reflect.TypeOf((*MockTransferAPI)(nil).ListAgreementsRequest), arg0)
+}
+
+// ListAgreementsWithContext mocks base method
+func (m *MockTransferAPI) ListAgreementsWithContext(arg0 context.Context, arg1 *transfer.ListAgreementsInput, arg2 ...request.Option) (*transfer.ListAgreementsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAgreementsWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.ListAgreementsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAgreementsWithContext indicates an expected call of ListAgreementsWithContext
+func (mr *MockTransferAPIMockRecorder) ListAgreementsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAgreementsWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListAgreementsWithContext), varargs...)
+}
+
+// ListCertificates mocks base method
+func (m *MockTransferAPI) ListCertificates(arg0 *transfer.ListCertificatesInput) (*transfer.ListCertificatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCertificates", arg0)
+	ret0, _ := ret[0].(*transfer.ListCertificatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCertificates indicates an expected call of ListCertificates
+func (mr *MockTransferAPIMockRecorder) ListCertificates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificates", reflect.TypeOf((*MockTransferAPI)(nil).ListCertificates), arg0)
+}
+
+// ListCertificatesPages mocks base method
+func (m *MockTransferAPI) ListCertificatesPages(arg0 *transfer.ListCertificatesInput, arg1 func(*transfer.ListCertificatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCertificatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCertificatesPages indicates an expected call of ListCertificatesPages
+func (mr *MockTransferAPIMockRecorder) ListCertificatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificatesPages", reflect.TypeOf((*MockTransferAPI)(nil).ListCertificatesPages), arg0, arg1)
+}
+
+// ListCertificatesPagesWithContext mocks base method
+func (m *MockTransferAPI) ListCertificatesPagesWithContext(arg0 context.Context, arg1 *transfer.ListCertificatesInput, arg2 func(*transfer.ListCertificatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCertificatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCertificatesPagesWithContext indicates an expected call of ListCertificatesPagesWithContext
+func (mr *MockTransferAPIMockRecorder) ListCertificatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificatesPagesWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListCertificatesPagesWithContext), varargs...)
+}
+
+// ListCertificatesRequest mocks base method
+func (m *MockTransferAPI) ListCertificatesRequest(arg0 *transfer.ListCertificatesInput) (*request.Request, *transfer.ListCertificatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCertificatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.ListCertificatesOutput)
+	return ret0, ret1
+}
+
+// ListCertificatesRequest indicates an expected call of ListCertificatesRequest
+func (mr *MockTransferAPIMockRecorder) ListCertificatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificatesRequest", reflect.TypeOf((*MockTransferAPI)(nil).ListCertificatesRequest), arg0)
+}
+
+// ListCertificatesWithContext mocks base method
+func (m *MockTransferAPI) ListCertificatesWithContext(arg0 context.Context, arg1 *transfer.ListCertificatesInput, arg2 ...request.Option) (*transfer.ListCertificatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCertificatesWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.ListCertificatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCertificatesWithContext indicates an expected call of ListCertificatesWithContext
+func (mr *MockTransferAPIMockRecorder) ListCertificatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificatesWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListCertificatesWithContext), varargs...)
+}
+
+// ListConnectors mocks base method
+func (m *MockTransferAPI) ListConnectors(arg0 *transfer.ListConnectorsInput) (*transfer.ListConnectorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnectors", arg0)
+	ret0, _ := ret[0].(*transfer.ListConnectorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConnectors indicates an expected call of ListConnectors
+func (mr *MockTransferAPIMockRecorder) ListConnectors(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectors", reflect.TypeOf((*MockTransferAPI)(nil).ListConnectors), arg0)
+}
+
+// ListConnectorsPages mocks base method
+func (m *MockTransferAPI) ListConnectorsPages(arg0 *transfer.ListConnectorsInput, arg1 func(*transfer.ListConnectorsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnectorsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListConnectorsPages indicates an expected call of ListConnectorsPages
+func (mr *MockTransferAPIMockRecorder) ListConnectorsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectorsPages", reflect.TypeOf((*MockTransferAPI)(nil).ListConnectorsPages), arg0, arg1)
+}
+
+// ListConnectorsPagesWithContext mocks base method
+func (m *MockTransferAPI) ListConnectorsPagesWithContext(arg0 context.Context, arg1 *transfer.ListConnectorsInput, arg2 func(*transfer.ListConnectorsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListConnectorsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListConnectorsPagesWithContext indicates an expected call of ListConnectorsPagesWithContext
+func (mr *MockTransferAPIMockRecorder) ListConnectorsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectorsPagesWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListConnectorsPagesWithContext), varargs...)
+}
+
+// ListConnectorsRequest mocks base method
+func (m *MockTransferAPI) ListConnectorsRequest(arg0 *transfer.ListConnectorsInput) (*request.Request, *transfer.ListConnectorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnectorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.ListConnectorsOutput)
+	return ret0, ret1
+}
+
+// ListConnectorsRequest indicates an expected call of ListConnectorsRequest
+func (mr *MockTransferAPIMockRecorder) ListConnectorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectorsRequest", reflect.TypeOf((*MockTransferAPI)(nil).ListConnectorsRequest), arg0)
+}
+
+// ListConnectorsWithContext mocks base method
+func (m *MockTransferAPI) ListConnectorsWithContext(arg0 context.Context, arg1 *transfer.ListConnectorsInput, arg2 ...request.Option) (*transfer.ListConnectorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListConnectorsWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.ListConnectorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConnectorsWithContext indicates an expected call of ListConnectorsWithContext
+func (mr *MockTransferAPIMockRecorder) ListConnectorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectorsWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListConnectorsWithContext), varargs...)
+}
+
 // ListExecutions mocks base method
 func (m *MockTransferAPI) ListExecutions(arg0 *transfer.ListExecutionsInput) (*transfer.ListExecutionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -999,6 +1848,89 @@ func (mr *MockTransferAPIMockRecorder) ListExecutionsWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutionsWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListExecutionsWithContext), varargs...)
+}
+
+// ListProfiles mocks base method
+func (m *MockTransferAPI) ListProfiles(arg0 *transfer.ListProfilesInput) (*transfer.ListProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProfiles", arg0)
+	ret0, _ := ret[0].(*transfer.ListProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProfiles indicates an expected call of ListProfiles
+func (mr *MockTransferAPIMockRecorder) ListProfiles(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfiles", reflect.TypeOf((*MockTransferAPI)(nil).ListProfiles), arg0)
+}
+
+// ListProfilesPages mocks base method
+func (m *MockTransferAPI) ListProfilesPages(arg0 *transfer.ListProfilesInput, arg1 func(*transfer.ListProfilesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProfilesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProfilesPages indicates an expected call of ListProfilesPages
+func (mr *MockTransferAPIMockRecorder) ListProfilesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfilesPages", reflect.TypeOf((*MockTransferAPI)(nil).ListProfilesPages), arg0, arg1)
+}
+
+// ListProfilesPagesWithContext mocks base method
+func (m *MockTransferAPI) ListProfilesPagesWithContext(arg0 context.Context, arg1 *transfer.ListProfilesInput, arg2 func(*transfer.ListProfilesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProfilesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProfilesPagesWithContext indicates an expected call of ListProfilesPagesWithContext
+func (mr *MockTransferAPIMockRecorder) ListProfilesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfilesPagesWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListProfilesPagesWithContext), varargs...)
+}
+
+// ListProfilesRequest mocks base method
+func (m *MockTransferAPI) ListProfilesRequest(arg0 *transfer.ListProfilesInput) (*request.Request, *transfer.ListProfilesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProfilesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.ListProfilesOutput)
+	return ret0, ret1
+}
+
+// ListProfilesRequest indicates an expected call of ListProfilesRequest
+func (mr *MockTransferAPIMockRecorder) ListProfilesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfilesRequest", reflect.TypeOf((*MockTransferAPI)(nil).ListProfilesRequest), arg0)
+}
+
+// ListProfilesWithContext mocks base method
+func (m *MockTransferAPI) ListProfilesWithContext(arg0 context.Context, arg1 *transfer.ListProfilesInput, arg2 ...request.Option) (*transfer.ListProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProfilesWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.ListProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProfilesWithContext indicates an expected call of ListProfilesWithContext
+func (mr *MockTransferAPIMockRecorder) ListProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfilesWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListProfilesWithContext), varargs...)
 }
 
 // ListSecurityPolicies mocks base method
@@ -1466,6 +2398,56 @@ func (mr *MockTransferAPIMockRecorder) SendWorkflowStepStateWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendWorkflowStepStateWithContext", reflect.TypeOf((*MockTransferAPI)(nil).SendWorkflowStepStateWithContext), varargs...)
 }
 
+// StartFileTransfer mocks base method
+func (m *MockTransferAPI) StartFileTransfer(arg0 *transfer.StartFileTransferInput) (*transfer.StartFileTransferOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartFileTransfer", arg0)
+	ret0, _ := ret[0].(*transfer.StartFileTransferOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartFileTransfer indicates an expected call of StartFileTransfer
+func (mr *MockTransferAPIMockRecorder) StartFileTransfer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartFileTransfer", reflect.TypeOf((*MockTransferAPI)(nil).StartFileTransfer), arg0)
+}
+
+// StartFileTransferRequest mocks base method
+func (m *MockTransferAPI) StartFileTransferRequest(arg0 *transfer.StartFileTransferInput) (*request.Request, *transfer.StartFileTransferOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartFileTransferRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.StartFileTransferOutput)
+	return ret0, ret1
+}
+
+// StartFileTransferRequest indicates an expected call of StartFileTransferRequest
+func (mr *MockTransferAPIMockRecorder) StartFileTransferRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartFileTransferRequest", reflect.TypeOf((*MockTransferAPI)(nil).StartFileTransferRequest), arg0)
+}
+
+// StartFileTransferWithContext mocks base method
+func (m *MockTransferAPI) StartFileTransferWithContext(arg0 context.Context, arg1 *transfer.StartFileTransferInput, arg2 ...request.Option) (*transfer.StartFileTransferOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartFileTransferWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.StartFileTransferOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartFileTransferWithContext indicates an expected call of StartFileTransferWithContext
+func (mr *MockTransferAPIMockRecorder) StartFileTransferWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartFileTransferWithContext", reflect.TypeOf((*MockTransferAPI)(nil).StartFileTransferWithContext), varargs...)
+}
+
 // StartServer mocks base method
 func (m *MockTransferAPI) StartServer(arg0 *transfer.StartServerInput) (*transfer.StartServerOutput, error) {
 	m.ctrl.T.Helper()
@@ -1764,6 +2746,206 @@ func (mr *MockTransferAPIMockRecorder) UpdateAccessWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccessWithContext", reflect.TypeOf((*MockTransferAPI)(nil).UpdateAccessWithContext), varargs...)
+}
+
+// UpdateAgreement mocks base method
+func (m *MockTransferAPI) UpdateAgreement(arg0 *transfer.UpdateAgreementInput) (*transfer.UpdateAgreementOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAgreement", arg0)
+	ret0, _ := ret[0].(*transfer.UpdateAgreementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAgreement indicates an expected call of UpdateAgreement
+func (mr *MockTransferAPIMockRecorder) UpdateAgreement(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAgreement", reflect.TypeOf((*MockTransferAPI)(nil).UpdateAgreement), arg0)
+}
+
+// UpdateAgreementRequest mocks base method
+func (m *MockTransferAPI) UpdateAgreementRequest(arg0 *transfer.UpdateAgreementInput) (*request.Request, *transfer.UpdateAgreementOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAgreementRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.UpdateAgreementOutput)
+	return ret0, ret1
+}
+
+// UpdateAgreementRequest indicates an expected call of UpdateAgreementRequest
+func (mr *MockTransferAPIMockRecorder) UpdateAgreementRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAgreementRequest", reflect.TypeOf((*MockTransferAPI)(nil).UpdateAgreementRequest), arg0)
+}
+
+// UpdateAgreementWithContext mocks base method
+func (m *MockTransferAPI) UpdateAgreementWithContext(arg0 context.Context, arg1 *transfer.UpdateAgreementInput, arg2 ...request.Option) (*transfer.UpdateAgreementOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAgreementWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.UpdateAgreementOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAgreementWithContext indicates an expected call of UpdateAgreementWithContext
+func (mr *MockTransferAPIMockRecorder) UpdateAgreementWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAgreementWithContext", reflect.TypeOf((*MockTransferAPI)(nil).UpdateAgreementWithContext), varargs...)
+}
+
+// UpdateCertificate mocks base method
+func (m *MockTransferAPI) UpdateCertificate(arg0 *transfer.UpdateCertificateInput) (*transfer.UpdateCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCertificate", arg0)
+	ret0, _ := ret[0].(*transfer.UpdateCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCertificate indicates an expected call of UpdateCertificate
+func (mr *MockTransferAPIMockRecorder) UpdateCertificate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCertificate", reflect.TypeOf((*MockTransferAPI)(nil).UpdateCertificate), arg0)
+}
+
+// UpdateCertificateRequest mocks base method
+func (m *MockTransferAPI) UpdateCertificateRequest(arg0 *transfer.UpdateCertificateInput) (*request.Request, *transfer.UpdateCertificateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCertificateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.UpdateCertificateOutput)
+	return ret0, ret1
+}
+
+// UpdateCertificateRequest indicates an expected call of UpdateCertificateRequest
+func (mr *MockTransferAPIMockRecorder) UpdateCertificateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCertificateRequest", reflect.TypeOf((*MockTransferAPI)(nil).UpdateCertificateRequest), arg0)
+}
+
+// UpdateCertificateWithContext mocks base method
+func (m *MockTransferAPI) UpdateCertificateWithContext(arg0 context.Context, arg1 *transfer.UpdateCertificateInput, arg2 ...request.Option) (*transfer.UpdateCertificateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateCertificateWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.UpdateCertificateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCertificateWithContext indicates an expected call of UpdateCertificateWithContext
+func (mr *MockTransferAPIMockRecorder) UpdateCertificateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCertificateWithContext", reflect.TypeOf((*MockTransferAPI)(nil).UpdateCertificateWithContext), varargs...)
+}
+
+// UpdateConnector mocks base method
+func (m *MockTransferAPI) UpdateConnector(arg0 *transfer.UpdateConnectorInput) (*transfer.UpdateConnectorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnector", arg0)
+	ret0, _ := ret[0].(*transfer.UpdateConnectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnector indicates an expected call of UpdateConnector
+func (mr *MockTransferAPIMockRecorder) UpdateConnector(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnector", reflect.TypeOf((*MockTransferAPI)(nil).UpdateConnector), arg0)
+}
+
+// UpdateConnectorRequest mocks base method
+func (m *MockTransferAPI) UpdateConnectorRequest(arg0 *transfer.UpdateConnectorInput) (*request.Request, *transfer.UpdateConnectorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.UpdateConnectorOutput)
+	return ret0, ret1
+}
+
+// UpdateConnectorRequest indicates an expected call of UpdateConnectorRequest
+func (mr *MockTransferAPIMockRecorder) UpdateConnectorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectorRequest", reflect.TypeOf((*MockTransferAPI)(nil).UpdateConnectorRequest), arg0)
+}
+
+// UpdateConnectorWithContext mocks base method
+func (m *MockTransferAPI) UpdateConnectorWithContext(arg0 context.Context, arg1 *transfer.UpdateConnectorInput, arg2 ...request.Option) (*transfer.UpdateConnectorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateConnectorWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.UpdateConnectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectorWithContext indicates an expected call of UpdateConnectorWithContext
+func (mr *MockTransferAPIMockRecorder) UpdateConnectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectorWithContext", reflect.TypeOf((*MockTransferAPI)(nil).UpdateConnectorWithContext), varargs...)
+}
+
+// UpdateProfile mocks base method
+func (m *MockTransferAPI) UpdateProfile(arg0 *transfer.UpdateProfileInput) (*transfer.UpdateProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProfile", arg0)
+	ret0, _ := ret[0].(*transfer.UpdateProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProfile indicates an expected call of UpdateProfile
+func (mr *MockTransferAPIMockRecorder) UpdateProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProfile", reflect.TypeOf((*MockTransferAPI)(nil).UpdateProfile), arg0)
+}
+
+// UpdateProfileRequest mocks base method
+func (m *MockTransferAPI) UpdateProfileRequest(arg0 *transfer.UpdateProfileInput) (*request.Request, *transfer.UpdateProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.UpdateProfileOutput)
+	return ret0, ret1
+}
+
+// UpdateProfileRequest indicates an expected call of UpdateProfileRequest
+func (mr *MockTransferAPIMockRecorder) UpdateProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProfileRequest", reflect.TypeOf((*MockTransferAPI)(nil).UpdateProfileRequest), arg0)
+}
+
+// UpdateProfileWithContext mocks base method
+func (m *MockTransferAPI) UpdateProfileWithContext(arg0 context.Context, arg1 *transfer.UpdateProfileInput, arg2 ...request.Option) (*transfer.UpdateProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.UpdateProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProfileWithContext indicates an expected call of UpdateProfileWithContext
+func (mr *MockTransferAPIMockRecorder) UpdateProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProfileWithContext", reflect.TypeOf((*MockTransferAPI)(nil).UpdateProfileWithContext), varargs...)
 }
 
 // UpdateServer mocks base method

@@ -1818,6 +1818,156 @@ func (mr *MockMacie2APIMockRecorder) GetMemberWithContext(arg0, arg1 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMemberWithContext", reflect.TypeOf((*MockMacie2API)(nil).GetMemberWithContext), varargs...)
 }
 
+// GetRevealConfiguration mocks base method
+func (m *MockMacie2API) GetRevealConfiguration(arg0 *macie2.GetRevealConfigurationInput) (*macie2.GetRevealConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRevealConfiguration", arg0)
+	ret0, _ := ret[0].(*macie2.GetRevealConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRevealConfiguration indicates an expected call of GetRevealConfiguration
+func (mr *MockMacie2APIMockRecorder) GetRevealConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRevealConfiguration", reflect.TypeOf((*MockMacie2API)(nil).GetRevealConfiguration), arg0)
+}
+
+// GetRevealConfigurationRequest mocks base method
+func (m *MockMacie2API) GetRevealConfigurationRequest(arg0 *macie2.GetRevealConfigurationInput) (*request.Request, *macie2.GetRevealConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRevealConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*macie2.GetRevealConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetRevealConfigurationRequest indicates an expected call of GetRevealConfigurationRequest
+func (mr *MockMacie2APIMockRecorder) GetRevealConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRevealConfigurationRequest", reflect.TypeOf((*MockMacie2API)(nil).GetRevealConfigurationRequest), arg0)
+}
+
+// GetRevealConfigurationWithContext mocks base method
+func (m *MockMacie2API) GetRevealConfigurationWithContext(arg0 context.Context, arg1 *macie2.GetRevealConfigurationInput, arg2 ...request.Option) (*macie2.GetRevealConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRevealConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*macie2.GetRevealConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRevealConfigurationWithContext indicates an expected call of GetRevealConfigurationWithContext
+func (mr *MockMacie2APIMockRecorder) GetRevealConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRevealConfigurationWithContext", reflect.TypeOf((*MockMacie2API)(nil).GetRevealConfigurationWithContext), varargs...)
+}
+
+// GetSensitiveDataOccurrences mocks base method
+func (m *MockMacie2API) GetSensitiveDataOccurrences(arg0 *macie2.GetSensitiveDataOccurrencesInput) (*macie2.GetSensitiveDataOccurrencesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSensitiveDataOccurrences", arg0)
+	ret0, _ := ret[0].(*macie2.GetSensitiveDataOccurrencesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSensitiveDataOccurrences indicates an expected call of GetSensitiveDataOccurrences
+func (mr *MockMacie2APIMockRecorder) GetSensitiveDataOccurrences(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSensitiveDataOccurrences", reflect.TypeOf((*MockMacie2API)(nil).GetSensitiveDataOccurrences), arg0)
+}
+
+// GetSensitiveDataOccurrencesAvailability mocks base method
+func (m *MockMacie2API) GetSensitiveDataOccurrencesAvailability(arg0 *macie2.GetSensitiveDataOccurrencesAvailabilityInput) (*macie2.GetSensitiveDataOccurrencesAvailabilityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSensitiveDataOccurrencesAvailability", arg0)
+	ret0, _ := ret[0].(*macie2.GetSensitiveDataOccurrencesAvailabilityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSensitiveDataOccurrencesAvailability indicates an expected call of GetSensitiveDataOccurrencesAvailability
+func (mr *MockMacie2APIMockRecorder) GetSensitiveDataOccurrencesAvailability(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSensitiveDataOccurrencesAvailability", reflect.TypeOf((*MockMacie2API)(nil).GetSensitiveDataOccurrencesAvailability), arg0)
+}
+
+// GetSensitiveDataOccurrencesAvailabilityRequest mocks base method
+func (m *MockMacie2API) GetSensitiveDataOccurrencesAvailabilityRequest(arg0 *macie2.GetSensitiveDataOccurrencesAvailabilityInput) (*request.Request, *macie2.GetSensitiveDataOccurrencesAvailabilityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSensitiveDataOccurrencesAvailabilityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*macie2.GetSensitiveDataOccurrencesAvailabilityOutput)
+	return ret0, ret1
+}
+
+// GetSensitiveDataOccurrencesAvailabilityRequest indicates an expected call of GetSensitiveDataOccurrencesAvailabilityRequest
+func (mr *MockMacie2APIMockRecorder) GetSensitiveDataOccurrencesAvailabilityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSensitiveDataOccurrencesAvailabilityRequest", reflect.TypeOf((*MockMacie2API)(nil).GetSensitiveDataOccurrencesAvailabilityRequest), arg0)
+}
+
+// GetSensitiveDataOccurrencesAvailabilityWithContext mocks base method
+func (m *MockMacie2API) GetSensitiveDataOccurrencesAvailabilityWithContext(arg0 context.Context, arg1 *macie2.GetSensitiveDataOccurrencesAvailabilityInput, arg2 ...request.Option) (*macie2.GetSensitiveDataOccurrencesAvailabilityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSensitiveDataOccurrencesAvailabilityWithContext", varargs...)
+	ret0, _ := ret[0].(*macie2.GetSensitiveDataOccurrencesAvailabilityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSensitiveDataOccurrencesAvailabilityWithContext indicates an expected call of GetSensitiveDataOccurrencesAvailabilityWithContext
+func (mr *MockMacie2APIMockRecorder) GetSensitiveDataOccurrencesAvailabilityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSensitiveDataOccurrencesAvailabilityWithContext", reflect.TypeOf((*MockMacie2API)(nil).GetSensitiveDataOccurrencesAvailabilityWithContext), varargs...)
+}
+
+// GetSensitiveDataOccurrencesRequest mocks base method
+func (m *MockMacie2API) GetSensitiveDataOccurrencesRequest(arg0 *macie2.GetSensitiveDataOccurrencesInput) (*request.Request, *macie2.GetSensitiveDataOccurrencesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSensitiveDataOccurrencesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*macie2.GetSensitiveDataOccurrencesOutput)
+	return ret0, ret1
+}
+
+// GetSensitiveDataOccurrencesRequest indicates an expected call of GetSensitiveDataOccurrencesRequest
+func (mr *MockMacie2APIMockRecorder) GetSensitiveDataOccurrencesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSensitiveDataOccurrencesRequest", reflect.TypeOf((*MockMacie2API)(nil).GetSensitiveDataOccurrencesRequest), arg0)
+}
+
+// GetSensitiveDataOccurrencesWithContext mocks base method
+func (m *MockMacie2API) GetSensitiveDataOccurrencesWithContext(arg0 context.Context, arg1 *macie2.GetSensitiveDataOccurrencesInput, arg2 ...request.Option) (*macie2.GetSensitiveDataOccurrencesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSensitiveDataOccurrencesWithContext", varargs...)
+	ret0, _ := ret[0].(*macie2.GetSensitiveDataOccurrencesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSensitiveDataOccurrencesWithContext indicates an expected call of GetSensitiveDataOccurrencesWithContext
+func (mr *MockMacie2APIMockRecorder) GetSensitiveDataOccurrencesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSensitiveDataOccurrencesWithContext", reflect.TypeOf((*MockMacie2API)(nil).GetSensitiveDataOccurrencesWithContext), varargs...)
+}
+
 // GetUsageStatistics mocks base method
 func (m *MockMacie2API) GetUsageStatistics(arg0 *macie2.GetUsageStatisticsInput) (*macie2.GetUsageStatisticsOutput, error) {
 	m.ctrl.T.Helper()
@@ -3213,4 +3363,87 @@ func (mr *MockMacie2APIMockRecorder) UpdateOrganizationConfigurationWithContext(
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOrganizationConfigurationWithContext", reflect.TypeOf((*MockMacie2API)(nil).UpdateOrganizationConfigurationWithContext), varargs...)
+}
+
+// UpdateRevealConfiguration mocks base method
+func (m *MockMacie2API) UpdateRevealConfiguration(arg0 *macie2.UpdateRevealConfigurationInput) (*macie2.UpdateRevealConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRevealConfiguration", arg0)
+	ret0, _ := ret[0].(*macie2.UpdateRevealConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRevealConfiguration indicates an expected call of UpdateRevealConfiguration
+func (mr *MockMacie2APIMockRecorder) UpdateRevealConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRevealConfiguration", reflect.TypeOf((*MockMacie2API)(nil).UpdateRevealConfiguration), arg0)
+}
+
+// UpdateRevealConfigurationRequest mocks base method
+func (m *MockMacie2API) UpdateRevealConfigurationRequest(arg0 *macie2.UpdateRevealConfigurationInput) (*request.Request, *macie2.UpdateRevealConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRevealConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*macie2.UpdateRevealConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateRevealConfigurationRequest indicates an expected call of UpdateRevealConfigurationRequest
+func (mr *MockMacie2APIMockRecorder) UpdateRevealConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRevealConfigurationRequest", reflect.TypeOf((*MockMacie2API)(nil).UpdateRevealConfigurationRequest), arg0)
+}
+
+// UpdateRevealConfigurationWithContext mocks base method
+func (m *MockMacie2API) UpdateRevealConfigurationWithContext(arg0 context.Context, arg1 *macie2.UpdateRevealConfigurationInput, arg2 ...request.Option) (*macie2.UpdateRevealConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRevealConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*macie2.UpdateRevealConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRevealConfigurationWithContext indicates an expected call of UpdateRevealConfigurationWithContext
+func (mr *MockMacie2APIMockRecorder) UpdateRevealConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRevealConfigurationWithContext", reflect.TypeOf((*MockMacie2API)(nil).UpdateRevealConfigurationWithContext), varargs...)
+}
+
+// WaitUntilFindingRevealed mocks base method
+func (m *MockMacie2API) WaitUntilFindingRevealed(arg0 *macie2.GetSensitiveDataOccurrencesInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilFindingRevealed", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilFindingRevealed indicates an expected call of WaitUntilFindingRevealed
+func (mr *MockMacie2APIMockRecorder) WaitUntilFindingRevealed(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilFindingRevealed", reflect.TypeOf((*MockMacie2API)(nil).WaitUntilFindingRevealed), arg0)
+}
+
+// WaitUntilFindingRevealedWithContext mocks base method
+func (m *MockMacie2API) WaitUntilFindingRevealedWithContext(arg0 context.Context, arg1 *macie2.GetSensitiveDataOccurrencesInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilFindingRevealedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilFindingRevealedWithContext indicates an expected call of WaitUntilFindingRevealedWithContext
+func (mr *MockMacie2APIMockRecorder) WaitUntilFindingRevealedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilFindingRevealedWithContext", reflect.TypeOf((*MockMacie2API)(nil).WaitUntilFindingRevealedWithContext), varargs...)
 }

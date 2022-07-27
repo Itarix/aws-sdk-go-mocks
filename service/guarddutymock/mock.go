@@ -935,6 +935,89 @@ func (mr *MockGuardDutyAPIMockRecorder) DeleteThreatIntelSetWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteThreatIntelSetWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DeleteThreatIntelSetWithContext), varargs...)
 }
 
+// DescribeMalwareScans mocks base method
+func (m *MockGuardDutyAPI) DescribeMalwareScans(arg0 *guardduty.DescribeMalwareScansInput) (*guardduty.DescribeMalwareScansOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMalwareScans", arg0)
+	ret0, _ := ret[0].(*guardduty.DescribeMalwareScansOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMalwareScans indicates an expected call of DescribeMalwareScans
+func (mr *MockGuardDutyAPIMockRecorder) DescribeMalwareScans(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMalwareScans", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribeMalwareScans), arg0)
+}
+
+// DescribeMalwareScansPages mocks base method
+func (m *MockGuardDutyAPI) DescribeMalwareScansPages(arg0 *guardduty.DescribeMalwareScansInput, arg1 func(*guardduty.DescribeMalwareScansOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMalwareScansPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeMalwareScansPages indicates an expected call of DescribeMalwareScansPages
+func (mr *MockGuardDutyAPIMockRecorder) DescribeMalwareScansPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMalwareScansPages", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribeMalwareScansPages), arg0, arg1)
+}
+
+// DescribeMalwareScansPagesWithContext mocks base method
+func (m *MockGuardDutyAPI) DescribeMalwareScansPagesWithContext(arg0 context.Context, arg1 *guardduty.DescribeMalwareScansInput, arg2 func(*guardduty.DescribeMalwareScansOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMalwareScansPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeMalwareScansPagesWithContext indicates an expected call of DescribeMalwareScansPagesWithContext
+func (mr *MockGuardDutyAPIMockRecorder) DescribeMalwareScansPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMalwareScansPagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribeMalwareScansPagesWithContext), varargs...)
+}
+
+// DescribeMalwareScansRequest mocks base method
+func (m *MockGuardDutyAPI) DescribeMalwareScansRequest(arg0 *guardduty.DescribeMalwareScansInput) (*request.Request, *guardduty.DescribeMalwareScansOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMalwareScansRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.DescribeMalwareScansOutput)
+	return ret0, ret1
+}
+
+// DescribeMalwareScansRequest indicates an expected call of DescribeMalwareScansRequest
+func (mr *MockGuardDutyAPIMockRecorder) DescribeMalwareScansRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMalwareScansRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribeMalwareScansRequest), arg0)
+}
+
+// DescribeMalwareScansWithContext mocks base method
+func (m *MockGuardDutyAPI) DescribeMalwareScansWithContext(arg0 context.Context, arg1 *guardduty.DescribeMalwareScansInput, arg2 ...request.Option) (*guardduty.DescribeMalwareScansOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMalwareScansWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.DescribeMalwareScansOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMalwareScansWithContext indicates an expected call of DescribeMalwareScansWithContext
+func (mr *MockGuardDutyAPIMockRecorder) DescribeMalwareScansWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMalwareScansWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribeMalwareScansWithContext), varargs...)
+}
+
 // DescribeOrganizationConfiguration mocks base method
 func (m *MockGuardDutyAPI) DescribeOrganizationConfiguration(arg0 *guardduty.DescribeOrganizationConfigurationInput) (*guardduty.DescribeOrganizationConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -1633,6 +1716,56 @@ func (mr *MockGuardDutyAPIMockRecorder) GetInvitationsCountWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetInvitationsCountWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetInvitationsCountWithContext), varargs...)
+}
+
+// GetMalwareScanSettings mocks base method
+func (m *MockGuardDutyAPI) GetMalwareScanSettings(arg0 *guardduty.GetMalwareScanSettingsInput) (*guardduty.GetMalwareScanSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMalwareScanSettings", arg0)
+	ret0, _ := ret[0].(*guardduty.GetMalwareScanSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMalwareScanSettings indicates an expected call of GetMalwareScanSettings
+func (mr *MockGuardDutyAPIMockRecorder) GetMalwareScanSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMalwareScanSettings", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetMalwareScanSettings), arg0)
+}
+
+// GetMalwareScanSettingsRequest mocks base method
+func (m *MockGuardDutyAPI) GetMalwareScanSettingsRequest(arg0 *guardduty.GetMalwareScanSettingsInput) (*request.Request, *guardduty.GetMalwareScanSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMalwareScanSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.GetMalwareScanSettingsOutput)
+	return ret0, ret1
+}
+
+// GetMalwareScanSettingsRequest indicates an expected call of GetMalwareScanSettingsRequest
+func (mr *MockGuardDutyAPIMockRecorder) GetMalwareScanSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMalwareScanSettingsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetMalwareScanSettingsRequest), arg0)
+}
+
+// GetMalwareScanSettingsWithContext mocks base method
+func (m *MockGuardDutyAPI) GetMalwareScanSettingsWithContext(arg0 context.Context, arg1 *guardduty.GetMalwareScanSettingsInput, arg2 ...request.Option) (*guardduty.GetMalwareScanSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMalwareScanSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.GetMalwareScanSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMalwareScanSettingsWithContext indicates an expected call of GetMalwareScanSettingsWithContext
+func (mr *MockGuardDutyAPIMockRecorder) GetMalwareScanSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMalwareScanSettingsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetMalwareScanSettingsWithContext), varargs...)
 }
 
 // GetMasterAccount mocks base method
@@ -3263,6 +3396,56 @@ func (mr *MockGuardDutyAPIMockRecorder) UpdateIPSetWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIPSetWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateIPSetWithContext), varargs...)
+}
+
+// UpdateMalwareScanSettings mocks base method
+func (m *MockGuardDutyAPI) UpdateMalwareScanSettings(arg0 *guardduty.UpdateMalwareScanSettingsInput) (*guardduty.UpdateMalwareScanSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMalwareScanSettings", arg0)
+	ret0, _ := ret[0].(*guardduty.UpdateMalwareScanSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMalwareScanSettings indicates an expected call of UpdateMalwareScanSettings
+func (mr *MockGuardDutyAPIMockRecorder) UpdateMalwareScanSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMalwareScanSettings", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateMalwareScanSettings), arg0)
+}
+
+// UpdateMalwareScanSettingsRequest mocks base method
+func (m *MockGuardDutyAPI) UpdateMalwareScanSettingsRequest(arg0 *guardduty.UpdateMalwareScanSettingsInput) (*request.Request, *guardduty.UpdateMalwareScanSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMalwareScanSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.UpdateMalwareScanSettingsOutput)
+	return ret0, ret1
+}
+
+// UpdateMalwareScanSettingsRequest indicates an expected call of UpdateMalwareScanSettingsRequest
+func (mr *MockGuardDutyAPIMockRecorder) UpdateMalwareScanSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMalwareScanSettingsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateMalwareScanSettingsRequest), arg0)
+}
+
+// UpdateMalwareScanSettingsWithContext mocks base method
+func (m *MockGuardDutyAPI) UpdateMalwareScanSettingsWithContext(arg0 context.Context, arg1 *guardduty.UpdateMalwareScanSettingsInput, arg2 ...request.Option) (*guardduty.UpdateMalwareScanSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateMalwareScanSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.UpdateMalwareScanSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMalwareScanSettingsWithContext indicates an expected call of UpdateMalwareScanSettingsWithContext
+func (mr *MockGuardDutyAPIMockRecorder) UpdateMalwareScanSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMalwareScanSettingsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).UpdateMalwareScanSettingsWithContext), varargs...)
 }
 
 // UpdateMemberDetectors mocks base method

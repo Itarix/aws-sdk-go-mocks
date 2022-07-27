@@ -85,6 +85,106 @@ func (mr *MockDetectiveAPIMockRecorder) AcceptInvitationWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptInvitationWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).AcceptInvitationWithContext), varargs...)
 }
 
+// BatchGetGraphMemberDatasources mocks base method
+func (m *MockDetectiveAPI) BatchGetGraphMemberDatasources(arg0 *detective.BatchGetGraphMemberDatasourcesInput) (*detective.BatchGetGraphMemberDatasourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetGraphMemberDatasources", arg0)
+	ret0, _ := ret[0].(*detective.BatchGetGraphMemberDatasourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetGraphMemberDatasources indicates an expected call of BatchGetGraphMemberDatasources
+func (mr *MockDetectiveAPIMockRecorder) BatchGetGraphMemberDatasources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetGraphMemberDatasources", reflect.TypeOf((*MockDetectiveAPI)(nil).BatchGetGraphMemberDatasources), arg0)
+}
+
+// BatchGetGraphMemberDatasourcesRequest mocks base method
+func (m *MockDetectiveAPI) BatchGetGraphMemberDatasourcesRequest(arg0 *detective.BatchGetGraphMemberDatasourcesInput) (*request.Request, *detective.BatchGetGraphMemberDatasourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetGraphMemberDatasourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*detective.BatchGetGraphMemberDatasourcesOutput)
+	return ret0, ret1
+}
+
+// BatchGetGraphMemberDatasourcesRequest indicates an expected call of BatchGetGraphMemberDatasourcesRequest
+func (mr *MockDetectiveAPIMockRecorder) BatchGetGraphMemberDatasourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetGraphMemberDatasourcesRequest", reflect.TypeOf((*MockDetectiveAPI)(nil).BatchGetGraphMemberDatasourcesRequest), arg0)
+}
+
+// BatchGetGraphMemberDatasourcesWithContext mocks base method
+func (m *MockDetectiveAPI) BatchGetGraphMemberDatasourcesWithContext(arg0 context.Context, arg1 *detective.BatchGetGraphMemberDatasourcesInput, arg2 ...request.Option) (*detective.BatchGetGraphMemberDatasourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetGraphMemberDatasourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*detective.BatchGetGraphMemberDatasourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetGraphMemberDatasourcesWithContext indicates an expected call of BatchGetGraphMemberDatasourcesWithContext
+func (mr *MockDetectiveAPIMockRecorder) BatchGetGraphMemberDatasourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetGraphMemberDatasourcesWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).BatchGetGraphMemberDatasourcesWithContext), varargs...)
+}
+
+// BatchGetMembershipDatasources mocks base method
+func (m *MockDetectiveAPI) BatchGetMembershipDatasources(arg0 *detective.BatchGetMembershipDatasourcesInput) (*detective.BatchGetMembershipDatasourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetMembershipDatasources", arg0)
+	ret0, _ := ret[0].(*detective.BatchGetMembershipDatasourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetMembershipDatasources indicates an expected call of BatchGetMembershipDatasources
+func (mr *MockDetectiveAPIMockRecorder) BatchGetMembershipDatasources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetMembershipDatasources", reflect.TypeOf((*MockDetectiveAPI)(nil).BatchGetMembershipDatasources), arg0)
+}
+
+// BatchGetMembershipDatasourcesRequest mocks base method
+func (m *MockDetectiveAPI) BatchGetMembershipDatasourcesRequest(arg0 *detective.BatchGetMembershipDatasourcesInput) (*request.Request, *detective.BatchGetMembershipDatasourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetMembershipDatasourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*detective.BatchGetMembershipDatasourcesOutput)
+	return ret0, ret1
+}
+
+// BatchGetMembershipDatasourcesRequest indicates an expected call of BatchGetMembershipDatasourcesRequest
+func (mr *MockDetectiveAPIMockRecorder) BatchGetMembershipDatasourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetMembershipDatasourcesRequest", reflect.TypeOf((*MockDetectiveAPI)(nil).BatchGetMembershipDatasourcesRequest), arg0)
+}
+
+// BatchGetMembershipDatasourcesWithContext mocks base method
+func (m *MockDetectiveAPI) BatchGetMembershipDatasourcesWithContext(arg0 context.Context, arg1 *detective.BatchGetMembershipDatasourcesInput, arg2 ...request.Option) (*detective.BatchGetMembershipDatasourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetMembershipDatasourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*detective.BatchGetMembershipDatasourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetMembershipDatasourcesWithContext indicates an expected call of BatchGetMembershipDatasourcesWithContext
+func (mr *MockDetectiveAPIMockRecorder) BatchGetMembershipDatasourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetMembershipDatasourcesWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).BatchGetMembershipDatasourcesWithContext), varargs...)
+}
+
 // CreateGraph mocks base method
 func (m *MockDetectiveAPI) CreateGraph(arg0 *detective.CreateGraphInput) (*detective.CreateGraphOutput, error) {
 	m.ctrl.T.Helper()
@@ -533,6 +633,89 @@ func (mr *MockDetectiveAPIMockRecorder) GetMembersWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMembersWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).GetMembersWithContext), varargs...)
+}
+
+// ListDatasourcePackages mocks base method
+func (m *MockDetectiveAPI) ListDatasourcePackages(arg0 *detective.ListDatasourcePackagesInput) (*detective.ListDatasourcePackagesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasourcePackages", arg0)
+	ret0, _ := ret[0].(*detective.ListDatasourcePackagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDatasourcePackages indicates an expected call of ListDatasourcePackages
+func (mr *MockDetectiveAPIMockRecorder) ListDatasourcePackages(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasourcePackages", reflect.TypeOf((*MockDetectiveAPI)(nil).ListDatasourcePackages), arg0)
+}
+
+// ListDatasourcePackagesPages mocks base method
+func (m *MockDetectiveAPI) ListDatasourcePackagesPages(arg0 *detective.ListDatasourcePackagesInput, arg1 func(*detective.ListDatasourcePackagesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasourcePackagesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDatasourcePackagesPages indicates an expected call of ListDatasourcePackagesPages
+func (mr *MockDetectiveAPIMockRecorder) ListDatasourcePackagesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasourcePackagesPages", reflect.TypeOf((*MockDetectiveAPI)(nil).ListDatasourcePackagesPages), arg0, arg1)
+}
+
+// ListDatasourcePackagesPagesWithContext mocks base method
+func (m *MockDetectiveAPI) ListDatasourcePackagesPagesWithContext(arg0 context.Context, arg1 *detective.ListDatasourcePackagesInput, arg2 func(*detective.ListDatasourcePackagesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDatasourcePackagesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDatasourcePackagesPagesWithContext indicates an expected call of ListDatasourcePackagesPagesWithContext
+func (mr *MockDetectiveAPIMockRecorder) ListDatasourcePackagesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasourcePackagesPagesWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).ListDatasourcePackagesPagesWithContext), varargs...)
+}
+
+// ListDatasourcePackagesRequest mocks base method
+func (m *MockDetectiveAPI) ListDatasourcePackagesRequest(arg0 *detective.ListDatasourcePackagesInput) (*request.Request, *detective.ListDatasourcePackagesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasourcePackagesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*detective.ListDatasourcePackagesOutput)
+	return ret0, ret1
+}
+
+// ListDatasourcePackagesRequest indicates an expected call of ListDatasourcePackagesRequest
+func (mr *MockDetectiveAPIMockRecorder) ListDatasourcePackagesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasourcePackagesRequest", reflect.TypeOf((*MockDetectiveAPI)(nil).ListDatasourcePackagesRequest), arg0)
+}
+
+// ListDatasourcePackagesWithContext mocks base method
+func (m *MockDetectiveAPI) ListDatasourcePackagesWithContext(arg0 context.Context, arg1 *detective.ListDatasourcePackagesInput, arg2 ...request.Option) (*detective.ListDatasourcePackagesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDatasourcePackagesWithContext", varargs...)
+	ret0, _ := ret[0].(*detective.ListDatasourcePackagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDatasourcePackagesWithContext indicates an expected call of ListDatasourcePackagesWithContext
+func (mr *MockDetectiveAPIMockRecorder) ListDatasourcePackagesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasourcePackagesWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).ListDatasourcePackagesWithContext), varargs...)
 }
 
 // ListGraphs mocks base method
@@ -1115,6 +1298,56 @@ func (mr *MockDetectiveAPIMockRecorder) UntagResourceWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateDatasourcePackages mocks base method
+func (m *MockDetectiveAPI) UpdateDatasourcePackages(arg0 *detective.UpdateDatasourcePackagesInput) (*detective.UpdateDatasourcePackagesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDatasourcePackages", arg0)
+	ret0, _ := ret[0].(*detective.UpdateDatasourcePackagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDatasourcePackages indicates an expected call of UpdateDatasourcePackages
+func (mr *MockDetectiveAPIMockRecorder) UpdateDatasourcePackages(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatasourcePackages", reflect.TypeOf((*MockDetectiveAPI)(nil).UpdateDatasourcePackages), arg0)
+}
+
+// UpdateDatasourcePackagesRequest mocks base method
+func (m *MockDetectiveAPI) UpdateDatasourcePackagesRequest(arg0 *detective.UpdateDatasourcePackagesInput) (*request.Request, *detective.UpdateDatasourcePackagesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDatasourcePackagesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*detective.UpdateDatasourcePackagesOutput)
+	return ret0, ret1
+}
+
+// UpdateDatasourcePackagesRequest indicates an expected call of UpdateDatasourcePackagesRequest
+func (mr *MockDetectiveAPIMockRecorder) UpdateDatasourcePackagesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatasourcePackagesRequest", reflect.TypeOf((*MockDetectiveAPI)(nil).UpdateDatasourcePackagesRequest), arg0)
+}
+
+// UpdateDatasourcePackagesWithContext mocks base method
+func (m *MockDetectiveAPI) UpdateDatasourcePackagesWithContext(arg0 context.Context, arg1 *detective.UpdateDatasourcePackagesInput, arg2 ...request.Option) (*detective.UpdateDatasourcePackagesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDatasourcePackagesWithContext", varargs...)
+	ret0, _ := ret[0].(*detective.UpdateDatasourcePackagesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDatasourcePackagesWithContext indicates an expected call of UpdateDatasourcePackagesWithContext
+func (mr *MockDetectiveAPIMockRecorder) UpdateDatasourcePackagesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatasourcePackagesWithContext", reflect.TypeOf((*MockDetectiveAPI)(nil).UpdateDatasourcePackagesWithContext), varargs...)
 }
 
 // UpdateOrganizationConfiguration mocks base method
