@@ -10392,3 +10392,53 @@ func (mr *MockChimeAPIMockRecorder) UpdateVoiceConnectorWithContext(arg0, arg1 i
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVoiceConnectorWithContext", reflect.TypeOf((*MockChimeAPI)(nil).UpdateVoiceConnectorWithContext), varargs...)
 }
+
+// ValidateE911Address mocks base method
+func (m *MockChimeAPI) ValidateE911Address(arg0 *chime.ValidateE911AddressInput) (*chime.ValidateE911AddressOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ValidateE911Address", arg0)
+	ret0, _ := ret[0].(*chime.ValidateE911AddressOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ValidateE911Address indicates an expected call of ValidateE911Address
+func (mr *MockChimeAPIMockRecorder) ValidateE911Address(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidateE911Address", reflect.TypeOf((*MockChimeAPI)(nil).ValidateE911Address), arg0)
+}
+
+// ValidateE911AddressRequest mocks base method
+func (m *MockChimeAPI) ValidateE911AddressRequest(arg0 *chime.ValidateE911AddressInput) (*request.Request, *chime.ValidateE911AddressOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ValidateE911AddressRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chime.ValidateE911AddressOutput)
+	return ret0, ret1
+}
+
+// ValidateE911AddressRequest indicates an expected call of ValidateE911AddressRequest
+func (mr *MockChimeAPIMockRecorder) ValidateE911AddressRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidateE911AddressRequest", reflect.TypeOf((*MockChimeAPI)(nil).ValidateE911AddressRequest), arg0)
+}
+
+// ValidateE911AddressWithContext mocks base method
+func (m *MockChimeAPI) ValidateE911AddressWithContext(arg0 context.Context, arg1 *chime.ValidateE911AddressInput, arg2 ...request.Option) (*chime.ValidateE911AddressOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ValidateE911AddressWithContext", varargs...)
+	ret0, _ := ret[0].(*chime.ValidateE911AddressOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ValidateE911AddressWithContext indicates an expected call of ValidateE911AddressWithContext
+func (mr *MockChimeAPIMockRecorder) ValidateE911AddressWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ValidateE911AddressWithContext", reflect.TypeOf((*MockChimeAPI)(nil).ValidateE911AddressWithContext), varargs...)
+}
