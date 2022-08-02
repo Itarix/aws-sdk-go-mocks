@@ -2334,6 +2334,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) ModifyClientPropertiesWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClientPropertiesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyClientPropertiesWithContext), varargs...)
 }
 
+// ModifySamlProperties mocks base method
+func (m *MockWorkSpacesAPI) ModifySamlProperties(arg0 *workspaces.ModifySamlPropertiesInput) (*workspaces.ModifySamlPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifySamlProperties", arg0)
+	ret0, _ := ret[0].(*workspaces.ModifySamlPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifySamlProperties indicates an expected call of ModifySamlProperties
+func (mr *MockWorkSpacesAPIMockRecorder) ModifySamlProperties(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySamlProperties", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifySamlProperties), arg0)
+}
+
+// ModifySamlPropertiesRequest mocks base method
+func (m *MockWorkSpacesAPI) ModifySamlPropertiesRequest(arg0 *workspaces.ModifySamlPropertiesInput) (*request.Request, *workspaces.ModifySamlPropertiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifySamlPropertiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.ModifySamlPropertiesOutput)
+	return ret0, ret1
+}
+
+// ModifySamlPropertiesRequest indicates an expected call of ModifySamlPropertiesRequest
+func (mr *MockWorkSpacesAPIMockRecorder) ModifySamlPropertiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySamlPropertiesRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifySamlPropertiesRequest), arg0)
+}
+
+// ModifySamlPropertiesWithContext mocks base method
+func (m *MockWorkSpacesAPI) ModifySamlPropertiesWithContext(arg0 context.Context, arg1 *workspaces.ModifySamlPropertiesInput, arg2 ...request.Option) (*workspaces.ModifySamlPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifySamlPropertiesWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.ModifySamlPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifySamlPropertiesWithContext indicates an expected call of ModifySamlPropertiesWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) ModifySamlPropertiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySamlPropertiesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifySamlPropertiesWithContext), varargs...)
+}
+
 // ModifySelfservicePermissions mocks base method
 func (m *MockWorkSpacesAPI) ModifySelfservicePermissions(arg0 *workspaces.ModifySelfservicePermissionsInput) (*workspaces.ModifySelfservicePermissionsOutput, error) {
 	m.ctrl.T.Helper()
