@@ -85,6 +85,56 @@ func (mr *MockPrometheusServiceAPIMockRecorder) CreateAlertManagerDefinitionWith
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAlertManagerDefinitionWithContext", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).CreateAlertManagerDefinitionWithContext), varargs...)
 }
 
+// CreateLoggingConfiguration mocks base method
+func (m *MockPrometheusServiceAPI) CreateLoggingConfiguration(arg0 *prometheusservice.CreateLoggingConfigurationInput) (*prometheusservice.CreateLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLoggingConfiguration", arg0)
+	ret0, _ := ret[0].(*prometheusservice.CreateLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLoggingConfiguration indicates an expected call of CreateLoggingConfiguration
+func (mr *MockPrometheusServiceAPIMockRecorder) CreateLoggingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLoggingConfiguration", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).CreateLoggingConfiguration), arg0)
+}
+
+// CreateLoggingConfigurationRequest mocks base method
+func (m *MockPrometheusServiceAPI) CreateLoggingConfigurationRequest(arg0 *prometheusservice.CreateLoggingConfigurationInput) (*request.Request, *prometheusservice.CreateLoggingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLoggingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*prometheusservice.CreateLoggingConfigurationOutput)
+	return ret0, ret1
+}
+
+// CreateLoggingConfigurationRequest indicates an expected call of CreateLoggingConfigurationRequest
+func (mr *MockPrometheusServiceAPIMockRecorder) CreateLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLoggingConfigurationRequest", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).CreateLoggingConfigurationRequest), arg0)
+}
+
+// CreateLoggingConfigurationWithContext mocks base method
+func (m *MockPrometheusServiceAPI) CreateLoggingConfigurationWithContext(arg0 context.Context, arg1 *prometheusservice.CreateLoggingConfigurationInput, arg2 ...request.Option) (*prometheusservice.CreateLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLoggingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*prometheusservice.CreateLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLoggingConfigurationWithContext indicates an expected call of CreateLoggingConfigurationWithContext
+func (mr *MockPrometheusServiceAPIMockRecorder) CreateLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLoggingConfigurationWithContext", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).CreateLoggingConfigurationWithContext), varargs...)
+}
+
 // CreateRuleGroupsNamespace mocks base method
 func (m *MockPrometheusServiceAPI) CreateRuleGroupsNamespace(arg0 *prometheusservice.CreateRuleGroupsNamespaceInput) (*prometheusservice.CreateRuleGroupsNamespaceOutput, error) {
 	m.ctrl.T.Helper()
@@ -235,6 +285,56 @@ func (mr *MockPrometheusServiceAPIMockRecorder) DeleteAlertManagerDefinitionWith
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAlertManagerDefinitionWithContext", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).DeleteAlertManagerDefinitionWithContext), varargs...)
 }
 
+// DeleteLoggingConfiguration mocks base method
+func (m *MockPrometheusServiceAPI) DeleteLoggingConfiguration(arg0 *prometheusservice.DeleteLoggingConfigurationInput) (*prometheusservice.DeleteLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLoggingConfiguration", arg0)
+	ret0, _ := ret[0].(*prometheusservice.DeleteLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLoggingConfiguration indicates an expected call of DeleteLoggingConfiguration
+func (mr *MockPrometheusServiceAPIMockRecorder) DeleteLoggingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLoggingConfiguration", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).DeleteLoggingConfiguration), arg0)
+}
+
+// DeleteLoggingConfigurationRequest mocks base method
+func (m *MockPrometheusServiceAPI) DeleteLoggingConfigurationRequest(arg0 *prometheusservice.DeleteLoggingConfigurationInput) (*request.Request, *prometheusservice.DeleteLoggingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLoggingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*prometheusservice.DeleteLoggingConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteLoggingConfigurationRequest indicates an expected call of DeleteLoggingConfigurationRequest
+func (mr *MockPrometheusServiceAPIMockRecorder) DeleteLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLoggingConfigurationRequest", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).DeleteLoggingConfigurationRequest), arg0)
+}
+
+// DeleteLoggingConfigurationWithContext mocks base method
+func (m *MockPrometheusServiceAPI) DeleteLoggingConfigurationWithContext(arg0 context.Context, arg1 *prometheusservice.DeleteLoggingConfigurationInput, arg2 ...request.Option) (*prometheusservice.DeleteLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLoggingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*prometheusservice.DeleteLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLoggingConfigurationWithContext indicates an expected call of DeleteLoggingConfigurationWithContext
+func (mr *MockPrometheusServiceAPIMockRecorder) DeleteLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLoggingConfigurationWithContext", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).DeleteLoggingConfigurationWithContext), varargs...)
+}
+
 // DeleteRuleGroupsNamespace mocks base method
 func (m *MockPrometheusServiceAPI) DeleteRuleGroupsNamespace(arg0 *prometheusservice.DeleteRuleGroupsNamespaceInput) (*prometheusservice.DeleteRuleGroupsNamespaceOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +483,56 @@ func (mr *MockPrometheusServiceAPIMockRecorder) DescribeAlertManagerDefinitionWi
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAlertManagerDefinitionWithContext", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).DescribeAlertManagerDefinitionWithContext), varargs...)
+}
+
+// DescribeLoggingConfiguration mocks base method
+func (m *MockPrometheusServiceAPI) DescribeLoggingConfiguration(arg0 *prometheusservice.DescribeLoggingConfigurationInput) (*prometheusservice.DescribeLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLoggingConfiguration", arg0)
+	ret0, _ := ret[0].(*prometheusservice.DescribeLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLoggingConfiguration indicates an expected call of DescribeLoggingConfiguration
+func (mr *MockPrometheusServiceAPIMockRecorder) DescribeLoggingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLoggingConfiguration", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).DescribeLoggingConfiguration), arg0)
+}
+
+// DescribeLoggingConfigurationRequest mocks base method
+func (m *MockPrometheusServiceAPI) DescribeLoggingConfigurationRequest(arg0 *prometheusservice.DescribeLoggingConfigurationInput) (*request.Request, *prometheusservice.DescribeLoggingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLoggingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*prometheusservice.DescribeLoggingConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeLoggingConfigurationRequest indicates an expected call of DescribeLoggingConfigurationRequest
+func (mr *MockPrometheusServiceAPIMockRecorder) DescribeLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLoggingConfigurationRequest", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).DescribeLoggingConfigurationRequest), arg0)
+}
+
+// DescribeLoggingConfigurationWithContext mocks base method
+func (m *MockPrometheusServiceAPI) DescribeLoggingConfigurationWithContext(arg0 context.Context, arg1 *prometheusservice.DescribeLoggingConfigurationInput, arg2 ...request.Option) (*prometheusservice.DescribeLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLoggingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*prometheusservice.DescribeLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLoggingConfigurationWithContext indicates an expected call of DescribeLoggingConfigurationWithContext
+func (mr *MockPrometheusServiceAPIMockRecorder) DescribeLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLoggingConfigurationWithContext", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).DescribeLoggingConfigurationWithContext), varargs...)
 }
 
 // DescribeRuleGroupsNamespace mocks base method
@@ -899,6 +1049,56 @@ func (mr *MockPrometheusServiceAPIMockRecorder) UntagResourceWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateLoggingConfiguration mocks base method
+func (m *MockPrometheusServiceAPI) UpdateLoggingConfiguration(arg0 *prometheusservice.UpdateLoggingConfigurationInput) (*prometheusservice.UpdateLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLoggingConfiguration", arg0)
+	ret0, _ := ret[0].(*prometheusservice.UpdateLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLoggingConfiguration indicates an expected call of UpdateLoggingConfiguration
+func (mr *MockPrometheusServiceAPIMockRecorder) UpdateLoggingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLoggingConfiguration", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).UpdateLoggingConfiguration), arg0)
+}
+
+// UpdateLoggingConfigurationRequest mocks base method
+func (m *MockPrometheusServiceAPI) UpdateLoggingConfigurationRequest(arg0 *prometheusservice.UpdateLoggingConfigurationInput) (*request.Request, *prometheusservice.UpdateLoggingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLoggingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*prometheusservice.UpdateLoggingConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateLoggingConfigurationRequest indicates an expected call of UpdateLoggingConfigurationRequest
+func (mr *MockPrometheusServiceAPIMockRecorder) UpdateLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLoggingConfigurationRequest", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).UpdateLoggingConfigurationRequest), arg0)
+}
+
+// UpdateLoggingConfigurationWithContext mocks base method
+func (m *MockPrometheusServiceAPI) UpdateLoggingConfigurationWithContext(arg0 context.Context, arg1 *prometheusservice.UpdateLoggingConfigurationInput, arg2 ...request.Option) (*prometheusservice.UpdateLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateLoggingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*prometheusservice.UpdateLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLoggingConfigurationWithContext indicates an expected call of UpdateLoggingConfigurationWithContext
+func (mr *MockPrometheusServiceAPIMockRecorder) UpdateLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLoggingConfigurationWithContext", reflect.TypeOf((*MockPrometheusServiceAPI)(nil).UpdateLoggingConfigurationWithContext), varargs...)
 }
 
 // UpdateWorkspaceAlias mocks base method

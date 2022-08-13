@@ -2082,6 +2082,89 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) ListChannelsWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListChannelsWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListChannelsWithContext), varargs...)
 }
 
+// ListSubChannels mocks base method
+func (m *MockChimeSDKMessagingAPI) ListSubChannels(arg0 *chimesdkmessaging.ListSubChannelsInput) (*chimesdkmessaging.ListSubChannelsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSubChannels", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.ListSubChannelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSubChannels indicates an expected call of ListSubChannels
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListSubChannels(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSubChannels", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListSubChannels), arg0)
+}
+
+// ListSubChannelsPages mocks base method
+func (m *MockChimeSDKMessagingAPI) ListSubChannelsPages(arg0 *chimesdkmessaging.ListSubChannelsInput, arg1 func(*chimesdkmessaging.ListSubChannelsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSubChannelsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSubChannelsPages indicates an expected call of ListSubChannelsPages
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListSubChannelsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSubChannelsPages", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListSubChannelsPages), arg0, arg1)
+}
+
+// ListSubChannelsPagesWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) ListSubChannelsPagesWithContext(arg0 context.Context, arg1 *chimesdkmessaging.ListSubChannelsInput, arg2 func(*chimesdkmessaging.ListSubChannelsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSubChannelsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSubChannelsPagesWithContext indicates an expected call of ListSubChannelsPagesWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListSubChannelsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSubChannelsPagesWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListSubChannelsPagesWithContext), varargs...)
+}
+
+// ListSubChannelsRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) ListSubChannelsRequest(arg0 *chimesdkmessaging.ListSubChannelsInput) (*request.Request, *chimesdkmessaging.ListSubChannelsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSubChannelsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.ListSubChannelsOutput)
+	return ret0, ret1
+}
+
+// ListSubChannelsRequest indicates an expected call of ListSubChannelsRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListSubChannelsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSubChannelsRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListSubChannelsRequest), arg0)
+}
+
+// ListSubChannelsWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) ListSubChannelsWithContext(arg0 context.Context, arg1 *chimesdkmessaging.ListSubChannelsInput, arg2 ...request.Option) (*chimesdkmessaging.ListSubChannelsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSubChannelsWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.ListSubChannelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSubChannelsWithContext indicates an expected call of ListSubChannelsWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) ListSubChannelsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSubChannelsWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListSubChannelsWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockChimeSDKMessagingAPI) ListTagsForResource(arg0 *chimesdkmessaging.ListTagsForResourceInput) (*chimesdkmessaging.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
