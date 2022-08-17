@@ -85,6 +85,56 @@ func (mr *MockRekognitionAPIMockRecorder) CompareFacesWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CompareFacesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).CompareFacesWithContext), varargs...)
 }
 
+// CopyProjectVersion mocks base method
+func (m *MockRekognitionAPI) CopyProjectVersion(arg0 *rekognition.CopyProjectVersionInput) (*rekognition.CopyProjectVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CopyProjectVersion", arg0)
+	ret0, _ := ret[0].(*rekognition.CopyProjectVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CopyProjectVersion indicates an expected call of CopyProjectVersion
+func (mr *MockRekognitionAPIMockRecorder) CopyProjectVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopyProjectVersion", reflect.TypeOf((*MockRekognitionAPI)(nil).CopyProjectVersion), arg0)
+}
+
+// CopyProjectVersionRequest mocks base method
+func (m *MockRekognitionAPI) CopyProjectVersionRequest(arg0 *rekognition.CopyProjectVersionInput) (*request.Request, *rekognition.CopyProjectVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CopyProjectVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.CopyProjectVersionOutput)
+	return ret0, ret1
+}
+
+// CopyProjectVersionRequest indicates an expected call of CopyProjectVersionRequest
+func (mr *MockRekognitionAPIMockRecorder) CopyProjectVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopyProjectVersionRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).CopyProjectVersionRequest), arg0)
+}
+
+// CopyProjectVersionWithContext mocks base method
+func (m *MockRekognitionAPI) CopyProjectVersionWithContext(arg0 context.Context, arg1 *rekognition.CopyProjectVersionInput, arg2 ...request.Option) (*rekognition.CopyProjectVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CopyProjectVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.CopyProjectVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CopyProjectVersionWithContext indicates an expected call of CopyProjectVersionWithContext
+func (mr *MockRekognitionAPIMockRecorder) CopyProjectVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CopyProjectVersionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).CopyProjectVersionWithContext), varargs...)
+}
+
 // CreateCollection mocks base method
 func (m *MockRekognitionAPI) CreateCollection(arg0 *rekognition.CreateCollectionInput) (*rekognition.CreateCollectionOutput, error) {
 	m.ctrl.T.Helper()
@@ -498,6 +548,56 @@ func (m *MockRekognitionAPI) DeleteProject(arg0 *rekognition.DeleteProjectInput)
 func (mr *MockRekognitionAPIMockRecorder) DeleteProject(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProject", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteProject), arg0)
+}
+
+// DeleteProjectPolicy mocks base method
+func (m *MockRekognitionAPI) DeleteProjectPolicy(arg0 *rekognition.DeleteProjectPolicyInput) (*rekognition.DeleteProjectPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProjectPolicy", arg0)
+	ret0, _ := ret[0].(*rekognition.DeleteProjectPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProjectPolicy indicates an expected call of DeleteProjectPolicy
+func (mr *MockRekognitionAPIMockRecorder) DeleteProjectPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectPolicy", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteProjectPolicy), arg0)
+}
+
+// DeleteProjectPolicyRequest mocks base method
+func (m *MockRekognitionAPI) DeleteProjectPolicyRequest(arg0 *rekognition.DeleteProjectPolicyInput) (*request.Request, *rekognition.DeleteProjectPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProjectPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.DeleteProjectPolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteProjectPolicyRequest indicates an expected call of DeleteProjectPolicyRequest
+func (mr *MockRekognitionAPIMockRecorder) DeleteProjectPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectPolicyRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteProjectPolicyRequest), arg0)
+}
+
+// DeleteProjectPolicyWithContext mocks base method
+func (m *MockRekognitionAPI) DeleteProjectPolicyWithContext(arg0 context.Context, arg1 *rekognition.DeleteProjectPolicyInput, arg2 ...request.Option) (*rekognition.DeleteProjectPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteProjectPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.DeleteProjectPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProjectPolicyWithContext indicates an expected call of DeleteProjectPolicyWithContext
+func (mr *MockRekognitionAPIMockRecorder) DeleteProjectPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProjectPolicyWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteProjectPolicyWithContext), varargs...)
 }
 
 // DeleteProjectRequest mocks base method
@@ -2397,6 +2497,89 @@ func (mr *MockRekognitionAPIMockRecorder) ListFacesWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFacesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListFacesWithContext), varargs...)
 }
 
+// ListProjectPolicies mocks base method
+func (m *MockRekognitionAPI) ListProjectPolicies(arg0 *rekognition.ListProjectPoliciesInput) (*rekognition.ListProjectPoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProjectPolicies", arg0)
+	ret0, _ := ret[0].(*rekognition.ListProjectPoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProjectPolicies indicates an expected call of ListProjectPolicies
+func (mr *MockRekognitionAPIMockRecorder) ListProjectPolicies(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectPolicies", reflect.TypeOf((*MockRekognitionAPI)(nil).ListProjectPolicies), arg0)
+}
+
+// ListProjectPoliciesPages mocks base method
+func (m *MockRekognitionAPI) ListProjectPoliciesPages(arg0 *rekognition.ListProjectPoliciesInput, arg1 func(*rekognition.ListProjectPoliciesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProjectPoliciesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProjectPoliciesPages indicates an expected call of ListProjectPoliciesPages
+func (mr *MockRekognitionAPIMockRecorder) ListProjectPoliciesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectPoliciesPages", reflect.TypeOf((*MockRekognitionAPI)(nil).ListProjectPoliciesPages), arg0, arg1)
+}
+
+// ListProjectPoliciesPagesWithContext mocks base method
+func (m *MockRekognitionAPI) ListProjectPoliciesPagesWithContext(arg0 context.Context, arg1 *rekognition.ListProjectPoliciesInput, arg2 func(*rekognition.ListProjectPoliciesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProjectPoliciesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProjectPoliciesPagesWithContext indicates an expected call of ListProjectPoliciesPagesWithContext
+func (mr *MockRekognitionAPIMockRecorder) ListProjectPoliciesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectPoliciesPagesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListProjectPoliciesPagesWithContext), varargs...)
+}
+
+// ListProjectPoliciesRequest mocks base method
+func (m *MockRekognitionAPI) ListProjectPoliciesRequest(arg0 *rekognition.ListProjectPoliciesInput) (*request.Request, *rekognition.ListProjectPoliciesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProjectPoliciesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.ListProjectPoliciesOutput)
+	return ret0, ret1
+}
+
+// ListProjectPoliciesRequest indicates an expected call of ListProjectPoliciesRequest
+func (mr *MockRekognitionAPIMockRecorder) ListProjectPoliciesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectPoliciesRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).ListProjectPoliciesRequest), arg0)
+}
+
+// ListProjectPoliciesWithContext mocks base method
+func (m *MockRekognitionAPI) ListProjectPoliciesWithContext(arg0 context.Context, arg1 *rekognition.ListProjectPoliciesInput, arg2 ...request.Option) (*rekognition.ListProjectPoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProjectPoliciesWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.ListProjectPoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProjectPoliciesWithContext indicates an expected call of ListProjectPoliciesWithContext
+func (mr *MockRekognitionAPIMockRecorder) ListProjectPoliciesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectPoliciesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListProjectPoliciesWithContext), varargs...)
+}
+
 // ListStreamProcessors mocks base method
 func (m *MockRekognitionAPI) ListStreamProcessors(arg0 *rekognition.ListStreamProcessorsInput) (*rekognition.ListStreamProcessorsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2528,6 +2711,56 @@ func (mr *MockRekognitionAPIMockRecorder) ListTagsForResourceWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// PutProjectPolicy mocks base method
+func (m *MockRekognitionAPI) PutProjectPolicy(arg0 *rekognition.PutProjectPolicyInput) (*rekognition.PutProjectPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutProjectPolicy", arg0)
+	ret0, _ := ret[0].(*rekognition.PutProjectPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutProjectPolicy indicates an expected call of PutProjectPolicy
+func (mr *MockRekognitionAPIMockRecorder) PutProjectPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutProjectPolicy", reflect.TypeOf((*MockRekognitionAPI)(nil).PutProjectPolicy), arg0)
+}
+
+// PutProjectPolicyRequest mocks base method
+func (m *MockRekognitionAPI) PutProjectPolicyRequest(arg0 *rekognition.PutProjectPolicyInput) (*request.Request, *rekognition.PutProjectPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutProjectPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.PutProjectPolicyOutput)
+	return ret0, ret1
+}
+
+// PutProjectPolicyRequest indicates an expected call of PutProjectPolicyRequest
+func (mr *MockRekognitionAPIMockRecorder) PutProjectPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutProjectPolicyRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).PutProjectPolicyRequest), arg0)
+}
+
+// PutProjectPolicyWithContext mocks base method
+func (m *MockRekognitionAPI) PutProjectPolicyWithContext(arg0 context.Context, arg1 *rekognition.PutProjectPolicyInput, arg2 ...request.Option) (*rekognition.PutProjectPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutProjectPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.PutProjectPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutProjectPolicyWithContext indicates an expected call of PutProjectPolicyWithContext
+func (mr *MockRekognitionAPIMockRecorder) PutProjectPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutProjectPolicyWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).PutProjectPolicyWithContext), varargs...)
 }
 
 // RecognizeCelebrities mocks base method
