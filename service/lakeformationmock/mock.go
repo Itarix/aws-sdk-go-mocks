@@ -85,6 +85,56 @@ func (mr *MockLakeFormationAPIMockRecorder) AddLFTagsToResourceWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddLFTagsToResourceWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).AddLFTagsToResourceWithContext), varargs...)
 }
 
+// AssumeDecoratedRoleWithSAML mocks base method
+func (m *MockLakeFormationAPI) AssumeDecoratedRoleWithSAML(arg0 *lakeformation.AssumeDecoratedRoleWithSAMLInput) (*lakeformation.AssumeDecoratedRoleWithSAMLOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssumeDecoratedRoleWithSAML", arg0)
+	ret0, _ := ret[0].(*lakeformation.AssumeDecoratedRoleWithSAMLOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssumeDecoratedRoleWithSAML indicates an expected call of AssumeDecoratedRoleWithSAML
+func (mr *MockLakeFormationAPIMockRecorder) AssumeDecoratedRoleWithSAML(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssumeDecoratedRoleWithSAML", reflect.TypeOf((*MockLakeFormationAPI)(nil).AssumeDecoratedRoleWithSAML), arg0)
+}
+
+// AssumeDecoratedRoleWithSAMLRequest mocks base method
+func (m *MockLakeFormationAPI) AssumeDecoratedRoleWithSAMLRequest(arg0 *lakeformation.AssumeDecoratedRoleWithSAMLInput) (*request.Request, *lakeformation.AssumeDecoratedRoleWithSAMLOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssumeDecoratedRoleWithSAMLRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.AssumeDecoratedRoleWithSAMLOutput)
+	return ret0, ret1
+}
+
+// AssumeDecoratedRoleWithSAMLRequest indicates an expected call of AssumeDecoratedRoleWithSAMLRequest
+func (mr *MockLakeFormationAPIMockRecorder) AssumeDecoratedRoleWithSAMLRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssumeDecoratedRoleWithSAMLRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).AssumeDecoratedRoleWithSAMLRequest), arg0)
+}
+
+// AssumeDecoratedRoleWithSAMLWithContext mocks base method
+func (m *MockLakeFormationAPI) AssumeDecoratedRoleWithSAMLWithContext(arg0 context.Context, arg1 *lakeformation.AssumeDecoratedRoleWithSAMLInput, arg2 ...request.Option) (*lakeformation.AssumeDecoratedRoleWithSAMLOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssumeDecoratedRoleWithSAMLWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.AssumeDecoratedRoleWithSAMLOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssumeDecoratedRoleWithSAMLWithContext indicates an expected call of AssumeDecoratedRoleWithSAMLWithContext
+func (mr *MockLakeFormationAPIMockRecorder) AssumeDecoratedRoleWithSAMLWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssumeDecoratedRoleWithSAMLWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).AssumeDecoratedRoleWithSAMLWithContext), varargs...)
+}
+
 // BatchGrantPermissions mocks base method
 func (m *MockLakeFormationAPI) BatchGrantPermissions(arg0 *lakeformation.BatchGrantPermissionsInput) (*lakeformation.BatchGrantPermissionsOutput, error) {
 	m.ctrl.T.Helper()
