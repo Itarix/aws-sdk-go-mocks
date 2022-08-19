@@ -516,6 +516,39 @@ func (mr *MockCloudWatchAPIMockRecorder) DescribeAnomalyDetectors(arg0 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnomalyDetectors", reflect.TypeOf((*MockCloudWatchAPI)(nil).DescribeAnomalyDetectors), arg0)
 }
 
+// DescribeAnomalyDetectorsPages mocks base method
+func (m *MockCloudWatchAPI) DescribeAnomalyDetectorsPages(arg0 *cloudwatch.DescribeAnomalyDetectorsInput, arg1 func(*cloudwatch.DescribeAnomalyDetectorsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAnomalyDetectorsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeAnomalyDetectorsPages indicates an expected call of DescribeAnomalyDetectorsPages
+func (mr *MockCloudWatchAPIMockRecorder) DescribeAnomalyDetectorsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnomalyDetectorsPages", reflect.TypeOf((*MockCloudWatchAPI)(nil).DescribeAnomalyDetectorsPages), arg0, arg1)
+}
+
+// DescribeAnomalyDetectorsPagesWithContext mocks base method
+func (m *MockCloudWatchAPI) DescribeAnomalyDetectorsPagesWithContext(arg0 context.Context, arg1 *cloudwatch.DescribeAnomalyDetectorsInput, arg2 func(*cloudwatch.DescribeAnomalyDetectorsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAnomalyDetectorsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeAnomalyDetectorsPagesWithContext indicates an expected call of DescribeAnomalyDetectorsPagesWithContext
+func (mr *MockCloudWatchAPIMockRecorder) DescribeAnomalyDetectorsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnomalyDetectorsPagesWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).DescribeAnomalyDetectorsPagesWithContext), varargs...)
+}
+
 // DescribeAnomalyDetectorsRequest mocks base method
 func (m *MockCloudWatchAPI) DescribeAnomalyDetectorsRequest(arg0 *cloudwatch.DescribeAnomalyDetectorsInput) (*request.Request, *cloudwatch.DescribeAnomalyDetectorsOutput) {
 	m.ctrl.T.Helper()
@@ -1250,6 +1283,89 @@ func (mr *MockCloudWatchAPIMockRecorder) ListDashboardsWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDashboardsWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).ListDashboardsWithContext), varargs...)
 }
 
+// ListManagedInsightRules mocks base method
+func (m *MockCloudWatchAPI) ListManagedInsightRules(arg0 *cloudwatch.ListManagedInsightRulesInput) (*cloudwatch.ListManagedInsightRulesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListManagedInsightRules", arg0)
+	ret0, _ := ret[0].(*cloudwatch.ListManagedInsightRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListManagedInsightRules indicates an expected call of ListManagedInsightRules
+func (mr *MockCloudWatchAPIMockRecorder) ListManagedInsightRules(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedInsightRules", reflect.TypeOf((*MockCloudWatchAPI)(nil).ListManagedInsightRules), arg0)
+}
+
+// ListManagedInsightRulesPages mocks base method
+func (m *MockCloudWatchAPI) ListManagedInsightRulesPages(arg0 *cloudwatch.ListManagedInsightRulesInput, arg1 func(*cloudwatch.ListManagedInsightRulesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListManagedInsightRulesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListManagedInsightRulesPages indicates an expected call of ListManagedInsightRulesPages
+func (mr *MockCloudWatchAPIMockRecorder) ListManagedInsightRulesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedInsightRulesPages", reflect.TypeOf((*MockCloudWatchAPI)(nil).ListManagedInsightRulesPages), arg0, arg1)
+}
+
+// ListManagedInsightRulesPagesWithContext mocks base method
+func (m *MockCloudWatchAPI) ListManagedInsightRulesPagesWithContext(arg0 context.Context, arg1 *cloudwatch.ListManagedInsightRulesInput, arg2 func(*cloudwatch.ListManagedInsightRulesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListManagedInsightRulesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListManagedInsightRulesPagesWithContext indicates an expected call of ListManagedInsightRulesPagesWithContext
+func (mr *MockCloudWatchAPIMockRecorder) ListManagedInsightRulesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedInsightRulesPagesWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).ListManagedInsightRulesPagesWithContext), varargs...)
+}
+
+// ListManagedInsightRulesRequest mocks base method
+func (m *MockCloudWatchAPI) ListManagedInsightRulesRequest(arg0 *cloudwatch.ListManagedInsightRulesInput) (*request.Request, *cloudwatch.ListManagedInsightRulesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListManagedInsightRulesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatch.ListManagedInsightRulesOutput)
+	return ret0, ret1
+}
+
+// ListManagedInsightRulesRequest indicates an expected call of ListManagedInsightRulesRequest
+func (mr *MockCloudWatchAPIMockRecorder) ListManagedInsightRulesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedInsightRulesRequest", reflect.TypeOf((*MockCloudWatchAPI)(nil).ListManagedInsightRulesRequest), arg0)
+}
+
+// ListManagedInsightRulesWithContext mocks base method
+func (m *MockCloudWatchAPI) ListManagedInsightRulesWithContext(arg0 context.Context, arg1 *cloudwatch.ListManagedInsightRulesInput, arg2 ...request.Option) (*cloudwatch.ListManagedInsightRulesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListManagedInsightRulesWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatch.ListManagedInsightRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListManagedInsightRulesWithContext indicates an expected call of ListManagedInsightRulesWithContext
+func (mr *MockCloudWatchAPIMockRecorder) ListManagedInsightRulesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedInsightRulesWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).ListManagedInsightRulesWithContext), varargs...)
+}
+
 // ListMetricStreams mocks base method
 func (m *MockCloudWatchAPI) ListMetricStreams(arg0 *cloudwatch.ListMetricStreamsInput) (*cloudwatch.ListMetricStreamsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1664,6 +1780,56 @@ func (mr *MockCloudWatchAPIMockRecorder) PutInsightRuleWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInsightRuleWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).PutInsightRuleWithContext), varargs...)
+}
+
+// PutManagedInsightRules mocks base method
+func (m *MockCloudWatchAPI) PutManagedInsightRules(arg0 *cloudwatch.PutManagedInsightRulesInput) (*cloudwatch.PutManagedInsightRulesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutManagedInsightRules", arg0)
+	ret0, _ := ret[0].(*cloudwatch.PutManagedInsightRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutManagedInsightRules indicates an expected call of PutManagedInsightRules
+func (mr *MockCloudWatchAPIMockRecorder) PutManagedInsightRules(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutManagedInsightRules", reflect.TypeOf((*MockCloudWatchAPI)(nil).PutManagedInsightRules), arg0)
+}
+
+// PutManagedInsightRulesRequest mocks base method
+func (m *MockCloudWatchAPI) PutManagedInsightRulesRequest(arg0 *cloudwatch.PutManagedInsightRulesInput) (*request.Request, *cloudwatch.PutManagedInsightRulesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutManagedInsightRulesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatch.PutManagedInsightRulesOutput)
+	return ret0, ret1
+}
+
+// PutManagedInsightRulesRequest indicates an expected call of PutManagedInsightRulesRequest
+func (mr *MockCloudWatchAPIMockRecorder) PutManagedInsightRulesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutManagedInsightRulesRequest", reflect.TypeOf((*MockCloudWatchAPI)(nil).PutManagedInsightRulesRequest), arg0)
+}
+
+// PutManagedInsightRulesWithContext mocks base method
+func (m *MockCloudWatchAPI) PutManagedInsightRulesWithContext(arg0 context.Context, arg1 *cloudwatch.PutManagedInsightRulesInput, arg2 ...request.Option) (*cloudwatch.PutManagedInsightRulesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutManagedInsightRulesWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatch.PutManagedInsightRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutManagedInsightRulesWithContext indicates an expected call of PutManagedInsightRulesWithContext
+func (mr *MockCloudWatchAPIMockRecorder) PutManagedInsightRulesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutManagedInsightRulesWithContext", reflect.TypeOf((*MockCloudWatchAPI)(nil).PutManagedInsightRulesWithContext), varargs...)
 }
 
 // PutMetricAlarm mocks base method
