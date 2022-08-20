@@ -768,6 +768,56 @@ func (mr *MockLookoutMetricsAPIMockRecorder) GetAnomalyGroupWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnomalyGroupWithContext", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).GetAnomalyGroupWithContext), varargs...)
 }
 
+// GetDataQualityMetrics mocks base method
+func (m *MockLookoutMetricsAPI) GetDataQualityMetrics(arg0 *lookoutmetrics.GetDataQualityMetricsInput) (*lookoutmetrics.GetDataQualityMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataQualityMetrics", arg0)
+	ret0, _ := ret[0].(*lookoutmetrics.GetDataQualityMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataQualityMetrics indicates an expected call of GetDataQualityMetrics
+func (mr *MockLookoutMetricsAPIMockRecorder) GetDataQualityMetrics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityMetrics", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).GetDataQualityMetrics), arg0)
+}
+
+// GetDataQualityMetricsRequest mocks base method
+func (m *MockLookoutMetricsAPI) GetDataQualityMetricsRequest(arg0 *lookoutmetrics.GetDataQualityMetricsInput) (*request.Request, *lookoutmetrics.GetDataQualityMetricsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataQualityMetricsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutmetrics.GetDataQualityMetricsOutput)
+	return ret0, ret1
+}
+
+// GetDataQualityMetricsRequest indicates an expected call of GetDataQualityMetricsRequest
+func (mr *MockLookoutMetricsAPIMockRecorder) GetDataQualityMetricsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityMetricsRequest", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).GetDataQualityMetricsRequest), arg0)
+}
+
+// GetDataQualityMetricsWithContext mocks base method
+func (m *MockLookoutMetricsAPI) GetDataQualityMetricsWithContext(arg0 context.Context, arg1 *lookoutmetrics.GetDataQualityMetricsInput, arg2 ...request.Option) (*lookoutmetrics.GetDataQualityMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDataQualityMetricsWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutmetrics.GetDataQualityMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataQualityMetricsWithContext indicates an expected call of GetDataQualityMetricsWithContext
+func (mr *MockLookoutMetricsAPIMockRecorder) GetDataQualityMetricsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityMetricsWithContext", reflect.TypeOf((*MockLookoutMetricsAPI)(nil).GetDataQualityMetricsWithContext), varargs...)
+}
+
 // GetFeedback mocks base method
 func (m *MockLookoutMetricsAPI) GetFeedback(arg0 *lookoutmetrics.GetFeedbackInput) (*lookoutmetrics.GetFeedbackOutput, error) {
 	m.ctrl.T.Helper()

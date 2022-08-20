@@ -6324,6 +6324,89 @@ func (mr *MockConnectAPIMockRecorder) SearchAvailablePhoneNumbersWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAvailablePhoneNumbersWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchAvailablePhoneNumbersWithContext), varargs...)
 }
 
+// SearchSecurityProfiles mocks base method
+func (m *MockConnectAPI) SearchSecurityProfiles(arg0 *connect.SearchSecurityProfilesInput) (*connect.SearchSecurityProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchSecurityProfiles", arg0)
+	ret0, _ := ret[0].(*connect.SearchSecurityProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchSecurityProfiles indicates an expected call of SearchSecurityProfiles
+func (mr *MockConnectAPIMockRecorder) SearchSecurityProfiles(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchSecurityProfiles", reflect.TypeOf((*MockConnectAPI)(nil).SearchSecurityProfiles), arg0)
+}
+
+// SearchSecurityProfilesPages mocks base method
+func (m *MockConnectAPI) SearchSecurityProfilesPages(arg0 *connect.SearchSecurityProfilesInput, arg1 func(*connect.SearchSecurityProfilesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchSecurityProfilesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchSecurityProfilesPages indicates an expected call of SearchSecurityProfilesPages
+func (mr *MockConnectAPIMockRecorder) SearchSecurityProfilesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchSecurityProfilesPages", reflect.TypeOf((*MockConnectAPI)(nil).SearchSecurityProfilesPages), arg0, arg1)
+}
+
+// SearchSecurityProfilesPagesWithContext mocks base method
+func (m *MockConnectAPI) SearchSecurityProfilesPagesWithContext(arg0 context.Context, arg1 *connect.SearchSecurityProfilesInput, arg2 func(*connect.SearchSecurityProfilesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchSecurityProfilesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchSecurityProfilesPagesWithContext indicates an expected call of SearchSecurityProfilesPagesWithContext
+func (mr *MockConnectAPIMockRecorder) SearchSecurityProfilesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchSecurityProfilesPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchSecurityProfilesPagesWithContext), varargs...)
+}
+
+// SearchSecurityProfilesRequest mocks base method
+func (m *MockConnectAPI) SearchSecurityProfilesRequest(arg0 *connect.SearchSecurityProfilesInput) (*request.Request, *connect.SearchSecurityProfilesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchSecurityProfilesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.SearchSecurityProfilesOutput)
+	return ret0, ret1
+}
+
+// SearchSecurityProfilesRequest indicates an expected call of SearchSecurityProfilesRequest
+func (mr *MockConnectAPIMockRecorder) SearchSecurityProfilesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchSecurityProfilesRequest", reflect.TypeOf((*MockConnectAPI)(nil).SearchSecurityProfilesRequest), arg0)
+}
+
+// SearchSecurityProfilesWithContext mocks base method
+func (m *MockConnectAPI) SearchSecurityProfilesWithContext(arg0 context.Context, arg1 *connect.SearchSecurityProfilesInput, arg2 ...request.Option) (*connect.SearchSecurityProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchSecurityProfilesWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.SearchSecurityProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchSecurityProfilesWithContext indicates an expected call of SearchSecurityProfilesWithContext
+func (mr *MockConnectAPIMockRecorder) SearchSecurityProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchSecurityProfilesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchSecurityProfilesWithContext), varargs...)
+}
+
 // SearchUsers mocks base method
 func (m *MockConnectAPI) SearchUsers(arg0 *connect.SearchUsersInput) (*connect.SearchUsersOutput, error) {
 	m.ctrl.T.Helper()
