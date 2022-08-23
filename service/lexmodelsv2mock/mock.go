@@ -3247,6 +3247,56 @@ func (mr *MockLexModelsV2APIMockRecorder) StartImportWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartImportWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).StartImportWithContext), varargs...)
 }
 
+// StopBotRecommendation mocks base method
+func (m *MockLexModelsV2API) StopBotRecommendation(arg0 *lexmodelsv2.StopBotRecommendationInput) (*lexmodelsv2.StopBotRecommendationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopBotRecommendation", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.StopBotRecommendationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopBotRecommendation indicates an expected call of StopBotRecommendation
+func (mr *MockLexModelsV2APIMockRecorder) StopBotRecommendation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopBotRecommendation", reflect.TypeOf((*MockLexModelsV2API)(nil).StopBotRecommendation), arg0)
+}
+
+// StopBotRecommendationRequest mocks base method
+func (m *MockLexModelsV2API) StopBotRecommendationRequest(arg0 *lexmodelsv2.StopBotRecommendationInput) (*request.Request, *lexmodelsv2.StopBotRecommendationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopBotRecommendationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.StopBotRecommendationOutput)
+	return ret0, ret1
+}
+
+// StopBotRecommendationRequest indicates an expected call of StopBotRecommendationRequest
+func (mr *MockLexModelsV2APIMockRecorder) StopBotRecommendationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopBotRecommendationRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).StopBotRecommendationRequest), arg0)
+}
+
+// StopBotRecommendationWithContext mocks base method
+func (m *MockLexModelsV2API) StopBotRecommendationWithContext(arg0 context.Context, arg1 *lexmodelsv2.StopBotRecommendationInput, arg2 ...request.Option) (*lexmodelsv2.StopBotRecommendationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopBotRecommendationWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.StopBotRecommendationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopBotRecommendationWithContext indicates an expected call of StopBotRecommendationWithContext
+func (mr *MockLexModelsV2APIMockRecorder) StopBotRecommendationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopBotRecommendationWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).StopBotRecommendationWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockLexModelsV2API) TagResource(arg0 *lexmodelsv2.TagResourceInput) (*lexmodelsv2.TagResourceOutput, error) {
 	m.ctrl.T.Helper()

@@ -585,6 +585,156 @@ func (mr *MockForecastServiceAPIMockRecorder) CreatePredictorWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePredictorWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreatePredictorWithContext), varargs...)
 }
 
+// CreateWhatIfAnalysis mocks base method
+func (m *MockForecastServiceAPI) CreateWhatIfAnalysis(arg0 *forecastservice.CreateWhatIfAnalysisInput) (*forecastservice.CreateWhatIfAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWhatIfAnalysis", arg0)
+	ret0, _ := ret[0].(*forecastservice.CreateWhatIfAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWhatIfAnalysis indicates an expected call of CreateWhatIfAnalysis
+func (mr *MockForecastServiceAPIMockRecorder) CreateWhatIfAnalysis(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWhatIfAnalysis", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateWhatIfAnalysis), arg0)
+}
+
+// CreateWhatIfAnalysisRequest mocks base method
+func (m *MockForecastServiceAPI) CreateWhatIfAnalysisRequest(arg0 *forecastservice.CreateWhatIfAnalysisInput) (*request.Request, *forecastservice.CreateWhatIfAnalysisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWhatIfAnalysisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.CreateWhatIfAnalysisOutput)
+	return ret0, ret1
+}
+
+// CreateWhatIfAnalysisRequest indicates an expected call of CreateWhatIfAnalysisRequest
+func (mr *MockForecastServiceAPIMockRecorder) CreateWhatIfAnalysisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWhatIfAnalysisRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateWhatIfAnalysisRequest), arg0)
+}
+
+// CreateWhatIfAnalysisWithContext mocks base method
+func (m *MockForecastServiceAPI) CreateWhatIfAnalysisWithContext(arg0 context.Context, arg1 *forecastservice.CreateWhatIfAnalysisInput, arg2 ...request.Option) (*forecastservice.CreateWhatIfAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWhatIfAnalysisWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.CreateWhatIfAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWhatIfAnalysisWithContext indicates an expected call of CreateWhatIfAnalysisWithContext
+func (mr *MockForecastServiceAPIMockRecorder) CreateWhatIfAnalysisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWhatIfAnalysisWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateWhatIfAnalysisWithContext), varargs...)
+}
+
+// CreateWhatIfForecast mocks base method
+func (m *MockForecastServiceAPI) CreateWhatIfForecast(arg0 *forecastservice.CreateWhatIfForecastInput) (*forecastservice.CreateWhatIfForecastOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWhatIfForecast", arg0)
+	ret0, _ := ret[0].(*forecastservice.CreateWhatIfForecastOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWhatIfForecast indicates an expected call of CreateWhatIfForecast
+func (mr *MockForecastServiceAPIMockRecorder) CreateWhatIfForecast(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWhatIfForecast", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateWhatIfForecast), arg0)
+}
+
+// CreateWhatIfForecastExport mocks base method
+func (m *MockForecastServiceAPI) CreateWhatIfForecastExport(arg0 *forecastservice.CreateWhatIfForecastExportInput) (*forecastservice.CreateWhatIfForecastExportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWhatIfForecastExport", arg0)
+	ret0, _ := ret[0].(*forecastservice.CreateWhatIfForecastExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWhatIfForecastExport indicates an expected call of CreateWhatIfForecastExport
+func (mr *MockForecastServiceAPIMockRecorder) CreateWhatIfForecastExport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWhatIfForecastExport", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateWhatIfForecastExport), arg0)
+}
+
+// CreateWhatIfForecastExportRequest mocks base method
+func (m *MockForecastServiceAPI) CreateWhatIfForecastExportRequest(arg0 *forecastservice.CreateWhatIfForecastExportInput) (*request.Request, *forecastservice.CreateWhatIfForecastExportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWhatIfForecastExportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.CreateWhatIfForecastExportOutput)
+	return ret0, ret1
+}
+
+// CreateWhatIfForecastExportRequest indicates an expected call of CreateWhatIfForecastExportRequest
+func (mr *MockForecastServiceAPIMockRecorder) CreateWhatIfForecastExportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWhatIfForecastExportRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateWhatIfForecastExportRequest), arg0)
+}
+
+// CreateWhatIfForecastExportWithContext mocks base method
+func (m *MockForecastServiceAPI) CreateWhatIfForecastExportWithContext(arg0 context.Context, arg1 *forecastservice.CreateWhatIfForecastExportInput, arg2 ...request.Option) (*forecastservice.CreateWhatIfForecastExportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWhatIfForecastExportWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.CreateWhatIfForecastExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWhatIfForecastExportWithContext indicates an expected call of CreateWhatIfForecastExportWithContext
+func (mr *MockForecastServiceAPIMockRecorder) CreateWhatIfForecastExportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWhatIfForecastExportWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateWhatIfForecastExportWithContext), varargs...)
+}
+
+// CreateWhatIfForecastRequest mocks base method
+func (m *MockForecastServiceAPI) CreateWhatIfForecastRequest(arg0 *forecastservice.CreateWhatIfForecastInput) (*request.Request, *forecastservice.CreateWhatIfForecastOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWhatIfForecastRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.CreateWhatIfForecastOutput)
+	return ret0, ret1
+}
+
+// CreateWhatIfForecastRequest indicates an expected call of CreateWhatIfForecastRequest
+func (mr *MockForecastServiceAPIMockRecorder) CreateWhatIfForecastRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWhatIfForecastRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateWhatIfForecastRequest), arg0)
+}
+
+// CreateWhatIfForecastWithContext mocks base method
+func (m *MockForecastServiceAPI) CreateWhatIfForecastWithContext(arg0 context.Context, arg1 *forecastservice.CreateWhatIfForecastInput, arg2 ...request.Option) (*forecastservice.CreateWhatIfForecastOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWhatIfForecastWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.CreateWhatIfForecastOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWhatIfForecastWithContext indicates an expected call of CreateWhatIfForecastWithContext
+func (mr *MockForecastServiceAPIMockRecorder) CreateWhatIfForecastWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWhatIfForecastWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).CreateWhatIfForecastWithContext), varargs...)
+}
+
 // DeleteDataset mocks base method
 func (m *MockForecastServiceAPI) DeleteDataset(arg0 *forecastservice.DeleteDatasetInput) (*forecastservice.DeleteDatasetOutput, error) {
 	m.ctrl.T.Helper()
@@ -1135,6 +1285,156 @@ func (mr *MockForecastServiceAPIMockRecorder) DeleteResourceTreeWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourceTreeWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteResourceTreeWithContext), varargs...)
 }
 
+// DeleteWhatIfAnalysis mocks base method
+func (m *MockForecastServiceAPI) DeleteWhatIfAnalysis(arg0 *forecastservice.DeleteWhatIfAnalysisInput) (*forecastservice.DeleteWhatIfAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWhatIfAnalysis", arg0)
+	ret0, _ := ret[0].(*forecastservice.DeleteWhatIfAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWhatIfAnalysis indicates an expected call of DeleteWhatIfAnalysis
+func (mr *MockForecastServiceAPIMockRecorder) DeleteWhatIfAnalysis(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWhatIfAnalysis", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteWhatIfAnalysis), arg0)
+}
+
+// DeleteWhatIfAnalysisRequest mocks base method
+func (m *MockForecastServiceAPI) DeleteWhatIfAnalysisRequest(arg0 *forecastservice.DeleteWhatIfAnalysisInput) (*request.Request, *forecastservice.DeleteWhatIfAnalysisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWhatIfAnalysisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DeleteWhatIfAnalysisOutput)
+	return ret0, ret1
+}
+
+// DeleteWhatIfAnalysisRequest indicates an expected call of DeleteWhatIfAnalysisRequest
+func (mr *MockForecastServiceAPIMockRecorder) DeleteWhatIfAnalysisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWhatIfAnalysisRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteWhatIfAnalysisRequest), arg0)
+}
+
+// DeleteWhatIfAnalysisWithContext mocks base method
+func (m *MockForecastServiceAPI) DeleteWhatIfAnalysisWithContext(arg0 context.Context, arg1 *forecastservice.DeleteWhatIfAnalysisInput, arg2 ...request.Option) (*forecastservice.DeleteWhatIfAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteWhatIfAnalysisWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DeleteWhatIfAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWhatIfAnalysisWithContext indicates an expected call of DeleteWhatIfAnalysisWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DeleteWhatIfAnalysisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWhatIfAnalysisWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteWhatIfAnalysisWithContext), varargs...)
+}
+
+// DeleteWhatIfForecast mocks base method
+func (m *MockForecastServiceAPI) DeleteWhatIfForecast(arg0 *forecastservice.DeleteWhatIfForecastInput) (*forecastservice.DeleteWhatIfForecastOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWhatIfForecast", arg0)
+	ret0, _ := ret[0].(*forecastservice.DeleteWhatIfForecastOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWhatIfForecast indicates an expected call of DeleteWhatIfForecast
+func (mr *MockForecastServiceAPIMockRecorder) DeleteWhatIfForecast(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWhatIfForecast", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteWhatIfForecast), arg0)
+}
+
+// DeleteWhatIfForecastExport mocks base method
+func (m *MockForecastServiceAPI) DeleteWhatIfForecastExport(arg0 *forecastservice.DeleteWhatIfForecastExportInput) (*forecastservice.DeleteWhatIfForecastExportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWhatIfForecastExport", arg0)
+	ret0, _ := ret[0].(*forecastservice.DeleteWhatIfForecastExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWhatIfForecastExport indicates an expected call of DeleteWhatIfForecastExport
+func (mr *MockForecastServiceAPIMockRecorder) DeleteWhatIfForecastExport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWhatIfForecastExport", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteWhatIfForecastExport), arg0)
+}
+
+// DeleteWhatIfForecastExportRequest mocks base method
+func (m *MockForecastServiceAPI) DeleteWhatIfForecastExportRequest(arg0 *forecastservice.DeleteWhatIfForecastExportInput) (*request.Request, *forecastservice.DeleteWhatIfForecastExportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWhatIfForecastExportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DeleteWhatIfForecastExportOutput)
+	return ret0, ret1
+}
+
+// DeleteWhatIfForecastExportRequest indicates an expected call of DeleteWhatIfForecastExportRequest
+func (mr *MockForecastServiceAPIMockRecorder) DeleteWhatIfForecastExportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWhatIfForecastExportRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteWhatIfForecastExportRequest), arg0)
+}
+
+// DeleteWhatIfForecastExportWithContext mocks base method
+func (m *MockForecastServiceAPI) DeleteWhatIfForecastExportWithContext(arg0 context.Context, arg1 *forecastservice.DeleteWhatIfForecastExportInput, arg2 ...request.Option) (*forecastservice.DeleteWhatIfForecastExportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteWhatIfForecastExportWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DeleteWhatIfForecastExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWhatIfForecastExportWithContext indicates an expected call of DeleteWhatIfForecastExportWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DeleteWhatIfForecastExportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWhatIfForecastExportWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteWhatIfForecastExportWithContext), varargs...)
+}
+
+// DeleteWhatIfForecastRequest mocks base method
+func (m *MockForecastServiceAPI) DeleteWhatIfForecastRequest(arg0 *forecastservice.DeleteWhatIfForecastInput) (*request.Request, *forecastservice.DeleteWhatIfForecastOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWhatIfForecastRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DeleteWhatIfForecastOutput)
+	return ret0, ret1
+}
+
+// DeleteWhatIfForecastRequest indicates an expected call of DeleteWhatIfForecastRequest
+func (mr *MockForecastServiceAPIMockRecorder) DeleteWhatIfForecastRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWhatIfForecastRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteWhatIfForecastRequest), arg0)
+}
+
+// DeleteWhatIfForecastWithContext mocks base method
+func (m *MockForecastServiceAPI) DeleteWhatIfForecastWithContext(arg0 context.Context, arg1 *forecastservice.DeleteWhatIfForecastInput, arg2 ...request.Option) (*forecastservice.DeleteWhatIfForecastOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteWhatIfForecastWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DeleteWhatIfForecastOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWhatIfForecastWithContext indicates an expected call of DeleteWhatIfForecastWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DeleteWhatIfForecastWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWhatIfForecastWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DeleteWhatIfForecastWithContext), varargs...)
+}
+
 // DescribeAutoPredictor mocks base method
 func (m *MockForecastServiceAPI) DescribeAutoPredictor(arg0 *forecastservice.DescribeAutoPredictorInput) (*forecastservice.DescribeAutoPredictorOutput, error) {
 	m.ctrl.T.Helper()
@@ -1683,6 +1983,156 @@ func (mr *MockForecastServiceAPIMockRecorder) DescribePredictorWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribePredictorWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribePredictorWithContext), varargs...)
+}
+
+// DescribeWhatIfAnalysis mocks base method
+func (m *MockForecastServiceAPI) DescribeWhatIfAnalysis(arg0 *forecastservice.DescribeWhatIfAnalysisInput) (*forecastservice.DescribeWhatIfAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWhatIfAnalysis", arg0)
+	ret0, _ := ret[0].(*forecastservice.DescribeWhatIfAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWhatIfAnalysis indicates an expected call of DescribeWhatIfAnalysis
+func (mr *MockForecastServiceAPIMockRecorder) DescribeWhatIfAnalysis(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWhatIfAnalysis", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeWhatIfAnalysis), arg0)
+}
+
+// DescribeWhatIfAnalysisRequest mocks base method
+func (m *MockForecastServiceAPI) DescribeWhatIfAnalysisRequest(arg0 *forecastservice.DescribeWhatIfAnalysisInput) (*request.Request, *forecastservice.DescribeWhatIfAnalysisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWhatIfAnalysisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DescribeWhatIfAnalysisOutput)
+	return ret0, ret1
+}
+
+// DescribeWhatIfAnalysisRequest indicates an expected call of DescribeWhatIfAnalysisRequest
+func (mr *MockForecastServiceAPIMockRecorder) DescribeWhatIfAnalysisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWhatIfAnalysisRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeWhatIfAnalysisRequest), arg0)
+}
+
+// DescribeWhatIfAnalysisWithContext mocks base method
+func (m *MockForecastServiceAPI) DescribeWhatIfAnalysisWithContext(arg0 context.Context, arg1 *forecastservice.DescribeWhatIfAnalysisInput, arg2 ...request.Option) (*forecastservice.DescribeWhatIfAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWhatIfAnalysisWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DescribeWhatIfAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWhatIfAnalysisWithContext indicates an expected call of DescribeWhatIfAnalysisWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DescribeWhatIfAnalysisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWhatIfAnalysisWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeWhatIfAnalysisWithContext), varargs...)
+}
+
+// DescribeWhatIfForecast mocks base method
+func (m *MockForecastServiceAPI) DescribeWhatIfForecast(arg0 *forecastservice.DescribeWhatIfForecastInput) (*forecastservice.DescribeWhatIfForecastOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWhatIfForecast", arg0)
+	ret0, _ := ret[0].(*forecastservice.DescribeWhatIfForecastOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWhatIfForecast indicates an expected call of DescribeWhatIfForecast
+func (mr *MockForecastServiceAPIMockRecorder) DescribeWhatIfForecast(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWhatIfForecast", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeWhatIfForecast), arg0)
+}
+
+// DescribeWhatIfForecastExport mocks base method
+func (m *MockForecastServiceAPI) DescribeWhatIfForecastExport(arg0 *forecastservice.DescribeWhatIfForecastExportInput) (*forecastservice.DescribeWhatIfForecastExportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWhatIfForecastExport", arg0)
+	ret0, _ := ret[0].(*forecastservice.DescribeWhatIfForecastExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWhatIfForecastExport indicates an expected call of DescribeWhatIfForecastExport
+func (mr *MockForecastServiceAPIMockRecorder) DescribeWhatIfForecastExport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWhatIfForecastExport", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeWhatIfForecastExport), arg0)
+}
+
+// DescribeWhatIfForecastExportRequest mocks base method
+func (m *MockForecastServiceAPI) DescribeWhatIfForecastExportRequest(arg0 *forecastservice.DescribeWhatIfForecastExportInput) (*request.Request, *forecastservice.DescribeWhatIfForecastExportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWhatIfForecastExportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DescribeWhatIfForecastExportOutput)
+	return ret0, ret1
+}
+
+// DescribeWhatIfForecastExportRequest indicates an expected call of DescribeWhatIfForecastExportRequest
+func (mr *MockForecastServiceAPIMockRecorder) DescribeWhatIfForecastExportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWhatIfForecastExportRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeWhatIfForecastExportRequest), arg0)
+}
+
+// DescribeWhatIfForecastExportWithContext mocks base method
+func (m *MockForecastServiceAPI) DescribeWhatIfForecastExportWithContext(arg0 context.Context, arg1 *forecastservice.DescribeWhatIfForecastExportInput, arg2 ...request.Option) (*forecastservice.DescribeWhatIfForecastExportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWhatIfForecastExportWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DescribeWhatIfForecastExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWhatIfForecastExportWithContext indicates an expected call of DescribeWhatIfForecastExportWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DescribeWhatIfForecastExportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWhatIfForecastExportWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeWhatIfForecastExportWithContext), varargs...)
+}
+
+// DescribeWhatIfForecastRequest mocks base method
+func (m *MockForecastServiceAPI) DescribeWhatIfForecastRequest(arg0 *forecastservice.DescribeWhatIfForecastInput) (*request.Request, *forecastservice.DescribeWhatIfForecastOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWhatIfForecastRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.DescribeWhatIfForecastOutput)
+	return ret0, ret1
+}
+
+// DescribeWhatIfForecastRequest indicates an expected call of DescribeWhatIfForecastRequest
+func (mr *MockForecastServiceAPIMockRecorder) DescribeWhatIfForecastRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWhatIfForecastRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeWhatIfForecastRequest), arg0)
+}
+
+// DescribeWhatIfForecastWithContext mocks base method
+func (m *MockForecastServiceAPI) DescribeWhatIfForecastWithContext(arg0 context.Context, arg1 *forecastservice.DescribeWhatIfForecastInput, arg2 ...request.Option) (*forecastservice.DescribeWhatIfForecastOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWhatIfForecastWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.DescribeWhatIfForecastOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWhatIfForecastWithContext indicates an expected call of DescribeWhatIfForecastWithContext
+func (mr *MockForecastServiceAPIMockRecorder) DescribeWhatIfForecastWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWhatIfForecastWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).DescribeWhatIfForecastWithContext), varargs...)
 }
 
 // GetAccuracyMetrics mocks base method
@@ -2696,6 +3146,255 @@ func (mr *MockForecastServiceAPIMockRecorder) ListTagsForResourceWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// ListWhatIfAnalyses mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfAnalyses(arg0 *forecastservice.ListWhatIfAnalysesInput) (*forecastservice.ListWhatIfAnalysesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWhatIfAnalyses", arg0)
+	ret0, _ := ret[0].(*forecastservice.ListWhatIfAnalysesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWhatIfAnalyses indicates an expected call of ListWhatIfAnalyses
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfAnalyses(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfAnalyses", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfAnalyses), arg0)
+}
+
+// ListWhatIfAnalysesPages mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfAnalysesPages(arg0 *forecastservice.ListWhatIfAnalysesInput, arg1 func(*forecastservice.ListWhatIfAnalysesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWhatIfAnalysesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWhatIfAnalysesPages indicates an expected call of ListWhatIfAnalysesPages
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfAnalysesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfAnalysesPages", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfAnalysesPages), arg0, arg1)
+}
+
+// ListWhatIfAnalysesPagesWithContext mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfAnalysesPagesWithContext(arg0 context.Context, arg1 *forecastservice.ListWhatIfAnalysesInput, arg2 func(*forecastservice.ListWhatIfAnalysesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWhatIfAnalysesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWhatIfAnalysesPagesWithContext indicates an expected call of ListWhatIfAnalysesPagesWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfAnalysesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfAnalysesPagesWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfAnalysesPagesWithContext), varargs...)
+}
+
+// ListWhatIfAnalysesRequest mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfAnalysesRequest(arg0 *forecastservice.ListWhatIfAnalysesInput) (*request.Request, *forecastservice.ListWhatIfAnalysesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWhatIfAnalysesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.ListWhatIfAnalysesOutput)
+	return ret0, ret1
+}
+
+// ListWhatIfAnalysesRequest indicates an expected call of ListWhatIfAnalysesRequest
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfAnalysesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfAnalysesRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfAnalysesRequest), arg0)
+}
+
+// ListWhatIfAnalysesWithContext mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfAnalysesWithContext(arg0 context.Context, arg1 *forecastservice.ListWhatIfAnalysesInput, arg2 ...request.Option) (*forecastservice.ListWhatIfAnalysesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWhatIfAnalysesWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.ListWhatIfAnalysesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWhatIfAnalysesWithContext indicates an expected call of ListWhatIfAnalysesWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfAnalysesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfAnalysesWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfAnalysesWithContext), varargs...)
+}
+
+// ListWhatIfForecastExports mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfForecastExports(arg0 *forecastservice.ListWhatIfForecastExportsInput) (*forecastservice.ListWhatIfForecastExportsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWhatIfForecastExports", arg0)
+	ret0, _ := ret[0].(*forecastservice.ListWhatIfForecastExportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWhatIfForecastExports indicates an expected call of ListWhatIfForecastExports
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfForecastExports(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfForecastExports", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfForecastExports), arg0)
+}
+
+// ListWhatIfForecastExportsPages mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfForecastExportsPages(arg0 *forecastservice.ListWhatIfForecastExportsInput, arg1 func(*forecastservice.ListWhatIfForecastExportsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWhatIfForecastExportsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWhatIfForecastExportsPages indicates an expected call of ListWhatIfForecastExportsPages
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfForecastExportsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfForecastExportsPages", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfForecastExportsPages), arg0, arg1)
+}
+
+// ListWhatIfForecastExportsPagesWithContext mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfForecastExportsPagesWithContext(arg0 context.Context, arg1 *forecastservice.ListWhatIfForecastExportsInput, arg2 func(*forecastservice.ListWhatIfForecastExportsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWhatIfForecastExportsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWhatIfForecastExportsPagesWithContext indicates an expected call of ListWhatIfForecastExportsPagesWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfForecastExportsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfForecastExportsPagesWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfForecastExportsPagesWithContext), varargs...)
+}
+
+// ListWhatIfForecastExportsRequest mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfForecastExportsRequest(arg0 *forecastservice.ListWhatIfForecastExportsInput) (*request.Request, *forecastservice.ListWhatIfForecastExportsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWhatIfForecastExportsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.ListWhatIfForecastExportsOutput)
+	return ret0, ret1
+}
+
+// ListWhatIfForecastExportsRequest indicates an expected call of ListWhatIfForecastExportsRequest
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfForecastExportsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfForecastExportsRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfForecastExportsRequest), arg0)
+}
+
+// ListWhatIfForecastExportsWithContext mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfForecastExportsWithContext(arg0 context.Context, arg1 *forecastservice.ListWhatIfForecastExportsInput, arg2 ...request.Option) (*forecastservice.ListWhatIfForecastExportsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWhatIfForecastExportsWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.ListWhatIfForecastExportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWhatIfForecastExportsWithContext indicates an expected call of ListWhatIfForecastExportsWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfForecastExportsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfForecastExportsWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfForecastExportsWithContext), varargs...)
+}
+
+// ListWhatIfForecasts mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfForecasts(arg0 *forecastservice.ListWhatIfForecastsInput) (*forecastservice.ListWhatIfForecastsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWhatIfForecasts", arg0)
+	ret0, _ := ret[0].(*forecastservice.ListWhatIfForecastsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWhatIfForecasts indicates an expected call of ListWhatIfForecasts
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfForecasts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfForecasts", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfForecasts), arg0)
+}
+
+// ListWhatIfForecastsPages mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfForecastsPages(arg0 *forecastservice.ListWhatIfForecastsInput, arg1 func(*forecastservice.ListWhatIfForecastsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWhatIfForecastsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWhatIfForecastsPages indicates an expected call of ListWhatIfForecastsPages
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfForecastsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfForecastsPages", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfForecastsPages), arg0, arg1)
+}
+
+// ListWhatIfForecastsPagesWithContext mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfForecastsPagesWithContext(arg0 context.Context, arg1 *forecastservice.ListWhatIfForecastsInput, arg2 func(*forecastservice.ListWhatIfForecastsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWhatIfForecastsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWhatIfForecastsPagesWithContext indicates an expected call of ListWhatIfForecastsPagesWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfForecastsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfForecastsPagesWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfForecastsPagesWithContext), varargs...)
+}
+
+// ListWhatIfForecastsRequest mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfForecastsRequest(arg0 *forecastservice.ListWhatIfForecastsInput) (*request.Request, *forecastservice.ListWhatIfForecastsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWhatIfForecastsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastservice.ListWhatIfForecastsOutput)
+	return ret0, ret1
+}
+
+// ListWhatIfForecastsRequest indicates an expected call of ListWhatIfForecastsRequest
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfForecastsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfForecastsRequest", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfForecastsRequest), arg0)
+}
+
+// ListWhatIfForecastsWithContext mocks base method
+func (m *MockForecastServiceAPI) ListWhatIfForecastsWithContext(arg0 context.Context, arg1 *forecastservice.ListWhatIfForecastsInput, arg2 ...request.Option) (*forecastservice.ListWhatIfForecastsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWhatIfForecastsWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastservice.ListWhatIfForecastsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWhatIfForecastsWithContext indicates an expected call of ListWhatIfForecastsWithContext
+func (mr *MockForecastServiceAPIMockRecorder) ListWhatIfForecastsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWhatIfForecastsWithContext", reflect.TypeOf((*MockForecastServiceAPI)(nil).ListWhatIfForecastsWithContext), varargs...)
 }
 
 // ResumeResource mocks base method

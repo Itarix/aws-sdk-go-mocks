@@ -84,3 +84,53 @@ func (mr *MockForecastQueryServiceAPIMockRecorder) QueryForecastWithContext(arg0
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "QueryForecastWithContext", reflect.TypeOf((*MockForecastQueryServiceAPI)(nil).QueryForecastWithContext), varargs...)
 }
+
+// QueryWhatIfForecast mocks base method
+func (m *MockForecastQueryServiceAPI) QueryWhatIfForecast(arg0 *forecastqueryservice.QueryWhatIfForecastInput) (*forecastqueryservice.QueryWhatIfForecastOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "QueryWhatIfForecast", arg0)
+	ret0, _ := ret[0].(*forecastqueryservice.QueryWhatIfForecastOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// QueryWhatIfForecast indicates an expected call of QueryWhatIfForecast
+func (mr *MockForecastQueryServiceAPIMockRecorder) QueryWhatIfForecast(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "QueryWhatIfForecast", reflect.TypeOf((*MockForecastQueryServiceAPI)(nil).QueryWhatIfForecast), arg0)
+}
+
+// QueryWhatIfForecastRequest mocks base method
+func (m *MockForecastQueryServiceAPI) QueryWhatIfForecastRequest(arg0 *forecastqueryservice.QueryWhatIfForecastInput) (*request.Request, *forecastqueryservice.QueryWhatIfForecastOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "QueryWhatIfForecastRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*forecastqueryservice.QueryWhatIfForecastOutput)
+	return ret0, ret1
+}
+
+// QueryWhatIfForecastRequest indicates an expected call of QueryWhatIfForecastRequest
+func (mr *MockForecastQueryServiceAPIMockRecorder) QueryWhatIfForecastRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "QueryWhatIfForecastRequest", reflect.TypeOf((*MockForecastQueryServiceAPI)(nil).QueryWhatIfForecastRequest), arg0)
+}
+
+// QueryWhatIfForecastWithContext mocks base method
+func (m *MockForecastQueryServiceAPI) QueryWhatIfForecastWithContext(arg0 context.Context, arg1 *forecastqueryservice.QueryWhatIfForecastInput, arg2 ...request.Option) (*forecastqueryservice.QueryWhatIfForecastOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "QueryWhatIfForecastWithContext", varargs...)
+	ret0, _ := ret[0].(*forecastqueryservice.QueryWhatIfForecastOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// QueryWhatIfForecastWithContext indicates an expected call of QueryWhatIfForecastWithContext
+func (mr *MockForecastQueryServiceAPIMockRecorder) QueryWhatIfForecastWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "QueryWhatIfForecastWithContext", reflect.TypeOf((*MockForecastQueryServiceAPI)(nil).QueryWhatIfForecastWithContext), varargs...)
+}
