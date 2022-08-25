@@ -585,6 +585,56 @@ func (mr *MockCloudFrontAPIMockRecorder) CreateMonitoringSubscriptionWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMonitoringSubscriptionWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateMonitoringSubscriptionWithContext), varargs...)
 }
 
+// CreateOriginAccessControl mocks base method
+func (m *MockCloudFrontAPI) CreateOriginAccessControl(arg0 *cloudfront.CreateOriginAccessControlInput) (*cloudfront.CreateOriginAccessControlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateOriginAccessControl", arg0)
+	ret0, _ := ret[0].(*cloudfront.CreateOriginAccessControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateOriginAccessControl indicates an expected call of CreateOriginAccessControl
+func (mr *MockCloudFrontAPIMockRecorder) CreateOriginAccessControl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateOriginAccessControl", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateOriginAccessControl), arg0)
+}
+
+// CreateOriginAccessControlRequest mocks base method
+func (m *MockCloudFrontAPI) CreateOriginAccessControlRequest(arg0 *cloudfront.CreateOriginAccessControlInput) (*request.Request, *cloudfront.CreateOriginAccessControlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateOriginAccessControlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.CreateOriginAccessControlOutput)
+	return ret0, ret1
+}
+
+// CreateOriginAccessControlRequest indicates an expected call of CreateOriginAccessControlRequest
+func (mr *MockCloudFrontAPIMockRecorder) CreateOriginAccessControlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateOriginAccessControlRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateOriginAccessControlRequest), arg0)
+}
+
+// CreateOriginAccessControlWithContext mocks base method
+func (m *MockCloudFrontAPI) CreateOriginAccessControlWithContext(arg0 context.Context, arg1 *cloudfront.CreateOriginAccessControlInput, arg2 ...request.Option) (*cloudfront.CreateOriginAccessControlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateOriginAccessControlWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.CreateOriginAccessControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateOriginAccessControlWithContext indicates an expected call of CreateOriginAccessControlWithContext
+func (mr *MockCloudFrontAPIMockRecorder) CreateOriginAccessControlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateOriginAccessControlWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).CreateOriginAccessControlWithContext), varargs...)
+}
+
 // CreateOriginRequestPolicy mocks base method
 func (m *MockCloudFrontAPI) CreateOriginRequestPolicy(arg0 *cloudfront.CreateOriginRequestPolicyInput) (*cloudfront.CreateOriginRequestPolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -1283,6 +1333,56 @@ func (mr *MockCloudFrontAPIMockRecorder) DeleteMonitoringSubscriptionWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMonitoringSubscriptionWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteMonitoringSubscriptionWithContext), varargs...)
+}
+
+// DeleteOriginAccessControl mocks base method
+func (m *MockCloudFrontAPI) DeleteOriginAccessControl(arg0 *cloudfront.DeleteOriginAccessControlInput) (*cloudfront.DeleteOriginAccessControlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteOriginAccessControl", arg0)
+	ret0, _ := ret[0].(*cloudfront.DeleteOriginAccessControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteOriginAccessControl indicates an expected call of DeleteOriginAccessControl
+func (mr *MockCloudFrontAPIMockRecorder) DeleteOriginAccessControl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOriginAccessControl", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteOriginAccessControl), arg0)
+}
+
+// DeleteOriginAccessControlRequest mocks base method
+func (m *MockCloudFrontAPI) DeleteOriginAccessControlRequest(arg0 *cloudfront.DeleteOriginAccessControlInput) (*request.Request, *cloudfront.DeleteOriginAccessControlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteOriginAccessControlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.DeleteOriginAccessControlOutput)
+	return ret0, ret1
+}
+
+// DeleteOriginAccessControlRequest indicates an expected call of DeleteOriginAccessControlRequest
+func (mr *MockCloudFrontAPIMockRecorder) DeleteOriginAccessControlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOriginAccessControlRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteOriginAccessControlRequest), arg0)
+}
+
+// DeleteOriginAccessControlWithContext mocks base method
+func (m *MockCloudFrontAPI) DeleteOriginAccessControlWithContext(arg0 context.Context, arg1 *cloudfront.DeleteOriginAccessControlInput, arg2 ...request.Option) (*cloudfront.DeleteOriginAccessControlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteOriginAccessControlWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.DeleteOriginAccessControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteOriginAccessControlWithContext indicates an expected call of DeleteOriginAccessControlWithContext
+func (mr *MockCloudFrontAPIMockRecorder) DeleteOriginAccessControlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOriginAccessControlWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).DeleteOriginAccessControlWithContext), varargs...)
 }
 
 // DeleteOriginRequestPolicy mocks base method
@@ -2333,6 +2433,106 @@ func (mr *MockCloudFrontAPIMockRecorder) GetMonitoringSubscriptionWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMonitoringSubscriptionWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetMonitoringSubscriptionWithContext), varargs...)
+}
+
+// GetOriginAccessControl mocks base method
+func (m *MockCloudFrontAPI) GetOriginAccessControl(arg0 *cloudfront.GetOriginAccessControlInput) (*cloudfront.GetOriginAccessControlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetOriginAccessControl", arg0)
+	ret0, _ := ret[0].(*cloudfront.GetOriginAccessControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetOriginAccessControl indicates an expected call of GetOriginAccessControl
+func (mr *MockCloudFrontAPIMockRecorder) GetOriginAccessControl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOriginAccessControl", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetOriginAccessControl), arg0)
+}
+
+// GetOriginAccessControlConfig mocks base method
+func (m *MockCloudFrontAPI) GetOriginAccessControlConfig(arg0 *cloudfront.GetOriginAccessControlConfigInput) (*cloudfront.GetOriginAccessControlConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetOriginAccessControlConfig", arg0)
+	ret0, _ := ret[0].(*cloudfront.GetOriginAccessControlConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetOriginAccessControlConfig indicates an expected call of GetOriginAccessControlConfig
+func (mr *MockCloudFrontAPIMockRecorder) GetOriginAccessControlConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOriginAccessControlConfig", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetOriginAccessControlConfig), arg0)
+}
+
+// GetOriginAccessControlConfigRequest mocks base method
+func (m *MockCloudFrontAPI) GetOriginAccessControlConfigRequest(arg0 *cloudfront.GetOriginAccessControlConfigInput) (*request.Request, *cloudfront.GetOriginAccessControlConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetOriginAccessControlConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.GetOriginAccessControlConfigOutput)
+	return ret0, ret1
+}
+
+// GetOriginAccessControlConfigRequest indicates an expected call of GetOriginAccessControlConfigRequest
+func (mr *MockCloudFrontAPIMockRecorder) GetOriginAccessControlConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOriginAccessControlConfigRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetOriginAccessControlConfigRequest), arg0)
+}
+
+// GetOriginAccessControlConfigWithContext mocks base method
+func (m *MockCloudFrontAPI) GetOriginAccessControlConfigWithContext(arg0 context.Context, arg1 *cloudfront.GetOriginAccessControlConfigInput, arg2 ...request.Option) (*cloudfront.GetOriginAccessControlConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetOriginAccessControlConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.GetOriginAccessControlConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetOriginAccessControlConfigWithContext indicates an expected call of GetOriginAccessControlConfigWithContext
+func (mr *MockCloudFrontAPIMockRecorder) GetOriginAccessControlConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOriginAccessControlConfigWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetOriginAccessControlConfigWithContext), varargs...)
+}
+
+// GetOriginAccessControlRequest mocks base method
+func (m *MockCloudFrontAPI) GetOriginAccessControlRequest(arg0 *cloudfront.GetOriginAccessControlInput) (*request.Request, *cloudfront.GetOriginAccessControlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetOriginAccessControlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.GetOriginAccessControlOutput)
+	return ret0, ret1
+}
+
+// GetOriginAccessControlRequest indicates an expected call of GetOriginAccessControlRequest
+func (mr *MockCloudFrontAPIMockRecorder) GetOriginAccessControlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOriginAccessControlRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetOriginAccessControlRequest), arg0)
+}
+
+// GetOriginAccessControlWithContext mocks base method
+func (m *MockCloudFrontAPI) GetOriginAccessControlWithContext(arg0 context.Context, arg1 *cloudfront.GetOriginAccessControlInput, arg2 ...request.Option) (*cloudfront.GetOriginAccessControlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetOriginAccessControlWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.GetOriginAccessControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetOriginAccessControlWithContext indicates an expected call of GetOriginAccessControlWithContext
+func (mr *MockCloudFrontAPIMockRecorder) GetOriginAccessControlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetOriginAccessControlWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).GetOriginAccessControlWithContext), varargs...)
 }
 
 // GetOriginRequestPolicy mocks base method
@@ -3634,6 +3834,56 @@ func (mr *MockCloudFrontAPIMockRecorder) ListKeyGroupsWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKeyGroupsWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListKeyGroupsWithContext), varargs...)
 }
 
+// ListOriginAccessControls mocks base method
+func (m *MockCloudFrontAPI) ListOriginAccessControls(arg0 *cloudfront.ListOriginAccessControlsInput) (*cloudfront.ListOriginAccessControlsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOriginAccessControls", arg0)
+	ret0, _ := ret[0].(*cloudfront.ListOriginAccessControlsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOriginAccessControls indicates an expected call of ListOriginAccessControls
+func (mr *MockCloudFrontAPIMockRecorder) ListOriginAccessControls(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOriginAccessControls", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListOriginAccessControls), arg0)
+}
+
+// ListOriginAccessControlsRequest mocks base method
+func (m *MockCloudFrontAPI) ListOriginAccessControlsRequest(arg0 *cloudfront.ListOriginAccessControlsInput) (*request.Request, *cloudfront.ListOriginAccessControlsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOriginAccessControlsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.ListOriginAccessControlsOutput)
+	return ret0, ret1
+}
+
+// ListOriginAccessControlsRequest indicates an expected call of ListOriginAccessControlsRequest
+func (mr *MockCloudFrontAPIMockRecorder) ListOriginAccessControlsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOriginAccessControlsRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListOriginAccessControlsRequest), arg0)
+}
+
+// ListOriginAccessControlsWithContext mocks base method
+func (m *MockCloudFrontAPI) ListOriginAccessControlsWithContext(arg0 context.Context, arg1 *cloudfront.ListOriginAccessControlsInput, arg2 ...request.Option) (*cloudfront.ListOriginAccessControlsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOriginAccessControlsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.ListOriginAccessControlsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOriginAccessControlsWithContext indicates an expected call of ListOriginAccessControlsWithContext
+func (mr *MockCloudFrontAPIMockRecorder) ListOriginAccessControlsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOriginAccessControlsWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).ListOriginAccessControlsWithContext), varargs...)
+}
+
 // ListOriginRequestPolicies mocks base method
 func (m *MockCloudFrontAPI) ListOriginRequestPolicies(arg0 *cloudfront.ListOriginRequestPoliciesInput) (*cloudfront.ListOriginRequestPoliciesOutput, error) {
 	m.ctrl.T.Helper()
@@ -4515,6 +4765,56 @@ func (mr *MockCloudFrontAPIMockRecorder) UpdateKeyGroupWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateKeyGroupWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateKeyGroupWithContext), varargs...)
+}
+
+// UpdateOriginAccessControl mocks base method
+func (m *MockCloudFrontAPI) UpdateOriginAccessControl(arg0 *cloudfront.UpdateOriginAccessControlInput) (*cloudfront.UpdateOriginAccessControlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateOriginAccessControl", arg0)
+	ret0, _ := ret[0].(*cloudfront.UpdateOriginAccessControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateOriginAccessControl indicates an expected call of UpdateOriginAccessControl
+func (mr *MockCloudFrontAPIMockRecorder) UpdateOriginAccessControl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOriginAccessControl", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateOriginAccessControl), arg0)
+}
+
+// UpdateOriginAccessControlRequest mocks base method
+func (m *MockCloudFrontAPI) UpdateOriginAccessControlRequest(arg0 *cloudfront.UpdateOriginAccessControlInput) (*request.Request, *cloudfront.UpdateOriginAccessControlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateOriginAccessControlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.UpdateOriginAccessControlOutput)
+	return ret0, ret1
+}
+
+// UpdateOriginAccessControlRequest indicates an expected call of UpdateOriginAccessControlRequest
+func (mr *MockCloudFrontAPIMockRecorder) UpdateOriginAccessControlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOriginAccessControlRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateOriginAccessControlRequest), arg0)
+}
+
+// UpdateOriginAccessControlWithContext mocks base method
+func (m *MockCloudFrontAPI) UpdateOriginAccessControlWithContext(arg0 context.Context, arg1 *cloudfront.UpdateOriginAccessControlInput, arg2 ...request.Option) (*cloudfront.UpdateOriginAccessControlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateOriginAccessControlWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.UpdateOriginAccessControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateOriginAccessControlWithContext indicates an expected call of UpdateOriginAccessControlWithContext
+func (mr *MockCloudFrontAPIMockRecorder) UpdateOriginAccessControlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOriginAccessControlWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateOriginAccessControlWithContext), varargs...)
 }
 
 // UpdateOriginRequestPolicy mocks base method
