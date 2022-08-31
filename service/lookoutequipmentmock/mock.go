@@ -135,6 +135,106 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) CreateInferenceSchedulerWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateInferenceSchedulerWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).CreateInferenceSchedulerWithContext), varargs...)
 }
 
+// CreateLabel mocks base method
+func (m *MockLookoutEquipmentAPI) CreateLabel(arg0 *lookoutequipment.CreateLabelInput) (*lookoutequipment.CreateLabelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLabel", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.CreateLabelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLabel indicates an expected call of CreateLabel
+func (mr *MockLookoutEquipmentAPIMockRecorder) CreateLabel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLabel", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).CreateLabel), arg0)
+}
+
+// CreateLabelGroup mocks base method
+func (m *MockLookoutEquipmentAPI) CreateLabelGroup(arg0 *lookoutequipment.CreateLabelGroupInput) (*lookoutequipment.CreateLabelGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLabelGroup", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.CreateLabelGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLabelGroup indicates an expected call of CreateLabelGroup
+func (mr *MockLookoutEquipmentAPIMockRecorder) CreateLabelGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLabelGroup", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).CreateLabelGroup), arg0)
+}
+
+// CreateLabelGroupRequest mocks base method
+func (m *MockLookoutEquipmentAPI) CreateLabelGroupRequest(arg0 *lookoutequipment.CreateLabelGroupInput) (*request.Request, *lookoutequipment.CreateLabelGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLabelGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.CreateLabelGroupOutput)
+	return ret0, ret1
+}
+
+// CreateLabelGroupRequest indicates an expected call of CreateLabelGroupRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) CreateLabelGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLabelGroupRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).CreateLabelGroupRequest), arg0)
+}
+
+// CreateLabelGroupWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) CreateLabelGroupWithContext(arg0 context.Context, arg1 *lookoutequipment.CreateLabelGroupInput, arg2 ...request.Option) (*lookoutequipment.CreateLabelGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLabelGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.CreateLabelGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLabelGroupWithContext indicates an expected call of CreateLabelGroupWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) CreateLabelGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLabelGroupWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).CreateLabelGroupWithContext), varargs...)
+}
+
+// CreateLabelRequest mocks base method
+func (m *MockLookoutEquipmentAPI) CreateLabelRequest(arg0 *lookoutequipment.CreateLabelInput) (*request.Request, *lookoutequipment.CreateLabelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLabelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.CreateLabelOutput)
+	return ret0, ret1
+}
+
+// CreateLabelRequest indicates an expected call of CreateLabelRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) CreateLabelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLabelRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).CreateLabelRequest), arg0)
+}
+
+// CreateLabelWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) CreateLabelWithContext(arg0 context.Context, arg1 *lookoutequipment.CreateLabelInput, arg2 ...request.Option) (*lookoutequipment.CreateLabelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLabelWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.CreateLabelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLabelWithContext indicates an expected call of CreateLabelWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) CreateLabelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLabelWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).CreateLabelWithContext), varargs...)
+}
+
 // CreateModel mocks base method
 func (m *MockLookoutEquipmentAPI) CreateModel(arg0 *lookoutequipment.CreateModelInput) (*lookoutequipment.CreateModelOutput, error) {
 	m.ctrl.T.Helper()
@@ -283,6 +383,106 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteInferenceSchedulerWithConte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteInferenceSchedulerWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteInferenceSchedulerWithContext), varargs...)
+}
+
+// DeleteLabel mocks base method
+func (m *MockLookoutEquipmentAPI) DeleteLabel(arg0 *lookoutequipment.DeleteLabelInput) (*lookoutequipment.DeleteLabelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLabel", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.DeleteLabelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLabel indicates an expected call of DeleteLabel
+func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteLabel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLabel", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteLabel), arg0)
+}
+
+// DeleteLabelGroup mocks base method
+func (m *MockLookoutEquipmentAPI) DeleteLabelGroup(arg0 *lookoutequipment.DeleteLabelGroupInput) (*lookoutequipment.DeleteLabelGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLabelGroup", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.DeleteLabelGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLabelGroup indicates an expected call of DeleteLabelGroup
+func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteLabelGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLabelGroup", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteLabelGroup), arg0)
+}
+
+// DeleteLabelGroupRequest mocks base method
+func (m *MockLookoutEquipmentAPI) DeleteLabelGroupRequest(arg0 *lookoutequipment.DeleteLabelGroupInput) (*request.Request, *lookoutequipment.DeleteLabelGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLabelGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.DeleteLabelGroupOutput)
+	return ret0, ret1
+}
+
+// DeleteLabelGroupRequest indicates an expected call of DeleteLabelGroupRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteLabelGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLabelGroupRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteLabelGroupRequest), arg0)
+}
+
+// DeleteLabelGroupWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) DeleteLabelGroupWithContext(arg0 context.Context, arg1 *lookoutequipment.DeleteLabelGroupInput, arg2 ...request.Option) (*lookoutequipment.DeleteLabelGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLabelGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.DeleteLabelGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLabelGroupWithContext indicates an expected call of DeleteLabelGroupWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteLabelGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLabelGroupWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteLabelGroupWithContext), varargs...)
+}
+
+// DeleteLabelRequest mocks base method
+func (m *MockLookoutEquipmentAPI) DeleteLabelRequest(arg0 *lookoutequipment.DeleteLabelInput) (*request.Request, *lookoutequipment.DeleteLabelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLabelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.DeleteLabelOutput)
+	return ret0, ret1
+}
+
+// DeleteLabelRequest indicates an expected call of DeleteLabelRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteLabelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLabelRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteLabelRequest), arg0)
+}
+
+// DeleteLabelWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) DeleteLabelWithContext(arg0 context.Context, arg1 *lookoutequipment.DeleteLabelInput, arg2 ...request.Option) (*lookoutequipment.DeleteLabelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLabelWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.DeleteLabelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLabelWithContext indicates an expected call of DeleteLabelWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteLabelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLabelWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteLabelWithContext), varargs...)
 }
 
 // DeleteModel mocks base method
@@ -483,6 +683,106 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeInferenceSchedulerWithCon
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInferenceSchedulerWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeInferenceSchedulerWithContext), varargs...)
+}
+
+// DescribeLabel mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeLabel(arg0 *lookoutequipment.DescribeLabelInput) (*lookoutequipment.DescribeLabelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLabel", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.DescribeLabelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLabel indicates an expected call of DescribeLabel
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeLabel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLabel", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeLabel), arg0)
+}
+
+// DescribeLabelGroup mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeLabelGroup(arg0 *lookoutequipment.DescribeLabelGroupInput) (*lookoutequipment.DescribeLabelGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLabelGroup", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.DescribeLabelGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLabelGroup indicates an expected call of DescribeLabelGroup
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeLabelGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLabelGroup", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeLabelGroup), arg0)
+}
+
+// DescribeLabelGroupRequest mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeLabelGroupRequest(arg0 *lookoutequipment.DescribeLabelGroupInput) (*request.Request, *lookoutequipment.DescribeLabelGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLabelGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.DescribeLabelGroupOutput)
+	return ret0, ret1
+}
+
+// DescribeLabelGroupRequest indicates an expected call of DescribeLabelGroupRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeLabelGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLabelGroupRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeLabelGroupRequest), arg0)
+}
+
+// DescribeLabelGroupWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeLabelGroupWithContext(arg0 context.Context, arg1 *lookoutequipment.DescribeLabelGroupInput, arg2 ...request.Option) (*lookoutequipment.DescribeLabelGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLabelGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.DescribeLabelGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLabelGroupWithContext indicates an expected call of DescribeLabelGroupWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeLabelGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLabelGroupWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeLabelGroupWithContext), varargs...)
+}
+
+// DescribeLabelRequest mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeLabelRequest(arg0 *lookoutequipment.DescribeLabelInput) (*request.Request, *lookoutequipment.DescribeLabelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLabelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.DescribeLabelOutput)
+	return ret0, ret1
+}
+
+// DescribeLabelRequest indicates an expected call of DescribeLabelRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeLabelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLabelRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeLabelRequest), arg0)
+}
+
+// DescribeLabelWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeLabelWithContext(arg0 context.Context, arg1 *lookoutequipment.DescribeLabelInput, arg2 ...request.Option) (*lookoutequipment.DescribeLabelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLabelWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.DescribeLabelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLabelWithContext indicates an expected call of DescribeLabelWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeLabelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLabelWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeLabelWithContext), varargs...)
 }
 
 // DescribeModel mocks base method
@@ -948,6 +1248,172 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) ListInferenceSchedulersWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInferenceSchedulersWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListInferenceSchedulersWithContext), varargs...)
+}
+
+// ListLabelGroups mocks base method
+func (m *MockLookoutEquipmentAPI) ListLabelGroups(arg0 *lookoutequipment.ListLabelGroupsInput) (*lookoutequipment.ListLabelGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLabelGroups", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.ListLabelGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLabelGroups indicates an expected call of ListLabelGroups
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListLabelGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelGroups", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListLabelGroups), arg0)
+}
+
+// ListLabelGroupsPages mocks base method
+func (m *MockLookoutEquipmentAPI) ListLabelGroupsPages(arg0 *lookoutequipment.ListLabelGroupsInput, arg1 func(*lookoutequipment.ListLabelGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLabelGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLabelGroupsPages indicates an expected call of ListLabelGroupsPages
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListLabelGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelGroupsPages", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListLabelGroupsPages), arg0, arg1)
+}
+
+// ListLabelGroupsPagesWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) ListLabelGroupsPagesWithContext(arg0 context.Context, arg1 *lookoutequipment.ListLabelGroupsInput, arg2 func(*lookoutequipment.ListLabelGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLabelGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLabelGroupsPagesWithContext indicates an expected call of ListLabelGroupsPagesWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListLabelGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelGroupsPagesWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListLabelGroupsPagesWithContext), varargs...)
+}
+
+// ListLabelGroupsRequest mocks base method
+func (m *MockLookoutEquipmentAPI) ListLabelGroupsRequest(arg0 *lookoutequipment.ListLabelGroupsInput) (*request.Request, *lookoutequipment.ListLabelGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLabelGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.ListLabelGroupsOutput)
+	return ret0, ret1
+}
+
+// ListLabelGroupsRequest indicates an expected call of ListLabelGroupsRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListLabelGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelGroupsRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListLabelGroupsRequest), arg0)
+}
+
+// ListLabelGroupsWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) ListLabelGroupsWithContext(arg0 context.Context, arg1 *lookoutequipment.ListLabelGroupsInput, arg2 ...request.Option) (*lookoutequipment.ListLabelGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLabelGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.ListLabelGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLabelGroupsWithContext indicates an expected call of ListLabelGroupsWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListLabelGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelGroupsWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListLabelGroupsWithContext), varargs...)
+}
+
+// ListLabels mocks base method
+func (m *MockLookoutEquipmentAPI) ListLabels(arg0 *lookoutequipment.ListLabelsInput) (*lookoutequipment.ListLabelsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLabels", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.ListLabelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLabels indicates an expected call of ListLabels
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListLabels(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabels", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListLabels), arg0)
+}
+
+// ListLabelsPages mocks base method
+func (m *MockLookoutEquipmentAPI) ListLabelsPages(arg0 *lookoutequipment.ListLabelsInput, arg1 func(*lookoutequipment.ListLabelsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLabelsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLabelsPages indicates an expected call of ListLabelsPages
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListLabelsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelsPages", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListLabelsPages), arg0, arg1)
+}
+
+// ListLabelsPagesWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) ListLabelsPagesWithContext(arg0 context.Context, arg1 *lookoutequipment.ListLabelsInput, arg2 func(*lookoutequipment.ListLabelsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLabelsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLabelsPagesWithContext indicates an expected call of ListLabelsPagesWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListLabelsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelsPagesWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListLabelsPagesWithContext), varargs...)
+}
+
+// ListLabelsRequest mocks base method
+func (m *MockLookoutEquipmentAPI) ListLabelsRequest(arg0 *lookoutequipment.ListLabelsInput) (*request.Request, *lookoutequipment.ListLabelsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLabelsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.ListLabelsOutput)
+	return ret0, ret1
+}
+
+// ListLabelsRequest indicates an expected call of ListLabelsRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListLabelsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelsRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListLabelsRequest), arg0)
+}
+
+// ListLabelsWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) ListLabelsWithContext(arg0 context.Context, arg1 *lookoutequipment.ListLabelsInput, arg2 ...request.Option) (*lookoutequipment.ListLabelsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLabelsWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.ListLabelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLabelsWithContext indicates an expected call of ListLabelsWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListLabelsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelsWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListLabelsWithContext), varargs...)
 }
 
 // ListModels mocks base method
@@ -1464,4 +1930,54 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) UpdateInferenceSchedulerWithConte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInferenceSchedulerWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UpdateInferenceSchedulerWithContext), varargs...)
+}
+
+// UpdateLabelGroup mocks base method
+func (m *MockLookoutEquipmentAPI) UpdateLabelGroup(arg0 *lookoutequipment.UpdateLabelGroupInput) (*lookoutequipment.UpdateLabelGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLabelGroup", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.UpdateLabelGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLabelGroup indicates an expected call of UpdateLabelGroup
+func (mr *MockLookoutEquipmentAPIMockRecorder) UpdateLabelGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLabelGroup", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UpdateLabelGroup), arg0)
+}
+
+// UpdateLabelGroupRequest mocks base method
+func (m *MockLookoutEquipmentAPI) UpdateLabelGroupRequest(arg0 *lookoutequipment.UpdateLabelGroupInput) (*request.Request, *lookoutequipment.UpdateLabelGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLabelGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.UpdateLabelGroupOutput)
+	return ret0, ret1
+}
+
+// UpdateLabelGroupRequest indicates an expected call of UpdateLabelGroupRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) UpdateLabelGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLabelGroupRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UpdateLabelGroupRequest), arg0)
+}
+
+// UpdateLabelGroupWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) UpdateLabelGroupWithContext(arg0 context.Context, arg1 *lookoutequipment.UpdateLabelGroupInput, arg2 ...request.Option) (*lookoutequipment.UpdateLabelGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateLabelGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.UpdateLabelGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLabelGroupWithContext indicates an expected call of UpdateLabelGroupWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) UpdateLabelGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLabelGroupWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UpdateLabelGroupWithContext), varargs...)
 }

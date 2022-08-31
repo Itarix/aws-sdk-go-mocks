@@ -135,6 +135,56 @@ func (mr *MockMacie2APIMockRecorder) BatchGetCustomDataIdentifiersWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCustomDataIdentifiersWithContext", reflect.TypeOf((*MockMacie2API)(nil).BatchGetCustomDataIdentifiersWithContext), varargs...)
 }
 
+// CreateAllowList mocks base method
+func (m *MockMacie2API) CreateAllowList(arg0 *macie2.CreateAllowListInput) (*macie2.CreateAllowListOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAllowList", arg0)
+	ret0, _ := ret[0].(*macie2.CreateAllowListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAllowList indicates an expected call of CreateAllowList
+func (mr *MockMacie2APIMockRecorder) CreateAllowList(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAllowList", reflect.TypeOf((*MockMacie2API)(nil).CreateAllowList), arg0)
+}
+
+// CreateAllowListRequest mocks base method
+func (m *MockMacie2API) CreateAllowListRequest(arg0 *macie2.CreateAllowListInput) (*request.Request, *macie2.CreateAllowListOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAllowListRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*macie2.CreateAllowListOutput)
+	return ret0, ret1
+}
+
+// CreateAllowListRequest indicates an expected call of CreateAllowListRequest
+func (mr *MockMacie2APIMockRecorder) CreateAllowListRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAllowListRequest", reflect.TypeOf((*MockMacie2API)(nil).CreateAllowListRequest), arg0)
+}
+
+// CreateAllowListWithContext mocks base method
+func (m *MockMacie2API) CreateAllowListWithContext(arg0 context.Context, arg1 *macie2.CreateAllowListInput, arg2 ...request.Option) (*macie2.CreateAllowListOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAllowListWithContext", varargs...)
+	ret0, _ := ret[0].(*macie2.CreateAllowListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAllowListWithContext indicates an expected call of CreateAllowListWithContext
+func (mr *MockMacie2APIMockRecorder) CreateAllowListWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAllowListWithContext", reflect.TypeOf((*MockMacie2API)(nil).CreateAllowListWithContext), varargs...)
+}
+
 // CreateClassificationJob mocks base method
 func (m *MockMacie2API) CreateClassificationJob(arg0 *macie2.CreateClassificationJobInput) (*macie2.CreateClassificationJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -483,6 +533,56 @@ func (mr *MockMacie2APIMockRecorder) DeclineInvitationsWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeclineInvitationsWithContext", reflect.TypeOf((*MockMacie2API)(nil).DeclineInvitationsWithContext), varargs...)
+}
+
+// DeleteAllowList mocks base method
+func (m *MockMacie2API) DeleteAllowList(arg0 *macie2.DeleteAllowListInput) (*macie2.DeleteAllowListOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAllowList", arg0)
+	ret0, _ := ret[0].(*macie2.DeleteAllowListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAllowList indicates an expected call of DeleteAllowList
+func (mr *MockMacie2APIMockRecorder) DeleteAllowList(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAllowList", reflect.TypeOf((*MockMacie2API)(nil).DeleteAllowList), arg0)
+}
+
+// DeleteAllowListRequest mocks base method
+func (m *MockMacie2API) DeleteAllowListRequest(arg0 *macie2.DeleteAllowListInput) (*request.Request, *macie2.DeleteAllowListOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAllowListRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*macie2.DeleteAllowListOutput)
+	return ret0, ret1
+}
+
+// DeleteAllowListRequest indicates an expected call of DeleteAllowListRequest
+func (mr *MockMacie2APIMockRecorder) DeleteAllowListRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAllowListRequest", reflect.TypeOf((*MockMacie2API)(nil).DeleteAllowListRequest), arg0)
+}
+
+// DeleteAllowListWithContext mocks base method
+func (m *MockMacie2API) DeleteAllowListWithContext(arg0 context.Context, arg1 *macie2.DeleteAllowListInput, arg2 ...request.Option) (*macie2.DeleteAllowListOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAllowListWithContext", varargs...)
+	ret0, _ := ret[0].(*macie2.DeleteAllowListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAllowListWithContext indicates an expected call of DeleteAllowListWithContext
+func (mr *MockMacie2APIMockRecorder) DeleteAllowListWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAllowListWithContext", reflect.TypeOf((*MockMacie2API)(nil).DeleteAllowListWithContext), varargs...)
 }
 
 // DeleteCustomDataIdentifier mocks base method
@@ -1266,6 +1366,56 @@ func (mr *MockMacie2APIMockRecorder) GetAdministratorAccountWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdministratorAccountWithContext", reflect.TypeOf((*MockMacie2API)(nil).GetAdministratorAccountWithContext), varargs...)
+}
+
+// GetAllowList mocks base method
+func (m *MockMacie2API) GetAllowList(arg0 *macie2.GetAllowListInput) (*macie2.GetAllowListOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAllowList", arg0)
+	ret0, _ := ret[0].(*macie2.GetAllowListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAllowList indicates an expected call of GetAllowList
+func (mr *MockMacie2APIMockRecorder) GetAllowList(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAllowList", reflect.TypeOf((*MockMacie2API)(nil).GetAllowList), arg0)
+}
+
+// GetAllowListRequest mocks base method
+func (m *MockMacie2API) GetAllowListRequest(arg0 *macie2.GetAllowListInput) (*request.Request, *macie2.GetAllowListOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAllowListRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*macie2.GetAllowListOutput)
+	return ret0, ret1
+}
+
+// GetAllowListRequest indicates an expected call of GetAllowListRequest
+func (mr *MockMacie2APIMockRecorder) GetAllowListRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAllowListRequest", reflect.TypeOf((*MockMacie2API)(nil).GetAllowListRequest), arg0)
+}
+
+// GetAllowListWithContext mocks base method
+func (m *MockMacie2API) GetAllowListWithContext(arg0 context.Context, arg1 *macie2.GetAllowListInput, arg2 ...request.Option) (*macie2.GetAllowListOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAllowListWithContext", varargs...)
+	ret0, _ := ret[0].(*macie2.GetAllowListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAllowListWithContext indicates an expected call of GetAllowListWithContext
+func (mr *MockMacie2APIMockRecorder) GetAllowListWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAllowListWithContext", reflect.TypeOf((*MockMacie2API)(nil).GetAllowListWithContext), varargs...)
 }
 
 // GetBucketStatistics mocks base method
@@ -2099,6 +2249,56 @@ func (mr *MockMacie2APIMockRecorder) GetUsageTotalsWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsageTotalsWithContext", reflect.TypeOf((*MockMacie2API)(nil).GetUsageTotalsWithContext), varargs...)
+}
+
+// ListAllowLists mocks base method
+func (m *MockMacie2API) ListAllowLists(arg0 *macie2.ListAllowListsInput) (*macie2.ListAllowListsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAllowLists", arg0)
+	ret0, _ := ret[0].(*macie2.ListAllowListsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAllowLists indicates an expected call of ListAllowLists
+func (mr *MockMacie2APIMockRecorder) ListAllowLists(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAllowLists", reflect.TypeOf((*MockMacie2API)(nil).ListAllowLists), arg0)
+}
+
+// ListAllowListsRequest mocks base method
+func (m *MockMacie2API) ListAllowListsRequest(arg0 *macie2.ListAllowListsInput) (*request.Request, *macie2.ListAllowListsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAllowListsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*macie2.ListAllowListsOutput)
+	return ret0, ret1
+}
+
+// ListAllowListsRequest indicates an expected call of ListAllowListsRequest
+func (mr *MockMacie2APIMockRecorder) ListAllowListsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAllowListsRequest", reflect.TypeOf((*MockMacie2API)(nil).ListAllowListsRequest), arg0)
+}
+
+// ListAllowListsWithContext mocks base method
+func (m *MockMacie2API) ListAllowListsWithContext(arg0 context.Context, arg1 *macie2.ListAllowListsInput, arg2 ...request.Option) (*macie2.ListAllowListsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAllowListsWithContext", varargs...)
+	ret0, _ := ret[0].(*macie2.ListAllowListsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAllowListsWithContext indicates an expected call of ListAllowListsWithContext
+func (mr *MockMacie2APIMockRecorder) ListAllowListsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAllowListsWithContext", reflect.TypeOf((*MockMacie2API)(nil).ListAllowListsWithContext), varargs...)
 }
 
 // ListClassificationJobs mocks base method
@@ -3113,6 +3313,56 @@ func (mr *MockMacie2APIMockRecorder) UntagResourceWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockMacie2API)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateAllowList mocks base method
+func (m *MockMacie2API) UpdateAllowList(arg0 *macie2.UpdateAllowListInput) (*macie2.UpdateAllowListOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAllowList", arg0)
+	ret0, _ := ret[0].(*macie2.UpdateAllowListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAllowList indicates an expected call of UpdateAllowList
+func (mr *MockMacie2APIMockRecorder) UpdateAllowList(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAllowList", reflect.TypeOf((*MockMacie2API)(nil).UpdateAllowList), arg0)
+}
+
+// UpdateAllowListRequest mocks base method
+func (m *MockMacie2API) UpdateAllowListRequest(arg0 *macie2.UpdateAllowListInput) (*request.Request, *macie2.UpdateAllowListOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAllowListRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*macie2.UpdateAllowListOutput)
+	return ret0, ret1
+}
+
+// UpdateAllowListRequest indicates an expected call of UpdateAllowListRequest
+func (mr *MockMacie2APIMockRecorder) UpdateAllowListRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAllowListRequest", reflect.TypeOf((*MockMacie2API)(nil).UpdateAllowListRequest), arg0)
+}
+
+// UpdateAllowListWithContext mocks base method
+func (m *MockMacie2API) UpdateAllowListWithContext(arg0 context.Context, arg1 *macie2.UpdateAllowListInput, arg2 ...request.Option) (*macie2.UpdateAllowListOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAllowListWithContext", varargs...)
+	ret0, _ := ret[0].(*macie2.UpdateAllowListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAllowListWithContext indicates an expected call of UpdateAllowListWithContext
+func (mr *MockMacie2APIMockRecorder) UpdateAllowListWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAllowListWithContext", reflect.TypeOf((*MockMacie2API)(nil).UpdateAllowListWithContext), varargs...)
 }
 
 // UpdateClassificationJob mocks base method
