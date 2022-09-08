@@ -585,6 +585,56 @@ func (mr *MockSNSAPIMockRecorder) DeleteTopicWithContext(arg0, arg1 interface{},
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTopicWithContext", reflect.TypeOf((*MockSNSAPI)(nil).DeleteTopicWithContext), varargs...)
 }
 
+// GetDataProtectionPolicy mocks base method
+func (m *MockSNSAPI) GetDataProtectionPolicy(arg0 *sns.GetDataProtectionPolicyInput) (*sns.GetDataProtectionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataProtectionPolicy", arg0)
+	ret0, _ := ret[0].(*sns.GetDataProtectionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataProtectionPolicy indicates an expected call of GetDataProtectionPolicy
+func (mr *MockSNSAPIMockRecorder) GetDataProtectionPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataProtectionPolicy", reflect.TypeOf((*MockSNSAPI)(nil).GetDataProtectionPolicy), arg0)
+}
+
+// GetDataProtectionPolicyRequest mocks base method
+func (m *MockSNSAPI) GetDataProtectionPolicyRequest(arg0 *sns.GetDataProtectionPolicyInput) (*request.Request, *sns.GetDataProtectionPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataProtectionPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sns.GetDataProtectionPolicyOutput)
+	return ret0, ret1
+}
+
+// GetDataProtectionPolicyRequest indicates an expected call of GetDataProtectionPolicyRequest
+func (mr *MockSNSAPIMockRecorder) GetDataProtectionPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataProtectionPolicyRequest", reflect.TypeOf((*MockSNSAPI)(nil).GetDataProtectionPolicyRequest), arg0)
+}
+
+// GetDataProtectionPolicyWithContext mocks base method
+func (m *MockSNSAPI) GetDataProtectionPolicyWithContext(arg0 context.Context, arg1 *sns.GetDataProtectionPolicyInput, arg2 ...request.Option) (*sns.GetDataProtectionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDataProtectionPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*sns.GetDataProtectionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataProtectionPolicyWithContext indicates an expected call of GetDataProtectionPolicyWithContext
+func (mr *MockSNSAPIMockRecorder) GetDataProtectionPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataProtectionPolicyWithContext", reflect.TypeOf((*MockSNSAPI)(nil).GetDataProtectionPolicyWithContext), varargs...)
+}
+
 // GetEndpointAttributes mocks base method
 func (m *MockSNSAPI) GetEndpointAttributes(arg0 *sns.GetEndpointAttributesInput) (*sns.GetEndpointAttributesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1747,6 +1797,56 @@ func (mr *MockSNSAPIMockRecorder) PublishWithContext(arg0, arg1 interface{}, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishWithContext", reflect.TypeOf((*MockSNSAPI)(nil).PublishWithContext), varargs...)
+}
+
+// PutDataProtectionPolicy mocks base method
+func (m *MockSNSAPI) PutDataProtectionPolicy(arg0 *sns.PutDataProtectionPolicyInput) (*sns.PutDataProtectionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutDataProtectionPolicy", arg0)
+	ret0, _ := ret[0].(*sns.PutDataProtectionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutDataProtectionPolicy indicates an expected call of PutDataProtectionPolicy
+func (mr *MockSNSAPIMockRecorder) PutDataProtectionPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDataProtectionPolicy", reflect.TypeOf((*MockSNSAPI)(nil).PutDataProtectionPolicy), arg0)
+}
+
+// PutDataProtectionPolicyRequest mocks base method
+func (m *MockSNSAPI) PutDataProtectionPolicyRequest(arg0 *sns.PutDataProtectionPolicyInput) (*request.Request, *sns.PutDataProtectionPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutDataProtectionPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sns.PutDataProtectionPolicyOutput)
+	return ret0, ret1
+}
+
+// PutDataProtectionPolicyRequest indicates an expected call of PutDataProtectionPolicyRequest
+func (mr *MockSNSAPIMockRecorder) PutDataProtectionPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDataProtectionPolicyRequest", reflect.TypeOf((*MockSNSAPI)(nil).PutDataProtectionPolicyRequest), arg0)
+}
+
+// PutDataProtectionPolicyWithContext mocks base method
+func (m *MockSNSAPI) PutDataProtectionPolicyWithContext(arg0 context.Context, arg1 *sns.PutDataProtectionPolicyInput, arg2 ...request.Option) (*sns.PutDataProtectionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutDataProtectionPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*sns.PutDataProtectionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutDataProtectionPolicyWithContext indicates an expected call of PutDataProtectionPolicyWithContext
+func (mr *MockSNSAPIMockRecorder) PutDataProtectionPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDataProtectionPolicyWithContext", reflect.TypeOf((*MockSNSAPI)(nil).PutDataProtectionPolicyWithContext), varargs...)
 }
 
 // RemovePermission mocks base method
