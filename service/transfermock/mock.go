@@ -585,6 +585,56 @@ func (mr *MockTransferAPIMockRecorder) DeleteConnectorWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectorWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DeleteConnectorWithContext), varargs...)
 }
 
+// DeleteHostKey mocks base method
+func (m *MockTransferAPI) DeleteHostKey(arg0 *transfer.DeleteHostKeyInput) (*transfer.DeleteHostKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteHostKey", arg0)
+	ret0, _ := ret[0].(*transfer.DeleteHostKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteHostKey indicates an expected call of DeleteHostKey
+func (mr *MockTransferAPIMockRecorder) DeleteHostKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHostKey", reflect.TypeOf((*MockTransferAPI)(nil).DeleteHostKey), arg0)
+}
+
+// DeleteHostKeyRequest mocks base method
+func (m *MockTransferAPI) DeleteHostKeyRequest(arg0 *transfer.DeleteHostKeyInput) (*request.Request, *transfer.DeleteHostKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteHostKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.DeleteHostKeyOutput)
+	return ret0, ret1
+}
+
+// DeleteHostKeyRequest indicates an expected call of DeleteHostKeyRequest
+func (mr *MockTransferAPIMockRecorder) DeleteHostKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHostKeyRequest", reflect.TypeOf((*MockTransferAPI)(nil).DeleteHostKeyRequest), arg0)
+}
+
+// DeleteHostKeyWithContext mocks base method
+func (m *MockTransferAPI) DeleteHostKeyWithContext(arg0 context.Context, arg1 *transfer.DeleteHostKeyInput, arg2 ...request.Option) (*transfer.DeleteHostKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteHostKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.DeleteHostKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteHostKeyWithContext indicates an expected call of DeleteHostKeyWithContext
+func (mr *MockTransferAPIMockRecorder) DeleteHostKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHostKeyWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DeleteHostKeyWithContext), varargs...)
+}
+
 // DeleteProfile mocks base method
 func (m *MockTransferAPI) DeleteProfile(arg0 *transfer.DeleteProfileInput) (*transfer.DeleteProfileOutput, error) {
 	m.ctrl.T.Helper()
@@ -1085,6 +1135,56 @@ func (mr *MockTransferAPIMockRecorder) DescribeExecutionWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExecutionWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DescribeExecutionWithContext), varargs...)
 }
 
+// DescribeHostKey mocks base method
+func (m *MockTransferAPI) DescribeHostKey(arg0 *transfer.DescribeHostKeyInput) (*transfer.DescribeHostKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeHostKey", arg0)
+	ret0, _ := ret[0].(*transfer.DescribeHostKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeHostKey indicates an expected call of DescribeHostKey
+func (mr *MockTransferAPIMockRecorder) DescribeHostKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHostKey", reflect.TypeOf((*MockTransferAPI)(nil).DescribeHostKey), arg0)
+}
+
+// DescribeHostKeyRequest mocks base method
+func (m *MockTransferAPI) DescribeHostKeyRequest(arg0 *transfer.DescribeHostKeyInput) (*request.Request, *transfer.DescribeHostKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeHostKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.DescribeHostKeyOutput)
+	return ret0, ret1
+}
+
+// DescribeHostKeyRequest indicates an expected call of DescribeHostKeyRequest
+func (mr *MockTransferAPIMockRecorder) DescribeHostKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHostKeyRequest", reflect.TypeOf((*MockTransferAPI)(nil).DescribeHostKeyRequest), arg0)
+}
+
+// DescribeHostKeyWithContext mocks base method
+func (m *MockTransferAPI) DescribeHostKeyWithContext(arg0 context.Context, arg1 *transfer.DescribeHostKeyInput, arg2 ...request.Option) (*transfer.DescribeHostKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeHostKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.DescribeHostKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeHostKeyWithContext indicates an expected call of DescribeHostKeyWithContext
+func (mr *MockTransferAPIMockRecorder) DescribeHostKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHostKeyWithContext", reflect.TypeOf((*MockTransferAPI)(nil).DescribeHostKeyWithContext), varargs...)
+}
+
 // DescribeProfile mocks base method
 func (m *MockTransferAPI) DescribeProfile(arg0 *transfer.DescribeProfileInput) (*transfer.DescribeProfileOutput, error) {
 	m.ctrl.T.Helper()
@@ -1383,6 +1483,56 @@ func (mr *MockTransferAPIMockRecorder) ImportCertificateWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportCertificateWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ImportCertificateWithContext), varargs...)
+}
+
+// ImportHostKey mocks base method
+func (m *MockTransferAPI) ImportHostKey(arg0 *transfer.ImportHostKeyInput) (*transfer.ImportHostKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportHostKey", arg0)
+	ret0, _ := ret[0].(*transfer.ImportHostKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportHostKey indicates an expected call of ImportHostKey
+func (mr *MockTransferAPIMockRecorder) ImportHostKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportHostKey", reflect.TypeOf((*MockTransferAPI)(nil).ImportHostKey), arg0)
+}
+
+// ImportHostKeyRequest mocks base method
+func (m *MockTransferAPI) ImportHostKeyRequest(arg0 *transfer.ImportHostKeyInput) (*request.Request, *transfer.ImportHostKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportHostKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.ImportHostKeyOutput)
+	return ret0, ret1
+}
+
+// ImportHostKeyRequest indicates an expected call of ImportHostKeyRequest
+func (mr *MockTransferAPIMockRecorder) ImportHostKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportHostKeyRequest", reflect.TypeOf((*MockTransferAPI)(nil).ImportHostKeyRequest), arg0)
+}
+
+// ImportHostKeyWithContext mocks base method
+func (m *MockTransferAPI) ImportHostKeyWithContext(arg0 context.Context, arg1 *transfer.ImportHostKeyInput, arg2 ...request.Option) (*transfer.ImportHostKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportHostKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.ImportHostKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportHostKeyWithContext indicates an expected call of ImportHostKeyWithContext
+func (mr *MockTransferAPIMockRecorder) ImportHostKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportHostKeyWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ImportHostKeyWithContext), varargs...)
 }
 
 // ImportSshPublicKey mocks base method
@@ -1848,6 +1998,56 @@ func (mr *MockTransferAPIMockRecorder) ListExecutionsWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutionsWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListExecutionsWithContext), varargs...)
+}
+
+// ListHostKeys mocks base method
+func (m *MockTransferAPI) ListHostKeys(arg0 *transfer.ListHostKeysInput) (*transfer.ListHostKeysOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListHostKeys", arg0)
+	ret0, _ := ret[0].(*transfer.ListHostKeysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListHostKeys indicates an expected call of ListHostKeys
+func (mr *MockTransferAPIMockRecorder) ListHostKeys(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHostKeys", reflect.TypeOf((*MockTransferAPI)(nil).ListHostKeys), arg0)
+}
+
+// ListHostKeysRequest mocks base method
+func (m *MockTransferAPI) ListHostKeysRequest(arg0 *transfer.ListHostKeysInput) (*request.Request, *transfer.ListHostKeysOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListHostKeysRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.ListHostKeysOutput)
+	return ret0, ret1
+}
+
+// ListHostKeysRequest indicates an expected call of ListHostKeysRequest
+func (mr *MockTransferAPIMockRecorder) ListHostKeysRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHostKeysRequest", reflect.TypeOf((*MockTransferAPI)(nil).ListHostKeysRequest), arg0)
+}
+
+// ListHostKeysWithContext mocks base method
+func (m *MockTransferAPI) ListHostKeysWithContext(arg0 context.Context, arg1 *transfer.ListHostKeysInput, arg2 ...request.Option) (*transfer.ListHostKeysOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListHostKeysWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.ListHostKeysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListHostKeysWithContext indicates an expected call of ListHostKeysWithContext
+func (mr *MockTransferAPIMockRecorder) ListHostKeysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListHostKeysWithContext", reflect.TypeOf((*MockTransferAPI)(nil).ListHostKeysWithContext), varargs...)
 }
 
 // ListProfiles mocks base method
@@ -2896,6 +3096,56 @@ func (mr *MockTransferAPIMockRecorder) UpdateConnectorWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectorWithContext", reflect.TypeOf((*MockTransferAPI)(nil).UpdateConnectorWithContext), varargs...)
+}
+
+// UpdateHostKey mocks base method
+func (m *MockTransferAPI) UpdateHostKey(arg0 *transfer.UpdateHostKeyInput) (*transfer.UpdateHostKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateHostKey", arg0)
+	ret0, _ := ret[0].(*transfer.UpdateHostKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateHostKey indicates an expected call of UpdateHostKey
+func (mr *MockTransferAPIMockRecorder) UpdateHostKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateHostKey", reflect.TypeOf((*MockTransferAPI)(nil).UpdateHostKey), arg0)
+}
+
+// UpdateHostKeyRequest mocks base method
+func (m *MockTransferAPI) UpdateHostKeyRequest(arg0 *transfer.UpdateHostKeyInput) (*request.Request, *transfer.UpdateHostKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateHostKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.UpdateHostKeyOutput)
+	return ret0, ret1
+}
+
+// UpdateHostKeyRequest indicates an expected call of UpdateHostKeyRequest
+func (mr *MockTransferAPIMockRecorder) UpdateHostKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateHostKeyRequest", reflect.TypeOf((*MockTransferAPI)(nil).UpdateHostKeyRequest), arg0)
+}
+
+// UpdateHostKeyWithContext mocks base method
+func (m *MockTransferAPI) UpdateHostKeyWithContext(arg0 context.Context, arg1 *transfer.UpdateHostKeyInput, arg2 ...request.Option) (*transfer.UpdateHostKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateHostKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.UpdateHostKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateHostKeyWithContext indicates an expected call of UpdateHostKeyWithContext
+func (mr *MockTransferAPIMockRecorder) UpdateHostKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateHostKeyWithContext", reflect.TypeOf((*MockTransferAPI)(nil).UpdateHostKeyWithContext), varargs...)
 }
 
 // UpdateProfile mocks base method
