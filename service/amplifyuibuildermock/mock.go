@@ -85,6 +85,56 @@ func (mr *MockAmplifyUIBuilderAPIMockRecorder) CreateComponentWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateComponentWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).CreateComponentWithContext), varargs...)
 }
 
+// CreateForm mocks base method
+func (m *MockAmplifyUIBuilderAPI) CreateForm(arg0 *amplifyuibuilder.CreateFormInput) (*amplifyuibuilder.CreateFormOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateForm", arg0)
+	ret0, _ := ret[0].(*amplifyuibuilder.CreateFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateForm indicates an expected call of CreateForm
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) CreateForm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateForm", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).CreateForm), arg0)
+}
+
+// CreateFormRequest mocks base method
+func (m *MockAmplifyUIBuilderAPI) CreateFormRequest(arg0 *amplifyuibuilder.CreateFormInput) (*request.Request, *amplifyuibuilder.CreateFormOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFormRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifyuibuilder.CreateFormOutput)
+	return ret0, ret1
+}
+
+// CreateFormRequest indicates an expected call of CreateFormRequest
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) CreateFormRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFormRequest", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).CreateFormRequest), arg0)
+}
+
+// CreateFormWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) CreateFormWithContext(arg0 context.Context, arg1 *amplifyuibuilder.CreateFormInput, arg2 ...request.Option) (*amplifyuibuilder.CreateFormOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFormWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifyuibuilder.CreateFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFormWithContext indicates an expected call of CreateFormWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) CreateFormWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFormWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).CreateFormWithContext), varargs...)
+}
+
 // CreateTheme mocks base method
 func (m *MockAmplifyUIBuilderAPI) CreateTheme(arg0 *amplifyuibuilder.CreateThemeInput) (*amplifyuibuilder.CreateThemeOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +233,56 @@ func (mr *MockAmplifyUIBuilderAPIMockRecorder) DeleteComponentWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteComponentWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).DeleteComponentWithContext), varargs...)
+}
+
+// DeleteForm mocks base method
+func (m *MockAmplifyUIBuilderAPI) DeleteForm(arg0 *amplifyuibuilder.DeleteFormInput) (*amplifyuibuilder.DeleteFormOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteForm", arg0)
+	ret0, _ := ret[0].(*amplifyuibuilder.DeleteFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteForm indicates an expected call of DeleteForm
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) DeleteForm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteForm", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).DeleteForm), arg0)
+}
+
+// DeleteFormRequest mocks base method
+func (m *MockAmplifyUIBuilderAPI) DeleteFormRequest(arg0 *amplifyuibuilder.DeleteFormInput) (*request.Request, *amplifyuibuilder.DeleteFormOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFormRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifyuibuilder.DeleteFormOutput)
+	return ret0, ret1
+}
+
+// DeleteFormRequest indicates an expected call of DeleteFormRequest
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) DeleteFormRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFormRequest", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).DeleteFormRequest), arg0)
+}
+
+// DeleteFormWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) DeleteFormWithContext(arg0 context.Context, arg1 *amplifyuibuilder.DeleteFormInput, arg2 ...request.Option) (*amplifyuibuilder.DeleteFormOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFormWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifyuibuilder.DeleteFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFormWithContext indicates an expected call of DeleteFormWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) DeleteFormWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFormWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).DeleteFormWithContext), varargs...)
 }
 
 // DeleteTheme mocks base method
@@ -368,6 +468,89 @@ func (mr *MockAmplifyUIBuilderAPIMockRecorder) ExportComponentsWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportComponentsWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ExportComponentsWithContext), varargs...)
 }
 
+// ExportForms mocks base method
+func (m *MockAmplifyUIBuilderAPI) ExportForms(arg0 *amplifyuibuilder.ExportFormsInput) (*amplifyuibuilder.ExportFormsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportForms", arg0)
+	ret0, _ := ret[0].(*amplifyuibuilder.ExportFormsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportForms indicates an expected call of ExportForms
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ExportForms(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportForms", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ExportForms), arg0)
+}
+
+// ExportFormsPages mocks base method
+func (m *MockAmplifyUIBuilderAPI) ExportFormsPages(arg0 *amplifyuibuilder.ExportFormsInput, arg1 func(*amplifyuibuilder.ExportFormsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportFormsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ExportFormsPages indicates an expected call of ExportFormsPages
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ExportFormsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportFormsPages", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ExportFormsPages), arg0, arg1)
+}
+
+// ExportFormsPagesWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) ExportFormsPagesWithContext(arg0 context.Context, arg1 *amplifyuibuilder.ExportFormsInput, arg2 func(*amplifyuibuilder.ExportFormsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExportFormsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ExportFormsPagesWithContext indicates an expected call of ExportFormsPagesWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ExportFormsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportFormsPagesWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ExportFormsPagesWithContext), varargs...)
+}
+
+// ExportFormsRequest mocks base method
+func (m *MockAmplifyUIBuilderAPI) ExportFormsRequest(arg0 *amplifyuibuilder.ExportFormsInput) (*request.Request, *amplifyuibuilder.ExportFormsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportFormsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifyuibuilder.ExportFormsOutput)
+	return ret0, ret1
+}
+
+// ExportFormsRequest indicates an expected call of ExportFormsRequest
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ExportFormsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportFormsRequest", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ExportFormsRequest), arg0)
+}
+
+// ExportFormsWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) ExportFormsWithContext(arg0 context.Context, arg1 *amplifyuibuilder.ExportFormsInput, arg2 ...request.Option) (*amplifyuibuilder.ExportFormsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExportFormsWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifyuibuilder.ExportFormsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportFormsWithContext indicates an expected call of ExportFormsWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ExportFormsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportFormsWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ExportFormsWithContext), varargs...)
+}
+
 // ExportThemes mocks base method
 func (m *MockAmplifyUIBuilderAPI) ExportThemes(arg0 *amplifyuibuilder.ExportThemesInput) (*amplifyuibuilder.ExportThemesOutput, error) {
 	m.ctrl.T.Helper()
@@ -499,6 +682,106 @@ func (mr *MockAmplifyUIBuilderAPIMockRecorder) GetComponentWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetComponentWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).GetComponentWithContext), varargs...)
+}
+
+// GetForm mocks base method
+func (m *MockAmplifyUIBuilderAPI) GetForm(arg0 *amplifyuibuilder.GetFormInput) (*amplifyuibuilder.GetFormOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetForm", arg0)
+	ret0, _ := ret[0].(*amplifyuibuilder.GetFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetForm indicates an expected call of GetForm
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) GetForm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetForm", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).GetForm), arg0)
+}
+
+// GetFormRequest mocks base method
+func (m *MockAmplifyUIBuilderAPI) GetFormRequest(arg0 *amplifyuibuilder.GetFormInput) (*request.Request, *amplifyuibuilder.GetFormOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFormRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifyuibuilder.GetFormOutput)
+	return ret0, ret1
+}
+
+// GetFormRequest indicates an expected call of GetFormRequest
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) GetFormRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFormRequest", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).GetFormRequest), arg0)
+}
+
+// GetFormWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) GetFormWithContext(arg0 context.Context, arg1 *amplifyuibuilder.GetFormInput, arg2 ...request.Option) (*amplifyuibuilder.GetFormOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFormWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifyuibuilder.GetFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFormWithContext indicates an expected call of GetFormWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) GetFormWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFormWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).GetFormWithContext), varargs...)
+}
+
+// GetMetadata mocks base method
+func (m *MockAmplifyUIBuilderAPI) GetMetadata(arg0 *amplifyuibuilder.GetMetadataInput) (*amplifyuibuilder.GetMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMetadata", arg0)
+	ret0, _ := ret[0].(*amplifyuibuilder.GetMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMetadata indicates an expected call of GetMetadata
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) GetMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetadata", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).GetMetadata), arg0)
+}
+
+// GetMetadataRequest mocks base method
+func (m *MockAmplifyUIBuilderAPI) GetMetadataRequest(arg0 *amplifyuibuilder.GetMetadataInput) (*request.Request, *amplifyuibuilder.GetMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifyuibuilder.GetMetadataOutput)
+	return ret0, ret1
+}
+
+// GetMetadataRequest indicates an expected call of GetMetadataRequest
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) GetMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetadataRequest", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).GetMetadataRequest), arg0)
+}
+
+// GetMetadataWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) GetMetadataWithContext(arg0 context.Context, arg1 *amplifyuibuilder.GetMetadataInput, arg2 ...request.Option) (*amplifyuibuilder.GetMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifyuibuilder.GetMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMetadataWithContext indicates an expected call of GetMetadataWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) GetMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetadataWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).GetMetadataWithContext), varargs...)
 }
 
 // GetTheme mocks base method
@@ -634,6 +917,89 @@ func (mr *MockAmplifyUIBuilderAPIMockRecorder) ListComponentsWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListComponentsWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ListComponentsWithContext), varargs...)
 }
 
+// ListForms mocks base method
+func (m *MockAmplifyUIBuilderAPI) ListForms(arg0 *amplifyuibuilder.ListFormsInput) (*amplifyuibuilder.ListFormsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListForms", arg0)
+	ret0, _ := ret[0].(*amplifyuibuilder.ListFormsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListForms indicates an expected call of ListForms
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ListForms(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListForms", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ListForms), arg0)
+}
+
+// ListFormsPages mocks base method
+func (m *MockAmplifyUIBuilderAPI) ListFormsPages(arg0 *amplifyuibuilder.ListFormsInput, arg1 func(*amplifyuibuilder.ListFormsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFormsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFormsPages indicates an expected call of ListFormsPages
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ListFormsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFormsPages", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ListFormsPages), arg0, arg1)
+}
+
+// ListFormsPagesWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) ListFormsPagesWithContext(arg0 context.Context, arg1 *amplifyuibuilder.ListFormsInput, arg2 func(*amplifyuibuilder.ListFormsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFormsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFormsPagesWithContext indicates an expected call of ListFormsPagesWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ListFormsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFormsPagesWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ListFormsPagesWithContext), varargs...)
+}
+
+// ListFormsRequest mocks base method
+func (m *MockAmplifyUIBuilderAPI) ListFormsRequest(arg0 *amplifyuibuilder.ListFormsInput) (*request.Request, *amplifyuibuilder.ListFormsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFormsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifyuibuilder.ListFormsOutput)
+	return ret0, ret1
+}
+
+// ListFormsRequest indicates an expected call of ListFormsRequest
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ListFormsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFormsRequest", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ListFormsRequest), arg0)
+}
+
+// ListFormsWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) ListFormsWithContext(arg0 context.Context, arg1 *amplifyuibuilder.ListFormsInput, arg2 ...request.Option) (*amplifyuibuilder.ListFormsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFormsWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifyuibuilder.ListFormsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFormsWithContext indicates an expected call of ListFormsWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ListFormsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFormsWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ListFormsWithContext), varargs...)
+}
+
 // ListThemes mocks base method
 func (m *MockAmplifyUIBuilderAPI) ListThemes(arg0 *amplifyuibuilder.ListThemesInput) (*amplifyuibuilder.ListThemesOutput, error) {
 	m.ctrl.T.Helper()
@@ -715,6 +1081,56 @@ func (mr *MockAmplifyUIBuilderAPIMockRecorder) ListThemesWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThemesWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ListThemesWithContext), varargs...)
+}
+
+// PutMetadataFlag mocks base method
+func (m *MockAmplifyUIBuilderAPI) PutMetadataFlag(arg0 *amplifyuibuilder.PutMetadataFlagInput) (*amplifyuibuilder.PutMetadataFlagOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutMetadataFlag", arg0)
+	ret0, _ := ret[0].(*amplifyuibuilder.PutMetadataFlagOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutMetadataFlag indicates an expected call of PutMetadataFlag
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) PutMetadataFlag(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMetadataFlag", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).PutMetadataFlag), arg0)
+}
+
+// PutMetadataFlagRequest mocks base method
+func (m *MockAmplifyUIBuilderAPI) PutMetadataFlagRequest(arg0 *amplifyuibuilder.PutMetadataFlagInput) (*request.Request, *amplifyuibuilder.PutMetadataFlagOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutMetadataFlagRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifyuibuilder.PutMetadataFlagOutput)
+	return ret0, ret1
+}
+
+// PutMetadataFlagRequest indicates an expected call of PutMetadataFlagRequest
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) PutMetadataFlagRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMetadataFlagRequest", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).PutMetadataFlagRequest), arg0)
+}
+
+// PutMetadataFlagWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) PutMetadataFlagWithContext(arg0 context.Context, arg1 *amplifyuibuilder.PutMetadataFlagInput, arg2 ...request.Option) (*amplifyuibuilder.PutMetadataFlagOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutMetadataFlagWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifyuibuilder.PutMetadataFlagOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutMetadataFlagWithContext indicates an expected call of PutMetadataFlagWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) PutMetadataFlagWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMetadataFlagWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).PutMetadataFlagWithContext), varargs...)
 }
 
 // RefreshToken mocks base method
@@ -815,6 +1231,56 @@ func (mr *MockAmplifyUIBuilderAPIMockRecorder) UpdateComponentWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateComponentWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).UpdateComponentWithContext), varargs...)
+}
+
+// UpdateForm mocks base method
+func (m *MockAmplifyUIBuilderAPI) UpdateForm(arg0 *amplifyuibuilder.UpdateFormInput) (*amplifyuibuilder.UpdateFormOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateForm", arg0)
+	ret0, _ := ret[0].(*amplifyuibuilder.UpdateFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateForm indicates an expected call of UpdateForm
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) UpdateForm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateForm", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).UpdateForm), arg0)
+}
+
+// UpdateFormRequest mocks base method
+func (m *MockAmplifyUIBuilderAPI) UpdateFormRequest(arg0 *amplifyuibuilder.UpdateFormInput) (*request.Request, *amplifyuibuilder.UpdateFormOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFormRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifyuibuilder.UpdateFormOutput)
+	return ret0, ret1
+}
+
+// UpdateFormRequest indicates an expected call of UpdateFormRequest
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) UpdateFormRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFormRequest", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).UpdateFormRequest), arg0)
+}
+
+// UpdateFormWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) UpdateFormWithContext(arg0 context.Context, arg1 *amplifyuibuilder.UpdateFormInput, arg2 ...request.Option) (*amplifyuibuilder.UpdateFormOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFormWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifyuibuilder.UpdateFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFormWithContext indicates an expected call of UpdateFormWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) UpdateFormWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFormWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).UpdateFormWithContext), varargs...)
 }
 
 // UpdateTheme mocks base method
