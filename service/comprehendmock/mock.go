@@ -285,6 +285,56 @@ func (mr *MockComprehendAPIMockRecorder) BatchDetectSyntaxWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDetectSyntaxWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).BatchDetectSyntaxWithContext), varargs...)
 }
 
+// BatchDetectTargetedSentiment mocks base method
+func (m *MockComprehendAPI) BatchDetectTargetedSentiment(arg0 *comprehend.BatchDetectTargetedSentimentInput) (*comprehend.BatchDetectTargetedSentimentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDetectTargetedSentiment", arg0)
+	ret0, _ := ret[0].(*comprehend.BatchDetectTargetedSentimentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDetectTargetedSentiment indicates an expected call of BatchDetectTargetedSentiment
+func (mr *MockComprehendAPIMockRecorder) BatchDetectTargetedSentiment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDetectTargetedSentiment", reflect.TypeOf((*MockComprehendAPI)(nil).BatchDetectTargetedSentiment), arg0)
+}
+
+// BatchDetectTargetedSentimentRequest mocks base method
+func (m *MockComprehendAPI) BatchDetectTargetedSentimentRequest(arg0 *comprehend.BatchDetectTargetedSentimentInput) (*request.Request, *comprehend.BatchDetectTargetedSentimentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDetectTargetedSentimentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.BatchDetectTargetedSentimentOutput)
+	return ret0, ret1
+}
+
+// BatchDetectTargetedSentimentRequest indicates an expected call of BatchDetectTargetedSentimentRequest
+func (mr *MockComprehendAPIMockRecorder) BatchDetectTargetedSentimentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDetectTargetedSentimentRequest", reflect.TypeOf((*MockComprehendAPI)(nil).BatchDetectTargetedSentimentRequest), arg0)
+}
+
+// BatchDetectTargetedSentimentWithContext mocks base method
+func (m *MockComprehendAPI) BatchDetectTargetedSentimentWithContext(arg0 context.Context, arg1 *comprehend.BatchDetectTargetedSentimentInput, arg2 ...request.Option) (*comprehend.BatchDetectTargetedSentimentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDetectTargetedSentimentWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.BatchDetectTargetedSentimentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDetectTargetedSentimentWithContext indicates an expected call of BatchDetectTargetedSentimentWithContext
+func (mr *MockComprehendAPIMockRecorder) BatchDetectTargetedSentimentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDetectTargetedSentimentWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).BatchDetectTargetedSentimentWithContext), varargs...)
+}
+
 // ClassifyDocument mocks base method
 func (m *MockComprehendAPI) ClassifyDocument(arg0 *comprehend.ClassifyDocumentInput) (*comprehend.ClassifyDocumentOutput, error) {
 	m.ctrl.T.Helper()
@@ -1683,6 +1733,56 @@ func (mr *MockComprehendAPIMockRecorder) DetectSyntaxWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectSyntaxWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DetectSyntaxWithContext), varargs...)
+}
+
+// DetectTargetedSentiment mocks base method
+func (m *MockComprehendAPI) DetectTargetedSentiment(arg0 *comprehend.DetectTargetedSentimentInput) (*comprehend.DetectTargetedSentimentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetectTargetedSentiment", arg0)
+	ret0, _ := ret[0].(*comprehend.DetectTargetedSentimentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetectTargetedSentiment indicates an expected call of DetectTargetedSentiment
+func (mr *MockComprehendAPIMockRecorder) DetectTargetedSentiment(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectTargetedSentiment", reflect.TypeOf((*MockComprehendAPI)(nil).DetectTargetedSentiment), arg0)
+}
+
+// DetectTargetedSentimentRequest mocks base method
+func (m *MockComprehendAPI) DetectTargetedSentimentRequest(arg0 *comprehend.DetectTargetedSentimentInput) (*request.Request, *comprehend.DetectTargetedSentimentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DetectTargetedSentimentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DetectTargetedSentimentOutput)
+	return ret0, ret1
+}
+
+// DetectTargetedSentimentRequest indicates an expected call of DetectTargetedSentimentRequest
+func (mr *MockComprehendAPIMockRecorder) DetectTargetedSentimentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectTargetedSentimentRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DetectTargetedSentimentRequest), arg0)
+}
+
+// DetectTargetedSentimentWithContext mocks base method
+func (m *MockComprehendAPI) DetectTargetedSentimentWithContext(arg0 context.Context, arg1 *comprehend.DetectTargetedSentimentInput, arg2 ...request.Option) (*comprehend.DetectTargetedSentimentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DetectTargetedSentimentWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DetectTargetedSentimentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DetectTargetedSentimentWithContext indicates an expected call of DetectTargetedSentimentWithContext
+func (mr *MockComprehendAPIMockRecorder) DetectTargetedSentimentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectTargetedSentimentWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DetectTargetedSentimentWithContext), varargs...)
 }
 
 // ImportModel mocks base method

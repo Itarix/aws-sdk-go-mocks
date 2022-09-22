@@ -1565,6 +1565,56 @@ func (mr *MockS3ControlAPIMockRecorder) GetBucketTaggingWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketTaggingWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketTaggingWithContext), varargs...)
 }
 
+// GetBucketVersioning mocks base method
+func (m *MockS3ControlAPI) GetBucketVersioning(arg0 *s3control.GetBucketVersioningInput) (*s3control.GetBucketVersioningOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBucketVersioning", arg0)
+	ret0, _ := ret[0].(*s3control.GetBucketVersioningOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBucketVersioning indicates an expected call of GetBucketVersioning
+func (mr *MockS3ControlAPIMockRecorder) GetBucketVersioning(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketVersioning", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketVersioning), arg0)
+}
+
+// GetBucketVersioningRequest mocks base method
+func (m *MockS3ControlAPI) GetBucketVersioningRequest(arg0 *s3control.GetBucketVersioningInput) (*request.Request, *s3control.GetBucketVersioningOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBucketVersioningRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.GetBucketVersioningOutput)
+	return ret0, ret1
+}
+
+// GetBucketVersioningRequest indicates an expected call of GetBucketVersioningRequest
+func (mr *MockS3ControlAPIMockRecorder) GetBucketVersioningRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketVersioningRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketVersioningRequest), arg0)
+}
+
+// GetBucketVersioningWithContext mocks base method
+func (m *MockS3ControlAPI) GetBucketVersioningWithContext(arg0 context.Context, arg1 *s3control.GetBucketVersioningInput, arg2 ...request.Option) (*s3control.GetBucketVersioningOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetBucketVersioningWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.GetBucketVersioningOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBucketVersioningWithContext indicates an expected call of GetBucketVersioningWithContext
+func (mr *MockS3ControlAPIMockRecorder) GetBucketVersioningWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBucketVersioningWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetBucketVersioningWithContext), varargs...)
+}
+
 // GetBucketWithContext mocks base method
 func (m *MockS3ControlAPI) GetBucketWithContext(arg0 context.Context, arg1 *s3control.GetBucketInput, arg2 ...request.Option) (*s3control.GetBucketOutput, error) {
 	m.ctrl.T.Helper()
@@ -2731,6 +2781,56 @@ func (mr *MockS3ControlAPIMockRecorder) PutBucketTaggingWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBucketTaggingWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).PutBucketTaggingWithContext), varargs...)
+}
+
+// PutBucketVersioning mocks base method
+func (m *MockS3ControlAPI) PutBucketVersioning(arg0 *s3control.PutBucketVersioningInput) (*s3control.PutBucketVersioningOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutBucketVersioning", arg0)
+	ret0, _ := ret[0].(*s3control.PutBucketVersioningOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutBucketVersioning indicates an expected call of PutBucketVersioning
+func (mr *MockS3ControlAPIMockRecorder) PutBucketVersioning(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBucketVersioning", reflect.TypeOf((*MockS3ControlAPI)(nil).PutBucketVersioning), arg0)
+}
+
+// PutBucketVersioningRequest mocks base method
+func (m *MockS3ControlAPI) PutBucketVersioningRequest(arg0 *s3control.PutBucketVersioningInput) (*request.Request, *s3control.PutBucketVersioningOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutBucketVersioningRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.PutBucketVersioningOutput)
+	return ret0, ret1
+}
+
+// PutBucketVersioningRequest indicates an expected call of PutBucketVersioningRequest
+func (mr *MockS3ControlAPIMockRecorder) PutBucketVersioningRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBucketVersioningRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).PutBucketVersioningRequest), arg0)
+}
+
+// PutBucketVersioningWithContext mocks base method
+func (m *MockS3ControlAPI) PutBucketVersioningWithContext(arg0 context.Context, arg1 *s3control.PutBucketVersioningInput, arg2 ...request.Option) (*s3control.PutBucketVersioningOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutBucketVersioningWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.PutBucketVersioningOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutBucketVersioningWithContext indicates an expected call of PutBucketVersioningWithContext
+func (mr *MockS3ControlAPIMockRecorder) PutBucketVersioningWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBucketVersioningWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).PutBucketVersioningWithContext), varargs...)
 }
 
 // PutJobTagging mocks base method
