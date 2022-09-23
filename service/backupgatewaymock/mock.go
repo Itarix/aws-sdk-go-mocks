@@ -335,6 +335,56 @@ func (mr *MockBackupGatewayAPIMockRecorder) GetGatewayWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetGatewayWithContext), varargs...)
 }
 
+// GetVirtualMachine mocks base method
+func (m *MockBackupGatewayAPI) GetVirtualMachine(arg0 *backupgateway.GetVirtualMachineInput) (*backupgateway.GetVirtualMachineOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVirtualMachine", arg0)
+	ret0, _ := ret[0].(*backupgateway.GetVirtualMachineOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVirtualMachine indicates an expected call of GetVirtualMachine
+func (mr *MockBackupGatewayAPIMockRecorder) GetVirtualMachine(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVirtualMachine", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetVirtualMachine), arg0)
+}
+
+// GetVirtualMachineRequest mocks base method
+func (m *MockBackupGatewayAPI) GetVirtualMachineRequest(arg0 *backupgateway.GetVirtualMachineInput) (*request.Request, *backupgateway.GetVirtualMachineOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVirtualMachineRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backupgateway.GetVirtualMachineOutput)
+	return ret0, ret1
+}
+
+// GetVirtualMachineRequest indicates an expected call of GetVirtualMachineRequest
+func (mr *MockBackupGatewayAPIMockRecorder) GetVirtualMachineRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVirtualMachineRequest", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetVirtualMachineRequest), arg0)
+}
+
+// GetVirtualMachineWithContext mocks base method
+func (m *MockBackupGatewayAPI) GetVirtualMachineWithContext(arg0 context.Context, arg1 *backupgateway.GetVirtualMachineInput, arg2 ...request.Option) (*backupgateway.GetVirtualMachineOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetVirtualMachineWithContext", varargs...)
+	ret0, _ := ret[0].(*backupgateway.GetVirtualMachineOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVirtualMachineWithContext indicates an expected call of GetVirtualMachineWithContext
+func (mr *MockBackupGatewayAPIMockRecorder) GetVirtualMachineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVirtualMachineWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetVirtualMachineWithContext), varargs...)
+}
+
 // ImportHypervisorConfiguration mocks base method
 func (m *MockBackupGatewayAPI) ImportHypervisorConfiguration(arg0 *backupgateway.ImportHypervisorConfigurationInput) (*backupgateway.ImportHypervisorConfigurationOutput, error) {
 	m.ctrl.T.Helper()
