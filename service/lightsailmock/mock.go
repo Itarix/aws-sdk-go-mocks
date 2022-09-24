@@ -7585,6 +7585,56 @@ func (mr *MockLightsailAPIMockRecorder) UpdateDomainEntryWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainEntryWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).UpdateDomainEntryWithContext), varargs...)
 }
 
+// UpdateInstanceMetadataOptions mocks base method
+func (m *MockLightsailAPI) UpdateInstanceMetadataOptions(arg0 *lightsail.UpdateInstanceMetadataOptionsInput) (*lightsail.UpdateInstanceMetadataOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateInstanceMetadataOptions", arg0)
+	ret0, _ := ret[0].(*lightsail.UpdateInstanceMetadataOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateInstanceMetadataOptions indicates an expected call of UpdateInstanceMetadataOptions
+func (mr *MockLightsailAPIMockRecorder) UpdateInstanceMetadataOptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceMetadataOptions", reflect.TypeOf((*MockLightsailAPI)(nil).UpdateInstanceMetadataOptions), arg0)
+}
+
+// UpdateInstanceMetadataOptionsRequest mocks base method
+func (m *MockLightsailAPI) UpdateInstanceMetadataOptionsRequest(arg0 *lightsail.UpdateInstanceMetadataOptionsInput) (*request.Request, *lightsail.UpdateInstanceMetadataOptionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateInstanceMetadataOptionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.UpdateInstanceMetadataOptionsOutput)
+	return ret0, ret1
+}
+
+// UpdateInstanceMetadataOptionsRequest indicates an expected call of UpdateInstanceMetadataOptionsRequest
+func (mr *MockLightsailAPIMockRecorder) UpdateInstanceMetadataOptionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceMetadataOptionsRequest", reflect.TypeOf((*MockLightsailAPI)(nil).UpdateInstanceMetadataOptionsRequest), arg0)
+}
+
+// UpdateInstanceMetadataOptionsWithContext mocks base method
+func (m *MockLightsailAPI) UpdateInstanceMetadataOptionsWithContext(arg0 context.Context, arg1 *lightsail.UpdateInstanceMetadataOptionsInput, arg2 ...request.Option) (*lightsail.UpdateInstanceMetadataOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateInstanceMetadataOptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.UpdateInstanceMetadataOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateInstanceMetadataOptionsWithContext indicates an expected call of UpdateInstanceMetadataOptionsWithContext
+func (mr *MockLightsailAPIMockRecorder) UpdateInstanceMetadataOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceMetadataOptionsWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).UpdateInstanceMetadataOptionsWithContext), varargs...)
+}
+
 // UpdateLoadBalancerAttribute mocks base method
 func (m *MockLightsailAPI) UpdateLoadBalancerAttribute(arg0 *lightsail.UpdateLoadBalancerAttributeInput) (*lightsail.UpdateLoadBalancerAttributeOutput, error) {
 	m.ctrl.T.Helper()
