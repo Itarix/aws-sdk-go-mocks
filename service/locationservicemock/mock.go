@@ -1668,6 +1668,56 @@ func (mr *MockLocationServiceAPIMockRecorder) GetMapTileWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMapTileWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).GetMapTileWithContext), varargs...)
 }
 
+// GetPlace mocks base method
+func (m *MockLocationServiceAPI) GetPlace(arg0 *locationservice.GetPlaceInput) (*locationservice.GetPlaceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPlace", arg0)
+	ret0, _ := ret[0].(*locationservice.GetPlaceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPlace indicates an expected call of GetPlace
+func (mr *MockLocationServiceAPIMockRecorder) GetPlace(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPlace", reflect.TypeOf((*MockLocationServiceAPI)(nil).GetPlace), arg0)
+}
+
+// GetPlaceRequest mocks base method
+func (m *MockLocationServiceAPI) GetPlaceRequest(arg0 *locationservice.GetPlaceInput) (*request.Request, *locationservice.GetPlaceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPlaceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*locationservice.GetPlaceOutput)
+	return ret0, ret1
+}
+
+// GetPlaceRequest indicates an expected call of GetPlaceRequest
+func (mr *MockLocationServiceAPIMockRecorder) GetPlaceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPlaceRequest", reflect.TypeOf((*MockLocationServiceAPI)(nil).GetPlaceRequest), arg0)
+}
+
+// GetPlaceWithContext mocks base method
+func (m *MockLocationServiceAPI) GetPlaceWithContext(arg0 context.Context, arg1 *locationservice.GetPlaceInput, arg2 ...request.Option) (*locationservice.GetPlaceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPlaceWithContext", varargs...)
+	ret0, _ := ret[0].(*locationservice.GetPlaceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPlaceWithContext indicates an expected call of GetPlaceWithContext
+func (mr *MockLocationServiceAPIMockRecorder) GetPlaceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPlaceWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).GetPlaceWithContext), varargs...)
+}
+
 // ListDevicePositions mocks base method
 func (m *MockLocationServiceAPI) ListDevicePositions(arg0 *locationservice.ListDevicePositionsInput) (*locationservice.ListDevicePositionsOutput, error) {
 	m.ctrl.T.Helper()
