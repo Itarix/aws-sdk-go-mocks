@@ -551,6 +551,56 @@ func (mr *MockTranslateAPIMockRecorder) ListParallelDataWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListParallelDataWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).ListParallelDataWithContext), varargs...)
 }
 
+// ListTagsForResource mocks base method
+func (m *MockTranslateAPI) ListTagsForResource(arg0 *translate.ListTagsForResourceInput) (*translate.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*translate.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockTranslateAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockTranslateAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockTranslateAPI) ListTagsForResourceRequest(arg0 *translate.ListTagsForResourceInput) (*request.Request, *translate.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*translate.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockTranslateAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockTranslateAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockTranslateAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *translate.ListTagsForResourceInput, arg2 ...request.Option) (*translate.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*translate.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockTranslateAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
 // ListTerminologies mocks base method
 func (m *MockTranslateAPI) ListTerminologies(arg0 *translate.ListTerminologiesInput) (*translate.ListTerminologiesOutput, error) {
 	m.ctrl.T.Helper()
@@ -817,6 +867,56 @@ func (mr *MockTranslateAPIMockRecorder) StopTextTranslationJobWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopTextTranslationJobWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).StopTextTranslationJobWithContext), varargs...)
 }
 
+// TagResource mocks base method
+func (m *MockTranslateAPI) TagResource(arg0 *translate.TagResourceInput) (*translate.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*translate.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockTranslateAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockTranslateAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockTranslateAPI) TagResourceRequest(arg0 *translate.TagResourceInput) (*request.Request, *translate.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*translate.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockTranslateAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockTranslateAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockTranslateAPI) TagResourceWithContext(arg0 context.Context, arg1 *translate.TagResourceInput, arg2 ...request.Option) (*translate.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*translate.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockTranslateAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).TagResourceWithContext), varargs...)
+}
+
 // Text mocks base method
 func (m *MockTranslateAPI) Text(arg0 *translate.TextInput) (*translate.TextOutput, error) {
 	m.ctrl.T.Helper()
@@ -865,6 +965,56 @@ func (mr *MockTranslateAPIMockRecorder) TextWithContext(arg0, arg1 interface{}, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TextWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).TextWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockTranslateAPI) UntagResource(arg0 *translate.UntagResourceInput) (*translate.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*translate.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockTranslateAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockTranslateAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockTranslateAPI) UntagResourceRequest(arg0 *translate.UntagResourceInput) (*request.Request, *translate.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*translate.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockTranslateAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockTranslateAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockTranslateAPI) UntagResourceWithContext(arg0 context.Context, arg1 *translate.UntagResourceInput, arg2 ...request.Option) (*translate.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*translate.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockTranslateAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
 // UpdateParallelData mocks base method

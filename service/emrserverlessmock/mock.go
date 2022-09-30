@@ -235,6 +235,56 @@ func (mr *MockEMRServerlessAPIMockRecorder) GetApplicationWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetApplicationWithContext", reflect.TypeOf((*MockEMRServerlessAPI)(nil).GetApplicationWithContext), varargs...)
 }
 
+// GetDashboardForJobRun mocks base method
+func (m *MockEMRServerlessAPI) GetDashboardForJobRun(arg0 *emrserverless.GetDashboardForJobRunInput) (*emrserverless.GetDashboardForJobRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDashboardForJobRun", arg0)
+	ret0, _ := ret[0].(*emrserverless.GetDashboardForJobRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDashboardForJobRun indicates an expected call of GetDashboardForJobRun
+func (mr *MockEMRServerlessAPIMockRecorder) GetDashboardForJobRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDashboardForJobRun", reflect.TypeOf((*MockEMRServerlessAPI)(nil).GetDashboardForJobRun), arg0)
+}
+
+// GetDashboardForJobRunRequest mocks base method
+func (m *MockEMRServerlessAPI) GetDashboardForJobRunRequest(arg0 *emrserverless.GetDashboardForJobRunInput) (*request.Request, *emrserverless.GetDashboardForJobRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDashboardForJobRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emrserverless.GetDashboardForJobRunOutput)
+	return ret0, ret1
+}
+
+// GetDashboardForJobRunRequest indicates an expected call of GetDashboardForJobRunRequest
+func (mr *MockEMRServerlessAPIMockRecorder) GetDashboardForJobRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDashboardForJobRunRequest", reflect.TypeOf((*MockEMRServerlessAPI)(nil).GetDashboardForJobRunRequest), arg0)
+}
+
+// GetDashboardForJobRunWithContext mocks base method
+func (m *MockEMRServerlessAPI) GetDashboardForJobRunWithContext(arg0 context.Context, arg1 *emrserverless.GetDashboardForJobRunInput, arg2 ...request.Option) (*emrserverless.GetDashboardForJobRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDashboardForJobRunWithContext", varargs...)
+	ret0, _ := ret[0].(*emrserverless.GetDashboardForJobRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDashboardForJobRunWithContext indicates an expected call of GetDashboardForJobRunWithContext
+func (mr *MockEMRServerlessAPIMockRecorder) GetDashboardForJobRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDashboardForJobRunWithContext", reflect.TypeOf((*MockEMRServerlessAPI)(nil).GetDashboardForJobRunWithContext), varargs...)
+}
+
 // GetJobRun mocks base method
 func (m *MockEMRServerlessAPI) GetJobRun(arg0 *emrserverless.GetJobRunInput) (*emrserverless.GetJobRunOutput, error) {
 	m.ctrl.T.Helper()
