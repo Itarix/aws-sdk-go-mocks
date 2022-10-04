@@ -883,6 +883,39 @@ func (mr *MockSnowballAPIMockRecorder) ListClusterJobs(arg0 interface{}) *gomock
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClusterJobs", reflect.TypeOf((*MockSnowballAPI)(nil).ListClusterJobs), arg0)
 }
 
+// ListClusterJobsPages mocks base method
+func (m *MockSnowballAPI) ListClusterJobsPages(arg0 *snowball.ListClusterJobsInput, arg1 func(*snowball.ListClusterJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListClusterJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListClusterJobsPages indicates an expected call of ListClusterJobsPages
+func (mr *MockSnowballAPIMockRecorder) ListClusterJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClusterJobsPages", reflect.TypeOf((*MockSnowballAPI)(nil).ListClusterJobsPages), arg0, arg1)
+}
+
+// ListClusterJobsPagesWithContext mocks base method
+func (m *MockSnowballAPI) ListClusterJobsPagesWithContext(arg0 context.Context, arg1 *snowball.ListClusterJobsInput, arg2 func(*snowball.ListClusterJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListClusterJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListClusterJobsPagesWithContext indicates an expected call of ListClusterJobsPagesWithContext
+func (mr *MockSnowballAPIMockRecorder) ListClusterJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClusterJobsPagesWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).ListClusterJobsPagesWithContext), varargs...)
+}
+
 // ListClusterJobsRequest mocks base method
 func (m *MockSnowballAPI) ListClusterJobsRequest(arg0 *snowball.ListClusterJobsInput) (*request.Request, *snowball.ListClusterJobsOutput) {
 	m.ctrl.T.Helper()
@@ -933,6 +966,39 @@ func (mr *MockSnowballAPIMockRecorder) ListClusters(arg0 interface{}) *gomock.Ca
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClusters", reflect.TypeOf((*MockSnowballAPI)(nil).ListClusters), arg0)
 }
 
+// ListClustersPages mocks base method
+func (m *MockSnowballAPI) ListClustersPages(arg0 *snowball.ListClustersInput, arg1 func(*snowball.ListClustersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListClustersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListClustersPages indicates an expected call of ListClustersPages
+func (mr *MockSnowballAPIMockRecorder) ListClustersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClustersPages", reflect.TypeOf((*MockSnowballAPI)(nil).ListClustersPages), arg0, arg1)
+}
+
+// ListClustersPagesWithContext mocks base method
+func (m *MockSnowballAPI) ListClustersPagesWithContext(arg0 context.Context, arg1 *snowball.ListClustersInput, arg2 func(*snowball.ListClustersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListClustersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListClustersPagesWithContext indicates an expected call of ListClustersPagesWithContext
+func (mr *MockSnowballAPIMockRecorder) ListClustersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClustersPagesWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).ListClustersPagesWithContext), varargs...)
+}
+
 // ListClustersRequest mocks base method
 func (m *MockSnowballAPI) ListClustersRequest(arg0 *snowball.ListClustersInput) (*request.Request, *snowball.ListClustersOutput) {
 	m.ctrl.T.Helper()
@@ -981,6 +1047,39 @@ func (m *MockSnowballAPI) ListCompatibleImages(arg0 *snowball.ListCompatibleImag
 func (mr *MockSnowballAPIMockRecorder) ListCompatibleImages(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCompatibleImages", reflect.TypeOf((*MockSnowballAPI)(nil).ListCompatibleImages), arg0)
+}
+
+// ListCompatibleImagesPages mocks base method
+func (m *MockSnowballAPI) ListCompatibleImagesPages(arg0 *snowball.ListCompatibleImagesInput, arg1 func(*snowball.ListCompatibleImagesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCompatibleImagesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCompatibleImagesPages indicates an expected call of ListCompatibleImagesPages
+func (mr *MockSnowballAPIMockRecorder) ListCompatibleImagesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCompatibleImagesPages", reflect.TypeOf((*MockSnowballAPI)(nil).ListCompatibleImagesPages), arg0, arg1)
+}
+
+// ListCompatibleImagesPagesWithContext mocks base method
+func (m *MockSnowballAPI) ListCompatibleImagesPagesWithContext(arg0 context.Context, arg1 *snowball.ListCompatibleImagesInput, arg2 func(*snowball.ListCompatibleImagesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCompatibleImagesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCompatibleImagesPagesWithContext indicates an expected call of ListCompatibleImagesPagesWithContext
+func (mr *MockSnowballAPIMockRecorder) ListCompatibleImagesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCompatibleImagesPagesWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).ListCompatibleImagesPagesWithContext), varargs...)
 }
 
 // ListCompatibleImagesRequest mocks base method
@@ -1114,6 +1213,39 @@ func (m *MockSnowballAPI) ListLongTermPricing(arg0 *snowball.ListLongTermPricing
 func (mr *MockSnowballAPIMockRecorder) ListLongTermPricing(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLongTermPricing", reflect.TypeOf((*MockSnowballAPI)(nil).ListLongTermPricing), arg0)
+}
+
+// ListLongTermPricingPages mocks base method
+func (m *MockSnowballAPI) ListLongTermPricingPages(arg0 *snowball.ListLongTermPricingInput, arg1 func(*snowball.ListLongTermPricingOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLongTermPricingPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLongTermPricingPages indicates an expected call of ListLongTermPricingPages
+func (mr *MockSnowballAPIMockRecorder) ListLongTermPricingPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLongTermPricingPages", reflect.TypeOf((*MockSnowballAPI)(nil).ListLongTermPricingPages), arg0, arg1)
+}
+
+// ListLongTermPricingPagesWithContext mocks base method
+func (m *MockSnowballAPI) ListLongTermPricingPagesWithContext(arg0 context.Context, arg1 *snowball.ListLongTermPricingInput, arg2 func(*snowball.ListLongTermPricingOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLongTermPricingPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLongTermPricingPagesWithContext indicates an expected call of ListLongTermPricingPagesWithContext
+func (mr *MockSnowballAPIMockRecorder) ListLongTermPricingPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLongTermPricingPagesWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).ListLongTermPricingPagesWithContext), varargs...)
 }
 
 // ListLongTermPricingRequest mocks base method
