@@ -135,6 +135,56 @@ func (mr *MockWorkMailAPIMockRecorder) AssociateMemberToGroupWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateMemberToGroupWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).AssociateMemberToGroupWithContext), varargs...)
 }
 
+// AssumeImpersonationRole mocks base method
+func (m *MockWorkMailAPI) AssumeImpersonationRole(arg0 *workmail.AssumeImpersonationRoleInput) (*workmail.AssumeImpersonationRoleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssumeImpersonationRole", arg0)
+	ret0, _ := ret[0].(*workmail.AssumeImpersonationRoleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssumeImpersonationRole indicates an expected call of AssumeImpersonationRole
+func (mr *MockWorkMailAPIMockRecorder) AssumeImpersonationRole(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssumeImpersonationRole", reflect.TypeOf((*MockWorkMailAPI)(nil).AssumeImpersonationRole), arg0)
+}
+
+// AssumeImpersonationRoleRequest mocks base method
+func (m *MockWorkMailAPI) AssumeImpersonationRoleRequest(arg0 *workmail.AssumeImpersonationRoleInput) (*request.Request, *workmail.AssumeImpersonationRoleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssumeImpersonationRoleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.AssumeImpersonationRoleOutput)
+	return ret0, ret1
+}
+
+// AssumeImpersonationRoleRequest indicates an expected call of AssumeImpersonationRoleRequest
+func (mr *MockWorkMailAPIMockRecorder) AssumeImpersonationRoleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssumeImpersonationRoleRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).AssumeImpersonationRoleRequest), arg0)
+}
+
+// AssumeImpersonationRoleWithContext mocks base method
+func (m *MockWorkMailAPI) AssumeImpersonationRoleWithContext(arg0 context.Context, arg1 *workmail.AssumeImpersonationRoleInput, arg2 ...request.Option) (*workmail.AssumeImpersonationRoleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssumeImpersonationRoleWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.AssumeImpersonationRoleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssumeImpersonationRoleWithContext indicates an expected call of AssumeImpersonationRoleWithContext
+func (mr *MockWorkMailAPIMockRecorder) AssumeImpersonationRoleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssumeImpersonationRoleWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).AssumeImpersonationRoleWithContext), varargs...)
+}
+
 // CancelMailboxExportJob mocks base method
 func (m *MockWorkMailAPI) CancelMailboxExportJob(arg0 *workmail.CancelMailboxExportJobInput) (*workmail.CancelMailboxExportJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +383,56 @@ func (mr *MockWorkMailAPIMockRecorder) CreateGroupWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGroupWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).CreateGroupWithContext), varargs...)
+}
+
+// CreateImpersonationRole mocks base method
+func (m *MockWorkMailAPI) CreateImpersonationRole(arg0 *workmail.CreateImpersonationRoleInput) (*workmail.CreateImpersonationRoleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateImpersonationRole", arg0)
+	ret0, _ := ret[0].(*workmail.CreateImpersonationRoleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateImpersonationRole indicates an expected call of CreateImpersonationRole
+func (mr *MockWorkMailAPIMockRecorder) CreateImpersonationRole(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateImpersonationRole", reflect.TypeOf((*MockWorkMailAPI)(nil).CreateImpersonationRole), arg0)
+}
+
+// CreateImpersonationRoleRequest mocks base method
+func (m *MockWorkMailAPI) CreateImpersonationRoleRequest(arg0 *workmail.CreateImpersonationRoleInput) (*request.Request, *workmail.CreateImpersonationRoleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateImpersonationRoleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.CreateImpersonationRoleOutput)
+	return ret0, ret1
+}
+
+// CreateImpersonationRoleRequest indicates an expected call of CreateImpersonationRoleRequest
+func (mr *MockWorkMailAPIMockRecorder) CreateImpersonationRoleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateImpersonationRoleRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).CreateImpersonationRoleRequest), arg0)
+}
+
+// CreateImpersonationRoleWithContext mocks base method
+func (m *MockWorkMailAPI) CreateImpersonationRoleWithContext(arg0 context.Context, arg1 *workmail.CreateImpersonationRoleInput, arg2 ...request.Option) (*workmail.CreateImpersonationRoleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateImpersonationRoleWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.CreateImpersonationRoleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateImpersonationRoleWithContext indicates an expected call of CreateImpersonationRoleWithContext
+func (mr *MockWorkMailAPIMockRecorder) CreateImpersonationRoleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateImpersonationRoleWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).CreateImpersonationRoleWithContext), varargs...)
 }
 
 // CreateMobileDeviceAccessRule mocks base method
@@ -783,6 +883,56 @@ func (mr *MockWorkMailAPIMockRecorder) DeleteGroupWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGroupWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteGroupWithContext), varargs...)
+}
+
+// DeleteImpersonationRole mocks base method
+func (m *MockWorkMailAPI) DeleteImpersonationRole(arg0 *workmail.DeleteImpersonationRoleInput) (*workmail.DeleteImpersonationRoleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteImpersonationRole", arg0)
+	ret0, _ := ret[0].(*workmail.DeleteImpersonationRoleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteImpersonationRole indicates an expected call of DeleteImpersonationRole
+func (mr *MockWorkMailAPIMockRecorder) DeleteImpersonationRole(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteImpersonationRole", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteImpersonationRole), arg0)
+}
+
+// DeleteImpersonationRoleRequest mocks base method
+func (m *MockWorkMailAPI) DeleteImpersonationRoleRequest(arg0 *workmail.DeleteImpersonationRoleInput) (*request.Request, *workmail.DeleteImpersonationRoleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteImpersonationRoleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.DeleteImpersonationRoleOutput)
+	return ret0, ret1
+}
+
+// DeleteImpersonationRoleRequest indicates an expected call of DeleteImpersonationRoleRequest
+func (mr *MockWorkMailAPIMockRecorder) DeleteImpersonationRoleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteImpersonationRoleRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteImpersonationRoleRequest), arg0)
+}
+
+// DeleteImpersonationRoleWithContext mocks base method
+func (m *MockWorkMailAPI) DeleteImpersonationRoleWithContext(arg0 context.Context, arg1 *workmail.DeleteImpersonationRoleInput, arg2 ...request.Option) (*workmail.DeleteImpersonationRoleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteImpersonationRoleWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.DeleteImpersonationRoleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteImpersonationRoleWithContext indicates an expected call of DeleteImpersonationRoleWithContext
+func (mr *MockWorkMailAPIMockRecorder) DeleteImpersonationRoleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteImpersonationRoleWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DeleteImpersonationRoleWithContext), varargs...)
 }
 
 // DeleteMailboxPermissions mocks base method
@@ -1785,6 +1935,106 @@ func (mr *MockWorkMailAPIMockRecorder) GetDefaultRetentionPolicyWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDefaultRetentionPolicyWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).GetDefaultRetentionPolicyWithContext), varargs...)
 }
 
+// GetImpersonationRole mocks base method
+func (m *MockWorkMailAPI) GetImpersonationRole(arg0 *workmail.GetImpersonationRoleInput) (*workmail.GetImpersonationRoleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetImpersonationRole", arg0)
+	ret0, _ := ret[0].(*workmail.GetImpersonationRoleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetImpersonationRole indicates an expected call of GetImpersonationRole
+func (mr *MockWorkMailAPIMockRecorder) GetImpersonationRole(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImpersonationRole", reflect.TypeOf((*MockWorkMailAPI)(nil).GetImpersonationRole), arg0)
+}
+
+// GetImpersonationRoleEffect mocks base method
+func (m *MockWorkMailAPI) GetImpersonationRoleEffect(arg0 *workmail.GetImpersonationRoleEffectInput) (*workmail.GetImpersonationRoleEffectOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetImpersonationRoleEffect", arg0)
+	ret0, _ := ret[0].(*workmail.GetImpersonationRoleEffectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetImpersonationRoleEffect indicates an expected call of GetImpersonationRoleEffect
+func (mr *MockWorkMailAPIMockRecorder) GetImpersonationRoleEffect(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImpersonationRoleEffect", reflect.TypeOf((*MockWorkMailAPI)(nil).GetImpersonationRoleEffect), arg0)
+}
+
+// GetImpersonationRoleEffectRequest mocks base method
+func (m *MockWorkMailAPI) GetImpersonationRoleEffectRequest(arg0 *workmail.GetImpersonationRoleEffectInput) (*request.Request, *workmail.GetImpersonationRoleEffectOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetImpersonationRoleEffectRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.GetImpersonationRoleEffectOutput)
+	return ret0, ret1
+}
+
+// GetImpersonationRoleEffectRequest indicates an expected call of GetImpersonationRoleEffectRequest
+func (mr *MockWorkMailAPIMockRecorder) GetImpersonationRoleEffectRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImpersonationRoleEffectRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).GetImpersonationRoleEffectRequest), arg0)
+}
+
+// GetImpersonationRoleEffectWithContext mocks base method
+func (m *MockWorkMailAPI) GetImpersonationRoleEffectWithContext(arg0 context.Context, arg1 *workmail.GetImpersonationRoleEffectInput, arg2 ...request.Option) (*workmail.GetImpersonationRoleEffectOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetImpersonationRoleEffectWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.GetImpersonationRoleEffectOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetImpersonationRoleEffectWithContext indicates an expected call of GetImpersonationRoleEffectWithContext
+func (mr *MockWorkMailAPIMockRecorder) GetImpersonationRoleEffectWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImpersonationRoleEffectWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).GetImpersonationRoleEffectWithContext), varargs...)
+}
+
+// GetImpersonationRoleRequest mocks base method
+func (m *MockWorkMailAPI) GetImpersonationRoleRequest(arg0 *workmail.GetImpersonationRoleInput) (*request.Request, *workmail.GetImpersonationRoleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetImpersonationRoleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.GetImpersonationRoleOutput)
+	return ret0, ret1
+}
+
+// GetImpersonationRoleRequest indicates an expected call of GetImpersonationRoleRequest
+func (mr *MockWorkMailAPIMockRecorder) GetImpersonationRoleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImpersonationRoleRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).GetImpersonationRoleRequest), arg0)
+}
+
+// GetImpersonationRoleWithContext mocks base method
+func (m *MockWorkMailAPI) GetImpersonationRoleWithContext(arg0 context.Context, arg1 *workmail.GetImpersonationRoleInput, arg2 ...request.Option) (*workmail.GetImpersonationRoleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetImpersonationRoleWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.GetImpersonationRoleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetImpersonationRoleWithContext indicates an expected call of GetImpersonationRoleWithContext
+func (mr *MockWorkMailAPIMockRecorder) GetImpersonationRoleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImpersonationRoleWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).GetImpersonationRoleWithContext), varargs...)
+}
+
 // GetMailDomain mocks base method
 func (m *MockWorkMailAPI) GetMailDomain(arg0 *workmail.GetMailDomainInput) (*workmail.GetMailDomainOutput, error) {
 	m.ctrl.T.Helper()
@@ -2365,6 +2615,89 @@ func (mr *MockWorkMailAPIMockRecorder) ListGroupsWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListGroupsWithContext), varargs...)
+}
+
+// ListImpersonationRoles mocks base method
+func (m *MockWorkMailAPI) ListImpersonationRoles(arg0 *workmail.ListImpersonationRolesInput) (*workmail.ListImpersonationRolesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListImpersonationRoles", arg0)
+	ret0, _ := ret[0].(*workmail.ListImpersonationRolesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListImpersonationRoles indicates an expected call of ListImpersonationRoles
+func (mr *MockWorkMailAPIMockRecorder) ListImpersonationRoles(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImpersonationRoles", reflect.TypeOf((*MockWorkMailAPI)(nil).ListImpersonationRoles), arg0)
+}
+
+// ListImpersonationRolesPages mocks base method
+func (m *MockWorkMailAPI) ListImpersonationRolesPages(arg0 *workmail.ListImpersonationRolesInput, arg1 func(*workmail.ListImpersonationRolesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListImpersonationRolesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListImpersonationRolesPages indicates an expected call of ListImpersonationRolesPages
+func (mr *MockWorkMailAPIMockRecorder) ListImpersonationRolesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImpersonationRolesPages", reflect.TypeOf((*MockWorkMailAPI)(nil).ListImpersonationRolesPages), arg0, arg1)
+}
+
+// ListImpersonationRolesPagesWithContext mocks base method
+func (m *MockWorkMailAPI) ListImpersonationRolesPagesWithContext(arg0 context.Context, arg1 *workmail.ListImpersonationRolesInput, arg2 func(*workmail.ListImpersonationRolesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListImpersonationRolesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListImpersonationRolesPagesWithContext indicates an expected call of ListImpersonationRolesPagesWithContext
+func (mr *MockWorkMailAPIMockRecorder) ListImpersonationRolesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImpersonationRolesPagesWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListImpersonationRolesPagesWithContext), varargs...)
+}
+
+// ListImpersonationRolesRequest mocks base method
+func (m *MockWorkMailAPI) ListImpersonationRolesRequest(arg0 *workmail.ListImpersonationRolesInput) (*request.Request, *workmail.ListImpersonationRolesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListImpersonationRolesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.ListImpersonationRolesOutput)
+	return ret0, ret1
+}
+
+// ListImpersonationRolesRequest indicates an expected call of ListImpersonationRolesRequest
+func (mr *MockWorkMailAPIMockRecorder) ListImpersonationRolesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImpersonationRolesRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).ListImpersonationRolesRequest), arg0)
+}
+
+// ListImpersonationRolesWithContext mocks base method
+func (m *MockWorkMailAPI) ListImpersonationRolesWithContext(arg0 context.Context, arg1 *workmail.ListImpersonationRolesInput, arg2 ...request.Option) (*workmail.ListImpersonationRolesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListImpersonationRolesWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.ListImpersonationRolesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListImpersonationRolesWithContext indicates an expected call of ListImpersonationRolesWithContext
+func (mr *MockWorkMailAPIMockRecorder) ListImpersonationRolesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImpersonationRolesWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListImpersonationRolesWithContext), varargs...)
 }
 
 // ListMailDomains mocks base method
@@ -3879,6 +4212,56 @@ func (mr *MockWorkMailAPIMockRecorder) UpdateDefaultMailDomainWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDefaultMailDomainWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateDefaultMailDomainWithContext), varargs...)
+}
+
+// UpdateImpersonationRole mocks base method
+func (m *MockWorkMailAPI) UpdateImpersonationRole(arg0 *workmail.UpdateImpersonationRoleInput) (*workmail.UpdateImpersonationRoleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateImpersonationRole", arg0)
+	ret0, _ := ret[0].(*workmail.UpdateImpersonationRoleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateImpersonationRole indicates an expected call of UpdateImpersonationRole
+func (mr *MockWorkMailAPIMockRecorder) UpdateImpersonationRole(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateImpersonationRole", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateImpersonationRole), arg0)
+}
+
+// UpdateImpersonationRoleRequest mocks base method
+func (m *MockWorkMailAPI) UpdateImpersonationRoleRequest(arg0 *workmail.UpdateImpersonationRoleInput) (*request.Request, *workmail.UpdateImpersonationRoleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateImpersonationRoleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.UpdateImpersonationRoleOutput)
+	return ret0, ret1
+}
+
+// UpdateImpersonationRoleRequest indicates an expected call of UpdateImpersonationRoleRequest
+func (mr *MockWorkMailAPIMockRecorder) UpdateImpersonationRoleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateImpersonationRoleRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateImpersonationRoleRequest), arg0)
+}
+
+// UpdateImpersonationRoleWithContext mocks base method
+func (m *MockWorkMailAPI) UpdateImpersonationRoleWithContext(arg0 context.Context, arg1 *workmail.UpdateImpersonationRoleInput, arg2 ...request.Option) (*workmail.UpdateImpersonationRoleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateImpersonationRoleWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.UpdateImpersonationRoleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateImpersonationRoleWithContext indicates an expected call of UpdateImpersonationRoleWithContext
+func (mr *MockWorkMailAPIMockRecorder) UpdateImpersonationRoleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateImpersonationRoleWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateImpersonationRoleWithContext), varargs...)
 }
 
 // UpdateMailboxQuota mocks base method
