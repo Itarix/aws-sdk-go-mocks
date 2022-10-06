@@ -9922,6 +9922,56 @@ func (mr *MockGlueAPIMockRecorder) UpdateJob(arg0 interface{}) *gomock.Call {
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJob", reflect.TypeOf((*MockGlueAPI)(nil).UpdateJob), arg0)
 }
 
+// UpdateJobFromSourceControl mocks base method
+func (m *MockGlueAPI) UpdateJobFromSourceControl(arg0 *glue.UpdateJobFromSourceControlInput) (*glue.UpdateJobFromSourceControlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateJobFromSourceControl", arg0)
+	ret0, _ := ret[0].(*glue.UpdateJobFromSourceControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateJobFromSourceControl indicates an expected call of UpdateJobFromSourceControl
+func (mr *MockGlueAPIMockRecorder) UpdateJobFromSourceControl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJobFromSourceControl", reflect.TypeOf((*MockGlueAPI)(nil).UpdateJobFromSourceControl), arg0)
+}
+
+// UpdateJobFromSourceControlRequest mocks base method
+func (m *MockGlueAPI) UpdateJobFromSourceControlRequest(arg0 *glue.UpdateJobFromSourceControlInput) (*request.Request, *glue.UpdateJobFromSourceControlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateJobFromSourceControlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.UpdateJobFromSourceControlOutput)
+	return ret0, ret1
+}
+
+// UpdateJobFromSourceControlRequest indicates an expected call of UpdateJobFromSourceControlRequest
+func (mr *MockGlueAPIMockRecorder) UpdateJobFromSourceControlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJobFromSourceControlRequest", reflect.TypeOf((*MockGlueAPI)(nil).UpdateJobFromSourceControlRequest), arg0)
+}
+
+// UpdateJobFromSourceControlWithContext mocks base method
+func (m *MockGlueAPI) UpdateJobFromSourceControlWithContext(arg0 context.Context, arg1 *glue.UpdateJobFromSourceControlInput, arg2 ...request.Option) (*glue.UpdateJobFromSourceControlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateJobFromSourceControlWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.UpdateJobFromSourceControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateJobFromSourceControlWithContext indicates an expected call of UpdateJobFromSourceControlWithContext
+func (mr *MockGlueAPIMockRecorder) UpdateJobFromSourceControlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateJobFromSourceControlWithContext", reflect.TypeOf((*MockGlueAPI)(nil).UpdateJobFromSourceControlWithContext), varargs...)
+}
+
 // UpdateJobRequest mocks base method
 func (m *MockGlueAPI) UpdateJobRequest(arg0 *glue.UpdateJobInput) (*request.Request, *glue.UpdateJobOutput) {
 	m.ctrl.T.Helper()
@@ -10155,6 +10205,56 @@ func (mr *MockGlueAPIMockRecorder) UpdateSchemaWithContext(arg0, arg1 interface{
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSchemaWithContext", reflect.TypeOf((*MockGlueAPI)(nil).UpdateSchemaWithContext), varargs...)
+}
+
+// UpdateSourceControlFromJob mocks base method
+func (m *MockGlueAPI) UpdateSourceControlFromJob(arg0 *glue.UpdateSourceControlFromJobInput) (*glue.UpdateSourceControlFromJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSourceControlFromJob", arg0)
+	ret0, _ := ret[0].(*glue.UpdateSourceControlFromJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSourceControlFromJob indicates an expected call of UpdateSourceControlFromJob
+func (mr *MockGlueAPIMockRecorder) UpdateSourceControlFromJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSourceControlFromJob", reflect.TypeOf((*MockGlueAPI)(nil).UpdateSourceControlFromJob), arg0)
+}
+
+// UpdateSourceControlFromJobRequest mocks base method
+func (m *MockGlueAPI) UpdateSourceControlFromJobRequest(arg0 *glue.UpdateSourceControlFromJobInput) (*request.Request, *glue.UpdateSourceControlFromJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSourceControlFromJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.UpdateSourceControlFromJobOutput)
+	return ret0, ret1
+}
+
+// UpdateSourceControlFromJobRequest indicates an expected call of UpdateSourceControlFromJobRequest
+func (mr *MockGlueAPIMockRecorder) UpdateSourceControlFromJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSourceControlFromJobRequest", reflect.TypeOf((*MockGlueAPI)(nil).UpdateSourceControlFromJobRequest), arg0)
+}
+
+// UpdateSourceControlFromJobWithContext mocks base method
+func (m *MockGlueAPI) UpdateSourceControlFromJobWithContext(arg0 context.Context, arg1 *glue.UpdateSourceControlFromJobInput, arg2 ...request.Option) (*glue.UpdateSourceControlFromJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSourceControlFromJobWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.UpdateSourceControlFromJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSourceControlFromJobWithContext indicates an expected call of UpdateSourceControlFromJobWithContext
+func (mr *MockGlueAPIMockRecorder) UpdateSourceControlFromJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSourceControlFromJobWithContext", reflect.TypeOf((*MockGlueAPI)(nil).UpdateSourceControlFromJobWithContext), varargs...)
 }
 
 // UpdateTable mocks base method
