@@ -1267,56 +1267,6 @@ func (mr *MockConnectWisdomServiceAPIMockRecorder) NotifyRecommendationsReceived
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyRecommendationsReceivedWithContext", reflect.TypeOf((*MockConnectWisdomServiceAPI)(nil).NotifyRecommendationsReceivedWithContext), varargs...)
 }
 
-// PutFeedback mocks base method
-func (m *MockConnectWisdomServiceAPI) PutFeedback(arg0 *connectwisdomservice.PutFeedbackInput) (*connectwisdomservice.PutFeedbackOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutFeedback", arg0)
-	ret0, _ := ret[0].(*connectwisdomservice.PutFeedbackOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutFeedback indicates an expected call of PutFeedback
-func (mr *MockConnectWisdomServiceAPIMockRecorder) PutFeedback(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFeedback", reflect.TypeOf((*MockConnectWisdomServiceAPI)(nil).PutFeedback), arg0)
-}
-
-// PutFeedbackRequest mocks base method
-func (m *MockConnectWisdomServiceAPI) PutFeedbackRequest(arg0 *connectwisdomservice.PutFeedbackInput) (*request.Request, *connectwisdomservice.PutFeedbackOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "PutFeedbackRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*connectwisdomservice.PutFeedbackOutput)
-	return ret0, ret1
-}
-
-// PutFeedbackRequest indicates an expected call of PutFeedbackRequest
-func (mr *MockConnectWisdomServiceAPIMockRecorder) PutFeedbackRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFeedbackRequest", reflect.TypeOf((*MockConnectWisdomServiceAPI)(nil).PutFeedbackRequest), arg0)
-}
-
-// PutFeedbackWithContext mocks base method
-func (m *MockConnectWisdomServiceAPI) PutFeedbackWithContext(arg0 context.Context, arg1 *connectwisdomservice.PutFeedbackInput, arg2 ...request.Option) (*connectwisdomservice.PutFeedbackOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "PutFeedbackWithContext", varargs...)
-	ret0, _ := ret[0].(*connectwisdomservice.PutFeedbackOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// PutFeedbackWithContext indicates an expected call of PutFeedbackWithContext
-func (mr *MockConnectWisdomServiceAPIMockRecorder) PutFeedbackWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutFeedbackWithContext", reflect.TypeOf((*MockConnectWisdomServiceAPI)(nil).PutFeedbackWithContext), varargs...)
-}
-
 // QueryAssistant mocks base method
 func (m *MockConnectWisdomServiceAPI) QueryAssistant(arg0 *connectwisdomservice.QueryAssistantInput) (*connectwisdomservice.QueryAssistantOutput, error) {
 	m.ctrl.T.Helper()

@@ -1150,6 +1150,39 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeClientAuthenticationSetti
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClientAuthenticationSettings", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeClientAuthenticationSettings), arg0)
 }
 
+// DescribeClientAuthenticationSettingsPages mocks base method
+func (m *MockDirectoryServiceAPI) DescribeClientAuthenticationSettingsPages(arg0 *directoryservice.DescribeClientAuthenticationSettingsInput, arg1 func(*directoryservice.DescribeClientAuthenticationSettingsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeClientAuthenticationSettingsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeClientAuthenticationSettingsPages indicates an expected call of DescribeClientAuthenticationSettingsPages
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeClientAuthenticationSettingsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClientAuthenticationSettingsPages", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeClientAuthenticationSettingsPages), arg0, arg1)
+}
+
+// DescribeClientAuthenticationSettingsPagesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeClientAuthenticationSettingsPagesWithContext(arg0 context.Context, arg1 *directoryservice.DescribeClientAuthenticationSettingsInput, arg2 func(*directoryservice.DescribeClientAuthenticationSettingsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeClientAuthenticationSettingsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeClientAuthenticationSettingsPagesWithContext indicates an expected call of DescribeClientAuthenticationSettingsPagesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeClientAuthenticationSettingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClientAuthenticationSettingsPagesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeClientAuthenticationSettingsPagesWithContext), varargs...)
+}
+
 // DescribeClientAuthenticationSettingsRequest mocks base method
 func (m *MockDirectoryServiceAPI) DescribeClientAuthenticationSettingsRequest(arg0 *directoryservice.DescribeClientAuthenticationSettingsInput) (*request.Request, *directoryservice.DescribeClientAuthenticationSettingsOutput) {
 	m.ctrl.T.Helper()
@@ -1248,6 +1281,39 @@ func (m *MockDirectoryServiceAPI) DescribeDirectories(arg0 *directoryservice.Des
 func (mr *MockDirectoryServiceAPIMockRecorder) DescribeDirectories(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDirectories", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeDirectories), arg0)
+}
+
+// DescribeDirectoriesPages mocks base method
+func (m *MockDirectoryServiceAPI) DescribeDirectoriesPages(arg0 *directoryservice.DescribeDirectoriesInput, arg1 func(*directoryservice.DescribeDirectoriesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDirectoriesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDirectoriesPages indicates an expected call of DescribeDirectoriesPages
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeDirectoriesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDirectoriesPages", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeDirectoriesPages), arg0, arg1)
+}
+
+// DescribeDirectoriesPagesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeDirectoriesPagesWithContext(arg0 context.Context, arg1 *directoryservice.DescribeDirectoriesInput, arg2 func(*directoryservice.DescribeDirectoriesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDirectoriesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeDirectoriesPagesWithContext indicates an expected call of DescribeDirectoriesPagesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeDirectoriesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDirectoriesPagesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeDirectoriesPagesWithContext), varargs...)
 }
 
 // DescribeDirectoriesRequest mocks base method
@@ -1433,6 +1499,39 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeLDAPSSettings(arg0 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLDAPSSettings", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeLDAPSSettings), arg0)
 }
 
+// DescribeLDAPSSettingsPages mocks base method
+func (m *MockDirectoryServiceAPI) DescribeLDAPSSettingsPages(arg0 *directoryservice.DescribeLDAPSSettingsInput, arg1 func(*directoryservice.DescribeLDAPSSettingsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLDAPSSettingsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeLDAPSSettingsPages indicates an expected call of DescribeLDAPSSettingsPages
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeLDAPSSettingsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLDAPSSettingsPages", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeLDAPSSettingsPages), arg0, arg1)
+}
+
+// DescribeLDAPSSettingsPagesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeLDAPSSettingsPagesWithContext(arg0 context.Context, arg1 *directoryservice.DescribeLDAPSSettingsInput, arg2 func(*directoryservice.DescribeLDAPSSettingsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLDAPSSettingsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeLDAPSSettingsPagesWithContext indicates an expected call of DescribeLDAPSSettingsPagesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeLDAPSSettingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLDAPSSettingsPagesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeLDAPSSettingsPagesWithContext), varargs...)
+}
+
 // DescribeLDAPSSettingsRequest mocks base method
 func (m *MockDirectoryServiceAPI) DescribeLDAPSSettingsRequest(arg0 *directoryservice.DescribeLDAPSSettingsInput) (*request.Request, *directoryservice.DescribeLDAPSSettingsOutput) {
 	m.ctrl.T.Helper()
@@ -1481,6 +1580,39 @@ func (m *MockDirectoryServiceAPI) DescribeRegions(arg0 *directoryservice.Describ
 func (mr *MockDirectoryServiceAPIMockRecorder) DescribeRegions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRegions", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeRegions), arg0)
+}
+
+// DescribeRegionsPages mocks base method
+func (m *MockDirectoryServiceAPI) DescribeRegionsPages(arg0 *directoryservice.DescribeRegionsInput, arg1 func(*directoryservice.DescribeRegionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRegionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeRegionsPages indicates an expected call of DescribeRegionsPages
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeRegionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRegionsPages", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeRegionsPages), arg0, arg1)
+}
+
+// DescribeRegionsPagesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeRegionsPagesWithContext(arg0 context.Context, arg1 *directoryservice.DescribeRegionsInput, arg2 func(*directoryservice.DescribeRegionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeRegionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeRegionsPagesWithContext indicates an expected call of DescribeRegionsPagesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeRegionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRegionsPagesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeRegionsPagesWithContext), varargs...)
 }
 
 // DescribeRegionsRequest mocks base method
@@ -1583,6 +1715,39 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeSharedDirectories(arg0 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSharedDirectories", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeSharedDirectories), arg0)
 }
 
+// DescribeSharedDirectoriesPages mocks base method
+func (m *MockDirectoryServiceAPI) DescribeSharedDirectoriesPages(arg0 *directoryservice.DescribeSharedDirectoriesInput, arg1 func(*directoryservice.DescribeSharedDirectoriesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSharedDirectoriesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSharedDirectoriesPages indicates an expected call of DescribeSharedDirectoriesPages
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeSharedDirectoriesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSharedDirectoriesPages", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeSharedDirectoriesPages), arg0, arg1)
+}
+
+// DescribeSharedDirectoriesPagesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeSharedDirectoriesPagesWithContext(arg0 context.Context, arg1 *directoryservice.DescribeSharedDirectoriesInput, arg2 func(*directoryservice.DescribeSharedDirectoriesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSharedDirectoriesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSharedDirectoriesPagesWithContext indicates an expected call of DescribeSharedDirectoriesPagesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeSharedDirectoriesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSharedDirectoriesPagesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeSharedDirectoriesPagesWithContext), varargs...)
+}
+
 // DescribeSharedDirectoriesRequest mocks base method
 func (m *MockDirectoryServiceAPI) DescribeSharedDirectoriesRequest(arg0 *directoryservice.DescribeSharedDirectoriesInput) (*request.Request, *directoryservice.DescribeSharedDirectoriesOutput) {
 	m.ctrl.T.Helper()
@@ -1631,6 +1796,39 @@ func (m *MockDirectoryServiceAPI) DescribeSnapshots(arg0 *directoryservice.Descr
 func (mr *MockDirectoryServiceAPIMockRecorder) DescribeSnapshots(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshots", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeSnapshots), arg0)
+}
+
+// DescribeSnapshotsPages mocks base method
+func (m *MockDirectoryServiceAPI) DescribeSnapshotsPages(arg0 *directoryservice.DescribeSnapshotsInput, arg1 func(*directoryservice.DescribeSnapshotsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSnapshotsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSnapshotsPages indicates an expected call of DescribeSnapshotsPages
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeSnapshotsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotsPages", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeSnapshotsPages), arg0, arg1)
+}
+
+// DescribeSnapshotsPagesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeSnapshotsPagesWithContext(arg0 context.Context, arg1 *directoryservice.DescribeSnapshotsInput, arg2 func(*directoryservice.DescribeSnapshotsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSnapshotsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSnapshotsPagesWithContext indicates an expected call of DescribeSnapshotsPagesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeSnapshotsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotsPagesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeSnapshotsPagesWithContext), varargs...)
 }
 
 // DescribeSnapshotsRequest mocks base method
@@ -1683,6 +1881,39 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeTrusts(arg0 interface{}) 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTrusts", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeTrusts), arg0)
 }
 
+// DescribeTrustsPages mocks base method
+func (m *MockDirectoryServiceAPI) DescribeTrustsPages(arg0 *directoryservice.DescribeTrustsInput, arg1 func(*directoryservice.DescribeTrustsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTrustsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeTrustsPages indicates an expected call of DescribeTrustsPages
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeTrustsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTrustsPages", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeTrustsPages), arg0, arg1)
+}
+
+// DescribeTrustsPagesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeTrustsPagesWithContext(arg0 context.Context, arg1 *directoryservice.DescribeTrustsInput, arg2 func(*directoryservice.DescribeTrustsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeTrustsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeTrustsPagesWithContext indicates an expected call of DescribeTrustsPagesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeTrustsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTrustsPagesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeTrustsPagesWithContext), varargs...)
+}
+
 // DescribeTrustsRequest mocks base method
 func (m *MockDirectoryServiceAPI) DescribeTrustsRequest(arg0 *directoryservice.DescribeTrustsInput) (*request.Request, *directoryservice.DescribeTrustsOutput) {
 	m.ctrl.T.Helper()
@@ -1716,6 +1947,89 @@ func (mr *MockDirectoryServiceAPIMockRecorder) DescribeTrustsWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTrustsWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeTrustsWithContext), varargs...)
+}
+
+// DescribeUpdateDirectory mocks base method
+func (m *MockDirectoryServiceAPI) DescribeUpdateDirectory(arg0 *directoryservice.DescribeUpdateDirectoryInput) (*directoryservice.DescribeUpdateDirectoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeUpdateDirectory", arg0)
+	ret0, _ := ret[0].(*directoryservice.DescribeUpdateDirectoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeUpdateDirectory indicates an expected call of DescribeUpdateDirectory
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeUpdateDirectory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUpdateDirectory", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeUpdateDirectory), arg0)
+}
+
+// DescribeUpdateDirectoryPages mocks base method
+func (m *MockDirectoryServiceAPI) DescribeUpdateDirectoryPages(arg0 *directoryservice.DescribeUpdateDirectoryInput, arg1 func(*directoryservice.DescribeUpdateDirectoryOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeUpdateDirectoryPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeUpdateDirectoryPages indicates an expected call of DescribeUpdateDirectoryPages
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeUpdateDirectoryPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUpdateDirectoryPages", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeUpdateDirectoryPages), arg0, arg1)
+}
+
+// DescribeUpdateDirectoryPagesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeUpdateDirectoryPagesWithContext(arg0 context.Context, arg1 *directoryservice.DescribeUpdateDirectoryInput, arg2 func(*directoryservice.DescribeUpdateDirectoryOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeUpdateDirectoryPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeUpdateDirectoryPagesWithContext indicates an expected call of DescribeUpdateDirectoryPagesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeUpdateDirectoryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUpdateDirectoryPagesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeUpdateDirectoryPagesWithContext), varargs...)
+}
+
+// DescribeUpdateDirectoryRequest mocks base method
+func (m *MockDirectoryServiceAPI) DescribeUpdateDirectoryRequest(arg0 *directoryservice.DescribeUpdateDirectoryInput) (*request.Request, *directoryservice.DescribeUpdateDirectoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeUpdateDirectoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.DescribeUpdateDirectoryOutput)
+	return ret0, ret1
+}
+
+// DescribeUpdateDirectoryRequest indicates an expected call of DescribeUpdateDirectoryRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeUpdateDirectoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUpdateDirectoryRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeUpdateDirectoryRequest), arg0)
+}
+
+// DescribeUpdateDirectoryWithContext mocks base method
+func (m *MockDirectoryServiceAPI) DescribeUpdateDirectoryWithContext(arg0 context.Context, arg1 *directoryservice.DescribeUpdateDirectoryInput, arg2 ...request.Option) (*directoryservice.DescribeUpdateDirectoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeUpdateDirectoryWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.DescribeUpdateDirectoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeUpdateDirectoryWithContext indicates an expected call of DescribeUpdateDirectoryWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) DescribeUpdateDirectoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUpdateDirectoryWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).DescribeUpdateDirectoryWithContext), varargs...)
 }
 
 // DisableClientAuthentication mocks base method
@@ -2233,6 +2547,39 @@ func (mr *MockDirectoryServiceAPIMockRecorder) ListCertificates(arg0 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificates", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListCertificates), arg0)
 }
 
+// ListCertificatesPages mocks base method
+func (m *MockDirectoryServiceAPI) ListCertificatesPages(arg0 *directoryservice.ListCertificatesInput, arg1 func(*directoryservice.ListCertificatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCertificatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCertificatesPages indicates an expected call of ListCertificatesPages
+func (mr *MockDirectoryServiceAPIMockRecorder) ListCertificatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificatesPages", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListCertificatesPages), arg0, arg1)
+}
+
+// ListCertificatesPagesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) ListCertificatesPagesWithContext(arg0 context.Context, arg1 *directoryservice.ListCertificatesInput, arg2 func(*directoryservice.ListCertificatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCertificatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCertificatesPagesWithContext indicates an expected call of ListCertificatesPagesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) ListCertificatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCertificatesPagesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListCertificatesPagesWithContext), varargs...)
+}
+
 // ListCertificatesRequest mocks base method
 func (m *MockDirectoryServiceAPI) ListCertificatesRequest(arg0 *directoryservice.ListCertificatesInput) (*request.Request, *directoryservice.ListCertificatesOutput) {
 	m.ctrl.T.Helper()
@@ -2281,6 +2628,39 @@ func (m *MockDirectoryServiceAPI) ListIpRoutes(arg0 *directoryservice.ListIpRout
 func (mr *MockDirectoryServiceAPIMockRecorder) ListIpRoutes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIpRoutes", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListIpRoutes), arg0)
+}
+
+// ListIpRoutesPages mocks base method
+func (m *MockDirectoryServiceAPI) ListIpRoutesPages(arg0 *directoryservice.ListIpRoutesInput, arg1 func(*directoryservice.ListIpRoutesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIpRoutesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIpRoutesPages indicates an expected call of ListIpRoutesPages
+func (mr *MockDirectoryServiceAPIMockRecorder) ListIpRoutesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIpRoutesPages", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListIpRoutesPages), arg0, arg1)
+}
+
+// ListIpRoutesPagesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) ListIpRoutesPagesWithContext(arg0 context.Context, arg1 *directoryservice.ListIpRoutesInput, arg2 func(*directoryservice.ListIpRoutesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIpRoutesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIpRoutesPagesWithContext indicates an expected call of ListIpRoutesPagesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) ListIpRoutesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIpRoutesPagesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListIpRoutesPagesWithContext), varargs...)
 }
 
 // ListIpRoutesRequest mocks base method
@@ -2333,6 +2713,39 @@ func (mr *MockDirectoryServiceAPIMockRecorder) ListLogSubscriptions(arg0 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogSubscriptions", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListLogSubscriptions), arg0)
 }
 
+// ListLogSubscriptionsPages mocks base method
+func (m *MockDirectoryServiceAPI) ListLogSubscriptionsPages(arg0 *directoryservice.ListLogSubscriptionsInput, arg1 func(*directoryservice.ListLogSubscriptionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLogSubscriptionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLogSubscriptionsPages indicates an expected call of ListLogSubscriptionsPages
+func (mr *MockDirectoryServiceAPIMockRecorder) ListLogSubscriptionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogSubscriptionsPages", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListLogSubscriptionsPages), arg0, arg1)
+}
+
+// ListLogSubscriptionsPagesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) ListLogSubscriptionsPagesWithContext(arg0 context.Context, arg1 *directoryservice.ListLogSubscriptionsInput, arg2 func(*directoryservice.ListLogSubscriptionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLogSubscriptionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLogSubscriptionsPagesWithContext indicates an expected call of ListLogSubscriptionsPagesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) ListLogSubscriptionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLogSubscriptionsPagesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListLogSubscriptionsPagesWithContext), varargs...)
+}
+
 // ListLogSubscriptionsRequest mocks base method
 func (m *MockDirectoryServiceAPI) ListLogSubscriptionsRequest(arg0 *directoryservice.ListLogSubscriptionsInput) (*request.Request, *directoryservice.ListLogSubscriptionsOutput) {
 	m.ctrl.T.Helper()
@@ -2383,6 +2796,39 @@ func (mr *MockDirectoryServiceAPIMockRecorder) ListSchemaExtensions(arg0 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchemaExtensions", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListSchemaExtensions), arg0)
 }
 
+// ListSchemaExtensionsPages mocks base method
+func (m *MockDirectoryServiceAPI) ListSchemaExtensionsPages(arg0 *directoryservice.ListSchemaExtensionsInput, arg1 func(*directoryservice.ListSchemaExtensionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSchemaExtensionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSchemaExtensionsPages indicates an expected call of ListSchemaExtensionsPages
+func (mr *MockDirectoryServiceAPIMockRecorder) ListSchemaExtensionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchemaExtensionsPages", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListSchemaExtensionsPages), arg0, arg1)
+}
+
+// ListSchemaExtensionsPagesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) ListSchemaExtensionsPagesWithContext(arg0 context.Context, arg1 *directoryservice.ListSchemaExtensionsInput, arg2 func(*directoryservice.ListSchemaExtensionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSchemaExtensionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSchemaExtensionsPagesWithContext indicates an expected call of ListSchemaExtensionsPagesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) ListSchemaExtensionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSchemaExtensionsPagesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListSchemaExtensionsPagesWithContext), varargs...)
+}
+
 // ListSchemaExtensionsRequest mocks base method
 func (m *MockDirectoryServiceAPI) ListSchemaExtensionsRequest(arg0 *directoryservice.ListSchemaExtensionsInput) (*request.Request, *directoryservice.ListSchemaExtensionsOutput) {
 	m.ctrl.T.Helper()
@@ -2431,6 +2877,39 @@ func (m *MockDirectoryServiceAPI) ListTagsForResource(arg0 *directoryservice.Lis
 func (mr *MockDirectoryServiceAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourcePages mocks base method
+func (m *MockDirectoryServiceAPI) ListTagsForResourcePages(arg0 *directoryservice.ListTagsForResourceInput, arg1 func(*directoryservice.ListTagsForResourceOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourcePages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTagsForResourcePages indicates an expected call of ListTagsForResourcePages
+func (mr *MockDirectoryServiceAPIMockRecorder) ListTagsForResourcePages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePages", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListTagsForResourcePages), arg0, arg1)
+}
+
+// ListTagsForResourcePagesWithContext mocks base method
+func (m *MockDirectoryServiceAPI) ListTagsForResourcePagesWithContext(arg0 context.Context, arg1 *directoryservice.ListTagsForResourceInput, arg2 func(*directoryservice.ListTagsForResourceOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourcePagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTagsForResourcePagesWithContext indicates an expected call of ListTagsForResourcePagesWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) ListTagsForResourcePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePagesWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).ListTagsForResourcePagesWithContext), varargs...)
 }
 
 // ListTagsForResourceRequest mocks base method
@@ -3066,6 +3545,56 @@ func (mr *MockDirectoryServiceAPIMockRecorder) UpdateConditionalForwarderWithCon
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConditionalForwarderWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UpdateConditionalForwarderWithContext), varargs...)
+}
+
+// UpdateDirectorySetup mocks base method
+func (m *MockDirectoryServiceAPI) UpdateDirectorySetup(arg0 *directoryservice.UpdateDirectorySetupInput) (*directoryservice.UpdateDirectorySetupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDirectorySetup", arg0)
+	ret0, _ := ret[0].(*directoryservice.UpdateDirectorySetupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDirectorySetup indicates an expected call of UpdateDirectorySetup
+func (mr *MockDirectoryServiceAPIMockRecorder) UpdateDirectorySetup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDirectorySetup", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UpdateDirectorySetup), arg0)
+}
+
+// UpdateDirectorySetupRequest mocks base method
+func (m *MockDirectoryServiceAPI) UpdateDirectorySetupRequest(arg0 *directoryservice.UpdateDirectorySetupInput) (*request.Request, *directoryservice.UpdateDirectorySetupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDirectorySetupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*directoryservice.UpdateDirectorySetupOutput)
+	return ret0, ret1
+}
+
+// UpdateDirectorySetupRequest indicates an expected call of UpdateDirectorySetupRequest
+func (mr *MockDirectoryServiceAPIMockRecorder) UpdateDirectorySetupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDirectorySetupRequest", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UpdateDirectorySetupRequest), arg0)
+}
+
+// UpdateDirectorySetupWithContext mocks base method
+func (m *MockDirectoryServiceAPI) UpdateDirectorySetupWithContext(arg0 context.Context, arg1 *directoryservice.UpdateDirectorySetupInput, arg2 ...request.Option) (*directoryservice.UpdateDirectorySetupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDirectorySetupWithContext", varargs...)
+	ret0, _ := ret[0].(*directoryservice.UpdateDirectorySetupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDirectorySetupWithContext indicates an expected call of UpdateDirectorySetupWithContext
+func (mr *MockDirectoryServiceAPIMockRecorder) UpdateDirectorySetupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDirectorySetupWithContext", reflect.TypeOf((*MockDirectoryServiceAPI)(nil).UpdateDirectorySetupWithContext), varargs...)
 }
 
 // UpdateNumberOfDomainControllers mocks base method

@@ -1832,6 +1832,56 @@ func (mr *MockPanoramaAPIMockRecorder) RemoveApplicationInstanceWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveApplicationInstanceWithContext", reflect.TypeOf((*MockPanoramaAPI)(nil).RemoveApplicationInstanceWithContext), varargs...)
 }
 
+// SignalApplicationInstanceNodeInstances mocks base method
+func (m *MockPanoramaAPI) SignalApplicationInstanceNodeInstances(arg0 *panorama.SignalApplicationInstanceNodeInstancesInput) (*panorama.SignalApplicationInstanceNodeInstancesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SignalApplicationInstanceNodeInstances", arg0)
+	ret0, _ := ret[0].(*panorama.SignalApplicationInstanceNodeInstancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SignalApplicationInstanceNodeInstances indicates an expected call of SignalApplicationInstanceNodeInstances
+func (mr *MockPanoramaAPIMockRecorder) SignalApplicationInstanceNodeInstances(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SignalApplicationInstanceNodeInstances", reflect.TypeOf((*MockPanoramaAPI)(nil).SignalApplicationInstanceNodeInstances), arg0)
+}
+
+// SignalApplicationInstanceNodeInstancesRequest mocks base method
+func (m *MockPanoramaAPI) SignalApplicationInstanceNodeInstancesRequest(arg0 *panorama.SignalApplicationInstanceNodeInstancesInput) (*request.Request, *panorama.SignalApplicationInstanceNodeInstancesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SignalApplicationInstanceNodeInstancesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*panorama.SignalApplicationInstanceNodeInstancesOutput)
+	return ret0, ret1
+}
+
+// SignalApplicationInstanceNodeInstancesRequest indicates an expected call of SignalApplicationInstanceNodeInstancesRequest
+func (mr *MockPanoramaAPIMockRecorder) SignalApplicationInstanceNodeInstancesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SignalApplicationInstanceNodeInstancesRequest", reflect.TypeOf((*MockPanoramaAPI)(nil).SignalApplicationInstanceNodeInstancesRequest), arg0)
+}
+
+// SignalApplicationInstanceNodeInstancesWithContext mocks base method
+func (m *MockPanoramaAPI) SignalApplicationInstanceNodeInstancesWithContext(arg0 context.Context, arg1 *panorama.SignalApplicationInstanceNodeInstancesInput, arg2 ...request.Option) (*panorama.SignalApplicationInstanceNodeInstancesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SignalApplicationInstanceNodeInstancesWithContext", varargs...)
+	ret0, _ := ret[0].(*panorama.SignalApplicationInstanceNodeInstancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SignalApplicationInstanceNodeInstancesWithContext indicates an expected call of SignalApplicationInstanceNodeInstancesWithContext
+func (mr *MockPanoramaAPIMockRecorder) SignalApplicationInstanceNodeInstancesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SignalApplicationInstanceNodeInstancesWithContext", reflect.TypeOf((*MockPanoramaAPI)(nil).SignalApplicationInstanceNodeInstancesWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockPanoramaAPI) TagResource(arg0 *panorama.TagResourceInput) (*panorama.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
