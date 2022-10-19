@@ -1450,6 +1450,56 @@ func (mr *MockSESV2APIMockRecorder) GetDedicatedIp(arg0 interface{}) *gomock.Cal
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDedicatedIp", reflect.TypeOf((*MockSESV2API)(nil).GetDedicatedIp), arg0)
 }
 
+// GetDedicatedIpPool mocks base method
+func (m *MockSESV2API) GetDedicatedIpPool(arg0 *sesv2.GetDedicatedIpPoolInput) (*sesv2.GetDedicatedIpPoolOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDedicatedIpPool", arg0)
+	ret0, _ := ret[0].(*sesv2.GetDedicatedIpPoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDedicatedIpPool indicates an expected call of GetDedicatedIpPool
+func (mr *MockSESV2APIMockRecorder) GetDedicatedIpPool(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDedicatedIpPool", reflect.TypeOf((*MockSESV2API)(nil).GetDedicatedIpPool), arg0)
+}
+
+// GetDedicatedIpPoolRequest mocks base method
+func (m *MockSESV2API) GetDedicatedIpPoolRequest(arg0 *sesv2.GetDedicatedIpPoolInput) (*request.Request, *sesv2.GetDedicatedIpPoolOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDedicatedIpPoolRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.GetDedicatedIpPoolOutput)
+	return ret0, ret1
+}
+
+// GetDedicatedIpPoolRequest indicates an expected call of GetDedicatedIpPoolRequest
+func (mr *MockSESV2APIMockRecorder) GetDedicatedIpPoolRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDedicatedIpPoolRequest", reflect.TypeOf((*MockSESV2API)(nil).GetDedicatedIpPoolRequest), arg0)
+}
+
+// GetDedicatedIpPoolWithContext mocks base method
+func (m *MockSESV2API) GetDedicatedIpPoolWithContext(arg0 context.Context, arg1 *sesv2.GetDedicatedIpPoolInput, arg2 ...request.Option) (*sesv2.GetDedicatedIpPoolOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDedicatedIpPoolWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.GetDedicatedIpPoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDedicatedIpPoolWithContext indicates an expected call of GetDedicatedIpPoolWithContext
+func (mr *MockSESV2APIMockRecorder) GetDedicatedIpPoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDedicatedIpPoolWithContext", reflect.TypeOf((*MockSESV2API)(nil).GetDedicatedIpPoolWithContext), varargs...)
+}
+
 // GetDedicatedIpRequest mocks base method
 func (m *MockSESV2API) GetDedicatedIpRequest(arg0 *sesv2.GetDedicatedIpInput) (*request.Request, *sesv2.GetDedicatedIpOutput) {
 	m.ctrl.T.Helper()
