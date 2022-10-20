@@ -185,6 +185,56 @@ func (mr *MockWorkSpacesWebAPIMockRecorder) AssociateTrustStoreWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateTrustStoreWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).AssociateTrustStoreWithContext), varargs...)
 }
 
+// AssociateUserAccessLoggingSettings mocks base method
+func (m *MockWorkSpacesWebAPI) AssociateUserAccessLoggingSettings(arg0 *workspacesweb.AssociateUserAccessLoggingSettingsInput) (*workspacesweb.AssociateUserAccessLoggingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateUserAccessLoggingSettings", arg0)
+	ret0, _ := ret[0].(*workspacesweb.AssociateUserAccessLoggingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateUserAccessLoggingSettings indicates an expected call of AssociateUserAccessLoggingSettings
+func (mr *MockWorkSpacesWebAPIMockRecorder) AssociateUserAccessLoggingSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateUserAccessLoggingSettings", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).AssociateUserAccessLoggingSettings), arg0)
+}
+
+// AssociateUserAccessLoggingSettingsRequest mocks base method
+func (m *MockWorkSpacesWebAPI) AssociateUserAccessLoggingSettingsRequest(arg0 *workspacesweb.AssociateUserAccessLoggingSettingsInput) (*request.Request, *workspacesweb.AssociateUserAccessLoggingSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateUserAccessLoggingSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspacesweb.AssociateUserAccessLoggingSettingsOutput)
+	return ret0, ret1
+}
+
+// AssociateUserAccessLoggingSettingsRequest indicates an expected call of AssociateUserAccessLoggingSettingsRequest
+func (mr *MockWorkSpacesWebAPIMockRecorder) AssociateUserAccessLoggingSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateUserAccessLoggingSettingsRequest", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).AssociateUserAccessLoggingSettingsRequest), arg0)
+}
+
+// AssociateUserAccessLoggingSettingsWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) AssociateUserAccessLoggingSettingsWithContext(arg0 context.Context, arg1 *workspacesweb.AssociateUserAccessLoggingSettingsInput, arg2 ...request.Option) (*workspacesweb.AssociateUserAccessLoggingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateUserAccessLoggingSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspacesweb.AssociateUserAccessLoggingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateUserAccessLoggingSettingsWithContext indicates an expected call of AssociateUserAccessLoggingSettingsWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) AssociateUserAccessLoggingSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateUserAccessLoggingSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).AssociateUserAccessLoggingSettingsWithContext), varargs...)
+}
+
 // AssociateUserSettings mocks base method
 func (m *MockWorkSpacesWebAPI) AssociateUserSettings(arg0 *workspacesweb.AssociateUserSettingsInput) (*workspacesweb.AssociateUserSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -483,6 +533,56 @@ func (mr *MockWorkSpacesWebAPIMockRecorder) CreateTrustStoreWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTrustStoreWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).CreateTrustStoreWithContext), varargs...)
+}
+
+// CreateUserAccessLoggingSettings mocks base method
+func (m *MockWorkSpacesWebAPI) CreateUserAccessLoggingSettings(arg0 *workspacesweb.CreateUserAccessLoggingSettingsInput) (*workspacesweb.CreateUserAccessLoggingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUserAccessLoggingSettings", arg0)
+	ret0, _ := ret[0].(*workspacesweb.CreateUserAccessLoggingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUserAccessLoggingSettings indicates an expected call of CreateUserAccessLoggingSettings
+func (mr *MockWorkSpacesWebAPIMockRecorder) CreateUserAccessLoggingSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserAccessLoggingSettings", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).CreateUserAccessLoggingSettings), arg0)
+}
+
+// CreateUserAccessLoggingSettingsRequest mocks base method
+func (m *MockWorkSpacesWebAPI) CreateUserAccessLoggingSettingsRequest(arg0 *workspacesweb.CreateUserAccessLoggingSettingsInput) (*request.Request, *workspacesweb.CreateUserAccessLoggingSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUserAccessLoggingSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspacesweb.CreateUserAccessLoggingSettingsOutput)
+	return ret0, ret1
+}
+
+// CreateUserAccessLoggingSettingsRequest indicates an expected call of CreateUserAccessLoggingSettingsRequest
+func (mr *MockWorkSpacesWebAPIMockRecorder) CreateUserAccessLoggingSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserAccessLoggingSettingsRequest", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).CreateUserAccessLoggingSettingsRequest), arg0)
+}
+
+// CreateUserAccessLoggingSettingsWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) CreateUserAccessLoggingSettingsWithContext(arg0 context.Context, arg1 *workspacesweb.CreateUserAccessLoggingSettingsInput, arg2 ...request.Option) (*workspacesweb.CreateUserAccessLoggingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateUserAccessLoggingSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspacesweb.CreateUserAccessLoggingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUserAccessLoggingSettingsWithContext indicates an expected call of CreateUserAccessLoggingSettingsWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) CreateUserAccessLoggingSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserAccessLoggingSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).CreateUserAccessLoggingSettingsWithContext), varargs...)
 }
 
 // CreateUserSettings mocks base method
@@ -785,6 +885,56 @@ func (mr *MockWorkSpacesWebAPIMockRecorder) DeleteTrustStoreWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTrustStoreWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DeleteTrustStoreWithContext), varargs...)
 }
 
+// DeleteUserAccessLoggingSettings mocks base method
+func (m *MockWorkSpacesWebAPI) DeleteUserAccessLoggingSettings(arg0 *workspacesweb.DeleteUserAccessLoggingSettingsInput) (*workspacesweb.DeleteUserAccessLoggingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteUserAccessLoggingSettings", arg0)
+	ret0, _ := ret[0].(*workspacesweb.DeleteUserAccessLoggingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteUserAccessLoggingSettings indicates an expected call of DeleteUserAccessLoggingSettings
+func (mr *MockWorkSpacesWebAPIMockRecorder) DeleteUserAccessLoggingSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserAccessLoggingSettings", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DeleteUserAccessLoggingSettings), arg0)
+}
+
+// DeleteUserAccessLoggingSettingsRequest mocks base method
+func (m *MockWorkSpacesWebAPI) DeleteUserAccessLoggingSettingsRequest(arg0 *workspacesweb.DeleteUserAccessLoggingSettingsInput) (*request.Request, *workspacesweb.DeleteUserAccessLoggingSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteUserAccessLoggingSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspacesweb.DeleteUserAccessLoggingSettingsOutput)
+	return ret0, ret1
+}
+
+// DeleteUserAccessLoggingSettingsRequest indicates an expected call of DeleteUserAccessLoggingSettingsRequest
+func (mr *MockWorkSpacesWebAPIMockRecorder) DeleteUserAccessLoggingSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserAccessLoggingSettingsRequest", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DeleteUserAccessLoggingSettingsRequest), arg0)
+}
+
+// DeleteUserAccessLoggingSettingsWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) DeleteUserAccessLoggingSettingsWithContext(arg0 context.Context, arg1 *workspacesweb.DeleteUserAccessLoggingSettingsInput, arg2 ...request.Option) (*workspacesweb.DeleteUserAccessLoggingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteUserAccessLoggingSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspacesweb.DeleteUserAccessLoggingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteUserAccessLoggingSettingsWithContext indicates an expected call of DeleteUserAccessLoggingSettingsWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) DeleteUserAccessLoggingSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserAccessLoggingSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DeleteUserAccessLoggingSettingsWithContext), varargs...)
+}
+
 // DeleteUserSettings mocks base method
 func (m *MockWorkSpacesWebAPI) DeleteUserSettings(arg0 *workspacesweb.DeleteUserSettingsInput) (*workspacesweb.DeleteUserSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -983,6 +1133,56 @@ func (mr *MockWorkSpacesWebAPIMockRecorder) DisassociateTrustStoreWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateTrustStoreWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DisassociateTrustStoreWithContext), varargs...)
+}
+
+// DisassociateUserAccessLoggingSettings mocks base method
+func (m *MockWorkSpacesWebAPI) DisassociateUserAccessLoggingSettings(arg0 *workspacesweb.DisassociateUserAccessLoggingSettingsInput) (*workspacesweb.DisassociateUserAccessLoggingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateUserAccessLoggingSettings", arg0)
+	ret0, _ := ret[0].(*workspacesweb.DisassociateUserAccessLoggingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateUserAccessLoggingSettings indicates an expected call of DisassociateUserAccessLoggingSettings
+func (mr *MockWorkSpacesWebAPIMockRecorder) DisassociateUserAccessLoggingSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateUserAccessLoggingSettings", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DisassociateUserAccessLoggingSettings), arg0)
+}
+
+// DisassociateUserAccessLoggingSettingsRequest mocks base method
+func (m *MockWorkSpacesWebAPI) DisassociateUserAccessLoggingSettingsRequest(arg0 *workspacesweb.DisassociateUserAccessLoggingSettingsInput) (*request.Request, *workspacesweb.DisassociateUserAccessLoggingSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateUserAccessLoggingSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspacesweb.DisassociateUserAccessLoggingSettingsOutput)
+	return ret0, ret1
+}
+
+// DisassociateUserAccessLoggingSettingsRequest indicates an expected call of DisassociateUserAccessLoggingSettingsRequest
+func (mr *MockWorkSpacesWebAPIMockRecorder) DisassociateUserAccessLoggingSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateUserAccessLoggingSettingsRequest", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DisassociateUserAccessLoggingSettingsRequest), arg0)
+}
+
+// DisassociateUserAccessLoggingSettingsWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) DisassociateUserAccessLoggingSettingsWithContext(arg0 context.Context, arg1 *workspacesweb.DisassociateUserAccessLoggingSettingsInput, arg2 ...request.Option) (*workspacesweb.DisassociateUserAccessLoggingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateUserAccessLoggingSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspacesweb.DisassociateUserAccessLoggingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateUserAccessLoggingSettingsWithContext indicates an expected call of DisassociateUserAccessLoggingSettingsWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) DisassociateUserAccessLoggingSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateUserAccessLoggingSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DisassociateUserAccessLoggingSettingsWithContext), varargs...)
 }
 
 // DisassociateUserSettings mocks base method
@@ -1383,6 +1583,56 @@ func (mr *MockWorkSpacesWebAPIMockRecorder) GetTrustStoreWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTrustStoreWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).GetTrustStoreWithContext), varargs...)
+}
+
+// GetUserAccessLoggingSettings mocks base method
+func (m *MockWorkSpacesWebAPI) GetUserAccessLoggingSettings(arg0 *workspacesweb.GetUserAccessLoggingSettingsInput) (*workspacesweb.GetUserAccessLoggingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUserAccessLoggingSettings", arg0)
+	ret0, _ := ret[0].(*workspacesweb.GetUserAccessLoggingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUserAccessLoggingSettings indicates an expected call of GetUserAccessLoggingSettings
+func (mr *MockWorkSpacesWebAPIMockRecorder) GetUserAccessLoggingSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUserAccessLoggingSettings", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).GetUserAccessLoggingSettings), arg0)
+}
+
+// GetUserAccessLoggingSettingsRequest mocks base method
+func (m *MockWorkSpacesWebAPI) GetUserAccessLoggingSettingsRequest(arg0 *workspacesweb.GetUserAccessLoggingSettingsInput) (*request.Request, *workspacesweb.GetUserAccessLoggingSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetUserAccessLoggingSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspacesweb.GetUserAccessLoggingSettingsOutput)
+	return ret0, ret1
+}
+
+// GetUserAccessLoggingSettingsRequest indicates an expected call of GetUserAccessLoggingSettingsRequest
+func (mr *MockWorkSpacesWebAPIMockRecorder) GetUserAccessLoggingSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUserAccessLoggingSettingsRequest", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).GetUserAccessLoggingSettingsRequest), arg0)
+}
+
+// GetUserAccessLoggingSettingsWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) GetUserAccessLoggingSettingsWithContext(arg0 context.Context, arg1 *workspacesweb.GetUserAccessLoggingSettingsInput, arg2 ...request.Option) (*workspacesweb.GetUserAccessLoggingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetUserAccessLoggingSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspacesweb.GetUserAccessLoggingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetUserAccessLoggingSettingsWithContext indicates an expected call of GetUserAccessLoggingSettingsWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) GetUserAccessLoggingSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUserAccessLoggingSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).GetUserAccessLoggingSettingsWithContext), varargs...)
 }
 
 // GetUserSettings mocks base method
@@ -1983,6 +2233,89 @@ func (mr *MockWorkSpacesWebAPIMockRecorder) ListTrustStoresWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTrustStoresWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).ListTrustStoresWithContext), varargs...)
 }
 
+// ListUserAccessLoggingSettings mocks base method
+func (m *MockWorkSpacesWebAPI) ListUserAccessLoggingSettings(arg0 *workspacesweb.ListUserAccessLoggingSettingsInput) (*workspacesweb.ListUserAccessLoggingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUserAccessLoggingSettings", arg0)
+	ret0, _ := ret[0].(*workspacesweb.ListUserAccessLoggingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListUserAccessLoggingSettings indicates an expected call of ListUserAccessLoggingSettings
+func (mr *MockWorkSpacesWebAPIMockRecorder) ListUserAccessLoggingSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUserAccessLoggingSettings", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).ListUserAccessLoggingSettings), arg0)
+}
+
+// ListUserAccessLoggingSettingsPages mocks base method
+func (m *MockWorkSpacesWebAPI) ListUserAccessLoggingSettingsPages(arg0 *workspacesweb.ListUserAccessLoggingSettingsInput, arg1 func(*workspacesweb.ListUserAccessLoggingSettingsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUserAccessLoggingSettingsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListUserAccessLoggingSettingsPages indicates an expected call of ListUserAccessLoggingSettingsPages
+func (mr *MockWorkSpacesWebAPIMockRecorder) ListUserAccessLoggingSettingsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUserAccessLoggingSettingsPages", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).ListUserAccessLoggingSettingsPages), arg0, arg1)
+}
+
+// ListUserAccessLoggingSettingsPagesWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) ListUserAccessLoggingSettingsPagesWithContext(arg0 context.Context, arg1 *workspacesweb.ListUserAccessLoggingSettingsInput, arg2 func(*workspacesweb.ListUserAccessLoggingSettingsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListUserAccessLoggingSettingsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListUserAccessLoggingSettingsPagesWithContext indicates an expected call of ListUserAccessLoggingSettingsPagesWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) ListUserAccessLoggingSettingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUserAccessLoggingSettingsPagesWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).ListUserAccessLoggingSettingsPagesWithContext), varargs...)
+}
+
+// ListUserAccessLoggingSettingsRequest mocks base method
+func (m *MockWorkSpacesWebAPI) ListUserAccessLoggingSettingsRequest(arg0 *workspacesweb.ListUserAccessLoggingSettingsInput) (*request.Request, *workspacesweb.ListUserAccessLoggingSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUserAccessLoggingSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspacesweb.ListUserAccessLoggingSettingsOutput)
+	return ret0, ret1
+}
+
+// ListUserAccessLoggingSettingsRequest indicates an expected call of ListUserAccessLoggingSettingsRequest
+func (mr *MockWorkSpacesWebAPIMockRecorder) ListUserAccessLoggingSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUserAccessLoggingSettingsRequest", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).ListUserAccessLoggingSettingsRequest), arg0)
+}
+
+// ListUserAccessLoggingSettingsWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) ListUserAccessLoggingSettingsWithContext(arg0 context.Context, arg1 *workspacesweb.ListUserAccessLoggingSettingsInput, arg2 ...request.Option) (*workspacesweb.ListUserAccessLoggingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListUserAccessLoggingSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspacesweb.ListUserAccessLoggingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListUserAccessLoggingSettingsWithContext indicates an expected call of ListUserAccessLoggingSettingsWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) ListUserAccessLoggingSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUserAccessLoggingSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).ListUserAccessLoggingSettingsWithContext), varargs...)
+}
+
 // ListUserSettings mocks base method
 func (m *MockWorkSpacesWebAPI) ListUserSettings(arg0 *workspacesweb.ListUserSettingsInput) (*workspacesweb.ListUserSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2414,6 +2747,56 @@ func (mr *MockWorkSpacesWebAPIMockRecorder) UpdateTrustStoreWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTrustStoreWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).UpdateTrustStoreWithContext), varargs...)
+}
+
+// UpdateUserAccessLoggingSettings mocks base method
+func (m *MockWorkSpacesWebAPI) UpdateUserAccessLoggingSettings(arg0 *workspacesweb.UpdateUserAccessLoggingSettingsInput) (*workspacesweb.UpdateUserAccessLoggingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateUserAccessLoggingSettings", arg0)
+	ret0, _ := ret[0].(*workspacesweb.UpdateUserAccessLoggingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateUserAccessLoggingSettings indicates an expected call of UpdateUserAccessLoggingSettings
+func (mr *MockWorkSpacesWebAPIMockRecorder) UpdateUserAccessLoggingSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserAccessLoggingSettings", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).UpdateUserAccessLoggingSettings), arg0)
+}
+
+// UpdateUserAccessLoggingSettingsRequest mocks base method
+func (m *MockWorkSpacesWebAPI) UpdateUserAccessLoggingSettingsRequest(arg0 *workspacesweb.UpdateUserAccessLoggingSettingsInput) (*request.Request, *workspacesweb.UpdateUserAccessLoggingSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateUserAccessLoggingSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspacesweb.UpdateUserAccessLoggingSettingsOutput)
+	return ret0, ret1
+}
+
+// UpdateUserAccessLoggingSettingsRequest indicates an expected call of UpdateUserAccessLoggingSettingsRequest
+func (mr *MockWorkSpacesWebAPIMockRecorder) UpdateUserAccessLoggingSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserAccessLoggingSettingsRequest", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).UpdateUserAccessLoggingSettingsRequest), arg0)
+}
+
+// UpdateUserAccessLoggingSettingsWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) UpdateUserAccessLoggingSettingsWithContext(arg0 context.Context, arg1 *workspacesweb.UpdateUserAccessLoggingSettingsInput, arg2 ...request.Option) (*workspacesweb.UpdateUserAccessLoggingSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateUserAccessLoggingSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspacesweb.UpdateUserAccessLoggingSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateUserAccessLoggingSettingsWithContext indicates an expected call of UpdateUserAccessLoggingSettingsWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) UpdateUserAccessLoggingSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserAccessLoggingSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).UpdateUserAccessLoggingSettingsWithContext), varargs...)
 }
 
 // UpdateUserSettings mocks base method

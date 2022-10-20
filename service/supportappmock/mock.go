@@ -501,6 +501,56 @@ func (mr *MockSupportAppAPIMockRecorder) PutAccountAliasWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountAliasWithContext", reflect.TypeOf((*MockSupportAppAPI)(nil).PutAccountAliasWithContext), varargs...)
 }
 
+// RegisterSlackWorkspaceForOrganization mocks base method
+func (m *MockSupportAppAPI) RegisterSlackWorkspaceForOrganization(arg0 *supportapp.RegisterSlackWorkspaceForOrganizationInput) (*supportapp.RegisterSlackWorkspaceForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterSlackWorkspaceForOrganization", arg0)
+	ret0, _ := ret[0].(*supportapp.RegisterSlackWorkspaceForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterSlackWorkspaceForOrganization indicates an expected call of RegisterSlackWorkspaceForOrganization
+func (mr *MockSupportAppAPIMockRecorder) RegisterSlackWorkspaceForOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterSlackWorkspaceForOrganization", reflect.TypeOf((*MockSupportAppAPI)(nil).RegisterSlackWorkspaceForOrganization), arg0)
+}
+
+// RegisterSlackWorkspaceForOrganizationRequest mocks base method
+func (m *MockSupportAppAPI) RegisterSlackWorkspaceForOrganizationRequest(arg0 *supportapp.RegisterSlackWorkspaceForOrganizationInput) (*request.Request, *supportapp.RegisterSlackWorkspaceForOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterSlackWorkspaceForOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*supportapp.RegisterSlackWorkspaceForOrganizationOutput)
+	return ret0, ret1
+}
+
+// RegisterSlackWorkspaceForOrganizationRequest indicates an expected call of RegisterSlackWorkspaceForOrganizationRequest
+func (mr *MockSupportAppAPIMockRecorder) RegisterSlackWorkspaceForOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterSlackWorkspaceForOrganizationRequest", reflect.TypeOf((*MockSupportAppAPI)(nil).RegisterSlackWorkspaceForOrganizationRequest), arg0)
+}
+
+// RegisterSlackWorkspaceForOrganizationWithContext mocks base method
+func (m *MockSupportAppAPI) RegisterSlackWorkspaceForOrganizationWithContext(arg0 context.Context, arg1 *supportapp.RegisterSlackWorkspaceForOrganizationInput, arg2 ...request.Option) (*supportapp.RegisterSlackWorkspaceForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RegisterSlackWorkspaceForOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*supportapp.RegisterSlackWorkspaceForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterSlackWorkspaceForOrganizationWithContext indicates an expected call of RegisterSlackWorkspaceForOrganizationWithContext
+func (mr *MockSupportAppAPIMockRecorder) RegisterSlackWorkspaceForOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterSlackWorkspaceForOrganizationWithContext", reflect.TypeOf((*MockSupportAppAPI)(nil).RegisterSlackWorkspaceForOrganizationWithContext), varargs...)
+}
+
 // UpdateSlackChannelConfiguration mocks base method
 func (m *MockSupportAppAPI) UpdateSlackChannelConfiguration(arg0 *supportapp.UpdateSlackChannelConfigurationInput) (*supportapp.UpdateSlackChannelConfigurationOutput, error) {
 	m.ctrl.T.Helper()

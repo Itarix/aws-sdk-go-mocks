@@ -35,6 +35,56 @@ func (m *MockManagedBlockchainAPI) EXPECT() *MockManagedBlockchainAPIMockRecorde
 	return m.recorder
 }
 
+// CreateAccessor mocks base method
+func (m *MockManagedBlockchainAPI) CreateAccessor(arg0 *managedblockchain.CreateAccessorInput) (*managedblockchain.CreateAccessorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAccessor", arg0)
+	ret0, _ := ret[0].(*managedblockchain.CreateAccessorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAccessor indicates an expected call of CreateAccessor
+func (mr *MockManagedBlockchainAPIMockRecorder) CreateAccessor(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessor", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).CreateAccessor), arg0)
+}
+
+// CreateAccessorRequest mocks base method
+func (m *MockManagedBlockchainAPI) CreateAccessorRequest(arg0 *managedblockchain.CreateAccessorInput) (*request.Request, *managedblockchain.CreateAccessorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAccessorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*managedblockchain.CreateAccessorOutput)
+	return ret0, ret1
+}
+
+// CreateAccessorRequest indicates an expected call of CreateAccessorRequest
+func (mr *MockManagedBlockchainAPIMockRecorder) CreateAccessorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessorRequest", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).CreateAccessorRequest), arg0)
+}
+
+// CreateAccessorWithContext mocks base method
+func (m *MockManagedBlockchainAPI) CreateAccessorWithContext(arg0 context.Context, arg1 *managedblockchain.CreateAccessorInput, arg2 ...request.Option) (*managedblockchain.CreateAccessorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAccessorWithContext", varargs...)
+	ret0, _ := ret[0].(*managedblockchain.CreateAccessorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAccessorWithContext indicates an expected call of CreateAccessorWithContext
+func (mr *MockManagedBlockchainAPIMockRecorder) CreateAccessorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAccessorWithContext", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).CreateAccessorWithContext), varargs...)
+}
+
 // CreateMember mocks base method
 func (m *MockManagedBlockchainAPI) CreateMember(arg0 *managedblockchain.CreateMemberInput) (*managedblockchain.CreateMemberOutput, error) {
 	m.ctrl.T.Helper()
@@ -235,6 +285,56 @@ func (mr *MockManagedBlockchainAPIMockRecorder) CreateProposalWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProposalWithContext", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).CreateProposalWithContext), varargs...)
 }
 
+// DeleteAccessor mocks base method
+func (m *MockManagedBlockchainAPI) DeleteAccessor(arg0 *managedblockchain.DeleteAccessorInput) (*managedblockchain.DeleteAccessorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccessor", arg0)
+	ret0, _ := ret[0].(*managedblockchain.DeleteAccessorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccessor indicates an expected call of DeleteAccessor
+func (mr *MockManagedBlockchainAPIMockRecorder) DeleteAccessor(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessor", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).DeleteAccessor), arg0)
+}
+
+// DeleteAccessorRequest mocks base method
+func (m *MockManagedBlockchainAPI) DeleteAccessorRequest(arg0 *managedblockchain.DeleteAccessorInput) (*request.Request, *managedblockchain.DeleteAccessorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccessorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*managedblockchain.DeleteAccessorOutput)
+	return ret0, ret1
+}
+
+// DeleteAccessorRequest indicates an expected call of DeleteAccessorRequest
+func (mr *MockManagedBlockchainAPIMockRecorder) DeleteAccessorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessorRequest", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).DeleteAccessorRequest), arg0)
+}
+
+// DeleteAccessorWithContext mocks base method
+func (m *MockManagedBlockchainAPI) DeleteAccessorWithContext(arg0 context.Context, arg1 *managedblockchain.DeleteAccessorInput, arg2 ...request.Option) (*managedblockchain.DeleteAccessorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAccessorWithContext", varargs...)
+	ret0, _ := ret[0].(*managedblockchain.DeleteAccessorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccessorWithContext indicates an expected call of DeleteAccessorWithContext
+func (mr *MockManagedBlockchainAPIMockRecorder) DeleteAccessorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccessorWithContext", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).DeleteAccessorWithContext), varargs...)
+}
+
 // DeleteMember mocks base method
 func (m *MockManagedBlockchainAPI) DeleteMember(arg0 *managedblockchain.DeleteMemberInput) (*managedblockchain.DeleteMemberOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +433,56 @@ func (mr *MockManagedBlockchainAPIMockRecorder) DeleteNodeWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNodeWithContext", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).DeleteNodeWithContext), varargs...)
+}
+
+// GetAccessor mocks base method
+func (m *MockManagedBlockchainAPI) GetAccessor(arg0 *managedblockchain.GetAccessorInput) (*managedblockchain.GetAccessorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccessor", arg0)
+	ret0, _ := ret[0].(*managedblockchain.GetAccessorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccessor indicates an expected call of GetAccessor
+func (mr *MockManagedBlockchainAPIMockRecorder) GetAccessor(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessor", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).GetAccessor), arg0)
+}
+
+// GetAccessorRequest mocks base method
+func (m *MockManagedBlockchainAPI) GetAccessorRequest(arg0 *managedblockchain.GetAccessorInput) (*request.Request, *managedblockchain.GetAccessorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccessorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*managedblockchain.GetAccessorOutput)
+	return ret0, ret1
+}
+
+// GetAccessorRequest indicates an expected call of GetAccessorRequest
+func (mr *MockManagedBlockchainAPIMockRecorder) GetAccessorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessorRequest", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).GetAccessorRequest), arg0)
+}
+
+// GetAccessorWithContext mocks base method
+func (m *MockManagedBlockchainAPI) GetAccessorWithContext(arg0 context.Context, arg1 *managedblockchain.GetAccessorInput, arg2 ...request.Option) (*managedblockchain.GetAccessorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAccessorWithContext", varargs...)
+	ret0, _ := ret[0].(*managedblockchain.GetAccessorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccessorWithContext indicates an expected call of GetAccessorWithContext
+func (mr *MockManagedBlockchainAPIMockRecorder) GetAccessorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccessorWithContext", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).GetAccessorWithContext), varargs...)
 }
 
 // GetMember mocks base method
@@ -533,6 +683,89 @@ func (mr *MockManagedBlockchainAPIMockRecorder) GetProposalWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProposalWithContext", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).GetProposalWithContext), varargs...)
+}
+
+// ListAccessors mocks base method
+func (m *MockManagedBlockchainAPI) ListAccessors(arg0 *managedblockchain.ListAccessorsInput) (*managedblockchain.ListAccessorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessors", arg0)
+	ret0, _ := ret[0].(*managedblockchain.ListAccessorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAccessors indicates an expected call of ListAccessors
+func (mr *MockManagedBlockchainAPIMockRecorder) ListAccessors(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessors", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).ListAccessors), arg0)
+}
+
+// ListAccessorsPages mocks base method
+func (m *MockManagedBlockchainAPI) ListAccessorsPages(arg0 *managedblockchain.ListAccessorsInput, arg1 func(*managedblockchain.ListAccessorsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessorsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAccessorsPages indicates an expected call of ListAccessorsPages
+func (mr *MockManagedBlockchainAPIMockRecorder) ListAccessorsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessorsPages", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).ListAccessorsPages), arg0, arg1)
+}
+
+// ListAccessorsPagesWithContext mocks base method
+func (m *MockManagedBlockchainAPI) ListAccessorsPagesWithContext(arg0 context.Context, arg1 *managedblockchain.ListAccessorsInput, arg2 func(*managedblockchain.ListAccessorsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAccessorsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAccessorsPagesWithContext indicates an expected call of ListAccessorsPagesWithContext
+func (mr *MockManagedBlockchainAPIMockRecorder) ListAccessorsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessorsPagesWithContext", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).ListAccessorsPagesWithContext), varargs...)
+}
+
+// ListAccessorsRequest mocks base method
+func (m *MockManagedBlockchainAPI) ListAccessorsRequest(arg0 *managedblockchain.ListAccessorsInput) (*request.Request, *managedblockchain.ListAccessorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAccessorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*managedblockchain.ListAccessorsOutput)
+	return ret0, ret1
+}
+
+// ListAccessorsRequest indicates an expected call of ListAccessorsRequest
+func (mr *MockManagedBlockchainAPIMockRecorder) ListAccessorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessorsRequest", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).ListAccessorsRequest), arg0)
+}
+
+// ListAccessorsWithContext mocks base method
+func (m *MockManagedBlockchainAPI) ListAccessorsWithContext(arg0 context.Context, arg1 *managedblockchain.ListAccessorsInput, arg2 ...request.Option) (*managedblockchain.ListAccessorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAccessorsWithContext", varargs...)
+	ret0, _ := ret[0].(*managedblockchain.ListAccessorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAccessorsWithContext indicates an expected call of ListAccessorsWithContext
+func (mr *MockManagedBlockchainAPIMockRecorder) ListAccessorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessorsWithContext", reflect.TypeOf((*MockManagedBlockchainAPI)(nil).ListAccessorsWithContext), varargs...)
 }
 
 // ListInvitations mocks base method
