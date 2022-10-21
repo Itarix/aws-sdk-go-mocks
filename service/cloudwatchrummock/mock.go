@@ -35,6 +35,189 @@ func (m *MockCloudWatchRUMAPI) EXPECT() *MockCloudWatchRUMAPIMockRecorder {
 	return m.recorder
 }
 
+// BatchCreateRumMetricDefinitions mocks base method
+func (m *MockCloudWatchRUMAPI) BatchCreateRumMetricDefinitions(arg0 *cloudwatchrum.BatchCreateRumMetricDefinitionsInput) (*cloudwatchrum.BatchCreateRumMetricDefinitionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchCreateRumMetricDefinitions", arg0)
+	ret0, _ := ret[0].(*cloudwatchrum.BatchCreateRumMetricDefinitionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchCreateRumMetricDefinitions indicates an expected call of BatchCreateRumMetricDefinitions
+func (mr *MockCloudWatchRUMAPIMockRecorder) BatchCreateRumMetricDefinitions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateRumMetricDefinitions", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).BatchCreateRumMetricDefinitions), arg0)
+}
+
+// BatchCreateRumMetricDefinitionsRequest mocks base method
+func (m *MockCloudWatchRUMAPI) BatchCreateRumMetricDefinitionsRequest(arg0 *cloudwatchrum.BatchCreateRumMetricDefinitionsInput) (*request.Request, *cloudwatchrum.BatchCreateRumMetricDefinitionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchCreateRumMetricDefinitionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchrum.BatchCreateRumMetricDefinitionsOutput)
+	return ret0, ret1
+}
+
+// BatchCreateRumMetricDefinitionsRequest indicates an expected call of BatchCreateRumMetricDefinitionsRequest
+func (mr *MockCloudWatchRUMAPIMockRecorder) BatchCreateRumMetricDefinitionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateRumMetricDefinitionsRequest", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).BatchCreateRumMetricDefinitionsRequest), arg0)
+}
+
+// BatchCreateRumMetricDefinitionsWithContext mocks base method
+func (m *MockCloudWatchRUMAPI) BatchCreateRumMetricDefinitionsWithContext(arg0 context.Context, arg1 *cloudwatchrum.BatchCreateRumMetricDefinitionsInput, arg2 ...request.Option) (*cloudwatchrum.BatchCreateRumMetricDefinitionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchCreateRumMetricDefinitionsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchrum.BatchCreateRumMetricDefinitionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchCreateRumMetricDefinitionsWithContext indicates an expected call of BatchCreateRumMetricDefinitionsWithContext
+func (mr *MockCloudWatchRUMAPIMockRecorder) BatchCreateRumMetricDefinitionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateRumMetricDefinitionsWithContext", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).BatchCreateRumMetricDefinitionsWithContext), varargs...)
+}
+
+// BatchDeleteRumMetricDefinitions mocks base method
+func (m *MockCloudWatchRUMAPI) BatchDeleteRumMetricDefinitions(arg0 *cloudwatchrum.BatchDeleteRumMetricDefinitionsInput) (*cloudwatchrum.BatchDeleteRumMetricDefinitionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteRumMetricDefinitions", arg0)
+	ret0, _ := ret[0].(*cloudwatchrum.BatchDeleteRumMetricDefinitionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteRumMetricDefinitions indicates an expected call of BatchDeleteRumMetricDefinitions
+func (mr *MockCloudWatchRUMAPIMockRecorder) BatchDeleteRumMetricDefinitions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteRumMetricDefinitions", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).BatchDeleteRumMetricDefinitions), arg0)
+}
+
+// BatchDeleteRumMetricDefinitionsRequest mocks base method
+func (m *MockCloudWatchRUMAPI) BatchDeleteRumMetricDefinitionsRequest(arg0 *cloudwatchrum.BatchDeleteRumMetricDefinitionsInput) (*request.Request, *cloudwatchrum.BatchDeleteRumMetricDefinitionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteRumMetricDefinitionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchrum.BatchDeleteRumMetricDefinitionsOutput)
+	return ret0, ret1
+}
+
+// BatchDeleteRumMetricDefinitionsRequest indicates an expected call of BatchDeleteRumMetricDefinitionsRequest
+func (mr *MockCloudWatchRUMAPIMockRecorder) BatchDeleteRumMetricDefinitionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteRumMetricDefinitionsRequest", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).BatchDeleteRumMetricDefinitionsRequest), arg0)
+}
+
+// BatchDeleteRumMetricDefinitionsWithContext mocks base method
+func (m *MockCloudWatchRUMAPI) BatchDeleteRumMetricDefinitionsWithContext(arg0 context.Context, arg1 *cloudwatchrum.BatchDeleteRumMetricDefinitionsInput, arg2 ...request.Option) (*cloudwatchrum.BatchDeleteRumMetricDefinitionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDeleteRumMetricDefinitionsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchrum.BatchDeleteRumMetricDefinitionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteRumMetricDefinitionsWithContext indicates an expected call of BatchDeleteRumMetricDefinitionsWithContext
+func (mr *MockCloudWatchRUMAPIMockRecorder) BatchDeleteRumMetricDefinitionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteRumMetricDefinitionsWithContext", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).BatchDeleteRumMetricDefinitionsWithContext), varargs...)
+}
+
+// BatchGetRumMetricDefinitions mocks base method
+func (m *MockCloudWatchRUMAPI) BatchGetRumMetricDefinitions(arg0 *cloudwatchrum.BatchGetRumMetricDefinitionsInput) (*cloudwatchrum.BatchGetRumMetricDefinitionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetRumMetricDefinitions", arg0)
+	ret0, _ := ret[0].(*cloudwatchrum.BatchGetRumMetricDefinitionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetRumMetricDefinitions indicates an expected call of BatchGetRumMetricDefinitions
+func (mr *MockCloudWatchRUMAPIMockRecorder) BatchGetRumMetricDefinitions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetRumMetricDefinitions", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).BatchGetRumMetricDefinitions), arg0)
+}
+
+// BatchGetRumMetricDefinitionsPages mocks base method
+func (m *MockCloudWatchRUMAPI) BatchGetRumMetricDefinitionsPages(arg0 *cloudwatchrum.BatchGetRumMetricDefinitionsInput, arg1 func(*cloudwatchrum.BatchGetRumMetricDefinitionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetRumMetricDefinitionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// BatchGetRumMetricDefinitionsPages indicates an expected call of BatchGetRumMetricDefinitionsPages
+func (mr *MockCloudWatchRUMAPIMockRecorder) BatchGetRumMetricDefinitionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetRumMetricDefinitionsPages", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).BatchGetRumMetricDefinitionsPages), arg0, arg1)
+}
+
+// BatchGetRumMetricDefinitionsPagesWithContext mocks base method
+func (m *MockCloudWatchRUMAPI) BatchGetRumMetricDefinitionsPagesWithContext(arg0 context.Context, arg1 *cloudwatchrum.BatchGetRumMetricDefinitionsInput, arg2 func(*cloudwatchrum.BatchGetRumMetricDefinitionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetRumMetricDefinitionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// BatchGetRumMetricDefinitionsPagesWithContext indicates an expected call of BatchGetRumMetricDefinitionsPagesWithContext
+func (mr *MockCloudWatchRUMAPIMockRecorder) BatchGetRumMetricDefinitionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetRumMetricDefinitionsPagesWithContext", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).BatchGetRumMetricDefinitionsPagesWithContext), varargs...)
+}
+
+// BatchGetRumMetricDefinitionsRequest mocks base method
+func (m *MockCloudWatchRUMAPI) BatchGetRumMetricDefinitionsRequest(arg0 *cloudwatchrum.BatchGetRumMetricDefinitionsInput) (*request.Request, *cloudwatchrum.BatchGetRumMetricDefinitionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetRumMetricDefinitionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchrum.BatchGetRumMetricDefinitionsOutput)
+	return ret0, ret1
+}
+
+// BatchGetRumMetricDefinitionsRequest indicates an expected call of BatchGetRumMetricDefinitionsRequest
+func (mr *MockCloudWatchRUMAPIMockRecorder) BatchGetRumMetricDefinitionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetRumMetricDefinitionsRequest", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).BatchGetRumMetricDefinitionsRequest), arg0)
+}
+
+// BatchGetRumMetricDefinitionsWithContext mocks base method
+func (m *MockCloudWatchRUMAPI) BatchGetRumMetricDefinitionsWithContext(arg0 context.Context, arg1 *cloudwatchrum.BatchGetRumMetricDefinitionsInput, arg2 ...request.Option) (*cloudwatchrum.BatchGetRumMetricDefinitionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetRumMetricDefinitionsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchrum.BatchGetRumMetricDefinitionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetRumMetricDefinitionsWithContext indicates an expected call of BatchGetRumMetricDefinitionsWithContext
+func (mr *MockCloudWatchRUMAPIMockRecorder) BatchGetRumMetricDefinitionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetRumMetricDefinitionsWithContext", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).BatchGetRumMetricDefinitionsWithContext), varargs...)
+}
+
 // CreateAppMonitor mocks base method
 func (m *MockCloudWatchRUMAPI) CreateAppMonitor(arg0 *cloudwatchrum.CreateAppMonitorInput) (*cloudwatchrum.CreateAppMonitorOutput, error) {
 	m.ctrl.T.Helper()
@@ -133,6 +316,56 @@ func (mr *MockCloudWatchRUMAPIMockRecorder) DeleteAppMonitorWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppMonitorWithContext", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).DeleteAppMonitorWithContext), varargs...)
+}
+
+// DeleteRumMetricsDestination mocks base method
+func (m *MockCloudWatchRUMAPI) DeleteRumMetricsDestination(arg0 *cloudwatchrum.DeleteRumMetricsDestinationInput) (*cloudwatchrum.DeleteRumMetricsDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRumMetricsDestination", arg0)
+	ret0, _ := ret[0].(*cloudwatchrum.DeleteRumMetricsDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRumMetricsDestination indicates an expected call of DeleteRumMetricsDestination
+func (mr *MockCloudWatchRUMAPIMockRecorder) DeleteRumMetricsDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRumMetricsDestination", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).DeleteRumMetricsDestination), arg0)
+}
+
+// DeleteRumMetricsDestinationRequest mocks base method
+func (m *MockCloudWatchRUMAPI) DeleteRumMetricsDestinationRequest(arg0 *cloudwatchrum.DeleteRumMetricsDestinationInput) (*request.Request, *cloudwatchrum.DeleteRumMetricsDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRumMetricsDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchrum.DeleteRumMetricsDestinationOutput)
+	return ret0, ret1
+}
+
+// DeleteRumMetricsDestinationRequest indicates an expected call of DeleteRumMetricsDestinationRequest
+func (mr *MockCloudWatchRUMAPIMockRecorder) DeleteRumMetricsDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRumMetricsDestinationRequest", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).DeleteRumMetricsDestinationRequest), arg0)
+}
+
+// DeleteRumMetricsDestinationWithContext mocks base method
+func (m *MockCloudWatchRUMAPI) DeleteRumMetricsDestinationWithContext(arg0 context.Context, arg1 *cloudwatchrum.DeleteRumMetricsDestinationInput, arg2 ...request.Option) (*cloudwatchrum.DeleteRumMetricsDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRumMetricsDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchrum.DeleteRumMetricsDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRumMetricsDestinationWithContext indicates an expected call of DeleteRumMetricsDestinationWithContext
+func (mr *MockCloudWatchRUMAPIMockRecorder) DeleteRumMetricsDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRumMetricsDestinationWithContext", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).DeleteRumMetricsDestinationWithContext), varargs...)
 }
 
 // GetAppMonitor mocks base method
@@ -351,6 +584,89 @@ func (mr *MockCloudWatchRUMAPIMockRecorder) ListAppMonitorsWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppMonitorsWithContext", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).ListAppMonitorsWithContext), varargs...)
 }
 
+// ListRumMetricsDestinations mocks base method
+func (m *MockCloudWatchRUMAPI) ListRumMetricsDestinations(arg0 *cloudwatchrum.ListRumMetricsDestinationsInput) (*cloudwatchrum.ListRumMetricsDestinationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRumMetricsDestinations", arg0)
+	ret0, _ := ret[0].(*cloudwatchrum.ListRumMetricsDestinationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRumMetricsDestinations indicates an expected call of ListRumMetricsDestinations
+func (mr *MockCloudWatchRUMAPIMockRecorder) ListRumMetricsDestinations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRumMetricsDestinations", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).ListRumMetricsDestinations), arg0)
+}
+
+// ListRumMetricsDestinationsPages mocks base method
+func (m *MockCloudWatchRUMAPI) ListRumMetricsDestinationsPages(arg0 *cloudwatchrum.ListRumMetricsDestinationsInput, arg1 func(*cloudwatchrum.ListRumMetricsDestinationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRumMetricsDestinationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRumMetricsDestinationsPages indicates an expected call of ListRumMetricsDestinationsPages
+func (mr *MockCloudWatchRUMAPIMockRecorder) ListRumMetricsDestinationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRumMetricsDestinationsPages", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).ListRumMetricsDestinationsPages), arg0, arg1)
+}
+
+// ListRumMetricsDestinationsPagesWithContext mocks base method
+func (m *MockCloudWatchRUMAPI) ListRumMetricsDestinationsPagesWithContext(arg0 context.Context, arg1 *cloudwatchrum.ListRumMetricsDestinationsInput, arg2 func(*cloudwatchrum.ListRumMetricsDestinationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRumMetricsDestinationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRumMetricsDestinationsPagesWithContext indicates an expected call of ListRumMetricsDestinationsPagesWithContext
+func (mr *MockCloudWatchRUMAPIMockRecorder) ListRumMetricsDestinationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRumMetricsDestinationsPagesWithContext", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).ListRumMetricsDestinationsPagesWithContext), varargs...)
+}
+
+// ListRumMetricsDestinationsRequest mocks base method
+func (m *MockCloudWatchRUMAPI) ListRumMetricsDestinationsRequest(arg0 *cloudwatchrum.ListRumMetricsDestinationsInput) (*request.Request, *cloudwatchrum.ListRumMetricsDestinationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRumMetricsDestinationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchrum.ListRumMetricsDestinationsOutput)
+	return ret0, ret1
+}
+
+// ListRumMetricsDestinationsRequest indicates an expected call of ListRumMetricsDestinationsRequest
+func (mr *MockCloudWatchRUMAPIMockRecorder) ListRumMetricsDestinationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRumMetricsDestinationsRequest", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).ListRumMetricsDestinationsRequest), arg0)
+}
+
+// ListRumMetricsDestinationsWithContext mocks base method
+func (m *MockCloudWatchRUMAPI) ListRumMetricsDestinationsWithContext(arg0 context.Context, arg1 *cloudwatchrum.ListRumMetricsDestinationsInput, arg2 ...request.Option) (*cloudwatchrum.ListRumMetricsDestinationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRumMetricsDestinationsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchrum.ListRumMetricsDestinationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRumMetricsDestinationsWithContext indicates an expected call of ListRumMetricsDestinationsWithContext
+func (mr *MockCloudWatchRUMAPIMockRecorder) ListRumMetricsDestinationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRumMetricsDestinationsWithContext", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).ListRumMetricsDestinationsWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockCloudWatchRUMAPI) ListTagsForResource(arg0 *cloudwatchrum.ListTagsForResourceInput) (*cloudwatchrum.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -449,6 +765,56 @@ func (mr *MockCloudWatchRUMAPIMockRecorder) PutRumEventsWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRumEventsWithContext", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).PutRumEventsWithContext), varargs...)
+}
+
+// PutRumMetricsDestination mocks base method
+func (m *MockCloudWatchRUMAPI) PutRumMetricsDestination(arg0 *cloudwatchrum.PutRumMetricsDestinationInput) (*cloudwatchrum.PutRumMetricsDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutRumMetricsDestination", arg0)
+	ret0, _ := ret[0].(*cloudwatchrum.PutRumMetricsDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutRumMetricsDestination indicates an expected call of PutRumMetricsDestination
+func (mr *MockCloudWatchRUMAPIMockRecorder) PutRumMetricsDestination(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRumMetricsDestination", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).PutRumMetricsDestination), arg0)
+}
+
+// PutRumMetricsDestinationRequest mocks base method
+func (m *MockCloudWatchRUMAPI) PutRumMetricsDestinationRequest(arg0 *cloudwatchrum.PutRumMetricsDestinationInput) (*request.Request, *cloudwatchrum.PutRumMetricsDestinationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutRumMetricsDestinationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchrum.PutRumMetricsDestinationOutput)
+	return ret0, ret1
+}
+
+// PutRumMetricsDestinationRequest indicates an expected call of PutRumMetricsDestinationRequest
+func (mr *MockCloudWatchRUMAPIMockRecorder) PutRumMetricsDestinationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRumMetricsDestinationRequest", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).PutRumMetricsDestinationRequest), arg0)
+}
+
+// PutRumMetricsDestinationWithContext mocks base method
+func (m *MockCloudWatchRUMAPI) PutRumMetricsDestinationWithContext(arg0 context.Context, arg1 *cloudwatchrum.PutRumMetricsDestinationInput, arg2 ...request.Option) (*cloudwatchrum.PutRumMetricsDestinationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutRumMetricsDestinationWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchrum.PutRumMetricsDestinationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutRumMetricsDestinationWithContext indicates an expected call of PutRumMetricsDestinationWithContext
+func (mr *MockCloudWatchRUMAPIMockRecorder) PutRumMetricsDestinationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutRumMetricsDestinationWithContext", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).PutRumMetricsDestinationWithContext), varargs...)
 }
 
 // TagResource mocks base method
@@ -599,4 +965,54 @@ func (mr *MockCloudWatchRUMAPIMockRecorder) UpdateAppMonitorWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppMonitorWithContext", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).UpdateAppMonitorWithContext), varargs...)
+}
+
+// UpdateRumMetricDefinition mocks base method
+func (m *MockCloudWatchRUMAPI) UpdateRumMetricDefinition(arg0 *cloudwatchrum.UpdateRumMetricDefinitionInput) (*cloudwatchrum.UpdateRumMetricDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRumMetricDefinition", arg0)
+	ret0, _ := ret[0].(*cloudwatchrum.UpdateRumMetricDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRumMetricDefinition indicates an expected call of UpdateRumMetricDefinition
+func (mr *MockCloudWatchRUMAPIMockRecorder) UpdateRumMetricDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRumMetricDefinition", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).UpdateRumMetricDefinition), arg0)
+}
+
+// UpdateRumMetricDefinitionRequest mocks base method
+func (m *MockCloudWatchRUMAPI) UpdateRumMetricDefinitionRequest(arg0 *cloudwatchrum.UpdateRumMetricDefinitionInput) (*request.Request, *cloudwatchrum.UpdateRumMetricDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRumMetricDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchrum.UpdateRumMetricDefinitionOutput)
+	return ret0, ret1
+}
+
+// UpdateRumMetricDefinitionRequest indicates an expected call of UpdateRumMetricDefinitionRequest
+func (mr *MockCloudWatchRUMAPIMockRecorder) UpdateRumMetricDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRumMetricDefinitionRequest", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).UpdateRumMetricDefinitionRequest), arg0)
+}
+
+// UpdateRumMetricDefinitionWithContext mocks base method
+func (m *MockCloudWatchRUMAPI) UpdateRumMetricDefinitionWithContext(arg0 context.Context, arg1 *cloudwatchrum.UpdateRumMetricDefinitionInput, arg2 ...request.Option) (*cloudwatchrum.UpdateRumMetricDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRumMetricDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchrum.UpdateRumMetricDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRumMetricDefinitionWithContext indicates an expected call of UpdateRumMetricDefinitionWithContext
+func (mr *MockCloudWatchRUMAPIMockRecorder) UpdateRumMetricDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRumMetricDefinitionWithContext", reflect.TypeOf((*MockCloudWatchRUMAPI)(nil).UpdateRumMetricDefinitionWithContext), varargs...)
 }

@@ -85,6 +85,56 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) AddCustomRoutingEndpointsWithCon
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddCustomRoutingEndpointsWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).AddCustomRoutingEndpointsWithContext), varargs...)
 }
 
+// AddEndpoints mocks base method
+func (m *MockGlobalAcceleratorAPI) AddEndpoints(arg0 *globalaccelerator.AddEndpointsInput) (*globalaccelerator.AddEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddEndpoints", arg0)
+	ret0, _ := ret[0].(*globalaccelerator.AddEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddEndpoints indicates an expected call of AddEndpoints
+func (mr *MockGlobalAcceleratorAPIMockRecorder) AddEndpoints(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddEndpoints", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).AddEndpoints), arg0)
+}
+
+// AddEndpointsRequest mocks base method
+func (m *MockGlobalAcceleratorAPI) AddEndpointsRequest(arg0 *globalaccelerator.AddEndpointsInput) (*request.Request, *globalaccelerator.AddEndpointsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddEndpointsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*globalaccelerator.AddEndpointsOutput)
+	return ret0, ret1
+}
+
+// AddEndpointsRequest indicates an expected call of AddEndpointsRequest
+func (mr *MockGlobalAcceleratorAPIMockRecorder) AddEndpointsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddEndpointsRequest", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).AddEndpointsRequest), arg0)
+}
+
+// AddEndpointsWithContext mocks base method
+func (m *MockGlobalAcceleratorAPI) AddEndpointsWithContext(arg0 context.Context, arg1 *globalaccelerator.AddEndpointsInput, arg2 ...request.Option) (*globalaccelerator.AddEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AddEndpointsWithContext", varargs...)
+	ret0, _ := ret[0].(*globalaccelerator.AddEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddEndpointsWithContext indicates an expected call of AddEndpointsWithContext
+func (mr *MockGlobalAcceleratorAPIMockRecorder) AddEndpointsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddEndpointsWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).AddEndpointsWithContext), varargs...)
+}
+
 // AdvertiseByoipCidr mocks base method
 func (m *MockGlobalAcceleratorAPI) AdvertiseByoipCidr(arg0 *globalaccelerator.AdvertiseByoipCidrInput) (*globalaccelerator.AdvertiseByoipCidrOutput, error) {
 	m.ctrl.T.Helper()
@@ -2180,6 +2230,56 @@ func (mr *MockGlobalAcceleratorAPIMockRecorder) RemoveCustomRoutingEndpointsWith
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveCustomRoutingEndpointsWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).RemoveCustomRoutingEndpointsWithContext), varargs...)
+}
+
+// RemoveEndpoints mocks base method
+func (m *MockGlobalAcceleratorAPI) RemoveEndpoints(arg0 *globalaccelerator.RemoveEndpointsInput) (*globalaccelerator.RemoveEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveEndpoints", arg0)
+	ret0, _ := ret[0].(*globalaccelerator.RemoveEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveEndpoints indicates an expected call of RemoveEndpoints
+func (mr *MockGlobalAcceleratorAPIMockRecorder) RemoveEndpoints(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveEndpoints", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).RemoveEndpoints), arg0)
+}
+
+// RemoveEndpointsRequest mocks base method
+func (m *MockGlobalAcceleratorAPI) RemoveEndpointsRequest(arg0 *globalaccelerator.RemoveEndpointsInput) (*request.Request, *globalaccelerator.RemoveEndpointsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveEndpointsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*globalaccelerator.RemoveEndpointsOutput)
+	return ret0, ret1
+}
+
+// RemoveEndpointsRequest indicates an expected call of RemoveEndpointsRequest
+func (mr *MockGlobalAcceleratorAPIMockRecorder) RemoveEndpointsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveEndpointsRequest", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).RemoveEndpointsRequest), arg0)
+}
+
+// RemoveEndpointsWithContext mocks base method
+func (m *MockGlobalAcceleratorAPI) RemoveEndpointsWithContext(arg0 context.Context, arg1 *globalaccelerator.RemoveEndpointsInput, arg2 ...request.Option) (*globalaccelerator.RemoveEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveEndpointsWithContext", varargs...)
+	ret0, _ := ret[0].(*globalaccelerator.RemoveEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveEndpointsWithContext indicates an expected call of RemoveEndpointsWithContext
+func (mr *MockGlobalAcceleratorAPIMockRecorder) RemoveEndpointsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveEndpointsWithContext", reflect.TypeOf((*MockGlobalAcceleratorAPI)(nil).RemoveEndpointsWithContext), varargs...)
 }
 
 // TagResource mocks base method
