@@ -9793,6 +9793,89 @@ func (mr *MockSageMakerAPIMockRecorder) ListImagesWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImagesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListImagesWithContext), varargs...)
 }
 
+// ListInferenceRecommendationsJobSteps mocks base method
+func (m *MockSageMakerAPI) ListInferenceRecommendationsJobSteps(arg0 *sagemaker.ListInferenceRecommendationsJobStepsInput) (*sagemaker.ListInferenceRecommendationsJobStepsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInferenceRecommendationsJobSteps", arg0)
+	ret0, _ := ret[0].(*sagemaker.ListInferenceRecommendationsJobStepsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListInferenceRecommendationsJobSteps indicates an expected call of ListInferenceRecommendationsJobSteps
+func (mr *MockSageMakerAPIMockRecorder) ListInferenceRecommendationsJobSteps(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInferenceRecommendationsJobSteps", reflect.TypeOf((*MockSageMakerAPI)(nil).ListInferenceRecommendationsJobSteps), arg0)
+}
+
+// ListInferenceRecommendationsJobStepsPages mocks base method
+func (m *MockSageMakerAPI) ListInferenceRecommendationsJobStepsPages(arg0 *sagemaker.ListInferenceRecommendationsJobStepsInput, arg1 func(*sagemaker.ListInferenceRecommendationsJobStepsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInferenceRecommendationsJobStepsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListInferenceRecommendationsJobStepsPages indicates an expected call of ListInferenceRecommendationsJobStepsPages
+func (mr *MockSageMakerAPIMockRecorder) ListInferenceRecommendationsJobStepsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInferenceRecommendationsJobStepsPages", reflect.TypeOf((*MockSageMakerAPI)(nil).ListInferenceRecommendationsJobStepsPages), arg0, arg1)
+}
+
+// ListInferenceRecommendationsJobStepsPagesWithContext mocks base method
+func (m *MockSageMakerAPI) ListInferenceRecommendationsJobStepsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListInferenceRecommendationsJobStepsInput, arg2 func(*sagemaker.ListInferenceRecommendationsJobStepsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListInferenceRecommendationsJobStepsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListInferenceRecommendationsJobStepsPagesWithContext indicates an expected call of ListInferenceRecommendationsJobStepsPagesWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListInferenceRecommendationsJobStepsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInferenceRecommendationsJobStepsPagesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListInferenceRecommendationsJobStepsPagesWithContext), varargs...)
+}
+
+// ListInferenceRecommendationsJobStepsRequest mocks base method
+func (m *MockSageMakerAPI) ListInferenceRecommendationsJobStepsRequest(arg0 *sagemaker.ListInferenceRecommendationsJobStepsInput) (*request.Request, *sagemaker.ListInferenceRecommendationsJobStepsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListInferenceRecommendationsJobStepsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.ListInferenceRecommendationsJobStepsOutput)
+	return ret0, ret1
+}
+
+// ListInferenceRecommendationsJobStepsRequest indicates an expected call of ListInferenceRecommendationsJobStepsRequest
+func (mr *MockSageMakerAPIMockRecorder) ListInferenceRecommendationsJobStepsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInferenceRecommendationsJobStepsRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).ListInferenceRecommendationsJobStepsRequest), arg0)
+}
+
+// ListInferenceRecommendationsJobStepsWithContext mocks base method
+func (m *MockSageMakerAPI) ListInferenceRecommendationsJobStepsWithContext(arg0 context.Context, arg1 *sagemaker.ListInferenceRecommendationsJobStepsInput, arg2 ...request.Option) (*sagemaker.ListInferenceRecommendationsJobStepsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListInferenceRecommendationsJobStepsWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.ListInferenceRecommendationsJobStepsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListInferenceRecommendationsJobStepsWithContext indicates an expected call of ListInferenceRecommendationsJobStepsWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListInferenceRecommendationsJobStepsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListInferenceRecommendationsJobStepsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListInferenceRecommendationsJobStepsWithContext), varargs...)
+}
+
 // ListInferenceRecommendationsJobs mocks base method
 func (m *MockSageMakerAPI) ListInferenceRecommendationsJobs(arg0 *sagemaker.ListInferenceRecommendationsJobsInput) (*sagemaker.ListInferenceRecommendationsJobsOutput, error) {
 	m.ctrl.T.Helper()
