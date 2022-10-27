@@ -2048,3 +2048,53 @@ func (mr *MockKafkaAPIMockRecorder) UpdateSecurityWithContext(arg0, arg1 interfa
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSecurityWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateSecurityWithContext), varargs...)
 }
+
+// UpdateStorage mocks base method
+func (m *MockKafkaAPI) UpdateStorage(arg0 *kafka.UpdateStorageInput) (*kafka.UpdateStorageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStorage", arg0)
+	ret0, _ := ret[0].(*kafka.UpdateStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStorage indicates an expected call of UpdateStorage
+func (mr *MockKafkaAPIMockRecorder) UpdateStorage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStorage", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateStorage), arg0)
+}
+
+// UpdateStorageRequest mocks base method
+func (m *MockKafkaAPI) UpdateStorageRequest(arg0 *kafka.UpdateStorageInput) (*request.Request, *kafka.UpdateStorageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStorageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.UpdateStorageOutput)
+	return ret0, ret1
+}
+
+// UpdateStorageRequest indicates an expected call of UpdateStorageRequest
+func (mr *MockKafkaAPIMockRecorder) UpdateStorageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStorageRequest", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateStorageRequest), arg0)
+}
+
+// UpdateStorageWithContext mocks base method
+func (m *MockKafkaAPI) UpdateStorageWithContext(arg0 context.Context, arg1 *kafka.UpdateStorageInput, arg2 ...request.Option) (*kafka.UpdateStorageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateStorageWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.UpdateStorageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStorageWithContext indicates an expected call of UpdateStorageWithContext
+func (mr *MockKafkaAPIMockRecorder) UpdateStorageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStorageWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateStorageWithContext), varargs...)
+}

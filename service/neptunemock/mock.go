@@ -2529,6 +2529,39 @@ func (mr *MockNeptuneAPIMockRecorder) DescribeGlobalClusters(arg0 interface{}) *
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalClusters", reflect.TypeOf((*MockNeptuneAPI)(nil).DescribeGlobalClusters), arg0)
 }
 
+// DescribeGlobalClustersPages mocks base method
+func (m *MockNeptuneAPI) DescribeGlobalClustersPages(arg0 *neptune.DescribeGlobalClustersInput, arg1 func(*neptune.DescribeGlobalClustersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGlobalClustersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeGlobalClustersPages indicates an expected call of DescribeGlobalClustersPages
+func (mr *MockNeptuneAPIMockRecorder) DescribeGlobalClustersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalClustersPages", reflect.TypeOf((*MockNeptuneAPI)(nil).DescribeGlobalClustersPages), arg0, arg1)
+}
+
+// DescribeGlobalClustersPagesWithContext mocks base method
+func (m *MockNeptuneAPI) DescribeGlobalClustersPagesWithContext(arg0 context.Context, arg1 *neptune.DescribeGlobalClustersInput, arg2 func(*neptune.DescribeGlobalClustersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGlobalClustersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeGlobalClustersPagesWithContext indicates an expected call of DescribeGlobalClustersPagesWithContext
+func (mr *MockNeptuneAPIMockRecorder) DescribeGlobalClustersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGlobalClustersPagesWithContext", reflect.TypeOf((*MockNeptuneAPI)(nil).DescribeGlobalClustersPagesWithContext), varargs...)
+}
+
 // DescribeGlobalClustersRequest mocks base method
 func (m *MockNeptuneAPI) DescribeGlobalClustersRequest(arg0 *neptune.DescribeGlobalClustersInput) (*request.Request, *neptune.DescribeGlobalClustersOutput) {
 	m.ctrl.T.Helper()
