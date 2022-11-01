@@ -335,6 +335,56 @@ func (mr *MockAppRunnerAPIMockRecorder) CreateVpcConnectorWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcConnectorWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).CreateVpcConnectorWithContext), varargs...)
 }
 
+// CreateVpcIngressConnection mocks base method
+func (m *MockAppRunnerAPI) CreateVpcIngressConnection(arg0 *apprunner.CreateVpcIngressConnectionInput) (*apprunner.CreateVpcIngressConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVpcIngressConnection", arg0)
+	ret0, _ := ret[0].(*apprunner.CreateVpcIngressConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVpcIngressConnection indicates an expected call of CreateVpcIngressConnection
+func (mr *MockAppRunnerAPIMockRecorder) CreateVpcIngressConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcIngressConnection", reflect.TypeOf((*MockAppRunnerAPI)(nil).CreateVpcIngressConnection), arg0)
+}
+
+// CreateVpcIngressConnectionRequest mocks base method
+func (m *MockAppRunnerAPI) CreateVpcIngressConnectionRequest(arg0 *apprunner.CreateVpcIngressConnectionInput) (*request.Request, *apprunner.CreateVpcIngressConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVpcIngressConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apprunner.CreateVpcIngressConnectionOutput)
+	return ret0, ret1
+}
+
+// CreateVpcIngressConnectionRequest indicates an expected call of CreateVpcIngressConnectionRequest
+func (mr *MockAppRunnerAPIMockRecorder) CreateVpcIngressConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcIngressConnectionRequest", reflect.TypeOf((*MockAppRunnerAPI)(nil).CreateVpcIngressConnectionRequest), arg0)
+}
+
+// CreateVpcIngressConnectionWithContext mocks base method
+func (m *MockAppRunnerAPI) CreateVpcIngressConnectionWithContext(arg0 context.Context, arg1 *apprunner.CreateVpcIngressConnectionInput, arg2 ...request.Option) (*apprunner.CreateVpcIngressConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateVpcIngressConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*apprunner.CreateVpcIngressConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVpcIngressConnectionWithContext indicates an expected call of CreateVpcIngressConnectionWithContext
+func (mr *MockAppRunnerAPIMockRecorder) CreateVpcIngressConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcIngressConnectionWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).CreateVpcIngressConnectionWithContext), varargs...)
+}
+
 // DeleteAutoScalingConfiguration mocks base method
 func (m *MockAppRunnerAPI) DeleteAutoScalingConfiguration(arg0 *apprunner.DeleteAutoScalingConfigurationInput) (*apprunner.DeleteAutoScalingConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +633,56 @@ func (mr *MockAppRunnerAPIMockRecorder) DeleteVpcConnectorWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcConnectorWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).DeleteVpcConnectorWithContext), varargs...)
+}
+
+// DeleteVpcIngressConnection mocks base method
+func (m *MockAppRunnerAPI) DeleteVpcIngressConnection(arg0 *apprunner.DeleteVpcIngressConnectionInput) (*apprunner.DeleteVpcIngressConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVpcIngressConnection", arg0)
+	ret0, _ := ret[0].(*apprunner.DeleteVpcIngressConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVpcIngressConnection indicates an expected call of DeleteVpcIngressConnection
+func (mr *MockAppRunnerAPIMockRecorder) DeleteVpcIngressConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcIngressConnection", reflect.TypeOf((*MockAppRunnerAPI)(nil).DeleteVpcIngressConnection), arg0)
+}
+
+// DeleteVpcIngressConnectionRequest mocks base method
+func (m *MockAppRunnerAPI) DeleteVpcIngressConnectionRequest(arg0 *apprunner.DeleteVpcIngressConnectionInput) (*request.Request, *apprunner.DeleteVpcIngressConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVpcIngressConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apprunner.DeleteVpcIngressConnectionOutput)
+	return ret0, ret1
+}
+
+// DeleteVpcIngressConnectionRequest indicates an expected call of DeleteVpcIngressConnectionRequest
+func (mr *MockAppRunnerAPIMockRecorder) DeleteVpcIngressConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcIngressConnectionRequest", reflect.TypeOf((*MockAppRunnerAPI)(nil).DeleteVpcIngressConnectionRequest), arg0)
+}
+
+// DeleteVpcIngressConnectionWithContext mocks base method
+func (m *MockAppRunnerAPI) DeleteVpcIngressConnectionWithContext(arg0 context.Context, arg1 *apprunner.DeleteVpcIngressConnectionInput, arg2 ...request.Option) (*apprunner.DeleteVpcIngressConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteVpcIngressConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*apprunner.DeleteVpcIngressConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVpcIngressConnectionWithContext indicates an expected call of DeleteVpcIngressConnectionWithContext
+func (mr *MockAppRunnerAPIMockRecorder) DeleteVpcIngressConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcIngressConnectionWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).DeleteVpcIngressConnectionWithContext), varargs...)
 }
 
 // DescribeAutoScalingConfiguration mocks base method
@@ -866,6 +966,56 @@ func (mr *MockAppRunnerAPIMockRecorder) DescribeVpcConnectorWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVpcConnectorWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).DescribeVpcConnectorWithContext), varargs...)
+}
+
+// DescribeVpcIngressConnection mocks base method
+func (m *MockAppRunnerAPI) DescribeVpcIngressConnection(arg0 *apprunner.DescribeVpcIngressConnectionInput) (*apprunner.DescribeVpcIngressConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeVpcIngressConnection", arg0)
+	ret0, _ := ret[0].(*apprunner.DescribeVpcIngressConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeVpcIngressConnection indicates an expected call of DescribeVpcIngressConnection
+func (mr *MockAppRunnerAPIMockRecorder) DescribeVpcIngressConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVpcIngressConnection", reflect.TypeOf((*MockAppRunnerAPI)(nil).DescribeVpcIngressConnection), arg0)
+}
+
+// DescribeVpcIngressConnectionRequest mocks base method
+func (m *MockAppRunnerAPI) DescribeVpcIngressConnectionRequest(arg0 *apprunner.DescribeVpcIngressConnectionInput) (*request.Request, *apprunner.DescribeVpcIngressConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeVpcIngressConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apprunner.DescribeVpcIngressConnectionOutput)
+	return ret0, ret1
+}
+
+// DescribeVpcIngressConnectionRequest indicates an expected call of DescribeVpcIngressConnectionRequest
+func (mr *MockAppRunnerAPIMockRecorder) DescribeVpcIngressConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVpcIngressConnectionRequest", reflect.TypeOf((*MockAppRunnerAPI)(nil).DescribeVpcIngressConnectionRequest), arg0)
+}
+
+// DescribeVpcIngressConnectionWithContext mocks base method
+func (m *MockAppRunnerAPI) DescribeVpcIngressConnectionWithContext(arg0 context.Context, arg1 *apprunner.DescribeVpcIngressConnectionInput, arg2 ...request.Option) (*apprunner.DescribeVpcIngressConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeVpcIngressConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*apprunner.DescribeVpcIngressConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeVpcIngressConnectionWithContext indicates an expected call of DescribeVpcIngressConnectionWithContext
+func (mr *MockAppRunnerAPIMockRecorder) DescribeVpcIngressConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVpcIngressConnectionWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).DescribeVpcIngressConnectionWithContext), varargs...)
 }
 
 // DisassociateCustomDomain mocks base method
@@ -1466,6 +1616,89 @@ func (mr *MockAppRunnerAPIMockRecorder) ListVpcConnectorsWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcConnectorsWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListVpcConnectorsWithContext), varargs...)
 }
 
+// ListVpcIngressConnections mocks base method
+func (m *MockAppRunnerAPI) ListVpcIngressConnections(arg0 *apprunner.ListVpcIngressConnectionsInput) (*apprunner.ListVpcIngressConnectionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVpcIngressConnections", arg0)
+	ret0, _ := ret[0].(*apprunner.ListVpcIngressConnectionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVpcIngressConnections indicates an expected call of ListVpcIngressConnections
+func (mr *MockAppRunnerAPIMockRecorder) ListVpcIngressConnections(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcIngressConnections", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListVpcIngressConnections), arg0)
+}
+
+// ListVpcIngressConnectionsPages mocks base method
+func (m *MockAppRunnerAPI) ListVpcIngressConnectionsPages(arg0 *apprunner.ListVpcIngressConnectionsInput, arg1 func(*apprunner.ListVpcIngressConnectionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVpcIngressConnectionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListVpcIngressConnectionsPages indicates an expected call of ListVpcIngressConnectionsPages
+func (mr *MockAppRunnerAPIMockRecorder) ListVpcIngressConnectionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcIngressConnectionsPages", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListVpcIngressConnectionsPages), arg0, arg1)
+}
+
+// ListVpcIngressConnectionsPagesWithContext mocks base method
+func (m *MockAppRunnerAPI) ListVpcIngressConnectionsPagesWithContext(arg0 context.Context, arg1 *apprunner.ListVpcIngressConnectionsInput, arg2 func(*apprunner.ListVpcIngressConnectionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVpcIngressConnectionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListVpcIngressConnectionsPagesWithContext indicates an expected call of ListVpcIngressConnectionsPagesWithContext
+func (mr *MockAppRunnerAPIMockRecorder) ListVpcIngressConnectionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcIngressConnectionsPagesWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListVpcIngressConnectionsPagesWithContext), varargs...)
+}
+
+// ListVpcIngressConnectionsRequest mocks base method
+func (m *MockAppRunnerAPI) ListVpcIngressConnectionsRequest(arg0 *apprunner.ListVpcIngressConnectionsInput) (*request.Request, *apprunner.ListVpcIngressConnectionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVpcIngressConnectionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apprunner.ListVpcIngressConnectionsOutput)
+	return ret0, ret1
+}
+
+// ListVpcIngressConnectionsRequest indicates an expected call of ListVpcIngressConnectionsRequest
+func (mr *MockAppRunnerAPIMockRecorder) ListVpcIngressConnectionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcIngressConnectionsRequest", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListVpcIngressConnectionsRequest), arg0)
+}
+
+// ListVpcIngressConnectionsWithContext mocks base method
+func (m *MockAppRunnerAPI) ListVpcIngressConnectionsWithContext(arg0 context.Context, arg1 *apprunner.ListVpcIngressConnectionsInput, arg2 ...request.Option) (*apprunner.ListVpcIngressConnectionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVpcIngressConnectionsWithContext", varargs...)
+	ret0, _ := ret[0].(*apprunner.ListVpcIngressConnectionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVpcIngressConnectionsWithContext indicates an expected call of ListVpcIngressConnectionsWithContext
+func (mr *MockAppRunnerAPIMockRecorder) ListVpcIngressConnectionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcIngressConnectionsWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListVpcIngressConnectionsWithContext), varargs...)
+}
+
 // PauseService mocks base method
 func (m *MockAppRunnerAPI) PauseService(arg0 *apprunner.PauseServiceInput) (*apprunner.PauseServiceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1764,4 +1997,54 @@ func (mr *MockAppRunnerAPIMockRecorder) UpdateServiceWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateServiceWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).UpdateServiceWithContext), varargs...)
+}
+
+// UpdateVpcIngressConnection mocks base method
+func (m *MockAppRunnerAPI) UpdateVpcIngressConnection(arg0 *apprunner.UpdateVpcIngressConnectionInput) (*apprunner.UpdateVpcIngressConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVpcIngressConnection", arg0)
+	ret0, _ := ret[0].(*apprunner.UpdateVpcIngressConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVpcIngressConnection indicates an expected call of UpdateVpcIngressConnection
+func (mr *MockAppRunnerAPIMockRecorder) UpdateVpcIngressConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVpcIngressConnection", reflect.TypeOf((*MockAppRunnerAPI)(nil).UpdateVpcIngressConnection), arg0)
+}
+
+// UpdateVpcIngressConnectionRequest mocks base method
+func (m *MockAppRunnerAPI) UpdateVpcIngressConnectionRequest(arg0 *apprunner.UpdateVpcIngressConnectionInput) (*request.Request, *apprunner.UpdateVpcIngressConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVpcIngressConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apprunner.UpdateVpcIngressConnectionOutput)
+	return ret0, ret1
+}
+
+// UpdateVpcIngressConnectionRequest indicates an expected call of UpdateVpcIngressConnectionRequest
+func (mr *MockAppRunnerAPIMockRecorder) UpdateVpcIngressConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVpcIngressConnectionRequest", reflect.TypeOf((*MockAppRunnerAPI)(nil).UpdateVpcIngressConnectionRequest), arg0)
+}
+
+// UpdateVpcIngressConnectionWithContext mocks base method
+func (m *MockAppRunnerAPI) UpdateVpcIngressConnectionWithContext(arg0 context.Context, arg1 *apprunner.UpdateVpcIngressConnectionInput, arg2 ...request.Option) (*apprunner.UpdateVpcIngressConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateVpcIngressConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*apprunner.UpdateVpcIngressConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVpcIngressConnectionWithContext indicates an expected call of UpdateVpcIngressConnectionWithContext
+func (mr *MockAppRunnerAPIMockRecorder) UpdateVpcIngressConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVpcIngressConnectionWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).UpdateVpcIngressConnectionWithContext), varargs...)
 }

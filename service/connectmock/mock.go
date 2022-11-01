@@ -3385,6 +3385,56 @@ func (mr *MockConnectAPIMockRecorder) DisassociateSecurityKeyWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSecurityKeyWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateSecurityKeyWithContext), varargs...)
 }
 
+// DismissUserContact mocks base method
+func (m *MockConnectAPI) DismissUserContact(arg0 *connect.DismissUserContactInput) (*connect.DismissUserContactOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DismissUserContact", arg0)
+	ret0, _ := ret[0].(*connect.DismissUserContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DismissUserContact indicates an expected call of DismissUserContact
+func (mr *MockConnectAPIMockRecorder) DismissUserContact(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DismissUserContact", reflect.TypeOf((*MockConnectAPI)(nil).DismissUserContact), arg0)
+}
+
+// DismissUserContactRequest mocks base method
+func (m *MockConnectAPI) DismissUserContactRequest(arg0 *connect.DismissUserContactInput) (*request.Request, *connect.DismissUserContactOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DismissUserContactRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DismissUserContactOutput)
+	return ret0, ret1
+}
+
+// DismissUserContactRequest indicates an expected call of DismissUserContactRequest
+func (mr *MockConnectAPIMockRecorder) DismissUserContactRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DismissUserContactRequest", reflect.TypeOf((*MockConnectAPI)(nil).DismissUserContactRequest), arg0)
+}
+
+// DismissUserContactWithContext mocks base method
+func (m *MockConnectAPI) DismissUserContactWithContext(arg0 context.Context, arg1 *connect.DismissUserContactInput, arg2 ...request.Option) (*connect.DismissUserContactOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DismissUserContactWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DismissUserContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DismissUserContactWithContext indicates an expected call of DismissUserContactWithContext
+func (mr *MockConnectAPIMockRecorder) DismissUserContactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DismissUserContactWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DismissUserContactWithContext), varargs...)
+}
+
 // GetContactAttributes mocks base method
 func (m *MockConnectAPI) GetContactAttributes(arg0 *connect.GetContactAttributesInput) (*connect.GetContactAttributesOutput, error) {
 	m.ctrl.T.Helper()

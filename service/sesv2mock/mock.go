@@ -35,6 +35,56 @@ func (m *MockSESV2API) EXPECT() *MockSESV2APIMockRecorder {
 	return m.recorder
 }
 
+// BatchGetMetricData mocks base method
+func (m *MockSESV2API) BatchGetMetricData(arg0 *sesv2.BatchGetMetricDataInput) (*sesv2.BatchGetMetricDataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetMetricData", arg0)
+	ret0, _ := ret[0].(*sesv2.BatchGetMetricDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetMetricData indicates an expected call of BatchGetMetricData
+func (mr *MockSESV2APIMockRecorder) BatchGetMetricData(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetMetricData", reflect.TypeOf((*MockSESV2API)(nil).BatchGetMetricData), arg0)
+}
+
+// BatchGetMetricDataRequest mocks base method
+func (m *MockSESV2API) BatchGetMetricDataRequest(arg0 *sesv2.BatchGetMetricDataInput) (*request.Request, *sesv2.BatchGetMetricDataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetMetricDataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.BatchGetMetricDataOutput)
+	return ret0, ret1
+}
+
+// BatchGetMetricDataRequest indicates an expected call of BatchGetMetricDataRequest
+func (mr *MockSESV2APIMockRecorder) BatchGetMetricDataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetMetricDataRequest", reflect.TypeOf((*MockSESV2API)(nil).BatchGetMetricDataRequest), arg0)
+}
+
+// BatchGetMetricDataWithContext mocks base method
+func (m *MockSESV2API) BatchGetMetricDataWithContext(arg0 context.Context, arg1 *sesv2.BatchGetMetricDataInput, arg2 ...request.Option) (*sesv2.BatchGetMetricDataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetMetricDataWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.BatchGetMetricDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetMetricDataWithContext indicates an expected call of BatchGetMetricDataWithContext
+func (mr *MockSESV2APIMockRecorder) BatchGetMetricDataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetMetricDataWithContext", reflect.TypeOf((*MockSESV2API)(nil).BatchGetMetricDataWithContext), varargs...)
+}
+
 // CreateConfigurationSet mocks base method
 func (m *MockSESV2API) CreateConfigurationSet(arg0 *sesv2.CreateConfigurationSetInput) (*sesv2.CreateConfigurationSetOutput, error) {
 	m.ctrl.T.Helper()
@@ -2898,6 +2948,89 @@ func (mr *MockSESV2APIMockRecorder) ListImportJobsWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportJobsWithContext", reflect.TypeOf((*MockSESV2API)(nil).ListImportJobsWithContext), varargs...)
 }
 
+// ListRecommendations mocks base method
+func (m *MockSESV2API) ListRecommendations(arg0 *sesv2.ListRecommendationsInput) (*sesv2.ListRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRecommendations", arg0)
+	ret0, _ := ret[0].(*sesv2.ListRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRecommendations indicates an expected call of ListRecommendations
+func (mr *MockSESV2APIMockRecorder) ListRecommendations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecommendations", reflect.TypeOf((*MockSESV2API)(nil).ListRecommendations), arg0)
+}
+
+// ListRecommendationsPages mocks base method
+func (m *MockSESV2API) ListRecommendationsPages(arg0 *sesv2.ListRecommendationsInput, arg1 func(*sesv2.ListRecommendationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRecommendationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRecommendationsPages indicates an expected call of ListRecommendationsPages
+func (mr *MockSESV2APIMockRecorder) ListRecommendationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecommendationsPages", reflect.TypeOf((*MockSESV2API)(nil).ListRecommendationsPages), arg0, arg1)
+}
+
+// ListRecommendationsPagesWithContext mocks base method
+func (m *MockSESV2API) ListRecommendationsPagesWithContext(arg0 context.Context, arg1 *sesv2.ListRecommendationsInput, arg2 func(*sesv2.ListRecommendationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRecommendationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRecommendationsPagesWithContext indicates an expected call of ListRecommendationsPagesWithContext
+func (mr *MockSESV2APIMockRecorder) ListRecommendationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecommendationsPagesWithContext", reflect.TypeOf((*MockSESV2API)(nil).ListRecommendationsPagesWithContext), varargs...)
+}
+
+// ListRecommendationsRequest mocks base method
+func (m *MockSESV2API) ListRecommendationsRequest(arg0 *sesv2.ListRecommendationsInput) (*request.Request, *sesv2.ListRecommendationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRecommendationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.ListRecommendationsOutput)
+	return ret0, ret1
+}
+
+// ListRecommendationsRequest indicates an expected call of ListRecommendationsRequest
+func (mr *MockSESV2APIMockRecorder) ListRecommendationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecommendationsRequest", reflect.TypeOf((*MockSESV2API)(nil).ListRecommendationsRequest), arg0)
+}
+
+// ListRecommendationsWithContext mocks base method
+func (m *MockSESV2API) ListRecommendationsWithContext(arg0 context.Context, arg1 *sesv2.ListRecommendationsInput, arg2 ...request.Option) (*sesv2.ListRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRecommendationsWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.ListRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRecommendationsWithContext indicates an expected call of ListRecommendationsWithContext
+func (mr *MockSESV2APIMockRecorder) ListRecommendationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecommendationsWithContext", reflect.TypeOf((*MockSESV2API)(nil).ListRecommendationsWithContext), varargs...)
+}
+
 // ListSuppressedDestinations mocks base method
 func (m *MockSESV2API) ListSuppressedDestinations(arg0 *sesv2.ListSuppressedDestinationsInput) (*sesv2.ListSuppressedDestinationsOutput, error) {
 	m.ctrl.T.Helper()
@@ -3231,6 +3364,56 @@ func (mr *MockSESV2APIMockRecorder) PutAccountSuppressionAttributesWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountSuppressionAttributesWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutAccountSuppressionAttributesWithContext), varargs...)
 }
 
+// PutAccountVdmAttributes mocks base method
+func (m *MockSESV2API) PutAccountVdmAttributes(arg0 *sesv2.PutAccountVdmAttributesInput) (*sesv2.PutAccountVdmAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAccountVdmAttributes", arg0)
+	ret0, _ := ret[0].(*sesv2.PutAccountVdmAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAccountVdmAttributes indicates an expected call of PutAccountVdmAttributes
+func (mr *MockSESV2APIMockRecorder) PutAccountVdmAttributes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountVdmAttributes", reflect.TypeOf((*MockSESV2API)(nil).PutAccountVdmAttributes), arg0)
+}
+
+// PutAccountVdmAttributesRequest mocks base method
+func (m *MockSESV2API) PutAccountVdmAttributesRequest(arg0 *sesv2.PutAccountVdmAttributesInput) (*request.Request, *sesv2.PutAccountVdmAttributesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAccountVdmAttributesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.PutAccountVdmAttributesOutput)
+	return ret0, ret1
+}
+
+// PutAccountVdmAttributesRequest indicates an expected call of PutAccountVdmAttributesRequest
+func (mr *MockSESV2APIMockRecorder) PutAccountVdmAttributesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountVdmAttributesRequest", reflect.TypeOf((*MockSESV2API)(nil).PutAccountVdmAttributesRequest), arg0)
+}
+
+// PutAccountVdmAttributesWithContext mocks base method
+func (m *MockSESV2API) PutAccountVdmAttributesWithContext(arg0 context.Context, arg1 *sesv2.PutAccountVdmAttributesInput, arg2 ...request.Option) (*sesv2.PutAccountVdmAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAccountVdmAttributesWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.PutAccountVdmAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAccountVdmAttributesWithContext indicates an expected call of PutAccountVdmAttributesWithContext
+func (mr *MockSESV2APIMockRecorder) PutAccountVdmAttributesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountVdmAttributesWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutAccountVdmAttributesWithContext), varargs...)
+}
+
 // PutConfigurationSetDeliveryOptions mocks base method
 func (m *MockSESV2API) PutConfigurationSetDeliveryOptions(arg0 *sesv2.PutConfigurationSetDeliveryOptionsInput) (*sesv2.PutConfigurationSetDeliveryOptionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -3479,6 +3662,56 @@ func (mr *MockSESV2APIMockRecorder) PutConfigurationSetTrackingOptionsWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConfigurationSetTrackingOptionsWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutConfigurationSetTrackingOptionsWithContext), varargs...)
+}
+
+// PutConfigurationSetVdmOptions mocks base method
+func (m *MockSESV2API) PutConfigurationSetVdmOptions(arg0 *sesv2.PutConfigurationSetVdmOptionsInput) (*sesv2.PutConfigurationSetVdmOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutConfigurationSetVdmOptions", arg0)
+	ret0, _ := ret[0].(*sesv2.PutConfigurationSetVdmOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutConfigurationSetVdmOptions indicates an expected call of PutConfigurationSetVdmOptions
+func (mr *MockSESV2APIMockRecorder) PutConfigurationSetVdmOptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConfigurationSetVdmOptions", reflect.TypeOf((*MockSESV2API)(nil).PutConfigurationSetVdmOptions), arg0)
+}
+
+// PutConfigurationSetVdmOptionsRequest mocks base method
+func (m *MockSESV2API) PutConfigurationSetVdmOptionsRequest(arg0 *sesv2.PutConfigurationSetVdmOptionsInput) (*request.Request, *sesv2.PutConfigurationSetVdmOptionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutConfigurationSetVdmOptionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.PutConfigurationSetVdmOptionsOutput)
+	return ret0, ret1
+}
+
+// PutConfigurationSetVdmOptionsRequest indicates an expected call of PutConfigurationSetVdmOptionsRequest
+func (mr *MockSESV2APIMockRecorder) PutConfigurationSetVdmOptionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConfigurationSetVdmOptionsRequest", reflect.TypeOf((*MockSESV2API)(nil).PutConfigurationSetVdmOptionsRequest), arg0)
+}
+
+// PutConfigurationSetVdmOptionsWithContext mocks base method
+func (m *MockSESV2API) PutConfigurationSetVdmOptionsWithContext(arg0 context.Context, arg1 *sesv2.PutConfigurationSetVdmOptionsInput, arg2 ...request.Option) (*sesv2.PutConfigurationSetVdmOptionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutConfigurationSetVdmOptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.PutConfigurationSetVdmOptionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutConfigurationSetVdmOptionsWithContext indicates an expected call of PutConfigurationSetVdmOptionsWithContext
+func (mr *MockSESV2APIMockRecorder) PutConfigurationSetVdmOptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConfigurationSetVdmOptionsWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutConfigurationSetVdmOptionsWithContext), varargs...)
 }
 
 // PutDedicatedIpInPool mocks base method
