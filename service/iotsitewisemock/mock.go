@@ -2516,6 +2516,89 @@ func (mr *MockIoTSiteWiseAPIMockRecorder) ListAccessPoliciesWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccessPoliciesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListAccessPoliciesWithContext), varargs...)
 }
 
+// ListAssetModelProperties mocks base method
+func (m *MockIoTSiteWiseAPI) ListAssetModelProperties(arg0 *iotsitewise.ListAssetModelPropertiesInput) (*iotsitewise.ListAssetModelPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetModelProperties", arg0)
+	ret0, _ := ret[0].(*iotsitewise.ListAssetModelPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssetModelProperties indicates an expected call of ListAssetModelProperties
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListAssetModelProperties(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetModelProperties", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListAssetModelProperties), arg0)
+}
+
+// ListAssetModelPropertiesPages mocks base method
+func (m *MockIoTSiteWiseAPI) ListAssetModelPropertiesPages(arg0 *iotsitewise.ListAssetModelPropertiesInput, arg1 func(*iotsitewise.ListAssetModelPropertiesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetModelPropertiesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssetModelPropertiesPages indicates an expected call of ListAssetModelPropertiesPages
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListAssetModelPropertiesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetModelPropertiesPages", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListAssetModelPropertiesPages), arg0, arg1)
+}
+
+// ListAssetModelPropertiesPagesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) ListAssetModelPropertiesPagesWithContext(arg0 context.Context, arg1 *iotsitewise.ListAssetModelPropertiesInput, arg2 func(*iotsitewise.ListAssetModelPropertiesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssetModelPropertiesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssetModelPropertiesPagesWithContext indicates an expected call of ListAssetModelPropertiesPagesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListAssetModelPropertiesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetModelPropertiesPagesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListAssetModelPropertiesPagesWithContext), varargs...)
+}
+
+// ListAssetModelPropertiesRequest mocks base method
+func (m *MockIoTSiteWiseAPI) ListAssetModelPropertiesRequest(arg0 *iotsitewise.ListAssetModelPropertiesInput) (*request.Request, *iotsitewise.ListAssetModelPropertiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetModelPropertiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.ListAssetModelPropertiesOutput)
+	return ret0, ret1
+}
+
+// ListAssetModelPropertiesRequest indicates an expected call of ListAssetModelPropertiesRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListAssetModelPropertiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetModelPropertiesRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListAssetModelPropertiesRequest), arg0)
+}
+
+// ListAssetModelPropertiesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) ListAssetModelPropertiesWithContext(arg0 context.Context, arg1 *iotsitewise.ListAssetModelPropertiesInput, arg2 ...request.Option) (*iotsitewise.ListAssetModelPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssetModelPropertiesWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.ListAssetModelPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssetModelPropertiesWithContext indicates an expected call of ListAssetModelPropertiesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListAssetModelPropertiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetModelPropertiesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListAssetModelPropertiesWithContext), varargs...)
+}
+
 // ListAssetModels mocks base method
 func (m *MockIoTSiteWiseAPI) ListAssetModels(arg0 *iotsitewise.ListAssetModelsInput) (*iotsitewise.ListAssetModelsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2597,6 +2680,89 @@ func (mr *MockIoTSiteWiseAPIMockRecorder) ListAssetModelsWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetModelsWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListAssetModelsWithContext), varargs...)
+}
+
+// ListAssetProperties mocks base method
+func (m *MockIoTSiteWiseAPI) ListAssetProperties(arg0 *iotsitewise.ListAssetPropertiesInput) (*iotsitewise.ListAssetPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetProperties", arg0)
+	ret0, _ := ret[0].(*iotsitewise.ListAssetPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssetProperties indicates an expected call of ListAssetProperties
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListAssetProperties(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetProperties", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListAssetProperties), arg0)
+}
+
+// ListAssetPropertiesPages mocks base method
+func (m *MockIoTSiteWiseAPI) ListAssetPropertiesPages(arg0 *iotsitewise.ListAssetPropertiesInput, arg1 func(*iotsitewise.ListAssetPropertiesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetPropertiesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssetPropertiesPages indicates an expected call of ListAssetPropertiesPages
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListAssetPropertiesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetPropertiesPages", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListAssetPropertiesPages), arg0, arg1)
+}
+
+// ListAssetPropertiesPagesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) ListAssetPropertiesPagesWithContext(arg0 context.Context, arg1 *iotsitewise.ListAssetPropertiesInput, arg2 func(*iotsitewise.ListAssetPropertiesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssetPropertiesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssetPropertiesPagesWithContext indicates an expected call of ListAssetPropertiesPagesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListAssetPropertiesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetPropertiesPagesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListAssetPropertiesPagesWithContext), varargs...)
+}
+
+// ListAssetPropertiesRequest mocks base method
+func (m *MockIoTSiteWiseAPI) ListAssetPropertiesRequest(arg0 *iotsitewise.ListAssetPropertiesInput) (*request.Request, *iotsitewise.ListAssetPropertiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetPropertiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotsitewise.ListAssetPropertiesOutput)
+	return ret0, ret1
+}
+
+// ListAssetPropertiesRequest indicates an expected call of ListAssetPropertiesRequest
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListAssetPropertiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetPropertiesRequest", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListAssetPropertiesRequest), arg0)
+}
+
+// ListAssetPropertiesWithContext mocks base method
+func (m *MockIoTSiteWiseAPI) ListAssetPropertiesWithContext(arg0 context.Context, arg1 *iotsitewise.ListAssetPropertiesInput, arg2 ...request.Option) (*iotsitewise.ListAssetPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssetPropertiesWithContext", varargs...)
+	ret0, _ := ret[0].(*iotsitewise.ListAssetPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssetPropertiesWithContext indicates an expected call of ListAssetPropertiesWithContext
+func (mr *MockIoTSiteWiseAPIMockRecorder) ListAssetPropertiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetPropertiesWithContext", reflect.TypeOf((*MockIoTSiteWiseAPI)(nil).ListAssetPropertiesWithContext), varargs...)
 }
 
 // ListAssetRelationships mocks base method
