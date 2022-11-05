@@ -85,6 +85,56 @@ func (mr *MockEMRContainersAPIMockRecorder) CancelJobRunWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelJobRunWithContext", reflect.TypeOf((*MockEMRContainersAPI)(nil).CancelJobRunWithContext), varargs...)
 }
 
+// CreateJobTemplate mocks base method
+func (m *MockEMRContainersAPI) CreateJobTemplate(arg0 *emrcontainers.CreateJobTemplateInput) (*emrcontainers.CreateJobTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateJobTemplate", arg0)
+	ret0, _ := ret[0].(*emrcontainers.CreateJobTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateJobTemplate indicates an expected call of CreateJobTemplate
+func (mr *MockEMRContainersAPIMockRecorder) CreateJobTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobTemplate", reflect.TypeOf((*MockEMRContainersAPI)(nil).CreateJobTemplate), arg0)
+}
+
+// CreateJobTemplateRequest mocks base method
+func (m *MockEMRContainersAPI) CreateJobTemplateRequest(arg0 *emrcontainers.CreateJobTemplateInput) (*request.Request, *emrcontainers.CreateJobTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateJobTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emrcontainers.CreateJobTemplateOutput)
+	return ret0, ret1
+}
+
+// CreateJobTemplateRequest indicates an expected call of CreateJobTemplateRequest
+func (mr *MockEMRContainersAPIMockRecorder) CreateJobTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobTemplateRequest", reflect.TypeOf((*MockEMRContainersAPI)(nil).CreateJobTemplateRequest), arg0)
+}
+
+// CreateJobTemplateWithContext mocks base method
+func (m *MockEMRContainersAPI) CreateJobTemplateWithContext(arg0 context.Context, arg1 *emrcontainers.CreateJobTemplateInput, arg2 ...request.Option) (*emrcontainers.CreateJobTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateJobTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*emrcontainers.CreateJobTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateJobTemplateWithContext indicates an expected call of CreateJobTemplateWithContext
+func (mr *MockEMRContainersAPIMockRecorder) CreateJobTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateJobTemplateWithContext", reflect.TypeOf((*MockEMRContainersAPI)(nil).CreateJobTemplateWithContext), varargs...)
+}
+
 // CreateManagedEndpoint mocks base method
 func (m *MockEMRContainersAPI) CreateManagedEndpoint(arg0 *emrcontainers.CreateManagedEndpointInput) (*emrcontainers.CreateManagedEndpointOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +233,56 @@ func (mr *MockEMRContainersAPIMockRecorder) CreateVirtualClusterWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVirtualClusterWithContext", reflect.TypeOf((*MockEMRContainersAPI)(nil).CreateVirtualClusterWithContext), varargs...)
+}
+
+// DeleteJobTemplate mocks base method
+func (m *MockEMRContainersAPI) DeleteJobTemplate(arg0 *emrcontainers.DeleteJobTemplateInput) (*emrcontainers.DeleteJobTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteJobTemplate", arg0)
+	ret0, _ := ret[0].(*emrcontainers.DeleteJobTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteJobTemplate indicates an expected call of DeleteJobTemplate
+func (mr *MockEMRContainersAPIMockRecorder) DeleteJobTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobTemplate", reflect.TypeOf((*MockEMRContainersAPI)(nil).DeleteJobTemplate), arg0)
+}
+
+// DeleteJobTemplateRequest mocks base method
+func (m *MockEMRContainersAPI) DeleteJobTemplateRequest(arg0 *emrcontainers.DeleteJobTemplateInput) (*request.Request, *emrcontainers.DeleteJobTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteJobTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emrcontainers.DeleteJobTemplateOutput)
+	return ret0, ret1
+}
+
+// DeleteJobTemplateRequest indicates an expected call of DeleteJobTemplateRequest
+func (mr *MockEMRContainersAPIMockRecorder) DeleteJobTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobTemplateRequest", reflect.TypeOf((*MockEMRContainersAPI)(nil).DeleteJobTemplateRequest), arg0)
+}
+
+// DeleteJobTemplateWithContext mocks base method
+func (m *MockEMRContainersAPI) DeleteJobTemplateWithContext(arg0 context.Context, arg1 *emrcontainers.DeleteJobTemplateInput, arg2 ...request.Option) (*emrcontainers.DeleteJobTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteJobTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*emrcontainers.DeleteJobTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteJobTemplateWithContext indicates an expected call of DeleteJobTemplateWithContext
+func (mr *MockEMRContainersAPIMockRecorder) DeleteJobTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobTemplateWithContext", reflect.TypeOf((*MockEMRContainersAPI)(nil).DeleteJobTemplateWithContext), varargs...)
 }
 
 // DeleteManagedEndpoint mocks base method
@@ -333,6 +433,56 @@ func (mr *MockEMRContainersAPIMockRecorder) DescribeJobRunWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobRunWithContext", reflect.TypeOf((*MockEMRContainersAPI)(nil).DescribeJobRunWithContext), varargs...)
+}
+
+// DescribeJobTemplate mocks base method
+func (m *MockEMRContainersAPI) DescribeJobTemplate(arg0 *emrcontainers.DescribeJobTemplateInput) (*emrcontainers.DescribeJobTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeJobTemplate", arg0)
+	ret0, _ := ret[0].(*emrcontainers.DescribeJobTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeJobTemplate indicates an expected call of DescribeJobTemplate
+func (mr *MockEMRContainersAPIMockRecorder) DescribeJobTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobTemplate", reflect.TypeOf((*MockEMRContainersAPI)(nil).DescribeJobTemplate), arg0)
+}
+
+// DescribeJobTemplateRequest mocks base method
+func (m *MockEMRContainersAPI) DescribeJobTemplateRequest(arg0 *emrcontainers.DescribeJobTemplateInput) (*request.Request, *emrcontainers.DescribeJobTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeJobTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emrcontainers.DescribeJobTemplateOutput)
+	return ret0, ret1
+}
+
+// DescribeJobTemplateRequest indicates an expected call of DescribeJobTemplateRequest
+func (mr *MockEMRContainersAPIMockRecorder) DescribeJobTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobTemplateRequest", reflect.TypeOf((*MockEMRContainersAPI)(nil).DescribeJobTemplateRequest), arg0)
+}
+
+// DescribeJobTemplateWithContext mocks base method
+func (m *MockEMRContainersAPI) DescribeJobTemplateWithContext(arg0 context.Context, arg1 *emrcontainers.DescribeJobTemplateInput, arg2 ...request.Option) (*emrcontainers.DescribeJobTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeJobTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*emrcontainers.DescribeJobTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeJobTemplateWithContext indicates an expected call of DescribeJobTemplateWithContext
+func (mr *MockEMRContainersAPIMockRecorder) DescribeJobTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobTemplateWithContext", reflect.TypeOf((*MockEMRContainersAPI)(nil).DescribeJobTemplateWithContext), varargs...)
 }
 
 // DescribeManagedEndpoint mocks base method
@@ -516,6 +666,89 @@ func (mr *MockEMRContainersAPIMockRecorder) ListJobRunsWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobRunsWithContext", reflect.TypeOf((*MockEMRContainersAPI)(nil).ListJobRunsWithContext), varargs...)
+}
+
+// ListJobTemplates mocks base method
+func (m *MockEMRContainersAPI) ListJobTemplates(arg0 *emrcontainers.ListJobTemplatesInput) (*emrcontainers.ListJobTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListJobTemplates", arg0)
+	ret0, _ := ret[0].(*emrcontainers.ListJobTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListJobTemplates indicates an expected call of ListJobTemplates
+func (mr *MockEMRContainersAPIMockRecorder) ListJobTemplates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobTemplates", reflect.TypeOf((*MockEMRContainersAPI)(nil).ListJobTemplates), arg0)
+}
+
+// ListJobTemplatesPages mocks base method
+func (m *MockEMRContainersAPI) ListJobTemplatesPages(arg0 *emrcontainers.ListJobTemplatesInput, arg1 func(*emrcontainers.ListJobTemplatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListJobTemplatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListJobTemplatesPages indicates an expected call of ListJobTemplatesPages
+func (mr *MockEMRContainersAPIMockRecorder) ListJobTemplatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobTemplatesPages", reflect.TypeOf((*MockEMRContainersAPI)(nil).ListJobTemplatesPages), arg0, arg1)
+}
+
+// ListJobTemplatesPagesWithContext mocks base method
+func (m *MockEMRContainersAPI) ListJobTemplatesPagesWithContext(arg0 context.Context, arg1 *emrcontainers.ListJobTemplatesInput, arg2 func(*emrcontainers.ListJobTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListJobTemplatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListJobTemplatesPagesWithContext indicates an expected call of ListJobTemplatesPagesWithContext
+func (mr *MockEMRContainersAPIMockRecorder) ListJobTemplatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobTemplatesPagesWithContext", reflect.TypeOf((*MockEMRContainersAPI)(nil).ListJobTemplatesPagesWithContext), varargs...)
+}
+
+// ListJobTemplatesRequest mocks base method
+func (m *MockEMRContainersAPI) ListJobTemplatesRequest(arg0 *emrcontainers.ListJobTemplatesInput) (*request.Request, *emrcontainers.ListJobTemplatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListJobTemplatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emrcontainers.ListJobTemplatesOutput)
+	return ret0, ret1
+}
+
+// ListJobTemplatesRequest indicates an expected call of ListJobTemplatesRequest
+func (mr *MockEMRContainersAPIMockRecorder) ListJobTemplatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobTemplatesRequest", reflect.TypeOf((*MockEMRContainersAPI)(nil).ListJobTemplatesRequest), arg0)
+}
+
+// ListJobTemplatesWithContext mocks base method
+func (m *MockEMRContainersAPI) ListJobTemplatesWithContext(arg0 context.Context, arg1 *emrcontainers.ListJobTemplatesInput, arg2 ...request.Option) (*emrcontainers.ListJobTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListJobTemplatesWithContext", varargs...)
+	ret0, _ := ret[0].(*emrcontainers.ListJobTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListJobTemplatesWithContext indicates an expected call of ListJobTemplatesWithContext
+func (mr *MockEMRContainersAPIMockRecorder) ListJobTemplatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobTemplatesWithContext", reflect.TypeOf((*MockEMRContainersAPI)(nil).ListJobTemplatesWithContext), varargs...)
 }
 
 // ListManagedEndpoints mocks base method
