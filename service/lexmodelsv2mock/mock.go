@@ -35,6 +35,156 @@ func (m *MockLexModelsV2API) EXPECT() *MockLexModelsV2APIMockRecorder {
 	return m.recorder
 }
 
+// BatchCreateCustomVocabularyItem mocks base method
+func (m *MockLexModelsV2API) BatchCreateCustomVocabularyItem(arg0 *lexmodelsv2.BatchCreateCustomVocabularyItemInput) (*lexmodelsv2.BatchCreateCustomVocabularyItemOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchCreateCustomVocabularyItem", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.BatchCreateCustomVocabularyItemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchCreateCustomVocabularyItem indicates an expected call of BatchCreateCustomVocabularyItem
+func (mr *MockLexModelsV2APIMockRecorder) BatchCreateCustomVocabularyItem(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateCustomVocabularyItem", reflect.TypeOf((*MockLexModelsV2API)(nil).BatchCreateCustomVocabularyItem), arg0)
+}
+
+// BatchCreateCustomVocabularyItemRequest mocks base method
+func (m *MockLexModelsV2API) BatchCreateCustomVocabularyItemRequest(arg0 *lexmodelsv2.BatchCreateCustomVocabularyItemInput) (*request.Request, *lexmodelsv2.BatchCreateCustomVocabularyItemOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchCreateCustomVocabularyItemRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.BatchCreateCustomVocabularyItemOutput)
+	return ret0, ret1
+}
+
+// BatchCreateCustomVocabularyItemRequest indicates an expected call of BatchCreateCustomVocabularyItemRequest
+func (mr *MockLexModelsV2APIMockRecorder) BatchCreateCustomVocabularyItemRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateCustomVocabularyItemRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).BatchCreateCustomVocabularyItemRequest), arg0)
+}
+
+// BatchCreateCustomVocabularyItemWithContext mocks base method
+func (m *MockLexModelsV2API) BatchCreateCustomVocabularyItemWithContext(arg0 context.Context, arg1 *lexmodelsv2.BatchCreateCustomVocabularyItemInput, arg2 ...request.Option) (*lexmodelsv2.BatchCreateCustomVocabularyItemOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchCreateCustomVocabularyItemWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.BatchCreateCustomVocabularyItemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchCreateCustomVocabularyItemWithContext indicates an expected call of BatchCreateCustomVocabularyItemWithContext
+func (mr *MockLexModelsV2APIMockRecorder) BatchCreateCustomVocabularyItemWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchCreateCustomVocabularyItemWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).BatchCreateCustomVocabularyItemWithContext), varargs...)
+}
+
+// BatchDeleteCustomVocabularyItem mocks base method
+func (m *MockLexModelsV2API) BatchDeleteCustomVocabularyItem(arg0 *lexmodelsv2.BatchDeleteCustomVocabularyItemInput) (*lexmodelsv2.BatchDeleteCustomVocabularyItemOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteCustomVocabularyItem", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.BatchDeleteCustomVocabularyItemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteCustomVocabularyItem indicates an expected call of BatchDeleteCustomVocabularyItem
+func (mr *MockLexModelsV2APIMockRecorder) BatchDeleteCustomVocabularyItem(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteCustomVocabularyItem", reflect.TypeOf((*MockLexModelsV2API)(nil).BatchDeleteCustomVocabularyItem), arg0)
+}
+
+// BatchDeleteCustomVocabularyItemRequest mocks base method
+func (m *MockLexModelsV2API) BatchDeleteCustomVocabularyItemRequest(arg0 *lexmodelsv2.BatchDeleteCustomVocabularyItemInput) (*request.Request, *lexmodelsv2.BatchDeleteCustomVocabularyItemOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteCustomVocabularyItemRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.BatchDeleteCustomVocabularyItemOutput)
+	return ret0, ret1
+}
+
+// BatchDeleteCustomVocabularyItemRequest indicates an expected call of BatchDeleteCustomVocabularyItemRequest
+func (mr *MockLexModelsV2APIMockRecorder) BatchDeleteCustomVocabularyItemRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteCustomVocabularyItemRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).BatchDeleteCustomVocabularyItemRequest), arg0)
+}
+
+// BatchDeleteCustomVocabularyItemWithContext mocks base method
+func (m *MockLexModelsV2API) BatchDeleteCustomVocabularyItemWithContext(arg0 context.Context, arg1 *lexmodelsv2.BatchDeleteCustomVocabularyItemInput, arg2 ...request.Option) (*lexmodelsv2.BatchDeleteCustomVocabularyItemOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDeleteCustomVocabularyItemWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.BatchDeleteCustomVocabularyItemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteCustomVocabularyItemWithContext indicates an expected call of BatchDeleteCustomVocabularyItemWithContext
+func (mr *MockLexModelsV2APIMockRecorder) BatchDeleteCustomVocabularyItemWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteCustomVocabularyItemWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).BatchDeleteCustomVocabularyItemWithContext), varargs...)
+}
+
+// BatchUpdateCustomVocabularyItem mocks base method
+func (m *MockLexModelsV2API) BatchUpdateCustomVocabularyItem(arg0 *lexmodelsv2.BatchUpdateCustomVocabularyItemInput) (*lexmodelsv2.BatchUpdateCustomVocabularyItemOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchUpdateCustomVocabularyItem", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.BatchUpdateCustomVocabularyItemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchUpdateCustomVocabularyItem indicates an expected call of BatchUpdateCustomVocabularyItem
+func (mr *MockLexModelsV2APIMockRecorder) BatchUpdateCustomVocabularyItem(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateCustomVocabularyItem", reflect.TypeOf((*MockLexModelsV2API)(nil).BatchUpdateCustomVocabularyItem), arg0)
+}
+
+// BatchUpdateCustomVocabularyItemRequest mocks base method
+func (m *MockLexModelsV2API) BatchUpdateCustomVocabularyItemRequest(arg0 *lexmodelsv2.BatchUpdateCustomVocabularyItemInput) (*request.Request, *lexmodelsv2.BatchUpdateCustomVocabularyItemOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchUpdateCustomVocabularyItemRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.BatchUpdateCustomVocabularyItemOutput)
+	return ret0, ret1
+}
+
+// BatchUpdateCustomVocabularyItemRequest indicates an expected call of BatchUpdateCustomVocabularyItemRequest
+func (mr *MockLexModelsV2APIMockRecorder) BatchUpdateCustomVocabularyItemRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateCustomVocabularyItemRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).BatchUpdateCustomVocabularyItemRequest), arg0)
+}
+
+// BatchUpdateCustomVocabularyItemWithContext mocks base method
+func (m *MockLexModelsV2API) BatchUpdateCustomVocabularyItemWithContext(arg0 context.Context, arg1 *lexmodelsv2.BatchUpdateCustomVocabularyItemInput, arg2 ...request.Option) (*lexmodelsv2.BatchUpdateCustomVocabularyItemOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchUpdateCustomVocabularyItemWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.BatchUpdateCustomVocabularyItemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchUpdateCustomVocabularyItemWithContext indicates an expected call of BatchUpdateCustomVocabularyItemWithContext
+func (mr *MockLexModelsV2APIMockRecorder) BatchUpdateCustomVocabularyItemWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateCustomVocabularyItemWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).BatchUpdateCustomVocabularyItemWithContext), varargs...)
+}
+
 // BuildBotLocale mocks base method
 func (m *MockLexModelsV2API) BuildBotLocale(arg0 *lexmodelsv2.BuildBotLocaleInput) (*lexmodelsv2.BuildBotLocaleOutput, error) {
 	m.ctrl.T.Helper()
@@ -2547,6 +2697,89 @@ func (mr *MockLexModelsV2APIMockRecorder) ListBuiltInSlotTypesWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBuiltInSlotTypesWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListBuiltInSlotTypesWithContext), varargs...)
+}
+
+// ListCustomVocabularyItems mocks base method
+func (m *MockLexModelsV2API) ListCustomVocabularyItems(arg0 *lexmodelsv2.ListCustomVocabularyItemsInput) (*lexmodelsv2.ListCustomVocabularyItemsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomVocabularyItems", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.ListCustomVocabularyItemsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCustomVocabularyItems indicates an expected call of ListCustomVocabularyItems
+func (mr *MockLexModelsV2APIMockRecorder) ListCustomVocabularyItems(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomVocabularyItems", reflect.TypeOf((*MockLexModelsV2API)(nil).ListCustomVocabularyItems), arg0)
+}
+
+// ListCustomVocabularyItemsPages mocks base method
+func (m *MockLexModelsV2API) ListCustomVocabularyItemsPages(arg0 *lexmodelsv2.ListCustomVocabularyItemsInput, arg1 func(*lexmodelsv2.ListCustomVocabularyItemsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomVocabularyItemsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCustomVocabularyItemsPages indicates an expected call of ListCustomVocabularyItemsPages
+func (mr *MockLexModelsV2APIMockRecorder) ListCustomVocabularyItemsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomVocabularyItemsPages", reflect.TypeOf((*MockLexModelsV2API)(nil).ListCustomVocabularyItemsPages), arg0, arg1)
+}
+
+// ListCustomVocabularyItemsPagesWithContext mocks base method
+func (m *MockLexModelsV2API) ListCustomVocabularyItemsPagesWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListCustomVocabularyItemsInput, arg2 func(*lexmodelsv2.ListCustomVocabularyItemsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCustomVocabularyItemsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCustomVocabularyItemsPagesWithContext indicates an expected call of ListCustomVocabularyItemsPagesWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListCustomVocabularyItemsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomVocabularyItemsPagesWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListCustomVocabularyItemsPagesWithContext), varargs...)
+}
+
+// ListCustomVocabularyItemsRequest mocks base method
+func (m *MockLexModelsV2API) ListCustomVocabularyItemsRequest(arg0 *lexmodelsv2.ListCustomVocabularyItemsInput) (*request.Request, *lexmodelsv2.ListCustomVocabularyItemsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomVocabularyItemsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.ListCustomVocabularyItemsOutput)
+	return ret0, ret1
+}
+
+// ListCustomVocabularyItemsRequest indicates an expected call of ListCustomVocabularyItemsRequest
+func (mr *MockLexModelsV2APIMockRecorder) ListCustomVocabularyItemsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomVocabularyItemsRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).ListCustomVocabularyItemsRequest), arg0)
+}
+
+// ListCustomVocabularyItemsWithContext mocks base method
+func (m *MockLexModelsV2API) ListCustomVocabularyItemsWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListCustomVocabularyItemsInput, arg2 ...request.Option) (*lexmodelsv2.ListCustomVocabularyItemsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCustomVocabularyItemsWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.ListCustomVocabularyItemsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCustomVocabularyItemsWithContext indicates an expected call of ListCustomVocabularyItemsWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListCustomVocabularyItemsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomVocabularyItemsWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListCustomVocabularyItemsWithContext), varargs...)
 }
 
 // ListExports mocks base method

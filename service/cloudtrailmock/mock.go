@@ -335,6 +335,56 @@ func (mr *MockCloudTrailAPIMockRecorder) DeleteTrailWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTrailWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).DeleteTrailWithContext), varargs...)
 }
 
+// DeregisterOrganizationDelegatedAdmin mocks base method
+func (m *MockCloudTrailAPI) DeregisterOrganizationDelegatedAdmin(arg0 *cloudtrail.DeregisterOrganizationDelegatedAdminInput) (*cloudtrail.DeregisterOrganizationDelegatedAdminOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterOrganizationDelegatedAdmin", arg0)
+	ret0, _ := ret[0].(*cloudtrail.DeregisterOrganizationDelegatedAdminOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterOrganizationDelegatedAdmin indicates an expected call of DeregisterOrganizationDelegatedAdmin
+func (mr *MockCloudTrailAPIMockRecorder) DeregisterOrganizationDelegatedAdmin(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterOrganizationDelegatedAdmin", reflect.TypeOf((*MockCloudTrailAPI)(nil).DeregisterOrganizationDelegatedAdmin), arg0)
+}
+
+// DeregisterOrganizationDelegatedAdminRequest mocks base method
+func (m *MockCloudTrailAPI) DeregisterOrganizationDelegatedAdminRequest(arg0 *cloudtrail.DeregisterOrganizationDelegatedAdminInput) (*request.Request, *cloudtrail.DeregisterOrganizationDelegatedAdminOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterOrganizationDelegatedAdminRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudtrail.DeregisterOrganizationDelegatedAdminOutput)
+	return ret0, ret1
+}
+
+// DeregisterOrganizationDelegatedAdminRequest indicates an expected call of DeregisterOrganizationDelegatedAdminRequest
+func (mr *MockCloudTrailAPIMockRecorder) DeregisterOrganizationDelegatedAdminRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterOrganizationDelegatedAdminRequest", reflect.TypeOf((*MockCloudTrailAPI)(nil).DeregisterOrganizationDelegatedAdminRequest), arg0)
+}
+
+// DeregisterOrganizationDelegatedAdminWithContext mocks base method
+func (m *MockCloudTrailAPI) DeregisterOrganizationDelegatedAdminWithContext(arg0 context.Context, arg1 *cloudtrail.DeregisterOrganizationDelegatedAdminInput, arg2 ...request.Option) (*cloudtrail.DeregisterOrganizationDelegatedAdminOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeregisterOrganizationDelegatedAdminWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudtrail.DeregisterOrganizationDelegatedAdminOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterOrganizationDelegatedAdminWithContext indicates an expected call of DeregisterOrganizationDelegatedAdminWithContext
+func (mr *MockCloudTrailAPIMockRecorder) DeregisterOrganizationDelegatedAdminWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterOrganizationDelegatedAdminWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).DeregisterOrganizationDelegatedAdminWithContext), varargs...)
+}
+
 // DescribeQuery mocks base method
 func (m *MockCloudTrailAPI) DescribeQuery(arg0 *cloudtrail.DescribeQueryInput) (*cloudtrail.DescribeQueryOutput, error) {
 	m.ctrl.T.Helper()
@@ -1713,6 +1763,56 @@ func (mr *MockCloudTrailAPIMockRecorder) PutInsightSelectorsWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInsightSelectorsWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).PutInsightSelectorsWithContext), varargs...)
+}
+
+// RegisterOrganizationDelegatedAdmin mocks base method
+func (m *MockCloudTrailAPI) RegisterOrganizationDelegatedAdmin(arg0 *cloudtrail.RegisterOrganizationDelegatedAdminInput) (*cloudtrail.RegisterOrganizationDelegatedAdminOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterOrganizationDelegatedAdmin", arg0)
+	ret0, _ := ret[0].(*cloudtrail.RegisterOrganizationDelegatedAdminOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterOrganizationDelegatedAdmin indicates an expected call of RegisterOrganizationDelegatedAdmin
+func (mr *MockCloudTrailAPIMockRecorder) RegisterOrganizationDelegatedAdmin(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterOrganizationDelegatedAdmin", reflect.TypeOf((*MockCloudTrailAPI)(nil).RegisterOrganizationDelegatedAdmin), arg0)
+}
+
+// RegisterOrganizationDelegatedAdminRequest mocks base method
+func (m *MockCloudTrailAPI) RegisterOrganizationDelegatedAdminRequest(arg0 *cloudtrail.RegisterOrganizationDelegatedAdminInput) (*request.Request, *cloudtrail.RegisterOrganizationDelegatedAdminOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterOrganizationDelegatedAdminRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudtrail.RegisterOrganizationDelegatedAdminOutput)
+	return ret0, ret1
+}
+
+// RegisterOrganizationDelegatedAdminRequest indicates an expected call of RegisterOrganizationDelegatedAdminRequest
+func (mr *MockCloudTrailAPIMockRecorder) RegisterOrganizationDelegatedAdminRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterOrganizationDelegatedAdminRequest", reflect.TypeOf((*MockCloudTrailAPI)(nil).RegisterOrganizationDelegatedAdminRequest), arg0)
+}
+
+// RegisterOrganizationDelegatedAdminWithContext mocks base method
+func (m *MockCloudTrailAPI) RegisterOrganizationDelegatedAdminWithContext(arg0 context.Context, arg1 *cloudtrail.RegisterOrganizationDelegatedAdminInput, arg2 ...request.Option) (*cloudtrail.RegisterOrganizationDelegatedAdminOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RegisterOrganizationDelegatedAdminWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudtrail.RegisterOrganizationDelegatedAdminOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterOrganizationDelegatedAdminWithContext indicates an expected call of RegisterOrganizationDelegatedAdminWithContext
+func (mr *MockCloudTrailAPIMockRecorder) RegisterOrganizationDelegatedAdminWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterOrganizationDelegatedAdminWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).RegisterOrganizationDelegatedAdminWithContext), varargs...)
 }
 
 // RemoveTags mocks base method

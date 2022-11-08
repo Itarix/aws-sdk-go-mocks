@@ -1118,6 +1118,172 @@ func (mr *MockWellArchitectedAPIMockRecorder) ListAnswersWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnswersWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListAnswersWithContext), varargs...)
 }
 
+// ListCheckDetails mocks base method
+func (m *MockWellArchitectedAPI) ListCheckDetails(arg0 *wellarchitected.ListCheckDetailsInput) (*wellarchitected.ListCheckDetailsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCheckDetails", arg0)
+	ret0, _ := ret[0].(*wellarchitected.ListCheckDetailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCheckDetails indicates an expected call of ListCheckDetails
+func (mr *MockWellArchitectedAPIMockRecorder) ListCheckDetails(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCheckDetails", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListCheckDetails), arg0)
+}
+
+// ListCheckDetailsPages mocks base method
+func (m *MockWellArchitectedAPI) ListCheckDetailsPages(arg0 *wellarchitected.ListCheckDetailsInput, arg1 func(*wellarchitected.ListCheckDetailsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCheckDetailsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCheckDetailsPages indicates an expected call of ListCheckDetailsPages
+func (mr *MockWellArchitectedAPIMockRecorder) ListCheckDetailsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCheckDetailsPages", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListCheckDetailsPages), arg0, arg1)
+}
+
+// ListCheckDetailsPagesWithContext mocks base method
+func (m *MockWellArchitectedAPI) ListCheckDetailsPagesWithContext(arg0 context.Context, arg1 *wellarchitected.ListCheckDetailsInput, arg2 func(*wellarchitected.ListCheckDetailsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCheckDetailsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCheckDetailsPagesWithContext indicates an expected call of ListCheckDetailsPagesWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) ListCheckDetailsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCheckDetailsPagesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListCheckDetailsPagesWithContext), varargs...)
+}
+
+// ListCheckDetailsRequest mocks base method
+func (m *MockWellArchitectedAPI) ListCheckDetailsRequest(arg0 *wellarchitected.ListCheckDetailsInput) (*request.Request, *wellarchitected.ListCheckDetailsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCheckDetailsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.ListCheckDetailsOutput)
+	return ret0, ret1
+}
+
+// ListCheckDetailsRequest indicates an expected call of ListCheckDetailsRequest
+func (mr *MockWellArchitectedAPIMockRecorder) ListCheckDetailsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCheckDetailsRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListCheckDetailsRequest), arg0)
+}
+
+// ListCheckDetailsWithContext mocks base method
+func (m *MockWellArchitectedAPI) ListCheckDetailsWithContext(arg0 context.Context, arg1 *wellarchitected.ListCheckDetailsInput, arg2 ...request.Option) (*wellarchitected.ListCheckDetailsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCheckDetailsWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.ListCheckDetailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCheckDetailsWithContext indicates an expected call of ListCheckDetailsWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) ListCheckDetailsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCheckDetailsWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListCheckDetailsWithContext), varargs...)
+}
+
+// ListCheckSummaries mocks base method
+func (m *MockWellArchitectedAPI) ListCheckSummaries(arg0 *wellarchitected.ListCheckSummariesInput) (*wellarchitected.ListCheckSummariesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCheckSummaries", arg0)
+	ret0, _ := ret[0].(*wellarchitected.ListCheckSummariesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCheckSummaries indicates an expected call of ListCheckSummaries
+func (mr *MockWellArchitectedAPIMockRecorder) ListCheckSummaries(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCheckSummaries", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListCheckSummaries), arg0)
+}
+
+// ListCheckSummariesPages mocks base method
+func (m *MockWellArchitectedAPI) ListCheckSummariesPages(arg0 *wellarchitected.ListCheckSummariesInput, arg1 func(*wellarchitected.ListCheckSummariesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCheckSummariesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCheckSummariesPages indicates an expected call of ListCheckSummariesPages
+func (mr *MockWellArchitectedAPIMockRecorder) ListCheckSummariesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCheckSummariesPages", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListCheckSummariesPages), arg0, arg1)
+}
+
+// ListCheckSummariesPagesWithContext mocks base method
+func (m *MockWellArchitectedAPI) ListCheckSummariesPagesWithContext(arg0 context.Context, arg1 *wellarchitected.ListCheckSummariesInput, arg2 func(*wellarchitected.ListCheckSummariesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCheckSummariesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCheckSummariesPagesWithContext indicates an expected call of ListCheckSummariesPagesWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) ListCheckSummariesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCheckSummariesPagesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListCheckSummariesPagesWithContext), varargs...)
+}
+
+// ListCheckSummariesRequest mocks base method
+func (m *MockWellArchitectedAPI) ListCheckSummariesRequest(arg0 *wellarchitected.ListCheckSummariesInput) (*request.Request, *wellarchitected.ListCheckSummariesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCheckSummariesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.ListCheckSummariesOutput)
+	return ret0, ret1
+}
+
+// ListCheckSummariesRequest indicates an expected call of ListCheckSummariesRequest
+func (mr *MockWellArchitectedAPIMockRecorder) ListCheckSummariesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCheckSummariesRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListCheckSummariesRequest), arg0)
+}
+
+// ListCheckSummariesWithContext mocks base method
+func (m *MockWellArchitectedAPI) ListCheckSummariesWithContext(arg0 context.Context, arg1 *wellarchitected.ListCheckSummariesInput, arg2 ...request.Option) (*wellarchitected.ListCheckSummariesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCheckSummariesWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.ListCheckSummariesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCheckSummariesWithContext indicates an expected call of ListCheckSummariesWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) ListCheckSummariesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCheckSummariesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListCheckSummariesWithContext), varargs...)
+}
+
 // ListLensReviewImprovements mocks base method
 func (m *MockWellArchitectedAPI) ListLensReviewImprovements(arg0 *wellarchitected.ListLensReviewImprovementsInput) (*wellarchitected.ListLensReviewImprovementsOutput, error) {
 	m.ctrl.T.Helper()
