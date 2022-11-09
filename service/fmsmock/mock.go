@@ -135,6 +135,106 @@ func (mr *MockFMSAPIMockRecorder) AssociateThirdPartyFirewallWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateThirdPartyFirewallWithContext", reflect.TypeOf((*MockFMSAPI)(nil).AssociateThirdPartyFirewallWithContext), varargs...)
 }
 
+// BatchAssociateResource mocks base method
+func (m *MockFMSAPI) BatchAssociateResource(arg0 *fms.BatchAssociateResourceInput) (*fms.BatchAssociateResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchAssociateResource", arg0)
+	ret0, _ := ret[0].(*fms.BatchAssociateResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchAssociateResource indicates an expected call of BatchAssociateResource
+func (mr *MockFMSAPIMockRecorder) BatchAssociateResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateResource", reflect.TypeOf((*MockFMSAPI)(nil).BatchAssociateResource), arg0)
+}
+
+// BatchAssociateResourceRequest mocks base method
+func (m *MockFMSAPI) BatchAssociateResourceRequest(arg0 *fms.BatchAssociateResourceInput) (*request.Request, *fms.BatchAssociateResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchAssociateResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.BatchAssociateResourceOutput)
+	return ret0, ret1
+}
+
+// BatchAssociateResourceRequest indicates an expected call of BatchAssociateResourceRequest
+func (mr *MockFMSAPIMockRecorder) BatchAssociateResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateResourceRequest", reflect.TypeOf((*MockFMSAPI)(nil).BatchAssociateResourceRequest), arg0)
+}
+
+// BatchAssociateResourceWithContext mocks base method
+func (m *MockFMSAPI) BatchAssociateResourceWithContext(arg0 context.Context, arg1 *fms.BatchAssociateResourceInput, arg2 ...request.Option) (*fms.BatchAssociateResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchAssociateResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.BatchAssociateResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchAssociateResourceWithContext indicates an expected call of BatchAssociateResourceWithContext
+func (mr *MockFMSAPIMockRecorder) BatchAssociateResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchAssociateResourceWithContext", reflect.TypeOf((*MockFMSAPI)(nil).BatchAssociateResourceWithContext), varargs...)
+}
+
+// BatchDisassociateResource mocks base method
+func (m *MockFMSAPI) BatchDisassociateResource(arg0 *fms.BatchDisassociateResourceInput) (*fms.BatchDisassociateResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDisassociateResource", arg0)
+	ret0, _ := ret[0].(*fms.BatchDisassociateResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDisassociateResource indicates an expected call of BatchDisassociateResource
+func (mr *MockFMSAPIMockRecorder) BatchDisassociateResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateResource", reflect.TypeOf((*MockFMSAPI)(nil).BatchDisassociateResource), arg0)
+}
+
+// BatchDisassociateResourceRequest mocks base method
+func (m *MockFMSAPI) BatchDisassociateResourceRequest(arg0 *fms.BatchDisassociateResourceInput) (*request.Request, *fms.BatchDisassociateResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDisassociateResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.BatchDisassociateResourceOutput)
+	return ret0, ret1
+}
+
+// BatchDisassociateResourceRequest indicates an expected call of BatchDisassociateResourceRequest
+func (mr *MockFMSAPIMockRecorder) BatchDisassociateResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateResourceRequest", reflect.TypeOf((*MockFMSAPI)(nil).BatchDisassociateResourceRequest), arg0)
+}
+
+// BatchDisassociateResourceWithContext mocks base method
+func (m *MockFMSAPI) BatchDisassociateResourceWithContext(arg0 context.Context, arg1 *fms.BatchDisassociateResourceInput, arg2 ...request.Option) (*fms.BatchDisassociateResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDisassociateResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.BatchDisassociateResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDisassociateResourceWithContext indicates an expected call of BatchDisassociateResourceWithContext
+func (mr *MockFMSAPIMockRecorder) BatchDisassociateResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDisassociateResourceWithContext", reflect.TypeOf((*MockFMSAPI)(nil).BatchDisassociateResourceWithContext), varargs...)
+}
+
 // DeleteAppsList mocks base method
 func (m *MockFMSAPI) DeleteAppsList(arg0 *fms.DeleteAppsListInput) (*fms.DeleteAppsListOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +433,56 @@ func (mr *MockFMSAPIMockRecorder) DeleteProtocolsListWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProtocolsListWithContext", reflect.TypeOf((*MockFMSAPI)(nil).DeleteProtocolsListWithContext), varargs...)
+}
+
+// DeleteResourceSet mocks base method
+func (m *MockFMSAPI) DeleteResourceSet(arg0 *fms.DeleteResourceSetInput) (*fms.DeleteResourceSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourceSet", arg0)
+	ret0, _ := ret[0].(*fms.DeleteResourceSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourceSet indicates an expected call of DeleteResourceSet
+func (mr *MockFMSAPIMockRecorder) DeleteResourceSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourceSet", reflect.TypeOf((*MockFMSAPI)(nil).DeleteResourceSet), arg0)
+}
+
+// DeleteResourceSetRequest mocks base method
+func (m *MockFMSAPI) DeleteResourceSetRequest(arg0 *fms.DeleteResourceSetInput) (*request.Request, *fms.DeleteResourceSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourceSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.DeleteResourceSetOutput)
+	return ret0, ret1
+}
+
+// DeleteResourceSetRequest indicates an expected call of DeleteResourceSetRequest
+func (mr *MockFMSAPIMockRecorder) DeleteResourceSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourceSetRequest", reflect.TypeOf((*MockFMSAPI)(nil).DeleteResourceSetRequest), arg0)
+}
+
+// DeleteResourceSetWithContext mocks base method
+func (m *MockFMSAPI) DeleteResourceSetWithContext(arg0 context.Context, arg1 *fms.DeleteResourceSetInput, arg2 ...request.Option) (*fms.DeleteResourceSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteResourceSetWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.DeleteResourceSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourceSetWithContext indicates an expected call of DeleteResourceSetWithContext
+func (mr *MockFMSAPIMockRecorder) DeleteResourceSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourceSetWithContext", reflect.TypeOf((*MockFMSAPI)(nil).DeleteResourceSetWithContext), varargs...)
 }
 
 // DisassociateAdminAccount mocks base method
@@ -785,6 +935,56 @@ func (mr *MockFMSAPIMockRecorder) GetProtocolsListWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProtocolsListWithContext", reflect.TypeOf((*MockFMSAPI)(nil).GetProtocolsListWithContext), varargs...)
 }
 
+// GetResourceSet mocks base method
+func (m *MockFMSAPI) GetResourceSet(arg0 *fms.GetResourceSetInput) (*fms.GetResourceSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourceSet", arg0)
+	ret0, _ := ret[0].(*fms.GetResourceSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourceSet indicates an expected call of GetResourceSet
+func (mr *MockFMSAPIMockRecorder) GetResourceSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceSet", reflect.TypeOf((*MockFMSAPI)(nil).GetResourceSet), arg0)
+}
+
+// GetResourceSetRequest mocks base method
+func (m *MockFMSAPI) GetResourceSetRequest(arg0 *fms.GetResourceSetInput) (*request.Request, *fms.GetResourceSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourceSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.GetResourceSetOutput)
+	return ret0, ret1
+}
+
+// GetResourceSetRequest indicates an expected call of GetResourceSetRequest
+func (mr *MockFMSAPIMockRecorder) GetResourceSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceSetRequest", reflect.TypeOf((*MockFMSAPI)(nil).GetResourceSetRequest), arg0)
+}
+
+// GetResourceSetWithContext mocks base method
+func (m *MockFMSAPI) GetResourceSetWithContext(arg0 context.Context, arg1 *fms.GetResourceSetInput, arg2 ...request.Option) (*fms.GetResourceSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResourceSetWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.GetResourceSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourceSetWithContext indicates an expected call of GetResourceSetWithContext
+func (mr *MockFMSAPIMockRecorder) GetResourceSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceSetWithContext", reflect.TypeOf((*MockFMSAPI)(nil).GetResourceSetWithContext), varargs...)
+}
+
 // GetThirdPartyFirewallAssociationStatus mocks base method
 func (m *MockFMSAPI) GetThirdPartyFirewallAssociationStatus(arg0 *fms.GetThirdPartyFirewallAssociationStatusInput) (*fms.GetThirdPartyFirewallAssociationStatusOutput, error) {
 	m.ctrl.T.Helper()
@@ -1051,6 +1251,56 @@ func (mr *MockFMSAPIMockRecorder) ListComplianceStatusWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListComplianceStatusWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListComplianceStatusWithContext), varargs...)
 }
 
+// ListDiscoveredResources mocks base method
+func (m *MockFMSAPI) ListDiscoveredResources(arg0 *fms.ListDiscoveredResourcesInput) (*fms.ListDiscoveredResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDiscoveredResources", arg0)
+	ret0, _ := ret[0].(*fms.ListDiscoveredResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDiscoveredResources indicates an expected call of ListDiscoveredResources
+func (mr *MockFMSAPIMockRecorder) ListDiscoveredResources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveredResources", reflect.TypeOf((*MockFMSAPI)(nil).ListDiscoveredResources), arg0)
+}
+
+// ListDiscoveredResourcesRequest mocks base method
+func (m *MockFMSAPI) ListDiscoveredResourcesRequest(arg0 *fms.ListDiscoveredResourcesInput) (*request.Request, *fms.ListDiscoveredResourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDiscoveredResourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.ListDiscoveredResourcesOutput)
+	return ret0, ret1
+}
+
+// ListDiscoveredResourcesRequest indicates an expected call of ListDiscoveredResourcesRequest
+func (mr *MockFMSAPIMockRecorder) ListDiscoveredResourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveredResourcesRequest", reflect.TypeOf((*MockFMSAPI)(nil).ListDiscoveredResourcesRequest), arg0)
+}
+
+// ListDiscoveredResourcesWithContext mocks base method
+func (m *MockFMSAPI) ListDiscoveredResourcesWithContext(arg0 context.Context, arg1 *fms.ListDiscoveredResourcesInput, arg2 ...request.Option) (*fms.ListDiscoveredResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDiscoveredResourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.ListDiscoveredResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDiscoveredResourcesWithContext indicates an expected call of ListDiscoveredResourcesWithContext
+func (mr *MockFMSAPIMockRecorder) ListDiscoveredResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveredResourcesWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListDiscoveredResourcesWithContext), varargs...)
+}
+
 // ListMemberAccounts mocks base method
 func (m *MockFMSAPI) ListMemberAccounts(arg0 *fms.ListMemberAccountsInput) (*fms.ListMemberAccountsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1298,6 +1548,106 @@ func (mr *MockFMSAPIMockRecorder) ListProtocolsListsWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtocolsListsWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListProtocolsListsWithContext), varargs...)
+}
+
+// ListResourceSetResources mocks base method
+func (m *MockFMSAPI) ListResourceSetResources(arg0 *fms.ListResourceSetResourcesInput) (*fms.ListResourceSetResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourceSetResources", arg0)
+	ret0, _ := ret[0].(*fms.ListResourceSetResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourceSetResources indicates an expected call of ListResourceSetResources
+func (mr *MockFMSAPIMockRecorder) ListResourceSetResources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceSetResources", reflect.TypeOf((*MockFMSAPI)(nil).ListResourceSetResources), arg0)
+}
+
+// ListResourceSetResourcesRequest mocks base method
+func (m *MockFMSAPI) ListResourceSetResourcesRequest(arg0 *fms.ListResourceSetResourcesInput) (*request.Request, *fms.ListResourceSetResourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourceSetResourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.ListResourceSetResourcesOutput)
+	return ret0, ret1
+}
+
+// ListResourceSetResourcesRequest indicates an expected call of ListResourceSetResourcesRequest
+func (mr *MockFMSAPIMockRecorder) ListResourceSetResourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceSetResourcesRequest", reflect.TypeOf((*MockFMSAPI)(nil).ListResourceSetResourcesRequest), arg0)
+}
+
+// ListResourceSetResourcesWithContext mocks base method
+func (m *MockFMSAPI) ListResourceSetResourcesWithContext(arg0 context.Context, arg1 *fms.ListResourceSetResourcesInput, arg2 ...request.Option) (*fms.ListResourceSetResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResourceSetResourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.ListResourceSetResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourceSetResourcesWithContext indicates an expected call of ListResourceSetResourcesWithContext
+func (mr *MockFMSAPIMockRecorder) ListResourceSetResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceSetResourcesWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListResourceSetResourcesWithContext), varargs...)
+}
+
+// ListResourceSets mocks base method
+func (m *MockFMSAPI) ListResourceSets(arg0 *fms.ListResourceSetsInput) (*fms.ListResourceSetsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourceSets", arg0)
+	ret0, _ := ret[0].(*fms.ListResourceSetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourceSets indicates an expected call of ListResourceSets
+func (mr *MockFMSAPIMockRecorder) ListResourceSets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceSets", reflect.TypeOf((*MockFMSAPI)(nil).ListResourceSets), arg0)
+}
+
+// ListResourceSetsRequest mocks base method
+func (m *MockFMSAPI) ListResourceSetsRequest(arg0 *fms.ListResourceSetsInput) (*request.Request, *fms.ListResourceSetsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourceSetsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.ListResourceSetsOutput)
+	return ret0, ret1
+}
+
+// ListResourceSetsRequest indicates an expected call of ListResourceSetsRequest
+func (mr *MockFMSAPIMockRecorder) ListResourceSetsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceSetsRequest", reflect.TypeOf((*MockFMSAPI)(nil).ListResourceSetsRequest), arg0)
+}
+
+// ListResourceSetsWithContext mocks base method
+func (m *MockFMSAPI) ListResourceSetsWithContext(arg0 context.Context, arg1 *fms.ListResourceSetsInput, arg2 ...request.Option) (*fms.ListResourceSetsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResourceSetsWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.ListResourceSetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourceSetsWithContext indicates an expected call of ListResourceSetsWithContext
+func (mr *MockFMSAPIMockRecorder) ListResourceSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceSetsWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListResourceSetsWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
@@ -1631,6 +1981,56 @@ func (mr *MockFMSAPIMockRecorder) PutProtocolsListWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutProtocolsListWithContext", reflect.TypeOf((*MockFMSAPI)(nil).PutProtocolsListWithContext), varargs...)
+}
+
+// PutResourceSet mocks base method
+func (m *MockFMSAPI) PutResourceSet(arg0 *fms.PutResourceSetInput) (*fms.PutResourceSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourceSet", arg0)
+	ret0, _ := ret[0].(*fms.PutResourceSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourceSet indicates an expected call of PutResourceSet
+func (mr *MockFMSAPIMockRecorder) PutResourceSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourceSet", reflect.TypeOf((*MockFMSAPI)(nil).PutResourceSet), arg0)
+}
+
+// PutResourceSetRequest mocks base method
+func (m *MockFMSAPI) PutResourceSetRequest(arg0 *fms.PutResourceSetInput) (*request.Request, *fms.PutResourceSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourceSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.PutResourceSetOutput)
+	return ret0, ret1
+}
+
+// PutResourceSetRequest indicates an expected call of PutResourceSetRequest
+func (mr *MockFMSAPIMockRecorder) PutResourceSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourceSetRequest", reflect.TypeOf((*MockFMSAPI)(nil).PutResourceSetRequest), arg0)
+}
+
+// PutResourceSetWithContext mocks base method
+func (m *MockFMSAPI) PutResourceSetWithContext(arg0 context.Context, arg1 *fms.PutResourceSetInput, arg2 ...request.Option) (*fms.PutResourceSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutResourceSetWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.PutResourceSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourceSetWithContext indicates an expected call of PutResourceSetWithContext
+func (mr *MockFMSAPIMockRecorder) PutResourceSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourceSetWithContext", reflect.TypeOf((*MockFMSAPI)(nil).PutResourceSetWithContext), varargs...)
 }
 
 // TagResource mocks base method

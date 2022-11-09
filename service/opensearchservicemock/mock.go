@@ -185,6 +185,56 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) AssociatePackageWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociatePackageWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).AssociatePackageWithContext), varargs...)
 }
 
+// AuthorizeVpcEndpointAccess mocks base method
+func (m *MockOpenSearchServiceAPI) AuthorizeVpcEndpointAccess(arg0 *opensearchservice.AuthorizeVpcEndpointAccessInput) (*opensearchservice.AuthorizeVpcEndpointAccessOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AuthorizeVpcEndpointAccess", arg0)
+	ret0, _ := ret[0].(*opensearchservice.AuthorizeVpcEndpointAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AuthorizeVpcEndpointAccess indicates an expected call of AuthorizeVpcEndpointAccess
+func (mr *MockOpenSearchServiceAPIMockRecorder) AuthorizeVpcEndpointAccess(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AuthorizeVpcEndpointAccess", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).AuthorizeVpcEndpointAccess), arg0)
+}
+
+// AuthorizeVpcEndpointAccessRequest mocks base method
+func (m *MockOpenSearchServiceAPI) AuthorizeVpcEndpointAccessRequest(arg0 *opensearchservice.AuthorizeVpcEndpointAccessInput) (*request.Request, *opensearchservice.AuthorizeVpcEndpointAccessOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AuthorizeVpcEndpointAccessRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.AuthorizeVpcEndpointAccessOutput)
+	return ret0, ret1
+}
+
+// AuthorizeVpcEndpointAccessRequest indicates an expected call of AuthorizeVpcEndpointAccessRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) AuthorizeVpcEndpointAccessRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AuthorizeVpcEndpointAccessRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).AuthorizeVpcEndpointAccessRequest), arg0)
+}
+
+// AuthorizeVpcEndpointAccessWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) AuthorizeVpcEndpointAccessWithContext(arg0 context.Context, arg1 *opensearchservice.AuthorizeVpcEndpointAccessInput, arg2 ...request.Option) (*opensearchservice.AuthorizeVpcEndpointAccessOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AuthorizeVpcEndpointAccessWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.AuthorizeVpcEndpointAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AuthorizeVpcEndpointAccessWithContext indicates an expected call of AuthorizeVpcEndpointAccessWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) AuthorizeVpcEndpointAccessWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AuthorizeVpcEndpointAccessWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).AuthorizeVpcEndpointAccessWithContext), varargs...)
+}
+
 // CancelServiceSoftwareUpdate mocks base method
 func (m *MockOpenSearchServiceAPI) CancelServiceSoftwareUpdate(arg0 *opensearchservice.CancelServiceSoftwareUpdateInput) (*opensearchservice.CancelServiceSoftwareUpdateOutput, error) {
 	m.ctrl.T.Helper()
@@ -385,6 +435,56 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) CreatePackageWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePackageWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).CreatePackageWithContext), varargs...)
 }
 
+// CreateVpcEndpoint mocks base method
+func (m *MockOpenSearchServiceAPI) CreateVpcEndpoint(arg0 *opensearchservice.CreateVpcEndpointInput) (*opensearchservice.CreateVpcEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVpcEndpoint", arg0)
+	ret0, _ := ret[0].(*opensearchservice.CreateVpcEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVpcEndpoint indicates an expected call of CreateVpcEndpoint
+func (mr *MockOpenSearchServiceAPIMockRecorder) CreateVpcEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcEndpoint", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).CreateVpcEndpoint), arg0)
+}
+
+// CreateVpcEndpointRequest mocks base method
+func (m *MockOpenSearchServiceAPI) CreateVpcEndpointRequest(arg0 *opensearchservice.CreateVpcEndpointInput) (*request.Request, *opensearchservice.CreateVpcEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVpcEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.CreateVpcEndpointOutput)
+	return ret0, ret1
+}
+
+// CreateVpcEndpointRequest indicates an expected call of CreateVpcEndpointRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) CreateVpcEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcEndpointRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).CreateVpcEndpointRequest), arg0)
+}
+
+// CreateVpcEndpointWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) CreateVpcEndpointWithContext(arg0 context.Context, arg1 *opensearchservice.CreateVpcEndpointInput, arg2 ...request.Option) (*opensearchservice.CreateVpcEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateVpcEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.CreateVpcEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVpcEndpointWithContext indicates an expected call of CreateVpcEndpointWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) CreateVpcEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcEndpointWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).CreateVpcEndpointWithContext), varargs...)
+}
+
 // DeleteDomain mocks base method
 func (m *MockOpenSearchServiceAPI) DeleteDomain(arg0 *opensearchservice.DeleteDomainInput) (*opensearchservice.DeleteDomainOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +683,56 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) DeletePackageWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePackageWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DeletePackageWithContext), varargs...)
+}
+
+// DeleteVpcEndpoint mocks base method
+func (m *MockOpenSearchServiceAPI) DeleteVpcEndpoint(arg0 *opensearchservice.DeleteVpcEndpointInput) (*opensearchservice.DeleteVpcEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVpcEndpoint", arg0)
+	ret0, _ := ret[0].(*opensearchservice.DeleteVpcEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVpcEndpoint indicates an expected call of DeleteVpcEndpoint
+func (mr *MockOpenSearchServiceAPIMockRecorder) DeleteVpcEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcEndpoint", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DeleteVpcEndpoint), arg0)
+}
+
+// DeleteVpcEndpointRequest mocks base method
+func (m *MockOpenSearchServiceAPI) DeleteVpcEndpointRequest(arg0 *opensearchservice.DeleteVpcEndpointInput) (*request.Request, *opensearchservice.DeleteVpcEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVpcEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.DeleteVpcEndpointOutput)
+	return ret0, ret1
+}
+
+// DeleteVpcEndpointRequest indicates an expected call of DeleteVpcEndpointRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) DeleteVpcEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcEndpointRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DeleteVpcEndpointRequest), arg0)
+}
+
+// DeleteVpcEndpointWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) DeleteVpcEndpointWithContext(arg0 context.Context, arg1 *opensearchservice.DeleteVpcEndpointInput, arg2 ...request.Option) (*opensearchservice.DeleteVpcEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteVpcEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.DeleteVpcEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVpcEndpointWithContext indicates an expected call of DeleteVpcEndpointWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) DeleteVpcEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcEndpointWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DeleteVpcEndpointWithContext), varargs...)
 }
 
 // DescribeDomain mocks base method
@@ -1333,6 +1483,56 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeReservedInstancesWithCon
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservedInstancesWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeReservedInstancesWithContext), varargs...)
 }
 
+// DescribeVpcEndpoints mocks base method
+func (m *MockOpenSearchServiceAPI) DescribeVpcEndpoints(arg0 *opensearchservice.DescribeVpcEndpointsInput) (*opensearchservice.DescribeVpcEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeVpcEndpoints", arg0)
+	ret0, _ := ret[0].(*opensearchservice.DescribeVpcEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeVpcEndpoints indicates an expected call of DescribeVpcEndpoints
+func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeVpcEndpoints(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVpcEndpoints", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeVpcEndpoints), arg0)
+}
+
+// DescribeVpcEndpointsRequest mocks base method
+func (m *MockOpenSearchServiceAPI) DescribeVpcEndpointsRequest(arg0 *opensearchservice.DescribeVpcEndpointsInput) (*request.Request, *opensearchservice.DescribeVpcEndpointsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeVpcEndpointsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.DescribeVpcEndpointsOutput)
+	return ret0, ret1
+}
+
+// DescribeVpcEndpointsRequest indicates an expected call of DescribeVpcEndpointsRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeVpcEndpointsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVpcEndpointsRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeVpcEndpointsRequest), arg0)
+}
+
+// DescribeVpcEndpointsWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) DescribeVpcEndpointsWithContext(arg0 context.Context, arg1 *opensearchservice.DescribeVpcEndpointsInput, arg2 ...request.Option) (*opensearchservice.DescribeVpcEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeVpcEndpointsWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.DescribeVpcEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeVpcEndpointsWithContext indicates an expected call of DescribeVpcEndpointsWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeVpcEndpointsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVpcEndpointsWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeVpcEndpointsWithContext), varargs...)
+}
+
 // DissociatePackage mocks base method
 func (m *MockOpenSearchServiceAPI) DissociatePackage(arg0 *opensearchservice.DissociatePackageInput) (*opensearchservice.DissociatePackageOutput, error) {
 	m.ctrl.T.Helper()
@@ -2081,6 +2281,156 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) ListVersionsWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVersionsWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListVersionsWithContext), varargs...)
 }
 
+// ListVpcEndpointAccess mocks base method
+func (m *MockOpenSearchServiceAPI) ListVpcEndpointAccess(arg0 *opensearchservice.ListVpcEndpointAccessInput) (*opensearchservice.ListVpcEndpointAccessOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVpcEndpointAccess", arg0)
+	ret0, _ := ret[0].(*opensearchservice.ListVpcEndpointAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVpcEndpointAccess indicates an expected call of ListVpcEndpointAccess
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListVpcEndpointAccess(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcEndpointAccess", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListVpcEndpointAccess), arg0)
+}
+
+// ListVpcEndpointAccessRequest mocks base method
+func (m *MockOpenSearchServiceAPI) ListVpcEndpointAccessRequest(arg0 *opensearchservice.ListVpcEndpointAccessInput) (*request.Request, *opensearchservice.ListVpcEndpointAccessOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVpcEndpointAccessRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.ListVpcEndpointAccessOutput)
+	return ret0, ret1
+}
+
+// ListVpcEndpointAccessRequest indicates an expected call of ListVpcEndpointAccessRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListVpcEndpointAccessRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcEndpointAccessRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListVpcEndpointAccessRequest), arg0)
+}
+
+// ListVpcEndpointAccessWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) ListVpcEndpointAccessWithContext(arg0 context.Context, arg1 *opensearchservice.ListVpcEndpointAccessInput, arg2 ...request.Option) (*opensearchservice.ListVpcEndpointAccessOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVpcEndpointAccessWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.ListVpcEndpointAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVpcEndpointAccessWithContext indicates an expected call of ListVpcEndpointAccessWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListVpcEndpointAccessWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcEndpointAccessWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListVpcEndpointAccessWithContext), varargs...)
+}
+
+// ListVpcEndpoints mocks base method
+func (m *MockOpenSearchServiceAPI) ListVpcEndpoints(arg0 *opensearchservice.ListVpcEndpointsInput) (*opensearchservice.ListVpcEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVpcEndpoints", arg0)
+	ret0, _ := ret[0].(*opensearchservice.ListVpcEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVpcEndpoints indicates an expected call of ListVpcEndpoints
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListVpcEndpoints(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcEndpoints", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListVpcEndpoints), arg0)
+}
+
+// ListVpcEndpointsForDomain mocks base method
+func (m *MockOpenSearchServiceAPI) ListVpcEndpointsForDomain(arg0 *opensearchservice.ListVpcEndpointsForDomainInput) (*opensearchservice.ListVpcEndpointsForDomainOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVpcEndpointsForDomain", arg0)
+	ret0, _ := ret[0].(*opensearchservice.ListVpcEndpointsForDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVpcEndpointsForDomain indicates an expected call of ListVpcEndpointsForDomain
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListVpcEndpointsForDomain(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcEndpointsForDomain", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListVpcEndpointsForDomain), arg0)
+}
+
+// ListVpcEndpointsForDomainRequest mocks base method
+func (m *MockOpenSearchServiceAPI) ListVpcEndpointsForDomainRequest(arg0 *opensearchservice.ListVpcEndpointsForDomainInput) (*request.Request, *opensearchservice.ListVpcEndpointsForDomainOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVpcEndpointsForDomainRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.ListVpcEndpointsForDomainOutput)
+	return ret0, ret1
+}
+
+// ListVpcEndpointsForDomainRequest indicates an expected call of ListVpcEndpointsForDomainRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListVpcEndpointsForDomainRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcEndpointsForDomainRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListVpcEndpointsForDomainRequest), arg0)
+}
+
+// ListVpcEndpointsForDomainWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) ListVpcEndpointsForDomainWithContext(arg0 context.Context, arg1 *opensearchservice.ListVpcEndpointsForDomainInput, arg2 ...request.Option) (*opensearchservice.ListVpcEndpointsForDomainOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVpcEndpointsForDomainWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.ListVpcEndpointsForDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVpcEndpointsForDomainWithContext indicates an expected call of ListVpcEndpointsForDomainWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListVpcEndpointsForDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcEndpointsForDomainWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListVpcEndpointsForDomainWithContext), varargs...)
+}
+
+// ListVpcEndpointsRequest mocks base method
+func (m *MockOpenSearchServiceAPI) ListVpcEndpointsRequest(arg0 *opensearchservice.ListVpcEndpointsInput) (*request.Request, *opensearchservice.ListVpcEndpointsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVpcEndpointsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.ListVpcEndpointsOutput)
+	return ret0, ret1
+}
+
+// ListVpcEndpointsRequest indicates an expected call of ListVpcEndpointsRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListVpcEndpointsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcEndpointsRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListVpcEndpointsRequest), arg0)
+}
+
+// ListVpcEndpointsWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) ListVpcEndpointsWithContext(arg0 context.Context, arg1 *opensearchservice.ListVpcEndpointsInput, arg2 ...request.Option) (*opensearchservice.ListVpcEndpointsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVpcEndpointsWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.ListVpcEndpointsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVpcEndpointsWithContext indicates an expected call of ListVpcEndpointsWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListVpcEndpointsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcEndpointsWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListVpcEndpointsWithContext), varargs...)
+}
+
 // PurchaseReservedInstanceOffering mocks base method
 func (m *MockOpenSearchServiceAPI) PurchaseReservedInstanceOffering(arg0 *opensearchservice.PurchaseReservedInstanceOfferingInput) (*opensearchservice.PurchaseReservedInstanceOfferingOutput, error) {
 	m.ctrl.T.Helper()
@@ -2231,6 +2581,56 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) RemoveTagsWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTagsWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).RemoveTagsWithContext), varargs...)
 }
 
+// RevokeVpcEndpointAccess mocks base method
+func (m *MockOpenSearchServiceAPI) RevokeVpcEndpointAccess(arg0 *opensearchservice.RevokeVpcEndpointAccessInput) (*opensearchservice.RevokeVpcEndpointAccessOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RevokeVpcEndpointAccess", arg0)
+	ret0, _ := ret[0].(*opensearchservice.RevokeVpcEndpointAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RevokeVpcEndpointAccess indicates an expected call of RevokeVpcEndpointAccess
+func (mr *MockOpenSearchServiceAPIMockRecorder) RevokeVpcEndpointAccess(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeVpcEndpointAccess", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).RevokeVpcEndpointAccess), arg0)
+}
+
+// RevokeVpcEndpointAccessRequest mocks base method
+func (m *MockOpenSearchServiceAPI) RevokeVpcEndpointAccessRequest(arg0 *opensearchservice.RevokeVpcEndpointAccessInput) (*request.Request, *opensearchservice.RevokeVpcEndpointAccessOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RevokeVpcEndpointAccessRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.RevokeVpcEndpointAccessOutput)
+	return ret0, ret1
+}
+
+// RevokeVpcEndpointAccessRequest indicates an expected call of RevokeVpcEndpointAccessRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) RevokeVpcEndpointAccessRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeVpcEndpointAccessRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).RevokeVpcEndpointAccessRequest), arg0)
+}
+
+// RevokeVpcEndpointAccessWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) RevokeVpcEndpointAccessWithContext(arg0 context.Context, arg1 *opensearchservice.RevokeVpcEndpointAccessInput, arg2 ...request.Option) (*opensearchservice.RevokeVpcEndpointAccessOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RevokeVpcEndpointAccessWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.RevokeVpcEndpointAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RevokeVpcEndpointAccessWithContext indicates an expected call of RevokeVpcEndpointAccessWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) RevokeVpcEndpointAccessWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeVpcEndpointAccessWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).RevokeVpcEndpointAccessWithContext), varargs...)
+}
+
 // StartServiceSoftwareUpdate mocks base method
 func (m *MockOpenSearchServiceAPI) StartServiceSoftwareUpdate(arg0 *opensearchservice.StartServiceSoftwareUpdateInput) (*opensearchservice.StartServiceSoftwareUpdateOutput, error) {
 	m.ctrl.T.Helper()
@@ -2379,6 +2779,56 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) UpdatePackageWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePackageWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).UpdatePackageWithContext), varargs...)
+}
+
+// UpdateVpcEndpoint mocks base method
+func (m *MockOpenSearchServiceAPI) UpdateVpcEndpoint(arg0 *opensearchservice.UpdateVpcEndpointInput) (*opensearchservice.UpdateVpcEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVpcEndpoint", arg0)
+	ret0, _ := ret[0].(*opensearchservice.UpdateVpcEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVpcEndpoint indicates an expected call of UpdateVpcEndpoint
+func (mr *MockOpenSearchServiceAPIMockRecorder) UpdateVpcEndpoint(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVpcEndpoint", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).UpdateVpcEndpoint), arg0)
+}
+
+// UpdateVpcEndpointRequest mocks base method
+func (m *MockOpenSearchServiceAPI) UpdateVpcEndpointRequest(arg0 *opensearchservice.UpdateVpcEndpointInput) (*request.Request, *opensearchservice.UpdateVpcEndpointOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVpcEndpointRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.UpdateVpcEndpointOutput)
+	return ret0, ret1
+}
+
+// UpdateVpcEndpointRequest indicates an expected call of UpdateVpcEndpointRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) UpdateVpcEndpointRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVpcEndpointRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).UpdateVpcEndpointRequest), arg0)
+}
+
+// UpdateVpcEndpointWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) UpdateVpcEndpointWithContext(arg0 context.Context, arg1 *opensearchservice.UpdateVpcEndpointInput, arg2 ...request.Option) (*opensearchservice.UpdateVpcEndpointOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateVpcEndpointWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.UpdateVpcEndpointOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVpcEndpointWithContext indicates an expected call of UpdateVpcEndpointWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) UpdateVpcEndpointWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVpcEndpointWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).UpdateVpcEndpointWithContext), varargs...)
 }
 
 // UpgradeDomain mocks base method

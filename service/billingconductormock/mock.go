@@ -984,6 +984,89 @@ func (mr *MockBillingConductorAPIMockRecorder) ListBillingGroupsWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBillingGroupsWithContext", reflect.TypeOf((*MockBillingConductorAPI)(nil).ListBillingGroupsWithContext), varargs...)
 }
 
+// ListCustomLineItemVersions mocks base method
+func (m *MockBillingConductorAPI) ListCustomLineItemVersions(arg0 *billingconductor.ListCustomLineItemVersionsInput) (*billingconductor.ListCustomLineItemVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomLineItemVersions", arg0)
+	ret0, _ := ret[0].(*billingconductor.ListCustomLineItemVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCustomLineItemVersions indicates an expected call of ListCustomLineItemVersions
+func (mr *MockBillingConductorAPIMockRecorder) ListCustomLineItemVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomLineItemVersions", reflect.TypeOf((*MockBillingConductorAPI)(nil).ListCustomLineItemVersions), arg0)
+}
+
+// ListCustomLineItemVersionsPages mocks base method
+func (m *MockBillingConductorAPI) ListCustomLineItemVersionsPages(arg0 *billingconductor.ListCustomLineItemVersionsInput, arg1 func(*billingconductor.ListCustomLineItemVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomLineItemVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCustomLineItemVersionsPages indicates an expected call of ListCustomLineItemVersionsPages
+func (mr *MockBillingConductorAPIMockRecorder) ListCustomLineItemVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomLineItemVersionsPages", reflect.TypeOf((*MockBillingConductorAPI)(nil).ListCustomLineItemVersionsPages), arg0, arg1)
+}
+
+// ListCustomLineItemVersionsPagesWithContext mocks base method
+func (m *MockBillingConductorAPI) ListCustomLineItemVersionsPagesWithContext(arg0 context.Context, arg1 *billingconductor.ListCustomLineItemVersionsInput, arg2 func(*billingconductor.ListCustomLineItemVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCustomLineItemVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCustomLineItemVersionsPagesWithContext indicates an expected call of ListCustomLineItemVersionsPagesWithContext
+func (mr *MockBillingConductorAPIMockRecorder) ListCustomLineItemVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomLineItemVersionsPagesWithContext", reflect.TypeOf((*MockBillingConductorAPI)(nil).ListCustomLineItemVersionsPagesWithContext), varargs...)
+}
+
+// ListCustomLineItemVersionsRequest mocks base method
+func (m *MockBillingConductorAPI) ListCustomLineItemVersionsRequest(arg0 *billingconductor.ListCustomLineItemVersionsInput) (*request.Request, *billingconductor.ListCustomLineItemVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCustomLineItemVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*billingconductor.ListCustomLineItemVersionsOutput)
+	return ret0, ret1
+}
+
+// ListCustomLineItemVersionsRequest indicates an expected call of ListCustomLineItemVersionsRequest
+func (mr *MockBillingConductorAPIMockRecorder) ListCustomLineItemVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomLineItemVersionsRequest", reflect.TypeOf((*MockBillingConductorAPI)(nil).ListCustomLineItemVersionsRequest), arg0)
+}
+
+// ListCustomLineItemVersionsWithContext mocks base method
+func (m *MockBillingConductorAPI) ListCustomLineItemVersionsWithContext(arg0 context.Context, arg1 *billingconductor.ListCustomLineItemVersionsInput, arg2 ...request.Option) (*billingconductor.ListCustomLineItemVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCustomLineItemVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*billingconductor.ListCustomLineItemVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCustomLineItemVersionsWithContext indicates an expected call of ListCustomLineItemVersionsWithContext
+func (mr *MockBillingConductorAPIMockRecorder) ListCustomLineItemVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomLineItemVersionsWithContext", reflect.TypeOf((*MockBillingConductorAPI)(nil).ListCustomLineItemVersionsWithContext), varargs...)
+}
+
 // ListCustomLineItems mocks base method
 func (m *MockBillingConductorAPI) ListCustomLineItems(arg0 *billingconductor.ListCustomLineItemsInput) (*billingconductor.ListCustomLineItemsOutput, error) {
 	m.ctrl.T.Helper()
