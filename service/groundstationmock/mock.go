@@ -185,6 +185,56 @@ func (mr *MockGroundStationAPIMockRecorder) CreateDataflowEndpointGroupWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataflowEndpointGroupWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).CreateDataflowEndpointGroupWithContext), varargs...)
 }
 
+// CreateEphemeris mocks base method
+func (m *MockGroundStationAPI) CreateEphemeris(arg0 *groundstation.CreateEphemerisInput) (*groundstation.CreateEphemerisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEphemeris", arg0)
+	ret0, _ := ret[0].(*groundstation.CreateEphemerisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEphemeris indicates an expected call of CreateEphemeris
+func (mr *MockGroundStationAPIMockRecorder) CreateEphemeris(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEphemeris", reflect.TypeOf((*MockGroundStationAPI)(nil).CreateEphemeris), arg0)
+}
+
+// CreateEphemerisRequest mocks base method
+func (m *MockGroundStationAPI) CreateEphemerisRequest(arg0 *groundstation.CreateEphemerisInput) (*request.Request, *groundstation.CreateEphemerisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEphemerisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*groundstation.CreateEphemerisOutput)
+	return ret0, ret1
+}
+
+// CreateEphemerisRequest indicates an expected call of CreateEphemerisRequest
+func (mr *MockGroundStationAPIMockRecorder) CreateEphemerisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEphemerisRequest", reflect.TypeOf((*MockGroundStationAPI)(nil).CreateEphemerisRequest), arg0)
+}
+
+// CreateEphemerisWithContext mocks base method
+func (m *MockGroundStationAPI) CreateEphemerisWithContext(arg0 context.Context, arg1 *groundstation.CreateEphemerisInput, arg2 ...request.Option) (*groundstation.CreateEphemerisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateEphemerisWithContext", varargs...)
+	ret0, _ := ret[0].(*groundstation.CreateEphemerisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEphemerisWithContext indicates an expected call of CreateEphemerisWithContext
+func (mr *MockGroundStationAPIMockRecorder) CreateEphemerisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEphemerisWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).CreateEphemerisWithContext), varargs...)
+}
+
 // CreateMissionProfile mocks base method
 func (m *MockGroundStationAPI) CreateMissionProfile(arg0 *groundstation.CreateMissionProfileInput) (*groundstation.CreateMissionProfileOutput, error) {
 	m.ctrl.T.Helper()
@@ -335,6 +385,56 @@ func (mr *MockGroundStationAPIMockRecorder) DeleteDataflowEndpointGroupWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataflowEndpointGroupWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).DeleteDataflowEndpointGroupWithContext), varargs...)
 }
 
+// DeleteEphemeris mocks base method
+func (m *MockGroundStationAPI) DeleteEphemeris(arg0 *groundstation.DeleteEphemerisInput) (*groundstation.DeleteEphemerisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEphemeris", arg0)
+	ret0, _ := ret[0].(*groundstation.DeleteEphemerisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEphemeris indicates an expected call of DeleteEphemeris
+func (mr *MockGroundStationAPIMockRecorder) DeleteEphemeris(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEphemeris", reflect.TypeOf((*MockGroundStationAPI)(nil).DeleteEphemeris), arg0)
+}
+
+// DeleteEphemerisRequest mocks base method
+func (m *MockGroundStationAPI) DeleteEphemerisRequest(arg0 *groundstation.DeleteEphemerisInput) (*request.Request, *groundstation.DeleteEphemerisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEphemerisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*groundstation.DeleteEphemerisOutput)
+	return ret0, ret1
+}
+
+// DeleteEphemerisRequest indicates an expected call of DeleteEphemerisRequest
+func (mr *MockGroundStationAPIMockRecorder) DeleteEphemerisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEphemerisRequest", reflect.TypeOf((*MockGroundStationAPI)(nil).DeleteEphemerisRequest), arg0)
+}
+
+// DeleteEphemerisWithContext mocks base method
+func (m *MockGroundStationAPI) DeleteEphemerisWithContext(arg0 context.Context, arg1 *groundstation.DeleteEphemerisInput, arg2 ...request.Option) (*groundstation.DeleteEphemerisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteEphemerisWithContext", varargs...)
+	ret0, _ := ret[0].(*groundstation.DeleteEphemerisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEphemerisWithContext indicates an expected call of DeleteEphemerisWithContext
+func (mr *MockGroundStationAPIMockRecorder) DeleteEphemerisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEphemerisWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).DeleteEphemerisWithContext), varargs...)
+}
+
 // DeleteMissionProfile mocks base method
 func (m *MockGroundStationAPI) DeleteMissionProfile(arg0 *groundstation.DeleteMissionProfileInput) (*groundstation.DeleteMissionProfileOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +533,56 @@ func (mr *MockGroundStationAPIMockRecorder) DescribeContactWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContactWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).DescribeContactWithContext), varargs...)
+}
+
+// DescribeEphemeris mocks base method
+func (m *MockGroundStationAPI) DescribeEphemeris(arg0 *groundstation.DescribeEphemerisInput) (*groundstation.DescribeEphemerisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEphemeris", arg0)
+	ret0, _ := ret[0].(*groundstation.DescribeEphemerisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEphemeris indicates an expected call of DescribeEphemeris
+func (mr *MockGroundStationAPIMockRecorder) DescribeEphemeris(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEphemeris", reflect.TypeOf((*MockGroundStationAPI)(nil).DescribeEphemeris), arg0)
+}
+
+// DescribeEphemerisRequest mocks base method
+func (m *MockGroundStationAPI) DescribeEphemerisRequest(arg0 *groundstation.DescribeEphemerisInput) (*request.Request, *groundstation.DescribeEphemerisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEphemerisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*groundstation.DescribeEphemerisOutput)
+	return ret0, ret1
+}
+
+// DescribeEphemerisRequest indicates an expected call of DescribeEphemerisRequest
+func (mr *MockGroundStationAPIMockRecorder) DescribeEphemerisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEphemerisRequest", reflect.TypeOf((*MockGroundStationAPI)(nil).DescribeEphemerisRequest), arg0)
+}
+
+// DescribeEphemerisWithContext mocks base method
+func (m *MockGroundStationAPI) DescribeEphemerisWithContext(arg0 context.Context, arg1 *groundstation.DescribeEphemerisInput, arg2 ...request.Option) (*groundstation.DescribeEphemerisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEphemerisWithContext", varargs...)
+	ret0, _ := ret[0].(*groundstation.DescribeEphemerisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEphemerisWithContext indicates an expected call of DescribeEphemerisWithContext
+func (mr *MockGroundStationAPIMockRecorder) DescribeEphemerisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEphemerisWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).DescribeEphemerisWithContext), varargs...)
 }
 
 // GetConfig mocks base method
@@ -934,6 +1084,89 @@ func (mr *MockGroundStationAPIMockRecorder) ListDataflowEndpointGroupsWithContex
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataflowEndpointGroupsWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).ListDataflowEndpointGroupsWithContext), varargs...)
 }
 
+// ListEphemerides mocks base method
+func (m *MockGroundStationAPI) ListEphemerides(arg0 *groundstation.ListEphemeridesInput) (*groundstation.ListEphemeridesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEphemerides", arg0)
+	ret0, _ := ret[0].(*groundstation.ListEphemeridesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEphemerides indicates an expected call of ListEphemerides
+func (mr *MockGroundStationAPIMockRecorder) ListEphemerides(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEphemerides", reflect.TypeOf((*MockGroundStationAPI)(nil).ListEphemerides), arg0)
+}
+
+// ListEphemeridesPages mocks base method
+func (m *MockGroundStationAPI) ListEphemeridesPages(arg0 *groundstation.ListEphemeridesInput, arg1 func(*groundstation.ListEphemeridesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEphemeridesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEphemeridesPages indicates an expected call of ListEphemeridesPages
+func (mr *MockGroundStationAPIMockRecorder) ListEphemeridesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEphemeridesPages", reflect.TypeOf((*MockGroundStationAPI)(nil).ListEphemeridesPages), arg0, arg1)
+}
+
+// ListEphemeridesPagesWithContext mocks base method
+func (m *MockGroundStationAPI) ListEphemeridesPagesWithContext(arg0 context.Context, arg1 *groundstation.ListEphemeridesInput, arg2 func(*groundstation.ListEphemeridesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEphemeridesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEphemeridesPagesWithContext indicates an expected call of ListEphemeridesPagesWithContext
+func (mr *MockGroundStationAPIMockRecorder) ListEphemeridesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEphemeridesPagesWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).ListEphemeridesPagesWithContext), varargs...)
+}
+
+// ListEphemeridesRequest mocks base method
+func (m *MockGroundStationAPI) ListEphemeridesRequest(arg0 *groundstation.ListEphemeridesInput) (*request.Request, *groundstation.ListEphemeridesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEphemeridesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*groundstation.ListEphemeridesOutput)
+	return ret0, ret1
+}
+
+// ListEphemeridesRequest indicates an expected call of ListEphemeridesRequest
+func (mr *MockGroundStationAPIMockRecorder) ListEphemeridesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEphemeridesRequest", reflect.TypeOf((*MockGroundStationAPI)(nil).ListEphemeridesRequest), arg0)
+}
+
+// ListEphemeridesWithContext mocks base method
+func (m *MockGroundStationAPI) ListEphemeridesWithContext(arg0 context.Context, arg1 *groundstation.ListEphemeridesInput, arg2 ...request.Option) (*groundstation.ListEphemeridesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEphemeridesWithContext", varargs...)
+	ret0, _ := ret[0].(*groundstation.ListEphemeridesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEphemeridesWithContext indicates an expected call of ListEphemeridesWithContext
+func (mr *MockGroundStationAPIMockRecorder) ListEphemeridesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEphemeridesWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).ListEphemeridesWithContext), varargs...)
+}
+
 // ListGroundStations mocks base method
 func (m *MockGroundStationAPI) ListGroundStations(arg0 *groundstation.ListGroundStationsInput) (*groundstation.ListGroundStationsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1431,6 +1664,56 @@ func (mr *MockGroundStationAPIMockRecorder) UpdateConfigWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfigWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).UpdateConfigWithContext), varargs...)
+}
+
+// UpdateEphemeris mocks base method
+func (m *MockGroundStationAPI) UpdateEphemeris(arg0 *groundstation.UpdateEphemerisInput) (*groundstation.UpdateEphemerisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateEphemeris", arg0)
+	ret0, _ := ret[0].(*groundstation.UpdateEphemerisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateEphemeris indicates an expected call of UpdateEphemeris
+func (mr *MockGroundStationAPIMockRecorder) UpdateEphemeris(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEphemeris", reflect.TypeOf((*MockGroundStationAPI)(nil).UpdateEphemeris), arg0)
+}
+
+// UpdateEphemerisRequest mocks base method
+func (m *MockGroundStationAPI) UpdateEphemerisRequest(arg0 *groundstation.UpdateEphemerisInput) (*request.Request, *groundstation.UpdateEphemerisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateEphemerisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*groundstation.UpdateEphemerisOutput)
+	return ret0, ret1
+}
+
+// UpdateEphemerisRequest indicates an expected call of UpdateEphemerisRequest
+func (mr *MockGroundStationAPIMockRecorder) UpdateEphemerisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEphemerisRequest", reflect.TypeOf((*MockGroundStationAPI)(nil).UpdateEphemerisRequest), arg0)
+}
+
+// UpdateEphemerisWithContext mocks base method
+func (m *MockGroundStationAPI) UpdateEphemerisWithContext(arg0 context.Context, arg1 *groundstation.UpdateEphemerisInput, arg2 ...request.Option) (*groundstation.UpdateEphemerisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateEphemerisWithContext", varargs...)
+	ret0, _ := ret[0].(*groundstation.UpdateEphemerisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateEphemerisWithContext indicates an expected call of UpdateEphemerisWithContext
+func (mr *MockGroundStationAPIMockRecorder) UpdateEphemerisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEphemerisWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).UpdateEphemerisWithContext), varargs...)
 }
 
 // UpdateMissionProfile mocks base method
