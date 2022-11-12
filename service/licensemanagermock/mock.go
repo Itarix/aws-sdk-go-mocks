@@ -1800,6 +1800,56 @@ func (mr *MockLicenseManagerAPIMockRecorder) ListReceivedGrants(arg0 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReceivedGrants", reflect.TypeOf((*MockLicenseManagerAPI)(nil).ListReceivedGrants), arg0)
 }
 
+// ListReceivedGrantsForOrganization mocks base method
+func (m *MockLicenseManagerAPI) ListReceivedGrantsForOrganization(arg0 *licensemanager.ListReceivedGrantsForOrganizationInput) (*licensemanager.ListReceivedGrantsForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReceivedGrantsForOrganization", arg0)
+	ret0, _ := ret[0].(*licensemanager.ListReceivedGrantsForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReceivedGrantsForOrganization indicates an expected call of ListReceivedGrantsForOrganization
+func (mr *MockLicenseManagerAPIMockRecorder) ListReceivedGrantsForOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReceivedGrantsForOrganization", reflect.TypeOf((*MockLicenseManagerAPI)(nil).ListReceivedGrantsForOrganization), arg0)
+}
+
+// ListReceivedGrantsForOrganizationRequest mocks base method
+func (m *MockLicenseManagerAPI) ListReceivedGrantsForOrganizationRequest(arg0 *licensemanager.ListReceivedGrantsForOrganizationInput) (*request.Request, *licensemanager.ListReceivedGrantsForOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReceivedGrantsForOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*licensemanager.ListReceivedGrantsForOrganizationOutput)
+	return ret0, ret1
+}
+
+// ListReceivedGrantsForOrganizationRequest indicates an expected call of ListReceivedGrantsForOrganizationRequest
+func (mr *MockLicenseManagerAPIMockRecorder) ListReceivedGrantsForOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReceivedGrantsForOrganizationRequest", reflect.TypeOf((*MockLicenseManagerAPI)(nil).ListReceivedGrantsForOrganizationRequest), arg0)
+}
+
+// ListReceivedGrantsForOrganizationWithContext mocks base method
+func (m *MockLicenseManagerAPI) ListReceivedGrantsForOrganizationWithContext(arg0 context.Context, arg1 *licensemanager.ListReceivedGrantsForOrganizationInput, arg2 ...request.Option) (*licensemanager.ListReceivedGrantsForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReceivedGrantsForOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*licensemanager.ListReceivedGrantsForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReceivedGrantsForOrganizationWithContext indicates an expected call of ListReceivedGrantsForOrganizationWithContext
+func (mr *MockLicenseManagerAPIMockRecorder) ListReceivedGrantsForOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReceivedGrantsForOrganizationWithContext", reflect.TypeOf((*MockLicenseManagerAPI)(nil).ListReceivedGrantsForOrganizationWithContext), varargs...)
+}
+
 // ListReceivedGrantsRequest mocks base method
 func (m *MockLicenseManagerAPI) ListReceivedGrantsRequest(arg0 *licensemanager.ListReceivedGrantsInput) (*request.Request, *licensemanager.ListReceivedGrantsOutput) {
 	m.ctrl.T.Helper()
@@ -1848,6 +1898,56 @@ func (m *MockLicenseManagerAPI) ListReceivedLicenses(arg0 *licensemanager.ListRe
 func (mr *MockLicenseManagerAPIMockRecorder) ListReceivedLicenses(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReceivedLicenses", reflect.TypeOf((*MockLicenseManagerAPI)(nil).ListReceivedLicenses), arg0)
+}
+
+// ListReceivedLicensesForOrganization mocks base method
+func (m *MockLicenseManagerAPI) ListReceivedLicensesForOrganization(arg0 *licensemanager.ListReceivedLicensesForOrganizationInput) (*licensemanager.ListReceivedLicensesForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReceivedLicensesForOrganization", arg0)
+	ret0, _ := ret[0].(*licensemanager.ListReceivedLicensesForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReceivedLicensesForOrganization indicates an expected call of ListReceivedLicensesForOrganization
+func (mr *MockLicenseManagerAPIMockRecorder) ListReceivedLicensesForOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReceivedLicensesForOrganization", reflect.TypeOf((*MockLicenseManagerAPI)(nil).ListReceivedLicensesForOrganization), arg0)
+}
+
+// ListReceivedLicensesForOrganizationRequest mocks base method
+func (m *MockLicenseManagerAPI) ListReceivedLicensesForOrganizationRequest(arg0 *licensemanager.ListReceivedLicensesForOrganizationInput) (*request.Request, *licensemanager.ListReceivedLicensesForOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReceivedLicensesForOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*licensemanager.ListReceivedLicensesForOrganizationOutput)
+	return ret0, ret1
+}
+
+// ListReceivedLicensesForOrganizationRequest indicates an expected call of ListReceivedLicensesForOrganizationRequest
+func (mr *MockLicenseManagerAPIMockRecorder) ListReceivedLicensesForOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReceivedLicensesForOrganizationRequest", reflect.TypeOf((*MockLicenseManagerAPI)(nil).ListReceivedLicensesForOrganizationRequest), arg0)
+}
+
+// ListReceivedLicensesForOrganizationWithContext mocks base method
+func (m *MockLicenseManagerAPI) ListReceivedLicensesForOrganizationWithContext(arg0 context.Context, arg1 *licensemanager.ListReceivedLicensesForOrganizationInput, arg2 ...request.Option) (*licensemanager.ListReceivedLicensesForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReceivedLicensesForOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*licensemanager.ListReceivedLicensesForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReceivedLicensesForOrganizationWithContext indicates an expected call of ListReceivedLicensesForOrganizationWithContext
+func (mr *MockLicenseManagerAPIMockRecorder) ListReceivedLicensesForOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReceivedLicensesForOrganizationWithContext", reflect.TypeOf((*MockLicenseManagerAPI)(nil).ListReceivedLicensesForOrganizationWithContext), varargs...)
 }
 
 // ListReceivedLicensesRequest mocks base method

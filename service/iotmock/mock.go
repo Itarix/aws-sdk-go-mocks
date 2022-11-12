@@ -9457,6 +9457,56 @@ func (mr *MockIoTAPIMockRecorder) ListProvisioningTemplatesWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisioningTemplatesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListProvisioningTemplatesWithContext), varargs...)
 }
 
+// ListRelatedResourcesForAuditFinding mocks base method
+func (m *MockIoTAPI) ListRelatedResourcesForAuditFinding(arg0 *iot.ListRelatedResourcesForAuditFindingInput) (*iot.ListRelatedResourcesForAuditFindingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRelatedResourcesForAuditFinding", arg0)
+	ret0, _ := ret[0].(*iot.ListRelatedResourcesForAuditFindingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRelatedResourcesForAuditFinding indicates an expected call of ListRelatedResourcesForAuditFinding
+func (mr *MockIoTAPIMockRecorder) ListRelatedResourcesForAuditFinding(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRelatedResourcesForAuditFinding", reflect.TypeOf((*MockIoTAPI)(nil).ListRelatedResourcesForAuditFinding), arg0)
+}
+
+// ListRelatedResourcesForAuditFindingRequest mocks base method
+func (m *MockIoTAPI) ListRelatedResourcesForAuditFindingRequest(arg0 *iot.ListRelatedResourcesForAuditFindingInput) (*request.Request, *iot.ListRelatedResourcesForAuditFindingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRelatedResourcesForAuditFindingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iot.ListRelatedResourcesForAuditFindingOutput)
+	return ret0, ret1
+}
+
+// ListRelatedResourcesForAuditFindingRequest indicates an expected call of ListRelatedResourcesForAuditFindingRequest
+func (mr *MockIoTAPIMockRecorder) ListRelatedResourcesForAuditFindingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRelatedResourcesForAuditFindingRequest", reflect.TypeOf((*MockIoTAPI)(nil).ListRelatedResourcesForAuditFindingRequest), arg0)
+}
+
+// ListRelatedResourcesForAuditFindingWithContext mocks base method
+func (m *MockIoTAPI) ListRelatedResourcesForAuditFindingWithContext(arg0 context.Context, arg1 *iot.ListRelatedResourcesForAuditFindingInput, arg2 ...request.Option) (*iot.ListRelatedResourcesForAuditFindingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRelatedResourcesForAuditFindingWithContext", varargs...)
+	ret0, _ := ret[0].(*iot.ListRelatedResourcesForAuditFindingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRelatedResourcesForAuditFindingWithContext indicates an expected call of ListRelatedResourcesForAuditFindingWithContext
+func (mr *MockIoTAPIMockRecorder) ListRelatedResourcesForAuditFindingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRelatedResourcesForAuditFindingWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListRelatedResourcesForAuditFindingWithContext), varargs...)
+}
+
 // ListRoleAliases mocks base method
 func (m *MockIoTAPI) ListRoleAliases(arg0 *iot.ListRoleAliasesInput) (*iot.ListRoleAliasesOutput, error) {
 	m.ctrl.T.Helper()
