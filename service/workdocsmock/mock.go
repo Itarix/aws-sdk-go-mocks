@@ -665,6 +665,56 @@ func (mr *MockWorkDocsAPIMockRecorder) DeleteDocumentRequest(arg0 interface{}) *
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteDocumentRequest), arg0)
 }
 
+// DeleteDocumentVersion mocks base method
+func (m *MockWorkDocsAPI) DeleteDocumentVersion(arg0 *workdocs.DeleteDocumentVersionInput) (*workdocs.DeleteDocumentVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDocumentVersion", arg0)
+	ret0, _ := ret[0].(*workdocs.DeleteDocumentVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDocumentVersion indicates an expected call of DeleteDocumentVersion
+func (mr *MockWorkDocsAPIMockRecorder) DeleteDocumentVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentVersion", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteDocumentVersion), arg0)
+}
+
+// DeleteDocumentVersionRequest mocks base method
+func (m *MockWorkDocsAPI) DeleteDocumentVersionRequest(arg0 *workdocs.DeleteDocumentVersionInput) (*request.Request, *workdocs.DeleteDocumentVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDocumentVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workdocs.DeleteDocumentVersionOutput)
+	return ret0, ret1
+}
+
+// DeleteDocumentVersionRequest indicates an expected call of DeleteDocumentVersionRequest
+func (mr *MockWorkDocsAPIMockRecorder) DeleteDocumentVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentVersionRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteDocumentVersionRequest), arg0)
+}
+
+// DeleteDocumentVersionWithContext mocks base method
+func (m *MockWorkDocsAPI) DeleteDocumentVersionWithContext(arg0 context.Context, arg1 *workdocs.DeleteDocumentVersionInput, arg2 ...request.Option) (*workdocs.DeleteDocumentVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDocumentVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*workdocs.DeleteDocumentVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDocumentVersionWithContext indicates an expected call of DeleteDocumentVersionWithContext
+func (mr *MockWorkDocsAPIMockRecorder) DeleteDocumentVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDocumentVersionWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DeleteDocumentVersionWithContext), varargs...)
+}
+
 // DeleteDocumentWithContext mocks base method
 func (m *MockWorkDocsAPI) DeleteDocumentWithContext(arg0 context.Context, arg1 *workdocs.DeleteDocumentInput, arg2 ...request.Option) (*workdocs.DeleteDocumentOutput, error) {
 	m.ctrl.T.Helper()
@@ -1982,6 +2032,56 @@ func (mr *MockWorkDocsAPIMockRecorder) RemoveResourcePermissionWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveResourcePermissionWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).RemoveResourcePermissionWithContext), varargs...)
+}
+
+// RestoreDocumentVersions mocks base method
+func (m *MockWorkDocsAPI) RestoreDocumentVersions(arg0 *workdocs.RestoreDocumentVersionsInput) (*workdocs.RestoreDocumentVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreDocumentVersions", arg0)
+	ret0, _ := ret[0].(*workdocs.RestoreDocumentVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreDocumentVersions indicates an expected call of RestoreDocumentVersions
+func (mr *MockWorkDocsAPIMockRecorder) RestoreDocumentVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreDocumentVersions", reflect.TypeOf((*MockWorkDocsAPI)(nil).RestoreDocumentVersions), arg0)
+}
+
+// RestoreDocumentVersionsRequest mocks base method
+func (m *MockWorkDocsAPI) RestoreDocumentVersionsRequest(arg0 *workdocs.RestoreDocumentVersionsInput) (*request.Request, *workdocs.RestoreDocumentVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreDocumentVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workdocs.RestoreDocumentVersionsOutput)
+	return ret0, ret1
+}
+
+// RestoreDocumentVersionsRequest indicates an expected call of RestoreDocumentVersionsRequest
+func (mr *MockWorkDocsAPIMockRecorder) RestoreDocumentVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreDocumentVersionsRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).RestoreDocumentVersionsRequest), arg0)
+}
+
+// RestoreDocumentVersionsWithContext mocks base method
+func (m *MockWorkDocsAPI) RestoreDocumentVersionsWithContext(arg0 context.Context, arg1 *workdocs.RestoreDocumentVersionsInput, arg2 ...request.Option) (*workdocs.RestoreDocumentVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RestoreDocumentVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*workdocs.RestoreDocumentVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreDocumentVersionsWithContext indicates an expected call of RestoreDocumentVersionsWithContext
+func (mr *MockWorkDocsAPIMockRecorder) RestoreDocumentVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreDocumentVersionsWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).RestoreDocumentVersionsWithContext), varargs...)
 }
 
 // UpdateDocument mocks base method
