@@ -2284,6 +2284,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) ModifyAccountWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyAccountWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyAccountWithContext), varargs...)
 }
 
+// ModifyCertificateBasedAuthProperties mocks base method
+func (m *MockWorkSpacesAPI) ModifyCertificateBasedAuthProperties(arg0 *workspaces.ModifyCertificateBasedAuthPropertiesInput) (*workspaces.ModifyCertificateBasedAuthPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyCertificateBasedAuthProperties", arg0)
+	ret0, _ := ret[0].(*workspaces.ModifyCertificateBasedAuthPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyCertificateBasedAuthProperties indicates an expected call of ModifyCertificateBasedAuthProperties
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyCertificateBasedAuthProperties(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCertificateBasedAuthProperties", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyCertificateBasedAuthProperties), arg0)
+}
+
+// ModifyCertificateBasedAuthPropertiesRequest mocks base method
+func (m *MockWorkSpacesAPI) ModifyCertificateBasedAuthPropertiesRequest(arg0 *workspaces.ModifyCertificateBasedAuthPropertiesInput) (*request.Request, *workspaces.ModifyCertificateBasedAuthPropertiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyCertificateBasedAuthPropertiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.ModifyCertificateBasedAuthPropertiesOutput)
+	return ret0, ret1
+}
+
+// ModifyCertificateBasedAuthPropertiesRequest indicates an expected call of ModifyCertificateBasedAuthPropertiesRequest
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyCertificateBasedAuthPropertiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCertificateBasedAuthPropertiesRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyCertificateBasedAuthPropertiesRequest), arg0)
+}
+
+// ModifyCertificateBasedAuthPropertiesWithContext mocks base method
+func (m *MockWorkSpacesAPI) ModifyCertificateBasedAuthPropertiesWithContext(arg0 context.Context, arg1 *workspaces.ModifyCertificateBasedAuthPropertiesInput, arg2 ...request.Option) (*workspaces.ModifyCertificateBasedAuthPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyCertificateBasedAuthPropertiesWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.ModifyCertificateBasedAuthPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyCertificateBasedAuthPropertiesWithContext indicates an expected call of ModifyCertificateBasedAuthPropertiesWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyCertificateBasedAuthPropertiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCertificateBasedAuthPropertiesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyCertificateBasedAuthPropertiesWithContext), varargs...)
+}
+
 // ModifyClientProperties mocks base method
 func (m *MockWorkSpacesAPI) ModifyClientProperties(arg0 *workspaces.ModifyClientPropertiesInput) (*workspaces.ModifyClientPropertiesOutput, error) {
 	m.ctrl.T.Helper()
