@@ -485,6 +485,89 @@ func (mr *MockIoTTwinMakerAPIMockRecorder) DeleteWorkspaceWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkspaceWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).DeleteWorkspaceWithContext), varargs...)
 }
 
+// ExecuteQuery mocks base method
+func (m *MockIoTTwinMakerAPI) ExecuteQuery(arg0 *iottwinmaker.ExecuteQueryInput) (*iottwinmaker.ExecuteQueryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExecuteQuery", arg0)
+	ret0, _ := ret[0].(*iottwinmaker.ExecuteQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExecuteQuery indicates an expected call of ExecuteQuery
+func (mr *MockIoTTwinMakerAPIMockRecorder) ExecuteQuery(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteQuery", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ExecuteQuery), arg0)
+}
+
+// ExecuteQueryPages mocks base method
+func (m *MockIoTTwinMakerAPI) ExecuteQueryPages(arg0 *iottwinmaker.ExecuteQueryInput, arg1 func(*iottwinmaker.ExecuteQueryOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExecuteQueryPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ExecuteQueryPages indicates an expected call of ExecuteQueryPages
+func (mr *MockIoTTwinMakerAPIMockRecorder) ExecuteQueryPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteQueryPages", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ExecuteQueryPages), arg0, arg1)
+}
+
+// ExecuteQueryPagesWithContext mocks base method
+func (m *MockIoTTwinMakerAPI) ExecuteQueryPagesWithContext(arg0 context.Context, arg1 *iottwinmaker.ExecuteQueryInput, arg2 func(*iottwinmaker.ExecuteQueryOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExecuteQueryPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ExecuteQueryPagesWithContext indicates an expected call of ExecuteQueryPagesWithContext
+func (mr *MockIoTTwinMakerAPIMockRecorder) ExecuteQueryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteQueryPagesWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ExecuteQueryPagesWithContext), varargs...)
+}
+
+// ExecuteQueryRequest mocks base method
+func (m *MockIoTTwinMakerAPI) ExecuteQueryRequest(arg0 *iottwinmaker.ExecuteQueryInput) (*request.Request, *iottwinmaker.ExecuteQueryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExecuteQueryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iottwinmaker.ExecuteQueryOutput)
+	return ret0, ret1
+}
+
+// ExecuteQueryRequest indicates an expected call of ExecuteQueryRequest
+func (mr *MockIoTTwinMakerAPIMockRecorder) ExecuteQueryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteQueryRequest", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ExecuteQueryRequest), arg0)
+}
+
+// ExecuteQueryWithContext mocks base method
+func (m *MockIoTTwinMakerAPI) ExecuteQueryWithContext(arg0 context.Context, arg1 *iottwinmaker.ExecuteQueryInput, arg2 ...request.Option) (*iottwinmaker.ExecuteQueryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExecuteQueryWithContext", varargs...)
+	ret0, _ := ret[0].(*iottwinmaker.ExecuteQueryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExecuteQueryWithContext indicates an expected call of ExecuteQueryWithContext
+func (mr *MockIoTTwinMakerAPIMockRecorder) ExecuteQueryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExecuteQueryWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ExecuteQueryWithContext), varargs...)
+}
+
 // GetComponentType mocks base method
 func (m *MockIoTTwinMakerAPI) GetComponentType(arg0 *iottwinmaker.GetComponentTypeInput) (*iottwinmaker.GetComponentTypeOutput, error) {
 	m.ctrl.T.Helper()
@@ -585,6 +668,56 @@ func (mr *MockIoTTwinMakerAPIMockRecorder) GetEntityWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEntityWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).GetEntityWithContext), varargs...)
 }
 
+// GetPricingPlan mocks base method
+func (m *MockIoTTwinMakerAPI) GetPricingPlan(arg0 *iottwinmaker.GetPricingPlanInput) (*iottwinmaker.GetPricingPlanOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPricingPlan", arg0)
+	ret0, _ := ret[0].(*iottwinmaker.GetPricingPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPricingPlan indicates an expected call of GetPricingPlan
+func (mr *MockIoTTwinMakerAPIMockRecorder) GetPricingPlan(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPricingPlan", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).GetPricingPlan), arg0)
+}
+
+// GetPricingPlanRequest mocks base method
+func (m *MockIoTTwinMakerAPI) GetPricingPlanRequest(arg0 *iottwinmaker.GetPricingPlanInput) (*request.Request, *iottwinmaker.GetPricingPlanOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPricingPlanRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iottwinmaker.GetPricingPlanOutput)
+	return ret0, ret1
+}
+
+// GetPricingPlanRequest indicates an expected call of GetPricingPlanRequest
+func (mr *MockIoTTwinMakerAPIMockRecorder) GetPricingPlanRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPricingPlanRequest", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).GetPricingPlanRequest), arg0)
+}
+
+// GetPricingPlanWithContext mocks base method
+func (m *MockIoTTwinMakerAPI) GetPricingPlanWithContext(arg0 context.Context, arg1 *iottwinmaker.GetPricingPlanInput, arg2 ...request.Option) (*iottwinmaker.GetPricingPlanOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPricingPlanWithContext", varargs...)
+	ret0, _ := ret[0].(*iottwinmaker.GetPricingPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPricingPlanWithContext indicates an expected call of GetPricingPlanWithContext
+func (mr *MockIoTTwinMakerAPIMockRecorder) GetPricingPlanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPricingPlanWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).GetPricingPlanWithContext), varargs...)
+}
+
 // GetPropertyValue mocks base method
 func (m *MockIoTTwinMakerAPI) GetPropertyValue(arg0 *iottwinmaker.GetPropertyValueInput) (*iottwinmaker.GetPropertyValueOutput, error) {
 	m.ctrl.T.Helper()
@@ -681,6 +814,39 @@ func (mr *MockIoTTwinMakerAPIMockRecorder) GetPropertyValueHistoryWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPropertyValueHistoryWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).GetPropertyValueHistoryWithContext), varargs...)
+}
+
+// GetPropertyValuePages mocks base method
+func (m *MockIoTTwinMakerAPI) GetPropertyValuePages(arg0 *iottwinmaker.GetPropertyValueInput, arg1 func(*iottwinmaker.GetPropertyValueOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPropertyValuePages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetPropertyValuePages indicates an expected call of GetPropertyValuePages
+func (mr *MockIoTTwinMakerAPIMockRecorder) GetPropertyValuePages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPropertyValuePages", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).GetPropertyValuePages), arg0, arg1)
+}
+
+// GetPropertyValuePagesWithContext mocks base method
+func (m *MockIoTTwinMakerAPI) GetPropertyValuePagesWithContext(arg0 context.Context, arg1 *iottwinmaker.GetPropertyValueInput, arg2 func(*iottwinmaker.GetPropertyValueOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPropertyValuePagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetPropertyValuePagesWithContext indicates an expected call of GetPropertyValuePagesWithContext
+func (mr *MockIoTTwinMakerAPIMockRecorder) GetPropertyValuePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPropertyValuePagesWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).GetPropertyValuePagesWithContext), varargs...)
 }
 
 // GetPropertyValueRequest mocks base method
@@ -1398,6 +1564,56 @@ func (mr *MockIoTTwinMakerAPIMockRecorder) UpdateEntityWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEntityWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).UpdateEntityWithContext), varargs...)
+}
+
+// UpdatePricingPlan mocks base method
+func (m *MockIoTTwinMakerAPI) UpdatePricingPlan(arg0 *iottwinmaker.UpdatePricingPlanInput) (*iottwinmaker.UpdatePricingPlanOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePricingPlan", arg0)
+	ret0, _ := ret[0].(*iottwinmaker.UpdatePricingPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePricingPlan indicates an expected call of UpdatePricingPlan
+func (mr *MockIoTTwinMakerAPIMockRecorder) UpdatePricingPlan(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePricingPlan", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).UpdatePricingPlan), arg0)
+}
+
+// UpdatePricingPlanRequest mocks base method
+func (m *MockIoTTwinMakerAPI) UpdatePricingPlanRequest(arg0 *iottwinmaker.UpdatePricingPlanInput) (*request.Request, *iottwinmaker.UpdatePricingPlanOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePricingPlanRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iottwinmaker.UpdatePricingPlanOutput)
+	return ret0, ret1
+}
+
+// UpdatePricingPlanRequest indicates an expected call of UpdatePricingPlanRequest
+func (mr *MockIoTTwinMakerAPIMockRecorder) UpdatePricingPlanRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePricingPlanRequest", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).UpdatePricingPlanRequest), arg0)
+}
+
+// UpdatePricingPlanWithContext mocks base method
+func (m *MockIoTTwinMakerAPI) UpdatePricingPlanWithContext(arg0 context.Context, arg1 *iottwinmaker.UpdatePricingPlanInput, arg2 ...request.Option) (*iottwinmaker.UpdatePricingPlanOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdatePricingPlanWithContext", varargs...)
+	ret0, _ := ret[0].(*iottwinmaker.UpdatePricingPlanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePricingPlanWithContext indicates an expected call of UpdatePricingPlanWithContext
+func (mr *MockIoTTwinMakerAPIMockRecorder) UpdatePricingPlanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePricingPlanWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).UpdatePricingPlanWithContext), varargs...)
 }
 
 // UpdateScene mocks base method

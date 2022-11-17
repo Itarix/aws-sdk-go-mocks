@@ -6424,6 +6424,56 @@ func (mr *MockConnectAPIMockRecorder) ListUsersWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListUsersWithContext), varargs...)
 }
 
+// MonitorContact mocks base method
+func (m *MockConnectAPI) MonitorContact(arg0 *connect.MonitorContactInput) (*connect.MonitorContactOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "MonitorContact", arg0)
+	ret0, _ := ret[0].(*connect.MonitorContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// MonitorContact indicates an expected call of MonitorContact
+func (mr *MockConnectAPIMockRecorder) MonitorContact(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MonitorContact", reflect.TypeOf((*MockConnectAPI)(nil).MonitorContact), arg0)
+}
+
+// MonitorContactRequest mocks base method
+func (m *MockConnectAPI) MonitorContactRequest(arg0 *connect.MonitorContactInput) (*request.Request, *connect.MonitorContactOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "MonitorContactRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.MonitorContactOutput)
+	return ret0, ret1
+}
+
+// MonitorContactRequest indicates an expected call of MonitorContactRequest
+func (mr *MockConnectAPIMockRecorder) MonitorContactRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MonitorContactRequest", reflect.TypeOf((*MockConnectAPI)(nil).MonitorContactRequest), arg0)
+}
+
+// MonitorContactWithContext mocks base method
+func (m *MockConnectAPI) MonitorContactWithContext(arg0 context.Context, arg1 *connect.MonitorContactInput, arg2 ...request.Option) (*connect.MonitorContactOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "MonitorContactWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.MonitorContactOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// MonitorContactWithContext indicates an expected call of MonitorContactWithContext
+func (mr *MockConnectAPIMockRecorder) MonitorContactWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MonitorContactWithContext", reflect.TypeOf((*MockConnectAPI)(nil).MonitorContactWithContext), varargs...)
+}
+
 // PutUserStatus mocks base method
 func (m *MockConnectAPI) PutUserStatus(arg0 *connect.PutUserStatusInput) (*connect.PutUserStatusOutput, error) {
 	m.ctrl.T.Helper()

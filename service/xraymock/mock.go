@@ -268,6 +268,56 @@ func (mr *MockXRayAPIMockRecorder) DeleteGroupWithContext(arg0, arg1 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGroupWithContext", reflect.TypeOf((*MockXRayAPI)(nil).DeleteGroupWithContext), varargs...)
 }
 
+// DeleteResourcePolicy mocks base method
+func (m *MockXRayAPI) DeleteResourcePolicy(arg0 *xray.DeleteResourcePolicyInput) (*xray.DeleteResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourcePolicy", arg0)
+	ret0, _ := ret[0].(*xray.DeleteResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicy indicates an expected call of DeleteResourcePolicy
+func (mr *MockXRayAPIMockRecorder) DeleteResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicy", reflect.TypeOf((*MockXRayAPI)(nil).DeleteResourcePolicy), arg0)
+}
+
+// DeleteResourcePolicyRequest mocks base method
+func (m *MockXRayAPI) DeleteResourcePolicyRequest(arg0 *xray.DeleteResourcePolicyInput) (*request.Request, *xray.DeleteResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*xray.DeleteResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicyRequest indicates an expected call of DeleteResourcePolicyRequest
+func (mr *MockXRayAPIMockRecorder) DeleteResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyRequest", reflect.TypeOf((*MockXRayAPI)(nil).DeleteResourcePolicyRequest), arg0)
+}
+
+// DeleteResourcePolicyWithContext mocks base method
+func (m *MockXRayAPI) DeleteResourcePolicyWithContext(arg0 context.Context, arg1 *xray.DeleteResourcePolicyInput, arg2 ...request.Option) (*xray.DeleteResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*xray.DeleteResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicyWithContext indicates an expected call of DeleteResourcePolicyWithContext
+func (mr *MockXRayAPIMockRecorder) DeleteResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyWithContext", reflect.TypeOf((*MockXRayAPI)(nil).DeleteResourcePolicyWithContext), varargs...)
+}
+
 // DeleteSamplingRule mocks base method
 func (m *MockXRayAPI) DeleteSamplingRule(arg0 *xray.DeleteSamplingRuleInput) (*xray.DeleteSamplingRuleOutput, error) {
 	m.ctrl.T.Helper()
@@ -1315,6 +1365,89 @@ func (mr *MockXRayAPIMockRecorder) GetTraceSummariesWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTraceSummariesWithContext", reflect.TypeOf((*MockXRayAPI)(nil).GetTraceSummariesWithContext), varargs...)
 }
 
+// ListResourcePolicies mocks base method
+func (m *MockXRayAPI) ListResourcePolicies(arg0 *xray.ListResourcePoliciesInput) (*xray.ListResourcePoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourcePolicies", arg0)
+	ret0, _ := ret[0].(*xray.ListResourcePoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourcePolicies indicates an expected call of ListResourcePolicies
+func (mr *MockXRayAPIMockRecorder) ListResourcePolicies(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcePolicies", reflect.TypeOf((*MockXRayAPI)(nil).ListResourcePolicies), arg0)
+}
+
+// ListResourcePoliciesPages mocks base method
+func (m *MockXRayAPI) ListResourcePoliciesPages(arg0 *xray.ListResourcePoliciesInput, arg1 func(*xray.ListResourcePoliciesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourcePoliciesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResourcePoliciesPages indicates an expected call of ListResourcePoliciesPages
+func (mr *MockXRayAPIMockRecorder) ListResourcePoliciesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcePoliciesPages", reflect.TypeOf((*MockXRayAPI)(nil).ListResourcePoliciesPages), arg0, arg1)
+}
+
+// ListResourcePoliciesPagesWithContext mocks base method
+func (m *MockXRayAPI) ListResourcePoliciesPagesWithContext(arg0 context.Context, arg1 *xray.ListResourcePoliciesInput, arg2 func(*xray.ListResourcePoliciesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResourcePoliciesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResourcePoliciesPagesWithContext indicates an expected call of ListResourcePoliciesPagesWithContext
+func (mr *MockXRayAPIMockRecorder) ListResourcePoliciesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcePoliciesPagesWithContext", reflect.TypeOf((*MockXRayAPI)(nil).ListResourcePoliciesPagesWithContext), varargs...)
+}
+
+// ListResourcePoliciesRequest mocks base method
+func (m *MockXRayAPI) ListResourcePoliciesRequest(arg0 *xray.ListResourcePoliciesInput) (*request.Request, *xray.ListResourcePoliciesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourcePoliciesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*xray.ListResourcePoliciesOutput)
+	return ret0, ret1
+}
+
+// ListResourcePoliciesRequest indicates an expected call of ListResourcePoliciesRequest
+func (mr *MockXRayAPIMockRecorder) ListResourcePoliciesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcePoliciesRequest", reflect.TypeOf((*MockXRayAPI)(nil).ListResourcePoliciesRequest), arg0)
+}
+
+// ListResourcePoliciesWithContext mocks base method
+func (m *MockXRayAPI) ListResourcePoliciesWithContext(arg0 context.Context, arg1 *xray.ListResourcePoliciesInput, arg2 ...request.Option) (*xray.ListResourcePoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResourcePoliciesWithContext", varargs...)
+	ret0, _ := ret[0].(*xray.ListResourcePoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourcePoliciesWithContext indicates an expected call of ListResourcePoliciesWithContext
+func (mr *MockXRayAPIMockRecorder) ListResourcePoliciesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourcePoliciesWithContext", reflect.TypeOf((*MockXRayAPI)(nil).ListResourcePoliciesWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockXRayAPI) ListTagsForResource(arg0 *xray.ListTagsForResourceInput) (*xray.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1328,6 +1461,39 @@ func (m *MockXRayAPI) ListTagsForResource(arg0 *xray.ListTagsForResourceInput) (
 func (mr *MockXRayAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockXRayAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourcePages mocks base method
+func (m *MockXRayAPI) ListTagsForResourcePages(arg0 *xray.ListTagsForResourceInput, arg1 func(*xray.ListTagsForResourceOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourcePages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTagsForResourcePages indicates an expected call of ListTagsForResourcePages
+func (mr *MockXRayAPIMockRecorder) ListTagsForResourcePages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePages", reflect.TypeOf((*MockXRayAPI)(nil).ListTagsForResourcePages), arg0, arg1)
+}
+
+// ListTagsForResourcePagesWithContext mocks base method
+func (m *MockXRayAPI) ListTagsForResourcePagesWithContext(arg0 context.Context, arg1 *xray.ListTagsForResourceInput, arg2 func(*xray.ListTagsForResourceOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourcePagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTagsForResourcePagesWithContext indicates an expected call of ListTagsForResourcePagesWithContext
+func (mr *MockXRayAPIMockRecorder) ListTagsForResourcePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourcePagesWithContext", reflect.TypeOf((*MockXRayAPI)(nil).ListTagsForResourcePagesWithContext), varargs...)
 }
 
 // ListTagsForResourceRequest mocks base method
@@ -1413,6 +1579,56 @@ func (mr *MockXRayAPIMockRecorder) PutEncryptionConfigWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEncryptionConfigWithContext", reflect.TypeOf((*MockXRayAPI)(nil).PutEncryptionConfigWithContext), varargs...)
+}
+
+// PutResourcePolicy mocks base method
+func (m *MockXRayAPI) PutResourcePolicy(arg0 *xray.PutResourcePolicyInput) (*xray.PutResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourcePolicy", arg0)
+	ret0, _ := ret[0].(*xray.PutResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourcePolicy indicates an expected call of PutResourcePolicy
+func (mr *MockXRayAPIMockRecorder) PutResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicy", reflect.TypeOf((*MockXRayAPI)(nil).PutResourcePolicy), arg0)
+}
+
+// PutResourcePolicyRequest mocks base method
+func (m *MockXRayAPI) PutResourcePolicyRequest(arg0 *xray.PutResourcePolicyInput) (*request.Request, *xray.PutResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*xray.PutResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// PutResourcePolicyRequest indicates an expected call of PutResourcePolicyRequest
+func (mr *MockXRayAPIMockRecorder) PutResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyRequest", reflect.TypeOf((*MockXRayAPI)(nil).PutResourcePolicyRequest), arg0)
+}
+
+// PutResourcePolicyWithContext mocks base method
+func (m *MockXRayAPI) PutResourcePolicyWithContext(arg0 context.Context, arg1 *xray.PutResourcePolicyInput, arg2 ...request.Option) (*xray.PutResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*xray.PutResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourcePolicyWithContext indicates an expected call of PutResourcePolicyWithContext
+func (mr *MockXRayAPIMockRecorder) PutResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyWithContext", reflect.TypeOf((*MockXRayAPI)(nil).PutResourcePolicyWithContext), varargs...)
 }
 
 // PutTelemetryRecords mocks base method
