@@ -585,6 +585,56 @@ func (mr *MockAppRegistryAPIMockRecorder) GetAttributeGroupWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAttributeGroupWithContext", reflect.TypeOf((*MockAppRegistryAPI)(nil).GetAttributeGroupWithContext), varargs...)
 }
 
+// GetConfiguration mocks base method
+func (m *MockAppRegistryAPI) GetConfiguration(arg0 *appregistry.GetConfigurationInput) (*appregistry.GetConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConfiguration", arg0)
+	ret0, _ := ret[0].(*appregistry.GetConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConfiguration indicates an expected call of GetConfiguration
+func (mr *MockAppRegistryAPIMockRecorder) GetConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfiguration", reflect.TypeOf((*MockAppRegistryAPI)(nil).GetConfiguration), arg0)
+}
+
+// GetConfigurationRequest mocks base method
+func (m *MockAppRegistryAPI) GetConfigurationRequest(arg0 *appregistry.GetConfigurationInput) (*request.Request, *appregistry.GetConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appregistry.GetConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetConfigurationRequest indicates an expected call of GetConfigurationRequest
+func (mr *MockAppRegistryAPIMockRecorder) GetConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfigurationRequest", reflect.TypeOf((*MockAppRegistryAPI)(nil).GetConfigurationRequest), arg0)
+}
+
+// GetConfigurationWithContext mocks base method
+func (m *MockAppRegistryAPI) GetConfigurationWithContext(arg0 context.Context, arg1 *appregistry.GetConfigurationInput, arg2 ...request.Option) (*appregistry.GetConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*appregistry.GetConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConfigurationWithContext indicates an expected call of GetConfigurationWithContext
+func (mr *MockAppRegistryAPIMockRecorder) GetConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfigurationWithContext", reflect.TypeOf((*MockAppRegistryAPI)(nil).GetConfigurationWithContext), varargs...)
+}
+
 // ListApplications mocks base method
 func (m *MockAppRegistryAPI) ListApplications(arg0 *appregistry.ListApplicationsInput) (*appregistry.ListApplicationsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1048,6 +1098,56 @@ func (mr *MockAppRegistryAPIMockRecorder) ListTagsForResourceWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockAppRegistryAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// PutConfiguration mocks base method
+func (m *MockAppRegistryAPI) PutConfiguration(arg0 *appregistry.PutConfigurationInput) (*appregistry.PutConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutConfiguration", arg0)
+	ret0, _ := ret[0].(*appregistry.PutConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutConfiguration indicates an expected call of PutConfiguration
+func (mr *MockAppRegistryAPIMockRecorder) PutConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConfiguration", reflect.TypeOf((*MockAppRegistryAPI)(nil).PutConfiguration), arg0)
+}
+
+// PutConfigurationRequest mocks base method
+func (m *MockAppRegistryAPI) PutConfigurationRequest(arg0 *appregistry.PutConfigurationInput) (*request.Request, *appregistry.PutConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appregistry.PutConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutConfigurationRequest indicates an expected call of PutConfigurationRequest
+func (mr *MockAppRegistryAPIMockRecorder) PutConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConfigurationRequest", reflect.TypeOf((*MockAppRegistryAPI)(nil).PutConfigurationRequest), arg0)
+}
+
+// PutConfigurationWithContext mocks base method
+func (m *MockAppRegistryAPI) PutConfigurationWithContext(arg0 context.Context, arg1 *appregistry.PutConfigurationInput, arg2 ...request.Option) (*appregistry.PutConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*appregistry.PutConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutConfigurationWithContext indicates an expected call of PutConfigurationWithContext
+func (mr *MockAppRegistryAPIMockRecorder) PutConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutConfigurationWithContext", reflect.TypeOf((*MockAppRegistryAPI)(nil).PutConfigurationWithContext), varargs...)
 }
 
 // SyncResource mocks base method

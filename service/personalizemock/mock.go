@@ -485,6 +485,56 @@ func (mr *MockPersonalizeAPIMockRecorder) CreateFilterWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFilterWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateFilterWithContext), varargs...)
 }
 
+// CreateMetricAttribution mocks base method
+func (m *MockPersonalizeAPI) CreateMetricAttribution(arg0 *personalize.CreateMetricAttributionInput) (*personalize.CreateMetricAttributionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMetricAttribution", arg0)
+	ret0, _ := ret[0].(*personalize.CreateMetricAttributionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMetricAttribution indicates an expected call of CreateMetricAttribution
+func (mr *MockPersonalizeAPIMockRecorder) CreateMetricAttribution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMetricAttribution", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateMetricAttribution), arg0)
+}
+
+// CreateMetricAttributionRequest mocks base method
+func (m *MockPersonalizeAPI) CreateMetricAttributionRequest(arg0 *personalize.CreateMetricAttributionInput) (*request.Request, *personalize.CreateMetricAttributionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMetricAttributionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.CreateMetricAttributionOutput)
+	return ret0, ret1
+}
+
+// CreateMetricAttributionRequest indicates an expected call of CreateMetricAttributionRequest
+func (mr *MockPersonalizeAPIMockRecorder) CreateMetricAttributionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMetricAttributionRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateMetricAttributionRequest), arg0)
+}
+
+// CreateMetricAttributionWithContext mocks base method
+func (m *MockPersonalizeAPI) CreateMetricAttributionWithContext(arg0 context.Context, arg1 *personalize.CreateMetricAttributionInput, arg2 ...request.Option) (*personalize.CreateMetricAttributionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateMetricAttributionWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.CreateMetricAttributionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMetricAttributionWithContext indicates an expected call of CreateMetricAttributionWithContext
+func (mr *MockPersonalizeAPIMockRecorder) CreateMetricAttributionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMetricAttributionWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).CreateMetricAttributionWithContext), varargs...)
+}
+
 // CreateRecommender mocks base method
 func (m *MockPersonalizeAPI) CreateRecommender(arg0 *personalize.CreateRecommenderInput) (*personalize.CreateRecommenderOutput, error) {
 	m.ctrl.T.Helper()
@@ -933,6 +983,56 @@ func (mr *MockPersonalizeAPIMockRecorder) DeleteFilterWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFilterWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).DeleteFilterWithContext), varargs...)
+}
+
+// DeleteMetricAttribution mocks base method
+func (m *MockPersonalizeAPI) DeleteMetricAttribution(arg0 *personalize.DeleteMetricAttributionInput) (*personalize.DeleteMetricAttributionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMetricAttribution", arg0)
+	ret0, _ := ret[0].(*personalize.DeleteMetricAttributionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMetricAttribution indicates an expected call of DeleteMetricAttribution
+func (mr *MockPersonalizeAPIMockRecorder) DeleteMetricAttribution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMetricAttribution", reflect.TypeOf((*MockPersonalizeAPI)(nil).DeleteMetricAttribution), arg0)
+}
+
+// DeleteMetricAttributionRequest mocks base method
+func (m *MockPersonalizeAPI) DeleteMetricAttributionRequest(arg0 *personalize.DeleteMetricAttributionInput) (*request.Request, *personalize.DeleteMetricAttributionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMetricAttributionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.DeleteMetricAttributionOutput)
+	return ret0, ret1
+}
+
+// DeleteMetricAttributionRequest indicates an expected call of DeleteMetricAttributionRequest
+func (mr *MockPersonalizeAPIMockRecorder) DeleteMetricAttributionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMetricAttributionRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).DeleteMetricAttributionRequest), arg0)
+}
+
+// DeleteMetricAttributionWithContext mocks base method
+func (m *MockPersonalizeAPI) DeleteMetricAttributionWithContext(arg0 context.Context, arg1 *personalize.DeleteMetricAttributionInput, arg2 ...request.Option) (*personalize.DeleteMetricAttributionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteMetricAttributionWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.DeleteMetricAttributionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMetricAttributionWithContext indicates an expected call of DeleteMetricAttributionWithContext
+func (mr *MockPersonalizeAPIMockRecorder) DeleteMetricAttributionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMetricAttributionWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).DeleteMetricAttributionWithContext), varargs...)
 }
 
 // DeleteRecommender mocks base method
@@ -1633,6 +1733,56 @@ func (mr *MockPersonalizeAPIMockRecorder) DescribeFilterWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFilterWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeFilterWithContext), varargs...)
+}
+
+// DescribeMetricAttribution mocks base method
+func (m *MockPersonalizeAPI) DescribeMetricAttribution(arg0 *personalize.DescribeMetricAttributionInput) (*personalize.DescribeMetricAttributionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMetricAttribution", arg0)
+	ret0, _ := ret[0].(*personalize.DescribeMetricAttributionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMetricAttribution indicates an expected call of DescribeMetricAttribution
+func (mr *MockPersonalizeAPIMockRecorder) DescribeMetricAttribution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMetricAttribution", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeMetricAttribution), arg0)
+}
+
+// DescribeMetricAttributionRequest mocks base method
+func (m *MockPersonalizeAPI) DescribeMetricAttributionRequest(arg0 *personalize.DescribeMetricAttributionInput) (*request.Request, *personalize.DescribeMetricAttributionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMetricAttributionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.DescribeMetricAttributionOutput)
+	return ret0, ret1
+}
+
+// DescribeMetricAttributionRequest indicates an expected call of DescribeMetricAttributionRequest
+func (mr *MockPersonalizeAPIMockRecorder) DescribeMetricAttributionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMetricAttributionRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeMetricAttributionRequest), arg0)
+}
+
+// DescribeMetricAttributionWithContext mocks base method
+func (m *MockPersonalizeAPI) DescribeMetricAttributionWithContext(arg0 context.Context, arg1 *personalize.DescribeMetricAttributionInput, arg2 ...request.Option) (*personalize.DescribeMetricAttributionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMetricAttributionWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.DescribeMetricAttributionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMetricAttributionWithContext indicates an expected call of DescribeMetricAttributionWithContext
+func (mr *MockPersonalizeAPIMockRecorder) DescribeMetricAttributionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMetricAttributionWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).DescribeMetricAttributionWithContext), varargs...)
 }
 
 // DescribeRecipe mocks base method
@@ -2682,6 +2832,172 @@ func (mr *MockPersonalizeAPIMockRecorder) ListFiltersWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFiltersWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListFiltersWithContext), varargs...)
 }
 
+// ListMetricAttributionMetrics mocks base method
+func (m *MockPersonalizeAPI) ListMetricAttributionMetrics(arg0 *personalize.ListMetricAttributionMetricsInput) (*personalize.ListMetricAttributionMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMetricAttributionMetrics", arg0)
+	ret0, _ := ret[0].(*personalize.ListMetricAttributionMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMetricAttributionMetrics indicates an expected call of ListMetricAttributionMetrics
+func (mr *MockPersonalizeAPIMockRecorder) ListMetricAttributionMetrics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricAttributionMetrics", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListMetricAttributionMetrics), arg0)
+}
+
+// ListMetricAttributionMetricsPages mocks base method
+func (m *MockPersonalizeAPI) ListMetricAttributionMetricsPages(arg0 *personalize.ListMetricAttributionMetricsInput, arg1 func(*personalize.ListMetricAttributionMetricsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMetricAttributionMetricsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMetricAttributionMetricsPages indicates an expected call of ListMetricAttributionMetricsPages
+func (mr *MockPersonalizeAPIMockRecorder) ListMetricAttributionMetricsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricAttributionMetricsPages", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListMetricAttributionMetricsPages), arg0, arg1)
+}
+
+// ListMetricAttributionMetricsPagesWithContext mocks base method
+func (m *MockPersonalizeAPI) ListMetricAttributionMetricsPagesWithContext(arg0 context.Context, arg1 *personalize.ListMetricAttributionMetricsInput, arg2 func(*personalize.ListMetricAttributionMetricsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMetricAttributionMetricsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMetricAttributionMetricsPagesWithContext indicates an expected call of ListMetricAttributionMetricsPagesWithContext
+func (mr *MockPersonalizeAPIMockRecorder) ListMetricAttributionMetricsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricAttributionMetricsPagesWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListMetricAttributionMetricsPagesWithContext), varargs...)
+}
+
+// ListMetricAttributionMetricsRequest mocks base method
+func (m *MockPersonalizeAPI) ListMetricAttributionMetricsRequest(arg0 *personalize.ListMetricAttributionMetricsInput) (*request.Request, *personalize.ListMetricAttributionMetricsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMetricAttributionMetricsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.ListMetricAttributionMetricsOutput)
+	return ret0, ret1
+}
+
+// ListMetricAttributionMetricsRequest indicates an expected call of ListMetricAttributionMetricsRequest
+func (mr *MockPersonalizeAPIMockRecorder) ListMetricAttributionMetricsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricAttributionMetricsRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListMetricAttributionMetricsRequest), arg0)
+}
+
+// ListMetricAttributionMetricsWithContext mocks base method
+func (m *MockPersonalizeAPI) ListMetricAttributionMetricsWithContext(arg0 context.Context, arg1 *personalize.ListMetricAttributionMetricsInput, arg2 ...request.Option) (*personalize.ListMetricAttributionMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMetricAttributionMetricsWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.ListMetricAttributionMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMetricAttributionMetricsWithContext indicates an expected call of ListMetricAttributionMetricsWithContext
+func (mr *MockPersonalizeAPIMockRecorder) ListMetricAttributionMetricsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricAttributionMetricsWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListMetricAttributionMetricsWithContext), varargs...)
+}
+
+// ListMetricAttributions mocks base method
+func (m *MockPersonalizeAPI) ListMetricAttributions(arg0 *personalize.ListMetricAttributionsInput) (*personalize.ListMetricAttributionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMetricAttributions", arg0)
+	ret0, _ := ret[0].(*personalize.ListMetricAttributionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMetricAttributions indicates an expected call of ListMetricAttributions
+func (mr *MockPersonalizeAPIMockRecorder) ListMetricAttributions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricAttributions", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListMetricAttributions), arg0)
+}
+
+// ListMetricAttributionsPages mocks base method
+func (m *MockPersonalizeAPI) ListMetricAttributionsPages(arg0 *personalize.ListMetricAttributionsInput, arg1 func(*personalize.ListMetricAttributionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMetricAttributionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMetricAttributionsPages indicates an expected call of ListMetricAttributionsPages
+func (mr *MockPersonalizeAPIMockRecorder) ListMetricAttributionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricAttributionsPages", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListMetricAttributionsPages), arg0, arg1)
+}
+
+// ListMetricAttributionsPagesWithContext mocks base method
+func (m *MockPersonalizeAPI) ListMetricAttributionsPagesWithContext(arg0 context.Context, arg1 *personalize.ListMetricAttributionsInput, arg2 func(*personalize.ListMetricAttributionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMetricAttributionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMetricAttributionsPagesWithContext indicates an expected call of ListMetricAttributionsPagesWithContext
+func (mr *MockPersonalizeAPIMockRecorder) ListMetricAttributionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricAttributionsPagesWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListMetricAttributionsPagesWithContext), varargs...)
+}
+
+// ListMetricAttributionsRequest mocks base method
+func (m *MockPersonalizeAPI) ListMetricAttributionsRequest(arg0 *personalize.ListMetricAttributionsInput) (*request.Request, *personalize.ListMetricAttributionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMetricAttributionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.ListMetricAttributionsOutput)
+	return ret0, ret1
+}
+
+// ListMetricAttributionsRequest indicates an expected call of ListMetricAttributionsRequest
+func (mr *MockPersonalizeAPIMockRecorder) ListMetricAttributionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricAttributionsRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListMetricAttributionsRequest), arg0)
+}
+
+// ListMetricAttributionsWithContext mocks base method
+func (m *MockPersonalizeAPI) ListMetricAttributionsWithContext(arg0 context.Context, arg1 *personalize.ListMetricAttributionsInput, arg2 ...request.Option) (*personalize.ListMetricAttributionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMetricAttributionsWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.ListMetricAttributionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMetricAttributionsWithContext indicates an expected call of ListMetricAttributionsWithContext
+func (mr *MockPersonalizeAPIMockRecorder) ListMetricAttributionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMetricAttributionsWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).ListMetricAttributionsWithContext), varargs...)
+}
+
 // ListRecipes mocks base method
 func (m *MockPersonalizeAPI) ListRecipes(arg0 *personalize.ListRecipesInput) (*personalize.ListRecipesOutput, error) {
 	m.ctrl.T.Helper()
@@ -3445,6 +3761,56 @@ func (mr *MockPersonalizeAPIMockRecorder) UpdateCampaignWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCampaignWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).UpdateCampaignWithContext), varargs...)
+}
+
+// UpdateMetricAttribution mocks base method
+func (m *MockPersonalizeAPI) UpdateMetricAttribution(arg0 *personalize.UpdateMetricAttributionInput) (*personalize.UpdateMetricAttributionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMetricAttribution", arg0)
+	ret0, _ := ret[0].(*personalize.UpdateMetricAttributionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMetricAttribution indicates an expected call of UpdateMetricAttribution
+func (mr *MockPersonalizeAPIMockRecorder) UpdateMetricAttribution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMetricAttribution", reflect.TypeOf((*MockPersonalizeAPI)(nil).UpdateMetricAttribution), arg0)
+}
+
+// UpdateMetricAttributionRequest mocks base method
+func (m *MockPersonalizeAPI) UpdateMetricAttributionRequest(arg0 *personalize.UpdateMetricAttributionInput) (*request.Request, *personalize.UpdateMetricAttributionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMetricAttributionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.UpdateMetricAttributionOutput)
+	return ret0, ret1
+}
+
+// UpdateMetricAttributionRequest indicates an expected call of UpdateMetricAttributionRequest
+func (mr *MockPersonalizeAPIMockRecorder) UpdateMetricAttributionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMetricAttributionRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).UpdateMetricAttributionRequest), arg0)
+}
+
+// UpdateMetricAttributionWithContext mocks base method
+func (m *MockPersonalizeAPI) UpdateMetricAttributionWithContext(arg0 context.Context, arg1 *personalize.UpdateMetricAttributionInput, arg2 ...request.Option) (*personalize.UpdateMetricAttributionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateMetricAttributionWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.UpdateMetricAttributionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMetricAttributionWithContext indicates an expected call of UpdateMetricAttributionWithContext
+func (mr *MockPersonalizeAPIMockRecorder) UpdateMetricAttributionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMetricAttributionWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).UpdateMetricAttributionWithContext), varargs...)
 }
 
 // UpdateRecommender mocks base method

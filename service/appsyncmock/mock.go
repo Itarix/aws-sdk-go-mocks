@@ -935,6 +935,56 @@ func (mr *MockAppSyncAPIMockRecorder) DisassociateApiWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateApiWithContext), varargs...)
 }
 
+// EvaluateCode mocks base method
+func (m *MockAppSyncAPI) EvaluateCode(arg0 *appsync.EvaluateCodeInput) (*appsync.EvaluateCodeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EvaluateCode", arg0)
+	ret0, _ := ret[0].(*appsync.EvaluateCodeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EvaluateCode indicates an expected call of EvaluateCode
+func (mr *MockAppSyncAPIMockRecorder) EvaluateCode(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EvaluateCode", reflect.TypeOf((*MockAppSyncAPI)(nil).EvaluateCode), arg0)
+}
+
+// EvaluateCodeRequest mocks base method
+func (m *MockAppSyncAPI) EvaluateCodeRequest(arg0 *appsync.EvaluateCodeInput) (*request.Request, *appsync.EvaluateCodeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EvaluateCodeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.EvaluateCodeOutput)
+	return ret0, ret1
+}
+
+// EvaluateCodeRequest indicates an expected call of EvaluateCodeRequest
+func (mr *MockAppSyncAPIMockRecorder) EvaluateCodeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EvaluateCodeRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).EvaluateCodeRequest), arg0)
+}
+
+// EvaluateCodeWithContext mocks base method
+func (m *MockAppSyncAPI) EvaluateCodeWithContext(arg0 context.Context, arg1 *appsync.EvaluateCodeInput, arg2 ...request.Option) (*appsync.EvaluateCodeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "EvaluateCodeWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.EvaluateCodeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EvaluateCodeWithContext indicates an expected call of EvaluateCodeWithContext
+func (mr *MockAppSyncAPIMockRecorder) EvaluateCodeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EvaluateCodeWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).EvaluateCodeWithContext), varargs...)
+}
+
 // EvaluateMappingTemplate mocks base method
 func (m *MockAppSyncAPI) EvaluateMappingTemplate(arg0 *appsync.EvaluateMappingTemplateInput) (*appsync.EvaluateMappingTemplateOutput, error) {
 	m.ctrl.T.Helper()

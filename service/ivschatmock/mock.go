@@ -85,6 +85,56 @@ func (mr *MockIvschatAPIMockRecorder) CreateChatTokenWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChatTokenWithContext", reflect.TypeOf((*MockIvschatAPI)(nil).CreateChatTokenWithContext), varargs...)
 }
 
+// CreateLoggingConfiguration mocks base method
+func (m *MockIvschatAPI) CreateLoggingConfiguration(arg0 *ivschat.CreateLoggingConfigurationInput) (*ivschat.CreateLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLoggingConfiguration", arg0)
+	ret0, _ := ret[0].(*ivschat.CreateLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLoggingConfiguration indicates an expected call of CreateLoggingConfiguration
+func (mr *MockIvschatAPIMockRecorder) CreateLoggingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLoggingConfiguration", reflect.TypeOf((*MockIvschatAPI)(nil).CreateLoggingConfiguration), arg0)
+}
+
+// CreateLoggingConfigurationRequest mocks base method
+func (m *MockIvschatAPI) CreateLoggingConfigurationRequest(arg0 *ivschat.CreateLoggingConfigurationInput) (*request.Request, *ivschat.CreateLoggingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLoggingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivschat.CreateLoggingConfigurationOutput)
+	return ret0, ret1
+}
+
+// CreateLoggingConfigurationRequest indicates an expected call of CreateLoggingConfigurationRequest
+func (mr *MockIvschatAPIMockRecorder) CreateLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLoggingConfigurationRequest", reflect.TypeOf((*MockIvschatAPI)(nil).CreateLoggingConfigurationRequest), arg0)
+}
+
+// CreateLoggingConfigurationWithContext mocks base method
+func (m *MockIvschatAPI) CreateLoggingConfigurationWithContext(arg0 context.Context, arg1 *ivschat.CreateLoggingConfigurationInput, arg2 ...request.Option) (*ivschat.CreateLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLoggingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*ivschat.CreateLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLoggingConfigurationWithContext indicates an expected call of CreateLoggingConfigurationWithContext
+func (mr *MockIvschatAPIMockRecorder) CreateLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLoggingConfigurationWithContext", reflect.TypeOf((*MockIvschatAPI)(nil).CreateLoggingConfigurationWithContext), varargs...)
+}
+
 // CreateRoom mocks base method
 func (m *MockIvschatAPI) CreateRoom(arg0 *ivschat.CreateRoomInput) (*ivschat.CreateRoomOutput, error) {
 	m.ctrl.T.Helper()
@@ -133,6 +183,56 @@ func (mr *MockIvschatAPIMockRecorder) CreateRoomWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoomWithContext", reflect.TypeOf((*MockIvschatAPI)(nil).CreateRoomWithContext), varargs...)
+}
+
+// DeleteLoggingConfiguration mocks base method
+func (m *MockIvschatAPI) DeleteLoggingConfiguration(arg0 *ivschat.DeleteLoggingConfigurationInput) (*ivschat.DeleteLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLoggingConfiguration", arg0)
+	ret0, _ := ret[0].(*ivschat.DeleteLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLoggingConfiguration indicates an expected call of DeleteLoggingConfiguration
+func (mr *MockIvschatAPIMockRecorder) DeleteLoggingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLoggingConfiguration", reflect.TypeOf((*MockIvschatAPI)(nil).DeleteLoggingConfiguration), arg0)
+}
+
+// DeleteLoggingConfigurationRequest mocks base method
+func (m *MockIvschatAPI) DeleteLoggingConfigurationRequest(arg0 *ivschat.DeleteLoggingConfigurationInput) (*request.Request, *ivschat.DeleteLoggingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLoggingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivschat.DeleteLoggingConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteLoggingConfigurationRequest indicates an expected call of DeleteLoggingConfigurationRequest
+func (mr *MockIvschatAPIMockRecorder) DeleteLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLoggingConfigurationRequest", reflect.TypeOf((*MockIvschatAPI)(nil).DeleteLoggingConfigurationRequest), arg0)
+}
+
+// DeleteLoggingConfigurationWithContext mocks base method
+func (m *MockIvschatAPI) DeleteLoggingConfigurationWithContext(arg0 context.Context, arg1 *ivschat.DeleteLoggingConfigurationInput, arg2 ...request.Option) (*ivschat.DeleteLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLoggingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*ivschat.DeleteLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLoggingConfigurationWithContext indicates an expected call of DeleteLoggingConfigurationWithContext
+func (mr *MockIvschatAPIMockRecorder) DeleteLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLoggingConfigurationWithContext", reflect.TypeOf((*MockIvschatAPI)(nil).DeleteLoggingConfigurationWithContext), varargs...)
 }
 
 // DeleteMessage mocks base method
@@ -285,6 +385,56 @@ func (mr *MockIvschatAPIMockRecorder) DisconnectUserWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisconnectUserWithContext", reflect.TypeOf((*MockIvschatAPI)(nil).DisconnectUserWithContext), varargs...)
 }
 
+// GetLoggingConfiguration mocks base method
+func (m *MockIvschatAPI) GetLoggingConfiguration(arg0 *ivschat.GetLoggingConfigurationInput) (*ivschat.GetLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLoggingConfiguration", arg0)
+	ret0, _ := ret[0].(*ivschat.GetLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLoggingConfiguration indicates an expected call of GetLoggingConfiguration
+func (mr *MockIvschatAPIMockRecorder) GetLoggingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoggingConfiguration", reflect.TypeOf((*MockIvschatAPI)(nil).GetLoggingConfiguration), arg0)
+}
+
+// GetLoggingConfigurationRequest mocks base method
+func (m *MockIvschatAPI) GetLoggingConfigurationRequest(arg0 *ivschat.GetLoggingConfigurationInput) (*request.Request, *ivschat.GetLoggingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLoggingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivschat.GetLoggingConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetLoggingConfigurationRequest indicates an expected call of GetLoggingConfigurationRequest
+func (mr *MockIvschatAPIMockRecorder) GetLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoggingConfigurationRequest", reflect.TypeOf((*MockIvschatAPI)(nil).GetLoggingConfigurationRequest), arg0)
+}
+
+// GetLoggingConfigurationWithContext mocks base method
+func (m *MockIvschatAPI) GetLoggingConfigurationWithContext(arg0 context.Context, arg1 *ivschat.GetLoggingConfigurationInput, arg2 ...request.Option) (*ivschat.GetLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLoggingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*ivschat.GetLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLoggingConfigurationWithContext indicates an expected call of GetLoggingConfigurationWithContext
+func (mr *MockIvschatAPIMockRecorder) GetLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLoggingConfigurationWithContext", reflect.TypeOf((*MockIvschatAPI)(nil).GetLoggingConfigurationWithContext), varargs...)
+}
+
 // GetRoom mocks base method
 func (m *MockIvschatAPI) GetRoom(arg0 *ivschat.GetRoomInput) (*ivschat.GetRoomOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +483,89 @@ func (mr *MockIvschatAPIMockRecorder) GetRoomWithContext(arg0, arg1 interface{},
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRoomWithContext", reflect.TypeOf((*MockIvschatAPI)(nil).GetRoomWithContext), varargs...)
+}
+
+// ListLoggingConfigurations mocks base method
+func (m *MockIvschatAPI) ListLoggingConfigurations(arg0 *ivschat.ListLoggingConfigurationsInput) (*ivschat.ListLoggingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLoggingConfigurations", arg0)
+	ret0, _ := ret[0].(*ivschat.ListLoggingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLoggingConfigurations indicates an expected call of ListLoggingConfigurations
+func (mr *MockIvschatAPIMockRecorder) ListLoggingConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLoggingConfigurations", reflect.TypeOf((*MockIvschatAPI)(nil).ListLoggingConfigurations), arg0)
+}
+
+// ListLoggingConfigurationsPages mocks base method
+func (m *MockIvschatAPI) ListLoggingConfigurationsPages(arg0 *ivschat.ListLoggingConfigurationsInput, arg1 func(*ivschat.ListLoggingConfigurationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLoggingConfigurationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLoggingConfigurationsPages indicates an expected call of ListLoggingConfigurationsPages
+func (mr *MockIvschatAPIMockRecorder) ListLoggingConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLoggingConfigurationsPages", reflect.TypeOf((*MockIvschatAPI)(nil).ListLoggingConfigurationsPages), arg0, arg1)
+}
+
+// ListLoggingConfigurationsPagesWithContext mocks base method
+func (m *MockIvschatAPI) ListLoggingConfigurationsPagesWithContext(arg0 context.Context, arg1 *ivschat.ListLoggingConfigurationsInput, arg2 func(*ivschat.ListLoggingConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLoggingConfigurationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLoggingConfigurationsPagesWithContext indicates an expected call of ListLoggingConfigurationsPagesWithContext
+func (mr *MockIvschatAPIMockRecorder) ListLoggingConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLoggingConfigurationsPagesWithContext", reflect.TypeOf((*MockIvschatAPI)(nil).ListLoggingConfigurationsPagesWithContext), varargs...)
+}
+
+// ListLoggingConfigurationsRequest mocks base method
+func (m *MockIvschatAPI) ListLoggingConfigurationsRequest(arg0 *ivschat.ListLoggingConfigurationsInput) (*request.Request, *ivschat.ListLoggingConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLoggingConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivschat.ListLoggingConfigurationsOutput)
+	return ret0, ret1
+}
+
+// ListLoggingConfigurationsRequest indicates an expected call of ListLoggingConfigurationsRequest
+func (mr *MockIvschatAPIMockRecorder) ListLoggingConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLoggingConfigurationsRequest", reflect.TypeOf((*MockIvschatAPI)(nil).ListLoggingConfigurationsRequest), arg0)
+}
+
+// ListLoggingConfigurationsWithContext mocks base method
+func (m *MockIvschatAPI) ListLoggingConfigurationsWithContext(arg0 context.Context, arg1 *ivschat.ListLoggingConfigurationsInput, arg2 ...request.Option) (*ivschat.ListLoggingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLoggingConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*ivschat.ListLoggingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLoggingConfigurationsWithContext indicates an expected call of ListLoggingConfigurationsWithContext
+func (mr *MockIvschatAPIMockRecorder) ListLoggingConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLoggingConfigurationsWithContext", reflect.TypeOf((*MockIvschatAPI)(nil).ListLoggingConfigurationsWithContext), varargs...)
 }
 
 // ListRooms mocks base method
@@ -616,6 +849,56 @@ func (mr *MockIvschatAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockIvschatAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateLoggingConfiguration mocks base method
+func (m *MockIvschatAPI) UpdateLoggingConfiguration(arg0 *ivschat.UpdateLoggingConfigurationInput) (*ivschat.UpdateLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLoggingConfiguration", arg0)
+	ret0, _ := ret[0].(*ivschat.UpdateLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLoggingConfiguration indicates an expected call of UpdateLoggingConfiguration
+func (mr *MockIvschatAPIMockRecorder) UpdateLoggingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLoggingConfiguration", reflect.TypeOf((*MockIvschatAPI)(nil).UpdateLoggingConfiguration), arg0)
+}
+
+// UpdateLoggingConfigurationRequest mocks base method
+func (m *MockIvschatAPI) UpdateLoggingConfigurationRequest(arg0 *ivschat.UpdateLoggingConfigurationInput) (*request.Request, *ivschat.UpdateLoggingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLoggingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivschat.UpdateLoggingConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateLoggingConfigurationRequest indicates an expected call of UpdateLoggingConfigurationRequest
+func (mr *MockIvschatAPIMockRecorder) UpdateLoggingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLoggingConfigurationRequest", reflect.TypeOf((*MockIvschatAPI)(nil).UpdateLoggingConfigurationRequest), arg0)
+}
+
+// UpdateLoggingConfigurationWithContext mocks base method
+func (m *MockIvschatAPI) UpdateLoggingConfigurationWithContext(arg0 context.Context, arg1 *ivschat.UpdateLoggingConfigurationInput, arg2 ...request.Option) (*ivschat.UpdateLoggingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateLoggingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*ivschat.UpdateLoggingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLoggingConfigurationWithContext indicates an expected call of UpdateLoggingConfigurationWithContext
+func (mr *MockIvschatAPIMockRecorder) UpdateLoggingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLoggingConfigurationWithContext", reflect.TypeOf((*MockIvschatAPI)(nil).UpdateLoggingConfigurationWithContext), varargs...)
 }
 
 // UpdateRoom mocks base method

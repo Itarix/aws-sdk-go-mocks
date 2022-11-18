@@ -385,6 +385,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) CreateIpGroupWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIpGroupWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateIpGroupWithContext), varargs...)
 }
 
+// CreateStandbyWorkspaces mocks base method
+func (m *MockWorkSpacesAPI) CreateStandbyWorkspaces(arg0 *workspaces.CreateStandbyWorkspacesInput) (*workspaces.CreateStandbyWorkspacesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateStandbyWorkspaces", arg0)
+	ret0, _ := ret[0].(*workspaces.CreateStandbyWorkspacesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateStandbyWorkspaces indicates an expected call of CreateStandbyWorkspaces
+func (mr *MockWorkSpacesAPIMockRecorder) CreateStandbyWorkspaces(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStandbyWorkspaces", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateStandbyWorkspaces), arg0)
+}
+
+// CreateStandbyWorkspacesRequest mocks base method
+func (m *MockWorkSpacesAPI) CreateStandbyWorkspacesRequest(arg0 *workspaces.CreateStandbyWorkspacesInput) (*request.Request, *workspaces.CreateStandbyWorkspacesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateStandbyWorkspacesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.CreateStandbyWorkspacesOutput)
+	return ret0, ret1
+}
+
+// CreateStandbyWorkspacesRequest indicates an expected call of CreateStandbyWorkspacesRequest
+func (mr *MockWorkSpacesAPIMockRecorder) CreateStandbyWorkspacesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStandbyWorkspacesRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateStandbyWorkspacesRequest), arg0)
+}
+
+// CreateStandbyWorkspacesWithContext mocks base method
+func (m *MockWorkSpacesAPI) CreateStandbyWorkspacesWithContext(arg0 context.Context, arg1 *workspaces.CreateStandbyWorkspacesInput, arg2 ...request.Option) (*workspaces.CreateStandbyWorkspacesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateStandbyWorkspacesWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.CreateStandbyWorkspacesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateStandbyWorkspacesWithContext indicates an expected call of CreateStandbyWorkspacesWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) CreateStandbyWorkspacesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStandbyWorkspacesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateStandbyWorkspacesWithContext), varargs...)
+}
+
 // CreateTags mocks base method
 func (m *MockWorkSpacesAPI) CreateTags(arg0 *workspaces.CreateTagsInput) (*workspaces.CreateTagsOutput, error) {
 	m.ctrl.T.Helper()
