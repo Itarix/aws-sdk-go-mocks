@@ -985,6 +985,56 @@ func (mr *MockQuickSightAPIMockRecorder) DeleteAccountCustomizationWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccountCustomizationWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DeleteAccountCustomizationWithContext), varargs...)
 }
 
+// DeleteAccountSubscription mocks base method
+func (m *MockQuickSightAPI) DeleteAccountSubscription(arg0 *quicksight.DeleteAccountSubscriptionInput) (*quicksight.DeleteAccountSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccountSubscription", arg0)
+	ret0, _ := ret[0].(*quicksight.DeleteAccountSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccountSubscription indicates an expected call of DeleteAccountSubscription
+func (mr *MockQuickSightAPIMockRecorder) DeleteAccountSubscription(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccountSubscription", reflect.TypeOf((*MockQuickSightAPI)(nil).DeleteAccountSubscription), arg0)
+}
+
+// DeleteAccountSubscriptionRequest mocks base method
+func (m *MockQuickSightAPI) DeleteAccountSubscriptionRequest(arg0 *quicksight.DeleteAccountSubscriptionInput) (*request.Request, *quicksight.DeleteAccountSubscriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccountSubscriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.DeleteAccountSubscriptionOutput)
+	return ret0, ret1
+}
+
+// DeleteAccountSubscriptionRequest indicates an expected call of DeleteAccountSubscriptionRequest
+func (mr *MockQuickSightAPIMockRecorder) DeleteAccountSubscriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccountSubscriptionRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).DeleteAccountSubscriptionRequest), arg0)
+}
+
+// DeleteAccountSubscriptionWithContext mocks base method
+func (m *MockQuickSightAPI) DeleteAccountSubscriptionWithContext(arg0 context.Context, arg1 *quicksight.DeleteAccountSubscriptionInput, arg2 ...request.Option) (*quicksight.DeleteAccountSubscriptionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAccountSubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.DeleteAccountSubscriptionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccountSubscriptionWithContext indicates an expected call of DeleteAccountSubscriptionWithContext
+func (mr *MockQuickSightAPIMockRecorder) DeleteAccountSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccountSubscriptionWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DeleteAccountSubscriptionWithContext), varargs...)
+}
+
 // DeleteAnalysis mocks base method
 func (m *MockQuickSightAPI) DeleteAnalysis(arg0 *quicksight.DeleteAnalysisInput) (*quicksight.DeleteAnalysisOutput, error) {
 	m.ctrl.T.Helper()
@@ -5095,6 +5145,172 @@ func (mr *MockQuickSightAPIMockRecorder) SearchDashboardsWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDashboardsWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDashboardsWithContext), varargs...)
+}
+
+// SearchDataSets mocks base method
+func (m *MockQuickSightAPI) SearchDataSets(arg0 *quicksight.SearchDataSetsInput) (*quicksight.SearchDataSetsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchDataSets", arg0)
+	ret0, _ := ret[0].(*quicksight.SearchDataSetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchDataSets indicates an expected call of SearchDataSets
+func (mr *MockQuickSightAPIMockRecorder) SearchDataSets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDataSets", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDataSets), arg0)
+}
+
+// SearchDataSetsPages mocks base method
+func (m *MockQuickSightAPI) SearchDataSetsPages(arg0 *quicksight.SearchDataSetsInput, arg1 func(*quicksight.SearchDataSetsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchDataSetsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchDataSetsPages indicates an expected call of SearchDataSetsPages
+func (mr *MockQuickSightAPIMockRecorder) SearchDataSetsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDataSetsPages", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDataSetsPages), arg0, arg1)
+}
+
+// SearchDataSetsPagesWithContext mocks base method
+func (m *MockQuickSightAPI) SearchDataSetsPagesWithContext(arg0 context.Context, arg1 *quicksight.SearchDataSetsInput, arg2 func(*quicksight.SearchDataSetsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchDataSetsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchDataSetsPagesWithContext indicates an expected call of SearchDataSetsPagesWithContext
+func (mr *MockQuickSightAPIMockRecorder) SearchDataSetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDataSetsPagesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDataSetsPagesWithContext), varargs...)
+}
+
+// SearchDataSetsRequest mocks base method
+func (m *MockQuickSightAPI) SearchDataSetsRequest(arg0 *quicksight.SearchDataSetsInput) (*request.Request, *quicksight.SearchDataSetsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchDataSetsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.SearchDataSetsOutput)
+	return ret0, ret1
+}
+
+// SearchDataSetsRequest indicates an expected call of SearchDataSetsRequest
+func (mr *MockQuickSightAPIMockRecorder) SearchDataSetsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDataSetsRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDataSetsRequest), arg0)
+}
+
+// SearchDataSetsWithContext mocks base method
+func (m *MockQuickSightAPI) SearchDataSetsWithContext(arg0 context.Context, arg1 *quicksight.SearchDataSetsInput, arg2 ...request.Option) (*quicksight.SearchDataSetsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchDataSetsWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.SearchDataSetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchDataSetsWithContext indicates an expected call of SearchDataSetsWithContext
+func (mr *MockQuickSightAPIMockRecorder) SearchDataSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDataSetsWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDataSetsWithContext), varargs...)
+}
+
+// SearchDataSources mocks base method
+func (m *MockQuickSightAPI) SearchDataSources(arg0 *quicksight.SearchDataSourcesInput) (*quicksight.SearchDataSourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchDataSources", arg0)
+	ret0, _ := ret[0].(*quicksight.SearchDataSourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchDataSources indicates an expected call of SearchDataSources
+func (mr *MockQuickSightAPIMockRecorder) SearchDataSources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDataSources", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDataSources), arg0)
+}
+
+// SearchDataSourcesPages mocks base method
+func (m *MockQuickSightAPI) SearchDataSourcesPages(arg0 *quicksight.SearchDataSourcesInput, arg1 func(*quicksight.SearchDataSourcesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchDataSourcesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchDataSourcesPages indicates an expected call of SearchDataSourcesPages
+func (mr *MockQuickSightAPIMockRecorder) SearchDataSourcesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDataSourcesPages", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDataSourcesPages), arg0, arg1)
+}
+
+// SearchDataSourcesPagesWithContext mocks base method
+func (m *MockQuickSightAPI) SearchDataSourcesPagesWithContext(arg0 context.Context, arg1 *quicksight.SearchDataSourcesInput, arg2 func(*quicksight.SearchDataSourcesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchDataSourcesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchDataSourcesPagesWithContext indicates an expected call of SearchDataSourcesPagesWithContext
+func (mr *MockQuickSightAPIMockRecorder) SearchDataSourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDataSourcesPagesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDataSourcesPagesWithContext), varargs...)
+}
+
+// SearchDataSourcesRequest mocks base method
+func (m *MockQuickSightAPI) SearchDataSourcesRequest(arg0 *quicksight.SearchDataSourcesInput) (*request.Request, *quicksight.SearchDataSourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchDataSourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.SearchDataSourcesOutput)
+	return ret0, ret1
+}
+
+// SearchDataSourcesRequest indicates an expected call of SearchDataSourcesRequest
+func (mr *MockQuickSightAPIMockRecorder) SearchDataSourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDataSourcesRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDataSourcesRequest), arg0)
+}
+
+// SearchDataSourcesWithContext mocks base method
+func (m *MockQuickSightAPI) SearchDataSourcesWithContext(arg0 context.Context, arg1 *quicksight.SearchDataSourcesInput, arg2 ...request.Option) (*quicksight.SearchDataSourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchDataSourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.SearchDataSourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchDataSourcesWithContext indicates an expected call of SearchDataSourcesWithContext
+func (mr *MockQuickSightAPIMockRecorder) SearchDataSourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchDataSourcesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchDataSourcesWithContext), varargs...)
 }
 
 // SearchFolders mocks base method

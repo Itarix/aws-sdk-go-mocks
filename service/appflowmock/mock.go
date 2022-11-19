@@ -1250,6 +1250,56 @@ func (mr *MockAppflowAPIMockRecorder) UpdateConnectorProfileWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectorProfileWithContext", reflect.TypeOf((*MockAppflowAPI)(nil).UpdateConnectorProfileWithContext), varargs...)
 }
 
+// UpdateConnectorRegistration mocks base method
+func (m *MockAppflowAPI) UpdateConnectorRegistration(arg0 *appflow.UpdateConnectorRegistrationInput) (*appflow.UpdateConnectorRegistrationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectorRegistration", arg0)
+	ret0, _ := ret[0].(*appflow.UpdateConnectorRegistrationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectorRegistration indicates an expected call of UpdateConnectorRegistration
+func (mr *MockAppflowAPIMockRecorder) UpdateConnectorRegistration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectorRegistration", reflect.TypeOf((*MockAppflowAPI)(nil).UpdateConnectorRegistration), arg0)
+}
+
+// UpdateConnectorRegistrationRequest mocks base method
+func (m *MockAppflowAPI) UpdateConnectorRegistrationRequest(arg0 *appflow.UpdateConnectorRegistrationInput) (*request.Request, *appflow.UpdateConnectorRegistrationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectorRegistrationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appflow.UpdateConnectorRegistrationOutput)
+	return ret0, ret1
+}
+
+// UpdateConnectorRegistrationRequest indicates an expected call of UpdateConnectorRegistrationRequest
+func (mr *MockAppflowAPIMockRecorder) UpdateConnectorRegistrationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectorRegistrationRequest", reflect.TypeOf((*MockAppflowAPI)(nil).UpdateConnectorRegistrationRequest), arg0)
+}
+
+// UpdateConnectorRegistrationWithContext mocks base method
+func (m *MockAppflowAPI) UpdateConnectorRegistrationWithContext(arg0 context.Context, arg1 *appflow.UpdateConnectorRegistrationInput, arg2 ...request.Option) (*appflow.UpdateConnectorRegistrationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateConnectorRegistrationWithContext", varargs...)
+	ret0, _ := ret[0].(*appflow.UpdateConnectorRegistrationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectorRegistrationWithContext indicates an expected call of UpdateConnectorRegistrationWithContext
+func (mr *MockAppflowAPIMockRecorder) UpdateConnectorRegistrationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectorRegistrationWithContext", reflect.TypeOf((*MockAppflowAPI)(nil).UpdateConnectorRegistrationWithContext), varargs...)
+}
+
 // UpdateFlow mocks base method
 func (m *MockAppflowAPI) UpdateFlow(arg0 *appflow.UpdateFlowInput) (*appflow.UpdateFlowOutput, error) {
 	m.ctrl.T.Helper()
