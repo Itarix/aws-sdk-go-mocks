@@ -350,6 +350,56 @@ func (mr *MockManagedGrafanaAPIMockRecorder) DescribeWorkspaceAuthenticationWith
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspaceAuthenticationWithContext", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).DescribeWorkspaceAuthenticationWithContext), varargs...)
 }
 
+// DescribeWorkspaceConfiguration mocks base method
+func (m *MockManagedGrafanaAPI) DescribeWorkspaceConfiguration(arg0 *managedgrafana.DescribeWorkspaceConfigurationInput) (*managedgrafana.DescribeWorkspaceConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkspaceConfiguration", arg0)
+	ret0, _ := ret[0].(*managedgrafana.DescribeWorkspaceConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkspaceConfiguration indicates an expected call of DescribeWorkspaceConfiguration
+func (mr *MockManagedGrafanaAPIMockRecorder) DescribeWorkspaceConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspaceConfiguration", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).DescribeWorkspaceConfiguration), arg0)
+}
+
+// DescribeWorkspaceConfigurationRequest mocks base method
+func (m *MockManagedGrafanaAPI) DescribeWorkspaceConfigurationRequest(arg0 *managedgrafana.DescribeWorkspaceConfigurationInput) (*request.Request, *managedgrafana.DescribeWorkspaceConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkspaceConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*managedgrafana.DescribeWorkspaceConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeWorkspaceConfigurationRequest indicates an expected call of DescribeWorkspaceConfigurationRequest
+func (mr *MockManagedGrafanaAPIMockRecorder) DescribeWorkspaceConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspaceConfigurationRequest", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).DescribeWorkspaceConfigurationRequest), arg0)
+}
+
+// DescribeWorkspaceConfigurationWithContext mocks base method
+func (m *MockManagedGrafanaAPI) DescribeWorkspaceConfigurationWithContext(arg0 context.Context, arg1 *managedgrafana.DescribeWorkspaceConfigurationInput, arg2 ...request.Option) (*managedgrafana.DescribeWorkspaceConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWorkspaceConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*managedgrafana.DescribeWorkspaceConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkspaceConfigurationWithContext indicates an expected call of DescribeWorkspaceConfigurationWithContext
+func (mr *MockManagedGrafanaAPIMockRecorder) DescribeWorkspaceConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspaceConfigurationWithContext", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).DescribeWorkspaceConfigurationWithContext), varargs...)
+}
+
 // DescribeWorkspaceRequest mocks base method
 func (m *MockManagedGrafanaAPI) DescribeWorkspaceRequest(arg0 *managedgrafana.DescribeWorkspaceInput) (*request.Request, *managedgrafana.DescribeWorkspaceOutput) {
 	m.ctrl.T.Helper()
@@ -864,6 +914,56 @@ func (mr *MockManagedGrafanaAPIMockRecorder) UpdateWorkspaceAuthenticationWithCo
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkspaceAuthenticationWithContext", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).UpdateWorkspaceAuthenticationWithContext), varargs...)
+}
+
+// UpdateWorkspaceConfiguration mocks base method
+func (m *MockManagedGrafanaAPI) UpdateWorkspaceConfiguration(arg0 *managedgrafana.UpdateWorkspaceConfigurationInput) (*managedgrafana.UpdateWorkspaceConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkspaceConfiguration", arg0)
+	ret0, _ := ret[0].(*managedgrafana.UpdateWorkspaceConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkspaceConfiguration indicates an expected call of UpdateWorkspaceConfiguration
+func (mr *MockManagedGrafanaAPIMockRecorder) UpdateWorkspaceConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkspaceConfiguration", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).UpdateWorkspaceConfiguration), arg0)
+}
+
+// UpdateWorkspaceConfigurationRequest mocks base method
+func (m *MockManagedGrafanaAPI) UpdateWorkspaceConfigurationRequest(arg0 *managedgrafana.UpdateWorkspaceConfigurationInput) (*request.Request, *managedgrafana.UpdateWorkspaceConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkspaceConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*managedgrafana.UpdateWorkspaceConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateWorkspaceConfigurationRequest indicates an expected call of UpdateWorkspaceConfigurationRequest
+func (mr *MockManagedGrafanaAPIMockRecorder) UpdateWorkspaceConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkspaceConfigurationRequest", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).UpdateWorkspaceConfigurationRequest), arg0)
+}
+
+// UpdateWorkspaceConfigurationWithContext mocks base method
+func (m *MockManagedGrafanaAPI) UpdateWorkspaceConfigurationWithContext(arg0 context.Context, arg1 *managedgrafana.UpdateWorkspaceConfigurationInput, arg2 ...request.Option) (*managedgrafana.UpdateWorkspaceConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateWorkspaceConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*managedgrafana.UpdateWorkspaceConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkspaceConfigurationWithContext indicates an expected call of UpdateWorkspaceConfigurationWithContext
+func (mr *MockManagedGrafanaAPIMockRecorder) UpdateWorkspaceConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkspaceConfigurationWithContext", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).UpdateWorkspaceConfigurationWithContext), varargs...)
 }
 
 // UpdateWorkspaceRequest mocks base method

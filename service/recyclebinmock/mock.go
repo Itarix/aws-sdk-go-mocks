@@ -318,6 +318,56 @@ func (mr *MockRecycleBinAPIMockRecorder) ListTagsForResourceWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockRecycleBinAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// LockRule mocks base method
+func (m *MockRecycleBinAPI) LockRule(arg0 *recyclebin.LockRuleInput) (*recyclebin.LockRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "LockRule", arg0)
+	ret0, _ := ret[0].(*recyclebin.LockRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// LockRule indicates an expected call of LockRule
+func (mr *MockRecycleBinAPIMockRecorder) LockRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "LockRule", reflect.TypeOf((*MockRecycleBinAPI)(nil).LockRule), arg0)
+}
+
+// LockRuleRequest mocks base method
+func (m *MockRecycleBinAPI) LockRuleRequest(arg0 *recyclebin.LockRuleInput) (*request.Request, *recyclebin.LockRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "LockRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*recyclebin.LockRuleOutput)
+	return ret0, ret1
+}
+
+// LockRuleRequest indicates an expected call of LockRuleRequest
+func (mr *MockRecycleBinAPIMockRecorder) LockRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "LockRuleRequest", reflect.TypeOf((*MockRecycleBinAPI)(nil).LockRuleRequest), arg0)
+}
+
+// LockRuleWithContext mocks base method
+func (m *MockRecycleBinAPI) LockRuleWithContext(arg0 context.Context, arg1 *recyclebin.LockRuleInput, arg2 ...request.Option) (*recyclebin.LockRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "LockRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*recyclebin.LockRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// LockRuleWithContext indicates an expected call of LockRuleWithContext
+func (mr *MockRecycleBinAPIMockRecorder) LockRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "LockRuleWithContext", reflect.TypeOf((*MockRecycleBinAPI)(nil).LockRuleWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockRecycleBinAPI) TagResource(arg0 *recyclebin.TagResourceInput) (*recyclebin.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -366,6 +416,56 @@ func (mr *MockRecycleBinAPIMockRecorder) TagResourceWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockRecycleBinAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// UnlockRule mocks base method
+func (m *MockRecycleBinAPI) UnlockRule(arg0 *recyclebin.UnlockRuleInput) (*recyclebin.UnlockRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UnlockRule", arg0)
+	ret0, _ := ret[0].(*recyclebin.UnlockRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UnlockRule indicates an expected call of UnlockRule
+func (mr *MockRecycleBinAPIMockRecorder) UnlockRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnlockRule", reflect.TypeOf((*MockRecycleBinAPI)(nil).UnlockRule), arg0)
+}
+
+// UnlockRuleRequest mocks base method
+func (m *MockRecycleBinAPI) UnlockRuleRequest(arg0 *recyclebin.UnlockRuleInput) (*request.Request, *recyclebin.UnlockRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UnlockRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*recyclebin.UnlockRuleOutput)
+	return ret0, ret1
+}
+
+// UnlockRuleRequest indicates an expected call of UnlockRuleRequest
+func (mr *MockRecycleBinAPIMockRecorder) UnlockRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnlockRuleRequest", reflect.TypeOf((*MockRecycleBinAPI)(nil).UnlockRuleRequest), arg0)
+}
+
+// UnlockRuleWithContext mocks base method
+func (m *MockRecycleBinAPI) UnlockRuleWithContext(arg0 context.Context, arg1 *recyclebin.UnlockRuleInput, arg2 ...request.Option) (*recyclebin.UnlockRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UnlockRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*recyclebin.UnlockRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UnlockRuleWithContext indicates an expected call of UnlockRuleWithContext
+func (mr *MockRecycleBinAPIMockRecorder) UnlockRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnlockRuleWithContext", reflect.TypeOf((*MockRecycleBinAPI)(nil).UnlockRuleWithContext), varargs...)
 }
 
 // UntagResource mocks base method
