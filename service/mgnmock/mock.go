@@ -35,6 +35,206 @@ func (m *MockMgnAPI) EXPECT() *MockMgnAPIMockRecorder {
 	return m.recorder
 }
 
+// ArchiveApplication mocks base method
+func (m *MockMgnAPI) ArchiveApplication(arg0 *mgn.ArchiveApplicationInput) (*mgn.ArchiveApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ArchiveApplication", arg0)
+	ret0, _ := ret[0].(*mgn.ArchiveApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ArchiveApplication indicates an expected call of ArchiveApplication
+func (mr *MockMgnAPIMockRecorder) ArchiveApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ArchiveApplication", reflect.TypeOf((*MockMgnAPI)(nil).ArchiveApplication), arg0)
+}
+
+// ArchiveApplicationRequest mocks base method
+func (m *MockMgnAPI) ArchiveApplicationRequest(arg0 *mgn.ArchiveApplicationInput) (*request.Request, *mgn.ArchiveApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ArchiveApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.ArchiveApplicationOutput)
+	return ret0, ret1
+}
+
+// ArchiveApplicationRequest indicates an expected call of ArchiveApplicationRequest
+func (mr *MockMgnAPIMockRecorder) ArchiveApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ArchiveApplicationRequest", reflect.TypeOf((*MockMgnAPI)(nil).ArchiveApplicationRequest), arg0)
+}
+
+// ArchiveApplicationWithContext mocks base method
+func (m *MockMgnAPI) ArchiveApplicationWithContext(arg0 context.Context, arg1 *mgn.ArchiveApplicationInput, arg2 ...request.Option) (*mgn.ArchiveApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ArchiveApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.ArchiveApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ArchiveApplicationWithContext indicates an expected call of ArchiveApplicationWithContext
+func (mr *MockMgnAPIMockRecorder) ArchiveApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ArchiveApplicationWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ArchiveApplicationWithContext), varargs...)
+}
+
+// ArchiveWave mocks base method
+func (m *MockMgnAPI) ArchiveWave(arg0 *mgn.ArchiveWaveInput) (*mgn.ArchiveWaveOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ArchiveWave", arg0)
+	ret0, _ := ret[0].(*mgn.ArchiveWaveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ArchiveWave indicates an expected call of ArchiveWave
+func (mr *MockMgnAPIMockRecorder) ArchiveWave(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ArchiveWave", reflect.TypeOf((*MockMgnAPI)(nil).ArchiveWave), arg0)
+}
+
+// ArchiveWaveRequest mocks base method
+func (m *MockMgnAPI) ArchiveWaveRequest(arg0 *mgn.ArchiveWaveInput) (*request.Request, *mgn.ArchiveWaveOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ArchiveWaveRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.ArchiveWaveOutput)
+	return ret0, ret1
+}
+
+// ArchiveWaveRequest indicates an expected call of ArchiveWaveRequest
+func (mr *MockMgnAPIMockRecorder) ArchiveWaveRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ArchiveWaveRequest", reflect.TypeOf((*MockMgnAPI)(nil).ArchiveWaveRequest), arg0)
+}
+
+// ArchiveWaveWithContext mocks base method
+func (m *MockMgnAPI) ArchiveWaveWithContext(arg0 context.Context, arg1 *mgn.ArchiveWaveInput, arg2 ...request.Option) (*mgn.ArchiveWaveOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ArchiveWaveWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.ArchiveWaveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ArchiveWaveWithContext indicates an expected call of ArchiveWaveWithContext
+func (mr *MockMgnAPIMockRecorder) ArchiveWaveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ArchiveWaveWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ArchiveWaveWithContext), varargs...)
+}
+
+// AssociateApplications mocks base method
+func (m *MockMgnAPI) AssociateApplications(arg0 *mgn.AssociateApplicationsInput) (*mgn.AssociateApplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateApplications", arg0)
+	ret0, _ := ret[0].(*mgn.AssociateApplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateApplications indicates an expected call of AssociateApplications
+func (mr *MockMgnAPIMockRecorder) AssociateApplications(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApplications", reflect.TypeOf((*MockMgnAPI)(nil).AssociateApplications), arg0)
+}
+
+// AssociateApplicationsRequest mocks base method
+func (m *MockMgnAPI) AssociateApplicationsRequest(arg0 *mgn.AssociateApplicationsInput) (*request.Request, *mgn.AssociateApplicationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateApplicationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.AssociateApplicationsOutput)
+	return ret0, ret1
+}
+
+// AssociateApplicationsRequest indicates an expected call of AssociateApplicationsRequest
+func (mr *MockMgnAPIMockRecorder) AssociateApplicationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApplicationsRequest", reflect.TypeOf((*MockMgnAPI)(nil).AssociateApplicationsRequest), arg0)
+}
+
+// AssociateApplicationsWithContext mocks base method
+func (m *MockMgnAPI) AssociateApplicationsWithContext(arg0 context.Context, arg1 *mgn.AssociateApplicationsInput, arg2 ...request.Option) (*mgn.AssociateApplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateApplicationsWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.AssociateApplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateApplicationsWithContext indicates an expected call of AssociateApplicationsWithContext
+func (mr *MockMgnAPIMockRecorder) AssociateApplicationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApplicationsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).AssociateApplicationsWithContext), varargs...)
+}
+
+// AssociateSourceServers mocks base method
+func (m *MockMgnAPI) AssociateSourceServers(arg0 *mgn.AssociateSourceServersInput) (*mgn.AssociateSourceServersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateSourceServers", arg0)
+	ret0, _ := ret[0].(*mgn.AssociateSourceServersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateSourceServers indicates an expected call of AssociateSourceServers
+func (mr *MockMgnAPIMockRecorder) AssociateSourceServers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSourceServers", reflect.TypeOf((*MockMgnAPI)(nil).AssociateSourceServers), arg0)
+}
+
+// AssociateSourceServersRequest mocks base method
+func (m *MockMgnAPI) AssociateSourceServersRequest(arg0 *mgn.AssociateSourceServersInput) (*request.Request, *mgn.AssociateSourceServersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateSourceServersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.AssociateSourceServersOutput)
+	return ret0, ret1
+}
+
+// AssociateSourceServersRequest indicates an expected call of AssociateSourceServersRequest
+func (mr *MockMgnAPIMockRecorder) AssociateSourceServersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSourceServersRequest", reflect.TypeOf((*MockMgnAPI)(nil).AssociateSourceServersRequest), arg0)
+}
+
+// AssociateSourceServersWithContext mocks base method
+func (m *MockMgnAPI) AssociateSourceServersWithContext(arg0 context.Context, arg1 *mgn.AssociateSourceServersInput, arg2 ...request.Option) (*mgn.AssociateSourceServersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateSourceServersWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.AssociateSourceServersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateSourceServersWithContext indicates an expected call of AssociateSourceServersWithContext
+func (mr *MockMgnAPIMockRecorder) AssociateSourceServersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSourceServersWithContext", reflect.TypeOf((*MockMgnAPI)(nil).AssociateSourceServersWithContext), varargs...)
+}
+
 // ChangeServerLifeCycleState mocks base method
 func (m *MockMgnAPI) ChangeServerLifeCycleState(arg0 *mgn.ChangeServerLifeCycleStateInput) (*mgn.ChangeServerLifeCycleStateOutput, error) {
 	m.ctrl.T.Helper()
@@ -83,6 +283,56 @@ func (mr *MockMgnAPIMockRecorder) ChangeServerLifeCycleStateWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ChangeServerLifeCycleStateWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ChangeServerLifeCycleStateWithContext), varargs...)
+}
+
+// CreateApplication mocks base method
+func (m *MockMgnAPI) CreateApplication(arg0 *mgn.CreateApplicationInput) (*mgn.CreateApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateApplication", arg0)
+	ret0, _ := ret[0].(*mgn.CreateApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateApplication indicates an expected call of CreateApplication
+func (mr *MockMgnAPIMockRecorder) CreateApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplication", reflect.TypeOf((*MockMgnAPI)(nil).CreateApplication), arg0)
+}
+
+// CreateApplicationRequest mocks base method
+func (m *MockMgnAPI) CreateApplicationRequest(arg0 *mgn.CreateApplicationInput) (*request.Request, *mgn.CreateApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.CreateApplicationOutput)
+	return ret0, ret1
+}
+
+// CreateApplicationRequest indicates an expected call of CreateApplicationRequest
+func (mr *MockMgnAPIMockRecorder) CreateApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationRequest", reflect.TypeOf((*MockMgnAPI)(nil).CreateApplicationRequest), arg0)
+}
+
+// CreateApplicationWithContext mocks base method
+func (m *MockMgnAPI) CreateApplicationWithContext(arg0 context.Context, arg1 *mgn.CreateApplicationInput, arg2 ...request.Option) (*mgn.CreateApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.CreateApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateApplicationWithContext indicates an expected call of CreateApplicationWithContext
+func (mr *MockMgnAPIMockRecorder) CreateApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationWithContext", reflect.TypeOf((*MockMgnAPI)(nil).CreateApplicationWithContext), varargs...)
 }
 
 // CreateLaunchConfigurationTemplate mocks base method
@@ -183,6 +433,106 @@ func (mr *MockMgnAPIMockRecorder) CreateReplicationConfigurationTemplateWithCont
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReplicationConfigurationTemplateWithContext", reflect.TypeOf((*MockMgnAPI)(nil).CreateReplicationConfigurationTemplateWithContext), varargs...)
+}
+
+// CreateWave mocks base method
+func (m *MockMgnAPI) CreateWave(arg0 *mgn.CreateWaveInput) (*mgn.CreateWaveOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWave", arg0)
+	ret0, _ := ret[0].(*mgn.CreateWaveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWave indicates an expected call of CreateWave
+func (mr *MockMgnAPIMockRecorder) CreateWave(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWave", reflect.TypeOf((*MockMgnAPI)(nil).CreateWave), arg0)
+}
+
+// CreateWaveRequest mocks base method
+func (m *MockMgnAPI) CreateWaveRequest(arg0 *mgn.CreateWaveInput) (*request.Request, *mgn.CreateWaveOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWaveRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.CreateWaveOutput)
+	return ret0, ret1
+}
+
+// CreateWaveRequest indicates an expected call of CreateWaveRequest
+func (mr *MockMgnAPIMockRecorder) CreateWaveRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWaveRequest", reflect.TypeOf((*MockMgnAPI)(nil).CreateWaveRequest), arg0)
+}
+
+// CreateWaveWithContext mocks base method
+func (m *MockMgnAPI) CreateWaveWithContext(arg0 context.Context, arg1 *mgn.CreateWaveInput, arg2 ...request.Option) (*mgn.CreateWaveOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWaveWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.CreateWaveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWaveWithContext indicates an expected call of CreateWaveWithContext
+func (mr *MockMgnAPIMockRecorder) CreateWaveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWaveWithContext", reflect.TypeOf((*MockMgnAPI)(nil).CreateWaveWithContext), varargs...)
+}
+
+// DeleteApplication mocks base method
+func (m *MockMgnAPI) DeleteApplication(arg0 *mgn.DeleteApplicationInput) (*mgn.DeleteApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteApplication", arg0)
+	ret0, _ := ret[0].(*mgn.DeleteApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteApplication indicates an expected call of DeleteApplication
+func (mr *MockMgnAPIMockRecorder) DeleteApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplication", reflect.TypeOf((*MockMgnAPI)(nil).DeleteApplication), arg0)
+}
+
+// DeleteApplicationRequest mocks base method
+func (m *MockMgnAPI) DeleteApplicationRequest(arg0 *mgn.DeleteApplicationInput) (*request.Request, *mgn.DeleteApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.DeleteApplicationOutput)
+	return ret0, ret1
+}
+
+// DeleteApplicationRequest indicates an expected call of DeleteApplicationRequest
+func (mr *MockMgnAPIMockRecorder) DeleteApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationRequest", reflect.TypeOf((*MockMgnAPI)(nil).DeleteApplicationRequest), arg0)
+}
+
+// DeleteApplicationWithContext mocks base method
+func (m *MockMgnAPI) DeleteApplicationWithContext(arg0 context.Context, arg1 *mgn.DeleteApplicationInput, arg2 ...request.Option) (*mgn.DeleteApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.DeleteApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteApplicationWithContext indicates an expected call of DeleteApplicationWithContext
+func (mr *MockMgnAPIMockRecorder) DeleteApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationWithContext", reflect.TypeOf((*MockMgnAPI)(nil).DeleteApplicationWithContext), varargs...)
 }
 
 // DeleteJob mocks base method
@@ -433,6 +783,56 @@ func (mr *MockMgnAPIMockRecorder) DeleteVcenterClientWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVcenterClientWithContext", reflect.TypeOf((*MockMgnAPI)(nil).DeleteVcenterClientWithContext), varargs...)
+}
+
+// DeleteWave mocks base method
+func (m *MockMgnAPI) DeleteWave(arg0 *mgn.DeleteWaveInput) (*mgn.DeleteWaveOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWave", arg0)
+	ret0, _ := ret[0].(*mgn.DeleteWaveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWave indicates an expected call of DeleteWave
+func (mr *MockMgnAPIMockRecorder) DeleteWave(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWave", reflect.TypeOf((*MockMgnAPI)(nil).DeleteWave), arg0)
+}
+
+// DeleteWaveRequest mocks base method
+func (m *MockMgnAPI) DeleteWaveRequest(arg0 *mgn.DeleteWaveInput) (*request.Request, *mgn.DeleteWaveOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWaveRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.DeleteWaveOutput)
+	return ret0, ret1
+}
+
+// DeleteWaveRequest indicates an expected call of DeleteWaveRequest
+func (mr *MockMgnAPIMockRecorder) DeleteWaveRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWaveRequest", reflect.TypeOf((*MockMgnAPI)(nil).DeleteWaveRequest), arg0)
+}
+
+// DeleteWaveWithContext mocks base method
+func (m *MockMgnAPI) DeleteWaveWithContext(arg0 context.Context, arg1 *mgn.DeleteWaveInput, arg2 ...request.Option) (*mgn.DeleteWaveOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteWaveWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.DeleteWaveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWaveWithContext indicates an expected call of DeleteWaveWithContext
+func (mr *MockMgnAPIMockRecorder) DeleteWaveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWaveWithContext", reflect.TypeOf((*MockMgnAPI)(nil).DeleteWaveWithContext), varargs...)
 }
 
 // DescribeJobLogItems mocks base method
@@ -933,6 +1333,106 @@ func (mr *MockMgnAPIMockRecorder) DescribeVcenterClientsWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVcenterClientsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).DescribeVcenterClientsWithContext), varargs...)
 }
 
+// DisassociateApplications mocks base method
+func (m *MockMgnAPI) DisassociateApplications(arg0 *mgn.DisassociateApplicationsInput) (*mgn.DisassociateApplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateApplications", arg0)
+	ret0, _ := ret[0].(*mgn.DisassociateApplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateApplications indicates an expected call of DisassociateApplications
+func (mr *MockMgnAPIMockRecorder) DisassociateApplications(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApplications", reflect.TypeOf((*MockMgnAPI)(nil).DisassociateApplications), arg0)
+}
+
+// DisassociateApplicationsRequest mocks base method
+func (m *MockMgnAPI) DisassociateApplicationsRequest(arg0 *mgn.DisassociateApplicationsInput) (*request.Request, *mgn.DisassociateApplicationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateApplicationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.DisassociateApplicationsOutput)
+	return ret0, ret1
+}
+
+// DisassociateApplicationsRequest indicates an expected call of DisassociateApplicationsRequest
+func (mr *MockMgnAPIMockRecorder) DisassociateApplicationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApplicationsRequest", reflect.TypeOf((*MockMgnAPI)(nil).DisassociateApplicationsRequest), arg0)
+}
+
+// DisassociateApplicationsWithContext mocks base method
+func (m *MockMgnAPI) DisassociateApplicationsWithContext(arg0 context.Context, arg1 *mgn.DisassociateApplicationsInput, arg2 ...request.Option) (*mgn.DisassociateApplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateApplicationsWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.DisassociateApplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateApplicationsWithContext indicates an expected call of DisassociateApplicationsWithContext
+func (mr *MockMgnAPIMockRecorder) DisassociateApplicationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApplicationsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).DisassociateApplicationsWithContext), varargs...)
+}
+
+// DisassociateSourceServers mocks base method
+func (m *MockMgnAPI) DisassociateSourceServers(arg0 *mgn.DisassociateSourceServersInput) (*mgn.DisassociateSourceServersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateSourceServers", arg0)
+	ret0, _ := ret[0].(*mgn.DisassociateSourceServersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateSourceServers indicates an expected call of DisassociateSourceServers
+func (mr *MockMgnAPIMockRecorder) DisassociateSourceServers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSourceServers", reflect.TypeOf((*MockMgnAPI)(nil).DisassociateSourceServers), arg0)
+}
+
+// DisassociateSourceServersRequest mocks base method
+func (m *MockMgnAPI) DisassociateSourceServersRequest(arg0 *mgn.DisassociateSourceServersInput) (*request.Request, *mgn.DisassociateSourceServersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateSourceServersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.DisassociateSourceServersOutput)
+	return ret0, ret1
+}
+
+// DisassociateSourceServersRequest indicates an expected call of DisassociateSourceServersRequest
+func (mr *MockMgnAPIMockRecorder) DisassociateSourceServersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSourceServersRequest", reflect.TypeOf((*MockMgnAPI)(nil).DisassociateSourceServersRequest), arg0)
+}
+
+// DisassociateSourceServersWithContext mocks base method
+func (m *MockMgnAPI) DisassociateSourceServersWithContext(arg0 context.Context, arg1 *mgn.DisassociateSourceServersInput, arg2 ...request.Option) (*mgn.DisassociateSourceServersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateSourceServersWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.DisassociateSourceServersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateSourceServersWithContext indicates an expected call of DisassociateSourceServersWithContext
+func (mr *MockMgnAPIMockRecorder) DisassociateSourceServersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSourceServersWithContext", reflect.TypeOf((*MockMgnAPI)(nil).DisassociateSourceServersWithContext), varargs...)
+}
+
 // DisconnectFromService mocks base method
 func (m *MockMgnAPI) DisconnectFromService(arg0 *mgn.DisconnectFromServiceInput) (*mgn.DisconnectFromServiceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1183,6 +1683,172 @@ func (mr *MockMgnAPIMockRecorder) InitializeServiceWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InitializeServiceWithContext", reflect.TypeOf((*MockMgnAPI)(nil).InitializeServiceWithContext), varargs...)
 }
 
+// ListApplications mocks base method
+func (m *MockMgnAPI) ListApplications(arg0 *mgn.ListApplicationsInput) (*mgn.ListApplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplications", arg0)
+	ret0, _ := ret[0].(*mgn.ListApplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApplications indicates an expected call of ListApplications
+func (mr *MockMgnAPIMockRecorder) ListApplications(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplications", reflect.TypeOf((*MockMgnAPI)(nil).ListApplications), arg0)
+}
+
+// ListApplicationsPages mocks base method
+func (m *MockMgnAPI) ListApplicationsPages(arg0 *mgn.ListApplicationsInput, arg1 func(*mgn.ListApplicationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationsPages indicates an expected call of ListApplicationsPages
+func (mr *MockMgnAPIMockRecorder) ListApplicationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationsPages", reflect.TypeOf((*MockMgnAPI)(nil).ListApplicationsPages), arg0, arg1)
+}
+
+// ListApplicationsPagesWithContext mocks base method
+func (m *MockMgnAPI) ListApplicationsPagesWithContext(arg0 context.Context, arg1 *mgn.ListApplicationsInput, arg2 func(*mgn.ListApplicationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApplicationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationsPagesWithContext indicates an expected call of ListApplicationsPagesWithContext
+func (mr *MockMgnAPIMockRecorder) ListApplicationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationsPagesWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListApplicationsPagesWithContext), varargs...)
+}
+
+// ListApplicationsRequest mocks base method
+func (m *MockMgnAPI) ListApplicationsRequest(arg0 *mgn.ListApplicationsInput) (*request.Request, *mgn.ListApplicationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.ListApplicationsOutput)
+	return ret0, ret1
+}
+
+// ListApplicationsRequest indicates an expected call of ListApplicationsRequest
+func (mr *MockMgnAPIMockRecorder) ListApplicationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationsRequest", reflect.TypeOf((*MockMgnAPI)(nil).ListApplicationsRequest), arg0)
+}
+
+// ListApplicationsWithContext mocks base method
+func (m *MockMgnAPI) ListApplicationsWithContext(arg0 context.Context, arg1 *mgn.ListApplicationsInput, arg2 ...request.Option) (*mgn.ListApplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApplicationsWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.ListApplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApplicationsWithContext indicates an expected call of ListApplicationsWithContext
+func (mr *MockMgnAPIMockRecorder) ListApplicationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListApplicationsWithContext), varargs...)
+}
+
+// ListSourceServerActions mocks base method
+func (m *MockMgnAPI) ListSourceServerActions(arg0 *mgn.ListSourceServerActionsInput) (*mgn.ListSourceServerActionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSourceServerActions", arg0)
+	ret0, _ := ret[0].(*mgn.ListSourceServerActionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSourceServerActions indicates an expected call of ListSourceServerActions
+func (mr *MockMgnAPIMockRecorder) ListSourceServerActions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceServerActions", reflect.TypeOf((*MockMgnAPI)(nil).ListSourceServerActions), arg0)
+}
+
+// ListSourceServerActionsPages mocks base method
+func (m *MockMgnAPI) ListSourceServerActionsPages(arg0 *mgn.ListSourceServerActionsInput, arg1 func(*mgn.ListSourceServerActionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSourceServerActionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSourceServerActionsPages indicates an expected call of ListSourceServerActionsPages
+func (mr *MockMgnAPIMockRecorder) ListSourceServerActionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceServerActionsPages", reflect.TypeOf((*MockMgnAPI)(nil).ListSourceServerActionsPages), arg0, arg1)
+}
+
+// ListSourceServerActionsPagesWithContext mocks base method
+func (m *MockMgnAPI) ListSourceServerActionsPagesWithContext(arg0 context.Context, arg1 *mgn.ListSourceServerActionsInput, arg2 func(*mgn.ListSourceServerActionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSourceServerActionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSourceServerActionsPagesWithContext indicates an expected call of ListSourceServerActionsPagesWithContext
+func (mr *MockMgnAPIMockRecorder) ListSourceServerActionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceServerActionsPagesWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListSourceServerActionsPagesWithContext), varargs...)
+}
+
+// ListSourceServerActionsRequest mocks base method
+func (m *MockMgnAPI) ListSourceServerActionsRequest(arg0 *mgn.ListSourceServerActionsInput) (*request.Request, *mgn.ListSourceServerActionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSourceServerActionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.ListSourceServerActionsOutput)
+	return ret0, ret1
+}
+
+// ListSourceServerActionsRequest indicates an expected call of ListSourceServerActionsRequest
+func (mr *MockMgnAPIMockRecorder) ListSourceServerActionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceServerActionsRequest", reflect.TypeOf((*MockMgnAPI)(nil).ListSourceServerActionsRequest), arg0)
+}
+
+// ListSourceServerActionsWithContext mocks base method
+func (m *MockMgnAPI) ListSourceServerActionsWithContext(arg0 context.Context, arg1 *mgn.ListSourceServerActionsInput, arg2 ...request.Option) (*mgn.ListSourceServerActionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSourceServerActionsWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.ListSourceServerActionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSourceServerActionsWithContext indicates an expected call of ListSourceServerActionsWithContext
+func (mr *MockMgnAPIMockRecorder) ListSourceServerActionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceServerActionsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListSourceServerActionsWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockMgnAPI) ListTagsForResource(arg0 *mgn.ListTagsForResourceInput) (*mgn.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1233,6 +1899,172 @@ func (mr *MockMgnAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ListTemplateActions mocks base method
+func (m *MockMgnAPI) ListTemplateActions(arg0 *mgn.ListTemplateActionsInput) (*mgn.ListTemplateActionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTemplateActions", arg0)
+	ret0, _ := ret[0].(*mgn.ListTemplateActionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTemplateActions indicates an expected call of ListTemplateActions
+func (mr *MockMgnAPIMockRecorder) ListTemplateActions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTemplateActions", reflect.TypeOf((*MockMgnAPI)(nil).ListTemplateActions), arg0)
+}
+
+// ListTemplateActionsPages mocks base method
+func (m *MockMgnAPI) ListTemplateActionsPages(arg0 *mgn.ListTemplateActionsInput, arg1 func(*mgn.ListTemplateActionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTemplateActionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTemplateActionsPages indicates an expected call of ListTemplateActionsPages
+func (mr *MockMgnAPIMockRecorder) ListTemplateActionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTemplateActionsPages", reflect.TypeOf((*MockMgnAPI)(nil).ListTemplateActionsPages), arg0, arg1)
+}
+
+// ListTemplateActionsPagesWithContext mocks base method
+func (m *MockMgnAPI) ListTemplateActionsPagesWithContext(arg0 context.Context, arg1 *mgn.ListTemplateActionsInput, arg2 func(*mgn.ListTemplateActionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTemplateActionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTemplateActionsPagesWithContext indicates an expected call of ListTemplateActionsPagesWithContext
+func (mr *MockMgnAPIMockRecorder) ListTemplateActionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTemplateActionsPagesWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListTemplateActionsPagesWithContext), varargs...)
+}
+
+// ListTemplateActionsRequest mocks base method
+func (m *MockMgnAPI) ListTemplateActionsRequest(arg0 *mgn.ListTemplateActionsInput) (*request.Request, *mgn.ListTemplateActionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTemplateActionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.ListTemplateActionsOutput)
+	return ret0, ret1
+}
+
+// ListTemplateActionsRequest indicates an expected call of ListTemplateActionsRequest
+func (mr *MockMgnAPIMockRecorder) ListTemplateActionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTemplateActionsRequest", reflect.TypeOf((*MockMgnAPI)(nil).ListTemplateActionsRequest), arg0)
+}
+
+// ListTemplateActionsWithContext mocks base method
+func (m *MockMgnAPI) ListTemplateActionsWithContext(arg0 context.Context, arg1 *mgn.ListTemplateActionsInput, arg2 ...request.Option) (*mgn.ListTemplateActionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTemplateActionsWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.ListTemplateActionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTemplateActionsWithContext indicates an expected call of ListTemplateActionsWithContext
+func (mr *MockMgnAPIMockRecorder) ListTemplateActionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTemplateActionsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListTemplateActionsWithContext), varargs...)
+}
+
+// ListWaves mocks base method
+func (m *MockMgnAPI) ListWaves(arg0 *mgn.ListWavesInput) (*mgn.ListWavesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWaves", arg0)
+	ret0, _ := ret[0].(*mgn.ListWavesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWaves indicates an expected call of ListWaves
+func (mr *MockMgnAPIMockRecorder) ListWaves(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWaves", reflect.TypeOf((*MockMgnAPI)(nil).ListWaves), arg0)
+}
+
+// ListWavesPages mocks base method
+func (m *MockMgnAPI) ListWavesPages(arg0 *mgn.ListWavesInput, arg1 func(*mgn.ListWavesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWavesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWavesPages indicates an expected call of ListWavesPages
+func (mr *MockMgnAPIMockRecorder) ListWavesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWavesPages", reflect.TypeOf((*MockMgnAPI)(nil).ListWavesPages), arg0, arg1)
+}
+
+// ListWavesPagesWithContext mocks base method
+func (m *MockMgnAPI) ListWavesPagesWithContext(arg0 context.Context, arg1 *mgn.ListWavesInput, arg2 func(*mgn.ListWavesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWavesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWavesPagesWithContext indicates an expected call of ListWavesPagesWithContext
+func (mr *MockMgnAPIMockRecorder) ListWavesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWavesPagesWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListWavesPagesWithContext), varargs...)
+}
+
+// ListWavesRequest mocks base method
+func (m *MockMgnAPI) ListWavesRequest(arg0 *mgn.ListWavesInput) (*request.Request, *mgn.ListWavesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWavesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.ListWavesOutput)
+	return ret0, ret1
+}
+
+// ListWavesRequest indicates an expected call of ListWavesRequest
+func (mr *MockMgnAPIMockRecorder) ListWavesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWavesRequest", reflect.TypeOf((*MockMgnAPI)(nil).ListWavesRequest), arg0)
+}
+
+// ListWavesWithContext mocks base method
+func (m *MockMgnAPI) ListWavesWithContext(arg0 context.Context, arg1 *mgn.ListWavesInput, arg2 ...request.Option) (*mgn.ListWavesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWavesWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.ListWavesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWavesWithContext indicates an expected call of ListWavesWithContext
+func (mr *MockMgnAPIMockRecorder) ListWavesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWavesWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListWavesWithContext), varargs...)
+}
+
 // MarkAsArchived mocks base method
 func (m *MockMgnAPI) MarkAsArchived(arg0 *mgn.MarkAsArchivedInput) (*mgn.MarkAsArchivedOutput, error) {
 	m.ctrl.T.Helper()
@@ -1281,6 +2113,206 @@ func (mr *MockMgnAPIMockRecorder) MarkAsArchivedWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MarkAsArchivedWithContext", reflect.TypeOf((*MockMgnAPI)(nil).MarkAsArchivedWithContext), varargs...)
+}
+
+// PutSourceServerAction mocks base method
+func (m *MockMgnAPI) PutSourceServerAction(arg0 *mgn.PutSourceServerActionInput) (*mgn.PutSourceServerActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutSourceServerAction", arg0)
+	ret0, _ := ret[0].(*mgn.PutSourceServerActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutSourceServerAction indicates an expected call of PutSourceServerAction
+func (mr *MockMgnAPIMockRecorder) PutSourceServerAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSourceServerAction", reflect.TypeOf((*MockMgnAPI)(nil).PutSourceServerAction), arg0)
+}
+
+// PutSourceServerActionRequest mocks base method
+func (m *MockMgnAPI) PutSourceServerActionRequest(arg0 *mgn.PutSourceServerActionInput) (*request.Request, *mgn.PutSourceServerActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutSourceServerActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.PutSourceServerActionOutput)
+	return ret0, ret1
+}
+
+// PutSourceServerActionRequest indicates an expected call of PutSourceServerActionRequest
+func (mr *MockMgnAPIMockRecorder) PutSourceServerActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSourceServerActionRequest", reflect.TypeOf((*MockMgnAPI)(nil).PutSourceServerActionRequest), arg0)
+}
+
+// PutSourceServerActionWithContext mocks base method
+func (m *MockMgnAPI) PutSourceServerActionWithContext(arg0 context.Context, arg1 *mgn.PutSourceServerActionInput, arg2 ...request.Option) (*mgn.PutSourceServerActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutSourceServerActionWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.PutSourceServerActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutSourceServerActionWithContext indicates an expected call of PutSourceServerActionWithContext
+func (mr *MockMgnAPIMockRecorder) PutSourceServerActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutSourceServerActionWithContext", reflect.TypeOf((*MockMgnAPI)(nil).PutSourceServerActionWithContext), varargs...)
+}
+
+// PutTemplateAction mocks base method
+func (m *MockMgnAPI) PutTemplateAction(arg0 *mgn.PutTemplateActionInput) (*mgn.PutTemplateActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutTemplateAction", arg0)
+	ret0, _ := ret[0].(*mgn.PutTemplateActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutTemplateAction indicates an expected call of PutTemplateAction
+func (mr *MockMgnAPIMockRecorder) PutTemplateAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutTemplateAction", reflect.TypeOf((*MockMgnAPI)(nil).PutTemplateAction), arg0)
+}
+
+// PutTemplateActionRequest mocks base method
+func (m *MockMgnAPI) PutTemplateActionRequest(arg0 *mgn.PutTemplateActionInput) (*request.Request, *mgn.PutTemplateActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutTemplateActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.PutTemplateActionOutput)
+	return ret0, ret1
+}
+
+// PutTemplateActionRequest indicates an expected call of PutTemplateActionRequest
+func (mr *MockMgnAPIMockRecorder) PutTemplateActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutTemplateActionRequest", reflect.TypeOf((*MockMgnAPI)(nil).PutTemplateActionRequest), arg0)
+}
+
+// PutTemplateActionWithContext mocks base method
+func (m *MockMgnAPI) PutTemplateActionWithContext(arg0 context.Context, arg1 *mgn.PutTemplateActionInput, arg2 ...request.Option) (*mgn.PutTemplateActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutTemplateActionWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.PutTemplateActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutTemplateActionWithContext indicates an expected call of PutTemplateActionWithContext
+func (mr *MockMgnAPIMockRecorder) PutTemplateActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutTemplateActionWithContext", reflect.TypeOf((*MockMgnAPI)(nil).PutTemplateActionWithContext), varargs...)
+}
+
+// RemoveSourceServerAction mocks base method
+func (m *MockMgnAPI) RemoveSourceServerAction(arg0 *mgn.RemoveSourceServerActionInput) (*mgn.RemoveSourceServerActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveSourceServerAction", arg0)
+	ret0, _ := ret[0].(*mgn.RemoveSourceServerActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveSourceServerAction indicates an expected call of RemoveSourceServerAction
+func (mr *MockMgnAPIMockRecorder) RemoveSourceServerAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveSourceServerAction", reflect.TypeOf((*MockMgnAPI)(nil).RemoveSourceServerAction), arg0)
+}
+
+// RemoveSourceServerActionRequest mocks base method
+func (m *MockMgnAPI) RemoveSourceServerActionRequest(arg0 *mgn.RemoveSourceServerActionInput) (*request.Request, *mgn.RemoveSourceServerActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveSourceServerActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.RemoveSourceServerActionOutput)
+	return ret0, ret1
+}
+
+// RemoveSourceServerActionRequest indicates an expected call of RemoveSourceServerActionRequest
+func (mr *MockMgnAPIMockRecorder) RemoveSourceServerActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveSourceServerActionRequest", reflect.TypeOf((*MockMgnAPI)(nil).RemoveSourceServerActionRequest), arg0)
+}
+
+// RemoveSourceServerActionWithContext mocks base method
+func (m *MockMgnAPI) RemoveSourceServerActionWithContext(arg0 context.Context, arg1 *mgn.RemoveSourceServerActionInput, arg2 ...request.Option) (*mgn.RemoveSourceServerActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveSourceServerActionWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.RemoveSourceServerActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveSourceServerActionWithContext indicates an expected call of RemoveSourceServerActionWithContext
+func (mr *MockMgnAPIMockRecorder) RemoveSourceServerActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveSourceServerActionWithContext", reflect.TypeOf((*MockMgnAPI)(nil).RemoveSourceServerActionWithContext), varargs...)
+}
+
+// RemoveTemplateAction mocks base method
+func (m *MockMgnAPI) RemoveTemplateAction(arg0 *mgn.RemoveTemplateActionInput) (*mgn.RemoveTemplateActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveTemplateAction", arg0)
+	ret0, _ := ret[0].(*mgn.RemoveTemplateActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveTemplateAction indicates an expected call of RemoveTemplateAction
+func (mr *MockMgnAPIMockRecorder) RemoveTemplateAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTemplateAction", reflect.TypeOf((*MockMgnAPI)(nil).RemoveTemplateAction), arg0)
+}
+
+// RemoveTemplateActionRequest mocks base method
+func (m *MockMgnAPI) RemoveTemplateActionRequest(arg0 *mgn.RemoveTemplateActionInput) (*request.Request, *mgn.RemoveTemplateActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveTemplateActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.RemoveTemplateActionOutput)
+	return ret0, ret1
+}
+
+// RemoveTemplateActionRequest indicates an expected call of RemoveTemplateActionRequest
+func (mr *MockMgnAPIMockRecorder) RemoveTemplateActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTemplateActionRequest", reflect.TypeOf((*MockMgnAPI)(nil).RemoveTemplateActionRequest), arg0)
+}
+
+// RemoveTemplateActionWithContext mocks base method
+func (m *MockMgnAPI) RemoveTemplateActionWithContext(arg0 context.Context, arg1 *mgn.RemoveTemplateActionInput, arg2 ...request.Option) (*mgn.RemoveTemplateActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveTemplateActionWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.RemoveTemplateActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveTemplateActionWithContext indicates an expected call of RemoveTemplateActionWithContext
+func (mr *MockMgnAPIMockRecorder) RemoveTemplateActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTemplateActionWithContext", reflect.TypeOf((*MockMgnAPI)(nil).RemoveTemplateActionWithContext), varargs...)
 }
 
 // RetryDataReplication mocks base method
@@ -1583,6 +2615,106 @@ func (mr *MockMgnAPIMockRecorder) TerminateTargetInstancesWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateTargetInstancesWithContext", reflect.TypeOf((*MockMgnAPI)(nil).TerminateTargetInstancesWithContext), varargs...)
 }
 
+// UnarchiveApplication mocks base method
+func (m *MockMgnAPI) UnarchiveApplication(arg0 *mgn.UnarchiveApplicationInput) (*mgn.UnarchiveApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UnarchiveApplication", arg0)
+	ret0, _ := ret[0].(*mgn.UnarchiveApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UnarchiveApplication indicates an expected call of UnarchiveApplication
+func (mr *MockMgnAPIMockRecorder) UnarchiveApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnarchiveApplication", reflect.TypeOf((*MockMgnAPI)(nil).UnarchiveApplication), arg0)
+}
+
+// UnarchiveApplicationRequest mocks base method
+func (m *MockMgnAPI) UnarchiveApplicationRequest(arg0 *mgn.UnarchiveApplicationInput) (*request.Request, *mgn.UnarchiveApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UnarchiveApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.UnarchiveApplicationOutput)
+	return ret0, ret1
+}
+
+// UnarchiveApplicationRequest indicates an expected call of UnarchiveApplicationRequest
+func (mr *MockMgnAPIMockRecorder) UnarchiveApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnarchiveApplicationRequest", reflect.TypeOf((*MockMgnAPI)(nil).UnarchiveApplicationRequest), arg0)
+}
+
+// UnarchiveApplicationWithContext mocks base method
+func (m *MockMgnAPI) UnarchiveApplicationWithContext(arg0 context.Context, arg1 *mgn.UnarchiveApplicationInput, arg2 ...request.Option) (*mgn.UnarchiveApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UnarchiveApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.UnarchiveApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UnarchiveApplicationWithContext indicates an expected call of UnarchiveApplicationWithContext
+func (mr *MockMgnAPIMockRecorder) UnarchiveApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnarchiveApplicationWithContext", reflect.TypeOf((*MockMgnAPI)(nil).UnarchiveApplicationWithContext), varargs...)
+}
+
+// UnarchiveWave mocks base method
+func (m *MockMgnAPI) UnarchiveWave(arg0 *mgn.UnarchiveWaveInput) (*mgn.UnarchiveWaveOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UnarchiveWave", arg0)
+	ret0, _ := ret[0].(*mgn.UnarchiveWaveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UnarchiveWave indicates an expected call of UnarchiveWave
+func (mr *MockMgnAPIMockRecorder) UnarchiveWave(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnarchiveWave", reflect.TypeOf((*MockMgnAPI)(nil).UnarchiveWave), arg0)
+}
+
+// UnarchiveWaveRequest mocks base method
+func (m *MockMgnAPI) UnarchiveWaveRequest(arg0 *mgn.UnarchiveWaveInput) (*request.Request, *mgn.UnarchiveWaveOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UnarchiveWaveRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.UnarchiveWaveOutput)
+	return ret0, ret1
+}
+
+// UnarchiveWaveRequest indicates an expected call of UnarchiveWaveRequest
+func (mr *MockMgnAPIMockRecorder) UnarchiveWaveRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnarchiveWaveRequest", reflect.TypeOf((*MockMgnAPI)(nil).UnarchiveWaveRequest), arg0)
+}
+
+// UnarchiveWaveWithContext mocks base method
+func (m *MockMgnAPI) UnarchiveWaveWithContext(arg0 context.Context, arg1 *mgn.UnarchiveWaveInput, arg2 ...request.Option) (*mgn.UnarchiveWaveOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UnarchiveWaveWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.UnarchiveWaveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UnarchiveWaveWithContext indicates an expected call of UnarchiveWaveWithContext
+func (mr *MockMgnAPIMockRecorder) UnarchiveWaveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UnarchiveWaveWithContext", reflect.TypeOf((*MockMgnAPI)(nil).UnarchiveWaveWithContext), varargs...)
+}
+
 // UntagResource mocks base method
 func (m *MockMgnAPI) UntagResource(arg0 *mgn.UntagResourceInput) (*mgn.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1631,6 +2763,56 @@ func (mr *MockMgnAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockMgnAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateApplication mocks base method
+func (m *MockMgnAPI) UpdateApplication(arg0 *mgn.UpdateApplicationInput) (*mgn.UpdateApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApplication", arg0)
+	ret0, _ := ret[0].(*mgn.UpdateApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApplication indicates an expected call of UpdateApplication
+func (mr *MockMgnAPIMockRecorder) UpdateApplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplication", reflect.TypeOf((*MockMgnAPI)(nil).UpdateApplication), arg0)
+}
+
+// UpdateApplicationRequest mocks base method
+func (m *MockMgnAPI) UpdateApplicationRequest(arg0 *mgn.UpdateApplicationInput) (*request.Request, *mgn.UpdateApplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateApplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.UpdateApplicationOutput)
+	return ret0, ret1
+}
+
+// UpdateApplicationRequest indicates an expected call of UpdateApplicationRequest
+func (mr *MockMgnAPIMockRecorder) UpdateApplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationRequest", reflect.TypeOf((*MockMgnAPI)(nil).UpdateApplicationRequest), arg0)
+}
+
+// UpdateApplicationWithContext mocks base method
+func (m *MockMgnAPI) UpdateApplicationWithContext(arg0 context.Context, arg1 *mgn.UpdateApplicationInput, arg2 ...request.Option) (*mgn.UpdateApplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateApplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.UpdateApplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateApplicationWithContext indicates an expected call of UpdateApplicationWithContext
+func (mr *MockMgnAPIMockRecorder) UpdateApplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationWithContext", reflect.TypeOf((*MockMgnAPI)(nil).UpdateApplicationWithContext), varargs...)
 }
 
 // UpdateLaunchConfiguration mocks base method
@@ -1881,4 +3063,54 @@ func (mr *MockMgnAPIMockRecorder) UpdateSourceServerReplicationTypeWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSourceServerReplicationTypeWithContext", reflect.TypeOf((*MockMgnAPI)(nil).UpdateSourceServerReplicationTypeWithContext), varargs...)
+}
+
+// UpdateWave mocks base method
+func (m *MockMgnAPI) UpdateWave(arg0 *mgn.UpdateWaveInput) (*mgn.UpdateWaveOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWave", arg0)
+	ret0, _ := ret[0].(*mgn.UpdateWaveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWave indicates an expected call of UpdateWave
+func (mr *MockMgnAPIMockRecorder) UpdateWave(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWave", reflect.TypeOf((*MockMgnAPI)(nil).UpdateWave), arg0)
+}
+
+// UpdateWaveRequest mocks base method
+func (m *MockMgnAPI) UpdateWaveRequest(arg0 *mgn.UpdateWaveInput) (*request.Request, *mgn.UpdateWaveOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWaveRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.UpdateWaveOutput)
+	return ret0, ret1
+}
+
+// UpdateWaveRequest indicates an expected call of UpdateWaveRequest
+func (mr *MockMgnAPIMockRecorder) UpdateWaveRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWaveRequest", reflect.TypeOf((*MockMgnAPI)(nil).UpdateWaveRequest), arg0)
+}
+
+// UpdateWaveWithContext mocks base method
+func (m *MockMgnAPI) UpdateWaveWithContext(arg0 context.Context, arg1 *mgn.UpdateWaveInput, arg2 ...request.Option) (*mgn.UpdateWaveOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateWaveWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.UpdateWaveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWaveWithContext indicates an expected call of UpdateWaveWithContext
+func (mr *MockMgnAPIMockRecorder) UpdateWaveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWaveWithContext", reflect.TypeOf((*MockMgnAPI)(nil).UpdateWaveWithContext), varargs...)
 }

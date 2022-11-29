@@ -385,6 +385,106 @@ func (mr *MockTextractAPIMockRecorder) GetExpenseAnalysisWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetExpenseAnalysisWithContext", reflect.TypeOf((*MockTextractAPI)(nil).GetExpenseAnalysisWithContext), varargs...)
 }
 
+// GetLendingAnalysis mocks base method
+func (m *MockTextractAPI) GetLendingAnalysis(arg0 *textract.GetLendingAnalysisInput) (*textract.GetLendingAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLendingAnalysis", arg0)
+	ret0, _ := ret[0].(*textract.GetLendingAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLendingAnalysis indicates an expected call of GetLendingAnalysis
+func (mr *MockTextractAPIMockRecorder) GetLendingAnalysis(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLendingAnalysis", reflect.TypeOf((*MockTextractAPI)(nil).GetLendingAnalysis), arg0)
+}
+
+// GetLendingAnalysisRequest mocks base method
+func (m *MockTextractAPI) GetLendingAnalysisRequest(arg0 *textract.GetLendingAnalysisInput) (*request.Request, *textract.GetLendingAnalysisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLendingAnalysisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.GetLendingAnalysisOutput)
+	return ret0, ret1
+}
+
+// GetLendingAnalysisRequest indicates an expected call of GetLendingAnalysisRequest
+func (mr *MockTextractAPIMockRecorder) GetLendingAnalysisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLendingAnalysisRequest", reflect.TypeOf((*MockTextractAPI)(nil).GetLendingAnalysisRequest), arg0)
+}
+
+// GetLendingAnalysisSummary mocks base method
+func (m *MockTextractAPI) GetLendingAnalysisSummary(arg0 *textract.GetLendingAnalysisSummaryInput) (*textract.GetLendingAnalysisSummaryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLendingAnalysisSummary", arg0)
+	ret0, _ := ret[0].(*textract.GetLendingAnalysisSummaryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLendingAnalysisSummary indicates an expected call of GetLendingAnalysisSummary
+func (mr *MockTextractAPIMockRecorder) GetLendingAnalysisSummary(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLendingAnalysisSummary", reflect.TypeOf((*MockTextractAPI)(nil).GetLendingAnalysisSummary), arg0)
+}
+
+// GetLendingAnalysisSummaryRequest mocks base method
+func (m *MockTextractAPI) GetLendingAnalysisSummaryRequest(arg0 *textract.GetLendingAnalysisSummaryInput) (*request.Request, *textract.GetLendingAnalysisSummaryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLendingAnalysisSummaryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.GetLendingAnalysisSummaryOutput)
+	return ret0, ret1
+}
+
+// GetLendingAnalysisSummaryRequest indicates an expected call of GetLendingAnalysisSummaryRequest
+func (mr *MockTextractAPIMockRecorder) GetLendingAnalysisSummaryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLendingAnalysisSummaryRequest", reflect.TypeOf((*MockTextractAPI)(nil).GetLendingAnalysisSummaryRequest), arg0)
+}
+
+// GetLendingAnalysisSummaryWithContext mocks base method
+func (m *MockTextractAPI) GetLendingAnalysisSummaryWithContext(arg0 context.Context, arg1 *textract.GetLendingAnalysisSummaryInput, arg2 ...request.Option) (*textract.GetLendingAnalysisSummaryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLendingAnalysisSummaryWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.GetLendingAnalysisSummaryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLendingAnalysisSummaryWithContext indicates an expected call of GetLendingAnalysisSummaryWithContext
+func (mr *MockTextractAPIMockRecorder) GetLendingAnalysisSummaryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLendingAnalysisSummaryWithContext", reflect.TypeOf((*MockTextractAPI)(nil).GetLendingAnalysisSummaryWithContext), varargs...)
+}
+
+// GetLendingAnalysisWithContext mocks base method
+func (m *MockTextractAPI) GetLendingAnalysisWithContext(arg0 context.Context, arg1 *textract.GetLendingAnalysisInput, arg2 ...request.Option) (*textract.GetLendingAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLendingAnalysisWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.GetLendingAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLendingAnalysisWithContext indicates an expected call of GetLendingAnalysisWithContext
+func (mr *MockTextractAPIMockRecorder) GetLendingAnalysisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLendingAnalysisWithContext", reflect.TypeOf((*MockTextractAPI)(nil).GetLendingAnalysisWithContext), varargs...)
+}
+
 // StartDocumentAnalysis mocks base method
 func (m *MockTextractAPI) StartDocumentAnalysis(arg0 *textract.StartDocumentAnalysisInput) (*textract.StartDocumentAnalysisOutput, error) {
 	m.ctrl.T.Helper()
@@ -533,4 +633,54 @@ func (mr *MockTextractAPIMockRecorder) StartExpenseAnalysisWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartExpenseAnalysisWithContext", reflect.TypeOf((*MockTextractAPI)(nil).StartExpenseAnalysisWithContext), varargs...)
+}
+
+// StartLendingAnalysis mocks base method
+func (m *MockTextractAPI) StartLendingAnalysis(arg0 *textract.StartLendingAnalysisInput) (*textract.StartLendingAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartLendingAnalysis", arg0)
+	ret0, _ := ret[0].(*textract.StartLendingAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartLendingAnalysis indicates an expected call of StartLendingAnalysis
+func (mr *MockTextractAPIMockRecorder) StartLendingAnalysis(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartLendingAnalysis", reflect.TypeOf((*MockTextractAPI)(nil).StartLendingAnalysis), arg0)
+}
+
+// StartLendingAnalysisRequest mocks base method
+func (m *MockTextractAPI) StartLendingAnalysisRequest(arg0 *textract.StartLendingAnalysisInput) (*request.Request, *textract.StartLendingAnalysisOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartLendingAnalysisRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.StartLendingAnalysisOutput)
+	return ret0, ret1
+}
+
+// StartLendingAnalysisRequest indicates an expected call of StartLendingAnalysisRequest
+func (mr *MockTextractAPIMockRecorder) StartLendingAnalysisRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartLendingAnalysisRequest", reflect.TypeOf((*MockTextractAPI)(nil).StartLendingAnalysisRequest), arg0)
+}
+
+// StartLendingAnalysisWithContext mocks base method
+func (m *MockTextractAPI) StartLendingAnalysisWithContext(arg0 context.Context, arg1 *textract.StartLendingAnalysisInput, arg2 ...request.Option) (*textract.StartLendingAnalysisOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartLendingAnalysisWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.StartLendingAnalysisOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartLendingAnalysisWithContext indicates an expected call of StartLendingAnalysisWithContext
+func (mr *MockTextractAPIMockRecorder) StartLendingAnalysisWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartLendingAnalysisWithContext", reflect.TypeOf((*MockTextractAPI)(nil).StartLendingAnalysisWithContext), varargs...)
 }

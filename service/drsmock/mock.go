@@ -1399,6 +1399,56 @@ func (mr *MockDrsAPIMockRecorder) RetryDataReplicationWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetryDataReplicationWithContext", reflect.TypeOf((*MockDrsAPI)(nil).RetryDataReplicationWithContext), varargs...)
 }
 
+// ReverseReplication mocks base method
+func (m *MockDrsAPI) ReverseReplication(arg0 *drs.ReverseReplicationInput) (*drs.ReverseReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ReverseReplication", arg0)
+	ret0, _ := ret[0].(*drs.ReverseReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ReverseReplication indicates an expected call of ReverseReplication
+func (mr *MockDrsAPIMockRecorder) ReverseReplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReverseReplication", reflect.TypeOf((*MockDrsAPI)(nil).ReverseReplication), arg0)
+}
+
+// ReverseReplicationRequest mocks base method
+func (m *MockDrsAPI) ReverseReplicationRequest(arg0 *drs.ReverseReplicationInput) (*request.Request, *drs.ReverseReplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ReverseReplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.ReverseReplicationOutput)
+	return ret0, ret1
+}
+
+// ReverseReplicationRequest indicates an expected call of ReverseReplicationRequest
+func (mr *MockDrsAPIMockRecorder) ReverseReplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReverseReplicationRequest", reflect.TypeOf((*MockDrsAPI)(nil).ReverseReplicationRequest), arg0)
+}
+
+// ReverseReplicationWithContext mocks base method
+func (m *MockDrsAPI) ReverseReplicationWithContext(arg0 context.Context, arg1 *drs.ReverseReplicationInput, arg2 ...request.Option) (*drs.ReverseReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ReverseReplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.ReverseReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ReverseReplicationWithContext indicates an expected call of ReverseReplicationWithContext
+func (mr *MockDrsAPIMockRecorder) ReverseReplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReverseReplicationWithContext", reflect.TypeOf((*MockDrsAPI)(nil).ReverseReplicationWithContext), varargs...)
+}
+
 // StartFailbackLaunch mocks base method
 func (m *MockDrsAPI) StartFailbackLaunch(arg0 *drs.StartFailbackLaunchInput) (*drs.StartFailbackLaunchOutput, error) {
 	m.ctrl.T.Helper()
@@ -1499,6 +1549,56 @@ func (mr *MockDrsAPIMockRecorder) StartRecoveryWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartRecoveryWithContext", reflect.TypeOf((*MockDrsAPI)(nil).StartRecoveryWithContext), varargs...)
 }
 
+// StartReplication mocks base method
+func (m *MockDrsAPI) StartReplication(arg0 *drs.StartReplicationInput) (*drs.StartReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartReplication", arg0)
+	ret0, _ := ret[0].(*drs.StartReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartReplication indicates an expected call of StartReplication
+func (mr *MockDrsAPIMockRecorder) StartReplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartReplication", reflect.TypeOf((*MockDrsAPI)(nil).StartReplication), arg0)
+}
+
+// StartReplicationRequest mocks base method
+func (m *MockDrsAPI) StartReplicationRequest(arg0 *drs.StartReplicationInput) (*request.Request, *drs.StartReplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartReplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.StartReplicationOutput)
+	return ret0, ret1
+}
+
+// StartReplicationRequest indicates an expected call of StartReplicationRequest
+func (mr *MockDrsAPIMockRecorder) StartReplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartReplicationRequest", reflect.TypeOf((*MockDrsAPI)(nil).StartReplicationRequest), arg0)
+}
+
+// StartReplicationWithContext mocks base method
+func (m *MockDrsAPI) StartReplicationWithContext(arg0 context.Context, arg1 *drs.StartReplicationInput, arg2 ...request.Option) (*drs.StartReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartReplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.StartReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartReplicationWithContext indicates an expected call of StartReplicationWithContext
+func (mr *MockDrsAPIMockRecorder) StartReplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartReplicationWithContext", reflect.TypeOf((*MockDrsAPI)(nil).StartReplicationWithContext), varargs...)
+}
+
 // StopFailback mocks base method
 func (m *MockDrsAPI) StopFailback(arg0 *drs.StopFailbackInput) (*drs.StopFailbackOutput, error) {
 	m.ctrl.T.Helper()
@@ -1547,6 +1647,56 @@ func (mr *MockDrsAPIMockRecorder) StopFailbackWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopFailbackWithContext", reflect.TypeOf((*MockDrsAPI)(nil).StopFailbackWithContext), varargs...)
+}
+
+// StopReplication mocks base method
+func (m *MockDrsAPI) StopReplication(arg0 *drs.StopReplicationInput) (*drs.StopReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopReplication", arg0)
+	ret0, _ := ret[0].(*drs.StopReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopReplication indicates an expected call of StopReplication
+func (mr *MockDrsAPIMockRecorder) StopReplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopReplication", reflect.TypeOf((*MockDrsAPI)(nil).StopReplication), arg0)
+}
+
+// StopReplicationRequest mocks base method
+func (m *MockDrsAPI) StopReplicationRequest(arg0 *drs.StopReplicationInput) (*request.Request, *drs.StopReplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopReplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.StopReplicationOutput)
+	return ret0, ret1
+}
+
+// StopReplicationRequest indicates an expected call of StopReplicationRequest
+func (mr *MockDrsAPIMockRecorder) StopReplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopReplicationRequest", reflect.TypeOf((*MockDrsAPI)(nil).StopReplicationRequest), arg0)
+}
+
+// StopReplicationWithContext mocks base method
+func (m *MockDrsAPI) StopReplicationWithContext(arg0 context.Context, arg1 *drs.StopReplicationInput, arg2 ...request.Option) (*drs.StopReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopReplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.StopReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopReplicationWithContext indicates an expected call of StopReplicationWithContext
+func (mr *MockDrsAPIMockRecorder) StopReplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopReplicationWithContext", reflect.TypeOf((*MockDrsAPI)(nil).StopReplicationWithContext), varargs...)
 }
 
 // TagResource mocks base method

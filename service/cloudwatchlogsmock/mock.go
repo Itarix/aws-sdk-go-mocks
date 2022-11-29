@@ -285,6 +285,56 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) CreateLogStreamWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLogStreamWithContext", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).CreateLogStreamWithContext), varargs...)
 }
 
+// DeleteDataProtectionPolicy mocks base method
+func (m *MockCloudWatchLogsAPI) DeleteDataProtectionPolicy(arg0 *cloudwatchlogs.DeleteDataProtectionPolicyInput) (*cloudwatchlogs.DeleteDataProtectionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDataProtectionPolicy", arg0)
+	ret0, _ := ret[0].(*cloudwatchlogs.DeleteDataProtectionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDataProtectionPolicy indicates an expected call of DeleteDataProtectionPolicy
+func (mr *MockCloudWatchLogsAPIMockRecorder) DeleteDataProtectionPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataProtectionPolicy", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).DeleteDataProtectionPolicy), arg0)
+}
+
+// DeleteDataProtectionPolicyRequest mocks base method
+func (m *MockCloudWatchLogsAPI) DeleteDataProtectionPolicyRequest(arg0 *cloudwatchlogs.DeleteDataProtectionPolicyInput) (*request.Request, *cloudwatchlogs.DeleteDataProtectionPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDataProtectionPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchlogs.DeleteDataProtectionPolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteDataProtectionPolicyRequest indicates an expected call of DeleteDataProtectionPolicyRequest
+func (mr *MockCloudWatchLogsAPIMockRecorder) DeleteDataProtectionPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataProtectionPolicyRequest", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).DeleteDataProtectionPolicyRequest), arg0)
+}
+
+// DeleteDataProtectionPolicyWithContext mocks base method
+func (m *MockCloudWatchLogsAPI) DeleteDataProtectionPolicyWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DeleteDataProtectionPolicyInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteDataProtectionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDataProtectionPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchlogs.DeleteDataProtectionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDataProtectionPolicyWithContext indicates an expected call of DeleteDataProtectionPolicyWithContext
+func (mr *MockCloudWatchLogsAPIMockRecorder) DeleteDataProtectionPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataProtectionPolicyWithContext", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).DeleteDataProtectionPolicyWithContext), varargs...)
+}
+
 // DeleteDestination mocks base method
 func (m *MockCloudWatchLogsAPI) DeleteDestination(arg0 *cloudwatchlogs.DeleteDestinationInput) (*cloudwatchlogs.DeleteDestinationOutput, error) {
 	m.ctrl.T.Helper()
@@ -1433,6 +1483,56 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) FilterLogEventsWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FilterLogEventsWithContext", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).FilterLogEventsWithContext), varargs...)
 }
 
+// GetDataProtectionPolicy mocks base method
+func (m *MockCloudWatchLogsAPI) GetDataProtectionPolicy(arg0 *cloudwatchlogs.GetDataProtectionPolicyInput) (*cloudwatchlogs.GetDataProtectionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataProtectionPolicy", arg0)
+	ret0, _ := ret[0].(*cloudwatchlogs.GetDataProtectionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataProtectionPolicy indicates an expected call of GetDataProtectionPolicy
+func (mr *MockCloudWatchLogsAPIMockRecorder) GetDataProtectionPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataProtectionPolicy", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).GetDataProtectionPolicy), arg0)
+}
+
+// GetDataProtectionPolicyRequest mocks base method
+func (m *MockCloudWatchLogsAPI) GetDataProtectionPolicyRequest(arg0 *cloudwatchlogs.GetDataProtectionPolicyInput) (*request.Request, *cloudwatchlogs.GetDataProtectionPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataProtectionPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchlogs.GetDataProtectionPolicyOutput)
+	return ret0, ret1
+}
+
+// GetDataProtectionPolicyRequest indicates an expected call of GetDataProtectionPolicyRequest
+func (mr *MockCloudWatchLogsAPIMockRecorder) GetDataProtectionPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataProtectionPolicyRequest", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).GetDataProtectionPolicyRequest), arg0)
+}
+
+// GetDataProtectionPolicyWithContext mocks base method
+func (m *MockCloudWatchLogsAPI) GetDataProtectionPolicyWithContext(arg0 context.Context, arg1 *cloudwatchlogs.GetDataProtectionPolicyInput, arg2 ...request.Option) (*cloudwatchlogs.GetDataProtectionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDataProtectionPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchlogs.GetDataProtectionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataProtectionPolicyWithContext indicates an expected call of GetDataProtectionPolicyWithContext
+func (mr *MockCloudWatchLogsAPIMockRecorder) GetDataProtectionPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataProtectionPolicyWithContext", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).GetDataProtectionPolicyWithContext), varargs...)
+}
+
 // GetLogEvents mocks base method
 func (m *MockCloudWatchLogsAPI) GetLogEvents(arg0 *cloudwatchlogs.GetLogEventsInput) (*cloudwatchlogs.GetLogEventsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1764,6 +1864,56 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) ListTagsLogGroupWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsLogGroupWithContext", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).ListTagsLogGroupWithContext), varargs...)
+}
+
+// PutDataProtectionPolicy mocks base method
+func (m *MockCloudWatchLogsAPI) PutDataProtectionPolicy(arg0 *cloudwatchlogs.PutDataProtectionPolicyInput) (*cloudwatchlogs.PutDataProtectionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutDataProtectionPolicy", arg0)
+	ret0, _ := ret[0].(*cloudwatchlogs.PutDataProtectionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutDataProtectionPolicy indicates an expected call of PutDataProtectionPolicy
+func (mr *MockCloudWatchLogsAPIMockRecorder) PutDataProtectionPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDataProtectionPolicy", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).PutDataProtectionPolicy), arg0)
+}
+
+// PutDataProtectionPolicyRequest mocks base method
+func (m *MockCloudWatchLogsAPI) PutDataProtectionPolicyRequest(arg0 *cloudwatchlogs.PutDataProtectionPolicyInput) (*request.Request, *cloudwatchlogs.PutDataProtectionPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutDataProtectionPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchlogs.PutDataProtectionPolicyOutput)
+	return ret0, ret1
+}
+
+// PutDataProtectionPolicyRequest indicates an expected call of PutDataProtectionPolicyRequest
+func (mr *MockCloudWatchLogsAPIMockRecorder) PutDataProtectionPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDataProtectionPolicyRequest", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).PutDataProtectionPolicyRequest), arg0)
+}
+
+// PutDataProtectionPolicyWithContext mocks base method
+func (m *MockCloudWatchLogsAPI) PutDataProtectionPolicyWithContext(arg0 context.Context, arg1 *cloudwatchlogs.PutDataProtectionPolicyInput, arg2 ...request.Option) (*cloudwatchlogs.PutDataProtectionPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutDataProtectionPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchlogs.PutDataProtectionPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutDataProtectionPolicyWithContext indicates an expected call of PutDataProtectionPolicyWithContext
+func (mr *MockCloudWatchLogsAPIMockRecorder) PutDataProtectionPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDataProtectionPolicyWithContext", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).PutDataProtectionPolicyWithContext), varargs...)
 }
 
 // PutDestination mocks base method

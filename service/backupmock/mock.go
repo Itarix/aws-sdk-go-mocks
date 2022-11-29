@@ -35,6 +35,56 @@ func (m *MockBackupAPI) EXPECT() *MockBackupAPIMockRecorder {
 	return m.recorder
 }
 
+// CancelLegalHold mocks base method
+func (m *MockBackupAPI) CancelLegalHold(arg0 *backup.CancelLegalHoldInput) (*backup.CancelLegalHoldOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelLegalHold", arg0)
+	ret0, _ := ret[0].(*backup.CancelLegalHoldOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelLegalHold indicates an expected call of CancelLegalHold
+func (mr *MockBackupAPIMockRecorder) CancelLegalHold(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelLegalHold", reflect.TypeOf((*MockBackupAPI)(nil).CancelLegalHold), arg0)
+}
+
+// CancelLegalHoldRequest mocks base method
+func (m *MockBackupAPI) CancelLegalHoldRequest(arg0 *backup.CancelLegalHoldInput) (*request.Request, *backup.CancelLegalHoldOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelLegalHoldRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.CancelLegalHoldOutput)
+	return ret0, ret1
+}
+
+// CancelLegalHoldRequest indicates an expected call of CancelLegalHoldRequest
+func (mr *MockBackupAPIMockRecorder) CancelLegalHoldRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelLegalHoldRequest", reflect.TypeOf((*MockBackupAPI)(nil).CancelLegalHoldRequest), arg0)
+}
+
+// CancelLegalHoldWithContext mocks base method
+func (m *MockBackupAPI) CancelLegalHoldWithContext(arg0 context.Context, arg1 *backup.CancelLegalHoldInput, arg2 ...request.Option) (*backup.CancelLegalHoldOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelLegalHoldWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.CancelLegalHoldOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelLegalHoldWithContext indicates an expected call of CancelLegalHoldWithContext
+func (mr *MockBackupAPIMockRecorder) CancelLegalHoldWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelLegalHoldWithContext", reflect.TypeOf((*MockBackupAPI)(nil).CancelLegalHoldWithContext), varargs...)
+}
+
 // CreateBackupPlan mocks base method
 func (m *MockBackupAPI) CreateBackupPlan(arg0 *backup.CreateBackupPlanInput) (*backup.CreateBackupPlanOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,56 @@ func (mr *MockBackupAPIMockRecorder) CreateFrameworkWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFrameworkWithContext", reflect.TypeOf((*MockBackupAPI)(nil).CreateFrameworkWithContext), varargs...)
+}
+
+// CreateLegalHold mocks base method
+func (m *MockBackupAPI) CreateLegalHold(arg0 *backup.CreateLegalHoldInput) (*backup.CreateLegalHoldOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLegalHold", arg0)
+	ret0, _ := ret[0].(*backup.CreateLegalHoldOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLegalHold indicates an expected call of CreateLegalHold
+func (mr *MockBackupAPIMockRecorder) CreateLegalHold(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLegalHold", reflect.TypeOf((*MockBackupAPI)(nil).CreateLegalHold), arg0)
+}
+
+// CreateLegalHoldRequest mocks base method
+func (m *MockBackupAPI) CreateLegalHoldRequest(arg0 *backup.CreateLegalHoldInput) (*request.Request, *backup.CreateLegalHoldOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLegalHoldRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.CreateLegalHoldOutput)
+	return ret0, ret1
+}
+
+// CreateLegalHoldRequest indicates an expected call of CreateLegalHoldRequest
+func (mr *MockBackupAPIMockRecorder) CreateLegalHoldRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLegalHoldRequest", reflect.TypeOf((*MockBackupAPI)(nil).CreateLegalHoldRequest), arg0)
+}
+
+// CreateLegalHoldWithContext mocks base method
+func (m *MockBackupAPI) CreateLegalHoldWithContext(arg0 context.Context, arg1 *backup.CreateLegalHoldInput, arg2 ...request.Option) (*backup.CreateLegalHoldOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLegalHoldWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.CreateLegalHoldOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLegalHoldWithContext indicates an expected call of CreateLegalHoldWithContext
+func (mr *MockBackupAPIMockRecorder) CreateLegalHoldWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLegalHoldWithContext", reflect.TypeOf((*MockBackupAPI)(nil).CreateLegalHoldWithContext), varargs...)
 }
 
 // CreateReportPlan mocks base method
@@ -1300,6 +1400,56 @@ func (mr *MockBackupAPIMockRecorder) DisassociateRecoveryPoint(arg0 interface{})
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateRecoveryPoint", reflect.TypeOf((*MockBackupAPI)(nil).DisassociateRecoveryPoint), arg0)
 }
 
+// DisassociateRecoveryPointFromParent mocks base method
+func (m *MockBackupAPI) DisassociateRecoveryPointFromParent(arg0 *backup.DisassociateRecoveryPointFromParentInput) (*backup.DisassociateRecoveryPointFromParentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateRecoveryPointFromParent", arg0)
+	ret0, _ := ret[0].(*backup.DisassociateRecoveryPointFromParentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateRecoveryPointFromParent indicates an expected call of DisassociateRecoveryPointFromParent
+func (mr *MockBackupAPIMockRecorder) DisassociateRecoveryPointFromParent(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateRecoveryPointFromParent", reflect.TypeOf((*MockBackupAPI)(nil).DisassociateRecoveryPointFromParent), arg0)
+}
+
+// DisassociateRecoveryPointFromParentRequest mocks base method
+func (m *MockBackupAPI) DisassociateRecoveryPointFromParentRequest(arg0 *backup.DisassociateRecoveryPointFromParentInput) (*request.Request, *backup.DisassociateRecoveryPointFromParentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateRecoveryPointFromParentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.DisassociateRecoveryPointFromParentOutput)
+	return ret0, ret1
+}
+
+// DisassociateRecoveryPointFromParentRequest indicates an expected call of DisassociateRecoveryPointFromParentRequest
+func (mr *MockBackupAPIMockRecorder) DisassociateRecoveryPointFromParentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateRecoveryPointFromParentRequest", reflect.TypeOf((*MockBackupAPI)(nil).DisassociateRecoveryPointFromParentRequest), arg0)
+}
+
+// DisassociateRecoveryPointFromParentWithContext mocks base method
+func (m *MockBackupAPI) DisassociateRecoveryPointFromParentWithContext(arg0 context.Context, arg1 *backup.DisassociateRecoveryPointFromParentInput, arg2 ...request.Option) (*backup.DisassociateRecoveryPointFromParentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateRecoveryPointFromParentWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.DisassociateRecoveryPointFromParentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateRecoveryPointFromParentWithContext indicates an expected call of DisassociateRecoveryPointFromParentWithContext
+func (mr *MockBackupAPIMockRecorder) DisassociateRecoveryPointFromParentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateRecoveryPointFromParentWithContext", reflect.TypeOf((*MockBackupAPI)(nil).DisassociateRecoveryPointFromParentWithContext), varargs...)
+}
+
 // DisassociateRecoveryPointRequest mocks base method
 func (m *MockBackupAPI) DisassociateRecoveryPointRequest(arg0 *backup.DisassociateRecoveryPointInput) (*request.Request, *backup.DisassociateRecoveryPointOutput) {
 	m.ctrl.T.Helper()
@@ -1683,6 +1833,56 @@ func (mr *MockBackupAPIMockRecorder) GetBackupVaultNotificationsWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBackupVaultNotificationsWithContext", reflect.TypeOf((*MockBackupAPI)(nil).GetBackupVaultNotificationsWithContext), varargs...)
+}
+
+// GetLegalHold mocks base method
+func (m *MockBackupAPI) GetLegalHold(arg0 *backup.GetLegalHoldInput) (*backup.GetLegalHoldOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLegalHold", arg0)
+	ret0, _ := ret[0].(*backup.GetLegalHoldOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLegalHold indicates an expected call of GetLegalHold
+func (mr *MockBackupAPIMockRecorder) GetLegalHold(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLegalHold", reflect.TypeOf((*MockBackupAPI)(nil).GetLegalHold), arg0)
+}
+
+// GetLegalHoldRequest mocks base method
+func (m *MockBackupAPI) GetLegalHoldRequest(arg0 *backup.GetLegalHoldInput) (*request.Request, *backup.GetLegalHoldOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLegalHoldRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.GetLegalHoldOutput)
+	return ret0, ret1
+}
+
+// GetLegalHoldRequest indicates an expected call of GetLegalHoldRequest
+func (mr *MockBackupAPIMockRecorder) GetLegalHoldRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLegalHoldRequest", reflect.TypeOf((*MockBackupAPI)(nil).GetLegalHoldRequest), arg0)
+}
+
+// GetLegalHoldWithContext mocks base method
+func (m *MockBackupAPI) GetLegalHoldWithContext(arg0 context.Context, arg1 *backup.GetLegalHoldInput, arg2 ...request.Option) (*backup.GetLegalHoldOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLegalHoldWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.GetLegalHoldOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLegalHoldWithContext indicates an expected call of GetLegalHoldWithContext
+func (mr *MockBackupAPIMockRecorder) GetLegalHoldWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLegalHoldWithContext", reflect.TypeOf((*MockBackupAPI)(nil).GetLegalHoldWithContext), varargs...)
 }
 
 // GetRecoveryPointRestoreMetadata mocks base method
@@ -2449,6 +2649,89 @@ func (mr *MockBackupAPIMockRecorder) ListFrameworksWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFrameworksWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListFrameworksWithContext), varargs...)
 }
 
+// ListLegalHolds mocks base method
+func (m *MockBackupAPI) ListLegalHolds(arg0 *backup.ListLegalHoldsInput) (*backup.ListLegalHoldsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLegalHolds", arg0)
+	ret0, _ := ret[0].(*backup.ListLegalHoldsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLegalHolds indicates an expected call of ListLegalHolds
+func (mr *MockBackupAPIMockRecorder) ListLegalHolds(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLegalHolds", reflect.TypeOf((*MockBackupAPI)(nil).ListLegalHolds), arg0)
+}
+
+// ListLegalHoldsPages mocks base method
+func (m *MockBackupAPI) ListLegalHoldsPages(arg0 *backup.ListLegalHoldsInput, arg1 func(*backup.ListLegalHoldsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLegalHoldsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLegalHoldsPages indicates an expected call of ListLegalHoldsPages
+func (mr *MockBackupAPIMockRecorder) ListLegalHoldsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLegalHoldsPages", reflect.TypeOf((*MockBackupAPI)(nil).ListLegalHoldsPages), arg0, arg1)
+}
+
+// ListLegalHoldsPagesWithContext mocks base method
+func (m *MockBackupAPI) ListLegalHoldsPagesWithContext(arg0 context.Context, arg1 *backup.ListLegalHoldsInput, arg2 func(*backup.ListLegalHoldsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLegalHoldsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLegalHoldsPagesWithContext indicates an expected call of ListLegalHoldsPagesWithContext
+func (mr *MockBackupAPIMockRecorder) ListLegalHoldsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLegalHoldsPagesWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListLegalHoldsPagesWithContext), varargs...)
+}
+
+// ListLegalHoldsRequest mocks base method
+func (m *MockBackupAPI) ListLegalHoldsRequest(arg0 *backup.ListLegalHoldsInput) (*request.Request, *backup.ListLegalHoldsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLegalHoldsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.ListLegalHoldsOutput)
+	return ret0, ret1
+}
+
+// ListLegalHoldsRequest indicates an expected call of ListLegalHoldsRequest
+func (mr *MockBackupAPIMockRecorder) ListLegalHoldsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLegalHoldsRequest", reflect.TypeOf((*MockBackupAPI)(nil).ListLegalHoldsRequest), arg0)
+}
+
+// ListLegalHoldsWithContext mocks base method
+func (m *MockBackupAPI) ListLegalHoldsWithContext(arg0 context.Context, arg1 *backup.ListLegalHoldsInput, arg2 ...request.Option) (*backup.ListLegalHoldsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLegalHoldsWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.ListLegalHoldsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLegalHoldsWithContext indicates an expected call of ListLegalHoldsWithContext
+func (mr *MockBackupAPIMockRecorder) ListLegalHoldsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLegalHoldsWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListLegalHoldsWithContext), varargs...)
+}
+
 // ListProtectedResources mocks base method
 func (m *MockBackupAPI) ListProtectedResources(arg0 *backup.ListProtectedResourcesInput) (*backup.ListProtectedResourcesOutput, error) {
 	m.ctrl.T.Helper()
@@ -2613,6 +2896,89 @@ func (mr *MockBackupAPIMockRecorder) ListRecoveryPointsByBackupVaultWithContext(
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecoveryPointsByBackupVaultWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListRecoveryPointsByBackupVaultWithContext), varargs...)
+}
+
+// ListRecoveryPointsByLegalHold mocks base method
+func (m *MockBackupAPI) ListRecoveryPointsByLegalHold(arg0 *backup.ListRecoveryPointsByLegalHoldInput) (*backup.ListRecoveryPointsByLegalHoldOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRecoveryPointsByLegalHold", arg0)
+	ret0, _ := ret[0].(*backup.ListRecoveryPointsByLegalHoldOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRecoveryPointsByLegalHold indicates an expected call of ListRecoveryPointsByLegalHold
+func (mr *MockBackupAPIMockRecorder) ListRecoveryPointsByLegalHold(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecoveryPointsByLegalHold", reflect.TypeOf((*MockBackupAPI)(nil).ListRecoveryPointsByLegalHold), arg0)
+}
+
+// ListRecoveryPointsByLegalHoldPages mocks base method
+func (m *MockBackupAPI) ListRecoveryPointsByLegalHoldPages(arg0 *backup.ListRecoveryPointsByLegalHoldInput, arg1 func(*backup.ListRecoveryPointsByLegalHoldOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRecoveryPointsByLegalHoldPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRecoveryPointsByLegalHoldPages indicates an expected call of ListRecoveryPointsByLegalHoldPages
+func (mr *MockBackupAPIMockRecorder) ListRecoveryPointsByLegalHoldPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecoveryPointsByLegalHoldPages", reflect.TypeOf((*MockBackupAPI)(nil).ListRecoveryPointsByLegalHoldPages), arg0, arg1)
+}
+
+// ListRecoveryPointsByLegalHoldPagesWithContext mocks base method
+func (m *MockBackupAPI) ListRecoveryPointsByLegalHoldPagesWithContext(arg0 context.Context, arg1 *backup.ListRecoveryPointsByLegalHoldInput, arg2 func(*backup.ListRecoveryPointsByLegalHoldOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRecoveryPointsByLegalHoldPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRecoveryPointsByLegalHoldPagesWithContext indicates an expected call of ListRecoveryPointsByLegalHoldPagesWithContext
+func (mr *MockBackupAPIMockRecorder) ListRecoveryPointsByLegalHoldPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecoveryPointsByLegalHoldPagesWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListRecoveryPointsByLegalHoldPagesWithContext), varargs...)
+}
+
+// ListRecoveryPointsByLegalHoldRequest mocks base method
+func (m *MockBackupAPI) ListRecoveryPointsByLegalHoldRequest(arg0 *backup.ListRecoveryPointsByLegalHoldInput) (*request.Request, *backup.ListRecoveryPointsByLegalHoldOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRecoveryPointsByLegalHoldRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.ListRecoveryPointsByLegalHoldOutput)
+	return ret0, ret1
+}
+
+// ListRecoveryPointsByLegalHoldRequest indicates an expected call of ListRecoveryPointsByLegalHoldRequest
+func (mr *MockBackupAPIMockRecorder) ListRecoveryPointsByLegalHoldRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecoveryPointsByLegalHoldRequest", reflect.TypeOf((*MockBackupAPI)(nil).ListRecoveryPointsByLegalHoldRequest), arg0)
+}
+
+// ListRecoveryPointsByLegalHoldWithContext mocks base method
+func (m *MockBackupAPI) ListRecoveryPointsByLegalHoldWithContext(arg0 context.Context, arg1 *backup.ListRecoveryPointsByLegalHoldInput, arg2 ...request.Option) (*backup.ListRecoveryPointsByLegalHoldOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRecoveryPointsByLegalHoldWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.ListRecoveryPointsByLegalHoldOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRecoveryPointsByLegalHoldWithContext indicates an expected call of ListRecoveryPointsByLegalHoldWithContext
+func (mr *MockBackupAPIMockRecorder) ListRecoveryPointsByLegalHoldWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecoveryPointsByLegalHoldWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListRecoveryPointsByLegalHoldWithContext), varargs...)
 }
 
 // ListRecoveryPointsByResource mocks base method
