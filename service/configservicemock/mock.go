@@ -4091,6 +4091,56 @@ func (mr *MockConfigServiceAPIMockRecorder) GetResourceConfigHistoryWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceConfigHistoryWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetResourceConfigHistoryWithContext), varargs...)
 }
 
+// GetResourceEvaluationSummary mocks base method
+func (m *MockConfigServiceAPI) GetResourceEvaluationSummary(arg0 *configservice.GetResourceEvaluationSummaryInput) (*configservice.GetResourceEvaluationSummaryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourceEvaluationSummary", arg0)
+	ret0, _ := ret[0].(*configservice.GetResourceEvaluationSummaryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourceEvaluationSummary indicates an expected call of GetResourceEvaluationSummary
+func (mr *MockConfigServiceAPIMockRecorder) GetResourceEvaluationSummary(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceEvaluationSummary", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetResourceEvaluationSummary), arg0)
+}
+
+// GetResourceEvaluationSummaryRequest mocks base method
+func (m *MockConfigServiceAPI) GetResourceEvaluationSummaryRequest(arg0 *configservice.GetResourceEvaluationSummaryInput) (*request.Request, *configservice.GetResourceEvaluationSummaryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourceEvaluationSummaryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.GetResourceEvaluationSummaryOutput)
+	return ret0, ret1
+}
+
+// GetResourceEvaluationSummaryRequest indicates an expected call of GetResourceEvaluationSummaryRequest
+func (mr *MockConfigServiceAPIMockRecorder) GetResourceEvaluationSummaryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceEvaluationSummaryRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetResourceEvaluationSummaryRequest), arg0)
+}
+
+// GetResourceEvaluationSummaryWithContext mocks base method
+func (m *MockConfigServiceAPI) GetResourceEvaluationSummaryWithContext(arg0 context.Context, arg1 *configservice.GetResourceEvaluationSummaryInput, arg2 ...request.Option) (*configservice.GetResourceEvaluationSummaryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResourceEvaluationSummaryWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.GetResourceEvaluationSummaryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourceEvaluationSummaryWithContext indicates an expected call of GetResourceEvaluationSummaryWithContext
+func (mr *MockConfigServiceAPIMockRecorder) GetResourceEvaluationSummaryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourceEvaluationSummaryWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).GetResourceEvaluationSummaryWithContext), varargs...)
+}
+
 // GetStoredQuery mocks base method
 func (m *MockConfigServiceAPI) GetStoredQuery(arg0 *configservice.GetStoredQueryInput) (*configservice.GetStoredQueryOutput, error) {
 	m.ctrl.T.Helper()
@@ -4388,6 +4438,89 @@ func (mr *MockConfigServiceAPIMockRecorder) ListDiscoveredResourcesWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveredResourcesWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListDiscoveredResourcesWithContext), varargs...)
+}
+
+// ListResourceEvaluations mocks base method
+func (m *MockConfigServiceAPI) ListResourceEvaluations(arg0 *configservice.ListResourceEvaluationsInput) (*configservice.ListResourceEvaluationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourceEvaluations", arg0)
+	ret0, _ := ret[0].(*configservice.ListResourceEvaluationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourceEvaluations indicates an expected call of ListResourceEvaluations
+func (mr *MockConfigServiceAPIMockRecorder) ListResourceEvaluations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceEvaluations", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListResourceEvaluations), arg0)
+}
+
+// ListResourceEvaluationsPages mocks base method
+func (m *MockConfigServiceAPI) ListResourceEvaluationsPages(arg0 *configservice.ListResourceEvaluationsInput, arg1 func(*configservice.ListResourceEvaluationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourceEvaluationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResourceEvaluationsPages indicates an expected call of ListResourceEvaluationsPages
+func (mr *MockConfigServiceAPIMockRecorder) ListResourceEvaluationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceEvaluationsPages", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListResourceEvaluationsPages), arg0, arg1)
+}
+
+// ListResourceEvaluationsPagesWithContext mocks base method
+func (m *MockConfigServiceAPI) ListResourceEvaluationsPagesWithContext(arg0 context.Context, arg1 *configservice.ListResourceEvaluationsInput, arg2 func(*configservice.ListResourceEvaluationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResourceEvaluationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResourceEvaluationsPagesWithContext indicates an expected call of ListResourceEvaluationsPagesWithContext
+func (mr *MockConfigServiceAPIMockRecorder) ListResourceEvaluationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceEvaluationsPagesWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListResourceEvaluationsPagesWithContext), varargs...)
+}
+
+// ListResourceEvaluationsRequest mocks base method
+func (m *MockConfigServiceAPI) ListResourceEvaluationsRequest(arg0 *configservice.ListResourceEvaluationsInput) (*request.Request, *configservice.ListResourceEvaluationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourceEvaluationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.ListResourceEvaluationsOutput)
+	return ret0, ret1
+}
+
+// ListResourceEvaluationsRequest indicates an expected call of ListResourceEvaluationsRequest
+func (mr *MockConfigServiceAPIMockRecorder) ListResourceEvaluationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceEvaluationsRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListResourceEvaluationsRequest), arg0)
+}
+
+// ListResourceEvaluationsWithContext mocks base method
+func (m *MockConfigServiceAPI) ListResourceEvaluationsWithContext(arg0 context.Context, arg1 *configservice.ListResourceEvaluationsInput, arg2 ...request.Option) (*configservice.ListResourceEvaluationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResourceEvaluationsWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.ListResourceEvaluationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourceEvaluationsWithContext indicates an expected call of ListResourceEvaluationsWithContext
+func (mr *MockConfigServiceAPIMockRecorder) ListResourceEvaluationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceEvaluationsWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).ListResourceEvaluationsWithContext), varargs...)
 }
 
 // ListStoredQueries mocks base method
@@ -5620,6 +5753,56 @@ func (mr *MockConfigServiceAPIMockRecorder) StartRemediationExecutionWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartRemediationExecutionWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).StartRemediationExecutionWithContext), varargs...)
+}
+
+// StartResourceEvaluation mocks base method
+func (m *MockConfigServiceAPI) StartResourceEvaluation(arg0 *configservice.StartResourceEvaluationInput) (*configservice.StartResourceEvaluationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartResourceEvaluation", arg0)
+	ret0, _ := ret[0].(*configservice.StartResourceEvaluationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartResourceEvaluation indicates an expected call of StartResourceEvaluation
+func (mr *MockConfigServiceAPIMockRecorder) StartResourceEvaluation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartResourceEvaluation", reflect.TypeOf((*MockConfigServiceAPI)(nil).StartResourceEvaluation), arg0)
+}
+
+// StartResourceEvaluationRequest mocks base method
+func (m *MockConfigServiceAPI) StartResourceEvaluationRequest(arg0 *configservice.StartResourceEvaluationInput) (*request.Request, *configservice.StartResourceEvaluationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartResourceEvaluationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*configservice.StartResourceEvaluationOutput)
+	return ret0, ret1
+}
+
+// StartResourceEvaluationRequest indicates an expected call of StartResourceEvaluationRequest
+func (mr *MockConfigServiceAPIMockRecorder) StartResourceEvaluationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartResourceEvaluationRequest", reflect.TypeOf((*MockConfigServiceAPI)(nil).StartResourceEvaluationRequest), arg0)
+}
+
+// StartResourceEvaluationWithContext mocks base method
+func (m *MockConfigServiceAPI) StartResourceEvaluationWithContext(arg0 context.Context, arg1 *configservice.StartResourceEvaluationInput, arg2 ...request.Option) (*configservice.StartResourceEvaluationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartResourceEvaluationWithContext", varargs...)
+	ret0, _ := ret[0].(*configservice.StartResourceEvaluationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartResourceEvaluationWithContext indicates an expected call of StartResourceEvaluationWithContext
+func (mr *MockConfigServiceAPIMockRecorder) StartResourceEvaluationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartResourceEvaluationWithContext", reflect.TypeOf((*MockConfigServiceAPI)(nil).StartResourceEvaluationWithContext), varargs...)
 }
 
 // StopConfigurationRecorder mocks base method

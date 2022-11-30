@@ -2000,6 +2000,56 @@ func (mr *MockQuickSightAPIMockRecorder) DescribeAnalysis(arg0 interface{}) *gom
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnalysis", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAnalysis), arg0)
 }
 
+// DescribeAnalysisDefinition mocks base method
+func (m *MockQuickSightAPI) DescribeAnalysisDefinition(arg0 *quicksight.DescribeAnalysisDefinitionInput) (*quicksight.DescribeAnalysisDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAnalysisDefinition", arg0)
+	ret0, _ := ret[0].(*quicksight.DescribeAnalysisDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAnalysisDefinition indicates an expected call of DescribeAnalysisDefinition
+func (mr *MockQuickSightAPIMockRecorder) DescribeAnalysisDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnalysisDefinition", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAnalysisDefinition), arg0)
+}
+
+// DescribeAnalysisDefinitionRequest mocks base method
+func (m *MockQuickSightAPI) DescribeAnalysisDefinitionRequest(arg0 *quicksight.DescribeAnalysisDefinitionInput) (*request.Request, *quicksight.DescribeAnalysisDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAnalysisDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.DescribeAnalysisDefinitionOutput)
+	return ret0, ret1
+}
+
+// DescribeAnalysisDefinitionRequest indicates an expected call of DescribeAnalysisDefinitionRequest
+func (mr *MockQuickSightAPIMockRecorder) DescribeAnalysisDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnalysisDefinitionRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAnalysisDefinitionRequest), arg0)
+}
+
+// DescribeAnalysisDefinitionWithContext mocks base method
+func (m *MockQuickSightAPI) DescribeAnalysisDefinitionWithContext(arg0 context.Context, arg1 *quicksight.DescribeAnalysisDefinitionInput, arg2 ...request.Option) (*quicksight.DescribeAnalysisDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAnalysisDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.DescribeAnalysisDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAnalysisDefinitionWithContext indicates an expected call of DescribeAnalysisDefinitionWithContext
+func (mr *MockQuickSightAPIMockRecorder) DescribeAnalysisDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnalysisDefinitionWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAnalysisDefinitionWithContext), varargs...)
+}
+
 // DescribeAnalysisPermissions mocks base method
 func (m *MockQuickSightAPI) DescribeAnalysisPermissions(arg0 *quicksight.DescribeAnalysisPermissionsInput) (*quicksight.DescribeAnalysisPermissionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2098,6 +2148,56 @@ func (m *MockQuickSightAPI) DescribeDashboard(arg0 *quicksight.DescribeDashboard
 func (mr *MockQuickSightAPIMockRecorder) DescribeDashboard(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDashboard", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeDashboard), arg0)
+}
+
+// DescribeDashboardDefinition mocks base method
+func (m *MockQuickSightAPI) DescribeDashboardDefinition(arg0 *quicksight.DescribeDashboardDefinitionInput) (*quicksight.DescribeDashboardDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDashboardDefinition", arg0)
+	ret0, _ := ret[0].(*quicksight.DescribeDashboardDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDashboardDefinition indicates an expected call of DescribeDashboardDefinition
+func (mr *MockQuickSightAPIMockRecorder) DescribeDashboardDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDashboardDefinition", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeDashboardDefinition), arg0)
+}
+
+// DescribeDashboardDefinitionRequest mocks base method
+func (m *MockQuickSightAPI) DescribeDashboardDefinitionRequest(arg0 *quicksight.DescribeDashboardDefinitionInput) (*request.Request, *quicksight.DescribeDashboardDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDashboardDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.DescribeDashboardDefinitionOutput)
+	return ret0, ret1
+}
+
+// DescribeDashboardDefinitionRequest indicates an expected call of DescribeDashboardDefinitionRequest
+func (mr *MockQuickSightAPIMockRecorder) DescribeDashboardDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDashboardDefinitionRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeDashboardDefinitionRequest), arg0)
+}
+
+// DescribeDashboardDefinitionWithContext mocks base method
+func (m *MockQuickSightAPI) DescribeDashboardDefinitionWithContext(arg0 context.Context, arg1 *quicksight.DescribeDashboardDefinitionInput, arg2 ...request.Option) (*quicksight.DescribeDashboardDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDashboardDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.DescribeDashboardDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDashboardDefinitionWithContext indicates an expected call of DescribeDashboardDefinitionWithContext
+func (mr *MockQuickSightAPIMockRecorder) DescribeDashboardDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDashboardDefinitionWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeDashboardDefinitionWithContext), varargs...)
 }
 
 // DescribeDashboardPermissions mocks base method
@@ -2898,6 +2998,56 @@ func (mr *MockQuickSightAPIMockRecorder) DescribeTemplateAliasWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTemplateAliasWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeTemplateAliasWithContext), varargs...)
+}
+
+// DescribeTemplateDefinition mocks base method
+func (m *MockQuickSightAPI) DescribeTemplateDefinition(arg0 *quicksight.DescribeTemplateDefinitionInput) (*quicksight.DescribeTemplateDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTemplateDefinition", arg0)
+	ret0, _ := ret[0].(*quicksight.DescribeTemplateDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTemplateDefinition indicates an expected call of DescribeTemplateDefinition
+func (mr *MockQuickSightAPIMockRecorder) DescribeTemplateDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTemplateDefinition", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeTemplateDefinition), arg0)
+}
+
+// DescribeTemplateDefinitionRequest mocks base method
+func (m *MockQuickSightAPI) DescribeTemplateDefinitionRequest(arg0 *quicksight.DescribeTemplateDefinitionInput) (*request.Request, *quicksight.DescribeTemplateDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTemplateDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.DescribeTemplateDefinitionOutput)
+	return ret0, ret1
+}
+
+// DescribeTemplateDefinitionRequest indicates an expected call of DescribeTemplateDefinitionRequest
+func (mr *MockQuickSightAPIMockRecorder) DescribeTemplateDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTemplateDefinitionRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeTemplateDefinitionRequest), arg0)
+}
+
+// DescribeTemplateDefinitionWithContext mocks base method
+func (m *MockQuickSightAPI) DescribeTemplateDefinitionWithContext(arg0 context.Context, arg1 *quicksight.DescribeTemplateDefinitionInput, arg2 ...request.Option) (*quicksight.DescribeTemplateDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeTemplateDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.DescribeTemplateDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTemplateDefinitionWithContext indicates an expected call of DescribeTemplateDefinitionWithContext
+func (mr *MockQuickSightAPIMockRecorder) DescribeTemplateDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTemplateDefinitionWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeTemplateDefinitionWithContext), varargs...)
 }
 
 // DescribeTemplatePermissions mocks base method

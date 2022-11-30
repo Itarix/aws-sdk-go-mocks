@@ -1815,6 +1815,56 @@ func (mr *MockS3ControlAPIMockRecorder) GetMultiRegionAccessPointRequest(arg0 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMultiRegionAccessPointRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).GetMultiRegionAccessPointRequest), arg0)
 }
 
+// GetMultiRegionAccessPointRoutes mocks base method
+func (m *MockS3ControlAPI) GetMultiRegionAccessPointRoutes(arg0 *s3control.GetMultiRegionAccessPointRoutesInput) (*s3control.GetMultiRegionAccessPointRoutesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMultiRegionAccessPointRoutes", arg0)
+	ret0, _ := ret[0].(*s3control.GetMultiRegionAccessPointRoutesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMultiRegionAccessPointRoutes indicates an expected call of GetMultiRegionAccessPointRoutes
+func (mr *MockS3ControlAPIMockRecorder) GetMultiRegionAccessPointRoutes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMultiRegionAccessPointRoutes", reflect.TypeOf((*MockS3ControlAPI)(nil).GetMultiRegionAccessPointRoutes), arg0)
+}
+
+// GetMultiRegionAccessPointRoutesRequest mocks base method
+func (m *MockS3ControlAPI) GetMultiRegionAccessPointRoutesRequest(arg0 *s3control.GetMultiRegionAccessPointRoutesInput) (*request.Request, *s3control.GetMultiRegionAccessPointRoutesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMultiRegionAccessPointRoutesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.GetMultiRegionAccessPointRoutesOutput)
+	return ret0, ret1
+}
+
+// GetMultiRegionAccessPointRoutesRequest indicates an expected call of GetMultiRegionAccessPointRoutesRequest
+func (mr *MockS3ControlAPIMockRecorder) GetMultiRegionAccessPointRoutesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMultiRegionAccessPointRoutesRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).GetMultiRegionAccessPointRoutesRequest), arg0)
+}
+
+// GetMultiRegionAccessPointRoutesWithContext mocks base method
+func (m *MockS3ControlAPI) GetMultiRegionAccessPointRoutesWithContext(arg0 context.Context, arg1 *s3control.GetMultiRegionAccessPointRoutesInput, arg2 ...request.Option) (*s3control.GetMultiRegionAccessPointRoutesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMultiRegionAccessPointRoutesWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.GetMultiRegionAccessPointRoutesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMultiRegionAccessPointRoutesWithContext indicates an expected call of GetMultiRegionAccessPointRoutesWithContext
+func (mr *MockS3ControlAPIMockRecorder) GetMultiRegionAccessPointRoutesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMultiRegionAccessPointRoutesWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).GetMultiRegionAccessPointRoutesWithContext), varargs...)
+}
+
 // GetMultiRegionAccessPointWithContext mocks base method
 func (m *MockS3ControlAPI) GetMultiRegionAccessPointWithContext(arg0 context.Context, arg1 *s3control.GetMultiRegionAccessPointInput, arg2 ...request.Option) (*s3control.GetMultiRegionAccessPointOutput, error) {
 	m.ctrl.T.Helper()
@@ -3081,6 +3131,56 @@ func (mr *MockS3ControlAPIMockRecorder) PutStorageLensConfigurationWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutStorageLensConfigurationWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).PutStorageLensConfigurationWithContext), varargs...)
+}
+
+// SubmitMultiRegionAccessPointRoutes mocks base method
+func (m *MockS3ControlAPI) SubmitMultiRegionAccessPointRoutes(arg0 *s3control.SubmitMultiRegionAccessPointRoutesInput) (*s3control.SubmitMultiRegionAccessPointRoutesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SubmitMultiRegionAccessPointRoutes", arg0)
+	ret0, _ := ret[0].(*s3control.SubmitMultiRegionAccessPointRoutesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SubmitMultiRegionAccessPointRoutes indicates an expected call of SubmitMultiRegionAccessPointRoutes
+func (mr *MockS3ControlAPIMockRecorder) SubmitMultiRegionAccessPointRoutes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SubmitMultiRegionAccessPointRoutes", reflect.TypeOf((*MockS3ControlAPI)(nil).SubmitMultiRegionAccessPointRoutes), arg0)
+}
+
+// SubmitMultiRegionAccessPointRoutesRequest mocks base method
+func (m *MockS3ControlAPI) SubmitMultiRegionAccessPointRoutesRequest(arg0 *s3control.SubmitMultiRegionAccessPointRoutesInput) (*request.Request, *s3control.SubmitMultiRegionAccessPointRoutesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SubmitMultiRegionAccessPointRoutesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3control.SubmitMultiRegionAccessPointRoutesOutput)
+	return ret0, ret1
+}
+
+// SubmitMultiRegionAccessPointRoutesRequest indicates an expected call of SubmitMultiRegionAccessPointRoutesRequest
+func (mr *MockS3ControlAPIMockRecorder) SubmitMultiRegionAccessPointRoutesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SubmitMultiRegionAccessPointRoutesRequest", reflect.TypeOf((*MockS3ControlAPI)(nil).SubmitMultiRegionAccessPointRoutesRequest), arg0)
+}
+
+// SubmitMultiRegionAccessPointRoutesWithContext mocks base method
+func (m *MockS3ControlAPI) SubmitMultiRegionAccessPointRoutesWithContext(arg0 context.Context, arg1 *s3control.SubmitMultiRegionAccessPointRoutesInput, arg2 ...request.Option) (*s3control.SubmitMultiRegionAccessPointRoutesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SubmitMultiRegionAccessPointRoutesWithContext", varargs...)
+	ret0, _ := ret[0].(*s3control.SubmitMultiRegionAccessPointRoutesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SubmitMultiRegionAccessPointRoutesWithContext indicates an expected call of SubmitMultiRegionAccessPointRoutesWithContext
+func (mr *MockS3ControlAPIMockRecorder) SubmitMultiRegionAccessPointRoutesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SubmitMultiRegionAccessPointRoutesWithContext", reflect.TypeOf((*MockS3ControlAPI)(nil).SubmitMultiRegionAccessPointRoutesWithContext), varargs...)
 }
 
 // UpdateJobPriority mocks base method

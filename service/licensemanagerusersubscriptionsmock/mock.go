@@ -666,3 +666,53 @@ func (mr *MockLicenseManagerUserSubscriptionsAPIMockRecorder) StopProductSubscri
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopProductSubscriptionWithContext", reflect.TypeOf((*MockLicenseManagerUserSubscriptionsAPI)(nil).StopProductSubscriptionWithContext), varargs...)
 }
+
+// UpdateIdentityProviderSettings mocks base method
+func (m *MockLicenseManagerUserSubscriptionsAPI) UpdateIdentityProviderSettings(arg0 *licensemanagerusersubscriptions.UpdateIdentityProviderSettingsInput) (*licensemanagerusersubscriptions.UpdateIdentityProviderSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateIdentityProviderSettings", arg0)
+	ret0, _ := ret[0].(*licensemanagerusersubscriptions.UpdateIdentityProviderSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateIdentityProviderSettings indicates an expected call of UpdateIdentityProviderSettings
+func (mr *MockLicenseManagerUserSubscriptionsAPIMockRecorder) UpdateIdentityProviderSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIdentityProviderSettings", reflect.TypeOf((*MockLicenseManagerUserSubscriptionsAPI)(nil).UpdateIdentityProviderSettings), arg0)
+}
+
+// UpdateIdentityProviderSettingsRequest mocks base method
+func (m *MockLicenseManagerUserSubscriptionsAPI) UpdateIdentityProviderSettingsRequest(arg0 *licensemanagerusersubscriptions.UpdateIdentityProviderSettingsInput) (*request.Request, *licensemanagerusersubscriptions.UpdateIdentityProviderSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateIdentityProviderSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*licensemanagerusersubscriptions.UpdateIdentityProviderSettingsOutput)
+	return ret0, ret1
+}
+
+// UpdateIdentityProviderSettingsRequest indicates an expected call of UpdateIdentityProviderSettingsRequest
+func (mr *MockLicenseManagerUserSubscriptionsAPIMockRecorder) UpdateIdentityProviderSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIdentityProviderSettingsRequest", reflect.TypeOf((*MockLicenseManagerUserSubscriptionsAPI)(nil).UpdateIdentityProviderSettingsRequest), arg0)
+}
+
+// UpdateIdentityProviderSettingsWithContext mocks base method
+func (m *MockLicenseManagerUserSubscriptionsAPI) UpdateIdentityProviderSettingsWithContext(arg0 context.Context, arg1 *licensemanagerusersubscriptions.UpdateIdentityProviderSettingsInput, arg2 ...request.Option) (*licensemanagerusersubscriptions.UpdateIdentityProviderSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateIdentityProviderSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*licensemanagerusersubscriptions.UpdateIdentityProviderSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateIdentityProviderSettingsWithContext indicates an expected call of UpdateIdentityProviderSettingsWithContext
+func (mr *MockLicenseManagerUserSubscriptionsAPIMockRecorder) UpdateIdentityProviderSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIdentityProviderSettingsWithContext", reflect.TypeOf((*MockLicenseManagerUserSubscriptionsAPI)(nil).UpdateIdentityProviderSettingsWithContext), varargs...)
+}
