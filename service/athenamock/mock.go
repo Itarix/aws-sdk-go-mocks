@@ -285,6 +285,56 @@ func (mr *MockAthenaAPIMockRecorder) CreateNamedQueryWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNamedQueryWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).CreateNamedQueryWithContext), varargs...)
 }
 
+// CreateNotebook mocks base method
+func (m *MockAthenaAPI) CreateNotebook(arg0 *athena.CreateNotebookInput) (*athena.CreateNotebookOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateNotebook", arg0)
+	ret0, _ := ret[0].(*athena.CreateNotebookOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateNotebook indicates an expected call of CreateNotebook
+func (mr *MockAthenaAPIMockRecorder) CreateNotebook(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNotebook", reflect.TypeOf((*MockAthenaAPI)(nil).CreateNotebook), arg0)
+}
+
+// CreateNotebookRequest mocks base method
+func (m *MockAthenaAPI) CreateNotebookRequest(arg0 *athena.CreateNotebookInput) (*request.Request, *athena.CreateNotebookOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateNotebookRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.CreateNotebookOutput)
+	return ret0, ret1
+}
+
+// CreateNotebookRequest indicates an expected call of CreateNotebookRequest
+func (mr *MockAthenaAPIMockRecorder) CreateNotebookRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNotebookRequest", reflect.TypeOf((*MockAthenaAPI)(nil).CreateNotebookRequest), arg0)
+}
+
+// CreateNotebookWithContext mocks base method
+func (m *MockAthenaAPI) CreateNotebookWithContext(arg0 context.Context, arg1 *athena.CreateNotebookInput, arg2 ...request.Option) (*athena.CreateNotebookOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateNotebookWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.CreateNotebookOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateNotebookWithContext indicates an expected call of CreateNotebookWithContext
+func (mr *MockAthenaAPIMockRecorder) CreateNotebookWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNotebookWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).CreateNotebookWithContext), varargs...)
+}
+
 // CreatePreparedStatement mocks base method
 func (m *MockAthenaAPI) CreatePreparedStatement(arg0 *athena.CreatePreparedStatementInput) (*athena.CreatePreparedStatementOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +383,56 @@ func (mr *MockAthenaAPIMockRecorder) CreatePreparedStatementWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePreparedStatementWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).CreatePreparedStatementWithContext), varargs...)
+}
+
+// CreatePresignedNotebookUrl mocks base method
+func (m *MockAthenaAPI) CreatePresignedNotebookUrl(arg0 *athena.CreatePresignedNotebookUrlInput) (*athena.CreatePresignedNotebookUrlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePresignedNotebookUrl", arg0)
+	ret0, _ := ret[0].(*athena.CreatePresignedNotebookUrlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePresignedNotebookUrl indicates an expected call of CreatePresignedNotebookUrl
+func (mr *MockAthenaAPIMockRecorder) CreatePresignedNotebookUrl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePresignedNotebookUrl", reflect.TypeOf((*MockAthenaAPI)(nil).CreatePresignedNotebookUrl), arg0)
+}
+
+// CreatePresignedNotebookUrlRequest mocks base method
+func (m *MockAthenaAPI) CreatePresignedNotebookUrlRequest(arg0 *athena.CreatePresignedNotebookUrlInput) (*request.Request, *athena.CreatePresignedNotebookUrlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePresignedNotebookUrlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.CreatePresignedNotebookUrlOutput)
+	return ret0, ret1
+}
+
+// CreatePresignedNotebookUrlRequest indicates an expected call of CreatePresignedNotebookUrlRequest
+func (mr *MockAthenaAPIMockRecorder) CreatePresignedNotebookUrlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePresignedNotebookUrlRequest", reflect.TypeOf((*MockAthenaAPI)(nil).CreatePresignedNotebookUrlRequest), arg0)
+}
+
+// CreatePresignedNotebookUrlWithContext mocks base method
+func (m *MockAthenaAPI) CreatePresignedNotebookUrlWithContext(arg0 context.Context, arg1 *athena.CreatePresignedNotebookUrlInput, arg2 ...request.Option) (*athena.CreatePresignedNotebookUrlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreatePresignedNotebookUrlWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.CreatePresignedNotebookUrlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePresignedNotebookUrlWithContext indicates an expected call of CreatePresignedNotebookUrlWithContext
+func (mr *MockAthenaAPIMockRecorder) CreatePresignedNotebookUrlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePresignedNotebookUrlWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).CreatePresignedNotebookUrlWithContext), varargs...)
 }
 
 // CreateWorkGroup mocks base method
@@ -485,6 +585,56 @@ func (mr *MockAthenaAPIMockRecorder) DeleteNamedQueryWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNamedQueryWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).DeleteNamedQueryWithContext), varargs...)
 }
 
+// DeleteNotebook mocks base method
+func (m *MockAthenaAPI) DeleteNotebook(arg0 *athena.DeleteNotebookInput) (*athena.DeleteNotebookOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteNotebook", arg0)
+	ret0, _ := ret[0].(*athena.DeleteNotebookOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteNotebook indicates an expected call of DeleteNotebook
+func (mr *MockAthenaAPIMockRecorder) DeleteNotebook(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNotebook", reflect.TypeOf((*MockAthenaAPI)(nil).DeleteNotebook), arg0)
+}
+
+// DeleteNotebookRequest mocks base method
+func (m *MockAthenaAPI) DeleteNotebookRequest(arg0 *athena.DeleteNotebookInput) (*request.Request, *athena.DeleteNotebookOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteNotebookRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.DeleteNotebookOutput)
+	return ret0, ret1
+}
+
+// DeleteNotebookRequest indicates an expected call of DeleteNotebookRequest
+func (mr *MockAthenaAPIMockRecorder) DeleteNotebookRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNotebookRequest", reflect.TypeOf((*MockAthenaAPI)(nil).DeleteNotebookRequest), arg0)
+}
+
+// DeleteNotebookWithContext mocks base method
+func (m *MockAthenaAPI) DeleteNotebookWithContext(arg0 context.Context, arg1 *athena.DeleteNotebookInput, arg2 ...request.Option) (*athena.DeleteNotebookOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteNotebookWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.DeleteNotebookOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteNotebookWithContext indicates an expected call of DeleteNotebookWithContext
+func (mr *MockAthenaAPIMockRecorder) DeleteNotebookWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNotebookWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).DeleteNotebookWithContext), varargs...)
+}
+
 // DeletePreparedStatement mocks base method
 func (m *MockAthenaAPI) DeletePreparedStatement(arg0 *athena.DeletePreparedStatementInput) (*athena.DeletePreparedStatementOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +733,206 @@ func (mr *MockAthenaAPIMockRecorder) DeleteWorkGroupWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWorkGroupWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).DeleteWorkGroupWithContext), varargs...)
+}
+
+// ExportNotebook mocks base method
+func (m *MockAthenaAPI) ExportNotebook(arg0 *athena.ExportNotebookInput) (*athena.ExportNotebookOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportNotebook", arg0)
+	ret0, _ := ret[0].(*athena.ExportNotebookOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportNotebook indicates an expected call of ExportNotebook
+func (mr *MockAthenaAPIMockRecorder) ExportNotebook(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportNotebook", reflect.TypeOf((*MockAthenaAPI)(nil).ExportNotebook), arg0)
+}
+
+// ExportNotebookRequest mocks base method
+func (m *MockAthenaAPI) ExportNotebookRequest(arg0 *athena.ExportNotebookInput) (*request.Request, *athena.ExportNotebookOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportNotebookRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.ExportNotebookOutput)
+	return ret0, ret1
+}
+
+// ExportNotebookRequest indicates an expected call of ExportNotebookRequest
+func (mr *MockAthenaAPIMockRecorder) ExportNotebookRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportNotebookRequest", reflect.TypeOf((*MockAthenaAPI)(nil).ExportNotebookRequest), arg0)
+}
+
+// ExportNotebookWithContext mocks base method
+func (m *MockAthenaAPI) ExportNotebookWithContext(arg0 context.Context, arg1 *athena.ExportNotebookInput, arg2 ...request.Option) (*athena.ExportNotebookOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExportNotebookWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.ExportNotebookOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportNotebookWithContext indicates an expected call of ExportNotebookWithContext
+func (mr *MockAthenaAPIMockRecorder) ExportNotebookWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportNotebookWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ExportNotebookWithContext), varargs...)
+}
+
+// GetCalculationExecution mocks base method
+func (m *MockAthenaAPI) GetCalculationExecution(arg0 *athena.GetCalculationExecutionInput) (*athena.GetCalculationExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCalculationExecution", arg0)
+	ret0, _ := ret[0].(*athena.GetCalculationExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCalculationExecution indicates an expected call of GetCalculationExecution
+func (mr *MockAthenaAPIMockRecorder) GetCalculationExecution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculationExecution", reflect.TypeOf((*MockAthenaAPI)(nil).GetCalculationExecution), arg0)
+}
+
+// GetCalculationExecutionCode mocks base method
+func (m *MockAthenaAPI) GetCalculationExecutionCode(arg0 *athena.GetCalculationExecutionCodeInput) (*athena.GetCalculationExecutionCodeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCalculationExecutionCode", arg0)
+	ret0, _ := ret[0].(*athena.GetCalculationExecutionCodeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCalculationExecutionCode indicates an expected call of GetCalculationExecutionCode
+func (mr *MockAthenaAPIMockRecorder) GetCalculationExecutionCode(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculationExecutionCode", reflect.TypeOf((*MockAthenaAPI)(nil).GetCalculationExecutionCode), arg0)
+}
+
+// GetCalculationExecutionCodeRequest mocks base method
+func (m *MockAthenaAPI) GetCalculationExecutionCodeRequest(arg0 *athena.GetCalculationExecutionCodeInput) (*request.Request, *athena.GetCalculationExecutionCodeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCalculationExecutionCodeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.GetCalculationExecutionCodeOutput)
+	return ret0, ret1
+}
+
+// GetCalculationExecutionCodeRequest indicates an expected call of GetCalculationExecutionCodeRequest
+func (mr *MockAthenaAPIMockRecorder) GetCalculationExecutionCodeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculationExecutionCodeRequest", reflect.TypeOf((*MockAthenaAPI)(nil).GetCalculationExecutionCodeRequest), arg0)
+}
+
+// GetCalculationExecutionCodeWithContext mocks base method
+func (m *MockAthenaAPI) GetCalculationExecutionCodeWithContext(arg0 context.Context, arg1 *athena.GetCalculationExecutionCodeInput, arg2 ...request.Option) (*athena.GetCalculationExecutionCodeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCalculationExecutionCodeWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.GetCalculationExecutionCodeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCalculationExecutionCodeWithContext indicates an expected call of GetCalculationExecutionCodeWithContext
+func (mr *MockAthenaAPIMockRecorder) GetCalculationExecutionCodeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculationExecutionCodeWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetCalculationExecutionCodeWithContext), varargs...)
+}
+
+// GetCalculationExecutionRequest mocks base method
+func (m *MockAthenaAPI) GetCalculationExecutionRequest(arg0 *athena.GetCalculationExecutionInput) (*request.Request, *athena.GetCalculationExecutionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCalculationExecutionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.GetCalculationExecutionOutput)
+	return ret0, ret1
+}
+
+// GetCalculationExecutionRequest indicates an expected call of GetCalculationExecutionRequest
+func (mr *MockAthenaAPIMockRecorder) GetCalculationExecutionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculationExecutionRequest", reflect.TypeOf((*MockAthenaAPI)(nil).GetCalculationExecutionRequest), arg0)
+}
+
+// GetCalculationExecutionStatus mocks base method
+func (m *MockAthenaAPI) GetCalculationExecutionStatus(arg0 *athena.GetCalculationExecutionStatusInput) (*athena.GetCalculationExecutionStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCalculationExecutionStatus", arg0)
+	ret0, _ := ret[0].(*athena.GetCalculationExecutionStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCalculationExecutionStatus indicates an expected call of GetCalculationExecutionStatus
+func (mr *MockAthenaAPIMockRecorder) GetCalculationExecutionStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculationExecutionStatus", reflect.TypeOf((*MockAthenaAPI)(nil).GetCalculationExecutionStatus), arg0)
+}
+
+// GetCalculationExecutionStatusRequest mocks base method
+func (m *MockAthenaAPI) GetCalculationExecutionStatusRequest(arg0 *athena.GetCalculationExecutionStatusInput) (*request.Request, *athena.GetCalculationExecutionStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCalculationExecutionStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.GetCalculationExecutionStatusOutput)
+	return ret0, ret1
+}
+
+// GetCalculationExecutionStatusRequest indicates an expected call of GetCalculationExecutionStatusRequest
+func (mr *MockAthenaAPIMockRecorder) GetCalculationExecutionStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculationExecutionStatusRequest", reflect.TypeOf((*MockAthenaAPI)(nil).GetCalculationExecutionStatusRequest), arg0)
+}
+
+// GetCalculationExecutionStatusWithContext mocks base method
+func (m *MockAthenaAPI) GetCalculationExecutionStatusWithContext(arg0 context.Context, arg1 *athena.GetCalculationExecutionStatusInput, arg2 ...request.Option) (*athena.GetCalculationExecutionStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCalculationExecutionStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.GetCalculationExecutionStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCalculationExecutionStatusWithContext indicates an expected call of GetCalculationExecutionStatusWithContext
+func (mr *MockAthenaAPIMockRecorder) GetCalculationExecutionStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculationExecutionStatusWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetCalculationExecutionStatusWithContext), varargs...)
+}
+
+// GetCalculationExecutionWithContext mocks base method
+func (m *MockAthenaAPI) GetCalculationExecutionWithContext(arg0 context.Context, arg1 *athena.GetCalculationExecutionInput, arg2 ...request.Option) (*athena.GetCalculationExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCalculationExecutionWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.GetCalculationExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCalculationExecutionWithContext indicates an expected call of GetCalculationExecutionWithContext
+func (mr *MockAthenaAPIMockRecorder) GetCalculationExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculationExecutionWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetCalculationExecutionWithContext), varargs...)
 }
 
 // GetDataCatalog mocks base method
@@ -733,6 +1083,56 @@ func (mr *MockAthenaAPIMockRecorder) GetNamedQueryWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNamedQueryWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetNamedQueryWithContext), varargs...)
+}
+
+// GetNotebookMetadata mocks base method
+func (m *MockAthenaAPI) GetNotebookMetadata(arg0 *athena.GetNotebookMetadataInput) (*athena.GetNotebookMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetNotebookMetadata", arg0)
+	ret0, _ := ret[0].(*athena.GetNotebookMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetNotebookMetadata indicates an expected call of GetNotebookMetadata
+func (mr *MockAthenaAPIMockRecorder) GetNotebookMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNotebookMetadata", reflect.TypeOf((*MockAthenaAPI)(nil).GetNotebookMetadata), arg0)
+}
+
+// GetNotebookMetadataRequest mocks base method
+func (m *MockAthenaAPI) GetNotebookMetadataRequest(arg0 *athena.GetNotebookMetadataInput) (*request.Request, *athena.GetNotebookMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetNotebookMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.GetNotebookMetadataOutput)
+	return ret0, ret1
+}
+
+// GetNotebookMetadataRequest indicates an expected call of GetNotebookMetadataRequest
+func (mr *MockAthenaAPIMockRecorder) GetNotebookMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNotebookMetadataRequest", reflect.TypeOf((*MockAthenaAPI)(nil).GetNotebookMetadataRequest), arg0)
+}
+
+// GetNotebookMetadataWithContext mocks base method
+func (m *MockAthenaAPI) GetNotebookMetadataWithContext(arg0 context.Context, arg1 *athena.GetNotebookMetadataInput, arg2 ...request.Option) (*athena.GetNotebookMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetNotebookMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.GetNotebookMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetNotebookMetadataWithContext indicates an expected call of GetNotebookMetadataWithContext
+func (mr *MockAthenaAPIMockRecorder) GetNotebookMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetNotebookMetadataWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetNotebookMetadataWithContext), varargs...)
 }
 
 // GetPreparedStatement mocks base method
@@ -968,6 +1368,106 @@ func (mr *MockAthenaAPIMockRecorder) GetQueryRuntimeStatisticsWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueryRuntimeStatisticsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetQueryRuntimeStatisticsWithContext), varargs...)
 }
 
+// GetSession mocks base method
+func (m *MockAthenaAPI) GetSession(arg0 *athena.GetSessionInput) (*athena.GetSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSession", arg0)
+	ret0, _ := ret[0].(*athena.GetSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSession indicates an expected call of GetSession
+func (mr *MockAthenaAPIMockRecorder) GetSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSession", reflect.TypeOf((*MockAthenaAPI)(nil).GetSession), arg0)
+}
+
+// GetSessionRequest mocks base method
+func (m *MockAthenaAPI) GetSessionRequest(arg0 *athena.GetSessionInput) (*request.Request, *athena.GetSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.GetSessionOutput)
+	return ret0, ret1
+}
+
+// GetSessionRequest indicates an expected call of GetSessionRequest
+func (mr *MockAthenaAPIMockRecorder) GetSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSessionRequest", reflect.TypeOf((*MockAthenaAPI)(nil).GetSessionRequest), arg0)
+}
+
+// GetSessionStatus mocks base method
+func (m *MockAthenaAPI) GetSessionStatus(arg0 *athena.GetSessionStatusInput) (*athena.GetSessionStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSessionStatus", arg0)
+	ret0, _ := ret[0].(*athena.GetSessionStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSessionStatus indicates an expected call of GetSessionStatus
+func (mr *MockAthenaAPIMockRecorder) GetSessionStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSessionStatus", reflect.TypeOf((*MockAthenaAPI)(nil).GetSessionStatus), arg0)
+}
+
+// GetSessionStatusRequest mocks base method
+func (m *MockAthenaAPI) GetSessionStatusRequest(arg0 *athena.GetSessionStatusInput) (*request.Request, *athena.GetSessionStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSessionStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.GetSessionStatusOutput)
+	return ret0, ret1
+}
+
+// GetSessionStatusRequest indicates an expected call of GetSessionStatusRequest
+func (mr *MockAthenaAPIMockRecorder) GetSessionStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSessionStatusRequest", reflect.TypeOf((*MockAthenaAPI)(nil).GetSessionStatusRequest), arg0)
+}
+
+// GetSessionStatusWithContext mocks base method
+func (m *MockAthenaAPI) GetSessionStatusWithContext(arg0 context.Context, arg1 *athena.GetSessionStatusInput, arg2 ...request.Option) (*athena.GetSessionStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSessionStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.GetSessionStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSessionStatusWithContext indicates an expected call of GetSessionStatusWithContext
+func (mr *MockAthenaAPIMockRecorder) GetSessionStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSessionStatusWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetSessionStatusWithContext), varargs...)
+}
+
+// GetSessionWithContext mocks base method
+func (m *MockAthenaAPI) GetSessionWithContext(arg0 context.Context, arg1 *athena.GetSessionInput, arg2 ...request.Option) (*athena.GetSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.GetSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSessionWithContext indicates an expected call of GetSessionWithContext
+func (mr *MockAthenaAPIMockRecorder) GetSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSessionWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetSessionWithContext), varargs...)
+}
+
 // GetTableMetadata mocks base method
 func (m *MockAthenaAPI) GetTableMetadata(arg0 *athena.GetTableMetadataInput) (*athena.GetTableMetadataOutput, error) {
 	m.ctrl.T.Helper()
@@ -1066,6 +1566,222 @@ func (mr *MockAthenaAPIMockRecorder) GetWorkGroupWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWorkGroupWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetWorkGroupWithContext), varargs...)
+}
+
+// ImportNotebook mocks base method
+func (m *MockAthenaAPI) ImportNotebook(arg0 *athena.ImportNotebookInput) (*athena.ImportNotebookOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportNotebook", arg0)
+	ret0, _ := ret[0].(*athena.ImportNotebookOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportNotebook indicates an expected call of ImportNotebook
+func (mr *MockAthenaAPIMockRecorder) ImportNotebook(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportNotebook", reflect.TypeOf((*MockAthenaAPI)(nil).ImportNotebook), arg0)
+}
+
+// ImportNotebookRequest mocks base method
+func (m *MockAthenaAPI) ImportNotebookRequest(arg0 *athena.ImportNotebookInput) (*request.Request, *athena.ImportNotebookOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportNotebookRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.ImportNotebookOutput)
+	return ret0, ret1
+}
+
+// ImportNotebookRequest indicates an expected call of ImportNotebookRequest
+func (mr *MockAthenaAPIMockRecorder) ImportNotebookRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportNotebookRequest", reflect.TypeOf((*MockAthenaAPI)(nil).ImportNotebookRequest), arg0)
+}
+
+// ImportNotebookWithContext mocks base method
+func (m *MockAthenaAPI) ImportNotebookWithContext(arg0 context.Context, arg1 *athena.ImportNotebookInput, arg2 ...request.Option) (*athena.ImportNotebookOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportNotebookWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.ImportNotebookOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportNotebookWithContext indicates an expected call of ImportNotebookWithContext
+func (mr *MockAthenaAPIMockRecorder) ImportNotebookWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportNotebookWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ImportNotebookWithContext), varargs...)
+}
+
+// ListApplicationDPUSizes mocks base method
+func (m *MockAthenaAPI) ListApplicationDPUSizes(arg0 *athena.ListApplicationDPUSizesInput) (*athena.ListApplicationDPUSizesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationDPUSizes", arg0)
+	ret0, _ := ret[0].(*athena.ListApplicationDPUSizesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApplicationDPUSizes indicates an expected call of ListApplicationDPUSizes
+func (mr *MockAthenaAPIMockRecorder) ListApplicationDPUSizes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationDPUSizes", reflect.TypeOf((*MockAthenaAPI)(nil).ListApplicationDPUSizes), arg0)
+}
+
+// ListApplicationDPUSizesPages mocks base method
+func (m *MockAthenaAPI) ListApplicationDPUSizesPages(arg0 *athena.ListApplicationDPUSizesInput, arg1 func(*athena.ListApplicationDPUSizesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationDPUSizesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationDPUSizesPages indicates an expected call of ListApplicationDPUSizesPages
+func (mr *MockAthenaAPIMockRecorder) ListApplicationDPUSizesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationDPUSizesPages", reflect.TypeOf((*MockAthenaAPI)(nil).ListApplicationDPUSizesPages), arg0, arg1)
+}
+
+// ListApplicationDPUSizesPagesWithContext mocks base method
+func (m *MockAthenaAPI) ListApplicationDPUSizesPagesWithContext(arg0 context.Context, arg1 *athena.ListApplicationDPUSizesInput, arg2 func(*athena.ListApplicationDPUSizesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApplicationDPUSizesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationDPUSizesPagesWithContext indicates an expected call of ListApplicationDPUSizesPagesWithContext
+func (mr *MockAthenaAPIMockRecorder) ListApplicationDPUSizesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationDPUSizesPagesWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListApplicationDPUSizesPagesWithContext), varargs...)
+}
+
+// ListApplicationDPUSizesRequest mocks base method
+func (m *MockAthenaAPI) ListApplicationDPUSizesRequest(arg0 *athena.ListApplicationDPUSizesInput) (*request.Request, *athena.ListApplicationDPUSizesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationDPUSizesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.ListApplicationDPUSizesOutput)
+	return ret0, ret1
+}
+
+// ListApplicationDPUSizesRequest indicates an expected call of ListApplicationDPUSizesRequest
+func (mr *MockAthenaAPIMockRecorder) ListApplicationDPUSizesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationDPUSizesRequest", reflect.TypeOf((*MockAthenaAPI)(nil).ListApplicationDPUSizesRequest), arg0)
+}
+
+// ListApplicationDPUSizesWithContext mocks base method
+func (m *MockAthenaAPI) ListApplicationDPUSizesWithContext(arg0 context.Context, arg1 *athena.ListApplicationDPUSizesInput, arg2 ...request.Option) (*athena.ListApplicationDPUSizesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApplicationDPUSizesWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.ListApplicationDPUSizesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApplicationDPUSizesWithContext indicates an expected call of ListApplicationDPUSizesWithContext
+func (mr *MockAthenaAPIMockRecorder) ListApplicationDPUSizesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationDPUSizesWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListApplicationDPUSizesWithContext), varargs...)
+}
+
+// ListCalculationExecutions mocks base method
+func (m *MockAthenaAPI) ListCalculationExecutions(arg0 *athena.ListCalculationExecutionsInput) (*athena.ListCalculationExecutionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCalculationExecutions", arg0)
+	ret0, _ := ret[0].(*athena.ListCalculationExecutionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCalculationExecutions indicates an expected call of ListCalculationExecutions
+func (mr *MockAthenaAPIMockRecorder) ListCalculationExecutions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCalculationExecutions", reflect.TypeOf((*MockAthenaAPI)(nil).ListCalculationExecutions), arg0)
+}
+
+// ListCalculationExecutionsPages mocks base method
+func (m *MockAthenaAPI) ListCalculationExecutionsPages(arg0 *athena.ListCalculationExecutionsInput, arg1 func(*athena.ListCalculationExecutionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCalculationExecutionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCalculationExecutionsPages indicates an expected call of ListCalculationExecutionsPages
+func (mr *MockAthenaAPIMockRecorder) ListCalculationExecutionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCalculationExecutionsPages", reflect.TypeOf((*MockAthenaAPI)(nil).ListCalculationExecutionsPages), arg0, arg1)
+}
+
+// ListCalculationExecutionsPagesWithContext mocks base method
+func (m *MockAthenaAPI) ListCalculationExecutionsPagesWithContext(arg0 context.Context, arg1 *athena.ListCalculationExecutionsInput, arg2 func(*athena.ListCalculationExecutionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCalculationExecutionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCalculationExecutionsPagesWithContext indicates an expected call of ListCalculationExecutionsPagesWithContext
+func (mr *MockAthenaAPIMockRecorder) ListCalculationExecutionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCalculationExecutionsPagesWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListCalculationExecutionsPagesWithContext), varargs...)
+}
+
+// ListCalculationExecutionsRequest mocks base method
+func (m *MockAthenaAPI) ListCalculationExecutionsRequest(arg0 *athena.ListCalculationExecutionsInput) (*request.Request, *athena.ListCalculationExecutionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCalculationExecutionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.ListCalculationExecutionsOutput)
+	return ret0, ret1
+}
+
+// ListCalculationExecutionsRequest indicates an expected call of ListCalculationExecutionsRequest
+func (mr *MockAthenaAPIMockRecorder) ListCalculationExecutionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCalculationExecutionsRequest", reflect.TypeOf((*MockAthenaAPI)(nil).ListCalculationExecutionsRequest), arg0)
+}
+
+// ListCalculationExecutionsWithContext mocks base method
+func (m *MockAthenaAPI) ListCalculationExecutionsWithContext(arg0 context.Context, arg1 *athena.ListCalculationExecutionsInput, arg2 ...request.Option) (*athena.ListCalculationExecutionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCalculationExecutionsWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.ListCalculationExecutionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCalculationExecutionsWithContext indicates an expected call of ListCalculationExecutionsWithContext
+func (mr *MockAthenaAPIMockRecorder) ListCalculationExecutionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCalculationExecutionsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListCalculationExecutionsWithContext), varargs...)
 }
 
 // ListDataCatalogs mocks base method
@@ -1317,6 +2033,89 @@ func (mr *MockAthenaAPIMockRecorder) ListEngineVersionsWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEngineVersionsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListEngineVersionsWithContext), varargs...)
 }
 
+// ListExecutors mocks base method
+func (m *MockAthenaAPI) ListExecutors(arg0 *athena.ListExecutorsInput) (*athena.ListExecutorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExecutors", arg0)
+	ret0, _ := ret[0].(*athena.ListExecutorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExecutors indicates an expected call of ListExecutors
+func (mr *MockAthenaAPIMockRecorder) ListExecutors(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutors", reflect.TypeOf((*MockAthenaAPI)(nil).ListExecutors), arg0)
+}
+
+// ListExecutorsPages mocks base method
+func (m *MockAthenaAPI) ListExecutorsPages(arg0 *athena.ListExecutorsInput, arg1 func(*athena.ListExecutorsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExecutorsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExecutorsPages indicates an expected call of ListExecutorsPages
+func (mr *MockAthenaAPIMockRecorder) ListExecutorsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutorsPages", reflect.TypeOf((*MockAthenaAPI)(nil).ListExecutorsPages), arg0, arg1)
+}
+
+// ListExecutorsPagesWithContext mocks base method
+func (m *MockAthenaAPI) ListExecutorsPagesWithContext(arg0 context.Context, arg1 *athena.ListExecutorsInput, arg2 func(*athena.ListExecutorsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExecutorsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExecutorsPagesWithContext indicates an expected call of ListExecutorsPagesWithContext
+func (mr *MockAthenaAPIMockRecorder) ListExecutorsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutorsPagesWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListExecutorsPagesWithContext), varargs...)
+}
+
+// ListExecutorsRequest mocks base method
+func (m *MockAthenaAPI) ListExecutorsRequest(arg0 *athena.ListExecutorsInput) (*request.Request, *athena.ListExecutorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExecutorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.ListExecutorsOutput)
+	return ret0, ret1
+}
+
+// ListExecutorsRequest indicates an expected call of ListExecutorsRequest
+func (mr *MockAthenaAPIMockRecorder) ListExecutorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutorsRequest", reflect.TypeOf((*MockAthenaAPI)(nil).ListExecutorsRequest), arg0)
+}
+
+// ListExecutorsWithContext mocks base method
+func (m *MockAthenaAPI) ListExecutorsWithContext(arg0 context.Context, arg1 *athena.ListExecutorsInput, arg2 ...request.Option) (*athena.ListExecutorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExecutorsWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.ListExecutorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExecutorsWithContext indicates an expected call of ListExecutorsWithContext
+func (mr *MockAthenaAPIMockRecorder) ListExecutorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutorsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListExecutorsWithContext), varargs...)
+}
+
 // ListNamedQueries mocks base method
 func (m *MockAthenaAPI) ListNamedQueries(arg0 *athena.ListNamedQueriesInput) (*athena.ListNamedQueriesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1398,6 +2197,106 @@ func (mr *MockAthenaAPIMockRecorder) ListNamedQueriesWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNamedQueriesWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListNamedQueriesWithContext), varargs...)
+}
+
+// ListNotebookMetadata mocks base method
+func (m *MockAthenaAPI) ListNotebookMetadata(arg0 *athena.ListNotebookMetadataInput) (*athena.ListNotebookMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListNotebookMetadata", arg0)
+	ret0, _ := ret[0].(*athena.ListNotebookMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListNotebookMetadata indicates an expected call of ListNotebookMetadata
+func (mr *MockAthenaAPIMockRecorder) ListNotebookMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookMetadata", reflect.TypeOf((*MockAthenaAPI)(nil).ListNotebookMetadata), arg0)
+}
+
+// ListNotebookMetadataRequest mocks base method
+func (m *MockAthenaAPI) ListNotebookMetadataRequest(arg0 *athena.ListNotebookMetadataInput) (*request.Request, *athena.ListNotebookMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListNotebookMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.ListNotebookMetadataOutput)
+	return ret0, ret1
+}
+
+// ListNotebookMetadataRequest indicates an expected call of ListNotebookMetadataRequest
+func (mr *MockAthenaAPIMockRecorder) ListNotebookMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookMetadataRequest", reflect.TypeOf((*MockAthenaAPI)(nil).ListNotebookMetadataRequest), arg0)
+}
+
+// ListNotebookMetadataWithContext mocks base method
+func (m *MockAthenaAPI) ListNotebookMetadataWithContext(arg0 context.Context, arg1 *athena.ListNotebookMetadataInput, arg2 ...request.Option) (*athena.ListNotebookMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListNotebookMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.ListNotebookMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListNotebookMetadataWithContext indicates an expected call of ListNotebookMetadataWithContext
+func (mr *MockAthenaAPIMockRecorder) ListNotebookMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookMetadataWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListNotebookMetadataWithContext), varargs...)
+}
+
+// ListNotebookSessions mocks base method
+func (m *MockAthenaAPI) ListNotebookSessions(arg0 *athena.ListNotebookSessionsInput) (*athena.ListNotebookSessionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListNotebookSessions", arg0)
+	ret0, _ := ret[0].(*athena.ListNotebookSessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListNotebookSessions indicates an expected call of ListNotebookSessions
+func (mr *MockAthenaAPIMockRecorder) ListNotebookSessions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookSessions", reflect.TypeOf((*MockAthenaAPI)(nil).ListNotebookSessions), arg0)
+}
+
+// ListNotebookSessionsRequest mocks base method
+func (m *MockAthenaAPI) ListNotebookSessionsRequest(arg0 *athena.ListNotebookSessionsInput) (*request.Request, *athena.ListNotebookSessionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListNotebookSessionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.ListNotebookSessionsOutput)
+	return ret0, ret1
+}
+
+// ListNotebookSessionsRequest indicates an expected call of ListNotebookSessionsRequest
+func (mr *MockAthenaAPIMockRecorder) ListNotebookSessionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookSessionsRequest", reflect.TypeOf((*MockAthenaAPI)(nil).ListNotebookSessionsRequest), arg0)
+}
+
+// ListNotebookSessionsWithContext mocks base method
+func (m *MockAthenaAPI) ListNotebookSessionsWithContext(arg0 context.Context, arg1 *athena.ListNotebookSessionsInput, arg2 ...request.Option) (*athena.ListNotebookSessionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListNotebookSessionsWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.ListNotebookSessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListNotebookSessionsWithContext indicates an expected call of ListNotebookSessionsWithContext
+func (mr *MockAthenaAPIMockRecorder) ListNotebookSessionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookSessionsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListNotebookSessionsWithContext), varargs...)
 }
 
 // ListPreparedStatements mocks base method
@@ -1564,6 +2463,89 @@ func (mr *MockAthenaAPIMockRecorder) ListQueryExecutionsWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListQueryExecutionsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListQueryExecutionsWithContext), varargs...)
+}
+
+// ListSessions mocks base method
+func (m *MockAthenaAPI) ListSessions(arg0 *athena.ListSessionsInput) (*athena.ListSessionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSessions", arg0)
+	ret0, _ := ret[0].(*athena.ListSessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSessions indicates an expected call of ListSessions
+func (mr *MockAthenaAPIMockRecorder) ListSessions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessions", reflect.TypeOf((*MockAthenaAPI)(nil).ListSessions), arg0)
+}
+
+// ListSessionsPages mocks base method
+func (m *MockAthenaAPI) ListSessionsPages(arg0 *athena.ListSessionsInput, arg1 func(*athena.ListSessionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSessionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSessionsPages indicates an expected call of ListSessionsPages
+func (mr *MockAthenaAPIMockRecorder) ListSessionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionsPages", reflect.TypeOf((*MockAthenaAPI)(nil).ListSessionsPages), arg0, arg1)
+}
+
+// ListSessionsPagesWithContext mocks base method
+func (m *MockAthenaAPI) ListSessionsPagesWithContext(arg0 context.Context, arg1 *athena.ListSessionsInput, arg2 func(*athena.ListSessionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSessionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSessionsPagesWithContext indicates an expected call of ListSessionsPagesWithContext
+func (mr *MockAthenaAPIMockRecorder) ListSessionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionsPagesWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListSessionsPagesWithContext), varargs...)
+}
+
+// ListSessionsRequest mocks base method
+func (m *MockAthenaAPI) ListSessionsRequest(arg0 *athena.ListSessionsInput) (*request.Request, *athena.ListSessionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSessionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.ListSessionsOutput)
+	return ret0, ret1
+}
+
+// ListSessionsRequest indicates an expected call of ListSessionsRequest
+func (mr *MockAthenaAPIMockRecorder) ListSessionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionsRequest", reflect.TypeOf((*MockAthenaAPI)(nil).ListSessionsRequest), arg0)
+}
+
+// ListSessionsWithContext mocks base method
+func (m *MockAthenaAPI) ListSessionsWithContext(arg0 context.Context, arg1 *athena.ListSessionsInput, arg2 ...request.Option) (*athena.ListSessionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSessionsWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.ListSessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSessionsWithContext indicates an expected call of ListSessionsWithContext
+func (mr *MockAthenaAPIMockRecorder) ListSessionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListSessionsWithContext), varargs...)
 }
 
 // ListTableMetadata mocks base method
@@ -1815,6 +2797,56 @@ func (mr *MockAthenaAPIMockRecorder) ListWorkGroupsWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkGroupsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListWorkGroupsWithContext), varargs...)
 }
 
+// StartCalculationExecution mocks base method
+func (m *MockAthenaAPI) StartCalculationExecution(arg0 *athena.StartCalculationExecutionInput) (*athena.StartCalculationExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartCalculationExecution", arg0)
+	ret0, _ := ret[0].(*athena.StartCalculationExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartCalculationExecution indicates an expected call of StartCalculationExecution
+func (mr *MockAthenaAPIMockRecorder) StartCalculationExecution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCalculationExecution", reflect.TypeOf((*MockAthenaAPI)(nil).StartCalculationExecution), arg0)
+}
+
+// StartCalculationExecutionRequest mocks base method
+func (m *MockAthenaAPI) StartCalculationExecutionRequest(arg0 *athena.StartCalculationExecutionInput) (*request.Request, *athena.StartCalculationExecutionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartCalculationExecutionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.StartCalculationExecutionOutput)
+	return ret0, ret1
+}
+
+// StartCalculationExecutionRequest indicates an expected call of StartCalculationExecutionRequest
+func (mr *MockAthenaAPIMockRecorder) StartCalculationExecutionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCalculationExecutionRequest", reflect.TypeOf((*MockAthenaAPI)(nil).StartCalculationExecutionRequest), arg0)
+}
+
+// StartCalculationExecutionWithContext mocks base method
+func (m *MockAthenaAPI) StartCalculationExecutionWithContext(arg0 context.Context, arg1 *athena.StartCalculationExecutionInput, arg2 ...request.Option) (*athena.StartCalculationExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartCalculationExecutionWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.StartCalculationExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartCalculationExecutionWithContext indicates an expected call of StartCalculationExecutionWithContext
+func (mr *MockAthenaAPIMockRecorder) StartCalculationExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCalculationExecutionWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).StartCalculationExecutionWithContext), varargs...)
+}
+
 // StartQueryExecution mocks base method
 func (m *MockAthenaAPI) StartQueryExecution(arg0 *athena.StartQueryExecutionInput) (*athena.StartQueryExecutionOutput, error) {
 	m.ctrl.T.Helper()
@@ -1863,6 +2895,106 @@ func (mr *MockAthenaAPIMockRecorder) StartQueryExecutionWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartQueryExecutionWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).StartQueryExecutionWithContext), varargs...)
+}
+
+// StartSession mocks base method
+func (m *MockAthenaAPI) StartSession(arg0 *athena.StartSessionInput) (*athena.StartSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSession", arg0)
+	ret0, _ := ret[0].(*athena.StartSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSession indicates an expected call of StartSession
+func (mr *MockAthenaAPIMockRecorder) StartSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSession", reflect.TypeOf((*MockAthenaAPI)(nil).StartSession), arg0)
+}
+
+// StartSessionRequest mocks base method
+func (m *MockAthenaAPI) StartSessionRequest(arg0 *athena.StartSessionInput) (*request.Request, *athena.StartSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.StartSessionOutput)
+	return ret0, ret1
+}
+
+// StartSessionRequest indicates an expected call of StartSessionRequest
+func (mr *MockAthenaAPIMockRecorder) StartSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSessionRequest", reflect.TypeOf((*MockAthenaAPI)(nil).StartSessionRequest), arg0)
+}
+
+// StartSessionWithContext mocks base method
+func (m *MockAthenaAPI) StartSessionWithContext(arg0 context.Context, arg1 *athena.StartSessionInput, arg2 ...request.Option) (*athena.StartSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.StartSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSessionWithContext indicates an expected call of StartSessionWithContext
+func (mr *MockAthenaAPIMockRecorder) StartSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSessionWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).StartSessionWithContext), varargs...)
+}
+
+// StopCalculationExecution mocks base method
+func (m *MockAthenaAPI) StopCalculationExecution(arg0 *athena.StopCalculationExecutionInput) (*athena.StopCalculationExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopCalculationExecution", arg0)
+	ret0, _ := ret[0].(*athena.StopCalculationExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopCalculationExecution indicates an expected call of StopCalculationExecution
+func (mr *MockAthenaAPIMockRecorder) StopCalculationExecution(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopCalculationExecution", reflect.TypeOf((*MockAthenaAPI)(nil).StopCalculationExecution), arg0)
+}
+
+// StopCalculationExecutionRequest mocks base method
+func (m *MockAthenaAPI) StopCalculationExecutionRequest(arg0 *athena.StopCalculationExecutionInput) (*request.Request, *athena.StopCalculationExecutionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopCalculationExecutionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.StopCalculationExecutionOutput)
+	return ret0, ret1
+}
+
+// StopCalculationExecutionRequest indicates an expected call of StopCalculationExecutionRequest
+func (mr *MockAthenaAPIMockRecorder) StopCalculationExecutionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopCalculationExecutionRequest", reflect.TypeOf((*MockAthenaAPI)(nil).StopCalculationExecutionRequest), arg0)
+}
+
+// StopCalculationExecutionWithContext mocks base method
+func (m *MockAthenaAPI) StopCalculationExecutionWithContext(arg0 context.Context, arg1 *athena.StopCalculationExecutionInput, arg2 ...request.Option) (*athena.StopCalculationExecutionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopCalculationExecutionWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.StopCalculationExecutionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopCalculationExecutionWithContext indicates an expected call of StopCalculationExecutionWithContext
+func (mr *MockAthenaAPIMockRecorder) StopCalculationExecutionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopCalculationExecutionWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).StopCalculationExecutionWithContext), varargs...)
 }
 
 // StopQueryExecution mocks base method
@@ -1963,6 +3095,56 @@ func (mr *MockAthenaAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// TerminateSession mocks base method
+func (m *MockAthenaAPI) TerminateSession(arg0 *athena.TerminateSessionInput) (*athena.TerminateSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TerminateSession", arg0)
+	ret0, _ := ret[0].(*athena.TerminateSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TerminateSession indicates an expected call of TerminateSession
+func (mr *MockAthenaAPIMockRecorder) TerminateSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateSession", reflect.TypeOf((*MockAthenaAPI)(nil).TerminateSession), arg0)
+}
+
+// TerminateSessionRequest mocks base method
+func (m *MockAthenaAPI) TerminateSessionRequest(arg0 *athena.TerminateSessionInput) (*request.Request, *athena.TerminateSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TerminateSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.TerminateSessionOutput)
+	return ret0, ret1
+}
+
+// TerminateSessionRequest indicates an expected call of TerminateSessionRequest
+func (mr *MockAthenaAPIMockRecorder) TerminateSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateSessionRequest", reflect.TypeOf((*MockAthenaAPI)(nil).TerminateSessionRequest), arg0)
+}
+
+// TerminateSessionWithContext mocks base method
+func (m *MockAthenaAPI) TerminateSessionWithContext(arg0 context.Context, arg1 *athena.TerminateSessionInput, arg2 ...request.Option) (*athena.TerminateSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TerminateSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.TerminateSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TerminateSessionWithContext indicates an expected call of TerminateSessionWithContext
+func (mr *MockAthenaAPIMockRecorder) TerminateSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateSessionWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).TerminateSessionWithContext), varargs...)
 }
 
 // UntagResource mocks base method
@@ -2113,6 +3295,106 @@ func (mr *MockAthenaAPIMockRecorder) UpdateNamedQueryWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNamedQueryWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateNamedQueryWithContext), varargs...)
+}
+
+// UpdateNotebook mocks base method
+func (m *MockAthenaAPI) UpdateNotebook(arg0 *athena.UpdateNotebookInput) (*athena.UpdateNotebookOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateNotebook", arg0)
+	ret0, _ := ret[0].(*athena.UpdateNotebookOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateNotebook indicates an expected call of UpdateNotebook
+func (mr *MockAthenaAPIMockRecorder) UpdateNotebook(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNotebook", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateNotebook), arg0)
+}
+
+// UpdateNotebookMetadata mocks base method
+func (m *MockAthenaAPI) UpdateNotebookMetadata(arg0 *athena.UpdateNotebookMetadataInput) (*athena.UpdateNotebookMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateNotebookMetadata", arg0)
+	ret0, _ := ret[0].(*athena.UpdateNotebookMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateNotebookMetadata indicates an expected call of UpdateNotebookMetadata
+func (mr *MockAthenaAPIMockRecorder) UpdateNotebookMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNotebookMetadata", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateNotebookMetadata), arg0)
+}
+
+// UpdateNotebookMetadataRequest mocks base method
+func (m *MockAthenaAPI) UpdateNotebookMetadataRequest(arg0 *athena.UpdateNotebookMetadataInput) (*request.Request, *athena.UpdateNotebookMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateNotebookMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.UpdateNotebookMetadataOutput)
+	return ret0, ret1
+}
+
+// UpdateNotebookMetadataRequest indicates an expected call of UpdateNotebookMetadataRequest
+func (mr *MockAthenaAPIMockRecorder) UpdateNotebookMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNotebookMetadataRequest", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateNotebookMetadataRequest), arg0)
+}
+
+// UpdateNotebookMetadataWithContext mocks base method
+func (m *MockAthenaAPI) UpdateNotebookMetadataWithContext(arg0 context.Context, arg1 *athena.UpdateNotebookMetadataInput, arg2 ...request.Option) (*athena.UpdateNotebookMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateNotebookMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.UpdateNotebookMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateNotebookMetadataWithContext indicates an expected call of UpdateNotebookMetadataWithContext
+func (mr *MockAthenaAPIMockRecorder) UpdateNotebookMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNotebookMetadataWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateNotebookMetadataWithContext), varargs...)
+}
+
+// UpdateNotebookRequest mocks base method
+func (m *MockAthenaAPI) UpdateNotebookRequest(arg0 *athena.UpdateNotebookInput) (*request.Request, *athena.UpdateNotebookOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateNotebookRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.UpdateNotebookOutput)
+	return ret0, ret1
+}
+
+// UpdateNotebookRequest indicates an expected call of UpdateNotebookRequest
+func (mr *MockAthenaAPIMockRecorder) UpdateNotebookRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNotebookRequest", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateNotebookRequest), arg0)
+}
+
+// UpdateNotebookWithContext mocks base method
+func (m *MockAthenaAPI) UpdateNotebookWithContext(arg0 context.Context, arg1 *athena.UpdateNotebookInput, arg2 ...request.Option) (*athena.UpdateNotebookOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateNotebookWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.UpdateNotebookOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateNotebookWithContext indicates an expected call of UpdateNotebookWithContext
+func (mr *MockAthenaAPIMockRecorder) UpdateNotebookWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateNotebookWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateNotebookWithContext), varargs...)
 }
 
 // UpdatePreparedStatement mocks base method

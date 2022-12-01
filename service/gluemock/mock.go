@@ -435,6 +435,56 @@ func (mr *MockGlueAPIMockRecorder) BatchGetCustomEntityTypesWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCustomEntityTypesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).BatchGetCustomEntityTypesWithContext), varargs...)
 }
 
+// BatchGetDataQualityResult mocks base method
+func (m *MockGlueAPI) BatchGetDataQualityResult(arg0 *glue.BatchGetDataQualityResultInput) (*glue.BatchGetDataQualityResultOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetDataQualityResult", arg0)
+	ret0, _ := ret[0].(*glue.BatchGetDataQualityResultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetDataQualityResult indicates an expected call of BatchGetDataQualityResult
+func (mr *MockGlueAPIMockRecorder) BatchGetDataQualityResult(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetDataQualityResult", reflect.TypeOf((*MockGlueAPI)(nil).BatchGetDataQualityResult), arg0)
+}
+
+// BatchGetDataQualityResultRequest mocks base method
+func (m *MockGlueAPI) BatchGetDataQualityResultRequest(arg0 *glue.BatchGetDataQualityResultInput) (*request.Request, *glue.BatchGetDataQualityResultOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetDataQualityResultRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.BatchGetDataQualityResultOutput)
+	return ret0, ret1
+}
+
+// BatchGetDataQualityResultRequest indicates an expected call of BatchGetDataQualityResultRequest
+func (mr *MockGlueAPIMockRecorder) BatchGetDataQualityResultRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetDataQualityResultRequest", reflect.TypeOf((*MockGlueAPI)(nil).BatchGetDataQualityResultRequest), arg0)
+}
+
+// BatchGetDataQualityResultWithContext mocks base method
+func (m *MockGlueAPI) BatchGetDataQualityResultWithContext(arg0 context.Context, arg1 *glue.BatchGetDataQualityResultInput, arg2 ...request.Option) (*glue.BatchGetDataQualityResultOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetDataQualityResultWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.BatchGetDataQualityResultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetDataQualityResultWithContext indicates an expected call of BatchGetDataQualityResultWithContext
+func (mr *MockGlueAPIMockRecorder) BatchGetDataQualityResultWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetDataQualityResultWithContext", reflect.TypeOf((*MockGlueAPI)(nil).BatchGetDataQualityResultWithContext), varargs...)
+}
+
 // BatchGetDevEndpoints mocks base method
 func (m *MockGlueAPI) BatchGetDevEndpoints(arg0 *glue.BatchGetDevEndpointsInput) (*glue.BatchGetDevEndpointsOutput, error) {
 	m.ctrl.T.Helper()
@@ -783,6 +833,106 @@ func (mr *MockGlueAPIMockRecorder) BatchUpdatePartitionWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdatePartitionWithContext", reflect.TypeOf((*MockGlueAPI)(nil).BatchUpdatePartitionWithContext), varargs...)
+}
+
+// CancelDataQualityRuleRecommendationRun mocks base method
+func (m *MockGlueAPI) CancelDataQualityRuleRecommendationRun(arg0 *glue.CancelDataQualityRuleRecommendationRunInput) (*glue.CancelDataQualityRuleRecommendationRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelDataQualityRuleRecommendationRun", arg0)
+	ret0, _ := ret[0].(*glue.CancelDataQualityRuleRecommendationRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelDataQualityRuleRecommendationRun indicates an expected call of CancelDataQualityRuleRecommendationRun
+func (mr *MockGlueAPIMockRecorder) CancelDataQualityRuleRecommendationRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDataQualityRuleRecommendationRun", reflect.TypeOf((*MockGlueAPI)(nil).CancelDataQualityRuleRecommendationRun), arg0)
+}
+
+// CancelDataQualityRuleRecommendationRunRequest mocks base method
+func (m *MockGlueAPI) CancelDataQualityRuleRecommendationRunRequest(arg0 *glue.CancelDataQualityRuleRecommendationRunInput) (*request.Request, *glue.CancelDataQualityRuleRecommendationRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelDataQualityRuleRecommendationRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.CancelDataQualityRuleRecommendationRunOutput)
+	return ret0, ret1
+}
+
+// CancelDataQualityRuleRecommendationRunRequest indicates an expected call of CancelDataQualityRuleRecommendationRunRequest
+func (mr *MockGlueAPIMockRecorder) CancelDataQualityRuleRecommendationRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDataQualityRuleRecommendationRunRequest", reflect.TypeOf((*MockGlueAPI)(nil).CancelDataQualityRuleRecommendationRunRequest), arg0)
+}
+
+// CancelDataQualityRuleRecommendationRunWithContext mocks base method
+func (m *MockGlueAPI) CancelDataQualityRuleRecommendationRunWithContext(arg0 context.Context, arg1 *glue.CancelDataQualityRuleRecommendationRunInput, arg2 ...request.Option) (*glue.CancelDataQualityRuleRecommendationRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelDataQualityRuleRecommendationRunWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.CancelDataQualityRuleRecommendationRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelDataQualityRuleRecommendationRunWithContext indicates an expected call of CancelDataQualityRuleRecommendationRunWithContext
+func (mr *MockGlueAPIMockRecorder) CancelDataQualityRuleRecommendationRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDataQualityRuleRecommendationRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CancelDataQualityRuleRecommendationRunWithContext), varargs...)
+}
+
+// CancelDataQualityRulesetEvaluationRun mocks base method
+func (m *MockGlueAPI) CancelDataQualityRulesetEvaluationRun(arg0 *glue.CancelDataQualityRulesetEvaluationRunInput) (*glue.CancelDataQualityRulesetEvaluationRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelDataQualityRulesetEvaluationRun", arg0)
+	ret0, _ := ret[0].(*glue.CancelDataQualityRulesetEvaluationRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelDataQualityRulesetEvaluationRun indicates an expected call of CancelDataQualityRulesetEvaluationRun
+func (mr *MockGlueAPIMockRecorder) CancelDataQualityRulesetEvaluationRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDataQualityRulesetEvaluationRun", reflect.TypeOf((*MockGlueAPI)(nil).CancelDataQualityRulesetEvaluationRun), arg0)
+}
+
+// CancelDataQualityRulesetEvaluationRunRequest mocks base method
+func (m *MockGlueAPI) CancelDataQualityRulesetEvaluationRunRequest(arg0 *glue.CancelDataQualityRulesetEvaluationRunInput) (*request.Request, *glue.CancelDataQualityRulesetEvaluationRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelDataQualityRulesetEvaluationRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.CancelDataQualityRulesetEvaluationRunOutput)
+	return ret0, ret1
+}
+
+// CancelDataQualityRulesetEvaluationRunRequest indicates an expected call of CancelDataQualityRulesetEvaluationRunRequest
+func (mr *MockGlueAPIMockRecorder) CancelDataQualityRulesetEvaluationRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDataQualityRulesetEvaluationRunRequest", reflect.TypeOf((*MockGlueAPI)(nil).CancelDataQualityRulesetEvaluationRunRequest), arg0)
+}
+
+// CancelDataQualityRulesetEvaluationRunWithContext mocks base method
+func (m *MockGlueAPI) CancelDataQualityRulesetEvaluationRunWithContext(arg0 context.Context, arg1 *glue.CancelDataQualityRulesetEvaluationRunInput, arg2 ...request.Option) (*glue.CancelDataQualityRulesetEvaluationRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelDataQualityRulesetEvaluationRunWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.CancelDataQualityRulesetEvaluationRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelDataQualityRulesetEvaluationRunWithContext indicates an expected call of CancelDataQualityRulesetEvaluationRunWithContext
+func (mr *MockGlueAPIMockRecorder) CancelDataQualityRulesetEvaluationRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelDataQualityRulesetEvaluationRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CancelDataQualityRulesetEvaluationRunWithContext), varargs...)
 }
 
 // CancelMLTaskRun mocks base method
@@ -1183,6 +1333,56 @@ func (mr *MockGlueAPIMockRecorder) CreateCustomEntityTypeWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomEntityTypeWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreateCustomEntityTypeWithContext), varargs...)
+}
+
+// CreateDataQualityRuleset mocks base method
+func (m *MockGlueAPI) CreateDataQualityRuleset(arg0 *glue.CreateDataQualityRulesetInput) (*glue.CreateDataQualityRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDataQualityRuleset", arg0)
+	ret0, _ := ret[0].(*glue.CreateDataQualityRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDataQualityRuleset indicates an expected call of CreateDataQualityRuleset
+func (mr *MockGlueAPIMockRecorder) CreateDataQualityRuleset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataQualityRuleset", reflect.TypeOf((*MockGlueAPI)(nil).CreateDataQualityRuleset), arg0)
+}
+
+// CreateDataQualityRulesetRequest mocks base method
+func (m *MockGlueAPI) CreateDataQualityRulesetRequest(arg0 *glue.CreateDataQualityRulesetInput) (*request.Request, *glue.CreateDataQualityRulesetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDataQualityRulesetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.CreateDataQualityRulesetOutput)
+	return ret0, ret1
+}
+
+// CreateDataQualityRulesetRequest indicates an expected call of CreateDataQualityRulesetRequest
+func (mr *MockGlueAPIMockRecorder) CreateDataQualityRulesetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataQualityRulesetRequest", reflect.TypeOf((*MockGlueAPI)(nil).CreateDataQualityRulesetRequest), arg0)
+}
+
+// CreateDataQualityRulesetWithContext mocks base method
+func (m *MockGlueAPI) CreateDataQualityRulesetWithContext(arg0 context.Context, arg1 *glue.CreateDataQualityRulesetInput, arg2 ...request.Option) (*glue.CreateDataQualityRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDataQualityRulesetWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.CreateDataQualityRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDataQualityRulesetWithContext indicates an expected call of CreateDataQualityRulesetWithContext
+func (mr *MockGlueAPIMockRecorder) CreateDataQualityRulesetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataQualityRulesetWithContext", reflect.TypeOf((*MockGlueAPI)(nil).CreateDataQualityRulesetWithContext), varargs...)
 }
 
 // CreateDatabase mocks base method
@@ -2283,6 +2483,56 @@ func (mr *MockGlueAPIMockRecorder) DeleteCustomEntityTypeWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomEntityTypeWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteCustomEntityTypeWithContext), varargs...)
+}
+
+// DeleteDataQualityRuleset mocks base method
+func (m *MockGlueAPI) DeleteDataQualityRuleset(arg0 *glue.DeleteDataQualityRulesetInput) (*glue.DeleteDataQualityRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDataQualityRuleset", arg0)
+	ret0, _ := ret[0].(*glue.DeleteDataQualityRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDataQualityRuleset indicates an expected call of DeleteDataQualityRuleset
+func (mr *MockGlueAPIMockRecorder) DeleteDataQualityRuleset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataQualityRuleset", reflect.TypeOf((*MockGlueAPI)(nil).DeleteDataQualityRuleset), arg0)
+}
+
+// DeleteDataQualityRulesetRequest mocks base method
+func (m *MockGlueAPI) DeleteDataQualityRulesetRequest(arg0 *glue.DeleteDataQualityRulesetInput) (*request.Request, *glue.DeleteDataQualityRulesetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteDataQualityRulesetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.DeleteDataQualityRulesetOutput)
+	return ret0, ret1
+}
+
+// DeleteDataQualityRulesetRequest indicates an expected call of DeleteDataQualityRulesetRequest
+func (mr *MockGlueAPIMockRecorder) DeleteDataQualityRulesetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataQualityRulesetRequest", reflect.TypeOf((*MockGlueAPI)(nil).DeleteDataQualityRulesetRequest), arg0)
+}
+
+// DeleteDataQualityRulesetWithContext mocks base method
+func (m *MockGlueAPI) DeleteDataQualityRulesetWithContext(arg0 context.Context, arg1 *glue.DeleteDataQualityRulesetInput, arg2 ...request.Option) (*glue.DeleteDataQualityRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteDataQualityRulesetWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.DeleteDataQualityRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteDataQualityRulesetWithContext indicates an expected call of DeleteDataQualityRulesetWithContext
+func (mr *MockGlueAPIMockRecorder) DeleteDataQualityRulesetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataQualityRulesetWithContext", reflect.TypeOf((*MockGlueAPI)(nil).DeleteDataQualityRulesetWithContext), varargs...)
 }
 
 // DeleteDatabase mocks base method
@@ -4048,6 +4298,206 @@ func (mr *MockGlueAPIMockRecorder) GetDataCatalogEncryptionSettingsWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataCatalogEncryptionSettingsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetDataCatalogEncryptionSettingsWithContext), varargs...)
+}
+
+// GetDataQualityResult mocks base method
+func (m *MockGlueAPI) GetDataQualityResult(arg0 *glue.GetDataQualityResultInput) (*glue.GetDataQualityResultOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataQualityResult", arg0)
+	ret0, _ := ret[0].(*glue.GetDataQualityResultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataQualityResult indicates an expected call of GetDataQualityResult
+func (mr *MockGlueAPIMockRecorder) GetDataQualityResult(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityResult", reflect.TypeOf((*MockGlueAPI)(nil).GetDataQualityResult), arg0)
+}
+
+// GetDataQualityResultRequest mocks base method
+func (m *MockGlueAPI) GetDataQualityResultRequest(arg0 *glue.GetDataQualityResultInput) (*request.Request, *glue.GetDataQualityResultOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataQualityResultRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetDataQualityResultOutput)
+	return ret0, ret1
+}
+
+// GetDataQualityResultRequest indicates an expected call of GetDataQualityResultRequest
+func (mr *MockGlueAPIMockRecorder) GetDataQualityResultRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityResultRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetDataQualityResultRequest), arg0)
+}
+
+// GetDataQualityResultWithContext mocks base method
+func (m *MockGlueAPI) GetDataQualityResultWithContext(arg0 context.Context, arg1 *glue.GetDataQualityResultInput, arg2 ...request.Option) (*glue.GetDataQualityResultOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDataQualityResultWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetDataQualityResultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataQualityResultWithContext indicates an expected call of GetDataQualityResultWithContext
+func (mr *MockGlueAPIMockRecorder) GetDataQualityResultWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityResultWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetDataQualityResultWithContext), varargs...)
+}
+
+// GetDataQualityRuleRecommendationRun mocks base method
+func (m *MockGlueAPI) GetDataQualityRuleRecommendationRun(arg0 *glue.GetDataQualityRuleRecommendationRunInput) (*glue.GetDataQualityRuleRecommendationRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataQualityRuleRecommendationRun", arg0)
+	ret0, _ := ret[0].(*glue.GetDataQualityRuleRecommendationRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataQualityRuleRecommendationRun indicates an expected call of GetDataQualityRuleRecommendationRun
+func (mr *MockGlueAPIMockRecorder) GetDataQualityRuleRecommendationRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityRuleRecommendationRun", reflect.TypeOf((*MockGlueAPI)(nil).GetDataQualityRuleRecommendationRun), arg0)
+}
+
+// GetDataQualityRuleRecommendationRunRequest mocks base method
+func (m *MockGlueAPI) GetDataQualityRuleRecommendationRunRequest(arg0 *glue.GetDataQualityRuleRecommendationRunInput) (*request.Request, *glue.GetDataQualityRuleRecommendationRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataQualityRuleRecommendationRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetDataQualityRuleRecommendationRunOutput)
+	return ret0, ret1
+}
+
+// GetDataQualityRuleRecommendationRunRequest indicates an expected call of GetDataQualityRuleRecommendationRunRequest
+func (mr *MockGlueAPIMockRecorder) GetDataQualityRuleRecommendationRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityRuleRecommendationRunRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetDataQualityRuleRecommendationRunRequest), arg0)
+}
+
+// GetDataQualityRuleRecommendationRunWithContext mocks base method
+func (m *MockGlueAPI) GetDataQualityRuleRecommendationRunWithContext(arg0 context.Context, arg1 *glue.GetDataQualityRuleRecommendationRunInput, arg2 ...request.Option) (*glue.GetDataQualityRuleRecommendationRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDataQualityRuleRecommendationRunWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetDataQualityRuleRecommendationRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataQualityRuleRecommendationRunWithContext indicates an expected call of GetDataQualityRuleRecommendationRunWithContext
+func (mr *MockGlueAPIMockRecorder) GetDataQualityRuleRecommendationRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityRuleRecommendationRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetDataQualityRuleRecommendationRunWithContext), varargs...)
+}
+
+// GetDataQualityRuleset mocks base method
+func (m *MockGlueAPI) GetDataQualityRuleset(arg0 *glue.GetDataQualityRulesetInput) (*glue.GetDataQualityRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataQualityRuleset", arg0)
+	ret0, _ := ret[0].(*glue.GetDataQualityRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataQualityRuleset indicates an expected call of GetDataQualityRuleset
+func (mr *MockGlueAPIMockRecorder) GetDataQualityRuleset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityRuleset", reflect.TypeOf((*MockGlueAPI)(nil).GetDataQualityRuleset), arg0)
+}
+
+// GetDataQualityRulesetEvaluationRun mocks base method
+func (m *MockGlueAPI) GetDataQualityRulesetEvaluationRun(arg0 *glue.GetDataQualityRulesetEvaluationRunInput) (*glue.GetDataQualityRulesetEvaluationRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataQualityRulesetEvaluationRun", arg0)
+	ret0, _ := ret[0].(*glue.GetDataQualityRulesetEvaluationRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataQualityRulesetEvaluationRun indicates an expected call of GetDataQualityRulesetEvaluationRun
+func (mr *MockGlueAPIMockRecorder) GetDataQualityRulesetEvaluationRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityRulesetEvaluationRun", reflect.TypeOf((*MockGlueAPI)(nil).GetDataQualityRulesetEvaluationRun), arg0)
+}
+
+// GetDataQualityRulesetEvaluationRunRequest mocks base method
+func (m *MockGlueAPI) GetDataQualityRulesetEvaluationRunRequest(arg0 *glue.GetDataQualityRulesetEvaluationRunInput) (*request.Request, *glue.GetDataQualityRulesetEvaluationRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataQualityRulesetEvaluationRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetDataQualityRulesetEvaluationRunOutput)
+	return ret0, ret1
+}
+
+// GetDataQualityRulesetEvaluationRunRequest indicates an expected call of GetDataQualityRulesetEvaluationRunRequest
+func (mr *MockGlueAPIMockRecorder) GetDataQualityRulesetEvaluationRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityRulesetEvaluationRunRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetDataQualityRulesetEvaluationRunRequest), arg0)
+}
+
+// GetDataQualityRulesetEvaluationRunWithContext mocks base method
+func (m *MockGlueAPI) GetDataQualityRulesetEvaluationRunWithContext(arg0 context.Context, arg1 *glue.GetDataQualityRulesetEvaluationRunInput, arg2 ...request.Option) (*glue.GetDataQualityRulesetEvaluationRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDataQualityRulesetEvaluationRunWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetDataQualityRulesetEvaluationRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataQualityRulesetEvaluationRunWithContext indicates an expected call of GetDataQualityRulesetEvaluationRunWithContext
+func (mr *MockGlueAPIMockRecorder) GetDataQualityRulesetEvaluationRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityRulesetEvaluationRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetDataQualityRulesetEvaluationRunWithContext), varargs...)
+}
+
+// GetDataQualityRulesetRequest mocks base method
+func (m *MockGlueAPI) GetDataQualityRulesetRequest(arg0 *glue.GetDataQualityRulesetInput) (*request.Request, *glue.GetDataQualityRulesetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataQualityRulesetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.GetDataQualityRulesetOutput)
+	return ret0, ret1
+}
+
+// GetDataQualityRulesetRequest indicates an expected call of GetDataQualityRulesetRequest
+func (mr *MockGlueAPIMockRecorder) GetDataQualityRulesetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityRulesetRequest", reflect.TypeOf((*MockGlueAPI)(nil).GetDataQualityRulesetRequest), arg0)
+}
+
+// GetDataQualityRulesetWithContext mocks base method
+func (m *MockGlueAPI) GetDataQualityRulesetWithContext(arg0 context.Context, arg1 *glue.GetDataQualityRulesetInput, arg2 ...request.Option) (*glue.GetDataQualityRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDataQualityRulesetWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.GetDataQualityRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataQualityRulesetWithContext indicates an expected call of GetDataQualityRulesetWithContext
+func (mr *MockGlueAPIMockRecorder) GetDataQualityRulesetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataQualityRulesetWithContext", reflect.TypeOf((*MockGlueAPI)(nil).GetDataQualityRulesetWithContext), varargs...)
 }
 
 // GetDatabase mocks base method
@@ -7227,6 +7677,338 @@ func (mr *MockGlueAPIMockRecorder) ListCustomEntityTypesWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCustomEntityTypesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListCustomEntityTypesWithContext), varargs...)
 }
 
+// ListDataQualityResults mocks base method
+func (m *MockGlueAPI) ListDataQualityResults(arg0 *glue.ListDataQualityResultsInput) (*glue.ListDataQualityResultsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataQualityResults", arg0)
+	ret0, _ := ret[0].(*glue.ListDataQualityResultsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataQualityResults indicates an expected call of ListDataQualityResults
+func (mr *MockGlueAPIMockRecorder) ListDataQualityResults(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityResults", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityResults), arg0)
+}
+
+// ListDataQualityResultsPages mocks base method
+func (m *MockGlueAPI) ListDataQualityResultsPages(arg0 *glue.ListDataQualityResultsInput, arg1 func(*glue.ListDataQualityResultsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataQualityResultsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDataQualityResultsPages indicates an expected call of ListDataQualityResultsPages
+func (mr *MockGlueAPIMockRecorder) ListDataQualityResultsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityResultsPages", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityResultsPages), arg0, arg1)
+}
+
+// ListDataQualityResultsPagesWithContext mocks base method
+func (m *MockGlueAPI) ListDataQualityResultsPagesWithContext(arg0 context.Context, arg1 *glue.ListDataQualityResultsInput, arg2 func(*glue.ListDataQualityResultsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDataQualityResultsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDataQualityResultsPagesWithContext indicates an expected call of ListDataQualityResultsPagesWithContext
+func (mr *MockGlueAPIMockRecorder) ListDataQualityResultsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityResultsPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityResultsPagesWithContext), varargs...)
+}
+
+// ListDataQualityResultsRequest mocks base method
+func (m *MockGlueAPI) ListDataQualityResultsRequest(arg0 *glue.ListDataQualityResultsInput) (*request.Request, *glue.ListDataQualityResultsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataQualityResultsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.ListDataQualityResultsOutput)
+	return ret0, ret1
+}
+
+// ListDataQualityResultsRequest indicates an expected call of ListDataQualityResultsRequest
+func (mr *MockGlueAPIMockRecorder) ListDataQualityResultsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityResultsRequest", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityResultsRequest), arg0)
+}
+
+// ListDataQualityResultsWithContext mocks base method
+func (m *MockGlueAPI) ListDataQualityResultsWithContext(arg0 context.Context, arg1 *glue.ListDataQualityResultsInput, arg2 ...request.Option) (*glue.ListDataQualityResultsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDataQualityResultsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.ListDataQualityResultsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataQualityResultsWithContext indicates an expected call of ListDataQualityResultsWithContext
+func (mr *MockGlueAPIMockRecorder) ListDataQualityResultsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityResultsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityResultsWithContext), varargs...)
+}
+
+// ListDataQualityRuleRecommendationRuns mocks base method
+func (m *MockGlueAPI) ListDataQualityRuleRecommendationRuns(arg0 *glue.ListDataQualityRuleRecommendationRunsInput) (*glue.ListDataQualityRuleRecommendationRunsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataQualityRuleRecommendationRuns", arg0)
+	ret0, _ := ret[0].(*glue.ListDataQualityRuleRecommendationRunsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataQualityRuleRecommendationRuns indicates an expected call of ListDataQualityRuleRecommendationRuns
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRuleRecommendationRuns(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRuleRecommendationRuns", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRuleRecommendationRuns), arg0)
+}
+
+// ListDataQualityRuleRecommendationRunsPages mocks base method
+func (m *MockGlueAPI) ListDataQualityRuleRecommendationRunsPages(arg0 *glue.ListDataQualityRuleRecommendationRunsInput, arg1 func(*glue.ListDataQualityRuleRecommendationRunsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataQualityRuleRecommendationRunsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDataQualityRuleRecommendationRunsPages indicates an expected call of ListDataQualityRuleRecommendationRunsPages
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRuleRecommendationRunsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRuleRecommendationRunsPages", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRuleRecommendationRunsPages), arg0, arg1)
+}
+
+// ListDataQualityRuleRecommendationRunsPagesWithContext mocks base method
+func (m *MockGlueAPI) ListDataQualityRuleRecommendationRunsPagesWithContext(arg0 context.Context, arg1 *glue.ListDataQualityRuleRecommendationRunsInput, arg2 func(*glue.ListDataQualityRuleRecommendationRunsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDataQualityRuleRecommendationRunsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDataQualityRuleRecommendationRunsPagesWithContext indicates an expected call of ListDataQualityRuleRecommendationRunsPagesWithContext
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRuleRecommendationRunsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRuleRecommendationRunsPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRuleRecommendationRunsPagesWithContext), varargs...)
+}
+
+// ListDataQualityRuleRecommendationRunsRequest mocks base method
+func (m *MockGlueAPI) ListDataQualityRuleRecommendationRunsRequest(arg0 *glue.ListDataQualityRuleRecommendationRunsInput) (*request.Request, *glue.ListDataQualityRuleRecommendationRunsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataQualityRuleRecommendationRunsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.ListDataQualityRuleRecommendationRunsOutput)
+	return ret0, ret1
+}
+
+// ListDataQualityRuleRecommendationRunsRequest indicates an expected call of ListDataQualityRuleRecommendationRunsRequest
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRuleRecommendationRunsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRuleRecommendationRunsRequest", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRuleRecommendationRunsRequest), arg0)
+}
+
+// ListDataQualityRuleRecommendationRunsWithContext mocks base method
+func (m *MockGlueAPI) ListDataQualityRuleRecommendationRunsWithContext(arg0 context.Context, arg1 *glue.ListDataQualityRuleRecommendationRunsInput, arg2 ...request.Option) (*glue.ListDataQualityRuleRecommendationRunsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDataQualityRuleRecommendationRunsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.ListDataQualityRuleRecommendationRunsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataQualityRuleRecommendationRunsWithContext indicates an expected call of ListDataQualityRuleRecommendationRunsWithContext
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRuleRecommendationRunsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRuleRecommendationRunsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRuleRecommendationRunsWithContext), varargs...)
+}
+
+// ListDataQualityRulesetEvaluationRuns mocks base method
+func (m *MockGlueAPI) ListDataQualityRulesetEvaluationRuns(arg0 *glue.ListDataQualityRulesetEvaluationRunsInput) (*glue.ListDataQualityRulesetEvaluationRunsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataQualityRulesetEvaluationRuns", arg0)
+	ret0, _ := ret[0].(*glue.ListDataQualityRulesetEvaluationRunsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataQualityRulesetEvaluationRuns indicates an expected call of ListDataQualityRulesetEvaluationRuns
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRulesetEvaluationRuns(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRulesetEvaluationRuns", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRulesetEvaluationRuns), arg0)
+}
+
+// ListDataQualityRulesetEvaluationRunsPages mocks base method
+func (m *MockGlueAPI) ListDataQualityRulesetEvaluationRunsPages(arg0 *glue.ListDataQualityRulesetEvaluationRunsInput, arg1 func(*glue.ListDataQualityRulesetEvaluationRunsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataQualityRulesetEvaluationRunsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDataQualityRulesetEvaluationRunsPages indicates an expected call of ListDataQualityRulesetEvaluationRunsPages
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRulesetEvaluationRunsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRulesetEvaluationRunsPages", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRulesetEvaluationRunsPages), arg0, arg1)
+}
+
+// ListDataQualityRulesetEvaluationRunsPagesWithContext mocks base method
+func (m *MockGlueAPI) ListDataQualityRulesetEvaluationRunsPagesWithContext(arg0 context.Context, arg1 *glue.ListDataQualityRulesetEvaluationRunsInput, arg2 func(*glue.ListDataQualityRulesetEvaluationRunsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDataQualityRulesetEvaluationRunsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDataQualityRulesetEvaluationRunsPagesWithContext indicates an expected call of ListDataQualityRulesetEvaluationRunsPagesWithContext
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRulesetEvaluationRunsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRulesetEvaluationRunsPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRulesetEvaluationRunsPagesWithContext), varargs...)
+}
+
+// ListDataQualityRulesetEvaluationRunsRequest mocks base method
+func (m *MockGlueAPI) ListDataQualityRulesetEvaluationRunsRequest(arg0 *glue.ListDataQualityRulesetEvaluationRunsInput) (*request.Request, *glue.ListDataQualityRulesetEvaluationRunsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataQualityRulesetEvaluationRunsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.ListDataQualityRulesetEvaluationRunsOutput)
+	return ret0, ret1
+}
+
+// ListDataQualityRulesetEvaluationRunsRequest indicates an expected call of ListDataQualityRulesetEvaluationRunsRequest
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRulesetEvaluationRunsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRulesetEvaluationRunsRequest", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRulesetEvaluationRunsRequest), arg0)
+}
+
+// ListDataQualityRulesetEvaluationRunsWithContext mocks base method
+func (m *MockGlueAPI) ListDataQualityRulesetEvaluationRunsWithContext(arg0 context.Context, arg1 *glue.ListDataQualityRulesetEvaluationRunsInput, arg2 ...request.Option) (*glue.ListDataQualityRulesetEvaluationRunsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDataQualityRulesetEvaluationRunsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.ListDataQualityRulesetEvaluationRunsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataQualityRulesetEvaluationRunsWithContext indicates an expected call of ListDataQualityRulesetEvaluationRunsWithContext
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRulesetEvaluationRunsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRulesetEvaluationRunsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRulesetEvaluationRunsWithContext), varargs...)
+}
+
+// ListDataQualityRulesets mocks base method
+func (m *MockGlueAPI) ListDataQualityRulesets(arg0 *glue.ListDataQualityRulesetsInput) (*glue.ListDataQualityRulesetsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataQualityRulesets", arg0)
+	ret0, _ := ret[0].(*glue.ListDataQualityRulesetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataQualityRulesets indicates an expected call of ListDataQualityRulesets
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRulesets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRulesets", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRulesets), arg0)
+}
+
+// ListDataQualityRulesetsPages mocks base method
+func (m *MockGlueAPI) ListDataQualityRulesetsPages(arg0 *glue.ListDataQualityRulesetsInput, arg1 func(*glue.ListDataQualityRulesetsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataQualityRulesetsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDataQualityRulesetsPages indicates an expected call of ListDataQualityRulesetsPages
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRulesetsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRulesetsPages", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRulesetsPages), arg0, arg1)
+}
+
+// ListDataQualityRulesetsPagesWithContext mocks base method
+func (m *MockGlueAPI) ListDataQualityRulesetsPagesWithContext(arg0 context.Context, arg1 *glue.ListDataQualityRulesetsInput, arg2 func(*glue.ListDataQualityRulesetsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDataQualityRulesetsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDataQualityRulesetsPagesWithContext indicates an expected call of ListDataQualityRulesetsPagesWithContext
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRulesetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRulesetsPagesWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRulesetsPagesWithContext), varargs...)
+}
+
+// ListDataQualityRulesetsRequest mocks base method
+func (m *MockGlueAPI) ListDataQualityRulesetsRequest(arg0 *glue.ListDataQualityRulesetsInput) (*request.Request, *glue.ListDataQualityRulesetsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataQualityRulesetsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.ListDataQualityRulesetsOutput)
+	return ret0, ret1
+}
+
+// ListDataQualityRulesetsRequest indicates an expected call of ListDataQualityRulesetsRequest
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRulesetsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRulesetsRequest", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRulesetsRequest), arg0)
+}
+
+// ListDataQualityRulesetsWithContext mocks base method
+func (m *MockGlueAPI) ListDataQualityRulesetsWithContext(arg0 context.Context, arg1 *glue.ListDataQualityRulesetsInput, arg2 ...request.Option) (*glue.ListDataQualityRulesetsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDataQualityRulesetsWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.ListDataQualityRulesetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataQualityRulesetsWithContext indicates an expected call of ListDataQualityRulesetsWithContext
+func (mr *MockGlueAPIMockRecorder) ListDataQualityRulesetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataQualityRulesetsWithContext", reflect.TypeOf((*MockGlueAPI)(nil).ListDataQualityRulesetsWithContext), varargs...)
+}
+
 // ListDevEndpoints mocks base method
 func (m *MockGlueAPI) ListDevEndpoints(arg0 *glue.ListDevEndpointsInput) (*glue.ListDevEndpointsOutput, error) {
 	m.ctrl.T.Helper()
@@ -8757,6 +9539,106 @@ func (mr *MockGlueAPIMockRecorder) StartCrawlerWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCrawlerWithContext", reflect.TypeOf((*MockGlueAPI)(nil).StartCrawlerWithContext), varargs...)
 }
 
+// StartDataQualityRuleRecommendationRun mocks base method
+func (m *MockGlueAPI) StartDataQualityRuleRecommendationRun(arg0 *glue.StartDataQualityRuleRecommendationRunInput) (*glue.StartDataQualityRuleRecommendationRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDataQualityRuleRecommendationRun", arg0)
+	ret0, _ := ret[0].(*glue.StartDataQualityRuleRecommendationRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDataQualityRuleRecommendationRun indicates an expected call of StartDataQualityRuleRecommendationRun
+func (mr *MockGlueAPIMockRecorder) StartDataQualityRuleRecommendationRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDataQualityRuleRecommendationRun", reflect.TypeOf((*MockGlueAPI)(nil).StartDataQualityRuleRecommendationRun), arg0)
+}
+
+// StartDataQualityRuleRecommendationRunRequest mocks base method
+func (m *MockGlueAPI) StartDataQualityRuleRecommendationRunRequest(arg0 *glue.StartDataQualityRuleRecommendationRunInput) (*request.Request, *glue.StartDataQualityRuleRecommendationRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDataQualityRuleRecommendationRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.StartDataQualityRuleRecommendationRunOutput)
+	return ret0, ret1
+}
+
+// StartDataQualityRuleRecommendationRunRequest indicates an expected call of StartDataQualityRuleRecommendationRunRequest
+func (mr *MockGlueAPIMockRecorder) StartDataQualityRuleRecommendationRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDataQualityRuleRecommendationRunRequest", reflect.TypeOf((*MockGlueAPI)(nil).StartDataQualityRuleRecommendationRunRequest), arg0)
+}
+
+// StartDataQualityRuleRecommendationRunWithContext mocks base method
+func (m *MockGlueAPI) StartDataQualityRuleRecommendationRunWithContext(arg0 context.Context, arg1 *glue.StartDataQualityRuleRecommendationRunInput, arg2 ...request.Option) (*glue.StartDataQualityRuleRecommendationRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartDataQualityRuleRecommendationRunWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.StartDataQualityRuleRecommendationRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDataQualityRuleRecommendationRunWithContext indicates an expected call of StartDataQualityRuleRecommendationRunWithContext
+func (mr *MockGlueAPIMockRecorder) StartDataQualityRuleRecommendationRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDataQualityRuleRecommendationRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).StartDataQualityRuleRecommendationRunWithContext), varargs...)
+}
+
+// StartDataQualityRulesetEvaluationRun mocks base method
+func (m *MockGlueAPI) StartDataQualityRulesetEvaluationRun(arg0 *glue.StartDataQualityRulesetEvaluationRunInput) (*glue.StartDataQualityRulesetEvaluationRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDataQualityRulesetEvaluationRun", arg0)
+	ret0, _ := ret[0].(*glue.StartDataQualityRulesetEvaluationRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDataQualityRulesetEvaluationRun indicates an expected call of StartDataQualityRulesetEvaluationRun
+func (mr *MockGlueAPIMockRecorder) StartDataQualityRulesetEvaluationRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDataQualityRulesetEvaluationRun", reflect.TypeOf((*MockGlueAPI)(nil).StartDataQualityRulesetEvaluationRun), arg0)
+}
+
+// StartDataQualityRulesetEvaluationRunRequest mocks base method
+func (m *MockGlueAPI) StartDataQualityRulesetEvaluationRunRequest(arg0 *glue.StartDataQualityRulesetEvaluationRunInput) (*request.Request, *glue.StartDataQualityRulesetEvaluationRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDataQualityRulesetEvaluationRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.StartDataQualityRulesetEvaluationRunOutput)
+	return ret0, ret1
+}
+
+// StartDataQualityRulesetEvaluationRunRequest indicates an expected call of StartDataQualityRulesetEvaluationRunRequest
+func (mr *MockGlueAPIMockRecorder) StartDataQualityRulesetEvaluationRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDataQualityRulesetEvaluationRunRequest", reflect.TypeOf((*MockGlueAPI)(nil).StartDataQualityRulesetEvaluationRunRequest), arg0)
+}
+
+// StartDataQualityRulesetEvaluationRunWithContext mocks base method
+func (m *MockGlueAPI) StartDataQualityRulesetEvaluationRunWithContext(arg0 context.Context, arg1 *glue.StartDataQualityRulesetEvaluationRunInput, arg2 ...request.Option) (*glue.StartDataQualityRulesetEvaluationRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartDataQualityRulesetEvaluationRunWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.StartDataQualityRulesetEvaluationRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDataQualityRulesetEvaluationRunWithContext indicates an expected call of StartDataQualityRulesetEvaluationRunWithContext
+func (mr *MockGlueAPIMockRecorder) StartDataQualityRulesetEvaluationRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDataQualityRulesetEvaluationRunWithContext", reflect.TypeOf((*MockGlueAPI)(nil).StartDataQualityRulesetEvaluationRunWithContext), varargs...)
+}
+
 // StartExportLabelsTaskRun mocks base method
 func (m *MockGlueAPI) StartExportLabelsTaskRun(arg0 *glue.StartExportLabelsTaskRunInput) (*glue.StartExportLabelsTaskRunOutput, error) {
 	m.ctrl.T.Helper()
@@ -9805,6 +10687,56 @@ func (mr *MockGlueAPIMockRecorder) UpdateCrawlerWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCrawlerWithContext", reflect.TypeOf((*MockGlueAPI)(nil).UpdateCrawlerWithContext), varargs...)
+}
+
+// UpdateDataQualityRuleset mocks base method
+func (m *MockGlueAPI) UpdateDataQualityRuleset(arg0 *glue.UpdateDataQualityRulesetInput) (*glue.UpdateDataQualityRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDataQualityRuleset", arg0)
+	ret0, _ := ret[0].(*glue.UpdateDataQualityRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDataQualityRuleset indicates an expected call of UpdateDataQualityRuleset
+func (mr *MockGlueAPIMockRecorder) UpdateDataQualityRuleset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataQualityRuleset", reflect.TypeOf((*MockGlueAPI)(nil).UpdateDataQualityRuleset), arg0)
+}
+
+// UpdateDataQualityRulesetRequest mocks base method
+func (m *MockGlueAPI) UpdateDataQualityRulesetRequest(arg0 *glue.UpdateDataQualityRulesetInput) (*request.Request, *glue.UpdateDataQualityRulesetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDataQualityRulesetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*glue.UpdateDataQualityRulesetOutput)
+	return ret0, ret1
+}
+
+// UpdateDataQualityRulesetRequest indicates an expected call of UpdateDataQualityRulesetRequest
+func (mr *MockGlueAPIMockRecorder) UpdateDataQualityRulesetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataQualityRulesetRequest", reflect.TypeOf((*MockGlueAPI)(nil).UpdateDataQualityRulesetRequest), arg0)
+}
+
+// UpdateDataQualityRulesetWithContext mocks base method
+func (m *MockGlueAPI) UpdateDataQualityRulesetWithContext(arg0 context.Context, arg1 *glue.UpdateDataQualityRulesetInput, arg2 ...request.Option) (*glue.UpdateDataQualityRulesetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDataQualityRulesetWithContext", varargs...)
+	ret0, _ := ret[0].(*glue.UpdateDataQualityRulesetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDataQualityRulesetWithContext indicates an expected call of UpdateDataQualityRulesetWithContext
+func (mr *MockGlueAPIMockRecorder) UpdateDataQualityRulesetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataQualityRulesetWithContext", reflect.TypeOf((*MockGlueAPI)(nil).UpdateDataQualityRulesetWithContext), varargs...)
 }
 
 // UpdateDatabase mocks base method
