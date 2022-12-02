@@ -335,6 +335,56 @@ func (mr *MockSFNAPIMockRecorder) DescribeExecutionWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExecutionWithContext", reflect.TypeOf((*MockSFNAPI)(nil).DescribeExecutionWithContext), varargs...)
 }
 
+// DescribeMapRun mocks base method
+func (m *MockSFNAPI) DescribeMapRun(arg0 *sfn.DescribeMapRunInput) (*sfn.DescribeMapRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMapRun", arg0)
+	ret0, _ := ret[0].(*sfn.DescribeMapRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMapRun indicates an expected call of DescribeMapRun
+func (mr *MockSFNAPIMockRecorder) DescribeMapRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMapRun", reflect.TypeOf((*MockSFNAPI)(nil).DescribeMapRun), arg0)
+}
+
+// DescribeMapRunRequest mocks base method
+func (m *MockSFNAPI) DescribeMapRunRequest(arg0 *sfn.DescribeMapRunInput) (*request.Request, *sfn.DescribeMapRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMapRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sfn.DescribeMapRunOutput)
+	return ret0, ret1
+}
+
+// DescribeMapRunRequest indicates an expected call of DescribeMapRunRequest
+func (mr *MockSFNAPIMockRecorder) DescribeMapRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMapRunRequest", reflect.TypeOf((*MockSFNAPI)(nil).DescribeMapRunRequest), arg0)
+}
+
+// DescribeMapRunWithContext mocks base method
+func (m *MockSFNAPI) DescribeMapRunWithContext(arg0 context.Context, arg1 *sfn.DescribeMapRunInput, arg2 ...request.Option) (*sfn.DescribeMapRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMapRunWithContext", varargs...)
+	ret0, _ := ret[0].(*sfn.DescribeMapRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMapRunWithContext indicates an expected call of DescribeMapRunWithContext
+func (mr *MockSFNAPIMockRecorder) DescribeMapRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMapRunWithContext", reflect.TypeOf((*MockSFNAPI)(nil).DescribeMapRunWithContext), varargs...)
+}
+
 // DescribeStateMachine mocks base method
 func (m *MockSFNAPI) DescribeStateMachine(arg0 *sfn.DescribeStateMachineInput) (*sfn.DescribeStateMachineOutput, error) {
 	m.ctrl.T.Helper()
@@ -732,6 +782,89 @@ func (mr *MockSFNAPIMockRecorder) ListExecutionsWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExecutionsWithContext", reflect.TypeOf((*MockSFNAPI)(nil).ListExecutionsWithContext), varargs...)
+}
+
+// ListMapRuns mocks base method
+func (m *MockSFNAPI) ListMapRuns(arg0 *sfn.ListMapRunsInput) (*sfn.ListMapRunsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMapRuns", arg0)
+	ret0, _ := ret[0].(*sfn.ListMapRunsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMapRuns indicates an expected call of ListMapRuns
+func (mr *MockSFNAPIMockRecorder) ListMapRuns(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMapRuns", reflect.TypeOf((*MockSFNAPI)(nil).ListMapRuns), arg0)
+}
+
+// ListMapRunsPages mocks base method
+func (m *MockSFNAPI) ListMapRunsPages(arg0 *sfn.ListMapRunsInput, arg1 func(*sfn.ListMapRunsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMapRunsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMapRunsPages indicates an expected call of ListMapRunsPages
+func (mr *MockSFNAPIMockRecorder) ListMapRunsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMapRunsPages", reflect.TypeOf((*MockSFNAPI)(nil).ListMapRunsPages), arg0, arg1)
+}
+
+// ListMapRunsPagesWithContext mocks base method
+func (m *MockSFNAPI) ListMapRunsPagesWithContext(arg0 context.Context, arg1 *sfn.ListMapRunsInput, arg2 func(*sfn.ListMapRunsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMapRunsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMapRunsPagesWithContext indicates an expected call of ListMapRunsPagesWithContext
+func (mr *MockSFNAPIMockRecorder) ListMapRunsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMapRunsPagesWithContext", reflect.TypeOf((*MockSFNAPI)(nil).ListMapRunsPagesWithContext), varargs...)
+}
+
+// ListMapRunsRequest mocks base method
+func (m *MockSFNAPI) ListMapRunsRequest(arg0 *sfn.ListMapRunsInput) (*request.Request, *sfn.ListMapRunsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMapRunsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sfn.ListMapRunsOutput)
+	return ret0, ret1
+}
+
+// ListMapRunsRequest indicates an expected call of ListMapRunsRequest
+func (mr *MockSFNAPIMockRecorder) ListMapRunsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMapRunsRequest", reflect.TypeOf((*MockSFNAPI)(nil).ListMapRunsRequest), arg0)
+}
+
+// ListMapRunsWithContext mocks base method
+func (m *MockSFNAPI) ListMapRunsWithContext(arg0 context.Context, arg1 *sfn.ListMapRunsInput, arg2 ...request.Option) (*sfn.ListMapRunsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMapRunsWithContext", varargs...)
+	ret0, _ := ret[0].(*sfn.ListMapRunsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMapRunsWithContext indicates an expected call of ListMapRunsWithContext
+func (mr *MockSFNAPIMockRecorder) ListMapRunsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMapRunsWithContext", reflect.TypeOf((*MockSFNAPI)(nil).ListMapRunsWithContext), varargs...)
 }
 
 // ListStateMachines mocks base method
@@ -1265,6 +1398,56 @@ func (mr *MockSFNAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockSFNAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateMapRun mocks base method
+func (m *MockSFNAPI) UpdateMapRun(arg0 *sfn.UpdateMapRunInput) (*sfn.UpdateMapRunOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMapRun", arg0)
+	ret0, _ := ret[0].(*sfn.UpdateMapRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMapRun indicates an expected call of UpdateMapRun
+func (mr *MockSFNAPIMockRecorder) UpdateMapRun(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMapRun", reflect.TypeOf((*MockSFNAPI)(nil).UpdateMapRun), arg0)
+}
+
+// UpdateMapRunRequest mocks base method
+func (m *MockSFNAPI) UpdateMapRunRequest(arg0 *sfn.UpdateMapRunInput) (*request.Request, *sfn.UpdateMapRunOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMapRunRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sfn.UpdateMapRunOutput)
+	return ret0, ret1
+}
+
+// UpdateMapRunRequest indicates an expected call of UpdateMapRunRequest
+func (mr *MockSFNAPIMockRecorder) UpdateMapRunRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMapRunRequest", reflect.TypeOf((*MockSFNAPI)(nil).UpdateMapRunRequest), arg0)
+}
+
+// UpdateMapRunWithContext mocks base method
+func (m *MockSFNAPI) UpdateMapRunWithContext(arg0 context.Context, arg1 *sfn.UpdateMapRunInput, arg2 ...request.Option) (*sfn.UpdateMapRunOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateMapRunWithContext", varargs...)
+	ret0, _ := ret[0].(*sfn.UpdateMapRunOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMapRunWithContext indicates an expected call of UpdateMapRunWithContext
+func (mr *MockSFNAPIMockRecorder) UpdateMapRunWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMapRunWithContext", reflect.TypeOf((*MockSFNAPI)(nil).UpdateMapRunWithContext), varargs...)
 }
 
 // UpdateStateMachine mocks base method

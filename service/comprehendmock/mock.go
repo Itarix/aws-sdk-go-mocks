@@ -2182,6 +2182,39 @@ func (mr *MockComprehendAPIMockRecorder) ListEndpoints(arg0 interface{}) *gomock
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEndpoints", reflect.TypeOf((*MockComprehendAPI)(nil).ListEndpoints), arg0)
 }
 
+// ListEndpointsPages mocks base method
+func (m *MockComprehendAPI) ListEndpointsPages(arg0 *comprehend.ListEndpointsInput, arg1 func(*comprehend.ListEndpointsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEndpointsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEndpointsPages indicates an expected call of ListEndpointsPages
+func (mr *MockComprehendAPIMockRecorder) ListEndpointsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEndpointsPages", reflect.TypeOf((*MockComprehendAPI)(nil).ListEndpointsPages), arg0, arg1)
+}
+
+// ListEndpointsPagesWithContext mocks base method
+func (m *MockComprehendAPI) ListEndpointsPagesWithContext(arg0 context.Context, arg1 *comprehend.ListEndpointsInput, arg2 func(*comprehend.ListEndpointsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEndpointsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEndpointsPagesWithContext indicates an expected call of ListEndpointsPagesWithContext
+func (mr *MockComprehendAPIMockRecorder) ListEndpointsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEndpointsPagesWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListEndpointsPagesWithContext), varargs...)
+}
+
 // ListEndpointsRequest mocks base method
 func (m *MockComprehendAPI) ListEndpointsRequest(arg0 *comprehend.ListEndpointsInput) (*request.Request, *comprehend.ListEndpointsOutput) {
 	m.ctrl.T.Helper()
@@ -2645,6 +2678,39 @@ func (m *MockComprehendAPI) ListPiiEntitiesDetectionJobs(arg0 *comprehend.ListPi
 func (mr *MockComprehendAPIMockRecorder) ListPiiEntitiesDetectionJobs(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPiiEntitiesDetectionJobs", reflect.TypeOf((*MockComprehendAPI)(nil).ListPiiEntitiesDetectionJobs), arg0)
+}
+
+// ListPiiEntitiesDetectionJobsPages mocks base method
+func (m *MockComprehendAPI) ListPiiEntitiesDetectionJobsPages(arg0 *comprehend.ListPiiEntitiesDetectionJobsInput, arg1 func(*comprehend.ListPiiEntitiesDetectionJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPiiEntitiesDetectionJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPiiEntitiesDetectionJobsPages indicates an expected call of ListPiiEntitiesDetectionJobsPages
+func (mr *MockComprehendAPIMockRecorder) ListPiiEntitiesDetectionJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPiiEntitiesDetectionJobsPages", reflect.TypeOf((*MockComprehendAPI)(nil).ListPiiEntitiesDetectionJobsPages), arg0, arg1)
+}
+
+// ListPiiEntitiesDetectionJobsPagesWithContext mocks base method
+func (m *MockComprehendAPI) ListPiiEntitiesDetectionJobsPagesWithContext(arg0 context.Context, arg1 *comprehend.ListPiiEntitiesDetectionJobsInput, arg2 func(*comprehend.ListPiiEntitiesDetectionJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPiiEntitiesDetectionJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPiiEntitiesDetectionJobsPagesWithContext indicates an expected call of ListPiiEntitiesDetectionJobsPagesWithContext
+func (mr *MockComprehendAPIMockRecorder) ListPiiEntitiesDetectionJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPiiEntitiesDetectionJobsPagesWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListPiiEntitiesDetectionJobsPagesWithContext), varargs...)
 }
 
 // ListPiiEntitiesDetectionJobsRequest mocks base method
