@@ -935,6 +935,56 @@ func (mr *MockRedshiftServerlessAPIMockRecorder) GetSnapshotWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSnapshotWithContext", reflect.TypeOf((*MockRedshiftServerlessAPI)(nil).GetSnapshotWithContext), varargs...)
 }
 
+// GetTableRestoreStatus mocks base method
+func (m *MockRedshiftServerlessAPI) GetTableRestoreStatus(arg0 *redshiftserverless.GetTableRestoreStatusInput) (*redshiftserverless.GetTableRestoreStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTableRestoreStatus", arg0)
+	ret0, _ := ret[0].(*redshiftserverless.GetTableRestoreStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTableRestoreStatus indicates an expected call of GetTableRestoreStatus
+func (mr *MockRedshiftServerlessAPIMockRecorder) GetTableRestoreStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTableRestoreStatus", reflect.TypeOf((*MockRedshiftServerlessAPI)(nil).GetTableRestoreStatus), arg0)
+}
+
+// GetTableRestoreStatusRequest mocks base method
+func (m *MockRedshiftServerlessAPI) GetTableRestoreStatusRequest(arg0 *redshiftserverless.GetTableRestoreStatusInput) (*request.Request, *redshiftserverless.GetTableRestoreStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetTableRestoreStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshiftserverless.GetTableRestoreStatusOutput)
+	return ret0, ret1
+}
+
+// GetTableRestoreStatusRequest indicates an expected call of GetTableRestoreStatusRequest
+func (mr *MockRedshiftServerlessAPIMockRecorder) GetTableRestoreStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTableRestoreStatusRequest", reflect.TypeOf((*MockRedshiftServerlessAPI)(nil).GetTableRestoreStatusRequest), arg0)
+}
+
+// GetTableRestoreStatusWithContext mocks base method
+func (m *MockRedshiftServerlessAPI) GetTableRestoreStatusWithContext(arg0 context.Context, arg1 *redshiftserverless.GetTableRestoreStatusInput, arg2 ...request.Option) (*redshiftserverless.GetTableRestoreStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetTableRestoreStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*redshiftserverless.GetTableRestoreStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetTableRestoreStatusWithContext indicates an expected call of GetTableRestoreStatusWithContext
+func (mr *MockRedshiftServerlessAPIMockRecorder) GetTableRestoreStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTableRestoreStatusWithContext", reflect.TypeOf((*MockRedshiftServerlessAPI)(nil).GetTableRestoreStatusWithContext), varargs...)
+}
+
 // GetUsageLimit mocks base method
 func (m *MockRedshiftServerlessAPI) GetUsageLimit(arg0 *redshiftserverless.GetUsageLimitInput) (*redshiftserverless.GetUsageLimitOutput, error) {
 	m.ctrl.T.Helper()
@@ -1367,6 +1417,89 @@ func (mr *MockRedshiftServerlessAPIMockRecorder) ListSnapshotsWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSnapshotsWithContext", reflect.TypeOf((*MockRedshiftServerlessAPI)(nil).ListSnapshotsWithContext), varargs...)
 }
 
+// ListTableRestoreStatus mocks base method
+func (m *MockRedshiftServerlessAPI) ListTableRestoreStatus(arg0 *redshiftserverless.ListTableRestoreStatusInput) (*redshiftserverless.ListTableRestoreStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTableRestoreStatus", arg0)
+	ret0, _ := ret[0].(*redshiftserverless.ListTableRestoreStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTableRestoreStatus indicates an expected call of ListTableRestoreStatus
+func (mr *MockRedshiftServerlessAPIMockRecorder) ListTableRestoreStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTableRestoreStatus", reflect.TypeOf((*MockRedshiftServerlessAPI)(nil).ListTableRestoreStatus), arg0)
+}
+
+// ListTableRestoreStatusPages mocks base method
+func (m *MockRedshiftServerlessAPI) ListTableRestoreStatusPages(arg0 *redshiftserverless.ListTableRestoreStatusInput, arg1 func(*redshiftserverless.ListTableRestoreStatusOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTableRestoreStatusPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTableRestoreStatusPages indicates an expected call of ListTableRestoreStatusPages
+func (mr *MockRedshiftServerlessAPIMockRecorder) ListTableRestoreStatusPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTableRestoreStatusPages", reflect.TypeOf((*MockRedshiftServerlessAPI)(nil).ListTableRestoreStatusPages), arg0, arg1)
+}
+
+// ListTableRestoreStatusPagesWithContext mocks base method
+func (m *MockRedshiftServerlessAPI) ListTableRestoreStatusPagesWithContext(arg0 context.Context, arg1 *redshiftserverless.ListTableRestoreStatusInput, arg2 func(*redshiftserverless.ListTableRestoreStatusOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTableRestoreStatusPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTableRestoreStatusPagesWithContext indicates an expected call of ListTableRestoreStatusPagesWithContext
+func (mr *MockRedshiftServerlessAPIMockRecorder) ListTableRestoreStatusPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTableRestoreStatusPagesWithContext", reflect.TypeOf((*MockRedshiftServerlessAPI)(nil).ListTableRestoreStatusPagesWithContext), varargs...)
+}
+
+// ListTableRestoreStatusRequest mocks base method
+func (m *MockRedshiftServerlessAPI) ListTableRestoreStatusRequest(arg0 *redshiftserverless.ListTableRestoreStatusInput) (*request.Request, *redshiftserverless.ListTableRestoreStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTableRestoreStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshiftserverless.ListTableRestoreStatusOutput)
+	return ret0, ret1
+}
+
+// ListTableRestoreStatusRequest indicates an expected call of ListTableRestoreStatusRequest
+func (mr *MockRedshiftServerlessAPIMockRecorder) ListTableRestoreStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTableRestoreStatusRequest", reflect.TypeOf((*MockRedshiftServerlessAPI)(nil).ListTableRestoreStatusRequest), arg0)
+}
+
+// ListTableRestoreStatusWithContext mocks base method
+func (m *MockRedshiftServerlessAPI) ListTableRestoreStatusWithContext(arg0 context.Context, arg1 *redshiftserverless.ListTableRestoreStatusInput, arg2 ...request.Option) (*redshiftserverless.ListTableRestoreStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTableRestoreStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*redshiftserverless.ListTableRestoreStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTableRestoreStatusWithContext indicates an expected call of ListTableRestoreStatusWithContext
+func (mr *MockRedshiftServerlessAPIMockRecorder) ListTableRestoreStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTableRestoreStatusWithContext", reflect.TypeOf((*MockRedshiftServerlessAPI)(nil).ListTableRestoreStatusWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockRedshiftServerlessAPI) ListTagsForResource(arg0 *redshiftserverless.ListTagsForResourceInput) (*redshiftserverless.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1731,6 +1864,56 @@ func (mr *MockRedshiftServerlessAPIMockRecorder) RestoreFromSnapshotWithContext(
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreFromSnapshotWithContext", reflect.TypeOf((*MockRedshiftServerlessAPI)(nil).RestoreFromSnapshotWithContext), varargs...)
+}
+
+// RestoreTableFromSnapshot mocks base method
+func (m *MockRedshiftServerlessAPI) RestoreTableFromSnapshot(arg0 *redshiftserverless.RestoreTableFromSnapshotInput) (*redshiftserverless.RestoreTableFromSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreTableFromSnapshot", arg0)
+	ret0, _ := ret[0].(*redshiftserverless.RestoreTableFromSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreTableFromSnapshot indicates an expected call of RestoreTableFromSnapshot
+func (mr *MockRedshiftServerlessAPIMockRecorder) RestoreTableFromSnapshot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreTableFromSnapshot", reflect.TypeOf((*MockRedshiftServerlessAPI)(nil).RestoreTableFromSnapshot), arg0)
+}
+
+// RestoreTableFromSnapshotRequest mocks base method
+func (m *MockRedshiftServerlessAPI) RestoreTableFromSnapshotRequest(arg0 *redshiftserverless.RestoreTableFromSnapshotInput) (*request.Request, *redshiftserverless.RestoreTableFromSnapshotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RestoreTableFromSnapshotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshiftserverless.RestoreTableFromSnapshotOutput)
+	return ret0, ret1
+}
+
+// RestoreTableFromSnapshotRequest indicates an expected call of RestoreTableFromSnapshotRequest
+func (mr *MockRedshiftServerlessAPIMockRecorder) RestoreTableFromSnapshotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreTableFromSnapshotRequest", reflect.TypeOf((*MockRedshiftServerlessAPI)(nil).RestoreTableFromSnapshotRequest), arg0)
+}
+
+// RestoreTableFromSnapshotWithContext mocks base method
+func (m *MockRedshiftServerlessAPI) RestoreTableFromSnapshotWithContext(arg0 context.Context, arg1 *redshiftserverless.RestoreTableFromSnapshotInput, arg2 ...request.Option) (*redshiftserverless.RestoreTableFromSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RestoreTableFromSnapshotWithContext", varargs...)
+	ret0, _ := ret[0].(*redshiftserverless.RestoreTableFromSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RestoreTableFromSnapshotWithContext indicates an expected call of RestoreTableFromSnapshotWithContext
+func (mr *MockRedshiftServerlessAPIMockRecorder) RestoreTableFromSnapshotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreTableFromSnapshotWithContext", reflect.TypeOf((*MockRedshiftServerlessAPI)(nil).RestoreTableFromSnapshotWithContext), varargs...)
 }
 
 // TagResource mocks base method
