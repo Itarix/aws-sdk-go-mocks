@@ -1517,6 +1517,56 @@ func (mr *MockCostExplorerAPIMockRecorder) ListCostCategoryDefinitionsWithContex
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCostCategoryDefinitionsWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).ListCostCategoryDefinitionsWithContext), varargs...)
 }
 
+// ListSavingsPlansPurchaseRecommendationGeneration mocks base method
+func (m *MockCostExplorerAPI) ListSavingsPlansPurchaseRecommendationGeneration(arg0 *costexplorer.ListSavingsPlansPurchaseRecommendationGenerationInput) (*costexplorer.ListSavingsPlansPurchaseRecommendationGenerationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSavingsPlansPurchaseRecommendationGeneration", arg0)
+	ret0, _ := ret[0].(*costexplorer.ListSavingsPlansPurchaseRecommendationGenerationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSavingsPlansPurchaseRecommendationGeneration indicates an expected call of ListSavingsPlansPurchaseRecommendationGeneration
+func (mr *MockCostExplorerAPIMockRecorder) ListSavingsPlansPurchaseRecommendationGeneration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSavingsPlansPurchaseRecommendationGeneration", reflect.TypeOf((*MockCostExplorerAPI)(nil).ListSavingsPlansPurchaseRecommendationGeneration), arg0)
+}
+
+// ListSavingsPlansPurchaseRecommendationGenerationRequest mocks base method
+func (m *MockCostExplorerAPI) ListSavingsPlansPurchaseRecommendationGenerationRequest(arg0 *costexplorer.ListSavingsPlansPurchaseRecommendationGenerationInput) (*request.Request, *costexplorer.ListSavingsPlansPurchaseRecommendationGenerationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSavingsPlansPurchaseRecommendationGenerationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.ListSavingsPlansPurchaseRecommendationGenerationOutput)
+	return ret0, ret1
+}
+
+// ListSavingsPlansPurchaseRecommendationGenerationRequest indicates an expected call of ListSavingsPlansPurchaseRecommendationGenerationRequest
+func (mr *MockCostExplorerAPIMockRecorder) ListSavingsPlansPurchaseRecommendationGenerationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSavingsPlansPurchaseRecommendationGenerationRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).ListSavingsPlansPurchaseRecommendationGenerationRequest), arg0)
+}
+
+// ListSavingsPlansPurchaseRecommendationGenerationWithContext mocks base method
+func (m *MockCostExplorerAPI) ListSavingsPlansPurchaseRecommendationGenerationWithContext(arg0 context.Context, arg1 *costexplorer.ListSavingsPlansPurchaseRecommendationGenerationInput, arg2 ...request.Option) (*costexplorer.ListSavingsPlansPurchaseRecommendationGenerationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSavingsPlansPurchaseRecommendationGenerationWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.ListSavingsPlansPurchaseRecommendationGenerationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSavingsPlansPurchaseRecommendationGenerationWithContext indicates an expected call of ListSavingsPlansPurchaseRecommendationGenerationWithContext
+func (mr *MockCostExplorerAPIMockRecorder) ListSavingsPlansPurchaseRecommendationGenerationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSavingsPlansPurchaseRecommendationGenerationWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).ListSavingsPlansPurchaseRecommendationGenerationWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockCostExplorerAPI) ListTagsForResource(arg0 *costexplorer.ListTagsForResourceInput) (*costexplorer.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1615,6 +1665,56 @@ func (mr *MockCostExplorerAPIMockRecorder) ProvideAnomalyFeedbackWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ProvideAnomalyFeedbackWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).ProvideAnomalyFeedbackWithContext), varargs...)
+}
+
+// StartSavingsPlansPurchaseRecommendationGeneration mocks base method
+func (m *MockCostExplorerAPI) StartSavingsPlansPurchaseRecommendationGeneration(arg0 *costexplorer.StartSavingsPlansPurchaseRecommendationGenerationInput) (*costexplorer.StartSavingsPlansPurchaseRecommendationGenerationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSavingsPlansPurchaseRecommendationGeneration", arg0)
+	ret0, _ := ret[0].(*costexplorer.StartSavingsPlansPurchaseRecommendationGenerationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSavingsPlansPurchaseRecommendationGeneration indicates an expected call of StartSavingsPlansPurchaseRecommendationGeneration
+func (mr *MockCostExplorerAPIMockRecorder) StartSavingsPlansPurchaseRecommendationGeneration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSavingsPlansPurchaseRecommendationGeneration", reflect.TypeOf((*MockCostExplorerAPI)(nil).StartSavingsPlansPurchaseRecommendationGeneration), arg0)
+}
+
+// StartSavingsPlansPurchaseRecommendationGenerationRequest mocks base method
+func (m *MockCostExplorerAPI) StartSavingsPlansPurchaseRecommendationGenerationRequest(arg0 *costexplorer.StartSavingsPlansPurchaseRecommendationGenerationInput) (*request.Request, *costexplorer.StartSavingsPlansPurchaseRecommendationGenerationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSavingsPlansPurchaseRecommendationGenerationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*costexplorer.StartSavingsPlansPurchaseRecommendationGenerationOutput)
+	return ret0, ret1
+}
+
+// StartSavingsPlansPurchaseRecommendationGenerationRequest indicates an expected call of StartSavingsPlansPurchaseRecommendationGenerationRequest
+func (mr *MockCostExplorerAPIMockRecorder) StartSavingsPlansPurchaseRecommendationGenerationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSavingsPlansPurchaseRecommendationGenerationRequest", reflect.TypeOf((*MockCostExplorerAPI)(nil).StartSavingsPlansPurchaseRecommendationGenerationRequest), arg0)
+}
+
+// StartSavingsPlansPurchaseRecommendationGenerationWithContext mocks base method
+func (m *MockCostExplorerAPI) StartSavingsPlansPurchaseRecommendationGenerationWithContext(arg0 context.Context, arg1 *costexplorer.StartSavingsPlansPurchaseRecommendationGenerationInput, arg2 ...request.Option) (*costexplorer.StartSavingsPlansPurchaseRecommendationGenerationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartSavingsPlansPurchaseRecommendationGenerationWithContext", varargs...)
+	ret0, _ := ret[0].(*costexplorer.StartSavingsPlansPurchaseRecommendationGenerationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSavingsPlansPurchaseRecommendationGenerationWithContext indicates an expected call of StartSavingsPlansPurchaseRecommendationGenerationWithContext
+func (mr *MockCostExplorerAPIMockRecorder) StartSavingsPlansPurchaseRecommendationGenerationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSavingsPlansPurchaseRecommendationGenerationWithContext", reflect.TypeOf((*MockCostExplorerAPI)(nil).StartSavingsPlansPurchaseRecommendationGenerationWithContext), varargs...)
 }
 
 // TagResource mocks base method
