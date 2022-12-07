@@ -1035,6 +1035,56 @@ func (mr *MockConnectAPIMockRecorder) CreateRoutingProfileWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRoutingProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateRoutingProfileWithContext), varargs...)
 }
 
+// CreateRule mocks base method
+func (m *MockConnectAPI) CreateRule(arg0 *connect.CreateRuleInput) (*connect.CreateRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRule", arg0)
+	ret0, _ := ret[0].(*connect.CreateRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRule indicates an expected call of CreateRule
+func (mr *MockConnectAPIMockRecorder) CreateRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRule", reflect.TypeOf((*MockConnectAPI)(nil).CreateRule), arg0)
+}
+
+// CreateRuleRequest mocks base method
+func (m *MockConnectAPI) CreateRuleRequest(arg0 *connect.CreateRuleInput) (*request.Request, *connect.CreateRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.CreateRuleOutput)
+	return ret0, ret1
+}
+
+// CreateRuleRequest indicates an expected call of CreateRuleRequest
+func (mr *MockConnectAPIMockRecorder) CreateRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRuleRequest", reflect.TypeOf((*MockConnectAPI)(nil).CreateRuleRequest), arg0)
+}
+
+// CreateRuleWithContext mocks base method
+func (m *MockConnectAPI) CreateRuleWithContext(arg0 context.Context, arg1 *connect.CreateRuleInput, arg2 ...request.Option) (*connect.CreateRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.CreateRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRuleWithContext indicates an expected call of CreateRuleWithContext
+func (mr *MockConnectAPIMockRecorder) CreateRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRuleWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateRuleWithContext), varargs...)
+}
+
 // CreateSecurityProfile mocks base method
 func (m *MockConnectAPI) CreateSecurityProfile(arg0 *connect.CreateSecurityProfileInput) (*connect.CreateSecurityProfileOutput, error) {
 	m.ctrl.T.Helper()
@@ -1683,6 +1733,56 @@ func (mr *MockConnectAPIMockRecorder) DeleteQuickConnectWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQuickConnectWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteQuickConnectWithContext), varargs...)
+}
+
+// DeleteRule mocks base method
+func (m *MockConnectAPI) DeleteRule(arg0 *connect.DeleteRuleInput) (*connect.DeleteRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRule", arg0)
+	ret0, _ := ret[0].(*connect.DeleteRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRule indicates an expected call of DeleteRule
+func (mr *MockConnectAPIMockRecorder) DeleteRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRule", reflect.TypeOf((*MockConnectAPI)(nil).DeleteRule), arg0)
+}
+
+// DeleteRuleRequest mocks base method
+func (m *MockConnectAPI) DeleteRuleRequest(arg0 *connect.DeleteRuleInput) (*request.Request, *connect.DeleteRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DeleteRuleOutput)
+	return ret0, ret1
+}
+
+// DeleteRuleRequest indicates an expected call of DeleteRuleRequest
+func (mr *MockConnectAPIMockRecorder) DeleteRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRuleRequest", reflect.TypeOf((*MockConnectAPI)(nil).DeleteRuleRequest), arg0)
+}
+
+// DeleteRuleWithContext mocks base method
+func (m *MockConnectAPI) DeleteRuleWithContext(arg0 context.Context, arg1 *connect.DeleteRuleInput, arg2 ...request.Option) (*connect.DeleteRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DeleteRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRuleWithContext indicates an expected call of DeleteRuleWithContext
+func (mr *MockConnectAPIMockRecorder) DeleteRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRuleWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteRuleWithContext), varargs...)
 }
 
 // DeleteSecurityProfile mocks base method
@@ -2633,6 +2733,56 @@ func (mr *MockConnectAPIMockRecorder) DescribeRoutingProfileWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRoutingProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeRoutingProfileWithContext), varargs...)
+}
+
+// DescribeRule mocks base method
+func (m *MockConnectAPI) DescribeRule(arg0 *connect.DescribeRuleInput) (*connect.DescribeRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRule", arg0)
+	ret0, _ := ret[0].(*connect.DescribeRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRule indicates an expected call of DescribeRule
+func (mr *MockConnectAPIMockRecorder) DescribeRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRule", reflect.TypeOf((*MockConnectAPI)(nil).DescribeRule), arg0)
+}
+
+// DescribeRuleRequest mocks base method
+func (m *MockConnectAPI) DescribeRuleRequest(arg0 *connect.DescribeRuleInput) (*request.Request, *connect.DescribeRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DescribeRuleOutput)
+	return ret0, ret1
+}
+
+// DescribeRuleRequest indicates an expected call of DescribeRuleRequest
+func (mr *MockConnectAPIMockRecorder) DescribeRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRuleRequest", reflect.TypeOf((*MockConnectAPI)(nil).DescribeRuleRequest), arg0)
+}
+
+// DescribeRuleWithContext mocks base method
+func (m *MockConnectAPI) DescribeRuleWithContext(arg0 context.Context, arg1 *connect.DescribeRuleInput, arg2 ...request.Option) (*connect.DescribeRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DescribeRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRuleWithContext indicates an expected call of DescribeRuleWithContext
+func (mr *MockConnectAPIMockRecorder) DescribeRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRuleWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeRuleWithContext), varargs...)
 }
 
 // DescribeSecurityProfile mocks base method
@@ -5708,6 +5858,89 @@ func (mr *MockConnectAPIMockRecorder) ListRoutingProfilesWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRoutingProfilesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListRoutingProfilesWithContext), varargs...)
+}
+
+// ListRules mocks base method
+func (m *MockConnectAPI) ListRules(arg0 *connect.ListRulesInput) (*connect.ListRulesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRules", arg0)
+	ret0, _ := ret[0].(*connect.ListRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRules indicates an expected call of ListRules
+func (mr *MockConnectAPIMockRecorder) ListRules(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRules", reflect.TypeOf((*MockConnectAPI)(nil).ListRules), arg0)
+}
+
+// ListRulesPages mocks base method
+func (m *MockConnectAPI) ListRulesPages(arg0 *connect.ListRulesInput, arg1 func(*connect.ListRulesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRulesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRulesPages indicates an expected call of ListRulesPages
+func (mr *MockConnectAPIMockRecorder) ListRulesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRulesPages", reflect.TypeOf((*MockConnectAPI)(nil).ListRulesPages), arg0, arg1)
+}
+
+// ListRulesPagesWithContext mocks base method
+func (m *MockConnectAPI) ListRulesPagesWithContext(arg0 context.Context, arg1 *connect.ListRulesInput, arg2 func(*connect.ListRulesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRulesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRulesPagesWithContext indicates an expected call of ListRulesPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListRulesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRulesPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListRulesPagesWithContext), varargs...)
+}
+
+// ListRulesRequest mocks base method
+func (m *MockConnectAPI) ListRulesRequest(arg0 *connect.ListRulesInput) (*request.Request, *connect.ListRulesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRulesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListRulesOutput)
+	return ret0, ret1
+}
+
+// ListRulesRequest indicates an expected call of ListRulesRequest
+func (mr *MockConnectAPIMockRecorder) ListRulesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRulesRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListRulesRequest), arg0)
+}
+
+// ListRulesWithContext mocks base method
+func (m *MockConnectAPI) ListRulesWithContext(arg0 context.Context, arg1 *connect.ListRulesInput, arg2 ...request.Option) (*connect.ListRulesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRulesWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListRulesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRulesWithContext indicates an expected call of ListRulesWithContext
+func (mr *MockConnectAPIMockRecorder) ListRulesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRulesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListRulesWithContext), varargs...)
 }
 
 // ListSecurityKeys mocks base method
@@ -8970,6 +9203,56 @@ func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileQueuesWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileQueuesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileQueuesWithContext), varargs...)
+}
+
+// UpdateRule mocks base method
+func (m *MockConnectAPI) UpdateRule(arg0 *connect.UpdateRuleInput) (*connect.UpdateRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRule", arg0)
+	ret0, _ := ret[0].(*connect.UpdateRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRule indicates an expected call of UpdateRule
+func (mr *MockConnectAPIMockRecorder) UpdateRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRule", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRule), arg0)
+}
+
+// UpdateRuleRequest mocks base method
+func (m *MockConnectAPI) UpdateRuleRequest(arg0 *connect.UpdateRuleInput) (*request.Request, *connect.UpdateRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateRuleOutput)
+	return ret0, ret1
+}
+
+// UpdateRuleRequest indicates an expected call of UpdateRuleRequest
+func (mr *MockConnectAPIMockRecorder) UpdateRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRuleRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRuleRequest), arg0)
+}
+
+// UpdateRuleWithContext mocks base method
+func (m *MockConnectAPI) UpdateRuleWithContext(arg0 context.Context, arg1 *connect.UpdateRuleInput, arg2 ...request.Option) (*connect.UpdateRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRuleWithContext indicates an expected call of UpdateRuleWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRuleWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRuleWithContext), varargs...)
 }
 
 // UpdateSecurityProfile mocks base method
