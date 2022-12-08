@@ -4917,6 +4917,56 @@ func (mr *MockCloudFrontAPIMockRecorder) UpdateDistributionWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDistributionWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateDistributionWithContext), varargs...)
 }
 
+// UpdateDistributionWithStagingConfig mocks base method
+func (m *MockCloudFrontAPI) UpdateDistributionWithStagingConfig(arg0 *cloudfront.UpdateDistributionWithStagingConfigInput) (*cloudfront.UpdateDistributionWithStagingConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDistributionWithStagingConfig", arg0)
+	ret0, _ := ret[0].(*cloudfront.UpdateDistributionWithStagingConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDistributionWithStagingConfig indicates an expected call of UpdateDistributionWithStagingConfig
+func (mr *MockCloudFrontAPIMockRecorder) UpdateDistributionWithStagingConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDistributionWithStagingConfig", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateDistributionWithStagingConfig), arg0)
+}
+
+// UpdateDistributionWithStagingConfigRequest mocks base method
+func (m *MockCloudFrontAPI) UpdateDistributionWithStagingConfigRequest(arg0 *cloudfront.UpdateDistributionWithStagingConfigInput) (*request.Request, *cloudfront.UpdateDistributionWithStagingConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDistributionWithStagingConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudfront.UpdateDistributionWithStagingConfigOutput)
+	return ret0, ret1
+}
+
+// UpdateDistributionWithStagingConfigRequest indicates an expected call of UpdateDistributionWithStagingConfigRequest
+func (mr *MockCloudFrontAPIMockRecorder) UpdateDistributionWithStagingConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDistributionWithStagingConfigRequest", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateDistributionWithStagingConfigRequest), arg0)
+}
+
+// UpdateDistributionWithStagingConfigWithContext mocks base method
+func (m *MockCloudFrontAPI) UpdateDistributionWithStagingConfigWithContext(arg0 context.Context, arg1 *cloudfront.UpdateDistributionWithStagingConfigInput, arg2 ...request.Option) (*cloudfront.UpdateDistributionWithStagingConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDistributionWithStagingConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudfront.UpdateDistributionWithStagingConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDistributionWithStagingConfigWithContext indicates an expected call of UpdateDistributionWithStagingConfigWithContext
+func (mr *MockCloudFrontAPIMockRecorder) UpdateDistributionWithStagingConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDistributionWithStagingConfigWithContext", reflect.TypeOf((*MockCloudFrontAPI)(nil).UpdateDistributionWithStagingConfigWithContext), varargs...)
+}
+
 // UpdateFieldLevelEncryptionConfig mocks base method
 func (m *MockCloudFrontAPI) UpdateFieldLevelEncryptionConfig(arg0 *cloudfront.UpdateFieldLevelEncryptionConfigInput) (*cloudfront.UpdateFieldLevelEncryptionConfigOutput, error) {
 	m.ctrl.T.Helper()
