@@ -235,6 +235,56 @@ func (mr *MockMigrationHubStrategyRecommendationsAPIMockRecorder) GetImportFileT
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetImportFileTaskWithContext", reflect.TypeOf((*MockMigrationHubStrategyRecommendationsAPI)(nil).GetImportFileTaskWithContext), varargs...)
 }
 
+// GetLatestAssessmentId mocks base method
+func (m *MockMigrationHubStrategyRecommendationsAPI) GetLatestAssessmentId(arg0 *migrationhubstrategyrecommendations.GetLatestAssessmentIdInput) (*migrationhubstrategyrecommendations.GetLatestAssessmentIdOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLatestAssessmentId", arg0)
+	ret0, _ := ret[0].(*migrationhubstrategyrecommendations.GetLatestAssessmentIdOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLatestAssessmentId indicates an expected call of GetLatestAssessmentId
+func (mr *MockMigrationHubStrategyRecommendationsAPIMockRecorder) GetLatestAssessmentId(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLatestAssessmentId", reflect.TypeOf((*MockMigrationHubStrategyRecommendationsAPI)(nil).GetLatestAssessmentId), arg0)
+}
+
+// GetLatestAssessmentIdRequest mocks base method
+func (m *MockMigrationHubStrategyRecommendationsAPI) GetLatestAssessmentIdRequest(arg0 *migrationhubstrategyrecommendations.GetLatestAssessmentIdInput) (*request.Request, *migrationhubstrategyrecommendations.GetLatestAssessmentIdOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLatestAssessmentIdRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*migrationhubstrategyrecommendations.GetLatestAssessmentIdOutput)
+	return ret0, ret1
+}
+
+// GetLatestAssessmentIdRequest indicates an expected call of GetLatestAssessmentIdRequest
+func (mr *MockMigrationHubStrategyRecommendationsAPIMockRecorder) GetLatestAssessmentIdRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLatestAssessmentIdRequest", reflect.TypeOf((*MockMigrationHubStrategyRecommendationsAPI)(nil).GetLatestAssessmentIdRequest), arg0)
+}
+
+// GetLatestAssessmentIdWithContext mocks base method
+func (m *MockMigrationHubStrategyRecommendationsAPI) GetLatestAssessmentIdWithContext(arg0 context.Context, arg1 *migrationhubstrategyrecommendations.GetLatestAssessmentIdInput, arg2 ...request.Option) (*migrationhubstrategyrecommendations.GetLatestAssessmentIdOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLatestAssessmentIdWithContext", varargs...)
+	ret0, _ := ret[0].(*migrationhubstrategyrecommendations.GetLatestAssessmentIdOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLatestAssessmentIdWithContext indicates an expected call of GetLatestAssessmentIdWithContext
+func (mr *MockMigrationHubStrategyRecommendationsAPIMockRecorder) GetLatestAssessmentIdWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLatestAssessmentIdWithContext", reflect.TypeOf((*MockMigrationHubStrategyRecommendationsAPI)(nil).GetLatestAssessmentIdWithContext), varargs...)
+}
+
 // GetPortfolioPreferences mocks base method
 func (m *MockMigrationHubStrategyRecommendationsAPI) GetPortfolioPreferences(arg0 *migrationhubstrategyrecommendations.GetPortfolioPreferencesInput) (*migrationhubstrategyrecommendations.GetPortfolioPreferencesOutput, error) {
 	m.ctrl.T.Helper()

@@ -235,6 +235,56 @@ func (mr *MockIoTTwinMakerAPIMockRecorder) CreateSceneWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSceneWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).CreateSceneWithContext), varargs...)
 }
 
+// CreateSyncJob mocks base method
+func (m *MockIoTTwinMakerAPI) CreateSyncJob(arg0 *iottwinmaker.CreateSyncJobInput) (*iottwinmaker.CreateSyncJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSyncJob", arg0)
+	ret0, _ := ret[0].(*iottwinmaker.CreateSyncJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSyncJob indicates an expected call of CreateSyncJob
+func (mr *MockIoTTwinMakerAPIMockRecorder) CreateSyncJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSyncJob", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).CreateSyncJob), arg0)
+}
+
+// CreateSyncJobRequest mocks base method
+func (m *MockIoTTwinMakerAPI) CreateSyncJobRequest(arg0 *iottwinmaker.CreateSyncJobInput) (*request.Request, *iottwinmaker.CreateSyncJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSyncJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iottwinmaker.CreateSyncJobOutput)
+	return ret0, ret1
+}
+
+// CreateSyncJobRequest indicates an expected call of CreateSyncJobRequest
+func (mr *MockIoTTwinMakerAPIMockRecorder) CreateSyncJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSyncJobRequest", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).CreateSyncJobRequest), arg0)
+}
+
+// CreateSyncJobWithContext mocks base method
+func (m *MockIoTTwinMakerAPI) CreateSyncJobWithContext(arg0 context.Context, arg1 *iottwinmaker.CreateSyncJobInput, arg2 ...request.Option) (*iottwinmaker.CreateSyncJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSyncJobWithContext", varargs...)
+	ret0, _ := ret[0].(*iottwinmaker.CreateSyncJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSyncJobWithContext indicates an expected call of CreateSyncJobWithContext
+func (mr *MockIoTTwinMakerAPIMockRecorder) CreateSyncJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSyncJobWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).CreateSyncJobWithContext), varargs...)
+}
+
 // CreateWorkspace mocks base method
 func (m *MockIoTTwinMakerAPI) CreateWorkspace(arg0 *iottwinmaker.CreateWorkspaceInput) (*iottwinmaker.CreateWorkspaceOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +483,56 @@ func (mr *MockIoTTwinMakerAPIMockRecorder) DeleteSceneWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSceneWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).DeleteSceneWithContext), varargs...)
+}
+
+// DeleteSyncJob mocks base method
+func (m *MockIoTTwinMakerAPI) DeleteSyncJob(arg0 *iottwinmaker.DeleteSyncJobInput) (*iottwinmaker.DeleteSyncJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSyncJob", arg0)
+	ret0, _ := ret[0].(*iottwinmaker.DeleteSyncJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSyncJob indicates an expected call of DeleteSyncJob
+func (mr *MockIoTTwinMakerAPIMockRecorder) DeleteSyncJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSyncJob", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).DeleteSyncJob), arg0)
+}
+
+// DeleteSyncJobRequest mocks base method
+func (m *MockIoTTwinMakerAPI) DeleteSyncJobRequest(arg0 *iottwinmaker.DeleteSyncJobInput) (*request.Request, *iottwinmaker.DeleteSyncJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSyncJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iottwinmaker.DeleteSyncJobOutput)
+	return ret0, ret1
+}
+
+// DeleteSyncJobRequest indicates an expected call of DeleteSyncJobRequest
+func (mr *MockIoTTwinMakerAPIMockRecorder) DeleteSyncJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSyncJobRequest", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).DeleteSyncJobRequest), arg0)
+}
+
+// DeleteSyncJobWithContext mocks base method
+func (m *MockIoTTwinMakerAPI) DeleteSyncJobWithContext(arg0 context.Context, arg1 *iottwinmaker.DeleteSyncJobInput, arg2 ...request.Option) (*iottwinmaker.DeleteSyncJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSyncJobWithContext", varargs...)
+	ret0, _ := ret[0].(*iottwinmaker.DeleteSyncJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSyncJobWithContext indicates an expected call of DeleteSyncJobWithContext
+func (mr *MockIoTTwinMakerAPIMockRecorder) DeleteSyncJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSyncJobWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).DeleteSyncJobWithContext), varargs...)
 }
 
 // DeleteWorkspace mocks base method
@@ -934,6 +1034,56 @@ func (mr *MockIoTTwinMakerAPIMockRecorder) GetSceneWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSceneWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).GetSceneWithContext), varargs...)
 }
 
+// GetSyncJob mocks base method
+func (m *MockIoTTwinMakerAPI) GetSyncJob(arg0 *iottwinmaker.GetSyncJobInput) (*iottwinmaker.GetSyncJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSyncJob", arg0)
+	ret0, _ := ret[0].(*iottwinmaker.GetSyncJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSyncJob indicates an expected call of GetSyncJob
+func (mr *MockIoTTwinMakerAPIMockRecorder) GetSyncJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSyncJob", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).GetSyncJob), arg0)
+}
+
+// GetSyncJobRequest mocks base method
+func (m *MockIoTTwinMakerAPI) GetSyncJobRequest(arg0 *iottwinmaker.GetSyncJobInput) (*request.Request, *iottwinmaker.GetSyncJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSyncJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iottwinmaker.GetSyncJobOutput)
+	return ret0, ret1
+}
+
+// GetSyncJobRequest indicates an expected call of GetSyncJobRequest
+func (mr *MockIoTTwinMakerAPIMockRecorder) GetSyncJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSyncJobRequest", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).GetSyncJobRequest), arg0)
+}
+
+// GetSyncJobWithContext mocks base method
+func (m *MockIoTTwinMakerAPI) GetSyncJobWithContext(arg0 context.Context, arg1 *iottwinmaker.GetSyncJobInput, arg2 ...request.Option) (*iottwinmaker.GetSyncJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSyncJobWithContext", varargs...)
+	ret0, _ := ret[0].(*iottwinmaker.GetSyncJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSyncJobWithContext indicates an expected call of GetSyncJobWithContext
+func (mr *MockIoTTwinMakerAPIMockRecorder) GetSyncJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSyncJobWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).GetSyncJobWithContext), varargs...)
+}
+
 // GetWorkspace mocks base method
 func (m *MockIoTTwinMakerAPI) GetWorkspace(arg0 *iottwinmaker.GetWorkspaceInput) (*iottwinmaker.GetWorkspaceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1231,6 +1381,172 @@ func (mr *MockIoTTwinMakerAPIMockRecorder) ListScenesWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScenesWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ListScenesWithContext), varargs...)
+}
+
+// ListSyncJobs mocks base method
+func (m *MockIoTTwinMakerAPI) ListSyncJobs(arg0 *iottwinmaker.ListSyncJobsInput) (*iottwinmaker.ListSyncJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSyncJobs", arg0)
+	ret0, _ := ret[0].(*iottwinmaker.ListSyncJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSyncJobs indicates an expected call of ListSyncJobs
+func (mr *MockIoTTwinMakerAPIMockRecorder) ListSyncJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSyncJobs", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ListSyncJobs), arg0)
+}
+
+// ListSyncJobsPages mocks base method
+func (m *MockIoTTwinMakerAPI) ListSyncJobsPages(arg0 *iottwinmaker.ListSyncJobsInput, arg1 func(*iottwinmaker.ListSyncJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSyncJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSyncJobsPages indicates an expected call of ListSyncJobsPages
+func (mr *MockIoTTwinMakerAPIMockRecorder) ListSyncJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSyncJobsPages", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ListSyncJobsPages), arg0, arg1)
+}
+
+// ListSyncJobsPagesWithContext mocks base method
+func (m *MockIoTTwinMakerAPI) ListSyncJobsPagesWithContext(arg0 context.Context, arg1 *iottwinmaker.ListSyncJobsInput, arg2 func(*iottwinmaker.ListSyncJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSyncJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSyncJobsPagesWithContext indicates an expected call of ListSyncJobsPagesWithContext
+func (mr *MockIoTTwinMakerAPIMockRecorder) ListSyncJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSyncJobsPagesWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ListSyncJobsPagesWithContext), varargs...)
+}
+
+// ListSyncJobsRequest mocks base method
+func (m *MockIoTTwinMakerAPI) ListSyncJobsRequest(arg0 *iottwinmaker.ListSyncJobsInput) (*request.Request, *iottwinmaker.ListSyncJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSyncJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iottwinmaker.ListSyncJobsOutput)
+	return ret0, ret1
+}
+
+// ListSyncJobsRequest indicates an expected call of ListSyncJobsRequest
+func (mr *MockIoTTwinMakerAPIMockRecorder) ListSyncJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSyncJobsRequest", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ListSyncJobsRequest), arg0)
+}
+
+// ListSyncJobsWithContext mocks base method
+func (m *MockIoTTwinMakerAPI) ListSyncJobsWithContext(arg0 context.Context, arg1 *iottwinmaker.ListSyncJobsInput, arg2 ...request.Option) (*iottwinmaker.ListSyncJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSyncJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*iottwinmaker.ListSyncJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSyncJobsWithContext indicates an expected call of ListSyncJobsWithContext
+func (mr *MockIoTTwinMakerAPIMockRecorder) ListSyncJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSyncJobsWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ListSyncJobsWithContext), varargs...)
+}
+
+// ListSyncResources mocks base method
+func (m *MockIoTTwinMakerAPI) ListSyncResources(arg0 *iottwinmaker.ListSyncResourcesInput) (*iottwinmaker.ListSyncResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSyncResources", arg0)
+	ret0, _ := ret[0].(*iottwinmaker.ListSyncResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSyncResources indicates an expected call of ListSyncResources
+func (mr *MockIoTTwinMakerAPIMockRecorder) ListSyncResources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSyncResources", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ListSyncResources), arg0)
+}
+
+// ListSyncResourcesPages mocks base method
+func (m *MockIoTTwinMakerAPI) ListSyncResourcesPages(arg0 *iottwinmaker.ListSyncResourcesInput, arg1 func(*iottwinmaker.ListSyncResourcesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSyncResourcesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSyncResourcesPages indicates an expected call of ListSyncResourcesPages
+func (mr *MockIoTTwinMakerAPIMockRecorder) ListSyncResourcesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSyncResourcesPages", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ListSyncResourcesPages), arg0, arg1)
+}
+
+// ListSyncResourcesPagesWithContext mocks base method
+func (m *MockIoTTwinMakerAPI) ListSyncResourcesPagesWithContext(arg0 context.Context, arg1 *iottwinmaker.ListSyncResourcesInput, arg2 func(*iottwinmaker.ListSyncResourcesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSyncResourcesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSyncResourcesPagesWithContext indicates an expected call of ListSyncResourcesPagesWithContext
+func (mr *MockIoTTwinMakerAPIMockRecorder) ListSyncResourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSyncResourcesPagesWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ListSyncResourcesPagesWithContext), varargs...)
+}
+
+// ListSyncResourcesRequest mocks base method
+func (m *MockIoTTwinMakerAPI) ListSyncResourcesRequest(arg0 *iottwinmaker.ListSyncResourcesInput) (*request.Request, *iottwinmaker.ListSyncResourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSyncResourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iottwinmaker.ListSyncResourcesOutput)
+	return ret0, ret1
+}
+
+// ListSyncResourcesRequest indicates an expected call of ListSyncResourcesRequest
+func (mr *MockIoTTwinMakerAPIMockRecorder) ListSyncResourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSyncResourcesRequest", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ListSyncResourcesRequest), arg0)
+}
+
+// ListSyncResourcesWithContext mocks base method
+func (m *MockIoTTwinMakerAPI) ListSyncResourcesWithContext(arg0 context.Context, arg1 *iottwinmaker.ListSyncResourcesInput, arg2 ...request.Option) (*iottwinmaker.ListSyncResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSyncResourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*iottwinmaker.ListSyncResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSyncResourcesWithContext indicates an expected call of ListSyncResourcesWithContext
+func (mr *MockIoTTwinMakerAPIMockRecorder) ListSyncResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSyncResourcesWithContext", reflect.TypeOf((*MockIoTTwinMakerAPI)(nil).ListSyncResourcesWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
