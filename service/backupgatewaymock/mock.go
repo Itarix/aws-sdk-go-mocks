@@ -285,6 +285,56 @@ func (mr *MockBackupGatewayAPIMockRecorder) DisassociateGatewayFromServerWithCon
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateGatewayFromServerWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).DisassociateGatewayFromServerWithContext), varargs...)
 }
 
+// GetBandwidthRateLimitSchedule mocks base method
+func (m *MockBackupGatewayAPI) GetBandwidthRateLimitSchedule(arg0 *backupgateway.GetBandwidthRateLimitScheduleInput) (*backupgateway.GetBandwidthRateLimitScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBandwidthRateLimitSchedule", arg0)
+	ret0, _ := ret[0].(*backupgateway.GetBandwidthRateLimitScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBandwidthRateLimitSchedule indicates an expected call of GetBandwidthRateLimitSchedule
+func (mr *MockBackupGatewayAPIMockRecorder) GetBandwidthRateLimitSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBandwidthRateLimitSchedule", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetBandwidthRateLimitSchedule), arg0)
+}
+
+// GetBandwidthRateLimitScheduleRequest mocks base method
+func (m *MockBackupGatewayAPI) GetBandwidthRateLimitScheduleRequest(arg0 *backupgateway.GetBandwidthRateLimitScheduleInput) (*request.Request, *backupgateway.GetBandwidthRateLimitScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetBandwidthRateLimitScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backupgateway.GetBandwidthRateLimitScheduleOutput)
+	return ret0, ret1
+}
+
+// GetBandwidthRateLimitScheduleRequest indicates an expected call of GetBandwidthRateLimitScheduleRequest
+func (mr *MockBackupGatewayAPIMockRecorder) GetBandwidthRateLimitScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBandwidthRateLimitScheduleRequest", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetBandwidthRateLimitScheduleRequest), arg0)
+}
+
+// GetBandwidthRateLimitScheduleWithContext mocks base method
+func (m *MockBackupGatewayAPI) GetBandwidthRateLimitScheduleWithContext(arg0 context.Context, arg1 *backupgateway.GetBandwidthRateLimitScheduleInput, arg2 ...request.Option) (*backupgateway.GetBandwidthRateLimitScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetBandwidthRateLimitScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*backupgateway.GetBandwidthRateLimitScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetBandwidthRateLimitScheduleWithContext indicates an expected call of GetBandwidthRateLimitScheduleWithContext
+func (mr *MockBackupGatewayAPIMockRecorder) GetBandwidthRateLimitScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBandwidthRateLimitScheduleWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetBandwidthRateLimitScheduleWithContext), varargs...)
+}
+
 // GetGateway mocks base method
 func (m *MockBackupGatewayAPI) GetGateway(arg0 *backupgateway.GetGatewayInput) (*backupgateway.GetGatewayOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +383,106 @@ func (mr *MockBackupGatewayAPIMockRecorder) GetGatewayWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetGatewayWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetGatewayWithContext), varargs...)
+}
+
+// GetHypervisor mocks base method
+func (m *MockBackupGatewayAPI) GetHypervisor(arg0 *backupgateway.GetHypervisorInput) (*backupgateway.GetHypervisorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetHypervisor", arg0)
+	ret0, _ := ret[0].(*backupgateway.GetHypervisorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetHypervisor indicates an expected call of GetHypervisor
+func (mr *MockBackupGatewayAPIMockRecorder) GetHypervisor(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetHypervisor", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetHypervisor), arg0)
+}
+
+// GetHypervisorPropertyMappings mocks base method
+func (m *MockBackupGatewayAPI) GetHypervisorPropertyMappings(arg0 *backupgateway.GetHypervisorPropertyMappingsInput) (*backupgateway.GetHypervisorPropertyMappingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetHypervisorPropertyMappings", arg0)
+	ret0, _ := ret[0].(*backupgateway.GetHypervisorPropertyMappingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetHypervisorPropertyMappings indicates an expected call of GetHypervisorPropertyMappings
+func (mr *MockBackupGatewayAPIMockRecorder) GetHypervisorPropertyMappings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetHypervisorPropertyMappings", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetHypervisorPropertyMappings), arg0)
+}
+
+// GetHypervisorPropertyMappingsRequest mocks base method
+func (m *MockBackupGatewayAPI) GetHypervisorPropertyMappingsRequest(arg0 *backupgateway.GetHypervisorPropertyMappingsInput) (*request.Request, *backupgateway.GetHypervisorPropertyMappingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetHypervisorPropertyMappingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backupgateway.GetHypervisorPropertyMappingsOutput)
+	return ret0, ret1
+}
+
+// GetHypervisorPropertyMappingsRequest indicates an expected call of GetHypervisorPropertyMappingsRequest
+func (mr *MockBackupGatewayAPIMockRecorder) GetHypervisorPropertyMappingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetHypervisorPropertyMappingsRequest", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetHypervisorPropertyMappingsRequest), arg0)
+}
+
+// GetHypervisorPropertyMappingsWithContext mocks base method
+func (m *MockBackupGatewayAPI) GetHypervisorPropertyMappingsWithContext(arg0 context.Context, arg1 *backupgateway.GetHypervisorPropertyMappingsInput, arg2 ...request.Option) (*backupgateway.GetHypervisorPropertyMappingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetHypervisorPropertyMappingsWithContext", varargs...)
+	ret0, _ := ret[0].(*backupgateway.GetHypervisorPropertyMappingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetHypervisorPropertyMappingsWithContext indicates an expected call of GetHypervisorPropertyMappingsWithContext
+func (mr *MockBackupGatewayAPIMockRecorder) GetHypervisorPropertyMappingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetHypervisorPropertyMappingsWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetHypervisorPropertyMappingsWithContext), varargs...)
+}
+
+// GetHypervisorRequest mocks base method
+func (m *MockBackupGatewayAPI) GetHypervisorRequest(arg0 *backupgateway.GetHypervisorInput) (*request.Request, *backupgateway.GetHypervisorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetHypervisorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backupgateway.GetHypervisorOutput)
+	return ret0, ret1
+}
+
+// GetHypervisorRequest indicates an expected call of GetHypervisorRequest
+func (mr *MockBackupGatewayAPIMockRecorder) GetHypervisorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetHypervisorRequest", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetHypervisorRequest), arg0)
+}
+
+// GetHypervisorWithContext mocks base method
+func (m *MockBackupGatewayAPI) GetHypervisorWithContext(arg0 context.Context, arg1 *backupgateway.GetHypervisorInput, arg2 ...request.Option) (*backupgateway.GetHypervisorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetHypervisorWithContext", varargs...)
+	ret0, _ := ret[0].(*backupgateway.GetHypervisorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetHypervisorWithContext indicates an expected call of GetHypervisorWithContext
+func (mr *MockBackupGatewayAPIMockRecorder) GetHypervisorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetHypervisorWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).GetHypervisorWithContext), varargs...)
 }
 
 // GetVirtualMachine mocks base method
@@ -734,6 +884,106 @@ func (mr *MockBackupGatewayAPIMockRecorder) ListVirtualMachinesWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVirtualMachinesWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).ListVirtualMachinesWithContext), varargs...)
 }
 
+// PutBandwidthRateLimitSchedule mocks base method
+func (m *MockBackupGatewayAPI) PutBandwidthRateLimitSchedule(arg0 *backupgateway.PutBandwidthRateLimitScheduleInput) (*backupgateway.PutBandwidthRateLimitScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutBandwidthRateLimitSchedule", arg0)
+	ret0, _ := ret[0].(*backupgateway.PutBandwidthRateLimitScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutBandwidthRateLimitSchedule indicates an expected call of PutBandwidthRateLimitSchedule
+func (mr *MockBackupGatewayAPIMockRecorder) PutBandwidthRateLimitSchedule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBandwidthRateLimitSchedule", reflect.TypeOf((*MockBackupGatewayAPI)(nil).PutBandwidthRateLimitSchedule), arg0)
+}
+
+// PutBandwidthRateLimitScheduleRequest mocks base method
+func (m *MockBackupGatewayAPI) PutBandwidthRateLimitScheduleRequest(arg0 *backupgateway.PutBandwidthRateLimitScheduleInput) (*request.Request, *backupgateway.PutBandwidthRateLimitScheduleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutBandwidthRateLimitScheduleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backupgateway.PutBandwidthRateLimitScheduleOutput)
+	return ret0, ret1
+}
+
+// PutBandwidthRateLimitScheduleRequest indicates an expected call of PutBandwidthRateLimitScheduleRequest
+func (mr *MockBackupGatewayAPIMockRecorder) PutBandwidthRateLimitScheduleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBandwidthRateLimitScheduleRequest", reflect.TypeOf((*MockBackupGatewayAPI)(nil).PutBandwidthRateLimitScheduleRequest), arg0)
+}
+
+// PutBandwidthRateLimitScheduleWithContext mocks base method
+func (m *MockBackupGatewayAPI) PutBandwidthRateLimitScheduleWithContext(arg0 context.Context, arg1 *backupgateway.PutBandwidthRateLimitScheduleInput, arg2 ...request.Option) (*backupgateway.PutBandwidthRateLimitScheduleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutBandwidthRateLimitScheduleWithContext", varargs...)
+	ret0, _ := ret[0].(*backupgateway.PutBandwidthRateLimitScheduleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutBandwidthRateLimitScheduleWithContext indicates an expected call of PutBandwidthRateLimitScheduleWithContext
+func (mr *MockBackupGatewayAPIMockRecorder) PutBandwidthRateLimitScheduleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutBandwidthRateLimitScheduleWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).PutBandwidthRateLimitScheduleWithContext), varargs...)
+}
+
+// PutHypervisorPropertyMappings mocks base method
+func (m *MockBackupGatewayAPI) PutHypervisorPropertyMappings(arg0 *backupgateway.PutHypervisorPropertyMappingsInput) (*backupgateway.PutHypervisorPropertyMappingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutHypervisorPropertyMappings", arg0)
+	ret0, _ := ret[0].(*backupgateway.PutHypervisorPropertyMappingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutHypervisorPropertyMappings indicates an expected call of PutHypervisorPropertyMappings
+func (mr *MockBackupGatewayAPIMockRecorder) PutHypervisorPropertyMappings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutHypervisorPropertyMappings", reflect.TypeOf((*MockBackupGatewayAPI)(nil).PutHypervisorPropertyMappings), arg0)
+}
+
+// PutHypervisorPropertyMappingsRequest mocks base method
+func (m *MockBackupGatewayAPI) PutHypervisorPropertyMappingsRequest(arg0 *backupgateway.PutHypervisorPropertyMappingsInput) (*request.Request, *backupgateway.PutHypervisorPropertyMappingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutHypervisorPropertyMappingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backupgateway.PutHypervisorPropertyMappingsOutput)
+	return ret0, ret1
+}
+
+// PutHypervisorPropertyMappingsRequest indicates an expected call of PutHypervisorPropertyMappingsRequest
+func (mr *MockBackupGatewayAPIMockRecorder) PutHypervisorPropertyMappingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutHypervisorPropertyMappingsRequest", reflect.TypeOf((*MockBackupGatewayAPI)(nil).PutHypervisorPropertyMappingsRequest), arg0)
+}
+
+// PutHypervisorPropertyMappingsWithContext mocks base method
+func (m *MockBackupGatewayAPI) PutHypervisorPropertyMappingsWithContext(arg0 context.Context, arg1 *backupgateway.PutHypervisorPropertyMappingsInput, arg2 ...request.Option) (*backupgateway.PutHypervisorPropertyMappingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutHypervisorPropertyMappingsWithContext", varargs...)
+	ret0, _ := ret[0].(*backupgateway.PutHypervisorPropertyMappingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutHypervisorPropertyMappingsWithContext indicates an expected call of PutHypervisorPropertyMappingsWithContext
+func (mr *MockBackupGatewayAPIMockRecorder) PutHypervisorPropertyMappingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutHypervisorPropertyMappingsWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).PutHypervisorPropertyMappingsWithContext), varargs...)
+}
+
 // PutMaintenanceStartTime mocks base method
 func (m *MockBackupGatewayAPI) PutMaintenanceStartTime(arg0 *backupgateway.PutMaintenanceStartTimeInput) (*backupgateway.PutMaintenanceStartTimeOutput, error) {
 	m.ctrl.T.Helper()
@@ -782,6 +1032,56 @@ func (mr *MockBackupGatewayAPIMockRecorder) PutMaintenanceStartTimeWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMaintenanceStartTimeWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).PutMaintenanceStartTimeWithContext), varargs...)
+}
+
+// StartVirtualMachinesMetadataSync mocks base method
+func (m *MockBackupGatewayAPI) StartVirtualMachinesMetadataSync(arg0 *backupgateway.StartVirtualMachinesMetadataSyncInput) (*backupgateway.StartVirtualMachinesMetadataSyncOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartVirtualMachinesMetadataSync", arg0)
+	ret0, _ := ret[0].(*backupgateway.StartVirtualMachinesMetadataSyncOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartVirtualMachinesMetadataSync indicates an expected call of StartVirtualMachinesMetadataSync
+func (mr *MockBackupGatewayAPIMockRecorder) StartVirtualMachinesMetadataSync(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartVirtualMachinesMetadataSync", reflect.TypeOf((*MockBackupGatewayAPI)(nil).StartVirtualMachinesMetadataSync), arg0)
+}
+
+// StartVirtualMachinesMetadataSyncRequest mocks base method
+func (m *MockBackupGatewayAPI) StartVirtualMachinesMetadataSyncRequest(arg0 *backupgateway.StartVirtualMachinesMetadataSyncInput) (*request.Request, *backupgateway.StartVirtualMachinesMetadataSyncOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartVirtualMachinesMetadataSyncRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backupgateway.StartVirtualMachinesMetadataSyncOutput)
+	return ret0, ret1
+}
+
+// StartVirtualMachinesMetadataSyncRequest indicates an expected call of StartVirtualMachinesMetadataSyncRequest
+func (mr *MockBackupGatewayAPIMockRecorder) StartVirtualMachinesMetadataSyncRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartVirtualMachinesMetadataSyncRequest", reflect.TypeOf((*MockBackupGatewayAPI)(nil).StartVirtualMachinesMetadataSyncRequest), arg0)
+}
+
+// StartVirtualMachinesMetadataSyncWithContext mocks base method
+func (m *MockBackupGatewayAPI) StartVirtualMachinesMetadataSyncWithContext(arg0 context.Context, arg1 *backupgateway.StartVirtualMachinesMetadataSyncInput, arg2 ...request.Option) (*backupgateway.StartVirtualMachinesMetadataSyncOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartVirtualMachinesMetadataSyncWithContext", varargs...)
+	ret0, _ := ret[0].(*backupgateway.StartVirtualMachinesMetadataSyncOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartVirtualMachinesMetadataSyncWithContext indicates an expected call of StartVirtualMachinesMetadataSyncWithContext
+func (mr *MockBackupGatewayAPIMockRecorder) StartVirtualMachinesMetadataSyncWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartVirtualMachinesMetadataSyncWithContext", reflect.TypeOf((*MockBackupGatewayAPI)(nil).StartVirtualMachinesMetadataSyncWithContext), varargs...)
 }
 
 // TagResource mocks base method
