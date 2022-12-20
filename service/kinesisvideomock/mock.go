@@ -335,6 +335,139 @@ func (mr *MockKinesisVideoAPIMockRecorder) DescribeImageGenerationConfigurationW
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeImageGenerationConfigurationWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DescribeImageGenerationConfigurationWithContext), varargs...)
 }
 
+// DescribeMappedResourceConfiguration mocks base method
+func (m *MockKinesisVideoAPI) DescribeMappedResourceConfiguration(arg0 *kinesisvideo.DescribeMappedResourceConfigurationInput) (*kinesisvideo.DescribeMappedResourceConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMappedResourceConfiguration", arg0)
+	ret0, _ := ret[0].(*kinesisvideo.DescribeMappedResourceConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMappedResourceConfiguration indicates an expected call of DescribeMappedResourceConfiguration
+func (mr *MockKinesisVideoAPIMockRecorder) DescribeMappedResourceConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMappedResourceConfiguration", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DescribeMappedResourceConfiguration), arg0)
+}
+
+// DescribeMappedResourceConfigurationPages mocks base method
+func (m *MockKinesisVideoAPI) DescribeMappedResourceConfigurationPages(arg0 *kinesisvideo.DescribeMappedResourceConfigurationInput, arg1 func(*kinesisvideo.DescribeMappedResourceConfigurationOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMappedResourceConfigurationPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeMappedResourceConfigurationPages indicates an expected call of DescribeMappedResourceConfigurationPages
+func (mr *MockKinesisVideoAPIMockRecorder) DescribeMappedResourceConfigurationPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMappedResourceConfigurationPages", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DescribeMappedResourceConfigurationPages), arg0, arg1)
+}
+
+// DescribeMappedResourceConfigurationPagesWithContext mocks base method
+func (m *MockKinesisVideoAPI) DescribeMappedResourceConfigurationPagesWithContext(arg0 context.Context, arg1 *kinesisvideo.DescribeMappedResourceConfigurationInput, arg2 func(*kinesisvideo.DescribeMappedResourceConfigurationOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMappedResourceConfigurationPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeMappedResourceConfigurationPagesWithContext indicates an expected call of DescribeMappedResourceConfigurationPagesWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) DescribeMappedResourceConfigurationPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMappedResourceConfigurationPagesWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DescribeMappedResourceConfigurationPagesWithContext), varargs...)
+}
+
+// DescribeMappedResourceConfigurationRequest mocks base method
+func (m *MockKinesisVideoAPI) DescribeMappedResourceConfigurationRequest(arg0 *kinesisvideo.DescribeMappedResourceConfigurationInput) (*request.Request, *kinesisvideo.DescribeMappedResourceConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMappedResourceConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideo.DescribeMappedResourceConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeMappedResourceConfigurationRequest indicates an expected call of DescribeMappedResourceConfigurationRequest
+func (mr *MockKinesisVideoAPIMockRecorder) DescribeMappedResourceConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMappedResourceConfigurationRequest", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DescribeMappedResourceConfigurationRequest), arg0)
+}
+
+// DescribeMappedResourceConfigurationWithContext mocks base method
+func (m *MockKinesisVideoAPI) DescribeMappedResourceConfigurationWithContext(arg0 context.Context, arg1 *kinesisvideo.DescribeMappedResourceConfigurationInput, arg2 ...request.Option) (*kinesisvideo.DescribeMappedResourceConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMappedResourceConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideo.DescribeMappedResourceConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMappedResourceConfigurationWithContext indicates an expected call of DescribeMappedResourceConfigurationWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) DescribeMappedResourceConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMappedResourceConfigurationWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DescribeMappedResourceConfigurationWithContext), varargs...)
+}
+
+// DescribeMediaStorageConfiguration mocks base method
+func (m *MockKinesisVideoAPI) DescribeMediaStorageConfiguration(arg0 *kinesisvideo.DescribeMediaStorageConfigurationInput) (*kinesisvideo.DescribeMediaStorageConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMediaStorageConfiguration", arg0)
+	ret0, _ := ret[0].(*kinesisvideo.DescribeMediaStorageConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMediaStorageConfiguration indicates an expected call of DescribeMediaStorageConfiguration
+func (mr *MockKinesisVideoAPIMockRecorder) DescribeMediaStorageConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMediaStorageConfiguration", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DescribeMediaStorageConfiguration), arg0)
+}
+
+// DescribeMediaStorageConfigurationRequest mocks base method
+func (m *MockKinesisVideoAPI) DescribeMediaStorageConfigurationRequest(arg0 *kinesisvideo.DescribeMediaStorageConfigurationInput) (*request.Request, *kinesisvideo.DescribeMediaStorageConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeMediaStorageConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideo.DescribeMediaStorageConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeMediaStorageConfigurationRequest indicates an expected call of DescribeMediaStorageConfigurationRequest
+func (mr *MockKinesisVideoAPIMockRecorder) DescribeMediaStorageConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMediaStorageConfigurationRequest", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DescribeMediaStorageConfigurationRequest), arg0)
+}
+
+// DescribeMediaStorageConfigurationWithContext mocks base method
+func (m *MockKinesisVideoAPI) DescribeMediaStorageConfigurationWithContext(arg0 context.Context, arg1 *kinesisvideo.DescribeMediaStorageConfigurationInput, arg2 ...request.Option) (*kinesisvideo.DescribeMediaStorageConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeMediaStorageConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideo.DescribeMediaStorageConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeMediaStorageConfigurationWithContext indicates an expected call of DescribeMediaStorageConfigurationWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) DescribeMediaStorageConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeMediaStorageConfigurationWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DescribeMediaStorageConfigurationWithContext), varargs...)
+}
+
 // DescribeNotificationConfiguration mocks base method
 func (m *MockKinesisVideoAPI) DescribeNotificationConfiguration(arg0 *kinesisvideo.DescribeNotificationConfigurationInput) (*kinesisvideo.DescribeNotificationConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -1199,6 +1332,56 @@ func (mr *MockKinesisVideoAPIMockRecorder) UpdateImageGenerationConfigurationWit
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateImageGenerationConfigurationWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).UpdateImageGenerationConfigurationWithContext), varargs...)
+}
+
+// UpdateMediaStorageConfiguration mocks base method
+func (m *MockKinesisVideoAPI) UpdateMediaStorageConfiguration(arg0 *kinesisvideo.UpdateMediaStorageConfigurationInput) (*kinesisvideo.UpdateMediaStorageConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMediaStorageConfiguration", arg0)
+	ret0, _ := ret[0].(*kinesisvideo.UpdateMediaStorageConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMediaStorageConfiguration indicates an expected call of UpdateMediaStorageConfiguration
+func (mr *MockKinesisVideoAPIMockRecorder) UpdateMediaStorageConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMediaStorageConfiguration", reflect.TypeOf((*MockKinesisVideoAPI)(nil).UpdateMediaStorageConfiguration), arg0)
+}
+
+// UpdateMediaStorageConfigurationRequest mocks base method
+func (m *MockKinesisVideoAPI) UpdateMediaStorageConfigurationRequest(arg0 *kinesisvideo.UpdateMediaStorageConfigurationInput) (*request.Request, *kinesisvideo.UpdateMediaStorageConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMediaStorageConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideo.UpdateMediaStorageConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateMediaStorageConfigurationRequest indicates an expected call of UpdateMediaStorageConfigurationRequest
+func (mr *MockKinesisVideoAPIMockRecorder) UpdateMediaStorageConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMediaStorageConfigurationRequest", reflect.TypeOf((*MockKinesisVideoAPI)(nil).UpdateMediaStorageConfigurationRequest), arg0)
+}
+
+// UpdateMediaStorageConfigurationWithContext mocks base method
+func (m *MockKinesisVideoAPI) UpdateMediaStorageConfigurationWithContext(arg0 context.Context, arg1 *kinesisvideo.UpdateMediaStorageConfigurationInput, arg2 ...request.Option) (*kinesisvideo.UpdateMediaStorageConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateMediaStorageConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideo.UpdateMediaStorageConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMediaStorageConfigurationWithContext indicates an expected call of UpdateMediaStorageConfigurationWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) UpdateMediaStorageConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMediaStorageConfigurationWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).UpdateMediaStorageConfigurationWithContext), varargs...)
 }
 
 // UpdateNotificationConfiguration mocks base method
