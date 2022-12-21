@@ -85,6 +85,56 @@ func (mr *MockRoute53DomainsAPIMockRecorder) AcceptDomainTransferFromAnotherAwsA
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptDomainTransferFromAnotherAwsAccountWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).AcceptDomainTransferFromAnotherAwsAccountWithContext), varargs...)
 }
 
+// AssociateDelegationSignerToDomain mocks base method
+func (m *MockRoute53DomainsAPI) AssociateDelegationSignerToDomain(arg0 *route53domains.AssociateDelegationSignerToDomainInput) (*route53domains.AssociateDelegationSignerToDomainOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateDelegationSignerToDomain", arg0)
+	ret0, _ := ret[0].(*route53domains.AssociateDelegationSignerToDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateDelegationSignerToDomain indicates an expected call of AssociateDelegationSignerToDomain
+func (mr *MockRoute53DomainsAPIMockRecorder) AssociateDelegationSignerToDomain(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDelegationSignerToDomain", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).AssociateDelegationSignerToDomain), arg0)
+}
+
+// AssociateDelegationSignerToDomainRequest mocks base method
+func (m *MockRoute53DomainsAPI) AssociateDelegationSignerToDomainRequest(arg0 *route53domains.AssociateDelegationSignerToDomainInput) (*request.Request, *route53domains.AssociateDelegationSignerToDomainOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateDelegationSignerToDomainRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53domains.AssociateDelegationSignerToDomainOutput)
+	return ret0, ret1
+}
+
+// AssociateDelegationSignerToDomainRequest indicates an expected call of AssociateDelegationSignerToDomainRequest
+func (mr *MockRoute53DomainsAPIMockRecorder) AssociateDelegationSignerToDomainRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDelegationSignerToDomainRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).AssociateDelegationSignerToDomainRequest), arg0)
+}
+
+// AssociateDelegationSignerToDomainWithContext mocks base method
+func (m *MockRoute53DomainsAPI) AssociateDelegationSignerToDomainWithContext(arg0 context.Context, arg1 *route53domains.AssociateDelegationSignerToDomainInput, arg2 ...request.Option) (*route53domains.AssociateDelegationSignerToDomainOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateDelegationSignerToDomainWithContext", varargs...)
+	ret0, _ := ret[0].(*route53domains.AssociateDelegationSignerToDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateDelegationSignerToDomainWithContext indicates an expected call of AssociateDelegationSignerToDomainWithContext
+func (mr *MockRoute53DomainsAPIMockRecorder) AssociateDelegationSignerToDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateDelegationSignerToDomainWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).AssociateDelegationSignerToDomainWithContext), varargs...)
+}
+
 // CancelDomainTransferToAnotherAwsAccount mocks base method
 func (m *MockRoute53DomainsAPI) CancelDomainTransferToAnotherAwsAccount(arg0 *route53domains.CancelDomainTransferToAnotherAwsAccountInput) (*route53domains.CancelDomainTransferToAnotherAwsAccountOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +483,56 @@ func (mr *MockRoute53DomainsAPIMockRecorder) DisableDomainTransferLockWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableDomainTransferLockWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DisableDomainTransferLockWithContext), varargs...)
+}
+
+// DisassociateDelegationSignerFromDomain mocks base method
+func (m *MockRoute53DomainsAPI) DisassociateDelegationSignerFromDomain(arg0 *route53domains.DisassociateDelegationSignerFromDomainInput) (*route53domains.DisassociateDelegationSignerFromDomainOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateDelegationSignerFromDomain", arg0)
+	ret0, _ := ret[0].(*route53domains.DisassociateDelegationSignerFromDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateDelegationSignerFromDomain indicates an expected call of DisassociateDelegationSignerFromDomain
+func (mr *MockRoute53DomainsAPIMockRecorder) DisassociateDelegationSignerFromDomain(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDelegationSignerFromDomain", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DisassociateDelegationSignerFromDomain), arg0)
+}
+
+// DisassociateDelegationSignerFromDomainRequest mocks base method
+func (m *MockRoute53DomainsAPI) DisassociateDelegationSignerFromDomainRequest(arg0 *route53domains.DisassociateDelegationSignerFromDomainInput) (*request.Request, *route53domains.DisassociateDelegationSignerFromDomainOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateDelegationSignerFromDomainRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53domains.DisassociateDelegationSignerFromDomainOutput)
+	return ret0, ret1
+}
+
+// DisassociateDelegationSignerFromDomainRequest indicates an expected call of DisassociateDelegationSignerFromDomainRequest
+func (mr *MockRoute53DomainsAPIMockRecorder) DisassociateDelegationSignerFromDomainRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDelegationSignerFromDomainRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DisassociateDelegationSignerFromDomainRequest), arg0)
+}
+
+// DisassociateDelegationSignerFromDomainWithContext mocks base method
+func (m *MockRoute53DomainsAPI) DisassociateDelegationSignerFromDomainWithContext(arg0 context.Context, arg1 *route53domains.DisassociateDelegationSignerFromDomainInput, arg2 ...request.Option) (*route53domains.DisassociateDelegationSignerFromDomainOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateDelegationSignerFromDomainWithContext", varargs...)
+	ret0, _ := ret[0].(*route53domains.DisassociateDelegationSignerFromDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateDelegationSignerFromDomainWithContext indicates an expected call of DisassociateDelegationSignerFromDomainWithContext
+func (mr *MockRoute53DomainsAPIMockRecorder) DisassociateDelegationSignerFromDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateDelegationSignerFromDomainWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).DisassociateDelegationSignerFromDomainWithContext), varargs...)
 }
 
 // EnableDomainAutoRenew mocks base method
@@ -1034,6 +1134,56 @@ func (mr *MockRoute53DomainsAPIMockRecorder) ListTagsForDomainWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForDomainWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ListTagsForDomainWithContext), varargs...)
 }
 
+// PushDomain mocks base method
+func (m *MockRoute53DomainsAPI) PushDomain(arg0 *route53domains.PushDomainInput) (*route53domains.PushDomainOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PushDomain", arg0)
+	ret0, _ := ret[0].(*route53domains.PushDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PushDomain indicates an expected call of PushDomain
+func (mr *MockRoute53DomainsAPIMockRecorder) PushDomain(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PushDomain", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).PushDomain), arg0)
+}
+
+// PushDomainRequest mocks base method
+func (m *MockRoute53DomainsAPI) PushDomainRequest(arg0 *route53domains.PushDomainInput) (*request.Request, *route53domains.PushDomainOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PushDomainRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53domains.PushDomainOutput)
+	return ret0, ret1
+}
+
+// PushDomainRequest indicates an expected call of PushDomainRequest
+func (mr *MockRoute53DomainsAPIMockRecorder) PushDomainRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PushDomainRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).PushDomainRequest), arg0)
+}
+
+// PushDomainWithContext mocks base method
+func (m *MockRoute53DomainsAPI) PushDomainWithContext(arg0 context.Context, arg1 *route53domains.PushDomainInput, arg2 ...request.Option) (*route53domains.PushDomainOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PushDomainWithContext", varargs...)
+	ret0, _ := ret[0].(*route53domains.PushDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PushDomainWithContext indicates an expected call of PushDomainWithContext
+func (mr *MockRoute53DomainsAPIMockRecorder) PushDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PushDomainWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).PushDomainWithContext), varargs...)
+}
+
 // RegisterDomain mocks base method
 func (m *MockRoute53DomainsAPI) RegisterDomain(arg0 *route53domains.RegisterDomainInput) (*route53domains.RegisterDomainOutput, error) {
 	m.ctrl.T.Helper()
@@ -1232,6 +1382,56 @@ func (mr *MockRoute53DomainsAPIMockRecorder) ResendContactReachabilityEmailWithC
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResendContactReachabilityEmailWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ResendContactReachabilityEmailWithContext), varargs...)
+}
+
+// ResendOperationAuthorization mocks base method
+func (m *MockRoute53DomainsAPI) ResendOperationAuthorization(arg0 *route53domains.ResendOperationAuthorizationInput) (*route53domains.ResendOperationAuthorizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResendOperationAuthorization", arg0)
+	ret0, _ := ret[0].(*route53domains.ResendOperationAuthorizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResendOperationAuthorization indicates an expected call of ResendOperationAuthorization
+func (mr *MockRoute53DomainsAPIMockRecorder) ResendOperationAuthorization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResendOperationAuthorization", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ResendOperationAuthorization), arg0)
+}
+
+// ResendOperationAuthorizationRequest mocks base method
+func (m *MockRoute53DomainsAPI) ResendOperationAuthorizationRequest(arg0 *route53domains.ResendOperationAuthorizationInput) (*request.Request, *route53domains.ResendOperationAuthorizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResendOperationAuthorizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53domains.ResendOperationAuthorizationOutput)
+	return ret0, ret1
+}
+
+// ResendOperationAuthorizationRequest indicates an expected call of ResendOperationAuthorizationRequest
+func (mr *MockRoute53DomainsAPIMockRecorder) ResendOperationAuthorizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResendOperationAuthorizationRequest", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ResendOperationAuthorizationRequest), arg0)
+}
+
+// ResendOperationAuthorizationWithContext mocks base method
+func (m *MockRoute53DomainsAPI) ResendOperationAuthorizationWithContext(arg0 context.Context, arg1 *route53domains.ResendOperationAuthorizationInput, arg2 ...request.Option) (*route53domains.ResendOperationAuthorizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ResendOperationAuthorizationWithContext", varargs...)
+	ret0, _ := ret[0].(*route53domains.ResendOperationAuthorizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResendOperationAuthorizationWithContext indicates an expected call of ResendOperationAuthorizationWithContext
+func (mr *MockRoute53DomainsAPIMockRecorder) ResendOperationAuthorizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResendOperationAuthorizationWithContext", reflect.TypeOf((*MockRoute53DomainsAPI)(nil).ResendOperationAuthorizationWithContext), varargs...)
 }
 
 // RetrieveDomainAuthCode mocks base method

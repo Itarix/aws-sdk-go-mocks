@@ -1050,6 +1050,56 @@ func (mr *MockNimbleStudioAPIMockRecorder) GetStreamingSession(arg0 interface{})
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStreamingSession", reflect.TypeOf((*MockNimbleStudioAPI)(nil).GetStreamingSession), arg0)
 }
 
+// GetStreamingSessionBackup mocks base method
+func (m *MockNimbleStudioAPI) GetStreamingSessionBackup(arg0 *nimblestudio.GetStreamingSessionBackupInput) (*nimblestudio.GetStreamingSessionBackupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStreamingSessionBackup", arg0)
+	ret0, _ := ret[0].(*nimblestudio.GetStreamingSessionBackupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStreamingSessionBackup indicates an expected call of GetStreamingSessionBackup
+func (mr *MockNimbleStudioAPIMockRecorder) GetStreamingSessionBackup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStreamingSessionBackup", reflect.TypeOf((*MockNimbleStudioAPI)(nil).GetStreamingSessionBackup), arg0)
+}
+
+// GetStreamingSessionBackupRequest mocks base method
+func (m *MockNimbleStudioAPI) GetStreamingSessionBackupRequest(arg0 *nimblestudio.GetStreamingSessionBackupInput) (*request.Request, *nimblestudio.GetStreamingSessionBackupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStreamingSessionBackupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*nimblestudio.GetStreamingSessionBackupOutput)
+	return ret0, ret1
+}
+
+// GetStreamingSessionBackupRequest indicates an expected call of GetStreamingSessionBackupRequest
+func (mr *MockNimbleStudioAPIMockRecorder) GetStreamingSessionBackupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStreamingSessionBackupRequest", reflect.TypeOf((*MockNimbleStudioAPI)(nil).GetStreamingSessionBackupRequest), arg0)
+}
+
+// GetStreamingSessionBackupWithContext mocks base method
+func (m *MockNimbleStudioAPI) GetStreamingSessionBackupWithContext(arg0 context.Context, arg1 *nimblestudio.GetStreamingSessionBackupInput, arg2 ...request.Option) (*nimblestudio.GetStreamingSessionBackupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetStreamingSessionBackupWithContext", varargs...)
+	ret0, _ := ret[0].(*nimblestudio.GetStreamingSessionBackupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStreamingSessionBackupWithContext indicates an expected call of GetStreamingSessionBackupWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) GetStreamingSessionBackupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStreamingSessionBackupWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).GetStreamingSessionBackupWithContext), varargs...)
+}
+
 // GetStreamingSessionRequest mocks base method
 func (m *MockNimbleStudioAPI) GetStreamingSessionRequest(arg0 *nimblestudio.GetStreamingSessionInput) (*request.Request, *nimblestudio.GetStreamingSessionOutput) {
 	m.ctrl.T.Helper()
@@ -1698,6 +1748,89 @@ func (mr *MockNimbleStudioAPIMockRecorder) ListStreamingImagesWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamingImagesWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).ListStreamingImagesWithContext), varargs...)
+}
+
+// ListStreamingSessionBackups mocks base method
+func (m *MockNimbleStudioAPI) ListStreamingSessionBackups(arg0 *nimblestudio.ListStreamingSessionBackupsInput) (*nimblestudio.ListStreamingSessionBackupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStreamingSessionBackups", arg0)
+	ret0, _ := ret[0].(*nimblestudio.ListStreamingSessionBackupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStreamingSessionBackups indicates an expected call of ListStreamingSessionBackups
+func (mr *MockNimbleStudioAPIMockRecorder) ListStreamingSessionBackups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamingSessionBackups", reflect.TypeOf((*MockNimbleStudioAPI)(nil).ListStreamingSessionBackups), arg0)
+}
+
+// ListStreamingSessionBackupsPages mocks base method
+func (m *MockNimbleStudioAPI) ListStreamingSessionBackupsPages(arg0 *nimblestudio.ListStreamingSessionBackupsInput, arg1 func(*nimblestudio.ListStreamingSessionBackupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStreamingSessionBackupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStreamingSessionBackupsPages indicates an expected call of ListStreamingSessionBackupsPages
+func (mr *MockNimbleStudioAPIMockRecorder) ListStreamingSessionBackupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamingSessionBackupsPages", reflect.TypeOf((*MockNimbleStudioAPI)(nil).ListStreamingSessionBackupsPages), arg0, arg1)
+}
+
+// ListStreamingSessionBackupsPagesWithContext mocks base method
+func (m *MockNimbleStudioAPI) ListStreamingSessionBackupsPagesWithContext(arg0 context.Context, arg1 *nimblestudio.ListStreamingSessionBackupsInput, arg2 func(*nimblestudio.ListStreamingSessionBackupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStreamingSessionBackupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStreamingSessionBackupsPagesWithContext indicates an expected call of ListStreamingSessionBackupsPagesWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) ListStreamingSessionBackupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamingSessionBackupsPagesWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).ListStreamingSessionBackupsPagesWithContext), varargs...)
+}
+
+// ListStreamingSessionBackupsRequest mocks base method
+func (m *MockNimbleStudioAPI) ListStreamingSessionBackupsRequest(arg0 *nimblestudio.ListStreamingSessionBackupsInput) (*request.Request, *nimblestudio.ListStreamingSessionBackupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStreamingSessionBackupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*nimblestudio.ListStreamingSessionBackupsOutput)
+	return ret0, ret1
+}
+
+// ListStreamingSessionBackupsRequest indicates an expected call of ListStreamingSessionBackupsRequest
+func (mr *MockNimbleStudioAPIMockRecorder) ListStreamingSessionBackupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamingSessionBackupsRequest", reflect.TypeOf((*MockNimbleStudioAPI)(nil).ListStreamingSessionBackupsRequest), arg0)
+}
+
+// ListStreamingSessionBackupsWithContext mocks base method
+func (m *MockNimbleStudioAPI) ListStreamingSessionBackupsWithContext(arg0 context.Context, arg1 *nimblestudio.ListStreamingSessionBackupsInput, arg2 ...request.Option) (*nimblestudio.ListStreamingSessionBackupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStreamingSessionBackupsWithContext", varargs...)
+	ret0, _ := ret[0].(*nimblestudio.ListStreamingSessionBackupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStreamingSessionBackupsWithContext indicates an expected call of ListStreamingSessionBackupsWithContext
+func (mr *MockNimbleStudioAPIMockRecorder) ListStreamingSessionBackupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStreamingSessionBackupsWithContext", reflect.TypeOf((*MockNimbleStudioAPI)(nil).ListStreamingSessionBackupsWithContext), varargs...)
 }
 
 // ListStreamingSessions mocks base method
