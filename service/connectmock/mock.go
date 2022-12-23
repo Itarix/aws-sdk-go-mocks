@@ -8605,6 +8605,56 @@ func (mr *MockConnectAPIMockRecorder) UpdateInstanceStorageConfigWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateInstanceStorageConfigWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateInstanceStorageConfigWithContext), varargs...)
 }
 
+// UpdateParticipantRoleConfig mocks base method
+func (m *MockConnectAPI) UpdateParticipantRoleConfig(arg0 *connect.UpdateParticipantRoleConfigInput) (*connect.UpdateParticipantRoleConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateParticipantRoleConfig", arg0)
+	ret0, _ := ret[0].(*connect.UpdateParticipantRoleConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateParticipantRoleConfig indicates an expected call of UpdateParticipantRoleConfig
+func (mr *MockConnectAPIMockRecorder) UpdateParticipantRoleConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateParticipantRoleConfig", reflect.TypeOf((*MockConnectAPI)(nil).UpdateParticipantRoleConfig), arg0)
+}
+
+// UpdateParticipantRoleConfigRequest mocks base method
+func (m *MockConnectAPI) UpdateParticipantRoleConfigRequest(arg0 *connect.UpdateParticipantRoleConfigInput) (*request.Request, *connect.UpdateParticipantRoleConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateParticipantRoleConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateParticipantRoleConfigOutput)
+	return ret0, ret1
+}
+
+// UpdateParticipantRoleConfigRequest indicates an expected call of UpdateParticipantRoleConfigRequest
+func (mr *MockConnectAPIMockRecorder) UpdateParticipantRoleConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateParticipantRoleConfigRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateParticipantRoleConfigRequest), arg0)
+}
+
+// UpdateParticipantRoleConfigWithContext mocks base method
+func (m *MockConnectAPI) UpdateParticipantRoleConfigWithContext(arg0 context.Context, arg1 *connect.UpdateParticipantRoleConfigInput, arg2 ...request.Option) (*connect.UpdateParticipantRoleConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateParticipantRoleConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateParticipantRoleConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateParticipantRoleConfigWithContext indicates an expected call of UpdateParticipantRoleConfigWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateParticipantRoleConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateParticipantRoleConfigWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateParticipantRoleConfigWithContext), varargs...)
+}
+
 // UpdatePhoneNumber mocks base method
 func (m *MockConnectAPI) UpdatePhoneNumber(arg0 *connect.UpdatePhoneNumberInput) (*connect.UpdatePhoneNumberOutput, error) {
 	m.ctrl.T.Helper()

@@ -50,56 +50,6 @@ func (mr *MockKinesisVideoWebRTCStorageAPIMockRecorder) JoinStorageSession(arg0 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "JoinStorageSession", reflect.TypeOf((*MockKinesisVideoWebRTCStorageAPI)(nil).JoinStorageSession), arg0)
 }
 
-// JoinStorageSessionAsViewer mocks base method
-func (m *MockKinesisVideoWebRTCStorageAPI) JoinStorageSessionAsViewer(arg0 *kinesisvideowebrtcstorage.JoinStorageSessionAsViewerInput) (*kinesisvideowebrtcstorage.JoinStorageSessionAsViewerOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "JoinStorageSessionAsViewer", arg0)
-	ret0, _ := ret[0].(*kinesisvideowebrtcstorage.JoinStorageSessionAsViewerOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// JoinStorageSessionAsViewer indicates an expected call of JoinStorageSessionAsViewer
-func (mr *MockKinesisVideoWebRTCStorageAPIMockRecorder) JoinStorageSessionAsViewer(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "JoinStorageSessionAsViewer", reflect.TypeOf((*MockKinesisVideoWebRTCStorageAPI)(nil).JoinStorageSessionAsViewer), arg0)
-}
-
-// JoinStorageSessionAsViewerRequest mocks base method
-func (m *MockKinesisVideoWebRTCStorageAPI) JoinStorageSessionAsViewerRequest(arg0 *kinesisvideowebrtcstorage.JoinStorageSessionAsViewerInput) (*request.Request, *kinesisvideowebrtcstorage.JoinStorageSessionAsViewerOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "JoinStorageSessionAsViewerRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*kinesisvideowebrtcstorage.JoinStorageSessionAsViewerOutput)
-	return ret0, ret1
-}
-
-// JoinStorageSessionAsViewerRequest indicates an expected call of JoinStorageSessionAsViewerRequest
-func (mr *MockKinesisVideoWebRTCStorageAPIMockRecorder) JoinStorageSessionAsViewerRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "JoinStorageSessionAsViewerRequest", reflect.TypeOf((*MockKinesisVideoWebRTCStorageAPI)(nil).JoinStorageSessionAsViewerRequest), arg0)
-}
-
-// JoinStorageSessionAsViewerWithContext mocks base method
-func (m *MockKinesisVideoWebRTCStorageAPI) JoinStorageSessionAsViewerWithContext(arg0 context.Context, arg1 *kinesisvideowebrtcstorage.JoinStorageSessionAsViewerInput, arg2 ...request.Option) (*kinesisvideowebrtcstorage.JoinStorageSessionAsViewerOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "JoinStorageSessionAsViewerWithContext", varargs...)
-	ret0, _ := ret[0].(*kinesisvideowebrtcstorage.JoinStorageSessionAsViewerOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// JoinStorageSessionAsViewerWithContext indicates an expected call of JoinStorageSessionAsViewerWithContext
-func (mr *MockKinesisVideoWebRTCStorageAPIMockRecorder) JoinStorageSessionAsViewerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "JoinStorageSessionAsViewerWithContext", reflect.TypeOf((*MockKinesisVideoWebRTCStorageAPI)(nil).JoinStorageSessionAsViewerWithContext), varargs...)
-}
-
 // JoinStorageSessionRequest mocks base method
 func (m *MockKinesisVideoWebRTCStorageAPI) JoinStorageSessionRequest(arg0 *kinesisvideowebrtcstorage.JoinStorageSessionInput) (*request.Request, *kinesisvideowebrtcstorage.JoinStorageSessionOutput) {
 	m.ctrl.T.Helper()
