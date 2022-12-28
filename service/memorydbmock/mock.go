@@ -750,6 +750,39 @@ func (mr *MockMemoryDBAPIMockRecorder) DescribeACLs(arg0 interface{}) *gomock.Ca
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeACLs", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeACLs), arg0)
 }
 
+// DescribeACLsPages mocks base method
+func (m *MockMemoryDBAPI) DescribeACLsPages(arg0 *memorydb.DescribeACLsInput, arg1 func(*memorydb.DescribeACLsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeACLsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeACLsPages indicates an expected call of DescribeACLsPages
+func (mr *MockMemoryDBAPIMockRecorder) DescribeACLsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeACLsPages", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeACLsPages), arg0, arg1)
+}
+
+// DescribeACLsPagesWithContext mocks base method
+func (m *MockMemoryDBAPI) DescribeACLsPagesWithContext(arg0 context.Context, arg1 *memorydb.DescribeACLsInput, arg2 func(*memorydb.DescribeACLsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeACLsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeACLsPagesWithContext indicates an expected call of DescribeACLsPagesWithContext
+func (mr *MockMemoryDBAPIMockRecorder) DescribeACLsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeACLsPagesWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeACLsPagesWithContext), varargs...)
+}
+
 // DescribeACLsRequest mocks base method
 func (m *MockMemoryDBAPI) DescribeACLsRequest(arg0 *memorydb.DescribeACLsInput) (*request.Request, *memorydb.DescribeACLsOutput) {
 	m.ctrl.T.Helper()
@@ -798,6 +831,39 @@ func (m *MockMemoryDBAPI) DescribeClusters(arg0 *memorydb.DescribeClustersInput)
 func (mr *MockMemoryDBAPIMockRecorder) DescribeClusters(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusters", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeClusters), arg0)
+}
+
+// DescribeClustersPages mocks base method
+func (m *MockMemoryDBAPI) DescribeClustersPages(arg0 *memorydb.DescribeClustersInput, arg1 func(*memorydb.DescribeClustersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeClustersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeClustersPages indicates an expected call of DescribeClustersPages
+func (mr *MockMemoryDBAPIMockRecorder) DescribeClustersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClustersPages", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeClustersPages), arg0, arg1)
+}
+
+// DescribeClustersPagesWithContext mocks base method
+func (m *MockMemoryDBAPI) DescribeClustersPagesWithContext(arg0 context.Context, arg1 *memorydb.DescribeClustersInput, arg2 func(*memorydb.DescribeClustersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeClustersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeClustersPagesWithContext indicates an expected call of DescribeClustersPagesWithContext
+func (mr *MockMemoryDBAPIMockRecorder) DescribeClustersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClustersPagesWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeClustersPagesWithContext), varargs...)
 }
 
 // DescribeClustersRequest mocks base method
@@ -850,6 +916,39 @@ func (mr *MockMemoryDBAPIMockRecorder) DescribeEngineVersions(arg0 interface{}) 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEngineVersions", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeEngineVersions), arg0)
 }
 
+// DescribeEngineVersionsPages mocks base method
+func (m *MockMemoryDBAPI) DescribeEngineVersionsPages(arg0 *memorydb.DescribeEngineVersionsInput, arg1 func(*memorydb.DescribeEngineVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEngineVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeEngineVersionsPages indicates an expected call of DescribeEngineVersionsPages
+func (mr *MockMemoryDBAPIMockRecorder) DescribeEngineVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEngineVersionsPages", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeEngineVersionsPages), arg0, arg1)
+}
+
+// DescribeEngineVersionsPagesWithContext mocks base method
+func (m *MockMemoryDBAPI) DescribeEngineVersionsPagesWithContext(arg0 context.Context, arg1 *memorydb.DescribeEngineVersionsInput, arg2 func(*memorydb.DescribeEngineVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEngineVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeEngineVersionsPagesWithContext indicates an expected call of DescribeEngineVersionsPagesWithContext
+func (mr *MockMemoryDBAPIMockRecorder) DescribeEngineVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEngineVersionsPagesWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeEngineVersionsPagesWithContext), varargs...)
+}
+
 // DescribeEngineVersionsRequest mocks base method
 func (m *MockMemoryDBAPI) DescribeEngineVersionsRequest(arg0 *memorydb.DescribeEngineVersionsInput) (*request.Request, *memorydb.DescribeEngineVersionsOutput) {
 	m.ctrl.T.Helper()
@@ -898,6 +997,39 @@ func (m *MockMemoryDBAPI) DescribeEvents(arg0 *memorydb.DescribeEventsInput) (*m
 func (mr *MockMemoryDBAPIMockRecorder) DescribeEvents(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEvents", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeEvents), arg0)
+}
+
+// DescribeEventsPages mocks base method
+func (m *MockMemoryDBAPI) DescribeEventsPages(arg0 *memorydb.DescribeEventsInput, arg1 func(*memorydb.DescribeEventsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEventsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeEventsPages indicates an expected call of DescribeEventsPages
+func (mr *MockMemoryDBAPIMockRecorder) DescribeEventsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsPages", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeEventsPages), arg0, arg1)
+}
+
+// DescribeEventsPagesWithContext mocks base method
+func (m *MockMemoryDBAPI) DescribeEventsPagesWithContext(arg0 context.Context, arg1 *memorydb.DescribeEventsInput, arg2 func(*memorydb.DescribeEventsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEventsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeEventsPagesWithContext indicates an expected call of DescribeEventsPagesWithContext
+func (mr *MockMemoryDBAPIMockRecorder) DescribeEventsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsPagesWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeEventsPagesWithContext), varargs...)
 }
 
 // DescribeEventsRequest mocks base method
@@ -950,6 +1082,39 @@ func (mr *MockMemoryDBAPIMockRecorder) DescribeParameterGroups(arg0 interface{})
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeParameterGroups", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeParameterGroups), arg0)
 }
 
+// DescribeParameterGroupsPages mocks base method
+func (m *MockMemoryDBAPI) DescribeParameterGroupsPages(arg0 *memorydb.DescribeParameterGroupsInput, arg1 func(*memorydb.DescribeParameterGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeParameterGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeParameterGroupsPages indicates an expected call of DescribeParameterGroupsPages
+func (mr *MockMemoryDBAPIMockRecorder) DescribeParameterGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeParameterGroupsPages", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeParameterGroupsPages), arg0, arg1)
+}
+
+// DescribeParameterGroupsPagesWithContext mocks base method
+func (m *MockMemoryDBAPI) DescribeParameterGroupsPagesWithContext(arg0 context.Context, arg1 *memorydb.DescribeParameterGroupsInput, arg2 func(*memorydb.DescribeParameterGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeParameterGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeParameterGroupsPagesWithContext indicates an expected call of DescribeParameterGroupsPagesWithContext
+func (mr *MockMemoryDBAPIMockRecorder) DescribeParameterGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeParameterGroupsPagesWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeParameterGroupsPagesWithContext), varargs...)
+}
+
 // DescribeParameterGroupsRequest mocks base method
 func (m *MockMemoryDBAPI) DescribeParameterGroupsRequest(arg0 *memorydb.DescribeParameterGroupsInput) (*request.Request, *memorydb.DescribeParameterGroupsOutput) {
 	m.ctrl.T.Helper()
@@ -1000,6 +1165,39 @@ func (mr *MockMemoryDBAPIMockRecorder) DescribeParameters(arg0 interface{}) *gom
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeParameters", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeParameters), arg0)
 }
 
+// DescribeParametersPages mocks base method
+func (m *MockMemoryDBAPI) DescribeParametersPages(arg0 *memorydb.DescribeParametersInput, arg1 func(*memorydb.DescribeParametersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeParametersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeParametersPages indicates an expected call of DescribeParametersPages
+func (mr *MockMemoryDBAPIMockRecorder) DescribeParametersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeParametersPages", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeParametersPages), arg0, arg1)
+}
+
+// DescribeParametersPagesWithContext mocks base method
+func (m *MockMemoryDBAPI) DescribeParametersPagesWithContext(arg0 context.Context, arg1 *memorydb.DescribeParametersInput, arg2 func(*memorydb.DescribeParametersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeParametersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeParametersPagesWithContext indicates an expected call of DescribeParametersPagesWithContext
+func (mr *MockMemoryDBAPIMockRecorder) DescribeParametersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeParametersPagesWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeParametersPagesWithContext), varargs...)
+}
+
 // DescribeParametersRequest mocks base method
 func (m *MockMemoryDBAPI) DescribeParametersRequest(arg0 *memorydb.DescribeParametersInput) (*request.Request, *memorydb.DescribeParametersOutput) {
 	m.ctrl.T.Helper()
@@ -1035,6 +1233,172 @@ func (mr *MockMemoryDBAPIMockRecorder) DescribeParametersWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeParametersWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeParametersWithContext), varargs...)
 }
 
+// DescribeReservedNodes mocks base method
+func (m *MockMemoryDBAPI) DescribeReservedNodes(arg0 *memorydb.DescribeReservedNodesInput) (*memorydb.DescribeReservedNodesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReservedNodes", arg0)
+	ret0, _ := ret[0].(*memorydb.DescribeReservedNodesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReservedNodes indicates an expected call of DescribeReservedNodes
+func (mr *MockMemoryDBAPIMockRecorder) DescribeReservedNodes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservedNodes", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeReservedNodes), arg0)
+}
+
+// DescribeReservedNodesOfferings mocks base method
+func (m *MockMemoryDBAPI) DescribeReservedNodesOfferings(arg0 *memorydb.DescribeReservedNodesOfferingsInput) (*memorydb.DescribeReservedNodesOfferingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReservedNodesOfferings", arg0)
+	ret0, _ := ret[0].(*memorydb.DescribeReservedNodesOfferingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReservedNodesOfferings indicates an expected call of DescribeReservedNodesOfferings
+func (mr *MockMemoryDBAPIMockRecorder) DescribeReservedNodesOfferings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservedNodesOfferings", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeReservedNodesOfferings), arg0)
+}
+
+// DescribeReservedNodesOfferingsPages mocks base method
+func (m *MockMemoryDBAPI) DescribeReservedNodesOfferingsPages(arg0 *memorydb.DescribeReservedNodesOfferingsInput, arg1 func(*memorydb.DescribeReservedNodesOfferingsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReservedNodesOfferingsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeReservedNodesOfferingsPages indicates an expected call of DescribeReservedNodesOfferingsPages
+func (mr *MockMemoryDBAPIMockRecorder) DescribeReservedNodesOfferingsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservedNodesOfferingsPages", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeReservedNodesOfferingsPages), arg0, arg1)
+}
+
+// DescribeReservedNodesOfferingsPagesWithContext mocks base method
+func (m *MockMemoryDBAPI) DescribeReservedNodesOfferingsPagesWithContext(arg0 context.Context, arg1 *memorydb.DescribeReservedNodesOfferingsInput, arg2 func(*memorydb.DescribeReservedNodesOfferingsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReservedNodesOfferingsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeReservedNodesOfferingsPagesWithContext indicates an expected call of DescribeReservedNodesOfferingsPagesWithContext
+func (mr *MockMemoryDBAPIMockRecorder) DescribeReservedNodesOfferingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservedNodesOfferingsPagesWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeReservedNodesOfferingsPagesWithContext), varargs...)
+}
+
+// DescribeReservedNodesOfferingsRequest mocks base method
+func (m *MockMemoryDBAPI) DescribeReservedNodesOfferingsRequest(arg0 *memorydb.DescribeReservedNodesOfferingsInput) (*request.Request, *memorydb.DescribeReservedNodesOfferingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReservedNodesOfferingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*memorydb.DescribeReservedNodesOfferingsOutput)
+	return ret0, ret1
+}
+
+// DescribeReservedNodesOfferingsRequest indicates an expected call of DescribeReservedNodesOfferingsRequest
+func (mr *MockMemoryDBAPIMockRecorder) DescribeReservedNodesOfferingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservedNodesOfferingsRequest", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeReservedNodesOfferingsRequest), arg0)
+}
+
+// DescribeReservedNodesOfferingsWithContext mocks base method
+func (m *MockMemoryDBAPI) DescribeReservedNodesOfferingsWithContext(arg0 context.Context, arg1 *memorydb.DescribeReservedNodesOfferingsInput, arg2 ...request.Option) (*memorydb.DescribeReservedNodesOfferingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReservedNodesOfferingsWithContext", varargs...)
+	ret0, _ := ret[0].(*memorydb.DescribeReservedNodesOfferingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReservedNodesOfferingsWithContext indicates an expected call of DescribeReservedNodesOfferingsWithContext
+func (mr *MockMemoryDBAPIMockRecorder) DescribeReservedNodesOfferingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservedNodesOfferingsWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeReservedNodesOfferingsWithContext), varargs...)
+}
+
+// DescribeReservedNodesPages mocks base method
+func (m *MockMemoryDBAPI) DescribeReservedNodesPages(arg0 *memorydb.DescribeReservedNodesInput, arg1 func(*memorydb.DescribeReservedNodesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReservedNodesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeReservedNodesPages indicates an expected call of DescribeReservedNodesPages
+func (mr *MockMemoryDBAPIMockRecorder) DescribeReservedNodesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservedNodesPages", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeReservedNodesPages), arg0, arg1)
+}
+
+// DescribeReservedNodesPagesWithContext mocks base method
+func (m *MockMemoryDBAPI) DescribeReservedNodesPagesWithContext(arg0 context.Context, arg1 *memorydb.DescribeReservedNodesInput, arg2 func(*memorydb.DescribeReservedNodesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReservedNodesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeReservedNodesPagesWithContext indicates an expected call of DescribeReservedNodesPagesWithContext
+func (mr *MockMemoryDBAPIMockRecorder) DescribeReservedNodesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservedNodesPagesWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeReservedNodesPagesWithContext), varargs...)
+}
+
+// DescribeReservedNodesRequest mocks base method
+func (m *MockMemoryDBAPI) DescribeReservedNodesRequest(arg0 *memorydb.DescribeReservedNodesInput) (*request.Request, *memorydb.DescribeReservedNodesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReservedNodesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*memorydb.DescribeReservedNodesOutput)
+	return ret0, ret1
+}
+
+// DescribeReservedNodesRequest indicates an expected call of DescribeReservedNodesRequest
+func (mr *MockMemoryDBAPIMockRecorder) DescribeReservedNodesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservedNodesRequest", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeReservedNodesRequest), arg0)
+}
+
+// DescribeReservedNodesWithContext mocks base method
+func (m *MockMemoryDBAPI) DescribeReservedNodesWithContext(arg0 context.Context, arg1 *memorydb.DescribeReservedNodesInput, arg2 ...request.Option) (*memorydb.DescribeReservedNodesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReservedNodesWithContext", varargs...)
+	ret0, _ := ret[0].(*memorydb.DescribeReservedNodesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReservedNodesWithContext indicates an expected call of DescribeReservedNodesWithContext
+func (mr *MockMemoryDBAPIMockRecorder) DescribeReservedNodesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReservedNodesWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeReservedNodesWithContext), varargs...)
+}
+
 // DescribeServiceUpdates mocks base method
 func (m *MockMemoryDBAPI) DescribeServiceUpdates(arg0 *memorydb.DescribeServiceUpdatesInput) (*memorydb.DescribeServiceUpdatesOutput, error) {
 	m.ctrl.T.Helper()
@@ -1048,6 +1412,39 @@ func (m *MockMemoryDBAPI) DescribeServiceUpdates(arg0 *memorydb.DescribeServiceU
 func (mr *MockMemoryDBAPIMockRecorder) DescribeServiceUpdates(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServiceUpdates", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeServiceUpdates), arg0)
+}
+
+// DescribeServiceUpdatesPages mocks base method
+func (m *MockMemoryDBAPI) DescribeServiceUpdatesPages(arg0 *memorydb.DescribeServiceUpdatesInput, arg1 func(*memorydb.DescribeServiceUpdatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeServiceUpdatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeServiceUpdatesPages indicates an expected call of DescribeServiceUpdatesPages
+func (mr *MockMemoryDBAPIMockRecorder) DescribeServiceUpdatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServiceUpdatesPages", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeServiceUpdatesPages), arg0, arg1)
+}
+
+// DescribeServiceUpdatesPagesWithContext mocks base method
+func (m *MockMemoryDBAPI) DescribeServiceUpdatesPagesWithContext(arg0 context.Context, arg1 *memorydb.DescribeServiceUpdatesInput, arg2 func(*memorydb.DescribeServiceUpdatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeServiceUpdatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeServiceUpdatesPagesWithContext indicates an expected call of DescribeServiceUpdatesPagesWithContext
+func (mr *MockMemoryDBAPIMockRecorder) DescribeServiceUpdatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeServiceUpdatesPagesWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeServiceUpdatesPagesWithContext), varargs...)
 }
 
 // DescribeServiceUpdatesRequest mocks base method
@@ -1100,6 +1497,39 @@ func (mr *MockMemoryDBAPIMockRecorder) DescribeSnapshots(arg0 interface{}) *gomo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshots", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeSnapshots), arg0)
 }
 
+// DescribeSnapshotsPages mocks base method
+func (m *MockMemoryDBAPI) DescribeSnapshotsPages(arg0 *memorydb.DescribeSnapshotsInput, arg1 func(*memorydb.DescribeSnapshotsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSnapshotsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSnapshotsPages indicates an expected call of DescribeSnapshotsPages
+func (mr *MockMemoryDBAPIMockRecorder) DescribeSnapshotsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotsPages", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeSnapshotsPages), arg0, arg1)
+}
+
+// DescribeSnapshotsPagesWithContext mocks base method
+func (m *MockMemoryDBAPI) DescribeSnapshotsPagesWithContext(arg0 context.Context, arg1 *memorydb.DescribeSnapshotsInput, arg2 func(*memorydb.DescribeSnapshotsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSnapshotsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSnapshotsPagesWithContext indicates an expected call of DescribeSnapshotsPagesWithContext
+func (mr *MockMemoryDBAPIMockRecorder) DescribeSnapshotsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSnapshotsPagesWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeSnapshotsPagesWithContext), varargs...)
+}
+
 // DescribeSnapshotsRequest mocks base method
 func (m *MockMemoryDBAPI) DescribeSnapshotsRequest(arg0 *memorydb.DescribeSnapshotsInput) (*request.Request, *memorydb.DescribeSnapshotsOutput) {
 	m.ctrl.T.Helper()
@@ -1150,6 +1580,39 @@ func (mr *MockMemoryDBAPIMockRecorder) DescribeSubnetGroups(arg0 interface{}) *g
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSubnetGroups", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeSubnetGroups), arg0)
 }
 
+// DescribeSubnetGroupsPages mocks base method
+func (m *MockMemoryDBAPI) DescribeSubnetGroupsPages(arg0 *memorydb.DescribeSubnetGroupsInput, arg1 func(*memorydb.DescribeSubnetGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSubnetGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSubnetGroupsPages indicates an expected call of DescribeSubnetGroupsPages
+func (mr *MockMemoryDBAPIMockRecorder) DescribeSubnetGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSubnetGroupsPages", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeSubnetGroupsPages), arg0, arg1)
+}
+
+// DescribeSubnetGroupsPagesWithContext mocks base method
+func (m *MockMemoryDBAPI) DescribeSubnetGroupsPagesWithContext(arg0 context.Context, arg1 *memorydb.DescribeSubnetGroupsInput, arg2 func(*memorydb.DescribeSubnetGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSubnetGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSubnetGroupsPagesWithContext indicates an expected call of DescribeSubnetGroupsPagesWithContext
+func (mr *MockMemoryDBAPIMockRecorder) DescribeSubnetGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSubnetGroupsPagesWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeSubnetGroupsPagesWithContext), varargs...)
+}
+
 // DescribeSubnetGroupsRequest mocks base method
 func (m *MockMemoryDBAPI) DescribeSubnetGroupsRequest(arg0 *memorydb.DescribeSubnetGroupsInput) (*request.Request, *memorydb.DescribeSubnetGroupsOutput) {
 	m.ctrl.T.Helper()
@@ -1198,6 +1661,39 @@ func (m *MockMemoryDBAPI) DescribeUsers(arg0 *memorydb.DescribeUsersInput) (*mem
 func (mr *MockMemoryDBAPIMockRecorder) DescribeUsers(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsers", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeUsers), arg0)
+}
+
+// DescribeUsersPages mocks base method
+func (m *MockMemoryDBAPI) DescribeUsersPages(arg0 *memorydb.DescribeUsersInput, arg1 func(*memorydb.DescribeUsersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeUsersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeUsersPages indicates an expected call of DescribeUsersPages
+func (mr *MockMemoryDBAPIMockRecorder) DescribeUsersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsersPages", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeUsersPages), arg0, arg1)
+}
+
+// DescribeUsersPagesWithContext mocks base method
+func (m *MockMemoryDBAPI) DescribeUsersPagesWithContext(arg0 context.Context, arg1 *memorydb.DescribeUsersInput, arg2 func(*memorydb.DescribeUsersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeUsersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeUsersPagesWithContext indicates an expected call of DescribeUsersPagesWithContext
+func (mr *MockMemoryDBAPIMockRecorder) DescribeUsersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUsersPagesWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).DescribeUsersPagesWithContext), varargs...)
 }
 
 // DescribeUsersRequest mocks base method
@@ -1383,6 +1879,56 @@ func (mr *MockMemoryDBAPIMockRecorder) ListTagsWithContext(arg0, arg1 interface{
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).ListTagsWithContext), varargs...)
+}
+
+// PurchaseReservedNodesOffering mocks base method
+func (m *MockMemoryDBAPI) PurchaseReservedNodesOffering(arg0 *memorydb.PurchaseReservedNodesOfferingInput) (*memorydb.PurchaseReservedNodesOfferingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PurchaseReservedNodesOffering", arg0)
+	ret0, _ := ret[0].(*memorydb.PurchaseReservedNodesOfferingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PurchaseReservedNodesOffering indicates an expected call of PurchaseReservedNodesOffering
+func (mr *MockMemoryDBAPIMockRecorder) PurchaseReservedNodesOffering(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseReservedNodesOffering", reflect.TypeOf((*MockMemoryDBAPI)(nil).PurchaseReservedNodesOffering), arg0)
+}
+
+// PurchaseReservedNodesOfferingRequest mocks base method
+func (m *MockMemoryDBAPI) PurchaseReservedNodesOfferingRequest(arg0 *memorydb.PurchaseReservedNodesOfferingInput) (*request.Request, *memorydb.PurchaseReservedNodesOfferingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PurchaseReservedNodesOfferingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*memorydb.PurchaseReservedNodesOfferingOutput)
+	return ret0, ret1
+}
+
+// PurchaseReservedNodesOfferingRequest indicates an expected call of PurchaseReservedNodesOfferingRequest
+func (mr *MockMemoryDBAPIMockRecorder) PurchaseReservedNodesOfferingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseReservedNodesOfferingRequest", reflect.TypeOf((*MockMemoryDBAPI)(nil).PurchaseReservedNodesOfferingRequest), arg0)
+}
+
+// PurchaseReservedNodesOfferingWithContext mocks base method
+func (m *MockMemoryDBAPI) PurchaseReservedNodesOfferingWithContext(arg0 context.Context, arg1 *memorydb.PurchaseReservedNodesOfferingInput, arg2 ...request.Option) (*memorydb.PurchaseReservedNodesOfferingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PurchaseReservedNodesOfferingWithContext", varargs...)
+	ret0, _ := ret[0].(*memorydb.PurchaseReservedNodesOfferingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PurchaseReservedNodesOfferingWithContext indicates an expected call of PurchaseReservedNodesOfferingWithContext
+func (mr *MockMemoryDBAPIMockRecorder) PurchaseReservedNodesOfferingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseReservedNodesOfferingWithContext", reflect.TypeOf((*MockMemoryDBAPI)(nil).PurchaseReservedNodesOfferingWithContext), varargs...)
 }
 
 // ResetParameterGroup mocks base method
