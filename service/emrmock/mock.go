@@ -1035,6 +1035,56 @@ func (mr *MockEMRAPIMockRecorder) GetBlockPublicAccessConfigurationWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBlockPublicAccessConfigurationWithContext", reflect.TypeOf((*MockEMRAPI)(nil).GetBlockPublicAccessConfigurationWithContext), varargs...)
 }
 
+// GetClusterSessionCredentials mocks base method
+func (m *MockEMRAPI) GetClusterSessionCredentials(arg0 *emr.GetClusterSessionCredentialsInput) (*emr.GetClusterSessionCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetClusterSessionCredentials", arg0)
+	ret0, _ := ret[0].(*emr.GetClusterSessionCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetClusterSessionCredentials indicates an expected call of GetClusterSessionCredentials
+func (mr *MockEMRAPIMockRecorder) GetClusterSessionCredentials(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClusterSessionCredentials", reflect.TypeOf((*MockEMRAPI)(nil).GetClusterSessionCredentials), arg0)
+}
+
+// GetClusterSessionCredentialsRequest mocks base method
+func (m *MockEMRAPI) GetClusterSessionCredentialsRequest(arg0 *emr.GetClusterSessionCredentialsInput) (*request.Request, *emr.GetClusterSessionCredentialsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetClusterSessionCredentialsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.GetClusterSessionCredentialsOutput)
+	return ret0, ret1
+}
+
+// GetClusterSessionCredentialsRequest indicates an expected call of GetClusterSessionCredentialsRequest
+func (mr *MockEMRAPIMockRecorder) GetClusterSessionCredentialsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClusterSessionCredentialsRequest", reflect.TypeOf((*MockEMRAPI)(nil).GetClusterSessionCredentialsRequest), arg0)
+}
+
+// GetClusterSessionCredentialsWithContext mocks base method
+func (m *MockEMRAPI) GetClusterSessionCredentialsWithContext(arg0 context.Context, arg1 *emr.GetClusterSessionCredentialsInput, arg2 ...request.Option) (*emr.GetClusterSessionCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetClusterSessionCredentialsWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.GetClusterSessionCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetClusterSessionCredentialsWithContext indicates an expected call of GetClusterSessionCredentialsWithContext
+func (mr *MockEMRAPIMockRecorder) GetClusterSessionCredentialsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClusterSessionCredentialsWithContext", reflect.TypeOf((*MockEMRAPI)(nil).GetClusterSessionCredentialsWithContext), varargs...)
+}
+
 // GetManagedScalingPolicy mocks base method
 func (m *MockEMRAPI) GetManagedScalingPolicy(arg0 *emr.GetManagedScalingPolicyInput) (*emr.GetManagedScalingPolicyOutput, error) {
 	m.ctrl.T.Helper()
