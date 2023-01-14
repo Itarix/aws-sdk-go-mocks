@@ -135,6 +135,56 @@ func (mr *MockResourceGroupsAPIMockRecorder) DeleteGroupWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGroupWithContext", reflect.TypeOf((*MockResourceGroupsAPI)(nil).DeleteGroupWithContext), varargs...)
 }
 
+// GetAccountSettings mocks base method
+func (m *MockResourceGroupsAPI) GetAccountSettings(arg0 *resourcegroups.GetAccountSettingsInput) (*resourcegroups.GetAccountSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccountSettings", arg0)
+	ret0, _ := ret[0].(*resourcegroups.GetAccountSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccountSettings indicates an expected call of GetAccountSettings
+func (mr *MockResourceGroupsAPIMockRecorder) GetAccountSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccountSettings", reflect.TypeOf((*MockResourceGroupsAPI)(nil).GetAccountSettings), arg0)
+}
+
+// GetAccountSettingsRequest mocks base method
+func (m *MockResourceGroupsAPI) GetAccountSettingsRequest(arg0 *resourcegroups.GetAccountSettingsInput) (*request.Request, *resourcegroups.GetAccountSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAccountSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resourcegroups.GetAccountSettingsOutput)
+	return ret0, ret1
+}
+
+// GetAccountSettingsRequest indicates an expected call of GetAccountSettingsRequest
+func (mr *MockResourceGroupsAPIMockRecorder) GetAccountSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccountSettingsRequest", reflect.TypeOf((*MockResourceGroupsAPI)(nil).GetAccountSettingsRequest), arg0)
+}
+
+// GetAccountSettingsWithContext mocks base method
+func (m *MockResourceGroupsAPI) GetAccountSettingsWithContext(arg0 context.Context, arg1 *resourcegroups.GetAccountSettingsInput, arg2 ...request.Option) (*resourcegroups.GetAccountSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAccountSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*resourcegroups.GetAccountSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAccountSettingsWithContext indicates an expected call of GetAccountSettingsWithContext
+func (mr *MockResourceGroupsAPIMockRecorder) GetAccountSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccountSettingsWithContext", reflect.TypeOf((*MockResourceGroupsAPI)(nil).GetAccountSettingsWithContext), varargs...)
+}
+
 // GetGroup mocks base method
 func (m *MockResourceGroupsAPI) GetGroup(arg0 *resourcegroups.GetGroupInput) (*resourcegroups.GetGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -832,6 +882,56 @@ func (mr *MockResourceGroupsAPIMockRecorder) UntagWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagWithContext", reflect.TypeOf((*MockResourceGroupsAPI)(nil).UntagWithContext), varargs...)
+}
+
+// UpdateAccountSettings mocks base method
+func (m *MockResourceGroupsAPI) UpdateAccountSettings(arg0 *resourcegroups.UpdateAccountSettingsInput) (*resourcegroups.UpdateAccountSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAccountSettings", arg0)
+	ret0, _ := ret[0].(*resourcegroups.UpdateAccountSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAccountSettings indicates an expected call of UpdateAccountSettings
+func (mr *MockResourceGroupsAPIMockRecorder) UpdateAccountSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccountSettings", reflect.TypeOf((*MockResourceGroupsAPI)(nil).UpdateAccountSettings), arg0)
+}
+
+// UpdateAccountSettingsRequest mocks base method
+func (m *MockResourceGroupsAPI) UpdateAccountSettingsRequest(arg0 *resourcegroups.UpdateAccountSettingsInput) (*request.Request, *resourcegroups.UpdateAccountSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAccountSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resourcegroups.UpdateAccountSettingsOutput)
+	return ret0, ret1
+}
+
+// UpdateAccountSettingsRequest indicates an expected call of UpdateAccountSettingsRequest
+func (mr *MockResourceGroupsAPIMockRecorder) UpdateAccountSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccountSettingsRequest", reflect.TypeOf((*MockResourceGroupsAPI)(nil).UpdateAccountSettingsRequest), arg0)
+}
+
+// UpdateAccountSettingsWithContext mocks base method
+func (m *MockResourceGroupsAPI) UpdateAccountSettingsWithContext(arg0 context.Context, arg1 *resourcegroups.UpdateAccountSettingsInput, arg2 ...request.Option) (*resourcegroups.UpdateAccountSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAccountSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*resourcegroups.UpdateAccountSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAccountSettingsWithContext indicates an expected call of UpdateAccountSettingsWithContext
+func (mr *MockResourceGroupsAPIMockRecorder) UpdateAccountSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccountSettingsWithContext", reflect.TypeOf((*MockResourceGroupsAPI)(nil).UpdateAccountSettingsWithContext), varargs...)
 }
 
 // UpdateGroup mocks base method
