@@ -1765,3 +1765,36 @@ func (mr *MockGroundStationAPIMockRecorder) UpdateMissionProfileWithContext(arg0
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMissionProfileWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).UpdateMissionProfileWithContext), varargs...)
 }
+
+// WaitUntilContactScheduled mocks base method
+func (m *MockGroundStationAPI) WaitUntilContactScheduled(arg0 *groundstation.DescribeContactInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilContactScheduled", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilContactScheduled indicates an expected call of WaitUntilContactScheduled
+func (mr *MockGroundStationAPIMockRecorder) WaitUntilContactScheduled(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilContactScheduled", reflect.TypeOf((*MockGroundStationAPI)(nil).WaitUntilContactScheduled), arg0)
+}
+
+// WaitUntilContactScheduledWithContext mocks base method
+func (m *MockGroundStationAPI) WaitUntilContactScheduledWithContext(arg0 context.Context, arg1 *groundstation.DescribeContactInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilContactScheduledWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilContactScheduledWithContext indicates an expected call of WaitUntilContactScheduledWithContext
+func (mr *MockGroundStationAPIMockRecorder) WaitUntilContactScheduledWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilContactScheduledWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).WaitUntilContactScheduledWithContext), varargs...)
+}

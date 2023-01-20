@@ -1018,6 +1018,56 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeDomainsWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainsWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeDomainsWithContext), varargs...)
 }
 
+// DescribeDryRunProgress mocks base method
+func (m *MockOpenSearchServiceAPI) DescribeDryRunProgress(arg0 *opensearchservice.DescribeDryRunProgressInput) (*opensearchservice.DescribeDryRunProgressOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDryRunProgress", arg0)
+	ret0, _ := ret[0].(*opensearchservice.DescribeDryRunProgressOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDryRunProgress indicates an expected call of DescribeDryRunProgress
+func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeDryRunProgress(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDryRunProgress", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeDryRunProgress), arg0)
+}
+
+// DescribeDryRunProgressRequest mocks base method
+func (m *MockOpenSearchServiceAPI) DescribeDryRunProgressRequest(arg0 *opensearchservice.DescribeDryRunProgressInput) (*request.Request, *opensearchservice.DescribeDryRunProgressOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDryRunProgressRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.DescribeDryRunProgressOutput)
+	return ret0, ret1
+}
+
+// DescribeDryRunProgressRequest indicates an expected call of DescribeDryRunProgressRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeDryRunProgressRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDryRunProgressRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeDryRunProgressRequest), arg0)
+}
+
+// DescribeDryRunProgressWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) DescribeDryRunProgressWithContext(arg0 context.Context, arg1 *opensearchservice.DescribeDryRunProgressInput, arg2 ...request.Option) (*opensearchservice.DescribeDryRunProgressOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDryRunProgressWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.DescribeDryRunProgressOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDryRunProgressWithContext indicates an expected call of DescribeDryRunProgressWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeDryRunProgressWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDryRunProgressWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeDryRunProgressWithContext), varargs...)
+}
+
 // DescribeInboundConnections mocks base method
 func (m *MockOpenSearchServiceAPI) DescribeInboundConnections(arg0 *opensearchservice.DescribeInboundConnectionsInput) (*opensearchservice.DescribeInboundConnectionsOutput, error) {
 	m.ctrl.T.Helper()
