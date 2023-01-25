@@ -634,6 +634,89 @@ func (mr *MockSsmSapAPIMockRecorder) ListDatabasesWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatabasesWithContext", reflect.TypeOf((*MockSsmSapAPI)(nil).ListDatabasesWithContext), varargs...)
 }
 
+// ListOperations mocks base method
+func (m *MockSsmSapAPI) ListOperations(arg0 *ssmsap.ListOperationsInput) (*ssmsap.ListOperationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOperations", arg0)
+	ret0, _ := ret[0].(*ssmsap.ListOperationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOperations indicates an expected call of ListOperations
+func (mr *MockSsmSapAPIMockRecorder) ListOperations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperations", reflect.TypeOf((*MockSsmSapAPI)(nil).ListOperations), arg0)
+}
+
+// ListOperationsPages mocks base method
+func (m *MockSsmSapAPI) ListOperationsPages(arg0 *ssmsap.ListOperationsInput, arg1 func(*ssmsap.ListOperationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOperationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOperationsPages indicates an expected call of ListOperationsPages
+func (mr *MockSsmSapAPIMockRecorder) ListOperationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperationsPages", reflect.TypeOf((*MockSsmSapAPI)(nil).ListOperationsPages), arg0, arg1)
+}
+
+// ListOperationsPagesWithContext mocks base method
+func (m *MockSsmSapAPI) ListOperationsPagesWithContext(arg0 context.Context, arg1 *ssmsap.ListOperationsInput, arg2 func(*ssmsap.ListOperationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOperationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOperationsPagesWithContext indicates an expected call of ListOperationsPagesWithContext
+func (mr *MockSsmSapAPIMockRecorder) ListOperationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperationsPagesWithContext", reflect.TypeOf((*MockSsmSapAPI)(nil).ListOperationsPagesWithContext), varargs...)
+}
+
+// ListOperationsRequest mocks base method
+func (m *MockSsmSapAPI) ListOperationsRequest(arg0 *ssmsap.ListOperationsInput) (*request.Request, *ssmsap.ListOperationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOperationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssmsap.ListOperationsOutput)
+	return ret0, ret1
+}
+
+// ListOperationsRequest indicates an expected call of ListOperationsRequest
+func (mr *MockSsmSapAPIMockRecorder) ListOperationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperationsRequest", reflect.TypeOf((*MockSsmSapAPI)(nil).ListOperationsRequest), arg0)
+}
+
+// ListOperationsWithContext mocks base method
+func (m *MockSsmSapAPI) ListOperationsWithContext(arg0 context.Context, arg1 *ssmsap.ListOperationsInput, arg2 ...request.Option) (*ssmsap.ListOperationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOperationsWithContext", varargs...)
+	ret0, _ := ret[0].(*ssmsap.ListOperationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOperationsWithContext indicates an expected call of ListOperationsWithContext
+func (mr *MockSsmSapAPIMockRecorder) ListOperationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOperationsWithContext", reflect.TypeOf((*MockSsmSapAPI)(nil).ListOperationsWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockSsmSapAPI) ListTagsForResource(arg0 *ssmsap.ListTagsForResourceInput) (*ssmsap.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
