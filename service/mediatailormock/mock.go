@@ -35,6 +35,56 @@ func (m *MockMediaTailorAPI) EXPECT() *MockMediaTailorAPIMockRecorder {
 	return m.recorder
 }
 
+// ConfigureLogsForChannel mocks base method
+func (m *MockMediaTailorAPI) ConfigureLogsForChannel(arg0 *mediatailor.ConfigureLogsForChannelInput) (*mediatailor.ConfigureLogsForChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ConfigureLogsForChannel", arg0)
+	ret0, _ := ret[0].(*mediatailor.ConfigureLogsForChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ConfigureLogsForChannel indicates an expected call of ConfigureLogsForChannel
+func (mr *MockMediaTailorAPIMockRecorder) ConfigureLogsForChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ConfigureLogsForChannel", reflect.TypeOf((*MockMediaTailorAPI)(nil).ConfigureLogsForChannel), arg0)
+}
+
+// ConfigureLogsForChannelRequest mocks base method
+func (m *MockMediaTailorAPI) ConfigureLogsForChannelRequest(arg0 *mediatailor.ConfigureLogsForChannelInput) (*request.Request, *mediatailor.ConfigureLogsForChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ConfigureLogsForChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.ConfigureLogsForChannelOutput)
+	return ret0, ret1
+}
+
+// ConfigureLogsForChannelRequest indicates an expected call of ConfigureLogsForChannelRequest
+func (mr *MockMediaTailorAPIMockRecorder) ConfigureLogsForChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ConfigureLogsForChannelRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).ConfigureLogsForChannelRequest), arg0)
+}
+
+// ConfigureLogsForChannelWithContext mocks base method
+func (m *MockMediaTailorAPI) ConfigureLogsForChannelWithContext(arg0 context.Context, arg1 *mediatailor.ConfigureLogsForChannelInput, arg2 ...request.Option) (*mediatailor.ConfigureLogsForChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ConfigureLogsForChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.ConfigureLogsForChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ConfigureLogsForChannelWithContext indicates an expected call of ConfigureLogsForChannelWithContext
+func (mr *MockMediaTailorAPIMockRecorder) ConfigureLogsForChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ConfigureLogsForChannelWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).ConfigureLogsForChannelWithContext), varargs...)
+}
+
 // ConfigureLogsForPlaybackConfiguration mocks base method
 func (m *MockMediaTailorAPI) ConfigureLogsForPlaybackConfiguration(arg0 *mediatailor.ConfigureLogsForPlaybackConfigurationInput) (*mediatailor.ConfigureLogsForPlaybackConfigurationOutput, error) {
 	m.ctrl.T.Helper()
