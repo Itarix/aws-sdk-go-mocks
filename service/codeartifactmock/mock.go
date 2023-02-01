@@ -335,6 +335,36 @@ func (mr *MockCodeArtifactAPIMockRecorder) DeleteDomainWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainWithContext", reflect.TypeOf((*MockCodeArtifactAPI)(nil).DeleteDomainWithContext), varargs...)
 }
 
+// DeletePackage mocks base method
+func (m *MockCodeArtifactAPI) DeletePackage(arg0 *codeartifact.DeletePackageInput) (*codeartifact.DeletePackageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePackage", arg0)
+	ret0, _ := ret[0].(*codeartifact.DeletePackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePackage indicates an expected call of DeletePackage
+func (mr *MockCodeArtifactAPIMockRecorder) DeletePackage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePackage", reflect.TypeOf((*MockCodeArtifactAPI)(nil).DeletePackage), arg0)
+}
+
+// DeletePackageRequest mocks base method
+func (m *MockCodeArtifactAPI) DeletePackageRequest(arg0 *codeartifact.DeletePackageInput) (*request.Request, *codeartifact.DeletePackageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePackageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codeartifact.DeletePackageOutput)
+	return ret0, ret1
+}
+
+// DeletePackageRequest indicates an expected call of DeletePackageRequest
+func (mr *MockCodeArtifactAPIMockRecorder) DeletePackageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePackageRequest", reflect.TypeOf((*MockCodeArtifactAPI)(nil).DeletePackageRequest), arg0)
+}
+
 // DeletePackageVersions mocks base method
 func (m *MockCodeArtifactAPI) DeletePackageVersions(arg0 *codeartifact.DeletePackageVersionsInput) (*codeartifact.DeletePackageVersionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +413,26 @@ func (mr *MockCodeArtifactAPIMockRecorder) DeletePackageVersionsWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePackageVersionsWithContext", reflect.TypeOf((*MockCodeArtifactAPI)(nil).DeletePackageVersionsWithContext), varargs...)
+}
+
+// DeletePackageWithContext mocks base method
+func (m *MockCodeArtifactAPI) DeletePackageWithContext(arg0 context.Context, arg1 *codeartifact.DeletePackageInput, arg2 ...request.Option) (*codeartifact.DeletePackageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePackageWithContext", varargs...)
+	ret0, _ := ret[0].(*codeartifact.DeletePackageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePackageWithContext indicates an expected call of DeletePackageWithContext
+func (mr *MockCodeArtifactAPIMockRecorder) DeletePackageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePackageWithContext", reflect.TypeOf((*MockCodeArtifactAPI)(nil).DeletePackageWithContext), varargs...)
 }
 
 // DeleteRepository mocks base method

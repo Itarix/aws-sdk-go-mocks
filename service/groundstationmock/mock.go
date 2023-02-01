@@ -585,6 +585,56 @@ func (mr *MockGroundStationAPIMockRecorder) DescribeEphemerisWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEphemerisWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).DescribeEphemerisWithContext), varargs...)
 }
 
+// GetAgentConfiguration mocks base method
+func (m *MockGroundStationAPI) GetAgentConfiguration(arg0 *groundstation.GetAgentConfigurationInput) (*groundstation.GetAgentConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAgentConfiguration", arg0)
+	ret0, _ := ret[0].(*groundstation.GetAgentConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAgentConfiguration indicates an expected call of GetAgentConfiguration
+func (mr *MockGroundStationAPIMockRecorder) GetAgentConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAgentConfiguration", reflect.TypeOf((*MockGroundStationAPI)(nil).GetAgentConfiguration), arg0)
+}
+
+// GetAgentConfigurationRequest mocks base method
+func (m *MockGroundStationAPI) GetAgentConfigurationRequest(arg0 *groundstation.GetAgentConfigurationInput) (*request.Request, *groundstation.GetAgentConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAgentConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*groundstation.GetAgentConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetAgentConfigurationRequest indicates an expected call of GetAgentConfigurationRequest
+func (mr *MockGroundStationAPIMockRecorder) GetAgentConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAgentConfigurationRequest", reflect.TypeOf((*MockGroundStationAPI)(nil).GetAgentConfigurationRequest), arg0)
+}
+
+// GetAgentConfigurationWithContext mocks base method
+func (m *MockGroundStationAPI) GetAgentConfigurationWithContext(arg0 context.Context, arg1 *groundstation.GetAgentConfigurationInput, arg2 ...request.Option) (*groundstation.GetAgentConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAgentConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*groundstation.GetAgentConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAgentConfigurationWithContext indicates an expected call of GetAgentConfigurationWithContext
+func (mr *MockGroundStationAPIMockRecorder) GetAgentConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAgentConfigurationWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).GetAgentConfigurationWithContext), varargs...)
+}
+
 // GetConfig mocks base method
 func (m *MockGroundStationAPI) GetConfig(arg0 *groundstation.GetConfigInput) (*groundstation.GetConfigOutput, error) {
 	m.ctrl.T.Helper()
@@ -1466,6 +1516,56 @@ func (mr *MockGroundStationAPIMockRecorder) ListTagsForResourceWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// RegisterAgent mocks base method
+func (m *MockGroundStationAPI) RegisterAgent(arg0 *groundstation.RegisterAgentInput) (*groundstation.RegisterAgentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterAgent", arg0)
+	ret0, _ := ret[0].(*groundstation.RegisterAgentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterAgent indicates an expected call of RegisterAgent
+func (mr *MockGroundStationAPIMockRecorder) RegisterAgent(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterAgent", reflect.TypeOf((*MockGroundStationAPI)(nil).RegisterAgent), arg0)
+}
+
+// RegisterAgentRequest mocks base method
+func (m *MockGroundStationAPI) RegisterAgentRequest(arg0 *groundstation.RegisterAgentInput) (*request.Request, *groundstation.RegisterAgentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterAgentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*groundstation.RegisterAgentOutput)
+	return ret0, ret1
+}
+
+// RegisterAgentRequest indicates an expected call of RegisterAgentRequest
+func (mr *MockGroundStationAPIMockRecorder) RegisterAgentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterAgentRequest", reflect.TypeOf((*MockGroundStationAPI)(nil).RegisterAgentRequest), arg0)
+}
+
+// RegisterAgentWithContext mocks base method
+func (m *MockGroundStationAPI) RegisterAgentWithContext(arg0 context.Context, arg1 *groundstation.RegisterAgentInput, arg2 ...request.Option) (*groundstation.RegisterAgentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RegisterAgentWithContext", varargs...)
+	ret0, _ := ret[0].(*groundstation.RegisterAgentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterAgentWithContext indicates an expected call of RegisterAgentWithContext
+func (mr *MockGroundStationAPIMockRecorder) RegisterAgentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterAgentWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).RegisterAgentWithContext), varargs...)
+}
+
 // ReserveContact mocks base method
 func (m *MockGroundStationAPI) ReserveContact(arg0 *groundstation.ReserveContactInput) (*groundstation.ReserveContactOutput, error) {
 	m.ctrl.T.Helper()
@@ -1614,6 +1714,56 @@ func (mr *MockGroundStationAPIMockRecorder) UntagResourceWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateAgentStatus mocks base method
+func (m *MockGroundStationAPI) UpdateAgentStatus(arg0 *groundstation.UpdateAgentStatusInput) (*groundstation.UpdateAgentStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAgentStatus", arg0)
+	ret0, _ := ret[0].(*groundstation.UpdateAgentStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAgentStatus indicates an expected call of UpdateAgentStatus
+func (mr *MockGroundStationAPIMockRecorder) UpdateAgentStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAgentStatus", reflect.TypeOf((*MockGroundStationAPI)(nil).UpdateAgentStatus), arg0)
+}
+
+// UpdateAgentStatusRequest mocks base method
+func (m *MockGroundStationAPI) UpdateAgentStatusRequest(arg0 *groundstation.UpdateAgentStatusInput) (*request.Request, *groundstation.UpdateAgentStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAgentStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*groundstation.UpdateAgentStatusOutput)
+	return ret0, ret1
+}
+
+// UpdateAgentStatusRequest indicates an expected call of UpdateAgentStatusRequest
+func (mr *MockGroundStationAPIMockRecorder) UpdateAgentStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAgentStatusRequest", reflect.TypeOf((*MockGroundStationAPI)(nil).UpdateAgentStatusRequest), arg0)
+}
+
+// UpdateAgentStatusWithContext mocks base method
+func (m *MockGroundStationAPI) UpdateAgentStatusWithContext(arg0 context.Context, arg1 *groundstation.UpdateAgentStatusInput, arg2 ...request.Option) (*groundstation.UpdateAgentStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAgentStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*groundstation.UpdateAgentStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAgentStatusWithContext indicates an expected call of UpdateAgentStatusWithContext
+func (mr *MockGroundStationAPIMockRecorder) UpdateAgentStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAgentStatusWithContext", reflect.TypeOf((*MockGroundStationAPI)(nil).UpdateAgentStatusWithContext), varargs...)
 }
 
 // UpdateConfig mocks base method

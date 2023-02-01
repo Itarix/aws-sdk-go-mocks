@@ -135,6 +135,56 @@ func (mr *MockCloudTrailAPIMockRecorder) CancelQueryWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelQueryWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).CancelQueryWithContext), varargs...)
 }
 
+// CreateChannel mocks base method
+func (m *MockCloudTrailAPI) CreateChannel(arg0 *cloudtrail.CreateChannelInput) (*cloudtrail.CreateChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateChannel", arg0)
+	ret0, _ := ret[0].(*cloudtrail.CreateChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateChannel indicates an expected call of CreateChannel
+func (mr *MockCloudTrailAPIMockRecorder) CreateChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannel", reflect.TypeOf((*MockCloudTrailAPI)(nil).CreateChannel), arg0)
+}
+
+// CreateChannelRequest mocks base method
+func (m *MockCloudTrailAPI) CreateChannelRequest(arg0 *cloudtrail.CreateChannelInput) (*request.Request, *cloudtrail.CreateChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudtrail.CreateChannelOutput)
+	return ret0, ret1
+}
+
+// CreateChannelRequest indicates an expected call of CreateChannelRequest
+func (mr *MockCloudTrailAPIMockRecorder) CreateChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelRequest", reflect.TypeOf((*MockCloudTrailAPI)(nil).CreateChannelRequest), arg0)
+}
+
+// CreateChannelWithContext mocks base method
+func (m *MockCloudTrailAPI) CreateChannelWithContext(arg0 context.Context, arg1 *cloudtrail.CreateChannelInput, arg2 ...request.Option) (*cloudtrail.CreateChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudtrail.CreateChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateChannelWithContext indicates an expected call of CreateChannelWithContext
+func (mr *MockCloudTrailAPIMockRecorder) CreateChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateChannelWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).CreateChannelWithContext), varargs...)
+}
+
 // CreateEventDataStore mocks base method
 func (m *MockCloudTrailAPI) CreateEventDataStore(arg0 *cloudtrail.CreateEventDataStoreInput) (*cloudtrail.CreateEventDataStoreOutput, error) {
 	m.ctrl.T.Helper()
@@ -235,6 +285,56 @@ func (mr *MockCloudTrailAPIMockRecorder) CreateTrailWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTrailWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).CreateTrailWithContext), varargs...)
 }
 
+// DeleteChannel mocks base method
+func (m *MockCloudTrailAPI) DeleteChannel(arg0 *cloudtrail.DeleteChannelInput) (*cloudtrail.DeleteChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannel", arg0)
+	ret0, _ := ret[0].(*cloudtrail.DeleteChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannel indicates an expected call of DeleteChannel
+func (mr *MockCloudTrailAPIMockRecorder) DeleteChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannel", reflect.TypeOf((*MockCloudTrailAPI)(nil).DeleteChannel), arg0)
+}
+
+// DeleteChannelRequest mocks base method
+func (m *MockCloudTrailAPI) DeleteChannelRequest(arg0 *cloudtrail.DeleteChannelInput) (*request.Request, *cloudtrail.DeleteChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudtrail.DeleteChannelOutput)
+	return ret0, ret1
+}
+
+// DeleteChannelRequest indicates an expected call of DeleteChannelRequest
+func (mr *MockCloudTrailAPIMockRecorder) DeleteChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelRequest", reflect.TypeOf((*MockCloudTrailAPI)(nil).DeleteChannelRequest), arg0)
+}
+
+// DeleteChannelWithContext mocks base method
+func (m *MockCloudTrailAPI) DeleteChannelWithContext(arg0 context.Context, arg1 *cloudtrail.DeleteChannelInput, arg2 ...request.Option) (*cloudtrail.DeleteChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudtrail.DeleteChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteChannelWithContext indicates an expected call of DeleteChannelWithContext
+func (mr *MockCloudTrailAPIMockRecorder) DeleteChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).DeleteChannelWithContext), varargs...)
+}
+
 // DeleteEventDataStore mocks base method
 func (m *MockCloudTrailAPI) DeleteEventDataStore(arg0 *cloudtrail.DeleteEventDataStoreInput) (*cloudtrail.DeleteEventDataStoreOutput, error) {
 	m.ctrl.T.Helper()
@@ -283,6 +383,56 @@ func (mr *MockCloudTrailAPIMockRecorder) DeleteEventDataStoreWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventDataStoreWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).DeleteEventDataStoreWithContext), varargs...)
+}
+
+// DeleteResourcePolicy mocks base method
+func (m *MockCloudTrailAPI) DeleteResourcePolicy(arg0 *cloudtrail.DeleteResourcePolicyInput) (*cloudtrail.DeleteResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourcePolicy", arg0)
+	ret0, _ := ret[0].(*cloudtrail.DeleteResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicy indicates an expected call of DeleteResourcePolicy
+func (mr *MockCloudTrailAPIMockRecorder) DeleteResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicy", reflect.TypeOf((*MockCloudTrailAPI)(nil).DeleteResourcePolicy), arg0)
+}
+
+// DeleteResourcePolicyRequest mocks base method
+func (m *MockCloudTrailAPI) DeleteResourcePolicyRequest(arg0 *cloudtrail.DeleteResourcePolicyInput) (*request.Request, *cloudtrail.DeleteResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudtrail.DeleteResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicyRequest indicates an expected call of DeleteResourcePolicyRequest
+func (mr *MockCloudTrailAPIMockRecorder) DeleteResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyRequest", reflect.TypeOf((*MockCloudTrailAPI)(nil).DeleteResourcePolicyRequest), arg0)
+}
+
+// DeleteResourcePolicyWithContext mocks base method
+func (m *MockCloudTrailAPI) DeleteResourcePolicyWithContext(arg0 context.Context, arg1 *cloudtrail.DeleteResourcePolicyInput, arg2 ...request.Option) (*cloudtrail.DeleteResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudtrail.DeleteResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicyWithContext indicates an expected call of DeleteResourcePolicyWithContext
+func (mr *MockCloudTrailAPIMockRecorder) DeleteResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).DeleteResourcePolicyWithContext), varargs...)
 }
 
 // DeleteTrail mocks base method
@@ -816,6 +966,56 @@ func (mr *MockCloudTrailAPIMockRecorder) GetQueryResultsWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetQueryResultsWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).GetQueryResultsWithContext), varargs...)
+}
+
+// GetResourcePolicy mocks base method
+func (m *MockCloudTrailAPI) GetResourcePolicy(arg0 *cloudtrail.GetResourcePolicyInput) (*cloudtrail.GetResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcePolicy", arg0)
+	ret0, _ := ret[0].(*cloudtrail.GetResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcePolicy indicates an expected call of GetResourcePolicy
+func (mr *MockCloudTrailAPIMockRecorder) GetResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicy", reflect.TypeOf((*MockCloudTrailAPI)(nil).GetResourcePolicy), arg0)
+}
+
+// GetResourcePolicyRequest mocks base method
+func (m *MockCloudTrailAPI) GetResourcePolicyRequest(arg0 *cloudtrail.GetResourcePolicyInput) (*request.Request, *cloudtrail.GetResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudtrail.GetResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// GetResourcePolicyRequest indicates an expected call of GetResourcePolicyRequest
+func (mr *MockCloudTrailAPIMockRecorder) GetResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicyRequest", reflect.TypeOf((*MockCloudTrailAPI)(nil).GetResourcePolicyRequest), arg0)
+}
+
+// GetResourcePolicyWithContext mocks base method
+func (m *MockCloudTrailAPI) GetResourcePolicyWithContext(arg0 context.Context, arg1 *cloudtrail.GetResourcePolicyInput, arg2 ...request.Option) (*cloudtrail.GetResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudtrail.GetResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcePolicyWithContext indicates an expected call of GetResourcePolicyWithContext
+func (mr *MockCloudTrailAPIMockRecorder) GetResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicyWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).GetResourcePolicyWithContext), varargs...)
 }
 
 // GetTrail mocks base method
@@ -1765,6 +1965,56 @@ func (mr *MockCloudTrailAPIMockRecorder) PutInsightSelectorsWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutInsightSelectorsWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).PutInsightSelectorsWithContext), varargs...)
 }
 
+// PutResourcePolicy mocks base method
+func (m *MockCloudTrailAPI) PutResourcePolicy(arg0 *cloudtrail.PutResourcePolicyInput) (*cloudtrail.PutResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourcePolicy", arg0)
+	ret0, _ := ret[0].(*cloudtrail.PutResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourcePolicy indicates an expected call of PutResourcePolicy
+func (mr *MockCloudTrailAPIMockRecorder) PutResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicy", reflect.TypeOf((*MockCloudTrailAPI)(nil).PutResourcePolicy), arg0)
+}
+
+// PutResourcePolicyRequest mocks base method
+func (m *MockCloudTrailAPI) PutResourcePolicyRequest(arg0 *cloudtrail.PutResourcePolicyInput) (*request.Request, *cloudtrail.PutResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudtrail.PutResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// PutResourcePolicyRequest indicates an expected call of PutResourcePolicyRequest
+func (mr *MockCloudTrailAPIMockRecorder) PutResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyRequest", reflect.TypeOf((*MockCloudTrailAPI)(nil).PutResourcePolicyRequest), arg0)
+}
+
+// PutResourcePolicyWithContext mocks base method
+func (m *MockCloudTrailAPI) PutResourcePolicyWithContext(arg0 context.Context, arg1 *cloudtrail.PutResourcePolicyInput, arg2 ...request.Option) (*cloudtrail.PutResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudtrail.PutResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourcePolicyWithContext indicates an expected call of PutResourcePolicyWithContext
+func (mr *MockCloudTrailAPIMockRecorder) PutResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).PutResourcePolicyWithContext), varargs...)
+}
+
 // RegisterOrganizationDelegatedAdmin mocks base method
 func (m *MockCloudTrailAPI) RegisterOrganizationDelegatedAdmin(arg0 *cloudtrail.RegisterOrganizationDelegatedAdminInput) (*cloudtrail.RegisterOrganizationDelegatedAdminOutput, error) {
 	m.ctrl.T.Helper()
@@ -2163,6 +2413,56 @@ func (mr *MockCloudTrailAPIMockRecorder) StopLoggingWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopLoggingWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).StopLoggingWithContext), varargs...)
+}
+
+// UpdateChannel mocks base method
+func (m *MockCloudTrailAPI) UpdateChannel(arg0 *cloudtrail.UpdateChannelInput) (*cloudtrail.UpdateChannelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateChannel", arg0)
+	ret0, _ := ret[0].(*cloudtrail.UpdateChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateChannel indicates an expected call of UpdateChannel
+func (mr *MockCloudTrailAPIMockRecorder) UpdateChannel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannel", reflect.TypeOf((*MockCloudTrailAPI)(nil).UpdateChannel), arg0)
+}
+
+// UpdateChannelRequest mocks base method
+func (m *MockCloudTrailAPI) UpdateChannelRequest(arg0 *cloudtrail.UpdateChannelInput) (*request.Request, *cloudtrail.UpdateChannelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateChannelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudtrail.UpdateChannelOutput)
+	return ret0, ret1
+}
+
+// UpdateChannelRequest indicates an expected call of UpdateChannelRequest
+func (mr *MockCloudTrailAPIMockRecorder) UpdateChannelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelRequest", reflect.TypeOf((*MockCloudTrailAPI)(nil).UpdateChannelRequest), arg0)
+}
+
+// UpdateChannelWithContext mocks base method
+func (m *MockCloudTrailAPI) UpdateChannelWithContext(arg0 context.Context, arg1 *cloudtrail.UpdateChannelInput, arg2 ...request.Option) (*cloudtrail.UpdateChannelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateChannelWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudtrail.UpdateChannelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateChannelWithContext indicates an expected call of UpdateChannelWithContext
+func (mr *MockCloudTrailAPIMockRecorder) UpdateChannelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateChannelWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).UpdateChannelWithContext), varargs...)
 }
 
 // UpdateEventDataStore mocks base method
