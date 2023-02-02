@@ -2349,6 +2349,56 @@ func (mr *MockMediaTailorAPIMockRecorder) UpdateLiveSourceWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLiveSourceWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).UpdateLiveSourceWithContext), varargs...)
 }
 
+// UpdateProgram mocks base method
+func (m *MockMediaTailorAPI) UpdateProgram(arg0 *mediatailor.UpdateProgramInput) (*mediatailor.UpdateProgramOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProgram", arg0)
+	ret0, _ := ret[0].(*mediatailor.UpdateProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProgram indicates an expected call of UpdateProgram
+func (mr *MockMediaTailorAPIMockRecorder) UpdateProgram(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProgram", reflect.TypeOf((*MockMediaTailorAPI)(nil).UpdateProgram), arg0)
+}
+
+// UpdateProgramRequest mocks base method
+func (m *MockMediaTailorAPI) UpdateProgramRequest(arg0 *mediatailor.UpdateProgramInput) (*request.Request, *mediatailor.UpdateProgramOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProgramRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediatailor.UpdateProgramOutput)
+	return ret0, ret1
+}
+
+// UpdateProgramRequest indicates an expected call of UpdateProgramRequest
+func (mr *MockMediaTailorAPIMockRecorder) UpdateProgramRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProgramRequest", reflect.TypeOf((*MockMediaTailorAPI)(nil).UpdateProgramRequest), arg0)
+}
+
+// UpdateProgramWithContext mocks base method
+func (m *MockMediaTailorAPI) UpdateProgramWithContext(arg0 context.Context, arg1 *mediatailor.UpdateProgramInput, arg2 ...request.Option) (*mediatailor.UpdateProgramOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateProgramWithContext", varargs...)
+	ret0, _ := ret[0].(*mediatailor.UpdateProgramOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProgramWithContext indicates an expected call of UpdateProgramWithContext
+func (mr *MockMediaTailorAPIMockRecorder) UpdateProgramWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProgramWithContext", reflect.TypeOf((*MockMediaTailorAPI)(nil).UpdateProgramWithContext), varargs...)
+}
+
 // UpdateSourceLocation mocks base method
 func (m *MockMediaTailorAPI) UpdateSourceLocation(arg0 *mediatailor.UpdateSourceLocationInput) (*mediatailor.UpdateSourceLocationOutput, error) {
 	m.ctrl.T.Helper()
