@@ -1685,6 +1685,56 @@ func (mr *MockProtonAPIMockRecorder) GetRepositoryWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRepositoryWithContext", reflect.TypeOf((*MockProtonAPI)(nil).GetRepositoryWithContext), varargs...)
 }
 
+// GetResourcesSummary mocks base method
+func (m *MockProtonAPI) GetResourcesSummary(arg0 *proton.GetResourcesSummaryInput) (*proton.GetResourcesSummaryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcesSummary", arg0)
+	ret0, _ := ret[0].(*proton.GetResourcesSummaryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcesSummary indicates an expected call of GetResourcesSummary
+func (mr *MockProtonAPIMockRecorder) GetResourcesSummary(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcesSummary", reflect.TypeOf((*MockProtonAPI)(nil).GetResourcesSummary), arg0)
+}
+
+// GetResourcesSummaryRequest mocks base method
+func (m *MockProtonAPI) GetResourcesSummaryRequest(arg0 *proton.GetResourcesSummaryInput) (*request.Request, *proton.GetResourcesSummaryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcesSummaryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*proton.GetResourcesSummaryOutput)
+	return ret0, ret1
+}
+
+// GetResourcesSummaryRequest indicates an expected call of GetResourcesSummaryRequest
+func (mr *MockProtonAPIMockRecorder) GetResourcesSummaryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcesSummaryRequest", reflect.TypeOf((*MockProtonAPI)(nil).GetResourcesSummaryRequest), arg0)
+}
+
+// GetResourcesSummaryWithContext mocks base method
+func (m *MockProtonAPI) GetResourcesSummaryWithContext(arg0 context.Context, arg1 *proton.GetResourcesSummaryInput, arg2 ...request.Option) (*proton.GetResourcesSummaryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResourcesSummaryWithContext", varargs...)
+	ret0, _ := ret[0].(*proton.GetResourcesSummaryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcesSummaryWithContext indicates an expected call of GetResourcesSummaryWithContext
+func (mr *MockProtonAPIMockRecorder) GetResourcesSummaryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcesSummaryWithContext", reflect.TypeOf((*MockProtonAPI)(nil).GetResourcesSummaryWithContext), varargs...)
+}
+
 // GetService mocks base method
 func (m *MockProtonAPI) GetService(arg0 *proton.GetServiceInput) (*proton.GetServiceOutput, error) {
 	m.ctrl.T.Helper()
