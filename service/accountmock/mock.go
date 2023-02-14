@@ -85,6 +85,106 @@ func (mr *MockAccountAPIMockRecorder) DeleteAlternateContactWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAlternateContactWithContext", reflect.TypeOf((*MockAccountAPI)(nil).DeleteAlternateContactWithContext), varargs...)
 }
 
+// DisableRegion mocks base method
+func (m *MockAccountAPI) DisableRegion(arg0 *account.DisableRegionInput) (*account.DisableRegionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableRegion", arg0)
+	ret0, _ := ret[0].(*account.DisableRegionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableRegion indicates an expected call of DisableRegion
+func (mr *MockAccountAPIMockRecorder) DisableRegion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableRegion", reflect.TypeOf((*MockAccountAPI)(nil).DisableRegion), arg0)
+}
+
+// DisableRegionRequest mocks base method
+func (m *MockAccountAPI) DisableRegionRequest(arg0 *account.DisableRegionInput) (*request.Request, *account.DisableRegionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisableRegionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*account.DisableRegionOutput)
+	return ret0, ret1
+}
+
+// DisableRegionRequest indicates an expected call of DisableRegionRequest
+func (mr *MockAccountAPIMockRecorder) DisableRegionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableRegionRequest", reflect.TypeOf((*MockAccountAPI)(nil).DisableRegionRequest), arg0)
+}
+
+// DisableRegionWithContext mocks base method
+func (m *MockAccountAPI) DisableRegionWithContext(arg0 context.Context, arg1 *account.DisableRegionInput, arg2 ...request.Option) (*account.DisableRegionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisableRegionWithContext", varargs...)
+	ret0, _ := ret[0].(*account.DisableRegionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisableRegionWithContext indicates an expected call of DisableRegionWithContext
+func (mr *MockAccountAPIMockRecorder) DisableRegionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisableRegionWithContext", reflect.TypeOf((*MockAccountAPI)(nil).DisableRegionWithContext), varargs...)
+}
+
+// EnableRegion mocks base method
+func (m *MockAccountAPI) EnableRegion(arg0 *account.EnableRegionInput) (*account.EnableRegionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableRegion", arg0)
+	ret0, _ := ret[0].(*account.EnableRegionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableRegion indicates an expected call of EnableRegion
+func (mr *MockAccountAPIMockRecorder) EnableRegion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableRegion", reflect.TypeOf((*MockAccountAPI)(nil).EnableRegion), arg0)
+}
+
+// EnableRegionRequest mocks base method
+func (m *MockAccountAPI) EnableRegionRequest(arg0 *account.EnableRegionInput) (*request.Request, *account.EnableRegionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "EnableRegionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*account.EnableRegionOutput)
+	return ret0, ret1
+}
+
+// EnableRegionRequest indicates an expected call of EnableRegionRequest
+func (mr *MockAccountAPIMockRecorder) EnableRegionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableRegionRequest", reflect.TypeOf((*MockAccountAPI)(nil).EnableRegionRequest), arg0)
+}
+
+// EnableRegionWithContext mocks base method
+func (m *MockAccountAPI) EnableRegionWithContext(arg0 context.Context, arg1 *account.EnableRegionInput, arg2 ...request.Option) (*account.EnableRegionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "EnableRegionWithContext", varargs...)
+	ret0, _ := ret[0].(*account.EnableRegionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// EnableRegionWithContext indicates an expected call of EnableRegionWithContext
+func (mr *MockAccountAPIMockRecorder) EnableRegionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "EnableRegionWithContext", reflect.TypeOf((*MockAccountAPI)(nil).EnableRegionWithContext), varargs...)
+}
+
 // GetAlternateContact mocks base method
 func (m *MockAccountAPI) GetAlternateContact(arg0 *account.GetAlternateContactInput) (*account.GetAlternateContactOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +283,139 @@ func (mr *MockAccountAPIMockRecorder) GetContactInformationWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactInformationWithContext", reflect.TypeOf((*MockAccountAPI)(nil).GetContactInformationWithContext), varargs...)
+}
+
+// GetRegionOptStatus mocks base method
+func (m *MockAccountAPI) GetRegionOptStatus(arg0 *account.GetRegionOptStatusInput) (*account.GetRegionOptStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRegionOptStatus", arg0)
+	ret0, _ := ret[0].(*account.GetRegionOptStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRegionOptStatus indicates an expected call of GetRegionOptStatus
+func (mr *MockAccountAPIMockRecorder) GetRegionOptStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegionOptStatus", reflect.TypeOf((*MockAccountAPI)(nil).GetRegionOptStatus), arg0)
+}
+
+// GetRegionOptStatusRequest mocks base method
+func (m *MockAccountAPI) GetRegionOptStatusRequest(arg0 *account.GetRegionOptStatusInput) (*request.Request, *account.GetRegionOptStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRegionOptStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*account.GetRegionOptStatusOutput)
+	return ret0, ret1
+}
+
+// GetRegionOptStatusRequest indicates an expected call of GetRegionOptStatusRequest
+func (mr *MockAccountAPIMockRecorder) GetRegionOptStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegionOptStatusRequest", reflect.TypeOf((*MockAccountAPI)(nil).GetRegionOptStatusRequest), arg0)
+}
+
+// GetRegionOptStatusWithContext mocks base method
+func (m *MockAccountAPI) GetRegionOptStatusWithContext(arg0 context.Context, arg1 *account.GetRegionOptStatusInput, arg2 ...request.Option) (*account.GetRegionOptStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRegionOptStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*account.GetRegionOptStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRegionOptStatusWithContext indicates an expected call of GetRegionOptStatusWithContext
+func (mr *MockAccountAPIMockRecorder) GetRegionOptStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegionOptStatusWithContext", reflect.TypeOf((*MockAccountAPI)(nil).GetRegionOptStatusWithContext), varargs...)
+}
+
+// ListRegions mocks base method
+func (m *MockAccountAPI) ListRegions(arg0 *account.ListRegionsInput) (*account.ListRegionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRegions", arg0)
+	ret0, _ := ret[0].(*account.ListRegionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRegions indicates an expected call of ListRegions
+func (mr *MockAccountAPIMockRecorder) ListRegions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegions", reflect.TypeOf((*MockAccountAPI)(nil).ListRegions), arg0)
+}
+
+// ListRegionsPages mocks base method
+func (m *MockAccountAPI) ListRegionsPages(arg0 *account.ListRegionsInput, arg1 func(*account.ListRegionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRegionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRegionsPages indicates an expected call of ListRegionsPages
+func (mr *MockAccountAPIMockRecorder) ListRegionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegionsPages", reflect.TypeOf((*MockAccountAPI)(nil).ListRegionsPages), arg0, arg1)
+}
+
+// ListRegionsPagesWithContext mocks base method
+func (m *MockAccountAPI) ListRegionsPagesWithContext(arg0 context.Context, arg1 *account.ListRegionsInput, arg2 func(*account.ListRegionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRegionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRegionsPagesWithContext indicates an expected call of ListRegionsPagesWithContext
+func (mr *MockAccountAPIMockRecorder) ListRegionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegionsPagesWithContext", reflect.TypeOf((*MockAccountAPI)(nil).ListRegionsPagesWithContext), varargs...)
+}
+
+// ListRegionsRequest mocks base method
+func (m *MockAccountAPI) ListRegionsRequest(arg0 *account.ListRegionsInput) (*request.Request, *account.ListRegionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRegionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*account.ListRegionsOutput)
+	return ret0, ret1
+}
+
+// ListRegionsRequest indicates an expected call of ListRegionsRequest
+func (mr *MockAccountAPIMockRecorder) ListRegionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegionsRequest", reflect.TypeOf((*MockAccountAPI)(nil).ListRegionsRequest), arg0)
+}
+
+// ListRegionsWithContext mocks base method
+func (m *MockAccountAPI) ListRegionsWithContext(arg0 context.Context, arg1 *account.ListRegionsInput, arg2 ...request.Option) (*account.ListRegionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRegionsWithContext", varargs...)
+	ret0, _ := ret[0].(*account.ListRegionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRegionsWithContext indicates an expected call of ListRegionsWithContext
+func (mr *MockAccountAPIMockRecorder) ListRegionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegionsWithContext", reflect.TypeOf((*MockAccountAPI)(nil).ListRegionsWithContext), varargs...)
 }
 
 // PutAlternateContact mocks base method

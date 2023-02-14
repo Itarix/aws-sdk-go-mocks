@@ -1283,6 +1283,56 @@ func (mr *MockSnowballAPIMockRecorder) ListLongTermPricingWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLongTermPricingWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).ListLongTermPricingWithContext), varargs...)
 }
 
+// ListServiceVersions mocks base method
+func (m *MockSnowballAPI) ListServiceVersions(arg0 *snowball.ListServiceVersionsInput) (*snowball.ListServiceVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServiceVersions", arg0)
+	ret0, _ := ret[0].(*snowball.ListServiceVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServiceVersions indicates an expected call of ListServiceVersions
+func (mr *MockSnowballAPIMockRecorder) ListServiceVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceVersions", reflect.TypeOf((*MockSnowballAPI)(nil).ListServiceVersions), arg0)
+}
+
+// ListServiceVersionsRequest mocks base method
+func (m *MockSnowballAPI) ListServiceVersionsRequest(arg0 *snowball.ListServiceVersionsInput) (*request.Request, *snowball.ListServiceVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServiceVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*snowball.ListServiceVersionsOutput)
+	return ret0, ret1
+}
+
+// ListServiceVersionsRequest indicates an expected call of ListServiceVersionsRequest
+func (mr *MockSnowballAPIMockRecorder) ListServiceVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceVersionsRequest", reflect.TypeOf((*MockSnowballAPI)(nil).ListServiceVersionsRequest), arg0)
+}
+
+// ListServiceVersionsWithContext mocks base method
+func (m *MockSnowballAPI) ListServiceVersionsWithContext(arg0 context.Context, arg1 *snowball.ListServiceVersionsInput, arg2 ...request.Option) (*snowball.ListServiceVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServiceVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*snowball.ListServiceVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServiceVersionsWithContext indicates an expected call of ListServiceVersionsWithContext
+func (mr *MockSnowballAPIMockRecorder) ListServiceVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServiceVersionsWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).ListServiceVersionsWithContext), varargs...)
+}
+
 // UpdateCluster mocks base method
 func (m *MockSnowballAPI) UpdateCluster(arg0 *snowball.UpdateClusterInput) (*snowball.UpdateClusterOutput, error) {
 	m.ctrl.T.Helper()
