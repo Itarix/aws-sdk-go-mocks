@@ -385,6 +385,56 @@ func (mr *MockFraudDetectorAPIMockRecorder) CreateDetectorVersionWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDetectorVersionWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).CreateDetectorVersionWithContext), varargs...)
 }
 
+// CreateList mocks base method
+func (m *MockFraudDetectorAPI) CreateList(arg0 *frauddetector.CreateListInput) (*frauddetector.CreateListOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateList", arg0)
+	ret0, _ := ret[0].(*frauddetector.CreateListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateList indicates an expected call of CreateList
+func (mr *MockFraudDetectorAPIMockRecorder) CreateList(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateList", reflect.TypeOf((*MockFraudDetectorAPI)(nil).CreateList), arg0)
+}
+
+// CreateListRequest mocks base method
+func (m *MockFraudDetectorAPI) CreateListRequest(arg0 *frauddetector.CreateListInput) (*request.Request, *frauddetector.CreateListOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateListRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.CreateListOutput)
+	return ret0, ret1
+}
+
+// CreateListRequest indicates an expected call of CreateListRequest
+func (mr *MockFraudDetectorAPIMockRecorder) CreateListRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateListRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).CreateListRequest), arg0)
+}
+
+// CreateListWithContext mocks base method
+func (m *MockFraudDetectorAPI) CreateListWithContext(arg0 context.Context, arg1 *frauddetector.CreateListInput, arg2 ...request.Option) (*frauddetector.CreateListOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateListWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.CreateListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateListWithContext indicates an expected call of CreateListWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) CreateListWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateListWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).CreateListWithContext), varargs...)
+}
+
 // CreateModel mocks base method
 func (m *MockFraudDetectorAPI) CreateModel(arg0 *frauddetector.CreateModelInput) (*frauddetector.CreateModelOutput, error) {
 	m.ctrl.T.Helper()
@@ -1083,6 +1133,56 @@ func (mr *MockFraudDetectorAPIMockRecorder) DeleteLabelWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLabelWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteLabelWithContext), varargs...)
+}
+
+// DeleteList mocks base method
+func (m *MockFraudDetectorAPI) DeleteList(arg0 *frauddetector.DeleteListInput) (*frauddetector.DeleteListOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteList", arg0)
+	ret0, _ := ret[0].(*frauddetector.DeleteListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteList indicates an expected call of DeleteList
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteList(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteList", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteList), arg0)
+}
+
+// DeleteListRequest mocks base method
+func (m *MockFraudDetectorAPI) DeleteListRequest(arg0 *frauddetector.DeleteListInput) (*request.Request, *frauddetector.DeleteListOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteListRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.DeleteListOutput)
+	return ret0, ret1
+}
+
+// DeleteListRequest indicates an expected call of DeleteListRequest
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteListRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteListRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteListRequest), arg0)
+}
+
+// DeleteListWithContext mocks base method
+func (m *MockFraudDetectorAPI) DeleteListWithContext(arg0 context.Context, arg1 *frauddetector.DeleteListInput, arg2 ...request.Option) (*frauddetector.DeleteListOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteListWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.DeleteListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteListWithContext indicates an expected call of DeleteListWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) DeleteListWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteListWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).DeleteListWithContext), varargs...)
 }
 
 // DeleteModel mocks base method
@@ -2349,6 +2449,172 @@ func (mr *MockFraudDetectorAPIMockRecorder) GetLabelsWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLabelsWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetLabelsWithContext), varargs...)
 }
 
+// GetListElements mocks base method
+func (m *MockFraudDetectorAPI) GetListElements(arg0 *frauddetector.GetListElementsInput) (*frauddetector.GetListElementsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetListElements", arg0)
+	ret0, _ := ret[0].(*frauddetector.GetListElementsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetListElements indicates an expected call of GetListElements
+func (mr *MockFraudDetectorAPIMockRecorder) GetListElements(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetListElements", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetListElements), arg0)
+}
+
+// GetListElementsPages mocks base method
+func (m *MockFraudDetectorAPI) GetListElementsPages(arg0 *frauddetector.GetListElementsInput, arg1 func(*frauddetector.GetListElementsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetListElementsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetListElementsPages indicates an expected call of GetListElementsPages
+func (mr *MockFraudDetectorAPIMockRecorder) GetListElementsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetListElementsPages", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetListElementsPages), arg0, arg1)
+}
+
+// GetListElementsPagesWithContext mocks base method
+func (m *MockFraudDetectorAPI) GetListElementsPagesWithContext(arg0 context.Context, arg1 *frauddetector.GetListElementsInput, arg2 func(*frauddetector.GetListElementsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetListElementsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetListElementsPagesWithContext indicates an expected call of GetListElementsPagesWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) GetListElementsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetListElementsPagesWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetListElementsPagesWithContext), varargs...)
+}
+
+// GetListElementsRequest mocks base method
+func (m *MockFraudDetectorAPI) GetListElementsRequest(arg0 *frauddetector.GetListElementsInput) (*request.Request, *frauddetector.GetListElementsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetListElementsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.GetListElementsOutput)
+	return ret0, ret1
+}
+
+// GetListElementsRequest indicates an expected call of GetListElementsRequest
+func (mr *MockFraudDetectorAPIMockRecorder) GetListElementsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetListElementsRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetListElementsRequest), arg0)
+}
+
+// GetListElementsWithContext mocks base method
+func (m *MockFraudDetectorAPI) GetListElementsWithContext(arg0 context.Context, arg1 *frauddetector.GetListElementsInput, arg2 ...request.Option) (*frauddetector.GetListElementsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetListElementsWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.GetListElementsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetListElementsWithContext indicates an expected call of GetListElementsWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) GetListElementsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetListElementsWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetListElementsWithContext), varargs...)
+}
+
+// GetListsMetadata mocks base method
+func (m *MockFraudDetectorAPI) GetListsMetadata(arg0 *frauddetector.GetListsMetadataInput) (*frauddetector.GetListsMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetListsMetadata", arg0)
+	ret0, _ := ret[0].(*frauddetector.GetListsMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetListsMetadata indicates an expected call of GetListsMetadata
+func (mr *MockFraudDetectorAPIMockRecorder) GetListsMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetListsMetadata", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetListsMetadata), arg0)
+}
+
+// GetListsMetadataPages mocks base method
+func (m *MockFraudDetectorAPI) GetListsMetadataPages(arg0 *frauddetector.GetListsMetadataInput, arg1 func(*frauddetector.GetListsMetadataOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetListsMetadataPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetListsMetadataPages indicates an expected call of GetListsMetadataPages
+func (mr *MockFraudDetectorAPIMockRecorder) GetListsMetadataPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetListsMetadataPages", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetListsMetadataPages), arg0, arg1)
+}
+
+// GetListsMetadataPagesWithContext mocks base method
+func (m *MockFraudDetectorAPI) GetListsMetadataPagesWithContext(arg0 context.Context, arg1 *frauddetector.GetListsMetadataInput, arg2 func(*frauddetector.GetListsMetadataOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetListsMetadataPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetListsMetadataPagesWithContext indicates an expected call of GetListsMetadataPagesWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) GetListsMetadataPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetListsMetadataPagesWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetListsMetadataPagesWithContext), varargs...)
+}
+
+// GetListsMetadataRequest mocks base method
+func (m *MockFraudDetectorAPI) GetListsMetadataRequest(arg0 *frauddetector.GetListsMetadataInput) (*request.Request, *frauddetector.GetListsMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetListsMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.GetListsMetadataOutput)
+	return ret0, ret1
+}
+
+// GetListsMetadataRequest indicates an expected call of GetListsMetadataRequest
+func (mr *MockFraudDetectorAPIMockRecorder) GetListsMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetListsMetadataRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetListsMetadataRequest), arg0)
+}
+
+// GetListsMetadataWithContext mocks base method
+func (m *MockFraudDetectorAPI) GetListsMetadataWithContext(arg0 context.Context, arg1 *frauddetector.GetListsMetadataInput, arg2 ...request.Option) (*frauddetector.GetListsMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetListsMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.GetListsMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetListsMetadataWithContext indicates an expected call of GetListsMetadataWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) GetListsMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetListsMetadataWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).GetListsMetadataWithContext), varargs...)
+}
+
 // GetModelVersion mocks base method
 func (m *MockFraudDetectorAPI) GetModelVersion(arg0 *frauddetector.GetModelVersionInput) (*frauddetector.GetModelVersionOutput, error) {
 	m.ctrl.T.Helper()
@@ -3595,6 +3861,56 @@ func (mr *MockFraudDetectorAPIMockRecorder) UpdateEventLabelWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEventLabelWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).UpdateEventLabelWithContext), varargs...)
+}
+
+// UpdateList mocks base method
+func (m *MockFraudDetectorAPI) UpdateList(arg0 *frauddetector.UpdateListInput) (*frauddetector.UpdateListOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateList", arg0)
+	ret0, _ := ret[0].(*frauddetector.UpdateListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateList indicates an expected call of UpdateList
+func (mr *MockFraudDetectorAPIMockRecorder) UpdateList(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateList", reflect.TypeOf((*MockFraudDetectorAPI)(nil).UpdateList), arg0)
+}
+
+// UpdateListRequest mocks base method
+func (m *MockFraudDetectorAPI) UpdateListRequest(arg0 *frauddetector.UpdateListInput) (*request.Request, *frauddetector.UpdateListOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateListRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*frauddetector.UpdateListOutput)
+	return ret0, ret1
+}
+
+// UpdateListRequest indicates an expected call of UpdateListRequest
+func (mr *MockFraudDetectorAPIMockRecorder) UpdateListRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateListRequest", reflect.TypeOf((*MockFraudDetectorAPI)(nil).UpdateListRequest), arg0)
+}
+
+// UpdateListWithContext mocks base method
+func (m *MockFraudDetectorAPI) UpdateListWithContext(arg0 context.Context, arg1 *frauddetector.UpdateListInput, arg2 ...request.Option) (*frauddetector.UpdateListOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateListWithContext", varargs...)
+	ret0, _ := ret[0].(*frauddetector.UpdateListOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateListWithContext indicates an expected call of UpdateListWithContext
+func (mr *MockFraudDetectorAPIMockRecorder) UpdateListWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateListWithContext", reflect.TypeOf((*MockFraudDetectorAPI)(nil).UpdateListWithContext), varargs...)
 }
 
 // UpdateModel mocks base method

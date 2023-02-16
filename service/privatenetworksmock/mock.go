@@ -1250,6 +1250,56 @@ func (mr *MockPrivateNetworksAPIMockRecorder) PingWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PingWithContext", reflect.TypeOf((*MockPrivateNetworksAPI)(nil).PingWithContext), varargs...)
 }
 
+// StartNetworkResourceUpdate mocks base method
+func (m *MockPrivateNetworksAPI) StartNetworkResourceUpdate(arg0 *privatenetworks.StartNetworkResourceUpdateInput) (*privatenetworks.StartNetworkResourceUpdateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartNetworkResourceUpdate", arg0)
+	ret0, _ := ret[0].(*privatenetworks.StartNetworkResourceUpdateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartNetworkResourceUpdate indicates an expected call of StartNetworkResourceUpdate
+func (mr *MockPrivateNetworksAPIMockRecorder) StartNetworkResourceUpdate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartNetworkResourceUpdate", reflect.TypeOf((*MockPrivateNetworksAPI)(nil).StartNetworkResourceUpdate), arg0)
+}
+
+// StartNetworkResourceUpdateRequest mocks base method
+func (m *MockPrivateNetworksAPI) StartNetworkResourceUpdateRequest(arg0 *privatenetworks.StartNetworkResourceUpdateInput) (*request.Request, *privatenetworks.StartNetworkResourceUpdateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartNetworkResourceUpdateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*privatenetworks.StartNetworkResourceUpdateOutput)
+	return ret0, ret1
+}
+
+// StartNetworkResourceUpdateRequest indicates an expected call of StartNetworkResourceUpdateRequest
+func (mr *MockPrivateNetworksAPIMockRecorder) StartNetworkResourceUpdateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartNetworkResourceUpdateRequest", reflect.TypeOf((*MockPrivateNetworksAPI)(nil).StartNetworkResourceUpdateRequest), arg0)
+}
+
+// StartNetworkResourceUpdateWithContext mocks base method
+func (m *MockPrivateNetworksAPI) StartNetworkResourceUpdateWithContext(arg0 context.Context, arg1 *privatenetworks.StartNetworkResourceUpdateInput, arg2 ...request.Option) (*privatenetworks.StartNetworkResourceUpdateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartNetworkResourceUpdateWithContext", varargs...)
+	ret0, _ := ret[0].(*privatenetworks.StartNetworkResourceUpdateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartNetworkResourceUpdateWithContext indicates an expected call of StartNetworkResourceUpdateWithContext
+func (mr *MockPrivateNetworksAPIMockRecorder) StartNetworkResourceUpdateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartNetworkResourceUpdateWithContext", reflect.TypeOf((*MockPrivateNetworksAPI)(nil).StartNetworkResourceUpdateWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockPrivateNetworksAPI) TagResource(arg0 *privatenetworks.TagResourceInput) (*privatenetworks.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
