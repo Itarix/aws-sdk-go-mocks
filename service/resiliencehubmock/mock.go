@@ -115,6 +115,106 @@ func (mr *MockResilienceHubAPIMockRecorder) CreateAppRequest(arg0 interface{}) *
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).CreateAppRequest), arg0)
 }
 
+// CreateAppVersionAppComponent mocks base method
+func (m *MockResilienceHubAPI) CreateAppVersionAppComponent(arg0 *resiliencehub.CreateAppVersionAppComponentInput) (*resiliencehub.CreateAppVersionAppComponentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppVersionAppComponent", arg0)
+	ret0, _ := ret[0].(*resiliencehub.CreateAppVersionAppComponentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppVersionAppComponent indicates an expected call of CreateAppVersionAppComponent
+func (mr *MockResilienceHubAPIMockRecorder) CreateAppVersionAppComponent(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppVersionAppComponent", reflect.TypeOf((*MockResilienceHubAPI)(nil).CreateAppVersionAppComponent), arg0)
+}
+
+// CreateAppVersionAppComponentRequest mocks base method
+func (m *MockResilienceHubAPI) CreateAppVersionAppComponentRequest(arg0 *resiliencehub.CreateAppVersionAppComponentInput) (*request.Request, *resiliencehub.CreateAppVersionAppComponentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppVersionAppComponentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.CreateAppVersionAppComponentOutput)
+	return ret0, ret1
+}
+
+// CreateAppVersionAppComponentRequest indicates an expected call of CreateAppVersionAppComponentRequest
+func (mr *MockResilienceHubAPIMockRecorder) CreateAppVersionAppComponentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppVersionAppComponentRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).CreateAppVersionAppComponentRequest), arg0)
+}
+
+// CreateAppVersionAppComponentWithContext mocks base method
+func (m *MockResilienceHubAPI) CreateAppVersionAppComponentWithContext(arg0 context.Context, arg1 *resiliencehub.CreateAppVersionAppComponentInput, arg2 ...request.Option) (*resiliencehub.CreateAppVersionAppComponentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAppVersionAppComponentWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.CreateAppVersionAppComponentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppVersionAppComponentWithContext indicates an expected call of CreateAppVersionAppComponentWithContext
+func (mr *MockResilienceHubAPIMockRecorder) CreateAppVersionAppComponentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppVersionAppComponentWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).CreateAppVersionAppComponentWithContext), varargs...)
+}
+
+// CreateAppVersionResource mocks base method
+func (m *MockResilienceHubAPI) CreateAppVersionResource(arg0 *resiliencehub.CreateAppVersionResourceInput) (*resiliencehub.CreateAppVersionResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppVersionResource", arg0)
+	ret0, _ := ret[0].(*resiliencehub.CreateAppVersionResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppVersionResource indicates an expected call of CreateAppVersionResource
+func (mr *MockResilienceHubAPIMockRecorder) CreateAppVersionResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppVersionResource", reflect.TypeOf((*MockResilienceHubAPI)(nil).CreateAppVersionResource), arg0)
+}
+
+// CreateAppVersionResourceRequest mocks base method
+func (m *MockResilienceHubAPI) CreateAppVersionResourceRequest(arg0 *resiliencehub.CreateAppVersionResourceInput) (*request.Request, *resiliencehub.CreateAppVersionResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppVersionResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.CreateAppVersionResourceOutput)
+	return ret0, ret1
+}
+
+// CreateAppVersionResourceRequest indicates an expected call of CreateAppVersionResourceRequest
+func (mr *MockResilienceHubAPIMockRecorder) CreateAppVersionResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppVersionResourceRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).CreateAppVersionResourceRequest), arg0)
+}
+
+// CreateAppVersionResourceWithContext mocks base method
+func (m *MockResilienceHubAPI) CreateAppVersionResourceWithContext(arg0 context.Context, arg1 *resiliencehub.CreateAppVersionResourceInput, arg2 ...request.Option) (*resiliencehub.CreateAppVersionResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAppVersionResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.CreateAppVersionResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppVersionResourceWithContext indicates an expected call of CreateAppVersionResourceWithContext
+func (mr *MockResilienceHubAPIMockRecorder) CreateAppVersionResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppVersionResourceWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).CreateAppVersionResourceWithContext), varargs...)
+}
+
 // CreateAppWithContext mocks base method
 func (m *MockResilienceHubAPI) CreateAppWithContext(arg0 context.Context, arg1 *resiliencehub.CreateAppInput, arg2 ...request.Option) (*resiliencehub.CreateAppOutput, error) {
 	m.ctrl.T.Helper()
@@ -300,6 +400,56 @@ func (mr *MockResilienceHubAPIMockRecorder) DeleteAppAssessmentWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppAssessmentWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).DeleteAppAssessmentWithContext), varargs...)
 }
 
+// DeleteAppInputSource mocks base method
+func (m *MockResilienceHubAPI) DeleteAppInputSource(arg0 *resiliencehub.DeleteAppInputSourceInput) (*resiliencehub.DeleteAppInputSourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppInputSource", arg0)
+	ret0, _ := ret[0].(*resiliencehub.DeleteAppInputSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppInputSource indicates an expected call of DeleteAppInputSource
+func (mr *MockResilienceHubAPIMockRecorder) DeleteAppInputSource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInputSource", reflect.TypeOf((*MockResilienceHubAPI)(nil).DeleteAppInputSource), arg0)
+}
+
+// DeleteAppInputSourceRequest mocks base method
+func (m *MockResilienceHubAPI) DeleteAppInputSourceRequest(arg0 *resiliencehub.DeleteAppInputSourceInput) (*request.Request, *resiliencehub.DeleteAppInputSourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppInputSourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.DeleteAppInputSourceOutput)
+	return ret0, ret1
+}
+
+// DeleteAppInputSourceRequest indicates an expected call of DeleteAppInputSourceRequest
+func (mr *MockResilienceHubAPIMockRecorder) DeleteAppInputSourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInputSourceRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).DeleteAppInputSourceRequest), arg0)
+}
+
+// DeleteAppInputSourceWithContext mocks base method
+func (m *MockResilienceHubAPI) DeleteAppInputSourceWithContext(arg0 context.Context, arg1 *resiliencehub.DeleteAppInputSourceInput, arg2 ...request.Option) (*resiliencehub.DeleteAppInputSourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAppInputSourceWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.DeleteAppInputSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppInputSourceWithContext indicates an expected call of DeleteAppInputSourceWithContext
+func (mr *MockResilienceHubAPIMockRecorder) DeleteAppInputSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInputSourceWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).DeleteAppInputSourceWithContext), varargs...)
+}
+
 // DeleteAppRequest mocks base method
 func (m *MockResilienceHubAPI) DeleteAppRequest(arg0 *resiliencehub.DeleteAppInput) (*request.Request, *resiliencehub.DeleteAppOutput) {
 	m.ctrl.T.Helper()
@@ -313,6 +463,106 @@ func (m *MockResilienceHubAPI) DeleteAppRequest(arg0 *resiliencehub.DeleteAppInp
 func (mr *MockResilienceHubAPIMockRecorder) DeleteAppRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).DeleteAppRequest), arg0)
+}
+
+// DeleteAppVersionAppComponent mocks base method
+func (m *MockResilienceHubAPI) DeleteAppVersionAppComponent(arg0 *resiliencehub.DeleteAppVersionAppComponentInput) (*resiliencehub.DeleteAppVersionAppComponentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppVersionAppComponent", arg0)
+	ret0, _ := ret[0].(*resiliencehub.DeleteAppVersionAppComponentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppVersionAppComponent indicates an expected call of DeleteAppVersionAppComponent
+func (mr *MockResilienceHubAPIMockRecorder) DeleteAppVersionAppComponent(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppVersionAppComponent", reflect.TypeOf((*MockResilienceHubAPI)(nil).DeleteAppVersionAppComponent), arg0)
+}
+
+// DeleteAppVersionAppComponentRequest mocks base method
+func (m *MockResilienceHubAPI) DeleteAppVersionAppComponentRequest(arg0 *resiliencehub.DeleteAppVersionAppComponentInput) (*request.Request, *resiliencehub.DeleteAppVersionAppComponentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppVersionAppComponentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.DeleteAppVersionAppComponentOutput)
+	return ret0, ret1
+}
+
+// DeleteAppVersionAppComponentRequest indicates an expected call of DeleteAppVersionAppComponentRequest
+func (mr *MockResilienceHubAPIMockRecorder) DeleteAppVersionAppComponentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppVersionAppComponentRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).DeleteAppVersionAppComponentRequest), arg0)
+}
+
+// DeleteAppVersionAppComponentWithContext mocks base method
+func (m *MockResilienceHubAPI) DeleteAppVersionAppComponentWithContext(arg0 context.Context, arg1 *resiliencehub.DeleteAppVersionAppComponentInput, arg2 ...request.Option) (*resiliencehub.DeleteAppVersionAppComponentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAppVersionAppComponentWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.DeleteAppVersionAppComponentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppVersionAppComponentWithContext indicates an expected call of DeleteAppVersionAppComponentWithContext
+func (mr *MockResilienceHubAPIMockRecorder) DeleteAppVersionAppComponentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppVersionAppComponentWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).DeleteAppVersionAppComponentWithContext), varargs...)
+}
+
+// DeleteAppVersionResource mocks base method
+func (m *MockResilienceHubAPI) DeleteAppVersionResource(arg0 *resiliencehub.DeleteAppVersionResourceInput) (*resiliencehub.DeleteAppVersionResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppVersionResource", arg0)
+	ret0, _ := ret[0].(*resiliencehub.DeleteAppVersionResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppVersionResource indicates an expected call of DeleteAppVersionResource
+func (mr *MockResilienceHubAPIMockRecorder) DeleteAppVersionResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppVersionResource", reflect.TypeOf((*MockResilienceHubAPI)(nil).DeleteAppVersionResource), arg0)
+}
+
+// DeleteAppVersionResourceRequest mocks base method
+func (m *MockResilienceHubAPI) DeleteAppVersionResourceRequest(arg0 *resiliencehub.DeleteAppVersionResourceInput) (*request.Request, *resiliencehub.DeleteAppVersionResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppVersionResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.DeleteAppVersionResourceOutput)
+	return ret0, ret1
+}
+
+// DeleteAppVersionResourceRequest indicates an expected call of DeleteAppVersionResourceRequest
+func (mr *MockResilienceHubAPIMockRecorder) DeleteAppVersionResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppVersionResourceRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).DeleteAppVersionResourceRequest), arg0)
+}
+
+// DeleteAppVersionResourceWithContext mocks base method
+func (m *MockResilienceHubAPI) DeleteAppVersionResourceWithContext(arg0 context.Context, arg1 *resiliencehub.DeleteAppVersionResourceInput, arg2 ...request.Option) (*resiliencehub.DeleteAppVersionResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAppVersionResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.DeleteAppVersionResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppVersionResourceWithContext indicates an expected call of DeleteAppVersionResourceWithContext
+func (mr *MockResilienceHubAPIMockRecorder) DeleteAppVersionResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppVersionResourceWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).DeleteAppVersionResourceWithContext), varargs...)
 }
 
 // DeleteAppWithContext mocks base method
@@ -515,6 +765,136 @@ func (mr *MockResilienceHubAPIMockRecorder) DescribeAppRequest(arg0 interface{})
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).DescribeAppRequest), arg0)
 }
 
+// DescribeAppVersion mocks base method
+func (m *MockResilienceHubAPI) DescribeAppVersion(arg0 *resiliencehub.DescribeAppVersionInput) (*resiliencehub.DescribeAppVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppVersion", arg0)
+	ret0, _ := ret[0].(*resiliencehub.DescribeAppVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppVersion indicates an expected call of DescribeAppVersion
+func (mr *MockResilienceHubAPIMockRecorder) DescribeAppVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppVersion", reflect.TypeOf((*MockResilienceHubAPI)(nil).DescribeAppVersion), arg0)
+}
+
+// DescribeAppVersionAppComponent mocks base method
+func (m *MockResilienceHubAPI) DescribeAppVersionAppComponent(arg0 *resiliencehub.DescribeAppVersionAppComponentInput) (*resiliencehub.DescribeAppVersionAppComponentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppVersionAppComponent", arg0)
+	ret0, _ := ret[0].(*resiliencehub.DescribeAppVersionAppComponentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppVersionAppComponent indicates an expected call of DescribeAppVersionAppComponent
+func (mr *MockResilienceHubAPIMockRecorder) DescribeAppVersionAppComponent(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppVersionAppComponent", reflect.TypeOf((*MockResilienceHubAPI)(nil).DescribeAppVersionAppComponent), arg0)
+}
+
+// DescribeAppVersionAppComponentRequest mocks base method
+func (m *MockResilienceHubAPI) DescribeAppVersionAppComponentRequest(arg0 *resiliencehub.DescribeAppVersionAppComponentInput) (*request.Request, *resiliencehub.DescribeAppVersionAppComponentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppVersionAppComponentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.DescribeAppVersionAppComponentOutput)
+	return ret0, ret1
+}
+
+// DescribeAppVersionAppComponentRequest indicates an expected call of DescribeAppVersionAppComponentRequest
+func (mr *MockResilienceHubAPIMockRecorder) DescribeAppVersionAppComponentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppVersionAppComponentRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).DescribeAppVersionAppComponentRequest), arg0)
+}
+
+// DescribeAppVersionAppComponentWithContext mocks base method
+func (m *MockResilienceHubAPI) DescribeAppVersionAppComponentWithContext(arg0 context.Context, arg1 *resiliencehub.DescribeAppVersionAppComponentInput, arg2 ...request.Option) (*resiliencehub.DescribeAppVersionAppComponentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAppVersionAppComponentWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.DescribeAppVersionAppComponentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppVersionAppComponentWithContext indicates an expected call of DescribeAppVersionAppComponentWithContext
+func (mr *MockResilienceHubAPIMockRecorder) DescribeAppVersionAppComponentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppVersionAppComponentWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).DescribeAppVersionAppComponentWithContext), varargs...)
+}
+
+// DescribeAppVersionRequest mocks base method
+func (m *MockResilienceHubAPI) DescribeAppVersionRequest(arg0 *resiliencehub.DescribeAppVersionInput) (*request.Request, *resiliencehub.DescribeAppVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.DescribeAppVersionOutput)
+	return ret0, ret1
+}
+
+// DescribeAppVersionRequest indicates an expected call of DescribeAppVersionRequest
+func (mr *MockResilienceHubAPIMockRecorder) DescribeAppVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppVersionRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).DescribeAppVersionRequest), arg0)
+}
+
+// DescribeAppVersionResource mocks base method
+func (m *MockResilienceHubAPI) DescribeAppVersionResource(arg0 *resiliencehub.DescribeAppVersionResourceInput) (*resiliencehub.DescribeAppVersionResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppVersionResource", arg0)
+	ret0, _ := ret[0].(*resiliencehub.DescribeAppVersionResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppVersionResource indicates an expected call of DescribeAppVersionResource
+func (mr *MockResilienceHubAPIMockRecorder) DescribeAppVersionResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppVersionResource", reflect.TypeOf((*MockResilienceHubAPI)(nil).DescribeAppVersionResource), arg0)
+}
+
+// DescribeAppVersionResourceRequest mocks base method
+func (m *MockResilienceHubAPI) DescribeAppVersionResourceRequest(arg0 *resiliencehub.DescribeAppVersionResourceInput) (*request.Request, *resiliencehub.DescribeAppVersionResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppVersionResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.DescribeAppVersionResourceOutput)
+	return ret0, ret1
+}
+
+// DescribeAppVersionResourceRequest indicates an expected call of DescribeAppVersionResourceRequest
+func (mr *MockResilienceHubAPIMockRecorder) DescribeAppVersionResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppVersionResourceRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).DescribeAppVersionResourceRequest), arg0)
+}
+
+// DescribeAppVersionResourceWithContext mocks base method
+func (m *MockResilienceHubAPI) DescribeAppVersionResourceWithContext(arg0 context.Context, arg1 *resiliencehub.DescribeAppVersionResourceInput, arg2 ...request.Option) (*resiliencehub.DescribeAppVersionResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAppVersionResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.DescribeAppVersionResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppVersionResourceWithContext indicates an expected call of DescribeAppVersionResourceWithContext
+func (mr *MockResilienceHubAPIMockRecorder) DescribeAppVersionResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppVersionResourceWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).DescribeAppVersionResourceWithContext), varargs...)
+}
+
 // DescribeAppVersionResourcesResolutionStatus mocks base method
 func (m *MockResilienceHubAPI) DescribeAppVersionResourcesResolutionStatus(arg0 *resiliencehub.DescribeAppVersionResourcesResolutionStatusInput) (*resiliencehub.DescribeAppVersionResourcesResolutionStatusOutput, error) {
 	m.ctrl.T.Helper()
@@ -613,6 +993,26 @@ func (mr *MockResilienceHubAPIMockRecorder) DescribeAppVersionTemplateWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppVersionTemplateWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).DescribeAppVersionTemplateWithContext), varargs...)
+}
+
+// DescribeAppVersionWithContext mocks base method
+func (m *MockResilienceHubAPI) DescribeAppVersionWithContext(arg0 context.Context, arg1 *resiliencehub.DescribeAppVersionInput, arg2 ...request.Option) (*resiliencehub.DescribeAppVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAppVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.DescribeAppVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppVersionWithContext indicates an expected call of DescribeAppVersionWithContext
+func (mr *MockResilienceHubAPIMockRecorder) DescribeAppVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppVersionWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).DescribeAppVersionWithContext), varargs...)
 }
 
 // DescribeAppWithContext mocks base method
@@ -1115,6 +1515,172 @@ func (mr *MockResilienceHubAPIMockRecorder) ListAppComponentRecommendationsWithC
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppComponentRecommendationsWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppComponentRecommendationsWithContext), varargs...)
+}
+
+// ListAppInputSources mocks base method
+func (m *MockResilienceHubAPI) ListAppInputSources(arg0 *resiliencehub.ListAppInputSourcesInput) (*resiliencehub.ListAppInputSourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInputSources", arg0)
+	ret0, _ := ret[0].(*resiliencehub.ListAppInputSourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppInputSources indicates an expected call of ListAppInputSources
+func (mr *MockResilienceHubAPIMockRecorder) ListAppInputSources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInputSources", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppInputSources), arg0)
+}
+
+// ListAppInputSourcesPages mocks base method
+func (m *MockResilienceHubAPI) ListAppInputSourcesPages(arg0 *resiliencehub.ListAppInputSourcesInput, arg1 func(*resiliencehub.ListAppInputSourcesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInputSourcesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppInputSourcesPages indicates an expected call of ListAppInputSourcesPages
+func (mr *MockResilienceHubAPIMockRecorder) ListAppInputSourcesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInputSourcesPages", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppInputSourcesPages), arg0, arg1)
+}
+
+// ListAppInputSourcesPagesWithContext mocks base method
+func (m *MockResilienceHubAPI) ListAppInputSourcesPagesWithContext(arg0 context.Context, arg1 *resiliencehub.ListAppInputSourcesInput, arg2 func(*resiliencehub.ListAppInputSourcesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppInputSourcesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppInputSourcesPagesWithContext indicates an expected call of ListAppInputSourcesPagesWithContext
+func (mr *MockResilienceHubAPIMockRecorder) ListAppInputSourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInputSourcesPagesWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppInputSourcesPagesWithContext), varargs...)
+}
+
+// ListAppInputSourcesRequest mocks base method
+func (m *MockResilienceHubAPI) ListAppInputSourcesRequest(arg0 *resiliencehub.ListAppInputSourcesInput) (*request.Request, *resiliencehub.ListAppInputSourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInputSourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.ListAppInputSourcesOutput)
+	return ret0, ret1
+}
+
+// ListAppInputSourcesRequest indicates an expected call of ListAppInputSourcesRequest
+func (mr *MockResilienceHubAPIMockRecorder) ListAppInputSourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInputSourcesRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppInputSourcesRequest), arg0)
+}
+
+// ListAppInputSourcesWithContext mocks base method
+func (m *MockResilienceHubAPI) ListAppInputSourcesWithContext(arg0 context.Context, arg1 *resiliencehub.ListAppInputSourcesInput, arg2 ...request.Option) (*resiliencehub.ListAppInputSourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppInputSourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.ListAppInputSourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppInputSourcesWithContext indicates an expected call of ListAppInputSourcesWithContext
+func (mr *MockResilienceHubAPIMockRecorder) ListAppInputSourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInputSourcesWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppInputSourcesWithContext), varargs...)
+}
+
+// ListAppVersionAppComponents mocks base method
+func (m *MockResilienceHubAPI) ListAppVersionAppComponents(arg0 *resiliencehub.ListAppVersionAppComponentsInput) (*resiliencehub.ListAppVersionAppComponentsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppVersionAppComponents", arg0)
+	ret0, _ := ret[0].(*resiliencehub.ListAppVersionAppComponentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppVersionAppComponents indicates an expected call of ListAppVersionAppComponents
+func (mr *MockResilienceHubAPIMockRecorder) ListAppVersionAppComponents(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppVersionAppComponents", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppVersionAppComponents), arg0)
+}
+
+// ListAppVersionAppComponentsPages mocks base method
+func (m *MockResilienceHubAPI) ListAppVersionAppComponentsPages(arg0 *resiliencehub.ListAppVersionAppComponentsInput, arg1 func(*resiliencehub.ListAppVersionAppComponentsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppVersionAppComponentsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppVersionAppComponentsPages indicates an expected call of ListAppVersionAppComponentsPages
+func (mr *MockResilienceHubAPIMockRecorder) ListAppVersionAppComponentsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppVersionAppComponentsPages", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppVersionAppComponentsPages), arg0, arg1)
+}
+
+// ListAppVersionAppComponentsPagesWithContext mocks base method
+func (m *MockResilienceHubAPI) ListAppVersionAppComponentsPagesWithContext(arg0 context.Context, arg1 *resiliencehub.ListAppVersionAppComponentsInput, arg2 func(*resiliencehub.ListAppVersionAppComponentsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppVersionAppComponentsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppVersionAppComponentsPagesWithContext indicates an expected call of ListAppVersionAppComponentsPagesWithContext
+func (mr *MockResilienceHubAPIMockRecorder) ListAppVersionAppComponentsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppVersionAppComponentsPagesWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppVersionAppComponentsPagesWithContext), varargs...)
+}
+
+// ListAppVersionAppComponentsRequest mocks base method
+func (m *MockResilienceHubAPI) ListAppVersionAppComponentsRequest(arg0 *resiliencehub.ListAppVersionAppComponentsInput) (*request.Request, *resiliencehub.ListAppVersionAppComponentsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppVersionAppComponentsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.ListAppVersionAppComponentsOutput)
+	return ret0, ret1
+}
+
+// ListAppVersionAppComponentsRequest indicates an expected call of ListAppVersionAppComponentsRequest
+func (mr *MockResilienceHubAPIMockRecorder) ListAppVersionAppComponentsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppVersionAppComponentsRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppVersionAppComponentsRequest), arg0)
+}
+
+// ListAppVersionAppComponentsWithContext mocks base method
+func (m *MockResilienceHubAPI) ListAppVersionAppComponentsWithContext(arg0 context.Context, arg1 *resiliencehub.ListAppVersionAppComponentsInput, arg2 ...request.Option) (*resiliencehub.ListAppVersionAppComponentsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppVersionAppComponentsWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.ListAppVersionAppComponentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppVersionAppComponentsWithContext indicates an expected call of ListAppVersionAppComponentsWithContext
+func (mr *MockResilienceHubAPIMockRecorder) ListAppVersionAppComponentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppVersionAppComponentsWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppVersionAppComponentsWithContext), varargs...)
 }
 
 // ListAppVersionResourceMappings mocks base method
@@ -2375,6 +2941,156 @@ func (m *MockResilienceHubAPI) UpdateAppRequest(arg0 *resiliencehub.UpdateAppInp
 func (mr *MockResilienceHubAPIMockRecorder) UpdateAppRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).UpdateAppRequest), arg0)
+}
+
+// UpdateAppVersion mocks base method
+func (m *MockResilienceHubAPI) UpdateAppVersion(arg0 *resiliencehub.UpdateAppVersionInput) (*resiliencehub.UpdateAppVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAppVersion", arg0)
+	ret0, _ := ret[0].(*resiliencehub.UpdateAppVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAppVersion indicates an expected call of UpdateAppVersion
+func (mr *MockResilienceHubAPIMockRecorder) UpdateAppVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppVersion", reflect.TypeOf((*MockResilienceHubAPI)(nil).UpdateAppVersion), arg0)
+}
+
+// UpdateAppVersionAppComponent mocks base method
+func (m *MockResilienceHubAPI) UpdateAppVersionAppComponent(arg0 *resiliencehub.UpdateAppVersionAppComponentInput) (*resiliencehub.UpdateAppVersionAppComponentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAppVersionAppComponent", arg0)
+	ret0, _ := ret[0].(*resiliencehub.UpdateAppVersionAppComponentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAppVersionAppComponent indicates an expected call of UpdateAppVersionAppComponent
+func (mr *MockResilienceHubAPIMockRecorder) UpdateAppVersionAppComponent(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppVersionAppComponent", reflect.TypeOf((*MockResilienceHubAPI)(nil).UpdateAppVersionAppComponent), arg0)
+}
+
+// UpdateAppVersionAppComponentRequest mocks base method
+func (m *MockResilienceHubAPI) UpdateAppVersionAppComponentRequest(arg0 *resiliencehub.UpdateAppVersionAppComponentInput) (*request.Request, *resiliencehub.UpdateAppVersionAppComponentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAppVersionAppComponentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.UpdateAppVersionAppComponentOutput)
+	return ret0, ret1
+}
+
+// UpdateAppVersionAppComponentRequest indicates an expected call of UpdateAppVersionAppComponentRequest
+func (mr *MockResilienceHubAPIMockRecorder) UpdateAppVersionAppComponentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppVersionAppComponentRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).UpdateAppVersionAppComponentRequest), arg0)
+}
+
+// UpdateAppVersionAppComponentWithContext mocks base method
+func (m *MockResilienceHubAPI) UpdateAppVersionAppComponentWithContext(arg0 context.Context, arg1 *resiliencehub.UpdateAppVersionAppComponentInput, arg2 ...request.Option) (*resiliencehub.UpdateAppVersionAppComponentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAppVersionAppComponentWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.UpdateAppVersionAppComponentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAppVersionAppComponentWithContext indicates an expected call of UpdateAppVersionAppComponentWithContext
+func (mr *MockResilienceHubAPIMockRecorder) UpdateAppVersionAppComponentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppVersionAppComponentWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).UpdateAppVersionAppComponentWithContext), varargs...)
+}
+
+// UpdateAppVersionRequest mocks base method
+func (m *MockResilienceHubAPI) UpdateAppVersionRequest(arg0 *resiliencehub.UpdateAppVersionInput) (*request.Request, *resiliencehub.UpdateAppVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAppVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.UpdateAppVersionOutput)
+	return ret0, ret1
+}
+
+// UpdateAppVersionRequest indicates an expected call of UpdateAppVersionRequest
+func (mr *MockResilienceHubAPIMockRecorder) UpdateAppVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppVersionRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).UpdateAppVersionRequest), arg0)
+}
+
+// UpdateAppVersionResource mocks base method
+func (m *MockResilienceHubAPI) UpdateAppVersionResource(arg0 *resiliencehub.UpdateAppVersionResourceInput) (*resiliencehub.UpdateAppVersionResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAppVersionResource", arg0)
+	ret0, _ := ret[0].(*resiliencehub.UpdateAppVersionResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAppVersionResource indicates an expected call of UpdateAppVersionResource
+func (mr *MockResilienceHubAPIMockRecorder) UpdateAppVersionResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppVersionResource", reflect.TypeOf((*MockResilienceHubAPI)(nil).UpdateAppVersionResource), arg0)
+}
+
+// UpdateAppVersionResourceRequest mocks base method
+func (m *MockResilienceHubAPI) UpdateAppVersionResourceRequest(arg0 *resiliencehub.UpdateAppVersionResourceInput) (*request.Request, *resiliencehub.UpdateAppVersionResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAppVersionResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.UpdateAppVersionResourceOutput)
+	return ret0, ret1
+}
+
+// UpdateAppVersionResourceRequest indicates an expected call of UpdateAppVersionResourceRequest
+func (mr *MockResilienceHubAPIMockRecorder) UpdateAppVersionResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppVersionResourceRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).UpdateAppVersionResourceRequest), arg0)
+}
+
+// UpdateAppVersionResourceWithContext mocks base method
+func (m *MockResilienceHubAPI) UpdateAppVersionResourceWithContext(arg0 context.Context, arg1 *resiliencehub.UpdateAppVersionResourceInput, arg2 ...request.Option) (*resiliencehub.UpdateAppVersionResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAppVersionResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.UpdateAppVersionResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAppVersionResourceWithContext indicates an expected call of UpdateAppVersionResourceWithContext
+func (mr *MockResilienceHubAPIMockRecorder) UpdateAppVersionResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppVersionResourceWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).UpdateAppVersionResourceWithContext), varargs...)
+}
+
+// UpdateAppVersionWithContext mocks base method
+func (m *MockResilienceHubAPI) UpdateAppVersionWithContext(arg0 context.Context, arg1 *resiliencehub.UpdateAppVersionInput, arg2 ...request.Option) (*resiliencehub.UpdateAppVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAppVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.UpdateAppVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAppVersionWithContext indicates an expected call of UpdateAppVersionWithContext
+func (mr *MockResilienceHubAPIMockRecorder) UpdateAppVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppVersionWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).UpdateAppVersionWithContext), varargs...)
 }
 
 // UpdateAppWithContext mocks base method
