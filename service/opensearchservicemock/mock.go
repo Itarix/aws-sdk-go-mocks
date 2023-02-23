@@ -2198,6 +2198,89 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) ListPackagesForDomainWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPackagesForDomainWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListPackagesForDomainWithContext), varargs...)
 }
 
+// ListScheduledActions mocks base method
+func (m *MockOpenSearchServiceAPI) ListScheduledActions(arg0 *opensearchservice.ListScheduledActionsInput) (*opensearchservice.ListScheduledActionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListScheduledActions", arg0)
+	ret0, _ := ret[0].(*opensearchservice.ListScheduledActionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListScheduledActions indicates an expected call of ListScheduledActions
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListScheduledActions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScheduledActions", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListScheduledActions), arg0)
+}
+
+// ListScheduledActionsPages mocks base method
+func (m *MockOpenSearchServiceAPI) ListScheduledActionsPages(arg0 *opensearchservice.ListScheduledActionsInput, arg1 func(*opensearchservice.ListScheduledActionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListScheduledActionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListScheduledActionsPages indicates an expected call of ListScheduledActionsPages
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListScheduledActionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScheduledActionsPages", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListScheduledActionsPages), arg0, arg1)
+}
+
+// ListScheduledActionsPagesWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) ListScheduledActionsPagesWithContext(arg0 context.Context, arg1 *opensearchservice.ListScheduledActionsInput, arg2 func(*opensearchservice.ListScheduledActionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListScheduledActionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListScheduledActionsPagesWithContext indicates an expected call of ListScheduledActionsPagesWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListScheduledActionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScheduledActionsPagesWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListScheduledActionsPagesWithContext), varargs...)
+}
+
+// ListScheduledActionsRequest mocks base method
+func (m *MockOpenSearchServiceAPI) ListScheduledActionsRequest(arg0 *opensearchservice.ListScheduledActionsInput) (*request.Request, *opensearchservice.ListScheduledActionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListScheduledActionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.ListScheduledActionsOutput)
+	return ret0, ret1
+}
+
+// ListScheduledActionsRequest indicates an expected call of ListScheduledActionsRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListScheduledActionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScheduledActionsRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListScheduledActionsRequest), arg0)
+}
+
+// ListScheduledActionsWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) ListScheduledActionsWithContext(arg0 context.Context, arg1 *opensearchservice.ListScheduledActionsInput, arg2 ...request.Option) (*opensearchservice.ListScheduledActionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListScheduledActionsWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.ListScheduledActionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListScheduledActionsWithContext indicates an expected call of ListScheduledActionsWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListScheduledActionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListScheduledActionsWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListScheduledActionsWithContext), varargs...)
+}
+
 // ListTags mocks base method
 func (m *MockOpenSearchServiceAPI) ListTags(arg0 *opensearchservice.ListTagsInput) (*opensearchservice.ListTagsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2829,6 +2912,56 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) UpdatePackageWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePackageWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).UpdatePackageWithContext), varargs...)
+}
+
+// UpdateScheduledAction mocks base method
+func (m *MockOpenSearchServiceAPI) UpdateScheduledAction(arg0 *opensearchservice.UpdateScheduledActionInput) (*opensearchservice.UpdateScheduledActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateScheduledAction", arg0)
+	ret0, _ := ret[0].(*opensearchservice.UpdateScheduledActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateScheduledAction indicates an expected call of UpdateScheduledAction
+func (mr *MockOpenSearchServiceAPIMockRecorder) UpdateScheduledAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateScheduledAction", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).UpdateScheduledAction), arg0)
+}
+
+// UpdateScheduledActionRequest mocks base method
+func (m *MockOpenSearchServiceAPI) UpdateScheduledActionRequest(arg0 *opensearchservice.UpdateScheduledActionInput) (*request.Request, *opensearchservice.UpdateScheduledActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateScheduledActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.UpdateScheduledActionOutput)
+	return ret0, ret1
+}
+
+// UpdateScheduledActionRequest indicates an expected call of UpdateScheduledActionRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) UpdateScheduledActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateScheduledActionRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).UpdateScheduledActionRequest), arg0)
+}
+
+// UpdateScheduledActionWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) UpdateScheduledActionWithContext(arg0 context.Context, arg1 *opensearchservice.UpdateScheduledActionInput, arg2 ...request.Option) (*opensearchservice.UpdateScheduledActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateScheduledActionWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.UpdateScheduledActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateScheduledActionWithContext indicates an expected call of UpdateScheduledActionWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) UpdateScheduledActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateScheduledActionWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).UpdateScheduledActionWithContext), varargs...)
 }
 
 // UpdateVpcEndpoint mocks base method
