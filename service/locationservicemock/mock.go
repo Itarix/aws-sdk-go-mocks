@@ -535,6 +535,56 @@ func (mr *MockLocationServiceAPIMockRecorder) CreateGeofenceCollectionWithContex
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGeofenceCollectionWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).CreateGeofenceCollectionWithContext), varargs...)
 }
 
+// CreateKey mocks base method
+func (m *MockLocationServiceAPI) CreateKey(arg0 *locationservice.CreateKeyInput) (*locationservice.CreateKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateKey", arg0)
+	ret0, _ := ret[0].(*locationservice.CreateKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateKey indicates an expected call of CreateKey
+func (mr *MockLocationServiceAPIMockRecorder) CreateKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateKey", reflect.TypeOf((*MockLocationServiceAPI)(nil).CreateKey), arg0)
+}
+
+// CreateKeyRequest mocks base method
+func (m *MockLocationServiceAPI) CreateKeyRequest(arg0 *locationservice.CreateKeyInput) (*request.Request, *locationservice.CreateKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*locationservice.CreateKeyOutput)
+	return ret0, ret1
+}
+
+// CreateKeyRequest indicates an expected call of CreateKeyRequest
+func (mr *MockLocationServiceAPIMockRecorder) CreateKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateKeyRequest", reflect.TypeOf((*MockLocationServiceAPI)(nil).CreateKeyRequest), arg0)
+}
+
+// CreateKeyWithContext mocks base method
+func (m *MockLocationServiceAPI) CreateKeyWithContext(arg0 context.Context, arg1 *locationservice.CreateKeyInput, arg2 ...request.Option) (*locationservice.CreateKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*locationservice.CreateKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateKeyWithContext indicates an expected call of CreateKeyWithContext
+func (mr *MockLocationServiceAPIMockRecorder) CreateKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateKeyWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).CreateKeyWithContext), varargs...)
+}
+
 // CreateMap mocks base method
 func (m *MockLocationServiceAPI) CreateMap(arg0 *locationservice.CreateMapInput) (*locationservice.CreateMapOutput, error) {
 	m.ctrl.T.Helper()
@@ -785,6 +835,56 @@ func (mr *MockLocationServiceAPIMockRecorder) DeleteGeofenceCollectionWithContex
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGeofenceCollectionWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).DeleteGeofenceCollectionWithContext), varargs...)
 }
 
+// DeleteKey mocks base method
+func (m *MockLocationServiceAPI) DeleteKey(arg0 *locationservice.DeleteKeyInput) (*locationservice.DeleteKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteKey", arg0)
+	ret0, _ := ret[0].(*locationservice.DeleteKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteKey indicates an expected call of DeleteKey
+func (mr *MockLocationServiceAPIMockRecorder) DeleteKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteKey", reflect.TypeOf((*MockLocationServiceAPI)(nil).DeleteKey), arg0)
+}
+
+// DeleteKeyRequest mocks base method
+func (m *MockLocationServiceAPI) DeleteKeyRequest(arg0 *locationservice.DeleteKeyInput) (*request.Request, *locationservice.DeleteKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*locationservice.DeleteKeyOutput)
+	return ret0, ret1
+}
+
+// DeleteKeyRequest indicates an expected call of DeleteKeyRequest
+func (mr *MockLocationServiceAPIMockRecorder) DeleteKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteKeyRequest", reflect.TypeOf((*MockLocationServiceAPI)(nil).DeleteKeyRequest), arg0)
+}
+
+// DeleteKeyWithContext mocks base method
+func (m *MockLocationServiceAPI) DeleteKeyWithContext(arg0 context.Context, arg1 *locationservice.DeleteKeyInput, arg2 ...request.Option) (*locationservice.DeleteKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*locationservice.DeleteKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteKeyWithContext indicates an expected call of DeleteKeyWithContext
+func (mr *MockLocationServiceAPIMockRecorder) DeleteKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteKeyWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).DeleteKeyWithContext), varargs...)
+}
+
 // DeleteMap mocks base method
 func (m *MockLocationServiceAPI) DeleteMap(arg0 *locationservice.DeleteMapInput) (*locationservice.DeleteMapOutput, error) {
 	m.ctrl.T.Helper()
@@ -1033,6 +1133,56 @@ func (mr *MockLocationServiceAPIMockRecorder) DescribeGeofenceCollectionWithCont
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGeofenceCollectionWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).DescribeGeofenceCollectionWithContext), varargs...)
+}
+
+// DescribeKey mocks base method
+func (m *MockLocationServiceAPI) DescribeKey(arg0 *locationservice.DescribeKeyInput) (*locationservice.DescribeKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeKey", arg0)
+	ret0, _ := ret[0].(*locationservice.DescribeKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeKey indicates an expected call of DescribeKey
+func (mr *MockLocationServiceAPIMockRecorder) DescribeKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeKey", reflect.TypeOf((*MockLocationServiceAPI)(nil).DescribeKey), arg0)
+}
+
+// DescribeKeyRequest mocks base method
+func (m *MockLocationServiceAPI) DescribeKeyRequest(arg0 *locationservice.DescribeKeyInput) (*request.Request, *locationservice.DescribeKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*locationservice.DescribeKeyOutput)
+	return ret0, ret1
+}
+
+// DescribeKeyRequest indicates an expected call of DescribeKeyRequest
+func (mr *MockLocationServiceAPIMockRecorder) DescribeKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeKeyRequest", reflect.TypeOf((*MockLocationServiceAPI)(nil).DescribeKeyRequest), arg0)
+}
+
+// DescribeKeyWithContext mocks base method
+func (m *MockLocationServiceAPI) DescribeKeyWithContext(arg0 context.Context, arg1 *locationservice.DescribeKeyInput, arg2 ...request.Option) (*locationservice.DescribeKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*locationservice.DescribeKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeKeyWithContext indicates an expected call of DescribeKeyWithContext
+func (mr *MockLocationServiceAPIMockRecorder) DescribeKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeKeyWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).DescribeKeyWithContext), varargs...)
 }
 
 // DescribeMap mocks base method
@@ -1967,6 +2117,89 @@ func (mr *MockLocationServiceAPIMockRecorder) ListGeofencesWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGeofencesWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).ListGeofencesWithContext), varargs...)
 }
 
+// ListKeys mocks base method
+func (m *MockLocationServiceAPI) ListKeys(arg0 *locationservice.ListKeysInput) (*locationservice.ListKeysOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListKeys", arg0)
+	ret0, _ := ret[0].(*locationservice.ListKeysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListKeys indicates an expected call of ListKeys
+func (mr *MockLocationServiceAPIMockRecorder) ListKeys(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKeys", reflect.TypeOf((*MockLocationServiceAPI)(nil).ListKeys), arg0)
+}
+
+// ListKeysPages mocks base method
+func (m *MockLocationServiceAPI) ListKeysPages(arg0 *locationservice.ListKeysInput, arg1 func(*locationservice.ListKeysOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListKeysPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListKeysPages indicates an expected call of ListKeysPages
+func (mr *MockLocationServiceAPIMockRecorder) ListKeysPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKeysPages", reflect.TypeOf((*MockLocationServiceAPI)(nil).ListKeysPages), arg0, arg1)
+}
+
+// ListKeysPagesWithContext mocks base method
+func (m *MockLocationServiceAPI) ListKeysPagesWithContext(arg0 context.Context, arg1 *locationservice.ListKeysInput, arg2 func(*locationservice.ListKeysOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListKeysPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListKeysPagesWithContext indicates an expected call of ListKeysPagesWithContext
+func (mr *MockLocationServiceAPIMockRecorder) ListKeysPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKeysPagesWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).ListKeysPagesWithContext), varargs...)
+}
+
+// ListKeysRequest mocks base method
+func (m *MockLocationServiceAPI) ListKeysRequest(arg0 *locationservice.ListKeysInput) (*request.Request, *locationservice.ListKeysOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListKeysRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*locationservice.ListKeysOutput)
+	return ret0, ret1
+}
+
+// ListKeysRequest indicates an expected call of ListKeysRequest
+func (mr *MockLocationServiceAPIMockRecorder) ListKeysRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKeysRequest", reflect.TypeOf((*MockLocationServiceAPI)(nil).ListKeysRequest), arg0)
+}
+
+// ListKeysWithContext mocks base method
+func (m *MockLocationServiceAPI) ListKeysWithContext(arg0 context.Context, arg1 *locationservice.ListKeysInput, arg2 ...request.Option) (*locationservice.ListKeysOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListKeysWithContext", varargs...)
+	ret0, _ := ret[0].(*locationservice.ListKeysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListKeysWithContext indicates an expected call of ListKeysWithContext
+func (mr *MockLocationServiceAPIMockRecorder) ListKeysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKeysWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).ListKeysWithContext), varargs...)
+}
+
 // ListMaps mocks base method
 func (m *MockLocationServiceAPI) ListMaps(arg0 *locationservice.ListMapsInput) (*locationservice.ListMapsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2780,6 +3013,56 @@ func (mr *MockLocationServiceAPIMockRecorder) UpdateGeofenceCollectionWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGeofenceCollectionWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).UpdateGeofenceCollectionWithContext), varargs...)
+}
+
+// UpdateKey mocks base method
+func (m *MockLocationServiceAPI) UpdateKey(arg0 *locationservice.UpdateKeyInput) (*locationservice.UpdateKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateKey", arg0)
+	ret0, _ := ret[0].(*locationservice.UpdateKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateKey indicates an expected call of UpdateKey
+func (mr *MockLocationServiceAPIMockRecorder) UpdateKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateKey", reflect.TypeOf((*MockLocationServiceAPI)(nil).UpdateKey), arg0)
+}
+
+// UpdateKeyRequest mocks base method
+func (m *MockLocationServiceAPI) UpdateKeyRequest(arg0 *locationservice.UpdateKeyInput) (*request.Request, *locationservice.UpdateKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*locationservice.UpdateKeyOutput)
+	return ret0, ret1
+}
+
+// UpdateKeyRequest indicates an expected call of UpdateKeyRequest
+func (mr *MockLocationServiceAPIMockRecorder) UpdateKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateKeyRequest", reflect.TypeOf((*MockLocationServiceAPI)(nil).UpdateKeyRequest), arg0)
+}
+
+// UpdateKeyWithContext mocks base method
+func (m *MockLocationServiceAPI) UpdateKeyWithContext(arg0 context.Context, arg1 *locationservice.UpdateKeyInput, arg2 ...request.Option) (*locationservice.UpdateKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*locationservice.UpdateKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateKeyWithContext indicates an expected call of UpdateKeyWithContext
+func (mr *MockLocationServiceAPIMockRecorder) UpdateKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateKeyWithContext", reflect.TypeOf((*MockLocationServiceAPI)(nil).UpdateKeyWithContext), varargs...)
 }
 
 // UpdateMap mocks base method
