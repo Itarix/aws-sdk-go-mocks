@@ -35,6 +35,56 @@ func (m *MockTimestreamWriteAPI) EXPECT() *MockTimestreamWriteAPIMockRecorder {
 	return m.recorder
 }
 
+// CreateBatchLoadTask mocks base method
+func (m *MockTimestreamWriteAPI) CreateBatchLoadTask(arg0 *timestreamwrite.CreateBatchLoadTaskInput) (*timestreamwrite.CreateBatchLoadTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBatchLoadTask", arg0)
+	ret0, _ := ret[0].(*timestreamwrite.CreateBatchLoadTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBatchLoadTask indicates an expected call of CreateBatchLoadTask
+func (mr *MockTimestreamWriteAPIMockRecorder) CreateBatchLoadTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBatchLoadTask", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).CreateBatchLoadTask), arg0)
+}
+
+// CreateBatchLoadTaskRequest mocks base method
+func (m *MockTimestreamWriteAPI) CreateBatchLoadTaskRequest(arg0 *timestreamwrite.CreateBatchLoadTaskInput) (*request.Request, *timestreamwrite.CreateBatchLoadTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBatchLoadTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*timestreamwrite.CreateBatchLoadTaskOutput)
+	return ret0, ret1
+}
+
+// CreateBatchLoadTaskRequest indicates an expected call of CreateBatchLoadTaskRequest
+func (mr *MockTimestreamWriteAPIMockRecorder) CreateBatchLoadTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBatchLoadTaskRequest", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).CreateBatchLoadTaskRequest), arg0)
+}
+
+// CreateBatchLoadTaskWithContext mocks base method
+func (m *MockTimestreamWriteAPI) CreateBatchLoadTaskWithContext(arg0 context.Context, arg1 *timestreamwrite.CreateBatchLoadTaskInput, arg2 ...request.Option) (*timestreamwrite.CreateBatchLoadTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateBatchLoadTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*timestreamwrite.CreateBatchLoadTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBatchLoadTaskWithContext indicates an expected call of CreateBatchLoadTaskWithContext
+func (mr *MockTimestreamWriteAPIMockRecorder) CreateBatchLoadTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBatchLoadTaskWithContext", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).CreateBatchLoadTaskWithContext), varargs...)
+}
+
 // CreateDatabase mocks base method
 func (m *MockTimestreamWriteAPI) CreateDatabase(arg0 *timestreamwrite.CreateDatabaseInput) (*timestreamwrite.CreateDatabaseOutput, error) {
 	m.ctrl.T.Helper()
@@ -235,6 +285,56 @@ func (mr *MockTimestreamWriteAPIMockRecorder) DeleteTableWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTableWithContext", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).DeleteTableWithContext), varargs...)
 }
 
+// DescribeBatchLoadTask mocks base method
+func (m *MockTimestreamWriteAPI) DescribeBatchLoadTask(arg0 *timestreamwrite.DescribeBatchLoadTaskInput) (*timestreamwrite.DescribeBatchLoadTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBatchLoadTask", arg0)
+	ret0, _ := ret[0].(*timestreamwrite.DescribeBatchLoadTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBatchLoadTask indicates an expected call of DescribeBatchLoadTask
+func (mr *MockTimestreamWriteAPIMockRecorder) DescribeBatchLoadTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchLoadTask", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).DescribeBatchLoadTask), arg0)
+}
+
+// DescribeBatchLoadTaskRequest mocks base method
+func (m *MockTimestreamWriteAPI) DescribeBatchLoadTaskRequest(arg0 *timestreamwrite.DescribeBatchLoadTaskInput) (*request.Request, *timestreamwrite.DescribeBatchLoadTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBatchLoadTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*timestreamwrite.DescribeBatchLoadTaskOutput)
+	return ret0, ret1
+}
+
+// DescribeBatchLoadTaskRequest indicates an expected call of DescribeBatchLoadTaskRequest
+func (mr *MockTimestreamWriteAPIMockRecorder) DescribeBatchLoadTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchLoadTaskRequest", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).DescribeBatchLoadTaskRequest), arg0)
+}
+
+// DescribeBatchLoadTaskWithContext mocks base method
+func (m *MockTimestreamWriteAPI) DescribeBatchLoadTaskWithContext(arg0 context.Context, arg1 *timestreamwrite.DescribeBatchLoadTaskInput, arg2 ...request.Option) (*timestreamwrite.DescribeBatchLoadTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeBatchLoadTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*timestreamwrite.DescribeBatchLoadTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBatchLoadTaskWithContext indicates an expected call of DescribeBatchLoadTaskWithContext
+func (mr *MockTimestreamWriteAPIMockRecorder) DescribeBatchLoadTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchLoadTaskWithContext", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).DescribeBatchLoadTaskWithContext), varargs...)
+}
+
 // DescribeDatabase mocks base method
 func (m *MockTimestreamWriteAPI) DescribeDatabase(arg0 *timestreamwrite.DescribeDatabaseInput) (*timestreamwrite.DescribeDatabaseOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +483,89 @@ func (mr *MockTimestreamWriteAPIMockRecorder) DescribeTableWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTableWithContext", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).DescribeTableWithContext), varargs...)
+}
+
+// ListBatchLoadTasks mocks base method
+func (m *MockTimestreamWriteAPI) ListBatchLoadTasks(arg0 *timestreamwrite.ListBatchLoadTasksInput) (*timestreamwrite.ListBatchLoadTasksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBatchLoadTasks", arg0)
+	ret0, _ := ret[0].(*timestreamwrite.ListBatchLoadTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBatchLoadTasks indicates an expected call of ListBatchLoadTasks
+func (mr *MockTimestreamWriteAPIMockRecorder) ListBatchLoadTasks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchLoadTasks", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).ListBatchLoadTasks), arg0)
+}
+
+// ListBatchLoadTasksPages mocks base method
+func (m *MockTimestreamWriteAPI) ListBatchLoadTasksPages(arg0 *timestreamwrite.ListBatchLoadTasksInput, arg1 func(*timestreamwrite.ListBatchLoadTasksOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBatchLoadTasksPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListBatchLoadTasksPages indicates an expected call of ListBatchLoadTasksPages
+func (mr *MockTimestreamWriteAPIMockRecorder) ListBatchLoadTasksPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchLoadTasksPages", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).ListBatchLoadTasksPages), arg0, arg1)
+}
+
+// ListBatchLoadTasksPagesWithContext mocks base method
+func (m *MockTimestreamWriteAPI) ListBatchLoadTasksPagesWithContext(arg0 context.Context, arg1 *timestreamwrite.ListBatchLoadTasksInput, arg2 func(*timestreamwrite.ListBatchLoadTasksOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBatchLoadTasksPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListBatchLoadTasksPagesWithContext indicates an expected call of ListBatchLoadTasksPagesWithContext
+func (mr *MockTimestreamWriteAPIMockRecorder) ListBatchLoadTasksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchLoadTasksPagesWithContext", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).ListBatchLoadTasksPagesWithContext), varargs...)
+}
+
+// ListBatchLoadTasksRequest mocks base method
+func (m *MockTimestreamWriteAPI) ListBatchLoadTasksRequest(arg0 *timestreamwrite.ListBatchLoadTasksInput) (*request.Request, *timestreamwrite.ListBatchLoadTasksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBatchLoadTasksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*timestreamwrite.ListBatchLoadTasksOutput)
+	return ret0, ret1
+}
+
+// ListBatchLoadTasksRequest indicates an expected call of ListBatchLoadTasksRequest
+func (mr *MockTimestreamWriteAPIMockRecorder) ListBatchLoadTasksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchLoadTasksRequest", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).ListBatchLoadTasksRequest), arg0)
+}
+
+// ListBatchLoadTasksWithContext mocks base method
+func (m *MockTimestreamWriteAPI) ListBatchLoadTasksWithContext(arg0 context.Context, arg1 *timestreamwrite.ListBatchLoadTasksInput, arg2 ...request.Option) (*timestreamwrite.ListBatchLoadTasksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBatchLoadTasksWithContext", varargs...)
+	ret0, _ := ret[0].(*timestreamwrite.ListBatchLoadTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBatchLoadTasksWithContext indicates an expected call of ListBatchLoadTasksWithContext
+func (mr *MockTimestreamWriteAPIMockRecorder) ListBatchLoadTasksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBatchLoadTasksWithContext", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).ListBatchLoadTasksWithContext), varargs...)
 }
 
 // ListDatabases mocks base method
@@ -599,6 +782,56 @@ func (mr *MockTimestreamWriteAPIMockRecorder) ListTagsForResourceWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// ResumeBatchLoadTask mocks base method
+func (m *MockTimestreamWriteAPI) ResumeBatchLoadTask(arg0 *timestreamwrite.ResumeBatchLoadTaskInput) (*timestreamwrite.ResumeBatchLoadTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResumeBatchLoadTask", arg0)
+	ret0, _ := ret[0].(*timestreamwrite.ResumeBatchLoadTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResumeBatchLoadTask indicates an expected call of ResumeBatchLoadTask
+func (mr *MockTimestreamWriteAPIMockRecorder) ResumeBatchLoadTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeBatchLoadTask", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).ResumeBatchLoadTask), arg0)
+}
+
+// ResumeBatchLoadTaskRequest mocks base method
+func (m *MockTimestreamWriteAPI) ResumeBatchLoadTaskRequest(arg0 *timestreamwrite.ResumeBatchLoadTaskInput) (*request.Request, *timestreamwrite.ResumeBatchLoadTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResumeBatchLoadTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*timestreamwrite.ResumeBatchLoadTaskOutput)
+	return ret0, ret1
+}
+
+// ResumeBatchLoadTaskRequest indicates an expected call of ResumeBatchLoadTaskRequest
+func (mr *MockTimestreamWriteAPIMockRecorder) ResumeBatchLoadTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeBatchLoadTaskRequest", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).ResumeBatchLoadTaskRequest), arg0)
+}
+
+// ResumeBatchLoadTaskWithContext mocks base method
+func (m *MockTimestreamWriteAPI) ResumeBatchLoadTaskWithContext(arg0 context.Context, arg1 *timestreamwrite.ResumeBatchLoadTaskInput, arg2 ...request.Option) (*timestreamwrite.ResumeBatchLoadTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ResumeBatchLoadTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*timestreamwrite.ResumeBatchLoadTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResumeBatchLoadTaskWithContext indicates an expected call of ResumeBatchLoadTaskWithContext
+func (mr *MockTimestreamWriteAPIMockRecorder) ResumeBatchLoadTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeBatchLoadTaskWithContext", reflect.TypeOf((*MockTimestreamWriteAPI)(nil).ResumeBatchLoadTaskWithContext), varargs...)
 }
 
 // TagResource mocks base method
