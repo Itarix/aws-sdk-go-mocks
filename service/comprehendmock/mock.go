@@ -435,6 +435,56 @@ func (mr *MockComprehendAPIMockRecorder) ContainsPiiEntitiesWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ContainsPiiEntitiesWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ContainsPiiEntitiesWithContext), varargs...)
 }
 
+// CreateDataset mocks base method
+func (m *MockComprehendAPI) CreateDataset(arg0 *comprehend.CreateDatasetInput) (*comprehend.CreateDatasetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDataset", arg0)
+	ret0, _ := ret[0].(*comprehend.CreateDatasetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDataset indicates an expected call of CreateDataset
+func (mr *MockComprehendAPIMockRecorder) CreateDataset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataset", reflect.TypeOf((*MockComprehendAPI)(nil).CreateDataset), arg0)
+}
+
+// CreateDatasetRequest mocks base method
+func (m *MockComprehendAPI) CreateDatasetRequest(arg0 *comprehend.CreateDatasetInput) (*request.Request, *comprehend.CreateDatasetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateDatasetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.CreateDatasetOutput)
+	return ret0, ret1
+}
+
+// CreateDatasetRequest indicates an expected call of CreateDatasetRequest
+func (mr *MockComprehendAPIMockRecorder) CreateDatasetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatasetRequest", reflect.TypeOf((*MockComprehendAPI)(nil).CreateDatasetRequest), arg0)
+}
+
+// CreateDatasetWithContext mocks base method
+func (m *MockComprehendAPI) CreateDatasetWithContext(arg0 context.Context, arg1 *comprehend.CreateDatasetInput, arg2 ...request.Option) (*comprehend.CreateDatasetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateDatasetWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.CreateDatasetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateDatasetWithContext indicates an expected call of CreateDatasetWithContext
+func (mr *MockComprehendAPIMockRecorder) CreateDatasetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatasetWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).CreateDatasetWithContext), varargs...)
+}
+
 // CreateDocumentClassifier mocks base method
 func (m *MockComprehendAPI) CreateDocumentClassifier(arg0 *comprehend.CreateDocumentClassifierInput) (*comprehend.CreateDocumentClassifierOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +633,56 @@ func (mr *MockComprehendAPIMockRecorder) CreateEntityRecognizerWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEntityRecognizerWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).CreateEntityRecognizerWithContext), varargs...)
+}
+
+// CreateFlywheel mocks base method
+func (m *MockComprehendAPI) CreateFlywheel(arg0 *comprehend.CreateFlywheelInput) (*comprehend.CreateFlywheelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFlywheel", arg0)
+	ret0, _ := ret[0].(*comprehend.CreateFlywheelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFlywheel indicates an expected call of CreateFlywheel
+func (mr *MockComprehendAPIMockRecorder) CreateFlywheel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFlywheel", reflect.TypeOf((*MockComprehendAPI)(nil).CreateFlywheel), arg0)
+}
+
+// CreateFlywheelRequest mocks base method
+func (m *MockComprehendAPI) CreateFlywheelRequest(arg0 *comprehend.CreateFlywheelInput) (*request.Request, *comprehend.CreateFlywheelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFlywheelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.CreateFlywheelOutput)
+	return ret0, ret1
+}
+
+// CreateFlywheelRequest indicates an expected call of CreateFlywheelRequest
+func (mr *MockComprehendAPIMockRecorder) CreateFlywheelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFlywheelRequest", reflect.TypeOf((*MockComprehendAPI)(nil).CreateFlywheelRequest), arg0)
+}
+
+// CreateFlywheelWithContext mocks base method
+func (m *MockComprehendAPI) CreateFlywheelWithContext(arg0 context.Context, arg1 *comprehend.CreateFlywheelInput, arg2 ...request.Option) (*comprehend.CreateFlywheelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFlywheelWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.CreateFlywheelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFlywheelWithContext indicates an expected call of CreateFlywheelWithContext
+func (mr *MockComprehendAPIMockRecorder) CreateFlywheelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFlywheelWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).CreateFlywheelWithContext), varargs...)
 }
 
 // DeleteDocumentClassifier mocks base method
@@ -735,6 +835,56 @@ func (mr *MockComprehendAPIMockRecorder) DeleteEntityRecognizerWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEntityRecognizerWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteEntityRecognizerWithContext), varargs...)
 }
 
+// DeleteFlywheel mocks base method
+func (m *MockComprehendAPI) DeleteFlywheel(arg0 *comprehend.DeleteFlywheelInput) (*comprehend.DeleteFlywheelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFlywheel", arg0)
+	ret0, _ := ret[0].(*comprehend.DeleteFlywheelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFlywheel indicates an expected call of DeleteFlywheel
+func (mr *MockComprehendAPIMockRecorder) DeleteFlywheel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFlywheel", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteFlywheel), arg0)
+}
+
+// DeleteFlywheelRequest mocks base method
+func (m *MockComprehendAPI) DeleteFlywheelRequest(arg0 *comprehend.DeleteFlywheelInput) (*request.Request, *comprehend.DeleteFlywheelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFlywheelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DeleteFlywheelOutput)
+	return ret0, ret1
+}
+
+// DeleteFlywheelRequest indicates an expected call of DeleteFlywheelRequest
+func (mr *MockComprehendAPIMockRecorder) DeleteFlywheelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFlywheelRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteFlywheelRequest), arg0)
+}
+
+// DeleteFlywheelWithContext mocks base method
+func (m *MockComprehendAPI) DeleteFlywheelWithContext(arg0 context.Context, arg1 *comprehend.DeleteFlywheelInput, arg2 ...request.Option) (*comprehend.DeleteFlywheelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFlywheelWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DeleteFlywheelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFlywheelWithContext indicates an expected call of DeleteFlywheelWithContext
+func (mr *MockComprehendAPIMockRecorder) DeleteFlywheelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFlywheelWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteFlywheelWithContext), varargs...)
+}
+
 // DeleteResourcePolicy mocks base method
 func (m *MockComprehendAPI) DeleteResourcePolicy(arg0 *comprehend.DeleteResourcePolicyInput) (*comprehend.DeleteResourcePolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -783,6 +933,56 @@ func (mr *MockComprehendAPIMockRecorder) DeleteResourcePolicyWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DeleteResourcePolicyWithContext), varargs...)
+}
+
+// DescribeDataset mocks base method
+func (m *MockComprehendAPI) DescribeDataset(arg0 *comprehend.DescribeDatasetInput) (*comprehend.DescribeDatasetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDataset", arg0)
+	ret0, _ := ret[0].(*comprehend.DescribeDatasetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDataset indicates an expected call of DescribeDataset
+func (mr *MockComprehendAPIMockRecorder) DescribeDataset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDataset", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeDataset), arg0)
+}
+
+// DescribeDatasetRequest mocks base method
+func (m *MockComprehendAPI) DescribeDatasetRequest(arg0 *comprehend.DescribeDatasetInput) (*request.Request, *comprehend.DescribeDatasetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDatasetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DescribeDatasetOutput)
+	return ret0, ret1
+}
+
+// DescribeDatasetRequest indicates an expected call of DescribeDatasetRequest
+func (mr *MockComprehendAPIMockRecorder) DescribeDatasetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDatasetRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeDatasetRequest), arg0)
+}
+
+// DescribeDatasetWithContext mocks base method
+func (m *MockComprehendAPI) DescribeDatasetWithContext(arg0 context.Context, arg1 *comprehend.DescribeDatasetInput, arg2 ...request.Option) (*comprehend.DescribeDatasetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDatasetWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DescribeDatasetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDatasetWithContext indicates an expected call of DescribeDatasetWithContext
+func (mr *MockComprehendAPIMockRecorder) DescribeDatasetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDatasetWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeDatasetWithContext), varargs...)
 }
 
 // DescribeDocumentClassificationJob mocks base method
@@ -1133,6 +1333,106 @@ func (mr *MockComprehendAPIMockRecorder) DescribeEventsDetectionJobWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEventsDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeEventsDetectionJobWithContext), varargs...)
+}
+
+// DescribeFlywheel mocks base method
+func (m *MockComprehendAPI) DescribeFlywheel(arg0 *comprehend.DescribeFlywheelInput) (*comprehend.DescribeFlywheelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFlywheel", arg0)
+	ret0, _ := ret[0].(*comprehend.DescribeFlywheelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFlywheel indicates an expected call of DescribeFlywheel
+func (mr *MockComprehendAPIMockRecorder) DescribeFlywheel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFlywheel", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeFlywheel), arg0)
+}
+
+// DescribeFlywheelIteration mocks base method
+func (m *MockComprehendAPI) DescribeFlywheelIteration(arg0 *comprehend.DescribeFlywheelIterationInput) (*comprehend.DescribeFlywheelIterationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFlywheelIteration", arg0)
+	ret0, _ := ret[0].(*comprehend.DescribeFlywheelIterationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFlywheelIteration indicates an expected call of DescribeFlywheelIteration
+func (mr *MockComprehendAPIMockRecorder) DescribeFlywheelIteration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFlywheelIteration", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeFlywheelIteration), arg0)
+}
+
+// DescribeFlywheelIterationRequest mocks base method
+func (m *MockComprehendAPI) DescribeFlywheelIterationRequest(arg0 *comprehend.DescribeFlywheelIterationInput) (*request.Request, *comprehend.DescribeFlywheelIterationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFlywheelIterationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DescribeFlywheelIterationOutput)
+	return ret0, ret1
+}
+
+// DescribeFlywheelIterationRequest indicates an expected call of DescribeFlywheelIterationRequest
+func (mr *MockComprehendAPIMockRecorder) DescribeFlywheelIterationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFlywheelIterationRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeFlywheelIterationRequest), arg0)
+}
+
+// DescribeFlywheelIterationWithContext mocks base method
+func (m *MockComprehendAPI) DescribeFlywheelIterationWithContext(arg0 context.Context, arg1 *comprehend.DescribeFlywheelIterationInput, arg2 ...request.Option) (*comprehend.DescribeFlywheelIterationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFlywheelIterationWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DescribeFlywheelIterationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFlywheelIterationWithContext indicates an expected call of DescribeFlywheelIterationWithContext
+func (mr *MockComprehendAPIMockRecorder) DescribeFlywheelIterationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFlywheelIterationWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeFlywheelIterationWithContext), varargs...)
+}
+
+// DescribeFlywheelRequest mocks base method
+func (m *MockComprehendAPI) DescribeFlywheelRequest(arg0 *comprehend.DescribeFlywheelInput) (*request.Request, *comprehend.DescribeFlywheelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFlywheelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.DescribeFlywheelOutput)
+	return ret0, ret1
+}
+
+// DescribeFlywheelRequest indicates an expected call of DescribeFlywheelRequest
+func (mr *MockComprehendAPIMockRecorder) DescribeFlywheelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFlywheelRequest", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeFlywheelRequest), arg0)
+}
+
+// DescribeFlywheelWithContext mocks base method
+func (m *MockComprehendAPI) DescribeFlywheelWithContext(arg0 context.Context, arg1 *comprehend.DescribeFlywheelInput, arg2 ...request.Option) (*comprehend.DescribeFlywheelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFlywheelWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.DescribeFlywheelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFlywheelWithContext indicates an expected call of DescribeFlywheelWithContext
+func (mr *MockComprehendAPIMockRecorder) DescribeFlywheelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFlywheelWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).DescribeFlywheelWithContext), varargs...)
 }
 
 // DescribeKeyPhrasesDetectionJob mocks base method
@@ -1833,6 +2133,89 @@ func (mr *MockComprehendAPIMockRecorder) ImportModelWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportModelWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ImportModelWithContext), varargs...)
+}
+
+// ListDatasets mocks base method
+func (m *MockComprehendAPI) ListDatasets(arg0 *comprehend.ListDatasetsInput) (*comprehend.ListDatasetsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasets", arg0)
+	ret0, _ := ret[0].(*comprehend.ListDatasetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDatasets indicates an expected call of ListDatasets
+func (mr *MockComprehendAPIMockRecorder) ListDatasets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasets", reflect.TypeOf((*MockComprehendAPI)(nil).ListDatasets), arg0)
+}
+
+// ListDatasetsPages mocks base method
+func (m *MockComprehendAPI) ListDatasetsPages(arg0 *comprehend.ListDatasetsInput, arg1 func(*comprehend.ListDatasetsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasetsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDatasetsPages indicates an expected call of ListDatasetsPages
+func (mr *MockComprehendAPIMockRecorder) ListDatasetsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetsPages", reflect.TypeOf((*MockComprehendAPI)(nil).ListDatasetsPages), arg0, arg1)
+}
+
+// ListDatasetsPagesWithContext mocks base method
+func (m *MockComprehendAPI) ListDatasetsPagesWithContext(arg0 context.Context, arg1 *comprehend.ListDatasetsInput, arg2 func(*comprehend.ListDatasetsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDatasetsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDatasetsPagesWithContext indicates an expected call of ListDatasetsPagesWithContext
+func (mr *MockComprehendAPIMockRecorder) ListDatasetsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetsPagesWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListDatasetsPagesWithContext), varargs...)
+}
+
+// ListDatasetsRequest mocks base method
+func (m *MockComprehendAPI) ListDatasetsRequest(arg0 *comprehend.ListDatasetsInput) (*request.Request, *comprehend.ListDatasetsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDatasetsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.ListDatasetsOutput)
+	return ret0, ret1
+}
+
+// ListDatasetsRequest indicates an expected call of ListDatasetsRequest
+func (mr *MockComprehendAPIMockRecorder) ListDatasetsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetsRequest", reflect.TypeOf((*MockComprehendAPI)(nil).ListDatasetsRequest), arg0)
+}
+
+// ListDatasetsWithContext mocks base method
+func (m *MockComprehendAPI) ListDatasetsWithContext(arg0 context.Context, arg1 *comprehend.ListDatasetsInput, arg2 ...request.Option) (*comprehend.ListDatasetsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDatasetsWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.ListDatasetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDatasetsWithContext indicates an expected call of ListDatasetsWithContext
+func (mr *MockComprehendAPIMockRecorder) ListDatasetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatasetsWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListDatasetsWithContext), varargs...)
 }
 
 // ListDocumentClassificationJobs mocks base method
@@ -2582,6 +2965,172 @@ func (mr *MockComprehendAPIMockRecorder) ListEventsDetectionJobsWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventsDetectionJobsWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListEventsDetectionJobsWithContext), varargs...)
 }
 
+// ListFlywheelIterationHistory mocks base method
+func (m *MockComprehendAPI) ListFlywheelIterationHistory(arg0 *comprehend.ListFlywheelIterationHistoryInput) (*comprehend.ListFlywheelIterationHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlywheelIterationHistory", arg0)
+	ret0, _ := ret[0].(*comprehend.ListFlywheelIterationHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFlywheelIterationHistory indicates an expected call of ListFlywheelIterationHistory
+func (mr *MockComprehendAPIMockRecorder) ListFlywheelIterationHistory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlywheelIterationHistory", reflect.TypeOf((*MockComprehendAPI)(nil).ListFlywheelIterationHistory), arg0)
+}
+
+// ListFlywheelIterationHistoryPages mocks base method
+func (m *MockComprehendAPI) ListFlywheelIterationHistoryPages(arg0 *comprehend.ListFlywheelIterationHistoryInput, arg1 func(*comprehend.ListFlywheelIterationHistoryOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlywheelIterationHistoryPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFlywheelIterationHistoryPages indicates an expected call of ListFlywheelIterationHistoryPages
+func (mr *MockComprehendAPIMockRecorder) ListFlywheelIterationHistoryPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlywheelIterationHistoryPages", reflect.TypeOf((*MockComprehendAPI)(nil).ListFlywheelIterationHistoryPages), arg0, arg1)
+}
+
+// ListFlywheelIterationHistoryPagesWithContext mocks base method
+func (m *MockComprehendAPI) ListFlywheelIterationHistoryPagesWithContext(arg0 context.Context, arg1 *comprehend.ListFlywheelIterationHistoryInput, arg2 func(*comprehend.ListFlywheelIterationHistoryOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFlywheelIterationHistoryPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFlywheelIterationHistoryPagesWithContext indicates an expected call of ListFlywheelIterationHistoryPagesWithContext
+func (mr *MockComprehendAPIMockRecorder) ListFlywheelIterationHistoryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlywheelIterationHistoryPagesWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListFlywheelIterationHistoryPagesWithContext), varargs...)
+}
+
+// ListFlywheelIterationHistoryRequest mocks base method
+func (m *MockComprehendAPI) ListFlywheelIterationHistoryRequest(arg0 *comprehend.ListFlywheelIterationHistoryInput) (*request.Request, *comprehend.ListFlywheelIterationHistoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlywheelIterationHistoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.ListFlywheelIterationHistoryOutput)
+	return ret0, ret1
+}
+
+// ListFlywheelIterationHistoryRequest indicates an expected call of ListFlywheelIterationHistoryRequest
+func (mr *MockComprehendAPIMockRecorder) ListFlywheelIterationHistoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlywheelIterationHistoryRequest", reflect.TypeOf((*MockComprehendAPI)(nil).ListFlywheelIterationHistoryRequest), arg0)
+}
+
+// ListFlywheelIterationHistoryWithContext mocks base method
+func (m *MockComprehendAPI) ListFlywheelIterationHistoryWithContext(arg0 context.Context, arg1 *comprehend.ListFlywheelIterationHistoryInput, arg2 ...request.Option) (*comprehend.ListFlywheelIterationHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFlywheelIterationHistoryWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.ListFlywheelIterationHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFlywheelIterationHistoryWithContext indicates an expected call of ListFlywheelIterationHistoryWithContext
+func (mr *MockComprehendAPIMockRecorder) ListFlywheelIterationHistoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlywheelIterationHistoryWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListFlywheelIterationHistoryWithContext), varargs...)
+}
+
+// ListFlywheels mocks base method
+func (m *MockComprehendAPI) ListFlywheels(arg0 *comprehend.ListFlywheelsInput) (*comprehend.ListFlywheelsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlywheels", arg0)
+	ret0, _ := ret[0].(*comprehend.ListFlywheelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFlywheels indicates an expected call of ListFlywheels
+func (mr *MockComprehendAPIMockRecorder) ListFlywheels(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlywheels", reflect.TypeOf((*MockComprehendAPI)(nil).ListFlywheels), arg0)
+}
+
+// ListFlywheelsPages mocks base method
+func (m *MockComprehendAPI) ListFlywheelsPages(arg0 *comprehend.ListFlywheelsInput, arg1 func(*comprehend.ListFlywheelsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlywheelsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFlywheelsPages indicates an expected call of ListFlywheelsPages
+func (mr *MockComprehendAPIMockRecorder) ListFlywheelsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlywheelsPages", reflect.TypeOf((*MockComprehendAPI)(nil).ListFlywheelsPages), arg0, arg1)
+}
+
+// ListFlywheelsPagesWithContext mocks base method
+func (m *MockComprehendAPI) ListFlywheelsPagesWithContext(arg0 context.Context, arg1 *comprehend.ListFlywheelsInput, arg2 func(*comprehend.ListFlywheelsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFlywheelsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFlywheelsPagesWithContext indicates an expected call of ListFlywheelsPagesWithContext
+func (mr *MockComprehendAPIMockRecorder) ListFlywheelsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlywheelsPagesWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListFlywheelsPagesWithContext), varargs...)
+}
+
+// ListFlywheelsRequest mocks base method
+func (m *MockComprehendAPI) ListFlywheelsRequest(arg0 *comprehend.ListFlywheelsInput) (*request.Request, *comprehend.ListFlywheelsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlywheelsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.ListFlywheelsOutput)
+	return ret0, ret1
+}
+
+// ListFlywheelsRequest indicates an expected call of ListFlywheelsRequest
+func (mr *MockComprehendAPIMockRecorder) ListFlywheelsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlywheelsRequest", reflect.TypeOf((*MockComprehendAPI)(nil).ListFlywheelsRequest), arg0)
+}
+
+// ListFlywheelsWithContext mocks base method
+func (m *MockComprehendAPI) ListFlywheelsWithContext(arg0 context.Context, arg1 *comprehend.ListFlywheelsInput, arg2 ...request.Option) (*comprehend.ListFlywheelsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFlywheelsWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.ListFlywheelsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFlywheelsWithContext indicates an expected call of ListFlywheelsWithContext
+func (mr *MockComprehendAPIMockRecorder) ListFlywheelsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlywheelsWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).ListFlywheelsWithContext), varargs...)
+}
+
 // ListKeyPhrasesDetectionJobs mocks base method
 func (m *MockComprehendAPI) ListKeyPhrasesDetectionJobs(arg0 *comprehend.ListKeyPhrasesDetectionJobsInput) (*comprehend.ListKeyPhrasesDetectionJobsOutput, error) {
 	m.ctrl.T.Helper()
@@ -3295,6 +3844,56 @@ func (mr *MockComprehendAPIMockRecorder) StartEventsDetectionJobWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartEventsDetectionJobWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).StartEventsDetectionJobWithContext), varargs...)
+}
+
+// StartFlywheelIteration mocks base method
+func (m *MockComprehendAPI) StartFlywheelIteration(arg0 *comprehend.StartFlywheelIterationInput) (*comprehend.StartFlywheelIterationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartFlywheelIteration", arg0)
+	ret0, _ := ret[0].(*comprehend.StartFlywheelIterationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartFlywheelIteration indicates an expected call of StartFlywheelIteration
+func (mr *MockComprehendAPIMockRecorder) StartFlywheelIteration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartFlywheelIteration", reflect.TypeOf((*MockComprehendAPI)(nil).StartFlywheelIteration), arg0)
+}
+
+// StartFlywheelIterationRequest mocks base method
+func (m *MockComprehendAPI) StartFlywheelIterationRequest(arg0 *comprehend.StartFlywheelIterationInput) (*request.Request, *comprehend.StartFlywheelIterationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartFlywheelIterationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.StartFlywheelIterationOutput)
+	return ret0, ret1
+}
+
+// StartFlywheelIterationRequest indicates an expected call of StartFlywheelIterationRequest
+func (mr *MockComprehendAPIMockRecorder) StartFlywheelIterationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartFlywheelIterationRequest", reflect.TypeOf((*MockComprehendAPI)(nil).StartFlywheelIterationRequest), arg0)
+}
+
+// StartFlywheelIterationWithContext mocks base method
+func (m *MockComprehendAPI) StartFlywheelIterationWithContext(arg0 context.Context, arg1 *comprehend.StartFlywheelIterationInput, arg2 ...request.Option) (*comprehend.StartFlywheelIterationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartFlywheelIterationWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.StartFlywheelIterationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartFlywheelIterationWithContext indicates an expected call of StartFlywheelIterationWithContext
+func (mr *MockComprehendAPIMockRecorder) StartFlywheelIterationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartFlywheelIterationWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).StartFlywheelIterationWithContext), varargs...)
 }
 
 // StartKeyPhrasesDetectionJob mocks base method
@@ -4145,4 +4744,54 @@ func (mr *MockComprehendAPIMockRecorder) UpdateEndpointWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEndpointWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).UpdateEndpointWithContext), varargs...)
+}
+
+// UpdateFlywheel mocks base method
+func (m *MockComprehendAPI) UpdateFlywheel(arg0 *comprehend.UpdateFlywheelInput) (*comprehend.UpdateFlywheelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFlywheel", arg0)
+	ret0, _ := ret[0].(*comprehend.UpdateFlywheelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFlywheel indicates an expected call of UpdateFlywheel
+func (mr *MockComprehendAPIMockRecorder) UpdateFlywheel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFlywheel", reflect.TypeOf((*MockComprehendAPI)(nil).UpdateFlywheel), arg0)
+}
+
+// UpdateFlywheelRequest mocks base method
+func (m *MockComprehendAPI) UpdateFlywheelRequest(arg0 *comprehend.UpdateFlywheelInput) (*request.Request, *comprehend.UpdateFlywheelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFlywheelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*comprehend.UpdateFlywheelOutput)
+	return ret0, ret1
+}
+
+// UpdateFlywheelRequest indicates an expected call of UpdateFlywheelRequest
+func (mr *MockComprehendAPIMockRecorder) UpdateFlywheelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFlywheelRequest", reflect.TypeOf((*MockComprehendAPI)(nil).UpdateFlywheelRequest), arg0)
+}
+
+// UpdateFlywheelWithContext mocks base method
+func (m *MockComprehendAPI) UpdateFlywheelWithContext(arg0 context.Context, arg1 *comprehend.UpdateFlywheelInput, arg2 ...request.Option) (*comprehend.UpdateFlywheelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFlywheelWithContext", varargs...)
+	ret0, _ := ret[0].(*comprehend.UpdateFlywheelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFlywheelWithContext indicates an expected call of UpdateFlywheelWithContext
+func (mr *MockComprehendAPIMockRecorder) UpdateFlywheelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFlywheelWithContext", reflect.TypeOf((*MockComprehendAPI)(nil).UpdateFlywheelWithContext), varargs...)
 }

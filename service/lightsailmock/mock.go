@@ -1135,6 +1135,56 @@ func (mr *MockLightsailAPIMockRecorder) CreateDomainWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).CreateDomainWithContext), varargs...)
 }
 
+// CreateGUISessionAccessDetails mocks base method
+func (m *MockLightsailAPI) CreateGUISessionAccessDetails(arg0 *lightsail.CreateGUISessionAccessDetailsInput) (*lightsail.CreateGUISessionAccessDetailsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateGUISessionAccessDetails", arg0)
+	ret0, _ := ret[0].(*lightsail.CreateGUISessionAccessDetailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateGUISessionAccessDetails indicates an expected call of CreateGUISessionAccessDetails
+func (mr *MockLightsailAPIMockRecorder) CreateGUISessionAccessDetails(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGUISessionAccessDetails", reflect.TypeOf((*MockLightsailAPI)(nil).CreateGUISessionAccessDetails), arg0)
+}
+
+// CreateGUISessionAccessDetailsRequest mocks base method
+func (m *MockLightsailAPI) CreateGUISessionAccessDetailsRequest(arg0 *lightsail.CreateGUISessionAccessDetailsInput) (*request.Request, *lightsail.CreateGUISessionAccessDetailsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateGUISessionAccessDetailsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.CreateGUISessionAccessDetailsOutput)
+	return ret0, ret1
+}
+
+// CreateGUISessionAccessDetailsRequest indicates an expected call of CreateGUISessionAccessDetailsRequest
+func (mr *MockLightsailAPIMockRecorder) CreateGUISessionAccessDetailsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGUISessionAccessDetailsRequest", reflect.TypeOf((*MockLightsailAPI)(nil).CreateGUISessionAccessDetailsRequest), arg0)
+}
+
+// CreateGUISessionAccessDetailsWithContext mocks base method
+func (m *MockLightsailAPI) CreateGUISessionAccessDetailsWithContext(arg0 context.Context, arg1 *lightsail.CreateGUISessionAccessDetailsInput, arg2 ...request.Option) (*lightsail.CreateGUISessionAccessDetailsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateGUISessionAccessDetailsWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.CreateGUISessionAccessDetailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateGUISessionAccessDetailsWithContext indicates an expected call of CreateGUISessionAccessDetailsWithContext
+func (mr *MockLightsailAPIMockRecorder) CreateGUISessionAccessDetailsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGUISessionAccessDetailsWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).CreateGUISessionAccessDetailsWithContext), varargs...)
+}
+
 // CreateInstanceSnapshot mocks base method
 func (m *MockLightsailAPI) CreateInstanceSnapshot(arg0 *lightsail.CreateInstanceSnapshotInput) (*lightsail.CreateInstanceSnapshotOutput, error) {
 	m.ctrl.T.Helper()
@@ -3983,6 +4033,56 @@ func (mr *MockLightsailAPIMockRecorder) GetContainerServicesWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContainerServicesWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetContainerServicesWithContext), varargs...)
+}
+
+// GetCostEstimate mocks base method
+func (m *MockLightsailAPI) GetCostEstimate(arg0 *lightsail.GetCostEstimateInput) (*lightsail.GetCostEstimateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCostEstimate", arg0)
+	ret0, _ := ret[0].(*lightsail.GetCostEstimateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCostEstimate indicates an expected call of GetCostEstimate
+func (mr *MockLightsailAPIMockRecorder) GetCostEstimate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostEstimate", reflect.TypeOf((*MockLightsailAPI)(nil).GetCostEstimate), arg0)
+}
+
+// GetCostEstimateRequest mocks base method
+func (m *MockLightsailAPI) GetCostEstimateRequest(arg0 *lightsail.GetCostEstimateInput) (*request.Request, *lightsail.GetCostEstimateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCostEstimateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.GetCostEstimateOutput)
+	return ret0, ret1
+}
+
+// GetCostEstimateRequest indicates an expected call of GetCostEstimateRequest
+func (mr *MockLightsailAPIMockRecorder) GetCostEstimateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostEstimateRequest", reflect.TypeOf((*MockLightsailAPI)(nil).GetCostEstimateRequest), arg0)
+}
+
+// GetCostEstimateWithContext mocks base method
+func (m *MockLightsailAPI) GetCostEstimateWithContext(arg0 context.Context, arg1 *lightsail.GetCostEstimateInput, arg2 ...request.Option) (*lightsail.GetCostEstimateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCostEstimateWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.GetCostEstimateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCostEstimateWithContext indicates an expected call of GetCostEstimateWithContext
+func (mr *MockLightsailAPIMockRecorder) GetCostEstimateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCostEstimateWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).GetCostEstimateWithContext), varargs...)
 }
 
 // GetDisk mocks base method
@@ -6885,6 +6985,56 @@ func (mr *MockLightsailAPIMockRecorder) SetResourceAccessForBucketWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetResourceAccessForBucketWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).SetResourceAccessForBucketWithContext), varargs...)
 }
 
+// StartGUISession mocks base method
+func (m *MockLightsailAPI) StartGUISession(arg0 *lightsail.StartGUISessionInput) (*lightsail.StartGUISessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartGUISession", arg0)
+	ret0, _ := ret[0].(*lightsail.StartGUISessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartGUISession indicates an expected call of StartGUISession
+func (mr *MockLightsailAPIMockRecorder) StartGUISession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartGUISession", reflect.TypeOf((*MockLightsailAPI)(nil).StartGUISession), arg0)
+}
+
+// StartGUISessionRequest mocks base method
+func (m *MockLightsailAPI) StartGUISessionRequest(arg0 *lightsail.StartGUISessionInput) (*request.Request, *lightsail.StartGUISessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartGUISessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.StartGUISessionOutput)
+	return ret0, ret1
+}
+
+// StartGUISessionRequest indicates an expected call of StartGUISessionRequest
+func (mr *MockLightsailAPIMockRecorder) StartGUISessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartGUISessionRequest", reflect.TypeOf((*MockLightsailAPI)(nil).StartGUISessionRequest), arg0)
+}
+
+// StartGUISessionWithContext mocks base method
+func (m *MockLightsailAPI) StartGUISessionWithContext(arg0 context.Context, arg1 *lightsail.StartGUISessionInput, arg2 ...request.Option) (*lightsail.StartGUISessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartGUISessionWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.StartGUISessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartGUISessionWithContext indicates an expected call of StartGUISessionWithContext
+func (mr *MockLightsailAPIMockRecorder) StartGUISessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartGUISessionWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).StartGUISessionWithContext), varargs...)
+}
+
 // StartInstance mocks base method
 func (m *MockLightsailAPI) StartInstance(arg0 *lightsail.StartInstanceInput) (*lightsail.StartInstanceOutput, error) {
 	m.ctrl.T.Helper()
@@ -6983,6 +7133,56 @@ func (mr *MockLightsailAPIMockRecorder) StartRelationalDatabaseWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartRelationalDatabaseWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).StartRelationalDatabaseWithContext), varargs...)
+}
+
+// StopGUISession mocks base method
+func (m *MockLightsailAPI) StopGUISession(arg0 *lightsail.StopGUISessionInput) (*lightsail.StopGUISessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopGUISession", arg0)
+	ret0, _ := ret[0].(*lightsail.StopGUISessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopGUISession indicates an expected call of StopGUISession
+func (mr *MockLightsailAPIMockRecorder) StopGUISession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopGUISession", reflect.TypeOf((*MockLightsailAPI)(nil).StopGUISession), arg0)
+}
+
+// StopGUISessionRequest mocks base method
+func (m *MockLightsailAPI) StopGUISessionRequest(arg0 *lightsail.StopGUISessionInput) (*request.Request, *lightsail.StopGUISessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopGUISessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lightsail.StopGUISessionOutput)
+	return ret0, ret1
+}
+
+// StopGUISessionRequest indicates an expected call of StopGUISessionRequest
+func (mr *MockLightsailAPIMockRecorder) StopGUISessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopGUISessionRequest", reflect.TypeOf((*MockLightsailAPI)(nil).StopGUISessionRequest), arg0)
+}
+
+// StopGUISessionWithContext mocks base method
+func (m *MockLightsailAPI) StopGUISessionWithContext(arg0 context.Context, arg1 *lightsail.StopGUISessionInput, arg2 ...request.Option) (*lightsail.StopGUISessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopGUISessionWithContext", varargs...)
+	ret0, _ := ret[0].(*lightsail.StopGUISessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopGUISessionWithContext indicates an expected call of StopGUISessionWithContext
+func (mr *MockLightsailAPIMockRecorder) StopGUISessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopGUISessionWithContext", reflect.TypeOf((*MockLightsailAPI)(nil).StopGUISessionWithContext), varargs...)
 }
 
 // StopInstance mocks base method
