@@ -201,6 +201,56 @@ func (mr *MockPricingAPIMockRecorder) GetAttributeValuesWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAttributeValuesWithContext", reflect.TypeOf((*MockPricingAPI)(nil).GetAttributeValuesWithContext), varargs...)
 }
 
+// GetPriceListFileUrl mocks base method
+func (m *MockPricingAPI) GetPriceListFileUrl(arg0 *pricing.GetPriceListFileUrlInput) (*pricing.GetPriceListFileUrlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPriceListFileUrl", arg0)
+	ret0, _ := ret[0].(*pricing.GetPriceListFileUrlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPriceListFileUrl indicates an expected call of GetPriceListFileUrl
+func (mr *MockPricingAPIMockRecorder) GetPriceListFileUrl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPriceListFileUrl", reflect.TypeOf((*MockPricingAPI)(nil).GetPriceListFileUrl), arg0)
+}
+
+// GetPriceListFileUrlRequest mocks base method
+func (m *MockPricingAPI) GetPriceListFileUrlRequest(arg0 *pricing.GetPriceListFileUrlInput) (*request.Request, *pricing.GetPriceListFileUrlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPriceListFileUrlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pricing.GetPriceListFileUrlOutput)
+	return ret0, ret1
+}
+
+// GetPriceListFileUrlRequest indicates an expected call of GetPriceListFileUrlRequest
+func (mr *MockPricingAPIMockRecorder) GetPriceListFileUrlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPriceListFileUrlRequest", reflect.TypeOf((*MockPricingAPI)(nil).GetPriceListFileUrlRequest), arg0)
+}
+
+// GetPriceListFileUrlWithContext mocks base method
+func (m *MockPricingAPI) GetPriceListFileUrlWithContext(arg0 context.Context, arg1 *pricing.GetPriceListFileUrlInput, arg2 ...request.Option) (*pricing.GetPriceListFileUrlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPriceListFileUrlWithContext", varargs...)
+	ret0, _ := ret[0].(*pricing.GetPriceListFileUrlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPriceListFileUrlWithContext indicates an expected call of GetPriceListFileUrlWithContext
+func (mr *MockPricingAPIMockRecorder) GetPriceListFileUrlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPriceListFileUrlWithContext", reflect.TypeOf((*MockPricingAPI)(nil).GetPriceListFileUrlWithContext), varargs...)
+}
+
 // GetProducts mocks base method
 func (m *MockPricingAPI) GetProducts(arg0 *pricing.GetProductsInput) (*pricing.GetProductsOutput, error) {
 	m.ctrl.T.Helper()
@@ -282,4 +332,87 @@ func (mr *MockPricingAPIMockRecorder) GetProductsWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProductsWithContext", reflect.TypeOf((*MockPricingAPI)(nil).GetProductsWithContext), varargs...)
+}
+
+// ListPriceLists mocks base method
+func (m *MockPricingAPI) ListPriceLists(arg0 *pricing.ListPriceListsInput) (*pricing.ListPriceListsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPriceLists", arg0)
+	ret0, _ := ret[0].(*pricing.ListPriceListsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPriceLists indicates an expected call of ListPriceLists
+func (mr *MockPricingAPIMockRecorder) ListPriceLists(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPriceLists", reflect.TypeOf((*MockPricingAPI)(nil).ListPriceLists), arg0)
+}
+
+// ListPriceListsPages mocks base method
+func (m *MockPricingAPI) ListPriceListsPages(arg0 *pricing.ListPriceListsInput, arg1 func(*pricing.ListPriceListsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPriceListsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPriceListsPages indicates an expected call of ListPriceListsPages
+func (mr *MockPricingAPIMockRecorder) ListPriceListsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPriceListsPages", reflect.TypeOf((*MockPricingAPI)(nil).ListPriceListsPages), arg0, arg1)
+}
+
+// ListPriceListsPagesWithContext mocks base method
+func (m *MockPricingAPI) ListPriceListsPagesWithContext(arg0 context.Context, arg1 *pricing.ListPriceListsInput, arg2 func(*pricing.ListPriceListsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPriceListsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPriceListsPagesWithContext indicates an expected call of ListPriceListsPagesWithContext
+func (mr *MockPricingAPIMockRecorder) ListPriceListsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPriceListsPagesWithContext", reflect.TypeOf((*MockPricingAPI)(nil).ListPriceListsPagesWithContext), varargs...)
+}
+
+// ListPriceListsRequest mocks base method
+func (m *MockPricingAPI) ListPriceListsRequest(arg0 *pricing.ListPriceListsInput) (*request.Request, *pricing.ListPriceListsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPriceListsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pricing.ListPriceListsOutput)
+	return ret0, ret1
+}
+
+// ListPriceListsRequest indicates an expected call of ListPriceListsRequest
+func (mr *MockPricingAPIMockRecorder) ListPriceListsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPriceListsRequest", reflect.TypeOf((*MockPricingAPI)(nil).ListPriceListsRequest), arg0)
+}
+
+// ListPriceListsWithContext mocks base method
+func (m *MockPricingAPI) ListPriceListsWithContext(arg0 context.Context, arg1 *pricing.ListPriceListsInput, arg2 ...request.Option) (*pricing.ListPriceListsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPriceListsWithContext", varargs...)
+	ret0, _ := ret[0].(*pricing.ListPriceListsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPriceListsWithContext indicates an expected call of ListPriceListsWithContext
+func (mr *MockPricingAPIMockRecorder) ListPriceListsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPriceListsWithContext", reflect.TypeOf((*MockPricingAPI)(nil).ListPriceListsWithContext), varargs...)
 }

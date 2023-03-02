@@ -218,6 +218,89 @@ func (mr *MockS3OutpostsAPIMockRecorder) ListEndpointsWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEndpointsWithContext", reflect.TypeOf((*MockS3OutpostsAPI)(nil).ListEndpointsWithContext), varargs...)
 }
 
+// ListOutpostsWithS3 mocks base method
+func (m *MockS3OutpostsAPI) ListOutpostsWithS3(arg0 *s3outposts.ListOutpostsWithS3Input) (*s3outposts.ListOutpostsWithS3Output, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOutpostsWithS3", arg0)
+	ret0, _ := ret[0].(*s3outposts.ListOutpostsWithS3Output)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOutpostsWithS3 indicates an expected call of ListOutpostsWithS3
+func (mr *MockS3OutpostsAPIMockRecorder) ListOutpostsWithS3(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOutpostsWithS3", reflect.TypeOf((*MockS3OutpostsAPI)(nil).ListOutpostsWithS3), arg0)
+}
+
+// ListOutpostsWithS3Pages mocks base method
+func (m *MockS3OutpostsAPI) ListOutpostsWithS3Pages(arg0 *s3outposts.ListOutpostsWithS3Input, arg1 func(*s3outposts.ListOutpostsWithS3Output, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOutpostsWithS3Pages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOutpostsWithS3Pages indicates an expected call of ListOutpostsWithS3Pages
+func (mr *MockS3OutpostsAPIMockRecorder) ListOutpostsWithS3Pages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOutpostsWithS3Pages", reflect.TypeOf((*MockS3OutpostsAPI)(nil).ListOutpostsWithS3Pages), arg0, arg1)
+}
+
+// ListOutpostsWithS3PagesWithContext mocks base method
+func (m *MockS3OutpostsAPI) ListOutpostsWithS3PagesWithContext(arg0 context.Context, arg1 *s3outposts.ListOutpostsWithS3Input, arg2 func(*s3outposts.ListOutpostsWithS3Output, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOutpostsWithS3PagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOutpostsWithS3PagesWithContext indicates an expected call of ListOutpostsWithS3PagesWithContext
+func (mr *MockS3OutpostsAPIMockRecorder) ListOutpostsWithS3PagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOutpostsWithS3PagesWithContext", reflect.TypeOf((*MockS3OutpostsAPI)(nil).ListOutpostsWithS3PagesWithContext), varargs...)
+}
+
+// ListOutpostsWithS3Request mocks base method
+func (m *MockS3OutpostsAPI) ListOutpostsWithS3Request(arg0 *s3outposts.ListOutpostsWithS3Input) (*request.Request, *s3outposts.ListOutpostsWithS3Output) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOutpostsWithS3Request", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*s3outposts.ListOutpostsWithS3Output)
+	return ret0, ret1
+}
+
+// ListOutpostsWithS3Request indicates an expected call of ListOutpostsWithS3Request
+func (mr *MockS3OutpostsAPIMockRecorder) ListOutpostsWithS3Request(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOutpostsWithS3Request", reflect.TypeOf((*MockS3OutpostsAPI)(nil).ListOutpostsWithS3Request), arg0)
+}
+
+// ListOutpostsWithS3WithContext mocks base method
+func (m *MockS3OutpostsAPI) ListOutpostsWithS3WithContext(arg0 context.Context, arg1 *s3outposts.ListOutpostsWithS3Input, arg2 ...request.Option) (*s3outposts.ListOutpostsWithS3Output, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOutpostsWithS3WithContext", varargs...)
+	ret0, _ := ret[0].(*s3outposts.ListOutpostsWithS3Output)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOutpostsWithS3WithContext indicates an expected call of ListOutpostsWithS3WithContext
+func (mr *MockS3OutpostsAPIMockRecorder) ListOutpostsWithS3WithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOutpostsWithS3WithContext", reflect.TypeOf((*MockS3OutpostsAPI)(nil).ListOutpostsWithS3WithContext), varargs...)
+}
+
 // ListSharedEndpoints mocks base method
 func (m *MockS3OutpostsAPI) ListSharedEndpoints(arg0 *s3outposts.ListSharedEndpointsInput) (*s3outposts.ListSharedEndpointsOutput, error) {
 	m.ctrl.T.Helper()
