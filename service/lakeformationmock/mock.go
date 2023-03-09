@@ -785,6 +785,56 @@ func (mr *MockLakeFormationAPIMockRecorder) ExtendTransactionWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExtendTransactionWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).ExtendTransactionWithContext), varargs...)
 }
 
+// GetDataCellsFilter mocks base method
+func (m *MockLakeFormationAPI) GetDataCellsFilter(arg0 *lakeformation.GetDataCellsFilterInput) (*lakeformation.GetDataCellsFilterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataCellsFilter", arg0)
+	ret0, _ := ret[0].(*lakeformation.GetDataCellsFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataCellsFilter indicates an expected call of GetDataCellsFilter
+func (mr *MockLakeFormationAPIMockRecorder) GetDataCellsFilter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataCellsFilter", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetDataCellsFilter), arg0)
+}
+
+// GetDataCellsFilterRequest mocks base method
+func (m *MockLakeFormationAPI) GetDataCellsFilterRequest(arg0 *lakeformation.GetDataCellsFilterInput) (*request.Request, *lakeformation.GetDataCellsFilterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDataCellsFilterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.GetDataCellsFilterOutput)
+	return ret0, ret1
+}
+
+// GetDataCellsFilterRequest indicates an expected call of GetDataCellsFilterRequest
+func (mr *MockLakeFormationAPIMockRecorder) GetDataCellsFilterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataCellsFilterRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetDataCellsFilterRequest), arg0)
+}
+
+// GetDataCellsFilterWithContext mocks base method
+func (m *MockLakeFormationAPI) GetDataCellsFilterWithContext(arg0 context.Context, arg1 *lakeformation.GetDataCellsFilterInput, arg2 ...request.Option) (*lakeformation.GetDataCellsFilterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDataCellsFilterWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.GetDataCellsFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDataCellsFilterWithContext indicates an expected call of GetDataCellsFilterWithContext
+func (mr *MockLakeFormationAPIMockRecorder) GetDataCellsFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataCellsFilterWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).GetDataCellsFilterWithContext), varargs...)
+}
+
 // GetDataLakeSettings mocks base method
 func (m *MockLakeFormationAPI) GetDataLakeSettings(arg0 *lakeformation.GetDataLakeSettingsInput) (*lakeformation.GetDataLakeSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2446,6 +2496,56 @@ func (mr *MockLakeFormationAPIMockRecorder) StartTransactionWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTransactionWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).StartTransactionWithContext), varargs...)
+}
+
+// UpdateDataCellsFilter mocks base method
+func (m *MockLakeFormationAPI) UpdateDataCellsFilter(arg0 *lakeformation.UpdateDataCellsFilterInput) (*lakeformation.UpdateDataCellsFilterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDataCellsFilter", arg0)
+	ret0, _ := ret[0].(*lakeformation.UpdateDataCellsFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDataCellsFilter indicates an expected call of UpdateDataCellsFilter
+func (mr *MockLakeFormationAPIMockRecorder) UpdateDataCellsFilter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataCellsFilter", reflect.TypeOf((*MockLakeFormationAPI)(nil).UpdateDataCellsFilter), arg0)
+}
+
+// UpdateDataCellsFilterRequest mocks base method
+func (m *MockLakeFormationAPI) UpdateDataCellsFilterRequest(arg0 *lakeformation.UpdateDataCellsFilterInput) (*request.Request, *lakeformation.UpdateDataCellsFilterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDataCellsFilterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.UpdateDataCellsFilterOutput)
+	return ret0, ret1
+}
+
+// UpdateDataCellsFilterRequest indicates an expected call of UpdateDataCellsFilterRequest
+func (mr *MockLakeFormationAPIMockRecorder) UpdateDataCellsFilterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataCellsFilterRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).UpdateDataCellsFilterRequest), arg0)
+}
+
+// UpdateDataCellsFilterWithContext mocks base method
+func (m *MockLakeFormationAPI) UpdateDataCellsFilterWithContext(arg0 context.Context, arg1 *lakeformation.UpdateDataCellsFilterInput, arg2 ...request.Option) (*lakeformation.UpdateDataCellsFilterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDataCellsFilterWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.UpdateDataCellsFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDataCellsFilterWithContext indicates an expected call of UpdateDataCellsFilterWithContext
+func (mr *MockLakeFormationAPIMockRecorder) UpdateDataCellsFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataCellsFilterWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).UpdateDataCellsFilterWithContext), varargs...)
 }
 
 // UpdateLFTag mocks base method
