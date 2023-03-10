@@ -3914,6 +3914,89 @@ func (mr *MockConnectAPIMockRecorder) GetMetricDataRequest(arg0 interface{}) *go
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricDataRequest", reflect.TypeOf((*MockConnectAPI)(nil).GetMetricDataRequest), arg0)
 }
 
+// GetMetricDataV2 mocks base method
+func (m *MockConnectAPI) GetMetricDataV2(arg0 *connect.GetMetricDataV2Input) (*connect.GetMetricDataV2Output, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMetricDataV2", arg0)
+	ret0, _ := ret[0].(*connect.GetMetricDataV2Output)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMetricDataV2 indicates an expected call of GetMetricDataV2
+func (mr *MockConnectAPIMockRecorder) GetMetricDataV2(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricDataV2", reflect.TypeOf((*MockConnectAPI)(nil).GetMetricDataV2), arg0)
+}
+
+// GetMetricDataV2Pages mocks base method
+func (m *MockConnectAPI) GetMetricDataV2Pages(arg0 *connect.GetMetricDataV2Input, arg1 func(*connect.GetMetricDataV2Output, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMetricDataV2Pages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetMetricDataV2Pages indicates an expected call of GetMetricDataV2Pages
+func (mr *MockConnectAPIMockRecorder) GetMetricDataV2Pages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricDataV2Pages", reflect.TypeOf((*MockConnectAPI)(nil).GetMetricDataV2Pages), arg0, arg1)
+}
+
+// GetMetricDataV2PagesWithContext mocks base method
+func (m *MockConnectAPI) GetMetricDataV2PagesWithContext(arg0 context.Context, arg1 *connect.GetMetricDataV2Input, arg2 func(*connect.GetMetricDataV2Output, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMetricDataV2PagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetMetricDataV2PagesWithContext indicates an expected call of GetMetricDataV2PagesWithContext
+func (mr *MockConnectAPIMockRecorder) GetMetricDataV2PagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricDataV2PagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetMetricDataV2PagesWithContext), varargs...)
+}
+
+// GetMetricDataV2Request mocks base method
+func (m *MockConnectAPI) GetMetricDataV2Request(arg0 *connect.GetMetricDataV2Input) (*request.Request, *connect.GetMetricDataV2Output) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMetricDataV2Request", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.GetMetricDataV2Output)
+	return ret0, ret1
+}
+
+// GetMetricDataV2Request indicates an expected call of GetMetricDataV2Request
+func (mr *MockConnectAPIMockRecorder) GetMetricDataV2Request(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricDataV2Request", reflect.TypeOf((*MockConnectAPI)(nil).GetMetricDataV2Request), arg0)
+}
+
+// GetMetricDataV2WithContext mocks base method
+func (m *MockConnectAPI) GetMetricDataV2WithContext(arg0 context.Context, arg1 *connect.GetMetricDataV2Input, arg2 ...request.Option) (*connect.GetMetricDataV2Output, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMetricDataV2WithContext", varargs...)
+	ret0, _ := ret[0].(*connect.GetMetricDataV2Output)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMetricDataV2WithContext indicates an expected call of GetMetricDataV2WithContext
+func (mr *MockConnectAPIMockRecorder) GetMetricDataV2WithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetricDataV2WithContext", reflect.TypeOf((*MockConnectAPI)(nil).GetMetricDataV2WithContext), varargs...)
+}
+
 // GetMetricDataWithContext mocks base method
 func (m *MockConnectAPI) GetMetricDataWithContext(arg0 context.Context, arg1 *connect.GetMetricDataInput, arg2 ...request.Option) (*connect.GetMetricDataOutput, error) {
 	m.ctrl.T.Helper()

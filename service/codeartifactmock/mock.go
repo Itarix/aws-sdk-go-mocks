@@ -1733,6 +1733,56 @@ func (mr *MockCodeArtifactAPIMockRecorder) ListTagsForResourceWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockCodeArtifactAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// PublishPackageVersion mocks base method
+func (m *MockCodeArtifactAPI) PublishPackageVersion(arg0 *codeartifact.PublishPackageVersionInput) (*codeartifact.PublishPackageVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PublishPackageVersion", arg0)
+	ret0, _ := ret[0].(*codeartifact.PublishPackageVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PublishPackageVersion indicates an expected call of PublishPackageVersion
+func (mr *MockCodeArtifactAPIMockRecorder) PublishPackageVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishPackageVersion", reflect.TypeOf((*MockCodeArtifactAPI)(nil).PublishPackageVersion), arg0)
+}
+
+// PublishPackageVersionRequest mocks base method
+func (m *MockCodeArtifactAPI) PublishPackageVersionRequest(arg0 *codeartifact.PublishPackageVersionInput) (*request.Request, *codeartifact.PublishPackageVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PublishPackageVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codeartifact.PublishPackageVersionOutput)
+	return ret0, ret1
+}
+
+// PublishPackageVersionRequest indicates an expected call of PublishPackageVersionRequest
+func (mr *MockCodeArtifactAPIMockRecorder) PublishPackageVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishPackageVersionRequest", reflect.TypeOf((*MockCodeArtifactAPI)(nil).PublishPackageVersionRequest), arg0)
+}
+
+// PublishPackageVersionWithContext mocks base method
+func (m *MockCodeArtifactAPI) PublishPackageVersionWithContext(arg0 context.Context, arg1 *codeartifact.PublishPackageVersionInput, arg2 ...request.Option) (*codeartifact.PublishPackageVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PublishPackageVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*codeartifact.PublishPackageVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PublishPackageVersionWithContext indicates an expected call of PublishPackageVersionWithContext
+func (mr *MockCodeArtifactAPIMockRecorder) PublishPackageVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishPackageVersionWithContext", reflect.TypeOf((*MockCodeArtifactAPI)(nil).PublishPackageVersionWithContext), varargs...)
+}
+
 // PutDomainPermissionsPolicy mocks base method
 func (m *MockCodeArtifactAPI) PutDomainPermissionsPolicy(arg0 *codeartifact.PutDomainPermissionsPolicyInput) (*codeartifact.PutDomainPermissionsPolicyOutput, error) {
 	m.ctrl.T.Helper()
