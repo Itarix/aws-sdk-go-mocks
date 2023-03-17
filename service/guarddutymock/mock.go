@@ -1033,6 +1033,39 @@ func (mr *MockGuardDutyAPIMockRecorder) DescribeOrganizationConfiguration(arg0 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfiguration", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribeOrganizationConfiguration), arg0)
 }
 
+// DescribeOrganizationConfigurationPages mocks base method
+func (m *MockGuardDutyAPI) DescribeOrganizationConfigurationPages(arg0 *guardduty.DescribeOrganizationConfigurationInput, arg1 func(*guardduty.DescribeOrganizationConfigurationOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationConfigurationPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeOrganizationConfigurationPages indicates an expected call of DescribeOrganizationConfigurationPages
+func (mr *MockGuardDutyAPIMockRecorder) DescribeOrganizationConfigurationPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfigurationPages", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribeOrganizationConfigurationPages), arg0, arg1)
+}
+
+// DescribeOrganizationConfigurationPagesWithContext mocks base method
+func (m *MockGuardDutyAPI) DescribeOrganizationConfigurationPagesWithContext(arg0 context.Context, arg1 *guardduty.DescribeOrganizationConfigurationInput, arg2 func(*guardduty.DescribeOrganizationConfigurationOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeOrganizationConfigurationPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeOrganizationConfigurationPagesWithContext indicates an expected call of DescribeOrganizationConfigurationPagesWithContext
+func (mr *MockGuardDutyAPIMockRecorder) DescribeOrganizationConfigurationPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationConfigurationPagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).DescribeOrganizationConfigurationPagesWithContext), varargs...)
+}
+
 // DescribeOrganizationConfigurationRequest mocks base method
 func (m *MockGuardDutyAPI) DescribeOrganizationConfigurationRequest(arg0 *guardduty.DescribeOrganizationConfigurationInput) (*request.Request, *guardduty.DescribeOrganizationConfigurationOutput) {
 	m.ctrl.T.Helper()
