@@ -1000,6 +1000,39 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeActivities(arg0 interface{}) *gom
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActivities", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeActivities), arg0)
 }
 
+// DescribeActivitiesPages mocks base method
+func (m *MockWorkDocsAPI) DescribeActivitiesPages(arg0 *workdocs.DescribeActivitiesInput, arg1 func(*workdocs.DescribeActivitiesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeActivitiesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeActivitiesPages indicates an expected call of DescribeActivitiesPages
+func (mr *MockWorkDocsAPIMockRecorder) DescribeActivitiesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActivitiesPages", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeActivitiesPages), arg0, arg1)
+}
+
+// DescribeActivitiesPagesWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeActivitiesPagesWithContext(arg0 context.Context, arg1 *workdocs.DescribeActivitiesInput, arg2 func(*workdocs.DescribeActivitiesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeActivitiesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeActivitiesPagesWithContext indicates an expected call of DescribeActivitiesPagesWithContext
+func (mr *MockWorkDocsAPIMockRecorder) DescribeActivitiesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeActivitiesPagesWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeActivitiesPagesWithContext), varargs...)
+}
+
 // DescribeActivitiesRequest mocks base method
 func (m *MockWorkDocsAPI) DescribeActivitiesRequest(arg0 *workdocs.DescribeActivitiesInput) (*request.Request, *workdocs.DescribeActivitiesOutput) {
 	m.ctrl.T.Helper()
@@ -1048,6 +1081,39 @@ func (m *MockWorkDocsAPI) DescribeComments(arg0 *workdocs.DescribeCommentsInput)
 func (mr *MockWorkDocsAPIMockRecorder) DescribeComments(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeComments", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeComments), arg0)
+}
+
+// DescribeCommentsPages mocks base method
+func (m *MockWorkDocsAPI) DescribeCommentsPages(arg0 *workdocs.DescribeCommentsInput, arg1 func(*workdocs.DescribeCommentsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCommentsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeCommentsPages indicates an expected call of DescribeCommentsPages
+func (mr *MockWorkDocsAPIMockRecorder) DescribeCommentsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCommentsPages", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeCommentsPages), arg0, arg1)
+}
+
+// DescribeCommentsPagesWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeCommentsPagesWithContext(arg0 context.Context, arg1 *workdocs.DescribeCommentsInput, arg2 func(*workdocs.DescribeCommentsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCommentsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeCommentsPagesWithContext indicates an expected call of DescribeCommentsPagesWithContext
+func (mr *MockWorkDocsAPIMockRecorder) DescribeCommentsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCommentsPagesWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeCommentsPagesWithContext), varargs...)
 }
 
 // DescribeCommentsRequest mocks base method
@@ -1266,6 +1332,39 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeGroups(arg0 interface{}) *gomock.
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGroups", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeGroups), arg0)
 }
 
+// DescribeGroupsPages mocks base method
+func (m *MockWorkDocsAPI) DescribeGroupsPages(arg0 *workdocs.DescribeGroupsInput, arg1 func(*workdocs.DescribeGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeGroupsPages indicates an expected call of DescribeGroupsPages
+func (mr *MockWorkDocsAPIMockRecorder) DescribeGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGroupsPages", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeGroupsPages), arg0, arg1)
+}
+
+// DescribeGroupsPagesWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeGroupsPagesWithContext(arg0 context.Context, arg1 *workdocs.DescribeGroupsInput, arg2 func(*workdocs.DescribeGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeGroupsPagesWithContext indicates an expected call of DescribeGroupsPagesWithContext
+func (mr *MockWorkDocsAPIMockRecorder) DescribeGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGroupsPagesWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeGroupsPagesWithContext), varargs...)
+}
+
 // DescribeGroupsRequest mocks base method
 func (m *MockWorkDocsAPI) DescribeGroupsRequest(arg0 *workdocs.DescribeGroupsInput) (*request.Request, *workdocs.DescribeGroupsOutput) {
 	m.ctrl.T.Helper()
@@ -1314,6 +1413,39 @@ func (m *MockWorkDocsAPI) DescribeNotificationSubscriptions(arg0 *workdocs.Descr
 func (mr *MockWorkDocsAPIMockRecorder) DescribeNotificationSubscriptions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNotificationSubscriptions", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeNotificationSubscriptions), arg0)
+}
+
+// DescribeNotificationSubscriptionsPages mocks base method
+func (m *MockWorkDocsAPI) DescribeNotificationSubscriptionsPages(arg0 *workdocs.DescribeNotificationSubscriptionsInput, arg1 func(*workdocs.DescribeNotificationSubscriptionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeNotificationSubscriptionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeNotificationSubscriptionsPages indicates an expected call of DescribeNotificationSubscriptionsPages
+func (mr *MockWorkDocsAPIMockRecorder) DescribeNotificationSubscriptionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNotificationSubscriptionsPages", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeNotificationSubscriptionsPages), arg0, arg1)
+}
+
+// DescribeNotificationSubscriptionsPagesWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeNotificationSubscriptionsPagesWithContext(arg0 context.Context, arg1 *workdocs.DescribeNotificationSubscriptionsInput, arg2 func(*workdocs.DescribeNotificationSubscriptionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeNotificationSubscriptionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeNotificationSubscriptionsPagesWithContext indicates an expected call of DescribeNotificationSubscriptionsPagesWithContext
+func (mr *MockWorkDocsAPIMockRecorder) DescribeNotificationSubscriptionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNotificationSubscriptionsPagesWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeNotificationSubscriptionsPagesWithContext), varargs...)
 }
 
 // DescribeNotificationSubscriptionsRequest mocks base method
@@ -1366,6 +1498,39 @@ func (mr *MockWorkDocsAPIMockRecorder) DescribeResourcePermissions(arg0 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeResourcePermissions", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeResourcePermissions), arg0)
 }
 
+// DescribeResourcePermissionsPages mocks base method
+func (m *MockWorkDocsAPI) DescribeResourcePermissionsPages(arg0 *workdocs.DescribeResourcePermissionsInput, arg1 func(*workdocs.DescribeResourcePermissionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeResourcePermissionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeResourcePermissionsPages indicates an expected call of DescribeResourcePermissionsPages
+func (mr *MockWorkDocsAPIMockRecorder) DescribeResourcePermissionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeResourcePermissionsPages", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeResourcePermissionsPages), arg0, arg1)
+}
+
+// DescribeResourcePermissionsPagesWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeResourcePermissionsPagesWithContext(arg0 context.Context, arg1 *workdocs.DescribeResourcePermissionsInput, arg2 func(*workdocs.DescribeResourcePermissionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeResourcePermissionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeResourcePermissionsPagesWithContext indicates an expected call of DescribeResourcePermissionsPagesWithContext
+func (mr *MockWorkDocsAPIMockRecorder) DescribeResourcePermissionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeResourcePermissionsPagesWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeResourcePermissionsPagesWithContext), varargs...)
+}
+
 // DescribeResourcePermissionsRequest mocks base method
 func (m *MockWorkDocsAPI) DescribeResourcePermissionsRequest(arg0 *workdocs.DescribeResourcePermissionsInput) (*request.Request, *workdocs.DescribeResourcePermissionsOutput) {
 	m.ctrl.T.Helper()
@@ -1414,6 +1579,39 @@ func (m *MockWorkDocsAPI) DescribeRootFolders(arg0 *workdocs.DescribeRootFolders
 func (mr *MockWorkDocsAPIMockRecorder) DescribeRootFolders(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRootFolders", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeRootFolders), arg0)
+}
+
+// DescribeRootFoldersPages mocks base method
+func (m *MockWorkDocsAPI) DescribeRootFoldersPages(arg0 *workdocs.DescribeRootFoldersInput, arg1 func(*workdocs.DescribeRootFoldersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRootFoldersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeRootFoldersPages indicates an expected call of DescribeRootFoldersPages
+func (mr *MockWorkDocsAPIMockRecorder) DescribeRootFoldersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRootFoldersPages", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeRootFoldersPages), arg0, arg1)
+}
+
+// DescribeRootFoldersPagesWithContext mocks base method
+func (m *MockWorkDocsAPI) DescribeRootFoldersPagesWithContext(arg0 context.Context, arg1 *workdocs.DescribeRootFoldersInput, arg2 func(*workdocs.DescribeRootFoldersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeRootFoldersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeRootFoldersPagesWithContext indicates an expected call of DescribeRootFoldersPagesWithContext
+func (mr *MockWorkDocsAPIMockRecorder) DescribeRootFoldersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRootFoldersPagesWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).DescribeRootFoldersPagesWithContext), varargs...)
 }
 
 // DescribeRootFoldersRequest mocks base method
@@ -2082,6 +2280,89 @@ func (mr *MockWorkDocsAPIMockRecorder) RestoreDocumentVersionsWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreDocumentVersionsWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).RestoreDocumentVersionsWithContext), varargs...)
+}
+
+// SearchResources mocks base method
+func (m *MockWorkDocsAPI) SearchResources(arg0 *workdocs.SearchResourcesInput) (*workdocs.SearchResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchResources", arg0)
+	ret0, _ := ret[0].(*workdocs.SearchResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchResources indicates an expected call of SearchResources
+func (mr *MockWorkDocsAPIMockRecorder) SearchResources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchResources", reflect.TypeOf((*MockWorkDocsAPI)(nil).SearchResources), arg0)
+}
+
+// SearchResourcesPages mocks base method
+func (m *MockWorkDocsAPI) SearchResourcesPages(arg0 *workdocs.SearchResourcesInput, arg1 func(*workdocs.SearchResourcesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchResourcesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchResourcesPages indicates an expected call of SearchResourcesPages
+func (mr *MockWorkDocsAPIMockRecorder) SearchResourcesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchResourcesPages", reflect.TypeOf((*MockWorkDocsAPI)(nil).SearchResourcesPages), arg0, arg1)
+}
+
+// SearchResourcesPagesWithContext mocks base method
+func (m *MockWorkDocsAPI) SearchResourcesPagesWithContext(arg0 context.Context, arg1 *workdocs.SearchResourcesInput, arg2 func(*workdocs.SearchResourcesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchResourcesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchResourcesPagesWithContext indicates an expected call of SearchResourcesPagesWithContext
+func (mr *MockWorkDocsAPIMockRecorder) SearchResourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchResourcesPagesWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).SearchResourcesPagesWithContext), varargs...)
+}
+
+// SearchResourcesRequest mocks base method
+func (m *MockWorkDocsAPI) SearchResourcesRequest(arg0 *workdocs.SearchResourcesInput) (*request.Request, *workdocs.SearchResourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchResourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workdocs.SearchResourcesOutput)
+	return ret0, ret1
+}
+
+// SearchResourcesRequest indicates an expected call of SearchResourcesRequest
+func (mr *MockWorkDocsAPIMockRecorder) SearchResourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchResourcesRequest", reflect.TypeOf((*MockWorkDocsAPI)(nil).SearchResourcesRequest), arg0)
+}
+
+// SearchResourcesWithContext mocks base method
+func (m *MockWorkDocsAPI) SearchResourcesWithContext(arg0 context.Context, arg1 *workdocs.SearchResourcesInput, arg2 ...request.Option) (*workdocs.SearchResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchResourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*workdocs.SearchResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchResourcesWithContext indicates an expected call of SearchResourcesWithContext
+func (mr *MockWorkDocsAPIMockRecorder) SearchResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchResourcesWithContext", reflect.TypeOf((*MockWorkDocsAPI)(nil).SearchResourcesWithContext), varargs...)
 }
 
 // UpdateDocument mocks base method
