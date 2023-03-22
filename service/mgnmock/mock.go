@@ -1766,6 +1766,338 @@ func (mr *MockMgnAPIMockRecorder) ListApplicationsWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListApplicationsWithContext), varargs...)
 }
 
+// ListExportErrors mocks base method
+func (m *MockMgnAPI) ListExportErrors(arg0 *mgn.ListExportErrorsInput) (*mgn.ListExportErrorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExportErrors", arg0)
+	ret0, _ := ret[0].(*mgn.ListExportErrorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExportErrors indicates an expected call of ListExportErrors
+func (mr *MockMgnAPIMockRecorder) ListExportErrors(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExportErrors", reflect.TypeOf((*MockMgnAPI)(nil).ListExportErrors), arg0)
+}
+
+// ListExportErrorsPages mocks base method
+func (m *MockMgnAPI) ListExportErrorsPages(arg0 *mgn.ListExportErrorsInput, arg1 func(*mgn.ListExportErrorsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExportErrorsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExportErrorsPages indicates an expected call of ListExportErrorsPages
+func (mr *MockMgnAPIMockRecorder) ListExportErrorsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExportErrorsPages", reflect.TypeOf((*MockMgnAPI)(nil).ListExportErrorsPages), arg0, arg1)
+}
+
+// ListExportErrorsPagesWithContext mocks base method
+func (m *MockMgnAPI) ListExportErrorsPagesWithContext(arg0 context.Context, arg1 *mgn.ListExportErrorsInput, arg2 func(*mgn.ListExportErrorsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExportErrorsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExportErrorsPagesWithContext indicates an expected call of ListExportErrorsPagesWithContext
+func (mr *MockMgnAPIMockRecorder) ListExportErrorsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExportErrorsPagesWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListExportErrorsPagesWithContext), varargs...)
+}
+
+// ListExportErrorsRequest mocks base method
+func (m *MockMgnAPI) ListExportErrorsRequest(arg0 *mgn.ListExportErrorsInput) (*request.Request, *mgn.ListExportErrorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExportErrorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.ListExportErrorsOutput)
+	return ret0, ret1
+}
+
+// ListExportErrorsRequest indicates an expected call of ListExportErrorsRequest
+func (mr *MockMgnAPIMockRecorder) ListExportErrorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExportErrorsRequest", reflect.TypeOf((*MockMgnAPI)(nil).ListExportErrorsRequest), arg0)
+}
+
+// ListExportErrorsWithContext mocks base method
+func (m *MockMgnAPI) ListExportErrorsWithContext(arg0 context.Context, arg1 *mgn.ListExportErrorsInput, arg2 ...request.Option) (*mgn.ListExportErrorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExportErrorsWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.ListExportErrorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExportErrorsWithContext indicates an expected call of ListExportErrorsWithContext
+func (mr *MockMgnAPIMockRecorder) ListExportErrorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExportErrorsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListExportErrorsWithContext), varargs...)
+}
+
+// ListExports mocks base method
+func (m *MockMgnAPI) ListExports(arg0 *mgn.ListExportsInput) (*mgn.ListExportsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExports", arg0)
+	ret0, _ := ret[0].(*mgn.ListExportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExports indicates an expected call of ListExports
+func (mr *MockMgnAPIMockRecorder) ListExports(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExports", reflect.TypeOf((*MockMgnAPI)(nil).ListExports), arg0)
+}
+
+// ListExportsPages mocks base method
+func (m *MockMgnAPI) ListExportsPages(arg0 *mgn.ListExportsInput, arg1 func(*mgn.ListExportsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExportsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExportsPages indicates an expected call of ListExportsPages
+func (mr *MockMgnAPIMockRecorder) ListExportsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExportsPages", reflect.TypeOf((*MockMgnAPI)(nil).ListExportsPages), arg0, arg1)
+}
+
+// ListExportsPagesWithContext mocks base method
+func (m *MockMgnAPI) ListExportsPagesWithContext(arg0 context.Context, arg1 *mgn.ListExportsInput, arg2 func(*mgn.ListExportsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExportsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListExportsPagesWithContext indicates an expected call of ListExportsPagesWithContext
+func (mr *MockMgnAPIMockRecorder) ListExportsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExportsPagesWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListExportsPagesWithContext), varargs...)
+}
+
+// ListExportsRequest mocks base method
+func (m *MockMgnAPI) ListExportsRequest(arg0 *mgn.ListExportsInput) (*request.Request, *mgn.ListExportsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListExportsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.ListExportsOutput)
+	return ret0, ret1
+}
+
+// ListExportsRequest indicates an expected call of ListExportsRequest
+func (mr *MockMgnAPIMockRecorder) ListExportsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExportsRequest", reflect.TypeOf((*MockMgnAPI)(nil).ListExportsRequest), arg0)
+}
+
+// ListExportsWithContext mocks base method
+func (m *MockMgnAPI) ListExportsWithContext(arg0 context.Context, arg1 *mgn.ListExportsInput, arg2 ...request.Option) (*mgn.ListExportsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListExportsWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.ListExportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListExportsWithContext indicates an expected call of ListExportsWithContext
+func (mr *MockMgnAPIMockRecorder) ListExportsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExportsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListExportsWithContext), varargs...)
+}
+
+// ListImportErrors mocks base method
+func (m *MockMgnAPI) ListImportErrors(arg0 *mgn.ListImportErrorsInput) (*mgn.ListImportErrorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListImportErrors", arg0)
+	ret0, _ := ret[0].(*mgn.ListImportErrorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListImportErrors indicates an expected call of ListImportErrors
+func (mr *MockMgnAPIMockRecorder) ListImportErrors(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportErrors", reflect.TypeOf((*MockMgnAPI)(nil).ListImportErrors), arg0)
+}
+
+// ListImportErrorsPages mocks base method
+func (m *MockMgnAPI) ListImportErrorsPages(arg0 *mgn.ListImportErrorsInput, arg1 func(*mgn.ListImportErrorsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListImportErrorsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListImportErrorsPages indicates an expected call of ListImportErrorsPages
+func (mr *MockMgnAPIMockRecorder) ListImportErrorsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportErrorsPages", reflect.TypeOf((*MockMgnAPI)(nil).ListImportErrorsPages), arg0, arg1)
+}
+
+// ListImportErrorsPagesWithContext mocks base method
+func (m *MockMgnAPI) ListImportErrorsPagesWithContext(arg0 context.Context, arg1 *mgn.ListImportErrorsInput, arg2 func(*mgn.ListImportErrorsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListImportErrorsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListImportErrorsPagesWithContext indicates an expected call of ListImportErrorsPagesWithContext
+func (mr *MockMgnAPIMockRecorder) ListImportErrorsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportErrorsPagesWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListImportErrorsPagesWithContext), varargs...)
+}
+
+// ListImportErrorsRequest mocks base method
+func (m *MockMgnAPI) ListImportErrorsRequest(arg0 *mgn.ListImportErrorsInput) (*request.Request, *mgn.ListImportErrorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListImportErrorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.ListImportErrorsOutput)
+	return ret0, ret1
+}
+
+// ListImportErrorsRequest indicates an expected call of ListImportErrorsRequest
+func (mr *MockMgnAPIMockRecorder) ListImportErrorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportErrorsRequest", reflect.TypeOf((*MockMgnAPI)(nil).ListImportErrorsRequest), arg0)
+}
+
+// ListImportErrorsWithContext mocks base method
+func (m *MockMgnAPI) ListImportErrorsWithContext(arg0 context.Context, arg1 *mgn.ListImportErrorsInput, arg2 ...request.Option) (*mgn.ListImportErrorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListImportErrorsWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.ListImportErrorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListImportErrorsWithContext indicates an expected call of ListImportErrorsWithContext
+func (mr *MockMgnAPIMockRecorder) ListImportErrorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportErrorsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListImportErrorsWithContext), varargs...)
+}
+
+// ListImports mocks base method
+func (m *MockMgnAPI) ListImports(arg0 *mgn.ListImportsInput) (*mgn.ListImportsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListImports", arg0)
+	ret0, _ := ret[0].(*mgn.ListImportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListImports indicates an expected call of ListImports
+func (mr *MockMgnAPIMockRecorder) ListImports(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImports", reflect.TypeOf((*MockMgnAPI)(nil).ListImports), arg0)
+}
+
+// ListImportsPages mocks base method
+func (m *MockMgnAPI) ListImportsPages(arg0 *mgn.ListImportsInput, arg1 func(*mgn.ListImportsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListImportsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListImportsPages indicates an expected call of ListImportsPages
+func (mr *MockMgnAPIMockRecorder) ListImportsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportsPages", reflect.TypeOf((*MockMgnAPI)(nil).ListImportsPages), arg0, arg1)
+}
+
+// ListImportsPagesWithContext mocks base method
+func (m *MockMgnAPI) ListImportsPagesWithContext(arg0 context.Context, arg1 *mgn.ListImportsInput, arg2 func(*mgn.ListImportsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListImportsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListImportsPagesWithContext indicates an expected call of ListImportsPagesWithContext
+func (mr *MockMgnAPIMockRecorder) ListImportsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportsPagesWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListImportsPagesWithContext), varargs...)
+}
+
+// ListImportsRequest mocks base method
+func (m *MockMgnAPI) ListImportsRequest(arg0 *mgn.ListImportsInput) (*request.Request, *mgn.ListImportsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListImportsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.ListImportsOutput)
+	return ret0, ret1
+}
+
+// ListImportsRequest indicates an expected call of ListImportsRequest
+func (mr *MockMgnAPIMockRecorder) ListImportsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportsRequest", reflect.TypeOf((*MockMgnAPI)(nil).ListImportsRequest), arg0)
+}
+
+// ListImportsWithContext mocks base method
+func (m *MockMgnAPI) ListImportsWithContext(arg0 context.Context, arg1 *mgn.ListImportsInput, arg2 ...request.Option) (*mgn.ListImportsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListImportsWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.ListImportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListImportsWithContext indicates an expected call of ListImportsWithContext
+func (mr *MockMgnAPIMockRecorder) ListImportsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListImportsWithContext), varargs...)
+}
+
 // ListSourceServerActions mocks base method
 func (m *MockMgnAPI) ListSourceServerActions(arg0 *mgn.ListSourceServerActionsInput) (*mgn.ListSourceServerActionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2413,6 +2745,106 @@ func (mr *MockMgnAPIMockRecorder) StartCutoverWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCutoverWithContext", reflect.TypeOf((*MockMgnAPI)(nil).StartCutoverWithContext), varargs...)
+}
+
+// StartExport mocks base method
+func (m *MockMgnAPI) StartExport(arg0 *mgn.StartExportInput) (*mgn.StartExportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartExport", arg0)
+	ret0, _ := ret[0].(*mgn.StartExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartExport indicates an expected call of StartExport
+func (mr *MockMgnAPIMockRecorder) StartExport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartExport", reflect.TypeOf((*MockMgnAPI)(nil).StartExport), arg0)
+}
+
+// StartExportRequest mocks base method
+func (m *MockMgnAPI) StartExportRequest(arg0 *mgn.StartExportInput) (*request.Request, *mgn.StartExportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartExportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.StartExportOutput)
+	return ret0, ret1
+}
+
+// StartExportRequest indicates an expected call of StartExportRequest
+func (mr *MockMgnAPIMockRecorder) StartExportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartExportRequest", reflect.TypeOf((*MockMgnAPI)(nil).StartExportRequest), arg0)
+}
+
+// StartExportWithContext mocks base method
+func (m *MockMgnAPI) StartExportWithContext(arg0 context.Context, arg1 *mgn.StartExportInput, arg2 ...request.Option) (*mgn.StartExportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartExportWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.StartExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartExportWithContext indicates an expected call of StartExportWithContext
+func (mr *MockMgnAPIMockRecorder) StartExportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartExportWithContext", reflect.TypeOf((*MockMgnAPI)(nil).StartExportWithContext), varargs...)
+}
+
+// StartImport mocks base method
+func (m *MockMgnAPI) StartImport(arg0 *mgn.StartImportInput) (*mgn.StartImportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartImport", arg0)
+	ret0, _ := ret[0].(*mgn.StartImportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartImport indicates an expected call of StartImport
+func (mr *MockMgnAPIMockRecorder) StartImport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartImport", reflect.TypeOf((*MockMgnAPI)(nil).StartImport), arg0)
+}
+
+// StartImportRequest mocks base method
+func (m *MockMgnAPI) StartImportRequest(arg0 *mgn.StartImportInput) (*request.Request, *mgn.StartImportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartImportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.StartImportOutput)
+	return ret0, ret1
+}
+
+// StartImportRequest indicates an expected call of StartImportRequest
+func (mr *MockMgnAPIMockRecorder) StartImportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartImportRequest", reflect.TypeOf((*MockMgnAPI)(nil).StartImportRequest), arg0)
+}
+
+// StartImportWithContext mocks base method
+func (m *MockMgnAPI) StartImportWithContext(arg0 context.Context, arg1 *mgn.StartImportInput, arg2 ...request.Option) (*mgn.StartImportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartImportWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.StartImportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartImportWithContext indicates an expected call of StartImportWithContext
+func (mr *MockMgnAPIMockRecorder) StartImportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartImportWithContext", reflect.TypeOf((*MockMgnAPI)(nil).StartImportWithContext), varargs...)
 }
 
 // StartReplication mocks base method

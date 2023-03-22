@@ -735,6 +735,56 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) DeleteChannelWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteChannelWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DeleteChannelWithContext), varargs...)
 }
 
+// DeleteMessagingStreamingConfigurations mocks base method
+func (m *MockChimeSDKMessagingAPI) DeleteMessagingStreamingConfigurations(arg0 *chimesdkmessaging.DeleteMessagingStreamingConfigurationsInput) (*chimesdkmessaging.DeleteMessagingStreamingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMessagingStreamingConfigurations", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.DeleteMessagingStreamingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMessagingStreamingConfigurations indicates an expected call of DeleteMessagingStreamingConfigurations
+func (mr *MockChimeSDKMessagingAPIMockRecorder) DeleteMessagingStreamingConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMessagingStreamingConfigurations", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DeleteMessagingStreamingConfigurations), arg0)
+}
+
+// DeleteMessagingStreamingConfigurationsRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) DeleteMessagingStreamingConfigurationsRequest(arg0 *chimesdkmessaging.DeleteMessagingStreamingConfigurationsInput) (*request.Request, *chimesdkmessaging.DeleteMessagingStreamingConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMessagingStreamingConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.DeleteMessagingStreamingConfigurationsOutput)
+	return ret0, ret1
+}
+
+// DeleteMessagingStreamingConfigurationsRequest indicates an expected call of DeleteMessagingStreamingConfigurationsRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) DeleteMessagingStreamingConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMessagingStreamingConfigurationsRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DeleteMessagingStreamingConfigurationsRequest), arg0)
+}
+
+// DeleteMessagingStreamingConfigurationsWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) DeleteMessagingStreamingConfigurationsWithContext(arg0 context.Context, arg1 *chimesdkmessaging.DeleteMessagingStreamingConfigurationsInput, arg2 ...request.Option) (*chimesdkmessaging.DeleteMessagingStreamingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteMessagingStreamingConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.DeleteMessagingStreamingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMessagingStreamingConfigurationsWithContext indicates an expected call of DeleteMessagingStreamingConfigurationsWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) DeleteMessagingStreamingConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMessagingStreamingConfigurationsWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).DeleteMessagingStreamingConfigurationsWithContext), varargs...)
+}
+
 // DescribeChannel mocks base method
 func (m *MockChimeSDKMessagingAPI) DescribeChannel(arg0 *chimesdkmessaging.DescribeChannelInput) (*chimesdkmessaging.DescribeChannelOutput, error) {
 	m.ctrl.T.Helper()
@@ -1333,6 +1383,56 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) GetMessagingSessionEndpointWithC
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMessagingSessionEndpointWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).GetMessagingSessionEndpointWithContext), varargs...)
+}
+
+// GetMessagingStreamingConfigurations mocks base method
+func (m *MockChimeSDKMessagingAPI) GetMessagingStreamingConfigurations(arg0 *chimesdkmessaging.GetMessagingStreamingConfigurationsInput) (*chimesdkmessaging.GetMessagingStreamingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMessagingStreamingConfigurations", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.GetMessagingStreamingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMessagingStreamingConfigurations indicates an expected call of GetMessagingStreamingConfigurations
+func (mr *MockChimeSDKMessagingAPIMockRecorder) GetMessagingStreamingConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMessagingStreamingConfigurations", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).GetMessagingStreamingConfigurations), arg0)
+}
+
+// GetMessagingStreamingConfigurationsRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) GetMessagingStreamingConfigurationsRequest(arg0 *chimesdkmessaging.GetMessagingStreamingConfigurationsInput) (*request.Request, *chimesdkmessaging.GetMessagingStreamingConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMessagingStreamingConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.GetMessagingStreamingConfigurationsOutput)
+	return ret0, ret1
+}
+
+// GetMessagingStreamingConfigurationsRequest indicates an expected call of GetMessagingStreamingConfigurationsRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) GetMessagingStreamingConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMessagingStreamingConfigurationsRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).GetMessagingStreamingConfigurationsRequest), arg0)
+}
+
+// GetMessagingStreamingConfigurationsWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) GetMessagingStreamingConfigurationsWithContext(arg0 context.Context, arg1 *chimesdkmessaging.GetMessagingStreamingConfigurationsInput, arg2 ...request.Option) (*chimesdkmessaging.GetMessagingStreamingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMessagingStreamingConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.GetMessagingStreamingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMessagingStreamingConfigurationsWithContext indicates an expected call of GetMessagingStreamingConfigurationsWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) GetMessagingStreamingConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMessagingStreamingConfigurationsWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).GetMessagingStreamingConfigurationsWithContext), varargs...)
 }
 
 // ListChannelBans mocks base method
@@ -2263,6 +2363,56 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) PutChannelMembershipPreferencesW
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutChannelMembershipPreferencesWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).PutChannelMembershipPreferencesWithContext), varargs...)
+}
+
+// PutMessagingStreamingConfigurations mocks base method
+func (m *MockChimeSDKMessagingAPI) PutMessagingStreamingConfigurations(arg0 *chimesdkmessaging.PutMessagingStreamingConfigurationsInput) (*chimesdkmessaging.PutMessagingStreamingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutMessagingStreamingConfigurations", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.PutMessagingStreamingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutMessagingStreamingConfigurations indicates an expected call of PutMessagingStreamingConfigurations
+func (mr *MockChimeSDKMessagingAPIMockRecorder) PutMessagingStreamingConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMessagingStreamingConfigurations", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).PutMessagingStreamingConfigurations), arg0)
+}
+
+// PutMessagingStreamingConfigurationsRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) PutMessagingStreamingConfigurationsRequest(arg0 *chimesdkmessaging.PutMessagingStreamingConfigurationsInput) (*request.Request, *chimesdkmessaging.PutMessagingStreamingConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutMessagingStreamingConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.PutMessagingStreamingConfigurationsOutput)
+	return ret0, ret1
+}
+
+// PutMessagingStreamingConfigurationsRequest indicates an expected call of PutMessagingStreamingConfigurationsRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) PutMessagingStreamingConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMessagingStreamingConfigurationsRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).PutMessagingStreamingConfigurationsRequest), arg0)
+}
+
+// PutMessagingStreamingConfigurationsWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) PutMessagingStreamingConfigurationsWithContext(arg0 context.Context, arg1 *chimesdkmessaging.PutMessagingStreamingConfigurationsInput, arg2 ...request.Option) (*chimesdkmessaging.PutMessagingStreamingConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutMessagingStreamingConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.PutMessagingStreamingConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutMessagingStreamingConfigurationsWithContext indicates an expected call of PutMessagingStreamingConfigurationsWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) PutMessagingStreamingConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMessagingStreamingConfigurationsWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).PutMessagingStreamingConfigurationsWithContext), varargs...)
 }
 
 // RedactChannelMessage mocks base method
