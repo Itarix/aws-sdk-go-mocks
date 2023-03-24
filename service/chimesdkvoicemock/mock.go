@@ -585,6 +585,106 @@ func (mr *MockChimeSDKVoiceAPIMockRecorder) CreateVoiceConnectorWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVoiceConnectorWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).CreateVoiceConnectorWithContext), varargs...)
 }
 
+// CreateVoiceProfile mocks base method
+func (m *MockChimeSDKVoiceAPI) CreateVoiceProfile(arg0 *chimesdkvoice.CreateVoiceProfileInput) (*chimesdkvoice.CreateVoiceProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVoiceProfile", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.CreateVoiceProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVoiceProfile indicates an expected call of CreateVoiceProfile
+func (mr *MockChimeSDKVoiceAPIMockRecorder) CreateVoiceProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVoiceProfile", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).CreateVoiceProfile), arg0)
+}
+
+// CreateVoiceProfileDomain mocks base method
+func (m *MockChimeSDKVoiceAPI) CreateVoiceProfileDomain(arg0 *chimesdkvoice.CreateVoiceProfileDomainInput) (*chimesdkvoice.CreateVoiceProfileDomainOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVoiceProfileDomain", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.CreateVoiceProfileDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVoiceProfileDomain indicates an expected call of CreateVoiceProfileDomain
+func (mr *MockChimeSDKVoiceAPIMockRecorder) CreateVoiceProfileDomain(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVoiceProfileDomain", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).CreateVoiceProfileDomain), arg0)
+}
+
+// CreateVoiceProfileDomainRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) CreateVoiceProfileDomainRequest(arg0 *chimesdkvoice.CreateVoiceProfileDomainInput) (*request.Request, *chimesdkvoice.CreateVoiceProfileDomainOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVoiceProfileDomainRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.CreateVoiceProfileDomainOutput)
+	return ret0, ret1
+}
+
+// CreateVoiceProfileDomainRequest indicates an expected call of CreateVoiceProfileDomainRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) CreateVoiceProfileDomainRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVoiceProfileDomainRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).CreateVoiceProfileDomainRequest), arg0)
+}
+
+// CreateVoiceProfileDomainWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) CreateVoiceProfileDomainWithContext(arg0 context.Context, arg1 *chimesdkvoice.CreateVoiceProfileDomainInput, arg2 ...request.Option) (*chimesdkvoice.CreateVoiceProfileDomainOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateVoiceProfileDomainWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.CreateVoiceProfileDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVoiceProfileDomainWithContext indicates an expected call of CreateVoiceProfileDomainWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) CreateVoiceProfileDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVoiceProfileDomainWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).CreateVoiceProfileDomainWithContext), varargs...)
+}
+
+// CreateVoiceProfileRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) CreateVoiceProfileRequest(arg0 *chimesdkvoice.CreateVoiceProfileInput) (*request.Request, *chimesdkvoice.CreateVoiceProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVoiceProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.CreateVoiceProfileOutput)
+	return ret0, ret1
+}
+
+// CreateVoiceProfileRequest indicates an expected call of CreateVoiceProfileRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) CreateVoiceProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVoiceProfileRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).CreateVoiceProfileRequest), arg0)
+}
+
+// CreateVoiceProfileWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) CreateVoiceProfileWithContext(arg0 context.Context, arg1 *chimesdkvoice.CreateVoiceProfileInput, arg2 ...request.Option) (*chimesdkvoice.CreateVoiceProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateVoiceProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.CreateVoiceProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVoiceProfileWithContext indicates an expected call of CreateVoiceProfileWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) CreateVoiceProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVoiceProfileWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).CreateVoiceProfileWithContext), varargs...)
+}
+
 // DeletePhoneNumber mocks base method
 func (m *MockChimeSDKVoiceAPI) DeletePhoneNumber(arg0 *chimesdkvoice.DeletePhoneNumberInput) (*chimesdkvoice.DeletePhoneNumberOutput, error) {
 	m.ctrl.T.Helper()
@@ -1185,6 +1285,106 @@ func (mr *MockChimeSDKVoiceAPIMockRecorder) DeleteVoiceConnectorWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVoiceConnectorWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).DeleteVoiceConnectorWithContext), varargs...)
 }
 
+// DeleteVoiceProfile mocks base method
+func (m *MockChimeSDKVoiceAPI) DeleteVoiceProfile(arg0 *chimesdkvoice.DeleteVoiceProfileInput) (*chimesdkvoice.DeleteVoiceProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVoiceProfile", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.DeleteVoiceProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVoiceProfile indicates an expected call of DeleteVoiceProfile
+func (mr *MockChimeSDKVoiceAPIMockRecorder) DeleteVoiceProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVoiceProfile", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).DeleteVoiceProfile), arg0)
+}
+
+// DeleteVoiceProfileDomain mocks base method
+func (m *MockChimeSDKVoiceAPI) DeleteVoiceProfileDomain(arg0 *chimesdkvoice.DeleteVoiceProfileDomainInput) (*chimesdkvoice.DeleteVoiceProfileDomainOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVoiceProfileDomain", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.DeleteVoiceProfileDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVoiceProfileDomain indicates an expected call of DeleteVoiceProfileDomain
+func (mr *MockChimeSDKVoiceAPIMockRecorder) DeleteVoiceProfileDomain(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVoiceProfileDomain", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).DeleteVoiceProfileDomain), arg0)
+}
+
+// DeleteVoiceProfileDomainRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) DeleteVoiceProfileDomainRequest(arg0 *chimesdkvoice.DeleteVoiceProfileDomainInput) (*request.Request, *chimesdkvoice.DeleteVoiceProfileDomainOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVoiceProfileDomainRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.DeleteVoiceProfileDomainOutput)
+	return ret0, ret1
+}
+
+// DeleteVoiceProfileDomainRequest indicates an expected call of DeleteVoiceProfileDomainRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) DeleteVoiceProfileDomainRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVoiceProfileDomainRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).DeleteVoiceProfileDomainRequest), arg0)
+}
+
+// DeleteVoiceProfileDomainWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) DeleteVoiceProfileDomainWithContext(arg0 context.Context, arg1 *chimesdkvoice.DeleteVoiceProfileDomainInput, arg2 ...request.Option) (*chimesdkvoice.DeleteVoiceProfileDomainOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteVoiceProfileDomainWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.DeleteVoiceProfileDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVoiceProfileDomainWithContext indicates an expected call of DeleteVoiceProfileDomainWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) DeleteVoiceProfileDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVoiceProfileDomainWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).DeleteVoiceProfileDomainWithContext), varargs...)
+}
+
+// DeleteVoiceProfileRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) DeleteVoiceProfileRequest(arg0 *chimesdkvoice.DeleteVoiceProfileInput) (*request.Request, *chimesdkvoice.DeleteVoiceProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVoiceProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.DeleteVoiceProfileOutput)
+	return ret0, ret1
+}
+
+// DeleteVoiceProfileRequest indicates an expected call of DeleteVoiceProfileRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) DeleteVoiceProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVoiceProfileRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).DeleteVoiceProfileRequest), arg0)
+}
+
+// DeleteVoiceProfileWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) DeleteVoiceProfileWithContext(arg0 context.Context, arg1 *chimesdkvoice.DeleteVoiceProfileInput, arg2 ...request.Option) (*chimesdkvoice.DeleteVoiceProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteVoiceProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.DeleteVoiceProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVoiceProfileWithContext indicates an expected call of DeleteVoiceProfileWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) DeleteVoiceProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVoiceProfileWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).DeleteVoiceProfileWithContext), varargs...)
+}
+
 // DisassociatePhoneNumbersFromVoiceConnector mocks base method
 func (m *MockChimeSDKVoiceAPI) DisassociatePhoneNumbersFromVoiceConnector(arg0 *chimesdkvoice.DisassociatePhoneNumbersFromVoiceConnectorInput) (*chimesdkvoice.DisassociatePhoneNumbersFromVoiceConnectorOutput, error) {
 	m.ctrl.T.Helper()
@@ -1735,6 +1935,56 @@ func (mr *MockChimeSDKVoiceAPIMockRecorder) GetSipRuleWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSipRuleWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).GetSipRuleWithContext), varargs...)
 }
 
+// GetSpeakerSearchTask mocks base method
+func (m *MockChimeSDKVoiceAPI) GetSpeakerSearchTask(arg0 *chimesdkvoice.GetSpeakerSearchTaskInput) (*chimesdkvoice.GetSpeakerSearchTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSpeakerSearchTask", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.GetSpeakerSearchTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSpeakerSearchTask indicates an expected call of GetSpeakerSearchTask
+func (mr *MockChimeSDKVoiceAPIMockRecorder) GetSpeakerSearchTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSpeakerSearchTask", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).GetSpeakerSearchTask), arg0)
+}
+
+// GetSpeakerSearchTaskRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) GetSpeakerSearchTaskRequest(arg0 *chimesdkvoice.GetSpeakerSearchTaskInput) (*request.Request, *chimesdkvoice.GetSpeakerSearchTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSpeakerSearchTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.GetSpeakerSearchTaskOutput)
+	return ret0, ret1
+}
+
+// GetSpeakerSearchTaskRequest indicates an expected call of GetSpeakerSearchTaskRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) GetSpeakerSearchTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSpeakerSearchTaskRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).GetSpeakerSearchTaskRequest), arg0)
+}
+
+// GetSpeakerSearchTaskWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) GetSpeakerSearchTaskWithContext(arg0 context.Context, arg1 *chimesdkvoice.GetSpeakerSearchTaskInput, arg2 ...request.Option) (*chimesdkvoice.GetSpeakerSearchTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSpeakerSearchTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.GetSpeakerSearchTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSpeakerSearchTaskWithContext indicates an expected call of GetSpeakerSearchTaskWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) GetSpeakerSearchTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSpeakerSearchTaskWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).GetSpeakerSearchTaskWithContext), varargs...)
+}
+
 // GetVoiceConnector mocks base method
 func (m *MockChimeSDKVoiceAPI) GetVoiceConnector(arg0 *chimesdkvoice.GetVoiceConnectorInput) (*chimesdkvoice.GetVoiceConnectorOutput, error) {
 	m.ctrl.T.Helper()
@@ -2183,6 +2433,156 @@ func (mr *MockChimeSDKVoiceAPIMockRecorder) GetVoiceConnectorWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceConnectorWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).GetVoiceConnectorWithContext), varargs...)
+}
+
+// GetVoiceProfile mocks base method
+func (m *MockChimeSDKVoiceAPI) GetVoiceProfile(arg0 *chimesdkvoice.GetVoiceProfileInput) (*chimesdkvoice.GetVoiceProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVoiceProfile", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.GetVoiceProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVoiceProfile indicates an expected call of GetVoiceProfile
+func (mr *MockChimeSDKVoiceAPIMockRecorder) GetVoiceProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceProfile", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).GetVoiceProfile), arg0)
+}
+
+// GetVoiceProfileDomain mocks base method
+func (m *MockChimeSDKVoiceAPI) GetVoiceProfileDomain(arg0 *chimesdkvoice.GetVoiceProfileDomainInput) (*chimesdkvoice.GetVoiceProfileDomainOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVoiceProfileDomain", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.GetVoiceProfileDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVoiceProfileDomain indicates an expected call of GetVoiceProfileDomain
+func (mr *MockChimeSDKVoiceAPIMockRecorder) GetVoiceProfileDomain(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceProfileDomain", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).GetVoiceProfileDomain), arg0)
+}
+
+// GetVoiceProfileDomainRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) GetVoiceProfileDomainRequest(arg0 *chimesdkvoice.GetVoiceProfileDomainInput) (*request.Request, *chimesdkvoice.GetVoiceProfileDomainOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVoiceProfileDomainRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.GetVoiceProfileDomainOutput)
+	return ret0, ret1
+}
+
+// GetVoiceProfileDomainRequest indicates an expected call of GetVoiceProfileDomainRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) GetVoiceProfileDomainRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceProfileDomainRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).GetVoiceProfileDomainRequest), arg0)
+}
+
+// GetVoiceProfileDomainWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) GetVoiceProfileDomainWithContext(arg0 context.Context, arg1 *chimesdkvoice.GetVoiceProfileDomainInput, arg2 ...request.Option) (*chimesdkvoice.GetVoiceProfileDomainOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetVoiceProfileDomainWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.GetVoiceProfileDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVoiceProfileDomainWithContext indicates an expected call of GetVoiceProfileDomainWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) GetVoiceProfileDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceProfileDomainWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).GetVoiceProfileDomainWithContext), varargs...)
+}
+
+// GetVoiceProfileRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) GetVoiceProfileRequest(arg0 *chimesdkvoice.GetVoiceProfileInput) (*request.Request, *chimesdkvoice.GetVoiceProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVoiceProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.GetVoiceProfileOutput)
+	return ret0, ret1
+}
+
+// GetVoiceProfileRequest indicates an expected call of GetVoiceProfileRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) GetVoiceProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceProfileRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).GetVoiceProfileRequest), arg0)
+}
+
+// GetVoiceProfileWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) GetVoiceProfileWithContext(arg0 context.Context, arg1 *chimesdkvoice.GetVoiceProfileInput, arg2 ...request.Option) (*chimesdkvoice.GetVoiceProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetVoiceProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.GetVoiceProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVoiceProfileWithContext indicates an expected call of GetVoiceProfileWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) GetVoiceProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceProfileWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).GetVoiceProfileWithContext), varargs...)
+}
+
+// GetVoiceToneAnalysisTask mocks base method
+func (m *MockChimeSDKVoiceAPI) GetVoiceToneAnalysisTask(arg0 *chimesdkvoice.GetVoiceToneAnalysisTaskInput) (*chimesdkvoice.GetVoiceToneAnalysisTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVoiceToneAnalysisTask", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.GetVoiceToneAnalysisTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVoiceToneAnalysisTask indicates an expected call of GetVoiceToneAnalysisTask
+func (mr *MockChimeSDKVoiceAPIMockRecorder) GetVoiceToneAnalysisTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceToneAnalysisTask", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).GetVoiceToneAnalysisTask), arg0)
+}
+
+// GetVoiceToneAnalysisTaskRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) GetVoiceToneAnalysisTaskRequest(arg0 *chimesdkvoice.GetVoiceToneAnalysisTaskInput) (*request.Request, *chimesdkvoice.GetVoiceToneAnalysisTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVoiceToneAnalysisTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.GetVoiceToneAnalysisTaskOutput)
+	return ret0, ret1
+}
+
+// GetVoiceToneAnalysisTaskRequest indicates an expected call of GetVoiceToneAnalysisTaskRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) GetVoiceToneAnalysisTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceToneAnalysisTaskRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).GetVoiceToneAnalysisTaskRequest), arg0)
+}
+
+// GetVoiceToneAnalysisTaskWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) GetVoiceToneAnalysisTaskWithContext(arg0 context.Context, arg1 *chimesdkvoice.GetVoiceToneAnalysisTaskInput, arg2 ...request.Option) (*chimesdkvoice.GetVoiceToneAnalysisTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetVoiceToneAnalysisTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.GetVoiceToneAnalysisTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVoiceToneAnalysisTaskWithContext indicates an expected call of GetVoiceToneAnalysisTaskWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) GetVoiceToneAnalysisTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceToneAnalysisTaskWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).GetVoiceToneAnalysisTaskWithContext), varargs...)
 }
 
 // ListAvailableVoiceConnectorRegions mocks base method
@@ -2700,6 +3100,56 @@ func (mr *MockChimeSDKVoiceAPIMockRecorder) ListSupportedPhoneNumberCountriesWit
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSupportedPhoneNumberCountriesWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListSupportedPhoneNumberCountriesWithContext), varargs...)
 }
 
+// ListTagsForResource mocks base method
+func (m *MockChimeSDKVoiceAPI) ListTagsForResource(arg0 *chimesdkvoice.ListTagsForResourceInput) (*chimesdkvoice.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockChimeSDKVoiceAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) ListTagsForResourceRequest(arg0 *chimesdkvoice.ListTagsForResourceInput) (*request.Request, *chimesdkvoice.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *chimesdkvoice.ListTagsForResourceInput, arg2 ...request.Option) (*chimesdkvoice.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
 // ListVoiceConnectorGroups mocks base method
 func (m *MockChimeSDKVoiceAPI) ListVoiceConnectorGroups(arg0 *chimesdkvoice.ListVoiceConnectorGroupsInput) (*chimesdkvoice.ListVoiceConnectorGroupsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2914,6 +3364,172 @@ func (mr *MockChimeSDKVoiceAPIMockRecorder) ListVoiceConnectorsWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVoiceConnectorsWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListVoiceConnectorsWithContext), varargs...)
+}
+
+// ListVoiceProfileDomains mocks base method
+func (m *MockChimeSDKVoiceAPI) ListVoiceProfileDomains(arg0 *chimesdkvoice.ListVoiceProfileDomainsInput) (*chimesdkvoice.ListVoiceProfileDomainsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVoiceProfileDomains", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.ListVoiceProfileDomainsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVoiceProfileDomains indicates an expected call of ListVoiceProfileDomains
+func (mr *MockChimeSDKVoiceAPIMockRecorder) ListVoiceProfileDomains(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVoiceProfileDomains", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListVoiceProfileDomains), arg0)
+}
+
+// ListVoiceProfileDomainsPages mocks base method
+func (m *MockChimeSDKVoiceAPI) ListVoiceProfileDomainsPages(arg0 *chimesdkvoice.ListVoiceProfileDomainsInput, arg1 func(*chimesdkvoice.ListVoiceProfileDomainsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVoiceProfileDomainsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListVoiceProfileDomainsPages indicates an expected call of ListVoiceProfileDomainsPages
+func (mr *MockChimeSDKVoiceAPIMockRecorder) ListVoiceProfileDomainsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVoiceProfileDomainsPages", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListVoiceProfileDomainsPages), arg0, arg1)
+}
+
+// ListVoiceProfileDomainsPagesWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) ListVoiceProfileDomainsPagesWithContext(arg0 context.Context, arg1 *chimesdkvoice.ListVoiceProfileDomainsInput, arg2 func(*chimesdkvoice.ListVoiceProfileDomainsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVoiceProfileDomainsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListVoiceProfileDomainsPagesWithContext indicates an expected call of ListVoiceProfileDomainsPagesWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) ListVoiceProfileDomainsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVoiceProfileDomainsPagesWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListVoiceProfileDomainsPagesWithContext), varargs...)
+}
+
+// ListVoiceProfileDomainsRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) ListVoiceProfileDomainsRequest(arg0 *chimesdkvoice.ListVoiceProfileDomainsInput) (*request.Request, *chimesdkvoice.ListVoiceProfileDomainsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVoiceProfileDomainsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.ListVoiceProfileDomainsOutput)
+	return ret0, ret1
+}
+
+// ListVoiceProfileDomainsRequest indicates an expected call of ListVoiceProfileDomainsRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) ListVoiceProfileDomainsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVoiceProfileDomainsRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListVoiceProfileDomainsRequest), arg0)
+}
+
+// ListVoiceProfileDomainsWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) ListVoiceProfileDomainsWithContext(arg0 context.Context, arg1 *chimesdkvoice.ListVoiceProfileDomainsInput, arg2 ...request.Option) (*chimesdkvoice.ListVoiceProfileDomainsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVoiceProfileDomainsWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.ListVoiceProfileDomainsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVoiceProfileDomainsWithContext indicates an expected call of ListVoiceProfileDomainsWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) ListVoiceProfileDomainsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVoiceProfileDomainsWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListVoiceProfileDomainsWithContext), varargs...)
+}
+
+// ListVoiceProfiles mocks base method
+func (m *MockChimeSDKVoiceAPI) ListVoiceProfiles(arg0 *chimesdkvoice.ListVoiceProfilesInput) (*chimesdkvoice.ListVoiceProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVoiceProfiles", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.ListVoiceProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVoiceProfiles indicates an expected call of ListVoiceProfiles
+func (mr *MockChimeSDKVoiceAPIMockRecorder) ListVoiceProfiles(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVoiceProfiles", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListVoiceProfiles), arg0)
+}
+
+// ListVoiceProfilesPages mocks base method
+func (m *MockChimeSDKVoiceAPI) ListVoiceProfilesPages(arg0 *chimesdkvoice.ListVoiceProfilesInput, arg1 func(*chimesdkvoice.ListVoiceProfilesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVoiceProfilesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListVoiceProfilesPages indicates an expected call of ListVoiceProfilesPages
+func (mr *MockChimeSDKVoiceAPIMockRecorder) ListVoiceProfilesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVoiceProfilesPages", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListVoiceProfilesPages), arg0, arg1)
+}
+
+// ListVoiceProfilesPagesWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) ListVoiceProfilesPagesWithContext(arg0 context.Context, arg1 *chimesdkvoice.ListVoiceProfilesInput, arg2 func(*chimesdkvoice.ListVoiceProfilesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVoiceProfilesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListVoiceProfilesPagesWithContext indicates an expected call of ListVoiceProfilesPagesWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) ListVoiceProfilesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVoiceProfilesPagesWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListVoiceProfilesPagesWithContext), varargs...)
+}
+
+// ListVoiceProfilesRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) ListVoiceProfilesRequest(arg0 *chimesdkvoice.ListVoiceProfilesInput) (*request.Request, *chimesdkvoice.ListVoiceProfilesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVoiceProfilesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.ListVoiceProfilesOutput)
+	return ret0, ret1
+}
+
+// ListVoiceProfilesRequest indicates an expected call of ListVoiceProfilesRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) ListVoiceProfilesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVoiceProfilesRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListVoiceProfilesRequest), arg0)
+}
+
+// ListVoiceProfilesWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) ListVoiceProfilesWithContext(arg0 context.Context, arg1 *chimesdkvoice.ListVoiceProfilesInput, arg2 ...request.Option) (*chimesdkvoice.ListVoiceProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVoiceProfilesWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.ListVoiceProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVoiceProfilesWithContext indicates an expected call of ListVoiceProfilesWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) ListVoiceProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVoiceProfilesWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).ListVoiceProfilesWithContext), varargs...)
 }
 
 // PutSipMediaApplicationAlexaSkillConfiguration mocks base method
@@ -3499,6 +4115,306 @@ func (mr *MockChimeSDKVoiceAPIMockRecorder) SearchAvailablePhoneNumbersWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAvailablePhoneNumbersWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).SearchAvailablePhoneNumbersWithContext), varargs...)
 }
 
+// StartSpeakerSearchTask mocks base method
+func (m *MockChimeSDKVoiceAPI) StartSpeakerSearchTask(arg0 *chimesdkvoice.StartSpeakerSearchTaskInput) (*chimesdkvoice.StartSpeakerSearchTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSpeakerSearchTask", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.StartSpeakerSearchTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSpeakerSearchTask indicates an expected call of StartSpeakerSearchTask
+func (mr *MockChimeSDKVoiceAPIMockRecorder) StartSpeakerSearchTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSpeakerSearchTask", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).StartSpeakerSearchTask), arg0)
+}
+
+// StartSpeakerSearchTaskRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) StartSpeakerSearchTaskRequest(arg0 *chimesdkvoice.StartSpeakerSearchTaskInput) (*request.Request, *chimesdkvoice.StartSpeakerSearchTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSpeakerSearchTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.StartSpeakerSearchTaskOutput)
+	return ret0, ret1
+}
+
+// StartSpeakerSearchTaskRequest indicates an expected call of StartSpeakerSearchTaskRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) StartSpeakerSearchTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSpeakerSearchTaskRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).StartSpeakerSearchTaskRequest), arg0)
+}
+
+// StartSpeakerSearchTaskWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) StartSpeakerSearchTaskWithContext(arg0 context.Context, arg1 *chimesdkvoice.StartSpeakerSearchTaskInput, arg2 ...request.Option) (*chimesdkvoice.StartSpeakerSearchTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartSpeakerSearchTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.StartSpeakerSearchTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSpeakerSearchTaskWithContext indicates an expected call of StartSpeakerSearchTaskWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) StartSpeakerSearchTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSpeakerSearchTaskWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).StartSpeakerSearchTaskWithContext), varargs...)
+}
+
+// StartVoiceToneAnalysisTask mocks base method
+func (m *MockChimeSDKVoiceAPI) StartVoiceToneAnalysisTask(arg0 *chimesdkvoice.StartVoiceToneAnalysisTaskInput) (*chimesdkvoice.StartVoiceToneAnalysisTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartVoiceToneAnalysisTask", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.StartVoiceToneAnalysisTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartVoiceToneAnalysisTask indicates an expected call of StartVoiceToneAnalysisTask
+func (mr *MockChimeSDKVoiceAPIMockRecorder) StartVoiceToneAnalysisTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartVoiceToneAnalysisTask", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).StartVoiceToneAnalysisTask), arg0)
+}
+
+// StartVoiceToneAnalysisTaskRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) StartVoiceToneAnalysisTaskRequest(arg0 *chimesdkvoice.StartVoiceToneAnalysisTaskInput) (*request.Request, *chimesdkvoice.StartVoiceToneAnalysisTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartVoiceToneAnalysisTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.StartVoiceToneAnalysisTaskOutput)
+	return ret0, ret1
+}
+
+// StartVoiceToneAnalysisTaskRequest indicates an expected call of StartVoiceToneAnalysisTaskRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) StartVoiceToneAnalysisTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartVoiceToneAnalysisTaskRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).StartVoiceToneAnalysisTaskRequest), arg0)
+}
+
+// StartVoiceToneAnalysisTaskWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) StartVoiceToneAnalysisTaskWithContext(arg0 context.Context, arg1 *chimesdkvoice.StartVoiceToneAnalysisTaskInput, arg2 ...request.Option) (*chimesdkvoice.StartVoiceToneAnalysisTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartVoiceToneAnalysisTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.StartVoiceToneAnalysisTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartVoiceToneAnalysisTaskWithContext indicates an expected call of StartVoiceToneAnalysisTaskWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) StartVoiceToneAnalysisTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartVoiceToneAnalysisTaskWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).StartVoiceToneAnalysisTaskWithContext), varargs...)
+}
+
+// StopSpeakerSearchTask mocks base method
+func (m *MockChimeSDKVoiceAPI) StopSpeakerSearchTask(arg0 *chimesdkvoice.StopSpeakerSearchTaskInput) (*chimesdkvoice.StopSpeakerSearchTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopSpeakerSearchTask", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.StopSpeakerSearchTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopSpeakerSearchTask indicates an expected call of StopSpeakerSearchTask
+func (mr *MockChimeSDKVoiceAPIMockRecorder) StopSpeakerSearchTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSpeakerSearchTask", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).StopSpeakerSearchTask), arg0)
+}
+
+// StopSpeakerSearchTaskRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) StopSpeakerSearchTaskRequest(arg0 *chimesdkvoice.StopSpeakerSearchTaskInput) (*request.Request, *chimesdkvoice.StopSpeakerSearchTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopSpeakerSearchTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.StopSpeakerSearchTaskOutput)
+	return ret0, ret1
+}
+
+// StopSpeakerSearchTaskRequest indicates an expected call of StopSpeakerSearchTaskRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) StopSpeakerSearchTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSpeakerSearchTaskRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).StopSpeakerSearchTaskRequest), arg0)
+}
+
+// StopSpeakerSearchTaskWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) StopSpeakerSearchTaskWithContext(arg0 context.Context, arg1 *chimesdkvoice.StopSpeakerSearchTaskInput, arg2 ...request.Option) (*chimesdkvoice.StopSpeakerSearchTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopSpeakerSearchTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.StopSpeakerSearchTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopSpeakerSearchTaskWithContext indicates an expected call of StopSpeakerSearchTaskWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) StopSpeakerSearchTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSpeakerSearchTaskWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).StopSpeakerSearchTaskWithContext), varargs...)
+}
+
+// StopVoiceToneAnalysisTask mocks base method
+func (m *MockChimeSDKVoiceAPI) StopVoiceToneAnalysisTask(arg0 *chimesdkvoice.StopVoiceToneAnalysisTaskInput) (*chimesdkvoice.StopVoiceToneAnalysisTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopVoiceToneAnalysisTask", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.StopVoiceToneAnalysisTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopVoiceToneAnalysisTask indicates an expected call of StopVoiceToneAnalysisTask
+func (mr *MockChimeSDKVoiceAPIMockRecorder) StopVoiceToneAnalysisTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopVoiceToneAnalysisTask", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).StopVoiceToneAnalysisTask), arg0)
+}
+
+// StopVoiceToneAnalysisTaskRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) StopVoiceToneAnalysisTaskRequest(arg0 *chimesdkvoice.StopVoiceToneAnalysisTaskInput) (*request.Request, *chimesdkvoice.StopVoiceToneAnalysisTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopVoiceToneAnalysisTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.StopVoiceToneAnalysisTaskOutput)
+	return ret0, ret1
+}
+
+// StopVoiceToneAnalysisTaskRequest indicates an expected call of StopVoiceToneAnalysisTaskRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) StopVoiceToneAnalysisTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopVoiceToneAnalysisTaskRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).StopVoiceToneAnalysisTaskRequest), arg0)
+}
+
+// StopVoiceToneAnalysisTaskWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) StopVoiceToneAnalysisTaskWithContext(arg0 context.Context, arg1 *chimesdkvoice.StopVoiceToneAnalysisTaskInput, arg2 ...request.Option) (*chimesdkvoice.StopVoiceToneAnalysisTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopVoiceToneAnalysisTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.StopVoiceToneAnalysisTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopVoiceToneAnalysisTaskWithContext indicates an expected call of StopVoiceToneAnalysisTaskWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) StopVoiceToneAnalysisTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopVoiceToneAnalysisTaskWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).StopVoiceToneAnalysisTaskWithContext), varargs...)
+}
+
+// TagResource mocks base method
+func (m *MockChimeSDKVoiceAPI) TagResource(arg0 *chimesdkvoice.TagResourceInput) (*chimesdkvoice.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockChimeSDKVoiceAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) TagResourceRequest(arg0 *chimesdkvoice.TagResourceInput) (*request.Request, *chimesdkvoice.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) TagResourceWithContext(arg0 context.Context, arg1 *chimesdkvoice.TagResourceInput, arg2 ...request.Option) (*chimesdkvoice.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockChimeSDKVoiceAPI) UntagResource(arg0 *chimesdkvoice.UntagResourceInput) (*chimesdkvoice.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockChimeSDKVoiceAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) UntagResourceRequest(arg0 *chimesdkvoice.UntagResourceInput) (*request.Request, *chimesdkvoice.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) UntagResourceWithContext(arg0 context.Context, arg1 *chimesdkvoice.UntagResourceInput, arg2 ...request.Option) (*chimesdkvoice.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
 // UpdateGlobalSettings mocks base method
 func (m *MockChimeSDKVoiceAPI) UpdateGlobalSettings(arg0 *chimesdkvoice.UpdateGlobalSettingsInput) (*chimesdkvoice.UpdateGlobalSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -3947,6 +4863,106 @@ func (mr *MockChimeSDKVoiceAPIMockRecorder) UpdateVoiceConnectorWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVoiceConnectorWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).UpdateVoiceConnectorWithContext), varargs...)
+}
+
+// UpdateVoiceProfile mocks base method
+func (m *MockChimeSDKVoiceAPI) UpdateVoiceProfile(arg0 *chimesdkvoice.UpdateVoiceProfileInput) (*chimesdkvoice.UpdateVoiceProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVoiceProfile", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.UpdateVoiceProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVoiceProfile indicates an expected call of UpdateVoiceProfile
+func (mr *MockChimeSDKVoiceAPIMockRecorder) UpdateVoiceProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVoiceProfile", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).UpdateVoiceProfile), arg0)
+}
+
+// UpdateVoiceProfileDomain mocks base method
+func (m *MockChimeSDKVoiceAPI) UpdateVoiceProfileDomain(arg0 *chimesdkvoice.UpdateVoiceProfileDomainInput) (*chimesdkvoice.UpdateVoiceProfileDomainOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVoiceProfileDomain", arg0)
+	ret0, _ := ret[0].(*chimesdkvoice.UpdateVoiceProfileDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVoiceProfileDomain indicates an expected call of UpdateVoiceProfileDomain
+func (mr *MockChimeSDKVoiceAPIMockRecorder) UpdateVoiceProfileDomain(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVoiceProfileDomain", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).UpdateVoiceProfileDomain), arg0)
+}
+
+// UpdateVoiceProfileDomainRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) UpdateVoiceProfileDomainRequest(arg0 *chimesdkvoice.UpdateVoiceProfileDomainInput) (*request.Request, *chimesdkvoice.UpdateVoiceProfileDomainOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVoiceProfileDomainRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.UpdateVoiceProfileDomainOutput)
+	return ret0, ret1
+}
+
+// UpdateVoiceProfileDomainRequest indicates an expected call of UpdateVoiceProfileDomainRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) UpdateVoiceProfileDomainRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVoiceProfileDomainRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).UpdateVoiceProfileDomainRequest), arg0)
+}
+
+// UpdateVoiceProfileDomainWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) UpdateVoiceProfileDomainWithContext(arg0 context.Context, arg1 *chimesdkvoice.UpdateVoiceProfileDomainInput, arg2 ...request.Option) (*chimesdkvoice.UpdateVoiceProfileDomainOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateVoiceProfileDomainWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.UpdateVoiceProfileDomainOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVoiceProfileDomainWithContext indicates an expected call of UpdateVoiceProfileDomainWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) UpdateVoiceProfileDomainWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVoiceProfileDomainWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).UpdateVoiceProfileDomainWithContext), varargs...)
+}
+
+// UpdateVoiceProfileRequest mocks base method
+func (m *MockChimeSDKVoiceAPI) UpdateVoiceProfileRequest(arg0 *chimesdkvoice.UpdateVoiceProfileInput) (*request.Request, *chimesdkvoice.UpdateVoiceProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateVoiceProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkvoice.UpdateVoiceProfileOutput)
+	return ret0, ret1
+}
+
+// UpdateVoiceProfileRequest indicates an expected call of UpdateVoiceProfileRequest
+func (mr *MockChimeSDKVoiceAPIMockRecorder) UpdateVoiceProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVoiceProfileRequest", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).UpdateVoiceProfileRequest), arg0)
+}
+
+// UpdateVoiceProfileWithContext mocks base method
+func (m *MockChimeSDKVoiceAPI) UpdateVoiceProfileWithContext(arg0 context.Context, arg1 *chimesdkvoice.UpdateVoiceProfileInput, arg2 ...request.Option) (*chimesdkvoice.UpdateVoiceProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateVoiceProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkvoice.UpdateVoiceProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateVoiceProfileWithContext indicates an expected call of UpdateVoiceProfileWithContext
+func (mr *MockChimeSDKVoiceAPIMockRecorder) UpdateVoiceProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateVoiceProfileWithContext", reflect.TypeOf((*MockChimeSDKVoiceAPI)(nil).UpdateVoiceProfileWithContext), varargs...)
 }
 
 // ValidateE911Address mocks base method

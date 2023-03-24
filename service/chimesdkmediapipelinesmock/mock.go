@@ -135,6 +135,106 @@ func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) CreateMediaConcatenationPip
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMediaConcatenationPipelineWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).CreateMediaConcatenationPipelineWithContext), varargs...)
 }
 
+// CreateMediaInsightsPipeline mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) CreateMediaInsightsPipeline(arg0 *chimesdkmediapipelines.CreateMediaInsightsPipelineInput) (*chimesdkmediapipelines.CreateMediaInsightsPipelineOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMediaInsightsPipeline", arg0)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.CreateMediaInsightsPipelineOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMediaInsightsPipeline indicates an expected call of CreateMediaInsightsPipeline
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) CreateMediaInsightsPipeline(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMediaInsightsPipeline", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).CreateMediaInsightsPipeline), arg0)
+}
+
+// CreateMediaInsightsPipelineConfiguration mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) CreateMediaInsightsPipelineConfiguration(arg0 *chimesdkmediapipelines.CreateMediaInsightsPipelineConfigurationInput) (*chimesdkmediapipelines.CreateMediaInsightsPipelineConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMediaInsightsPipelineConfiguration", arg0)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.CreateMediaInsightsPipelineConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMediaInsightsPipelineConfiguration indicates an expected call of CreateMediaInsightsPipelineConfiguration
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) CreateMediaInsightsPipelineConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMediaInsightsPipelineConfiguration", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).CreateMediaInsightsPipelineConfiguration), arg0)
+}
+
+// CreateMediaInsightsPipelineConfigurationRequest mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) CreateMediaInsightsPipelineConfigurationRequest(arg0 *chimesdkmediapipelines.CreateMediaInsightsPipelineConfigurationInput) (*request.Request, *chimesdkmediapipelines.CreateMediaInsightsPipelineConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMediaInsightsPipelineConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmediapipelines.CreateMediaInsightsPipelineConfigurationOutput)
+	return ret0, ret1
+}
+
+// CreateMediaInsightsPipelineConfigurationRequest indicates an expected call of CreateMediaInsightsPipelineConfigurationRequest
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) CreateMediaInsightsPipelineConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMediaInsightsPipelineConfigurationRequest", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).CreateMediaInsightsPipelineConfigurationRequest), arg0)
+}
+
+// CreateMediaInsightsPipelineConfigurationWithContext mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) CreateMediaInsightsPipelineConfigurationWithContext(arg0 context.Context, arg1 *chimesdkmediapipelines.CreateMediaInsightsPipelineConfigurationInput, arg2 ...request.Option) (*chimesdkmediapipelines.CreateMediaInsightsPipelineConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateMediaInsightsPipelineConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.CreateMediaInsightsPipelineConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMediaInsightsPipelineConfigurationWithContext indicates an expected call of CreateMediaInsightsPipelineConfigurationWithContext
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) CreateMediaInsightsPipelineConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMediaInsightsPipelineConfigurationWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).CreateMediaInsightsPipelineConfigurationWithContext), varargs...)
+}
+
+// CreateMediaInsightsPipelineRequest mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) CreateMediaInsightsPipelineRequest(arg0 *chimesdkmediapipelines.CreateMediaInsightsPipelineInput) (*request.Request, *chimesdkmediapipelines.CreateMediaInsightsPipelineOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMediaInsightsPipelineRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmediapipelines.CreateMediaInsightsPipelineOutput)
+	return ret0, ret1
+}
+
+// CreateMediaInsightsPipelineRequest indicates an expected call of CreateMediaInsightsPipelineRequest
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) CreateMediaInsightsPipelineRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMediaInsightsPipelineRequest", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).CreateMediaInsightsPipelineRequest), arg0)
+}
+
+// CreateMediaInsightsPipelineWithContext mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) CreateMediaInsightsPipelineWithContext(arg0 context.Context, arg1 *chimesdkmediapipelines.CreateMediaInsightsPipelineInput, arg2 ...request.Option) (*chimesdkmediapipelines.CreateMediaInsightsPipelineOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateMediaInsightsPipelineWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.CreateMediaInsightsPipelineOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMediaInsightsPipelineWithContext indicates an expected call of CreateMediaInsightsPipelineWithContext
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) CreateMediaInsightsPipelineWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMediaInsightsPipelineWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).CreateMediaInsightsPipelineWithContext), varargs...)
+}
+
 // CreateMediaLiveConnectorPipeline mocks base method
 func (m *MockChimeSDKMediaPipelinesAPI) CreateMediaLiveConnectorPipeline(arg0 *chimesdkmediapipelines.CreateMediaLiveConnectorPipelineInput) (*chimesdkmediapipelines.CreateMediaLiveConnectorPipelineOutput, error) {
 	m.ctrl.T.Helper()
@@ -235,6 +335,56 @@ func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) DeleteMediaCapturePipelineW
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMediaCapturePipelineWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).DeleteMediaCapturePipelineWithContext), varargs...)
 }
 
+// DeleteMediaInsightsPipelineConfiguration mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) DeleteMediaInsightsPipelineConfiguration(arg0 *chimesdkmediapipelines.DeleteMediaInsightsPipelineConfigurationInput) (*chimesdkmediapipelines.DeleteMediaInsightsPipelineConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMediaInsightsPipelineConfiguration", arg0)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.DeleteMediaInsightsPipelineConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMediaInsightsPipelineConfiguration indicates an expected call of DeleteMediaInsightsPipelineConfiguration
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) DeleteMediaInsightsPipelineConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMediaInsightsPipelineConfiguration", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).DeleteMediaInsightsPipelineConfiguration), arg0)
+}
+
+// DeleteMediaInsightsPipelineConfigurationRequest mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) DeleteMediaInsightsPipelineConfigurationRequest(arg0 *chimesdkmediapipelines.DeleteMediaInsightsPipelineConfigurationInput) (*request.Request, *chimesdkmediapipelines.DeleteMediaInsightsPipelineConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteMediaInsightsPipelineConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmediapipelines.DeleteMediaInsightsPipelineConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteMediaInsightsPipelineConfigurationRequest indicates an expected call of DeleteMediaInsightsPipelineConfigurationRequest
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) DeleteMediaInsightsPipelineConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMediaInsightsPipelineConfigurationRequest", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).DeleteMediaInsightsPipelineConfigurationRequest), arg0)
+}
+
+// DeleteMediaInsightsPipelineConfigurationWithContext mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) DeleteMediaInsightsPipelineConfigurationWithContext(arg0 context.Context, arg1 *chimesdkmediapipelines.DeleteMediaInsightsPipelineConfigurationInput, arg2 ...request.Option) (*chimesdkmediapipelines.DeleteMediaInsightsPipelineConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteMediaInsightsPipelineConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.DeleteMediaInsightsPipelineConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteMediaInsightsPipelineConfigurationWithContext indicates an expected call of DeleteMediaInsightsPipelineConfigurationWithContext
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) DeleteMediaInsightsPipelineConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMediaInsightsPipelineConfigurationWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).DeleteMediaInsightsPipelineConfigurationWithContext), varargs...)
+}
+
 // DeleteMediaPipeline mocks base method
 func (m *MockChimeSDKMediaPipelinesAPI) DeleteMediaPipeline(arg0 *chimesdkmediapipelines.DeleteMediaPipelineInput) (*chimesdkmediapipelines.DeleteMediaPipelineOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +483,56 @@ func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) GetMediaCapturePipelineWith
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMediaCapturePipelineWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).GetMediaCapturePipelineWithContext), varargs...)
+}
+
+// GetMediaInsightsPipelineConfiguration mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) GetMediaInsightsPipelineConfiguration(arg0 *chimesdkmediapipelines.GetMediaInsightsPipelineConfigurationInput) (*chimesdkmediapipelines.GetMediaInsightsPipelineConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMediaInsightsPipelineConfiguration", arg0)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.GetMediaInsightsPipelineConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMediaInsightsPipelineConfiguration indicates an expected call of GetMediaInsightsPipelineConfiguration
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) GetMediaInsightsPipelineConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMediaInsightsPipelineConfiguration", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).GetMediaInsightsPipelineConfiguration), arg0)
+}
+
+// GetMediaInsightsPipelineConfigurationRequest mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) GetMediaInsightsPipelineConfigurationRequest(arg0 *chimesdkmediapipelines.GetMediaInsightsPipelineConfigurationInput) (*request.Request, *chimesdkmediapipelines.GetMediaInsightsPipelineConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMediaInsightsPipelineConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmediapipelines.GetMediaInsightsPipelineConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetMediaInsightsPipelineConfigurationRequest indicates an expected call of GetMediaInsightsPipelineConfigurationRequest
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) GetMediaInsightsPipelineConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMediaInsightsPipelineConfigurationRequest", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).GetMediaInsightsPipelineConfigurationRequest), arg0)
+}
+
+// GetMediaInsightsPipelineConfigurationWithContext mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) GetMediaInsightsPipelineConfigurationWithContext(arg0 context.Context, arg1 *chimesdkmediapipelines.GetMediaInsightsPipelineConfigurationInput, arg2 ...request.Option) (*chimesdkmediapipelines.GetMediaInsightsPipelineConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMediaInsightsPipelineConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.GetMediaInsightsPipelineConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMediaInsightsPipelineConfigurationWithContext indicates an expected call of GetMediaInsightsPipelineConfigurationWithContext
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) GetMediaInsightsPipelineConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMediaInsightsPipelineConfigurationWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).GetMediaInsightsPipelineConfigurationWithContext), varargs...)
 }
 
 // GetMediaPipeline mocks base method
@@ -466,6 +666,89 @@ func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) ListMediaCapturePipelinesWi
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMediaCapturePipelinesWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).ListMediaCapturePipelinesWithContext), varargs...)
+}
+
+// ListMediaInsightsPipelineConfigurations mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) ListMediaInsightsPipelineConfigurations(arg0 *chimesdkmediapipelines.ListMediaInsightsPipelineConfigurationsInput) (*chimesdkmediapipelines.ListMediaInsightsPipelineConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMediaInsightsPipelineConfigurations", arg0)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.ListMediaInsightsPipelineConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMediaInsightsPipelineConfigurations indicates an expected call of ListMediaInsightsPipelineConfigurations
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) ListMediaInsightsPipelineConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMediaInsightsPipelineConfigurations", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).ListMediaInsightsPipelineConfigurations), arg0)
+}
+
+// ListMediaInsightsPipelineConfigurationsPages mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) ListMediaInsightsPipelineConfigurationsPages(arg0 *chimesdkmediapipelines.ListMediaInsightsPipelineConfigurationsInput, arg1 func(*chimesdkmediapipelines.ListMediaInsightsPipelineConfigurationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMediaInsightsPipelineConfigurationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMediaInsightsPipelineConfigurationsPages indicates an expected call of ListMediaInsightsPipelineConfigurationsPages
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) ListMediaInsightsPipelineConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMediaInsightsPipelineConfigurationsPages", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).ListMediaInsightsPipelineConfigurationsPages), arg0, arg1)
+}
+
+// ListMediaInsightsPipelineConfigurationsPagesWithContext mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) ListMediaInsightsPipelineConfigurationsPagesWithContext(arg0 context.Context, arg1 *chimesdkmediapipelines.ListMediaInsightsPipelineConfigurationsInput, arg2 func(*chimesdkmediapipelines.ListMediaInsightsPipelineConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMediaInsightsPipelineConfigurationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMediaInsightsPipelineConfigurationsPagesWithContext indicates an expected call of ListMediaInsightsPipelineConfigurationsPagesWithContext
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) ListMediaInsightsPipelineConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMediaInsightsPipelineConfigurationsPagesWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).ListMediaInsightsPipelineConfigurationsPagesWithContext), varargs...)
+}
+
+// ListMediaInsightsPipelineConfigurationsRequest mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) ListMediaInsightsPipelineConfigurationsRequest(arg0 *chimesdkmediapipelines.ListMediaInsightsPipelineConfigurationsInput) (*request.Request, *chimesdkmediapipelines.ListMediaInsightsPipelineConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMediaInsightsPipelineConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmediapipelines.ListMediaInsightsPipelineConfigurationsOutput)
+	return ret0, ret1
+}
+
+// ListMediaInsightsPipelineConfigurationsRequest indicates an expected call of ListMediaInsightsPipelineConfigurationsRequest
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) ListMediaInsightsPipelineConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMediaInsightsPipelineConfigurationsRequest", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).ListMediaInsightsPipelineConfigurationsRequest), arg0)
+}
+
+// ListMediaInsightsPipelineConfigurationsWithContext mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) ListMediaInsightsPipelineConfigurationsWithContext(arg0 context.Context, arg1 *chimesdkmediapipelines.ListMediaInsightsPipelineConfigurationsInput, arg2 ...request.Option) (*chimesdkmediapipelines.ListMediaInsightsPipelineConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMediaInsightsPipelineConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.ListMediaInsightsPipelineConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMediaInsightsPipelineConfigurationsWithContext indicates an expected call of ListMediaInsightsPipelineConfigurationsWithContext
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) ListMediaInsightsPipelineConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMediaInsightsPipelineConfigurationsWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).ListMediaInsightsPipelineConfigurationsWithContext), varargs...)
 }
 
 // ListMediaPipelines mocks base method
@@ -699,4 +982,104 @@ func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) UntagResourceWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateMediaInsightsPipelineConfiguration mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) UpdateMediaInsightsPipelineConfiguration(arg0 *chimesdkmediapipelines.UpdateMediaInsightsPipelineConfigurationInput) (*chimesdkmediapipelines.UpdateMediaInsightsPipelineConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMediaInsightsPipelineConfiguration", arg0)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.UpdateMediaInsightsPipelineConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMediaInsightsPipelineConfiguration indicates an expected call of UpdateMediaInsightsPipelineConfiguration
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) UpdateMediaInsightsPipelineConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMediaInsightsPipelineConfiguration", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).UpdateMediaInsightsPipelineConfiguration), arg0)
+}
+
+// UpdateMediaInsightsPipelineConfigurationRequest mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) UpdateMediaInsightsPipelineConfigurationRequest(arg0 *chimesdkmediapipelines.UpdateMediaInsightsPipelineConfigurationInput) (*request.Request, *chimesdkmediapipelines.UpdateMediaInsightsPipelineConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMediaInsightsPipelineConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmediapipelines.UpdateMediaInsightsPipelineConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateMediaInsightsPipelineConfigurationRequest indicates an expected call of UpdateMediaInsightsPipelineConfigurationRequest
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) UpdateMediaInsightsPipelineConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMediaInsightsPipelineConfigurationRequest", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).UpdateMediaInsightsPipelineConfigurationRequest), arg0)
+}
+
+// UpdateMediaInsightsPipelineConfigurationWithContext mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) UpdateMediaInsightsPipelineConfigurationWithContext(arg0 context.Context, arg1 *chimesdkmediapipelines.UpdateMediaInsightsPipelineConfigurationInput, arg2 ...request.Option) (*chimesdkmediapipelines.UpdateMediaInsightsPipelineConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateMediaInsightsPipelineConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.UpdateMediaInsightsPipelineConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMediaInsightsPipelineConfigurationWithContext indicates an expected call of UpdateMediaInsightsPipelineConfigurationWithContext
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) UpdateMediaInsightsPipelineConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMediaInsightsPipelineConfigurationWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).UpdateMediaInsightsPipelineConfigurationWithContext), varargs...)
+}
+
+// UpdateMediaInsightsPipelineStatus mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) UpdateMediaInsightsPipelineStatus(arg0 *chimesdkmediapipelines.UpdateMediaInsightsPipelineStatusInput) (*chimesdkmediapipelines.UpdateMediaInsightsPipelineStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMediaInsightsPipelineStatus", arg0)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.UpdateMediaInsightsPipelineStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMediaInsightsPipelineStatus indicates an expected call of UpdateMediaInsightsPipelineStatus
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) UpdateMediaInsightsPipelineStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMediaInsightsPipelineStatus", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).UpdateMediaInsightsPipelineStatus), arg0)
+}
+
+// UpdateMediaInsightsPipelineStatusRequest mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) UpdateMediaInsightsPipelineStatusRequest(arg0 *chimesdkmediapipelines.UpdateMediaInsightsPipelineStatusInput) (*request.Request, *chimesdkmediapipelines.UpdateMediaInsightsPipelineStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateMediaInsightsPipelineStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmediapipelines.UpdateMediaInsightsPipelineStatusOutput)
+	return ret0, ret1
+}
+
+// UpdateMediaInsightsPipelineStatusRequest indicates an expected call of UpdateMediaInsightsPipelineStatusRequest
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) UpdateMediaInsightsPipelineStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMediaInsightsPipelineStatusRequest", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).UpdateMediaInsightsPipelineStatusRequest), arg0)
+}
+
+// UpdateMediaInsightsPipelineStatusWithContext mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) UpdateMediaInsightsPipelineStatusWithContext(arg0 context.Context, arg1 *chimesdkmediapipelines.UpdateMediaInsightsPipelineStatusInput, arg2 ...request.Option) (*chimesdkmediapipelines.UpdateMediaInsightsPipelineStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateMediaInsightsPipelineStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.UpdateMediaInsightsPipelineStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateMediaInsightsPipelineStatusWithContext indicates an expected call of UpdateMediaInsightsPipelineStatusWithContext
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) UpdateMediaInsightsPipelineStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMediaInsightsPipelineStatusWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).UpdateMediaInsightsPipelineStatusWithContext), varargs...)
 }

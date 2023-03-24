@@ -515,6 +515,56 @@ func (mr *MockSageMakerAPIMockRecorder) CreateAutoMLJobRequest(arg0 interface{})
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAutoMLJobRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateAutoMLJobRequest), arg0)
 }
 
+// CreateAutoMLJobV2 mocks base method
+func (m *MockSageMakerAPI) CreateAutoMLJobV2(arg0 *sagemaker.CreateAutoMLJobV2Input) (*sagemaker.CreateAutoMLJobV2Output, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAutoMLJobV2", arg0)
+	ret0, _ := ret[0].(*sagemaker.CreateAutoMLJobV2Output)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAutoMLJobV2 indicates an expected call of CreateAutoMLJobV2
+func (mr *MockSageMakerAPIMockRecorder) CreateAutoMLJobV2(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAutoMLJobV2", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateAutoMLJobV2), arg0)
+}
+
+// CreateAutoMLJobV2Request mocks base method
+func (m *MockSageMakerAPI) CreateAutoMLJobV2Request(arg0 *sagemaker.CreateAutoMLJobV2Input) (*request.Request, *sagemaker.CreateAutoMLJobV2Output) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAutoMLJobV2Request", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.CreateAutoMLJobV2Output)
+	return ret0, ret1
+}
+
+// CreateAutoMLJobV2Request indicates an expected call of CreateAutoMLJobV2Request
+func (mr *MockSageMakerAPIMockRecorder) CreateAutoMLJobV2Request(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAutoMLJobV2Request", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateAutoMLJobV2Request), arg0)
+}
+
+// CreateAutoMLJobV2WithContext mocks base method
+func (m *MockSageMakerAPI) CreateAutoMLJobV2WithContext(arg0 context.Context, arg1 *sagemaker.CreateAutoMLJobV2Input, arg2 ...request.Option) (*sagemaker.CreateAutoMLJobV2Output, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAutoMLJobV2WithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.CreateAutoMLJobV2Output)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAutoMLJobV2WithContext indicates an expected call of CreateAutoMLJobV2WithContext
+func (mr *MockSageMakerAPIMockRecorder) CreateAutoMLJobV2WithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAutoMLJobV2WithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateAutoMLJobV2WithContext), varargs...)
+}
+
 // CreateAutoMLJobWithContext mocks base method
 func (m *MockSageMakerAPI) CreateAutoMLJobWithContext(arg0 context.Context, arg1 *sagemaker.CreateAutoMLJobInput, arg2 ...request.Option) (*sagemaker.CreateAutoMLJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -5463,6 +5513,56 @@ func (m *MockSageMakerAPI) DescribeAutoMLJobRequest(arg0 *sagemaker.DescribeAuto
 func (mr *MockSageMakerAPIMockRecorder) DescribeAutoMLJobRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAutoMLJobRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeAutoMLJobRequest), arg0)
+}
+
+// DescribeAutoMLJobV2 mocks base method
+func (m *MockSageMakerAPI) DescribeAutoMLJobV2(arg0 *sagemaker.DescribeAutoMLJobV2Input) (*sagemaker.DescribeAutoMLJobV2Output, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAutoMLJobV2", arg0)
+	ret0, _ := ret[0].(*sagemaker.DescribeAutoMLJobV2Output)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAutoMLJobV2 indicates an expected call of DescribeAutoMLJobV2
+func (mr *MockSageMakerAPIMockRecorder) DescribeAutoMLJobV2(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAutoMLJobV2", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeAutoMLJobV2), arg0)
+}
+
+// DescribeAutoMLJobV2Request mocks base method
+func (m *MockSageMakerAPI) DescribeAutoMLJobV2Request(arg0 *sagemaker.DescribeAutoMLJobV2Input) (*request.Request, *sagemaker.DescribeAutoMLJobV2Output) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAutoMLJobV2Request", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DescribeAutoMLJobV2Output)
+	return ret0, ret1
+}
+
+// DescribeAutoMLJobV2Request indicates an expected call of DescribeAutoMLJobV2Request
+func (mr *MockSageMakerAPIMockRecorder) DescribeAutoMLJobV2Request(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAutoMLJobV2Request", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeAutoMLJobV2Request), arg0)
+}
+
+// DescribeAutoMLJobV2WithContext mocks base method
+func (m *MockSageMakerAPI) DescribeAutoMLJobV2WithContext(arg0 context.Context, arg1 *sagemaker.DescribeAutoMLJobV2Input, arg2 ...request.Option) (*sagemaker.DescribeAutoMLJobV2Output, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAutoMLJobV2WithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DescribeAutoMLJobV2Output)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAutoMLJobV2WithContext indicates an expected call of DescribeAutoMLJobV2WithContext
+func (mr *MockSageMakerAPIMockRecorder) DescribeAutoMLJobV2WithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAutoMLJobV2WithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeAutoMLJobV2WithContext), varargs...)
 }
 
 // DescribeAutoMLJobWithContext mocks base method

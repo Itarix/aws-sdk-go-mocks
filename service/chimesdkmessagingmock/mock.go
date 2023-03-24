@@ -2315,6 +2315,56 @@ func (mr *MockChimeSDKMessagingAPIMockRecorder) ListTagsForResourceWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// PutChannelExpirationSettings mocks base method
+func (m *MockChimeSDKMessagingAPI) PutChannelExpirationSettings(arg0 *chimesdkmessaging.PutChannelExpirationSettingsInput) (*chimesdkmessaging.PutChannelExpirationSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutChannelExpirationSettings", arg0)
+	ret0, _ := ret[0].(*chimesdkmessaging.PutChannelExpirationSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutChannelExpirationSettings indicates an expected call of PutChannelExpirationSettings
+func (mr *MockChimeSDKMessagingAPIMockRecorder) PutChannelExpirationSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutChannelExpirationSettings", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).PutChannelExpirationSettings), arg0)
+}
+
+// PutChannelExpirationSettingsRequest mocks base method
+func (m *MockChimeSDKMessagingAPI) PutChannelExpirationSettingsRequest(arg0 *chimesdkmessaging.PutChannelExpirationSettingsInput) (*request.Request, *chimesdkmessaging.PutChannelExpirationSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutChannelExpirationSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmessaging.PutChannelExpirationSettingsOutput)
+	return ret0, ret1
+}
+
+// PutChannelExpirationSettingsRequest indicates an expected call of PutChannelExpirationSettingsRequest
+func (mr *MockChimeSDKMessagingAPIMockRecorder) PutChannelExpirationSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutChannelExpirationSettingsRequest", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).PutChannelExpirationSettingsRequest), arg0)
+}
+
+// PutChannelExpirationSettingsWithContext mocks base method
+func (m *MockChimeSDKMessagingAPI) PutChannelExpirationSettingsWithContext(arg0 context.Context, arg1 *chimesdkmessaging.PutChannelExpirationSettingsInput, arg2 ...request.Option) (*chimesdkmessaging.PutChannelExpirationSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutChannelExpirationSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmessaging.PutChannelExpirationSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutChannelExpirationSettingsWithContext indicates an expected call of PutChannelExpirationSettingsWithContext
+func (mr *MockChimeSDKMessagingAPIMockRecorder) PutChannelExpirationSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutChannelExpirationSettingsWithContext", reflect.TypeOf((*MockChimeSDKMessagingAPI)(nil).PutChannelExpirationSettingsWithContext), varargs...)
+}
+
 // PutChannelMembershipPreferences mocks base method
 func (m *MockChimeSDKMessagingAPI) PutChannelMembershipPreferences(arg0 *chimesdkmessaging.PutChannelMembershipPreferencesInput) (*chimesdkmessaging.PutChannelMembershipPreferencesOutput, error) {
 	m.ctrl.T.Helper()

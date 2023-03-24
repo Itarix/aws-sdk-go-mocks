@@ -100,6 +100,56 @@ func (mr *MockChimeSDKIdentityAPIMockRecorder) CreateAppInstanceAdminWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppInstanceAdminWithContext", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).CreateAppInstanceAdminWithContext), varargs...)
 }
 
+// CreateAppInstanceBot mocks base method
+func (m *MockChimeSDKIdentityAPI) CreateAppInstanceBot(arg0 *chimesdkidentity.CreateAppInstanceBotInput) (*chimesdkidentity.CreateAppInstanceBotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppInstanceBot", arg0)
+	ret0, _ := ret[0].(*chimesdkidentity.CreateAppInstanceBotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppInstanceBot indicates an expected call of CreateAppInstanceBot
+func (mr *MockChimeSDKIdentityAPIMockRecorder) CreateAppInstanceBot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppInstanceBot", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).CreateAppInstanceBot), arg0)
+}
+
+// CreateAppInstanceBotRequest mocks base method
+func (m *MockChimeSDKIdentityAPI) CreateAppInstanceBotRequest(arg0 *chimesdkidentity.CreateAppInstanceBotInput) (*request.Request, *chimesdkidentity.CreateAppInstanceBotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAppInstanceBotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkidentity.CreateAppInstanceBotOutput)
+	return ret0, ret1
+}
+
+// CreateAppInstanceBotRequest indicates an expected call of CreateAppInstanceBotRequest
+func (mr *MockChimeSDKIdentityAPIMockRecorder) CreateAppInstanceBotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppInstanceBotRequest", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).CreateAppInstanceBotRequest), arg0)
+}
+
+// CreateAppInstanceBotWithContext mocks base method
+func (m *MockChimeSDKIdentityAPI) CreateAppInstanceBotWithContext(arg0 context.Context, arg1 *chimesdkidentity.CreateAppInstanceBotInput, arg2 ...request.Option) (*chimesdkidentity.CreateAppInstanceBotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAppInstanceBotWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkidentity.CreateAppInstanceBotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAppInstanceBotWithContext indicates an expected call of CreateAppInstanceBotWithContext
+func (mr *MockChimeSDKIdentityAPIMockRecorder) CreateAppInstanceBotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAppInstanceBotWithContext", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).CreateAppInstanceBotWithContext), varargs...)
+}
+
 // CreateAppInstanceRequest mocks base method
 func (m *MockChimeSDKIdentityAPI) CreateAppInstanceRequest(arg0 *chimesdkidentity.CreateAppInstanceInput) (*request.Request, *chimesdkidentity.CreateAppInstanceOutput) {
 	m.ctrl.T.Helper()
@@ -248,6 +298,56 @@ func (mr *MockChimeSDKIdentityAPIMockRecorder) DeleteAppInstanceAdminWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceAdminWithContext", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).DeleteAppInstanceAdminWithContext), varargs...)
+}
+
+// DeleteAppInstanceBot mocks base method
+func (m *MockChimeSDKIdentityAPI) DeleteAppInstanceBot(arg0 *chimesdkidentity.DeleteAppInstanceBotInput) (*chimesdkidentity.DeleteAppInstanceBotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppInstanceBot", arg0)
+	ret0, _ := ret[0].(*chimesdkidentity.DeleteAppInstanceBotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppInstanceBot indicates an expected call of DeleteAppInstanceBot
+func (mr *MockChimeSDKIdentityAPIMockRecorder) DeleteAppInstanceBot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceBot", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).DeleteAppInstanceBot), arg0)
+}
+
+// DeleteAppInstanceBotRequest mocks base method
+func (m *MockChimeSDKIdentityAPI) DeleteAppInstanceBotRequest(arg0 *chimesdkidentity.DeleteAppInstanceBotInput) (*request.Request, *chimesdkidentity.DeleteAppInstanceBotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAppInstanceBotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkidentity.DeleteAppInstanceBotOutput)
+	return ret0, ret1
+}
+
+// DeleteAppInstanceBotRequest indicates an expected call of DeleteAppInstanceBotRequest
+func (mr *MockChimeSDKIdentityAPIMockRecorder) DeleteAppInstanceBotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceBotRequest", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).DeleteAppInstanceBotRequest), arg0)
+}
+
+// DeleteAppInstanceBotWithContext mocks base method
+func (m *MockChimeSDKIdentityAPI) DeleteAppInstanceBotWithContext(arg0 context.Context, arg1 *chimesdkidentity.DeleteAppInstanceBotInput, arg2 ...request.Option) (*chimesdkidentity.DeleteAppInstanceBotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAppInstanceBotWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkidentity.DeleteAppInstanceBotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAppInstanceBotWithContext indicates an expected call of DeleteAppInstanceBotWithContext
+func (mr *MockChimeSDKIdentityAPIMockRecorder) DeleteAppInstanceBotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAppInstanceBotWithContext", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).DeleteAppInstanceBotWithContext), varargs...)
 }
 
 // DeleteAppInstanceRequest mocks base method
@@ -448,6 +548,56 @@ func (mr *MockChimeSDKIdentityAPIMockRecorder) DescribeAppInstanceAdminWithConte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppInstanceAdminWithContext", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).DescribeAppInstanceAdminWithContext), varargs...)
+}
+
+// DescribeAppInstanceBot mocks base method
+func (m *MockChimeSDKIdentityAPI) DescribeAppInstanceBot(arg0 *chimesdkidentity.DescribeAppInstanceBotInput) (*chimesdkidentity.DescribeAppInstanceBotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppInstanceBot", arg0)
+	ret0, _ := ret[0].(*chimesdkidentity.DescribeAppInstanceBotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppInstanceBot indicates an expected call of DescribeAppInstanceBot
+func (mr *MockChimeSDKIdentityAPIMockRecorder) DescribeAppInstanceBot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppInstanceBot", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).DescribeAppInstanceBot), arg0)
+}
+
+// DescribeAppInstanceBotRequest mocks base method
+func (m *MockChimeSDKIdentityAPI) DescribeAppInstanceBotRequest(arg0 *chimesdkidentity.DescribeAppInstanceBotInput) (*request.Request, *chimesdkidentity.DescribeAppInstanceBotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAppInstanceBotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkidentity.DescribeAppInstanceBotOutput)
+	return ret0, ret1
+}
+
+// DescribeAppInstanceBotRequest indicates an expected call of DescribeAppInstanceBotRequest
+func (mr *MockChimeSDKIdentityAPIMockRecorder) DescribeAppInstanceBotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppInstanceBotRequest", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).DescribeAppInstanceBotRequest), arg0)
+}
+
+// DescribeAppInstanceBotWithContext mocks base method
+func (m *MockChimeSDKIdentityAPI) DescribeAppInstanceBotWithContext(arg0 context.Context, arg1 *chimesdkidentity.DescribeAppInstanceBotInput, arg2 ...request.Option) (*chimesdkidentity.DescribeAppInstanceBotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAppInstanceBotWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkidentity.DescribeAppInstanceBotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAppInstanceBotWithContext indicates an expected call of DescribeAppInstanceBotWithContext
+func (mr *MockChimeSDKIdentityAPIMockRecorder) DescribeAppInstanceBotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAppInstanceBotWithContext", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).DescribeAppInstanceBotWithContext), varargs...)
 }
 
 // DescribeAppInstanceRequest mocks base method
@@ -716,6 +866,89 @@ func (mr *MockChimeSDKIdentityAPIMockRecorder) ListAppInstanceAdminsWithContext(
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceAdminsWithContext", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).ListAppInstanceAdminsWithContext), varargs...)
+}
+
+// ListAppInstanceBots mocks base method
+func (m *MockChimeSDKIdentityAPI) ListAppInstanceBots(arg0 *chimesdkidentity.ListAppInstanceBotsInput) (*chimesdkidentity.ListAppInstanceBotsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInstanceBots", arg0)
+	ret0, _ := ret[0].(*chimesdkidentity.ListAppInstanceBotsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppInstanceBots indicates an expected call of ListAppInstanceBots
+func (mr *MockChimeSDKIdentityAPIMockRecorder) ListAppInstanceBots(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceBots", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).ListAppInstanceBots), arg0)
+}
+
+// ListAppInstanceBotsPages mocks base method
+func (m *MockChimeSDKIdentityAPI) ListAppInstanceBotsPages(arg0 *chimesdkidentity.ListAppInstanceBotsInput, arg1 func(*chimesdkidentity.ListAppInstanceBotsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInstanceBotsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppInstanceBotsPages indicates an expected call of ListAppInstanceBotsPages
+func (mr *MockChimeSDKIdentityAPIMockRecorder) ListAppInstanceBotsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceBotsPages", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).ListAppInstanceBotsPages), arg0, arg1)
+}
+
+// ListAppInstanceBotsPagesWithContext mocks base method
+func (m *MockChimeSDKIdentityAPI) ListAppInstanceBotsPagesWithContext(arg0 context.Context, arg1 *chimesdkidentity.ListAppInstanceBotsInput, arg2 func(*chimesdkidentity.ListAppInstanceBotsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppInstanceBotsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppInstanceBotsPagesWithContext indicates an expected call of ListAppInstanceBotsPagesWithContext
+func (mr *MockChimeSDKIdentityAPIMockRecorder) ListAppInstanceBotsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceBotsPagesWithContext", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).ListAppInstanceBotsPagesWithContext), varargs...)
+}
+
+// ListAppInstanceBotsRequest mocks base method
+func (m *MockChimeSDKIdentityAPI) ListAppInstanceBotsRequest(arg0 *chimesdkidentity.ListAppInstanceBotsInput) (*request.Request, *chimesdkidentity.ListAppInstanceBotsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppInstanceBotsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkidentity.ListAppInstanceBotsOutput)
+	return ret0, ret1
+}
+
+// ListAppInstanceBotsRequest indicates an expected call of ListAppInstanceBotsRequest
+func (mr *MockChimeSDKIdentityAPIMockRecorder) ListAppInstanceBotsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceBotsRequest", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).ListAppInstanceBotsRequest), arg0)
+}
+
+// ListAppInstanceBotsWithContext mocks base method
+func (m *MockChimeSDKIdentityAPI) ListAppInstanceBotsWithContext(arg0 context.Context, arg1 *chimesdkidentity.ListAppInstanceBotsInput, arg2 ...request.Option) (*chimesdkidentity.ListAppInstanceBotsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppInstanceBotsWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkidentity.ListAppInstanceBotsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppInstanceBotsWithContext indicates an expected call of ListAppInstanceBotsWithContext
+func (mr *MockChimeSDKIdentityAPIMockRecorder) ListAppInstanceBotsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppInstanceBotsWithContext", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).ListAppInstanceBotsWithContext), varargs...)
 }
 
 // ListAppInstanceUserEndpoints mocks base method
@@ -1067,6 +1300,56 @@ func (mr *MockChimeSDKIdentityAPIMockRecorder) PutAppInstanceRetentionSettingsWi
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppInstanceRetentionSettingsWithContext", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).PutAppInstanceRetentionSettingsWithContext), varargs...)
 }
 
+// PutAppInstanceUserExpirationSettings mocks base method
+func (m *MockChimeSDKIdentityAPI) PutAppInstanceUserExpirationSettings(arg0 *chimesdkidentity.PutAppInstanceUserExpirationSettingsInput) (*chimesdkidentity.PutAppInstanceUserExpirationSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAppInstanceUserExpirationSettings", arg0)
+	ret0, _ := ret[0].(*chimesdkidentity.PutAppInstanceUserExpirationSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAppInstanceUserExpirationSettings indicates an expected call of PutAppInstanceUserExpirationSettings
+func (mr *MockChimeSDKIdentityAPIMockRecorder) PutAppInstanceUserExpirationSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppInstanceUserExpirationSettings", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).PutAppInstanceUserExpirationSettings), arg0)
+}
+
+// PutAppInstanceUserExpirationSettingsRequest mocks base method
+func (m *MockChimeSDKIdentityAPI) PutAppInstanceUserExpirationSettingsRequest(arg0 *chimesdkidentity.PutAppInstanceUserExpirationSettingsInput) (*request.Request, *chimesdkidentity.PutAppInstanceUserExpirationSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAppInstanceUserExpirationSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkidentity.PutAppInstanceUserExpirationSettingsOutput)
+	return ret0, ret1
+}
+
+// PutAppInstanceUserExpirationSettingsRequest indicates an expected call of PutAppInstanceUserExpirationSettingsRequest
+func (mr *MockChimeSDKIdentityAPIMockRecorder) PutAppInstanceUserExpirationSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppInstanceUserExpirationSettingsRequest", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).PutAppInstanceUserExpirationSettingsRequest), arg0)
+}
+
+// PutAppInstanceUserExpirationSettingsWithContext mocks base method
+func (m *MockChimeSDKIdentityAPI) PutAppInstanceUserExpirationSettingsWithContext(arg0 context.Context, arg1 *chimesdkidentity.PutAppInstanceUserExpirationSettingsInput, arg2 ...request.Option) (*chimesdkidentity.PutAppInstanceUserExpirationSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAppInstanceUserExpirationSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkidentity.PutAppInstanceUserExpirationSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAppInstanceUserExpirationSettingsWithContext indicates an expected call of PutAppInstanceUserExpirationSettingsWithContext
+func (mr *MockChimeSDKIdentityAPIMockRecorder) PutAppInstanceUserExpirationSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAppInstanceUserExpirationSettingsWithContext", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).PutAppInstanceUserExpirationSettingsWithContext), varargs...)
+}
+
 // RegisterAppInstanceUserEndpoint mocks base method
 func (m *MockChimeSDKIdentityAPI) RegisterAppInstanceUserEndpoint(arg0 *chimesdkidentity.RegisterAppInstanceUserEndpointInput) (*chimesdkidentity.RegisterAppInstanceUserEndpointOutput, error) {
 	m.ctrl.T.Helper()
@@ -1230,6 +1513,56 @@ func (m *MockChimeSDKIdentityAPI) UpdateAppInstance(arg0 *chimesdkidentity.Updat
 func (mr *MockChimeSDKIdentityAPIMockRecorder) UpdateAppInstance(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppInstance", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).UpdateAppInstance), arg0)
+}
+
+// UpdateAppInstanceBot mocks base method
+func (m *MockChimeSDKIdentityAPI) UpdateAppInstanceBot(arg0 *chimesdkidentity.UpdateAppInstanceBotInput) (*chimesdkidentity.UpdateAppInstanceBotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAppInstanceBot", arg0)
+	ret0, _ := ret[0].(*chimesdkidentity.UpdateAppInstanceBotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAppInstanceBot indicates an expected call of UpdateAppInstanceBot
+func (mr *MockChimeSDKIdentityAPIMockRecorder) UpdateAppInstanceBot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppInstanceBot", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).UpdateAppInstanceBot), arg0)
+}
+
+// UpdateAppInstanceBotRequest mocks base method
+func (m *MockChimeSDKIdentityAPI) UpdateAppInstanceBotRequest(arg0 *chimesdkidentity.UpdateAppInstanceBotInput) (*request.Request, *chimesdkidentity.UpdateAppInstanceBotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAppInstanceBotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkidentity.UpdateAppInstanceBotOutput)
+	return ret0, ret1
+}
+
+// UpdateAppInstanceBotRequest indicates an expected call of UpdateAppInstanceBotRequest
+func (mr *MockChimeSDKIdentityAPIMockRecorder) UpdateAppInstanceBotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppInstanceBotRequest", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).UpdateAppInstanceBotRequest), arg0)
+}
+
+// UpdateAppInstanceBotWithContext mocks base method
+func (m *MockChimeSDKIdentityAPI) UpdateAppInstanceBotWithContext(arg0 context.Context, arg1 *chimesdkidentity.UpdateAppInstanceBotInput, arg2 ...request.Option) (*chimesdkidentity.UpdateAppInstanceBotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAppInstanceBotWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkidentity.UpdateAppInstanceBotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAppInstanceBotWithContext indicates an expected call of UpdateAppInstanceBotWithContext
+func (mr *MockChimeSDKIdentityAPIMockRecorder) UpdateAppInstanceBotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAppInstanceBotWithContext", reflect.TypeOf((*MockChimeSDKIdentityAPI)(nil).UpdateAppInstanceBotWithContext), varargs...)
 }
 
 // UpdateAppInstanceRequest mocks base method
