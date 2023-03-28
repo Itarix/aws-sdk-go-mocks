@@ -35,6 +35,56 @@ func (m *MockVoiceIDAPI) EXPECT() *MockVoiceIDAPIMockRecorder {
 	return m.recorder
 }
 
+// AssociateFraudster mocks base method
+func (m *MockVoiceIDAPI) AssociateFraudster(arg0 *voiceid.AssociateFraudsterInput) (*voiceid.AssociateFraudsterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateFraudster", arg0)
+	ret0, _ := ret[0].(*voiceid.AssociateFraudsterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateFraudster indicates an expected call of AssociateFraudster
+func (mr *MockVoiceIDAPIMockRecorder) AssociateFraudster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFraudster", reflect.TypeOf((*MockVoiceIDAPI)(nil).AssociateFraudster), arg0)
+}
+
+// AssociateFraudsterRequest mocks base method
+func (m *MockVoiceIDAPI) AssociateFraudsterRequest(arg0 *voiceid.AssociateFraudsterInput) (*request.Request, *voiceid.AssociateFraudsterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateFraudsterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*voiceid.AssociateFraudsterOutput)
+	return ret0, ret1
+}
+
+// AssociateFraudsterRequest indicates an expected call of AssociateFraudsterRequest
+func (mr *MockVoiceIDAPIMockRecorder) AssociateFraudsterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFraudsterRequest", reflect.TypeOf((*MockVoiceIDAPI)(nil).AssociateFraudsterRequest), arg0)
+}
+
+// AssociateFraudsterWithContext mocks base method
+func (m *MockVoiceIDAPI) AssociateFraudsterWithContext(arg0 context.Context, arg1 *voiceid.AssociateFraudsterInput, arg2 ...request.Option) (*voiceid.AssociateFraudsterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateFraudsterWithContext", varargs...)
+	ret0, _ := ret[0].(*voiceid.AssociateFraudsterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateFraudsterWithContext indicates an expected call of AssociateFraudsterWithContext
+func (mr *MockVoiceIDAPIMockRecorder) AssociateFraudsterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFraudsterWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).AssociateFraudsterWithContext), varargs...)
+}
+
 // CreateDomain mocks base method
 func (m *MockVoiceIDAPI) CreateDomain(arg0 *voiceid.CreateDomainInput) (*voiceid.CreateDomainOutput, error) {
 	m.ctrl.T.Helper()
@@ -83,6 +133,56 @@ func (mr *MockVoiceIDAPIMockRecorder) CreateDomainWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).CreateDomainWithContext), varargs...)
+}
+
+// CreateWatchlist mocks base method
+func (m *MockVoiceIDAPI) CreateWatchlist(arg0 *voiceid.CreateWatchlistInput) (*voiceid.CreateWatchlistOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWatchlist", arg0)
+	ret0, _ := ret[0].(*voiceid.CreateWatchlistOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWatchlist indicates an expected call of CreateWatchlist
+func (mr *MockVoiceIDAPIMockRecorder) CreateWatchlist(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWatchlist", reflect.TypeOf((*MockVoiceIDAPI)(nil).CreateWatchlist), arg0)
+}
+
+// CreateWatchlistRequest mocks base method
+func (m *MockVoiceIDAPI) CreateWatchlistRequest(arg0 *voiceid.CreateWatchlistInput) (*request.Request, *voiceid.CreateWatchlistOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWatchlistRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*voiceid.CreateWatchlistOutput)
+	return ret0, ret1
+}
+
+// CreateWatchlistRequest indicates an expected call of CreateWatchlistRequest
+func (mr *MockVoiceIDAPIMockRecorder) CreateWatchlistRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWatchlistRequest", reflect.TypeOf((*MockVoiceIDAPI)(nil).CreateWatchlistRequest), arg0)
+}
+
+// CreateWatchlistWithContext mocks base method
+func (m *MockVoiceIDAPI) CreateWatchlistWithContext(arg0 context.Context, arg1 *voiceid.CreateWatchlistInput, arg2 ...request.Option) (*voiceid.CreateWatchlistOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWatchlistWithContext", varargs...)
+	ret0, _ := ret[0].(*voiceid.CreateWatchlistOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWatchlistWithContext indicates an expected call of CreateWatchlistWithContext
+func (mr *MockVoiceIDAPIMockRecorder) CreateWatchlistWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWatchlistWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).CreateWatchlistWithContext), varargs...)
 }
 
 // DeleteDomain mocks base method
@@ -233,6 +333,56 @@ func (mr *MockVoiceIDAPIMockRecorder) DeleteSpeakerWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSpeakerWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).DeleteSpeakerWithContext), varargs...)
+}
+
+// DeleteWatchlist mocks base method
+func (m *MockVoiceIDAPI) DeleteWatchlist(arg0 *voiceid.DeleteWatchlistInput) (*voiceid.DeleteWatchlistOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWatchlist", arg0)
+	ret0, _ := ret[0].(*voiceid.DeleteWatchlistOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWatchlist indicates an expected call of DeleteWatchlist
+func (mr *MockVoiceIDAPIMockRecorder) DeleteWatchlist(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWatchlist", reflect.TypeOf((*MockVoiceIDAPI)(nil).DeleteWatchlist), arg0)
+}
+
+// DeleteWatchlistRequest mocks base method
+func (m *MockVoiceIDAPI) DeleteWatchlistRequest(arg0 *voiceid.DeleteWatchlistInput) (*request.Request, *voiceid.DeleteWatchlistOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWatchlistRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*voiceid.DeleteWatchlistOutput)
+	return ret0, ret1
+}
+
+// DeleteWatchlistRequest indicates an expected call of DeleteWatchlistRequest
+func (mr *MockVoiceIDAPIMockRecorder) DeleteWatchlistRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWatchlistRequest", reflect.TypeOf((*MockVoiceIDAPI)(nil).DeleteWatchlistRequest), arg0)
+}
+
+// DeleteWatchlistWithContext mocks base method
+func (m *MockVoiceIDAPI) DeleteWatchlistWithContext(arg0 context.Context, arg1 *voiceid.DeleteWatchlistInput, arg2 ...request.Option) (*voiceid.DeleteWatchlistOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteWatchlistWithContext", varargs...)
+	ret0, _ := ret[0].(*voiceid.DeleteWatchlistOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWatchlistWithContext indicates an expected call of DeleteWatchlistWithContext
+func (mr *MockVoiceIDAPIMockRecorder) DeleteWatchlistWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWatchlistWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).DeleteWatchlistWithContext), varargs...)
 }
 
 // DescribeDomain mocks base method
@@ -485,6 +635,106 @@ func (mr *MockVoiceIDAPIMockRecorder) DescribeSpeakerWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSpeakerWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).DescribeSpeakerWithContext), varargs...)
 }
 
+// DescribeWatchlist mocks base method
+func (m *MockVoiceIDAPI) DescribeWatchlist(arg0 *voiceid.DescribeWatchlistInput) (*voiceid.DescribeWatchlistOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWatchlist", arg0)
+	ret0, _ := ret[0].(*voiceid.DescribeWatchlistOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWatchlist indicates an expected call of DescribeWatchlist
+func (mr *MockVoiceIDAPIMockRecorder) DescribeWatchlist(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWatchlist", reflect.TypeOf((*MockVoiceIDAPI)(nil).DescribeWatchlist), arg0)
+}
+
+// DescribeWatchlistRequest mocks base method
+func (m *MockVoiceIDAPI) DescribeWatchlistRequest(arg0 *voiceid.DescribeWatchlistInput) (*request.Request, *voiceid.DescribeWatchlistOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWatchlistRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*voiceid.DescribeWatchlistOutput)
+	return ret0, ret1
+}
+
+// DescribeWatchlistRequest indicates an expected call of DescribeWatchlistRequest
+func (mr *MockVoiceIDAPIMockRecorder) DescribeWatchlistRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWatchlistRequest", reflect.TypeOf((*MockVoiceIDAPI)(nil).DescribeWatchlistRequest), arg0)
+}
+
+// DescribeWatchlistWithContext mocks base method
+func (m *MockVoiceIDAPI) DescribeWatchlistWithContext(arg0 context.Context, arg1 *voiceid.DescribeWatchlistInput, arg2 ...request.Option) (*voiceid.DescribeWatchlistOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWatchlistWithContext", varargs...)
+	ret0, _ := ret[0].(*voiceid.DescribeWatchlistOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWatchlistWithContext indicates an expected call of DescribeWatchlistWithContext
+func (mr *MockVoiceIDAPIMockRecorder) DescribeWatchlistWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWatchlistWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).DescribeWatchlistWithContext), varargs...)
+}
+
+// DisassociateFraudster mocks base method
+func (m *MockVoiceIDAPI) DisassociateFraudster(arg0 *voiceid.DisassociateFraudsterInput) (*voiceid.DisassociateFraudsterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFraudster", arg0)
+	ret0, _ := ret[0].(*voiceid.DisassociateFraudsterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFraudster indicates an expected call of DisassociateFraudster
+func (mr *MockVoiceIDAPIMockRecorder) DisassociateFraudster(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFraudster", reflect.TypeOf((*MockVoiceIDAPI)(nil).DisassociateFraudster), arg0)
+}
+
+// DisassociateFraudsterRequest mocks base method
+func (m *MockVoiceIDAPI) DisassociateFraudsterRequest(arg0 *voiceid.DisassociateFraudsterInput) (*request.Request, *voiceid.DisassociateFraudsterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFraudsterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*voiceid.DisassociateFraudsterOutput)
+	return ret0, ret1
+}
+
+// DisassociateFraudsterRequest indicates an expected call of DisassociateFraudsterRequest
+func (mr *MockVoiceIDAPIMockRecorder) DisassociateFraudsterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFraudsterRequest", reflect.TypeOf((*MockVoiceIDAPI)(nil).DisassociateFraudsterRequest), arg0)
+}
+
+// DisassociateFraudsterWithContext mocks base method
+func (m *MockVoiceIDAPI) DisassociateFraudsterWithContext(arg0 context.Context, arg1 *voiceid.DisassociateFraudsterInput, arg2 ...request.Option) (*voiceid.DisassociateFraudsterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateFraudsterWithContext", varargs...)
+	ret0, _ := ret[0].(*voiceid.DisassociateFraudsterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFraudsterWithContext indicates an expected call of DisassociateFraudsterWithContext
+func (mr *MockVoiceIDAPIMockRecorder) DisassociateFraudsterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFraudsterWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).DisassociateFraudsterWithContext), varargs...)
+}
+
 // EvaluateSession mocks base method
 func (m *MockVoiceIDAPI) EvaluateSession(arg0 *voiceid.EvaluateSessionInput) (*voiceid.EvaluateSessionOutput, error) {
 	m.ctrl.T.Helper()
@@ -701,6 +951,89 @@ func (mr *MockVoiceIDAPIMockRecorder) ListFraudsterRegistrationJobsWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFraudsterRegistrationJobsWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).ListFraudsterRegistrationJobsWithContext), varargs...)
 }
 
+// ListFraudsters mocks base method
+func (m *MockVoiceIDAPI) ListFraudsters(arg0 *voiceid.ListFraudstersInput) (*voiceid.ListFraudstersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFraudsters", arg0)
+	ret0, _ := ret[0].(*voiceid.ListFraudstersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFraudsters indicates an expected call of ListFraudsters
+func (mr *MockVoiceIDAPIMockRecorder) ListFraudsters(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFraudsters", reflect.TypeOf((*MockVoiceIDAPI)(nil).ListFraudsters), arg0)
+}
+
+// ListFraudstersPages mocks base method
+func (m *MockVoiceIDAPI) ListFraudstersPages(arg0 *voiceid.ListFraudstersInput, arg1 func(*voiceid.ListFraudstersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFraudstersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFraudstersPages indicates an expected call of ListFraudstersPages
+func (mr *MockVoiceIDAPIMockRecorder) ListFraudstersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFraudstersPages", reflect.TypeOf((*MockVoiceIDAPI)(nil).ListFraudstersPages), arg0, arg1)
+}
+
+// ListFraudstersPagesWithContext mocks base method
+func (m *MockVoiceIDAPI) ListFraudstersPagesWithContext(arg0 context.Context, arg1 *voiceid.ListFraudstersInput, arg2 func(*voiceid.ListFraudstersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFraudstersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFraudstersPagesWithContext indicates an expected call of ListFraudstersPagesWithContext
+func (mr *MockVoiceIDAPIMockRecorder) ListFraudstersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFraudstersPagesWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).ListFraudstersPagesWithContext), varargs...)
+}
+
+// ListFraudstersRequest mocks base method
+func (m *MockVoiceIDAPI) ListFraudstersRequest(arg0 *voiceid.ListFraudstersInput) (*request.Request, *voiceid.ListFraudstersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFraudstersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*voiceid.ListFraudstersOutput)
+	return ret0, ret1
+}
+
+// ListFraudstersRequest indicates an expected call of ListFraudstersRequest
+func (mr *MockVoiceIDAPIMockRecorder) ListFraudstersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFraudstersRequest", reflect.TypeOf((*MockVoiceIDAPI)(nil).ListFraudstersRequest), arg0)
+}
+
+// ListFraudstersWithContext mocks base method
+func (m *MockVoiceIDAPI) ListFraudstersWithContext(arg0 context.Context, arg1 *voiceid.ListFraudstersInput, arg2 ...request.Option) (*voiceid.ListFraudstersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFraudstersWithContext", varargs...)
+	ret0, _ := ret[0].(*voiceid.ListFraudstersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFraudstersWithContext indicates an expected call of ListFraudstersWithContext
+func (mr *MockVoiceIDAPIMockRecorder) ListFraudstersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFraudstersWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).ListFraudstersWithContext), varargs...)
+}
+
 // ListSpeakerEnrollmentJobs mocks base method
 func (m *MockVoiceIDAPI) ListSpeakerEnrollmentJobs(arg0 *voiceid.ListSpeakerEnrollmentJobsInput) (*voiceid.ListSpeakerEnrollmentJobsOutput, error) {
 	m.ctrl.T.Helper()
@@ -915,6 +1248,89 @@ func (mr *MockVoiceIDAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// ListWatchlists mocks base method
+func (m *MockVoiceIDAPI) ListWatchlists(arg0 *voiceid.ListWatchlistsInput) (*voiceid.ListWatchlistsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWatchlists", arg0)
+	ret0, _ := ret[0].(*voiceid.ListWatchlistsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWatchlists indicates an expected call of ListWatchlists
+func (mr *MockVoiceIDAPIMockRecorder) ListWatchlists(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWatchlists", reflect.TypeOf((*MockVoiceIDAPI)(nil).ListWatchlists), arg0)
+}
+
+// ListWatchlistsPages mocks base method
+func (m *MockVoiceIDAPI) ListWatchlistsPages(arg0 *voiceid.ListWatchlistsInput, arg1 func(*voiceid.ListWatchlistsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWatchlistsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWatchlistsPages indicates an expected call of ListWatchlistsPages
+func (mr *MockVoiceIDAPIMockRecorder) ListWatchlistsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWatchlistsPages", reflect.TypeOf((*MockVoiceIDAPI)(nil).ListWatchlistsPages), arg0, arg1)
+}
+
+// ListWatchlistsPagesWithContext mocks base method
+func (m *MockVoiceIDAPI) ListWatchlistsPagesWithContext(arg0 context.Context, arg1 *voiceid.ListWatchlistsInput, arg2 func(*voiceid.ListWatchlistsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWatchlistsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWatchlistsPagesWithContext indicates an expected call of ListWatchlistsPagesWithContext
+func (mr *MockVoiceIDAPIMockRecorder) ListWatchlistsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWatchlistsPagesWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).ListWatchlistsPagesWithContext), varargs...)
+}
+
+// ListWatchlistsRequest mocks base method
+func (m *MockVoiceIDAPI) ListWatchlistsRequest(arg0 *voiceid.ListWatchlistsInput) (*request.Request, *voiceid.ListWatchlistsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWatchlistsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*voiceid.ListWatchlistsOutput)
+	return ret0, ret1
+}
+
+// ListWatchlistsRequest indicates an expected call of ListWatchlistsRequest
+func (mr *MockVoiceIDAPIMockRecorder) ListWatchlistsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWatchlistsRequest", reflect.TypeOf((*MockVoiceIDAPI)(nil).ListWatchlistsRequest), arg0)
+}
+
+// ListWatchlistsWithContext mocks base method
+func (m *MockVoiceIDAPI) ListWatchlistsWithContext(arg0 context.Context, arg1 *voiceid.ListWatchlistsInput, arg2 ...request.Option) (*voiceid.ListWatchlistsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWatchlistsWithContext", varargs...)
+	ret0, _ := ret[0].(*voiceid.ListWatchlistsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWatchlistsWithContext indicates an expected call of ListWatchlistsWithContext
+func (mr *MockVoiceIDAPIMockRecorder) ListWatchlistsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWatchlistsWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).ListWatchlistsWithContext), varargs...)
 }
 
 // OptOutSpeaker mocks base method
@@ -1215,4 +1631,54 @@ func (mr *MockVoiceIDAPIMockRecorder) UpdateDomainWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDomainWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).UpdateDomainWithContext), varargs...)
+}
+
+// UpdateWatchlist mocks base method
+func (m *MockVoiceIDAPI) UpdateWatchlist(arg0 *voiceid.UpdateWatchlistInput) (*voiceid.UpdateWatchlistOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWatchlist", arg0)
+	ret0, _ := ret[0].(*voiceid.UpdateWatchlistOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWatchlist indicates an expected call of UpdateWatchlist
+func (mr *MockVoiceIDAPIMockRecorder) UpdateWatchlist(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWatchlist", reflect.TypeOf((*MockVoiceIDAPI)(nil).UpdateWatchlist), arg0)
+}
+
+// UpdateWatchlistRequest mocks base method
+func (m *MockVoiceIDAPI) UpdateWatchlistRequest(arg0 *voiceid.UpdateWatchlistInput) (*request.Request, *voiceid.UpdateWatchlistOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWatchlistRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*voiceid.UpdateWatchlistOutput)
+	return ret0, ret1
+}
+
+// UpdateWatchlistRequest indicates an expected call of UpdateWatchlistRequest
+func (mr *MockVoiceIDAPIMockRecorder) UpdateWatchlistRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWatchlistRequest", reflect.TypeOf((*MockVoiceIDAPI)(nil).UpdateWatchlistRequest), arg0)
+}
+
+// UpdateWatchlistWithContext mocks base method
+func (m *MockVoiceIDAPI) UpdateWatchlistWithContext(arg0 context.Context, arg1 *voiceid.UpdateWatchlistInput, arg2 ...request.Option) (*voiceid.UpdateWatchlistOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateWatchlistWithContext", varargs...)
+	ret0, _ := ret[0].(*voiceid.UpdateWatchlistOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWatchlistWithContext indicates an expected call of UpdateWatchlistWithContext
+func (mr *MockVoiceIDAPIMockRecorder) UpdateWatchlistWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWatchlistWithContext", reflect.TypeOf((*MockVoiceIDAPI)(nil).UpdateWatchlistWithContext), varargs...)
 }

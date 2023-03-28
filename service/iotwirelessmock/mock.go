@@ -1300,6 +1300,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) DeleteWirelessDevice(arg0 interface{})
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWirelessDevice", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteWirelessDevice), arg0)
 }
 
+// DeleteWirelessDeviceImportTask mocks base method
+func (m *MockIoTWirelessAPI) DeleteWirelessDeviceImportTask(arg0 *iotwireless.DeleteWirelessDeviceImportTaskInput) (*iotwireless.DeleteWirelessDeviceImportTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWirelessDeviceImportTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.DeleteWirelessDeviceImportTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWirelessDeviceImportTask indicates an expected call of DeleteWirelessDeviceImportTask
+func (mr *MockIoTWirelessAPIMockRecorder) DeleteWirelessDeviceImportTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWirelessDeviceImportTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteWirelessDeviceImportTask), arg0)
+}
+
+// DeleteWirelessDeviceImportTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) DeleteWirelessDeviceImportTaskRequest(arg0 *iotwireless.DeleteWirelessDeviceImportTaskInput) (*request.Request, *iotwireless.DeleteWirelessDeviceImportTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteWirelessDeviceImportTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.DeleteWirelessDeviceImportTaskOutput)
+	return ret0, ret1
+}
+
+// DeleteWirelessDeviceImportTaskRequest indicates an expected call of DeleteWirelessDeviceImportTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) DeleteWirelessDeviceImportTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWirelessDeviceImportTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteWirelessDeviceImportTaskRequest), arg0)
+}
+
+// DeleteWirelessDeviceImportTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) DeleteWirelessDeviceImportTaskWithContext(arg0 context.Context, arg1 *iotwireless.DeleteWirelessDeviceImportTaskInput, arg2 ...request.Option) (*iotwireless.DeleteWirelessDeviceImportTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteWirelessDeviceImportTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.DeleteWirelessDeviceImportTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteWirelessDeviceImportTaskWithContext indicates an expected call of DeleteWirelessDeviceImportTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) DeleteWirelessDeviceImportTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWirelessDeviceImportTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteWirelessDeviceImportTaskWithContext), varargs...)
+}
+
 // DeleteWirelessDeviceRequest mocks base method
 func (m *MockIoTWirelessAPI) DeleteWirelessDeviceRequest(arg0 *iotwireless.DeleteWirelessDeviceInput) (*request.Request, *iotwireless.DeleteWirelessDeviceOutput) {
 	m.ctrl.T.Helper()
@@ -1483,6 +1533,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) DeleteWirelessGatewayWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWirelessGatewayWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeleteWirelessGatewayWithContext), varargs...)
+}
+
+// DeregisterWirelessDevice mocks base method
+func (m *MockIoTWirelessAPI) DeregisterWirelessDevice(arg0 *iotwireless.DeregisterWirelessDeviceInput) (*iotwireless.DeregisterWirelessDeviceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterWirelessDevice", arg0)
+	ret0, _ := ret[0].(*iotwireless.DeregisterWirelessDeviceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterWirelessDevice indicates an expected call of DeregisterWirelessDevice
+func (mr *MockIoTWirelessAPIMockRecorder) DeregisterWirelessDevice(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterWirelessDevice", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeregisterWirelessDevice), arg0)
+}
+
+// DeregisterWirelessDeviceRequest mocks base method
+func (m *MockIoTWirelessAPI) DeregisterWirelessDeviceRequest(arg0 *iotwireless.DeregisterWirelessDeviceInput) (*request.Request, *iotwireless.DeregisterWirelessDeviceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterWirelessDeviceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.DeregisterWirelessDeviceOutput)
+	return ret0, ret1
+}
+
+// DeregisterWirelessDeviceRequest indicates an expected call of DeregisterWirelessDeviceRequest
+func (mr *MockIoTWirelessAPIMockRecorder) DeregisterWirelessDeviceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterWirelessDeviceRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeregisterWirelessDeviceRequest), arg0)
+}
+
+// DeregisterWirelessDeviceWithContext mocks base method
+func (m *MockIoTWirelessAPI) DeregisterWirelessDeviceWithContext(arg0 context.Context, arg1 *iotwireless.DeregisterWirelessDeviceInput, arg2 ...request.Option) (*iotwireless.DeregisterWirelessDeviceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeregisterWirelessDeviceWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.DeregisterWirelessDeviceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterWirelessDeviceWithContext indicates an expected call of DeregisterWirelessDeviceWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) DeregisterWirelessDeviceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterWirelessDeviceWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).DeregisterWirelessDeviceWithContext), varargs...)
 }
 
 // DisassociateAwsAccountFromPartnerAccount mocks base method
@@ -2700,6 +2800,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) GetWirelessDevice(arg0 interface{}) *g
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWirelessDevice", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetWirelessDevice), arg0)
 }
 
+// GetWirelessDeviceImportTask mocks base method
+func (m *MockIoTWirelessAPI) GetWirelessDeviceImportTask(arg0 *iotwireless.GetWirelessDeviceImportTaskInput) (*iotwireless.GetWirelessDeviceImportTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWirelessDeviceImportTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.GetWirelessDeviceImportTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWirelessDeviceImportTask indicates an expected call of GetWirelessDeviceImportTask
+func (mr *MockIoTWirelessAPIMockRecorder) GetWirelessDeviceImportTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWirelessDeviceImportTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetWirelessDeviceImportTask), arg0)
+}
+
+// GetWirelessDeviceImportTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) GetWirelessDeviceImportTaskRequest(arg0 *iotwireless.GetWirelessDeviceImportTaskInput) (*request.Request, *iotwireless.GetWirelessDeviceImportTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetWirelessDeviceImportTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.GetWirelessDeviceImportTaskOutput)
+	return ret0, ret1
+}
+
+// GetWirelessDeviceImportTaskRequest indicates an expected call of GetWirelessDeviceImportTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) GetWirelessDeviceImportTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWirelessDeviceImportTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetWirelessDeviceImportTaskRequest), arg0)
+}
+
+// GetWirelessDeviceImportTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) GetWirelessDeviceImportTaskWithContext(arg0 context.Context, arg1 *iotwireless.GetWirelessDeviceImportTaskInput, arg2 ...request.Option) (*iotwireless.GetWirelessDeviceImportTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetWirelessDeviceImportTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.GetWirelessDeviceImportTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetWirelessDeviceImportTaskWithContext indicates an expected call of GetWirelessDeviceImportTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) GetWirelessDeviceImportTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWirelessDeviceImportTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).GetWirelessDeviceImportTaskWithContext), varargs...)
+}
+
 // GetWirelessDeviceRequest mocks base method
 func (m *MockIoTWirelessAPI) GetWirelessDeviceRequest(arg0 *iotwireless.GetWirelessDeviceInput) (*request.Request, *iotwireless.GetWirelessDeviceOutput) {
 	m.ctrl.T.Helper()
@@ -3249,6 +3399,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) ListDeviceProfilesWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDeviceProfilesWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListDeviceProfilesWithContext), varargs...)
+}
+
+// ListDevicesForWirelessDeviceImportTask mocks base method
+func (m *MockIoTWirelessAPI) ListDevicesForWirelessDeviceImportTask(arg0 *iotwireless.ListDevicesForWirelessDeviceImportTaskInput) (*iotwireless.ListDevicesForWirelessDeviceImportTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDevicesForWirelessDeviceImportTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.ListDevicesForWirelessDeviceImportTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDevicesForWirelessDeviceImportTask indicates an expected call of ListDevicesForWirelessDeviceImportTask
+func (mr *MockIoTWirelessAPIMockRecorder) ListDevicesForWirelessDeviceImportTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevicesForWirelessDeviceImportTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListDevicesForWirelessDeviceImportTask), arg0)
+}
+
+// ListDevicesForWirelessDeviceImportTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) ListDevicesForWirelessDeviceImportTaskRequest(arg0 *iotwireless.ListDevicesForWirelessDeviceImportTaskInput) (*request.Request, *iotwireless.ListDevicesForWirelessDeviceImportTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDevicesForWirelessDeviceImportTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.ListDevicesForWirelessDeviceImportTaskOutput)
+	return ret0, ret1
+}
+
+// ListDevicesForWirelessDeviceImportTaskRequest indicates an expected call of ListDevicesForWirelessDeviceImportTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) ListDevicesForWirelessDeviceImportTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevicesForWirelessDeviceImportTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListDevicesForWirelessDeviceImportTaskRequest), arg0)
+}
+
+// ListDevicesForWirelessDeviceImportTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) ListDevicesForWirelessDeviceImportTaskWithContext(arg0 context.Context, arg1 *iotwireless.ListDevicesForWirelessDeviceImportTaskInput, arg2 ...request.Option) (*iotwireless.ListDevicesForWirelessDeviceImportTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDevicesForWirelessDeviceImportTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.ListDevicesForWirelessDeviceImportTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDevicesForWirelessDeviceImportTaskWithContext indicates an expected call of ListDevicesForWirelessDeviceImportTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) ListDevicesForWirelessDeviceImportTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDevicesForWirelessDeviceImportTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListDevicesForWirelessDeviceImportTaskWithContext), varargs...)
 }
 
 // ListEventConfigurations mocks base method
@@ -3982,6 +4182,56 @@ func (mr *MockIoTWirelessAPIMockRecorder) ListTagsForResourceWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ListWirelessDeviceImportTasks mocks base method
+func (m *MockIoTWirelessAPI) ListWirelessDeviceImportTasks(arg0 *iotwireless.ListWirelessDeviceImportTasksInput) (*iotwireless.ListWirelessDeviceImportTasksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWirelessDeviceImportTasks", arg0)
+	ret0, _ := ret[0].(*iotwireless.ListWirelessDeviceImportTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWirelessDeviceImportTasks indicates an expected call of ListWirelessDeviceImportTasks
+func (mr *MockIoTWirelessAPIMockRecorder) ListWirelessDeviceImportTasks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWirelessDeviceImportTasks", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListWirelessDeviceImportTasks), arg0)
+}
+
+// ListWirelessDeviceImportTasksRequest mocks base method
+func (m *MockIoTWirelessAPI) ListWirelessDeviceImportTasksRequest(arg0 *iotwireless.ListWirelessDeviceImportTasksInput) (*request.Request, *iotwireless.ListWirelessDeviceImportTasksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWirelessDeviceImportTasksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.ListWirelessDeviceImportTasksOutput)
+	return ret0, ret1
+}
+
+// ListWirelessDeviceImportTasksRequest indicates an expected call of ListWirelessDeviceImportTasksRequest
+func (mr *MockIoTWirelessAPIMockRecorder) ListWirelessDeviceImportTasksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWirelessDeviceImportTasksRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListWirelessDeviceImportTasksRequest), arg0)
+}
+
+// ListWirelessDeviceImportTasksWithContext mocks base method
+func (m *MockIoTWirelessAPI) ListWirelessDeviceImportTasksWithContext(arg0 context.Context, arg1 *iotwireless.ListWirelessDeviceImportTasksInput, arg2 ...request.Option) (*iotwireless.ListWirelessDeviceImportTasksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWirelessDeviceImportTasksWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.ListWirelessDeviceImportTasksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWirelessDeviceImportTasksWithContext indicates an expected call of ListWirelessDeviceImportTasksWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) ListWirelessDeviceImportTasksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWirelessDeviceImportTasksWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).ListWirelessDeviceImportTasksWithContext), varargs...)
+}
+
 // ListWirelessDevices mocks base method
 func (m *MockIoTWirelessAPI) ListWirelessDevices(arg0 *iotwireless.ListWirelessDevicesInput) (*iotwireless.ListWirelessDevicesOutput, error) {
 	m.ctrl.T.Helper()
@@ -4698,6 +4948,106 @@ func (mr *MockIoTWirelessAPIMockRecorder) StartMulticastGroupSessionWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMulticastGroupSessionWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartMulticastGroupSessionWithContext), varargs...)
 }
 
+// StartSingleWirelessDeviceImportTask mocks base method
+func (m *MockIoTWirelessAPI) StartSingleWirelessDeviceImportTask(arg0 *iotwireless.StartSingleWirelessDeviceImportTaskInput) (*iotwireless.StartSingleWirelessDeviceImportTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSingleWirelessDeviceImportTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.StartSingleWirelessDeviceImportTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSingleWirelessDeviceImportTask indicates an expected call of StartSingleWirelessDeviceImportTask
+func (mr *MockIoTWirelessAPIMockRecorder) StartSingleWirelessDeviceImportTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSingleWirelessDeviceImportTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartSingleWirelessDeviceImportTask), arg0)
+}
+
+// StartSingleWirelessDeviceImportTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) StartSingleWirelessDeviceImportTaskRequest(arg0 *iotwireless.StartSingleWirelessDeviceImportTaskInput) (*request.Request, *iotwireless.StartSingleWirelessDeviceImportTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSingleWirelessDeviceImportTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.StartSingleWirelessDeviceImportTaskOutput)
+	return ret0, ret1
+}
+
+// StartSingleWirelessDeviceImportTaskRequest indicates an expected call of StartSingleWirelessDeviceImportTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) StartSingleWirelessDeviceImportTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSingleWirelessDeviceImportTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartSingleWirelessDeviceImportTaskRequest), arg0)
+}
+
+// StartSingleWirelessDeviceImportTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) StartSingleWirelessDeviceImportTaskWithContext(arg0 context.Context, arg1 *iotwireless.StartSingleWirelessDeviceImportTaskInput, arg2 ...request.Option) (*iotwireless.StartSingleWirelessDeviceImportTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartSingleWirelessDeviceImportTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.StartSingleWirelessDeviceImportTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSingleWirelessDeviceImportTaskWithContext indicates an expected call of StartSingleWirelessDeviceImportTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) StartSingleWirelessDeviceImportTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSingleWirelessDeviceImportTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartSingleWirelessDeviceImportTaskWithContext), varargs...)
+}
+
+// StartWirelessDeviceImportTask mocks base method
+func (m *MockIoTWirelessAPI) StartWirelessDeviceImportTask(arg0 *iotwireless.StartWirelessDeviceImportTaskInput) (*iotwireless.StartWirelessDeviceImportTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartWirelessDeviceImportTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.StartWirelessDeviceImportTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartWirelessDeviceImportTask indicates an expected call of StartWirelessDeviceImportTask
+func (mr *MockIoTWirelessAPIMockRecorder) StartWirelessDeviceImportTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartWirelessDeviceImportTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartWirelessDeviceImportTask), arg0)
+}
+
+// StartWirelessDeviceImportTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) StartWirelessDeviceImportTaskRequest(arg0 *iotwireless.StartWirelessDeviceImportTaskInput) (*request.Request, *iotwireless.StartWirelessDeviceImportTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartWirelessDeviceImportTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.StartWirelessDeviceImportTaskOutput)
+	return ret0, ret1
+}
+
+// StartWirelessDeviceImportTaskRequest indicates an expected call of StartWirelessDeviceImportTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) StartWirelessDeviceImportTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartWirelessDeviceImportTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartWirelessDeviceImportTaskRequest), arg0)
+}
+
+// StartWirelessDeviceImportTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) StartWirelessDeviceImportTaskWithContext(arg0 context.Context, arg1 *iotwireless.StartWirelessDeviceImportTaskInput, arg2 ...request.Option) (*iotwireless.StartWirelessDeviceImportTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartWirelessDeviceImportTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.StartWirelessDeviceImportTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartWirelessDeviceImportTaskWithContext indicates an expected call of StartWirelessDeviceImportTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) StartWirelessDeviceImportTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartWirelessDeviceImportTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).StartWirelessDeviceImportTaskWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockIoTWirelessAPI) TagResource(arg0 *iotwireless.TagResourceInput) (*iotwireless.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -5361,6 +5711,56 @@ func (m *MockIoTWirelessAPI) UpdateWirelessDevice(arg0 *iotwireless.UpdateWirele
 func (mr *MockIoTWirelessAPIMockRecorder) UpdateWirelessDevice(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWirelessDevice", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateWirelessDevice), arg0)
+}
+
+// UpdateWirelessDeviceImportTask mocks base method
+func (m *MockIoTWirelessAPI) UpdateWirelessDeviceImportTask(arg0 *iotwireless.UpdateWirelessDeviceImportTaskInput) (*iotwireless.UpdateWirelessDeviceImportTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWirelessDeviceImportTask", arg0)
+	ret0, _ := ret[0].(*iotwireless.UpdateWirelessDeviceImportTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWirelessDeviceImportTask indicates an expected call of UpdateWirelessDeviceImportTask
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateWirelessDeviceImportTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWirelessDeviceImportTask", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateWirelessDeviceImportTask), arg0)
+}
+
+// UpdateWirelessDeviceImportTaskRequest mocks base method
+func (m *MockIoTWirelessAPI) UpdateWirelessDeviceImportTaskRequest(arg0 *iotwireless.UpdateWirelessDeviceImportTaskInput) (*request.Request, *iotwireless.UpdateWirelessDeviceImportTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWirelessDeviceImportTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotwireless.UpdateWirelessDeviceImportTaskOutput)
+	return ret0, ret1
+}
+
+// UpdateWirelessDeviceImportTaskRequest indicates an expected call of UpdateWirelessDeviceImportTaskRequest
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateWirelessDeviceImportTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWirelessDeviceImportTaskRequest", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateWirelessDeviceImportTaskRequest), arg0)
+}
+
+// UpdateWirelessDeviceImportTaskWithContext mocks base method
+func (m *MockIoTWirelessAPI) UpdateWirelessDeviceImportTaskWithContext(arg0 context.Context, arg1 *iotwireless.UpdateWirelessDeviceImportTaskInput, arg2 ...request.Option) (*iotwireless.UpdateWirelessDeviceImportTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateWirelessDeviceImportTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*iotwireless.UpdateWirelessDeviceImportTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWirelessDeviceImportTaskWithContext indicates an expected call of UpdateWirelessDeviceImportTaskWithContext
+func (mr *MockIoTWirelessAPIMockRecorder) UpdateWirelessDeviceImportTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWirelessDeviceImportTaskWithContext", reflect.TypeOf((*MockIoTWirelessAPI)(nil).UpdateWirelessDeviceImportTaskWithContext), varargs...)
 }
 
 // UpdateWirelessDeviceRequest mocks base method
