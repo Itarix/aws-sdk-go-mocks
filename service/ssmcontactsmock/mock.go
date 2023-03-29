@@ -235,6 +235,106 @@ func (mr *MockSSMContactsAPIMockRecorder) CreateContactWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).CreateContactWithContext), varargs...)
 }
 
+// CreateRotation mocks base method
+func (m *MockSSMContactsAPI) CreateRotation(arg0 *ssmcontacts.CreateRotationInput) (*ssmcontacts.CreateRotationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRotation", arg0)
+	ret0, _ := ret[0].(*ssmcontacts.CreateRotationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRotation indicates an expected call of CreateRotation
+func (mr *MockSSMContactsAPIMockRecorder) CreateRotation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRotation", reflect.TypeOf((*MockSSMContactsAPI)(nil).CreateRotation), arg0)
+}
+
+// CreateRotationOverride mocks base method
+func (m *MockSSMContactsAPI) CreateRotationOverride(arg0 *ssmcontacts.CreateRotationOverrideInput) (*ssmcontacts.CreateRotationOverrideOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRotationOverride", arg0)
+	ret0, _ := ret[0].(*ssmcontacts.CreateRotationOverrideOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRotationOverride indicates an expected call of CreateRotationOverride
+func (mr *MockSSMContactsAPIMockRecorder) CreateRotationOverride(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRotationOverride", reflect.TypeOf((*MockSSMContactsAPI)(nil).CreateRotationOverride), arg0)
+}
+
+// CreateRotationOverrideRequest mocks base method
+func (m *MockSSMContactsAPI) CreateRotationOverrideRequest(arg0 *ssmcontacts.CreateRotationOverrideInput) (*request.Request, *ssmcontacts.CreateRotationOverrideOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRotationOverrideRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssmcontacts.CreateRotationOverrideOutput)
+	return ret0, ret1
+}
+
+// CreateRotationOverrideRequest indicates an expected call of CreateRotationOverrideRequest
+func (mr *MockSSMContactsAPIMockRecorder) CreateRotationOverrideRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRotationOverrideRequest", reflect.TypeOf((*MockSSMContactsAPI)(nil).CreateRotationOverrideRequest), arg0)
+}
+
+// CreateRotationOverrideWithContext mocks base method
+func (m *MockSSMContactsAPI) CreateRotationOverrideWithContext(arg0 context.Context, arg1 *ssmcontacts.CreateRotationOverrideInput, arg2 ...request.Option) (*ssmcontacts.CreateRotationOverrideOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRotationOverrideWithContext", varargs...)
+	ret0, _ := ret[0].(*ssmcontacts.CreateRotationOverrideOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRotationOverrideWithContext indicates an expected call of CreateRotationOverrideWithContext
+func (mr *MockSSMContactsAPIMockRecorder) CreateRotationOverrideWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRotationOverrideWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).CreateRotationOverrideWithContext), varargs...)
+}
+
+// CreateRotationRequest mocks base method
+func (m *MockSSMContactsAPI) CreateRotationRequest(arg0 *ssmcontacts.CreateRotationInput) (*request.Request, *ssmcontacts.CreateRotationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRotationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssmcontacts.CreateRotationOutput)
+	return ret0, ret1
+}
+
+// CreateRotationRequest indicates an expected call of CreateRotationRequest
+func (mr *MockSSMContactsAPIMockRecorder) CreateRotationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRotationRequest", reflect.TypeOf((*MockSSMContactsAPI)(nil).CreateRotationRequest), arg0)
+}
+
+// CreateRotationWithContext mocks base method
+func (m *MockSSMContactsAPI) CreateRotationWithContext(arg0 context.Context, arg1 *ssmcontacts.CreateRotationInput, arg2 ...request.Option) (*ssmcontacts.CreateRotationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRotationWithContext", varargs...)
+	ret0, _ := ret[0].(*ssmcontacts.CreateRotationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRotationWithContext indicates an expected call of CreateRotationWithContext
+func (mr *MockSSMContactsAPIMockRecorder) CreateRotationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRotationWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).CreateRotationWithContext), varargs...)
+}
+
 // DeactivateContactChannel mocks base method
 func (m *MockSSMContactsAPI) DeactivateContactChannel(arg0 *ssmcontacts.DeactivateContactChannelInput) (*ssmcontacts.DeactivateContactChannelOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +483,106 @@ func (mr *MockSSMContactsAPIMockRecorder) DeleteContactWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).DeleteContactWithContext), varargs...)
+}
+
+// DeleteRotation mocks base method
+func (m *MockSSMContactsAPI) DeleteRotation(arg0 *ssmcontacts.DeleteRotationInput) (*ssmcontacts.DeleteRotationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRotation", arg0)
+	ret0, _ := ret[0].(*ssmcontacts.DeleteRotationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRotation indicates an expected call of DeleteRotation
+func (mr *MockSSMContactsAPIMockRecorder) DeleteRotation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRotation", reflect.TypeOf((*MockSSMContactsAPI)(nil).DeleteRotation), arg0)
+}
+
+// DeleteRotationOverride mocks base method
+func (m *MockSSMContactsAPI) DeleteRotationOverride(arg0 *ssmcontacts.DeleteRotationOverrideInput) (*ssmcontacts.DeleteRotationOverrideOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRotationOverride", arg0)
+	ret0, _ := ret[0].(*ssmcontacts.DeleteRotationOverrideOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRotationOverride indicates an expected call of DeleteRotationOverride
+func (mr *MockSSMContactsAPIMockRecorder) DeleteRotationOverride(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRotationOverride", reflect.TypeOf((*MockSSMContactsAPI)(nil).DeleteRotationOverride), arg0)
+}
+
+// DeleteRotationOverrideRequest mocks base method
+func (m *MockSSMContactsAPI) DeleteRotationOverrideRequest(arg0 *ssmcontacts.DeleteRotationOverrideInput) (*request.Request, *ssmcontacts.DeleteRotationOverrideOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRotationOverrideRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssmcontacts.DeleteRotationOverrideOutput)
+	return ret0, ret1
+}
+
+// DeleteRotationOverrideRequest indicates an expected call of DeleteRotationOverrideRequest
+func (mr *MockSSMContactsAPIMockRecorder) DeleteRotationOverrideRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRotationOverrideRequest", reflect.TypeOf((*MockSSMContactsAPI)(nil).DeleteRotationOverrideRequest), arg0)
+}
+
+// DeleteRotationOverrideWithContext mocks base method
+func (m *MockSSMContactsAPI) DeleteRotationOverrideWithContext(arg0 context.Context, arg1 *ssmcontacts.DeleteRotationOverrideInput, arg2 ...request.Option) (*ssmcontacts.DeleteRotationOverrideOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRotationOverrideWithContext", varargs...)
+	ret0, _ := ret[0].(*ssmcontacts.DeleteRotationOverrideOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRotationOverrideWithContext indicates an expected call of DeleteRotationOverrideWithContext
+func (mr *MockSSMContactsAPIMockRecorder) DeleteRotationOverrideWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRotationOverrideWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).DeleteRotationOverrideWithContext), varargs...)
+}
+
+// DeleteRotationRequest mocks base method
+func (m *MockSSMContactsAPI) DeleteRotationRequest(arg0 *ssmcontacts.DeleteRotationInput) (*request.Request, *ssmcontacts.DeleteRotationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRotationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssmcontacts.DeleteRotationOutput)
+	return ret0, ret1
+}
+
+// DeleteRotationRequest indicates an expected call of DeleteRotationRequest
+func (mr *MockSSMContactsAPIMockRecorder) DeleteRotationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRotationRequest", reflect.TypeOf((*MockSSMContactsAPI)(nil).DeleteRotationRequest), arg0)
+}
+
+// DeleteRotationWithContext mocks base method
+func (m *MockSSMContactsAPI) DeleteRotationWithContext(arg0 context.Context, arg1 *ssmcontacts.DeleteRotationInput, arg2 ...request.Option) (*ssmcontacts.DeleteRotationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRotationWithContext", varargs...)
+	ret0, _ := ret[0].(*ssmcontacts.DeleteRotationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRotationWithContext indicates an expected call of DeleteRotationWithContext
+func (mr *MockSSMContactsAPIMockRecorder) DeleteRotationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRotationWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).DeleteRotationWithContext), varargs...)
 }
 
 // DescribeEngagement mocks base method
@@ -633,6 +833,106 @@ func (mr *MockSSMContactsAPIMockRecorder) GetContactWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContactWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).GetContactWithContext), varargs...)
+}
+
+// GetRotation mocks base method
+func (m *MockSSMContactsAPI) GetRotation(arg0 *ssmcontacts.GetRotationInput) (*ssmcontacts.GetRotationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRotation", arg0)
+	ret0, _ := ret[0].(*ssmcontacts.GetRotationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRotation indicates an expected call of GetRotation
+func (mr *MockSSMContactsAPIMockRecorder) GetRotation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRotation", reflect.TypeOf((*MockSSMContactsAPI)(nil).GetRotation), arg0)
+}
+
+// GetRotationOverride mocks base method
+func (m *MockSSMContactsAPI) GetRotationOverride(arg0 *ssmcontacts.GetRotationOverrideInput) (*ssmcontacts.GetRotationOverrideOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRotationOverride", arg0)
+	ret0, _ := ret[0].(*ssmcontacts.GetRotationOverrideOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRotationOverride indicates an expected call of GetRotationOverride
+func (mr *MockSSMContactsAPIMockRecorder) GetRotationOverride(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRotationOverride", reflect.TypeOf((*MockSSMContactsAPI)(nil).GetRotationOverride), arg0)
+}
+
+// GetRotationOverrideRequest mocks base method
+func (m *MockSSMContactsAPI) GetRotationOverrideRequest(arg0 *ssmcontacts.GetRotationOverrideInput) (*request.Request, *ssmcontacts.GetRotationOverrideOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRotationOverrideRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssmcontacts.GetRotationOverrideOutput)
+	return ret0, ret1
+}
+
+// GetRotationOverrideRequest indicates an expected call of GetRotationOverrideRequest
+func (mr *MockSSMContactsAPIMockRecorder) GetRotationOverrideRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRotationOverrideRequest", reflect.TypeOf((*MockSSMContactsAPI)(nil).GetRotationOverrideRequest), arg0)
+}
+
+// GetRotationOverrideWithContext mocks base method
+func (m *MockSSMContactsAPI) GetRotationOverrideWithContext(arg0 context.Context, arg1 *ssmcontacts.GetRotationOverrideInput, arg2 ...request.Option) (*ssmcontacts.GetRotationOverrideOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRotationOverrideWithContext", varargs...)
+	ret0, _ := ret[0].(*ssmcontacts.GetRotationOverrideOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRotationOverrideWithContext indicates an expected call of GetRotationOverrideWithContext
+func (mr *MockSSMContactsAPIMockRecorder) GetRotationOverrideWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRotationOverrideWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).GetRotationOverrideWithContext), varargs...)
+}
+
+// GetRotationRequest mocks base method
+func (m *MockSSMContactsAPI) GetRotationRequest(arg0 *ssmcontacts.GetRotationInput) (*request.Request, *ssmcontacts.GetRotationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRotationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssmcontacts.GetRotationOutput)
+	return ret0, ret1
+}
+
+// GetRotationRequest indicates an expected call of GetRotationRequest
+func (mr *MockSSMContactsAPIMockRecorder) GetRotationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRotationRequest", reflect.TypeOf((*MockSSMContactsAPI)(nil).GetRotationRequest), arg0)
+}
+
+// GetRotationWithContext mocks base method
+func (m *MockSSMContactsAPI) GetRotationWithContext(arg0 context.Context, arg1 *ssmcontacts.GetRotationInput, arg2 ...request.Option) (*ssmcontacts.GetRotationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRotationWithContext", varargs...)
+	ret0, _ := ret[0].(*ssmcontacts.GetRotationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRotationWithContext indicates an expected call of GetRotationWithContext
+func (mr *MockSSMContactsAPIMockRecorder) GetRotationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRotationWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).GetRotationWithContext), varargs...)
 }
 
 // ListContactChannels mocks base method
@@ -967,6 +1267,89 @@ func (mr *MockSSMContactsAPIMockRecorder) ListPageReceiptsWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPageReceiptsWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListPageReceiptsWithContext), varargs...)
 }
 
+// ListPageResolutions mocks base method
+func (m *MockSSMContactsAPI) ListPageResolutions(arg0 *ssmcontacts.ListPageResolutionsInput) (*ssmcontacts.ListPageResolutionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPageResolutions", arg0)
+	ret0, _ := ret[0].(*ssmcontacts.ListPageResolutionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPageResolutions indicates an expected call of ListPageResolutions
+func (mr *MockSSMContactsAPIMockRecorder) ListPageResolutions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPageResolutions", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListPageResolutions), arg0)
+}
+
+// ListPageResolutionsPages mocks base method
+func (m *MockSSMContactsAPI) ListPageResolutionsPages(arg0 *ssmcontacts.ListPageResolutionsInput, arg1 func(*ssmcontacts.ListPageResolutionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPageResolutionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPageResolutionsPages indicates an expected call of ListPageResolutionsPages
+func (mr *MockSSMContactsAPIMockRecorder) ListPageResolutionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPageResolutionsPages", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListPageResolutionsPages), arg0, arg1)
+}
+
+// ListPageResolutionsPagesWithContext mocks base method
+func (m *MockSSMContactsAPI) ListPageResolutionsPagesWithContext(arg0 context.Context, arg1 *ssmcontacts.ListPageResolutionsInput, arg2 func(*ssmcontacts.ListPageResolutionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPageResolutionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPageResolutionsPagesWithContext indicates an expected call of ListPageResolutionsPagesWithContext
+func (mr *MockSSMContactsAPIMockRecorder) ListPageResolutionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPageResolutionsPagesWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListPageResolutionsPagesWithContext), varargs...)
+}
+
+// ListPageResolutionsRequest mocks base method
+func (m *MockSSMContactsAPI) ListPageResolutionsRequest(arg0 *ssmcontacts.ListPageResolutionsInput) (*request.Request, *ssmcontacts.ListPageResolutionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPageResolutionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssmcontacts.ListPageResolutionsOutput)
+	return ret0, ret1
+}
+
+// ListPageResolutionsRequest indicates an expected call of ListPageResolutionsRequest
+func (mr *MockSSMContactsAPIMockRecorder) ListPageResolutionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPageResolutionsRequest", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListPageResolutionsRequest), arg0)
+}
+
+// ListPageResolutionsWithContext mocks base method
+func (m *MockSSMContactsAPI) ListPageResolutionsWithContext(arg0 context.Context, arg1 *ssmcontacts.ListPageResolutionsInput, arg2 ...request.Option) (*ssmcontacts.ListPageResolutionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPageResolutionsWithContext", varargs...)
+	ret0, _ := ret[0].(*ssmcontacts.ListPageResolutionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPageResolutionsWithContext indicates an expected call of ListPageResolutionsWithContext
+func (mr *MockSSMContactsAPIMockRecorder) ListPageResolutionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPageResolutionsWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListPageResolutionsWithContext), varargs...)
+}
+
 // ListPagesByContact mocks base method
 func (m *MockSSMContactsAPI) ListPagesByContact(arg0 *ssmcontacts.ListPagesByContactInput) (*ssmcontacts.ListPagesByContactOutput, error) {
 	m.ctrl.T.Helper()
@@ -1131,6 +1514,338 @@ func (mr *MockSSMContactsAPIMockRecorder) ListPagesByEngagementWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPagesByEngagementWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListPagesByEngagementWithContext), varargs...)
+}
+
+// ListPreviewRotationShifts mocks base method
+func (m *MockSSMContactsAPI) ListPreviewRotationShifts(arg0 *ssmcontacts.ListPreviewRotationShiftsInput) (*ssmcontacts.ListPreviewRotationShiftsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPreviewRotationShifts", arg0)
+	ret0, _ := ret[0].(*ssmcontacts.ListPreviewRotationShiftsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPreviewRotationShifts indicates an expected call of ListPreviewRotationShifts
+func (mr *MockSSMContactsAPIMockRecorder) ListPreviewRotationShifts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPreviewRotationShifts", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListPreviewRotationShifts), arg0)
+}
+
+// ListPreviewRotationShiftsPages mocks base method
+func (m *MockSSMContactsAPI) ListPreviewRotationShiftsPages(arg0 *ssmcontacts.ListPreviewRotationShiftsInput, arg1 func(*ssmcontacts.ListPreviewRotationShiftsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPreviewRotationShiftsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPreviewRotationShiftsPages indicates an expected call of ListPreviewRotationShiftsPages
+func (mr *MockSSMContactsAPIMockRecorder) ListPreviewRotationShiftsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPreviewRotationShiftsPages", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListPreviewRotationShiftsPages), arg0, arg1)
+}
+
+// ListPreviewRotationShiftsPagesWithContext mocks base method
+func (m *MockSSMContactsAPI) ListPreviewRotationShiftsPagesWithContext(arg0 context.Context, arg1 *ssmcontacts.ListPreviewRotationShiftsInput, arg2 func(*ssmcontacts.ListPreviewRotationShiftsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPreviewRotationShiftsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPreviewRotationShiftsPagesWithContext indicates an expected call of ListPreviewRotationShiftsPagesWithContext
+func (mr *MockSSMContactsAPIMockRecorder) ListPreviewRotationShiftsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPreviewRotationShiftsPagesWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListPreviewRotationShiftsPagesWithContext), varargs...)
+}
+
+// ListPreviewRotationShiftsRequest mocks base method
+func (m *MockSSMContactsAPI) ListPreviewRotationShiftsRequest(arg0 *ssmcontacts.ListPreviewRotationShiftsInput) (*request.Request, *ssmcontacts.ListPreviewRotationShiftsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPreviewRotationShiftsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssmcontacts.ListPreviewRotationShiftsOutput)
+	return ret0, ret1
+}
+
+// ListPreviewRotationShiftsRequest indicates an expected call of ListPreviewRotationShiftsRequest
+func (mr *MockSSMContactsAPIMockRecorder) ListPreviewRotationShiftsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPreviewRotationShiftsRequest", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListPreviewRotationShiftsRequest), arg0)
+}
+
+// ListPreviewRotationShiftsWithContext mocks base method
+func (m *MockSSMContactsAPI) ListPreviewRotationShiftsWithContext(arg0 context.Context, arg1 *ssmcontacts.ListPreviewRotationShiftsInput, arg2 ...request.Option) (*ssmcontacts.ListPreviewRotationShiftsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPreviewRotationShiftsWithContext", varargs...)
+	ret0, _ := ret[0].(*ssmcontacts.ListPreviewRotationShiftsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPreviewRotationShiftsWithContext indicates an expected call of ListPreviewRotationShiftsWithContext
+func (mr *MockSSMContactsAPIMockRecorder) ListPreviewRotationShiftsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPreviewRotationShiftsWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListPreviewRotationShiftsWithContext), varargs...)
+}
+
+// ListRotationOverrides mocks base method
+func (m *MockSSMContactsAPI) ListRotationOverrides(arg0 *ssmcontacts.ListRotationOverridesInput) (*ssmcontacts.ListRotationOverridesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRotationOverrides", arg0)
+	ret0, _ := ret[0].(*ssmcontacts.ListRotationOverridesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRotationOverrides indicates an expected call of ListRotationOverrides
+func (mr *MockSSMContactsAPIMockRecorder) ListRotationOverrides(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotationOverrides", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotationOverrides), arg0)
+}
+
+// ListRotationOverridesPages mocks base method
+func (m *MockSSMContactsAPI) ListRotationOverridesPages(arg0 *ssmcontacts.ListRotationOverridesInput, arg1 func(*ssmcontacts.ListRotationOverridesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRotationOverridesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRotationOverridesPages indicates an expected call of ListRotationOverridesPages
+func (mr *MockSSMContactsAPIMockRecorder) ListRotationOverridesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotationOverridesPages", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotationOverridesPages), arg0, arg1)
+}
+
+// ListRotationOverridesPagesWithContext mocks base method
+func (m *MockSSMContactsAPI) ListRotationOverridesPagesWithContext(arg0 context.Context, arg1 *ssmcontacts.ListRotationOverridesInput, arg2 func(*ssmcontacts.ListRotationOverridesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRotationOverridesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRotationOverridesPagesWithContext indicates an expected call of ListRotationOverridesPagesWithContext
+func (mr *MockSSMContactsAPIMockRecorder) ListRotationOverridesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotationOverridesPagesWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotationOverridesPagesWithContext), varargs...)
+}
+
+// ListRotationOverridesRequest mocks base method
+func (m *MockSSMContactsAPI) ListRotationOverridesRequest(arg0 *ssmcontacts.ListRotationOverridesInput) (*request.Request, *ssmcontacts.ListRotationOverridesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRotationOverridesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssmcontacts.ListRotationOverridesOutput)
+	return ret0, ret1
+}
+
+// ListRotationOverridesRequest indicates an expected call of ListRotationOverridesRequest
+func (mr *MockSSMContactsAPIMockRecorder) ListRotationOverridesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotationOverridesRequest", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotationOverridesRequest), arg0)
+}
+
+// ListRotationOverridesWithContext mocks base method
+func (m *MockSSMContactsAPI) ListRotationOverridesWithContext(arg0 context.Context, arg1 *ssmcontacts.ListRotationOverridesInput, arg2 ...request.Option) (*ssmcontacts.ListRotationOverridesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRotationOverridesWithContext", varargs...)
+	ret0, _ := ret[0].(*ssmcontacts.ListRotationOverridesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRotationOverridesWithContext indicates an expected call of ListRotationOverridesWithContext
+func (mr *MockSSMContactsAPIMockRecorder) ListRotationOverridesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotationOverridesWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotationOverridesWithContext), varargs...)
+}
+
+// ListRotationShifts mocks base method
+func (m *MockSSMContactsAPI) ListRotationShifts(arg0 *ssmcontacts.ListRotationShiftsInput) (*ssmcontacts.ListRotationShiftsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRotationShifts", arg0)
+	ret0, _ := ret[0].(*ssmcontacts.ListRotationShiftsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRotationShifts indicates an expected call of ListRotationShifts
+func (mr *MockSSMContactsAPIMockRecorder) ListRotationShifts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotationShifts", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotationShifts), arg0)
+}
+
+// ListRotationShiftsPages mocks base method
+func (m *MockSSMContactsAPI) ListRotationShiftsPages(arg0 *ssmcontacts.ListRotationShiftsInput, arg1 func(*ssmcontacts.ListRotationShiftsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRotationShiftsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRotationShiftsPages indicates an expected call of ListRotationShiftsPages
+func (mr *MockSSMContactsAPIMockRecorder) ListRotationShiftsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotationShiftsPages", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotationShiftsPages), arg0, arg1)
+}
+
+// ListRotationShiftsPagesWithContext mocks base method
+func (m *MockSSMContactsAPI) ListRotationShiftsPagesWithContext(arg0 context.Context, arg1 *ssmcontacts.ListRotationShiftsInput, arg2 func(*ssmcontacts.ListRotationShiftsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRotationShiftsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRotationShiftsPagesWithContext indicates an expected call of ListRotationShiftsPagesWithContext
+func (mr *MockSSMContactsAPIMockRecorder) ListRotationShiftsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotationShiftsPagesWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotationShiftsPagesWithContext), varargs...)
+}
+
+// ListRotationShiftsRequest mocks base method
+func (m *MockSSMContactsAPI) ListRotationShiftsRequest(arg0 *ssmcontacts.ListRotationShiftsInput) (*request.Request, *ssmcontacts.ListRotationShiftsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRotationShiftsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssmcontacts.ListRotationShiftsOutput)
+	return ret0, ret1
+}
+
+// ListRotationShiftsRequest indicates an expected call of ListRotationShiftsRequest
+func (mr *MockSSMContactsAPIMockRecorder) ListRotationShiftsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotationShiftsRequest", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotationShiftsRequest), arg0)
+}
+
+// ListRotationShiftsWithContext mocks base method
+func (m *MockSSMContactsAPI) ListRotationShiftsWithContext(arg0 context.Context, arg1 *ssmcontacts.ListRotationShiftsInput, arg2 ...request.Option) (*ssmcontacts.ListRotationShiftsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRotationShiftsWithContext", varargs...)
+	ret0, _ := ret[0].(*ssmcontacts.ListRotationShiftsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRotationShiftsWithContext indicates an expected call of ListRotationShiftsWithContext
+func (mr *MockSSMContactsAPIMockRecorder) ListRotationShiftsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotationShiftsWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotationShiftsWithContext), varargs...)
+}
+
+// ListRotations mocks base method
+func (m *MockSSMContactsAPI) ListRotations(arg0 *ssmcontacts.ListRotationsInput) (*ssmcontacts.ListRotationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRotations", arg0)
+	ret0, _ := ret[0].(*ssmcontacts.ListRotationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRotations indicates an expected call of ListRotations
+func (mr *MockSSMContactsAPIMockRecorder) ListRotations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotations", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotations), arg0)
+}
+
+// ListRotationsPages mocks base method
+func (m *MockSSMContactsAPI) ListRotationsPages(arg0 *ssmcontacts.ListRotationsInput, arg1 func(*ssmcontacts.ListRotationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRotationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRotationsPages indicates an expected call of ListRotationsPages
+func (mr *MockSSMContactsAPIMockRecorder) ListRotationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotationsPages", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotationsPages), arg0, arg1)
+}
+
+// ListRotationsPagesWithContext mocks base method
+func (m *MockSSMContactsAPI) ListRotationsPagesWithContext(arg0 context.Context, arg1 *ssmcontacts.ListRotationsInput, arg2 func(*ssmcontacts.ListRotationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRotationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRotationsPagesWithContext indicates an expected call of ListRotationsPagesWithContext
+func (mr *MockSSMContactsAPIMockRecorder) ListRotationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotationsPagesWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotationsPagesWithContext), varargs...)
+}
+
+// ListRotationsRequest mocks base method
+func (m *MockSSMContactsAPI) ListRotationsRequest(arg0 *ssmcontacts.ListRotationsInput) (*request.Request, *ssmcontacts.ListRotationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRotationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssmcontacts.ListRotationsOutput)
+	return ret0, ret1
+}
+
+// ListRotationsRequest indicates an expected call of ListRotationsRequest
+func (mr *MockSSMContactsAPIMockRecorder) ListRotationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotationsRequest", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotationsRequest), arg0)
+}
+
+// ListRotationsWithContext mocks base method
+func (m *MockSSMContactsAPI) ListRotationsWithContext(arg0 context.Context, arg1 *ssmcontacts.ListRotationsInput, arg2 ...request.Option) (*ssmcontacts.ListRotationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRotationsWithContext", varargs...)
+	ret0, _ := ret[0].(*ssmcontacts.ListRotationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRotationsWithContext indicates an expected call of ListRotationsWithContext
+func (mr *MockSSMContactsAPIMockRecorder) ListRotationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRotationsWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).ListRotationsWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
@@ -1581,4 +2296,54 @@ func (mr *MockSSMContactsAPIMockRecorder) UpdateContactWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).UpdateContactWithContext), varargs...)
+}
+
+// UpdateRotation mocks base method
+func (m *MockSSMContactsAPI) UpdateRotation(arg0 *ssmcontacts.UpdateRotationInput) (*ssmcontacts.UpdateRotationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRotation", arg0)
+	ret0, _ := ret[0].(*ssmcontacts.UpdateRotationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRotation indicates an expected call of UpdateRotation
+func (mr *MockSSMContactsAPIMockRecorder) UpdateRotation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRotation", reflect.TypeOf((*MockSSMContactsAPI)(nil).UpdateRotation), arg0)
+}
+
+// UpdateRotationRequest mocks base method
+func (m *MockSSMContactsAPI) UpdateRotationRequest(arg0 *ssmcontacts.UpdateRotationInput) (*request.Request, *ssmcontacts.UpdateRotationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRotationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssmcontacts.UpdateRotationOutput)
+	return ret0, ret1
+}
+
+// UpdateRotationRequest indicates an expected call of UpdateRotationRequest
+func (mr *MockSSMContactsAPIMockRecorder) UpdateRotationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRotationRequest", reflect.TypeOf((*MockSSMContactsAPI)(nil).UpdateRotationRequest), arg0)
+}
+
+// UpdateRotationWithContext mocks base method
+func (m *MockSSMContactsAPI) UpdateRotationWithContext(arg0 context.Context, arg1 *ssmcontacts.UpdateRotationInput, arg2 ...request.Option) (*ssmcontacts.UpdateRotationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRotationWithContext", varargs...)
+	ret0, _ := ret[0].(*ssmcontacts.UpdateRotationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRotationWithContext indicates an expected call of UpdateRotationWithContext
+func (mr *MockSSMContactsAPIMockRecorder) UpdateRotationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRotationWithContext", reflect.TypeOf((*MockSSMContactsAPI)(nil).UpdateRotationWithContext), varargs...)
 }
