@@ -285,6 +285,56 @@ func (mr *MockNetworkFirewallAPIMockRecorder) CreateRuleGroupWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRuleGroupWithContext", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).CreateRuleGroupWithContext), varargs...)
 }
 
+// CreateTLSInspectionConfiguration mocks base method
+func (m *MockNetworkFirewallAPI) CreateTLSInspectionConfiguration(arg0 *networkfirewall.CreateTLSInspectionConfigurationInput) (*networkfirewall.CreateTLSInspectionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTLSInspectionConfiguration", arg0)
+	ret0, _ := ret[0].(*networkfirewall.CreateTLSInspectionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTLSInspectionConfiguration indicates an expected call of CreateTLSInspectionConfiguration
+func (mr *MockNetworkFirewallAPIMockRecorder) CreateTLSInspectionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTLSInspectionConfiguration", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).CreateTLSInspectionConfiguration), arg0)
+}
+
+// CreateTLSInspectionConfigurationRequest mocks base method
+func (m *MockNetworkFirewallAPI) CreateTLSInspectionConfigurationRequest(arg0 *networkfirewall.CreateTLSInspectionConfigurationInput) (*request.Request, *networkfirewall.CreateTLSInspectionConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateTLSInspectionConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkfirewall.CreateTLSInspectionConfigurationOutput)
+	return ret0, ret1
+}
+
+// CreateTLSInspectionConfigurationRequest indicates an expected call of CreateTLSInspectionConfigurationRequest
+func (mr *MockNetworkFirewallAPIMockRecorder) CreateTLSInspectionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTLSInspectionConfigurationRequest", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).CreateTLSInspectionConfigurationRequest), arg0)
+}
+
+// CreateTLSInspectionConfigurationWithContext mocks base method
+func (m *MockNetworkFirewallAPI) CreateTLSInspectionConfigurationWithContext(arg0 context.Context, arg1 *networkfirewall.CreateTLSInspectionConfigurationInput, arg2 ...request.Option) (*networkfirewall.CreateTLSInspectionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateTLSInspectionConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*networkfirewall.CreateTLSInspectionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateTLSInspectionConfigurationWithContext indicates an expected call of CreateTLSInspectionConfigurationWithContext
+func (mr *MockNetworkFirewallAPIMockRecorder) CreateTLSInspectionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateTLSInspectionConfigurationWithContext", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).CreateTLSInspectionConfigurationWithContext), varargs...)
+}
+
 // DeleteFirewall mocks base method
 func (m *MockNetworkFirewallAPI) DeleteFirewall(arg0 *networkfirewall.DeleteFirewallInput) (*networkfirewall.DeleteFirewallOutput, error) {
 	m.ctrl.T.Helper()
@@ -483,6 +533,56 @@ func (mr *MockNetworkFirewallAPIMockRecorder) DeleteRuleGroupWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRuleGroupWithContext", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).DeleteRuleGroupWithContext), varargs...)
+}
+
+// DeleteTLSInspectionConfiguration mocks base method
+func (m *MockNetworkFirewallAPI) DeleteTLSInspectionConfiguration(arg0 *networkfirewall.DeleteTLSInspectionConfigurationInput) (*networkfirewall.DeleteTLSInspectionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTLSInspectionConfiguration", arg0)
+	ret0, _ := ret[0].(*networkfirewall.DeleteTLSInspectionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTLSInspectionConfiguration indicates an expected call of DeleteTLSInspectionConfiguration
+func (mr *MockNetworkFirewallAPIMockRecorder) DeleteTLSInspectionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTLSInspectionConfiguration", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).DeleteTLSInspectionConfiguration), arg0)
+}
+
+// DeleteTLSInspectionConfigurationRequest mocks base method
+func (m *MockNetworkFirewallAPI) DeleteTLSInspectionConfigurationRequest(arg0 *networkfirewall.DeleteTLSInspectionConfigurationInput) (*request.Request, *networkfirewall.DeleteTLSInspectionConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteTLSInspectionConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkfirewall.DeleteTLSInspectionConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteTLSInspectionConfigurationRequest indicates an expected call of DeleteTLSInspectionConfigurationRequest
+func (mr *MockNetworkFirewallAPIMockRecorder) DeleteTLSInspectionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTLSInspectionConfigurationRequest", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).DeleteTLSInspectionConfigurationRequest), arg0)
+}
+
+// DeleteTLSInspectionConfigurationWithContext mocks base method
+func (m *MockNetworkFirewallAPI) DeleteTLSInspectionConfigurationWithContext(arg0 context.Context, arg1 *networkfirewall.DeleteTLSInspectionConfigurationInput, arg2 ...request.Option) (*networkfirewall.DeleteTLSInspectionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteTLSInspectionConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*networkfirewall.DeleteTLSInspectionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteTLSInspectionConfigurationWithContext indicates an expected call of DeleteTLSInspectionConfigurationWithContext
+func (mr *MockNetworkFirewallAPIMockRecorder) DeleteTLSInspectionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTLSInspectionConfigurationWithContext", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).DeleteTLSInspectionConfigurationWithContext), varargs...)
 }
 
 // DescribeFirewall mocks base method
@@ -785,6 +885,56 @@ func (mr *MockNetworkFirewallAPIMockRecorder) DescribeRuleGroupWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRuleGroupWithContext", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).DescribeRuleGroupWithContext), varargs...)
 }
 
+// DescribeTLSInspectionConfiguration mocks base method
+func (m *MockNetworkFirewallAPI) DescribeTLSInspectionConfiguration(arg0 *networkfirewall.DescribeTLSInspectionConfigurationInput) (*networkfirewall.DescribeTLSInspectionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTLSInspectionConfiguration", arg0)
+	ret0, _ := ret[0].(*networkfirewall.DescribeTLSInspectionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTLSInspectionConfiguration indicates an expected call of DescribeTLSInspectionConfiguration
+func (mr *MockNetworkFirewallAPIMockRecorder) DescribeTLSInspectionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTLSInspectionConfiguration", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).DescribeTLSInspectionConfiguration), arg0)
+}
+
+// DescribeTLSInspectionConfigurationRequest mocks base method
+func (m *MockNetworkFirewallAPI) DescribeTLSInspectionConfigurationRequest(arg0 *networkfirewall.DescribeTLSInspectionConfigurationInput) (*request.Request, *networkfirewall.DescribeTLSInspectionConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTLSInspectionConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkfirewall.DescribeTLSInspectionConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeTLSInspectionConfigurationRequest indicates an expected call of DescribeTLSInspectionConfigurationRequest
+func (mr *MockNetworkFirewallAPIMockRecorder) DescribeTLSInspectionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTLSInspectionConfigurationRequest", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).DescribeTLSInspectionConfigurationRequest), arg0)
+}
+
+// DescribeTLSInspectionConfigurationWithContext mocks base method
+func (m *MockNetworkFirewallAPI) DescribeTLSInspectionConfigurationWithContext(arg0 context.Context, arg1 *networkfirewall.DescribeTLSInspectionConfigurationInput, arg2 ...request.Option) (*networkfirewall.DescribeTLSInspectionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeTLSInspectionConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*networkfirewall.DescribeTLSInspectionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeTLSInspectionConfigurationWithContext indicates an expected call of DescribeTLSInspectionConfigurationWithContext
+func (mr *MockNetworkFirewallAPIMockRecorder) DescribeTLSInspectionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTLSInspectionConfigurationWithContext", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).DescribeTLSInspectionConfigurationWithContext), varargs...)
+}
+
 // DisassociateSubnets mocks base method
 func (m *MockNetworkFirewallAPI) DisassociateSubnets(arg0 *networkfirewall.DisassociateSubnetsInput) (*networkfirewall.DisassociateSubnetsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1082,6 +1232,89 @@ func (mr *MockNetworkFirewallAPIMockRecorder) ListRuleGroupsWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleGroupsWithContext", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).ListRuleGroupsWithContext), varargs...)
+}
+
+// ListTLSInspectionConfigurations mocks base method
+func (m *MockNetworkFirewallAPI) ListTLSInspectionConfigurations(arg0 *networkfirewall.ListTLSInspectionConfigurationsInput) (*networkfirewall.ListTLSInspectionConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTLSInspectionConfigurations", arg0)
+	ret0, _ := ret[0].(*networkfirewall.ListTLSInspectionConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTLSInspectionConfigurations indicates an expected call of ListTLSInspectionConfigurations
+func (mr *MockNetworkFirewallAPIMockRecorder) ListTLSInspectionConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTLSInspectionConfigurations", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).ListTLSInspectionConfigurations), arg0)
+}
+
+// ListTLSInspectionConfigurationsPages mocks base method
+func (m *MockNetworkFirewallAPI) ListTLSInspectionConfigurationsPages(arg0 *networkfirewall.ListTLSInspectionConfigurationsInput, arg1 func(*networkfirewall.ListTLSInspectionConfigurationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTLSInspectionConfigurationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTLSInspectionConfigurationsPages indicates an expected call of ListTLSInspectionConfigurationsPages
+func (mr *MockNetworkFirewallAPIMockRecorder) ListTLSInspectionConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTLSInspectionConfigurationsPages", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).ListTLSInspectionConfigurationsPages), arg0, arg1)
+}
+
+// ListTLSInspectionConfigurationsPagesWithContext mocks base method
+func (m *MockNetworkFirewallAPI) ListTLSInspectionConfigurationsPagesWithContext(arg0 context.Context, arg1 *networkfirewall.ListTLSInspectionConfigurationsInput, arg2 func(*networkfirewall.ListTLSInspectionConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTLSInspectionConfigurationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTLSInspectionConfigurationsPagesWithContext indicates an expected call of ListTLSInspectionConfigurationsPagesWithContext
+func (mr *MockNetworkFirewallAPIMockRecorder) ListTLSInspectionConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTLSInspectionConfigurationsPagesWithContext", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).ListTLSInspectionConfigurationsPagesWithContext), varargs...)
+}
+
+// ListTLSInspectionConfigurationsRequest mocks base method
+func (m *MockNetworkFirewallAPI) ListTLSInspectionConfigurationsRequest(arg0 *networkfirewall.ListTLSInspectionConfigurationsInput) (*request.Request, *networkfirewall.ListTLSInspectionConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTLSInspectionConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkfirewall.ListTLSInspectionConfigurationsOutput)
+	return ret0, ret1
+}
+
+// ListTLSInspectionConfigurationsRequest indicates an expected call of ListTLSInspectionConfigurationsRequest
+func (mr *MockNetworkFirewallAPIMockRecorder) ListTLSInspectionConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTLSInspectionConfigurationsRequest", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).ListTLSInspectionConfigurationsRequest), arg0)
+}
+
+// ListTLSInspectionConfigurationsWithContext mocks base method
+func (m *MockNetworkFirewallAPI) ListTLSInspectionConfigurationsWithContext(arg0 context.Context, arg1 *networkfirewall.ListTLSInspectionConfigurationsInput, arg2 ...request.Option) (*networkfirewall.ListTLSInspectionConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTLSInspectionConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*networkfirewall.ListTLSInspectionConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTLSInspectionConfigurationsWithContext indicates an expected call of ListTLSInspectionConfigurationsWithContext
+func (mr *MockNetworkFirewallAPIMockRecorder) ListTLSInspectionConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTLSInspectionConfigurationsWithContext", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).ListTLSInspectionConfigurationsWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
@@ -1715,4 +1948,54 @@ func (mr *MockNetworkFirewallAPIMockRecorder) UpdateSubnetChangeProtectionWithCo
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubnetChangeProtectionWithContext", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).UpdateSubnetChangeProtectionWithContext), varargs...)
+}
+
+// UpdateTLSInspectionConfiguration mocks base method
+func (m *MockNetworkFirewallAPI) UpdateTLSInspectionConfiguration(arg0 *networkfirewall.UpdateTLSInspectionConfigurationInput) (*networkfirewall.UpdateTLSInspectionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTLSInspectionConfiguration", arg0)
+	ret0, _ := ret[0].(*networkfirewall.UpdateTLSInspectionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTLSInspectionConfiguration indicates an expected call of UpdateTLSInspectionConfiguration
+func (mr *MockNetworkFirewallAPIMockRecorder) UpdateTLSInspectionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTLSInspectionConfiguration", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).UpdateTLSInspectionConfiguration), arg0)
+}
+
+// UpdateTLSInspectionConfigurationRequest mocks base method
+func (m *MockNetworkFirewallAPI) UpdateTLSInspectionConfigurationRequest(arg0 *networkfirewall.UpdateTLSInspectionConfigurationInput) (*request.Request, *networkfirewall.UpdateTLSInspectionConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateTLSInspectionConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*networkfirewall.UpdateTLSInspectionConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateTLSInspectionConfigurationRequest indicates an expected call of UpdateTLSInspectionConfigurationRequest
+func (mr *MockNetworkFirewallAPIMockRecorder) UpdateTLSInspectionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTLSInspectionConfigurationRequest", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).UpdateTLSInspectionConfigurationRequest), arg0)
+}
+
+// UpdateTLSInspectionConfigurationWithContext mocks base method
+func (m *MockNetworkFirewallAPI) UpdateTLSInspectionConfigurationWithContext(arg0 context.Context, arg1 *networkfirewall.UpdateTLSInspectionConfigurationInput, arg2 ...request.Option) (*networkfirewall.UpdateTLSInspectionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateTLSInspectionConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*networkfirewall.UpdateTLSInspectionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateTLSInspectionConfigurationWithContext indicates an expected call of UpdateTLSInspectionConfigurationWithContext
+func (mr *MockNetworkFirewallAPIMockRecorder) UpdateTLSInspectionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateTLSInspectionConfigurationWithContext", reflect.TypeOf((*MockNetworkFirewallAPI)(nil).UpdateTLSInspectionConfigurationWithContext), varargs...)
 }

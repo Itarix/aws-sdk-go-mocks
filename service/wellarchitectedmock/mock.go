@@ -685,6 +685,89 @@ func (mr *MockWellArchitectedAPIMockRecorder) GetAnswerWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnswerWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetAnswerWithContext), varargs...)
 }
 
+// GetConsolidatedReport mocks base method
+func (m *MockWellArchitectedAPI) GetConsolidatedReport(arg0 *wellarchitected.GetConsolidatedReportInput) (*wellarchitected.GetConsolidatedReportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConsolidatedReport", arg0)
+	ret0, _ := ret[0].(*wellarchitected.GetConsolidatedReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConsolidatedReport indicates an expected call of GetConsolidatedReport
+func (mr *MockWellArchitectedAPIMockRecorder) GetConsolidatedReport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConsolidatedReport", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetConsolidatedReport), arg0)
+}
+
+// GetConsolidatedReportPages mocks base method
+func (m *MockWellArchitectedAPI) GetConsolidatedReportPages(arg0 *wellarchitected.GetConsolidatedReportInput, arg1 func(*wellarchitected.GetConsolidatedReportOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConsolidatedReportPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetConsolidatedReportPages indicates an expected call of GetConsolidatedReportPages
+func (mr *MockWellArchitectedAPIMockRecorder) GetConsolidatedReportPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConsolidatedReportPages", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetConsolidatedReportPages), arg0, arg1)
+}
+
+// GetConsolidatedReportPagesWithContext mocks base method
+func (m *MockWellArchitectedAPI) GetConsolidatedReportPagesWithContext(arg0 context.Context, arg1 *wellarchitected.GetConsolidatedReportInput, arg2 func(*wellarchitected.GetConsolidatedReportOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetConsolidatedReportPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetConsolidatedReportPagesWithContext indicates an expected call of GetConsolidatedReportPagesWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) GetConsolidatedReportPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConsolidatedReportPagesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetConsolidatedReportPagesWithContext), varargs...)
+}
+
+// GetConsolidatedReportRequest mocks base method
+func (m *MockWellArchitectedAPI) GetConsolidatedReportRequest(arg0 *wellarchitected.GetConsolidatedReportInput) (*request.Request, *wellarchitected.GetConsolidatedReportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConsolidatedReportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.GetConsolidatedReportOutput)
+	return ret0, ret1
+}
+
+// GetConsolidatedReportRequest indicates an expected call of GetConsolidatedReportRequest
+func (mr *MockWellArchitectedAPIMockRecorder) GetConsolidatedReportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConsolidatedReportRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetConsolidatedReportRequest), arg0)
+}
+
+// GetConsolidatedReportWithContext mocks base method
+func (m *MockWellArchitectedAPI) GetConsolidatedReportWithContext(arg0 context.Context, arg1 *wellarchitected.GetConsolidatedReportInput, arg2 ...request.Option) (*wellarchitected.GetConsolidatedReportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetConsolidatedReportWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.GetConsolidatedReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConsolidatedReportWithContext indicates an expected call of GetConsolidatedReportWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) GetConsolidatedReportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConsolidatedReportWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetConsolidatedReportWithContext), varargs...)
+}
+
 // GetLens mocks base method
 func (m *MockWellArchitectedAPI) GetLens(arg0 *wellarchitected.GetLensInput) (*wellarchitected.GetLensOutput, error) {
 	m.ctrl.T.Helper()

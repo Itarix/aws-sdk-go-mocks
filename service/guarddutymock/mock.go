@@ -1451,6 +1451,56 @@ func (mr *MockGuardDutyAPIMockRecorder) GetAdministratorAccountWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdministratorAccountWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetAdministratorAccountWithContext), varargs...)
 }
 
+// GetCoverageStatistics mocks base method
+func (m *MockGuardDutyAPI) GetCoverageStatistics(arg0 *guardduty.GetCoverageStatisticsInput) (*guardduty.GetCoverageStatisticsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCoverageStatistics", arg0)
+	ret0, _ := ret[0].(*guardduty.GetCoverageStatisticsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCoverageStatistics indicates an expected call of GetCoverageStatistics
+func (mr *MockGuardDutyAPIMockRecorder) GetCoverageStatistics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCoverageStatistics", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetCoverageStatistics), arg0)
+}
+
+// GetCoverageStatisticsRequest mocks base method
+func (m *MockGuardDutyAPI) GetCoverageStatisticsRequest(arg0 *guardduty.GetCoverageStatisticsInput) (*request.Request, *guardduty.GetCoverageStatisticsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCoverageStatisticsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.GetCoverageStatisticsOutput)
+	return ret0, ret1
+}
+
+// GetCoverageStatisticsRequest indicates an expected call of GetCoverageStatisticsRequest
+func (mr *MockGuardDutyAPIMockRecorder) GetCoverageStatisticsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCoverageStatisticsRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetCoverageStatisticsRequest), arg0)
+}
+
+// GetCoverageStatisticsWithContext mocks base method
+func (m *MockGuardDutyAPI) GetCoverageStatisticsWithContext(arg0 context.Context, arg1 *guardduty.GetCoverageStatisticsInput, arg2 ...request.Option) (*guardduty.GetCoverageStatisticsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCoverageStatisticsWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.GetCoverageStatisticsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCoverageStatisticsWithContext indicates an expected call of GetCoverageStatisticsWithContext
+func (mr *MockGuardDutyAPIMockRecorder) GetCoverageStatisticsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCoverageStatisticsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).GetCoverageStatisticsWithContext), varargs...)
+}
+
 // GetDetector mocks base method
 func (m *MockGuardDutyAPI) GetDetector(arg0 *guardduty.GetDetectorInput) (*guardduty.GetDetectorOutput, error) {
 	m.ctrl.T.Helper()
@@ -2182,6 +2232,89 @@ func (mr *MockGuardDutyAPIMockRecorder) InviteMembersWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InviteMembersWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).InviteMembersWithContext), varargs...)
+}
+
+// ListCoverage mocks base method
+func (m *MockGuardDutyAPI) ListCoverage(arg0 *guardduty.ListCoverageInput) (*guardduty.ListCoverageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCoverage", arg0)
+	ret0, _ := ret[0].(*guardduty.ListCoverageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCoverage indicates an expected call of ListCoverage
+func (mr *MockGuardDutyAPIMockRecorder) ListCoverage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoverage", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListCoverage), arg0)
+}
+
+// ListCoveragePages mocks base method
+func (m *MockGuardDutyAPI) ListCoveragePages(arg0 *guardduty.ListCoverageInput, arg1 func(*guardduty.ListCoverageOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCoveragePages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCoveragePages indicates an expected call of ListCoveragePages
+func (mr *MockGuardDutyAPIMockRecorder) ListCoveragePages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoveragePages", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListCoveragePages), arg0, arg1)
+}
+
+// ListCoveragePagesWithContext mocks base method
+func (m *MockGuardDutyAPI) ListCoveragePagesWithContext(arg0 context.Context, arg1 *guardduty.ListCoverageInput, arg2 func(*guardduty.ListCoverageOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCoveragePagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCoveragePagesWithContext indicates an expected call of ListCoveragePagesWithContext
+func (mr *MockGuardDutyAPIMockRecorder) ListCoveragePagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoveragePagesWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListCoveragePagesWithContext), varargs...)
+}
+
+// ListCoverageRequest mocks base method
+func (m *MockGuardDutyAPI) ListCoverageRequest(arg0 *guardduty.ListCoverageInput) (*request.Request, *guardduty.ListCoverageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCoverageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.ListCoverageOutput)
+	return ret0, ret1
+}
+
+// ListCoverageRequest indicates an expected call of ListCoverageRequest
+func (mr *MockGuardDutyAPIMockRecorder) ListCoverageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoverageRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListCoverageRequest), arg0)
+}
+
+// ListCoverageWithContext mocks base method
+func (m *MockGuardDutyAPI) ListCoverageWithContext(arg0 context.Context, arg1 *guardduty.ListCoverageInput, arg2 ...request.Option) (*guardduty.ListCoverageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCoverageWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.ListCoverageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCoverageWithContext indicates an expected call of ListCoverageWithContext
+func (mr *MockGuardDutyAPIMockRecorder) ListCoverageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCoverageWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListCoverageWithContext), varargs...)
 }
 
 // ListDetectors mocks base method

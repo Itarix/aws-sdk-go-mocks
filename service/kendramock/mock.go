@@ -185,6 +185,56 @@ func (mr *MockKendraAPIMockRecorder) BatchDeleteDocumentWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteDocumentWithContext", reflect.TypeOf((*MockKendraAPI)(nil).BatchDeleteDocumentWithContext), varargs...)
 }
 
+// BatchDeleteFeaturedResultsSet mocks base method
+func (m *MockKendraAPI) BatchDeleteFeaturedResultsSet(arg0 *kendra.BatchDeleteFeaturedResultsSetInput) (*kendra.BatchDeleteFeaturedResultsSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteFeaturedResultsSet", arg0)
+	ret0, _ := ret[0].(*kendra.BatchDeleteFeaturedResultsSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteFeaturedResultsSet indicates an expected call of BatchDeleteFeaturedResultsSet
+func (mr *MockKendraAPIMockRecorder) BatchDeleteFeaturedResultsSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteFeaturedResultsSet", reflect.TypeOf((*MockKendraAPI)(nil).BatchDeleteFeaturedResultsSet), arg0)
+}
+
+// BatchDeleteFeaturedResultsSetRequest mocks base method
+func (m *MockKendraAPI) BatchDeleteFeaturedResultsSetRequest(arg0 *kendra.BatchDeleteFeaturedResultsSetInput) (*request.Request, *kendra.BatchDeleteFeaturedResultsSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteFeaturedResultsSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.BatchDeleteFeaturedResultsSetOutput)
+	return ret0, ret1
+}
+
+// BatchDeleteFeaturedResultsSetRequest indicates an expected call of BatchDeleteFeaturedResultsSetRequest
+func (mr *MockKendraAPIMockRecorder) BatchDeleteFeaturedResultsSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteFeaturedResultsSetRequest", reflect.TypeOf((*MockKendraAPI)(nil).BatchDeleteFeaturedResultsSetRequest), arg0)
+}
+
+// BatchDeleteFeaturedResultsSetWithContext mocks base method
+func (m *MockKendraAPI) BatchDeleteFeaturedResultsSetWithContext(arg0 context.Context, arg1 *kendra.BatchDeleteFeaturedResultsSetInput, arg2 ...request.Option) (*kendra.BatchDeleteFeaturedResultsSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDeleteFeaturedResultsSetWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.BatchDeleteFeaturedResultsSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteFeaturedResultsSetWithContext indicates an expected call of BatchDeleteFeaturedResultsSetWithContext
+func (mr *MockKendraAPIMockRecorder) BatchDeleteFeaturedResultsSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteFeaturedResultsSetWithContext", reflect.TypeOf((*MockKendraAPI)(nil).BatchDeleteFeaturedResultsSetWithContext), varargs...)
+}
+
 // BatchGetDocumentStatus mocks base method
 func (m *MockKendraAPI) BatchGetDocumentStatus(arg0 *kendra.BatchGetDocumentStatusInput) (*kendra.BatchGetDocumentStatusOutput, error) {
 	m.ctrl.T.Helper()
@@ -533,6 +583,56 @@ func (mr *MockKendraAPIMockRecorder) CreateFaqWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFaqWithContext", reflect.TypeOf((*MockKendraAPI)(nil).CreateFaqWithContext), varargs...)
+}
+
+// CreateFeaturedResultsSet mocks base method
+func (m *MockKendraAPI) CreateFeaturedResultsSet(arg0 *kendra.CreateFeaturedResultsSetInput) (*kendra.CreateFeaturedResultsSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFeaturedResultsSet", arg0)
+	ret0, _ := ret[0].(*kendra.CreateFeaturedResultsSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFeaturedResultsSet indicates an expected call of CreateFeaturedResultsSet
+func (mr *MockKendraAPIMockRecorder) CreateFeaturedResultsSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFeaturedResultsSet", reflect.TypeOf((*MockKendraAPI)(nil).CreateFeaturedResultsSet), arg0)
+}
+
+// CreateFeaturedResultsSetRequest mocks base method
+func (m *MockKendraAPI) CreateFeaturedResultsSetRequest(arg0 *kendra.CreateFeaturedResultsSetInput) (*request.Request, *kendra.CreateFeaturedResultsSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFeaturedResultsSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.CreateFeaturedResultsSetOutput)
+	return ret0, ret1
+}
+
+// CreateFeaturedResultsSetRequest indicates an expected call of CreateFeaturedResultsSetRequest
+func (mr *MockKendraAPIMockRecorder) CreateFeaturedResultsSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFeaturedResultsSetRequest", reflect.TypeOf((*MockKendraAPI)(nil).CreateFeaturedResultsSetRequest), arg0)
+}
+
+// CreateFeaturedResultsSetWithContext mocks base method
+func (m *MockKendraAPI) CreateFeaturedResultsSetWithContext(arg0 context.Context, arg1 *kendra.CreateFeaturedResultsSetInput, arg2 ...request.Option) (*kendra.CreateFeaturedResultsSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFeaturedResultsSetWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.CreateFeaturedResultsSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFeaturedResultsSetWithContext indicates an expected call of CreateFeaturedResultsSetWithContext
+func (mr *MockKendraAPIMockRecorder) CreateFeaturedResultsSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFeaturedResultsSetWithContext", reflect.TypeOf((*MockKendraAPI)(nil).CreateFeaturedResultsSetWithContext), varargs...)
 }
 
 // CreateIndex mocks base method
@@ -1283,6 +1383,56 @@ func (mr *MockKendraAPIMockRecorder) DescribeFaqWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFaqWithContext", reflect.TypeOf((*MockKendraAPI)(nil).DescribeFaqWithContext), varargs...)
+}
+
+// DescribeFeaturedResultsSet mocks base method
+func (m *MockKendraAPI) DescribeFeaturedResultsSet(arg0 *kendra.DescribeFeaturedResultsSetInput) (*kendra.DescribeFeaturedResultsSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFeaturedResultsSet", arg0)
+	ret0, _ := ret[0].(*kendra.DescribeFeaturedResultsSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFeaturedResultsSet indicates an expected call of DescribeFeaturedResultsSet
+func (mr *MockKendraAPIMockRecorder) DescribeFeaturedResultsSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFeaturedResultsSet", reflect.TypeOf((*MockKendraAPI)(nil).DescribeFeaturedResultsSet), arg0)
+}
+
+// DescribeFeaturedResultsSetRequest mocks base method
+func (m *MockKendraAPI) DescribeFeaturedResultsSetRequest(arg0 *kendra.DescribeFeaturedResultsSetInput) (*request.Request, *kendra.DescribeFeaturedResultsSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFeaturedResultsSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.DescribeFeaturedResultsSetOutput)
+	return ret0, ret1
+}
+
+// DescribeFeaturedResultsSetRequest indicates an expected call of DescribeFeaturedResultsSetRequest
+func (mr *MockKendraAPIMockRecorder) DescribeFeaturedResultsSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFeaturedResultsSetRequest", reflect.TypeOf((*MockKendraAPI)(nil).DescribeFeaturedResultsSetRequest), arg0)
+}
+
+// DescribeFeaturedResultsSetWithContext mocks base method
+func (m *MockKendraAPI) DescribeFeaturedResultsSetWithContext(arg0 context.Context, arg1 *kendra.DescribeFeaturedResultsSetInput, arg2 ...request.Option) (*kendra.DescribeFeaturedResultsSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFeaturedResultsSetWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.DescribeFeaturedResultsSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeFeaturedResultsSetWithContext indicates an expected call of DescribeFeaturedResultsSetWithContext
+func (mr *MockKendraAPIMockRecorder) DescribeFeaturedResultsSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFeaturedResultsSetWithContext", reflect.TypeOf((*MockKendraAPI)(nil).DescribeFeaturedResultsSetWithContext), varargs...)
 }
 
 // DescribeIndex mocks base method
@@ -2349,6 +2499,56 @@ func (mr *MockKendraAPIMockRecorder) ListFaqsWithContext(arg0, arg1 interface{},
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFaqsWithContext", reflect.TypeOf((*MockKendraAPI)(nil).ListFaqsWithContext), varargs...)
 }
 
+// ListFeaturedResultsSets mocks base method
+func (m *MockKendraAPI) ListFeaturedResultsSets(arg0 *kendra.ListFeaturedResultsSetsInput) (*kendra.ListFeaturedResultsSetsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFeaturedResultsSets", arg0)
+	ret0, _ := ret[0].(*kendra.ListFeaturedResultsSetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFeaturedResultsSets indicates an expected call of ListFeaturedResultsSets
+func (mr *MockKendraAPIMockRecorder) ListFeaturedResultsSets(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFeaturedResultsSets", reflect.TypeOf((*MockKendraAPI)(nil).ListFeaturedResultsSets), arg0)
+}
+
+// ListFeaturedResultsSetsRequest mocks base method
+func (m *MockKendraAPI) ListFeaturedResultsSetsRequest(arg0 *kendra.ListFeaturedResultsSetsInput) (*request.Request, *kendra.ListFeaturedResultsSetsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFeaturedResultsSetsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.ListFeaturedResultsSetsOutput)
+	return ret0, ret1
+}
+
+// ListFeaturedResultsSetsRequest indicates an expected call of ListFeaturedResultsSetsRequest
+func (mr *MockKendraAPIMockRecorder) ListFeaturedResultsSetsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFeaturedResultsSetsRequest", reflect.TypeOf((*MockKendraAPI)(nil).ListFeaturedResultsSetsRequest), arg0)
+}
+
+// ListFeaturedResultsSetsWithContext mocks base method
+func (m *MockKendraAPI) ListFeaturedResultsSetsWithContext(arg0 context.Context, arg1 *kendra.ListFeaturedResultsSetsInput, arg2 ...request.Option) (*kendra.ListFeaturedResultsSetsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFeaturedResultsSetsWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.ListFeaturedResultsSetsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFeaturedResultsSetsWithContext indicates an expected call of ListFeaturedResultsSetsWithContext
+func (mr *MockKendraAPIMockRecorder) ListFeaturedResultsSetsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFeaturedResultsSetsWithContext", reflect.TypeOf((*MockKendraAPI)(nil).ListFeaturedResultsSetsWithContext), varargs...)
+}
+
 // ListGroupsOlderThanOrderingId mocks base method
 func (m *MockKendraAPI) ListGroupsOlderThanOrderingId(arg0 *kendra.ListGroupsOlderThanOrderingIdInput) (*kendra.ListGroupsOlderThanOrderingIdOutput, error) {
 	m.ctrl.T.Helper()
@@ -3229,6 +3429,56 @@ func (mr *MockKendraAPIMockRecorder) UpdateExperienceWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateExperienceWithContext", reflect.TypeOf((*MockKendraAPI)(nil).UpdateExperienceWithContext), varargs...)
+}
+
+// UpdateFeaturedResultsSet mocks base method
+func (m *MockKendraAPI) UpdateFeaturedResultsSet(arg0 *kendra.UpdateFeaturedResultsSetInput) (*kendra.UpdateFeaturedResultsSetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFeaturedResultsSet", arg0)
+	ret0, _ := ret[0].(*kendra.UpdateFeaturedResultsSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFeaturedResultsSet indicates an expected call of UpdateFeaturedResultsSet
+func (mr *MockKendraAPIMockRecorder) UpdateFeaturedResultsSet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFeaturedResultsSet", reflect.TypeOf((*MockKendraAPI)(nil).UpdateFeaturedResultsSet), arg0)
+}
+
+// UpdateFeaturedResultsSetRequest mocks base method
+func (m *MockKendraAPI) UpdateFeaturedResultsSetRequest(arg0 *kendra.UpdateFeaturedResultsSetInput) (*request.Request, *kendra.UpdateFeaturedResultsSetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFeaturedResultsSetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.UpdateFeaturedResultsSetOutput)
+	return ret0, ret1
+}
+
+// UpdateFeaturedResultsSetRequest indicates an expected call of UpdateFeaturedResultsSetRequest
+func (mr *MockKendraAPIMockRecorder) UpdateFeaturedResultsSetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFeaturedResultsSetRequest", reflect.TypeOf((*MockKendraAPI)(nil).UpdateFeaturedResultsSetRequest), arg0)
+}
+
+// UpdateFeaturedResultsSetWithContext mocks base method
+func (m *MockKendraAPI) UpdateFeaturedResultsSetWithContext(arg0 context.Context, arg1 *kendra.UpdateFeaturedResultsSetInput, arg2 ...request.Option) (*kendra.UpdateFeaturedResultsSetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFeaturedResultsSetWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.UpdateFeaturedResultsSetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFeaturedResultsSetWithContext indicates an expected call of UpdateFeaturedResultsSetWithContext
+func (mr *MockKendraAPIMockRecorder) UpdateFeaturedResultsSetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFeaturedResultsSetWithContext", reflect.TypeOf((*MockKendraAPI)(nil).UpdateFeaturedResultsSetWithContext), varargs...)
 }
 
 // UpdateIndex mocks base method
