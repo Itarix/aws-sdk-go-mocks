@@ -4113,6 +4113,156 @@ func (mr *MockServiceCatalogAPIMockRecorder) ListTagOptionsWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagOptionsWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).ListTagOptionsWithContext), varargs...)
 }
 
+// NotifyProvisionProductEngineWorkflowResult mocks base method
+func (m *MockServiceCatalogAPI) NotifyProvisionProductEngineWorkflowResult(arg0 *servicecatalog.NotifyProvisionProductEngineWorkflowResultInput) (*servicecatalog.NotifyProvisionProductEngineWorkflowResultOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "NotifyProvisionProductEngineWorkflowResult", arg0)
+	ret0, _ := ret[0].(*servicecatalog.NotifyProvisionProductEngineWorkflowResultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// NotifyProvisionProductEngineWorkflowResult indicates an expected call of NotifyProvisionProductEngineWorkflowResult
+func (mr *MockServiceCatalogAPIMockRecorder) NotifyProvisionProductEngineWorkflowResult(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyProvisionProductEngineWorkflowResult", reflect.TypeOf((*MockServiceCatalogAPI)(nil).NotifyProvisionProductEngineWorkflowResult), arg0)
+}
+
+// NotifyProvisionProductEngineWorkflowResultRequest mocks base method
+func (m *MockServiceCatalogAPI) NotifyProvisionProductEngineWorkflowResultRequest(arg0 *servicecatalog.NotifyProvisionProductEngineWorkflowResultInput) (*request.Request, *servicecatalog.NotifyProvisionProductEngineWorkflowResultOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "NotifyProvisionProductEngineWorkflowResultRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.NotifyProvisionProductEngineWorkflowResultOutput)
+	return ret0, ret1
+}
+
+// NotifyProvisionProductEngineWorkflowResultRequest indicates an expected call of NotifyProvisionProductEngineWorkflowResultRequest
+func (mr *MockServiceCatalogAPIMockRecorder) NotifyProvisionProductEngineWorkflowResultRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyProvisionProductEngineWorkflowResultRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).NotifyProvisionProductEngineWorkflowResultRequest), arg0)
+}
+
+// NotifyProvisionProductEngineWorkflowResultWithContext mocks base method
+func (m *MockServiceCatalogAPI) NotifyProvisionProductEngineWorkflowResultWithContext(arg0 context.Context, arg1 *servicecatalog.NotifyProvisionProductEngineWorkflowResultInput, arg2 ...request.Option) (*servicecatalog.NotifyProvisionProductEngineWorkflowResultOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "NotifyProvisionProductEngineWorkflowResultWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.NotifyProvisionProductEngineWorkflowResultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// NotifyProvisionProductEngineWorkflowResultWithContext indicates an expected call of NotifyProvisionProductEngineWorkflowResultWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) NotifyProvisionProductEngineWorkflowResultWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyProvisionProductEngineWorkflowResultWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).NotifyProvisionProductEngineWorkflowResultWithContext), varargs...)
+}
+
+// NotifyTerminateProvisionedProductEngineWorkflowResult mocks base method
+func (m *MockServiceCatalogAPI) NotifyTerminateProvisionedProductEngineWorkflowResult(arg0 *servicecatalog.NotifyTerminateProvisionedProductEngineWorkflowResultInput) (*servicecatalog.NotifyTerminateProvisionedProductEngineWorkflowResultOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "NotifyTerminateProvisionedProductEngineWorkflowResult", arg0)
+	ret0, _ := ret[0].(*servicecatalog.NotifyTerminateProvisionedProductEngineWorkflowResultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// NotifyTerminateProvisionedProductEngineWorkflowResult indicates an expected call of NotifyTerminateProvisionedProductEngineWorkflowResult
+func (mr *MockServiceCatalogAPIMockRecorder) NotifyTerminateProvisionedProductEngineWorkflowResult(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyTerminateProvisionedProductEngineWorkflowResult", reflect.TypeOf((*MockServiceCatalogAPI)(nil).NotifyTerminateProvisionedProductEngineWorkflowResult), arg0)
+}
+
+// NotifyTerminateProvisionedProductEngineWorkflowResultRequest mocks base method
+func (m *MockServiceCatalogAPI) NotifyTerminateProvisionedProductEngineWorkflowResultRequest(arg0 *servicecatalog.NotifyTerminateProvisionedProductEngineWorkflowResultInput) (*request.Request, *servicecatalog.NotifyTerminateProvisionedProductEngineWorkflowResultOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "NotifyTerminateProvisionedProductEngineWorkflowResultRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.NotifyTerminateProvisionedProductEngineWorkflowResultOutput)
+	return ret0, ret1
+}
+
+// NotifyTerminateProvisionedProductEngineWorkflowResultRequest indicates an expected call of NotifyTerminateProvisionedProductEngineWorkflowResultRequest
+func (mr *MockServiceCatalogAPIMockRecorder) NotifyTerminateProvisionedProductEngineWorkflowResultRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyTerminateProvisionedProductEngineWorkflowResultRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).NotifyTerminateProvisionedProductEngineWorkflowResultRequest), arg0)
+}
+
+// NotifyTerminateProvisionedProductEngineWorkflowResultWithContext mocks base method
+func (m *MockServiceCatalogAPI) NotifyTerminateProvisionedProductEngineWorkflowResultWithContext(arg0 context.Context, arg1 *servicecatalog.NotifyTerminateProvisionedProductEngineWorkflowResultInput, arg2 ...request.Option) (*servicecatalog.NotifyTerminateProvisionedProductEngineWorkflowResultOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "NotifyTerminateProvisionedProductEngineWorkflowResultWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.NotifyTerminateProvisionedProductEngineWorkflowResultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// NotifyTerminateProvisionedProductEngineWorkflowResultWithContext indicates an expected call of NotifyTerminateProvisionedProductEngineWorkflowResultWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) NotifyTerminateProvisionedProductEngineWorkflowResultWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyTerminateProvisionedProductEngineWorkflowResultWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).NotifyTerminateProvisionedProductEngineWorkflowResultWithContext), varargs...)
+}
+
+// NotifyUpdateProvisionedProductEngineWorkflowResult mocks base method
+func (m *MockServiceCatalogAPI) NotifyUpdateProvisionedProductEngineWorkflowResult(arg0 *servicecatalog.NotifyUpdateProvisionedProductEngineWorkflowResultInput) (*servicecatalog.NotifyUpdateProvisionedProductEngineWorkflowResultOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "NotifyUpdateProvisionedProductEngineWorkflowResult", arg0)
+	ret0, _ := ret[0].(*servicecatalog.NotifyUpdateProvisionedProductEngineWorkflowResultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// NotifyUpdateProvisionedProductEngineWorkflowResult indicates an expected call of NotifyUpdateProvisionedProductEngineWorkflowResult
+func (mr *MockServiceCatalogAPIMockRecorder) NotifyUpdateProvisionedProductEngineWorkflowResult(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyUpdateProvisionedProductEngineWorkflowResult", reflect.TypeOf((*MockServiceCatalogAPI)(nil).NotifyUpdateProvisionedProductEngineWorkflowResult), arg0)
+}
+
+// NotifyUpdateProvisionedProductEngineWorkflowResultRequest mocks base method
+func (m *MockServiceCatalogAPI) NotifyUpdateProvisionedProductEngineWorkflowResultRequest(arg0 *servicecatalog.NotifyUpdateProvisionedProductEngineWorkflowResultInput) (*request.Request, *servicecatalog.NotifyUpdateProvisionedProductEngineWorkflowResultOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "NotifyUpdateProvisionedProductEngineWorkflowResultRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicecatalog.NotifyUpdateProvisionedProductEngineWorkflowResultOutput)
+	return ret0, ret1
+}
+
+// NotifyUpdateProvisionedProductEngineWorkflowResultRequest indicates an expected call of NotifyUpdateProvisionedProductEngineWorkflowResultRequest
+func (mr *MockServiceCatalogAPIMockRecorder) NotifyUpdateProvisionedProductEngineWorkflowResultRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyUpdateProvisionedProductEngineWorkflowResultRequest", reflect.TypeOf((*MockServiceCatalogAPI)(nil).NotifyUpdateProvisionedProductEngineWorkflowResultRequest), arg0)
+}
+
+// NotifyUpdateProvisionedProductEngineWorkflowResultWithContext mocks base method
+func (m *MockServiceCatalogAPI) NotifyUpdateProvisionedProductEngineWorkflowResultWithContext(arg0 context.Context, arg1 *servicecatalog.NotifyUpdateProvisionedProductEngineWorkflowResultInput, arg2 ...request.Option) (*servicecatalog.NotifyUpdateProvisionedProductEngineWorkflowResultOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "NotifyUpdateProvisionedProductEngineWorkflowResultWithContext", varargs...)
+	ret0, _ := ret[0].(*servicecatalog.NotifyUpdateProvisionedProductEngineWorkflowResultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// NotifyUpdateProvisionedProductEngineWorkflowResultWithContext indicates an expected call of NotifyUpdateProvisionedProductEngineWorkflowResultWithContext
+func (mr *MockServiceCatalogAPIMockRecorder) NotifyUpdateProvisionedProductEngineWorkflowResultWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "NotifyUpdateProvisionedProductEngineWorkflowResultWithContext", reflect.TypeOf((*MockServiceCatalogAPI)(nil).NotifyUpdateProvisionedProductEngineWorkflowResultWithContext), varargs...)
+}
+
 // ProvisionProduct mocks base method
 func (m *MockServiceCatalogAPI) ProvisionProduct(arg0 *servicecatalog.ProvisionProductInput) (*servicecatalog.ProvisionProductOutput, error) {
 	m.ctrl.T.Helper()
