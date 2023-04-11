@@ -235,6 +235,56 @@ func (mr *MockRekognitionAPIMockRecorder) CreateDatasetWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatasetWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateDatasetWithContext), varargs...)
 }
 
+// CreateFaceLivenessSession mocks base method
+func (m *MockRekognitionAPI) CreateFaceLivenessSession(arg0 *rekognition.CreateFaceLivenessSessionInput) (*rekognition.CreateFaceLivenessSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFaceLivenessSession", arg0)
+	ret0, _ := ret[0].(*rekognition.CreateFaceLivenessSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFaceLivenessSession indicates an expected call of CreateFaceLivenessSession
+func (mr *MockRekognitionAPIMockRecorder) CreateFaceLivenessSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFaceLivenessSession", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateFaceLivenessSession), arg0)
+}
+
+// CreateFaceLivenessSessionRequest mocks base method
+func (m *MockRekognitionAPI) CreateFaceLivenessSessionRequest(arg0 *rekognition.CreateFaceLivenessSessionInput) (*request.Request, *rekognition.CreateFaceLivenessSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFaceLivenessSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.CreateFaceLivenessSessionOutput)
+	return ret0, ret1
+}
+
+// CreateFaceLivenessSessionRequest indicates an expected call of CreateFaceLivenessSessionRequest
+func (mr *MockRekognitionAPIMockRecorder) CreateFaceLivenessSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFaceLivenessSessionRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateFaceLivenessSessionRequest), arg0)
+}
+
+// CreateFaceLivenessSessionWithContext mocks base method
+func (m *MockRekognitionAPI) CreateFaceLivenessSessionWithContext(arg0 context.Context, arg1 *rekognition.CreateFaceLivenessSessionInput, arg2 ...request.Option) (*rekognition.CreateFaceLivenessSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFaceLivenessSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.CreateFaceLivenessSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFaceLivenessSessionWithContext indicates an expected call of CreateFaceLivenessSessionWithContext
+func (mr *MockRekognitionAPIMockRecorder) CreateFaceLivenessSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFaceLivenessSessionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateFaceLivenessSessionWithContext), varargs...)
+}
+
 // CreateProject mocks base method
 func (m *MockRekognitionAPI) CreateProject(arg0 *rekognition.CreateProjectInput) (*rekognition.CreateProjectOutput, error) {
 	m.ctrl.T.Helper()
@@ -1698,6 +1748,56 @@ func (mr *MockRekognitionAPIMockRecorder) GetFaceDetectionWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFaceDetectionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).GetFaceDetectionWithContext), varargs...)
+}
+
+// GetFaceLivenessSessionResults mocks base method
+func (m *MockRekognitionAPI) GetFaceLivenessSessionResults(arg0 *rekognition.GetFaceLivenessSessionResultsInput) (*rekognition.GetFaceLivenessSessionResultsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFaceLivenessSessionResults", arg0)
+	ret0, _ := ret[0].(*rekognition.GetFaceLivenessSessionResultsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFaceLivenessSessionResults indicates an expected call of GetFaceLivenessSessionResults
+func (mr *MockRekognitionAPIMockRecorder) GetFaceLivenessSessionResults(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFaceLivenessSessionResults", reflect.TypeOf((*MockRekognitionAPI)(nil).GetFaceLivenessSessionResults), arg0)
+}
+
+// GetFaceLivenessSessionResultsRequest mocks base method
+func (m *MockRekognitionAPI) GetFaceLivenessSessionResultsRequest(arg0 *rekognition.GetFaceLivenessSessionResultsInput) (*request.Request, *rekognition.GetFaceLivenessSessionResultsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFaceLivenessSessionResultsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.GetFaceLivenessSessionResultsOutput)
+	return ret0, ret1
+}
+
+// GetFaceLivenessSessionResultsRequest indicates an expected call of GetFaceLivenessSessionResultsRequest
+func (mr *MockRekognitionAPIMockRecorder) GetFaceLivenessSessionResultsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFaceLivenessSessionResultsRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).GetFaceLivenessSessionResultsRequest), arg0)
+}
+
+// GetFaceLivenessSessionResultsWithContext mocks base method
+func (m *MockRekognitionAPI) GetFaceLivenessSessionResultsWithContext(arg0 context.Context, arg1 *rekognition.GetFaceLivenessSessionResultsInput, arg2 ...request.Option) (*rekognition.GetFaceLivenessSessionResultsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFaceLivenessSessionResultsWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.GetFaceLivenessSessionResultsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFaceLivenessSessionResultsWithContext indicates an expected call of GetFaceLivenessSessionResultsWithContext
+func (mr *MockRekognitionAPIMockRecorder) GetFaceLivenessSessionResultsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFaceLivenessSessionResultsWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).GetFaceLivenessSessionResultsWithContext), varargs...)
 }
 
 // GetFaceSearch mocks base method
