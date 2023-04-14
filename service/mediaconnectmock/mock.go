@@ -35,6 +35,106 @@ func (m *MockMediaConnectAPI) EXPECT() *MockMediaConnectAPIMockRecorder {
 	return m.recorder
 }
 
+// AddBridgeOutputs mocks base method
+func (m *MockMediaConnectAPI) AddBridgeOutputs(arg0 *mediaconnect.AddBridgeOutputsInput) (*mediaconnect.AddBridgeOutputsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddBridgeOutputs", arg0)
+	ret0, _ := ret[0].(*mediaconnect.AddBridgeOutputsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddBridgeOutputs indicates an expected call of AddBridgeOutputs
+func (mr *MockMediaConnectAPIMockRecorder) AddBridgeOutputs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddBridgeOutputs", reflect.TypeOf((*MockMediaConnectAPI)(nil).AddBridgeOutputs), arg0)
+}
+
+// AddBridgeOutputsRequest mocks base method
+func (m *MockMediaConnectAPI) AddBridgeOutputsRequest(arg0 *mediaconnect.AddBridgeOutputsInput) (*request.Request, *mediaconnect.AddBridgeOutputsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddBridgeOutputsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.AddBridgeOutputsOutput)
+	return ret0, ret1
+}
+
+// AddBridgeOutputsRequest indicates an expected call of AddBridgeOutputsRequest
+func (mr *MockMediaConnectAPIMockRecorder) AddBridgeOutputsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddBridgeOutputsRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).AddBridgeOutputsRequest), arg0)
+}
+
+// AddBridgeOutputsWithContext mocks base method
+func (m *MockMediaConnectAPI) AddBridgeOutputsWithContext(arg0 context.Context, arg1 *mediaconnect.AddBridgeOutputsInput, arg2 ...request.Option) (*mediaconnect.AddBridgeOutputsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AddBridgeOutputsWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.AddBridgeOutputsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddBridgeOutputsWithContext indicates an expected call of AddBridgeOutputsWithContext
+func (mr *MockMediaConnectAPIMockRecorder) AddBridgeOutputsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddBridgeOutputsWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).AddBridgeOutputsWithContext), varargs...)
+}
+
+// AddBridgeSources mocks base method
+func (m *MockMediaConnectAPI) AddBridgeSources(arg0 *mediaconnect.AddBridgeSourcesInput) (*mediaconnect.AddBridgeSourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddBridgeSources", arg0)
+	ret0, _ := ret[0].(*mediaconnect.AddBridgeSourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddBridgeSources indicates an expected call of AddBridgeSources
+func (mr *MockMediaConnectAPIMockRecorder) AddBridgeSources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddBridgeSources", reflect.TypeOf((*MockMediaConnectAPI)(nil).AddBridgeSources), arg0)
+}
+
+// AddBridgeSourcesRequest mocks base method
+func (m *MockMediaConnectAPI) AddBridgeSourcesRequest(arg0 *mediaconnect.AddBridgeSourcesInput) (*request.Request, *mediaconnect.AddBridgeSourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddBridgeSourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.AddBridgeSourcesOutput)
+	return ret0, ret1
+}
+
+// AddBridgeSourcesRequest indicates an expected call of AddBridgeSourcesRequest
+func (mr *MockMediaConnectAPIMockRecorder) AddBridgeSourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddBridgeSourcesRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).AddBridgeSourcesRequest), arg0)
+}
+
+// AddBridgeSourcesWithContext mocks base method
+func (m *MockMediaConnectAPI) AddBridgeSourcesWithContext(arg0 context.Context, arg1 *mediaconnect.AddBridgeSourcesInput, arg2 ...request.Option) (*mediaconnect.AddBridgeSourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AddBridgeSourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.AddBridgeSourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddBridgeSourcesWithContext indicates an expected call of AddBridgeSourcesWithContext
+func (mr *MockMediaConnectAPIMockRecorder) AddBridgeSourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddBridgeSourcesWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).AddBridgeSourcesWithContext), varargs...)
+}
+
 // AddFlowMediaStreams mocks base method
 func (m *MockMediaConnectAPI) AddFlowMediaStreams(arg0 *mediaconnect.AddFlowMediaStreamsInput) (*mediaconnect.AddFlowMediaStreamsOutput, error) {
 	m.ctrl.T.Helper()
@@ -235,6 +335,56 @@ func (mr *MockMediaConnectAPIMockRecorder) AddFlowVpcInterfacesWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddFlowVpcInterfacesWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).AddFlowVpcInterfacesWithContext), varargs...)
 }
 
+// CreateBridge mocks base method
+func (m *MockMediaConnectAPI) CreateBridge(arg0 *mediaconnect.CreateBridgeInput) (*mediaconnect.CreateBridgeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBridge", arg0)
+	ret0, _ := ret[0].(*mediaconnect.CreateBridgeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBridge indicates an expected call of CreateBridge
+func (mr *MockMediaConnectAPIMockRecorder) CreateBridge(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBridge", reflect.TypeOf((*MockMediaConnectAPI)(nil).CreateBridge), arg0)
+}
+
+// CreateBridgeRequest mocks base method
+func (m *MockMediaConnectAPI) CreateBridgeRequest(arg0 *mediaconnect.CreateBridgeInput) (*request.Request, *mediaconnect.CreateBridgeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateBridgeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.CreateBridgeOutput)
+	return ret0, ret1
+}
+
+// CreateBridgeRequest indicates an expected call of CreateBridgeRequest
+func (mr *MockMediaConnectAPIMockRecorder) CreateBridgeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBridgeRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).CreateBridgeRequest), arg0)
+}
+
+// CreateBridgeWithContext mocks base method
+func (m *MockMediaConnectAPI) CreateBridgeWithContext(arg0 context.Context, arg1 *mediaconnect.CreateBridgeInput, arg2 ...request.Option) (*mediaconnect.CreateBridgeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateBridgeWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.CreateBridgeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateBridgeWithContext indicates an expected call of CreateBridgeWithContext
+func (mr *MockMediaConnectAPIMockRecorder) CreateBridgeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateBridgeWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).CreateBridgeWithContext), varargs...)
+}
+
 // CreateFlow mocks base method
 func (m *MockMediaConnectAPI) CreateFlow(arg0 *mediaconnect.CreateFlowInput) (*mediaconnect.CreateFlowOutput, error) {
 	m.ctrl.T.Helper()
@@ -283,6 +433,106 @@ func (mr *MockMediaConnectAPIMockRecorder) CreateFlowWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFlowWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).CreateFlowWithContext), varargs...)
+}
+
+// CreateGateway mocks base method
+func (m *MockMediaConnectAPI) CreateGateway(arg0 *mediaconnect.CreateGatewayInput) (*mediaconnect.CreateGatewayOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateGateway", arg0)
+	ret0, _ := ret[0].(*mediaconnect.CreateGatewayOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateGateway indicates an expected call of CreateGateway
+func (mr *MockMediaConnectAPIMockRecorder) CreateGateway(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGateway", reflect.TypeOf((*MockMediaConnectAPI)(nil).CreateGateway), arg0)
+}
+
+// CreateGatewayRequest mocks base method
+func (m *MockMediaConnectAPI) CreateGatewayRequest(arg0 *mediaconnect.CreateGatewayInput) (*request.Request, *mediaconnect.CreateGatewayOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateGatewayRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.CreateGatewayOutput)
+	return ret0, ret1
+}
+
+// CreateGatewayRequest indicates an expected call of CreateGatewayRequest
+func (mr *MockMediaConnectAPIMockRecorder) CreateGatewayRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGatewayRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).CreateGatewayRequest), arg0)
+}
+
+// CreateGatewayWithContext mocks base method
+func (m *MockMediaConnectAPI) CreateGatewayWithContext(arg0 context.Context, arg1 *mediaconnect.CreateGatewayInput, arg2 ...request.Option) (*mediaconnect.CreateGatewayOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateGatewayWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.CreateGatewayOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateGatewayWithContext indicates an expected call of CreateGatewayWithContext
+func (mr *MockMediaConnectAPIMockRecorder) CreateGatewayWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateGatewayWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).CreateGatewayWithContext), varargs...)
+}
+
+// DeleteBridge mocks base method
+func (m *MockMediaConnectAPI) DeleteBridge(arg0 *mediaconnect.DeleteBridgeInput) (*mediaconnect.DeleteBridgeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBridge", arg0)
+	ret0, _ := ret[0].(*mediaconnect.DeleteBridgeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBridge indicates an expected call of DeleteBridge
+func (mr *MockMediaConnectAPIMockRecorder) DeleteBridge(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBridge", reflect.TypeOf((*MockMediaConnectAPI)(nil).DeleteBridge), arg0)
+}
+
+// DeleteBridgeRequest mocks base method
+func (m *MockMediaConnectAPI) DeleteBridgeRequest(arg0 *mediaconnect.DeleteBridgeInput) (*request.Request, *mediaconnect.DeleteBridgeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteBridgeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.DeleteBridgeOutput)
+	return ret0, ret1
+}
+
+// DeleteBridgeRequest indicates an expected call of DeleteBridgeRequest
+func (mr *MockMediaConnectAPIMockRecorder) DeleteBridgeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBridgeRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).DeleteBridgeRequest), arg0)
+}
+
+// DeleteBridgeWithContext mocks base method
+func (m *MockMediaConnectAPI) DeleteBridgeWithContext(arg0 context.Context, arg1 *mediaconnect.DeleteBridgeInput, arg2 ...request.Option) (*mediaconnect.DeleteBridgeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteBridgeWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.DeleteBridgeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteBridgeWithContext indicates an expected call of DeleteBridgeWithContext
+func (mr *MockMediaConnectAPIMockRecorder) DeleteBridgeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteBridgeWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).DeleteBridgeWithContext), varargs...)
 }
 
 // DeleteFlow mocks base method
@@ -335,6 +585,156 @@ func (mr *MockMediaConnectAPIMockRecorder) DeleteFlowWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFlowWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).DeleteFlowWithContext), varargs...)
 }
 
+// DeleteGateway mocks base method
+func (m *MockMediaConnectAPI) DeleteGateway(arg0 *mediaconnect.DeleteGatewayInput) (*mediaconnect.DeleteGatewayOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteGateway", arg0)
+	ret0, _ := ret[0].(*mediaconnect.DeleteGatewayOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteGateway indicates an expected call of DeleteGateway
+func (mr *MockMediaConnectAPIMockRecorder) DeleteGateway(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGateway", reflect.TypeOf((*MockMediaConnectAPI)(nil).DeleteGateway), arg0)
+}
+
+// DeleteGatewayRequest mocks base method
+func (m *MockMediaConnectAPI) DeleteGatewayRequest(arg0 *mediaconnect.DeleteGatewayInput) (*request.Request, *mediaconnect.DeleteGatewayOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteGatewayRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.DeleteGatewayOutput)
+	return ret0, ret1
+}
+
+// DeleteGatewayRequest indicates an expected call of DeleteGatewayRequest
+func (mr *MockMediaConnectAPIMockRecorder) DeleteGatewayRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGatewayRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).DeleteGatewayRequest), arg0)
+}
+
+// DeleteGatewayWithContext mocks base method
+func (m *MockMediaConnectAPI) DeleteGatewayWithContext(arg0 context.Context, arg1 *mediaconnect.DeleteGatewayInput, arg2 ...request.Option) (*mediaconnect.DeleteGatewayOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteGatewayWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.DeleteGatewayOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteGatewayWithContext indicates an expected call of DeleteGatewayWithContext
+func (mr *MockMediaConnectAPIMockRecorder) DeleteGatewayWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteGatewayWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).DeleteGatewayWithContext), varargs...)
+}
+
+// DeregisterGatewayInstance mocks base method
+func (m *MockMediaConnectAPI) DeregisterGatewayInstance(arg0 *mediaconnect.DeregisterGatewayInstanceInput) (*mediaconnect.DeregisterGatewayInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterGatewayInstance", arg0)
+	ret0, _ := ret[0].(*mediaconnect.DeregisterGatewayInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterGatewayInstance indicates an expected call of DeregisterGatewayInstance
+func (mr *MockMediaConnectAPIMockRecorder) DeregisterGatewayInstance(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterGatewayInstance", reflect.TypeOf((*MockMediaConnectAPI)(nil).DeregisterGatewayInstance), arg0)
+}
+
+// DeregisterGatewayInstanceRequest mocks base method
+func (m *MockMediaConnectAPI) DeregisterGatewayInstanceRequest(arg0 *mediaconnect.DeregisterGatewayInstanceInput) (*request.Request, *mediaconnect.DeregisterGatewayInstanceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterGatewayInstanceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.DeregisterGatewayInstanceOutput)
+	return ret0, ret1
+}
+
+// DeregisterGatewayInstanceRequest indicates an expected call of DeregisterGatewayInstanceRequest
+func (mr *MockMediaConnectAPIMockRecorder) DeregisterGatewayInstanceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterGatewayInstanceRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).DeregisterGatewayInstanceRequest), arg0)
+}
+
+// DeregisterGatewayInstanceWithContext mocks base method
+func (m *MockMediaConnectAPI) DeregisterGatewayInstanceWithContext(arg0 context.Context, arg1 *mediaconnect.DeregisterGatewayInstanceInput, arg2 ...request.Option) (*mediaconnect.DeregisterGatewayInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeregisterGatewayInstanceWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.DeregisterGatewayInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterGatewayInstanceWithContext indicates an expected call of DeregisterGatewayInstanceWithContext
+func (mr *MockMediaConnectAPIMockRecorder) DeregisterGatewayInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterGatewayInstanceWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).DeregisterGatewayInstanceWithContext), varargs...)
+}
+
+// DescribeBridge mocks base method
+func (m *MockMediaConnectAPI) DescribeBridge(arg0 *mediaconnect.DescribeBridgeInput) (*mediaconnect.DescribeBridgeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBridge", arg0)
+	ret0, _ := ret[0].(*mediaconnect.DescribeBridgeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBridge indicates an expected call of DescribeBridge
+func (mr *MockMediaConnectAPIMockRecorder) DescribeBridge(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBridge", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeBridge), arg0)
+}
+
+// DescribeBridgeRequest mocks base method
+func (m *MockMediaConnectAPI) DescribeBridgeRequest(arg0 *mediaconnect.DescribeBridgeInput) (*request.Request, *mediaconnect.DescribeBridgeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBridgeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.DescribeBridgeOutput)
+	return ret0, ret1
+}
+
+// DescribeBridgeRequest indicates an expected call of DescribeBridgeRequest
+func (mr *MockMediaConnectAPIMockRecorder) DescribeBridgeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBridgeRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeBridgeRequest), arg0)
+}
+
+// DescribeBridgeWithContext mocks base method
+func (m *MockMediaConnectAPI) DescribeBridgeWithContext(arg0 context.Context, arg1 *mediaconnect.DescribeBridgeInput, arg2 ...request.Option) (*mediaconnect.DescribeBridgeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeBridgeWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.DescribeBridgeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBridgeWithContext indicates an expected call of DescribeBridgeWithContext
+func (mr *MockMediaConnectAPIMockRecorder) DescribeBridgeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBridgeWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeBridgeWithContext), varargs...)
+}
+
 // DescribeFlow mocks base method
 func (m *MockMediaConnectAPI) DescribeFlow(arg0 *mediaconnect.DescribeFlowInput) (*mediaconnect.DescribeFlowOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +783,106 @@ func (mr *MockMediaConnectAPIMockRecorder) DescribeFlowWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFlowWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeFlowWithContext), varargs...)
+}
+
+// DescribeGateway mocks base method
+func (m *MockMediaConnectAPI) DescribeGateway(arg0 *mediaconnect.DescribeGatewayInput) (*mediaconnect.DescribeGatewayOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGateway", arg0)
+	ret0, _ := ret[0].(*mediaconnect.DescribeGatewayOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGateway indicates an expected call of DescribeGateway
+func (mr *MockMediaConnectAPIMockRecorder) DescribeGateway(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGateway", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeGateway), arg0)
+}
+
+// DescribeGatewayInstance mocks base method
+func (m *MockMediaConnectAPI) DescribeGatewayInstance(arg0 *mediaconnect.DescribeGatewayInstanceInput) (*mediaconnect.DescribeGatewayInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGatewayInstance", arg0)
+	ret0, _ := ret[0].(*mediaconnect.DescribeGatewayInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGatewayInstance indicates an expected call of DescribeGatewayInstance
+func (mr *MockMediaConnectAPIMockRecorder) DescribeGatewayInstance(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGatewayInstance", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeGatewayInstance), arg0)
+}
+
+// DescribeGatewayInstanceRequest mocks base method
+func (m *MockMediaConnectAPI) DescribeGatewayInstanceRequest(arg0 *mediaconnect.DescribeGatewayInstanceInput) (*request.Request, *mediaconnect.DescribeGatewayInstanceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGatewayInstanceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.DescribeGatewayInstanceOutput)
+	return ret0, ret1
+}
+
+// DescribeGatewayInstanceRequest indicates an expected call of DescribeGatewayInstanceRequest
+func (mr *MockMediaConnectAPIMockRecorder) DescribeGatewayInstanceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGatewayInstanceRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeGatewayInstanceRequest), arg0)
+}
+
+// DescribeGatewayInstanceWithContext mocks base method
+func (m *MockMediaConnectAPI) DescribeGatewayInstanceWithContext(arg0 context.Context, arg1 *mediaconnect.DescribeGatewayInstanceInput, arg2 ...request.Option) (*mediaconnect.DescribeGatewayInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGatewayInstanceWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.DescribeGatewayInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGatewayInstanceWithContext indicates an expected call of DescribeGatewayInstanceWithContext
+func (mr *MockMediaConnectAPIMockRecorder) DescribeGatewayInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGatewayInstanceWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeGatewayInstanceWithContext), varargs...)
+}
+
+// DescribeGatewayRequest mocks base method
+func (m *MockMediaConnectAPI) DescribeGatewayRequest(arg0 *mediaconnect.DescribeGatewayInput) (*request.Request, *mediaconnect.DescribeGatewayOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeGatewayRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.DescribeGatewayOutput)
+	return ret0, ret1
+}
+
+// DescribeGatewayRequest indicates an expected call of DescribeGatewayRequest
+func (mr *MockMediaConnectAPIMockRecorder) DescribeGatewayRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGatewayRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeGatewayRequest), arg0)
+}
+
+// DescribeGatewayWithContext mocks base method
+func (m *MockMediaConnectAPI) DescribeGatewayWithContext(arg0 context.Context, arg1 *mediaconnect.DescribeGatewayInput, arg2 ...request.Option) (*mediaconnect.DescribeGatewayOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeGatewayWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.DescribeGatewayOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeGatewayWithContext indicates an expected call of DescribeGatewayWithContext
+func (mr *MockMediaConnectAPIMockRecorder) DescribeGatewayWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeGatewayWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).DescribeGatewayWithContext), varargs...)
 }
 
 // DescribeOffering mocks base method
@@ -533,6 +1033,89 @@ func (mr *MockMediaConnectAPIMockRecorder) GrantFlowEntitlementsWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GrantFlowEntitlementsWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).GrantFlowEntitlementsWithContext), varargs...)
+}
+
+// ListBridges mocks base method
+func (m *MockMediaConnectAPI) ListBridges(arg0 *mediaconnect.ListBridgesInput) (*mediaconnect.ListBridgesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBridges", arg0)
+	ret0, _ := ret[0].(*mediaconnect.ListBridgesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBridges indicates an expected call of ListBridges
+func (mr *MockMediaConnectAPIMockRecorder) ListBridges(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBridges", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListBridges), arg0)
+}
+
+// ListBridgesPages mocks base method
+func (m *MockMediaConnectAPI) ListBridgesPages(arg0 *mediaconnect.ListBridgesInput, arg1 func(*mediaconnect.ListBridgesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBridgesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListBridgesPages indicates an expected call of ListBridgesPages
+func (mr *MockMediaConnectAPIMockRecorder) ListBridgesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBridgesPages", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListBridgesPages), arg0, arg1)
+}
+
+// ListBridgesPagesWithContext mocks base method
+func (m *MockMediaConnectAPI) ListBridgesPagesWithContext(arg0 context.Context, arg1 *mediaconnect.ListBridgesInput, arg2 func(*mediaconnect.ListBridgesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBridgesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListBridgesPagesWithContext indicates an expected call of ListBridgesPagesWithContext
+func (mr *MockMediaConnectAPIMockRecorder) ListBridgesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBridgesPagesWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListBridgesPagesWithContext), varargs...)
+}
+
+// ListBridgesRequest mocks base method
+func (m *MockMediaConnectAPI) ListBridgesRequest(arg0 *mediaconnect.ListBridgesInput) (*request.Request, *mediaconnect.ListBridgesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBridgesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.ListBridgesOutput)
+	return ret0, ret1
+}
+
+// ListBridgesRequest indicates an expected call of ListBridgesRequest
+func (mr *MockMediaConnectAPIMockRecorder) ListBridgesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBridgesRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListBridgesRequest), arg0)
+}
+
+// ListBridgesWithContext mocks base method
+func (m *MockMediaConnectAPI) ListBridgesWithContext(arg0 context.Context, arg1 *mediaconnect.ListBridgesInput, arg2 ...request.Option) (*mediaconnect.ListBridgesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBridgesWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.ListBridgesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListBridgesWithContext indicates an expected call of ListBridgesWithContext
+func (mr *MockMediaConnectAPIMockRecorder) ListBridgesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBridgesWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListBridgesWithContext), varargs...)
 }
 
 // ListEntitlements mocks base method
@@ -699,6 +1282,172 @@ func (mr *MockMediaConnectAPIMockRecorder) ListFlowsWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowsWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListFlowsWithContext), varargs...)
+}
+
+// ListGatewayInstances mocks base method
+func (m *MockMediaConnectAPI) ListGatewayInstances(arg0 *mediaconnect.ListGatewayInstancesInput) (*mediaconnect.ListGatewayInstancesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGatewayInstances", arg0)
+	ret0, _ := ret[0].(*mediaconnect.ListGatewayInstancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListGatewayInstances indicates an expected call of ListGatewayInstances
+func (mr *MockMediaConnectAPIMockRecorder) ListGatewayInstances(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewayInstances", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListGatewayInstances), arg0)
+}
+
+// ListGatewayInstancesPages mocks base method
+func (m *MockMediaConnectAPI) ListGatewayInstancesPages(arg0 *mediaconnect.ListGatewayInstancesInput, arg1 func(*mediaconnect.ListGatewayInstancesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGatewayInstancesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGatewayInstancesPages indicates an expected call of ListGatewayInstancesPages
+func (mr *MockMediaConnectAPIMockRecorder) ListGatewayInstancesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewayInstancesPages", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListGatewayInstancesPages), arg0, arg1)
+}
+
+// ListGatewayInstancesPagesWithContext mocks base method
+func (m *MockMediaConnectAPI) ListGatewayInstancesPagesWithContext(arg0 context.Context, arg1 *mediaconnect.ListGatewayInstancesInput, arg2 func(*mediaconnect.ListGatewayInstancesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGatewayInstancesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGatewayInstancesPagesWithContext indicates an expected call of ListGatewayInstancesPagesWithContext
+func (mr *MockMediaConnectAPIMockRecorder) ListGatewayInstancesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewayInstancesPagesWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListGatewayInstancesPagesWithContext), varargs...)
+}
+
+// ListGatewayInstancesRequest mocks base method
+func (m *MockMediaConnectAPI) ListGatewayInstancesRequest(arg0 *mediaconnect.ListGatewayInstancesInput) (*request.Request, *mediaconnect.ListGatewayInstancesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGatewayInstancesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.ListGatewayInstancesOutput)
+	return ret0, ret1
+}
+
+// ListGatewayInstancesRequest indicates an expected call of ListGatewayInstancesRequest
+func (mr *MockMediaConnectAPIMockRecorder) ListGatewayInstancesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewayInstancesRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListGatewayInstancesRequest), arg0)
+}
+
+// ListGatewayInstancesWithContext mocks base method
+func (m *MockMediaConnectAPI) ListGatewayInstancesWithContext(arg0 context.Context, arg1 *mediaconnect.ListGatewayInstancesInput, arg2 ...request.Option) (*mediaconnect.ListGatewayInstancesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGatewayInstancesWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.ListGatewayInstancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListGatewayInstancesWithContext indicates an expected call of ListGatewayInstancesWithContext
+func (mr *MockMediaConnectAPIMockRecorder) ListGatewayInstancesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewayInstancesWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListGatewayInstancesWithContext), varargs...)
+}
+
+// ListGateways mocks base method
+func (m *MockMediaConnectAPI) ListGateways(arg0 *mediaconnect.ListGatewaysInput) (*mediaconnect.ListGatewaysOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGateways", arg0)
+	ret0, _ := ret[0].(*mediaconnect.ListGatewaysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListGateways indicates an expected call of ListGateways
+func (mr *MockMediaConnectAPIMockRecorder) ListGateways(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGateways", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListGateways), arg0)
+}
+
+// ListGatewaysPages mocks base method
+func (m *MockMediaConnectAPI) ListGatewaysPages(arg0 *mediaconnect.ListGatewaysInput, arg1 func(*mediaconnect.ListGatewaysOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGatewaysPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGatewaysPages indicates an expected call of ListGatewaysPages
+func (mr *MockMediaConnectAPIMockRecorder) ListGatewaysPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewaysPages", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListGatewaysPages), arg0, arg1)
+}
+
+// ListGatewaysPagesWithContext mocks base method
+func (m *MockMediaConnectAPI) ListGatewaysPagesWithContext(arg0 context.Context, arg1 *mediaconnect.ListGatewaysInput, arg2 func(*mediaconnect.ListGatewaysOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGatewaysPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGatewaysPagesWithContext indicates an expected call of ListGatewaysPagesWithContext
+func (mr *MockMediaConnectAPIMockRecorder) ListGatewaysPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewaysPagesWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListGatewaysPagesWithContext), varargs...)
+}
+
+// ListGatewaysRequest mocks base method
+func (m *MockMediaConnectAPI) ListGatewaysRequest(arg0 *mediaconnect.ListGatewaysInput) (*request.Request, *mediaconnect.ListGatewaysOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGatewaysRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.ListGatewaysOutput)
+	return ret0, ret1
+}
+
+// ListGatewaysRequest indicates an expected call of ListGatewaysRequest
+func (mr *MockMediaConnectAPIMockRecorder) ListGatewaysRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewaysRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListGatewaysRequest), arg0)
+}
+
+// ListGatewaysWithContext mocks base method
+func (m *MockMediaConnectAPI) ListGatewaysWithContext(arg0 context.Context, arg1 *mediaconnect.ListGatewaysInput, arg2 ...request.Option) (*mediaconnect.ListGatewaysOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGatewaysWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.ListGatewaysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListGatewaysWithContext indicates an expected call of ListGatewaysWithContext
+func (mr *MockMediaConnectAPIMockRecorder) ListGatewaysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGatewaysWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).ListGatewaysWithContext), varargs...)
 }
 
 // ListOfferings mocks base method
@@ -965,6 +1714,106 @@ func (mr *MockMediaConnectAPIMockRecorder) PurchaseOfferingWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseOfferingWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).PurchaseOfferingWithContext), varargs...)
+}
+
+// RemoveBridgeOutput mocks base method
+func (m *MockMediaConnectAPI) RemoveBridgeOutput(arg0 *mediaconnect.RemoveBridgeOutputInput) (*mediaconnect.RemoveBridgeOutputOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveBridgeOutput", arg0)
+	ret0, _ := ret[0].(*mediaconnect.RemoveBridgeOutputOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveBridgeOutput indicates an expected call of RemoveBridgeOutput
+func (mr *MockMediaConnectAPIMockRecorder) RemoveBridgeOutput(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveBridgeOutput", reflect.TypeOf((*MockMediaConnectAPI)(nil).RemoveBridgeOutput), arg0)
+}
+
+// RemoveBridgeOutputRequest mocks base method
+func (m *MockMediaConnectAPI) RemoveBridgeOutputRequest(arg0 *mediaconnect.RemoveBridgeOutputInput) (*request.Request, *mediaconnect.RemoveBridgeOutputOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveBridgeOutputRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.RemoveBridgeOutputOutput)
+	return ret0, ret1
+}
+
+// RemoveBridgeOutputRequest indicates an expected call of RemoveBridgeOutputRequest
+func (mr *MockMediaConnectAPIMockRecorder) RemoveBridgeOutputRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveBridgeOutputRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).RemoveBridgeOutputRequest), arg0)
+}
+
+// RemoveBridgeOutputWithContext mocks base method
+func (m *MockMediaConnectAPI) RemoveBridgeOutputWithContext(arg0 context.Context, arg1 *mediaconnect.RemoveBridgeOutputInput, arg2 ...request.Option) (*mediaconnect.RemoveBridgeOutputOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveBridgeOutputWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.RemoveBridgeOutputOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveBridgeOutputWithContext indicates an expected call of RemoveBridgeOutputWithContext
+func (mr *MockMediaConnectAPIMockRecorder) RemoveBridgeOutputWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveBridgeOutputWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).RemoveBridgeOutputWithContext), varargs...)
+}
+
+// RemoveBridgeSource mocks base method
+func (m *MockMediaConnectAPI) RemoveBridgeSource(arg0 *mediaconnect.RemoveBridgeSourceInput) (*mediaconnect.RemoveBridgeSourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveBridgeSource", arg0)
+	ret0, _ := ret[0].(*mediaconnect.RemoveBridgeSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveBridgeSource indicates an expected call of RemoveBridgeSource
+func (mr *MockMediaConnectAPIMockRecorder) RemoveBridgeSource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveBridgeSource", reflect.TypeOf((*MockMediaConnectAPI)(nil).RemoveBridgeSource), arg0)
+}
+
+// RemoveBridgeSourceRequest mocks base method
+func (m *MockMediaConnectAPI) RemoveBridgeSourceRequest(arg0 *mediaconnect.RemoveBridgeSourceInput) (*request.Request, *mediaconnect.RemoveBridgeSourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveBridgeSourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.RemoveBridgeSourceOutput)
+	return ret0, ret1
+}
+
+// RemoveBridgeSourceRequest indicates an expected call of RemoveBridgeSourceRequest
+func (mr *MockMediaConnectAPIMockRecorder) RemoveBridgeSourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveBridgeSourceRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).RemoveBridgeSourceRequest), arg0)
+}
+
+// RemoveBridgeSourceWithContext mocks base method
+func (m *MockMediaConnectAPI) RemoveBridgeSourceWithContext(arg0 context.Context, arg1 *mediaconnect.RemoveBridgeSourceInput, arg2 ...request.Option) (*mediaconnect.RemoveBridgeSourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveBridgeSourceWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.RemoveBridgeSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveBridgeSourceWithContext indicates an expected call of RemoveBridgeSourceWithContext
+func (mr *MockMediaConnectAPIMockRecorder) RemoveBridgeSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveBridgeSourceWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).RemoveBridgeSourceWithContext), varargs...)
 }
 
 // RemoveFlowMediaStream mocks base method
@@ -1417,6 +2266,206 @@ func (mr *MockMediaConnectAPIMockRecorder) UntagResourceWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
+// UpdateBridge mocks base method
+func (m *MockMediaConnectAPI) UpdateBridge(arg0 *mediaconnect.UpdateBridgeInput) (*mediaconnect.UpdateBridgeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBridge", arg0)
+	ret0, _ := ret[0].(*mediaconnect.UpdateBridgeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBridge indicates an expected call of UpdateBridge
+func (mr *MockMediaConnectAPIMockRecorder) UpdateBridge(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBridge", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateBridge), arg0)
+}
+
+// UpdateBridgeOutput mocks base method
+func (m *MockMediaConnectAPI) UpdateBridgeOutput(arg0 *mediaconnect.UpdateBridgeOutputInput) (*mediaconnect.UpdateBridgeOutputOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBridgeOutput", arg0)
+	ret0, _ := ret[0].(*mediaconnect.UpdateBridgeOutputOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBridgeOutput indicates an expected call of UpdateBridgeOutput
+func (mr *MockMediaConnectAPIMockRecorder) UpdateBridgeOutput(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBridgeOutput", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateBridgeOutput), arg0)
+}
+
+// UpdateBridgeOutputRequest mocks base method
+func (m *MockMediaConnectAPI) UpdateBridgeOutputRequest(arg0 *mediaconnect.UpdateBridgeOutputInput) (*request.Request, *mediaconnect.UpdateBridgeOutputOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBridgeOutputRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.UpdateBridgeOutputOutput)
+	return ret0, ret1
+}
+
+// UpdateBridgeOutputRequest indicates an expected call of UpdateBridgeOutputRequest
+func (mr *MockMediaConnectAPIMockRecorder) UpdateBridgeOutputRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBridgeOutputRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateBridgeOutputRequest), arg0)
+}
+
+// UpdateBridgeOutputWithContext mocks base method
+func (m *MockMediaConnectAPI) UpdateBridgeOutputWithContext(arg0 context.Context, arg1 *mediaconnect.UpdateBridgeOutputInput, arg2 ...request.Option) (*mediaconnect.UpdateBridgeOutputOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateBridgeOutputWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.UpdateBridgeOutputOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBridgeOutputWithContext indicates an expected call of UpdateBridgeOutputWithContext
+func (mr *MockMediaConnectAPIMockRecorder) UpdateBridgeOutputWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBridgeOutputWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateBridgeOutputWithContext), varargs...)
+}
+
+// UpdateBridgeRequest mocks base method
+func (m *MockMediaConnectAPI) UpdateBridgeRequest(arg0 *mediaconnect.UpdateBridgeInput) (*request.Request, *mediaconnect.UpdateBridgeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBridgeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.UpdateBridgeOutput)
+	return ret0, ret1
+}
+
+// UpdateBridgeRequest indicates an expected call of UpdateBridgeRequest
+func (mr *MockMediaConnectAPIMockRecorder) UpdateBridgeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBridgeRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateBridgeRequest), arg0)
+}
+
+// UpdateBridgeSource mocks base method
+func (m *MockMediaConnectAPI) UpdateBridgeSource(arg0 *mediaconnect.UpdateBridgeSourceInput) (*mediaconnect.UpdateBridgeSourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBridgeSource", arg0)
+	ret0, _ := ret[0].(*mediaconnect.UpdateBridgeSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBridgeSource indicates an expected call of UpdateBridgeSource
+func (mr *MockMediaConnectAPIMockRecorder) UpdateBridgeSource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBridgeSource", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateBridgeSource), arg0)
+}
+
+// UpdateBridgeSourceRequest mocks base method
+func (m *MockMediaConnectAPI) UpdateBridgeSourceRequest(arg0 *mediaconnect.UpdateBridgeSourceInput) (*request.Request, *mediaconnect.UpdateBridgeSourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBridgeSourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.UpdateBridgeSourceOutput)
+	return ret0, ret1
+}
+
+// UpdateBridgeSourceRequest indicates an expected call of UpdateBridgeSourceRequest
+func (mr *MockMediaConnectAPIMockRecorder) UpdateBridgeSourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBridgeSourceRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateBridgeSourceRequest), arg0)
+}
+
+// UpdateBridgeSourceWithContext mocks base method
+func (m *MockMediaConnectAPI) UpdateBridgeSourceWithContext(arg0 context.Context, arg1 *mediaconnect.UpdateBridgeSourceInput, arg2 ...request.Option) (*mediaconnect.UpdateBridgeSourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateBridgeSourceWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.UpdateBridgeSourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBridgeSourceWithContext indicates an expected call of UpdateBridgeSourceWithContext
+func (mr *MockMediaConnectAPIMockRecorder) UpdateBridgeSourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBridgeSourceWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateBridgeSourceWithContext), varargs...)
+}
+
+// UpdateBridgeState mocks base method
+func (m *MockMediaConnectAPI) UpdateBridgeState(arg0 *mediaconnect.UpdateBridgeStateInput) (*mediaconnect.UpdateBridgeStateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBridgeState", arg0)
+	ret0, _ := ret[0].(*mediaconnect.UpdateBridgeStateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBridgeState indicates an expected call of UpdateBridgeState
+func (mr *MockMediaConnectAPIMockRecorder) UpdateBridgeState(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBridgeState", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateBridgeState), arg0)
+}
+
+// UpdateBridgeStateRequest mocks base method
+func (m *MockMediaConnectAPI) UpdateBridgeStateRequest(arg0 *mediaconnect.UpdateBridgeStateInput) (*request.Request, *mediaconnect.UpdateBridgeStateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateBridgeStateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.UpdateBridgeStateOutput)
+	return ret0, ret1
+}
+
+// UpdateBridgeStateRequest indicates an expected call of UpdateBridgeStateRequest
+func (mr *MockMediaConnectAPIMockRecorder) UpdateBridgeStateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBridgeStateRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateBridgeStateRequest), arg0)
+}
+
+// UpdateBridgeStateWithContext mocks base method
+func (m *MockMediaConnectAPI) UpdateBridgeStateWithContext(arg0 context.Context, arg1 *mediaconnect.UpdateBridgeStateInput, arg2 ...request.Option) (*mediaconnect.UpdateBridgeStateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateBridgeStateWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.UpdateBridgeStateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBridgeStateWithContext indicates an expected call of UpdateBridgeStateWithContext
+func (mr *MockMediaConnectAPIMockRecorder) UpdateBridgeStateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBridgeStateWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateBridgeStateWithContext), varargs...)
+}
+
+// UpdateBridgeWithContext mocks base method
+func (m *MockMediaConnectAPI) UpdateBridgeWithContext(arg0 context.Context, arg1 *mediaconnect.UpdateBridgeInput, arg2 ...request.Option) (*mediaconnect.UpdateBridgeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateBridgeWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.UpdateBridgeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateBridgeWithContext indicates an expected call of UpdateBridgeWithContext
+func (mr *MockMediaConnectAPIMockRecorder) UpdateBridgeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateBridgeWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateBridgeWithContext), varargs...)
+}
+
 // UpdateFlow mocks base method
 func (m *MockMediaConnectAPI) UpdateFlow(arg0 *mediaconnect.UpdateFlowInput) (*mediaconnect.UpdateFlowOutput, error) {
 	m.ctrl.T.Helper()
@@ -1665,6 +2714,56 @@ func (mr *MockMediaConnectAPIMockRecorder) UpdateFlowWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFlowWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateFlowWithContext), varargs...)
+}
+
+// UpdateGatewayInstance mocks base method
+func (m *MockMediaConnectAPI) UpdateGatewayInstance(arg0 *mediaconnect.UpdateGatewayInstanceInput) (*mediaconnect.UpdateGatewayInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGatewayInstance", arg0)
+	ret0, _ := ret[0].(*mediaconnect.UpdateGatewayInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGatewayInstance indicates an expected call of UpdateGatewayInstance
+func (mr *MockMediaConnectAPIMockRecorder) UpdateGatewayInstance(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayInstance", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateGatewayInstance), arg0)
+}
+
+// UpdateGatewayInstanceRequest mocks base method
+func (m *MockMediaConnectAPI) UpdateGatewayInstanceRequest(arg0 *mediaconnect.UpdateGatewayInstanceInput) (*request.Request, *mediaconnect.UpdateGatewayInstanceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGatewayInstanceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mediaconnect.UpdateGatewayInstanceOutput)
+	return ret0, ret1
+}
+
+// UpdateGatewayInstanceRequest indicates an expected call of UpdateGatewayInstanceRequest
+func (mr *MockMediaConnectAPIMockRecorder) UpdateGatewayInstanceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayInstanceRequest", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateGatewayInstanceRequest), arg0)
+}
+
+// UpdateGatewayInstanceWithContext mocks base method
+func (m *MockMediaConnectAPI) UpdateGatewayInstanceWithContext(arg0 context.Context, arg1 *mediaconnect.UpdateGatewayInstanceInput, arg2 ...request.Option) (*mediaconnect.UpdateGatewayInstanceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateGatewayInstanceWithContext", varargs...)
+	ret0, _ := ret[0].(*mediaconnect.UpdateGatewayInstanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGatewayInstanceWithContext indicates an expected call of UpdateGatewayInstanceWithContext
+func (mr *MockMediaConnectAPIMockRecorder) UpdateGatewayInstanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGatewayInstanceWithContext", reflect.TypeOf((*MockMediaConnectAPI)(nil).UpdateGatewayInstanceWithContext), varargs...)
 }
 
 // WaitUntilFlowActive mocks base method
