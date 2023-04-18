@@ -85,6 +85,56 @@ func (mr *MockDrsAPIMockRecorder) CreateExtendedSourceServerWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateExtendedSourceServerWithContext", reflect.TypeOf((*MockDrsAPI)(nil).CreateExtendedSourceServerWithContext), varargs...)
 }
 
+// CreateLaunchConfigurationTemplate mocks base method
+func (m *MockDrsAPI) CreateLaunchConfigurationTemplate(arg0 *drs.CreateLaunchConfigurationTemplateInput) (*drs.CreateLaunchConfigurationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLaunchConfigurationTemplate", arg0)
+	ret0, _ := ret[0].(*drs.CreateLaunchConfigurationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLaunchConfigurationTemplate indicates an expected call of CreateLaunchConfigurationTemplate
+func (mr *MockDrsAPIMockRecorder) CreateLaunchConfigurationTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLaunchConfigurationTemplate", reflect.TypeOf((*MockDrsAPI)(nil).CreateLaunchConfigurationTemplate), arg0)
+}
+
+// CreateLaunchConfigurationTemplateRequest mocks base method
+func (m *MockDrsAPI) CreateLaunchConfigurationTemplateRequest(arg0 *drs.CreateLaunchConfigurationTemplateInput) (*request.Request, *drs.CreateLaunchConfigurationTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLaunchConfigurationTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.CreateLaunchConfigurationTemplateOutput)
+	return ret0, ret1
+}
+
+// CreateLaunchConfigurationTemplateRequest indicates an expected call of CreateLaunchConfigurationTemplateRequest
+func (mr *MockDrsAPIMockRecorder) CreateLaunchConfigurationTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLaunchConfigurationTemplateRequest", reflect.TypeOf((*MockDrsAPI)(nil).CreateLaunchConfigurationTemplateRequest), arg0)
+}
+
+// CreateLaunchConfigurationTemplateWithContext mocks base method
+func (m *MockDrsAPI) CreateLaunchConfigurationTemplateWithContext(arg0 context.Context, arg1 *drs.CreateLaunchConfigurationTemplateInput, arg2 ...request.Option) (*drs.CreateLaunchConfigurationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLaunchConfigurationTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.CreateLaunchConfigurationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLaunchConfigurationTemplateWithContext indicates an expected call of CreateLaunchConfigurationTemplateWithContext
+func (mr *MockDrsAPIMockRecorder) CreateLaunchConfigurationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLaunchConfigurationTemplateWithContext", reflect.TypeOf((*MockDrsAPI)(nil).CreateLaunchConfigurationTemplateWithContext), varargs...)
+}
+
 // CreateReplicationConfigurationTemplate mocks base method
 func (m *MockDrsAPI) CreateReplicationConfigurationTemplate(arg0 *drs.CreateReplicationConfigurationTemplateInput) (*drs.CreateReplicationConfigurationTemplateOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +233,56 @@ func (mr *MockDrsAPIMockRecorder) DeleteJobWithContext(arg0, arg1 interface{}, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobWithContext", reflect.TypeOf((*MockDrsAPI)(nil).DeleteJobWithContext), varargs...)
+}
+
+// DeleteLaunchConfigurationTemplate mocks base method
+func (m *MockDrsAPI) DeleteLaunchConfigurationTemplate(arg0 *drs.DeleteLaunchConfigurationTemplateInput) (*drs.DeleteLaunchConfigurationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLaunchConfigurationTemplate", arg0)
+	ret0, _ := ret[0].(*drs.DeleteLaunchConfigurationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLaunchConfigurationTemplate indicates an expected call of DeleteLaunchConfigurationTemplate
+func (mr *MockDrsAPIMockRecorder) DeleteLaunchConfigurationTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLaunchConfigurationTemplate", reflect.TypeOf((*MockDrsAPI)(nil).DeleteLaunchConfigurationTemplate), arg0)
+}
+
+// DeleteLaunchConfigurationTemplateRequest mocks base method
+func (m *MockDrsAPI) DeleteLaunchConfigurationTemplateRequest(arg0 *drs.DeleteLaunchConfigurationTemplateInput) (*request.Request, *drs.DeleteLaunchConfigurationTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLaunchConfigurationTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.DeleteLaunchConfigurationTemplateOutput)
+	return ret0, ret1
+}
+
+// DeleteLaunchConfigurationTemplateRequest indicates an expected call of DeleteLaunchConfigurationTemplateRequest
+func (mr *MockDrsAPIMockRecorder) DeleteLaunchConfigurationTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLaunchConfigurationTemplateRequest", reflect.TypeOf((*MockDrsAPI)(nil).DeleteLaunchConfigurationTemplateRequest), arg0)
+}
+
+// DeleteLaunchConfigurationTemplateWithContext mocks base method
+func (m *MockDrsAPI) DeleteLaunchConfigurationTemplateWithContext(arg0 context.Context, arg1 *drs.DeleteLaunchConfigurationTemplateInput, arg2 ...request.Option) (*drs.DeleteLaunchConfigurationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLaunchConfigurationTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.DeleteLaunchConfigurationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLaunchConfigurationTemplateWithContext indicates an expected call of DeleteLaunchConfigurationTemplateWithContext
+func (mr *MockDrsAPIMockRecorder) DeleteLaunchConfigurationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLaunchConfigurationTemplateWithContext", reflect.TypeOf((*MockDrsAPI)(nil).DeleteLaunchConfigurationTemplateWithContext), varargs...)
 }
 
 // DeleteRecoveryInstance mocks base method
@@ -499,6 +599,89 @@ func (mr *MockDrsAPIMockRecorder) DescribeJobsWithContext(arg0, arg1 interface{}
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeJobsWithContext", reflect.TypeOf((*MockDrsAPI)(nil).DescribeJobsWithContext), varargs...)
+}
+
+// DescribeLaunchConfigurationTemplates mocks base method
+func (m *MockDrsAPI) DescribeLaunchConfigurationTemplates(arg0 *drs.DescribeLaunchConfigurationTemplatesInput) (*drs.DescribeLaunchConfigurationTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLaunchConfigurationTemplates", arg0)
+	ret0, _ := ret[0].(*drs.DescribeLaunchConfigurationTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLaunchConfigurationTemplates indicates an expected call of DescribeLaunchConfigurationTemplates
+func (mr *MockDrsAPIMockRecorder) DescribeLaunchConfigurationTemplates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLaunchConfigurationTemplates", reflect.TypeOf((*MockDrsAPI)(nil).DescribeLaunchConfigurationTemplates), arg0)
+}
+
+// DescribeLaunchConfigurationTemplatesPages mocks base method
+func (m *MockDrsAPI) DescribeLaunchConfigurationTemplatesPages(arg0 *drs.DescribeLaunchConfigurationTemplatesInput, arg1 func(*drs.DescribeLaunchConfigurationTemplatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLaunchConfigurationTemplatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeLaunchConfigurationTemplatesPages indicates an expected call of DescribeLaunchConfigurationTemplatesPages
+func (mr *MockDrsAPIMockRecorder) DescribeLaunchConfigurationTemplatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLaunchConfigurationTemplatesPages", reflect.TypeOf((*MockDrsAPI)(nil).DescribeLaunchConfigurationTemplatesPages), arg0, arg1)
+}
+
+// DescribeLaunchConfigurationTemplatesPagesWithContext mocks base method
+func (m *MockDrsAPI) DescribeLaunchConfigurationTemplatesPagesWithContext(arg0 context.Context, arg1 *drs.DescribeLaunchConfigurationTemplatesInput, arg2 func(*drs.DescribeLaunchConfigurationTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLaunchConfigurationTemplatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeLaunchConfigurationTemplatesPagesWithContext indicates an expected call of DescribeLaunchConfigurationTemplatesPagesWithContext
+func (mr *MockDrsAPIMockRecorder) DescribeLaunchConfigurationTemplatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLaunchConfigurationTemplatesPagesWithContext", reflect.TypeOf((*MockDrsAPI)(nil).DescribeLaunchConfigurationTemplatesPagesWithContext), varargs...)
+}
+
+// DescribeLaunchConfigurationTemplatesRequest mocks base method
+func (m *MockDrsAPI) DescribeLaunchConfigurationTemplatesRequest(arg0 *drs.DescribeLaunchConfigurationTemplatesInput) (*request.Request, *drs.DescribeLaunchConfigurationTemplatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLaunchConfigurationTemplatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.DescribeLaunchConfigurationTemplatesOutput)
+	return ret0, ret1
+}
+
+// DescribeLaunchConfigurationTemplatesRequest indicates an expected call of DescribeLaunchConfigurationTemplatesRequest
+func (mr *MockDrsAPIMockRecorder) DescribeLaunchConfigurationTemplatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLaunchConfigurationTemplatesRequest", reflect.TypeOf((*MockDrsAPI)(nil).DescribeLaunchConfigurationTemplatesRequest), arg0)
+}
+
+// DescribeLaunchConfigurationTemplatesWithContext mocks base method
+func (m *MockDrsAPI) DescribeLaunchConfigurationTemplatesWithContext(arg0 context.Context, arg1 *drs.DescribeLaunchConfigurationTemplatesInput, arg2 ...request.Option) (*drs.DescribeLaunchConfigurationTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLaunchConfigurationTemplatesWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.DescribeLaunchConfigurationTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLaunchConfigurationTemplatesWithContext indicates an expected call of DescribeLaunchConfigurationTemplatesWithContext
+func (mr *MockDrsAPIMockRecorder) DescribeLaunchConfigurationTemplatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLaunchConfigurationTemplatesWithContext", reflect.TypeOf((*MockDrsAPI)(nil).DescribeLaunchConfigurationTemplatesWithContext), varargs...)
 }
 
 // DescribeRecoveryInstances mocks base method
@@ -1927,6 +2110,56 @@ func (m *MockDrsAPI) UpdateLaunchConfigurationRequest(arg0 *drs.UpdateLaunchConf
 func (mr *MockDrsAPIMockRecorder) UpdateLaunchConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLaunchConfigurationRequest", reflect.TypeOf((*MockDrsAPI)(nil).UpdateLaunchConfigurationRequest), arg0)
+}
+
+// UpdateLaunchConfigurationTemplate mocks base method
+func (m *MockDrsAPI) UpdateLaunchConfigurationTemplate(arg0 *drs.UpdateLaunchConfigurationTemplateInput) (*drs.UpdateLaunchConfigurationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLaunchConfigurationTemplate", arg0)
+	ret0, _ := ret[0].(*drs.UpdateLaunchConfigurationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLaunchConfigurationTemplate indicates an expected call of UpdateLaunchConfigurationTemplate
+func (mr *MockDrsAPIMockRecorder) UpdateLaunchConfigurationTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLaunchConfigurationTemplate", reflect.TypeOf((*MockDrsAPI)(nil).UpdateLaunchConfigurationTemplate), arg0)
+}
+
+// UpdateLaunchConfigurationTemplateRequest mocks base method
+func (m *MockDrsAPI) UpdateLaunchConfigurationTemplateRequest(arg0 *drs.UpdateLaunchConfigurationTemplateInput) (*request.Request, *drs.UpdateLaunchConfigurationTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLaunchConfigurationTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.UpdateLaunchConfigurationTemplateOutput)
+	return ret0, ret1
+}
+
+// UpdateLaunchConfigurationTemplateRequest indicates an expected call of UpdateLaunchConfigurationTemplateRequest
+func (mr *MockDrsAPIMockRecorder) UpdateLaunchConfigurationTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLaunchConfigurationTemplateRequest", reflect.TypeOf((*MockDrsAPI)(nil).UpdateLaunchConfigurationTemplateRequest), arg0)
+}
+
+// UpdateLaunchConfigurationTemplateWithContext mocks base method
+func (m *MockDrsAPI) UpdateLaunchConfigurationTemplateWithContext(arg0 context.Context, arg1 *drs.UpdateLaunchConfigurationTemplateInput, arg2 ...request.Option) (*drs.UpdateLaunchConfigurationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateLaunchConfigurationTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.UpdateLaunchConfigurationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLaunchConfigurationTemplateWithContext indicates an expected call of UpdateLaunchConfigurationTemplateWithContext
+func (mr *MockDrsAPIMockRecorder) UpdateLaunchConfigurationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLaunchConfigurationTemplateWithContext", reflect.TypeOf((*MockDrsAPI)(nil).UpdateLaunchConfigurationTemplateWithContext), varargs...)
 }
 
 // UpdateLaunchConfigurationWithContext mocks base method
