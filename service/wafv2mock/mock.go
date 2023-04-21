@@ -135,6 +135,56 @@ func (mr *MockWAFV2APIMockRecorder) CheckCapacityWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CheckCapacityWithContext", reflect.TypeOf((*MockWAFV2API)(nil).CheckCapacityWithContext), varargs...)
 }
 
+// CreateAPIKey mocks base method
+func (m *MockWAFV2API) CreateAPIKey(arg0 *wafv2.CreateAPIKeyInput) (*wafv2.CreateAPIKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAPIKey", arg0)
+	ret0, _ := ret[0].(*wafv2.CreateAPIKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAPIKey indicates an expected call of CreateAPIKey
+func (mr *MockWAFV2APIMockRecorder) CreateAPIKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAPIKey", reflect.TypeOf((*MockWAFV2API)(nil).CreateAPIKey), arg0)
+}
+
+// CreateAPIKeyRequest mocks base method
+func (m *MockWAFV2API) CreateAPIKeyRequest(arg0 *wafv2.CreateAPIKeyInput) (*request.Request, *wafv2.CreateAPIKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAPIKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wafv2.CreateAPIKeyOutput)
+	return ret0, ret1
+}
+
+// CreateAPIKeyRequest indicates an expected call of CreateAPIKeyRequest
+func (mr *MockWAFV2APIMockRecorder) CreateAPIKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAPIKeyRequest", reflect.TypeOf((*MockWAFV2API)(nil).CreateAPIKeyRequest), arg0)
+}
+
+// CreateAPIKeyWithContext mocks base method
+func (m *MockWAFV2API) CreateAPIKeyWithContext(arg0 context.Context, arg1 *wafv2.CreateAPIKeyInput, arg2 ...request.Option) (*wafv2.CreateAPIKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAPIKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*wafv2.CreateAPIKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAPIKeyWithContext indicates an expected call of CreateAPIKeyWithContext
+func (mr *MockWAFV2APIMockRecorder) CreateAPIKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAPIKeyWithContext", reflect.TypeOf((*MockWAFV2API)(nil).CreateAPIKeyWithContext), varargs...)
+}
+
 // CreateIPSet mocks base method
 func (m *MockWAFV2API) CreateIPSet(arg0 *wafv2.CreateIPSetInput) (*wafv2.CreateIPSetOutput, error) {
 	m.ctrl.T.Helper()
@@ -835,6 +885,56 @@ func (mr *MockWAFV2APIMockRecorder) GenerateMobileSdkReleaseUrlWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateMobileSdkReleaseUrlWithContext", reflect.TypeOf((*MockWAFV2API)(nil).GenerateMobileSdkReleaseUrlWithContext), varargs...)
 }
 
+// GetDecryptedAPIKey mocks base method
+func (m *MockWAFV2API) GetDecryptedAPIKey(arg0 *wafv2.GetDecryptedAPIKeyInput) (*wafv2.GetDecryptedAPIKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDecryptedAPIKey", arg0)
+	ret0, _ := ret[0].(*wafv2.GetDecryptedAPIKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDecryptedAPIKey indicates an expected call of GetDecryptedAPIKey
+func (mr *MockWAFV2APIMockRecorder) GetDecryptedAPIKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDecryptedAPIKey", reflect.TypeOf((*MockWAFV2API)(nil).GetDecryptedAPIKey), arg0)
+}
+
+// GetDecryptedAPIKeyRequest mocks base method
+func (m *MockWAFV2API) GetDecryptedAPIKeyRequest(arg0 *wafv2.GetDecryptedAPIKeyInput) (*request.Request, *wafv2.GetDecryptedAPIKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDecryptedAPIKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wafv2.GetDecryptedAPIKeyOutput)
+	return ret0, ret1
+}
+
+// GetDecryptedAPIKeyRequest indicates an expected call of GetDecryptedAPIKeyRequest
+func (mr *MockWAFV2APIMockRecorder) GetDecryptedAPIKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDecryptedAPIKeyRequest", reflect.TypeOf((*MockWAFV2API)(nil).GetDecryptedAPIKeyRequest), arg0)
+}
+
+// GetDecryptedAPIKeyWithContext mocks base method
+func (m *MockWAFV2API) GetDecryptedAPIKeyWithContext(arg0 context.Context, arg1 *wafv2.GetDecryptedAPIKeyInput, arg2 ...request.Option) (*wafv2.GetDecryptedAPIKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDecryptedAPIKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*wafv2.GetDecryptedAPIKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDecryptedAPIKeyWithContext indicates an expected call of GetDecryptedAPIKeyWithContext
+func (mr *MockWAFV2APIMockRecorder) GetDecryptedAPIKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDecryptedAPIKeyWithContext", reflect.TypeOf((*MockWAFV2API)(nil).GetDecryptedAPIKeyWithContext), varargs...)
+}
+
 // GetIPSet mocks base method
 func (m *MockWAFV2API) GetIPSet(arg0 *wafv2.GetIPSetInput) (*wafv2.GetIPSetOutput, error) {
 	m.ctrl.T.Helper()
@@ -1383,6 +1483,56 @@ func (mr *MockWAFV2APIMockRecorder) GetWebACLWithContext(arg0, arg1 interface{},
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetWebACLWithContext", reflect.TypeOf((*MockWAFV2API)(nil).GetWebACLWithContext), varargs...)
+}
+
+// ListAPIKeys mocks base method
+func (m *MockWAFV2API) ListAPIKeys(arg0 *wafv2.ListAPIKeysInput) (*wafv2.ListAPIKeysOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAPIKeys", arg0)
+	ret0, _ := ret[0].(*wafv2.ListAPIKeysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAPIKeys indicates an expected call of ListAPIKeys
+func (mr *MockWAFV2APIMockRecorder) ListAPIKeys(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAPIKeys", reflect.TypeOf((*MockWAFV2API)(nil).ListAPIKeys), arg0)
+}
+
+// ListAPIKeysRequest mocks base method
+func (m *MockWAFV2API) ListAPIKeysRequest(arg0 *wafv2.ListAPIKeysInput) (*request.Request, *wafv2.ListAPIKeysOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAPIKeysRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wafv2.ListAPIKeysOutput)
+	return ret0, ret1
+}
+
+// ListAPIKeysRequest indicates an expected call of ListAPIKeysRequest
+func (mr *MockWAFV2APIMockRecorder) ListAPIKeysRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAPIKeysRequest", reflect.TypeOf((*MockWAFV2API)(nil).ListAPIKeysRequest), arg0)
+}
+
+// ListAPIKeysWithContext mocks base method
+func (m *MockWAFV2API) ListAPIKeysWithContext(arg0 context.Context, arg1 *wafv2.ListAPIKeysInput, arg2 ...request.Option) (*wafv2.ListAPIKeysOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAPIKeysWithContext", varargs...)
+	ret0, _ := ret[0].(*wafv2.ListAPIKeysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAPIKeysWithContext indicates an expected call of ListAPIKeysWithContext
+func (mr *MockWAFV2APIMockRecorder) ListAPIKeysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAPIKeysWithContext", reflect.TypeOf((*MockWAFV2API)(nil).ListAPIKeysWithContext), varargs...)
 }
 
 // ListAvailableManagedRuleGroupVersions mocks base method

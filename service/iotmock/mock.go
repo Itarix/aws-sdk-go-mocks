@@ -8542,6 +8542,39 @@ func (mr *MockIoTAPIMockRecorder) ListManagedJobTemplates(arg0 interface{}) *gom
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedJobTemplates", reflect.TypeOf((*MockIoTAPI)(nil).ListManagedJobTemplates), arg0)
 }
 
+// ListManagedJobTemplatesPages mocks base method
+func (m *MockIoTAPI) ListManagedJobTemplatesPages(arg0 *iot.ListManagedJobTemplatesInput, arg1 func(*iot.ListManagedJobTemplatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListManagedJobTemplatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListManagedJobTemplatesPages indicates an expected call of ListManagedJobTemplatesPages
+func (mr *MockIoTAPIMockRecorder) ListManagedJobTemplatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedJobTemplatesPages", reflect.TypeOf((*MockIoTAPI)(nil).ListManagedJobTemplatesPages), arg0, arg1)
+}
+
+// ListManagedJobTemplatesPagesWithContext mocks base method
+func (m *MockIoTAPI) ListManagedJobTemplatesPagesWithContext(arg0 context.Context, arg1 *iot.ListManagedJobTemplatesInput, arg2 func(*iot.ListManagedJobTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListManagedJobTemplatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListManagedJobTemplatesPagesWithContext indicates an expected call of ListManagedJobTemplatesPagesWithContext
+func (mr *MockIoTAPIMockRecorder) ListManagedJobTemplatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedJobTemplatesPagesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListManagedJobTemplatesPagesWithContext), varargs...)
+}
+
 // ListManagedJobTemplatesRequest mocks base method
 func (m *MockIoTAPI) ListManagedJobTemplatesRequest(arg0 *iot.ListManagedJobTemplatesInput) (*request.Request, *iot.ListManagedJobTemplatesOutput) {
 	m.ctrl.T.Helper()
@@ -9470,6 +9503,39 @@ func (m *MockIoTAPI) ListRelatedResourcesForAuditFinding(arg0 *iot.ListRelatedRe
 func (mr *MockIoTAPIMockRecorder) ListRelatedResourcesForAuditFinding(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRelatedResourcesForAuditFinding", reflect.TypeOf((*MockIoTAPI)(nil).ListRelatedResourcesForAuditFinding), arg0)
+}
+
+// ListRelatedResourcesForAuditFindingPages mocks base method
+func (m *MockIoTAPI) ListRelatedResourcesForAuditFindingPages(arg0 *iot.ListRelatedResourcesForAuditFindingInput, arg1 func(*iot.ListRelatedResourcesForAuditFindingOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRelatedResourcesForAuditFindingPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRelatedResourcesForAuditFindingPages indicates an expected call of ListRelatedResourcesForAuditFindingPages
+func (mr *MockIoTAPIMockRecorder) ListRelatedResourcesForAuditFindingPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRelatedResourcesForAuditFindingPages", reflect.TypeOf((*MockIoTAPI)(nil).ListRelatedResourcesForAuditFindingPages), arg0, arg1)
+}
+
+// ListRelatedResourcesForAuditFindingPagesWithContext mocks base method
+func (m *MockIoTAPI) ListRelatedResourcesForAuditFindingPagesWithContext(arg0 context.Context, arg1 *iot.ListRelatedResourcesForAuditFindingInput, arg2 func(*iot.ListRelatedResourcesForAuditFindingOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRelatedResourcesForAuditFindingPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRelatedResourcesForAuditFindingPagesWithContext indicates an expected call of ListRelatedResourcesForAuditFindingPagesWithContext
+func (mr *MockIoTAPIMockRecorder) ListRelatedResourcesForAuditFindingPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRelatedResourcesForAuditFindingPagesWithContext", reflect.TypeOf((*MockIoTAPI)(nil).ListRelatedResourcesForAuditFindingPagesWithContext), varargs...)
 }
 
 // ListRelatedResourcesForAuditFindingRequest mocks base method
