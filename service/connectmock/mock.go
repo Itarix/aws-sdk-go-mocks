@@ -885,6 +885,56 @@ func (mr *MockConnectAPIMockRecorder) CreateIntegrationAssociationWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIntegrationAssociationWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateIntegrationAssociationWithContext), varargs...)
 }
 
+// CreateParticipant mocks base method
+func (m *MockConnectAPI) CreateParticipant(arg0 *connect.CreateParticipantInput) (*connect.CreateParticipantOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateParticipant", arg0)
+	ret0, _ := ret[0].(*connect.CreateParticipantOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateParticipant indicates an expected call of CreateParticipant
+func (mr *MockConnectAPIMockRecorder) CreateParticipant(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateParticipant", reflect.TypeOf((*MockConnectAPI)(nil).CreateParticipant), arg0)
+}
+
+// CreateParticipantRequest mocks base method
+func (m *MockConnectAPI) CreateParticipantRequest(arg0 *connect.CreateParticipantInput) (*request.Request, *connect.CreateParticipantOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateParticipantRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.CreateParticipantOutput)
+	return ret0, ret1
+}
+
+// CreateParticipantRequest indicates an expected call of CreateParticipantRequest
+func (mr *MockConnectAPIMockRecorder) CreateParticipantRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateParticipantRequest", reflect.TypeOf((*MockConnectAPI)(nil).CreateParticipantRequest), arg0)
+}
+
+// CreateParticipantWithContext mocks base method
+func (m *MockConnectAPI) CreateParticipantWithContext(arg0 context.Context, arg1 *connect.CreateParticipantInput, arg2 ...request.Option) (*connect.CreateParticipantOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateParticipantWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.CreateParticipantOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateParticipantWithContext indicates an expected call of CreateParticipantWithContext
+func (mr *MockConnectAPIMockRecorder) CreateParticipantWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateParticipantWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateParticipantWithContext), varargs...)
+}
+
 // CreateQueue mocks base method
 func (m *MockConnectAPI) CreateQueue(arg0 *connect.CreateQueueInput) (*connect.CreateQueueOutput, error) {
 	m.ctrl.T.Helper()

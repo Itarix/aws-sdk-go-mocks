@@ -635,6 +635,56 @@ func (mr *MockFMSAPIMockRecorder) GetAdminAccountWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdminAccountWithContext", reflect.TypeOf((*MockFMSAPI)(nil).GetAdminAccountWithContext), varargs...)
 }
 
+// GetAdminScope mocks base method
+func (m *MockFMSAPI) GetAdminScope(arg0 *fms.GetAdminScopeInput) (*fms.GetAdminScopeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAdminScope", arg0)
+	ret0, _ := ret[0].(*fms.GetAdminScopeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAdminScope indicates an expected call of GetAdminScope
+func (mr *MockFMSAPIMockRecorder) GetAdminScope(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdminScope", reflect.TypeOf((*MockFMSAPI)(nil).GetAdminScope), arg0)
+}
+
+// GetAdminScopeRequest mocks base method
+func (m *MockFMSAPI) GetAdminScopeRequest(arg0 *fms.GetAdminScopeInput) (*request.Request, *fms.GetAdminScopeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAdminScopeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.GetAdminScopeOutput)
+	return ret0, ret1
+}
+
+// GetAdminScopeRequest indicates an expected call of GetAdminScopeRequest
+func (mr *MockFMSAPIMockRecorder) GetAdminScopeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdminScopeRequest", reflect.TypeOf((*MockFMSAPI)(nil).GetAdminScopeRequest), arg0)
+}
+
+// GetAdminScopeWithContext mocks base method
+func (m *MockFMSAPI) GetAdminScopeWithContext(arg0 context.Context, arg1 *fms.GetAdminScopeInput, arg2 ...request.Option) (*fms.GetAdminScopeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAdminScopeWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.GetAdminScopeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAdminScopeWithContext indicates an expected call of GetAdminScopeWithContext
+func (mr *MockFMSAPIMockRecorder) GetAdminScopeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdminScopeWithContext", reflect.TypeOf((*MockFMSAPI)(nil).GetAdminScopeWithContext), varargs...)
+}
+
 // GetAppsList mocks base method
 func (m *MockFMSAPI) GetAppsList(arg0 *fms.GetAppsListInput) (*fms.GetAppsListOutput, error) {
 	m.ctrl.T.Helper()
@@ -1083,6 +1133,172 @@ func (mr *MockFMSAPIMockRecorder) GetViolationDetailsWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetViolationDetailsWithContext", reflect.TypeOf((*MockFMSAPI)(nil).GetViolationDetailsWithContext), varargs...)
+}
+
+// ListAdminAccountsForOrganization mocks base method
+func (m *MockFMSAPI) ListAdminAccountsForOrganization(arg0 *fms.ListAdminAccountsForOrganizationInput) (*fms.ListAdminAccountsForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAdminAccountsForOrganization", arg0)
+	ret0, _ := ret[0].(*fms.ListAdminAccountsForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAdminAccountsForOrganization indicates an expected call of ListAdminAccountsForOrganization
+func (mr *MockFMSAPIMockRecorder) ListAdminAccountsForOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdminAccountsForOrganization", reflect.TypeOf((*MockFMSAPI)(nil).ListAdminAccountsForOrganization), arg0)
+}
+
+// ListAdminAccountsForOrganizationPages mocks base method
+func (m *MockFMSAPI) ListAdminAccountsForOrganizationPages(arg0 *fms.ListAdminAccountsForOrganizationInput, arg1 func(*fms.ListAdminAccountsForOrganizationOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAdminAccountsForOrganizationPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAdminAccountsForOrganizationPages indicates an expected call of ListAdminAccountsForOrganizationPages
+func (mr *MockFMSAPIMockRecorder) ListAdminAccountsForOrganizationPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdminAccountsForOrganizationPages", reflect.TypeOf((*MockFMSAPI)(nil).ListAdminAccountsForOrganizationPages), arg0, arg1)
+}
+
+// ListAdminAccountsForOrganizationPagesWithContext mocks base method
+func (m *MockFMSAPI) ListAdminAccountsForOrganizationPagesWithContext(arg0 context.Context, arg1 *fms.ListAdminAccountsForOrganizationInput, arg2 func(*fms.ListAdminAccountsForOrganizationOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAdminAccountsForOrganizationPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAdminAccountsForOrganizationPagesWithContext indicates an expected call of ListAdminAccountsForOrganizationPagesWithContext
+func (mr *MockFMSAPIMockRecorder) ListAdminAccountsForOrganizationPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdminAccountsForOrganizationPagesWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListAdminAccountsForOrganizationPagesWithContext), varargs...)
+}
+
+// ListAdminAccountsForOrganizationRequest mocks base method
+func (m *MockFMSAPI) ListAdminAccountsForOrganizationRequest(arg0 *fms.ListAdminAccountsForOrganizationInput) (*request.Request, *fms.ListAdminAccountsForOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAdminAccountsForOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.ListAdminAccountsForOrganizationOutput)
+	return ret0, ret1
+}
+
+// ListAdminAccountsForOrganizationRequest indicates an expected call of ListAdminAccountsForOrganizationRequest
+func (mr *MockFMSAPIMockRecorder) ListAdminAccountsForOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdminAccountsForOrganizationRequest", reflect.TypeOf((*MockFMSAPI)(nil).ListAdminAccountsForOrganizationRequest), arg0)
+}
+
+// ListAdminAccountsForOrganizationWithContext mocks base method
+func (m *MockFMSAPI) ListAdminAccountsForOrganizationWithContext(arg0 context.Context, arg1 *fms.ListAdminAccountsForOrganizationInput, arg2 ...request.Option) (*fms.ListAdminAccountsForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAdminAccountsForOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.ListAdminAccountsForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAdminAccountsForOrganizationWithContext indicates an expected call of ListAdminAccountsForOrganizationWithContext
+func (mr *MockFMSAPIMockRecorder) ListAdminAccountsForOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdminAccountsForOrganizationWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListAdminAccountsForOrganizationWithContext), varargs...)
+}
+
+// ListAdminsManagingAccount mocks base method
+func (m *MockFMSAPI) ListAdminsManagingAccount(arg0 *fms.ListAdminsManagingAccountInput) (*fms.ListAdminsManagingAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAdminsManagingAccount", arg0)
+	ret0, _ := ret[0].(*fms.ListAdminsManagingAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAdminsManagingAccount indicates an expected call of ListAdminsManagingAccount
+func (mr *MockFMSAPIMockRecorder) ListAdminsManagingAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdminsManagingAccount", reflect.TypeOf((*MockFMSAPI)(nil).ListAdminsManagingAccount), arg0)
+}
+
+// ListAdminsManagingAccountPages mocks base method
+func (m *MockFMSAPI) ListAdminsManagingAccountPages(arg0 *fms.ListAdminsManagingAccountInput, arg1 func(*fms.ListAdminsManagingAccountOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAdminsManagingAccountPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAdminsManagingAccountPages indicates an expected call of ListAdminsManagingAccountPages
+func (mr *MockFMSAPIMockRecorder) ListAdminsManagingAccountPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdminsManagingAccountPages", reflect.TypeOf((*MockFMSAPI)(nil).ListAdminsManagingAccountPages), arg0, arg1)
+}
+
+// ListAdminsManagingAccountPagesWithContext mocks base method
+func (m *MockFMSAPI) ListAdminsManagingAccountPagesWithContext(arg0 context.Context, arg1 *fms.ListAdminsManagingAccountInput, arg2 func(*fms.ListAdminsManagingAccountOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAdminsManagingAccountPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAdminsManagingAccountPagesWithContext indicates an expected call of ListAdminsManagingAccountPagesWithContext
+func (mr *MockFMSAPIMockRecorder) ListAdminsManagingAccountPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdminsManagingAccountPagesWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListAdminsManagingAccountPagesWithContext), varargs...)
+}
+
+// ListAdminsManagingAccountRequest mocks base method
+func (m *MockFMSAPI) ListAdminsManagingAccountRequest(arg0 *fms.ListAdminsManagingAccountInput) (*request.Request, *fms.ListAdminsManagingAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAdminsManagingAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.ListAdminsManagingAccountOutput)
+	return ret0, ret1
+}
+
+// ListAdminsManagingAccountRequest indicates an expected call of ListAdminsManagingAccountRequest
+func (mr *MockFMSAPIMockRecorder) ListAdminsManagingAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdminsManagingAccountRequest", reflect.TypeOf((*MockFMSAPI)(nil).ListAdminsManagingAccountRequest), arg0)
+}
+
+// ListAdminsManagingAccountWithContext mocks base method
+func (m *MockFMSAPI) ListAdminsManagingAccountWithContext(arg0 context.Context, arg1 *fms.ListAdminsManagingAccountInput, arg2 ...request.Option) (*fms.ListAdminsManagingAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAdminsManagingAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.ListAdminsManagingAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAdminsManagingAccountWithContext indicates an expected call of ListAdminsManagingAccountWithContext
+func (mr *MockFMSAPIMockRecorder) ListAdminsManagingAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdminsManagingAccountWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListAdminsManagingAccountWithContext), varargs...)
 }
 
 // ListAppsLists mocks base method
@@ -1781,6 +1997,56 @@ func (mr *MockFMSAPIMockRecorder) ListThirdPartyFirewallFirewallPoliciesWithCont
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThirdPartyFirewallFirewallPoliciesWithContext", reflect.TypeOf((*MockFMSAPI)(nil).ListThirdPartyFirewallFirewallPoliciesWithContext), varargs...)
+}
+
+// PutAdminAccount mocks base method
+func (m *MockFMSAPI) PutAdminAccount(arg0 *fms.PutAdminAccountInput) (*fms.PutAdminAccountOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAdminAccount", arg0)
+	ret0, _ := ret[0].(*fms.PutAdminAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAdminAccount indicates an expected call of PutAdminAccount
+func (mr *MockFMSAPIMockRecorder) PutAdminAccount(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAdminAccount", reflect.TypeOf((*MockFMSAPI)(nil).PutAdminAccount), arg0)
+}
+
+// PutAdminAccountRequest mocks base method
+func (m *MockFMSAPI) PutAdminAccountRequest(arg0 *fms.PutAdminAccountInput) (*request.Request, *fms.PutAdminAccountOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAdminAccountRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fms.PutAdminAccountOutput)
+	return ret0, ret1
+}
+
+// PutAdminAccountRequest indicates an expected call of PutAdminAccountRequest
+func (mr *MockFMSAPIMockRecorder) PutAdminAccountRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAdminAccountRequest", reflect.TypeOf((*MockFMSAPI)(nil).PutAdminAccountRequest), arg0)
+}
+
+// PutAdminAccountWithContext mocks base method
+func (m *MockFMSAPI) PutAdminAccountWithContext(arg0 context.Context, arg1 *fms.PutAdminAccountInput, arg2 ...request.Option) (*fms.PutAdminAccountOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAdminAccountWithContext", varargs...)
+	ret0, _ := ret[0].(*fms.PutAdminAccountOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAdminAccountWithContext indicates an expected call of PutAdminAccountWithContext
+func (mr *MockFMSAPIMockRecorder) PutAdminAccountWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAdminAccountWithContext", reflect.TypeOf((*MockFMSAPI)(nil).PutAdminAccountWithContext), varargs...)
 }
 
 // PutAppsList mocks base method
