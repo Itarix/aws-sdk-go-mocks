@@ -35,6 +35,56 @@ func (m *MockDataSyncAPI) EXPECT() *MockDataSyncAPIMockRecorder {
 	return m.recorder
 }
 
+// AddStorageSystem mocks base method
+func (m *MockDataSyncAPI) AddStorageSystem(arg0 *datasync.AddStorageSystemInput) (*datasync.AddStorageSystemOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddStorageSystem", arg0)
+	ret0, _ := ret[0].(*datasync.AddStorageSystemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddStorageSystem indicates an expected call of AddStorageSystem
+func (mr *MockDataSyncAPIMockRecorder) AddStorageSystem(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddStorageSystem", reflect.TypeOf((*MockDataSyncAPI)(nil).AddStorageSystem), arg0)
+}
+
+// AddStorageSystemRequest mocks base method
+func (m *MockDataSyncAPI) AddStorageSystemRequest(arg0 *datasync.AddStorageSystemInput) (*request.Request, *datasync.AddStorageSystemOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddStorageSystemRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.AddStorageSystemOutput)
+	return ret0, ret1
+}
+
+// AddStorageSystemRequest indicates an expected call of AddStorageSystemRequest
+func (mr *MockDataSyncAPIMockRecorder) AddStorageSystemRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddStorageSystemRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).AddStorageSystemRequest), arg0)
+}
+
+// AddStorageSystemWithContext mocks base method
+func (m *MockDataSyncAPI) AddStorageSystemWithContext(arg0 context.Context, arg1 *datasync.AddStorageSystemInput, arg2 ...request.Option) (*datasync.AddStorageSystemOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AddStorageSystemWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.AddStorageSystemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddStorageSystemWithContext indicates an expected call of AddStorageSystemWithContext
+func (mr *MockDataSyncAPIMockRecorder) AddStorageSystemWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddStorageSystemWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).AddStorageSystemWithContext), varargs...)
+}
+
 // CancelTaskExecution mocks base method
 func (m *MockDataSyncAPI) CancelTaskExecution(arg0 *datasync.CancelTaskExecutionInput) (*datasync.CancelTaskExecutionOutput, error) {
 	m.ctrl.T.Helper()
@@ -885,6 +935,56 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeAgentWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAgentWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeAgentWithContext), varargs...)
 }
 
+// DescribeDiscoveryJob mocks base method
+func (m *MockDataSyncAPI) DescribeDiscoveryJob(arg0 *datasync.DescribeDiscoveryJobInput) (*datasync.DescribeDiscoveryJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDiscoveryJob", arg0)
+	ret0, _ := ret[0].(*datasync.DescribeDiscoveryJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDiscoveryJob indicates an expected call of DescribeDiscoveryJob
+func (mr *MockDataSyncAPIMockRecorder) DescribeDiscoveryJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDiscoveryJob", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeDiscoveryJob), arg0)
+}
+
+// DescribeDiscoveryJobRequest mocks base method
+func (m *MockDataSyncAPI) DescribeDiscoveryJobRequest(arg0 *datasync.DescribeDiscoveryJobInput) (*request.Request, *datasync.DescribeDiscoveryJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDiscoveryJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.DescribeDiscoveryJobOutput)
+	return ret0, ret1
+}
+
+// DescribeDiscoveryJobRequest indicates an expected call of DescribeDiscoveryJobRequest
+func (mr *MockDataSyncAPIMockRecorder) DescribeDiscoveryJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDiscoveryJobRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeDiscoveryJobRequest), arg0)
+}
+
+// DescribeDiscoveryJobWithContext mocks base method
+func (m *MockDataSyncAPI) DescribeDiscoveryJobWithContext(arg0 context.Context, arg1 *datasync.DescribeDiscoveryJobInput, arg2 ...request.Option) (*datasync.DescribeDiscoveryJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDiscoveryJobWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.DescribeDiscoveryJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDiscoveryJobWithContext indicates an expected call of DescribeDiscoveryJobWithContext
+func (mr *MockDataSyncAPIMockRecorder) DescribeDiscoveryJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDiscoveryJobWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeDiscoveryJobWithContext), varargs...)
+}
+
 // DescribeLocationEfs mocks base method
 func (m *MockDataSyncAPI) DescribeLocationEfs(arg0 *datasync.DescribeLocationEfsInput) (*datasync.DescribeLocationEfsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1385,6 +1485,222 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeLocationSmbWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationSmbWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationSmbWithContext), varargs...)
 }
 
+// DescribeStorageSystem mocks base method
+func (m *MockDataSyncAPI) DescribeStorageSystem(arg0 *datasync.DescribeStorageSystemInput) (*datasync.DescribeStorageSystemOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStorageSystem", arg0)
+	ret0, _ := ret[0].(*datasync.DescribeStorageSystemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStorageSystem indicates an expected call of DescribeStorageSystem
+func (mr *MockDataSyncAPIMockRecorder) DescribeStorageSystem(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageSystem", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeStorageSystem), arg0)
+}
+
+// DescribeStorageSystemRequest mocks base method
+func (m *MockDataSyncAPI) DescribeStorageSystemRequest(arg0 *datasync.DescribeStorageSystemInput) (*request.Request, *datasync.DescribeStorageSystemOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStorageSystemRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.DescribeStorageSystemOutput)
+	return ret0, ret1
+}
+
+// DescribeStorageSystemRequest indicates an expected call of DescribeStorageSystemRequest
+func (mr *MockDataSyncAPIMockRecorder) DescribeStorageSystemRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageSystemRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeStorageSystemRequest), arg0)
+}
+
+// DescribeStorageSystemResourceMetrics mocks base method
+func (m *MockDataSyncAPI) DescribeStorageSystemResourceMetrics(arg0 *datasync.DescribeStorageSystemResourceMetricsInput) (*datasync.DescribeStorageSystemResourceMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStorageSystemResourceMetrics", arg0)
+	ret0, _ := ret[0].(*datasync.DescribeStorageSystemResourceMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStorageSystemResourceMetrics indicates an expected call of DescribeStorageSystemResourceMetrics
+func (mr *MockDataSyncAPIMockRecorder) DescribeStorageSystemResourceMetrics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageSystemResourceMetrics", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeStorageSystemResourceMetrics), arg0)
+}
+
+// DescribeStorageSystemResourceMetricsPages mocks base method
+func (m *MockDataSyncAPI) DescribeStorageSystemResourceMetricsPages(arg0 *datasync.DescribeStorageSystemResourceMetricsInput, arg1 func(*datasync.DescribeStorageSystemResourceMetricsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStorageSystemResourceMetricsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeStorageSystemResourceMetricsPages indicates an expected call of DescribeStorageSystemResourceMetricsPages
+func (mr *MockDataSyncAPIMockRecorder) DescribeStorageSystemResourceMetricsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageSystemResourceMetricsPages", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeStorageSystemResourceMetricsPages), arg0, arg1)
+}
+
+// DescribeStorageSystemResourceMetricsPagesWithContext mocks base method
+func (m *MockDataSyncAPI) DescribeStorageSystemResourceMetricsPagesWithContext(arg0 context.Context, arg1 *datasync.DescribeStorageSystemResourceMetricsInput, arg2 func(*datasync.DescribeStorageSystemResourceMetricsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeStorageSystemResourceMetricsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeStorageSystemResourceMetricsPagesWithContext indicates an expected call of DescribeStorageSystemResourceMetricsPagesWithContext
+func (mr *MockDataSyncAPIMockRecorder) DescribeStorageSystemResourceMetricsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageSystemResourceMetricsPagesWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeStorageSystemResourceMetricsPagesWithContext), varargs...)
+}
+
+// DescribeStorageSystemResourceMetricsRequest mocks base method
+func (m *MockDataSyncAPI) DescribeStorageSystemResourceMetricsRequest(arg0 *datasync.DescribeStorageSystemResourceMetricsInput) (*request.Request, *datasync.DescribeStorageSystemResourceMetricsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStorageSystemResourceMetricsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.DescribeStorageSystemResourceMetricsOutput)
+	return ret0, ret1
+}
+
+// DescribeStorageSystemResourceMetricsRequest indicates an expected call of DescribeStorageSystemResourceMetricsRequest
+func (mr *MockDataSyncAPIMockRecorder) DescribeStorageSystemResourceMetricsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageSystemResourceMetricsRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeStorageSystemResourceMetricsRequest), arg0)
+}
+
+// DescribeStorageSystemResourceMetricsWithContext mocks base method
+func (m *MockDataSyncAPI) DescribeStorageSystemResourceMetricsWithContext(arg0 context.Context, arg1 *datasync.DescribeStorageSystemResourceMetricsInput, arg2 ...request.Option) (*datasync.DescribeStorageSystemResourceMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeStorageSystemResourceMetricsWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.DescribeStorageSystemResourceMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStorageSystemResourceMetricsWithContext indicates an expected call of DescribeStorageSystemResourceMetricsWithContext
+func (mr *MockDataSyncAPIMockRecorder) DescribeStorageSystemResourceMetricsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageSystemResourceMetricsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeStorageSystemResourceMetricsWithContext), varargs...)
+}
+
+// DescribeStorageSystemResources mocks base method
+func (m *MockDataSyncAPI) DescribeStorageSystemResources(arg0 *datasync.DescribeStorageSystemResourcesInput) (*datasync.DescribeStorageSystemResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStorageSystemResources", arg0)
+	ret0, _ := ret[0].(*datasync.DescribeStorageSystemResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStorageSystemResources indicates an expected call of DescribeStorageSystemResources
+func (mr *MockDataSyncAPIMockRecorder) DescribeStorageSystemResources(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageSystemResources", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeStorageSystemResources), arg0)
+}
+
+// DescribeStorageSystemResourcesPages mocks base method
+func (m *MockDataSyncAPI) DescribeStorageSystemResourcesPages(arg0 *datasync.DescribeStorageSystemResourcesInput, arg1 func(*datasync.DescribeStorageSystemResourcesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStorageSystemResourcesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeStorageSystemResourcesPages indicates an expected call of DescribeStorageSystemResourcesPages
+func (mr *MockDataSyncAPIMockRecorder) DescribeStorageSystemResourcesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageSystemResourcesPages", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeStorageSystemResourcesPages), arg0, arg1)
+}
+
+// DescribeStorageSystemResourcesPagesWithContext mocks base method
+func (m *MockDataSyncAPI) DescribeStorageSystemResourcesPagesWithContext(arg0 context.Context, arg1 *datasync.DescribeStorageSystemResourcesInput, arg2 func(*datasync.DescribeStorageSystemResourcesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeStorageSystemResourcesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeStorageSystemResourcesPagesWithContext indicates an expected call of DescribeStorageSystemResourcesPagesWithContext
+func (mr *MockDataSyncAPIMockRecorder) DescribeStorageSystemResourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageSystemResourcesPagesWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeStorageSystemResourcesPagesWithContext), varargs...)
+}
+
+// DescribeStorageSystemResourcesRequest mocks base method
+func (m *MockDataSyncAPI) DescribeStorageSystemResourcesRequest(arg0 *datasync.DescribeStorageSystemResourcesInput) (*request.Request, *datasync.DescribeStorageSystemResourcesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStorageSystemResourcesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.DescribeStorageSystemResourcesOutput)
+	return ret0, ret1
+}
+
+// DescribeStorageSystemResourcesRequest indicates an expected call of DescribeStorageSystemResourcesRequest
+func (mr *MockDataSyncAPIMockRecorder) DescribeStorageSystemResourcesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageSystemResourcesRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeStorageSystemResourcesRequest), arg0)
+}
+
+// DescribeStorageSystemResourcesWithContext mocks base method
+func (m *MockDataSyncAPI) DescribeStorageSystemResourcesWithContext(arg0 context.Context, arg1 *datasync.DescribeStorageSystemResourcesInput, arg2 ...request.Option) (*datasync.DescribeStorageSystemResourcesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeStorageSystemResourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.DescribeStorageSystemResourcesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStorageSystemResourcesWithContext indicates an expected call of DescribeStorageSystemResourcesWithContext
+func (mr *MockDataSyncAPIMockRecorder) DescribeStorageSystemResourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageSystemResourcesWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeStorageSystemResourcesWithContext), varargs...)
+}
+
+// DescribeStorageSystemWithContext mocks base method
+func (m *MockDataSyncAPI) DescribeStorageSystemWithContext(arg0 context.Context, arg1 *datasync.DescribeStorageSystemInput, arg2 ...request.Option) (*datasync.DescribeStorageSystemOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeStorageSystemWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.DescribeStorageSystemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStorageSystemWithContext indicates an expected call of DescribeStorageSystemWithContext
+func (mr *MockDataSyncAPIMockRecorder) DescribeStorageSystemWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStorageSystemWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeStorageSystemWithContext), varargs...)
+}
+
 // DescribeTask mocks base method
 func (m *MockDataSyncAPI) DescribeTask(arg0 *datasync.DescribeTaskInput) (*datasync.DescribeTaskOutput, error) {
 	m.ctrl.T.Helper()
@@ -1485,6 +1801,56 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeTaskWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTaskWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeTaskWithContext), varargs...)
 }
 
+// GenerateRecommendations mocks base method
+func (m *MockDataSyncAPI) GenerateRecommendations(arg0 *datasync.GenerateRecommendationsInput) (*datasync.GenerateRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GenerateRecommendations", arg0)
+	ret0, _ := ret[0].(*datasync.GenerateRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GenerateRecommendations indicates an expected call of GenerateRecommendations
+func (mr *MockDataSyncAPIMockRecorder) GenerateRecommendations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateRecommendations", reflect.TypeOf((*MockDataSyncAPI)(nil).GenerateRecommendations), arg0)
+}
+
+// GenerateRecommendationsRequest mocks base method
+func (m *MockDataSyncAPI) GenerateRecommendationsRequest(arg0 *datasync.GenerateRecommendationsInput) (*request.Request, *datasync.GenerateRecommendationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GenerateRecommendationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.GenerateRecommendationsOutput)
+	return ret0, ret1
+}
+
+// GenerateRecommendationsRequest indicates an expected call of GenerateRecommendationsRequest
+func (mr *MockDataSyncAPIMockRecorder) GenerateRecommendationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateRecommendationsRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).GenerateRecommendationsRequest), arg0)
+}
+
+// GenerateRecommendationsWithContext mocks base method
+func (m *MockDataSyncAPI) GenerateRecommendationsWithContext(arg0 context.Context, arg1 *datasync.GenerateRecommendationsInput, arg2 ...request.Option) (*datasync.GenerateRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GenerateRecommendationsWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.GenerateRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GenerateRecommendationsWithContext indicates an expected call of GenerateRecommendationsWithContext
+func (mr *MockDataSyncAPIMockRecorder) GenerateRecommendationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GenerateRecommendationsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).GenerateRecommendationsWithContext), varargs...)
+}
+
 // ListAgents mocks base method
 func (m *MockDataSyncAPI) ListAgents(arg0 *datasync.ListAgentsInput) (*datasync.ListAgentsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1568,6 +1934,89 @@ func (mr *MockDataSyncAPIMockRecorder) ListAgentsWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAgentsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).ListAgentsWithContext), varargs...)
 }
 
+// ListDiscoveryJobs mocks base method
+func (m *MockDataSyncAPI) ListDiscoveryJobs(arg0 *datasync.ListDiscoveryJobsInput) (*datasync.ListDiscoveryJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDiscoveryJobs", arg0)
+	ret0, _ := ret[0].(*datasync.ListDiscoveryJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDiscoveryJobs indicates an expected call of ListDiscoveryJobs
+func (mr *MockDataSyncAPIMockRecorder) ListDiscoveryJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveryJobs", reflect.TypeOf((*MockDataSyncAPI)(nil).ListDiscoveryJobs), arg0)
+}
+
+// ListDiscoveryJobsPages mocks base method
+func (m *MockDataSyncAPI) ListDiscoveryJobsPages(arg0 *datasync.ListDiscoveryJobsInput, arg1 func(*datasync.ListDiscoveryJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDiscoveryJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDiscoveryJobsPages indicates an expected call of ListDiscoveryJobsPages
+func (mr *MockDataSyncAPIMockRecorder) ListDiscoveryJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveryJobsPages", reflect.TypeOf((*MockDataSyncAPI)(nil).ListDiscoveryJobsPages), arg0, arg1)
+}
+
+// ListDiscoveryJobsPagesWithContext mocks base method
+func (m *MockDataSyncAPI) ListDiscoveryJobsPagesWithContext(arg0 context.Context, arg1 *datasync.ListDiscoveryJobsInput, arg2 func(*datasync.ListDiscoveryJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDiscoveryJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDiscoveryJobsPagesWithContext indicates an expected call of ListDiscoveryJobsPagesWithContext
+func (mr *MockDataSyncAPIMockRecorder) ListDiscoveryJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveryJobsPagesWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).ListDiscoveryJobsPagesWithContext), varargs...)
+}
+
+// ListDiscoveryJobsRequest mocks base method
+func (m *MockDataSyncAPI) ListDiscoveryJobsRequest(arg0 *datasync.ListDiscoveryJobsInput) (*request.Request, *datasync.ListDiscoveryJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDiscoveryJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.ListDiscoveryJobsOutput)
+	return ret0, ret1
+}
+
+// ListDiscoveryJobsRequest indicates an expected call of ListDiscoveryJobsRequest
+func (mr *MockDataSyncAPIMockRecorder) ListDiscoveryJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveryJobsRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).ListDiscoveryJobsRequest), arg0)
+}
+
+// ListDiscoveryJobsWithContext mocks base method
+func (m *MockDataSyncAPI) ListDiscoveryJobsWithContext(arg0 context.Context, arg1 *datasync.ListDiscoveryJobsInput, arg2 ...request.Option) (*datasync.ListDiscoveryJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDiscoveryJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.ListDiscoveryJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDiscoveryJobsWithContext indicates an expected call of ListDiscoveryJobsWithContext
+func (mr *MockDataSyncAPIMockRecorder) ListDiscoveryJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDiscoveryJobsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).ListDiscoveryJobsWithContext), varargs...)
+}
+
 // ListLocations mocks base method
 func (m *MockDataSyncAPI) ListLocations(arg0 *datasync.ListLocationsInput) (*datasync.ListLocationsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1649,6 +2098,89 @@ func (mr *MockDataSyncAPIMockRecorder) ListLocationsWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLocationsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).ListLocationsWithContext), varargs...)
+}
+
+// ListStorageSystems mocks base method
+func (m *MockDataSyncAPI) ListStorageSystems(arg0 *datasync.ListStorageSystemsInput) (*datasync.ListStorageSystemsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStorageSystems", arg0)
+	ret0, _ := ret[0].(*datasync.ListStorageSystemsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStorageSystems indicates an expected call of ListStorageSystems
+func (mr *MockDataSyncAPIMockRecorder) ListStorageSystems(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStorageSystems", reflect.TypeOf((*MockDataSyncAPI)(nil).ListStorageSystems), arg0)
+}
+
+// ListStorageSystemsPages mocks base method
+func (m *MockDataSyncAPI) ListStorageSystemsPages(arg0 *datasync.ListStorageSystemsInput, arg1 func(*datasync.ListStorageSystemsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStorageSystemsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStorageSystemsPages indicates an expected call of ListStorageSystemsPages
+func (mr *MockDataSyncAPIMockRecorder) ListStorageSystemsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStorageSystemsPages", reflect.TypeOf((*MockDataSyncAPI)(nil).ListStorageSystemsPages), arg0, arg1)
+}
+
+// ListStorageSystemsPagesWithContext mocks base method
+func (m *MockDataSyncAPI) ListStorageSystemsPagesWithContext(arg0 context.Context, arg1 *datasync.ListStorageSystemsInput, arg2 func(*datasync.ListStorageSystemsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStorageSystemsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStorageSystemsPagesWithContext indicates an expected call of ListStorageSystemsPagesWithContext
+func (mr *MockDataSyncAPIMockRecorder) ListStorageSystemsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStorageSystemsPagesWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).ListStorageSystemsPagesWithContext), varargs...)
+}
+
+// ListStorageSystemsRequest mocks base method
+func (m *MockDataSyncAPI) ListStorageSystemsRequest(arg0 *datasync.ListStorageSystemsInput) (*request.Request, *datasync.ListStorageSystemsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStorageSystemsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.ListStorageSystemsOutput)
+	return ret0, ret1
+}
+
+// ListStorageSystemsRequest indicates an expected call of ListStorageSystemsRequest
+func (mr *MockDataSyncAPIMockRecorder) ListStorageSystemsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStorageSystemsRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).ListStorageSystemsRequest), arg0)
+}
+
+// ListStorageSystemsWithContext mocks base method
+func (m *MockDataSyncAPI) ListStorageSystemsWithContext(arg0 context.Context, arg1 *datasync.ListStorageSystemsInput, arg2 ...request.Option) (*datasync.ListStorageSystemsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStorageSystemsWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.ListStorageSystemsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStorageSystemsWithContext indicates an expected call of ListStorageSystemsWithContext
+func (mr *MockDataSyncAPIMockRecorder) ListStorageSystemsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStorageSystemsWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).ListStorageSystemsWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
@@ -1900,6 +2432,106 @@ func (mr *MockDataSyncAPIMockRecorder) ListTasksWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTasksWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).ListTasksWithContext), varargs...)
 }
 
+// RemoveStorageSystem mocks base method
+func (m *MockDataSyncAPI) RemoveStorageSystem(arg0 *datasync.RemoveStorageSystemInput) (*datasync.RemoveStorageSystemOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveStorageSystem", arg0)
+	ret0, _ := ret[0].(*datasync.RemoveStorageSystemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveStorageSystem indicates an expected call of RemoveStorageSystem
+func (mr *MockDataSyncAPIMockRecorder) RemoveStorageSystem(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveStorageSystem", reflect.TypeOf((*MockDataSyncAPI)(nil).RemoveStorageSystem), arg0)
+}
+
+// RemoveStorageSystemRequest mocks base method
+func (m *MockDataSyncAPI) RemoveStorageSystemRequest(arg0 *datasync.RemoveStorageSystemInput) (*request.Request, *datasync.RemoveStorageSystemOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveStorageSystemRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.RemoveStorageSystemOutput)
+	return ret0, ret1
+}
+
+// RemoveStorageSystemRequest indicates an expected call of RemoveStorageSystemRequest
+func (mr *MockDataSyncAPIMockRecorder) RemoveStorageSystemRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveStorageSystemRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).RemoveStorageSystemRequest), arg0)
+}
+
+// RemoveStorageSystemWithContext mocks base method
+func (m *MockDataSyncAPI) RemoveStorageSystemWithContext(arg0 context.Context, arg1 *datasync.RemoveStorageSystemInput, arg2 ...request.Option) (*datasync.RemoveStorageSystemOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveStorageSystemWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.RemoveStorageSystemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveStorageSystemWithContext indicates an expected call of RemoveStorageSystemWithContext
+func (mr *MockDataSyncAPIMockRecorder) RemoveStorageSystemWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveStorageSystemWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).RemoveStorageSystemWithContext), varargs...)
+}
+
+// StartDiscoveryJob mocks base method
+func (m *MockDataSyncAPI) StartDiscoveryJob(arg0 *datasync.StartDiscoveryJobInput) (*datasync.StartDiscoveryJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDiscoveryJob", arg0)
+	ret0, _ := ret[0].(*datasync.StartDiscoveryJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDiscoveryJob indicates an expected call of StartDiscoveryJob
+func (mr *MockDataSyncAPIMockRecorder) StartDiscoveryJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDiscoveryJob", reflect.TypeOf((*MockDataSyncAPI)(nil).StartDiscoveryJob), arg0)
+}
+
+// StartDiscoveryJobRequest mocks base method
+func (m *MockDataSyncAPI) StartDiscoveryJobRequest(arg0 *datasync.StartDiscoveryJobInput) (*request.Request, *datasync.StartDiscoveryJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDiscoveryJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.StartDiscoveryJobOutput)
+	return ret0, ret1
+}
+
+// StartDiscoveryJobRequest indicates an expected call of StartDiscoveryJobRequest
+func (mr *MockDataSyncAPIMockRecorder) StartDiscoveryJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDiscoveryJobRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).StartDiscoveryJobRequest), arg0)
+}
+
+// StartDiscoveryJobWithContext mocks base method
+func (m *MockDataSyncAPI) StartDiscoveryJobWithContext(arg0 context.Context, arg1 *datasync.StartDiscoveryJobInput, arg2 ...request.Option) (*datasync.StartDiscoveryJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartDiscoveryJobWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.StartDiscoveryJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDiscoveryJobWithContext indicates an expected call of StartDiscoveryJobWithContext
+func (mr *MockDataSyncAPIMockRecorder) StartDiscoveryJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDiscoveryJobWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).StartDiscoveryJobWithContext), varargs...)
+}
+
 // StartTaskExecution mocks base method
 func (m *MockDataSyncAPI) StartTaskExecution(arg0 *datasync.StartTaskExecutionInput) (*datasync.StartTaskExecutionOutput, error) {
 	m.ctrl.T.Helper()
@@ -1948,6 +2580,56 @@ func (mr *MockDataSyncAPIMockRecorder) StartTaskExecutionWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTaskExecutionWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).StartTaskExecutionWithContext), varargs...)
+}
+
+// StopDiscoveryJob mocks base method
+func (m *MockDataSyncAPI) StopDiscoveryJob(arg0 *datasync.StopDiscoveryJobInput) (*datasync.StopDiscoveryJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopDiscoveryJob", arg0)
+	ret0, _ := ret[0].(*datasync.StopDiscoveryJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopDiscoveryJob indicates an expected call of StopDiscoveryJob
+func (mr *MockDataSyncAPIMockRecorder) StopDiscoveryJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDiscoveryJob", reflect.TypeOf((*MockDataSyncAPI)(nil).StopDiscoveryJob), arg0)
+}
+
+// StopDiscoveryJobRequest mocks base method
+func (m *MockDataSyncAPI) StopDiscoveryJobRequest(arg0 *datasync.StopDiscoveryJobInput) (*request.Request, *datasync.StopDiscoveryJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopDiscoveryJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.StopDiscoveryJobOutput)
+	return ret0, ret1
+}
+
+// StopDiscoveryJobRequest indicates an expected call of StopDiscoveryJobRequest
+func (mr *MockDataSyncAPIMockRecorder) StopDiscoveryJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDiscoveryJobRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).StopDiscoveryJobRequest), arg0)
+}
+
+// StopDiscoveryJobWithContext mocks base method
+func (m *MockDataSyncAPI) StopDiscoveryJobWithContext(arg0 context.Context, arg1 *datasync.StopDiscoveryJobInput, arg2 ...request.Option) (*datasync.StopDiscoveryJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopDiscoveryJobWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.StopDiscoveryJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopDiscoveryJobWithContext indicates an expected call of StopDiscoveryJobWithContext
+func (mr *MockDataSyncAPIMockRecorder) StopDiscoveryJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopDiscoveryJobWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).StopDiscoveryJobWithContext), varargs...)
 }
 
 // TagResource mocks base method
@@ -2098,6 +2780,56 @@ func (mr *MockDataSyncAPIMockRecorder) UpdateAgentWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAgentWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateAgentWithContext), varargs...)
+}
+
+// UpdateDiscoveryJob mocks base method
+func (m *MockDataSyncAPI) UpdateDiscoveryJob(arg0 *datasync.UpdateDiscoveryJobInput) (*datasync.UpdateDiscoveryJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDiscoveryJob", arg0)
+	ret0, _ := ret[0].(*datasync.UpdateDiscoveryJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDiscoveryJob indicates an expected call of UpdateDiscoveryJob
+func (mr *MockDataSyncAPIMockRecorder) UpdateDiscoveryJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDiscoveryJob", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateDiscoveryJob), arg0)
+}
+
+// UpdateDiscoveryJobRequest mocks base method
+func (m *MockDataSyncAPI) UpdateDiscoveryJobRequest(arg0 *datasync.UpdateDiscoveryJobInput) (*request.Request, *datasync.UpdateDiscoveryJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDiscoveryJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.UpdateDiscoveryJobOutput)
+	return ret0, ret1
+}
+
+// UpdateDiscoveryJobRequest indicates an expected call of UpdateDiscoveryJobRequest
+func (mr *MockDataSyncAPIMockRecorder) UpdateDiscoveryJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDiscoveryJobRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateDiscoveryJobRequest), arg0)
+}
+
+// UpdateDiscoveryJobWithContext mocks base method
+func (m *MockDataSyncAPI) UpdateDiscoveryJobWithContext(arg0 context.Context, arg1 *datasync.UpdateDiscoveryJobInput, arg2 ...request.Option) (*datasync.UpdateDiscoveryJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDiscoveryJobWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.UpdateDiscoveryJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDiscoveryJobWithContext indicates an expected call of UpdateDiscoveryJobWithContext
+func (mr *MockDataSyncAPIMockRecorder) UpdateDiscoveryJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDiscoveryJobWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateDiscoveryJobWithContext), varargs...)
 }
 
 // UpdateLocationHdfs mocks base method
@@ -2298,6 +3030,56 @@ func (mr *MockDataSyncAPIMockRecorder) UpdateLocationSmbWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationSmbWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationSmbWithContext), varargs...)
+}
+
+// UpdateStorageSystem mocks base method
+func (m *MockDataSyncAPI) UpdateStorageSystem(arg0 *datasync.UpdateStorageSystemInput) (*datasync.UpdateStorageSystemOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStorageSystem", arg0)
+	ret0, _ := ret[0].(*datasync.UpdateStorageSystemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStorageSystem indicates an expected call of UpdateStorageSystem
+func (mr *MockDataSyncAPIMockRecorder) UpdateStorageSystem(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStorageSystem", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateStorageSystem), arg0)
+}
+
+// UpdateStorageSystemRequest mocks base method
+func (m *MockDataSyncAPI) UpdateStorageSystemRequest(arg0 *datasync.UpdateStorageSystemInput) (*request.Request, *datasync.UpdateStorageSystemOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStorageSystemRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.UpdateStorageSystemOutput)
+	return ret0, ret1
+}
+
+// UpdateStorageSystemRequest indicates an expected call of UpdateStorageSystemRequest
+func (mr *MockDataSyncAPIMockRecorder) UpdateStorageSystemRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStorageSystemRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateStorageSystemRequest), arg0)
+}
+
+// UpdateStorageSystemWithContext mocks base method
+func (m *MockDataSyncAPI) UpdateStorageSystemWithContext(arg0 context.Context, arg1 *datasync.UpdateStorageSystemInput, arg2 ...request.Option) (*datasync.UpdateStorageSystemOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateStorageSystemWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.UpdateStorageSystemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStorageSystemWithContext indicates an expected call of UpdateStorageSystemWithContext
+func (mr *MockDataSyncAPIMockRecorder) UpdateStorageSystemWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStorageSystemWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateStorageSystemWithContext), varargs...)
 }
 
 // UpdateTask mocks base method

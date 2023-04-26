@@ -35,6 +35,56 @@ func (m *MockConnectAPI) EXPECT() *MockConnectAPIMockRecorder {
 	return m.recorder
 }
 
+// ActivateEvaluationForm mocks base method
+func (m *MockConnectAPI) ActivateEvaluationForm(arg0 *connect.ActivateEvaluationFormInput) (*connect.ActivateEvaluationFormOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ActivateEvaluationForm", arg0)
+	ret0, _ := ret[0].(*connect.ActivateEvaluationFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ActivateEvaluationForm indicates an expected call of ActivateEvaluationForm
+func (mr *MockConnectAPIMockRecorder) ActivateEvaluationForm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateEvaluationForm", reflect.TypeOf((*MockConnectAPI)(nil).ActivateEvaluationForm), arg0)
+}
+
+// ActivateEvaluationFormRequest mocks base method
+func (m *MockConnectAPI) ActivateEvaluationFormRequest(arg0 *connect.ActivateEvaluationFormInput) (*request.Request, *connect.ActivateEvaluationFormOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ActivateEvaluationFormRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ActivateEvaluationFormOutput)
+	return ret0, ret1
+}
+
+// ActivateEvaluationFormRequest indicates an expected call of ActivateEvaluationFormRequest
+func (mr *MockConnectAPIMockRecorder) ActivateEvaluationFormRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateEvaluationFormRequest", reflect.TypeOf((*MockConnectAPI)(nil).ActivateEvaluationFormRequest), arg0)
+}
+
+// ActivateEvaluationFormWithContext mocks base method
+func (m *MockConnectAPI) ActivateEvaluationFormWithContext(arg0 context.Context, arg1 *connect.ActivateEvaluationFormInput, arg2 ...request.Option) (*connect.ActivateEvaluationFormOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ActivateEvaluationFormWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ActivateEvaluationFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ActivateEvaluationFormWithContext indicates an expected call of ActivateEvaluationFormWithContext
+func (mr *MockConnectAPIMockRecorder) ActivateEvaluationFormWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateEvaluationFormWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ActivateEvaluationFormWithContext), varargs...)
+}
+
 // AssociateApprovedOrigin mocks base method
 func (m *MockConnectAPI) AssociateApprovedOrigin(arg0 *connect.AssociateApprovedOriginInput) (*connect.AssociateApprovedOriginOutput, error) {
 	m.ctrl.T.Helper()
@@ -733,6 +783,56 @@ func (mr *MockConnectAPIMockRecorder) CreateContactFlowWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContactFlowWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateContactFlowWithContext), varargs...)
+}
+
+// CreateEvaluationForm mocks base method
+func (m *MockConnectAPI) CreateEvaluationForm(arg0 *connect.CreateEvaluationFormInput) (*connect.CreateEvaluationFormOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEvaluationForm", arg0)
+	ret0, _ := ret[0].(*connect.CreateEvaluationFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEvaluationForm indicates an expected call of CreateEvaluationForm
+func (mr *MockConnectAPIMockRecorder) CreateEvaluationForm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEvaluationForm", reflect.TypeOf((*MockConnectAPI)(nil).CreateEvaluationForm), arg0)
+}
+
+// CreateEvaluationFormRequest mocks base method
+func (m *MockConnectAPI) CreateEvaluationFormRequest(arg0 *connect.CreateEvaluationFormInput) (*request.Request, *connect.CreateEvaluationFormOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEvaluationFormRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.CreateEvaluationFormOutput)
+	return ret0, ret1
+}
+
+// CreateEvaluationFormRequest indicates an expected call of CreateEvaluationFormRequest
+func (mr *MockConnectAPIMockRecorder) CreateEvaluationFormRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEvaluationFormRequest", reflect.TypeOf((*MockConnectAPI)(nil).CreateEvaluationFormRequest), arg0)
+}
+
+// CreateEvaluationFormWithContext mocks base method
+func (m *MockConnectAPI) CreateEvaluationFormWithContext(arg0 context.Context, arg1 *connect.CreateEvaluationFormInput, arg2 ...request.Option) (*connect.CreateEvaluationFormOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateEvaluationFormWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.CreateEvaluationFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEvaluationFormWithContext indicates an expected call of CreateEvaluationFormWithContext
+func (mr *MockConnectAPIMockRecorder) CreateEvaluationFormWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEvaluationFormWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateEvaluationFormWithContext), varargs...)
 }
 
 // CreateHoursOfOperation mocks base method
@@ -1485,6 +1585,106 @@ func (mr *MockConnectAPIMockRecorder) CreateVocabularyWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVocabularyWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateVocabularyWithContext), varargs...)
 }
 
+// DeactivateEvaluationForm mocks base method
+func (m *MockConnectAPI) DeactivateEvaluationForm(arg0 *connect.DeactivateEvaluationFormInput) (*connect.DeactivateEvaluationFormOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeactivateEvaluationForm", arg0)
+	ret0, _ := ret[0].(*connect.DeactivateEvaluationFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeactivateEvaluationForm indicates an expected call of DeactivateEvaluationForm
+func (mr *MockConnectAPIMockRecorder) DeactivateEvaluationForm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateEvaluationForm", reflect.TypeOf((*MockConnectAPI)(nil).DeactivateEvaluationForm), arg0)
+}
+
+// DeactivateEvaluationFormRequest mocks base method
+func (m *MockConnectAPI) DeactivateEvaluationFormRequest(arg0 *connect.DeactivateEvaluationFormInput) (*request.Request, *connect.DeactivateEvaluationFormOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeactivateEvaluationFormRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DeactivateEvaluationFormOutput)
+	return ret0, ret1
+}
+
+// DeactivateEvaluationFormRequest indicates an expected call of DeactivateEvaluationFormRequest
+func (mr *MockConnectAPIMockRecorder) DeactivateEvaluationFormRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateEvaluationFormRequest", reflect.TypeOf((*MockConnectAPI)(nil).DeactivateEvaluationFormRequest), arg0)
+}
+
+// DeactivateEvaluationFormWithContext mocks base method
+func (m *MockConnectAPI) DeactivateEvaluationFormWithContext(arg0 context.Context, arg1 *connect.DeactivateEvaluationFormInput, arg2 ...request.Option) (*connect.DeactivateEvaluationFormOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeactivateEvaluationFormWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DeactivateEvaluationFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeactivateEvaluationFormWithContext indicates an expected call of DeactivateEvaluationFormWithContext
+func (mr *MockConnectAPIMockRecorder) DeactivateEvaluationFormWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateEvaluationFormWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeactivateEvaluationFormWithContext), varargs...)
+}
+
+// DeleteContactEvaluation mocks base method
+func (m *MockConnectAPI) DeleteContactEvaluation(arg0 *connect.DeleteContactEvaluationInput) (*connect.DeleteContactEvaluationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteContactEvaluation", arg0)
+	ret0, _ := ret[0].(*connect.DeleteContactEvaluationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteContactEvaluation indicates an expected call of DeleteContactEvaluation
+func (mr *MockConnectAPIMockRecorder) DeleteContactEvaluation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactEvaluation", reflect.TypeOf((*MockConnectAPI)(nil).DeleteContactEvaluation), arg0)
+}
+
+// DeleteContactEvaluationRequest mocks base method
+func (m *MockConnectAPI) DeleteContactEvaluationRequest(arg0 *connect.DeleteContactEvaluationInput) (*request.Request, *connect.DeleteContactEvaluationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteContactEvaluationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DeleteContactEvaluationOutput)
+	return ret0, ret1
+}
+
+// DeleteContactEvaluationRequest indicates an expected call of DeleteContactEvaluationRequest
+func (mr *MockConnectAPIMockRecorder) DeleteContactEvaluationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactEvaluationRequest", reflect.TypeOf((*MockConnectAPI)(nil).DeleteContactEvaluationRequest), arg0)
+}
+
+// DeleteContactEvaluationWithContext mocks base method
+func (m *MockConnectAPI) DeleteContactEvaluationWithContext(arg0 context.Context, arg1 *connect.DeleteContactEvaluationInput, arg2 ...request.Option) (*connect.DeleteContactEvaluationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteContactEvaluationWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DeleteContactEvaluationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteContactEvaluationWithContext indicates an expected call of DeleteContactEvaluationWithContext
+func (mr *MockConnectAPIMockRecorder) DeleteContactEvaluationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactEvaluationWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteContactEvaluationWithContext), varargs...)
+}
+
 // DeleteContactFlow mocks base method
 func (m *MockConnectAPI) DeleteContactFlow(arg0 *connect.DeleteContactFlowInput) (*connect.DeleteContactFlowOutput, error) {
 	m.ctrl.T.Helper()
@@ -1583,6 +1783,56 @@ func (mr *MockConnectAPIMockRecorder) DeleteContactFlowWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContactFlowWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteContactFlowWithContext), varargs...)
+}
+
+// DeleteEvaluationForm mocks base method
+func (m *MockConnectAPI) DeleteEvaluationForm(arg0 *connect.DeleteEvaluationFormInput) (*connect.DeleteEvaluationFormOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEvaluationForm", arg0)
+	ret0, _ := ret[0].(*connect.DeleteEvaluationFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEvaluationForm indicates an expected call of DeleteEvaluationForm
+func (mr *MockConnectAPIMockRecorder) DeleteEvaluationForm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEvaluationForm", reflect.TypeOf((*MockConnectAPI)(nil).DeleteEvaluationForm), arg0)
+}
+
+// DeleteEvaluationFormRequest mocks base method
+func (m *MockConnectAPI) DeleteEvaluationFormRequest(arg0 *connect.DeleteEvaluationFormInput) (*request.Request, *connect.DeleteEvaluationFormOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEvaluationFormRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DeleteEvaluationFormOutput)
+	return ret0, ret1
+}
+
+// DeleteEvaluationFormRequest indicates an expected call of DeleteEvaluationFormRequest
+func (mr *MockConnectAPIMockRecorder) DeleteEvaluationFormRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEvaluationFormRequest", reflect.TypeOf((*MockConnectAPI)(nil).DeleteEvaluationFormRequest), arg0)
+}
+
+// DeleteEvaluationFormWithContext mocks base method
+func (m *MockConnectAPI) DeleteEvaluationFormWithContext(arg0 context.Context, arg1 *connect.DeleteEvaluationFormInput, arg2 ...request.Option) (*connect.DeleteEvaluationFormOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteEvaluationFormWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DeleteEvaluationFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEvaluationFormWithContext indicates an expected call of DeleteEvaluationFormWithContext
+func (mr *MockConnectAPIMockRecorder) DeleteEvaluationFormWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEvaluationFormWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteEvaluationFormWithContext), varargs...)
 }
 
 // DeleteHoursOfOperation mocks base method
@@ -2250,6 +2500,56 @@ func (mr *MockConnectAPIMockRecorder) DescribeContact(arg0 interface{}) *gomock.
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContact", reflect.TypeOf((*MockConnectAPI)(nil).DescribeContact), arg0)
 }
 
+// DescribeContactEvaluation mocks base method
+func (m *MockConnectAPI) DescribeContactEvaluation(arg0 *connect.DescribeContactEvaluationInput) (*connect.DescribeContactEvaluationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeContactEvaluation", arg0)
+	ret0, _ := ret[0].(*connect.DescribeContactEvaluationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeContactEvaluation indicates an expected call of DescribeContactEvaluation
+func (mr *MockConnectAPIMockRecorder) DescribeContactEvaluation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContactEvaluation", reflect.TypeOf((*MockConnectAPI)(nil).DescribeContactEvaluation), arg0)
+}
+
+// DescribeContactEvaluationRequest mocks base method
+func (m *MockConnectAPI) DescribeContactEvaluationRequest(arg0 *connect.DescribeContactEvaluationInput) (*request.Request, *connect.DescribeContactEvaluationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeContactEvaluationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DescribeContactEvaluationOutput)
+	return ret0, ret1
+}
+
+// DescribeContactEvaluationRequest indicates an expected call of DescribeContactEvaluationRequest
+func (mr *MockConnectAPIMockRecorder) DescribeContactEvaluationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContactEvaluationRequest", reflect.TypeOf((*MockConnectAPI)(nil).DescribeContactEvaluationRequest), arg0)
+}
+
+// DescribeContactEvaluationWithContext mocks base method
+func (m *MockConnectAPI) DescribeContactEvaluationWithContext(arg0 context.Context, arg1 *connect.DescribeContactEvaluationInput, arg2 ...request.Option) (*connect.DescribeContactEvaluationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeContactEvaluationWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DescribeContactEvaluationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeContactEvaluationWithContext indicates an expected call of DescribeContactEvaluationWithContext
+func (mr *MockConnectAPIMockRecorder) DescribeContactEvaluationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContactEvaluationWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeContactEvaluationWithContext), varargs...)
+}
+
 // DescribeContactFlow mocks base method
 func (m *MockConnectAPI) DescribeContactFlow(arg0 *connect.DescribeContactFlowInput) (*connect.DescribeContactFlowOutput, error) {
 	m.ctrl.T.Helper()
@@ -2383,6 +2683,56 @@ func (mr *MockConnectAPIMockRecorder) DescribeContactWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeContactWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeContactWithContext), varargs...)
+}
+
+// DescribeEvaluationForm mocks base method
+func (m *MockConnectAPI) DescribeEvaluationForm(arg0 *connect.DescribeEvaluationFormInput) (*connect.DescribeEvaluationFormOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEvaluationForm", arg0)
+	ret0, _ := ret[0].(*connect.DescribeEvaluationFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEvaluationForm indicates an expected call of DescribeEvaluationForm
+func (mr *MockConnectAPIMockRecorder) DescribeEvaluationForm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEvaluationForm", reflect.TypeOf((*MockConnectAPI)(nil).DescribeEvaluationForm), arg0)
+}
+
+// DescribeEvaluationFormRequest mocks base method
+func (m *MockConnectAPI) DescribeEvaluationFormRequest(arg0 *connect.DescribeEvaluationFormInput) (*request.Request, *connect.DescribeEvaluationFormOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEvaluationFormRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DescribeEvaluationFormOutput)
+	return ret0, ret1
+}
+
+// DescribeEvaluationFormRequest indicates an expected call of DescribeEvaluationFormRequest
+func (mr *MockConnectAPIMockRecorder) DescribeEvaluationFormRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEvaluationFormRequest", reflect.TypeOf((*MockConnectAPI)(nil).DescribeEvaluationFormRequest), arg0)
+}
+
+// DescribeEvaluationFormWithContext mocks base method
+func (m *MockConnectAPI) DescribeEvaluationFormWithContext(arg0 context.Context, arg1 *connect.DescribeEvaluationFormInput, arg2 ...request.Option) (*connect.DescribeEvaluationFormOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEvaluationFormWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DescribeEvaluationFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEvaluationFormWithContext indicates an expected call of DescribeEvaluationFormWithContext
+func (mr *MockConnectAPIMockRecorder) DescribeEvaluationFormWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEvaluationFormWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeEvaluationFormWithContext), varargs...)
 }
 
 // DescribeHoursOfOperation mocks base method
@@ -4416,6 +4766,89 @@ func (mr *MockConnectAPIMockRecorder) ListBotsWithContext(arg0, arg1 interface{}
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBotsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListBotsWithContext), varargs...)
 }
 
+// ListContactEvaluations mocks base method
+func (m *MockConnectAPI) ListContactEvaluations(arg0 *connect.ListContactEvaluationsInput) (*connect.ListContactEvaluationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContactEvaluations", arg0)
+	ret0, _ := ret[0].(*connect.ListContactEvaluationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListContactEvaluations indicates an expected call of ListContactEvaluations
+func (mr *MockConnectAPIMockRecorder) ListContactEvaluations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContactEvaluations", reflect.TypeOf((*MockConnectAPI)(nil).ListContactEvaluations), arg0)
+}
+
+// ListContactEvaluationsPages mocks base method
+func (m *MockConnectAPI) ListContactEvaluationsPages(arg0 *connect.ListContactEvaluationsInput, arg1 func(*connect.ListContactEvaluationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContactEvaluationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListContactEvaluationsPages indicates an expected call of ListContactEvaluationsPages
+func (mr *MockConnectAPIMockRecorder) ListContactEvaluationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContactEvaluationsPages", reflect.TypeOf((*MockConnectAPI)(nil).ListContactEvaluationsPages), arg0, arg1)
+}
+
+// ListContactEvaluationsPagesWithContext mocks base method
+func (m *MockConnectAPI) ListContactEvaluationsPagesWithContext(arg0 context.Context, arg1 *connect.ListContactEvaluationsInput, arg2 func(*connect.ListContactEvaluationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListContactEvaluationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListContactEvaluationsPagesWithContext indicates an expected call of ListContactEvaluationsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListContactEvaluationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContactEvaluationsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListContactEvaluationsPagesWithContext), varargs...)
+}
+
+// ListContactEvaluationsRequest mocks base method
+func (m *MockConnectAPI) ListContactEvaluationsRequest(arg0 *connect.ListContactEvaluationsInput) (*request.Request, *connect.ListContactEvaluationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContactEvaluationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListContactEvaluationsOutput)
+	return ret0, ret1
+}
+
+// ListContactEvaluationsRequest indicates an expected call of ListContactEvaluationsRequest
+func (mr *MockConnectAPIMockRecorder) ListContactEvaluationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContactEvaluationsRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListContactEvaluationsRequest), arg0)
+}
+
+// ListContactEvaluationsWithContext mocks base method
+func (m *MockConnectAPI) ListContactEvaluationsWithContext(arg0 context.Context, arg1 *connect.ListContactEvaluationsInput, arg2 ...request.Option) (*connect.ListContactEvaluationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListContactEvaluationsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListContactEvaluationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListContactEvaluationsWithContext indicates an expected call of ListContactEvaluationsWithContext
+func (mr *MockConnectAPIMockRecorder) ListContactEvaluationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContactEvaluationsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListContactEvaluationsWithContext), varargs...)
+}
+
 // ListContactFlowModules mocks base method
 func (m *MockConnectAPI) ListContactFlowModules(arg0 *connect.ListContactFlowModulesInput) (*connect.ListContactFlowModulesOutput, error) {
 	m.ctrl.T.Helper()
@@ -4746,6 +5179,172 @@ func (mr *MockConnectAPIMockRecorder) ListDefaultVocabulariesWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDefaultVocabulariesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListDefaultVocabulariesWithContext), varargs...)
+}
+
+// ListEvaluationFormVersions mocks base method
+func (m *MockConnectAPI) ListEvaluationFormVersions(arg0 *connect.ListEvaluationFormVersionsInput) (*connect.ListEvaluationFormVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEvaluationFormVersions", arg0)
+	ret0, _ := ret[0].(*connect.ListEvaluationFormVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEvaluationFormVersions indicates an expected call of ListEvaluationFormVersions
+func (mr *MockConnectAPIMockRecorder) ListEvaluationFormVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEvaluationFormVersions", reflect.TypeOf((*MockConnectAPI)(nil).ListEvaluationFormVersions), arg0)
+}
+
+// ListEvaluationFormVersionsPages mocks base method
+func (m *MockConnectAPI) ListEvaluationFormVersionsPages(arg0 *connect.ListEvaluationFormVersionsInput, arg1 func(*connect.ListEvaluationFormVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEvaluationFormVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEvaluationFormVersionsPages indicates an expected call of ListEvaluationFormVersionsPages
+func (mr *MockConnectAPIMockRecorder) ListEvaluationFormVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEvaluationFormVersionsPages", reflect.TypeOf((*MockConnectAPI)(nil).ListEvaluationFormVersionsPages), arg0, arg1)
+}
+
+// ListEvaluationFormVersionsPagesWithContext mocks base method
+func (m *MockConnectAPI) ListEvaluationFormVersionsPagesWithContext(arg0 context.Context, arg1 *connect.ListEvaluationFormVersionsInput, arg2 func(*connect.ListEvaluationFormVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEvaluationFormVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEvaluationFormVersionsPagesWithContext indicates an expected call of ListEvaluationFormVersionsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListEvaluationFormVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEvaluationFormVersionsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListEvaluationFormVersionsPagesWithContext), varargs...)
+}
+
+// ListEvaluationFormVersionsRequest mocks base method
+func (m *MockConnectAPI) ListEvaluationFormVersionsRequest(arg0 *connect.ListEvaluationFormVersionsInput) (*request.Request, *connect.ListEvaluationFormVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEvaluationFormVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListEvaluationFormVersionsOutput)
+	return ret0, ret1
+}
+
+// ListEvaluationFormVersionsRequest indicates an expected call of ListEvaluationFormVersionsRequest
+func (mr *MockConnectAPIMockRecorder) ListEvaluationFormVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEvaluationFormVersionsRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListEvaluationFormVersionsRequest), arg0)
+}
+
+// ListEvaluationFormVersionsWithContext mocks base method
+func (m *MockConnectAPI) ListEvaluationFormVersionsWithContext(arg0 context.Context, arg1 *connect.ListEvaluationFormVersionsInput, arg2 ...request.Option) (*connect.ListEvaluationFormVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEvaluationFormVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListEvaluationFormVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEvaluationFormVersionsWithContext indicates an expected call of ListEvaluationFormVersionsWithContext
+func (mr *MockConnectAPIMockRecorder) ListEvaluationFormVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEvaluationFormVersionsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListEvaluationFormVersionsWithContext), varargs...)
+}
+
+// ListEvaluationForms mocks base method
+func (m *MockConnectAPI) ListEvaluationForms(arg0 *connect.ListEvaluationFormsInput) (*connect.ListEvaluationFormsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEvaluationForms", arg0)
+	ret0, _ := ret[0].(*connect.ListEvaluationFormsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEvaluationForms indicates an expected call of ListEvaluationForms
+func (mr *MockConnectAPIMockRecorder) ListEvaluationForms(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEvaluationForms", reflect.TypeOf((*MockConnectAPI)(nil).ListEvaluationForms), arg0)
+}
+
+// ListEvaluationFormsPages mocks base method
+func (m *MockConnectAPI) ListEvaluationFormsPages(arg0 *connect.ListEvaluationFormsInput, arg1 func(*connect.ListEvaluationFormsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEvaluationFormsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEvaluationFormsPages indicates an expected call of ListEvaluationFormsPages
+func (mr *MockConnectAPIMockRecorder) ListEvaluationFormsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEvaluationFormsPages", reflect.TypeOf((*MockConnectAPI)(nil).ListEvaluationFormsPages), arg0, arg1)
+}
+
+// ListEvaluationFormsPagesWithContext mocks base method
+func (m *MockConnectAPI) ListEvaluationFormsPagesWithContext(arg0 context.Context, arg1 *connect.ListEvaluationFormsInput, arg2 func(*connect.ListEvaluationFormsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEvaluationFormsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEvaluationFormsPagesWithContext indicates an expected call of ListEvaluationFormsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListEvaluationFormsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEvaluationFormsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListEvaluationFormsPagesWithContext), varargs...)
+}
+
+// ListEvaluationFormsRequest mocks base method
+func (m *MockConnectAPI) ListEvaluationFormsRequest(arg0 *connect.ListEvaluationFormsInput) (*request.Request, *connect.ListEvaluationFormsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEvaluationFormsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListEvaluationFormsOutput)
+	return ret0, ret1
+}
+
+// ListEvaluationFormsRequest indicates an expected call of ListEvaluationFormsRequest
+func (mr *MockConnectAPIMockRecorder) ListEvaluationFormsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEvaluationFormsRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListEvaluationFormsRequest), arg0)
+}
+
+// ListEvaluationFormsWithContext mocks base method
+func (m *MockConnectAPI) ListEvaluationFormsWithContext(arg0 context.Context, arg1 *connect.ListEvaluationFormsInput, arg2 ...request.Option) (*connect.ListEvaluationFormsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEvaluationFormsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListEvaluationFormsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEvaluationFormsWithContext indicates an expected call of ListEvaluationFormsWithContext
+func (mr *MockConnectAPIMockRecorder) ListEvaluationFormsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEvaluationFormsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListEvaluationFormsWithContext), varargs...)
 }
 
 // ListHoursOfOperations mocks base method
@@ -7588,6 +8187,56 @@ func (mr *MockConnectAPIMockRecorder) StartChatContactWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartChatContactWithContext", reflect.TypeOf((*MockConnectAPI)(nil).StartChatContactWithContext), varargs...)
 }
 
+// StartContactEvaluation mocks base method
+func (m *MockConnectAPI) StartContactEvaluation(arg0 *connect.StartContactEvaluationInput) (*connect.StartContactEvaluationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartContactEvaluation", arg0)
+	ret0, _ := ret[0].(*connect.StartContactEvaluationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartContactEvaluation indicates an expected call of StartContactEvaluation
+func (mr *MockConnectAPIMockRecorder) StartContactEvaluation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartContactEvaluation", reflect.TypeOf((*MockConnectAPI)(nil).StartContactEvaluation), arg0)
+}
+
+// StartContactEvaluationRequest mocks base method
+func (m *MockConnectAPI) StartContactEvaluationRequest(arg0 *connect.StartContactEvaluationInput) (*request.Request, *connect.StartContactEvaluationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartContactEvaluationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.StartContactEvaluationOutput)
+	return ret0, ret1
+}
+
+// StartContactEvaluationRequest indicates an expected call of StartContactEvaluationRequest
+func (mr *MockConnectAPIMockRecorder) StartContactEvaluationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartContactEvaluationRequest", reflect.TypeOf((*MockConnectAPI)(nil).StartContactEvaluationRequest), arg0)
+}
+
+// StartContactEvaluationWithContext mocks base method
+func (m *MockConnectAPI) StartContactEvaluationWithContext(arg0 context.Context, arg1 *connect.StartContactEvaluationInput, arg2 ...request.Option) (*connect.StartContactEvaluationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartContactEvaluationWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.StartContactEvaluationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartContactEvaluationWithContext indicates an expected call of StartContactEvaluationWithContext
+func (mr *MockConnectAPIMockRecorder) StartContactEvaluationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartContactEvaluationWithContext", reflect.TypeOf((*MockConnectAPI)(nil).StartContactEvaluationWithContext), varargs...)
+}
+
 // StartContactRecording mocks base method
 func (m *MockConnectAPI) StartContactRecording(arg0 *connect.StartContactRecordingInput) (*connect.StartContactRecordingOutput, error) {
 	m.ctrl.T.Helper()
@@ -7938,6 +8587,56 @@ func (mr *MockConnectAPIMockRecorder) StopContactWithContext(arg0, arg1 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopContactWithContext", reflect.TypeOf((*MockConnectAPI)(nil).StopContactWithContext), varargs...)
 }
 
+// SubmitContactEvaluation mocks base method
+func (m *MockConnectAPI) SubmitContactEvaluation(arg0 *connect.SubmitContactEvaluationInput) (*connect.SubmitContactEvaluationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SubmitContactEvaluation", arg0)
+	ret0, _ := ret[0].(*connect.SubmitContactEvaluationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SubmitContactEvaluation indicates an expected call of SubmitContactEvaluation
+func (mr *MockConnectAPIMockRecorder) SubmitContactEvaluation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SubmitContactEvaluation", reflect.TypeOf((*MockConnectAPI)(nil).SubmitContactEvaluation), arg0)
+}
+
+// SubmitContactEvaluationRequest mocks base method
+func (m *MockConnectAPI) SubmitContactEvaluationRequest(arg0 *connect.SubmitContactEvaluationInput) (*request.Request, *connect.SubmitContactEvaluationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SubmitContactEvaluationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.SubmitContactEvaluationOutput)
+	return ret0, ret1
+}
+
+// SubmitContactEvaluationRequest indicates an expected call of SubmitContactEvaluationRequest
+func (mr *MockConnectAPIMockRecorder) SubmitContactEvaluationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SubmitContactEvaluationRequest", reflect.TypeOf((*MockConnectAPI)(nil).SubmitContactEvaluationRequest), arg0)
+}
+
+// SubmitContactEvaluationWithContext mocks base method
+func (m *MockConnectAPI) SubmitContactEvaluationWithContext(arg0 context.Context, arg1 *connect.SubmitContactEvaluationInput, arg2 ...request.Option) (*connect.SubmitContactEvaluationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SubmitContactEvaluationWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.SubmitContactEvaluationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SubmitContactEvaluationWithContext indicates an expected call of SubmitContactEvaluationWithContext
+func (mr *MockConnectAPIMockRecorder) SubmitContactEvaluationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SubmitContactEvaluationWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SubmitContactEvaluationWithContext), varargs...)
+}
+
 // SuspendContactRecording mocks base method
 func (m *MockConnectAPI) SuspendContactRecording(arg0 *connect.SuspendContactRecordingInput) (*connect.SuspendContactRecordingOutput, error) {
 	m.ctrl.T.Helper()
@@ -8251,6 +8950,56 @@ func (mr *MockConnectAPIMockRecorder) UpdateContactAttributesWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactAttributesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactAttributesWithContext), varargs...)
+}
+
+// UpdateContactEvaluation mocks base method
+func (m *MockConnectAPI) UpdateContactEvaluation(arg0 *connect.UpdateContactEvaluationInput) (*connect.UpdateContactEvaluationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContactEvaluation", arg0)
+	ret0, _ := ret[0].(*connect.UpdateContactEvaluationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContactEvaluation indicates an expected call of UpdateContactEvaluation
+func (mr *MockConnectAPIMockRecorder) UpdateContactEvaluation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactEvaluation", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactEvaluation), arg0)
+}
+
+// UpdateContactEvaluationRequest mocks base method
+func (m *MockConnectAPI) UpdateContactEvaluationRequest(arg0 *connect.UpdateContactEvaluationInput) (*request.Request, *connect.UpdateContactEvaluationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateContactEvaluationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateContactEvaluationOutput)
+	return ret0, ret1
+}
+
+// UpdateContactEvaluationRequest indicates an expected call of UpdateContactEvaluationRequest
+func (mr *MockConnectAPIMockRecorder) UpdateContactEvaluationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactEvaluationRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactEvaluationRequest), arg0)
+}
+
+// UpdateContactEvaluationWithContext mocks base method
+func (m *MockConnectAPI) UpdateContactEvaluationWithContext(arg0 context.Context, arg1 *connect.UpdateContactEvaluationInput, arg2 ...request.Option) (*connect.UpdateContactEvaluationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateContactEvaluationWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateContactEvaluationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateContactEvaluationWithContext indicates an expected call of UpdateContactEvaluationWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateContactEvaluationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactEvaluationWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactEvaluationWithContext), varargs...)
 }
 
 // UpdateContactFlowContent mocks base method
@@ -8586,6 +9335,56 @@ func (mr *MockConnectAPIMockRecorder) UpdateContactWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateContactWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateContactWithContext), varargs...)
+}
+
+// UpdateEvaluationForm mocks base method
+func (m *MockConnectAPI) UpdateEvaluationForm(arg0 *connect.UpdateEvaluationFormInput) (*connect.UpdateEvaluationFormOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateEvaluationForm", arg0)
+	ret0, _ := ret[0].(*connect.UpdateEvaluationFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateEvaluationForm indicates an expected call of UpdateEvaluationForm
+func (mr *MockConnectAPIMockRecorder) UpdateEvaluationForm(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEvaluationForm", reflect.TypeOf((*MockConnectAPI)(nil).UpdateEvaluationForm), arg0)
+}
+
+// UpdateEvaluationFormRequest mocks base method
+func (m *MockConnectAPI) UpdateEvaluationFormRequest(arg0 *connect.UpdateEvaluationFormInput) (*request.Request, *connect.UpdateEvaluationFormOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateEvaluationFormRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateEvaluationFormOutput)
+	return ret0, ret1
+}
+
+// UpdateEvaluationFormRequest indicates an expected call of UpdateEvaluationFormRequest
+func (mr *MockConnectAPIMockRecorder) UpdateEvaluationFormRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEvaluationFormRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateEvaluationFormRequest), arg0)
+}
+
+// UpdateEvaluationFormWithContext mocks base method
+func (m *MockConnectAPI) UpdateEvaluationFormWithContext(arg0 context.Context, arg1 *connect.UpdateEvaluationFormInput, arg2 ...request.Option) (*connect.UpdateEvaluationFormOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateEvaluationFormWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateEvaluationFormOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateEvaluationFormWithContext indicates an expected call of UpdateEvaluationFormWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateEvaluationFormWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEvaluationFormWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateEvaluationFormWithContext), varargs...)
 }
 
 // UpdateHoursOfOperation mocks base method
