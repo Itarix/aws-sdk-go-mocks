@@ -3114,6 +3114,56 @@ func (mr *MockGuardDutyAPIMockRecorder) ListThreatIntelSetsWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListThreatIntelSetsWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).ListThreatIntelSetsWithContext), varargs...)
 }
 
+// StartMalwareScan mocks base method
+func (m *MockGuardDutyAPI) StartMalwareScan(arg0 *guardduty.StartMalwareScanInput) (*guardduty.StartMalwareScanOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMalwareScan", arg0)
+	ret0, _ := ret[0].(*guardduty.StartMalwareScanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMalwareScan indicates an expected call of StartMalwareScan
+func (mr *MockGuardDutyAPIMockRecorder) StartMalwareScan(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMalwareScan", reflect.TypeOf((*MockGuardDutyAPI)(nil).StartMalwareScan), arg0)
+}
+
+// StartMalwareScanRequest mocks base method
+func (m *MockGuardDutyAPI) StartMalwareScanRequest(arg0 *guardduty.StartMalwareScanInput) (*request.Request, *guardduty.StartMalwareScanOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMalwareScanRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*guardduty.StartMalwareScanOutput)
+	return ret0, ret1
+}
+
+// StartMalwareScanRequest indicates an expected call of StartMalwareScanRequest
+func (mr *MockGuardDutyAPIMockRecorder) StartMalwareScanRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMalwareScanRequest", reflect.TypeOf((*MockGuardDutyAPI)(nil).StartMalwareScanRequest), arg0)
+}
+
+// StartMalwareScanWithContext mocks base method
+func (m *MockGuardDutyAPI) StartMalwareScanWithContext(arg0 context.Context, arg1 *guardduty.StartMalwareScanInput, arg2 ...request.Option) (*guardduty.StartMalwareScanOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartMalwareScanWithContext", varargs...)
+	ret0, _ := ret[0].(*guardduty.StartMalwareScanOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMalwareScanWithContext indicates an expected call of StartMalwareScanWithContext
+func (mr *MockGuardDutyAPIMockRecorder) StartMalwareScanWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMalwareScanWithContext", reflect.TypeOf((*MockGuardDutyAPI)(nil).StartMalwareScanWithContext), varargs...)
+}
+
 // StartMonitoringMembers mocks base method
 func (m *MockGuardDutyAPI) StartMonitoringMembers(arg0 *guardduty.StartMonitoringMembersInput) (*guardduty.StartMonitoringMembersOutput, error) {
 	m.ctrl.T.Helper()

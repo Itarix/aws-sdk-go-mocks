@@ -285,6 +285,56 @@ func (mr *MockKafkaAPIMockRecorder) CreateConfigurationWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfigurationWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).CreateConfigurationWithContext), varargs...)
 }
 
+// CreateVpcConnection mocks base method
+func (m *MockKafkaAPI) CreateVpcConnection(arg0 *kafka.CreateVpcConnectionInput) (*kafka.CreateVpcConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVpcConnection", arg0)
+	ret0, _ := ret[0].(*kafka.CreateVpcConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVpcConnection indicates an expected call of CreateVpcConnection
+func (mr *MockKafkaAPIMockRecorder) CreateVpcConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcConnection", reflect.TypeOf((*MockKafkaAPI)(nil).CreateVpcConnection), arg0)
+}
+
+// CreateVpcConnectionRequest mocks base method
+func (m *MockKafkaAPI) CreateVpcConnectionRequest(arg0 *kafka.CreateVpcConnectionInput) (*request.Request, *kafka.CreateVpcConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateVpcConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.CreateVpcConnectionOutput)
+	return ret0, ret1
+}
+
+// CreateVpcConnectionRequest indicates an expected call of CreateVpcConnectionRequest
+func (mr *MockKafkaAPIMockRecorder) CreateVpcConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcConnectionRequest", reflect.TypeOf((*MockKafkaAPI)(nil).CreateVpcConnectionRequest), arg0)
+}
+
+// CreateVpcConnectionWithContext mocks base method
+func (m *MockKafkaAPI) CreateVpcConnectionWithContext(arg0 context.Context, arg1 *kafka.CreateVpcConnectionInput, arg2 ...request.Option) (*kafka.CreateVpcConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateVpcConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.CreateVpcConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateVpcConnectionWithContext indicates an expected call of CreateVpcConnectionWithContext
+func (mr *MockKafkaAPIMockRecorder) CreateVpcConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateVpcConnectionWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).CreateVpcConnectionWithContext), varargs...)
+}
+
 // DeleteCluster mocks base method
 func (m *MockKafkaAPI) DeleteCluster(arg0 *kafka.DeleteClusterInput) (*kafka.DeleteClusterOutput, error) {
 	m.ctrl.T.Helper()
@@ -298,6 +348,56 @@ func (m *MockKafkaAPI) DeleteCluster(arg0 *kafka.DeleteClusterInput) (*kafka.Del
 func (mr *MockKafkaAPIMockRecorder) DeleteCluster(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCluster", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteCluster), arg0)
+}
+
+// DeleteClusterPolicy mocks base method
+func (m *MockKafkaAPI) DeleteClusterPolicy(arg0 *kafka.DeleteClusterPolicyInput) (*kafka.DeleteClusterPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteClusterPolicy", arg0)
+	ret0, _ := ret[0].(*kafka.DeleteClusterPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteClusterPolicy indicates an expected call of DeleteClusterPolicy
+func (mr *MockKafkaAPIMockRecorder) DeleteClusterPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClusterPolicy", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteClusterPolicy), arg0)
+}
+
+// DeleteClusterPolicyRequest mocks base method
+func (m *MockKafkaAPI) DeleteClusterPolicyRequest(arg0 *kafka.DeleteClusterPolicyInput) (*request.Request, *kafka.DeleteClusterPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteClusterPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.DeleteClusterPolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteClusterPolicyRequest indicates an expected call of DeleteClusterPolicyRequest
+func (mr *MockKafkaAPIMockRecorder) DeleteClusterPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClusterPolicyRequest", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteClusterPolicyRequest), arg0)
+}
+
+// DeleteClusterPolicyWithContext mocks base method
+func (m *MockKafkaAPI) DeleteClusterPolicyWithContext(arg0 context.Context, arg1 *kafka.DeleteClusterPolicyInput, arg2 ...request.Option) (*kafka.DeleteClusterPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteClusterPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.DeleteClusterPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteClusterPolicyWithContext indicates an expected call of DeleteClusterPolicyWithContext
+func (mr *MockKafkaAPIMockRecorder) DeleteClusterPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClusterPolicyWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteClusterPolicyWithContext), varargs...)
 }
 
 // DeleteClusterRequest mocks base method
@@ -383,6 +483,56 @@ func (mr *MockKafkaAPIMockRecorder) DeleteConfigurationWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConfigurationWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteConfigurationWithContext), varargs...)
+}
+
+// DeleteVpcConnection mocks base method
+func (m *MockKafkaAPI) DeleteVpcConnection(arg0 *kafka.DeleteVpcConnectionInput) (*kafka.DeleteVpcConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVpcConnection", arg0)
+	ret0, _ := ret[0].(*kafka.DeleteVpcConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVpcConnection indicates an expected call of DeleteVpcConnection
+func (mr *MockKafkaAPIMockRecorder) DeleteVpcConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcConnection", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteVpcConnection), arg0)
+}
+
+// DeleteVpcConnectionRequest mocks base method
+func (m *MockKafkaAPI) DeleteVpcConnectionRequest(arg0 *kafka.DeleteVpcConnectionInput) (*request.Request, *kafka.DeleteVpcConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteVpcConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.DeleteVpcConnectionOutput)
+	return ret0, ret1
+}
+
+// DeleteVpcConnectionRequest indicates an expected call of DeleteVpcConnectionRequest
+func (mr *MockKafkaAPIMockRecorder) DeleteVpcConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcConnectionRequest", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteVpcConnectionRequest), arg0)
+}
+
+// DeleteVpcConnectionWithContext mocks base method
+func (m *MockKafkaAPI) DeleteVpcConnectionWithContext(arg0 context.Context, arg1 *kafka.DeleteVpcConnectionInput, arg2 ...request.Option) (*kafka.DeleteVpcConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteVpcConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.DeleteVpcConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteVpcConnectionWithContext indicates an expected call of DeleteVpcConnectionWithContext
+func (mr *MockKafkaAPIMockRecorder) DeleteVpcConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteVpcConnectionWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteVpcConnectionWithContext), varargs...)
 }
 
 // DescribeCluster mocks base method
@@ -635,6 +785,56 @@ func (mr *MockKafkaAPIMockRecorder) DescribeConfigurationWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfigurationWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).DescribeConfigurationWithContext), varargs...)
 }
 
+// DescribeVpcConnection mocks base method
+func (m *MockKafkaAPI) DescribeVpcConnection(arg0 *kafka.DescribeVpcConnectionInput) (*kafka.DescribeVpcConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeVpcConnection", arg0)
+	ret0, _ := ret[0].(*kafka.DescribeVpcConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeVpcConnection indicates an expected call of DescribeVpcConnection
+func (mr *MockKafkaAPIMockRecorder) DescribeVpcConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVpcConnection", reflect.TypeOf((*MockKafkaAPI)(nil).DescribeVpcConnection), arg0)
+}
+
+// DescribeVpcConnectionRequest mocks base method
+func (m *MockKafkaAPI) DescribeVpcConnectionRequest(arg0 *kafka.DescribeVpcConnectionInput) (*request.Request, *kafka.DescribeVpcConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeVpcConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.DescribeVpcConnectionOutput)
+	return ret0, ret1
+}
+
+// DescribeVpcConnectionRequest indicates an expected call of DescribeVpcConnectionRequest
+func (mr *MockKafkaAPIMockRecorder) DescribeVpcConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVpcConnectionRequest", reflect.TypeOf((*MockKafkaAPI)(nil).DescribeVpcConnectionRequest), arg0)
+}
+
+// DescribeVpcConnectionWithContext mocks base method
+func (m *MockKafkaAPI) DescribeVpcConnectionWithContext(arg0 context.Context, arg1 *kafka.DescribeVpcConnectionInput, arg2 ...request.Option) (*kafka.DescribeVpcConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeVpcConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.DescribeVpcConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeVpcConnectionWithContext indicates an expected call of DescribeVpcConnectionWithContext
+func (mr *MockKafkaAPIMockRecorder) DescribeVpcConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVpcConnectionWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).DescribeVpcConnectionWithContext), varargs...)
+}
+
 // GetBootstrapBrokers mocks base method
 func (m *MockKafkaAPI) GetBootstrapBrokers(arg0 *kafka.GetBootstrapBrokersInput) (*kafka.GetBootstrapBrokersOutput, error) {
 	m.ctrl.T.Helper()
@@ -685,6 +885,56 @@ func (mr *MockKafkaAPIMockRecorder) GetBootstrapBrokersWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetBootstrapBrokersWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).GetBootstrapBrokersWithContext), varargs...)
 }
 
+// GetClusterPolicy mocks base method
+func (m *MockKafkaAPI) GetClusterPolicy(arg0 *kafka.GetClusterPolicyInput) (*kafka.GetClusterPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetClusterPolicy", arg0)
+	ret0, _ := ret[0].(*kafka.GetClusterPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetClusterPolicy indicates an expected call of GetClusterPolicy
+func (mr *MockKafkaAPIMockRecorder) GetClusterPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClusterPolicy", reflect.TypeOf((*MockKafkaAPI)(nil).GetClusterPolicy), arg0)
+}
+
+// GetClusterPolicyRequest mocks base method
+func (m *MockKafkaAPI) GetClusterPolicyRequest(arg0 *kafka.GetClusterPolicyInput) (*request.Request, *kafka.GetClusterPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetClusterPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.GetClusterPolicyOutput)
+	return ret0, ret1
+}
+
+// GetClusterPolicyRequest indicates an expected call of GetClusterPolicyRequest
+func (mr *MockKafkaAPIMockRecorder) GetClusterPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClusterPolicyRequest", reflect.TypeOf((*MockKafkaAPI)(nil).GetClusterPolicyRequest), arg0)
+}
+
+// GetClusterPolicyWithContext mocks base method
+func (m *MockKafkaAPI) GetClusterPolicyWithContext(arg0 context.Context, arg1 *kafka.GetClusterPolicyInput, arg2 ...request.Option) (*kafka.GetClusterPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetClusterPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.GetClusterPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetClusterPolicyWithContext indicates an expected call of GetClusterPolicyWithContext
+func (mr *MockKafkaAPIMockRecorder) GetClusterPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetClusterPolicyWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).GetClusterPolicyWithContext), varargs...)
+}
+
 // GetCompatibleKafkaVersions mocks base method
 func (m *MockKafkaAPI) GetCompatibleKafkaVersions(arg0 *kafka.GetCompatibleKafkaVersionsInput) (*kafka.GetCompatibleKafkaVersionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -733,6 +983,89 @@ func (mr *MockKafkaAPIMockRecorder) GetCompatibleKafkaVersionsWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCompatibleKafkaVersionsWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).GetCompatibleKafkaVersionsWithContext), varargs...)
+}
+
+// ListClientVpcConnections mocks base method
+func (m *MockKafkaAPI) ListClientVpcConnections(arg0 *kafka.ListClientVpcConnectionsInput) (*kafka.ListClientVpcConnectionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListClientVpcConnections", arg0)
+	ret0, _ := ret[0].(*kafka.ListClientVpcConnectionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListClientVpcConnections indicates an expected call of ListClientVpcConnections
+func (mr *MockKafkaAPIMockRecorder) ListClientVpcConnections(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClientVpcConnections", reflect.TypeOf((*MockKafkaAPI)(nil).ListClientVpcConnections), arg0)
+}
+
+// ListClientVpcConnectionsPages mocks base method
+func (m *MockKafkaAPI) ListClientVpcConnectionsPages(arg0 *kafka.ListClientVpcConnectionsInput, arg1 func(*kafka.ListClientVpcConnectionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListClientVpcConnectionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListClientVpcConnectionsPages indicates an expected call of ListClientVpcConnectionsPages
+func (mr *MockKafkaAPIMockRecorder) ListClientVpcConnectionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClientVpcConnectionsPages", reflect.TypeOf((*MockKafkaAPI)(nil).ListClientVpcConnectionsPages), arg0, arg1)
+}
+
+// ListClientVpcConnectionsPagesWithContext mocks base method
+func (m *MockKafkaAPI) ListClientVpcConnectionsPagesWithContext(arg0 context.Context, arg1 *kafka.ListClientVpcConnectionsInput, arg2 func(*kafka.ListClientVpcConnectionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListClientVpcConnectionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListClientVpcConnectionsPagesWithContext indicates an expected call of ListClientVpcConnectionsPagesWithContext
+func (mr *MockKafkaAPIMockRecorder) ListClientVpcConnectionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClientVpcConnectionsPagesWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListClientVpcConnectionsPagesWithContext), varargs...)
+}
+
+// ListClientVpcConnectionsRequest mocks base method
+func (m *MockKafkaAPI) ListClientVpcConnectionsRequest(arg0 *kafka.ListClientVpcConnectionsInput) (*request.Request, *kafka.ListClientVpcConnectionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListClientVpcConnectionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.ListClientVpcConnectionsOutput)
+	return ret0, ret1
+}
+
+// ListClientVpcConnectionsRequest indicates an expected call of ListClientVpcConnectionsRequest
+func (mr *MockKafkaAPIMockRecorder) ListClientVpcConnectionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClientVpcConnectionsRequest", reflect.TypeOf((*MockKafkaAPI)(nil).ListClientVpcConnectionsRequest), arg0)
+}
+
+// ListClientVpcConnectionsWithContext mocks base method
+func (m *MockKafkaAPI) ListClientVpcConnectionsWithContext(arg0 context.Context, arg1 *kafka.ListClientVpcConnectionsInput, arg2 ...request.Option) (*kafka.ListClientVpcConnectionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListClientVpcConnectionsWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.ListClientVpcConnectionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListClientVpcConnectionsWithContext indicates an expected call of ListClientVpcConnectionsWithContext
+func (mr *MockKafkaAPIMockRecorder) ListClientVpcConnectionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClientVpcConnectionsWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListClientVpcConnectionsWithContext), varargs...)
 }
 
 // ListClusterOperations mocks base method
@@ -1449,6 +1782,139 @@ func (mr *MockKafkaAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ListVpcConnections mocks base method
+func (m *MockKafkaAPI) ListVpcConnections(arg0 *kafka.ListVpcConnectionsInput) (*kafka.ListVpcConnectionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVpcConnections", arg0)
+	ret0, _ := ret[0].(*kafka.ListVpcConnectionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVpcConnections indicates an expected call of ListVpcConnections
+func (mr *MockKafkaAPIMockRecorder) ListVpcConnections(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcConnections", reflect.TypeOf((*MockKafkaAPI)(nil).ListVpcConnections), arg0)
+}
+
+// ListVpcConnectionsPages mocks base method
+func (m *MockKafkaAPI) ListVpcConnectionsPages(arg0 *kafka.ListVpcConnectionsInput, arg1 func(*kafka.ListVpcConnectionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVpcConnectionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListVpcConnectionsPages indicates an expected call of ListVpcConnectionsPages
+func (mr *MockKafkaAPIMockRecorder) ListVpcConnectionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcConnectionsPages", reflect.TypeOf((*MockKafkaAPI)(nil).ListVpcConnectionsPages), arg0, arg1)
+}
+
+// ListVpcConnectionsPagesWithContext mocks base method
+func (m *MockKafkaAPI) ListVpcConnectionsPagesWithContext(arg0 context.Context, arg1 *kafka.ListVpcConnectionsInput, arg2 func(*kafka.ListVpcConnectionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVpcConnectionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListVpcConnectionsPagesWithContext indicates an expected call of ListVpcConnectionsPagesWithContext
+func (mr *MockKafkaAPIMockRecorder) ListVpcConnectionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcConnectionsPagesWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListVpcConnectionsPagesWithContext), varargs...)
+}
+
+// ListVpcConnectionsRequest mocks base method
+func (m *MockKafkaAPI) ListVpcConnectionsRequest(arg0 *kafka.ListVpcConnectionsInput) (*request.Request, *kafka.ListVpcConnectionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVpcConnectionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.ListVpcConnectionsOutput)
+	return ret0, ret1
+}
+
+// ListVpcConnectionsRequest indicates an expected call of ListVpcConnectionsRequest
+func (mr *MockKafkaAPIMockRecorder) ListVpcConnectionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcConnectionsRequest", reflect.TypeOf((*MockKafkaAPI)(nil).ListVpcConnectionsRequest), arg0)
+}
+
+// ListVpcConnectionsWithContext mocks base method
+func (m *MockKafkaAPI) ListVpcConnectionsWithContext(arg0 context.Context, arg1 *kafka.ListVpcConnectionsInput, arg2 ...request.Option) (*kafka.ListVpcConnectionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVpcConnectionsWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.ListVpcConnectionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVpcConnectionsWithContext indicates an expected call of ListVpcConnectionsWithContext
+func (mr *MockKafkaAPIMockRecorder) ListVpcConnectionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVpcConnectionsWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListVpcConnectionsWithContext), varargs...)
+}
+
+// PutClusterPolicy mocks base method
+func (m *MockKafkaAPI) PutClusterPolicy(arg0 *kafka.PutClusterPolicyInput) (*kafka.PutClusterPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutClusterPolicy", arg0)
+	ret0, _ := ret[0].(*kafka.PutClusterPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutClusterPolicy indicates an expected call of PutClusterPolicy
+func (mr *MockKafkaAPIMockRecorder) PutClusterPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutClusterPolicy", reflect.TypeOf((*MockKafkaAPI)(nil).PutClusterPolicy), arg0)
+}
+
+// PutClusterPolicyRequest mocks base method
+func (m *MockKafkaAPI) PutClusterPolicyRequest(arg0 *kafka.PutClusterPolicyInput) (*request.Request, *kafka.PutClusterPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutClusterPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.PutClusterPolicyOutput)
+	return ret0, ret1
+}
+
+// PutClusterPolicyRequest indicates an expected call of PutClusterPolicyRequest
+func (mr *MockKafkaAPIMockRecorder) PutClusterPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutClusterPolicyRequest", reflect.TypeOf((*MockKafkaAPI)(nil).PutClusterPolicyRequest), arg0)
+}
+
+// PutClusterPolicyWithContext mocks base method
+func (m *MockKafkaAPI) PutClusterPolicyWithContext(arg0 context.Context, arg1 *kafka.PutClusterPolicyInput, arg2 ...request.Option) (*kafka.PutClusterPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutClusterPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.PutClusterPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutClusterPolicyWithContext indicates an expected call of PutClusterPolicyWithContext
+func (mr *MockKafkaAPIMockRecorder) PutClusterPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutClusterPolicyWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).PutClusterPolicyWithContext), varargs...)
+}
+
 // RebootBroker mocks base method
 func (m *MockKafkaAPI) RebootBroker(arg0 *kafka.RebootBrokerInput) (*kafka.RebootBrokerOutput, error) {
 	m.ctrl.T.Helper()
@@ -1497,6 +1963,56 @@ func (mr *MockKafkaAPIMockRecorder) RebootBrokerWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RebootBrokerWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).RebootBrokerWithContext), varargs...)
+}
+
+// RejectClientVpcConnection mocks base method
+func (m *MockKafkaAPI) RejectClientVpcConnection(arg0 *kafka.RejectClientVpcConnectionInput) (*kafka.RejectClientVpcConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RejectClientVpcConnection", arg0)
+	ret0, _ := ret[0].(*kafka.RejectClientVpcConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RejectClientVpcConnection indicates an expected call of RejectClientVpcConnection
+func (mr *MockKafkaAPIMockRecorder) RejectClientVpcConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectClientVpcConnection", reflect.TypeOf((*MockKafkaAPI)(nil).RejectClientVpcConnection), arg0)
+}
+
+// RejectClientVpcConnectionRequest mocks base method
+func (m *MockKafkaAPI) RejectClientVpcConnectionRequest(arg0 *kafka.RejectClientVpcConnectionInput) (*request.Request, *kafka.RejectClientVpcConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RejectClientVpcConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.RejectClientVpcConnectionOutput)
+	return ret0, ret1
+}
+
+// RejectClientVpcConnectionRequest indicates an expected call of RejectClientVpcConnectionRequest
+func (mr *MockKafkaAPIMockRecorder) RejectClientVpcConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectClientVpcConnectionRequest", reflect.TypeOf((*MockKafkaAPI)(nil).RejectClientVpcConnectionRequest), arg0)
+}
+
+// RejectClientVpcConnectionWithContext mocks base method
+func (m *MockKafkaAPI) RejectClientVpcConnectionWithContext(arg0 context.Context, arg1 *kafka.RejectClientVpcConnectionInput, arg2 ...request.Option) (*kafka.RejectClientVpcConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RejectClientVpcConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.RejectClientVpcConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RejectClientVpcConnectionWithContext indicates an expected call of RejectClientVpcConnectionWithContext
+func (mr *MockKafkaAPIMockRecorder) RejectClientVpcConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RejectClientVpcConnectionWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).RejectClientVpcConnectionWithContext), varargs...)
 }
 
 // TagResource mocks base method

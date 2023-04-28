@@ -585,6 +585,56 @@ func (mr *MockEMRContainersAPIMockRecorder) DescribeVirtualClusterWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeVirtualClusterWithContext", reflect.TypeOf((*MockEMRContainersAPI)(nil).DescribeVirtualClusterWithContext), varargs...)
 }
 
+// GetManagedEndpointSessionCredentials mocks base method
+func (m *MockEMRContainersAPI) GetManagedEndpointSessionCredentials(arg0 *emrcontainers.GetManagedEndpointSessionCredentialsInput) (*emrcontainers.GetManagedEndpointSessionCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetManagedEndpointSessionCredentials", arg0)
+	ret0, _ := ret[0].(*emrcontainers.GetManagedEndpointSessionCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetManagedEndpointSessionCredentials indicates an expected call of GetManagedEndpointSessionCredentials
+func (mr *MockEMRContainersAPIMockRecorder) GetManagedEndpointSessionCredentials(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetManagedEndpointSessionCredentials", reflect.TypeOf((*MockEMRContainersAPI)(nil).GetManagedEndpointSessionCredentials), arg0)
+}
+
+// GetManagedEndpointSessionCredentialsRequest mocks base method
+func (m *MockEMRContainersAPI) GetManagedEndpointSessionCredentialsRequest(arg0 *emrcontainers.GetManagedEndpointSessionCredentialsInput) (*request.Request, *emrcontainers.GetManagedEndpointSessionCredentialsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetManagedEndpointSessionCredentialsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emrcontainers.GetManagedEndpointSessionCredentialsOutput)
+	return ret0, ret1
+}
+
+// GetManagedEndpointSessionCredentialsRequest indicates an expected call of GetManagedEndpointSessionCredentialsRequest
+func (mr *MockEMRContainersAPIMockRecorder) GetManagedEndpointSessionCredentialsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetManagedEndpointSessionCredentialsRequest", reflect.TypeOf((*MockEMRContainersAPI)(nil).GetManagedEndpointSessionCredentialsRequest), arg0)
+}
+
+// GetManagedEndpointSessionCredentialsWithContext mocks base method
+func (m *MockEMRContainersAPI) GetManagedEndpointSessionCredentialsWithContext(arg0 context.Context, arg1 *emrcontainers.GetManagedEndpointSessionCredentialsInput, arg2 ...request.Option) (*emrcontainers.GetManagedEndpointSessionCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetManagedEndpointSessionCredentialsWithContext", varargs...)
+	ret0, _ := ret[0].(*emrcontainers.GetManagedEndpointSessionCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetManagedEndpointSessionCredentialsWithContext indicates an expected call of GetManagedEndpointSessionCredentialsWithContext
+func (mr *MockEMRContainersAPIMockRecorder) GetManagedEndpointSessionCredentialsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetManagedEndpointSessionCredentialsWithContext", reflect.TypeOf((*MockEMRContainersAPI)(nil).GetManagedEndpointSessionCredentialsWithContext), varargs...)
+}
+
 // ListJobRuns mocks base method
 func (m *MockEMRContainersAPI) ListJobRuns(arg0 *emrcontainers.ListJobRunsInput) (*emrcontainers.ListJobRunsOutput, error) {
 	m.ctrl.T.Helper()
