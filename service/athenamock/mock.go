@@ -185,6 +185,106 @@ func (mr *MockAthenaAPIMockRecorder) BatchGetQueryExecutionWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetQueryExecutionWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).BatchGetQueryExecutionWithContext), varargs...)
 }
 
+// CancelCapacityReservation mocks base method
+func (m *MockAthenaAPI) CancelCapacityReservation(arg0 *athena.CancelCapacityReservationInput) (*athena.CancelCapacityReservationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelCapacityReservation", arg0)
+	ret0, _ := ret[0].(*athena.CancelCapacityReservationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelCapacityReservation indicates an expected call of CancelCapacityReservation
+func (mr *MockAthenaAPIMockRecorder) CancelCapacityReservation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelCapacityReservation", reflect.TypeOf((*MockAthenaAPI)(nil).CancelCapacityReservation), arg0)
+}
+
+// CancelCapacityReservationRequest mocks base method
+func (m *MockAthenaAPI) CancelCapacityReservationRequest(arg0 *athena.CancelCapacityReservationInput) (*request.Request, *athena.CancelCapacityReservationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelCapacityReservationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.CancelCapacityReservationOutput)
+	return ret0, ret1
+}
+
+// CancelCapacityReservationRequest indicates an expected call of CancelCapacityReservationRequest
+func (mr *MockAthenaAPIMockRecorder) CancelCapacityReservationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelCapacityReservationRequest", reflect.TypeOf((*MockAthenaAPI)(nil).CancelCapacityReservationRequest), arg0)
+}
+
+// CancelCapacityReservationWithContext mocks base method
+func (m *MockAthenaAPI) CancelCapacityReservationWithContext(arg0 context.Context, arg1 *athena.CancelCapacityReservationInput, arg2 ...request.Option) (*athena.CancelCapacityReservationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelCapacityReservationWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.CancelCapacityReservationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelCapacityReservationWithContext indicates an expected call of CancelCapacityReservationWithContext
+func (mr *MockAthenaAPIMockRecorder) CancelCapacityReservationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelCapacityReservationWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).CancelCapacityReservationWithContext), varargs...)
+}
+
+// CreateCapacityReservation mocks base method
+func (m *MockAthenaAPI) CreateCapacityReservation(arg0 *athena.CreateCapacityReservationInput) (*athena.CreateCapacityReservationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCapacityReservation", arg0)
+	ret0, _ := ret[0].(*athena.CreateCapacityReservationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCapacityReservation indicates an expected call of CreateCapacityReservation
+func (mr *MockAthenaAPIMockRecorder) CreateCapacityReservation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCapacityReservation", reflect.TypeOf((*MockAthenaAPI)(nil).CreateCapacityReservation), arg0)
+}
+
+// CreateCapacityReservationRequest mocks base method
+func (m *MockAthenaAPI) CreateCapacityReservationRequest(arg0 *athena.CreateCapacityReservationInput) (*request.Request, *athena.CreateCapacityReservationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCapacityReservationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.CreateCapacityReservationOutput)
+	return ret0, ret1
+}
+
+// CreateCapacityReservationRequest indicates an expected call of CreateCapacityReservationRequest
+func (mr *MockAthenaAPIMockRecorder) CreateCapacityReservationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCapacityReservationRequest", reflect.TypeOf((*MockAthenaAPI)(nil).CreateCapacityReservationRequest), arg0)
+}
+
+// CreateCapacityReservationWithContext mocks base method
+func (m *MockAthenaAPI) CreateCapacityReservationWithContext(arg0 context.Context, arg1 *athena.CreateCapacityReservationInput, arg2 ...request.Option) (*athena.CreateCapacityReservationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCapacityReservationWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.CreateCapacityReservationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCapacityReservationWithContext indicates an expected call of CreateCapacityReservationWithContext
+func (mr *MockAthenaAPIMockRecorder) CreateCapacityReservationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCapacityReservationWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).CreateCapacityReservationWithContext), varargs...)
+}
+
 // CreateDataCatalog mocks base method
 func (m *MockAthenaAPI) CreateDataCatalog(arg0 *athena.CreateDataCatalogInput) (*athena.CreateDataCatalogOutput, error) {
 	m.ctrl.T.Helper()
@@ -933,6 +1033,106 @@ func (mr *MockAthenaAPIMockRecorder) GetCalculationExecutionWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculationExecutionWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetCalculationExecutionWithContext), varargs...)
+}
+
+// GetCapacityAssignmentConfiguration mocks base method
+func (m *MockAthenaAPI) GetCapacityAssignmentConfiguration(arg0 *athena.GetCapacityAssignmentConfigurationInput) (*athena.GetCapacityAssignmentConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCapacityAssignmentConfiguration", arg0)
+	ret0, _ := ret[0].(*athena.GetCapacityAssignmentConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCapacityAssignmentConfiguration indicates an expected call of GetCapacityAssignmentConfiguration
+func (mr *MockAthenaAPIMockRecorder) GetCapacityAssignmentConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCapacityAssignmentConfiguration", reflect.TypeOf((*MockAthenaAPI)(nil).GetCapacityAssignmentConfiguration), arg0)
+}
+
+// GetCapacityAssignmentConfigurationRequest mocks base method
+func (m *MockAthenaAPI) GetCapacityAssignmentConfigurationRequest(arg0 *athena.GetCapacityAssignmentConfigurationInput) (*request.Request, *athena.GetCapacityAssignmentConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCapacityAssignmentConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.GetCapacityAssignmentConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetCapacityAssignmentConfigurationRequest indicates an expected call of GetCapacityAssignmentConfigurationRequest
+func (mr *MockAthenaAPIMockRecorder) GetCapacityAssignmentConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCapacityAssignmentConfigurationRequest", reflect.TypeOf((*MockAthenaAPI)(nil).GetCapacityAssignmentConfigurationRequest), arg0)
+}
+
+// GetCapacityAssignmentConfigurationWithContext mocks base method
+func (m *MockAthenaAPI) GetCapacityAssignmentConfigurationWithContext(arg0 context.Context, arg1 *athena.GetCapacityAssignmentConfigurationInput, arg2 ...request.Option) (*athena.GetCapacityAssignmentConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCapacityAssignmentConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.GetCapacityAssignmentConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCapacityAssignmentConfigurationWithContext indicates an expected call of GetCapacityAssignmentConfigurationWithContext
+func (mr *MockAthenaAPIMockRecorder) GetCapacityAssignmentConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCapacityAssignmentConfigurationWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetCapacityAssignmentConfigurationWithContext), varargs...)
+}
+
+// GetCapacityReservation mocks base method
+func (m *MockAthenaAPI) GetCapacityReservation(arg0 *athena.GetCapacityReservationInput) (*athena.GetCapacityReservationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCapacityReservation", arg0)
+	ret0, _ := ret[0].(*athena.GetCapacityReservationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCapacityReservation indicates an expected call of GetCapacityReservation
+func (mr *MockAthenaAPIMockRecorder) GetCapacityReservation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCapacityReservation", reflect.TypeOf((*MockAthenaAPI)(nil).GetCapacityReservation), arg0)
+}
+
+// GetCapacityReservationRequest mocks base method
+func (m *MockAthenaAPI) GetCapacityReservationRequest(arg0 *athena.GetCapacityReservationInput) (*request.Request, *athena.GetCapacityReservationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCapacityReservationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.GetCapacityReservationOutput)
+	return ret0, ret1
+}
+
+// GetCapacityReservationRequest indicates an expected call of GetCapacityReservationRequest
+func (mr *MockAthenaAPIMockRecorder) GetCapacityReservationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCapacityReservationRequest", reflect.TypeOf((*MockAthenaAPI)(nil).GetCapacityReservationRequest), arg0)
+}
+
+// GetCapacityReservationWithContext mocks base method
+func (m *MockAthenaAPI) GetCapacityReservationWithContext(arg0 context.Context, arg1 *athena.GetCapacityReservationInput, arg2 ...request.Option) (*athena.GetCapacityReservationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCapacityReservationWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.GetCapacityReservationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCapacityReservationWithContext indicates an expected call of GetCapacityReservationWithContext
+func (mr *MockAthenaAPIMockRecorder) GetCapacityReservationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCapacityReservationWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).GetCapacityReservationWithContext), varargs...)
 }
 
 // GetDataCatalog mocks base method
@@ -1782,6 +1982,89 @@ func (mr *MockAthenaAPIMockRecorder) ListCalculationExecutionsWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCalculationExecutionsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListCalculationExecutionsWithContext), varargs...)
+}
+
+// ListCapacityReservations mocks base method
+func (m *MockAthenaAPI) ListCapacityReservations(arg0 *athena.ListCapacityReservationsInput) (*athena.ListCapacityReservationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCapacityReservations", arg0)
+	ret0, _ := ret[0].(*athena.ListCapacityReservationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCapacityReservations indicates an expected call of ListCapacityReservations
+func (mr *MockAthenaAPIMockRecorder) ListCapacityReservations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCapacityReservations", reflect.TypeOf((*MockAthenaAPI)(nil).ListCapacityReservations), arg0)
+}
+
+// ListCapacityReservationsPages mocks base method
+func (m *MockAthenaAPI) ListCapacityReservationsPages(arg0 *athena.ListCapacityReservationsInput, arg1 func(*athena.ListCapacityReservationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCapacityReservationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCapacityReservationsPages indicates an expected call of ListCapacityReservationsPages
+func (mr *MockAthenaAPIMockRecorder) ListCapacityReservationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCapacityReservationsPages", reflect.TypeOf((*MockAthenaAPI)(nil).ListCapacityReservationsPages), arg0, arg1)
+}
+
+// ListCapacityReservationsPagesWithContext mocks base method
+func (m *MockAthenaAPI) ListCapacityReservationsPagesWithContext(arg0 context.Context, arg1 *athena.ListCapacityReservationsInput, arg2 func(*athena.ListCapacityReservationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCapacityReservationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCapacityReservationsPagesWithContext indicates an expected call of ListCapacityReservationsPagesWithContext
+func (mr *MockAthenaAPIMockRecorder) ListCapacityReservationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCapacityReservationsPagesWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListCapacityReservationsPagesWithContext), varargs...)
+}
+
+// ListCapacityReservationsRequest mocks base method
+func (m *MockAthenaAPI) ListCapacityReservationsRequest(arg0 *athena.ListCapacityReservationsInput) (*request.Request, *athena.ListCapacityReservationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCapacityReservationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.ListCapacityReservationsOutput)
+	return ret0, ret1
+}
+
+// ListCapacityReservationsRequest indicates an expected call of ListCapacityReservationsRequest
+func (mr *MockAthenaAPIMockRecorder) ListCapacityReservationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCapacityReservationsRequest", reflect.TypeOf((*MockAthenaAPI)(nil).ListCapacityReservationsRequest), arg0)
+}
+
+// ListCapacityReservationsWithContext mocks base method
+func (m *MockAthenaAPI) ListCapacityReservationsWithContext(arg0 context.Context, arg1 *athena.ListCapacityReservationsInput, arg2 ...request.Option) (*athena.ListCapacityReservationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCapacityReservationsWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.ListCapacityReservationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCapacityReservationsWithContext indicates an expected call of ListCapacityReservationsWithContext
+func (mr *MockAthenaAPIMockRecorder) ListCapacityReservationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCapacityReservationsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListCapacityReservationsWithContext), varargs...)
 }
 
 // ListDataCatalogs mocks base method
@@ -2797,6 +3080,56 @@ func (mr *MockAthenaAPIMockRecorder) ListWorkGroupsWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkGroupsWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).ListWorkGroupsWithContext), varargs...)
 }
 
+// PutCapacityAssignmentConfiguration mocks base method
+func (m *MockAthenaAPI) PutCapacityAssignmentConfiguration(arg0 *athena.PutCapacityAssignmentConfigurationInput) (*athena.PutCapacityAssignmentConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutCapacityAssignmentConfiguration", arg0)
+	ret0, _ := ret[0].(*athena.PutCapacityAssignmentConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutCapacityAssignmentConfiguration indicates an expected call of PutCapacityAssignmentConfiguration
+func (mr *MockAthenaAPIMockRecorder) PutCapacityAssignmentConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutCapacityAssignmentConfiguration", reflect.TypeOf((*MockAthenaAPI)(nil).PutCapacityAssignmentConfiguration), arg0)
+}
+
+// PutCapacityAssignmentConfigurationRequest mocks base method
+func (m *MockAthenaAPI) PutCapacityAssignmentConfigurationRequest(arg0 *athena.PutCapacityAssignmentConfigurationInput) (*request.Request, *athena.PutCapacityAssignmentConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutCapacityAssignmentConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.PutCapacityAssignmentConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutCapacityAssignmentConfigurationRequest indicates an expected call of PutCapacityAssignmentConfigurationRequest
+func (mr *MockAthenaAPIMockRecorder) PutCapacityAssignmentConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutCapacityAssignmentConfigurationRequest", reflect.TypeOf((*MockAthenaAPI)(nil).PutCapacityAssignmentConfigurationRequest), arg0)
+}
+
+// PutCapacityAssignmentConfigurationWithContext mocks base method
+func (m *MockAthenaAPI) PutCapacityAssignmentConfigurationWithContext(arg0 context.Context, arg1 *athena.PutCapacityAssignmentConfigurationInput, arg2 ...request.Option) (*athena.PutCapacityAssignmentConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutCapacityAssignmentConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.PutCapacityAssignmentConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutCapacityAssignmentConfigurationWithContext indicates an expected call of PutCapacityAssignmentConfigurationWithContext
+func (mr *MockAthenaAPIMockRecorder) PutCapacityAssignmentConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutCapacityAssignmentConfigurationWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).PutCapacityAssignmentConfigurationWithContext), varargs...)
+}
+
 // StartCalculationExecution mocks base method
 func (m *MockAthenaAPI) StartCalculationExecution(arg0 *athena.StartCalculationExecutionInput) (*athena.StartCalculationExecutionOutput, error) {
 	m.ctrl.T.Helper()
@@ -3195,6 +3528,56 @@ func (mr *MockAthenaAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateCapacityReservation mocks base method
+func (m *MockAthenaAPI) UpdateCapacityReservation(arg0 *athena.UpdateCapacityReservationInput) (*athena.UpdateCapacityReservationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCapacityReservation", arg0)
+	ret0, _ := ret[0].(*athena.UpdateCapacityReservationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCapacityReservation indicates an expected call of UpdateCapacityReservation
+func (mr *MockAthenaAPIMockRecorder) UpdateCapacityReservation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCapacityReservation", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateCapacityReservation), arg0)
+}
+
+// UpdateCapacityReservationRequest mocks base method
+func (m *MockAthenaAPI) UpdateCapacityReservationRequest(arg0 *athena.UpdateCapacityReservationInput) (*request.Request, *athena.UpdateCapacityReservationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCapacityReservationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.UpdateCapacityReservationOutput)
+	return ret0, ret1
+}
+
+// UpdateCapacityReservationRequest indicates an expected call of UpdateCapacityReservationRequest
+func (mr *MockAthenaAPIMockRecorder) UpdateCapacityReservationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCapacityReservationRequest", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateCapacityReservationRequest), arg0)
+}
+
+// UpdateCapacityReservationWithContext mocks base method
+func (m *MockAthenaAPI) UpdateCapacityReservationWithContext(arg0 context.Context, arg1 *athena.UpdateCapacityReservationInput, arg2 ...request.Option) (*athena.UpdateCapacityReservationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateCapacityReservationWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.UpdateCapacityReservationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCapacityReservationWithContext indicates an expected call of UpdateCapacityReservationWithContext
+func (mr *MockAthenaAPIMockRecorder) UpdateCapacityReservationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCapacityReservationWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).UpdateCapacityReservationWithContext), varargs...)
 }
 
 // UpdateDataCatalog mocks base method

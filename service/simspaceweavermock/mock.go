@@ -35,6 +35,56 @@ func (m *MockSimSpaceWeaverAPI) EXPECT() *MockSimSpaceWeaverAPIMockRecorder {
 	return m.recorder
 }
 
+// CreateSnapshot mocks base method
+func (m *MockSimSpaceWeaverAPI) CreateSnapshot(arg0 *simspaceweaver.CreateSnapshotInput) (*simspaceweaver.CreateSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSnapshot", arg0)
+	ret0, _ := ret[0].(*simspaceweaver.CreateSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSnapshot indicates an expected call of CreateSnapshot
+func (mr *MockSimSpaceWeaverAPIMockRecorder) CreateSnapshot(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshot", reflect.TypeOf((*MockSimSpaceWeaverAPI)(nil).CreateSnapshot), arg0)
+}
+
+// CreateSnapshotRequest mocks base method
+func (m *MockSimSpaceWeaverAPI) CreateSnapshotRequest(arg0 *simspaceweaver.CreateSnapshotInput) (*request.Request, *simspaceweaver.CreateSnapshotOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSnapshotRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*simspaceweaver.CreateSnapshotOutput)
+	return ret0, ret1
+}
+
+// CreateSnapshotRequest indicates an expected call of CreateSnapshotRequest
+func (mr *MockSimSpaceWeaverAPIMockRecorder) CreateSnapshotRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshotRequest", reflect.TypeOf((*MockSimSpaceWeaverAPI)(nil).CreateSnapshotRequest), arg0)
+}
+
+// CreateSnapshotWithContext mocks base method
+func (m *MockSimSpaceWeaverAPI) CreateSnapshotWithContext(arg0 context.Context, arg1 *simspaceweaver.CreateSnapshotInput, arg2 ...request.Option) (*simspaceweaver.CreateSnapshotOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSnapshotWithContext", varargs...)
+	ret0, _ := ret[0].(*simspaceweaver.CreateSnapshotOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSnapshotWithContext indicates an expected call of CreateSnapshotWithContext
+func (mr *MockSimSpaceWeaverAPIMockRecorder) CreateSnapshotWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSnapshotWithContext", reflect.TypeOf((*MockSimSpaceWeaverAPI)(nil).CreateSnapshotWithContext), varargs...)
+}
+
 // DeleteApp mocks base method
 func (m *MockSimSpaceWeaverAPI) DeleteApp(arg0 *simspaceweaver.DeleteAppInput) (*simspaceweaver.DeleteAppOutput, error) {
 	m.ctrl.T.Helper()
