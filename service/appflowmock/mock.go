@@ -35,6 +35,56 @@ func (m *MockAppflowAPI) EXPECT() *MockAppflowAPIMockRecorder {
 	return m.recorder
 }
 
+// CancelFlowExecutions mocks base method
+func (m *MockAppflowAPI) CancelFlowExecutions(arg0 *appflow.CancelFlowExecutionsInput) (*appflow.CancelFlowExecutionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelFlowExecutions", arg0)
+	ret0, _ := ret[0].(*appflow.CancelFlowExecutionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelFlowExecutions indicates an expected call of CancelFlowExecutions
+func (mr *MockAppflowAPIMockRecorder) CancelFlowExecutions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelFlowExecutions", reflect.TypeOf((*MockAppflowAPI)(nil).CancelFlowExecutions), arg0)
+}
+
+// CancelFlowExecutionsRequest mocks base method
+func (m *MockAppflowAPI) CancelFlowExecutionsRequest(arg0 *appflow.CancelFlowExecutionsInput) (*request.Request, *appflow.CancelFlowExecutionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelFlowExecutionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appflow.CancelFlowExecutionsOutput)
+	return ret0, ret1
+}
+
+// CancelFlowExecutionsRequest indicates an expected call of CancelFlowExecutionsRequest
+func (mr *MockAppflowAPIMockRecorder) CancelFlowExecutionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelFlowExecutionsRequest", reflect.TypeOf((*MockAppflowAPI)(nil).CancelFlowExecutionsRequest), arg0)
+}
+
+// CancelFlowExecutionsWithContext mocks base method
+func (m *MockAppflowAPI) CancelFlowExecutionsWithContext(arg0 context.Context, arg1 *appflow.CancelFlowExecutionsInput, arg2 ...request.Option) (*appflow.CancelFlowExecutionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelFlowExecutionsWithContext", varargs...)
+	ret0, _ := ret[0].(*appflow.CancelFlowExecutionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelFlowExecutionsWithContext indicates an expected call of CancelFlowExecutionsWithContext
+func (mr *MockAppflowAPIMockRecorder) CancelFlowExecutionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelFlowExecutionsWithContext", reflect.TypeOf((*MockAppflowAPI)(nil).CancelFlowExecutionsWithContext), varargs...)
+}
+
 // CreateConnectorProfile mocks base method
 func (m *MockAppflowAPI) CreateConnectorProfile(arg0 *appflow.CreateConnectorProfileInput) (*appflow.CreateConnectorProfileOutput, error) {
 	m.ctrl.T.Helper()
