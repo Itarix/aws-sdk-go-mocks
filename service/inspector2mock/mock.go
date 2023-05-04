@@ -185,6 +185,106 @@ func (mr *MockInspector2APIMockRecorder) BatchGetFreeTrialInfoWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetFreeTrialInfoWithContext", reflect.TypeOf((*MockInspector2API)(nil).BatchGetFreeTrialInfoWithContext), varargs...)
 }
 
+// BatchGetMemberEc2DeepInspectionStatus mocks base method
+func (m *MockInspector2API) BatchGetMemberEc2DeepInspectionStatus(arg0 *inspector2.BatchGetMemberEc2DeepInspectionStatusInput) (*inspector2.BatchGetMemberEc2DeepInspectionStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetMemberEc2DeepInspectionStatus", arg0)
+	ret0, _ := ret[0].(*inspector2.BatchGetMemberEc2DeepInspectionStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetMemberEc2DeepInspectionStatus indicates an expected call of BatchGetMemberEc2DeepInspectionStatus
+func (mr *MockInspector2APIMockRecorder) BatchGetMemberEc2DeepInspectionStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetMemberEc2DeepInspectionStatus", reflect.TypeOf((*MockInspector2API)(nil).BatchGetMemberEc2DeepInspectionStatus), arg0)
+}
+
+// BatchGetMemberEc2DeepInspectionStatusRequest mocks base method
+func (m *MockInspector2API) BatchGetMemberEc2DeepInspectionStatusRequest(arg0 *inspector2.BatchGetMemberEc2DeepInspectionStatusInput) (*request.Request, *inspector2.BatchGetMemberEc2DeepInspectionStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetMemberEc2DeepInspectionStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.BatchGetMemberEc2DeepInspectionStatusOutput)
+	return ret0, ret1
+}
+
+// BatchGetMemberEc2DeepInspectionStatusRequest indicates an expected call of BatchGetMemberEc2DeepInspectionStatusRequest
+func (mr *MockInspector2APIMockRecorder) BatchGetMemberEc2DeepInspectionStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetMemberEc2DeepInspectionStatusRequest", reflect.TypeOf((*MockInspector2API)(nil).BatchGetMemberEc2DeepInspectionStatusRequest), arg0)
+}
+
+// BatchGetMemberEc2DeepInspectionStatusWithContext mocks base method
+func (m *MockInspector2API) BatchGetMemberEc2DeepInspectionStatusWithContext(arg0 context.Context, arg1 *inspector2.BatchGetMemberEc2DeepInspectionStatusInput, arg2 ...request.Option) (*inspector2.BatchGetMemberEc2DeepInspectionStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetMemberEc2DeepInspectionStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.BatchGetMemberEc2DeepInspectionStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetMemberEc2DeepInspectionStatusWithContext indicates an expected call of BatchGetMemberEc2DeepInspectionStatusWithContext
+func (mr *MockInspector2APIMockRecorder) BatchGetMemberEc2DeepInspectionStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetMemberEc2DeepInspectionStatusWithContext", reflect.TypeOf((*MockInspector2API)(nil).BatchGetMemberEc2DeepInspectionStatusWithContext), varargs...)
+}
+
+// BatchUpdateMemberEc2DeepInspectionStatus mocks base method
+func (m *MockInspector2API) BatchUpdateMemberEc2DeepInspectionStatus(arg0 *inspector2.BatchUpdateMemberEc2DeepInspectionStatusInput) (*inspector2.BatchUpdateMemberEc2DeepInspectionStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchUpdateMemberEc2DeepInspectionStatus", arg0)
+	ret0, _ := ret[0].(*inspector2.BatchUpdateMemberEc2DeepInspectionStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchUpdateMemberEc2DeepInspectionStatus indicates an expected call of BatchUpdateMemberEc2DeepInspectionStatus
+func (mr *MockInspector2APIMockRecorder) BatchUpdateMemberEc2DeepInspectionStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateMemberEc2DeepInspectionStatus", reflect.TypeOf((*MockInspector2API)(nil).BatchUpdateMemberEc2DeepInspectionStatus), arg0)
+}
+
+// BatchUpdateMemberEc2DeepInspectionStatusRequest mocks base method
+func (m *MockInspector2API) BatchUpdateMemberEc2DeepInspectionStatusRequest(arg0 *inspector2.BatchUpdateMemberEc2DeepInspectionStatusInput) (*request.Request, *inspector2.BatchUpdateMemberEc2DeepInspectionStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchUpdateMemberEc2DeepInspectionStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.BatchUpdateMemberEc2DeepInspectionStatusOutput)
+	return ret0, ret1
+}
+
+// BatchUpdateMemberEc2DeepInspectionStatusRequest indicates an expected call of BatchUpdateMemberEc2DeepInspectionStatusRequest
+func (mr *MockInspector2APIMockRecorder) BatchUpdateMemberEc2DeepInspectionStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateMemberEc2DeepInspectionStatusRequest", reflect.TypeOf((*MockInspector2API)(nil).BatchUpdateMemberEc2DeepInspectionStatusRequest), arg0)
+}
+
+// BatchUpdateMemberEc2DeepInspectionStatusWithContext mocks base method
+func (m *MockInspector2API) BatchUpdateMemberEc2DeepInspectionStatusWithContext(arg0 context.Context, arg1 *inspector2.BatchUpdateMemberEc2DeepInspectionStatusInput, arg2 ...request.Option) (*inspector2.BatchUpdateMemberEc2DeepInspectionStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchUpdateMemberEc2DeepInspectionStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.BatchUpdateMemberEc2DeepInspectionStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchUpdateMemberEc2DeepInspectionStatusWithContext indicates an expected call of BatchUpdateMemberEc2DeepInspectionStatusWithContext
+func (mr *MockInspector2APIMockRecorder) BatchUpdateMemberEc2DeepInspectionStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateMemberEc2DeepInspectionStatusWithContext", reflect.TypeOf((*MockInspector2API)(nil).BatchUpdateMemberEc2DeepInspectionStatusWithContext), varargs...)
+}
+
 // CancelFindingsReport mocks base method
 func (m *MockInspector2API) CancelFindingsReport(arg0 *inspector2.CancelFindingsReportInput) (*inspector2.CancelFindingsReportOutput, error) {
 	m.ctrl.T.Helper()
@@ -783,6 +883,56 @@ func (mr *MockInspector2APIMockRecorder) GetDelegatedAdminAccountWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDelegatedAdminAccountWithContext", reflect.TypeOf((*MockInspector2API)(nil).GetDelegatedAdminAccountWithContext), varargs...)
+}
+
+// GetEc2DeepInspectionConfiguration mocks base method
+func (m *MockInspector2API) GetEc2DeepInspectionConfiguration(arg0 *inspector2.GetEc2DeepInspectionConfigurationInput) (*inspector2.GetEc2DeepInspectionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEc2DeepInspectionConfiguration", arg0)
+	ret0, _ := ret[0].(*inspector2.GetEc2DeepInspectionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEc2DeepInspectionConfiguration indicates an expected call of GetEc2DeepInspectionConfiguration
+func (mr *MockInspector2APIMockRecorder) GetEc2DeepInspectionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEc2DeepInspectionConfiguration", reflect.TypeOf((*MockInspector2API)(nil).GetEc2DeepInspectionConfiguration), arg0)
+}
+
+// GetEc2DeepInspectionConfigurationRequest mocks base method
+func (m *MockInspector2API) GetEc2DeepInspectionConfigurationRequest(arg0 *inspector2.GetEc2DeepInspectionConfigurationInput) (*request.Request, *inspector2.GetEc2DeepInspectionConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEc2DeepInspectionConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.GetEc2DeepInspectionConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetEc2DeepInspectionConfigurationRequest indicates an expected call of GetEc2DeepInspectionConfigurationRequest
+func (mr *MockInspector2APIMockRecorder) GetEc2DeepInspectionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEc2DeepInspectionConfigurationRequest", reflect.TypeOf((*MockInspector2API)(nil).GetEc2DeepInspectionConfigurationRequest), arg0)
+}
+
+// GetEc2DeepInspectionConfigurationWithContext mocks base method
+func (m *MockInspector2API) GetEc2DeepInspectionConfigurationWithContext(arg0 context.Context, arg1 *inspector2.GetEc2DeepInspectionConfigurationInput, arg2 ...request.Option) (*inspector2.GetEc2DeepInspectionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetEc2DeepInspectionConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.GetEc2DeepInspectionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEc2DeepInspectionConfigurationWithContext indicates an expected call of GetEc2DeepInspectionConfigurationWithContext
+func (mr *MockInspector2APIMockRecorder) GetEc2DeepInspectionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEc2DeepInspectionConfigurationWithContext", reflect.TypeOf((*MockInspector2API)(nil).GetEc2DeepInspectionConfigurationWithContext), varargs...)
 }
 
 // GetFindingsReportStatus mocks base method
@@ -1832,6 +1982,56 @@ func (mr *MockInspector2APIMockRecorder) UpdateConfigurationWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfigurationWithContext", reflect.TypeOf((*MockInspector2API)(nil).UpdateConfigurationWithContext), varargs...)
 }
 
+// UpdateEc2DeepInspectionConfiguration mocks base method
+func (m *MockInspector2API) UpdateEc2DeepInspectionConfiguration(arg0 *inspector2.UpdateEc2DeepInspectionConfigurationInput) (*inspector2.UpdateEc2DeepInspectionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateEc2DeepInspectionConfiguration", arg0)
+	ret0, _ := ret[0].(*inspector2.UpdateEc2DeepInspectionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateEc2DeepInspectionConfiguration indicates an expected call of UpdateEc2DeepInspectionConfiguration
+func (mr *MockInspector2APIMockRecorder) UpdateEc2DeepInspectionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEc2DeepInspectionConfiguration", reflect.TypeOf((*MockInspector2API)(nil).UpdateEc2DeepInspectionConfiguration), arg0)
+}
+
+// UpdateEc2DeepInspectionConfigurationRequest mocks base method
+func (m *MockInspector2API) UpdateEc2DeepInspectionConfigurationRequest(arg0 *inspector2.UpdateEc2DeepInspectionConfigurationInput) (*request.Request, *inspector2.UpdateEc2DeepInspectionConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateEc2DeepInspectionConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.UpdateEc2DeepInspectionConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateEc2DeepInspectionConfigurationRequest indicates an expected call of UpdateEc2DeepInspectionConfigurationRequest
+func (mr *MockInspector2APIMockRecorder) UpdateEc2DeepInspectionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEc2DeepInspectionConfigurationRequest", reflect.TypeOf((*MockInspector2API)(nil).UpdateEc2DeepInspectionConfigurationRequest), arg0)
+}
+
+// UpdateEc2DeepInspectionConfigurationWithContext mocks base method
+func (m *MockInspector2API) UpdateEc2DeepInspectionConfigurationWithContext(arg0 context.Context, arg1 *inspector2.UpdateEc2DeepInspectionConfigurationInput, arg2 ...request.Option) (*inspector2.UpdateEc2DeepInspectionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateEc2DeepInspectionConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.UpdateEc2DeepInspectionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateEc2DeepInspectionConfigurationWithContext indicates an expected call of UpdateEc2DeepInspectionConfigurationWithContext
+func (mr *MockInspector2APIMockRecorder) UpdateEc2DeepInspectionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEc2DeepInspectionConfigurationWithContext", reflect.TypeOf((*MockInspector2API)(nil).UpdateEc2DeepInspectionConfigurationWithContext), varargs...)
+}
+
 // UpdateFilter mocks base method
 func (m *MockInspector2API) UpdateFilter(arg0 *inspector2.UpdateFilterInput) (*inspector2.UpdateFilterOutput, error) {
 	m.ctrl.T.Helper()
@@ -1880,6 +2080,56 @@ func (mr *MockInspector2APIMockRecorder) UpdateFilterWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFilterWithContext", reflect.TypeOf((*MockInspector2API)(nil).UpdateFilterWithContext), varargs...)
+}
+
+// UpdateOrgEc2DeepInspectionConfiguration mocks base method
+func (m *MockInspector2API) UpdateOrgEc2DeepInspectionConfiguration(arg0 *inspector2.UpdateOrgEc2DeepInspectionConfigurationInput) (*inspector2.UpdateOrgEc2DeepInspectionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateOrgEc2DeepInspectionConfiguration", arg0)
+	ret0, _ := ret[0].(*inspector2.UpdateOrgEc2DeepInspectionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateOrgEc2DeepInspectionConfiguration indicates an expected call of UpdateOrgEc2DeepInspectionConfiguration
+func (mr *MockInspector2APIMockRecorder) UpdateOrgEc2DeepInspectionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOrgEc2DeepInspectionConfiguration", reflect.TypeOf((*MockInspector2API)(nil).UpdateOrgEc2DeepInspectionConfiguration), arg0)
+}
+
+// UpdateOrgEc2DeepInspectionConfigurationRequest mocks base method
+func (m *MockInspector2API) UpdateOrgEc2DeepInspectionConfigurationRequest(arg0 *inspector2.UpdateOrgEc2DeepInspectionConfigurationInput) (*request.Request, *inspector2.UpdateOrgEc2DeepInspectionConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateOrgEc2DeepInspectionConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.UpdateOrgEc2DeepInspectionConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateOrgEc2DeepInspectionConfigurationRequest indicates an expected call of UpdateOrgEc2DeepInspectionConfigurationRequest
+func (mr *MockInspector2APIMockRecorder) UpdateOrgEc2DeepInspectionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOrgEc2DeepInspectionConfigurationRequest", reflect.TypeOf((*MockInspector2API)(nil).UpdateOrgEc2DeepInspectionConfigurationRequest), arg0)
+}
+
+// UpdateOrgEc2DeepInspectionConfigurationWithContext mocks base method
+func (m *MockInspector2API) UpdateOrgEc2DeepInspectionConfigurationWithContext(arg0 context.Context, arg1 *inspector2.UpdateOrgEc2DeepInspectionConfigurationInput, arg2 ...request.Option) (*inspector2.UpdateOrgEc2DeepInspectionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateOrgEc2DeepInspectionConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.UpdateOrgEc2DeepInspectionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateOrgEc2DeepInspectionConfigurationWithContext indicates an expected call of UpdateOrgEc2DeepInspectionConfigurationWithContext
+func (mr *MockInspector2APIMockRecorder) UpdateOrgEc2DeepInspectionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateOrgEc2DeepInspectionConfigurationWithContext", reflect.TypeOf((*MockInspector2API)(nil).UpdateOrgEc2DeepInspectionConfigurationWithContext), varargs...)
 }
 
 // UpdateOrganizationConfiguration mocks base method
