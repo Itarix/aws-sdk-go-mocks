@@ -983,6 +983,56 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeDomainHealthWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainHealthWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeDomainHealthWithContext), varargs...)
 }
 
+// DescribeDomainNodes mocks base method
+func (m *MockOpenSearchServiceAPI) DescribeDomainNodes(arg0 *opensearchservice.DescribeDomainNodesInput) (*opensearchservice.DescribeDomainNodesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDomainNodes", arg0)
+	ret0, _ := ret[0].(*opensearchservice.DescribeDomainNodesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDomainNodes indicates an expected call of DescribeDomainNodes
+func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeDomainNodes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainNodes", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeDomainNodes), arg0)
+}
+
+// DescribeDomainNodesRequest mocks base method
+func (m *MockOpenSearchServiceAPI) DescribeDomainNodesRequest(arg0 *opensearchservice.DescribeDomainNodesInput) (*request.Request, *opensearchservice.DescribeDomainNodesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeDomainNodesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.DescribeDomainNodesOutput)
+	return ret0, ret1
+}
+
+// DescribeDomainNodesRequest indicates an expected call of DescribeDomainNodesRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeDomainNodesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainNodesRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeDomainNodesRequest), arg0)
+}
+
+// DescribeDomainNodesWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) DescribeDomainNodesWithContext(arg0 context.Context, arg1 *opensearchservice.DescribeDomainNodesInput, arg2 ...request.Option) (*opensearchservice.DescribeDomainNodesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeDomainNodesWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.DescribeDomainNodesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeDomainNodesWithContext indicates an expected call of DescribeDomainNodesWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) DescribeDomainNodesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDomainNodesWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).DescribeDomainNodesWithContext), varargs...)
+}
+
 // DescribeDomainRequest mocks base method
 func (m *MockOpenSearchServiceAPI) DescribeDomainRequest(arg0 *opensearchservice.DescribeDomainInput) (*request.Request, *opensearchservice.DescribeDomainOutput) {
 	m.ctrl.T.Helper()
