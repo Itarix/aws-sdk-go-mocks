@@ -1832,6 +1832,89 @@ func (mr *MockInspector2APIMockRecorder) ListUsageTotalsWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsageTotalsWithContext", reflect.TypeOf((*MockInspector2API)(nil).ListUsageTotalsWithContext), varargs...)
 }
 
+// SearchVulnerabilities mocks base method
+func (m *MockInspector2API) SearchVulnerabilities(arg0 *inspector2.SearchVulnerabilitiesInput) (*inspector2.SearchVulnerabilitiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchVulnerabilities", arg0)
+	ret0, _ := ret[0].(*inspector2.SearchVulnerabilitiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchVulnerabilities indicates an expected call of SearchVulnerabilities
+func (mr *MockInspector2APIMockRecorder) SearchVulnerabilities(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchVulnerabilities", reflect.TypeOf((*MockInspector2API)(nil).SearchVulnerabilities), arg0)
+}
+
+// SearchVulnerabilitiesPages mocks base method
+func (m *MockInspector2API) SearchVulnerabilitiesPages(arg0 *inspector2.SearchVulnerabilitiesInput, arg1 func(*inspector2.SearchVulnerabilitiesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchVulnerabilitiesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchVulnerabilitiesPages indicates an expected call of SearchVulnerabilitiesPages
+func (mr *MockInspector2APIMockRecorder) SearchVulnerabilitiesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchVulnerabilitiesPages", reflect.TypeOf((*MockInspector2API)(nil).SearchVulnerabilitiesPages), arg0, arg1)
+}
+
+// SearchVulnerabilitiesPagesWithContext mocks base method
+func (m *MockInspector2API) SearchVulnerabilitiesPagesWithContext(arg0 context.Context, arg1 *inspector2.SearchVulnerabilitiesInput, arg2 func(*inspector2.SearchVulnerabilitiesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchVulnerabilitiesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchVulnerabilitiesPagesWithContext indicates an expected call of SearchVulnerabilitiesPagesWithContext
+func (mr *MockInspector2APIMockRecorder) SearchVulnerabilitiesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchVulnerabilitiesPagesWithContext", reflect.TypeOf((*MockInspector2API)(nil).SearchVulnerabilitiesPagesWithContext), varargs...)
+}
+
+// SearchVulnerabilitiesRequest mocks base method
+func (m *MockInspector2API) SearchVulnerabilitiesRequest(arg0 *inspector2.SearchVulnerabilitiesInput) (*request.Request, *inspector2.SearchVulnerabilitiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchVulnerabilitiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.SearchVulnerabilitiesOutput)
+	return ret0, ret1
+}
+
+// SearchVulnerabilitiesRequest indicates an expected call of SearchVulnerabilitiesRequest
+func (mr *MockInspector2APIMockRecorder) SearchVulnerabilitiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchVulnerabilitiesRequest", reflect.TypeOf((*MockInspector2API)(nil).SearchVulnerabilitiesRequest), arg0)
+}
+
+// SearchVulnerabilitiesWithContext mocks base method
+func (m *MockInspector2API) SearchVulnerabilitiesWithContext(arg0 context.Context, arg1 *inspector2.SearchVulnerabilitiesInput, arg2 ...request.Option) (*inspector2.SearchVulnerabilitiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchVulnerabilitiesWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.SearchVulnerabilitiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchVulnerabilitiesWithContext indicates an expected call of SearchVulnerabilitiesWithContext
+func (mr *MockInspector2APIMockRecorder) SearchVulnerabilitiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchVulnerabilitiesWithContext", reflect.TypeOf((*MockInspector2API)(nil).SearchVulnerabilitiesWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockInspector2API) TagResource(arg0 *inspector2.TagResourceInput) (*inspector2.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
