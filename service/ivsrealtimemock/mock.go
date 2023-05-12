@@ -235,6 +235,56 @@ func (mr *MockIVSRealTimeAPIMockRecorder) DisconnectParticipantWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisconnectParticipantWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).DisconnectParticipantWithContext), varargs...)
 }
 
+// GetParticipant mocks base method
+func (m *MockIVSRealTimeAPI) GetParticipant(arg0 *ivsrealtime.GetParticipantInput) (*ivsrealtime.GetParticipantOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetParticipant", arg0)
+	ret0, _ := ret[0].(*ivsrealtime.GetParticipantOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetParticipant indicates an expected call of GetParticipant
+func (mr *MockIVSRealTimeAPIMockRecorder) GetParticipant(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetParticipant", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).GetParticipant), arg0)
+}
+
+// GetParticipantRequest mocks base method
+func (m *MockIVSRealTimeAPI) GetParticipantRequest(arg0 *ivsrealtime.GetParticipantInput) (*request.Request, *ivsrealtime.GetParticipantOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetParticipantRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivsrealtime.GetParticipantOutput)
+	return ret0, ret1
+}
+
+// GetParticipantRequest indicates an expected call of GetParticipantRequest
+func (mr *MockIVSRealTimeAPIMockRecorder) GetParticipantRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetParticipantRequest", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).GetParticipantRequest), arg0)
+}
+
+// GetParticipantWithContext mocks base method
+func (m *MockIVSRealTimeAPI) GetParticipantWithContext(arg0 context.Context, arg1 *ivsrealtime.GetParticipantInput, arg2 ...request.Option) (*ivsrealtime.GetParticipantOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetParticipantWithContext", varargs...)
+	ret0, _ := ret[0].(*ivsrealtime.GetParticipantOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetParticipantWithContext indicates an expected call of GetParticipantWithContext
+func (mr *MockIVSRealTimeAPIMockRecorder) GetParticipantWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetParticipantWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).GetParticipantWithContext), varargs...)
+}
+
 // GetStage mocks base method
 func (m *MockIVSRealTimeAPI) GetStage(arg0 *ivsrealtime.GetStageInput) (*ivsrealtime.GetStageOutput, error) {
 	m.ctrl.T.Helper()
@@ -265,6 +315,56 @@ func (mr *MockIVSRealTimeAPIMockRecorder) GetStageRequest(arg0 interface{}) *gom
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStageRequest", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).GetStageRequest), arg0)
 }
 
+// GetStageSession mocks base method
+func (m *MockIVSRealTimeAPI) GetStageSession(arg0 *ivsrealtime.GetStageSessionInput) (*ivsrealtime.GetStageSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStageSession", arg0)
+	ret0, _ := ret[0].(*ivsrealtime.GetStageSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStageSession indicates an expected call of GetStageSession
+func (mr *MockIVSRealTimeAPIMockRecorder) GetStageSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStageSession", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).GetStageSession), arg0)
+}
+
+// GetStageSessionRequest mocks base method
+func (m *MockIVSRealTimeAPI) GetStageSessionRequest(arg0 *ivsrealtime.GetStageSessionInput) (*request.Request, *ivsrealtime.GetStageSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetStageSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivsrealtime.GetStageSessionOutput)
+	return ret0, ret1
+}
+
+// GetStageSessionRequest indicates an expected call of GetStageSessionRequest
+func (mr *MockIVSRealTimeAPIMockRecorder) GetStageSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStageSessionRequest", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).GetStageSessionRequest), arg0)
+}
+
+// GetStageSessionWithContext mocks base method
+func (m *MockIVSRealTimeAPI) GetStageSessionWithContext(arg0 context.Context, arg1 *ivsrealtime.GetStageSessionInput, arg2 ...request.Option) (*ivsrealtime.GetStageSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetStageSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*ivsrealtime.GetStageSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetStageSessionWithContext indicates an expected call of GetStageSessionWithContext
+func (mr *MockIVSRealTimeAPIMockRecorder) GetStageSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStageSessionWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).GetStageSessionWithContext), varargs...)
+}
+
 // GetStageWithContext mocks base method
 func (m *MockIVSRealTimeAPI) GetStageWithContext(arg0 context.Context, arg1 *ivsrealtime.GetStageInput, arg2 ...request.Option) (*ivsrealtime.GetStageOutput, error) {
 	m.ctrl.T.Helper()
@@ -283,6 +383,255 @@ func (mr *MockIVSRealTimeAPIMockRecorder) GetStageWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStageWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).GetStageWithContext), varargs...)
+}
+
+// ListParticipantEvents mocks base method
+func (m *MockIVSRealTimeAPI) ListParticipantEvents(arg0 *ivsrealtime.ListParticipantEventsInput) (*ivsrealtime.ListParticipantEventsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListParticipantEvents", arg0)
+	ret0, _ := ret[0].(*ivsrealtime.ListParticipantEventsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListParticipantEvents indicates an expected call of ListParticipantEvents
+func (mr *MockIVSRealTimeAPIMockRecorder) ListParticipantEvents(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListParticipantEvents", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListParticipantEvents), arg0)
+}
+
+// ListParticipantEventsPages mocks base method
+func (m *MockIVSRealTimeAPI) ListParticipantEventsPages(arg0 *ivsrealtime.ListParticipantEventsInput, arg1 func(*ivsrealtime.ListParticipantEventsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListParticipantEventsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListParticipantEventsPages indicates an expected call of ListParticipantEventsPages
+func (mr *MockIVSRealTimeAPIMockRecorder) ListParticipantEventsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListParticipantEventsPages", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListParticipantEventsPages), arg0, arg1)
+}
+
+// ListParticipantEventsPagesWithContext mocks base method
+func (m *MockIVSRealTimeAPI) ListParticipantEventsPagesWithContext(arg0 context.Context, arg1 *ivsrealtime.ListParticipantEventsInput, arg2 func(*ivsrealtime.ListParticipantEventsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListParticipantEventsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListParticipantEventsPagesWithContext indicates an expected call of ListParticipantEventsPagesWithContext
+func (mr *MockIVSRealTimeAPIMockRecorder) ListParticipantEventsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListParticipantEventsPagesWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListParticipantEventsPagesWithContext), varargs...)
+}
+
+// ListParticipantEventsRequest mocks base method
+func (m *MockIVSRealTimeAPI) ListParticipantEventsRequest(arg0 *ivsrealtime.ListParticipantEventsInput) (*request.Request, *ivsrealtime.ListParticipantEventsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListParticipantEventsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivsrealtime.ListParticipantEventsOutput)
+	return ret0, ret1
+}
+
+// ListParticipantEventsRequest indicates an expected call of ListParticipantEventsRequest
+func (mr *MockIVSRealTimeAPIMockRecorder) ListParticipantEventsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListParticipantEventsRequest", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListParticipantEventsRequest), arg0)
+}
+
+// ListParticipantEventsWithContext mocks base method
+func (m *MockIVSRealTimeAPI) ListParticipantEventsWithContext(arg0 context.Context, arg1 *ivsrealtime.ListParticipantEventsInput, arg2 ...request.Option) (*ivsrealtime.ListParticipantEventsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListParticipantEventsWithContext", varargs...)
+	ret0, _ := ret[0].(*ivsrealtime.ListParticipantEventsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListParticipantEventsWithContext indicates an expected call of ListParticipantEventsWithContext
+func (mr *MockIVSRealTimeAPIMockRecorder) ListParticipantEventsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListParticipantEventsWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListParticipantEventsWithContext), varargs...)
+}
+
+// ListParticipants mocks base method
+func (m *MockIVSRealTimeAPI) ListParticipants(arg0 *ivsrealtime.ListParticipantsInput) (*ivsrealtime.ListParticipantsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListParticipants", arg0)
+	ret0, _ := ret[0].(*ivsrealtime.ListParticipantsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListParticipants indicates an expected call of ListParticipants
+func (mr *MockIVSRealTimeAPIMockRecorder) ListParticipants(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListParticipants", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListParticipants), arg0)
+}
+
+// ListParticipantsPages mocks base method
+func (m *MockIVSRealTimeAPI) ListParticipantsPages(arg0 *ivsrealtime.ListParticipantsInput, arg1 func(*ivsrealtime.ListParticipantsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListParticipantsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListParticipantsPages indicates an expected call of ListParticipantsPages
+func (mr *MockIVSRealTimeAPIMockRecorder) ListParticipantsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListParticipantsPages", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListParticipantsPages), arg0, arg1)
+}
+
+// ListParticipantsPagesWithContext mocks base method
+func (m *MockIVSRealTimeAPI) ListParticipantsPagesWithContext(arg0 context.Context, arg1 *ivsrealtime.ListParticipantsInput, arg2 func(*ivsrealtime.ListParticipantsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListParticipantsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListParticipantsPagesWithContext indicates an expected call of ListParticipantsPagesWithContext
+func (mr *MockIVSRealTimeAPIMockRecorder) ListParticipantsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListParticipantsPagesWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListParticipantsPagesWithContext), varargs...)
+}
+
+// ListParticipantsRequest mocks base method
+func (m *MockIVSRealTimeAPI) ListParticipantsRequest(arg0 *ivsrealtime.ListParticipantsInput) (*request.Request, *ivsrealtime.ListParticipantsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListParticipantsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivsrealtime.ListParticipantsOutput)
+	return ret0, ret1
+}
+
+// ListParticipantsRequest indicates an expected call of ListParticipantsRequest
+func (mr *MockIVSRealTimeAPIMockRecorder) ListParticipantsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListParticipantsRequest", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListParticipantsRequest), arg0)
+}
+
+// ListParticipantsWithContext mocks base method
+func (m *MockIVSRealTimeAPI) ListParticipantsWithContext(arg0 context.Context, arg1 *ivsrealtime.ListParticipantsInput, arg2 ...request.Option) (*ivsrealtime.ListParticipantsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListParticipantsWithContext", varargs...)
+	ret0, _ := ret[0].(*ivsrealtime.ListParticipantsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListParticipantsWithContext indicates an expected call of ListParticipantsWithContext
+func (mr *MockIVSRealTimeAPIMockRecorder) ListParticipantsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListParticipantsWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListParticipantsWithContext), varargs...)
+}
+
+// ListStageSessions mocks base method
+func (m *MockIVSRealTimeAPI) ListStageSessions(arg0 *ivsrealtime.ListStageSessionsInput) (*ivsrealtime.ListStageSessionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStageSessions", arg0)
+	ret0, _ := ret[0].(*ivsrealtime.ListStageSessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStageSessions indicates an expected call of ListStageSessions
+func (mr *MockIVSRealTimeAPIMockRecorder) ListStageSessions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStageSessions", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListStageSessions), arg0)
+}
+
+// ListStageSessionsPages mocks base method
+func (m *MockIVSRealTimeAPI) ListStageSessionsPages(arg0 *ivsrealtime.ListStageSessionsInput, arg1 func(*ivsrealtime.ListStageSessionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStageSessionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStageSessionsPages indicates an expected call of ListStageSessionsPages
+func (mr *MockIVSRealTimeAPIMockRecorder) ListStageSessionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStageSessionsPages", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListStageSessionsPages), arg0, arg1)
+}
+
+// ListStageSessionsPagesWithContext mocks base method
+func (m *MockIVSRealTimeAPI) ListStageSessionsPagesWithContext(arg0 context.Context, arg1 *ivsrealtime.ListStageSessionsInput, arg2 func(*ivsrealtime.ListStageSessionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStageSessionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListStageSessionsPagesWithContext indicates an expected call of ListStageSessionsPagesWithContext
+func (mr *MockIVSRealTimeAPIMockRecorder) ListStageSessionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStageSessionsPagesWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListStageSessionsPagesWithContext), varargs...)
+}
+
+// ListStageSessionsRequest mocks base method
+func (m *MockIVSRealTimeAPI) ListStageSessionsRequest(arg0 *ivsrealtime.ListStageSessionsInput) (*request.Request, *ivsrealtime.ListStageSessionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStageSessionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivsrealtime.ListStageSessionsOutput)
+	return ret0, ret1
+}
+
+// ListStageSessionsRequest indicates an expected call of ListStageSessionsRequest
+func (mr *MockIVSRealTimeAPIMockRecorder) ListStageSessionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStageSessionsRequest", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListStageSessionsRequest), arg0)
+}
+
+// ListStageSessionsWithContext mocks base method
+func (m *MockIVSRealTimeAPI) ListStageSessionsWithContext(arg0 context.Context, arg1 *ivsrealtime.ListStageSessionsInput, arg2 ...request.Option) (*ivsrealtime.ListStageSessionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStageSessionsWithContext", varargs...)
+	ret0, _ := ret[0].(*ivsrealtime.ListStageSessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStageSessionsWithContext indicates an expected call of ListStageSessionsWithContext
+func (mr *MockIVSRealTimeAPIMockRecorder) ListStageSessionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStageSessionsWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListStageSessionsWithContext), varargs...)
 }
 
 // ListStages mocks base method

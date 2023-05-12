@@ -35,6 +35,56 @@ func (m *MockOmicsAPI) EXPECT() *MockOmicsAPIMockRecorder {
 	return m.recorder
 }
 
+// AbortMultipartReadSetUpload mocks base method
+func (m *MockOmicsAPI) AbortMultipartReadSetUpload(arg0 *omics.AbortMultipartReadSetUploadInput) (*omics.AbortMultipartReadSetUploadOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AbortMultipartReadSetUpload", arg0)
+	ret0, _ := ret[0].(*omics.AbortMultipartReadSetUploadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AbortMultipartReadSetUpload indicates an expected call of AbortMultipartReadSetUpload
+func (mr *MockOmicsAPIMockRecorder) AbortMultipartReadSetUpload(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortMultipartReadSetUpload", reflect.TypeOf((*MockOmicsAPI)(nil).AbortMultipartReadSetUpload), arg0)
+}
+
+// AbortMultipartReadSetUploadRequest mocks base method
+func (m *MockOmicsAPI) AbortMultipartReadSetUploadRequest(arg0 *omics.AbortMultipartReadSetUploadInput) (*request.Request, *omics.AbortMultipartReadSetUploadOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AbortMultipartReadSetUploadRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.AbortMultipartReadSetUploadOutput)
+	return ret0, ret1
+}
+
+// AbortMultipartReadSetUploadRequest indicates an expected call of AbortMultipartReadSetUploadRequest
+func (mr *MockOmicsAPIMockRecorder) AbortMultipartReadSetUploadRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortMultipartReadSetUploadRequest", reflect.TypeOf((*MockOmicsAPI)(nil).AbortMultipartReadSetUploadRequest), arg0)
+}
+
+// AbortMultipartReadSetUploadWithContext mocks base method
+func (m *MockOmicsAPI) AbortMultipartReadSetUploadWithContext(arg0 context.Context, arg1 *omics.AbortMultipartReadSetUploadInput, arg2 ...request.Option) (*omics.AbortMultipartReadSetUploadOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AbortMultipartReadSetUploadWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.AbortMultipartReadSetUploadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AbortMultipartReadSetUploadWithContext indicates an expected call of AbortMultipartReadSetUploadWithContext
+func (mr *MockOmicsAPIMockRecorder) AbortMultipartReadSetUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortMultipartReadSetUploadWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).AbortMultipartReadSetUploadWithContext), varargs...)
+}
+
 // BatchDeleteReadSet mocks base method
 func (m *MockOmicsAPI) BatchDeleteReadSet(arg0 *omics.BatchDeleteReadSetInput) (*omics.BatchDeleteReadSetOutput, error) {
 	m.ctrl.T.Helper()
@@ -235,6 +285,56 @@ func (mr *MockOmicsAPIMockRecorder) CancelVariantImportJobWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelVariantImportJobWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).CancelVariantImportJobWithContext), varargs...)
 }
 
+// CompleteMultipartReadSetUpload mocks base method
+func (m *MockOmicsAPI) CompleteMultipartReadSetUpload(arg0 *omics.CompleteMultipartReadSetUploadInput) (*omics.CompleteMultipartReadSetUploadOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CompleteMultipartReadSetUpload", arg0)
+	ret0, _ := ret[0].(*omics.CompleteMultipartReadSetUploadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CompleteMultipartReadSetUpload indicates an expected call of CompleteMultipartReadSetUpload
+func (mr *MockOmicsAPIMockRecorder) CompleteMultipartReadSetUpload(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CompleteMultipartReadSetUpload", reflect.TypeOf((*MockOmicsAPI)(nil).CompleteMultipartReadSetUpload), arg0)
+}
+
+// CompleteMultipartReadSetUploadRequest mocks base method
+func (m *MockOmicsAPI) CompleteMultipartReadSetUploadRequest(arg0 *omics.CompleteMultipartReadSetUploadInput) (*request.Request, *omics.CompleteMultipartReadSetUploadOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CompleteMultipartReadSetUploadRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.CompleteMultipartReadSetUploadOutput)
+	return ret0, ret1
+}
+
+// CompleteMultipartReadSetUploadRequest indicates an expected call of CompleteMultipartReadSetUploadRequest
+func (mr *MockOmicsAPIMockRecorder) CompleteMultipartReadSetUploadRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CompleteMultipartReadSetUploadRequest", reflect.TypeOf((*MockOmicsAPI)(nil).CompleteMultipartReadSetUploadRequest), arg0)
+}
+
+// CompleteMultipartReadSetUploadWithContext mocks base method
+func (m *MockOmicsAPI) CompleteMultipartReadSetUploadWithContext(arg0 context.Context, arg1 *omics.CompleteMultipartReadSetUploadInput, arg2 ...request.Option) (*omics.CompleteMultipartReadSetUploadOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CompleteMultipartReadSetUploadWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.CompleteMultipartReadSetUploadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CompleteMultipartReadSetUploadWithContext indicates an expected call of CompleteMultipartReadSetUploadWithContext
+func (mr *MockOmicsAPIMockRecorder) CompleteMultipartReadSetUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CompleteMultipartReadSetUploadWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).CompleteMultipartReadSetUploadWithContext), varargs...)
+}
+
 // CreateAnnotationStore mocks base method
 func (m *MockOmicsAPI) CreateAnnotationStore(arg0 *omics.CreateAnnotationStoreInput) (*omics.CreateAnnotationStoreOutput, error) {
 	m.ctrl.T.Helper()
@@ -283,6 +383,56 @@ func (mr *MockOmicsAPIMockRecorder) CreateAnnotationStoreWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnnotationStoreWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).CreateAnnotationStoreWithContext), varargs...)
+}
+
+// CreateMultipartReadSetUpload mocks base method
+func (m *MockOmicsAPI) CreateMultipartReadSetUpload(arg0 *omics.CreateMultipartReadSetUploadInput) (*omics.CreateMultipartReadSetUploadOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMultipartReadSetUpload", arg0)
+	ret0, _ := ret[0].(*omics.CreateMultipartReadSetUploadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMultipartReadSetUpload indicates an expected call of CreateMultipartReadSetUpload
+func (mr *MockOmicsAPIMockRecorder) CreateMultipartReadSetUpload(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMultipartReadSetUpload", reflect.TypeOf((*MockOmicsAPI)(nil).CreateMultipartReadSetUpload), arg0)
+}
+
+// CreateMultipartReadSetUploadRequest mocks base method
+func (m *MockOmicsAPI) CreateMultipartReadSetUploadRequest(arg0 *omics.CreateMultipartReadSetUploadInput) (*request.Request, *omics.CreateMultipartReadSetUploadOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateMultipartReadSetUploadRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.CreateMultipartReadSetUploadOutput)
+	return ret0, ret1
+}
+
+// CreateMultipartReadSetUploadRequest indicates an expected call of CreateMultipartReadSetUploadRequest
+func (mr *MockOmicsAPIMockRecorder) CreateMultipartReadSetUploadRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMultipartReadSetUploadRequest", reflect.TypeOf((*MockOmicsAPI)(nil).CreateMultipartReadSetUploadRequest), arg0)
+}
+
+// CreateMultipartReadSetUploadWithContext mocks base method
+func (m *MockOmicsAPI) CreateMultipartReadSetUploadWithContext(arg0 context.Context, arg1 *omics.CreateMultipartReadSetUploadInput, arg2 ...request.Option) (*omics.CreateMultipartReadSetUploadOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateMultipartReadSetUploadWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.CreateMultipartReadSetUploadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateMultipartReadSetUploadWithContext indicates an expected call of CreateMultipartReadSetUploadWithContext
+func (mr *MockOmicsAPIMockRecorder) CreateMultipartReadSetUploadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMultipartReadSetUploadWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).CreateMultipartReadSetUploadWithContext), varargs...)
 }
 
 // CreateReferenceStore mocks base method
@@ -2001,6 +2151,89 @@ func (mr *MockOmicsAPIMockRecorder) ListAnnotationStoresWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnnotationStoresWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).ListAnnotationStoresWithContext), varargs...)
 }
 
+// ListMultipartReadSetUploads mocks base method
+func (m *MockOmicsAPI) ListMultipartReadSetUploads(arg0 *omics.ListMultipartReadSetUploadsInput) (*omics.ListMultipartReadSetUploadsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMultipartReadSetUploads", arg0)
+	ret0, _ := ret[0].(*omics.ListMultipartReadSetUploadsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMultipartReadSetUploads indicates an expected call of ListMultipartReadSetUploads
+func (mr *MockOmicsAPIMockRecorder) ListMultipartReadSetUploads(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultipartReadSetUploads", reflect.TypeOf((*MockOmicsAPI)(nil).ListMultipartReadSetUploads), arg0)
+}
+
+// ListMultipartReadSetUploadsPages mocks base method
+func (m *MockOmicsAPI) ListMultipartReadSetUploadsPages(arg0 *omics.ListMultipartReadSetUploadsInput, arg1 func(*omics.ListMultipartReadSetUploadsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMultipartReadSetUploadsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMultipartReadSetUploadsPages indicates an expected call of ListMultipartReadSetUploadsPages
+func (mr *MockOmicsAPIMockRecorder) ListMultipartReadSetUploadsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultipartReadSetUploadsPages", reflect.TypeOf((*MockOmicsAPI)(nil).ListMultipartReadSetUploadsPages), arg0, arg1)
+}
+
+// ListMultipartReadSetUploadsPagesWithContext mocks base method
+func (m *MockOmicsAPI) ListMultipartReadSetUploadsPagesWithContext(arg0 context.Context, arg1 *omics.ListMultipartReadSetUploadsInput, arg2 func(*omics.ListMultipartReadSetUploadsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMultipartReadSetUploadsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMultipartReadSetUploadsPagesWithContext indicates an expected call of ListMultipartReadSetUploadsPagesWithContext
+func (mr *MockOmicsAPIMockRecorder) ListMultipartReadSetUploadsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultipartReadSetUploadsPagesWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).ListMultipartReadSetUploadsPagesWithContext), varargs...)
+}
+
+// ListMultipartReadSetUploadsRequest mocks base method
+func (m *MockOmicsAPI) ListMultipartReadSetUploadsRequest(arg0 *omics.ListMultipartReadSetUploadsInput) (*request.Request, *omics.ListMultipartReadSetUploadsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMultipartReadSetUploadsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.ListMultipartReadSetUploadsOutput)
+	return ret0, ret1
+}
+
+// ListMultipartReadSetUploadsRequest indicates an expected call of ListMultipartReadSetUploadsRequest
+func (mr *MockOmicsAPIMockRecorder) ListMultipartReadSetUploadsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultipartReadSetUploadsRequest", reflect.TypeOf((*MockOmicsAPI)(nil).ListMultipartReadSetUploadsRequest), arg0)
+}
+
+// ListMultipartReadSetUploadsWithContext mocks base method
+func (m *MockOmicsAPI) ListMultipartReadSetUploadsWithContext(arg0 context.Context, arg1 *omics.ListMultipartReadSetUploadsInput, arg2 ...request.Option) (*omics.ListMultipartReadSetUploadsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMultipartReadSetUploadsWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.ListMultipartReadSetUploadsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMultipartReadSetUploadsWithContext indicates an expected call of ListMultipartReadSetUploadsWithContext
+func (mr *MockOmicsAPIMockRecorder) ListMultipartReadSetUploadsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMultipartReadSetUploadsWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).ListMultipartReadSetUploadsWithContext), varargs...)
+}
+
 // ListReadSetActivationJobs mocks base method
 func (m *MockOmicsAPI) ListReadSetActivationJobs(arg0 *omics.ListReadSetActivationJobsInput) (*omics.ListReadSetActivationJobsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2248,6 +2481,89 @@ func (mr *MockOmicsAPIMockRecorder) ListReadSetImportJobsWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReadSetImportJobsWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).ListReadSetImportJobsWithContext), varargs...)
+}
+
+// ListReadSetUploadParts mocks base method
+func (m *MockOmicsAPI) ListReadSetUploadParts(arg0 *omics.ListReadSetUploadPartsInput) (*omics.ListReadSetUploadPartsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReadSetUploadParts", arg0)
+	ret0, _ := ret[0].(*omics.ListReadSetUploadPartsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReadSetUploadParts indicates an expected call of ListReadSetUploadParts
+func (mr *MockOmicsAPIMockRecorder) ListReadSetUploadParts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReadSetUploadParts", reflect.TypeOf((*MockOmicsAPI)(nil).ListReadSetUploadParts), arg0)
+}
+
+// ListReadSetUploadPartsPages mocks base method
+func (m *MockOmicsAPI) ListReadSetUploadPartsPages(arg0 *omics.ListReadSetUploadPartsInput, arg1 func(*omics.ListReadSetUploadPartsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReadSetUploadPartsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListReadSetUploadPartsPages indicates an expected call of ListReadSetUploadPartsPages
+func (mr *MockOmicsAPIMockRecorder) ListReadSetUploadPartsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReadSetUploadPartsPages", reflect.TypeOf((*MockOmicsAPI)(nil).ListReadSetUploadPartsPages), arg0, arg1)
+}
+
+// ListReadSetUploadPartsPagesWithContext mocks base method
+func (m *MockOmicsAPI) ListReadSetUploadPartsPagesWithContext(arg0 context.Context, arg1 *omics.ListReadSetUploadPartsInput, arg2 func(*omics.ListReadSetUploadPartsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReadSetUploadPartsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListReadSetUploadPartsPagesWithContext indicates an expected call of ListReadSetUploadPartsPagesWithContext
+func (mr *MockOmicsAPIMockRecorder) ListReadSetUploadPartsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReadSetUploadPartsPagesWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).ListReadSetUploadPartsPagesWithContext), varargs...)
+}
+
+// ListReadSetUploadPartsRequest mocks base method
+func (m *MockOmicsAPI) ListReadSetUploadPartsRequest(arg0 *omics.ListReadSetUploadPartsInput) (*request.Request, *omics.ListReadSetUploadPartsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReadSetUploadPartsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.ListReadSetUploadPartsOutput)
+	return ret0, ret1
+}
+
+// ListReadSetUploadPartsRequest indicates an expected call of ListReadSetUploadPartsRequest
+func (mr *MockOmicsAPIMockRecorder) ListReadSetUploadPartsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReadSetUploadPartsRequest", reflect.TypeOf((*MockOmicsAPI)(nil).ListReadSetUploadPartsRequest), arg0)
+}
+
+// ListReadSetUploadPartsWithContext mocks base method
+func (m *MockOmicsAPI) ListReadSetUploadPartsWithContext(arg0 context.Context, arg1 *omics.ListReadSetUploadPartsInput, arg2 ...request.Option) (*omics.ListReadSetUploadPartsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReadSetUploadPartsWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.ListReadSetUploadPartsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReadSetUploadPartsWithContext indicates an expected call of ListReadSetUploadPartsWithContext
+func (mr *MockOmicsAPIMockRecorder) ListReadSetUploadPartsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReadSetUploadPartsWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).ListReadSetUploadPartsWithContext), varargs...)
 }
 
 // ListReadSets mocks base method
@@ -3861,6 +4177,56 @@ func (mr *MockOmicsAPIMockRecorder) UpdateWorkflowWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkflowWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).UpdateWorkflowWithContext), varargs...)
+}
+
+// UploadReadSetPart mocks base method
+func (m *MockOmicsAPI) UploadReadSetPart(arg0 *omics.UploadReadSetPartInput) (*omics.UploadReadSetPartOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UploadReadSetPart", arg0)
+	ret0, _ := ret[0].(*omics.UploadReadSetPartOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UploadReadSetPart indicates an expected call of UploadReadSetPart
+func (mr *MockOmicsAPIMockRecorder) UploadReadSetPart(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UploadReadSetPart", reflect.TypeOf((*MockOmicsAPI)(nil).UploadReadSetPart), arg0)
+}
+
+// UploadReadSetPartRequest mocks base method
+func (m *MockOmicsAPI) UploadReadSetPartRequest(arg0 *omics.UploadReadSetPartInput) (*request.Request, *omics.UploadReadSetPartOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UploadReadSetPartRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.UploadReadSetPartOutput)
+	return ret0, ret1
+}
+
+// UploadReadSetPartRequest indicates an expected call of UploadReadSetPartRequest
+func (mr *MockOmicsAPIMockRecorder) UploadReadSetPartRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UploadReadSetPartRequest", reflect.TypeOf((*MockOmicsAPI)(nil).UploadReadSetPartRequest), arg0)
+}
+
+// UploadReadSetPartWithContext mocks base method
+func (m *MockOmicsAPI) UploadReadSetPartWithContext(arg0 context.Context, arg1 *omics.UploadReadSetPartInput, arg2 ...request.Option) (*omics.UploadReadSetPartOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UploadReadSetPartWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.UploadReadSetPartOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UploadReadSetPartWithContext indicates an expected call of UploadReadSetPartWithContext
+func (mr *MockOmicsAPIMockRecorder) UploadReadSetPartWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UploadReadSetPartWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).UploadReadSetPartWithContext), varargs...)
 }
 
 // WaitUntilAnnotationImportJobCreated mocks base method
