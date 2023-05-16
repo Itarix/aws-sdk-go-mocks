@@ -1217,6 +1217,106 @@ func (mr *MockRolesAnywhereAPIMockRecorder) ListTrustAnchorsWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTrustAnchorsWithContext", reflect.TypeOf((*MockRolesAnywhereAPI)(nil).ListTrustAnchorsWithContext), varargs...)
 }
 
+// PutNotificationSettings mocks base method
+func (m *MockRolesAnywhereAPI) PutNotificationSettings(arg0 *rolesanywhere.PutNotificationSettingsInput) (*rolesanywhere.PutNotificationSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutNotificationSettings", arg0)
+	ret0, _ := ret[0].(*rolesanywhere.PutNotificationSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutNotificationSettings indicates an expected call of PutNotificationSettings
+func (mr *MockRolesAnywhereAPIMockRecorder) PutNotificationSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutNotificationSettings", reflect.TypeOf((*MockRolesAnywhereAPI)(nil).PutNotificationSettings), arg0)
+}
+
+// PutNotificationSettingsRequest mocks base method
+func (m *MockRolesAnywhereAPI) PutNotificationSettingsRequest(arg0 *rolesanywhere.PutNotificationSettingsInput) (*request.Request, *rolesanywhere.PutNotificationSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutNotificationSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rolesanywhere.PutNotificationSettingsOutput)
+	return ret0, ret1
+}
+
+// PutNotificationSettingsRequest indicates an expected call of PutNotificationSettingsRequest
+func (mr *MockRolesAnywhereAPIMockRecorder) PutNotificationSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutNotificationSettingsRequest", reflect.TypeOf((*MockRolesAnywhereAPI)(nil).PutNotificationSettingsRequest), arg0)
+}
+
+// PutNotificationSettingsWithContext mocks base method
+func (m *MockRolesAnywhereAPI) PutNotificationSettingsWithContext(arg0 context.Context, arg1 *rolesanywhere.PutNotificationSettingsInput, arg2 ...request.Option) (*rolesanywhere.PutNotificationSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutNotificationSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*rolesanywhere.PutNotificationSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutNotificationSettingsWithContext indicates an expected call of PutNotificationSettingsWithContext
+func (mr *MockRolesAnywhereAPIMockRecorder) PutNotificationSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutNotificationSettingsWithContext", reflect.TypeOf((*MockRolesAnywhereAPI)(nil).PutNotificationSettingsWithContext), varargs...)
+}
+
+// ResetNotificationSettings mocks base method
+func (m *MockRolesAnywhereAPI) ResetNotificationSettings(arg0 *rolesanywhere.ResetNotificationSettingsInput) (*rolesanywhere.ResetNotificationSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResetNotificationSettings", arg0)
+	ret0, _ := ret[0].(*rolesanywhere.ResetNotificationSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResetNotificationSettings indicates an expected call of ResetNotificationSettings
+func (mr *MockRolesAnywhereAPIMockRecorder) ResetNotificationSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetNotificationSettings", reflect.TypeOf((*MockRolesAnywhereAPI)(nil).ResetNotificationSettings), arg0)
+}
+
+// ResetNotificationSettingsRequest mocks base method
+func (m *MockRolesAnywhereAPI) ResetNotificationSettingsRequest(arg0 *rolesanywhere.ResetNotificationSettingsInput) (*request.Request, *rolesanywhere.ResetNotificationSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResetNotificationSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rolesanywhere.ResetNotificationSettingsOutput)
+	return ret0, ret1
+}
+
+// ResetNotificationSettingsRequest indicates an expected call of ResetNotificationSettingsRequest
+func (mr *MockRolesAnywhereAPIMockRecorder) ResetNotificationSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetNotificationSettingsRequest", reflect.TypeOf((*MockRolesAnywhereAPI)(nil).ResetNotificationSettingsRequest), arg0)
+}
+
+// ResetNotificationSettingsWithContext mocks base method
+func (m *MockRolesAnywhereAPI) ResetNotificationSettingsWithContext(arg0 context.Context, arg1 *rolesanywhere.ResetNotificationSettingsInput, arg2 ...request.Option) (*rolesanywhere.ResetNotificationSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ResetNotificationSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*rolesanywhere.ResetNotificationSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResetNotificationSettingsWithContext indicates an expected call of ResetNotificationSettingsWithContext
+func (mr *MockRolesAnywhereAPIMockRecorder) ResetNotificationSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetNotificationSettingsWithContext", reflect.TypeOf((*MockRolesAnywhereAPI)(nil).ResetNotificationSettingsWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockRolesAnywhereAPI) TagResource(arg0 *rolesanywhere.TagResourceInput) (*rolesanywhere.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
