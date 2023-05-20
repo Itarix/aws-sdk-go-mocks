@@ -3764,6 +3764,56 @@ func (mr *MockSESV2APIMockRecorder) PutDedicatedIpInPoolWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDedicatedIpInPoolWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutDedicatedIpInPoolWithContext), varargs...)
 }
 
+// PutDedicatedIpPoolScalingAttributes mocks base method
+func (m *MockSESV2API) PutDedicatedIpPoolScalingAttributes(arg0 *sesv2.PutDedicatedIpPoolScalingAttributesInput) (*sesv2.PutDedicatedIpPoolScalingAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutDedicatedIpPoolScalingAttributes", arg0)
+	ret0, _ := ret[0].(*sesv2.PutDedicatedIpPoolScalingAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutDedicatedIpPoolScalingAttributes indicates an expected call of PutDedicatedIpPoolScalingAttributes
+func (mr *MockSESV2APIMockRecorder) PutDedicatedIpPoolScalingAttributes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDedicatedIpPoolScalingAttributes", reflect.TypeOf((*MockSESV2API)(nil).PutDedicatedIpPoolScalingAttributes), arg0)
+}
+
+// PutDedicatedIpPoolScalingAttributesRequest mocks base method
+func (m *MockSESV2API) PutDedicatedIpPoolScalingAttributesRequest(arg0 *sesv2.PutDedicatedIpPoolScalingAttributesInput) (*request.Request, *sesv2.PutDedicatedIpPoolScalingAttributesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutDedicatedIpPoolScalingAttributesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sesv2.PutDedicatedIpPoolScalingAttributesOutput)
+	return ret0, ret1
+}
+
+// PutDedicatedIpPoolScalingAttributesRequest indicates an expected call of PutDedicatedIpPoolScalingAttributesRequest
+func (mr *MockSESV2APIMockRecorder) PutDedicatedIpPoolScalingAttributesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDedicatedIpPoolScalingAttributesRequest", reflect.TypeOf((*MockSESV2API)(nil).PutDedicatedIpPoolScalingAttributesRequest), arg0)
+}
+
+// PutDedicatedIpPoolScalingAttributesWithContext mocks base method
+func (m *MockSESV2API) PutDedicatedIpPoolScalingAttributesWithContext(arg0 context.Context, arg1 *sesv2.PutDedicatedIpPoolScalingAttributesInput, arg2 ...request.Option) (*sesv2.PutDedicatedIpPoolScalingAttributesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutDedicatedIpPoolScalingAttributesWithContext", varargs...)
+	ret0, _ := ret[0].(*sesv2.PutDedicatedIpPoolScalingAttributesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutDedicatedIpPoolScalingAttributesWithContext indicates an expected call of PutDedicatedIpPoolScalingAttributesWithContext
+func (mr *MockSESV2APIMockRecorder) PutDedicatedIpPoolScalingAttributesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutDedicatedIpPoolScalingAttributesWithContext", reflect.TypeOf((*MockSESV2API)(nil).PutDedicatedIpPoolScalingAttributesWithContext), varargs...)
+}
+
 // PutDedicatedIpWarmupAttributes mocks base method
 func (m *MockSESV2API) PutDedicatedIpWarmupAttributes(arg0 *sesv2.PutDedicatedIpWarmupAttributesInput) (*sesv2.PutDedicatedIpWarmupAttributesOutput, error) {
 	m.ctrl.T.Helper()
