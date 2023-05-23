@@ -2585,6 +2585,106 @@ func (mr *MockQuickSightAPIMockRecorder) DescribeAnalysisWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAnalysisWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAnalysisWithContext), varargs...)
 }
 
+// DescribeAssetBundleExportJob mocks base method
+func (m *MockQuickSightAPI) DescribeAssetBundleExportJob(arg0 *quicksight.DescribeAssetBundleExportJobInput) (*quicksight.DescribeAssetBundleExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAssetBundleExportJob", arg0)
+	ret0, _ := ret[0].(*quicksight.DescribeAssetBundleExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAssetBundleExportJob indicates an expected call of DescribeAssetBundleExportJob
+func (mr *MockQuickSightAPIMockRecorder) DescribeAssetBundleExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAssetBundleExportJob", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAssetBundleExportJob), arg0)
+}
+
+// DescribeAssetBundleExportJobRequest mocks base method
+func (m *MockQuickSightAPI) DescribeAssetBundleExportJobRequest(arg0 *quicksight.DescribeAssetBundleExportJobInput) (*request.Request, *quicksight.DescribeAssetBundleExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAssetBundleExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.DescribeAssetBundleExportJobOutput)
+	return ret0, ret1
+}
+
+// DescribeAssetBundleExportJobRequest indicates an expected call of DescribeAssetBundleExportJobRequest
+func (mr *MockQuickSightAPIMockRecorder) DescribeAssetBundleExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAssetBundleExportJobRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAssetBundleExportJobRequest), arg0)
+}
+
+// DescribeAssetBundleExportJobWithContext mocks base method
+func (m *MockQuickSightAPI) DescribeAssetBundleExportJobWithContext(arg0 context.Context, arg1 *quicksight.DescribeAssetBundleExportJobInput, arg2 ...request.Option) (*quicksight.DescribeAssetBundleExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAssetBundleExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.DescribeAssetBundleExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAssetBundleExportJobWithContext indicates an expected call of DescribeAssetBundleExportJobWithContext
+func (mr *MockQuickSightAPIMockRecorder) DescribeAssetBundleExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAssetBundleExportJobWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAssetBundleExportJobWithContext), varargs...)
+}
+
+// DescribeAssetBundleImportJob mocks base method
+func (m *MockQuickSightAPI) DescribeAssetBundleImportJob(arg0 *quicksight.DescribeAssetBundleImportJobInput) (*quicksight.DescribeAssetBundleImportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAssetBundleImportJob", arg0)
+	ret0, _ := ret[0].(*quicksight.DescribeAssetBundleImportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAssetBundleImportJob indicates an expected call of DescribeAssetBundleImportJob
+func (mr *MockQuickSightAPIMockRecorder) DescribeAssetBundleImportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAssetBundleImportJob", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAssetBundleImportJob), arg0)
+}
+
+// DescribeAssetBundleImportJobRequest mocks base method
+func (m *MockQuickSightAPI) DescribeAssetBundleImportJobRequest(arg0 *quicksight.DescribeAssetBundleImportJobInput) (*request.Request, *quicksight.DescribeAssetBundleImportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAssetBundleImportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.DescribeAssetBundleImportJobOutput)
+	return ret0, ret1
+}
+
+// DescribeAssetBundleImportJobRequest indicates an expected call of DescribeAssetBundleImportJobRequest
+func (mr *MockQuickSightAPIMockRecorder) DescribeAssetBundleImportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAssetBundleImportJobRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAssetBundleImportJobRequest), arg0)
+}
+
+// DescribeAssetBundleImportJobWithContext mocks base method
+func (m *MockQuickSightAPI) DescribeAssetBundleImportJobWithContext(arg0 context.Context, arg1 *quicksight.DescribeAssetBundleImportJobInput, arg2 ...request.Option) (*quicksight.DescribeAssetBundleImportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAssetBundleImportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.DescribeAssetBundleImportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAssetBundleImportJobWithContext indicates an expected call of DescribeAssetBundleImportJobWithContext
+func (mr *MockQuickSightAPIMockRecorder) DescribeAssetBundleImportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAssetBundleImportJobWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeAssetBundleImportJobWithContext), varargs...)
+}
+
 // DescribeDashboard mocks base method
 func (m *MockQuickSightAPI) DescribeDashboard(arg0 *quicksight.DescribeDashboardInput) (*quicksight.DescribeDashboardOutput, error) {
 	m.ctrl.T.Helper()
@@ -4416,6 +4516,172 @@ func (mr *MockQuickSightAPIMockRecorder) ListAnalysesWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalysesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAnalysesWithContext), varargs...)
+}
+
+// ListAssetBundleExportJobs mocks base method
+func (m *MockQuickSightAPI) ListAssetBundleExportJobs(arg0 *quicksight.ListAssetBundleExportJobsInput) (*quicksight.ListAssetBundleExportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetBundleExportJobs", arg0)
+	ret0, _ := ret[0].(*quicksight.ListAssetBundleExportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssetBundleExportJobs indicates an expected call of ListAssetBundleExportJobs
+func (mr *MockQuickSightAPIMockRecorder) ListAssetBundleExportJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetBundleExportJobs", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAssetBundleExportJobs), arg0)
+}
+
+// ListAssetBundleExportJobsPages mocks base method
+func (m *MockQuickSightAPI) ListAssetBundleExportJobsPages(arg0 *quicksight.ListAssetBundleExportJobsInput, arg1 func(*quicksight.ListAssetBundleExportJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetBundleExportJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssetBundleExportJobsPages indicates an expected call of ListAssetBundleExportJobsPages
+func (mr *MockQuickSightAPIMockRecorder) ListAssetBundleExportJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetBundleExportJobsPages", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAssetBundleExportJobsPages), arg0, arg1)
+}
+
+// ListAssetBundleExportJobsPagesWithContext mocks base method
+func (m *MockQuickSightAPI) ListAssetBundleExportJobsPagesWithContext(arg0 context.Context, arg1 *quicksight.ListAssetBundleExportJobsInput, arg2 func(*quicksight.ListAssetBundleExportJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssetBundleExportJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssetBundleExportJobsPagesWithContext indicates an expected call of ListAssetBundleExportJobsPagesWithContext
+func (mr *MockQuickSightAPIMockRecorder) ListAssetBundleExportJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetBundleExportJobsPagesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAssetBundleExportJobsPagesWithContext), varargs...)
+}
+
+// ListAssetBundleExportJobsRequest mocks base method
+func (m *MockQuickSightAPI) ListAssetBundleExportJobsRequest(arg0 *quicksight.ListAssetBundleExportJobsInput) (*request.Request, *quicksight.ListAssetBundleExportJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetBundleExportJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.ListAssetBundleExportJobsOutput)
+	return ret0, ret1
+}
+
+// ListAssetBundleExportJobsRequest indicates an expected call of ListAssetBundleExportJobsRequest
+func (mr *MockQuickSightAPIMockRecorder) ListAssetBundleExportJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetBundleExportJobsRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAssetBundleExportJobsRequest), arg0)
+}
+
+// ListAssetBundleExportJobsWithContext mocks base method
+func (m *MockQuickSightAPI) ListAssetBundleExportJobsWithContext(arg0 context.Context, arg1 *quicksight.ListAssetBundleExportJobsInput, arg2 ...request.Option) (*quicksight.ListAssetBundleExportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssetBundleExportJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.ListAssetBundleExportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssetBundleExportJobsWithContext indicates an expected call of ListAssetBundleExportJobsWithContext
+func (mr *MockQuickSightAPIMockRecorder) ListAssetBundleExportJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetBundleExportJobsWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAssetBundleExportJobsWithContext), varargs...)
+}
+
+// ListAssetBundleImportJobs mocks base method
+func (m *MockQuickSightAPI) ListAssetBundleImportJobs(arg0 *quicksight.ListAssetBundleImportJobsInput) (*quicksight.ListAssetBundleImportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetBundleImportJobs", arg0)
+	ret0, _ := ret[0].(*quicksight.ListAssetBundleImportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssetBundleImportJobs indicates an expected call of ListAssetBundleImportJobs
+func (mr *MockQuickSightAPIMockRecorder) ListAssetBundleImportJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetBundleImportJobs", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAssetBundleImportJobs), arg0)
+}
+
+// ListAssetBundleImportJobsPages mocks base method
+func (m *MockQuickSightAPI) ListAssetBundleImportJobsPages(arg0 *quicksight.ListAssetBundleImportJobsInput, arg1 func(*quicksight.ListAssetBundleImportJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetBundleImportJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssetBundleImportJobsPages indicates an expected call of ListAssetBundleImportJobsPages
+func (mr *MockQuickSightAPIMockRecorder) ListAssetBundleImportJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetBundleImportJobsPages", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAssetBundleImportJobsPages), arg0, arg1)
+}
+
+// ListAssetBundleImportJobsPagesWithContext mocks base method
+func (m *MockQuickSightAPI) ListAssetBundleImportJobsPagesWithContext(arg0 context.Context, arg1 *quicksight.ListAssetBundleImportJobsInput, arg2 func(*quicksight.ListAssetBundleImportJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssetBundleImportJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssetBundleImportJobsPagesWithContext indicates an expected call of ListAssetBundleImportJobsPagesWithContext
+func (mr *MockQuickSightAPIMockRecorder) ListAssetBundleImportJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetBundleImportJobsPagesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAssetBundleImportJobsPagesWithContext), varargs...)
+}
+
+// ListAssetBundleImportJobsRequest mocks base method
+func (m *MockQuickSightAPI) ListAssetBundleImportJobsRequest(arg0 *quicksight.ListAssetBundleImportJobsInput) (*request.Request, *quicksight.ListAssetBundleImportJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetBundleImportJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.ListAssetBundleImportJobsOutput)
+	return ret0, ret1
+}
+
+// ListAssetBundleImportJobsRequest indicates an expected call of ListAssetBundleImportJobsRequest
+func (mr *MockQuickSightAPIMockRecorder) ListAssetBundleImportJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetBundleImportJobsRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAssetBundleImportJobsRequest), arg0)
+}
+
+// ListAssetBundleImportJobsWithContext mocks base method
+func (m *MockQuickSightAPI) ListAssetBundleImportJobsWithContext(arg0 context.Context, arg1 *quicksight.ListAssetBundleImportJobsInput, arg2 ...request.Option) (*quicksight.ListAssetBundleImportJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssetBundleImportJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.ListAssetBundleImportJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssetBundleImportJobsWithContext indicates an expected call of ListAssetBundleImportJobsWithContext
+func (mr *MockQuickSightAPIMockRecorder) ListAssetBundleImportJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetBundleImportJobsWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).ListAssetBundleImportJobsWithContext), varargs...)
 }
 
 // ListDashboardVersions mocks base method
@@ -6677,6 +6943,106 @@ func (mr *MockQuickSightAPIMockRecorder) SearchGroupsWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchGroupsWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchGroupsWithContext), varargs...)
+}
+
+// StartAssetBundleExportJob mocks base method
+func (m *MockQuickSightAPI) StartAssetBundleExportJob(arg0 *quicksight.StartAssetBundleExportJobInput) (*quicksight.StartAssetBundleExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartAssetBundleExportJob", arg0)
+	ret0, _ := ret[0].(*quicksight.StartAssetBundleExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartAssetBundleExportJob indicates an expected call of StartAssetBundleExportJob
+func (mr *MockQuickSightAPIMockRecorder) StartAssetBundleExportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAssetBundleExportJob", reflect.TypeOf((*MockQuickSightAPI)(nil).StartAssetBundleExportJob), arg0)
+}
+
+// StartAssetBundleExportJobRequest mocks base method
+func (m *MockQuickSightAPI) StartAssetBundleExportJobRequest(arg0 *quicksight.StartAssetBundleExportJobInput) (*request.Request, *quicksight.StartAssetBundleExportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartAssetBundleExportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.StartAssetBundleExportJobOutput)
+	return ret0, ret1
+}
+
+// StartAssetBundleExportJobRequest indicates an expected call of StartAssetBundleExportJobRequest
+func (mr *MockQuickSightAPIMockRecorder) StartAssetBundleExportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAssetBundleExportJobRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).StartAssetBundleExportJobRequest), arg0)
+}
+
+// StartAssetBundleExportJobWithContext mocks base method
+func (m *MockQuickSightAPI) StartAssetBundleExportJobWithContext(arg0 context.Context, arg1 *quicksight.StartAssetBundleExportJobInput, arg2 ...request.Option) (*quicksight.StartAssetBundleExportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartAssetBundleExportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.StartAssetBundleExportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartAssetBundleExportJobWithContext indicates an expected call of StartAssetBundleExportJobWithContext
+func (mr *MockQuickSightAPIMockRecorder) StartAssetBundleExportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAssetBundleExportJobWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).StartAssetBundleExportJobWithContext), varargs...)
+}
+
+// StartAssetBundleImportJob mocks base method
+func (m *MockQuickSightAPI) StartAssetBundleImportJob(arg0 *quicksight.StartAssetBundleImportJobInput) (*quicksight.StartAssetBundleImportJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartAssetBundleImportJob", arg0)
+	ret0, _ := ret[0].(*quicksight.StartAssetBundleImportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartAssetBundleImportJob indicates an expected call of StartAssetBundleImportJob
+func (mr *MockQuickSightAPIMockRecorder) StartAssetBundleImportJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAssetBundleImportJob", reflect.TypeOf((*MockQuickSightAPI)(nil).StartAssetBundleImportJob), arg0)
+}
+
+// StartAssetBundleImportJobRequest mocks base method
+func (m *MockQuickSightAPI) StartAssetBundleImportJobRequest(arg0 *quicksight.StartAssetBundleImportJobInput) (*request.Request, *quicksight.StartAssetBundleImportJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartAssetBundleImportJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*quicksight.StartAssetBundleImportJobOutput)
+	return ret0, ret1
+}
+
+// StartAssetBundleImportJobRequest indicates an expected call of StartAssetBundleImportJobRequest
+func (mr *MockQuickSightAPIMockRecorder) StartAssetBundleImportJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAssetBundleImportJobRequest", reflect.TypeOf((*MockQuickSightAPI)(nil).StartAssetBundleImportJobRequest), arg0)
+}
+
+// StartAssetBundleImportJobWithContext mocks base method
+func (m *MockQuickSightAPI) StartAssetBundleImportJobWithContext(arg0 context.Context, arg1 *quicksight.StartAssetBundleImportJobInput, arg2 ...request.Option) (*quicksight.StartAssetBundleImportJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartAssetBundleImportJobWithContext", varargs...)
+	ret0, _ := ret[0].(*quicksight.StartAssetBundleImportJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartAssetBundleImportJobWithContext indicates an expected call of StartAssetBundleImportJobWithContext
+func (mr *MockQuickSightAPIMockRecorder) StartAssetBundleImportJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartAssetBundleImportJobWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).StartAssetBundleImportJobWithContext), varargs...)
 }
 
 // TagResource mocks base method
