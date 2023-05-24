@@ -967,6 +967,56 @@ func (mr *MockTranslateAPIMockRecorder) TextWithContext(arg0, arg1 interface{}, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TextWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).TextWithContext), varargs...)
 }
 
+// TranslateDocument mocks base method
+func (m *MockTranslateAPI) TranslateDocument(arg0 *translate.TranslateDocumentInput) (*translate.TranslateDocumentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TranslateDocument", arg0)
+	ret0, _ := ret[0].(*translate.TranslateDocumentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TranslateDocument indicates an expected call of TranslateDocument
+func (mr *MockTranslateAPIMockRecorder) TranslateDocument(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TranslateDocument", reflect.TypeOf((*MockTranslateAPI)(nil).TranslateDocument), arg0)
+}
+
+// TranslateDocumentRequest mocks base method
+func (m *MockTranslateAPI) TranslateDocumentRequest(arg0 *translate.TranslateDocumentInput) (*request.Request, *translate.TranslateDocumentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TranslateDocumentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*translate.TranslateDocumentOutput)
+	return ret0, ret1
+}
+
+// TranslateDocumentRequest indicates an expected call of TranslateDocumentRequest
+func (mr *MockTranslateAPIMockRecorder) TranslateDocumentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TranslateDocumentRequest", reflect.TypeOf((*MockTranslateAPI)(nil).TranslateDocumentRequest), arg0)
+}
+
+// TranslateDocumentWithContext mocks base method
+func (m *MockTranslateAPI) TranslateDocumentWithContext(arg0 context.Context, arg1 *translate.TranslateDocumentInput, arg2 ...request.Option) (*translate.TranslateDocumentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TranslateDocumentWithContext", varargs...)
+	ret0, _ := ret[0].(*translate.TranslateDocumentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TranslateDocumentWithContext indicates an expected call of TranslateDocumentWithContext
+func (mr *MockTranslateAPIMockRecorder) TranslateDocumentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TranslateDocumentWithContext", reflect.TypeOf((*MockTranslateAPI)(nil).TranslateDocumentWithContext), varargs...)
+}
+
 // UntagResource mocks base method
 func (m *MockTranslateAPI) UntagResource(arg0 *translate.UntagResourceInput) (*translate.UntagResourceOutput, error) {
 	m.ctrl.T.Helper()
