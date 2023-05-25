@@ -85,6 +85,106 @@ func (mr *MockAppSyncAPIMockRecorder) AssociateApiWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).AssociateApiWithContext), varargs...)
 }
 
+// AssociateMergedGraphqlApi mocks base method
+func (m *MockAppSyncAPI) AssociateMergedGraphqlApi(arg0 *appsync.AssociateMergedGraphqlApiInput) (*appsync.AssociateMergedGraphqlApiOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateMergedGraphqlApi", arg0)
+	ret0, _ := ret[0].(*appsync.AssociateMergedGraphqlApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateMergedGraphqlApi indicates an expected call of AssociateMergedGraphqlApi
+func (mr *MockAppSyncAPIMockRecorder) AssociateMergedGraphqlApi(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateMergedGraphqlApi", reflect.TypeOf((*MockAppSyncAPI)(nil).AssociateMergedGraphqlApi), arg0)
+}
+
+// AssociateMergedGraphqlApiRequest mocks base method
+func (m *MockAppSyncAPI) AssociateMergedGraphqlApiRequest(arg0 *appsync.AssociateMergedGraphqlApiInput) (*request.Request, *appsync.AssociateMergedGraphqlApiOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateMergedGraphqlApiRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.AssociateMergedGraphqlApiOutput)
+	return ret0, ret1
+}
+
+// AssociateMergedGraphqlApiRequest indicates an expected call of AssociateMergedGraphqlApiRequest
+func (mr *MockAppSyncAPIMockRecorder) AssociateMergedGraphqlApiRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateMergedGraphqlApiRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).AssociateMergedGraphqlApiRequest), arg0)
+}
+
+// AssociateMergedGraphqlApiWithContext mocks base method
+func (m *MockAppSyncAPI) AssociateMergedGraphqlApiWithContext(arg0 context.Context, arg1 *appsync.AssociateMergedGraphqlApiInput, arg2 ...request.Option) (*appsync.AssociateMergedGraphqlApiOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateMergedGraphqlApiWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.AssociateMergedGraphqlApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateMergedGraphqlApiWithContext indicates an expected call of AssociateMergedGraphqlApiWithContext
+func (mr *MockAppSyncAPIMockRecorder) AssociateMergedGraphqlApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateMergedGraphqlApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).AssociateMergedGraphqlApiWithContext), varargs...)
+}
+
+// AssociateSourceGraphqlApi mocks base method
+func (m *MockAppSyncAPI) AssociateSourceGraphqlApi(arg0 *appsync.AssociateSourceGraphqlApiInput) (*appsync.AssociateSourceGraphqlApiOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateSourceGraphqlApi", arg0)
+	ret0, _ := ret[0].(*appsync.AssociateSourceGraphqlApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateSourceGraphqlApi indicates an expected call of AssociateSourceGraphqlApi
+func (mr *MockAppSyncAPIMockRecorder) AssociateSourceGraphqlApi(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSourceGraphqlApi", reflect.TypeOf((*MockAppSyncAPI)(nil).AssociateSourceGraphqlApi), arg0)
+}
+
+// AssociateSourceGraphqlApiRequest mocks base method
+func (m *MockAppSyncAPI) AssociateSourceGraphqlApiRequest(arg0 *appsync.AssociateSourceGraphqlApiInput) (*request.Request, *appsync.AssociateSourceGraphqlApiOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateSourceGraphqlApiRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.AssociateSourceGraphqlApiOutput)
+	return ret0, ret1
+}
+
+// AssociateSourceGraphqlApiRequest indicates an expected call of AssociateSourceGraphqlApiRequest
+func (mr *MockAppSyncAPIMockRecorder) AssociateSourceGraphqlApiRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSourceGraphqlApiRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).AssociateSourceGraphqlApiRequest), arg0)
+}
+
+// AssociateSourceGraphqlApiWithContext mocks base method
+func (m *MockAppSyncAPI) AssociateSourceGraphqlApiWithContext(arg0 context.Context, arg1 *appsync.AssociateSourceGraphqlApiInput, arg2 ...request.Option) (*appsync.AssociateSourceGraphqlApiOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateSourceGraphqlApiWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.AssociateSourceGraphqlApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateSourceGraphqlApiWithContext indicates an expected call of AssociateSourceGraphqlApiWithContext
+func (mr *MockAppSyncAPIMockRecorder) AssociateSourceGraphqlApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSourceGraphqlApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).AssociateSourceGraphqlApiWithContext), varargs...)
+}
+
 // CreateApiCache mocks base method
 func (m *MockAppSyncAPI) CreateApiCache(arg0 *appsync.CreateApiCacheInput) (*appsync.CreateApiCacheOutput, error) {
 	m.ctrl.T.Helper()
@@ -935,6 +1035,106 @@ func (mr *MockAppSyncAPIMockRecorder) DisassociateApiWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateApiWithContext), varargs...)
 }
 
+// DisassociateMergedGraphqlApi mocks base method
+func (m *MockAppSyncAPI) DisassociateMergedGraphqlApi(arg0 *appsync.DisassociateMergedGraphqlApiInput) (*appsync.DisassociateMergedGraphqlApiOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateMergedGraphqlApi", arg0)
+	ret0, _ := ret[0].(*appsync.DisassociateMergedGraphqlApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateMergedGraphqlApi indicates an expected call of DisassociateMergedGraphqlApi
+func (mr *MockAppSyncAPIMockRecorder) DisassociateMergedGraphqlApi(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMergedGraphqlApi", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateMergedGraphqlApi), arg0)
+}
+
+// DisassociateMergedGraphqlApiRequest mocks base method
+func (m *MockAppSyncAPI) DisassociateMergedGraphqlApiRequest(arg0 *appsync.DisassociateMergedGraphqlApiInput) (*request.Request, *appsync.DisassociateMergedGraphqlApiOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateMergedGraphqlApiRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.DisassociateMergedGraphqlApiOutput)
+	return ret0, ret1
+}
+
+// DisassociateMergedGraphqlApiRequest indicates an expected call of DisassociateMergedGraphqlApiRequest
+func (mr *MockAppSyncAPIMockRecorder) DisassociateMergedGraphqlApiRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMergedGraphqlApiRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateMergedGraphqlApiRequest), arg0)
+}
+
+// DisassociateMergedGraphqlApiWithContext mocks base method
+func (m *MockAppSyncAPI) DisassociateMergedGraphqlApiWithContext(arg0 context.Context, arg1 *appsync.DisassociateMergedGraphqlApiInput, arg2 ...request.Option) (*appsync.DisassociateMergedGraphqlApiOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateMergedGraphqlApiWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.DisassociateMergedGraphqlApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateMergedGraphqlApiWithContext indicates an expected call of DisassociateMergedGraphqlApiWithContext
+func (mr *MockAppSyncAPIMockRecorder) DisassociateMergedGraphqlApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateMergedGraphqlApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateMergedGraphqlApiWithContext), varargs...)
+}
+
+// DisassociateSourceGraphqlApi mocks base method
+func (m *MockAppSyncAPI) DisassociateSourceGraphqlApi(arg0 *appsync.DisassociateSourceGraphqlApiInput) (*appsync.DisassociateSourceGraphqlApiOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateSourceGraphqlApi", arg0)
+	ret0, _ := ret[0].(*appsync.DisassociateSourceGraphqlApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateSourceGraphqlApi indicates an expected call of DisassociateSourceGraphqlApi
+func (mr *MockAppSyncAPIMockRecorder) DisassociateSourceGraphqlApi(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSourceGraphqlApi", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateSourceGraphqlApi), arg0)
+}
+
+// DisassociateSourceGraphqlApiRequest mocks base method
+func (m *MockAppSyncAPI) DisassociateSourceGraphqlApiRequest(arg0 *appsync.DisassociateSourceGraphqlApiInput) (*request.Request, *appsync.DisassociateSourceGraphqlApiOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateSourceGraphqlApiRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.DisassociateSourceGraphqlApiOutput)
+	return ret0, ret1
+}
+
+// DisassociateSourceGraphqlApiRequest indicates an expected call of DisassociateSourceGraphqlApiRequest
+func (mr *MockAppSyncAPIMockRecorder) DisassociateSourceGraphqlApiRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSourceGraphqlApiRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateSourceGraphqlApiRequest), arg0)
+}
+
+// DisassociateSourceGraphqlApiWithContext mocks base method
+func (m *MockAppSyncAPI) DisassociateSourceGraphqlApiWithContext(arg0 context.Context, arg1 *appsync.DisassociateSourceGraphqlApiInput, arg2 ...request.Option) (*appsync.DisassociateSourceGraphqlApiOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateSourceGraphqlApiWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.DisassociateSourceGraphqlApiOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateSourceGraphqlApiWithContext indicates an expected call of DisassociateSourceGraphqlApiWithContext
+func (mr *MockAppSyncAPIMockRecorder) DisassociateSourceGraphqlApiWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSourceGraphqlApiWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).DisassociateSourceGraphqlApiWithContext), varargs...)
+}
+
 // EvaluateCode mocks base method
 func (m *MockAppSyncAPI) EvaluateCode(arg0 *appsync.EvaluateCodeInput) (*appsync.EvaluateCodeOutput, error) {
 	m.ctrl.T.Helper()
@@ -1535,6 +1735,56 @@ func (mr *MockAppSyncAPIMockRecorder) GetSchemaCreationStatusWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaCreationStatusWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetSchemaCreationStatusWithContext), varargs...)
 }
 
+// GetSourceApiAssociation mocks base method
+func (m *MockAppSyncAPI) GetSourceApiAssociation(arg0 *appsync.GetSourceApiAssociationInput) (*appsync.GetSourceApiAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSourceApiAssociation", arg0)
+	ret0, _ := ret[0].(*appsync.GetSourceApiAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSourceApiAssociation indicates an expected call of GetSourceApiAssociation
+func (mr *MockAppSyncAPIMockRecorder) GetSourceApiAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSourceApiAssociation", reflect.TypeOf((*MockAppSyncAPI)(nil).GetSourceApiAssociation), arg0)
+}
+
+// GetSourceApiAssociationRequest mocks base method
+func (m *MockAppSyncAPI) GetSourceApiAssociationRequest(arg0 *appsync.GetSourceApiAssociationInput) (*request.Request, *appsync.GetSourceApiAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSourceApiAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.GetSourceApiAssociationOutput)
+	return ret0, ret1
+}
+
+// GetSourceApiAssociationRequest indicates an expected call of GetSourceApiAssociationRequest
+func (mr *MockAppSyncAPIMockRecorder) GetSourceApiAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSourceApiAssociationRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).GetSourceApiAssociationRequest), arg0)
+}
+
+// GetSourceApiAssociationWithContext mocks base method
+func (m *MockAppSyncAPI) GetSourceApiAssociationWithContext(arg0 context.Context, arg1 *appsync.GetSourceApiAssociationInput, arg2 ...request.Option) (*appsync.GetSourceApiAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSourceApiAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.GetSourceApiAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSourceApiAssociationWithContext indicates an expected call of GetSourceApiAssociationWithContext
+func (mr *MockAppSyncAPIMockRecorder) GetSourceApiAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSourceApiAssociationWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).GetSourceApiAssociationWithContext), varargs...)
+}
+
 // GetType mocks base method
 func (m *MockAppSyncAPI) GetType(arg0 *appsync.GetTypeInput) (*appsync.GetTypeOutput, error) {
 	m.ctrl.T.Helper()
@@ -1935,6 +2185,56 @@ func (mr *MockAppSyncAPIMockRecorder) ListResolversWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolversWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListResolversWithContext), varargs...)
 }
 
+// ListSourceApiAssociations mocks base method
+func (m *MockAppSyncAPI) ListSourceApiAssociations(arg0 *appsync.ListSourceApiAssociationsInput) (*appsync.ListSourceApiAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSourceApiAssociations", arg0)
+	ret0, _ := ret[0].(*appsync.ListSourceApiAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSourceApiAssociations indicates an expected call of ListSourceApiAssociations
+func (mr *MockAppSyncAPIMockRecorder) ListSourceApiAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceApiAssociations", reflect.TypeOf((*MockAppSyncAPI)(nil).ListSourceApiAssociations), arg0)
+}
+
+// ListSourceApiAssociationsRequest mocks base method
+func (m *MockAppSyncAPI) ListSourceApiAssociationsRequest(arg0 *appsync.ListSourceApiAssociationsInput) (*request.Request, *appsync.ListSourceApiAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSourceApiAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.ListSourceApiAssociationsOutput)
+	return ret0, ret1
+}
+
+// ListSourceApiAssociationsRequest indicates an expected call of ListSourceApiAssociationsRequest
+func (mr *MockAppSyncAPIMockRecorder) ListSourceApiAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceApiAssociationsRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).ListSourceApiAssociationsRequest), arg0)
+}
+
+// ListSourceApiAssociationsWithContext mocks base method
+func (m *MockAppSyncAPI) ListSourceApiAssociationsWithContext(arg0 context.Context, arg1 *appsync.ListSourceApiAssociationsInput, arg2 ...request.Option) (*appsync.ListSourceApiAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSourceApiAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.ListSourceApiAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSourceApiAssociationsWithContext indicates an expected call of ListSourceApiAssociationsWithContext
+func (mr *MockAppSyncAPIMockRecorder) ListSourceApiAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceApiAssociationsWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListSourceApiAssociationsWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockAppSyncAPI) ListTagsForResource(arg0 *appsync.ListTagsForResourceInput) (*appsync.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1998,6 +2298,56 @@ func (m *MockAppSyncAPI) ListTypes(arg0 *appsync.ListTypesInput) (*appsync.ListT
 func (mr *MockAppSyncAPIMockRecorder) ListTypes(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTypes", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTypes), arg0)
+}
+
+// ListTypesByAssociation mocks base method
+func (m *MockAppSyncAPI) ListTypesByAssociation(arg0 *appsync.ListTypesByAssociationInput) (*appsync.ListTypesByAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTypesByAssociation", arg0)
+	ret0, _ := ret[0].(*appsync.ListTypesByAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTypesByAssociation indicates an expected call of ListTypesByAssociation
+func (mr *MockAppSyncAPIMockRecorder) ListTypesByAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTypesByAssociation", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTypesByAssociation), arg0)
+}
+
+// ListTypesByAssociationRequest mocks base method
+func (m *MockAppSyncAPI) ListTypesByAssociationRequest(arg0 *appsync.ListTypesByAssociationInput) (*request.Request, *appsync.ListTypesByAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTypesByAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.ListTypesByAssociationOutput)
+	return ret0, ret1
+}
+
+// ListTypesByAssociationRequest indicates an expected call of ListTypesByAssociationRequest
+func (mr *MockAppSyncAPIMockRecorder) ListTypesByAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTypesByAssociationRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTypesByAssociationRequest), arg0)
+}
+
+// ListTypesByAssociationWithContext mocks base method
+func (m *MockAppSyncAPI) ListTypesByAssociationWithContext(arg0 context.Context, arg1 *appsync.ListTypesByAssociationInput, arg2 ...request.Option) (*appsync.ListTypesByAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTypesByAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.ListTypesByAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTypesByAssociationWithContext indicates an expected call of ListTypesByAssociationWithContext
+func (mr *MockAppSyncAPIMockRecorder) ListTypesByAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTypesByAssociationWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTypesByAssociationWithContext), varargs...)
 }
 
 // ListTypesRequest mocks base method
@@ -2083,6 +2433,56 @@ func (mr *MockAppSyncAPIMockRecorder) StartSchemaCreationWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSchemaCreationWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).StartSchemaCreationWithContext), varargs...)
+}
+
+// StartSchemaMerge mocks base method
+func (m *MockAppSyncAPI) StartSchemaMerge(arg0 *appsync.StartSchemaMergeInput) (*appsync.StartSchemaMergeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSchemaMerge", arg0)
+	ret0, _ := ret[0].(*appsync.StartSchemaMergeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSchemaMerge indicates an expected call of StartSchemaMerge
+func (mr *MockAppSyncAPIMockRecorder) StartSchemaMerge(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSchemaMerge", reflect.TypeOf((*MockAppSyncAPI)(nil).StartSchemaMerge), arg0)
+}
+
+// StartSchemaMergeRequest mocks base method
+func (m *MockAppSyncAPI) StartSchemaMergeRequest(arg0 *appsync.StartSchemaMergeInput) (*request.Request, *appsync.StartSchemaMergeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSchemaMergeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.StartSchemaMergeOutput)
+	return ret0, ret1
+}
+
+// StartSchemaMergeRequest indicates an expected call of StartSchemaMergeRequest
+func (mr *MockAppSyncAPIMockRecorder) StartSchemaMergeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSchemaMergeRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).StartSchemaMergeRequest), arg0)
+}
+
+// StartSchemaMergeWithContext mocks base method
+func (m *MockAppSyncAPI) StartSchemaMergeWithContext(arg0 context.Context, arg1 *appsync.StartSchemaMergeInput, arg2 ...request.Option) (*appsync.StartSchemaMergeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartSchemaMergeWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.StartSchemaMergeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSchemaMergeWithContext indicates an expected call of StartSchemaMergeWithContext
+func (mr *MockAppSyncAPIMockRecorder) StartSchemaMergeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSchemaMergeWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).StartSchemaMergeWithContext), varargs...)
 }
 
 // TagResource mocks base method
@@ -2533,6 +2933,56 @@ func (mr *MockAppSyncAPIMockRecorder) UpdateResolverWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResolverWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateResolverWithContext), varargs...)
+}
+
+// UpdateSourceApiAssociation mocks base method
+func (m *MockAppSyncAPI) UpdateSourceApiAssociation(arg0 *appsync.UpdateSourceApiAssociationInput) (*appsync.UpdateSourceApiAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSourceApiAssociation", arg0)
+	ret0, _ := ret[0].(*appsync.UpdateSourceApiAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSourceApiAssociation indicates an expected call of UpdateSourceApiAssociation
+func (mr *MockAppSyncAPIMockRecorder) UpdateSourceApiAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSourceApiAssociation", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateSourceApiAssociation), arg0)
+}
+
+// UpdateSourceApiAssociationRequest mocks base method
+func (m *MockAppSyncAPI) UpdateSourceApiAssociationRequest(arg0 *appsync.UpdateSourceApiAssociationInput) (*request.Request, *appsync.UpdateSourceApiAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSourceApiAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appsync.UpdateSourceApiAssociationOutput)
+	return ret0, ret1
+}
+
+// UpdateSourceApiAssociationRequest indicates an expected call of UpdateSourceApiAssociationRequest
+func (mr *MockAppSyncAPIMockRecorder) UpdateSourceApiAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSourceApiAssociationRequest", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateSourceApiAssociationRequest), arg0)
+}
+
+// UpdateSourceApiAssociationWithContext mocks base method
+func (m *MockAppSyncAPI) UpdateSourceApiAssociationWithContext(arg0 context.Context, arg1 *appsync.UpdateSourceApiAssociationInput, arg2 ...request.Option) (*appsync.UpdateSourceApiAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSourceApiAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*appsync.UpdateSourceApiAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSourceApiAssociationWithContext indicates an expected call of UpdateSourceApiAssociationWithContext
+func (mr *MockAppSyncAPIMockRecorder) UpdateSourceApiAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSourceApiAssociationWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).UpdateSourceApiAssociationWithContext), varargs...)
 }
 
 // UpdateType mocks base method
