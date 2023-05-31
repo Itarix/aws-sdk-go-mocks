@@ -135,204 +135,154 @@ func (mr *MockSecurityLakeAPIMockRecorder) CreateCustomLogSourceWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomLogSourceWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateCustomLogSourceWithContext), varargs...)
 }
 
-// CreateDatalake mocks base method
-func (m *MockSecurityLakeAPI) CreateDatalake(arg0 *securitylake.CreateDatalakeInput) (*securitylake.CreateDatalakeOutput, error) {
+// CreateDataLake mocks base method
+func (m *MockSecurityLakeAPI) CreateDataLake(arg0 *securitylake.CreateDataLakeInput) (*securitylake.CreateDataLakeOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateDatalake", arg0)
-	ret0, _ := ret[0].(*securitylake.CreateDatalakeOutput)
+	ret := m.ctrl.Call(m, "CreateDataLake", arg0)
+	ret0, _ := ret[0].(*securitylake.CreateDataLakeOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// CreateDatalake indicates an expected call of CreateDatalake
-func (mr *MockSecurityLakeAPIMockRecorder) CreateDatalake(arg0 interface{}) *gomock.Call {
+// CreateDataLake indicates an expected call of CreateDataLake
+func (mr *MockSecurityLakeAPIMockRecorder) CreateDataLake(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatalake", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDatalake), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataLake", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDataLake), arg0)
 }
 
-// CreateDatalakeAutoEnable mocks base method
-func (m *MockSecurityLakeAPI) CreateDatalakeAutoEnable(arg0 *securitylake.CreateDatalakeAutoEnableInput) (*securitylake.CreateDatalakeAutoEnableOutput, error) {
+// CreateDataLakeExceptionSubscription mocks base method
+func (m *MockSecurityLakeAPI) CreateDataLakeExceptionSubscription(arg0 *securitylake.CreateDataLakeExceptionSubscriptionInput) (*securitylake.CreateDataLakeExceptionSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateDatalakeAutoEnable", arg0)
-	ret0, _ := ret[0].(*securitylake.CreateDatalakeAutoEnableOutput)
+	ret := m.ctrl.Call(m, "CreateDataLakeExceptionSubscription", arg0)
+	ret0, _ := ret[0].(*securitylake.CreateDataLakeExceptionSubscriptionOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// CreateDatalakeAutoEnable indicates an expected call of CreateDatalakeAutoEnable
-func (mr *MockSecurityLakeAPIMockRecorder) CreateDatalakeAutoEnable(arg0 interface{}) *gomock.Call {
+// CreateDataLakeExceptionSubscription indicates an expected call of CreateDataLakeExceptionSubscription
+func (mr *MockSecurityLakeAPIMockRecorder) CreateDataLakeExceptionSubscription(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatalakeAutoEnable", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDatalakeAutoEnable), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataLakeExceptionSubscription", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDataLakeExceptionSubscription), arg0)
 }
 
-// CreateDatalakeAutoEnableRequest mocks base method
-func (m *MockSecurityLakeAPI) CreateDatalakeAutoEnableRequest(arg0 *securitylake.CreateDatalakeAutoEnableInput) (*request.Request, *securitylake.CreateDatalakeAutoEnableOutput) {
+// CreateDataLakeExceptionSubscriptionRequest mocks base method
+func (m *MockSecurityLakeAPI) CreateDataLakeExceptionSubscriptionRequest(arg0 *securitylake.CreateDataLakeExceptionSubscriptionInput) (*request.Request, *securitylake.CreateDataLakeExceptionSubscriptionOutput) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateDatalakeAutoEnableRequest", arg0)
+	ret := m.ctrl.Call(m, "CreateDataLakeExceptionSubscriptionRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.CreateDatalakeAutoEnableOutput)
+	ret1, _ := ret[1].(*securitylake.CreateDataLakeExceptionSubscriptionOutput)
 	return ret0, ret1
 }
 
-// CreateDatalakeAutoEnableRequest indicates an expected call of CreateDatalakeAutoEnableRequest
-func (mr *MockSecurityLakeAPIMockRecorder) CreateDatalakeAutoEnableRequest(arg0 interface{}) *gomock.Call {
+// CreateDataLakeExceptionSubscriptionRequest indicates an expected call of CreateDataLakeExceptionSubscriptionRequest
+func (mr *MockSecurityLakeAPIMockRecorder) CreateDataLakeExceptionSubscriptionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatalakeAutoEnableRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDatalakeAutoEnableRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataLakeExceptionSubscriptionRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDataLakeExceptionSubscriptionRequest), arg0)
 }
 
-// CreateDatalakeAutoEnableWithContext mocks base method
-func (m *MockSecurityLakeAPI) CreateDatalakeAutoEnableWithContext(arg0 context.Context, arg1 *securitylake.CreateDatalakeAutoEnableInput, arg2 ...request.Option) (*securitylake.CreateDatalakeAutoEnableOutput, error) {
+// CreateDataLakeExceptionSubscriptionWithContext mocks base method
+func (m *MockSecurityLakeAPI) CreateDataLakeExceptionSubscriptionWithContext(arg0 context.Context, arg1 *securitylake.CreateDataLakeExceptionSubscriptionInput, arg2 ...request.Option) (*securitylake.CreateDataLakeExceptionSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "CreateDatalakeAutoEnableWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.CreateDatalakeAutoEnableOutput)
+	ret := m.ctrl.Call(m, "CreateDataLakeExceptionSubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.CreateDataLakeExceptionSubscriptionOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// CreateDatalakeAutoEnableWithContext indicates an expected call of CreateDatalakeAutoEnableWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) CreateDatalakeAutoEnableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// CreateDataLakeExceptionSubscriptionWithContext indicates an expected call of CreateDataLakeExceptionSubscriptionWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) CreateDataLakeExceptionSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatalakeAutoEnableWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDatalakeAutoEnableWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataLakeExceptionSubscriptionWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDataLakeExceptionSubscriptionWithContext), varargs...)
 }
 
-// CreateDatalakeDelegatedAdmin mocks base method
-func (m *MockSecurityLakeAPI) CreateDatalakeDelegatedAdmin(arg0 *securitylake.CreateDatalakeDelegatedAdminInput) (*securitylake.CreateDatalakeDelegatedAdminOutput, error) {
+// CreateDataLakeOrganizationConfiguration mocks base method
+func (m *MockSecurityLakeAPI) CreateDataLakeOrganizationConfiguration(arg0 *securitylake.CreateDataLakeOrganizationConfigurationInput) (*securitylake.CreateDataLakeOrganizationConfigurationOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateDatalakeDelegatedAdmin", arg0)
-	ret0, _ := ret[0].(*securitylake.CreateDatalakeDelegatedAdminOutput)
+	ret := m.ctrl.Call(m, "CreateDataLakeOrganizationConfiguration", arg0)
+	ret0, _ := ret[0].(*securitylake.CreateDataLakeOrganizationConfigurationOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// CreateDatalakeDelegatedAdmin indicates an expected call of CreateDatalakeDelegatedAdmin
-func (mr *MockSecurityLakeAPIMockRecorder) CreateDatalakeDelegatedAdmin(arg0 interface{}) *gomock.Call {
+// CreateDataLakeOrganizationConfiguration indicates an expected call of CreateDataLakeOrganizationConfiguration
+func (mr *MockSecurityLakeAPIMockRecorder) CreateDataLakeOrganizationConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatalakeDelegatedAdmin", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDatalakeDelegatedAdmin), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataLakeOrganizationConfiguration", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDataLakeOrganizationConfiguration), arg0)
 }
 
-// CreateDatalakeDelegatedAdminRequest mocks base method
-func (m *MockSecurityLakeAPI) CreateDatalakeDelegatedAdminRequest(arg0 *securitylake.CreateDatalakeDelegatedAdminInput) (*request.Request, *securitylake.CreateDatalakeDelegatedAdminOutput) {
+// CreateDataLakeOrganizationConfigurationRequest mocks base method
+func (m *MockSecurityLakeAPI) CreateDataLakeOrganizationConfigurationRequest(arg0 *securitylake.CreateDataLakeOrganizationConfigurationInput) (*request.Request, *securitylake.CreateDataLakeOrganizationConfigurationOutput) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateDatalakeDelegatedAdminRequest", arg0)
+	ret := m.ctrl.Call(m, "CreateDataLakeOrganizationConfigurationRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.CreateDatalakeDelegatedAdminOutput)
+	ret1, _ := ret[1].(*securitylake.CreateDataLakeOrganizationConfigurationOutput)
 	return ret0, ret1
 }
 
-// CreateDatalakeDelegatedAdminRequest indicates an expected call of CreateDatalakeDelegatedAdminRequest
-func (mr *MockSecurityLakeAPIMockRecorder) CreateDatalakeDelegatedAdminRequest(arg0 interface{}) *gomock.Call {
+// CreateDataLakeOrganizationConfigurationRequest indicates an expected call of CreateDataLakeOrganizationConfigurationRequest
+func (mr *MockSecurityLakeAPIMockRecorder) CreateDataLakeOrganizationConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatalakeDelegatedAdminRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDatalakeDelegatedAdminRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataLakeOrganizationConfigurationRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDataLakeOrganizationConfigurationRequest), arg0)
 }
 
-// CreateDatalakeDelegatedAdminWithContext mocks base method
-func (m *MockSecurityLakeAPI) CreateDatalakeDelegatedAdminWithContext(arg0 context.Context, arg1 *securitylake.CreateDatalakeDelegatedAdminInput, arg2 ...request.Option) (*securitylake.CreateDatalakeDelegatedAdminOutput, error) {
+// CreateDataLakeOrganizationConfigurationWithContext mocks base method
+func (m *MockSecurityLakeAPI) CreateDataLakeOrganizationConfigurationWithContext(arg0 context.Context, arg1 *securitylake.CreateDataLakeOrganizationConfigurationInput, arg2 ...request.Option) (*securitylake.CreateDataLakeOrganizationConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "CreateDatalakeDelegatedAdminWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.CreateDatalakeDelegatedAdminOutput)
+	ret := m.ctrl.Call(m, "CreateDataLakeOrganizationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.CreateDataLakeOrganizationConfigurationOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// CreateDatalakeDelegatedAdminWithContext indicates an expected call of CreateDatalakeDelegatedAdminWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) CreateDatalakeDelegatedAdminWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// CreateDataLakeOrganizationConfigurationWithContext indicates an expected call of CreateDataLakeOrganizationConfigurationWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) CreateDataLakeOrganizationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatalakeDelegatedAdminWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDatalakeDelegatedAdminWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataLakeOrganizationConfigurationWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDataLakeOrganizationConfigurationWithContext), varargs...)
 }
 
-// CreateDatalakeExceptionsSubscription mocks base method
-func (m *MockSecurityLakeAPI) CreateDatalakeExceptionsSubscription(arg0 *securitylake.CreateDatalakeExceptionsSubscriptionInput) (*securitylake.CreateDatalakeExceptionsSubscriptionOutput, error) {
+// CreateDataLakeRequest mocks base method
+func (m *MockSecurityLakeAPI) CreateDataLakeRequest(arg0 *securitylake.CreateDataLakeInput) (*request.Request, *securitylake.CreateDataLakeOutput) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateDatalakeExceptionsSubscription", arg0)
-	ret0, _ := ret[0].(*securitylake.CreateDatalakeExceptionsSubscriptionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateDatalakeExceptionsSubscription indicates an expected call of CreateDatalakeExceptionsSubscription
-func (mr *MockSecurityLakeAPIMockRecorder) CreateDatalakeExceptionsSubscription(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatalakeExceptionsSubscription", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDatalakeExceptionsSubscription), arg0)
-}
-
-// CreateDatalakeExceptionsSubscriptionRequest mocks base method
-func (m *MockSecurityLakeAPI) CreateDatalakeExceptionsSubscriptionRequest(arg0 *securitylake.CreateDatalakeExceptionsSubscriptionInput) (*request.Request, *securitylake.CreateDatalakeExceptionsSubscriptionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateDatalakeExceptionsSubscriptionRequest", arg0)
+	ret := m.ctrl.Call(m, "CreateDataLakeRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.CreateDatalakeExceptionsSubscriptionOutput)
+	ret1, _ := ret[1].(*securitylake.CreateDataLakeOutput)
 	return ret0, ret1
 }
 
-// CreateDatalakeExceptionsSubscriptionRequest indicates an expected call of CreateDatalakeExceptionsSubscriptionRequest
-func (mr *MockSecurityLakeAPIMockRecorder) CreateDatalakeExceptionsSubscriptionRequest(arg0 interface{}) *gomock.Call {
+// CreateDataLakeRequest indicates an expected call of CreateDataLakeRequest
+func (mr *MockSecurityLakeAPIMockRecorder) CreateDataLakeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatalakeExceptionsSubscriptionRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDatalakeExceptionsSubscriptionRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataLakeRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDataLakeRequest), arg0)
 }
 
-// CreateDatalakeExceptionsSubscriptionWithContext mocks base method
-func (m *MockSecurityLakeAPI) CreateDatalakeExceptionsSubscriptionWithContext(arg0 context.Context, arg1 *securitylake.CreateDatalakeExceptionsSubscriptionInput, arg2 ...request.Option) (*securitylake.CreateDatalakeExceptionsSubscriptionOutput, error) {
+// CreateDataLakeWithContext mocks base method
+func (m *MockSecurityLakeAPI) CreateDataLakeWithContext(arg0 context.Context, arg1 *securitylake.CreateDataLakeInput, arg2 ...request.Option) (*securitylake.CreateDataLakeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "CreateDatalakeExceptionsSubscriptionWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.CreateDatalakeExceptionsSubscriptionOutput)
+	ret := m.ctrl.Call(m, "CreateDataLakeWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.CreateDataLakeOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// CreateDatalakeExceptionsSubscriptionWithContext indicates an expected call of CreateDatalakeExceptionsSubscriptionWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) CreateDatalakeExceptionsSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// CreateDataLakeWithContext indicates an expected call of CreateDataLakeWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) CreateDataLakeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatalakeExceptionsSubscriptionWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDatalakeExceptionsSubscriptionWithContext), varargs...)
-}
-
-// CreateDatalakeRequest mocks base method
-func (m *MockSecurityLakeAPI) CreateDatalakeRequest(arg0 *securitylake.CreateDatalakeInput) (*request.Request, *securitylake.CreateDatalakeOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateDatalakeRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.CreateDatalakeOutput)
-	return ret0, ret1
-}
-
-// CreateDatalakeRequest indicates an expected call of CreateDatalakeRequest
-func (mr *MockSecurityLakeAPIMockRecorder) CreateDatalakeRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatalakeRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDatalakeRequest), arg0)
-}
-
-// CreateDatalakeWithContext mocks base method
-func (m *MockSecurityLakeAPI) CreateDatalakeWithContext(arg0 context.Context, arg1 *securitylake.CreateDatalakeInput, arg2 ...request.Option) (*securitylake.CreateDatalakeOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateDatalakeWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.CreateDatalakeOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateDatalakeWithContext indicates an expected call of CreateDatalakeWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) CreateDatalakeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDatalakeWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDatalakeWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataLakeWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateDataLakeWithContext), varargs...)
 }
 
 // CreateSubscriber mocks base method
@@ -348,6 +298,56 @@ func (m *MockSecurityLakeAPI) CreateSubscriber(arg0 *securitylake.CreateSubscrib
 func (mr *MockSecurityLakeAPIMockRecorder) CreateSubscriber(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubscriber", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateSubscriber), arg0)
+}
+
+// CreateSubscriberNotification mocks base method
+func (m *MockSecurityLakeAPI) CreateSubscriberNotification(arg0 *securitylake.CreateSubscriberNotificationInput) (*securitylake.CreateSubscriberNotificationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSubscriberNotification", arg0)
+	ret0, _ := ret[0].(*securitylake.CreateSubscriberNotificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSubscriberNotification indicates an expected call of CreateSubscriberNotification
+func (mr *MockSecurityLakeAPIMockRecorder) CreateSubscriberNotification(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubscriberNotification", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateSubscriberNotification), arg0)
+}
+
+// CreateSubscriberNotificationRequest mocks base method
+func (m *MockSecurityLakeAPI) CreateSubscriberNotificationRequest(arg0 *securitylake.CreateSubscriberNotificationInput) (*request.Request, *securitylake.CreateSubscriberNotificationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSubscriberNotificationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securitylake.CreateSubscriberNotificationOutput)
+	return ret0, ret1
+}
+
+// CreateSubscriberNotificationRequest indicates an expected call of CreateSubscriberNotificationRequest
+func (mr *MockSecurityLakeAPIMockRecorder) CreateSubscriberNotificationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubscriberNotificationRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateSubscriberNotificationRequest), arg0)
+}
+
+// CreateSubscriberNotificationWithContext mocks base method
+func (m *MockSecurityLakeAPI) CreateSubscriberNotificationWithContext(arg0 context.Context, arg1 *securitylake.CreateSubscriberNotificationInput, arg2 ...request.Option) (*securitylake.CreateSubscriberNotificationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSubscriberNotificationWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.CreateSubscriberNotificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSubscriberNotificationWithContext indicates an expected call of CreateSubscriberNotificationWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) CreateSubscriberNotificationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubscriberNotificationWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateSubscriberNotificationWithContext), varargs...)
 }
 
 // CreateSubscriberRequest mocks base method
@@ -383,56 +383,6 @@ func (mr *MockSecurityLakeAPIMockRecorder) CreateSubscriberWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubscriberWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateSubscriberWithContext), varargs...)
-}
-
-// CreateSubscriptionNotificationConfiguration mocks base method
-func (m *MockSecurityLakeAPI) CreateSubscriptionNotificationConfiguration(arg0 *securitylake.CreateSubscriptionNotificationConfigurationInput) (*securitylake.CreateSubscriptionNotificationConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateSubscriptionNotificationConfiguration", arg0)
-	ret0, _ := ret[0].(*securitylake.CreateSubscriptionNotificationConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateSubscriptionNotificationConfiguration indicates an expected call of CreateSubscriptionNotificationConfiguration
-func (mr *MockSecurityLakeAPIMockRecorder) CreateSubscriptionNotificationConfiguration(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubscriptionNotificationConfiguration", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateSubscriptionNotificationConfiguration), arg0)
-}
-
-// CreateSubscriptionNotificationConfigurationRequest mocks base method
-func (m *MockSecurityLakeAPI) CreateSubscriptionNotificationConfigurationRequest(arg0 *securitylake.CreateSubscriptionNotificationConfigurationInput) (*request.Request, *securitylake.CreateSubscriptionNotificationConfigurationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "CreateSubscriptionNotificationConfigurationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.CreateSubscriptionNotificationConfigurationOutput)
-	return ret0, ret1
-}
-
-// CreateSubscriptionNotificationConfigurationRequest indicates an expected call of CreateSubscriptionNotificationConfigurationRequest
-func (mr *MockSecurityLakeAPIMockRecorder) CreateSubscriptionNotificationConfigurationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubscriptionNotificationConfigurationRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateSubscriptionNotificationConfigurationRequest), arg0)
-}
-
-// CreateSubscriptionNotificationConfigurationWithContext mocks base method
-func (m *MockSecurityLakeAPI) CreateSubscriptionNotificationConfigurationWithContext(arg0 context.Context, arg1 *securitylake.CreateSubscriptionNotificationConfigurationInput, arg2 ...request.Option) (*securitylake.CreateSubscriptionNotificationConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "CreateSubscriptionNotificationConfigurationWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.CreateSubscriptionNotificationConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// CreateSubscriptionNotificationConfigurationWithContext indicates an expected call of CreateSubscriptionNotificationConfigurationWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) CreateSubscriptionNotificationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSubscriptionNotificationConfigurationWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).CreateSubscriptionNotificationConfigurationWithContext), varargs...)
 }
 
 // DeleteAwsLogSource mocks base method
@@ -535,204 +485,154 @@ func (mr *MockSecurityLakeAPIMockRecorder) DeleteCustomLogSourceWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomLogSourceWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteCustomLogSourceWithContext), varargs...)
 }
 
-// DeleteDatalake mocks base method
-func (m *MockSecurityLakeAPI) DeleteDatalake(arg0 *securitylake.DeleteDatalakeInput) (*securitylake.DeleteDatalakeOutput, error) {
+// DeleteDataLake mocks base method
+func (m *MockSecurityLakeAPI) DeleteDataLake(arg0 *securitylake.DeleteDataLakeInput) (*securitylake.DeleteDataLakeOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDatalake", arg0)
-	ret0, _ := ret[0].(*securitylake.DeleteDatalakeOutput)
+	ret := m.ctrl.Call(m, "DeleteDataLake", arg0)
+	ret0, _ := ret[0].(*securitylake.DeleteDataLakeOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// DeleteDatalake indicates an expected call of DeleteDatalake
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteDatalake(arg0 interface{}) *gomock.Call {
+// DeleteDataLake indicates an expected call of DeleteDataLake
+func (mr *MockSecurityLakeAPIMockRecorder) DeleteDataLake(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatalake", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDatalake), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataLake", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDataLake), arg0)
 }
 
-// DeleteDatalakeAutoEnable mocks base method
-func (m *MockSecurityLakeAPI) DeleteDatalakeAutoEnable(arg0 *securitylake.DeleteDatalakeAutoEnableInput) (*securitylake.DeleteDatalakeAutoEnableOutput, error) {
+// DeleteDataLakeExceptionSubscription mocks base method
+func (m *MockSecurityLakeAPI) DeleteDataLakeExceptionSubscription(arg0 *securitylake.DeleteDataLakeExceptionSubscriptionInput) (*securitylake.DeleteDataLakeExceptionSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDatalakeAutoEnable", arg0)
-	ret0, _ := ret[0].(*securitylake.DeleteDatalakeAutoEnableOutput)
+	ret := m.ctrl.Call(m, "DeleteDataLakeExceptionSubscription", arg0)
+	ret0, _ := ret[0].(*securitylake.DeleteDataLakeExceptionSubscriptionOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// DeleteDatalakeAutoEnable indicates an expected call of DeleteDatalakeAutoEnable
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteDatalakeAutoEnable(arg0 interface{}) *gomock.Call {
+// DeleteDataLakeExceptionSubscription indicates an expected call of DeleteDataLakeExceptionSubscription
+func (mr *MockSecurityLakeAPIMockRecorder) DeleteDataLakeExceptionSubscription(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatalakeAutoEnable", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDatalakeAutoEnable), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataLakeExceptionSubscription", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDataLakeExceptionSubscription), arg0)
 }
 
-// DeleteDatalakeAutoEnableRequest mocks base method
-func (m *MockSecurityLakeAPI) DeleteDatalakeAutoEnableRequest(arg0 *securitylake.DeleteDatalakeAutoEnableInput) (*request.Request, *securitylake.DeleteDatalakeAutoEnableOutput) {
+// DeleteDataLakeExceptionSubscriptionRequest mocks base method
+func (m *MockSecurityLakeAPI) DeleteDataLakeExceptionSubscriptionRequest(arg0 *securitylake.DeleteDataLakeExceptionSubscriptionInput) (*request.Request, *securitylake.DeleteDataLakeExceptionSubscriptionOutput) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDatalakeAutoEnableRequest", arg0)
+	ret := m.ctrl.Call(m, "DeleteDataLakeExceptionSubscriptionRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.DeleteDatalakeAutoEnableOutput)
+	ret1, _ := ret[1].(*securitylake.DeleteDataLakeExceptionSubscriptionOutput)
 	return ret0, ret1
 }
 
-// DeleteDatalakeAutoEnableRequest indicates an expected call of DeleteDatalakeAutoEnableRequest
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteDatalakeAutoEnableRequest(arg0 interface{}) *gomock.Call {
+// DeleteDataLakeExceptionSubscriptionRequest indicates an expected call of DeleteDataLakeExceptionSubscriptionRequest
+func (mr *MockSecurityLakeAPIMockRecorder) DeleteDataLakeExceptionSubscriptionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatalakeAutoEnableRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDatalakeAutoEnableRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataLakeExceptionSubscriptionRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDataLakeExceptionSubscriptionRequest), arg0)
 }
 
-// DeleteDatalakeAutoEnableWithContext mocks base method
-func (m *MockSecurityLakeAPI) DeleteDatalakeAutoEnableWithContext(arg0 context.Context, arg1 *securitylake.DeleteDatalakeAutoEnableInput, arg2 ...request.Option) (*securitylake.DeleteDatalakeAutoEnableOutput, error) {
+// DeleteDataLakeExceptionSubscriptionWithContext mocks base method
+func (m *MockSecurityLakeAPI) DeleteDataLakeExceptionSubscriptionWithContext(arg0 context.Context, arg1 *securitylake.DeleteDataLakeExceptionSubscriptionInput, arg2 ...request.Option) (*securitylake.DeleteDataLakeExceptionSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "DeleteDatalakeAutoEnableWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.DeleteDatalakeAutoEnableOutput)
+	ret := m.ctrl.Call(m, "DeleteDataLakeExceptionSubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.DeleteDataLakeExceptionSubscriptionOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// DeleteDatalakeAutoEnableWithContext indicates an expected call of DeleteDatalakeAutoEnableWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteDatalakeAutoEnableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// DeleteDataLakeExceptionSubscriptionWithContext indicates an expected call of DeleteDataLakeExceptionSubscriptionWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) DeleteDataLakeExceptionSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatalakeAutoEnableWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDatalakeAutoEnableWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataLakeExceptionSubscriptionWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDataLakeExceptionSubscriptionWithContext), varargs...)
 }
 
-// DeleteDatalakeDelegatedAdmin mocks base method
-func (m *MockSecurityLakeAPI) DeleteDatalakeDelegatedAdmin(arg0 *securitylake.DeleteDatalakeDelegatedAdminInput) (*securitylake.DeleteDatalakeDelegatedAdminOutput, error) {
+// DeleteDataLakeOrganizationConfiguration mocks base method
+func (m *MockSecurityLakeAPI) DeleteDataLakeOrganizationConfiguration(arg0 *securitylake.DeleteDataLakeOrganizationConfigurationInput) (*securitylake.DeleteDataLakeOrganizationConfigurationOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDatalakeDelegatedAdmin", arg0)
-	ret0, _ := ret[0].(*securitylake.DeleteDatalakeDelegatedAdminOutput)
+	ret := m.ctrl.Call(m, "DeleteDataLakeOrganizationConfiguration", arg0)
+	ret0, _ := ret[0].(*securitylake.DeleteDataLakeOrganizationConfigurationOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// DeleteDatalakeDelegatedAdmin indicates an expected call of DeleteDatalakeDelegatedAdmin
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteDatalakeDelegatedAdmin(arg0 interface{}) *gomock.Call {
+// DeleteDataLakeOrganizationConfiguration indicates an expected call of DeleteDataLakeOrganizationConfiguration
+func (mr *MockSecurityLakeAPIMockRecorder) DeleteDataLakeOrganizationConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatalakeDelegatedAdmin", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDatalakeDelegatedAdmin), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataLakeOrganizationConfiguration", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDataLakeOrganizationConfiguration), arg0)
 }
 
-// DeleteDatalakeDelegatedAdminRequest mocks base method
-func (m *MockSecurityLakeAPI) DeleteDatalakeDelegatedAdminRequest(arg0 *securitylake.DeleteDatalakeDelegatedAdminInput) (*request.Request, *securitylake.DeleteDatalakeDelegatedAdminOutput) {
+// DeleteDataLakeOrganizationConfigurationRequest mocks base method
+func (m *MockSecurityLakeAPI) DeleteDataLakeOrganizationConfigurationRequest(arg0 *securitylake.DeleteDataLakeOrganizationConfigurationInput) (*request.Request, *securitylake.DeleteDataLakeOrganizationConfigurationOutput) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDatalakeDelegatedAdminRequest", arg0)
+	ret := m.ctrl.Call(m, "DeleteDataLakeOrganizationConfigurationRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.DeleteDatalakeDelegatedAdminOutput)
+	ret1, _ := ret[1].(*securitylake.DeleteDataLakeOrganizationConfigurationOutput)
 	return ret0, ret1
 }
 
-// DeleteDatalakeDelegatedAdminRequest indicates an expected call of DeleteDatalakeDelegatedAdminRequest
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteDatalakeDelegatedAdminRequest(arg0 interface{}) *gomock.Call {
+// DeleteDataLakeOrganizationConfigurationRequest indicates an expected call of DeleteDataLakeOrganizationConfigurationRequest
+func (mr *MockSecurityLakeAPIMockRecorder) DeleteDataLakeOrganizationConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatalakeDelegatedAdminRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDatalakeDelegatedAdminRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataLakeOrganizationConfigurationRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDataLakeOrganizationConfigurationRequest), arg0)
 }
 
-// DeleteDatalakeDelegatedAdminWithContext mocks base method
-func (m *MockSecurityLakeAPI) DeleteDatalakeDelegatedAdminWithContext(arg0 context.Context, arg1 *securitylake.DeleteDatalakeDelegatedAdminInput, arg2 ...request.Option) (*securitylake.DeleteDatalakeDelegatedAdminOutput, error) {
+// DeleteDataLakeOrganizationConfigurationWithContext mocks base method
+func (m *MockSecurityLakeAPI) DeleteDataLakeOrganizationConfigurationWithContext(arg0 context.Context, arg1 *securitylake.DeleteDataLakeOrganizationConfigurationInput, arg2 ...request.Option) (*securitylake.DeleteDataLakeOrganizationConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "DeleteDatalakeDelegatedAdminWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.DeleteDatalakeDelegatedAdminOutput)
+	ret := m.ctrl.Call(m, "DeleteDataLakeOrganizationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.DeleteDataLakeOrganizationConfigurationOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// DeleteDatalakeDelegatedAdminWithContext indicates an expected call of DeleteDatalakeDelegatedAdminWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteDatalakeDelegatedAdminWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// DeleteDataLakeOrganizationConfigurationWithContext indicates an expected call of DeleteDataLakeOrganizationConfigurationWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) DeleteDataLakeOrganizationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatalakeDelegatedAdminWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDatalakeDelegatedAdminWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataLakeOrganizationConfigurationWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDataLakeOrganizationConfigurationWithContext), varargs...)
 }
 
-// DeleteDatalakeExceptionsSubscription mocks base method
-func (m *MockSecurityLakeAPI) DeleteDatalakeExceptionsSubscription(arg0 *securitylake.DeleteDatalakeExceptionsSubscriptionInput) (*securitylake.DeleteDatalakeExceptionsSubscriptionOutput, error) {
+// DeleteDataLakeRequest mocks base method
+func (m *MockSecurityLakeAPI) DeleteDataLakeRequest(arg0 *securitylake.DeleteDataLakeInput) (*request.Request, *securitylake.DeleteDataLakeOutput) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDatalakeExceptionsSubscription", arg0)
-	ret0, _ := ret[0].(*securitylake.DeleteDatalakeExceptionsSubscriptionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteDatalakeExceptionsSubscription indicates an expected call of DeleteDatalakeExceptionsSubscription
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteDatalakeExceptionsSubscription(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatalakeExceptionsSubscription", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDatalakeExceptionsSubscription), arg0)
-}
-
-// DeleteDatalakeExceptionsSubscriptionRequest mocks base method
-func (m *MockSecurityLakeAPI) DeleteDatalakeExceptionsSubscriptionRequest(arg0 *securitylake.DeleteDatalakeExceptionsSubscriptionInput) (*request.Request, *securitylake.DeleteDatalakeExceptionsSubscriptionOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDatalakeExceptionsSubscriptionRequest", arg0)
+	ret := m.ctrl.Call(m, "DeleteDataLakeRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.DeleteDatalakeExceptionsSubscriptionOutput)
+	ret1, _ := ret[1].(*securitylake.DeleteDataLakeOutput)
 	return ret0, ret1
 }
 
-// DeleteDatalakeExceptionsSubscriptionRequest indicates an expected call of DeleteDatalakeExceptionsSubscriptionRequest
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteDatalakeExceptionsSubscriptionRequest(arg0 interface{}) *gomock.Call {
+// DeleteDataLakeRequest indicates an expected call of DeleteDataLakeRequest
+func (mr *MockSecurityLakeAPIMockRecorder) DeleteDataLakeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatalakeExceptionsSubscriptionRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDatalakeExceptionsSubscriptionRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataLakeRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDataLakeRequest), arg0)
 }
 
-// DeleteDatalakeExceptionsSubscriptionWithContext mocks base method
-func (m *MockSecurityLakeAPI) DeleteDatalakeExceptionsSubscriptionWithContext(arg0 context.Context, arg1 *securitylake.DeleteDatalakeExceptionsSubscriptionInput, arg2 ...request.Option) (*securitylake.DeleteDatalakeExceptionsSubscriptionOutput, error) {
+// DeleteDataLakeWithContext mocks base method
+func (m *MockSecurityLakeAPI) DeleteDataLakeWithContext(arg0 context.Context, arg1 *securitylake.DeleteDataLakeInput, arg2 ...request.Option) (*securitylake.DeleteDataLakeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "DeleteDatalakeExceptionsSubscriptionWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.DeleteDatalakeExceptionsSubscriptionOutput)
+	ret := m.ctrl.Call(m, "DeleteDataLakeWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.DeleteDataLakeOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// DeleteDatalakeExceptionsSubscriptionWithContext indicates an expected call of DeleteDatalakeExceptionsSubscriptionWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteDatalakeExceptionsSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// DeleteDataLakeWithContext indicates an expected call of DeleteDataLakeWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) DeleteDataLakeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatalakeExceptionsSubscriptionWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDatalakeExceptionsSubscriptionWithContext), varargs...)
-}
-
-// DeleteDatalakeRequest mocks base method
-func (m *MockSecurityLakeAPI) DeleteDatalakeRequest(arg0 *securitylake.DeleteDatalakeInput) (*request.Request, *securitylake.DeleteDatalakeOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteDatalakeRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.DeleteDatalakeOutput)
-	return ret0, ret1
-}
-
-// DeleteDatalakeRequest indicates an expected call of DeleteDatalakeRequest
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteDatalakeRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatalakeRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDatalakeRequest), arg0)
-}
-
-// DeleteDatalakeWithContext mocks base method
-func (m *MockSecurityLakeAPI) DeleteDatalakeWithContext(arg0 context.Context, arg1 *securitylake.DeleteDatalakeInput, arg2 ...request.Option) (*securitylake.DeleteDatalakeOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "DeleteDatalakeWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.DeleteDatalakeOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// DeleteDatalakeWithContext indicates an expected call of DeleteDatalakeWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteDatalakeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDatalakeWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDatalakeWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataLakeWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteDataLakeWithContext), varargs...)
 }
 
 // DeleteSubscriber mocks base method
@@ -748,6 +648,56 @@ func (m *MockSecurityLakeAPI) DeleteSubscriber(arg0 *securitylake.DeleteSubscrib
 func (mr *MockSecurityLakeAPIMockRecorder) DeleteSubscriber(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubscriber", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteSubscriber), arg0)
+}
+
+// DeleteSubscriberNotification mocks base method
+func (m *MockSecurityLakeAPI) DeleteSubscriberNotification(arg0 *securitylake.DeleteSubscriberNotificationInput) (*securitylake.DeleteSubscriberNotificationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSubscriberNotification", arg0)
+	ret0, _ := ret[0].(*securitylake.DeleteSubscriberNotificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSubscriberNotification indicates an expected call of DeleteSubscriberNotification
+func (mr *MockSecurityLakeAPIMockRecorder) DeleteSubscriberNotification(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubscriberNotification", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteSubscriberNotification), arg0)
+}
+
+// DeleteSubscriberNotificationRequest mocks base method
+func (m *MockSecurityLakeAPI) DeleteSubscriberNotificationRequest(arg0 *securitylake.DeleteSubscriberNotificationInput) (*request.Request, *securitylake.DeleteSubscriberNotificationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSubscriberNotificationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securitylake.DeleteSubscriberNotificationOutput)
+	return ret0, ret1
+}
+
+// DeleteSubscriberNotificationRequest indicates an expected call of DeleteSubscriberNotificationRequest
+func (mr *MockSecurityLakeAPIMockRecorder) DeleteSubscriberNotificationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubscriberNotificationRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteSubscriberNotificationRequest), arg0)
+}
+
+// DeleteSubscriberNotificationWithContext mocks base method
+func (m *MockSecurityLakeAPI) DeleteSubscriberNotificationWithContext(arg0 context.Context, arg1 *securitylake.DeleteSubscriberNotificationInput, arg2 ...request.Option) (*securitylake.DeleteSubscriberNotificationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSubscriberNotificationWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.DeleteSubscriberNotificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSubscriberNotificationWithContext indicates an expected call of DeleteSubscriberNotificationWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) DeleteSubscriberNotificationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubscriberNotificationWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteSubscriberNotificationWithContext), varargs...)
 }
 
 // DeleteSubscriberRequest mocks base method
@@ -785,337 +735,237 @@ func (mr *MockSecurityLakeAPIMockRecorder) DeleteSubscriberWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubscriberWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteSubscriberWithContext), varargs...)
 }
 
-// DeleteSubscriptionNotificationConfiguration mocks base method
-func (m *MockSecurityLakeAPI) DeleteSubscriptionNotificationConfiguration(arg0 *securitylake.DeleteSubscriptionNotificationConfigurationInput) (*securitylake.DeleteSubscriptionNotificationConfigurationOutput, error) {
+// DeregisterDataLakeDelegatedAdministrator mocks base method
+func (m *MockSecurityLakeAPI) DeregisterDataLakeDelegatedAdministrator(arg0 *securitylake.DeregisterDataLakeDelegatedAdministratorInput) (*securitylake.DeregisterDataLakeDelegatedAdministratorOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteSubscriptionNotificationConfiguration", arg0)
-	ret0, _ := ret[0].(*securitylake.DeleteSubscriptionNotificationConfigurationOutput)
+	ret := m.ctrl.Call(m, "DeregisterDataLakeDelegatedAdministrator", arg0)
+	ret0, _ := ret[0].(*securitylake.DeregisterDataLakeDelegatedAdministratorOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// DeleteSubscriptionNotificationConfiguration indicates an expected call of DeleteSubscriptionNotificationConfiguration
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteSubscriptionNotificationConfiguration(arg0 interface{}) *gomock.Call {
+// DeregisterDataLakeDelegatedAdministrator indicates an expected call of DeregisterDataLakeDelegatedAdministrator
+func (mr *MockSecurityLakeAPIMockRecorder) DeregisterDataLakeDelegatedAdministrator(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubscriptionNotificationConfiguration", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteSubscriptionNotificationConfiguration), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterDataLakeDelegatedAdministrator", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeregisterDataLakeDelegatedAdministrator), arg0)
 }
 
-// DeleteSubscriptionNotificationConfigurationRequest mocks base method
-func (m *MockSecurityLakeAPI) DeleteSubscriptionNotificationConfigurationRequest(arg0 *securitylake.DeleteSubscriptionNotificationConfigurationInput) (*request.Request, *securitylake.DeleteSubscriptionNotificationConfigurationOutput) {
+// DeregisterDataLakeDelegatedAdministratorRequest mocks base method
+func (m *MockSecurityLakeAPI) DeregisterDataLakeDelegatedAdministratorRequest(arg0 *securitylake.DeregisterDataLakeDelegatedAdministratorInput) (*request.Request, *securitylake.DeregisterDataLakeDelegatedAdministratorOutput) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeleteSubscriptionNotificationConfigurationRequest", arg0)
+	ret := m.ctrl.Call(m, "DeregisterDataLakeDelegatedAdministratorRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.DeleteSubscriptionNotificationConfigurationOutput)
+	ret1, _ := ret[1].(*securitylake.DeregisterDataLakeDelegatedAdministratorOutput)
 	return ret0, ret1
 }
 
-// DeleteSubscriptionNotificationConfigurationRequest indicates an expected call of DeleteSubscriptionNotificationConfigurationRequest
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteSubscriptionNotificationConfigurationRequest(arg0 interface{}) *gomock.Call {
+// DeregisterDataLakeDelegatedAdministratorRequest indicates an expected call of DeregisterDataLakeDelegatedAdministratorRequest
+func (mr *MockSecurityLakeAPIMockRecorder) DeregisterDataLakeDelegatedAdministratorRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubscriptionNotificationConfigurationRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteSubscriptionNotificationConfigurationRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterDataLakeDelegatedAdministratorRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeregisterDataLakeDelegatedAdministratorRequest), arg0)
 }
 
-// DeleteSubscriptionNotificationConfigurationWithContext mocks base method
-func (m *MockSecurityLakeAPI) DeleteSubscriptionNotificationConfigurationWithContext(arg0 context.Context, arg1 *securitylake.DeleteSubscriptionNotificationConfigurationInput, arg2 ...request.Option) (*securitylake.DeleteSubscriptionNotificationConfigurationOutput, error) {
+// DeregisterDataLakeDelegatedAdministratorWithContext mocks base method
+func (m *MockSecurityLakeAPI) DeregisterDataLakeDelegatedAdministratorWithContext(arg0 context.Context, arg1 *securitylake.DeregisterDataLakeDelegatedAdministratorInput, arg2 ...request.Option) (*securitylake.DeregisterDataLakeDelegatedAdministratorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "DeleteSubscriptionNotificationConfigurationWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.DeleteSubscriptionNotificationConfigurationOutput)
+	ret := m.ctrl.Call(m, "DeregisterDataLakeDelegatedAdministratorWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.DeregisterDataLakeDelegatedAdministratorOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// DeleteSubscriptionNotificationConfigurationWithContext indicates an expected call of DeleteSubscriptionNotificationConfigurationWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) DeleteSubscriptionNotificationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// DeregisterDataLakeDelegatedAdministratorWithContext indicates an expected call of DeregisterDataLakeDelegatedAdministratorWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) DeregisterDataLakeDelegatedAdministratorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubscriptionNotificationConfigurationWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeleteSubscriptionNotificationConfigurationWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterDataLakeDelegatedAdministratorWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).DeregisterDataLakeDelegatedAdministratorWithContext), varargs...)
 }
 
-// GetDatalake mocks base method
-func (m *MockSecurityLakeAPI) GetDatalake(arg0 *securitylake.GetDatalakeInput) (*securitylake.GetDatalakeOutput, error) {
+// GetDataLakeExceptionSubscription mocks base method
+func (m *MockSecurityLakeAPI) GetDataLakeExceptionSubscription(arg0 *securitylake.GetDataLakeExceptionSubscriptionInput) (*securitylake.GetDataLakeExceptionSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDatalake", arg0)
-	ret0, _ := ret[0].(*securitylake.GetDatalakeOutput)
+	ret := m.ctrl.Call(m, "GetDataLakeExceptionSubscription", arg0)
+	ret0, _ := ret[0].(*securitylake.GetDataLakeExceptionSubscriptionOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// GetDatalake indicates an expected call of GetDatalake
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalake(arg0 interface{}) *gomock.Call {
+// GetDataLakeExceptionSubscription indicates an expected call of GetDataLakeExceptionSubscription
+func (mr *MockSecurityLakeAPIMockRecorder) GetDataLakeExceptionSubscription(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalake", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalake), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataLakeExceptionSubscription", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDataLakeExceptionSubscription), arg0)
 }
 
-// GetDatalakeAutoEnable mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeAutoEnable(arg0 *securitylake.GetDatalakeAutoEnableInput) (*securitylake.GetDatalakeAutoEnableOutput, error) {
+// GetDataLakeExceptionSubscriptionRequest mocks base method
+func (m *MockSecurityLakeAPI) GetDataLakeExceptionSubscriptionRequest(arg0 *securitylake.GetDataLakeExceptionSubscriptionInput) (*request.Request, *securitylake.GetDataLakeExceptionSubscriptionOutput) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDatalakeAutoEnable", arg0)
-	ret0, _ := ret[0].(*securitylake.GetDatalakeAutoEnableOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetDatalakeAutoEnable indicates an expected call of GetDatalakeAutoEnable
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeAutoEnable(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeAutoEnable", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeAutoEnable), arg0)
-}
-
-// GetDatalakeAutoEnableRequest mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeAutoEnableRequest(arg0 *securitylake.GetDatalakeAutoEnableInput) (*request.Request, *securitylake.GetDatalakeAutoEnableOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDatalakeAutoEnableRequest", arg0)
+	ret := m.ctrl.Call(m, "GetDataLakeExceptionSubscriptionRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.GetDatalakeAutoEnableOutput)
+	ret1, _ := ret[1].(*securitylake.GetDataLakeExceptionSubscriptionOutput)
 	return ret0, ret1
 }
 
-// GetDatalakeAutoEnableRequest indicates an expected call of GetDatalakeAutoEnableRequest
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeAutoEnableRequest(arg0 interface{}) *gomock.Call {
+// GetDataLakeExceptionSubscriptionRequest indicates an expected call of GetDataLakeExceptionSubscriptionRequest
+func (mr *MockSecurityLakeAPIMockRecorder) GetDataLakeExceptionSubscriptionRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeAutoEnableRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeAutoEnableRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataLakeExceptionSubscriptionRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDataLakeExceptionSubscriptionRequest), arg0)
 }
 
-// GetDatalakeAutoEnableWithContext mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeAutoEnableWithContext(arg0 context.Context, arg1 *securitylake.GetDatalakeAutoEnableInput, arg2 ...request.Option) (*securitylake.GetDatalakeAutoEnableOutput, error) {
+// GetDataLakeExceptionSubscriptionWithContext mocks base method
+func (m *MockSecurityLakeAPI) GetDataLakeExceptionSubscriptionWithContext(arg0 context.Context, arg1 *securitylake.GetDataLakeExceptionSubscriptionInput, arg2 ...request.Option) (*securitylake.GetDataLakeExceptionSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "GetDatalakeAutoEnableWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.GetDatalakeAutoEnableOutput)
+	ret := m.ctrl.Call(m, "GetDataLakeExceptionSubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.GetDataLakeExceptionSubscriptionOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// GetDatalakeAutoEnableWithContext indicates an expected call of GetDatalakeAutoEnableWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeAutoEnableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// GetDataLakeExceptionSubscriptionWithContext indicates an expected call of GetDataLakeExceptionSubscriptionWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) GetDataLakeExceptionSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeAutoEnableWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeAutoEnableWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataLakeExceptionSubscriptionWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDataLakeExceptionSubscriptionWithContext), varargs...)
 }
 
-// GetDatalakeExceptionsExpiry mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeExceptionsExpiry(arg0 *securitylake.GetDatalakeExceptionsExpiryInput) (*securitylake.GetDatalakeExceptionsExpiryOutput, error) {
+// GetDataLakeOrganizationConfiguration mocks base method
+func (m *MockSecurityLakeAPI) GetDataLakeOrganizationConfiguration(arg0 *securitylake.GetDataLakeOrganizationConfigurationInput) (*securitylake.GetDataLakeOrganizationConfigurationOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDatalakeExceptionsExpiry", arg0)
-	ret0, _ := ret[0].(*securitylake.GetDatalakeExceptionsExpiryOutput)
+	ret := m.ctrl.Call(m, "GetDataLakeOrganizationConfiguration", arg0)
+	ret0, _ := ret[0].(*securitylake.GetDataLakeOrganizationConfigurationOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// GetDatalakeExceptionsExpiry indicates an expected call of GetDatalakeExceptionsExpiry
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeExceptionsExpiry(arg0 interface{}) *gomock.Call {
+// GetDataLakeOrganizationConfiguration indicates an expected call of GetDataLakeOrganizationConfiguration
+func (mr *MockSecurityLakeAPIMockRecorder) GetDataLakeOrganizationConfiguration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeExceptionsExpiry", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeExceptionsExpiry), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataLakeOrganizationConfiguration", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDataLakeOrganizationConfiguration), arg0)
 }
 
-// GetDatalakeExceptionsExpiryRequest mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeExceptionsExpiryRequest(arg0 *securitylake.GetDatalakeExceptionsExpiryInput) (*request.Request, *securitylake.GetDatalakeExceptionsExpiryOutput) {
+// GetDataLakeOrganizationConfigurationRequest mocks base method
+func (m *MockSecurityLakeAPI) GetDataLakeOrganizationConfigurationRequest(arg0 *securitylake.GetDataLakeOrganizationConfigurationInput) (*request.Request, *securitylake.GetDataLakeOrganizationConfigurationOutput) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDatalakeExceptionsExpiryRequest", arg0)
+	ret := m.ctrl.Call(m, "GetDataLakeOrganizationConfigurationRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.GetDatalakeExceptionsExpiryOutput)
+	ret1, _ := ret[1].(*securitylake.GetDataLakeOrganizationConfigurationOutput)
 	return ret0, ret1
 }
 
-// GetDatalakeExceptionsExpiryRequest indicates an expected call of GetDatalakeExceptionsExpiryRequest
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeExceptionsExpiryRequest(arg0 interface{}) *gomock.Call {
+// GetDataLakeOrganizationConfigurationRequest indicates an expected call of GetDataLakeOrganizationConfigurationRequest
+func (mr *MockSecurityLakeAPIMockRecorder) GetDataLakeOrganizationConfigurationRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeExceptionsExpiryRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeExceptionsExpiryRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataLakeOrganizationConfigurationRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDataLakeOrganizationConfigurationRequest), arg0)
 }
 
-// GetDatalakeExceptionsExpiryWithContext mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeExceptionsExpiryWithContext(arg0 context.Context, arg1 *securitylake.GetDatalakeExceptionsExpiryInput, arg2 ...request.Option) (*securitylake.GetDatalakeExceptionsExpiryOutput, error) {
+// GetDataLakeOrganizationConfigurationWithContext mocks base method
+func (m *MockSecurityLakeAPI) GetDataLakeOrganizationConfigurationWithContext(arg0 context.Context, arg1 *securitylake.GetDataLakeOrganizationConfigurationInput, arg2 ...request.Option) (*securitylake.GetDataLakeOrganizationConfigurationOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "GetDatalakeExceptionsExpiryWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.GetDatalakeExceptionsExpiryOutput)
+	ret := m.ctrl.Call(m, "GetDataLakeOrganizationConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.GetDataLakeOrganizationConfigurationOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// GetDatalakeExceptionsExpiryWithContext indicates an expected call of GetDatalakeExceptionsExpiryWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeExceptionsExpiryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// GetDataLakeOrganizationConfigurationWithContext indicates an expected call of GetDataLakeOrganizationConfigurationWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) GetDataLakeOrganizationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeExceptionsExpiryWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeExceptionsExpiryWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataLakeOrganizationConfigurationWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDataLakeOrganizationConfigurationWithContext), varargs...)
 }
 
-// GetDatalakeExceptionsSubscription mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeExceptionsSubscription(arg0 *securitylake.GetDatalakeExceptionsSubscriptionInput) (*securitylake.GetDatalakeExceptionsSubscriptionOutput, error) {
+// GetDataLakeSources mocks base method
+func (m *MockSecurityLakeAPI) GetDataLakeSources(arg0 *securitylake.GetDataLakeSourcesInput) (*securitylake.GetDataLakeSourcesOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDatalakeExceptionsSubscription", arg0)
-	ret0, _ := ret[0].(*securitylake.GetDatalakeExceptionsSubscriptionOutput)
+	ret := m.ctrl.Call(m, "GetDataLakeSources", arg0)
+	ret0, _ := ret[0].(*securitylake.GetDataLakeSourcesOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// GetDatalakeExceptionsSubscription indicates an expected call of GetDatalakeExceptionsSubscription
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeExceptionsSubscription(arg0 interface{}) *gomock.Call {
+// GetDataLakeSources indicates an expected call of GetDataLakeSources
+func (mr *MockSecurityLakeAPIMockRecorder) GetDataLakeSources(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeExceptionsSubscription", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeExceptionsSubscription), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataLakeSources", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDataLakeSources), arg0)
 }
 
-// GetDatalakeExceptionsSubscriptionRequest mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeExceptionsSubscriptionRequest(arg0 *securitylake.GetDatalakeExceptionsSubscriptionInput) (*request.Request, *securitylake.GetDatalakeExceptionsSubscriptionOutput) {
+// GetDataLakeSourcesPages mocks base method
+func (m *MockSecurityLakeAPI) GetDataLakeSourcesPages(arg0 *securitylake.GetDataLakeSourcesInput, arg1 func(*securitylake.GetDataLakeSourcesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDatalakeExceptionsSubscriptionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.GetDatalakeExceptionsSubscriptionOutput)
-	return ret0, ret1
-}
-
-// GetDatalakeExceptionsSubscriptionRequest indicates an expected call of GetDatalakeExceptionsSubscriptionRequest
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeExceptionsSubscriptionRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeExceptionsSubscriptionRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeExceptionsSubscriptionRequest), arg0)
-}
-
-// GetDatalakeExceptionsSubscriptionWithContext mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeExceptionsSubscriptionWithContext(arg0 context.Context, arg1 *securitylake.GetDatalakeExceptionsSubscriptionInput, arg2 ...request.Option) (*securitylake.GetDatalakeExceptionsSubscriptionOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetDatalakeExceptionsSubscriptionWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.GetDatalakeExceptionsSubscriptionOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetDatalakeExceptionsSubscriptionWithContext indicates an expected call of GetDatalakeExceptionsSubscriptionWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeExceptionsSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeExceptionsSubscriptionWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeExceptionsSubscriptionWithContext), varargs...)
-}
-
-// GetDatalakeRequest mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeRequest(arg0 *securitylake.GetDatalakeInput) (*request.Request, *securitylake.GetDatalakeOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDatalakeRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.GetDatalakeOutput)
-	return ret0, ret1
-}
-
-// GetDatalakeRequest indicates an expected call of GetDatalakeRequest
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeRequest), arg0)
-}
-
-// GetDatalakeStatus mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeStatus(arg0 *securitylake.GetDatalakeStatusInput) (*securitylake.GetDatalakeStatusOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDatalakeStatus", arg0)
-	ret0, _ := ret[0].(*securitylake.GetDatalakeStatusOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetDatalakeStatus indicates an expected call of GetDatalakeStatus
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeStatus(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeStatus", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeStatus), arg0)
-}
-
-// GetDatalakeStatusPages mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeStatusPages(arg0 *securitylake.GetDatalakeStatusInput, arg1 func(*securitylake.GetDatalakeStatusOutput, bool) bool) error {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDatalakeStatusPages", arg0, arg1)
+	ret := m.ctrl.Call(m, "GetDataLakeSourcesPages", arg0, arg1)
 	ret0, _ := ret[0].(error)
 	return ret0
 }
 
-// GetDatalakeStatusPages indicates an expected call of GetDatalakeStatusPages
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeStatusPages(arg0, arg1 interface{}) *gomock.Call {
+// GetDataLakeSourcesPages indicates an expected call of GetDataLakeSourcesPages
+func (mr *MockSecurityLakeAPIMockRecorder) GetDataLakeSourcesPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeStatusPages", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeStatusPages), arg0, arg1)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataLakeSourcesPages", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDataLakeSourcesPages), arg0, arg1)
 }
 
-// GetDatalakeStatusPagesWithContext mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeStatusPagesWithContext(arg0 context.Context, arg1 *securitylake.GetDatalakeStatusInput, arg2 func(*securitylake.GetDatalakeStatusOutput, bool) bool, arg3 ...request.Option) error {
+// GetDataLakeSourcesPagesWithContext mocks base method
+func (m *MockSecurityLakeAPI) GetDataLakeSourcesPagesWithContext(arg0 context.Context, arg1 *securitylake.GetDataLakeSourcesInput, arg2 func(*securitylake.GetDataLakeSourcesOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "GetDatalakeStatusPagesWithContext", varargs...)
+	ret := m.ctrl.Call(m, "GetDataLakeSourcesPagesWithContext", varargs...)
 	ret0, _ := ret[0].(error)
 	return ret0
 }
 
-// GetDatalakeStatusPagesWithContext indicates an expected call of GetDatalakeStatusPagesWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeStatusPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+// GetDataLakeSourcesPagesWithContext indicates an expected call of GetDataLakeSourcesPagesWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) GetDataLakeSourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeStatusPagesWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeStatusPagesWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataLakeSourcesPagesWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDataLakeSourcesPagesWithContext), varargs...)
 }
 
-// GetDatalakeStatusRequest mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeStatusRequest(arg0 *securitylake.GetDatalakeStatusInput) (*request.Request, *securitylake.GetDatalakeStatusOutput) {
+// GetDataLakeSourcesRequest mocks base method
+func (m *MockSecurityLakeAPI) GetDataLakeSourcesRequest(arg0 *securitylake.GetDataLakeSourcesInput) (*request.Request, *securitylake.GetDataLakeSourcesOutput) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDatalakeStatusRequest", arg0)
+	ret := m.ctrl.Call(m, "GetDataLakeSourcesRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.GetDatalakeStatusOutput)
+	ret1, _ := ret[1].(*securitylake.GetDataLakeSourcesOutput)
 	return ret0, ret1
 }
 
-// GetDatalakeStatusRequest indicates an expected call of GetDatalakeStatusRequest
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeStatusRequest(arg0 interface{}) *gomock.Call {
+// GetDataLakeSourcesRequest indicates an expected call of GetDataLakeSourcesRequest
+func (mr *MockSecurityLakeAPIMockRecorder) GetDataLakeSourcesRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeStatusRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeStatusRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataLakeSourcesRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDataLakeSourcesRequest), arg0)
 }
 
-// GetDatalakeStatusWithContext mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeStatusWithContext(arg0 context.Context, arg1 *securitylake.GetDatalakeStatusInput, arg2 ...request.Option) (*securitylake.GetDatalakeStatusOutput, error) {
+// GetDataLakeSourcesWithContext mocks base method
+func (m *MockSecurityLakeAPI) GetDataLakeSourcesWithContext(arg0 context.Context, arg1 *securitylake.GetDataLakeSourcesInput, arg2 ...request.Option) (*securitylake.GetDataLakeSourcesOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "GetDatalakeStatusWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.GetDatalakeStatusOutput)
+	ret := m.ctrl.Call(m, "GetDataLakeSourcesWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.GetDataLakeSourcesOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// GetDatalakeStatusWithContext indicates an expected call of GetDatalakeStatusWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// GetDataLakeSourcesWithContext indicates an expected call of GetDataLakeSourcesWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) GetDataLakeSourcesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeStatusWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeStatusWithContext), varargs...)
-}
-
-// GetDatalakeWithContext mocks base method
-func (m *MockSecurityLakeAPI) GetDatalakeWithContext(arg0 context.Context, arg1 *securitylake.GetDatalakeInput, arg2 ...request.Option) (*securitylake.GetDatalakeOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "GetDatalakeWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.GetDatalakeOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// GetDatalakeWithContext indicates an expected call of GetDatalakeWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) GetDatalakeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatalakeWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDatalakeWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataLakeSourcesWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetDataLakeSourcesWithContext), varargs...)
 }
 
 // GetSubscriber mocks base method
@@ -1168,87 +1018,137 @@ func (mr *MockSecurityLakeAPIMockRecorder) GetSubscriberWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSubscriberWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).GetSubscriberWithContext), varargs...)
 }
 
-// ListDatalakeExceptions mocks base method
-func (m *MockSecurityLakeAPI) ListDatalakeExceptions(arg0 *securitylake.ListDatalakeExceptionsInput) (*securitylake.ListDatalakeExceptionsOutput, error) {
+// ListDataLakeExceptions mocks base method
+func (m *MockSecurityLakeAPI) ListDataLakeExceptions(arg0 *securitylake.ListDataLakeExceptionsInput) (*securitylake.ListDataLakeExceptionsOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListDatalakeExceptions", arg0)
-	ret0, _ := ret[0].(*securitylake.ListDatalakeExceptionsOutput)
+	ret := m.ctrl.Call(m, "ListDataLakeExceptions", arg0)
+	ret0, _ := ret[0].(*securitylake.ListDataLakeExceptionsOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// ListDatalakeExceptions indicates an expected call of ListDatalakeExceptions
-func (mr *MockSecurityLakeAPIMockRecorder) ListDatalakeExceptions(arg0 interface{}) *gomock.Call {
+// ListDataLakeExceptions indicates an expected call of ListDataLakeExceptions
+func (mr *MockSecurityLakeAPIMockRecorder) ListDataLakeExceptions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatalakeExceptions", reflect.TypeOf((*MockSecurityLakeAPI)(nil).ListDatalakeExceptions), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataLakeExceptions", reflect.TypeOf((*MockSecurityLakeAPI)(nil).ListDataLakeExceptions), arg0)
 }
 
-// ListDatalakeExceptionsPages mocks base method
-func (m *MockSecurityLakeAPI) ListDatalakeExceptionsPages(arg0 *securitylake.ListDatalakeExceptionsInput, arg1 func(*securitylake.ListDatalakeExceptionsOutput, bool) bool) error {
+// ListDataLakeExceptionsPages mocks base method
+func (m *MockSecurityLakeAPI) ListDataLakeExceptionsPages(arg0 *securitylake.ListDataLakeExceptionsInput, arg1 func(*securitylake.ListDataLakeExceptionsOutput, bool) bool) error {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListDatalakeExceptionsPages", arg0, arg1)
+	ret := m.ctrl.Call(m, "ListDataLakeExceptionsPages", arg0, arg1)
 	ret0, _ := ret[0].(error)
 	return ret0
 }
 
-// ListDatalakeExceptionsPages indicates an expected call of ListDatalakeExceptionsPages
-func (mr *MockSecurityLakeAPIMockRecorder) ListDatalakeExceptionsPages(arg0, arg1 interface{}) *gomock.Call {
+// ListDataLakeExceptionsPages indicates an expected call of ListDataLakeExceptionsPages
+func (mr *MockSecurityLakeAPIMockRecorder) ListDataLakeExceptionsPages(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatalakeExceptionsPages", reflect.TypeOf((*MockSecurityLakeAPI)(nil).ListDatalakeExceptionsPages), arg0, arg1)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataLakeExceptionsPages", reflect.TypeOf((*MockSecurityLakeAPI)(nil).ListDataLakeExceptionsPages), arg0, arg1)
 }
 
-// ListDatalakeExceptionsPagesWithContext mocks base method
-func (m *MockSecurityLakeAPI) ListDatalakeExceptionsPagesWithContext(arg0 context.Context, arg1 *securitylake.ListDatalakeExceptionsInput, arg2 func(*securitylake.ListDatalakeExceptionsOutput, bool) bool, arg3 ...request.Option) error {
+// ListDataLakeExceptionsPagesWithContext mocks base method
+func (m *MockSecurityLakeAPI) ListDataLakeExceptionsPagesWithContext(arg0 context.Context, arg1 *securitylake.ListDataLakeExceptionsInput, arg2 func(*securitylake.ListDataLakeExceptionsOutput, bool) bool, arg3 ...request.Option) error {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1, arg2}
 	for _, a := range arg3 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "ListDatalakeExceptionsPagesWithContext", varargs...)
+	ret := m.ctrl.Call(m, "ListDataLakeExceptionsPagesWithContext", varargs...)
 	ret0, _ := ret[0].(error)
 	return ret0
 }
 
-// ListDatalakeExceptionsPagesWithContext indicates an expected call of ListDatalakeExceptionsPagesWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) ListDatalakeExceptionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+// ListDataLakeExceptionsPagesWithContext indicates an expected call of ListDataLakeExceptionsPagesWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) ListDataLakeExceptionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatalakeExceptionsPagesWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).ListDatalakeExceptionsPagesWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataLakeExceptionsPagesWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).ListDataLakeExceptionsPagesWithContext), varargs...)
 }
 
-// ListDatalakeExceptionsRequest mocks base method
-func (m *MockSecurityLakeAPI) ListDatalakeExceptionsRequest(arg0 *securitylake.ListDatalakeExceptionsInput) (*request.Request, *securitylake.ListDatalakeExceptionsOutput) {
+// ListDataLakeExceptionsRequest mocks base method
+func (m *MockSecurityLakeAPI) ListDataLakeExceptionsRequest(arg0 *securitylake.ListDataLakeExceptionsInput) (*request.Request, *securitylake.ListDataLakeExceptionsOutput) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "ListDatalakeExceptionsRequest", arg0)
+	ret := m.ctrl.Call(m, "ListDataLakeExceptionsRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.ListDatalakeExceptionsOutput)
+	ret1, _ := ret[1].(*securitylake.ListDataLakeExceptionsOutput)
 	return ret0, ret1
 }
 
-// ListDatalakeExceptionsRequest indicates an expected call of ListDatalakeExceptionsRequest
-func (mr *MockSecurityLakeAPIMockRecorder) ListDatalakeExceptionsRequest(arg0 interface{}) *gomock.Call {
+// ListDataLakeExceptionsRequest indicates an expected call of ListDataLakeExceptionsRequest
+func (mr *MockSecurityLakeAPIMockRecorder) ListDataLakeExceptionsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatalakeExceptionsRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).ListDatalakeExceptionsRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataLakeExceptionsRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).ListDataLakeExceptionsRequest), arg0)
 }
 
-// ListDatalakeExceptionsWithContext mocks base method
-func (m *MockSecurityLakeAPI) ListDatalakeExceptionsWithContext(arg0 context.Context, arg1 *securitylake.ListDatalakeExceptionsInput, arg2 ...request.Option) (*securitylake.ListDatalakeExceptionsOutput, error) {
+// ListDataLakeExceptionsWithContext mocks base method
+func (m *MockSecurityLakeAPI) ListDataLakeExceptionsWithContext(arg0 context.Context, arg1 *securitylake.ListDataLakeExceptionsInput, arg2 ...request.Option) (*securitylake.ListDataLakeExceptionsOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "ListDatalakeExceptionsWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.ListDatalakeExceptionsOutput)
+	ret := m.ctrl.Call(m, "ListDataLakeExceptionsWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.ListDataLakeExceptionsOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// ListDatalakeExceptionsWithContext indicates an expected call of ListDatalakeExceptionsWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) ListDatalakeExceptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// ListDataLakeExceptionsWithContext indicates an expected call of ListDataLakeExceptionsWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) ListDataLakeExceptionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDatalakeExceptionsWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).ListDatalakeExceptionsWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataLakeExceptionsWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).ListDataLakeExceptionsWithContext), varargs...)
+}
+
+// ListDataLakes mocks base method
+func (m *MockSecurityLakeAPI) ListDataLakes(arg0 *securitylake.ListDataLakesInput) (*securitylake.ListDataLakesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataLakes", arg0)
+	ret0, _ := ret[0].(*securitylake.ListDataLakesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataLakes indicates an expected call of ListDataLakes
+func (mr *MockSecurityLakeAPIMockRecorder) ListDataLakes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataLakes", reflect.TypeOf((*MockSecurityLakeAPI)(nil).ListDataLakes), arg0)
+}
+
+// ListDataLakesRequest mocks base method
+func (m *MockSecurityLakeAPI) ListDataLakesRequest(arg0 *securitylake.ListDataLakesInput) (*request.Request, *securitylake.ListDataLakesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataLakesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securitylake.ListDataLakesOutput)
+	return ret0, ret1
+}
+
+// ListDataLakesRequest indicates an expected call of ListDataLakesRequest
+func (mr *MockSecurityLakeAPIMockRecorder) ListDataLakesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataLakesRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).ListDataLakesRequest), arg0)
+}
+
+// ListDataLakesWithContext mocks base method
+func (m *MockSecurityLakeAPI) ListDataLakesWithContext(arg0 context.Context, arg1 *securitylake.ListDataLakesInput, arg2 ...request.Option) (*securitylake.ListDataLakesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDataLakesWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.ListDataLakesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDataLakesWithContext indicates an expected call of ListDataLakesWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) ListDataLakesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataLakesWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).ListDataLakesWithContext), varargs...)
 }
 
 // ListLogSources mocks base method
@@ -1417,154 +1317,154 @@ func (mr *MockSecurityLakeAPIMockRecorder) ListSubscribersWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSubscribersWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).ListSubscribersWithContext), varargs...)
 }
 
-// UpdateDatalake mocks base method
-func (m *MockSecurityLakeAPI) UpdateDatalake(arg0 *securitylake.UpdateDatalakeInput) (*securitylake.UpdateDatalakeOutput, error) {
+// RegisterDataLakeDelegatedAdministrator mocks base method
+func (m *MockSecurityLakeAPI) RegisterDataLakeDelegatedAdministrator(arg0 *securitylake.RegisterDataLakeDelegatedAdministratorInput) (*securitylake.RegisterDataLakeDelegatedAdministratorOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateDatalake", arg0)
-	ret0, _ := ret[0].(*securitylake.UpdateDatalakeOutput)
+	ret := m.ctrl.Call(m, "RegisterDataLakeDelegatedAdministrator", arg0)
+	ret0, _ := ret[0].(*securitylake.RegisterDataLakeDelegatedAdministratorOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// UpdateDatalake indicates an expected call of UpdateDatalake
-func (mr *MockSecurityLakeAPIMockRecorder) UpdateDatalake(arg0 interface{}) *gomock.Call {
+// RegisterDataLakeDelegatedAdministrator indicates an expected call of RegisterDataLakeDelegatedAdministrator
+func (mr *MockSecurityLakeAPIMockRecorder) RegisterDataLakeDelegatedAdministrator(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatalake", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDatalake), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterDataLakeDelegatedAdministrator", reflect.TypeOf((*MockSecurityLakeAPI)(nil).RegisterDataLakeDelegatedAdministrator), arg0)
 }
 
-// UpdateDatalakeExceptionsExpiry mocks base method
-func (m *MockSecurityLakeAPI) UpdateDatalakeExceptionsExpiry(arg0 *securitylake.UpdateDatalakeExceptionsExpiryInput) (*securitylake.UpdateDatalakeExceptionsExpiryOutput, error) {
+// RegisterDataLakeDelegatedAdministratorRequest mocks base method
+func (m *MockSecurityLakeAPI) RegisterDataLakeDelegatedAdministratorRequest(arg0 *securitylake.RegisterDataLakeDelegatedAdministratorInput) (*request.Request, *securitylake.RegisterDataLakeDelegatedAdministratorOutput) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateDatalakeExceptionsExpiry", arg0)
-	ret0, _ := ret[0].(*securitylake.UpdateDatalakeExceptionsExpiryOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateDatalakeExceptionsExpiry indicates an expected call of UpdateDatalakeExceptionsExpiry
-func (mr *MockSecurityLakeAPIMockRecorder) UpdateDatalakeExceptionsExpiry(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatalakeExceptionsExpiry", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDatalakeExceptionsExpiry), arg0)
-}
-
-// UpdateDatalakeExceptionsExpiryRequest mocks base method
-func (m *MockSecurityLakeAPI) UpdateDatalakeExceptionsExpiryRequest(arg0 *securitylake.UpdateDatalakeExceptionsExpiryInput) (*request.Request, *securitylake.UpdateDatalakeExceptionsExpiryOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateDatalakeExceptionsExpiryRequest", arg0)
+	ret := m.ctrl.Call(m, "RegisterDataLakeDelegatedAdministratorRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.UpdateDatalakeExceptionsExpiryOutput)
+	ret1, _ := ret[1].(*securitylake.RegisterDataLakeDelegatedAdministratorOutput)
 	return ret0, ret1
 }
 
-// UpdateDatalakeExceptionsExpiryRequest indicates an expected call of UpdateDatalakeExceptionsExpiryRequest
-func (mr *MockSecurityLakeAPIMockRecorder) UpdateDatalakeExceptionsExpiryRequest(arg0 interface{}) *gomock.Call {
+// RegisterDataLakeDelegatedAdministratorRequest indicates an expected call of RegisterDataLakeDelegatedAdministratorRequest
+func (mr *MockSecurityLakeAPIMockRecorder) RegisterDataLakeDelegatedAdministratorRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatalakeExceptionsExpiryRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDatalakeExceptionsExpiryRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterDataLakeDelegatedAdministratorRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).RegisterDataLakeDelegatedAdministratorRequest), arg0)
 }
 
-// UpdateDatalakeExceptionsExpiryWithContext mocks base method
-func (m *MockSecurityLakeAPI) UpdateDatalakeExceptionsExpiryWithContext(arg0 context.Context, arg1 *securitylake.UpdateDatalakeExceptionsExpiryInput, arg2 ...request.Option) (*securitylake.UpdateDatalakeExceptionsExpiryOutput, error) {
+// RegisterDataLakeDelegatedAdministratorWithContext mocks base method
+func (m *MockSecurityLakeAPI) RegisterDataLakeDelegatedAdministratorWithContext(arg0 context.Context, arg1 *securitylake.RegisterDataLakeDelegatedAdministratorInput, arg2 ...request.Option) (*securitylake.RegisterDataLakeDelegatedAdministratorOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "UpdateDatalakeExceptionsExpiryWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.UpdateDatalakeExceptionsExpiryOutput)
+	ret := m.ctrl.Call(m, "RegisterDataLakeDelegatedAdministratorWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.RegisterDataLakeDelegatedAdministratorOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// UpdateDatalakeExceptionsExpiryWithContext indicates an expected call of UpdateDatalakeExceptionsExpiryWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) UpdateDatalakeExceptionsExpiryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// RegisterDataLakeDelegatedAdministratorWithContext indicates an expected call of RegisterDataLakeDelegatedAdministratorWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) RegisterDataLakeDelegatedAdministratorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatalakeExceptionsExpiryWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDatalakeExceptionsExpiryWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterDataLakeDelegatedAdministratorWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).RegisterDataLakeDelegatedAdministratorWithContext), varargs...)
 }
 
-// UpdateDatalakeExceptionsSubscription mocks base method
-func (m *MockSecurityLakeAPI) UpdateDatalakeExceptionsSubscription(arg0 *securitylake.UpdateDatalakeExceptionsSubscriptionInput) (*securitylake.UpdateDatalakeExceptionsSubscriptionOutput, error) {
+// UpdateDataLake mocks base method
+func (m *MockSecurityLakeAPI) UpdateDataLake(arg0 *securitylake.UpdateDataLakeInput) (*securitylake.UpdateDataLakeOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateDatalakeExceptionsSubscription", arg0)
-	ret0, _ := ret[0].(*securitylake.UpdateDatalakeExceptionsSubscriptionOutput)
+	ret := m.ctrl.Call(m, "UpdateDataLake", arg0)
+	ret0, _ := ret[0].(*securitylake.UpdateDataLakeOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// UpdateDatalakeExceptionsSubscription indicates an expected call of UpdateDatalakeExceptionsSubscription
-func (mr *MockSecurityLakeAPIMockRecorder) UpdateDatalakeExceptionsSubscription(arg0 interface{}) *gomock.Call {
+// UpdateDataLake indicates an expected call of UpdateDataLake
+func (mr *MockSecurityLakeAPIMockRecorder) UpdateDataLake(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatalakeExceptionsSubscription", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDatalakeExceptionsSubscription), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataLake", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDataLake), arg0)
 }
 
-// UpdateDatalakeExceptionsSubscriptionRequest mocks base method
-func (m *MockSecurityLakeAPI) UpdateDatalakeExceptionsSubscriptionRequest(arg0 *securitylake.UpdateDatalakeExceptionsSubscriptionInput) (*request.Request, *securitylake.UpdateDatalakeExceptionsSubscriptionOutput) {
+// UpdateDataLakeExceptionSubscription mocks base method
+func (m *MockSecurityLakeAPI) UpdateDataLakeExceptionSubscription(arg0 *securitylake.UpdateDataLakeExceptionSubscriptionInput) (*securitylake.UpdateDataLakeExceptionSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateDatalakeExceptionsSubscriptionRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.UpdateDatalakeExceptionsSubscriptionOutput)
+	ret := m.ctrl.Call(m, "UpdateDataLakeExceptionSubscription", arg0)
+	ret0, _ := ret[0].(*securitylake.UpdateDataLakeExceptionSubscriptionOutput)
+	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// UpdateDatalakeExceptionsSubscriptionRequest indicates an expected call of UpdateDatalakeExceptionsSubscriptionRequest
-func (mr *MockSecurityLakeAPIMockRecorder) UpdateDatalakeExceptionsSubscriptionRequest(arg0 interface{}) *gomock.Call {
+// UpdateDataLakeExceptionSubscription indicates an expected call of UpdateDataLakeExceptionSubscription
+func (mr *MockSecurityLakeAPIMockRecorder) UpdateDataLakeExceptionSubscription(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatalakeExceptionsSubscriptionRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDatalakeExceptionsSubscriptionRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataLakeExceptionSubscription", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDataLakeExceptionSubscription), arg0)
 }
 
-// UpdateDatalakeExceptionsSubscriptionWithContext mocks base method
-func (m *MockSecurityLakeAPI) UpdateDatalakeExceptionsSubscriptionWithContext(arg0 context.Context, arg1 *securitylake.UpdateDatalakeExceptionsSubscriptionInput, arg2 ...request.Option) (*securitylake.UpdateDatalakeExceptionsSubscriptionOutput, error) {
+// UpdateDataLakeExceptionSubscriptionRequest mocks base method
+func (m *MockSecurityLakeAPI) UpdateDataLakeExceptionSubscriptionRequest(arg0 *securitylake.UpdateDataLakeExceptionSubscriptionInput) (*request.Request, *securitylake.UpdateDataLakeExceptionSubscriptionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDataLakeExceptionSubscriptionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securitylake.UpdateDataLakeExceptionSubscriptionOutput)
+	return ret0, ret1
+}
+
+// UpdateDataLakeExceptionSubscriptionRequest indicates an expected call of UpdateDataLakeExceptionSubscriptionRequest
+func (mr *MockSecurityLakeAPIMockRecorder) UpdateDataLakeExceptionSubscriptionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataLakeExceptionSubscriptionRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDataLakeExceptionSubscriptionRequest), arg0)
+}
+
+// UpdateDataLakeExceptionSubscriptionWithContext mocks base method
+func (m *MockSecurityLakeAPI) UpdateDataLakeExceptionSubscriptionWithContext(arg0 context.Context, arg1 *securitylake.UpdateDataLakeExceptionSubscriptionInput, arg2 ...request.Option) (*securitylake.UpdateDataLakeExceptionSubscriptionOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "UpdateDatalakeExceptionsSubscriptionWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.UpdateDatalakeExceptionsSubscriptionOutput)
+	ret := m.ctrl.Call(m, "UpdateDataLakeExceptionSubscriptionWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.UpdateDataLakeExceptionSubscriptionOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// UpdateDatalakeExceptionsSubscriptionWithContext indicates an expected call of UpdateDatalakeExceptionsSubscriptionWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) UpdateDatalakeExceptionsSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// UpdateDataLakeExceptionSubscriptionWithContext indicates an expected call of UpdateDataLakeExceptionSubscriptionWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) UpdateDataLakeExceptionSubscriptionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatalakeExceptionsSubscriptionWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDatalakeExceptionsSubscriptionWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataLakeExceptionSubscriptionWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDataLakeExceptionSubscriptionWithContext), varargs...)
 }
 
-// UpdateDatalakeRequest mocks base method
-func (m *MockSecurityLakeAPI) UpdateDatalakeRequest(arg0 *securitylake.UpdateDatalakeInput) (*request.Request, *securitylake.UpdateDatalakeOutput) {
+// UpdateDataLakeRequest mocks base method
+func (m *MockSecurityLakeAPI) UpdateDataLakeRequest(arg0 *securitylake.UpdateDataLakeInput) (*request.Request, *securitylake.UpdateDataLakeOutput) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateDatalakeRequest", arg0)
+	ret := m.ctrl.Call(m, "UpdateDataLakeRequest", arg0)
 	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.UpdateDatalakeOutput)
+	ret1, _ := ret[1].(*securitylake.UpdateDataLakeOutput)
 	return ret0, ret1
 }
 
-// UpdateDatalakeRequest indicates an expected call of UpdateDatalakeRequest
-func (mr *MockSecurityLakeAPIMockRecorder) UpdateDatalakeRequest(arg0 interface{}) *gomock.Call {
+// UpdateDataLakeRequest indicates an expected call of UpdateDataLakeRequest
+func (mr *MockSecurityLakeAPIMockRecorder) UpdateDataLakeRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatalakeRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDatalakeRequest), arg0)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataLakeRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDataLakeRequest), arg0)
 }
 
-// UpdateDatalakeWithContext mocks base method
-func (m *MockSecurityLakeAPI) UpdateDatalakeWithContext(arg0 context.Context, arg1 *securitylake.UpdateDatalakeInput, arg2 ...request.Option) (*securitylake.UpdateDatalakeOutput, error) {
+// UpdateDataLakeWithContext mocks base method
+func (m *MockSecurityLakeAPI) UpdateDataLakeWithContext(arg0 context.Context, arg1 *securitylake.UpdateDataLakeInput, arg2 ...request.Option) (*securitylake.UpdateDataLakeOutput, error) {
 	m.ctrl.T.Helper()
 	varargs := []interface{}{arg0, arg1}
 	for _, a := range arg2 {
 		varargs = append(varargs, a)
 	}
-	ret := m.ctrl.Call(m, "UpdateDatalakeWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.UpdateDatalakeOutput)
+	ret := m.ctrl.Call(m, "UpdateDataLakeWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.UpdateDataLakeOutput)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// UpdateDatalakeWithContext indicates an expected call of UpdateDatalakeWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) UpdateDatalakeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+// UpdateDataLakeWithContext indicates an expected call of UpdateDataLakeWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) UpdateDataLakeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatalakeWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDatalakeWithContext), varargs...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataLakeWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateDataLakeWithContext), varargs...)
 }
 
 // UpdateSubscriber mocks base method
@@ -1580,6 +1480,56 @@ func (m *MockSecurityLakeAPI) UpdateSubscriber(arg0 *securitylake.UpdateSubscrib
 func (mr *MockSecurityLakeAPIMockRecorder) UpdateSubscriber(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubscriber", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateSubscriber), arg0)
+}
+
+// UpdateSubscriberNotification mocks base method
+func (m *MockSecurityLakeAPI) UpdateSubscriberNotification(arg0 *securitylake.UpdateSubscriberNotificationInput) (*securitylake.UpdateSubscriberNotificationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSubscriberNotification", arg0)
+	ret0, _ := ret[0].(*securitylake.UpdateSubscriberNotificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSubscriberNotification indicates an expected call of UpdateSubscriberNotification
+func (mr *MockSecurityLakeAPIMockRecorder) UpdateSubscriberNotification(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubscriberNotification", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateSubscriberNotification), arg0)
+}
+
+// UpdateSubscriberNotificationRequest mocks base method
+func (m *MockSecurityLakeAPI) UpdateSubscriberNotificationRequest(arg0 *securitylake.UpdateSubscriberNotificationInput) (*request.Request, *securitylake.UpdateSubscriberNotificationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSubscriberNotificationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*securitylake.UpdateSubscriberNotificationOutput)
+	return ret0, ret1
+}
+
+// UpdateSubscriberNotificationRequest indicates an expected call of UpdateSubscriberNotificationRequest
+func (mr *MockSecurityLakeAPIMockRecorder) UpdateSubscriberNotificationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubscriberNotificationRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateSubscriberNotificationRequest), arg0)
+}
+
+// UpdateSubscriberNotificationWithContext mocks base method
+func (m *MockSecurityLakeAPI) UpdateSubscriberNotificationWithContext(arg0 context.Context, arg1 *securitylake.UpdateSubscriberNotificationInput, arg2 ...request.Option) (*securitylake.UpdateSubscriberNotificationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSubscriberNotificationWithContext", varargs...)
+	ret0, _ := ret[0].(*securitylake.UpdateSubscriberNotificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSubscriberNotificationWithContext indicates an expected call of UpdateSubscriberNotificationWithContext
+func (mr *MockSecurityLakeAPIMockRecorder) UpdateSubscriberNotificationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubscriberNotificationWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateSubscriberNotificationWithContext), varargs...)
 }
 
 // UpdateSubscriberRequest mocks base method
@@ -1615,54 +1565,4 @@ func (mr *MockSecurityLakeAPIMockRecorder) UpdateSubscriberWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubscriberWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateSubscriberWithContext), varargs...)
-}
-
-// UpdateSubscriptionNotificationConfiguration mocks base method
-func (m *MockSecurityLakeAPI) UpdateSubscriptionNotificationConfiguration(arg0 *securitylake.UpdateSubscriptionNotificationConfigurationInput) (*securitylake.UpdateSubscriptionNotificationConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateSubscriptionNotificationConfiguration", arg0)
-	ret0, _ := ret[0].(*securitylake.UpdateSubscriptionNotificationConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateSubscriptionNotificationConfiguration indicates an expected call of UpdateSubscriptionNotificationConfiguration
-func (mr *MockSecurityLakeAPIMockRecorder) UpdateSubscriptionNotificationConfiguration(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubscriptionNotificationConfiguration", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateSubscriptionNotificationConfiguration), arg0)
-}
-
-// UpdateSubscriptionNotificationConfigurationRequest mocks base method
-func (m *MockSecurityLakeAPI) UpdateSubscriptionNotificationConfigurationRequest(arg0 *securitylake.UpdateSubscriptionNotificationConfigurationInput) (*request.Request, *securitylake.UpdateSubscriptionNotificationConfigurationOutput) {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "UpdateSubscriptionNotificationConfigurationRequest", arg0)
-	ret0, _ := ret[0].(*request.Request)
-	ret1, _ := ret[1].(*securitylake.UpdateSubscriptionNotificationConfigurationOutput)
-	return ret0, ret1
-}
-
-// UpdateSubscriptionNotificationConfigurationRequest indicates an expected call of UpdateSubscriptionNotificationConfigurationRequest
-func (mr *MockSecurityLakeAPIMockRecorder) UpdateSubscriptionNotificationConfigurationRequest(arg0 interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubscriptionNotificationConfigurationRequest", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateSubscriptionNotificationConfigurationRequest), arg0)
-}
-
-// UpdateSubscriptionNotificationConfigurationWithContext mocks base method
-func (m *MockSecurityLakeAPI) UpdateSubscriptionNotificationConfigurationWithContext(arg0 context.Context, arg1 *securitylake.UpdateSubscriptionNotificationConfigurationInput, arg2 ...request.Option) (*securitylake.UpdateSubscriptionNotificationConfigurationOutput, error) {
-	m.ctrl.T.Helper()
-	varargs := []interface{}{arg0, arg1}
-	for _, a := range arg2 {
-		varargs = append(varargs, a)
-	}
-	ret := m.ctrl.Call(m, "UpdateSubscriptionNotificationConfigurationWithContext", varargs...)
-	ret0, _ := ret[0].(*securitylake.UpdateSubscriptionNotificationConfigurationOutput)
-	ret1, _ := ret[1].(error)
-	return ret0, ret1
-}
-
-// UpdateSubscriptionNotificationConfigurationWithContext indicates an expected call of UpdateSubscriptionNotificationConfigurationWithContext
-func (mr *MockSecurityLakeAPIMockRecorder) UpdateSubscriptionNotificationConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	varargs := append([]interface{}{arg0, arg1}, arg2...)
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSubscriptionNotificationConfigurationWithContext", reflect.TypeOf((*MockSecurityLakeAPI)(nil).UpdateSubscriptionNotificationConfigurationWithContext), varargs...)
 }
