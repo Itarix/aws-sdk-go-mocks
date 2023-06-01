@@ -85,6 +85,56 @@ func (mr *MockWorkSpacesWebAPIMockRecorder) AssociateBrowserSettingsWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateBrowserSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).AssociateBrowserSettingsWithContext), varargs...)
 }
 
+// AssociateIpAccessSettings mocks base method
+func (m *MockWorkSpacesWebAPI) AssociateIpAccessSettings(arg0 *workspacesweb.AssociateIpAccessSettingsInput) (*workspacesweb.AssociateIpAccessSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateIpAccessSettings", arg0)
+	ret0, _ := ret[0].(*workspacesweb.AssociateIpAccessSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateIpAccessSettings indicates an expected call of AssociateIpAccessSettings
+func (mr *MockWorkSpacesWebAPIMockRecorder) AssociateIpAccessSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateIpAccessSettings", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).AssociateIpAccessSettings), arg0)
+}
+
+// AssociateIpAccessSettingsRequest mocks base method
+func (m *MockWorkSpacesWebAPI) AssociateIpAccessSettingsRequest(arg0 *workspacesweb.AssociateIpAccessSettingsInput) (*request.Request, *workspacesweb.AssociateIpAccessSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateIpAccessSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspacesweb.AssociateIpAccessSettingsOutput)
+	return ret0, ret1
+}
+
+// AssociateIpAccessSettingsRequest indicates an expected call of AssociateIpAccessSettingsRequest
+func (mr *MockWorkSpacesWebAPIMockRecorder) AssociateIpAccessSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateIpAccessSettingsRequest", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).AssociateIpAccessSettingsRequest), arg0)
+}
+
+// AssociateIpAccessSettingsWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) AssociateIpAccessSettingsWithContext(arg0 context.Context, arg1 *workspacesweb.AssociateIpAccessSettingsInput, arg2 ...request.Option) (*workspacesweb.AssociateIpAccessSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateIpAccessSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspacesweb.AssociateIpAccessSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateIpAccessSettingsWithContext indicates an expected call of AssociateIpAccessSettingsWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) AssociateIpAccessSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateIpAccessSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).AssociateIpAccessSettingsWithContext), varargs...)
+}
+
 // AssociateNetworkSettings mocks base method
 func (m *MockWorkSpacesWebAPI) AssociateNetworkSettings(arg0 *workspacesweb.AssociateNetworkSettingsInput) (*workspacesweb.AssociateNetworkSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +433,56 @@ func (mr *MockWorkSpacesWebAPIMockRecorder) CreateIdentityProviderWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIdentityProviderWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).CreateIdentityProviderWithContext), varargs...)
+}
+
+// CreateIpAccessSettings mocks base method
+func (m *MockWorkSpacesWebAPI) CreateIpAccessSettings(arg0 *workspacesweb.CreateIpAccessSettingsInput) (*workspacesweb.CreateIpAccessSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateIpAccessSettings", arg0)
+	ret0, _ := ret[0].(*workspacesweb.CreateIpAccessSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateIpAccessSettings indicates an expected call of CreateIpAccessSettings
+func (mr *MockWorkSpacesWebAPIMockRecorder) CreateIpAccessSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIpAccessSettings", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).CreateIpAccessSettings), arg0)
+}
+
+// CreateIpAccessSettingsRequest mocks base method
+func (m *MockWorkSpacesWebAPI) CreateIpAccessSettingsRequest(arg0 *workspacesweb.CreateIpAccessSettingsInput) (*request.Request, *workspacesweb.CreateIpAccessSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateIpAccessSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspacesweb.CreateIpAccessSettingsOutput)
+	return ret0, ret1
+}
+
+// CreateIpAccessSettingsRequest indicates an expected call of CreateIpAccessSettingsRequest
+func (mr *MockWorkSpacesWebAPIMockRecorder) CreateIpAccessSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIpAccessSettingsRequest", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).CreateIpAccessSettingsRequest), arg0)
+}
+
+// CreateIpAccessSettingsWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) CreateIpAccessSettingsWithContext(arg0 context.Context, arg1 *workspacesweb.CreateIpAccessSettingsInput, arg2 ...request.Option) (*workspacesweb.CreateIpAccessSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateIpAccessSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspacesweb.CreateIpAccessSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateIpAccessSettingsWithContext indicates an expected call of CreateIpAccessSettingsWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) CreateIpAccessSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIpAccessSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).CreateIpAccessSettingsWithContext), varargs...)
 }
 
 // CreateNetworkSettings mocks base method
@@ -735,6 +835,56 @@ func (mr *MockWorkSpacesWebAPIMockRecorder) DeleteIdentityProviderWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdentityProviderWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DeleteIdentityProviderWithContext), varargs...)
 }
 
+// DeleteIpAccessSettings mocks base method
+func (m *MockWorkSpacesWebAPI) DeleteIpAccessSettings(arg0 *workspacesweb.DeleteIpAccessSettingsInput) (*workspacesweb.DeleteIpAccessSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteIpAccessSettings", arg0)
+	ret0, _ := ret[0].(*workspacesweb.DeleteIpAccessSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteIpAccessSettings indicates an expected call of DeleteIpAccessSettings
+func (mr *MockWorkSpacesWebAPIMockRecorder) DeleteIpAccessSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIpAccessSettings", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DeleteIpAccessSettings), arg0)
+}
+
+// DeleteIpAccessSettingsRequest mocks base method
+func (m *MockWorkSpacesWebAPI) DeleteIpAccessSettingsRequest(arg0 *workspacesweb.DeleteIpAccessSettingsInput) (*request.Request, *workspacesweb.DeleteIpAccessSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteIpAccessSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspacesweb.DeleteIpAccessSettingsOutput)
+	return ret0, ret1
+}
+
+// DeleteIpAccessSettingsRequest indicates an expected call of DeleteIpAccessSettingsRequest
+func (mr *MockWorkSpacesWebAPIMockRecorder) DeleteIpAccessSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIpAccessSettingsRequest", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DeleteIpAccessSettingsRequest), arg0)
+}
+
+// DeleteIpAccessSettingsWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) DeleteIpAccessSettingsWithContext(arg0 context.Context, arg1 *workspacesweb.DeleteIpAccessSettingsInput, arg2 ...request.Option) (*workspacesweb.DeleteIpAccessSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteIpAccessSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspacesweb.DeleteIpAccessSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteIpAccessSettingsWithContext indicates an expected call of DeleteIpAccessSettingsWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) DeleteIpAccessSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIpAccessSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DeleteIpAccessSettingsWithContext), varargs...)
+}
+
 // DeleteNetworkSettings mocks base method
 func (m *MockWorkSpacesWebAPI) DeleteNetworkSettings(arg0 *workspacesweb.DeleteNetworkSettingsInput) (*workspacesweb.DeleteNetworkSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1035,6 +1185,56 @@ func (mr *MockWorkSpacesWebAPIMockRecorder) DisassociateBrowserSettingsWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateBrowserSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DisassociateBrowserSettingsWithContext), varargs...)
 }
 
+// DisassociateIpAccessSettings mocks base method
+func (m *MockWorkSpacesWebAPI) DisassociateIpAccessSettings(arg0 *workspacesweb.DisassociateIpAccessSettingsInput) (*workspacesweb.DisassociateIpAccessSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateIpAccessSettings", arg0)
+	ret0, _ := ret[0].(*workspacesweb.DisassociateIpAccessSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateIpAccessSettings indicates an expected call of DisassociateIpAccessSettings
+func (mr *MockWorkSpacesWebAPIMockRecorder) DisassociateIpAccessSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateIpAccessSettings", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DisassociateIpAccessSettings), arg0)
+}
+
+// DisassociateIpAccessSettingsRequest mocks base method
+func (m *MockWorkSpacesWebAPI) DisassociateIpAccessSettingsRequest(arg0 *workspacesweb.DisassociateIpAccessSettingsInput) (*request.Request, *workspacesweb.DisassociateIpAccessSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateIpAccessSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspacesweb.DisassociateIpAccessSettingsOutput)
+	return ret0, ret1
+}
+
+// DisassociateIpAccessSettingsRequest indicates an expected call of DisassociateIpAccessSettingsRequest
+func (mr *MockWorkSpacesWebAPIMockRecorder) DisassociateIpAccessSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateIpAccessSettingsRequest", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DisassociateIpAccessSettingsRequest), arg0)
+}
+
+// DisassociateIpAccessSettingsWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) DisassociateIpAccessSettingsWithContext(arg0 context.Context, arg1 *workspacesweb.DisassociateIpAccessSettingsInput, arg2 ...request.Option) (*workspacesweb.DisassociateIpAccessSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateIpAccessSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspacesweb.DisassociateIpAccessSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateIpAccessSettingsWithContext indicates an expected call of DisassociateIpAccessSettingsWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) DisassociateIpAccessSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateIpAccessSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).DisassociateIpAccessSettingsWithContext), varargs...)
+}
+
 // DisassociateNetworkSettings mocks base method
 func (m *MockWorkSpacesWebAPI) DisassociateNetworkSettings(arg0 *workspacesweb.DisassociateNetworkSettingsInput) (*workspacesweb.DisassociateNetworkSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1333,6 +1533,56 @@ func (mr *MockWorkSpacesWebAPIMockRecorder) GetIdentityProviderWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdentityProviderWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).GetIdentityProviderWithContext), varargs...)
+}
+
+// GetIpAccessSettings mocks base method
+func (m *MockWorkSpacesWebAPI) GetIpAccessSettings(arg0 *workspacesweb.GetIpAccessSettingsInput) (*workspacesweb.GetIpAccessSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetIpAccessSettings", arg0)
+	ret0, _ := ret[0].(*workspacesweb.GetIpAccessSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetIpAccessSettings indicates an expected call of GetIpAccessSettings
+func (mr *MockWorkSpacesWebAPIMockRecorder) GetIpAccessSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIpAccessSettings", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).GetIpAccessSettings), arg0)
+}
+
+// GetIpAccessSettingsRequest mocks base method
+func (m *MockWorkSpacesWebAPI) GetIpAccessSettingsRequest(arg0 *workspacesweb.GetIpAccessSettingsInput) (*request.Request, *workspacesweb.GetIpAccessSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetIpAccessSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspacesweb.GetIpAccessSettingsOutput)
+	return ret0, ret1
+}
+
+// GetIpAccessSettingsRequest indicates an expected call of GetIpAccessSettingsRequest
+func (mr *MockWorkSpacesWebAPIMockRecorder) GetIpAccessSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIpAccessSettingsRequest", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).GetIpAccessSettingsRequest), arg0)
+}
+
+// GetIpAccessSettingsWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) GetIpAccessSettingsWithContext(arg0 context.Context, arg1 *workspacesweb.GetIpAccessSettingsInput, arg2 ...request.Option) (*workspacesweb.GetIpAccessSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetIpAccessSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspacesweb.GetIpAccessSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetIpAccessSettingsWithContext indicates an expected call of GetIpAccessSettingsWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) GetIpAccessSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIpAccessSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).GetIpAccessSettingsWithContext), varargs...)
 }
 
 // GetNetworkSettings mocks base method
@@ -1849,6 +2099,89 @@ func (mr *MockWorkSpacesWebAPIMockRecorder) ListIdentityProvidersWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdentityProvidersWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).ListIdentityProvidersWithContext), varargs...)
+}
+
+// ListIpAccessSettings mocks base method
+func (m *MockWorkSpacesWebAPI) ListIpAccessSettings(arg0 *workspacesweb.ListIpAccessSettingsInput) (*workspacesweb.ListIpAccessSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIpAccessSettings", arg0)
+	ret0, _ := ret[0].(*workspacesweb.ListIpAccessSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIpAccessSettings indicates an expected call of ListIpAccessSettings
+func (mr *MockWorkSpacesWebAPIMockRecorder) ListIpAccessSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIpAccessSettings", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).ListIpAccessSettings), arg0)
+}
+
+// ListIpAccessSettingsPages mocks base method
+func (m *MockWorkSpacesWebAPI) ListIpAccessSettingsPages(arg0 *workspacesweb.ListIpAccessSettingsInput, arg1 func(*workspacesweb.ListIpAccessSettingsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIpAccessSettingsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIpAccessSettingsPages indicates an expected call of ListIpAccessSettingsPages
+func (mr *MockWorkSpacesWebAPIMockRecorder) ListIpAccessSettingsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIpAccessSettingsPages", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).ListIpAccessSettingsPages), arg0, arg1)
+}
+
+// ListIpAccessSettingsPagesWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) ListIpAccessSettingsPagesWithContext(arg0 context.Context, arg1 *workspacesweb.ListIpAccessSettingsInput, arg2 func(*workspacesweb.ListIpAccessSettingsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIpAccessSettingsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIpAccessSettingsPagesWithContext indicates an expected call of ListIpAccessSettingsPagesWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) ListIpAccessSettingsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIpAccessSettingsPagesWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).ListIpAccessSettingsPagesWithContext), varargs...)
+}
+
+// ListIpAccessSettingsRequest mocks base method
+func (m *MockWorkSpacesWebAPI) ListIpAccessSettingsRequest(arg0 *workspacesweb.ListIpAccessSettingsInput) (*request.Request, *workspacesweb.ListIpAccessSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIpAccessSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspacesweb.ListIpAccessSettingsOutput)
+	return ret0, ret1
+}
+
+// ListIpAccessSettingsRequest indicates an expected call of ListIpAccessSettingsRequest
+func (mr *MockWorkSpacesWebAPIMockRecorder) ListIpAccessSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIpAccessSettingsRequest", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).ListIpAccessSettingsRequest), arg0)
+}
+
+// ListIpAccessSettingsWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) ListIpAccessSettingsWithContext(arg0 context.Context, arg1 *workspacesweb.ListIpAccessSettingsInput, arg2 ...request.Option) (*workspacesweb.ListIpAccessSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIpAccessSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspacesweb.ListIpAccessSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIpAccessSettingsWithContext indicates an expected call of ListIpAccessSettingsWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) ListIpAccessSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIpAccessSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).ListIpAccessSettingsWithContext), varargs...)
 }
 
 // ListNetworkSettings mocks base method
@@ -2597,6 +2930,56 @@ func (mr *MockWorkSpacesWebAPIMockRecorder) UpdateIdentityProviderWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIdentityProviderWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).UpdateIdentityProviderWithContext), varargs...)
+}
+
+// UpdateIpAccessSettings mocks base method
+func (m *MockWorkSpacesWebAPI) UpdateIpAccessSettings(arg0 *workspacesweb.UpdateIpAccessSettingsInput) (*workspacesweb.UpdateIpAccessSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateIpAccessSettings", arg0)
+	ret0, _ := ret[0].(*workspacesweb.UpdateIpAccessSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateIpAccessSettings indicates an expected call of UpdateIpAccessSettings
+func (mr *MockWorkSpacesWebAPIMockRecorder) UpdateIpAccessSettings(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIpAccessSettings", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).UpdateIpAccessSettings), arg0)
+}
+
+// UpdateIpAccessSettingsRequest mocks base method
+func (m *MockWorkSpacesWebAPI) UpdateIpAccessSettingsRequest(arg0 *workspacesweb.UpdateIpAccessSettingsInput) (*request.Request, *workspacesweb.UpdateIpAccessSettingsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateIpAccessSettingsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspacesweb.UpdateIpAccessSettingsOutput)
+	return ret0, ret1
+}
+
+// UpdateIpAccessSettingsRequest indicates an expected call of UpdateIpAccessSettingsRequest
+func (mr *MockWorkSpacesWebAPIMockRecorder) UpdateIpAccessSettingsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIpAccessSettingsRequest", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).UpdateIpAccessSettingsRequest), arg0)
+}
+
+// UpdateIpAccessSettingsWithContext mocks base method
+func (m *MockWorkSpacesWebAPI) UpdateIpAccessSettingsWithContext(arg0 context.Context, arg1 *workspacesweb.UpdateIpAccessSettingsInput, arg2 ...request.Option) (*workspacesweb.UpdateIpAccessSettingsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateIpAccessSettingsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspacesweb.UpdateIpAccessSettingsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateIpAccessSettingsWithContext indicates an expected call of UpdateIpAccessSettingsWithContext
+func (mr *MockWorkSpacesWebAPIMockRecorder) UpdateIpAccessSettingsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIpAccessSettingsWithContext", reflect.TypeOf((*MockWorkSpacesWebAPI)(nil).UpdateIpAccessSettingsWithContext), varargs...)
 }
 
 // UpdateNetworkSettings mocks base method
