@@ -85,6 +85,56 @@ func (mr *MockCustomerProfilesAPIMockRecorder) AddProfileKeyWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddProfileKeyWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).AddProfileKeyWithContext), varargs...)
 }
 
+// CreateCalculatedAttributeDefinition mocks base method
+func (m *MockCustomerProfilesAPI) CreateCalculatedAttributeDefinition(arg0 *customerprofiles.CreateCalculatedAttributeDefinitionInput) (*customerprofiles.CreateCalculatedAttributeDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCalculatedAttributeDefinition", arg0)
+	ret0, _ := ret[0].(*customerprofiles.CreateCalculatedAttributeDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCalculatedAttributeDefinition indicates an expected call of CreateCalculatedAttributeDefinition
+func (mr *MockCustomerProfilesAPIMockRecorder) CreateCalculatedAttributeDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCalculatedAttributeDefinition", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).CreateCalculatedAttributeDefinition), arg0)
+}
+
+// CreateCalculatedAttributeDefinitionRequest mocks base method
+func (m *MockCustomerProfilesAPI) CreateCalculatedAttributeDefinitionRequest(arg0 *customerprofiles.CreateCalculatedAttributeDefinitionInput) (*request.Request, *customerprofiles.CreateCalculatedAttributeDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCalculatedAttributeDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.CreateCalculatedAttributeDefinitionOutput)
+	return ret0, ret1
+}
+
+// CreateCalculatedAttributeDefinitionRequest indicates an expected call of CreateCalculatedAttributeDefinitionRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) CreateCalculatedAttributeDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCalculatedAttributeDefinitionRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).CreateCalculatedAttributeDefinitionRequest), arg0)
+}
+
+// CreateCalculatedAttributeDefinitionWithContext mocks base method
+func (m *MockCustomerProfilesAPI) CreateCalculatedAttributeDefinitionWithContext(arg0 context.Context, arg1 *customerprofiles.CreateCalculatedAttributeDefinitionInput, arg2 ...request.Option) (*customerprofiles.CreateCalculatedAttributeDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCalculatedAttributeDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.CreateCalculatedAttributeDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCalculatedAttributeDefinitionWithContext indicates an expected call of CreateCalculatedAttributeDefinitionWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) CreateCalculatedAttributeDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCalculatedAttributeDefinitionWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).CreateCalculatedAttributeDefinitionWithContext), varargs...)
+}
+
 // CreateDomain mocks base method
 func (m *MockCustomerProfilesAPI) CreateDomain(arg0 *customerprofiles.CreateDomainInput) (*customerprofiles.CreateDomainOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,56 @@ func (mr *MockCustomerProfilesAPIMockRecorder) CreateProfileWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProfileWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).CreateProfileWithContext), varargs...)
+}
+
+// DeleteCalculatedAttributeDefinition mocks base method
+func (m *MockCustomerProfilesAPI) DeleteCalculatedAttributeDefinition(arg0 *customerprofiles.DeleteCalculatedAttributeDefinitionInput) (*customerprofiles.DeleteCalculatedAttributeDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCalculatedAttributeDefinition", arg0)
+	ret0, _ := ret[0].(*customerprofiles.DeleteCalculatedAttributeDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCalculatedAttributeDefinition indicates an expected call of DeleteCalculatedAttributeDefinition
+func (mr *MockCustomerProfilesAPIMockRecorder) DeleteCalculatedAttributeDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCalculatedAttributeDefinition", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).DeleteCalculatedAttributeDefinition), arg0)
+}
+
+// DeleteCalculatedAttributeDefinitionRequest mocks base method
+func (m *MockCustomerProfilesAPI) DeleteCalculatedAttributeDefinitionRequest(arg0 *customerprofiles.DeleteCalculatedAttributeDefinitionInput) (*request.Request, *customerprofiles.DeleteCalculatedAttributeDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCalculatedAttributeDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.DeleteCalculatedAttributeDefinitionOutput)
+	return ret0, ret1
+}
+
+// DeleteCalculatedAttributeDefinitionRequest indicates an expected call of DeleteCalculatedAttributeDefinitionRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) DeleteCalculatedAttributeDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCalculatedAttributeDefinitionRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).DeleteCalculatedAttributeDefinitionRequest), arg0)
+}
+
+// DeleteCalculatedAttributeDefinitionWithContext mocks base method
+func (m *MockCustomerProfilesAPI) DeleteCalculatedAttributeDefinitionWithContext(arg0 context.Context, arg1 *customerprofiles.DeleteCalculatedAttributeDefinitionInput, arg2 ...request.Option) (*customerprofiles.DeleteCalculatedAttributeDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCalculatedAttributeDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.DeleteCalculatedAttributeDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCalculatedAttributeDefinitionWithContext indicates an expected call of DeleteCalculatedAttributeDefinitionWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) DeleteCalculatedAttributeDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCalculatedAttributeDefinitionWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).DeleteCalculatedAttributeDefinitionWithContext), varargs...)
 }
 
 // DeleteDomain mocks base method
@@ -633,6 +733,106 @@ func (mr *MockCustomerProfilesAPIMockRecorder) GetAutoMergingPreviewWithContext(
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutoMergingPreviewWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetAutoMergingPreviewWithContext), varargs...)
+}
+
+// GetCalculatedAttributeDefinition mocks base method
+func (m *MockCustomerProfilesAPI) GetCalculatedAttributeDefinition(arg0 *customerprofiles.GetCalculatedAttributeDefinitionInput) (*customerprofiles.GetCalculatedAttributeDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCalculatedAttributeDefinition", arg0)
+	ret0, _ := ret[0].(*customerprofiles.GetCalculatedAttributeDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCalculatedAttributeDefinition indicates an expected call of GetCalculatedAttributeDefinition
+func (mr *MockCustomerProfilesAPIMockRecorder) GetCalculatedAttributeDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculatedAttributeDefinition", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetCalculatedAttributeDefinition), arg0)
+}
+
+// GetCalculatedAttributeDefinitionRequest mocks base method
+func (m *MockCustomerProfilesAPI) GetCalculatedAttributeDefinitionRequest(arg0 *customerprofiles.GetCalculatedAttributeDefinitionInput) (*request.Request, *customerprofiles.GetCalculatedAttributeDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCalculatedAttributeDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.GetCalculatedAttributeDefinitionOutput)
+	return ret0, ret1
+}
+
+// GetCalculatedAttributeDefinitionRequest indicates an expected call of GetCalculatedAttributeDefinitionRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) GetCalculatedAttributeDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculatedAttributeDefinitionRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetCalculatedAttributeDefinitionRequest), arg0)
+}
+
+// GetCalculatedAttributeDefinitionWithContext mocks base method
+func (m *MockCustomerProfilesAPI) GetCalculatedAttributeDefinitionWithContext(arg0 context.Context, arg1 *customerprofiles.GetCalculatedAttributeDefinitionInput, arg2 ...request.Option) (*customerprofiles.GetCalculatedAttributeDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCalculatedAttributeDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.GetCalculatedAttributeDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCalculatedAttributeDefinitionWithContext indicates an expected call of GetCalculatedAttributeDefinitionWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) GetCalculatedAttributeDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculatedAttributeDefinitionWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetCalculatedAttributeDefinitionWithContext), varargs...)
+}
+
+// GetCalculatedAttributeForProfile mocks base method
+func (m *MockCustomerProfilesAPI) GetCalculatedAttributeForProfile(arg0 *customerprofiles.GetCalculatedAttributeForProfileInput) (*customerprofiles.GetCalculatedAttributeForProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCalculatedAttributeForProfile", arg0)
+	ret0, _ := ret[0].(*customerprofiles.GetCalculatedAttributeForProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCalculatedAttributeForProfile indicates an expected call of GetCalculatedAttributeForProfile
+func (mr *MockCustomerProfilesAPIMockRecorder) GetCalculatedAttributeForProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculatedAttributeForProfile", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetCalculatedAttributeForProfile), arg0)
+}
+
+// GetCalculatedAttributeForProfileRequest mocks base method
+func (m *MockCustomerProfilesAPI) GetCalculatedAttributeForProfileRequest(arg0 *customerprofiles.GetCalculatedAttributeForProfileInput) (*request.Request, *customerprofiles.GetCalculatedAttributeForProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCalculatedAttributeForProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.GetCalculatedAttributeForProfileOutput)
+	return ret0, ret1
+}
+
+// GetCalculatedAttributeForProfileRequest indicates an expected call of GetCalculatedAttributeForProfileRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) GetCalculatedAttributeForProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculatedAttributeForProfileRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetCalculatedAttributeForProfileRequest), arg0)
+}
+
+// GetCalculatedAttributeForProfileWithContext mocks base method
+func (m *MockCustomerProfilesAPI) GetCalculatedAttributeForProfileWithContext(arg0 context.Context, arg1 *customerprofiles.GetCalculatedAttributeForProfileInput, arg2 ...request.Option) (*customerprofiles.GetCalculatedAttributeForProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCalculatedAttributeForProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.GetCalculatedAttributeForProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCalculatedAttributeForProfileWithContext indicates an expected call of GetCalculatedAttributeForProfileWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) GetCalculatedAttributeForProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCalculatedAttributeForProfileWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetCalculatedAttributeForProfileWithContext), varargs...)
 }
 
 // GetDomain mocks base method
@@ -1083,6 +1283,106 @@ func (mr *MockCustomerProfilesAPIMockRecorder) ListAccountIntegrationsWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAccountIntegrationsWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListAccountIntegrationsWithContext), varargs...)
+}
+
+// ListCalculatedAttributeDefinitions mocks base method
+func (m *MockCustomerProfilesAPI) ListCalculatedAttributeDefinitions(arg0 *customerprofiles.ListCalculatedAttributeDefinitionsInput) (*customerprofiles.ListCalculatedAttributeDefinitionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCalculatedAttributeDefinitions", arg0)
+	ret0, _ := ret[0].(*customerprofiles.ListCalculatedAttributeDefinitionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCalculatedAttributeDefinitions indicates an expected call of ListCalculatedAttributeDefinitions
+func (mr *MockCustomerProfilesAPIMockRecorder) ListCalculatedAttributeDefinitions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCalculatedAttributeDefinitions", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListCalculatedAttributeDefinitions), arg0)
+}
+
+// ListCalculatedAttributeDefinitionsRequest mocks base method
+func (m *MockCustomerProfilesAPI) ListCalculatedAttributeDefinitionsRequest(arg0 *customerprofiles.ListCalculatedAttributeDefinitionsInput) (*request.Request, *customerprofiles.ListCalculatedAttributeDefinitionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCalculatedAttributeDefinitionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.ListCalculatedAttributeDefinitionsOutput)
+	return ret0, ret1
+}
+
+// ListCalculatedAttributeDefinitionsRequest indicates an expected call of ListCalculatedAttributeDefinitionsRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) ListCalculatedAttributeDefinitionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCalculatedAttributeDefinitionsRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListCalculatedAttributeDefinitionsRequest), arg0)
+}
+
+// ListCalculatedAttributeDefinitionsWithContext mocks base method
+func (m *MockCustomerProfilesAPI) ListCalculatedAttributeDefinitionsWithContext(arg0 context.Context, arg1 *customerprofiles.ListCalculatedAttributeDefinitionsInput, arg2 ...request.Option) (*customerprofiles.ListCalculatedAttributeDefinitionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCalculatedAttributeDefinitionsWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.ListCalculatedAttributeDefinitionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCalculatedAttributeDefinitionsWithContext indicates an expected call of ListCalculatedAttributeDefinitionsWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) ListCalculatedAttributeDefinitionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCalculatedAttributeDefinitionsWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListCalculatedAttributeDefinitionsWithContext), varargs...)
+}
+
+// ListCalculatedAttributesForProfile mocks base method
+func (m *MockCustomerProfilesAPI) ListCalculatedAttributesForProfile(arg0 *customerprofiles.ListCalculatedAttributesForProfileInput) (*customerprofiles.ListCalculatedAttributesForProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCalculatedAttributesForProfile", arg0)
+	ret0, _ := ret[0].(*customerprofiles.ListCalculatedAttributesForProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCalculatedAttributesForProfile indicates an expected call of ListCalculatedAttributesForProfile
+func (mr *MockCustomerProfilesAPIMockRecorder) ListCalculatedAttributesForProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCalculatedAttributesForProfile", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListCalculatedAttributesForProfile), arg0)
+}
+
+// ListCalculatedAttributesForProfileRequest mocks base method
+func (m *MockCustomerProfilesAPI) ListCalculatedAttributesForProfileRequest(arg0 *customerprofiles.ListCalculatedAttributesForProfileInput) (*request.Request, *customerprofiles.ListCalculatedAttributesForProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCalculatedAttributesForProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.ListCalculatedAttributesForProfileOutput)
+	return ret0, ret1
+}
+
+// ListCalculatedAttributesForProfileRequest indicates an expected call of ListCalculatedAttributesForProfileRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) ListCalculatedAttributesForProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCalculatedAttributesForProfileRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListCalculatedAttributesForProfileRequest), arg0)
+}
+
+// ListCalculatedAttributesForProfileWithContext mocks base method
+func (m *MockCustomerProfilesAPI) ListCalculatedAttributesForProfileWithContext(arg0 context.Context, arg1 *customerprofiles.ListCalculatedAttributesForProfileInput, arg2 ...request.Option) (*customerprofiles.ListCalculatedAttributesForProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCalculatedAttributesForProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.ListCalculatedAttributesForProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCalculatedAttributesForProfileWithContext indicates an expected call of ListCalculatedAttributesForProfileWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) ListCalculatedAttributesForProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCalculatedAttributesForProfileWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListCalculatedAttributesForProfileWithContext), varargs...)
 }
 
 // ListDomains mocks base method
@@ -1833,6 +2133,56 @@ func (mr *MockCustomerProfilesAPIMockRecorder) UntagResourceWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateCalculatedAttributeDefinition mocks base method
+func (m *MockCustomerProfilesAPI) UpdateCalculatedAttributeDefinition(arg0 *customerprofiles.UpdateCalculatedAttributeDefinitionInput) (*customerprofiles.UpdateCalculatedAttributeDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCalculatedAttributeDefinition", arg0)
+	ret0, _ := ret[0].(*customerprofiles.UpdateCalculatedAttributeDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCalculatedAttributeDefinition indicates an expected call of UpdateCalculatedAttributeDefinition
+func (mr *MockCustomerProfilesAPIMockRecorder) UpdateCalculatedAttributeDefinition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCalculatedAttributeDefinition", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).UpdateCalculatedAttributeDefinition), arg0)
+}
+
+// UpdateCalculatedAttributeDefinitionRequest mocks base method
+func (m *MockCustomerProfilesAPI) UpdateCalculatedAttributeDefinitionRequest(arg0 *customerprofiles.UpdateCalculatedAttributeDefinitionInput) (*request.Request, *customerprofiles.UpdateCalculatedAttributeDefinitionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateCalculatedAttributeDefinitionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.UpdateCalculatedAttributeDefinitionOutput)
+	return ret0, ret1
+}
+
+// UpdateCalculatedAttributeDefinitionRequest indicates an expected call of UpdateCalculatedAttributeDefinitionRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) UpdateCalculatedAttributeDefinitionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCalculatedAttributeDefinitionRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).UpdateCalculatedAttributeDefinitionRequest), arg0)
+}
+
+// UpdateCalculatedAttributeDefinitionWithContext mocks base method
+func (m *MockCustomerProfilesAPI) UpdateCalculatedAttributeDefinitionWithContext(arg0 context.Context, arg1 *customerprofiles.UpdateCalculatedAttributeDefinitionInput, arg2 ...request.Option) (*customerprofiles.UpdateCalculatedAttributeDefinitionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateCalculatedAttributeDefinitionWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.UpdateCalculatedAttributeDefinitionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateCalculatedAttributeDefinitionWithContext indicates an expected call of UpdateCalculatedAttributeDefinitionWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) UpdateCalculatedAttributeDefinitionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCalculatedAttributeDefinitionWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).UpdateCalculatedAttributeDefinitionWithContext), varargs...)
 }
 
 // UpdateDomain mocks base method
