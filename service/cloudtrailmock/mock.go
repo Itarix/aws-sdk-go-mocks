@@ -2165,6 +2165,56 @@ func (mr *MockCloudTrailAPIMockRecorder) RestoreEventDataStoreWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreEventDataStoreWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).RestoreEventDataStoreWithContext), varargs...)
 }
 
+// StartEventDataStoreIngestion mocks base method
+func (m *MockCloudTrailAPI) StartEventDataStoreIngestion(arg0 *cloudtrail.StartEventDataStoreIngestionInput) (*cloudtrail.StartEventDataStoreIngestionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartEventDataStoreIngestion", arg0)
+	ret0, _ := ret[0].(*cloudtrail.StartEventDataStoreIngestionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartEventDataStoreIngestion indicates an expected call of StartEventDataStoreIngestion
+func (mr *MockCloudTrailAPIMockRecorder) StartEventDataStoreIngestion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartEventDataStoreIngestion", reflect.TypeOf((*MockCloudTrailAPI)(nil).StartEventDataStoreIngestion), arg0)
+}
+
+// StartEventDataStoreIngestionRequest mocks base method
+func (m *MockCloudTrailAPI) StartEventDataStoreIngestionRequest(arg0 *cloudtrail.StartEventDataStoreIngestionInput) (*request.Request, *cloudtrail.StartEventDataStoreIngestionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartEventDataStoreIngestionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudtrail.StartEventDataStoreIngestionOutput)
+	return ret0, ret1
+}
+
+// StartEventDataStoreIngestionRequest indicates an expected call of StartEventDataStoreIngestionRequest
+func (mr *MockCloudTrailAPIMockRecorder) StartEventDataStoreIngestionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartEventDataStoreIngestionRequest", reflect.TypeOf((*MockCloudTrailAPI)(nil).StartEventDataStoreIngestionRequest), arg0)
+}
+
+// StartEventDataStoreIngestionWithContext mocks base method
+func (m *MockCloudTrailAPI) StartEventDataStoreIngestionWithContext(arg0 context.Context, arg1 *cloudtrail.StartEventDataStoreIngestionInput, arg2 ...request.Option) (*cloudtrail.StartEventDataStoreIngestionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartEventDataStoreIngestionWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudtrail.StartEventDataStoreIngestionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartEventDataStoreIngestionWithContext indicates an expected call of StartEventDataStoreIngestionWithContext
+func (mr *MockCloudTrailAPIMockRecorder) StartEventDataStoreIngestionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartEventDataStoreIngestionWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).StartEventDataStoreIngestionWithContext), varargs...)
+}
+
 // StartImport mocks base method
 func (m *MockCloudTrailAPI) StartImport(arg0 *cloudtrail.StartImportInput) (*cloudtrail.StartImportOutput, error) {
 	m.ctrl.T.Helper()
@@ -2313,6 +2363,56 @@ func (mr *MockCloudTrailAPIMockRecorder) StartQueryWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartQueryWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).StartQueryWithContext), varargs...)
+}
+
+// StopEventDataStoreIngestion mocks base method
+func (m *MockCloudTrailAPI) StopEventDataStoreIngestion(arg0 *cloudtrail.StopEventDataStoreIngestionInput) (*cloudtrail.StopEventDataStoreIngestionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopEventDataStoreIngestion", arg0)
+	ret0, _ := ret[0].(*cloudtrail.StopEventDataStoreIngestionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopEventDataStoreIngestion indicates an expected call of StopEventDataStoreIngestion
+func (mr *MockCloudTrailAPIMockRecorder) StopEventDataStoreIngestion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopEventDataStoreIngestion", reflect.TypeOf((*MockCloudTrailAPI)(nil).StopEventDataStoreIngestion), arg0)
+}
+
+// StopEventDataStoreIngestionRequest mocks base method
+func (m *MockCloudTrailAPI) StopEventDataStoreIngestionRequest(arg0 *cloudtrail.StopEventDataStoreIngestionInput) (*request.Request, *cloudtrail.StopEventDataStoreIngestionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopEventDataStoreIngestionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudtrail.StopEventDataStoreIngestionOutput)
+	return ret0, ret1
+}
+
+// StopEventDataStoreIngestionRequest indicates an expected call of StopEventDataStoreIngestionRequest
+func (mr *MockCloudTrailAPIMockRecorder) StopEventDataStoreIngestionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopEventDataStoreIngestionRequest", reflect.TypeOf((*MockCloudTrailAPI)(nil).StopEventDataStoreIngestionRequest), arg0)
+}
+
+// StopEventDataStoreIngestionWithContext mocks base method
+func (m *MockCloudTrailAPI) StopEventDataStoreIngestionWithContext(arg0 context.Context, arg1 *cloudtrail.StopEventDataStoreIngestionInput, arg2 ...request.Option) (*cloudtrail.StopEventDataStoreIngestionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopEventDataStoreIngestionWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudtrail.StopEventDataStoreIngestionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopEventDataStoreIngestionWithContext indicates an expected call of StopEventDataStoreIngestionWithContext
+func (mr *MockCloudTrailAPIMockRecorder) StopEventDataStoreIngestionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopEventDataStoreIngestionWithContext", reflect.TypeOf((*MockCloudTrailAPI)(nil).StopEventDataStoreIngestionWithContext), varargs...)
 }
 
 // StopImport mocks base method

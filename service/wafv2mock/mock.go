@@ -735,6 +735,106 @@ func (mr *MockWAFV2APIMockRecorder) DeleteWebACLWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteWebACLWithContext", reflect.TypeOf((*MockWAFV2API)(nil).DeleteWebACLWithContext), varargs...)
 }
 
+// DescribeAllManagedProducts mocks base method
+func (m *MockWAFV2API) DescribeAllManagedProducts(arg0 *wafv2.DescribeAllManagedProductsInput) (*wafv2.DescribeAllManagedProductsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAllManagedProducts", arg0)
+	ret0, _ := ret[0].(*wafv2.DescribeAllManagedProductsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAllManagedProducts indicates an expected call of DescribeAllManagedProducts
+func (mr *MockWAFV2APIMockRecorder) DescribeAllManagedProducts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAllManagedProducts", reflect.TypeOf((*MockWAFV2API)(nil).DescribeAllManagedProducts), arg0)
+}
+
+// DescribeAllManagedProductsRequest mocks base method
+func (m *MockWAFV2API) DescribeAllManagedProductsRequest(arg0 *wafv2.DescribeAllManagedProductsInput) (*request.Request, *wafv2.DescribeAllManagedProductsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAllManagedProductsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wafv2.DescribeAllManagedProductsOutput)
+	return ret0, ret1
+}
+
+// DescribeAllManagedProductsRequest indicates an expected call of DescribeAllManagedProductsRequest
+func (mr *MockWAFV2APIMockRecorder) DescribeAllManagedProductsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAllManagedProductsRequest", reflect.TypeOf((*MockWAFV2API)(nil).DescribeAllManagedProductsRequest), arg0)
+}
+
+// DescribeAllManagedProductsWithContext mocks base method
+func (m *MockWAFV2API) DescribeAllManagedProductsWithContext(arg0 context.Context, arg1 *wafv2.DescribeAllManagedProductsInput, arg2 ...request.Option) (*wafv2.DescribeAllManagedProductsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAllManagedProductsWithContext", varargs...)
+	ret0, _ := ret[0].(*wafv2.DescribeAllManagedProductsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAllManagedProductsWithContext indicates an expected call of DescribeAllManagedProductsWithContext
+func (mr *MockWAFV2APIMockRecorder) DescribeAllManagedProductsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAllManagedProductsWithContext", reflect.TypeOf((*MockWAFV2API)(nil).DescribeAllManagedProductsWithContext), varargs...)
+}
+
+// DescribeManagedProductsByVendor mocks base method
+func (m *MockWAFV2API) DescribeManagedProductsByVendor(arg0 *wafv2.DescribeManagedProductsByVendorInput) (*wafv2.DescribeManagedProductsByVendorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeManagedProductsByVendor", arg0)
+	ret0, _ := ret[0].(*wafv2.DescribeManagedProductsByVendorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeManagedProductsByVendor indicates an expected call of DescribeManagedProductsByVendor
+func (mr *MockWAFV2APIMockRecorder) DescribeManagedProductsByVendor(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeManagedProductsByVendor", reflect.TypeOf((*MockWAFV2API)(nil).DescribeManagedProductsByVendor), arg0)
+}
+
+// DescribeManagedProductsByVendorRequest mocks base method
+func (m *MockWAFV2API) DescribeManagedProductsByVendorRequest(arg0 *wafv2.DescribeManagedProductsByVendorInput) (*request.Request, *wafv2.DescribeManagedProductsByVendorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeManagedProductsByVendorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wafv2.DescribeManagedProductsByVendorOutput)
+	return ret0, ret1
+}
+
+// DescribeManagedProductsByVendorRequest indicates an expected call of DescribeManagedProductsByVendorRequest
+func (mr *MockWAFV2APIMockRecorder) DescribeManagedProductsByVendorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeManagedProductsByVendorRequest", reflect.TypeOf((*MockWAFV2API)(nil).DescribeManagedProductsByVendorRequest), arg0)
+}
+
+// DescribeManagedProductsByVendorWithContext mocks base method
+func (m *MockWAFV2API) DescribeManagedProductsByVendorWithContext(arg0 context.Context, arg1 *wafv2.DescribeManagedProductsByVendorInput, arg2 ...request.Option) (*wafv2.DescribeManagedProductsByVendorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeManagedProductsByVendorWithContext", varargs...)
+	ret0, _ := ret[0].(*wafv2.DescribeManagedProductsByVendorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeManagedProductsByVendorWithContext indicates an expected call of DescribeManagedProductsByVendorWithContext
+func (mr *MockWAFV2APIMockRecorder) DescribeManagedProductsByVendorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeManagedProductsByVendorWithContext", reflect.TypeOf((*MockWAFV2API)(nil).DescribeManagedProductsByVendorWithContext), varargs...)
+}
+
 // DescribeManagedRuleGroup mocks base method
 func (m *MockWAFV2API) DescribeManagedRuleGroup(arg0 *wafv2.DescribeManagedRuleGroupInput) (*wafv2.DescribeManagedRuleGroupOutput, error) {
 	m.ctrl.T.Helper()

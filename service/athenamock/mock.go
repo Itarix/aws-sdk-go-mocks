@@ -585,6 +585,56 @@ func (mr *MockAthenaAPIMockRecorder) CreateWorkGroupWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkGroupWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).CreateWorkGroupWithContext), varargs...)
 }
 
+// DeleteCapacityReservation mocks base method
+func (m *MockAthenaAPI) DeleteCapacityReservation(arg0 *athena.DeleteCapacityReservationInput) (*athena.DeleteCapacityReservationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCapacityReservation", arg0)
+	ret0, _ := ret[0].(*athena.DeleteCapacityReservationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCapacityReservation indicates an expected call of DeleteCapacityReservation
+func (mr *MockAthenaAPIMockRecorder) DeleteCapacityReservation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCapacityReservation", reflect.TypeOf((*MockAthenaAPI)(nil).DeleteCapacityReservation), arg0)
+}
+
+// DeleteCapacityReservationRequest mocks base method
+func (m *MockAthenaAPI) DeleteCapacityReservationRequest(arg0 *athena.DeleteCapacityReservationInput) (*request.Request, *athena.DeleteCapacityReservationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCapacityReservationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*athena.DeleteCapacityReservationOutput)
+	return ret0, ret1
+}
+
+// DeleteCapacityReservationRequest indicates an expected call of DeleteCapacityReservationRequest
+func (mr *MockAthenaAPIMockRecorder) DeleteCapacityReservationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCapacityReservationRequest", reflect.TypeOf((*MockAthenaAPI)(nil).DeleteCapacityReservationRequest), arg0)
+}
+
+// DeleteCapacityReservationWithContext mocks base method
+func (m *MockAthenaAPI) DeleteCapacityReservationWithContext(arg0 context.Context, arg1 *athena.DeleteCapacityReservationInput, arg2 ...request.Option) (*athena.DeleteCapacityReservationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCapacityReservationWithContext", varargs...)
+	ret0, _ := ret[0].(*athena.DeleteCapacityReservationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCapacityReservationWithContext indicates an expected call of DeleteCapacityReservationWithContext
+func (mr *MockAthenaAPIMockRecorder) DeleteCapacityReservationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCapacityReservationWithContext", reflect.TypeOf((*MockAthenaAPI)(nil).DeleteCapacityReservationWithContext), varargs...)
+}
+
 // DeleteDataCatalog mocks base method
 func (m *MockAthenaAPI) DeleteDataCatalog(arg0 *athena.DeleteDataCatalogInput) (*athena.DeleteDataCatalogOutput, error) {
 	m.ctrl.T.Helper()
