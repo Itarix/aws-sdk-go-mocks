@@ -35,6 +35,56 @@ func (m *MockCloudFormationAPI) EXPECT() *MockCloudFormationAPIMockRecorder {
 	return m.recorder
 }
 
+// ActivateOrganizationsAccess mocks base method
+func (m *MockCloudFormationAPI) ActivateOrganizationsAccess(arg0 *cloudformation.ActivateOrganizationsAccessInput) (*cloudformation.ActivateOrganizationsAccessOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ActivateOrganizationsAccess", arg0)
+	ret0, _ := ret[0].(*cloudformation.ActivateOrganizationsAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ActivateOrganizationsAccess indicates an expected call of ActivateOrganizationsAccess
+func (mr *MockCloudFormationAPIMockRecorder) ActivateOrganizationsAccess(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateOrganizationsAccess", reflect.TypeOf((*MockCloudFormationAPI)(nil).ActivateOrganizationsAccess), arg0)
+}
+
+// ActivateOrganizationsAccessRequest mocks base method
+func (m *MockCloudFormationAPI) ActivateOrganizationsAccessRequest(arg0 *cloudformation.ActivateOrganizationsAccessInput) (*request.Request, *cloudformation.ActivateOrganizationsAccessOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ActivateOrganizationsAccessRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudformation.ActivateOrganizationsAccessOutput)
+	return ret0, ret1
+}
+
+// ActivateOrganizationsAccessRequest indicates an expected call of ActivateOrganizationsAccessRequest
+func (mr *MockCloudFormationAPIMockRecorder) ActivateOrganizationsAccessRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateOrganizationsAccessRequest", reflect.TypeOf((*MockCloudFormationAPI)(nil).ActivateOrganizationsAccessRequest), arg0)
+}
+
+// ActivateOrganizationsAccessWithContext mocks base method
+func (m *MockCloudFormationAPI) ActivateOrganizationsAccessWithContext(arg0 context.Context, arg1 *cloudformation.ActivateOrganizationsAccessInput, arg2 ...request.Option) (*cloudformation.ActivateOrganizationsAccessOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ActivateOrganizationsAccessWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudformation.ActivateOrganizationsAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ActivateOrganizationsAccessWithContext indicates an expected call of ActivateOrganizationsAccessWithContext
+func (mr *MockCloudFormationAPIMockRecorder) ActivateOrganizationsAccessWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ActivateOrganizationsAccessWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).ActivateOrganizationsAccessWithContext), varargs...)
+}
+
 // ActivateType mocks base method
 func (m *MockCloudFormationAPI) ActivateType(arg0 *cloudformation.ActivateTypeInput) (*cloudformation.ActivateTypeOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +483,56 @@ func (mr *MockCloudFormationAPIMockRecorder) CreateStackWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStackWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).CreateStackWithContext), varargs...)
+}
+
+// DeactivateOrganizationsAccess mocks base method
+func (m *MockCloudFormationAPI) DeactivateOrganizationsAccess(arg0 *cloudformation.DeactivateOrganizationsAccessInput) (*cloudformation.DeactivateOrganizationsAccessOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeactivateOrganizationsAccess", arg0)
+	ret0, _ := ret[0].(*cloudformation.DeactivateOrganizationsAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeactivateOrganizationsAccess indicates an expected call of DeactivateOrganizationsAccess
+func (mr *MockCloudFormationAPIMockRecorder) DeactivateOrganizationsAccess(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateOrganizationsAccess", reflect.TypeOf((*MockCloudFormationAPI)(nil).DeactivateOrganizationsAccess), arg0)
+}
+
+// DeactivateOrganizationsAccessRequest mocks base method
+func (m *MockCloudFormationAPI) DeactivateOrganizationsAccessRequest(arg0 *cloudformation.DeactivateOrganizationsAccessInput) (*request.Request, *cloudformation.DeactivateOrganizationsAccessOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeactivateOrganizationsAccessRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudformation.DeactivateOrganizationsAccessOutput)
+	return ret0, ret1
+}
+
+// DeactivateOrganizationsAccessRequest indicates an expected call of DeactivateOrganizationsAccessRequest
+func (mr *MockCloudFormationAPIMockRecorder) DeactivateOrganizationsAccessRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateOrganizationsAccessRequest", reflect.TypeOf((*MockCloudFormationAPI)(nil).DeactivateOrganizationsAccessRequest), arg0)
+}
+
+// DeactivateOrganizationsAccessWithContext mocks base method
+func (m *MockCloudFormationAPI) DeactivateOrganizationsAccessWithContext(arg0 context.Context, arg1 *cloudformation.DeactivateOrganizationsAccessInput, arg2 ...request.Option) (*cloudformation.DeactivateOrganizationsAccessOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeactivateOrganizationsAccessWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudformation.DeactivateOrganizationsAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeactivateOrganizationsAccessWithContext indicates an expected call of DeactivateOrganizationsAccessWithContext
+func (mr *MockCloudFormationAPIMockRecorder) DeactivateOrganizationsAccessWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeactivateOrganizationsAccessWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).DeactivateOrganizationsAccessWithContext), varargs...)
 }
 
 // DeactivateType mocks base method
@@ -916,6 +1016,56 @@ func (mr *MockCloudFormationAPIMockRecorder) DescribeChangeSetWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeChangeSetWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).DescribeChangeSetWithContext), varargs...)
+}
+
+// DescribeOrganizationsAccess mocks base method
+func (m *MockCloudFormationAPI) DescribeOrganizationsAccess(arg0 *cloudformation.DescribeOrganizationsAccessInput) (*cloudformation.DescribeOrganizationsAccessOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationsAccess", arg0)
+	ret0, _ := ret[0].(*cloudformation.DescribeOrganizationsAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationsAccess indicates an expected call of DescribeOrganizationsAccess
+func (mr *MockCloudFormationAPIMockRecorder) DescribeOrganizationsAccess(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationsAccess", reflect.TypeOf((*MockCloudFormationAPI)(nil).DescribeOrganizationsAccess), arg0)
+}
+
+// DescribeOrganizationsAccessRequest mocks base method
+func (m *MockCloudFormationAPI) DescribeOrganizationsAccessRequest(arg0 *cloudformation.DescribeOrganizationsAccessInput) (*request.Request, *cloudformation.DescribeOrganizationsAccessOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOrganizationsAccessRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudformation.DescribeOrganizationsAccessOutput)
+	return ret0, ret1
+}
+
+// DescribeOrganizationsAccessRequest indicates an expected call of DescribeOrganizationsAccessRequest
+func (mr *MockCloudFormationAPIMockRecorder) DescribeOrganizationsAccessRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationsAccessRequest", reflect.TypeOf((*MockCloudFormationAPI)(nil).DescribeOrganizationsAccessRequest), arg0)
+}
+
+// DescribeOrganizationsAccessWithContext mocks base method
+func (m *MockCloudFormationAPI) DescribeOrganizationsAccessWithContext(arg0 context.Context, arg1 *cloudformation.DescribeOrganizationsAccessInput, arg2 ...request.Option) (*cloudformation.DescribeOrganizationsAccessOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeOrganizationsAccessWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudformation.DescribeOrganizationsAccessOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOrganizationsAccessWithContext indicates an expected call of DescribeOrganizationsAccessWithContext
+func (mr *MockCloudFormationAPIMockRecorder) DescribeOrganizationsAccessWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOrganizationsAccessWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).DescribeOrganizationsAccessWithContext), varargs...)
 }
 
 // DescribePublisher mocks base method
