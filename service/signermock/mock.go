@@ -185,6 +185,56 @@ func (mr *MockSignerAPIMockRecorder) DescribeSigningJobWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSigningJobWithContext", reflect.TypeOf((*MockSignerAPI)(nil).DescribeSigningJobWithContext), varargs...)
 }
 
+// GetRevocationStatus mocks base method
+func (m *MockSignerAPI) GetRevocationStatus(arg0 *signer.GetRevocationStatusInput) (*signer.GetRevocationStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRevocationStatus", arg0)
+	ret0, _ := ret[0].(*signer.GetRevocationStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRevocationStatus indicates an expected call of GetRevocationStatus
+func (mr *MockSignerAPIMockRecorder) GetRevocationStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRevocationStatus", reflect.TypeOf((*MockSignerAPI)(nil).GetRevocationStatus), arg0)
+}
+
+// GetRevocationStatusRequest mocks base method
+func (m *MockSignerAPI) GetRevocationStatusRequest(arg0 *signer.GetRevocationStatusInput) (*request.Request, *signer.GetRevocationStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRevocationStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*signer.GetRevocationStatusOutput)
+	return ret0, ret1
+}
+
+// GetRevocationStatusRequest indicates an expected call of GetRevocationStatusRequest
+func (mr *MockSignerAPIMockRecorder) GetRevocationStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRevocationStatusRequest", reflect.TypeOf((*MockSignerAPI)(nil).GetRevocationStatusRequest), arg0)
+}
+
+// GetRevocationStatusWithContext mocks base method
+func (m *MockSignerAPI) GetRevocationStatusWithContext(arg0 context.Context, arg1 *signer.GetRevocationStatusInput, arg2 ...request.Option) (*signer.GetRevocationStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRevocationStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*signer.GetRevocationStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRevocationStatusWithContext indicates an expected call of GetRevocationStatusWithContext
+func (mr *MockSignerAPIMockRecorder) GetRevocationStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRevocationStatusWithContext", reflect.TypeOf((*MockSignerAPI)(nil).GetRevocationStatusWithContext), varargs...)
+}
+
 // GetSigningPlatform mocks base method
 func (m *MockSignerAPI) GetSigningPlatform(arg0 *signer.GetSigningPlatformInput) (*signer.GetSigningPlatformOutput, error) {
 	m.ctrl.T.Helper()
@@ -832,6 +882,56 @@ func (mr *MockSignerAPIMockRecorder) RevokeSigningProfileWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeSigningProfileWithContext", reflect.TypeOf((*MockSignerAPI)(nil).RevokeSigningProfileWithContext), varargs...)
+}
+
+// SignPayload mocks base method
+func (m *MockSignerAPI) SignPayload(arg0 *signer.SignPayloadInput) (*signer.SignPayloadOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SignPayload", arg0)
+	ret0, _ := ret[0].(*signer.SignPayloadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SignPayload indicates an expected call of SignPayload
+func (mr *MockSignerAPIMockRecorder) SignPayload(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SignPayload", reflect.TypeOf((*MockSignerAPI)(nil).SignPayload), arg0)
+}
+
+// SignPayloadRequest mocks base method
+func (m *MockSignerAPI) SignPayloadRequest(arg0 *signer.SignPayloadInput) (*request.Request, *signer.SignPayloadOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SignPayloadRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*signer.SignPayloadOutput)
+	return ret0, ret1
+}
+
+// SignPayloadRequest indicates an expected call of SignPayloadRequest
+func (mr *MockSignerAPIMockRecorder) SignPayloadRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SignPayloadRequest", reflect.TypeOf((*MockSignerAPI)(nil).SignPayloadRequest), arg0)
+}
+
+// SignPayloadWithContext mocks base method
+func (m *MockSignerAPI) SignPayloadWithContext(arg0 context.Context, arg1 *signer.SignPayloadInput, arg2 ...request.Option) (*signer.SignPayloadOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SignPayloadWithContext", varargs...)
+	ret0, _ := ret[0].(*signer.SignPayloadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SignPayloadWithContext indicates an expected call of SignPayloadWithContext
+func (mr *MockSignerAPIMockRecorder) SignPayloadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SignPayloadWithContext", reflect.TypeOf((*MockSignerAPI)(nil).SignPayloadWithContext), varargs...)
 }
 
 // StartSigningJob mocks base method
