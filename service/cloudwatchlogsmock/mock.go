@@ -285,6 +285,56 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) CreateLogStreamWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLogStreamWithContext", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).CreateLogStreamWithContext), varargs...)
 }
 
+// DeleteAccountPolicy mocks base method
+func (m *MockCloudWatchLogsAPI) DeleteAccountPolicy(arg0 *cloudwatchlogs.DeleteAccountPolicyInput) (*cloudwatchlogs.DeleteAccountPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccountPolicy", arg0)
+	ret0, _ := ret[0].(*cloudwatchlogs.DeleteAccountPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccountPolicy indicates an expected call of DeleteAccountPolicy
+func (mr *MockCloudWatchLogsAPIMockRecorder) DeleteAccountPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccountPolicy", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).DeleteAccountPolicy), arg0)
+}
+
+// DeleteAccountPolicyRequest mocks base method
+func (m *MockCloudWatchLogsAPI) DeleteAccountPolicyRequest(arg0 *cloudwatchlogs.DeleteAccountPolicyInput) (*request.Request, *cloudwatchlogs.DeleteAccountPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAccountPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchlogs.DeleteAccountPolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteAccountPolicyRequest indicates an expected call of DeleteAccountPolicyRequest
+func (mr *MockCloudWatchLogsAPIMockRecorder) DeleteAccountPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccountPolicyRequest", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).DeleteAccountPolicyRequest), arg0)
+}
+
+// DeleteAccountPolicyWithContext mocks base method
+func (m *MockCloudWatchLogsAPI) DeleteAccountPolicyWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DeleteAccountPolicyInput, arg2 ...request.Option) (*cloudwatchlogs.DeleteAccountPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAccountPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchlogs.DeleteAccountPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAccountPolicyWithContext indicates an expected call of DeleteAccountPolicyWithContext
+func (mr *MockCloudWatchLogsAPIMockRecorder) DeleteAccountPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccountPolicyWithContext", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).DeleteAccountPolicyWithContext), varargs...)
+}
+
 // DeleteDataProtectionPolicy mocks base method
 func (m *MockCloudWatchLogsAPI) DeleteDataProtectionPolicy(arg0 *cloudwatchlogs.DeleteDataProtectionPolicyInput) (*cloudwatchlogs.DeleteDataProtectionPolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -733,6 +783,56 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) DeleteSubscriptionFilterWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSubscriptionFilterWithContext", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).DeleteSubscriptionFilterWithContext), varargs...)
+}
+
+// DescribeAccountPolicies mocks base method
+func (m *MockCloudWatchLogsAPI) DescribeAccountPolicies(arg0 *cloudwatchlogs.DescribeAccountPoliciesInput) (*cloudwatchlogs.DescribeAccountPoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccountPolicies", arg0)
+	ret0, _ := ret[0].(*cloudwatchlogs.DescribeAccountPoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccountPolicies indicates an expected call of DescribeAccountPolicies
+func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeAccountPolicies(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountPolicies", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).DescribeAccountPolicies), arg0)
+}
+
+// DescribeAccountPoliciesRequest mocks base method
+func (m *MockCloudWatchLogsAPI) DescribeAccountPoliciesRequest(arg0 *cloudwatchlogs.DescribeAccountPoliciesInput) (*request.Request, *cloudwatchlogs.DescribeAccountPoliciesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccountPoliciesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchlogs.DescribeAccountPoliciesOutput)
+	return ret0, ret1
+}
+
+// DescribeAccountPoliciesRequest indicates an expected call of DescribeAccountPoliciesRequest
+func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeAccountPoliciesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountPoliciesRequest", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).DescribeAccountPoliciesRequest), arg0)
+}
+
+// DescribeAccountPoliciesWithContext mocks base method
+func (m *MockCloudWatchLogsAPI) DescribeAccountPoliciesWithContext(arg0 context.Context, arg1 *cloudwatchlogs.DescribeAccountPoliciesInput, arg2 ...request.Option) (*cloudwatchlogs.DescribeAccountPoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAccountPoliciesWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchlogs.DescribeAccountPoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccountPoliciesWithContext indicates an expected call of DescribeAccountPoliciesWithContext
+func (mr *MockCloudWatchLogsAPIMockRecorder) DescribeAccountPoliciesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountPoliciesWithContext", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).DescribeAccountPoliciesWithContext), varargs...)
 }
 
 // DescribeDestinations mocks base method
@@ -1864,6 +1964,56 @@ func (mr *MockCloudWatchLogsAPIMockRecorder) ListTagsLogGroupWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsLogGroupWithContext", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).ListTagsLogGroupWithContext), varargs...)
+}
+
+// PutAccountPolicy mocks base method
+func (m *MockCloudWatchLogsAPI) PutAccountPolicy(arg0 *cloudwatchlogs.PutAccountPolicyInput) (*cloudwatchlogs.PutAccountPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAccountPolicy", arg0)
+	ret0, _ := ret[0].(*cloudwatchlogs.PutAccountPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAccountPolicy indicates an expected call of PutAccountPolicy
+func (mr *MockCloudWatchLogsAPIMockRecorder) PutAccountPolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountPolicy", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).PutAccountPolicy), arg0)
+}
+
+// PutAccountPolicyRequest mocks base method
+func (m *MockCloudWatchLogsAPI) PutAccountPolicyRequest(arg0 *cloudwatchlogs.PutAccountPolicyInput) (*request.Request, *cloudwatchlogs.PutAccountPolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutAccountPolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudwatchlogs.PutAccountPolicyOutput)
+	return ret0, ret1
+}
+
+// PutAccountPolicyRequest indicates an expected call of PutAccountPolicyRequest
+func (mr *MockCloudWatchLogsAPIMockRecorder) PutAccountPolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountPolicyRequest", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).PutAccountPolicyRequest), arg0)
+}
+
+// PutAccountPolicyWithContext mocks base method
+func (m *MockCloudWatchLogsAPI) PutAccountPolicyWithContext(arg0 context.Context, arg1 *cloudwatchlogs.PutAccountPolicyInput, arg2 ...request.Option) (*cloudwatchlogs.PutAccountPolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutAccountPolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudwatchlogs.PutAccountPolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutAccountPolicyWithContext indicates an expected call of PutAccountPolicyWithContext
+func (mr *MockCloudWatchLogsAPIMockRecorder) PutAccountPolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutAccountPolicyWithContext", reflect.TypeOf((*MockCloudWatchLogsAPI)(nil).PutAccountPolicyWithContext), varargs...)
 }
 
 // PutDataProtectionPolicy mocks base method

@@ -185,6 +185,56 @@ func (mr *MockCustomerProfilesAPIMockRecorder) CreateDomainWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDomainWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).CreateDomainWithContext), varargs...)
 }
 
+// CreateEventStream mocks base method
+func (m *MockCustomerProfilesAPI) CreateEventStream(arg0 *customerprofiles.CreateEventStreamInput) (*customerprofiles.CreateEventStreamOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEventStream", arg0)
+	ret0, _ := ret[0].(*customerprofiles.CreateEventStreamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEventStream indicates an expected call of CreateEventStream
+func (mr *MockCustomerProfilesAPIMockRecorder) CreateEventStream(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEventStream", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).CreateEventStream), arg0)
+}
+
+// CreateEventStreamRequest mocks base method
+func (m *MockCustomerProfilesAPI) CreateEventStreamRequest(arg0 *customerprofiles.CreateEventStreamInput) (*request.Request, *customerprofiles.CreateEventStreamOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateEventStreamRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.CreateEventStreamOutput)
+	return ret0, ret1
+}
+
+// CreateEventStreamRequest indicates an expected call of CreateEventStreamRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) CreateEventStreamRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEventStreamRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).CreateEventStreamRequest), arg0)
+}
+
+// CreateEventStreamWithContext mocks base method
+func (m *MockCustomerProfilesAPI) CreateEventStreamWithContext(arg0 context.Context, arg1 *customerprofiles.CreateEventStreamInput, arg2 ...request.Option) (*customerprofiles.CreateEventStreamOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateEventStreamWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.CreateEventStreamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateEventStreamWithContext indicates an expected call of CreateEventStreamWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) CreateEventStreamWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEventStreamWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).CreateEventStreamWithContext), varargs...)
+}
+
 // CreateIntegrationWorkflow mocks base method
 func (m *MockCustomerProfilesAPI) CreateIntegrationWorkflow(arg0 *customerprofiles.CreateIntegrationWorkflowInput) (*customerprofiles.CreateIntegrationWorkflowOutput, error) {
 	m.ctrl.T.Helper()
@@ -383,6 +433,56 @@ func (mr *MockCustomerProfilesAPIMockRecorder) DeleteDomainWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDomainWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).DeleteDomainWithContext), varargs...)
+}
+
+// DeleteEventStream mocks base method
+func (m *MockCustomerProfilesAPI) DeleteEventStream(arg0 *customerprofiles.DeleteEventStreamInput) (*customerprofiles.DeleteEventStreamOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEventStream", arg0)
+	ret0, _ := ret[0].(*customerprofiles.DeleteEventStreamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEventStream indicates an expected call of DeleteEventStream
+func (mr *MockCustomerProfilesAPIMockRecorder) DeleteEventStream(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventStream", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).DeleteEventStream), arg0)
+}
+
+// DeleteEventStreamRequest mocks base method
+func (m *MockCustomerProfilesAPI) DeleteEventStreamRequest(arg0 *customerprofiles.DeleteEventStreamInput) (*request.Request, *customerprofiles.DeleteEventStreamOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEventStreamRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.DeleteEventStreamOutput)
+	return ret0, ret1
+}
+
+// DeleteEventStreamRequest indicates an expected call of DeleteEventStreamRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) DeleteEventStreamRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventStreamRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).DeleteEventStreamRequest), arg0)
+}
+
+// DeleteEventStreamWithContext mocks base method
+func (m *MockCustomerProfilesAPI) DeleteEventStreamWithContext(arg0 context.Context, arg1 *customerprofiles.DeleteEventStreamInput, arg2 ...request.Option) (*customerprofiles.DeleteEventStreamOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteEventStreamWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.DeleteEventStreamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEventStreamWithContext indicates an expected call of DeleteEventStreamWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) DeleteEventStreamWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEventStreamWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).DeleteEventStreamWithContext), varargs...)
 }
 
 // DeleteIntegration mocks base method
@@ -883,6 +983,56 @@ func (mr *MockCustomerProfilesAPIMockRecorder) GetDomainWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetDomainWithContext), varargs...)
+}
+
+// GetEventStream mocks base method
+func (m *MockCustomerProfilesAPI) GetEventStream(arg0 *customerprofiles.GetEventStreamInput) (*customerprofiles.GetEventStreamOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEventStream", arg0)
+	ret0, _ := ret[0].(*customerprofiles.GetEventStreamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEventStream indicates an expected call of GetEventStream
+func (mr *MockCustomerProfilesAPIMockRecorder) GetEventStream(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEventStream", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetEventStream), arg0)
+}
+
+// GetEventStreamRequest mocks base method
+func (m *MockCustomerProfilesAPI) GetEventStreamRequest(arg0 *customerprofiles.GetEventStreamInput) (*request.Request, *customerprofiles.GetEventStreamOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEventStreamRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.GetEventStreamOutput)
+	return ret0, ret1
+}
+
+// GetEventStreamRequest indicates an expected call of GetEventStreamRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) GetEventStreamRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEventStreamRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetEventStreamRequest), arg0)
+}
+
+// GetEventStreamWithContext mocks base method
+func (m *MockCustomerProfilesAPI) GetEventStreamWithContext(arg0 context.Context, arg1 *customerprofiles.GetEventStreamInput, arg2 ...request.Option) (*customerprofiles.GetEventStreamOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetEventStreamWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.GetEventStreamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEventStreamWithContext indicates an expected call of GetEventStreamWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) GetEventStreamWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEventStreamWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetEventStreamWithContext), varargs...)
 }
 
 // GetIdentityResolutionJob mocks base method
@@ -1433,6 +1583,89 @@ func (mr *MockCustomerProfilesAPIMockRecorder) ListDomainsWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainsWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListDomainsWithContext), varargs...)
+}
+
+// ListEventStreams mocks base method
+func (m *MockCustomerProfilesAPI) ListEventStreams(arg0 *customerprofiles.ListEventStreamsInput) (*customerprofiles.ListEventStreamsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEventStreams", arg0)
+	ret0, _ := ret[0].(*customerprofiles.ListEventStreamsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEventStreams indicates an expected call of ListEventStreams
+func (mr *MockCustomerProfilesAPIMockRecorder) ListEventStreams(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventStreams", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListEventStreams), arg0)
+}
+
+// ListEventStreamsPages mocks base method
+func (m *MockCustomerProfilesAPI) ListEventStreamsPages(arg0 *customerprofiles.ListEventStreamsInput, arg1 func(*customerprofiles.ListEventStreamsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEventStreamsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEventStreamsPages indicates an expected call of ListEventStreamsPages
+func (mr *MockCustomerProfilesAPIMockRecorder) ListEventStreamsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventStreamsPages", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListEventStreamsPages), arg0, arg1)
+}
+
+// ListEventStreamsPagesWithContext mocks base method
+func (m *MockCustomerProfilesAPI) ListEventStreamsPagesWithContext(arg0 context.Context, arg1 *customerprofiles.ListEventStreamsInput, arg2 func(*customerprofiles.ListEventStreamsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEventStreamsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEventStreamsPagesWithContext indicates an expected call of ListEventStreamsPagesWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) ListEventStreamsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventStreamsPagesWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListEventStreamsPagesWithContext), varargs...)
+}
+
+// ListEventStreamsRequest mocks base method
+func (m *MockCustomerProfilesAPI) ListEventStreamsRequest(arg0 *customerprofiles.ListEventStreamsInput) (*request.Request, *customerprofiles.ListEventStreamsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEventStreamsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.ListEventStreamsOutput)
+	return ret0, ret1
+}
+
+// ListEventStreamsRequest indicates an expected call of ListEventStreamsRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) ListEventStreamsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventStreamsRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListEventStreamsRequest), arg0)
+}
+
+// ListEventStreamsWithContext mocks base method
+func (m *MockCustomerProfilesAPI) ListEventStreamsWithContext(arg0 context.Context, arg1 *customerprofiles.ListEventStreamsInput, arg2 ...request.Option) (*customerprofiles.ListEventStreamsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEventStreamsWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.ListEventStreamsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEventStreamsWithContext indicates an expected call of ListEventStreamsWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) ListEventStreamsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEventStreamsWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListEventStreamsWithContext), varargs...)
 }
 
 // ListIdentityResolutionJobs mocks base method
