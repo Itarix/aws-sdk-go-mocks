@@ -634,6 +634,56 @@ func (mr *MockAmplifyUIBuilderAPIMockRecorder) ExportThemesWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportThemesWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ExportThemesWithContext), varargs...)
 }
 
+// GetCodegenJob mocks base method
+func (m *MockAmplifyUIBuilderAPI) GetCodegenJob(arg0 *amplifyuibuilder.GetCodegenJobInput) (*amplifyuibuilder.GetCodegenJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCodegenJob", arg0)
+	ret0, _ := ret[0].(*amplifyuibuilder.GetCodegenJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCodegenJob indicates an expected call of GetCodegenJob
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) GetCodegenJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCodegenJob", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).GetCodegenJob), arg0)
+}
+
+// GetCodegenJobRequest mocks base method
+func (m *MockAmplifyUIBuilderAPI) GetCodegenJobRequest(arg0 *amplifyuibuilder.GetCodegenJobInput) (*request.Request, *amplifyuibuilder.GetCodegenJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCodegenJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifyuibuilder.GetCodegenJobOutput)
+	return ret0, ret1
+}
+
+// GetCodegenJobRequest indicates an expected call of GetCodegenJobRequest
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) GetCodegenJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCodegenJobRequest", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).GetCodegenJobRequest), arg0)
+}
+
+// GetCodegenJobWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) GetCodegenJobWithContext(arg0 context.Context, arg1 *amplifyuibuilder.GetCodegenJobInput, arg2 ...request.Option) (*amplifyuibuilder.GetCodegenJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCodegenJobWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifyuibuilder.GetCodegenJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCodegenJobWithContext indicates an expected call of GetCodegenJobWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) GetCodegenJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCodegenJobWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).GetCodegenJobWithContext), varargs...)
+}
+
 // GetComponent mocks base method
 func (m *MockAmplifyUIBuilderAPI) GetComponent(arg0 *amplifyuibuilder.GetComponentInput) (*amplifyuibuilder.GetComponentOutput, error) {
 	m.ctrl.T.Helper()
@@ -832,6 +882,89 @@ func (mr *MockAmplifyUIBuilderAPIMockRecorder) GetThemeWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetThemeWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).GetThemeWithContext), varargs...)
+}
+
+// ListCodegenJobs mocks base method
+func (m *MockAmplifyUIBuilderAPI) ListCodegenJobs(arg0 *amplifyuibuilder.ListCodegenJobsInput) (*amplifyuibuilder.ListCodegenJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCodegenJobs", arg0)
+	ret0, _ := ret[0].(*amplifyuibuilder.ListCodegenJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCodegenJobs indicates an expected call of ListCodegenJobs
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ListCodegenJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCodegenJobs", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ListCodegenJobs), arg0)
+}
+
+// ListCodegenJobsPages mocks base method
+func (m *MockAmplifyUIBuilderAPI) ListCodegenJobsPages(arg0 *amplifyuibuilder.ListCodegenJobsInput, arg1 func(*amplifyuibuilder.ListCodegenJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCodegenJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCodegenJobsPages indicates an expected call of ListCodegenJobsPages
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ListCodegenJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCodegenJobsPages", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ListCodegenJobsPages), arg0, arg1)
+}
+
+// ListCodegenJobsPagesWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) ListCodegenJobsPagesWithContext(arg0 context.Context, arg1 *amplifyuibuilder.ListCodegenJobsInput, arg2 func(*amplifyuibuilder.ListCodegenJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCodegenJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCodegenJobsPagesWithContext indicates an expected call of ListCodegenJobsPagesWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ListCodegenJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCodegenJobsPagesWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ListCodegenJobsPagesWithContext), varargs...)
+}
+
+// ListCodegenJobsRequest mocks base method
+func (m *MockAmplifyUIBuilderAPI) ListCodegenJobsRequest(arg0 *amplifyuibuilder.ListCodegenJobsInput) (*request.Request, *amplifyuibuilder.ListCodegenJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCodegenJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifyuibuilder.ListCodegenJobsOutput)
+	return ret0, ret1
+}
+
+// ListCodegenJobsRequest indicates an expected call of ListCodegenJobsRequest
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ListCodegenJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCodegenJobsRequest", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ListCodegenJobsRequest), arg0)
+}
+
+// ListCodegenJobsWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) ListCodegenJobsWithContext(arg0 context.Context, arg1 *amplifyuibuilder.ListCodegenJobsInput, arg2 ...request.Option) (*amplifyuibuilder.ListCodegenJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCodegenJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifyuibuilder.ListCodegenJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCodegenJobsWithContext indicates an expected call of ListCodegenJobsWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) ListCodegenJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCodegenJobsWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).ListCodegenJobsWithContext), varargs...)
 }
 
 // ListComponents mocks base method
@@ -1181,6 +1314,56 @@ func (mr *MockAmplifyUIBuilderAPIMockRecorder) RefreshTokenWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RefreshTokenWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).RefreshTokenWithContext), varargs...)
+}
+
+// StartCodegenJob mocks base method
+func (m *MockAmplifyUIBuilderAPI) StartCodegenJob(arg0 *amplifyuibuilder.StartCodegenJobInput) (*amplifyuibuilder.StartCodegenJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartCodegenJob", arg0)
+	ret0, _ := ret[0].(*amplifyuibuilder.StartCodegenJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartCodegenJob indicates an expected call of StartCodegenJob
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) StartCodegenJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCodegenJob", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).StartCodegenJob), arg0)
+}
+
+// StartCodegenJobRequest mocks base method
+func (m *MockAmplifyUIBuilderAPI) StartCodegenJobRequest(arg0 *amplifyuibuilder.StartCodegenJobInput) (*request.Request, *amplifyuibuilder.StartCodegenJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartCodegenJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*amplifyuibuilder.StartCodegenJobOutput)
+	return ret0, ret1
+}
+
+// StartCodegenJobRequest indicates an expected call of StartCodegenJobRequest
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) StartCodegenJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCodegenJobRequest", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).StartCodegenJobRequest), arg0)
+}
+
+// StartCodegenJobWithContext mocks base method
+func (m *MockAmplifyUIBuilderAPI) StartCodegenJobWithContext(arg0 context.Context, arg1 *amplifyuibuilder.StartCodegenJobInput, arg2 ...request.Option) (*amplifyuibuilder.StartCodegenJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartCodegenJobWithContext", varargs...)
+	ret0, _ := ret[0].(*amplifyuibuilder.StartCodegenJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartCodegenJobWithContext indicates an expected call of StartCodegenJobWithContext
+func (mr *MockAmplifyUIBuilderAPIMockRecorder) StartCodegenJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartCodegenJobWithContext", reflect.TypeOf((*MockAmplifyUIBuilderAPI)(nil).StartCodegenJobWithContext), varargs...)
 }
 
 // UpdateComponent mocks base method

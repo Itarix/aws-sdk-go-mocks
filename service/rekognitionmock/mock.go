@@ -35,6 +35,56 @@ func (m *MockRekognitionAPI) EXPECT() *MockRekognitionAPIMockRecorder {
 	return m.recorder
 }
 
+// AssociateFaces mocks base method
+func (m *MockRekognitionAPI) AssociateFaces(arg0 *rekognition.AssociateFacesInput) (*rekognition.AssociateFacesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateFaces", arg0)
+	ret0, _ := ret[0].(*rekognition.AssociateFacesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateFaces indicates an expected call of AssociateFaces
+func (mr *MockRekognitionAPIMockRecorder) AssociateFaces(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFaces", reflect.TypeOf((*MockRekognitionAPI)(nil).AssociateFaces), arg0)
+}
+
+// AssociateFacesRequest mocks base method
+func (m *MockRekognitionAPI) AssociateFacesRequest(arg0 *rekognition.AssociateFacesInput) (*request.Request, *rekognition.AssociateFacesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateFacesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.AssociateFacesOutput)
+	return ret0, ret1
+}
+
+// AssociateFacesRequest indicates an expected call of AssociateFacesRequest
+func (mr *MockRekognitionAPIMockRecorder) AssociateFacesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFacesRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).AssociateFacesRequest), arg0)
+}
+
+// AssociateFacesWithContext mocks base method
+func (m *MockRekognitionAPI) AssociateFacesWithContext(arg0 context.Context, arg1 *rekognition.AssociateFacesInput, arg2 ...request.Option) (*rekognition.AssociateFacesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateFacesWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.AssociateFacesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateFacesWithContext indicates an expected call of AssociateFacesWithContext
+func (mr *MockRekognitionAPIMockRecorder) AssociateFacesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateFacesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).AssociateFacesWithContext), varargs...)
+}
+
 // CompareFaces mocks base method
 func (m *MockRekognitionAPI) CompareFaces(arg0 *rekognition.CompareFacesInput) (*rekognition.CompareFacesOutput, error) {
 	m.ctrl.T.Helper()
@@ -435,6 +485,56 @@ func (mr *MockRekognitionAPIMockRecorder) CreateStreamProcessorWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStreamProcessorWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateStreamProcessorWithContext), varargs...)
 }
 
+// CreateUser mocks base method
+func (m *MockRekognitionAPI) CreateUser(arg0 *rekognition.CreateUserInput) (*rekognition.CreateUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUser", arg0)
+	ret0, _ := ret[0].(*rekognition.CreateUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUser indicates an expected call of CreateUser
+func (mr *MockRekognitionAPIMockRecorder) CreateUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUser", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateUser), arg0)
+}
+
+// CreateUserRequest mocks base method
+func (m *MockRekognitionAPI) CreateUserRequest(arg0 *rekognition.CreateUserInput) (*request.Request, *rekognition.CreateUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.CreateUserOutput)
+	return ret0, ret1
+}
+
+// CreateUserRequest indicates an expected call of CreateUserRequest
+func (mr *MockRekognitionAPIMockRecorder) CreateUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateUserRequest), arg0)
+}
+
+// CreateUserWithContext mocks base method
+func (m *MockRekognitionAPI) CreateUserWithContext(arg0 context.Context, arg1 *rekognition.CreateUserInput, arg2 ...request.Option) (*rekognition.CreateUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateUserWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.CreateUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateUserWithContext indicates an expected call of CreateUserWithContext
+func (mr *MockRekognitionAPIMockRecorder) CreateUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).CreateUserWithContext), varargs...)
+}
+
 // DeleteCollection mocks base method
 func (m *MockRekognitionAPI) DeleteCollection(arg0 *rekognition.DeleteCollectionInput) (*rekognition.DeleteCollectionOutput, error) {
 	m.ctrl.T.Helper()
@@ -783,6 +883,56 @@ func (mr *MockRekognitionAPIMockRecorder) DeleteStreamProcessorWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStreamProcessorWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteStreamProcessorWithContext), varargs...)
+}
+
+// DeleteUser mocks base method
+func (m *MockRekognitionAPI) DeleteUser(arg0 *rekognition.DeleteUserInput) (*rekognition.DeleteUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteUser", arg0)
+	ret0, _ := ret[0].(*rekognition.DeleteUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteUser indicates an expected call of DeleteUser
+func (mr *MockRekognitionAPIMockRecorder) DeleteUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUser", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteUser), arg0)
+}
+
+// DeleteUserRequest mocks base method
+func (m *MockRekognitionAPI) DeleteUserRequest(arg0 *rekognition.DeleteUserInput) (*request.Request, *rekognition.DeleteUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.DeleteUserOutput)
+	return ret0, ret1
+}
+
+// DeleteUserRequest indicates an expected call of DeleteUserRequest
+func (mr *MockRekognitionAPIMockRecorder) DeleteUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteUserRequest), arg0)
+}
+
+// DeleteUserWithContext mocks base method
+func (m *MockRekognitionAPI) DeleteUserWithContext(arg0 context.Context, arg1 *rekognition.DeleteUserInput, arg2 ...request.Option) (*rekognition.DeleteUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteUserWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.DeleteUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteUserWithContext indicates an expected call of DeleteUserWithContext
+func (mr *MockRekognitionAPIMockRecorder) DeleteUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DeleteUserWithContext), varargs...)
 }
 
 // DescribeCollection mocks base method
@@ -1399,6 +1549,56 @@ func (mr *MockRekognitionAPIMockRecorder) DetectTextWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectTextWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DetectTextWithContext), varargs...)
+}
+
+// DisassociateFaces mocks base method
+func (m *MockRekognitionAPI) DisassociateFaces(arg0 *rekognition.DisassociateFacesInput) (*rekognition.DisassociateFacesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFaces", arg0)
+	ret0, _ := ret[0].(*rekognition.DisassociateFacesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFaces indicates an expected call of DisassociateFaces
+func (mr *MockRekognitionAPIMockRecorder) DisassociateFaces(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFaces", reflect.TypeOf((*MockRekognitionAPI)(nil).DisassociateFaces), arg0)
+}
+
+// DisassociateFacesRequest mocks base method
+func (m *MockRekognitionAPI) DisassociateFacesRequest(arg0 *rekognition.DisassociateFacesInput) (*request.Request, *rekognition.DisassociateFacesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateFacesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.DisassociateFacesOutput)
+	return ret0, ret1
+}
+
+// DisassociateFacesRequest indicates an expected call of DisassociateFacesRequest
+func (mr *MockRekognitionAPIMockRecorder) DisassociateFacesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFacesRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).DisassociateFacesRequest), arg0)
+}
+
+// DisassociateFacesWithContext mocks base method
+func (m *MockRekognitionAPI) DisassociateFacesWithContext(arg0 context.Context, arg1 *rekognition.DisassociateFacesInput, arg2 ...request.Option) (*rekognition.DisassociateFacesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateFacesWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.DisassociateFacesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateFacesWithContext indicates an expected call of DisassociateFacesWithContext
+func (mr *MockRekognitionAPIMockRecorder) DisassociateFacesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateFacesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).DisassociateFacesWithContext), varargs...)
 }
 
 // DistributeDatasetEntries mocks base method
@@ -2813,6 +3013,89 @@ func (mr *MockRekognitionAPIMockRecorder) ListTagsForResourceWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ListUsers mocks base method
+func (m *MockRekognitionAPI) ListUsers(arg0 *rekognition.ListUsersInput) (*rekognition.ListUsersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUsers", arg0)
+	ret0, _ := ret[0].(*rekognition.ListUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListUsers indicates an expected call of ListUsers
+func (mr *MockRekognitionAPIMockRecorder) ListUsers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsers", reflect.TypeOf((*MockRekognitionAPI)(nil).ListUsers), arg0)
+}
+
+// ListUsersPages mocks base method
+func (m *MockRekognitionAPI) ListUsersPages(arg0 *rekognition.ListUsersInput, arg1 func(*rekognition.ListUsersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUsersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListUsersPages indicates an expected call of ListUsersPages
+func (mr *MockRekognitionAPIMockRecorder) ListUsersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersPages", reflect.TypeOf((*MockRekognitionAPI)(nil).ListUsersPages), arg0, arg1)
+}
+
+// ListUsersPagesWithContext mocks base method
+func (m *MockRekognitionAPI) ListUsersPagesWithContext(arg0 context.Context, arg1 *rekognition.ListUsersInput, arg2 func(*rekognition.ListUsersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListUsersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListUsersPagesWithContext indicates an expected call of ListUsersPagesWithContext
+func (mr *MockRekognitionAPIMockRecorder) ListUsersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersPagesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListUsersPagesWithContext), varargs...)
+}
+
+// ListUsersRequest mocks base method
+func (m *MockRekognitionAPI) ListUsersRequest(arg0 *rekognition.ListUsersInput) (*request.Request, *rekognition.ListUsersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUsersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.ListUsersOutput)
+	return ret0, ret1
+}
+
+// ListUsersRequest indicates an expected call of ListUsersRequest
+func (mr *MockRekognitionAPIMockRecorder) ListUsersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).ListUsersRequest), arg0)
+}
+
+// ListUsersWithContext mocks base method
+func (m *MockRekognitionAPI) ListUsersWithContext(arg0 context.Context, arg1 *rekognition.ListUsersInput, arg2 ...request.Option) (*rekognition.ListUsersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListUsersWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.ListUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListUsersWithContext indicates an expected call of ListUsersWithContext
+func (mr *MockRekognitionAPIMockRecorder) ListUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListUsersWithContext), varargs...)
+}
+
 // PutProjectPolicy mocks base method
 func (m *MockRekognitionAPI) PutProjectPolicy(arg0 *rekognition.PutProjectPolicyInput) (*rekognition.PutProjectPolicyOutput, error) {
 	m.ctrl.T.Helper()
@@ -3011,6 +3294,106 @@ func (mr *MockRekognitionAPIMockRecorder) SearchFacesWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchFacesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).SearchFacesWithContext), varargs...)
+}
+
+// SearchUsers mocks base method
+func (m *MockRekognitionAPI) SearchUsers(arg0 *rekognition.SearchUsersInput) (*rekognition.SearchUsersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchUsers", arg0)
+	ret0, _ := ret[0].(*rekognition.SearchUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchUsers indicates an expected call of SearchUsers
+func (mr *MockRekognitionAPIMockRecorder) SearchUsers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsers", reflect.TypeOf((*MockRekognitionAPI)(nil).SearchUsers), arg0)
+}
+
+// SearchUsersByImage mocks base method
+func (m *MockRekognitionAPI) SearchUsersByImage(arg0 *rekognition.SearchUsersByImageInput) (*rekognition.SearchUsersByImageOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchUsersByImage", arg0)
+	ret0, _ := ret[0].(*rekognition.SearchUsersByImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchUsersByImage indicates an expected call of SearchUsersByImage
+func (mr *MockRekognitionAPIMockRecorder) SearchUsersByImage(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsersByImage", reflect.TypeOf((*MockRekognitionAPI)(nil).SearchUsersByImage), arg0)
+}
+
+// SearchUsersByImageRequest mocks base method
+func (m *MockRekognitionAPI) SearchUsersByImageRequest(arg0 *rekognition.SearchUsersByImageInput) (*request.Request, *rekognition.SearchUsersByImageOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchUsersByImageRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.SearchUsersByImageOutput)
+	return ret0, ret1
+}
+
+// SearchUsersByImageRequest indicates an expected call of SearchUsersByImageRequest
+func (mr *MockRekognitionAPIMockRecorder) SearchUsersByImageRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsersByImageRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).SearchUsersByImageRequest), arg0)
+}
+
+// SearchUsersByImageWithContext mocks base method
+func (m *MockRekognitionAPI) SearchUsersByImageWithContext(arg0 context.Context, arg1 *rekognition.SearchUsersByImageInput, arg2 ...request.Option) (*rekognition.SearchUsersByImageOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchUsersByImageWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.SearchUsersByImageOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchUsersByImageWithContext indicates an expected call of SearchUsersByImageWithContext
+func (mr *MockRekognitionAPIMockRecorder) SearchUsersByImageWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsersByImageWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).SearchUsersByImageWithContext), varargs...)
+}
+
+// SearchUsersRequest mocks base method
+func (m *MockRekognitionAPI) SearchUsersRequest(arg0 *rekognition.SearchUsersInput) (*request.Request, *rekognition.SearchUsersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchUsersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.SearchUsersOutput)
+	return ret0, ret1
+}
+
+// SearchUsersRequest indicates an expected call of SearchUsersRequest
+func (mr *MockRekognitionAPIMockRecorder) SearchUsersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsersRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).SearchUsersRequest), arg0)
+}
+
+// SearchUsersWithContext mocks base method
+func (m *MockRekognitionAPI) SearchUsersWithContext(arg0 context.Context, arg1 *rekognition.SearchUsersInput, arg2 ...request.Option) (*rekognition.SearchUsersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchUsersWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.SearchUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchUsersWithContext indicates an expected call of SearchUsersWithContext
+func (mr *MockRekognitionAPIMockRecorder) SearchUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUsersWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).SearchUsersWithContext), varargs...)
 }
 
 // StartCelebrityRecognition mocks base method
