@@ -35,6 +35,56 @@ func (m *MockDrsAPI) EXPECT() *MockDrsAPIMockRecorder {
 	return m.recorder
 }
 
+// AssociateSourceNetworkStack mocks base method
+func (m *MockDrsAPI) AssociateSourceNetworkStack(arg0 *drs.AssociateSourceNetworkStackInput) (*drs.AssociateSourceNetworkStackOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateSourceNetworkStack", arg0)
+	ret0, _ := ret[0].(*drs.AssociateSourceNetworkStackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateSourceNetworkStack indicates an expected call of AssociateSourceNetworkStack
+func (mr *MockDrsAPIMockRecorder) AssociateSourceNetworkStack(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSourceNetworkStack", reflect.TypeOf((*MockDrsAPI)(nil).AssociateSourceNetworkStack), arg0)
+}
+
+// AssociateSourceNetworkStackRequest mocks base method
+func (m *MockDrsAPI) AssociateSourceNetworkStackRequest(arg0 *drs.AssociateSourceNetworkStackInput) (*request.Request, *drs.AssociateSourceNetworkStackOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateSourceNetworkStackRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.AssociateSourceNetworkStackOutput)
+	return ret0, ret1
+}
+
+// AssociateSourceNetworkStackRequest indicates an expected call of AssociateSourceNetworkStackRequest
+func (mr *MockDrsAPIMockRecorder) AssociateSourceNetworkStackRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSourceNetworkStackRequest", reflect.TypeOf((*MockDrsAPI)(nil).AssociateSourceNetworkStackRequest), arg0)
+}
+
+// AssociateSourceNetworkStackWithContext mocks base method
+func (m *MockDrsAPI) AssociateSourceNetworkStackWithContext(arg0 context.Context, arg1 *drs.AssociateSourceNetworkStackInput, arg2 ...request.Option) (*drs.AssociateSourceNetworkStackOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateSourceNetworkStackWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.AssociateSourceNetworkStackOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateSourceNetworkStackWithContext indicates an expected call of AssociateSourceNetworkStackWithContext
+func (mr *MockDrsAPIMockRecorder) AssociateSourceNetworkStackWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSourceNetworkStackWithContext", reflect.TypeOf((*MockDrsAPI)(nil).AssociateSourceNetworkStackWithContext), varargs...)
+}
+
 // CreateExtendedSourceServer mocks base method
 func (m *MockDrsAPI) CreateExtendedSourceServer(arg0 *drs.CreateExtendedSourceServerInput) (*drs.CreateExtendedSourceServerOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +233,56 @@ func (mr *MockDrsAPIMockRecorder) CreateReplicationConfigurationTemplateWithCont
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReplicationConfigurationTemplateWithContext", reflect.TypeOf((*MockDrsAPI)(nil).CreateReplicationConfigurationTemplateWithContext), varargs...)
+}
+
+// CreateSourceNetwork mocks base method
+func (m *MockDrsAPI) CreateSourceNetwork(arg0 *drs.CreateSourceNetworkInput) (*drs.CreateSourceNetworkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSourceNetwork", arg0)
+	ret0, _ := ret[0].(*drs.CreateSourceNetworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSourceNetwork indicates an expected call of CreateSourceNetwork
+func (mr *MockDrsAPIMockRecorder) CreateSourceNetwork(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSourceNetwork", reflect.TypeOf((*MockDrsAPI)(nil).CreateSourceNetwork), arg0)
+}
+
+// CreateSourceNetworkRequest mocks base method
+func (m *MockDrsAPI) CreateSourceNetworkRequest(arg0 *drs.CreateSourceNetworkInput) (*request.Request, *drs.CreateSourceNetworkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSourceNetworkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.CreateSourceNetworkOutput)
+	return ret0, ret1
+}
+
+// CreateSourceNetworkRequest indicates an expected call of CreateSourceNetworkRequest
+func (mr *MockDrsAPIMockRecorder) CreateSourceNetworkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSourceNetworkRequest", reflect.TypeOf((*MockDrsAPI)(nil).CreateSourceNetworkRequest), arg0)
+}
+
+// CreateSourceNetworkWithContext mocks base method
+func (m *MockDrsAPI) CreateSourceNetworkWithContext(arg0 context.Context, arg1 *drs.CreateSourceNetworkInput, arg2 ...request.Option) (*drs.CreateSourceNetworkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSourceNetworkWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.CreateSourceNetworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSourceNetworkWithContext indicates an expected call of CreateSourceNetworkWithContext
+func (mr *MockDrsAPIMockRecorder) CreateSourceNetworkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSourceNetworkWithContext", reflect.TypeOf((*MockDrsAPI)(nil).CreateSourceNetworkWithContext), varargs...)
 }
 
 // DeleteJob mocks base method
@@ -383,6 +483,56 @@ func (mr *MockDrsAPIMockRecorder) DeleteReplicationConfigurationTemplateWithCont
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReplicationConfigurationTemplateWithContext", reflect.TypeOf((*MockDrsAPI)(nil).DeleteReplicationConfigurationTemplateWithContext), varargs...)
+}
+
+// DeleteSourceNetwork mocks base method
+func (m *MockDrsAPI) DeleteSourceNetwork(arg0 *drs.DeleteSourceNetworkInput) (*drs.DeleteSourceNetworkOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSourceNetwork", arg0)
+	ret0, _ := ret[0].(*drs.DeleteSourceNetworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSourceNetwork indicates an expected call of DeleteSourceNetwork
+func (mr *MockDrsAPIMockRecorder) DeleteSourceNetwork(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSourceNetwork", reflect.TypeOf((*MockDrsAPI)(nil).DeleteSourceNetwork), arg0)
+}
+
+// DeleteSourceNetworkRequest mocks base method
+func (m *MockDrsAPI) DeleteSourceNetworkRequest(arg0 *drs.DeleteSourceNetworkInput) (*request.Request, *drs.DeleteSourceNetworkOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteSourceNetworkRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.DeleteSourceNetworkOutput)
+	return ret0, ret1
+}
+
+// DeleteSourceNetworkRequest indicates an expected call of DeleteSourceNetworkRequest
+func (mr *MockDrsAPIMockRecorder) DeleteSourceNetworkRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSourceNetworkRequest", reflect.TypeOf((*MockDrsAPI)(nil).DeleteSourceNetworkRequest), arg0)
+}
+
+// DeleteSourceNetworkWithContext mocks base method
+func (m *MockDrsAPI) DeleteSourceNetworkWithContext(arg0 context.Context, arg1 *drs.DeleteSourceNetworkInput, arg2 ...request.Option) (*drs.DeleteSourceNetworkOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteSourceNetworkWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.DeleteSourceNetworkOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteSourceNetworkWithContext indicates an expected call of DeleteSourceNetworkWithContext
+func (mr *MockDrsAPIMockRecorder) DeleteSourceNetworkWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSourceNetworkWithContext", reflect.TypeOf((*MockDrsAPI)(nil).DeleteSourceNetworkWithContext), varargs...)
 }
 
 // DeleteSourceServer mocks base method
@@ -933,6 +1083,89 @@ func (mr *MockDrsAPIMockRecorder) DescribeReplicationConfigurationTemplatesWithC
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationConfigurationTemplatesWithContext", reflect.TypeOf((*MockDrsAPI)(nil).DescribeReplicationConfigurationTemplatesWithContext), varargs...)
 }
 
+// DescribeSourceNetworks mocks base method
+func (m *MockDrsAPI) DescribeSourceNetworks(arg0 *drs.DescribeSourceNetworksInput) (*drs.DescribeSourceNetworksOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSourceNetworks", arg0)
+	ret0, _ := ret[0].(*drs.DescribeSourceNetworksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSourceNetworks indicates an expected call of DescribeSourceNetworks
+func (mr *MockDrsAPIMockRecorder) DescribeSourceNetworks(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSourceNetworks", reflect.TypeOf((*MockDrsAPI)(nil).DescribeSourceNetworks), arg0)
+}
+
+// DescribeSourceNetworksPages mocks base method
+func (m *MockDrsAPI) DescribeSourceNetworksPages(arg0 *drs.DescribeSourceNetworksInput, arg1 func(*drs.DescribeSourceNetworksOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSourceNetworksPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSourceNetworksPages indicates an expected call of DescribeSourceNetworksPages
+func (mr *MockDrsAPIMockRecorder) DescribeSourceNetworksPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSourceNetworksPages", reflect.TypeOf((*MockDrsAPI)(nil).DescribeSourceNetworksPages), arg0, arg1)
+}
+
+// DescribeSourceNetworksPagesWithContext mocks base method
+func (m *MockDrsAPI) DescribeSourceNetworksPagesWithContext(arg0 context.Context, arg1 *drs.DescribeSourceNetworksInput, arg2 func(*drs.DescribeSourceNetworksOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSourceNetworksPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeSourceNetworksPagesWithContext indicates an expected call of DescribeSourceNetworksPagesWithContext
+func (mr *MockDrsAPIMockRecorder) DescribeSourceNetworksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSourceNetworksPagesWithContext", reflect.TypeOf((*MockDrsAPI)(nil).DescribeSourceNetworksPagesWithContext), varargs...)
+}
+
+// DescribeSourceNetworksRequest mocks base method
+func (m *MockDrsAPI) DescribeSourceNetworksRequest(arg0 *drs.DescribeSourceNetworksInput) (*request.Request, *drs.DescribeSourceNetworksOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeSourceNetworksRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.DescribeSourceNetworksOutput)
+	return ret0, ret1
+}
+
+// DescribeSourceNetworksRequest indicates an expected call of DescribeSourceNetworksRequest
+func (mr *MockDrsAPIMockRecorder) DescribeSourceNetworksRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSourceNetworksRequest", reflect.TypeOf((*MockDrsAPI)(nil).DescribeSourceNetworksRequest), arg0)
+}
+
+// DescribeSourceNetworksWithContext mocks base method
+func (m *MockDrsAPI) DescribeSourceNetworksWithContext(arg0 context.Context, arg1 *drs.DescribeSourceNetworksInput, arg2 ...request.Option) (*drs.DescribeSourceNetworksOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeSourceNetworksWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.DescribeSourceNetworksOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeSourceNetworksWithContext indicates an expected call of DescribeSourceNetworksWithContext
+func (mr *MockDrsAPIMockRecorder) DescribeSourceNetworksWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSourceNetworksWithContext", reflect.TypeOf((*MockDrsAPI)(nil).DescribeSourceNetworksWithContext), varargs...)
+}
+
 // DescribeSourceServers mocks base method
 func (m *MockDrsAPI) DescribeSourceServers(arg0 *drs.DescribeSourceServersInput) (*drs.DescribeSourceServersOutput, error) {
 	m.ctrl.T.Helper()
@@ -1114,6 +1347,56 @@ func (mr *MockDrsAPIMockRecorder) DisconnectSourceServerWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisconnectSourceServerWithContext", reflect.TypeOf((*MockDrsAPI)(nil).DisconnectSourceServerWithContext), varargs...)
+}
+
+// ExportSourceNetworkCfnTemplate mocks base method
+func (m *MockDrsAPI) ExportSourceNetworkCfnTemplate(arg0 *drs.ExportSourceNetworkCfnTemplateInput) (*drs.ExportSourceNetworkCfnTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportSourceNetworkCfnTemplate", arg0)
+	ret0, _ := ret[0].(*drs.ExportSourceNetworkCfnTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportSourceNetworkCfnTemplate indicates an expected call of ExportSourceNetworkCfnTemplate
+func (mr *MockDrsAPIMockRecorder) ExportSourceNetworkCfnTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportSourceNetworkCfnTemplate", reflect.TypeOf((*MockDrsAPI)(nil).ExportSourceNetworkCfnTemplate), arg0)
+}
+
+// ExportSourceNetworkCfnTemplateRequest mocks base method
+func (m *MockDrsAPI) ExportSourceNetworkCfnTemplateRequest(arg0 *drs.ExportSourceNetworkCfnTemplateInput) (*request.Request, *drs.ExportSourceNetworkCfnTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportSourceNetworkCfnTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.ExportSourceNetworkCfnTemplateOutput)
+	return ret0, ret1
+}
+
+// ExportSourceNetworkCfnTemplateRequest indicates an expected call of ExportSourceNetworkCfnTemplateRequest
+func (mr *MockDrsAPIMockRecorder) ExportSourceNetworkCfnTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportSourceNetworkCfnTemplateRequest", reflect.TypeOf((*MockDrsAPI)(nil).ExportSourceNetworkCfnTemplateRequest), arg0)
+}
+
+// ExportSourceNetworkCfnTemplateWithContext mocks base method
+func (m *MockDrsAPI) ExportSourceNetworkCfnTemplateWithContext(arg0 context.Context, arg1 *drs.ExportSourceNetworkCfnTemplateInput, arg2 ...request.Option) (*drs.ExportSourceNetworkCfnTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExportSourceNetworkCfnTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.ExportSourceNetworkCfnTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportSourceNetworkCfnTemplateWithContext indicates an expected call of ExportSourceNetworkCfnTemplateWithContext
+func (mr *MockDrsAPIMockRecorder) ExportSourceNetworkCfnTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportSourceNetworkCfnTemplateWithContext", reflect.TypeOf((*MockDrsAPI)(nil).ExportSourceNetworkCfnTemplateWithContext), varargs...)
 }
 
 // GetFailbackReplicationConfiguration mocks base method
@@ -1782,6 +2065,106 @@ func (mr *MockDrsAPIMockRecorder) StartReplicationWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartReplicationWithContext", reflect.TypeOf((*MockDrsAPI)(nil).StartReplicationWithContext), varargs...)
 }
 
+// StartSourceNetworkRecovery mocks base method
+func (m *MockDrsAPI) StartSourceNetworkRecovery(arg0 *drs.StartSourceNetworkRecoveryInput) (*drs.StartSourceNetworkRecoveryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSourceNetworkRecovery", arg0)
+	ret0, _ := ret[0].(*drs.StartSourceNetworkRecoveryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSourceNetworkRecovery indicates an expected call of StartSourceNetworkRecovery
+func (mr *MockDrsAPIMockRecorder) StartSourceNetworkRecovery(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSourceNetworkRecovery", reflect.TypeOf((*MockDrsAPI)(nil).StartSourceNetworkRecovery), arg0)
+}
+
+// StartSourceNetworkRecoveryRequest mocks base method
+func (m *MockDrsAPI) StartSourceNetworkRecoveryRequest(arg0 *drs.StartSourceNetworkRecoveryInput) (*request.Request, *drs.StartSourceNetworkRecoveryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSourceNetworkRecoveryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.StartSourceNetworkRecoveryOutput)
+	return ret0, ret1
+}
+
+// StartSourceNetworkRecoveryRequest indicates an expected call of StartSourceNetworkRecoveryRequest
+func (mr *MockDrsAPIMockRecorder) StartSourceNetworkRecoveryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSourceNetworkRecoveryRequest", reflect.TypeOf((*MockDrsAPI)(nil).StartSourceNetworkRecoveryRequest), arg0)
+}
+
+// StartSourceNetworkRecoveryWithContext mocks base method
+func (m *MockDrsAPI) StartSourceNetworkRecoveryWithContext(arg0 context.Context, arg1 *drs.StartSourceNetworkRecoveryInput, arg2 ...request.Option) (*drs.StartSourceNetworkRecoveryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartSourceNetworkRecoveryWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.StartSourceNetworkRecoveryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSourceNetworkRecoveryWithContext indicates an expected call of StartSourceNetworkRecoveryWithContext
+func (mr *MockDrsAPIMockRecorder) StartSourceNetworkRecoveryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSourceNetworkRecoveryWithContext", reflect.TypeOf((*MockDrsAPI)(nil).StartSourceNetworkRecoveryWithContext), varargs...)
+}
+
+// StartSourceNetworkReplication mocks base method
+func (m *MockDrsAPI) StartSourceNetworkReplication(arg0 *drs.StartSourceNetworkReplicationInput) (*drs.StartSourceNetworkReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSourceNetworkReplication", arg0)
+	ret0, _ := ret[0].(*drs.StartSourceNetworkReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSourceNetworkReplication indicates an expected call of StartSourceNetworkReplication
+func (mr *MockDrsAPIMockRecorder) StartSourceNetworkReplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSourceNetworkReplication", reflect.TypeOf((*MockDrsAPI)(nil).StartSourceNetworkReplication), arg0)
+}
+
+// StartSourceNetworkReplicationRequest mocks base method
+func (m *MockDrsAPI) StartSourceNetworkReplicationRequest(arg0 *drs.StartSourceNetworkReplicationInput) (*request.Request, *drs.StartSourceNetworkReplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSourceNetworkReplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.StartSourceNetworkReplicationOutput)
+	return ret0, ret1
+}
+
+// StartSourceNetworkReplicationRequest indicates an expected call of StartSourceNetworkReplicationRequest
+func (mr *MockDrsAPIMockRecorder) StartSourceNetworkReplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSourceNetworkReplicationRequest", reflect.TypeOf((*MockDrsAPI)(nil).StartSourceNetworkReplicationRequest), arg0)
+}
+
+// StartSourceNetworkReplicationWithContext mocks base method
+func (m *MockDrsAPI) StartSourceNetworkReplicationWithContext(arg0 context.Context, arg1 *drs.StartSourceNetworkReplicationInput, arg2 ...request.Option) (*drs.StartSourceNetworkReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartSourceNetworkReplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.StartSourceNetworkReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSourceNetworkReplicationWithContext indicates an expected call of StartSourceNetworkReplicationWithContext
+func (mr *MockDrsAPIMockRecorder) StartSourceNetworkReplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSourceNetworkReplicationWithContext", reflect.TypeOf((*MockDrsAPI)(nil).StartSourceNetworkReplicationWithContext), varargs...)
+}
+
 // StopFailback mocks base method
 func (m *MockDrsAPI) StopFailback(arg0 *drs.StopFailbackInput) (*drs.StopFailbackOutput, error) {
 	m.ctrl.T.Helper()
@@ -1880,6 +2263,56 @@ func (mr *MockDrsAPIMockRecorder) StopReplicationWithContext(arg0, arg1 interfac
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopReplicationWithContext", reflect.TypeOf((*MockDrsAPI)(nil).StopReplicationWithContext), varargs...)
+}
+
+// StopSourceNetworkReplication mocks base method
+func (m *MockDrsAPI) StopSourceNetworkReplication(arg0 *drs.StopSourceNetworkReplicationInput) (*drs.StopSourceNetworkReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopSourceNetworkReplication", arg0)
+	ret0, _ := ret[0].(*drs.StopSourceNetworkReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopSourceNetworkReplication indicates an expected call of StopSourceNetworkReplication
+func (mr *MockDrsAPIMockRecorder) StopSourceNetworkReplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSourceNetworkReplication", reflect.TypeOf((*MockDrsAPI)(nil).StopSourceNetworkReplication), arg0)
+}
+
+// StopSourceNetworkReplicationRequest mocks base method
+func (m *MockDrsAPI) StopSourceNetworkReplicationRequest(arg0 *drs.StopSourceNetworkReplicationInput) (*request.Request, *drs.StopSourceNetworkReplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopSourceNetworkReplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.StopSourceNetworkReplicationOutput)
+	return ret0, ret1
+}
+
+// StopSourceNetworkReplicationRequest indicates an expected call of StopSourceNetworkReplicationRequest
+func (mr *MockDrsAPIMockRecorder) StopSourceNetworkReplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSourceNetworkReplicationRequest", reflect.TypeOf((*MockDrsAPI)(nil).StopSourceNetworkReplicationRequest), arg0)
+}
+
+// StopSourceNetworkReplicationWithContext mocks base method
+func (m *MockDrsAPI) StopSourceNetworkReplicationWithContext(arg0 context.Context, arg1 *drs.StopSourceNetworkReplicationInput, arg2 ...request.Option) (*drs.StopSourceNetworkReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopSourceNetworkReplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.StopSourceNetworkReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopSourceNetworkReplicationWithContext indicates an expected call of StopSourceNetworkReplicationWithContext
+func (mr *MockDrsAPIMockRecorder) StopSourceNetworkReplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSourceNetworkReplicationWithContext", reflect.TypeOf((*MockDrsAPI)(nil).StopSourceNetworkReplicationWithContext), varargs...)
 }
 
 // TagResource mocks base method

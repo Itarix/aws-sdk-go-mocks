@@ -85,6 +85,56 @@ func (mr *MockWellArchitectedAPIMockRecorder) AssociateLensesWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateLensesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).AssociateLensesWithContext), varargs...)
 }
 
+// AssociateProfiles mocks base method
+func (m *MockWellArchitectedAPI) AssociateProfiles(arg0 *wellarchitected.AssociateProfilesInput) (*wellarchitected.AssociateProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateProfiles", arg0)
+	ret0, _ := ret[0].(*wellarchitected.AssociateProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateProfiles indicates an expected call of AssociateProfiles
+func (mr *MockWellArchitectedAPIMockRecorder) AssociateProfiles(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateProfiles", reflect.TypeOf((*MockWellArchitectedAPI)(nil).AssociateProfiles), arg0)
+}
+
+// AssociateProfilesRequest mocks base method
+func (m *MockWellArchitectedAPI) AssociateProfilesRequest(arg0 *wellarchitected.AssociateProfilesInput) (*request.Request, *wellarchitected.AssociateProfilesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateProfilesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.AssociateProfilesOutput)
+	return ret0, ret1
+}
+
+// AssociateProfilesRequest indicates an expected call of AssociateProfilesRequest
+func (mr *MockWellArchitectedAPIMockRecorder) AssociateProfilesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateProfilesRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).AssociateProfilesRequest), arg0)
+}
+
+// AssociateProfilesWithContext mocks base method
+func (m *MockWellArchitectedAPI) AssociateProfilesWithContext(arg0 context.Context, arg1 *wellarchitected.AssociateProfilesInput, arg2 ...request.Option) (*wellarchitected.AssociateProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateProfilesWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.AssociateProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateProfilesWithContext indicates an expected call of AssociateProfilesWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) AssociateProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateProfilesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).AssociateProfilesWithContext), varargs...)
+}
+
 // CreateLensShare mocks base method
 func (m *MockWellArchitectedAPI) CreateLensShare(arg0 *wellarchitected.CreateLensShareInput) (*wellarchitected.CreateLensShareOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +283,106 @@ func (mr *MockWellArchitectedAPIMockRecorder) CreateMilestoneWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMilestoneWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).CreateMilestoneWithContext), varargs...)
+}
+
+// CreateProfile mocks base method
+func (m *MockWellArchitectedAPI) CreateProfile(arg0 *wellarchitected.CreateProfileInput) (*wellarchitected.CreateProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProfile", arg0)
+	ret0, _ := ret[0].(*wellarchitected.CreateProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProfile indicates an expected call of CreateProfile
+func (mr *MockWellArchitectedAPIMockRecorder) CreateProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProfile", reflect.TypeOf((*MockWellArchitectedAPI)(nil).CreateProfile), arg0)
+}
+
+// CreateProfileRequest mocks base method
+func (m *MockWellArchitectedAPI) CreateProfileRequest(arg0 *wellarchitected.CreateProfileInput) (*request.Request, *wellarchitected.CreateProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.CreateProfileOutput)
+	return ret0, ret1
+}
+
+// CreateProfileRequest indicates an expected call of CreateProfileRequest
+func (mr *MockWellArchitectedAPIMockRecorder) CreateProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProfileRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).CreateProfileRequest), arg0)
+}
+
+// CreateProfileShare mocks base method
+func (m *MockWellArchitectedAPI) CreateProfileShare(arg0 *wellarchitected.CreateProfileShareInput) (*wellarchitected.CreateProfileShareOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProfileShare", arg0)
+	ret0, _ := ret[0].(*wellarchitected.CreateProfileShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProfileShare indicates an expected call of CreateProfileShare
+func (mr *MockWellArchitectedAPIMockRecorder) CreateProfileShare(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProfileShare", reflect.TypeOf((*MockWellArchitectedAPI)(nil).CreateProfileShare), arg0)
+}
+
+// CreateProfileShareRequest mocks base method
+func (m *MockWellArchitectedAPI) CreateProfileShareRequest(arg0 *wellarchitected.CreateProfileShareInput) (*request.Request, *wellarchitected.CreateProfileShareOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProfileShareRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.CreateProfileShareOutput)
+	return ret0, ret1
+}
+
+// CreateProfileShareRequest indicates an expected call of CreateProfileShareRequest
+func (mr *MockWellArchitectedAPIMockRecorder) CreateProfileShareRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProfileShareRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).CreateProfileShareRequest), arg0)
+}
+
+// CreateProfileShareWithContext mocks base method
+func (m *MockWellArchitectedAPI) CreateProfileShareWithContext(arg0 context.Context, arg1 *wellarchitected.CreateProfileShareInput, arg2 ...request.Option) (*wellarchitected.CreateProfileShareOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateProfileShareWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.CreateProfileShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProfileShareWithContext indicates an expected call of CreateProfileShareWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) CreateProfileShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProfileShareWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).CreateProfileShareWithContext), varargs...)
+}
+
+// CreateProfileWithContext mocks base method
+func (m *MockWellArchitectedAPI) CreateProfileWithContext(arg0 context.Context, arg1 *wellarchitected.CreateProfileInput, arg2 ...request.Option) (*wellarchitected.CreateProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.CreateProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProfileWithContext indicates an expected call of CreateProfileWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) CreateProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProfileWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).CreateProfileWithContext), varargs...)
 }
 
 // CreateWorkload mocks base method
@@ -435,6 +585,106 @@ func (mr *MockWellArchitectedAPIMockRecorder) DeleteLensWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLensWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DeleteLensWithContext), varargs...)
 }
 
+// DeleteProfile mocks base method
+func (m *MockWellArchitectedAPI) DeleteProfile(arg0 *wellarchitected.DeleteProfileInput) (*wellarchitected.DeleteProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProfile", arg0)
+	ret0, _ := ret[0].(*wellarchitected.DeleteProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProfile indicates an expected call of DeleteProfile
+func (mr *MockWellArchitectedAPIMockRecorder) DeleteProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProfile", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DeleteProfile), arg0)
+}
+
+// DeleteProfileRequest mocks base method
+func (m *MockWellArchitectedAPI) DeleteProfileRequest(arg0 *wellarchitected.DeleteProfileInput) (*request.Request, *wellarchitected.DeleteProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.DeleteProfileOutput)
+	return ret0, ret1
+}
+
+// DeleteProfileRequest indicates an expected call of DeleteProfileRequest
+func (mr *MockWellArchitectedAPIMockRecorder) DeleteProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProfileRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DeleteProfileRequest), arg0)
+}
+
+// DeleteProfileShare mocks base method
+func (m *MockWellArchitectedAPI) DeleteProfileShare(arg0 *wellarchitected.DeleteProfileShareInput) (*wellarchitected.DeleteProfileShareOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProfileShare", arg0)
+	ret0, _ := ret[0].(*wellarchitected.DeleteProfileShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProfileShare indicates an expected call of DeleteProfileShare
+func (mr *MockWellArchitectedAPIMockRecorder) DeleteProfileShare(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProfileShare", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DeleteProfileShare), arg0)
+}
+
+// DeleteProfileShareRequest mocks base method
+func (m *MockWellArchitectedAPI) DeleteProfileShareRequest(arg0 *wellarchitected.DeleteProfileShareInput) (*request.Request, *wellarchitected.DeleteProfileShareOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProfileShareRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.DeleteProfileShareOutput)
+	return ret0, ret1
+}
+
+// DeleteProfileShareRequest indicates an expected call of DeleteProfileShareRequest
+func (mr *MockWellArchitectedAPIMockRecorder) DeleteProfileShareRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProfileShareRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DeleteProfileShareRequest), arg0)
+}
+
+// DeleteProfileShareWithContext mocks base method
+func (m *MockWellArchitectedAPI) DeleteProfileShareWithContext(arg0 context.Context, arg1 *wellarchitected.DeleteProfileShareInput, arg2 ...request.Option) (*wellarchitected.DeleteProfileShareOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteProfileShareWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.DeleteProfileShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProfileShareWithContext indicates an expected call of DeleteProfileShareWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) DeleteProfileShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProfileShareWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DeleteProfileShareWithContext), varargs...)
+}
+
+// DeleteProfileWithContext mocks base method
+func (m *MockWellArchitectedAPI) DeleteProfileWithContext(arg0 context.Context, arg1 *wellarchitected.DeleteProfileInput, arg2 ...request.Option) (*wellarchitected.DeleteProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.DeleteProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProfileWithContext indicates an expected call of DeleteProfileWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) DeleteProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProfileWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DeleteProfileWithContext), varargs...)
+}
+
 // DeleteWorkload mocks base method
 func (m *MockWellArchitectedAPI) DeleteWorkload(arg0 *wellarchitected.DeleteWorkloadInput) (*wellarchitected.DeleteWorkloadOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +833,56 @@ func (mr *MockWellArchitectedAPIMockRecorder) DisassociateLensesWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateLensesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DisassociateLensesWithContext), varargs...)
+}
+
+// DisassociateProfiles mocks base method
+func (m *MockWellArchitectedAPI) DisassociateProfiles(arg0 *wellarchitected.DisassociateProfilesInput) (*wellarchitected.DisassociateProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateProfiles", arg0)
+	ret0, _ := ret[0].(*wellarchitected.DisassociateProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateProfiles indicates an expected call of DisassociateProfiles
+func (mr *MockWellArchitectedAPIMockRecorder) DisassociateProfiles(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateProfiles", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DisassociateProfiles), arg0)
+}
+
+// DisassociateProfilesRequest mocks base method
+func (m *MockWellArchitectedAPI) DisassociateProfilesRequest(arg0 *wellarchitected.DisassociateProfilesInput) (*request.Request, *wellarchitected.DisassociateProfilesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateProfilesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.DisassociateProfilesOutput)
+	return ret0, ret1
+}
+
+// DisassociateProfilesRequest indicates an expected call of DisassociateProfilesRequest
+func (mr *MockWellArchitectedAPIMockRecorder) DisassociateProfilesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateProfilesRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DisassociateProfilesRequest), arg0)
+}
+
+// DisassociateProfilesWithContext mocks base method
+func (m *MockWellArchitectedAPI) DisassociateProfilesWithContext(arg0 context.Context, arg1 *wellarchitected.DisassociateProfilesInput, arg2 ...request.Option) (*wellarchitected.DisassociateProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateProfilesWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.DisassociateProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateProfilesWithContext indicates an expected call of DisassociateProfilesWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) DisassociateProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateProfilesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).DisassociateProfilesWithContext), varargs...)
 }
 
 // ExportLens mocks base method
@@ -1016,6 +1316,106 @@ func (mr *MockWellArchitectedAPIMockRecorder) GetMilestoneWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMilestoneWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetMilestoneWithContext), varargs...)
+}
+
+// GetProfile mocks base method
+func (m *MockWellArchitectedAPI) GetProfile(arg0 *wellarchitected.GetProfileInput) (*wellarchitected.GetProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetProfile", arg0)
+	ret0, _ := ret[0].(*wellarchitected.GetProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetProfile indicates an expected call of GetProfile
+func (mr *MockWellArchitectedAPIMockRecorder) GetProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProfile", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetProfile), arg0)
+}
+
+// GetProfileRequest mocks base method
+func (m *MockWellArchitectedAPI) GetProfileRequest(arg0 *wellarchitected.GetProfileInput) (*request.Request, *wellarchitected.GetProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.GetProfileOutput)
+	return ret0, ret1
+}
+
+// GetProfileRequest indicates an expected call of GetProfileRequest
+func (mr *MockWellArchitectedAPIMockRecorder) GetProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProfileRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetProfileRequest), arg0)
+}
+
+// GetProfileTemplate mocks base method
+func (m *MockWellArchitectedAPI) GetProfileTemplate(arg0 *wellarchitected.GetProfileTemplateInput) (*wellarchitected.GetProfileTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetProfileTemplate", arg0)
+	ret0, _ := ret[0].(*wellarchitected.GetProfileTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetProfileTemplate indicates an expected call of GetProfileTemplate
+func (mr *MockWellArchitectedAPIMockRecorder) GetProfileTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProfileTemplate", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetProfileTemplate), arg0)
+}
+
+// GetProfileTemplateRequest mocks base method
+func (m *MockWellArchitectedAPI) GetProfileTemplateRequest(arg0 *wellarchitected.GetProfileTemplateInput) (*request.Request, *wellarchitected.GetProfileTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetProfileTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.GetProfileTemplateOutput)
+	return ret0, ret1
+}
+
+// GetProfileTemplateRequest indicates an expected call of GetProfileTemplateRequest
+func (mr *MockWellArchitectedAPIMockRecorder) GetProfileTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProfileTemplateRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetProfileTemplateRequest), arg0)
+}
+
+// GetProfileTemplateWithContext mocks base method
+func (m *MockWellArchitectedAPI) GetProfileTemplateWithContext(arg0 context.Context, arg1 *wellarchitected.GetProfileTemplateInput, arg2 ...request.Option) (*wellarchitected.GetProfileTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetProfileTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.GetProfileTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetProfileTemplateWithContext indicates an expected call of GetProfileTemplateWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) GetProfileTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProfileTemplateWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetProfileTemplateWithContext), varargs...)
+}
+
+// GetProfileWithContext mocks base method
+func (m *MockWellArchitectedAPI) GetProfileWithContext(arg0 context.Context, arg1 *wellarchitected.GetProfileInput, arg2 ...request.Option) (*wellarchitected.GetProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.GetProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetProfileWithContext indicates an expected call of GetProfileWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) GetProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProfileWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).GetProfileWithContext), varargs...)
 }
 
 // GetWorkload mocks base method
@@ -1865,6 +2265,255 @@ func (mr *MockWellArchitectedAPIMockRecorder) ListNotificationsWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotificationsWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListNotificationsWithContext), varargs...)
 }
 
+// ListProfileNotifications mocks base method
+func (m *MockWellArchitectedAPI) ListProfileNotifications(arg0 *wellarchitected.ListProfileNotificationsInput) (*wellarchitected.ListProfileNotificationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProfileNotifications", arg0)
+	ret0, _ := ret[0].(*wellarchitected.ListProfileNotificationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProfileNotifications indicates an expected call of ListProfileNotifications
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfileNotifications(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfileNotifications", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfileNotifications), arg0)
+}
+
+// ListProfileNotificationsPages mocks base method
+func (m *MockWellArchitectedAPI) ListProfileNotificationsPages(arg0 *wellarchitected.ListProfileNotificationsInput, arg1 func(*wellarchitected.ListProfileNotificationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProfileNotificationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProfileNotificationsPages indicates an expected call of ListProfileNotificationsPages
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfileNotificationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfileNotificationsPages", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfileNotificationsPages), arg0, arg1)
+}
+
+// ListProfileNotificationsPagesWithContext mocks base method
+func (m *MockWellArchitectedAPI) ListProfileNotificationsPagesWithContext(arg0 context.Context, arg1 *wellarchitected.ListProfileNotificationsInput, arg2 func(*wellarchitected.ListProfileNotificationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProfileNotificationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProfileNotificationsPagesWithContext indicates an expected call of ListProfileNotificationsPagesWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfileNotificationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfileNotificationsPagesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfileNotificationsPagesWithContext), varargs...)
+}
+
+// ListProfileNotificationsRequest mocks base method
+func (m *MockWellArchitectedAPI) ListProfileNotificationsRequest(arg0 *wellarchitected.ListProfileNotificationsInput) (*request.Request, *wellarchitected.ListProfileNotificationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProfileNotificationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.ListProfileNotificationsOutput)
+	return ret0, ret1
+}
+
+// ListProfileNotificationsRequest indicates an expected call of ListProfileNotificationsRequest
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfileNotificationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfileNotificationsRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfileNotificationsRequest), arg0)
+}
+
+// ListProfileNotificationsWithContext mocks base method
+func (m *MockWellArchitectedAPI) ListProfileNotificationsWithContext(arg0 context.Context, arg1 *wellarchitected.ListProfileNotificationsInput, arg2 ...request.Option) (*wellarchitected.ListProfileNotificationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProfileNotificationsWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.ListProfileNotificationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProfileNotificationsWithContext indicates an expected call of ListProfileNotificationsWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfileNotificationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfileNotificationsWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfileNotificationsWithContext), varargs...)
+}
+
+// ListProfileShares mocks base method
+func (m *MockWellArchitectedAPI) ListProfileShares(arg0 *wellarchitected.ListProfileSharesInput) (*wellarchitected.ListProfileSharesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProfileShares", arg0)
+	ret0, _ := ret[0].(*wellarchitected.ListProfileSharesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProfileShares indicates an expected call of ListProfileShares
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfileShares(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfileShares", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfileShares), arg0)
+}
+
+// ListProfileSharesPages mocks base method
+func (m *MockWellArchitectedAPI) ListProfileSharesPages(arg0 *wellarchitected.ListProfileSharesInput, arg1 func(*wellarchitected.ListProfileSharesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProfileSharesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProfileSharesPages indicates an expected call of ListProfileSharesPages
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfileSharesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfileSharesPages", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfileSharesPages), arg0, arg1)
+}
+
+// ListProfileSharesPagesWithContext mocks base method
+func (m *MockWellArchitectedAPI) ListProfileSharesPagesWithContext(arg0 context.Context, arg1 *wellarchitected.ListProfileSharesInput, arg2 func(*wellarchitected.ListProfileSharesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProfileSharesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProfileSharesPagesWithContext indicates an expected call of ListProfileSharesPagesWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfileSharesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfileSharesPagesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfileSharesPagesWithContext), varargs...)
+}
+
+// ListProfileSharesRequest mocks base method
+func (m *MockWellArchitectedAPI) ListProfileSharesRequest(arg0 *wellarchitected.ListProfileSharesInput) (*request.Request, *wellarchitected.ListProfileSharesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProfileSharesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.ListProfileSharesOutput)
+	return ret0, ret1
+}
+
+// ListProfileSharesRequest indicates an expected call of ListProfileSharesRequest
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfileSharesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfileSharesRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfileSharesRequest), arg0)
+}
+
+// ListProfileSharesWithContext mocks base method
+func (m *MockWellArchitectedAPI) ListProfileSharesWithContext(arg0 context.Context, arg1 *wellarchitected.ListProfileSharesInput, arg2 ...request.Option) (*wellarchitected.ListProfileSharesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProfileSharesWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.ListProfileSharesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProfileSharesWithContext indicates an expected call of ListProfileSharesWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfileSharesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfileSharesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfileSharesWithContext), varargs...)
+}
+
+// ListProfiles mocks base method
+func (m *MockWellArchitectedAPI) ListProfiles(arg0 *wellarchitected.ListProfilesInput) (*wellarchitected.ListProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProfiles", arg0)
+	ret0, _ := ret[0].(*wellarchitected.ListProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProfiles indicates an expected call of ListProfiles
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfiles(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfiles", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfiles), arg0)
+}
+
+// ListProfilesPages mocks base method
+func (m *MockWellArchitectedAPI) ListProfilesPages(arg0 *wellarchitected.ListProfilesInput, arg1 func(*wellarchitected.ListProfilesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProfilesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProfilesPages indicates an expected call of ListProfilesPages
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfilesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfilesPages", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfilesPages), arg0, arg1)
+}
+
+// ListProfilesPagesWithContext mocks base method
+func (m *MockWellArchitectedAPI) ListProfilesPagesWithContext(arg0 context.Context, arg1 *wellarchitected.ListProfilesInput, arg2 func(*wellarchitected.ListProfilesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProfilesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProfilesPagesWithContext indicates an expected call of ListProfilesPagesWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfilesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfilesPagesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfilesPagesWithContext), varargs...)
+}
+
+// ListProfilesRequest mocks base method
+func (m *MockWellArchitectedAPI) ListProfilesRequest(arg0 *wellarchitected.ListProfilesInput) (*request.Request, *wellarchitected.ListProfilesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProfilesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.ListProfilesOutput)
+	return ret0, ret1
+}
+
+// ListProfilesRequest indicates an expected call of ListProfilesRequest
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfilesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfilesRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfilesRequest), arg0)
+}
+
+// ListProfilesWithContext mocks base method
+func (m *MockWellArchitectedAPI) ListProfilesWithContext(arg0 context.Context, arg1 *wellarchitected.ListProfilesInput, arg2 ...request.Option) (*wellarchitected.ListProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProfilesWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.ListProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProfilesWithContext indicates an expected call of ListProfilesWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) ListProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfilesWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).ListProfilesWithContext), varargs...)
+}
+
 // ListShareInvitations mocks base method
 func (m *MockWellArchitectedAPI) ListShareInvitations(arg0 *wellarchitected.ListShareInvitationsInput) (*wellarchitected.ListShareInvitationsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2414,6 +3063,56 @@ func (mr *MockWellArchitectedAPIMockRecorder) UpdateLensReviewWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLensReviewWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).UpdateLensReviewWithContext), varargs...)
 }
 
+// UpdateProfile mocks base method
+func (m *MockWellArchitectedAPI) UpdateProfile(arg0 *wellarchitected.UpdateProfileInput) (*wellarchitected.UpdateProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProfile", arg0)
+	ret0, _ := ret[0].(*wellarchitected.UpdateProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProfile indicates an expected call of UpdateProfile
+func (mr *MockWellArchitectedAPIMockRecorder) UpdateProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProfile", reflect.TypeOf((*MockWellArchitectedAPI)(nil).UpdateProfile), arg0)
+}
+
+// UpdateProfileRequest mocks base method
+func (m *MockWellArchitectedAPI) UpdateProfileRequest(arg0 *wellarchitected.UpdateProfileInput) (*request.Request, *wellarchitected.UpdateProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.UpdateProfileOutput)
+	return ret0, ret1
+}
+
+// UpdateProfileRequest indicates an expected call of UpdateProfileRequest
+func (mr *MockWellArchitectedAPIMockRecorder) UpdateProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProfileRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).UpdateProfileRequest), arg0)
+}
+
+// UpdateProfileWithContext mocks base method
+func (m *MockWellArchitectedAPI) UpdateProfileWithContext(arg0 context.Context, arg1 *wellarchitected.UpdateProfileInput, arg2 ...request.Option) (*wellarchitected.UpdateProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.UpdateProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProfileWithContext indicates an expected call of UpdateProfileWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) UpdateProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProfileWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).UpdateProfileWithContext), varargs...)
+}
+
 // UpdateShareInvitation mocks base method
 func (m *MockWellArchitectedAPI) UpdateShareInvitation(arg0 *wellarchitected.UpdateShareInvitationInput) (*wellarchitected.UpdateShareInvitationOutput, error) {
 	m.ctrl.T.Helper()
@@ -2612,4 +3311,54 @@ func (mr *MockWellArchitectedAPIMockRecorder) UpgradeLensReviewWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpgradeLensReviewWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).UpgradeLensReviewWithContext), varargs...)
+}
+
+// UpgradeProfileVersion mocks base method
+func (m *MockWellArchitectedAPI) UpgradeProfileVersion(arg0 *wellarchitected.UpgradeProfileVersionInput) (*wellarchitected.UpgradeProfileVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpgradeProfileVersion", arg0)
+	ret0, _ := ret[0].(*wellarchitected.UpgradeProfileVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpgradeProfileVersion indicates an expected call of UpgradeProfileVersion
+func (mr *MockWellArchitectedAPIMockRecorder) UpgradeProfileVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpgradeProfileVersion", reflect.TypeOf((*MockWellArchitectedAPI)(nil).UpgradeProfileVersion), arg0)
+}
+
+// UpgradeProfileVersionRequest mocks base method
+func (m *MockWellArchitectedAPI) UpgradeProfileVersionRequest(arg0 *wellarchitected.UpgradeProfileVersionInput) (*request.Request, *wellarchitected.UpgradeProfileVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpgradeProfileVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*wellarchitected.UpgradeProfileVersionOutput)
+	return ret0, ret1
+}
+
+// UpgradeProfileVersionRequest indicates an expected call of UpgradeProfileVersionRequest
+func (mr *MockWellArchitectedAPIMockRecorder) UpgradeProfileVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpgradeProfileVersionRequest", reflect.TypeOf((*MockWellArchitectedAPI)(nil).UpgradeProfileVersionRequest), arg0)
+}
+
+// UpgradeProfileVersionWithContext mocks base method
+func (m *MockWellArchitectedAPI) UpgradeProfileVersionWithContext(arg0 context.Context, arg1 *wellarchitected.UpgradeProfileVersionInput, arg2 ...request.Option) (*wellarchitected.UpgradeProfileVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpgradeProfileVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*wellarchitected.UpgradeProfileVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpgradeProfileVersionWithContext indicates an expected call of UpgradeProfileVersionWithContext
+func (mr *MockWellArchitectedAPIMockRecorder) UpgradeProfileVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpgradeProfileVersionWithContext", reflect.TypeOf((*MockWellArchitectedAPI)(nil).UpgradeProfileVersionWithContext), varargs...)
 }
