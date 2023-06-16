@@ -1449,6 +1449,56 @@ func (mr *MockAuditManagerAPIMockRecorder) GetEvidenceByEvidenceFolderWithContex
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEvidenceByEvidenceFolderWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).GetEvidenceByEvidenceFolderWithContext), varargs...)
 }
 
+// GetEvidenceFileUploadUrl mocks base method
+func (m *MockAuditManagerAPI) GetEvidenceFileUploadUrl(arg0 *auditmanager.GetEvidenceFileUploadUrlInput) (*auditmanager.GetEvidenceFileUploadUrlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEvidenceFileUploadUrl", arg0)
+	ret0, _ := ret[0].(*auditmanager.GetEvidenceFileUploadUrlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEvidenceFileUploadUrl indicates an expected call of GetEvidenceFileUploadUrl
+func (mr *MockAuditManagerAPIMockRecorder) GetEvidenceFileUploadUrl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEvidenceFileUploadUrl", reflect.TypeOf((*MockAuditManagerAPI)(nil).GetEvidenceFileUploadUrl), arg0)
+}
+
+// GetEvidenceFileUploadUrlRequest mocks base method
+func (m *MockAuditManagerAPI) GetEvidenceFileUploadUrlRequest(arg0 *auditmanager.GetEvidenceFileUploadUrlInput) (*request.Request, *auditmanager.GetEvidenceFileUploadUrlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEvidenceFileUploadUrlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*auditmanager.GetEvidenceFileUploadUrlOutput)
+	return ret0, ret1
+}
+
+// GetEvidenceFileUploadUrlRequest indicates an expected call of GetEvidenceFileUploadUrlRequest
+func (mr *MockAuditManagerAPIMockRecorder) GetEvidenceFileUploadUrlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEvidenceFileUploadUrlRequest", reflect.TypeOf((*MockAuditManagerAPI)(nil).GetEvidenceFileUploadUrlRequest), arg0)
+}
+
+// GetEvidenceFileUploadUrlWithContext mocks base method
+func (m *MockAuditManagerAPI) GetEvidenceFileUploadUrlWithContext(arg0 context.Context, arg1 *auditmanager.GetEvidenceFileUploadUrlInput, arg2 ...request.Option) (*auditmanager.GetEvidenceFileUploadUrlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetEvidenceFileUploadUrlWithContext", varargs...)
+	ret0, _ := ret[0].(*auditmanager.GetEvidenceFileUploadUrlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEvidenceFileUploadUrlWithContext indicates an expected call of GetEvidenceFileUploadUrlWithContext
+func (mr *MockAuditManagerAPIMockRecorder) GetEvidenceFileUploadUrlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEvidenceFileUploadUrlWithContext", reflect.TypeOf((*MockAuditManagerAPI)(nil).GetEvidenceFileUploadUrlWithContext), varargs...)
+}
+
 // GetEvidenceFolder mocks base method
 func (m *MockAuditManagerAPI) GetEvidenceFolder(arg0 *auditmanager.GetEvidenceFolderInput) (*auditmanager.GetEvidenceFolderOutput, error) {
 	m.ctrl.T.Helper()
