@@ -885,6 +885,56 @@ func (mr *MockRedshiftAPIMockRecorder) CreateClusterWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateClusterWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateClusterWithContext), varargs...)
 }
 
+// CreateCustomDomainAssociation mocks base method
+func (m *MockRedshiftAPI) CreateCustomDomainAssociation(arg0 *redshift.CreateCustomDomainAssociationInput) (*redshift.CreateCustomDomainAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCustomDomainAssociation", arg0)
+	ret0, _ := ret[0].(*redshift.CreateCustomDomainAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCustomDomainAssociation indicates an expected call of CreateCustomDomainAssociation
+func (mr *MockRedshiftAPIMockRecorder) CreateCustomDomainAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomDomainAssociation", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateCustomDomainAssociation), arg0)
+}
+
+// CreateCustomDomainAssociationRequest mocks base method
+func (m *MockRedshiftAPI) CreateCustomDomainAssociationRequest(arg0 *redshift.CreateCustomDomainAssociationInput) (*request.Request, *redshift.CreateCustomDomainAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateCustomDomainAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.CreateCustomDomainAssociationOutput)
+	return ret0, ret1
+}
+
+// CreateCustomDomainAssociationRequest indicates an expected call of CreateCustomDomainAssociationRequest
+func (mr *MockRedshiftAPIMockRecorder) CreateCustomDomainAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomDomainAssociationRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateCustomDomainAssociationRequest), arg0)
+}
+
+// CreateCustomDomainAssociationWithContext mocks base method
+func (m *MockRedshiftAPI) CreateCustomDomainAssociationWithContext(arg0 context.Context, arg1 *redshift.CreateCustomDomainAssociationInput, arg2 ...request.Option) (*redshift.CreateCustomDomainAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateCustomDomainAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.CreateCustomDomainAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateCustomDomainAssociationWithContext indicates an expected call of CreateCustomDomainAssociationWithContext
+func (mr *MockRedshiftAPIMockRecorder) CreateCustomDomainAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCustomDomainAssociationWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).CreateCustomDomainAssociationWithContext), varargs...)
+}
+
 // CreateEndpointAccess mocks base method
 func (m *MockRedshiftAPI) CreateEndpointAccess(arg0 *redshift.CreateEndpointAccessInput) (*redshift.CreateEndpointAccessOutput, error) {
 	m.ctrl.T.Helper()
@@ -1683,6 +1733,56 @@ func (mr *MockRedshiftAPIMockRecorder) DeleteClusterWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteClusterWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteClusterWithContext), varargs...)
+}
+
+// DeleteCustomDomainAssociation mocks base method
+func (m *MockRedshiftAPI) DeleteCustomDomainAssociation(arg0 *redshift.DeleteCustomDomainAssociationInput) (*redshift.DeleteCustomDomainAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCustomDomainAssociation", arg0)
+	ret0, _ := ret[0].(*redshift.DeleteCustomDomainAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCustomDomainAssociation indicates an expected call of DeleteCustomDomainAssociation
+func (mr *MockRedshiftAPIMockRecorder) DeleteCustomDomainAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomDomainAssociation", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteCustomDomainAssociation), arg0)
+}
+
+// DeleteCustomDomainAssociationRequest mocks base method
+func (m *MockRedshiftAPI) DeleteCustomDomainAssociationRequest(arg0 *redshift.DeleteCustomDomainAssociationInput) (*request.Request, *redshift.DeleteCustomDomainAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteCustomDomainAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DeleteCustomDomainAssociationOutput)
+	return ret0, ret1
+}
+
+// DeleteCustomDomainAssociationRequest indicates an expected call of DeleteCustomDomainAssociationRequest
+func (mr *MockRedshiftAPIMockRecorder) DeleteCustomDomainAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomDomainAssociationRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteCustomDomainAssociationRequest), arg0)
+}
+
+// DeleteCustomDomainAssociationWithContext mocks base method
+func (m *MockRedshiftAPI) DeleteCustomDomainAssociationWithContext(arg0 context.Context, arg1 *redshift.DeleteCustomDomainAssociationInput, arg2 ...request.Option) (*redshift.DeleteCustomDomainAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteCustomDomainAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DeleteCustomDomainAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteCustomDomainAssociationWithContext indicates an expected call of DeleteCustomDomainAssociationWithContext
+func (mr *MockRedshiftAPIMockRecorder) DeleteCustomDomainAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCustomDomainAssociationWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteCustomDomainAssociationWithContext), varargs...)
 }
 
 // DeleteEndpointAccess mocks base method
@@ -3030,6 +3130,89 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeClustersWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClustersWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeClustersWithContext), varargs...)
+}
+
+// DescribeCustomDomainAssociations mocks base method
+func (m *MockRedshiftAPI) DescribeCustomDomainAssociations(arg0 *redshift.DescribeCustomDomainAssociationsInput) (*redshift.DescribeCustomDomainAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCustomDomainAssociations", arg0)
+	ret0, _ := ret[0].(*redshift.DescribeCustomDomainAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCustomDomainAssociations indicates an expected call of DescribeCustomDomainAssociations
+func (mr *MockRedshiftAPIMockRecorder) DescribeCustomDomainAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomDomainAssociations", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeCustomDomainAssociations), arg0)
+}
+
+// DescribeCustomDomainAssociationsPages mocks base method
+func (m *MockRedshiftAPI) DescribeCustomDomainAssociationsPages(arg0 *redshift.DescribeCustomDomainAssociationsInput, arg1 func(*redshift.DescribeCustomDomainAssociationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCustomDomainAssociationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeCustomDomainAssociationsPages indicates an expected call of DescribeCustomDomainAssociationsPages
+func (mr *MockRedshiftAPIMockRecorder) DescribeCustomDomainAssociationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomDomainAssociationsPages", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeCustomDomainAssociationsPages), arg0, arg1)
+}
+
+// DescribeCustomDomainAssociationsPagesWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeCustomDomainAssociationsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeCustomDomainAssociationsInput, arg2 func(*redshift.DescribeCustomDomainAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCustomDomainAssociationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeCustomDomainAssociationsPagesWithContext indicates an expected call of DescribeCustomDomainAssociationsPagesWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeCustomDomainAssociationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomDomainAssociationsPagesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeCustomDomainAssociationsPagesWithContext), varargs...)
+}
+
+// DescribeCustomDomainAssociationsRequest mocks base method
+func (m *MockRedshiftAPI) DescribeCustomDomainAssociationsRequest(arg0 *redshift.DescribeCustomDomainAssociationsInput) (*request.Request, *redshift.DescribeCustomDomainAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeCustomDomainAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DescribeCustomDomainAssociationsOutput)
+	return ret0, ret1
+}
+
+// DescribeCustomDomainAssociationsRequest indicates an expected call of DescribeCustomDomainAssociationsRequest
+func (mr *MockRedshiftAPIMockRecorder) DescribeCustomDomainAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomDomainAssociationsRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeCustomDomainAssociationsRequest), arg0)
+}
+
+// DescribeCustomDomainAssociationsWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeCustomDomainAssociationsWithContext(arg0 context.Context, arg1 *redshift.DescribeCustomDomainAssociationsInput, arg2 ...request.Option) (*redshift.DescribeCustomDomainAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeCustomDomainAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DescribeCustomDomainAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeCustomDomainAssociationsWithContext indicates an expected call of DescribeCustomDomainAssociationsWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeCustomDomainAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeCustomDomainAssociationsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeCustomDomainAssociationsWithContext), varargs...)
 }
 
 // DescribeDataShares mocks base method
@@ -6039,6 +6222,56 @@ func (mr *MockRedshiftAPIMockRecorder) ModifyClusterWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyClusterWithContext), varargs...)
+}
+
+// ModifyCustomDomainAssociation mocks base method
+func (m *MockRedshiftAPI) ModifyCustomDomainAssociation(arg0 *redshift.ModifyCustomDomainAssociationInput) (*redshift.ModifyCustomDomainAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyCustomDomainAssociation", arg0)
+	ret0, _ := ret[0].(*redshift.ModifyCustomDomainAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyCustomDomainAssociation indicates an expected call of ModifyCustomDomainAssociation
+func (mr *MockRedshiftAPIMockRecorder) ModifyCustomDomainAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCustomDomainAssociation", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyCustomDomainAssociation), arg0)
+}
+
+// ModifyCustomDomainAssociationRequest mocks base method
+func (m *MockRedshiftAPI) ModifyCustomDomainAssociationRequest(arg0 *redshift.ModifyCustomDomainAssociationInput) (*request.Request, *redshift.ModifyCustomDomainAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyCustomDomainAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.ModifyCustomDomainAssociationOutput)
+	return ret0, ret1
+}
+
+// ModifyCustomDomainAssociationRequest indicates an expected call of ModifyCustomDomainAssociationRequest
+func (mr *MockRedshiftAPIMockRecorder) ModifyCustomDomainAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCustomDomainAssociationRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyCustomDomainAssociationRequest), arg0)
+}
+
+// ModifyCustomDomainAssociationWithContext mocks base method
+func (m *MockRedshiftAPI) ModifyCustomDomainAssociationWithContext(arg0 context.Context, arg1 *redshift.ModifyCustomDomainAssociationInput, arg2 ...request.Option) (*redshift.ModifyCustomDomainAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyCustomDomainAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.ModifyCustomDomainAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyCustomDomainAssociationWithContext indicates an expected call of ModifyCustomDomainAssociationWithContext
+func (mr *MockRedshiftAPIMockRecorder) ModifyCustomDomainAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyCustomDomainAssociationWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).ModifyCustomDomainAssociationWithContext), varargs...)
 }
 
 // ModifyEndpointAccess mocks base method

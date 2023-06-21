@@ -1000,6 +1000,56 @@ func (mr *MockAppflowAPIMockRecorder) RegisterConnectorWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterConnectorWithContext", reflect.TypeOf((*MockAppflowAPI)(nil).RegisterConnectorWithContext), varargs...)
 }
 
+// ResetConnectorMetadataCache mocks base method
+func (m *MockAppflowAPI) ResetConnectorMetadataCache(arg0 *appflow.ResetConnectorMetadataCacheInput) (*appflow.ResetConnectorMetadataCacheOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResetConnectorMetadataCache", arg0)
+	ret0, _ := ret[0].(*appflow.ResetConnectorMetadataCacheOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResetConnectorMetadataCache indicates an expected call of ResetConnectorMetadataCache
+func (mr *MockAppflowAPIMockRecorder) ResetConnectorMetadataCache(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetConnectorMetadataCache", reflect.TypeOf((*MockAppflowAPI)(nil).ResetConnectorMetadataCache), arg0)
+}
+
+// ResetConnectorMetadataCacheRequest mocks base method
+func (m *MockAppflowAPI) ResetConnectorMetadataCacheRequest(arg0 *appflow.ResetConnectorMetadataCacheInput) (*request.Request, *appflow.ResetConnectorMetadataCacheOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResetConnectorMetadataCacheRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*appflow.ResetConnectorMetadataCacheOutput)
+	return ret0, ret1
+}
+
+// ResetConnectorMetadataCacheRequest indicates an expected call of ResetConnectorMetadataCacheRequest
+func (mr *MockAppflowAPIMockRecorder) ResetConnectorMetadataCacheRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetConnectorMetadataCacheRequest", reflect.TypeOf((*MockAppflowAPI)(nil).ResetConnectorMetadataCacheRequest), arg0)
+}
+
+// ResetConnectorMetadataCacheWithContext mocks base method
+func (m *MockAppflowAPI) ResetConnectorMetadataCacheWithContext(arg0 context.Context, arg1 *appflow.ResetConnectorMetadataCacheInput, arg2 ...request.Option) (*appflow.ResetConnectorMetadataCacheOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ResetConnectorMetadataCacheWithContext", varargs...)
+	ret0, _ := ret[0].(*appflow.ResetConnectorMetadataCacheOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResetConnectorMetadataCacheWithContext indicates an expected call of ResetConnectorMetadataCacheWithContext
+func (mr *MockAppflowAPIMockRecorder) ResetConnectorMetadataCacheWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetConnectorMetadataCacheWithContext", reflect.TypeOf((*MockAppflowAPI)(nil).ResetConnectorMetadataCacheWithContext), varargs...)
+}
+
 // StartFlow mocks base method
 func (m *MockAppflowAPI) StartFlow(arg0 *appflow.StartFlowInput) (*appflow.StartFlowOutput, error) {
 	m.ctrl.T.Helper()
