@@ -2098,6 +2098,89 @@ func (mr *MockEMRAPIMockRecorder) ListStudiosWithContext(arg0, arg1 interface{},
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStudiosWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListStudiosWithContext), varargs...)
 }
 
+// ListSupportedInstanceTypes mocks base method
+func (m *MockEMRAPI) ListSupportedInstanceTypes(arg0 *emr.ListSupportedInstanceTypesInput) (*emr.ListSupportedInstanceTypesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSupportedInstanceTypes", arg0)
+	ret0, _ := ret[0].(*emr.ListSupportedInstanceTypesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSupportedInstanceTypes indicates an expected call of ListSupportedInstanceTypes
+func (mr *MockEMRAPIMockRecorder) ListSupportedInstanceTypes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSupportedInstanceTypes", reflect.TypeOf((*MockEMRAPI)(nil).ListSupportedInstanceTypes), arg0)
+}
+
+// ListSupportedInstanceTypesPages mocks base method
+func (m *MockEMRAPI) ListSupportedInstanceTypesPages(arg0 *emr.ListSupportedInstanceTypesInput, arg1 func(*emr.ListSupportedInstanceTypesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSupportedInstanceTypesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSupportedInstanceTypesPages indicates an expected call of ListSupportedInstanceTypesPages
+func (mr *MockEMRAPIMockRecorder) ListSupportedInstanceTypesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSupportedInstanceTypesPages", reflect.TypeOf((*MockEMRAPI)(nil).ListSupportedInstanceTypesPages), arg0, arg1)
+}
+
+// ListSupportedInstanceTypesPagesWithContext mocks base method
+func (m *MockEMRAPI) ListSupportedInstanceTypesPagesWithContext(arg0 context.Context, arg1 *emr.ListSupportedInstanceTypesInput, arg2 func(*emr.ListSupportedInstanceTypesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSupportedInstanceTypesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSupportedInstanceTypesPagesWithContext indicates an expected call of ListSupportedInstanceTypesPagesWithContext
+func (mr *MockEMRAPIMockRecorder) ListSupportedInstanceTypesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSupportedInstanceTypesPagesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListSupportedInstanceTypesPagesWithContext), varargs...)
+}
+
+// ListSupportedInstanceTypesRequest mocks base method
+func (m *MockEMRAPI) ListSupportedInstanceTypesRequest(arg0 *emr.ListSupportedInstanceTypesInput) (*request.Request, *emr.ListSupportedInstanceTypesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSupportedInstanceTypesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*emr.ListSupportedInstanceTypesOutput)
+	return ret0, ret1
+}
+
+// ListSupportedInstanceTypesRequest indicates an expected call of ListSupportedInstanceTypesRequest
+func (mr *MockEMRAPIMockRecorder) ListSupportedInstanceTypesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSupportedInstanceTypesRequest", reflect.TypeOf((*MockEMRAPI)(nil).ListSupportedInstanceTypesRequest), arg0)
+}
+
+// ListSupportedInstanceTypesWithContext mocks base method
+func (m *MockEMRAPI) ListSupportedInstanceTypesWithContext(arg0 context.Context, arg1 *emr.ListSupportedInstanceTypesInput, arg2 ...request.Option) (*emr.ListSupportedInstanceTypesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSupportedInstanceTypesWithContext", varargs...)
+	ret0, _ := ret[0].(*emr.ListSupportedInstanceTypesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSupportedInstanceTypesWithContext indicates an expected call of ListSupportedInstanceTypesWithContext
+func (mr *MockEMRAPIMockRecorder) ListSupportedInstanceTypesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSupportedInstanceTypesWithContext", reflect.TypeOf((*MockEMRAPI)(nil).ListSupportedInstanceTypesWithContext), varargs...)
+}
+
 // ModifyCluster mocks base method
 func (m *MockEMRAPI) ModifyCluster(arg0 *emr.ModifyClusterInput) (*emr.ModifyClusterOutput, error) {
 	m.ctrl.T.Helper()

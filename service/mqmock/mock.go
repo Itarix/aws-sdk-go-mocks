@@ -968,6 +968,56 @@ func (mr *MockMQAPIMockRecorder) ListUsersWithContext(arg0, arg1 interface{}, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersWithContext", reflect.TypeOf((*MockMQAPI)(nil).ListUsersWithContext), varargs...)
 }
 
+// Promote mocks base method
+func (m *MockMQAPI) Promote(arg0 *mq.PromoteInput) (*mq.PromoteOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "Promote", arg0)
+	ret0, _ := ret[0].(*mq.PromoteOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// Promote indicates an expected call of Promote
+func (mr *MockMQAPIMockRecorder) Promote(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Promote", reflect.TypeOf((*MockMQAPI)(nil).Promote), arg0)
+}
+
+// PromoteRequest mocks base method
+func (m *MockMQAPI) PromoteRequest(arg0 *mq.PromoteInput) (*request.Request, *mq.PromoteOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PromoteRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mq.PromoteOutput)
+	return ret0, ret1
+}
+
+// PromoteRequest indicates an expected call of PromoteRequest
+func (mr *MockMQAPIMockRecorder) PromoteRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PromoteRequest", reflect.TypeOf((*MockMQAPI)(nil).PromoteRequest), arg0)
+}
+
+// PromoteWithContext mocks base method
+func (m *MockMQAPI) PromoteWithContext(arg0 context.Context, arg1 *mq.PromoteInput, arg2 ...request.Option) (*mq.PromoteOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PromoteWithContext", varargs...)
+	ret0, _ := ret[0].(*mq.PromoteOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PromoteWithContext indicates an expected call of PromoteWithContext
+func (mr *MockMQAPIMockRecorder) PromoteWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PromoteWithContext", reflect.TypeOf((*MockMQAPI)(nil).PromoteWithContext), varargs...)
+}
+
 // RebootBroker mocks base method
 func (m *MockMQAPI) RebootBroker(arg0 *mq.RebootBrokerInput) (*mq.RebootBrokerOutput, error) {
 	m.ctrl.T.Helper()

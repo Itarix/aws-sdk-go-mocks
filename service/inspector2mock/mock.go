@@ -135,6 +135,56 @@ func (mr *MockInspector2APIMockRecorder) BatchGetAccountStatusWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetAccountStatusWithContext", reflect.TypeOf((*MockInspector2API)(nil).BatchGetAccountStatusWithContext), varargs...)
 }
 
+// BatchGetCodeSnippet mocks base method
+func (m *MockInspector2API) BatchGetCodeSnippet(arg0 *inspector2.BatchGetCodeSnippetInput) (*inspector2.BatchGetCodeSnippetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetCodeSnippet", arg0)
+	ret0, _ := ret[0].(*inspector2.BatchGetCodeSnippetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetCodeSnippet indicates an expected call of BatchGetCodeSnippet
+func (mr *MockInspector2APIMockRecorder) BatchGetCodeSnippet(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCodeSnippet", reflect.TypeOf((*MockInspector2API)(nil).BatchGetCodeSnippet), arg0)
+}
+
+// BatchGetCodeSnippetRequest mocks base method
+func (m *MockInspector2API) BatchGetCodeSnippetRequest(arg0 *inspector2.BatchGetCodeSnippetInput) (*request.Request, *inspector2.BatchGetCodeSnippetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetCodeSnippetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.BatchGetCodeSnippetOutput)
+	return ret0, ret1
+}
+
+// BatchGetCodeSnippetRequest indicates an expected call of BatchGetCodeSnippetRequest
+func (mr *MockInspector2APIMockRecorder) BatchGetCodeSnippetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCodeSnippetRequest", reflect.TypeOf((*MockInspector2API)(nil).BatchGetCodeSnippetRequest), arg0)
+}
+
+// BatchGetCodeSnippetWithContext mocks base method
+func (m *MockInspector2API) BatchGetCodeSnippetWithContext(arg0 context.Context, arg1 *inspector2.BatchGetCodeSnippetInput, arg2 ...request.Option) (*inspector2.BatchGetCodeSnippetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetCodeSnippetWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.BatchGetCodeSnippetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetCodeSnippetWithContext indicates an expected call of BatchGetCodeSnippetWithContext
+func (mr *MockInspector2APIMockRecorder) BatchGetCodeSnippetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCodeSnippetWithContext", reflect.TypeOf((*MockInspector2API)(nil).BatchGetCodeSnippetWithContext), varargs...)
+}
+
 // BatchGetFreeTrialInfo mocks base method
 func (m *MockInspector2API) BatchGetFreeTrialInfo(arg0 *inspector2.BatchGetFreeTrialInfoInput) (*inspector2.BatchGetFreeTrialInfoOutput, error) {
 	m.ctrl.T.Helper()
@@ -335,6 +385,56 @@ func (mr *MockInspector2APIMockRecorder) CancelFindingsReportWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelFindingsReportWithContext", reflect.TypeOf((*MockInspector2API)(nil).CancelFindingsReportWithContext), varargs...)
 }
 
+// CancelSbomExport mocks base method
+func (m *MockInspector2API) CancelSbomExport(arg0 *inspector2.CancelSbomExportInput) (*inspector2.CancelSbomExportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelSbomExport", arg0)
+	ret0, _ := ret[0].(*inspector2.CancelSbomExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelSbomExport indicates an expected call of CancelSbomExport
+func (mr *MockInspector2APIMockRecorder) CancelSbomExport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelSbomExport", reflect.TypeOf((*MockInspector2API)(nil).CancelSbomExport), arg0)
+}
+
+// CancelSbomExportRequest mocks base method
+func (m *MockInspector2API) CancelSbomExportRequest(arg0 *inspector2.CancelSbomExportInput) (*request.Request, *inspector2.CancelSbomExportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CancelSbomExportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.CancelSbomExportOutput)
+	return ret0, ret1
+}
+
+// CancelSbomExportRequest indicates an expected call of CancelSbomExportRequest
+func (mr *MockInspector2APIMockRecorder) CancelSbomExportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelSbomExportRequest", reflect.TypeOf((*MockInspector2API)(nil).CancelSbomExportRequest), arg0)
+}
+
+// CancelSbomExportWithContext mocks base method
+func (m *MockInspector2API) CancelSbomExportWithContext(arg0 context.Context, arg1 *inspector2.CancelSbomExportInput, arg2 ...request.Option) (*inspector2.CancelSbomExportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CancelSbomExportWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.CancelSbomExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CancelSbomExportWithContext indicates an expected call of CancelSbomExportWithContext
+func (mr *MockInspector2APIMockRecorder) CancelSbomExportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CancelSbomExportWithContext", reflect.TypeOf((*MockInspector2API)(nil).CancelSbomExportWithContext), varargs...)
+}
+
 // CreateFilter mocks base method
 func (m *MockInspector2API) CreateFilter(arg0 *inspector2.CreateFilterInput) (*inspector2.CreateFilterOutput, error) {
 	m.ctrl.T.Helper()
@@ -433,6 +533,56 @@ func (mr *MockInspector2APIMockRecorder) CreateFindingsReportWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFindingsReportWithContext", reflect.TypeOf((*MockInspector2API)(nil).CreateFindingsReportWithContext), varargs...)
+}
+
+// CreateSbomExport mocks base method
+func (m *MockInspector2API) CreateSbomExport(arg0 *inspector2.CreateSbomExportInput) (*inspector2.CreateSbomExportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSbomExport", arg0)
+	ret0, _ := ret[0].(*inspector2.CreateSbomExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSbomExport indicates an expected call of CreateSbomExport
+func (mr *MockInspector2APIMockRecorder) CreateSbomExport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSbomExport", reflect.TypeOf((*MockInspector2API)(nil).CreateSbomExport), arg0)
+}
+
+// CreateSbomExportRequest mocks base method
+func (m *MockInspector2API) CreateSbomExportRequest(arg0 *inspector2.CreateSbomExportInput) (*request.Request, *inspector2.CreateSbomExportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateSbomExportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.CreateSbomExportOutput)
+	return ret0, ret1
+}
+
+// CreateSbomExportRequest indicates an expected call of CreateSbomExportRequest
+func (mr *MockInspector2APIMockRecorder) CreateSbomExportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSbomExportRequest", reflect.TypeOf((*MockInspector2API)(nil).CreateSbomExportRequest), arg0)
+}
+
+// CreateSbomExportWithContext mocks base method
+func (m *MockInspector2API) CreateSbomExportWithContext(arg0 context.Context, arg1 *inspector2.CreateSbomExportInput, arg2 ...request.Option) (*inspector2.CreateSbomExportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateSbomExportWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.CreateSbomExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateSbomExportWithContext indicates an expected call of CreateSbomExportWithContext
+func (mr *MockInspector2APIMockRecorder) CreateSbomExportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSbomExportWithContext", reflect.TypeOf((*MockInspector2API)(nil).CreateSbomExportWithContext), varargs...)
 }
 
 // DeleteFilter mocks base method
@@ -935,6 +1085,56 @@ func (mr *MockInspector2APIMockRecorder) GetEc2DeepInspectionConfigurationWithCo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEc2DeepInspectionConfigurationWithContext", reflect.TypeOf((*MockInspector2API)(nil).GetEc2DeepInspectionConfigurationWithContext), varargs...)
 }
 
+// GetEncryptionKey mocks base method
+func (m *MockInspector2API) GetEncryptionKey(arg0 *inspector2.GetEncryptionKeyInput) (*inspector2.GetEncryptionKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEncryptionKey", arg0)
+	ret0, _ := ret[0].(*inspector2.GetEncryptionKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEncryptionKey indicates an expected call of GetEncryptionKey
+func (mr *MockInspector2APIMockRecorder) GetEncryptionKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEncryptionKey", reflect.TypeOf((*MockInspector2API)(nil).GetEncryptionKey), arg0)
+}
+
+// GetEncryptionKeyRequest mocks base method
+func (m *MockInspector2API) GetEncryptionKeyRequest(arg0 *inspector2.GetEncryptionKeyInput) (*request.Request, *inspector2.GetEncryptionKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEncryptionKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.GetEncryptionKeyOutput)
+	return ret0, ret1
+}
+
+// GetEncryptionKeyRequest indicates an expected call of GetEncryptionKeyRequest
+func (mr *MockInspector2APIMockRecorder) GetEncryptionKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEncryptionKeyRequest", reflect.TypeOf((*MockInspector2API)(nil).GetEncryptionKeyRequest), arg0)
+}
+
+// GetEncryptionKeyWithContext mocks base method
+func (m *MockInspector2API) GetEncryptionKeyWithContext(arg0 context.Context, arg1 *inspector2.GetEncryptionKeyInput, arg2 ...request.Option) (*inspector2.GetEncryptionKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetEncryptionKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.GetEncryptionKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEncryptionKeyWithContext indicates an expected call of GetEncryptionKeyWithContext
+func (mr *MockInspector2APIMockRecorder) GetEncryptionKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEncryptionKeyWithContext", reflect.TypeOf((*MockInspector2API)(nil).GetEncryptionKeyWithContext), varargs...)
+}
+
 // GetFindingsReportStatus mocks base method
 func (m *MockInspector2API) GetFindingsReportStatus(arg0 *inspector2.GetFindingsReportStatusInput) (*inspector2.GetFindingsReportStatusOutput, error) {
 	m.ctrl.T.Helper()
@@ -1033,6 +1233,56 @@ func (mr *MockInspector2APIMockRecorder) GetMemberWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMemberWithContext", reflect.TypeOf((*MockInspector2API)(nil).GetMemberWithContext), varargs...)
+}
+
+// GetSbomExport mocks base method
+func (m *MockInspector2API) GetSbomExport(arg0 *inspector2.GetSbomExportInput) (*inspector2.GetSbomExportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSbomExport", arg0)
+	ret0, _ := ret[0].(*inspector2.GetSbomExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSbomExport indicates an expected call of GetSbomExport
+func (mr *MockInspector2APIMockRecorder) GetSbomExport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSbomExport", reflect.TypeOf((*MockInspector2API)(nil).GetSbomExport), arg0)
+}
+
+// GetSbomExportRequest mocks base method
+func (m *MockInspector2API) GetSbomExportRequest(arg0 *inspector2.GetSbomExportInput) (*request.Request, *inspector2.GetSbomExportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSbomExportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.GetSbomExportOutput)
+	return ret0, ret1
+}
+
+// GetSbomExportRequest indicates an expected call of GetSbomExportRequest
+func (mr *MockInspector2APIMockRecorder) GetSbomExportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSbomExportRequest", reflect.TypeOf((*MockInspector2API)(nil).GetSbomExportRequest), arg0)
+}
+
+// GetSbomExportWithContext mocks base method
+func (m *MockInspector2API) GetSbomExportWithContext(arg0 context.Context, arg1 *inspector2.GetSbomExportInput, arg2 ...request.Option) (*inspector2.GetSbomExportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSbomExportWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.GetSbomExportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSbomExportWithContext indicates an expected call of GetSbomExportWithContext
+func (mr *MockInspector2APIMockRecorder) GetSbomExportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSbomExportWithContext", reflect.TypeOf((*MockInspector2API)(nil).GetSbomExportWithContext), varargs...)
 }
 
 // ListAccountPermissions mocks base method
@@ -1832,6 +2082,56 @@ func (mr *MockInspector2APIMockRecorder) ListUsageTotalsWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsageTotalsWithContext", reflect.TypeOf((*MockInspector2API)(nil).ListUsageTotalsWithContext), varargs...)
 }
 
+// ResetEncryptionKey mocks base method
+func (m *MockInspector2API) ResetEncryptionKey(arg0 *inspector2.ResetEncryptionKeyInput) (*inspector2.ResetEncryptionKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResetEncryptionKey", arg0)
+	ret0, _ := ret[0].(*inspector2.ResetEncryptionKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResetEncryptionKey indicates an expected call of ResetEncryptionKey
+func (mr *MockInspector2APIMockRecorder) ResetEncryptionKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetEncryptionKey", reflect.TypeOf((*MockInspector2API)(nil).ResetEncryptionKey), arg0)
+}
+
+// ResetEncryptionKeyRequest mocks base method
+func (m *MockInspector2API) ResetEncryptionKeyRequest(arg0 *inspector2.ResetEncryptionKeyInput) (*request.Request, *inspector2.ResetEncryptionKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResetEncryptionKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.ResetEncryptionKeyOutput)
+	return ret0, ret1
+}
+
+// ResetEncryptionKeyRequest indicates an expected call of ResetEncryptionKeyRequest
+func (mr *MockInspector2APIMockRecorder) ResetEncryptionKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetEncryptionKeyRequest", reflect.TypeOf((*MockInspector2API)(nil).ResetEncryptionKeyRequest), arg0)
+}
+
+// ResetEncryptionKeyWithContext mocks base method
+func (m *MockInspector2API) ResetEncryptionKeyWithContext(arg0 context.Context, arg1 *inspector2.ResetEncryptionKeyInput, arg2 ...request.Option) (*inspector2.ResetEncryptionKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ResetEncryptionKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.ResetEncryptionKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResetEncryptionKeyWithContext indicates an expected call of ResetEncryptionKeyWithContext
+func (mr *MockInspector2APIMockRecorder) ResetEncryptionKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResetEncryptionKeyWithContext", reflect.TypeOf((*MockInspector2API)(nil).ResetEncryptionKeyWithContext), varargs...)
+}
+
 // SearchVulnerabilities mocks base method
 func (m *MockInspector2API) SearchVulnerabilities(arg0 *inspector2.SearchVulnerabilitiesInput) (*inspector2.SearchVulnerabilitiesOutput, error) {
 	m.ctrl.T.Helper()
@@ -2113,6 +2413,56 @@ func (mr *MockInspector2APIMockRecorder) UpdateEc2DeepInspectionConfigurationWit
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEc2DeepInspectionConfigurationWithContext", reflect.TypeOf((*MockInspector2API)(nil).UpdateEc2DeepInspectionConfigurationWithContext), varargs...)
+}
+
+// UpdateEncryptionKey mocks base method
+func (m *MockInspector2API) UpdateEncryptionKey(arg0 *inspector2.UpdateEncryptionKeyInput) (*inspector2.UpdateEncryptionKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateEncryptionKey", arg0)
+	ret0, _ := ret[0].(*inspector2.UpdateEncryptionKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateEncryptionKey indicates an expected call of UpdateEncryptionKey
+func (mr *MockInspector2APIMockRecorder) UpdateEncryptionKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEncryptionKey", reflect.TypeOf((*MockInspector2API)(nil).UpdateEncryptionKey), arg0)
+}
+
+// UpdateEncryptionKeyRequest mocks base method
+func (m *MockInspector2API) UpdateEncryptionKeyRequest(arg0 *inspector2.UpdateEncryptionKeyInput) (*request.Request, *inspector2.UpdateEncryptionKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateEncryptionKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.UpdateEncryptionKeyOutput)
+	return ret0, ret1
+}
+
+// UpdateEncryptionKeyRequest indicates an expected call of UpdateEncryptionKeyRequest
+func (mr *MockInspector2APIMockRecorder) UpdateEncryptionKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEncryptionKeyRequest", reflect.TypeOf((*MockInspector2API)(nil).UpdateEncryptionKeyRequest), arg0)
+}
+
+// UpdateEncryptionKeyWithContext mocks base method
+func (m *MockInspector2API) UpdateEncryptionKeyWithContext(arg0 context.Context, arg1 *inspector2.UpdateEncryptionKeyInput, arg2 ...request.Option) (*inspector2.UpdateEncryptionKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateEncryptionKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.UpdateEncryptionKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateEncryptionKeyWithContext indicates an expected call of UpdateEncryptionKeyWithContext
+func (mr *MockInspector2APIMockRecorder) UpdateEncryptionKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEncryptionKeyWithContext", reflect.TypeOf((*MockInspector2API)(nil).UpdateEncryptionKeyWithContext), varargs...)
 }
 
 // UpdateFilter mocks base method
