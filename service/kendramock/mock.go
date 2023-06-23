@@ -3031,6 +3031,56 @@ func (mr *MockKendraAPIMockRecorder) QueryWithContext(arg0, arg1 interface{}, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "QueryWithContext", reflect.TypeOf((*MockKendraAPI)(nil).QueryWithContext), varargs...)
 }
 
+// Retrieve mocks base method
+func (m *MockKendraAPI) Retrieve(arg0 *kendra.RetrieveInput) (*kendra.RetrieveOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "Retrieve", arg0)
+	ret0, _ := ret[0].(*kendra.RetrieveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// Retrieve indicates an expected call of Retrieve
+func (mr *MockKendraAPIMockRecorder) Retrieve(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Retrieve", reflect.TypeOf((*MockKendraAPI)(nil).Retrieve), arg0)
+}
+
+// RetrieveRequest mocks base method
+func (m *MockKendraAPI) RetrieveRequest(arg0 *kendra.RetrieveInput) (*request.Request, *kendra.RetrieveOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RetrieveRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kendra.RetrieveOutput)
+	return ret0, ret1
+}
+
+// RetrieveRequest indicates an expected call of RetrieveRequest
+func (mr *MockKendraAPIMockRecorder) RetrieveRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetrieveRequest", reflect.TypeOf((*MockKendraAPI)(nil).RetrieveRequest), arg0)
+}
+
+// RetrieveWithContext mocks base method
+func (m *MockKendraAPI) RetrieveWithContext(arg0 context.Context, arg1 *kendra.RetrieveInput, arg2 ...request.Option) (*kendra.RetrieveOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RetrieveWithContext", varargs...)
+	ret0, _ := ret[0].(*kendra.RetrieveOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RetrieveWithContext indicates an expected call of RetrieveWithContext
+func (mr *MockKendraAPIMockRecorder) RetrieveWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetrieveWithContext", reflect.TypeOf((*MockKendraAPI)(nil).RetrieveWithContext), varargs...)
+}
+
 // StartDataSourceSyncJob mocks base method
 func (m *MockKendraAPI) StartDataSourceSyncJob(arg0 *kendra.StartDataSourceSyncJobInput) (*kendra.StartDataSourceSyncJobOutput, error) {
 	m.ctrl.T.Helper()

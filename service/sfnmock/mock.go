@@ -100,6 +100,56 @@ func (mr *MockSFNAPIMockRecorder) CreateStateMachine(arg0 interface{}) *gomock.C
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStateMachine", reflect.TypeOf((*MockSFNAPI)(nil).CreateStateMachine), arg0)
 }
 
+// CreateStateMachineAlias mocks base method
+func (m *MockSFNAPI) CreateStateMachineAlias(arg0 *sfn.CreateStateMachineAliasInput) (*sfn.CreateStateMachineAliasOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateStateMachineAlias", arg0)
+	ret0, _ := ret[0].(*sfn.CreateStateMachineAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateStateMachineAlias indicates an expected call of CreateStateMachineAlias
+func (mr *MockSFNAPIMockRecorder) CreateStateMachineAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStateMachineAlias", reflect.TypeOf((*MockSFNAPI)(nil).CreateStateMachineAlias), arg0)
+}
+
+// CreateStateMachineAliasRequest mocks base method
+func (m *MockSFNAPI) CreateStateMachineAliasRequest(arg0 *sfn.CreateStateMachineAliasInput) (*request.Request, *sfn.CreateStateMachineAliasOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateStateMachineAliasRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sfn.CreateStateMachineAliasOutput)
+	return ret0, ret1
+}
+
+// CreateStateMachineAliasRequest indicates an expected call of CreateStateMachineAliasRequest
+func (mr *MockSFNAPIMockRecorder) CreateStateMachineAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStateMachineAliasRequest", reflect.TypeOf((*MockSFNAPI)(nil).CreateStateMachineAliasRequest), arg0)
+}
+
+// CreateStateMachineAliasWithContext mocks base method
+func (m *MockSFNAPI) CreateStateMachineAliasWithContext(arg0 context.Context, arg1 *sfn.CreateStateMachineAliasInput, arg2 ...request.Option) (*sfn.CreateStateMachineAliasOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateStateMachineAliasWithContext", varargs...)
+	ret0, _ := ret[0].(*sfn.CreateStateMachineAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateStateMachineAliasWithContext indicates an expected call of CreateStateMachineAliasWithContext
+func (mr *MockSFNAPIMockRecorder) CreateStateMachineAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStateMachineAliasWithContext", reflect.TypeOf((*MockSFNAPI)(nil).CreateStateMachineAliasWithContext), varargs...)
+}
+
 // CreateStateMachineRequest mocks base method
 func (m *MockSFNAPI) CreateStateMachineRequest(arg0 *sfn.CreateStateMachineInput) (*request.Request, *sfn.CreateStateMachineOutput) {
 	m.ctrl.T.Helper()
@@ -200,6 +250,56 @@ func (mr *MockSFNAPIMockRecorder) DeleteStateMachine(arg0 interface{}) *gomock.C
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStateMachine", reflect.TypeOf((*MockSFNAPI)(nil).DeleteStateMachine), arg0)
 }
 
+// DeleteStateMachineAlias mocks base method
+func (m *MockSFNAPI) DeleteStateMachineAlias(arg0 *sfn.DeleteStateMachineAliasInput) (*sfn.DeleteStateMachineAliasOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStateMachineAlias", arg0)
+	ret0, _ := ret[0].(*sfn.DeleteStateMachineAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStateMachineAlias indicates an expected call of DeleteStateMachineAlias
+func (mr *MockSFNAPIMockRecorder) DeleteStateMachineAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStateMachineAlias", reflect.TypeOf((*MockSFNAPI)(nil).DeleteStateMachineAlias), arg0)
+}
+
+// DeleteStateMachineAliasRequest mocks base method
+func (m *MockSFNAPI) DeleteStateMachineAliasRequest(arg0 *sfn.DeleteStateMachineAliasInput) (*request.Request, *sfn.DeleteStateMachineAliasOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStateMachineAliasRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sfn.DeleteStateMachineAliasOutput)
+	return ret0, ret1
+}
+
+// DeleteStateMachineAliasRequest indicates an expected call of DeleteStateMachineAliasRequest
+func (mr *MockSFNAPIMockRecorder) DeleteStateMachineAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStateMachineAliasRequest", reflect.TypeOf((*MockSFNAPI)(nil).DeleteStateMachineAliasRequest), arg0)
+}
+
+// DeleteStateMachineAliasWithContext mocks base method
+func (m *MockSFNAPI) DeleteStateMachineAliasWithContext(arg0 context.Context, arg1 *sfn.DeleteStateMachineAliasInput, arg2 ...request.Option) (*sfn.DeleteStateMachineAliasOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteStateMachineAliasWithContext", varargs...)
+	ret0, _ := ret[0].(*sfn.DeleteStateMachineAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStateMachineAliasWithContext indicates an expected call of DeleteStateMachineAliasWithContext
+func (mr *MockSFNAPIMockRecorder) DeleteStateMachineAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStateMachineAliasWithContext", reflect.TypeOf((*MockSFNAPI)(nil).DeleteStateMachineAliasWithContext), varargs...)
+}
+
 // DeleteStateMachineRequest mocks base method
 func (m *MockSFNAPI) DeleteStateMachineRequest(arg0 *sfn.DeleteStateMachineInput) (*request.Request, *sfn.DeleteStateMachineOutput) {
 	m.ctrl.T.Helper()
@@ -213,6 +313,56 @@ func (m *MockSFNAPI) DeleteStateMachineRequest(arg0 *sfn.DeleteStateMachineInput
 func (mr *MockSFNAPIMockRecorder) DeleteStateMachineRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStateMachineRequest", reflect.TypeOf((*MockSFNAPI)(nil).DeleteStateMachineRequest), arg0)
+}
+
+// DeleteStateMachineVersion mocks base method
+func (m *MockSFNAPI) DeleteStateMachineVersion(arg0 *sfn.DeleteStateMachineVersionInput) (*sfn.DeleteStateMachineVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStateMachineVersion", arg0)
+	ret0, _ := ret[0].(*sfn.DeleteStateMachineVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStateMachineVersion indicates an expected call of DeleteStateMachineVersion
+func (mr *MockSFNAPIMockRecorder) DeleteStateMachineVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStateMachineVersion", reflect.TypeOf((*MockSFNAPI)(nil).DeleteStateMachineVersion), arg0)
+}
+
+// DeleteStateMachineVersionRequest mocks base method
+func (m *MockSFNAPI) DeleteStateMachineVersionRequest(arg0 *sfn.DeleteStateMachineVersionInput) (*request.Request, *sfn.DeleteStateMachineVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteStateMachineVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sfn.DeleteStateMachineVersionOutput)
+	return ret0, ret1
+}
+
+// DeleteStateMachineVersionRequest indicates an expected call of DeleteStateMachineVersionRequest
+func (mr *MockSFNAPIMockRecorder) DeleteStateMachineVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStateMachineVersionRequest", reflect.TypeOf((*MockSFNAPI)(nil).DeleteStateMachineVersionRequest), arg0)
+}
+
+// DeleteStateMachineVersionWithContext mocks base method
+func (m *MockSFNAPI) DeleteStateMachineVersionWithContext(arg0 context.Context, arg1 *sfn.DeleteStateMachineVersionInput, arg2 ...request.Option) (*sfn.DeleteStateMachineVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteStateMachineVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*sfn.DeleteStateMachineVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteStateMachineVersionWithContext indicates an expected call of DeleteStateMachineVersionWithContext
+func (mr *MockSFNAPIMockRecorder) DeleteStateMachineVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteStateMachineVersionWithContext", reflect.TypeOf((*MockSFNAPI)(nil).DeleteStateMachineVersionWithContext), varargs...)
 }
 
 // DeleteStateMachineWithContext mocks base method
@@ -398,6 +548,56 @@ func (m *MockSFNAPI) DescribeStateMachine(arg0 *sfn.DescribeStateMachineInput) (
 func (mr *MockSFNAPIMockRecorder) DescribeStateMachine(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStateMachine", reflect.TypeOf((*MockSFNAPI)(nil).DescribeStateMachine), arg0)
+}
+
+// DescribeStateMachineAlias mocks base method
+func (m *MockSFNAPI) DescribeStateMachineAlias(arg0 *sfn.DescribeStateMachineAliasInput) (*sfn.DescribeStateMachineAliasOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStateMachineAlias", arg0)
+	ret0, _ := ret[0].(*sfn.DescribeStateMachineAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStateMachineAlias indicates an expected call of DescribeStateMachineAlias
+func (mr *MockSFNAPIMockRecorder) DescribeStateMachineAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStateMachineAlias", reflect.TypeOf((*MockSFNAPI)(nil).DescribeStateMachineAlias), arg0)
+}
+
+// DescribeStateMachineAliasRequest mocks base method
+func (m *MockSFNAPI) DescribeStateMachineAliasRequest(arg0 *sfn.DescribeStateMachineAliasInput) (*request.Request, *sfn.DescribeStateMachineAliasOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeStateMachineAliasRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sfn.DescribeStateMachineAliasOutput)
+	return ret0, ret1
+}
+
+// DescribeStateMachineAliasRequest indicates an expected call of DescribeStateMachineAliasRequest
+func (mr *MockSFNAPIMockRecorder) DescribeStateMachineAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStateMachineAliasRequest", reflect.TypeOf((*MockSFNAPI)(nil).DescribeStateMachineAliasRequest), arg0)
+}
+
+// DescribeStateMachineAliasWithContext mocks base method
+func (m *MockSFNAPI) DescribeStateMachineAliasWithContext(arg0 context.Context, arg1 *sfn.DescribeStateMachineAliasInput, arg2 ...request.Option) (*sfn.DescribeStateMachineAliasOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeStateMachineAliasWithContext", varargs...)
+	ret0, _ := ret[0].(*sfn.DescribeStateMachineAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeStateMachineAliasWithContext indicates an expected call of DescribeStateMachineAliasWithContext
+func (mr *MockSFNAPIMockRecorder) DescribeStateMachineAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeStateMachineAliasWithContext", reflect.TypeOf((*MockSFNAPI)(nil).DescribeStateMachineAliasWithContext), varargs...)
 }
 
 // DescribeStateMachineForExecution mocks base method
@@ -867,6 +1067,106 @@ func (mr *MockSFNAPIMockRecorder) ListMapRunsWithContext(arg0, arg1 interface{},
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMapRunsWithContext", reflect.TypeOf((*MockSFNAPI)(nil).ListMapRunsWithContext), varargs...)
 }
 
+// ListStateMachineAliases mocks base method
+func (m *MockSFNAPI) ListStateMachineAliases(arg0 *sfn.ListStateMachineAliasesInput) (*sfn.ListStateMachineAliasesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStateMachineAliases", arg0)
+	ret0, _ := ret[0].(*sfn.ListStateMachineAliasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStateMachineAliases indicates an expected call of ListStateMachineAliases
+func (mr *MockSFNAPIMockRecorder) ListStateMachineAliases(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStateMachineAliases", reflect.TypeOf((*MockSFNAPI)(nil).ListStateMachineAliases), arg0)
+}
+
+// ListStateMachineAliasesRequest mocks base method
+func (m *MockSFNAPI) ListStateMachineAliasesRequest(arg0 *sfn.ListStateMachineAliasesInput) (*request.Request, *sfn.ListStateMachineAliasesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStateMachineAliasesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sfn.ListStateMachineAliasesOutput)
+	return ret0, ret1
+}
+
+// ListStateMachineAliasesRequest indicates an expected call of ListStateMachineAliasesRequest
+func (mr *MockSFNAPIMockRecorder) ListStateMachineAliasesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStateMachineAliasesRequest", reflect.TypeOf((*MockSFNAPI)(nil).ListStateMachineAliasesRequest), arg0)
+}
+
+// ListStateMachineAliasesWithContext mocks base method
+func (m *MockSFNAPI) ListStateMachineAliasesWithContext(arg0 context.Context, arg1 *sfn.ListStateMachineAliasesInput, arg2 ...request.Option) (*sfn.ListStateMachineAliasesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStateMachineAliasesWithContext", varargs...)
+	ret0, _ := ret[0].(*sfn.ListStateMachineAliasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStateMachineAliasesWithContext indicates an expected call of ListStateMachineAliasesWithContext
+func (mr *MockSFNAPIMockRecorder) ListStateMachineAliasesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStateMachineAliasesWithContext", reflect.TypeOf((*MockSFNAPI)(nil).ListStateMachineAliasesWithContext), varargs...)
+}
+
+// ListStateMachineVersions mocks base method
+func (m *MockSFNAPI) ListStateMachineVersions(arg0 *sfn.ListStateMachineVersionsInput) (*sfn.ListStateMachineVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStateMachineVersions", arg0)
+	ret0, _ := ret[0].(*sfn.ListStateMachineVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStateMachineVersions indicates an expected call of ListStateMachineVersions
+func (mr *MockSFNAPIMockRecorder) ListStateMachineVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStateMachineVersions", reflect.TypeOf((*MockSFNAPI)(nil).ListStateMachineVersions), arg0)
+}
+
+// ListStateMachineVersionsRequest mocks base method
+func (m *MockSFNAPI) ListStateMachineVersionsRequest(arg0 *sfn.ListStateMachineVersionsInput) (*request.Request, *sfn.ListStateMachineVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStateMachineVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sfn.ListStateMachineVersionsOutput)
+	return ret0, ret1
+}
+
+// ListStateMachineVersionsRequest indicates an expected call of ListStateMachineVersionsRequest
+func (mr *MockSFNAPIMockRecorder) ListStateMachineVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStateMachineVersionsRequest", reflect.TypeOf((*MockSFNAPI)(nil).ListStateMachineVersionsRequest), arg0)
+}
+
+// ListStateMachineVersionsWithContext mocks base method
+func (m *MockSFNAPI) ListStateMachineVersionsWithContext(arg0 context.Context, arg1 *sfn.ListStateMachineVersionsInput, arg2 ...request.Option) (*sfn.ListStateMachineVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStateMachineVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*sfn.ListStateMachineVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStateMachineVersionsWithContext indicates an expected call of ListStateMachineVersionsWithContext
+func (mr *MockSFNAPIMockRecorder) ListStateMachineVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStateMachineVersionsWithContext", reflect.TypeOf((*MockSFNAPI)(nil).ListStateMachineVersionsWithContext), varargs...)
+}
+
 // ListStateMachines mocks base method
 func (m *MockSFNAPI) ListStateMachines(arg0 *sfn.ListStateMachinesInput) (*sfn.ListStateMachinesOutput, error) {
 	m.ctrl.T.Helper()
@@ -998,6 +1298,56 @@ func (mr *MockSFNAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockSFNAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// PublishStateMachineVersion mocks base method
+func (m *MockSFNAPI) PublishStateMachineVersion(arg0 *sfn.PublishStateMachineVersionInput) (*sfn.PublishStateMachineVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PublishStateMachineVersion", arg0)
+	ret0, _ := ret[0].(*sfn.PublishStateMachineVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PublishStateMachineVersion indicates an expected call of PublishStateMachineVersion
+func (mr *MockSFNAPIMockRecorder) PublishStateMachineVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishStateMachineVersion", reflect.TypeOf((*MockSFNAPI)(nil).PublishStateMachineVersion), arg0)
+}
+
+// PublishStateMachineVersionRequest mocks base method
+func (m *MockSFNAPI) PublishStateMachineVersionRequest(arg0 *sfn.PublishStateMachineVersionInput) (*request.Request, *sfn.PublishStateMachineVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PublishStateMachineVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sfn.PublishStateMachineVersionOutput)
+	return ret0, ret1
+}
+
+// PublishStateMachineVersionRequest indicates an expected call of PublishStateMachineVersionRequest
+func (mr *MockSFNAPIMockRecorder) PublishStateMachineVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishStateMachineVersionRequest", reflect.TypeOf((*MockSFNAPI)(nil).PublishStateMachineVersionRequest), arg0)
+}
+
+// PublishStateMachineVersionWithContext mocks base method
+func (m *MockSFNAPI) PublishStateMachineVersionWithContext(arg0 context.Context, arg1 *sfn.PublishStateMachineVersionInput, arg2 ...request.Option) (*sfn.PublishStateMachineVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PublishStateMachineVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*sfn.PublishStateMachineVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PublishStateMachineVersionWithContext indicates an expected call of PublishStateMachineVersionWithContext
+func (mr *MockSFNAPIMockRecorder) PublishStateMachineVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PublishStateMachineVersionWithContext", reflect.TypeOf((*MockSFNAPI)(nil).PublishStateMachineVersionWithContext), varargs...)
 }
 
 // SendTaskFailure mocks base method
@@ -1463,6 +1813,56 @@ func (m *MockSFNAPI) UpdateStateMachine(arg0 *sfn.UpdateStateMachineInput) (*sfn
 func (mr *MockSFNAPIMockRecorder) UpdateStateMachine(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStateMachine", reflect.TypeOf((*MockSFNAPI)(nil).UpdateStateMachine), arg0)
+}
+
+// UpdateStateMachineAlias mocks base method
+func (m *MockSFNAPI) UpdateStateMachineAlias(arg0 *sfn.UpdateStateMachineAliasInput) (*sfn.UpdateStateMachineAliasOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStateMachineAlias", arg0)
+	ret0, _ := ret[0].(*sfn.UpdateStateMachineAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStateMachineAlias indicates an expected call of UpdateStateMachineAlias
+func (mr *MockSFNAPIMockRecorder) UpdateStateMachineAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStateMachineAlias", reflect.TypeOf((*MockSFNAPI)(nil).UpdateStateMachineAlias), arg0)
+}
+
+// UpdateStateMachineAliasRequest mocks base method
+func (m *MockSFNAPI) UpdateStateMachineAliasRequest(arg0 *sfn.UpdateStateMachineAliasInput) (*request.Request, *sfn.UpdateStateMachineAliasOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateStateMachineAliasRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sfn.UpdateStateMachineAliasOutput)
+	return ret0, ret1
+}
+
+// UpdateStateMachineAliasRequest indicates an expected call of UpdateStateMachineAliasRequest
+func (mr *MockSFNAPIMockRecorder) UpdateStateMachineAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStateMachineAliasRequest", reflect.TypeOf((*MockSFNAPI)(nil).UpdateStateMachineAliasRequest), arg0)
+}
+
+// UpdateStateMachineAliasWithContext mocks base method
+func (m *MockSFNAPI) UpdateStateMachineAliasWithContext(arg0 context.Context, arg1 *sfn.UpdateStateMachineAliasInput, arg2 ...request.Option) (*sfn.UpdateStateMachineAliasOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateStateMachineAliasWithContext", varargs...)
+	ret0, _ := ret[0].(*sfn.UpdateStateMachineAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateStateMachineAliasWithContext indicates an expected call of UpdateStateMachineAliasWithContext
+func (mr *MockSFNAPIMockRecorder) UpdateStateMachineAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateStateMachineAliasWithContext", reflect.TypeOf((*MockSFNAPI)(nil).UpdateStateMachineAliasWithContext), varargs...)
 }
 
 // UpdateStateMachineRequest mocks base method
