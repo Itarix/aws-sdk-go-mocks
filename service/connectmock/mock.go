@@ -8254,6 +8254,89 @@ func (mr *MockConnectAPIMockRecorder) SearchQuickConnectsWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchQuickConnectsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchQuickConnectsWithContext), varargs...)
 }
 
+// SearchResourceTags mocks base method
+func (m *MockConnectAPI) SearchResourceTags(arg0 *connect.SearchResourceTagsInput) (*connect.SearchResourceTagsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchResourceTags", arg0)
+	ret0, _ := ret[0].(*connect.SearchResourceTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchResourceTags indicates an expected call of SearchResourceTags
+func (mr *MockConnectAPIMockRecorder) SearchResourceTags(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchResourceTags", reflect.TypeOf((*MockConnectAPI)(nil).SearchResourceTags), arg0)
+}
+
+// SearchResourceTagsPages mocks base method
+func (m *MockConnectAPI) SearchResourceTagsPages(arg0 *connect.SearchResourceTagsInput, arg1 func(*connect.SearchResourceTagsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchResourceTagsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchResourceTagsPages indicates an expected call of SearchResourceTagsPages
+func (mr *MockConnectAPIMockRecorder) SearchResourceTagsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchResourceTagsPages", reflect.TypeOf((*MockConnectAPI)(nil).SearchResourceTagsPages), arg0, arg1)
+}
+
+// SearchResourceTagsPagesWithContext mocks base method
+func (m *MockConnectAPI) SearchResourceTagsPagesWithContext(arg0 context.Context, arg1 *connect.SearchResourceTagsInput, arg2 func(*connect.SearchResourceTagsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchResourceTagsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchResourceTagsPagesWithContext indicates an expected call of SearchResourceTagsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) SearchResourceTagsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchResourceTagsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchResourceTagsPagesWithContext), varargs...)
+}
+
+// SearchResourceTagsRequest mocks base method
+func (m *MockConnectAPI) SearchResourceTagsRequest(arg0 *connect.SearchResourceTagsInput) (*request.Request, *connect.SearchResourceTagsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchResourceTagsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.SearchResourceTagsOutput)
+	return ret0, ret1
+}
+
+// SearchResourceTagsRequest indicates an expected call of SearchResourceTagsRequest
+func (mr *MockConnectAPIMockRecorder) SearchResourceTagsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchResourceTagsRequest", reflect.TypeOf((*MockConnectAPI)(nil).SearchResourceTagsRequest), arg0)
+}
+
+// SearchResourceTagsWithContext mocks base method
+func (m *MockConnectAPI) SearchResourceTagsWithContext(arg0 context.Context, arg1 *connect.SearchResourceTagsInput, arg2 ...request.Option) (*connect.SearchResourceTagsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchResourceTagsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.SearchResourceTagsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchResourceTagsWithContext indicates an expected call of SearchResourceTagsWithContext
+func (mr *MockConnectAPIMockRecorder) SearchResourceTagsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchResourceTagsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchResourceTagsWithContext), varargs...)
+}
+
 // SearchRoutingProfiles mocks base method
 func (m *MockConnectAPI) SearchRoutingProfiles(arg0 *connect.SearchRoutingProfilesInput) (*connect.SearchRoutingProfilesOutput, error) {
 	m.ctrl.T.Helper()
