@@ -135,6 +135,56 @@ func (mr *MockKinesisVideoAPIMockRecorder) CreateStreamWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateStreamWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).CreateStreamWithContext), varargs...)
 }
 
+// DeleteEdgeConfiguration mocks base method
+func (m *MockKinesisVideoAPI) DeleteEdgeConfiguration(arg0 *kinesisvideo.DeleteEdgeConfigurationInput) (*kinesisvideo.DeleteEdgeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEdgeConfiguration", arg0)
+	ret0, _ := ret[0].(*kinesisvideo.DeleteEdgeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEdgeConfiguration indicates an expected call of DeleteEdgeConfiguration
+func (mr *MockKinesisVideoAPIMockRecorder) DeleteEdgeConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEdgeConfiguration", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DeleteEdgeConfiguration), arg0)
+}
+
+// DeleteEdgeConfigurationRequest mocks base method
+func (m *MockKinesisVideoAPI) DeleteEdgeConfigurationRequest(arg0 *kinesisvideo.DeleteEdgeConfigurationInput) (*request.Request, *kinesisvideo.DeleteEdgeConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteEdgeConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideo.DeleteEdgeConfigurationOutput)
+	return ret0, ret1
+}
+
+// DeleteEdgeConfigurationRequest indicates an expected call of DeleteEdgeConfigurationRequest
+func (mr *MockKinesisVideoAPIMockRecorder) DeleteEdgeConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEdgeConfigurationRequest", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DeleteEdgeConfigurationRequest), arg0)
+}
+
+// DeleteEdgeConfigurationWithContext mocks base method
+func (m *MockKinesisVideoAPI) DeleteEdgeConfigurationWithContext(arg0 context.Context, arg1 *kinesisvideo.DeleteEdgeConfigurationInput, arg2 ...request.Option) (*kinesisvideo.DeleteEdgeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteEdgeConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideo.DeleteEdgeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteEdgeConfigurationWithContext indicates an expected call of DeleteEdgeConfigurationWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) DeleteEdgeConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEdgeConfigurationWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).DeleteEdgeConfigurationWithContext), varargs...)
+}
+
 // DeleteSignalingChannel mocks base method
 func (m *MockKinesisVideoAPI) DeleteSignalingChannel(arg0 *kinesisvideo.DeleteSignalingChannelInput) (*kinesisvideo.DeleteSignalingChannelOutput, error) {
 	m.ctrl.T.Helper()
@@ -716,6 +766,89 @@ func (mr *MockKinesisVideoAPIMockRecorder) GetSignalingChannelEndpointWithContex
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSignalingChannelEndpointWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).GetSignalingChannelEndpointWithContext), varargs...)
+}
+
+// ListEdgeAgentConfigurations mocks base method
+func (m *MockKinesisVideoAPI) ListEdgeAgentConfigurations(arg0 *kinesisvideo.ListEdgeAgentConfigurationsInput) (*kinesisvideo.ListEdgeAgentConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEdgeAgentConfigurations", arg0)
+	ret0, _ := ret[0].(*kinesisvideo.ListEdgeAgentConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEdgeAgentConfigurations indicates an expected call of ListEdgeAgentConfigurations
+func (mr *MockKinesisVideoAPIMockRecorder) ListEdgeAgentConfigurations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEdgeAgentConfigurations", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListEdgeAgentConfigurations), arg0)
+}
+
+// ListEdgeAgentConfigurationsPages mocks base method
+func (m *MockKinesisVideoAPI) ListEdgeAgentConfigurationsPages(arg0 *kinesisvideo.ListEdgeAgentConfigurationsInput, arg1 func(*kinesisvideo.ListEdgeAgentConfigurationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEdgeAgentConfigurationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEdgeAgentConfigurationsPages indicates an expected call of ListEdgeAgentConfigurationsPages
+func (mr *MockKinesisVideoAPIMockRecorder) ListEdgeAgentConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEdgeAgentConfigurationsPages", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListEdgeAgentConfigurationsPages), arg0, arg1)
+}
+
+// ListEdgeAgentConfigurationsPagesWithContext mocks base method
+func (m *MockKinesisVideoAPI) ListEdgeAgentConfigurationsPagesWithContext(arg0 context.Context, arg1 *kinesisvideo.ListEdgeAgentConfigurationsInput, arg2 func(*kinesisvideo.ListEdgeAgentConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEdgeAgentConfigurationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListEdgeAgentConfigurationsPagesWithContext indicates an expected call of ListEdgeAgentConfigurationsPagesWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) ListEdgeAgentConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEdgeAgentConfigurationsPagesWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListEdgeAgentConfigurationsPagesWithContext), varargs...)
+}
+
+// ListEdgeAgentConfigurationsRequest mocks base method
+func (m *MockKinesisVideoAPI) ListEdgeAgentConfigurationsRequest(arg0 *kinesisvideo.ListEdgeAgentConfigurationsInput) (*request.Request, *kinesisvideo.ListEdgeAgentConfigurationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListEdgeAgentConfigurationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisvideo.ListEdgeAgentConfigurationsOutput)
+	return ret0, ret1
+}
+
+// ListEdgeAgentConfigurationsRequest indicates an expected call of ListEdgeAgentConfigurationsRequest
+func (mr *MockKinesisVideoAPIMockRecorder) ListEdgeAgentConfigurationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEdgeAgentConfigurationsRequest", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListEdgeAgentConfigurationsRequest), arg0)
+}
+
+// ListEdgeAgentConfigurationsWithContext mocks base method
+func (m *MockKinesisVideoAPI) ListEdgeAgentConfigurationsWithContext(arg0 context.Context, arg1 *kinesisvideo.ListEdgeAgentConfigurationsInput, arg2 ...request.Option) (*kinesisvideo.ListEdgeAgentConfigurationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListEdgeAgentConfigurationsWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisvideo.ListEdgeAgentConfigurationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListEdgeAgentConfigurationsWithContext indicates an expected call of ListEdgeAgentConfigurationsWithContext
+func (mr *MockKinesisVideoAPIMockRecorder) ListEdgeAgentConfigurationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEdgeAgentConfigurationsWithContext", reflect.TypeOf((*MockKinesisVideoAPI)(nil).ListEdgeAgentConfigurationsWithContext), varargs...)
 }
 
 // ListSignalingChannels mocks base method

@@ -135,6 +135,56 @@ func (mr *MockIVSAPIMockRecorder) BatchGetStreamKeyWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetStreamKeyWithContext", reflect.TypeOf((*MockIVSAPI)(nil).BatchGetStreamKeyWithContext), varargs...)
 }
 
+// BatchStartViewerSessionRevocation mocks base method
+func (m *MockIVSAPI) BatchStartViewerSessionRevocation(arg0 *ivs.BatchStartViewerSessionRevocationInput) (*ivs.BatchStartViewerSessionRevocationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchStartViewerSessionRevocation", arg0)
+	ret0, _ := ret[0].(*ivs.BatchStartViewerSessionRevocationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchStartViewerSessionRevocation indicates an expected call of BatchStartViewerSessionRevocation
+func (mr *MockIVSAPIMockRecorder) BatchStartViewerSessionRevocation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchStartViewerSessionRevocation", reflect.TypeOf((*MockIVSAPI)(nil).BatchStartViewerSessionRevocation), arg0)
+}
+
+// BatchStartViewerSessionRevocationRequest mocks base method
+func (m *MockIVSAPI) BatchStartViewerSessionRevocationRequest(arg0 *ivs.BatchStartViewerSessionRevocationInput) (*request.Request, *ivs.BatchStartViewerSessionRevocationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchStartViewerSessionRevocationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivs.BatchStartViewerSessionRevocationOutput)
+	return ret0, ret1
+}
+
+// BatchStartViewerSessionRevocationRequest indicates an expected call of BatchStartViewerSessionRevocationRequest
+func (mr *MockIVSAPIMockRecorder) BatchStartViewerSessionRevocationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchStartViewerSessionRevocationRequest", reflect.TypeOf((*MockIVSAPI)(nil).BatchStartViewerSessionRevocationRequest), arg0)
+}
+
+// BatchStartViewerSessionRevocationWithContext mocks base method
+func (m *MockIVSAPI) BatchStartViewerSessionRevocationWithContext(arg0 context.Context, arg1 *ivs.BatchStartViewerSessionRevocationInput, arg2 ...request.Option) (*ivs.BatchStartViewerSessionRevocationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchStartViewerSessionRevocationWithContext", varargs...)
+	ret0, _ := ret[0].(*ivs.BatchStartViewerSessionRevocationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchStartViewerSessionRevocationWithContext indicates an expected call of BatchStartViewerSessionRevocationWithContext
+func (mr *MockIVSAPIMockRecorder) BatchStartViewerSessionRevocationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchStartViewerSessionRevocationWithContext", reflect.TypeOf((*MockIVSAPI)(nil).BatchStartViewerSessionRevocationWithContext), varargs...)
+}
+
 // CreateChannel mocks base method
 func (m *MockIVSAPI) CreateChannel(arg0 *ivs.CreateChannelInput) (*ivs.CreateChannelOutput, error) {
 	m.ctrl.T.Helper()
@@ -1431,6 +1481,56 @@ func (mr *MockIVSAPIMockRecorder) PutMetadataWithContext(arg0, arg1 interface{},
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutMetadataWithContext", reflect.TypeOf((*MockIVSAPI)(nil).PutMetadataWithContext), varargs...)
+}
+
+// StartViewerSessionRevocation mocks base method
+func (m *MockIVSAPI) StartViewerSessionRevocation(arg0 *ivs.StartViewerSessionRevocationInput) (*ivs.StartViewerSessionRevocationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartViewerSessionRevocation", arg0)
+	ret0, _ := ret[0].(*ivs.StartViewerSessionRevocationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartViewerSessionRevocation indicates an expected call of StartViewerSessionRevocation
+func (mr *MockIVSAPIMockRecorder) StartViewerSessionRevocation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartViewerSessionRevocation", reflect.TypeOf((*MockIVSAPI)(nil).StartViewerSessionRevocation), arg0)
+}
+
+// StartViewerSessionRevocationRequest mocks base method
+func (m *MockIVSAPI) StartViewerSessionRevocationRequest(arg0 *ivs.StartViewerSessionRevocationInput) (*request.Request, *ivs.StartViewerSessionRevocationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartViewerSessionRevocationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivs.StartViewerSessionRevocationOutput)
+	return ret0, ret1
+}
+
+// StartViewerSessionRevocationRequest indicates an expected call of StartViewerSessionRevocationRequest
+func (mr *MockIVSAPIMockRecorder) StartViewerSessionRevocationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartViewerSessionRevocationRequest", reflect.TypeOf((*MockIVSAPI)(nil).StartViewerSessionRevocationRequest), arg0)
+}
+
+// StartViewerSessionRevocationWithContext mocks base method
+func (m *MockIVSAPI) StartViewerSessionRevocationWithContext(arg0 context.Context, arg1 *ivs.StartViewerSessionRevocationInput, arg2 ...request.Option) (*ivs.StartViewerSessionRevocationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartViewerSessionRevocationWithContext", varargs...)
+	ret0, _ := ret[0].(*ivs.StartViewerSessionRevocationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartViewerSessionRevocationWithContext indicates an expected call of StartViewerSessionRevocationWithContext
+func (mr *MockIVSAPIMockRecorder) StartViewerSessionRevocationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartViewerSessionRevocationWithContext", reflect.TypeOf((*MockIVSAPI)(nil).StartViewerSessionRevocationWithContext), varargs...)
 }
 
 // StopStream mocks base method
