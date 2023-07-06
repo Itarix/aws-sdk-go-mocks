@@ -2098,6 +2098,89 @@ func (mr *MockMgnAPIMockRecorder) ListImportsWithContext(arg0, arg1 interface{},
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListImportsWithContext), varargs...)
 }
 
+// ListManagedAccounts mocks base method
+func (m *MockMgnAPI) ListManagedAccounts(arg0 *mgn.ListManagedAccountsInput) (*mgn.ListManagedAccountsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListManagedAccounts", arg0)
+	ret0, _ := ret[0].(*mgn.ListManagedAccountsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListManagedAccounts indicates an expected call of ListManagedAccounts
+func (mr *MockMgnAPIMockRecorder) ListManagedAccounts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedAccounts", reflect.TypeOf((*MockMgnAPI)(nil).ListManagedAccounts), arg0)
+}
+
+// ListManagedAccountsPages mocks base method
+func (m *MockMgnAPI) ListManagedAccountsPages(arg0 *mgn.ListManagedAccountsInput, arg1 func(*mgn.ListManagedAccountsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListManagedAccountsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListManagedAccountsPages indicates an expected call of ListManagedAccountsPages
+func (mr *MockMgnAPIMockRecorder) ListManagedAccountsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedAccountsPages", reflect.TypeOf((*MockMgnAPI)(nil).ListManagedAccountsPages), arg0, arg1)
+}
+
+// ListManagedAccountsPagesWithContext mocks base method
+func (m *MockMgnAPI) ListManagedAccountsPagesWithContext(arg0 context.Context, arg1 *mgn.ListManagedAccountsInput, arg2 func(*mgn.ListManagedAccountsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListManagedAccountsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListManagedAccountsPagesWithContext indicates an expected call of ListManagedAccountsPagesWithContext
+func (mr *MockMgnAPIMockRecorder) ListManagedAccountsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedAccountsPagesWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListManagedAccountsPagesWithContext), varargs...)
+}
+
+// ListManagedAccountsRequest mocks base method
+func (m *MockMgnAPI) ListManagedAccountsRequest(arg0 *mgn.ListManagedAccountsInput) (*request.Request, *mgn.ListManagedAccountsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListManagedAccountsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.ListManagedAccountsOutput)
+	return ret0, ret1
+}
+
+// ListManagedAccountsRequest indicates an expected call of ListManagedAccountsRequest
+func (mr *MockMgnAPIMockRecorder) ListManagedAccountsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedAccountsRequest", reflect.TypeOf((*MockMgnAPI)(nil).ListManagedAccountsRequest), arg0)
+}
+
+// ListManagedAccountsWithContext mocks base method
+func (m *MockMgnAPI) ListManagedAccountsWithContext(arg0 context.Context, arg1 *mgn.ListManagedAccountsInput, arg2 ...request.Option) (*mgn.ListManagedAccountsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListManagedAccountsWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.ListManagedAccountsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListManagedAccountsWithContext indicates an expected call of ListManagedAccountsWithContext
+func (mr *MockMgnAPIMockRecorder) ListManagedAccountsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListManagedAccountsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListManagedAccountsWithContext), varargs...)
+}
+
 // ListSourceServerActions mocks base method
 func (m *MockMgnAPI) ListSourceServerActions(arg0 *mgn.ListSourceServerActionsInput) (*mgn.ListSourceServerActionsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2447,6 +2530,56 @@ func (mr *MockMgnAPIMockRecorder) MarkAsArchivedWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MarkAsArchivedWithContext", reflect.TypeOf((*MockMgnAPI)(nil).MarkAsArchivedWithContext), varargs...)
 }
 
+// PauseReplication mocks base method
+func (m *MockMgnAPI) PauseReplication(arg0 *mgn.PauseReplicationInput) (*mgn.PauseReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PauseReplication", arg0)
+	ret0, _ := ret[0].(*mgn.PauseReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PauseReplication indicates an expected call of PauseReplication
+func (mr *MockMgnAPIMockRecorder) PauseReplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PauseReplication", reflect.TypeOf((*MockMgnAPI)(nil).PauseReplication), arg0)
+}
+
+// PauseReplicationRequest mocks base method
+func (m *MockMgnAPI) PauseReplicationRequest(arg0 *mgn.PauseReplicationInput) (*request.Request, *mgn.PauseReplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PauseReplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.PauseReplicationOutput)
+	return ret0, ret1
+}
+
+// PauseReplicationRequest indicates an expected call of PauseReplicationRequest
+func (mr *MockMgnAPIMockRecorder) PauseReplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PauseReplicationRequest", reflect.TypeOf((*MockMgnAPI)(nil).PauseReplicationRequest), arg0)
+}
+
+// PauseReplicationWithContext mocks base method
+func (m *MockMgnAPI) PauseReplicationWithContext(arg0 context.Context, arg1 *mgn.PauseReplicationInput, arg2 ...request.Option) (*mgn.PauseReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PauseReplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.PauseReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PauseReplicationWithContext indicates an expected call of PauseReplicationWithContext
+func (mr *MockMgnAPIMockRecorder) PauseReplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PauseReplicationWithContext", reflect.TypeOf((*MockMgnAPI)(nil).PauseReplicationWithContext), varargs...)
+}
+
 // PutSourceServerAction mocks base method
 func (m *MockMgnAPI) PutSourceServerAction(arg0 *mgn.PutSourceServerActionInput) (*mgn.PutSourceServerActionOutput, error) {
 	m.ctrl.T.Helper()
@@ -2645,6 +2778,56 @@ func (mr *MockMgnAPIMockRecorder) RemoveTemplateActionWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveTemplateActionWithContext", reflect.TypeOf((*MockMgnAPI)(nil).RemoveTemplateActionWithContext), varargs...)
+}
+
+// ResumeReplication mocks base method
+func (m *MockMgnAPI) ResumeReplication(arg0 *mgn.ResumeReplicationInput) (*mgn.ResumeReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResumeReplication", arg0)
+	ret0, _ := ret[0].(*mgn.ResumeReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResumeReplication indicates an expected call of ResumeReplication
+func (mr *MockMgnAPIMockRecorder) ResumeReplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeReplication", reflect.TypeOf((*MockMgnAPI)(nil).ResumeReplication), arg0)
+}
+
+// ResumeReplicationRequest mocks base method
+func (m *MockMgnAPI) ResumeReplicationRequest(arg0 *mgn.ResumeReplicationInput) (*request.Request, *mgn.ResumeReplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ResumeReplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.ResumeReplicationOutput)
+	return ret0, ret1
+}
+
+// ResumeReplicationRequest indicates an expected call of ResumeReplicationRequest
+func (mr *MockMgnAPIMockRecorder) ResumeReplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeReplicationRequest", reflect.TypeOf((*MockMgnAPI)(nil).ResumeReplicationRequest), arg0)
+}
+
+// ResumeReplicationWithContext mocks base method
+func (m *MockMgnAPI) ResumeReplicationWithContext(arg0 context.Context, arg1 *mgn.ResumeReplicationInput, arg2 ...request.Option) (*mgn.ResumeReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ResumeReplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.ResumeReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ResumeReplicationWithContext indicates an expected call of ResumeReplicationWithContext
+func (mr *MockMgnAPIMockRecorder) ResumeReplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeReplicationWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ResumeReplicationWithContext), varargs...)
 }
 
 // RetryDataReplication mocks base method
@@ -2945,6 +3128,56 @@ func (mr *MockMgnAPIMockRecorder) StartTestWithContext(arg0, arg1 interface{}, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartTestWithContext", reflect.TypeOf((*MockMgnAPI)(nil).StartTestWithContext), varargs...)
+}
+
+// StopReplication mocks base method
+func (m *MockMgnAPI) StopReplication(arg0 *mgn.StopReplicationInput) (*mgn.StopReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopReplication", arg0)
+	ret0, _ := ret[0].(*mgn.StopReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopReplication indicates an expected call of StopReplication
+func (mr *MockMgnAPIMockRecorder) StopReplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopReplication", reflect.TypeOf((*MockMgnAPI)(nil).StopReplication), arg0)
+}
+
+// StopReplicationRequest mocks base method
+func (m *MockMgnAPI) StopReplicationRequest(arg0 *mgn.StopReplicationInput) (*request.Request, *mgn.StopReplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopReplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.StopReplicationOutput)
+	return ret0, ret1
+}
+
+// StopReplicationRequest indicates an expected call of StopReplicationRequest
+func (mr *MockMgnAPIMockRecorder) StopReplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopReplicationRequest", reflect.TypeOf((*MockMgnAPI)(nil).StopReplicationRequest), arg0)
+}
+
+// StopReplicationWithContext mocks base method
+func (m *MockMgnAPI) StopReplicationWithContext(arg0 context.Context, arg1 *mgn.StopReplicationInput, arg2 ...request.Option) (*mgn.StopReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopReplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.StopReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopReplicationWithContext indicates an expected call of StopReplicationWithContext
+func (mr *MockMgnAPIMockRecorder) StopReplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopReplicationWithContext", reflect.TypeOf((*MockMgnAPI)(nil).StopReplicationWithContext), varargs...)
 }
 
 // TagResource mocks base method
