@@ -1135,6 +1135,56 @@ func (mr *MockMediaLiveAPIMockRecorder) DeleteTagsWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteTagsWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DeleteTagsWithContext), varargs...)
 }
 
+// DescribeAccountConfiguration mocks base method
+func (m *MockMediaLiveAPI) DescribeAccountConfiguration(arg0 *medialive.DescribeAccountConfigurationInput) (*medialive.DescribeAccountConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccountConfiguration", arg0)
+	ret0, _ := ret[0].(*medialive.DescribeAccountConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccountConfiguration indicates an expected call of DescribeAccountConfiguration
+func (mr *MockMediaLiveAPIMockRecorder) DescribeAccountConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountConfiguration", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeAccountConfiguration), arg0)
+}
+
+// DescribeAccountConfigurationRequest mocks base method
+func (m *MockMediaLiveAPI) DescribeAccountConfigurationRequest(arg0 *medialive.DescribeAccountConfigurationInput) (*request.Request, *medialive.DescribeAccountConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAccountConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.DescribeAccountConfigurationOutput)
+	return ret0, ret1
+}
+
+// DescribeAccountConfigurationRequest indicates an expected call of DescribeAccountConfigurationRequest
+func (mr *MockMediaLiveAPIMockRecorder) DescribeAccountConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountConfigurationRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeAccountConfigurationRequest), arg0)
+}
+
+// DescribeAccountConfigurationWithContext mocks base method
+func (m *MockMediaLiveAPI) DescribeAccountConfigurationWithContext(arg0 context.Context, arg1 *medialive.DescribeAccountConfigurationInput, arg2 ...request.Option) (*medialive.DescribeAccountConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAccountConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.DescribeAccountConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAccountConfigurationWithContext indicates an expected call of DescribeAccountConfigurationWithContext
+func (mr *MockMediaLiveAPIMockRecorder) DescribeAccountConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAccountConfigurationWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeAccountConfigurationWithContext), varargs...)
+}
+
 // DescribeChannel mocks base method
 func (m *MockMediaLiveAPI) DescribeChannel(arg0 *medialive.DescribeChannelInput) (*medialive.DescribeChannelOutput, error) {
 	m.ctrl.T.Helper()
@@ -1666,6 +1716,56 @@ func (mr *MockMediaLiveAPIMockRecorder) DescribeScheduleWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeScheduleWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeScheduleWithContext), varargs...)
+}
+
+// DescribeThumbnails mocks base method
+func (m *MockMediaLiveAPI) DescribeThumbnails(arg0 *medialive.DescribeThumbnailsInput) (*medialive.DescribeThumbnailsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeThumbnails", arg0)
+	ret0, _ := ret[0].(*medialive.DescribeThumbnailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeThumbnails indicates an expected call of DescribeThumbnails
+func (mr *MockMediaLiveAPIMockRecorder) DescribeThumbnails(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeThumbnails", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeThumbnails), arg0)
+}
+
+// DescribeThumbnailsRequest mocks base method
+func (m *MockMediaLiveAPI) DescribeThumbnailsRequest(arg0 *medialive.DescribeThumbnailsInput) (*request.Request, *medialive.DescribeThumbnailsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeThumbnailsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.DescribeThumbnailsOutput)
+	return ret0, ret1
+}
+
+// DescribeThumbnailsRequest indicates an expected call of DescribeThumbnailsRequest
+func (mr *MockMediaLiveAPIMockRecorder) DescribeThumbnailsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeThumbnailsRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeThumbnailsRequest), arg0)
+}
+
+// DescribeThumbnailsWithContext mocks base method
+func (m *MockMediaLiveAPI) DescribeThumbnailsWithContext(arg0 context.Context, arg1 *medialive.DescribeThumbnailsInput, arg2 ...request.Option) (*medialive.DescribeThumbnailsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeThumbnailsWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.DescribeThumbnailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeThumbnailsWithContext indicates an expected call of DescribeThumbnailsWithContext
+func (mr *MockMediaLiveAPIMockRecorder) DescribeThumbnailsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeThumbnailsWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).DescribeThumbnailsWithContext), varargs...)
 }
 
 // ListChannels mocks base method
@@ -2913,6 +3013,56 @@ func (mr *MockMediaLiveAPIMockRecorder) TransferInputDeviceWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TransferInputDeviceWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).TransferInputDeviceWithContext), varargs...)
+}
+
+// UpdateAccountConfiguration mocks base method
+func (m *MockMediaLiveAPI) UpdateAccountConfiguration(arg0 *medialive.UpdateAccountConfigurationInput) (*medialive.UpdateAccountConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAccountConfiguration", arg0)
+	ret0, _ := ret[0].(*medialive.UpdateAccountConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAccountConfiguration indicates an expected call of UpdateAccountConfiguration
+func (mr *MockMediaLiveAPIMockRecorder) UpdateAccountConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccountConfiguration", reflect.TypeOf((*MockMediaLiveAPI)(nil).UpdateAccountConfiguration), arg0)
+}
+
+// UpdateAccountConfigurationRequest mocks base method
+func (m *MockMediaLiveAPI) UpdateAccountConfigurationRequest(arg0 *medialive.UpdateAccountConfigurationInput) (*request.Request, *medialive.UpdateAccountConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAccountConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.UpdateAccountConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateAccountConfigurationRequest indicates an expected call of UpdateAccountConfigurationRequest
+func (mr *MockMediaLiveAPIMockRecorder) UpdateAccountConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccountConfigurationRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).UpdateAccountConfigurationRequest), arg0)
+}
+
+// UpdateAccountConfigurationWithContext mocks base method
+func (m *MockMediaLiveAPI) UpdateAccountConfigurationWithContext(arg0 context.Context, arg1 *medialive.UpdateAccountConfigurationInput, arg2 ...request.Option) (*medialive.UpdateAccountConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAccountConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.UpdateAccountConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAccountConfigurationWithContext indicates an expected call of UpdateAccountConfigurationWithContext
+func (mr *MockMediaLiveAPIMockRecorder) UpdateAccountConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAccountConfigurationWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).UpdateAccountConfigurationWithContext), varargs...)
 }
 
 // UpdateChannel mocks base method

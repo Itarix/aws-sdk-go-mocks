@@ -385,6 +385,56 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) CreateFleetAdvisorCollect
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFleetAdvisorCollectorWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).CreateFleetAdvisorCollectorWithContext), varargs...)
 }
 
+// CreateReplicationConfig mocks base method
+func (m *MockDatabaseMigrationServiceAPI) CreateReplicationConfig(arg0 *databasemigrationservice.CreateReplicationConfigInput) (*databasemigrationservice.CreateReplicationConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateReplicationConfig", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.CreateReplicationConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateReplicationConfig indicates an expected call of CreateReplicationConfig
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) CreateReplicationConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReplicationConfig", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).CreateReplicationConfig), arg0)
+}
+
+// CreateReplicationConfigRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) CreateReplicationConfigRequest(arg0 *databasemigrationservice.CreateReplicationConfigInput) (*request.Request, *databasemigrationservice.CreateReplicationConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateReplicationConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.CreateReplicationConfigOutput)
+	return ret0, ret1
+}
+
+// CreateReplicationConfigRequest indicates an expected call of CreateReplicationConfigRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) CreateReplicationConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReplicationConfigRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).CreateReplicationConfigRequest), arg0)
+}
+
+// CreateReplicationConfigWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) CreateReplicationConfigWithContext(arg0 context.Context, arg1 *databasemigrationservice.CreateReplicationConfigInput, arg2 ...request.Option) (*databasemigrationservice.CreateReplicationConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateReplicationConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.CreateReplicationConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateReplicationConfigWithContext indicates an expected call of CreateReplicationConfigWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) CreateReplicationConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReplicationConfigWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).CreateReplicationConfigWithContext), varargs...)
+}
+
 // CreateReplicationInstance mocks base method
 func (m *MockDatabaseMigrationServiceAPI) CreateReplicationInstance(arg0 *databasemigrationservice.CreateReplicationInstanceInput) (*databasemigrationservice.CreateReplicationInstanceOutput, error) {
 	m.ctrl.T.Helper()
@@ -833,6 +883,56 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteFleetAdvisorDatabas
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFleetAdvisorDatabasesWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteFleetAdvisorDatabasesWithContext), varargs...)
+}
+
+// DeleteReplicationConfig mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DeleteReplicationConfig(arg0 *databasemigrationservice.DeleteReplicationConfigInput) (*databasemigrationservice.DeleteReplicationConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteReplicationConfig", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.DeleteReplicationConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteReplicationConfig indicates an expected call of DeleteReplicationConfig
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteReplicationConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReplicationConfig", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteReplicationConfig), arg0)
+}
+
+// DeleteReplicationConfigRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DeleteReplicationConfigRequest(arg0 *databasemigrationservice.DeleteReplicationConfigInput) (*request.Request, *databasemigrationservice.DeleteReplicationConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteReplicationConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.DeleteReplicationConfigOutput)
+	return ret0, ret1
+}
+
+// DeleteReplicationConfigRequest indicates an expected call of DeleteReplicationConfigRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteReplicationConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReplicationConfigRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteReplicationConfigRequest), arg0)
+}
+
+// DeleteReplicationConfigWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DeleteReplicationConfigWithContext(arg0 context.Context, arg1 *databasemigrationservice.DeleteReplicationConfigInput, arg2 ...request.Option) (*databasemigrationservice.DeleteReplicationConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteReplicationConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.DeleteReplicationConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteReplicationConfigWithContext indicates an expected call of DeleteReplicationConfigWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DeleteReplicationConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReplicationConfigWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DeleteReplicationConfigWithContext), varargs...)
 }
 
 // DeleteReplicationInstance mocks base method
@@ -2596,6 +2696,89 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeRefreshSchemasSta
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRefreshSchemasStatusWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeRefreshSchemasStatusWithContext), varargs...)
 }
 
+// DescribeReplicationConfigs mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationConfigs(arg0 *databasemigrationservice.DescribeReplicationConfigsInput) (*databasemigrationservice.DescribeReplicationConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplicationConfigs", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeReplicationConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReplicationConfigs indicates an expected call of DescribeReplicationConfigs
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationConfigs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationConfigs", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationConfigs), arg0)
+}
+
+// DescribeReplicationConfigsPages mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationConfigsPages(arg0 *databasemigrationservice.DescribeReplicationConfigsInput, arg1 func(*databasemigrationservice.DescribeReplicationConfigsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplicationConfigsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeReplicationConfigsPages indicates an expected call of DescribeReplicationConfigsPages
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationConfigsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationConfigsPages", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationConfigsPages), arg0, arg1)
+}
+
+// DescribeReplicationConfigsPagesWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationConfigsPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationConfigsInput, arg2 func(*databasemigrationservice.DescribeReplicationConfigsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReplicationConfigsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeReplicationConfigsPagesWithContext indicates an expected call of DescribeReplicationConfigsPagesWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationConfigsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationConfigsPagesWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationConfigsPagesWithContext), varargs...)
+}
+
+// DescribeReplicationConfigsRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationConfigsRequest(arg0 *databasemigrationservice.DescribeReplicationConfigsInput) (*request.Request, *databasemigrationservice.DescribeReplicationConfigsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplicationConfigsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.DescribeReplicationConfigsOutput)
+	return ret0, ret1
+}
+
+// DescribeReplicationConfigsRequest indicates an expected call of DescribeReplicationConfigsRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationConfigsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationConfigsRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationConfigsRequest), arg0)
+}
+
+// DescribeReplicationConfigsWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationConfigsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationConfigsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeReplicationConfigsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReplicationConfigsWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeReplicationConfigsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReplicationConfigsWithContext indicates an expected call of DescribeReplicationConfigsWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationConfigsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationConfigsWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationConfigsWithContext), varargs...)
+}
+
 // DescribeReplicationInstanceTaskLogs mocks base method
 func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationInstanceTaskLogs(arg0 *databasemigrationservice.DescribeReplicationInstanceTaskLogsInput) (*databasemigrationservice.DescribeReplicationInstanceTaskLogsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2843,6 +3026,89 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationSubnet
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationSubnetGroupsWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationSubnetGroupsWithContext), varargs...)
+}
+
+// DescribeReplicationTableStatistics mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationTableStatistics(arg0 *databasemigrationservice.DescribeReplicationTableStatisticsInput) (*databasemigrationservice.DescribeReplicationTableStatisticsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplicationTableStatistics", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeReplicationTableStatisticsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReplicationTableStatistics indicates an expected call of DescribeReplicationTableStatistics
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationTableStatistics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationTableStatistics", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationTableStatistics), arg0)
+}
+
+// DescribeReplicationTableStatisticsPages mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationTableStatisticsPages(arg0 *databasemigrationservice.DescribeReplicationTableStatisticsInput, arg1 func(*databasemigrationservice.DescribeReplicationTableStatisticsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplicationTableStatisticsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeReplicationTableStatisticsPages indicates an expected call of DescribeReplicationTableStatisticsPages
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationTableStatisticsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationTableStatisticsPages", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationTableStatisticsPages), arg0, arg1)
+}
+
+// DescribeReplicationTableStatisticsPagesWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationTableStatisticsPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationTableStatisticsInput, arg2 func(*databasemigrationservice.DescribeReplicationTableStatisticsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReplicationTableStatisticsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeReplicationTableStatisticsPagesWithContext indicates an expected call of DescribeReplicationTableStatisticsPagesWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationTableStatisticsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationTableStatisticsPagesWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationTableStatisticsPagesWithContext), varargs...)
+}
+
+// DescribeReplicationTableStatisticsRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationTableStatisticsRequest(arg0 *databasemigrationservice.DescribeReplicationTableStatisticsInput) (*request.Request, *databasemigrationservice.DescribeReplicationTableStatisticsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplicationTableStatisticsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.DescribeReplicationTableStatisticsOutput)
+	return ret0, ret1
+}
+
+// DescribeReplicationTableStatisticsRequest indicates an expected call of DescribeReplicationTableStatisticsRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationTableStatisticsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationTableStatisticsRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationTableStatisticsRequest), arg0)
+}
+
+// DescribeReplicationTableStatisticsWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationTableStatisticsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationTableStatisticsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeReplicationTableStatisticsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReplicationTableStatisticsWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeReplicationTableStatisticsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReplicationTableStatisticsWithContext indicates an expected call of DescribeReplicationTableStatisticsWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationTableStatisticsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationTableStatisticsWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationTableStatisticsWithContext), varargs...)
 }
 
 // DescribeReplicationTaskAssessmentResults mocks base method
@@ -3175,6 +3441,89 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationTasksW
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationTasksWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationTasksWithContext), varargs...)
+}
+
+// DescribeReplications mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplications(arg0 *databasemigrationservice.DescribeReplicationsInput) (*databasemigrationservice.DescribeReplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplications", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeReplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReplications indicates an expected call of DescribeReplications
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplications(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplications", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplications), arg0)
+}
+
+// DescribeReplicationsPages mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationsPages(arg0 *databasemigrationservice.DescribeReplicationsInput, arg1 func(*databasemigrationservice.DescribeReplicationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplicationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeReplicationsPages indicates an expected call of DescribeReplicationsPages
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationsPages", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationsPages), arg0, arg1)
+}
+
+// DescribeReplicationsPagesWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationsPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationsInput, arg2 func(*databasemigrationservice.DescribeReplicationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReplicationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeReplicationsPagesWithContext indicates an expected call of DescribeReplicationsPagesWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationsPagesWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationsPagesWithContext), varargs...)
+}
+
+// DescribeReplicationsRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationsRequest(arg0 *databasemigrationservice.DescribeReplicationsInput) (*request.Request, *databasemigrationservice.DescribeReplicationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplicationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.DescribeReplicationsOutput)
+	return ret0, ret1
+}
+
+// DescribeReplicationsRequest indicates an expected call of DescribeReplicationsRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationsRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationsRequest), arg0)
+}
+
+// DescribeReplicationsWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeReplicationsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeReplicationsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeReplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReplicationsWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeReplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReplicationsWithContext indicates an expected call of DescribeReplicationsWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeReplicationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicationsWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeReplicationsWithContext), varargs...)
 }
 
 // DescribeSchemas mocks base method
@@ -3543,6 +3892,56 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ModifyEventSubscriptionWi
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyEventSubscriptionWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).ModifyEventSubscriptionWithContext), varargs...)
 }
 
+// ModifyReplicationConfig mocks base method
+func (m *MockDatabaseMigrationServiceAPI) ModifyReplicationConfig(arg0 *databasemigrationservice.ModifyReplicationConfigInput) (*databasemigrationservice.ModifyReplicationConfigOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyReplicationConfig", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.ModifyReplicationConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyReplicationConfig indicates an expected call of ModifyReplicationConfig
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ModifyReplicationConfig(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyReplicationConfig", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).ModifyReplicationConfig), arg0)
+}
+
+// ModifyReplicationConfigRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) ModifyReplicationConfigRequest(arg0 *databasemigrationservice.ModifyReplicationConfigInput) (*request.Request, *databasemigrationservice.ModifyReplicationConfigOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyReplicationConfigRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.ModifyReplicationConfigOutput)
+	return ret0, ret1
+}
+
+// ModifyReplicationConfigRequest indicates an expected call of ModifyReplicationConfigRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ModifyReplicationConfigRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyReplicationConfigRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).ModifyReplicationConfigRequest), arg0)
+}
+
+// ModifyReplicationConfigWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) ModifyReplicationConfigWithContext(arg0 context.Context, arg1 *databasemigrationservice.ModifyReplicationConfigInput, arg2 ...request.Option) (*databasemigrationservice.ModifyReplicationConfigOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyReplicationConfigWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.ModifyReplicationConfigOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyReplicationConfigWithContext indicates an expected call of ModifyReplicationConfigWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ModifyReplicationConfigWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyReplicationConfigWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).ModifyReplicationConfigWithContext), varargs...)
+}
+
 // ModifyReplicationInstance mocks base method
 func (m *MockDatabaseMigrationServiceAPI) ModifyReplicationInstance(arg0 *databasemigrationservice.ModifyReplicationInstanceInput) (*databasemigrationservice.ModifyReplicationInstanceOutput, error) {
 	m.ctrl.T.Helper()
@@ -3843,6 +4242,56 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) RefreshSchemasWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RefreshSchemasWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).RefreshSchemasWithContext), varargs...)
 }
 
+// ReloadReplicationTables mocks base method
+func (m *MockDatabaseMigrationServiceAPI) ReloadReplicationTables(arg0 *databasemigrationservice.ReloadReplicationTablesInput) (*databasemigrationservice.ReloadReplicationTablesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ReloadReplicationTables", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.ReloadReplicationTablesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ReloadReplicationTables indicates an expected call of ReloadReplicationTables
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ReloadReplicationTables(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReloadReplicationTables", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).ReloadReplicationTables), arg0)
+}
+
+// ReloadReplicationTablesRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) ReloadReplicationTablesRequest(arg0 *databasemigrationservice.ReloadReplicationTablesInput) (*request.Request, *databasemigrationservice.ReloadReplicationTablesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ReloadReplicationTablesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.ReloadReplicationTablesOutput)
+	return ret0, ret1
+}
+
+// ReloadReplicationTablesRequest indicates an expected call of ReloadReplicationTablesRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ReloadReplicationTablesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReloadReplicationTablesRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).ReloadReplicationTablesRequest), arg0)
+}
+
+// ReloadReplicationTablesWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) ReloadReplicationTablesWithContext(arg0 context.Context, arg1 *databasemigrationservice.ReloadReplicationTablesInput, arg2 ...request.Option) (*databasemigrationservice.ReloadReplicationTablesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ReloadReplicationTablesWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.ReloadReplicationTablesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ReloadReplicationTablesWithContext indicates an expected call of ReloadReplicationTablesWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) ReloadReplicationTablesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ReloadReplicationTablesWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).ReloadReplicationTablesWithContext), varargs...)
+}
+
 // ReloadTables mocks base method
 func (m *MockDatabaseMigrationServiceAPI) ReloadTables(arg0 *databasemigrationservice.ReloadTablesInput) (*databasemigrationservice.ReloadTablesOutput, error) {
 	m.ctrl.T.Helper()
@@ -4043,6 +4492,36 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) StartRecommendationsWithC
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartRecommendationsWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).StartRecommendationsWithContext), varargs...)
 }
 
+// StartReplication mocks base method
+func (m *MockDatabaseMigrationServiceAPI) StartReplication(arg0 *databasemigrationservice.StartReplicationInput) (*databasemigrationservice.StartReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartReplication", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.StartReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartReplication indicates an expected call of StartReplication
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) StartReplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartReplication", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).StartReplication), arg0)
+}
+
+// StartReplicationRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) StartReplicationRequest(arg0 *databasemigrationservice.StartReplicationInput) (*request.Request, *databasemigrationservice.StartReplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartReplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.StartReplicationOutput)
+	return ret0, ret1
+}
+
+// StartReplicationRequest indicates an expected call of StartReplicationRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) StartReplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartReplicationRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).StartReplicationRequest), arg0)
+}
+
 // StartReplicationTask mocks base method
 func (m *MockDatabaseMigrationServiceAPI) StartReplicationTask(arg0 *databasemigrationservice.StartReplicationTaskInput) (*databasemigrationservice.StartReplicationTaskOutput, error) {
 	m.ctrl.T.Helper()
@@ -4193,6 +4672,56 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) StartReplicationTaskWithC
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartReplicationTaskWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).StartReplicationTaskWithContext), varargs...)
 }
 
+// StartReplicationWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) StartReplicationWithContext(arg0 context.Context, arg1 *databasemigrationservice.StartReplicationInput, arg2 ...request.Option) (*databasemigrationservice.StartReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartReplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.StartReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartReplicationWithContext indicates an expected call of StartReplicationWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) StartReplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartReplicationWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).StartReplicationWithContext), varargs...)
+}
+
+// StopReplication mocks base method
+func (m *MockDatabaseMigrationServiceAPI) StopReplication(arg0 *databasemigrationservice.StopReplicationInput) (*databasemigrationservice.StopReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopReplication", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.StopReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopReplication indicates an expected call of StopReplication
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) StopReplication(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopReplication", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).StopReplication), arg0)
+}
+
+// StopReplicationRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) StopReplicationRequest(arg0 *databasemigrationservice.StopReplicationInput) (*request.Request, *databasemigrationservice.StopReplicationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopReplicationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.StopReplicationOutput)
+	return ret0, ret1
+}
+
+// StopReplicationRequest indicates an expected call of StopReplicationRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) StopReplicationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopReplicationRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).StopReplicationRequest), arg0)
+}
+
 // StopReplicationTask mocks base method
 func (m *MockDatabaseMigrationServiceAPI) StopReplicationTask(arg0 *databasemigrationservice.StopReplicationTaskInput) (*databasemigrationservice.StopReplicationTaskOutput, error) {
 	m.ctrl.T.Helper()
@@ -4241,6 +4770,26 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) StopReplicationTaskWithCo
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopReplicationTaskWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).StopReplicationTaskWithContext), varargs...)
+}
+
+// StopReplicationWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) StopReplicationWithContext(arg0 context.Context, arg1 *databasemigrationservice.StopReplicationInput, arg2 ...request.Option) (*databasemigrationservice.StopReplicationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopReplicationWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.StopReplicationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopReplicationWithContext indicates an expected call of StopReplicationWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) StopReplicationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopReplicationWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).StopReplicationWithContext), varargs...)
 }
 
 // TestConnection mocks base method
