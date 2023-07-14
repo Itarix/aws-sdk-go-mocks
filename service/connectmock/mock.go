@@ -2085,6 +2085,56 @@ func (mr *MockConnectAPIMockRecorder) DeletePromptWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePromptWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeletePromptWithContext), varargs...)
 }
 
+// DeleteQueue mocks base method
+func (m *MockConnectAPI) DeleteQueue(arg0 *connect.DeleteQueueInput) (*connect.DeleteQueueOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteQueue", arg0)
+	ret0, _ := ret[0].(*connect.DeleteQueueOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteQueue indicates an expected call of DeleteQueue
+func (mr *MockConnectAPIMockRecorder) DeleteQueue(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQueue", reflect.TypeOf((*MockConnectAPI)(nil).DeleteQueue), arg0)
+}
+
+// DeleteQueueRequest mocks base method
+func (m *MockConnectAPI) DeleteQueueRequest(arg0 *connect.DeleteQueueInput) (*request.Request, *connect.DeleteQueueOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteQueueRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DeleteQueueOutput)
+	return ret0, ret1
+}
+
+// DeleteQueueRequest indicates an expected call of DeleteQueueRequest
+func (mr *MockConnectAPIMockRecorder) DeleteQueueRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQueueRequest", reflect.TypeOf((*MockConnectAPI)(nil).DeleteQueueRequest), arg0)
+}
+
+// DeleteQueueWithContext mocks base method
+func (m *MockConnectAPI) DeleteQueueWithContext(arg0 context.Context, arg1 *connect.DeleteQueueInput, arg2 ...request.Option) (*connect.DeleteQueueOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteQueueWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DeleteQueueOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteQueueWithContext indicates an expected call of DeleteQueueWithContext
+func (mr *MockConnectAPIMockRecorder) DeleteQueueWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQueueWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteQueueWithContext), varargs...)
+}
+
 // DeleteQuickConnect mocks base method
 func (m *MockConnectAPI) DeleteQuickConnect(arg0 *connect.DeleteQuickConnectInput) (*connect.DeleteQuickConnectOutput, error) {
 	m.ctrl.T.Helper()
@@ -2133,6 +2183,56 @@ func (mr *MockConnectAPIMockRecorder) DeleteQuickConnectWithContext(arg0, arg1 i
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteQuickConnectWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteQuickConnectWithContext), varargs...)
+}
+
+// DeleteRoutingProfile mocks base method
+func (m *MockConnectAPI) DeleteRoutingProfile(arg0 *connect.DeleteRoutingProfileInput) (*connect.DeleteRoutingProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRoutingProfile", arg0)
+	ret0, _ := ret[0].(*connect.DeleteRoutingProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRoutingProfile indicates an expected call of DeleteRoutingProfile
+func (mr *MockConnectAPIMockRecorder) DeleteRoutingProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoutingProfile", reflect.TypeOf((*MockConnectAPI)(nil).DeleteRoutingProfile), arg0)
+}
+
+// DeleteRoutingProfileRequest mocks base method
+func (m *MockConnectAPI) DeleteRoutingProfileRequest(arg0 *connect.DeleteRoutingProfileInput) (*request.Request, *connect.DeleteRoutingProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRoutingProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DeleteRoutingProfileOutput)
+	return ret0, ret1
+}
+
+// DeleteRoutingProfileRequest indicates an expected call of DeleteRoutingProfileRequest
+func (mr *MockConnectAPIMockRecorder) DeleteRoutingProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoutingProfileRequest", reflect.TypeOf((*MockConnectAPI)(nil).DeleteRoutingProfileRequest), arg0)
+}
+
+// DeleteRoutingProfileWithContext mocks base method
+func (m *MockConnectAPI) DeleteRoutingProfileWithContext(arg0 context.Context, arg1 *connect.DeleteRoutingProfileInput, arg2 ...request.Option) (*connect.DeleteRoutingProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRoutingProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DeleteRoutingProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRoutingProfileWithContext indicates an expected call of DeleteRoutingProfileWithContext
+func (mr *MockConnectAPIMockRecorder) DeleteRoutingProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRoutingProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteRoutingProfileWithContext), varargs...)
 }
 
 // DeleteRule mocks base method

@@ -3763,6 +3763,56 @@ func (mr *MockPersonalizeAPIMockRecorder) UpdateCampaignWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCampaignWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).UpdateCampaignWithContext), varargs...)
 }
 
+// UpdateDataset mocks base method
+func (m *MockPersonalizeAPI) UpdateDataset(arg0 *personalize.UpdateDatasetInput) (*personalize.UpdateDatasetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDataset", arg0)
+	ret0, _ := ret[0].(*personalize.UpdateDatasetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDataset indicates an expected call of UpdateDataset
+func (mr *MockPersonalizeAPIMockRecorder) UpdateDataset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataset", reflect.TypeOf((*MockPersonalizeAPI)(nil).UpdateDataset), arg0)
+}
+
+// UpdateDatasetRequest mocks base method
+func (m *MockPersonalizeAPI) UpdateDatasetRequest(arg0 *personalize.UpdateDatasetInput) (*request.Request, *personalize.UpdateDatasetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDatasetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*personalize.UpdateDatasetOutput)
+	return ret0, ret1
+}
+
+// UpdateDatasetRequest indicates an expected call of UpdateDatasetRequest
+func (mr *MockPersonalizeAPIMockRecorder) UpdateDatasetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatasetRequest", reflect.TypeOf((*MockPersonalizeAPI)(nil).UpdateDatasetRequest), arg0)
+}
+
+// UpdateDatasetWithContext mocks base method
+func (m *MockPersonalizeAPI) UpdateDatasetWithContext(arg0 context.Context, arg1 *personalize.UpdateDatasetInput, arg2 ...request.Option) (*personalize.UpdateDatasetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDatasetWithContext", varargs...)
+	ret0, _ := ret[0].(*personalize.UpdateDatasetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDatasetWithContext indicates an expected call of UpdateDatasetWithContext
+func (mr *MockPersonalizeAPIMockRecorder) UpdateDatasetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDatasetWithContext", reflect.TypeOf((*MockPersonalizeAPI)(nil).UpdateDatasetWithContext), varargs...)
+}
+
 // UpdateMetricAttribution mocks base method
 func (m *MockPersonalizeAPI) UpdateMetricAttribution(arg0 *personalize.UpdateMetricAttributionInput) (*personalize.UpdateMetricAttributionOutput, error) {
 	m.ctrl.T.Helper()
