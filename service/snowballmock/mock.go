@@ -1283,6 +1283,89 @@ func (mr *MockSnowballAPIMockRecorder) ListLongTermPricingWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLongTermPricingWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).ListLongTermPricingWithContext), varargs...)
 }
 
+// ListPickupLocations mocks base method
+func (m *MockSnowballAPI) ListPickupLocations(arg0 *snowball.ListPickupLocationsInput) (*snowball.ListPickupLocationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPickupLocations", arg0)
+	ret0, _ := ret[0].(*snowball.ListPickupLocationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPickupLocations indicates an expected call of ListPickupLocations
+func (mr *MockSnowballAPIMockRecorder) ListPickupLocations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPickupLocations", reflect.TypeOf((*MockSnowballAPI)(nil).ListPickupLocations), arg0)
+}
+
+// ListPickupLocationsPages mocks base method
+func (m *MockSnowballAPI) ListPickupLocationsPages(arg0 *snowball.ListPickupLocationsInput, arg1 func(*snowball.ListPickupLocationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPickupLocationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPickupLocationsPages indicates an expected call of ListPickupLocationsPages
+func (mr *MockSnowballAPIMockRecorder) ListPickupLocationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPickupLocationsPages", reflect.TypeOf((*MockSnowballAPI)(nil).ListPickupLocationsPages), arg0, arg1)
+}
+
+// ListPickupLocationsPagesWithContext mocks base method
+func (m *MockSnowballAPI) ListPickupLocationsPagesWithContext(arg0 context.Context, arg1 *snowball.ListPickupLocationsInput, arg2 func(*snowball.ListPickupLocationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPickupLocationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPickupLocationsPagesWithContext indicates an expected call of ListPickupLocationsPagesWithContext
+func (mr *MockSnowballAPIMockRecorder) ListPickupLocationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPickupLocationsPagesWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).ListPickupLocationsPagesWithContext), varargs...)
+}
+
+// ListPickupLocationsRequest mocks base method
+func (m *MockSnowballAPI) ListPickupLocationsRequest(arg0 *snowball.ListPickupLocationsInput) (*request.Request, *snowball.ListPickupLocationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPickupLocationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*snowball.ListPickupLocationsOutput)
+	return ret0, ret1
+}
+
+// ListPickupLocationsRequest indicates an expected call of ListPickupLocationsRequest
+func (mr *MockSnowballAPIMockRecorder) ListPickupLocationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPickupLocationsRequest", reflect.TypeOf((*MockSnowballAPI)(nil).ListPickupLocationsRequest), arg0)
+}
+
+// ListPickupLocationsWithContext mocks base method
+func (m *MockSnowballAPI) ListPickupLocationsWithContext(arg0 context.Context, arg1 *snowball.ListPickupLocationsInput, arg2 ...request.Option) (*snowball.ListPickupLocationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPickupLocationsWithContext", varargs...)
+	ret0, _ := ret[0].(*snowball.ListPickupLocationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPickupLocationsWithContext indicates an expected call of ListPickupLocationsWithContext
+func (mr *MockSnowballAPIMockRecorder) ListPickupLocationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPickupLocationsWithContext", reflect.TypeOf((*MockSnowballAPI)(nil).ListPickupLocationsWithContext), varargs...)
+}
+
 // ListServiceVersions mocks base method
 func (m *MockSnowballAPI) ListServiceVersions(arg0 *snowball.ListServiceVersionsInput) (*snowball.ListServiceVersionsOutput, error) {
 	m.ctrl.T.Helper()

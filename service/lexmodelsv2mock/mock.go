@@ -3298,6 +3298,222 @@ func (mr *MockLexModelsV2APIMockRecorder) ListImportsWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportsWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListImportsWithContext), varargs...)
 }
 
+// ListIntentMetrics mocks base method
+func (m *MockLexModelsV2API) ListIntentMetrics(arg0 *lexmodelsv2.ListIntentMetricsInput) (*lexmodelsv2.ListIntentMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIntentMetrics", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.ListIntentMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIntentMetrics indicates an expected call of ListIntentMetrics
+func (mr *MockLexModelsV2APIMockRecorder) ListIntentMetrics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIntentMetrics", reflect.TypeOf((*MockLexModelsV2API)(nil).ListIntentMetrics), arg0)
+}
+
+// ListIntentMetricsPages mocks base method
+func (m *MockLexModelsV2API) ListIntentMetricsPages(arg0 *lexmodelsv2.ListIntentMetricsInput, arg1 func(*lexmodelsv2.ListIntentMetricsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIntentMetricsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIntentMetricsPages indicates an expected call of ListIntentMetricsPages
+func (mr *MockLexModelsV2APIMockRecorder) ListIntentMetricsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIntentMetricsPages", reflect.TypeOf((*MockLexModelsV2API)(nil).ListIntentMetricsPages), arg0, arg1)
+}
+
+// ListIntentMetricsPagesWithContext mocks base method
+func (m *MockLexModelsV2API) ListIntentMetricsPagesWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListIntentMetricsInput, arg2 func(*lexmodelsv2.ListIntentMetricsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIntentMetricsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIntentMetricsPagesWithContext indicates an expected call of ListIntentMetricsPagesWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListIntentMetricsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIntentMetricsPagesWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListIntentMetricsPagesWithContext), varargs...)
+}
+
+// ListIntentMetricsRequest mocks base method
+func (m *MockLexModelsV2API) ListIntentMetricsRequest(arg0 *lexmodelsv2.ListIntentMetricsInput) (*request.Request, *lexmodelsv2.ListIntentMetricsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIntentMetricsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.ListIntentMetricsOutput)
+	return ret0, ret1
+}
+
+// ListIntentMetricsRequest indicates an expected call of ListIntentMetricsRequest
+func (mr *MockLexModelsV2APIMockRecorder) ListIntentMetricsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIntentMetricsRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).ListIntentMetricsRequest), arg0)
+}
+
+// ListIntentMetricsWithContext mocks base method
+func (m *MockLexModelsV2API) ListIntentMetricsWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListIntentMetricsInput, arg2 ...request.Option) (*lexmodelsv2.ListIntentMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIntentMetricsWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.ListIntentMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIntentMetricsWithContext indicates an expected call of ListIntentMetricsWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListIntentMetricsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIntentMetricsWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListIntentMetricsWithContext), varargs...)
+}
+
+// ListIntentPaths mocks base method
+func (m *MockLexModelsV2API) ListIntentPaths(arg0 *lexmodelsv2.ListIntentPathsInput) (*lexmodelsv2.ListIntentPathsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIntentPaths", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.ListIntentPathsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIntentPaths indicates an expected call of ListIntentPaths
+func (mr *MockLexModelsV2APIMockRecorder) ListIntentPaths(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIntentPaths", reflect.TypeOf((*MockLexModelsV2API)(nil).ListIntentPaths), arg0)
+}
+
+// ListIntentPathsRequest mocks base method
+func (m *MockLexModelsV2API) ListIntentPathsRequest(arg0 *lexmodelsv2.ListIntentPathsInput) (*request.Request, *lexmodelsv2.ListIntentPathsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIntentPathsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.ListIntentPathsOutput)
+	return ret0, ret1
+}
+
+// ListIntentPathsRequest indicates an expected call of ListIntentPathsRequest
+func (mr *MockLexModelsV2APIMockRecorder) ListIntentPathsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIntentPathsRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).ListIntentPathsRequest), arg0)
+}
+
+// ListIntentPathsWithContext mocks base method
+func (m *MockLexModelsV2API) ListIntentPathsWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListIntentPathsInput, arg2 ...request.Option) (*lexmodelsv2.ListIntentPathsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIntentPathsWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.ListIntentPathsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIntentPathsWithContext indicates an expected call of ListIntentPathsWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListIntentPathsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIntentPathsWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListIntentPathsWithContext), varargs...)
+}
+
+// ListIntentStageMetrics mocks base method
+func (m *MockLexModelsV2API) ListIntentStageMetrics(arg0 *lexmodelsv2.ListIntentStageMetricsInput) (*lexmodelsv2.ListIntentStageMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIntentStageMetrics", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.ListIntentStageMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIntentStageMetrics indicates an expected call of ListIntentStageMetrics
+func (mr *MockLexModelsV2APIMockRecorder) ListIntentStageMetrics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIntentStageMetrics", reflect.TypeOf((*MockLexModelsV2API)(nil).ListIntentStageMetrics), arg0)
+}
+
+// ListIntentStageMetricsPages mocks base method
+func (m *MockLexModelsV2API) ListIntentStageMetricsPages(arg0 *lexmodelsv2.ListIntentStageMetricsInput, arg1 func(*lexmodelsv2.ListIntentStageMetricsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIntentStageMetricsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIntentStageMetricsPages indicates an expected call of ListIntentStageMetricsPages
+func (mr *MockLexModelsV2APIMockRecorder) ListIntentStageMetricsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIntentStageMetricsPages", reflect.TypeOf((*MockLexModelsV2API)(nil).ListIntentStageMetricsPages), arg0, arg1)
+}
+
+// ListIntentStageMetricsPagesWithContext mocks base method
+func (m *MockLexModelsV2API) ListIntentStageMetricsPagesWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListIntentStageMetricsInput, arg2 func(*lexmodelsv2.ListIntentStageMetricsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIntentStageMetricsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIntentStageMetricsPagesWithContext indicates an expected call of ListIntentStageMetricsPagesWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListIntentStageMetricsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIntentStageMetricsPagesWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListIntentStageMetricsPagesWithContext), varargs...)
+}
+
+// ListIntentStageMetricsRequest mocks base method
+func (m *MockLexModelsV2API) ListIntentStageMetricsRequest(arg0 *lexmodelsv2.ListIntentStageMetricsInput) (*request.Request, *lexmodelsv2.ListIntentStageMetricsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIntentStageMetricsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.ListIntentStageMetricsOutput)
+	return ret0, ret1
+}
+
+// ListIntentStageMetricsRequest indicates an expected call of ListIntentStageMetricsRequest
+func (mr *MockLexModelsV2APIMockRecorder) ListIntentStageMetricsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIntentStageMetricsRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).ListIntentStageMetricsRequest), arg0)
+}
+
+// ListIntentStageMetricsWithContext mocks base method
+func (m *MockLexModelsV2API) ListIntentStageMetricsWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListIntentStageMetricsInput, arg2 ...request.Option) (*lexmodelsv2.ListIntentStageMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIntentStageMetricsWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.ListIntentStageMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIntentStageMetricsWithContext indicates an expected call of ListIntentStageMetricsWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListIntentStageMetricsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIntentStageMetricsWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListIntentStageMetricsWithContext), varargs...)
+}
+
 // ListIntents mocks base method
 func (m *MockLexModelsV2API) ListIntents(arg0 *lexmodelsv2.ListIntentsInput) (*lexmodelsv2.ListIntentsOutput, error) {
 	m.ctrl.T.Helper()
@@ -3462,6 +3678,172 @@ func (mr *MockLexModelsV2APIMockRecorder) ListRecommendedIntentsWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRecommendedIntentsWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListRecommendedIntentsWithContext), varargs...)
+}
+
+// ListSessionAnalyticsData mocks base method
+func (m *MockLexModelsV2API) ListSessionAnalyticsData(arg0 *lexmodelsv2.ListSessionAnalyticsDataInput) (*lexmodelsv2.ListSessionAnalyticsDataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSessionAnalyticsData", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.ListSessionAnalyticsDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSessionAnalyticsData indicates an expected call of ListSessionAnalyticsData
+func (mr *MockLexModelsV2APIMockRecorder) ListSessionAnalyticsData(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionAnalyticsData", reflect.TypeOf((*MockLexModelsV2API)(nil).ListSessionAnalyticsData), arg0)
+}
+
+// ListSessionAnalyticsDataPages mocks base method
+func (m *MockLexModelsV2API) ListSessionAnalyticsDataPages(arg0 *lexmodelsv2.ListSessionAnalyticsDataInput, arg1 func(*lexmodelsv2.ListSessionAnalyticsDataOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSessionAnalyticsDataPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSessionAnalyticsDataPages indicates an expected call of ListSessionAnalyticsDataPages
+func (mr *MockLexModelsV2APIMockRecorder) ListSessionAnalyticsDataPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionAnalyticsDataPages", reflect.TypeOf((*MockLexModelsV2API)(nil).ListSessionAnalyticsDataPages), arg0, arg1)
+}
+
+// ListSessionAnalyticsDataPagesWithContext mocks base method
+func (m *MockLexModelsV2API) ListSessionAnalyticsDataPagesWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListSessionAnalyticsDataInput, arg2 func(*lexmodelsv2.ListSessionAnalyticsDataOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSessionAnalyticsDataPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSessionAnalyticsDataPagesWithContext indicates an expected call of ListSessionAnalyticsDataPagesWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListSessionAnalyticsDataPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionAnalyticsDataPagesWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListSessionAnalyticsDataPagesWithContext), varargs...)
+}
+
+// ListSessionAnalyticsDataRequest mocks base method
+func (m *MockLexModelsV2API) ListSessionAnalyticsDataRequest(arg0 *lexmodelsv2.ListSessionAnalyticsDataInput) (*request.Request, *lexmodelsv2.ListSessionAnalyticsDataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSessionAnalyticsDataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.ListSessionAnalyticsDataOutput)
+	return ret0, ret1
+}
+
+// ListSessionAnalyticsDataRequest indicates an expected call of ListSessionAnalyticsDataRequest
+func (mr *MockLexModelsV2APIMockRecorder) ListSessionAnalyticsDataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionAnalyticsDataRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).ListSessionAnalyticsDataRequest), arg0)
+}
+
+// ListSessionAnalyticsDataWithContext mocks base method
+func (m *MockLexModelsV2API) ListSessionAnalyticsDataWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListSessionAnalyticsDataInput, arg2 ...request.Option) (*lexmodelsv2.ListSessionAnalyticsDataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSessionAnalyticsDataWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.ListSessionAnalyticsDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSessionAnalyticsDataWithContext indicates an expected call of ListSessionAnalyticsDataWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListSessionAnalyticsDataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionAnalyticsDataWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListSessionAnalyticsDataWithContext), varargs...)
+}
+
+// ListSessionMetrics mocks base method
+func (m *MockLexModelsV2API) ListSessionMetrics(arg0 *lexmodelsv2.ListSessionMetricsInput) (*lexmodelsv2.ListSessionMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSessionMetrics", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.ListSessionMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSessionMetrics indicates an expected call of ListSessionMetrics
+func (mr *MockLexModelsV2APIMockRecorder) ListSessionMetrics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionMetrics", reflect.TypeOf((*MockLexModelsV2API)(nil).ListSessionMetrics), arg0)
+}
+
+// ListSessionMetricsPages mocks base method
+func (m *MockLexModelsV2API) ListSessionMetricsPages(arg0 *lexmodelsv2.ListSessionMetricsInput, arg1 func(*lexmodelsv2.ListSessionMetricsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSessionMetricsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSessionMetricsPages indicates an expected call of ListSessionMetricsPages
+func (mr *MockLexModelsV2APIMockRecorder) ListSessionMetricsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionMetricsPages", reflect.TypeOf((*MockLexModelsV2API)(nil).ListSessionMetricsPages), arg0, arg1)
+}
+
+// ListSessionMetricsPagesWithContext mocks base method
+func (m *MockLexModelsV2API) ListSessionMetricsPagesWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListSessionMetricsInput, arg2 func(*lexmodelsv2.ListSessionMetricsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSessionMetricsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSessionMetricsPagesWithContext indicates an expected call of ListSessionMetricsPagesWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListSessionMetricsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionMetricsPagesWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListSessionMetricsPagesWithContext), varargs...)
+}
+
+// ListSessionMetricsRequest mocks base method
+func (m *MockLexModelsV2API) ListSessionMetricsRequest(arg0 *lexmodelsv2.ListSessionMetricsInput) (*request.Request, *lexmodelsv2.ListSessionMetricsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSessionMetricsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.ListSessionMetricsOutput)
+	return ret0, ret1
+}
+
+// ListSessionMetricsRequest indicates an expected call of ListSessionMetricsRequest
+func (mr *MockLexModelsV2APIMockRecorder) ListSessionMetricsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionMetricsRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).ListSessionMetricsRequest), arg0)
+}
+
+// ListSessionMetricsWithContext mocks base method
+func (m *MockLexModelsV2API) ListSessionMetricsWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListSessionMetricsInput, arg2 ...request.Option) (*lexmodelsv2.ListSessionMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSessionMetricsWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.ListSessionMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSessionMetricsWithContext indicates an expected call of ListSessionMetricsWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListSessionMetricsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSessionMetricsWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListSessionMetricsWithContext), varargs...)
 }
 
 // ListSlotTypes mocks base method
@@ -4010,6 +4392,172 @@ func (mr *MockLexModelsV2APIMockRecorder) ListTestSetsWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTestSetsWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListTestSetsWithContext), varargs...)
+}
+
+// ListUtteranceAnalyticsData mocks base method
+func (m *MockLexModelsV2API) ListUtteranceAnalyticsData(arg0 *lexmodelsv2.ListUtteranceAnalyticsDataInput) (*lexmodelsv2.ListUtteranceAnalyticsDataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUtteranceAnalyticsData", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.ListUtteranceAnalyticsDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListUtteranceAnalyticsData indicates an expected call of ListUtteranceAnalyticsData
+func (mr *MockLexModelsV2APIMockRecorder) ListUtteranceAnalyticsData(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUtteranceAnalyticsData", reflect.TypeOf((*MockLexModelsV2API)(nil).ListUtteranceAnalyticsData), arg0)
+}
+
+// ListUtteranceAnalyticsDataPages mocks base method
+func (m *MockLexModelsV2API) ListUtteranceAnalyticsDataPages(arg0 *lexmodelsv2.ListUtteranceAnalyticsDataInput, arg1 func(*lexmodelsv2.ListUtteranceAnalyticsDataOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUtteranceAnalyticsDataPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListUtteranceAnalyticsDataPages indicates an expected call of ListUtteranceAnalyticsDataPages
+func (mr *MockLexModelsV2APIMockRecorder) ListUtteranceAnalyticsDataPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUtteranceAnalyticsDataPages", reflect.TypeOf((*MockLexModelsV2API)(nil).ListUtteranceAnalyticsDataPages), arg0, arg1)
+}
+
+// ListUtteranceAnalyticsDataPagesWithContext mocks base method
+func (m *MockLexModelsV2API) ListUtteranceAnalyticsDataPagesWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListUtteranceAnalyticsDataInput, arg2 func(*lexmodelsv2.ListUtteranceAnalyticsDataOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListUtteranceAnalyticsDataPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListUtteranceAnalyticsDataPagesWithContext indicates an expected call of ListUtteranceAnalyticsDataPagesWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListUtteranceAnalyticsDataPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUtteranceAnalyticsDataPagesWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListUtteranceAnalyticsDataPagesWithContext), varargs...)
+}
+
+// ListUtteranceAnalyticsDataRequest mocks base method
+func (m *MockLexModelsV2API) ListUtteranceAnalyticsDataRequest(arg0 *lexmodelsv2.ListUtteranceAnalyticsDataInput) (*request.Request, *lexmodelsv2.ListUtteranceAnalyticsDataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUtteranceAnalyticsDataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.ListUtteranceAnalyticsDataOutput)
+	return ret0, ret1
+}
+
+// ListUtteranceAnalyticsDataRequest indicates an expected call of ListUtteranceAnalyticsDataRequest
+func (mr *MockLexModelsV2APIMockRecorder) ListUtteranceAnalyticsDataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUtteranceAnalyticsDataRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).ListUtteranceAnalyticsDataRequest), arg0)
+}
+
+// ListUtteranceAnalyticsDataWithContext mocks base method
+func (m *MockLexModelsV2API) ListUtteranceAnalyticsDataWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListUtteranceAnalyticsDataInput, arg2 ...request.Option) (*lexmodelsv2.ListUtteranceAnalyticsDataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListUtteranceAnalyticsDataWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.ListUtteranceAnalyticsDataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListUtteranceAnalyticsDataWithContext indicates an expected call of ListUtteranceAnalyticsDataWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListUtteranceAnalyticsDataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUtteranceAnalyticsDataWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListUtteranceAnalyticsDataWithContext), varargs...)
+}
+
+// ListUtteranceMetrics mocks base method
+func (m *MockLexModelsV2API) ListUtteranceMetrics(arg0 *lexmodelsv2.ListUtteranceMetricsInput) (*lexmodelsv2.ListUtteranceMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUtteranceMetrics", arg0)
+	ret0, _ := ret[0].(*lexmodelsv2.ListUtteranceMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListUtteranceMetrics indicates an expected call of ListUtteranceMetrics
+func (mr *MockLexModelsV2APIMockRecorder) ListUtteranceMetrics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUtteranceMetrics", reflect.TypeOf((*MockLexModelsV2API)(nil).ListUtteranceMetrics), arg0)
+}
+
+// ListUtteranceMetricsPages mocks base method
+func (m *MockLexModelsV2API) ListUtteranceMetricsPages(arg0 *lexmodelsv2.ListUtteranceMetricsInput, arg1 func(*lexmodelsv2.ListUtteranceMetricsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUtteranceMetricsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListUtteranceMetricsPages indicates an expected call of ListUtteranceMetricsPages
+func (mr *MockLexModelsV2APIMockRecorder) ListUtteranceMetricsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUtteranceMetricsPages", reflect.TypeOf((*MockLexModelsV2API)(nil).ListUtteranceMetricsPages), arg0, arg1)
+}
+
+// ListUtteranceMetricsPagesWithContext mocks base method
+func (m *MockLexModelsV2API) ListUtteranceMetricsPagesWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListUtteranceMetricsInput, arg2 func(*lexmodelsv2.ListUtteranceMetricsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListUtteranceMetricsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListUtteranceMetricsPagesWithContext indicates an expected call of ListUtteranceMetricsPagesWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListUtteranceMetricsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUtteranceMetricsPagesWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListUtteranceMetricsPagesWithContext), varargs...)
+}
+
+// ListUtteranceMetricsRequest mocks base method
+func (m *MockLexModelsV2API) ListUtteranceMetricsRequest(arg0 *lexmodelsv2.ListUtteranceMetricsInput) (*request.Request, *lexmodelsv2.ListUtteranceMetricsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListUtteranceMetricsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lexmodelsv2.ListUtteranceMetricsOutput)
+	return ret0, ret1
+}
+
+// ListUtteranceMetricsRequest indicates an expected call of ListUtteranceMetricsRequest
+func (mr *MockLexModelsV2APIMockRecorder) ListUtteranceMetricsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUtteranceMetricsRequest", reflect.TypeOf((*MockLexModelsV2API)(nil).ListUtteranceMetricsRequest), arg0)
+}
+
+// ListUtteranceMetricsWithContext mocks base method
+func (m *MockLexModelsV2API) ListUtteranceMetricsWithContext(arg0 context.Context, arg1 *lexmodelsv2.ListUtteranceMetricsInput, arg2 ...request.Option) (*lexmodelsv2.ListUtteranceMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListUtteranceMetricsWithContext", varargs...)
+	ret0, _ := ret[0].(*lexmodelsv2.ListUtteranceMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListUtteranceMetricsWithContext indicates an expected call of ListUtteranceMetricsWithContext
+func (mr *MockLexModelsV2APIMockRecorder) ListUtteranceMetricsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUtteranceMetricsWithContext", reflect.TypeOf((*MockLexModelsV2API)(nil).ListUtteranceMetricsWithContext), varargs...)
 }
 
 // SearchAssociatedTranscripts mocks base method

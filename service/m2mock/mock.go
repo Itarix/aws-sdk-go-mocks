@@ -785,6 +785,56 @@ func (mr *MockM2APIMockRecorder) GetEnvironmentWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnvironmentWithContext", reflect.TypeOf((*MockM2API)(nil).GetEnvironmentWithContext), varargs...)
 }
 
+// GetSignedBluinsightsUrl mocks base method
+func (m *MockM2API) GetSignedBluinsightsUrl(arg0 *m2.GetSignedBluinsightsUrlInput) (*m2.GetSignedBluinsightsUrlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSignedBluinsightsUrl", arg0)
+	ret0, _ := ret[0].(*m2.GetSignedBluinsightsUrlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSignedBluinsightsUrl indicates an expected call of GetSignedBluinsightsUrl
+func (mr *MockM2APIMockRecorder) GetSignedBluinsightsUrl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSignedBluinsightsUrl", reflect.TypeOf((*MockM2API)(nil).GetSignedBluinsightsUrl), arg0)
+}
+
+// GetSignedBluinsightsUrlRequest mocks base method
+func (m *MockM2API) GetSignedBluinsightsUrlRequest(arg0 *m2.GetSignedBluinsightsUrlInput) (*request.Request, *m2.GetSignedBluinsightsUrlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSignedBluinsightsUrlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*m2.GetSignedBluinsightsUrlOutput)
+	return ret0, ret1
+}
+
+// GetSignedBluinsightsUrlRequest indicates an expected call of GetSignedBluinsightsUrlRequest
+func (mr *MockM2APIMockRecorder) GetSignedBluinsightsUrlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSignedBluinsightsUrlRequest", reflect.TypeOf((*MockM2API)(nil).GetSignedBluinsightsUrlRequest), arg0)
+}
+
+// GetSignedBluinsightsUrlWithContext mocks base method
+func (m *MockM2API) GetSignedBluinsightsUrlWithContext(arg0 context.Context, arg1 *m2.GetSignedBluinsightsUrlInput, arg2 ...request.Option) (*m2.GetSignedBluinsightsUrlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSignedBluinsightsUrlWithContext", varargs...)
+	ret0, _ := ret[0].(*m2.GetSignedBluinsightsUrlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSignedBluinsightsUrlWithContext indicates an expected call of GetSignedBluinsightsUrlWithContext
+func (mr *MockM2APIMockRecorder) GetSignedBluinsightsUrlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSignedBluinsightsUrlWithContext", reflect.TypeOf((*MockM2API)(nil).GetSignedBluinsightsUrlWithContext), varargs...)
+}
+
 // ListApplicationVersions mocks base method
 func (m *MockM2API) ListApplicationVersions(arg0 *m2.ListApplicationVersionsInput) (*m2.ListApplicationVersionsOutput, error) {
 	m.ctrl.T.Helper()
