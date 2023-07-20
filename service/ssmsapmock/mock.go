@@ -867,6 +867,56 @@ func (mr *MockSsmSapAPIMockRecorder) RegisterApplicationWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterApplicationWithContext", reflect.TypeOf((*MockSsmSapAPI)(nil).RegisterApplicationWithContext), varargs...)
 }
 
+// StartApplicationRefresh mocks base method
+func (m *MockSsmSapAPI) StartApplicationRefresh(arg0 *ssmsap.StartApplicationRefreshInput) (*ssmsap.StartApplicationRefreshOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartApplicationRefresh", arg0)
+	ret0, _ := ret[0].(*ssmsap.StartApplicationRefreshOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartApplicationRefresh indicates an expected call of StartApplicationRefresh
+func (mr *MockSsmSapAPIMockRecorder) StartApplicationRefresh(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartApplicationRefresh", reflect.TypeOf((*MockSsmSapAPI)(nil).StartApplicationRefresh), arg0)
+}
+
+// StartApplicationRefreshRequest mocks base method
+func (m *MockSsmSapAPI) StartApplicationRefreshRequest(arg0 *ssmsap.StartApplicationRefreshInput) (*request.Request, *ssmsap.StartApplicationRefreshOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartApplicationRefreshRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ssmsap.StartApplicationRefreshOutput)
+	return ret0, ret1
+}
+
+// StartApplicationRefreshRequest indicates an expected call of StartApplicationRefreshRequest
+func (mr *MockSsmSapAPIMockRecorder) StartApplicationRefreshRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartApplicationRefreshRequest", reflect.TypeOf((*MockSsmSapAPI)(nil).StartApplicationRefreshRequest), arg0)
+}
+
+// StartApplicationRefreshWithContext mocks base method
+func (m *MockSsmSapAPI) StartApplicationRefreshWithContext(arg0 context.Context, arg1 *ssmsap.StartApplicationRefreshInput, arg2 ...request.Option) (*ssmsap.StartApplicationRefreshOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartApplicationRefreshWithContext", varargs...)
+	ret0, _ := ret[0].(*ssmsap.StartApplicationRefreshOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartApplicationRefreshWithContext indicates an expected call of StartApplicationRefreshWithContext
+func (mr *MockSsmSapAPIMockRecorder) StartApplicationRefreshWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartApplicationRefreshWithContext", reflect.TypeOf((*MockSsmSapAPI)(nil).StartApplicationRefreshWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockSsmSapAPI) TagResource(arg0 *ssmsap.TagResourceInput) (*ssmsap.TagResourceOutput, error) {
 	m.ctrl.T.Helper()

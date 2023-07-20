@@ -618,6 +618,89 @@ func (mr *MockManagedGrafanaAPIMockRecorder) ListTagsForResourceWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ListVersions mocks base method
+func (m *MockManagedGrafanaAPI) ListVersions(arg0 *managedgrafana.ListVersionsInput) (*managedgrafana.ListVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVersions", arg0)
+	ret0, _ := ret[0].(*managedgrafana.ListVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVersions indicates an expected call of ListVersions
+func (mr *MockManagedGrafanaAPIMockRecorder) ListVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVersions", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).ListVersions), arg0)
+}
+
+// ListVersionsPages mocks base method
+func (m *MockManagedGrafanaAPI) ListVersionsPages(arg0 *managedgrafana.ListVersionsInput, arg1 func(*managedgrafana.ListVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListVersionsPages indicates an expected call of ListVersionsPages
+func (mr *MockManagedGrafanaAPIMockRecorder) ListVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVersionsPages", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).ListVersionsPages), arg0, arg1)
+}
+
+// ListVersionsPagesWithContext mocks base method
+func (m *MockManagedGrafanaAPI) ListVersionsPagesWithContext(arg0 context.Context, arg1 *managedgrafana.ListVersionsInput, arg2 func(*managedgrafana.ListVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListVersionsPagesWithContext indicates an expected call of ListVersionsPagesWithContext
+func (mr *MockManagedGrafanaAPIMockRecorder) ListVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVersionsPagesWithContext", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).ListVersionsPagesWithContext), varargs...)
+}
+
+// ListVersionsRequest mocks base method
+func (m *MockManagedGrafanaAPI) ListVersionsRequest(arg0 *managedgrafana.ListVersionsInput) (*request.Request, *managedgrafana.ListVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*managedgrafana.ListVersionsOutput)
+	return ret0, ret1
+}
+
+// ListVersionsRequest indicates an expected call of ListVersionsRequest
+func (mr *MockManagedGrafanaAPIMockRecorder) ListVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVersionsRequest", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).ListVersionsRequest), arg0)
+}
+
+// ListVersionsWithContext mocks base method
+func (m *MockManagedGrafanaAPI) ListVersionsWithContext(arg0 context.Context, arg1 *managedgrafana.ListVersionsInput, arg2 ...request.Option) (*managedgrafana.ListVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*managedgrafana.ListVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListVersionsWithContext indicates an expected call of ListVersionsWithContext
+func (mr *MockManagedGrafanaAPIMockRecorder) ListVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVersionsWithContext", reflect.TypeOf((*MockManagedGrafanaAPI)(nil).ListVersionsWithContext), varargs...)
+}
+
 // ListWorkspaces mocks base method
 func (m *MockManagedGrafanaAPI) ListWorkspaces(arg0 *managedgrafana.ListWorkspacesInput) (*managedgrafana.ListWorkspacesOutput, error) {
 	m.ctrl.T.Helper()
