@@ -13300,6 +13300,89 @@ func (mr *MockSageMakerAPIMockRecorder) ListProjectsWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProjectsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListProjectsWithContext), varargs...)
 }
 
+// ListResourceCatalogs mocks base method
+func (m *MockSageMakerAPI) ListResourceCatalogs(arg0 *sagemaker.ListResourceCatalogsInput) (*sagemaker.ListResourceCatalogsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourceCatalogs", arg0)
+	ret0, _ := ret[0].(*sagemaker.ListResourceCatalogsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourceCatalogs indicates an expected call of ListResourceCatalogs
+func (mr *MockSageMakerAPIMockRecorder) ListResourceCatalogs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceCatalogs", reflect.TypeOf((*MockSageMakerAPI)(nil).ListResourceCatalogs), arg0)
+}
+
+// ListResourceCatalogsPages mocks base method
+func (m *MockSageMakerAPI) ListResourceCatalogsPages(arg0 *sagemaker.ListResourceCatalogsInput, arg1 func(*sagemaker.ListResourceCatalogsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourceCatalogsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResourceCatalogsPages indicates an expected call of ListResourceCatalogsPages
+func (mr *MockSageMakerAPIMockRecorder) ListResourceCatalogsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceCatalogsPages", reflect.TypeOf((*MockSageMakerAPI)(nil).ListResourceCatalogsPages), arg0, arg1)
+}
+
+// ListResourceCatalogsPagesWithContext mocks base method
+func (m *MockSageMakerAPI) ListResourceCatalogsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListResourceCatalogsInput, arg2 func(*sagemaker.ListResourceCatalogsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResourceCatalogsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResourceCatalogsPagesWithContext indicates an expected call of ListResourceCatalogsPagesWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListResourceCatalogsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceCatalogsPagesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListResourceCatalogsPagesWithContext), varargs...)
+}
+
+// ListResourceCatalogsRequest mocks base method
+func (m *MockSageMakerAPI) ListResourceCatalogsRequest(arg0 *sagemaker.ListResourceCatalogsInput) (*request.Request, *sagemaker.ListResourceCatalogsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResourceCatalogsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.ListResourceCatalogsOutput)
+	return ret0, ret1
+}
+
+// ListResourceCatalogsRequest indicates an expected call of ListResourceCatalogsRequest
+func (mr *MockSageMakerAPIMockRecorder) ListResourceCatalogsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceCatalogsRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).ListResourceCatalogsRequest), arg0)
+}
+
+// ListResourceCatalogsWithContext mocks base method
+func (m *MockSageMakerAPI) ListResourceCatalogsWithContext(arg0 context.Context, arg1 *sagemaker.ListResourceCatalogsInput, arg2 ...request.Option) (*sagemaker.ListResourceCatalogsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResourceCatalogsWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.ListResourceCatalogsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListResourceCatalogsWithContext indicates an expected call of ListResourceCatalogsWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListResourceCatalogsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResourceCatalogsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListResourceCatalogsWithContext), varargs...)
+}
+
 // ListSpaces mocks base method
 func (m *MockSageMakerAPI) ListSpaces(arg0 *sagemaker.ListSpacesInput) (*sagemaker.ListSpacesOutput, error) {
 	m.ctrl.T.Helper()
