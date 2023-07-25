@@ -2466,6 +2466,56 @@ func (mr *MockCloudFormationAPIMockRecorder) ListImportsWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListImportsWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).ListImportsWithContext), varargs...)
 }
 
+// ListStackInstanceResourceDrifts mocks base method
+func (m *MockCloudFormationAPI) ListStackInstanceResourceDrifts(arg0 *cloudformation.ListStackInstanceResourceDriftsInput) (*cloudformation.ListStackInstanceResourceDriftsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStackInstanceResourceDrifts", arg0)
+	ret0, _ := ret[0].(*cloudformation.ListStackInstanceResourceDriftsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStackInstanceResourceDrifts indicates an expected call of ListStackInstanceResourceDrifts
+func (mr *MockCloudFormationAPIMockRecorder) ListStackInstanceResourceDrifts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStackInstanceResourceDrifts", reflect.TypeOf((*MockCloudFormationAPI)(nil).ListStackInstanceResourceDrifts), arg0)
+}
+
+// ListStackInstanceResourceDriftsRequest mocks base method
+func (m *MockCloudFormationAPI) ListStackInstanceResourceDriftsRequest(arg0 *cloudformation.ListStackInstanceResourceDriftsInput) (*request.Request, *cloudformation.ListStackInstanceResourceDriftsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListStackInstanceResourceDriftsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudformation.ListStackInstanceResourceDriftsOutput)
+	return ret0, ret1
+}
+
+// ListStackInstanceResourceDriftsRequest indicates an expected call of ListStackInstanceResourceDriftsRequest
+func (mr *MockCloudFormationAPIMockRecorder) ListStackInstanceResourceDriftsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStackInstanceResourceDriftsRequest", reflect.TypeOf((*MockCloudFormationAPI)(nil).ListStackInstanceResourceDriftsRequest), arg0)
+}
+
+// ListStackInstanceResourceDriftsWithContext mocks base method
+func (m *MockCloudFormationAPI) ListStackInstanceResourceDriftsWithContext(arg0 context.Context, arg1 *cloudformation.ListStackInstanceResourceDriftsInput, arg2 ...request.Option) (*cloudformation.ListStackInstanceResourceDriftsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListStackInstanceResourceDriftsWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudformation.ListStackInstanceResourceDriftsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListStackInstanceResourceDriftsWithContext indicates an expected call of ListStackInstanceResourceDriftsWithContext
+func (mr *MockCloudFormationAPIMockRecorder) ListStackInstanceResourceDriftsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListStackInstanceResourceDriftsWithContext", reflect.TypeOf((*MockCloudFormationAPI)(nil).ListStackInstanceResourceDriftsWithContext), varargs...)
+}
+
 // ListStackInstances mocks base method
 func (m *MockCloudFormationAPI) ListStackInstances(arg0 *cloudformation.ListStackInstancesInput) (*cloudformation.ListStackInstancesOutput, error) {
 	m.ctrl.T.Helper()
