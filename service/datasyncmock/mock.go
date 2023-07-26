@@ -185,6 +185,56 @@ func (mr *MockDataSyncAPIMockRecorder) CreateAgentWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAgentWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateAgentWithContext), varargs...)
 }
 
+// CreateLocationAzureBlob mocks base method
+func (m *MockDataSyncAPI) CreateLocationAzureBlob(arg0 *datasync.CreateLocationAzureBlobInput) (*datasync.CreateLocationAzureBlobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLocationAzureBlob", arg0)
+	ret0, _ := ret[0].(*datasync.CreateLocationAzureBlobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLocationAzureBlob indicates an expected call of CreateLocationAzureBlob
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationAzureBlob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationAzureBlob", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationAzureBlob), arg0)
+}
+
+// CreateLocationAzureBlobRequest mocks base method
+func (m *MockDataSyncAPI) CreateLocationAzureBlobRequest(arg0 *datasync.CreateLocationAzureBlobInput) (*request.Request, *datasync.CreateLocationAzureBlobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLocationAzureBlobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.CreateLocationAzureBlobOutput)
+	return ret0, ret1
+}
+
+// CreateLocationAzureBlobRequest indicates an expected call of CreateLocationAzureBlobRequest
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationAzureBlobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationAzureBlobRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationAzureBlobRequest), arg0)
+}
+
+// CreateLocationAzureBlobWithContext mocks base method
+func (m *MockDataSyncAPI) CreateLocationAzureBlobWithContext(arg0 context.Context, arg1 *datasync.CreateLocationAzureBlobInput, arg2 ...request.Option) (*datasync.CreateLocationAzureBlobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLocationAzureBlobWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.CreateLocationAzureBlobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLocationAzureBlobWithContext indicates an expected call of CreateLocationAzureBlobWithContext
+func (mr *MockDataSyncAPIMockRecorder) CreateLocationAzureBlobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLocationAzureBlobWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).CreateLocationAzureBlobWithContext), varargs...)
+}
+
 // CreateLocationEfs mocks base method
 func (m *MockDataSyncAPI) CreateLocationEfs(arg0 *datasync.CreateLocationEfsInput) (*datasync.CreateLocationEfsOutput, error) {
 	m.ctrl.T.Helper()
@@ -983,6 +1033,56 @@ func (mr *MockDataSyncAPIMockRecorder) DescribeDiscoveryJobWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeDiscoveryJobWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeDiscoveryJobWithContext), varargs...)
+}
+
+// DescribeLocationAzureBlob mocks base method
+func (m *MockDataSyncAPI) DescribeLocationAzureBlob(arg0 *datasync.DescribeLocationAzureBlobInput) (*datasync.DescribeLocationAzureBlobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLocationAzureBlob", arg0)
+	ret0, _ := ret[0].(*datasync.DescribeLocationAzureBlobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLocationAzureBlob indicates an expected call of DescribeLocationAzureBlob
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationAzureBlob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationAzureBlob", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationAzureBlob), arg0)
+}
+
+// DescribeLocationAzureBlobRequest mocks base method
+func (m *MockDataSyncAPI) DescribeLocationAzureBlobRequest(arg0 *datasync.DescribeLocationAzureBlobInput) (*request.Request, *datasync.DescribeLocationAzureBlobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeLocationAzureBlobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.DescribeLocationAzureBlobOutput)
+	return ret0, ret1
+}
+
+// DescribeLocationAzureBlobRequest indicates an expected call of DescribeLocationAzureBlobRequest
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationAzureBlobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationAzureBlobRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationAzureBlobRequest), arg0)
+}
+
+// DescribeLocationAzureBlobWithContext mocks base method
+func (m *MockDataSyncAPI) DescribeLocationAzureBlobWithContext(arg0 context.Context, arg1 *datasync.DescribeLocationAzureBlobInput, arg2 ...request.Option) (*datasync.DescribeLocationAzureBlobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeLocationAzureBlobWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.DescribeLocationAzureBlobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeLocationAzureBlobWithContext indicates an expected call of DescribeLocationAzureBlobWithContext
+func (mr *MockDataSyncAPIMockRecorder) DescribeLocationAzureBlobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeLocationAzureBlobWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).DescribeLocationAzureBlobWithContext), varargs...)
 }
 
 // DescribeLocationEfs mocks base method
@@ -2830,6 +2930,56 @@ func (mr *MockDataSyncAPIMockRecorder) UpdateDiscoveryJobWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDiscoveryJobWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateDiscoveryJobWithContext), varargs...)
+}
+
+// UpdateLocationAzureBlob mocks base method
+func (m *MockDataSyncAPI) UpdateLocationAzureBlob(arg0 *datasync.UpdateLocationAzureBlobInput) (*datasync.UpdateLocationAzureBlobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLocationAzureBlob", arg0)
+	ret0, _ := ret[0].(*datasync.UpdateLocationAzureBlobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLocationAzureBlob indicates an expected call of UpdateLocationAzureBlob
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationAzureBlob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationAzureBlob", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationAzureBlob), arg0)
+}
+
+// UpdateLocationAzureBlobRequest mocks base method
+func (m *MockDataSyncAPI) UpdateLocationAzureBlobRequest(arg0 *datasync.UpdateLocationAzureBlobInput) (*request.Request, *datasync.UpdateLocationAzureBlobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLocationAzureBlobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datasync.UpdateLocationAzureBlobOutput)
+	return ret0, ret1
+}
+
+// UpdateLocationAzureBlobRequest indicates an expected call of UpdateLocationAzureBlobRequest
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationAzureBlobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationAzureBlobRequest", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationAzureBlobRequest), arg0)
+}
+
+// UpdateLocationAzureBlobWithContext mocks base method
+func (m *MockDataSyncAPI) UpdateLocationAzureBlobWithContext(arg0 context.Context, arg1 *datasync.UpdateLocationAzureBlobInput, arg2 ...request.Option) (*datasync.UpdateLocationAzureBlobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateLocationAzureBlobWithContext", varargs...)
+	ret0, _ := ret[0].(*datasync.UpdateLocationAzureBlobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLocationAzureBlobWithContext indicates an expected call of UpdateLocationAzureBlobWithContext
+func (mr *MockDataSyncAPIMockRecorder) UpdateLocationAzureBlobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLocationAzureBlobWithContext", reflect.TypeOf((*MockDataSyncAPI)(nil).UpdateLocationAzureBlobWithContext), varargs...)
 }
 
 // UpdateLocationHdfs mocks base method

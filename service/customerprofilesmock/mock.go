@@ -1285,6 +1285,56 @@ func (mr *MockCustomerProfilesAPIMockRecorder) GetProfileObjectTypeWithContext(a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProfileObjectTypeWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetProfileObjectTypeWithContext), varargs...)
 }
 
+// GetSimilarProfiles mocks base method
+func (m *MockCustomerProfilesAPI) GetSimilarProfiles(arg0 *customerprofiles.GetSimilarProfilesInput) (*customerprofiles.GetSimilarProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSimilarProfiles", arg0)
+	ret0, _ := ret[0].(*customerprofiles.GetSimilarProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSimilarProfiles indicates an expected call of GetSimilarProfiles
+func (mr *MockCustomerProfilesAPIMockRecorder) GetSimilarProfiles(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSimilarProfiles", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetSimilarProfiles), arg0)
+}
+
+// GetSimilarProfilesRequest mocks base method
+func (m *MockCustomerProfilesAPI) GetSimilarProfilesRequest(arg0 *customerprofiles.GetSimilarProfilesInput) (*request.Request, *customerprofiles.GetSimilarProfilesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSimilarProfilesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.GetSimilarProfilesOutput)
+	return ret0, ret1
+}
+
+// GetSimilarProfilesRequest indicates an expected call of GetSimilarProfilesRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) GetSimilarProfilesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSimilarProfilesRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetSimilarProfilesRequest), arg0)
+}
+
+// GetSimilarProfilesWithContext mocks base method
+func (m *MockCustomerProfilesAPI) GetSimilarProfilesWithContext(arg0 context.Context, arg1 *customerprofiles.GetSimilarProfilesInput, arg2 ...request.Option) (*customerprofiles.GetSimilarProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSimilarProfilesWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.GetSimilarProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSimilarProfilesWithContext indicates an expected call of GetSimilarProfilesWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) GetSimilarProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSimilarProfilesWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).GetSimilarProfilesWithContext), varargs...)
+}
+
 // GetWorkflow mocks base method
 func (m *MockCustomerProfilesAPI) GetWorkflow(arg0 *customerprofiles.GetWorkflowInput) (*customerprofiles.GetWorkflowOutput, error) {
 	m.ctrl.T.Helper()
@@ -1916,6 +1966,56 @@ func (mr *MockCustomerProfilesAPIMockRecorder) ListProfileObjectsWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProfileObjectsWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListProfileObjectsWithContext), varargs...)
+}
+
+// ListRuleBasedMatches mocks base method
+func (m *MockCustomerProfilesAPI) ListRuleBasedMatches(arg0 *customerprofiles.ListRuleBasedMatchesInput) (*customerprofiles.ListRuleBasedMatchesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRuleBasedMatches", arg0)
+	ret0, _ := ret[0].(*customerprofiles.ListRuleBasedMatchesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRuleBasedMatches indicates an expected call of ListRuleBasedMatches
+func (mr *MockCustomerProfilesAPIMockRecorder) ListRuleBasedMatches(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleBasedMatches", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListRuleBasedMatches), arg0)
+}
+
+// ListRuleBasedMatchesRequest mocks base method
+func (m *MockCustomerProfilesAPI) ListRuleBasedMatchesRequest(arg0 *customerprofiles.ListRuleBasedMatchesInput) (*request.Request, *customerprofiles.ListRuleBasedMatchesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRuleBasedMatchesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*customerprofiles.ListRuleBasedMatchesOutput)
+	return ret0, ret1
+}
+
+// ListRuleBasedMatchesRequest indicates an expected call of ListRuleBasedMatchesRequest
+func (mr *MockCustomerProfilesAPIMockRecorder) ListRuleBasedMatchesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleBasedMatchesRequest", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListRuleBasedMatchesRequest), arg0)
+}
+
+// ListRuleBasedMatchesWithContext mocks base method
+func (m *MockCustomerProfilesAPI) ListRuleBasedMatchesWithContext(arg0 context.Context, arg1 *customerprofiles.ListRuleBasedMatchesInput, arg2 ...request.Option) (*customerprofiles.ListRuleBasedMatchesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRuleBasedMatchesWithContext", varargs...)
+	ret0, _ := ret[0].(*customerprofiles.ListRuleBasedMatchesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRuleBasedMatchesWithContext indicates an expected call of ListRuleBasedMatchesWithContext
+func (mr *MockCustomerProfilesAPIMockRecorder) ListRuleBasedMatchesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleBasedMatchesWithContext", reflect.TypeOf((*MockCustomerProfilesAPI)(nil).ListRuleBasedMatchesWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method

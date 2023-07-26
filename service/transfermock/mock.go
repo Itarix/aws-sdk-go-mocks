@@ -2798,6 +2798,56 @@ func (mr *MockTransferAPIMockRecorder) TagResourceWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockTransferAPI)(nil).TagResourceWithContext), varargs...)
 }
 
+// TestConnection mocks base method
+func (m *MockTransferAPI) TestConnection(arg0 *transfer.TestConnectionInput) (*transfer.TestConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TestConnection", arg0)
+	ret0, _ := ret[0].(*transfer.TestConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TestConnection indicates an expected call of TestConnection
+func (mr *MockTransferAPIMockRecorder) TestConnection(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestConnection", reflect.TypeOf((*MockTransferAPI)(nil).TestConnection), arg0)
+}
+
+// TestConnectionRequest mocks base method
+func (m *MockTransferAPI) TestConnectionRequest(arg0 *transfer.TestConnectionInput) (*request.Request, *transfer.TestConnectionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TestConnectionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*transfer.TestConnectionOutput)
+	return ret0, ret1
+}
+
+// TestConnectionRequest indicates an expected call of TestConnectionRequest
+func (mr *MockTransferAPIMockRecorder) TestConnectionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestConnectionRequest", reflect.TypeOf((*MockTransferAPI)(nil).TestConnectionRequest), arg0)
+}
+
+// TestConnectionWithContext mocks base method
+func (m *MockTransferAPI) TestConnectionWithContext(arg0 context.Context, arg1 *transfer.TestConnectionInput, arg2 ...request.Option) (*transfer.TestConnectionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TestConnectionWithContext", varargs...)
+	ret0, _ := ret[0].(*transfer.TestConnectionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TestConnectionWithContext indicates an expected call of TestConnectionWithContext
+func (mr *MockTransferAPIMockRecorder) TestConnectionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TestConnectionWithContext", reflect.TypeOf((*MockTransferAPI)(nil).TestConnectionWithContext), varargs...)
+}
+
 // TestIdentityProvider mocks base method
 func (m *MockTransferAPI) TestIdentityProvider(arg0 *transfer.TestIdentityProviderInput) (*transfer.TestIdentityProviderOutput, error) {
 	m.ctrl.T.Helper()
