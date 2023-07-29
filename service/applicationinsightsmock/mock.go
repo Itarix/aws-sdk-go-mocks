@@ -35,6 +35,56 @@ func (m *MockApplicationInsightsAPI) EXPECT() *MockApplicationInsightsAPIMockRec
 	return m.recorder
 }
 
+// AddWorkload mocks base method
+func (m *MockApplicationInsightsAPI) AddWorkload(arg0 *applicationinsights.AddWorkloadInput) (*applicationinsights.AddWorkloadOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddWorkload", arg0)
+	ret0, _ := ret[0].(*applicationinsights.AddWorkloadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddWorkload indicates an expected call of AddWorkload
+func (mr *MockApplicationInsightsAPIMockRecorder) AddWorkload(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddWorkload", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).AddWorkload), arg0)
+}
+
+// AddWorkloadRequest mocks base method
+func (m *MockApplicationInsightsAPI) AddWorkloadRequest(arg0 *applicationinsights.AddWorkloadInput) (*request.Request, *applicationinsights.AddWorkloadOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AddWorkloadRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.AddWorkloadOutput)
+	return ret0, ret1
+}
+
+// AddWorkloadRequest indicates an expected call of AddWorkloadRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) AddWorkloadRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddWorkloadRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).AddWorkloadRequest), arg0)
+}
+
+// AddWorkloadWithContext mocks base method
+func (m *MockApplicationInsightsAPI) AddWorkloadWithContext(arg0 context.Context, arg1 *applicationinsights.AddWorkloadInput, arg2 ...request.Option) (*applicationinsights.AddWorkloadOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AddWorkloadWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.AddWorkloadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AddWorkloadWithContext indicates an expected call of AddWorkloadWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) AddWorkloadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddWorkloadWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).AddWorkloadWithContext), varargs...)
+}
+
 // CreateApplication mocks base method
 func (m *MockApplicationInsightsAPI) CreateApplication(arg0 *applicationinsights.CreateApplicationInput) (*applicationinsights.CreateApplicationOutput, error) {
 	m.ctrl.T.Helper()
@@ -735,6 +785,56 @@ func (mr *MockApplicationInsightsAPIMockRecorder) DescribeProblemWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeProblemWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).DescribeProblemWithContext), varargs...)
 }
 
+// DescribeWorkload mocks base method
+func (m *MockApplicationInsightsAPI) DescribeWorkload(arg0 *applicationinsights.DescribeWorkloadInput) (*applicationinsights.DescribeWorkloadOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkload", arg0)
+	ret0, _ := ret[0].(*applicationinsights.DescribeWorkloadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkload indicates an expected call of DescribeWorkload
+func (mr *MockApplicationInsightsAPIMockRecorder) DescribeWorkload(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkload", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).DescribeWorkload), arg0)
+}
+
+// DescribeWorkloadRequest mocks base method
+func (m *MockApplicationInsightsAPI) DescribeWorkloadRequest(arg0 *applicationinsights.DescribeWorkloadInput) (*request.Request, *applicationinsights.DescribeWorkloadOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkloadRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.DescribeWorkloadOutput)
+	return ret0, ret1
+}
+
+// DescribeWorkloadRequest indicates an expected call of DescribeWorkloadRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) DescribeWorkloadRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkloadRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).DescribeWorkloadRequest), arg0)
+}
+
+// DescribeWorkloadWithContext mocks base method
+func (m *MockApplicationInsightsAPI) DescribeWorkloadWithContext(arg0 context.Context, arg1 *applicationinsights.DescribeWorkloadInput, arg2 ...request.Option) (*applicationinsights.DescribeWorkloadOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWorkloadWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.DescribeWorkloadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkloadWithContext indicates an expected call of DescribeWorkloadWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) DescribeWorkloadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkloadWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).DescribeWorkloadWithContext), varargs...)
+}
+
 // ListApplications mocks base method
 func (m *MockApplicationInsightsAPI) ListApplications(arg0 *applicationinsights.ListApplicationsInput) (*applicationinsights.ListApplicationsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1283,6 +1383,139 @@ func (mr *MockApplicationInsightsAPIMockRecorder) ListTagsForResourceWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// ListWorkloads mocks base method
+func (m *MockApplicationInsightsAPI) ListWorkloads(arg0 *applicationinsights.ListWorkloadsInput) (*applicationinsights.ListWorkloadsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkloads", arg0)
+	ret0, _ := ret[0].(*applicationinsights.ListWorkloadsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorkloads indicates an expected call of ListWorkloads
+func (mr *MockApplicationInsightsAPIMockRecorder) ListWorkloads(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkloads", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListWorkloads), arg0)
+}
+
+// ListWorkloadsPages mocks base method
+func (m *MockApplicationInsightsAPI) ListWorkloadsPages(arg0 *applicationinsights.ListWorkloadsInput, arg1 func(*applicationinsights.ListWorkloadsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkloadsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorkloadsPages indicates an expected call of ListWorkloadsPages
+func (mr *MockApplicationInsightsAPIMockRecorder) ListWorkloadsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkloadsPages", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListWorkloadsPages), arg0, arg1)
+}
+
+// ListWorkloadsPagesWithContext mocks base method
+func (m *MockApplicationInsightsAPI) ListWorkloadsPagesWithContext(arg0 context.Context, arg1 *applicationinsights.ListWorkloadsInput, arg2 func(*applicationinsights.ListWorkloadsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorkloadsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListWorkloadsPagesWithContext indicates an expected call of ListWorkloadsPagesWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) ListWorkloadsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkloadsPagesWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListWorkloadsPagesWithContext), varargs...)
+}
+
+// ListWorkloadsRequest mocks base method
+func (m *MockApplicationInsightsAPI) ListWorkloadsRequest(arg0 *applicationinsights.ListWorkloadsInput) (*request.Request, *applicationinsights.ListWorkloadsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListWorkloadsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.ListWorkloadsOutput)
+	return ret0, ret1
+}
+
+// ListWorkloadsRequest indicates an expected call of ListWorkloadsRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) ListWorkloadsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkloadsRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListWorkloadsRequest), arg0)
+}
+
+// ListWorkloadsWithContext mocks base method
+func (m *MockApplicationInsightsAPI) ListWorkloadsWithContext(arg0 context.Context, arg1 *applicationinsights.ListWorkloadsInput, arg2 ...request.Option) (*applicationinsights.ListWorkloadsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListWorkloadsWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.ListWorkloadsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListWorkloadsWithContext indicates an expected call of ListWorkloadsWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) ListWorkloadsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWorkloadsWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).ListWorkloadsWithContext), varargs...)
+}
+
+// RemoveWorkload mocks base method
+func (m *MockApplicationInsightsAPI) RemoveWorkload(arg0 *applicationinsights.RemoveWorkloadInput) (*applicationinsights.RemoveWorkloadOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveWorkload", arg0)
+	ret0, _ := ret[0].(*applicationinsights.RemoveWorkloadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveWorkload indicates an expected call of RemoveWorkload
+func (mr *MockApplicationInsightsAPIMockRecorder) RemoveWorkload(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveWorkload", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).RemoveWorkload), arg0)
+}
+
+// RemoveWorkloadRequest mocks base method
+func (m *MockApplicationInsightsAPI) RemoveWorkloadRequest(arg0 *applicationinsights.RemoveWorkloadInput) (*request.Request, *applicationinsights.RemoveWorkloadOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RemoveWorkloadRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.RemoveWorkloadOutput)
+	return ret0, ret1
+}
+
+// RemoveWorkloadRequest indicates an expected call of RemoveWorkloadRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) RemoveWorkloadRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveWorkloadRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).RemoveWorkloadRequest), arg0)
+}
+
+// RemoveWorkloadWithContext mocks base method
+func (m *MockApplicationInsightsAPI) RemoveWorkloadWithContext(arg0 context.Context, arg1 *applicationinsights.RemoveWorkloadInput, arg2 ...request.Option) (*applicationinsights.RemoveWorkloadOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RemoveWorkloadWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.RemoveWorkloadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RemoveWorkloadWithContext indicates an expected call of RemoveWorkloadWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) RemoveWorkloadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RemoveWorkloadWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).RemoveWorkloadWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockApplicationInsightsAPI) TagResource(arg0 *applicationinsights.TagResourceInput) (*applicationinsights.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1581,4 +1814,104 @@ func (mr *MockApplicationInsightsAPIMockRecorder) UpdateLogPatternWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLogPatternWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UpdateLogPatternWithContext), varargs...)
+}
+
+// UpdateProblem mocks base method
+func (m *MockApplicationInsightsAPI) UpdateProblem(arg0 *applicationinsights.UpdateProblemInput) (*applicationinsights.UpdateProblemOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProblem", arg0)
+	ret0, _ := ret[0].(*applicationinsights.UpdateProblemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProblem indicates an expected call of UpdateProblem
+func (mr *MockApplicationInsightsAPIMockRecorder) UpdateProblem(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProblem", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UpdateProblem), arg0)
+}
+
+// UpdateProblemRequest mocks base method
+func (m *MockApplicationInsightsAPI) UpdateProblemRequest(arg0 *applicationinsights.UpdateProblemInput) (*request.Request, *applicationinsights.UpdateProblemOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProblemRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.UpdateProblemOutput)
+	return ret0, ret1
+}
+
+// UpdateProblemRequest indicates an expected call of UpdateProblemRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) UpdateProblemRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProblemRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UpdateProblemRequest), arg0)
+}
+
+// UpdateProblemWithContext mocks base method
+func (m *MockApplicationInsightsAPI) UpdateProblemWithContext(arg0 context.Context, arg1 *applicationinsights.UpdateProblemInput, arg2 ...request.Option) (*applicationinsights.UpdateProblemOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateProblemWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.UpdateProblemOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProblemWithContext indicates an expected call of UpdateProblemWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) UpdateProblemWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProblemWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UpdateProblemWithContext), varargs...)
+}
+
+// UpdateWorkload mocks base method
+func (m *MockApplicationInsightsAPI) UpdateWorkload(arg0 *applicationinsights.UpdateWorkloadInput) (*applicationinsights.UpdateWorkloadOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkload", arg0)
+	ret0, _ := ret[0].(*applicationinsights.UpdateWorkloadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkload indicates an expected call of UpdateWorkload
+func (mr *MockApplicationInsightsAPIMockRecorder) UpdateWorkload(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkload", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UpdateWorkload), arg0)
+}
+
+// UpdateWorkloadRequest mocks base method
+func (m *MockApplicationInsightsAPI) UpdateWorkloadRequest(arg0 *applicationinsights.UpdateWorkloadInput) (*request.Request, *applicationinsights.UpdateWorkloadOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkloadRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationinsights.UpdateWorkloadOutput)
+	return ret0, ret1
+}
+
+// UpdateWorkloadRequest indicates an expected call of UpdateWorkloadRequest
+func (mr *MockApplicationInsightsAPIMockRecorder) UpdateWorkloadRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkloadRequest", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UpdateWorkloadRequest), arg0)
+}
+
+// UpdateWorkloadWithContext mocks base method
+func (m *MockApplicationInsightsAPI) UpdateWorkloadWithContext(arg0 context.Context, arg1 *applicationinsights.UpdateWorkloadInput, arg2 ...request.Option) (*applicationinsights.UpdateWorkloadOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateWorkloadWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationinsights.UpdateWorkloadOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkloadWithContext indicates an expected call of UpdateWorkloadWithContext
+func (mr *MockApplicationInsightsAPIMockRecorder) UpdateWorkloadWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkloadWithContext", reflect.TypeOf((*MockApplicationInsightsAPI)(nil).UpdateWorkloadWithContext), varargs...)
 }

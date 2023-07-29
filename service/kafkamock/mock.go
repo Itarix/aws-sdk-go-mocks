@@ -580,6 +580,56 @@ func (mr *MockKafkaAPIMockRecorder) DescribeClusterOperationRequest(arg0 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterOperationRequest", reflect.TypeOf((*MockKafkaAPI)(nil).DescribeClusterOperationRequest), arg0)
 }
 
+// DescribeClusterOperationV2 mocks base method
+func (m *MockKafkaAPI) DescribeClusterOperationV2(arg0 *kafka.DescribeClusterOperationV2Input) (*kafka.DescribeClusterOperationV2Output, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeClusterOperationV2", arg0)
+	ret0, _ := ret[0].(*kafka.DescribeClusterOperationV2Output)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeClusterOperationV2 indicates an expected call of DescribeClusterOperationV2
+func (mr *MockKafkaAPIMockRecorder) DescribeClusterOperationV2(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterOperationV2", reflect.TypeOf((*MockKafkaAPI)(nil).DescribeClusterOperationV2), arg0)
+}
+
+// DescribeClusterOperationV2Request mocks base method
+func (m *MockKafkaAPI) DescribeClusterOperationV2Request(arg0 *kafka.DescribeClusterOperationV2Input) (*request.Request, *kafka.DescribeClusterOperationV2Output) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeClusterOperationV2Request", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.DescribeClusterOperationV2Output)
+	return ret0, ret1
+}
+
+// DescribeClusterOperationV2Request indicates an expected call of DescribeClusterOperationV2Request
+func (mr *MockKafkaAPIMockRecorder) DescribeClusterOperationV2Request(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterOperationV2Request", reflect.TypeOf((*MockKafkaAPI)(nil).DescribeClusterOperationV2Request), arg0)
+}
+
+// DescribeClusterOperationV2WithContext mocks base method
+func (m *MockKafkaAPI) DescribeClusterOperationV2WithContext(arg0 context.Context, arg1 *kafka.DescribeClusterOperationV2Input, arg2 ...request.Option) (*kafka.DescribeClusterOperationV2Output, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeClusterOperationV2WithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.DescribeClusterOperationV2Output)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeClusterOperationV2WithContext indicates an expected call of DescribeClusterOperationV2WithContext
+func (mr *MockKafkaAPIMockRecorder) DescribeClusterOperationV2WithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClusterOperationV2WithContext", reflect.TypeOf((*MockKafkaAPI)(nil).DescribeClusterOperationV2WithContext), varargs...)
+}
+
 // DescribeClusterOperationWithContext mocks base method
 func (m *MockKafkaAPI) DescribeClusterOperationWithContext(arg0 context.Context, arg1 *kafka.DescribeClusterOperationInput, arg2 ...request.Option) (*kafka.DescribeClusterOperationOutput, error) {
 	m.ctrl.T.Helper()
@@ -1129,6 +1179,89 @@ func (m *MockKafkaAPI) ListClusterOperationsRequest(arg0 *kafka.ListClusterOpera
 func (mr *MockKafkaAPIMockRecorder) ListClusterOperationsRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClusterOperationsRequest", reflect.TypeOf((*MockKafkaAPI)(nil).ListClusterOperationsRequest), arg0)
+}
+
+// ListClusterOperationsV2 mocks base method
+func (m *MockKafkaAPI) ListClusterOperationsV2(arg0 *kafka.ListClusterOperationsV2Input) (*kafka.ListClusterOperationsV2Output, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListClusterOperationsV2", arg0)
+	ret0, _ := ret[0].(*kafka.ListClusterOperationsV2Output)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListClusterOperationsV2 indicates an expected call of ListClusterOperationsV2
+func (mr *MockKafkaAPIMockRecorder) ListClusterOperationsV2(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClusterOperationsV2", reflect.TypeOf((*MockKafkaAPI)(nil).ListClusterOperationsV2), arg0)
+}
+
+// ListClusterOperationsV2Pages mocks base method
+func (m *MockKafkaAPI) ListClusterOperationsV2Pages(arg0 *kafka.ListClusterOperationsV2Input, arg1 func(*kafka.ListClusterOperationsV2Output, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListClusterOperationsV2Pages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListClusterOperationsV2Pages indicates an expected call of ListClusterOperationsV2Pages
+func (mr *MockKafkaAPIMockRecorder) ListClusterOperationsV2Pages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClusterOperationsV2Pages", reflect.TypeOf((*MockKafkaAPI)(nil).ListClusterOperationsV2Pages), arg0, arg1)
+}
+
+// ListClusterOperationsV2PagesWithContext mocks base method
+func (m *MockKafkaAPI) ListClusterOperationsV2PagesWithContext(arg0 context.Context, arg1 *kafka.ListClusterOperationsV2Input, arg2 func(*kafka.ListClusterOperationsV2Output, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListClusterOperationsV2PagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListClusterOperationsV2PagesWithContext indicates an expected call of ListClusterOperationsV2PagesWithContext
+func (mr *MockKafkaAPIMockRecorder) ListClusterOperationsV2PagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClusterOperationsV2PagesWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListClusterOperationsV2PagesWithContext), varargs...)
+}
+
+// ListClusterOperationsV2Request mocks base method
+func (m *MockKafkaAPI) ListClusterOperationsV2Request(arg0 *kafka.ListClusterOperationsV2Input) (*request.Request, *kafka.ListClusterOperationsV2Output) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListClusterOperationsV2Request", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.ListClusterOperationsV2Output)
+	return ret0, ret1
+}
+
+// ListClusterOperationsV2Request indicates an expected call of ListClusterOperationsV2Request
+func (mr *MockKafkaAPIMockRecorder) ListClusterOperationsV2Request(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClusterOperationsV2Request", reflect.TypeOf((*MockKafkaAPI)(nil).ListClusterOperationsV2Request), arg0)
+}
+
+// ListClusterOperationsV2WithContext mocks base method
+func (m *MockKafkaAPI) ListClusterOperationsV2WithContext(arg0 context.Context, arg1 *kafka.ListClusterOperationsV2Input, arg2 ...request.Option) (*kafka.ListClusterOperationsV2Output, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListClusterOperationsV2WithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.ListClusterOperationsV2Output)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListClusterOperationsV2WithContext indicates an expected call of ListClusterOperationsV2WithContext
+func (mr *MockKafkaAPIMockRecorder) ListClusterOperationsV2WithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListClusterOperationsV2WithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListClusterOperationsV2WithContext), varargs...)
 }
 
 // ListClusterOperationsWithContext mocks base method
