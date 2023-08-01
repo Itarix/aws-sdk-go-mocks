@@ -35,6 +35,56 @@ func (m *MockCleanRoomsAPI) EXPECT() *MockCleanRoomsAPIMockRecorder {
 	return m.recorder
 }
 
+// BatchGetCollaborationAnalysisTemplate mocks base method
+func (m *MockCleanRoomsAPI) BatchGetCollaborationAnalysisTemplate(arg0 *cleanrooms.BatchGetCollaborationAnalysisTemplateInput) (*cleanrooms.BatchGetCollaborationAnalysisTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetCollaborationAnalysisTemplate", arg0)
+	ret0, _ := ret[0].(*cleanrooms.BatchGetCollaborationAnalysisTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetCollaborationAnalysisTemplate indicates an expected call of BatchGetCollaborationAnalysisTemplate
+func (mr *MockCleanRoomsAPIMockRecorder) BatchGetCollaborationAnalysisTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCollaborationAnalysisTemplate", reflect.TypeOf((*MockCleanRoomsAPI)(nil).BatchGetCollaborationAnalysisTemplate), arg0)
+}
+
+// BatchGetCollaborationAnalysisTemplateRequest mocks base method
+func (m *MockCleanRoomsAPI) BatchGetCollaborationAnalysisTemplateRequest(arg0 *cleanrooms.BatchGetCollaborationAnalysisTemplateInput) (*request.Request, *cleanrooms.BatchGetCollaborationAnalysisTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetCollaborationAnalysisTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.BatchGetCollaborationAnalysisTemplateOutput)
+	return ret0, ret1
+}
+
+// BatchGetCollaborationAnalysisTemplateRequest indicates an expected call of BatchGetCollaborationAnalysisTemplateRequest
+func (mr *MockCleanRoomsAPIMockRecorder) BatchGetCollaborationAnalysisTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCollaborationAnalysisTemplateRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).BatchGetCollaborationAnalysisTemplateRequest), arg0)
+}
+
+// BatchGetCollaborationAnalysisTemplateWithContext mocks base method
+func (m *MockCleanRoomsAPI) BatchGetCollaborationAnalysisTemplateWithContext(arg0 context.Context, arg1 *cleanrooms.BatchGetCollaborationAnalysisTemplateInput, arg2 ...request.Option) (*cleanrooms.BatchGetCollaborationAnalysisTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetCollaborationAnalysisTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.BatchGetCollaborationAnalysisTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetCollaborationAnalysisTemplateWithContext indicates an expected call of BatchGetCollaborationAnalysisTemplateWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) BatchGetCollaborationAnalysisTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCollaborationAnalysisTemplateWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).BatchGetCollaborationAnalysisTemplateWithContext), varargs...)
+}
+
 // BatchGetSchema mocks base method
 func (m *MockCleanRoomsAPI) BatchGetSchema(arg0 *cleanrooms.BatchGetSchemaInput) (*cleanrooms.BatchGetSchemaOutput, error) {
 	m.ctrl.T.Helper()
@@ -83,6 +133,56 @@ func (mr *MockCleanRoomsAPIMockRecorder) BatchGetSchemaWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetSchemaWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).BatchGetSchemaWithContext), varargs...)
+}
+
+// CreateAnalysisTemplate mocks base method
+func (m *MockCleanRoomsAPI) CreateAnalysisTemplate(arg0 *cleanrooms.CreateAnalysisTemplateInput) (*cleanrooms.CreateAnalysisTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAnalysisTemplate", arg0)
+	ret0, _ := ret[0].(*cleanrooms.CreateAnalysisTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAnalysisTemplate indicates an expected call of CreateAnalysisTemplate
+func (mr *MockCleanRoomsAPIMockRecorder) CreateAnalysisTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnalysisTemplate", reflect.TypeOf((*MockCleanRoomsAPI)(nil).CreateAnalysisTemplate), arg0)
+}
+
+// CreateAnalysisTemplateRequest mocks base method
+func (m *MockCleanRoomsAPI) CreateAnalysisTemplateRequest(arg0 *cleanrooms.CreateAnalysisTemplateInput) (*request.Request, *cleanrooms.CreateAnalysisTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAnalysisTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.CreateAnalysisTemplateOutput)
+	return ret0, ret1
+}
+
+// CreateAnalysisTemplateRequest indicates an expected call of CreateAnalysisTemplateRequest
+func (mr *MockCleanRoomsAPIMockRecorder) CreateAnalysisTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnalysisTemplateRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).CreateAnalysisTemplateRequest), arg0)
+}
+
+// CreateAnalysisTemplateWithContext mocks base method
+func (m *MockCleanRoomsAPI) CreateAnalysisTemplateWithContext(arg0 context.Context, arg1 *cleanrooms.CreateAnalysisTemplateInput, arg2 ...request.Option) (*cleanrooms.CreateAnalysisTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAnalysisTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.CreateAnalysisTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAnalysisTemplateWithContext indicates an expected call of CreateAnalysisTemplateWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) CreateAnalysisTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnalysisTemplateWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).CreateAnalysisTemplateWithContext), varargs...)
 }
 
 // CreateCollaboration mocks base method
@@ -333,6 +433,56 @@ func (mr *MockCleanRoomsAPIMockRecorder) CreateMembershipWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateMembershipWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).CreateMembershipWithContext), varargs...)
+}
+
+// DeleteAnalysisTemplate mocks base method
+func (m *MockCleanRoomsAPI) DeleteAnalysisTemplate(arg0 *cleanrooms.DeleteAnalysisTemplateInput) (*cleanrooms.DeleteAnalysisTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAnalysisTemplate", arg0)
+	ret0, _ := ret[0].(*cleanrooms.DeleteAnalysisTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAnalysisTemplate indicates an expected call of DeleteAnalysisTemplate
+func (mr *MockCleanRoomsAPIMockRecorder) DeleteAnalysisTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnalysisTemplate", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteAnalysisTemplate), arg0)
+}
+
+// DeleteAnalysisTemplateRequest mocks base method
+func (m *MockCleanRoomsAPI) DeleteAnalysisTemplateRequest(arg0 *cleanrooms.DeleteAnalysisTemplateInput) (*request.Request, *cleanrooms.DeleteAnalysisTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAnalysisTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.DeleteAnalysisTemplateOutput)
+	return ret0, ret1
+}
+
+// DeleteAnalysisTemplateRequest indicates an expected call of DeleteAnalysisTemplateRequest
+func (mr *MockCleanRoomsAPIMockRecorder) DeleteAnalysisTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnalysisTemplateRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteAnalysisTemplateRequest), arg0)
+}
+
+// DeleteAnalysisTemplateWithContext mocks base method
+func (m *MockCleanRoomsAPI) DeleteAnalysisTemplateWithContext(arg0 context.Context, arg1 *cleanrooms.DeleteAnalysisTemplateInput, arg2 ...request.Option) (*cleanrooms.DeleteAnalysisTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAnalysisTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.DeleteAnalysisTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAnalysisTemplateWithContext indicates an expected call of DeleteAnalysisTemplateWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) DeleteAnalysisTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnalysisTemplateWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteAnalysisTemplateWithContext), varargs...)
 }
 
 // DeleteCollaboration mocks base method
@@ -635,6 +785,56 @@ func (mr *MockCleanRoomsAPIMockRecorder) DeleteMembershipWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteMembershipWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteMembershipWithContext), varargs...)
 }
 
+// GetAnalysisTemplate mocks base method
+func (m *MockCleanRoomsAPI) GetAnalysisTemplate(arg0 *cleanrooms.GetAnalysisTemplateInput) (*cleanrooms.GetAnalysisTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAnalysisTemplate", arg0)
+	ret0, _ := ret[0].(*cleanrooms.GetAnalysisTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAnalysisTemplate indicates an expected call of GetAnalysisTemplate
+func (mr *MockCleanRoomsAPIMockRecorder) GetAnalysisTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnalysisTemplate", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetAnalysisTemplate), arg0)
+}
+
+// GetAnalysisTemplateRequest mocks base method
+func (m *MockCleanRoomsAPI) GetAnalysisTemplateRequest(arg0 *cleanrooms.GetAnalysisTemplateInput) (*request.Request, *cleanrooms.GetAnalysisTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAnalysisTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.GetAnalysisTemplateOutput)
+	return ret0, ret1
+}
+
+// GetAnalysisTemplateRequest indicates an expected call of GetAnalysisTemplateRequest
+func (mr *MockCleanRoomsAPIMockRecorder) GetAnalysisTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnalysisTemplateRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetAnalysisTemplateRequest), arg0)
+}
+
+// GetAnalysisTemplateWithContext mocks base method
+func (m *MockCleanRoomsAPI) GetAnalysisTemplateWithContext(arg0 context.Context, arg1 *cleanrooms.GetAnalysisTemplateInput, arg2 ...request.Option) (*cleanrooms.GetAnalysisTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAnalysisTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.GetAnalysisTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAnalysisTemplateWithContext indicates an expected call of GetAnalysisTemplateWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) GetAnalysisTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnalysisTemplateWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetAnalysisTemplateWithContext), varargs...)
+}
+
 // GetCollaboration mocks base method
 func (m *MockCleanRoomsAPI) GetCollaboration(arg0 *cleanrooms.GetCollaborationInput) (*cleanrooms.GetCollaborationOutput, error) {
 	m.ctrl.T.Helper()
@@ -648,6 +848,56 @@ func (m *MockCleanRoomsAPI) GetCollaboration(arg0 *cleanrooms.GetCollaborationIn
 func (mr *MockCleanRoomsAPIMockRecorder) GetCollaboration(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCollaboration", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetCollaboration), arg0)
+}
+
+// GetCollaborationAnalysisTemplate mocks base method
+func (m *MockCleanRoomsAPI) GetCollaborationAnalysisTemplate(arg0 *cleanrooms.GetCollaborationAnalysisTemplateInput) (*cleanrooms.GetCollaborationAnalysisTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCollaborationAnalysisTemplate", arg0)
+	ret0, _ := ret[0].(*cleanrooms.GetCollaborationAnalysisTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCollaborationAnalysisTemplate indicates an expected call of GetCollaborationAnalysisTemplate
+func (mr *MockCleanRoomsAPIMockRecorder) GetCollaborationAnalysisTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCollaborationAnalysisTemplate", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetCollaborationAnalysisTemplate), arg0)
+}
+
+// GetCollaborationAnalysisTemplateRequest mocks base method
+func (m *MockCleanRoomsAPI) GetCollaborationAnalysisTemplateRequest(arg0 *cleanrooms.GetCollaborationAnalysisTemplateInput) (*request.Request, *cleanrooms.GetCollaborationAnalysisTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetCollaborationAnalysisTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.GetCollaborationAnalysisTemplateOutput)
+	return ret0, ret1
+}
+
+// GetCollaborationAnalysisTemplateRequest indicates an expected call of GetCollaborationAnalysisTemplateRequest
+func (mr *MockCleanRoomsAPIMockRecorder) GetCollaborationAnalysisTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCollaborationAnalysisTemplateRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetCollaborationAnalysisTemplateRequest), arg0)
+}
+
+// GetCollaborationAnalysisTemplateWithContext mocks base method
+func (m *MockCleanRoomsAPI) GetCollaborationAnalysisTemplateWithContext(arg0 context.Context, arg1 *cleanrooms.GetCollaborationAnalysisTemplateInput, arg2 ...request.Option) (*cleanrooms.GetCollaborationAnalysisTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetCollaborationAnalysisTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.GetCollaborationAnalysisTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetCollaborationAnalysisTemplateWithContext indicates an expected call of GetCollaborationAnalysisTemplateWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) GetCollaborationAnalysisTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCollaborationAnalysisTemplateWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetCollaborationAnalysisTemplateWithContext), varargs...)
 }
 
 // GetCollaborationRequest mocks base method
@@ -1033,6 +1283,172 @@ func (mr *MockCleanRoomsAPIMockRecorder) GetSchemaWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetSchemaWithContext), varargs...)
+}
+
+// ListAnalysisTemplates mocks base method
+func (m *MockCleanRoomsAPI) ListAnalysisTemplates(arg0 *cleanrooms.ListAnalysisTemplatesInput) (*cleanrooms.ListAnalysisTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnalysisTemplates", arg0)
+	ret0, _ := ret[0].(*cleanrooms.ListAnalysisTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAnalysisTemplates indicates an expected call of ListAnalysisTemplates
+func (mr *MockCleanRoomsAPIMockRecorder) ListAnalysisTemplates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalysisTemplates", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListAnalysisTemplates), arg0)
+}
+
+// ListAnalysisTemplatesPages mocks base method
+func (m *MockCleanRoomsAPI) ListAnalysisTemplatesPages(arg0 *cleanrooms.ListAnalysisTemplatesInput, arg1 func(*cleanrooms.ListAnalysisTemplatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnalysisTemplatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAnalysisTemplatesPages indicates an expected call of ListAnalysisTemplatesPages
+func (mr *MockCleanRoomsAPIMockRecorder) ListAnalysisTemplatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalysisTemplatesPages", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListAnalysisTemplatesPages), arg0, arg1)
+}
+
+// ListAnalysisTemplatesPagesWithContext mocks base method
+func (m *MockCleanRoomsAPI) ListAnalysisTemplatesPagesWithContext(arg0 context.Context, arg1 *cleanrooms.ListAnalysisTemplatesInput, arg2 func(*cleanrooms.ListAnalysisTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAnalysisTemplatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAnalysisTemplatesPagesWithContext indicates an expected call of ListAnalysisTemplatesPagesWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) ListAnalysisTemplatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalysisTemplatesPagesWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListAnalysisTemplatesPagesWithContext), varargs...)
+}
+
+// ListAnalysisTemplatesRequest mocks base method
+func (m *MockCleanRoomsAPI) ListAnalysisTemplatesRequest(arg0 *cleanrooms.ListAnalysisTemplatesInput) (*request.Request, *cleanrooms.ListAnalysisTemplatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnalysisTemplatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.ListAnalysisTemplatesOutput)
+	return ret0, ret1
+}
+
+// ListAnalysisTemplatesRequest indicates an expected call of ListAnalysisTemplatesRequest
+func (mr *MockCleanRoomsAPIMockRecorder) ListAnalysisTemplatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalysisTemplatesRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListAnalysisTemplatesRequest), arg0)
+}
+
+// ListAnalysisTemplatesWithContext mocks base method
+func (m *MockCleanRoomsAPI) ListAnalysisTemplatesWithContext(arg0 context.Context, arg1 *cleanrooms.ListAnalysisTemplatesInput, arg2 ...request.Option) (*cleanrooms.ListAnalysisTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAnalysisTemplatesWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.ListAnalysisTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAnalysisTemplatesWithContext indicates an expected call of ListAnalysisTemplatesWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) ListAnalysisTemplatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalysisTemplatesWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListAnalysisTemplatesWithContext), varargs...)
+}
+
+// ListCollaborationAnalysisTemplates mocks base method
+func (m *MockCleanRoomsAPI) ListCollaborationAnalysisTemplates(arg0 *cleanrooms.ListCollaborationAnalysisTemplatesInput) (*cleanrooms.ListCollaborationAnalysisTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCollaborationAnalysisTemplates", arg0)
+	ret0, _ := ret[0].(*cleanrooms.ListCollaborationAnalysisTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCollaborationAnalysisTemplates indicates an expected call of ListCollaborationAnalysisTemplates
+func (mr *MockCleanRoomsAPIMockRecorder) ListCollaborationAnalysisTemplates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCollaborationAnalysisTemplates", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListCollaborationAnalysisTemplates), arg0)
+}
+
+// ListCollaborationAnalysisTemplatesPages mocks base method
+func (m *MockCleanRoomsAPI) ListCollaborationAnalysisTemplatesPages(arg0 *cleanrooms.ListCollaborationAnalysisTemplatesInput, arg1 func(*cleanrooms.ListCollaborationAnalysisTemplatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCollaborationAnalysisTemplatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCollaborationAnalysisTemplatesPages indicates an expected call of ListCollaborationAnalysisTemplatesPages
+func (mr *MockCleanRoomsAPIMockRecorder) ListCollaborationAnalysisTemplatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCollaborationAnalysisTemplatesPages", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListCollaborationAnalysisTemplatesPages), arg0, arg1)
+}
+
+// ListCollaborationAnalysisTemplatesPagesWithContext mocks base method
+func (m *MockCleanRoomsAPI) ListCollaborationAnalysisTemplatesPagesWithContext(arg0 context.Context, arg1 *cleanrooms.ListCollaborationAnalysisTemplatesInput, arg2 func(*cleanrooms.ListCollaborationAnalysisTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCollaborationAnalysisTemplatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCollaborationAnalysisTemplatesPagesWithContext indicates an expected call of ListCollaborationAnalysisTemplatesPagesWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) ListCollaborationAnalysisTemplatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCollaborationAnalysisTemplatesPagesWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListCollaborationAnalysisTemplatesPagesWithContext), varargs...)
+}
+
+// ListCollaborationAnalysisTemplatesRequest mocks base method
+func (m *MockCleanRoomsAPI) ListCollaborationAnalysisTemplatesRequest(arg0 *cleanrooms.ListCollaborationAnalysisTemplatesInput) (*request.Request, *cleanrooms.ListCollaborationAnalysisTemplatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCollaborationAnalysisTemplatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.ListCollaborationAnalysisTemplatesOutput)
+	return ret0, ret1
+}
+
+// ListCollaborationAnalysisTemplatesRequest indicates an expected call of ListCollaborationAnalysisTemplatesRequest
+func (mr *MockCleanRoomsAPIMockRecorder) ListCollaborationAnalysisTemplatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCollaborationAnalysisTemplatesRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListCollaborationAnalysisTemplatesRequest), arg0)
+}
+
+// ListCollaborationAnalysisTemplatesWithContext mocks base method
+func (m *MockCleanRoomsAPI) ListCollaborationAnalysisTemplatesWithContext(arg0 context.Context, arg1 *cleanrooms.ListCollaborationAnalysisTemplatesInput, arg2 ...request.Option) (*cleanrooms.ListCollaborationAnalysisTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCollaborationAnalysisTemplatesWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.ListCollaborationAnalysisTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCollaborationAnalysisTemplatesWithContext indicates an expected call of ListCollaborationAnalysisTemplatesWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) ListCollaborationAnalysisTemplatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCollaborationAnalysisTemplatesWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListCollaborationAnalysisTemplatesWithContext), varargs...)
 }
 
 // ListCollaborations mocks base method
@@ -1814,6 +2230,56 @@ func (mr *MockCleanRoomsAPIMockRecorder) UntagResourceWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateAnalysisTemplate mocks base method
+func (m *MockCleanRoomsAPI) UpdateAnalysisTemplate(arg0 *cleanrooms.UpdateAnalysisTemplateInput) (*cleanrooms.UpdateAnalysisTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAnalysisTemplate", arg0)
+	ret0, _ := ret[0].(*cleanrooms.UpdateAnalysisTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAnalysisTemplate indicates an expected call of UpdateAnalysisTemplate
+func (mr *MockCleanRoomsAPIMockRecorder) UpdateAnalysisTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnalysisTemplate", reflect.TypeOf((*MockCleanRoomsAPI)(nil).UpdateAnalysisTemplate), arg0)
+}
+
+// UpdateAnalysisTemplateRequest mocks base method
+func (m *MockCleanRoomsAPI) UpdateAnalysisTemplateRequest(arg0 *cleanrooms.UpdateAnalysisTemplateInput) (*request.Request, *cleanrooms.UpdateAnalysisTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAnalysisTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.UpdateAnalysisTemplateOutput)
+	return ret0, ret1
+}
+
+// UpdateAnalysisTemplateRequest indicates an expected call of UpdateAnalysisTemplateRequest
+func (mr *MockCleanRoomsAPIMockRecorder) UpdateAnalysisTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnalysisTemplateRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).UpdateAnalysisTemplateRequest), arg0)
+}
+
+// UpdateAnalysisTemplateWithContext mocks base method
+func (m *MockCleanRoomsAPI) UpdateAnalysisTemplateWithContext(arg0 context.Context, arg1 *cleanrooms.UpdateAnalysisTemplateInput, arg2 ...request.Option) (*cleanrooms.UpdateAnalysisTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAnalysisTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.UpdateAnalysisTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAnalysisTemplateWithContext indicates an expected call of UpdateAnalysisTemplateWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) UpdateAnalysisTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnalysisTemplateWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).UpdateAnalysisTemplateWithContext), varargs...)
 }
 
 // UpdateCollaboration mocks base method

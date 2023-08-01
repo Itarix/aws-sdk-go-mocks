@@ -535,6 +535,56 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteModelWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModelWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteModelWithContext), varargs...)
 }
 
+// DeleteResourcePolicy mocks base method
+func (m *MockLookoutEquipmentAPI) DeleteResourcePolicy(arg0 *lookoutequipment.DeleteResourcePolicyInput) (*lookoutequipment.DeleteResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourcePolicy", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.DeleteResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicy indicates an expected call of DeleteResourcePolicy
+func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicy", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteResourcePolicy), arg0)
+}
+
+// DeleteResourcePolicyRequest mocks base method
+func (m *MockLookoutEquipmentAPI) DeleteResourcePolicyRequest(arg0 *lookoutequipment.DeleteResourcePolicyInput) (*request.Request, *lookoutequipment.DeleteResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.DeleteResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicyRequest indicates an expected call of DeleteResourcePolicyRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteResourcePolicyRequest), arg0)
+}
+
+// DeleteResourcePolicyWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) DeleteResourcePolicyWithContext(arg0 context.Context, arg1 *lookoutequipment.DeleteResourcePolicyInput, arg2 ...request.Option) (*lookoutequipment.DeleteResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.DeleteResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicyWithContext indicates an expected call of DeleteResourcePolicyWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteResourcePolicyWithContext), varargs...)
+}
+
 // DescribeDataIngestionJob mocks base method
 func (m *MockLookoutEquipmentAPI) DescribeDataIngestionJob(arg0 *lookoutequipment.DescribeDataIngestionJobInput) (*lookoutequipment.DescribeDataIngestionJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -815,6 +865,56 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeModelRequest(arg0 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeModelRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeModelRequest), arg0)
 }
 
+// DescribeModelVersion mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeModelVersion(arg0 *lookoutequipment.DescribeModelVersionInput) (*lookoutequipment.DescribeModelVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeModelVersion", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.DescribeModelVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeModelVersion indicates an expected call of DescribeModelVersion
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeModelVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeModelVersion", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeModelVersion), arg0)
+}
+
+// DescribeModelVersionRequest mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeModelVersionRequest(arg0 *lookoutequipment.DescribeModelVersionInput) (*request.Request, *lookoutequipment.DescribeModelVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeModelVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.DescribeModelVersionOutput)
+	return ret0, ret1
+}
+
+// DescribeModelVersionRequest indicates an expected call of DescribeModelVersionRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeModelVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeModelVersionRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeModelVersionRequest), arg0)
+}
+
+// DescribeModelVersionWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeModelVersionWithContext(arg0 context.Context, arg1 *lookoutequipment.DescribeModelVersionInput, arg2 ...request.Option) (*lookoutequipment.DescribeModelVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeModelVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.DescribeModelVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeModelVersionWithContext indicates an expected call of DescribeModelVersionWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeModelVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeModelVersionWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeModelVersionWithContext), varargs...)
+}
+
 // DescribeModelWithContext mocks base method
 func (m *MockLookoutEquipmentAPI) DescribeModelWithContext(arg0 context.Context, arg1 *lookoutequipment.DescribeModelInput, arg2 ...request.Option) (*lookoutequipment.DescribeModelOutput, error) {
 	m.ctrl.T.Helper()
@@ -833,6 +933,156 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeModelWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeModelWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeModelWithContext), varargs...)
+}
+
+// DescribeResourcePolicy mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeResourcePolicy(arg0 *lookoutequipment.DescribeResourcePolicyInput) (*lookoutequipment.DescribeResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeResourcePolicy", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.DescribeResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeResourcePolicy indicates an expected call of DescribeResourcePolicy
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeResourcePolicy", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeResourcePolicy), arg0)
+}
+
+// DescribeResourcePolicyRequest mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeResourcePolicyRequest(arg0 *lookoutequipment.DescribeResourcePolicyInput) (*request.Request, *lookoutequipment.DescribeResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.DescribeResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// DescribeResourcePolicyRequest indicates an expected call of DescribeResourcePolicyRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeResourcePolicyRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeResourcePolicyRequest), arg0)
+}
+
+// DescribeResourcePolicyWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeResourcePolicyWithContext(arg0 context.Context, arg1 *lookoutequipment.DescribeResourcePolicyInput, arg2 ...request.Option) (*lookoutequipment.DescribeResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.DescribeResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeResourcePolicyWithContext indicates an expected call of DescribeResourcePolicyWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeResourcePolicyWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeResourcePolicyWithContext), varargs...)
+}
+
+// ImportDataset mocks base method
+func (m *MockLookoutEquipmentAPI) ImportDataset(arg0 *lookoutequipment.ImportDatasetInput) (*lookoutequipment.ImportDatasetOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportDataset", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.ImportDatasetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportDataset indicates an expected call of ImportDataset
+func (mr *MockLookoutEquipmentAPIMockRecorder) ImportDataset(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportDataset", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ImportDataset), arg0)
+}
+
+// ImportDatasetRequest mocks base method
+func (m *MockLookoutEquipmentAPI) ImportDatasetRequest(arg0 *lookoutequipment.ImportDatasetInput) (*request.Request, *lookoutequipment.ImportDatasetOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportDatasetRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.ImportDatasetOutput)
+	return ret0, ret1
+}
+
+// ImportDatasetRequest indicates an expected call of ImportDatasetRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) ImportDatasetRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportDatasetRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ImportDatasetRequest), arg0)
+}
+
+// ImportDatasetWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) ImportDatasetWithContext(arg0 context.Context, arg1 *lookoutequipment.ImportDatasetInput, arg2 ...request.Option) (*lookoutequipment.ImportDatasetOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportDatasetWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.ImportDatasetOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportDatasetWithContext indicates an expected call of ImportDatasetWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) ImportDatasetWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportDatasetWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ImportDatasetWithContext), varargs...)
+}
+
+// ImportModelVersion mocks base method
+func (m *MockLookoutEquipmentAPI) ImportModelVersion(arg0 *lookoutequipment.ImportModelVersionInput) (*lookoutequipment.ImportModelVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportModelVersion", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.ImportModelVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportModelVersion indicates an expected call of ImportModelVersion
+func (mr *MockLookoutEquipmentAPIMockRecorder) ImportModelVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportModelVersion", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ImportModelVersion), arg0)
+}
+
+// ImportModelVersionRequest mocks base method
+func (m *MockLookoutEquipmentAPI) ImportModelVersionRequest(arg0 *lookoutequipment.ImportModelVersionInput) (*request.Request, *lookoutequipment.ImportModelVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportModelVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.ImportModelVersionOutput)
+	return ret0, ret1
+}
+
+// ImportModelVersionRequest indicates an expected call of ImportModelVersionRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) ImportModelVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportModelVersionRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ImportModelVersionRequest), arg0)
+}
+
+// ImportModelVersionWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) ImportModelVersionWithContext(arg0 context.Context, arg1 *lookoutequipment.ImportModelVersionInput, arg2 ...request.Option) (*lookoutequipment.ImportModelVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportModelVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.ImportModelVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportModelVersionWithContext indicates an expected call of ImportModelVersionWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) ImportModelVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportModelVersionWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ImportModelVersionWithContext), varargs...)
 }
 
 // ListDataIngestionJobs mocks base method
@@ -1416,6 +1666,89 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) ListLabelsWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLabelsWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListLabelsWithContext), varargs...)
 }
 
+// ListModelVersions mocks base method
+func (m *MockLookoutEquipmentAPI) ListModelVersions(arg0 *lookoutequipment.ListModelVersionsInput) (*lookoutequipment.ListModelVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListModelVersions", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.ListModelVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListModelVersions indicates an expected call of ListModelVersions
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListModelVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelVersions", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListModelVersions), arg0)
+}
+
+// ListModelVersionsPages mocks base method
+func (m *MockLookoutEquipmentAPI) ListModelVersionsPages(arg0 *lookoutequipment.ListModelVersionsInput, arg1 func(*lookoutequipment.ListModelVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListModelVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListModelVersionsPages indicates an expected call of ListModelVersionsPages
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListModelVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelVersionsPages", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListModelVersionsPages), arg0, arg1)
+}
+
+// ListModelVersionsPagesWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) ListModelVersionsPagesWithContext(arg0 context.Context, arg1 *lookoutequipment.ListModelVersionsInput, arg2 func(*lookoutequipment.ListModelVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListModelVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListModelVersionsPagesWithContext indicates an expected call of ListModelVersionsPagesWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListModelVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelVersionsPagesWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListModelVersionsPagesWithContext), varargs...)
+}
+
+// ListModelVersionsRequest mocks base method
+func (m *MockLookoutEquipmentAPI) ListModelVersionsRequest(arg0 *lookoutequipment.ListModelVersionsInput) (*request.Request, *lookoutequipment.ListModelVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListModelVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.ListModelVersionsOutput)
+	return ret0, ret1
+}
+
+// ListModelVersionsRequest indicates an expected call of ListModelVersionsRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListModelVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelVersionsRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListModelVersionsRequest), arg0)
+}
+
+// ListModelVersionsWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) ListModelVersionsWithContext(arg0 context.Context, arg1 *lookoutequipment.ListModelVersionsInput, arg2 ...request.Option) (*lookoutequipment.ListModelVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListModelVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.ListModelVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListModelVersionsWithContext indicates an expected call of ListModelVersionsWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListModelVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelVersionsWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListModelVersionsWithContext), varargs...)
+}
+
 // ListModels mocks base method
 func (m *MockLookoutEquipmentAPI) ListModels(arg0 *lookoutequipment.ListModelsInput) (*lookoutequipment.ListModelsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1630,6 +1963,56 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) ListTagsForResourceWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// PutResourcePolicy mocks base method
+func (m *MockLookoutEquipmentAPI) PutResourcePolicy(arg0 *lookoutequipment.PutResourcePolicyInput) (*lookoutequipment.PutResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourcePolicy", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.PutResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourcePolicy indicates an expected call of PutResourcePolicy
+func (mr *MockLookoutEquipmentAPIMockRecorder) PutResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicy", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).PutResourcePolicy), arg0)
+}
+
+// PutResourcePolicyRequest mocks base method
+func (m *MockLookoutEquipmentAPI) PutResourcePolicyRequest(arg0 *lookoutequipment.PutResourcePolicyInput) (*request.Request, *lookoutequipment.PutResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.PutResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// PutResourcePolicyRequest indicates an expected call of PutResourcePolicyRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) PutResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).PutResourcePolicyRequest), arg0)
+}
+
+// PutResourcePolicyWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) PutResourcePolicyWithContext(arg0 context.Context, arg1 *lookoutequipment.PutResourcePolicyInput, arg2 ...request.Option) (*lookoutequipment.PutResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.PutResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourcePolicyWithContext indicates an expected call of PutResourcePolicyWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) PutResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).PutResourcePolicyWithContext), varargs...)
 }
 
 // StartDataIngestionJob mocks base method
@@ -1880,6 +2263,56 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) UntagResourceWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateActiveModelVersion mocks base method
+func (m *MockLookoutEquipmentAPI) UpdateActiveModelVersion(arg0 *lookoutequipment.UpdateActiveModelVersionInput) (*lookoutequipment.UpdateActiveModelVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateActiveModelVersion", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.UpdateActiveModelVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateActiveModelVersion indicates an expected call of UpdateActiveModelVersion
+func (mr *MockLookoutEquipmentAPIMockRecorder) UpdateActiveModelVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateActiveModelVersion", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UpdateActiveModelVersion), arg0)
+}
+
+// UpdateActiveModelVersionRequest mocks base method
+func (m *MockLookoutEquipmentAPI) UpdateActiveModelVersionRequest(arg0 *lookoutequipment.UpdateActiveModelVersionInput) (*request.Request, *lookoutequipment.UpdateActiveModelVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateActiveModelVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.UpdateActiveModelVersionOutput)
+	return ret0, ret1
+}
+
+// UpdateActiveModelVersionRequest indicates an expected call of UpdateActiveModelVersionRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) UpdateActiveModelVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateActiveModelVersionRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UpdateActiveModelVersionRequest), arg0)
+}
+
+// UpdateActiveModelVersionWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) UpdateActiveModelVersionWithContext(arg0 context.Context, arg1 *lookoutequipment.UpdateActiveModelVersionInput, arg2 ...request.Option) (*lookoutequipment.UpdateActiveModelVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateActiveModelVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.UpdateActiveModelVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateActiveModelVersionWithContext indicates an expected call of UpdateActiveModelVersionWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) UpdateActiveModelVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateActiveModelVersionWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UpdateActiveModelVersionWithContext), varargs...)
 }
 
 // UpdateInferenceScheduler mocks base method

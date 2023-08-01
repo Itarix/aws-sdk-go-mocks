@@ -185,6 +185,56 @@ func (mr *MockInspector2APIMockRecorder) BatchGetCodeSnippetWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCodeSnippetWithContext", reflect.TypeOf((*MockInspector2API)(nil).BatchGetCodeSnippetWithContext), varargs...)
 }
 
+// BatchGetFindingDetails mocks base method
+func (m *MockInspector2API) BatchGetFindingDetails(arg0 *inspector2.BatchGetFindingDetailsInput) (*inspector2.BatchGetFindingDetailsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetFindingDetails", arg0)
+	ret0, _ := ret[0].(*inspector2.BatchGetFindingDetailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetFindingDetails indicates an expected call of BatchGetFindingDetails
+func (mr *MockInspector2APIMockRecorder) BatchGetFindingDetails(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetFindingDetails", reflect.TypeOf((*MockInspector2API)(nil).BatchGetFindingDetails), arg0)
+}
+
+// BatchGetFindingDetailsRequest mocks base method
+func (m *MockInspector2API) BatchGetFindingDetailsRequest(arg0 *inspector2.BatchGetFindingDetailsInput) (*request.Request, *inspector2.BatchGetFindingDetailsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetFindingDetailsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*inspector2.BatchGetFindingDetailsOutput)
+	return ret0, ret1
+}
+
+// BatchGetFindingDetailsRequest indicates an expected call of BatchGetFindingDetailsRequest
+func (mr *MockInspector2APIMockRecorder) BatchGetFindingDetailsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetFindingDetailsRequest", reflect.TypeOf((*MockInspector2API)(nil).BatchGetFindingDetailsRequest), arg0)
+}
+
+// BatchGetFindingDetailsWithContext mocks base method
+func (m *MockInspector2API) BatchGetFindingDetailsWithContext(arg0 context.Context, arg1 *inspector2.BatchGetFindingDetailsInput, arg2 ...request.Option) (*inspector2.BatchGetFindingDetailsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetFindingDetailsWithContext", varargs...)
+	ret0, _ := ret[0].(*inspector2.BatchGetFindingDetailsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetFindingDetailsWithContext indicates an expected call of BatchGetFindingDetailsWithContext
+func (mr *MockInspector2APIMockRecorder) BatchGetFindingDetailsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetFindingDetailsWithContext", reflect.TypeOf((*MockInspector2API)(nil).BatchGetFindingDetailsWithContext), varargs...)
+}
+
 // BatchGetFreeTrialInfo mocks base method
 func (m *MockInspector2API) BatchGetFreeTrialInfo(arg0 *inspector2.BatchGetFreeTrialInfoInput) (*inspector2.BatchGetFreeTrialInfoOutput, error) {
 	m.ctrl.T.Helper()
