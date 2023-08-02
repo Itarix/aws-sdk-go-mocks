@@ -1683,6 +1683,89 @@ func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEndpointsWithCont
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEndpointsWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeEndpointsWithContext), varargs...)
 }
 
+// DescribeEngineVersions mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeEngineVersions(arg0 *databasemigrationservice.DescribeEngineVersionsInput) (*databasemigrationservice.DescribeEngineVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEngineVersions", arg0)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeEngineVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEngineVersions indicates an expected call of DescribeEngineVersions
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEngineVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEngineVersions", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeEngineVersions), arg0)
+}
+
+// DescribeEngineVersionsPages mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeEngineVersionsPages(arg0 *databasemigrationservice.DescribeEngineVersionsInput, arg1 func(*databasemigrationservice.DescribeEngineVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEngineVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeEngineVersionsPages indicates an expected call of DescribeEngineVersionsPages
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEngineVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEngineVersionsPages", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeEngineVersionsPages), arg0, arg1)
+}
+
+// DescribeEngineVersionsPagesWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeEngineVersionsPagesWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeEngineVersionsInput, arg2 func(*databasemigrationservice.DescribeEngineVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEngineVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeEngineVersionsPagesWithContext indicates an expected call of DescribeEngineVersionsPagesWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEngineVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEngineVersionsPagesWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeEngineVersionsPagesWithContext), varargs...)
+}
+
+// DescribeEngineVersionsRequest mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeEngineVersionsRequest(arg0 *databasemigrationservice.DescribeEngineVersionsInput) (*request.Request, *databasemigrationservice.DescribeEngineVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEngineVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*databasemigrationservice.DescribeEngineVersionsOutput)
+	return ret0, ret1
+}
+
+// DescribeEngineVersionsRequest indicates an expected call of DescribeEngineVersionsRequest
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEngineVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEngineVersionsRequest", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeEngineVersionsRequest), arg0)
+}
+
+// DescribeEngineVersionsWithContext mocks base method
+func (m *MockDatabaseMigrationServiceAPI) DescribeEngineVersionsWithContext(arg0 context.Context, arg1 *databasemigrationservice.DescribeEngineVersionsInput, arg2 ...request.Option) (*databasemigrationservice.DescribeEngineVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEngineVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*databasemigrationservice.DescribeEngineVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEngineVersionsWithContext indicates an expected call of DescribeEngineVersionsWithContext
+func (mr *MockDatabaseMigrationServiceAPIMockRecorder) DescribeEngineVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEngineVersionsWithContext", reflect.TypeOf((*MockDatabaseMigrationServiceAPI)(nil).DescribeEngineVersionsWithContext), varargs...)
+}
+
 // DescribeEventCategories mocks base method
 func (m *MockDatabaseMigrationServiceAPI) DescribeEventCategories(arg0 *databasemigrationservice.DescribeEventCategoriesInput) (*databasemigrationservice.DescribeEventCategoriesOutput, error) {
 	m.ctrl.T.Helper()
