@@ -8485,6 +8485,56 @@ func (mr *MockSageMakerAPIMockRecorder) GetSagemakerServicecatalogPortfolioStatu
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSagemakerServicecatalogPortfolioStatusWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).GetSagemakerServicecatalogPortfolioStatusWithContext), varargs...)
 }
 
+// GetScalingConfigurationRecommendation mocks base method
+func (m *MockSageMakerAPI) GetScalingConfigurationRecommendation(arg0 *sagemaker.GetScalingConfigurationRecommendationInput) (*sagemaker.GetScalingConfigurationRecommendationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetScalingConfigurationRecommendation", arg0)
+	ret0, _ := ret[0].(*sagemaker.GetScalingConfigurationRecommendationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetScalingConfigurationRecommendation indicates an expected call of GetScalingConfigurationRecommendation
+func (mr *MockSageMakerAPIMockRecorder) GetScalingConfigurationRecommendation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetScalingConfigurationRecommendation", reflect.TypeOf((*MockSageMakerAPI)(nil).GetScalingConfigurationRecommendation), arg0)
+}
+
+// GetScalingConfigurationRecommendationRequest mocks base method
+func (m *MockSageMakerAPI) GetScalingConfigurationRecommendationRequest(arg0 *sagemaker.GetScalingConfigurationRecommendationInput) (*request.Request, *sagemaker.GetScalingConfigurationRecommendationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetScalingConfigurationRecommendationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.GetScalingConfigurationRecommendationOutput)
+	return ret0, ret1
+}
+
+// GetScalingConfigurationRecommendationRequest indicates an expected call of GetScalingConfigurationRecommendationRequest
+func (mr *MockSageMakerAPIMockRecorder) GetScalingConfigurationRecommendationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetScalingConfigurationRecommendationRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).GetScalingConfigurationRecommendationRequest), arg0)
+}
+
+// GetScalingConfigurationRecommendationWithContext mocks base method
+func (m *MockSageMakerAPI) GetScalingConfigurationRecommendationWithContext(arg0 context.Context, arg1 *sagemaker.GetScalingConfigurationRecommendationInput, arg2 ...request.Option) (*sagemaker.GetScalingConfigurationRecommendationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetScalingConfigurationRecommendationWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.GetScalingConfigurationRecommendationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetScalingConfigurationRecommendationWithContext indicates an expected call of GetScalingConfigurationRecommendationWithContext
+func (mr *MockSageMakerAPIMockRecorder) GetScalingConfigurationRecommendationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetScalingConfigurationRecommendationWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).GetScalingConfigurationRecommendationWithContext), varargs...)
+}
+
 // GetSearchSuggestions mocks base method
 func (m *MockSageMakerAPI) GetSearchSuggestions(arg0 *sagemaker.GetSearchSuggestionsInput) (*sagemaker.GetSearchSuggestionsOutput, error) {
 	m.ctrl.T.Helper()

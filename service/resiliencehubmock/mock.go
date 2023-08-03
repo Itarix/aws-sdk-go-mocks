@@ -85,6 +85,56 @@ func (mr *MockResilienceHubAPIMockRecorder) AddDraftAppVersionResourceMappingsWi
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AddDraftAppVersionResourceMappingsWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).AddDraftAppVersionResourceMappingsWithContext), varargs...)
 }
 
+// BatchUpdateRecommendationStatus mocks base method
+func (m *MockResilienceHubAPI) BatchUpdateRecommendationStatus(arg0 *resiliencehub.BatchUpdateRecommendationStatusInput) (*resiliencehub.BatchUpdateRecommendationStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchUpdateRecommendationStatus", arg0)
+	ret0, _ := ret[0].(*resiliencehub.BatchUpdateRecommendationStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchUpdateRecommendationStatus indicates an expected call of BatchUpdateRecommendationStatus
+func (mr *MockResilienceHubAPIMockRecorder) BatchUpdateRecommendationStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateRecommendationStatus", reflect.TypeOf((*MockResilienceHubAPI)(nil).BatchUpdateRecommendationStatus), arg0)
+}
+
+// BatchUpdateRecommendationStatusRequest mocks base method
+func (m *MockResilienceHubAPI) BatchUpdateRecommendationStatusRequest(arg0 *resiliencehub.BatchUpdateRecommendationStatusInput) (*request.Request, *resiliencehub.BatchUpdateRecommendationStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchUpdateRecommendationStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.BatchUpdateRecommendationStatusOutput)
+	return ret0, ret1
+}
+
+// BatchUpdateRecommendationStatusRequest indicates an expected call of BatchUpdateRecommendationStatusRequest
+func (mr *MockResilienceHubAPIMockRecorder) BatchUpdateRecommendationStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateRecommendationStatusRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).BatchUpdateRecommendationStatusRequest), arg0)
+}
+
+// BatchUpdateRecommendationStatusWithContext mocks base method
+func (m *MockResilienceHubAPI) BatchUpdateRecommendationStatusWithContext(arg0 context.Context, arg1 *resiliencehub.BatchUpdateRecommendationStatusInput, arg2 ...request.Option) (*resiliencehub.BatchUpdateRecommendationStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchUpdateRecommendationStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.BatchUpdateRecommendationStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchUpdateRecommendationStatusWithContext indicates an expected call of BatchUpdateRecommendationStatusWithContext
+func (mr *MockResilienceHubAPIMockRecorder) BatchUpdateRecommendationStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchUpdateRecommendationStatusWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).BatchUpdateRecommendationStatusWithContext), varargs...)
+}
+
 // CreateApp mocks base method
 func (m *MockResilienceHubAPI) CreateApp(arg0 *resiliencehub.CreateAppInput) (*resiliencehub.CreateAppOutput, error) {
 	m.ctrl.T.Helper()
@@ -1266,6 +1316,89 @@ func (mr *MockResilienceHubAPIMockRecorder) ListAlarmRecommendationsWithContext(
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAlarmRecommendationsWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAlarmRecommendationsWithContext), varargs...)
+}
+
+// ListAppAssessmentComplianceDrifts mocks base method
+func (m *MockResilienceHubAPI) ListAppAssessmentComplianceDrifts(arg0 *resiliencehub.ListAppAssessmentComplianceDriftsInput) (*resiliencehub.ListAppAssessmentComplianceDriftsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppAssessmentComplianceDrifts", arg0)
+	ret0, _ := ret[0].(*resiliencehub.ListAppAssessmentComplianceDriftsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppAssessmentComplianceDrifts indicates an expected call of ListAppAssessmentComplianceDrifts
+func (mr *MockResilienceHubAPIMockRecorder) ListAppAssessmentComplianceDrifts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppAssessmentComplianceDrifts", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppAssessmentComplianceDrifts), arg0)
+}
+
+// ListAppAssessmentComplianceDriftsPages mocks base method
+func (m *MockResilienceHubAPI) ListAppAssessmentComplianceDriftsPages(arg0 *resiliencehub.ListAppAssessmentComplianceDriftsInput, arg1 func(*resiliencehub.ListAppAssessmentComplianceDriftsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppAssessmentComplianceDriftsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppAssessmentComplianceDriftsPages indicates an expected call of ListAppAssessmentComplianceDriftsPages
+func (mr *MockResilienceHubAPIMockRecorder) ListAppAssessmentComplianceDriftsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppAssessmentComplianceDriftsPages", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppAssessmentComplianceDriftsPages), arg0, arg1)
+}
+
+// ListAppAssessmentComplianceDriftsPagesWithContext mocks base method
+func (m *MockResilienceHubAPI) ListAppAssessmentComplianceDriftsPagesWithContext(arg0 context.Context, arg1 *resiliencehub.ListAppAssessmentComplianceDriftsInput, arg2 func(*resiliencehub.ListAppAssessmentComplianceDriftsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppAssessmentComplianceDriftsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppAssessmentComplianceDriftsPagesWithContext indicates an expected call of ListAppAssessmentComplianceDriftsPagesWithContext
+func (mr *MockResilienceHubAPIMockRecorder) ListAppAssessmentComplianceDriftsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppAssessmentComplianceDriftsPagesWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppAssessmentComplianceDriftsPagesWithContext), varargs...)
+}
+
+// ListAppAssessmentComplianceDriftsRequest mocks base method
+func (m *MockResilienceHubAPI) ListAppAssessmentComplianceDriftsRequest(arg0 *resiliencehub.ListAppAssessmentComplianceDriftsInput) (*request.Request, *resiliencehub.ListAppAssessmentComplianceDriftsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppAssessmentComplianceDriftsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*resiliencehub.ListAppAssessmentComplianceDriftsOutput)
+	return ret0, ret1
+}
+
+// ListAppAssessmentComplianceDriftsRequest indicates an expected call of ListAppAssessmentComplianceDriftsRequest
+func (mr *MockResilienceHubAPIMockRecorder) ListAppAssessmentComplianceDriftsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppAssessmentComplianceDriftsRequest", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppAssessmentComplianceDriftsRequest), arg0)
+}
+
+// ListAppAssessmentComplianceDriftsWithContext mocks base method
+func (m *MockResilienceHubAPI) ListAppAssessmentComplianceDriftsWithContext(arg0 context.Context, arg1 *resiliencehub.ListAppAssessmentComplianceDriftsInput, arg2 ...request.Option) (*resiliencehub.ListAppAssessmentComplianceDriftsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppAssessmentComplianceDriftsWithContext", varargs...)
+	ret0, _ := ret[0].(*resiliencehub.ListAppAssessmentComplianceDriftsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAppAssessmentComplianceDriftsWithContext indicates an expected call of ListAppAssessmentComplianceDriftsWithContext
+func (mr *MockResilienceHubAPIMockRecorder) ListAppAssessmentComplianceDriftsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppAssessmentComplianceDriftsWithContext", reflect.TypeOf((*MockResilienceHubAPI)(nil).ListAppAssessmentComplianceDriftsWithContext), varargs...)
 }
 
 // ListAppAssessments mocks base method

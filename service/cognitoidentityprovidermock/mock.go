@@ -3101,6 +3101,56 @@ func (mr *MockCognitoIdentityProviderAPIMockRecorder) GetIdentityProviderByIdent
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdentityProviderByIdentifierWithContext", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).GetIdentityProviderByIdentifierWithContext), varargs...)
 }
 
+// GetLogDeliveryConfiguration mocks base method
+func (m *MockCognitoIdentityProviderAPI) GetLogDeliveryConfiguration(arg0 *cognitoidentityprovider.GetLogDeliveryConfigurationInput) (*cognitoidentityprovider.GetLogDeliveryConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLogDeliveryConfiguration", arg0)
+	ret0, _ := ret[0].(*cognitoidentityprovider.GetLogDeliveryConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLogDeliveryConfiguration indicates an expected call of GetLogDeliveryConfiguration
+func (mr *MockCognitoIdentityProviderAPIMockRecorder) GetLogDeliveryConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLogDeliveryConfiguration", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).GetLogDeliveryConfiguration), arg0)
+}
+
+// GetLogDeliveryConfigurationRequest mocks base method
+func (m *MockCognitoIdentityProviderAPI) GetLogDeliveryConfigurationRequest(arg0 *cognitoidentityprovider.GetLogDeliveryConfigurationInput) (*request.Request, *cognitoidentityprovider.GetLogDeliveryConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLogDeliveryConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cognitoidentityprovider.GetLogDeliveryConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetLogDeliveryConfigurationRequest indicates an expected call of GetLogDeliveryConfigurationRequest
+func (mr *MockCognitoIdentityProviderAPIMockRecorder) GetLogDeliveryConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLogDeliveryConfigurationRequest", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).GetLogDeliveryConfigurationRequest), arg0)
+}
+
+// GetLogDeliveryConfigurationWithContext mocks base method
+func (m *MockCognitoIdentityProviderAPI) GetLogDeliveryConfigurationWithContext(arg0 context.Context, arg1 *cognitoidentityprovider.GetLogDeliveryConfigurationInput, arg2 ...request.Option) (*cognitoidentityprovider.GetLogDeliveryConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLogDeliveryConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*cognitoidentityprovider.GetLogDeliveryConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLogDeliveryConfigurationWithContext indicates an expected call of GetLogDeliveryConfigurationWithContext
+func (mr *MockCognitoIdentityProviderAPIMockRecorder) GetLogDeliveryConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLogDeliveryConfigurationWithContext", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).GetLogDeliveryConfigurationWithContext), varargs...)
+}
+
 // GetSigningCertificate mocks base method
 func (m *MockCognitoIdentityProviderAPI) GetSigningCertificate(arg0 *cognitoidentityprovider.GetSigningCertificateInput) (*cognitoidentityprovider.GetSigningCertificateOutput, error) {
 	m.ctrl.T.Helper()
@@ -4330,6 +4380,56 @@ func (mr *MockCognitoIdentityProviderAPIMockRecorder) RevokeTokenWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeTokenWithContext", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).RevokeTokenWithContext), varargs...)
+}
+
+// SetLogDeliveryConfiguration mocks base method
+func (m *MockCognitoIdentityProviderAPI) SetLogDeliveryConfiguration(arg0 *cognitoidentityprovider.SetLogDeliveryConfigurationInput) (*cognitoidentityprovider.SetLogDeliveryConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SetLogDeliveryConfiguration", arg0)
+	ret0, _ := ret[0].(*cognitoidentityprovider.SetLogDeliveryConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SetLogDeliveryConfiguration indicates an expected call of SetLogDeliveryConfiguration
+func (mr *MockCognitoIdentityProviderAPIMockRecorder) SetLogDeliveryConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetLogDeliveryConfiguration", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).SetLogDeliveryConfiguration), arg0)
+}
+
+// SetLogDeliveryConfigurationRequest mocks base method
+func (m *MockCognitoIdentityProviderAPI) SetLogDeliveryConfigurationRequest(arg0 *cognitoidentityprovider.SetLogDeliveryConfigurationInput) (*request.Request, *cognitoidentityprovider.SetLogDeliveryConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SetLogDeliveryConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cognitoidentityprovider.SetLogDeliveryConfigurationOutput)
+	return ret0, ret1
+}
+
+// SetLogDeliveryConfigurationRequest indicates an expected call of SetLogDeliveryConfigurationRequest
+func (mr *MockCognitoIdentityProviderAPIMockRecorder) SetLogDeliveryConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetLogDeliveryConfigurationRequest", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).SetLogDeliveryConfigurationRequest), arg0)
+}
+
+// SetLogDeliveryConfigurationWithContext mocks base method
+func (m *MockCognitoIdentityProviderAPI) SetLogDeliveryConfigurationWithContext(arg0 context.Context, arg1 *cognitoidentityprovider.SetLogDeliveryConfigurationInput, arg2 ...request.Option) (*cognitoidentityprovider.SetLogDeliveryConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SetLogDeliveryConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*cognitoidentityprovider.SetLogDeliveryConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SetLogDeliveryConfigurationWithContext indicates an expected call of SetLogDeliveryConfigurationWithContext
+func (mr *MockCognitoIdentityProviderAPIMockRecorder) SetLogDeliveryConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetLogDeliveryConfigurationWithContext", reflect.TypeOf((*MockCognitoIdentityProviderAPI)(nil).SetLogDeliveryConfigurationWithContext), varargs...)
 }
 
 // SetRiskConfiguration mocks base method
