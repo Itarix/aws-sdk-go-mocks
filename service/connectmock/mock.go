@@ -10669,6 +10669,56 @@ func (mr *MockConnectAPIMockRecorder) UpdateQuickConnectNameWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateQuickConnectNameWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateQuickConnectNameWithContext), varargs...)
 }
 
+// UpdateRoutingProfileAgentAvailabilityTimer mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileAgentAvailabilityTimer(arg0 *connect.UpdateRoutingProfileAgentAvailabilityTimerInput) (*connect.UpdateRoutingProfileAgentAvailabilityTimerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileAgentAvailabilityTimer", arg0)
+	ret0, _ := ret[0].(*connect.UpdateRoutingProfileAgentAvailabilityTimerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileAgentAvailabilityTimer indicates an expected call of UpdateRoutingProfileAgentAvailabilityTimer
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileAgentAvailabilityTimer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileAgentAvailabilityTimer", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileAgentAvailabilityTimer), arg0)
+}
+
+// UpdateRoutingProfileAgentAvailabilityTimerRequest mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileAgentAvailabilityTimerRequest(arg0 *connect.UpdateRoutingProfileAgentAvailabilityTimerInput) (*request.Request, *connect.UpdateRoutingProfileAgentAvailabilityTimerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileAgentAvailabilityTimerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateRoutingProfileAgentAvailabilityTimerOutput)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileAgentAvailabilityTimerRequest indicates an expected call of UpdateRoutingProfileAgentAvailabilityTimerRequest
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileAgentAvailabilityTimerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileAgentAvailabilityTimerRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileAgentAvailabilityTimerRequest), arg0)
+}
+
+// UpdateRoutingProfileAgentAvailabilityTimerWithContext mocks base method
+func (m *MockConnectAPI) UpdateRoutingProfileAgentAvailabilityTimerWithContext(arg0 context.Context, arg1 *connect.UpdateRoutingProfileAgentAvailabilityTimerInput, arg2 ...request.Option) (*connect.UpdateRoutingProfileAgentAvailabilityTimerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRoutingProfileAgentAvailabilityTimerWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateRoutingProfileAgentAvailabilityTimerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRoutingProfileAgentAvailabilityTimerWithContext indicates an expected call of UpdateRoutingProfileAgentAvailabilityTimerWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateRoutingProfileAgentAvailabilityTimerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRoutingProfileAgentAvailabilityTimerWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateRoutingProfileAgentAvailabilityTimerWithContext), varargs...)
+}
+
 // UpdateRoutingProfileConcurrency mocks base method
 func (m *MockConnectAPI) UpdateRoutingProfileConcurrency(arg0 *connect.UpdateRoutingProfileConcurrencyInput) (*connect.UpdateRoutingProfileConcurrencyOutput, error) {
 	m.ctrl.T.Helper()
