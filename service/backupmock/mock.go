@@ -335,6 +335,56 @@ func (mr *MockBackupAPIMockRecorder) CreateLegalHoldWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLegalHoldWithContext", reflect.TypeOf((*MockBackupAPI)(nil).CreateLegalHoldWithContext), varargs...)
 }
 
+// CreateLogicallyAirGappedBackupVault mocks base method
+func (m *MockBackupAPI) CreateLogicallyAirGappedBackupVault(arg0 *backup.CreateLogicallyAirGappedBackupVaultInput) (*backup.CreateLogicallyAirGappedBackupVaultOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLogicallyAirGappedBackupVault", arg0)
+	ret0, _ := ret[0].(*backup.CreateLogicallyAirGappedBackupVaultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLogicallyAirGappedBackupVault indicates an expected call of CreateLogicallyAirGappedBackupVault
+func (mr *MockBackupAPIMockRecorder) CreateLogicallyAirGappedBackupVault(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLogicallyAirGappedBackupVault", reflect.TypeOf((*MockBackupAPI)(nil).CreateLogicallyAirGappedBackupVault), arg0)
+}
+
+// CreateLogicallyAirGappedBackupVaultRequest mocks base method
+func (m *MockBackupAPI) CreateLogicallyAirGappedBackupVaultRequest(arg0 *backup.CreateLogicallyAirGappedBackupVaultInput) (*request.Request, *backup.CreateLogicallyAirGappedBackupVaultOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLogicallyAirGappedBackupVaultRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.CreateLogicallyAirGappedBackupVaultOutput)
+	return ret0, ret1
+}
+
+// CreateLogicallyAirGappedBackupVaultRequest indicates an expected call of CreateLogicallyAirGappedBackupVaultRequest
+func (mr *MockBackupAPIMockRecorder) CreateLogicallyAirGappedBackupVaultRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLogicallyAirGappedBackupVaultRequest", reflect.TypeOf((*MockBackupAPI)(nil).CreateLogicallyAirGappedBackupVaultRequest), arg0)
+}
+
+// CreateLogicallyAirGappedBackupVaultWithContext mocks base method
+func (m *MockBackupAPI) CreateLogicallyAirGappedBackupVaultWithContext(arg0 context.Context, arg1 *backup.CreateLogicallyAirGappedBackupVaultInput, arg2 ...request.Option) (*backup.CreateLogicallyAirGappedBackupVaultOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLogicallyAirGappedBackupVaultWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.CreateLogicallyAirGappedBackupVaultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLogicallyAirGappedBackupVaultWithContext indicates an expected call of CreateLogicallyAirGappedBackupVaultWithContext
+func (mr *MockBackupAPIMockRecorder) CreateLogicallyAirGappedBackupVaultWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLogicallyAirGappedBackupVaultWithContext", reflect.TypeOf((*MockBackupAPI)(nil).CreateLogicallyAirGappedBackupVaultWithContext), varargs...)
+}
+
 // CreateReportPlan mocks base method
 func (m *MockBackupAPI) CreateReportPlan(arg0 *backup.CreateReportPlanInput) (*backup.CreateReportPlanOutput, error) {
 	m.ctrl.T.Helper()
@@ -2745,6 +2795,89 @@ func (m *MockBackupAPI) ListProtectedResources(arg0 *backup.ListProtectedResourc
 func (mr *MockBackupAPIMockRecorder) ListProtectedResources(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectedResources", reflect.TypeOf((*MockBackupAPI)(nil).ListProtectedResources), arg0)
+}
+
+// ListProtectedResourcesByBackupVault mocks base method
+func (m *MockBackupAPI) ListProtectedResourcesByBackupVault(arg0 *backup.ListProtectedResourcesByBackupVaultInput) (*backup.ListProtectedResourcesByBackupVaultOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProtectedResourcesByBackupVault", arg0)
+	ret0, _ := ret[0].(*backup.ListProtectedResourcesByBackupVaultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProtectedResourcesByBackupVault indicates an expected call of ListProtectedResourcesByBackupVault
+func (mr *MockBackupAPIMockRecorder) ListProtectedResourcesByBackupVault(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectedResourcesByBackupVault", reflect.TypeOf((*MockBackupAPI)(nil).ListProtectedResourcesByBackupVault), arg0)
+}
+
+// ListProtectedResourcesByBackupVaultPages mocks base method
+func (m *MockBackupAPI) ListProtectedResourcesByBackupVaultPages(arg0 *backup.ListProtectedResourcesByBackupVaultInput, arg1 func(*backup.ListProtectedResourcesByBackupVaultOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProtectedResourcesByBackupVaultPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProtectedResourcesByBackupVaultPages indicates an expected call of ListProtectedResourcesByBackupVaultPages
+func (mr *MockBackupAPIMockRecorder) ListProtectedResourcesByBackupVaultPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectedResourcesByBackupVaultPages", reflect.TypeOf((*MockBackupAPI)(nil).ListProtectedResourcesByBackupVaultPages), arg0, arg1)
+}
+
+// ListProtectedResourcesByBackupVaultPagesWithContext mocks base method
+func (m *MockBackupAPI) ListProtectedResourcesByBackupVaultPagesWithContext(arg0 context.Context, arg1 *backup.ListProtectedResourcesByBackupVaultInput, arg2 func(*backup.ListProtectedResourcesByBackupVaultOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProtectedResourcesByBackupVaultPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProtectedResourcesByBackupVaultPagesWithContext indicates an expected call of ListProtectedResourcesByBackupVaultPagesWithContext
+func (mr *MockBackupAPIMockRecorder) ListProtectedResourcesByBackupVaultPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectedResourcesByBackupVaultPagesWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListProtectedResourcesByBackupVaultPagesWithContext), varargs...)
+}
+
+// ListProtectedResourcesByBackupVaultRequest mocks base method
+func (m *MockBackupAPI) ListProtectedResourcesByBackupVaultRequest(arg0 *backup.ListProtectedResourcesByBackupVaultInput) (*request.Request, *backup.ListProtectedResourcesByBackupVaultOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProtectedResourcesByBackupVaultRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*backup.ListProtectedResourcesByBackupVaultOutput)
+	return ret0, ret1
+}
+
+// ListProtectedResourcesByBackupVaultRequest indicates an expected call of ListProtectedResourcesByBackupVaultRequest
+func (mr *MockBackupAPIMockRecorder) ListProtectedResourcesByBackupVaultRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectedResourcesByBackupVaultRequest", reflect.TypeOf((*MockBackupAPI)(nil).ListProtectedResourcesByBackupVaultRequest), arg0)
+}
+
+// ListProtectedResourcesByBackupVaultWithContext mocks base method
+func (m *MockBackupAPI) ListProtectedResourcesByBackupVaultWithContext(arg0 context.Context, arg1 *backup.ListProtectedResourcesByBackupVaultInput, arg2 ...request.Option) (*backup.ListProtectedResourcesByBackupVaultOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProtectedResourcesByBackupVaultWithContext", varargs...)
+	ret0, _ := ret[0].(*backup.ListProtectedResourcesByBackupVaultOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProtectedResourcesByBackupVaultWithContext indicates an expected call of ListProtectedResourcesByBackupVaultWithContext
+func (mr *MockBackupAPIMockRecorder) ListProtectedResourcesByBackupVaultWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProtectedResourcesByBackupVaultWithContext", reflect.TypeOf((*MockBackupAPI)(nil).ListProtectedResourcesByBackupVaultWithContext), varargs...)
 }
 
 // ListProtectedResourcesPages mocks base method
