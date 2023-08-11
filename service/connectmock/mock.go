@@ -585,6 +585,56 @@ func (mr *MockConnectAPIMockRecorder) AssociateSecurityKeyWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateSecurityKeyWithContext", reflect.TypeOf((*MockConnectAPI)(nil).AssociateSecurityKeyWithContext), varargs...)
 }
 
+// AssociateTrafficDistributionGroupUser mocks base method
+func (m *MockConnectAPI) AssociateTrafficDistributionGroupUser(arg0 *connect.AssociateTrafficDistributionGroupUserInput) (*connect.AssociateTrafficDistributionGroupUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateTrafficDistributionGroupUser", arg0)
+	ret0, _ := ret[0].(*connect.AssociateTrafficDistributionGroupUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateTrafficDistributionGroupUser indicates an expected call of AssociateTrafficDistributionGroupUser
+func (mr *MockConnectAPIMockRecorder) AssociateTrafficDistributionGroupUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateTrafficDistributionGroupUser", reflect.TypeOf((*MockConnectAPI)(nil).AssociateTrafficDistributionGroupUser), arg0)
+}
+
+// AssociateTrafficDistributionGroupUserRequest mocks base method
+func (m *MockConnectAPI) AssociateTrafficDistributionGroupUserRequest(arg0 *connect.AssociateTrafficDistributionGroupUserInput) (*request.Request, *connect.AssociateTrafficDistributionGroupUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AssociateTrafficDistributionGroupUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.AssociateTrafficDistributionGroupUserOutput)
+	return ret0, ret1
+}
+
+// AssociateTrafficDistributionGroupUserRequest indicates an expected call of AssociateTrafficDistributionGroupUserRequest
+func (mr *MockConnectAPIMockRecorder) AssociateTrafficDistributionGroupUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateTrafficDistributionGroupUserRequest", reflect.TypeOf((*MockConnectAPI)(nil).AssociateTrafficDistributionGroupUserRequest), arg0)
+}
+
+// AssociateTrafficDistributionGroupUserWithContext mocks base method
+func (m *MockConnectAPI) AssociateTrafficDistributionGroupUserWithContext(arg0 context.Context, arg1 *connect.AssociateTrafficDistributionGroupUserInput, arg2 ...request.Option) (*connect.AssociateTrafficDistributionGroupUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AssociateTrafficDistributionGroupUserWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.AssociateTrafficDistributionGroupUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AssociateTrafficDistributionGroupUserWithContext indicates an expected call of AssociateTrafficDistributionGroupUserWithContext
+func (mr *MockConnectAPIMockRecorder) AssociateTrafficDistributionGroupUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateTrafficDistributionGroupUserWithContext", reflect.TypeOf((*MockConnectAPI)(nil).AssociateTrafficDistributionGroupUserWithContext), varargs...)
+}
+
 // ClaimPhoneNumber mocks base method
 func (m *MockConnectAPI) ClaimPhoneNumber(arg0 *connect.ClaimPhoneNumberInput) (*connect.ClaimPhoneNumberOutput, error) {
 	m.ctrl.T.Helper()
@@ -4185,6 +4235,56 @@ func (mr *MockConnectAPIMockRecorder) DisassociateSecurityKeyWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateSecurityKeyWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateSecurityKeyWithContext), varargs...)
 }
 
+// DisassociateTrafficDistributionGroupUser mocks base method
+func (m *MockConnectAPI) DisassociateTrafficDistributionGroupUser(arg0 *connect.DisassociateTrafficDistributionGroupUserInput) (*connect.DisassociateTrafficDistributionGroupUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateTrafficDistributionGroupUser", arg0)
+	ret0, _ := ret[0].(*connect.DisassociateTrafficDistributionGroupUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateTrafficDistributionGroupUser indicates an expected call of DisassociateTrafficDistributionGroupUser
+func (mr *MockConnectAPIMockRecorder) DisassociateTrafficDistributionGroupUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateTrafficDistributionGroupUser", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateTrafficDistributionGroupUser), arg0)
+}
+
+// DisassociateTrafficDistributionGroupUserRequest mocks base method
+func (m *MockConnectAPI) DisassociateTrafficDistributionGroupUserRequest(arg0 *connect.DisassociateTrafficDistributionGroupUserInput) (*request.Request, *connect.DisassociateTrafficDistributionGroupUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DisassociateTrafficDistributionGroupUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DisassociateTrafficDistributionGroupUserOutput)
+	return ret0, ret1
+}
+
+// DisassociateTrafficDistributionGroupUserRequest indicates an expected call of DisassociateTrafficDistributionGroupUserRequest
+func (mr *MockConnectAPIMockRecorder) DisassociateTrafficDistributionGroupUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateTrafficDistributionGroupUserRequest", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateTrafficDistributionGroupUserRequest), arg0)
+}
+
+// DisassociateTrafficDistributionGroupUserWithContext mocks base method
+func (m *MockConnectAPI) DisassociateTrafficDistributionGroupUserWithContext(arg0 context.Context, arg1 *connect.DisassociateTrafficDistributionGroupUserInput, arg2 ...request.Option) (*connect.DisassociateTrafficDistributionGroupUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DisassociateTrafficDistributionGroupUserWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DisassociateTrafficDistributionGroupUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DisassociateTrafficDistributionGroupUserWithContext indicates an expected call of DisassociateTrafficDistributionGroupUserWithContext
+func (mr *MockConnectAPIMockRecorder) DisassociateTrafficDistributionGroupUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DisassociateTrafficDistributionGroupUserWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DisassociateTrafficDistributionGroupUserWithContext), varargs...)
+}
+
 // DismissUserContact mocks base method
 func (m *MockConnectAPI) DismissUserContact(arg0 *connect.DismissUserContactInput) (*connect.DismissUserContactOutput, error) {
 	m.ctrl.T.Helper()
@@ -7355,6 +7455,89 @@ func (mr *MockConnectAPIMockRecorder) ListTaskTemplatesWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTaskTemplatesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListTaskTemplatesWithContext), varargs...)
+}
+
+// ListTrafficDistributionGroupUsers mocks base method
+func (m *MockConnectAPI) ListTrafficDistributionGroupUsers(arg0 *connect.ListTrafficDistributionGroupUsersInput) (*connect.ListTrafficDistributionGroupUsersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTrafficDistributionGroupUsers", arg0)
+	ret0, _ := ret[0].(*connect.ListTrafficDistributionGroupUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTrafficDistributionGroupUsers indicates an expected call of ListTrafficDistributionGroupUsers
+func (mr *MockConnectAPIMockRecorder) ListTrafficDistributionGroupUsers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTrafficDistributionGroupUsers", reflect.TypeOf((*MockConnectAPI)(nil).ListTrafficDistributionGroupUsers), arg0)
+}
+
+// ListTrafficDistributionGroupUsersPages mocks base method
+func (m *MockConnectAPI) ListTrafficDistributionGroupUsersPages(arg0 *connect.ListTrafficDistributionGroupUsersInput, arg1 func(*connect.ListTrafficDistributionGroupUsersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTrafficDistributionGroupUsersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTrafficDistributionGroupUsersPages indicates an expected call of ListTrafficDistributionGroupUsersPages
+func (mr *MockConnectAPIMockRecorder) ListTrafficDistributionGroupUsersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTrafficDistributionGroupUsersPages", reflect.TypeOf((*MockConnectAPI)(nil).ListTrafficDistributionGroupUsersPages), arg0, arg1)
+}
+
+// ListTrafficDistributionGroupUsersPagesWithContext mocks base method
+func (m *MockConnectAPI) ListTrafficDistributionGroupUsersPagesWithContext(arg0 context.Context, arg1 *connect.ListTrafficDistributionGroupUsersInput, arg2 func(*connect.ListTrafficDistributionGroupUsersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTrafficDistributionGroupUsersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTrafficDistributionGroupUsersPagesWithContext indicates an expected call of ListTrafficDistributionGroupUsersPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListTrafficDistributionGroupUsersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTrafficDistributionGroupUsersPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListTrafficDistributionGroupUsersPagesWithContext), varargs...)
+}
+
+// ListTrafficDistributionGroupUsersRequest mocks base method
+func (m *MockConnectAPI) ListTrafficDistributionGroupUsersRequest(arg0 *connect.ListTrafficDistributionGroupUsersInput) (*request.Request, *connect.ListTrafficDistributionGroupUsersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTrafficDistributionGroupUsersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListTrafficDistributionGroupUsersOutput)
+	return ret0, ret1
+}
+
+// ListTrafficDistributionGroupUsersRequest indicates an expected call of ListTrafficDistributionGroupUsersRequest
+func (mr *MockConnectAPIMockRecorder) ListTrafficDistributionGroupUsersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTrafficDistributionGroupUsersRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListTrafficDistributionGroupUsersRequest), arg0)
+}
+
+// ListTrafficDistributionGroupUsersWithContext mocks base method
+func (m *MockConnectAPI) ListTrafficDistributionGroupUsersWithContext(arg0 context.Context, arg1 *connect.ListTrafficDistributionGroupUsersInput, arg2 ...request.Option) (*connect.ListTrafficDistributionGroupUsersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTrafficDistributionGroupUsersWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListTrafficDistributionGroupUsersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTrafficDistributionGroupUsersWithContext indicates an expected call of ListTrafficDistributionGroupUsersWithContext
+func (mr *MockConnectAPIMockRecorder) ListTrafficDistributionGroupUsersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTrafficDistributionGroupUsersWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListTrafficDistributionGroupUsersWithContext), varargs...)
 }
 
 // ListTrafficDistributionGroups mocks base method
