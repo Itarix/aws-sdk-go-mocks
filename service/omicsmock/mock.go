@@ -85,6 +85,56 @@ func (mr *MockOmicsAPIMockRecorder) AbortMultipartReadSetUploadWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AbortMultipartReadSetUploadWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).AbortMultipartReadSetUploadWithContext), varargs...)
 }
 
+// AcceptShare mocks base method
+func (m *MockOmicsAPI) AcceptShare(arg0 *omics.AcceptShareInput) (*omics.AcceptShareOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AcceptShare", arg0)
+	ret0, _ := ret[0].(*omics.AcceptShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AcceptShare indicates an expected call of AcceptShare
+func (mr *MockOmicsAPIMockRecorder) AcceptShare(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptShare", reflect.TypeOf((*MockOmicsAPI)(nil).AcceptShare), arg0)
+}
+
+// AcceptShareRequest mocks base method
+func (m *MockOmicsAPI) AcceptShareRequest(arg0 *omics.AcceptShareInput) (*request.Request, *omics.AcceptShareOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "AcceptShareRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.AcceptShareOutput)
+	return ret0, ret1
+}
+
+// AcceptShareRequest indicates an expected call of AcceptShareRequest
+func (mr *MockOmicsAPIMockRecorder) AcceptShareRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptShareRequest", reflect.TypeOf((*MockOmicsAPI)(nil).AcceptShareRequest), arg0)
+}
+
+// AcceptShareWithContext mocks base method
+func (m *MockOmicsAPI) AcceptShareWithContext(arg0 context.Context, arg1 *omics.AcceptShareInput, arg2 ...request.Option) (*omics.AcceptShareOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "AcceptShareWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.AcceptShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// AcceptShareWithContext indicates an expected call of AcceptShareWithContext
+func (mr *MockOmicsAPIMockRecorder) AcceptShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AcceptShareWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).AcceptShareWithContext), varargs...)
+}
+
 // BatchDeleteReadSet mocks base method
 func (m *MockOmicsAPI) BatchDeleteReadSet(arg0 *omics.BatchDeleteReadSetInput) (*omics.BatchDeleteReadSetOutput, error) {
 	m.ctrl.T.Helper()
@@ -365,6 +415,56 @@ func (mr *MockOmicsAPIMockRecorder) CreateAnnotationStoreRequest(arg0 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnnotationStoreRequest", reflect.TypeOf((*MockOmicsAPI)(nil).CreateAnnotationStoreRequest), arg0)
 }
 
+// CreateAnnotationStoreVersion mocks base method
+func (m *MockOmicsAPI) CreateAnnotationStoreVersion(arg0 *omics.CreateAnnotationStoreVersionInput) (*omics.CreateAnnotationStoreVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAnnotationStoreVersion", arg0)
+	ret0, _ := ret[0].(*omics.CreateAnnotationStoreVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAnnotationStoreVersion indicates an expected call of CreateAnnotationStoreVersion
+func (mr *MockOmicsAPIMockRecorder) CreateAnnotationStoreVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnnotationStoreVersion", reflect.TypeOf((*MockOmicsAPI)(nil).CreateAnnotationStoreVersion), arg0)
+}
+
+// CreateAnnotationStoreVersionRequest mocks base method
+func (m *MockOmicsAPI) CreateAnnotationStoreVersionRequest(arg0 *omics.CreateAnnotationStoreVersionInput) (*request.Request, *omics.CreateAnnotationStoreVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAnnotationStoreVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.CreateAnnotationStoreVersionOutput)
+	return ret0, ret1
+}
+
+// CreateAnnotationStoreVersionRequest indicates an expected call of CreateAnnotationStoreVersionRequest
+func (mr *MockOmicsAPIMockRecorder) CreateAnnotationStoreVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnnotationStoreVersionRequest", reflect.TypeOf((*MockOmicsAPI)(nil).CreateAnnotationStoreVersionRequest), arg0)
+}
+
+// CreateAnnotationStoreVersionWithContext mocks base method
+func (m *MockOmicsAPI) CreateAnnotationStoreVersionWithContext(arg0 context.Context, arg1 *omics.CreateAnnotationStoreVersionInput, arg2 ...request.Option) (*omics.CreateAnnotationStoreVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAnnotationStoreVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.CreateAnnotationStoreVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAnnotationStoreVersionWithContext indicates an expected call of CreateAnnotationStoreVersionWithContext
+func (mr *MockOmicsAPIMockRecorder) CreateAnnotationStoreVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAnnotationStoreVersionWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).CreateAnnotationStoreVersionWithContext), varargs...)
+}
+
 // CreateAnnotationStoreWithContext mocks base method
 func (m *MockOmicsAPI) CreateAnnotationStoreWithContext(arg0 context.Context, arg1 *omics.CreateAnnotationStoreInput, arg2 ...request.Option) (*omics.CreateAnnotationStoreOutput, error) {
 	m.ctrl.T.Helper()
@@ -585,6 +685,56 @@ func (mr *MockOmicsAPIMockRecorder) CreateSequenceStoreWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSequenceStoreWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).CreateSequenceStoreWithContext), varargs...)
 }
 
+// CreateShare mocks base method
+func (m *MockOmicsAPI) CreateShare(arg0 *omics.CreateShareInput) (*omics.CreateShareOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateShare", arg0)
+	ret0, _ := ret[0].(*omics.CreateShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateShare indicates an expected call of CreateShare
+func (mr *MockOmicsAPIMockRecorder) CreateShare(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateShare", reflect.TypeOf((*MockOmicsAPI)(nil).CreateShare), arg0)
+}
+
+// CreateShareRequest mocks base method
+func (m *MockOmicsAPI) CreateShareRequest(arg0 *omics.CreateShareInput) (*request.Request, *omics.CreateShareOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateShareRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.CreateShareOutput)
+	return ret0, ret1
+}
+
+// CreateShareRequest indicates an expected call of CreateShareRequest
+func (mr *MockOmicsAPIMockRecorder) CreateShareRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateShareRequest", reflect.TypeOf((*MockOmicsAPI)(nil).CreateShareRequest), arg0)
+}
+
+// CreateShareWithContext mocks base method
+func (m *MockOmicsAPI) CreateShareWithContext(arg0 context.Context, arg1 *omics.CreateShareInput, arg2 ...request.Option) (*omics.CreateShareOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateShareWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.CreateShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateShareWithContext indicates an expected call of CreateShareWithContext
+func (mr *MockOmicsAPIMockRecorder) CreateShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateShareWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).CreateShareWithContext), varargs...)
+}
+
 // CreateVariantStore mocks base method
 func (m *MockOmicsAPI) CreateVariantStore(arg0 *omics.CreateVariantStoreInput) (*omics.CreateVariantStoreOutput, error) {
 	m.ctrl.T.Helper()
@@ -713,6 +863,56 @@ func (m *MockOmicsAPI) DeleteAnnotationStoreRequest(arg0 *omics.DeleteAnnotation
 func (mr *MockOmicsAPIMockRecorder) DeleteAnnotationStoreRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnnotationStoreRequest", reflect.TypeOf((*MockOmicsAPI)(nil).DeleteAnnotationStoreRequest), arg0)
+}
+
+// DeleteAnnotationStoreVersions mocks base method
+func (m *MockOmicsAPI) DeleteAnnotationStoreVersions(arg0 *omics.DeleteAnnotationStoreVersionsInput) (*omics.DeleteAnnotationStoreVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAnnotationStoreVersions", arg0)
+	ret0, _ := ret[0].(*omics.DeleteAnnotationStoreVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAnnotationStoreVersions indicates an expected call of DeleteAnnotationStoreVersions
+func (mr *MockOmicsAPIMockRecorder) DeleteAnnotationStoreVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnnotationStoreVersions", reflect.TypeOf((*MockOmicsAPI)(nil).DeleteAnnotationStoreVersions), arg0)
+}
+
+// DeleteAnnotationStoreVersionsRequest mocks base method
+func (m *MockOmicsAPI) DeleteAnnotationStoreVersionsRequest(arg0 *omics.DeleteAnnotationStoreVersionsInput) (*request.Request, *omics.DeleteAnnotationStoreVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAnnotationStoreVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.DeleteAnnotationStoreVersionsOutput)
+	return ret0, ret1
+}
+
+// DeleteAnnotationStoreVersionsRequest indicates an expected call of DeleteAnnotationStoreVersionsRequest
+func (mr *MockOmicsAPIMockRecorder) DeleteAnnotationStoreVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnnotationStoreVersionsRequest", reflect.TypeOf((*MockOmicsAPI)(nil).DeleteAnnotationStoreVersionsRequest), arg0)
+}
+
+// DeleteAnnotationStoreVersionsWithContext mocks base method
+func (m *MockOmicsAPI) DeleteAnnotationStoreVersionsWithContext(arg0 context.Context, arg1 *omics.DeleteAnnotationStoreVersionsInput, arg2 ...request.Option) (*omics.DeleteAnnotationStoreVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAnnotationStoreVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.DeleteAnnotationStoreVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAnnotationStoreVersionsWithContext indicates an expected call of DeleteAnnotationStoreVersionsWithContext
+func (mr *MockOmicsAPIMockRecorder) DeleteAnnotationStoreVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAnnotationStoreVersionsWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).DeleteAnnotationStoreVersionsWithContext), varargs...)
 }
 
 // DeleteAnnotationStoreWithContext mocks base method
@@ -985,6 +1185,56 @@ func (mr *MockOmicsAPIMockRecorder) DeleteSequenceStoreWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSequenceStoreWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).DeleteSequenceStoreWithContext), varargs...)
 }
 
+// DeleteShare mocks base method
+func (m *MockOmicsAPI) DeleteShare(arg0 *omics.DeleteShareInput) (*omics.DeleteShareOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteShare", arg0)
+	ret0, _ := ret[0].(*omics.DeleteShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteShare indicates an expected call of DeleteShare
+func (mr *MockOmicsAPIMockRecorder) DeleteShare(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteShare", reflect.TypeOf((*MockOmicsAPI)(nil).DeleteShare), arg0)
+}
+
+// DeleteShareRequest mocks base method
+func (m *MockOmicsAPI) DeleteShareRequest(arg0 *omics.DeleteShareInput) (*request.Request, *omics.DeleteShareOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteShareRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.DeleteShareOutput)
+	return ret0, ret1
+}
+
+// DeleteShareRequest indicates an expected call of DeleteShareRequest
+func (mr *MockOmicsAPIMockRecorder) DeleteShareRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteShareRequest", reflect.TypeOf((*MockOmicsAPI)(nil).DeleteShareRequest), arg0)
+}
+
+// DeleteShareWithContext mocks base method
+func (m *MockOmicsAPI) DeleteShareWithContext(arg0 context.Context, arg1 *omics.DeleteShareInput, arg2 ...request.Option) (*omics.DeleteShareOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteShareWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.DeleteShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteShareWithContext indicates an expected call of DeleteShareWithContext
+func (mr *MockOmicsAPIMockRecorder) DeleteShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteShareWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).DeleteShareWithContext), varargs...)
+}
+
 // DeleteVariantStore mocks base method
 func (m *MockOmicsAPI) DeleteVariantStore(arg0 *omics.DeleteVariantStoreInput) (*omics.DeleteVariantStoreOutput, error) {
 	m.ctrl.T.Helper()
@@ -1163,6 +1413,56 @@ func (m *MockOmicsAPI) GetAnnotationStoreRequest(arg0 *omics.GetAnnotationStoreI
 func (mr *MockOmicsAPIMockRecorder) GetAnnotationStoreRequest(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnnotationStoreRequest", reflect.TypeOf((*MockOmicsAPI)(nil).GetAnnotationStoreRequest), arg0)
+}
+
+// GetAnnotationStoreVersion mocks base method
+func (m *MockOmicsAPI) GetAnnotationStoreVersion(arg0 *omics.GetAnnotationStoreVersionInput) (*omics.GetAnnotationStoreVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAnnotationStoreVersion", arg0)
+	ret0, _ := ret[0].(*omics.GetAnnotationStoreVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAnnotationStoreVersion indicates an expected call of GetAnnotationStoreVersion
+func (mr *MockOmicsAPIMockRecorder) GetAnnotationStoreVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnnotationStoreVersion", reflect.TypeOf((*MockOmicsAPI)(nil).GetAnnotationStoreVersion), arg0)
+}
+
+// GetAnnotationStoreVersionRequest mocks base method
+func (m *MockOmicsAPI) GetAnnotationStoreVersionRequest(arg0 *omics.GetAnnotationStoreVersionInput) (*request.Request, *omics.GetAnnotationStoreVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAnnotationStoreVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.GetAnnotationStoreVersionOutput)
+	return ret0, ret1
+}
+
+// GetAnnotationStoreVersionRequest indicates an expected call of GetAnnotationStoreVersionRequest
+func (mr *MockOmicsAPIMockRecorder) GetAnnotationStoreVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnnotationStoreVersionRequest", reflect.TypeOf((*MockOmicsAPI)(nil).GetAnnotationStoreVersionRequest), arg0)
+}
+
+// GetAnnotationStoreVersionWithContext mocks base method
+func (m *MockOmicsAPI) GetAnnotationStoreVersionWithContext(arg0 context.Context, arg1 *omics.GetAnnotationStoreVersionInput, arg2 ...request.Option) (*omics.GetAnnotationStoreVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAnnotationStoreVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.GetAnnotationStoreVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAnnotationStoreVersionWithContext indicates an expected call of GetAnnotationStoreVersionWithContext
+func (mr *MockOmicsAPIMockRecorder) GetAnnotationStoreVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAnnotationStoreVersionWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).GetAnnotationStoreVersionWithContext), varargs...)
 }
 
 // GetAnnotationStoreWithContext mocks base method
@@ -1835,6 +2135,56 @@ func (mr *MockOmicsAPIMockRecorder) GetSequenceStoreWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSequenceStoreWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).GetSequenceStoreWithContext), varargs...)
 }
 
+// GetShare mocks base method
+func (m *MockOmicsAPI) GetShare(arg0 *omics.GetShareInput) (*omics.GetShareOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetShare", arg0)
+	ret0, _ := ret[0].(*omics.GetShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetShare indicates an expected call of GetShare
+func (mr *MockOmicsAPIMockRecorder) GetShare(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetShare", reflect.TypeOf((*MockOmicsAPI)(nil).GetShare), arg0)
+}
+
+// GetShareRequest mocks base method
+func (m *MockOmicsAPI) GetShareRequest(arg0 *omics.GetShareInput) (*request.Request, *omics.GetShareOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetShareRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.GetShareOutput)
+	return ret0, ret1
+}
+
+// GetShareRequest indicates an expected call of GetShareRequest
+func (mr *MockOmicsAPIMockRecorder) GetShareRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetShareRequest", reflect.TypeOf((*MockOmicsAPI)(nil).GetShareRequest), arg0)
+}
+
+// GetShareWithContext mocks base method
+func (m *MockOmicsAPI) GetShareWithContext(arg0 context.Context, arg1 *omics.GetShareInput, arg2 ...request.Option) (*omics.GetShareOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetShareWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.GetShareOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetShareWithContext indicates an expected call of GetShareWithContext
+func (mr *MockOmicsAPIMockRecorder) GetShareWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetShareWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).GetShareWithContext), varargs...)
+}
+
 // GetVariantImportJob mocks base method
 func (m *MockOmicsAPI) GetVariantImportJob(arg0 *omics.GetVariantImportJobInput) (*omics.GetVariantImportJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -2066,6 +2416,89 @@ func (mr *MockOmicsAPIMockRecorder) ListAnnotationImportJobsWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnnotationImportJobsWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).ListAnnotationImportJobsWithContext), varargs...)
+}
+
+// ListAnnotationStoreVersions mocks base method
+func (m *MockOmicsAPI) ListAnnotationStoreVersions(arg0 *omics.ListAnnotationStoreVersionsInput) (*omics.ListAnnotationStoreVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnnotationStoreVersions", arg0)
+	ret0, _ := ret[0].(*omics.ListAnnotationStoreVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAnnotationStoreVersions indicates an expected call of ListAnnotationStoreVersions
+func (mr *MockOmicsAPIMockRecorder) ListAnnotationStoreVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnnotationStoreVersions", reflect.TypeOf((*MockOmicsAPI)(nil).ListAnnotationStoreVersions), arg0)
+}
+
+// ListAnnotationStoreVersionsPages mocks base method
+func (m *MockOmicsAPI) ListAnnotationStoreVersionsPages(arg0 *omics.ListAnnotationStoreVersionsInput, arg1 func(*omics.ListAnnotationStoreVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnnotationStoreVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAnnotationStoreVersionsPages indicates an expected call of ListAnnotationStoreVersionsPages
+func (mr *MockOmicsAPIMockRecorder) ListAnnotationStoreVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnnotationStoreVersionsPages", reflect.TypeOf((*MockOmicsAPI)(nil).ListAnnotationStoreVersionsPages), arg0, arg1)
+}
+
+// ListAnnotationStoreVersionsPagesWithContext mocks base method
+func (m *MockOmicsAPI) ListAnnotationStoreVersionsPagesWithContext(arg0 context.Context, arg1 *omics.ListAnnotationStoreVersionsInput, arg2 func(*omics.ListAnnotationStoreVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAnnotationStoreVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAnnotationStoreVersionsPagesWithContext indicates an expected call of ListAnnotationStoreVersionsPagesWithContext
+func (mr *MockOmicsAPIMockRecorder) ListAnnotationStoreVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnnotationStoreVersionsPagesWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).ListAnnotationStoreVersionsPagesWithContext), varargs...)
+}
+
+// ListAnnotationStoreVersionsRequest mocks base method
+func (m *MockOmicsAPI) ListAnnotationStoreVersionsRequest(arg0 *omics.ListAnnotationStoreVersionsInput) (*request.Request, *omics.ListAnnotationStoreVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnnotationStoreVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.ListAnnotationStoreVersionsOutput)
+	return ret0, ret1
+}
+
+// ListAnnotationStoreVersionsRequest indicates an expected call of ListAnnotationStoreVersionsRequest
+func (mr *MockOmicsAPIMockRecorder) ListAnnotationStoreVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnnotationStoreVersionsRequest", reflect.TypeOf((*MockOmicsAPI)(nil).ListAnnotationStoreVersionsRequest), arg0)
+}
+
+// ListAnnotationStoreVersionsWithContext mocks base method
+func (m *MockOmicsAPI) ListAnnotationStoreVersionsWithContext(arg0 context.Context, arg1 *omics.ListAnnotationStoreVersionsInput, arg2 ...request.Option) (*omics.ListAnnotationStoreVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAnnotationStoreVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.ListAnnotationStoreVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAnnotationStoreVersionsWithContext indicates an expected call of ListAnnotationStoreVersionsWithContext
+func (mr *MockOmicsAPIMockRecorder) ListAnnotationStoreVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnnotationStoreVersionsWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).ListAnnotationStoreVersionsWithContext), varargs...)
 }
 
 // ListAnnotationStores mocks base method
@@ -3230,6 +3663,89 @@ func (mr *MockOmicsAPIMockRecorder) ListSequenceStoresWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSequenceStoresWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).ListSequenceStoresWithContext), varargs...)
 }
 
+// ListShares mocks base method
+func (m *MockOmicsAPI) ListShares(arg0 *omics.ListSharesInput) (*omics.ListSharesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListShares", arg0)
+	ret0, _ := ret[0].(*omics.ListSharesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListShares indicates an expected call of ListShares
+func (mr *MockOmicsAPIMockRecorder) ListShares(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListShares", reflect.TypeOf((*MockOmicsAPI)(nil).ListShares), arg0)
+}
+
+// ListSharesPages mocks base method
+func (m *MockOmicsAPI) ListSharesPages(arg0 *omics.ListSharesInput, arg1 func(*omics.ListSharesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSharesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSharesPages indicates an expected call of ListSharesPages
+func (mr *MockOmicsAPIMockRecorder) ListSharesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharesPages", reflect.TypeOf((*MockOmicsAPI)(nil).ListSharesPages), arg0, arg1)
+}
+
+// ListSharesPagesWithContext mocks base method
+func (m *MockOmicsAPI) ListSharesPagesWithContext(arg0 context.Context, arg1 *omics.ListSharesInput, arg2 func(*omics.ListSharesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSharesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSharesPagesWithContext indicates an expected call of ListSharesPagesWithContext
+func (mr *MockOmicsAPIMockRecorder) ListSharesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharesPagesWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).ListSharesPagesWithContext), varargs...)
+}
+
+// ListSharesRequest mocks base method
+func (m *MockOmicsAPI) ListSharesRequest(arg0 *omics.ListSharesInput) (*request.Request, *omics.ListSharesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSharesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.ListSharesOutput)
+	return ret0, ret1
+}
+
+// ListSharesRequest indicates an expected call of ListSharesRequest
+func (mr *MockOmicsAPIMockRecorder) ListSharesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharesRequest", reflect.TypeOf((*MockOmicsAPI)(nil).ListSharesRequest), arg0)
+}
+
+// ListSharesWithContext mocks base method
+func (m *MockOmicsAPI) ListSharesWithContext(arg0 context.Context, arg1 *omics.ListSharesInput, arg2 ...request.Option) (*omics.ListSharesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSharesWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.ListSharesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSharesWithContext indicates an expected call of ListSharesWithContext
+func (mr *MockOmicsAPIMockRecorder) ListSharesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSharesWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).ListSharesWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockOmicsAPI) ListTagsForResource(arg0 *omics.ListTagsForResourceInput) (*omics.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -4009,6 +4525,56 @@ func (mr *MockOmicsAPIMockRecorder) UpdateAnnotationStoreRequest(arg0 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnnotationStoreRequest", reflect.TypeOf((*MockOmicsAPI)(nil).UpdateAnnotationStoreRequest), arg0)
 }
 
+// UpdateAnnotationStoreVersion mocks base method
+func (m *MockOmicsAPI) UpdateAnnotationStoreVersion(arg0 *omics.UpdateAnnotationStoreVersionInput) (*omics.UpdateAnnotationStoreVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAnnotationStoreVersion", arg0)
+	ret0, _ := ret[0].(*omics.UpdateAnnotationStoreVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAnnotationStoreVersion indicates an expected call of UpdateAnnotationStoreVersion
+func (mr *MockOmicsAPIMockRecorder) UpdateAnnotationStoreVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnnotationStoreVersion", reflect.TypeOf((*MockOmicsAPI)(nil).UpdateAnnotationStoreVersion), arg0)
+}
+
+// UpdateAnnotationStoreVersionRequest mocks base method
+func (m *MockOmicsAPI) UpdateAnnotationStoreVersionRequest(arg0 *omics.UpdateAnnotationStoreVersionInput) (*request.Request, *omics.UpdateAnnotationStoreVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAnnotationStoreVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*omics.UpdateAnnotationStoreVersionOutput)
+	return ret0, ret1
+}
+
+// UpdateAnnotationStoreVersionRequest indicates an expected call of UpdateAnnotationStoreVersionRequest
+func (mr *MockOmicsAPIMockRecorder) UpdateAnnotationStoreVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnnotationStoreVersionRequest", reflect.TypeOf((*MockOmicsAPI)(nil).UpdateAnnotationStoreVersionRequest), arg0)
+}
+
+// UpdateAnnotationStoreVersionWithContext mocks base method
+func (m *MockOmicsAPI) UpdateAnnotationStoreVersionWithContext(arg0 context.Context, arg1 *omics.UpdateAnnotationStoreVersionInput, arg2 ...request.Option) (*omics.UpdateAnnotationStoreVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAnnotationStoreVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*omics.UpdateAnnotationStoreVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAnnotationStoreVersionWithContext indicates an expected call of UpdateAnnotationStoreVersionWithContext
+func (mr *MockOmicsAPIMockRecorder) UpdateAnnotationStoreVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAnnotationStoreVersionWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).UpdateAnnotationStoreVersionWithContext), varargs...)
+}
+
 // UpdateAnnotationStoreWithContext mocks base method
 func (m *MockOmicsAPI) UpdateAnnotationStoreWithContext(arg0 context.Context, arg1 *omics.UpdateAnnotationStoreInput, arg2 ...request.Option) (*omics.UpdateAnnotationStoreOutput, error) {
 	m.ctrl.T.Helper()
@@ -4326,6 +4892,72 @@ func (mr *MockOmicsAPIMockRecorder) WaitUntilAnnotationStoreDeletedWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilAnnotationStoreDeletedWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).WaitUntilAnnotationStoreDeletedWithContext), varargs...)
+}
+
+// WaitUntilAnnotationStoreVersionCreated mocks base method
+func (m *MockOmicsAPI) WaitUntilAnnotationStoreVersionCreated(arg0 *omics.GetAnnotationStoreVersionInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilAnnotationStoreVersionCreated", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilAnnotationStoreVersionCreated indicates an expected call of WaitUntilAnnotationStoreVersionCreated
+func (mr *MockOmicsAPIMockRecorder) WaitUntilAnnotationStoreVersionCreated(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilAnnotationStoreVersionCreated", reflect.TypeOf((*MockOmicsAPI)(nil).WaitUntilAnnotationStoreVersionCreated), arg0)
+}
+
+// WaitUntilAnnotationStoreVersionCreatedWithContext mocks base method
+func (m *MockOmicsAPI) WaitUntilAnnotationStoreVersionCreatedWithContext(arg0 context.Context, arg1 *omics.GetAnnotationStoreVersionInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilAnnotationStoreVersionCreatedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilAnnotationStoreVersionCreatedWithContext indicates an expected call of WaitUntilAnnotationStoreVersionCreatedWithContext
+func (mr *MockOmicsAPIMockRecorder) WaitUntilAnnotationStoreVersionCreatedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilAnnotationStoreVersionCreatedWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).WaitUntilAnnotationStoreVersionCreatedWithContext), varargs...)
+}
+
+// WaitUntilAnnotationStoreVersionDeleted mocks base method
+func (m *MockOmicsAPI) WaitUntilAnnotationStoreVersionDeleted(arg0 *omics.GetAnnotationStoreVersionInput) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "WaitUntilAnnotationStoreVersionDeleted", arg0)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilAnnotationStoreVersionDeleted indicates an expected call of WaitUntilAnnotationStoreVersionDeleted
+func (mr *MockOmicsAPIMockRecorder) WaitUntilAnnotationStoreVersionDeleted(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilAnnotationStoreVersionDeleted", reflect.TypeOf((*MockOmicsAPI)(nil).WaitUntilAnnotationStoreVersionDeleted), arg0)
+}
+
+// WaitUntilAnnotationStoreVersionDeletedWithContext mocks base method
+func (m *MockOmicsAPI) WaitUntilAnnotationStoreVersionDeletedWithContext(arg0 context.Context, arg1 *omics.GetAnnotationStoreVersionInput, arg2 ...request.WaiterOption) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "WaitUntilAnnotationStoreVersionDeletedWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// WaitUntilAnnotationStoreVersionDeletedWithContext indicates an expected call of WaitUntilAnnotationStoreVersionDeletedWithContext
+func (mr *MockOmicsAPIMockRecorder) WaitUntilAnnotationStoreVersionDeletedWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WaitUntilAnnotationStoreVersionDeletedWithContext", reflect.TypeOf((*MockOmicsAPI)(nil).WaitUntilAnnotationStoreVersionDeletedWithContext), varargs...)
 }
 
 // WaitUntilReadSetActivationJobCompleted mocks base method
