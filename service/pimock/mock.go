@@ -35,6 +35,106 @@ func (m *MockPIAPI) EXPECT() *MockPIAPIMockRecorder {
 	return m.recorder
 }
 
+// CreatePerformanceAnalysisReport mocks base method
+func (m *MockPIAPI) CreatePerformanceAnalysisReport(arg0 *pi.CreatePerformanceAnalysisReportInput) (*pi.CreatePerformanceAnalysisReportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePerformanceAnalysisReport", arg0)
+	ret0, _ := ret[0].(*pi.CreatePerformanceAnalysisReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePerformanceAnalysisReport indicates an expected call of CreatePerformanceAnalysisReport
+func (mr *MockPIAPIMockRecorder) CreatePerformanceAnalysisReport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePerformanceAnalysisReport", reflect.TypeOf((*MockPIAPI)(nil).CreatePerformanceAnalysisReport), arg0)
+}
+
+// CreatePerformanceAnalysisReportRequest mocks base method
+func (m *MockPIAPI) CreatePerformanceAnalysisReportRequest(arg0 *pi.CreatePerformanceAnalysisReportInput) (*request.Request, *pi.CreatePerformanceAnalysisReportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePerformanceAnalysisReportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pi.CreatePerformanceAnalysisReportOutput)
+	return ret0, ret1
+}
+
+// CreatePerformanceAnalysisReportRequest indicates an expected call of CreatePerformanceAnalysisReportRequest
+func (mr *MockPIAPIMockRecorder) CreatePerformanceAnalysisReportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePerformanceAnalysisReportRequest", reflect.TypeOf((*MockPIAPI)(nil).CreatePerformanceAnalysisReportRequest), arg0)
+}
+
+// CreatePerformanceAnalysisReportWithContext mocks base method
+func (m *MockPIAPI) CreatePerformanceAnalysisReportWithContext(arg0 context.Context, arg1 *pi.CreatePerformanceAnalysisReportInput, arg2 ...request.Option) (*pi.CreatePerformanceAnalysisReportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreatePerformanceAnalysisReportWithContext", varargs...)
+	ret0, _ := ret[0].(*pi.CreatePerformanceAnalysisReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePerformanceAnalysisReportWithContext indicates an expected call of CreatePerformanceAnalysisReportWithContext
+func (mr *MockPIAPIMockRecorder) CreatePerformanceAnalysisReportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePerformanceAnalysisReportWithContext", reflect.TypeOf((*MockPIAPI)(nil).CreatePerformanceAnalysisReportWithContext), varargs...)
+}
+
+// DeletePerformanceAnalysisReport mocks base method
+func (m *MockPIAPI) DeletePerformanceAnalysisReport(arg0 *pi.DeletePerformanceAnalysisReportInput) (*pi.DeletePerformanceAnalysisReportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePerformanceAnalysisReport", arg0)
+	ret0, _ := ret[0].(*pi.DeletePerformanceAnalysisReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePerformanceAnalysisReport indicates an expected call of DeletePerformanceAnalysisReport
+func (mr *MockPIAPIMockRecorder) DeletePerformanceAnalysisReport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePerformanceAnalysisReport", reflect.TypeOf((*MockPIAPI)(nil).DeletePerformanceAnalysisReport), arg0)
+}
+
+// DeletePerformanceAnalysisReportRequest mocks base method
+func (m *MockPIAPI) DeletePerformanceAnalysisReportRequest(arg0 *pi.DeletePerformanceAnalysisReportInput) (*request.Request, *pi.DeletePerformanceAnalysisReportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePerformanceAnalysisReportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pi.DeletePerformanceAnalysisReportOutput)
+	return ret0, ret1
+}
+
+// DeletePerformanceAnalysisReportRequest indicates an expected call of DeletePerformanceAnalysisReportRequest
+func (mr *MockPIAPIMockRecorder) DeletePerformanceAnalysisReportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePerformanceAnalysisReportRequest", reflect.TypeOf((*MockPIAPI)(nil).DeletePerformanceAnalysisReportRequest), arg0)
+}
+
+// DeletePerformanceAnalysisReportWithContext mocks base method
+func (m *MockPIAPI) DeletePerformanceAnalysisReportWithContext(arg0 context.Context, arg1 *pi.DeletePerformanceAnalysisReportInput, arg2 ...request.Option) (*pi.DeletePerformanceAnalysisReportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePerformanceAnalysisReportWithContext", varargs...)
+	ret0, _ := ret[0].(*pi.DeletePerformanceAnalysisReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePerformanceAnalysisReportWithContext indicates an expected call of DeletePerformanceAnalysisReportWithContext
+func (mr *MockPIAPIMockRecorder) DeletePerformanceAnalysisReportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePerformanceAnalysisReportWithContext", reflect.TypeOf((*MockPIAPI)(nil).DeletePerformanceAnalysisReportWithContext), varargs...)
+}
+
 // DescribeDimensionKeys mocks base method
 func (m *MockPIAPI) DescribeDimensionKeys(arg0 *pi.DescribeDimensionKeysInput) (*pi.DescribeDimensionKeysOutput, error) {
 	m.ctrl.T.Helper()
@@ -166,6 +266,56 @@ func (mr *MockPIAPIMockRecorder) GetDimensionKeyDetailsWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDimensionKeyDetailsWithContext", reflect.TypeOf((*MockPIAPI)(nil).GetDimensionKeyDetailsWithContext), varargs...)
+}
+
+// GetPerformanceAnalysisReport mocks base method
+func (m *MockPIAPI) GetPerformanceAnalysisReport(arg0 *pi.GetPerformanceAnalysisReportInput) (*pi.GetPerformanceAnalysisReportOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPerformanceAnalysisReport", arg0)
+	ret0, _ := ret[0].(*pi.GetPerformanceAnalysisReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPerformanceAnalysisReport indicates an expected call of GetPerformanceAnalysisReport
+func (mr *MockPIAPIMockRecorder) GetPerformanceAnalysisReport(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPerformanceAnalysisReport", reflect.TypeOf((*MockPIAPI)(nil).GetPerformanceAnalysisReport), arg0)
+}
+
+// GetPerformanceAnalysisReportRequest mocks base method
+func (m *MockPIAPI) GetPerformanceAnalysisReportRequest(arg0 *pi.GetPerformanceAnalysisReportInput) (*request.Request, *pi.GetPerformanceAnalysisReportOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPerformanceAnalysisReportRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pi.GetPerformanceAnalysisReportOutput)
+	return ret0, ret1
+}
+
+// GetPerformanceAnalysisReportRequest indicates an expected call of GetPerformanceAnalysisReportRequest
+func (mr *MockPIAPIMockRecorder) GetPerformanceAnalysisReportRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPerformanceAnalysisReportRequest", reflect.TypeOf((*MockPIAPI)(nil).GetPerformanceAnalysisReportRequest), arg0)
+}
+
+// GetPerformanceAnalysisReportWithContext mocks base method
+func (m *MockPIAPI) GetPerformanceAnalysisReportWithContext(arg0 context.Context, arg1 *pi.GetPerformanceAnalysisReportInput, arg2 ...request.Option) (*pi.GetPerformanceAnalysisReportOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPerformanceAnalysisReportWithContext", varargs...)
+	ret0, _ := ret[0].(*pi.GetPerformanceAnalysisReportOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPerformanceAnalysisReportWithContext indicates an expected call of GetPerformanceAnalysisReportWithContext
+func (mr *MockPIAPIMockRecorder) GetPerformanceAnalysisReportWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPerformanceAnalysisReportWithContext", reflect.TypeOf((*MockPIAPI)(nil).GetPerformanceAnalysisReportWithContext), varargs...)
 }
 
 // GetResourceMetadata mocks base method
@@ -465,4 +615,237 @@ func (mr *MockPIAPIMockRecorder) ListAvailableResourceMetricsWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAvailableResourceMetricsWithContext", reflect.TypeOf((*MockPIAPI)(nil).ListAvailableResourceMetricsWithContext), varargs...)
+}
+
+// ListPerformanceAnalysisReports mocks base method
+func (m *MockPIAPI) ListPerformanceAnalysisReports(arg0 *pi.ListPerformanceAnalysisReportsInput) (*pi.ListPerformanceAnalysisReportsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPerformanceAnalysisReports", arg0)
+	ret0, _ := ret[0].(*pi.ListPerformanceAnalysisReportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPerformanceAnalysisReports indicates an expected call of ListPerformanceAnalysisReports
+func (mr *MockPIAPIMockRecorder) ListPerformanceAnalysisReports(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPerformanceAnalysisReports", reflect.TypeOf((*MockPIAPI)(nil).ListPerformanceAnalysisReports), arg0)
+}
+
+// ListPerformanceAnalysisReportsPages mocks base method
+func (m *MockPIAPI) ListPerformanceAnalysisReportsPages(arg0 *pi.ListPerformanceAnalysisReportsInput, arg1 func(*pi.ListPerformanceAnalysisReportsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPerformanceAnalysisReportsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPerformanceAnalysisReportsPages indicates an expected call of ListPerformanceAnalysisReportsPages
+func (mr *MockPIAPIMockRecorder) ListPerformanceAnalysisReportsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPerformanceAnalysisReportsPages", reflect.TypeOf((*MockPIAPI)(nil).ListPerformanceAnalysisReportsPages), arg0, arg1)
+}
+
+// ListPerformanceAnalysisReportsPagesWithContext mocks base method
+func (m *MockPIAPI) ListPerformanceAnalysisReportsPagesWithContext(arg0 context.Context, arg1 *pi.ListPerformanceAnalysisReportsInput, arg2 func(*pi.ListPerformanceAnalysisReportsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPerformanceAnalysisReportsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPerformanceAnalysisReportsPagesWithContext indicates an expected call of ListPerformanceAnalysisReportsPagesWithContext
+func (mr *MockPIAPIMockRecorder) ListPerformanceAnalysisReportsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPerformanceAnalysisReportsPagesWithContext", reflect.TypeOf((*MockPIAPI)(nil).ListPerformanceAnalysisReportsPagesWithContext), varargs...)
+}
+
+// ListPerformanceAnalysisReportsRequest mocks base method
+func (m *MockPIAPI) ListPerformanceAnalysisReportsRequest(arg0 *pi.ListPerformanceAnalysisReportsInput) (*request.Request, *pi.ListPerformanceAnalysisReportsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPerformanceAnalysisReportsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pi.ListPerformanceAnalysisReportsOutput)
+	return ret0, ret1
+}
+
+// ListPerformanceAnalysisReportsRequest indicates an expected call of ListPerformanceAnalysisReportsRequest
+func (mr *MockPIAPIMockRecorder) ListPerformanceAnalysisReportsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPerformanceAnalysisReportsRequest", reflect.TypeOf((*MockPIAPI)(nil).ListPerformanceAnalysisReportsRequest), arg0)
+}
+
+// ListPerformanceAnalysisReportsWithContext mocks base method
+func (m *MockPIAPI) ListPerformanceAnalysisReportsWithContext(arg0 context.Context, arg1 *pi.ListPerformanceAnalysisReportsInput, arg2 ...request.Option) (*pi.ListPerformanceAnalysisReportsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPerformanceAnalysisReportsWithContext", varargs...)
+	ret0, _ := ret[0].(*pi.ListPerformanceAnalysisReportsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPerformanceAnalysisReportsWithContext indicates an expected call of ListPerformanceAnalysisReportsWithContext
+func (mr *MockPIAPIMockRecorder) ListPerformanceAnalysisReportsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPerformanceAnalysisReportsWithContext", reflect.TypeOf((*MockPIAPI)(nil).ListPerformanceAnalysisReportsWithContext), varargs...)
+}
+
+// ListTagsForResource mocks base method
+func (m *MockPIAPI) ListTagsForResource(arg0 *pi.ListTagsForResourceInput) (*pi.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*pi.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockPIAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockPIAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockPIAPI) ListTagsForResourceRequest(arg0 *pi.ListTagsForResourceInput) (*request.Request, *pi.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pi.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockPIAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockPIAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockPIAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *pi.ListTagsForResourceInput, arg2 ...request.Option) (*pi.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*pi.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockPIAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockPIAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// TagResource mocks base method
+func (m *MockPIAPI) TagResource(arg0 *pi.TagResourceInput) (*pi.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*pi.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockPIAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockPIAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockPIAPI) TagResourceRequest(arg0 *pi.TagResourceInput) (*request.Request, *pi.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pi.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockPIAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockPIAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockPIAPI) TagResourceWithContext(arg0 context.Context, arg1 *pi.TagResourceInput, arg2 ...request.Option) (*pi.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*pi.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockPIAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockPIAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockPIAPI) UntagResource(arg0 *pi.UntagResourceInput) (*pi.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*pi.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockPIAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockPIAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockPIAPI) UntagResourceRequest(arg0 *pi.UntagResourceInput) (*request.Request, *pi.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*pi.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockPIAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockPIAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockPIAPI) UntagResourceWithContext(arg0 context.Context, arg1 *pi.UntagResourceInput, arg2 ...request.Option) (*pi.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*pi.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockPIAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockPIAPI)(nil).UntagResourceWithContext), varargs...)
 }
