@@ -2615,6 +2615,89 @@ func (mr *MockCodeCommitAPIMockRecorder) ListBranchesWithContext(arg0, arg1 inte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBranchesWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListBranchesWithContext), varargs...)
 }
 
+// ListFileCommitHistory mocks base method
+func (m *MockCodeCommitAPI) ListFileCommitHistory(arg0 *codecommit.ListFileCommitHistoryInput) (*codecommit.ListFileCommitHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFileCommitHistory", arg0)
+	ret0, _ := ret[0].(*codecommit.ListFileCommitHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFileCommitHistory indicates an expected call of ListFileCommitHistory
+func (mr *MockCodeCommitAPIMockRecorder) ListFileCommitHistory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileCommitHistory", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListFileCommitHistory), arg0)
+}
+
+// ListFileCommitHistoryPages mocks base method
+func (m *MockCodeCommitAPI) ListFileCommitHistoryPages(arg0 *codecommit.ListFileCommitHistoryInput, arg1 func(*codecommit.ListFileCommitHistoryOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFileCommitHistoryPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFileCommitHistoryPages indicates an expected call of ListFileCommitHistoryPages
+func (mr *MockCodeCommitAPIMockRecorder) ListFileCommitHistoryPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileCommitHistoryPages", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListFileCommitHistoryPages), arg0, arg1)
+}
+
+// ListFileCommitHistoryPagesWithContext mocks base method
+func (m *MockCodeCommitAPI) ListFileCommitHistoryPagesWithContext(arg0 context.Context, arg1 *codecommit.ListFileCommitHistoryInput, arg2 func(*codecommit.ListFileCommitHistoryOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFileCommitHistoryPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFileCommitHistoryPagesWithContext indicates an expected call of ListFileCommitHistoryPagesWithContext
+func (mr *MockCodeCommitAPIMockRecorder) ListFileCommitHistoryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileCommitHistoryPagesWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListFileCommitHistoryPagesWithContext), varargs...)
+}
+
+// ListFileCommitHistoryRequest mocks base method
+func (m *MockCodeCommitAPI) ListFileCommitHistoryRequest(arg0 *codecommit.ListFileCommitHistoryInput) (*request.Request, *codecommit.ListFileCommitHistoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFileCommitHistoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codecommit.ListFileCommitHistoryOutput)
+	return ret0, ret1
+}
+
+// ListFileCommitHistoryRequest indicates an expected call of ListFileCommitHistoryRequest
+func (mr *MockCodeCommitAPIMockRecorder) ListFileCommitHistoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileCommitHistoryRequest", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListFileCommitHistoryRequest), arg0)
+}
+
+// ListFileCommitHistoryWithContext mocks base method
+func (m *MockCodeCommitAPI) ListFileCommitHistoryWithContext(arg0 context.Context, arg1 *codecommit.ListFileCommitHistoryInput, arg2 ...request.Option) (*codecommit.ListFileCommitHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFileCommitHistoryWithContext", varargs...)
+	ret0, _ := ret[0].(*codecommit.ListFileCommitHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFileCommitHistoryWithContext indicates an expected call of ListFileCommitHistoryWithContext
+func (mr *MockCodeCommitAPIMockRecorder) ListFileCommitHistoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFileCommitHistoryWithContext", reflect.TypeOf((*MockCodeCommitAPI)(nil).ListFileCommitHistoryWithContext), varargs...)
+}
+
 // ListPullRequests mocks base method
 func (m *MockCodeCommitAPI) ListPullRequests(arg0 *codecommit.ListPullRequestsInput) (*codecommit.ListPullRequestsOutput, error) {
 	m.ctrl.T.Helper()
