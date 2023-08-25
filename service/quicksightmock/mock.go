@@ -3215,6 +3215,39 @@ func (mr *MockQuickSightAPIMockRecorder) DescribeFolderPermissions(arg0 interfac
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFolderPermissions", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeFolderPermissions), arg0)
 }
 
+// DescribeFolderPermissionsPages mocks base method
+func (m *MockQuickSightAPI) DescribeFolderPermissionsPages(arg0 *quicksight.DescribeFolderPermissionsInput, arg1 func(*quicksight.DescribeFolderPermissionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFolderPermissionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFolderPermissionsPages indicates an expected call of DescribeFolderPermissionsPages
+func (mr *MockQuickSightAPIMockRecorder) DescribeFolderPermissionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFolderPermissionsPages", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeFolderPermissionsPages), arg0, arg1)
+}
+
+// DescribeFolderPermissionsPagesWithContext mocks base method
+func (m *MockQuickSightAPI) DescribeFolderPermissionsPagesWithContext(arg0 context.Context, arg1 *quicksight.DescribeFolderPermissionsInput, arg2 func(*quicksight.DescribeFolderPermissionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFolderPermissionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFolderPermissionsPagesWithContext indicates an expected call of DescribeFolderPermissionsPagesWithContext
+func (mr *MockQuickSightAPIMockRecorder) DescribeFolderPermissionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFolderPermissionsPagesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeFolderPermissionsPagesWithContext), varargs...)
+}
+
 // DescribeFolderPermissionsRequest mocks base method
 func (m *MockQuickSightAPI) DescribeFolderPermissionsRequest(arg0 *quicksight.DescribeFolderPermissionsInput) (*request.Request, *quicksight.DescribeFolderPermissionsOutput) {
 	m.ctrl.T.Helper()
@@ -3278,6 +3311,39 @@ func (m *MockQuickSightAPI) DescribeFolderResolvedPermissions(arg0 *quicksight.D
 func (mr *MockQuickSightAPIMockRecorder) DescribeFolderResolvedPermissions(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFolderResolvedPermissions", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeFolderResolvedPermissions), arg0)
+}
+
+// DescribeFolderResolvedPermissionsPages mocks base method
+func (m *MockQuickSightAPI) DescribeFolderResolvedPermissionsPages(arg0 *quicksight.DescribeFolderResolvedPermissionsInput, arg1 func(*quicksight.DescribeFolderResolvedPermissionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeFolderResolvedPermissionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFolderResolvedPermissionsPages indicates an expected call of DescribeFolderResolvedPermissionsPages
+func (mr *MockQuickSightAPIMockRecorder) DescribeFolderResolvedPermissionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFolderResolvedPermissionsPages", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeFolderResolvedPermissionsPages), arg0, arg1)
+}
+
+// DescribeFolderResolvedPermissionsPagesWithContext mocks base method
+func (m *MockQuickSightAPI) DescribeFolderResolvedPermissionsPagesWithContext(arg0 context.Context, arg1 *quicksight.DescribeFolderResolvedPermissionsInput, arg2 func(*quicksight.DescribeFolderResolvedPermissionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeFolderResolvedPermissionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeFolderResolvedPermissionsPagesWithContext indicates an expected call of DescribeFolderResolvedPermissionsPagesWithContext
+func (mr *MockQuickSightAPIMockRecorder) DescribeFolderResolvedPermissionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeFolderResolvedPermissionsPagesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).DescribeFolderResolvedPermissionsPagesWithContext), varargs...)
 }
 
 // DescribeFolderResolvedPermissionsRequest mocks base method
@@ -5131,6 +5197,39 @@ func (mr *MockQuickSightAPIMockRecorder) ListFolderMembers(arg0 interface{}) *go
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFolderMembers", reflect.TypeOf((*MockQuickSightAPI)(nil).ListFolderMembers), arg0)
 }
 
+// ListFolderMembersPages mocks base method
+func (m *MockQuickSightAPI) ListFolderMembersPages(arg0 *quicksight.ListFolderMembersInput, arg1 func(*quicksight.ListFolderMembersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFolderMembersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFolderMembersPages indicates an expected call of ListFolderMembersPages
+func (mr *MockQuickSightAPIMockRecorder) ListFolderMembersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFolderMembersPages", reflect.TypeOf((*MockQuickSightAPI)(nil).ListFolderMembersPages), arg0, arg1)
+}
+
+// ListFolderMembersPagesWithContext mocks base method
+func (m *MockQuickSightAPI) ListFolderMembersPagesWithContext(arg0 context.Context, arg1 *quicksight.ListFolderMembersInput, arg2 func(*quicksight.ListFolderMembersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFolderMembersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFolderMembersPagesWithContext indicates an expected call of ListFolderMembersPagesWithContext
+func (mr *MockQuickSightAPIMockRecorder) ListFolderMembersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFolderMembersPagesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).ListFolderMembersPagesWithContext), varargs...)
+}
+
 // ListFolderMembersRequest mocks base method
 func (m *MockQuickSightAPI) ListFolderMembersRequest(arg0 *quicksight.ListFolderMembersInput) (*request.Request, *quicksight.ListFolderMembersOutput) {
 	m.ctrl.T.Helper()
@@ -5179,6 +5278,39 @@ func (m *MockQuickSightAPI) ListFolders(arg0 *quicksight.ListFoldersInput) (*qui
 func (mr *MockQuickSightAPIMockRecorder) ListFolders(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFolders", reflect.TypeOf((*MockQuickSightAPI)(nil).ListFolders), arg0)
+}
+
+// ListFoldersPages mocks base method
+func (m *MockQuickSightAPI) ListFoldersPages(arg0 *quicksight.ListFoldersInput, arg1 func(*quicksight.ListFoldersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFoldersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFoldersPages indicates an expected call of ListFoldersPages
+func (mr *MockQuickSightAPIMockRecorder) ListFoldersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFoldersPages", reflect.TypeOf((*MockQuickSightAPI)(nil).ListFoldersPages), arg0, arg1)
+}
+
+// ListFoldersPagesWithContext mocks base method
+func (m *MockQuickSightAPI) ListFoldersPagesWithContext(arg0 context.Context, arg1 *quicksight.ListFoldersInput, arg2 func(*quicksight.ListFoldersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFoldersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFoldersPagesWithContext indicates an expected call of ListFoldersPagesWithContext
+func (mr *MockQuickSightAPIMockRecorder) ListFoldersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFoldersPagesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).ListFoldersPagesWithContext), varargs...)
 }
 
 // ListFoldersRequest mocks base method
@@ -7156,6 +7288,39 @@ func (m *MockQuickSightAPI) SearchFolders(arg0 *quicksight.SearchFoldersInput) (
 func (mr *MockQuickSightAPIMockRecorder) SearchFolders(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchFolders", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchFolders), arg0)
+}
+
+// SearchFoldersPages mocks base method
+func (m *MockQuickSightAPI) SearchFoldersPages(arg0 *quicksight.SearchFoldersInput, arg1 func(*quicksight.SearchFoldersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchFoldersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchFoldersPages indicates an expected call of SearchFoldersPages
+func (mr *MockQuickSightAPIMockRecorder) SearchFoldersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchFoldersPages", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchFoldersPages), arg0, arg1)
+}
+
+// SearchFoldersPagesWithContext mocks base method
+func (m *MockQuickSightAPI) SearchFoldersPagesWithContext(arg0 context.Context, arg1 *quicksight.SearchFoldersInput, arg2 func(*quicksight.SearchFoldersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchFoldersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchFoldersPagesWithContext indicates an expected call of SearchFoldersPagesWithContext
+func (mr *MockQuickSightAPIMockRecorder) SearchFoldersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchFoldersPagesWithContext", reflect.TypeOf((*MockQuickSightAPI)(nil).SearchFoldersPagesWithContext), varargs...)
 }
 
 // SearchFoldersRequest mocks base method
