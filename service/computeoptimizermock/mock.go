@@ -418,6 +418,56 @@ func (mr *MockComputeOptimizerAPIMockRecorder) ExportLambdaFunctionRecommendatio
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportLambdaFunctionRecommendationsWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).ExportLambdaFunctionRecommendationsWithContext), varargs...)
 }
 
+// ExportLicenseRecommendations mocks base method
+func (m *MockComputeOptimizerAPI) ExportLicenseRecommendations(arg0 *computeoptimizer.ExportLicenseRecommendationsInput) (*computeoptimizer.ExportLicenseRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportLicenseRecommendations", arg0)
+	ret0, _ := ret[0].(*computeoptimizer.ExportLicenseRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportLicenseRecommendations indicates an expected call of ExportLicenseRecommendations
+func (mr *MockComputeOptimizerAPIMockRecorder) ExportLicenseRecommendations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportLicenseRecommendations", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).ExportLicenseRecommendations), arg0)
+}
+
+// ExportLicenseRecommendationsRequest mocks base method
+func (m *MockComputeOptimizerAPI) ExportLicenseRecommendationsRequest(arg0 *computeoptimizer.ExportLicenseRecommendationsInput) (*request.Request, *computeoptimizer.ExportLicenseRecommendationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportLicenseRecommendationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*computeoptimizer.ExportLicenseRecommendationsOutput)
+	return ret0, ret1
+}
+
+// ExportLicenseRecommendationsRequest indicates an expected call of ExportLicenseRecommendationsRequest
+func (mr *MockComputeOptimizerAPIMockRecorder) ExportLicenseRecommendationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportLicenseRecommendationsRequest", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).ExportLicenseRecommendationsRequest), arg0)
+}
+
+// ExportLicenseRecommendationsWithContext mocks base method
+func (m *MockComputeOptimizerAPI) ExportLicenseRecommendationsWithContext(arg0 context.Context, arg1 *computeoptimizer.ExportLicenseRecommendationsInput, arg2 ...request.Option) (*computeoptimizer.ExportLicenseRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExportLicenseRecommendationsWithContext", varargs...)
+	ret0, _ := ret[0].(*computeoptimizer.ExportLicenseRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportLicenseRecommendationsWithContext indicates an expected call of ExportLicenseRecommendationsWithContext
+func (mr *MockComputeOptimizerAPIMockRecorder) ExportLicenseRecommendationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportLicenseRecommendationsWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).ExportLicenseRecommendationsWithContext), varargs...)
+}
+
 // GetAutoScalingGroupRecommendations mocks base method
 func (m *MockComputeOptimizerAPI) GetAutoScalingGroupRecommendations(arg0 *computeoptimizer.GetAutoScalingGroupRecommendationsInput) (*computeoptimizer.GetAutoScalingGroupRecommendationsOutput, error) {
 	m.ctrl.T.Helper()
@@ -982,6 +1032,56 @@ func (mr *MockComputeOptimizerAPIMockRecorder) GetLambdaFunctionRecommendationsW
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLambdaFunctionRecommendationsWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetLambdaFunctionRecommendationsWithContext), varargs...)
+}
+
+// GetLicenseRecommendations mocks base method
+func (m *MockComputeOptimizerAPI) GetLicenseRecommendations(arg0 *computeoptimizer.GetLicenseRecommendationsInput) (*computeoptimizer.GetLicenseRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLicenseRecommendations", arg0)
+	ret0, _ := ret[0].(*computeoptimizer.GetLicenseRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLicenseRecommendations indicates an expected call of GetLicenseRecommendations
+func (mr *MockComputeOptimizerAPIMockRecorder) GetLicenseRecommendations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLicenseRecommendations", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetLicenseRecommendations), arg0)
+}
+
+// GetLicenseRecommendationsRequest mocks base method
+func (m *MockComputeOptimizerAPI) GetLicenseRecommendationsRequest(arg0 *computeoptimizer.GetLicenseRecommendationsInput) (*request.Request, *computeoptimizer.GetLicenseRecommendationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLicenseRecommendationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*computeoptimizer.GetLicenseRecommendationsOutput)
+	return ret0, ret1
+}
+
+// GetLicenseRecommendationsRequest indicates an expected call of GetLicenseRecommendationsRequest
+func (mr *MockComputeOptimizerAPIMockRecorder) GetLicenseRecommendationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLicenseRecommendationsRequest", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetLicenseRecommendationsRequest), arg0)
+}
+
+// GetLicenseRecommendationsWithContext mocks base method
+func (m *MockComputeOptimizerAPI) GetLicenseRecommendationsWithContext(arg0 context.Context, arg1 *computeoptimizer.GetLicenseRecommendationsInput, arg2 ...request.Option) (*computeoptimizer.GetLicenseRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLicenseRecommendationsWithContext", varargs...)
+	ret0, _ := ret[0].(*computeoptimizer.GetLicenseRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLicenseRecommendationsWithContext indicates an expected call of GetLicenseRecommendationsWithContext
+func (mr *MockComputeOptimizerAPIMockRecorder) GetLicenseRecommendationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLicenseRecommendationsWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetLicenseRecommendationsWithContext), varargs...)
 }
 
 // GetRecommendationPreferences mocks base method
