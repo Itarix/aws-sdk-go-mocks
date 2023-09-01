@@ -135,6 +135,56 @@ func (mr *MockConnectParticipantAPIMockRecorder) CreateParticipantConnectionWith
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateParticipantConnectionWithContext", reflect.TypeOf((*MockConnectParticipantAPI)(nil).CreateParticipantConnectionWithContext), varargs...)
 }
 
+// DescribeView mocks base method
+func (m *MockConnectParticipantAPI) DescribeView(arg0 *connectparticipant.DescribeViewInput) (*connectparticipant.DescribeViewOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeView", arg0)
+	ret0, _ := ret[0].(*connectparticipant.DescribeViewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeView indicates an expected call of DescribeView
+func (mr *MockConnectParticipantAPIMockRecorder) DescribeView(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeView", reflect.TypeOf((*MockConnectParticipantAPI)(nil).DescribeView), arg0)
+}
+
+// DescribeViewRequest mocks base method
+func (m *MockConnectParticipantAPI) DescribeViewRequest(arg0 *connectparticipant.DescribeViewInput) (*request.Request, *connectparticipant.DescribeViewOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeViewRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connectparticipant.DescribeViewOutput)
+	return ret0, ret1
+}
+
+// DescribeViewRequest indicates an expected call of DescribeViewRequest
+func (mr *MockConnectParticipantAPIMockRecorder) DescribeViewRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeViewRequest", reflect.TypeOf((*MockConnectParticipantAPI)(nil).DescribeViewRequest), arg0)
+}
+
+// DescribeViewWithContext mocks base method
+func (m *MockConnectParticipantAPI) DescribeViewWithContext(arg0 context.Context, arg1 *connectparticipant.DescribeViewInput, arg2 ...request.Option) (*connectparticipant.DescribeViewOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeViewWithContext", varargs...)
+	ret0, _ := ret[0].(*connectparticipant.DescribeViewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeViewWithContext indicates an expected call of DescribeViewWithContext
+func (mr *MockConnectParticipantAPIMockRecorder) DescribeViewWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeViewWithContext", reflect.TypeOf((*MockConnectParticipantAPI)(nil).DescribeViewWithContext), varargs...)
+}
+
 // DisconnectParticipant mocks base method
 func (m *MockConnectParticipantAPI) DisconnectParticipant(arg0 *connectparticipant.DisconnectParticipantInput) (*connectparticipant.DisconnectParticipantOutput, error) {
 	m.ctrl.T.Helper()

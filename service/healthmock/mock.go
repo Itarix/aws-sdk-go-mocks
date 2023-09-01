@@ -299,6 +299,56 @@ func (mr *MockHealthAPIMockRecorder) DescribeEntityAggregates(arg0 interface{}) 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEntityAggregates", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEntityAggregates), arg0)
 }
 
+// DescribeEntityAggregatesForOrganization mocks base method
+func (m *MockHealthAPI) DescribeEntityAggregatesForOrganization(arg0 *health.DescribeEntityAggregatesForOrganizationInput) (*health.DescribeEntityAggregatesForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEntityAggregatesForOrganization", arg0)
+	ret0, _ := ret[0].(*health.DescribeEntityAggregatesForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEntityAggregatesForOrganization indicates an expected call of DescribeEntityAggregatesForOrganization
+func (mr *MockHealthAPIMockRecorder) DescribeEntityAggregatesForOrganization(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEntityAggregatesForOrganization", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEntityAggregatesForOrganization), arg0)
+}
+
+// DescribeEntityAggregatesForOrganizationRequest mocks base method
+func (m *MockHealthAPI) DescribeEntityAggregatesForOrganizationRequest(arg0 *health.DescribeEntityAggregatesForOrganizationInput) (*request.Request, *health.DescribeEntityAggregatesForOrganizationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEntityAggregatesForOrganizationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*health.DescribeEntityAggregatesForOrganizationOutput)
+	return ret0, ret1
+}
+
+// DescribeEntityAggregatesForOrganizationRequest indicates an expected call of DescribeEntityAggregatesForOrganizationRequest
+func (mr *MockHealthAPIMockRecorder) DescribeEntityAggregatesForOrganizationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEntityAggregatesForOrganizationRequest", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEntityAggregatesForOrganizationRequest), arg0)
+}
+
+// DescribeEntityAggregatesForOrganizationWithContext mocks base method
+func (m *MockHealthAPI) DescribeEntityAggregatesForOrganizationWithContext(arg0 context.Context, arg1 *health.DescribeEntityAggregatesForOrganizationInput, arg2 ...request.Option) (*health.DescribeEntityAggregatesForOrganizationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEntityAggregatesForOrganizationWithContext", varargs...)
+	ret0, _ := ret[0].(*health.DescribeEntityAggregatesForOrganizationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEntityAggregatesForOrganizationWithContext indicates an expected call of DescribeEntityAggregatesForOrganizationWithContext
+func (mr *MockHealthAPIMockRecorder) DescribeEntityAggregatesForOrganizationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEntityAggregatesForOrganizationWithContext", reflect.TypeOf((*MockHealthAPI)(nil).DescribeEntityAggregatesForOrganizationWithContext), varargs...)
+}
+
 // DescribeEntityAggregatesRequest mocks base method
 func (m *MockHealthAPI) DescribeEntityAggregatesRequest(arg0 *health.DescribeEntityAggregatesInput) (*request.Request, *health.DescribeEntityAggregatesOutput) {
 	m.ctrl.T.Helper()

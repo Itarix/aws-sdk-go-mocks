@@ -134,3 +134,53 @@ func (mr *MockSageMakerRuntimeAPIMockRecorder) InvokeEndpointWithContext(arg0, a
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeEndpointWithContext", reflect.TypeOf((*MockSageMakerRuntimeAPI)(nil).InvokeEndpointWithContext), varargs...)
 }
+
+// InvokeEndpointWithResponseStream mocks base method
+func (m *MockSageMakerRuntimeAPI) InvokeEndpointWithResponseStream(arg0 *sagemakerruntime.InvokeEndpointWithResponseStreamInput) (*sagemakerruntime.InvokeEndpointWithResponseStreamOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "InvokeEndpointWithResponseStream", arg0)
+	ret0, _ := ret[0].(*sagemakerruntime.InvokeEndpointWithResponseStreamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// InvokeEndpointWithResponseStream indicates an expected call of InvokeEndpointWithResponseStream
+func (mr *MockSageMakerRuntimeAPIMockRecorder) InvokeEndpointWithResponseStream(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeEndpointWithResponseStream", reflect.TypeOf((*MockSageMakerRuntimeAPI)(nil).InvokeEndpointWithResponseStream), arg0)
+}
+
+// InvokeEndpointWithResponseStreamRequest mocks base method
+func (m *MockSageMakerRuntimeAPI) InvokeEndpointWithResponseStreamRequest(arg0 *sagemakerruntime.InvokeEndpointWithResponseStreamInput) (*request.Request, *sagemakerruntime.InvokeEndpointWithResponseStreamOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "InvokeEndpointWithResponseStreamRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemakerruntime.InvokeEndpointWithResponseStreamOutput)
+	return ret0, ret1
+}
+
+// InvokeEndpointWithResponseStreamRequest indicates an expected call of InvokeEndpointWithResponseStreamRequest
+func (mr *MockSageMakerRuntimeAPIMockRecorder) InvokeEndpointWithResponseStreamRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeEndpointWithResponseStreamRequest", reflect.TypeOf((*MockSageMakerRuntimeAPI)(nil).InvokeEndpointWithResponseStreamRequest), arg0)
+}
+
+// InvokeEndpointWithResponseStreamWithContext mocks base method
+func (m *MockSageMakerRuntimeAPI) InvokeEndpointWithResponseStreamWithContext(arg0 context.Context, arg1 *sagemakerruntime.InvokeEndpointWithResponseStreamInput, arg2 ...request.Option) (*sagemakerruntime.InvokeEndpointWithResponseStreamOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "InvokeEndpointWithResponseStreamWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemakerruntime.InvokeEndpointWithResponseStreamOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// InvokeEndpointWithResponseStreamWithContext indicates an expected call of InvokeEndpointWithResponseStreamWithContext
+func (mr *MockSageMakerRuntimeAPIMockRecorder) InvokeEndpointWithResponseStreamWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeEndpointWithResponseStreamWithContext", reflect.TypeOf((*MockSageMakerRuntimeAPI)(nil).InvokeEndpointWithResponseStreamWithContext), varargs...)
+}
