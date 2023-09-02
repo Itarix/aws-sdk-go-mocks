@@ -585,6 +585,106 @@ func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) GetMediaPipelineWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMediaPipelineWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).GetMediaPipelineWithContext), varargs...)
 }
 
+// GetSpeakerSearchTask mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) GetSpeakerSearchTask(arg0 *chimesdkmediapipelines.GetSpeakerSearchTaskInput) (*chimesdkmediapipelines.GetSpeakerSearchTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSpeakerSearchTask", arg0)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.GetSpeakerSearchTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSpeakerSearchTask indicates an expected call of GetSpeakerSearchTask
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) GetSpeakerSearchTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSpeakerSearchTask", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).GetSpeakerSearchTask), arg0)
+}
+
+// GetSpeakerSearchTaskRequest mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) GetSpeakerSearchTaskRequest(arg0 *chimesdkmediapipelines.GetSpeakerSearchTaskInput) (*request.Request, *chimesdkmediapipelines.GetSpeakerSearchTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetSpeakerSearchTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmediapipelines.GetSpeakerSearchTaskOutput)
+	return ret0, ret1
+}
+
+// GetSpeakerSearchTaskRequest indicates an expected call of GetSpeakerSearchTaskRequest
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) GetSpeakerSearchTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSpeakerSearchTaskRequest", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).GetSpeakerSearchTaskRequest), arg0)
+}
+
+// GetSpeakerSearchTaskWithContext mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) GetSpeakerSearchTaskWithContext(arg0 context.Context, arg1 *chimesdkmediapipelines.GetSpeakerSearchTaskInput, arg2 ...request.Option) (*chimesdkmediapipelines.GetSpeakerSearchTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetSpeakerSearchTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.GetSpeakerSearchTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetSpeakerSearchTaskWithContext indicates an expected call of GetSpeakerSearchTaskWithContext
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) GetSpeakerSearchTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSpeakerSearchTaskWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).GetSpeakerSearchTaskWithContext), varargs...)
+}
+
+// GetVoiceToneAnalysisTask mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) GetVoiceToneAnalysisTask(arg0 *chimesdkmediapipelines.GetVoiceToneAnalysisTaskInput) (*chimesdkmediapipelines.GetVoiceToneAnalysisTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVoiceToneAnalysisTask", arg0)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.GetVoiceToneAnalysisTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVoiceToneAnalysisTask indicates an expected call of GetVoiceToneAnalysisTask
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) GetVoiceToneAnalysisTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceToneAnalysisTask", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).GetVoiceToneAnalysisTask), arg0)
+}
+
+// GetVoiceToneAnalysisTaskRequest mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) GetVoiceToneAnalysisTaskRequest(arg0 *chimesdkmediapipelines.GetVoiceToneAnalysisTaskInput) (*request.Request, *chimesdkmediapipelines.GetVoiceToneAnalysisTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetVoiceToneAnalysisTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmediapipelines.GetVoiceToneAnalysisTaskOutput)
+	return ret0, ret1
+}
+
+// GetVoiceToneAnalysisTaskRequest indicates an expected call of GetVoiceToneAnalysisTaskRequest
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) GetVoiceToneAnalysisTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceToneAnalysisTaskRequest", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).GetVoiceToneAnalysisTaskRequest), arg0)
+}
+
+// GetVoiceToneAnalysisTaskWithContext mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) GetVoiceToneAnalysisTaskWithContext(arg0 context.Context, arg1 *chimesdkmediapipelines.GetVoiceToneAnalysisTaskInput, arg2 ...request.Option) (*chimesdkmediapipelines.GetVoiceToneAnalysisTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetVoiceToneAnalysisTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.GetVoiceToneAnalysisTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetVoiceToneAnalysisTaskWithContext indicates an expected call of GetVoiceToneAnalysisTaskWithContext
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) GetVoiceToneAnalysisTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetVoiceToneAnalysisTaskWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).GetVoiceToneAnalysisTaskWithContext), varargs...)
+}
+
 // ListMediaCapturePipelines mocks base method
 func (m *MockChimeSDKMediaPipelinesAPI) ListMediaCapturePipelines(arg0 *chimesdkmediapipelines.ListMediaCapturePipelinesInput) (*chimesdkmediapipelines.ListMediaCapturePipelinesOutput, error) {
 	m.ctrl.T.Helper()
@@ -882,6 +982,206 @@ func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) ListTagsForResourceWithCont
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// StartSpeakerSearchTask mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) StartSpeakerSearchTask(arg0 *chimesdkmediapipelines.StartSpeakerSearchTaskInput) (*chimesdkmediapipelines.StartSpeakerSearchTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSpeakerSearchTask", arg0)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.StartSpeakerSearchTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSpeakerSearchTask indicates an expected call of StartSpeakerSearchTask
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) StartSpeakerSearchTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSpeakerSearchTask", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).StartSpeakerSearchTask), arg0)
+}
+
+// StartSpeakerSearchTaskRequest mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) StartSpeakerSearchTaskRequest(arg0 *chimesdkmediapipelines.StartSpeakerSearchTaskInput) (*request.Request, *chimesdkmediapipelines.StartSpeakerSearchTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartSpeakerSearchTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmediapipelines.StartSpeakerSearchTaskOutput)
+	return ret0, ret1
+}
+
+// StartSpeakerSearchTaskRequest indicates an expected call of StartSpeakerSearchTaskRequest
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) StartSpeakerSearchTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSpeakerSearchTaskRequest", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).StartSpeakerSearchTaskRequest), arg0)
+}
+
+// StartSpeakerSearchTaskWithContext mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) StartSpeakerSearchTaskWithContext(arg0 context.Context, arg1 *chimesdkmediapipelines.StartSpeakerSearchTaskInput, arg2 ...request.Option) (*chimesdkmediapipelines.StartSpeakerSearchTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartSpeakerSearchTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.StartSpeakerSearchTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartSpeakerSearchTaskWithContext indicates an expected call of StartSpeakerSearchTaskWithContext
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) StartSpeakerSearchTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartSpeakerSearchTaskWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).StartSpeakerSearchTaskWithContext), varargs...)
+}
+
+// StartVoiceToneAnalysisTask mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) StartVoiceToneAnalysisTask(arg0 *chimesdkmediapipelines.StartVoiceToneAnalysisTaskInput) (*chimesdkmediapipelines.StartVoiceToneAnalysisTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartVoiceToneAnalysisTask", arg0)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.StartVoiceToneAnalysisTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartVoiceToneAnalysisTask indicates an expected call of StartVoiceToneAnalysisTask
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) StartVoiceToneAnalysisTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartVoiceToneAnalysisTask", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).StartVoiceToneAnalysisTask), arg0)
+}
+
+// StartVoiceToneAnalysisTaskRequest mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) StartVoiceToneAnalysisTaskRequest(arg0 *chimesdkmediapipelines.StartVoiceToneAnalysisTaskInput) (*request.Request, *chimesdkmediapipelines.StartVoiceToneAnalysisTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartVoiceToneAnalysisTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmediapipelines.StartVoiceToneAnalysisTaskOutput)
+	return ret0, ret1
+}
+
+// StartVoiceToneAnalysisTaskRequest indicates an expected call of StartVoiceToneAnalysisTaskRequest
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) StartVoiceToneAnalysisTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartVoiceToneAnalysisTaskRequest", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).StartVoiceToneAnalysisTaskRequest), arg0)
+}
+
+// StartVoiceToneAnalysisTaskWithContext mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) StartVoiceToneAnalysisTaskWithContext(arg0 context.Context, arg1 *chimesdkmediapipelines.StartVoiceToneAnalysisTaskInput, arg2 ...request.Option) (*chimesdkmediapipelines.StartVoiceToneAnalysisTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartVoiceToneAnalysisTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.StartVoiceToneAnalysisTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartVoiceToneAnalysisTaskWithContext indicates an expected call of StartVoiceToneAnalysisTaskWithContext
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) StartVoiceToneAnalysisTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartVoiceToneAnalysisTaskWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).StartVoiceToneAnalysisTaskWithContext), varargs...)
+}
+
+// StopSpeakerSearchTask mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) StopSpeakerSearchTask(arg0 *chimesdkmediapipelines.StopSpeakerSearchTaskInput) (*chimesdkmediapipelines.StopSpeakerSearchTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopSpeakerSearchTask", arg0)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.StopSpeakerSearchTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopSpeakerSearchTask indicates an expected call of StopSpeakerSearchTask
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) StopSpeakerSearchTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSpeakerSearchTask", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).StopSpeakerSearchTask), arg0)
+}
+
+// StopSpeakerSearchTaskRequest mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) StopSpeakerSearchTaskRequest(arg0 *chimesdkmediapipelines.StopSpeakerSearchTaskInput) (*request.Request, *chimesdkmediapipelines.StopSpeakerSearchTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopSpeakerSearchTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmediapipelines.StopSpeakerSearchTaskOutput)
+	return ret0, ret1
+}
+
+// StopSpeakerSearchTaskRequest indicates an expected call of StopSpeakerSearchTaskRequest
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) StopSpeakerSearchTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSpeakerSearchTaskRequest", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).StopSpeakerSearchTaskRequest), arg0)
+}
+
+// StopSpeakerSearchTaskWithContext mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) StopSpeakerSearchTaskWithContext(arg0 context.Context, arg1 *chimesdkmediapipelines.StopSpeakerSearchTaskInput, arg2 ...request.Option) (*chimesdkmediapipelines.StopSpeakerSearchTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopSpeakerSearchTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.StopSpeakerSearchTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopSpeakerSearchTaskWithContext indicates an expected call of StopSpeakerSearchTaskWithContext
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) StopSpeakerSearchTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopSpeakerSearchTaskWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).StopSpeakerSearchTaskWithContext), varargs...)
+}
+
+// StopVoiceToneAnalysisTask mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) StopVoiceToneAnalysisTask(arg0 *chimesdkmediapipelines.StopVoiceToneAnalysisTaskInput) (*chimesdkmediapipelines.StopVoiceToneAnalysisTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopVoiceToneAnalysisTask", arg0)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.StopVoiceToneAnalysisTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopVoiceToneAnalysisTask indicates an expected call of StopVoiceToneAnalysisTask
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) StopVoiceToneAnalysisTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopVoiceToneAnalysisTask", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).StopVoiceToneAnalysisTask), arg0)
+}
+
+// StopVoiceToneAnalysisTaskRequest mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) StopVoiceToneAnalysisTaskRequest(arg0 *chimesdkmediapipelines.StopVoiceToneAnalysisTaskInput) (*request.Request, *chimesdkmediapipelines.StopVoiceToneAnalysisTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopVoiceToneAnalysisTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*chimesdkmediapipelines.StopVoiceToneAnalysisTaskOutput)
+	return ret0, ret1
+}
+
+// StopVoiceToneAnalysisTaskRequest indicates an expected call of StopVoiceToneAnalysisTaskRequest
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) StopVoiceToneAnalysisTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopVoiceToneAnalysisTaskRequest", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).StopVoiceToneAnalysisTaskRequest), arg0)
+}
+
+// StopVoiceToneAnalysisTaskWithContext mocks base method
+func (m *MockChimeSDKMediaPipelinesAPI) StopVoiceToneAnalysisTaskWithContext(arg0 context.Context, arg1 *chimesdkmediapipelines.StopVoiceToneAnalysisTaskInput, arg2 ...request.Option) (*chimesdkmediapipelines.StopVoiceToneAnalysisTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopVoiceToneAnalysisTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*chimesdkmediapipelines.StopVoiceToneAnalysisTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopVoiceToneAnalysisTaskWithContext indicates an expected call of StopVoiceToneAnalysisTaskWithContext
+func (mr *MockChimeSDKMediaPipelinesAPIMockRecorder) StopVoiceToneAnalysisTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopVoiceToneAnalysisTaskWithContext", reflect.TypeOf((*MockChimeSDKMediaPipelinesAPI)(nil).StopVoiceToneAnalysisTaskWithContext), varargs...)
 }
 
 // TagResource mocks base method

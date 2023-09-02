@@ -1635,6 +1635,106 @@ func (mr *MockConnectAPIMockRecorder) CreateUserWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateUserWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateUserWithContext), varargs...)
 }
 
+// CreateView mocks base method
+func (m *MockConnectAPI) CreateView(arg0 *connect.CreateViewInput) (*connect.CreateViewOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateView", arg0)
+	ret0, _ := ret[0].(*connect.CreateViewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateView indicates an expected call of CreateView
+func (mr *MockConnectAPIMockRecorder) CreateView(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateView", reflect.TypeOf((*MockConnectAPI)(nil).CreateView), arg0)
+}
+
+// CreateViewRequest mocks base method
+func (m *MockConnectAPI) CreateViewRequest(arg0 *connect.CreateViewInput) (*request.Request, *connect.CreateViewOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateViewRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.CreateViewOutput)
+	return ret0, ret1
+}
+
+// CreateViewRequest indicates an expected call of CreateViewRequest
+func (mr *MockConnectAPIMockRecorder) CreateViewRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateViewRequest", reflect.TypeOf((*MockConnectAPI)(nil).CreateViewRequest), arg0)
+}
+
+// CreateViewVersion mocks base method
+func (m *MockConnectAPI) CreateViewVersion(arg0 *connect.CreateViewVersionInput) (*connect.CreateViewVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateViewVersion", arg0)
+	ret0, _ := ret[0].(*connect.CreateViewVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateViewVersion indicates an expected call of CreateViewVersion
+func (mr *MockConnectAPIMockRecorder) CreateViewVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateViewVersion", reflect.TypeOf((*MockConnectAPI)(nil).CreateViewVersion), arg0)
+}
+
+// CreateViewVersionRequest mocks base method
+func (m *MockConnectAPI) CreateViewVersionRequest(arg0 *connect.CreateViewVersionInput) (*request.Request, *connect.CreateViewVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateViewVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.CreateViewVersionOutput)
+	return ret0, ret1
+}
+
+// CreateViewVersionRequest indicates an expected call of CreateViewVersionRequest
+func (mr *MockConnectAPIMockRecorder) CreateViewVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateViewVersionRequest", reflect.TypeOf((*MockConnectAPI)(nil).CreateViewVersionRequest), arg0)
+}
+
+// CreateViewVersionWithContext mocks base method
+func (m *MockConnectAPI) CreateViewVersionWithContext(arg0 context.Context, arg1 *connect.CreateViewVersionInput, arg2 ...request.Option) (*connect.CreateViewVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateViewVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.CreateViewVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateViewVersionWithContext indicates an expected call of CreateViewVersionWithContext
+func (mr *MockConnectAPIMockRecorder) CreateViewVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateViewVersionWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateViewVersionWithContext), varargs...)
+}
+
+// CreateViewWithContext mocks base method
+func (m *MockConnectAPI) CreateViewWithContext(arg0 context.Context, arg1 *connect.CreateViewInput, arg2 ...request.Option) (*connect.CreateViewOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateViewWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.CreateViewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateViewWithContext indicates an expected call of CreateViewWithContext
+func (mr *MockConnectAPIMockRecorder) CreateViewWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateViewWithContext", reflect.TypeOf((*MockConnectAPI)(nil).CreateViewWithContext), varargs...)
+}
+
 // CreateVocabulary mocks base method
 func (m *MockConnectAPI) CreateVocabulary(arg0 *connect.CreateVocabularyInput) (*connect.CreateVocabularyOutput, error) {
 	m.ctrl.T.Helper()
@@ -2633,6 +2733,106 @@ func (mr *MockConnectAPIMockRecorder) DeleteUserWithContext(arg0, arg1 interface
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteUserWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteUserWithContext), varargs...)
+}
+
+// DeleteView mocks base method
+func (m *MockConnectAPI) DeleteView(arg0 *connect.DeleteViewInput) (*connect.DeleteViewOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteView", arg0)
+	ret0, _ := ret[0].(*connect.DeleteViewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteView indicates an expected call of DeleteView
+func (mr *MockConnectAPIMockRecorder) DeleteView(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteView", reflect.TypeOf((*MockConnectAPI)(nil).DeleteView), arg0)
+}
+
+// DeleteViewRequest mocks base method
+func (m *MockConnectAPI) DeleteViewRequest(arg0 *connect.DeleteViewInput) (*request.Request, *connect.DeleteViewOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteViewRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DeleteViewOutput)
+	return ret0, ret1
+}
+
+// DeleteViewRequest indicates an expected call of DeleteViewRequest
+func (mr *MockConnectAPIMockRecorder) DeleteViewRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteViewRequest", reflect.TypeOf((*MockConnectAPI)(nil).DeleteViewRequest), arg0)
+}
+
+// DeleteViewVersion mocks base method
+func (m *MockConnectAPI) DeleteViewVersion(arg0 *connect.DeleteViewVersionInput) (*connect.DeleteViewVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteViewVersion", arg0)
+	ret0, _ := ret[0].(*connect.DeleteViewVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteViewVersion indicates an expected call of DeleteViewVersion
+func (mr *MockConnectAPIMockRecorder) DeleteViewVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteViewVersion", reflect.TypeOf((*MockConnectAPI)(nil).DeleteViewVersion), arg0)
+}
+
+// DeleteViewVersionRequest mocks base method
+func (m *MockConnectAPI) DeleteViewVersionRequest(arg0 *connect.DeleteViewVersionInput) (*request.Request, *connect.DeleteViewVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteViewVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DeleteViewVersionOutput)
+	return ret0, ret1
+}
+
+// DeleteViewVersionRequest indicates an expected call of DeleteViewVersionRequest
+func (mr *MockConnectAPIMockRecorder) DeleteViewVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteViewVersionRequest", reflect.TypeOf((*MockConnectAPI)(nil).DeleteViewVersionRequest), arg0)
+}
+
+// DeleteViewVersionWithContext mocks base method
+func (m *MockConnectAPI) DeleteViewVersionWithContext(arg0 context.Context, arg1 *connect.DeleteViewVersionInput, arg2 ...request.Option) (*connect.DeleteViewVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteViewVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DeleteViewVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteViewVersionWithContext indicates an expected call of DeleteViewVersionWithContext
+func (mr *MockConnectAPIMockRecorder) DeleteViewVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteViewVersionWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteViewVersionWithContext), varargs...)
+}
+
+// DeleteViewWithContext mocks base method
+func (m *MockConnectAPI) DeleteViewWithContext(arg0 context.Context, arg1 *connect.DeleteViewInput, arg2 ...request.Option) (*connect.DeleteViewOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteViewWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DeleteViewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteViewWithContext indicates an expected call of DeleteViewWithContext
+func (mr *MockConnectAPIMockRecorder) DeleteViewWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteViewWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DeleteViewWithContext), varargs...)
 }
 
 // DeleteVocabulary mocks base method
@@ -3733,6 +3933,56 @@ func (mr *MockConnectAPIMockRecorder) DescribeUserWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeUserWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeUserWithContext), varargs...)
+}
+
+// DescribeView mocks base method
+func (m *MockConnectAPI) DescribeView(arg0 *connect.DescribeViewInput) (*connect.DescribeViewOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeView", arg0)
+	ret0, _ := ret[0].(*connect.DescribeViewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeView indicates an expected call of DescribeView
+func (mr *MockConnectAPIMockRecorder) DescribeView(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeView", reflect.TypeOf((*MockConnectAPI)(nil).DescribeView), arg0)
+}
+
+// DescribeViewRequest mocks base method
+func (m *MockConnectAPI) DescribeViewRequest(arg0 *connect.DescribeViewInput) (*request.Request, *connect.DescribeViewOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeViewRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DescribeViewOutput)
+	return ret0, ret1
+}
+
+// DescribeViewRequest indicates an expected call of DescribeViewRequest
+func (mr *MockConnectAPIMockRecorder) DescribeViewRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeViewRequest", reflect.TypeOf((*MockConnectAPI)(nil).DescribeViewRequest), arg0)
+}
+
+// DescribeViewWithContext mocks base method
+func (m *MockConnectAPI) DescribeViewWithContext(arg0 context.Context, arg1 *connect.DescribeViewInput, arg2 ...request.Option) (*connect.DescribeViewOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeViewWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DescribeViewOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeViewWithContext indicates an expected call of DescribeViewWithContext
+func (mr *MockConnectAPIMockRecorder) DescribeViewWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeViewWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeViewWithContext), varargs...)
 }
 
 // DescribeVocabulary mocks base method
@@ -7872,6 +8122,172 @@ func (mr *MockConnectAPIMockRecorder) ListUsersWithContext(arg0, arg1 interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListUsersWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListUsersWithContext), varargs...)
 }
 
+// ListViewVersions mocks base method
+func (m *MockConnectAPI) ListViewVersions(arg0 *connect.ListViewVersionsInput) (*connect.ListViewVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListViewVersions", arg0)
+	ret0, _ := ret[0].(*connect.ListViewVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListViewVersions indicates an expected call of ListViewVersions
+func (mr *MockConnectAPIMockRecorder) ListViewVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListViewVersions", reflect.TypeOf((*MockConnectAPI)(nil).ListViewVersions), arg0)
+}
+
+// ListViewVersionsPages mocks base method
+func (m *MockConnectAPI) ListViewVersionsPages(arg0 *connect.ListViewVersionsInput, arg1 func(*connect.ListViewVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListViewVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListViewVersionsPages indicates an expected call of ListViewVersionsPages
+func (mr *MockConnectAPIMockRecorder) ListViewVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListViewVersionsPages", reflect.TypeOf((*MockConnectAPI)(nil).ListViewVersionsPages), arg0, arg1)
+}
+
+// ListViewVersionsPagesWithContext mocks base method
+func (m *MockConnectAPI) ListViewVersionsPagesWithContext(arg0 context.Context, arg1 *connect.ListViewVersionsInput, arg2 func(*connect.ListViewVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListViewVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListViewVersionsPagesWithContext indicates an expected call of ListViewVersionsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListViewVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListViewVersionsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListViewVersionsPagesWithContext), varargs...)
+}
+
+// ListViewVersionsRequest mocks base method
+func (m *MockConnectAPI) ListViewVersionsRequest(arg0 *connect.ListViewVersionsInput) (*request.Request, *connect.ListViewVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListViewVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListViewVersionsOutput)
+	return ret0, ret1
+}
+
+// ListViewVersionsRequest indicates an expected call of ListViewVersionsRequest
+func (mr *MockConnectAPIMockRecorder) ListViewVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListViewVersionsRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListViewVersionsRequest), arg0)
+}
+
+// ListViewVersionsWithContext mocks base method
+func (m *MockConnectAPI) ListViewVersionsWithContext(arg0 context.Context, arg1 *connect.ListViewVersionsInput, arg2 ...request.Option) (*connect.ListViewVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListViewVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListViewVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListViewVersionsWithContext indicates an expected call of ListViewVersionsWithContext
+func (mr *MockConnectAPIMockRecorder) ListViewVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListViewVersionsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListViewVersionsWithContext), varargs...)
+}
+
+// ListViews mocks base method
+func (m *MockConnectAPI) ListViews(arg0 *connect.ListViewsInput) (*connect.ListViewsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListViews", arg0)
+	ret0, _ := ret[0].(*connect.ListViewsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListViews indicates an expected call of ListViews
+func (mr *MockConnectAPIMockRecorder) ListViews(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListViews", reflect.TypeOf((*MockConnectAPI)(nil).ListViews), arg0)
+}
+
+// ListViewsPages mocks base method
+func (m *MockConnectAPI) ListViewsPages(arg0 *connect.ListViewsInput, arg1 func(*connect.ListViewsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListViewsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListViewsPages indicates an expected call of ListViewsPages
+func (mr *MockConnectAPIMockRecorder) ListViewsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListViewsPages", reflect.TypeOf((*MockConnectAPI)(nil).ListViewsPages), arg0, arg1)
+}
+
+// ListViewsPagesWithContext mocks base method
+func (m *MockConnectAPI) ListViewsPagesWithContext(arg0 context.Context, arg1 *connect.ListViewsInput, arg2 func(*connect.ListViewsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListViewsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListViewsPagesWithContext indicates an expected call of ListViewsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListViewsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListViewsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListViewsPagesWithContext), varargs...)
+}
+
+// ListViewsRequest mocks base method
+func (m *MockConnectAPI) ListViewsRequest(arg0 *connect.ListViewsInput) (*request.Request, *connect.ListViewsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListViewsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListViewsOutput)
+	return ret0, ret1
+}
+
+// ListViewsRequest indicates an expected call of ListViewsRequest
+func (mr *MockConnectAPIMockRecorder) ListViewsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListViewsRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListViewsRequest), arg0)
+}
+
+// ListViewsWithContext mocks base method
+func (m *MockConnectAPI) ListViewsWithContext(arg0 context.Context, arg1 *connect.ListViewsInput, arg2 ...request.Option) (*connect.ListViewsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListViewsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListViewsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListViewsWithContext indicates an expected call of ListViewsWithContext
+func (mr *MockConnectAPIMockRecorder) ListViewsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListViewsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListViewsWithContext), varargs...)
+}
+
 // MonitorContact mocks base method
 func (m *MockConnectAPI) MonitorContact(arg0 *connect.MonitorContactInput) (*connect.MonitorContactOutput, error) {
 	m.ctrl.T.Helper()
@@ -11650,4 +12066,104 @@ func (mr *MockConnectAPIMockRecorder) UpdateUserSecurityProfilesWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserSecurityProfilesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateUserSecurityProfilesWithContext), varargs...)
+}
+
+// UpdateViewContent mocks base method
+func (m *MockConnectAPI) UpdateViewContent(arg0 *connect.UpdateViewContentInput) (*connect.UpdateViewContentOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateViewContent", arg0)
+	ret0, _ := ret[0].(*connect.UpdateViewContentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateViewContent indicates an expected call of UpdateViewContent
+func (mr *MockConnectAPIMockRecorder) UpdateViewContent(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateViewContent", reflect.TypeOf((*MockConnectAPI)(nil).UpdateViewContent), arg0)
+}
+
+// UpdateViewContentRequest mocks base method
+func (m *MockConnectAPI) UpdateViewContentRequest(arg0 *connect.UpdateViewContentInput) (*request.Request, *connect.UpdateViewContentOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateViewContentRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateViewContentOutput)
+	return ret0, ret1
+}
+
+// UpdateViewContentRequest indicates an expected call of UpdateViewContentRequest
+func (mr *MockConnectAPIMockRecorder) UpdateViewContentRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateViewContentRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateViewContentRequest), arg0)
+}
+
+// UpdateViewContentWithContext mocks base method
+func (m *MockConnectAPI) UpdateViewContentWithContext(arg0 context.Context, arg1 *connect.UpdateViewContentInput, arg2 ...request.Option) (*connect.UpdateViewContentOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateViewContentWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateViewContentOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateViewContentWithContext indicates an expected call of UpdateViewContentWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateViewContentWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateViewContentWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateViewContentWithContext), varargs...)
+}
+
+// UpdateViewMetadata mocks base method
+func (m *MockConnectAPI) UpdateViewMetadata(arg0 *connect.UpdateViewMetadataInput) (*connect.UpdateViewMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateViewMetadata", arg0)
+	ret0, _ := ret[0].(*connect.UpdateViewMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateViewMetadata indicates an expected call of UpdateViewMetadata
+func (mr *MockConnectAPIMockRecorder) UpdateViewMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateViewMetadata", reflect.TypeOf((*MockConnectAPI)(nil).UpdateViewMetadata), arg0)
+}
+
+// UpdateViewMetadataRequest mocks base method
+func (m *MockConnectAPI) UpdateViewMetadataRequest(arg0 *connect.UpdateViewMetadataInput) (*request.Request, *connect.UpdateViewMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateViewMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateViewMetadataOutput)
+	return ret0, ret1
+}
+
+// UpdateViewMetadataRequest indicates an expected call of UpdateViewMetadataRequest
+func (mr *MockConnectAPIMockRecorder) UpdateViewMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateViewMetadataRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateViewMetadataRequest), arg0)
+}
+
+// UpdateViewMetadataWithContext mocks base method
+func (m *MockConnectAPI) UpdateViewMetadataWithContext(arg0 context.Context, arg1 *connect.UpdateViewMetadataInput, arg2 ...request.Option) (*connect.UpdateViewMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateViewMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateViewMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateViewMetadataWithContext indicates an expected call of UpdateViewMetadataWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateViewMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateViewMetadataWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateViewMetadataWithContext), varargs...)
 }
