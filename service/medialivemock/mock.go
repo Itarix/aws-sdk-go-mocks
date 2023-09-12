@@ -2765,6 +2765,21 @@ func (mr *MockMediaLiveAPIMockRecorder) StartChannelWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartChannelWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).StartChannelWithContext), varargs...)
 }
 
+// StartInputDevice mocks base method
+func (m *MockMediaLiveAPI) StartInputDevice(arg0 *medialive.StartInputDeviceInput) (*medialive.StartInputDeviceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartInputDevice", arg0)
+	ret0, _ := ret[0].(*medialive.StartInputDeviceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartInputDevice indicates an expected call of StartInputDevice
+func (mr *MockMediaLiveAPIMockRecorder) StartInputDevice(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartInputDevice", reflect.TypeOf((*MockMediaLiveAPI)(nil).StartInputDevice), arg0)
+}
+
 // StartInputDeviceMaintenanceWindow mocks base method
 func (m *MockMediaLiveAPI) StartInputDeviceMaintenanceWindow(arg0 *medialive.StartInputDeviceMaintenanceWindowInput) (*medialive.StartInputDeviceMaintenanceWindowOutput, error) {
 	m.ctrl.T.Helper()
@@ -2813,6 +2828,41 @@ func (mr *MockMediaLiveAPIMockRecorder) StartInputDeviceMaintenanceWindowWithCon
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartInputDeviceMaintenanceWindowWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).StartInputDeviceMaintenanceWindowWithContext), varargs...)
+}
+
+// StartInputDeviceRequest mocks base method
+func (m *MockMediaLiveAPI) StartInputDeviceRequest(arg0 *medialive.StartInputDeviceInput) (*request.Request, *medialive.StartInputDeviceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartInputDeviceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.StartInputDeviceOutput)
+	return ret0, ret1
+}
+
+// StartInputDeviceRequest indicates an expected call of StartInputDeviceRequest
+func (mr *MockMediaLiveAPIMockRecorder) StartInputDeviceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartInputDeviceRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).StartInputDeviceRequest), arg0)
+}
+
+// StartInputDeviceWithContext mocks base method
+func (m *MockMediaLiveAPI) StartInputDeviceWithContext(arg0 context.Context, arg1 *medialive.StartInputDeviceInput, arg2 ...request.Option) (*medialive.StartInputDeviceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartInputDeviceWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.StartInputDeviceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartInputDeviceWithContext indicates an expected call of StartInputDeviceWithContext
+func (mr *MockMediaLiveAPIMockRecorder) StartInputDeviceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartInputDeviceWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).StartInputDeviceWithContext), varargs...)
 }
 
 // StartMultiplex mocks base method
@@ -2913,6 +2963,56 @@ func (mr *MockMediaLiveAPIMockRecorder) StopChannelWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopChannelWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).StopChannelWithContext), varargs...)
+}
+
+// StopInputDevice mocks base method
+func (m *MockMediaLiveAPI) StopInputDevice(arg0 *medialive.StopInputDeviceInput) (*medialive.StopInputDeviceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopInputDevice", arg0)
+	ret0, _ := ret[0].(*medialive.StopInputDeviceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopInputDevice indicates an expected call of StopInputDevice
+func (mr *MockMediaLiveAPIMockRecorder) StopInputDevice(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopInputDevice", reflect.TypeOf((*MockMediaLiveAPI)(nil).StopInputDevice), arg0)
+}
+
+// StopInputDeviceRequest mocks base method
+func (m *MockMediaLiveAPI) StopInputDeviceRequest(arg0 *medialive.StopInputDeviceInput) (*request.Request, *medialive.StopInputDeviceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopInputDeviceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*medialive.StopInputDeviceOutput)
+	return ret0, ret1
+}
+
+// StopInputDeviceRequest indicates an expected call of StopInputDeviceRequest
+func (mr *MockMediaLiveAPIMockRecorder) StopInputDeviceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopInputDeviceRequest", reflect.TypeOf((*MockMediaLiveAPI)(nil).StopInputDeviceRequest), arg0)
+}
+
+// StopInputDeviceWithContext mocks base method
+func (m *MockMediaLiveAPI) StopInputDeviceWithContext(arg0 context.Context, arg1 *medialive.StopInputDeviceInput, arg2 ...request.Option) (*medialive.StopInputDeviceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopInputDeviceWithContext", varargs...)
+	ret0, _ := ret[0].(*medialive.StopInputDeviceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopInputDeviceWithContext indicates an expected call of StopInputDeviceWithContext
+func (mr *MockMediaLiveAPIMockRecorder) StopInputDeviceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopInputDeviceWithContext", reflect.TypeOf((*MockMediaLiveAPI)(nil).StopInputDeviceWithContext), varargs...)
 }
 
 // StopMultiplex mocks base method
