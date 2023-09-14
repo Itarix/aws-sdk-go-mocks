@@ -335,6 +335,56 @@ func (mr *MockDrsAPIMockRecorder) DeleteJobWithContext(arg0, arg1 interface{}, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteJobWithContext", reflect.TypeOf((*MockDrsAPI)(nil).DeleteJobWithContext), varargs...)
 }
 
+// DeleteLaunchAction mocks base method
+func (m *MockDrsAPI) DeleteLaunchAction(arg0 *drs.DeleteLaunchActionInput) (*drs.DeleteLaunchActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLaunchAction", arg0)
+	ret0, _ := ret[0].(*drs.DeleteLaunchActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLaunchAction indicates an expected call of DeleteLaunchAction
+func (mr *MockDrsAPIMockRecorder) DeleteLaunchAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLaunchAction", reflect.TypeOf((*MockDrsAPI)(nil).DeleteLaunchAction), arg0)
+}
+
+// DeleteLaunchActionRequest mocks base method
+func (m *MockDrsAPI) DeleteLaunchActionRequest(arg0 *drs.DeleteLaunchActionInput) (*request.Request, *drs.DeleteLaunchActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLaunchActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.DeleteLaunchActionOutput)
+	return ret0, ret1
+}
+
+// DeleteLaunchActionRequest indicates an expected call of DeleteLaunchActionRequest
+func (mr *MockDrsAPIMockRecorder) DeleteLaunchActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLaunchActionRequest", reflect.TypeOf((*MockDrsAPI)(nil).DeleteLaunchActionRequest), arg0)
+}
+
+// DeleteLaunchActionWithContext mocks base method
+func (m *MockDrsAPI) DeleteLaunchActionWithContext(arg0 context.Context, arg1 *drs.DeleteLaunchActionInput, arg2 ...request.Option) (*drs.DeleteLaunchActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLaunchActionWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.DeleteLaunchActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLaunchActionWithContext indicates an expected call of DeleteLaunchActionWithContext
+func (mr *MockDrsAPIMockRecorder) DeleteLaunchActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLaunchActionWithContext", reflect.TypeOf((*MockDrsAPI)(nil).DeleteLaunchActionWithContext), varargs...)
+}
+
 // DeleteLaunchConfigurationTemplate mocks base method
 func (m *MockDrsAPI) DeleteLaunchConfigurationTemplate(arg0 *drs.DeleteLaunchConfigurationTemplateInput) (*drs.DeleteLaunchConfigurationTemplateOutput, error) {
 	m.ctrl.T.Helper()
@@ -1682,6 +1732,89 @@ func (mr *MockDrsAPIMockRecorder) ListExtensibleSourceServersWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListExtensibleSourceServersWithContext", reflect.TypeOf((*MockDrsAPI)(nil).ListExtensibleSourceServersWithContext), varargs...)
 }
 
+// ListLaunchActions mocks base method
+func (m *MockDrsAPI) ListLaunchActions(arg0 *drs.ListLaunchActionsInput) (*drs.ListLaunchActionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLaunchActions", arg0)
+	ret0, _ := ret[0].(*drs.ListLaunchActionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLaunchActions indicates an expected call of ListLaunchActions
+func (mr *MockDrsAPIMockRecorder) ListLaunchActions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLaunchActions", reflect.TypeOf((*MockDrsAPI)(nil).ListLaunchActions), arg0)
+}
+
+// ListLaunchActionsPages mocks base method
+func (m *MockDrsAPI) ListLaunchActionsPages(arg0 *drs.ListLaunchActionsInput, arg1 func(*drs.ListLaunchActionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLaunchActionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLaunchActionsPages indicates an expected call of ListLaunchActionsPages
+func (mr *MockDrsAPIMockRecorder) ListLaunchActionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLaunchActionsPages", reflect.TypeOf((*MockDrsAPI)(nil).ListLaunchActionsPages), arg0, arg1)
+}
+
+// ListLaunchActionsPagesWithContext mocks base method
+func (m *MockDrsAPI) ListLaunchActionsPagesWithContext(arg0 context.Context, arg1 *drs.ListLaunchActionsInput, arg2 func(*drs.ListLaunchActionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLaunchActionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLaunchActionsPagesWithContext indicates an expected call of ListLaunchActionsPagesWithContext
+func (mr *MockDrsAPIMockRecorder) ListLaunchActionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLaunchActionsPagesWithContext", reflect.TypeOf((*MockDrsAPI)(nil).ListLaunchActionsPagesWithContext), varargs...)
+}
+
+// ListLaunchActionsRequest mocks base method
+func (m *MockDrsAPI) ListLaunchActionsRequest(arg0 *drs.ListLaunchActionsInput) (*request.Request, *drs.ListLaunchActionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLaunchActionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.ListLaunchActionsOutput)
+	return ret0, ret1
+}
+
+// ListLaunchActionsRequest indicates an expected call of ListLaunchActionsRequest
+func (mr *MockDrsAPIMockRecorder) ListLaunchActionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLaunchActionsRequest", reflect.TypeOf((*MockDrsAPI)(nil).ListLaunchActionsRequest), arg0)
+}
+
+// ListLaunchActionsWithContext mocks base method
+func (m *MockDrsAPI) ListLaunchActionsWithContext(arg0 context.Context, arg1 *drs.ListLaunchActionsInput, arg2 ...request.Option) (*drs.ListLaunchActionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLaunchActionsWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.ListLaunchActionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLaunchActionsWithContext indicates an expected call of ListLaunchActionsWithContext
+func (mr *MockDrsAPIMockRecorder) ListLaunchActionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLaunchActionsWithContext", reflect.TypeOf((*MockDrsAPI)(nil).ListLaunchActionsWithContext), varargs...)
+}
+
 // ListStagingAccounts mocks base method
 func (m *MockDrsAPI) ListStagingAccounts(arg0 *drs.ListStagingAccountsInput) (*drs.ListStagingAccountsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1813,6 +1946,56 @@ func (mr *MockDrsAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockDrsAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// PutLaunchAction mocks base method
+func (m *MockDrsAPI) PutLaunchAction(arg0 *drs.PutLaunchActionInput) (*drs.PutLaunchActionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutLaunchAction", arg0)
+	ret0, _ := ret[0].(*drs.PutLaunchActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutLaunchAction indicates an expected call of PutLaunchAction
+func (mr *MockDrsAPIMockRecorder) PutLaunchAction(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLaunchAction", reflect.TypeOf((*MockDrsAPI)(nil).PutLaunchAction), arg0)
+}
+
+// PutLaunchActionRequest mocks base method
+func (m *MockDrsAPI) PutLaunchActionRequest(arg0 *drs.PutLaunchActionInput) (*request.Request, *drs.PutLaunchActionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutLaunchActionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*drs.PutLaunchActionOutput)
+	return ret0, ret1
+}
+
+// PutLaunchActionRequest indicates an expected call of PutLaunchActionRequest
+func (mr *MockDrsAPIMockRecorder) PutLaunchActionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLaunchActionRequest", reflect.TypeOf((*MockDrsAPI)(nil).PutLaunchActionRequest), arg0)
+}
+
+// PutLaunchActionWithContext mocks base method
+func (m *MockDrsAPI) PutLaunchActionWithContext(arg0 context.Context, arg1 *drs.PutLaunchActionInput, arg2 ...request.Option) (*drs.PutLaunchActionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutLaunchActionWithContext", varargs...)
+	ret0, _ := ret[0].(*drs.PutLaunchActionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutLaunchActionWithContext indicates an expected call of PutLaunchActionWithContext
+func (mr *MockDrsAPIMockRecorder) PutLaunchActionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutLaunchActionWithContext", reflect.TypeOf((*MockDrsAPI)(nil).PutLaunchActionWithContext), varargs...)
 }
 
 // RetryDataReplication mocks base method
