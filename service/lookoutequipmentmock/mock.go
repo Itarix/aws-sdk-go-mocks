@@ -285,6 +285,56 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) CreateModelWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateModelWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).CreateModelWithContext), varargs...)
 }
 
+// CreateRetrainingScheduler mocks base method
+func (m *MockLookoutEquipmentAPI) CreateRetrainingScheduler(arg0 *lookoutequipment.CreateRetrainingSchedulerInput) (*lookoutequipment.CreateRetrainingSchedulerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRetrainingScheduler", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.CreateRetrainingSchedulerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRetrainingScheduler indicates an expected call of CreateRetrainingScheduler
+func (mr *MockLookoutEquipmentAPIMockRecorder) CreateRetrainingScheduler(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRetrainingScheduler", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).CreateRetrainingScheduler), arg0)
+}
+
+// CreateRetrainingSchedulerRequest mocks base method
+func (m *MockLookoutEquipmentAPI) CreateRetrainingSchedulerRequest(arg0 *lookoutequipment.CreateRetrainingSchedulerInput) (*request.Request, *lookoutequipment.CreateRetrainingSchedulerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRetrainingSchedulerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.CreateRetrainingSchedulerOutput)
+	return ret0, ret1
+}
+
+// CreateRetrainingSchedulerRequest indicates an expected call of CreateRetrainingSchedulerRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) CreateRetrainingSchedulerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRetrainingSchedulerRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).CreateRetrainingSchedulerRequest), arg0)
+}
+
+// CreateRetrainingSchedulerWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) CreateRetrainingSchedulerWithContext(arg0 context.Context, arg1 *lookoutequipment.CreateRetrainingSchedulerInput, arg2 ...request.Option) (*lookoutequipment.CreateRetrainingSchedulerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRetrainingSchedulerWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.CreateRetrainingSchedulerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRetrainingSchedulerWithContext indicates an expected call of CreateRetrainingSchedulerWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) CreateRetrainingSchedulerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRetrainingSchedulerWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).CreateRetrainingSchedulerWithContext), varargs...)
+}
+
 // DeleteDataset mocks base method
 func (m *MockLookoutEquipmentAPI) DeleteDataset(arg0 *lookoutequipment.DeleteDatasetInput) (*lookoutequipment.DeleteDatasetOutput, error) {
 	m.ctrl.T.Helper()
@@ -583,6 +633,56 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteResourcePolicyWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteResourcePolicyWithContext), varargs...)
+}
+
+// DeleteRetrainingScheduler mocks base method
+func (m *MockLookoutEquipmentAPI) DeleteRetrainingScheduler(arg0 *lookoutequipment.DeleteRetrainingSchedulerInput) (*lookoutequipment.DeleteRetrainingSchedulerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRetrainingScheduler", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.DeleteRetrainingSchedulerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRetrainingScheduler indicates an expected call of DeleteRetrainingScheduler
+func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteRetrainingScheduler(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRetrainingScheduler", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteRetrainingScheduler), arg0)
+}
+
+// DeleteRetrainingSchedulerRequest mocks base method
+func (m *MockLookoutEquipmentAPI) DeleteRetrainingSchedulerRequest(arg0 *lookoutequipment.DeleteRetrainingSchedulerInput) (*request.Request, *lookoutequipment.DeleteRetrainingSchedulerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRetrainingSchedulerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.DeleteRetrainingSchedulerOutput)
+	return ret0, ret1
+}
+
+// DeleteRetrainingSchedulerRequest indicates an expected call of DeleteRetrainingSchedulerRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteRetrainingSchedulerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRetrainingSchedulerRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteRetrainingSchedulerRequest), arg0)
+}
+
+// DeleteRetrainingSchedulerWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) DeleteRetrainingSchedulerWithContext(arg0 context.Context, arg1 *lookoutequipment.DeleteRetrainingSchedulerInput, arg2 ...request.Option) (*lookoutequipment.DeleteRetrainingSchedulerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRetrainingSchedulerWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.DeleteRetrainingSchedulerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRetrainingSchedulerWithContext indicates an expected call of DeleteRetrainingSchedulerWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) DeleteRetrainingSchedulerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRetrainingSchedulerWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DeleteRetrainingSchedulerWithContext), varargs...)
 }
 
 // DescribeDataIngestionJob mocks base method
@@ -983,6 +1083,56 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeResourcePolicyWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeResourcePolicyWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeResourcePolicyWithContext), varargs...)
+}
+
+// DescribeRetrainingScheduler mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeRetrainingScheduler(arg0 *lookoutequipment.DescribeRetrainingSchedulerInput) (*lookoutequipment.DescribeRetrainingSchedulerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRetrainingScheduler", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.DescribeRetrainingSchedulerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRetrainingScheduler indicates an expected call of DescribeRetrainingScheduler
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeRetrainingScheduler(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRetrainingScheduler", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeRetrainingScheduler), arg0)
+}
+
+// DescribeRetrainingSchedulerRequest mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeRetrainingSchedulerRequest(arg0 *lookoutequipment.DescribeRetrainingSchedulerInput) (*request.Request, *lookoutequipment.DescribeRetrainingSchedulerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRetrainingSchedulerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.DescribeRetrainingSchedulerOutput)
+	return ret0, ret1
+}
+
+// DescribeRetrainingSchedulerRequest indicates an expected call of DescribeRetrainingSchedulerRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeRetrainingSchedulerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRetrainingSchedulerRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeRetrainingSchedulerRequest), arg0)
+}
+
+// DescribeRetrainingSchedulerWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) DescribeRetrainingSchedulerWithContext(arg0 context.Context, arg1 *lookoutequipment.DescribeRetrainingSchedulerInput, arg2 ...request.Option) (*lookoutequipment.DescribeRetrainingSchedulerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeRetrainingSchedulerWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.DescribeRetrainingSchedulerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRetrainingSchedulerWithContext indicates an expected call of DescribeRetrainingSchedulerWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) DescribeRetrainingSchedulerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRetrainingSchedulerWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).DescribeRetrainingSchedulerWithContext), varargs...)
 }
 
 // ImportDataset mocks base method
@@ -1832,6 +1982,89 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) ListModelsWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelsWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListModelsWithContext), varargs...)
 }
 
+// ListRetrainingSchedulers mocks base method
+func (m *MockLookoutEquipmentAPI) ListRetrainingSchedulers(arg0 *lookoutequipment.ListRetrainingSchedulersInput) (*lookoutequipment.ListRetrainingSchedulersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRetrainingSchedulers", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.ListRetrainingSchedulersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRetrainingSchedulers indicates an expected call of ListRetrainingSchedulers
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListRetrainingSchedulers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRetrainingSchedulers", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListRetrainingSchedulers), arg0)
+}
+
+// ListRetrainingSchedulersPages mocks base method
+func (m *MockLookoutEquipmentAPI) ListRetrainingSchedulersPages(arg0 *lookoutequipment.ListRetrainingSchedulersInput, arg1 func(*lookoutequipment.ListRetrainingSchedulersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRetrainingSchedulersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRetrainingSchedulersPages indicates an expected call of ListRetrainingSchedulersPages
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListRetrainingSchedulersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRetrainingSchedulersPages", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListRetrainingSchedulersPages), arg0, arg1)
+}
+
+// ListRetrainingSchedulersPagesWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) ListRetrainingSchedulersPagesWithContext(arg0 context.Context, arg1 *lookoutequipment.ListRetrainingSchedulersInput, arg2 func(*lookoutequipment.ListRetrainingSchedulersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRetrainingSchedulersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRetrainingSchedulersPagesWithContext indicates an expected call of ListRetrainingSchedulersPagesWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListRetrainingSchedulersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRetrainingSchedulersPagesWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListRetrainingSchedulersPagesWithContext), varargs...)
+}
+
+// ListRetrainingSchedulersRequest mocks base method
+func (m *MockLookoutEquipmentAPI) ListRetrainingSchedulersRequest(arg0 *lookoutequipment.ListRetrainingSchedulersInput) (*request.Request, *lookoutequipment.ListRetrainingSchedulersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRetrainingSchedulersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.ListRetrainingSchedulersOutput)
+	return ret0, ret1
+}
+
+// ListRetrainingSchedulersRequest indicates an expected call of ListRetrainingSchedulersRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListRetrainingSchedulersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRetrainingSchedulersRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListRetrainingSchedulersRequest), arg0)
+}
+
+// ListRetrainingSchedulersWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) ListRetrainingSchedulersWithContext(arg0 context.Context, arg1 *lookoutequipment.ListRetrainingSchedulersInput, arg2 ...request.Option) (*lookoutequipment.ListRetrainingSchedulersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRetrainingSchedulersWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.ListRetrainingSchedulersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRetrainingSchedulersWithContext indicates an expected call of ListRetrainingSchedulersWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) ListRetrainingSchedulersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRetrainingSchedulersWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).ListRetrainingSchedulersWithContext), varargs...)
+}
+
 // ListSensorStatistics mocks base method
 func (m *MockLookoutEquipmentAPI) ListSensorStatistics(arg0 *lookoutequipment.ListSensorStatisticsInput) (*lookoutequipment.ListSensorStatisticsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2115,6 +2348,56 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) StartInferenceSchedulerWithContex
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartInferenceSchedulerWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).StartInferenceSchedulerWithContext), varargs...)
 }
 
+// StartRetrainingScheduler mocks base method
+func (m *MockLookoutEquipmentAPI) StartRetrainingScheduler(arg0 *lookoutequipment.StartRetrainingSchedulerInput) (*lookoutequipment.StartRetrainingSchedulerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartRetrainingScheduler", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.StartRetrainingSchedulerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartRetrainingScheduler indicates an expected call of StartRetrainingScheduler
+func (mr *MockLookoutEquipmentAPIMockRecorder) StartRetrainingScheduler(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartRetrainingScheduler", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).StartRetrainingScheduler), arg0)
+}
+
+// StartRetrainingSchedulerRequest mocks base method
+func (m *MockLookoutEquipmentAPI) StartRetrainingSchedulerRequest(arg0 *lookoutequipment.StartRetrainingSchedulerInput) (*request.Request, *lookoutequipment.StartRetrainingSchedulerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartRetrainingSchedulerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.StartRetrainingSchedulerOutput)
+	return ret0, ret1
+}
+
+// StartRetrainingSchedulerRequest indicates an expected call of StartRetrainingSchedulerRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) StartRetrainingSchedulerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartRetrainingSchedulerRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).StartRetrainingSchedulerRequest), arg0)
+}
+
+// StartRetrainingSchedulerWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) StartRetrainingSchedulerWithContext(arg0 context.Context, arg1 *lookoutequipment.StartRetrainingSchedulerInput, arg2 ...request.Option) (*lookoutequipment.StartRetrainingSchedulerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartRetrainingSchedulerWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.StartRetrainingSchedulerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartRetrainingSchedulerWithContext indicates an expected call of StartRetrainingSchedulerWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) StartRetrainingSchedulerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartRetrainingSchedulerWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).StartRetrainingSchedulerWithContext), varargs...)
+}
+
 // StopInferenceScheduler mocks base method
 func (m *MockLookoutEquipmentAPI) StopInferenceScheduler(arg0 *lookoutequipment.StopInferenceSchedulerInput) (*lookoutequipment.StopInferenceSchedulerOutput, error) {
 	m.ctrl.T.Helper()
@@ -2163,6 +2446,56 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) StopInferenceSchedulerWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopInferenceSchedulerWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).StopInferenceSchedulerWithContext), varargs...)
+}
+
+// StopRetrainingScheduler mocks base method
+func (m *MockLookoutEquipmentAPI) StopRetrainingScheduler(arg0 *lookoutequipment.StopRetrainingSchedulerInput) (*lookoutequipment.StopRetrainingSchedulerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopRetrainingScheduler", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.StopRetrainingSchedulerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopRetrainingScheduler indicates an expected call of StopRetrainingScheduler
+func (mr *MockLookoutEquipmentAPIMockRecorder) StopRetrainingScheduler(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopRetrainingScheduler", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).StopRetrainingScheduler), arg0)
+}
+
+// StopRetrainingSchedulerRequest mocks base method
+func (m *MockLookoutEquipmentAPI) StopRetrainingSchedulerRequest(arg0 *lookoutequipment.StopRetrainingSchedulerInput) (*request.Request, *lookoutequipment.StopRetrainingSchedulerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopRetrainingSchedulerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.StopRetrainingSchedulerOutput)
+	return ret0, ret1
+}
+
+// StopRetrainingSchedulerRequest indicates an expected call of StopRetrainingSchedulerRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) StopRetrainingSchedulerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopRetrainingSchedulerRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).StopRetrainingSchedulerRequest), arg0)
+}
+
+// StopRetrainingSchedulerWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) StopRetrainingSchedulerWithContext(arg0 context.Context, arg1 *lookoutequipment.StopRetrainingSchedulerInput, arg2 ...request.Option) (*lookoutequipment.StopRetrainingSchedulerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopRetrainingSchedulerWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.StopRetrainingSchedulerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopRetrainingSchedulerWithContext indicates an expected call of StopRetrainingSchedulerWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) StopRetrainingSchedulerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopRetrainingSchedulerWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).StopRetrainingSchedulerWithContext), varargs...)
 }
 
 // TagResource mocks base method
@@ -2413,4 +2746,104 @@ func (mr *MockLookoutEquipmentAPIMockRecorder) UpdateLabelGroupWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLabelGroupWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UpdateLabelGroupWithContext), varargs...)
+}
+
+// UpdateModel mocks base method
+func (m *MockLookoutEquipmentAPI) UpdateModel(arg0 *lookoutequipment.UpdateModelInput) (*lookoutequipment.UpdateModelOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateModel", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.UpdateModelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateModel indicates an expected call of UpdateModel
+func (mr *MockLookoutEquipmentAPIMockRecorder) UpdateModel(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateModel", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UpdateModel), arg0)
+}
+
+// UpdateModelRequest mocks base method
+func (m *MockLookoutEquipmentAPI) UpdateModelRequest(arg0 *lookoutequipment.UpdateModelInput) (*request.Request, *lookoutequipment.UpdateModelOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateModelRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.UpdateModelOutput)
+	return ret0, ret1
+}
+
+// UpdateModelRequest indicates an expected call of UpdateModelRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) UpdateModelRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateModelRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UpdateModelRequest), arg0)
+}
+
+// UpdateModelWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) UpdateModelWithContext(arg0 context.Context, arg1 *lookoutequipment.UpdateModelInput, arg2 ...request.Option) (*lookoutequipment.UpdateModelOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateModelWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.UpdateModelOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateModelWithContext indicates an expected call of UpdateModelWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) UpdateModelWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateModelWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UpdateModelWithContext), varargs...)
+}
+
+// UpdateRetrainingScheduler mocks base method
+func (m *MockLookoutEquipmentAPI) UpdateRetrainingScheduler(arg0 *lookoutequipment.UpdateRetrainingSchedulerInput) (*lookoutequipment.UpdateRetrainingSchedulerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRetrainingScheduler", arg0)
+	ret0, _ := ret[0].(*lookoutequipment.UpdateRetrainingSchedulerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRetrainingScheduler indicates an expected call of UpdateRetrainingScheduler
+func (mr *MockLookoutEquipmentAPIMockRecorder) UpdateRetrainingScheduler(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRetrainingScheduler", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UpdateRetrainingScheduler), arg0)
+}
+
+// UpdateRetrainingSchedulerRequest mocks base method
+func (m *MockLookoutEquipmentAPI) UpdateRetrainingSchedulerRequest(arg0 *lookoutequipment.UpdateRetrainingSchedulerInput) (*request.Request, *lookoutequipment.UpdateRetrainingSchedulerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRetrainingSchedulerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lookoutequipment.UpdateRetrainingSchedulerOutput)
+	return ret0, ret1
+}
+
+// UpdateRetrainingSchedulerRequest indicates an expected call of UpdateRetrainingSchedulerRequest
+func (mr *MockLookoutEquipmentAPIMockRecorder) UpdateRetrainingSchedulerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRetrainingSchedulerRequest", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UpdateRetrainingSchedulerRequest), arg0)
+}
+
+// UpdateRetrainingSchedulerWithContext mocks base method
+func (m *MockLookoutEquipmentAPI) UpdateRetrainingSchedulerWithContext(arg0 context.Context, arg1 *lookoutequipment.UpdateRetrainingSchedulerInput, arg2 ...request.Option) (*lookoutequipment.UpdateRetrainingSchedulerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRetrainingSchedulerWithContext", varargs...)
+	ret0, _ := ret[0].(*lookoutequipment.UpdateRetrainingSchedulerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRetrainingSchedulerWithContext indicates an expected call of UpdateRetrainingSchedulerWithContext
+func (mr *MockLookoutEquipmentAPIMockRecorder) UpdateRetrainingSchedulerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRetrainingSchedulerWithContext", reflect.TypeOf((*MockLookoutEquipmentAPI)(nil).UpdateRetrainingSchedulerWithContext), varargs...)
 }
