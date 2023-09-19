@@ -1435,6 +1435,56 @@ func (mr *MockWorkMailAPIMockRecorder) DescribeEmailMonitoringConfigurationWithC
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEmailMonitoringConfigurationWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeEmailMonitoringConfigurationWithContext), varargs...)
 }
 
+// DescribeEntity mocks base method
+func (m *MockWorkMailAPI) DescribeEntity(arg0 *workmail.DescribeEntityInput) (*workmail.DescribeEntityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEntity", arg0)
+	ret0, _ := ret[0].(*workmail.DescribeEntityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEntity indicates an expected call of DescribeEntity
+func (mr *MockWorkMailAPIMockRecorder) DescribeEntity(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEntity", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeEntity), arg0)
+}
+
+// DescribeEntityRequest mocks base method
+func (m *MockWorkMailAPI) DescribeEntityRequest(arg0 *workmail.DescribeEntityInput) (*request.Request, *workmail.DescribeEntityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeEntityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.DescribeEntityOutput)
+	return ret0, ret1
+}
+
+// DescribeEntityRequest indicates an expected call of DescribeEntityRequest
+func (mr *MockWorkMailAPIMockRecorder) DescribeEntityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEntityRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeEntityRequest), arg0)
+}
+
+// DescribeEntityWithContext mocks base method
+func (m *MockWorkMailAPI) DescribeEntityWithContext(arg0 context.Context, arg1 *workmail.DescribeEntityInput, arg2 ...request.Option) (*workmail.DescribeEntityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeEntityWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.DescribeEntityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeEntityWithContext indicates an expected call of DescribeEntityWithContext
+func (mr *MockWorkMailAPIMockRecorder) DescribeEntityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeEntityWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).DescribeEntityWithContext), varargs...)
+}
+
 // DescribeGroup mocks base method
 func (m *MockWorkMailAPI) DescribeGroup(arg0 *workmail.DescribeGroupInput) (*workmail.DescribeGroupOutput, error) {
 	m.ctrl.T.Helper()
@@ -2547,6 +2597,89 @@ func (m *MockWorkMailAPI) ListGroups(arg0 *workmail.ListGroupsInput) (*workmail.
 func (mr *MockWorkMailAPIMockRecorder) ListGroups(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroups", reflect.TypeOf((*MockWorkMailAPI)(nil).ListGroups), arg0)
+}
+
+// ListGroupsForEntity mocks base method
+func (m *MockWorkMailAPI) ListGroupsForEntity(arg0 *workmail.ListGroupsForEntityInput) (*workmail.ListGroupsForEntityOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGroupsForEntity", arg0)
+	ret0, _ := ret[0].(*workmail.ListGroupsForEntityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListGroupsForEntity indicates an expected call of ListGroupsForEntity
+func (mr *MockWorkMailAPIMockRecorder) ListGroupsForEntity(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsForEntity", reflect.TypeOf((*MockWorkMailAPI)(nil).ListGroupsForEntity), arg0)
+}
+
+// ListGroupsForEntityPages mocks base method
+func (m *MockWorkMailAPI) ListGroupsForEntityPages(arg0 *workmail.ListGroupsForEntityInput, arg1 func(*workmail.ListGroupsForEntityOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGroupsForEntityPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGroupsForEntityPages indicates an expected call of ListGroupsForEntityPages
+func (mr *MockWorkMailAPIMockRecorder) ListGroupsForEntityPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsForEntityPages", reflect.TypeOf((*MockWorkMailAPI)(nil).ListGroupsForEntityPages), arg0, arg1)
+}
+
+// ListGroupsForEntityPagesWithContext mocks base method
+func (m *MockWorkMailAPI) ListGroupsForEntityPagesWithContext(arg0 context.Context, arg1 *workmail.ListGroupsForEntityInput, arg2 func(*workmail.ListGroupsForEntityOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGroupsForEntityPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGroupsForEntityPagesWithContext indicates an expected call of ListGroupsForEntityPagesWithContext
+func (mr *MockWorkMailAPIMockRecorder) ListGroupsForEntityPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsForEntityPagesWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListGroupsForEntityPagesWithContext), varargs...)
+}
+
+// ListGroupsForEntityRequest mocks base method
+func (m *MockWorkMailAPI) ListGroupsForEntityRequest(arg0 *workmail.ListGroupsForEntityInput) (*request.Request, *workmail.ListGroupsForEntityOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGroupsForEntityRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.ListGroupsForEntityOutput)
+	return ret0, ret1
+}
+
+// ListGroupsForEntityRequest indicates an expected call of ListGroupsForEntityRequest
+func (mr *MockWorkMailAPIMockRecorder) ListGroupsForEntityRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsForEntityRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).ListGroupsForEntityRequest), arg0)
+}
+
+// ListGroupsForEntityWithContext mocks base method
+func (m *MockWorkMailAPI) ListGroupsForEntityWithContext(arg0 context.Context, arg1 *workmail.ListGroupsForEntityInput, arg2 ...request.Option) (*workmail.ListGroupsForEntityOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGroupsForEntityWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.ListGroupsForEntityOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListGroupsForEntityWithContext indicates an expected call of ListGroupsForEntityWithContext
+func (mr *MockWorkMailAPIMockRecorder) ListGroupsForEntityWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGroupsForEntityWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).ListGroupsForEntityWithContext), varargs...)
 }
 
 // ListGroupsPages mocks base method
@@ -4214,6 +4347,56 @@ func (mr *MockWorkMailAPIMockRecorder) UpdateDefaultMailDomainWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDefaultMailDomainWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateDefaultMailDomainWithContext), varargs...)
 }
 
+// UpdateGroup mocks base method
+func (m *MockWorkMailAPI) UpdateGroup(arg0 *workmail.UpdateGroupInput) (*workmail.UpdateGroupOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGroup", arg0)
+	ret0, _ := ret[0].(*workmail.UpdateGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGroup indicates an expected call of UpdateGroup
+func (mr *MockWorkMailAPIMockRecorder) UpdateGroup(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGroup", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateGroup), arg0)
+}
+
+// UpdateGroupRequest mocks base method
+func (m *MockWorkMailAPI) UpdateGroupRequest(arg0 *workmail.UpdateGroupInput) (*request.Request, *workmail.UpdateGroupOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateGroupRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.UpdateGroupOutput)
+	return ret0, ret1
+}
+
+// UpdateGroupRequest indicates an expected call of UpdateGroupRequest
+func (mr *MockWorkMailAPIMockRecorder) UpdateGroupRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGroupRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateGroupRequest), arg0)
+}
+
+// UpdateGroupWithContext mocks base method
+func (m *MockWorkMailAPI) UpdateGroupWithContext(arg0 context.Context, arg1 *workmail.UpdateGroupInput, arg2 ...request.Option) (*workmail.UpdateGroupOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateGroupWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.UpdateGroupOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateGroupWithContext indicates an expected call of UpdateGroupWithContext
+func (mr *MockWorkMailAPIMockRecorder) UpdateGroupWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateGroupWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateGroupWithContext), varargs...)
+}
+
 // UpdateImpersonationRole mocks base method
 func (m *MockWorkMailAPI) UpdateImpersonationRole(arg0 *workmail.UpdateImpersonationRoleInput) (*workmail.UpdateImpersonationRoleOutput, error) {
 	m.ctrl.T.Helper()
@@ -4462,4 +4645,54 @@ func (mr *MockWorkMailAPIMockRecorder) UpdateResourceWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateResourceWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateResourceWithContext), varargs...)
+}
+
+// UpdateUser mocks base method
+func (m *MockWorkMailAPI) UpdateUser(arg0 *workmail.UpdateUserInput) (*workmail.UpdateUserOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateUser", arg0)
+	ret0, _ := ret[0].(*workmail.UpdateUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateUser indicates an expected call of UpdateUser
+func (mr *MockWorkMailAPIMockRecorder) UpdateUser(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUser", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateUser), arg0)
+}
+
+// UpdateUserRequest mocks base method
+func (m *MockWorkMailAPI) UpdateUserRequest(arg0 *workmail.UpdateUserInput) (*request.Request, *workmail.UpdateUserOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateUserRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workmail.UpdateUserOutput)
+	return ret0, ret1
+}
+
+// UpdateUserRequest indicates an expected call of UpdateUserRequest
+func (mr *MockWorkMailAPIMockRecorder) UpdateUserRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserRequest", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateUserRequest), arg0)
+}
+
+// UpdateUserWithContext mocks base method
+func (m *MockWorkMailAPI) UpdateUserWithContext(arg0 context.Context, arg1 *workmail.UpdateUserInput, arg2 ...request.Option) (*workmail.UpdateUserOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateUserWithContext", varargs...)
+	ret0, _ := ret[0].(*workmail.UpdateUserOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateUserWithContext indicates an expected call of UpdateUserWithContext
+func (mr *MockWorkMailAPIMockRecorder) UpdateUserWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateUserWithContext", reflect.TypeOf((*MockWorkMailAPI)(nil).UpdateUserWithContext), varargs...)
 }
