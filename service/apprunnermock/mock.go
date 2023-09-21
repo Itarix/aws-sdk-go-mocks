@@ -1415,6 +1415,89 @@ func (mr *MockAppRunnerAPIMockRecorder) ListServices(arg0 interface{}) *gomock.C
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServices", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListServices), arg0)
 }
 
+// ListServicesForAutoScalingConfiguration mocks base method
+func (m *MockAppRunnerAPI) ListServicesForAutoScalingConfiguration(arg0 *apprunner.ListServicesForAutoScalingConfigurationInput) (*apprunner.ListServicesForAutoScalingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServicesForAutoScalingConfiguration", arg0)
+	ret0, _ := ret[0].(*apprunner.ListServicesForAutoScalingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServicesForAutoScalingConfiguration indicates an expected call of ListServicesForAutoScalingConfiguration
+func (mr *MockAppRunnerAPIMockRecorder) ListServicesForAutoScalingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicesForAutoScalingConfiguration", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListServicesForAutoScalingConfiguration), arg0)
+}
+
+// ListServicesForAutoScalingConfigurationPages mocks base method
+func (m *MockAppRunnerAPI) ListServicesForAutoScalingConfigurationPages(arg0 *apprunner.ListServicesForAutoScalingConfigurationInput, arg1 func(*apprunner.ListServicesForAutoScalingConfigurationOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServicesForAutoScalingConfigurationPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListServicesForAutoScalingConfigurationPages indicates an expected call of ListServicesForAutoScalingConfigurationPages
+func (mr *MockAppRunnerAPIMockRecorder) ListServicesForAutoScalingConfigurationPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicesForAutoScalingConfigurationPages", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListServicesForAutoScalingConfigurationPages), arg0, arg1)
+}
+
+// ListServicesForAutoScalingConfigurationPagesWithContext mocks base method
+func (m *MockAppRunnerAPI) ListServicesForAutoScalingConfigurationPagesWithContext(arg0 context.Context, arg1 *apprunner.ListServicesForAutoScalingConfigurationInput, arg2 func(*apprunner.ListServicesForAutoScalingConfigurationOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServicesForAutoScalingConfigurationPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListServicesForAutoScalingConfigurationPagesWithContext indicates an expected call of ListServicesForAutoScalingConfigurationPagesWithContext
+func (mr *MockAppRunnerAPIMockRecorder) ListServicesForAutoScalingConfigurationPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicesForAutoScalingConfigurationPagesWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListServicesForAutoScalingConfigurationPagesWithContext), varargs...)
+}
+
+// ListServicesForAutoScalingConfigurationRequest mocks base method
+func (m *MockAppRunnerAPI) ListServicesForAutoScalingConfigurationRequest(arg0 *apprunner.ListServicesForAutoScalingConfigurationInput) (*request.Request, *apprunner.ListServicesForAutoScalingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListServicesForAutoScalingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apprunner.ListServicesForAutoScalingConfigurationOutput)
+	return ret0, ret1
+}
+
+// ListServicesForAutoScalingConfigurationRequest indicates an expected call of ListServicesForAutoScalingConfigurationRequest
+func (mr *MockAppRunnerAPIMockRecorder) ListServicesForAutoScalingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicesForAutoScalingConfigurationRequest", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListServicesForAutoScalingConfigurationRequest), arg0)
+}
+
+// ListServicesForAutoScalingConfigurationWithContext mocks base method
+func (m *MockAppRunnerAPI) ListServicesForAutoScalingConfigurationWithContext(arg0 context.Context, arg1 *apprunner.ListServicesForAutoScalingConfigurationInput, arg2 ...request.Option) (*apprunner.ListServicesForAutoScalingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListServicesForAutoScalingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*apprunner.ListServicesForAutoScalingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListServicesForAutoScalingConfigurationWithContext indicates an expected call of ListServicesForAutoScalingConfigurationWithContext
+func (mr *MockAppRunnerAPIMockRecorder) ListServicesForAutoScalingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServicesForAutoScalingConfigurationWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).ListServicesForAutoScalingConfigurationWithContext), varargs...)
+}
+
 // ListServicesPages mocks base method
 func (m *MockAppRunnerAPI) ListServicesPages(arg0 *apprunner.ListServicesInput, arg1 func(*apprunner.ListServicesOutput, bool) bool) error {
 	m.ctrl.T.Helper()
@@ -1947,6 +2030,56 @@ func (mr *MockAppRunnerAPIMockRecorder) UntagResourceWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateDefaultAutoScalingConfiguration mocks base method
+func (m *MockAppRunnerAPI) UpdateDefaultAutoScalingConfiguration(arg0 *apprunner.UpdateDefaultAutoScalingConfigurationInput) (*apprunner.UpdateDefaultAutoScalingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDefaultAutoScalingConfiguration", arg0)
+	ret0, _ := ret[0].(*apprunner.UpdateDefaultAutoScalingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDefaultAutoScalingConfiguration indicates an expected call of UpdateDefaultAutoScalingConfiguration
+func (mr *MockAppRunnerAPIMockRecorder) UpdateDefaultAutoScalingConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDefaultAutoScalingConfiguration", reflect.TypeOf((*MockAppRunnerAPI)(nil).UpdateDefaultAutoScalingConfiguration), arg0)
+}
+
+// UpdateDefaultAutoScalingConfigurationRequest mocks base method
+func (m *MockAppRunnerAPI) UpdateDefaultAutoScalingConfigurationRequest(arg0 *apprunner.UpdateDefaultAutoScalingConfigurationInput) (*request.Request, *apprunner.UpdateDefaultAutoScalingConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateDefaultAutoScalingConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*apprunner.UpdateDefaultAutoScalingConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateDefaultAutoScalingConfigurationRequest indicates an expected call of UpdateDefaultAutoScalingConfigurationRequest
+func (mr *MockAppRunnerAPIMockRecorder) UpdateDefaultAutoScalingConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDefaultAutoScalingConfigurationRequest", reflect.TypeOf((*MockAppRunnerAPI)(nil).UpdateDefaultAutoScalingConfigurationRequest), arg0)
+}
+
+// UpdateDefaultAutoScalingConfigurationWithContext mocks base method
+func (m *MockAppRunnerAPI) UpdateDefaultAutoScalingConfigurationWithContext(arg0 context.Context, arg1 *apprunner.UpdateDefaultAutoScalingConfigurationInput, arg2 ...request.Option) (*apprunner.UpdateDefaultAutoScalingConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateDefaultAutoScalingConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*apprunner.UpdateDefaultAutoScalingConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateDefaultAutoScalingConfigurationWithContext indicates an expected call of UpdateDefaultAutoScalingConfigurationWithContext
+func (mr *MockAppRunnerAPIMockRecorder) UpdateDefaultAutoScalingConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDefaultAutoScalingConfigurationWithContext", reflect.TypeOf((*MockAppRunnerAPI)(nil).UpdateDefaultAutoScalingConfigurationWithContext), varargs...)
 }
 
 // UpdateService mocks base method

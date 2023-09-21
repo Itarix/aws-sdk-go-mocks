@@ -415,6 +415,56 @@ func (mr *MockServiceDiscoveryAPIMockRecorder) DiscoverInstancesRequest(arg0 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DiscoverInstancesRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DiscoverInstancesRequest), arg0)
 }
 
+// DiscoverInstancesRevision mocks base method
+func (m *MockServiceDiscoveryAPI) DiscoverInstancesRevision(arg0 *servicediscovery.DiscoverInstancesRevisionInput) (*servicediscovery.DiscoverInstancesRevisionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DiscoverInstancesRevision", arg0)
+	ret0, _ := ret[0].(*servicediscovery.DiscoverInstancesRevisionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DiscoverInstancesRevision indicates an expected call of DiscoverInstancesRevision
+func (mr *MockServiceDiscoveryAPIMockRecorder) DiscoverInstancesRevision(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DiscoverInstancesRevision", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DiscoverInstancesRevision), arg0)
+}
+
+// DiscoverInstancesRevisionRequest mocks base method
+func (m *MockServiceDiscoveryAPI) DiscoverInstancesRevisionRequest(arg0 *servicediscovery.DiscoverInstancesRevisionInput) (*request.Request, *servicediscovery.DiscoverInstancesRevisionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DiscoverInstancesRevisionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*servicediscovery.DiscoverInstancesRevisionOutput)
+	return ret0, ret1
+}
+
+// DiscoverInstancesRevisionRequest indicates an expected call of DiscoverInstancesRevisionRequest
+func (mr *MockServiceDiscoveryAPIMockRecorder) DiscoverInstancesRevisionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DiscoverInstancesRevisionRequest", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DiscoverInstancesRevisionRequest), arg0)
+}
+
+// DiscoverInstancesRevisionWithContext mocks base method
+func (m *MockServiceDiscoveryAPI) DiscoverInstancesRevisionWithContext(arg0 context.Context, arg1 *servicediscovery.DiscoverInstancesRevisionInput, arg2 ...request.Option) (*servicediscovery.DiscoverInstancesRevisionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DiscoverInstancesRevisionWithContext", varargs...)
+	ret0, _ := ret[0].(*servicediscovery.DiscoverInstancesRevisionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DiscoverInstancesRevisionWithContext indicates an expected call of DiscoverInstancesRevisionWithContext
+func (mr *MockServiceDiscoveryAPIMockRecorder) DiscoverInstancesRevisionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DiscoverInstancesRevisionWithContext", reflect.TypeOf((*MockServiceDiscoveryAPI)(nil).DiscoverInstancesRevisionWithContext), varargs...)
+}
+
 // DiscoverInstancesWithContext mocks base method
 func (m *MockServiceDiscoveryAPI) DiscoverInstancesWithContext(arg0 context.Context, arg1 *servicediscovery.DiscoverInstancesInput, arg2 ...request.Option) (*servicediscovery.DiscoverInstancesOutput, error) {
 	m.ctrl.T.Helper()
