@@ -435,6 +435,56 @@ func (mr *MockLakeFormationAPIMockRecorder) CreateLFTagWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLFTagWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).CreateLFTagWithContext), varargs...)
 }
 
+// CreateLakeFormationOptIn mocks base method
+func (m *MockLakeFormationAPI) CreateLakeFormationOptIn(arg0 *lakeformation.CreateLakeFormationOptInInput) (*lakeformation.CreateLakeFormationOptInOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLakeFormationOptIn", arg0)
+	ret0, _ := ret[0].(*lakeformation.CreateLakeFormationOptInOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLakeFormationOptIn indicates an expected call of CreateLakeFormationOptIn
+func (mr *MockLakeFormationAPIMockRecorder) CreateLakeFormationOptIn(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLakeFormationOptIn", reflect.TypeOf((*MockLakeFormationAPI)(nil).CreateLakeFormationOptIn), arg0)
+}
+
+// CreateLakeFormationOptInRequest mocks base method
+func (m *MockLakeFormationAPI) CreateLakeFormationOptInRequest(arg0 *lakeformation.CreateLakeFormationOptInInput) (*request.Request, *lakeformation.CreateLakeFormationOptInOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLakeFormationOptInRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.CreateLakeFormationOptInOutput)
+	return ret0, ret1
+}
+
+// CreateLakeFormationOptInRequest indicates an expected call of CreateLakeFormationOptInRequest
+func (mr *MockLakeFormationAPIMockRecorder) CreateLakeFormationOptInRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLakeFormationOptInRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).CreateLakeFormationOptInRequest), arg0)
+}
+
+// CreateLakeFormationOptInWithContext mocks base method
+func (m *MockLakeFormationAPI) CreateLakeFormationOptInWithContext(arg0 context.Context, arg1 *lakeformation.CreateLakeFormationOptInInput, arg2 ...request.Option) (*lakeformation.CreateLakeFormationOptInOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLakeFormationOptInWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.CreateLakeFormationOptInOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLakeFormationOptInWithContext indicates an expected call of CreateLakeFormationOptInWithContext
+func (mr *MockLakeFormationAPIMockRecorder) CreateLakeFormationOptInWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLakeFormationOptInWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).CreateLakeFormationOptInWithContext), varargs...)
+}
+
 // DeleteDataCellsFilter mocks base method
 func (m *MockLakeFormationAPI) DeleteDataCellsFilter(arg0 *lakeformation.DeleteDataCellsFilterInput) (*lakeformation.DeleteDataCellsFilterOutput, error) {
 	m.ctrl.T.Helper()
@@ -533,6 +583,56 @@ func (mr *MockLakeFormationAPIMockRecorder) DeleteLFTagWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLFTagWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).DeleteLFTagWithContext), varargs...)
+}
+
+// DeleteLakeFormationOptIn mocks base method
+func (m *MockLakeFormationAPI) DeleteLakeFormationOptIn(arg0 *lakeformation.DeleteLakeFormationOptInInput) (*lakeformation.DeleteLakeFormationOptInOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLakeFormationOptIn", arg0)
+	ret0, _ := ret[0].(*lakeformation.DeleteLakeFormationOptInOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLakeFormationOptIn indicates an expected call of DeleteLakeFormationOptIn
+func (mr *MockLakeFormationAPIMockRecorder) DeleteLakeFormationOptIn(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLakeFormationOptIn", reflect.TypeOf((*MockLakeFormationAPI)(nil).DeleteLakeFormationOptIn), arg0)
+}
+
+// DeleteLakeFormationOptInRequest mocks base method
+func (m *MockLakeFormationAPI) DeleteLakeFormationOptInRequest(arg0 *lakeformation.DeleteLakeFormationOptInInput) (*request.Request, *lakeformation.DeleteLakeFormationOptInOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLakeFormationOptInRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.DeleteLakeFormationOptInOutput)
+	return ret0, ret1
+}
+
+// DeleteLakeFormationOptInRequest indicates an expected call of DeleteLakeFormationOptInRequest
+func (mr *MockLakeFormationAPIMockRecorder) DeleteLakeFormationOptInRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLakeFormationOptInRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).DeleteLakeFormationOptInRequest), arg0)
+}
+
+// DeleteLakeFormationOptInWithContext mocks base method
+func (m *MockLakeFormationAPI) DeleteLakeFormationOptInWithContext(arg0 context.Context, arg1 *lakeformation.DeleteLakeFormationOptInInput, arg2 ...request.Option) (*lakeformation.DeleteLakeFormationOptInOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLakeFormationOptInWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.DeleteLakeFormationOptInOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLakeFormationOptInWithContext indicates an expected call of DeleteLakeFormationOptInWithContext
+func (mr *MockLakeFormationAPIMockRecorder) DeleteLakeFormationOptInWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLakeFormationOptInWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).DeleteLakeFormationOptInWithContext), varargs...)
 }
 
 // DeleteObjectsOnCancel mocks base method
@@ -1698,6 +1798,89 @@ func (mr *MockLakeFormationAPIMockRecorder) ListLFTagsWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLFTagsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListLFTagsWithContext), varargs...)
+}
+
+// ListLakeFormationOptIns mocks base method
+func (m *MockLakeFormationAPI) ListLakeFormationOptIns(arg0 *lakeformation.ListLakeFormationOptInsInput) (*lakeformation.ListLakeFormationOptInsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLakeFormationOptIns", arg0)
+	ret0, _ := ret[0].(*lakeformation.ListLakeFormationOptInsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLakeFormationOptIns indicates an expected call of ListLakeFormationOptIns
+func (mr *MockLakeFormationAPIMockRecorder) ListLakeFormationOptIns(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLakeFormationOptIns", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListLakeFormationOptIns), arg0)
+}
+
+// ListLakeFormationOptInsPages mocks base method
+func (m *MockLakeFormationAPI) ListLakeFormationOptInsPages(arg0 *lakeformation.ListLakeFormationOptInsInput, arg1 func(*lakeformation.ListLakeFormationOptInsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLakeFormationOptInsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLakeFormationOptInsPages indicates an expected call of ListLakeFormationOptInsPages
+func (mr *MockLakeFormationAPIMockRecorder) ListLakeFormationOptInsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLakeFormationOptInsPages", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListLakeFormationOptInsPages), arg0, arg1)
+}
+
+// ListLakeFormationOptInsPagesWithContext mocks base method
+func (m *MockLakeFormationAPI) ListLakeFormationOptInsPagesWithContext(arg0 context.Context, arg1 *lakeformation.ListLakeFormationOptInsInput, arg2 func(*lakeformation.ListLakeFormationOptInsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLakeFormationOptInsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLakeFormationOptInsPagesWithContext indicates an expected call of ListLakeFormationOptInsPagesWithContext
+func (mr *MockLakeFormationAPIMockRecorder) ListLakeFormationOptInsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLakeFormationOptInsPagesWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListLakeFormationOptInsPagesWithContext), varargs...)
+}
+
+// ListLakeFormationOptInsRequest mocks base method
+func (m *MockLakeFormationAPI) ListLakeFormationOptInsRequest(arg0 *lakeformation.ListLakeFormationOptInsInput) (*request.Request, *lakeformation.ListLakeFormationOptInsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLakeFormationOptInsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*lakeformation.ListLakeFormationOptInsOutput)
+	return ret0, ret1
+}
+
+// ListLakeFormationOptInsRequest indicates an expected call of ListLakeFormationOptInsRequest
+func (mr *MockLakeFormationAPIMockRecorder) ListLakeFormationOptInsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLakeFormationOptInsRequest", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListLakeFormationOptInsRequest), arg0)
+}
+
+// ListLakeFormationOptInsWithContext mocks base method
+func (m *MockLakeFormationAPI) ListLakeFormationOptInsWithContext(arg0 context.Context, arg1 *lakeformation.ListLakeFormationOptInsInput, arg2 ...request.Option) (*lakeformation.ListLakeFormationOptInsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLakeFormationOptInsWithContext", varargs...)
+	ret0, _ := ret[0].(*lakeformation.ListLakeFormationOptInsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLakeFormationOptInsWithContext indicates an expected call of ListLakeFormationOptInsWithContext
+func (mr *MockLakeFormationAPIMockRecorder) ListLakeFormationOptInsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLakeFormationOptInsWithContext", reflect.TypeOf((*MockLakeFormationAPI)(nil).ListLakeFormationOptInsWithContext), varargs...)
 }
 
 // ListPermissions mocks base method

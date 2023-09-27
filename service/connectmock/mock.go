@@ -7408,6 +7408,89 @@ func (mr *MockConnectAPIMockRecorder) ListSecurityKeysWithContext(arg0, arg1 int
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityKeysWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityKeysWithContext), varargs...)
 }
 
+// ListSecurityProfileApplications mocks base method
+func (m *MockConnectAPI) ListSecurityProfileApplications(arg0 *connect.ListSecurityProfileApplicationsInput) (*connect.ListSecurityProfileApplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSecurityProfileApplications", arg0)
+	ret0, _ := ret[0].(*connect.ListSecurityProfileApplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSecurityProfileApplications indicates an expected call of ListSecurityProfileApplications
+func (mr *MockConnectAPIMockRecorder) ListSecurityProfileApplications(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfileApplications", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityProfileApplications), arg0)
+}
+
+// ListSecurityProfileApplicationsPages mocks base method
+func (m *MockConnectAPI) ListSecurityProfileApplicationsPages(arg0 *connect.ListSecurityProfileApplicationsInput, arg1 func(*connect.ListSecurityProfileApplicationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSecurityProfileApplicationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSecurityProfileApplicationsPages indicates an expected call of ListSecurityProfileApplicationsPages
+func (mr *MockConnectAPIMockRecorder) ListSecurityProfileApplicationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfileApplicationsPages", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityProfileApplicationsPages), arg0, arg1)
+}
+
+// ListSecurityProfileApplicationsPagesWithContext mocks base method
+func (m *MockConnectAPI) ListSecurityProfileApplicationsPagesWithContext(arg0 context.Context, arg1 *connect.ListSecurityProfileApplicationsInput, arg2 func(*connect.ListSecurityProfileApplicationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSecurityProfileApplicationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSecurityProfileApplicationsPagesWithContext indicates an expected call of ListSecurityProfileApplicationsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListSecurityProfileApplicationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfileApplicationsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityProfileApplicationsPagesWithContext), varargs...)
+}
+
+// ListSecurityProfileApplicationsRequest mocks base method
+func (m *MockConnectAPI) ListSecurityProfileApplicationsRequest(arg0 *connect.ListSecurityProfileApplicationsInput) (*request.Request, *connect.ListSecurityProfileApplicationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSecurityProfileApplicationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListSecurityProfileApplicationsOutput)
+	return ret0, ret1
+}
+
+// ListSecurityProfileApplicationsRequest indicates an expected call of ListSecurityProfileApplicationsRequest
+func (mr *MockConnectAPIMockRecorder) ListSecurityProfileApplicationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfileApplicationsRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityProfileApplicationsRequest), arg0)
+}
+
+// ListSecurityProfileApplicationsWithContext mocks base method
+func (m *MockConnectAPI) ListSecurityProfileApplicationsWithContext(arg0 context.Context, arg1 *connect.ListSecurityProfileApplicationsInput, arg2 ...request.Option) (*connect.ListSecurityProfileApplicationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSecurityProfileApplicationsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListSecurityProfileApplicationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListSecurityProfileApplicationsWithContext indicates an expected call of ListSecurityProfileApplicationsWithContext
+func (mr *MockConnectAPIMockRecorder) ListSecurityProfileApplicationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSecurityProfileApplicationsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListSecurityProfileApplicationsWithContext), varargs...)
+}
+
 // ListSecurityProfilePermissions mocks base method
 func (m *MockConnectAPI) ListSecurityProfilePermissions(arg0 *connect.ListSecurityProfilePermissionsInput) (*connect.ListSecurityProfilePermissionsOutput, error) {
 	m.ctrl.T.Helper()
