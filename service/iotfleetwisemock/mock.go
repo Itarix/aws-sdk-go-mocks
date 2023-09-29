@@ -935,6 +935,56 @@ func (mr *MockIoTFleetWiseAPIMockRecorder) GetDecoderManifestWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDecoderManifestWithContext", reflect.TypeOf((*MockIoTFleetWiseAPI)(nil).GetDecoderManifestWithContext), varargs...)
 }
 
+// GetEncryptionConfiguration mocks base method
+func (m *MockIoTFleetWiseAPI) GetEncryptionConfiguration(arg0 *iotfleetwise.GetEncryptionConfigurationInput) (*iotfleetwise.GetEncryptionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEncryptionConfiguration", arg0)
+	ret0, _ := ret[0].(*iotfleetwise.GetEncryptionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEncryptionConfiguration indicates an expected call of GetEncryptionConfiguration
+func (mr *MockIoTFleetWiseAPIMockRecorder) GetEncryptionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEncryptionConfiguration", reflect.TypeOf((*MockIoTFleetWiseAPI)(nil).GetEncryptionConfiguration), arg0)
+}
+
+// GetEncryptionConfigurationRequest mocks base method
+func (m *MockIoTFleetWiseAPI) GetEncryptionConfigurationRequest(arg0 *iotfleetwise.GetEncryptionConfigurationInput) (*request.Request, *iotfleetwise.GetEncryptionConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEncryptionConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotfleetwise.GetEncryptionConfigurationOutput)
+	return ret0, ret1
+}
+
+// GetEncryptionConfigurationRequest indicates an expected call of GetEncryptionConfigurationRequest
+func (mr *MockIoTFleetWiseAPIMockRecorder) GetEncryptionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEncryptionConfigurationRequest", reflect.TypeOf((*MockIoTFleetWiseAPI)(nil).GetEncryptionConfigurationRequest), arg0)
+}
+
+// GetEncryptionConfigurationWithContext mocks base method
+func (m *MockIoTFleetWiseAPI) GetEncryptionConfigurationWithContext(arg0 context.Context, arg1 *iotfleetwise.GetEncryptionConfigurationInput, arg2 ...request.Option) (*iotfleetwise.GetEncryptionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetEncryptionConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iotfleetwise.GetEncryptionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEncryptionConfigurationWithContext indicates an expected call of GetEncryptionConfigurationWithContext
+func (mr *MockIoTFleetWiseAPIMockRecorder) GetEncryptionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEncryptionConfigurationWithContext", reflect.TypeOf((*MockIoTFleetWiseAPI)(nil).GetEncryptionConfigurationWithContext), varargs...)
+}
+
 // GetFleet mocks base method
 func (m *MockIoTFleetWiseAPI) GetFleet(arg0 *iotfleetwise.GetFleetInput) (*iotfleetwise.GetFleetOutput, error) {
 	m.ctrl.T.Helper()
@@ -2462,6 +2512,56 @@ func (mr *MockIoTFleetWiseAPIMockRecorder) ListVehiclesWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListVehiclesWithContext", reflect.TypeOf((*MockIoTFleetWiseAPI)(nil).ListVehiclesWithContext), varargs...)
+}
+
+// PutEncryptionConfiguration mocks base method
+func (m *MockIoTFleetWiseAPI) PutEncryptionConfiguration(arg0 *iotfleetwise.PutEncryptionConfigurationInput) (*iotfleetwise.PutEncryptionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutEncryptionConfiguration", arg0)
+	ret0, _ := ret[0].(*iotfleetwise.PutEncryptionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutEncryptionConfiguration indicates an expected call of PutEncryptionConfiguration
+func (mr *MockIoTFleetWiseAPIMockRecorder) PutEncryptionConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEncryptionConfiguration", reflect.TypeOf((*MockIoTFleetWiseAPI)(nil).PutEncryptionConfiguration), arg0)
+}
+
+// PutEncryptionConfigurationRequest mocks base method
+func (m *MockIoTFleetWiseAPI) PutEncryptionConfigurationRequest(arg0 *iotfleetwise.PutEncryptionConfigurationInput) (*request.Request, *iotfleetwise.PutEncryptionConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutEncryptionConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*iotfleetwise.PutEncryptionConfigurationOutput)
+	return ret0, ret1
+}
+
+// PutEncryptionConfigurationRequest indicates an expected call of PutEncryptionConfigurationRequest
+func (mr *MockIoTFleetWiseAPIMockRecorder) PutEncryptionConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEncryptionConfigurationRequest", reflect.TypeOf((*MockIoTFleetWiseAPI)(nil).PutEncryptionConfigurationRequest), arg0)
+}
+
+// PutEncryptionConfigurationWithContext mocks base method
+func (m *MockIoTFleetWiseAPI) PutEncryptionConfigurationWithContext(arg0 context.Context, arg1 *iotfleetwise.PutEncryptionConfigurationInput, arg2 ...request.Option) (*iotfleetwise.PutEncryptionConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutEncryptionConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*iotfleetwise.PutEncryptionConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutEncryptionConfigurationWithContext indicates an expected call of PutEncryptionConfigurationWithContext
+func (mr *MockIoTFleetWiseAPIMockRecorder) PutEncryptionConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutEncryptionConfigurationWithContext", reflect.TypeOf((*MockIoTFleetWiseAPI)(nil).PutEncryptionConfigurationWithContext), varargs...)
 }
 
 // PutLoggingOptions mocks base method
