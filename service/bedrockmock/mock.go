@@ -85,6 +85,56 @@ func (mr *MockBedrockAPIMockRecorder) CreateModelCustomizationJobWithContext(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateModelCustomizationJobWithContext", reflect.TypeOf((*MockBedrockAPI)(nil).CreateModelCustomizationJobWithContext), varargs...)
 }
 
+// CreateProvisionedModelThroughput mocks base method
+func (m *MockBedrockAPI) CreateProvisionedModelThroughput(arg0 *bedrock.CreateProvisionedModelThroughputInput) (*bedrock.CreateProvisionedModelThroughputOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProvisionedModelThroughput", arg0)
+	ret0, _ := ret[0].(*bedrock.CreateProvisionedModelThroughputOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProvisionedModelThroughput indicates an expected call of CreateProvisionedModelThroughput
+func (mr *MockBedrockAPIMockRecorder) CreateProvisionedModelThroughput(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProvisionedModelThroughput", reflect.TypeOf((*MockBedrockAPI)(nil).CreateProvisionedModelThroughput), arg0)
+}
+
+// CreateProvisionedModelThroughputRequest mocks base method
+func (m *MockBedrockAPI) CreateProvisionedModelThroughputRequest(arg0 *bedrock.CreateProvisionedModelThroughputInput) (*request.Request, *bedrock.CreateProvisionedModelThroughputOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateProvisionedModelThroughputRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrock.CreateProvisionedModelThroughputOutput)
+	return ret0, ret1
+}
+
+// CreateProvisionedModelThroughputRequest indicates an expected call of CreateProvisionedModelThroughputRequest
+func (mr *MockBedrockAPIMockRecorder) CreateProvisionedModelThroughputRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProvisionedModelThroughputRequest", reflect.TypeOf((*MockBedrockAPI)(nil).CreateProvisionedModelThroughputRequest), arg0)
+}
+
+// CreateProvisionedModelThroughputWithContext mocks base method
+func (m *MockBedrockAPI) CreateProvisionedModelThroughputWithContext(arg0 context.Context, arg1 *bedrock.CreateProvisionedModelThroughputInput, arg2 ...request.Option) (*bedrock.CreateProvisionedModelThroughputOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateProvisionedModelThroughputWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrock.CreateProvisionedModelThroughputOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateProvisionedModelThroughputWithContext indicates an expected call of CreateProvisionedModelThroughputWithContext
+func (mr *MockBedrockAPIMockRecorder) CreateProvisionedModelThroughputWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateProvisionedModelThroughputWithContext", reflect.TypeOf((*MockBedrockAPI)(nil).CreateProvisionedModelThroughputWithContext), varargs...)
+}
+
 // DeleteCustomModel mocks base method
 func (m *MockBedrockAPI) DeleteCustomModel(arg0 *bedrock.DeleteCustomModelInput) (*bedrock.DeleteCustomModelOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +233,56 @@ func (mr *MockBedrockAPIMockRecorder) DeleteModelInvocationLoggingConfigurationW
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteModelInvocationLoggingConfigurationWithContext", reflect.TypeOf((*MockBedrockAPI)(nil).DeleteModelInvocationLoggingConfigurationWithContext), varargs...)
+}
+
+// DeleteProvisionedModelThroughput mocks base method
+func (m *MockBedrockAPI) DeleteProvisionedModelThroughput(arg0 *bedrock.DeleteProvisionedModelThroughputInput) (*bedrock.DeleteProvisionedModelThroughputOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProvisionedModelThroughput", arg0)
+	ret0, _ := ret[0].(*bedrock.DeleteProvisionedModelThroughputOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProvisionedModelThroughput indicates an expected call of DeleteProvisionedModelThroughput
+func (mr *MockBedrockAPIMockRecorder) DeleteProvisionedModelThroughput(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProvisionedModelThroughput", reflect.TypeOf((*MockBedrockAPI)(nil).DeleteProvisionedModelThroughput), arg0)
+}
+
+// DeleteProvisionedModelThroughputRequest mocks base method
+func (m *MockBedrockAPI) DeleteProvisionedModelThroughputRequest(arg0 *bedrock.DeleteProvisionedModelThroughputInput) (*request.Request, *bedrock.DeleteProvisionedModelThroughputOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteProvisionedModelThroughputRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrock.DeleteProvisionedModelThroughputOutput)
+	return ret0, ret1
+}
+
+// DeleteProvisionedModelThroughputRequest indicates an expected call of DeleteProvisionedModelThroughputRequest
+func (mr *MockBedrockAPIMockRecorder) DeleteProvisionedModelThroughputRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProvisionedModelThroughputRequest", reflect.TypeOf((*MockBedrockAPI)(nil).DeleteProvisionedModelThroughputRequest), arg0)
+}
+
+// DeleteProvisionedModelThroughputWithContext mocks base method
+func (m *MockBedrockAPI) DeleteProvisionedModelThroughputWithContext(arg0 context.Context, arg1 *bedrock.DeleteProvisionedModelThroughputInput, arg2 ...request.Option) (*bedrock.DeleteProvisionedModelThroughputOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteProvisionedModelThroughputWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrock.DeleteProvisionedModelThroughputOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteProvisionedModelThroughputWithContext indicates an expected call of DeleteProvisionedModelThroughputWithContext
+func (mr *MockBedrockAPIMockRecorder) DeleteProvisionedModelThroughputWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteProvisionedModelThroughputWithContext", reflect.TypeOf((*MockBedrockAPI)(nil).DeleteProvisionedModelThroughputWithContext), varargs...)
 }
 
 // GetCustomModel mocks base method
@@ -383,6 +483,56 @@ func (mr *MockBedrockAPIMockRecorder) GetModelInvocationLoggingConfigurationWith
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetModelInvocationLoggingConfigurationWithContext", reflect.TypeOf((*MockBedrockAPI)(nil).GetModelInvocationLoggingConfigurationWithContext), varargs...)
+}
+
+// GetProvisionedModelThroughput mocks base method
+func (m *MockBedrockAPI) GetProvisionedModelThroughput(arg0 *bedrock.GetProvisionedModelThroughputInput) (*bedrock.GetProvisionedModelThroughputOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetProvisionedModelThroughput", arg0)
+	ret0, _ := ret[0].(*bedrock.GetProvisionedModelThroughputOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetProvisionedModelThroughput indicates an expected call of GetProvisionedModelThroughput
+func (mr *MockBedrockAPIMockRecorder) GetProvisionedModelThroughput(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProvisionedModelThroughput", reflect.TypeOf((*MockBedrockAPI)(nil).GetProvisionedModelThroughput), arg0)
+}
+
+// GetProvisionedModelThroughputRequest mocks base method
+func (m *MockBedrockAPI) GetProvisionedModelThroughputRequest(arg0 *bedrock.GetProvisionedModelThroughputInput) (*request.Request, *bedrock.GetProvisionedModelThroughputOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetProvisionedModelThroughputRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrock.GetProvisionedModelThroughputOutput)
+	return ret0, ret1
+}
+
+// GetProvisionedModelThroughputRequest indicates an expected call of GetProvisionedModelThroughputRequest
+func (mr *MockBedrockAPIMockRecorder) GetProvisionedModelThroughputRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProvisionedModelThroughputRequest", reflect.TypeOf((*MockBedrockAPI)(nil).GetProvisionedModelThroughputRequest), arg0)
+}
+
+// GetProvisionedModelThroughputWithContext mocks base method
+func (m *MockBedrockAPI) GetProvisionedModelThroughputWithContext(arg0 context.Context, arg1 *bedrock.GetProvisionedModelThroughputInput, arg2 ...request.Option) (*bedrock.GetProvisionedModelThroughputOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetProvisionedModelThroughputWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrock.GetProvisionedModelThroughputOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetProvisionedModelThroughputWithContext indicates an expected call of GetProvisionedModelThroughputWithContext
+func (mr *MockBedrockAPIMockRecorder) GetProvisionedModelThroughputWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProvisionedModelThroughputWithContext", reflect.TypeOf((*MockBedrockAPI)(nil).GetProvisionedModelThroughputWithContext), varargs...)
 }
 
 // ListCustomModels mocks base method
@@ -599,6 +749,89 @@ func (mr *MockBedrockAPIMockRecorder) ListModelCustomizationJobsWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListModelCustomizationJobsWithContext", reflect.TypeOf((*MockBedrockAPI)(nil).ListModelCustomizationJobsWithContext), varargs...)
+}
+
+// ListProvisionedModelThroughputs mocks base method
+func (m *MockBedrockAPI) ListProvisionedModelThroughputs(arg0 *bedrock.ListProvisionedModelThroughputsInput) (*bedrock.ListProvisionedModelThroughputsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProvisionedModelThroughputs", arg0)
+	ret0, _ := ret[0].(*bedrock.ListProvisionedModelThroughputsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProvisionedModelThroughputs indicates an expected call of ListProvisionedModelThroughputs
+func (mr *MockBedrockAPIMockRecorder) ListProvisionedModelThroughputs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisionedModelThroughputs", reflect.TypeOf((*MockBedrockAPI)(nil).ListProvisionedModelThroughputs), arg0)
+}
+
+// ListProvisionedModelThroughputsPages mocks base method
+func (m *MockBedrockAPI) ListProvisionedModelThroughputsPages(arg0 *bedrock.ListProvisionedModelThroughputsInput, arg1 func(*bedrock.ListProvisionedModelThroughputsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProvisionedModelThroughputsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProvisionedModelThroughputsPages indicates an expected call of ListProvisionedModelThroughputsPages
+func (mr *MockBedrockAPIMockRecorder) ListProvisionedModelThroughputsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisionedModelThroughputsPages", reflect.TypeOf((*MockBedrockAPI)(nil).ListProvisionedModelThroughputsPages), arg0, arg1)
+}
+
+// ListProvisionedModelThroughputsPagesWithContext mocks base method
+func (m *MockBedrockAPI) ListProvisionedModelThroughputsPagesWithContext(arg0 context.Context, arg1 *bedrock.ListProvisionedModelThroughputsInput, arg2 func(*bedrock.ListProvisionedModelThroughputsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProvisionedModelThroughputsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProvisionedModelThroughputsPagesWithContext indicates an expected call of ListProvisionedModelThroughputsPagesWithContext
+func (mr *MockBedrockAPIMockRecorder) ListProvisionedModelThroughputsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisionedModelThroughputsPagesWithContext", reflect.TypeOf((*MockBedrockAPI)(nil).ListProvisionedModelThroughputsPagesWithContext), varargs...)
+}
+
+// ListProvisionedModelThroughputsRequest mocks base method
+func (m *MockBedrockAPI) ListProvisionedModelThroughputsRequest(arg0 *bedrock.ListProvisionedModelThroughputsInput) (*request.Request, *bedrock.ListProvisionedModelThroughputsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProvisionedModelThroughputsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrock.ListProvisionedModelThroughputsOutput)
+	return ret0, ret1
+}
+
+// ListProvisionedModelThroughputsRequest indicates an expected call of ListProvisionedModelThroughputsRequest
+func (mr *MockBedrockAPIMockRecorder) ListProvisionedModelThroughputsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisionedModelThroughputsRequest", reflect.TypeOf((*MockBedrockAPI)(nil).ListProvisionedModelThroughputsRequest), arg0)
+}
+
+// ListProvisionedModelThroughputsWithContext mocks base method
+func (m *MockBedrockAPI) ListProvisionedModelThroughputsWithContext(arg0 context.Context, arg1 *bedrock.ListProvisionedModelThroughputsInput, arg2 ...request.Option) (*bedrock.ListProvisionedModelThroughputsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProvisionedModelThroughputsWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrock.ListProvisionedModelThroughputsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProvisionedModelThroughputsWithContext indicates an expected call of ListProvisionedModelThroughputsWithContext
+func (mr *MockBedrockAPIMockRecorder) ListProvisionedModelThroughputsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProvisionedModelThroughputsWithContext", reflect.TypeOf((*MockBedrockAPI)(nil).ListProvisionedModelThroughputsWithContext), varargs...)
 }
 
 // ListTagsForResource mocks base method
@@ -849,4 +1082,54 @@ func (mr *MockBedrockAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockBedrockAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateProvisionedModelThroughput mocks base method
+func (m *MockBedrockAPI) UpdateProvisionedModelThroughput(arg0 *bedrock.UpdateProvisionedModelThroughputInput) (*bedrock.UpdateProvisionedModelThroughputOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProvisionedModelThroughput", arg0)
+	ret0, _ := ret[0].(*bedrock.UpdateProvisionedModelThroughputOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProvisionedModelThroughput indicates an expected call of UpdateProvisionedModelThroughput
+func (mr *MockBedrockAPIMockRecorder) UpdateProvisionedModelThroughput(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProvisionedModelThroughput", reflect.TypeOf((*MockBedrockAPI)(nil).UpdateProvisionedModelThroughput), arg0)
+}
+
+// UpdateProvisionedModelThroughputRequest mocks base method
+func (m *MockBedrockAPI) UpdateProvisionedModelThroughputRequest(arg0 *bedrock.UpdateProvisionedModelThroughputInput) (*request.Request, *bedrock.UpdateProvisionedModelThroughputOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateProvisionedModelThroughputRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrock.UpdateProvisionedModelThroughputOutput)
+	return ret0, ret1
+}
+
+// UpdateProvisionedModelThroughputRequest indicates an expected call of UpdateProvisionedModelThroughputRequest
+func (mr *MockBedrockAPIMockRecorder) UpdateProvisionedModelThroughputRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProvisionedModelThroughputRequest", reflect.TypeOf((*MockBedrockAPI)(nil).UpdateProvisionedModelThroughputRequest), arg0)
+}
+
+// UpdateProvisionedModelThroughputWithContext mocks base method
+func (m *MockBedrockAPI) UpdateProvisionedModelThroughputWithContext(arg0 context.Context, arg1 *bedrock.UpdateProvisionedModelThroughputInput, arg2 ...request.Option) (*bedrock.UpdateProvisionedModelThroughputOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateProvisionedModelThroughputWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrock.UpdateProvisionedModelThroughputOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateProvisionedModelThroughputWithContext indicates an expected call of UpdateProvisionedModelThroughputWithContext
+func (mr *MockBedrockAPIMockRecorder) UpdateProvisionedModelThroughputWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateProvisionedModelThroughputWithContext", reflect.TypeOf((*MockBedrockAPI)(nil).UpdateProvisionedModelThroughputWithContext), varargs...)
 }
