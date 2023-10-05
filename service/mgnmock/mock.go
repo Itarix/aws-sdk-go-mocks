@@ -335,6 +335,56 @@ func (mr *MockMgnAPIMockRecorder) CreateApplicationWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateApplicationWithContext", reflect.TypeOf((*MockMgnAPI)(nil).CreateApplicationWithContext), varargs...)
 }
 
+// CreateConnector mocks base method
+func (m *MockMgnAPI) CreateConnector(arg0 *mgn.CreateConnectorInput) (*mgn.CreateConnectorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnector", arg0)
+	ret0, _ := ret[0].(*mgn.CreateConnectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnector indicates an expected call of CreateConnector
+func (mr *MockMgnAPIMockRecorder) CreateConnector(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnector", reflect.TypeOf((*MockMgnAPI)(nil).CreateConnector), arg0)
+}
+
+// CreateConnectorRequest mocks base method
+func (m *MockMgnAPI) CreateConnectorRequest(arg0 *mgn.CreateConnectorInput) (*request.Request, *mgn.CreateConnectorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConnectorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.CreateConnectorOutput)
+	return ret0, ret1
+}
+
+// CreateConnectorRequest indicates an expected call of CreateConnectorRequest
+func (mr *MockMgnAPIMockRecorder) CreateConnectorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectorRequest", reflect.TypeOf((*MockMgnAPI)(nil).CreateConnectorRequest), arg0)
+}
+
+// CreateConnectorWithContext mocks base method
+func (m *MockMgnAPI) CreateConnectorWithContext(arg0 context.Context, arg1 *mgn.CreateConnectorInput, arg2 ...request.Option) (*mgn.CreateConnectorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateConnectorWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.CreateConnectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConnectorWithContext indicates an expected call of CreateConnectorWithContext
+func (mr *MockMgnAPIMockRecorder) CreateConnectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConnectorWithContext", reflect.TypeOf((*MockMgnAPI)(nil).CreateConnectorWithContext), varargs...)
+}
+
 // CreateLaunchConfigurationTemplate mocks base method
 func (m *MockMgnAPI) CreateLaunchConfigurationTemplate(arg0 *mgn.CreateLaunchConfigurationTemplateInput) (*mgn.CreateLaunchConfigurationTemplateOutput, error) {
 	m.ctrl.T.Helper()
@@ -533,6 +583,56 @@ func (mr *MockMgnAPIMockRecorder) DeleteApplicationWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteApplicationWithContext", reflect.TypeOf((*MockMgnAPI)(nil).DeleteApplicationWithContext), varargs...)
+}
+
+// DeleteConnector mocks base method
+func (m *MockMgnAPI) DeleteConnector(arg0 *mgn.DeleteConnectorInput) (*mgn.DeleteConnectorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnector", arg0)
+	ret0, _ := ret[0].(*mgn.DeleteConnectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnector indicates an expected call of DeleteConnector
+func (mr *MockMgnAPIMockRecorder) DeleteConnector(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnector", reflect.TypeOf((*MockMgnAPI)(nil).DeleteConnector), arg0)
+}
+
+// DeleteConnectorRequest mocks base method
+func (m *MockMgnAPI) DeleteConnectorRequest(arg0 *mgn.DeleteConnectorInput) (*request.Request, *mgn.DeleteConnectorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConnectorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.DeleteConnectorOutput)
+	return ret0, ret1
+}
+
+// DeleteConnectorRequest indicates an expected call of DeleteConnectorRequest
+func (mr *MockMgnAPIMockRecorder) DeleteConnectorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectorRequest", reflect.TypeOf((*MockMgnAPI)(nil).DeleteConnectorRequest), arg0)
+}
+
+// DeleteConnectorWithContext mocks base method
+func (m *MockMgnAPI) DeleteConnectorWithContext(arg0 context.Context, arg1 *mgn.DeleteConnectorInput, arg2 ...request.Option) (*mgn.DeleteConnectorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteConnectorWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.DeleteConnectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConnectorWithContext indicates an expected call of DeleteConnectorWithContext
+func (mr *MockMgnAPIMockRecorder) DeleteConnectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConnectorWithContext", reflect.TypeOf((*MockMgnAPI)(nil).DeleteConnectorWithContext), varargs...)
 }
 
 // DeleteJob mocks base method
@@ -1764,6 +1864,89 @@ func (mr *MockMgnAPIMockRecorder) ListApplicationsWithContext(arg0, arg1 interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListApplicationsWithContext), varargs...)
+}
+
+// ListConnectors mocks base method
+func (m *MockMgnAPI) ListConnectors(arg0 *mgn.ListConnectorsInput) (*mgn.ListConnectorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnectors", arg0)
+	ret0, _ := ret[0].(*mgn.ListConnectorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConnectors indicates an expected call of ListConnectors
+func (mr *MockMgnAPIMockRecorder) ListConnectors(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectors", reflect.TypeOf((*MockMgnAPI)(nil).ListConnectors), arg0)
+}
+
+// ListConnectorsPages mocks base method
+func (m *MockMgnAPI) ListConnectorsPages(arg0 *mgn.ListConnectorsInput, arg1 func(*mgn.ListConnectorsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnectorsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListConnectorsPages indicates an expected call of ListConnectorsPages
+func (mr *MockMgnAPIMockRecorder) ListConnectorsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectorsPages", reflect.TypeOf((*MockMgnAPI)(nil).ListConnectorsPages), arg0, arg1)
+}
+
+// ListConnectorsPagesWithContext mocks base method
+func (m *MockMgnAPI) ListConnectorsPagesWithContext(arg0 context.Context, arg1 *mgn.ListConnectorsInput, arg2 func(*mgn.ListConnectorsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListConnectorsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListConnectorsPagesWithContext indicates an expected call of ListConnectorsPagesWithContext
+func (mr *MockMgnAPIMockRecorder) ListConnectorsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectorsPagesWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListConnectorsPagesWithContext), varargs...)
+}
+
+// ListConnectorsRequest mocks base method
+func (m *MockMgnAPI) ListConnectorsRequest(arg0 *mgn.ListConnectorsInput) (*request.Request, *mgn.ListConnectorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConnectorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.ListConnectorsOutput)
+	return ret0, ret1
+}
+
+// ListConnectorsRequest indicates an expected call of ListConnectorsRequest
+func (mr *MockMgnAPIMockRecorder) ListConnectorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectorsRequest", reflect.TypeOf((*MockMgnAPI)(nil).ListConnectorsRequest), arg0)
+}
+
+// ListConnectorsWithContext mocks base method
+func (m *MockMgnAPI) ListConnectorsWithContext(arg0 context.Context, arg1 *mgn.ListConnectorsInput, arg2 ...request.Option) (*mgn.ListConnectorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListConnectorsWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.ListConnectorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListConnectorsWithContext indicates an expected call of ListConnectorsWithContext
+func (mr *MockMgnAPIMockRecorder) ListConnectorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConnectorsWithContext", reflect.TypeOf((*MockMgnAPI)(nil).ListConnectorsWithContext), varargs...)
 }
 
 // ListExportErrors mocks base method
@@ -3480,6 +3663,56 @@ func (mr *MockMgnAPIMockRecorder) UpdateApplicationWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateApplicationWithContext", reflect.TypeOf((*MockMgnAPI)(nil).UpdateApplicationWithContext), varargs...)
 }
 
+// UpdateConnector mocks base method
+func (m *MockMgnAPI) UpdateConnector(arg0 *mgn.UpdateConnectorInput) (*mgn.UpdateConnectorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnector", arg0)
+	ret0, _ := ret[0].(*mgn.UpdateConnectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnector indicates an expected call of UpdateConnector
+func (mr *MockMgnAPIMockRecorder) UpdateConnector(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnector", reflect.TypeOf((*MockMgnAPI)(nil).UpdateConnector), arg0)
+}
+
+// UpdateConnectorRequest mocks base method
+func (m *MockMgnAPI) UpdateConnectorRequest(arg0 *mgn.UpdateConnectorInput) (*request.Request, *mgn.UpdateConnectorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConnectorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.UpdateConnectorOutput)
+	return ret0, ret1
+}
+
+// UpdateConnectorRequest indicates an expected call of UpdateConnectorRequest
+func (mr *MockMgnAPIMockRecorder) UpdateConnectorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectorRequest", reflect.TypeOf((*MockMgnAPI)(nil).UpdateConnectorRequest), arg0)
+}
+
+// UpdateConnectorWithContext mocks base method
+func (m *MockMgnAPI) UpdateConnectorWithContext(arg0 context.Context, arg1 *mgn.UpdateConnectorInput, arg2 ...request.Option) (*mgn.UpdateConnectorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateConnectorWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.UpdateConnectorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConnectorWithContext indicates an expected call of UpdateConnectorWithContext
+func (mr *MockMgnAPIMockRecorder) UpdateConnectorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConnectorWithContext", reflect.TypeOf((*MockMgnAPI)(nil).UpdateConnectorWithContext), varargs...)
+}
+
 // UpdateLaunchConfiguration mocks base method
 func (m *MockMgnAPI) UpdateLaunchConfiguration(arg0 *mgn.UpdateLaunchConfigurationInput) (*mgn.UpdateLaunchConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -3680,6 +3913,21 @@ func (mr *MockMgnAPIMockRecorder) UpdateReplicationConfigurationWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateReplicationConfigurationWithContext", reflect.TypeOf((*MockMgnAPI)(nil).UpdateReplicationConfigurationWithContext), varargs...)
 }
 
+// UpdateSourceServer mocks base method
+func (m *MockMgnAPI) UpdateSourceServer(arg0 *mgn.UpdateSourceServerInput) (*mgn.UpdateSourceServerOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSourceServer", arg0)
+	ret0, _ := ret[0].(*mgn.UpdateSourceServerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSourceServer indicates an expected call of UpdateSourceServer
+func (mr *MockMgnAPIMockRecorder) UpdateSourceServer(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSourceServer", reflect.TypeOf((*MockMgnAPI)(nil).UpdateSourceServer), arg0)
+}
+
 // UpdateSourceServerReplicationType mocks base method
 func (m *MockMgnAPI) UpdateSourceServerReplicationType(arg0 *mgn.UpdateSourceServerReplicationTypeInput) (*mgn.UpdateSourceServerReplicationTypeOutput, error) {
 	m.ctrl.T.Helper()
@@ -3728,6 +3976,41 @@ func (mr *MockMgnAPIMockRecorder) UpdateSourceServerReplicationTypeWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSourceServerReplicationTypeWithContext", reflect.TypeOf((*MockMgnAPI)(nil).UpdateSourceServerReplicationTypeWithContext), varargs...)
+}
+
+// UpdateSourceServerRequest mocks base method
+func (m *MockMgnAPI) UpdateSourceServerRequest(arg0 *mgn.UpdateSourceServerInput) (*request.Request, *mgn.UpdateSourceServerOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSourceServerRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*mgn.UpdateSourceServerOutput)
+	return ret0, ret1
+}
+
+// UpdateSourceServerRequest indicates an expected call of UpdateSourceServerRequest
+func (mr *MockMgnAPIMockRecorder) UpdateSourceServerRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSourceServerRequest", reflect.TypeOf((*MockMgnAPI)(nil).UpdateSourceServerRequest), arg0)
+}
+
+// UpdateSourceServerWithContext mocks base method
+func (m *MockMgnAPI) UpdateSourceServerWithContext(arg0 context.Context, arg1 *mgn.UpdateSourceServerInput, arg2 ...request.Option) (*mgn.UpdateSourceServerOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSourceServerWithContext", varargs...)
+	ret0, _ := ret[0].(*mgn.UpdateSourceServerOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSourceServerWithContext indicates an expected call of UpdateSourceServerWithContext
+func (mr *MockMgnAPIMockRecorder) UpdateSourceServerWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSourceServerWithContext", reflect.TypeOf((*MockMgnAPI)(nil).UpdateSourceServerWithContext), varargs...)
 }
 
 // UpdateWave mocks base method
