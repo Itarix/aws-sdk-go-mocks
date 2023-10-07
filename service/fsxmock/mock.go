@@ -2015,6 +2015,56 @@ func (mr *MockFSxAPIMockRecorder) RestoreVolumeFromSnapshotWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RestoreVolumeFromSnapshotWithContext", reflect.TypeOf((*MockFSxAPI)(nil).RestoreVolumeFromSnapshotWithContext), varargs...)
 }
 
+// StartMisconfiguredStateRecovery mocks base method
+func (m *MockFSxAPI) StartMisconfiguredStateRecovery(arg0 *fsx.StartMisconfiguredStateRecoveryInput) (*fsx.StartMisconfiguredStateRecoveryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMisconfiguredStateRecovery", arg0)
+	ret0, _ := ret[0].(*fsx.StartMisconfiguredStateRecoveryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMisconfiguredStateRecovery indicates an expected call of StartMisconfiguredStateRecovery
+func (mr *MockFSxAPIMockRecorder) StartMisconfiguredStateRecovery(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMisconfiguredStateRecovery", reflect.TypeOf((*MockFSxAPI)(nil).StartMisconfiguredStateRecovery), arg0)
+}
+
+// StartMisconfiguredStateRecoveryRequest mocks base method
+func (m *MockFSxAPI) StartMisconfiguredStateRecoveryRequest(arg0 *fsx.StartMisconfiguredStateRecoveryInput) (*request.Request, *fsx.StartMisconfiguredStateRecoveryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMisconfiguredStateRecoveryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*fsx.StartMisconfiguredStateRecoveryOutput)
+	return ret0, ret1
+}
+
+// StartMisconfiguredStateRecoveryRequest indicates an expected call of StartMisconfiguredStateRecoveryRequest
+func (mr *MockFSxAPIMockRecorder) StartMisconfiguredStateRecoveryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMisconfiguredStateRecoveryRequest", reflect.TypeOf((*MockFSxAPI)(nil).StartMisconfiguredStateRecoveryRequest), arg0)
+}
+
+// StartMisconfiguredStateRecoveryWithContext mocks base method
+func (m *MockFSxAPI) StartMisconfiguredStateRecoveryWithContext(arg0 context.Context, arg1 *fsx.StartMisconfiguredStateRecoveryInput, arg2 ...request.Option) (*fsx.StartMisconfiguredStateRecoveryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartMisconfiguredStateRecoveryWithContext", varargs...)
+	ret0, _ := ret[0].(*fsx.StartMisconfiguredStateRecoveryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMisconfiguredStateRecoveryWithContext indicates an expected call of StartMisconfiguredStateRecoveryWithContext
+func (mr *MockFSxAPIMockRecorder) StartMisconfiguredStateRecoveryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMisconfiguredStateRecoveryWithContext", reflect.TypeOf((*MockFSxAPI)(nil).StartMisconfiguredStateRecoveryWithContext), varargs...)
+}
+
 // TagResource mocks base method
 func (m *MockFSxAPI) TagResource(arg0 *fsx.TagResourceInput) (*fsx.TagResourceOutput, error) {
 	m.ctrl.T.Helper()
