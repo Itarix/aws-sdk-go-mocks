@@ -185,6 +185,206 @@ func (mr *MockTextractAPIMockRecorder) AnalyzeIDWithContext(arg0, arg1 interface
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AnalyzeIDWithContext", reflect.TypeOf((*MockTextractAPI)(nil).AnalyzeIDWithContext), varargs...)
 }
 
+// CreateAdapter mocks base method
+func (m *MockTextractAPI) CreateAdapter(arg0 *textract.CreateAdapterInput) (*textract.CreateAdapterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAdapter", arg0)
+	ret0, _ := ret[0].(*textract.CreateAdapterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAdapter indicates an expected call of CreateAdapter
+func (mr *MockTextractAPIMockRecorder) CreateAdapter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAdapter", reflect.TypeOf((*MockTextractAPI)(nil).CreateAdapter), arg0)
+}
+
+// CreateAdapterRequest mocks base method
+func (m *MockTextractAPI) CreateAdapterRequest(arg0 *textract.CreateAdapterInput) (*request.Request, *textract.CreateAdapterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAdapterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.CreateAdapterOutput)
+	return ret0, ret1
+}
+
+// CreateAdapterRequest indicates an expected call of CreateAdapterRequest
+func (mr *MockTextractAPIMockRecorder) CreateAdapterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAdapterRequest", reflect.TypeOf((*MockTextractAPI)(nil).CreateAdapterRequest), arg0)
+}
+
+// CreateAdapterVersion mocks base method
+func (m *MockTextractAPI) CreateAdapterVersion(arg0 *textract.CreateAdapterVersionInput) (*textract.CreateAdapterVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAdapterVersion", arg0)
+	ret0, _ := ret[0].(*textract.CreateAdapterVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAdapterVersion indicates an expected call of CreateAdapterVersion
+func (mr *MockTextractAPIMockRecorder) CreateAdapterVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAdapterVersion", reflect.TypeOf((*MockTextractAPI)(nil).CreateAdapterVersion), arg0)
+}
+
+// CreateAdapterVersionRequest mocks base method
+func (m *MockTextractAPI) CreateAdapterVersionRequest(arg0 *textract.CreateAdapterVersionInput) (*request.Request, *textract.CreateAdapterVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAdapterVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.CreateAdapterVersionOutput)
+	return ret0, ret1
+}
+
+// CreateAdapterVersionRequest indicates an expected call of CreateAdapterVersionRequest
+func (mr *MockTextractAPIMockRecorder) CreateAdapterVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAdapterVersionRequest", reflect.TypeOf((*MockTextractAPI)(nil).CreateAdapterVersionRequest), arg0)
+}
+
+// CreateAdapterVersionWithContext mocks base method
+func (m *MockTextractAPI) CreateAdapterVersionWithContext(arg0 context.Context, arg1 *textract.CreateAdapterVersionInput, arg2 ...request.Option) (*textract.CreateAdapterVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAdapterVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.CreateAdapterVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAdapterVersionWithContext indicates an expected call of CreateAdapterVersionWithContext
+func (mr *MockTextractAPIMockRecorder) CreateAdapterVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAdapterVersionWithContext", reflect.TypeOf((*MockTextractAPI)(nil).CreateAdapterVersionWithContext), varargs...)
+}
+
+// CreateAdapterWithContext mocks base method
+func (m *MockTextractAPI) CreateAdapterWithContext(arg0 context.Context, arg1 *textract.CreateAdapterInput, arg2 ...request.Option) (*textract.CreateAdapterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAdapterWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.CreateAdapterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAdapterWithContext indicates an expected call of CreateAdapterWithContext
+func (mr *MockTextractAPIMockRecorder) CreateAdapterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAdapterWithContext", reflect.TypeOf((*MockTextractAPI)(nil).CreateAdapterWithContext), varargs...)
+}
+
+// DeleteAdapter mocks base method
+func (m *MockTextractAPI) DeleteAdapter(arg0 *textract.DeleteAdapterInput) (*textract.DeleteAdapterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAdapter", arg0)
+	ret0, _ := ret[0].(*textract.DeleteAdapterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAdapter indicates an expected call of DeleteAdapter
+func (mr *MockTextractAPIMockRecorder) DeleteAdapter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAdapter", reflect.TypeOf((*MockTextractAPI)(nil).DeleteAdapter), arg0)
+}
+
+// DeleteAdapterRequest mocks base method
+func (m *MockTextractAPI) DeleteAdapterRequest(arg0 *textract.DeleteAdapterInput) (*request.Request, *textract.DeleteAdapterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAdapterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.DeleteAdapterOutput)
+	return ret0, ret1
+}
+
+// DeleteAdapterRequest indicates an expected call of DeleteAdapterRequest
+func (mr *MockTextractAPIMockRecorder) DeleteAdapterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAdapterRequest", reflect.TypeOf((*MockTextractAPI)(nil).DeleteAdapterRequest), arg0)
+}
+
+// DeleteAdapterVersion mocks base method
+func (m *MockTextractAPI) DeleteAdapterVersion(arg0 *textract.DeleteAdapterVersionInput) (*textract.DeleteAdapterVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAdapterVersion", arg0)
+	ret0, _ := ret[0].(*textract.DeleteAdapterVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAdapterVersion indicates an expected call of DeleteAdapterVersion
+func (mr *MockTextractAPIMockRecorder) DeleteAdapterVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAdapterVersion", reflect.TypeOf((*MockTextractAPI)(nil).DeleteAdapterVersion), arg0)
+}
+
+// DeleteAdapterVersionRequest mocks base method
+func (m *MockTextractAPI) DeleteAdapterVersionRequest(arg0 *textract.DeleteAdapterVersionInput) (*request.Request, *textract.DeleteAdapterVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAdapterVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.DeleteAdapterVersionOutput)
+	return ret0, ret1
+}
+
+// DeleteAdapterVersionRequest indicates an expected call of DeleteAdapterVersionRequest
+func (mr *MockTextractAPIMockRecorder) DeleteAdapterVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAdapterVersionRequest", reflect.TypeOf((*MockTextractAPI)(nil).DeleteAdapterVersionRequest), arg0)
+}
+
+// DeleteAdapterVersionWithContext mocks base method
+func (m *MockTextractAPI) DeleteAdapterVersionWithContext(arg0 context.Context, arg1 *textract.DeleteAdapterVersionInput, arg2 ...request.Option) (*textract.DeleteAdapterVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAdapterVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.DeleteAdapterVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAdapterVersionWithContext indicates an expected call of DeleteAdapterVersionWithContext
+func (mr *MockTextractAPIMockRecorder) DeleteAdapterVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAdapterVersionWithContext", reflect.TypeOf((*MockTextractAPI)(nil).DeleteAdapterVersionWithContext), varargs...)
+}
+
+// DeleteAdapterWithContext mocks base method
+func (m *MockTextractAPI) DeleteAdapterWithContext(arg0 context.Context, arg1 *textract.DeleteAdapterInput, arg2 ...request.Option) (*textract.DeleteAdapterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAdapterWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.DeleteAdapterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAdapterWithContext indicates an expected call of DeleteAdapterWithContext
+func (mr *MockTextractAPIMockRecorder) DeleteAdapterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAdapterWithContext", reflect.TypeOf((*MockTextractAPI)(nil).DeleteAdapterWithContext), varargs...)
+}
+
 // DetectDocumentText mocks base method
 func (m *MockTextractAPI) DetectDocumentText(arg0 *textract.DetectDocumentTextInput) (*textract.DetectDocumentTextOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +433,106 @@ func (mr *MockTextractAPIMockRecorder) DetectDocumentTextWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DetectDocumentTextWithContext", reflect.TypeOf((*MockTextractAPI)(nil).DetectDocumentTextWithContext), varargs...)
+}
+
+// GetAdapter mocks base method
+func (m *MockTextractAPI) GetAdapter(arg0 *textract.GetAdapterInput) (*textract.GetAdapterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAdapter", arg0)
+	ret0, _ := ret[0].(*textract.GetAdapterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAdapter indicates an expected call of GetAdapter
+func (mr *MockTextractAPIMockRecorder) GetAdapter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdapter", reflect.TypeOf((*MockTextractAPI)(nil).GetAdapter), arg0)
+}
+
+// GetAdapterRequest mocks base method
+func (m *MockTextractAPI) GetAdapterRequest(arg0 *textract.GetAdapterInput) (*request.Request, *textract.GetAdapterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAdapterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.GetAdapterOutput)
+	return ret0, ret1
+}
+
+// GetAdapterRequest indicates an expected call of GetAdapterRequest
+func (mr *MockTextractAPIMockRecorder) GetAdapterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdapterRequest", reflect.TypeOf((*MockTextractAPI)(nil).GetAdapterRequest), arg0)
+}
+
+// GetAdapterVersion mocks base method
+func (m *MockTextractAPI) GetAdapterVersion(arg0 *textract.GetAdapterVersionInput) (*textract.GetAdapterVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAdapterVersion", arg0)
+	ret0, _ := ret[0].(*textract.GetAdapterVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAdapterVersion indicates an expected call of GetAdapterVersion
+func (mr *MockTextractAPIMockRecorder) GetAdapterVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdapterVersion", reflect.TypeOf((*MockTextractAPI)(nil).GetAdapterVersion), arg0)
+}
+
+// GetAdapterVersionRequest mocks base method
+func (m *MockTextractAPI) GetAdapterVersionRequest(arg0 *textract.GetAdapterVersionInput) (*request.Request, *textract.GetAdapterVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAdapterVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.GetAdapterVersionOutput)
+	return ret0, ret1
+}
+
+// GetAdapterVersionRequest indicates an expected call of GetAdapterVersionRequest
+func (mr *MockTextractAPIMockRecorder) GetAdapterVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdapterVersionRequest", reflect.TypeOf((*MockTextractAPI)(nil).GetAdapterVersionRequest), arg0)
+}
+
+// GetAdapterVersionWithContext mocks base method
+func (m *MockTextractAPI) GetAdapterVersionWithContext(arg0 context.Context, arg1 *textract.GetAdapterVersionInput, arg2 ...request.Option) (*textract.GetAdapterVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAdapterVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.GetAdapterVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAdapterVersionWithContext indicates an expected call of GetAdapterVersionWithContext
+func (mr *MockTextractAPIMockRecorder) GetAdapterVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdapterVersionWithContext", reflect.TypeOf((*MockTextractAPI)(nil).GetAdapterVersionWithContext), varargs...)
+}
+
+// GetAdapterWithContext mocks base method
+func (m *MockTextractAPI) GetAdapterWithContext(arg0 context.Context, arg1 *textract.GetAdapterInput, arg2 ...request.Option) (*textract.GetAdapterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAdapterWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.GetAdapterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAdapterWithContext indicates an expected call of GetAdapterWithContext
+func (mr *MockTextractAPIMockRecorder) GetAdapterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAdapterWithContext", reflect.TypeOf((*MockTextractAPI)(nil).GetAdapterWithContext), varargs...)
 }
 
 // GetDocumentAnalysis mocks base method
@@ -485,6 +785,222 @@ func (mr *MockTextractAPIMockRecorder) GetLendingAnalysisWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLendingAnalysisWithContext", reflect.TypeOf((*MockTextractAPI)(nil).GetLendingAnalysisWithContext), varargs...)
 }
 
+// ListAdapterVersions mocks base method
+func (m *MockTextractAPI) ListAdapterVersions(arg0 *textract.ListAdapterVersionsInput) (*textract.ListAdapterVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAdapterVersions", arg0)
+	ret0, _ := ret[0].(*textract.ListAdapterVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAdapterVersions indicates an expected call of ListAdapterVersions
+func (mr *MockTextractAPIMockRecorder) ListAdapterVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdapterVersions", reflect.TypeOf((*MockTextractAPI)(nil).ListAdapterVersions), arg0)
+}
+
+// ListAdapterVersionsPages mocks base method
+func (m *MockTextractAPI) ListAdapterVersionsPages(arg0 *textract.ListAdapterVersionsInput, arg1 func(*textract.ListAdapterVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAdapterVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAdapterVersionsPages indicates an expected call of ListAdapterVersionsPages
+func (mr *MockTextractAPIMockRecorder) ListAdapterVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdapterVersionsPages", reflect.TypeOf((*MockTextractAPI)(nil).ListAdapterVersionsPages), arg0, arg1)
+}
+
+// ListAdapterVersionsPagesWithContext mocks base method
+func (m *MockTextractAPI) ListAdapterVersionsPagesWithContext(arg0 context.Context, arg1 *textract.ListAdapterVersionsInput, arg2 func(*textract.ListAdapterVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAdapterVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAdapterVersionsPagesWithContext indicates an expected call of ListAdapterVersionsPagesWithContext
+func (mr *MockTextractAPIMockRecorder) ListAdapterVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdapterVersionsPagesWithContext", reflect.TypeOf((*MockTextractAPI)(nil).ListAdapterVersionsPagesWithContext), varargs...)
+}
+
+// ListAdapterVersionsRequest mocks base method
+func (m *MockTextractAPI) ListAdapterVersionsRequest(arg0 *textract.ListAdapterVersionsInput) (*request.Request, *textract.ListAdapterVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAdapterVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.ListAdapterVersionsOutput)
+	return ret0, ret1
+}
+
+// ListAdapterVersionsRequest indicates an expected call of ListAdapterVersionsRequest
+func (mr *MockTextractAPIMockRecorder) ListAdapterVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdapterVersionsRequest", reflect.TypeOf((*MockTextractAPI)(nil).ListAdapterVersionsRequest), arg0)
+}
+
+// ListAdapterVersionsWithContext mocks base method
+func (m *MockTextractAPI) ListAdapterVersionsWithContext(arg0 context.Context, arg1 *textract.ListAdapterVersionsInput, arg2 ...request.Option) (*textract.ListAdapterVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAdapterVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.ListAdapterVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAdapterVersionsWithContext indicates an expected call of ListAdapterVersionsWithContext
+func (mr *MockTextractAPIMockRecorder) ListAdapterVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdapterVersionsWithContext", reflect.TypeOf((*MockTextractAPI)(nil).ListAdapterVersionsWithContext), varargs...)
+}
+
+// ListAdapters mocks base method
+func (m *MockTextractAPI) ListAdapters(arg0 *textract.ListAdaptersInput) (*textract.ListAdaptersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAdapters", arg0)
+	ret0, _ := ret[0].(*textract.ListAdaptersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAdapters indicates an expected call of ListAdapters
+func (mr *MockTextractAPIMockRecorder) ListAdapters(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdapters", reflect.TypeOf((*MockTextractAPI)(nil).ListAdapters), arg0)
+}
+
+// ListAdaptersPages mocks base method
+func (m *MockTextractAPI) ListAdaptersPages(arg0 *textract.ListAdaptersInput, arg1 func(*textract.ListAdaptersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAdaptersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAdaptersPages indicates an expected call of ListAdaptersPages
+func (mr *MockTextractAPIMockRecorder) ListAdaptersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdaptersPages", reflect.TypeOf((*MockTextractAPI)(nil).ListAdaptersPages), arg0, arg1)
+}
+
+// ListAdaptersPagesWithContext mocks base method
+func (m *MockTextractAPI) ListAdaptersPagesWithContext(arg0 context.Context, arg1 *textract.ListAdaptersInput, arg2 func(*textract.ListAdaptersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAdaptersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAdaptersPagesWithContext indicates an expected call of ListAdaptersPagesWithContext
+func (mr *MockTextractAPIMockRecorder) ListAdaptersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdaptersPagesWithContext", reflect.TypeOf((*MockTextractAPI)(nil).ListAdaptersPagesWithContext), varargs...)
+}
+
+// ListAdaptersRequest mocks base method
+func (m *MockTextractAPI) ListAdaptersRequest(arg0 *textract.ListAdaptersInput) (*request.Request, *textract.ListAdaptersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAdaptersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.ListAdaptersOutput)
+	return ret0, ret1
+}
+
+// ListAdaptersRequest indicates an expected call of ListAdaptersRequest
+func (mr *MockTextractAPIMockRecorder) ListAdaptersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdaptersRequest", reflect.TypeOf((*MockTextractAPI)(nil).ListAdaptersRequest), arg0)
+}
+
+// ListAdaptersWithContext mocks base method
+func (m *MockTextractAPI) ListAdaptersWithContext(arg0 context.Context, arg1 *textract.ListAdaptersInput, arg2 ...request.Option) (*textract.ListAdaptersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAdaptersWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.ListAdaptersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAdaptersWithContext indicates an expected call of ListAdaptersWithContext
+func (mr *MockTextractAPIMockRecorder) ListAdaptersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAdaptersWithContext", reflect.TypeOf((*MockTextractAPI)(nil).ListAdaptersWithContext), varargs...)
+}
+
+// ListTagsForResource mocks base method
+func (m *MockTextractAPI) ListTagsForResource(arg0 *textract.ListTagsForResourceInput) (*textract.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*textract.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockTextractAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockTextractAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockTextractAPI) ListTagsForResourceRequest(arg0 *textract.ListTagsForResourceInput) (*request.Request, *textract.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockTextractAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockTextractAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockTextractAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *textract.ListTagsForResourceInput, arg2 ...request.Option) (*textract.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockTextractAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockTextractAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
 // StartDocumentAnalysis mocks base method
 func (m *MockTextractAPI) StartDocumentAnalysis(arg0 *textract.StartDocumentAnalysisInput) (*textract.StartDocumentAnalysisOutput, error) {
 	m.ctrl.T.Helper()
@@ -683,4 +1199,154 @@ func (mr *MockTextractAPIMockRecorder) StartLendingAnalysisWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartLendingAnalysisWithContext", reflect.TypeOf((*MockTextractAPI)(nil).StartLendingAnalysisWithContext), varargs...)
+}
+
+// TagResource mocks base method
+func (m *MockTextractAPI) TagResource(arg0 *textract.TagResourceInput) (*textract.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*textract.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockTextractAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockTextractAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockTextractAPI) TagResourceRequest(arg0 *textract.TagResourceInput) (*request.Request, *textract.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockTextractAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockTextractAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockTextractAPI) TagResourceWithContext(arg0 context.Context, arg1 *textract.TagResourceInput, arg2 ...request.Option) (*textract.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockTextractAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockTextractAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockTextractAPI) UntagResource(arg0 *textract.UntagResourceInput) (*textract.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*textract.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockTextractAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockTextractAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockTextractAPI) UntagResourceRequest(arg0 *textract.UntagResourceInput) (*request.Request, *textract.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockTextractAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockTextractAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockTextractAPI) UntagResourceWithContext(arg0 context.Context, arg1 *textract.UntagResourceInput, arg2 ...request.Option) (*textract.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockTextractAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockTextractAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateAdapter mocks base method
+func (m *MockTextractAPI) UpdateAdapter(arg0 *textract.UpdateAdapterInput) (*textract.UpdateAdapterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAdapter", arg0)
+	ret0, _ := ret[0].(*textract.UpdateAdapterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAdapter indicates an expected call of UpdateAdapter
+func (mr *MockTextractAPIMockRecorder) UpdateAdapter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAdapter", reflect.TypeOf((*MockTextractAPI)(nil).UpdateAdapter), arg0)
+}
+
+// UpdateAdapterRequest mocks base method
+func (m *MockTextractAPI) UpdateAdapterRequest(arg0 *textract.UpdateAdapterInput) (*request.Request, *textract.UpdateAdapterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAdapterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*textract.UpdateAdapterOutput)
+	return ret0, ret1
+}
+
+// UpdateAdapterRequest indicates an expected call of UpdateAdapterRequest
+func (mr *MockTextractAPIMockRecorder) UpdateAdapterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAdapterRequest", reflect.TypeOf((*MockTextractAPI)(nil).UpdateAdapterRequest), arg0)
+}
+
+// UpdateAdapterWithContext mocks base method
+func (m *MockTextractAPI) UpdateAdapterWithContext(arg0 context.Context, arg1 *textract.UpdateAdapterInput, arg2 ...request.Option) (*textract.UpdateAdapterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAdapterWithContext", varargs...)
+	ret0, _ := ret[0].(*textract.UpdateAdapterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAdapterWithContext indicates an expected call of UpdateAdapterWithContext
+func (mr *MockTextractAPIMockRecorder) UpdateAdapterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAdapterWithContext", reflect.TypeOf((*MockTextractAPI)(nil).UpdateAdapterWithContext), varargs...)
 }

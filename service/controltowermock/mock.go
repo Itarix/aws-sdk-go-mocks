@@ -185,6 +185,56 @@ func (mr *MockControlTowerAPIMockRecorder) GetControlOperationWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetControlOperationWithContext", reflect.TypeOf((*MockControlTowerAPI)(nil).GetControlOperationWithContext), varargs...)
 }
 
+// GetEnabledControl mocks base method
+func (m *MockControlTowerAPI) GetEnabledControl(arg0 *controltower.GetEnabledControlInput) (*controltower.GetEnabledControlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEnabledControl", arg0)
+	ret0, _ := ret[0].(*controltower.GetEnabledControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEnabledControl indicates an expected call of GetEnabledControl
+func (mr *MockControlTowerAPIMockRecorder) GetEnabledControl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnabledControl", reflect.TypeOf((*MockControlTowerAPI)(nil).GetEnabledControl), arg0)
+}
+
+// GetEnabledControlRequest mocks base method
+func (m *MockControlTowerAPI) GetEnabledControlRequest(arg0 *controltower.GetEnabledControlInput) (*request.Request, *controltower.GetEnabledControlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEnabledControlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*controltower.GetEnabledControlOutput)
+	return ret0, ret1
+}
+
+// GetEnabledControlRequest indicates an expected call of GetEnabledControlRequest
+func (mr *MockControlTowerAPIMockRecorder) GetEnabledControlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnabledControlRequest", reflect.TypeOf((*MockControlTowerAPI)(nil).GetEnabledControlRequest), arg0)
+}
+
+// GetEnabledControlWithContext mocks base method
+func (m *MockControlTowerAPI) GetEnabledControlWithContext(arg0 context.Context, arg1 *controltower.GetEnabledControlInput, arg2 ...request.Option) (*controltower.GetEnabledControlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetEnabledControlWithContext", varargs...)
+	ret0, _ := ret[0].(*controltower.GetEnabledControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEnabledControlWithContext indicates an expected call of GetEnabledControlWithContext
+func (mr *MockControlTowerAPIMockRecorder) GetEnabledControlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnabledControlWithContext", reflect.TypeOf((*MockControlTowerAPI)(nil).GetEnabledControlWithContext), varargs...)
+}
+
 // ListEnabledControls mocks base method
 func (m *MockControlTowerAPI) ListEnabledControls(arg0 *controltower.ListEnabledControlsInput) (*controltower.ListEnabledControlsOutput, error) {
 	m.ctrl.T.Helper()
