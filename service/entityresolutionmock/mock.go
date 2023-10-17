@@ -35,6 +35,56 @@ func (m *MockEntityResolutionAPI) EXPECT() *MockEntityResolutionAPIMockRecorder 
 	return m.recorder
 }
 
+// CreateIdMappingWorkflow mocks base method
+func (m *MockEntityResolutionAPI) CreateIdMappingWorkflow(arg0 *entityresolution.CreateIdMappingWorkflowInput) (*entityresolution.CreateIdMappingWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateIdMappingWorkflow", arg0)
+	ret0, _ := ret[0].(*entityresolution.CreateIdMappingWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateIdMappingWorkflow indicates an expected call of CreateIdMappingWorkflow
+func (mr *MockEntityResolutionAPIMockRecorder) CreateIdMappingWorkflow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIdMappingWorkflow", reflect.TypeOf((*MockEntityResolutionAPI)(nil).CreateIdMappingWorkflow), arg0)
+}
+
+// CreateIdMappingWorkflowRequest mocks base method
+func (m *MockEntityResolutionAPI) CreateIdMappingWorkflowRequest(arg0 *entityresolution.CreateIdMappingWorkflowInput) (*request.Request, *entityresolution.CreateIdMappingWorkflowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateIdMappingWorkflowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*entityresolution.CreateIdMappingWorkflowOutput)
+	return ret0, ret1
+}
+
+// CreateIdMappingWorkflowRequest indicates an expected call of CreateIdMappingWorkflowRequest
+func (mr *MockEntityResolutionAPIMockRecorder) CreateIdMappingWorkflowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIdMappingWorkflowRequest", reflect.TypeOf((*MockEntityResolutionAPI)(nil).CreateIdMappingWorkflowRequest), arg0)
+}
+
+// CreateIdMappingWorkflowWithContext mocks base method
+func (m *MockEntityResolutionAPI) CreateIdMappingWorkflowWithContext(arg0 context.Context, arg1 *entityresolution.CreateIdMappingWorkflowInput, arg2 ...request.Option) (*entityresolution.CreateIdMappingWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateIdMappingWorkflowWithContext", varargs...)
+	ret0, _ := ret[0].(*entityresolution.CreateIdMappingWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateIdMappingWorkflowWithContext indicates an expected call of CreateIdMappingWorkflowWithContext
+func (mr *MockEntityResolutionAPIMockRecorder) CreateIdMappingWorkflowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIdMappingWorkflowWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).CreateIdMappingWorkflowWithContext), varargs...)
+}
+
 // CreateMatchingWorkflow mocks base method
 func (m *MockEntityResolutionAPI) CreateMatchingWorkflow(arg0 *entityresolution.CreateMatchingWorkflowInput) (*entityresolution.CreateMatchingWorkflowOutput, error) {
 	m.ctrl.T.Helper()
@@ -135,6 +185,56 @@ func (mr *MockEntityResolutionAPIMockRecorder) CreateSchemaMappingWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateSchemaMappingWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).CreateSchemaMappingWithContext), varargs...)
 }
 
+// DeleteIdMappingWorkflow mocks base method
+func (m *MockEntityResolutionAPI) DeleteIdMappingWorkflow(arg0 *entityresolution.DeleteIdMappingWorkflowInput) (*entityresolution.DeleteIdMappingWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteIdMappingWorkflow", arg0)
+	ret0, _ := ret[0].(*entityresolution.DeleteIdMappingWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteIdMappingWorkflow indicates an expected call of DeleteIdMappingWorkflow
+func (mr *MockEntityResolutionAPIMockRecorder) DeleteIdMappingWorkflow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdMappingWorkflow", reflect.TypeOf((*MockEntityResolutionAPI)(nil).DeleteIdMappingWorkflow), arg0)
+}
+
+// DeleteIdMappingWorkflowRequest mocks base method
+func (m *MockEntityResolutionAPI) DeleteIdMappingWorkflowRequest(arg0 *entityresolution.DeleteIdMappingWorkflowInput) (*request.Request, *entityresolution.DeleteIdMappingWorkflowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteIdMappingWorkflowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*entityresolution.DeleteIdMappingWorkflowOutput)
+	return ret0, ret1
+}
+
+// DeleteIdMappingWorkflowRequest indicates an expected call of DeleteIdMappingWorkflowRequest
+func (mr *MockEntityResolutionAPIMockRecorder) DeleteIdMappingWorkflowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdMappingWorkflowRequest", reflect.TypeOf((*MockEntityResolutionAPI)(nil).DeleteIdMappingWorkflowRequest), arg0)
+}
+
+// DeleteIdMappingWorkflowWithContext mocks base method
+func (m *MockEntityResolutionAPI) DeleteIdMappingWorkflowWithContext(arg0 context.Context, arg1 *entityresolution.DeleteIdMappingWorkflowInput, arg2 ...request.Option) (*entityresolution.DeleteIdMappingWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteIdMappingWorkflowWithContext", varargs...)
+	ret0, _ := ret[0].(*entityresolution.DeleteIdMappingWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteIdMappingWorkflowWithContext indicates an expected call of DeleteIdMappingWorkflowWithContext
+func (mr *MockEntityResolutionAPIMockRecorder) DeleteIdMappingWorkflowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdMappingWorkflowWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).DeleteIdMappingWorkflowWithContext), varargs...)
+}
+
 // DeleteMatchingWorkflow mocks base method
 func (m *MockEntityResolutionAPI) DeleteMatchingWorkflow(arg0 *entityresolution.DeleteMatchingWorkflowInput) (*entityresolution.DeleteMatchingWorkflowOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +333,106 @@ func (mr *MockEntityResolutionAPIMockRecorder) DeleteSchemaMappingWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteSchemaMappingWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).DeleteSchemaMappingWithContext), varargs...)
+}
+
+// GetIdMappingJob mocks base method
+func (m *MockEntityResolutionAPI) GetIdMappingJob(arg0 *entityresolution.GetIdMappingJobInput) (*entityresolution.GetIdMappingJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetIdMappingJob", arg0)
+	ret0, _ := ret[0].(*entityresolution.GetIdMappingJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetIdMappingJob indicates an expected call of GetIdMappingJob
+func (mr *MockEntityResolutionAPIMockRecorder) GetIdMappingJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdMappingJob", reflect.TypeOf((*MockEntityResolutionAPI)(nil).GetIdMappingJob), arg0)
+}
+
+// GetIdMappingJobRequest mocks base method
+func (m *MockEntityResolutionAPI) GetIdMappingJobRequest(arg0 *entityresolution.GetIdMappingJobInput) (*request.Request, *entityresolution.GetIdMappingJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetIdMappingJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*entityresolution.GetIdMappingJobOutput)
+	return ret0, ret1
+}
+
+// GetIdMappingJobRequest indicates an expected call of GetIdMappingJobRequest
+func (mr *MockEntityResolutionAPIMockRecorder) GetIdMappingJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdMappingJobRequest", reflect.TypeOf((*MockEntityResolutionAPI)(nil).GetIdMappingJobRequest), arg0)
+}
+
+// GetIdMappingJobWithContext mocks base method
+func (m *MockEntityResolutionAPI) GetIdMappingJobWithContext(arg0 context.Context, arg1 *entityresolution.GetIdMappingJobInput, arg2 ...request.Option) (*entityresolution.GetIdMappingJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetIdMappingJobWithContext", varargs...)
+	ret0, _ := ret[0].(*entityresolution.GetIdMappingJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetIdMappingJobWithContext indicates an expected call of GetIdMappingJobWithContext
+func (mr *MockEntityResolutionAPIMockRecorder) GetIdMappingJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdMappingJobWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).GetIdMappingJobWithContext), varargs...)
+}
+
+// GetIdMappingWorkflow mocks base method
+func (m *MockEntityResolutionAPI) GetIdMappingWorkflow(arg0 *entityresolution.GetIdMappingWorkflowInput) (*entityresolution.GetIdMappingWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetIdMappingWorkflow", arg0)
+	ret0, _ := ret[0].(*entityresolution.GetIdMappingWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetIdMappingWorkflow indicates an expected call of GetIdMappingWorkflow
+func (mr *MockEntityResolutionAPIMockRecorder) GetIdMappingWorkflow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdMappingWorkflow", reflect.TypeOf((*MockEntityResolutionAPI)(nil).GetIdMappingWorkflow), arg0)
+}
+
+// GetIdMappingWorkflowRequest mocks base method
+func (m *MockEntityResolutionAPI) GetIdMappingWorkflowRequest(arg0 *entityresolution.GetIdMappingWorkflowInput) (*request.Request, *entityresolution.GetIdMappingWorkflowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetIdMappingWorkflowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*entityresolution.GetIdMappingWorkflowOutput)
+	return ret0, ret1
+}
+
+// GetIdMappingWorkflowRequest indicates an expected call of GetIdMappingWorkflowRequest
+func (mr *MockEntityResolutionAPIMockRecorder) GetIdMappingWorkflowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdMappingWorkflowRequest", reflect.TypeOf((*MockEntityResolutionAPI)(nil).GetIdMappingWorkflowRequest), arg0)
+}
+
+// GetIdMappingWorkflowWithContext mocks base method
+func (m *MockEntityResolutionAPI) GetIdMappingWorkflowWithContext(arg0 context.Context, arg1 *entityresolution.GetIdMappingWorkflowInput, arg2 ...request.Option) (*entityresolution.GetIdMappingWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetIdMappingWorkflowWithContext", varargs...)
+	ret0, _ := ret[0].(*entityresolution.GetIdMappingWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetIdMappingWorkflowWithContext indicates an expected call of GetIdMappingWorkflowWithContext
+func (mr *MockEntityResolutionAPIMockRecorder) GetIdMappingWorkflowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdMappingWorkflowWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).GetIdMappingWorkflowWithContext), varargs...)
 }
 
 // GetMatchId mocks base method
@@ -435,6 +635,172 @@ func (mr *MockEntityResolutionAPIMockRecorder) GetSchemaMappingWithContext(arg0,
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSchemaMappingWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).GetSchemaMappingWithContext), varargs...)
 }
 
+// ListIdMappingJobs mocks base method
+func (m *MockEntityResolutionAPI) ListIdMappingJobs(arg0 *entityresolution.ListIdMappingJobsInput) (*entityresolution.ListIdMappingJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIdMappingJobs", arg0)
+	ret0, _ := ret[0].(*entityresolution.ListIdMappingJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIdMappingJobs indicates an expected call of ListIdMappingJobs
+func (mr *MockEntityResolutionAPIMockRecorder) ListIdMappingJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingJobs", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListIdMappingJobs), arg0)
+}
+
+// ListIdMappingJobsPages mocks base method
+func (m *MockEntityResolutionAPI) ListIdMappingJobsPages(arg0 *entityresolution.ListIdMappingJobsInput, arg1 func(*entityresolution.ListIdMappingJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIdMappingJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIdMappingJobsPages indicates an expected call of ListIdMappingJobsPages
+func (mr *MockEntityResolutionAPIMockRecorder) ListIdMappingJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingJobsPages", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListIdMappingJobsPages), arg0, arg1)
+}
+
+// ListIdMappingJobsPagesWithContext mocks base method
+func (m *MockEntityResolutionAPI) ListIdMappingJobsPagesWithContext(arg0 context.Context, arg1 *entityresolution.ListIdMappingJobsInput, arg2 func(*entityresolution.ListIdMappingJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIdMappingJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIdMappingJobsPagesWithContext indicates an expected call of ListIdMappingJobsPagesWithContext
+func (mr *MockEntityResolutionAPIMockRecorder) ListIdMappingJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingJobsPagesWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListIdMappingJobsPagesWithContext), varargs...)
+}
+
+// ListIdMappingJobsRequest mocks base method
+func (m *MockEntityResolutionAPI) ListIdMappingJobsRequest(arg0 *entityresolution.ListIdMappingJobsInput) (*request.Request, *entityresolution.ListIdMappingJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIdMappingJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*entityresolution.ListIdMappingJobsOutput)
+	return ret0, ret1
+}
+
+// ListIdMappingJobsRequest indicates an expected call of ListIdMappingJobsRequest
+func (mr *MockEntityResolutionAPIMockRecorder) ListIdMappingJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingJobsRequest", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListIdMappingJobsRequest), arg0)
+}
+
+// ListIdMappingJobsWithContext mocks base method
+func (m *MockEntityResolutionAPI) ListIdMappingJobsWithContext(arg0 context.Context, arg1 *entityresolution.ListIdMappingJobsInput, arg2 ...request.Option) (*entityresolution.ListIdMappingJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIdMappingJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*entityresolution.ListIdMappingJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIdMappingJobsWithContext indicates an expected call of ListIdMappingJobsWithContext
+func (mr *MockEntityResolutionAPIMockRecorder) ListIdMappingJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingJobsWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListIdMappingJobsWithContext), varargs...)
+}
+
+// ListIdMappingWorkflows mocks base method
+func (m *MockEntityResolutionAPI) ListIdMappingWorkflows(arg0 *entityresolution.ListIdMappingWorkflowsInput) (*entityresolution.ListIdMappingWorkflowsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIdMappingWorkflows", arg0)
+	ret0, _ := ret[0].(*entityresolution.ListIdMappingWorkflowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIdMappingWorkflows indicates an expected call of ListIdMappingWorkflows
+func (mr *MockEntityResolutionAPIMockRecorder) ListIdMappingWorkflows(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingWorkflows", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListIdMappingWorkflows), arg0)
+}
+
+// ListIdMappingWorkflowsPages mocks base method
+func (m *MockEntityResolutionAPI) ListIdMappingWorkflowsPages(arg0 *entityresolution.ListIdMappingWorkflowsInput, arg1 func(*entityresolution.ListIdMappingWorkflowsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIdMappingWorkflowsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIdMappingWorkflowsPages indicates an expected call of ListIdMappingWorkflowsPages
+func (mr *MockEntityResolutionAPIMockRecorder) ListIdMappingWorkflowsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingWorkflowsPages", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListIdMappingWorkflowsPages), arg0, arg1)
+}
+
+// ListIdMappingWorkflowsPagesWithContext mocks base method
+func (m *MockEntityResolutionAPI) ListIdMappingWorkflowsPagesWithContext(arg0 context.Context, arg1 *entityresolution.ListIdMappingWorkflowsInput, arg2 func(*entityresolution.ListIdMappingWorkflowsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIdMappingWorkflowsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIdMappingWorkflowsPagesWithContext indicates an expected call of ListIdMappingWorkflowsPagesWithContext
+func (mr *MockEntityResolutionAPIMockRecorder) ListIdMappingWorkflowsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingWorkflowsPagesWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListIdMappingWorkflowsPagesWithContext), varargs...)
+}
+
+// ListIdMappingWorkflowsRequest mocks base method
+func (m *MockEntityResolutionAPI) ListIdMappingWorkflowsRequest(arg0 *entityresolution.ListIdMappingWorkflowsInput) (*request.Request, *entityresolution.ListIdMappingWorkflowsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIdMappingWorkflowsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*entityresolution.ListIdMappingWorkflowsOutput)
+	return ret0, ret1
+}
+
+// ListIdMappingWorkflowsRequest indicates an expected call of ListIdMappingWorkflowsRequest
+func (mr *MockEntityResolutionAPIMockRecorder) ListIdMappingWorkflowsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingWorkflowsRequest", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListIdMappingWorkflowsRequest), arg0)
+}
+
+// ListIdMappingWorkflowsWithContext mocks base method
+func (m *MockEntityResolutionAPI) ListIdMappingWorkflowsWithContext(arg0 context.Context, arg1 *entityresolution.ListIdMappingWorkflowsInput, arg2 ...request.Option) (*entityresolution.ListIdMappingWorkflowsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIdMappingWorkflowsWithContext", varargs...)
+	ret0, _ := ret[0].(*entityresolution.ListIdMappingWorkflowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIdMappingWorkflowsWithContext indicates an expected call of ListIdMappingWorkflowsWithContext
+func (mr *MockEntityResolutionAPIMockRecorder) ListIdMappingWorkflowsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingWorkflowsWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListIdMappingWorkflowsWithContext), varargs...)
+}
+
 // ListMatchingJobs mocks base method
 func (m *MockEntityResolutionAPI) ListMatchingJobs(arg0 *entityresolution.ListMatchingJobsInput) (*entityresolution.ListMatchingJobsOutput, error) {
 	m.ctrl.T.Helper()
@@ -601,6 +967,89 @@ func (mr *MockEntityResolutionAPIMockRecorder) ListMatchingWorkflowsWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMatchingWorkflowsWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListMatchingWorkflowsWithContext), varargs...)
 }
 
+// ListProviderServices mocks base method
+func (m *MockEntityResolutionAPI) ListProviderServices(arg0 *entityresolution.ListProviderServicesInput) (*entityresolution.ListProviderServicesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProviderServices", arg0)
+	ret0, _ := ret[0].(*entityresolution.ListProviderServicesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProviderServices indicates an expected call of ListProviderServices
+func (mr *MockEntityResolutionAPIMockRecorder) ListProviderServices(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProviderServices", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListProviderServices), arg0)
+}
+
+// ListProviderServicesPages mocks base method
+func (m *MockEntityResolutionAPI) ListProviderServicesPages(arg0 *entityresolution.ListProviderServicesInput, arg1 func(*entityresolution.ListProviderServicesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProviderServicesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProviderServicesPages indicates an expected call of ListProviderServicesPages
+func (mr *MockEntityResolutionAPIMockRecorder) ListProviderServicesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProviderServicesPages", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListProviderServicesPages), arg0, arg1)
+}
+
+// ListProviderServicesPagesWithContext mocks base method
+func (m *MockEntityResolutionAPI) ListProviderServicesPagesWithContext(arg0 context.Context, arg1 *entityresolution.ListProviderServicesInput, arg2 func(*entityresolution.ListProviderServicesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProviderServicesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListProviderServicesPagesWithContext indicates an expected call of ListProviderServicesPagesWithContext
+func (mr *MockEntityResolutionAPIMockRecorder) ListProviderServicesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProviderServicesPagesWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListProviderServicesPagesWithContext), varargs...)
+}
+
+// ListProviderServicesRequest mocks base method
+func (m *MockEntityResolutionAPI) ListProviderServicesRequest(arg0 *entityresolution.ListProviderServicesInput) (*request.Request, *entityresolution.ListProviderServicesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListProviderServicesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*entityresolution.ListProviderServicesOutput)
+	return ret0, ret1
+}
+
+// ListProviderServicesRequest indicates an expected call of ListProviderServicesRequest
+func (mr *MockEntityResolutionAPIMockRecorder) ListProviderServicesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProviderServicesRequest", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListProviderServicesRequest), arg0)
+}
+
+// ListProviderServicesWithContext mocks base method
+func (m *MockEntityResolutionAPI) ListProviderServicesWithContext(arg0 context.Context, arg1 *entityresolution.ListProviderServicesInput, arg2 ...request.Option) (*entityresolution.ListProviderServicesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListProviderServicesWithContext", varargs...)
+	ret0, _ := ret[0].(*entityresolution.ListProviderServicesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListProviderServicesWithContext indicates an expected call of ListProviderServicesWithContext
+func (mr *MockEntityResolutionAPIMockRecorder) ListProviderServicesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListProviderServicesWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListProviderServicesWithContext), varargs...)
+}
+
 // ListSchemaMappings mocks base method
 func (m *MockEntityResolutionAPI) ListSchemaMappings(arg0 *entityresolution.ListSchemaMappingsInput) (*entityresolution.ListSchemaMappingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -732,6 +1181,56 @@ func (mr *MockEntityResolutionAPIMockRecorder) ListTagsForResourceWithContext(ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// StartIdMappingJob mocks base method
+func (m *MockEntityResolutionAPI) StartIdMappingJob(arg0 *entityresolution.StartIdMappingJobInput) (*entityresolution.StartIdMappingJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartIdMappingJob", arg0)
+	ret0, _ := ret[0].(*entityresolution.StartIdMappingJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartIdMappingJob indicates an expected call of StartIdMappingJob
+func (mr *MockEntityResolutionAPIMockRecorder) StartIdMappingJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartIdMappingJob", reflect.TypeOf((*MockEntityResolutionAPI)(nil).StartIdMappingJob), arg0)
+}
+
+// StartIdMappingJobRequest mocks base method
+func (m *MockEntityResolutionAPI) StartIdMappingJobRequest(arg0 *entityresolution.StartIdMappingJobInput) (*request.Request, *entityresolution.StartIdMappingJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartIdMappingJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*entityresolution.StartIdMappingJobOutput)
+	return ret0, ret1
+}
+
+// StartIdMappingJobRequest indicates an expected call of StartIdMappingJobRequest
+func (mr *MockEntityResolutionAPIMockRecorder) StartIdMappingJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartIdMappingJobRequest", reflect.TypeOf((*MockEntityResolutionAPI)(nil).StartIdMappingJobRequest), arg0)
+}
+
+// StartIdMappingJobWithContext mocks base method
+func (m *MockEntityResolutionAPI) StartIdMappingJobWithContext(arg0 context.Context, arg1 *entityresolution.StartIdMappingJobInput, arg2 ...request.Option) (*entityresolution.StartIdMappingJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartIdMappingJobWithContext", varargs...)
+	ret0, _ := ret[0].(*entityresolution.StartIdMappingJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartIdMappingJobWithContext indicates an expected call of StartIdMappingJobWithContext
+func (mr *MockEntityResolutionAPIMockRecorder) StartIdMappingJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartIdMappingJobWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).StartIdMappingJobWithContext), varargs...)
 }
 
 // StartMatchingJob mocks base method
@@ -884,6 +1383,56 @@ func (mr *MockEntityResolutionAPIMockRecorder) UntagResourceWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
+// UpdateIdMappingWorkflow mocks base method
+func (m *MockEntityResolutionAPI) UpdateIdMappingWorkflow(arg0 *entityresolution.UpdateIdMappingWorkflowInput) (*entityresolution.UpdateIdMappingWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateIdMappingWorkflow", arg0)
+	ret0, _ := ret[0].(*entityresolution.UpdateIdMappingWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateIdMappingWorkflow indicates an expected call of UpdateIdMappingWorkflow
+func (mr *MockEntityResolutionAPIMockRecorder) UpdateIdMappingWorkflow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIdMappingWorkflow", reflect.TypeOf((*MockEntityResolutionAPI)(nil).UpdateIdMappingWorkflow), arg0)
+}
+
+// UpdateIdMappingWorkflowRequest mocks base method
+func (m *MockEntityResolutionAPI) UpdateIdMappingWorkflowRequest(arg0 *entityresolution.UpdateIdMappingWorkflowInput) (*request.Request, *entityresolution.UpdateIdMappingWorkflowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateIdMappingWorkflowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*entityresolution.UpdateIdMappingWorkflowOutput)
+	return ret0, ret1
+}
+
+// UpdateIdMappingWorkflowRequest indicates an expected call of UpdateIdMappingWorkflowRequest
+func (mr *MockEntityResolutionAPIMockRecorder) UpdateIdMappingWorkflowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIdMappingWorkflowRequest", reflect.TypeOf((*MockEntityResolutionAPI)(nil).UpdateIdMappingWorkflowRequest), arg0)
+}
+
+// UpdateIdMappingWorkflowWithContext mocks base method
+func (m *MockEntityResolutionAPI) UpdateIdMappingWorkflowWithContext(arg0 context.Context, arg1 *entityresolution.UpdateIdMappingWorkflowInput, arg2 ...request.Option) (*entityresolution.UpdateIdMappingWorkflowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateIdMappingWorkflowWithContext", varargs...)
+	ret0, _ := ret[0].(*entityresolution.UpdateIdMappingWorkflowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateIdMappingWorkflowWithContext indicates an expected call of UpdateIdMappingWorkflowWithContext
+func (mr *MockEntityResolutionAPIMockRecorder) UpdateIdMappingWorkflowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIdMappingWorkflowWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).UpdateIdMappingWorkflowWithContext), varargs...)
+}
+
 // UpdateMatchingWorkflow mocks base method
 func (m *MockEntityResolutionAPI) UpdateMatchingWorkflow(arg0 *entityresolution.UpdateMatchingWorkflowInput) (*entityresolution.UpdateMatchingWorkflowOutput, error) {
 	m.ctrl.T.Helper()
@@ -932,4 +1481,54 @@ func (mr *MockEntityResolutionAPIMockRecorder) UpdateMatchingWorkflowWithContext
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMatchingWorkflowWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).UpdateMatchingWorkflowWithContext), varargs...)
+}
+
+// UpdateSchemaMapping mocks base method
+func (m *MockEntityResolutionAPI) UpdateSchemaMapping(arg0 *entityresolution.UpdateSchemaMappingInput) (*entityresolution.UpdateSchemaMappingOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSchemaMapping", arg0)
+	ret0, _ := ret[0].(*entityresolution.UpdateSchemaMappingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSchemaMapping indicates an expected call of UpdateSchemaMapping
+func (mr *MockEntityResolutionAPIMockRecorder) UpdateSchemaMapping(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSchemaMapping", reflect.TypeOf((*MockEntityResolutionAPI)(nil).UpdateSchemaMapping), arg0)
+}
+
+// UpdateSchemaMappingRequest mocks base method
+func (m *MockEntityResolutionAPI) UpdateSchemaMappingRequest(arg0 *entityresolution.UpdateSchemaMappingInput) (*request.Request, *entityresolution.UpdateSchemaMappingOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateSchemaMappingRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*entityresolution.UpdateSchemaMappingOutput)
+	return ret0, ret1
+}
+
+// UpdateSchemaMappingRequest indicates an expected call of UpdateSchemaMappingRequest
+func (mr *MockEntityResolutionAPIMockRecorder) UpdateSchemaMappingRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSchemaMappingRequest", reflect.TypeOf((*MockEntityResolutionAPI)(nil).UpdateSchemaMappingRequest), arg0)
+}
+
+// UpdateSchemaMappingWithContext mocks base method
+func (m *MockEntityResolutionAPI) UpdateSchemaMappingWithContext(arg0 context.Context, arg1 *entityresolution.UpdateSchemaMappingInput, arg2 ...request.Option) (*entityresolution.UpdateSchemaMappingOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateSchemaMappingWithContext", varargs...)
+	ret0, _ := ret[0].(*entityresolution.UpdateSchemaMappingOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateSchemaMappingWithContext indicates an expected call of UpdateSchemaMappingWithContext
+func (mr *MockEntityResolutionAPIMockRecorder) UpdateSchemaMappingWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateSchemaMappingWithContext", reflect.TypeOf((*MockEntityResolutionAPI)(nil).UpdateSchemaMappingWithContext), varargs...)
 }

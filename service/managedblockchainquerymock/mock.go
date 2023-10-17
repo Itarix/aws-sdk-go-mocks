@@ -85,6 +85,56 @@ func (mr *MockManagedBlockchainQueryAPIMockRecorder) BatchGetTokenBalanceWithCon
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetTokenBalanceWithContext", reflect.TypeOf((*MockManagedBlockchainQueryAPI)(nil).BatchGetTokenBalanceWithContext), varargs...)
 }
 
+// GetAssetContract mocks base method
+func (m *MockManagedBlockchainQueryAPI) GetAssetContract(arg0 *managedblockchainquery.GetAssetContractInput) (*managedblockchainquery.GetAssetContractOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAssetContract", arg0)
+	ret0, _ := ret[0].(*managedblockchainquery.GetAssetContractOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAssetContract indicates an expected call of GetAssetContract
+func (mr *MockManagedBlockchainQueryAPIMockRecorder) GetAssetContract(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssetContract", reflect.TypeOf((*MockManagedBlockchainQueryAPI)(nil).GetAssetContract), arg0)
+}
+
+// GetAssetContractRequest mocks base method
+func (m *MockManagedBlockchainQueryAPI) GetAssetContractRequest(arg0 *managedblockchainquery.GetAssetContractInput) (*request.Request, *managedblockchainquery.GetAssetContractOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAssetContractRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*managedblockchainquery.GetAssetContractOutput)
+	return ret0, ret1
+}
+
+// GetAssetContractRequest indicates an expected call of GetAssetContractRequest
+func (mr *MockManagedBlockchainQueryAPIMockRecorder) GetAssetContractRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssetContractRequest", reflect.TypeOf((*MockManagedBlockchainQueryAPI)(nil).GetAssetContractRequest), arg0)
+}
+
+// GetAssetContractWithContext mocks base method
+func (m *MockManagedBlockchainQueryAPI) GetAssetContractWithContext(arg0 context.Context, arg1 *managedblockchainquery.GetAssetContractInput, arg2 ...request.Option) (*managedblockchainquery.GetAssetContractOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAssetContractWithContext", varargs...)
+	ret0, _ := ret[0].(*managedblockchainquery.GetAssetContractOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAssetContractWithContext indicates an expected call of GetAssetContractWithContext
+func (mr *MockManagedBlockchainQueryAPIMockRecorder) GetAssetContractWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssetContractWithContext", reflect.TypeOf((*MockManagedBlockchainQueryAPI)(nil).GetAssetContractWithContext), varargs...)
+}
+
 // GetTokenBalance mocks base method
 func (m *MockManagedBlockchainQueryAPI) GetTokenBalance(arg0 *managedblockchainquery.GetTokenBalanceInput) (*managedblockchainquery.GetTokenBalanceOutput, error) {
 	m.ctrl.T.Helper()
@@ -183,6 +233,89 @@ func (mr *MockManagedBlockchainQueryAPIMockRecorder) GetTransactionWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetTransactionWithContext", reflect.TypeOf((*MockManagedBlockchainQueryAPI)(nil).GetTransactionWithContext), varargs...)
+}
+
+// ListAssetContracts mocks base method
+func (m *MockManagedBlockchainQueryAPI) ListAssetContracts(arg0 *managedblockchainquery.ListAssetContractsInput) (*managedblockchainquery.ListAssetContractsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetContracts", arg0)
+	ret0, _ := ret[0].(*managedblockchainquery.ListAssetContractsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssetContracts indicates an expected call of ListAssetContracts
+func (mr *MockManagedBlockchainQueryAPIMockRecorder) ListAssetContracts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetContracts", reflect.TypeOf((*MockManagedBlockchainQueryAPI)(nil).ListAssetContracts), arg0)
+}
+
+// ListAssetContractsPages mocks base method
+func (m *MockManagedBlockchainQueryAPI) ListAssetContractsPages(arg0 *managedblockchainquery.ListAssetContractsInput, arg1 func(*managedblockchainquery.ListAssetContractsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetContractsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssetContractsPages indicates an expected call of ListAssetContractsPages
+func (mr *MockManagedBlockchainQueryAPIMockRecorder) ListAssetContractsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetContractsPages", reflect.TypeOf((*MockManagedBlockchainQueryAPI)(nil).ListAssetContractsPages), arg0, arg1)
+}
+
+// ListAssetContractsPagesWithContext mocks base method
+func (m *MockManagedBlockchainQueryAPI) ListAssetContractsPagesWithContext(arg0 context.Context, arg1 *managedblockchainquery.ListAssetContractsInput, arg2 func(*managedblockchainquery.ListAssetContractsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssetContractsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssetContractsPagesWithContext indicates an expected call of ListAssetContractsPagesWithContext
+func (mr *MockManagedBlockchainQueryAPIMockRecorder) ListAssetContractsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetContractsPagesWithContext", reflect.TypeOf((*MockManagedBlockchainQueryAPI)(nil).ListAssetContractsPagesWithContext), varargs...)
+}
+
+// ListAssetContractsRequest mocks base method
+func (m *MockManagedBlockchainQueryAPI) ListAssetContractsRequest(arg0 *managedblockchainquery.ListAssetContractsInput) (*request.Request, *managedblockchainquery.ListAssetContractsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetContractsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*managedblockchainquery.ListAssetContractsOutput)
+	return ret0, ret1
+}
+
+// ListAssetContractsRequest indicates an expected call of ListAssetContractsRequest
+func (mr *MockManagedBlockchainQueryAPIMockRecorder) ListAssetContractsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetContractsRequest", reflect.TypeOf((*MockManagedBlockchainQueryAPI)(nil).ListAssetContractsRequest), arg0)
+}
+
+// ListAssetContractsWithContext mocks base method
+func (m *MockManagedBlockchainQueryAPI) ListAssetContractsWithContext(arg0 context.Context, arg1 *managedblockchainquery.ListAssetContractsInput, arg2 ...request.Option) (*managedblockchainquery.ListAssetContractsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssetContractsWithContext", varargs...)
+	ret0, _ := ret[0].(*managedblockchainquery.ListAssetContractsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssetContractsWithContext indicates an expected call of ListAssetContractsWithContext
+func (mr *MockManagedBlockchainQueryAPIMockRecorder) ListAssetContractsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetContractsWithContext", reflect.TypeOf((*MockManagedBlockchainQueryAPI)(nil).ListAssetContractsWithContext), varargs...)
 }
 
 // ListTokenBalances mocks base method
