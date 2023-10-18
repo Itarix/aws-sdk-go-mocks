@@ -635,6 +635,56 @@ func (mr *MockRoute53RecoveryControlConfigAPIMockRecorder) DescribeSafetyRuleWit
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeSafetyRuleWithContext", reflect.TypeOf((*MockRoute53RecoveryControlConfigAPI)(nil).DescribeSafetyRuleWithContext), varargs...)
 }
 
+// GetResourcePolicy mocks base method
+func (m *MockRoute53RecoveryControlConfigAPI) GetResourcePolicy(arg0 *route53recoverycontrolconfig.GetResourcePolicyInput) (*route53recoverycontrolconfig.GetResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcePolicy", arg0)
+	ret0, _ := ret[0].(*route53recoverycontrolconfig.GetResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcePolicy indicates an expected call of GetResourcePolicy
+func (mr *MockRoute53RecoveryControlConfigAPIMockRecorder) GetResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicy", reflect.TypeOf((*MockRoute53RecoveryControlConfigAPI)(nil).GetResourcePolicy), arg0)
+}
+
+// GetResourcePolicyRequest mocks base method
+func (m *MockRoute53RecoveryControlConfigAPI) GetResourcePolicyRequest(arg0 *route53recoverycontrolconfig.GetResourcePolicyInput) (*request.Request, *route53recoverycontrolconfig.GetResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*route53recoverycontrolconfig.GetResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// GetResourcePolicyRequest indicates an expected call of GetResourcePolicyRequest
+func (mr *MockRoute53RecoveryControlConfigAPIMockRecorder) GetResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicyRequest", reflect.TypeOf((*MockRoute53RecoveryControlConfigAPI)(nil).GetResourcePolicyRequest), arg0)
+}
+
+// GetResourcePolicyWithContext mocks base method
+func (m *MockRoute53RecoveryControlConfigAPI) GetResourcePolicyWithContext(arg0 context.Context, arg1 *route53recoverycontrolconfig.GetResourcePolicyInput, arg2 ...request.Option) (*route53recoverycontrolconfig.GetResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*route53recoverycontrolconfig.GetResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcePolicyWithContext indicates an expected call of GetResourcePolicyWithContext
+func (mr *MockRoute53RecoveryControlConfigAPIMockRecorder) GetResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicyWithContext", reflect.TypeOf((*MockRoute53RecoveryControlConfigAPI)(nil).GetResourcePolicyWithContext), varargs...)
+}
+
 // ListAssociatedRoute53HealthChecks mocks base method
 func (m *MockRoute53RecoveryControlConfigAPI) ListAssociatedRoute53HealthChecks(arg0 *route53recoverycontrolconfig.ListAssociatedRoute53HealthChecksInput) (*route53recoverycontrolconfig.ListAssociatedRoute53HealthChecksOutput, error) {
 	m.ctrl.T.Helper()

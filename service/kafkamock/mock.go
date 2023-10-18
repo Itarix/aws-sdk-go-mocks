@@ -285,6 +285,56 @@ func (mr *MockKafkaAPIMockRecorder) CreateConfigurationWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfigurationWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).CreateConfigurationWithContext), varargs...)
 }
 
+// CreateReplicator mocks base method
+func (m *MockKafkaAPI) CreateReplicator(arg0 *kafka.CreateReplicatorInput) (*kafka.CreateReplicatorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateReplicator", arg0)
+	ret0, _ := ret[0].(*kafka.CreateReplicatorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateReplicator indicates an expected call of CreateReplicator
+func (mr *MockKafkaAPIMockRecorder) CreateReplicator(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReplicator", reflect.TypeOf((*MockKafkaAPI)(nil).CreateReplicator), arg0)
+}
+
+// CreateReplicatorRequest mocks base method
+func (m *MockKafkaAPI) CreateReplicatorRequest(arg0 *kafka.CreateReplicatorInput) (*request.Request, *kafka.CreateReplicatorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateReplicatorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.CreateReplicatorOutput)
+	return ret0, ret1
+}
+
+// CreateReplicatorRequest indicates an expected call of CreateReplicatorRequest
+func (mr *MockKafkaAPIMockRecorder) CreateReplicatorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReplicatorRequest", reflect.TypeOf((*MockKafkaAPI)(nil).CreateReplicatorRequest), arg0)
+}
+
+// CreateReplicatorWithContext mocks base method
+func (m *MockKafkaAPI) CreateReplicatorWithContext(arg0 context.Context, arg1 *kafka.CreateReplicatorInput, arg2 ...request.Option) (*kafka.CreateReplicatorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateReplicatorWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.CreateReplicatorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateReplicatorWithContext indicates an expected call of CreateReplicatorWithContext
+func (mr *MockKafkaAPIMockRecorder) CreateReplicatorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateReplicatorWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).CreateReplicatorWithContext), varargs...)
+}
+
 // CreateVpcConnection mocks base method
 func (m *MockKafkaAPI) CreateVpcConnection(arg0 *kafka.CreateVpcConnectionInput) (*kafka.CreateVpcConnectionOutput, error) {
 	m.ctrl.T.Helper()
@@ -483,6 +533,56 @@ func (mr *MockKafkaAPIMockRecorder) DeleteConfigurationWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConfigurationWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteConfigurationWithContext), varargs...)
+}
+
+// DeleteReplicator mocks base method
+func (m *MockKafkaAPI) DeleteReplicator(arg0 *kafka.DeleteReplicatorInput) (*kafka.DeleteReplicatorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteReplicator", arg0)
+	ret0, _ := ret[0].(*kafka.DeleteReplicatorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteReplicator indicates an expected call of DeleteReplicator
+func (mr *MockKafkaAPIMockRecorder) DeleteReplicator(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReplicator", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteReplicator), arg0)
+}
+
+// DeleteReplicatorRequest mocks base method
+func (m *MockKafkaAPI) DeleteReplicatorRequest(arg0 *kafka.DeleteReplicatorInput) (*request.Request, *kafka.DeleteReplicatorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteReplicatorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.DeleteReplicatorOutput)
+	return ret0, ret1
+}
+
+// DeleteReplicatorRequest indicates an expected call of DeleteReplicatorRequest
+func (mr *MockKafkaAPIMockRecorder) DeleteReplicatorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReplicatorRequest", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteReplicatorRequest), arg0)
+}
+
+// DeleteReplicatorWithContext mocks base method
+func (m *MockKafkaAPI) DeleteReplicatorWithContext(arg0 context.Context, arg1 *kafka.DeleteReplicatorInput, arg2 ...request.Option) (*kafka.DeleteReplicatorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteReplicatorWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.DeleteReplicatorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteReplicatorWithContext indicates an expected call of DeleteReplicatorWithContext
+func (mr *MockKafkaAPIMockRecorder) DeleteReplicatorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteReplicatorWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).DeleteReplicatorWithContext), varargs...)
 }
 
 // DeleteVpcConnection mocks base method
@@ -833,6 +933,56 @@ func (mr *MockKafkaAPIMockRecorder) DescribeConfigurationWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeConfigurationWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).DescribeConfigurationWithContext), varargs...)
+}
+
+// DescribeReplicator mocks base method
+func (m *MockKafkaAPI) DescribeReplicator(arg0 *kafka.DescribeReplicatorInput) (*kafka.DescribeReplicatorOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplicator", arg0)
+	ret0, _ := ret[0].(*kafka.DescribeReplicatorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReplicator indicates an expected call of DescribeReplicator
+func (mr *MockKafkaAPIMockRecorder) DescribeReplicator(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicator", reflect.TypeOf((*MockKafkaAPI)(nil).DescribeReplicator), arg0)
+}
+
+// DescribeReplicatorRequest mocks base method
+func (m *MockKafkaAPI) DescribeReplicatorRequest(arg0 *kafka.DescribeReplicatorInput) (*request.Request, *kafka.DescribeReplicatorOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeReplicatorRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.DescribeReplicatorOutput)
+	return ret0, ret1
+}
+
+// DescribeReplicatorRequest indicates an expected call of DescribeReplicatorRequest
+func (mr *MockKafkaAPIMockRecorder) DescribeReplicatorRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicatorRequest", reflect.TypeOf((*MockKafkaAPI)(nil).DescribeReplicatorRequest), arg0)
+}
+
+// DescribeReplicatorWithContext mocks base method
+func (m *MockKafkaAPI) DescribeReplicatorWithContext(arg0 context.Context, arg1 *kafka.DescribeReplicatorInput, arg2 ...request.Option) (*kafka.DescribeReplicatorOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeReplicatorWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.DescribeReplicatorOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeReplicatorWithContext indicates an expected call of DescribeReplicatorWithContext
+func (mr *MockKafkaAPIMockRecorder) DescribeReplicatorWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeReplicatorWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).DescribeReplicatorWithContext), varargs...)
 }
 
 // DescribeVpcConnection mocks base method
@@ -1782,6 +1932,89 @@ func (mr *MockKafkaAPIMockRecorder) ListNodesWithContext(arg0, arg1 interface{},
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNodesWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListNodesWithContext), varargs...)
 }
 
+// ListReplicators mocks base method
+func (m *MockKafkaAPI) ListReplicators(arg0 *kafka.ListReplicatorsInput) (*kafka.ListReplicatorsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReplicators", arg0)
+	ret0, _ := ret[0].(*kafka.ListReplicatorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReplicators indicates an expected call of ListReplicators
+func (mr *MockKafkaAPIMockRecorder) ListReplicators(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReplicators", reflect.TypeOf((*MockKafkaAPI)(nil).ListReplicators), arg0)
+}
+
+// ListReplicatorsPages mocks base method
+func (m *MockKafkaAPI) ListReplicatorsPages(arg0 *kafka.ListReplicatorsInput, arg1 func(*kafka.ListReplicatorsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReplicatorsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListReplicatorsPages indicates an expected call of ListReplicatorsPages
+func (mr *MockKafkaAPIMockRecorder) ListReplicatorsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReplicatorsPages", reflect.TypeOf((*MockKafkaAPI)(nil).ListReplicatorsPages), arg0, arg1)
+}
+
+// ListReplicatorsPagesWithContext mocks base method
+func (m *MockKafkaAPI) ListReplicatorsPagesWithContext(arg0 context.Context, arg1 *kafka.ListReplicatorsInput, arg2 func(*kafka.ListReplicatorsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReplicatorsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListReplicatorsPagesWithContext indicates an expected call of ListReplicatorsPagesWithContext
+func (mr *MockKafkaAPIMockRecorder) ListReplicatorsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReplicatorsPagesWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListReplicatorsPagesWithContext), varargs...)
+}
+
+// ListReplicatorsRequest mocks base method
+func (m *MockKafkaAPI) ListReplicatorsRequest(arg0 *kafka.ListReplicatorsInput) (*request.Request, *kafka.ListReplicatorsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListReplicatorsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.ListReplicatorsOutput)
+	return ret0, ret1
+}
+
+// ListReplicatorsRequest indicates an expected call of ListReplicatorsRequest
+func (mr *MockKafkaAPIMockRecorder) ListReplicatorsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReplicatorsRequest", reflect.TypeOf((*MockKafkaAPI)(nil).ListReplicatorsRequest), arg0)
+}
+
+// ListReplicatorsWithContext mocks base method
+func (m *MockKafkaAPI) ListReplicatorsWithContext(arg0 context.Context, arg1 *kafka.ListReplicatorsInput, arg2 ...request.Option) (*kafka.ListReplicatorsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListReplicatorsWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.ListReplicatorsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListReplicatorsWithContext indicates an expected call of ListReplicatorsWithContext
+func (mr *MockKafkaAPIMockRecorder) ListReplicatorsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListReplicatorsWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).ListReplicatorsWithContext), varargs...)
+}
+
 // ListScramSecrets mocks base method
 func (m *MockKafkaAPI) ListScramSecrets(arg0 *kafka.ListScramSecretsInput) (*kafka.ListScramSecretsOutput, error) {
 	m.ctrl.T.Helper()
@@ -2646,6 +2879,56 @@ func (mr *MockKafkaAPIMockRecorder) UpdateMonitoringWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateMonitoringWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateMonitoringWithContext), varargs...)
+}
+
+// UpdateReplicationInfo mocks base method
+func (m *MockKafkaAPI) UpdateReplicationInfo(arg0 *kafka.UpdateReplicationInfoInput) (*kafka.UpdateReplicationInfoOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateReplicationInfo", arg0)
+	ret0, _ := ret[0].(*kafka.UpdateReplicationInfoOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateReplicationInfo indicates an expected call of UpdateReplicationInfo
+func (mr *MockKafkaAPIMockRecorder) UpdateReplicationInfo(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateReplicationInfo", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateReplicationInfo), arg0)
+}
+
+// UpdateReplicationInfoRequest mocks base method
+func (m *MockKafkaAPI) UpdateReplicationInfoRequest(arg0 *kafka.UpdateReplicationInfoInput) (*request.Request, *kafka.UpdateReplicationInfoOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateReplicationInfoRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kafka.UpdateReplicationInfoOutput)
+	return ret0, ret1
+}
+
+// UpdateReplicationInfoRequest indicates an expected call of UpdateReplicationInfoRequest
+func (mr *MockKafkaAPIMockRecorder) UpdateReplicationInfoRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateReplicationInfoRequest", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateReplicationInfoRequest), arg0)
+}
+
+// UpdateReplicationInfoWithContext mocks base method
+func (m *MockKafkaAPI) UpdateReplicationInfoWithContext(arg0 context.Context, arg1 *kafka.UpdateReplicationInfoInput, arg2 ...request.Option) (*kafka.UpdateReplicationInfoOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateReplicationInfoWithContext", varargs...)
+	ret0, _ := ret[0].(*kafka.UpdateReplicationInfoOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateReplicationInfoWithContext indicates an expected call of UpdateReplicationInfoWithContext
+func (mr *MockKafkaAPIMockRecorder) UpdateReplicationInfoWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateReplicationInfoWithContext", reflect.TypeOf((*MockKafkaAPI)(nil).UpdateReplicationInfoWithContext), varargs...)
 }
 
 // UpdateSecurity mocks base method
