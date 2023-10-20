@@ -1783,6 +1783,56 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) GetCompatibleVersionsWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetCompatibleVersionsWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).GetCompatibleVersionsWithContext), varargs...)
 }
 
+// GetDomainMaintenanceStatus mocks base method
+func (m *MockOpenSearchServiceAPI) GetDomainMaintenanceStatus(arg0 *opensearchservice.GetDomainMaintenanceStatusInput) (*opensearchservice.GetDomainMaintenanceStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDomainMaintenanceStatus", arg0)
+	ret0, _ := ret[0].(*opensearchservice.GetDomainMaintenanceStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDomainMaintenanceStatus indicates an expected call of GetDomainMaintenanceStatus
+func (mr *MockOpenSearchServiceAPIMockRecorder) GetDomainMaintenanceStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainMaintenanceStatus", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).GetDomainMaintenanceStatus), arg0)
+}
+
+// GetDomainMaintenanceStatusRequest mocks base method
+func (m *MockOpenSearchServiceAPI) GetDomainMaintenanceStatusRequest(arg0 *opensearchservice.GetDomainMaintenanceStatusInput) (*request.Request, *opensearchservice.GetDomainMaintenanceStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetDomainMaintenanceStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.GetDomainMaintenanceStatusOutput)
+	return ret0, ret1
+}
+
+// GetDomainMaintenanceStatusRequest indicates an expected call of GetDomainMaintenanceStatusRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) GetDomainMaintenanceStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainMaintenanceStatusRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).GetDomainMaintenanceStatusRequest), arg0)
+}
+
+// GetDomainMaintenanceStatusWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) GetDomainMaintenanceStatusWithContext(arg0 context.Context, arg1 *opensearchservice.GetDomainMaintenanceStatusInput, arg2 ...request.Option) (*opensearchservice.GetDomainMaintenanceStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetDomainMaintenanceStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.GetDomainMaintenanceStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetDomainMaintenanceStatusWithContext indicates an expected call of GetDomainMaintenanceStatusWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) GetDomainMaintenanceStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDomainMaintenanceStatusWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).GetDomainMaintenanceStatusWithContext), varargs...)
+}
+
 // GetPackageVersionHistory mocks base method
 func (m *MockOpenSearchServiceAPI) GetPackageVersionHistory(arg0 *opensearchservice.GetPackageVersionHistoryInput) (*opensearchservice.GetPackageVersionHistoryOutput, error) {
 	m.ctrl.T.Helper()
@@ -1997,6 +2047,89 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) GetUpgradeStatusWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUpgradeStatusWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).GetUpgradeStatusWithContext), varargs...)
+}
+
+// ListDomainMaintenances mocks base method
+func (m *MockOpenSearchServiceAPI) ListDomainMaintenances(arg0 *opensearchservice.ListDomainMaintenancesInput) (*opensearchservice.ListDomainMaintenancesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDomainMaintenances", arg0)
+	ret0, _ := ret[0].(*opensearchservice.ListDomainMaintenancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDomainMaintenances indicates an expected call of ListDomainMaintenances
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListDomainMaintenances(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainMaintenances", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListDomainMaintenances), arg0)
+}
+
+// ListDomainMaintenancesPages mocks base method
+func (m *MockOpenSearchServiceAPI) ListDomainMaintenancesPages(arg0 *opensearchservice.ListDomainMaintenancesInput, arg1 func(*opensearchservice.ListDomainMaintenancesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDomainMaintenancesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDomainMaintenancesPages indicates an expected call of ListDomainMaintenancesPages
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListDomainMaintenancesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainMaintenancesPages", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListDomainMaintenancesPages), arg0, arg1)
+}
+
+// ListDomainMaintenancesPagesWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) ListDomainMaintenancesPagesWithContext(arg0 context.Context, arg1 *opensearchservice.ListDomainMaintenancesInput, arg2 func(*opensearchservice.ListDomainMaintenancesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDomainMaintenancesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDomainMaintenancesPagesWithContext indicates an expected call of ListDomainMaintenancesPagesWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListDomainMaintenancesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainMaintenancesPagesWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListDomainMaintenancesPagesWithContext), varargs...)
+}
+
+// ListDomainMaintenancesRequest mocks base method
+func (m *MockOpenSearchServiceAPI) ListDomainMaintenancesRequest(arg0 *opensearchservice.ListDomainMaintenancesInput) (*request.Request, *opensearchservice.ListDomainMaintenancesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDomainMaintenancesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.ListDomainMaintenancesOutput)
+	return ret0, ret1
+}
+
+// ListDomainMaintenancesRequest indicates an expected call of ListDomainMaintenancesRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListDomainMaintenancesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainMaintenancesRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListDomainMaintenancesRequest), arg0)
+}
+
+// ListDomainMaintenancesWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) ListDomainMaintenancesWithContext(arg0 context.Context, arg1 *opensearchservice.ListDomainMaintenancesInput, arg2 ...request.Option) (*opensearchservice.ListDomainMaintenancesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDomainMaintenancesWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.ListDomainMaintenancesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListDomainMaintenancesWithContext indicates an expected call of ListDomainMaintenancesWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) ListDomainMaintenancesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainMaintenancesWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).ListDomainMaintenancesWithContext), varargs...)
 }
 
 // ListDomainNames mocks base method
@@ -2862,6 +2995,56 @@ func (mr *MockOpenSearchServiceAPIMockRecorder) RevokeVpcEndpointAccessWithConte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RevokeVpcEndpointAccessWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).RevokeVpcEndpointAccessWithContext), varargs...)
+}
+
+// StartDomainMaintenance mocks base method
+func (m *MockOpenSearchServiceAPI) StartDomainMaintenance(arg0 *opensearchservice.StartDomainMaintenanceInput) (*opensearchservice.StartDomainMaintenanceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDomainMaintenance", arg0)
+	ret0, _ := ret[0].(*opensearchservice.StartDomainMaintenanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDomainMaintenance indicates an expected call of StartDomainMaintenance
+func (mr *MockOpenSearchServiceAPIMockRecorder) StartDomainMaintenance(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDomainMaintenance", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).StartDomainMaintenance), arg0)
+}
+
+// StartDomainMaintenanceRequest mocks base method
+func (m *MockOpenSearchServiceAPI) StartDomainMaintenanceRequest(arg0 *opensearchservice.StartDomainMaintenanceInput) (*request.Request, *opensearchservice.StartDomainMaintenanceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartDomainMaintenanceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchservice.StartDomainMaintenanceOutput)
+	return ret0, ret1
+}
+
+// StartDomainMaintenanceRequest indicates an expected call of StartDomainMaintenanceRequest
+func (mr *MockOpenSearchServiceAPIMockRecorder) StartDomainMaintenanceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDomainMaintenanceRequest", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).StartDomainMaintenanceRequest), arg0)
+}
+
+// StartDomainMaintenanceWithContext mocks base method
+func (m *MockOpenSearchServiceAPI) StartDomainMaintenanceWithContext(arg0 context.Context, arg1 *opensearchservice.StartDomainMaintenanceInput, arg2 ...request.Option) (*opensearchservice.StartDomainMaintenanceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartDomainMaintenanceWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchservice.StartDomainMaintenanceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartDomainMaintenanceWithContext indicates an expected call of StartDomainMaintenanceWithContext
+func (mr *MockOpenSearchServiceAPIMockRecorder) StartDomainMaintenanceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartDomainMaintenanceWithContext", reflect.TypeOf((*MockOpenSearchServiceAPI)(nil).StartDomainMaintenanceWithContext), varargs...)
 }
 
 // StartServiceSoftwareUpdate mocks base method
