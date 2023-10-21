@@ -85,6 +85,56 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) AssociateConfiguration
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "AssociateConfigurationItemsToApplicationWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).AssociateConfigurationItemsToApplicationWithContext), varargs...)
 }
 
+// BatchDeleteAgents mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) BatchDeleteAgents(arg0 *applicationdiscoveryservice.BatchDeleteAgentsInput) (*applicationdiscoveryservice.BatchDeleteAgentsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteAgents", arg0)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.BatchDeleteAgentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteAgents indicates an expected call of BatchDeleteAgents
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) BatchDeleteAgents(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteAgents", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).BatchDeleteAgents), arg0)
+}
+
+// BatchDeleteAgentsRequest mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) BatchDeleteAgentsRequest(arg0 *applicationdiscoveryservice.BatchDeleteAgentsInput) (*request.Request, *applicationdiscoveryservice.BatchDeleteAgentsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchDeleteAgentsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationdiscoveryservice.BatchDeleteAgentsOutput)
+	return ret0, ret1
+}
+
+// BatchDeleteAgentsRequest indicates an expected call of BatchDeleteAgentsRequest
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) BatchDeleteAgentsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteAgentsRequest", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).BatchDeleteAgentsRequest), arg0)
+}
+
+// BatchDeleteAgentsWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) BatchDeleteAgentsWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.BatchDeleteAgentsInput, arg2 ...request.Option) (*applicationdiscoveryservice.BatchDeleteAgentsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchDeleteAgentsWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.BatchDeleteAgentsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchDeleteAgentsWithContext indicates an expected call of BatchDeleteAgentsWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) BatchDeleteAgentsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchDeleteAgentsWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).BatchDeleteAgentsWithContext), varargs...)
+}
+
 // BatchDeleteImportData mocks base method
 func (m *MockApplicationDiscoveryServiceAPI) BatchDeleteImportData(arg0 *applicationdiscoveryservice.BatchDeleteImportDataInput) (*applicationdiscoveryservice.BatchDeleteImportDataOutput, error) {
 	m.ctrl.T.Helper()
@@ -350,6 +400,39 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeAgents(arg0 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAgents", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeAgents), arg0)
 }
 
+// DescribeAgentsPages mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeAgentsPages(arg0 *applicationdiscoveryservice.DescribeAgentsInput, arg1 func(*applicationdiscoveryservice.DescribeAgentsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAgentsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeAgentsPages indicates an expected call of DescribeAgentsPages
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeAgentsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAgentsPages", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeAgentsPages), arg0, arg1)
+}
+
+// DescribeAgentsPagesWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeAgentsPagesWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DescribeAgentsInput, arg2 func(*applicationdiscoveryservice.DescribeAgentsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAgentsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeAgentsPagesWithContext indicates an expected call of DescribeAgentsPagesWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeAgentsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAgentsPagesWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeAgentsPagesWithContext), varargs...)
+}
+
 // DescribeAgentsRequest mocks base method
 func (m *MockApplicationDiscoveryServiceAPI) DescribeAgentsRequest(arg0 *applicationdiscoveryservice.DescribeAgentsInput) (*request.Request, *applicationdiscoveryservice.DescribeAgentsOutput) {
 	m.ctrl.T.Helper()
@@ -383,6 +466,56 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeAgentsWithCont
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAgentsWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeAgentsWithContext), varargs...)
+}
+
+// DescribeBatchDeleteConfigurationTask mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeBatchDeleteConfigurationTask(arg0 *applicationdiscoveryservice.DescribeBatchDeleteConfigurationTaskInput) (*applicationdiscoveryservice.DescribeBatchDeleteConfigurationTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBatchDeleteConfigurationTask", arg0)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.DescribeBatchDeleteConfigurationTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBatchDeleteConfigurationTask indicates an expected call of DescribeBatchDeleteConfigurationTask
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeBatchDeleteConfigurationTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchDeleteConfigurationTask", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeBatchDeleteConfigurationTask), arg0)
+}
+
+// DescribeBatchDeleteConfigurationTaskRequest mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeBatchDeleteConfigurationTaskRequest(arg0 *applicationdiscoveryservice.DescribeBatchDeleteConfigurationTaskInput) (*request.Request, *applicationdiscoveryservice.DescribeBatchDeleteConfigurationTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeBatchDeleteConfigurationTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationdiscoveryservice.DescribeBatchDeleteConfigurationTaskOutput)
+	return ret0, ret1
+}
+
+// DescribeBatchDeleteConfigurationTaskRequest indicates an expected call of DescribeBatchDeleteConfigurationTaskRequest
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeBatchDeleteConfigurationTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchDeleteConfigurationTaskRequest", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeBatchDeleteConfigurationTaskRequest), arg0)
+}
+
+// DescribeBatchDeleteConfigurationTaskWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeBatchDeleteConfigurationTaskWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DescribeBatchDeleteConfigurationTaskInput, arg2 ...request.Option) (*applicationdiscoveryservice.DescribeBatchDeleteConfigurationTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeBatchDeleteConfigurationTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.DescribeBatchDeleteConfigurationTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeBatchDeleteConfigurationTaskWithContext indicates an expected call of DescribeBatchDeleteConfigurationTaskWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeBatchDeleteConfigurationTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeBatchDeleteConfigurationTaskWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeBatchDeleteConfigurationTaskWithContext), varargs...)
 }
 
 // DescribeConfigurations mocks base method
@@ -533,6 +666,39 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeExportConfigur
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExportConfigurations", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeExportConfigurations), arg0)
 }
 
+// DescribeExportConfigurationsPages mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeExportConfigurationsPages(arg0 *applicationdiscoveryservice.DescribeExportConfigurationsInput, arg1 func(*applicationdiscoveryservice.DescribeExportConfigurationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeExportConfigurationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeExportConfigurationsPages indicates an expected call of DescribeExportConfigurationsPages
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeExportConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExportConfigurationsPages", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeExportConfigurationsPages), arg0, arg1)
+}
+
+// DescribeExportConfigurationsPagesWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeExportConfigurationsPagesWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DescribeExportConfigurationsInput, arg2 func(*applicationdiscoveryservice.DescribeExportConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeExportConfigurationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeExportConfigurationsPagesWithContext indicates an expected call of DescribeExportConfigurationsPagesWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeExportConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExportConfigurationsPagesWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeExportConfigurationsPagesWithContext), varargs...)
+}
+
 // DescribeExportConfigurationsRequest mocks base method
 func (m *MockApplicationDiscoveryServiceAPI) DescribeExportConfigurationsRequest(arg0 *applicationdiscoveryservice.DescribeExportConfigurationsInput) (*request.Request, *applicationdiscoveryservice.DescribeExportConfigurationsOutput) {
 	m.ctrl.T.Helper()
@@ -581,6 +747,39 @@ func (m *MockApplicationDiscoveryServiceAPI) DescribeExportTasks(arg0 *applicati
 func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeExportTasks(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExportTasks", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeExportTasks), arg0)
+}
+
+// DescribeExportTasksPages mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeExportTasksPages(arg0 *applicationdiscoveryservice.DescribeExportTasksInput, arg1 func(*applicationdiscoveryservice.DescribeExportTasksOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeExportTasksPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeExportTasksPages indicates an expected call of DescribeExportTasksPages
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeExportTasksPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExportTasksPages", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeExportTasksPages), arg0, arg1)
+}
+
+// DescribeExportTasksPagesWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeExportTasksPagesWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DescribeExportTasksInput, arg2 func(*applicationdiscoveryservice.DescribeExportTasksOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeExportTasksPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeExportTasksPagesWithContext indicates an expected call of DescribeExportTasksPagesWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeExportTasksPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeExportTasksPagesWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeExportTasksPagesWithContext), varargs...)
 }
 
 // DescribeExportTasksRequest mocks base method
@@ -714,6 +913,39 @@ func (m *MockApplicationDiscoveryServiceAPI) DescribeTags(arg0 *applicationdisco
 func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeTags(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTags", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeTags), arg0)
+}
+
+// DescribeTagsPages mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeTagsPages(arg0 *applicationdiscoveryservice.DescribeTagsInput, arg1 func(*applicationdiscoveryservice.DescribeTagsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeTagsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeTagsPages indicates an expected call of DescribeTagsPages
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeTagsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTagsPages", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeTagsPages), arg0, arg1)
+}
+
+// DescribeTagsPagesWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) DescribeTagsPagesWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.DescribeTagsInput, arg2 func(*applicationdiscoveryservice.DescribeTagsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeTagsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeTagsPagesWithContext indicates an expected call of DescribeTagsPagesWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) DescribeTagsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeTagsPagesWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).DescribeTagsPagesWithContext), varargs...)
 }
 
 // DescribeTagsRequest mocks base method
@@ -916,6 +1148,39 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) ListConfigurations(arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurations", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).ListConfigurations), arg0)
 }
 
+// ListConfigurationsPages mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) ListConfigurationsPages(arg0 *applicationdiscoveryservice.ListConfigurationsInput, arg1 func(*applicationdiscoveryservice.ListConfigurationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListConfigurationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListConfigurationsPages indicates an expected call of ListConfigurationsPages
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) ListConfigurationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationsPages", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).ListConfigurationsPages), arg0, arg1)
+}
+
+// ListConfigurationsPagesWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) ListConfigurationsPagesWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.ListConfigurationsInput, arg2 func(*applicationdiscoveryservice.ListConfigurationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListConfigurationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListConfigurationsPagesWithContext indicates an expected call of ListConfigurationsPagesWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) ListConfigurationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfigurationsPagesWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).ListConfigurationsPagesWithContext), varargs...)
+}
+
 // ListConfigurationsRequest mocks base method
 func (m *MockApplicationDiscoveryServiceAPI) ListConfigurationsRequest(arg0 *applicationdiscoveryservice.ListConfigurationsInput) (*request.Request, *applicationdiscoveryservice.ListConfigurationsOutput) {
 	m.ctrl.T.Helper()
@@ -999,6 +1264,56 @@ func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) ListServerNeighborsWit
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListServerNeighborsWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).ListServerNeighborsWithContext), varargs...)
+}
+
+// StartBatchDeleteConfigurationTask mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) StartBatchDeleteConfigurationTask(arg0 *applicationdiscoveryservice.StartBatchDeleteConfigurationTaskInput) (*applicationdiscoveryservice.StartBatchDeleteConfigurationTaskOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartBatchDeleteConfigurationTask", arg0)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.StartBatchDeleteConfigurationTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartBatchDeleteConfigurationTask indicates an expected call of StartBatchDeleteConfigurationTask
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartBatchDeleteConfigurationTask(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartBatchDeleteConfigurationTask", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).StartBatchDeleteConfigurationTask), arg0)
+}
+
+// StartBatchDeleteConfigurationTaskRequest mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) StartBatchDeleteConfigurationTaskRequest(arg0 *applicationdiscoveryservice.StartBatchDeleteConfigurationTaskInput) (*request.Request, *applicationdiscoveryservice.StartBatchDeleteConfigurationTaskOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartBatchDeleteConfigurationTaskRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*applicationdiscoveryservice.StartBatchDeleteConfigurationTaskOutput)
+	return ret0, ret1
+}
+
+// StartBatchDeleteConfigurationTaskRequest indicates an expected call of StartBatchDeleteConfigurationTaskRequest
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartBatchDeleteConfigurationTaskRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartBatchDeleteConfigurationTaskRequest", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).StartBatchDeleteConfigurationTaskRequest), arg0)
+}
+
+// StartBatchDeleteConfigurationTaskWithContext mocks base method
+func (m *MockApplicationDiscoveryServiceAPI) StartBatchDeleteConfigurationTaskWithContext(arg0 context.Context, arg1 *applicationdiscoveryservice.StartBatchDeleteConfigurationTaskInput, arg2 ...request.Option) (*applicationdiscoveryservice.StartBatchDeleteConfigurationTaskOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartBatchDeleteConfigurationTaskWithContext", varargs...)
+	ret0, _ := ret[0].(*applicationdiscoveryservice.StartBatchDeleteConfigurationTaskOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartBatchDeleteConfigurationTaskWithContext indicates an expected call of StartBatchDeleteConfigurationTaskWithContext
+func (mr *MockApplicationDiscoveryServiceAPIMockRecorder) StartBatchDeleteConfigurationTaskWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartBatchDeleteConfigurationTaskWithContext", reflect.TypeOf((*MockApplicationDiscoveryServiceAPI)(nil).StartBatchDeleteConfigurationTaskWithContext), varargs...)
 }
 
 // StartContinuousExport mocks base method

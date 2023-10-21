@@ -10916,6 +10916,56 @@ func (mr *MockConnectAPIMockRecorder) UpdatePhoneNumber(arg0 interface{}) *gomoc
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePhoneNumber", reflect.TypeOf((*MockConnectAPI)(nil).UpdatePhoneNumber), arg0)
 }
 
+// UpdatePhoneNumberMetadata mocks base method
+func (m *MockConnectAPI) UpdatePhoneNumberMetadata(arg0 *connect.UpdatePhoneNumberMetadataInput) (*connect.UpdatePhoneNumberMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePhoneNumberMetadata", arg0)
+	ret0, _ := ret[0].(*connect.UpdatePhoneNumberMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePhoneNumberMetadata indicates an expected call of UpdatePhoneNumberMetadata
+func (mr *MockConnectAPIMockRecorder) UpdatePhoneNumberMetadata(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePhoneNumberMetadata", reflect.TypeOf((*MockConnectAPI)(nil).UpdatePhoneNumberMetadata), arg0)
+}
+
+// UpdatePhoneNumberMetadataRequest mocks base method
+func (m *MockConnectAPI) UpdatePhoneNumberMetadataRequest(arg0 *connect.UpdatePhoneNumberMetadataInput) (*request.Request, *connect.UpdatePhoneNumberMetadataOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePhoneNumberMetadataRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdatePhoneNumberMetadataOutput)
+	return ret0, ret1
+}
+
+// UpdatePhoneNumberMetadataRequest indicates an expected call of UpdatePhoneNumberMetadataRequest
+func (mr *MockConnectAPIMockRecorder) UpdatePhoneNumberMetadataRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePhoneNumberMetadataRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdatePhoneNumberMetadataRequest), arg0)
+}
+
+// UpdatePhoneNumberMetadataWithContext mocks base method
+func (m *MockConnectAPI) UpdatePhoneNumberMetadataWithContext(arg0 context.Context, arg1 *connect.UpdatePhoneNumberMetadataInput, arg2 ...request.Option) (*connect.UpdatePhoneNumberMetadataOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdatePhoneNumberMetadataWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdatePhoneNumberMetadataOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePhoneNumberMetadataWithContext indicates an expected call of UpdatePhoneNumberMetadataWithContext
+func (mr *MockConnectAPIMockRecorder) UpdatePhoneNumberMetadataWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePhoneNumberMetadataWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdatePhoneNumberMetadataWithContext), varargs...)
+}
+
 // UpdatePhoneNumberRequest mocks base method
 func (m *MockConnectAPI) UpdatePhoneNumberRequest(arg0 *connect.UpdatePhoneNumberInput) (*request.Request, *connect.UpdatePhoneNumberOutput) {
 	m.ctrl.T.Helper()
