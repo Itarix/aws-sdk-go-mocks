@@ -2166,6 +2166,56 @@ func (mr *MockRekognitionAPIMockRecorder) GetLabelDetectionWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLabelDetectionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).GetLabelDetectionWithContext), varargs...)
 }
 
+// GetMediaAnalysisJob mocks base method
+func (m *MockRekognitionAPI) GetMediaAnalysisJob(arg0 *rekognition.GetMediaAnalysisJobInput) (*rekognition.GetMediaAnalysisJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMediaAnalysisJob", arg0)
+	ret0, _ := ret[0].(*rekognition.GetMediaAnalysisJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMediaAnalysisJob indicates an expected call of GetMediaAnalysisJob
+func (mr *MockRekognitionAPIMockRecorder) GetMediaAnalysisJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMediaAnalysisJob", reflect.TypeOf((*MockRekognitionAPI)(nil).GetMediaAnalysisJob), arg0)
+}
+
+// GetMediaAnalysisJobRequest mocks base method
+func (m *MockRekognitionAPI) GetMediaAnalysisJobRequest(arg0 *rekognition.GetMediaAnalysisJobInput) (*request.Request, *rekognition.GetMediaAnalysisJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetMediaAnalysisJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.GetMediaAnalysisJobOutput)
+	return ret0, ret1
+}
+
+// GetMediaAnalysisJobRequest indicates an expected call of GetMediaAnalysisJobRequest
+func (mr *MockRekognitionAPIMockRecorder) GetMediaAnalysisJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMediaAnalysisJobRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).GetMediaAnalysisJobRequest), arg0)
+}
+
+// GetMediaAnalysisJobWithContext mocks base method
+func (m *MockRekognitionAPI) GetMediaAnalysisJobWithContext(arg0 context.Context, arg1 *rekognition.GetMediaAnalysisJobInput, arg2 ...request.Option) (*rekognition.GetMediaAnalysisJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetMediaAnalysisJobWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.GetMediaAnalysisJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetMediaAnalysisJobWithContext indicates an expected call of GetMediaAnalysisJobWithContext
+func (mr *MockRekognitionAPIMockRecorder) GetMediaAnalysisJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMediaAnalysisJobWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).GetMediaAnalysisJobWithContext), varargs...)
+}
+
 // GetPersonTracking mocks base method
 func (m *MockRekognitionAPI) GetPersonTracking(arg0 *rekognition.GetPersonTrackingInput) (*rekognition.GetPersonTrackingOutput, error) {
 	m.ctrl.T.Helper()
@@ -2795,6 +2845,89 @@ func (mr *MockRekognitionAPIMockRecorder) ListFacesWithContext(arg0, arg1 interf
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFacesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListFacesWithContext), varargs...)
+}
+
+// ListMediaAnalysisJobs mocks base method
+func (m *MockRekognitionAPI) ListMediaAnalysisJobs(arg0 *rekognition.ListMediaAnalysisJobsInput) (*rekognition.ListMediaAnalysisJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMediaAnalysisJobs", arg0)
+	ret0, _ := ret[0].(*rekognition.ListMediaAnalysisJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMediaAnalysisJobs indicates an expected call of ListMediaAnalysisJobs
+func (mr *MockRekognitionAPIMockRecorder) ListMediaAnalysisJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMediaAnalysisJobs", reflect.TypeOf((*MockRekognitionAPI)(nil).ListMediaAnalysisJobs), arg0)
+}
+
+// ListMediaAnalysisJobsPages mocks base method
+func (m *MockRekognitionAPI) ListMediaAnalysisJobsPages(arg0 *rekognition.ListMediaAnalysisJobsInput, arg1 func(*rekognition.ListMediaAnalysisJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMediaAnalysisJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMediaAnalysisJobsPages indicates an expected call of ListMediaAnalysisJobsPages
+func (mr *MockRekognitionAPIMockRecorder) ListMediaAnalysisJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMediaAnalysisJobsPages", reflect.TypeOf((*MockRekognitionAPI)(nil).ListMediaAnalysisJobsPages), arg0, arg1)
+}
+
+// ListMediaAnalysisJobsPagesWithContext mocks base method
+func (m *MockRekognitionAPI) ListMediaAnalysisJobsPagesWithContext(arg0 context.Context, arg1 *rekognition.ListMediaAnalysisJobsInput, arg2 func(*rekognition.ListMediaAnalysisJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMediaAnalysisJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListMediaAnalysisJobsPagesWithContext indicates an expected call of ListMediaAnalysisJobsPagesWithContext
+func (mr *MockRekognitionAPIMockRecorder) ListMediaAnalysisJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMediaAnalysisJobsPagesWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListMediaAnalysisJobsPagesWithContext), varargs...)
+}
+
+// ListMediaAnalysisJobsRequest mocks base method
+func (m *MockRekognitionAPI) ListMediaAnalysisJobsRequest(arg0 *rekognition.ListMediaAnalysisJobsInput) (*request.Request, *rekognition.ListMediaAnalysisJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListMediaAnalysisJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.ListMediaAnalysisJobsOutput)
+	return ret0, ret1
+}
+
+// ListMediaAnalysisJobsRequest indicates an expected call of ListMediaAnalysisJobsRequest
+func (mr *MockRekognitionAPIMockRecorder) ListMediaAnalysisJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMediaAnalysisJobsRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).ListMediaAnalysisJobsRequest), arg0)
+}
+
+// ListMediaAnalysisJobsWithContext mocks base method
+func (m *MockRekognitionAPI) ListMediaAnalysisJobsWithContext(arg0 context.Context, arg1 *rekognition.ListMediaAnalysisJobsInput, arg2 ...request.Option) (*rekognition.ListMediaAnalysisJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListMediaAnalysisJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.ListMediaAnalysisJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListMediaAnalysisJobsWithContext indicates an expected call of ListMediaAnalysisJobsWithContext
+func (mr *MockRekognitionAPIMockRecorder) ListMediaAnalysisJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListMediaAnalysisJobsWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).ListMediaAnalysisJobsWithContext), varargs...)
 }
 
 // ListProjectPolicies mocks base method
@@ -3644,6 +3777,56 @@ func (mr *MockRekognitionAPIMockRecorder) StartLabelDetectionWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartLabelDetectionWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).StartLabelDetectionWithContext), varargs...)
+}
+
+// StartMediaAnalysisJob mocks base method
+func (m *MockRekognitionAPI) StartMediaAnalysisJob(arg0 *rekognition.StartMediaAnalysisJobInput) (*rekognition.StartMediaAnalysisJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMediaAnalysisJob", arg0)
+	ret0, _ := ret[0].(*rekognition.StartMediaAnalysisJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMediaAnalysisJob indicates an expected call of StartMediaAnalysisJob
+func (mr *MockRekognitionAPIMockRecorder) StartMediaAnalysisJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMediaAnalysisJob", reflect.TypeOf((*MockRekognitionAPI)(nil).StartMediaAnalysisJob), arg0)
+}
+
+// StartMediaAnalysisJobRequest mocks base method
+func (m *MockRekognitionAPI) StartMediaAnalysisJobRequest(arg0 *rekognition.StartMediaAnalysisJobInput) (*request.Request, *rekognition.StartMediaAnalysisJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartMediaAnalysisJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*rekognition.StartMediaAnalysisJobOutput)
+	return ret0, ret1
+}
+
+// StartMediaAnalysisJobRequest indicates an expected call of StartMediaAnalysisJobRequest
+func (mr *MockRekognitionAPIMockRecorder) StartMediaAnalysisJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMediaAnalysisJobRequest", reflect.TypeOf((*MockRekognitionAPI)(nil).StartMediaAnalysisJobRequest), arg0)
+}
+
+// StartMediaAnalysisJobWithContext mocks base method
+func (m *MockRekognitionAPI) StartMediaAnalysisJobWithContext(arg0 context.Context, arg1 *rekognition.StartMediaAnalysisJobInput, arg2 ...request.Option) (*rekognition.StartMediaAnalysisJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartMediaAnalysisJobWithContext", varargs...)
+	ret0, _ := ret[0].(*rekognition.StartMediaAnalysisJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartMediaAnalysisJobWithContext indicates an expected call of StartMediaAnalysisJobWithContext
+func (mr *MockRekognitionAPIMockRecorder) StartMediaAnalysisJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartMediaAnalysisJobWithContext", reflect.TypeOf((*MockRekognitionAPI)(nil).StartMediaAnalysisJobWithContext), varargs...)
 }
 
 // StartPersonTracking mocks base method
