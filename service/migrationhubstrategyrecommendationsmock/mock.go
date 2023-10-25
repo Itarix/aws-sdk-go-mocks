@@ -568,6 +568,89 @@ func (mr *MockMigrationHubStrategyRecommendationsAPIMockRecorder) GetServerStrat
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetServerStrategiesWithContext", reflect.TypeOf((*MockMigrationHubStrategyRecommendationsAPI)(nil).GetServerStrategiesWithContext), varargs...)
 }
 
+// ListAnalyzableServers mocks base method
+func (m *MockMigrationHubStrategyRecommendationsAPI) ListAnalyzableServers(arg0 *migrationhubstrategyrecommendations.ListAnalyzableServersInput) (*migrationhubstrategyrecommendations.ListAnalyzableServersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnalyzableServers", arg0)
+	ret0, _ := ret[0].(*migrationhubstrategyrecommendations.ListAnalyzableServersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAnalyzableServers indicates an expected call of ListAnalyzableServers
+func (mr *MockMigrationHubStrategyRecommendationsAPIMockRecorder) ListAnalyzableServers(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalyzableServers", reflect.TypeOf((*MockMigrationHubStrategyRecommendationsAPI)(nil).ListAnalyzableServers), arg0)
+}
+
+// ListAnalyzableServersPages mocks base method
+func (m *MockMigrationHubStrategyRecommendationsAPI) ListAnalyzableServersPages(arg0 *migrationhubstrategyrecommendations.ListAnalyzableServersInput, arg1 func(*migrationhubstrategyrecommendations.ListAnalyzableServersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnalyzableServersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAnalyzableServersPages indicates an expected call of ListAnalyzableServersPages
+func (mr *MockMigrationHubStrategyRecommendationsAPIMockRecorder) ListAnalyzableServersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalyzableServersPages", reflect.TypeOf((*MockMigrationHubStrategyRecommendationsAPI)(nil).ListAnalyzableServersPages), arg0, arg1)
+}
+
+// ListAnalyzableServersPagesWithContext mocks base method
+func (m *MockMigrationHubStrategyRecommendationsAPI) ListAnalyzableServersPagesWithContext(arg0 context.Context, arg1 *migrationhubstrategyrecommendations.ListAnalyzableServersInput, arg2 func(*migrationhubstrategyrecommendations.ListAnalyzableServersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAnalyzableServersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAnalyzableServersPagesWithContext indicates an expected call of ListAnalyzableServersPagesWithContext
+func (mr *MockMigrationHubStrategyRecommendationsAPIMockRecorder) ListAnalyzableServersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalyzableServersPagesWithContext", reflect.TypeOf((*MockMigrationHubStrategyRecommendationsAPI)(nil).ListAnalyzableServersPagesWithContext), varargs...)
+}
+
+// ListAnalyzableServersRequest mocks base method
+func (m *MockMigrationHubStrategyRecommendationsAPI) ListAnalyzableServersRequest(arg0 *migrationhubstrategyrecommendations.ListAnalyzableServersInput) (*request.Request, *migrationhubstrategyrecommendations.ListAnalyzableServersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAnalyzableServersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*migrationhubstrategyrecommendations.ListAnalyzableServersOutput)
+	return ret0, ret1
+}
+
+// ListAnalyzableServersRequest indicates an expected call of ListAnalyzableServersRequest
+func (mr *MockMigrationHubStrategyRecommendationsAPIMockRecorder) ListAnalyzableServersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalyzableServersRequest", reflect.TypeOf((*MockMigrationHubStrategyRecommendationsAPI)(nil).ListAnalyzableServersRequest), arg0)
+}
+
+// ListAnalyzableServersWithContext mocks base method
+func (m *MockMigrationHubStrategyRecommendationsAPI) ListAnalyzableServersWithContext(arg0 context.Context, arg1 *migrationhubstrategyrecommendations.ListAnalyzableServersInput, arg2 ...request.Option) (*migrationhubstrategyrecommendations.ListAnalyzableServersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAnalyzableServersWithContext", varargs...)
+	ret0, _ := ret[0].(*migrationhubstrategyrecommendations.ListAnalyzableServersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAnalyzableServersWithContext indicates an expected call of ListAnalyzableServersWithContext
+func (mr *MockMigrationHubStrategyRecommendationsAPIMockRecorder) ListAnalyzableServersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAnalyzableServersWithContext", reflect.TypeOf((*MockMigrationHubStrategyRecommendationsAPI)(nil).ListAnalyzableServersWithContext), varargs...)
+}
+
 // ListApplicationComponents mocks base method
 func (m *MockMigrationHubStrategyRecommendationsAPI) ListApplicationComponents(arg0 *migrationhubstrategyrecommendations.ListApplicationComponentsInput) (*migrationhubstrategyrecommendations.ListApplicationComponentsOutput, error) {
 	m.ctrl.T.Helper()

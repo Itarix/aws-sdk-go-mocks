@@ -85,6 +85,106 @@ func (mr *MockOpenSearchServerlessAPIMockRecorder) BatchGetCollectionWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetCollectionWithContext", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).BatchGetCollectionWithContext), varargs...)
 }
 
+// BatchGetEffectiveLifecyclePolicy mocks base method
+func (m *MockOpenSearchServerlessAPI) BatchGetEffectiveLifecyclePolicy(arg0 *opensearchserverless.BatchGetEffectiveLifecyclePolicyInput) (*opensearchserverless.BatchGetEffectiveLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetEffectiveLifecyclePolicy", arg0)
+	ret0, _ := ret[0].(*opensearchserverless.BatchGetEffectiveLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetEffectiveLifecyclePolicy indicates an expected call of BatchGetEffectiveLifecyclePolicy
+func (mr *MockOpenSearchServerlessAPIMockRecorder) BatchGetEffectiveLifecyclePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetEffectiveLifecyclePolicy", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).BatchGetEffectiveLifecyclePolicy), arg0)
+}
+
+// BatchGetEffectiveLifecyclePolicyRequest mocks base method
+func (m *MockOpenSearchServerlessAPI) BatchGetEffectiveLifecyclePolicyRequest(arg0 *opensearchserverless.BatchGetEffectiveLifecyclePolicyInput) (*request.Request, *opensearchserverless.BatchGetEffectiveLifecyclePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetEffectiveLifecyclePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchserverless.BatchGetEffectiveLifecyclePolicyOutput)
+	return ret0, ret1
+}
+
+// BatchGetEffectiveLifecyclePolicyRequest indicates an expected call of BatchGetEffectiveLifecyclePolicyRequest
+func (mr *MockOpenSearchServerlessAPIMockRecorder) BatchGetEffectiveLifecyclePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetEffectiveLifecyclePolicyRequest", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).BatchGetEffectiveLifecyclePolicyRequest), arg0)
+}
+
+// BatchGetEffectiveLifecyclePolicyWithContext mocks base method
+func (m *MockOpenSearchServerlessAPI) BatchGetEffectiveLifecyclePolicyWithContext(arg0 context.Context, arg1 *opensearchserverless.BatchGetEffectiveLifecyclePolicyInput, arg2 ...request.Option) (*opensearchserverless.BatchGetEffectiveLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetEffectiveLifecyclePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchserverless.BatchGetEffectiveLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetEffectiveLifecyclePolicyWithContext indicates an expected call of BatchGetEffectiveLifecyclePolicyWithContext
+func (mr *MockOpenSearchServerlessAPIMockRecorder) BatchGetEffectiveLifecyclePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetEffectiveLifecyclePolicyWithContext", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).BatchGetEffectiveLifecyclePolicyWithContext), varargs...)
+}
+
+// BatchGetLifecyclePolicy mocks base method
+func (m *MockOpenSearchServerlessAPI) BatchGetLifecyclePolicy(arg0 *opensearchserverless.BatchGetLifecyclePolicyInput) (*opensearchserverless.BatchGetLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetLifecyclePolicy", arg0)
+	ret0, _ := ret[0].(*opensearchserverless.BatchGetLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetLifecyclePolicy indicates an expected call of BatchGetLifecyclePolicy
+func (mr *MockOpenSearchServerlessAPIMockRecorder) BatchGetLifecyclePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetLifecyclePolicy", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).BatchGetLifecyclePolicy), arg0)
+}
+
+// BatchGetLifecyclePolicyRequest mocks base method
+func (m *MockOpenSearchServerlessAPI) BatchGetLifecyclePolicyRequest(arg0 *opensearchserverless.BatchGetLifecyclePolicyInput) (*request.Request, *opensearchserverless.BatchGetLifecyclePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "BatchGetLifecyclePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchserverless.BatchGetLifecyclePolicyOutput)
+	return ret0, ret1
+}
+
+// BatchGetLifecyclePolicyRequest indicates an expected call of BatchGetLifecyclePolicyRequest
+func (mr *MockOpenSearchServerlessAPIMockRecorder) BatchGetLifecyclePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetLifecyclePolicyRequest", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).BatchGetLifecyclePolicyRequest), arg0)
+}
+
+// BatchGetLifecyclePolicyWithContext mocks base method
+func (m *MockOpenSearchServerlessAPI) BatchGetLifecyclePolicyWithContext(arg0 context.Context, arg1 *opensearchserverless.BatchGetLifecyclePolicyInput, arg2 ...request.Option) (*opensearchserverless.BatchGetLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "BatchGetLifecyclePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchserverless.BatchGetLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// BatchGetLifecyclePolicyWithContext indicates an expected call of BatchGetLifecyclePolicyWithContext
+func (mr *MockOpenSearchServerlessAPIMockRecorder) BatchGetLifecyclePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "BatchGetLifecyclePolicyWithContext", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).BatchGetLifecyclePolicyWithContext), varargs...)
+}
+
 // BatchGetVpcEndpoint mocks base method
 func (m *MockOpenSearchServerlessAPI) BatchGetVpcEndpoint(arg0 *opensearchserverless.BatchGetVpcEndpointInput) (*opensearchserverless.BatchGetVpcEndpointOutput, error) {
 	m.ctrl.T.Helper()
@@ -233,6 +333,56 @@ func (mr *MockOpenSearchServerlessAPIMockRecorder) CreateCollectionWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateCollectionWithContext", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).CreateCollectionWithContext), varargs...)
+}
+
+// CreateLifecyclePolicy mocks base method
+func (m *MockOpenSearchServerlessAPI) CreateLifecyclePolicy(arg0 *opensearchserverless.CreateLifecyclePolicyInput) (*opensearchserverless.CreateLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLifecyclePolicy", arg0)
+	ret0, _ := ret[0].(*opensearchserverless.CreateLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLifecyclePolicy indicates an expected call of CreateLifecyclePolicy
+func (mr *MockOpenSearchServerlessAPIMockRecorder) CreateLifecyclePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLifecyclePolicy", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).CreateLifecyclePolicy), arg0)
+}
+
+// CreateLifecyclePolicyRequest mocks base method
+func (m *MockOpenSearchServerlessAPI) CreateLifecyclePolicyRequest(arg0 *opensearchserverless.CreateLifecyclePolicyInput) (*request.Request, *opensearchserverless.CreateLifecyclePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateLifecyclePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchserverless.CreateLifecyclePolicyOutput)
+	return ret0, ret1
+}
+
+// CreateLifecyclePolicyRequest indicates an expected call of CreateLifecyclePolicyRequest
+func (mr *MockOpenSearchServerlessAPIMockRecorder) CreateLifecyclePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLifecyclePolicyRequest", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).CreateLifecyclePolicyRequest), arg0)
+}
+
+// CreateLifecyclePolicyWithContext mocks base method
+func (m *MockOpenSearchServerlessAPI) CreateLifecyclePolicyWithContext(arg0 context.Context, arg1 *opensearchserverless.CreateLifecyclePolicyInput, arg2 ...request.Option) (*opensearchserverless.CreateLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateLifecyclePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchserverless.CreateLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateLifecyclePolicyWithContext indicates an expected call of CreateLifecyclePolicyWithContext
+func (mr *MockOpenSearchServerlessAPIMockRecorder) CreateLifecyclePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateLifecyclePolicyWithContext", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).CreateLifecyclePolicyWithContext), varargs...)
 }
 
 // CreateSecurityConfig mocks base method
@@ -483,6 +633,56 @@ func (mr *MockOpenSearchServerlessAPIMockRecorder) DeleteCollectionWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteCollectionWithContext", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).DeleteCollectionWithContext), varargs...)
+}
+
+// DeleteLifecyclePolicy mocks base method
+func (m *MockOpenSearchServerlessAPI) DeleteLifecyclePolicy(arg0 *opensearchserverless.DeleteLifecyclePolicyInput) (*opensearchserverless.DeleteLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLifecyclePolicy", arg0)
+	ret0, _ := ret[0].(*opensearchserverless.DeleteLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLifecyclePolicy indicates an expected call of DeleteLifecyclePolicy
+func (mr *MockOpenSearchServerlessAPIMockRecorder) DeleteLifecyclePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLifecyclePolicy", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).DeleteLifecyclePolicy), arg0)
+}
+
+// DeleteLifecyclePolicyRequest mocks base method
+func (m *MockOpenSearchServerlessAPI) DeleteLifecyclePolicyRequest(arg0 *opensearchserverless.DeleteLifecyclePolicyInput) (*request.Request, *opensearchserverless.DeleteLifecyclePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteLifecyclePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchserverless.DeleteLifecyclePolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteLifecyclePolicyRequest indicates an expected call of DeleteLifecyclePolicyRequest
+func (mr *MockOpenSearchServerlessAPIMockRecorder) DeleteLifecyclePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLifecyclePolicyRequest", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).DeleteLifecyclePolicyRequest), arg0)
+}
+
+// DeleteLifecyclePolicyWithContext mocks base method
+func (m *MockOpenSearchServerlessAPI) DeleteLifecyclePolicyWithContext(arg0 context.Context, arg1 *opensearchserverless.DeleteLifecyclePolicyInput, arg2 ...request.Option) (*opensearchserverless.DeleteLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteLifecyclePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchserverless.DeleteLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteLifecyclePolicyWithContext indicates an expected call of DeleteLifecyclePolicyWithContext
+func (mr *MockOpenSearchServerlessAPIMockRecorder) DeleteLifecyclePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteLifecyclePolicyWithContext", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).DeleteLifecyclePolicyWithContext), varargs...)
 }
 
 // DeleteSecurityConfig mocks base method
@@ -1051,6 +1251,89 @@ func (mr *MockOpenSearchServerlessAPIMockRecorder) ListCollectionsWithContext(ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCollectionsWithContext", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).ListCollectionsWithContext), varargs...)
 }
 
+// ListLifecyclePolicies mocks base method
+func (m *MockOpenSearchServerlessAPI) ListLifecyclePolicies(arg0 *opensearchserverless.ListLifecyclePoliciesInput) (*opensearchserverless.ListLifecyclePoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLifecyclePolicies", arg0)
+	ret0, _ := ret[0].(*opensearchserverless.ListLifecyclePoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLifecyclePolicies indicates an expected call of ListLifecyclePolicies
+func (mr *MockOpenSearchServerlessAPIMockRecorder) ListLifecyclePolicies(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLifecyclePolicies", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).ListLifecyclePolicies), arg0)
+}
+
+// ListLifecyclePoliciesPages mocks base method
+func (m *MockOpenSearchServerlessAPI) ListLifecyclePoliciesPages(arg0 *opensearchserverless.ListLifecyclePoliciesInput, arg1 func(*opensearchserverless.ListLifecyclePoliciesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLifecyclePoliciesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLifecyclePoliciesPages indicates an expected call of ListLifecyclePoliciesPages
+func (mr *MockOpenSearchServerlessAPIMockRecorder) ListLifecyclePoliciesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLifecyclePoliciesPages", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).ListLifecyclePoliciesPages), arg0, arg1)
+}
+
+// ListLifecyclePoliciesPagesWithContext mocks base method
+func (m *MockOpenSearchServerlessAPI) ListLifecyclePoliciesPagesWithContext(arg0 context.Context, arg1 *opensearchserverless.ListLifecyclePoliciesInput, arg2 func(*opensearchserverless.ListLifecyclePoliciesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLifecyclePoliciesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLifecyclePoliciesPagesWithContext indicates an expected call of ListLifecyclePoliciesPagesWithContext
+func (mr *MockOpenSearchServerlessAPIMockRecorder) ListLifecyclePoliciesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLifecyclePoliciesPagesWithContext", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).ListLifecyclePoliciesPagesWithContext), varargs...)
+}
+
+// ListLifecyclePoliciesRequest mocks base method
+func (m *MockOpenSearchServerlessAPI) ListLifecyclePoliciesRequest(arg0 *opensearchserverless.ListLifecyclePoliciesInput) (*request.Request, *opensearchserverless.ListLifecyclePoliciesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLifecyclePoliciesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchserverless.ListLifecyclePoliciesOutput)
+	return ret0, ret1
+}
+
+// ListLifecyclePoliciesRequest indicates an expected call of ListLifecyclePoliciesRequest
+func (mr *MockOpenSearchServerlessAPIMockRecorder) ListLifecyclePoliciesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLifecyclePoliciesRequest", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).ListLifecyclePoliciesRequest), arg0)
+}
+
+// ListLifecyclePoliciesWithContext mocks base method
+func (m *MockOpenSearchServerlessAPI) ListLifecyclePoliciesWithContext(arg0 context.Context, arg1 *opensearchserverless.ListLifecyclePoliciesInput, arg2 ...request.Option) (*opensearchserverless.ListLifecyclePoliciesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLifecyclePoliciesWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchserverless.ListLifecyclePoliciesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLifecyclePoliciesWithContext indicates an expected call of ListLifecyclePoliciesWithContext
+func (mr *MockOpenSearchServerlessAPIMockRecorder) ListLifecyclePoliciesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLifecyclePoliciesWithContext", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).ListLifecyclePoliciesWithContext), varargs...)
+}
+
 // ListSecurityConfigs mocks base method
 func (m *MockOpenSearchServerlessAPI) ListSecurityConfigs(arg0 *opensearchserverless.ListSecurityConfigsInput) (*opensearchserverless.ListSecurityConfigsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1598,6 +1881,56 @@ func (mr *MockOpenSearchServerlessAPIMockRecorder) UpdateCollectionWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateCollectionWithContext", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).UpdateCollectionWithContext), varargs...)
+}
+
+// UpdateLifecyclePolicy mocks base method
+func (m *MockOpenSearchServerlessAPI) UpdateLifecyclePolicy(arg0 *opensearchserverless.UpdateLifecyclePolicyInput) (*opensearchserverless.UpdateLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLifecyclePolicy", arg0)
+	ret0, _ := ret[0].(*opensearchserverless.UpdateLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLifecyclePolicy indicates an expected call of UpdateLifecyclePolicy
+func (mr *MockOpenSearchServerlessAPIMockRecorder) UpdateLifecyclePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLifecyclePolicy", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).UpdateLifecyclePolicy), arg0)
+}
+
+// UpdateLifecyclePolicyRequest mocks base method
+func (m *MockOpenSearchServerlessAPI) UpdateLifecyclePolicyRequest(arg0 *opensearchserverless.UpdateLifecyclePolicyInput) (*request.Request, *opensearchserverless.UpdateLifecyclePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateLifecyclePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*opensearchserverless.UpdateLifecyclePolicyOutput)
+	return ret0, ret1
+}
+
+// UpdateLifecyclePolicyRequest indicates an expected call of UpdateLifecyclePolicyRequest
+func (mr *MockOpenSearchServerlessAPIMockRecorder) UpdateLifecyclePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLifecyclePolicyRequest", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).UpdateLifecyclePolicyRequest), arg0)
+}
+
+// UpdateLifecyclePolicyWithContext mocks base method
+func (m *MockOpenSearchServerlessAPI) UpdateLifecyclePolicyWithContext(arg0 context.Context, arg1 *opensearchserverless.UpdateLifecyclePolicyInput, arg2 ...request.Option) (*opensearchserverless.UpdateLifecyclePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateLifecyclePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*opensearchserverless.UpdateLifecyclePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateLifecyclePolicyWithContext indicates an expected call of UpdateLifecyclePolicyWithContext
+func (mr *MockOpenSearchServerlessAPIMockRecorder) UpdateLifecyclePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateLifecyclePolicyWithContext", reflect.TypeOf((*MockOpenSearchServerlessAPI)(nil).UpdateLifecyclePolicyWithContext), varargs...)
 }
 
 // UpdateSecurityConfig mocks base method

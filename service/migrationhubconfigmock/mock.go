@@ -85,6 +85,56 @@ func (mr *MockMigrationHubConfigAPIMockRecorder) CreateHomeRegionControlWithCont
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHomeRegionControlWithContext", reflect.TypeOf((*MockMigrationHubConfigAPI)(nil).CreateHomeRegionControlWithContext), varargs...)
 }
 
+// DeleteHomeRegionControl mocks base method
+func (m *MockMigrationHubConfigAPI) DeleteHomeRegionControl(arg0 *migrationhubconfig.DeleteHomeRegionControlInput) (*migrationhubconfig.DeleteHomeRegionControlOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteHomeRegionControl", arg0)
+	ret0, _ := ret[0].(*migrationhubconfig.DeleteHomeRegionControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteHomeRegionControl indicates an expected call of DeleteHomeRegionControl
+func (mr *MockMigrationHubConfigAPIMockRecorder) DeleteHomeRegionControl(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHomeRegionControl", reflect.TypeOf((*MockMigrationHubConfigAPI)(nil).DeleteHomeRegionControl), arg0)
+}
+
+// DeleteHomeRegionControlRequest mocks base method
+func (m *MockMigrationHubConfigAPI) DeleteHomeRegionControlRequest(arg0 *migrationhubconfig.DeleteHomeRegionControlInput) (*request.Request, *migrationhubconfig.DeleteHomeRegionControlOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteHomeRegionControlRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*migrationhubconfig.DeleteHomeRegionControlOutput)
+	return ret0, ret1
+}
+
+// DeleteHomeRegionControlRequest indicates an expected call of DeleteHomeRegionControlRequest
+func (mr *MockMigrationHubConfigAPIMockRecorder) DeleteHomeRegionControlRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHomeRegionControlRequest", reflect.TypeOf((*MockMigrationHubConfigAPI)(nil).DeleteHomeRegionControlRequest), arg0)
+}
+
+// DeleteHomeRegionControlWithContext mocks base method
+func (m *MockMigrationHubConfigAPI) DeleteHomeRegionControlWithContext(arg0 context.Context, arg1 *migrationhubconfig.DeleteHomeRegionControlInput, arg2 ...request.Option) (*migrationhubconfig.DeleteHomeRegionControlOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteHomeRegionControlWithContext", varargs...)
+	ret0, _ := ret[0].(*migrationhubconfig.DeleteHomeRegionControlOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteHomeRegionControlWithContext indicates an expected call of DeleteHomeRegionControlWithContext
+func (mr *MockMigrationHubConfigAPIMockRecorder) DeleteHomeRegionControlWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHomeRegionControlWithContext", reflect.TypeOf((*MockMigrationHubConfigAPI)(nil).DeleteHomeRegionControlWithContext), varargs...)
+}
+
 // DescribeHomeRegionControls mocks base method
 func (m *MockMigrationHubConfigAPI) DescribeHomeRegionControls(arg0 *migrationhubconfig.DescribeHomeRegionControlsInput) (*migrationhubconfig.DescribeHomeRegionControlsOutput, error) {
 	m.ctrl.T.Helper()
