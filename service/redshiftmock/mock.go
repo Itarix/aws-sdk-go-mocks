@@ -2035,6 +2035,56 @@ func (mr *MockRedshiftAPIMockRecorder) DeletePartnerWithContext(arg0, arg1 inter
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePartnerWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DeletePartnerWithContext), varargs...)
 }
 
+// DeleteResourcePolicy mocks base method
+func (m *MockRedshiftAPI) DeleteResourcePolicy(arg0 *redshift.DeleteResourcePolicyInput) (*redshift.DeleteResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourcePolicy", arg0)
+	ret0, _ := ret[0].(*redshift.DeleteResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicy indicates an expected call of DeleteResourcePolicy
+func (mr *MockRedshiftAPIMockRecorder) DeleteResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicy", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteResourcePolicy), arg0)
+}
+
+// DeleteResourcePolicyRequest mocks base method
+func (m *MockRedshiftAPI) DeleteResourcePolicyRequest(arg0 *redshift.DeleteResourcePolicyInput) (*request.Request, *redshift.DeleteResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DeleteResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicyRequest indicates an expected call of DeleteResourcePolicyRequest
+func (mr *MockRedshiftAPIMockRecorder) DeleteResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteResourcePolicyRequest), arg0)
+}
+
+// DeleteResourcePolicyWithContext mocks base method
+func (m *MockRedshiftAPI) DeleteResourcePolicyWithContext(arg0 context.Context, arg1 *redshift.DeleteResourcePolicyInput, arg2 ...request.Option) (*redshift.DeleteResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DeleteResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicyWithContext indicates an expected call of DeleteResourcePolicyWithContext
+func (mr *MockRedshiftAPIMockRecorder) DeleteResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DeleteResourcePolicyWithContext), varargs...)
+}
+
 // DeleteScheduledAction mocks base method
 func (m *MockRedshiftAPI) DeleteScheduledAction(arg0 *redshift.DeleteScheduledActionInput) (*redshift.DeleteScheduledActionOutput, error) {
 	m.ctrl.T.Helper()
@@ -4095,6 +4145,89 @@ func (mr *MockRedshiftAPIMockRecorder) DescribeHsmConfigurationsWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeHsmConfigurationsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeHsmConfigurationsWithContext), varargs...)
 }
 
+// DescribeInboundIntegrations mocks base method
+func (m *MockRedshiftAPI) DescribeInboundIntegrations(arg0 *redshift.DescribeInboundIntegrationsInput) (*redshift.DescribeInboundIntegrationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInboundIntegrations", arg0)
+	ret0, _ := ret[0].(*redshift.DescribeInboundIntegrationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInboundIntegrations indicates an expected call of DescribeInboundIntegrations
+func (mr *MockRedshiftAPIMockRecorder) DescribeInboundIntegrations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInboundIntegrations", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeInboundIntegrations), arg0)
+}
+
+// DescribeInboundIntegrationsPages mocks base method
+func (m *MockRedshiftAPI) DescribeInboundIntegrationsPages(arg0 *redshift.DescribeInboundIntegrationsInput, arg1 func(*redshift.DescribeInboundIntegrationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInboundIntegrationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeInboundIntegrationsPages indicates an expected call of DescribeInboundIntegrationsPages
+func (mr *MockRedshiftAPIMockRecorder) DescribeInboundIntegrationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInboundIntegrationsPages", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeInboundIntegrationsPages), arg0, arg1)
+}
+
+// DescribeInboundIntegrationsPagesWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeInboundIntegrationsPagesWithContext(arg0 context.Context, arg1 *redshift.DescribeInboundIntegrationsInput, arg2 func(*redshift.DescribeInboundIntegrationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeInboundIntegrationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeInboundIntegrationsPagesWithContext indicates an expected call of DescribeInboundIntegrationsPagesWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeInboundIntegrationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInboundIntegrationsPagesWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeInboundIntegrationsPagesWithContext), varargs...)
+}
+
+// DescribeInboundIntegrationsRequest mocks base method
+func (m *MockRedshiftAPI) DescribeInboundIntegrationsRequest(arg0 *redshift.DescribeInboundIntegrationsInput) (*request.Request, *redshift.DescribeInboundIntegrationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeInboundIntegrationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.DescribeInboundIntegrationsOutput)
+	return ret0, ret1
+}
+
+// DescribeInboundIntegrationsRequest indicates an expected call of DescribeInboundIntegrationsRequest
+func (mr *MockRedshiftAPIMockRecorder) DescribeInboundIntegrationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInboundIntegrationsRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeInboundIntegrationsRequest), arg0)
+}
+
+// DescribeInboundIntegrationsWithContext mocks base method
+func (m *MockRedshiftAPI) DescribeInboundIntegrationsWithContext(arg0 context.Context, arg1 *redshift.DescribeInboundIntegrationsInput, arg2 ...request.Option) (*redshift.DescribeInboundIntegrationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeInboundIntegrationsWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.DescribeInboundIntegrationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeInboundIntegrationsWithContext indicates an expected call of DescribeInboundIntegrationsWithContext
+func (mr *MockRedshiftAPIMockRecorder) DescribeInboundIntegrationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeInboundIntegrationsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).DescribeInboundIntegrationsWithContext), varargs...)
+}
+
 // DescribeLoggingStatus mocks base method
 func (m *MockRedshiftAPI) DescribeLoggingStatus(arg0 *redshift.DescribeLoggingStatusInput) (*redshift.LoggingStatus, error) {
 	m.ctrl.T.Helper()
@@ -5724,6 +5857,56 @@ func (mr *MockRedshiftAPIMockRecorder) GetReservedNodeExchangeOfferingsWithConte
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetReservedNodeExchangeOfferingsWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).GetReservedNodeExchangeOfferingsWithContext), varargs...)
 }
 
+// GetResourcePolicy mocks base method
+func (m *MockRedshiftAPI) GetResourcePolicy(arg0 *redshift.GetResourcePolicyInput) (*redshift.GetResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcePolicy", arg0)
+	ret0, _ := ret[0].(*redshift.GetResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcePolicy indicates an expected call of GetResourcePolicy
+func (mr *MockRedshiftAPIMockRecorder) GetResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicy", reflect.TypeOf((*MockRedshiftAPI)(nil).GetResourcePolicy), arg0)
+}
+
+// GetResourcePolicyRequest mocks base method
+func (m *MockRedshiftAPI) GetResourcePolicyRequest(arg0 *redshift.GetResourcePolicyInput) (*request.Request, *redshift.GetResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.GetResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// GetResourcePolicyRequest indicates an expected call of GetResourcePolicyRequest
+func (mr *MockRedshiftAPIMockRecorder) GetResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicyRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).GetResourcePolicyRequest), arg0)
+}
+
+// GetResourcePolicyWithContext mocks base method
+func (m *MockRedshiftAPI) GetResourcePolicyWithContext(arg0 context.Context, arg1 *redshift.GetResourcePolicyInput, arg2 ...request.Option) (*redshift.GetResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.GetResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcePolicyWithContext indicates an expected call of GetResourcePolicyWithContext
+func (mr *MockRedshiftAPIMockRecorder) GetResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicyWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).GetResourcePolicyWithContext), varargs...)
+}
+
 // ModifyAquaConfiguration mocks base method
 func (m *MockRedshiftAPI) ModifyAquaConfiguration(arg0 *redshift.ModifyAquaConfigurationInput) (*redshift.ModifyAquaConfigurationOutput, error) {
 	m.ctrl.T.Helper()
@@ -6672,6 +6855,56 @@ func (mr *MockRedshiftAPIMockRecorder) PurchaseReservedNodeOfferingWithContext(a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PurchaseReservedNodeOfferingWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).PurchaseReservedNodeOfferingWithContext), varargs...)
+}
+
+// PutResourcePolicy mocks base method
+func (m *MockRedshiftAPI) PutResourcePolicy(arg0 *redshift.PutResourcePolicyInput) (*redshift.PutResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourcePolicy", arg0)
+	ret0, _ := ret[0].(*redshift.PutResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourcePolicy indicates an expected call of PutResourcePolicy
+func (mr *MockRedshiftAPIMockRecorder) PutResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicy", reflect.TypeOf((*MockRedshiftAPI)(nil).PutResourcePolicy), arg0)
+}
+
+// PutResourcePolicyRequest mocks base method
+func (m *MockRedshiftAPI) PutResourcePolicyRequest(arg0 *redshift.PutResourcePolicyInput) (*request.Request, *redshift.PutResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*redshift.PutResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// PutResourcePolicyRequest indicates an expected call of PutResourcePolicyRequest
+func (mr *MockRedshiftAPIMockRecorder) PutResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyRequest", reflect.TypeOf((*MockRedshiftAPI)(nil).PutResourcePolicyRequest), arg0)
+}
+
+// PutResourcePolicyWithContext mocks base method
+func (m *MockRedshiftAPI) PutResourcePolicyWithContext(arg0 context.Context, arg1 *redshift.PutResourcePolicyInput, arg2 ...request.Option) (*redshift.PutResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*redshift.PutResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourcePolicyWithContext indicates an expected call of PutResourcePolicyWithContext
+func (mr *MockRedshiftAPIMockRecorder) PutResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyWithContext", reflect.TypeOf((*MockRedshiftAPI)(nil).PutResourcePolicyWithContext), varargs...)
 }
 
 // RebootCluster mocks base method
