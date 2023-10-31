@@ -1617,6 +1617,56 @@ func (mr *MockFinspaceAPIMockRecorder) UpdateEnvironmentWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateEnvironmentWithContext", reflect.TypeOf((*MockFinspaceAPI)(nil).UpdateEnvironmentWithContext), varargs...)
 }
 
+// UpdateKxClusterCodeConfiguration mocks base method
+func (m *MockFinspaceAPI) UpdateKxClusterCodeConfiguration(arg0 *finspace.UpdateKxClusterCodeConfigurationInput) (*finspace.UpdateKxClusterCodeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateKxClusterCodeConfiguration", arg0)
+	ret0, _ := ret[0].(*finspace.UpdateKxClusterCodeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateKxClusterCodeConfiguration indicates an expected call of UpdateKxClusterCodeConfiguration
+func (mr *MockFinspaceAPIMockRecorder) UpdateKxClusterCodeConfiguration(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateKxClusterCodeConfiguration", reflect.TypeOf((*MockFinspaceAPI)(nil).UpdateKxClusterCodeConfiguration), arg0)
+}
+
+// UpdateKxClusterCodeConfigurationRequest mocks base method
+func (m *MockFinspaceAPI) UpdateKxClusterCodeConfigurationRequest(arg0 *finspace.UpdateKxClusterCodeConfigurationInput) (*request.Request, *finspace.UpdateKxClusterCodeConfigurationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateKxClusterCodeConfigurationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*finspace.UpdateKxClusterCodeConfigurationOutput)
+	return ret0, ret1
+}
+
+// UpdateKxClusterCodeConfigurationRequest indicates an expected call of UpdateKxClusterCodeConfigurationRequest
+func (mr *MockFinspaceAPIMockRecorder) UpdateKxClusterCodeConfigurationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateKxClusterCodeConfigurationRequest", reflect.TypeOf((*MockFinspaceAPI)(nil).UpdateKxClusterCodeConfigurationRequest), arg0)
+}
+
+// UpdateKxClusterCodeConfigurationWithContext mocks base method
+func (m *MockFinspaceAPI) UpdateKxClusterCodeConfigurationWithContext(arg0 context.Context, arg1 *finspace.UpdateKxClusterCodeConfigurationInput, arg2 ...request.Option) (*finspace.UpdateKxClusterCodeConfigurationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateKxClusterCodeConfigurationWithContext", varargs...)
+	ret0, _ := ret[0].(*finspace.UpdateKxClusterCodeConfigurationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateKxClusterCodeConfigurationWithContext indicates an expected call of UpdateKxClusterCodeConfigurationWithContext
+func (mr *MockFinspaceAPIMockRecorder) UpdateKxClusterCodeConfigurationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateKxClusterCodeConfigurationWithContext", reflect.TypeOf((*MockFinspaceAPI)(nil).UpdateKxClusterCodeConfigurationWithContext), varargs...)
+}
+
 // UpdateKxClusterDatabases mocks base method
 func (m *MockFinspaceAPI) UpdateKxClusterDatabases(arg0 *finspace.UpdateKxClusterDatabasesInput) (*finspace.UpdateKxClusterDatabasesOutput, error) {
 	m.ctrl.T.Helper()

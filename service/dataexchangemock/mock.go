@@ -1300,6 +1300,56 @@ func (mr *MockDataExchangeAPIMockRecorder) SendApiAssetWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendApiAssetWithContext", reflect.TypeOf((*MockDataExchangeAPI)(nil).SendApiAssetWithContext), varargs...)
 }
 
+// SendDataSetNotification mocks base method
+func (m *MockDataExchangeAPI) SendDataSetNotification(arg0 *dataexchange.SendDataSetNotificationInput) (*dataexchange.SendDataSetNotificationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendDataSetNotification", arg0)
+	ret0, _ := ret[0].(*dataexchange.SendDataSetNotificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendDataSetNotification indicates an expected call of SendDataSetNotification
+func (mr *MockDataExchangeAPIMockRecorder) SendDataSetNotification(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendDataSetNotification", reflect.TypeOf((*MockDataExchangeAPI)(nil).SendDataSetNotification), arg0)
+}
+
+// SendDataSetNotificationRequest mocks base method
+func (m *MockDataExchangeAPI) SendDataSetNotificationRequest(arg0 *dataexchange.SendDataSetNotificationInput) (*request.Request, *dataexchange.SendDataSetNotificationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SendDataSetNotificationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*dataexchange.SendDataSetNotificationOutput)
+	return ret0, ret1
+}
+
+// SendDataSetNotificationRequest indicates an expected call of SendDataSetNotificationRequest
+func (mr *MockDataExchangeAPIMockRecorder) SendDataSetNotificationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendDataSetNotificationRequest", reflect.TypeOf((*MockDataExchangeAPI)(nil).SendDataSetNotificationRequest), arg0)
+}
+
+// SendDataSetNotificationWithContext mocks base method
+func (m *MockDataExchangeAPI) SendDataSetNotificationWithContext(arg0 context.Context, arg1 *dataexchange.SendDataSetNotificationInput, arg2 ...request.Option) (*dataexchange.SendDataSetNotificationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SendDataSetNotificationWithContext", varargs...)
+	ret0, _ := ret[0].(*dataexchange.SendDataSetNotificationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SendDataSetNotificationWithContext indicates an expected call of SendDataSetNotificationWithContext
+func (mr *MockDataExchangeAPIMockRecorder) SendDataSetNotificationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SendDataSetNotificationWithContext", reflect.TypeOf((*MockDataExchangeAPI)(nil).SendDataSetNotificationWithContext), varargs...)
+}
+
 // StartJob mocks base method
 func (m *MockDataExchangeAPI) StartJob(arg0 *dataexchange.StartJobInput) (*dataexchange.StartJobOutput, error) {
 	m.ctrl.T.Helper()
