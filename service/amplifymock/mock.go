@@ -1050,6 +1050,39 @@ func (mr *MockAmplifyAPIMockRecorder) ListApps(arg0 interface{}) *gomock.Call {
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApps", reflect.TypeOf((*MockAmplifyAPI)(nil).ListApps), arg0)
 }
 
+// ListAppsPages mocks base method
+func (m *MockAmplifyAPI) ListAppsPages(arg0 *amplify.ListAppsInput, arg1 func(*amplify.ListAppsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAppsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppsPages indicates an expected call of ListAppsPages
+func (mr *MockAmplifyAPIMockRecorder) ListAppsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppsPages", reflect.TypeOf((*MockAmplifyAPI)(nil).ListAppsPages), arg0, arg1)
+}
+
+// ListAppsPagesWithContext mocks base method
+func (m *MockAmplifyAPI) ListAppsPagesWithContext(arg0 context.Context, arg1 *amplify.ListAppsInput, arg2 func(*amplify.ListAppsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAppsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAppsPagesWithContext indicates an expected call of ListAppsPagesWithContext
+func (mr *MockAmplifyAPIMockRecorder) ListAppsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAppsPagesWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).ListAppsPagesWithContext), varargs...)
+}
+
 // ListAppsRequest mocks base method
 func (m *MockAmplifyAPI) ListAppsRequest(arg0 *amplify.ListAppsInput) (*request.Request, *amplify.ListAppsOutput) {
 	m.ctrl.T.Helper()
@@ -1200,6 +1233,39 @@ func (mr *MockAmplifyAPIMockRecorder) ListBranches(arg0 interface{}) *gomock.Cal
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBranches", reflect.TypeOf((*MockAmplifyAPI)(nil).ListBranches), arg0)
 }
 
+// ListBranchesPages mocks base method
+func (m *MockAmplifyAPI) ListBranchesPages(arg0 *amplify.ListBranchesInput, arg1 func(*amplify.ListBranchesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListBranchesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListBranchesPages indicates an expected call of ListBranchesPages
+func (mr *MockAmplifyAPIMockRecorder) ListBranchesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBranchesPages", reflect.TypeOf((*MockAmplifyAPI)(nil).ListBranchesPages), arg0, arg1)
+}
+
+// ListBranchesPagesWithContext mocks base method
+func (m *MockAmplifyAPI) ListBranchesPagesWithContext(arg0 context.Context, arg1 *amplify.ListBranchesInput, arg2 func(*amplify.ListBranchesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListBranchesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListBranchesPagesWithContext indicates an expected call of ListBranchesPagesWithContext
+func (mr *MockAmplifyAPIMockRecorder) ListBranchesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListBranchesPagesWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).ListBranchesPagesWithContext), varargs...)
+}
+
 // ListBranchesRequest mocks base method
 func (m *MockAmplifyAPI) ListBranchesRequest(arg0 *amplify.ListBranchesInput) (*request.Request, *amplify.ListBranchesOutput) {
 	m.ctrl.T.Helper()
@@ -1250,6 +1316,39 @@ func (mr *MockAmplifyAPIMockRecorder) ListDomainAssociations(arg0 interface{}) *
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainAssociations", reflect.TypeOf((*MockAmplifyAPI)(nil).ListDomainAssociations), arg0)
 }
 
+// ListDomainAssociationsPages mocks base method
+func (m *MockAmplifyAPI) ListDomainAssociationsPages(arg0 *amplify.ListDomainAssociationsInput, arg1 func(*amplify.ListDomainAssociationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDomainAssociationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDomainAssociationsPages indicates an expected call of ListDomainAssociationsPages
+func (mr *MockAmplifyAPIMockRecorder) ListDomainAssociationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainAssociationsPages", reflect.TypeOf((*MockAmplifyAPI)(nil).ListDomainAssociationsPages), arg0, arg1)
+}
+
+// ListDomainAssociationsPagesWithContext mocks base method
+func (m *MockAmplifyAPI) ListDomainAssociationsPagesWithContext(arg0 context.Context, arg1 *amplify.ListDomainAssociationsInput, arg2 func(*amplify.ListDomainAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDomainAssociationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDomainAssociationsPagesWithContext indicates an expected call of ListDomainAssociationsPagesWithContext
+func (mr *MockAmplifyAPIMockRecorder) ListDomainAssociationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainAssociationsPagesWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).ListDomainAssociationsPagesWithContext), varargs...)
+}
+
 // ListDomainAssociationsRequest mocks base method
 func (m *MockAmplifyAPI) ListDomainAssociationsRequest(arg0 *amplify.ListDomainAssociationsInput) (*request.Request, *amplify.ListDomainAssociationsOutput) {
 	m.ctrl.T.Helper()
@@ -1298,6 +1397,39 @@ func (m *MockAmplifyAPI) ListJobs(arg0 *amplify.ListJobsInput) (*amplify.ListJob
 func (mr *MockAmplifyAPIMockRecorder) ListJobs(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobs", reflect.TypeOf((*MockAmplifyAPI)(nil).ListJobs), arg0)
+}
+
+// ListJobsPages mocks base method
+func (m *MockAmplifyAPI) ListJobsPages(arg0 *amplify.ListJobsInput, arg1 func(*amplify.ListJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListJobsPages indicates an expected call of ListJobsPages
+func (mr *MockAmplifyAPIMockRecorder) ListJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsPages", reflect.TypeOf((*MockAmplifyAPI)(nil).ListJobsPages), arg0, arg1)
+}
+
+// ListJobsPagesWithContext mocks base method
+func (m *MockAmplifyAPI) ListJobsPagesWithContext(arg0 context.Context, arg1 *amplify.ListJobsInput, arg2 func(*amplify.ListJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListJobsPagesWithContext indicates an expected call of ListJobsPagesWithContext
+func (mr *MockAmplifyAPIMockRecorder) ListJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListJobsPagesWithContext", reflect.TypeOf((*MockAmplifyAPI)(nil).ListJobsPagesWithContext), varargs...)
 }
 
 // ListJobsRequest mocks base method
