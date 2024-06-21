@@ -1350,6 +1350,56 @@ func (mr *MockSageMakerAPIMockRecorder) CreateHub(arg0 interface{}) *gomock.Call
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHub", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateHub), arg0)
 }
 
+// CreateHubContentReference mocks base method
+func (m *MockSageMakerAPI) CreateHubContentReference(arg0 *sagemaker.CreateHubContentReferenceInput) (*sagemaker.CreateHubContentReferenceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateHubContentReference", arg0)
+	ret0, _ := ret[0].(*sagemaker.CreateHubContentReferenceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateHubContentReference indicates an expected call of CreateHubContentReference
+func (mr *MockSageMakerAPIMockRecorder) CreateHubContentReference(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHubContentReference", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateHubContentReference), arg0)
+}
+
+// CreateHubContentReferenceRequest mocks base method
+func (m *MockSageMakerAPI) CreateHubContentReferenceRequest(arg0 *sagemaker.CreateHubContentReferenceInput) (*request.Request, *sagemaker.CreateHubContentReferenceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateHubContentReferenceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.CreateHubContentReferenceOutput)
+	return ret0, ret1
+}
+
+// CreateHubContentReferenceRequest indicates an expected call of CreateHubContentReferenceRequest
+func (mr *MockSageMakerAPIMockRecorder) CreateHubContentReferenceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHubContentReferenceRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateHubContentReferenceRequest), arg0)
+}
+
+// CreateHubContentReferenceWithContext mocks base method
+func (m *MockSageMakerAPI) CreateHubContentReferenceWithContext(arg0 context.Context, arg1 *sagemaker.CreateHubContentReferenceInput, arg2 ...request.Option) (*sagemaker.CreateHubContentReferenceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateHubContentReferenceWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.CreateHubContentReferenceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateHubContentReferenceWithContext indicates an expected call of CreateHubContentReferenceWithContext
+func (mr *MockSageMakerAPIMockRecorder) CreateHubContentReferenceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateHubContentReferenceWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateHubContentReferenceWithContext), varargs...)
+}
+
 // CreateHubRequest mocks base method
 func (m *MockSageMakerAPI) CreateHubRequest(arg0 *sagemaker.CreateHubInput) (*request.Request, *sagemaker.CreateHubOutput) {
 	m.ctrl.T.Helper()
@@ -4163,6 +4213,56 @@ func (m *MockSageMakerAPI) DeleteHubContent(arg0 *sagemaker.DeleteHubContentInpu
 func (mr *MockSageMakerAPIMockRecorder) DeleteHubContent(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHubContent", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteHubContent), arg0)
+}
+
+// DeleteHubContentReference mocks base method
+func (m *MockSageMakerAPI) DeleteHubContentReference(arg0 *sagemaker.DeleteHubContentReferenceInput) (*sagemaker.DeleteHubContentReferenceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteHubContentReference", arg0)
+	ret0, _ := ret[0].(*sagemaker.DeleteHubContentReferenceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteHubContentReference indicates an expected call of DeleteHubContentReference
+func (mr *MockSageMakerAPIMockRecorder) DeleteHubContentReference(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHubContentReference", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteHubContentReference), arg0)
+}
+
+// DeleteHubContentReferenceRequest mocks base method
+func (m *MockSageMakerAPI) DeleteHubContentReferenceRequest(arg0 *sagemaker.DeleteHubContentReferenceInput) (*request.Request, *sagemaker.DeleteHubContentReferenceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteHubContentReferenceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DeleteHubContentReferenceOutput)
+	return ret0, ret1
+}
+
+// DeleteHubContentReferenceRequest indicates an expected call of DeleteHubContentReferenceRequest
+func (mr *MockSageMakerAPIMockRecorder) DeleteHubContentReferenceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHubContentReferenceRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteHubContentReferenceRequest), arg0)
+}
+
+// DeleteHubContentReferenceWithContext mocks base method
+func (m *MockSageMakerAPI) DeleteHubContentReferenceWithContext(arg0 context.Context, arg1 *sagemaker.DeleteHubContentReferenceInput, arg2 ...request.Option) (*sagemaker.DeleteHubContentReferenceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteHubContentReferenceWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DeleteHubContentReferenceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteHubContentReferenceWithContext indicates an expected call of DeleteHubContentReferenceWithContext
+func (mr *MockSageMakerAPIMockRecorder) DeleteHubContentReferenceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHubContentReferenceWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteHubContentReferenceWithContext), varargs...)
 }
 
 // DeleteHubContentRequest mocks base method

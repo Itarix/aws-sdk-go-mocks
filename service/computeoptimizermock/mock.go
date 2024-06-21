@@ -468,6 +468,56 @@ func (mr *MockComputeOptimizerAPIMockRecorder) ExportLicenseRecommendationsWithC
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportLicenseRecommendationsWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).ExportLicenseRecommendationsWithContext), varargs...)
 }
 
+// ExportRDSDatabaseRecommendations mocks base method
+func (m *MockComputeOptimizerAPI) ExportRDSDatabaseRecommendations(arg0 *computeoptimizer.ExportRDSDatabaseRecommendationsInput) (*computeoptimizer.ExportRDSDatabaseRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportRDSDatabaseRecommendations", arg0)
+	ret0, _ := ret[0].(*computeoptimizer.ExportRDSDatabaseRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportRDSDatabaseRecommendations indicates an expected call of ExportRDSDatabaseRecommendations
+func (mr *MockComputeOptimizerAPIMockRecorder) ExportRDSDatabaseRecommendations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportRDSDatabaseRecommendations", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).ExportRDSDatabaseRecommendations), arg0)
+}
+
+// ExportRDSDatabaseRecommendationsRequest mocks base method
+func (m *MockComputeOptimizerAPI) ExportRDSDatabaseRecommendationsRequest(arg0 *computeoptimizer.ExportRDSDatabaseRecommendationsInput) (*request.Request, *computeoptimizer.ExportRDSDatabaseRecommendationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ExportRDSDatabaseRecommendationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*computeoptimizer.ExportRDSDatabaseRecommendationsOutput)
+	return ret0, ret1
+}
+
+// ExportRDSDatabaseRecommendationsRequest indicates an expected call of ExportRDSDatabaseRecommendationsRequest
+func (mr *MockComputeOptimizerAPIMockRecorder) ExportRDSDatabaseRecommendationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportRDSDatabaseRecommendationsRequest", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).ExportRDSDatabaseRecommendationsRequest), arg0)
+}
+
+// ExportRDSDatabaseRecommendationsWithContext mocks base method
+func (m *MockComputeOptimizerAPI) ExportRDSDatabaseRecommendationsWithContext(arg0 context.Context, arg1 *computeoptimizer.ExportRDSDatabaseRecommendationsInput, arg2 ...request.Option) (*computeoptimizer.ExportRDSDatabaseRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ExportRDSDatabaseRecommendationsWithContext", varargs...)
+	ret0, _ := ret[0].(*computeoptimizer.ExportRDSDatabaseRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ExportRDSDatabaseRecommendationsWithContext indicates an expected call of ExportRDSDatabaseRecommendationsWithContext
+func (mr *MockComputeOptimizerAPIMockRecorder) ExportRDSDatabaseRecommendationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ExportRDSDatabaseRecommendationsWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).ExportRDSDatabaseRecommendationsWithContext), varargs...)
+}
+
 // GetAutoScalingGroupRecommendations mocks base method
 func (m *MockComputeOptimizerAPI) GetAutoScalingGroupRecommendations(arg0 *computeoptimizer.GetAutoScalingGroupRecommendationsInput) (*computeoptimizer.GetAutoScalingGroupRecommendationsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1082,6 +1132,106 @@ func (mr *MockComputeOptimizerAPIMockRecorder) GetLicenseRecommendationsWithCont
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLicenseRecommendationsWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetLicenseRecommendationsWithContext), varargs...)
+}
+
+// GetRDSDatabaseRecommendationProjectedMetrics mocks base method
+func (m *MockComputeOptimizerAPI) GetRDSDatabaseRecommendationProjectedMetrics(arg0 *computeoptimizer.GetRDSDatabaseRecommendationProjectedMetricsInput) (*computeoptimizer.GetRDSDatabaseRecommendationProjectedMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRDSDatabaseRecommendationProjectedMetrics", arg0)
+	ret0, _ := ret[0].(*computeoptimizer.GetRDSDatabaseRecommendationProjectedMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRDSDatabaseRecommendationProjectedMetrics indicates an expected call of GetRDSDatabaseRecommendationProjectedMetrics
+func (mr *MockComputeOptimizerAPIMockRecorder) GetRDSDatabaseRecommendationProjectedMetrics(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRDSDatabaseRecommendationProjectedMetrics", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetRDSDatabaseRecommendationProjectedMetrics), arg0)
+}
+
+// GetRDSDatabaseRecommendationProjectedMetricsRequest mocks base method
+func (m *MockComputeOptimizerAPI) GetRDSDatabaseRecommendationProjectedMetricsRequest(arg0 *computeoptimizer.GetRDSDatabaseRecommendationProjectedMetricsInput) (*request.Request, *computeoptimizer.GetRDSDatabaseRecommendationProjectedMetricsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRDSDatabaseRecommendationProjectedMetricsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*computeoptimizer.GetRDSDatabaseRecommendationProjectedMetricsOutput)
+	return ret0, ret1
+}
+
+// GetRDSDatabaseRecommendationProjectedMetricsRequest indicates an expected call of GetRDSDatabaseRecommendationProjectedMetricsRequest
+func (mr *MockComputeOptimizerAPIMockRecorder) GetRDSDatabaseRecommendationProjectedMetricsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRDSDatabaseRecommendationProjectedMetricsRequest", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetRDSDatabaseRecommendationProjectedMetricsRequest), arg0)
+}
+
+// GetRDSDatabaseRecommendationProjectedMetricsWithContext mocks base method
+func (m *MockComputeOptimizerAPI) GetRDSDatabaseRecommendationProjectedMetricsWithContext(arg0 context.Context, arg1 *computeoptimizer.GetRDSDatabaseRecommendationProjectedMetricsInput, arg2 ...request.Option) (*computeoptimizer.GetRDSDatabaseRecommendationProjectedMetricsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRDSDatabaseRecommendationProjectedMetricsWithContext", varargs...)
+	ret0, _ := ret[0].(*computeoptimizer.GetRDSDatabaseRecommendationProjectedMetricsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRDSDatabaseRecommendationProjectedMetricsWithContext indicates an expected call of GetRDSDatabaseRecommendationProjectedMetricsWithContext
+func (mr *MockComputeOptimizerAPIMockRecorder) GetRDSDatabaseRecommendationProjectedMetricsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRDSDatabaseRecommendationProjectedMetricsWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetRDSDatabaseRecommendationProjectedMetricsWithContext), varargs...)
+}
+
+// GetRDSDatabaseRecommendations mocks base method
+func (m *MockComputeOptimizerAPI) GetRDSDatabaseRecommendations(arg0 *computeoptimizer.GetRDSDatabaseRecommendationsInput) (*computeoptimizer.GetRDSDatabaseRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRDSDatabaseRecommendations", arg0)
+	ret0, _ := ret[0].(*computeoptimizer.GetRDSDatabaseRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRDSDatabaseRecommendations indicates an expected call of GetRDSDatabaseRecommendations
+func (mr *MockComputeOptimizerAPIMockRecorder) GetRDSDatabaseRecommendations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRDSDatabaseRecommendations", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetRDSDatabaseRecommendations), arg0)
+}
+
+// GetRDSDatabaseRecommendationsRequest mocks base method
+func (m *MockComputeOptimizerAPI) GetRDSDatabaseRecommendationsRequest(arg0 *computeoptimizer.GetRDSDatabaseRecommendationsInput) (*request.Request, *computeoptimizer.GetRDSDatabaseRecommendationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRDSDatabaseRecommendationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*computeoptimizer.GetRDSDatabaseRecommendationsOutput)
+	return ret0, ret1
+}
+
+// GetRDSDatabaseRecommendationsRequest indicates an expected call of GetRDSDatabaseRecommendationsRequest
+func (mr *MockComputeOptimizerAPIMockRecorder) GetRDSDatabaseRecommendationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRDSDatabaseRecommendationsRequest", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetRDSDatabaseRecommendationsRequest), arg0)
+}
+
+// GetRDSDatabaseRecommendationsWithContext mocks base method
+func (m *MockComputeOptimizerAPI) GetRDSDatabaseRecommendationsWithContext(arg0 context.Context, arg1 *computeoptimizer.GetRDSDatabaseRecommendationsInput, arg2 ...request.Option) (*computeoptimizer.GetRDSDatabaseRecommendationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRDSDatabaseRecommendationsWithContext", varargs...)
+	ret0, _ := ret[0].(*computeoptimizer.GetRDSDatabaseRecommendationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRDSDatabaseRecommendationsWithContext indicates an expected call of GetRDSDatabaseRecommendationsWithContext
+func (mr *MockComputeOptimizerAPIMockRecorder) GetRDSDatabaseRecommendationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRDSDatabaseRecommendationsWithContext", reflect.TypeOf((*MockComputeOptimizerAPI)(nil).GetRDSDatabaseRecommendationsWithContext), varargs...)
 }
 
 // GetRecommendationPreferences mocks base method
