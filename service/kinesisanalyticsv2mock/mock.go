@@ -850,6 +850,56 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) DescribeApplication(arg0 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplication", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).DescribeApplication), arg0)
 }
 
+// DescribeApplicationOperation mocks base method
+func (m *MockKinesisAnalyticsV2API) DescribeApplicationOperation(arg0 *kinesisanalyticsv2.DescribeApplicationOperationInput) (*kinesisanalyticsv2.DescribeApplicationOperationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeApplicationOperation", arg0)
+	ret0, _ := ret[0].(*kinesisanalyticsv2.DescribeApplicationOperationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeApplicationOperation indicates an expected call of DescribeApplicationOperation
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) DescribeApplicationOperation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationOperation", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).DescribeApplicationOperation), arg0)
+}
+
+// DescribeApplicationOperationRequest mocks base method
+func (m *MockKinesisAnalyticsV2API) DescribeApplicationOperationRequest(arg0 *kinesisanalyticsv2.DescribeApplicationOperationInput) (*request.Request, *kinesisanalyticsv2.DescribeApplicationOperationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeApplicationOperationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisanalyticsv2.DescribeApplicationOperationOutput)
+	return ret0, ret1
+}
+
+// DescribeApplicationOperationRequest indicates an expected call of DescribeApplicationOperationRequest
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) DescribeApplicationOperationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationOperationRequest", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).DescribeApplicationOperationRequest), arg0)
+}
+
+// DescribeApplicationOperationWithContext mocks base method
+func (m *MockKinesisAnalyticsV2API) DescribeApplicationOperationWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.DescribeApplicationOperationInput, arg2 ...request.Option) (*kinesisanalyticsv2.DescribeApplicationOperationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeApplicationOperationWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisanalyticsv2.DescribeApplicationOperationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeApplicationOperationWithContext indicates an expected call of DescribeApplicationOperationWithContext
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) DescribeApplicationOperationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeApplicationOperationWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).DescribeApplicationOperationWithContext), varargs...)
+}
+
 // DescribeApplicationRequest mocks base method
 func (m *MockKinesisAnalyticsV2API) DescribeApplicationRequest(arg0 *kinesisanalyticsv2.DescribeApplicationInput) (*request.Request, *kinesisanalyticsv2.DescribeApplicationOutput) {
 	m.ctrl.T.Helper()
@@ -1035,6 +1085,89 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) DiscoverInputSchemaWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DiscoverInputSchemaWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).DiscoverInputSchemaWithContext), varargs...)
 }
 
+// ListApplicationOperations mocks base method
+func (m *MockKinesisAnalyticsV2API) ListApplicationOperations(arg0 *kinesisanalyticsv2.ListApplicationOperationsInput) (*kinesisanalyticsv2.ListApplicationOperationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationOperations", arg0)
+	ret0, _ := ret[0].(*kinesisanalyticsv2.ListApplicationOperationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApplicationOperations indicates an expected call of ListApplicationOperations
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationOperations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationOperations", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListApplicationOperations), arg0)
+}
+
+// ListApplicationOperationsPages mocks base method
+func (m *MockKinesisAnalyticsV2API) ListApplicationOperationsPages(arg0 *kinesisanalyticsv2.ListApplicationOperationsInput, arg1 func(*kinesisanalyticsv2.ListApplicationOperationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationOperationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationOperationsPages indicates an expected call of ListApplicationOperationsPages
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationOperationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationOperationsPages", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListApplicationOperationsPages), arg0, arg1)
+}
+
+// ListApplicationOperationsPagesWithContext mocks base method
+func (m *MockKinesisAnalyticsV2API) ListApplicationOperationsPagesWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.ListApplicationOperationsInput, arg2 func(*kinesisanalyticsv2.ListApplicationOperationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApplicationOperationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationOperationsPagesWithContext indicates an expected call of ListApplicationOperationsPagesWithContext
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationOperationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationOperationsPagesWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListApplicationOperationsPagesWithContext), varargs...)
+}
+
+// ListApplicationOperationsRequest mocks base method
+func (m *MockKinesisAnalyticsV2API) ListApplicationOperationsRequest(arg0 *kinesisanalyticsv2.ListApplicationOperationsInput) (*request.Request, *kinesisanalyticsv2.ListApplicationOperationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationOperationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*kinesisanalyticsv2.ListApplicationOperationsOutput)
+	return ret0, ret1
+}
+
+// ListApplicationOperationsRequest indicates an expected call of ListApplicationOperationsRequest
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationOperationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationOperationsRequest", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListApplicationOperationsRequest), arg0)
+}
+
+// ListApplicationOperationsWithContext mocks base method
+func (m *MockKinesisAnalyticsV2API) ListApplicationOperationsWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.ListApplicationOperationsInput, arg2 ...request.Option) (*kinesisanalyticsv2.ListApplicationOperationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApplicationOperationsWithContext", varargs...)
+	ret0, _ := ret[0].(*kinesisanalyticsv2.ListApplicationOperationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListApplicationOperationsWithContext indicates an expected call of ListApplicationOperationsWithContext
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationOperationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationOperationsWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListApplicationOperationsWithContext), varargs...)
+}
+
 // ListApplicationSnapshots mocks base method
 func (m *MockKinesisAnalyticsV2API) ListApplicationSnapshots(arg0 *kinesisanalyticsv2.ListApplicationSnapshotsInput) (*kinesisanalyticsv2.ListApplicationSnapshotsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1048,6 +1181,39 @@ func (m *MockKinesisAnalyticsV2API) ListApplicationSnapshots(arg0 *kinesisanalyt
 func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationSnapshots(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationSnapshots", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListApplicationSnapshots), arg0)
+}
+
+// ListApplicationSnapshotsPages mocks base method
+func (m *MockKinesisAnalyticsV2API) ListApplicationSnapshotsPages(arg0 *kinesisanalyticsv2.ListApplicationSnapshotsInput, arg1 func(*kinesisanalyticsv2.ListApplicationSnapshotsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationSnapshotsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationSnapshotsPages indicates an expected call of ListApplicationSnapshotsPages
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationSnapshotsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationSnapshotsPages", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListApplicationSnapshotsPages), arg0, arg1)
+}
+
+// ListApplicationSnapshotsPagesWithContext mocks base method
+func (m *MockKinesisAnalyticsV2API) ListApplicationSnapshotsPagesWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.ListApplicationSnapshotsInput, arg2 func(*kinesisanalyticsv2.ListApplicationSnapshotsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApplicationSnapshotsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationSnapshotsPagesWithContext indicates an expected call of ListApplicationSnapshotsPagesWithContext
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationSnapshotsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationSnapshotsPagesWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListApplicationSnapshotsPagesWithContext), varargs...)
 }
 
 // ListApplicationSnapshotsRequest mocks base method
@@ -1100,6 +1266,39 @@ func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationVersions(arg0 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationVersions", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListApplicationVersions), arg0)
 }
 
+// ListApplicationVersionsPages mocks base method
+func (m *MockKinesisAnalyticsV2API) ListApplicationVersionsPages(arg0 *kinesisanalyticsv2.ListApplicationVersionsInput, arg1 func(*kinesisanalyticsv2.ListApplicationVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationVersionsPages indicates an expected call of ListApplicationVersionsPages
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationVersionsPages", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListApplicationVersionsPages), arg0, arg1)
+}
+
+// ListApplicationVersionsPagesWithContext mocks base method
+func (m *MockKinesisAnalyticsV2API) ListApplicationVersionsPagesWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.ListApplicationVersionsInput, arg2 func(*kinesisanalyticsv2.ListApplicationVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApplicationVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationVersionsPagesWithContext indicates an expected call of ListApplicationVersionsPagesWithContext
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationVersionsPagesWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListApplicationVersionsPagesWithContext), varargs...)
+}
+
 // ListApplicationVersionsRequest mocks base method
 func (m *MockKinesisAnalyticsV2API) ListApplicationVersionsRequest(arg0 *kinesisanalyticsv2.ListApplicationVersionsInput) (*request.Request, *kinesisanalyticsv2.ListApplicationVersionsOutput) {
 	m.ctrl.T.Helper()
@@ -1148,6 +1347,39 @@ func (m *MockKinesisAnalyticsV2API) ListApplications(arg0 *kinesisanalyticsv2.Li
 func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplications(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplications", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListApplications), arg0)
+}
+
+// ListApplicationsPages mocks base method
+func (m *MockKinesisAnalyticsV2API) ListApplicationsPages(arg0 *kinesisanalyticsv2.ListApplicationsInput, arg1 func(*kinesisanalyticsv2.ListApplicationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApplicationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationsPages indicates an expected call of ListApplicationsPages
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationsPages", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListApplicationsPages), arg0, arg1)
+}
+
+// ListApplicationsPagesWithContext mocks base method
+func (m *MockKinesisAnalyticsV2API) ListApplicationsPagesWithContext(arg0 context.Context, arg1 *kinesisanalyticsv2.ListApplicationsInput, arg2 func(*kinesisanalyticsv2.ListApplicationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApplicationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApplicationsPagesWithContext indicates an expected call of ListApplicationsPagesWithContext
+func (mr *MockKinesisAnalyticsV2APIMockRecorder) ListApplicationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApplicationsPagesWithContext", reflect.TypeOf((*MockKinesisAnalyticsV2API)(nil).ListApplicationsPagesWithContext), varargs...)
 }
 
 // ListApplicationsRequest mocks base method

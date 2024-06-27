@@ -285,6 +285,56 @@ func (mr *MockIVSRealTimeAPIMockRecorder) DeleteEncoderConfigurationWithContext(
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteEncoderConfigurationWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).DeleteEncoderConfigurationWithContext), varargs...)
 }
 
+// DeletePublicKey mocks base method
+func (m *MockIVSRealTimeAPI) DeletePublicKey(arg0 *ivsrealtime.DeletePublicKeyInput) (*ivsrealtime.DeletePublicKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePublicKey", arg0)
+	ret0, _ := ret[0].(*ivsrealtime.DeletePublicKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePublicKey indicates an expected call of DeletePublicKey
+func (mr *MockIVSRealTimeAPIMockRecorder) DeletePublicKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePublicKey", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).DeletePublicKey), arg0)
+}
+
+// DeletePublicKeyRequest mocks base method
+func (m *MockIVSRealTimeAPI) DeletePublicKeyRequest(arg0 *ivsrealtime.DeletePublicKeyInput) (*request.Request, *ivsrealtime.DeletePublicKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePublicKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivsrealtime.DeletePublicKeyOutput)
+	return ret0, ret1
+}
+
+// DeletePublicKeyRequest indicates an expected call of DeletePublicKeyRequest
+func (mr *MockIVSRealTimeAPIMockRecorder) DeletePublicKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePublicKeyRequest", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).DeletePublicKeyRequest), arg0)
+}
+
+// DeletePublicKeyWithContext mocks base method
+func (m *MockIVSRealTimeAPI) DeletePublicKeyWithContext(arg0 context.Context, arg1 *ivsrealtime.DeletePublicKeyInput, arg2 ...request.Option) (*ivsrealtime.DeletePublicKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePublicKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*ivsrealtime.DeletePublicKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePublicKeyWithContext indicates an expected call of DeletePublicKeyWithContext
+func (mr *MockIVSRealTimeAPIMockRecorder) DeletePublicKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePublicKeyWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).DeletePublicKeyWithContext), varargs...)
+}
+
 // DeleteStage mocks base method
 func (m *MockIVSRealTimeAPI) DeleteStage(arg0 *ivsrealtime.DeleteStageInput) (*ivsrealtime.DeleteStageOutput, error) {
 	m.ctrl.T.Helper()
@@ -585,6 +635,56 @@ func (mr *MockIVSRealTimeAPIMockRecorder) GetParticipantWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetParticipantWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).GetParticipantWithContext), varargs...)
 }
 
+// GetPublicKey mocks base method
+func (m *MockIVSRealTimeAPI) GetPublicKey(arg0 *ivsrealtime.GetPublicKeyInput) (*ivsrealtime.GetPublicKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPublicKey", arg0)
+	ret0, _ := ret[0].(*ivsrealtime.GetPublicKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPublicKey indicates an expected call of GetPublicKey
+func (mr *MockIVSRealTimeAPIMockRecorder) GetPublicKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPublicKey", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).GetPublicKey), arg0)
+}
+
+// GetPublicKeyRequest mocks base method
+func (m *MockIVSRealTimeAPI) GetPublicKeyRequest(arg0 *ivsrealtime.GetPublicKeyInput) (*request.Request, *ivsrealtime.GetPublicKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPublicKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivsrealtime.GetPublicKeyOutput)
+	return ret0, ret1
+}
+
+// GetPublicKeyRequest indicates an expected call of GetPublicKeyRequest
+func (mr *MockIVSRealTimeAPIMockRecorder) GetPublicKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPublicKeyRequest", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).GetPublicKeyRequest), arg0)
+}
+
+// GetPublicKeyWithContext mocks base method
+func (m *MockIVSRealTimeAPI) GetPublicKeyWithContext(arg0 context.Context, arg1 *ivsrealtime.GetPublicKeyInput, arg2 ...request.Option) (*ivsrealtime.GetPublicKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPublicKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*ivsrealtime.GetPublicKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPublicKeyWithContext indicates an expected call of GetPublicKeyWithContext
+func (mr *MockIVSRealTimeAPIMockRecorder) GetPublicKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPublicKeyWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).GetPublicKeyWithContext), varargs...)
+}
+
 // GetStage mocks base method
 func (m *MockIVSRealTimeAPI) GetStage(arg0 *ivsrealtime.GetStageInput) (*ivsrealtime.GetStageOutput, error) {
 	m.ctrl.T.Helper()
@@ -733,6 +833,56 @@ func (mr *MockIVSRealTimeAPIMockRecorder) GetStorageConfigurationWithContext(arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetStorageConfigurationWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).GetStorageConfigurationWithContext), varargs...)
+}
+
+// ImportPublicKey mocks base method
+func (m *MockIVSRealTimeAPI) ImportPublicKey(arg0 *ivsrealtime.ImportPublicKeyInput) (*ivsrealtime.ImportPublicKeyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportPublicKey", arg0)
+	ret0, _ := ret[0].(*ivsrealtime.ImportPublicKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportPublicKey indicates an expected call of ImportPublicKey
+func (mr *MockIVSRealTimeAPIMockRecorder) ImportPublicKey(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportPublicKey", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ImportPublicKey), arg0)
+}
+
+// ImportPublicKeyRequest mocks base method
+func (m *MockIVSRealTimeAPI) ImportPublicKeyRequest(arg0 *ivsrealtime.ImportPublicKeyInput) (*request.Request, *ivsrealtime.ImportPublicKeyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ImportPublicKeyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivsrealtime.ImportPublicKeyOutput)
+	return ret0, ret1
+}
+
+// ImportPublicKeyRequest indicates an expected call of ImportPublicKeyRequest
+func (mr *MockIVSRealTimeAPIMockRecorder) ImportPublicKeyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportPublicKeyRequest", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ImportPublicKeyRequest), arg0)
+}
+
+// ImportPublicKeyWithContext mocks base method
+func (m *MockIVSRealTimeAPI) ImportPublicKeyWithContext(arg0 context.Context, arg1 *ivsrealtime.ImportPublicKeyInput, arg2 ...request.Option) (*ivsrealtime.ImportPublicKeyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ImportPublicKeyWithContext", varargs...)
+	ret0, _ := ret[0].(*ivsrealtime.ImportPublicKeyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ImportPublicKeyWithContext indicates an expected call of ImportPublicKeyWithContext
+func (mr *MockIVSRealTimeAPIMockRecorder) ImportPublicKeyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ImportPublicKeyWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ImportPublicKeyWithContext), varargs...)
 }
 
 // ListCompositions mocks base method
@@ -1065,6 +1215,89 @@ func (mr *MockIVSRealTimeAPIMockRecorder) ListParticipantsWithContext(arg0, arg1
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListParticipantsWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListParticipantsWithContext), varargs...)
+}
+
+// ListPublicKeys mocks base method
+func (m *MockIVSRealTimeAPI) ListPublicKeys(arg0 *ivsrealtime.ListPublicKeysInput) (*ivsrealtime.ListPublicKeysOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPublicKeys", arg0)
+	ret0, _ := ret[0].(*ivsrealtime.ListPublicKeysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPublicKeys indicates an expected call of ListPublicKeys
+func (mr *MockIVSRealTimeAPIMockRecorder) ListPublicKeys(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublicKeys", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListPublicKeys), arg0)
+}
+
+// ListPublicKeysPages mocks base method
+func (m *MockIVSRealTimeAPI) ListPublicKeysPages(arg0 *ivsrealtime.ListPublicKeysInput, arg1 func(*ivsrealtime.ListPublicKeysOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPublicKeysPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPublicKeysPages indicates an expected call of ListPublicKeysPages
+func (mr *MockIVSRealTimeAPIMockRecorder) ListPublicKeysPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublicKeysPages", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListPublicKeysPages), arg0, arg1)
+}
+
+// ListPublicKeysPagesWithContext mocks base method
+func (m *MockIVSRealTimeAPI) ListPublicKeysPagesWithContext(arg0 context.Context, arg1 *ivsrealtime.ListPublicKeysInput, arg2 func(*ivsrealtime.ListPublicKeysOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPublicKeysPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPublicKeysPagesWithContext indicates an expected call of ListPublicKeysPagesWithContext
+func (mr *MockIVSRealTimeAPIMockRecorder) ListPublicKeysPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublicKeysPagesWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListPublicKeysPagesWithContext), varargs...)
+}
+
+// ListPublicKeysRequest mocks base method
+func (m *MockIVSRealTimeAPI) ListPublicKeysRequest(arg0 *ivsrealtime.ListPublicKeysInput) (*request.Request, *ivsrealtime.ListPublicKeysOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPublicKeysRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ivsrealtime.ListPublicKeysOutput)
+	return ret0, ret1
+}
+
+// ListPublicKeysRequest indicates an expected call of ListPublicKeysRequest
+func (mr *MockIVSRealTimeAPIMockRecorder) ListPublicKeysRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublicKeysRequest", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListPublicKeysRequest), arg0)
+}
+
+// ListPublicKeysWithContext mocks base method
+func (m *MockIVSRealTimeAPI) ListPublicKeysWithContext(arg0 context.Context, arg1 *ivsrealtime.ListPublicKeysInput, arg2 ...request.Option) (*ivsrealtime.ListPublicKeysOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPublicKeysWithContext", varargs...)
+	ret0, _ := ret[0].(*ivsrealtime.ListPublicKeysOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPublicKeysWithContext indicates an expected call of ListPublicKeysWithContext
+func (mr *MockIVSRealTimeAPIMockRecorder) ListPublicKeysWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPublicKeysWithContext", reflect.TypeOf((*MockIVSRealTimeAPI)(nil).ListPublicKeysWithContext), varargs...)
 }
 
 // ListStageSessions mocks base method

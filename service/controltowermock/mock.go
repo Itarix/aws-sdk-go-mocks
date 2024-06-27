@@ -917,6 +917,89 @@ func (mr *MockControlTowerAPIMockRecorder) ListEnabledControlsWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnabledControlsWithContext", reflect.TypeOf((*MockControlTowerAPI)(nil).ListEnabledControlsWithContext), varargs...)
 }
 
+// ListLandingZoneOperations mocks base method
+func (m *MockControlTowerAPI) ListLandingZoneOperations(arg0 *controltower.ListLandingZoneOperationsInput) (*controltower.ListLandingZoneOperationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLandingZoneOperations", arg0)
+	ret0, _ := ret[0].(*controltower.ListLandingZoneOperationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLandingZoneOperations indicates an expected call of ListLandingZoneOperations
+func (mr *MockControlTowerAPIMockRecorder) ListLandingZoneOperations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLandingZoneOperations", reflect.TypeOf((*MockControlTowerAPI)(nil).ListLandingZoneOperations), arg0)
+}
+
+// ListLandingZoneOperationsPages mocks base method
+func (m *MockControlTowerAPI) ListLandingZoneOperationsPages(arg0 *controltower.ListLandingZoneOperationsInput, arg1 func(*controltower.ListLandingZoneOperationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLandingZoneOperationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLandingZoneOperationsPages indicates an expected call of ListLandingZoneOperationsPages
+func (mr *MockControlTowerAPIMockRecorder) ListLandingZoneOperationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLandingZoneOperationsPages", reflect.TypeOf((*MockControlTowerAPI)(nil).ListLandingZoneOperationsPages), arg0, arg1)
+}
+
+// ListLandingZoneOperationsPagesWithContext mocks base method
+func (m *MockControlTowerAPI) ListLandingZoneOperationsPagesWithContext(arg0 context.Context, arg1 *controltower.ListLandingZoneOperationsInput, arg2 func(*controltower.ListLandingZoneOperationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLandingZoneOperationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLandingZoneOperationsPagesWithContext indicates an expected call of ListLandingZoneOperationsPagesWithContext
+func (mr *MockControlTowerAPIMockRecorder) ListLandingZoneOperationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLandingZoneOperationsPagesWithContext", reflect.TypeOf((*MockControlTowerAPI)(nil).ListLandingZoneOperationsPagesWithContext), varargs...)
+}
+
+// ListLandingZoneOperationsRequest mocks base method
+func (m *MockControlTowerAPI) ListLandingZoneOperationsRequest(arg0 *controltower.ListLandingZoneOperationsInput) (*request.Request, *controltower.ListLandingZoneOperationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLandingZoneOperationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*controltower.ListLandingZoneOperationsOutput)
+	return ret0, ret1
+}
+
+// ListLandingZoneOperationsRequest indicates an expected call of ListLandingZoneOperationsRequest
+func (mr *MockControlTowerAPIMockRecorder) ListLandingZoneOperationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLandingZoneOperationsRequest", reflect.TypeOf((*MockControlTowerAPI)(nil).ListLandingZoneOperationsRequest), arg0)
+}
+
+// ListLandingZoneOperationsWithContext mocks base method
+func (m *MockControlTowerAPI) ListLandingZoneOperationsWithContext(arg0 context.Context, arg1 *controltower.ListLandingZoneOperationsInput, arg2 ...request.Option) (*controltower.ListLandingZoneOperationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLandingZoneOperationsWithContext", varargs...)
+	ret0, _ := ret[0].(*controltower.ListLandingZoneOperationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLandingZoneOperationsWithContext indicates an expected call of ListLandingZoneOperationsWithContext
+func (mr *MockControlTowerAPIMockRecorder) ListLandingZoneOperationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLandingZoneOperationsWithContext", reflect.TypeOf((*MockControlTowerAPI)(nil).ListLandingZoneOperationsWithContext), varargs...)
+}
+
 // ListLandingZones mocks base method
 func (m *MockControlTowerAPI) ListLandingZones(arg0 *controltower.ListLandingZonesInput) (*controltower.ListLandingZonesOutput, error) {
 	m.ctrl.T.Helper()
