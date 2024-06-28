@@ -150,6 +150,56 @@ func (mr *MockQConnectAPIMockRecorder) CreateContent(arg0 interface{}) *gomock.C
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContent", reflect.TypeOf((*MockQConnectAPI)(nil).CreateContent), arg0)
 }
 
+// CreateContentAssociation mocks base method
+func (m *MockQConnectAPI) CreateContentAssociation(arg0 *qconnect.CreateContentAssociationInput) (*qconnect.CreateContentAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContentAssociation", arg0)
+	ret0, _ := ret[0].(*qconnect.CreateContentAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContentAssociation indicates an expected call of CreateContentAssociation
+func (mr *MockQConnectAPIMockRecorder) CreateContentAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContentAssociation", reflect.TypeOf((*MockQConnectAPI)(nil).CreateContentAssociation), arg0)
+}
+
+// CreateContentAssociationRequest mocks base method
+func (m *MockQConnectAPI) CreateContentAssociationRequest(arg0 *qconnect.CreateContentAssociationInput) (*request.Request, *qconnect.CreateContentAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateContentAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*qconnect.CreateContentAssociationOutput)
+	return ret0, ret1
+}
+
+// CreateContentAssociationRequest indicates an expected call of CreateContentAssociationRequest
+func (mr *MockQConnectAPIMockRecorder) CreateContentAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContentAssociationRequest", reflect.TypeOf((*MockQConnectAPI)(nil).CreateContentAssociationRequest), arg0)
+}
+
+// CreateContentAssociationWithContext mocks base method
+func (m *MockQConnectAPI) CreateContentAssociationWithContext(arg0 context.Context, arg1 *qconnect.CreateContentAssociationInput, arg2 ...request.Option) (*qconnect.CreateContentAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateContentAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*qconnect.CreateContentAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateContentAssociationWithContext indicates an expected call of CreateContentAssociationWithContext
+func (mr *MockQConnectAPIMockRecorder) CreateContentAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateContentAssociationWithContext", reflect.TypeOf((*MockQConnectAPI)(nil).CreateContentAssociationWithContext), varargs...)
+}
+
 // CreateContentRequest mocks base method
 func (m *MockQConnectAPI) CreateContentRequest(arg0 *qconnect.CreateContentInput) (*request.Request, *qconnect.CreateContentOutput) {
 	m.ctrl.T.Helper()
@@ -450,6 +500,56 @@ func (mr *MockQConnectAPIMockRecorder) DeleteContent(arg0 interface{}) *gomock.C
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContent", reflect.TypeOf((*MockQConnectAPI)(nil).DeleteContent), arg0)
 }
 
+// DeleteContentAssociation mocks base method
+func (m *MockQConnectAPI) DeleteContentAssociation(arg0 *qconnect.DeleteContentAssociationInput) (*qconnect.DeleteContentAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteContentAssociation", arg0)
+	ret0, _ := ret[0].(*qconnect.DeleteContentAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteContentAssociation indicates an expected call of DeleteContentAssociation
+func (mr *MockQConnectAPIMockRecorder) DeleteContentAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContentAssociation", reflect.TypeOf((*MockQConnectAPI)(nil).DeleteContentAssociation), arg0)
+}
+
+// DeleteContentAssociationRequest mocks base method
+func (m *MockQConnectAPI) DeleteContentAssociationRequest(arg0 *qconnect.DeleteContentAssociationInput) (*request.Request, *qconnect.DeleteContentAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteContentAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*qconnect.DeleteContentAssociationOutput)
+	return ret0, ret1
+}
+
+// DeleteContentAssociationRequest indicates an expected call of DeleteContentAssociationRequest
+func (mr *MockQConnectAPIMockRecorder) DeleteContentAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContentAssociationRequest", reflect.TypeOf((*MockQConnectAPI)(nil).DeleteContentAssociationRequest), arg0)
+}
+
+// DeleteContentAssociationWithContext mocks base method
+func (m *MockQConnectAPI) DeleteContentAssociationWithContext(arg0 context.Context, arg1 *qconnect.DeleteContentAssociationInput, arg2 ...request.Option) (*qconnect.DeleteContentAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteContentAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*qconnect.DeleteContentAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteContentAssociationWithContext indicates an expected call of DeleteContentAssociationWithContext
+func (mr *MockQConnectAPIMockRecorder) DeleteContentAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteContentAssociationWithContext", reflect.TypeOf((*MockQConnectAPI)(nil).DeleteContentAssociationWithContext), varargs...)
+}
+
 // DeleteContentRequest mocks base method
 func (m *MockQConnectAPI) DeleteContentRequest(arg0 *qconnect.DeleteContentInput) (*request.Request, *qconnect.DeleteContentOutput) {
 	m.ctrl.T.Helper()
@@ -748,6 +848,56 @@ func (m *MockQConnectAPI) GetContent(arg0 *qconnect.GetContentInput) (*qconnect.
 func (mr *MockQConnectAPIMockRecorder) GetContent(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContent", reflect.TypeOf((*MockQConnectAPI)(nil).GetContent), arg0)
+}
+
+// GetContentAssociation mocks base method
+func (m *MockQConnectAPI) GetContentAssociation(arg0 *qconnect.GetContentAssociationInput) (*qconnect.GetContentAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContentAssociation", arg0)
+	ret0, _ := ret[0].(*qconnect.GetContentAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContentAssociation indicates an expected call of GetContentAssociation
+func (mr *MockQConnectAPIMockRecorder) GetContentAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContentAssociation", reflect.TypeOf((*MockQConnectAPI)(nil).GetContentAssociation), arg0)
+}
+
+// GetContentAssociationRequest mocks base method
+func (m *MockQConnectAPI) GetContentAssociationRequest(arg0 *qconnect.GetContentAssociationInput) (*request.Request, *qconnect.GetContentAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetContentAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*qconnect.GetContentAssociationOutput)
+	return ret0, ret1
+}
+
+// GetContentAssociationRequest indicates an expected call of GetContentAssociationRequest
+func (mr *MockQConnectAPIMockRecorder) GetContentAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContentAssociationRequest", reflect.TypeOf((*MockQConnectAPI)(nil).GetContentAssociationRequest), arg0)
+}
+
+// GetContentAssociationWithContext mocks base method
+func (m *MockQConnectAPI) GetContentAssociationWithContext(arg0 context.Context, arg1 *qconnect.GetContentAssociationInput, arg2 ...request.Option) (*qconnect.GetContentAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetContentAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*qconnect.GetContentAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetContentAssociationWithContext indicates an expected call of GetContentAssociationWithContext
+func (mr *MockQConnectAPIMockRecorder) GetContentAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetContentAssociationWithContext", reflect.TypeOf((*MockQConnectAPI)(nil).GetContentAssociationWithContext), varargs...)
 }
 
 // GetContentRequest mocks base method
@@ -1249,6 +1399,89 @@ func (mr *MockQConnectAPIMockRecorder) ListAssistantsWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssistantsWithContext", reflect.TypeOf((*MockQConnectAPI)(nil).ListAssistantsWithContext), varargs...)
+}
+
+// ListContentAssociations mocks base method
+func (m *MockQConnectAPI) ListContentAssociations(arg0 *qconnect.ListContentAssociationsInput) (*qconnect.ListContentAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContentAssociations", arg0)
+	ret0, _ := ret[0].(*qconnect.ListContentAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListContentAssociations indicates an expected call of ListContentAssociations
+func (mr *MockQConnectAPIMockRecorder) ListContentAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContentAssociations", reflect.TypeOf((*MockQConnectAPI)(nil).ListContentAssociations), arg0)
+}
+
+// ListContentAssociationsPages mocks base method
+func (m *MockQConnectAPI) ListContentAssociationsPages(arg0 *qconnect.ListContentAssociationsInput, arg1 func(*qconnect.ListContentAssociationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContentAssociationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListContentAssociationsPages indicates an expected call of ListContentAssociationsPages
+func (mr *MockQConnectAPIMockRecorder) ListContentAssociationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContentAssociationsPages", reflect.TypeOf((*MockQConnectAPI)(nil).ListContentAssociationsPages), arg0, arg1)
+}
+
+// ListContentAssociationsPagesWithContext mocks base method
+func (m *MockQConnectAPI) ListContentAssociationsPagesWithContext(arg0 context.Context, arg1 *qconnect.ListContentAssociationsInput, arg2 func(*qconnect.ListContentAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListContentAssociationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListContentAssociationsPagesWithContext indicates an expected call of ListContentAssociationsPagesWithContext
+func (mr *MockQConnectAPIMockRecorder) ListContentAssociationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContentAssociationsPagesWithContext", reflect.TypeOf((*MockQConnectAPI)(nil).ListContentAssociationsPagesWithContext), varargs...)
+}
+
+// ListContentAssociationsRequest mocks base method
+func (m *MockQConnectAPI) ListContentAssociationsRequest(arg0 *qconnect.ListContentAssociationsInput) (*request.Request, *qconnect.ListContentAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListContentAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*qconnect.ListContentAssociationsOutput)
+	return ret0, ret1
+}
+
+// ListContentAssociationsRequest indicates an expected call of ListContentAssociationsRequest
+func (mr *MockQConnectAPIMockRecorder) ListContentAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContentAssociationsRequest", reflect.TypeOf((*MockQConnectAPI)(nil).ListContentAssociationsRequest), arg0)
+}
+
+// ListContentAssociationsWithContext mocks base method
+func (m *MockQConnectAPI) ListContentAssociationsWithContext(arg0 context.Context, arg1 *qconnect.ListContentAssociationsInput, arg2 ...request.Option) (*qconnect.ListContentAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListContentAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*qconnect.ListContentAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListContentAssociationsWithContext indicates an expected call of ListContentAssociationsWithContext
+func (mr *MockQConnectAPIMockRecorder) ListContentAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListContentAssociationsWithContext", reflect.TypeOf((*MockQConnectAPI)(nil).ListContentAssociationsWithContext), varargs...)
 }
 
 // ListContents mocks base method

@@ -2935,6 +2935,56 @@ func (mr *MockDataZoneAPIMockRecorder) GetIamPortalLoginUrlWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIamPortalLoginUrlWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).GetIamPortalLoginUrlWithContext), varargs...)
 }
 
+// GetLineageNode mocks base method
+func (m *MockDataZoneAPI) GetLineageNode(arg0 *datazone.GetLineageNodeInput) (*datazone.GetLineageNodeOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLineageNode", arg0)
+	ret0, _ := ret[0].(*datazone.GetLineageNodeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLineageNode indicates an expected call of GetLineageNode
+func (mr *MockDataZoneAPIMockRecorder) GetLineageNode(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLineageNode", reflect.TypeOf((*MockDataZoneAPI)(nil).GetLineageNode), arg0)
+}
+
+// GetLineageNodeRequest mocks base method
+func (m *MockDataZoneAPI) GetLineageNodeRequest(arg0 *datazone.GetLineageNodeInput) (*request.Request, *datazone.GetLineageNodeOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetLineageNodeRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datazone.GetLineageNodeOutput)
+	return ret0, ret1
+}
+
+// GetLineageNodeRequest indicates an expected call of GetLineageNodeRequest
+func (mr *MockDataZoneAPIMockRecorder) GetLineageNodeRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLineageNodeRequest", reflect.TypeOf((*MockDataZoneAPI)(nil).GetLineageNodeRequest), arg0)
+}
+
+// GetLineageNodeWithContext mocks base method
+func (m *MockDataZoneAPI) GetLineageNodeWithContext(arg0 context.Context, arg1 *datazone.GetLineageNodeInput, arg2 ...request.Option) (*datazone.GetLineageNodeOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetLineageNodeWithContext", varargs...)
+	ret0, _ := ret[0].(*datazone.GetLineageNodeOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetLineageNodeWithContext indicates an expected call of GetLineageNodeWithContext
+func (mr *MockDataZoneAPIMockRecorder) GetLineageNodeWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetLineageNodeWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).GetLineageNodeWithContext), varargs...)
+}
+
 // GetListing mocks base method
 func (m *MockDataZoneAPI) GetListing(arg0 *datazone.GetListingInput) (*datazone.GetListingOutput, error) {
 	m.ctrl.T.Helper()
@@ -4215,6 +4265,89 @@ func (mr *MockDataZoneAPIMockRecorder) ListEnvironmentsWithContext(arg0, arg1 in
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListEnvironmentsWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).ListEnvironmentsWithContext), varargs...)
 }
 
+// ListLineageNodeHistory mocks base method
+func (m *MockDataZoneAPI) ListLineageNodeHistory(arg0 *datazone.ListLineageNodeHistoryInput) (*datazone.ListLineageNodeHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLineageNodeHistory", arg0)
+	ret0, _ := ret[0].(*datazone.ListLineageNodeHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLineageNodeHistory indicates an expected call of ListLineageNodeHistory
+func (mr *MockDataZoneAPIMockRecorder) ListLineageNodeHistory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLineageNodeHistory", reflect.TypeOf((*MockDataZoneAPI)(nil).ListLineageNodeHistory), arg0)
+}
+
+// ListLineageNodeHistoryPages mocks base method
+func (m *MockDataZoneAPI) ListLineageNodeHistoryPages(arg0 *datazone.ListLineageNodeHistoryInput, arg1 func(*datazone.ListLineageNodeHistoryOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLineageNodeHistoryPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLineageNodeHistoryPages indicates an expected call of ListLineageNodeHistoryPages
+func (mr *MockDataZoneAPIMockRecorder) ListLineageNodeHistoryPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLineageNodeHistoryPages", reflect.TypeOf((*MockDataZoneAPI)(nil).ListLineageNodeHistoryPages), arg0, arg1)
+}
+
+// ListLineageNodeHistoryPagesWithContext mocks base method
+func (m *MockDataZoneAPI) ListLineageNodeHistoryPagesWithContext(arg0 context.Context, arg1 *datazone.ListLineageNodeHistoryInput, arg2 func(*datazone.ListLineageNodeHistoryOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLineageNodeHistoryPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListLineageNodeHistoryPagesWithContext indicates an expected call of ListLineageNodeHistoryPagesWithContext
+func (mr *MockDataZoneAPIMockRecorder) ListLineageNodeHistoryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLineageNodeHistoryPagesWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).ListLineageNodeHistoryPagesWithContext), varargs...)
+}
+
+// ListLineageNodeHistoryRequest mocks base method
+func (m *MockDataZoneAPI) ListLineageNodeHistoryRequest(arg0 *datazone.ListLineageNodeHistoryInput) (*request.Request, *datazone.ListLineageNodeHistoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListLineageNodeHistoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datazone.ListLineageNodeHistoryOutput)
+	return ret0, ret1
+}
+
+// ListLineageNodeHistoryRequest indicates an expected call of ListLineageNodeHistoryRequest
+func (mr *MockDataZoneAPIMockRecorder) ListLineageNodeHistoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLineageNodeHistoryRequest", reflect.TypeOf((*MockDataZoneAPI)(nil).ListLineageNodeHistoryRequest), arg0)
+}
+
+// ListLineageNodeHistoryWithContext mocks base method
+func (m *MockDataZoneAPI) ListLineageNodeHistoryWithContext(arg0 context.Context, arg1 *datazone.ListLineageNodeHistoryInput, arg2 ...request.Option) (*datazone.ListLineageNodeHistoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListLineageNodeHistoryWithContext", varargs...)
+	ret0, _ := ret[0].(*datazone.ListLineageNodeHistoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListLineageNodeHistoryWithContext indicates an expected call of ListLineageNodeHistoryWithContext
+func (mr *MockDataZoneAPIMockRecorder) ListLineageNodeHistoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLineageNodeHistoryWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).ListLineageNodeHistoryWithContext), varargs...)
+}
+
 // ListMetadataGenerationRuns mocks base method
 func (m *MockDataZoneAPI) ListMetadataGenerationRuns(arg0 *datazone.ListMetadataGenerationRunsInput) (*datazone.ListMetadataGenerationRunsOutput, error) {
 	m.ctrl.T.Helper()
@@ -5010,6 +5143,56 @@ func (mr *MockDataZoneAPIMockRecorder) ListTimeSeriesDataPointsWithContext(arg0,
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTimeSeriesDataPointsWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).ListTimeSeriesDataPointsWithContext), varargs...)
+}
+
+// PostLineageEvent mocks base method
+func (m *MockDataZoneAPI) PostLineageEvent(arg0 *datazone.PostLineageEventInput) (*datazone.PostLineageEventOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PostLineageEvent", arg0)
+	ret0, _ := ret[0].(*datazone.PostLineageEventOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PostLineageEvent indicates an expected call of PostLineageEvent
+func (mr *MockDataZoneAPIMockRecorder) PostLineageEvent(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PostLineageEvent", reflect.TypeOf((*MockDataZoneAPI)(nil).PostLineageEvent), arg0)
+}
+
+// PostLineageEventRequest mocks base method
+func (m *MockDataZoneAPI) PostLineageEventRequest(arg0 *datazone.PostLineageEventInput) (*request.Request, *datazone.PostLineageEventOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PostLineageEventRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datazone.PostLineageEventOutput)
+	return ret0, ret1
+}
+
+// PostLineageEventRequest indicates an expected call of PostLineageEventRequest
+func (mr *MockDataZoneAPIMockRecorder) PostLineageEventRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PostLineageEventRequest", reflect.TypeOf((*MockDataZoneAPI)(nil).PostLineageEventRequest), arg0)
+}
+
+// PostLineageEventWithContext mocks base method
+func (m *MockDataZoneAPI) PostLineageEventWithContext(arg0 context.Context, arg1 *datazone.PostLineageEventInput, arg2 ...request.Option) (*datazone.PostLineageEventOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PostLineageEventWithContext", varargs...)
+	ret0, _ := ret[0].(*datazone.PostLineageEventOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PostLineageEventWithContext indicates an expected call of PostLineageEventWithContext
+func (mr *MockDataZoneAPIMockRecorder) PostLineageEventWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PostLineageEventWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).PostLineageEventWithContext), varargs...)
 }
 
 // PostTimeSeriesDataPoints mocks base method

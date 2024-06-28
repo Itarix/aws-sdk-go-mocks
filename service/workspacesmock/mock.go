@@ -800,6 +800,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) CreateWorkspaces(arg0 interface{}) *gom
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkspaces", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateWorkspaces), arg0)
 }
 
+// CreateWorkspacesPool mocks base method
+func (m *MockWorkSpacesAPI) CreateWorkspacesPool(arg0 *workspaces.CreateWorkspacesPoolInput) (*workspaces.CreateWorkspacesPoolOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorkspacesPool", arg0)
+	ret0, _ := ret[0].(*workspaces.CreateWorkspacesPoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorkspacesPool indicates an expected call of CreateWorkspacesPool
+func (mr *MockWorkSpacesAPIMockRecorder) CreateWorkspacesPool(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkspacesPool", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateWorkspacesPool), arg0)
+}
+
+// CreateWorkspacesPoolRequest mocks base method
+func (m *MockWorkSpacesAPI) CreateWorkspacesPoolRequest(arg0 *workspaces.CreateWorkspacesPoolInput) (*request.Request, *workspaces.CreateWorkspacesPoolOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateWorkspacesPoolRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.CreateWorkspacesPoolOutput)
+	return ret0, ret1
+}
+
+// CreateWorkspacesPoolRequest indicates an expected call of CreateWorkspacesPoolRequest
+func (mr *MockWorkSpacesAPIMockRecorder) CreateWorkspacesPoolRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkspacesPoolRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateWorkspacesPoolRequest), arg0)
+}
+
+// CreateWorkspacesPoolWithContext mocks base method
+func (m *MockWorkSpacesAPI) CreateWorkspacesPoolWithContext(arg0 context.Context, arg1 *workspaces.CreateWorkspacesPoolInput, arg2 ...request.Option) (*workspaces.CreateWorkspacesPoolOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateWorkspacesPoolWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.CreateWorkspacesPoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateWorkspacesPoolWithContext indicates an expected call of CreateWorkspacesPoolWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) CreateWorkspacesPoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateWorkspacesPoolWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).CreateWorkspacesPoolWithContext), varargs...)
+}
+
 // CreateWorkspacesRequest mocks base method
 func (m *MockWorkSpacesAPI) CreateWorkspacesRequest(arg0 *workspaces.CreateWorkspacesInput) (*request.Request, *workspaces.CreateWorkspacesOutput) {
 	m.ctrl.T.Helper()
@@ -2515,6 +2565,106 @@ func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspacesPagesWithContext(arg0
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspacesPagesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspacesPagesWithContext), varargs...)
 }
 
+// DescribeWorkspacesPoolSessions mocks base method
+func (m *MockWorkSpacesAPI) DescribeWorkspacesPoolSessions(arg0 *workspaces.DescribeWorkspacesPoolSessionsInput) (*workspaces.DescribeWorkspacesPoolSessionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkspacesPoolSessions", arg0)
+	ret0, _ := ret[0].(*workspaces.DescribeWorkspacesPoolSessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkspacesPoolSessions indicates an expected call of DescribeWorkspacesPoolSessions
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspacesPoolSessions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspacesPoolSessions", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspacesPoolSessions), arg0)
+}
+
+// DescribeWorkspacesPoolSessionsRequest mocks base method
+func (m *MockWorkSpacesAPI) DescribeWorkspacesPoolSessionsRequest(arg0 *workspaces.DescribeWorkspacesPoolSessionsInput) (*request.Request, *workspaces.DescribeWorkspacesPoolSessionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkspacesPoolSessionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DescribeWorkspacesPoolSessionsOutput)
+	return ret0, ret1
+}
+
+// DescribeWorkspacesPoolSessionsRequest indicates an expected call of DescribeWorkspacesPoolSessionsRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspacesPoolSessionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspacesPoolSessionsRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspacesPoolSessionsRequest), arg0)
+}
+
+// DescribeWorkspacesPoolSessionsWithContext mocks base method
+func (m *MockWorkSpacesAPI) DescribeWorkspacesPoolSessionsWithContext(arg0 context.Context, arg1 *workspaces.DescribeWorkspacesPoolSessionsInput, arg2 ...request.Option) (*workspaces.DescribeWorkspacesPoolSessionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWorkspacesPoolSessionsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DescribeWorkspacesPoolSessionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkspacesPoolSessionsWithContext indicates an expected call of DescribeWorkspacesPoolSessionsWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspacesPoolSessionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspacesPoolSessionsWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspacesPoolSessionsWithContext), varargs...)
+}
+
+// DescribeWorkspacesPools mocks base method
+func (m *MockWorkSpacesAPI) DescribeWorkspacesPools(arg0 *workspaces.DescribeWorkspacesPoolsInput) (*workspaces.DescribeWorkspacesPoolsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkspacesPools", arg0)
+	ret0, _ := ret[0].(*workspaces.DescribeWorkspacesPoolsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkspacesPools indicates an expected call of DescribeWorkspacesPools
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspacesPools(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspacesPools", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspacesPools), arg0)
+}
+
+// DescribeWorkspacesPoolsRequest mocks base method
+func (m *MockWorkSpacesAPI) DescribeWorkspacesPoolsRequest(arg0 *workspaces.DescribeWorkspacesPoolsInput) (*request.Request, *workspaces.DescribeWorkspacesPoolsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeWorkspacesPoolsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.DescribeWorkspacesPoolsOutput)
+	return ret0, ret1
+}
+
+// DescribeWorkspacesPoolsRequest indicates an expected call of DescribeWorkspacesPoolsRequest
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspacesPoolsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspacesPoolsRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspacesPoolsRequest), arg0)
+}
+
+// DescribeWorkspacesPoolsWithContext mocks base method
+func (m *MockWorkSpacesAPI) DescribeWorkspacesPoolsWithContext(arg0 context.Context, arg1 *workspaces.DescribeWorkspacesPoolsInput, arg2 ...request.Option) (*workspaces.DescribeWorkspacesPoolsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeWorkspacesPoolsWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.DescribeWorkspacesPoolsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeWorkspacesPoolsWithContext indicates an expected call of DescribeWorkspacesPoolsWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) DescribeWorkspacesPoolsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeWorkspacesPoolsWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).DescribeWorkspacesPoolsWithContext), varargs...)
+}
+
 // DescribeWorkspacesRequest mocks base method
 func (m *MockWorkSpacesAPI) DescribeWorkspacesRequest(arg0 *workspaces.DescribeWorkspacesInput) (*request.Request, *workspaces.DescribeWorkspacesOutput) {
 	m.ctrl.T.Helper()
@@ -3283,6 +3433,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) ModifySelfservicePermissionsWithContext
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifySelfservicePermissionsWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifySelfservicePermissionsWithContext), varargs...)
 }
 
+// ModifyStreamingProperties mocks base method
+func (m *MockWorkSpacesAPI) ModifyStreamingProperties(arg0 *workspaces.ModifyStreamingPropertiesInput) (*workspaces.ModifyStreamingPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyStreamingProperties", arg0)
+	ret0, _ := ret[0].(*workspaces.ModifyStreamingPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyStreamingProperties indicates an expected call of ModifyStreamingProperties
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyStreamingProperties(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyStreamingProperties", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyStreamingProperties), arg0)
+}
+
+// ModifyStreamingPropertiesRequest mocks base method
+func (m *MockWorkSpacesAPI) ModifyStreamingPropertiesRequest(arg0 *workspaces.ModifyStreamingPropertiesInput) (*request.Request, *workspaces.ModifyStreamingPropertiesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ModifyStreamingPropertiesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.ModifyStreamingPropertiesOutput)
+	return ret0, ret1
+}
+
+// ModifyStreamingPropertiesRequest indicates an expected call of ModifyStreamingPropertiesRequest
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyStreamingPropertiesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyStreamingPropertiesRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyStreamingPropertiesRequest), arg0)
+}
+
+// ModifyStreamingPropertiesWithContext mocks base method
+func (m *MockWorkSpacesAPI) ModifyStreamingPropertiesWithContext(arg0 context.Context, arg1 *workspaces.ModifyStreamingPropertiesInput, arg2 ...request.Option) (*workspaces.ModifyStreamingPropertiesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ModifyStreamingPropertiesWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.ModifyStreamingPropertiesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ModifyStreamingPropertiesWithContext indicates an expected call of ModifyStreamingPropertiesWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) ModifyStreamingPropertiesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyStreamingPropertiesWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).ModifyStreamingPropertiesWithContext), varargs...)
+}
+
 // ModifyWorkspaceAccessProperties mocks base method
 func (m *MockWorkSpacesAPI) ModifyWorkspaceAccessProperties(arg0 *workspaces.ModifyWorkspaceAccessPropertiesInput) (*workspaces.ModifyWorkspaceAccessPropertiesOutput, error) {
 	m.ctrl.T.Helper()
@@ -3798,6 +3998,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) StartWorkspaces(arg0 interface{}) *gomo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartWorkspaces", reflect.TypeOf((*MockWorkSpacesAPI)(nil).StartWorkspaces), arg0)
 }
 
+// StartWorkspacesPool mocks base method
+func (m *MockWorkSpacesAPI) StartWorkspacesPool(arg0 *workspaces.StartWorkspacesPoolInput) (*workspaces.StartWorkspacesPoolOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartWorkspacesPool", arg0)
+	ret0, _ := ret[0].(*workspaces.StartWorkspacesPoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartWorkspacesPool indicates an expected call of StartWorkspacesPool
+func (mr *MockWorkSpacesAPIMockRecorder) StartWorkspacesPool(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartWorkspacesPool", reflect.TypeOf((*MockWorkSpacesAPI)(nil).StartWorkspacesPool), arg0)
+}
+
+// StartWorkspacesPoolRequest mocks base method
+func (m *MockWorkSpacesAPI) StartWorkspacesPoolRequest(arg0 *workspaces.StartWorkspacesPoolInput) (*request.Request, *workspaces.StartWorkspacesPoolOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StartWorkspacesPoolRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.StartWorkspacesPoolOutput)
+	return ret0, ret1
+}
+
+// StartWorkspacesPoolRequest indicates an expected call of StartWorkspacesPoolRequest
+func (mr *MockWorkSpacesAPIMockRecorder) StartWorkspacesPoolRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartWorkspacesPoolRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).StartWorkspacesPoolRequest), arg0)
+}
+
+// StartWorkspacesPoolWithContext mocks base method
+func (m *MockWorkSpacesAPI) StartWorkspacesPoolWithContext(arg0 context.Context, arg1 *workspaces.StartWorkspacesPoolInput, arg2 ...request.Option) (*workspaces.StartWorkspacesPoolOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StartWorkspacesPoolWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.StartWorkspacesPoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StartWorkspacesPoolWithContext indicates an expected call of StartWorkspacesPoolWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) StartWorkspacesPoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartWorkspacesPoolWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).StartWorkspacesPoolWithContext), varargs...)
+}
+
 // StartWorkspacesRequest mocks base method
 func (m *MockWorkSpacesAPI) StartWorkspacesRequest(arg0 *workspaces.StartWorkspacesInput) (*request.Request, *workspaces.StartWorkspacesOutput) {
 	m.ctrl.T.Helper()
@@ -3848,6 +4098,56 @@ func (mr *MockWorkSpacesAPIMockRecorder) StopWorkspaces(arg0 interface{}) *gomoc
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopWorkspaces", reflect.TypeOf((*MockWorkSpacesAPI)(nil).StopWorkspaces), arg0)
 }
 
+// StopWorkspacesPool mocks base method
+func (m *MockWorkSpacesAPI) StopWorkspacesPool(arg0 *workspaces.StopWorkspacesPoolInput) (*workspaces.StopWorkspacesPoolOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopWorkspacesPool", arg0)
+	ret0, _ := ret[0].(*workspaces.StopWorkspacesPoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopWorkspacesPool indicates an expected call of StopWorkspacesPool
+func (mr *MockWorkSpacesAPIMockRecorder) StopWorkspacesPool(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopWorkspacesPool", reflect.TypeOf((*MockWorkSpacesAPI)(nil).StopWorkspacesPool), arg0)
+}
+
+// StopWorkspacesPoolRequest mocks base method
+func (m *MockWorkSpacesAPI) StopWorkspacesPoolRequest(arg0 *workspaces.StopWorkspacesPoolInput) (*request.Request, *workspaces.StopWorkspacesPoolOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopWorkspacesPoolRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.StopWorkspacesPoolOutput)
+	return ret0, ret1
+}
+
+// StopWorkspacesPoolRequest indicates an expected call of StopWorkspacesPoolRequest
+func (mr *MockWorkSpacesAPIMockRecorder) StopWorkspacesPoolRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopWorkspacesPoolRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).StopWorkspacesPoolRequest), arg0)
+}
+
+// StopWorkspacesPoolWithContext mocks base method
+func (m *MockWorkSpacesAPI) StopWorkspacesPoolWithContext(arg0 context.Context, arg1 *workspaces.StopWorkspacesPoolInput, arg2 ...request.Option) (*workspaces.StopWorkspacesPoolOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopWorkspacesPoolWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.StopWorkspacesPoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopWorkspacesPoolWithContext indicates an expected call of StopWorkspacesPoolWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) StopWorkspacesPoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopWorkspacesPoolWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).StopWorkspacesPoolWithContext), varargs...)
+}
+
 // StopWorkspacesRequest mocks base method
 func (m *MockWorkSpacesAPI) StopWorkspacesRequest(arg0 *workspaces.StopWorkspacesInput) (*request.Request, *workspaces.StopWorkspacesOutput) {
 	m.ctrl.T.Helper()
@@ -3896,6 +4196,106 @@ func (m *MockWorkSpacesAPI) TerminateWorkspaces(arg0 *workspaces.TerminateWorksp
 func (mr *MockWorkSpacesAPIMockRecorder) TerminateWorkspaces(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateWorkspaces", reflect.TypeOf((*MockWorkSpacesAPI)(nil).TerminateWorkspaces), arg0)
+}
+
+// TerminateWorkspacesPool mocks base method
+func (m *MockWorkSpacesAPI) TerminateWorkspacesPool(arg0 *workspaces.TerminateWorkspacesPoolInput) (*workspaces.TerminateWorkspacesPoolOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TerminateWorkspacesPool", arg0)
+	ret0, _ := ret[0].(*workspaces.TerminateWorkspacesPoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TerminateWorkspacesPool indicates an expected call of TerminateWorkspacesPool
+func (mr *MockWorkSpacesAPIMockRecorder) TerminateWorkspacesPool(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateWorkspacesPool", reflect.TypeOf((*MockWorkSpacesAPI)(nil).TerminateWorkspacesPool), arg0)
+}
+
+// TerminateWorkspacesPoolRequest mocks base method
+func (m *MockWorkSpacesAPI) TerminateWorkspacesPoolRequest(arg0 *workspaces.TerminateWorkspacesPoolInput) (*request.Request, *workspaces.TerminateWorkspacesPoolOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TerminateWorkspacesPoolRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.TerminateWorkspacesPoolOutput)
+	return ret0, ret1
+}
+
+// TerminateWorkspacesPoolRequest indicates an expected call of TerminateWorkspacesPoolRequest
+func (mr *MockWorkSpacesAPIMockRecorder) TerminateWorkspacesPoolRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateWorkspacesPoolRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).TerminateWorkspacesPoolRequest), arg0)
+}
+
+// TerminateWorkspacesPoolSession mocks base method
+func (m *MockWorkSpacesAPI) TerminateWorkspacesPoolSession(arg0 *workspaces.TerminateWorkspacesPoolSessionInput) (*workspaces.TerminateWorkspacesPoolSessionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TerminateWorkspacesPoolSession", arg0)
+	ret0, _ := ret[0].(*workspaces.TerminateWorkspacesPoolSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TerminateWorkspacesPoolSession indicates an expected call of TerminateWorkspacesPoolSession
+func (mr *MockWorkSpacesAPIMockRecorder) TerminateWorkspacesPoolSession(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateWorkspacesPoolSession", reflect.TypeOf((*MockWorkSpacesAPI)(nil).TerminateWorkspacesPoolSession), arg0)
+}
+
+// TerminateWorkspacesPoolSessionRequest mocks base method
+func (m *MockWorkSpacesAPI) TerminateWorkspacesPoolSessionRequest(arg0 *workspaces.TerminateWorkspacesPoolSessionInput) (*request.Request, *workspaces.TerminateWorkspacesPoolSessionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TerminateWorkspacesPoolSessionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.TerminateWorkspacesPoolSessionOutput)
+	return ret0, ret1
+}
+
+// TerminateWorkspacesPoolSessionRequest indicates an expected call of TerminateWorkspacesPoolSessionRequest
+func (mr *MockWorkSpacesAPIMockRecorder) TerminateWorkspacesPoolSessionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateWorkspacesPoolSessionRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).TerminateWorkspacesPoolSessionRequest), arg0)
+}
+
+// TerminateWorkspacesPoolSessionWithContext mocks base method
+func (m *MockWorkSpacesAPI) TerminateWorkspacesPoolSessionWithContext(arg0 context.Context, arg1 *workspaces.TerminateWorkspacesPoolSessionInput, arg2 ...request.Option) (*workspaces.TerminateWorkspacesPoolSessionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TerminateWorkspacesPoolSessionWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.TerminateWorkspacesPoolSessionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TerminateWorkspacesPoolSessionWithContext indicates an expected call of TerminateWorkspacesPoolSessionWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) TerminateWorkspacesPoolSessionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateWorkspacesPoolSessionWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).TerminateWorkspacesPoolSessionWithContext), varargs...)
+}
+
+// TerminateWorkspacesPoolWithContext mocks base method
+func (m *MockWorkSpacesAPI) TerminateWorkspacesPoolWithContext(arg0 context.Context, arg1 *workspaces.TerminateWorkspacesPoolInput, arg2 ...request.Option) (*workspaces.TerminateWorkspacesPoolOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TerminateWorkspacesPoolWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.TerminateWorkspacesPoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TerminateWorkspacesPoolWithContext indicates an expected call of TerminateWorkspacesPoolWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) TerminateWorkspacesPoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TerminateWorkspacesPoolWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).TerminateWorkspacesPoolWithContext), varargs...)
 }
 
 // TerminateWorkspacesRequest mocks base method
@@ -4181,4 +4581,54 @@ func (mr *MockWorkSpacesAPIMockRecorder) UpdateWorkspaceImagePermissionWithConte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkspaceImagePermissionWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).UpdateWorkspaceImagePermissionWithContext), varargs...)
+}
+
+// UpdateWorkspacesPool mocks base method
+func (m *MockWorkSpacesAPI) UpdateWorkspacesPool(arg0 *workspaces.UpdateWorkspacesPoolInput) (*workspaces.UpdateWorkspacesPoolOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkspacesPool", arg0)
+	ret0, _ := ret[0].(*workspaces.UpdateWorkspacesPoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkspacesPool indicates an expected call of UpdateWorkspacesPool
+func (mr *MockWorkSpacesAPIMockRecorder) UpdateWorkspacesPool(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkspacesPool", reflect.TypeOf((*MockWorkSpacesAPI)(nil).UpdateWorkspacesPool), arg0)
+}
+
+// UpdateWorkspacesPoolRequest mocks base method
+func (m *MockWorkSpacesAPI) UpdateWorkspacesPoolRequest(arg0 *workspaces.UpdateWorkspacesPoolInput) (*request.Request, *workspaces.UpdateWorkspacesPoolOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateWorkspacesPoolRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*workspaces.UpdateWorkspacesPoolOutput)
+	return ret0, ret1
+}
+
+// UpdateWorkspacesPoolRequest indicates an expected call of UpdateWorkspacesPoolRequest
+func (mr *MockWorkSpacesAPIMockRecorder) UpdateWorkspacesPoolRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkspacesPoolRequest", reflect.TypeOf((*MockWorkSpacesAPI)(nil).UpdateWorkspacesPoolRequest), arg0)
+}
+
+// UpdateWorkspacesPoolWithContext mocks base method
+func (m *MockWorkSpacesAPI) UpdateWorkspacesPoolWithContext(arg0 context.Context, arg1 *workspaces.UpdateWorkspacesPoolInput, arg2 ...request.Option) (*workspaces.UpdateWorkspacesPoolOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateWorkspacesPoolWithContext", varargs...)
+	ret0, _ := ret[0].(*workspaces.UpdateWorkspacesPoolOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateWorkspacesPoolWithContext indicates an expected call of UpdateWorkspacesPoolWithContext
+func (mr *MockWorkSpacesAPIMockRecorder) UpdateWorkspacesPoolWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateWorkspacesPoolWithContext", reflect.TypeOf((*MockWorkSpacesAPI)(nil).UpdateWorkspacesPoolWithContext), varargs...)
 }
