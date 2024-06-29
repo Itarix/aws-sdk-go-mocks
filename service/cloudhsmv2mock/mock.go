@@ -335,6 +335,56 @@ func (mr *MockCloudHSMV2APIMockRecorder) DeleteHsmWithContext(arg0, arg1 interfa
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteHsmWithContext", reflect.TypeOf((*MockCloudHSMV2API)(nil).DeleteHsmWithContext), varargs...)
 }
 
+// DeleteResourcePolicy mocks base method
+func (m *MockCloudHSMV2API) DeleteResourcePolicy(arg0 *cloudhsmv2.DeleteResourcePolicyInput) (*cloudhsmv2.DeleteResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourcePolicy", arg0)
+	ret0, _ := ret[0].(*cloudhsmv2.DeleteResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicy indicates an expected call of DeleteResourcePolicy
+func (mr *MockCloudHSMV2APIMockRecorder) DeleteResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicy", reflect.TypeOf((*MockCloudHSMV2API)(nil).DeleteResourcePolicy), arg0)
+}
+
+// DeleteResourcePolicyRequest mocks base method
+func (m *MockCloudHSMV2API) DeleteResourcePolicyRequest(arg0 *cloudhsmv2.DeleteResourcePolicyInput) (*request.Request, *cloudhsmv2.DeleteResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudhsmv2.DeleteResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicyRequest indicates an expected call of DeleteResourcePolicyRequest
+func (mr *MockCloudHSMV2APIMockRecorder) DeleteResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyRequest", reflect.TypeOf((*MockCloudHSMV2API)(nil).DeleteResourcePolicyRequest), arg0)
+}
+
+// DeleteResourcePolicyWithContext mocks base method
+func (m *MockCloudHSMV2API) DeleteResourcePolicyWithContext(arg0 context.Context, arg1 *cloudhsmv2.DeleteResourcePolicyInput, arg2 ...request.Option) (*cloudhsmv2.DeleteResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudhsmv2.DeleteResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteResourcePolicyWithContext indicates an expected call of DeleteResourcePolicyWithContext
+func (mr *MockCloudHSMV2APIMockRecorder) DeleteResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteResourcePolicyWithContext", reflect.TypeOf((*MockCloudHSMV2API)(nil).DeleteResourcePolicyWithContext), varargs...)
+}
+
 // DescribeBackups mocks base method
 func (m *MockCloudHSMV2API) DescribeBackups(arg0 *cloudhsmv2.DescribeBackupsInput) (*cloudhsmv2.DescribeBackupsOutput, error) {
 	m.ctrl.T.Helper()
@@ -499,6 +549,56 @@ func (mr *MockCloudHSMV2APIMockRecorder) DescribeClustersWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeClustersWithContext", reflect.TypeOf((*MockCloudHSMV2API)(nil).DescribeClustersWithContext), varargs...)
+}
+
+// GetResourcePolicy mocks base method
+func (m *MockCloudHSMV2API) GetResourcePolicy(arg0 *cloudhsmv2.GetResourcePolicyInput) (*cloudhsmv2.GetResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcePolicy", arg0)
+	ret0, _ := ret[0].(*cloudhsmv2.GetResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcePolicy indicates an expected call of GetResourcePolicy
+func (mr *MockCloudHSMV2APIMockRecorder) GetResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicy", reflect.TypeOf((*MockCloudHSMV2API)(nil).GetResourcePolicy), arg0)
+}
+
+// GetResourcePolicyRequest mocks base method
+func (m *MockCloudHSMV2API) GetResourcePolicyRequest(arg0 *cloudhsmv2.GetResourcePolicyInput) (*request.Request, *cloudhsmv2.GetResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudhsmv2.GetResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// GetResourcePolicyRequest indicates an expected call of GetResourcePolicyRequest
+func (mr *MockCloudHSMV2APIMockRecorder) GetResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicyRequest", reflect.TypeOf((*MockCloudHSMV2API)(nil).GetResourcePolicyRequest), arg0)
+}
+
+// GetResourcePolicyWithContext mocks base method
+func (m *MockCloudHSMV2API) GetResourcePolicyWithContext(arg0 context.Context, arg1 *cloudhsmv2.GetResourcePolicyInput, arg2 ...request.Option) (*cloudhsmv2.GetResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudhsmv2.GetResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetResourcePolicyWithContext indicates an expected call of GetResourcePolicyWithContext
+func (mr *MockCloudHSMV2APIMockRecorder) GetResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetResourcePolicyWithContext", reflect.TypeOf((*MockCloudHSMV2API)(nil).GetResourcePolicyWithContext), varargs...)
 }
 
 // InitializeCluster mocks base method
@@ -732,6 +832,56 @@ func (mr *MockCloudHSMV2APIMockRecorder) ModifyClusterWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ModifyClusterWithContext", reflect.TypeOf((*MockCloudHSMV2API)(nil).ModifyClusterWithContext), varargs...)
+}
+
+// PutResourcePolicy mocks base method
+func (m *MockCloudHSMV2API) PutResourcePolicy(arg0 *cloudhsmv2.PutResourcePolicyInput) (*cloudhsmv2.PutResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourcePolicy", arg0)
+	ret0, _ := ret[0].(*cloudhsmv2.PutResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourcePolicy indicates an expected call of PutResourcePolicy
+func (mr *MockCloudHSMV2APIMockRecorder) PutResourcePolicy(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicy", reflect.TypeOf((*MockCloudHSMV2API)(nil).PutResourcePolicy), arg0)
+}
+
+// PutResourcePolicyRequest mocks base method
+func (m *MockCloudHSMV2API) PutResourcePolicyRequest(arg0 *cloudhsmv2.PutResourcePolicyInput) (*request.Request, *cloudhsmv2.PutResourcePolicyOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PutResourcePolicyRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cloudhsmv2.PutResourcePolicyOutput)
+	return ret0, ret1
+}
+
+// PutResourcePolicyRequest indicates an expected call of PutResourcePolicyRequest
+func (mr *MockCloudHSMV2APIMockRecorder) PutResourcePolicyRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyRequest", reflect.TypeOf((*MockCloudHSMV2API)(nil).PutResourcePolicyRequest), arg0)
+}
+
+// PutResourcePolicyWithContext mocks base method
+func (m *MockCloudHSMV2API) PutResourcePolicyWithContext(arg0 context.Context, arg1 *cloudhsmv2.PutResourcePolicyInput, arg2 ...request.Option) (*cloudhsmv2.PutResourcePolicyOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PutResourcePolicyWithContext", varargs...)
+	ret0, _ := ret[0].(*cloudhsmv2.PutResourcePolicyOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PutResourcePolicyWithContext indicates an expected call of PutResourcePolicyWithContext
+func (mr *MockCloudHSMV2APIMockRecorder) PutResourcePolicyWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PutResourcePolicyWithContext", reflect.TypeOf((*MockCloudHSMV2API)(nil).PutResourcePolicyWithContext), varargs...)
 }
 
 // RestoreBackup mocks base method
