@@ -3585,6 +3585,56 @@ func (mr *MockConnectAPIMockRecorder) DescribeAgentStatusWithContext(arg0, arg1 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAgentStatusWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeAgentStatusWithContext), varargs...)
 }
 
+// DescribeAuthenticationProfile mocks base method
+func (m *MockConnectAPI) DescribeAuthenticationProfile(arg0 *connect.DescribeAuthenticationProfileInput) (*connect.DescribeAuthenticationProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAuthenticationProfile", arg0)
+	ret0, _ := ret[0].(*connect.DescribeAuthenticationProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAuthenticationProfile indicates an expected call of DescribeAuthenticationProfile
+func (mr *MockConnectAPIMockRecorder) DescribeAuthenticationProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAuthenticationProfile", reflect.TypeOf((*MockConnectAPI)(nil).DescribeAuthenticationProfile), arg0)
+}
+
+// DescribeAuthenticationProfileRequest mocks base method
+func (m *MockConnectAPI) DescribeAuthenticationProfileRequest(arg0 *connect.DescribeAuthenticationProfileInput) (*request.Request, *connect.DescribeAuthenticationProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeAuthenticationProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.DescribeAuthenticationProfileOutput)
+	return ret0, ret1
+}
+
+// DescribeAuthenticationProfileRequest indicates an expected call of DescribeAuthenticationProfileRequest
+func (mr *MockConnectAPIMockRecorder) DescribeAuthenticationProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAuthenticationProfileRequest", reflect.TypeOf((*MockConnectAPI)(nil).DescribeAuthenticationProfileRequest), arg0)
+}
+
+// DescribeAuthenticationProfileWithContext mocks base method
+func (m *MockConnectAPI) DescribeAuthenticationProfileWithContext(arg0 context.Context, arg1 *connect.DescribeAuthenticationProfileInput, arg2 ...request.Option) (*connect.DescribeAuthenticationProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeAuthenticationProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.DescribeAuthenticationProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeAuthenticationProfileWithContext indicates an expected call of DescribeAuthenticationProfileWithContext
+func (mr *MockConnectAPIMockRecorder) DescribeAuthenticationProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeAuthenticationProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).DescribeAuthenticationProfileWithContext), varargs...)
+}
+
 // DescribeContact mocks base method
 func (m *MockConnectAPI) DescribeContact(arg0 *connect.DescribeContactInput) (*connect.DescribeContactOutput, error) {
 	m.ctrl.T.Helper()
@@ -6381,6 +6431,89 @@ func (mr *MockConnectAPIMockRecorder) ListApprovedOriginsWithContext(arg0, arg1 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApprovedOriginsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListApprovedOriginsWithContext), varargs...)
+}
+
+// ListAuthenticationProfiles mocks base method
+func (m *MockConnectAPI) ListAuthenticationProfiles(arg0 *connect.ListAuthenticationProfilesInput) (*connect.ListAuthenticationProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAuthenticationProfiles", arg0)
+	ret0, _ := ret[0].(*connect.ListAuthenticationProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAuthenticationProfiles indicates an expected call of ListAuthenticationProfiles
+func (mr *MockConnectAPIMockRecorder) ListAuthenticationProfiles(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAuthenticationProfiles", reflect.TypeOf((*MockConnectAPI)(nil).ListAuthenticationProfiles), arg0)
+}
+
+// ListAuthenticationProfilesPages mocks base method
+func (m *MockConnectAPI) ListAuthenticationProfilesPages(arg0 *connect.ListAuthenticationProfilesInput, arg1 func(*connect.ListAuthenticationProfilesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAuthenticationProfilesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAuthenticationProfilesPages indicates an expected call of ListAuthenticationProfilesPages
+func (mr *MockConnectAPIMockRecorder) ListAuthenticationProfilesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAuthenticationProfilesPages", reflect.TypeOf((*MockConnectAPI)(nil).ListAuthenticationProfilesPages), arg0, arg1)
+}
+
+// ListAuthenticationProfilesPagesWithContext mocks base method
+func (m *MockConnectAPI) ListAuthenticationProfilesPagesWithContext(arg0 context.Context, arg1 *connect.ListAuthenticationProfilesInput, arg2 func(*connect.ListAuthenticationProfilesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAuthenticationProfilesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAuthenticationProfilesPagesWithContext indicates an expected call of ListAuthenticationProfilesPagesWithContext
+func (mr *MockConnectAPIMockRecorder) ListAuthenticationProfilesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAuthenticationProfilesPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListAuthenticationProfilesPagesWithContext), varargs...)
+}
+
+// ListAuthenticationProfilesRequest mocks base method
+func (m *MockConnectAPI) ListAuthenticationProfilesRequest(arg0 *connect.ListAuthenticationProfilesInput) (*request.Request, *connect.ListAuthenticationProfilesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAuthenticationProfilesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.ListAuthenticationProfilesOutput)
+	return ret0, ret1
+}
+
+// ListAuthenticationProfilesRequest indicates an expected call of ListAuthenticationProfilesRequest
+func (mr *MockConnectAPIMockRecorder) ListAuthenticationProfilesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAuthenticationProfilesRequest", reflect.TypeOf((*MockConnectAPI)(nil).ListAuthenticationProfilesRequest), arg0)
+}
+
+// ListAuthenticationProfilesWithContext mocks base method
+func (m *MockConnectAPI) ListAuthenticationProfilesWithContext(arg0 context.Context, arg1 *connect.ListAuthenticationProfilesInput, arg2 ...request.Option) (*connect.ListAuthenticationProfilesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAuthenticationProfilesWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.ListAuthenticationProfilesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAuthenticationProfilesWithContext indicates an expected call of ListAuthenticationProfilesWithContext
+func (mr *MockConnectAPIMockRecorder) ListAuthenticationProfilesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAuthenticationProfilesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ListAuthenticationProfilesWithContext), varargs...)
 }
 
 // ListBots mocks base method
@@ -12263,6 +12396,56 @@ func (mr *MockConnectAPIMockRecorder) UpdateAgentStatusWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAgentStatusWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateAgentStatusWithContext), varargs...)
+}
+
+// UpdateAuthenticationProfile mocks base method
+func (m *MockConnectAPI) UpdateAuthenticationProfile(arg0 *connect.UpdateAuthenticationProfileInput) (*connect.UpdateAuthenticationProfileOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAuthenticationProfile", arg0)
+	ret0, _ := ret[0].(*connect.UpdateAuthenticationProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAuthenticationProfile indicates an expected call of UpdateAuthenticationProfile
+func (mr *MockConnectAPIMockRecorder) UpdateAuthenticationProfile(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAuthenticationProfile", reflect.TypeOf((*MockConnectAPI)(nil).UpdateAuthenticationProfile), arg0)
+}
+
+// UpdateAuthenticationProfileRequest mocks base method
+func (m *MockConnectAPI) UpdateAuthenticationProfileRequest(arg0 *connect.UpdateAuthenticationProfileInput) (*request.Request, *connect.UpdateAuthenticationProfileOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAuthenticationProfileRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.UpdateAuthenticationProfileOutput)
+	return ret0, ret1
+}
+
+// UpdateAuthenticationProfileRequest indicates an expected call of UpdateAuthenticationProfileRequest
+func (mr *MockConnectAPIMockRecorder) UpdateAuthenticationProfileRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAuthenticationProfileRequest", reflect.TypeOf((*MockConnectAPI)(nil).UpdateAuthenticationProfileRequest), arg0)
+}
+
+// UpdateAuthenticationProfileWithContext mocks base method
+func (m *MockConnectAPI) UpdateAuthenticationProfileWithContext(arg0 context.Context, arg1 *connect.UpdateAuthenticationProfileInput, arg2 ...request.Option) (*connect.UpdateAuthenticationProfileOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAuthenticationProfileWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.UpdateAuthenticationProfileOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAuthenticationProfileWithContext indicates an expected call of UpdateAuthenticationProfileWithContext
+func (mr *MockConnectAPIMockRecorder) UpdateAuthenticationProfileWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAuthenticationProfileWithContext", reflect.TypeOf((*MockConnectAPI)(nil).UpdateAuthenticationProfileWithContext), varargs...)
 }
 
 // UpdateContact mocks base method
