@@ -2435,6 +2435,56 @@ func (mr *MockSageMakerAPIMockRecorder) CreateNotebookInstanceWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateNotebookInstanceWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateNotebookInstanceWithContext), varargs...)
 }
 
+// CreateOptimizationJob mocks base method
+func (m *MockSageMakerAPI) CreateOptimizationJob(arg0 *sagemaker.CreateOptimizationJobInput) (*sagemaker.CreateOptimizationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateOptimizationJob", arg0)
+	ret0, _ := ret[0].(*sagemaker.CreateOptimizationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateOptimizationJob indicates an expected call of CreateOptimizationJob
+func (mr *MockSageMakerAPIMockRecorder) CreateOptimizationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateOptimizationJob", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateOptimizationJob), arg0)
+}
+
+// CreateOptimizationJobRequest mocks base method
+func (m *MockSageMakerAPI) CreateOptimizationJobRequest(arg0 *sagemaker.CreateOptimizationJobInput) (*request.Request, *sagemaker.CreateOptimizationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateOptimizationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.CreateOptimizationJobOutput)
+	return ret0, ret1
+}
+
+// CreateOptimizationJobRequest indicates an expected call of CreateOptimizationJobRequest
+func (mr *MockSageMakerAPIMockRecorder) CreateOptimizationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateOptimizationJobRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateOptimizationJobRequest), arg0)
+}
+
+// CreateOptimizationJobWithContext mocks base method
+func (m *MockSageMakerAPI) CreateOptimizationJobWithContext(arg0 context.Context, arg1 *sagemaker.CreateOptimizationJobInput, arg2 ...request.Option) (*sagemaker.CreateOptimizationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateOptimizationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.CreateOptimizationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateOptimizationJobWithContext indicates an expected call of CreateOptimizationJobWithContext
+func (mr *MockSageMakerAPIMockRecorder) CreateOptimizationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateOptimizationJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).CreateOptimizationJobWithContext), varargs...)
+}
+
 // CreatePipeline mocks base method
 func (m *MockSageMakerAPI) CreatePipeline(arg0 *sagemaker.CreatePipelineInput) (*sagemaker.CreatePipelineOutput, error) {
 	m.ctrl.T.Helper()
@@ -5233,6 +5283,56 @@ func (mr *MockSageMakerAPIMockRecorder) DeleteNotebookInstanceWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteNotebookInstanceWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteNotebookInstanceWithContext), varargs...)
+}
+
+// DeleteOptimizationJob mocks base method
+func (m *MockSageMakerAPI) DeleteOptimizationJob(arg0 *sagemaker.DeleteOptimizationJobInput) (*sagemaker.DeleteOptimizationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteOptimizationJob", arg0)
+	ret0, _ := ret[0].(*sagemaker.DeleteOptimizationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteOptimizationJob indicates an expected call of DeleteOptimizationJob
+func (mr *MockSageMakerAPIMockRecorder) DeleteOptimizationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOptimizationJob", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteOptimizationJob), arg0)
+}
+
+// DeleteOptimizationJobRequest mocks base method
+func (m *MockSageMakerAPI) DeleteOptimizationJobRequest(arg0 *sagemaker.DeleteOptimizationJobInput) (*request.Request, *sagemaker.DeleteOptimizationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteOptimizationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DeleteOptimizationJobOutput)
+	return ret0, ret1
+}
+
+// DeleteOptimizationJobRequest indicates an expected call of DeleteOptimizationJobRequest
+func (mr *MockSageMakerAPIMockRecorder) DeleteOptimizationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOptimizationJobRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteOptimizationJobRequest), arg0)
+}
+
+// DeleteOptimizationJobWithContext mocks base method
+func (m *MockSageMakerAPI) DeleteOptimizationJobWithContext(arg0 context.Context, arg1 *sagemaker.DeleteOptimizationJobInput, arg2 ...request.Option) (*sagemaker.DeleteOptimizationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteOptimizationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DeleteOptimizationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteOptimizationJobWithContext indicates an expected call of DeleteOptimizationJobWithContext
+func (mr *MockSageMakerAPIMockRecorder) DeleteOptimizationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteOptimizationJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DeleteOptimizationJobWithContext), varargs...)
 }
 
 // DeletePipeline mocks base method
@@ -8133,6 +8233,56 @@ func (mr *MockSageMakerAPIMockRecorder) DescribeNotebookInstanceWithContext(arg0
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeNotebookInstanceWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeNotebookInstanceWithContext), varargs...)
+}
+
+// DescribeOptimizationJob mocks base method
+func (m *MockSageMakerAPI) DescribeOptimizationJob(arg0 *sagemaker.DescribeOptimizationJobInput) (*sagemaker.DescribeOptimizationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOptimizationJob", arg0)
+	ret0, _ := ret[0].(*sagemaker.DescribeOptimizationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOptimizationJob indicates an expected call of DescribeOptimizationJob
+func (mr *MockSageMakerAPIMockRecorder) DescribeOptimizationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOptimizationJob", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeOptimizationJob), arg0)
+}
+
+// DescribeOptimizationJobRequest mocks base method
+func (m *MockSageMakerAPI) DescribeOptimizationJobRequest(arg0 *sagemaker.DescribeOptimizationJobInput) (*request.Request, *sagemaker.DescribeOptimizationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeOptimizationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.DescribeOptimizationJobOutput)
+	return ret0, ret1
+}
+
+// DescribeOptimizationJobRequest indicates an expected call of DescribeOptimizationJobRequest
+func (mr *MockSageMakerAPIMockRecorder) DescribeOptimizationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOptimizationJobRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeOptimizationJobRequest), arg0)
+}
+
+// DescribeOptimizationJobWithContext mocks base method
+func (m *MockSageMakerAPI) DescribeOptimizationJobWithContext(arg0 context.Context, arg1 *sagemaker.DescribeOptimizationJobInput, arg2 ...request.Option) (*sagemaker.DescribeOptimizationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeOptimizationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.DescribeOptimizationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeOptimizationJobWithContext indicates an expected call of DescribeOptimizationJobWithContext
+func (mr *MockSageMakerAPIMockRecorder) DescribeOptimizationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeOptimizationJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).DescribeOptimizationJobWithContext), varargs...)
 }
 
 // DescribePipeline mocks base method
@@ -13934,6 +14084,89 @@ func (mr *MockSageMakerAPIMockRecorder) ListNotebookInstancesWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListNotebookInstancesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListNotebookInstancesWithContext), varargs...)
 }
 
+// ListOptimizationJobs mocks base method
+func (m *MockSageMakerAPI) ListOptimizationJobs(arg0 *sagemaker.ListOptimizationJobsInput) (*sagemaker.ListOptimizationJobsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOptimizationJobs", arg0)
+	ret0, _ := ret[0].(*sagemaker.ListOptimizationJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOptimizationJobs indicates an expected call of ListOptimizationJobs
+func (mr *MockSageMakerAPIMockRecorder) ListOptimizationJobs(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOptimizationJobs", reflect.TypeOf((*MockSageMakerAPI)(nil).ListOptimizationJobs), arg0)
+}
+
+// ListOptimizationJobsPages mocks base method
+func (m *MockSageMakerAPI) ListOptimizationJobsPages(arg0 *sagemaker.ListOptimizationJobsInput, arg1 func(*sagemaker.ListOptimizationJobsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOptimizationJobsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOptimizationJobsPages indicates an expected call of ListOptimizationJobsPages
+func (mr *MockSageMakerAPIMockRecorder) ListOptimizationJobsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOptimizationJobsPages", reflect.TypeOf((*MockSageMakerAPI)(nil).ListOptimizationJobsPages), arg0, arg1)
+}
+
+// ListOptimizationJobsPagesWithContext mocks base method
+func (m *MockSageMakerAPI) ListOptimizationJobsPagesWithContext(arg0 context.Context, arg1 *sagemaker.ListOptimizationJobsInput, arg2 func(*sagemaker.ListOptimizationJobsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOptimizationJobsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListOptimizationJobsPagesWithContext indicates an expected call of ListOptimizationJobsPagesWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListOptimizationJobsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOptimizationJobsPagesWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListOptimizationJobsPagesWithContext), varargs...)
+}
+
+// ListOptimizationJobsRequest mocks base method
+func (m *MockSageMakerAPI) ListOptimizationJobsRequest(arg0 *sagemaker.ListOptimizationJobsInput) (*request.Request, *sagemaker.ListOptimizationJobsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListOptimizationJobsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.ListOptimizationJobsOutput)
+	return ret0, ret1
+}
+
+// ListOptimizationJobsRequest indicates an expected call of ListOptimizationJobsRequest
+func (mr *MockSageMakerAPIMockRecorder) ListOptimizationJobsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOptimizationJobsRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).ListOptimizationJobsRequest), arg0)
+}
+
+// ListOptimizationJobsWithContext mocks base method
+func (m *MockSageMakerAPI) ListOptimizationJobsWithContext(arg0 context.Context, arg1 *sagemaker.ListOptimizationJobsInput, arg2 ...request.Option) (*sagemaker.ListOptimizationJobsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListOptimizationJobsWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.ListOptimizationJobsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListOptimizationJobsWithContext indicates an expected call of ListOptimizationJobsWithContext
+func (mr *MockSageMakerAPIMockRecorder) ListOptimizationJobsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListOptimizationJobsWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).ListOptimizationJobsWithContext), varargs...)
+}
+
 // ListPipelineExecutionSteps mocks base method
 func (m *MockSageMakerAPI) ListPipelineExecutionSteps(arg0 *sagemaker.ListPipelineExecutionStepsInput) (*sagemaker.ListPipelineExecutionStepsOutput, error) {
 	m.ctrl.T.Helper()
@@ -16908,6 +17141,56 @@ func (mr *MockSageMakerAPIMockRecorder) StopNotebookInstanceWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopNotebookInstanceWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).StopNotebookInstanceWithContext), varargs...)
+}
+
+// StopOptimizationJob mocks base method
+func (m *MockSageMakerAPI) StopOptimizationJob(arg0 *sagemaker.StopOptimizationJobInput) (*sagemaker.StopOptimizationJobOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopOptimizationJob", arg0)
+	ret0, _ := ret[0].(*sagemaker.StopOptimizationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopOptimizationJob indicates an expected call of StopOptimizationJob
+func (mr *MockSageMakerAPIMockRecorder) StopOptimizationJob(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopOptimizationJob", reflect.TypeOf((*MockSageMakerAPI)(nil).StopOptimizationJob), arg0)
+}
+
+// StopOptimizationJobRequest mocks base method
+func (m *MockSageMakerAPI) StopOptimizationJobRequest(arg0 *sagemaker.StopOptimizationJobInput) (*request.Request, *sagemaker.StopOptimizationJobOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopOptimizationJobRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*sagemaker.StopOptimizationJobOutput)
+	return ret0, ret1
+}
+
+// StopOptimizationJobRequest indicates an expected call of StopOptimizationJobRequest
+func (mr *MockSageMakerAPIMockRecorder) StopOptimizationJobRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopOptimizationJobRequest", reflect.TypeOf((*MockSageMakerAPI)(nil).StopOptimizationJobRequest), arg0)
+}
+
+// StopOptimizationJobWithContext mocks base method
+func (m *MockSageMakerAPI) StopOptimizationJobWithContext(arg0 context.Context, arg1 *sagemaker.StopOptimizationJobInput, arg2 ...request.Option) (*sagemaker.StopOptimizationJobOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "StopOptimizationJobWithContext", varargs...)
+	ret0, _ := ret[0].(*sagemaker.StopOptimizationJobOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// StopOptimizationJobWithContext indicates an expected call of StopOptimizationJobWithContext
+func (mr *MockSageMakerAPIMockRecorder) StopOptimizationJobWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopOptimizationJobWithContext", reflect.TypeOf((*MockSageMakerAPI)(nil).StopOptimizationJobWithContext), varargs...)
 }
 
 // StopPipelineExecution mocks base method
