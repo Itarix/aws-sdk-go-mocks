@@ -35,6 +35,106 @@ func (m *MockLicenseManagerLinuxSubscriptionsAPI) EXPECT() *MockLicenseManagerLi
 	return m.recorder
 }
 
+// DeregisterSubscriptionProvider mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) DeregisterSubscriptionProvider(arg0 *licensemanagerlinuxsubscriptions.DeregisterSubscriptionProviderInput) (*licensemanagerlinuxsubscriptions.DeregisterSubscriptionProviderOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterSubscriptionProvider", arg0)
+	ret0, _ := ret[0].(*licensemanagerlinuxsubscriptions.DeregisterSubscriptionProviderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterSubscriptionProvider indicates an expected call of DeregisterSubscriptionProvider
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) DeregisterSubscriptionProvider(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterSubscriptionProvider", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).DeregisterSubscriptionProvider), arg0)
+}
+
+// DeregisterSubscriptionProviderRequest mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) DeregisterSubscriptionProviderRequest(arg0 *licensemanagerlinuxsubscriptions.DeregisterSubscriptionProviderInput) (*request.Request, *licensemanagerlinuxsubscriptions.DeregisterSubscriptionProviderOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeregisterSubscriptionProviderRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*licensemanagerlinuxsubscriptions.DeregisterSubscriptionProviderOutput)
+	return ret0, ret1
+}
+
+// DeregisterSubscriptionProviderRequest indicates an expected call of DeregisterSubscriptionProviderRequest
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) DeregisterSubscriptionProviderRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterSubscriptionProviderRequest", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).DeregisterSubscriptionProviderRequest), arg0)
+}
+
+// DeregisterSubscriptionProviderWithContext mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) DeregisterSubscriptionProviderWithContext(arg0 context.Context, arg1 *licensemanagerlinuxsubscriptions.DeregisterSubscriptionProviderInput, arg2 ...request.Option) (*licensemanagerlinuxsubscriptions.DeregisterSubscriptionProviderOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeregisterSubscriptionProviderWithContext", varargs...)
+	ret0, _ := ret[0].(*licensemanagerlinuxsubscriptions.DeregisterSubscriptionProviderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeregisterSubscriptionProviderWithContext indicates an expected call of DeregisterSubscriptionProviderWithContext
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) DeregisterSubscriptionProviderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeregisterSubscriptionProviderWithContext", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).DeregisterSubscriptionProviderWithContext), varargs...)
+}
+
+// GetRegisteredSubscriptionProvider mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) GetRegisteredSubscriptionProvider(arg0 *licensemanagerlinuxsubscriptions.GetRegisteredSubscriptionProviderInput) (*licensemanagerlinuxsubscriptions.GetRegisteredSubscriptionProviderOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRegisteredSubscriptionProvider", arg0)
+	ret0, _ := ret[0].(*licensemanagerlinuxsubscriptions.GetRegisteredSubscriptionProviderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRegisteredSubscriptionProvider indicates an expected call of GetRegisteredSubscriptionProvider
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) GetRegisteredSubscriptionProvider(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegisteredSubscriptionProvider", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).GetRegisteredSubscriptionProvider), arg0)
+}
+
+// GetRegisteredSubscriptionProviderRequest mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) GetRegisteredSubscriptionProviderRequest(arg0 *licensemanagerlinuxsubscriptions.GetRegisteredSubscriptionProviderInput) (*request.Request, *licensemanagerlinuxsubscriptions.GetRegisteredSubscriptionProviderOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetRegisteredSubscriptionProviderRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*licensemanagerlinuxsubscriptions.GetRegisteredSubscriptionProviderOutput)
+	return ret0, ret1
+}
+
+// GetRegisteredSubscriptionProviderRequest indicates an expected call of GetRegisteredSubscriptionProviderRequest
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) GetRegisteredSubscriptionProviderRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegisteredSubscriptionProviderRequest", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).GetRegisteredSubscriptionProviderRequest), arg0)
+}
+
+// GetRegisteredSubscriptionProviderWithContext mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) GetRegisteredSubscriptionProviderWithContext(arg0 context.Context, arg1 *licensemanagerlinuxsubscriptions.GetRegisteredSubscriptionProviderInput, arg2 ...request.Option) (*licensemanagerlinuxsubscriptions.GetRegisteredSubscriptionProviderOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetRegisteredSubscriptionProviderWithContext", varargs...)
+	ret0, _ := ret[0].(*licensemanagerlinuxsubscriptions.GetRegisteredSubscriptionProviderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetRegisteredSubscriptionProviderWithContext indicates an expected call of GetRegisteredSubscriptionProviderWithContext
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) GetRegisteredSubscriptionProviderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetRegisteredSubscriptionProviderWithContext", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).GetRegisteredSubscriptionProviderWithContext), varargs...)
+}
+
 // GetServiceSettings mocks base method
 func (m *MockLicenseManagerLinuxSubscriptionsAPI) GetServiceSettings(arg0 *licensemanagerlinuxsubscriptions.GetServiceSettingsInput) (*licensemanagerlinuxsubscriptions.GetServiceSettingsOutput, error) {
 	m.ctrl.T.Helper()
@@ -249,6 +349,289 @@ func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) ListLinuxSubscrip
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListLinuxSubscriptionsWithContext", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).ListLinuxSubscriptionsWithContext), varargs...)
+}
+
+// ListRegisteredSubscriptionProviders mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) ListRegisteredSubscriptionProviders(arg0 *licensemanagerlinuxsubscriptions.ListRegisteredSubscriptionProvidersInput) (*licensemanagerlinuxsubscriptions.ListRegisteredSubscriptionProvidersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRegisteredSubscriptionProviders", arg0)
+	ret0, _ := ret[0].(*licensemanagerlinuxsubscriptions.ListRegisteredSubscriptionProvidersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRegisteredSubscriptionProviders indicates an expected call of ListRegisteredSubscriptionProviders
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) ListRegisteredSubscriptionProviders(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegisteredSubscriptionProviders", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).ListRegisteredSubscriptionProviders), arg0)
+}
+
+// ListRegisteredSubscriptionProvidersPages mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) ListRegisteredSubscriptionProvidersPages(arg0 *licensemanagerlinuxsubscriptions.ListRegisteredSubscriptionProvidersInput, arg1 func(*licensemanagerlinuxsubscriptions.ListRegisteredSubscriptionProvidersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRegisteredSubscriptionProvidersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRegisteredSubscriptionProvidersPages indicates an expected call of ListRegisteredSubscriptionProvidersPages
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) ListRegisteredSubscriptionProvidersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegisteredSubscriptionProvidersPages", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).ListRegisteredSubscriptionProvidersPages), arg0, arg1)
+}
+
+// ListRegisteredSubscriptionProvidersPagesWithContext mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) ListRegisteredSubscriptionProvidersPagesWithContext(arg0 context.Context, arg1 *licensemanagerlinuxsubscriptions.ListRegisteredSubscriptionProvidersInput, arg2 func(*licensemanagerlinuxsubscriptions.ListRegisteredSubscriptionProvidersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRegisteredSubscriptionProvidersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRegisteredSubscriptionProvidersPagesWithContext indicates an expected call of ListRegisteredSubscriptionProvidersPagesWithContext
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) ListRegisteredSubscriptionProvidersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegisteredSubscriptionProvidersPagesWithContext", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).ListRegisteredSubscriptionProvidersPagesWithContext), varargs...)
+}
+
+// ListRegisteredSubscriptionProvidersRequest mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) ListRegisteredSubscriptionProvidersRequest(arg0 *licensemanagerlinuxsubscriptions.ListRegisteredSubscriptionProvidersInput) (*request.Request, *licensemanagerlinuxsubscriptions.ListRegisteredSubscriptionProvidersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRegisteredSubscriptionProvidersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*licensemanagerlinuxsubscriptions.ListRegisteredSubscriptionProvidersOutput)
+	return ret0, ret1
+}
+
+// ListRegisteredSubscriptionProvidersRequest indicates an expected call of ListRegisteredSubscriptionProvidersRequest
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) ListRegisteredSubscriptionProvidersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegisteredSubscriptionProvidersRequest", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).ListRegisteredSubscriptionProvidersRequest), arg0)
+}
+
+// ListRegisteredSubscriptionProvidersWithContext mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) ListRegisteredSubscriptionProvidersWithContext(arg0 context.Context, arg1 *licensemanagerlinuxsubscriptions.ListRegisteredSubscriptionProvidersInput, arg2 ...request.Option) (*licensemanagerlinuxsubscriptions.ListRegisteredSubscriptionProvidersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRegisteredSubscriptionProvidersWithContext", varargs...)
+	ret0, _ := ret[0].(*licensemanagerlinuxsubscriptions.ListRegisteredSubscriptionProvidersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRegisteredSubscriptionProvidersWithContext indicates an expected call of ListRegisteredSubscriptionProvidersWithContext
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) ListRegisteredSubscriptionProvidersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRegisteredSubscriptionProvidersWithContext", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).ListRegisteredSubscriptionProvidersWithContext), varargs...)
+}
+
+// ListTagsForResource mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) ListTagsForResource(arg0 *licensemanagerlinuxsubscriptions.ListTagsForResourceInput) (*licensemanagerlinuxsubscriptions.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResource", arg0)
+	ret0, _ := ret[0].(*licensemanagerlinuxsubscriptions.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResource indicates an expected call of ListTagsForResource
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) ListTagsForResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResource", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).ListTagsForResource), arg0)
+}
+
+// ListTagsForResourceRequest mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) ListTagsForResourceRequest(arg0 *licensemanagerlinuxsubscriptions.ListTagsForResourceInput) (*request.Request, *licensemanagerlinuxsubscriptions.ListTagsForResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTagsForResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*licensemanagerlinuxsubscriptions.ListTagsForResourceOutput)
+	return ret0, ret1
+}
+
+// ListTagsForResourceRequest indicates an expected call of ListTagsForResourceRequest
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) ListTagsForResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceRequest", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).ListTagsForResourceRequest), arg0)
+}
+
+// ListTagsForResourceWithContext mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) ListTagsForResourceWithContext(arg0 context.Context, arg1 *licensemanagerlinuxsubscriptions.ListTagsForResourceInput, arg2 ...request.Option) (*licensemanagerlinuxsubscriptions.ListTagsForResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTagsForResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*licensemanagerlinuxsubscriptions.ListTagsForResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListTagsForResourceWithContext indicates an expected call of ListTagsForResourceWithContext
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) ListTagsForResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).ListTagsForResourceWithContext), varargs...)
+}
+
+// RegisterSubscriptionProvider mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) RegisterSubscriptionProvider(arg0 *licensemanagerlinuxsubscriptions.RegisterSubscriptionProviderInput) (*licensemanagerlinuxsubscriptions.RegisterSubscriptionProviderOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterSubscriptionProvider", arg0)
+	ret0, _ := ret[0].(*licensemanagerlinuxsubscriptions.RegisterSubscriptionProviderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterSubscriptionProvider indicates an expected call of RegisterSubscriptionProvider
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) RegisterSubscriptionProvider(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterSubscriptionProvider", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).RegisterSubscriptionProvider), arg0)
+}
+
+// RegisterSubscriptionProviderRequest mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) RegisterSubscriptionProviderRequest(arg0 *licensemanagerlinuxsubscriptions.RegisterSubscriptionProviderInput) (*request.Request, *licensemanagerlinuxsubscriptions.RegisterSubscriptionProviderOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "RegisterSubscriptionProviderRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*licensemanagerlinuxsubscriptions.RegisterSubscriptionProviderOutput)
+	return ret0, ret1
+}
+
+// RegisterSubscriptionProviderRequest indicates an expected call of RegisterSubscriptionProviderRequest
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) RegisterSubscriptionProviderRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterSubscriptionProviderRequest", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).RegisterSubscriptionProviderRequest), arg0)
+}
+
+// RegisterSubscriptionProviderWithContext mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) RegisterSubscriptionProviderWithContext(arg0 context.Context, arg1 *licensemanagerlinuxsubscriptions.RegisterSubscriptionProviderInput, arg2 ...request.Option) (*licensemanagerlinuxsubscriptions.RegisterSubscriptionProviderOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "RegisterSubscriptionProviderWithContext", varargs...)
+	ret0, _ := ret[0].(*licensemanagerlinuxsubscriptions.RegisterSubscriptionProviderOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// RegisterSubscriptionProviderWithContext indicates an expected call of RegisterSubscriptionProviderWithContext
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) RegisterSubscriptionProviderWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RegisterSubscriptionProviderWithContext", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).RegisterSubscriptionProviderWithContext), varargs...)
+}
+
+// TagResource mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) TagResource(arg0 *licensemanagerlinuxsubscriptions.TagResourceInput) (*licensemanagerlinuxsubscriptions.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResource", arg0)
+	ret0, _ := ret[0].(*licensemanagerlinuxsubscriptions.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResource indicates an expected call of TagResource
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) TagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResource", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).TagResource), arg0)
+}
+
+// TagResourceRequest mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) TagResourceRequest(arg0 *licensemanagerlinuxsubscriptions.TagResourceInput) (*request.Request, *licensemanagerlinuxsubscriptions.TagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*licensemanagerlinuxsubscriptions.TagResourceOutput)
+	return ret0, ret1
+}
+
+// TagResourceRequest indicates an expected call of TagResourceRequest
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) TagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceRequest", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).TagResourceRequest), arg0)
+}
+
+// TagResourceWithContext mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) TagResourceWithContext(arg0 context.Context, arg1 *licensemanagerlinuxsubscriptions.TagResourceInput, arg2 ...request.Option) (*licensemanagerlinuxsubscriptions.TagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*licensemanagerlinuxsubscriptions.TagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TagResourceWithContext indicates an expected call of TagResourceWithContext
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) TagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TagResourceWithContext", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).TagResourceWithContext), varargs...)
+}
+
+// UntagResource mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) UntagResource(arg0 *licensemanagerlinuxsubscriptions.UntagResourceInput) (*licensemanagerlinuxsubscriptions.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResource", arg0)
+	ret0, _ := ret[0].(*licensemanagerlinuxsubscriptions.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResource indicates an expected call of UntagResource
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) UntagResource(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResource", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).UntagResource), arg0)
+}
+
+// UntagResourceRequest mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) UntagResourceRequest(arg0 *licensemanagerlinuxsubscriptions.UntagResourceInput) (*request.Request, *licensemanagerlinuxsubscriptions.UntagResourceOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UntagResourceRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*licensemanagerlinuxsubscriptions.UntagResourceOutput)
+	return ret0, ret1
+}
+
+// UntagResourceRequest indicates an expected call of UntagResourceRequest
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) UntagResourceRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceRequest", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).UntagResourceRequest), arg0)
+}
+
+// UntagResourceWithContext mocks base method
+func (m *MockLicenseManagerLinuxSubscriptionsAPI) UntagResourceWithContext(arg0 context.Context, arg1 *licensemanagerlinuxsubscriptions.UntagResourceInput, arg2 ...request.Option) (*licensemanagerlinuxsubscriptions.UntagResourceOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UntagResourceWithContext", varargs...)
+	ret0, _ := ret[0].(*licensemanagerlinuxsubscriptions.UntagResourceOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UntagResourceWithContext indicates an expected call of UntagResourceWithContext
+func (mr *MockLicenseManagerLinuxSubscriptionsAPIMockRecorder) UntagResourceWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockLicenseManagerLinuxSubscriptionsAPI)(nil).UntagResourceWithContext), varargs...)
 }
 
 // UpdateServiceSettings mocks base method

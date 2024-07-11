@@ -285,6 +285,156 @@ func (mr *MockBedrockAgentAPIMockRecorder) CreateDataSourceWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateDataSourceWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreateDataSourceWithContext), varargs...)
 }
 
+// CreateFlow mocks base method
+func (m *MockBedrockAgentAPI) CreateFlow(arg0 *bedrockagent.CreateFlowInput) (*bedrockagent.CreateFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFlow", arg0)
+	ret0, _ := ret[0].(*bedrockagent.CreateFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFlow indicates an expected call of CreateFlow
+func (mr *MockBedrockAgentAPIMockRecorder) CreateFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFlow", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreateFlow), arg0)
+}
+
+// CreateFlowAlias mocks base method
+func (m *MockBedrockAgentAPI) CreateFlowAlias(arg0 *bedrockagent.CreateFlowAliasInput) (*bedrockagent.CreateFlowAliasOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFlowAlias", arg0)
+	ret0, _ := ret[0].(*bedrockagent.CreateFlowAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFlowAlias indicates an expected call of CreateFlowAlias
+func (mr *MockBedrockAgentAPIMockRecorder) CreateFlowAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFlowAlias", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreateFlowAlias), arg0)
+}
+
+// CreateFlowAliasRequest mocks base method
+func (m *MockBedrockAgentAPI) CreateFlowAliasRequest(arg0 *bedrockagent.CreateFlowAliasInput) (*request.Request, *bedrockagent.CreateFlowAliasOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFlowAliasRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.CreateFlowAliasOutput)
+	return ret0, ret1
+}
+
+// CreateFlowAliasRequest indicates an expected call of CreateFlowAliasRequest
+func (mr *MockBedrockAgentAPIMockRecorder) CreateFlowAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFlowAliasRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreateFlowAliasRequest), arg0)
+}
+
+// CreateFlowAliasWithContext mocks base method
+func (m *MockBedrockAgentAPI) CreateFlowAliasWithContext(arg0 context.Context, arg1 *bedrockagent.CreateFlowAliasInput, arg2 ...request.Option) (*bedrockagent.CreateFlowAliasOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFlowAliasWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.CreateFlowAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFlowAliasWithContext indicates an expected call of CreateFlowAliasWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) CreateFlowAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFlowAliasWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreateFlowAliasWithContext), varargs...)
+}
+
+// CreateFlowRequest mocks base method
+func (m *MockBedrockAgentAPI) CreateFlowRequest(arg0 *bedrockagent.CreateFlowInput) (*request.Request, *bedrockagent.CreateFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.CreateFlowOutput)
+	return ret0, ret1
+}
+
+// CreateFlowRequest indicates an expected call of CreateFlowRequest
+func (mr *MockBedrockAgentAPIMockRecorder) CreateFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFlowRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreateFlowRequest), arg0)
+}
+
+// CreateFlowVersion mocks base method
+func (m *MockBedrockAgentAPI) CreateFlowVersion(arg0 *bedrockagent.CreateFlowVersionInput) (*bedrockagent.CreateFlowVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFlowVersion", arg0)
+	ret0, _ := ret[0].(*bedrockagent.CreateFlowVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFlowVersion indicates an expected call of CreateFlowVersion
+func (mr *MockBedrockAgentAPIMockRecorder) CreateFlowVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFlowVersion", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreateFlowVersion), arg0)
+}
+
+// CreateFlowVersionRequest mocks base method
+func (m *MockBedrockAgentAPI) CreateFlowVersionRequest(arg0 *bedrockagent.CreateFlowVersionInput) (*request.Request, *bedrockagent.CreateFlowVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateFlowVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.CreateFlowVersionOutput)
+	return ret0, ret1
+}
+
+// CreateFlowVersionRequest indicates an expected call of CreateFlowVersionRequest
+func (mr *MockBedrockAgentAPIMockRecorder) CreateFlowVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFlowVersionRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreateFlowVersionRequest), arg0)
+}
+
+// CreateFlowVersionWithContext mocks base method
+func (m *MockBedrockAgentAPI) CreateFlowVersionWithContext(arg0 context.Context, arg1 *bedrockagent.CreateFlowVersionInput, arg2 ...request.Option) (*bedrockagent.CreateFlowVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFlowVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.CreateFlowVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFlowVersionWithContext indicates an expected call of CreateFlowVersionWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) CreateFlowVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFlowVersionWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreateFlowVersionWithContext), varargs...)
+}
+
+// CreateFlowWithContext mocks base method
+func (m *MockBedrockAgentAPI) CreateFlowWithContext(arg0 context.Context, arg1 *bedrockagent.CreateFlowInput, arg2 ...request.Option) (*bedrockagent.CreateFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.CreateFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateFlowWithContext indicates an expected call of CreateFlowWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) CreateFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateFlowWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreateFlowWithContext), varargs...)
+}
+
 // CreateKnowledgeBase mocks base method
 func (m *MockBedrockAgentAPI) CreateKnowledgeBase(arg0 *bedrockagent.CreateKnowledgeBaseInput) (*bedrockagent.CreateKnowledgeBaseOutput, error) {
 	m.ctrl.T.Helper()
@@ -333,6 +483,106 @@ func (mr *MockBedrockAgentAPIMockRecorder) CreateKnowledgeBaseWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateKnowledgeBaseWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreateKnowledgeBaseWithContext), varargs...)
+}
+
+// CreatePrompt mocks base method
+func (m *MockBedrockAgentAPI) CreatePrompt(arg0 *bedrockagent.CreatePromptInput) (*bedrockagent.CreatePromptOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePrompt", arg0)
+	ret0, _ := ret[0].(*bedrockagent.CreatePromptOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePrompt indicates an expected call of CreatePrompt
+func (mr *MockBedrockAgentAPIMockRecorder) CreatePrompt(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePrompt", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreatePrompt), arg0)
+}
+
+// CreatePromptRequest mocks base method
+func (m *MockBedrockAgentAPI) CreatePromptRequest(arg0 *bedrockagent.CreatePromptInput) (*request.Request, *bedrockagent.CreatePromptOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePromptRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.CreatePromptOutput)
+	return ret0, ret1
+}
+
+// CreatePromptRequest indicates an expected call of CreatePromptRequest
+func (mr *MockBedrockAgentAPIMockRecorder) CreatePromptRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePromptRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreatePromptRequest), arg0)
+}
+
+// CreatePromptVersion mocks base method
+func (m *MockBedrockAgentAPI) CreatePromptVersion(arg0 *bedrockagent.CreatePromptVersionInput) (*bedrockagent.CreatePromptVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePromptVersion", arg0)
+	ret0, _ := ret[0].(*bedrockagent.CreatePromptVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePromptVersion indicates an expected call of CreatePromptVersion
+func (mr *MockBedrockAgentAPIMockRecorder) CreatePromptVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePromptVersion", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreatePromptVersion), arg0)
+}
+
+// CreatePromptVersionRequest mocks base method
+func (m *MockBedrockAgentAPI) CreatePromptVersionRequest(arg0 *bedrockagent.CreatePromptVersionInput) (*request.Request, *bedrockagent.CreatePromptVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreatePromptVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.CreatePromptVersionOutput)
+	return ret0, ret1
+}
+
+// CreatePromptVersionRequest indicates an expected call of CreatePromptVersionRequest
+func (mr *MockBedrockAgentAPIMockRecorder) CreatePromptVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePromptVersionRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreatePromptVersionRequest), arg0)
+}
+
+// CreatePromptVersionWithContext mocks base method
+func (m *MockBedrockAgentAPI) CreatePromptVersionWithContext(arg0 context.Context, arg1 *bedrockagent.CreatePromptVersionInput, arg2 ...request.Option) (*bedrockagent.CreatePromptVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreatePromptVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.CreatePromptVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePromptVersionWithContext indicates an expected call of CreatePromptVersionWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) CreatePromptVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePromptVersionWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreatePromptVersionWithContext), varargs...)
+}
+
+// CreatePromptWithContext mocks base method
+func (m *MockBedrockAgentAPI) CreatePromptWithContext(arg0 context.Context, arg1 *bedrockagent.CreatePromptInput, arg2 ...request.Option) (*bedrockagent.CreatePromptOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreatePromptWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.CreatePromptOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreatePromptWithContext indicates an expected call of CreatePromptWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) CreatePromptWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreatePromptWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).CreatePromptWithContext), varargs...)
 }
 
 // DeleteAgent mocks base method
@@ -585,6 +835,156 @@ func (mr *MockBedrockAgentAPIMockRecorder) DeleteDataSourceWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteDataSourceWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).DeleteDataSourceWithContext), varargs...)
 }
 
+// DeleteFlow mocks base method
+func (m *MockBedrockAgentAPI) DeleteFlow(arg0 *bedrockagent.DeleteFlowInput) (*bedrockagent.DeleteFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFlow", arg0)
+	ret0, _ := ret[0].(*bedrockagent.DeleteFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFlow indicates an expected call of DeleteFlow
+func (mr *MockBedrockAgentAPIMockRecorder) DeleteFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFlow", reflect.TypeOf((*MockBedrockAgentAPI)(nil).DeleteFlow), arg0)
+}
+
+// DeleteFlowAlias mocks base method
+func (m *MockBedrockAgentAPI) DeleteFlowAlias(arg0 *bedrockagent.DeleteFlowAliasInput) (*bedrockagent.DeleteFlowAliasOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFlowAlias", arg0)
+	ret0, _ := ret[0].(*bedrockagent.DeleteFlowAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFlowAlias indicates an expected call of DeleteFlowAlias
+func (mr *MockBedrockAgentAPIMockRecorder) DeleteFlowAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFlowAlias", reflect.TypeOf((*MockBedrockAgentAPI)(nil).DeleteFlowAlias), arg0)
+}
+
+// DeleteFlowAliasRequest mocks base method
+func (m *MockBedrockAgentAPI) DeleteFlowAliasRequest(arg0 *bedrockagent.DeleteFlowAliasInput) (*request.Request, *bedrockagent.DeleteFlowAliasOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFlowAliasRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.DeleteFlowAliasOutput)
+	return ret0, ret1
+}
+
+// DeleteFlowAliasRequest indicates an expected call of DeleteFlowAliasRequest
+func (mr *MockBedrockAgentAPIMockRecorder) DeleteFlowAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFlowAliasRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).DeleteFlowAliasRequest), arg0)
+}
+
+// DeleteFlowAliasWithContext mocks base method
+func (m *MockBedrockAgentAPI) DeleteFlowAliasWithContext(arg0 context.Context, arg1 *bedrockagent.DeleteFlowAliasInput, arg2 ...request.Option) (*bedrockagent.DeleteFlowAliasOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFlowAliasWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.DeleteFlowAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFlowAliasWithContext indicates an expected call of DeleteFlowAliasWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) DeleteFlowAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFlowAliasWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).DeleteFlowAliasWithContext), varargs...)
+}
+
+// DeleteFlowRequest mocks base method
+func (m *MockBedrockAgentAPI) DeleteFlowRequest(arg0 *bedrockagent.DeleteFlowInput) (*request.Request, *bedrockagent.DeleteFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.DeleteFlowOutput)
+	return ret0, ret1
+}
+
+// DeleteFlowRequest indicates an expected call of DeleteFlowRequest
+func (mr *MockBedrockAgentAPIMockRecorder) DeleteFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFlowRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).DeleteFlowRequest), arg0)
+}
+
+// DeleteFlowVersion mocks base method
+func (m *MockBedrockAgentAPI) DeleteFlowVersion(arg0 *bedrockagent.DeleteFlowVersionInput) (*bedrockagent.DeleteFlowVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFlowVersion", arg0)
+	ret0, _ := ret[0].(*bedrockagent.DeleteFlowVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFlowVersion indicates an expected call of DeleteFlowVersion
+func (mr *MockBedrockAgentAPIMockRecorder) DeleteFlowVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFlowVersion", reflect.TypeOf((*MockBedrockAgentAPI)(nil).DeleteFlowVersion), arg0)
+}
+
+// DeleteFlowVersionRequest mocks base method
+func (m *MockBedrockAgentAPI) DeleteFlowVersionRequest(arg0 *bedrockagent.DeleteFlowVersionInput) (*request.Request, *bedrockagent.DeleteFlowVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteFlowVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.DeleteFlowVersionOutput)
+	return ret0, ret1
+}
+
+// DeleteFlowVersionRequest indicates an expected call of DeleteFlowVersionRequest
+func (mr *MockBedrockAgentAPIMockRecorder) DeleteFlowVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFlowVersionRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).DeleteFlowVersionRequest), arg0)
+}
+
+// DeleteFlowVersionWithContext mocks base method
+func (m *MockBedrockAgentAPI) DeleteFlowVersionWithContext(arg0 context.Context, arg1 *bedrockagent.DeleteFlowVersionInput, arg2 ...request.Option) (*bedrockagent.DeleteFlowVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFlowVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.DeleteFlowVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFlowVersionWithContext indicates an expected call of DeleteFlowVersionWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) DeleteFlowVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFlowVersionWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).DeleteFlowVersionWithContext), varargs...)
+}
+
+// DeleteFlowWithContext mocks base method
+func (m *MockBedrockAgentAPI) DeleteFlowWithContext(arg0 context.Context, arg1 *bedrockagent.DeleteFlowInput, arg2 ...request.Option) (*bedrockagent.DeleteFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.DeleteFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteFlowWithContext indicates an expected call of DeleteFlowWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) DeleteFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteFlowWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).DeleteFlowWithContext), varargs...)
+}
+
 // DeleteKnowledgeBase mocks base method
 func (m *MockBedrockAgentAPI) DeleteKnowledgeBase(arg0 *bedrockagent.DeleteKnowledgeBaseInput) (*bedrockagent.DeleteKnowledgeBaseOutput, error) {
 	m.ctrl.T.Helper()
@@ -633,6 +1033,56 @@ func (mr *MockBedrockAgentAPIMockRecorder) DeleteKnowledgeBaseWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteKnowledgeBaseWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).DeleteKnowledgeBaseWithContext), varargs...)
+}
+
+// DeletePrompt mocks base method
+func (m *MockBedrockAgentAPI) DeletePrompt(arg0 *bedrockagent.DeletePromptInput) (*bedrockagent.DeletePromptOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePrompt", arg0)
+	ret0, _ := ret[0].(*bedrockagent.DeletePromptOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePrompt indicates an expected call of DeletePrompt
+func (mr *MockBedrockAgentAPIMockRecorder) DeletePrompt(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePrompt", reflect.TypeOf((*MockBedrockAgentAPI)(nil).DeletePrompt), arg0)
+}
+
+// DeletePromptRequest mocks base method
+func (m *MockBedrockAgentAPI) DeletePromptRequest(arg0 *bedrockagent.DeletePromptInput) (*request.Request, *bedrockagent.DeletePromptOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeletePromptRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.DeletePromptOutput)
+	return ret0, ret1
+}
+
+// DeletePromptRequest indicates an expected call of DeletePromptRequest
+func (mr *MockBedrockAgentAPIMockRecorder) DeletePromptRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePromptRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).DeletePromptRequest), arg0)
+}
+
+// DeletePromptWithContext mocks base method
+func (m *MockBedrockAgentAPI) DeletePromptWithContext(arg0 context.Context, arg1 *bedrockagent.DeletePromptInput, arg2 ...request.Option) (*bedrockagent.DeletePromptOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeletePromptWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.DeletePromptOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeletePromptWithContext indicates an expected call of DeletePromptWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) DeletePromptWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePromptWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).DeletePromptWithContext), varargs...)
 }
 
 // DisassociateAgentKnowledgeBase mocks base method
@@ -985,6 +1435,156 @@ func (mr *MockBedrockAgentAPIMockRecorder) GetDataSourceWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDataSourceWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).GetDataSourceWithContext), varargs...)
 }
 
+// GetFlow mocks base method
+func (m *MockBedrockAgentAPI) GetFlow(arg0 *bedrockagent.GetFlowInput) (*bedrockagent.GetFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFlow", arg0)
+	ret0, _ := ret[0].(*bedrockagent.GetFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFlow indicates an expected call of GetFlow
+func (mr *MockBedrockAgentAPIMockRecorder) GetFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFlow", reflect.TypeOf((*MockBedrockAgentAPI)(nil).GetFlow), arg0)
+}
+
+// GetFlowAlias mocks base method
+func (m *MockBedrockAgentAPI) GetFlowAlias(arg0 *bedrockagent.GetFlowAliasInput) (*bedrockagent.GetFlowAliasOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFlowAlias", arg0)
+	ret0, _ := ret[0].(*bedrockagent.GetFlowAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFlowAlias indicates an expected call of GetFlowAlias
+func (mr *MockBedrockAgentAPIMockRecorder) GetFlowAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFlowAlias", reflect.TypeOf((*MockBedrockAgentAPI)(nil).GetFlowAlias), arg0)
+}
+
+// GetFlowAliasRequest mocks base method
+func (m *MockBedrockAgentAPI) GetFlowAliasRequest(arg0 *bedrockagent.GetFlowAliasInput) (*request.Request, *bedrockagent.GetFlowAliasOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFlowAliasRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.GetFlowAliasOutput)
+	return ret0, ret1
+}
+
+// GetFlowAliasRequest indicates an expected call of GetFlowAliasRequest
+func (mr *MockBedrockAgentAPIMockRecorder) GetFlowAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFlowAliasRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).GetFlowAliasRequest), arg0)
+}
+
+// GetFlowAliasWithContext mocks base method
+func (m *MockBedrockAgentAPI) GetFlowAliasWithContext(arg0 context.Context, arg1 *bedrockagent.GetFlowAliasInput, arg2 ...request.Option) (*bedrockagent.GetFlowAliasOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFlowAliasWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.GetFlowAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFlowAliasWithContext indicates an expected call of GetFlowAliasWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) GetFlowAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFlowAliasWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).GetFlowAliasWithContext), varargs...)
+}
+
+// GetFlowRequest mocks base method
+func (m *MockBedrockAgentAPI) GetFlowRequest(arg0 *bedrockagent.GetFlowInput) (*request.Request, *bedrockagent.GetFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.GetFlowOutput)
+	return ret0, ret1
+}
+
+// GetFlowRequest indicates an expected call of GetFlowRequest
+func (mr *MockBedrockAgentAPIMockRecorder) GetFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFlowRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).GetFlowRequest), arg0)
+}
+
+// GetFlowVersion mocks base method
+func (m *MockBedrockAgentAPI) GetFlowVersion(arg0 *bedrockagent.GetFlowVersionInput) (*bedrockagent.GetFlowVersionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFlowVersion", arg0)
+	ret0, _ := ret[0].(*bedrockagent.GetFlowVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFlowVersion indicates an expected call of GetFlowVersion
+func (mr *MockBedrockAgentAPIMockRecorder) GetFlowVersion(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFlowVersion", reflect.TypeOf((*MockBedrockAgentAPI)(nil).GetFlowVersion), arg0)
+}
+
+// GetFlowVersionRequest mocks base method
+func (m *MockBedrockAgentAPI) GetFlowVersionRequest(arg0 *bedrockagent.GetFlowVersionInput) (*request.Request, *bedrockagent.GetFlowVersionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetFlowVersionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.GetFlowVersionOutput)
+	return ret0, ret1
+}
+
+// GetFlowVersionRequest indicates an expected call of GetFlowVersionRequest
+func (mr *MockBedrockAgentAPIMockRecorder) GetFlowVersionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFlowVersionRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).GetFlowVersionRequest), arg0)
+}
+
+// GetFlowVersionWithContext mocks base method
+func (m *MockBedrockAgentAPI) GetFlowVersionWithContext(arg0 context.Context, arg1 *bedrockagent.GetFlowVersionInput, arg2 ...request.Option) (*bedrockagent.GetFlowVersionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFlowVersionWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.GetFlowVersionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFlowVersionWithContext indicates an expected call of GetFlowVersionWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) GetFlowVersionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFlowVersionWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).GetFlowVersionWithContext), varargs...)
+}
+
+// GetFlowWithContext mocks base method
+func (m *MockBedrockAgentAPI) GetFlowWithContext(arg0 context.Context, arg1 *bedrockagent.GetFlowInput, arg2 ...request.Option) (*bedrockagent.GetFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.GetFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetFlowWithContext indicates an expected call of GetFlowWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) GetFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetFlowWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).GetFlowWithContext), varargs...)
+}
+
 // GetIngestionJob mocks base method
 func (m *MockBedrockAgentAPI) GetIngestionJob(arg0 *bedrockagent.GetIngestionJobInput) (*bedrockagent.GetIngestionJobOutput, error) {
 	m.ctrl.T.Helper()
@@ -1083,6 +1683,56 @@ func (mr *MockBedrockAgentAPIMockRecorder) GetKnowledgeBaseWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetKnowledgeBaseWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).GetKnowledgeBaseWithContext), varargs...)
+}
+
+// GetPrompt mocks base method
+func (m *MockBedrockAgentAPI) GetPrompt(arg0 *bedrockagent.GetPromptInput) (*bedrockagent.GetPromptOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPrompt", arg0)
+	ret0, _ := ret[0].(*bedrockagent.GetPromptOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPrompt indicates an expected call of GetPrompt
+func (mr *MockBedrockAgentAPIMockRecorder) GetPrompt(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPrompt", reflect.TypeOf((*MockBedrockAgentAPI)(nil).GetPrompt), arg0)
+}
+
+// GetPromptRequest mocks base method
+func (m *MockBedrockAgentAPI) GetPromptRequest(arg0 *bedrockagent.GetPromptInput) (*request.Request, *bedrockagent.GetPromptOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPromptRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.GetPromptOutput)
+	return ret0, ret1
+}
+
+// GetPromptRequest indicates an expected call of GetPromptRequest
+func (mr *MockBedrockAgentAPIMockRecorder) GetPromptRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPromptRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).GetPromptRequest), arg0)
+}
+
+// GetPromptWithContext mocks base method
+func (m *MockBedrockAgentAPI) GetPromptWithContext(arg0 context.Context, arg1 *bedrockagent.GetPromptInput, arg2 ...request.Option) (*bedrockagent.GetPromptOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetPromptWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.GetPromptOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPromptWithContext indicates an expected call of GetPromptWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) GetPromptWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPromptWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).GetPromptWithContext), varargs...)
 }
 
 // ListAgentActionGroups mocks base method
@@ -1583,6 +2233,255 @@ func (mr *MockBedrockAgentAPIMockRecorder) ListDataSourcesWithContext(arg0, arg1
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataSourcesWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListDataSourcesWithContext), varargs...)
 }
 
+// ListFlowAliases mocks base method
+func (m *MockBedrockAgentAPI) ListFlowAliases(arg0 *bedrockagent.ListFlowAliasesInput) (*bedrockagent.ListFlowAliasesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlowAliases", arg0)
+	ret0, _ := ret[0].(*bedrockagent.ListFlowAliasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFlowAliases indicates an expected call of ListFlowAliases
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlowAliases(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowAliases", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlowAliases), arg0)
+}
+
+// ListFlowAliasesPages mocks base method
+func (m *MockBedrockAgentAPI) ListFlowAliasesPages(arg0 *bedrockagent.ListFlowAliasesInput, arg1 func(*bedrockagent.ListFlowAliasesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlowAliasesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFlowAliasesPages indicates an expected call of ListFlowAliasesPages
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlowAliasesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowAliasesPages", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlowAliasesPages), arg0, arg1)
+}
+
+// ListFlowAliasesPagesWithContext mocks base method
+func (m *MockBedrockAgentAPI) ListFlowAliasesPagesWithContext(arg0 context.Context, arg1 *bedrockagent.ListFlowAliasesInput, arg2 func(*bedrockagent.ListFlowAliasesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFlowAliasesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFlowAliasesPagesWithContext indicates an expected call of ListFlowAliasesPagesWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlowAliasesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowAliasesPagesWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlowAliasesPagesWithContext), varargs...)
+}
+
+// ListFlowAliasesRequest mocks base method
+func (m *MockBedrockAgentAPI) ListFlowAliasesRequest(arg0 *bedrockagent.ListFlowAliasesInput) (*request.Request, *bedrockagent.ListFlowAliasesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlowAliasesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.ListFlowAliasesOutput)
+	return ret0, ret1
+}
+
+// ListFlowAliasesRequest indicates an expected call of ListFlowAliasesRequest
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlowAliasesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowAliasesRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlowAliasesRequest), arg0)
+}
+
+// ListFlowAliasesWithContext mocks base method
+func (m *MockBedrockAgentAPI) ListFlowAliasesWithContext(arg0 context.Context, arg1 *bedrockagent.ListFlowAliasesInput, arg2 ...request.Option) (*bedrockagent.ListFlowAliasesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFlowAliasesWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.ListFlowAliasesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFlowAliasesWithContext indicates an expected call of ListFlowAliasesWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlowAliasesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowAliasesWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlowAliasesWithContext), varargs...)
+}
+
+// ListFlowVersions mocks base method
+func (m *MockBedrockAgentAPI) ListFlowVersions(arg0 *bedrockagent.ListFlowVersionsInput) (*bedrockagent.ListFlowVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlowVersions", arg0)
+	ret0, _ := ret[0].(*bedrockagent.ListFlowVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFlowVersions indicates an expected call of ListFlowVersions
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlowVersions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowVersions", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlowVersions), arg0)
+}
+
+// ListFlowVersionsPages mocks base method
+func (m *MockBedrockAgentAPI) ListFlowVersionsPages(arg0 *bedrockagent.ListFlowVersionsInput, arg1 func(*bedrockagent.ListFlowVersionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlowVersionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFlowVersionsPages indicates an expected call of ListFlowVersionsPages
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlowVersionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowVersionsPages", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlowVersionsPages), arg0, arg1)
+}
+
+// ListFlowVersionsPagesWithContext mocks base method
+func (m *MockBedrockAgentAPI) ListFlowVersionsPagesWithContext(arg0 context.Context, arg1 *bedrockagent.ListFlowVersionsInput, arg2 func(*bedrockagent.ListFlowVersionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFlowVersionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFlowVersionsPagesWithContext indicates an expected call of ListFlowVersionsPagesWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlowVersionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowVersionsPagesWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlowVersionsPagesWithContext), varargs...)
+}
+
+// ListFlowVersionsRequest mocks base method
+func (m *MockBedrockAgentAPI) ListFlowVersionsRequest(arg0 *bedrockagent.ListFlowVersionsInput) (*request.Request, *bedrockagent.ListFlowVersionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlowVersionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.ListFlowVersionsOutput)
+	return ret0, ret1
+}
+
+// ListFlowVersionsRequest indicates an expected call of ListFlowVersionsRequest
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlowVersionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowVersionsRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlowVersionsRequest), arg0)
+}
+
+// ListFlowVersionsWithContext mocks base method
+func (m *MockBedrockAgentAPI) ListFlowVersionsWithContext(arg0 context.Context, arg1 *bedrockagent.ListFlowVersionsInput, arg2 ...request.Option) (*bedrockagent.ListFlowVersionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFlowVersionsWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.ListFlowVersionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFlowVersionsWithContext indicates an expected call of ListFlowVersionsWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlowVersionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowVersionsWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlowVersionsWithContext), varargs...)
+}
+
+// ListFlows mocks base method
+func (m *MockBedrockAgentAPI) ListFlows(arg0 *bedrockagent.ListFlowsInput) (*bedrockagent.ListFlowsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlows", arg0)
+	ret0, _ := ret[0].(*bedrockagent.ListFlowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFlows indicates an expected call of ListFlows
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlows(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlows", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlows), arg0)
+}
+
+// ListFlowsPages mocks base method
+func (m *MockBedrockAgentAPI) ListFlowsPages(arg0 *bedrockagent.ListFlowsInput, arg1 func(*bedrockagent.ListFlowsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlowsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFlowsPages indicates an expected call of ListFlowsPages
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlowsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowsPages", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlowsPages), arg0, arg1)
+}
+
+// ListFlowsPagesWithContext mocks base method
+func (m *MockBedrockAgentAPI) ListFlowsPagesWithContext(arg0 context.Context, arg1 *bedrockagent.ListFlowsInput, arg2 func(*bedrockagent.ListFlowsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFlowsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFlowsPagesWithContext indicates an expected call of ListFlowsPagesWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlowsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowsPagesWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlowsPagesWithContext), varargs...)
+}
+
+// ListFlowsRequest mocks base method
+func (m *MockBedrockAgentAPI) ListFlowsRequest(arg0 *bedrockagent.ListFlowsInput) (*request.Request, *bedrockagent.ListFlowsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFlowsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.ListFlowsOutput)
+	return ret0, ret1
+}
+
+// ListFlowsRequest indicates an expected call of ListFlowsRequest
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlowsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowsRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlowsRequest), arg0)
+}
+
+// ListFlowsWithContext mocks base method
+func (m *MockBedrockAgentAPI) ListFlowsWithContext(arg0 context.Context, arg1 *bedrockagent.ListFlowsInput, arg2 ...request.Option) (*bedrockagent.ListFlowsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFlowsWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.ListFlowsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListFlowsWithContext indicates an expected call of ListFlowsWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) ListFlowsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFlowsWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListFlowsWithContext), varargs...)
+}
+
 // ListIngestionJobs mocks base method
 func (m *MockBedrockAgentAPI) ListIngestionJobs(arg0 *bedrockagent.ListIngestionJobsInput) (*bedrockagent.ListIngestionJobsOutput, error) {
 	m.ctrl.T.Helper()
@@ -1749,6 +2648,89 @@ func (mr *MockBedrockAgentAPIMockRecorder) ListKnowledgeBasesWithContext(arg0, a
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListKnowledgeBasesWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListKnowledgeBasesWithContext), varargs...)
 }
 
+// ListPrompts mocks base method
+func (m *MockBedrockAgentAPI) ListPrompts(arg0 *bedrockagent.ListPromptsInput) (*bedrockagent.ListPromptsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPrompts", arg0)
+	ret0, _ := ret[0].(*bedrockagent.ListPromptsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPrompts indicates an expected call of ListPrompts
+func (mr *MockBedrockAgentAPIMockRecorder) ListPrompts(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPrompts", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListPrompts), arg0)
+}
+
+// ListPromptsPages mocks base method
+func (m *MockBedrockAgentAPI) ListPromptsPages(arg0 *bedrockagent.ListPromptsInput, arg1 func(*bedrockagent.ListPromptsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPromptsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPromptsPages indicates an expected call of ListPromptsPages
+func (mr *MockBedrockAgentAPIMockRecorder) ListPromptsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPromptsPages", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListPromptsPages), arg0, arg1)
+}
+
+// ListPromptsPagesWithContext mocks base method
+func (m *MockBedrockAgentAPI) ListPromptsPagesWithContext(arg0 context.Context, arg1 *bedrockagent.ListPromptsInput, arg2 func(*bedrockagent.ListPromptsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPromptsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListPromptsPagesWithContext indicates an expected call of ListPromptsPagesWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) ListPromptsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPromptsPagesWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListPromptsPagesWithContext), varargs...)
+}
+
+// ListPromptsRequest mocks base method
+func (m *MockBedrockAgentAPI) ListPromptsRequest(arg0 *bedrockagent.ListPromptsInput) (*request.Request, *bedrockagent.ListPromptsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListPromptsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.ListPromptsOutput)
+	return ret0, ret1
+}
+
+// ListPromptsRequest indicates an expected call of ListPromptsRequest
+func (mr *MockBedrockAgentAPIMockRecorder) ListPromptsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPromptsRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListPromptsRequest), arg0)
+}
+
+// ListPromptsWithContext mocks base method
+func (m *MockBedrockAgentAPI) ListPromptsWithContext(arg0 context.Context, arg1 *bedrockagent.ListPromptsInput, arg2 ...request.Option) (*bedrockagent.ListPromptsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListPromptsWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.ListPromptsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListPromptsWithContext indicates an expected call of ListPromptsWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) ListPromptsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPromptsWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).ListPromptsWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockBedrockAgentAPI) ListTagsForResource(arg0 *bedrockagent.ListTagsForResourceInput) (*bedrockagent.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1847,6 +2829,56 @@ func (mr *MockBedrockAgentAPIMockRecorder) PrepareAgentWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PrepareAgentWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).PrepareAgentWithContext), varargs...)
+}
+
+// PrepareFlow mocks base method
+func (m *MockBedrockAgentAPI) PrepareFlow(arg0 *bedrockagent.PrepareFlowInput) (*bedrockagent.PrepareFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PrepareFlow", arg0)
+	ret0, _ := ret[0].(*bedrockagent.PrepareFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PrepareFlow indicates an expected call of PrepareFlow
+func (mr *MockBedrockAgentAPIMockRecorder) PrepareFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PrepareFlow", reflect.TypeOf((*MockBedrockAgentAPI)(nil).PrepareFlow), arg0)
+}
+
+// PrepareFlowRequest mocks base method
+func (m *MockBedrockAgentAPI) PrepareFlowRequest(arg0 *bedrockagent.PrepareFlowInput) (*request.Request, *bedrockagent.PrepareFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PrepareFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.PrepareFlowOutput)
+	return ret0, ret1
+}
+
+// PrepareFlowRequest indicates an expected call of PrepareFlowRequest
+func (mr *MockBedrockAgentAPIMockRecorder) PrepareFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PrepareFlowRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).PrepareFlowRequest), arg0)
+}
+
+// PrepareFlowWithContext mocks base method
+func (m *MockBedrockAgentAPI) PrepareFlowWithContext(arg0 context.Context, arg1 *bedrockagent.PrepareFlowInput, arg2 ...request.Option) (*bedrockagent.PrepareFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PrepareFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.PrepareFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PrepareFlowWithContext indicates an expected call of PrepareFlowWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) PrepareFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PrepareFlowWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).PrepareFlowWithContext), varargs...)
 }
 
 // StartIngestionJob mocks base method
@@ -2249,6 +3281,106 @@ func (mr *MockBedrockAgentAPIMockRecorder) UpdateDataSourceWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateDataSourceWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).UpdateDataSourceWithContext), varargs...)
 }
 
+// UpdateFlow mocks base method
+func (m *MockBedrockAgentAPI) UpdateFlow(arg0 *bedrockagent.UpdateFlowInput) (*bedrockagent.UpdateFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFlow", arg0)
+	ret0, _ := ret[0].(*bedrockagent.UpdateFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFlow indicates an expected call of UpdateFlow
+func (mr *MockBedrockAgentAPIMockRecorder) UpdateFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFlow", reflect.TypeOf((*MockBedrockAgentAPI)(nil).UpdateFlow), arg0)
+}
+
+// UpdateFlowAlias mocks base method
+func (m *MockBedrockAgentAPI) UpdateFlowAlias(arg0 *bedrockagent.UpdateFlowAliasInput) (*bedrockagent.UpdateFlowAliasOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFlowAlias", arg0)
+	ret0, _ := ret[0].(*bedrockagent.UpdateFlowAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFlowAlias indicates an expected call of UpdateFlowAlias
+func (mr *MockBedrockAgentAPIMockRecorder) UpdateFlowAlias(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFlowAlias", reflect.TypeOf((*MockBedrockAgentAPI)(nil).UpdateFlowAlias), arg0)
+}
+
+// UpdateFlowAliasRequest mocks base method
+func (m *MockBedrockAgentAPI) UpdateFlowAliasRequest(arg0 *bedrockagent.UpdateFlowAliasInput) (*request.Request, *bedrockagent.UpdateFlowAliasOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFlowAliasRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.UpdateFlowAliasOutput)
+	return ret0, ret1
+}
+
+// UpdateFlowAliasRequest indicates an expected call of UpdateFlowAliasRequest
+func (mr *MockBedrockAgentAPIMockRecorder) UpdateFlowAliasRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFlowAliasRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).UpdateFlowAliasRequest), arg0)
+}
+
+// UpdateFlowAliasWithContext mocks base method
+func (m *MockBedrockAgentAPI) UpdateFlowAliasWithContext(arg0 context.Context, arg1 *bedrockagent.UpdateFlowAliasInput, arg2 ...request.Option) (*bedrockagent.UpdateFlowAliasOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFlowAliasWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.UpdateFlowAliasOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFlowAliasWithContext indicates an expected call of UpdateFlowAliasWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) UpdateFlowAliasWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFlowAliasWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).UpdateFlowAliasWithContext), varargs...)
+}
+
+// UpdateFlowRequest mocks base method
+func (m *MockBedrockAgentAPI) UpdateFlowRequest(arg0 *bedrockagent.UpdateFlowInput) (*request.Request, *bedrockagent.UpdateFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.UpdateFlowOutput)
+	return ret0, ret1
+}
+
+// UpdateFlowRequest indicates an expected call of UpdateFlowRequest
+func (mr *MockBedrockAgentAPIMockRecorder) UpdateFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFlowRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).UpdateFlowRequest), arg0)
+}
+
+// UpdateFlowWithContext mocks base method
+func (m *MockBedrockAgentAPI) UpdateFlowWithContext(arg0 context.Context, arg1 *bedrockagent.UpdateFlowInput, arg2 ...request.Option) (*bedrockagent.UpdateFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.UpdateFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateFlowWithContext indicates an expected call of UpdateFlowWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) UpdateFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateFlowWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).UpdateFlowWithContext), varargs...)
+}
+
 // UpdateKnowledgeBase mocks base method
 func (m *MockBedrockAgentAPI) UpdateKnowledgeBase(arg0 *bedrockagent.UpdateKnowledgeBaseInput) (*bedrockagent.UpdateKnowledgeBaseOutput, error) {
 	m.ctrl.T.Helper()
@@ -2297,4 +3429,54 @@ func (mr *MockBedrockAgentAPIMockRecorder) UpdateKnowledgeBaseWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateKnowledgeBaseWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).UpdateKnowledgeBaseWithContext), varargs...)
+}
+
+// UpdatePrompt mocks base method
+func (m *MockBedrockAgentAPI) UpdatePrompt(arg0 *bedrockagent.UpdatePromptInput) (*bedrockagent.UpdatePromptOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePrompt", arg0)
+	ret0, _ := ret[0].(*bedrockagent.UpdatePromptOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePrompt indicates an expected call of UpdatePrompt
+func (mr *MockBedrockAgentAPIMockRecorder) UpdatePrompt(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePrompt", reflect.TypeOf((*MockBedrockAgentAPI)(nil).UpdatePrompt), arg0)
+}
+
+// UpdatePromptRequest mocks base method
+func (m *MockBedrockAgentAPI) UpdatePromptRequest(arg0 *bedrockagent.UpdatePromptInput) (*request.Request, *bedrockagent.UpdatePromptOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdatePromptRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagent.UpdatePromptOutput)
+	return ret0, ret1
+}
+
+// UpdatePromptRequest indicates an expected call of UpdatePromptRequest
+func (mr *MockBedrockAgentAPIMockRecorder) UpdatePromptRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePromptRequest", reflect.TypeOf((*MockBedrockAgentAPI)(nil).UpdatePromptRequest), arg0)
+}
+
+// UpdatePromptWithContext mocks base method
+func (m *MockBedrockAgentAPI) UpdatePromptWithContext(arg0 context.Context, arg1 *bedrockagent.UpdatePromptInput, arg2 ...request.Option) (*bedrockagent.UpdatePromptOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdatePromptWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagent.UpdatePromptOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdatePromptWithContext indicates an expected call of UpdatePromptWithContext
+func (mr *MockBedrockAgentAPIMockRecorder) UpdatePromptWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePromptWithContext", reflect.TypeOf((*MockBedrockAgentAPI)(nil).UpdatePromptWithContext), varargs...)
 }

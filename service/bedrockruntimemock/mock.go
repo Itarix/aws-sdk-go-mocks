@@ -35,6 +35,56 @@ func (m *MockBedrockRuntimeAPI) EXPECT() *MockBedrockRuntimeAPIMockRecorder {
 	return m.recorder
 }
 
+// ApplyGuardrail mocks base method
+func (m *MockBedrockRuntimeAPI) ApplyGuardrail(arg0 *bedrockruntime.ApplyGuardrailInput) (*bedrockruntime.ApplyGuardrailOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ApplyGuardrail", arg0)
+	ret0, _ := ret[0].(*bedrockruntime.ApplyGuardrailOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ApplyGuardrail indicates an expected call of ApplyGuardrail
+func (mr *MockBedrockRuntimeAPIMockRecorder) ApplyGuardrail(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ApplyGuardrail", reflect.TypeOf((*MockBedrockRuntimeAPI)(nil).ApplyGuardrail), arg0)
+}
+
+// ApplyGuardrailRequest mocks base method
+func (m *MockBedrockRuntimeAPI) ApplyGuardrailRequest(arg0 *bedrockruntime.ApplyGuardrailInput) (*request.Request, *bedrockruntime.ApplyGuardrailOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ApplyGuardrailRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockruntime.ApplyGuardrailOutput)
+	return ret0, ret1
+}
+
+// ApplyGuardrailRequest indicates an expected call of ApplyGuardrailRequest
+func (mr *MockBedrockRuntimeAPIMockRecorder) ApplyGuardrailRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ApplyGuardrailRequest", reflect.TypeOf((*MockBedrockRuntimeAPI)(nil).ApplyGuardrailRequest), arg0)
+}
+
+// ApplyGuardrailWithContext mocks base method
+func (m *MockBedrockRuntimeAPI) ApplyGuardrailWithContext(arg0 context.Context, arg1 *bedrockruntime.ApplyGuardrailInput, arg2 ...request.Option) (*bedrockruntime.ApplyGuardrailOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ApplyGuardrailWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockruntime.ApplyGuardrailOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ApplyGuardrailWithContext indicates an expected call of ApplyGuardrailWithContext
+func (mr *MockBedrockRuntimeAPIMockRecorder) ApplyGuardrailWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ApplyGuardrailWithContext", reflect.TypeOf((*MockBedrockRuntimeAPI)(nil).ApplyGuardrailWithContext), varargs...)
+}
+
 // Converse mocks base method
 func (m *MockBedrockRuntimeAPI) Converse(arg0 *bedrockruntime.ConverseInput) (*bedrockruntime.ConverseOutput, error) {
 	m.ctrl.T.Helper()

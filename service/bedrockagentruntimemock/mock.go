@@ -35,6 +35,139 @@ func (m *MockBedrockAgentRuntimeAPI) EXPECT() *MockBedrockAgentRuntimeAPIMockRec
 	return m.recorder
 }
 
+// DeleteAgentMemory mocks base method
+func (m *MockBedrockAgentRuntimeAPI) DeleteAgentMemory(arg0 *bedrockagentruntime.DeleteAgentMemoryInput) (*bedrockagentruntime.DeleteAgentMemoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAgentMemory", arg0)
+	ret0, _ := ret[0].(*bedrockagentruntime.DeleteAgentMemoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAgentMemory indicates an expected call of DeleteAgentMemory
+func (mr *MockBedrockAgentRuntimeAPIMockRecorder) DeleteAgentMemory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAgentMemory", reflect.TypeOf((*MockBedrockAgentRuntimeAPI)(nil).DeleteAgentMemory), arg0)
+}
+
+// DeleteAgentMemoryRequest mocks base method
+func (m *MockBedrockAgentRuntimeAPI) DeleteAgentMemoryRequest(arg0 *bedrockagentruntime.DeleteAgentMemoryInput) (*request.Request, *bedrockagentruntime.DeleteAgentMemoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAgentMemoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagentruntime.DeleteAgentMemoryOutput)
+	return ret0, ret1
+}
+
+// DeleteAgentMemoryRequest indicates an expected call of DeleteAgentMemoryRequest
+func (mr *MockBedrockAgentRuntimeAPIMockRecorder) DeleteAgentMemoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAgentMemoryRequest", reflect.TypeOf((*MockBedrockAgentRuntimeAPI)(nil).DeleteAgentMemoryRequest), arg0)
+}
+
+// DeleteAgentMemoryWithContext mocks base method
+func (m *MockBedrockAgentRuntimeAPI) DeleteAgentMemoryWithContext(arg0 context.Context, arg1 *bedrockagentruntime.DeleteAgentMemoryInput, arg2 ...request.Option) (*bedrockagentruntime.DeleteAgentMemoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAgentMemoryWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagentruntime.DeleteAgentMemoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAgentMemoryWithContext indicates an expected call of DeleteAgentMemoryWithContext
+func (mr *MockBedrockAgentRuntimeAPIMockRecorder) DeleteAgentMemoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAgentMemoryWithContext", reflect.TypeOf((*MockBedrockAgentRuntimeAPI)(nil).DeleteAgentMemoryWithContext), varargs...)
+}
+
+// GetAgentMemory mocks base method
+func (m *MockBedrockAgentRuntimeAPI) GetAgentMemory(arg0 *bedrockagentruntime.GetAgentMemoryInput) (*bedrockagentruntime.GetAgentMemoryOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAgentMemory", arg0)
+	ret0, _ := ret[0].(*bedrockagentruntime.GetAgentMemoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAgentMemory indicates an expected call of GetAgentMemory
+func (mr *MockBedrockAgentRuntimeAPIMockRecorder) GetAgentMemory(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAgentMemory", reflect.TypeOf((*MockBedrockAgentRuntimeAPI)(nil).GetAgentMemory), arg0)
+}
+
+// GetAgentMemoryPages mocks base method
+func (m *MockBedrockAgentRuntimeAPI) GetAgentMemoryPages(arg0 *bedrockagentruntime.GetAgentMemoryInput, arg1 func(*bedrockagentruntime.GetAgentMemoryOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAgentMemoryPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetAgentMemoryPages indicates an expected call of GetAgentMemoryPages
+func (mr *MockBedrockAgentRuntimeAPIMockRecorder) GetAgentMemoryPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAgentMemoryPages", reflect.TypeOf((*MockBedrockAgentRuntimeAPI)(nil).GetAgentMemoryPages), arg0, arg1)
+}
+
+// GetAgentMemoryPagesWithContext mocks base method
+func (m *MockBedrockAgentRuntimeAPI) GetAgentMemoryPagesWithContext(arg0 context.Context, arg1 *bedrockagentruntime.GetAgentMemoryInput, arg2 func(*bedrockagentruntime.GetAgentMemoryOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAgentMemoryPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// GetAgentMemoryPagesWithContext indicates an expected call of GetAgentMemoryPagesWithContext
+func (mr *MockBedrockAgentRuntimeAPIMockRecorder) GetAgentMemoryPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAgentMemoryPagesWithContext", reflect.TypeOf((*MockBedrockAgentRuntimeAPI)(nil).GetAgentMemoryPagesWithContext), varargs...)
+}
+
+// GetAgentMemoryRequest mocks base method
+func (m *MockBedrockAgentRuntimeAPI) GetAgentMemoryRequest(arg0 *bedrockagentruntime.GetAgentMemoryInput) (*request.Request, *bedrockagentruntime.GetAgentMemoryOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAgentMemoryRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagentruntime.GetAgentMemoryOutput)
+	return ret0, ret1
+}
+
+// GetAgentMemoryRequest indicates an expected call of GetAgentMemoryRequest
+func (mr *MockBedrockAgentRuntimeAPIMockRecorder) GetAgentMemoryRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAgentMemoryRequest", reflect.TypeOf((*MockBedrockAgentRuntimeAPI)(nil).GetAgentMemoryRequest), arg0)
+}
+
+// GetAgentMemoryWithContext mocks base method
+func (m *MockBedrockAgentRuntimeAPI) GetAgentMemoryWithContext(arg0 context.Context, arg1 *bedrockagentruntime.GetAgentMemoryInput, arg2 ...request.Option) (*bedrockagentruntime.GetAgentMemoryOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAgentMemoryWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagentruntime.GetAgentMemoryOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAgentMemoryWithContext indicates an expected call of GetAgentMemoryWithContext
+func (mr *MockBedrockAgentRuntimeAPIMockRecorder) GetAgentMemoryWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAgentMemoryWithContext", reflect.TypeOf((*MockBedrockAgentRuntimeAPI)(nil).GetAgentMemoryWithContext), varargs...)
+}
+
 // InvokeAgent mocks base method
 func (m *MockBedrockAgentRuntimeAPI) InvokeAgent(arg0 *bedrockagentruntime.InvokeAgentInput) (*bedrockagentruntime.InvokeAgentOutput, error) {
 	m.ctrl.T.Helper()
@@ -83,6 +216,56 @@ func (mr *MockBedrockAgentRuntimeAPIMockRecorder) InvokeAgentWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeAgentWithContext", reflect.TypeOf((*MockBedrockAgentRuntimeAPI)(nil).InvokeAgentWithContext), varargs...)
+}
+
+// InvokeFlow mocks base method
+func (m *MockBedrockAgentRuntimeAPI) InvokeFlow(arg0 *bedrockagentruntime.InvokeFlowInput) (*bedrockagentruntime.InvokeFlowOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "InvokeFlow", arg0)
+	ret0, _ := ret[0].(*bedrockagentruntime.InvokeFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// InvokeFlow indicates an expected call of InvokeFlow
+func (mr *MockBedrockAgentRuntimeAPIMockRecorder) InvokeFlow(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeFlow", reflect.TypeOf((*MockBedrockAgentRuntimeAPI)(nil).InvokeFlow), arg0)
+}
+
+// InvokeFlowRequest mocks base method
+func (m *MockBedrockAgentRuntimeAPI) InvokeFlowRequest(arg0 *bedrockagentruntime.InvokeFlowInput) (*request.Request, *bedrockagentruntime.InvokeFlowOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "InvokeFlowRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*bedrockagentruntime.InvokeFlowOutput)
+	return ret0, ret1
+}
+
+// InvokeFlowRequest indicates an expected call of InvokeFlowRequest
+func (mr *MockBedrockAgentRuntimeAPIMockRecorder) InvokeFlowRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeFlowRequest", reflect.TypeOf((*MockBedrockAgentRuntimeAPI)(nil).InvokeFlowRequest), arg0)
+}
+
+// InvokeFlowWithContext mocks base method
+func (m *MockBedrockAgentRuntimeAPI) InvokeFlowWithContext(arg0 context.Context, arg1 *bedrockagentruntime.InvokeFlowInput, arg2 ...request.Option) (*bedrockagentruntime.InvokeFlowOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "InvokeFlowWithContext", varargs...)
+	ret0, _ := ret[0].(*bedrockagentruntime.InvokeFlowOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// InvokeFlowWithContext indicates an expected call of InvokeFlowWithContext
+func (mr *MockBedrockAgentRuntimeAPIMockRecorder) InvokeFlowWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "InvokeFlowWithContext", reflect.TypeOf((*MockBedrockAgentRuntimeAPI)(nil).InvokeFlowWithContext), varargs...)
 }
 
 // Retrieve mocks base method
