@@ -185,6 +185,56 @@ func (mr *MockARCZonalShiftAPIMockRecorder) DeletePracticeRunConfigurationWithCo
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeletePracticeRunConfigurationWithContext", reflect.TypeOf((*MockARCZonalShiftAPI)(nil).DeletePracticeRunConfigurationWithContext), varargs...)
 }
 
+// GetAutoshiftObserverNotificationStatus mocks base method
+func (m *MockARCZonalShiftAPI) GetAutoshiftObserverNotificationStatus(arg0 *arczonalshift.GetAutoshiftObserverNotificationStatusInput) (*arczonalshift.GetAutoshiftObserverNotificationStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAutoshiftObserverNotificationStatus", arg0)
+	ret0, _ := ret[0].(*arczonalshift.GetAutoshiftObserverNotificationStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAutoshiftObserverNotificationStatus indicates an expected call of GetAutoshiftObserverNotificationStatus
+func (mr *MockARCZonalShiftAPIMockRecorder) GetAutoshiftObserverNotificationStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutoshiftObserverNotificationStatus", reflect.TypeOf((*MockARCZonalShiftAPI)(nil).GetAutoshiftObserverNotificationStatus), arg0)
+}
+
+// GetAutoshiftObserverNotificationStatusRequest mocks base method
+func (m *MockARCZonalShiftAPI) GetAutoshiftObserverNotificationStatusRequest(arg0 *arczonalshift.GetAutoshiftObserverNotificationStatusInput) (*request.Request, *arczonalshift.GetAutoshiftObserverNotificationStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAutoshiftObserverNotificationStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*arczonalshift.GetAutoshiftObserverNotificationStatusOutput)
+	return ret0, ret1
+}
+
+// GetAutoshiftObserverNotificationStatusRequest indicates an expected call of GetAutoshiftObserverNotificationStatusRequest
+func (mr *MockARCZonalShiftAPIMockRecorder) GetAutoshiftObserverNotificationStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutoshiftObserverNotificationStatusRequest", reflect.TypeOf((*MockARCZonalShiftAPI)(nil).GetAutoshiftObserverNotificationStatusRequest), arg0)
+}
+
+// GetAutoshiftObserverNotificationStatusWithContext mocks base method
+func (m *MockARCZonalShiftAPI) GetAutoshiftObserverNotificationStatusWithContext(arg0 context.Context, arg1 *arczonalshift.GetAutoshiftObserverNotificationStatusInput, arg2 ...request.Option) (*arczonalshift.GetAutoshiftObserverNotificationStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAutoshiftObserverNotificationStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*arczonalshift.GetAutoshiftObserverNotificationStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAutoshiftObserverNotificationStatusWithContext indicates an expected call of GetAutoshiftObserverNotificationStatusWithContext
+func (mr *MockARCZonalShiftAPIMockRecorder) GetAutoshiftObserverNotificationStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAutoshiftObserverNotificationStatusWithContext", reflect.TypeOf((*MockARCZonalShiftAPI)(nil).GetAutoshiftObserverNotificationStatusWithContext), varargs...)
+}
+
 // GetManagedResource mocks base method
 func (m *MockARCZonalShiftAPI) GetManagedResource(arg0 *arczonalshift.GetManagedResourceInput) (*arczonalshift.GetManagedResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -532,6 +582,56 @@ func (mr *MockARCZonalShiftAPIMockRecorder) StartZonalShiftWithContext(arg0, arg
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StartZonalShiftWithContext", reflect.TypeOf((*MockARCZonalShiftAPI)(nil).StartZonalShiftWithContext), varargs...)
+}
+
+// UpdateAutoshiftObserverNotificationStatus mocks base method
+func (m *MockARCZonalShiftAPI) UpdateAutoshiftObserverNotificationStatus(arg0 *arczonalshift.UpdateAutoshiftObserverNotificationStatusInput) (*arczonalshift.UpdateAutoshiftObserverNotificationStatusOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAutoshiftObserverNotificationStatus", arg0)
+	ret0, _ := ret[0].(*arczonalshift.UpdateAutoshiftObserverNotificationStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAutoshiftObserverNotificationStatus indicates an expected call of UpdateAutoshiftObserverNotificationStatus
+func (mr *MockARCZonalShiftAPIMockRecorder) UpdateAutoshiftObserverNotificationStatus(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAutoshiftObserverNotificationStatus", reflect.TypeOf((*MockARCZonalShiftAPI)(nil).UpdateAutoshiftObserverNotificationStatus), arg0)
+}
+
+// UpdateAutoshiftObserverNotificationStatusRequest mocks base method
+func (m *MockARCZonalShiftAPI) UpdateAutoshiftObserverNotificationStatusRequest(arg0 *arczonalshift.UpdateAutoshiftObserverNotificationStatusInput) (*request.Request, *arczonalshift.UpdateAutoshiftObserverNotificationStatusOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAutoshiftObserverNotificationStatusRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*arczonalshift.UpdateAutoshiftObserverNotificationStatusOutput)
+	return ret0, ret1
+}
+
+// UpdateAutoshiftObserverNotificationStatusRequest indicates an expected call of UpdateAutoshiftObserverNotificationStatusRequest
+func (mr *MockARCZonalShiftAPIMockRecorder) UpdateAutoshiftObserverNotificationStatusRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAutoshiftObserverNotificationStatusRequest", reflect.TypeOf((*MockARCZonalShiftAPI)(nil).UpdateAutoshiftObserverNotificationStatusRequest), arg0)
+}
+
+// UpdateAutoshiftObserverNotificationStatusWithContext mocks base method
+func (m *MockARCZonalShiftAPI) UpdateAutoshiftObserverNotificationStatusWithContext(arg0 context.Context, arg1 *arczonalshift.UpdateAutoshiftObserverNotificationStatusInput, arg2 ...request.Option) (*arczonalshift.UpdateAutoshiftObserverNotificationStatusOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAutoshiftObserverNotificationStatusWithContext", varargs...)
+	ret0, _ := ret[0].(*arczonalshift.UpdateAutoshiftObserverNotificationStatusOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAutoshiftObserverNotificationStatusWithContext indicates an expected call of UpdateAutoshiftObserverNotificationStatusWithContext
+func (mr *MockARCZonalShiftAPIMockRecorder) UpdateAutoshiftObserverNotificationStatusWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAutoshiftObserverNotificationStatusWithContext", reflect.TypeOf((*MockARCZonalShiftAPI)(nil).UpdateAutoshiftObserverNotificationStatusWithContext), varargs...)
 }
 
 // UpdatePracticeRunConfiguration mocks base method
