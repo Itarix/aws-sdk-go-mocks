@@ -10236,6 +10236,89 @@ func (mr *MockConnectAPIMockRecorder) ResumeContactWithContext(arg0, arg1 interf
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ResumeContactWithContext", reflect.TypeOf((*MockConnectAPI)(nil).ResumeContactWithContext), varargs...)
 }
 
+// SearchAgentStatuses mocks base method
+func (m *MockConnectAPI) SearchAgentStatuses(arg0 *connect.SearchAgentStatusesInput) (*connect.SearchAgentStatusesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchAgentStatuses", arg0)
+	ret0, _ := ret[0].(*connect.SearchAgentStatusesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchAgentStatuses indicates an expected call of SearchAgentStatuses
+func (mr *MockConnectAPIMockRecorder) SearchAgentStatuses(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAgentStatuses", reflect.TypeOf((*MockConnectAPI)(nil).SearchAgentStatuses), arg0)
+}
+
+// SearchAgentStatusesPages mocks base method
+func (m *MockConnectAPI) SearchAgentStatusesPages(arg0 *connect.SearchAgentStatusesInput, arg1 func(*connect.SearchAgentStatusesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchAgentStatusesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchAgentStatusesPages indicates an expected call of SearchAgentStatusesPages
+func (mr *MockConnectAPIMockRecorder) SearchAgentStatusesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAgentStatusesPages", reflect.TypeOf((*MockConnectAPI)(nil).SearchAgentStatusesPages), arg0, arg1)
+}
+
+// SearchAgentStatusesPagesWithContext mocks base method
+func (m *MockConnectAPI) SearchAgentStatusesPagesWithContext(arg0 context.Context, arg1 *connect.SearchAgentStatusesInput, arg2 func(*connect.SearchAgentStatusesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchAgentStatusesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchAgentStatusesPagesWithContext indicates an expected call of SearchAgentStatusesPagesWithContext
+func (mr *MockConnectAPIMockRecorder) SearchAgentStatusesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAgentStatusesPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchAgentStatusesPagesWithContext), varargs...)
+}
+
+// SearchAgentStatusesRequest mocks base method
+func (m *MockConnectAPI) SearchAgentStatusesRequest(arg0 *connect.SearchAgentStatusesInput) (*request.Request, *connect.SearchAgentStatusesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchAgentStatusesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.SearchAgentStatusesOutput)
+	return ret0, ret1
+}
+
+// SearchAgentStatusesRequest indicates an expected call of SearchAgentStatusesRequest
+func (mr *MockConnectAPIMockRecorder) SearchAgentStatusesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAgentStatusesRequest", reflect.TypeOf((*MockConnectAPI)(nil).SearchAgentStatusesRequest), arg0)
+}
+
+// SearchAgentStatusesWithContext mocks base method
+func (m *MockConnectAPI) SearchAgentStatusesWithContext(arg0 context.Context, arg1 *connect.SearchAgentStatusesInput, arg2 ...request.Option) (*connect.SearchAgentStatusesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchAgentStatusesWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.SearchAgentStatusesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchAgentStatusesWithContext indicates an expected call of SearchAgentStatusesWithContext
+func (mr *MockConnectAPIMockRecorder) SearchAgentStatusesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchAgentStatusesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchAgentStatusesWithContext), varargs...)
+}
+
 // SearchAvailablePhoneNumbers mocks base method
 func (m *MockConnectAPI) SearchAvailablePhoneNumbers(arg0 *connect.SearchAvailablePhoneNumbersInput) (*connect.SearchAvailablePhoneNumbersOutput, error) {
 	m.ctrl.T.Helper()
@@ -11230,6 +11313,89 @@ func (mr *MockConnectAPIMockRecorder) SearchSecurityProfilesWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchSecurityProfilesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchSecurityProfilesWithContext), varargs...)
+}
+
+// SearchUserHierarchyGroups mocks base method
+func (m *MockConnectAPI) SearchUserHierarchyGroups(arg0 *connect.SearchUserHierarchyGroupsInput) (*connect.SearchUserHierarchyGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchUserHierarchyGroups", arg0)
+	ret0, _ := ret[0].(*connect.SearchUserHierarchyGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchUserHierarchyGroups indicates an expected call of SearchUserHierarchyGroups
+func (mr *MockConnectAPIMockRecorder) SearchUserHierarchyGroups(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUserHierarchyGroups", reflect.TypeOf((*MockConnectAPI)(nil).SearchUserHierarchyGroups), arg0)
+}
+
+// SearchUserHierarchyGroupsPages mocks base method
+func (m *MockConnectAPI) SearchUserHierarchyGroupsPages(arg0 *connect.SearchUserHierarchyGroupsInput, arg1 func(*connect.SearchUserHierarchyGroupsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchUserHierarchyGroupsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchUserHierarchyGroupsPages indicates an expected call of SearchUserHierarchyGroupsPages
+func (mr *MockConnectAPIMockRecorder) SearchUserHierarchyGroupsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUserHierarchyGroupsPages", reflect.TypeOf((*MockConnectAPI)(nil).SearchUserHierarchyGroupsPages), arg0, arg1)
+}
+
+// SearchUserHierarchyGroupsPagesWithContext mocks base method
+func (m *MockConnectAPI) SearchUserHierarchyGroupsPagesWithContext(arg0 context.Context, arg1 *connect.SearchUserHierarchyGroupsInput, arg2 func(*connect.SearchUserHierarchyGroupsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchUserHierarchyGroupsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// SearchUserHierarchyGroupsPagesWithContext indicates an expected call of SearchUserHierarchyGroupsPagesWithContext
+func (mr *MockConnectAPIMockRecorder) SearchUserHierarchyGroupsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUserHierarchyGroupsPagesWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchUserHierarchyGroupsPagesWithContext), varargs...)
+}
+
+// SearchUserHierarchyGroupsRequest mocks base method
+func (m *MockConnectAPI) SearchUserHierarchyGroupsRequest(arg0 *connect.SearchUserHierarchyGroupsInput) (*request.Request, *connect.SearchUserHierarchyGroupsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SearchUserHierarchyGroupsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*connect.SearchUserHierarchyGroupsOutput)
+	return ret0, ret1
+}
+
+// SearchUserHierarchyGroupsRequest indicates an expected call of SearchUserHierarchyGroupsRequest
+func (mr *MockConnectAPIMockRecorder) SearchUserHierarchyGroupsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUserHierarchyGroupsRequest", reflect.TypeOf((*MockConnectAPI)(nil).SearchUserHierarchyGroupsRequest), arg0)
+}
+
+// SearchUserHierarchyGroupsWithContext mocks base method
+func (m *MockConnectAPI) SearchUserHierarchyGroupsWithContext(arg0 context.Context, arg1 *connect.SearchUserHierarchyGroupsInput, arg2 ...request.Option) (*connect.SearchUserHierarchyGroupsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "SearchUserHierarchyGroupsWithContext", varargs...)
+	ret0, _ := ret[0].(*connect.SearchUserHierarchyGroupsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// SearchUserHierarchyGroupsWithContext indicates an expected call of SearchUserHierarchyGroupsWithContext
+func (mr *MockConnectAPIMockRecorder) SearchUserHierarchyGroupsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SearchUserHierarchyGroupsWithContext", reflect.TypeOf((*MockConnectAPI)(nil).SearchUserHierarchyGroupsWithContext), varargs...)
 }
 
 // SearchUsers mocks base method
