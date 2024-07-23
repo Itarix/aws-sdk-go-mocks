@@ -300,6 +300,56 @@ func (mr *MockDataZoneAPIMockRecorder) CreateAsset(arg0 interface{}) *gomock.Cal
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAsset", reflect.TypeOf((*MockDataZoneAPI)(nil).CreateAsset), arg0)
 }
 
+// CreateAssetFilter mocks base method
+func (m *MockDataZoneAPI) CreateAssetFilter(arg0 *datazone.CreateAssetFilterInput) (*datazone.CreateAssetFilterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAssetFilter", arg0)
+	ret0, _ := ret[0].(*datazone.CreateAssetFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAssetFilter indicates an expected call of CreateAssetFilter
+func (mr *MockDataZoneAPIMockRecorder) CreateAssetFilter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAssetFilter", reflect.TypeOf((*MockDataZoneAPI)(nil).CreateAssetFilter), arg0)
+}
+
+// CreateAssetFilterRequest mocks base method
+func (m *MockDataZoneAPI) CreateAssetFilterRequest(arg0 *datazone.CreateAssetFilterInput) (*request.Request, *datazone.CreateAssetFilterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateAssetFilterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datazone.CreateAssetFilterOutput)
+	return ret0, ret1
+}
+
+// CreateAssetFilterRequest indicates an expected call of CreateAssetFilterRequest
+func (mr *MockDataZoneAPIMockRecorder) CreateAssetFilterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAssetFilterRequest", reflect.TypeOf((*MockDataZoneAPI)(nil).CreateAssetFilterRequest), arg0)
+}
+
+// CreateAssetFilterWithContext mocks base method
+func (m *MockDataZoneAPI) CreateAssetFilterWithContext(arg0 context.Context, arg1 *datazone.CreateAssetFilterInput, arg2 ...request.Option) (*datazone.CreateAssetFilterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateAssetFilterWithContext", varargs...)
+	ret0, _ := ret[0].(*datazone.CreateAssetFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateAssetFilterWithContext indicates an expected call of CreateAssetFilterWithContext
+func (mr *MockDataZoneAPIMockRecorder) CreateAssetFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateAssetFilterWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).CreateAssetFilterWithContext), varargs...)
+}
+
 // CreateAssetRequest mocks base method
 func (m *MockDataZoneAPI) CreateAssetRequest(arg0 *datazone.CreateAssetInput) (*request.Request, *datazone.CreateAssetOutput) {
 	m.ctrl.T.Helper()
@@ -1250,6 +1300,56 @@ func (mr *MockDataZoneAPIMockRecorder) DeleteAsset(arg0 interface{}) *gomock.Cal
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAsset", reflect.TypeOf((*MockDataZoneAPI)(nil).DeleteAsset), arg0)
 }
 
+// DeleteAssetFilter mocks base method
+func (m *MockDataZoneAPI) DeleteAssetFilter(arg0 *datazone.DeleteAssetFilterInput) (*datazone.DeleteAssetFilterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAssetFilter", arg0)
+	ret0, _ := ret[0].(*datazone.DeleteAssetFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAssetFilter indicates an expected call of DeleteAssetFilter
+func (mr *MockDataZoneAPIMockRecorder) DeleteAssetFilter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAssetFilter", reflect.TypeOf((*MockDataZoneAPI)(nil).DeleteAssetFilter), arg0)
+}
+
+// DeleteAssetFilterRequest mocks base method
+func (m *MockDataZoneAPI) DeleteAssetFilterRequest(arg0 *datazone.DeleteAssetFilterInput) (*request.Request, *datazone.DeleteAssetFilterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteAssetFilterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datazone.DeleteAssetFilterOutput)
+	return ret0, ret1
+}
+
+// DeleteAssetFilterRequest indicates an expected call of DeleteAssetFilterRequest
+func (mr *MockDataZoneAPIMockRecorder) DeleteAssetFilterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAssetFilterRequest", reflect.TypeOf((*MockDataZoneAPI)(nil).DeleteAssetFilterRequest), arg0)
+}
+
+// DeleteAssetFilterWithContext mocks base method
+func (m *MockDataZoneAPI) DeleteAssetFilterWithContext(arg0 context.Context, arg1 *datazone.DeleteAssetFilterInput, arg2 ...request.Option) (*datazone.DeleteAssetFilterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteAssetFilterWithContext", varargs...)
+	ret0, _ := ret[0].(*datazone.DeleteAssetFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteAssetFilterWithContext indicates an expected call of DeleteAssetFilterWithContext
+func (mr *MockDataZoneAPIMockRecorder) DeleteAssetFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAssetFilterWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).DeleteAssetFilterWithContext), varargs...)
+}
+
 // DeleteAssetRequest mocks base method
 func (m *MockDataZoneAPI) DeleteAssetRequest(arg0 *datazone.DeleteAssetInput) (*request.Request, *datazone.DeleteAssetOutput) {
 	m.ctrl.T.Helper()
@@ -2198,6 +2298,56 @@ func (m *MockDataZoneAPI) GetAsset(arg0 *datazone.GetAssetInput) (*datazone.GetA
 func (mr *MockDataZoneAPIMockRecorder) GetAsset(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAsset", reflect.TypeOf((*MockDataZoneAPI)(nil).GetAsset), arg0)
+}
+
+// GetAssetFilter mocks base method
+func (m *MockDataZoneAPI) GetAssetFilter(arg0 *datazone.GetAssetFilterInput) (*datazone.GetAssetFilterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAssetFilter", arg0)
+	ret0, _ := ret[0].(*datazone.GetAssetFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAssetFilter indicates an expected call of GetAssetFilter
+func (mr *MockDataZoneAPIMockRecorder) GetAssetFilter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssetFilter", reflect.TypeOf((*MockDataZoneAPI)(nil).GetAssetFilter), arg0)
+}
+
+// GetAssetFilterRequest mocks base method
+func (m *MockDataZoneAPI) GetAssetFilterRequest(arg0 *datazone.GetAssetFilterInput) (*request.Request, *datazone.GetAssetFilterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAssetFilterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datazone.GetAssetFilterOutput)
+	return ret0, ret1
+}
+
+// GetAssetFilterRequest indicates an expected call of GetAssetFilterRequest
+func (mr *MockDataZoneAPIMockRecorder) GetAssetFilterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssetFilterRequest", reflect.TypeOf((*MockDataZoneAPI)(nil).GetAssetFilterRequest), arg0)
+}
+
+// GetAssetFilterWithContext mocks base method
+func (m *MockDataZoneAPI) GetAssetFilterWithContext(arg0 context.Context, arg1 *datazone.GetAssetFilterInput, arg2 ...request.Option) (*datazone.GetAssetFilterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetAssetFilterWithContext", varargs...)
+	ret0, _ := ret[0].(*datazone.GetAssetFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAssetFilterWithContext indicates an expected call of GetAssetFilterWithContext
+func (mr *MockDataZoneAPIMockRecorder) GetAssetFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAssetFilterWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).GetAssetFilterWithContext), varargs...)
 }
 
 // GetAssetRequest mocks base method
@@ -3433,6 +3583,89 @@ func (mr *MockDataZoneAPIMockRecorder) GetUserProfileWithContext(arg0, arg1 inte
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUserProfileWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).GetUserProfileWithContext), varargs...)
+}
+
+// ListAssetFilters mocks base method
+func (m *MockDataZoneAPI) ListAssetFilters(arg0 *datazone.ListAssetFiltersInput) (*datazone.ListAssetFiltersOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetFilters", arg0)
+	ret0, _ := ret[0].(*datazone.ListAssetFiltersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssetFilters indicates an expected call of ListAssetFilters
+func (mr *MockDataZoneAPIMockRecorder) ListAssetFilters(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetFilters", reflect.TypeOf((*MockDataZoneAPI)(nil).ListAssetFilters), arg0)
+}
+
+// ListAssetFiltersPages mocks base method
+func (m *MockDataZoneAPI) ListAssetFiltersPages(arg0 *datazone.ListAssetFiltersInput, arg1 func(*datazone.ListAssetFiltersOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetFiltersPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssetFiltersPages indicates an expected call of ListAssetFiltersPages
+func (mr *MockDataZoneAPIMockRecorder) ListAssetFiltersPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetFiltersPages", reflect.TypeOf((*MockDataZoneAPI)(nil).ListAssetFiltersPages), arg0, arg1)
+}
+
+// ListAssetFiltersPagesWithContext mocks base method
+func (m *MockDataZoneAPI) ListAssetFiltersPagesWithContext(arg0 context.Context, arg1 *datazone.ListAssetFiltersInput, arg2 func(*datazone.ListAssetFiltersOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssetFiltersPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListAssetFiltersPagesWithContext indicates an expected call of ListAssetFiltersPagesWithContext
+func (mr *MockDataZoneAPIMockRecorder) ListAssetFiltersPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetFiltersPagesWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).ListAssetFiltersPagesWithContext), varargs...)
+}
+
+// ListAssetFiltersRequest mocks base method
+func (m *MockDataZoneAPI) ListAssetFiltersRequest(arg0 *datazone.ListAssetFiltersInput) (*request.Request, *datazone.ListAssetFiltersOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListAssetFiltersRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datazone.ListAssetFiltersOutput)
+	return ret0, ret1
+}
+
+// ListAssetFiltersRequest indicates an expected call of ListAssetFiltersRequest
+func (mr *MockDataZoneAPIMockRecorder) ListAssetFiltersRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetFiltersRequest", reflect.TypeOf((*MockDataZoneAPI)(nil).ListAssetFiltersRequest), arg0)
+}
+
+// ListAssetFiltersWithContext mocks base method
+func (m *MockDataZoneAPI) ListAssetFiltersWithContext(arg0 context.Context, arg1 *datazone.ListAssetFiltersInput, arg2 ...request.Option) (*datazone.ListAssetFiltersOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListAssetFiltersWithContext", varargs...)
+	ret0, _ := ret[0].(*datazone.ListAssetFiltersOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListAssetFiltersWithContext indicates an expected call of ListAssetFiltersWithContext
+func (mr *MockDataZoneAPIMockRecorder) ListAssetFiltersWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListAssetFiltersWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).ListAssetFiltersWithContext), varargs...)
 }
 
 // ListAssetRevisions mocks base method
@@ -6058,6 +6291,56 @@ func (mr *MockDataZoneAPIMockRecorder) UntagResourceWithContext(arg0, arg1 inter
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UntagResourceWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).UntagResourceWithContext), varargs...)
+}
+
+// UpdateAssetFilter mocks base method
+func (m *MockDataZoneAPI) UpdateAssetFilter(arg0 *datazone.UpdateAssetFilterInput) (*datazone.UpdateAssetFilterOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAssetFilter", arg0)
+	ret0, _ := ret[0].(*datazone.UpdateAssetFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAssetFilter indicates an expected call of UpdateAssetFilter
+func (mr *MockDataZoneAPIMockRecorder) UpdateAssetFilter(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAssetFilter", reflect.TypeOf((*MockDataZoneAPI)(nil).UpdateAssetFilter), arg0)
+}
+
+// UpdateAssetFilterRequest mocks base method
+func (m *MockDataZoneAPI) UpdateAssetFilterRequest(arg0 *datazone.UpdateAssetFilterInput) (*request.Request, *datazone.UpdateAssetFilterOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateAssetFilterRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datazone.UpdateAssetFilterOutput)
+	return ret0, ret1
+}
+
+// UpdateAssetFilterRequest indicates an expected call of UpdateAssetFilterRequest
+func (mr *MockDataZoneAPIMockRecorder) UpdateAssetFilterRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAssetFilterRequest", reflect.TypeOf((*MockDataZoneAPI)(nil).UpdateAssetFilterRequest), arg0)
+}
+
+// UpdateAssetFilterWithContext mocks base method
+func (m *MockDataZoneAPI) UpdateAssetFilterWithContext(arg0 context.Context, arg1 *datazone.UpdateAssetFilterInput, arg2 ...request.Option) (*datazone.UpdateAssetFilterOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateAssetFilterWithContext", varargs...)
+	ret0, _ := ret[0].(*datazone.UpdateAssetFilterOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateAssetFilterWithContext indicates an expected call of UpdateAssetFilterWithContext
+func (mr *MockDataZoneAPIMockRecorder) UpdateAssetFilterWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateAssetFilterWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).UpdateAssetFilterWithContext), varargs...)
 }
 
 // UpdateDataSource mocks base method
