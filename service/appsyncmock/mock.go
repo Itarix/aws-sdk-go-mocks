@@ -1950,6 +1950,39 @@ func (mr *MockAppSyncAPIMockRecorder) ListApiKeys(arg0 interface{}) *gomock.Call
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApiKeys", reflect.TypeOf((*MockAppSyncAPI)(nil).ListApiKeys), arg0)
 }
 
+// ListApiKeysPages mocks base method
+func (m *MockAppSyncAPI) ListApiKeysPages(arg0 *appsync.ListApiKeysInput, arg1 func(*appsync.ListApiKeysOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListApiKeysPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApiKeysPages indicates an expected call of ListApiKeysPages
+func (mr *MockAppSyncAPIMockRecorder) ListApiKeysPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApiKeysPages", reflect.TypeOf((*MockAppSyncAPI)(nil).ListApiKeysPages), arg0, arg1)
+}
+
+// ListApiKeysPagesWithContext mocks base method
+func (m *MockAppSyncAPI) ListApiKeysPagesWithContext(arg0 context.Context, arg1 *appsync.ListApiKeysInput, arg2 func(*appsync.ListApiKeysOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListApiKeysPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListApiKeysPagesWithContext indicates an expected call of ListApiKeysPagesWithContext
+func (mr *MockAppSyncAPIMockRecorder) ListApiKeysPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListApiKeysPagesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListApiKeysPagesWithContext), varargs...)
+}
+
 // ListApiKeysRequest mocks base method
 func (m *MockAppSyncAPI) ListApiKeysRequest(arg0 *appsync.ListApiKeysInput) (*request.Request, *appsync.ListApiKeysOutput) {
 	m.ctrl.T.Helper()
@@ -1998,6 +2031,39 @@ func (m *MockAppSyncAPI) ListDataSources(arg0 *appsync.ListDataSourcesInput) (*a
 func (mr *MockAppSyncAPIMockRecorder) ListDataSources(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataSources", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDataSources), arg0)
+}
+
+// ListDataSourcesPages mocks base method
+func (m *MockAppSyncAPI) ListDataSourcesPages(arg0 *appsync.ListDataSourcesInput, arg1 func(*appsync.ListDataSourcesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDataSourcesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDataSourcesPages indicates an expected call of ListDataSourcesPages
+func (mr *MockAppSyncAPIMockRecorder) ListDataSourcesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataSourcesPages", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDataSourcesPages), arg0, arg1)
+}
+
+// ListDataSourcesPagesWithContext mocks base method
+func (m *MockAppSyncAPI) ListDataSourcesPagesWithContext(arg0 context.Context, arg1 *appsync.ListDataSourcesInput, arg2 func(*appsync.ListDataSourcesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDataSourcesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDataSourcesPagesWithContext indicates an expected call of ListDataSourcesPagesWithContext
+func (mr *MockAppSyncAPIMockRecorder) ListDataSourcesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDataSourcesPagesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDataSourcesPagesWithContext), varargs...)
 }
 
 // ListDataSourcesRequest mocks base method
@@ -2050,6 +2116,39 @@ func (mr *MockAppSyncAPIMockRecorder) ListDomainNames(arg0 interface{}) *gomock.
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainNames", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDomainNames), arg0)
 }
 
+// ListDomainNamesPages mocks base method
+func (m *MockAppSyncAPI) ListDomainNamesPages(arg0 *appsync.ListDomainNamesInput, arg1 func(*appsync.ListDomainNamesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListDomainNamesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDomainNamesPages indicates an expected call of ListDomainNamesPages
+func (mr *MockAppSyncAPIMockRecorder) ListDomainNamesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainNamesPages", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDomainNamesPages), arg0, arg1)
+}
+
+// ListDomainNamesPagesWithContext mocks base method
+func (m *MockAppSyncAPI) ListDomainNamesPagesWithContext(arg0 context.Context, arg1 *appsync.ListDomainNamesInput, arg2 func(*appsync.ListDomainNamesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListDomainNamesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListDomainNamesPagesWithContext indicates an expected call of ListDomainNamesPagesWithContext
+func (mr *MockAppSyncAPIMockRecorder) ListDomainNamesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListDomainNamesPagesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListDomainNamesPagesWithContext), varargs...)
+}
+
 // ListDomainNamesRequest mocks base method
 func (m *MockAppSyncAPI) ListDomainNamesRequest(arg0 *appsync.ListDomainNamesInput) (*request.Request, *appsync.ListDomainNamesOutput) {
 	m.ctrl.T.Helper()
@@ -2100,6 +2199,39 @@ func (mr *MockAppSyncAPIMockRecorder) ListFunctions(arg0 interface{}) *gomock.Ca
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctions", reflect.TypeOf((*MockAppSyncAPI)(nil).ListFunctions), arg0)
 }
 
+// ListFunctionsPages mocks base method
+func (m *MockAppSyncAPI) ListFunctionsPages(arg0 *appsync.ListFunctionsInput, arg1 func(*appsync.ListFunctionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListFunctionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFunctionsPages indicates an expected call of ListFunctionsPages
+func (mr *MockAppSyncAPIMockRecorder) ListFunctionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionsPages", reflect.TypeOf((*MockAppSyncAPI)(nil).ListFunctionsPages), arg0, arg1)
+}
+
+// ListFunctionsPagesWithContext mocks base method
+func (m *MockAppSyncAPI) ListFunctionsPagesWithContext(arg0 context.Context, arg1 *appsync.ListFunctionsInput, arg2 func(*appsync.ListFunctionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListFunctionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListFunctionsPagesWithContext indicates an expected call of ListFunctionsPagesWithContext
+func (mr *MockAppSyncAPIMockRecorder) ListFunctionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListFunctionsPagesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListFunctionsPagesWithContext), varargs...)
+}
+
 // ListFunctionsRequest mocks base method
 func (m *MockAppSyncAPI) ListFunctionsRequest(arg0 *appsync.ListFunctionsInput) (*request.Request, *appsync.ListFunctionsOutput) {
 	m.ctrl.T.Helper()
@@ -2148,6 +2280,39 @@ func (m *MockAppSyncAPI) ListGraphqlApis(arg0 *appsync.ListGraphqlApisInput) (*a
 func (mr *MockAppSyncAPIMockRecorder) ListGraphqlApis(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGraphqlApis", reflect.TypeOf((*MockAppSyncAPI)(nil).ListGraphqlApis), arg0)
+}
+
+// ListGraphqlApisPages mocks base method
+func (m *MockAppSyncAPI) ListGraphqlApisPages(arg0 *appsync.ListGraphqlApisInput, arg1 func(*appsync.ListGraphqlApisOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListGraphqlApisPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGraphqlApisPages indicates an expected call of ListGraphqlApisPages
+func (mr *MockAppSyncAPIMockRecorder) ListGraphqlApisPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGraphqlApisPages", reflect.TypeOf((*MockAppSyncAPI)(nil).ListGraphqlApisPages), arg0, arg1)
+}
+
+// ListGraphqlApisPagesWithContext mocks base method
+func (m *MockAppSyncAPI) ListGraphqlApisPagesWithContext(arg0 context.Context, arg1 *appsync.ListGraphqlApisInput, arg2 func(*appsync.ListGraphqlApisOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListGraphqlApisPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListGraphqlApisPagesWithContext indicates an expected call of ListGraphqlApisPagesWithContext
+func (mr *MockAppSyncAPIMockRecorder) ListGraphqlApisPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListGraphqlApisPagesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListGraphqlApisPagesWithContext), varargs...)
 }
 
 // ListGraphqlApisRequest mocks base method
@@ -2215,6 +2380,39 @@ func (mr *MockAppSyncAPIMockRecorder) ListResolversByFunction(arg0 interface{}) 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolversByFunction", reflect.TypeOf((*MockAppSyncAPI)(nil).ListResolversByFunction), arg0)
 }
 
+// ListResolversByFunctionPages mocks base method
+func (m *MockAppSyncAPI) ListResolversByFunctionPages(arg0 *appsync.ListResolversByFunctionInput, arg1 func(*appsync.ListResolversByFunctionOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResolversByFunctionPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResolversByFunctionPages indicates an expected call of ListResolversByFunctionPages
+func (mr *MockAppSyncAPIMockRecorder) ListResolversByFunctionPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolversByFunctionPages", reflect.TypeOf((*MockAppSyncAPI)(nil).ListResolversByFunctionPages), arg0, arg1)
+}
+
+// ListResolversByFunctionPagesWithContext mocks base method
+func (m *MockAppSyncAPI) ListResolversByFunctionPagesWithContext(arg0 context.Context, arg1 *appsync.ListResolversByFunctionInput, arg2 func(*appsync.ListResolversByFunctionOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResolversByFunctionPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResolversByFunctionPagesWithContext indicates an expected call of ListResolversByFunctionPagesWithContext
+func (mr *MockAppSyncAPIMockRecorder) ListResolversByFunctionPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolversByFunctionPagesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListResolversByFunctionPagesWithContext), varargs...)
+}
+
 // ListResolversByFunctionRequest mocks base method
 func (m *MockAppSyncAPI) ListResolversByFunctionRequest(arg0 *appsync.ListResolversByFunctionInput) (*request.Request, *appsync.ListResolversByFunctionOutput) {
 	m.ctrl.T.Helper()
@@ -2248,6 +2446,39 @@ func (mr *MockAppSyncAPIMockRecorder) ListResolversByFunctionWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolversByFunctionWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListResolversByFunctionWithContext), varargs...)
+}
+
+// ListResolversPages mocks base method
+func (m *MockAppSyncAPI) ListResolversPages(arg0 *appsync.ListResolversInput, arg1 func(*appsync.ListResolversOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListResolversPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResolversPages indicates an expected call of ListResolversPages
+func (mr *MockAppSyncAPIMockRecorder) ListResolversPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolversPages", reflect.TypeOf((*MockAppSyncAPI)(nil).ListResolversPages), arg0, arg1)
+}
+
+// ListResolversPagesWithContext mocks base method
+func (m *MockAppSyncAPI) ListResolversPagesWithContext(arg0 context.Context, arg1 *appsync.ListResolversInput, arg2 func(*appsync.ListResolversOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListResolversPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListResolversPagesWithContext indicates an expected call of ListResolversPagesWithContext
+func (mr *MockAppSyncAPIMockRecorder) ListResolversPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListResolversPagesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListResolversPagesWithContext), varargs...)
 }
 
 // ListResolversRequest mocks base method
@@ -2298,6 +2529,39 @@ func (m *MockAppSyncAPI) ListSourceApiAssociations(arg0 *appsync.ListSourceApiAs
 func (mr *MockAppSyncAPIMockRecorder) ListSourceApiAssociations(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceApiAssociations", reflect.TypeOf((*MockAppSyncAPI)(nil).ListSourceApiAssociations), arg0)
+}
+
+// ListSourceApiAssociationsPages mocks base method
+func (m *MockAppSyncAPI) ListSourceApiAssociationsPages(arg0 *appsync.ListSourceApiAssociationsInput, arg1 func(*appsync.ListSourceApiAssociationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListSourceApiAssociationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSourceApiAssociationsPages indicates an expected call of ListSourceApiAssociationsPages
+func (mr *MockAppSyncAPIMockRecorder) ListSourceApiAssociationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceApiAssociationsPages", reflect.TypeOf((*MockAppSyncAPI)(nil).ListSourceApiAssociationsPages), arg0, arg1)
+}
+
+// ListSourceApiAssociationsPagesWithContext mocks base method
+func (m *MockAppSyncAPI) ListSourceApiAssociationsPagesWithContext(arg0 context.Context, arg1 *appsync.ListSourceApiAssociationsInput, arg2 func(*appsync.ListSourceApiAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListSourceApiAssociationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListSourceApiAssociationsPagesWithContext indicates an expected call of ListSourceApiAssociationsPagesWithContext
+func (mr *MockAppSyncAPIMockRecorder) ListSourceApiAssociationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListSourceApiAssociationsPagesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListSourceApiAssociationsPagesWithContext), varargs...)
 }
 
 // ListSourceApiAssociationsRequest mocks base method
@@ -2415,6 +2679,39 @@ func (mr *MockAppSyncAPIMockRecorder) ListTypesByAssociation(arg0 interface{}) *
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTypesByAssociation", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTypesByAssociation), arg0)
 }
 
+// ListTypesByAssociationPages mocks base method
+func (m *MockAppSyncAPI) ListTypesByAssociationPages(arg0 *appsync.ListTypesByAssociationInput, arg1 func(*appsync.ListTypesByAssociationOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTypesByAssociationPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTypesByAssociationPages indicates an expected call of ListTypesByAssociationPages
+func (mr *MockAppSyncAPIMockRecorder) ListTypesByAssociationPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTypesByAssociationPages", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTypesByAssociationPages), arg0, arg1)
+}
+
+// ListTypesByAssociationPagesWithContext mocks base method
+func (m *MockAppSyncAPI) ListTypesByAssociationPagesWithContext(arg0 context.Context, arg1 *appsync.ListTypesByAssociationInput, arg2 func(*appsync.ListTypesByAssociationOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTypesByAssociationPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTypesByAssociationPagesWithContext indicates an expected call of ListTypesByAssociationPagesWithContext
+func (mr *MockAppSyncAPIMockRecorder) ListTypesByAssociationPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTypesByAssociationPagesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTypesByAssociationPagesWithContext), varargs...)
+}
+
 // ListTypesByAssociationRequest mocks base method
 func (m *MockAppSyncAPI) ListTypesByAssociationRequest(arg0 *appsync.ListTypesByAssociationInput) (*request.Request, *appsync.ListTypesByAssociationOutput) {
 	m.ctrl.T.Helper()
@@ -2448,6 +2745,39 @@ func (mr *MockAppSyncAPIMockRecorder) ListTypesByAssociationWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTypesByAssociationWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTypesByAssociationWithContext), varargs...)
+}
+
+// ListTypesPages mocks base method
+func (m *MockAppSyncAPI) ListTypesPages(arg0 *appsync.ListTypesInput, arg1 func(*appsync.ListTypesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListTypesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTypesPages indicates an expected call of ListTypesPages
+func (mr *MockAppSyncAPIMockRecorder) ListTypesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTypesPages", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTypesPages), arg0, arg1)
+}
+
+// ListTypesPagesWithContext mocks base method
+func (m *MockAppSyncAPI) ListTypesPagesWithContext(arg0 context.Context, arg1 *appsync.ListTypesInput, arg2 func(*appsync.ListTypesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListTypesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListTypesPagesWithContext indicates an expected call of ListTypesPagesWithContext
+func (mr *MockAppSyncAPIMockRecorder) ListTypesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTypesPagesWithContext", reflect.TypeOf((*MockAppSyncAPI)(nil).ListTypesPagesWithContext), varargs...)
 }
 
 // ListTypesRequest mocks base method

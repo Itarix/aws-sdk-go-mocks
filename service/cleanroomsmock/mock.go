@@ -485,6 +485,56 @@ func (mr *MockCleanRoomsAPIMockRecorder) CreateConfiguredTableWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfiguredTableWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).CreateConfiguredTableWithContext), varargs...)
 }
 
+// CreateIdMappingTable mocks base method
+func (m *MockCleanRoomsAPI) CreateIdMappingTable(arg0 *cleanrooms.CreateIdMappingTableInput) (*cleanrooms.CreateIdMappingTableOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateIdMappingTable", arg0)
+	ret0, _ := ret[0].(*cleanrooms.CreateIdMappingTableOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateIdMappingTable indicates an expected call of CreateIdMappingTable
+func (mr *MockCleanRoomsAPIMockRecorder) CreateIdMappingTable(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIdMappingTable", reflect.TypeOf((*MockCleanRoomsAPI)(nil).CreateIdMappingTable), arg0)
+}
+
+// CreateIdMappingTableRequest mocks base method
+func (m *MockCleanRoomsAPI) CreateIdMappingTableRequest(arg0 *cleanrooms.CreateIdMappingTableInput) (*request.Request, *cleanrooms.CreateIdMappingTableOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateIdMappingTableRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.CreateIdMappingTableOutput)
+	return ret0, ret1
+}
+
+// CreateIdMappingTableRequest indicates an expected call of CreateIdMappingTableRequest
+func (mr *MockCleanRoomsAPIMockRecorder) CreateIdMappingTableRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIdMappingTableRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).CreateIdMappingTableRequest), arg0)
+}
+
+// CreateIdMappingTableWithContext mocks base method
+func (m *MockCleanRoomsAPI) CreateIdMappingTableWithContext(arg0 context.Context, arg1 *cleanrooms.CreateIdMappingTableInput, arg2 ...request.Option) (*cleanrooms.CreateIdMappingTableOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateIdMappingTableWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.CreateIdMappingTableOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateIdMappingTableWithContext indicates an expected call of CreateIdMappingTableWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) CreateIdMappingTableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateIdMappingTableWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).CreateIdMappingTableWithContext), varargs...)
+}
+
 // CreateMembership mocks base method
 func (m *MockCleanRoomsAPI) CreateMembership(arg0 *cleanrooms.CreateMembershipInput) (*cleanrooms.CreateMembershipOutput, error) {
 	m.ctrl.T.Helper()
@@ -883,6 +933,106 @@ func (mr *MockCleanRoomsAPIMockRecorder) DeleteConfiguredTableWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConfiguredTableWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteConfiguredTableWithContext), varargs...)
+}
+
+// DeleteIdMappingTable mocks base method
+func (m *MockCleanRoomsAPI) DeleteIdMappingTable(arg0 *cleanrooms.DeleteIdMappingTableInput) (*cleanrooms.DeleteIdMappingTableOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteIdMappingTable", arg0)
+	ret0, _ := ret[0].(*cleanrooms.DeleteIdMappingTableOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteIdMappingTable indicates an expected call of DeleteIdMappingTable
+func (mr *MockCleanRoomsAPIMockRecorder) DeleteIdMappingTable(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdMappingTable", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteIdMappingTable), arg0)
+}
+
+// DeleteIdMappingTableRequest mocks base method
+func (m *MockCleanRoomsAPI) DeleteIdMappingTableRequest(arg0 *cleanrooms.DeleteIdMappingTableInput) (*request.Request, *cleanrooms.DeleteIdMappingTableOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteIdMappingTableRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.DeleteIdMappingTableOutput)
+	return ret0, ret1
+}
+
+// DeleteIdMappingTableRequest indicates an expected call of DeleteIdMappingTableRequest
+func (mr *MockCleanRoomsAPIMockRecorder) DeleteIdMappingTableRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdMappingTableRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteIdMappingTableRequest), arg0)
+}
+
+// DeleteIdMappingTableWithContext mocks base method
+func (m *MockCleanRoomsAPI) DeleteIdMappingTableWithContext(arg0 context.Context, arg1 *cleanrooms.DeleteIdMappingTableInput, arg2 ...request.Option) (*cleanrooms.DeleteIdMappingTableOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteIdMappingTableWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.DeleteIdMappingTableOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteIdMappingTableWithContext indicates an expected call of DeleteIdMappingTableWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) DeleteIdMappingTableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdMappingTableWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteIdMappingTableWithContext), varargs...)
+}
+
+// DeleteIdNamespaceAssociation mocks base method
+func (m *MockCleanRoomsAPI) DeleteIdNamespaceAssociation(arg0 *cleanrooms.DeleteIdNamespaceAssociationInput) (*cleanrooms.DeleteIdNamespaceAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteIdNamespaceAssociation", arg0)
+	ret0, _ := ret[0].(*cleanrooms.DeleteIdNamespaceAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteIdNamespaceAssociation indicates an expected call of DeleteIdNamespaceAssociation
+func (mr *MockCleanRoomsAPIMockRecorder) DeleteIdNamespaceAssociation(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdNamespaceAssociation", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteIdNamespaceAssociation), arg0)
+}
+
+// DeleteIdNamespaceAssociationRequest mocks base method
+func (m *MockCleanRoomsAPI) DeleteIdNamespaceAssociationRequest(arg0 *cleanrooms.DeleteIdNamespaceAssociationInput) (*request.Request, *cleanrooms.DeleteIdNamespaceAssociationOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteIdNamespaceAssociationRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.DeleteIdNamespaceAssociationOutput)
+	return ret0, ret1
+}
+
+// DeleteIdNamespaceAssociationRequest indicates an expected call of DeleteIdNamespaceAssociationRequest
+func (mr *MockCleanRoomsAPIMockRecorder) DeleteIdNamespaceAssociationRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdNamespaceAssociationRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteIdNamespaceAssociationRequest), arg0)
+}
+
+// DeleteIdNamespaceAssociationWithContext mocks base method
+func (m *MockCleanRoomsAPI) DeleteIdNamespaceAssociationWithContext(arg0 context.Context, arg1 *cleanrooms.DeleteIdNamespaceAssociationInput, arg2 ...request.Option) (*cleanrooms.DeleteIdNamespaceAssociationOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteIdNamespaceAssociationWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.DeleteIdNamespaceAssociationOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteIdNamespaceAssociationWithContext indicates an expected call of DeleteIdNamespaceAssociationWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) DeleteIdNamespaceAssociationWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteIdNamespaceAssociationWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteIdNamespaceAssociationWithContext), varargs...)
 }
 
 // DeleteMember mocks base method
@@ -1485,6 +1635,56 @@ func (mr *MockCleanRoomsAPIMockRecorder) GetConfiguredTableWithContext(arg0, arg
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfiguredTableWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetConfiguredTableWithContext), varargs...)
 }
 
+// GetIdMappingTable mocks base method
+func (m *MockCleanRoomsAPI) GetIdMappingTable(arg0 *cleanrooms.GetIdMappingTableInput) (*cleanrooms.GetIdMappingTableOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetIdMappingTable", arg0)
+	ret0, _ := ret[0].(*cleanrooms.GetIdMappingTableOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetIdMappingTable indicates an expected call of GetIdMappingTable
+func (mr *MockCleanRoomsAPIMockRecorder) GetIdMappingTable(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdMappingTable", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetIdMappingTable), arg0)
+}
+
+// GetIdMappingTableRequest mocks base method
+func (m *MockCleanRoomsAPI) GetIdMappingTableRequest(arg0 *cleanrooms.GetIdMappingTableInput) (*request.Request, *cleanrooms.GetIdMappingTableOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetIdMappingTableRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.GetIdMappingTableOutput)
+	return ret0, ret1
+}
+
+// GetIdMappingTableRequest indicates an expected call of GetIdMappingTableRequest
+func (mr *MockCleanRoomsAPIMockRecorder) GetIdMappingTableRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdMappingTableRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetIdMappingTableRequest), arg0)
+}
+
+// GetIdMappingTableWithContext mocks base method
+func (m *MockCleanRoomsAPI) GetIdMappingTableWithContext(arg0 context.Context, arg1 *cleanrooms.GetIdMappingTableInput, arg2 ...request.Option) (*cleanrooms.GetIdMappingTableOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetIdMappingTableWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.GetIdMappingTableOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetIdMappingTableWithContext indicates an expected call of GetIdMappingTableWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) GetIdMappingTableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetIdMappingTableWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetIdMappingTableWithContext), varargs...)
+}
+
 // GetMembership mocks base method
 func (m *MockCleanRoomsAPI) GetMembership(arg0 *cleanrooms.GetMembershipInput) (*cleanrooms.GetMembershipOutput, error) {
 	m.ctrl.T.Helper()
@@ -1984,6 +2184,89 @@ func (mr *MockCleanRoomsAPIMockRecorder) ListCollaborationConfiguredAudienceMode
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCollaborationConfiguredAudienceModelAssociationsWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListCollaborationConfiguredAudienceModelAssociationsWithContext), varargs...)
 }
 
+// ListCollaborationIdNamespaceAssociations mocks base method
+func (m *MockCleanRoomsAPI) ListCollaborationIdNamespaceAssociations(arg0 *cleanrooms.ListCollaborationIdNamespaceAssociationsInput) (*cleanrooms.ListCollaborationIdNamespaceAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCollaborationIdNamespaceAssociations", arg0)
+	ret0, _ := ret[0].(*cleanrooms.ListCollaborationIdNamespaceAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCollaborationIdNamespaceAssociations indicates an expected call of ListCollaborationIdNamespaceAssociations
+func (mr *MockCleanRoomsAPIMockRecorder) ListCollaborationIdNamespaceAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCollaborationIdNamespaceAssociations", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListCollaborationIdNamespaceAssociations), arg0)
+}
+
+// ListCollaborationIdNamespaceAssociationsPages mocks base method
+func (m *MockCleanRoomsAPI) ListCollaborationIdNamespaceAssociationsPages(arg0 *cleanrooms.ListCollaborationIdNamespaceAssociationsInput, arg1 func(*cleanrooms.ListCollaborationIdNamespaceAssociationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCollaborationIdNamespaceAssociationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCollaborationIdNamespaceAssociationsPages indicates an expected call of ListCollaborationIdNamespaceAssociationsPages
+func (mr *MockCleanRoomsAPIMockRecorder) ListCollaborationIdNamespaceAssociationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCollaborationIdNamespaceAssociationsPages", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListCollaborationIdNamespaceAssociationsPages), arg0, arg1)
+}
+
+// ListCollaborationIdNamespaceAssociationsPagesWithContext mocks base method
+func (m *MockCleanRoomsAPI) ListCollaborationIdNamespaceAssociationsPagesWithContext(arg0 context.Context, arg1 *cleanrooms.ListCollaborationIdNamespaceAssociationsInput, arg2 func(*cleanrooms.ListCollaborationIdNamespaceAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCollaborationIdNamespaceAssociationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListCollaborationIdNamespaceAssociationsPagesWithContext indicates an expected call of ListCollaborationIdNamespaceAssociationsPagesWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) ListCollaborationIdNamespaceAssociationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCollaborationIdNamespaceAssociationsPagesWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListCollaborationIdNamespaceAssociationsPagesWithContext), varargs...)
+}
+
+// ListCollaborationIdNamespaceAssociationsRequest mocks base method
+func (m *MockCleanRoomsAPI) ListCollaborationIdNamespaceAssociationsRequest(arg0 *cleanrooms.ListCollaborationIdNamespaceAssociationsInput) (*request.Request, *cleanrooms.ListCollaborationIdNamespaceAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListCollaborationIdNamespaceAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.ListCollaborationIdNamespaceAssociationsOutput)
+	return ret0, ret1
+}
+
+// ListCollaborationIdNamespaceAssociationsRequest indicates an expected call of ListCollaborationIdNamespaceAssociationsRequest
+func (mr *MockCleanRoomsAPIMockRecorder) ListCollaborationIdNamespaceAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCollaborationIdNamespaceAssociationsRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListCollaborationIdNamespaceAssociationsRequest), arg0)
+}
+
+// ListCollaborationIdNamespaceAssociationsWithContext mocks base method
+func (m *MockCleanRoomsAPI) ListCollaborationIdNamespaceAssociationsWithContext(arg0 context.Context, arg1 *cleanrooms.ListCollaborationIdNamespaceAssociationsInput, arg2 ...request.Option) (*cleanrooms.ListCollaborationIdNamespaceAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListCollaborationIdNamespaceAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.ListCollaborationIdNamespaceAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListCollaborationIdNamespaceAssociationsWithContext indicates an expected call of ListCollaborationIdNamespaceAssociationsWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) ListCollaborationIdNamespaceAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListCollaborationIdNamespaceAssociationsWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListCollaborationIdNamespaceAssociationsWithContext), varargs...)
+}
+
 // ListCollaborationPrivacyBudgetTemplates mocks base method
 func (m *MockCleanRoomsAPI) ListCollaborationPrivacyBudgetTemplates(arg0 *cleanrooms.ListCollaborationPrivacyBudgetTemplatesInput) (*cleanrooms.ListCollaborationPrivacyBudgetTemplatesOutput, error) {
 	m.ctrl.T.Helper()
@@ -2480,6 +2763,172 @@ func (mr *MockCleanRoomsAPIMockRecorder) ListConfiguredTablesWithContext(arg0, a
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListConfiguredTablesWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListConfiguredTablesWithContext), varargs...)
+}
+
+// ListIdMappingTables mocks base method
+func (m *MockCleanRoomsAPI) ListIdMappingTables(arg0 *cleanrooms.ListIdMappingTablesInput) (*cleanrooms.ListIdMappingTablesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIdMappingTables", arg0)
+	ret0, _ := ret[0].(*cleanrooms.ListIdMappingTablesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIdMappingTables indicates an expected call of ListIdMappingTables
+func (mr *MockCleanRoomsAPIMockRecorder) ListIdMappingTables(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingTables", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListIdMappingTables), arg0)
+}
+
+// ListIdMappingTablesPages mocks base method
+func (m *MockCleanRoomsAPI) ListIdMappingTablesPages(arg0 *cleanrooms.ListIdMappingTablesInput, arg1 func(*cleanrooms.ListIdMappingTablesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIdMappingTablesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIdMappingTablesPages indicates an expected call of ListIdMappingTablesPages
+func (mr *MockCleanRoomsAPIMockRecorder) ListIdMappingTablesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingTablesPages", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListIdMappingTablesPages), arg0, arg1)
+}
+
+// ListIdMappingTablesPagesWithContext mocks base method
+func (m *MockCleanRoomsAPI) ListIdMappingTablesPagesWithContext(arg0 context.Context, arg1 *cleanrooms.ListIdMappingTablesInput, arg2 func(*cleanrooms.ListIdMappingTablesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIdMappingTablesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIdMappingTablesPagesWithContext indicates an expected call of ListIdMappingTablesPagesWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) ListIdMappingTablesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingTablesPagesWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListIdMappingTablesPagesWithContext), varargs...)
+}
+
+// ListIdMappingTablesRequest mocks base method
+func (m *MockCleanRoomsAPI) ListIdMappingTablesRequest(arg0 *cleanrooms.ListIdMappingTablesInput) (*request.Request, *cleanrooms.ListIdMappingTablesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIdMappingTablesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.ListIdMappingTablesOutput)
+	return ret0, ret1
+}
+
+// ListIdMappingTablesRequest indicates an expected call of ListIdMappingTablesRequest
+func (mr *MockCleanRoomsAPIMockRecorder) ListIdMappingTablesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingTablesRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListIdMappingTablesRequest), arg0)
+}
+
+// ListIdMappingTablesWithContext mocks base method
+func (m *MockCleanRoomsAPI) ListIdMappingTablesWithContext(arg0 context.Context, arg1 *cleanrooms.ListIdMappingTablesInput, arg2 ...request.Option) (*cleanrooms.ListIdMappingTablesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIdMappingTablesWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.ListIdMappingTablesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIdMappingTablesWithContext indicates an expected call of ListIdMappingTablesWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) ListIdMappingTablesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdMappingTablesWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListIdMappingTablesWithContext), varargs...)
+}
+
+// ListIdNamespaceAssociations mocks base method
+func (m *MockCleanRoomsAPI) ListIdNamespaceAssociations(arg0 *cleanrooms.ListIdNamespaceAssociationsInput) (*cleanrooms.ListIdNamespaceAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIdNamespaceAssociations", arg0)
+	ret0, _ := ret[0].(*cleanrooms.ListIdNamespaceAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIdNamespaceAssociations indicates an expected call of ListIdNamespaceAssociations
+func (mr *MockCleanRoomsAPIMockRecorder) ListIdNamespaceAssociations(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdNamespaceAssociations", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListIdNamespaceAssociations), arg0)
+}
+
+// ListIdNamespaceAssociationsPages mocks base method
+func (m *MockCleanRoomsAPI) ListIdNamespaceAssociationsPages(arg0 *cleanrooms.ListIdNamespaceAssociationsInput, arg1 func(*cleanrooms.ListIdNamespaceAssociationsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIdNamespaceAssociationsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIdNamespaceAssociationsPages indicates an expected call of ListIdNamespaceAssociationsPages
+func (mr *MockCleanRoomsAPIMockRecorder) ListIdNamespaceAssociationsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdNamespaceAssociationsPages", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListIdNamespaceAssociationsPages), arg0, arg1)
+}
+
+// ListIdNamespaceAssociationsPagesWithContext mocks base method
+func (m *MockCleanRoomsAPI) ListIdNamespaceAssociationsPagesWithContext(arg0 context.Context, arg1 *cleanrooms.ListIdNamespaceAssociationsInput, arg2 func(*cleanrooms.ListIdNamespaceAssociationsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIdNamespaceAssociationsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListIdNamespaceAssociationsPagesWithContext indicates an expected call of ListIdNamespaceAssociationsPagesWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) ListIdNamespaceAssociationsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdNamespaceAssociationsPagesWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListIdNamespaceAssociationsPagesWithContext), varargs...)
+}
+
+// ListIdNamespaceAssociationsRequest mocks base method
+func (m *MockCleanRoomsAPI) ListIdNamespaceAssociationsRequest(arg0 *cleanrooms.ListIdNamespaceAssociationsInput) (*request.Request, *cleanrooms.ListIdNamespaceAssociationsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListIdNamespaceAssociationsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.ListIdNamespaceAssociationsOutput)
+	return ret0, ret1
+}
+
+// ListIdNamespaceAssociationsRequest indicates an expected call of ListIdNamespaceAssociationsRequest
+func (mr *MockCleanRoomsAPIMockRecorder) ListIdNamespaceAssociationsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdNamespaceAssociationsRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListIdNamespaceAssociationsRequest), arg0)
+}
+
+// ListIdNamespaceAssociationsWithContext mocks base method
+func (m *MockCleanRoomsAPI) ListIdNamespaceAssociationsWithContext(arg0 context.Context, arg1 *cleanrooms.ListIdNamespaceAssociationsInput, arg2 ...request.Option) (*cleanrooms.ListIdNamespaceAssociationsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListIdNamespaceAssociationsWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.ListIdNamespaceAssociationsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListIdNamespaceAssociationsWithContext indicates an expected call of ListIdNamespaceAssociationsWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) ListIdNamespaceAssociationsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListIdNamespaceAssociationsWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListIdNamespaceAssociationsWithContext), varargs...)
 }
 
 // ListMembers mocks base method
@@ -3030,6 +3479,56 @@ func (mr *MockCleanRoomsAPIMockRecorder) ListTagsForResourceWithContext(arg0, ar
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListTagsForResourceWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).ListTagsForResourceWithContext), varargs...)
 }
 
+// PopulateIdMappingTable mocks base method
+func (m *MockCleanRoomsAPI) PopulateIdMappingTable(arg0 *cleanrooms.PopulateIdMappingTableInput) (*cleanrooms.PopulateIdMappingTableOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PopulateIdMappingTable", arg0)
+	ret0, _ := ret[0].(*cleanrooms.PopulateIdMappingTableOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PopulateIdMappingTable indicates an expected call of PopulateIdMappingTable
+func (mr *MockCleanRoomsAPIMockRecorder) PopulateIdMappingTable(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PopulateIdMappingTable", reflect.TypeOf((*MockCleanRoomsAPI)(nil).PopulateIdMappingTable), arg0)
+}
+
+// PopulateIdMappingTableRequest mocks base method
+func (m *MockCleanRoomsAPI) PopulateIdMappingTableRequest(arg0 *cleanrooms.PopulateIdMappingTableInput) (*request.Request, *cleanrooms.PopulateIdMappingTableOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "PopulateIdMappingTableRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.PopulateIdMappingTableOutput)
+	return ret0, ret1
+}
+
+// PopulateIdMappingTableRequest indicates an expected call of PopulateIdMappingTableRequest
+func (mr *MockCleanRoomsAPIMockRecorder) PopulateIdMappingTableRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PopulateIdMappingTableRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).PopulateIdMappingTableRequest), arg0)
+}
+
+// PopulateIdMappingTableWithContext mocks base method
+func (m *MockCleanRoomsAPI) PopulateIdMappingTableWithContext(arg0 context.Context, arg1 *cleanrooms.PopulateIdMappingTableInput, arg2 ...request.Option) (*cleanrooms.PopulateIdMappingTableOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "PopulateIdMappingTableWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.PopulateIdMappingTableOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// PopulateIdMappingTableWithContext indicates an expected call of PopulateIdMappingTableWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) PopulateIdMappingTableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "PopulateIdMappingTableWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).PopulateIdMappingTableWithContext), varargs...)
+}
+
 // PreviewPrivacyImpact mocks base method
 func (m *MockCleanRoomsAPI) PreviewPrivacyImpact(arg0 *cleanrooms.PreviewPrivacyImpactInput) (*cleanrooms.PreviewPrivacyImpactOutput, error) {
 	m.ctrl.T.Helper()
@@ -3528,6 +4027,56 @@ func (mr *MockCleanRoomsAPIMockRecorder) UpdateConfiguredTableWithContext(arg0, 
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfiguredTableWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).UpdateConfiguredTableWithContext), varargs...)
+}
+
+// UpdateIdMappingTable mocks base method
+func (m *MockCleanRoomsAPI) UpdateIdMappingTable(arg0 *cleanrooms.UpdateIdMappingTableInput) (*cleanrooms.UpdateIdMappingTableOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateIdMappingTable", arg0)
+	ret0, _ := ret[0].(*cleanrooms.UpdateIdMappingTableOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateIdMappingTable indicates an expected call of UpdateIdMappingTable
+func (mr *MockCleanRoomsAPIMockRecorder) UpdateIdMappingTable(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIdMappingTable", reflect.TypeOf((*MockCleanRoomsAPI)(nil).UpdateIdMappingTable), arg0)
+}
+
+// UpdateIdMappingTableRequest mocks base method
+func (m *MockCleanRoomsAPI) UpdateIdMappingTableRequest(arg0 *cleanrooms.UpdateIdMappingTableInput) (*request.Request, *cleanrooms.UpdateIdMappingTableOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateIdMappingTableRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.UpdateIdMappingTableOutput)
+	return ret0, ret1
+}
+
+// UpdateIdMappingTableRequest indicates an expected call of UpdateIdMappingTableRequest
+func (mr *MockCleanRoomsAPIMockRecorder) UpdateIdMappingTableRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIdMappingTableRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).UpdateIdMappingTableRequest), arg0)
+}
+
+// UpdateIdMappingTableWithContext mocks base method
+func (m *MockCleanRoomsAPI) UpdateIdMappingTableWithContext(arg0 context.Context, arg1 *cleanrooms.UpdateIdMappingTableInput, arg2 ...request.Option) (*cleanrooms.UpdateIdMappingTableOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateIdMappingTableWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.UpdateIdMappingTableOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateIdMappingTableWithContext indicates an expected call of UpdateIdMappingTableWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) UpdateIdMappingTableWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateIdMappingTableWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).UpdateIdMappingTableWithContext), varargs...)
 }
 
 // UpdateMembership mocks base method
