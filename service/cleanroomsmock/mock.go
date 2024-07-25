@@ -415,6 +415,56 @@ func (mr *MockCleanRoomsAPIMockRecorder) CreateConfiguredTableAssociation(arg0 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfiguredTableAssociation", reflect.TypeOf((*MockCleanRoomsAPI)(nil).CreateConfiguredTableAssociation), arg0)
 }
 
+// CreateConfiguredTableAssociationAnalysisRule mocks base method
+func (m *MockCleanRoomsAPI) CreateConfiguredTableAssociationAnalysisRule(arg0 *cleanrooms.CreateConfiguredTableAssociationAnalysisRuleInput) (*cleanrooms.CreateConfiguredTableAssociationAnalysisRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConfiguredTableAssociationAnalysisRule", arg0)
+	ret0, _ := ret[0].(*cleanrooms.CreateConfiguredTableAssociationAnalysisRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConfiguredTableAssociationAnalysisRule indicates an expected call of CreateConfiguredTableAssociationAnalysisRule
+func (mr *MockCleanRoomsAPIMockRecorder) CreateConfiguredTableAssociationAnalysisRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfiguredTableAssociationAnalysisRule", reflect.TypeOf((*MockCleanRoomsAPI)(nil).CreateConfiguredTableAssociationAnalysisRule), arg0)
+}
+
+// CreateConfiguredTableAssociationAnalysisRuleRequest mocks base method
+func (m *MockCleanRoomsAPI) CreateConfiguredTableAssociationAnalysisRuleRequest(arg0 *cleanrooms.CreateConfiguredTableAssociationAnalysisRuleInput) (*request.Request, *cleanrooms.CreateConfiguredTableAssociationAnalysisRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateConfiguredTableAssociationAnalysisRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.CreateConfiguredTableAssociationAnalysisRuleOutput)
+	return ret0, ret1
+}
+
+// CreateConfiguredTableAssociationAnalysisRuleRequest indicates an expected call of CreateConfiguredTableAssociationAnalysisRuleRequest
+func (mr *MockCleanRoomsAPIMockRecorder) CreateConfiguredTableAssociationAnalysisRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfiguredTableAssociationAnalysisRuleRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).CreateConfiguredTableAssociationAnalysisRuleRequest), arg0)
+}
+
+// CreateConfiguredTableAssociationAnalysisRuleWithContext mocks base method
+func (m *MockCleanRoomsAPI) CreateConfiguredTableAssociationAnalysisRuleWithContext(arg0 context.Context, arg1 *cleanrooms.CreateConfiguredTableAssociationAnalysisRuleInput, arg2 ...request.Option) (*cleanrooms.CreateConfiguredTableAssociationAnalysisRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateConfiguredTableAssociationAnalysisRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.CreateConfiguredTableAssociationAnalysisRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateConfiguredTableAssociationAnalysisRuleWithContext indicates an expected call of CreateConfiguredTableAssociationAnalysisRuleWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) CreateConfiguredTableAssociationAnalysisRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateConfiguredTableAssociationAnalysisRuleWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).CreateConfiguredTableAssociationAnalysisRuleWithContext), varargs...)
+}
+
 // CreateConfiguredTableAssociationRequest mocks base method
 func (m *MockCleanRoomsAPI) CreateConfiguredTableAssociationRequest(arg0 *cleanrooms.CreateConfiguredTableAssociationInput) (*request.Request, *cleanrooms.CreateConfiguredTableAssociationOutput) {
 	m.ctrl.T.Helper()
@@ -863,6 +913,56 @@ func (m *MockCleanRoomsAPI) DeleteConfiguredTableAssociation(arg0 *cleanrooms.De
 func (mr *MockCleanRoomsAPIMockRecorder) DeleteConfiguredTableAssociation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConfiguredTableAssociation", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteConfiguredTableAssociation), arg0)
+}
+
+// DeleteConfiguredTableAssociationAnalysisRule mocks base method
+func (m *MockCleanRoomsAPI) DeleteConfiguredTableAssociationAnalysisRule(arg0 *cleanrooms.DeleteConfiguredTableAssociationAnalysisRuleInput) (*cleanrooms.DeleteConfiguredTableAssociationAnalysisRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConfiguredTableAssociationAnalysisRule", arg0)
+	ret0, _ := ret[0].(*cleanrooms.DeleteConfiguredTableAssociationAnalysisRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConfiguredTableAssociationAnalysisRule indicates an expected call of DeleteConfiguredTableAssociationAnalysisRule
+func (mr *MockCleanRoomsAPIMockRecorder) DeleteConfiguredTableAssociationAnalysisRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConfiguredTableAssociationAnalysisRule", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteConfiguredTableAssociationAnalysisRule), arg0)
+}
+
+// DeleteConfiguredTableAssociationAnalysisRuleRequest mocks base method
+func (m *MockCleanRoomsAPI) DeleteConfiguredTableAssociationAnalysisRuleRequest(arg0 *cleanrooms.DeleteConfiguredTableAssociationAnalysisRuleInput) (*request.Request, *cleanrooms.DeleteConfiguredTableAssociationAnalysisRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteConfiguredTableAssociationAnalysisRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.DeleteConfiguredTableAssociationAnalysisRuleOutput)
+	return ret0, ret1
+}
+
+// DeleteConfiguredTableAssociationAnalysisRuleRequest indicates an expected call of DeleteConfiguredTableAssociationAnalysisRuleRequest
+func (mr *MockCleanRoomsAPIMockRecorder) DeleteConfiguredTableAssociationAnalysisRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConfiguredTableAssociationAnalysisRuleRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteConfiguredTableAssociationAnalysisRuleRequest), arg0)
+}
+
+// DeleteConfiguredTableAssociationAnalysisRuleWithContext mocks base method
+func (m *MockCleanRoomsAPI) DeleteConfiguredTableAssociationAnalysisRuleWithContext(arg0 context.Context, arg1 *cleanrooms.DeleteConfiguredTableAssociationAnalysisRuleInput, arg2 ...request.Option) (*cleanrooms.DeleteConfiguredTableAssociationAnalysisRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteConfiguredTableAssociationAnalysisRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.DeleteConfiguredTableAssociationAnalysisRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteConfiguredTableAssociationAnalysisRuleWithContext indicates an expected call of DeleteConfiguredTableAssociationAnalysisRuleWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) DeleteConfiguredTableAssociationAnalysisRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteConfiguredTableAssociationAnalysisRuleWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).DeleteConfiguredTableAssociationAnalysisRuleWithContext), varargs...)
 }
 
 // DeleteConfiguredTableAssociationRequest mocks base method
@@ -1563,6 +1663,56 @@ func (m *MockCleanRoomsAPI) GetConfiguredTableAssociation(arg0 *cleanrooms.GetCo
 func (mr *MockCleanRoomsAPIMockRecorder) GetConfiguredTableAssociation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfiguredTableAssociation", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetConfiguredTableAssociation), arg0)
+}
+
+// GetConfiguredTableAssociationAnalysisRule mocks base method
+func (m *MockCleanRoomsAPI) GetConfiguredTableAssociationAnalysisRule(arg0 *cleanrooms.GetConfiguredTableAssociationAnalysisRuleInput) (*cleanrooms.GetConfiguredTableAssociationAnalysisRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConfiguredTableAssociationAnalysisRule", arg0)
+	ret0, _ := ret[0].(*cleanrooms.GetConfiguredTableAssociationAnalysisRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConfiguredTableAssociationAnalysisRule indicates an expected call of GetConfiguredTableAssociationAnalysisRule
+func (mr *MockCleanRoomsAPIMockRecorder) GetConfiguredTableAssociationAnalysisRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfiguredTableAssociationAnalysisRule", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetConfiguredTableAssociationAnalysisRule), arg0)
+}
+
+// GetConfiguredTableAssociationAnalysisRuleRequest mocks base method
+func (m *MockCleanRoomsAPI) GetConfiguredTableAssociationAnalysisRuleRequest(arg0 *cleanrooms.GetConfiguredTableAssociationAnalysisRuleInput) (*request.Request, *cleanrooms.GetConfiguredTableAssociationAnalysisRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetConfiguredTableAssociationAnalysisRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.GetConfiguredTableAssociationAnalysisRuleOutput)
+	return ret0, ret1
+}
+
+// GetConfiguredTableAssociationAnalysisRuleRequest indicates an expected call of GetConfiguredTableAssociationAnalysisRuleRequest
+func (mr *MockCleanRoomsAPIMockRecorder) GetConfiguredTableAssociationAnalysisRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfiguredTableAssociationAnalysisRuleRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetConfiguredTableAssociationAnalysisRuleRequest), arg0)
+}
+
+// GetConfiguredTableAssociationAnalysisRuleWithContext mocks base method
+func (m *MockCleanRoomsAPI) GetConfiguredTableAssociationAnalysisRuleWithContext(arg0 context.Context, arg1 *cleanrooms.GetConfiguredTableAssociationAnalysisRuleInput, arg2 ...request.Option) (*cleanrooms.GetConfiguredTableAssociationAnalysisRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetConfiguredTableAssociationAnalysisRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.GetConfiguredTableAssociationAnalysisRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetConfiguredTableAssociationAnalysisRuleWithContext indicates an expected call of GetConfiguredTableAssociationAnalysisRuleWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) GetConfiguredTableAssociationAnalysisRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetConfiguredTableAssociationAnalysisRuleWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).GetConfiguredTableAssociationAnalysisRuleWithContext), varargs...)
 }
 
 // GetConfiguredTableAssociationRequest mocks base method
@@ -3957,6 +4107,56 @@ func (m *MockCleanRoomsAPI) UpdateConfiguredTableAssociation(arg0 *cleanrooms.Up
 func (mr *MockCleanRoomsAPIMockRecorder) UpdateConfiguredTableAssociation(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfiguredTableAssociation", reflect.TypeOf((*MockCleanRoomsAPI)(nil).UpdateConfiguredTableAssociation), arg0)
+}
+
+// UpdateConfiguredTableAssociationAnalysisRule mocks base method
+func (m *MockCleanRoomsAPI) UpdateConfiguredTableAssociationAnalysisRule(arg0 *cleanrooms.UpdateConfiguredTableAssociationAnalysisRuleInput) (*cleanrooms.UpdateConfiguredTableAssociationAnalysisRuleOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConfiguredTableAssociationAnalysisRule", arg0)
+	ret0, _ := ret[0].(*cleanrooms.UpdateConfiguredTableAssociationAnalysisRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConfiguredTableAssociationAnalysisRule indicates an expected call of UpdateConfiguredTableAssociationAnalysisRule
+func (mr *MockCleanRoomsAPIMockRecorder) UpdateConfiguredTableAssociationAnalysisRule(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfiguredTableAssociationAnalysisRule", reflect.TypeOf((*MockCleanRoomsAPI)(nil).UpdateConfiguredTableAssociationAnalysisRule), arg0)
+}
+
+// UpdateConfiguredTableAssociationAnalysisRuleRequest mocks base method
+func (m *MockCleanRoomsAPI) UpdateConfiguredTableAssociationAnalysisRuleRequest(arg0 *cleanrooms.UpdateConfiguredTableAssociationAnalysisRuleInput) (*request.Request, *cleanrooms.UpdateConfiguredTableAssociationAnalysisRuleOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateConfiguredTableAssociationAnalysisRuleRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*cleanrooms.UpdateConfiguredTableAssociationAnalysisRuleOutput)
+	return ret0, ret1
+}
+
+// UpdateConfiguredTableAssociationAnalysisRuleRequest indicates an expected call of UpdateConfiguredTableAssociationAnalysisRuleRequest
+func (mr *MockCleanRoomsAPIMockRecorder) UpdateConfiguredTableAssociationAnalysisRuleRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfiguredTableAssociationAnalysisRuleRequest", reflect.TypeOf((*MockCleanRoomsAPI)(nil).UpdateConfiguredTableAssociationAnalysisRuleRequest), arg0)
+}
+
+// UpdateConfiguredTableAssociationAnalysisRuleWithContext mocks base method
+func (m *MockCleanRoomsAPI) UpdateConfiguredTableAssociationAnalysisRuleWithContext(arg0 context.Context, arg1 *cleanrooms.UpdateConfiguredTableAssociationAnalysisRuleInput, arg2 ...request.Option) (*cleanrooms.UpdateConfiguredTableAssociationAnalysisRuleOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateConfiguredTableAssociationAnalysisRuleWithContext", varargs...)
+	ret0, _ := ret[0].(*cleanrooms.UpdateConfiguredTableAssociationAnalysisRuleOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateConfiguredTableAssociationAnalysisRuleWithContext indicates an expected call of UpdateConfiguredTableAssociationAnalysisRuleWithContext
+func (mr *MockCleanRoomsAPIMockRecorder) UpdateConfiguredTableAssociationAnalysisRuleWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateConfiguredTableAssociationAnalysisRuleWithContext", reflect.TypeOf((*MockCleanRoomsAPI)(nil).UpdateConfiguredTableAssociationAnalysisRuleWithContext), varargs...)
 }
 
 // UpdateConfiguredTableAssociationRequest mocks base method
