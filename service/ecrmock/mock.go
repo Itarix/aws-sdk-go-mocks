@@ -350,6 +350,56 @@ func (mr *MockECRAPIMockRecorder) CreateRepository(arg0 interface{}) *gomock.Cal
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRepository", reflect.TypeOf((*MockECRAPI)(nil).CreateRepository), arg0)
 }
 
+// CreateRepositoryCreationTemplate mocks base method
+func (m *MockECRAPI) CreateRepositoryCreationTemplate(arg0 *ecr.CreateRepositoryCreationTemplateInput) (*ecr.CreateRepositoryCreationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRepositoryCreationTemplate", arg0)
+	ret0, _ := ret[0].(*ecr.CreateRepositoryCreationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRepositoryCreationTemplate indicates an expected call of CreateRepositoryCreationTemplate
+func (mr *MockECRAPIMockRecorder) CreateRepositoryCreationTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRepositoryCreationTemplate", reflect.TypeOf((*MockECRAPI)(nil).CreateRepositoryCreationTemplate), arg0)
+}
+
+// CreateRepositoryCreationTemplateRequest mocks base method
+func (m *MockECRAPI) CreateRepositoryCreationTemplateRequest(arg0 *ecr.CreateRepositoryCreationTemplateInput) (*request.Request, *ecr.CreateRepositoryCreationTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "CreateRepositoryCreationTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ecr.CreateRepositoryCreationTemplateOutput)
+	return ret0, ret1
+}
+
+// CreateRepositoryCreationTemplateRequest indicates an expected call of CreateRepositoryCreationTemplateRequest
+func (mr *MockECRAPIMockRecorder) CreateRepositoryCreationTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRepositoryCreationTemplateRequest", reflect.TypeOf((*MockECRAPI)(nil).CreateRepositoryCreationTemplateRequest), arg0)
+}
+
+// CreateRepositoryCreationTemplateWithContext mocks base method
+func (m *MockECRAPI) CreateRepositoryCreationTemplateWithContext(arg0 context.Context, arg1 *ecr.CreateRepositoryCreationTemplateInput, arg2 ...request.Option) (*ecr.CreateRepositoryCreationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "CreateRepositoryCreationTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*ecr.CreateRepositoryCreationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// CreateRepositoryCreationTemplateWithContext indicates an expected call of CreateRepositoryCreationTemplateWithContext
+func (mr *MockECRAPIMockRecorder) CreateRepositoryCreationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateRepositoryCreationTemplateWithContext", reflect.TypeOf((*MockECRAPI)(nil).CreateRepositoryCreationTemplateWithContext), varargs...)
+}
+
 // CreateRepositoryRequest mocks base method
 func (m *MockECRAPI) CreateRepositoryRequest(arg0 *ecr.CreateRepositoryInput) (*request.Request, *ecr.CreateRepositoryOutput) {
 	m.ctrl.T.Helper()
@@ -548,6 +598,56 @@ func (m *MockECRAPI) DeleteRepository(arg0 *ecr.DeleteRepositoryInput) (*ecr.Del
 func (mr *MockECRAPIMockRecorder) DeleteRepository(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRepository", reflect.TypeOf((*MockECRAPI)(nil).DeleteRepository), arg0)
+}
+
+// DeleteRepositoryCreationTemplate mocks base method
+func (m *MockECRAPI) DeleteRepositoryCreationTemplate(arg0 *ecr.DeleteRepositoryCreationTemplateInput) (*ecr.DeleteRepositoryCreationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRepositoryCreationTemplate", arg0)
+	ret0, _ := ret[0].(*ecr.DeleteRepositoryCreationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRepositoryCreationTemplate indicates an expected call of DeleteRepositoryCreationTemplate
+func (mr *MockECRAPIMockRecorder) DeleteRepositoryCreationTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRepositoryCreationTemplate", reflect.TypeOf((*MockECRAPI)(nil).DeleteRepositoryCreationTemplate), arg0)
+}
+
+// DeleteRepositoryCreationTemplateRequest mocks base method
+func (m *MockECRAPI) DeleteRepositoryCreationTemplateRequest(arg0 *ecr.DeleteRepositoryCreationTemplateInput) (*request.Request, *ecr.DeleteRepositoryCreationTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DeleteRepositoryCreationTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ecr.DeleteRepositoryCreationTemplateOutput)
+	return ret0, ret1
+}
+
+// DeleteRepositoryCreationTemplateRequest indicates an expected call of DeleteRepositoryCreationTemplateRequest
+func (mr *MockECRAPIMockRecorder) DeleteRepositoryCreationTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRepositoryCreationTemplateRequest", reflect.TypeOf((*MockECRAPI)(nil).DeleteRepositoryCreationTemplateRequest), arg0)
+}
+
+// DeleteRepositoryCreationTemplateWithContext mocks base method
+func (m *MockECRAPI) DeleteRepositoryCreationTemplateWithContext(arg0 context.Context, arg1 *ecr.DeleteRepositoryCreationTemplateInput, arg2 ...request.Option) (*ecr.DeleteRepositoryCreationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DeleteRepositoryCreationTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*ecr.DeleteRepositoryCreationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DeleteRepositoryCreationTemplateWithContext indicates an expected call of DeleteRepositoryCreationTemplateWithContext
+func (mr *MockECRAPIMockRecorder) DeleteRepositoryCreationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteRepositoryCreationTemplateWithContext", reflect.TypeOf((*MockECRAPI)(nil).DeleteRepositoryCreationTemplateWithContext), varargs...)
 }
 
 // DeleteRepositoryPolicy mocks base method
@@ -1065,6 +1165,89 @@ func (mr *MockECRAPIMockRecorder) DescribeRepositoriesWithContext(arg0, arg1 int
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRepositoriesWithContext", reflect.TypeOf((*MockECRAPI)(nil).DescribeRepositoriesWithContext), varargs...)
+}
+
+// DescribeRepositoryCreationTemplates mocks base method
+func (m *MockECRAPI) DescribeRepositoryCreationTemplates(arg0 *ecr.DescribeRepositoryCreationTemplatesInput) (*ecr.DescribeRepositoryCreationTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRepositoryCreationTemplates", arg0)
+	ret0, _ := ret[0].(*ecr.DescribeRepositoryCreationTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRepositoryCreationTemplates indicates an expected call of DescribeRepositoryCreationTemplates
+func (mr *MockECRAPIMockRecorder) DescribeRepositoryCreationTemplates(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRepositoryCreationTemplates", reflect.TypeOf((*MockECRAPI)(nil).DescribeRepositoryCreationTemplates), arg0)
+}
+
+// DescribeRepositoryCreationTemplatesPages mocks base method
+func (m *MockECRAPI) DescribeRepositoryCreationTemplatesPages(arg0 *ecr.DescribeRepositoryCreationTemplatesInput, arg1 func(*ecr.DescribeRepositoryCreationTemplatesOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRepositoryCreationTemplatesPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeRepositoryCreationTemplatesPages indicates an expected call of DescribeRepositoryCreationTemplatesPages
+func (mr *MockECRAPIMockRecorder) DescribeRepositoryCreationTemplatesPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRepositoryCreationTemplatesPages", reflect.TypeOf((*MockECRAPI)(nil).DescribeRepositoryCreationTemplatesPages), arg0, arg1)
+}
+
+// DescribeRepositoryCreationTemplatesPagesWithContext mocks base method
+func (m *MockECRAPI) DescribeRepositoryCreationTemplatesPagesWithContext(arg0 context.Context, arg1 *ecr.DescribeRepositoryCreationTemplatesInput, arg2 func(*ecr.DescribeRepositoryCreationTemplatesOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeRepositoryCreationTemplatesPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// DescribeRepositoryCreationTemplatesPagesWithContext indicates an expected call of DescribeRepositoryCreationTemplatesPagesWithContext
+func (mr *MockECRAPIMockRecorder) DescribeRepositoryCreationTemplatesPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRepositoryCreationTemplatesPagesWithContext", reflect.TypeOf((*MockECRAPI)(nil).DescribeRepositoryCreationTemplatesPagesWithContext), varargs...)
+}
+
+// DescribeRepositoryCreationTemplatesRequest mocks base method
+func (m *MockECRAPI) DescribeRepositoryCreationTemplatesRequest(arg0 *ecr.DescribeRepositoryCreationTemplatesInput) (*request.Request, *ecr.DescribeRepositoryCreationTemplatesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "DescribeRepositoryCreationTemplatesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ecr.DescribeRepositoryCreationTemplatesOutput)
+	return ret0, ret1
+}
+
+// DescribeRepositoryCreationTemplatesRequest indicates an expected call of DescribeRepositoryCreationTemplatesRequest
+func (mr *MockECRAPIMockRecorder) DescribeRepositoryCreationTemplatesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRepositoryCreationTemplatesRequest", reflect.TypeOf((*MockECRAPI)(nil).DescribeRepositoryCreationTemplatesRequest), arg0)
+}
+
+// DescribeRepositoryCreationTemplatesWithContext mocks base method
+func (m *MockECRAPI) DescribeRepositoryCreationTemplatesWithContext(arg0 context.Context, arg1 *ecr.DescribeRepositoryCreationTemplatesInput, arg2 ...request.Option) (*ecr.DescribeRepositoryCreationTemplatesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "DescribeRepositoryCreationTemplatesWithContext", varargs...)
+	ret0, _ := ret[0].(*ecr.DescribeRepositoryCreationTemplatesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// DescribeRepositoryCreationTemplatesWithContext indicates an expected call of DescribeRepositoryCreationTemplatesWithContext
+func (mr *MockECRAPIMockRecorder) DescribeRepositoryCreationTemplatesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DescribeRepositoryCreationTemplatesWithContext", reflect.TypeOf((*MockECRAPI)(nil).DescribeRepositoryCreationTemplatesWithContext), varargs...)
 }
 
 // GetAuthorizationToken mocks base method
@@ -2281,6 +2464,56 @@ func (mr *MockECRAPIMockRecorder) UpdatePullThroughCacheRuleWithContext(arg0, ar
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdatePullThroughCacheRuleWithContext", reflect.TypeOf((*MockECRAPI)(nil).UpdatePullThroughCacheRuleWithContext), varargs...)
+}
+
+// UpdateRepositoryCreationTemplate mocks base method
+func (m *MockECRAPI) UpdateRepositoryCreationTemplate(arg0 *ecr.UpdateRepositoryCreationTemplateInput) (*ecr.UpdateRepositoryCreationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRepositoryCreationTemplate", arg0)
+	ret0, _ := ret[0].(*ecr.UpdateRepositoryCreationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRepositoryCreationTemplate indicates an expected call of UpdateRepositoryCreationTemplate
+func (mr *MockECRAPIMockRecorder) UpdateRepositoryCreationTemplate(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRepositoryCreationTemplate", reflect.TypeOf((*MockECRAPI)(nil).UpdateRepositoryCreationTemplate), arg0)
+}
+
+// UpdateRepositoryCreationTemplateRequest mocks base method
+func (m *MockECRAPI) UpdateRepositoryCreationTemplateRequest(arg0 *ecr.UpdateRepositoryCreationTemplateInput) (*request.Request, *ecr.UpdateRepositoryCreationTemplateOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "UpdateRepositoryCreationTemplateRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*ecr.UpdateRepositoryCreationTemplateOutput)
+	return ret0, ret1
+}
+
+// UpdateRepositoryCreationTemplateRequest indicates an expected call of UpdateRepositoryCreationTemplateRequest
+func (mr *MockECRAPIMockRecorder) UpdateRepositoryCreationTemplateRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRepositoryCreationTemplateRequest", reflect.TypeOf((*MockECRAPI)(nil).UpdateRepositoryCreationTemplateRequest), arg0)
+}
+
+// UpdateRepositoryCreationTemplateWithContext mocks base method
+func (m *MockECRAPI) UpdateRepositoryCreationTemplateWithContext(arg0 context.Context, arg1 *ecr.UpdateRepositoryCreationTemplateInput, arg2 ...request.Option) (*ecr.UpdateRepositoryCreationTemplateOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "UpdateRepositoryCreationTemplateWithContext", varargs...)
+	ret0, _ := ret[0].(*ecr.UpdateRepositoryCreationTemplateOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// UpdateRepositoryCreationTemplateWithContext indicates an expected call of UpdateRepositoryCreationTemplateWithContext
+func (mr *MockECRAPIMockRecorder) UpdateRepositoryCreationTemplateWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "UpdateRepositoryCreationTemplateWithContext", reflect.TypeOf((*MockECRAPI)(nil).UpdateRepositoryCreationTemplateWithContext), varargs...)
 }
 
 // UploadLayerPart mocks base method

@@ -2750,6 +2750,56 @@ func (mr *MockDataZoneAPIMockRecorder) GetEnvironmentBlueprintWithContext(arg0, 
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnvironmentBlueprintWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).GetEnvironmentBlueprintWithContext), varargs...)
 }
 
+// GetEnvironmentCredentials mocks base method
+func (m *MockDataZoneAPI) GetEnvironmentCredentials(arg0 *datazone.GetEnvironmentCredentialsInput) (*datazone.GetEnvironmentCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEnvironmentCredentials", arg0)
+	ret0, _ := ret[0].(*datazone.GetEnvironmentCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEnvironmentCredentials indicates an expected call of GetEnvironmentCredentials
+func (mr *MockDataZoneAPIMockRecorder) GetEnvironmentCredentials(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnvironmentCredentials", reflect.TypeOf((*MockDataZoneAPI)(nil).GetEnvironmentCredentials), arg0)
+}
+
+// GetEnvironmentCredentialsRequest mocks base method
+func (m *MockDataZoneAPI) GetEnvironmentCredentialsRequest(arg0 *datazone.GetEnvironmentCredentialsInput) (*request.Request, *datazone.GetEnvironmentCredentialsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetEnvironmentCredentialsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*datazone.GetEnvironmentCredentialsOutput)
+	return ret0, ret1
+}
+
+// GetEnvironmentCredentialsRequest indicates an expected call of GetEnvironmentCredentialsRequest
+func (mr *MockDataZoneAPIMockRecorder) GetEnvironmentCredentialsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnvironmentCredentialsRequest", reflect.TypeOf((*MockDataZoneAPI)(nil).GetEnvironmentCredentialsRequest), arg0)
+}
+
+// GetEnvironmentCredentialsWithContext mocks base method
+func (m *MockDataZoneAPI) GetEnvironmentCredentialsWithContext(arg0 context.Context, arg1 *datazone.GetEnvironmentCredentialsInput, arg2 ...request.Option) (*datazone.GetEnvironmentCredentialsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetEnvironmentCredentialsWithContext", varargs...)
+	ret0, _ := ret[0].(*datazone.GetEnvironmentCredentialsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetEnvironmentCredentialsWithContext indicates an expected call of GetEnvironmentCredentialsWithContext
+func (mr *MockDataZoneAPIMockRecorder) GetEnvironmentCredentialsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEnvironmentCredentialsWithContext", reflect.TypeOf((*MockDataZoneAPI)(nil).GetEnvironmentCredentialsWithContext), varargs...)
+}
+
 // GetEnvironmentProfile mocks base method
 func (m *MockDataZoneAPI) GetEnvironmentProfile(arg0 *datazone.GetEnvironmentProfileInput) (*datazone.GetEnvironmentProfileOutput, error) {
 	m.ctrl.T.Helper()
