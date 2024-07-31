@@ -1167,6 +1167,139 @@ func (mr *MockCodePipelineAPIMockRecorder) ListPipelinesWithContext(arg0, arg1 i
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListPipelinesWithContext", reflect.TypeOf((*MockCodePipelineAPI)(nil).ListPipelinesWithContext), varargs...)
 }
 
+// ListRuleExecutions mocks base method
+func (m *MockCodePipelineAPI) ListRuleExecutions(arg0 *codepipeline.ListRuleExecutionsInput) (*codepipeline.ListRuleExecutionsOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRuleExecutions", arg0)
+	ret0, _ := ret[0].(*codepipeline.ListRuleExecutionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRuleExecutions indicates an expected call of ListRuleExecutions
+func (mr *MockCodePipelineAPIMockRecorder) ListRuleExecutions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleExecutions", reflect.TypeOf((*MockCodePipelineAPI)(nil).ListRuleExecutions), arg0)
+}
+
+// ListRuleExecutionsPages mocks base method
+func (m *MockCodePipelineAPI) ListRuleExecutionsPages(arg0 *codepipeline.ListRuleExecutionsInput, arg1 func(*codepipeline.ListRuleExecutionsOutput, bool) bool) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRuleExecutionsPages", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRuleExecutionsPages indicates an expected call of ListRuleExecutionsPages
+func (mr *MockCodePipelineAPIMockRecorder) ListRuleExecutionsPages(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleExecutionsPages", reflect.TypeOf((*MockCodePipelineAPI)(nil).ListRuleExecutionsPages), arg0, arg1)
+}
+
+// ListRuleExecutionsPagesWithContext mocks base method
+func (m *MockCodePipelineAPI) ListRuleExecutionsPagesWithContext(arg0 context.Context, arg1 *codepipeline.ListRuleExecutionsInput, arg2 func(*codepipeline.ListRuleExecutionsOutput, bool) bool, arg3 ...request.Option) error {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1, arg2}
+	for _, a := range arg3 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRuleExecutionsPagesWithContext", varargs...)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// ListRuleExecutionsPagesWithContext indicates an expected call of ListRuleExecutionsPagesWithContext
+func (mr *MockCodePipelineAPIMockRecorder) ListRuleExecutionsPagesWithContext(arg0, arg1, arg2 interface{}, arg3 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1, arg2}, arg3...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleExecutionsPagesWithContext", reflect.TypeOf((*MockCodePipelineAPI)(nil).ListRuleExecutionsPagesWithContext), varargs...)
+}
+
+// ListRuleExecutionsRequest mocks base method
+func (m *MockCodePipelineAPI) ListRuleExecutionsRequest(arg0 *codepipeline.ListRuleExecutionsInput) (*request.Request, *codepipeline.ListRuleExecutionsOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRuleExecutionsRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codepipeline.ListRuleExecutionsOutput)
+	return ret0, ret1
+}
+
+// ListRuleExecutionsRequest indicates an expected call of ListRuleExecutionsRequest
+func (mr *MockCodePipelineAPIMockRecorder) ListRuleExecutionsRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleExecutionsRequest", reflect.TypeOf((*MockCodePipelineAPI)(nil).ListRuleExecutionsRequest), arg0)
+}
+
+// ListRuleExecutionsWithContext mocks base method
+func (m *MockCodePipelineAPI) ListRuleExecutionsWithContext(arg0 context.Context, arg1 *codepipeline.ListRuleExecutionsInput, arg2 ...request.Option) (*codepipeline.ListRuleExecutionsOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRuleExecutionsWithContext", varargs...)
+	ret0, _ := ret[0].(*codepipeline.ListRuleExecutionsOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRuleExecutionsWithContext indicates an expected call of ListRuleExecutionsWithContext
+func (mr *MockCodePipelineAPIMockRecorder) ListRuleExecutionsWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleExecutionsWithContext", reflect.TypeOf((*MockCodePipelineAPI)(nil).ListRuleExecutionsWithContext), varargs...)
+}
+
+// ListRuleTypes mocks base method
+func (m *MockCodePipelineAPI) ListRuleTypes(arg0 *codepipeline.ListRuleTypesInput) (*codepipeline.ListRuleTypesOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRuleTypes", arg0)
+	ret0, _ := ret[0].(*codepipeline.ListRuleTypesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRuleTypes indicates an expected call of ListRuleTypes
+func (mr *MockCodePipelineAPIMockRecorder) ListRuleTypes(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleTypes", reflect.TypeOf((*MockCodePipelineAPI)(nil).ListRuleTypes), arg0)
+}
+
+// ListRuleTypesRequest mocks base method
+func (m *MockCodePipelineAPI) ListRuleTypesRequest(arg0 *codepipeline.ListRuleTypesInput) (*request.Request, *codepipeline.ListRuleTypesOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "ListRuleTypesRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codepipeline.ListRuleTypesOutput)
+	return ret0, ret1
+}
+
+// ListRuleTypesRequest indicates an expected call of ListRuleTypesRequest
+func (mr *MockCodePipelineAPIMockRecorder) ListRuleTypesRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleTypesRequest", reflect.TypeOf((*MockCodePipelineAPI)(nil).ListRuleTypesRequest), arg0)
+}
+
+// ListRuleTypesWithContext mocks base method
+func (m *MockCodePipelineAPI) ListRuleTypesWithContext(arg0 context.Context, arg1 *codepipeline.ListRuleTypesInput, arg2 ...request.Option) (*codepipeline.ListRuleTypesOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "ListRuleTypesWithContext", varargs...)
+	ret0, _ := ret[0].(*codepipeline.ListRuleTypesOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// ListRuleTypesWithContext indicates an expected call of ListRuleTypesWithContext
+func (mr *MockCodePipelineAPIMockRecorder) ListRuleTypesWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListRuleTypesWithContext", reflect.TypeOf((*MockCodePipelineAPI)(nil).ListRuleTypesWithContext), varargs...)
+}
+
 // ListTagsForResource mocks base method
 func (m *MockCodePipelineAPI) ListTagsForResource(arg0 *codepipeline.ListTagsForResourceInput) (*codepipeline.ListTagsForResourceOutput, error) {
 	m.ctrl.T.Helper()
@@ -1331,6 +1464,56 @@ func (mr *MockCodePipelineAPIMockRecorder) ListWebhooksWithContext(arg0, arg1 in
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{arg0, arg1}, arg2...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "ListWebhooksWithContext", reflect.TypeOf((*MockCodePipelineAPI)(nil).ListWebhooksWithContext), varargs...)
+}
+
+// OverrideStageCondition mocks base method
+func (m *MockCodePipelineAPI) OverrideStageCondition(arg0 *codepipeline.OverrideStageConditionInput) (*codepipeline.OverrideStageConditionOutput, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "OverrideStageCondition", arg0)
+	ret0, _ := ret[0].(*codepipeline.OverrideStageConditionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// OverrideStageCondition indicates an expected call of OverrideStageCondition
+func (mr *MockCodePipelineAPIMockRecorder) OverrideStageCondition(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "OverrideStageCondition", reflect.TypeOf((*MockCodePipelineAPI)(nil).OverrideStageCondition), arg0)
+}
+
+// OverrideStageConditionRequest mocks base method
+func (m *MockCodePipelineAPI) OverrideStageConditionRequest(arg0 *codepipeline.OverrideStageConditionInput) (*request.Request, *codepipeline.OverrideStageConditionOutput) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "OverrideStageConditionRequest", arg0)
+	ret0, _ := ret[0].(*request.Request)
+	ret1, _ := ret[1].(*codepipeline.OverrideStageConditionOutput)
+	return ret0, ret1
+}
+
+// OverrideStageConditionRequest indicates an expected call of OverrideStageConditionRequest
+func (mr *MockCodePipelineAPIMockRecorder) OverrideStageConditionRequest(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "OverrideStageConditionRequest", reflect.TypeOf((*MockCodePipelineAPI)(nil).OverrideStageConditionRequest), arg0)
+}
+
+// OverrideStageConditionWithContext mocks base method
+func (m *MockCodePipelineAPI) OverrideStageConditionWithContext(arg0 context.Context, arg1 *codepipeline.OverrideStageConditionInput, arg2 ...request.Option) (*codepipeline.OverrideStageConditionOutput, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{arg0, arg1}
+	for _, a := range arg2 {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "OverrideStageConditionWithContext", varargs...)
+	ret0, _ := ret[0].(*codepipeline.OverrideStageConditionOutput)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// OverrideStageConditionWithContext indicates an expected call of OverrideStageConditionWithContext
+func (mr *MockCodePipelineAPIMockRecorder) OverrideStageConditionWithContext(arg0, arg1 interface{}, arg2 ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{arg0, arg1}, arg2...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "OverrideStageConditionWithContext", reflect.TypeOf((*MockCodePipelineAPI)(nil).OverrideStageConditionWithContext), varargs...)
 }
 
 // PollForJobs mocks base method
